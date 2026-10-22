@@ -1,0 +1,10 @@
+# Preserve the exact reviewed candidate bytes, including generated production files.
+package.json -text
+package-lock.json -text
+index.html -text
+vite.config.js -text
+README.md -text
+src/** -text
+tests/** -text
+assets/** -text
+dist/** -text
