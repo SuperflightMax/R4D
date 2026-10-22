@@ -8,6 +8,8 @@ Research for development. What AI can really do.
 
 ## Начать здесь
 
+**Для нового CTO: [первое поручение — живой персонаж на 2D-скелете](CTO_TASK.md).**
+
 - [Контекст архитектора и текущая точка обсуждения](architect/START_HERE.md).
 - [Первичная разведка: автоматическая 2D-анимация](architect/research/2026-10-22-2d-animation.md).
 - [Вход для агентов](AGENTS.md).
