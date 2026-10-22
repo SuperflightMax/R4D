@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="R4D: браузерный PoC скелетной 2D-анимации" />
+    <link rel="icon" href="data:," />
+    <title>R4D — Skeletal Animation PoC</title>
+    <script type="module" crossorigin src="/assets/index-O54cCGl6.js"></script>
+    <link rel="modulepreload" crossorigin href="/assets/CanvasPool-BKClwQdf.js">
+    <link rel="modulepreload" crossorigin href="/assets/Filter-B-T9omio.js">
+    <link rel="modulepreload" crossorigin href="/assets/canvasUtils-B0HNDru7.js">
+    <link rel="modulepreload" crossorigin href="/assets/Cache-fNcOcM1E.js">
+    <link rel="modulepreload" crossorigin href="/assets/GCManagedHash-BNMlzcZi.js">
+    <link rel="modulepreload" crossorigin href="/assets/RenderTargetSystem-CG2OdleQ.js">
+    <link rel="modulepreload" crossorigin href="/assets/getTextureBatchBindGroup-CIH9f4hr.js">
+    <link rel="modulepreload" crossorigin href="/assets/GraphicsContext-_4bDhvjE.js">
+    <link rel="modulepreload" crossorigin href="/assets/getTexelRangeRects-D6VCpUGy.js">
+    <link rel="stylesheet" crossorigin href="/assets/index-DWJJEdsY.css">
+  </head>
+  <body>
+    <div id="app">
+      <div id="stage" aria-label="Демонстрация персонажа"></div>
+      <aside id="diagnostics">
+        <div class="eyebrow">R4D · GPT-5.6 Sol</div>
+        <div id="state">Загрузка…</div>
+        <div id="phase"></div>
+        <div id="blend"></div>
+        <div class="controls">
+          <span><kbd>A</kbd><kbd>D</kbd> / <kbd>←</kbd><kbd>→</kbd> движение</span>
+          <span><kbd>Space</kbd> прыжок</span>
+          <span><kbd>P</kbd> пауза · <kbd>B</kbd> кости</span>
+          <span><kbd>T</kbd> автопереходы · <kbd>R</kbd> сброс</span>
+        </div>
+      </aside>
+      <div id="error" role="alert" hidden></div>
+    </div>
+  </body>
+</html>
