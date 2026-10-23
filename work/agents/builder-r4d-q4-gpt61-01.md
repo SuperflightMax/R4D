@@ -1,0 +1,15 @@
+# Builder Q4 — состояние
+
+staff_id `builder-r4d-q4-gpt61-01`, thread `01a16944-4772-7310-9f8b-ea9b1e7769af`; Staff init.json подтверждает gpt-6.1-sol / medium / D:\dev\R4D. Production-start Director получен после public Q3 https://superflight.space/review/r4d/q3-other-anatomy/ . CTO cto-r4d-01; организацию ведёт Lead lead-r4d-q4-gpt61-01.
+
+Fetch HEAD=origin/main 556bc125. Инструкции Staff/R4D прочитаны; канонический Playbook da128e3 прочитан через GitHub-коннектор после неудачного raw HTTP404. BRIEF назначает experiments/q4-whole-character/; владение и единственный проход заданы там. ASSEMBLY_CONTRACT и coordination/builder.md написаны для раннего согласования с Artist; его production-комментарий подтверждает получение диапазона и формата. Художественный выбор за Artist.
+
+Реализация завершена и единственный кандидат q4-c1 ЗАМОРОЖЕН: experiments/q4-whole-character/CANDIDATE.md, output/builder/q4-c1-files.json (21 runtime и51 provenance inputs). Whole b1a830…20615 неизменен;12PNG Artist не менялись Builder, их hashes совпали с source-pixel-check. Ранняя реальная цепь проверена до полного кандидата, evidence early-low.png. Код spring/IK Q2 адаптирован к source axes, реальному разносу стоп и общему пределу досягаемости таза. Существенные изменения/остаточные дефекты — output/builder/SELF_CHECK.md.
+
+5/5 Node tests и build прошли. Реальный изолированный headless Chromium q4-builder:9 jump start/landing cases,4 routes,2mid-transition, контролы/клавиши/пауза/шаг/bind/source/фон,390px без overflow; Errors0/Warnings0. SELF_CHECK фиксирует маски/срезы, достройки и residual support gap до1.52px, sliding не гарантирован. Это самопроверка, не независимый PASS.
+
+Сервер http://127.0.0.1:4184/ оставлен команде/CTO, скрытый Node/Vite PID118936, output/builder/vite.*. IAB недоступен; личный Chrome не использовался. Собственная session q4-builder закрыта, CLI подтвердил закрытие. Служебные вызовы в Staff .staff-local/builder-q4. Прямые сообщения всем4получателям о кандидате вернули active writer; общая связь coordination/builder-candidate.md. Lead уже записал кандидата в STATE, Technical QA начал свой1/1. Не создавать competing writer.
+
+Следующий шаг: единственный независимый проход QA и ART_REVIEW Artist, затем handoff Lead→CTO. Код/данные/арт/provenance больше не менять; одна точная correction только по отдельному разрешению CTO. Q5 запрещён. Git add/commit/push централизует Lead. Q1–Q3 diff пуст; чужие dirty/untracked не тронуты.
+
+По поручению Lead после завершения обоих QA и ART_REVIEW прочитан общий пакет и записан coordination/builder-response.md. Принимаю V1/V2/V3 и независимый gap1.521px; V2 — подтверждённая ошибка выделения исходного жилета в upperArmFar, не отмеченная отдельно моей самопроверкой. V1 причинно не доказан как ошибка IK; V3 — потери контура масок. Рекомендую stop/show with limitations как частичный результат; возможная будущая единственная correction только V2 по решению CTO. Повторных прогонов и изменений frozen inputs после пакета не делал. Browser закрыт, сервер оставлен. Следующий шаг Lead — адресная Git-доставка и handoff CTO; Builder ожидает отдельного поручения без автоматических правок.

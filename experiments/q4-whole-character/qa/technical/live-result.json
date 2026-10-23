@@ -1,0 +1,925 @@
+{
+  "kind": "real-time browser, real button clicks",
+  "routes": [
+    {
+      "route": 1,
+      "samples": [
+        {
+          "t": 0.13339999999999416,
+          "state": "idle",
+          "ground": "idle",
+          "height": 0,
+          "phase": 0
+        },
+        {
+          "t": 0.8333999999999946,
+          "state": "low",
+          "ground": "low",
+          "height": 0,
+          "phase": 0
+        },
+        {
+          "t": 2.133399999999988,
+          "state": "move",
+          "ground": "move",
+          "height": 0,
+          "phase": 0.059987792874901164
+        },
+        {
+          "t": 3.5499999999999896,
+          "state": "idle",
+          "ground": "idle",
+          "height": 0,
+          "phase": 0.7100656655420938
+        },
+        {
+          "t": 4.383300000000025,
+          "state": "prepare",
+          "ground": "idle",
+          "height": 0,
+          "phase": 0.8290022073961467
+        },
+        {
+          "t": 4.5333000000000325,
+          "state": "flight",
+          "ground": "idle",
+          "height": 7.861169024125264,
+          "phase": 0.8292293292942522
+        },
+        {
+          "t": 5.633300000000087,
+          "state": "land",
+          "ground": "idle",
+          "height": 0,
+          "phase": 0.8293515347579118
+        },
+        {
+          "t": 5.766700000000088,
+          "state": "idle",
+          "ground": "idle",
+          "height": 0,
+          "phase": 0.8293515683612105
+        }
+      ],
+      "shots": [
+        {
+          "path": "live-route-1-7.png",
+          "t": 1.116800000000017,
+          "state": "low",
+          "ground": "low"
+        },
+        {
+          "path": "live-route-1-19.png",
+          "t": 2.9667000000000026,
+          "state": "move",
+          "ground": "move"
+        },
+        {
+          "path": "live-route-1-35.png",
+          "t": 5.366600000000062,
+          "state": "flight",
+          "ground": "idle"
+        }
+      ],
+      "end": {
+        "t": 8.600000000000168,
+        "state": "idle",
+        "ground": "idle",
+        "jumps": 1,
+        "lands": 1,
+        "inputs": [
+          {
+            "time": 0,
+            "action": "reset"
+          },
+          {
+            "time": 0,
+            "action": "move"
+          },
+          {
+            "time": 0,
+            "action": "idle"
+          },
+          {
+            "time": 0,
+            "action": "reset"
+          },
+          {
+            "time": 0,
+            "action": "idle"
+          },
+          {
+            "time": 0.8999999999999992,
+            "action": "jump"
+          },
+          {
+            "time": 1.2583333333333313,
+            "action": "low"
+          },
+          {
+            "time": 0,
+            "action": "idle"
+          },
+          {
+            "time": 0,
+            "action": "reset"
+          },
+          {
+            "time": 0,
+            "action": "low"
+          },
+          {
+            "time": 0.8999999999999992,
+            "action": "jump"
+          },
+          {
+            "time": 1.2583333333333313,
+            "action": "move"
+          },
+          {
+            "time": 0,
+            "action": "idle"
+          },
+          {
+            "time": 0,
+            "action": "reset"
+          },
+          {
+            "time": 0,
+            "action": "move"
+          },
+          {
+            "time": 0.8999999999999992,
+            "action": "jump"
+          },
+          {
+            "time": 1.2583333333333313,
+            "action": "idle"
+          },
+          {
+            "time": 0,
+            "action": "idle"
+          },
+          {
+            "time": 0,
+            "action": "reset"
+          },
+          {
+            "time": 0,
+            "action": "low"
+          },
+          {
+            "time": 0.08000000000000002,
+            "action": "move"
+          },
+          {
+            "time": 0,
+            "action": "idle"
+          },
+          {
+            "time": 0,
+            "action": "reset"
+          },
+          {
+            "time": 0,
+            "action": "low"
+          },
+          {
+            "time": 0.08000000000000002,
+            "action": "jump"
+          },
+          {
+            "time": 0,
+            "action": "idle"
+          },
+          {
+            "time": 0,
+            "action": "reset"
+          },
+          {
+            "time": 0,
+            "action": "move"
+          },
+          {
+            "time": 1.37,
+            "action": "low"
+          },
+          {
+            "time": 1.4599999999999997,
+            "action": "idle"
+          },
+          {
+            "time": 1.5799999999999994,
+            "action": "move"
+          },
+          {
+            "time": 1.8799999999999983,
+            "action": "jump"
+          },
+          {
+            "time": 2.2799999999999967,
+            "action": "low"
+          },
+          {
+            "time": 0,
+            "action": "idle"
+          },
+          {
+            "time": 0,
+            "action": "reset"
+          },
+          {
+            "time": 0,
+            "action": "idle"
+          },
+          {
+            "time": 0,
+            "action": "idle"
+          },
+          {
+            "time": 0,
+            "action": "reset"
+          },
+          {
+            "time": 0,
+            "action": "low"
+          },
+          {
+            "time": 0,
+            "action": "idle"
+          },
+          {
+            "time": 0,
+            "action": "reset"
+          },
+          {
+            "time": 0,
+            "action": "move"
+          },
+          {
+            "time": 0,
+            "action": "idle"
+          },
+          {
+            "time": 0,
+            "action": "reset"
+          },
+          {
+            "time": 0,
+            "action": "move"
+          },
+          {
+            "time": 0,
+            "action": "idle"
+          },
+          {
+            "time": 0,
+            "action": "reset"
+          },
+          {
+            "time": 0,
+            "action": "idle"
+          },
+          {
+            "time": 0.8999999999999992,
+            "action": "jump"
+          },
+          {
+            "time": 1.2999999999999976,
+            "action": "low"
+          },
+          {
+            "time": 0,
+            "action": "idle"
+          },
+          {
+            "time": 0,
+            "action": "reset"
+          },
+          {
+            "time": 0,
+            "action": "low"
+          },
+          {
+            "time": 0.8999999999999992,
+            "action": "jump"
+          },
+          {
+            "time": 1.2999999999999976,
+            "action": "move"
+          },
+          {
+            "time": 0,
+            "action": "idle"
+          },
+          {
+            "time": 0,
+            "action": "reset"
+          },
+          {
+            "time": 0,
+            "action": "move"
+          },
+          {
+            "time": 0.8999999999999992,
+            "action": "jump"
+          },
+          {
+            "time": 1.2999999999999976,
+            "action": "idle"
+          },
+          {
+            "time": 0,
+            "action": "idle"
+          },
+          {
+            "time": 0,
+            "action": "reset"
+          },
+          {
+            "time": 0,
+            "action": "low"
+          },
+          {
+            "time": 0.08,
+            "action": "move"
+          },
+          {
+            "time": 0,
+            "action": "idle"
+          },
+          {
+            "time": 0,
+            "action": "reset"
+          },
+          {
+            "time": 0,
+            "action": "low"
+          },
+          {
+            "time": 0.08,
+            "action": "jump"
+          },
+          {
+            "time": 0,
+            "action": "idle"
+          },
+          {
+            "time": 0,
+            "action": "reset"
+          },
+          {
+            "time": 0,
+            "action": "low"
+          },
+          {
+            "time": 0.7999999999999996,
+            "action": "jump"
+          },
+          {
+            "time": 0,
+            "action": "idle"
+          },
+          {
+            "time": 0,
+            "action": "reset"
+          },
+          {
+            "time": 0,
+            "action": "route one"
+          },
+          {
+            "time": 0,
+            "action": "idle"
+          },
+          {
+            "time": 0.8000000000000005,
+            "action": "low"
+          },
+          {
+            "time": 1.999999999999994,
+            "action": "move"
+          },
+          {
+            "time": 3.5000666666666507,
+            "action": "idle"
+          },
+          {
+            "time": 4.300000000000003,
+            "action": "jump"
+          }
+        ],
+        "events": [
+          {
+            "time": 0.8083333333333338,
+            "state": "low"
+          },
+          {
+            "time": 2.0083333333333275,
+            "state": "move"
+          },
+          {
+            "time": 3.5000999999999958,
+            "state": "idle"
+          },
+          {
+            "time": 4.308333333333337,
+            "state": "prepare"
+          },
+          {
+            "time": 4.5333000000000325,
+            "state": "flight"
+          },
+          {
+            "time": 5.458333333333394,
+            "state": "land"
+          },
+          {
+            "time": 5.741633333333426,
+            "state": "idle"
+          }
+        ]
+      }
+    },
+    {
+      "route": 2,
+      "samples": [
+        {
+          "t": 0.13330000000001746,
+          "state": "move",
+          "ground": "move",
+          "height": 0,
+          "phase": 0.059912418062475485
+        },
+        {
+          "t": 1.116600000000005,
+          "state": "low",
+          "ground": "low",
+          "height": 0,
+          "phase": 0.19089326279064156
+        },
+        {
+          "t": 2.233300000000011,
+          "state": "prepare",
+          "ground": "low",
+          "height": 0,
+          "phase": 0.34140765261221373
+        },
+        {
+          "t": 2.383200000000005,
+          "state": "flight",
+          "ground": "low",
+          "height": 52.11030361792848,
+          "phase": 0.34144707134113883
+        },
+        {
+          "t": 2.666700000000004,
+          "state": "flight",
+          "ground": "move",
+          "height": 196.0460946564881,
+          "phase": 0.3559366077016467
+        },
+        {
+          "t": 3.3499999999999917,
+          "state": "land",
+          "ground": "move",
+          "height": 0,
+          "phase": 0.07780039877119002
+        },
+        {
+          "t": 3.6332000000000026,
+          "state": "move",
+          "ground": "move",
+          "height": 0,
+          "phase": 0.42235525656290235
+        },
+        {
+          "t": 4.049899999999987,
+          "state": "prepare",
+          "ground": "move",
+          "height": 0,
+          "phase": 0.9304034461564682
+        },
+        {
+          "t": 4.333300000000024,
+          "state": "flight",
+          "ground": "move",
+          "height": 90.77434368381381,
+          "phase": 0.27600715763778916
+        },
+        {
+          "t": 4.616600000000027,
+          "state": "flight",
+          "ground": "low",
+          "height": 202.56123136683897,
+          "phase": 0.5736929175489571
+        },
+        {
+          "t": 5.183300000000067,
+          "state": "land",
+          "ground": "low",
+          "height": 0,
+          "phase": 0.64708154409071
+        },
+        {
+          "t": 5.449900000000056,
+          "state": "low",
+          "ground": "low",
+          "height": 0,
+          "phase": 0.6482786424891906
+        }
+      ],
+      "shots": [
+        {
+          "path": "live-route-2-12.png",
+          "t": 1.8166000000000004,
+          "state": "low",
+          "ground": "low"
+        },
+        {
+          "path": "live-route-2-20.png",
+          "t": 3.0833000000000093,
+          "state": "flight",
+          "ground": "move"
+        },
+        {
+          "path": "live-route-2-36.png",
+          "t": 5.449900000000056,
+          "state": "low",
+          "ground": "low"
+        }
+      ],
+      "end": {
+        "t": 8.599900000000156,
+        "state": "low",
+        "ground": "low",
+        "jumps": 2,
+        "lands": 2,
+        "inputs": [
+          {
+            "time": 0,
+            "action": "low"
+          },
+          {
+            "time": 0.8999999999999992,
+            "action": "jump"
+          },
+          {
+            "time": 1.2583333333333313,
+            "action": "move"
+          },
+          {
+            "time": 0,
+            "action": "idle"
+          },
+          {
+            "time": 0,
+            "action": "reset"
+          },
+          {
+            "time": 0,
+            "action": "move"
+          },
+          {
+            "time": 0.8999999999999992,
+            "action": "jump"
+          },
+          {
+            "time": 1.2583333333333313,
+            "action": "idle"
+          },
+          {
+            "time": 0,
+            "action": "idle"
+          },
+          {
+            "time": 0,
+            "action": "reset"
+          },
+          {
+            "time": 0,
+            "action": "low"
+          },
+          {
+            "time": 0.08000000000000002,
+            "action": "move"
+          },
+          {
+            "time": 0,
+            "action": "idle"
+          },
+          {
+            "time": 0,
+            "action": "reset"
+          },
+          {
+            "time": 0,
+            "action": "low"
+          },
+          {
+            "time": 0.08000000000000002,
+            "action": "jump"
+          },
+          {
+            "time": 0,
+            "action": "idle"
+          },
+          {
+            "time": 0,
+            "action": "reset"
+          },
+          {
+            "time": 0,
+            "action": "move"
+          },
+          {
+            "time": 1.37,
+            "action": "low"
+          },
+          {
+            "time": 1.4599999999999997,
+            "action": "idle"
+          },
+          {
+            "time": 1.5799999999999994,
+            "action": "move"
+          },
+          {
+            "time": 1.8799999999999983,
+            "action": "jump"
+          },
+          {
+            "time": 2.2799999999999967,
+            "action": "low"
+          },
+          {
+            "time": 0,
+            "action": "idle"
+          },
+          {
+            "time": 0,
+            "action": "reset"
+          },
+          {
+            "time": 0,
+            "action": "idle"
+          },
+          {
+            "time": 0,
+            "action": "idle"
+          },
+          {
+            "time": 0,
+            "action": "reset"
+          },
+          {
+            "time": 0,
+            "action": "low"
+          },
+          {
+            "time": 0,
+            "action": "idle"
+          },
+          {
+            "time": 0,
+            "action": "reset"
+          },
+          {
+            "time": 0,
+            "action": "move"
+          },
+          {
+            "time": 0,
+            "action": "idle"
+          },
+          {
+            "time": 0,
+            "action": "reset"
+          },
+          {
+            "time": 0,
+            "action": "move"
+          },
+          {
+            "time": 0,
+            "action": "idle"
+          },
+          {
+            "time": 0,
+            "action": "reset"
+          },
+          {
+            "time": 0,
+            "action": "idle"
+          },
+          {
+            "time": 0.8999999999999992,
+            "action": "jump"
+          },
+          {
+            "time": 1.2999999999999976,
+            "action": "low"
+          },
+          {
+            "time": 0,
+            "action": "idle"
+          },
+          {
+            "time": 0,
+            "action": "reset"
+          },
+          {
+            "time": 0,
+            "action": "low"
+          },
+          {
+            "time": 0.8999999999999992,
+            "action": "jump"
+          },
+          {
+            "time": 1.2999999999999976,
+            "action": "move"
+          },
+          {
+            "time": 0,
+            "action": "idle"
+          },
+          {
+            "time": 0,
+            "action": "reset"
+          },
+          {
+            "time": 0,
+            "action": "move"
+          },
+          {
+            "time": 0.8999999999999992,
+            "action": "jump"
+          },
+          {
+            "time": 1.2999999999999976,
+            "action": "idle"
+          },
+          {
+            "time": 0,
+            "action": "idle"
+          },
+          {
+            "time": 0,
+            "action": "reset"
+          },
+          {
+            "time": 0,
+            "action": "low"
+          },
+          {
+            "time": 0.08,
+            "action": "move"
+          },
+          {
+            "time": 0,
+            "action": "idle"
+          },
+          {
+            "time": 0,
+            "action": "reset"
+          },
+          {
+            "time": 0,
+            "action": "low"
+          },
+          {
+            "time": 0.08,
+            "action": "jump"
+          },
+          {
+            "time": 0,
+            "action": "idle"
+          },
+          {
+            "time": 0,
+            "action": "reset"
+          },
+          {
+            "time": 0,
+            "action": "low"
+          },
+          {
+            "time": 0.7999999999999996,
+            "action": "jump"
+          },
+          {
+            "time": 0,
+            "action": "idle"
+          },
+          {
+            "time": 0,
+            "action": "reset"
+          },
+          {
+            "time": 0,
+            "action": "route one"
+          },
+          {
+            "time": 0,
+            "action": "idle"
+          },
+          {
+            "time": 0.8000000000000005,
+            "action": "low"
+          },
+          {
+            "time": 1.999999999999994,
+            "action": "move"
+          },
+          {
+            "time": 3.5000666666666507,
+            "action": "idle"
+          },
+          {
+            "time": 4.300000000000003,
+            "action": "jump"
+          },
+          {
+            "time": 0,
+            "action": "idle"
+          },
+          {
+            "time": 0,
+            "action": "reset"
+          },
+          {
+            "time": 0,
+            "action": "route two"
+          },
+          {
+            "time": 0,
+            "action": "move"
+          },
+          {
+            "time": 1.0999999999999992,
+            "action": "low"
+          },
+          {
+            "time": 2.099999999999993,
+            "action": "jump"
+          },
+          {
+            "time": 2.60823333333332,
+            "action": "move"
+          },
+          {
+            "time": 3.9999999999999907,
+            "action": "jump"
+          },
+          {
+            "time": 4.500000000000015,
+            "action": "low"
+          }
+        ],
+        "events": [
+          {
+            "time": 0.008333333333333333,
+            "state": "move"
+          },
+          {
+            "time": 1.1083333333333325,
+            "state": "low"
+          },
+          {
+            "time": 2.1083333333333263,
+            "state": "prepare"
+          },
+          {
+            "time": 2.333266666666666,
+            "state": "flight"
+          },
+          {
+            "time": 3.2583333333333253,
+            "state": "land"
+          },
+          {
+            "time": 3.541533333333336,
+            "state": "move"
+          },
+          {
+            "time": 4.008333333333324,
+            "state": "prepare"
+          },
+          {
+            "time": 4.233266666666674,
+            "state": "flight"
+          },
+          {
+            "time": 5.158333333333381,
+            "state": "land"
+          },
+          {
+            "time": 5.4417333333333895,
+            "state": "low"
+          }
+        ]
+      }
+    }
+  ]
+}

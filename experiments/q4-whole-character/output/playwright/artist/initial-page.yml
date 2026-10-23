@@ -1,0 +1,30 @@
+- main [ref=e2]:
+  - generic [ref=e3]:
+    - text: R4D / Q4 · GPT-6.1 SOL
+    - heading "Из цельного образа — в движение" [level=1] [ref=e4]
+    - paragraph [ref=e5]: Цельный путешественник, извлечённые части и свободная смена поз.
+  - region "Анимированный персонаж" [ref=e6]:
+    - generic [ref=e7]: Загружаем персонажа…
+  - region "Состояния" [ref=e9]:
+    - button "Покой · 1" [pressed] [ref=e10] [cursor=pointer]
+    - button "Низкая поза · 2" [ref=e11] [cursor=pointer]
+    - button "Идти · 3" [ref=e12] [cursor=pointer]
+    - button "Прыжок · пробел" [ref=e13] [cursor=pointer]
+  - region "Просмотр" [ref=e14]:
+    - button "Пауза · P" [ref=e15] [cursor=pointer]
+    - button "Шаг · ." [ref=e16] [cursor=pointer]
+    - button "Кости · B" [ref=e17] [cursor=pointer]
+    - button "Исходная поза" [ref=e18] [cursor=pointer]
+    - button "Сначала · R" [ref=e19] [cursor=pointer]
+    - generic [ref=e20]:
+      - text: Фон
+      - combobox "Фон" [ref=e21]:
+        - option "Светлый" [selected]
+        - option "Средний"
+        - option "Тёмный"
+  - paragraph [ref=e22]: "Выбирайте состояние в любой момент, даже в воздухе. A / D и стрелки: движение при удержании. Пробел: прыжок из всех трёх наземных поз."
+  - group [ref=e23]:
+    - generic "Маршруты и замедление" [ref=e24] [cursor=pointer]
+  - group [ref=e25]:
+    - generic "Цельный исходник и происхождение" [ref=e26] [cursor=pointer]
+  - generic [ref=e27]: Q4 · отдельный опыт · PixiJS

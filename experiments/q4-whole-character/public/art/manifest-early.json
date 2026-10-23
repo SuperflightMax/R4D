@@ -1,0 +1,275 @@
+{
+  "version": 1,
+  "character": "Лесной путешественник — exact whole Q4",
+  "facing": "right",
+  "targetDisplayHeight": 360,
+  "sourceSize": [
+    1024,
+    1536
+  ],
+  "sourceRoot": [
+    530,
+    805
+  ],
+  "coordinates": "+X right, +Y down; same original pixels, cropped only; joint relative to parent pivot",
+  "parts": [
+    {
+      "id": "torso",
+      "file": "art/parts/torso.png",
+      "parent": null,
+      "joint": [
+        0,
+        0
+      ],
+      "pivot": [
+        158,
+        410
+      ],
+      "layer": 50,
+      "size": [
+        269,
+        419
+      ],
+      "source": "assets/source/whole-original.png",
+      "sourceSha256": "b1a83019511efa33a5d6b7380fc361f171c7b8d2bc82f49ab71b45d130620615",
+      "sourcePivot": [
+        530,
+        805
+      ],
+      "sourceCrop": [
+        372,
+        395,
+        269,
+        419
+      ],
+      "technicalScale": [
+        1,
+        1
+      ],
+      "sourceMask": "assets/masks/torso-source.png",
+      "hiddenMask": "assets/masks/torso-hidden.png",
+      "generativeMask": "assets/masks/torso-generative.png",
+      "exactSourcePixels": 48547,
+      "clonedHiddenPixels": 0,
+      "generatedHiddenPixels": 20812,
+      "hiddenCloneEllipses": []
+    },
+    {
+      "id": "head",
+      "file": "art/parts/head.png",
+      "parent": "torso",
+      "joint": [
+        -20,
+        -385
+      ],
+      "pivot": [
+        212,
+        370
+      ],
+      "layer": 60,
+      "size": [
+        392,
+        405
+      ],
+      "source": "assets/source/whole-original.png",
+      "sourceSha256": "b1a83019511efa33a5d6b7380fc361f171c7b8d2bc82f49ab71b45d130620615",
+      "sourcePivot": [
+        510,
+        420
+      ],
+      "sourceCrop": [
+        298,
+        50,
+        392,
+        405
+      ],
+      "technicalScale": [
+        1,
+        1
+      ],
+      "sourceMask": "assets/masks/head-source.png",
+      "hiddenMask": "assets/masks/head-hidden.png",
+      "generativeMask": "assets/masks/head-generative.png",
+      "exactSourcePixels": 106759,
+      "clonedHiddenPixels": 0,
+      "generatedHiddenPixels": 0,
+      "hiddenCloneEllipses": []
+    },
+    {
+      "id": "thighNear",
+      "file": "art/parts/thighNear.png",
+      "parent": null,
+      "joint": [
+        -30,
+        10
+      ],
+      "pivot": [
+        137,
+        69
+      ],
+      "layer": 44,
+      "size": [
+        225,
+        364
+      ],
+      "source": "assets/source/whole-original.png",
+      "sourceSha256": "b1a83019511efa33a5d6b7380fc361f171c7b8d2bc82f49ab71b45d130620615",
+      "sourcePivot": [
+        500,
+        815
+      ],
+      "sourceCrop": [
+        363,
+        746,
+        225,
+        364
+      ],
+      "technicalScale": [
+        1,
+        1
+      ],
+      "sourceMask": "assets/masks/thighNear-source.png",
+      "hiddenMask": "assets/masks/thighNear-hidden.png",
+      "generativeMask": "assets/masks/thighNear-generative.png",
+      "exactSourcePixels": 38892,
+      "clonedHiddenPixels": 4442,
+      "generatedHiddenPixels": 0,
+      "hiddenCloneEllipses": [
+        [
+          500,
+          811,
+          68,
+          62,
+          460,
+          850,
+          70,
+          70
+        ],
+        [
+          440,
+          1050,
+          56,
+          53,
+          414,
+          996,
+          65,
+          68
+        ]
+      ]
+    },
+    {
+      "id": "shinNear",
+      "file": "art/parts/shinNear.png",
+      "parent": "thighNear",
+      "joint": [
+        -60,
+        235
+      ],
+      "pivot": [
+        139,
+        52
+      ],
+      "layer": 42,
+      "size": [
+        193,
+        324
+      ],
+      "source": "assets/source/whole-original.png",
+      "sourceSha256": "b1a83019511efa33a5d6b7380fc361f171c7b8d2bc82f49ab71b45d130620615",
+      "sourcePivot": [
+        440,
+        1050
+      ],
+      "sourceCrop": [
+        301,
+        998,
+        193,
+        324
+      ],
+      "technicalScale": [
+        1,
+        1
+      ],
+      "sourceMask": "assets/masks/shinNear-source.png",
+      "hiddenMask": "assets/masks/shinNear-hidden.png",
+      "generativeMask": "assets/masks/shinNear-generative.png",
+      "exactSourcePixels": 31853,
+      "clonedHiddenPixels": 3434,
+      "generatedHiddenPixels": 0,
+      "hiddenCloneEllipses": [
+        [
+          440,
+          1050,
+          50,
+          49,
+          391,
+          1080,
+          70,
+          60
+        ],
+        [
+          360,
+          1275,
+          48,
+          43,
+          340,
+          1215,
+          58,
+          60
+        ]
+      ]
+    },
+    {
+      "id": "footNear",
+      "file": "art/parts/footNear.png",
+      "parent": "shinNear",
+      "joint": [
+        -80,
+        250
+      ],
+      "pivot": [
+        77,
+        32
+      ],
+      "layer": 40,
+      "size": [
+        253,
+        191
+      ],
+      "source": "assets/source/whole-original.png",
+      "sourceSha256": "b1a83019511efa33a5d6b7380fc361f171c7b8d2bc82f49ab71b45d130620615",
+      "sourcePivot": [
+        360,
+        1300
+      ],
+      "sourceCrop": [
+        283,
+        1268,
+        253,
+        191
+      ],
+      "technicalScale": [
+        1,
+        1
+      ],
+      "sourceMask": "assets/masks/footNear-source.png",
+      "hiddenMask": "assets/masks/footNear-hidden.png",
+      "generativeMask": "assets/masks/footNear-generative.png",
+      "exactSourcePixels": 27855,
+      "clonedHiddenPixels": 985,
+      "generatedHiddenPixels": 0,
+      "hiddenCloneEllipses": [
+        [
+          360,
+          1300,
+          48,
+          29,
+          320,
+          1303,
+          65,
+          45
+        ]
+      ]
+    }
+  ]
+}

@@ -1,0 +1,709 @@
+{
+  "version": 1,
+  "character": "Лесной путешественник — exact whole Q4",
+  "facing": "right",
+  "targetDisplayHeight": 360,
+  "sourceSize": [
+    1024,
+    1536
+  ],
+  "sourceRoot": [
+    530,
+    805
+  ],
+  "coordinates": "+X right, +Y down; same original pixels, cropped only; joint relative to parent pivot",
+  "parts": [
+    {
+      "id": "torso",
+      "file": "art/parts/torso.png",
+      "parent": null,
+      "joint": [
+        0,
+        0
+      ],
+      "pivot": [
+        158,
+        410
+      ],
+      "layer": 50,
+      "size": [
+        269,
+        419
+      ],
+      "source": "assets/source/whole-original.png",
+      "sourceSha256": "b1a83019511efa33a5d6b7380fc361f171c7b8d2bc82f49ab71b45d130620615",
+      "sourcePivot": [
+        530,
+        805
+      ],
+      "sourceCrop": [
+        372,
+        395,
+        269,
+        419
+      ],
+      "technicalScale": [
+        1,
+        1
+      ],
+      "sourceMask": "assets/masks/torso-source.png",
+      "hiddenMask": "assets/masks/torso-hidden.png",
+      "generativeMask": "assets/masks/torso-generative.png",
+      "exactSourcePixels": 48547,
+      "clonedHiddenPixels": 0,
+      "generatedHiddenPixels": 20812,
+      "hiddenCloneEllipses": []
+    },
+    {
+      "id": "head",
+      "file": "art/parts/head.png",
+      "parent": "torso",
+      "joint": [
+        -20,
+        -385
+      ],
+      "pivot": [
+        212,
+        370
+      ],
+      "layer": 60,
+      "size": [
+        392,
+        405
+      ],
+      "source": "assets/source/whole-original.png",
+      "sourceSha256": "b1a83019511efa33a5d6b7380fc361f171c7b8d2bc82f49ab71b45d130620615",
+      "sourcePivot": [
+        510,
+        420
+      ],
+      "sourceCrop": [
+        298,
+        50,
+        392,
+        405
+      ],
+      "technicalScale": [
+        1,
+        1
+      ],
+      "sourceMask": "assets/masks/head-source.png",
+      "hiddenMask": "assets/masks/head-hidden.png",
+      "generativeMask": "assets/masks/head-generative.png",
+      "exactSourcePixels": 106759,
+      "clonedHiddenPixels": 0,
+      "generatedHiddenPixels": 0,
+      "hiddenCloneEllipses": []
+    },
+    {
+      "id": "upperArmNear",
+      "file": "art/parts/upperArmNear.png",
+      "parent": "torso",
+      "joint": [
+        -90,
+        -295
+      ],
+      "pivot": [
+        134,
+        58
+      ],
+      "layer": 74,
+      "size": [
+        193,
+        275
+      ],
+      "source": "assets/source/whole-original.png",
+      "sourceSha256": "b1a83019511efa33a5d6b7380fc361f171c7b8d2bc82f49ab71b45d130620615",
+      "sourcePivot": [
+        440,
+        510
+      ],
+      "sourceCrop": [
+        306,
+        452,
+        193,
+        275
+      ],
+      "technicalScale": [
+        1,
+        1
+      ],
+      "sourceMask": "assets/masks/upperArmNear-source.png",
+      "hiddenMask": "assets/masks/upperArmNear-hidden.png",
+      "generativeMask": "assets/masks/upperArmNear-generative.png",
+      "exactSourcePixels": 26808,
+      "clonedHiddenPixels": 1410,
+      "generatedHiddenPixels": 0,
+      "hiddenCloneEllipses": [
+        [
+          440,
+          510,
+          52,
+          55,
+          398,
+          505,
+          50,
+          65
+        ],
+        [
+          355,
+          680,
+          45,
+          43,
+          336,
+          639,
+          60,
+          65
+        ]
+      ]
+    },
+    {
+      "id": "forearmNear",
+      "file": "art/parts/forearmNear.png",
+      "parent": "upperArmNear",
+      "joint": [
+        -85,
+        170
+      ],
+      "pivot": [
+        112,
+        46
+      ],
+      "layer": 72,
+      "size": [
+        171,
+        344
+      ],
+      "source": "assets/source/whole-original.png",
+      "sourceSha256": "b1a83019511efa33a5d6b7380fc361f171c7b8d2bc82f49ab71b45d130620615",
+      "sourcePivot": [
+        355,
+        680
+      ],
+      "sourceCrop": [
+        243,
+        634,
+        171,
+        344
+      ],
+      "technicalScale": [
+        1,
+        1
+      ],
+      "sourceMask": "assets/masks/forearmNear-source.png",
+      "hiddenMask": "assets/masks/forearmNear-hidden.png",
+      "generativeMask": "assets/masks/forearmNear-generative.png",
+      "exactSourcePixels": 27995,
+      "clonedHiddenPixels": 736,
+      "generatedHiddenPixels": 0,
+      "hiddenCloneEllipses": [
+        [
+          355,
+          680,
+          41,
+          43,
+          335,
+          683,
+          45,
+          42
+        ]
+      ]
+    },
+    {
+      "id": "upperArmFar",
+      "file": "art/parts/upperArmFar.png",
+      "parent": "torso",
+      "joint": [
+        36,
+        -294
+      ],
+      "pivot": [
+        41,
+        62
+      ],
+      "layer": 22,
+      "size": [
+        187,
+        340
+      ],
+      "source": "assets/source/whole-original.png",
+      "sourceSha256": "b1a83019511efa33a5d6b7380fc361f171c7b8d2bc82f49ab71b45d130620615",
+      "sourcePivot": [
+        566,
+        511
+      ],
+      "sourceCrop": [
+        525,
+        449,
+        187,
+        340
+      ],
+      "technicalScale": [
+        1,
+        1
+      ],
+      "sourceMask": "assets/masks/upperArmFar-source.png",
+      "hiddenMask": "assets/masks/upperArmFar-hidden.png",
+      "generativeMask": "assets/masks/upperArmFar-generative.png",
+      "exactSourcePixels": 11468,
+      "clonedHiddenPixels": 11699,
+      "generatedHiddenPixels": 0,
+      "hiddenCloneEllipses": [
+        [
+          560,
+          520,
+          32,
+          68,
+          398,
+          505,
+          50,
+          65
+        ],
+        [
+          583,
+          579,
+          25,
+          58,
+          405,
+          525,
+          48,
+          70
+        ],
+        [
+          615,
+          640,
+          37,
+          53,
+          405,
+          535,
+          40,
+          70
+        ],
+        [
+          652,
+          704,
+          37,
+          39,
+          631,
+          677,
+          40,
+          40
+        ]
+      ]
+    },
+    {
+      "id": "forearmFar",
+      "file": "art/parts/forearmFar.png",
+      "parent": "upperArmFar",
+      "joint": [
+        86,
+        193
+      ],
+      "pivot": [
+        39,
+        38
+      ],
+      "layer": 20,
+      "size": [
+        207,
+        264
+      ],
+      "source": "assets/source/whole-original.png",
+      "sourceSha256": "b1a83019511efa33a5d6b7380fc361f171c7b8d2bc82f49ab71b45d130620615",
+      "sourcePivot": [
+        652,
+        704
+      ],
+      "sourceCrop": [
+        613,
+        666,
+        207,
+        264
+      ],
+      "technicalScale": [
+        1,
+        1
+      ],
+      "sourceMask": "assets/masks/forearmFar-source.png",
+      "hiddenMask": "assets/masks/forearmFar-hidden.png",
+      "generativeMask": "assets/masks/forearmFar-generative.png",
+      "exactSourcePixels": 19024,
+      "clonedHiddenPixels": 1784,
+      "generatedHiddenPixels": 0,
+      "hiddenCloneEllipses": [
+        [
+          652,
+          704,
+          36,
+          35,
+          641,
+          713,
+          38,
+          40
+        ]
+      ]
+    },
+    {
+      "id": "thighNear",
+      "file": "art/parts/thighNear.png",
+      "parent": null,
+      "joint": [
+        -30,
+        10
+      ],
+      "pivot": [
+        137,
+        69
+      ],
+      "layer": 44,
+      "size": [
+        225,
+        364
+      ],
+      "source": "assets/source/whole-original.png",
+      "sourceSha256": "b1a83019511efa33a5d6b7380fc361f171c7b8d2bc82f49ab71b45d130620615",
+      "sourcePivot": [
+        500,
+        815
+      ],
+      "sourceCrop": [
+        363,
+        746,
+        225,
+        364
+      ],
+      "technicalScale": [
+        1,
+        1
+      ],
+      "sourceMask": "assets/masks/thighNear-source.png",
+      "hiddenMask": "assets/masks/thighNear-hidden.png",
+      "generativeMask": "assets/masks/thighNear-generative.png",
+      "exactSourcePixels": 38892,
+      "clonedHiddenPixels": 4442,
+      "generatedHiddenPixels": 0,
+      "hiddenCloneEllipses": [
+        [
+          500,
+          811,
+          68,
+          62,
+          460,
+          850,
+          70,
+          70
+        ],
+        [
+          440,
+          1050,
+          56,
+          53,
+          414,
+          996,
+          65,
+          68
+        ]
+      ]
+    },
+    {
+      "id": "shinNear",
+      "file": "art/parts/shinNear.png",
+      "parent": "thighNear",
+      "joint": [
+        -60,
+        235
+      ],
+      "pivot": [
+        139,
+        52
+      ],
+      "layer": 42,
+      "size": [
+        193,
+        324
+      ],
+      "source": "assets/source/whole-original.png",
+      "sourceSha256": "b1a83019511efa33a5d6b7380fc361f171c7b8d2bc82f49ab71b45d130620615",
+      "sourcePivot": [
+        440,
+        1050
+      ],
+      "sourceCrop": [
+        301,
+        998,
+        193,
+        324
+      ],
+      "technicalScale": [
+        1,
+        1
+      ],
+      "sourceMask": "assets/masks/shinNear-source.png",
+      "hiddenMask": "assets/masks/shinNear-hidden.png",
+      "generativeMask": "assets/masks/shinNear-generative.png",
+      "exactSourcePixels": 31853,
+      "clonedHiddenPixels": 3434,
+      "generatedHiddenPixels": 0,
+      "hiddenCloneEllipses": [
+        [
+          440,
+          1050,
+          50,
+          49,
+          391,
+          1080,
+          70,
+          60
+        ],
+        [
+          360,
+          1275,
+          48,
+          43,
+          340,
+          1215,
+          58,
+          60
+        ]
+      ]
+    },
+    {
+      "id": "footNear",
+      "file": "art/parts/footNear.png",
+      "parent": "shinNear",
+      "joint": [
+        -80,
+        250
+      ],
+      "pivot": [
+        77,
+        32
+      ],
+      "layer": 40,
+      "size": [
+        253,
+        191
+      ],
+      "source": "assets/source/whole-original.png",
+      "sourceSha256": "b1a83019511efa33a5d6b7380fc361f171c7b8d2bc82f49ab71b45d130620615",
+      "sourcePivot": [
+        360,
+        1300
+      ],
+      "sourceCrop": [
+        283,
+        1268,
+        253,
+        191
+      ],
+      "technicalScale": [
+        1,
+        1
+      ],
+      "sourceMask": "assets/masks/footNear-source.png",
+      "hiddenMask": "assets/masks/footNear-hidden.png",
+      "generativeMask": "assets/masks/footNear-generative.png",
+      "exactSourcePixels": 27855,
+      "clonedHiddenPixels": 985,
+      "generatedHiddenPixels": 0,
+      "hiddenCloneEllipses": [
+        [
+          360,
+          1300,
+          48,
+          29,
+          320,
+          1303,
+          65,
+          45
+        ]
+      ]
+    },
+    {
+      "id": "thighFar",
+      "file": "art/parts/thighFar.png",
+      "parent": null,
+      "joint": [
+        30,
+        15
+      ],
+      "pivot": [
+        61,
+        68
+      ],
+      "layer": 29,
+      "size": [
+        176,
+        358
+      ],
+      "source": "assets/source/whole-original.png",
+      "sourceSha256": "b1a83019511efa33a5d6b7380fc361f171c7b8d2bc82f49ab71b45d130620615",
+      "sourcePivot": [
+        560,
+        820
+      ],
+      "sourceCrop": [
+        499,
+        752,
+        176,
+        358
+      ],
+      "technicalScale": [
+        1,
+        1
+      ],
+      "sourceMask": "assets/masks/thighFar-source.png",
+      "hiddenMask": "assets/masks/thighFar-hidden.png",
+      "generativeMask": "assets/masks/thighFar-generative.png",
+      "exactSourcePixels": 23709,
+      "clonedHiddenPixels": 10389,
+      "generatedHiddenPixels": 0,
+      "hiddenCloneEllipses": [
+        [
+          560,
+          820,
+          58,
+          65,
+          467,
+          850,
+          65,
+          70
+        ],
+        [
+          570,
+          880,
+          48,
+          64,
+          470,
+          870,
+          65,
+          70
+        ],
+        [
+          610,
+          1040,
+          49,
+          47,
+          582,
+          986,
+          50,
+          65
+        ]
+      ]
+    },
+    {
+      "id": "shinFar",
+      "file": "art/parts/shinFar.png",
+      "parent": "thighFar",
+      "joint": [
+        50,
+        220
+      ],
+      "pivot": [
+        61,
+        48
+      ],
+      "layer": 27,
+      "size": [
+        144,
+        317
+      ],
+      "source": "assets/source/whole-original.png",
+      "sourceSha256": "b1a83019511efa33a5d6b7380fc361f171c7b8d2bc82f49ab71b45d130620615",
+      "sourcePivot": [
+        610,
+        1040
+      ],
+      "sourceCrop": [
+        549,
+        992,
+        144,
+        317
+      ],
+      "technicalScale": [
+        1,
+        1
+      ],
+      "sourceMask": "assets/masks/shinFar-source.png",
+      "hiddenMask": "assets/masks/shinFar-hidden.png",
+      "generativeMask": "assets/masks/shinFar-generative.png",
+      "exactSourcePixels": 25938,
+      "clonedHiddenPixels": 1819,
+      "generatedHiddenPixels": 0,
+      "hiddenCloneEllipses": [
+        [
+          610,
+          1040,
+          45,
+          45,
+          579,
+          1090,
+          55,
+          65
+        ],
+        [
+          635,
+          1270,
+          45,
+          35,
+          607,
+          1210,
+          55,
+          60
+        ]
+      ]
+    },
+    {
+      "id": "footFar",
+      "file": "art/parts/footFar.png",
+      "parent": "shinFar",
+      "joint": [
+        25,
+        260
+      ],
+      "pivot": [
+        55,
+        31
+      ],
+      "layer": 25,
+      "size": [
+        257,
+        175
+      ],
+      "source": "assets/source/whole-original.png",
+      "sourceSha256": "b1a83019511efa33a5d6b7380fc361f171c7b8d2bc82f49ab71b45d130620615",
+      "sourcePivot": [
+        635,
+        1300
+      ],
+      "sourceCrop": [
+        580,
+        1269,
+        257,
+        175
+      ],
+      "technicalScale": [
+        1,
+        1
+      ],
+      "sourceMask": "assets/masks/footFar-source.png",
+      "hiddenMask": "assets/masks/footFar-hidden.png",
+      "generativeMask": "assets/masks/footFar-generative.png",
+      "exactSourcePixels": 26993,
+      "clonedHiddenPixels": 694,
+      "generatedHiddenPixels": 0,
+      "hiddenCloneEllipses": [
+        [
+          635,
+          1300,
+          48,
+          28,
+          608,
+          1300,
+          60,
+          45
+        ]
+      ]
+    }
+  ]
+}

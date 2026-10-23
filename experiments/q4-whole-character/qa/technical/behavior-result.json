@@ -1,0 +1,616 @@
+{
+  "method": "Targeted recovery of missing numeric observations after harness selector timeout, within initial q4-c1 pass; live routes and pixel audit not repeated.",
+  "states": {
+    "idle": {
+      "rootY": 0.6992278208837756,
+      "knee": 0.5208494447905883,
+      "torso": 0.027076804303603527,
+      "scale": 0.255500354861604,
+      "gaps": {
+        "Near": 5.684341886080802E-14,
+        "Far": 5.684341886080802E-14
+      },
+      "laterRootY": -1.059736697327068,
+      "phase": 0,
+      "laterPhase": 0
+    },
+    "low": {
+      "rootY": 162.30778835398232,
+      "knee": 1.744414311092841,
+      "torso": 0.2670768042965232,
+      "scale": 0.255500354861604,
+      "gaps": {
+        "Near": 5.684341886080802E-14,
+        "Far": 0
+      },
+      "laterRootY": 160.54882384051064,
+      "phase": 0,
+      "laterPhase": 0
+    },
+    "move": {
+      "rootY": -2.8646655173051947,
+      "knee": 0.6048222052650847,
+      "torso": 0.07205649246008829,
+      "scale": 0.255500354861604,
+      "gaps": {
+        "Near": 0.1891012841493307,
+        "Far": 13.257495058820211
+      },
+      "laterRootY": 3.073564162684459,
+      "phase": 0.29426855233224486,
+      "laterPhase": 0.5747259145458234
+    }
+  },
+  "jumps": [
+    {
+      "origin": "idle",
+      "target": "low",
+      "phases": [
+        "prepare",
+        "flight",
+        "flight",
+        "land",
+        "low"
+      ],
+      "airCommandState": "flight",
+      "airCommandGround": "low",
+      "maxHeight": 203.7614600781597,
+      "minLandGap": -5.684341886080802E-14,
+      "maxLandGap": 5.684341886080802E-14,
+      "end": {
+        "state": "low",
+        "ground": "low",
+        "jumps": 1,
+        "lands": 1
+      },
+      "contact": {
+        "time": 2.0583333333333282,
+        "beforeGap": {
+          "Near": -6.019859755643893,
+          "Far": -2.3425150712531604
+        },
+        "gap": {
+          "Near": 5.684341886080802E-14,
+          "Far": 0
+        }
+      }
+    },
+    {
+      "origin": "low",
+      "target": "move",
+      "phases": [
+        "prepare",
+        "flight",
+        "flight",
+        "land",
+        "move"
+      ],
+      "airCommandState": "flight",
+      "airCommandGround": "move",
+      "maxHeight": 203.7614600781597,
+      "minLandGap": -5.684341886080802E-14,
+      "maxLandGap": 5.684341886080802E-14,
+      "end": {
+        "state": "move",
+        "ground": "move",
+        "jumps": 1,
+        "lands": 1
+      },
+      "contact": {
+        "time": 2.0583333333333282,
+        "beforeGap": {
+          "Near": -6.019859755643893,
+          "Far": -2.3425150712531035
+        },
+        "gap": {
+          "Near": 0,
+          "Far": -5.684341886080802E-14
+        }
+      }
+    },
+    {
+      "origin": "move",
+      "target": "idle",
+      "phases": [
+        "prepare",
+        "flight",
+        "flight",
+        "land",
+        "idle"
+      ],
+      "airCommandState": "flight",
+      "airCommandGround": "idle",
+      "maxHeight": 203.7614600781597,
+      "minLandGap": -5.684341886080802E-14,
+      "maxLandGap": 5.684341886080802E-14,
+      "end": {
+        "state": "idle",
+        "ground": "idle",
+        "jumps": 1,
+        "lands": 1
+      },
+      "contact": {
+        "time": 2.0583333333333282,
+        "beforeGap": {
+          "Near": -6.01985975123165,
+          "Far": -2.3425150712524783
+        },
+        "gap": {
+          "Near": 0,
+          "Far": 1.1368683772161603E-13
+        }
+      }
+    }
+  ],
+  "interruptions": [
+    {
+      "destination": "move",
+      "intermediateRoot": 88.88811633717333,
+      "unchangedAtCommand": true,
+      "nextRoot": 94.97006518258537,
+      "end": {
+        "state": "move",
+        "ground": "move",
+        "jumps": 0,
+        "lands": 0
+      }
+    },
+    {
+      "destination": "jump",
+      "intermediateRoot": 88.88811633717333,
+      "unchangedAtCommand": true,
+      "nextRoot": 96.39168303102531,
+      "end": {
+        "state": "low",
+        "ground": "low",
+        "jumps": 1,
+        "lands": 1
+      }
+    }
+  ],
+  "initial": {
+    "time": 4.079999999999995,
+    "state": "low",
+    "ground": "low",
+    "stateTime": 0.7583333333333331,
+    "phase": 0.5244313971459579,
+    "speed": 0.0014316422009748439,
+    "height": 0,
+    "move": 0,
+    "pose": {
+      "rootY": 159.14247610624437,
+      "bodyX": -54.542889127952414,
+      "pelvis": 0,
+      "torso": 0.25767555994601293,
+      "head": -0.1803728445746758,
+      "upperArmNear": -0.3900002843603429,
+      "forearmNear": -0.6800003393437624,
+      "upperArmFar": -0.48999913594821093,
+      "forearmFar": -0.6299999997249562,
+      "footXNear": -140.00052547789136,
+      "footYNear": 463.9370095609308,
+      "footAngleNear": 2.2650775705520977E-12,
+      "footXFar": 75.00064058463165,
+      "footYFar": 474.9370095605795,
+      "footAngleFar": 2.2650775705520977E-12,
+      "thighNear": -0.9201184817317756,
+      "shinNear": 1.7289459437779138,
+      "footNear": -0.8088274620438731,
+      "thighFar": -1.0369164688236225,
+      "shinFar": 1.4653877353201048,
+      "footFar": -0.4284712664942172
+    },
+    "target": {
+      "rootY": 158.80317074750104,
+      "bodyX": -54.54288918152983,
+      "pelvis": 0,
+      "torso": 0.2566676937801144,
+      "head": -0.17966738564608006,
+      "upperArmNear": -0.39000028195237146,
+      "forearmNear": -0.6800001691714229,
+      "upperArmFar": -0.4899997180476285,
+      "forearmFar": -0.63,
+      "footXNear": -140.00026347047668,
+      "footYNear": 463.937009562424,
+      "footAngleNear": 0,
+      "footXFar": 75.00032350282571,
+      "footYFar": 474.937009562424,
+      "footAngleFar": 0
+    },
+    "jumpCount": 1,
+    "landCount": 1,
+    "soleGap": {
+      "Near": 1.2814780347980559E-09,
+      "Far": 1.5828902633074904E-09
+    },
+    "contacts": {
+      "Near": {
+        "x": -131.82268581115744,
+        "time": 3.0383333333333273
+      },
+      "Far": {
+        "x": 53.65071843441961,
+        "time": 3.0383333333333273
+      }
+    },
+    "contactEvent": {
+      "time": 3.0383333333333273,
+      "beforeGap": {
+        "Near": -6.019859750993987,
+        "Far": -2.3425150712531604
+      },
+      "gap": {
+        "Near": 0,
+        "Far": 5.684341886080802E-14
+      }
+    },
+    "events": [
+      {
+        "time": 0.008333333333333333,
+        "state": "move"
+      },
+      {
+        "time": 1.3783333333333334,
+        "state": "low"
+      },
+      {
+        "time": 1.468333333333333,
+        "state": "idle"
+      },
+      {
+        "time": 1.5883333333333327,
+        "state": "move"
+      },
+      {
+        "time": 1.8883333333333316,
+        "state": "prepare"
+      },
+      {
+        "time": 2.113333333333331,
+        "state": "flight"
+      },
+      {
+        "time": 3.0383333333333273,
+        "state": "land"
+      },
+      {
+        "time": 3.3216666666666597,
+        "state": "low"
+      }
+    ],
+    "paused": true,
+    "bones": true,
+    "bindMode": false,
+    "partCount": 12,
+    "world": {
+      "torso": {
+        "x": 0,
+        "y": 0,
+        "angle": 0.25767555994601293
+      },
+      "head": {
+        "x": 78.77121567270306,
+        "y": -377.38587093510074,
+        "angle": 0.07730271537133712
+      },
+      "upperArmNear": {
+        "x": -11.852748737736107,
+        "y": -308.1955748341629,
+        "angle": -0.13232472441432996
+      },
+      "forearmNear": {
+        "x": -73.68005334265973,
+        "y": -128.466933807503,
+        "angle": -0.8123250637580923
+      },
+      "upperArmFar": {
+        "x": 109.73251955571271,
+        "y": -275.1195633755534,
+        "angle": -0.232323576002198
+      },
+      "forearmFar": {
+        "x": 237.85823106780057,
+        "y": -107.10527216935498,
+        "angle": -0.8623235757271542
+      },
+      "thighNear": {
+        "x": -30,
+        "y": 10,
+        "angle": -0.9201184817317756
+      },
+      "shinNear": {
+        "x": 120.63969408418068,
+        "y": 200.08598729581425,
+        "angle": 0.8088274620461382
+      },
+      "footNear": {
+        "x": -115.45763634993902,
+        "y": 314.79453345468636,
+        "angle": 2.2650770148402444E-12
+      },
+      "thighFar": {
+        "x": 30,
+        "y": 15,
+        "angle": -1.0369164688236225
+      },
+      "shinFar": {
+        "x": 244.82847528000127,
+        "y": 83.91100208870779,
+        "angle": 0.42847126649648226
+      },
+      "footFar": {
+        "x": 159.54352971258413,
+        "y": 330.7945334543351,
+        "angle": 2.2650770148402444E-12
+      }
+    },
+    "view": {
+      "floor": 462.68,
+      "rootX": 503.06427247263105,
+      "rootY": 342.902830344766,
+      "scale": 0.255500354861604,
+      "facing": 1,
+      "bindHeight": 1409,
+      "groundDistance": 627.937009562424,
+      "renderedSoleGap": {
+        "Near": 3.2741809263825417E-10,
+        "Far": 4.04440925194649E-10
+      }
+    },
+    "inputs": [
+      {
+        "time": 0,
+        "action": "idle"
+      },
+      {
+        "time": 0,
+        "action": "reset"
+      },
+      {
+        "time": 0,
+        "action": "route one"
+      },
+      {
+        "time": 0,
+        "action": "idle"
+      },
+      {
+        "time": 0.8000666666666677,
+        "action": "low"
+      },
+      {
+        "time": 2.008233333333331,
+        "action": "move"
+      },
+      {
+        "time": 3.4999999999999907,
+        "action": "idle"
+      },
+      {
+        "time": 4.308233333333336,
+        "action": "jump"
+      },
+      {
+        "time": 0,
+        "action": "idle"
+      },
+      {
+        "time": 0,
+        "action": "reset"
+      },
+      {
+        "time": 0,
+        "action": "route two"
+      },
+      {
+        "time": 0,
+        "action": "move"
+      },
+      {
+        "time": 1.0999999999999996,
+        "action": "low"
+      },
+      {
+        "time": 2.099999999999997,
+        "action": "jump"
+      },
+      {
+        "time": 2.600066666666663,
+        "action": "move"
+      },
+      {
+        "time": 3.9999999999999907,
+        "action": "jump"
+      },
+      {
+        "time": 4.500000000000011,
+        "action": "low"
+      },
+      {
+        "time": 0,
+        "action": "idle"
+      },
+      {
+        "time": 0,
+        "action": "reset"
+      },
+      {
+        "time": 0,
+        "action": "idle"
+      },
+      {
+        "time": 0,
+        "action": "idle"
+      },
+      {
+        "time": 0,
+        "action": "reset"
+      },
+      {
+        "time": 0,
+        "action": "low"
+      },
+      {
+        "time": 0,
+        "action": "idle"
+      },
+      {
+        "time": 0,
+        "action": "reset"
+      },
+      {
+        "time": 0,
+        "action": "move"
+      },
+      {
+        "time": 0,
+        "action": "idle"
+      },
+      {
+        "time": 0,
+        "action": "reset"
+      },
+      {
+        "time": 0,
+        "action": "move"
+      },
+      {
+        "time": 0,
+        "action": "idle"
+      },
+      {
+        "time": 0,
+        "action": "reset"
+      },
+      {
+        "time": 0,
+        "action": "idle"
+      },
+      {
+        "time": 0.8999999999999992,
+        "action": "jump"
+      },
+      {
+        "time": 1.2583333333333313,
+        "action": "low"
+      },
+      {
+        "time": 0,
+        "action": "idle"
+      },
+      {
+        "time": 0,
+        "action": "reset"
+      },
+      {
+        "time": 0,
+        "action": "low"
+      },
+      {
+        "time": 0.8999999999999992,
+        "action": "jump"
+      },
+      {
+        "time": 1.2583333333333313,
+        "action": "move"
+      },
+      {
+        "time": 0,
+        "action": "idle"
+      },
+      {
+        "time": 0,
+        "action": "reset"
+      },
+      {
+        "time": 0,
+        "action": "move"
+      },
+      {
+        "time": 0.8999999999999992,
+        "action": "jump"
+      },
+      {
+        "time": 1.2583333333333313,
+        "action": "idle"
+      },
+      {
+        "time": 0,
+        "action": "idle"
+      },
+      {
+        "time": 0,
+        "action": "reset"
+      },
+      {
+        "time": 0,
+        "action": "low"
+      },
+      {
+        "time": 0.08000000000000002,
+        "action": "move"
+      },
+      {
+        "time": 0,
+        "action": "idle"
+      },
+      {
+        "time": 0,
+        "action": "reset"
+      },
+      {
+        "time": 0,
+        "action": "low"
+      },
+      {
+        "time": 0.08000000000000002,
+        "action": "jump"
+      },
+      {
+        "time": 0,
+        "action": "idle"
+      },
+      {
+        "time": 0,
+        "action": "reset"
+      },
+      {
+        "time": 0,
+        "action": "move"
+      },
+      {
+        "time": 1.37,
+        "action": "low"
+      },
+      {
+        "time": 1.4599999999999997,
+        "action": "idle"
+      },
+      {
+        "time": 1.5799999999999994,
+        "action": "move"
+      },
+      {
+        "time": 1.8799999999999983,
+        "action": "jump"
+      },
+      {
+        "time": 2.2799999999999967,
+        "action": "low"
+      }
+    ]
+  },
+  "walk": {
+    "duration": 2.5,
+    "minClosestGap": 0.0010797884276030345,
+    "maxClosestGap": 1.520994677711542
+  },
+  "keyboardLow": "low",
+  "keyboardJump": "flight",
+  "sourcePreview": {
+    "loaded": true,
+    "width": 1024,
+    "height": 1536,
+    "url": "http://127.0.0.1:4184/assets/source/whole-original.png"
+  }
+}

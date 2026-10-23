@@ -1,0 +1,16 @@
+<!doctype html><html lang="ru"><meta charset="utf-8"><title>Q4 · ранняя настоящая цепь</title><link rel="icon" href="data:,"><body style="margin:0;background:#87998f;color:#102830;font:16px Segoe UI"><p style="padding:8px">Q4 · ранние torso/head + near leg из exact whole. Неполная сборка. <button id="idle">Покой</button> <button id="low">Низкая поза</button> <button id="move">Шаг</button> <button id="jump">Прыжок</button></p><div id="scene"></div><script type="module">
+import {Application,Assets,Container,Sprite,Graphics} from 'pixi.js';
+import {Motion} from '/src/motion.js';
+const manifest=await(await fetch('/art/manifest-early.json')).json();
+const parts=manifest.parts,byId=Object.fromEntries(parts.map(p=>[p.id,p]));
+const app=new Application();await app.init({width:1000,height:650,background:0x87998f,antialias:true});document.getElementById('scene').append(app.canvas);
+const floor=590,scale=.34,root=new Container();root.scale.set(scale);root.position.set(500,floor-650*scale);root.sortableChildren=true;
+app.stage.addChild(new Graphics().moveTo(0,floor).lineTo(1000,floor).stroke({color:0x284c42,width:2}),root);
+const sprites={};for(const p of parts){const s=new Sprite(await Assets.load('/'+p.file));s.pivot.set(...p.pivot);s.zIndex=p.layer;root.addChild(s);sprites[p.id]=s;}
+const a=Math.hypot(...byId.shinNear.joint),b=Math.hypot(...byId.footNear.joint),axis=id=>Math.atan2(-byId[id].joint[0],byId[id].joint[1]);
+const motion=new Motion({thigh:a,shin:b,nearReach:485,farReach:485,nearAxisA:axis('shinNear'),nearAxisB:axis('footNear')});
+let paused=false,world={};
+function draw(){world={};root.position.set(500+motion.pose.bodyX*scale,floor-650*scale+motion.pose.rootY*scale);function transform(id){if(world[id])return world[id];const p=byId[id],q=p.parent?transform(p.parent):{x:0,y:0,angle:0};return world[id]={x:q.x+p.joint[0]*Math.cos(q.angle)-p.joint[1]*Math.sin(q.angle),y:q.y+p.joint[0]*Math.sin(q.angle)+p.joint[1]*Math.cos(q.angle),angle:q.angle+(motion.pose[id]??0)};}for(const p of parts){const t=transform(p.id);sprites[p.id].position.set(t.x,t.y);sprites[p.id].rotation=t.angle;}}
+for(const state of ['idle','low','move'])document.getElementById(state).onclick=()=>motion.requestGround(state);document.getElementById('jump').onclick=()=>motion.jump();
+app.ticker.add(t=>{if(!paused)motion.update(Math.min(t.deltaMS/1000,.05));draw();});window.__EARLY={snapshot:()=>({...motion.snapshot(),world}),pause:()=>{paused=true;},step:dt=>{motion.update(dt);draw();}};
+</script></body></html>
