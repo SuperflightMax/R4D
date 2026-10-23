@@ -31,11 +31,22 @@ const length=(id,fallback)=>byId[id]?Math.hypot(...byId[id].joint):fallback;
 let minX=Infinity,minY=Infinity,maxX=-Infinity,maxY=-Infinity;
 parts.forEach((p,i)=>{const b=bind[p.id],t=textures[i];minX=Math.min(minX,b.x-p.pivot[0]);minY=Math.min(minY,b.y-p.pivot[1]);maxX=Math.max(maxX,b.x-p.pivot[0]+t.width);maxY=Math.max(maxY,b.y-p.pivot[1]+t.height);});
 const bindHeight=maxY-minY;
-const contact=side=>byId['foot'+side].size[1]-byId['foot'+side].pivot[1];
+// Lower opaque boundary of each real boot, relative to its physical ankle pivot.
+// This measures existing art; no PNG pixels are altered.
+const soles={};
+for(const side of ['Near','Far']){
+ const p=byId['foot'+side],image=new Image();image.src=`${base}${p.file}`;await image.decode();
+ const canvas=document.createElement('canvas');canvas.width=image.width;canvas.height=image.height;
+ const context=canvas.getContext('2d',{willReadFrequently:true});context.drawImage(image,0,0);
+ const pixels=context.getImageData(0,0,image.width,image.height).data,points=[];
+ for(let x=0;x<image.width;x++)for(let y=image.height-1;y>=0;y--)if(pixels[(y*image.width+x)*4+3]>=128){points.push([x+.5-p.pivot[0],y+1-p.pivot[1]]);break;}
+ soles[side]=points;
+}
+const contact=side=>Math.max(...soles[side].map(([,y])=>y));
 const standingDistance=side=>bind['thigh'+side].y+length('shin'+side,125)+length('foot'+side,125)+contact(side);
 const groundDistance=Math.min(standingDistance('Near'),standingDistance('Far'))-12;
 const axis=id=>Math.atan2(-byId[id].joint[0],byId[id].joint[1]);
-const motion=new Motion({thigh:length('shinNear',125),shin:length('footNear',125),farThigh:length('shinFar',125),farShin:length('footFar',125),nearReach:groundDistance-bind.thighNear.y-contact('Near'),farReach:groundDistance-bind.thighFar.y-contact('Far'),nearAxisA:axis('shinNear'),nearAxisB:axis('footNear'),farAxisA:axis('shinFar'),farAxisB:axis('footFar')});
+const motion=new Motion({thigh:length('shinNear',125),shin:length('footNear',125),farThigh:length('shinFar',125),farShin:length('footFar',125),nearReach:groundDistance-bind.thighNear.y-contact('Near'),farReach:groundDistance-bind.thighFar.y-contact('Far'),nearAxisA:axis('shinNear'),nearAxisB:axis('footNear'),farAxisA:axis('shinFar'),farAxisB:axis('footFar'),soleNear:soles.Near,soleFar:soles.Far});
 let paused=false,bones=false,held=new Set(),facing=1,scenario=null,world={};
 const eventLog=[];
 function log(action){eventLog.push({time:motion.time,action});if(eventLog.length>80)eventLog.shift();}

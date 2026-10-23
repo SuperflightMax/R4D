@@ -16,7 +16,7 @@ export function legIK(x,y,a,b){
 }
 export class Motion{
  constructor(lengths={thigh:125,shin:125}){this.lengths=lengths;this.reset();}
- reset(){this.time=0;this.phase=0;this.travel=0;this.speed=0;this.move=0;this.ground='idle';this.state='idle';this.stateTime=0;this.height=0;this.verticalSpeed=0;this.jumpRequested=false;this.jumpCount=0;this.landCount=0;this.pose={};this.velocity={};this.events=[];this.launchDepth=0;this.launchX=0;this.target=this.sample();this.pose={...this.target};this.solveLegs();}
+ reset(){this.time=0;this.phase=0;this.travel=0;this.speed=0;this.move=0;this.ground='idle';this.state='idle';this.stateTime=0;this.height=0;this.fallHeight=0;this.verticalSpeed=0;this.jumpRequested=false;this.jumpCount=0;this.landCount=0;this.contacts={Near:null,Far:null};this.contactEvent=null;this.pose={};this.velocity={};this.events=[];this.launchDepth=0;this.launchX=0;this.target=this.sample();this.pose={...this.target};this.solveLegs();}
  requestGround(state,direction=1){if(!['idle','low','move'].includes(state))throw new Error(`Unknown ground state ${state}`);this.ground=state;this.move=state==='move'?Math.sign(direction)||1:0;}
  setMove(direction){this.requestGround(direction?'move':'idle',direction);}
  jump(){if(['idle','low','move'].includes(this.state))this.jumpRequested=true;}
@@ -26,14 +26,33 @@ export class Motion{
   this.time+=dt;this.stateTime+=dt;
   this.speed+=(this.move*MOVE_SPEED-this.speed)*(1-Math.exp(-dt*7));this.travel+=this.speed*dt;
   this.phase=(this.phase+Math.abs(this.speed)/MOVE_SPEED*dt/.82)%1;
-  if(this.jumpRequested){this.jumpRequested=false;this.launchDepth=this.pose.rootY;this.launchX=this.pose.bodyX;this.enter('prepare');this.jumpCount++;}
+  if(this.jumpRequested){this.jumpRequested=false;this.contacts={Near:null,Far:null};this.contactEvent=null;this.launchDepth=this.pose.rootY;this.launchX=this.pose.bodyX;this.enter('prepare');this.jumpCount++;}
   if(this.state==='prepare'&&this.stateTime>=.22){this.enter('flight');this.verticalSpeed=480;}
-  if(this.state==='flight'){this.verticalSpeed-=1120*dt;this.height+=this.verticalSpeed*dt;if(this.height<=0&&this.verticalSpeed<0){this.height=0;this.verticalSpeed=0;this.enter('land');this.landCount++;}}
+  if(this.state==='flight'){this.verticalSpeed-=1120*dt;this.fallHeight+=this.verticalSpeed*dt;this.height=Math.max(0,this.fallHeight);}
   if(this.state==='land'&&this.stateTime>=.28)this.enter(this.ground);
   if(['idle','low','move'].includes(this.state)&&this.state!==this.ground)this.enter(this.ground);
   this.target=this.sample();
   for(const key of Object.keys(this.target))[this.pose[key],this.velocity[key]]=spring(this.pose[key]??this.target[key],this.velocity[key]??0,this.target[key],dt,23,angularKeys.has(key));
   this.solveLegs();
+  if((this.state==='flight'&&this.verticalSpeed<0)||this.state==='land')this.resolveContact();
+ }
+ soleExtent(side,angle){const points=this.lengths['sole'+side];return points?.length?Math.max(...points.map(([x,y])=>x*Math.sin(angle)+y*Math.cos(angle))):0;}
+ soleGap(side){const p=this.pose,{a,b,axisA,axisB,reach}=this.dimensions(side);const ankleY=p.rootY+a*Math.cos(p['thigh'+side]+axisA)+b*Math.cos(p['thigh'+side]+p['shin'+side]+axisB);return reach+this.soleExtent(side,0)-ankleY-this.soleExtent(side,p['footAngle'+side]);}
+ resolveContact(){
+  const before={Near:this.soleGap('Near'),Far:this.soleGap('Far')};
+  for(const side of ['Near','Far']){
+   if(!this.contacts[side]&&before[side]<=.05)this.contacts[side]={x:this.pose['footX'+side],time:this.time};
+   if(this.contacts[side]){
+    this.pose['footX'+side]=this.contacts[side].x;
+    this.pose['footY'+side]=this.dimensions(side).reach+this.soleExtent(side,0)-this.soleExtent(side,this.pose['footAngle'+side]);
+    this.velocity['footX'+side]=0;this.velocity['footY'+side]=0;
+   }
+  }
+  this.solveLegs();
+  if(this.state==='flight'&&(this.contacts.Near||this.contacts.Far)){
+   this.height=0;this.fallHeight=0;this.verticalSpeed=0;this.enter('land');this.landCount++;
+   this.contactEvent={time:this.time,beforeGap:before,gap:{Near:this.soleGap('Near'),Far:this.soleGap('Far')}};
+  }
  }
  dimensions(side){return {a:this.lengths[side==='Near'?'thigh':'farThigh']??this.lengths.thigh,b:this.lengths[side==='Near'?'shin':'farShin']??this.lengths.shin,reach:this.lengths[side==='Near'?'nearReach':'farReach']??this.lengths.thigh+this.lengths.shin-12,axisA:this.lengths[side==='Near'?'nearAxisA':'farAxisA']??0,axisB:this.lengths[side==='Near'?'nearAxisB':'farAxisB']??0};}
  solveLegs(){for(const side of ['Near','Far']){const {a,b,axisA,axisB}=this.dimensions(side);const [hip,knee]=legIK(this.pose['footX'+side]-this.pose.bodyX,this.pose['footY'+side]-this.pose.rootY,a,b);this.pose['thigh'+side]=hip-axisA;this.pose['shin'+side]=knee+axisA-axisB;this.pose['foot'+side]=this.pose['footAngle'+side]-this.pose['thigh'+side]-this.pose['shin'+side];}}
@@ -54,17 +73,18 @@ export class Motion{
    const preparing=this.state==='prepare',t=clamp(this.stateTime/(preparing?.22:.28),0,1);
    p.rootY=preparing?this.launchDepth+(Math.max(34,this.launchDepth+12)-this.launchDepth)*smooth(t):80*low+Math.sin(t*Math.PI)*(low?18:34);
    p.bodyX=preparing?this.launchX:-27*low;
-   for(const side of ['Near','Far']){p['footX'+side]=0;p['footY'+side]=this.dimensions(side).reach;}
+   for(const side of ['Near','Far']){p['footX'+side]=!preparing&&this.contacts[side]?this.contacts[side].x:0;p['footY'+side]=this.dimensions(side).reach+(!preparing&&!this.contacts[side]?2:0);}
    p.torso=.12+.16*low;p.head=-.08;p.upperArmNear=.3;p.upperArmFar=.24;
   }
   if(this.state==='flight'){
-   const ascent=clamp(this.verticalSpeed/480,-1,1);p.rootY=-this.height;p.bodyX=0;p.torso=.06;p.head=-.04;
-   for(const side of ['Near','Far']){const {a,b}=this.dimensions(side);const hip=side==='Near'?-.5-ascent*.14:.14,knee=side==='Near'?.9:.62;p['footX'+side]=-a*Math.sin(hip)-b*Math.sin(hip+knee);p['footY'+side]=p.rootY+a*Math.cos(hip)+b*Math.cos(hip+knee);p['footAngle'+side]=.12;}
+   const ascent=clamp(this.verticalSpeed/480,-1,1);p.rootY=-this.fallHeight;p.bodyX=0;p.torso=.06;p.head=-.04;
+   const approach=this.verticalSpeed<0?smooth(clamp(-this.verticalSpeed/180,0,1))*smooth(clamp(1-this.height/100,0,1)):0;
+   for(const side of ['Near','Far']){const {a,b,reach}=this.dimensions(side);const hip=side==='Near'?-.5-ascent*.14:.14,knee=side==='Near'?.9:.62;p['footX'+side]=(-a*Math.sin(hip)-b*Math.sin(hip+knee))*(1-approach);p['footY'+side]=p.rootY+(a*Math.cos(hip)+b*Math.cos(hip+knee))*(1-approach)+reach*approach;p['footAngle'+side]=.12*(1-approach);}
    p.upperArmNear=-.72;p.upperArmFar=-.54;p.forearmNear=-.46;p.forearmFar=-.35;
   }
   return p;
  }
- snapshot(){return {time:this.time,state:this.state,ground:this.ground,stateTime:this.stateTime,phase:this.phase,speed:this.speed,height:this.height,move:this.move,pose:{...this.pose},target:{...this.target},jumpCount:this.jumpCount,landCount:this.landCount,events:[...this.events]};}
+ snapshot(){return {time:this.time,state:this.state,ground:this.ground,stateTime:this.stateTime,phase:this.phase,speed:this.speed,height:this.height,move:this.move,pose:{...this.pose},target:{...this.target},jumpCount:this.jumpCount,landCount:this.landCount,soleGap:{Near:this.soleGap('Near'),Far:this.soleGap('Far')},contacts:structuredClone(this.contacts),contactEvent:structuredClone(this.contactEvent),events:[...this.events]};}
 }
 export const ROUTES={
  one:[{at:0,ground:'idle'},{at:.8,ground:'low'},{at:2,ground:'move'},{at:3.5,ground:'idle'},{at:4.3,jump:true}],
