@@ -1,0 +1,34 @@
+### Result
+{
+  "snapshot": {
+    "floor": 451.91999999999996,
+    "rootX": 517,
+    "rootY": 255.91999999999993,
+    "scale": 1.12,
+    "bodyY": -86.08605046623701,
+    "renderedSoleGap": {
+      "Left": 129.87783544044413,
+      "Right": 129.87783544044416,
+      "Rear": 129.8778354404441
+    },
+    "planes": {
+      "Left": 451.91999999999996,
+      "Right": 451.91999999999996,
+      "Rear": 429.52
+    },
+    "characterBounds": {
+      "x": 297.6859394317293,
+      "y": 18.19303960288886,
+      "width": 437.8756901355054,
+      "height": 307.209124956667
+    }
+  },
+  "scene": {
+    "height": 538,
+    "width": 1034
+  }
+}
+### Ran Playwright code
+```js
+await page.evaluate('() => ({snapshot: window.__R4D.snapshot().view, scene: {height:document.getElementById("scene").clientHeight,width:document.getElementById("scene").clientWidth}})');
+```

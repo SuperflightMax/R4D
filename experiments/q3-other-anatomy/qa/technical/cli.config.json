@@ -1,0 +1,13 @@
+{
+  "browser": {
+    "browserName": "chromium",
+    "isolated": true,
+    "launchOptions": {
+      "headless": true,
+      "executablePath": "E:/Caches/playwright/chromium-1208/chrome-win64/chrome.exe"
+    },
+    "contextOptions": { "viewport": { "width": 1280, "height": 900 } }
+  },
+  "outputDir": "D:/dev/R4D/experiments/q3-other-anatomy/qa/technical/output/playwright",
+  "outputMode": "file"
+}

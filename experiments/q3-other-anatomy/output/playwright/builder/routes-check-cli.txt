@@ -1,0 +1,30 @@
+### Result
+[{"name":"Маршрут 1","state":"idle","ground":"idle","jumps":1,"landings":1,"events":[{"time":0.9083333333333325,"state":"low"},{"time":2.1083333333333285,"state":"move"},{"time":3.908333333333322,"state":"idle"},{"time":4.808333333333362,"state":"prepare"},{"time":5.091666666666709,"state":"flight"},{"time":5.900000000000083,"state":"land"},{"time":6.225000000000099,"state":"idle"}]},{"name":"Маршрут 2","state":"low","ground":"low","jumps":2,"landings":2,"events":[{"time":0.008333333333333333,"state":"move"},{"time":1.3083333333333311,"state":"low"},{"time":2.308333333333328,"state":"prepare"},{"time":2.59166666666666,"state":"flight"},{"time":3.3999999999999906,"state":"land"},{"time":3.7249999999999894,"state":"move"},{"time":4.308333333333337,"state":"prepare"},{"time":4.5916666666666845,"state":"flight"},{"time":5.400000000000058,"state":"land"},{"time":5.725000000000074,"state":"low"}]},{"name":"В середине → идти","state":"move","ground":"move","jumps":0,"landings":0,"events":[{"time":0.6083333333333336,"state":"low"},{"time":0.6916666666666667,"state":"move"}]},{"name":"В середине → прыжок","state":"low","ground":"low","jumps":1,"landings":1,"events":[{"time":0.6083333333333336,"state":"low"},{"time":0.6916666666666667,"state":"prepare"},{"time":0.974999999999999,"state":"flight"},{"time":1.7833333333333294,"state":"land"},{"time":2.1083333333333285,"state":"low"}]},{"name":"keyboard/step","flightState":"flight","endState":"move","jumps":1,"lands":1}]
+### Ran Playwright code
+```js
+await (async (page) => {
+ const records=[];
+ for(const name of ['Маршрут 1','Маршрут 2','В середине → идти','В середине → прыжок']){
+  await page.getByRole('button',{name,exact:true}).click();
+  await page.evaluate(()=>{window.__R4D.setPaused(true);window.__R4D.step(7.1);});
+  const s=await page.evaluate(()=>window.__R4D.snapshot());
+  if(s.jumpCount!==s.landCount)throw new Error('unfinished route '+name);
+  records.push({name,state:s.state,ground:s.ground,jumps:s.jumpCount,landings:s.landCount,events:s.events});
+ }
+ await page.evaluate(()=>{window.__R4D.setPaused(true);window.__R4D.reset();});
+ await page.keyboard.press('2');await page.evaluate(()=>window.__R4D.step(.08));
+ await page.keyboard.press('Space');await page.evaluate(()=>window.__R4D.step(.5));
+ const flight=await page.evaluate(()=>window.__R4D.snapshot());
+ await page.screenshot({path:'experiments/q3-other-anatomy/output/playwright/builder/keyboard-flight.png'});
+ await page.keyboard.press('3');await page.evaluate(()=>window.__R4D.step(.6));
+ await page.screenshot({path:'experiments/q3-other-anatomy/output/playwright/builder/landing.png'});
+ await page.evaluate(()=>window.__R4D.step(.7));
+ const end=await page.evaluate(()=>window.__R4D.snapshot());
+ if(flight.state!=='flight'||end.ground!=='move'||end.landCount!==1)throw new Error('keyboard interaction failed');
+ await page.getByRole('button',{name:'Шаг · .',exact:true}).click();
+ records.push({name:'keyboard/step',flightState:flight.state,endState:end.state,jumps:end.jumpCount,lands:end.landCount});
+ await page.evaluate(()=>{window.__R4D.reset();window.__R4D.setPaused(false);});
+ return records;
+}
+)(page);
+```

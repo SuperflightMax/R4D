@@ -1,0 +1,18 @@
+### Result
+{"reason":"Inspect apparent top crop in jump-75.png during same full pass","state":"flight","time":1.53333333333333,"height":78.29861111111111,"view":{"floor":451.91999999999996,"rootX":517,"rootY":255.91999999999993,"scale":1.12,"bodyY":-86.08605046623701,"renderedSoleGap":{"Left":129.87783544044413,"Right":129.87783544044416,"Rear":129.8778354404441},"planes":{"Left":451.91999999999996,"Right":451.91999999999996,"Rear":429.52},"characterBounds":{"x":297.6859394317293,"y":18.19303960288886,"width":437.8756901355054,"height":307.209124956667}},"world":{"body":{"x":0,"y":-86.08605046623701,"angle":0.019906623360789338},"sensor":{"x":0.9952654320888635,"y":-136.07614395204365,"angle":0.07845749460286579},"upperRear":{"x":0.09952654320888635,"y":-91.08505981481768,"angle":0.14010822380632537},"lowerRear":{"x":99.11961539588431,"y":-77.1200319377147,"angle":2.212104242853174},"footRear":{"x":27.33033489298161,"y":19.037646928174908,"angle":0},"upperLeft":{"x":-70.48376359617374,"y":-62.484375328258096,"angle":3.2684645677411344},"lowerLeft":{"x":-169.68001845687684,"y":-75.13755760033645,"angle":1.2579455192191822},"footLeft":{"x":-132.74734090876774,"y":39.037646928174894,"angle":0},"upperRight":{"x":69.48849816408487,"y":-59.697632118409274,"angle":-0.1597103120782033},"lowerRight":{"x":168.21583761524005,"y":-75.6008533297357,"angle":1.8708492920495932},"footRight":{"x":132.74734090876774,"y":39.03764692817488,"angle":0}},"scene":{"x":122,"y":157,"width":1036,"height":540}}
+### Ran Playwright code
+```js
+await (async (page) => {
+  await page.waitForFunction(()=>window.__R4D);
+  await page.evaluate(()=>window.__R4D.setPaused(true));
+  await page.getByRole('button',{name:'Сначала · R',exact:true}).click();
+  await page.evaluate(()=>window.__R4D.step(.9));
+  await page.getByRole('button',{name:'Прыжок · пробел',exact:true}).click();
+  await page.evaluate(()=>window.__R4D.step(76/120));
+  const s=await page.evaluate(()=>window.__R4D.snapshot());
+  const scene=await page.locator('#scene').boundingBox();
+  await page.locator('#scene').screenshot({path:'D:/dev/R4D/experiments/q3-other-anatomy/qa/technical/output/playwright/apex-bounds.png'});
+  return {reason:'Inspect apparent top crop in jump-75.png during same full pass',state:s.state,time:s.time,height:s.height,view:s.view,world:s.world,scene};
+}
+)(page);
+```
