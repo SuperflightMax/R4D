@@ -1,0 +1,29 @@
+### Result
+[{"file":"interrupt-move-0.png","time":0.06,"state":"low","height":0},{"file":"interrupt-move-1.png","time":0.06,"state":"low","height":0},{"file":"interrupt-move-2.png","time":0.09999999999999999,"state":"move","height":0},{"file":"interrupt-move-3.png","time":0.14,"state":"move","height":0},{"file":"interrupt-move-4.png","time":0.18000000000000002,"state":"move","height":0},{"file":"interrupt-move-5.png","time":0.31000000000000016,"state":"move","height":0},{"file":"interrupt-move-6.png","time":0.44000000000000056,"state":"move","height":0},{"file":"interrupt-move-7.png","time":0.5700000000000005,"state":"move","height":0},{"file":"interrupt-move-8.png","time":0.7000000000000001,"state":"move","height":0},{"file":"interrupt-move-9.png","time":0.8299999999999996,"state":"move","height":0},{"file":"interrupt-move-10.png","time":0.9599999999999992,"state":"move","height":0},{"file":"interrupt-move-11.png","time":1.089999999999999,"state":"move","height":0},{"file":"interrupt-move-12.png","time":1.2199999999999986,"state":"move","height":0},{"file":"interrupt-move-13.png","time":1.3499999999999983,"state":"move","height":0},{"file":"interrupt-jump-0.png","time":0.06,"state":"low","height":0},{"file":"interrupt-jump-1.png","time":0.06,"state":"low","height":0},{"file":"interrupt-jump-2.png","time":0.09999999999999999,"state":"prepare","height":0},{"file":"interrupt-jump-3.png","time":0.14,"state":"prepare","height":0},{"file":"interrupt-jump-4.png","time":0.18000000000000002,"state":"prepare","height":0},{"file":"interrupt-jump-5.png","time":0.31000000000000016,"state":"flight","height":10.080692906666679},{"file":"interrupt-jump-6.png","time":0.44000000000000056,"state":"flight","height":59.437820586666646},{"file":"interrupt-jump-7.png","time":0.5700000000000005,"state":"flight","height":89.80032170666657},{"file":"interrupt-jump-8.png","time":0.7000000000000001,"state":"flight","height":101.16819626666648},{"file":"interrupt-jump-9.png","time":0.8299999999999996,"state":"flight","height":93.5414442666664},{"file":"interrupt-jump-10.png","time":0.9599999999999992,"state":"flight","height":66.9200657066663},{"file":"interrupt-jump-11.png","time":1.089999999999999,"state":"flight","height":21.304060586666168},{"file":"interrupt-jump-12.png","time":1.2199999999999986,"state":"land","height":0},{"file":"interrupt-jump-13.png","time":1.3499999999999983,"state":"land","height":0},{"file":"manual-0.png","time":0.5699999999999998,"state":"move","height":0},{"file":"manual-1.png","time":0.6899999999999994,"state":"prepare","height":0},{"file":"manual-2.png","time":0.8099999999999989,"state":"flight","height":9.324707840000007},{"file":"manual-3.png","time":0.9499999999999985,"state":"flight","height":61.950188657777744},{"file":"manual-4.png","time":1.099999999999998,"state":"flight","height":93.88219505777765},{"file":"manual-5.png","time":1.1999999999999977,"state":"flight","height":101.12091932444426},{"file":"manual-6.png","time":1.2999999999999974,"state":"flight","height":97.12021959111087},{"file":"manual-7.png","time":1.399999999999997,"state":"flight","height":81.88009585777748},{"file":"manual-8.png","time":1.4999999999999967,"state":"flight","height":55.400548124444086},{"file":"manual-9.png","time":1.5999999999999963,"state":"flight","height":17.68157639111066},{"file":"manual-10.png","time":1.699999999999996,"state":"flight","height":0},{"file":"manual-11.png","time":1.7999999999999956,"state":"land","height":0},{"file":"manual-12.png","time":1.8999999999999952,"state":"land","height":0},{"file":"manual-13.png","time":1.9166666666666619,"state":"land","height":0}]
+### Ran Playwright code
+```js
+await (async (page) => {
+ const stage=page.getByRole('region',{name:'Анимированный персонаж',exact:true});
+ const click=async name=>page.getByRole('button',{name,exact:true}).click();
+ const step=async dt=>page.evaluate(dt=>window.__R4D.step(dt),dt);
+ const results=[];
+ const shot=async file=>{const s=await page.evaluate(()=>window.__R4D.snapshot());results.push({file,time:s.time,state:s.state,height:s.height});await stage.screenshot({path:file});};
+ for(const [dest,prefix] of [['Идти · 3','interrupt-move'],['Прыжок · пробел','interrupt-jump']]){
+  await click('Сначала · R');await page.evaluate(()=>window.__R4D.setPaused(true));
+  await click('Низкая поза · 2');await step(.06);await shot(`${prefix}-0.png`);
+  await click(dest);await shot(`${prefix}-1.png`);
+  for(let i=0;i<12;i++){await step(i<3?.04:.13);await shot(`${prefix}-${i+2}.png`);}
+ }
+ await click('Сначала · R');await page.evaluate(()=>window.__R4D.setPaused(true));
+ await click('Идти · 3');await step(.57);await shot('manual-0.png');
+ await click('Прыжок · пробел');await step(.12);await shot('manual-1.png');
+ await click('Низкая поза · 2');await step(.12);await shot('manual-2.png');
+ await click('Идти · 3');await step(.14);await shot('manual-3.png');
+ await click('Покой · 1');await step(.15);await shot('manual-4.png');
+ await click('Низкая поза · 2');
+ for(let i=5;i<13;i++){await step(.1);await shot(`manual-${i}.png`);}
+ await click('Шаг · .');await shot('manual-13.png');
+ return results;
+}
+)(page);
+```

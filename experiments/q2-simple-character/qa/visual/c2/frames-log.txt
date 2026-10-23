@@ -1,0 +1,31 @@
+### Result
+[{"file":"live-idle.png","time":36.78319999999851,"state":"idle","height":0,"phase":0},{"file":"live-move.png","time":37.14989999999845,"state":"move","height":0,"phase":0.0729346693544399},{"file":"idle.png","time":0.9999999999999989,"state":"idle","height":0,"phase":0},{"file":"low-mid.png","time":1.0599999999999987,"state":"low","height":0,"phase":0},{"file":"low-transition.png","time":1.1799999999999984,"state":"low","height":0,"phase":0},{"file":"low.png","time":1.9999999999999958,"state":"low","height":0,"phase":0},{"file":"low-dark.png","time":1.9999999999999958,"state":"low","height":0,"phase":0},{"file":"move-a.png","time":0.9999999999999989,"state":"move","height":0,"phase":0.050482345279364876},{"file":"move-b.png","time":1.3499999999999974,"state":"move","height":0,"phase":0.477170650644186},{"file":"prepare.png","time":0.8999999999999992,"state":"prepare","height":0,"phase":0},{"file":"flight-early.png","time":1.1499999999999984,"state":"flight","height":50.845013333333306,"phase":0},{"file":"flight.png","time":1.3499999999999976,"state":"flight","height":95.66890666666653,"phase":0},{"file":"flight-late.png","time":1.6699999999999964,"state":"flight","height":73.88449450666639,"phase":0},{"file":"land-first.png","time":1.9533333333333287,"state":"land","height":0,"phase":0},{"file":"land-mid.png","time":2.0733333333333284,"state":"land","height":0,"phase":0},{"file":"land-low.png","time":2.5733333333333257,"state":"low","height":0,"phase":0},{"file":"interrupt-move-before.png","time":0.06,"state":"low","height":0,"phase":0},{"file":"interrupt-move-request.png","time":0.06,"state":"low","height":0,"phase":0},{"file":"interrupt-move-early.png","time":0.13999999999999999,"state":"move","height":0,"phase":0.024975644897549745},{"file":"interrupt-move-middle.png","time":0.46000000000000046,"state":"move","height":0,"phase":0.3288638212935096},{"file":"interrupt-move-late.png","time":1.1599999999999984,"state":"move","height":0,"phase":0.1723108717651159},{"file":"interrupt-move-end.png","time":2.059999999999995,"state":"move","height":0,"phase":0.2697953768852581},{"file":"interrupt-jump-before.png","time":0.06,"state":"low","height":0,"phase":0},{"file":"interrupt-jump-request.png","time":0.06,"state":"low","height":0,"phase":0},{"file":"interrupt-jump-early.png","time":0.13999999999999999,"state":"prepare","height":0,"phase":0},{"file":"interrupt-jump-middle.png","time":0.46000000000000046,"state":"flight","height":67.20328135111102,"phase":0},{"file":"interrupt-jump-late.png","time":1.1599999999999984,"state":"flight","height":0,"phase":0},{"file":"interrupt-jump-end.png","time":2.059999999999995,"state":"low","height":0,"phase":0}]
+### Ran Playwright code
+```js
+await (async (page) => {
+ const stage=page.getByRole('region',{name:'Анимированный персонаж',exact:true});
+ const click=state=>page.getByRole('button',{name:{idle:'Покой · 1',low:'Низкая поза · 2',move:'Идти · 3',jump:'Прыжок · пробел'}[state],exact:true}).click();
+ const step=dt=>page.evaluate(dt=>window.__R4D.step(dt),dt);
+ const reset=()=>page.evaluate(()=>{window.__R4D.reset();window.__R4D.setPaused(true)});
+ const results=[];
+ async function frame(name){const s=await page.evaluate(()=>window.__R4D.snapshot());results.push({file:name+'.png',time:s.time,state:s.state,height:s.height,phase:s.phase});await stage.screenshot({path:'c2/'+name+'.png'});}
+ await frame('live-idle');await click('move');await page.waitForTimeout(140);await frame('live-move');
+ await reset();await step(1);await frame('idle');
+ await click('low');await step(.06);await frame('low-mid');await step(.12);await frame('low-transition');await step(.82);await frame('low');
+ await page.getByRole('combobox',{name:'Фон',exact:true}).selectOption({label:'Тёмный'});await frame('low-dark');
+ await page.getByRole('combobox',{name:'Фон',exact:true}).selectOption({label:'Светлый'});
+ await reset();await click('move');await step(1);await frame('move-a');await step(.35);await frame('move-b');
+ await reset();await click('low');await step(.8);await click('jump');await step(.1);await frame('prepare');
+ await step(.25);await frame('flight-early');await step(.2);await frame('flight');await step(.32);await frame('flight-late');
+ for(let i=0;i<180;i++){await step(1/120);if((await page.evaluate(()=>window.__R4D.snapshot())).state==='land'){await frame('land-first');break;}}
+ await step(.12);await frame('land-mid');await step(.5);await frame('land-low');
+ for(const dest of ['move','jump']){
+  await reset();await click('low');await step(.06);await frame('interrupt-'+dest+'-before');
+  await click(dest);await frame('interrupt-'+dest+'-request');
+  await step(.08);await frame('interrupt-'+dest+'-early');await step(.32);await frame('interrupt-'+dest+'-middle');
+  await step(.7);await frame('interrupt-'+dest+'-late');await step(.9);await frame('interrupt-'+dest+'-end');
+ }
+ return results;
+}
+)(page);
+```

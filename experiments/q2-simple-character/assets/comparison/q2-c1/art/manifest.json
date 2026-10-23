@@ -1,0 +1,437 @@
+{
+  "version": 1,
+  "character": "Лесной смотритель",
+  "facing": "right",
+  "coordinates": "+X right, +Y down; joint relative to parent pivot; null parent is fixed hip root",
+  "targetDisplayHeight": 360,
+  "parts": [
+    {
+      "id": "torso",
+      "file": "art/parts/torso.png",
+      "parent": null,
+      "joint": [
+        0,
+        0
+      ],
+      "pivot": [
+        76.655,
+        189.422
+      ],
+      "layer": 50,
+      "size": [
+        159,
+        224
+      ],
+      "source": "source/torso-v3.png",
+      "sourceCrop": [
+        275,
+        140,
+        815,
+        1325
+      ],
+      "sourcePivot": [
+        535,
+        1140
+      ],
+      "technicalScale": [
+        0.299435,
+        0.189992
+      ]
+    },
+    {
+      "id": "head",
+      "file": "art/parts/head.png",
+      "parent": "torso",
+      "joint": [
+        6,
+        -177
+      ],
+      "pivot": [
+        102.555,
+        198.563
+      ],
+      "layer": 60,
+      "size": [
+        218,
+        221
+      ],
+      "source": "source/caretaker-parts-v1.png",
+      "sourceCrop": [
+        65,
+        15,
+        480,
+        440
+      ],
+      "sourcePivot": [
+        259,
+        390
+      ],
+      "technicalScale": [
+        0.560411,
+        0.560914
+      ]
+    },
+    {
+      "id": "upperArmNear",
+      "file": "art/parts/upperArmNear.png",
+      "parent": "torso",
+      "joint": [
+        -34,
+        -136
+      ],
+      "pivot": [
+        44.78,
+        23.574
+      ],
+      "layer": 70,
+      "size": [
+        89,
+        174
+      ],
+      "source": "source/caretaker-parts-v1.png",
+      "sourceCrop": [
+        920,
+        55,
+        1105,
+        380
+      ],
+      "sourcePivot": [
+        1010,
+        107
+      ],
+      "technicalScale": [
+        0.559748,
+        0.56129
+      ],
+      "distalJoint": [
+        -1.119,
+        121.239
+      ]
+    },
+    {
+      "id": "forearmNear",
+      "file": "art/parts/forearmNear.png",
+      "parent": "upperArmNear",
+      "joint": [
+        -1.12,
+        120.96
+      ],
+      "pivot": [
+        40.32,
+        25.725
+      ],
+      "layer": 71,
+      "size": [
+        98,
+        203
+      ],
+      "source": "source/caretaker-parts-v1.png",
+      "sourceCrop": [
+        1195,
+        55,
+        1390,
+        435
+      ],
+      "sourcePivot": [
+        1275,
+        110
+      ],
+      "technicalScale": [
+        0.56,
+        0.559229
+      ],
+      "distalJoint": [
+        16.8,
+        126.386
+      ]
+    },
+    {
+      "id": "upperArmFar",
+      "file": "art/parts/upperArmFar.png",
+      "parent": "torso",
+      "joint": [
+        7,
+        -136
+      ],
+      "pivot": [
+        45.899,
+        26.312
+      ],
+      "layer": 10,
+      "size": [
+        89,
+        176
+      ],
+      "source": "source/caretaker-parts-v1.png",
+      "sourceCrop": [
+        110,
+        450,
+        285,
+        760
+      ],
+      "sourcePivot": [
+        200,
+        500
+      ],
+      "technicalScale": [
+        0.559748,
+        0.584718
+      ],
+      "distalJoint": [
+        -0.56,
+        121.037
+      ]
+    },
+    {
+      "id": "forearmFar",
+      "file": "art/parts/forearmFar.png",
+      "parent": "upperArmFar",
+      "joint": [
+        -0.56,
+        120.96
+      ],
+      "pivot": [
+        41.984,
+        24.369
+      ],
+      "layer": 11,
+      "size": [
+        103,
+        198
+      ],
+      "source": "source/caretaker-parts-v1.png",
+      "sourceCrop": [
+        450,
+        455,
+        655,
+        790
+      ],
+      "sourcePivot": [
+        540,
+        502
+      ],
+      "technicalScale": [
+        0.559783,
+        0.609231
+      ],
+      "distalJoint": [
+        19.033,
+        126.72
+      ]
+    },
+    {
+      "id": "thighNear",
+      "file": "art/parts/thighNear.png",
+      "parent": null,
+      "joint": [
+        -15,
+        25
+      ],
+      "pivot": [
+        58.995,
+        25.822
+      ],
+      "layer": 40,
+      "size": [
+        109,
+        183
+      ],
+      "source": "source/caretaker-parts-v1.png",
+      "sourceCrop": [
+        830,
+        450,
+        1040,
+        780
+      ],
+      "sourcePivot": [
+        945,
+        496
+      ],
+      "technicalScale": [
+        0.561856,
+        0.56135
+      ],
+      "distalJoint": [
+        0.0,
+        127.988
+      ]
+    },
+    {
+      "id": "shinNear",
+      "file": "art/parts/shinNear.png",
+      "parent": "thighNear",
+      "joint": [
+        0,
+        127.68
+      ],
+      "pivot": [
+        44.675,
+        20.184
+      ],
+      "layer": 39,
+      "size": [
+        86,
+        171
+      ],
+      "source": "source/caretaker-parts-v1.png",
+      "sourceCrop": [
+        1190,
+        450,
+        1370,
+        765
+      ],
+      "sourcePivot": [
+        1280,
+        495
+      ],
+      "technicalScale": [
+        0.558442,
+        0.560656
+      ],
+      "distalJoint": [
+        0.0,
+        123.344
+      ]
+    },
+    {
+      "id": "footNear",
+      "file": "art/parts/footNear.png",
+      "parent": "shinNear",
+      "joint": [
+        0,
+        123.2
+      ],
+      "pivot": [
+        39.179,
+        50.282
+      ],
+      "layer": 38,
+      "size": [
+        150,
+        119
+      ],
+      "source": "source/caretaker-parts-v1.png",
+      "sourceCrop": [
+        85,
+        835,
+        375,
+        1060
+      ],
+      "sourcePivot": [
+        166,
+        935
+      ],
+      "technicalScale": [
+        0.559701,
+        0.558685
+      ]
+    },
+    {
+      "id": "thighFar",
+      "file": "art/parts/thighFar.png",
+      "parent": null,
+      "joint": [
+        15,
+        25
+      ],
+      "pivot": [
+        53.631,
+        28.975
+      ],
+      "layer": 20,
+      "size": [
+        100,
+        188
+      ],
+      "source": "source/caretaker-parts-v1.png",
+      "sourceCrop": [
+        475,
+        790,
+        680,
+        1074
+      ],
+      "sourcePivot": [
+        581,
+        833
+      ],
+      "technicalScale": [
+        0.558659,
+        0.673835
+      ],
+      "distalJoint": [
+        0.0,
+        127.355
+      ]
+    },
+    {
+      "id": "shinFar",
+      "file": "art/parts/shinFar.png",
+      "parent": "thighFar",
+      "joint": [
+        0,
+        127.68
+      ],
+      "pivot": [
+        38.601,
+        24.686
+      ],
+      "layer": 19,
+      "size": [
+        80,
+        178
+      ],
+      "source": "source/caretaker-parts-v1.png",
+      "sourceCrop": [
+        850,
+        790,
+        1010,
+        1074
+      ],
+      "sourcePivot": [
+        930,
+        830
+      ],
+      "technicalScale": [
+        0.559441,
+        0.649635
+      ],
+      "distalJoint": [
+        0.0,
+        123.431
+      ]
+    },
+    {
+      "id": "footFar",
+      "file": "art/parts/footFar.png",
+      "parent": "shinFar",
+      "joint": [
+        0,
+        123.2
+      ],
+      "pivot": [
+        42.419,
+        46.0
+      ],
+      "layer": 18,
+      "size": [
+        144,
+        115
+      ],
+      "source": "source/caretaker-parts-v1.png",
+      "sourceCrop": [
+        1150,
+        846,
+        1428,
+        1064
+      ],
+      "sourcePivot": [
+        1235,
+        935
+      ],
+      "technicalScale": [
+        0.55814,
+        0.560976
+      ]
+    }
+  ]
+}

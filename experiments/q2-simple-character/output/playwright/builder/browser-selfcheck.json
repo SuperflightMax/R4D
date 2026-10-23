@@ -1,0 +1,286 @@
+{
+  "states": {
+    "idle": {
+      "rootY": 1.019479845728742,
+      "knee": 0.6483155437484105,
+      "renderedSoleGap": {
+        "Near": 0,
+        "Far": 5.684341886080802e-14
+      }
+    },
+    "low": {
+      "rootY": 81.3010796480071,
+      "knee": 1.7603725829520513,
+      "renderedSoleGap": {
+        "Near": 5.684341886080802e-14,
+        "Far": 5.684341886080802e-14
+      }
+    },
+    "move": {
+      "rootY": 2.8709089150974307,
+      "knee": 0.899612060787546,
+      "renderedSoleGap": {
+        "Near": 6.852825849516137,
+        "Far": 0.0021727529364738984
+      }
+    }
+  },
+  "jumps": [
+    {
+      "origin": "idle",
+      "landing": "idle",
+      "phases": [
+        "prepare",
+        "flight",
+        "land",
+        "idle"
+      ],
+      "maxHeight": 101.22171733333313,
+      "minGap": -5.684341886080802e-14,
+      "maxGapAtContact": 5.684341886080802e-14,
+      "contact": {
+        "time": 1.9583333333333288,
+        "beforeGap": {
+          "Near": -2.6027179072524547,
+          "Far": -1.763159651769442
+        },
+        "gap": {
+          "Near": -1.4210854715202004e-14,
+          "Far": 1.4210854715202004e-14
+        }
+      }
+    },
+    {
+      "origin": "idle",
+      "landing": "low",
+      "phases": [
+        "prepare",
+        "flight",
+        "land",
+        "low"
+      ],
+      "maxHeight": 101.22171733333313,
+      "minGap": -5.684341886080802e-14,
+      "maxGapAtContact": 5.684341886080802e-14,
+      "contact": {
+        "time": 1.9583333333333288,
+        "beforeGap": {
+          "Near": -2.6027179072524547,
+          "Far": -1.763159651769442
+        },
+        "gap": {
+          "Near": -1.4210854715202004e-14,
+          "Far": 1.4210854715202004e-14
+        }
+      }
+    },
+    {
+      "origin": "idle",
+      "landing": "move",
+      "phases": [
+        "prepare",
+        "flight",
+        "land",
+        "move"
+      ],
+      "maxHeight": 101.22171733333313,
+      "minGap": -5.684341886080802e-14,
+      "maxGapAtContact": 5.684341886080802e-14,
+      "contact": {
+        "time": 1.9583333333333288,
+        "beforeGap": {
+          "Near": -2.6027179072524547,
+          "Far": -1.763159651769442
+        },
+        "gap": {
+          "Near": -1.4210854715202004e-14,
+          "Far": 1.4210854715202004e-14
+        }
+      }
+    },
+    {
+      "origin": "low",
+      "landing": "idle",
+      "phases": [
+        "prepare",
+        "flight",
+        "land",
+        "idle"
+      ],
+      "maxHeight": 101.22171733333313,
+      "minGap": -5.684341886080802e-14,
+      "maxGapAtContact": 5.684341886080802e-14,
+      "contact": {
+        "time": 1.9583333333333288,
+        "beforeGap": {
+          "Near": -2.6027179072524547,
+          "Far": -1.763159651769442
+        },
+        "gap": {
+          "Near": -1.4210854715202004e-14,
+          "Far": 1.4210854715202004e-14
+        }
+      }
+    },
+    {
+      "origin": "low",
+      "landing": "low",
+      "phases": [
+        "prepare",
+        "flight",
+        "land",
+        "low"
+      ],
+      "maxHeight": 101.22171733333313,
+      "minGap": -5.684341886080802e-14,
+      "maxGapAtContact": 5.684341886080802e-14,
+      "contact": {
+        "time": 1.9583333333333288,
+        "beforeGap": {
+          "Near": -2.6027179072524547,
+          "Far": -1.763159651769442
+        },
+        "gap": {
+          "Near": -1.4210854715202004e-14,
+          "Far": 1.4210854715202004e-14
+        }
+      }
+    },
+    {
+      "origin": "low",
+      "landing": "move",
+      "phases": [
+        "prepare",
+        "flight",
+        "land",
+        "move"
+      ],
+      "maxHeight": 101.22171733333313,
+      "minGap": -5.684341886080802e-14,
+      "maxGapAtContact": 5.684341886080802e-14,
+      "contact": {
+        "time": 1.9583333333333288,
+        "beforeGap": {
+          "Near": -2.6027179072524547,
+          "Far": -1.763159651769442
+        },
+        "gap": {
+          "Near": -1.4210854715202004e-14,
+          "Far": 1.4210854715202004e-14
+        }
+      }
+    },
+    {
+      "origin": "move",
+      "landing": "idle",
+      "phases": [
+        "prepare",
+        "flight",
+        "land",
+        "idle"
+      ],
+      "maxHeight": 101.22171733333313,
+      "minGap": -5.684341886080802e-14,
+      "maxGapAtContact": 5.684341886080802e-14,
+      "contact": {
+        "time": 1.9583333333333288,
+        "beforeGap": {
+          "Near": -2.6027179046316036,
+          "Far": -1.7631596517662018
+        },
+        "gap": {
+          "Near": -7.105427357601002e-14,
+          "Far": -1.4210854715202004e-14
+        }
+      }
+    },
+    {
+      "origin": "move",
+      "landing": "low",
+      "phases": [
+        "prepare",
+        "flight",
+        "land",
+        "low"
+      ],
+      "maxHeight": 101.22171733333313,
+      "minGap": -5.684341886080802e-14,
+      "maxGapAtContact": 5.684341886080802e-14,
+      "contact": {
+        "time": 1.9583333333333288,
+        "beforeGap": {
+          "Near": -2.6027179046316036,
+          "Far": -1.7631596517662018
+        },
+        "gap": {
+          "Near": -7.105427357601002e-14,
+          "Far": -1.4210854715202004e-14
+        }
+      }
+    },
+    {
+      "origin": "move",
+      "landing": "move",
+      "phases": [
+        "prepare",
+        "flight",
+        "land",
+        "move"
+      ],
+      "maxHeight": 101.22171733333313,
+      "minGap": -5.684341886080802e-14,
+      "maxGapAtContact": 5.684341886080802e-14,
+      "contact": {
+        "time": 1.9583333333333288,
+        "beforeGap": {
+          "Near": -2.6027179046316036,
+          "Far": -1.7631596517662018
+        },
+        "gap": {
+          "Near": -7.105427357601002e-14,
+          "Far": -1.4210854715202004e-14
+        }
+      }
+    }
+  ],
+  "interruptions": [
+    {
+      "destination": "move",
+      "rootBefore": 32.25824293569565,
+      "rootAfter": 36.1652004908705,
+      "endState": "move"
+    },
+    {
+      "destination": "jump",
+      "rootBefore": 32.25824293569565,
+      "rootAfter": 36.68011984599305,
+      "endState": "low"
+    }
+  ],
+  "routes": [
+    {
+      "name": "Маршрут 1",
+      "state": "idle",
+      "jumps": 1,
+      "landings": 1
+    },
+    {
+      "name": "Маршрут 2",
+      "state": "low",
+      "jumps": 2,
+      "landings": 2
+    },
+    {
+      "name": "В середине → идти",
+      "state": "move",
+      "jumps": 0,
+      "landings": 0
+    },
+    {
+      "name": "В середине → прыжок",
+      "state": "low",
+      "jumps": 1,
+      "landings": 1
+    }
+  ]
+}
