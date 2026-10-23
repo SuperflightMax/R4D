@@ -1,0 +1,532 @@
+{
+  "version": 1,
+  "character": "Рыжая курьерша",
+  "facing": "right",
+  "coordinates": "+X right, +Y down; neutral limb angle 0 points down; joints are relative to parent pivot",
+  "canvas": {
+    "width": 600,
+    "height": 720
+  },
+  "root": {
+    "x": 290,
+    "y": 310
+  },
+  "bindHeight": 650,
+  "parts": [
+    {
+      "id": "pelvis",
+      "file": "parts/pelvis-repair-v1.png",
+      "parent": null,
+      "pivot": [
+        68.237,
+        43.71
+      ],
+      "joint": [
+        0,
+        0
+      ],
+      "layer": 48,
+      "size": [
+        132,
+        116
+      ],
+      "sourceCrop": [
+        675,
+        90,
+        930,
+        305
+      ],
+      "sourcePivot": [
+        805,
+        175
+      ],
+      "technicalRotationDeg": 0,
+      "scale": 0.56,
+      "q1Repair": {
+        "generatedSource": "repair-source/pelvis-generated-v1.png",
+        "crop": [
+          104,
+          131,
+          1270,
+          1084
+        ],
+        "normalizedContent": [
+          128,
+          112
+        ],
+        "canvas": [
+          132,
+          116
+        ],
+        "origin": [
+          2,
+          2
+        ],
+        "oldFile": "parts/pelvis.png",
+        "geometryUnchanged": true
+      }
+    },
+    {
+      "id": "torso",
+      "file": "parts/torso.png",
+      "parent": "pelvis",
+      "pivot": [
+        67.739,
+        144.732
+      ],
+      "joint": [
+        0,
+        -28
+      ],
+      "layer": 50,
+      "size": [
+        131,
+        161
+      ],
+      "sourceCrop": [
+        400,
+        10,
+        655,
+        309
+      ],
+      "sourcePivot": [
+        537,
+        279
+      ],
+      "technicalRotationDeg": 0,
+      "scale": 0.56
+    },
+    {
+      "id": "head",
+      "file": "parts/head.png",
+      "parent": "torso",
+      "pivot": [
+        92.443,
+        147.243
+      ],
+      "joint": [
+        -9,
+        -137
+      ],
+      "layer": 60,
+      "size": [
+        172,
+        159
+      ],
+      "sourceCrop": [
+        25,
+        8,
+        350,
+        306
+      ],
+      "sourcePivot": [
+        204,
+        276
+      ],
+      "technicalRotationDeg": 0,
+      "scale": 0.56
+    },
+    {
+      "id": "upperArmNear",
+      "file": "parts/upperArmNear.png",
+      "parent": "torso",
+      "pivot": [
+        28.6,
+        29.64
+      ],
+      "joint": [
+        -43,
+        -75
+      ],
+      "layer": 70,
+      "size": [
+        55,
+        117
+      ],
+      "sourceCrop": [
+        116,
+        310,
+        261,
+        590
+      ],
+      "sourcePivot": [
+        194,
+        357
+      ],
+      "technicalRotationDeg": 2.1906,
+      "scale": 0.56,
+      "boneLength": 71.76,
+      "q1GeometricCorrection": {
+        "scale": 0.78,
+        "sourcePivot": [
+          36.4,
+          38
+        ],
+        "baseline": {
+          "pivot": [
+            36.4,
+            22.948
+          ],
+          "joint": [
+            -39,
+            -126
+          ],
+          "size": [
+            70,
+            150
+          ],
+          "boneLength": 102.555
+        }
+      }
+    },
+    {
+      "id": "forearmNear",
+      "file": "parts/forearmNear.png",
+      "parent": "upperArmNear",
+      "pivot": [
+        24.937,
+        13.166
+      ],
+      "joint": [
+        0,
+        71.76
+      ],
+      "layer": 71,
+      "size": [
+        49,
+        140
+      ],
+      "sourceCrop": [
+        410,
+        309,
+        580,
+        618
+      ],
+      "sourcePivot": [
+        450,
+        348
+      ],
+      "technicalRotationDeg": -18.4349,
+      "scale": 0.56,
+      "boneLength": 59.395,
+      "q1GeometricCorrection": {
+        "scale": 0.78,
+        "sourcePivot": [
+          32.062,
+          16.834
+        ],
+        "baseline": {
+          "pivot": [
+            32.062,
+            16.834
+          ],
+          "joint": [
+            0,
+            102.48
+          ],
+          "size": [
+            63,
+            179
+          ],
+          "boneLength": 76.148
+        }
+      }
+    },
+    {
+      "id": "upperArmFar",
+      "file": "parts/upperArmFar.png",
+      "parent": "torso",
+      "pivot": [
+        27.72,
+        29.75
+      ],
+      "joint": [
+        -33,
+        -75
+      ],
+      "layer": 10,
+      "size": [
+        55,
+        119
+      ],
+      "sourceCrop": [
+        694,
+        310,
+        863,
+        590
+      ],
+      "sourcePivot": [
+        770,
+        357
+      ],
+      "technicalRotationDeg": -9.0193,
+      "scale": 0.56,
+      "boneLength": 72.026,
+      "q1GeometricCorrection": {
+        "scale": 0.78,
+        "sourcePivot": [
+          35.28,
+          38
+        ],
+        "baseline": {
+          "pivot": [
+            35.28,
+            22.353
+          ],
+          "joint": [
+            -5,
+            -126
+          ],
+          "size": [
+            70,
+            152
+          ],
+          "boneLength": 107.165
+        }
+      }
+    },
+    {
+      "id": "forearmFar",
+      "file": "parts/forearmFar.png",
+      "parent": "upperArmFar",
+      "pivot": [
+        21.346,
+        15.319
+      ],
+      "joint": [
+        0,
+        72.026
+      ],
+      "layer": 11,
+      "size": [
+        44,
+        144
+      ],
+      "sourceCrop": [
+        995,
+        313,
+        1160,
+        641
+      ],
+      "sourcePivot": [
+        1045,
+        357
+      ],
+      "technicalRotationDeg": -15.611,
+      "scale": 0.56,
+      "boneLength": 61.68,
+      "q1GeometricCorrection": {
+        "scale": 0.78,
+        "sourcePivot": [
+          27.653,
+          19.574
+        ],
+        "baseline": {
+          "pivot": [
+            27.653,
+            19.574
+          ],
+          "joint": [
+            0,
+            107.16
+          ],
+          "size": [
+            57,
+            184
+          ],
+          "boneLength": 79.077
+        }
+      }
+    },
+    {
+      "id": "thighNear",
+      "file": "parts/thighNear.png",
+      "parent": "pelvis",
+      "pivot": [
+        48.618,
+        21.28
+      ],
+      "joint": [
+        -21,
+        29
+      ],
+      "layer": 45,
+      "size": [
+        95,
+        168
+      ],
+      "sourceCrop": [
+        112,
+        596,
+        281,
+        905
+      ],
+      "sourcePivot": [
+        198,
+        641
+      ],
+      "technicalRotationDeg": -2.6158,
+      "scale": 0.56,
+      "boneLength": 110.435
+    },
+    {
+      "id": "shinNear",
+      "file": "parts/shinNear.png",
+      "parent": "thighNear",
+      "pivot": [
+        36.339,
+        19.015
+      ],
+      "joint": [
+        0,
+        110.43
+      ],
+      "layer": 44,
+      "size": [
+        71,
+        151
+      ],
+      "sourceCrop": [
+        427,
+        614,
+        579,
+        899
+      ],
+      "sourcePivot": [
+        504,
+        658
+      ],
+      "technicalRotationDeg": -1.1997,
+      "scale": 0.56,
+      "boneLength": 106.983
+    },
+    {
+      "id": "footNear",
+      "file": "parts/footNear.png",
+      "parent": "shinNear",
+      "pivot": [
+        33.529,
+        26.238
+      ],
+      "joint": [
+        0,
+        106.98
+      ],
+      "layer": 43,
+      "size": [
+        133,
+        115
+      ],
+      "sourceCrop": [
+        681,
+        690,
+        935,
+        910
+      ],
+      "sourcePivot": [
+        753,
+        749
+      ],
+      "technicalRotationDeg": 0,
+      "scale": 0.56
+    },
+    {
+      "id": "thighFar",
+      "file": "parts/thighFar.png",
+      "parent": "pelvis",
+      "pivot": [
+        51.75,
+        22.997
+      ],
+      "joint": [
+        16,
+        27
+      ],
+      "layer": 20,
+      "size": [
+        99,
+        175
+      ],
+      "sourceCrop": [
+        109,
+        907,
+        279,
+        1218
+      ],
+      "sourcePivot": [
+        198,
+        945
+      ],
+      "technicalRotationDeg": -2.8768,
+      "scale": 0.56,
+      "boneLength": 111.581
+    },
+    {
+      "id": "shinFar",
+      "file": "parts/shinFar.png",
+      "parent": "thighFar",
+      "pivot": [
+        36.339,
+        20.195
+      ],
+      "joint": [
+        0,
+        111.58
+      ],
+      "layer": 19,
+      "size": [
+        71,
+        161
+      ],
+      "sourceCrop": [
+        426,
+        908,
+        578,
+        1206
+      ],
+      "sourcePivot": [
+        504,
+        945
+      ],
+      "technicalRotationDeg": -0.8551,
+      "scale": 0.56,
+      "boneLength": 112.573
+    },
+    {
+      "id": "footFar",
+      "file": "parts/footFar.png",
+      "parent": "shinFar",
+      "pivot": [
+        34.11,
+        24.698
+      ],
+      "joint": [
+        0,
+        112.57
+      ],
+      "layer": 18,
+      "size": [
+        137,
+        119
+      ],
+      "sourceCrop": [
+        686,
+        991,
+        943,
+        1221
+      ],
+      "sourcePivot": [
+        757,
+        1045
+      ],
+      "technicalRotationDeg": 0,
+      "scale": 0.56
+    }
+  ],
+  "source": "source/atlas-v1.png",
+  "sourceReference": "source/character-v1.png",
+  "q1": {
+    "baseline": "experiments/gpt-6.1-sol/assets",
+    "change": "physical shoulder pivot and uniform arm scale; legs unchanged"
+  }
+}
