@@ -1,7 +1,7 @@
 # R4D: вход для агентов
 
-1. **CTO: начните с [CTO_TASK.md](CTO_TASK.md)** — первое поручение и ожидаемый результат. Работайте по [роли CTO — Chief Technical Officer](https://github.com/SuperflightMax/codex-staff-department/blob/main/roles/cto.md).
-2. [architect/START_HERE.md](architect/START_HERE.md) хранит контекст обсуждения и причины решений. Архитектор работает по [своей роли](https://github.com/SuperflightMax/codex-staff-department/blob/main/roles/architect.md).
-3. Применяйте [общий Playbook Макса](https://github.com/SuperflightMax/Chatknows/blob/main/PLAYBOOK.md). При отсутствии доступа используйте [датированный публичный снимок](https://github.com/SuperflightMax/codex-staff-department/blob/main/PLAYBOOK.md).
-4. Исследовательские заметки и прежние предложения не расширяют актуальное поручение. Отличайте прочитанное в документации от проведённого опыта и собственной гипотезы.
+1. Применяйте [общий Playbook Макса](https://github.com/SuperflightMax/Chatknows/blob/main/PLAYBOOK.md). При отсутствии доступа используйте [датированный публичный снимок](https://github.com/SuperflightMax/codex-staff-department/blob/main/PLAYBOOK.md).
+2. **Для каждой роли:** прочитайте свою общую инструкцию из Staff Department, [общие инструкции R4D](roles/COMMON.md) и своё проектное дополнение по [карте ролей](roles/README.md). Конкретное поручение определяет предмет и границы текущей работы.
+3. **CTO и архитектор:** сверьте [текущий этап и контекст](architect/START_HERE.md). [Первое поручение CTO](CTO_TASK.md) уже выполнено; его [состояние](docs/EXPERIMENT_STATUS.md) и [сравнение результатов](docs/COMPARISON.md) сохранены. Старое разрешение на первый опыт не является запуском нового этапа.
+4. R4D занимается разными исследованиями. Предметные правила, стек и модели отдельного опыта не распространяются на весь проект. Исследовательские заметки и прежние предложения не расширяют актуальное поручение.
 5. Проектное общение и рабочие документы — на русском. CTO определяет технические решения, эксперименты, команду и организацию работы; архитектор хранит замысел и согласованные границы.
