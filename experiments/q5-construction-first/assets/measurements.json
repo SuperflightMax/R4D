@@ -1,0 +1,758 @@
+[
+  {
+    "id": "torso",
+    "source": "assets/source/torso.png",
+    "sourceSize": [
+      1254,
+      1254
+    ],
+    "outputSize": [
+      256,
+      256
+    ],
+    "sourceBBox": [
+      0,
+      23,
+      1244,
+      1254
+    ],
+    "outputBBox": [
+      76,
+      42,
+      181,
+      231
+    ],
+    "requiredBBox": [
+      78,
+      42,
+      179,
+      231
+    ],
+    "requiredPixels": 18049,
+    "missingRequiredPixels": 4,
+    "requiredCoverage": 0.999778,
+    "outsideRequiredPixels": 583,
+    "outside8pxEnvelopePixels": 0,
+    "pixelsBelowFrozenSole": null,
+    "baselineRequiredCoverage": 0.951632,
+    "baselineBBox": [
+      79,
+      41,
+      181,
+      224
+    ],
+    "registration": {
+      "sourceThresholdBBox": [
+        387,
+        203,
+        887,
+        1097
+      ],
+      "targetFrozenBBox": [
+        78,
+        42,
+        179,
+        231
+      ],
+      "uniformScale": 0.21140939597315436,
+      "translateX": -6.167785234899327,
+      "translateY": -0.9161073825503365,
+      "method": "uniform bbox cover centered on frozen bbox; foot aligned to frozen sole; inverse affine bicubic"
+    },
+    "operation": "uniform scale + translation of generated pixels, Lead lead-normalization.md; no rig/pivot/chain changes, no painting/mask/infill",
+    "outputSHA256": "650347df4326264134b677d0613e9283b691da3609bed92deadb41d25772eae2"
+  },
+  {
+    "id": "head",
+    "source": "assets/source/head.png",
+    "sourceSize": [
+      1254,
+      1254
+    ],
+    "outputSize": [
+      256,
+      256
+    ],
+    "sourceBBox": [
+      0,
+      53,
+      1230,
+      1202
+    ],
+    "outputBBox": [
+      83,
+      15,
+      194,
+      161
+    ],
+    "requiredBBox": [
+      83,
+      15,
+      194,
+      161
+    ],
+    "requiredPixels": 11320,
+    "missingRequiredPixels": 319,
+    "requiredCoverage": 0.97182,
+    "outsideRequiredPixels": 436,
+    "outside8pxEnvelopePixels": 0,
+    "pixelsBelowFrozenSole": null,
+    "baselineRequiredCoverage": 0.763516,
+    "baselineBBox": [
+      77,
+      40,
+      190,
+      189
+    ],
+    "registration": {
+      "sourceThresholdBBox": [
+        378,
+        196,
+        932,
+        926
+      ],
+      "targetFrozenBBox": [
+        83,
+        15,
+        194,
+        161
+      ],
+      "uniformScale": 0.2003610108303249,
+      "translateX": 7.263537906137202,
+      "translateY": -24.402527075812273,
+      "method": "uniform bbox cover centered on frozen bbox; foot aligned to frozen sole; inverse affine bicubic"
+    },
+    "operation": "uniform scale + translation of generated pixels, Lead lead-normalization.md; no rig/pivot/chain changes, no painting/mask/infill",
+    "outputSHA256": "043bf38f7b34efafbfdfa6be362251f4e2fa530324ba7e1e643ad9482f6629fa"
+  },
+  {
+    "id": "upperArmFar",
+    "source": "assets/source/upperArm.png",
+    "sourceSize": [
+      1254,
+      1254
+    ],
+    "outputSize": [
+      256,
+      256
+    ],
+    "sourceBBox": [
+      75,
+      71,
+      1101,
+      1230
+    ],
+    "outputBBox": [
+      104,
+      24,
+      153,
+      158
+    ],
+    "requiredBBox": [
+      104,
+      24,
+      153,
+      158
+    ],
+    "requiredPixels": 6042,
+    "missingRequiredPixels": 0,
+    "requiredCoverage": 1.0,
+    "outsideRequiredPixels": 107,
+    "outside8pxEnvelopePixels": 0,
+    "pixelsBelowFrozenSole": null,
+    "baselineRequiredCoverage": 0.842767,
+    "baselineBBox": [
+      99,
+      46,
+      157,
+      201
+    ],
+    "registration": {
+      "sourceThresholdBBox": [
+        488,
+        225,
+        769,
+        984
+      ],
+      "targetFrozenBBox": [
+        104,
+        24,
+        153,
+        158
+      ],
+      "uniformScale": 0.17654808959156784,
+      "translateX": 17.53952569169961,
+      "translateY": -15.723320158102766,
+      "method": "uniform bbox cover centered on frozen bbox; foot aligned to frozen sole; inverse affine bicubic"
+    },
+    "operation": "uniform scale + translation of generated pixels, Lead lead-normalization.md; no rig/pivot/chain changes, no painting/mask/infill",
+    "outputSHA256": "1a3e78b8a34d02a80b7d8826f6fa87c7dc3d71e9bb5754e94acbd8a30dc9b2b4"
+  },
+  {
+    "id": "forearmFar",
+    "source": "assets/source/forearm.png",
+    "sourceSize": [
+      1254,
+      1254
+    ],
+    "outputSize": [
+      256,
+      256
+    ],
+    "sourceBBox": [
+      23,
+      0,
+      1226,
+      1254
+    ],
+    "outputBBox": [
+      106,
+      28,
+      156,
+      187
+    ],
+    "requiredBBox": [
+      106,
+      29,
+      156,
+      186
+    ],
+    "requiredPixels": 6384,
+    "missingRequiredPixels": 125,
+    "requiredCoverage": 0.98042,
+    "outsideRequiredPixels": 200,
+    "outside8pxEnvelopePixels": 0,
+    "pixelsBelowFrozenSole": null,
+    "baselineRequiredCoverage": 0.882675,
+    "baselineBBox": [
+      104,
+      43,
+      155,
+      207
+    ],
+    "registration": {
+      "sourceThresholdBBox": [
+        509,
+        214,
+        759,
+        1010
+      ],
+      "targetFrozenBBox": [
+        106,
+        29,
+        156,
+        186
+      ],
+      "uniformScale": 0.2,
+      "translateX": 4.199999999999989,
+      "translateY": -14.900000000000006,
+      "method": "uniform bbox cover centered on frozen bbox; foot aligned to frozen sole; inverse affine bicubic"
+    },
+    "operation": "uniform scale + translation of generated pixels, Lead lead-normalization.md; no rig/pivot/chain changes, no painting/mask/infill",
+    "outputSHA256": "65d502ccf129df9929d1c50179d77aa6941a65e1e45820104c7639094fe422cb"
+  },
+  {
+    "id": "thighFar",
+    "source": "assets/source/thigh.png",
+    "sourceSize": [
+      1254,
+      1254
+    ],
+    "outputSize": [
+      256,
+      256
+    ],
+    "sourceBBox": [
+      59,
+      21,
+      1240,
+      1228
+    ],
+    "outputBBox": [
+      94,
+      13,
+      163,
+      204
+    ],
+    "requiredBBox": [
+      94,
+      14,
+      163,
+      203
+    ],
+    "requiredPixels": 12001,
+    "missingRequiredPixels": 0,
+    "requiredCoverage": 1.0,
+    "outsideRequiredPixels": 225,
+    "outside8pxEnvelopePixels": 0,
+    "pixelsBelowFrozenSole": null,
+    "baselineRequiredCoverage": 0.936839,
+    "baselineBBox": [
+      92,
+      26,
+      164,
+      225
+    ],
+    "registration": {
+      "sourceThresholdBBox": [
+        453,
+        129,
+        802,
+        1098
+      ],
+      "targetFrozenBBox": [
+        94,
+        14,
+        163,
+        203
+      ],
+      "uniformScale": 0.1977077363896848,
+      "translateX": 4.438395415472783,
+      "translateY": -12.793696275071625,
+      "method": "uniform bbox cover centered on frozen bbox; foot aligned to frozen sole; inverse affine bicubic"
+    },
+    "operation": "uniform scale + translation of generated pixels, Lead lead-normalization.md; no rig/pivot/chain changes, no painting/mask/infill",
+    "outputSHA256": "4f1cdb2c357e3f3a6104d0a0efe777a9ade343ecefdf176a8189bf7b7968aa94"
+  },
+  {
+    "id": "shinFar",
+    "source": "assets/source/shin.png",
+    "sourceSize": [
+      1254,
+      1254
+    ],
+    "outputSize": [
+      256,
+      256
+    ],
+    "sourceBBox": [
+      29,
+      29,
+      1218,
+      1206
+    ],
+    "outputBBox": [
+      101,
+      22,
+      156,
+      195
+    ],
+    "requiredBBox": [
+      102,
+      22,
+      155,
+      195
+    ],
+    "requiredPixels": 8569,
+    "missingRequiredPixels": 0,
+    "requiredCoverage": 1.0,
+    "outsideRequiredPixels": 266,
+    "outside8pxEnvelopePixels": 0,
+    "pixelsBelowFrozenSole": null,
+    "baselineRequiredCoverage": 0.886334,
+    "baselineBBox": [
+      99,
+      41,
+      155,
+      218
+    ],
+    "registration": {
+      "sourceThresholdBBox": [
+        487,
+        201,
+        758,
+        1066
+      ],
+      "targetFrozenBBox": [
+        102,
+        22,
+        155,
+        195
+      ],
+      "uniformScale": 0.2,
+      "translateX": 4.0,
+      "translateY": -18.200000000000003,
+      "method": "uniform bbox cover centered on frozen bbox; foot aligned to frozen sole; inverse affine bicubic"
+    },
+    "operation": "uniform scale + translation of generated pixels, Lead lead-normalization.md; no rig/pivot/chain changes, no painting/mask/infill",
+    "outputSHA256": "d7c617bb59f2a154b76507d95e219ab3085c9457202721aba70057ed66811a1a"
+  },
+  {
+    "id": "footFar",
+    "source": "assets/source/foot.png",
+    "sourceSize": [
+      1254,
+      1254
+    ],
+    "outputSize": [
+      256,
+      256
+    ],
+    "sourceBBox": [
+      0,
+      0,
+      1179,
+      1220
+    ],
+    "outputBBox": [
+      65,
+      12,
+      156,
+      71
+    ],
+    "requiredBBox": [
+      65,
+      18,
+      156,
+      71
+    ],
+    "requiredPixels": 4032,
+    "missingRequiredPixels": 561,
+    "requiredCoverage": 0.860863,
+    "outsideRequiredPixels": 263,
+    "outside8pxEnvelopePixels": 0,
+    "pixelsBelowFrozenSole": 0,
+    "baselineRequiredCoverage": 0.325149,
+    "baselineBBox": [
+      62,
+      40,
+      195,
+      127
+    ],
+    "registration": {
+      "sourceThresholdBBox": [
+        304,
+        196,
+        956,
+        619
+      ],
+      "targetFrozenBBox": [
+        65,
+        18,
+        156,
+        71
+      ],
+      "uniformScale": 0.13957055214723926,
+      "translateX": 22.57055214723927,
+      "translateY": -15.394171779141104,
+      "method": "uniform bbox cover centered on frozen bbox; foot aligned to frozen sole; inverse affine bicubic"
+    },
+    "operation": "uniform scale + translation of generated pixels, Lead lead-normalization.md; no rig/pivot/chain changes, no painting/mask/infill",
+    "outputSHA256": "d23ffc57b8c8925622bbdff82eedc99a00a9067b40ad95cc735d2e09f85ada37"
+  },
+  {
+    "id": "upperArmNear",
+    "source": "assets/source/upperArm.png",
+    "sourceSize": [
+      1254,
+      1254
+    ],
+    "outputSize": [
+      256,
+      256
+    ],
+    "sourceBBox": [
+      75,
+      71,
+      1101,
+      1230
+    ],
+    "outputBBox": [
+      104,
+      24,
+      153,
+      158
+    ],
+    "requiredBBox": [
+      104,
+      24,
+      153,
+      158
+    ],
+    "requiredPixels": 6042,
+    "missingRequiredPixels": 0,
+    "requiredCoverage": 1.0,
+    "outsideRequiredPixels": 107,
+    "outside8pxEnvelopePixels": 0,
+    "pixelsBelowFrozenSole": null,
+    "baselineRequiredCoverage": 0.842767,
+    "baselineBBox": [
+      99,
+      46,
+      157,
+      201
+    ],
+    "registration": {
+      "sourceThresholdBBox": [
+        488,
+        225,
+        769,
+        984
+      ],
+      "targetFrozenBBox": [
+        104,
+        24,
+        153,
+        158
+      ],
+      "uniformScale": 0.17654808959156784,
+      "translateX": 17.53952569169961,
+      "translateY": -15.723320158102766,
+      "method": "uniform bbox cover centered on frozen bbox; foot aligned to frozen sole; inverse affine bicubic"
+    },
+    "operation": "uniform scale + translation of generated pixels, Lead lead-normalization.md; no rig/pivot/chain changes, no painting/mask/infill",
+    "outputSHA256": "1a3e78b8a34d02a80b7d8826f6fa87c7dc3d71e9bb5754e94acbd8a30dc9b2b4"
+  },
+  {
+    "id": "forearmNear",
+    "source": "assets/source/forearm.png",
+    "sourceSize": [
+      1254,
+      1254
+    ],
+    "outputSize": [
+      256,
+      256
+    ],
+    "sourceBBox": [
+      23,
+      0,
+      1226,
+      1254
+    ],
+    "outputBBox": [
+      106,
+      28,
+      156,
+      187
+    ],
+    "requiredBBox": [
+      106,
+      29,
+      156,
+      186
+    ],
+    "requiredPixels": 6384,
+    "missingRequiredPixels": 125,
+    "requiredCoverage": 0.98042,
+    "outsideRequiredPixels": 200,
+    "outside8pxEnvelopePixels": 0,
+    "pixelsBelowFrozenSole": null,
+    "baselineRequiredCoverage": 0.882675,
+    "baselineBBox": [
+      104,
+      43,
+      155,
+      207
+    ],
+    "registration": {
+      "sourceThresholdBBox": [
+        509,
+        214,
+        759,
+        1010
+      ],
+      "targetFrozenBBox": [
+        106,
+        29,
+        156,
+        186
+      ],
+      "uniformScale": 0.2,
+      "translateX": 4.199999999999989,
+      "translateY": -14.900000000000006,
+      "method": "uniform bbox cover centered on frozen bbox; foot aligned to frozen sole; inverse affine bicubic"
+    },
+    "operation": "uniform scale + translation of generated pixels, Lead lead-normalization.md; no rig/pivot/chain changes, no painting/mask/infill",
+    "outputSHA256": "65d502ccf129df9929d1c50179d77aa6941a65e1e45820104c7639094fe422cb"
+  },
+  {
+    "id": "thighNear",
+    "source": "assets/source/thigh.png",
+    "sourceSize": [
+      1254,
+      1254
+    ],
+    "outputSize": [
+      256,
+      256
+    ],
+    "sourceBBox": [
+      59,
+      21,
+      1240,
+      1228
+    ],
+    "outputBBox": [
+      94,
+      13,
+      163,
+      204
+    ],
+    "requiredBBox": [
+      94,
+      14,
+      163,
+      203
+    ],
+    "requiredPixels": 12001,
+    "missingRequiredPixels": 0,
+    "requiredCoverage": 1.0,
+    "outsideRequiredPixels": 225,
+    "outside8pxEnvelopePixels": 0,
+    "pixelsBelowFrozenSole": null,
+    "baselineRequiredCoverage": 0.936839,
+    "baselineBBox": [
+      92,
+      26,
+      164,
+      225
+    ],
+    "registration": {
+      "sourceThresholdBBox": [
+        453,
+        129,
+        802,
+        1098
+      ],
+      "targetFrozenBBox": [
+        94,
+        14,
+        163,
+        203
+      ],
+      "uniformScale": 0.1977077363896848,
+      "translateX": 4.438395415472783,
+      "translateY": -12.793696275071625,
+      "method": "uniform bbox cover centered on frozen bbox; foot aligned to frozen sole; inverse affine bicubic"
+    },
+    "operation": "uniform scale + translation of generated pixels, Lead lead-normalization.md; no rig/pivot/chain changes, no painting/mask/infill",
+    "outputSHA256": "4f1cdb2c357e3f3a6104d0a0efe777a9ade343ecefdf176a8189bf7b7968aa94"
+  },
+  {
+    "id": "shinNear",
+    "source": "assets/source/shin.png",
+    "sourceSize": [
+      1254,
+      1254
+    ],
+    "outputSize": [
+      256,
+      256
+    ],
+    "sourceBBox": [
+      29,
+      29,
+      1218,
+      1206
+    ],
+    "outputBBox": [
+      101,
+      22,
+      156,
+      195
+    ],
+    "requiredBBox": [
+      102,
+      22,
+      155,
+      195
+    ],
+    "requiredPixels": 8569,
+    "missingRequiredPixels": 0,
+    "requiredCoverage": 1.0,
+    "outsideRequiredPixels": 266,
+    "outside8pxEnvelopePixels": 0,
+    "pixelsBelowFrozenSole": null,
+    "baselineRequiredCoverage": 0.886334,
+    "baselineBBox": [
+      99,
+      41,
+      155,
+      218
+    ],
+    "registration": {
+      "sourceThresholdBBox": [
+        487,
+        201,
+        758,
+        1066
+      ],
+      "targetFrozenBBox": [
+        102,
+        22,
+        155,
+        195
+      ],
+      "uniformScale": 0.2,
+      "translateX": 4.0,
+      "translateY": -18.200000000000003,
+      "method": "uniform bbox cover centered on frozen bbox; foot aligned to frozen sole; inverse affine bicubic"
+    },
+    "operation": "uniform scale + translation of generated pixels, Lead lead-normalization.md; no rig/pivot/chain changes, no painting/mask/infill",
+    "outputSHA256": "d7c617bb59f2a154b76507d95e219ab3085c9457202721aba70057ed66811a1a"
+  },
+  {
+    "id": "footNear",
+    "source": "assets/source/foot.png",
+    "sourceSize": [
+      1254,
+      1254
+    ],
+    "outputSize": [
+      256,
+      256
+    ],
+    "sourceBBox": [
+      0,
+      0,
+      1179,
+      1220
+    ],
+    "outputBBox": [
+      65,
+      12,
+      156,
+      71
+    ],
+    "requiredBBox": [
+      65,
+      18,
+      156,
+      71
+    ],
+    "requiredPixels": 4032,
+    "missingRequiredPixels": 561,
+    "requiredCoverage": 0.860863,
+    "outsideRequiredPixels": 263,
+    "outside8pxEnvelopePixels": 0,
+    "pixelsBelowFrozenSole": 0,
+    "baselineRequiredCoverage": 0.325149,
+    "baselineBBox": [
+      62,
+      40,
+      195,
+      127
+    ],
+    "registration": {
+      "sourceThresholdBBox": [
+        304,
+        196,
+        956,
+        619
+      ],
+      "targetFrozenBBox": [
+        65,
+        18,
+        156,
+        71
+      ],
+      "uniformScale": 0.13957055214723926,
+      "translateX": 22.57055214723927,
+      "translateY": -15.394171779141104,
+      "method": "uniform bbox cover centered on frozen bbox; foot aligned to frozen sole; inverse affine bicubic"
+    },
+    "operation": "uniform scale + translation of generated pixels, Lead lead-normalization.md; no rig/pivot/chain changes, no painting/mask/infill",
+    "outputSHA256": "d23ffc57b8c8925622bbdff82eedc99a00a9067b40ad95cc735d2e09f85ada37"
+  }
+]

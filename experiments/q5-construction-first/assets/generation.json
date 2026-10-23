@@ -1,0 +1,86 @@
+[
+  {
+    "id": "torso",
+    "tool": "built-in image_gen",
+    "promptFile": "assets/prompts/torso.txt",
+    "sourceFile": "assets/source/torso.png",
+    "originalToolPath": "C:\\Users\\user\\.codex\\generated_images\\01a16974-8031-75e0-b897-349988ae23d5\\exec-eff52ff4-55af-4238-a53f-e71dbd1e3818.png",
+    "geometryReference": "construction/v1/parts/torso.png",
+    "styleReference": null,
+    "transparentBackground": true,
+    "pass": 1,
+    "regenerated": false
+  },
+  {
+    "id": "head",
+    "tool": "built-in image_gen",
+    "promptFile": "assets/prompts/head.txt",
+    "sourceFile": "assets/source/head.png",
+    "originalToolPath": "C:\\Users\\user\\.codex\\generated_images\\01a16974-8031-75e0-b897-349988ae23d5\\exec-983ee3c2-9155-4b87-8bb6-90608a61cc91.png",
+    "geometryReference": "construction/v1/parts/head.png",
+    "styleReference": "assets/source/torso.png",
+    "transparentBackground": true,
+    "pass": 1,
+    "regenerated": false
+  },
+  {
+    "id": "upperArm",
+    "tool": "built-in image_gen",
+    "promptFile": "assets/prompts/upperArm.txt",
+    "sourceFile": "assets/source/upperArm.png",
+    "originalToolPath": "C:\\Users\\user\\.codex\\generated_images\\01a16974-8031-75e0-b897-349988ae23d5\\exec-d26bce90-df70-4000-b54d-012ea3f296ff.png",
+    "geometryReference": "construction/v1/parts/upperArmNear.png",
+    "styleReference": "assets/source/torso.png",
+    "transparentBackground": true,
+    "pass": 1,
+    "regenerated": false
+  },
+  {
+    "id": "forearm",
+    "tool": "built-in image_gen",
+    "promptFile": "assets/prompts/forearm.txt",
+    "sourceFile": "assets/source/forearm.png",
+    "originalToolPath": "C:\\Users\\user\\.codex\\generated_images\\01a16974-8031-75e0-b897-349988ae23d5\\exec-e41fa02d-b6ca-49c0-8381-6697156224db.png",
+    "geometryReference": "construction/v1/parts/forearmNear.png",
+    "styleReference": "assets/source/torso.png",
+    "transparentBackground": true,
+    "pass": 1,
+    "regenerated": false
+  },
+  {
+    "id": "thigh",
+    "tool": "built-in image_gen",
+    "promptFile": "assets/prompts/thigh.txt",
+    "sourceFile": "assets/source/thigh.png",
+    "originalToolPath": "C:\\Users\\user\\.codex\\generated_images\\01a16974-8031-75e0-b897-349988ae23d5\\exec-440bae25-ebe3-473f-b1ee-c8217ba8a168.png",
+    "geometryReference": "construction/v1/parts/thighNear.png",
+    "styleReference": "assets/source/torso.png",
+    "transparentBackground": true,
+    "pass": 1,
+    "regenerated": false
+  },
+  {
+    "id": "shin",
+    "tool": "built-in image_gen",
+    "promptFile": "assets/prompts/shin.txt",
+    "sourceFile": "assets/source/shin.png",
+    "originalToolPath": "C:\\Users\\user\\.codex\\generated_images\\01a16974-8031-75e0-b897-349988ae23d5\\exec-afd2b4b8-3554-4ec7-874a-766a9d33050f.png",
+    "geometryReference": "construction/v1/parts/shinNear.png",
+    "styleReference": "assets/source/torso.png",
+    "transparentBackground": true,
+    "pass": 1,
+    "regenerated": false
+  },
+  {
+    "id": "foot",
+    "tool": "built-in image_gen",
+    "promptFile": "assets/prompts/foot.txt",
+    "sourceFile": "assets/source/foot.png",
+    "originalToolPath": "C:\\Users\\user\\.codex\\generated_images\\01a16974-8031-75e0-b897-349988ae23d5\\exec-fb6e1559-a402-422f-9d77-2cf79cedbe06.png",
+    "geometryReference": "construction/v1/parts/footNear.png",
+    "styleReference": "assets/source/torso.png",
+    "transparentBackground": true,
+    "pass": 1,
+    "regenerated": false
+  }
+]

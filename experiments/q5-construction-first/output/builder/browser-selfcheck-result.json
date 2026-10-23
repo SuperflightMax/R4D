@@ -1,0 +1,530 @@
+{
+  "support": {
+    "maxGap": 1.8483488714559826,
+    "minGap": 0
+  },
+  "ok": true,
+  "jumpCases": 9,
+  "routes": 4,
+  "midTransitionCases": 2,
+  "samples": [
+    {
+      "name": "idle",
+      "state": "idle",
+      "ground": "idle",
+      "time": 0.8166999999999967,
+      "rootY": 1.341203672434536,
+      "knee": 0.6577168194409686,
+      "jumps": 0,
+      "lands": 0,
+      "sole": {
+        "Near": 0,
+        "Far": 0
+      }
+    },
+    {
+      "name": "low",
+      "state": "low",
+      "ground": "low",
+      "time": 1.816699999999993,
+      "rootY": 75.40746845673823,
+      "knee": 1.7346167591346902,
+      "jumps": 0,
+      "lands": 0,
+      "sole": {
+        "Near": -5.684341886080802e-14,
+        "Far": -5.684341886080802e-14
+      }
+    },
+    {
+      "name": "move",
+      "state": "move",
+      "ground": "move",
+      "time": 2.4166999999999907,
+      "rootY": 1.6096207430927065,
+      "knee": 0.6220479106053523,
+      "jumps": 0,
+      "lands": 0,
+      "sole": {
+        "Near": 0,
+        "Far": 5.750896689459466
+      }
+    },
+    {
+      "name": "idle-idle-prepare",
+      "state": "prepare",
+      "ground": "idle",
+      "time": 0.8999999999999992,
+      "rootY": 3.9800591130891263,
+      "knee": 0.7227225172811202,
+      "jumps": 1,
+      "lands": 0,
+      "sole": {
+        "Near": 0,
+        "Far": 0
+      }
+    },
+    {
+      "name": "idle-idle-flight",
+      "state": "flight",
+      "ground": "idle",
+      "time": 1.1999999999999982,
+      "rootY": -35.256015362384666,
+      "knee": 0.9288154631612002,
+      "jumps": 1,
+      "lands": 0,
+      "sole": {
+        "Near": 25.175360549560025,
+        "Far": 29.102308477910867
+      }
+    },
+    {
+      "name": "idle-idle-end",
+      "state": "idle",
+      "ground": "idle",
+      "time": 2.966666666666659,
+      "rootY": 1.3331872885571776,
+      "knee": 0.657509943283225,
+      "jumps": 1,
+      "lands": 1,
+      "sole": {
+        "Near": 9.751488505571615e-10,
+        "Far": 9.751488505571615e-10
+      }
+    },
+    {
+      "name": "idle-low-prepare",
+      "state": "prepare",
+      "ground": "idle",
+      "time": 0.8999999999999992,
+      "rootY": 3.9800591130891263,
+      "knee": 0.7227225172811202,
+      "jumps": 1,
+      "lands": 0,
+      "sole": {
+        "Near": 0,
+        "Far": 0
+      }
+    },
+    {
+      "name": "idle-low-flight",
+      "state": "flight",
+      "ground": "idle",
+      "time": 1.1999999999999982,
+      "rootY": -35.256015362384666,
+      "knee": 0.9288154631612002,
+      "jumps": 1,
+      "lands": 0,
+      "sole": {
+        "Near": 25.175360549560025,
+        "Far": 29.102308477910867
+      }
+    },
+    {
+      "name": "idle-low-end",
+      "state": "low",
+      "ground": "low",
+      "time": 2.966666666666659,
+      "rootY": 78.13318171581159,
+      "knee": 1.7637974281771198,
+      "jumps": 1,
+      "lands": 1,
+      "sole": {
+        "Near": 9.751488505571615e-10,
+        "Far": 9.750920071383007e-10
+      }
+    },
+    {
+      "name": "idle-move-prepare",
+      "state": "prepare",
+      "ground": "idle",
+      "time": 0.8999999999999992,
+      "rootY": 3.9800591130891263,
+      "knee": 0.7227225172811202,
+      "jumps": 1,
+      "lands": 0,
+      "sole": {
+        "Near": 0,
+        "Far": 0
+      }
+    },
+    {
+      "name": "idle-move-flight",
+      "state": "flight",
+      "ground": "idle",
+      "time": 1.1999999999999982,
+      "rootY": -35.256015362384666,
+      "knee": 0.9288154631612002,
+      "jumps": 1,
+      "lands": 0,
+      "sole": {
+        "Near": 25.175360549560025,
+        "Far": 29.102308477910867
+      }
+    },
+    {
+      "name": "idle-move-end",
+      "state": "move",
+      "ground": "move",
+      "time": 2.966666666666659,
+      "rootY": 1.873063059714744,
+      "knee": 1.1184106127039497,
+      "jumps": 1,
+      "lands": 1,
+      "sole": {
+        "Near": 14.032969771456862,
+        "Far": 0.00809189374166408
+      }
+    },
+    {
+      "name": "low-idle-prepare",
+      "state": "prepare",
+      "ground": "low",
+      "time": 0.8999999999999992,
+      "rootY": 79.11843196227261,
+      "knee": 1.7742553285526286,
+      "jumps": 1,
+      "lands": 0,
+      "sole": {
+        "Near": 0,
+        "Far": 0
+      }
+    },
+    {
+      "name": "low-idle-flight",
+      "state": "flight",
+      "ground": "low",
+      "time": 1.1999999999999982,
+      "rootY": -29.813021664440782,
+      "knee": 1.0185173952240025,
+      "jumps": 1,
+      "lands": 0,
+      "sole": {
+        "Near": 25.175360549560025,
+        "Far": 29.102308477910867
+      }
+    },
+    {
+      "name": "low-idle-end",
+      "state": "idle",
+      "ground": "idle",
+      "time": 2.966666666666659,
+      "rootY": 1.3331872885571774,
+      "knee": 0.657509943283225,
+      "jumps": 1,
+      "lands": 1,
+      "sole": {
+        "Near": 9.751488505571615e-10,
+        "Far": 9.751488505571615e-10
+      }
+    },
+    {
+      "name": "low-low-prepare",
+      "state": "prepare",
+      "ground": "low",
+      "time": 0.8999999999999992,
+      "rootY": 79.11843196227261,
+      "knee": 1.7742553285526286,
+      "jumps": 1,
+      "lands": 0,
+      "sole": {
+        "Near": 0,
+        "Far": 0
+      }
+    },
+    {
+      "name": "low-low-flight",
+      "state": "flight",
+      "ground": "low",
+      "time": 1.1999999999999982,
+      "rootY": -29.813021664440782,
+      "knee": 1.0185173952240025,
+      "jumps": 1,
+      "lands": 0,
+      "sole": {
+        "Near": 25.175360549560025,
+        "Far": 29.102308477910867
+      }
+    },
+    {
+      "name": "low-low-end",
+      "state": "low",
+      "ground": "low",
+      "time": 2.966666666666659,
+      "rootY": 78.13318171581157,
+      "knee": 1.7637974281771196,
+      "jumps": 1,
+      "lands": 1,
+      "sole": {
+        "Near": 9.750920071383007e-10,
+        "Far": 9.750920071383007e-10
+      }
+    },
+    {
+      "name": "low-move-prepare",
+      "state": "prepare",
+      "ground": "low",
+      "time": 0.8999999999999992,
+      "rootY": 79.11843196227261,
+      "knee": 1.7742553285526286,
+      "jumps": 1,
+      "lands": 0,
+      "sole": {
+        "Near": 0,
+        "Far": 0
+      }
+    },
+    {
+      "name": "low-move-flight",
+      "state": "flight",
+      "ground": "low",
+      "time": 1.1999999999999982,
+      "rootY": -29.813021664440782,
+      "knee": 1.0185173952240025,
+      "jumps": 1,
+      "lands": 0,
+      "sole": {
+        "Near": 25.175360549560025,
+        "Far": 29.102308477910867
+      }
+    },
+    {
+      "name": "low-move-end",
+      "state": "move",
+      "ground": "move",
+      "time": 2.966666666666659,
+      "rootY": 1.873063059714744,
+      "knee": 1.1184106127039497,
+      "jumps": 1,
+      "lands": 1,
+      "sole": {
+        "Near": 14.032969771456862,
+        "Far": 0.00809189374166408
+      }
+    },
+    {
+      "name": "move-idle-prepare",
+      "state": "prepare",
+      "ground": "move",
+      "time": 0.8999999999999992,
+      "rootY": 2.1766019024461314,
+      "knee": 0.9043500479690261,
+      "jumps": 1,
+      "lands": 0,
+      "sole": {
+        "Near": 5.898504173063259,
+        "Far": 0.018932909364082207
+      }
+    },
+    {
+      "name": "move-idle-flight",
+      "state": "flight",
+      "ground": "move",
+      "time": 1.1999999999999982,
+      "rootY": -35.28657677912688,
+      "knee": 0.9289230545899718,
+      "jumps": 1,
+      "lands": 0,
+      "sole": {
+        "Near": 25.19462240990879,
+        "Far": 29.1023407977396
+      }
+    },
+    {
+      "name": "move-idle-end",
+      "state": "idle",
+      "ground": "idle",
+      "time": 2.966666666666659,
+      "rootY": 1.3332093415814505,
+      "knee": 0.6575105124814065,
+      "jumps": 1,
+      "lands": 1,
+      "sole": {
+        "Near": 9.750920071383007e-10,
+        "Far": 0.00005225306864531376
+      }
+    },
+    {
+      "name": "move-low-prepare",
+      "state": "prepare",
+      "ground": "move",
+      "time": 0.8999999999999992,
+      "rootY": 2.1766019024461314,
+      "knee": 0.9043500479690261,
+      "jumps": 1,
+      "lands": 0,
+      "sole": {
+        "Near": 5.898504173063259,
+        "Far": 0.018932909364082207
+      }
+    },
+    {
+      "name": "move-low-flight",
+      "state": "flight",
+      "ground": "move",
+      "time": 1.1999999999999982,
+      "rootY": -35.28657677912688,
+      "knee": 0.9289230545899718,
+      "jumps": 1,
+      "lands": 0,
+      "sole": {
+        "Near": 25.19462240990879,
+        "Far": 29.1023407977396
+      }
+    },
+    {
+      "name": "move-low-end",
+      "state": "low",
+      "ground": "low",
+      "time": 2.966666666666659,
+      "rootY": 78.13320376883587,
+      "knee": 1.7637980889127711,
+      "jumps": 1,
+      "lands": 1,
+      "sole": {
+        "Near": 9.751488505571615e-10,
+        "Far": 0.00005225306864531376
+      }
+    },
+    {
+      "name": "move-move-prepare",
+      "state": "prepare",
+      "ground": "move",
+      "time": 0.8999999999999992,
+      "rootY": 2.1766019024461314,
+      "knee": 0.9043500479690261,
+      "jumps": 1,
+      "lands": 0,
+      "sole": {
+        "Near": 5.898504173063259,
+        "Far": 0.018932909364082207
+      }
+    },
+    {
+      "name": "move-move-flight",
+      "state": "flight",
+      "ground": "move",
+      "time": 1.1999999999999982,
+      "rootY": -35.28657677912688,
+      "knee": 0.9289230545899718,
+      "jumps": 1,
+      "lands": 0,
+      "sole": {
+        "Near": 25.19462240990879,
+        "Far": 29.1023407977396
+      }
+    },
+    {
+      "name": "move-move-end",
+      "state": "move",
+      "ground": "move",
+      "time": 2.966666666666659,
+      "rootY": 0.9656236507645658,
+      "knee": 0.6449919572499798,
+      "jumps": 1,
+      "lands": 1,
+      "sole": {
+        "Near": 0.01510418260050983,
+        "Far": 16.876823854439124
+      }
+    },
+    {
+      "name": "mid-move",
+      "state": "move",
+      "ground": "move",
+      "time": 0.06833333333333333,
+      "rootY": 34.596811694072564,
+      "knee": 1.2556172716502083,
+      "jumps": 0,
+      "lands": 0,
+      "sole": {
+        "Near": 0,
+        "Far": 0
+      }
+    },
+    {
+      "name": "mid-jump",
+      "state": "prepare",
+      "ground": "low",
+      "time": 0.06833333333333333,
+      "rootY": 35.08940036287602,
+      "knee": 1.2624713579749394,
+      "jumps": 1,
+      "lands": 0,
+      "sole": {
+        "Near": 0,
+        "Far": 0
+      }
+    },
+    {
+      "name": "route-one",
+      "state": "idle",
+      "ground": "idle",
+      "time": 8,
+      "rootY": 1.4024109766524693,
+      "knee": 0.659294314119852,
+      "jumps": 1,
+      "lands": 1,
+      "sole": {
+        "Near": 8.526512829121202e-13,
+        "Far": 5.684341886080802e-14
+      }
+    },
+    {
+      "name": "route-two",
+      "state": "low",
+      "ground": "low",
+      "time": 8,
+      "rootY": 78.20241097659837,
+      "knee": 1.7645337900626412,
+      "jumps": 2,
+      "lands": 2,
+      "sole": {
+        "Near": 4.4002490540151484e-10,
+        "Far": 5.684341886080802e-14
+      }
+    },
+    {
+      "name": "route-midMove",
+      "state": "move",
+      "ground": "move",
+      "time": 8,
+      "rootY": 0.02990129913520767,
+      "knee": 1.0118310057082414,
+      "jumps": 0,
+      "lands": 0,
+      "sole": {
+        "Near": 11.959791931676023,
+        "Far": 0.276730013181691
+      }
+    },
+    {
+      "name": "route-midJump",
+      "state": "low",
+      "ground": "low",
+      "time": 8,
+      "rootY": 78.20241097665253,
+      "knee": 1.7645337900511686,
+      "jumps": 1,
+      "lands": 1,
+      "sole": {
+        "Near": 0,
+        "Far": 0
+      }
+    },
+    {
+      "name": "support",
+      "state": "move",
+      "ground": "move",
+      "time": 3.9999999999999885,
+      "rootY": -0.8653918125309774,
+      "knee": 0.7409949941569884,
+      "jumps": 0,
+      "lands": 0,
+      "sole": {
+        "Near": 6.261683890916629,
+        "Far": 0.9069020991404955
+      }
+    }
+  ]
+}

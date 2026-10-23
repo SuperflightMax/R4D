@@ -1,0 +1,347 @@
+{
+  "version": "q5-c1-art-v1",
+  "character": "Эмалевый мастер",
+  "facing": "right",
+  "coordinates": "+X right,+Y down; joint relative to parent pivot; null parent fixed hip root",
+  "construction": "construction/v1/rig.json",
+  "constructionSHA256": "16379c05ef97cd5ec4527c63f09cb166152c74b3b1e5d2d10f73c13eb8f488eb",
+  "targetDisplayHeight": 360,
+  "parts": [
+    {
+      "id": "torso",
+      "file": "art/parts/torso.png",
+      "parent": null,
+      "joint": [
+        0,
+        0
+      ],
+      "pivot": [
+        128,
+        205
+      ],
+      "layer": 30,
+      "size": [
+        256,
+        256
+      ],
+      "source": "assets/source/torso.png",
+      "technicalScale": [
+        0.21140939597315436,
+        0.21140939597315436
+      ],
+      "technicalTranslation": [
+        -6.167785234899327,
+        -0.9161073825503365
+      ],
+      "constructionPart": "construction/v1/parts/torso.png"
+    },
+    {
+      "id": "head",
+      "file": "art/parts/head.png",
+      "parent": "torso",
+      "joint": [
+        0,
+        -155
+      ],
+      "pivot": [
+        128,
+        140
+      ],
+      "layer": 40,
+      "size": [
+        256,
+        256
+      ],
+      "source": "assets/source/head.png",
+      "technicalScale": [
+        0.2003610108303249,
+        0.2003610108303249
+      ],
+      "technicalTranslation": [
+        7.263537906137202,
+        -24.402527075812273
+      ],
+      "constructionPart": "construction/v1/parts/head.png"
+    },
+    {
+      "id": "upperArmFar",
+      "file": "art/parts/upperArmFar.png",
+      "parent": "torso",
+      "joint": [
+        -38,
+        -135
+      ],
+      "pivot": [
+        128,
+        48
+      ],
+      "layer": 10,
+      "size": [
+        256,
+        256
+      ],
+      "source": "assets/source/upperArm.png",
+      "technicalScale": [
+        0.17654808959156784,
+        0.17654808959156784
+      ],
+      "technicalTranslation": [
+        17.53952569169961,
+        -15.723320158102766
+      ],
+      "constructionPart": "construction/v1/parts/upperArmFar.png"
+    },
+    {
+      "id": "forearmFar",
+      "file": "art/parts/forearmFar.png",
+      "parent": "upperArmFar",
+      "joint": [
+        0,
+        85
+      ],
+      "pivot": [
+        128,
+        48
+      ],
+      "layer": 11,
+      "size": [
+        256,
+        256
+      ],
+      "source": "assets/source/forearm.png",
+      "technicalScale": [
+        0.2,
+        0.2
+      ],
+      "technicalTranslation": [
+        4.199999999999989,
+        -14.900000000000006
+      ],
+      "constructionPart": "construction/v1/parts/forearmFar.png"
+    },
+    {
+      "id": "thighFar",
+      "file": "art/parts/thighFar.png",
+      "parent": null,
+      "joint": [
+        -12,
+        0
+      ],
+      "pivot": [
+        128,
+        48
+      ],
+      "layer": 12,
+      "size": [
+        256,
+        256
+      ],
+      "source": "assets/source/thigh.png",
+      "technicalScale": [
+        0.1977077363896848,
+        0.1977077363896848
+      ],
+      "technicalTranslation": [
+        4.438395415472783,
+        -12.793696275071625
+      ],
+      "constructionPart": "construction/v1/parts/thighFar.png"
+    },
+    {
+      "id": "shinFar",
+      "file": "art/parts/shinFar.png",
+      "parent": "thighFar",
+      "joint": [
+        0,
+        120
+      ],
+      "pivot": [
+        128,
+        48
+      ],
+      "layer": 13,
+      "size": [
+        256,
+        256
+      ],
+      "source": "assets/source/shin.png",
+      "technicalScale": [
+        0.2,
+        0.2
+      ],
+      "technicalTranslation": [
+        4.0,
+        -18.200000000000003
+      ],
+      "constructionPart": "construction/v1/parts/shinFar.png"
+    },
+    {
+      "id": "footFar",
+      "file": "art/parts/footFar.png",
+      "parent": "shinFar",
+      "joint": [
+        0,
+        120
+      ],
+      "pivot": [
+        90,
+        40
+      ],
+      "layer": 14,
+      "size": [
+        256,
+        256
+      ],
+      "source": "assets/source/foot.png",
+      "technicalScale": [
+        0.13957055214723926,
+        0.13957055214723926
+      ],
+      "technicalTranslation": [
+        22.57055214723927,
+        -15.394171779141104
+      ],
+      "constructionPart": "construction/v1/parts/footFar.png"
+    },
+    {
+      "id": "upperArmNear",
+      "file": "art/parts/upperArmNear.png",
+      "parent": "torso",
+      "joint": [
+        38,
+        -135
+      ],
+      "pivot": [
+        128,
+        48
+      ],
+      "layer": 50,
+      "size": [
+        256,
+        256
+      ],
+      "source": "assets/source/upperArm.png",
+      "technicalScale": [
+        0.17654808959156784,
+        0.17654808959156784
+      ],
+      "technicalTranslation": [
+        17.53952569169961,
+        -15.723320158102766
+      ],
+      "constructionPart": "construction/v1/parts/upperArmNear.png"
+    },
+    {
+      "id": "forearmNear",
+      "file": "art/parts/forearmNear.png",
+      "parent": "upperArmNear",
+      "joint": [
+        0,
+        85
+      ],
+      "pivot": [
+        128,
+        48
+      ],
+      "layer": 51,
+      "size": [
+        256,
+        256
+      ],
+      "source": "assets/source/forearm.png",
+      "technicalScale": [
+        0.2,
+        0.2
+      ],
+      "technicalTranslation": [
+        4.199999999999989,
+        -14.900000000000006
+      ],
+      "constructionPart": "construction/v1/parts/forearmNear.png"
+    },
+    {
+      "id": "thighNear",
+      "file": "art/parts/thighNear.png",
+      "parent": null,
+      "joint": [
+        12,
+        0
+      ],
+      "pivot": [
+        128,
+        48
+      ],
+      "layer": 52,
+      "size": [
+        256,
+        256
+      ],
+      "source": "assets/source/thigh.png",
+      "technicalScale": [
+        0.1977077363896848,
+        0.1977077363896848
+      ],
+      "technicalTranslation": [
+        4.438395415472783,
+        -12.793696275071625
+      ],
+      "constructionPart": "construction/v1/parts/thighNear.png"
+    },
+    {
+      "id": "shinNear",
+      "file": "art/parts/shinNear.png",
+      "parent": "thighNear",
+      "joint": [
+        0,
+        120
+      ],
+      "pivot": [
+        128,
+        48
+      ],
+      "layer": 53,
+      "size": [
+        256,
+        256
+      ],
+      "source": "assets/source/shin.png",
+      "technicalScale": [
+        0.2,
+        0.2
+      ],
+      "technicalTranslation": [
+        4.0,
+        -18.200000000000003
+      ],
+      "constructionPart": "construction/v1/parts/shinNear.png"
+    },
+    {
+      "id": "footNear",
+      "file": "art/parts/footNear.png",
+      "parent": "shinNear",
+      "joint": [
+        0,
+        120
+      ],
+      "pivot": [
+        90,
+        40
+      ],
+      "layer": 54,
+      "size": [
+        256,
+        256
+      ],
+      "source": "assets/source/foot.png",
+      "technicalScale": [
+        0.13957055214723926,
+        0.13957055214723926
+      ],
+      "technicalTranslation": [
+        22.57055214723927,
+        -15.394171779141104
+      ],
+      "constructionPart": "construction/v1/parts/footNear.png"
+    }
+  ]
+}

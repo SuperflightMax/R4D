@@ -1,0 +1,463 @@
+{
+  "version": "q5-construction-v1",
+  "kind": "profile articulated biped, fixed rigid parts",
+  "units": "pixels at canonical scale",
+  "camera": "right-facing side view; horizontal mirror allowed; no depth turns",
+  "displayHeight": 360,
+  "parts": [
+    {
+      "id": "torso",
+      "file": "art/parts/torso.png",
+      "parent": null,
+      "joint": [
+        0,
+        0
+      ],
+      "pivot": [
+        128,
+        205
+      ],
+      "layer": 30,
+      "canvas": [
+        256,
+        256
+      ],
+      "shape": "rounded body + shoulder/hip coverage",
+      "requiredCoverage": [
+        [
+          "roundrect",
+          [
+            78,
+            42,
+            178,
+            230
+          ],
+          34
+        ]
+      ],
+      "hidden": "shoulder radius24 belongs to upperArm and is only partly covered by torso; hip radius34 belongs to thigh above torso"
+    },
+    {
+      "id": "head",
+      "file": "art/parts/head.png",
+      "parent": "torso",
+      "joint": [
+        0,
+        -155
+      ],
+      "pivot": [
+        128,
+        140
+      ],
+      "layer": 40,
+      "canvas": [
+        256,
+        256
+      ],
+      "shape": "head with neck plug",
+      "requiredCoverage": [
+        [
+          "ellipse",
+          [
+            83,
+            15,
+            193,
+            133
+          ]
+        ],
+        [
+          "roundrect",
+          [
+            110,
+            100,
+            146,
+            160
+          ],
+          16
+        ]
+      ],
+      "hidden": "neck plug 36px wide extends 20px below pivot, under torso collar"
+    },
+    {
+      "id": "upperArmFar",
+      "file": "art/parts/upperArmFar.png",
+      "parent": "torso",
+      "joint": [
+        -38,
+        -135
+      ],
+      "pivot": [
+        128,
+        48
+      ],
+      "layer": 10,
+      "canvas": [
+        256,
+        256
+      ],
+      "shape": "capsule shoulder to elbow",
+      "requiredCoverage": [
+        [
+          "roundrect",
+          [
+            104,
+            24,
+            152,
+            157
+          ],
+          24
+        ]
+      ],
+      "hidden": "shoulder radius24 partly under torso for Far, above torso for Near; elbow end beneath forearm plug"
+    },
+    {
+      "id": "forearmFar",
+      "file": "art/parts/forearmFar.png",
+      "parent": "upperArmFar",
+      "joint": [
+        0,
+        85
+      ],
+      "pivot": [
+        128,
+        48
+      ],
+      "layer": 11,
+      "canvas": [
+        256,
+        256
+      ],
+      "shape": "forearm with integral hand",
+      "requiredCoverage": [
+        [
+          "roundrect",
+          [
+            109,
+            29,
+            147,
+            150
+          ],
+          19
+        ],
+        [
+          "roundrect",
+          [
+            106,
+            125,
+            155,
+            185
+          ],
+          18
+        ]
+      ],
+      "hidden": "elbow disc radius19 overlays upperArm end; continuous material with open internal boundary"
+    },
+    {
+      "id": "thighFar",
+      "file": "art/parts/thighFar.png",
+      "parent": null,
+      "joint": [
+        -12,
+        0
+      ],
+      "pivot": [
+        128,
+        48
+      ],
+      "layer": 12,
+      "canvas": [
+        256,
+        256
+      ],
+      "shape": "capsule hip to knee",
+      "requiredCoverage": [
+        [
+          "roundrect",
+          [
+            94,
+            14,
+            162,
+            202
+          ],
+          34
+        ]
+      ],
+      "hidden": "hip radius34 overlays torso; knee end beneath shin plug"
+    },
+    {
+      "id": "shinFar",
+      "file": "art/parts/shinFar.png",
+      "parent": "thighFar",
+      "joint": [
+        0,
+        120
+      ],
+      "pivot": [
+        128,
+        48
+      ],
+      "layer": 13,
+      "canvas": [
+        256,
+        256
+      ],
+      "shape": "capsule knee to ankle",
+      "requiredCoverage": [
+        [
+          "roundrect",
+          [
+            102,
+            22,
+            154,
+            194
+          ],
+          26
+        ]
+      ],
+      "hidden": "knee plug radius26 overlays thigh end; ankle end beneath foot plug"
+    },
+    {
+      "id": "footFar",
+      "file": "art/parts/footFar.png",
+      "parent": "shinFar",
+      "joint": [
+        0,
+        120
+      ],
+      "pivot": [
+        90,
+        40
+      ],
+      "layer": 14,
+      "canvas": [
+        256,
+        256
+      ],
+      "shape": "flat sole boot facing right",
+      "requiredCoverage": [
+        [
+          "roundrect",
+          [
+            65,
+            28,
+            155,
+            70
+          ],
+          12
+        ],
+        [
+          "roundrect",
+          [
+            72,
+            18,
+            108,
+            59
+          ],
+          16
+        ]
+      ],
+      "hidden": "ankle plug radius18; sole y=70, ankle pivot y=40, 30px sole extent"
+    },
+    {
+      "id": "upperArmNear",
+      "file": "art/parts/upperArmNear.png",
+      "parent": "torso",
+      "joint": [
+        38,
+        -135
+      ],
+      "pivot": [
+        128,
+        48
+      ],
+      "layer": 50,
+      "canvas": [
+        256,
+        256
+      ],
+      "shape": "capsule shoulder to elbow",
+      "requiredCoverage": [
+        [
+          "roundrect",
+          [
+            104,
+            24,
+            152,
+            157
+          ],
+          24
+        ]
+      ],
+      "hidden": "shoulder radius24 partly under torso for Far, above torso for Near; elbow end beneath forearm plug"
+    },
+    {
+      "id": "forearmNear",
+      "file": "art/parts/forearmNear.png",
+      "parent": "upperArmNear",
+      "joint": [
+        0,
+        85
+      ],
+      "pivot": [
+        128,
+        48
+      ],
+      "layer": 51,
+      "canvas": [
+        256,
+        256
+      ],
+      "shape": "forearm with integral hand",
+      "requiredCoverage": [
+        [
+          "roundrect",
+          [
+            109,
+            29,
+            147,
+            150
+          ],
+          19
+        ],
+        [
+          "roundrect",
+          [
+            106,
+            125,
+            155,
+            185
+          ],
+          18
+        ]
+      ],
+      "hidden": "elbow disc radius19 overlays upperArm end; continuous material with open internal boundary"
+    },
+    {
+      "id": "thighNear",
+      "file": "art/parts/thighNear.png",
+      "parent": null,
+      "joint": [
+        12,
+        0
+      ],
+      "pivot": [
+        128,
+        48
+      ],
+      "layer": 52,
+      "canvas": [
+        256,
+        256
+      ],
+      "shape": "capsule hip to knee",
+      "requiredCoverage": [
+        [
+          "roundrect",
+          [
+            94,
+            14,
+            162,
+            202
+          ],
+          34
+        ]
+      ],
+      "hidden": "hip radius34 overlays torso; knee end beneath shin plug"
+    },
+    {
+      "id": "shinNear",
+      "file": "art/parts/shinNear.png",
+      "parent": "thighNear",
+      "joint": [
+        0,
+        120
+      ],
+      "pivot": [
+        128,
+        48
+      ],
+      "layer": 53,
+      "canvas": [
+        256,
+        256
+      ],
+      "shape": "capsule knee to ankle",
+      "requiredCoverage": [
+        [
+          "roundrect",
+          [
+            102,
+            22,
+            154,
+            194
+          ],
+          26
+        ]
+      ],
+      "hidden": "knee plug radius26 overlays thigh end; ankle end beneath foot plug"
+    },
+    {
+      "id": "footNear",
+      "file": "art/parts/footNear.png",
+      "parent": "shinNear",
+      "joint": [
+        0,
+        120
+      ],
+      "pivot": [
+        90,
+        40
+      ],
+      "layer": 54,
+      "canvas": [
+        256,
+        256
+      ],
+      "shape": "flat sole boot facing right",
+      "requiredCoverage": [
+        [
+          "roundrect",
+          [
+            65,
+            28,
+            155,
+            70
+          ],
+          12
+        ],
+        [
+          "roundrect",
+          [
+            72,
+            18,
+            108,
+            59
+          ],
+          16
+        ]
+      ],
+      "hidden": "ankle plug radius18; sole y=70, ankle pivot y=40, 30px sole extent"
+    }
+  ],
+  "motion": {
+    "thigh": 120,
+    "shin": 120,
+    "farThigh": 120,
+    "farShin": 120,
+    "nearReach": 228.48,
+    "farReach": 228.48,
+    "soleExtent": 30,
+    "groundDistance": 258.48,
+    "lowDepth": 76.8,
+    "lowBodyX": -25.92,
+    "strideHalf": 49.92,
+    "lift": 38.4
+  },
+  "colors": {
+    "required": "#699eae",
+    "hidden": "#d6a33c",
+    "allowed": "#e3e9ed",
+    "axes": "#da3751"
+  },
+  "artRules": "Shapes are construction envelopes, not artwork. Preserve required coverage/pivots/chain lengths; silhouette embellishment <=8px around envelope except sole must stay y=70. Internal end contours must remain open or covered. Artist may use visible intentional joint design. Canvas must remain 256x256; no part-specific resizing without recorded construction change."
+}

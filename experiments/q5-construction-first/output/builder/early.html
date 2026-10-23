@@ -1,0 +1,30 @@
+<!doctype html><html lang="ru"><meta charset="utf-8"><link rel="icon" href="data:,"><title>Q5 · ранняя цепь</title>
+<style>body{background:#172b31;color:#e7ede8;font:16px system-ui;margin:24px}canvas{display:block;background:#d6dfd1;max-width:100%;margin:20px 0}button{padding:10px;margin-right:8px}pre{white-space:pre-wrap}</style>
+<h1>Ранняя настоящая цепь Q5</h1><p>Подготовительное соединение частей с тем же механизмом. Это ещё не полный персонаж и не кандидат.</p>
+<button id="idle">Покой</button><button id="low">Низкая поза</button><button id="move">Шаг</button><button id="jump">Прыжок</button><button id="pause">Пауза</button>
+<canvas width="800" height="620"></canvas><pre id="status">Ожидается настоящая цепь Artist…</pre>
+<script type="module">
+import {Motion} from '../../src/motion.js';
+import rig from '../../construction/v1/rig.json';
+const ctx=document.querySelector('canvas').getContext('2d');
+const m=new Motion({...rig.motion,soleNear:[[-25,30],[65,30]],soleFar:[[-25,30],[65,30]]});
+const chain=new URLSearchParams(location.search).get('chain')??'leg';
+const ids=chain==='head'?['torso','head']:chain==='arm'?['torso','upperArmNear','forearmNear']:['thighNear','shinNear','footNear'];
+const parts=rig.parts.filter(p=>ids.includes(p.id)).sort((a,b)=>a.layer-b.layer);
+const images={};
+try{for(const p of parts){const im=new Image();im.src='/'+p.file;await im.decode();images[p.id]=im;}}
+catch(e){document.getElementById('status').textContent='Настоящая цепь ещё не передана; технические маски не подставляются.';throw e;}
+let paused=false,last=performance.now();
+for(const state of ['idle','low','move'])document.getElementById(state).onclick=()=>m.requestGround(state);
+document.getElementById('jump').onclick=()=>m.jump();
+document.getElementById('pause').onclick=()=>paused=!paused;
+function render(){
+ ctx.clearRect(0,0,800,620);ctx.strokeStyle='#536f64';ctx.beginPath();ctx.moveTo(0,550);ctx.lineTo(800,550);ctx.stroke();
+ const root={x:390+m.pose.bodyX*1.2,y:550-258.48*1.2+m.pose.rootY*1.2,angle:0};const world={};
+ for(const p of parts){const parent=world[p.parent]??root,c=Math.cos(parent.angle),s=Math.sin(parent.angle);world[p.id]={x:parent.x+(p.joint[0]*c-p.joint[1]*s)*1.2,y:parent.y+(p.joint[0]*s+p.joint[1]*c)*1.2,angle:parent.angle+(m.pose[p.id]??0)};const w=world[p.id];ctx.save();ctx.translate(w.x,w.y);ctx.rotate(w.angle);ctx.scale(1.2,1.2);ctx.drawImage(images[p.id],-p.pivot[0],-p.pivot[1]);ctx.restore();ctx.fillStyle='#da3751';ctx.beginPath();ctx.arc(w.x,w.y,3,0,Math.PI*2);ctx.fill();}
+ document.getElementById('status').textContent=JSON.stringify({state:m.state,ground:m.ground,kneeDegrees:m.pose.shinNear*180/Math.PI,soleGap:m.soleGap('Near'),files:parts.map(p=>p.file)},null,2);
+}
+window.__EARLY={motion:m,parts,render,pause:()=>paused=true};
+function frame(now){if(!paused)m.update(Math.min((now-last)/1000,.05));last=now;render();requestAnimationFrame(frame);}requestAnimationFrame(frame);
+</script></html>
+
