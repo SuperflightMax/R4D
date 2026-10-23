@@ -1,6 +1,6 @@
 # Q1–Q6: что дала очередь растровой скелетной анимации
 
-23 октября 2026. Все шесть исследовательских пунктов завершены решением CTO **stop/show with limitations**. Q1–Q5 опубликованы по отдельным release reports; Q6 принят к показу, его release ещё ожидается. Это разнообразные случаи с разным артом и подготовкой, а не контролируемый турнир методов или доказанный универсальный производственный рецепт. Модель сотрудников очереди — GPT-6.1 Sol; внутренний image-model ID встроенный генератор не раскрывал.
+23 октября 2026. Все шесть исследовательских пунктов завершены решением CTO **stop/show with limitations** и опубликованы по отдельным release reports. Это разнообразные случаи с разным артом и подготовкой, а не контролируемый турнир методов или доказанный универсальный производственный рецепт. Модель сотрудников очереди — GPT-6.1 Sol; внутренний image-model ID встроенный генератор не раскрывал.
 
 ## Сопоставление результатов
 
@@ -29,7 +29,7 @@ Q1–Q5 используют общий принцип запросов из т�
 
 ## Просмотр и публикация
 
-Публикация Q1–Q5 подтверждена соответствующими reports, без новой проверки live-сервисов в этом closeout. Доступ по обычной авторизации SuperFlight. Авторизованный public canvas не следует считать заново проверенным: релизные отчёты различают локальное exact tree, серверные проверки и доступ без сессии. У Q1 встроенный baseline iframe ограничен прежним DENY, отдельная top-level ссылка сохранена.
+Публикация Q1–Q6 подтверждена соответствующими reports. Для Q6 отдельно проверены local exact tree, серверные hashes, публичные auth-барьеры и авторизованный canvas на desktop/mobile; это не является новой проверкой live-сервисов Q1–Q5 или повторным предметным QA. Доступ по обычной авторизации SuperFlight. У Q1 встроенный baseline iframe ограничен прежним DENY, отдельная top-level ссылка сохранена.
 
 | Пункт | Опубликованный адрес / следующий route | Подтверждение |
 |---|---|---|
@@ -38,7 +38,7 @@ Q1–Q5 используют общий принцип запросов из т�
 | Q3 | https://superflight.space/review/r4d/q3-other-anatomy/ | [Release report Q3](../work/agents/release-engineer-r4d-q3-01.md) |
 | Q4 | https://superflight.space/review/r4d/q4-whole-character/ | [Release report Q4](../work/agents/release-engineer-r4d-q4-01.md) |
 | Q5 | https://superflight.space/review/r4d/q5-construction-first/ | [Release report Q5](../work/agents/release-engineer-r4d-q5-01.md) |
-| Q6 | **Будущий** `/review/r4d/q6-single-joint/`, release pending | [STATE Q6](../experiments/q6-single-joint/STATE.md); пока только local `127.0.0.1:4186` |
+| Q6 | https://superflight.space/review/r4d/q6-single-joint/ | [Release report Q6](../work/agents/release-engineer-r4d-q6-01.md) |
 
 ## Предложения следующего решения
 
