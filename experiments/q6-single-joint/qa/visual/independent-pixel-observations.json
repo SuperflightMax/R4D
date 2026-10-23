@@ -1,0 +1,93 @@
+{
+  "method": "Pillow original/final native RGBA compare; binary frozen native rectangles; alpha threshold128 is a diagnostic convention; missing source coverage is not automatically a visible assembled hole",
+  "results": {
+    "M1": {
+      "thigh_near.png": {
+        "sourceSize": [
+          195,
+          350
+        ],
+        "outputSize": [
+          195,
+          350
+        ],
+        "outsideMaskPixels": 57000,
+        "outsideMaskChangedRGBA": 33644,
+        "outsideMaskMaxChannelDelta": 255,
+        "sourceOpaquePixelsMissingInsideMask": 257,
+        "alphaBBox": [
+          1,
+          5,
+          195,
+          350
+        ],
+        "rightmostColumnAlphaGE128": 51
+      },
+      "shin_near.png": {
+        "sourceSize": [
+          221,
+          454
+        ],
+        "outputSize": [
+          221,
+          454
+        ],
+        "outsideMaskPixels": 85334,
+        "outsideMaskChangedRGBA": 39583,
+        "outsideMaskMaxChannelDelta": 255,
+        "sourceOpaquePixelsMissingInsideMask": 965,
+        "alphaBBox": [
+          6,
+          8,
+          219,
+          452
+        ],
+        "rightmostColumnAlphaGE128": 0
+      }
+    },
+    "M2": {
+      "thigh_near.png": {
+        "sourceSize": [
+          195,
+          350
+        ],
+        "outputSize": [
+          195,
+          350
+        ],
+        "outsideMaskPixels": 57000,
+        "outsideMaskChangedRGBA": 0,
+        "outsideMaskMaxChannelDelta": 0,
+        "sourceOpaquePixelsMissingInsideMask": 1688,
+        "alphaBBox": [
+          3,
+          3,
+          195,
+          330
+        ],
+        "rightmostColumnAlphaGE128": 0
+      },
+      "shin_near.png": {
+        "sourceSize": [
+          221,
+          454
+        ],
+        "outputSize": [
+          221,
+          454
+        ],
+        "outsideMaskPixels": 85334,
+        "outsideMaskChangedRGBA": 0,
+        "outsideMaskMaxChannelDelta": 0,
+        "sourceOpaquePixelsMissingInsideMask": 260,
+        "alphaBBox": [
+          3,
+          4,
+          218,
+          451
+        ],
+        "rightmostColumnAlphaGE128": 0
+      }
+    }
+  }
+}

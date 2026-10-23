@@ -1,0 +1,89 @@
+{
+  "candidate": "q6-c1",
+  "implementerSelfCheck": true,
+  "independentQA": false,
+  "fullRuntimePasses": 1,
+  "checkpoints": 34,
+  "screenshots": 26,
+  "desktop": [
+    1440,
+    1100
+  ],
+  "mobile": [
+    390,
+    844
+  ],
+  "unitTests": {
+    "passed": 6,
+    "total": 6
+  },
+  "build": "passed",
+  "modes": [
+    "joint",
+    "method",
+    "single",
+    "diagnostic"
+  ],
+  "poses": [
+    "bind",
+    "extreme_extension",
+    "extreme_flexion",
+    "step_overlap",
+    "jump_phase"
+  ],
+  "singleVariants": [
+    "J0",
+    "J1",
+    "J2",
+    "M1",
+    "M2"
+  ],
+  "themes": [
+    "light",
+    "dark"
+  ],
+  "scales": [
+    0.42,
+    0.84
+  ],
+  "controls": [
+    "state selection",
+    "explicit request",
+    "play/pause",
+    "step 1/60",
+    "reset bind",
+    "theme",
+    "zoom",
+    "bones",
+    "pivots",
+    "layers"
+  ],
+  "assertions": {
+    "allAssetsLoaded": true,
+    "fiveNeutralTransformsExact": true,
+    "retargetPoseContinuous": true,
+    "sourceBindDeltaY": -18.48,
+    "pauseHolds": true,
+    "stepExact": true,
+    "resetExact": true,
+    "horizontalOverflow": false,
+    "pageErrors": 0,
+    "requestFailures": 0,
+    "httpErrors": 0
+  },
+  "liveReadback": {
+    "clockBefore": 0,
+    "clockAfterPlay": 0.2405999999761552,
+    "clockAfterPauseWait": 0.2405999999761552,
+    "exact": true,
+    "desktopWidth": 1440,
+    "desktopScrollWidth": 1440
+  },
+  "recordingLimit": "Main CLI callback completed without exception and saved all 26 screenshots; console.log result array was not forwarded by CLI. Per-sample numeric values remain visible in screenshot readouts. The callback source/log and summary preserve exercised assertions. Targeted readback returns JSON; no second full pass.",
+  "visualObservations": {
+    "diagnostic": "Same J0 textures show different leg length/overlap at source vs neutral offset; dark cap remains. Offset correction alone does not repair art.",
+    "joint": "At 92 degrees J0 has a dark end disc, J1 shows cloth continuation but remains a rigid corner; J2 adds a narrow separate motif. No universal winner declared.",
+    "method": "M1 bind shows a hollow/open join and altered seams compared with M2; M2 preserves outside-mask source by composition, not generator precision.",
+    "presentation": "Fixed zoom clips distal boot in flexion; knee remains visible. Desktop canvas CSS 438/440 because panel border, mobile proportional shrink; canonical transforms remain .42/.84."
+  }
+}

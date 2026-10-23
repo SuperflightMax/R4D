@@ -1,0 +1,82 @@
+{
+  "generation_calls": 0,
+  "master_crop": [
+    139,
+    920,
+    278,
+    1090
+  ],
+  "selection_polygon_in_crop": [
+    [
+      64,
+      8
+    ],
+    [
+      134,
+      14
+    ],
+    [
+      132,
+      112
+    ],
+    [
+      111,
+      137
+    ],
+    [
+      29,
+      126
+    ],
+    [
+      36,
+      108
+    ],
+    [
+      46,
+      81
+    ],
+    [
+      54,
+      47
+    ]
+  ],
+  "mask": "binary polygon, no feather before resampling; surrounding garment/background excluded by manual selection",
+  "transform": {
+    "uniform_scale": 0.48,
+    "top_left": [
+      68,
+      0
+    ],
+    "filter": "inverse affine BICUBIC",
+    "support_size": [
+      67,
+      82
+    ]
+  },
+  "overlay": {
+    "size": [
+      221,
+      454
+    ],
+    "mode": "RGBA",
+    "alpha_bbox_gt0": [
+      81,
+      3,
+      133,
+      66
+    ],
+    "alpha_bbox_ge128": [
+      82,
+      4,
+      133,
+      66
+    ],
+    "alpha_min": 0,
+    "alpha_max": 255,
+    "transparent_pixels": 97885,
+    "partial_alpha_pixels": 126,
+    "opaque_pixels": 2323
+  },
+  "underlay_byte_identical_to_J1": true,
+  "limitation": "Existing painted trouser patch is narrow and angled; selection includes its original seam/button/cloth. No new straps fabricated, no pose-dependent repair."
+}

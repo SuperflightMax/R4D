@@ -1,0 +1,170 @@
+{
+  "runtimeMapping": [
+    {
+      "variant": "J0",
+      "part": "thigh",
+      "ok": true,
+      "size": [
+        195,
+        350
+      ],
+      "bytes": 83465
+    },
+    {
+      "variant": "J0",
+      "part": "shin",
+      "ok": true,
+      "size": [
+        221,
+        454
+      ],
+      "bytes": 107855
+    },
+    {
+      "variant": "J1",
+      "part": "thigh",
+      "ok": true,
+      "size": [
+        195,
+        350
+      ],
+      "bytes": 83959
+    },
+    {
+      "variant": "J1",
+      "part": "shin",
+      "ok": true,
+      "size": [
+        221,
+        454
+      ],
+      "bytes": 111426
+    },
+    {
+      "variant": "J2",
+      "part": "thigh",
+      "ok": true,
+      "size": [
+        195,
+        350
+      ],
+      "bytes": 83959
+    },
+    {
+      "variant": "J2",
+      "part": "shin",
+      "ok": true,
+      "size": [
+        221,
+        454
+      ],
+      "bytes": 111426
+    },
+    {
+      "variant": "J2",
+      "part": "overlay",
+      "ok": true,
+      "size": [
+        221,
+        454
+      ],
+      "bytes": 7302
+    },
+    {
+      "variant": "M1",
+      "part": "thigh",
+      "ok": true,
+      "size": [
+        195,
+        350
+      ],
+      "bytes": 89005
+    },
+    {
+      "variant": "M1",
+      "part": "shin",
+      "ok": true,
+      "size": [
+        221,
+        454
+      ],
+      "bytes": 113441
+    },
+    {
+      "variant": "M2",
+      "part": "thigh",
+      "ok": true,
+      "size": [
+        195,
+        350
+      ],
+      "bytes": 83959
+    },
+    {
+      "variant": "M2",
+      "part": "shin",
+      "ok": true,
+      "size": [
+        221,
+        454
+      ],
+      "bytes": 111426
+    }
+  ],
+  "rawM2Outside": {
+    "changedPixels": 71437,
+    "maxDelta": 255,
+    "zonePixels": 235894
+  },
+  "finalM2Outside": {
+    "changedPixels": 0,
+    "maxDelta": 0,
+    "zonePixels": 235894
+  },
+  "rawNormalizationExact": true,
+  "parts": {
+    "thigh": {
+      "outside": {
+        "changedPixels": 0,
+        "maxDelta": 0,
+        "zonePixels": 57000
+      },
+      "cropExact": true,
+      "J1equalsM2": true,
+      "J2underlayEqualsJ1": true,
+      "opaqueRemovedInside": 1688
+    },
+    "shin": {
+      "outside": {
+        "changedPixels": 0,
+        "maxDelta": 0,
+        "zonePixels": 85334
+      },
+      "cropExact": true,
+      "J1equalsM2": true,
+      "J2underlayEqualsJ1": true,
+      "opaqueRemovedInside": 260
+    }
+  },
+  "ledger": {
+    "primary_calls": 2,
+    "retries": 0,
+    "M1": {
+      "calls": 1,
+      "raw_source": "C:/Users/user/.codex/generated_images/01a169ba-1b6e-7f41-86b5-4dcf8fd38c81/exec-fbdeacd6-1971-4523-a00c-5a9318c1d3f0.png",
+      "raw_sha256": "bd18591398a44026d6dd59f92792ebfcc84045bc98b377c79fa229ad38d3c23d"
+    },
+    "M2": {
+      "calls": 1,
+      "raw_source": "C:/Users/user/.codex/generated_images/01a169ba-1b6e-7f41-86b5-4dcf8fd38c81/exec-5ffaa3b4-3f91-4875-9526-fc0ca665df7a.png",
+      "raw_sha256": "46d637c400f2e628b0653b36d6c6d8ef001b3c2c61d8e0d950f9af5827308025"
+    },
+    "J2_calls": 0,
+    "generator_model_id": "not exposed",
+    "actual_tool_args": "process/M1/tool-args.json, process/M2/tool-args.json"
+  },
+  "rawCopiesMatchGeneratedSource": {
+    "M1": true,
+    "M2": true
+  }
+}

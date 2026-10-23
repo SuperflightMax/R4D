@@ -1,0 +1,5 @@
+{
+  "name": "r4d-q6-single-joint", "version": "1.0.0", "private": true, "type": "module",
+  "scripts": {"dev":"vite --host 127.0.0.1", "build":"vite build", "test":"node --test output/builder/contract.test.js"},
+  "dependencies":{"pixi.js":"^8.0.0"}, "devDependencies":{"vite":"^7.0.0"}
+}

@@ -1,0 +1,18 @@
+
+> r4d-q6-single-joint@1.0.0 test
+> node --test output/builder/contract.test.js
+
+✔ Frozen contract and six provenance bytes remain exact (6.9986ms)
+✔ Retarget preserves current pose identity and samples 0.38s smoothstep (1.68ms)
+✔ Ping pong uses shared clock; reset and exact step (0.4444ms)
+✔ Neutral/source joint formula and fixed camera; no bone scale (0.6556ms)
+✔ Equality detects transform drift and independent pose object (0.6284ms)
+✔ Runtime inputs equal Artist outputs and preserve J relationships (9.1049ms)
+ℹ tests 6
+ℹ suites 0
+ℹ pass 6
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 153.1538

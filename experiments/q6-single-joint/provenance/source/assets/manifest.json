@@ -1,0 +1,208 @@
+{
+  "schemaVersion": 2,
+  "characterId": "sky-courier",
+  "displayName": "Небесный курьер",
+  "candidate": "pass1-candidate-1-qa-fix",
+  "facing": "right",
+  "coordinateSystem": {
+    "origin": "top-left",
+    "x": "right",
+    "y": "down",
+    "angles": "degrees-clockwise"
+  },
+  "assembledReference": {
+    "file": "sky_courier_master.png",
+    "sizePx": [412, 1459],
+    "usage": "visual identity reference only; never render behind the puppet"
+  },
+  "layerOrder": "ascending values are drawn later/in front",
+  "torsoAttachmentPointsPx": {
+    "neck": [178, 45],
+    "shoulderNear": [68, 142],
+    "shoulderFar": [61, 149],
+    "hipNear": [79, 487],
+    "hipFar": [187, 487]
+  },
+  "parts": [
+    {
+      "id": "thigh_far",
+      "file": "parts/thigh_far.png",
+      "bone": "thighFar",
+      "parentBone": "root",
+      "sizePx": [195, 350],
+      "pivotPx": [98, 35],
+      "anchor": [0.503, 0.1],
+      "childJointPx": { "kneeFar": [139, 319] },
+      "layer": -40,
+      "notes": "Тканевые, не телесные, запасы бедра и колена; верх скрывается тазовой частью torso."
+    },
+    {
+      "id": "shin_far",
+      "file": "parts/shin_far.png",
+      "bone": "shinFar",
+      "parentBone": "thighFar",
+      "sizePx": [221, 454],
+      "pivotPx": [102, 28],
+      "anchor": [0.462, 0.062],
+      "layer": -39,
+      "notes": "Привязать pivot к kneeFar; полный дальний ботинок включён."
+    },
+    {
+      "id": "upper_arm_far",
+      "file": "parts/upper_arm_far.png",
+      "bone": "upperArmFar",
+      "parentBone": "torso",
+      "sizePx": [153, 307],
+      "pivotPx": [83, 36],
+      "anchor": [0.542, 0.117],
+      "childJointPx": { "elbowFar": [77, 274] },
+      "layer": -30,
+      "notes": "Умеренно затемнён технической цветокоррекцией; плечевой диск держать за тканевым окатом torso."
+    },
+    {
+      "id": "forearm_far",
+      "file": "parts/forearm_far.png",
+      "bone": "forearmFar",
+      "parentBone": "upperArmFar",
+      "sizePx": [167, 384],
+      "pivotPx": [86, 44],
+      "anchor": [0.515, 0.115],
+      "layer": -29,
+      "notes": "Привязать pivot к elbowFar; умеренно затемнён вместе с дальним плечом."
+    },
+    {
+      "id": "satchel_body",
+      "file": "parts/satchel_body.png",
+      "bone": "satchelBody",
+      "parentBone": "torso",
+      "sizePx": [241, 273],
+      "pivotPx": [121, 20],
+      "anchor": [0.502, 0.073],
+      "layer": -20,
+      "notes": "Корпус сумки всегда рисовать за torso; верхние обрезанные концы скрываются корпусом."
+    },
+    {
+      "id": "thigh_near",
+      "file": "parts/thigh_near.png",
+      "bone": "thighNear",
+      "parentBone": "root",
+      "sizePx": [195, 350],
+      "pivotPx": [98, 35],
+      "anchor": [0.503, 0.1],
+      "childJointPx": { "kneeNear": [139, 319] },
+      "layer": -10,
+      "notes": "Тканевые запасы; hip pivot держать под непрозрачной тазовой лопастью torso."
+    },
+    {
+      "id": "shin_near",
+      "file": "parts/shin_near.png",
+      "bone": "shinNear",
+      "parentBone": "thighNear",
+      "sizePx": [221, 454],
+      "pivotPx": [102, 28],
+      "anchor": [0.462, 0.062],
+      "layer": -9,
+      "notes": "Привязать pivot к kneeNear; полный ближний ботинок включён."
+    },
+    {
+      "id": "upper_arm_near",
+      "file": "parts/upper_arm_near.png",
+      "bone": "upperArmNear",
+      "parentBone": "torso",
+      "sizePx": [173, 304],
+      "pivotPx": [99, 35],
+      "anchor": [0.572, 0.115],
+      "childJointPx": { "elbowNear": [88, 271] },
+      "layer": -5,
+      "notes": "Рисовать за torso: большой непрозрачный тканевый окат torso закрывает телесный плечевой запас."
+    },
+    {
+      "id": "torso",
+      "file": "parts/torso.png",
+      "bone": "torso",
+      "parentBone": "root",
+      "sizePx": [271, 541],
+      "pivotPx": [135, 486],
+      "anchor": [0.498, 0.898],
+      "layer": 0,
+      "notes": "QA-замена: без телесных дисков; закрытый тканью плечевой окат, высокий воротник и широкие тазовые лопасти."
+    },
+    {
+      "id": "forearm_near",
+      "file": "parts/forearm_near.png",
+      "bone": "forearmNear",
+      "parentBone": "upperArmNear",
+      "sizePx": [160, 375],
+      "pivotPx": [83, 43],
+      "anchor": [0.519, 0.115],
+      "layer": 5,
+      "notes": "Привязать pivot к elbowNear; манжета перекрывает нижний запас upper_arm_near."
+    },
+    {
+      "id": "head",
+      "file": "parts/head.png",
+      "bone": "head",
+      "parentBone": "torso",
+      "sizePx": [316, 347],
+      "pivotPx": [161, 326],
+      "anchor": [0.509, 0.939],
+      "layer": 10,
+      "notes": "Шейный запас сохраняется и входит внутрь высокого воротника; поверх него обязательно рисуется collar_cover."
+    },
+    {
+      "id": "satchel_strap",
+      "file": "parts/satchel_strap.png",
+      "bone": "satchelStrap",
+      "parentBone": "torso",
+      "sizePx": [142, 252],
+      "pivotPx": [75, 12],
+      "anchor": [0.528, 0.048],
+      "layer": 15,
+      "notes": "Ремень рисовать поверх torso; нижние концы прятать под корпусом/точкой входа в сумку."
+    },
+    {
+      "id": "scarf",
+      "file": "parts/scarf.png",
+      "bone": "scarf",
+      "parentBone": "torso",
+      "sizePx": [329, 175],
+      "pivotPx": [181, 78],
+      "anchor": [0.55, 0.446],
+      "layer": 20,
+      "notes": "Крепить узлом к шее; хвосты направлены назад."
+    },
+    {
+      "id": "collar_cover",
+      "file": "parts/collar_cover.png",
+      "bone": "collarCover",
+      "parentBone": "torso",
+      "sizePx": [271, 541],
+      "pivotPx": [135, 486],
+      "anchor": [0.498, 0.898],
+      "layer": 30,
+      "registration": { "matchPart": "torso", "sameTransform": true },
+      "notes": "Рисовать последним тем же transform, что torso; верхняя одежда закрывает шейный диск головы и край плечевого запаса."
+    }
+  ],
+  "legacyCandidate1Parts": [
+    "parts/leg_near.png",
+    "parts/leg_far.png",
+    "parts/satchel.png"
+  ],
+  "rigNotes": {
+    "recommendedReferenceHeightPx": 720,
+    "jointOverlapRule": "keep every hip, shoulder and neck plug behind torso/collar_cover; keep shin knee caps behind thigh knee ends",
+    "recommendedAngleRangesDeg": {
+      "head": [-22, 22],
+      "upperArm": [-50, 50],
+      "forearm": [-70, 80],
+      "thigh": [-45, 45],
+      "shinRelativeToThigh": [-8, 92]
+    },
+    "requiredLayerInvariants": [
+      "thighFar, thighNear and upperArmNear stay behind torso at their proximal joints",
+      "head stays below collar_cover",
+      "satchelBody stays behind torso and satchelStrap stays in front"
+    ]
+  }
+}

@@ -1,0 +1,52 @@
+- main [ref=e2]:
+  - heading "Q6 · одно колено Sky Courier" [level=1] [ref=e3]
+  - paragraph [ref=e4]: Оформление стыка, способ получения и диагностика сборки сравниваются отдельно. Общая поза и часы для всех вариантов.
+  - region "Управление" [ref=e5]:
+    - generic [ref=e6]:
+      - text: Сравнение
+      - combobox "Сравнение" [ref=e7]:
+        - option "J0 / J1 / J2 · оформление" [selected]
+        - option "M1 / M2 · получение J1"
+        - option "Один вариант"
+        - option "J0 · исходная / нейтральная привязка"
+    - generic [ref=e8]:
+      - text: Цель
+      - combobox "Цель" [ref=e9]:
+        - option "Bind · 0°" [selected]
+        - option "Разгибание · −8°"
+        - option "Сгибание · 92°"
+        - option "Фаза шага · 46°"
+        - option "Фаза прыжка · 80°"
+    - button "Запросить цель" [ref=e10] [cursor=pointer]
+    - button "Играть ↔ bind" [ref=e11] [cursor=pointer]
+    - button "Шаг 1/60 с" [ref=e12] [cursor=pointer]
+    - button "Сброс bind" [ref=e13] [cursor=pointer]
+    - generic [ref=e14]:
+      - text: Фон
+      - combobox "Фон" [ref=e15]:
+        - option "Светлый" [selected]
+        - option "Тёмный"
+    - generic [ref=e16]:
+      - text: Масштаб
+      - combobox "Масштаб" [ref=e17]:
+        - option "Целевой · 0.42" [selected]
+        - option "Крупно · 0.84"
+    - generic [ref=e18]:
+      - checkbox "Кости" [ref=e19]
+      - text: Кости
+    - generic [ref=e20]:
+      - checkbox "Оси" [ref=e21]
+      - text: Оси
+    - generic [ref=e22]:
+      - checkbox "Слои" [ref=e23]
+      - text: Слои
+  - status [ref=e24]: Загрузка точных входных файлов…
+  - paragraph
+  - paragraph
+  - region "Варианты колена" [ref=e25]:
+    - article [ref=e26]:
+      - heading "J0 · исходные торцы" [level=2] [ref=e27]
+      - paragraph [ref=e29]
+  - group [ref=e30]:
+    - generic "Фактические часы, поза и трансформации" [ref=e31]
+  - paragraph [ref=e33]: "Камера фиксирована: холст 440×660; 0.42 / 0.84 без подгонки по рисунку. На узком экране весь холст пропорционально уменьшен CSS; коэффициент указан в данных. Это локальные фазы колена, а не физическая модель прыжка."

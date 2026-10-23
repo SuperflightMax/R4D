@@ -1,0 +1,379 @@
+{
+  "staff_id": "technical-qa-r4d-q6-01",
+  "role": "Independent Technical QA Q6",
+  "model_reasoning_basis": "Configuration supplied by dispatch: gpt-6.1-sol / medium",
+  "candidate": "q6-c1",
+  "base": "f7b563db381078f90109bbf48946841809986217",
+  "cwd": "D:/dev/R4D",
+  "full_passes": 1,
+  "corrections": 0,
+  "verdict": "STOP_SHOW_WITH_LIMITATIONS",
+  "research_question_measurable": true,
+  "motion_comparability": true,
+  "blocking_findings": [],
+  "frozen": {
+    "manifestSHA256": "cc739d9e680f64b3fecf62e855b80caf4a7002f501eba282668a9e95758c8321",
+    "contractSHA256": "e1dbd83ca86f2c723c5ec51fc97fb85aa06236c88c628c728893005ca284380a",
+    "files": 76,
+    "bytes": 6631211,
+    "beforeFailures": [],
+    "afterFailures": [],
+    "beforeAfterRecordEquality": true
+  },
+  "browser": {
+    "session": "q6-technical-qa",
+    "closed": true,
+    "serverLeftRunning": true,
+    "stateSamples": 88,
+    "assertions": 1446,
+    "failedAssertions": [],
+    "errors": [],
+    "warnings": [],
+    "requestFailures": [],
+    "httpErrors": [],
+    "assets": 11,
+    "desktop": [
+      1440,
+      1100
+    ],
+    "mobileViewport": [
+      390,
+      844
+    ],
+    "screenshotCount": 25,
+    "contactSheetCount": 1,
+    "actualRAF": true,
+    "diagnosticAdvanceSameMotion": true
+  },
+  "geometry": {
+    "J0": {
+      "samples": 78,
+      "minOverlapCanonicalArea": 1389.25,
+      "maxOverlapCanonicalArea": 1433.75,
+      "maxGapCanonical": 0,
+      "samplesWithEnclosedHole": 0,
+      "maxEnclosedHoleCanonicalArea": 0,
+      "maxCoverageRemovedVsJ0CanonicalArea": 0,
+      "maxNearestOpaqueToAxisCanonical": 0.3535533905932738
+    },
+    "J1": {
+      "samples": 78,
+      "minOverlapCanonicalArea": 629.0,
+      "maxOverlapCanonicalArea": 1176.25,
+      "maxGapCanonical": 0,
+      "samplesWithEnclosedHole": 1,
+      "maxEnclosedHoleCanonicalArea": 0.25,
+      "maxCoverageRemovedVsJ0CanonicalArea": 571.5,
+      "maxNearestOpaqueToAxisCanonical": 0.3535533905932738
+    },
+    "J2": {
+      "samples": 78,
+      "minOverlapCanonicalArea": 629.0,
+      "maxOverlapCanonicalArea": 1176.25,
+      "maxGapCanonical": 0,
+      "samplesWithEnclosedHole": 0,
+      "maxEnclosedHoleCanonicalArea": 0,
+      "maxCoverageRemovedVsJ0CanonicalArea": 25.75,
+      "maxNearestOpaqueToAxisCanonical": 0.3535533905932738
+    },
+    "M1": {
+      "samples": 78,
+      "minOverlapCanonicalArea": 1247.0,
+      "maxOverlapCanonicalArea": 1264.25,
+      "maxGapCanonical": 0,
+      "samplesWithEnclosedHole": 0,
+      "maxEnclosedHoleCanonicalArea": 0,
+      "maxCoverageRemovedVsJ0CanonicalArea": 0.0,
+      "maxNearestOpaqueToAxisCanonical": 0.3535533905932738
+    },
+    "M2": {
+      "samples": 78,
+      "minOverlapCanonicalArea": 629.0,
+      "maxOverlapCanonicalArea": 1176.25,
+      "maxGapCanonical": 0,
+      "samplesWithEnclosedHole": 1,
+      "maxEnclosedHoleCanonicalArea": 0.25,
+      "maxCoverageRemovedVsJ0CanonicalArea": 571.5,
+      "maxNearestOpaqueToAxisCanonical": 0.3535533905932738
+    }
+  },
+  "nativeAlphaBboxesHalfOpen": {
+    "J0": {
+      "thigh": {
+        "1": [
+          3,
+          3,
+          192,
+          347
+        ],
+        "32": [
+          5,
+          5,
+          190,
+          345
+        ],
+        "128": [
+          5,
+          5,
+          189,
+          345
+        ]
+      },
+      "shin": {
+        "1": [
+          3,
+          3,
+          218,
+          451
+        ],
+        "32": [
+          5,
+          5,
+          216,
+          449
+        ],
+        "128": [
+          6,
+          5,
+          216,
+          449
+        ]
+      }
+    },
+    "J1": {
+      "thigh": {
+        "1": [
+          3,
+          3,
+          195,
+          330
+        ],
+        "32": [
+          5,
+          5,
+          193,
+          328
+        ],
+        "128": [
+          5,
+          5,
+          192,
+          328
+        ]
+      },
+      "shin": {
+        "1": [
+          3,
+          4,
+          218,
+          451
+        ],
+        "32": [
+          5,
+          6,
+          216,
+          449
+        ],
+        "128": [
+          6,
+          7,
+          216,
+          449
+        ]
+      }
+    },
+    "J2": {
+      "thigh": {
+        "1": [
+          3,
+          3,
+          195,
+          330
+        ],
+        "32": [
+          5,
+          5,
+          193,
+          328
+        ],
+        "128": [
+          5,
+          5,
+          192,
+          328
+        ]
+      },
+      "shin": {
+        "1": [
+          3,
+          4,
+          218,
+          451
+        ],
+        "32": [
+          5,
+          6,
+          216,
+          449
+        ],
+        "128": [
+          6,
+          7,
+          216,
+          449
+        ]
+      }
+    },
+    "M1": {
+      "thigh": {
+        "1": [
+          1,
+          5,
+          195,
+          350
+        ],
+        "32": [
+          3,
+          7,
+          195,
+          348
+        ],
+        "128": [
+          4,
+          7,
+          195,
+          347
+        ]
+      },
+      "shin": {
+        "1": [
+          6,
+          8,
+          219,
+          452
+        ],
+        "32": [
+          9,
+          11,
+          216,
+          450
+        ],
+        "128": [
+          9,
+          11,
+          215,
+          450
+        ]
+      }
+    },
+    "M2": {
+      "thigh": {
+        "1": [
+          3,
+          3,
+          195,
+          330
+        ],
+        "32": [
+          5,
+          5,
+          193,
+          328
+        ],
+        "128": [
+          5,
+          5,
+          192,
+          328
+        ]
+      },
+      "shin": {
+        "1": [
+          3,
+          4,
+          218,
+          451
+        ],
+        "32": [
+          5,
+          6,
+          216,
+          449
+        ],
+        "128": [
+          6,
+          7,
+          216,
+          449
+        ]
+      }
+    }
+  },
+  "provenanceAuditFailures": [],
+  "outsideMask": {
+    "M1": {
+      "rawOutsideChanged": 73608,
+      "finalOutsideChanged": 73608
+    },
+    "M2": {
+      "rawOutsideChanged": 71437,
+      "finalOutsideChanged": 0
+    }
+  },
+  "runtimeMappingOK": true,
+  "findings": [
+    {
+      "id": "T1",
+      "severity": "research-limitation",
+      "domain": "J/M",
+      "summary": "J1/M2 loses stock; original alpha>=128 coverage removed inside repair masks: thigh1688, shin260. No sampled macroscopic disconnection.",
+      "blocksShow": false
+    },
+    {
+      "id": "T2",
+      "severity": "research-limitation",
+      "domain": "J",
+      "summary": "J0 cap and M1 hollow end remain; J1 fabric improves cut-face appearance but retains rigid contour; J2 adds angular protrusion. No ideal joint established.",
+      "blocksShow": false
+    },
+    {
+      "id": "T3",
+      "severity": "presentation-limitation",
+      "domain": "camera",
+      "summary": "Fixed .84 flexion clips distal boot; knee remains visible. CSS scales entire canvas equally.",
+      "blocksShow": false
+    }
+  ],
+  "separateConclusions": {
+    "diagnostic": "Source [39,240] vs neutral [41,284] confirmed, effective layers -10/-11 retained; offset change does not remove art cap.",
+    "J": "Same motion permits comparison of actual variants. J1 changes coverage as well as cap, so pure contour-only causality is not isolated. J2 is not proven superior.",
+    "M": "Both routes use one scale/fixed crops. M2 final outside diff0 is agent compositing; raw diff71437. M1 outside diff73608. Frozen ledger supports calls2/retries0; calls not witnessed by QA."
+  },
+  "recommendation": "Stop/show. No technical correction needed to make the research comparison measurable. CTO decides after reviews/responses.",
+  "limits": [
+    "Sampled local joint only; not exhaustive command times",
+    "Coverage geometry is inverse-texture alpha sampling, not WebGL framebuffer pixel counting",
+    "No subjective naturalness, 60fps, physical correctness or production readiness claim",
+    "One case does not prove method repeatability",
+    "Ledger/raw provenance inspected; absence of unrecorded generation not independently provable"
+  ],
+  "infrastructure": [
+    "First QA CLI startup failed before navigation because expected browser revision missing; existing isolated Chromium1208 used without install",
+    "Initial shell text export damaged Cyrillic; canonical results exported as UTF8/base64 without rerunning pass",
+    "Builder reports initial CLI SyntaxError before actions; completed self-check is not substituted for independent QA"
+  ],
+  "evidence": [
+    "REPORT.md",
+    "browser-results.json",
+    "geometry-results.json",
+    "input-metrics.json",
+    "provenance-audit.json",
+    "hashes-before.json",
+    "hashes-after.json",
+    "output/playwright/",
+    "browser-pass.cjs",
+    "verify.py",
+    "geometry.py",
+    "audit-provenance.py"
+  ]
+}

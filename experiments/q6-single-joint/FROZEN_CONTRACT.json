@@ -1,0 +1,503 @@
+{
+  "schema": "r4d-q6-contract-v1",
+  "status": "FROZEN_FOR_FIRST_PASS",
+  "language": "ru",
+  "authority": {
+    "cto": "cto-r4d-01",
+    "thread": "01a1653d-1c24-7991-a16b-619bc964ca40",
+    "lead": "lead-r4d-q6-01"
+  },
+  "environment": {
+    "model": "gpt-6.1-sol",
+    "reasoning": "medium",
+    "cwd": "D:\\dev\\R4D",
+    "execution": "local",
+    "base": "f7b563db381078f90109bbf48946841809986217",
+    "origin_main_verified_by": "git rev-parse origin/main + git ls-remote origin refs/heads/main"
+  },
+  "scope": {
+    "write_root": "experiments/q6-single-joint/",
+    "subject": "Sky Courier: ближнее колено",
+    "full_passes": 1,
+    "correction": "Только отдельное решение CTO после candidate/reviews/responses; максимум одна",
+    "current_step": "Только диагностика и документы; generation/demo/browser/build/test/commit/release не разрешены этим шагом",
+    "protected": [
+      "Q1–Q5",
+      "experiments/gpt-5.6-sol/",
+      "все чужие dirty/untracked"
+    ],
+    "forbidden": [
+      "subagents",
+      "new chats/projects/worktrees/clones",
+      "UGH",
+      "Imagen",
+      "VPS",
+      "local AI",
+      "credentials/payments",
+      "release"
+    ]
+  },
+  "source": {
+    "root": "provenance/source/",
+    "sha256": {
+      "assets/parts/thigh_near.png": "358b83de204e91e8f38bc8795a776d7d8f2cae6086b5110942dffe38cdba3e24",
+      "assets/parts/shin_near.png": "40c058ad31eb09515fba32f6825ff18219ea3ba791cb424fe4208511bc4ee1e5",
+      "assets/sky_courier_master.png": "7f2c02bf682e060f90cb12336525f16075d2197fe03b3df4dec077134d7574d2",
+      "assets/manifest.json": "ac31a40968bcb2e56dad790ef91acb82007f4ce293341521abb53f6169964664",
+      "src/rig.ts": "6ceae9d3d40cded7bb058f989bc1568e2de7eaf9e5eb2dad40d266a25d92a2e8",
+      "src/animation.ts": "3bc5f2f3af071ba157bd55db7e66da06c58874609787f358e899aedb8084de0f"
+    },
+    "thigh_size": [
+      195,
+      350
+    ],
+    "shin_size": [
+      221,
+      454
+    ],
+    "master_size": [
+      412,
+      1459
+    ]
+  },
+  "diagnosis": {
+    "source_facts": {
+      "thigh_pivot": [
+        98,
+        35
+      ],
+      "declared_knee_on_thigh": [
+        139,
+        319
+      ],
+      "shin_pivot": [
+        102,
+        28
+      ],
+      "declared_layers": {
+        "thigh": -10,
+        "shin": -9
+      },
+      "effective_runtime_layers": {
+        "thigh": -10,
+        "shin": -11
+      },
+      "thigh_root_offset": [
+        -56,
+        1
+      ],
+      "runtime_child_offset": [
+        39,
+        240
+      ],
+      "runtime_thigh_length": 287,
+      "source_stage_scale": 0.42
+    },
+    "verified_geometry": {
+      "declared_child_offset": [
+        41,
+        284
+      ],
+      "runtime_joint_on_thigh_image": [
+        137,
+        275
+      ],
+      "runtime_minus_declared": [
+        -2,
+        -44
+      ],
+      "declared_length": 286.9442454554543,
+      "runtime_offset_length": 243.14810301542556,
+      "screen_error_at_scale_0_42": [
+        -0.84,
+        -18.48
+      ]
+    },
+    "finding": "Runtime игнорирует childJointPx и использует собственные bones. Это доказанное несоответствие заявленному сочленению; не доказательство всей причины визуального дефекта. Runtime layer override согласуется с rigNotes: shin cap behind thigh. Замкнутые тёмные торцы видны в исходных PNG независимо от трансформаций.",
+    "pivot_limit": "Оба pivot внутри непрозрачного арта. Shin pivot не совпадает с визуальным центром наклонного торца; по PNG нельзя однозначно восстановить физическую ось. Не менять его субъективным подбором. Заморожена семантика source pivot, а не заявление об анатомически идеальной оси.",
+    "evidence": "Просмотр исходных PNG, чтение manifest/rig/animation, численный анализ alpha; собранный кадр/движение на этом шаге НЕ проверялись.",
+    "source_diagnostic_baseline": {
+      "textures": "J0 originals",
+      "child_offset": [
+        39,
+        240
+      ],
+      "layers": {
+        "thigh": -10,
+        "shin": -11
+      },
+      "purpose": "Отдельный diagnostic view до/после offset; не вариант оформления. Допустим declared-layer overlay -9 как иллюстрация различия, не новая художественная ветка."
+    }
+  },
+  "rig": {
+    "id": "q6-neutral-v1",
+    "coordinates": "+X right,+Y down; degrees clockwise; no depth/mirror",
+    "thigh": {
+      "pivot": [
+        98,
+        35
+      ],
+      "root_offset": [
+        -56,
+        1
+      ],
+      "layer": -10,
+      "scale": [
+        1,
+        1
+      ]
+    },
+    "shin": {
+      "pivot": [
+        102,
+        28
+      ],
+      "parent": "thigh",
+      "child_offset": [
+        41,
+        284
+      ],
+      "layer": -11,
+      "scale": [
+        1,
+        1
+      ]
+    },
+    "attachment_formula": "shin world pivot = thigh world pivot + R(thigh world angle)*[41,284]; texture point maps by R(angle)*(pixel-pivot). No bone-length normalization/scaling.",
+    "overlay": {
+      "canvas": [
+        221,
+        454
+      ],
+      "pivot": [
+        102,
+        28
+      ],
+      "parent": "shin",
+      "offset": [
+        0,
+        0
+      ],
+      "layer": -8,
+      "allowed_alpha_bbox_half_open": [
+        45,
+        0,
+        155,
+        110
+      ]
+    },
+    "no_variant_compensation": true
+  },
+  "presentation": {
+    "target_scale": 0.42,
+    "diagnostic_zoom": 2,
+    "zoom_scale": 0.84,
+    "scale_rule": "Один выбранный zoom для всех панелей; никакого fit-to-alpha/auto-center по варианту",
+    "panel_css_size": [
+      440,
+      660
+    ],
+    "hip_screen_at_target": [
+      210,
+      185
+    ],
+    "hip_screen_at_zoom": [
+      210,
+      80
+    ],
+    "camera": "fixed per zoom, identical panel-relative camera for all variants",
+    "backgrounds": [
+      "#e8e3d9",
+      "#20252d"
+    ],
+    "panels": [
+      "J0/J1/J2 simultaneously",
+      "M1/M2 simultaneously; target J1",
+      "single panel switch same clock; source-vs-neutral diagnostic J0"
+    ],
+    "controls": [
+      "state request at arbitrary time",
+      "pause",
+      "step 1/60 s",
+      "reset bind",
+      "light/dark",
+      "target/diagnostic zoom",
+      "bones/pivots/layers"
+    ],
+    "readout": [
+      "clock",
+      "requested state",
+      "interpolation fraction",
+      "root x/y/angle",
+      "thigh world x/y/angle/scale",
+      "shin world x/y/angle/scale",
+      "texture pivots",
+      "layers",
+      "exact transform equality across panels, excluding panel origin and intentional J2 overlay"
+    ]
+  },
+  "motion": {
+    "units": "degrees; root x/y canonical pixels relative to root origin",
+    "clock": "one shared clock and pose object, no per-panel controller",
+    "interpolator": "source smoothstep t*t*(3-2*t), duration 0.38 seconds for every retarget; capture current interpolated pose, no reset; source evidence in provenance/source/src/animation.ts",
+    "step_seconds": 0.016666666666666666,
+    "reset": "clock=0, bind, pause",
+    "pose_matrix": [
+      {
+        "id": "bind",
+        "root": [
+          0,
+          0,
+          0
+        ],
+        "thigh_deg": 0,
+        "shin_relative_deg": 0
+      },
+      {
+        "id": "extreme_extension",
+        "root": [
+          0,
+          0,
+          0
+        ],
+        "thigh_deg": 0,
+        "shin_relative_deg": -8
+      },
+      {
+        "id": "extreme_flexion",
+        "root": [
+          0,
+          0,
+          0
+        ],
+        "thigh_deg": 0,
+        "shin_relative_deg": 92
+      },
+      {
+        "id": "step_overlap",
+        "root": [
+          0,
+          -5,
+          -4
+        ],
+        "thigh_deg": -0.5,
+        "shin_relative_deg": 46,
+        "source": "walk phase .79: midpoint swing, root doubleStep=-1 approximately; frozen root=-5 is declared local sample, not exact full-body playback"
+      },
+      {
+        "id": "jump_phase",
+        "root": [
+          0,
+          -151,
+          0
+        ],
+        "thigh_deg": -43,
+        "shin_relative_deg": 80,
+        "source": "jumpAir phase .5 target, source values before blending"
+      }
+    ],
+    "play": "shared ping-pong interpolation between selected pose and bind, 0.38 s each direction; pose request anytime retargets from current pose; pause samples preserved; extremes and intermediate motion always available",
+    "limits": "Local joint experiment, no full jump physics, ground/contact promise or new full-character states; sample targets are not proof of source real-time naturalness"
+  },
+  "atlas_contract": {
+    "normalized_canvas": [
+      512,
+      512
+    ],
+    "coordinate_rule": "all rectangles [x0,y0,x1,y1), pixel coordinates; transparent RGBA",
+    "slots": {
+      "thigh": {
+        "slot": [
+          0,
+          0,
+          256,
+          512
+        ],
+        "source_placement": [
+          30,
+          70
+        ],
+        "crop": [
+          30,
+          70,
+          225,
+          420
+        ],
+        "output_canvas": [
+          195,
+          350
+        ],
+        "pivot_on_atlas": [
+          128,
+          105
+        ]
+      },
+      "shin": {
+        "slot": [
+          256,
+          0,
+          512,
+          512
+        ],
+        "source_placement": [
+          272,
+          30
+        ],
+        "crop": [
+          272,
+          30,
+          493,
+          484
+        ],
+        "output_canvas": [
+          221,
+          454
+        ],
+        "pivot_on_atlas": [
+          374,
+          58
+        ]
+      }
+    },
+    "alignment": "Normalize entire raw canvas to 512x512 by ONE uniform scale only if aspect ratio is exactly 1:1, origin [0,0]. Reject non-square as route failure; preserve raw. Exact fixed crops only, no independent part scale/translation/rotation, no bbox fitting, no compensation. Same rule M1/M2.",
+    "hidden_repair_masks": {
+      "thigh_native_rect": [
+        70,
+        260,
+        195,
+        350
+      ],
+      "shin_native_rect": [
+        0,
+        0,
+        150,
+        100
+      ],
+      "thigh_atlas_rect": [
+        100,
+        330,
+        225,
+        420
+      ],
+      "shin_atlas_rect": [
+        272,
+        30,
+        422,
+        130
+      ],
+      "mask_values": "binary 255 editable, 0 protected; no feather",
+      "meaning": "Заранее объявленные коленные зоны: ложные торцы/внутренние срезы и скрытое продолжение. Это зоны ремонта, а не утверждение, что каждый их пиксель скрыт в каждой позе. Все правильные пиксели вне этих зон защищены. Проксимальное бедро/ботинок/остальная одежда не меняются."
+    }
+  },
+  "variants": {
+    "J0": {
+      "source": "provenance/source/assets/parts/",
+      "output": "art/J0/",
+      "method": "byte-identical source PNGs, dark caps retained; neutral rig"
+    },
+    "J1": {
+      "source": "M2 composited result only",
+      "output": "art/J1/",
+      "design": "same cloth; full hidden continuation inside fixed knee masks; open internal boundary, no accidental closed dark ellipse; no blur-as-fix",
+      "failure": "If M2 fails, keep its best single raw/composite and label failure. No substitution by M1 and no extra generation."
+    },
+    "J2": {
+      "source": "exact J1 thigh+shin plus separate kneepad overlay",
+      "output": "art/J2/",
+      "underlay": "byte-identical J1 files, no enlarged hidden stock only for J2",
+      "design": "Осмысленный тканевый наколенник с ремнями/строчкой, согласованный с master; не круг-пластырь. Отдельный RGBA слой на shin.",
+      "manufacture": "Без дополнительного image_gen: извлечь существующий художественный мотив наколенной детали из master (reference crop [139,920,278,1090]); удалить окружающий фон alpha-маской, uniform scale 0.48, положить crop top-left [68,0] на overlay canvas 221x454. Сохранить exact alpha selection, crop и transform. Если мотив/покрытие неудовлетворительны, сохранить и назвать ограничение; не менять контракт/rig."
+    }
+  },
+  "methods": {
+    "design": "J1 for both, no kneepad",
+    "M1": {
+      "route": "atlas-first",
+      "calls": 1,
+      "input": "master + fixed layout/reference knee source",
+      "output": "art/M1/",
+      "process": "Одна генерация локального mini-atlas двух полных деталей в заданных slots; те же материал/hidden/open-boundary target; допускается дрейф вне зоны, но он измеряется. Не вырезать из результата только успешный участок и не восстанавливать originals как M2."
+    },
+    "M2": {
+      "route": "visible-first repair",
+      "calls": 1,
+      "input": "master + fixed source mini-atlas + binary mask/reference; actual mask API only if exposed by tool",
+      "output": "art/M2/",
+      "process": "Одна операция встроенного image_gen. Маска как отдельный reference, если API не принимает mask. После fixed normalization/crops: внутри mask использовать raw route pixels; ВНЕ mask восстановить original RGBA побайтно. Guidance не выдавать за точную гарантию инструмента.",
+      "outside_mask_required_changed_rgba_pixels": 0
+    },
+    "allowed_generator": "built-in OpenAI image_gen only",
+    "total_primary_generation_calls": 2,
+    "retries": 0,
+    "not_allowed": "No third generation for J2, no per-route alignment optimization; generation forbidden until next authorized production dispatch",
+    "record": [
+      "prompt verbatim",
+      "ordered refs + hashes",
+      "actual exposed tool args, generator model unknown if hidden",
+      "call count and failures",
+      "raw output unchanged",
+      "normalized output",
+      "input/layout/masks",
+      "fixed transform/crops",
+      "raw outside-mask RGBA diff",
+      "final outside-mask RGBA diff",
+      "visible alpha/silhouette/material drift",
+      "preparation effort and decisions"
+    ]
+  },
+  "criteria": {
+    "joint": [
+      "holes/cut edge at extremes and during interpolation",
+      "dark internal line/double contour",
+      "material/silhouette continuity",
+      "coherent intentional pad design J2",
+      "effect visible at scale .42 and .84 on both backgrounds"
+    ],
+    "method": [
+      "same J1 design target",
+      "outside-mask changed RGBA pixels and max channel delta, raw vs final",
+      "generated hidden coverage",
+      "layout/pivot registration failure retained",
+      "one call cost, processing and manual choices"
+    ],
+    "separation": "Rig diagnostic conclusions, J-design comparison and M-method comparison reported separately. No claiming universal superiority from this fragment."
+  },
+  "routing": {
+    "Lead": [
+      "BRIEF.md",
+      "FROZEN_CONTRACT.json",
+      "FROZEN_CONTRACT.sha256",
+      "coordination/HANDOFF.md",
+      "provenance/source/**"
+    ],
+    "Artist": [
+      "process/M1/**",
+      "process/M2/**",
+      "process/J2/**",
+      "art/J0/**",
+      "art/J1/**",
+      "art/J2/**",
+      "art/M1/**",
+      "art/M2/**",
+      "ART_REVIEW.md",
+      "coordination/artist-response.md"
+    ],
+    "Builder": [
+      "src/**",
+      "public/**",
+      "index.html",
+      "package.json",
+      "package-lock.json",
+      "vite.config.*",
+      "output/builder/**",
+      "CANDIDATE.md",
+      "coordination/builder-response.md"
+    ],
+    "QA": [
+      "qa/technical/**",
+      "qa/visual/**"
+    ],
+    "delivery_rule": "No message/hire by this document; recipients assigned by CTO. Builder reads art as immutable inputs; public/art can contain exact copies with hash mapping only. Artist never edits frozen contract or src. No writer touches protected roots."
+  },
+  "handoff_gate": "Этот документ замораживает контракт, но не разрешает текущему Lead начать генерацию/демо/QA. CTO получает результат шага и назначает следующий старт. После candidate freeze reviews -> responses -> CTO decision. Release forbidden; future route /review/r4d/q6-single-joint/."
+}

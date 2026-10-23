@@ -1,0 +1,111 @@
+{
+  "checks": [
+    {
+      "name": "exact native mask thigh",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "name": "exact native mask shin",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "name": "exact source atlas placements",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "name": "exact atlas mask rectangles",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "name": "M1 square raw",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "name": "M1 exact single-scale normalization",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "name": "M1 exact fixed crop thigh",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "name": "M1 exact fixed crop shin",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "name": "M1 no exposed mask API",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "name": "M1 transparent request",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "name": "M1 prompt preserved",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "name": "M2 square raw",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "name": "M2 exact single-scale normalization",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "name": "M2 exact composite",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "name": "M2 exact fixed crop thigh",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "name": "M2 exact fixed crop shin",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "name": "M2 no exposed mask API",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "name": "M2 transparent request",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "name": "M2 prompt preserved",
+      "ok": true,
+      "detail": null
+    }
+  ],
+  "failures": [],
+  "diffs": {
+    "M1": {
+      "rawOutsideChanged": 73608,
+      "finalOutsideChanged": 73608
+    },
+    "M2": {
+      "rawOutsideChanged": 71437,
+      "finalOutsideChanged": 0
+    }
+  },
+  "callCountEvidence": "Frozen ledger: M1=1, M2=1, J2=0, retries=0. Both raw files match recorded local generated-image outputs. This is an audit of provided evidence, not direct observation of tool calls or a proof that no unrecorded call exists."
+}
