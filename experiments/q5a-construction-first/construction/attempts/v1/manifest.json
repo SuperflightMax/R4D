@@ -1,0 +1,73 @@
+{
+  "attempt": "v1",
+  "status": "REJECTED_CHANGES_REQUIRED",
+  "immutable": true,
+  "date": "2026-10-25",
+  "files": [
+    {
+      "file": "build_package.py",
+      "original_path": "experiments/q5a-construction-first/construction/build_package.py",
+      "bytes": 23525,
+      "sha256": "b7e96752b1b3645a55d789b97e47a894e60f53a944a50f8aed19b2f857849dda"
+    },
+    {
+      "file": "construction.json",
+      "original_path": "experiments/q5a-construction-first/construction/construction.json",
+      "bytes": 933453,
+      "sha256": "55a78cbc0fe856eeac2fb899dcd160bdcd44c41b5a57822574a1cd49947fb965"
+    },
+    {
+      "file": "target.svg",
+      "original_path": "experiments/q5a-construction-first/construction/target.svg",
+      "bytes": 6105,
+      "sha256": "9e11a1ea016fc4dbe52c16aaceb922911221ffff6854ee8add2aa2d4c1df50e5"
+    },
+    {
+      "file": "poses.svg",
+      "original_path": "experiments/q5a-construction-first/construction/poses.svg",
+      "bytes": 107683,
+      "sha256": "c370ebf9a7d2d2611e406e564a1e2d3ea34028d1889afd6409d1f591f8e066d6"
+    },
+    {
+      "file": "poses.png",
+      "original_path": "experiments/q5a-construction-first/construction/poses.png",
+      "bytes": 80054,
+      "sha256": "f9210cd2274f9cdac519d3f2ff79f4032f8f70b2100fccf7479a8d45ef0fcb29"
+    },
+    {
+      "file": "diagnostic.svg",
+      "original_path": "experiments/q5a-construction-first/construction/diagnostic.svg",
+      "bytes": 6527,
+      "sha256": "ca15da25e88979b1179354768ead17fe8080e69832ad7824223212f3a112b2ab"
+    },
+    {
+      "file": "diagnostic.png",
+      "original_path": "experiments/q5a-construction-first/construction/diagnostic.png",
+      "bytes": 14776,
+      "sha256": "42f2caa1aeb9504116aeea57c28856efa39d12ae7ee5532b2cbc4b5b303e1fc1"
+    },
+    {
+      "file": "bind-registration.svg",
+      "original_path": "experiments/q5a-construction-first/construction/bind-registration.svg",
+      "bytes": 6071,
+      "sha256": "27c5dfa99dc1ee550f27a0d7e9c021d8afa0186f4823ec974f236e6c35209867"
+    },
+    {
+      "file": "CONSTRUCTION.md",
+      "original_path": "experiments/q5a-construction-first/CONSTRUCTION.md",
+      "bytes": 39511,
+      "sha256": "d025481f37f7aad0dd952a76932be566fdccef3ee21c23edf6a3dfa625f81d5b"
+    }
+  ],
+  "reviewed_json_sha256": "55a78cbc0fe856eeac2fb899dcd160bdcd44c41b5a57822574a1cd49947fb965",
+  "rejections": {
+    "A1": "Shoulder root geometry rotated from arm normal; recorded chest weight did not affect shown geometry or armhole.",
+    "A2_C1": "Pelvis shorts had a protruding angular rear flap/notch and step into thigh; average knee flex did not describe independent hip seating.",
+    "A3": "Fold coalesced vertices with different UVs and removed triangles, without explicit immutable UV correspondence, hidden strip or texture visibility contract.",
+    "C2": "In bind/idle far forearm was occluded by torso, leaving hand appearing to originate at pelvis; also check walk_near_pass."
+  },
+  "review_files": {
+    "CONSTRUCTION_ART_REVIEW.md": "6f084d22fc0590d5690837d6292f1e281d1f62425ef7c11a60c8bf31d2572274",
+    "CONSTRUCTION_CONCEPT_REVIEW.md": "57c614f600448219d1cb531e8127e2c5b43711fed9299ad2696fdc43aea47252"
+  }
+}
