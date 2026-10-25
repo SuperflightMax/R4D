@@ -41,3 +41,10 @@
 - Asset Artist завершил подготовительный разбор и ждёт exact commits эталона/шаблона; вход подтвердил как 1536×1536, SHA-256 `F5CFA2BBE8E4B49ECBC0F4C7A0CEE99842B182B56AE495979153B8FC9FF86E32`.
 - Visual QA получил поручение зафиксировать rubric v0.1 до кандидатов; после этого ждёт exact Builder v1 и Asset d1.
 - Всем шести сотрудникам доставлены адресные гейты и формат ближайшей передачи.
+
+## Полученные версии и решения
+
+- Lead dependency plan: `72464d892a4dd4fee6de3a81723139dfee9dcac8`, опубликован в `origin/codex/r4d-p0-perspective-lead-01`.
+- Visual QA rubric v0.1: `21150e583311e8688146a27fa48aaa8c41c8aaa8`, `experiments/p0-perspective/qa/visual/RUBRIC_V0.1.md`. Зафиксирован до просмотра кандидатов; PASS не заявлен, продукт не менялся.
+- Release route: отдельная страница `https://superflight.space/review/r4d/p0-perspective/` внутри существующего Review. Новая инфраструктура, права и credentials не нужны. Публикация заблокирована до accepted 40-символьного candidate commit, frozen self-contained route tree, allowlist/manifest и данных карточки. До этого Release Engineer ничего не публикует.
+- Research v0.1, concept v0.1, Builder v1 и Asset d1 пока не получены; их незакоммиченные рабочие состояния не считаются checkpoint.
