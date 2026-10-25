@@ -86,3 +86,9 @@ CTO принял FAIL04 и закрыл 2root+1hem/mapping03. Поручение
 ### Whole-v03 — новая цельная попытка разрешена
 
 CTO разрешил новый whole-source внутри той же Q4A. Поручение/владение — `WHOLE_V03.md` (Lead). Сохраняются идентичность Мирона/палитра, но свободные шорты заменяются pelvis-only fitted briefs/trunks с открытыми верхами бёдер. Сначала короткий совместный PREGEN Concept/Asset/Builder, затем одна цельная генерация/edit и три личных source reviews. До accepted whole и отдельного следующего CTO решения никакой нарезки/rig/full parts/motion/QA/release/Q2A. v01/v02 и evidence01–05 frozen.
+
+### Whole-v03: первый source POSE_FAIL, correction01 OUTPUT_BLOCKED_NO_RAW
+
+PREGEN троих завершён/pushed `6fe28c5`; первый full raw-v03/три фона/три личных reviews сохранены/pushed `90a9902`. Identity/art, pelvis-only briefs и ракурс принимаются, но ближняя рука перекрывает майку и подошвы различаются на20 px: source gate FAIL по позе. Lead назначил разрешённую CTO одну whole correction, сохранив исходную попытку.
+
+Единственный correction edit отклонён imagegen: HTTP400 `moderation_blocked`, output stage, категория sexual. Нового raw/фоновых диагностик нет; художественный correction review не выполнен. Prompt/условия сохранены; автоматических повторов/обхода не было. Прежний raw не подменён исправленным. Accepted source нет, slicing/rig/parts/motion/QA/release/Q2A закрыты. Точный пакет и передача CTO — в `WHOLE_V03.md`; новое действие ждёт предметного CTO решения, старые данные/чужие материалы неизменны.
