@@ -1,0 +1,96 @@
+{
+  "details": {
+    "captures": 39,
+    "phases": [
+      "ground",
+      "landing",
+      "prepare",
+      "push"
+    ],
+    "max_inversions": 0,
+    "max_webgl_error": 0
+  },
+  "environment": {
+    "captures": 0,
+    "phases": []
+  },
+  "framing-desktop": {
+    "captures": 21,
+    "phases": [
+      "flight"
+    ],
+    "max_inversions": 0,
+    "max_webgl_error": 0
+  },
+  "framing-mobile": {
+    "captures": 21,
+    "phases": [
+      "flight"
+    ],
+    "max_inversions": 0,
+    "max_webgl_error": 0
+  },
+  "jumps": {
+    "captures": 69,
+    "phases": [
+      "flight",
+      "ground",
+      "landing",
+      "prepare",
+      "push"
+    ],
+    "max_inversions": 0,
+    "max_webgl_error": 0
+  },
+  "mobile-slow": {
+    "captures": 0,
+    "phases": []
+  },
+  "mobile-transitions": {
+    "captures": 41,
+    "phases": [
+      "ground",
+      "prepare"
+    ],
+    "max_inversions": 0,
+    "max_webgl_error": 0,
+    "pause": {
+      "before": 3996,
+      "after": 3996,
+      "stepped": 3998
+    }
+  },
+  "mobile": {
+    "captures": 76,
+    "phases": [
+      "flight",
+      "ground",
+      "landing",
+      "prepare",
+      "push"
+    ]
+  },
+  "regressions": {
+    "captures": 29,
+    "phases": [
+      "ground",
+      "prepare"
+    ],
+    "max_inversions": 0,
+    "max_webgl_error": 0
+  },
+  "transitions": {
+    "captures": 41,
+    "phases": [
+      "ground",
+      "prepare"
+    ],
+    "max_inversions": 0,
+    "max_webgl_error": 0,
+    "pause": {
+      "before": 3996,
+      "after": 3996,
+      "stepped": 3998
+    }
+  }
+}

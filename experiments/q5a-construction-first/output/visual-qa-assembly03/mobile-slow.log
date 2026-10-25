@@ -1,0 +1,6 @@
+### Result
+{"tick":362,"phase":"flight","rate":".1"}
+### Ran Playwright code
+```js
+await (async(page)=>{await page.locator('#speed').selectOption('.1');await page.getByRole('button',{name:'Присед',exact:true}).click();await page.locator('#pause').click();await page.waitForTimeout(900);await page.locator('#pause').click();await page.evaluate(()=>scrollTo(0,0));await page.screenshot({path:'D:/dev/R4D/experiments/q5a-construction-first/output/visual-qa-assembly03/mobile-slow-viewport.png'});return await page.evaluate(()=>({tick:q5a.motion.tick,phase:q5a.motion.phase,rate:document.querySelector('#speed').value}));})(page);
+```

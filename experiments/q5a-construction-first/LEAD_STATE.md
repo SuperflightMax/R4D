@@ -7,6 +7,20 @@
 
 ## Текущее положение
 
+**CTO_ACCEPTED — QA_GATES_CLOSED — PENDING_RELEASE_ENGINEER_PUBLICATION.** CTO `cto-r4d-01` прямым сообщением в эту сессию принял `Q5A-NELA-ASSEMBLY-03` для PoC release, без блокеров. Формальная запись — [CTO_ACCEPTANCE_ASSEMBLY03.md](CTO_ACCEPTANCE_ASSEMBLY03.md). Exact frozen production: `101343caa68579aacd5e6c01b94206680c364ab7`; exact независимая QA base: `0f032c21f555473aca7c61960a8c563d2440fc97`.
+
+- [TECHNICAL_QA_ASSEMBLY03.md](TECHNICAL_QA_ASSEMBLY03.md): **TECHNICAL_QA_PASS**.
+- [VISUAL_QA_ASSEMBLY03.md](VISUAL_QA_ASSEMBLY03.md): **VISUAL_QA_PASS**.
+- Art/motion gate ранее закрыт Asset+Concept PASS. Исторические отрицательные verdict и evidence сохранены.
+
+CTO принял VQ03-UI1 — слабую читаемость служебного dark badge «Можно управлять» — как non-blocking limitation **без нового correction cycle**. Ограничения Chrome/mobile emulation, конечного набора проверок и PoC scope явно сохранены в acceptance; широкая совместимость или универсальный производственный рецепт не заявляются.
+
+Closeout Lead: прочитаны оба отчёта, совпали exact commits и однозначные verdict, проверено существование всех 25 Markdown-ссылок, прочитаны основные QA results/scope/cleanup. До обновления state все **2258** прежних Q5A-файлов побайтно совпали с QA base; production diff=none, scope/история не меняются. Lead подтвердил отсутствие listener5194/5195; cleanup фиксирует закрытие собственных браузеров/серверов QA. Новые Technical/Visual evidence сохраняются, а `.playwright-cli`, visual `service/` и `service-mobile/`, browser profile/cache dirs исключаются без удаления. Локальные evidence `.gitignore` фиксируют эту границу.
+
+Этот ход только сохраняет QA, формальную приёмку CTO, evidence и state. Новые проверки продукта/генерация/исправления не запускались. **Release не начат; ожидается отдельная публикация Release Engineer. Q4A/Q2A не стартовали.**
+
+## История закрытия art/motion gate
+
 **ASSEMBLY03_FROZEN — ART_MOTION_GATE_CLOSED — READY_FOR_INDEPENDENT_TECHNICAL_AND_VISUAL_QA.** Production frozen commit: `101343caa68579aacd5e6c01b94206680c364ab7`, `Q5A-NELA-ASSEMBLY-03`. Оба существующих художника завершили адресный независимый личный re-review:
 
 - [ARTIST_MOTION_REREVIEW_ASSEMBLY03.md](ARTIST_MOTION_REREVIEW_ASSEMBLY03.md) — **ARTIST_MOTION_PASS**, AM-A1 закрыт.
@@ -136,4 +150,4 @@ python experiments/q5a-construction-first/construction/attempts/v1/build_package
 
 ## Следующий шаг
 
-Art/motion gate закрыт двумя независимыми PASS на frozen assembly03. Следующий шаг — независимые Technical QA и Visual QA существующими специалистами на конкретной замороженной версии по отдельной выдаче CTO. Они ещё not started; этот closeout не отправляет поручений и не запускает проверки. Прежние отрицательные review остаются историей assembly02. Внешняя публикация — отдельный release-шаг после CTO acceptance; окончательную приёмку и решение об остановке принимает CTO. Release и Q4A/Q2A не начаты.
+CTO принял Q5A для PoC release, art/motion и обе QA gates закрыты. Ожидается отдельная публикация Release Engineer в существующем Review; этот ход её не запускает и не подтверждает публичную доступность. Старые результаты сохраняются. Переход к Q4A/Q2A требует дальнейшей выдачи CTO и пока не начат.

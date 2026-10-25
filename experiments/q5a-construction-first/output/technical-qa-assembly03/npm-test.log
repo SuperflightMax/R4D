@@ -1,0 +1,1934 @@
+
+> test
+> node assembly/tests.mjs
+
+{
+  "result": "PASS",
+  "candidate": "Q5A-NELA-ASSEMBLY-03",
+  "static_v4_poses": 19,
+  "max_vertex_error": 1.1368683772161603e-13,
+  "scenarios": [
+    {
+      "index": 0,
+      "commands": [
+        [
+          0,
+          "low"
+        ],
+        [
+          1.2,
+          "walk"
+        ],
+        [
+          3,
+          "idle"
+        ],
+        [
+          4,
+          "jump"
+        ]
+      ],
+      "phases": [
+        "ground",
+        "prepare",
+        "push",
+        "flight",
+        "landing"
+      ],
+      "events": [
+        {
+          "tick": 541,
+          "event": "takeoff",
+          "vy": 480,
+          "vx": 0.020416211781275423
+        },
+        {
+          "tick": 651,
+          "event": "landing",
+          "target": "idle"
+        },
+        {
+          "tick": 687,
+          "event": "recover",
+          "target": "idle"
+        }
+      ],
+      "reach_constraints": 0,
+      "final": "idle"
+    },
+    {
+      "index": 1,
+      "commands": [
+        [
+          0,
+          "walk"
+        ],
+        [
+          1.2,
+          "low"
+        ],
+        [
+          2,
+          "jump"
+        ],
+        [
+          2.65,
+          "walk"
+        ],
+        [
+          4.8,
+          "jump"
+        ],
+        [
+          5.5,
+          "low"
+        ]
+      ],
+      "phases": [
+        "ground",
+        "prepare",
+        "push",
+        "flight",
+        "landing"
+      ],
+      "events": [
+        {
+          "tick": 301,
+          "event": "takeoff",
+          "vy": 480,
+          "vx": 0.07273430481209403
+        },
+        {
+          "tick": 411,
+          "event": "landing",
+          "target": "walk"
+        },
+        {
+          "tick": 447,
+          "event": "recover",
+          "target": "walk"
+        },
+        {
+          "tick": 639,
+          "event": "takeoff",
+          "vy": 480,
+          "vx": 67.99837200408591
+        },
+        {
+          "tick": 749,
+          "event": "landing",
+          "target": "low"
+        },
+        {
+          "tick": 785,
+          "event": "recover",
+          "target": "low"
+        }
+      ],
+      "reach_constraints": 0,
+      "final": "low"
+    },
+    {
+      "index": 2,
+      "commands": [
+        [
+          0,
+          "low"
+        ],
+        [
+          0.07,
+          "walk"
+        ],
+        [
+          1.2,
+          "idle"
+        ],
+        [
+          1.4,
+          "low"
+        ],
+        [
+          1.48,
+          "jump"
+        ],
+        [
+          2,
+          "low"
+        ]
+      ],
+      "phases": [
+        "ground",
+        "prepare",
+        "push",
+        "flight",
+        "landing"
+      ],
+      "events": [
+        {
+          "tick": 239,
+          "event": "takeoff",
+          "vy": 480,
+          "vx": 1.7422805674287012
+        },
+        {
+          "tick": 349,
+          "event": "landing",
+          "target": "low"
+        },
+        {
+          "tick": 385,
+          "event": "recover",
+          "target": "low"
+        }
+      ],
+      "reach_constraints": 0,
+      "final": "low"
+    },
+    {
+      "index": 3,
+      "commands": [
+        [
+          0,
+          "jump"
+        ],
+        [
+          0.6,
+          "walk"
+        ],
+        [
+          0.72,
+          "idle"
+        ],
+        [
+          0.85,
+          "low"
+        ]
+      ],
+      "phases": [
+        "prepare",
+        "push",
+        "flight",
+        "landing",
+        "ground"
+      ],
+      "events": [
+        {
+          "tick": 61,
+          "event": "takeoff",
+          "vy": 480,
+          "vx": 0
+        },
+        {
+          "tick": 171,
+          "event": "landing",
+          "target": "low"
+        },
+        {
+          "tick": 207,
+          "event": "recover",
+          "target": "low"
+        }
+      ],
+      "reach_constraints": 0,
+      "final": "low"
+    },
+    {
+      "index": 4,
+      "commands": [
+        [
+          0,
+          "walk"
+        ],
+        [
+          0.3,
+          "jump"
+        ],
+        [
+          0.7,
+          "walk"
+        ],
+        [
+          1.3,
+          "low"
+        ],
+        [
+          2.4,
+          "walk"
+        ],
+        [
+          3.2,
+          "stop"
+        ]
+      ],
+      "phases": [
+        "ground",
+        "prepare",
+        "push",
+        "flight",
+        "landing"
+      ],
+      "events": [
+        {
+          "tick": 97,
+          "event": "takeoff",
+          "vy": 480,
+          "vx": 66.42060229526824
+        },
+        {
+          "tick": 207,
+          "event": "landing",
+          "target": "low"
+        },
+        {
+          "tick": 243,
+          "event": "recover",
+          "target": "low"
+        }
+      ],
+      "reach_constraints": 0,
+      "final": "idle"
+    },
+    {
+      "index": 5,
+      "commands": [
+        [
+          0,
+          "walk"
+        ],
+        [
+          2,
+          "stop"
+        ],
+        [
+          4,
+          "idle"
+        ],
+        [
+          4.2,
+          "low"
+        ],
+        [
+          4.5,
+          "idle"
+        ]
+      ],
+      "phases": [
+        "ground"
+      ],
+      "events": [],
+      "reach_constraints": 0,
+      "final": "idle"
+    },
+    {
+      "index": 6,
+      "commands": [
+        [
+          0,
+          "walk"
+        ],
+        [
+          0.2988170156837441,
+          "low"
+        ],
+        [
+          0.44749734975397587,
+          "stop"
+        ],
+        [
+          0.6003227586043067,
+          "walk"
+        ],
+        [
+          0.9724343113414944,
+          "walk"
+        ],
+        [
+          1.4491361956135371,
+          "walk"
+        ],
+        [
+          1.6177237658388914,
+          "walk"
+        ],
+        [
+          1.9168655884754846,
+          "walk"
+        ],
+        [
+          2.2043492682650685,
+          "idle"
+        ],
+        [
+          2.3620757905603385,
+          "walk"
+        ],
+        [
+          2.493103862889111,
+          "idle"
+        ],
+        [
+          2.856726158831734,
+          "jump"
+        ],
+        [
+          3.158300334084779,
+          "idle"
+        ],
+        [
+          3.5470310732559303,
+          "low"
+        ],
+        [
+          4.0301521114818755,
+          "stop"
+        ],
+        [
+          4.110911032382865,
+          "stop"
+        ],
+        [
+          4.1922115481644875,
+          "walk"
+        ],
+        [
+          4.271389793849085,
+          "idle"
+        ],
+        [
+          4.394939790666104,
+          "jump"
+        ],
+        [
+          4.597480528552552,
+          "stop"
+        ],
+        [
+          4.896169959511609,
+          "low"
+        ],
+        [
+          5.1712914572493185,
+          "idle"
+        ],
+        [
+          5.343912859056146,
+          "walk"
+        ],
+        [
+          5.572268938322087,
+          "jump"
+        ],
+        [
+          5.9666419353708635,
+          "low"
+        ],
+        [
+          6.256683475470637,
+          "walk"
+        ],
+        [
+          6.50088170092553,
+          "walk"
+        ],
+        [
+          6.96265161407413,
+          "idle"
+        ],
+        [
+          7.415611344818027,
+          "stop"
+        ],
+        [
+          7.728174194975291,
+          "low"
+        ],
+        [
+          7.847682747300715,
+          "low"
+        ],
+        [
+          8.07185893443646,
+          "walk"
+        ]
+      ],
+      "phases": [
+        "ground",
+        "prepare",
+        "push",
+        "flight",
+        "landing"
+      ],
+      "events": [
+        {
+          "tick": 404,
+          "event": "takeoff",
+          "vy": 480,
+          "vx": 0.8046769354503768
+        },
+        {
+          "tick": 514,
+          "event": "landing",
+          "target": "idle"
+        },
+        {
+          "tick": 589,
+          "event": "takeoff",
+          "vy": 480,
+          "vx": 0.016525892066805603
+        },
+        {
+          "tick": 699,
+          "event": "landing",
+          "target": "walk"
+        },
+        {
+          "tick": 735,
+          "event": "recover",
+          "target": "low"
+        }
+      ],
+      "reach_constraints": 0,
+      "final": "walk"
+    },
+    {
+      "index": 7,
+      "commands": [
+        [
+          0,
+          "stop"
+        ],
+        [
+          0.17104318166384475,
+          "low"
+        ],
+        [
+          0.5438723547011615,
+          "walk"
+        ],
+        [
+          0.9391975267720409,
+          "idle"
+        ],
+        [
+          1.131708059143275,
+          "idle"
+        ],
+        [
+          1.4067464676336385,
+          "walk"
+        ],
+        [
+          1.635790645647794,
+          "low"
+        ],
+        [
+          2.026516451437492,
+          "idle"
+        ],
+        [
+          2.3336801310256123,
+          "idle"
+        ],
+        [
+          2.7673224994004704,
+          "jump"
+        ],
+        [
+          3.160401050634682,
+          "walk"
+        ],
+        [
+          3.486324087504763,
+          "low"
+        ],
+        [
+          3.732289427984506,
+          "idle"
+        ],
+        [
+          4.152991134657059,
+          "walk"
+        ],
+        [
+          4.2541978986375035,
+          "low"
+        ],
+        [
+          4.451848067019601,
+          "walk"
+        ],
+        [
+          4.801445707157255,
+          "walk"
+        ],
+        [
+          4.9383514272631155,
+          "walk"
+        ],
+        [
+          5.372587795853615,
+          "stop"
+        ],
+        [
+          5.7544439974916175,
+          "stop"
+        ],
+        [
+          6.0587647040747115,
+          "stop"
+        ],
+        [
+          6.287515904589092,
+          "low"
+        ],
+        [
+          6.420082496795804,
+          "jump"
+        ],
+        [
+          6.858690676738044,
+          "low"
+        ],
+        [
+          6.989159441255034,
+          "idle"
+        ],
+        [
+          7.1435417198599325,
+          "idle"
+        ],
+        [
+          7.396663650386036,
+          "idle"
+        ],
+        [
+          7.490532182727475,
+          "idle"
+        ],
+        [
+          7.613353411797434,
+          "walk"
+        ],
+        [
+          7.759658679498825,
+          "idle"
+        ],
+        [
+          8.227819421049208,
+          "stop"
+        ]
+      ],
+      "phases": [
+        "ground",
+        "prepare",
+        "push",
+        "flight",
+        "landing"
+      ],
+      "events": [
+        {
+          "tick": 394,
+          "event": "takeoff",
+          "vy": 480,
+          "vx": 13.417191191597254
+        },
+        {
+          "tick": 504,
+          "event": "landing",
+          "target": "walk"
+        },
+        {
+          "tick": 540,
+          "event": "recover",
+          "target": "walk"
+        },
+        {
+          "tick": 832,
+          "event": "takeoff",
+          "vy": 480,
+          "vx": 0.014792356393303495
+        },
+        {
+          "tick": 942,
+          "event": "landing",
+          "target": "idle"
+        },
+        {
+          "tick": 978,
+          "event": "recover",
+          "target": "idle"
+        }
+      ],
+      "reach_constraints": 0,
+      "final": "idle"
+    },
+    {
+      "index": 8,
+      "commands": [
+        [
+          0,
+          "stop"
+        ],
+        [
+          0.1728487995523028,
+          "jump"
+        ],
+        [
+          0.3638273070473224,
+          "jump"
+        ],
+        [
+          0.6997861463832669,
+          "stop"
+        ],
+        [
+          0.8418162132054567,
+          "jump"
+        ],
+        [
+          1.034650766409468,
+          "low"
+        ],
+        [
+          1.3599279742036015,
+          "low"
+        ],
+        [
+          1.743296061947476,
+          "walk"
+        ],
+        [
+          1.8818751914054155,
+          "low"
+        ],
+        [
+          2.233745230350178,
+          "stop"
+        ],
+        [
+          2.3335785226244483,
+          "walk"
+        ],
+        [
+          2.7538285168143926,
+          "stop"
+        ],
+        [
+          2.986440531611443,
+          "walk"
+        ],
+        [
+          3.250166902735364,
+          "jump"
+        ],
+        [
+          3.469417144963518,
+          "idle"
+        ],
+        [
+          3.71520144835813,
+          "low"
+        ],
+        [
+          4.022054685205221,
+          "low"
+        ],
+        [
+          4.158655008475762,
+          "low"
+        ],
+        [
+          4.497847948791459,
+          "stop"
+        ],
+        [
+          4.664500539924483,
+          "low"
+        ],
+        [
+          5.079462297782301,
+          "idle"
+        ],
+        [
+          5.524197719625662,
+          "jump"
+        ],
+        [
+          5.854550233939662,
+          "jump"
+        ],
+        [
+          6.321647091924678,
+          "walk"
+        ],
+        [
+          6.553080423995852,
+          "jump"
+        ],
+        [
+          6.674998463976662,
+          "low"
+        ],
+        [
+          6.95428464484401,
+          "jump"
+        ],
+        [
+          7.215137767929117,
+          "walk"
+        ],
+        [
+          7.4635156174004065,
+          "stop"
+        ],
+        [
+          7.620364108651409,
+          "jump"
+        ],
+        [
+          7.706496197888626,
+          "low"
+        ],
+        [
+          8.161456215761135,
+          "stop"
+        ]
+      ],
+      "phases": [
+        "ground",
+        "prepare",
+        "push",
+        "flight",
+        "landing"
+      ],
+      "events": [
+        {
+          "tick": 82,
+          "event": "takeoff",
+          "vy": 480,
+          "vx": 0
+        },
+        {
+          "tick": 192,
+          "event": "landing",
+          "target": "low"
+        },
+        {
+          "tick": 228,
+          "event": "recover",
+          "target": "low"
+        },
+        {
+          "tick": 456,
+          "event": "takeoff",
+          "vy": 480,
+          "vx": 21.67030672558978
+        },
+        {
+          "tick": 566,
+          "event": "landing",
+          "target": "low"
+        },
+        {
+          "tick": 602,
+          "event": "recover",
+          "target": "low"
+        },
+        {
+          "tick": 724,
+          "event": "takeoff",
+          "vy": 480,
+          "vx": 0.00837829794227153
+        },
+        {
+          "tick": 834,
+          "event": "landing",
+          "target": "low"
+        },
+        {
+          "tick": 896,
+          "event": "takeoff",
+          "vy": 480,
+          "vx": 35.50456335759143
+        },
+        {
+          "tick": 1006,
+          "event": "landing",
+          "target": "idle"
+        },
+        {
+          "tick": 1042,
+          "event": "recover",
+          "target": "idle"
+        }
+      ],
+      "reach_constraints": 0,
+      "final": "idle"
+    },
+    {
+      "index": 9,
+      "commands": [
+        [
+          0,
+          "jump"
+        ],
+        [
+          0.12038712340174243,
+          "low"
+        ],
+        [
+          0.4995862884540111,
+          "jump"
+        ],
+        [
+          0.5750286682951264,
+          "jump"
+        ],
+        [
+          0.6940136832743884,
+          "jump"
+        ],
+        [
+          0.7886890953849071,
+          "walk"
+        ],
+        [
+          1.2351210494432598,
+          "stop"
+        ],
+        [
+          1.3799908957327716,
+          "walk"
+        ],
+        [
+          1.6621751112490892,
+          "stop"
+        ],
+        [
+          1.9263071659835986,
+          "idle"
+        ],
+        [
+          2.420057631852105,
+          "low"
+        ],
+        [
+          2.911848079923075,
+          "idle"
+        ],
+        [
+          3.3184572315216068,
+          "low"
+        ],
+        [
+          3.6367812955821868,
+          "stop"
+        ],
+        [
+          4.127046313295141,
+          "low"
+        ],
+        [
+          4.369085516638588,
+          "stop"
+        ],
+        [
+          4.683811064809561,
+          "stop"
+        ],
+        [
+          5.070523926864844,
+          "idle"
+        ],
+        [
+          5.400890005053952,
+          "low"
+        ],
+        [
+          5.672811716373544,
+          "stop"
+        ],
+        [
+          5.89446404479444,
+          "jump"
+        ],
+        [
+          6.389739418409299,
+          "low"
+        ],
+        [
+          6.842428529420867,
+          "low"
+        ],
+        [
+          7.155701275437604,
+          "low"
+        ],
+        [
+          7.555765232965349,
+          "stop"
+        ],
+        [
+          7.820765353280584,
+          "walk"
+        ],
+        [
+          8.156719772042706,
+          "jump"
+        ]
+      ],
+      "phases": [
+        "prepare",
+        "push",
+        "flight",
+        "landing",
+        "ground"
+      ],
+      "events": [
+        {
+          "tick": 61,
+          "event": "takeoff",
+          "vy": 480,
+          "vx": 0
+        },
+        {
+          "tick": 171,
+          "event": "landing",
+          "target": "walk"
+        },
+        {
+          "tick": 207,
+          "event": "recover",
+          "target": "idle"
+        },
+        {
+          "tick": 769,
+          "event": "takeoff",
+          "vy": 480,
+          "vx": 7.213887845158425e-12
+        },
+        {
+          "tick": 879,
+          "event": "landing",
+          "target": "low"
+        },
+        {
+          "tick": 915,
+          "event": "recover",
+          "target": "idle"
+        },
+        {
+          "tick": 1040,
+          "event": "takeoff",
+          "vy": 480,
+          "vx": 66.7054618498217
+        }
+      ],
+      "reach_constraints": 0,
+      "final": "walk"
+    },
+    {
+      "index": 10,
+      "commands": [
+        [
+          0,
+          "idle"
+        ],
+        [
+          0.44196778641315176,
+          "low"
+        ],
+        [
+          0.5842261005751789,
+          "low"
+        ],
+        [
+          1.0459080872149207,
+          "jump"
+        ],
+        [
+          1.3647500153817238,
+          "walk"
+        ],
+        [
+          1.632106410872657,
+          "walk"
+        ],
+        [
+          1.9231563622131946,
+          "idle"
+        ],
+        [
+          2.3569376884237867,
+          "walk"
+        ],
+        [
+          2.5230905298516157,
+          "jump"
+        ],
+        [
+          2.8228254682687113,
+          "walk"
+        ],
+        [
+          2.979950374234468,
+          "jump"
+        ],
+        [
+          3.114966693392489,
+          "jump"
+        ],
+        [
+          3.539326693918556,
+          "jump"
+        ],
+        [
+          3.9178501797583887,
+          "idle"
+        ],
+        [
+          4.341829203590751,
+          "stop"
+        ],
+        [
+          4.822174264623318,
+          "idle"
+        ],
+        [
+          4.956622224375606,
+          "walk"
+        ],
+        [
+          5.374956593525131,
+          "walk"
+        ],
+        [
+          5.855681809689851,
+          "jump"
+        ],
+        [
+          6.182816514691805,
+          "jump"
+        ],
+        [
+          6.565473525393755,
+          "stop"
+        ],
+        [
+          6.800598049622495,
+          "low"
+        ],
+        [
+          7.232437602989377,
+          "stop"
+        ],
+        [
+          7.524688908590471,
+          "walk"
+        ],
+        [
+          7.613355684615673,
+          "idle"
+        ],
+        [
+          7.872578519817909,
+          "jump"
+        ],
+        [
+          8.211360878590495,
+          "jump"
+        ]
+      ],
+      "phases": [
+        "ground",
+        "prepare",
+        "push",
+        "flight",
+        "landing"
+      ],
+      "events": [
+        {
+          "tick": 187,
+          "event": "takeoff",
+          "vy": 480,
+          "vx": 26.374874427153465
+        },
+        {
+          "tick": 297,
+          "event": "landing",
+          "target": "walk"
+        },
+        {
+          "tick": 364,
+          "event": "takeoff",
+          "vy": 480,
+          "vx": 65.7698046803479
+        },
+        {
+          "tick": 474,
+          "event": "landing",
+          "target": "idle"
+        },
+        {
+          "tick": 510,
+          "event": "recover",
+          "target": "idle"
+        },
+        {
+          "tick": 764,
+          "event": "takeoff",
+          "vy": 480,
+          "vx": 67.96143088831201
+        },
+        {
+          "tick": 874,
+          "event": "landing",
+          "target": "idle"
+        },
+        {
+          "tick": 910,
+          "event": "recover",
+          "target": "walk"
+        },
+        {
+          "tick": 1006,
+          "event": "takeoff",
+          "vy": 480,
+          "vx": 1.1180314445000141
+        }
+      ],
+      "reach_constraints": 0,
+      "final": "idle"
+    },
+    {
+      "index": 11,
+      "commands": [
+        [
+          0,
+          "stop"
+        ],
+        [
+          0.20565480317687615,
+          "walk"
+        ],
+        [
+          0.33088728136382994,
+          "walk"
+        ],
+        [
+          0.4643815837590955,
+          "stop"
+        ],
+        [
+          0.5674697479233146,
+          "idle"
+        ],
+        [
+          0.9896999060898088,
+          "idle"
+        ],
+        [
+          1.2885081711318345,
+          "low"
+        ],
+        [
+          1.4922756658098661,
+          "jump"
+        ],
+        [
+          1.9123692975938322,
+          "jump"
+        ],
+        [
+          2.3186113169020977,
+          "idle"
+        ],
+        [
+          2.608920304020867,
+          "jump"
+        ],
+        [
+          2.6794118842645553,
+          "idle"
+        ],
+        [
+          2.839713047109545,
+          "stop"
+        ],
+        [
+          3.270176318080631,
+          "low"
+        ],
+        [
+          3.605501077091322,
+          "low"
+        ],
+        [
+          3.9222759087360473,
+          "jump"
+        ],
+        [
+          4.207319883704186,
+          "stop"
+        ],
+        [
+          4.2974689810327265,
+          "idle"
+        ],
+        [
+          4.389548343336211,
+          "idle"
+        ],
+        [
+          4.848488586449531,
+          "low"
+        ],
+        [
+          5.1705568360909835,
+          "walk"
+        ],
+        [
+          5.443027412199882,
+          "walk"
+        ],
+        [
+          5.818735001524911,
+          "jump"
+        ],
+        [
+          6.3181316258362505,
+          "walk"
+        ],
+        [
+          6.5388796018064035,
+          "stop"
+        ],
+        [
+          6.746702874151525,
+          "walk"
+        ],
+        [
+          6.936110461046921,
+          "jump"
+        ],
+        [
+          7.077495155127255,
+          "walk"
+        ],
+        [
+          7.161669949553908,
+          "jump"
+        ],
+        [
+          7.514680781678764,
+          "stop"
+        ],
+        [
+          7.7471489817556005,
+          "jump"
+        ],
+        [
+          8.142747155947147,
+          "stop"
+        ]
+      ],
+      "phases": [
+        "ground",
+        "prepare",
+        "push",
+        "flight",
+        "landing"
+      ],
+      "events": [
+        {
+          "tick": 241,
+          "event": "takeoff",
+          "vy": 480,
+          "vx": 0.013375440010867757
+        },
+        {
+          "tick": 351,
+          "event": "landing",
+          "target": "idle"
+        },
+        {
+          "tick": 387,
+          "event": "recover",
+          "target": "idle"
+        },
+        {
+          "tick": 532,
+          "event": "takeoff",
+          "vy": 480,
+          "vx": 6.681878703701975e-7
+        },
+        {
+          "tick": 642,
+          "event": "landing",
+          "target": "walk"
+        },
+        {
+          "tick": 678,
+          "event": "recover",
+          "target": "walk"
+        },
+        {
+          "tick": 760,
+          "event": "takeoff",
+          "vy": 480,
+          "vx": 67.45068037035355
+        },
+        {
+          "tick": 870,
+          "event": "landing",
+          "target": "walk"
+        },
+        {
+          "tick": 906,
+          "event": "recover",
+          "target": "idle"
+        },
+        {
+          "tick": 991,
+          "event": "takeoff",
+          "vy": 480,
+          "vx": 2.34119824791509
+        }
+      ],
+      "reach_constraints": 0,
+      "final": "idle"
+    },
+    {
+      "index": 12,
+      "commands": [
+        [
+          0,
+          "walk"
+        ],
+        [
+          0.3563035763404332,
+          "idle"
+        ],
+        [
+          0.771474892264232,
+          "low"
+        ],
+        [
+          1.0401547753601335,
+          "jump"
+        ],
+        [
+          1.3670433643087745,
+          "stop"
+        ],
+        [
+          1.6414154587476515,
+          "low"
+        ],
+        [
+          2.0519846659805627,
+          "jump"
+        ],
+        [
+          2.1955774956545793,
+          "low"
+        ],
+        [
+          2.2715831921994685,
+          "low"
+        ],
+        [
+          2.582679030371364,
+          "walk"
+        ],
+        [
+          2.815815906664356,
+          "idle"
+        ],
+        [
+          3.0576822136505504,
+          "jump"
+        ],
+        [
+          3.3895170604810114,
+          "stop"
+        ],
+        [
+          3.757763775826897,
+          "stop"
+        ],
+        [
+          4.172063174461946,
+          "low"
+        ],
+        [
+          4.35978016048437,
+          "low"
+        ],
+        [
+          4.537808753848076,
+          "jump"
+        ],
+        [
+          4.805856437420006,
+          "walk"
+        ],
+        [
+          5.290690704202279,
+          "stop"
+        ],
+        [
+          5.394735713654663,
+          "idle"
+        ],
+        [
+          5.783606917224824,
+          "stop"
+        ],
+        [
+          6.001213261240627,
+          "jump"
+        ],
+        [
+          6.495361995240673,
+          "idle"
+        ],
+        [
+          6.7256670806161125,
+          "low"
+        ],
+        [
+          7.065160583108663,
+          "walk"
+        ],
+        [
+          7.2903841182566245,
+          "jump"
+        ],
+        [
+          7.6968162763025605,
+          "low"
+        ],
+        [
+          8.049068857373204,
+          "jump"
+        ],
+        [
+          8.152031573913991,
+          "walk"
+        ]
+      ],
+      "phases": [
+        "ground",
+        "prepare",
+        "push",
+        "flight",
+        "landing"
+      ],
+      "events": [
+        {
+          "tick": 186,
+          "event": "takeoff",
+          "vy": 480,
+          "vx": 0.1357873352327853
+        },
+        {
+          "tick": 296,
+          "event": "landing",
+          "target": "low"
+        },
+        {
+          "tick": 332,
+          "event": "recover",
+          "target": "walk"
+        },
+        {
+          "tick": 428,
+          "event": "takeoff",
+          "vy": 480,
+          "vx": 1.6809890951853586
+        },
+        {
+          "tick": 538,
+          "event": "landing",
+          "target": "low"
+        },
+        {
+          "tick": 606,
+          "event": "takeoff",
+          "vy": 480,
+          "vx": 34.336419915974105
+        },
+        {
+          "tick": 716,
+          "event": "landing",
+          "target": "idle"
+        },
+        {
+          "tick": 782,
+          "event": "takeoff",
+          "vy": 480,
+          "vx": 5.275897583890497
+        },
+        {
+          "tick": 892,
+          "event": "landing",
+          "target": "walk"
+        },
+        {
+          "tick": 928,
+          "event": "recover",
+          "target": "low"
+        },
+        {
+          "tick": 1027,
+          "event": "takeoff",
+          "vy": 480,
+          "vx": 53.2342990702266
+        }
+      ],
+      "reach_constraints": 0,
+      "final": "walk"
+    },
+    {
+      "index": 13,
+      "commands": [
+        [
+          0,
+          "idle"
+        ],
+        [
+          0.3836833449197002,
+          "stop"
+        ],
+        [
+          0.717247961666435,
+          "stop"
+        ],
+        [
+          1.1414952789084054,
+          "walk"
+        ],
+        [
+          1.3662748912908136,
+          "low"
+        ],
+        [
+          1.6018877839040941,
+          "stop"
+        ],
+        [
+          2.061223943196237,
+          "stop"
+        ],
+        [
+          2.2022808081866243,
+          "walk"
+        ],
+        [
+          2.584594513885677,
+          "stop"
+        ],
+        [
+          2.7710150487464857,
+          "jump"
+        ],
+        [
+          3.072466164771468,
+          "stop"
+        ],
+        [
+          3.15402301756898,
+          "jump"
+        ],
+        [
+          3.3188619492016738,
+          "jump"
+        ],
+        [
+          3.697309434090276,
+          "stop"
+        ],
+        [
+          4.103137862533331,
+          "idle"
+        ],
+        [
+          4.212096412575338,
+          "low"
+        ],
+        [
+          4.658972634002566,
+          "jump"
+        ],
+        [
+          5.061676413167734,
+          "jump"
+        ],
+        [
+          5.413219579141588,
+          "walk"
+        ],
+        [
+          5.90620342536131,
+          "jump"
+        ],
+        [
+          6.37756973149255,
+          "walk"
+        ],
+        [
+          6.523840352643748,
+          "stop"
+        ],
+        [
+          7.015662972368301,
+          "jump"
+        ],
+        [
+          7.313868067061995,
+          "walk"
+        ],
+        [
+          7.562971377409996,
+          "idle"
+        ],
+        [
+          7.79954910245957,
+          "jump"
+        ],
+        [
+          8.29646649869159,
+          "walk"
+        ]
+      ],
+      "phases": [
+        "ground",
+        "prepare",
+        "push",
+        "flight",
+        "landing"
+      ],
+      "events": [
+        {
+          "tick": 394,
+          "event": "takeoff",
+          "vy": 480,
+          "vx": 2.8241334532635904
+        },
+        {
+          "tick": 504,
+          "event": "landing",
+          "target": "idle"
+        },
+        {
+          "tick": 540,
+          "event": "recover",
+          "target": "low"
+        },
+        {
+          "tick": 621,
+          "event": "takeoff",
+          "vy": 480,
+          "vx": 0.006776065248197958
+        },
+        {
+          "tick": 731,
+          "event": "landing",
+          "target": "walk"
+        },
+        {
+          "tick": 767,
+          "event": "recover",
+          "target": "walk"
+        },
+        {
+          "tick": 903,
+          "event": "takeoff",
+          "vy": 480,
+          "vx": 29.576197477336358
+        },
+        {
+          "tick": 1013,
+          "event": "landing",
+          "target": "walk"
+        },
+        {
+          "tick": 1049,
+          "event": "recover",
+          "target": "walk"
+        }
+      ],
+      "reach_constraints": 0,
+      "final": "walk"
+    }
+  ],
+  "frames": 15120,
+  "inversions": 0,
+  "max_bone_error": 8.526512829121202e-14,
+  "max_command_position_velocity_delta": 0,
+  "max_frame_vertex_displacement": 12.942036707517,
+  "cloth_constraint_frames": 12,
+  "max_cloth_blend": 2.1303072830044134,
+  "max_joint_flex": 139.55269625307545,
+  "strict_self_intersections": 0,
+  "max_displacement_case": {
+    "scenario": 12,
+    "frame": 1013,
+    "surface": "near_hand",
+    "vertex": 13,
+    "phase": "push",
+    "root": [
+      99.5622093825365,
+      141.2225014045672
+    ],
+    "previousRoot": [
+      98.29558996082264,
+      136.9995137732243
+    ]
+  },
+  "airborne_target_isolation": "PASS",
+  "framing": {
+    "checks": 20618,
+    "minMargins": {
+      "one": 11.510663638515325,
+      "two": 23.999999999999886
+    },
+    "minRawScale": 2,
+    "maxRawScale": 2,
+    "minCssScaleRatio": 1.5,
+    "witnesses": [
+      {
+        "name": "CM1-desktop",
+        "tick": 129,
+        "phase": "flight",
+        "elapsed": 0.49166666666666736,
+        "landmarkError": 0,
+        "legacyTop": -196.23885304831856,
+        "newMargins": {
+          "left": 574.6230492819444,
+          "right": 467.84788170896695,
+          "top": 24,
+          "bottom": 113.15385634001052
+        },
+        "scale": 2,
+        "cssScaleRatio": 1.5
+      },
+      {
+        "name": "CM1-mobile",
+        "tick": 130,
+        "phase": "flight",
+        "elapsed": 0.49166666666666736,
+        "landmarkError": 0,
+        "legacyTop": -196.2382062844515,
+        "newMargins": {
+          "left": 574.6230492819444,
+          "right": 467.847544033874,
+          "top": 24,
+          "bottom": 113.15450310387757
+        },
+        "scale": 2,
+        "cssScaleRatio": 1.5
+      },
+      {
+        "name": "AM-A1-idle",
+        "tick": 350,
+        "phase": "flight",
+        "elapsed": 0.40833333333333377,
+        "landmarkError": 0,
+        "legacyTop": -192.9866815985165,
+        "newMargins": {
+          "left": 564.6135465515855,
+          "right": 472.9313066435345,
+          "top": 24,
+          "bottom": 114.3799252875898
+        },
+        "scale": 2,
+        "cssScaleRatio": 1.5
+      },
+      {
+        "name": "AM-A1-low",
+        "tick": 350,
+        "phase": "flight",
+        "elapsed": 0.40833333333333377,
+        "landmarkError": 0,
+        "legacyTop": -174.24874026550242,
+        "newMargins": {
+          "left": 564.6135465515855,
+          "right": 463.5900695084318,
+          "top": 24,
+          "bottom": 133.11786662060388
+        },
+        "scale": 2,
+        "cssScaleRatio": 1.5
+      },
+      {
+        "name": "AM-A1-walk",
+        "tick": 350,
+        "phase": "flight",
+        "elapsed": 0.40833333333333377,
+        "landmarkError": 0,
+        "legacyTop": -192.82145336774875,
+        "newMargins": {
+          "left": 523.2764182813769,
+          "right": 473.11524162918647,
+          "top": 24,
+          "bottom": 114.54515351835755
+        },
+        "scale": 2,
+        "cssScaleRatio": 1.5
+      },
+      {
+        "name": "AM-A1-mobile-recipe",
+        "tick": 2824,
+        "phase": "flight",
+        "elapsed": 0.40833333333333377,
+        "landmarkError": null,
+        "legacyTop": -193.00003970219586,
+        "newMargins": {
+          "left": 571.2185018761669,
+          "right": 470.2216255580018,
+          "top": 24,
+          "bottom": 114.36656718391043
+        },
+        "scale": 2,
+        "cssScaleRatio": 1.5
+      }
+    ],
+    "jumps": [
+      {
+        "origin": "idle",
+        "steps": 207,
+        "phases": [
+          "prepare",
+          "push",
+          "flight",
+          "landing",
+          "ground"
+        ]
+      },
+      {
+        "origin": "low",
+        "steps": 207,
+        "phases": [
+          "prepare",
+          "push",
+          "flight",
+          "landing",
+          "ground"
+        ]
+      },
+      {
+        "origin": "walk",
+        "steps": 207,
+        "phases": [
+          "prepare",
+          "push",
+          "flight",
+          "landing",
+          "ground"
+        ]
+      }
+    ]
+  }
+}

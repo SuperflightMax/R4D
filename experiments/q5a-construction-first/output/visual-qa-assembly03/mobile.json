@@ -1,0 +1,698 @@
+{
+  "scenario": "mobile realtime A and B speed1; UI pause/step/diagnostics",
+  "environment": {
+    "ua": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/155.0.0.0 Safari/537.36",
+    "viewport": [
+      390,
+      844
+    ],
+    "dpr": 2,
+    "touch": 1
+  },
+  "rows": [
+    {
+      "file": "M-000",
+      "label": "A idle",
+      "tick": 23,
+      "time": 0.19166666666666665,
+      "phase": "ground",
+      "elapsed": 0.19166666666666665,
+      "ground": "idle"
+    },
+    {
+      "file": "M-001",
+      "label": "A idle",
+      "tick": 57,
+      "time": 0.47500000000000064,
+      "phase": "ground",
+      "elapsed": 0.47500000000000064,
+      "ground": "idle"
+    },
+    {
+      "file": "M-002",
+      "label": "A idle",
+      "tick": 81,
+      "time": 0.675,
+      "phase": "ground",
+      "elapsed": 0.675,
+      "ground": "idle"
+    },
+    {
+      "file": "M-003",
+      "label": "A low",
+      "tick": 111,
+      "time": 0.9249999999999992,
+      "phase": "ground",
+      "elapsed": 0.9249999999999992,
+      "ground": "low"
+    },
+    {
+      "file": "M-004",
+      "label": "A low",
+      "tick": 135,
+      "time": 1.1249999999999984,
+      "phase": "ground",
+      "elapsed": 1.1249999999999984,
+      "ground": "low"
+    },
+    {
+      "file": "M-005",
+      "label": "A low",
+      "tick": 155,
+      "time": 1.2916666666666645,
+      "phase": "ground",
+      "elapsed": 1.2916666666666645,
+      "ground": "low"
+    },
+    {
+      "file": "M-006",
+      "label": "A low",
+      "tick": 179,
+      "time": 1.4916666666666638,
+      "phase": "ground",
+      "elapsed": 1.4916666666666638,
+      "ground": "low"
+    },
+    {
+      "file": "M-007",
+      "label": "A low",
+      "tick": 201,
+      "time": 1.6749999999999965,
+      "phase": "ground",
+      "elapsed": 1.6749999999999965,
+      "ground": "low"
+    },
+    {
+      "file": "M-008",
+      "label": "A walk",
+      "tick": 227,
+      "time": 1.8916666666666624,
+      "phase": "ground",
+      "elapsed": 1.8916666666666624,
+      "ground": "walk"
+    },
+    {
+      "file": "M-009",
+      "label": "A walk",
+      "tick": 251,
+      "time": 2.091666666666662,
+      "phase": "ground",
+      "elapsed": 2.091666666666662,
+      "ground": "walk"
+    },
+    {
+      "file": "M-010",
+      "label": "A walk",
+      "tick": 273,
+      "time": 2.2749999999999946,
+      "phase": "ground",
+      "elapsed": 2.2749999999999946,
+      "ground": "walk"
+    },
+    {
+      "file": "M-011",
+      "label": "A walk",
+      "tick": 297,
+      "time": 2.474999999999994,
+      "phase": "ground",
+      "elapsed": 2.474999999999994,
+      "ground": "walk"
+    },
+    {
+      "file": "M-012",
+      "label": "A walk",
+      "tick": 321,
+      "time": 2.674999999999993,
+      "phase": "ground",
+      "elapsed": 2.674999999999993,
+      "ground": "walk"
+    },
+    {
+      "file": "M-013",
+      "label": "A walk",
+      "tick": 345,
+      "time": 2.8749999999999925,
+      "phase": "ground",
+      "elapsed": 2.8749999999999925,
+      "ground": "walk"
+    },
+    {
+      "file": "M-014",
+      "label": "A walk",
+      "tick": 367,
+      "time": 3.058333333333325,
+      "phase": "ground",
+      "elapsed": 3.058333333333325,
+      "ground": "walk"
+    },
+    {
+      "file": "M-015",
+      "label": "A walk",
+      "tick": 391,
+      "time": 3.2583333333333244,
+      "phase": "ground",
+      "elapsed": 3.2583333333333244,
+      "ground": "walk"
+    },
+    {
+      "file": "M-016",
+      "label": "A idle stop",
+      "tick": 419,
+      "time": 3.491666666666657,
+      "phase": "ground",
+      "elapsed": 3.491666666666657,
+      "ground": "idle"
+    },
+    {
+      "file": "M-017",
+      "label": "A idle stop",
+      "tick": 443,
+      "time": 3.691666666666656,
+      "phase": "ground",
+      "elapsed": 3.691666666666656,
+      "ground": "idle"
+    },
+    {
+      "file": "M-018",
+      "label": "A idle stop",
+      "tick": 467,
+      "time": 3.8916666666666555,
+      "phase": "ground",
+      "elapsed": 3.8916666666666555,
+      "ground": "idle"
+    },
+    {
+      "file": "M-019",
+      "label": "A idle stop",
+      "tick": 489,
+      "time": 4.074999999999992,
+      "phase": "ground",
+      "elapsed": 4.074999999999992,
+      "ground": "idle"
+    },
+    {
+      "file": "M-020",
+      "label": "A idle stop",
+      "tick": 509,
+      "time": 4.241666666666667,
+      "phase": "ground",
+      "elapsed": 4.241666666666667,
+      "ground": "idle"
+    },
+    {
+      "file": "M-021",
+      "label": "A idle stop",
+      "tick": 533,
+      "time": 4.441666666666677,
+      "phase": "ground",
+      "elapsed": 4.441666666666677,
+      "ground": "idle"
+    },
+    {
+      "file": "M-022",
+      "label": "A idle stop",
+      "tick": 555,
+      "time": 4.6250000000000195,
+      "phase": "ground",
+      "elapsed": 4.6250000000000195,
+      "ground": "idle"
+    },
+    {
+      "file": "M-023",
+      "label": "A idle-jump-idle",
+      "tick": 581,
+      "time": 4.841666666666697,
+      "phase": "prepare",
+      "elapsed": 0,
+      "ground": "idle"
+    },
+    {
+      "file": "M-024",
+      "label": "A idle-jump-idle",
+      "tick": 605,
+      "time": 5.041666666666707,
+      "phase": "prepare",
+      "elapsed": 0.19999999999999998,
+      "ground": "idle"
+    },
+    {
+      "file": "M-025",
+      "label": "A idle-jump-idle",
+      "tick": 625,
+      "time": 5.208333333333382,
+      "phase": "push",
+      "elapsed": 0.06666666666666667,
+      "ground": "idle"
+    },
+    {
+      "file": "M-026",
+      "label": "A idle-jump-idle",
+      "tick": 649,
+      "time": 5.408333333333392,
+      "phase": "flight",
+      "elapsed": 0.05833333333333333,
+      "ground": "idle"
+    },
+    {
+      "file": "M-027",
+      "label": "A idle-jump-idle",
+      "tick": 673,
+      "time": 5.608333333333402,
+      "phase": "flight",
+      "elapsed": 0.2583333333333333,
+      "ground": "idle"
+    },
+    {
+      "file": "M-028",
+      "label": "A idle-jump-idle",
+      "tick": 695,
+      "time": 5.791666666666744,
+      "phase": "flight",
+      "elapsed": 0.4416666666666672,
+      "ground": "idle"
+    },
+    {
+      "file": "M-029",
+      "label": "A idle-jump-idle",
+      "tick": 715,
+      "time": 5.958333333333419,
+      "phase": "flight",
+      "elapsed": 0.6083333333333336,
+      "ground": "idle"
+    },
+    {
+      "file": "M-030",
+      "label": "A idle-jump-idle",
+      "tick": 739,
+      "time": 6.158333333333429,
+      "phase": "flight",
+      "elapsed": 0.8083333333333329,
+      "ground": "idle"
+    },
+    {
+      "file": "M-031",
+      "label": "A idle-jump-idle",
+      "tick": 761,
+      "time": 6.341666666666772,
+      "phase": "landing",
+      "elapsed": 0.075,
+      "ground": "idle"
+    },
+    {
+      "file": "M-032",
+      "label": "A idle-jump-idle",
+      "tick": 781,
+      "time": 6.5083333333334465,
+      "phase": "landing",
+      "elapsed": 0.24166666666666664,
+      "ground": "idle"
+    },
+    {
+      "file": "M-033",
+      "label": "A idle-jump-idle",
+      "tick": 805,
+      "time": 6.7083333333334565,
+      "phase": "ground",
+      "elapsed": 0.14166666666666666,
+      "ground": "idle"
+    },
+    {
+      "file": "M-034",
+      "label": "A idle-jump-idle",
+      "tick": 827,
+      "time": 6.891666666666799,
+      "phase": "ground",
+      "elapsed": 0.3250000000000002,
+      "ground": "idle"
+    },
+    {
+      "file": "M-035",
+      "label": "A idle-jump-idle",
+      "tick": 849,
+      "time": 7.075000000000141,
+      "phase": "ground",
+      "elapsed": 0.508333333333334,
+      "ground": "idle"
+    },
+    {
+      "file": "M-036",
+      "label": "A idle-jump-idle",
+      "tick": 871,
+      "time": 7.258333333333484,
+      "phase": "ground",
+      "elapsed": 0.6916666666666667,
+      "ground": "idle"
+    },
+    {
+      "file": "M-037",
+      "label": "A idle-jump-idle",
+      "tick": 891,
+      "time": 7.425000000000159,
+      "phase": "ground",
+      "elapsed": 0.8583333333333327,
+      "ground": "idle"
+    },
+    {
+      "file": "M-038",
+      "label": "B walk",
+      "tick": 919,
+      "time": 7.658333333333504,
+      "phase": "ground",
+      "elapsed": 1.0916666666666652,
+      "ground": "walk"
+    },
+    {
+      "file": "M-039",
+      "label": "B walk",
+      "tick": 943,
+      "time": 7.858333333333514,
+      "phase": "ground",
+      "elapsed": 1.2916666666666645,
+      "ground": "walk"
+    },
+    {
+      "file": "M-040",
+      "label": "B walk",
+      "tick": 965,
+      "time": 8.04166666666685,
+      "phase": "ground",
+      "elapsed": 1.4749999999999972,
+      "ground": "walk"
+    },
+    {
+      "file": "M-041",
+      "label": "B walk",
+      "tick": 987,
+      "time": 8.225000000000174,
+      "phase": "ground",
+      "elapsed": 1.6583333333333299,
+      "ground": "walk"
+    },
+    {
+      "file": "M-042",
+      "label": "B walk",
+      "tick": 1011,
+      "time": 8.425000000000162,
+      "phase": "ground",
+      "elapsed": 1.8583333333333292,
+      "ground": "walk"
+    },
+    {
+      "file": "M-043",
+      "label": "B walk",
+      "tick": 1035,
+      "time": 8.625000000000151,
+      "phase": "ground",
+      "elapsed": 2.0583333333333287,
+      "ground": "walk"
+    },
+    {
+      "file": "M-044",
+      "label": "B walk",
+      "tick": 1057,
+      "time": 8.808333333333474,
+      "phase": "ground",
+      "elapsed": 2.2416666666666614,
+      "ground": "walk"
+    },
+    {
+      "file": "M-045",
+      "label": "B walk",
+      "tick": 1079,
+      "time": 8.991666666666797,
+      "phase": "ground",
+      "elapsed": 2.424999999999994,
+      "ground": "walk"
+    },
+    {
+      "file": "M-046",
+      "label": "B low",
+      "tick": 1107,
+      "time": 9.225000000000117,
+      "phase": "ground",
+      "elapsed": 2.6583333333333266,
+      "ground": "low"
+    },
+    {
+      "file": "M-047",
+      "label": "B low",
+      "tick": 1129,
+      "time": 9.40833333333344,
+      "phase": "ground",
+      "elapsed": 2.8416666666666592,
+      "ground": "low"
+    },
+    {
+      "file": "M-048",
+      "label": "B low",
+      "tick": 1153,
+      "time": 9.608333333333428,
+      "phase": "ground",
+      "elapsed": 3.0416666666666585,
+      "ground": "low"
+    },
+    {
+      "file": "M-049",
+      "label": "B low",
+      "tick": 1175,
+      "time": 9.791666666666751,
+      "phase": "ground",
+      "elapsed": 3.224999999999991,
+      "ground": "low"
+    },
+    {
+      "file": "M-050",
+      "label": "B low",
+      "tick": 1197,
+      "time": 9.975000000000074,
+      "phase": "ground",
+      "elapsed": 3.408333333333324,
+      "ground": "low"
+    },
+    {
+      "file": "M-051",
+      "label": "B low",
+      "tick": 1219,
+      "time": 10.158333333333397,
+      "phase": "ground",
+      "elapsed": 3.5916666666666566,
+      "ground": "low"
+    },
+    {
+      "file": "M-052",
+      "label": "B low-jump",
+      "tick": 1247,
+      "time": 10.391666666666717,
+      "phase": "prepare",
+      "elapsed": 0,
+      "ground": "low"
+    },
+    {
+      "file": "M-053",
+      "label": "B low-jump",
+      "tick": 1271,
+      "time": 10.591666666666706,
+      "phase": "prepare",
+      "elapsed": 0.19999999999999998,
+      "ground": "low"
+    },
+    {
+      "file": "M-054",
+      "label": "B low-jump",
+      "tick": 1295,
+      "time": 10.791666666666694,
+      "phase": "push",
+      "elapsed": 0.09999999999999999,
+      "ground": "low"
+    },
+    {
+      "file": "M-055",
+      "label": "B flight-target-walk",
+      "tick": 1321,
+      "time": 11.008333333333349,
+      "phase": "flight",
+      "elapsed": 0.10833333333333332,
+      "ground": "walk"
+    },
+    {
+      "file": "M-056",
+      "label": "B flight-target-walk",
+      "tick": 1345,
+      "time": 11.208333333333337,
+      "phase": "flight",
+      "elapsed": 0.30833333333333346,
+      "ground": "walk"
+    },
+    {
+      "file": "M-057",
+      "label": "B flight-target-walk",
+      "tick": 1365,
+      "time": 11.374999999999995,
+      "phase": "flight",
+      "elapsed": 0.47500000000000064,
+      "ground": "walk"
+    },
+    {
+      "file": "M-058",
+      "label": "B flight-target-walk",
+      "tick": 1389,
+      "time": 11.574999999999983,
+      "phase": "flight",
+      "elapsed": 0.675,
+      "ground": "walk"
+    },
+    {
+      "file": "M-059",
+      "label": "B flight-target-walk",
+      "tick": 1411,
+      "time": 11.758333333333306,
+      "phase": "flight",
+      "elapsed": 0.8583333333333327,
+      "ground": "walk"
+    },
+    {
+      "file": "M-060",
+      "label": "B flight-target-walk",
+      "tick": 1433,
+      "time": 11.94166666666663,
+      "phase": "landing",
+      "elapsed": 0.12499999999999999,
+      "ground": "walk"
+    },
+    {
+      "file": "M-061",
+      "label": "B flight-target-walk",
+      "tick": 1455,
+      "time": 12.124999999999952,
+      "phase": "ground",
+      "elapsed": 0.008333333333333333,
+      "ground": "walk"
+    },
+    {
+      "file": "M-062",
+      "label": "B flight-target-walk",
+      "tick": 1479,
+      "time": 12.32499999999994,
+      "phase": "ground",
+      "elapsed": 0.20833333333333331,
+      "ground": "walk"
+    },
+    {
+      "file": "M-063",
+      "label": "B flight-target-walk",
+      "tick": 1501,
+      "time": 12.508333333333264,
+      "phase": "ground",
+      "elapsed": 0.39166666666666705,
+      "ground": "walk"
+    },
+    {
+      "file": "M-064",
+      "label": "B walk-jump",
+      "tick": 1529,
+      "time": 12.741666666666584,
+      "phase": "prepare",
+      "elapsed": 0,
+      "ground": "walk"
+    },
+    {
+      "file": "M-065",
+      "label": "B walk-jump",
+      "tick": 1553,
+      "time": 12.941666666666572,
+      "phase": "prepare",
+      "elapsed": 0.19999999999999998,
+      "ground": "walk"
+    },
+    {
+      "file": "M-066",
+      "label": "B walk-jump",
+      "tick": 1573,
+      "time": 13.10833333333323,
+      "phase": "push",
+      "elapsed": 0.06666666666666667,
+      "ground": "walk"
+    },
+    {
+      "file": "M-067",
+      "label": "B flight-target-low",
+      "tick": 1601,
+      "time": 13.34166666666655,
+      "phase": "flight",
+      "elapsed": 0.09166666666666666,
+      "ground": "low"
+    },
+    {
+      "file": "M-068",
+      "label": "B flight-target-low",
+      "tick": 1625,
+      "time": 13.541666666666538,
+      "phase": "flight",
+      "elapsed": 0.29166666666666674,
+      "ground": "low"
+    },
+    {
+      "file": "M-069",
+      "label": "B flight-target-low",
+      "tick": 1647,
+      "time": 13.724999999999861,
+      "phase": "flight",
+      "elapsed": 0.47500000000000064,
+      "ground": "low"
+    },
+    {
+      "file": "M-070",
+      "label": "B flight-target-low",
+      "tick": 1671,
+      "time": 13.92499999999985,
+      "phase": "flight",
+      "elapsed": 0.675,
+      "ground": "low"
+    },
+    {
+      "file": "M-071",
+      "label": "B flight-target-low",
+      "tick": 1695,
+      "time": 14.124999999999838,
+      "phase": "flight",
+      "elapsed": 0.8749999999999993,
+      "ground": "low"
+    },
+    {
+      "file": "M-072",
+      "label": "B flight-target-low",
+      "tick": 1719,
+      "time": 14.324999999999827,
+      "phase": "landing",
+      "elapsed": 0.15833333333333333,
+      "ground": "low"
+    },
+    {
+      "file": "M-073",
+      "label": "B flight-target-low",
+      "tick": 1741,
+      "time": 14.50833333333315,
+      "phase": "ground",
+      "elapsed": 0.041666666666666664,
+      "ground": "low"
+    },
+    {
+      "file": "M-074",
+      "label": "B flight-target-low",
+      "tick": 1761,
+      "time": 14.674999999999807,
+      "phase": "ground",
+      "elapsed": 0.20833333333333331,
+      "ground": "low"
+    },
+    {
+      "file": "M-075",
+      "label": "B flight-target-low",
+      "tick": 1785,
+      "time": 14.874999999999796,
+      "phase": "ground",
+      "elapsed": 0.40833333333333377,
+      "ground": "low"
+    }
+  ]
+}

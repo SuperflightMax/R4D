@@ -1,0 +1,11 @@
+async (page) => {
+ const dir='D:/dev/R4D/experiments/q5a-construction-first/output/visual-qa-assembly03/';
+ await page.goto('http://127.0.0.1:5195/review/r4d/q5a-construction-first/');await page.waitForFunction(()=>window.q5a);
+ let n=0;const rows=[];
+ async function sample(label,ms){let end=Date.now()+ms;do{const state=await page.evaluate(()=>({tick:q5a.motion.tick,t:q5a.motion.time,phase:q5a.motion.phase,elapsed:q5a.motion.elapsed,ground:q5a.motion.ground,feet:q5a.motion.feet.map(f=>({x:f.x,contact:f.contact,lift:f.lift})),stats:q5a.getStats()}));const file=`A-${String(n++).padStart(3,'0')}.png`;await page.locator('.canvas-wrap').screenshot({path:dir+file});rows.push({file,label,...state});await page.waitForTimeout(100);}while(Date.now()<end);}
+ await sample('idle',1000);await page.getByRole('button',{name:'Присед',exact:true}).click();await sample('idle-low',1500);
+ await page.getByRole('button',{name:'Ходьба',exact:true}).click();await sample('low-walk',2800);
+ await page.getByRole('button',{name:'Стойка',exact:true}).click();await sample('walk-idle',1800);
+ await page.getByRole('button',{name:'Прыжок ↑',exact:true}).click();await sample('idle-jump-idle',2900);
+ console.log(JSON.stringify({scenario:'A realtime speed1',viewport:page.viewportSize(),rows}));
+}

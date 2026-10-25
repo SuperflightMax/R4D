@@ -1,0 +1,13 @@
+### Ran Playwright code
+```js
+await (async (page) => {
+ const dir='D:/dev/R4D/experiments/q5a-construction-first/output/visual-qa-assembly03/';let n=0,rows=[];
+ async function sample(label,ms){let end=Date.now()+ms;do{const state=await page.evaluate(()=>({tick:q5a.motion.tick,t:q5a.motion.time,phase:q5a.motion.phase,elapsed:q5a.motion.elapsed,ground:q5a.motion.ground,stats:q5a.getStats()}));const file=`B-${String(n++).padStart(3,'0')}.png`;await page.locator('.canvas-wrap').screenshot({path:dir+file});rows.push({file,label,...state});await page.waitForTimeout(80);}while(Date.now()<end);}
+ const click=async n=>page.getByRole('button',{name:n,exact:true}).click();
+ await click('Ходьба');await sample('walk',1900);await click('Присед');await sample('walk-low',1600);await click('Прыжок ↑');await sample('low-jump-start',600);
+ await page.waitForFunction(()=>q5a.motion.phase==='flight');await click('Ходьба');await sample('flight-select-walk',1700);
+ await click('Прыжок ↑');await sample('walk-jump-start',550);await page.waitForFunction(()=>q5a.motion.phase==='flight');await click('Присед');await sample('flight-select-low',1900);
+ console.log(JSON.stringify({scenario:'B realtime speed1, targets in flight',rows}));
+}
+)(page);
+```

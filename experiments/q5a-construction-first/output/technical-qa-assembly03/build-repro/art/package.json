@@ -1,0 +1,276 @@
+{
+  "status": "ART_READY_FOR_CONCEPT_AND_BUILDER_REVIEW",
+  "selected_attempt": "03",
+  "construction_sha256": "7d06ea4636b49c718dad5e9d9f07000d09fa7e5cf105ec325abb84742bfdba26",
+  "prior_candidate_manifest": "attempts/02/candidate-package-v2.json",
+  "validation": "attempts/03/candidate-validation.json",
+  "renderer_contract": "v4 explicit mesh/UV and per-fragment silhouette; hand author alpha must be passed separately",
+  "surfaces": [
+    {
+      "id": "far_shoe",
+      "file": "attempts/03/textures/far_shoe.png",
+      "source_size": [
+        1024,
+        1024
+      ],
+      "sha256": "602390c123a693d47de17cef4503e64250f44fd1fcfc1c3e1f00c7823a56b85b",
+      "pivot_source_px": [
+        488.0,
+        868.0
+      ],
+      "alpha_policy": "v4 registered surface plus optional explicit authored silhouette subtraction",
+      "silhouette_alpha_file": null,
+      "corrections": []
+    },
+    {
+      "id": "far_leg_skin",
+      "file": "attempts/03/textures/far_leg_skin.png",
+      "source_size": [
+        1024,
+        1024
+      ],
+      "sha256": "773b75d92a7b65d4e8783bc2f24fab71349dc432ac2d44ea817b4aefc9c59a34",
+      "pivot_source_px": [
+        504.0,
+        496.0
+      ],
+      "alpha_policy": "v4 registered surface plus optional explicit authored silhouette subtraction",
+      "silhouette_alpha_file": null,
+      "corrections": [
+        "AR3 local 3.5px source-skin smoothing within v4 fold+control zone, 8px feather, generated volume retained"
+      ]
+    },
+    {
+      "id": "far_shorts_leg",
+      "file": "attempts/03/textures/far_shorts_leg.png",
+      "source_size": [
+        1024,
+        1024
+      ],
+      "sha256": "30b0506f8fbc511e3b9257ea2c1a04cdd74de349bb614b7aecdb3425086208b5",
+      "pivot_source_px": [
+        504.0,
+        496.0
+      ],
+      "alpha_policy": "v4 registered surface plus optional explicit authored silhouette subtraction",
+      "silhouette_alpha_file": null,
+      "corrections": [
+        "AR2 shared existing-cloth field only at t .12-.44 around join .28; true hem .5 and upper waist retained"
+      ]
+    },
+    {
+      "id": "near_shoe",
+      "file": "attempts/03/textures/near_shoe.png",
+      "source_size": [
+        1024,
+        1024
+      ],
+      "sha256": "46f0284d6552b1cb7d748cd8324fbd9ef83cfc9c12c8f06dacb0d23962b9e1f0",
+      "pivot_source_px": [
+        536.0,
+        868.0
+      ],
+      "alpha_policy": "v4 registered surface plus optional explicit authored silhouette subtraction",
+      "silhouette_alpha_file": null,
+      "corrections": []
+    },
+    {
+      "id": "near_leg_skin",
+      "file": "attempts/03/textures/near_leg_skin.png",
+      "source_size": [
+        1024,
+        1024
+      ],
+      "sha256": "402e094da1b0e6b432c4c14a5a9deefb0cf89345014bd0a40f92897fe9697d63",
+      "pivot_source_px": [
+        520.0,
+        496.0
+      ],
+      "alpha_policy": "v4 registered surface plus optional explicit authored silhouette subtraction",
+      "silhouette_alpha_file": null,
+      "corrections": [
+        "AR3 local 3.5px source-skin smoothing within v4 fold+control zone, 8px feather, generated volume retained"
+      ]
+    },
+    {
+      "id": "near_shorts_leg",
+      "file": "attempts/03/textures/near_shorts_leg.png",
+      "source_size": [
+        1024,
+        1024
+      ],
+      "sha256": "94111064ccd62c267cbeacba044eeef53dfd18690899ea3dcc0059913748ca5a",
+      "pivot_source_px": [
+        520.0,
+        496.0
+      ],
+      "alpha_policy": "v4 registered surface plus optional explicit authored silhouette subtraction",
+      "silhouette_alpha_file": null,
+      "corrections": [
+        "AR2 shared existing-cloth field only at t .12-.44 around join .28; true hem .5 and upper waist retained"
+      ]
+    },
+    {
+      "id": "pelvis_shorts",
+      "file": "attempts/03/textures/pelvis_shorts.png",
+      "source_size": [
+        1024,
+        1024
+      ],
+      "sha256": "856cce33bfa01d3d0fe0f4f43dafee240455c003d207773428362f3fffd75ec4",
+      "pivot_source_px": [
+        512,
+        496
+      ],
+      "alpha_policy": "v4 registered surface plus optional explicit authored silhouette subtraction",
+      "silhouette_alpha_file": null,
+      "corrections": [
+        "AR2 shared existing-cloth field only at t .12-.44 around join .28; true hem .5 and upper waist retained"
+      ]
+    },
+    {
+      "id": "far_arm_skin",
+      "file": "attempts/03/textures/far_arm_skin.png",
+      "source_size": [
+        1024,
+        1024
+      ],
+      "sha256": "84738522351b1556d1ea78b7c158755e577778cc008e89a9611cae282e5e5de2",
+      "pivot_source_px": [
+        500.0,
+        248.0
+      ],
+      "alpha_policy": "v4 registered surface plus optional explicit authored silhouette subtraction",
+      "silhouette_alpha_file": null,
+      "corrections": [
+        "AR3 local 3.5px source-skin smoothing within v4 fold+control zone, 8px feather, generated volume retained",
+        "AR1 shared forearm/hand skin field across wrist, 12-16 logical unit feather; pivot and overlap fixed"
+      ]
+    },
+    {
+      "id": "far_hand",
+      "file": "attempts/03/textures/far_hand.png",
+      "source_size": [
+        1024,
+        1024
+      ],
+      "sha256": "bc33731fc4e425a50ba431c273e909e8e3312776660f09bb0f82026a4e42864a",
+      "pivot_source_px": [
+        436.0340137974196,
+        495.94012447161197
+      ],
+      "alpha_policy": "v4 registered surface plus optional explicit authored silhouette subtraction",
+      "silhouette_alpha_file": "attempts/03/silhouette-alpha/far_hand.png",
+      "corrections": [
+        "AR1 landmark TPS from raw generated hand crop; v4 anatomical envelope; authored distal-group alpha",
+        "AR1 shared forearm/hand skin field across wrist, 12-16 logical unit feather; pivot and overlap fixed"
+      ]
+    },
+    {
+      "id": "torso_top",
+      "file": "attempts/03/textures/torso_top.png",
+      "source_size": [
+        1024,
+        1024
+      ],
+      "sha256": "6fd9875fdd92455d272dc97126c8f57977d9e77e79b15f894351ea075449d63c",
+      "pivot_source_px": [
+        512.0,
+        316.0
+      ],
+      "alpha_policy": "v4 registered surface plus optional explicit authored silhouette subtraction",
+      "silhouette_alpha_file": null,
+      "corrections": []
+    },
+    {
+      "id": "neck_skin",
+      "file": "attempts/03/textures/neck_skin.png",
+      "source_size": [
+        1024,
+        1024
+      ],
+      "sha256": "d8f63c70b7c07345c69894955763166e9e984cd4ef324cce374642bca0d1d10e",
+      "pivot_source_px": [
+        512.0,
+        220.0
+      ],
+      "alpha_policy": "v4 registered surface plus optional explicit authored silhouette subtraction",
+      "silhouette_alpha_file": null,
+      "corrections": []
+    },
+    {
+      "id": "head_face",
+      "file": "attempts/03/textures/head_face.png",
+      "source_size": [
+        1024,
+        1024
+      ],
+      "sha256": "5655c68671c7c7417a81c33724020be06ddca790a6079b0a8cb9ed03ebfbb9c6",
+      "pivot_source_px": [
+        522.0,
+        180.0
+      ],
+      "alpha_policy": "v4 registered surface plus optional explicit authored silhouette subtraction",
+      "silhouette_alpha_file": null,
+      "corrections": []
+    },
+    {
+      "id": "near_arm_skin",
+      "file": "attempts/03/textures/near_arm_skin.png",
+      "source_size": [
+        1024,
+        1024
+      ],
+      "sha256": "c436d6a789a1f2d8f70794f17a20fe5d73476218ae11cb3ae2a4a08f4e116e0c",
+      "pivot_source_px": [
+        524.0,
+        248.0
+      ],
+      "alpha_policy": "v4 registered surface plus optional explicit authored silhouette subtraction",
+      "silhouette_alpha_file": null,
+      "corrections": [
+        "AR3 local 3.5px source-skin smoothing within v4 fold+control zone, 8px feather, generated volume retained",
+        "AR1 shared forearm/hand skin field across wrist, 12-16 logical unit feather; pivot and overlap fixed"
+      ]
+    },
+    {
+      "id": "near_hand",
+      "file": "attempts/03/textures/near_hand.png",
+      "source_size": [
+        1024,
+        1024
+      ],
+      "sha256": "23cda3627d01c9163a5ff5cd53529d50d30e608e4399762f904974d8ce9f6d72",
+      "pivot_source_px": [
+        601.1420155160193,
+        492.1619588633605
+      ],
+      "alpha_policy": "v4 registered surface plus optional explicit authored silhouette subtraction",
+      "silhouette_alpha_file": "attempts/03/silhouette-alpha/near_hand.png",
+      "corrections": [
+        "AR1 landmark TPS from raw generated hand crop; v4 anatomical envelope; authored distal-group alpha",
+        "AR1 shared forearm/hand skin field across wrist, 12-16 logical unit feather; pivot and overlap fixed"
+      ]
+    },
+    {
+      "id": "hair",
+      "file": "attempts/03/textures/hair.png",
+      "source_size": [
+        1024,
+        1024
+      ],
+      "sha256": "191fe02375136d55495e3601244b6e3f6623048018eabc75e107fe804e720f98",
+      "pivot_source_px": [
+        522.0,
+        180.0
+      ],
+      "alpha_policy": "v4 registered surface plus optional explicit authored silhouette subtraction",
+      "silhouette_alpha_file": null,
+      "corrections": []
+    }
+  ],
+  "gate_commit": "d3bdf8f1cffebe2179805eeb54a8a36faab08805",
+  "method": "existing generated material, deterministic local retouch and v4 registration; no additional generation",
+  "correction_log": "attempts/03/ART_CORRECTIONS.md",
+  "source_provenance": "attempts/02/ART-attempt02.md"
+}

@@ -1,0 +1,6 @@
+### Result
+{"viewport":{"width":1280,"height":720},"ua":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/155.0.0.0 Safari/537.36"}
+### Ran Playwright code
+```js
+await (async(page)=>{await page.evaluate(()=>scrollTo(0,0));await page.screenshot({path:'D:/dev/R4D/experiments/q5a-construction-first/output/visual-qa-assembly03/short-desktop-viewport.png'});return {viewport:page.viewportSize(),ua:await page.evaluate(()=>navigator.userAgent)};})(page);
+```

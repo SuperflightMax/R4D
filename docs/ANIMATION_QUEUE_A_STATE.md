@@ -10,7 +10,7 @@
 
 | Порядок | Опыт | Состояние | Материалы и показ |
 |---|---|---|---|
-| 1 | Q5A — конструкция до арта | Assembly03 frozen на `101343caa68579aacd5e6c01b94206680c364ab7`; Asset+Concept targeted re-review PASS, art/motion gate closed; ready for independent Technical QA and Visual QA | `experiments/q5a-construction-first/LEAD_STATE.md`, `ARTIST_MOTION_REREVIEW_ASSEMBLY03.md`, `CONCEPT_MOTION_REREVIEW_ASSEMBLY03.md`, `output/artist-motion-asset-rereview03/`, `output/artist-motion-concept-rereview03/`; QA ещё not started, release не начат |
+| 1 | Q5A — конструкция до арта | Q5A accepted by CTO для PoC release; ASSEMBLY03 frozen `101343caa68579aacd5e6c01b94206680c364ab7`; art/motion и Technical/Visual QA gates closed | `experiments/q5a-construction-first/CTO_ACCEPTANCE_ASSEMBLY03.md`, `TECHNICAL_QA_ASSEMBLY03.md`, `VISUAL_QA_ASSEMBLY03.md`, `LEAD_STATE.md`; pending Release Engineer publication, release ещё не начат |
 | 2 | Q4A — цельный образ до частей | Ожидает завершения Q5A | Предусмотрен `experiments/q4a-whole-character/`; фактической ссылки на результат пока нет |
 | 3 | Q2A — свободный выбор способа | Ожидает завершения Q4A | Предусмотрен `experiments/q2a-simple-character/`; фактической ссылки на результат пока нет |
 
@@ -19,7 +19,7 @@ Concept Artist `01a16ffd-87e7-7cf3-a9a2-29d2cd97a7ec` и Builder
 `01a16ffd-8811-7d20-b80a-6a938f50b5a5`. Новые сотрудники или дубли сессий
 не создавались.
 
-Статический art gate, assembly02 и отрицательные motion review сохранены в истории. В assembly03 исправлен только общий bbox-based framing 2×; техническая заморозка и проверки Lead завершены ранее. Затем оба существующих художника независимо лично повторно просмотрели исправленный jump: ARTIST_MOTION_PASS и CONCEPT_MOTION_PASS, AM-A1/CM1 закрыты для exact frozen `101343c…`. Lead проверил новые отчёты/ссылки/witnesses/cleanup и побайтную сохранность всех1299 прежних Q5A-файлов. Исторические CHANGES_REQUIRED и evidence не переписаны; production не изменён. Art/motion gate closed, кандидат готов к независимым Technical QA и Visual QA по следующей выдаче CTO; QA ещё not started. Текущий ход сохраняет PASS/evidence/state, не запускает QA, release или Q4A/Q2A. Точные проверки и evidence — в `experiments/q5a-construction-first/LEAD_STATE.md`.
+Статический арт, исходные attempts, corrections и отрицательные review сохранены в истории. Art/motion gate assembly03 закрыт двумя независимыми художественными PASS. На QA base `0f032c21f555473aca7c61960a8c563d2440fc97` получены TECHNICAL_QA_PASS и VISUAL_QA_PASS для неизменного frozen production `101343c…`. CTO `cto-r4d-01` принял Q5A для PoC release без блокеров; слабый contrast служебного dark badge принят как non-blocking limitation без нового correction cycle. Формальная приёмка и известные Chrome/mobile emulation/PoC-ограничения сохранены в `CTO_ACCEPTANCE_ASSEMBLY03.md`. Production diff=none; Lead сохраняет QA/evidence/acceptance/state. Публикация Release Engineer — отдельный следующий шаг, её доступность пока не подтверждена. Q4A/Q2A не стартовали; этот ход не запускает release или новые опыты.
 
 CTO по ходу заменяет сведения фактическим состоянием: активный опыт, команда, ссылки на материалы/демо, полученное качество и решение о продолжении или остановке. Появление каталога само по себе не означает начала или завершения опыта. Новый отдельный статусный сервис не требуется.
 

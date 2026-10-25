@@ -1,0 +1,59 @@
+{
+  "result": "PASS",
+  "head": "0f032c21f555473aca7c61960a8c563d2440fc97",
+  "origin": "0f032c21f555473aca7c61960a8c563d2440fc97",
+  "productionSha": "101343caa68579aacd5e6c01b94206680c364ab7",
+  "productionWorkingDiff": "",
+  "firstAttemptVerifiedFiles": 30,
+  "oldExperimentsChangedSinceOnboarding": "",
+  "codeComparison": [
+    {
+      "current": "rig.js",
+      "historicalFiles": 22,
+      "exactMatches": [],
+      "significantCurrentLines": 47,
+      "largestOverlap": {
+        "matchingLongLines": 0,
+        "file": null
+      }
+    },
+    {
+      "current": "motion.js",
+      "historicalFiles": 22,
+      "exactMatches": [],
+      "significantCurrentLines": 25,
+      "largestOverlap": {
+        "matchingLongLines": 0,
+        "file": null
+      }
+    }
+  ],
+  "productionDependencies": {
+    "name": "r4d-q5a-nela",
+    "private": true,
+    "type": "module",
+    "scripts": {
+      "assets": "python -B assembly/prepare_assets.py",
+      "test": "node assembly/tests.mjs",
+      "build": "node assembly/build.mjs",
+      "dev": "node assembly/server.mjs"
+    }
+  },
+  "runtimeImports": {
+    "app.js": [
+      "./rig.js",
+      "./motion.js",
+      "./renderer.js"
+    ],
+    "rig.js": [],
+    "motion.js": [
+      "./rig.js"
+    ],
+    "renderer.js": [
+      "./rig.js",
+      "./framing.js"
+    ],
+    "framing.js": []
+  },
+  "runtimeNoPoseTickPhasePatches": "manual review: rig has no pose/tick/phase switches; constraints depend on geometric areas/crossings; framing uses all vertices and a camera interval; phase switches only in general jump state machine"
+}

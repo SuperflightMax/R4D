@@ -1,0 +1,10 @@
+async(page)=>{
+ const dir='D:/dev/R4D/experiments/q5a-construction-first/output/visual-qa-assembly03/';let rows=[],n=0;
+ await page.goto('http://127.0.0.1:5195/review/r4d/q5a-construction-first/');await page.waitForFunction(()=>window.q5a);await page.screenshot({path:dir+'mobile-initial-full.png',fullPage:true});
+ const click=async n=>page.getByRole('button',{name:n,exact:true}).click();
+ async function sample(label,ms){const end=Date.now()+ms;do{const file='M-'+String(n++).padStart(3,'0');const s=await page.evaluate(()=>({tick:q5a.motion.tick,time:q5a.motion.time,phase:q5a.motion.phase,elapsed:q5a.motion.elapsed,ground:q5a.motion.ground}));await page.locator('.canvas-wrap').screenshot({path:dir+file+'.png',scale:'css'});rows.push({file,label,...s});await page.waitForTimeout(90);}while(Date.now()<end);}
+ await sample('A idle',650);await click('Присед');await sample('A low',900);await click('Ходьба');await sample('A walk',1500);await click('Стойка');await sample('A idle stop',1300);await click('Прыжок ↑');await sample('A idle-jump-idle',2600);
+ await click('Ходьба');await sample('B walk',1400);await click('Присед');await sample('B low',1100);await click('Прыжок ↑');await sample('B low-jump',500);await page.waitForFunction(()=>q5a.motion.phase==='flight');await click('Ходьба');await sample('B flight-target-walk',1500);await click('Прыжок ↑');await sample('B walk-jump',500);await page.waitForFunction(()=>q5a.motion.phase==='flight');await click('Присед');await sample('B flight-target-low',1600);
+ await page.locator('#pause').click();await page.locator('#step').click();await page.locator('summary').click();await page.locator('#zoom').check();await page.locator('#dark').check();await page.locator('#bones').check();await page.locator('#mesh').check();await page.evaluate(()=>scrollTo(0,0));await page.screenshot({path:dir+'mobile-diagnostics-full.png',fullPage:true});
+ return {scenario:'mobile realtime A and B speed1; UI pause/step/diagnostics',environment:await page.evaluate(()=>({ua:navigator.userAgent,viewport:[innerWidth,innerHeight],dpr:devicePixelRatio,touch:navigator.maxTouchPoints})),rows};
+}
