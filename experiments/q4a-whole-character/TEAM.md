@@ -98,3 +98,11 @@ PREGEN троих завершён/pushed `6fe28c5`; первый full raw-v03/�
 CTO разрешил реальное изменение одежды на непрозрачные fitted running/compression shorts до середины бедра и один whole-source вызов. PREGEN троих согласован/pushed `9415266`. Один новый raw успешно получен без блока, сохранён до диагностических производных, hash совпадает с оригиналом imagegen. Все трое лично посмотрели raw/light/dark/checker и дали SOURCE_POSE_FAIL по пункту2: ближняя верхняя рука ещё перекрывает майку, плотные подошвы различаются на15 px. Identity/art/новый garment/ракурс приняты; прежний pelvis-only критерий не применялся. Движение и ткань в low не проверялись.
 
 Точный gate/provenance/reviews/передача CTO — `WHOLE_V03.md`. Нет accepted whole, следующего вызова, parts/masks/rig/app/build/full motion/QA/release/Q2A. Предыдущие raw/reviews/block/evidence01–05 frozen, чужие материалы не тронуты. Дальнейший подход/условия решает CTO; исполнители ждут прямого поручения.
+
+### Whole-v04 — этап P разрешён
+
+CTO принял FAIL correction02 (`182a3e9`), закрыл text edits raw-v03 и разрешил другой способ постановки: заранее согласованный единый технический WHOLE pose reference + correction02 только identity/style/garment reference. Поручение/владение — `WHOLE_V04.md`. Concept задаёт короткий pose brief, Builder создаёт единую связную техническую болванку SVG/PNG1024×1536, все трое лично смотрят и исправляют неестественный guide до freeze. G — один новый full whole только после pushed P и старта Lead. Новый source требует alpha-проверенного near-arm gap и dense sole rows≤4rawpx; критерии не ослабляются. Старые материалы frozen; parts/masks/rig/motion/QA/release/Q2A закрыты.
+
+### Whole-v04 — P завершён, guide frozen
+
+Concept вернул первую версию на correction пропорций ног/ближнего предплечья. Builder исправил именно guide; первая версия и замечания сохранены. Исправленный PNG `6288eecc6d28d73b1750d07db97d056e21b708ad019bb6f3d62fb8fbd657b47e` лично посмотрели и явно приняли Concept/Asset/Builder, Lead также повторно посмотрел и сверил hash. Поза/negative space не являются будущими масками и не доказывают соблюдения gate новым raw. Итог P/ссылки — `WHOLE_V04.md`. После pushed P Asset получает отдельный старт одного G; parts/masks/rig и следующие этапы закрыты.

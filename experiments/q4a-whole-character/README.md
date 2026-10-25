@@ -2,7 +2,9 @@
 
 Канонический заказ: [Queue A](../../CTO_EXPERIMENT_QUEUE_A.md), общие условия и секция Q4A. [Команда и состояние](TEAM.md), [договор до генерации](AGREEMENT.md).
 
-**Текущая попытка — whole-v03 correction02.** После инструментального блока correction01 CTO разрешил новый закрытый спортивный дизайн. Один raw и три личных reviews получены: Мирон/арт/fitted shorts/ракурс приняты, но верхняя ближняя рука ещё перекрывает майку, плотные подошвы различаются на15 px. **SOURCE_POSE_FAIL.** [Точный статус и передача CTO](WHOLE_V03.md#correction02-source_pose_fail-gate-завершён). Accepted whole нет: нарезка/rig/full parts/motion/QA/release/Q2A не разрешены.
+**Текущая попытка — whole-v04.** Этап P завершён: после исправления анатомических замечаний Concept трое лично согласовали [единый pose-guide](builder/whole-v04/pose-guide.png), SHA256 `6288eecc…657b47e`. [Поручение, reviews и границы](WHOLE_V04.md). После публикации P — один новый whole-source вызов G с отдельными pose и identity/style/garment references; source пока не получен. Accepted whole нет: нарезка/rig/full parts/motion/QA/release/Q2A не разрешены.
+
+Последний source — whole-v03 correction02: identity/art/fitted shorts/ракурс приняты, но верхняя ближняя рука перекрывает майку, плотные подошвы различаются на15 px. [SOURCE_POSE_FAIL](WHOLE_V03.md#correction02-source_pose_fail-gate-завершён), опубликован `182a3e9`; все прежние материалы frozen.
 
 Семейство v02 3-panel/single-affine закрыто по решению CTO после [read-only FAIL05](HANDOFF_05.md); [brief05](CORRECTION_05.md) остаётся неизменным входом анализа. Whole-v03 — новый цельный source в той же Q4A, без переноса старых частей/рига.
 
