@@ -1,0 +1,75 @@
+{
+  "schema": "r4d.p0.final-board-components.v1",
+  "boardId": "board-02",
+  "environment": {
+    "rawFile": "../raw/plate-v1-source.png",
+    "rawSize": [
+      1254,
+      1254
+    ],
+    "rawSha256": "3c8a71d09bf5e33b6ab236aafab5a78309781a14b45f76c665b7dfcd11c250b2",
+    "preparedFile": "environment-floor-plate-1536.png",
+    "preparedSize": [
+      1536,
+      1536
+    ],
+    "preparedSha256": "d547aa14de2c7b28eb5b2d3fb562e519cec4c98f7e781fb67e14cd73ddce84ad",
+    "transform": "uniform full-frame bicubic resize; no crop; no independent axis transform; opaque RGB export"
+  },
+  "master": {
+    "rawFile": "../raw/master-v1-source.png",
+    "rawSize": [
+      1254,
+      1254
+    ],
+    "rawSha256": "b5211452bb8cb3b0e06ddc8aaaaceaeb2e68d21f26a3638783ab774a2f7372e7",
+    "alphaBoundsAtThreshold": [
+      239,
+      147,
+      1012,
+      1105
+    ],
+    "alphaDropBelow": 8,
+    "alphaOpaqueAt": 240,
+    "paddingPx": 64,
+    "cropRect": [
+      175,
+      83,
+      902,
+      1087
+    ],
+    "preparedFile": "control-master-rgba.png",
+    "preparedSize": [
+      902,
+      1087
+    ],
+    "preparedSha256": "9c8cc9d8ce75d181c120bee7b3dd1ce0cfe68509526a004814f169681edf0a7f",
+    "baseCenterAnchorPx": [
+      451.0,
+      1022
+    ],
+    "anchorMeaning": "center of lowest visible base-contact edge beneath the object axis"
+  },
+  "shadow": {
+    "preparedFile": "control-shadow-rgba.png",
+    "preparedSize": [
+      902,
+      1087
+    ],
+    "preparedSha256": "59a3edb86d5cee16311aeffc745bf1d34822bb79dc711a9e66699ab46c854fc4",
+    "baseCenterAnchorPx": [
+      451.0,
+      1022
+    ],
+    "rgb": [
+      66,
+      42,
+      28
+    ],
+    "offsetPx": [
+      64,
+      15
+    ],
+    "rule": "board-owned deterministic soft contact/cast shadow; same canvas and anchor as master; upper-left light means cast right/down"
+  }
+}

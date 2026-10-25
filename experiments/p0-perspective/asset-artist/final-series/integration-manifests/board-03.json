@@ -1,0 +1,28 @@
+{
+  "schema": "r4d.p0.final-board-integration.v1",
+  "boardId": "board-03",
+  "layoutSha256": "24e1892241dd00b2b027f9ccdcecc49645d7289c0e62cebf14e7a36bef9d56b6",
+  "frame": [1536, 1536],
+  "playablePlane": {
+    "quadNormalized": [[0.225, 0.255], [0.775, 0.255], [0.915, 0.775], [0.085, 0.775]],
+    "seams": [{"q": 0.255, "yPx": 391.68}, {"q": 0.775, "yPx": 1190.4}]
+  },
+  "sources": {
+    "plate": {"file": "../board-03/prepared/environment-floor-plate-1536.png", "sha256": "282ce3638de251e053f23c915c53f9a8311cf2ce16c08d6e06e36747c88f83c0"},
+    "master": {"file": "../board-03/prepared/control-master-rgba.png", "sha256": "8f5924dd559aca2acdf85a8fc04a03e367a7fa9a247763520debc109a0e09dc4"},
+    "shadow": {"file": "../board-03/prepared/control-shadow-rgba.png", "sha256": "6341a145b156ee5abd27352f797c701671ad28699749c2098f09b822ceb2cb55"}
+  },
+  "instances": [
+    {"instanceId": "board-03-drum-far", "p": 0.33, "q": 0.338, "uniformScale": 0.939},
+    {"instanceId": "board-03-drum-mid-far", "p": 0.52, "q": 0.453, "uniformScale": 0.978},
+    {"instanceId": "board-03-drum-mid-near", "p": 0.69, "q": 0.567, "uniformScale": 1.018},
+    {"instanceId": "board-03-drum-near", "p": 0.54, "q": 0.681, "uniformScale": 1.058}
+  ],
+  "baseCenterDefinition": "center of lowest visible base-contact edge beneath the object axis",
+  "deterministicAssembly": true,
+  "sortKey": ["q", "p", "instanceId"],
+  "painterDirection": "far-to-near",
+  "shadowRule": "same-anchor-destination-scale;draw-before-master",
+  "controlMarkersAllowed": false,
+  "overlays": []
+}
