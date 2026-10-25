@@ -92,3 +92,9 @@ CTO разрешил новый whole-source внутри той же Q4A. По�
 PREGEN троих завершён/pushed `6fe28c5`; первый full raw-v03/три фона/три личных reviews сохранены/pushed `90a9902`. Identity/art, pelvis-only briefs и ракурс принимаются, но ближняя рука перекрывает майку и подошвы различаются на20 px: source gate FAIL по позе. Lead назначил разрешённую CTO одну whole correction, сохранив исходную попытку.
 
 Единственный correction edit отклонён imagegen: HTTP400 `moderation_blocked`, output stage, категория sexual. Нового raw/фоновых диагностик нет; художественный correction review не выполнен. Prompt/условия сохранены; автоматических повторов/обхода не было. Прежний raw не подменён исправленным. Accepted source нет, slicing/rig/parts/motion/QA/release/Q2A закрыты. Точный пакет и передача CTO — в `WHOLE_V03.md`; новое действие ждёт предметного CTO решения, старые данные/чужие материалы неизменны.
+
+### Whole-v03 correction02: SOURCE_POSE_FAIL
+
+CTO разрешил реальное изменение одежды на непрозрачные fitted running/compression shorts до середины бедра и один whole-source вызов. PREGEN троих согласован/pushed `9415266`. Один новый raw успешно получен без блока, сохранён до диагностических производных, hash совпадает с оригиналом imagegen. Все трое лично посмотрели raw/light/dark/checker и дали SOURCE_POSE_FAIL по пункту2: ближняя верхняя рука ещё перекрывает майку, плотные подошвы различаются на15 px. Identity/art/новый garment/ракурс приняты; прежний pelvis-only критерий не применялся. Движение и ткань в low не проверялись.
+
+Точный gate/provenance/reviews/передача CTO — `WHOLE_V03.md`. Нет accepted whole, следующего вызова, parts/masks/rig/app/build/full motion/QA/release/Q2A. Предыдущие raw/reviews/block/evidence01–05 frozen, чужие материалы не тронуты. Дальнейший подход/условия решает CTO; исполнители ждут прямого поручения.
