@@ -1,0 +1,99 @@
+{
+  "schema": "r4d.p0.perspective-model.v0.1",
+  "status": "research-proposal-not-exact-camera-recovery",
+  "source": {
+    "file": "03-sun-temple.jpg",
+    "readOnlyPath": "K:\\Agents\\R4D\\Assets\\perspective\\03-sun-temple.jpg",
+    "sha256": "f5cfa2bbe8e4b49ecbc0f4c7a0cee99842b182b56ae495979153b8fc9ff86e32",
+    "widthPx": 1536,
+    "heightPx": 1536
+  },
+  "frame": {
+    "aspectRatio": [1, 1],
+    "centerNormalized": [0.5, 0.5],
+    "zonesNormalizedY": {
+      "backgroundMax": 0.255,
+      "gamePlane": [0.255, 0.775],
+      "foregroundMin": 0.775
+    }
+  },
+  "coordinateSystem": {
+    "imageOrigin": "top-left",
+    "imageNormalized": "p=x/W, q=y/H",
+    "planeU": [-1.0, 1.0],
+    "planeZ": [0.0, 1.0],
+    "zDirection": "far-to-near"
+  },
+  "selectedModel": {
+    "type": "ruled-trapezoid-with-independent-weak-depth-scale",
+    "planeFormula": {
+      "q": "0.255 + 0.520*z",
+      "halfWidth": "0.275 + 0.140*z",
+      "p": "0.500 + u*halfWidth"
+    },
+    "inverseFormula": {
+      "z": "(q - 0.255) / 0.520",
+      "u": "(p - 0.500) / (0.275 + 0.140*z)"
+    },
+    "fieldQuadNormalizedClockwise": [
+      [0.225, 0.255],
+      [0.775, 0.255],
+      [0.915, 0.775],
+      [0.085, 0.775]
+    ],
+    "fieldQuadPxAt1536Clockwise": [
+      [346, 392],
+      [1190, 392],
+      [1405, 1190],
+      [131, 1190]
+    ],
+    "virtualVanishingPointNormalized": [0.5, -0.7664285714],
+    "virtualVanishingPointPxAt1536": [768, -1177],
+    "objectScaleFormula": "0.91 + 0.18*z",
+    "objectScaleReferenceDepth": 0.5,
+    "objectScaleReferenceValue": 1.0,
+    "visibleHeightRule": "visible width and visible height both multiply by objectScale; base point stays on the plane anchor"
+  },
+  "controlRows": [
+    {"z": 0.16, "yPxAt1536": 519, "scale": 0.9388},
+    {"z": 0.38, "yPxAt1536": 695, "scale": 0.9784},
+    {"z": 0.60, "yPxAt1536": 871, "scale": 1.0180},
+    {"z": 0.82, "yPxAt1536": 1047, "scale": 1.0576}
+  ],
+  "comparisonProjectiveHomography": {
+    "sourceSquare": "a,b in [0,1], b=0 far, b=1 near",
+    "matrixNormalizedImage": [
+      [0.55, -0.1686747, 0.225],
+      [0.0, 0.25855418, 0.255],
+      [0.0, -0.33734944, 1.0]
+    ],
+    "use": "diagnostic comparison only; not the claimed camera"
+  },
+  "tolerances": {
+    "finalAspectRatio": [1, 1],
+    "centerOffsetMaxNormalizedX": 0.02,
+    "farEdgeYTarget": 0.255,
+    "nearEdgeYTarget": 0.775,
+    "edgeYMaxAbsError": 0.025,
+    "cornerMaxErrorFrameDiagonal": 0.035,
+    "cornerRmsMaxErrorFrameDiagonal": 0.025,
+    "nearToFarFieldWidthTarget": 1.5090909091,
+    "nearToFarFieldWidthRange": [1.4, 1.62],
+    "sideGuideMaxDeviationNormalizedX": 0.02,
+    "objectScaleSlopeTarget": 0.18,
+    "objectScaleSlopeRange": [0.10, 0.26],
+    "objectNearToFarRatioRange": [1.11, 1.30],
+    "objectDimensionRelativeErrorMax": 0.08,
+    "baseAnchorErrorMaxNormalizedY": 0.015,
+    "verticalAngleErrorMaxDeg": 3.0,
+    "recedingEdgeMedianAngleErrorMaxDeg": 6.0
+  },
+  "nonGoals": [
+    "exact recovery of the source camera",
+    "P1 collider mapping",
+    "physics",
+    "ball",
+    "sim-core",
+    "claims about generator reproducibility before the P0 generation series"
+  ]
+}

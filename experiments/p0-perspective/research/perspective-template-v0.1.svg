@@ -1,0 +1,78 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1536" height="1536" viewBox="0 0 1536 1536">
+  <title>R4D P0 perspective control template v0.1</title>
+  <desc>Technical 2.5D composition reference. Not final art and not an exact recovered camera.</desc>
+  <defs>
+    <linearGradient id="plane" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#f1dfb9"/>
+      <stop offset="1" stop-color="#d9b87a"/>
+    </linearGradient>
+    <style>
+      .guide { fill: none; stroke: #2774a6; stroke-width: 5; }
+      .minor { fill: none; stroke: #2774a6; stroke-width: 3; stroke-dasharray: 14 12; opacity: .82; }
+      .axis { fill: none; stroke: #ad3251; stroke-width: 4; stroke-dasharray: 20 14; }
+      .label { font: 28px sans-serif; fill: #18384d; paint-order: stroke; stroke: #fff7e6; stroke-width: 7; stroke-linejoin: round; }
+      .small { font: 23px sans-serif; fill: #18384d; paint-order: stroke; stroke: #fff7e6; stroke-width: 6; }
+      .volume { fill: #e58545; fill-opacity: .70; stroke: #7d321f; stroke-width: 5; }
+      .top { fill: #ffd186; fill-opacity: .82; stroke: #7d321f; stroke-width: 5; }
+      .base { fill: none; stroke: #7d321f; stroke-width: 5; stroke-dasharray: 9 8; }
+    </style>
+  </defs>
+
+  <rect width="1536" height="1536" fill="#f7ecd5"/>
+  <rect x="0" y="0" width="1536" height="392" fill="#efcf9a"/>
+  <rect x="0" y="1190" width="1536" height="346" fill="#c99459"/>
+  <polygon points="346,392 1190,392 1405,1190 131,1190" fill="url(#plane)" stroke="#173b52" stroke-width="9"/>
+
+  <!-- Constant-u guides. Their extensions share a virtual vanishing point at (768,-1177). -->
+  <line class="minor" x1="451.2" y1="392" x2="290.0" y2="1190"/>
+  <line class="minor" x1="556.8" y1="392" x2="449.3" y2="1190"/>
+  <line class="minor" x1="662.4" y1="392" x2="608.6" y2="1190"/>
+  <line class="axis" x1="768" y1="0" x2="768" y2="1536"/>
+  <line class="minor" x1="873.6" y1="392" x2="927.4" y2="1190"/>
+  <line class="minor" x1="979.2" y1="392" x2="1086.7" y2="1190"/>
+  <line class="minor" x1="1084.8" y1="392" x2="1246.0" y2="1190"/>
+
+  <!-- Depth rows z=.16, .38, .60, .82. -->
+  <line class="minor" x1="311.2" y1="519" x2="1224.8" y2="519"/>
+  <line class="minor" x1="263.9" y1="695" x2="1272.1" y2="695"/>
+  <line class="minor" x1="216.6" y1="871" x2="1319.4" y2="871"/>
+  <line class="minor" x1="169.3" y1="1047" x2="1366.7" y2="1047"/>
+
+  <text class="label" x="44" y="70">P0 perspective control v0.1 — 1536 × 1536</text>
+  <text class="small" x="44" y="108">technical geometry only · not final art · not an exact recovered camera</text>
+  <text class="label" x="54" y="365">background / architecture</text>
+  <text class="label" x="54" y="1237">foreground / receivers</text>
+  <text class="small" x="1196" y="381">far q=.255</text>
+  <text class="small" x="1181" y="1175">near q=.775</text>
+
+  <!-- Same nominal prism at four depths; both width and height use S(z). -->
+  <g aria-label="control volumes with scale by depth">
+    <!-- z=.16, S=.9388, base (768,519) -->
+    <rect class="volume" x="716.4" y="397.0" width="103.3" height="122.0"/>
+    <polygon class="top" points="716.4,397.0 819.7,397.0 819.7,380.1 716.4,380.1"/>
+    <line class="base" x1="716.4" y1="519" x2="819.7" y2="519"/>
+    <text class="small" x="836" y="505">z=.16 · S=.939</text>
+
+    <!-- z=.38, S=.9784, base (515,695) -->
+    <rect class="volume" x="461.2" y="567.8" width="107.6" height="127.2"/>
+    <polygon class="top" points="461.2,567.8 568.8,567.8 575.6,549.0 468.0,549.0"/>
+    <line class="base" x1="461.2" y1="695" x2="568.8" y2="695"/>
+    <text class="small" x="337" y="681">z=.38 · S=.978</text>
+
+    <!-- z=.60, S=1.018, base (1020,871) -->
+    <rect class="volume" x="964.0" y="738.7" width="112.0" height="132.3"/>
+    <polygon class="top" points="964.0,738.7 1076.0,738.7 1068.9,718.8 956.9,718.8"/>
+    <line class="base" x1="964.0" y1="871" x2="1076.0" y2="871"/>
+    <text class="small" x="1094" y="857">z=.60 · S=1.018</text>
+
+    <!-- z=.82, S=1.0576, base (768,1047) -->
+    <rect class="volume" x="709.8" y="909.5" width="116.3" height="137.5"/>
+    <polygon class="top" points="709.8,909.5 826.1,909.5 826.1,888.0 709.8,888.0"/>
+    <line class="base" x1="709.8" y1="1047" x2="826.1" y2="1047"/>
+    <text class="small" x="840" y="1033">z=.82 · S=1.058</text>
+  </g>
+
+  <circle cx="768" cy="392" r="10" fill="#ad3251"/>
+  <circle cx="768" cy="1190" r="10" fill="#ad3251"/>
+  <text class="small" x="786" y="429">center axis p=.500</text>
+</svg>
