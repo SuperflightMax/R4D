@@ -126,3 +126,13 @@ CTO принял source FAIL без переименования в PASS, зак
 R0 опубликован `746cd6d`, затем R1 отдельно запущен Lead. Минимальные source-derived материалы/локальный hidden tank repair и новый v04 full-chain low230 feasibility получены. Найден cuff-owner bug, затем Lead выявил ранний envelope31 vs stable actual44 trace mismatch; оба исправления/исторические прогоны сохранены. Корректный pipeline по frozen actual44 contour покрывает все52221 alpha pixels, но fixed ARAP continuation останавливается low53/240/drop50,79px на triangle923 с отрицательной ориентацией initial harmonic iterate. Это конкретный solver FAIL, не общая невозможность cage.
 
 Exact rendered after/full shoulder swing+low/immutable build не получены; личные MOTION_REVIEW двух художников не выполнялись. Shoulder hidden corridor остаётся раскрытым ограничением материала. Совместного PASS нет, full parts не открыты. Точный итог/ссылки — `EARLY_V04_R1.md`; дальше только прямое решение CTO. Прежние raw/evidence/guide/R0 и чужие материалы сохранены; whole calls/full motion/QA/release/Q2A закрыты.
+
+### R2 — последняя численная гипотеза разрешена CTO
+
+CTO принял `bd125d2` как конкретный harmonic-continuation FAIL и разрешил один nonlinear positive continuation при frozen raw/Asset PNG/actual44/rest vertices/triangles/owners/29pins/241targets/drop230/back110/ARAP energy/leg geometry. Brief/владение — `EARLY_V04_R2.md`. Builder сначала готовит точный solver contract/code/hashes и distortion stop, без actual solve до публикации договора/старта Lead. Concept/Asset сверяют условия через Lead. После результата tuning запрещён; даже подтверждённый implementation bug требует audit и отдельного решения CTO. При FAIL/stall/collapse численная ветка закрывается; только при техническом PASS — один bounded shoulder-corridor cycle и один exact early-after с двумя личными MOTION_REVIEW. Full parts/full motion/QA/release/Q2A закрыты, прежние файлы immutable.
+
+### R2-contract02 — точные согласия, actual закрыт до CTO gate
+
+После двух pre-freeze замечаний CTO исправлен evidence-state edge, повторный synthetic/четыре edge checks allPass, edge-check включён в финальный44-entry manifest. Старый draft сохранён в preflight01; config/solver law неизменны. Lead сверил все hashes, Concept и Asset явно приняли contract `d5f1a716…6b2415` и manifest `c02ada67…1f6d7e8` в собственных CONTRACT_REVIEW.md. Точный пакет/ссылки — `EARLY_V04_R2.md`.
+
+Статус READY_FOR_CTO_R2_READ_ONLY_GATE: commit/push и передача CTO, обязательный положительный read-only gate перед единственным actual стартом. Ни actual/auth/gate/result markers, ни новых repair/after пока нет. Frozen R1/raw/PNG/rest/targets и чужой dirty baseline сохранены. Numeric/art PASS не заявлен.

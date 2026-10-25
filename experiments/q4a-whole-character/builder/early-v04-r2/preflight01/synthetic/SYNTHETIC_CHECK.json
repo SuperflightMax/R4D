@@ -1,0 +1,58 @@
+{
+  "identityEnergy": 1.540743955509789e-31,
+  "identityGradientMax": 0.0,
+  "rigidMotionEnergy": 1.4338548435962974e-29,
+  "gradientChecks": [
+    {
+      "vertex": 12,
+      "axis": 0,
+      "analytic": 0.990729111054117,
+      "finiteDifference": 0.9907291110236581,
+      "absoluteError": 3.045885765828871e-11
+    },
+    {
+      "vertex": 12,
+      "axis": 1,
+      "analytic": -0.8790512817434417,
+      "finiteDifference": -0.879051281714449,
+      "absoluteError": 2.8992697131968725e-11
+    },
+    {
+      "vertex": 7,
+      "axis": 0,
+      "analytic": -0.5617735758098238,
+      "finiteDifference": -0.5617735757856845,
+      "absoluteError": 2.413924615751739e-11
+    },
+    {
+      "vertex": 7,
+      "axis": 1,
+      "analytic": 0.753398369265321,
+      "finiteDifference": 0.7533983692686873,
+      "absoluteError": 3.366307232965937e-12
+    },
+    {
+      "vertex": 18,
+      "axis": 0,
+      "analytic": 0.05175516334475994,
+      "finiteDifference": 0.05175516334388063,
+      "absoluteError": 8.793105132909318e-13
+    }
+  ],
+  "arapDefinitionAgreementError": 5.551115123125783e-17,
+  "nonpositiveTrialRejected": true,
+  "syntheticContinuationStop": null,
+  "outputsCompleted": 4,
+  "allPinsExact": true,
+  "allAcceptedOutputsWithinDistortionGate": true,
+  "adaptiveHomotopyExercised": true,
+  "syntheticImpossibleBoundaryStopped": true,
+  "syntheticExpectedFailure": {
+    "termination": "MINIMUM_HOMOTOPY_STEP",
+    "candidateReason": "SINGULAR_COMPRESSION",
+    "iterations": 157,
+    "acceptedSubsteps": 7
+  },
+  "noActualInputsLoaded": true,
+  "pass": true
+}

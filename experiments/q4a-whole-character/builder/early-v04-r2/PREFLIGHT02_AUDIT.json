@@ -1,0 +1,29 @@
+{
+  "scope": "preflight02 evidence-only repair before any actual solve",
+  "configBytesUnchanged": true,
+  "unchangedNumericMethodsAST": {
+    "__init__": true,
+    "deformation": true,
+    "metrics": true,
+    "evaluate": true,
+    "precondition": true,
+    "distortion_reason": true,
+    "witness": true,
+    "minimize": true
+  },
+  "priorNumericalSyntheticEvidenceBytesUnchanged": {
+    "SYNTHETIC_OUTPUTS.json": true,
+    "SYNTHETIC_JOURNAL.jsonl": true,
+    "SYNTHETIC_EXPECTED_FAIL_JOURNAL.jsonl": true
+  },
+  "evidenceEdgeCases": {
+    "budget_inside_candidate": true,
+    "generic_exception": true,
+    "outer_global_budget": true,
+    "first_low0_stop": true
+  },
+  "allEdgeCasesPass": true,
+  "archivedPreflight01ManifestSha256": "5d163310b43195884046231c312087289e35f083d721c1647bb213750ba6a4cd",
+  "actualMarkersAbsent": true,
+  "newBehavior": "Reset per-output evidentiary fraction, explicit output identity, authoritative snapshot on Stop/exception. Added mandatory CTO read-only gate authorization metadata; no numerical law/config change."
+}

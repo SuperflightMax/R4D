@@ -1,0 +1,17 @@
+# R2 — готовность к опубликованному договору
+
+25 октября 2026. Builder. **READY_FOR_LEAD_CONTRACT_REVIEW_NO_ACTUAL_SOLVE.**
+
+`R2_SOLVER_CONTRACT.md`/`CONFIG.json` задают одну гипотезу и все пределы до actual. `positive_solver.py` — nonlinear barrier/positive continuation; `run_r2.py` — synthetic-only preflight и отдельно заблокированный actual entry point; `freeze_contract.py` только читает/hashes frozen inputs и не создаёт Cage/actual solve. R1 не менялся.
+
+Synthetic preflight выполнен на собственной25-vertex square grid: identity/rigid-motion energy≈0, max gradient finite-difference error3.05e−11, ARAP definition agreement error5.55e−17. Четыре rigid synthetic outputs получены с exact pins/limits; adaptive rejection/shrink реально exercised. Заведомо отражённая синтетическая boundary корректно завершилась MINIMUM_HOMOTOPY_STEP/SINGULAR_COMPRESSION,157 iterations/7 accepted substeps. Никаких actual rest/targets/witness в эти тесты не загружалось. Журналы/данные в `synthetic/`.
+
+По прямому pre-freeze audit CTO исправлен evidence edge первого candidate следующего output: fraction сбрасывается в0 для текущего интервала, previous exact geometry остаётся last accepted при λ0, last completed output однозначно прежний. Четыре синтетические fault-injection проверки (Stop внутри candidate, generic exception, outer global budget и первый low0 Stop) прошли; exact records — `synthetic/SYNTHETIC_EVIDENCE_EDGE_CHECK.json`, **явно включённый в финальный manifest**. Прежний полный draft/code/hashes/raw журналы — `preflight01/`; historical archive не является approved solver input. Конфигурация и все численные методы objective/optimizer по AST неизменны, см. `PREFLIGHT02_AUDIT.json`. Перегенерация manifest не запускает synthetic или actual solve.
+
+До финализации подготовительного кода исправлена синтаксическая опечатка `else0`, обнаруженная первым synthetic invocation до выполнения программы; затем проверены и приведены к договору selection точного witness для каждого distortion reason, численные budgets/logging и сохранность last accepted state. Это доводка **до первого actual solve**, не повтор actual после результата. Конфигурация не подбиралась по actual inputs или R1 witness.
+
+Предлагаемые σ/condition/area limits предварительно поддержаны Concept/Asset через Lead по смыслу; окончательные согласия на точный contract ещё ожидаются. Они действуют на accepted homotopy states и exact outputs; positive orientation — на optimizer iterates; trial/transient stages явно различаются в журнале. Это технический stop, а не художественный PASS.
+
+`R2_HASHES.json` сохраняет hashes окончательного подготовленного contract/config/code/synthetic evidence/frozen raw/trace/rest/targets/geometry/coverage/manifest/PNG. Подготовительный hash capture читает данные без actual optimization. `AUTHORIZED_START.json` и `ACTUAL_RUN_STARTED.json` отсутствуют, actual solve/result/journal не созданы. После двух exact-version artist ack и commit/push Lead возвращает точный manifest/commit CTO: **обязательный положительный read-only gate CTO предшествует единственному actual старту**. Одного review/старта Lead недостаточно; auth guard требует CTO-gated manifest/commit.
+
+Оценка одного bounded actual run15–25мин; возможен ранний STOP. Численный PASS требует всех241 неизменных targets, low230/back110, exact pins и fixed limits. После любого actual результата tuning/retry запрещены; даже implementation bug — audit и прямое решение CTO. App/build/repair сейчас не открываются.

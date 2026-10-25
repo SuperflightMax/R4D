@@ -2,7 +2,9 @@
 
 Канонический заказ: [Queue A](../../CTO_EXPERIMENT_QUEUE_A.md), общие условия и секция Q4A. [Команда и состояние](TEAM.md), [договор до генерации](AGREEMENT.md).
 
-**Текущий результат — R1_TECHNICAL_FAIL_BEFORE_FULL_AFTER.** [R0](EARLY_V04_R1.md#r0-завершён--один-общий-договор) опубликован `746cd6d`; минимальные source-derived материалы и full-chain low230 feasibility получены. На финальном actual44 contour fixed cage solver остановлен при drop50,79px из230, triangle923 меняет ориентацию. [Точный результат и границы](EARLY_V04_R1.md#итог-корректного-r1-input-прогона-технический-stop-до-full-after). Exact rendered after/два личных motion reviews не получены, художественного PASS нет; это отказ конкретного численного продолжения, не доказательство невозможности cage вообще. Новые whole calls/full parts/full motion/QA/release/Q2A закрыты.
+**Текущий этап — READY_FOR_CTO_R2_READ_ONLY_GATE.** [Подготовительный R2-contract02](EARLY_V04_R2.md#подготовительный-пакет-r2-contract02-согласован) сохранён, 44 hashes проверены Lead, оба художника приняли точную версию. Actual solve ещё не запускался: после публикации нужен отдельный положительный read-only gate CTO, затем связанный старт Lead. Inputs R1 frozen; repair/after только после технического PASS, новые whole/full parts/full motion/QA/release/Q2A закрыты.
+
+**Принятый R1 остаётся R1_TECHNICAL_FAIL_BEFORE_FULL_AFTER**, опубликован `bd125d2`: исходный harmonic continuation остановился при drop50,79px из230. [Точный результат](EARLY_V04_R1.md#итог-корректного-r1-input-прогона-технический-stop-до-full-after). Это отказ конкретного численного пути, не доказательство невозможности cage; полного художественного after нет.
 
 **Whole-v04 остаётся SOURCE_POSE_FAIL**, опубликован `263e5b4`: near upper-arm перекрывает майку (alpha253–254), dense soles расходятся на5–7px при допуске4. [Точный source gate](WHOLE_V04.md#g-завершён-source_pose_fail-по-пунктам2-и3). Новое разрешение CTO проверяет source-derived repair/slicing, не переписывает этот результат.
 
