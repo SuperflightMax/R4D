@@ -1,0 +1,13 @@
+### Result
+{"result":"DIST_AND_ARCHIVE_BROWSER_PASS","archived":"Q5A-NELA-ASSEMBLY-01","low":100.00320911757203,"flight":"flight","candidate":"Q5A-NELA-ASSEMBLY-02","target":"walk","phase":"ground","stats":{"inverted":0,"zero":0,"faces":442,"authoredMasks":2,"webglError":0},"error":""}
+### Ran Playwright code
+```js
+await (async (page) => {
+  await page.goto('http://127.0.0.1:5185/review/r4d/q5a-construction-first/assembly/attempts/01/index.html');await page.waitForFunction(()=>window.q5a?.getStats().authoredMasks===2);const archived=await page.evaluate(()=>q5a.candidate);if(archived!=='Q5A-NELA-ASSEMBLY-01')throw Error('first attempt not runnable');
+  await page.goto('http://127.0.0.1:5186/review/r4d/q5a-construction-first/');await page.waitForFunction(()=>window.q5a?.getStats().authoredMasks===2);await page.setViewportSize({width:1280,height:900});await page.getByRole('button',{name:'Пауза',exact:true}).click();await page.getByRole('button',{name:'Присед',exact:true}).click();await page.evaluate(()=>q5a.step(120));const low=await page.evaluate(()=>q5a.getPose().landmarks.pelvis[1]);if(low>105)throw Error('built crouch not deep');await page.getByRole('button',{name:'Прыжок ↑',exact:true}).click();await page.evaluate(()=>q5a.step(110));const flight=await page.evaluate(()=>q5a.motion.phase);if(flight!=='flight')throw Error('built flight missing');await page.getByRole('button',{name:'Ходьба',exact:true}).click();await page.evaluate(()=>q5a.step(220));const result=await page.evaluate(()=>({candidate:q5a.candidate,target:q5a.motion.ground,phase:q5a.motion.phase,stats:q5a.getStats(),error:document.querySelector('#error').textContent}));if(result.candidate!=='Q5A-NELA-ASSEMBLY-02'||result.target!=='walk'||result.stats.inverted||result.stats.webglError||result.error)throw Error(JSON.stringify(result));return {result:'DIST_AND_ARCHIVE_BROWSER_PASS',archived,low,flight,...result};
+}
+)(page);
+```
+### Page
+- Page URL: http://127.0.0.1:5186/review/r4d/q5a-construction-first/
+- Page Title: Нэла · Q5A

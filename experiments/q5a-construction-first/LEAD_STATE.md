@@ -7,6 +7,20 @@
 
 ## Текущее положение
 
+**ASSEMBLY_FROZEN — AWAITING_INDEPENDENT_PERSONAL_ARTIST_MOTION_REVIEW.** Кандидат `Q5A-NELA-ASSEMBLY-02` подготовлен Builder и проверен Lead для отдельной фиксации в Git. База этого хода: `HEAD = origin/main = a7e11f8e02d9ac552caff52dcae206d8a5f95489`. Прочитаны [ASSEMBLY.md](ASSEMBLY.md) и [SELF_CHECK.md](SELF_CHECK.md). Исправления реализации Lead не выполнял, расхождений при воспроизведении не найдено. Это заморозка кандидата, **не художественный PASS движения и не независимый QA PASS**.
+
+Три принятых SHA конструкции v4/package/validation из таблицы ниже неизменны; отдельно сверены 15 исходных текстур, 15 производных RGB, обе authored hand alpha и rig-data. Первая реальная сборка `assembly/attempts/01/` сохранена, все **30/30** файлов из snapshot совпали по SHA. Её известные дефекты и последующие существенные коррекции описаны в `assembly/attempts/01/ATTEMPT.md` и ASSEMBLY.md; архив не ремонтировался.
+
+Из `D:\dev\R4D\experiments\q5a-construction-first` Lead лично выполнил:
+
+- `npm test` — exit 0 / PASS: 19 static fixtures, 14 сценариев, 15120 кадров, 0 инверсий и строгих самопересечений; max coordinate error `1.1368683772161603e-13`, max bone error `8.526512829121202e-14`, изменение позы/скорости при команде 0, airborne target isolation PASS. Полный JSON совпал с сохранённым `output/self-check-tests.json`.
+- `npm run build` — exit 0 / PASS, все **25/25** dist-файлов совпали побайтно с результатом Builder до повторной сборки.
+- HTTP smoke `dist/` на отдельном временном localhost-порту — **25/25** файлов доступны по base route, HTTP 200, точные байты, правильный JS/PNG MIME; входная страница совпала. Временный сервер остановлен. Браузерный/художественный просмотр этим smoke не выполнялся; сохранённые browser/GPU evidence принадлежат self-check Builder.
+
+Фиксируются viewer/новый runtime, assets, исходники проверок и сборки, dist, полезные отчёты/скриншоты output, первая сборка и два файла состояния. Ephemeral `experiments/q5a-construction-first/.playwright-cli/**`, корневая `.playwright-cli/**`, чужие work-файлы, caches и dependencies в commit не включаются. Technical/Visual QA, независимый личный artist motion review, release, Q4A/Q2A в этом ходе не запускаются. Динамическая коррекция скрытой ткани, быстрые махи рук, свет сильных сгибов и контакт во времени требуют независимого просмотра существующими Asset Artist и Concept Artist по следующему поручению CTO.
+
+## Пройденный статический art gate
+
 **ART_GATE_PASSED — STATIC_CANDIDATE_READY_FOR_ASSEMBLY.** После хронологической коррекции CTO поручил закрыть только art gate. Исходная база этого хода: `HEAD = origin/main = 03644152f985ecf225c06ae748100534fbe106ab`. Работа Queue A разрешена; существующая команда сохраняется, Q4A/Q2A не начаты.
 
 Принят статический арт Нэлы `art/attempts/03/` на конструкции v4. Три точных SHA-256 независимо сверены Lead:
@@ -80,4 +94,4 @@ python experiments/q5a-construction-first/construction/attempts/v1/build_package
 
 ## Следующий шаг
 
-Следующий производственный этап — assembly по принятому статическому attempt03/v4 после отдельного поручения CTO. Текущий ход ограничен проверками, обновлением состояния и отдельным commit/push art gate; assembly, motion/demo, Technical/Visual QA, Q4A/Q2A и release не запускаются. Внешняя публикация остаётся отдельным release-шагом после CTO acceptance. Все существенные attempts/corrections сохранять; последующие художественный просмотр и обе QA-проверки должны относиться к собранному поведению и известной версии. Окончательную приёмку и решение об остановке принимает CTO.
+Ожидается независимый личный просмотр движения `Q5A-NELA-ASSEMBLY-02` существующими Asset Artist и Concept Artist на замороженной версии после отдельной выдачи CTO. Этот ход ограничен проверками, обновлением состояния и отдельным commit/push assembly; поручения на review/QA и внешнюю публикацию не выдаются. Внешняя публикация остаётся отдельным release-шагом после CTO acceptance. Все существенные attempts/corrections сохранять; последующие художественный просмотр и обе QA-проверки должны относиться к собранному поведению и известной версии. Окончательную приёмку и решение об остановке принимает CTO.

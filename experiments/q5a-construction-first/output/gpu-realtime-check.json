@@ -1,0 +1,212 @@
+{
+  "result": "GPU_AND_REALTIME_PASS",
+  "maskResult": {
+    "result": "GPU_AUTHORED_ALPHA_PASS",
+    "cases": [
+      {
+        "pose": "bind",
+        "surface": "far_hand",
+        "different_pixels": 6
+      },
+      {
+        "pose": "bind",
+        "surface": "near_hand",
+        "different_pixels": 7
+      },
+      {
+        "pose": "idle_shift",
+        "surface": "far_hand",
+        "different_pixels": 7
+      },
+      {
+        "pose": "idle_shift",
+        "surface": "near_hand",
+        "different_pixels": 7
+      },
+      {
+        "pose": "low_mid",
+        "surface": "far_hand",
+        "different_pixels": 9
+      },
+      {
+        "pose": "low_mid",
+        "surface": "near_hand",
+        "different_pixels": 5
+      },
+      {
+        "pose": "low_deep",
+        "surface": "far_hand",
+        "different_pixels": 5
+      },
+      {
+        "pose": "low_deep",
+        "surface": "near_hand",
+        "different_pixels": 7
+      },
+      {
+        "pose": "walk_far_contact",
+        "surface": "far_hand",
+        "different_pixels": 8
+      },
+      {
+        "pose": "walk_far_contact",
+        "surface": "near_hand",
+        "different_pixels": 6
+      },
+      {
+        "pose": "walk_near_contact",
+        "surface": "far_hand",
+        "different_pixels": 7
+      },
+      {
+        "pose": "walk_near_contact",
+        "surface": "near_hand",
+        "different_pixels": 8
+      },
+      {
+        "pose": "walk_far_pass",
+        "surface": "far_hand",
+        "different_pixels": 7
+      },
+      {
+        "pose": "walk_far_pass",
+        "surface": "near_hand",
+        "different_pixels": 6
+      },
+      {
+        "pose": "walk_near_pass",
+        "surface": "far_hand",
+        "different_pixels": 7
+      },
+      {
+        "pose": "walk_near_pass",
+        "surface": "near_hand",
+        "different_pixels": 7
+      },
+      {
+        "pose": "jump_prepare",
+        "surface": "far_hand",
+        "different_pixels": 7
+      },
+      {
+        "pose": "jump_prepare",
+        "surface": "near_hand",
+        "different_pixels": 7
+      },
+      {
+        "pose": "jump_push",
+        "surface": "far_hand",
+        "different_pixels": 9
+      },
+      {
+        "pose": "jump_push",
+        "surface": "near_hand",
+        "different_pixels": 7
+      },
+      {
+        "pose": "jump_apex",
+        "surface": "far_hand",
+        "different_pixels": 7
+      },
+      {
+        "pose": "jump_apex",
+        "surface": "near_hand",
+        "different_pixels": 7
+      },
+      {
+        "pose": "jump_precontact",
+        "surface": "far_hand",
+        "different_pixels": 9
+      },
+      {
+        "pose": "jump_precontact",
+        "surface": "near_hand",
+        "different_pixels": 6
+      },
+      {
+        "pose": "jump_landing",
+        "surface": "far_hand",
+        "different_pixels": 7
+      },
+      {
+        "pose": "jump_landing",
+        "surface": "near_hand",
+        "different_pixels": 9
+      },
+      {
+        "pose": "interrupt_low_to_walk",
+        "surface": "far_hand",
+        "different_pixels": 5
+      },
+      {
+        "pose": "interrupt_low_to_walk",
+        "surface": "near_hand",
+        "different_pixels": 7
+      },
+      {
+        "pose": "interrupt_low_to_jump",
+        "surface": "far_hand",
+        "different_pixels": 7
+      },
+      {
+        "pose": "interrupt_low_to_jump",
+        "surface": "near_hand",
+        "different_pixels": 7
+      },
+      {
+        "pose": "range_compression",
+        "surface": "far_hand",
+        "different_pixels": 7
+      },
+      {
+        "pose": "range_compression",
+        "surface": "near_hand",
+        "different_pixels": 4
+      },
+      {
+        "pose": "range_reach",
+        "surface": "far_hand",
+        "different_pixels": 7
+      },
+      {
+        "pose": "range_reach",
+        "surface": "near_hand",
+        "different_pixels": 7
+      },
+      {
+        "pose": "idle_settle_left",
+        "surface": "far_hand",
+        "different_pixels": 9
+      },
+      {
+        "pose": "idle_settle_left",
+        "surface": "near_hand",
+        "different_pixels": 7
+      },
+      {
+        "pose": "idle_settle_right",
+        "surface": "far_hand",
+        "different_pixels": 5
+      },
+      {
+        "pose": "idle_settle_right",
+        "surface": "near_hand",
+        "different_pixels": 7
+      }
+    ]
+  },
+  "real_time": {
+    "tickBefore": 2620,
+    "tick": 3057,
+    "phase": "ground",
+    "target": "low",
+    "stats": {
+      "inverted": 0,
+      "zero": 4,
+      "faces": 438,
+      "authoredMasks": 2,
+      "webglError": 0
+    },
+    "error": ""
+  }
+}
