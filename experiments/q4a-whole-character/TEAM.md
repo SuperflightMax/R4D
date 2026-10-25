@@ -106,3 +106,9 @@ CTO принял FAIL correction02 (`182a3e9`), закрыл text edits raw-v03 
 ### Whole-v04 — P завершён, guide frozen
 
 Concept вернул первую версию на correction пропорций ног/ближнего предплечья. Builder исправил именно guide; первая версия и замечания сохранены. Исправленный PNG `6288eecc6d28d73b1750d07db97d056e21b708ad019bb6f3d62fb8fbd657b47e` лично посмотрели и явно приняли Concept/Asset/Builder, Lead также повторно посмотрел и сверил hash. Поза/negative space не являются будущими масками и не доказывают соблюдения gate новым raw. Итог P/ссылки — `WHOLE_V04.md`. После pushed P Asset получает отдельный старт одного G; parts/masks/rig и следующие этапы закрыты.
+
+### Whole-v04 — G завершён, SOURCE_POSE_FAIL
+
+P опубликован `5aa3b2d`; после него выполнен один разрешённый whole-вызов с двумя references. Raw/условия/фоны и три личных reviews сохранены. Все трое дали FAIL пунктам2/3: upper-arm ещё перекрывает майку, alpha между тканью и кожей253–254; dense sole rows отличаются на5px при alpha≥128 и7px при alpha≥250, допуск4 не пройден. Identity/art/fitted garment/ракурс и статические contours принимаются. Lead лично посмотрел raw/фоны, повторил ключевые alpha/sole измерения и сверил hashes с оригиналом/ref.
+
+Точный результат и передача — `WHOLE_V04.md`; accepted whole нет. V05 не назначен, gate не ослаблен. Частей/масок/рига/app/build/движения/QA/release/Q2A нет; прежний арт/evidence/frozen P и чужие материалы сохранены. Команда ждёт следующего прямого решения CTO.
