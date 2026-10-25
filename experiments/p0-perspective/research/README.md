@@ -12,6 +12,9 @@
 - [`perspective-template-v0.1.svg`](perspective-template-v0.1.svg) — квадратный
   технический шаблон плоскости, рядов глубины и согласованных объёмных образцов
   для Concept Artist и как control/reference image генератору.
+- [`CROSS_SERIES_CONCLUSION_AND_RECIPE.md`](CROSS_SERIES_CONCLUSION_AND_RECIPE.md)
+  — вывод по проверенной серии F1–F4 и воспроизводимый layered-рецепт с точными
+  источниками, ограничениями и границей результата.
 
 Исходный референс остаётся только для чтения:
 `K:\Agents\R4D\Assets\perspective\03-sun-temple.jpg`.
