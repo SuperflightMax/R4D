@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1536" height="1536" viewBox="0 0 1536 1536" role="img" aria-labelledby="title desc">
+  <title id="title">P0 — художественный шаблон перспективной доски</title>
+  <desc id="desc">Наблюдательная художественная схема поверх условной плоскости. Точную геометрию должен заменить формальный эталон Researcher.</desc>
+  <defs>
+    <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#f7c98e"/>
+      <stop offset="1" stop-color="#f1ddb7"/>
+    </linearGradient>
+    <linearGradient id="floor" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#f0cc91"/>
+      <stop offset="1" stop-color="#f8dfad"/>
+    </linearGradient>
+    <filter id="shadow" x="-30%" y="-30%" width="160%" height="180%">
+      <feDropShadow dx="20" dy="26" stdDeviation="12" flood-color="#7b4f48" flood-opacity="0.28"/>
+    </filter>
+    <clipPath id="fieldClip">
+      <polygon points="304,416 1232,416 1388,1178 148,1178"/>
+    </clipPath>
+    <style>
+      .label { font-family: Segoe UI, Arial, sans-serif; fill: #4a2c27; font-size: 24px; font-weight: 700; }
+      .small { font-family: Segoe UI, Arial, sans-serif; fill: #573832; font-size: 19px; }
+      .micro { font-family: Segoe UI, Arial, sans-serif; fill: #68463f; font-size: 16px; }
+      .guide { fill: none; stroke: #5fa8a0; stroke-width: 5; stroke-dasharray: 18 12; }
+      .callout { fill: #fff6df; stroke: #9f694c; stroke-width: 3; }
+    </style>
+  </defs>
+
+  <rect width="1536" height="1536" fill="url(#sky)"/>
+
+  <!-- Дальний архитектурный ориентир: роль массы, не готовый дизайн. -->
+  <g id="far-landmark" filter="url(#shadow)">
+    <path d="M188 412 L188 252 L458 252 L458 188 L592 188 Q608 80 768 54 Q928 80 944 188 L1078 188 L1078 252 L1348 252 L1348 412 Z" fill="#b94b3f" stroke="#7f352f" stroke-width="9"/>
+    <path d="M598 412 V204 Q620 112 768 92 Q916 112 938 204 V412 Z" fill="#d87649" stroke="#9e4736" stroke-width="8"/>
+    <circle cx="768" cy="246" r="94" fill="#e0a746" stroke="#8e512e" stroke-width="9"/>
+    <path d="M768 140 V352 M662 246 H874" stroke="#f5cc67" stroke-width="18" opacity="0.85"/>
+    <path d="M188 340 H1348" stroke="#e4a657" stroke-width="24"/>
+  </g>
+
+  <!-- Боковая архитектура задаёт глубину и не вторгается в центр поля. -->
+  <path d="M0 356 L304 416 L148 1178 L0 1320 Z" fill="#b64b3e" stroke="#7f352f" stroke-width="10"/>
+  <path d="M1536 356 L1232 416 L1388 1178 L1536 1320 Z" fill="#b64b3e" stroke="#7f352f" stroke-width="10"/>
+  <path d="M46 414 L266 448 L126 1152 L36 1218" fill="none" stroke="#e5a451" stroke-width="46"/>
+  <path d="M1490 414 L1270 448 L1410 1152 L1500 1218" fill="none" stroke="#e5a451" stroke-width="46"/>
+
+  <!-- Условная плоскость будет заменена точным шаблоном Researcher. -->
+  <polygon points="304,416 1232,416 1388,1178 148,1178" fill="url(#floor)" stroke="#7c6a55" stroke-width="8"/>
+  <g clip-path="url(#fieldClip)">
+    <rect x="100" y="416" width="1340" height="220" fill="#d5a965" opacity="0.18"/>
+    <rect x="100" y="636" width="1340" height="266" fill="#63a9a1" opacity="0.09"/>
+    <rect x="100" y="902" width="1340" height="276" fill="#d46b4e" opacity="0.08"/>
+    <path d="M410 416 L294 1178 M588 416 L532 1178 M768 416 V1178 M948 416 L1004 1178 M1126 416 L1242 1178" class="guide" opacity="0.56"/>
+    <path d="M268 604 H1268 M224 842 H1312 M172 1090 H1364" class="guide" opacity="0.56"/>
+  </g>
+
+  <path d="M768 384 V1192" stroke="#844f45" stroke-width="4" stroke-dasharray="12 14" opacity="0.65"/>
+
+  <!-- Объёмные семейства: видимое основание, верхняя грань, единый свет. -->
+  <g id="far-volume" transform="translate(438 520) scale(.72)" filter="url(#shadow)">
+    <ellipse cx="0" cy="102" rx="75" ry="28" fill="#9f6642" opacity="0.35"/>
+    <rect x="-56" y="-4" width="112" height="102" rx="18" fill="#c95641" stroke="#8a3e34" stroke-width="7"/>
+    <ellipse cx="0" cy="-4" rx="56" ry="22" fill="#efb84f" stroke="#925331" stroke-width="7"/>
+    <rect x="-46" y="40" width="92" height="18" rx="9" fill="#55a8a0"/>
+  </g>
+
+  <g id="mid-volume" transform="translate(938 720)" filter="url(#shadow)">
+    <ellipse cx="0" cy="78" rx="82" ry="30" fill="#9f6642" opacity="0.35"/>
+    <path d="M-72 42 Q-68 -44 0 -66 Q68 -44 72 42 L54 82 H-54 Z" fill="#db9a55" stroke="#875039" stroke-width="8"/>
+    <circle cx="-27" cy="8" r="15" fill="#55a8a0"/>
+    <circle cx="27" cy="8" r="15" fill="#55a8a0"/>
+    <path d="M-25 48 Q0 64 25 48" fill="none" stroke="#754136" stroke-width="10"/>
+  </g>
+
+  <g id="near-volume" transform="translate(555 930) scale(1.15)" filter="url(#shadow)">
+    <ellipse cx="0" cy="58" rx="82" ry="31" fill="#9f6642" opacity="0.35"/>
+    <circle cx="0" cy="0" r="66" fill="#d9b06c" stroke="#875039" stroke-width="8"/>
+    <circle cx="0" cy="0" r="28" fill="#e6a53f" stroke="#8c5230" stroke-width="7"/>
+    <path d="M0 -58 V-32 M0 32 V58 M-58 0 H-32 M32 0 H58 M-42 -42 L-23 -23 M23 23 L42 42 M42 -42 L23 -23 M-23 23 L-42 42" stroke="#b9533d" stroke-width="13"/>
+  </g>
+
+  <g id="second-near-volume" transform="translate(1038 985) scale(1.08)" filter="url(#shadow)">
+    <ellipse cx="0" cy="96" rx="72" ry="28" fill="#9f6642" opacity="0.35"/>
+    <rect x="-58" y="-12" width="116" height="104" rx="20" fill="#c95641" stroke="#8a3e34" stroke-width="8"/>
+    <ellipse cx="0" cy="-12" rx="58" ry="23" fill="#efb84f" stroke="#925331" stroke-width="8"/>
+    <rect x="-33" y="30" width="66" height="32" rx="8" fill="#55a8a0" stroke="#8c5230" stroke-width="6"/>
+  </g>
+
+  <!-- Передний порог: крупная масса, частично обрезанная кадром. -->
+  <g id="foreground-threshold" filter="url(#shadow)">
+    <path d="M0 1190 H1536 V1536 H0 Z" fill="#c65a43" stroke="#7e392f" stroke-width="10"/>
+    <g fill="#452b2b" stroke="#e4ad61" stroke-width="24">
+      <ellipse cx="286" cy="1294" rx="166" ry="102"/>
+      <ellipse cx="650" cy="1310" rx="158" ry="98"/>
+      <ellipse cx="1010" cy="1310" rx="158" ry="98"/>
+      <ellipse cx="1370" cy="1294" rx="166" ry="102"/>
+    </g>
+    <path d="M0 1190 H1536" stroke="#f1c875" stroke-width="38"/>
+  </g>
+
+  <!-- Поясняющие плашки. -->
+  <g transform="translate(42 34)">
+    <rect width="620" height="126" rx="18" class="callout"/>
+    <text x="24" y="42" class="label">ХУДОЖЕСТВЕННЫЙ СЛОЙ · concept-v0.1</text>
+    <text x="24" y="76" class="small">Наблюдательная схема, не восстановленная камера.</text>
+    <text x="24" y="106" class="small">Точную плоскость и объёмы заменить эталоном Researcher.</text>
+  </g>
+
+  <g transform="translate(1038 36)">
+    <rect width="454" height="164" rx="18" class="callout"/>
+    <text x="20" y="34" class="label">ПАЛИТРА И СВЕТ</text>
+    <rect x="20" y="54" width="64" height="42" rx="8" fill="#f0cc91"/>
+    <rect x="94" y="54" width="64" height="42" rx="8" fill="#b94b3f"/>
+    <rect x="168" y="54" width="64" height="42" rx="8" fill="#e4a657"/>
+    <rect x="242" y="54" width="64" height="42" rx="8" fill="#55a8a0"/>
+    <rect x="316" y="54" width="64" height="42" rx="8" fill="#425e42"/>
+    <text x="20" y="126" class="small">Тёплый источник слева-сверху;</text>
+    <text x="20" y="152" class="small">мягкие единые тени вправо-вниз.</text>
+  </g>
+
+  <g transform="translate(328 438)">
+    <rect width="880" height="70" rx="16" fill="#fff6df" fill-opacity="0.92" stroke="#9f694c" stroke-width="3"/>
+    <text x="440" y="28" text-anchor="middle" class="label">ДАЛЬНИЙ ОРИЕНТИР</text>
+    <text x="440" y="55" text-anchor="middle" class="small">крупная цель, спокойный силуэт, одна центральная ось</text>
+  </g>
+
+  <g transform="translate(620 610)">
+    <rect width="296" height="88" rx="14" fill="#fff6df" fill-opacity="0.9" stroke="#9f694c" stroke-width="3"/>
+    <text x="148" y="30" text-anchor="middle" class="label">ЕДИНОЕ ПОЛЕ</text>
+    <text x="148" y="58" text-anchor="middle" class="small">воздух между объектами</text>
+    <text x="148" y="80" text-anchor="middle" class="micro">фактура тише препятствий</text>
+  </g>
+
+  <g transform="translate(55 770)">
+    <rect width="350" height="132" rx="16" class="callout"/>
+    <text x="18" y="34" class="label">БОКОВАЯ РАМКА</text>
+    <text x="18" y="66" class="small">подтверждает глубину;</text>
+    <text x="18" y="94" class="small">не становится вторым полем;</text>
+    <text x="18" y="120" class="small">не зажимает центр.</text>
+  </g>
+
+  <g transform="translate(1120 650)">
+    <rect width="360" height="180" rx="16" class="callout"/>
+    <text x="18" y="34" class="label">КАЖДЫЙ ОБЪЁМ</text>
+    <text x="18" y="68" class="small">1. видимое основание</text>
+    <text x="18" y="98" class="small">2. боковая масса и верх</text>
+    <text x="18" y="128" class="small">3. фаски и материал</text>
+    <text x="18" y="158" class="small">4. контактная + падающая тень</text>
+  </g>
+
+  <g transform="translate(480 1122)">
+    <rect width="576" height="66" rx="15" fill="#fff6df" fill-opacity="0.94" stroke="#9f694c" stroke-width="3"/>
+    <text x="288" y="28" text-anchor="middle" class="label">СИЛЬНЫЙ ПЕРЕДНИЙ ПОРОГ</text>
+    <text x="288" y="53" text-anchor="middle" class="small">крупный, частично обрезан кадром, не выглядит UI</text>
+  </g>
+
+  <g transform="translate(46 1452)">
+    <rect width="1444" height="58" rx="14" fill="#382729" fill-opacity="0.9"/>
+    <text x="722" y="37" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" font-size="22" font-weight="700" fill="#fff4d7">Сетка и примитивы — только вход. Готовая доска должна быть цельным художественным миром без служебной графики.</text>
+  </g>
+</svg>
