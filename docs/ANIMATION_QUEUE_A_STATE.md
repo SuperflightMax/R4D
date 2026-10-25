@@ -6,24 +6,26 @@
 
 ## Текущее выполнение
 
-**ACTIVE — Q4A.** Q5A принят и опубликован. Макс подтвердил, что handoff Dot
-считается его поручением; ранее Dot передал после доступной публикации Q5A
-продолжить Queue A без дополнительного ожидания. Для Q4A Staff Director
-создал новую независимую команду. Q2A не запускается заранее. Актуальная
+**IDLE после отдельно порученного выпуска Q4A evidence viewer.** Q5A принят и
+опубликован. Q4A закрыт как отрицательный/частичный исследовательский результат;
+CTO принял достоверный viewer v02 и отдельно поручил его публикацию. Viewer
+опубликован десятой карточкой Review; полноценная анимация и художественный
+PASS не заявляются. По текущему release brief CTO после выпуска — idle,
+без запуска Q2A, corrections или нового исследования. Актуальная
 граница — в [операционном состоянии проекта](PROJECT_STATE.md).
 
 | Порядок | Опыт | Состояние | Материалы и показ |
 |---|---|---|---|
 | 1 | Q5A — конструкция до арта | Accepted by CTO; ASSEMBLY03 frozen `101343caa68579aacd5e6c01b94206680c364ab7`; опубликован в существующем Review; серверная доставка и auth-барьер подтверждены | [Открыть Q5A](https://superflight.space/review/r4d/q5a-construction-first/), [release record](../experiments/q5a-construction-first/RELEASE_ASSEMBLY03.md): `PUBLISHED_DELIVERY_VERIFIED_WITH_AUTH_LIMITATION`; post-auth public canvas не проверен, обычный вход SuperFlight сохранён |
-| 2 | Q4A — цельный образ до частей | **ACTIVE:** команда подготовлена; production brief выдаётся Lead на exact base `ceb10c5382cd3134b78c88ae0db57a4a5b1228ed` | Новый каталог `experiments/q4a-whole-character/`; цельный исходный персонаж сначала, затем части; старые кандидаты не переиспользовать |
-| 3 | Q2A — свободный выбор способа | Не начат; ожидает завершённый и опубликованный Q4A | Предусмотренный путь `experiments/q2a-simple-character/` сам по себе не означает старт |
+| 2 | Q4A — цельный образ до частей | **RESEARCH_CLOSED_NEGATIVE_PARTIAL**; evidence viewer `negative-review-v02` принят CTO и опубликован из exact commit `47b637ba77681cc17ccf23757396073047430c37` | [Открыть Q4A](https://superflight.space/review/r4d/q4a-whole-character/), [приёмка](../experiments/q4a-whole-character/ACCEPTANCE_NEGATIVE_REVIEW_V02.md), [release record](../experiments/q4a-whole-character/RELEASE_NEGATIVE_REVIEW_V02.md); 26 сохранённых состояний, rejected отдельно; полного движения нет |
+| 3 | Q2A — свободный выбор способа | Не начат; после выпуска Q4A — idle по прямому release brief CTO | Предусмотренный путь `experiments/q2a-simple-character/` сам по себе не означает старт; нового поручения этой записью не создаётся |
 
 Независимые review `attempt03` завершили уже существующие сессии:
 Concept Artist `01a16ffd-87e7-7cf3-a9a2-29d2cd97a7ec` и Builder
 `01a16ffd-8811-7d20-b80a-6a938f50b5a5`. Новые сотрудники или дубли сессий
 не создавались.
 
-Статический арт, исходные attempts, corrections и отрицательные review сохранены в истории. Art/motion gate assembly03 закрыт двумя независимыми художественными PASS. На QA base `0f032c21f555473aca7c61960a8c563d2440fc97` получены TECHNICAL_QA_PASS и VISUAL_QA_PASS для неизменного frozen production `101343c…`. CTO `cto-r4d-01` принял Q5A для PoC release без блокеров; слабый contrast служебного dark badge принят как non-blocking limitation без нового correction cycle. Формальная приёмка и известные Chrome/mobile emulation/PoC-ограничения сохранены в `CTO_ACCEPTANCE_ASSEMBLY03.md`. Production diff=none; приёмка и QA не менялись. Отдельная публикация выполнена Release Engineer по новому brief; Q4A/Q2A не стартовали.
+Статический арт, исходные attempts, corrections и отрицательные review Q5A сохранены в истории. Art/motion gate assembly03 закрыт двумя независимыми художественными PASS. На QA base `0f032c21f555473aca7c61960a8c563d2440fc97` получены TECHNICAL_QA_PASS и VISUAL_QA_PASS для неизменного frozen production `101343c…`. CTO `cto-r4d-01` принял Q5A для PoC release без блокеров; слабый contrast служебного dark badge принят как non-blocking limitation без нового correction cycle. Формальная приёмка и известные Chrome/mobile emulation/PoC-ограничения сохранены в `CTO_ACCEPTANCE_ASSEMBLY03.md`. Production diff=none; приёмка и QA не менялись. На момент отдельной публикации Q5A Q4A/Q2A ещё не стартовали.
 
 Первый release brief привёл к остановке **BLOCKED_BY_VPS_ACCESS_PROHIBITION** до внешних изменений; этот факт сохранён в [release record](../experiments/q5a-construction-first/RELEASE_ASSEMBLY03.md). Затем CTO передал прямое исправление и разрешение Макса на штатный VPS Review release. 25 октября 2026, 12:22:46 Europe/Kyiv, активирован immutable release `31ade6bb3109052c297e08013607ddd04eea866a`: все 26 Q5A dist-файлов точны относительно frozen/acceptance Git bytes, без пересборки. Все 333 прежних browser-файла кроме каталога сохранены побайтно; в каталоге только новая карточка и счётчик 8→9. Инвентаризация подтвердила оба первых модельных PoC и Q1–Q6 в Review; других готовых непоказанных результатов в этом объёме не найдено. Проверены локальные desktop/mobile exact bytes, все 360 файлов по HTTP, серверное дерево до/после и 39 публичных HTTPS/auth checks. Post-auth public canvas не проверен из-за отсутствия сессии; по прямому уточнению CTO личный Chrome не использовался, выпуск завершён с этим ограничением без отката.
 
@@ -37,10 +39,13 @@ Concept Artist `01a16ffd-87e7-7cf3-a9a2-29d2cd97a7ec` и Builder
 `01a17267-066f-75d0-8cce-7b5031fb671c`. Все — новые независимые сотрудники
 Q4A, GPT-6.1 Sol / medium, local, cwd `D:\dev\R4D`.
 
+25 октября 2026, 19:01:34 Europe/Kyiv, Release Engineer активировал immutable Review release `47b637ba77681cc17ccf23757396073047430c37`. Все 36 route-tree файлов `negative-review-v02` совпали с accepted Git objects; 35 записей build manifest, source manifest и snapshot сверены, viewer не пересобирался и не редактировался. Из прежних 360 browser-файлов 359 сохранены побайтно; только в каталоге добавлена честная карточка Q4A и счётчик 9→10. Проверены 396 файлов по локальному HTTP, серверное дерево до/после, desktop1440×1000/mobile390×844 controls/play-stop-low25/rejected/light-dark; внешних запросов/errors/overflow нет. Обычная публичная авторизация и защитные headers сохранены. Post-auth canvas не проверен, личный Chrome не использован — это явно разрешённое CTO ограничение доставки, не новый QA PASS. Подробности, hashes и rollback — в [release record](../experiments/q4a-whole-character/RELEASE_NEGATIVE_REVIEW_V02.md). Q2A и дальнейшие corrections не запускались; после выпуска R4D idle.
+
 CTO по ходу заменяет сведения фактическим состоянием: активный опыт, команда, ссылки на материалы/демо, полученное качество и решение о продолжении или остановке. Появление каталога само по себе не означает начала или завершения опыта. Новый отдельный статусный сервис не требуется.
 
 ## Итог очереди
 
-Пока отсутствует: Q4A активен, Q2A не начат. После завершения Q2A нужен
-краткий сравнительный итог Q5A/Q4A/Q2A. Материалы Q1–Q6 и Q5A сохраняются
-без переписывания.
+Сравнительный итог всей очереди отсутствует: Q5A принят и опубликован,
+Q4A закрыт negative/partial и опубликован как evidence viewer, Q2A не начат.
+После этого release R4D idle по отдельному поручению CTO; эта запись не
+запускает следующий опыт. Материалы Q1–Q6, Q5A и frozen Q4A сохраняются.
