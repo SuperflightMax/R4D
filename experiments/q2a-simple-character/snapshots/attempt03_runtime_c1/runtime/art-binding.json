@@ -1,0 +1,228 @@
+{
+  "version": "attempt03_runtime_c1",
+  "artVersion": "attempt03_initial",
+  "runtimeCorrection": "Local pelvis/root, continuous knee bend, shoulder attachment and boot-top rotation; original measured hand anchors retained.",
+  "sourceMetadata": "art/metadata/attempt03_initial.json",
+  "status": "DIAGNOSTIC_INITIAL_KIT_NOT_ART_ACCEPTED_NOT_CONTRACT_CONFORMING",
+  "scale": 1,
+  "translation": [
+    0,
+    0
+  ],
+  "rig": {
+    "pelvis": [
+      495,
+      550
+    ],
+    "neck": [
+      501,
+      330
+    ],
+    "waist": [
+      500,
+      479
+    ],
+    "ground": 906,
+    "near": {
+      "hip": [
+        500,
+        550
+      ],
+      "knee": [
+        542,
+        708
+      ],
+      "ankle": [
+        547,
+        875
+      ],
+      "shoulder": [
+        502,
+        369
+      ],
+      "elbow": [
+        538,
+        485
+      ],
+      "wrist": [
+        552,
+        593
+      ]
+    },
+    "far": {
+      "hip": [
+        490,
+        550
+      ],
+      "knee": [
+        531,
+        708
+      ],
+      "ankle": [
+        526,
+        875
+      ],
+      "shoulder": [
+        488,
+        369
+      ],
+      "elbow": [
+        448,
+        485
+      ],
+      "wrist": [
+        442,
+        593
+      ]
+    }
+  },
+  "parts": {
+    "body": {
+      "url": "/art/parts/attempt03_initial/body.png",
+      "crop": [
+        78,
+        111,
+        137,
+        323
+      ],
+      "offset": [
+        -350,
+        -179
+      ],
+      "layer": 4
+    },
+    "head": {
+      "url": "/art/parts/attempt03_initial/head.png",
+      "crop": [
+        445,
+        55,
+        112,
+        154
+      ],
+      "offset": [
+        -2,
+        -140
+      ],
+      "layer": 9
+    },
+    "arm_near": {
+      "url": "/art/parts/attempt03_initial/arm_near.png",
+      "crop": [
+        97,
+        523,
+        122,
+        281
+      ],
+      "offset": [
+        -361,
+        196
+      ],
+      "layer": 7
+    },
+    "arm_far": {
+      "url": "/art/parts/attempt03_initial/arm_far.png",
+      "crop": [
+        305,
+        523,
+        123,
+        281
+      ],
+      "offset": [
+        -108,
+        196
+      ],
+      "layer": 0
+    },
+    "hand_near": {
+      "url": "/art/parts/attempt03_initial/hand_near.png",
+      "crop": [
+        179,
+        829,
+        77,
+        118
+      ],
+      "offset": [
+        -337,
+        256
+      ],
+      "layer": 8
+    },
+    "hand_far": {
+      "url": "/art/parts/attempt03_initial/hand_far.png",
+      "crop": [
+        332,
+        829,
+        77,
+        118
+      ],
+      "offset": [
+        -73,
+        256
+      ],
+      "layer": 1
+    },
+    "leg_near": {
+      "url": "/art/parts/attempt03_initial/leg_near.png",
+      "crop": [
+        726,
+        52,
+        135,
+        387
+      ],
+      "offset": [
+        281,
+        -450
+      ],
+      "layer": 5
+    },
+    "leg_far": {
+      "url": "/art/parts/attempt03_initial/leg_far.png",
+      "crop": [
+        968,
+        52,
+        136,
+        387
+      ],
+      "offset": [
+        529,
+        -450
+      ],
+      "layer": 2
+    },
+    "foot_near": {
+      "url": "/art/parts/attempt03_initial/foot_near.png",
+      "crop": [
+        704,
+        791,
+        132,
+        92
+      ],
+      "offset": [
+        196,
+        -35
+      ],
+      "layer": 6
+    },
+    "foot_far": {
+      "url": "/art/parts/attempt03_initial/foot_far.png",
+      "crop": [
+        964,
+        791,
+        131,
+        92
+      ],
+      "offset": [
+        477,
+        -35
+      ],
+      "layer": 3
+    }
+  },
+  "knownDeviations": [
+    "Measured torso neck/pelvis separation is220 instead of264; shoulder lies39px lower after pelvic anchoring. Head attached to measured neck yields approximate crown204, not132.",
+    "Near hip-knee163.49 and knee-ankle167.07 versus162.79/161.25; far163.23/167.07. Arms121.46/108.90 versus122.93/106.92, far122.70/108.17. No independent scale applied.",
+    "Measured initial anatomical boot contacts imply ground906 rather than900 and sole101/100 rather than80; no hidden stretching to original contacts.",
+    "Proposed bind is diagnostic only. Builder/Concept/Lead must accept explicit revised schema or identify art correction. Low drop160 remains a requirement, not yet demonstrated.",
+    "Duplicate deltoid and pelvic garment masses, slight torso turn and semi-transparent red fringe remain visible. No artistic PASS."
+  ]
+}

@@ -1,0 +1,23 @@
+<!doctype html>
+<html lang="ru">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Q2A · первый срез</title>
+<link rel="icon" href="data:,">
+<link rel="stylesheet" href="/runtime/style.css">
+<main>
+  <header><h1>Q2A · лесной разведчик</h1><p>Первый срез: стойка ↔ низкая поза</p></header>
+  <div class="controls">
+    <button id="idle">Стойка</button><button id="low">Низкая поза</button>
+    <button id="pause">Пауза</button><button id="background">Тёмный фон</button>
+    <label><input id="guides" type="checkbox"> Ориентиры</label>
+  </div>
+  <label class="scrub">Положение <input id="scrub" type="range" min="0" max="1" step="0.001" value="0"><output id="amount">0%</output></label>
+  <details><summary>Диагностика поверхностей</summary><label>Показ <select id="surface"><option value="all">Вся сборка</option><option value="body">Только корпус</option><option value="leg_near">Только ближняя нога</option><option value="pelvis">Корпус и ближняя нога</option></select></label></details>
+  <div id="stage"></div>
+  <p id="status" role="status">Загрузка…</p>
+  <p class="note">Команды доступны во время перехода. Ползунок останавливает движение на выбранном положении. Walk и jump в этот срез не входят.</p>
+</main>
+<script src="/runtime/vendor/pixi.min.js"></script>
+<script type="module" src="/runtime/main.js"></script>
+</html>

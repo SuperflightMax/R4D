@@ -1,0 +1,14 @@
+{
+  "status": "DIAGNOSTIC_VISUAL_ESTIMATES_NOT_APPROVED_RIG_DATA",
+  "source": "../source/attempt01_raw.png",
+  "units": "raw pixels",
+  "uncertainty": "Manual visual landmark placement, approximately 5-12 pixels. No exact rig or anatomy claim.",
+  "landmarks": {
+    "arm_near": {"shoulder": [209, 550], "elbow": [212, 680], "wrist": [251, 823]},
+    "leg_near": {"hip": [930, 126], "knee": [980, 334], "ankle": [972, 577]},
+    "foot_near": {"heel_contact": [798, 1010], "toe_contact": [965, 1010]}
+  },
+  "approx_segment_raw_lengths": {"upper_arm":130.03,"forearm":148.22,"thigh":213.93,"shin":243.13,"sole_contact":167},
+  "raw_per_contract_unit_implied": {"upper_arm":1.058,"forearm":1.386,"thigh":1.314,"shin":1.508,"sole_contact":2.0875},
+  "decision": "No common scale plus translations can bring these landmarks to approved fixed segment lengths; do not silently resize separate parts. Correct coordinated artwork before rig-compatible handoff."
+}

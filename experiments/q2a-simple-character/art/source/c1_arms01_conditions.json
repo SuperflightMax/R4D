@@ -1,0 +1,18 @@
+{
+  "tool": "image_gen.imagegen (built-in)",
+  "transparent_background": true,
+  "prompt_file": "c1_arms01_prompt.txt",
+  "references": [
+    {"role":"edit target: entire coordinated kit", "path":"attempt03_raw.png"},
+    {"role":"assembled context only; local browser wrist+8 diagnostic", "path":"C:/Users/user/.codex/visualizations/2026/10/25/01a173ea-2ed0-7e23-b4f3-b240f83957df/asset-c1-wrist-plus8-idle.png"}
+  ],
+  "raw_file": "c1_arms01_raw.png",
+  "original_tool_path": "C:/Users/user/.codex/generated_images/01a173ea-2ed0-7e23-b4f3-b240f83957df/exec-1224299a-c5bd-456a-8e82-4e47dac33bec.png",
+  "raw_preservation": "Copied unchanged; tool original retained",
+  "raw_size": [1448,1086],
+  "raw_mode": "RGBA",
+  "alpha_extrema": [0,255],
+  "red_edge_alpha": {"count_alpha_positive":9025,"min":1,"median":1,"max":5,"count_alpha_gt16":0},
+  "selection": "Extract only two arms and two hands; six unrelated tool-redrawn surfaces not adopted. Their initial PNG bytes retained.",
+  "status": "PENDING_C1_ASSEMBLY_AND_PERSONAL_MOTION_REVIEW"
+}
