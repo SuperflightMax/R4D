@@ -1,0 +1,11 @@
+{
+  "name": "@r4d/p0-perspective-builder",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "build": "node scripts/build.mjs",
+    "check": "node scripts/check.mjs",
+    "preview:build": "node scripts/build.mjs --out output/playwright/gallery-v1/site --portable-gallery",
+    "preview:serve": "node scripts/serve.mjs --root output/playwright/gallery-v1/site --port 4175"
+  }
+}
