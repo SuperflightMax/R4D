@@ -1,0 +1,37 @@
+Use case: stylized-concept
+Asset type: diagnostic P0 game-board environment raster, one finished square image
+
+Primary request: Create one new, finished square game board called “Jade Sky Observatory”. This must be an independent new scene, not a redraw of 03-sun-temple.jpg.
+
+Input images and strict roles:
+- Image 1, formal-reference-v1.png: the ONLY geometry control. Follow its camera, field contour, central axis, depth rows, ground contacts, upright-volume projection, and scale-by-depth. Do not copy its text, labels, dashed guides, colored technical regions, or bare primitive appearance.
+- Image 2, 03-sun-temple.jpg: art-quality reference ONLY. Match its degree of finish, material depth, coherent warm lighting, readable game-space hierarchy, and polished stylized-game rendering. Do not copy its exact obstacle arrangement, temple facade, four foreground cups, or theme literally.
+
+Camera and field geometry — higher priority than decoration:
+- Use one elevated frontal three-quarter view looking along the central axis toward the far landmark. This is not strict top-down, not diagonal isometric, not a low frontal view, and not wide-angle or fisheye.
+- Keep building and obstacle verticals nearly vertical in the image.
+- In the square frame, the single continuous game plane follows Image 1: far edge at y=0.255, near edge at y=0.775; normalized corners clockwise (0.225,0.255), (0.775,0.255), (0.915,0.775), (0.085,0.775). Keep this one field position and camera; do not widen, raise, lower, or tilt it for decoration.
+- Object scale follows one continuous rule S(z)=0.91+0.18z from far to near. Do not give individual objects their own camera.
+- Place one family of nominally identical round jade-and-bronze pedestal drums at FOUR distinct depth/control rows z=0.16, 0.38, 0.60, and 0.82. They represent the same real-world dimensions. Their visible scale must progress smoothly as 0.939, 0.978, 1.018, and 1.058, with each base clearly anchored on its row. Keep their construction and proportions recognizably identical so scale-by-depth can be judged.
+- Add a second obstacle family with a different silhouette, but keep every base, side volume, top plane, and ellipse consistent with the same camera.
+
+Composition:
+- One central distant observatory landmark on the far axis.
+- A broad, calm, readable single game plane with clear paths and breathing room.
+- Two or three related obstacle families with distinct silhouettes and visible bases.
+- Side architecture frames and reinforces depth without becoming extra terraces or covering the field.
+- A strong foreground threshold is partially cropped by the frame, but it must not look like UI and must not consume the playable plane.
+- The environment itself must make the perspective readable without any overlay.
+
+Art direction:
+- Theme: ancient jade sky observatory, warm and inhabited rather than dark or ruined.
+- Materials: pale carved sandstone floor, aged warm bronze, deep jade-green enamel/stone, small ivory highlights, restrained plants only as secondary accents.
+- Lighting: one coherent warm source from upper left; short soft contact shadows plus consistent longer cast shadows; shadows never replace visible bases.
+- Style: polished stylized 3D game environment render; large readable forms, rounded bevels, material seams, restrained handmade irregularity, sparse floor texture, finished background and edges.
+- Preserve a quiet floor around obstacles. Keep detail and contrast subordinate to the spatial hierarchy.
+
+Priority: formal-reference geometry > readable continuous plane and bases > unified finished art and lighting > small thematic decoration. If decoration conflicts with geometry, simplify the decoration, never change the camera.
+
+Do not add: text, letters, numbers, labels, logos, watermark, interface, technical grid, guide lines, control points, wireframes, colored diagnostic zones, ball, collider outlines, physics markers, floating objects, false terraces, incompatible ellipses, multiple local perspectives, photorealism, gray blockout, bare cubes/cylinders as final art, excessive micro-noise, or plastic smoothness.
+
+Output intent: one clean finished square raster game-board image suitable for diagnostic comparison against the formal reference. No technical overlay in the output.
