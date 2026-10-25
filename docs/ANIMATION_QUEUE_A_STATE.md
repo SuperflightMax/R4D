@@ -6,21 +6,23 @@
 
 ## Текущее выполнение
 
-**Q2A_P1_PRODUCTION_ACTIVE.** Q5A принят и опубликован.
+**Q2A_P2_FULL_MOTION_ACTIVE.** Q5A принят и опубликован.
 Q4A закрыт как отрицательный/частичный исследовательский результат; его viewer
 опубликован десятой карточкой Review, полноценная анимация и художественный
 PASS не заявляются. Более поздний прямой handoff Макса через Дот поручил
 продолжить уже согласованную последовательную Queue A следующим пунктом Q2A.
 Новая команда создана, самостоятельно выбрала метод и прошла отдельный CTO
-production gate. Открыт только P1_FIRST_SLICE: контракт, новый художественный
-комплект и idle↔low slice. Walk/jump, независимые QA и публикация закрыты.
+production gate. Exact P1 `p1_candidate_c2_arms01` из commit `6d5c6b5…`
+принят CTO с явно сохранёнными ограничениями. Открыт только следующий этап
+P2_FULL_MOTION: walk/jump и обязательные переходы на той же основе.
+Независимые QA и публикация пока закрыты.
 Актуальная граница — в [операционном состоянии проекта](PROJECT_STATE.md).
 
 | Порядок | Опыт | Состояние | Материалы и показ |
 |---|---|---|---|
 | 1 | Q5A — конструкция до арта | Accepted by CTO; ASSEMBLY03 frozen `101343caa68579aacd5e6c01b94206680c364ab7`; опубликован в существующем Review; серверная доставка и auth-барьер подтверждены | [Открыть Q5A](https://superflight.space/review/r4d/q5a-construction-first/), [release record](../experiments/q5a-construction-first/RELEASE_ASSEMBLY03.md): `PUBLISHED_DELIVERY_VERIFIED_WITH_AUTH_LIMITATION`; post-auth public canvas не проверен, обычный вход SuperFlight сохранён |
 | 2 | Q4A — цельный образ до частей | **RESEARCH_CLOSED_NEGATIVE_PARTIAL**; evidence viewer `negative-review-v02` принят CTO и опубликован из exact commit `47b637ba77681cc17ccf23757396073047430c37` | [Открыть Q4A](https://superflight.space/review/r4d/q4a-whole-character/), [приёмка](../experiments/q4a-whole-character/ACCEPTANCE_NEGATIVE_REVIEW_V02.md), [release record](../experiments/q4a-whole-character/RELEASE_NEGATIVE_REVIEW_V02.md); 26 сохранённых состояний, rejected отдельно; полного движения нет |
-| 3 | Q2A — свободный выбор способа | **P1_PRODUCTION_ACTIVE**; план `b0f586d6…` принят CTO | Новый согласованный комплект крупных растровых деталей → локальная деформация; сейчас только контракт и idle↔low slice, ближайший gate — runnable frozen P1 и личные Concept/Asset reviews |
+| 3 | Q2A — свободный выбор способа | **P2_FULL_MOTION_ACTIVE**; P1 `6d5c6b5…` принят CTO с ограничениями | Новый согласованный комплект крупных растровых деталей → локальная деформация; следующий gate — runnable frozen full motion, Builder self-check и личные Concept/Asset reviews; QA/release ещё не открыты |
 
 Независимые review `attempt03` завершили уже существующие сессии:
 Concept Artist `01a16ffd-87e7-7cf3-a9a2-29d2cd97a7ec` и Builder
@@ -62,7 +64,17 @@ preparation brief: совместно с Concept/Asset/Builder выбрать м
 Lead: до чистового арта согласовать образ/части/скрытые зоны и диапазон, затем
 создать новый цельный растровый комплект и runnable idle↔low slice, провести
 личные motion reviews художников и вернуть frozen P1 на следующий gate.
-Technical/Visual QA, walk/jump и release пока не открыты.
+Technical/Visual QA и release пока не открыты.
+
+CTO лично проверил exact frozen P1 на светлом/тёмном фоне, в idle, 50/75% и
+глубоком low, включая изолированную ближнюю ногу. Остаточные колено, ткань,
+плечо и ограниченная видимость дальней опоры записаны в
+`CTO_P1_DECISION.md`. Отдельная слепая коррекция колена не назначена: две
+проверенные геометрические гипотезы дали регресс, а новой установленной причины
+до walk/jump нет. P1 принят как содержательный срез, и существующему Lead
+открыт P2_FULL_MOTION. Независимые QA и release по-прежнему закрыты до
+следующего gate; готовый принятый Q2A должен быть опубликован в Review по
+прямому разрешению Макса.
 
 CTO по ходу заменяет сведения фактическим состоянием: активный опыт, команда, ссылки на материалы/демо, полученное качество и решение о продолжении или остановке. Появление каталога само по себе не означает начала или завершения опыта. Новый отдельный статусный сервис не требуется.
 
@@ -70,6 +82,7 @@ CTO по ходу заменяет сведения фактическим со�
 
 Сравнительный итог всей очереди отсутствует: Q5A принят и опубликован,
 Q4A закрыт negative/partial и опубликован как evidence viewer, Q2A выполняет
-ограниченный первый production slice. Следующий gate — решение CTO по frozen
-P1 и художественным reviews; эта запись не открывает walk/jump, QA или release.
+ограниченный этап полного движения. Следующий gate — решение CTO по frozen
+full-motion candidate, Builder self-check и личным художественным reviews;
+эта запись не открывает независимый QA или release.
 Материалы Q1–Q6, Q5A и frozen Q4A сохраняются.
