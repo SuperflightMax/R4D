@@ -83,3 +83,16 @@ CTO выбрал deterministic layered composition: в текущем досту
 - Visual QA L1: `4cf8c4b7132013c5520b56d1abb46f99e0049850`, `REPORT_L1.md`; verdict `L1_PASS_FOR_CTO_SERIES_DECISION`. Formal quad, rows/S(z), one-master identity, grounding/shadows, art completeness и leakage прошли. Неблокирующее ограничение: тень компактная, края sprite немного резче plate.
 
 L1 PASS подтверждает layered contract на одном finished diagnostic, но не несколько независимых досок и не полный P0. Финальная серия не открывается автоматически; ожидается отдельное решение CTO.
+
+## Решение CTO после L1
+
+CTO принял `L1_PASS_FOR_CTO_SERIES_DECISION` и открыл ровно четыре независимо созданные finished boards. Это не PASS P0 и не разрешение публикации.
+
+До первой генерации обязательны:
+
+1. Один frozen Concept series brief: четыре различимые темы/архитектуры/материала/содержания при неизменных camera/formal block/frame/aspect/quad/seams/S(z).
+2. Четыре frozen Builder layout manifests и cross-series checker: разные `p` допустимы, но contract v2, `q=.338/.453/.567/.681`, `S=.939/.978/1.018/1.058`, base-center/z-order/assembly неизменны; layouts не подгоняются после изображений.
+
+После обоих exact commits Asset Artist создаёт для каждой доски отдельные independently generated plate и master/family. Нельзя переиспользовать L1 или source между досками, делать crop/recolor, скрытый reroll или global redraw composite. Каждый вызов и failure сохраняется.
+
+Builder собирает четыре boards детерминированно. Visual QA проверяет каждую и серию неизменным rubric без среднего PASS. После exact QA Researcher готовит cross-series вывод/рецепт. Release Engineer только read-only проверяет pre-release пакет; публикация требует отдельного решения CTO. После будущей публикации — STOP до явной приёмки Макса.
