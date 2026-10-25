@@ -42,6 +42,8 @@ smoke exact bytes и публичная auth-граница проверены. 
 не проверен; личный Chrome не использовался, это разрешённое ограничение.
 [Release report](../experiments/q2a-simple-character/RELEASE_P2_C2.md) содержит
 manifest/config hashes, counts, проверки и rollback. Queue A доставлена;
+[сравнительный вывод CTO](ANIMATION_QUEUE_A_COMPARATIVE_CONCLUSION.md)
+фиксирует различия Q5A/Q4A/Q2A и рабочую рекомендацию без запуска нового опыта;
 после этого отдельного выпуска — **idle**. Q4A не переоткрывается;
 Q7, correction, hire, новые проверки или публикации не запускаются.
 

@@ -24,7 +24,9 @@ release `66baa7c80dbe55bf28746d4c2a36af6a1deca28d`, без пересборки/
 в [PROJECT_STATE.md](../docs/PROJECT_STATE.md).
 
 Завершённая и опубликованная очередь — [Q5A → Q4A → Q2A](../CTO_EXPERIMENT_QUEUE_A.md), её
-[фактическое состояние](../docs/ANIMATION_QUEUE_A_STATE.md) ведёт CTO.
+[фактическое состояние](../docs/ANIMATION_QUEUE_A_STATE.md) и
+[сравнительный вывод CTO](../docs/ANIMATION_QUEUE_A_COMPARATIVE_CONCLUSION.md)
+ведёт CTO.
 После отдельно порученной доставки **R4D idle**. Разные итоги опытов и
 принятые ограничения сохраняются; общий художественный PASS и универсальность
 метода не объявляются. Q7, correction, hire, новые проверки или публикации
