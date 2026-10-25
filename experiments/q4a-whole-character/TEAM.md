@@ -82,3 +82,7 @@ CTO принял FAIL04 и закрыл 2root+1hem/mapping03. Поручение
 Фиксированные anchors подтверждены без замены точек; первоначальное AA-сомнение исправлено на геометрическую сверку. Read-only A выполнен на прежних 15 samples и frozen02/04. Determinants positive и оба hem exact, но существующий hidden material не закрывает upper near seam уже в neutral. Точный inverse-lookup всех трёх PNG alpha0, Lead сверил hashes и 3×3 alpha по witness. A остановлен, B не открыт, новых масок/renderer/repair/body изменений нет. Семейство 3-panel/single-affine для v02 закрыто по решению CTO. Новый whole-source не запускается до его следующего решения.
 
 Итог/передача — `HANDOFF_05.md` (Lead). `CORRECTION_05.md` остаётся неизменным hashed brief анализа; текущий результат не дописывается в его входные байты. Sources/repairs, все методы и evidence01–04 сохранены; чужие dirty/untracked не тронуты. Full motion/QA/candidate/release/Q2A закрыты.
+
+### Whole-v03 — новая цельная попытка разрешена
+
+CTO разрешил новый whole-source внутри той же Q4A. Поручение/владение — `WHOLE_V03.md` (Lead). Сохраняются идентичность Мирона/палитра, но свободные шорты заменяются pelvis-only fitted briefs/trunks с открытыми верхами бёдер. Сначала короткий совместный PREGEN Concept/Asset/Builder, затем одна цельная генерация/edit и три личных source reviews. До accepted whole и отдельного следующего CTO решения никакой нарезки/rig/full parts/motion/QA/release/Q2A. v01/v02 и evidence01–05 frozen.
