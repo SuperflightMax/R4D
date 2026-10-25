@@ -20,7 +20,7 @@ try {
   assert(JSON.stringify(actual) === JSON.stringify(expected), `Generated file set differs: ${actual.join(', ')}`);
   for (const name of expected) {
     const [a, b] = await Promise.all([readFile(path.join(generated, name)), readFile(path.join(temp, name))]);
-    assert(a.equals(b), `${name} is stale; run npm run build`);
+    assert(canonicalText(a).equals(canonicalText(b)), `${name} is stale; run npm run build`);
   }
 
   const source = await readFile(model.source.readOnlyPath);
@@ -57,4 +57,5 @@ function jpegDimensions(buffer) {
 }
 
 function sha256(buffer) { return createHash('sha256').update(buffer).digest('hex'); }
+function canonicalText(buffer) { return Buffer.from(buffer.toString('utf8').replace(/\r\n/g, '\n'), 'utf8'); }
 function assert(condition, message) { if (!condition) throw new Error(message); }
