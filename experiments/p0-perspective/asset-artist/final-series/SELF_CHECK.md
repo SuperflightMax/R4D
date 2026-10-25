@@ -5,5 +5,5 @@
 - PASS: master/shadow canvas and anchor match within every set; anchors use the frozen base-center definition.
 - PASS: `check-cross-series.mjs --integration-dir` accepts all four actual manifests.
 - PASS: no shared F-source, crop/recolor/reskin reuse, hidden reroll, board composite, family placement, overlay or global redraw.
-- PASS: all 10 image_gen invocations, tool IDs, prompts, inputs, hashes, defects and correction grounds are recorded.
+- PASS: all 11 image_gen invocations, tool IDs, prompts, inputs, hashes, defects and correction grounds are recorded; the frozen-QA F1 correction was exactly one invocation.
 - OPEN Builder/QA responsibility: test exact visual quad/seam registration and fit of each unique master at frozen p/q/scales during deterministic assembly. No camera was selected or transformed after generation.

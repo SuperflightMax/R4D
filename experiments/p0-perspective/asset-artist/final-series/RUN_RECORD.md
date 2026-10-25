@@ -10,17 +10,18 @@
 - F1/F3 correction использовали только непосредственно предшествующий plate этой же доски как edit target через `num_last_images_to_include=1`; другие boards, L1 и composite не передавались.
 - Все outputs фактически получены в `1254 × 1254`; plate затем единообразно full-frame resized до `1536 × 1536` без crop/axis warp.
 - Built-in интерфейс не раскрыл model, seed, sampler, steps, CFG, quality или числовой size preset. Эти значения не выдумывались.
-- Tool-level failures не было. Две визуально непригодные попытки сохранены как evidence; незаписанных reroll/отборов нет.
+- Tool-level failures не было. Три визуально непригодных/заблокированных plate состояния сохранены как evidence; незаписанных reroll/отборов нет.
 
 ## F1 — «Воздушная астролябия»
 
 1. Plate v1: exact prompt `board-01/prompts/plate-v1.txt`; output id `exec-88092648-e6c6-4c48-9c23-3a3c79c81179`; raw `plate-v1-rejected-markers.png`; SHA-256 `dbd1f1c7fa65d04bcb6f9b62003be33d8cfa41a8e79aa35b95f770f1469fc6a0`.
    - Дефект: центральная золотая линия, ромбы, кольца и большие круговые орнаменты читались как control/anchor markers.
    - Основание correction: убрать только floor markers, сохранив camera/architecture/light.
-2. Plate v2 correction: exact prompt `board-01/prompts/plate-correction-v2.txt`; edit target — только plate v1; output id `exec-7a4fbf23-54ae-423d-87b1-8c1c800940ba`; raw `plate-v2-source.png`; SHA-256 `1b0d995d786c4e1c8c0e1e56ba7c4665209cdb812331bbd9a02d66cf61686021`. Принят.
+2. Plate v2 correction: exact prompt `board-01/prompts/plate-correction-v2.txt`; edit target — только plate v1; output id `exec-7a4fbf23-54ae-423d-87b1-8c1c800940ba`; raw `plate-v2-source.png`; SHA-256 `1b0d995d786c4e1c8c0e1e56ba7c4665209cdb812331bbd9a02d66cf61686021`. Был принят Asset, затем frozen QA `91b11a2…` заблокировал его: сильная baked diagonal shadow пересекала frozen anchor `(p=.62,q=.453)`, тогда как master оставался direct-lit. Те же bytes сохранены как `plate-v2-qa-failure-baked-shadow.png`.
 3. Master v1: exact prompt `board-01/prompts/master-v1.txt`; output id `exec-e72648b5-5225-4391-82fb-47da69e56944`; raw `master-v1-source.png`; SHA-256 `168c742ca23579cf385473b29de37f23cd3e7f8a27a2aa288d40975bc22118be`. Принят.
+4. Plate v3 QA lighting correction: exact prompt `board-01/prompts/plate-qa-lighting-correction-v3.txt`; edit target — только plate v2; output id `exec-5e198487-beef-4760-b45d-03a2d7b9e041`; raw `plate-v3-source.png`; SHA-256 `13324c45a91469aa0148ad32e02fe939d2ff504b028f311d3607a776e7637260`. Единственная разрешённая invocation: сильная тень удалена со всех frozen anchor zones, камера/архитектура/тема визуально сохранены; второго reroll не было.
 
-Prepared hashes: plate `19f9bf2439fb012fff826e6e952703f4e5af0112e1fb8b739d1d746549b4c6cc`; master `868237ecbab76c7ffe0789d6ea98b80cbc4bd8ce8dd2d26394145192c7d0531f`; shadow `3c0d7d5ca026f4411073a4d23f6f630b8556624ed99d3fcb360cbc26fa2266b1`. Anchor `(523,1145)`.
+Prepared hashes: corrected plate `221a351ed7acebdec03cad4395ac0e04690e6b1c186de59778e1bff8f8efe10a`; unchanged master `868237ecbab76c7ffe0789d6ea98b80cbc4bd8ce8dd2d26394145192c7d0531f`; unchanged shadow `3c0d7d5ca026f4411073a4d23f6f630b8556624ed99d3fcb360cbc26fa2266b1`. Anchor `(523,1145)`.
 
 ## F2 — «Сад ступенчатого святилища»
 

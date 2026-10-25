@@ -6,7 +6,7 @@ $ErrorActionPreference = 'Stop'
 Add-Type -AssemblyName System.Drawing
 
 $configs = @(
-    [ordered]@{ Board='board-01'; Plate='plate-v2-source.png'; Master='master-v1-source.png'; ShadowRgb=@(45,50,68); ShadowOffsetX=78; ShadowOffsetY=16 },
+    [ordered]@{ Board='board-01'; Plate='plate-v3-source.png'; Master='master-v1-source.png'; ShadowRgb=@(45,50,68); ShadowOffsetX=78; ShadowOffsetY=16 },
     [ordered]@{ Board='board-02'; Plate='plate-v1-source.png'; Master='master-v1-source.png'; ShadowRgb=@(66,42,28); ShadowOffsetX=64; ShadowOffsetY=15 },
     [ordered]@{ Board='board-03'; Plate='plate-v2-source.png'; Master='master-v1-source.png'; ShadowRgb=@(24,22,20); ShadowOffsetX=72; ShadowOffsetY=17 },
     [ordered]@{ Board='board-04'; Plate='plate-v1-source.png'; Master='master-v1-source.png'; ShadowRgb=@(42,50,61); ShadowOffsetX=82; ShadowOffsetY=15 }
