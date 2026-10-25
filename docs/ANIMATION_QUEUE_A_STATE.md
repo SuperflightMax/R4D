@@ -6,20 +6,21 @@
 
 ## Текущее выполнение
 
-**Q2A_PREPARATION_ACTIVE; production gate закрыт.** Q5A принят и опубликован.
+**Q2A_P1_PRODUCTION_ACTIVE.** Q5A принят и опубликован.
 Q4A закрыт как отрицательный/частичный исследовательский результат; его viewer
 опубликован десятой карточкой Review, полноценная анимация и художественный
 PASS не заявляются. Более поздний прямой handoff Макса через Дот поручил
 продолжить уже согласованную последовательную Queue A следующим пунктом Q2A.
-Новая команда создана и получила только подготовительный выбор метода;
-генерация, арт, риг, runtime, QA и публикация ждут отдельного CTO gate.
+Новая команда создана, самостоятельно выбрала метод и прошла отдельный CTO
+production gate. Открыт только P1_FIRST_SLICE: контракт, новый художественный
+комплект и idle↔low slice. Walk/jump, независимые QA и публикация закрыты.
 Актуальная граница — в [операционном состоянии проекта](PROJECT_STATE.md).
 
 | Порядок | Опыт | Состояние | Материалы и показ |
 |---|---|---|---|
 | 1 | Q5A — конструкция до арта | Accepted by CTO; ASSEMBLY03 frozen `101343caa68579aacd5e6c01b94206680c364ab7`; опубликован в существующем Review; серверная доставка и auth-барьер подтверждены | [Открыть Q5A](https://superflight.space/review/r4d/q5a-construction-first/), [release record](../experiments/q5a-construction-first/RELEASE_ASSEMBLY03.md): `PUBLISHED_DELIVERY_VERIFIED_WITH_AUTH_LIMITATION`; post-auth public canvas не проверен, обычный вход SuperFlight сохранён |
 | 2 | Q4A — цельный образ до частей | **RESEARCH_CLOSED_NEGATIVE_PARTIAL**; evidence viewer `negative-review-v02` принят CTO и опубликован из exact commit `47b637ba77681cc17ccf23757396073047430c37` | [Открыть Q4A](https://superflight.space/review/r4d/q4a-whole-character/), [приёмка](../experiments/q4a-whole-character/ACCEPTANCE_NEGATIVE_REVIEW_V02.md), [release record](../experiments/q4a-whole-character/RELEASE_NEGATIVE_REVIEW_V02.md); 26 сохранённых состояний, rejected отдельно; полного движения нет |
-| 3 | Q2A — свободный выбор способа | **PREPARATION_ACTIVE**; новый Lead получил handoff, production не начат | Команда самостоятельно выбирает и обосновывает способ; ближайший gate — CTO review `PREPARATION_PLAN.md` до генерации/арта/рига/runtime/QA |
+| 3 | Q2A — свободный выбор способа | **P1_PRODUCTION_ACTIVE**; план `b0f586d6…` принят CTO | Новый согласованный комплект крупных растровых деталей → локальная деформация; сейчас только контракт и idle↔low slice, ближайший gate — runnable frozen P1 и личные Concept/Asset reviews |
 
 Независимые review `attempt03` завершили уже существующие сессии:
 Concept Artist `01a16ffd-87e7-7cf3-a9a2-29d2cd97a7ec` и Builder
@@ -54,12 +55,21 @@ local, cwd `D:\dev\R4D`, без worktree и истории прежних ком
 preparation brief: совместно с Concept/Asset/Builder выбрать метод и подготовить
 один production plan. QA остаются ready; производство и публикация не открыты.
 
+Команда сохранила единый `PREPARATION_PLAN.md` в commit
+`b0f586d6a256ae3ef0c84e0e86727d07716e9ef8`; Concept, Asset и Builder отдельно
+подтвердили точность сведённого текста. CTO принял route без существенных
+замечаний и открыл только P1_FIRST_SLICE. Production brief передан существующему
+Lead: до чистового арта согласовать образ/части/скрытые зоны и диапазон, затем
+создать новый цельный растровый комплект и runnable idle↔low slice, провести
+личные motion reviews художников и вернуть frozen P1 на следующий gate.
+Technical/Visual QA, walk/jump и release пока не открыты.
+
 CTO по ходу заменяет сведения фактическим состоянием: активный опыт, команда, ссылки на материалы/демо, полученное качество и решение о продолжении или остановке. Появление каталога само по себе не означает начала или завершения опыта. Новый отдельный статусный сервис не требуется.
 
 ## Итог очереди
 
 Сравнительный итог всей очереди отсутствует: Q5A принят и опубликован,
-Q4A закрыт negative/partial и опубликован как evidence viewer, Q2A находится
-в подготовительной фазе выбора метода. Следующий gate — решение CTO по плану;
-эта запись сама не открывает производство. Материалы Q1–Q6, Q5A и frozen Q4A
-сохраняются.
+Q4A закрыт negative/partial и опубликован как evidence viewer, Q2A выполняет
+ограниченный первый production slice. Следующий gate — решение CTO по frozen
+P1 и художественным reviews; эта запись не открывает walk/jump, QA или release.
+Материалы Q1–Q6, Q5A и frozen Q4A сохраняются.
