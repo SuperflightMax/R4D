@@ -121,4 +121,12 @@ Release Engineer подтвердил, что accepted visual/research chain д�
 
 Предлагаемый browser allowlist: `index.html`, `site.css`, SHA-pinned `assets/reference/03-sun-temple.jpg`, formal SVG, четыре финальные доски, три показательные failure images, `recipe.html`, `qa.html`. Raw payloads, prompts, components, scripts/layouts, intermediate diagnostics/L1, локальные пути, логи, Git metadata и P1+ в browser tree не включать; полный provenance остаётся вне публичного дерева.
 
-До сборки пакета требуется решение CTO: допускается ли копия исходного read-only JPG с SHA-256 `f5cfa2bbe8e4b49ecbc0f4c7a0cee99842b182b56ae495979153b8fc9ff86e32` внутри authenticated Review route. До этого публикация и packaging blocked; P1 закрыт.
+## Решение CTO по prerelease packaging
+
+CTO проверил exact Lead state `1e07b43f56c5a55f7d6f41b5eb2d1d8703b514df`, repeat QA, первый series QA, Research recipe, Asset run record и визуальные артефакты. Содержательный candidate `9c1050596751deee3e736fe2d4f968a37c91af97` принят только для prerelease packaging; это не разрешение публикации.
+
+Разрешена byte-identical копия read-only JPG с SHA-256 `f5cfa2bbe8e4b49ecbc0f4c7a0cee99842b182b56ae495979153b8fc9ff86e32` только внутри существующего authenticated Review route. Нельзя менять исходник, Drive sharing, права/credentials, создавать отдельную публичную ссылку или asset route. Release audit и post-publish check должны подтвердить auth redirect/deny для прямых URL страницы и assets без сессии.
+
+Builder получил адресное поручение собрать пакет без новых генераций и без изменений accepted boards/recipe/QA. Browser allowlist уточнён CTO: original JPG, formal SVG, четыре final boards и ровно три failures — d1 single-shot `2db5dffdbcd0fecaee7ffa209ea3ebe8c775cd2f`, c1 corrected single-shot `6452515fff9f7cb90b619cbe632b62b9573d668b`, QA-failed F1 composite из `4cdd9e6b1da397ae1549ab4085af0f830555fd42` — плюс HTML/CSS recipe/QA. Manifest, build и fail-closed checker должны быть tracked вне browser tree.
+
+После Builder commit разрешён только отдельный read-only Release audit. Публикация требует следующего решения CTO; P1 закрыт.
