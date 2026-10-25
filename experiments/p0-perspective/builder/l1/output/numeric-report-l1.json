@@ -1,0 +1,84 @@
+{
+  "schema": "r4d.p0.l1-numeric-report.v1",
+  "frameDimensions": {
+    "width": 1536,
+    "height": 1536
+  },
+  "componentDimensions": {
+    "environment": {
+      "width": 1536,
+      "height": 1536
+    },
+    "master": {
+      "width": 1074,
+      "height": 1137
+    },
+    "shadow": {
+      "width": 1074,
+      "height": 1137
+    }
+  },
+  "expectedAnchorQ": [
+    0.338,
+    0.453,
+    0.567,
+    0.681
+  ],
+  "actualAnchorQ": [
+    0.338,
+    0.453,
+    0.567,
+    0.681
+  ],
+  "baseCenterYPx": [
+    519.168,
+    695.808,
+    870.912,
+    1046.016
+  ],
+  "expectedUniformScales": [
+    0.939,
+    0.978,
+    1.018,
+    1.058
+  ],
+  "actualUniformScales": [
+    0.939,
+    0.978,
+    1.018,
+    1.058
+  ],
+  "uniqueMasterHashes": [
+    "6318a55c01b3116678445604440113d4e450489db9bfc3b0ac2f1839c52bb878"
+  ],
+  "uniqueShadowHashes": [
+    "0d25b1a01fb17f2875254d80155f62a2173caee5fd4d13fc6f6762bbb02d45e8"
+  ],
+  "shadowMasterDestinationIdentity": true,
+  "stableOrder": [
+    "drum-far-01",
+    "drum-mid-far-02",
+    "drum-mid-near-03",
+    "drum-near-04"
+  ],
+  "anchorsInsidePlayableQuad": [
+    {
+      "instanceId": "drum-far-01",
+      "inside": true
+    },
+    {
+      "instanceId": "drum-mid-far-02",
+      "inside": true
+    },
+    {
+      "instanceId": "drum-mid-near-03",
+      "inside": true
+    },
+    {
+      "instanceId": "drum-near-04",
+      "inside": true
+    }
+  ],
+  "controlMarkersAllowed": false,
+  "verdict": "PASS-machine-contract; visual cohesion requires separate browser self-check"
+}

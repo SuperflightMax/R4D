@@ -1,0 +1,236 @@
+{
+  "schema": "r4d.p0.l1-composite-manifest.v1",
+  "status": "single-deterministic-L1-composite-final-series-closed",
+  "provenance": {
+    "builderContractV2": "606737181da71457372b0f026b4d25cced68d4ee",
+    "assetComponents": "0e23670803d57e6df564a1553c4d87a824e8bcd0",
+    "conceptIntegrationBrief": "b807bcd53cc4baa45ef06925126256f09f99b1ac"
+  },
+  "buildCommand": "npm run build:l1",
+  "frame": {
+    "widthPx": 1536,
+    "heightPx": 1536,
+    "output": "composite-l1.png"
+  },
+  "sourceInputs": {
+    "layout": {
+      "file": "builder/l1/layout-v1.json",
+      "sha256": "820eac4ac7a9f4d2c0e478c7a476193c47ea19f153af6cf119258e80b19205ef"
+    },
+    "contract": {
+      "file": "builder/generated/composition-contract-v2.json",
+      "sha256": "8d286c8213c40f8cc9f2aa55181af52bd71562bf647668cbe8e625c8a663afab"
+    },
+    "metadata": {
+      "file": "asset-artist/l1-components/prepared/component-metadata.json",
+      "sha256": "47f63398f885f519eb6a426cb5e23288c1f2417f679c69cebff412402d626a08"
+    },
+    "environment": {
+      "file": "asset-artist/l1-components/prepared/environment-floor-plate-1536.png",
+      "sha256": "dd50392203e30387c6bb0219102da9295213b56fe89375be6f33aed478ade3b6"
+    },
+    "master": {
+      "file": "asset-artist/l1-components/prepared/drum-master-rgba.png",
+      "sha256": "6318a55c01b3116678445604440113d4e450489db9bfc3b0ac2f1839c52bb878"
+    },
+    "shadow": {
+      "file": "asset-artist/l1-components/prepared/drum-shadow-rgba.png",
+      "sha256": "0d25b1a01fb17f2875254d80155f62a2173caee5fd4d13fc6f6762bbb02d45e8"
+    },
+    "conceptBrief": {
+      "file": "concept/COMPONENT_ART_INTEGRATION_BRIEF.md",
+      "sha256": "a9a7afa2060ec8d3e503280c3b43babdbf00b6fd725991b99f5eb19e1c2a517e"
+    }
+  },
+  "componentDimensions": {
+    "environment": {
+      "width": 1536,
+      "height": 1536
+    },
+    "master": {
+      "width": 1074,
+      "height": 1137
+    },
+    "shadow": {
+      "width": 1074,
+      "height": 1137
+    }
+  },
+  "masterPolicy": {
+    "identity": "one exact RGBA master reused four times",
+    "sourceNormalizationScale": 0.1189296333,
+    "nominalVisibleHeightAtScale1Px": 120
+  },
+  "painterOrder": "instances sorted ascending by (q,p,instanceId); each shadow immediately before its master",
+  "instances": [
+    {
+      "instanceId": "drum-far-01",
+      "p": 0.5,
+      "q": 0.338,
+      "uniformScale": 0.939,
+      "drawIndex": 0,
+      "baseCenterPx": {
+        "x": 768,
+        "y": 519.168
+      },
+      "sourceNormalizationScale": 0.1189296333,
+      "combinedRasterScale": 0.111674925669,
+      "destinationRectPx": {
+        "x": 708.030565,
+        "y": 399.45248,
+        "width": 119.93887,
+        "height": 126.97439
+      },
+      "master": {
+        "sourceId": "master",
+        "sha256": "6318a55c01b3116678445604440113d4e450489db9bfc3b0ac2f1839c52bb878",
+        "sourceAnchorPx": [
+          537,
+          1072
+        ]
+      },
+      "shadow": {
+        "sourceId": "shadow",
+        "sha256": "0d25b1a01fb17f2875254d80155f62a2173caee5fd4d13fc6f6762bbb02d45e8",
+        "sourceAnchorPx": [
+          537,
+          1072
+        ],
+        "destinationRectEqualsMaster": true
+      },
+      "zOrder": [
+        "0:shadow",
+        "0:master"
+      ]
+    },
+    {
+      "instanceId": "drum-mid-far-02",
+      "p": 0.36,
+      "q": 0.453,
+      "uniformScale": 0.978,
+      "drawIndex": 1,
+      "baseCenterPx": {
+        "x": 552.96,
+        "y": 695.808
+      },
+      "sourceNormalizationScale": 0.1189296333,
+      "combinedRasterScale": 0.116313181368,
+      "destinationRectPx": {
+        "x": 490.499822,
+        "y": 571.12027,
+        "width": 124.920357,
+        "height": 132.248087
+      },
+      "master": {
+        "sourceId": "master",
+        "sha256": "6318a55c01b3116678445604440113d4e450489db9bfc3b0ac2f1839c52bb878",
+        "sourceAnchorPx": [
+          537,
+          1072
+        ]
+      },
+      "shadow": {
+        "sourceId": "shadow",
+        "sha256": "0d25b1a01fb17f2875254d80155f62a2173caee5fd4d13fc6f6762bbb02d45e8",
+        "sourceAnchorPx": [
+          537,
+          1072
+        ],
+        "destinationRectEqualsMaster": true
+      },
+      "zOrder": [
+        "1:shadow",
+        "1:master"
+      ]
+    },
+    {
+      "instanceId": "drum-mid-near-03",
+      "p": 0.64,
+      "q": 0.567,
+      "uniformScale": 1.018,
+      "drawIndex": 2,
+      "baseCenterPx": {
+        "x": 983.04,
+        "y": 870.912
+      },
+      "sourceNormalizationScale": 0.1189296333,
+      "combinedRasterScale": 0.1210703667,
+      "destinationRectPx": {
+        "x": 918.025213,
+        "y": 741.124567,
+        "width": 130.029574,
+        "height": 137.657007
+      },
+      "master": {
+        "sourceId": "master",
+        "sha256": "6318a55c01b3116678445604440113d4e450489db9bfc3b0ac2f1839c52bb878",
+        "sourceAnchorPx": [
+          537,
+          1072
+        ]
+      },
+      "shadow": {
+        "sourceId": "shadow",
+        "sha256": "0d25b1a01fb17f2875254d80155f62a2173caee5fd4d13fc6f6762bbb02d45e8",
+        "sourceAnchorPx": [
+          537,
+          1072
+        ],
+        "destinationRectEqualsMaster": true
+      },
+      "zOrder": [
+        "2:shadow",
+        "2:master"
+      ]
+    },
+    {
+      "instanceId": "drum-near-04",
+      "p": 0.48,
+      "q": 0.681,
+      "uniformScale": 1.058,
+      "drawIndex": 3,
+      "baseCenterPx": {
+        "x": 737.28,
+        "y": 1046.016
+      },
+      "sourceNormalizationScale": 0.1189296333,
+      "combinedRasterScale": 0.125827552032,
+      "destinationRectPx": {
+        "x": 669.710605,
+        "y": 911.128864,
+        "width": 135.138791,
+        "height": 143.065927
+      },
+      "master": {
+        "sourceId": "master",
+        "sha256": "6318a55c01b3116678445604440113d4e450489db9bfc3b0ac2f1839c52bb878",
+        "sourceAnchorPx": [
+          537,
+          1072
+        ]
+      },
+      "shadow": {
+        "sourceId": "shadow",
+        "sha256": "0d25b1a01fb17f2875254d80155f62a2173caee5fd4d13fc6f6762bbb02d45e8",
+        "sourceAnchorPx": [
+          537,
+          1072
+        ],
+        "destinationRectEqualsMaster": true
+      },
+      "zOrder": [
+        "3:shadow",
+        "3:master"
+      ]
+    }
+  ],
+  "cleanOutput": {
+    "controlMarkersAllowed": false,
+    "overlaysInComposite": []
+  },
+  "gates": {
+    "l1Composite": "built-once",
+    "newImages": "closed",
+    "finalSeries": "closed"
+  }
+}

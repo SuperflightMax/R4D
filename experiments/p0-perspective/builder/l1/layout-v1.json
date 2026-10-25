@@ -1,0 +1,43 @@
+{
+  "schema": "r4d.p0.l1-layout.v1",
+  "status": "frozen-before-first-render",
+  "authorization": "Lead opened exactly one deterministic L1 composite; new images and final series remain closed",
+  "frame": {
+    "widthPx": 1536,
+    "heightPx": 1536
+  },
+  "masterNormalization": {
+    "sourceVisibleBoundsPxInclusive": [64, 64, 1009, 1072],
+    "sourceVisibleHeightPx": 1009,
+    "nominalVisibleHeightAtUniformScale1Px": 120,
+    "rule": "one common source normalization for all instances; row variation uses only contract uniformScale"
+  },
+  "instances": [
+    {
+      "instanceId": "drum-far-01",
+      "p": 0.5,
+      "q": 0.338,
+      "uniformScale": 0.939
+    },
+    {
+      "instanceId": "drum-mid-far-02",
+      "p": 0.36,
+      "q": 0.453,
+      "uniformScale": 0.978
+    },
+    {
+      "instanceId": "drum-mid-near-03",
+      "p": 0.64,
+      "q": 0.567,
+      "uniformScale": 1.018
+    },
+    {
+      "instanceId": "drum-near-04",
+      "p": 0.48,
+      "q": 0.681,
+      "uniformScale": 1.058
+    }
+  ],
+  "controlMarkersAllowed": false,
+  "randomness": "forbidden"
+}
