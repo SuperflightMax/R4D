@@ -1,0 +1,728 @@
+{
+  "status": "DIAGNOSTIC_INITIAL_KIT_NOT_ART_ACCEPTED_NOT_CONTRACT_CONFORMING",
+  "source": "../source/attempt03_raw.png",
+  "raw_size": [
+    1448,
+    1086
+  ],
+  "logical_sheet_size": [
+    2048,
+    1536
+  ],
+  "transform": {
+    "s": 1.0,
+    "t": [
+      0.0,
+      0.0
+    ],
+    "meaning": "Proposed anatomical scale: one raw pixel per assembly unit. This is not canvas-fit scale 1448/2048. Artwork did not preserve target layout. No image pixels are resized."
+  },
+  "coordinate_formula": "A=(L_U+crop_origin_U-t)/s-D; U=s*R+t; R=A+D",
+  "landmark_method": "Manual visual estimates, uncertainty approx 5-10 raw px; single D anchors each part, all other measured landmarks preserved.",
+  "contract_revision_required": [
+    "Measured torso neck/pelvis separation is220 instead of264; shoulder lies39px lower after pelvic anchoring. Head attached to measured neck yields approximate crown204, not132.",
+    "Near hip-knee163.49 and knee-ankle167.07 versus162.79/161.25; far163.23/167.07. Arms121.46/108.90 versus122.93/106.92, far122.70/108.17. No independent scale applied.",
+    "Measured initial anatomical boot contacts imply ground906 rather than900 and sole101/100 rather than80; no hidden stretching to original contacts.",
+    "Proposed bind is diagnostic only. Builder/Concept/Lead must accept explicit revised schema or identify art correction. Low drop160 remains a requirement, not yet demonstrated.",
+    "Duplicate deltoid and pelvic garment masses, slight torso turn and semi-transparent red fringe remain visible. No artistic PASS."
+  ],
+  "operations": [
+    "Copy rectangular crops with8px padding from original raw, preserving RGBA values exactly. No pixel recoloring, alpha filtering, rotation, reflection or resampling."
+  ],
+  "parts": {
+    "body": {
+      "png": "../parts/attempt03_initial/body.png",
+      "crop_U": [
+        78,
+        111,
+        137,
+        323
+      ],
+      "landmarks_U": {
+        "pelvis": [
+          145,
+          371
+        ],
+        "neck": [
+          151,
+          151
+        ],
+        "shoulder_near": [
+          152,
+          190
+        ],
+        "shoulder_far": [
+          138,
+          190
+        ],
+        "waist": [
+          150,
+          300
+        ]
+      },
+      "landmarks_R": {
+        "pelvis": [
+          145,
+          371
+        ],
+        "neck": [
+          151,
+          151
+        ],
+        "shoulder_near": [
+          152,
+          190
+        ],
+        "shoulder_far": [
+          138,
+          190
+        ],
+        "waist": [
+          150,
+          300
+        ]
+      },
+      "landmarks_PNG": {
+        "pelvis": [
+          67,
+          260
+        ],
+        "neck": [
+          73,
+          40
+        ],
+        "shoulder_near": [
+          74,
+          79
+        ],
+        "shoulder_far": [
+          60,
+          79
+        ],
+        "waist": [
+          72,
+          189
+        ]
+      },
+      "D": [
+        -350,
+        -179
+      ],
+      "layer": 4,
+      "proposed_bind_landmarks_A": {
+        "pelvis": [
+          495,
+          550
+        ],
+        "neck": [
+          501,
+          330
+        ],
+        "shoulder_near": [
+          502,
+          369
+        ],
+        "shoulder_far": [
+          488,
+          369
+        ],
+        "waist": [
+          500,
+          479
+        ]
+      },
+      "measured_lengths_U": {}
+    },
+    "head": {
+      "png": "../parts/attempt03_initial/head.png",
+      "crop_U": [
+        445,
+        55,
+        112,
+        154
+      ],
+      "landmarks_U": {
+        "neck": [
+          499,
+          190
+        ],
+        "crown": [
+          491,
+          64
+        ],
+        "chin": [
+          532,
+          164
+        ]
+      },
+      "landmarks_R": {
+        "neck": [
+          499,
+          190
+        ],
+        "crown": [
+          491,
+          64
+        ],
+        "chin": [
+          532,
+          164
+        ]
+      },
+      "landmarks_PNG": {
+        "neck": [
+          54,
+          135
+        ],
+        "crown": [
+          46,
+          9
+        ],
+        "chin": [
+          87,
+          109
+        ]
+      },
+      "D": [
+        -2,
+        -140
+      ],
+      "layer": 9,
+      "proposed_bind_landmarks_A": {
+        "neck": [
+          501,
+          330
+        ],
+        "crown": [
+          493,
+          204
+        ],
+        "chin": [
+          534,
+          304
+        ]
+      },
+      "measured_lengths_U": {}
+    },
+    "arm_near": {
+      "png": "../parts/attempt03_initial/arm_near.png",
+      "crop_U": [
+        97,
+        523,
+        122,
+        281
+      ],
+      "landmarks_U": {
+        "shoulder": [
+          141,
+          565
+        ],
+        "elbow": [
+          177,
+          681
+        ],
+        "wrist": [
+          191,
+          789
+        ]
+      },
+      "landmarks_R": {
+        "shoulder": [
+          141,
+          565
+        ],
+        "elbow": [
+          177,
+          681
+        ],
+        "wrist": [
+          191,
+          789
+        ]
+      },
+      "landmarks_PNG": {
+        "shoulder": [
+          44,
+          42
+        ],
+        "elbow": [
+          80,
+          158
+        ],
+        "wrist": [
+          94,
+          266
+        ]
+      },
+      "D": [
+        -361,
+        196
+      ],
+      "layer": 7,
+      "proposed_bind_landmarks_A": {
+        "shoulder": [
+          502,
+          369
+        ],
+        "elbow": [
+          538,
+          485
+        ],
+        "wrist": [
+          552,
+          593
+        ]
+      },
+      "measured_lengths_U": {
+        "shoulder_elbow": 121.45781160551181,
+        "elbow_wrist": 108.90362712049586
+      }
+    },
+    "arm_far": {
+      "png": "../parts/attempt03_initial/arm_far.png",
+      "crop_U": [
+        305,
+        523,
+        123,
+        281
+      ],
+      "landmarks_U": {
+        "shoulder": [
+          380,
+          565
+        ],
+        "elbow": [
+          340,
+          681
+        ],
+        "wrist": [
+          334,
+          789
+        ]
+      },
+      "landmarks_R": {
+        "shoulder": [
+          380,
+          565
+        ],
+        "elbow": [
+          340,
+          681
+        ],
+        "wrist": [
+          334,
+          789
+        ]
+      },
+      "landmarks_PNG": {
+        "shoulder": [
+          75,
+          42
+        ],
+        "elbow": [
+          35,
+          158
+        ],
+        "wrist": [
+          29,
+          266
+        ]
+      },
+      "D": [
+        -108,
+        196
+      ],
+      "layer": 0,
+      "proposed_bind_landmarks_A": {
+        "shoulder": [
+          488,
+          369
+        ],
+        "elbow": [
+          448,
+          485
+        ],
+        "wrist": [
+          442,
+          593
+        ]
+      },
+      "measured_lengths_U": {
+        "shoulder_elbow": 122.70289320142373,
+        "elbow_wrist": 108.16653826391968
+      }
+    },
+    "hand_near": {
+      "png": "../parts/attempt03_initial/hand_near.png",
+      "crop_U": [
+        179,
+        829,
+        77,
+        118
+      ],
+      "landmarks_U": {
+        "wrist": [
+          215,
+          849
+        ]
+      },
+      "landmarks_R": {
+        "wrist": [
+          215,
+          849
+        ]
+      },
+      "landmarks_PNG": {
+        "wrist": [
+          36,
+          20
+        ]
+      },
+      "D": [
+        -337,
+        256
+      ],
+      "layer": 8,
+      "proposed_bind_landmarks_A": {
+        "wrist": [
+          552,
+          593
+        ]
+      },
+      "measured_lengths_U": {}
+    },
+    "hand_far": {
+      "png": "../parts/attempt03_initial/hand_far.png",
+      "crop_U": [
+        332,
+        829,
+        77,
+        118
+      ],
+      "landmarks_U": {
+        "wrist": [
+          369,
+          849
+        ]
+      },
+      "landmarks_R": {
+        "wrist": [
+          369,
+          849
+        ]
+      },
+      "landmarks_PNG": {
+        "wrist": [
+          37,
+          20
+        ]
+      },
+      "D": [
+        -73,
+        256
+      ],
+      "layer": 1,
+      "proposed_bind_landmarks_A": {
+        "wrist": [
+          442,
+          593
+        ]
+      },
+      "measured_lengths_U": {}
+    },
+    "leg_near": {
+      "png": "../parts/attempt03_initial/leg_near.png",
+      "crop_U": [
+        726,
+        52,
+        135,
+        387
+      ],
+      "landmarks_U": {
+        "hip": [
+          781,
+          100
+        ],
+        "knee": [
+          823,
+          258
+        ],
+        "ankle": [
+          828,
+          425
+        ]
+      },
+      "landmarks_R": {
+        "hip": [
+          781,
+          100
+        ],
+        "knee": [
+          823,
+          258
+        ],
+        "ankle": [
+          828,
+          425
+        ]
+      },
+      "landmarks_PNG": {
+        "hip": [
+          55,
+          48
+        ],
+        "knee": [
+          97,
+          206
+        ],
+        "ankle": [
+          102,
+          373
+        ]
+      },
+      "D": [
+        281,
+        -450
+      ],
+      "layer": 5,
+      "proposed_bind_landmarks_A": {
+        "hip": [
+          500,
+          550
+        ],
+        "knee": [
+          542,
+          708
+        ],
+        "ankle": [
+          547,
+          875
+        ]
+      },
+      "measured_lengths_U": {
+        "hip_knee": 163.48700254148645,
+        "knee_ankle": 167.0748335327616
+      }
+    },
+    "leg_far": {
+      "png": "../parts/attempt03_initial/leg_far.png",
+      "crop_U": [
+        968,
+        52,
+        136,
+        387
+      ],
+      "landmarks_U": {
+        "hip": [
+          1019,
+          100
+        ],
+        "knee": [
+          1060,
+          258
+        ],
+        "ankle": [
+          1055,
+          425
+        ]
+      },
+      "landmarks_R": {
+        "hip": [
+          1019,
+          100
+        ],
+        "knee": [
+          1060,
+          258
+        ],
+        "ankle": [
+          1055,
+          425
+        ]
+      },
+      "landmarks_PNG": {
+        "hip": [
+          51,
+          48
+        ],
+        "knee": [
+          92,
+          206
+        ],
+        "ankle": [
+          87,
+          373
+        ]
+      },
+      "D": [
+        529,
+        -450
+      ],
+      "layer": 2,
+      "proposed_bind_landmarks_A": {
+        "hip": [
+          490,
+          550
+        ],
+        "knee": [
+          531,
+          708
+        ],
+        "ankle": [
+          526,
+          875
+        ]
+      },
+      "measured_lengths_U": {
+        "hip_knee": 163.23296235748464,
+        "knee_ankle": 167.0748335327616
+      }
+    },
+    "foot_near": {
+      "png": "../parts/attempt03_initial/foot_near.png",
+      "crop_U": [
+        704,
+        791,
+        132,
+        92
+      ],
+      "landmarks_U": {
+        "ankle": [
+          743,
+          840
+        ],
+        "heel_contact": [
+          720,
+          871
+        ],
+        "toe_contact": [
+          821,
+          871
+        ]
+      },
+      "landmarks_R": {
+        "ankle": [
+          743,
+          840
+        ],
+        "heel_contact": [
+          720,
+          871
+        ],
+        "toe_contact": [
+          821,
+          871
+        ]
+      },
+      "landmarks_PNG": {
+        "ankle": [
+          39,
+          49
+        ],
+        "heel_contact": [
+          16,
+          80
+        ],
+        "toe_contact": [
+          117,
+          80
+        ]
+      },
+      "D": [
+        196,
+        -35
+      ],
+      "layer": 6,
+      "proposed_bind_landmarks_A": {
+        "ankle": [
+          547,
+          875
+        ],
+        "heel_contact": [
+          524,
+          906
+        ],
+        "toe_contact": [
+          625,
+          906
+        ]
+      },
+      "measured_lengths_U": {
+        "heel_contact_toe_contact": 101.0
+      }
+    },
+    "foot_far": {
+      "png": "../parts/attempt03_initial/foot_far.png",
+      "crop_U": [
+        964,
+        791,
+        131,
+        92
+      ],
+      "landmarks_U": {
+        "ankle": [
+          1003,
+          840
+        ],
+        "heel_contact": [
+          980,
+          871
+        ],
+        "toe_contact": [
+          1080,
+          871
+        ]
+      },
+      "landmarks_R": {
+        "ankle": [
+          1003,
+          840
+        ],
+        "heel_contact": [
+          980,
+          871
+        ],
+        "toe_contact": [
+          1080,
+          871
+        ]
+      },
+      "landmarks_PNG": {
+        "ankle": [
+          39,
+          49
+        ],
+        "heel_contact": [
+          16,
+          80
+        ],
+        "toe_contact": [
+          116,
+          80
+        ]
+      },
+      "D": [
+        477,
+        -35
+      ],
+      "layer": 3,
+      "proposed_bind_landmarks_A": {
+        "ankle": [
+          526,
+          875
+        ],
+        "heel_contact": [
+          503,
+          906
+        ],
+        "toe_contact": [
+          603,
+          906
+        ]
+      },
+      "measured_lengths_U": {
+        "heel_contact_toe_contact": 100.0
+      }
+    }
+  }
+}
