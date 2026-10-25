@@ -136,3 +136,15 @@ CTO принял `bd125d2` как конкретный harmonic-continuation FAI
 После двух pre-freeze замечаний CTO исправлен evidence-state edge, повторный synthetic/четыре edge checks allPass, edge-check включён в финальный44-entry manifest. Старый draft сохранён в preflight01; config/solver law неизменны. Lead сверил все hashes, Concept и Asset явно приняли contract `d5f1a716…6b2415` и manifest `c02ada67…1f6d7e8` в собственных CONTRACT_REVIEW.md. Точный пакет/ссылки — `EARLY_V04_R2.md`.
 
 Статус READY_FOR_CTO_R2_READ_ONLY_GATE: commit/push и передача CTO, обязательный положительный read-only gate перед единственным actual стартом. Ни actual/auth/gate/result markers, ни новых repair/after пока нет. Frozen R1/raw/PNG/rest/targets и чужой dirty baseline сохранены. Numeric/art PASS не заявлен.
+
+### CTO gate PASS — один actual старт выдан
+
+CTO независимо принял `2b9e0a8`/точный manifest и дал прямое разрешение единственного actual solve. Lead повторно сверил44 hashes/HEAD/отсутствие прежних markers, эксклюзивно создал AUTHORIZED_START с полями CTO/contract hash и выдал Builder один запуск. Sentinel расходует попытку; STOP/FAIL/exception не повторяются, law/config/inputs immutable. Результат pending, repair/after до технического PASS закрыты. Точные hashes/основание — `EARLY_V04_R2.md`.
+
+### R2_FAIL_STOP; исследование Q4A закрыто negative/partial
+
+Один actual R2 (session3530/exit1/12.563s) дал26/241 exact outputs и minimum-step STOP на пути кlow26 из-за σmin0.299998301<0.30. Orientation positive, implementation exception нет,44 hashes unchanged. Lead независимо сверил geometry/metrics/pins/journal/tool capture; auxiliary null metadata была перезаписана до запрета CTO, утрата исходных wrapper bytes явно раскрыта audit, численные raw evidence сохранены.
+
+CTO принял это как последний численный отрицательный/частичный результат и содержательно закрыл Q4A без объявления глобальной невозможности cage. [CLOSURE](CLOSURE.md), [решение](CTO_STOP_DECISION.md). Новые solver/topology/anchors/whole/repair/full parts/motion запрещены; Q2A закрыт.
+
+После exact R2 package commit разрешён только evidence Review candidate из frozen данных (`EVIDENCE_VIEWER.md`): Builder — viewer, Concept/Asset — truthful presentation, Technical/Visual QA — только integrity/controls/responsive/readability evidence candidate. Старые Review URLs/cards не меняются. Candidate после QA возвращается CTO на acceptance/отдельный release, не deploy команды.

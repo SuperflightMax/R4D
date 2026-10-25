@@ -1,0 +1,172 @@
+{
+  "execSessionId": 3530,
+  "exitCode": 1,
+  "actualRuns": 1,
+  "result": "R2_FAIL_STOP",
+  "termination": "MINIMUM_HOMOTOPY_STEP",
+  "candidateReason": "SINGULAR_COMPRESSION",
+  "outputsCompleted": 26,
+  "lastCompletedOutput": {
+    "index": 25,
+    "label": "low-25",
+    "low": 0.10416666666666667
+  },
+  "lastCompletedOutputDrop": 23.958333333333336,
+  "currentOutputTarget": {
+    "index": 26,
+    "low": 0.10833333333333334,
+    "targetDrop": 24.916666666666668
+  },
+  "homotopyFractionScope": "local interpolation of unchanged previous/current output pins; not additional completed outputs",
+  "lastAcceptedFraction": 0.15234375,
+  "lastAcceptedEquivalentLow": 0.10480143229166666,
+  "lastAcceptedEquivalentDrop": 24.104329427083332,
+  "rejectedFraction": 0.152587890625,
+  "rejectedEquivalentLow": 0.10480244954427083,
+  "rejectedEquivalentDrop": 24.10456339518229,
+  "lastAcceptedMetrics": {
+    "minAreaRatio": 0.3942100362202117,
+    "maxAreaRatio": 1.8040080099582905,
+    "minSingularValue": 0.30000227739148483,
+    "maxSingularValue": 1.5807535074138428,
+    "maxCondition": 4.528052157675707,
+    "witnessAreaRatio": 0.4075308815027544,
+    "witnessSingularValues": [
+      1.3584259594501389,
+      0.30000227739148483
+    ]
+  },
+  "rejectedMetrics": {
+    "minAreaRatio": 0.39420865977255604,
+    "maxAreaRatio": 1.8040140147429253,
+    "minSingularValue": 0.29999830114264353,
+    "maxSingularValue": 1.5807565200595528,
+    "maxCondition": 4.528119302176538,
+    "witnessAreaRatio": 0.40752612163168467,
+    "witnessSingularValues": [
+      1.358428098024174,
+      0.29999830114264353
+    ]
+  },
+  "triangle": 923,
+  "indices": [
+    221,
+    611,
+    344
+  ],
+  "owners": [
+    "free",
+    "free",
+    "free"
+  ],
+  "sourceTriangle": [
+    [
+      470.21574880813137,
+      841.340013360983
+    ],
+    [
+      485.4601202981951,
+      843.7319743487352
+    ],
+    [
+      480.66734184198424,
+      843.3307929864787
+    ]
+  ],
+  "rejectedTargetTriangle": [
+    [
+      489.4048310925894,
+      860.351215419819
+    ],
+    [
+      503.05395479939824,
+      859.5748841157666
+    ],
+    [
+      499.15516460420474,
+      859.9563267713276
+    ]
+  ],
+  "lastAcceptedTriangle": [
+    [
+      489.40475227662023,
+      860.3510391863333
+    ],
+    [
+      503.0538850717872,
+      859.5747237299348
+    ],
+    [
+      499.15509036763706,
+      859.9561637263241
+    ]
+  ],
+  "sourceSignedArea": 2.6741906845341084,
+  "sourceDensePixelEvidence": [
+    [
+      476.5,
+      842.5,
+      253
+    ],
+    [
+      477.5,
+      842.5,
+      253
+    ],
+    [
+      483.5,
+      843.5,
+      253
+    ]
+  ],
+  "journalEventCounts": {
+    "run_start": 1,
+    "source_seed": 1,
+    "optimizer_iteration": 1056,
+    "optimizer_converged": 141,
+    "barrier_stage_complete": 141,
+    "homotopy_accepted": 30,
+    "output_accepted": 26,
+    "homotopy_rejected": 17,
+    "run_stop": 1
+  },
+  "homotopyRejectionReasons": {
+    "SINGULAR_COMPRESSION": 17
+  },
+  "lastAcceptedJournalRecord": {
+    "kind": "homotopy_accepted",
+    "outputIndex": 26,
+    "label": "low-26",
+    "low": 0.10833333333333334,
+    "homotopyFrom": 0.1484375,
+    "homotopyTo": 0.15234375,
+    "homotopyStep": 0.00390625,
+    "attempt": 15,
+    "acceptedSubstepsForOutput": 3,
+    "acceptedSubstepsTotal": 30,
+    "metrics": {
+      "minAreaRatio": 0.3942100362202117,
+      "minAreaTriangle": 956,
+      "maxAreaRatio": 1.8040080099582905,
+      "minSingularValue": 0.30000227739148483,
+      "maxSingularValue": 1.5807535074138428,
+      "maxCondition": 4.528052157675707,
+      "maxAreaTriangle": 955,
+      "maxSingularTriangle": 955,
+      "minSingularTriangle": 923,
+      "maxConditionTriangle": 923
+    },
+    "pinErrorPx": 0.0,
+    "energies": {
+      "finite": true,
+      "arapEnergy": 346.801772488518,
+      "barrierUnweighted": 133.76176546668705,
+      "mu": 0.001,
+      "objective": 346.93553425398466,
+      "minAreaRatio": 0.3942100362202117,
+      "maxAreaRatio": 1.8040080099582905
+    }
+  },
+  "implementationException": null,
+  "allPublishedInputsUnchanged": true
+}

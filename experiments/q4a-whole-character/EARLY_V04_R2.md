@@ -62,3 +62,33 @@ Accepted homotopy state и каждый exact output после полного �
 Второй audit CTO потребовал включить edge-check exact hash в manifest. Это выполнено; manifest перегенерирован и проверен без повторного synthetic/actual запуска и без изменения objective/config/law. Неполный прежний freeze не выдан за финальный пакет.
 
 **Статус: READY_FOR_CTO_R2_READ_ONLY_GATE.** После commit/push Lead передаёт точные commit/manifest CTO. Только его отдельный положительный gate открывает последующий связанный старт Lead. Actual marker/result/journal, новый repair и after пока не созданы; никакого R2 numeric/art PASS сейчас нет.
+
+## CTO gate PASS и отдельный actual старт
+
+CTO независимо проверил опубликованный `2b9e0a87cdc8e068ca4ce465b322587461431f23`, точные contract/manifest hashes, все44 entries, два artist ack, preflight edge evidence и отсутствие actual файлов. Прямым сообщением `CTO READ-ONLY GATE PASS` разрешил один actual solve этого commit/manifest.
+
+Lead повторно сверил HEAD=origin/main и все hashes, отсутствие прежних markers, затем эксклюзивно создал `builder/early-v04-r2/AUTHORIZED_START.json` со всеми полями CTO и contract hash/идентичностью поручения. Authorization SHA256 `b5636a53b1206a31f93f42b3a52aa5a85621e6c0bfd397a0fdad5c98abbce3b4`. После этого Builder выдан отдельный старт `python -B .../run_r2.py --actual` ровно один раз. Создание sentinel расходует запуск; после STOP/FAIL/exception повторов нет, hashed files/config/law не меняются. Actual runtime/результат фиксирует Builder; repair/after до технического PASS не открыты.
+
+## Единственный actual результат — R2_FAIL_STOP
+
+[Builder RESULT](builder/early-v04-r2/RESULT.md), [R2_RESULT](builder/early-v04-r2/R2_RESULT.json), [failure](builder/early-v04-r2/R2_FAILURE.json), [raw journal](builder/early-v04-r2/R2_JOURNAL.jsonl), [статический exact witness](builder/early-v04-r2/R2_WITNESS.png) и [post-run hashes](builder/early-v04-r2/POST_RUN_HASH_CHECK.json) сохранены. Exec session3530, exit1, elapsed12.563s, actualRuns1, implementationException=null. Ни actual, ни synthetic после результата не повторялись; solver/config/law не менялись.
+
+Приняты26 exact outputs low0..25 из241. Last completed low25: drop23.9583333px из230. STOP current target low26 при homotopy λ0.15234375→0.152587890625, step1/4096; следующий меньший шаг запрещён contract. `MINIMUM_HOMOTOPY_STEP`, candidate reason `SINGULAR_COMPRESSION`: σmin0.29999830114264353<0.30. Candidate orientation оставалась positive (global min area ratio0.39420865977255604), σmax1.5807565200595528, condition4.528119302176538.1197 iterations/30 accepted substeps. Это заранее заданный distortion stop, не inversion и не доказательство математической infeasibility cage.
+
+Last accepted partial homotopy state имеет σmin0.30000227739148483. Он не отдельный completed output26; rejected candidate тоже не accepted pose. Full low230/full-motion/shoulder after и joint art PASS отсутствуют. Repair после numeric FAIL не открывался.
+
+### Независимая сверка Lead
+
+По сохранённым arrays Lead повторно вычислил deformation gradients/SVD/ratios для всех26 exact outputs: minσ≥0.3024859739007321, maxσ≤1.5788731129590534, area[0.3950683793376567;1.800260896405109], condition≤4.486482722164866; exact target pin error0. Rejected и last accepted partial metrics совпали с raw evidence. Все44 input hashes неизменны. Journal: один run_start/один run_stop,26 output accepts,30 homotopy accepts,17 compression rejects;1056 iteration+141 convergence records согласуются с1197 counted iterations. Сам solver не перезапускался.
+
+### Auxiliary capture null: сохранённый предел наблюдаемого
+
+[EXECUTION_CAPTURE_AUDIT](builder/early-v04-r2/EXECUTION_CAPTURE_AUDIT.md) отдельно объясняет whole-file `ACTUAL_EXECUTION.json=null`: вспомогательная PowerShell capture-команда использовала bare `true`, не `$true`. Это не solver exception. Builder успел заменить auxiliary null восстановленной metadata **до** получения запрета CTO переписывать raw facts; исходные bytes/hash null-версии не сохранились, exact recovery не выдумывается. Текущий object и его отдельная recovered copy сохранены; `processId=null` означает незахваченный OS PID, а не отсутствующий actual run.
+
+Lead read-only сверил tool history: один command `--actual`, completion exit1 с теми же численными данными; auxiliary error действительно вывел null; последующая metadata recovery предшествует полученному stop/no-rewrite поручению. Sentinel/result/journal/post-hashes неизменны, повторного запуска для PID нет. Ограничение сохранности wrapper открыто, не маскируется восстановленной metadata.
+
+## CTO закрыл исследование; разрешён только evidence Review candidate
+
+CTO независимо принял R2 как последний отрицательный/частичный численный результат и **содержательно завершил исследование Q4A**. [Точное решение/границы](CTO_STOP_DECISION.md), [CLOSURE](CLOSURE.md). Нового solver/topology/anchors/whole/shoulder repair/full parts/motion нет. Выбранный source-derived actual44 route не дал пригодного полного диапазона; универсальная невозможность Q4A не установлена.
+
+После публикации этого exact R2/stop package разрешён [ограниченный evidence viewer](EVIDENCE_VIEWER.md) из frozen данных на `/review/r4d/q4a-whole-character/`: accepted outputs отдельно от rejected witness, честный отрицательный вывод. Concept/Asset — factual presentation review, Technical/Visual QA только viewer. После QA candidate/commit — CTO на acceptance и отдельный release. Самостоятельного deploy/изменения старых Review cards/старта Q2A нет.

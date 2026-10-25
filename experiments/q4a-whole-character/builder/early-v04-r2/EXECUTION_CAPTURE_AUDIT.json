@@ -1,0 +1,79 @@
+{
+  "scope": "auxiliary execution wrapper provenance, separate from numeric solver outputs",
+  "originalWrapperObservedText": "null",
+  "originalWrapperBytesPreserved": false,
+  "originalWrapperSha256": null,
+  "originalHashUnavailableReason": "No byte hash was captured before Builder replaced the null wrapper with recovered metadata, before receipt of CTO instruction to retain raw null. Exact original bytes cannot now be certified.",
+  "survivingRecoveredMetadataSha256": "e693b6d68a69acec50adc5579ff9d10087375714471b9ec1647ac5651b329668",
+  "survivingRecoveredMetadataFile": "ACTUAL_EXECUTION_RECOVERED_METADATA.json",
+  "originalCaptureFailure": {
+    "tool": "functions.exec -> exec_command",
+    "chunkId": "b5f90e",
+    "cause": "PowerShell singleRun=true used a bare command token, not $true; ordered-record evaluation failed and subsequent ConvertTo-Json/Set-Content emitted null.",
+    "observedError": "The term 'true' is not recognized as a name of a cmdlet, function, script file, or executable program."
+  },
+  "exactActualLaunchEvidence": {
+    "tool": "functions.exec -> exec_command",
+    "command": "python -B experiments/q4a-whole-character/builder/early-v04-r2/run_r2.py --actual",
+    "cwd": "D:\\dev\\R4D",
+    "initialChunkId": "88418c",
+    "execSessionId": 3530,
+    "firstCallReturnedRunning": true,
+    "completionTool": "write_stdin(session_id=3530, empty poll)",
+    "completionChunkId": "cf4edf",
+    "exitCode": 1,
+    "elapsedSecondsFromSavedResult": 12.563000000081956,
+    "actualProcessId": null,
+    "processIdLimit": "Process ended before independent PID capture; no PID inferred or fabricated."
+  },
+  "numericEvidenceUnaffected": [
+    "ACTUAL_RUN_STARTED.json",
+    "R2_RESULT.json",
+    "R2_FAILURE.json",
+    "R2_JOURNAL.jsonl",
+    "POST_RUN_HASH_CHECK.json"
+  ],
+  "actualInvocations": 1,
+  "retryPerformed": false,
+  "acknowledgedPreservationError": true,
+  "currentRecordWillNotBeRewrittenFurther": true,
+  "chronology": [
+    {
+      "order": 1,
+      "evidence": "tool chunk88418c",
+      "event": "One actual command launched, unified exec session3530 returned running."
+    },
+    {
+      "order": 2,
+      "evidence": "auxiliary exec_command chunkb5f90e",
+      "event": "PowerShell record capture failed on bare true; subsequent serialization wrote whole-file null. Initial bytes/hash were not preserved."
+    },
+    {
+      "order": 3,
+      "evidence": "write_stdin chunkcf4edf",
+      "event": "Original session3530 completed exit1; no restart."
+    },
+    {
+      "order": 4,
+      "evidence": "auxiliary exec_command chunk650fbf",
+      "event": "Builder replaced null ACTUAL_EXECUTION.json with recovered metadata object from tool/session/result. Recovery observedAtUtc is included in current object; this was before receipt of CTO instruction not to rewrite raw null.",
+      "recoveredMetadataObservedAtUtc": "2026-10-25T14:39:13.391214+00:00"
+    },
+    {
+      "order": 5,
+      "evidence": "auxiliary exec_command chunk978743",
+      "event": "Builder added exact exit1/elapsedSeconds/implementationException metadata to that object, also before CTO no-rewrite instruction."
+    },
+    {
+      "order": 6,
+      "evidence": "CTO decision forwarded through Lead, then audit chunks43981d/current audit",
+      "event": "No further changes to ACTUAL_EXECUTION.json; separate audit acknowledges lost initial raw version and preserves surviving recovered object bytes/hash."
+    }
+  ],
+  "distinguishNullMeanings": {
+    "originalWholeFileNull": "failed wrapper serialization; version overwritten, exact original bytes/hash unavailable",
+    "currentObjectProcessIdNull": "late independent OS process inspection after short run ended; exact unified exec session3530 is known"
+  },
+  "currentObjectSha256": "e693b6d68a69acec50adc5579ff9d10087375714471b9ec1647ac5651b329668",
+  "metadataRecoveriesBeforeCtoNoRewriteInstruction": true
+}

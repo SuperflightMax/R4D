@@ -1,0 +1,66 @@
+{
+  "scope": "read-only summary of existing actual journal, no solve",
+  "finalRejectedCandidateConvergedBarrierStages": [
+    0.1,
+    0.01,
+    0.001
+  ],
+  "finalRejectedCandidateStageEnergies": [
+    {
+      "mu": 0.1,
+      "arapEnergy": 347.25108987681324,
+      "barrierUnweighted": 124.72553893388492,
+      "objective": 359.72364377020176
+    },
+    {
+      "mu": 0.01,
+      "arapEnergy": 346.81044942810433,
+      "barrierUnweighted": 132.88497972237414,
+      "objective": 348.1392992253281
+    },
+    {
+      "mu": 0.001,
+      "arapEnergy": 346.80562882079636,
+      "barrierUnweighted": 133.7633249525114,
+      "objective": 346.93939214574885
+    }
+  ],
+  "lastAcceptedStageEnergies": {
+    "finite": true,
+    "arapEnergy": 346.801772488518,
+    "barrierUnweighted": 133.76176546668705,
+    "mu": 0.001,
+    "objective": 346.93553425398466,
+    "minAreaRatio": 0.3942100362202117,
+    "maxAreaRatio": 1.8040080099582905
+  },
+  "lastCompletedOutputEnergies": {
+    "arapEnergy": 344.4005173916596,
+    "barrierUnweighted": 132.79086044072184,
+    "objective": 344.5333082521003,
+    "mu": 0.001
+  },
+  "iterations": 1197,
+  "maximumIterationsBudget": 60000,
+  "acceptedSubsteps": 30,
+  "acceptedSubstepsTotalBudget": 8192,
+  "currentOutputAttempts": 21,
+  "currentOutputAttemptBudget": 256,
+  "currentOutputAcceptedSubsteps": 4,
+  "currentOutputAcceptedBudget": 128,
+  "lastAttemptStep": 0.000244140625,
+  "minimumStep": 0.000244140625,
+  "nextRequiredStep": 0.0001220703125,
+  "counts": {
+    "run_start": 1,
+    "source_seed": 1,
+    "optimizer_iteration": 1056,
+    "optimizer_converged": 141,
+    "barrier_stage_complete": 141,
+    "homotopy_accepted": 30,
+    "output_accepted": 26,
+    "homotopy_rejected": 17,
+    "run_stop": 1
+  },
+  "noImplementationException": true
+}

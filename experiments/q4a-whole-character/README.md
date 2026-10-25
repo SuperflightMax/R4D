@@ -2,7 +2,9 @@
 
 Канонический заказ: [Queue A](../../CTO_EXPERIMENT_QUEUE_A.md), общие условия и секция Q4A. [Команда и состояние](TEAM.md), [договор до генерации](AGREEMENT.md).
 
-**Текущий этап — READY_FOR_CTO_R2_READ_ONLY_GATE.** [Подготовительный R2-contract02](EARLY_V04_R2.md#подготовительный-пакет-r2-contract02-согласован) сохранён, 44 hashes проверены Lead, оба художника приняли точную версию. Actual solve ещё не запускался: после публикации нужен отдельный положительный read-only gate CTO, затем связанный старт Lead. Inputs R1 frozen; repair/after только после технического PASS, новые whole/full parts/full motion/QA/release/Q2A закрыты.
+**Исследование Q4A закрыто CTO с отрицательным/частичным результатом.** [CLOSURE](CLOSURE.md), [решение CTO](CTO_STOP_DECISION.md). Единственный R2 дал `R2_FAIL_STOP`:26/241 exact outputs low0..25; rejected candidate пути кlow26 нарушил σmin≥0.30. Full low230/full-motion/художественный after не получены; ни нового solve/whole/repair, ни full parts/motion больше нет. Универсальная невозможность cage/Q4A не заявлена.
+
+**Доставка результата: evidence Review candidate готовится** по [отдельному brief](EVIDENCE_VIEWER.md), только frozen данные, не полная animation demo. После presentation review и ограниченной Technical/Visual QA — CTO acceptance и отдельный release. Старые Review cards/URLs не меняются, Q2A закрыт.
 
 **Принятый R1 остаётся R1_TECHNICAL_FAIL_BEFORE_FULL_AFTER**, опубликован `bd125d2`: исходный harmonic continuation остановился при drop50,79px из230. [Точный результат](EARLY_V04_R1.md#итог-корректного-r1-input-прогона-технический-stop-до-full-after). Это отказ конкретного численного пути, не доказательство невозможности cage; полного художественного after нет.
 
@@ -17,6 +19,8 @@
 ## Открыть раннюю попытку
 
 R1 доступен как [статическая исходная сборка](art/early-v04-r1/diagnostics/initial-assembly-light.png), [кинематическая feasibility полного low](builder/early-v04-r1/GEOMETRY_FEASIBILITY.png) и [witness solver STOP](builder/early-v04-r1/CAGE_FAILURE.png), [подробности](EARLY_V04_R1.md). Это материалы незавершённого до движения теста; нового анимационного build/URL нет.
+
+R2: [точный результат](builder/early-v04-r2/RESULT.md), [статический witness accepted/rejected](builder/early-v04-r2/R2_WITNESS.png), [история/gate/сверка Lead](EARLY_V04_R2.md), [audit auxiliary capture null](builder/early-v04-r2/EXECUTION_CAPTURE_AUDIT.md). Эти evidence не являются full low или художественным after.
 
 Последний статический [raw-v04](art/whole-v04/raw/whole-v04.png) на [светлом](art/whole-v04/previews/whole-v04-light.png), [тёмном](art/whole-v04/previews/whole-v04-dark.png), [checker-фоне](art/whole-v04/previews/whole-v04-checker.png). Это непринятый исходник, не новое анимационное демо. Сохранены [raw-v03 correction02](art/whole-v03/raw/whole-v03-correction02.png) и первый [raw-v03](art/whole-v03/raw/whole-v03.png); correction01-изображение не получено.
 
