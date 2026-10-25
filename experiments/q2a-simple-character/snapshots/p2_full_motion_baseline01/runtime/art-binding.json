@@ -1,0 +1,229 @@
+{
+  "version": "p2_full_motion_baseline01",
+  "motionVersion": "P2 baseline: stance/swing contacts, shared pose solver, interruptible commands, prepare/push/flight/land and landing selection. P1 art unchanged.",
+  "artVersion": "c1_arms01",
+  "sourceMetadata": "art/metadata/c1_arms01.json",
+  "status": "P1_C1_TARGETED_ARM_HAND_ART_CANDIDATE_PENDING_MOTION_VIEW",
+  "scale": 1,
+  "translation": [
+    0,
+    0
+  ],
+  "rig": {
+    "pelvis": [
+      495,
+      550
+    ],
+    "neck": [
+      501,
+      330
+    ],
+    "waist": [
+      500,
+      479
+    ],
+    "ground": 906,
+    "near": {
+      "hip": [
+        500,
+        550
+      ],
+      "knee": [
+        542,
+        708
+      ],
+      "ankle": [
+        547,
+        875
+      ],
+      "shoulder": [
+        502,
+        369
+      ],
+      "elbow": [
+        537,
+        482
+      ],
+      "wrist": [
+        548,
+        570
+      ]
+    },
+    "far": {
+      "hip": [
+        490,
+        550
+      ],
+      "knee": [
+        531,
+        708
+      ],
+      "ankle": [
+        526,
+        875
+      ],
+      "shoulder": [
+        488,
+        369
+      ],
+      "elbow": [
+        444,
+        482
+      ],
+      "wrist": [
+        441,
+        570
+      ]
+    }
+  },
+  "parts": {
+    "body": {
+      "url": "/art/parts/c1_arms01/body.png",
+      "crop": [
+        78,
+        111,
+        137,
+        323
+      ],
+      "offset": [
+        -350,
+        -179
+      ],
+      "layer": 4
+    },
+    "head": {
+      "url": "/art/parts/c1_arms01/head.png",
+      "crop": [
+        445,
+        55,
+        112,
+        154
+      ],
+      "offset": [
+        -2,
+        -140
+      ],
+      "layer": 9
+    },
+    "arm_near": {
+      "url": "/art/parts/c1_arms01/arm_near.png",
+      "crop": [
+        97,
+        526,
+        121,
+        257
+      ],
+      "offset": [
+        -360,
+        199
+      ],
+      "layer": 7
+    },
+    "arm_far": {
+      "url": "/art/parts/c1_arms01/arm_far.png",
+      "crop": [
+        313,
+        527,
+        122,
+        257
+      ],
+      "offset": [
+        -99,
+        199
+      ],
+      "layer": 0
+    },
+    "hand_near": {
+      "url": "/art/parts/c1_arms01/hand_near.png",
+      "crop": [
+        158,
+        803,
+        78,
+        112
+      ],
+      "offset": [
+        -355,
+        264
+      ],
+      "layer": 8
+    },
+    "hand_far": {
+      "url": "/art/parts/c1_arms01/hand_far.png",
+      "crop": [
+        302,
+        803,
+        76,
+        112
+      ],
+      "offset": [
+        -102,
+        264
+      ],
+      "layer": 1
+    },
+    "leg_near": {
+      "url": "/art/parts/c1_arms01/leg_near.png",
+      "crop": [
+        726,
+        52,
+        135,
+        387
+      ],
+      "offset": [
+        281,
+        -450
+      ],
+      "layer": 5
+    },
+    "leg_far": {
+      "url": "/art/parts/c1_arms01/leg_far.png",
+      "crop": [
+        968,
+        52,
+        136,
+        387
+      ],
+      "offset": [
+        529,
+        -450
+      ],
+      "layer": 2
+    },
+    "foot_near": {
+      "url": "/art/parts/c1_arms01/foot_near.png",
+      "crop": [
+        704,
+        791,
+        132,
+        92
+      ],
+      "offset": [
+        196,
+        -35
+      ],
+      "layer": 6
+    },
+    "foot_far": {
+      "url": "/art/parts/c1_arms01/foot_far.png",
+      "crop": [
+        964,
+        791,
+        131,
+        92
+      ],
+      "offset": [
+        477,
+        -35
+      ],
+      "layer": 3
+    }
+  },
+  "knownDeviations": [
+    "Torso/head/legs/boots unchanged from initial: short body, sole100-101 and ground906 remain explicitly documented measured anatomy.",
+    "Near arm118.30/88.68; far121.26/88.05 raw px by manual landmarks. Upper arms differ few px from initial; forearms shortened20px by anatomical generation, not image rescaling.",
+    "Proposed assembled wrist near548,570 and far441,570; elbows537,482 and444,482. Shoulder positions unchanged. Fingers now approximatelyY643, above knees708, close to middle thigh629. Need actual C1 bind and low viewing.",
+    "New hand proximal hidden extension about23px; do not add the initial-PNG wrist+8 correction again.",
+    "Pelvic/body art unchanged intentionally; Builder diagnoses and corrects weights separately. No artistic PASS for pelvis or whole slice.",
+    "Trace red edge RGB remains at alpha1-5/255. No broad alpha removal performed; inspect on light/dark after integration."
+  ]
+}
