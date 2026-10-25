@@ -96,3 +96,11 @@ CTO принял `L1_PASS_FOR_CTO_SERIES_DECISION` и открыл ровно ч
 После обоих exact commits Asset Artist создаёт для каждой доски отдельные independently generated plate и master/family. Нельзя переиспользовать L1 или source между досками, делать crop/recolor, скрытый reroll или global redraw composite. Каждый вызов и failure сохраняется.
 
 Builder собирает четыре boards детерминированно. Visual QA проверяет каждую и серию неизменным rubric без среднего PASS. После exact QA Researcher готовит cross-series вывод/рецепт. Release Engineer только read-only проверяет pre-release пакет; публикация требует отдельного решения CTO. После будущей публикации — STOP до явной приёмки Макса.
+
+## Final-series pre-generation freeze
+
+- Concept frozen brief: `ae82913a18cf0beed2b67f1c421b30e1c1988e3b`, `FINAL_SERIES_FROZEN_BRIEF.md`. Варианты: F1 «Воздушная астролябия», F2 «Сад ступенчатого святилища», F3 «Цитадель янтарных печей», F4 «Жемчужный приливный двор»; formal block общий, plate/master каждой доски независимы.
+- Builder freeze/checker: `0260519c5e3ff74365556713042d576b7bbec66e`, четыре layout manifests и cross-series checker. Frozen `p`: board-01 `.42/.62/.35/.58`; board-02 `.58/.38/.66/.44`; board-03 `.33/.52/.69/.54`; board-04 `.67/.47/.31/.60`. Все 16 IDs уникальны; общие q/scales/contract v2 invariants неизменны.
+- Cross-series checker требует четыре exact manifests, разные plate/master/shadow hashes, 12 уникальных component hashes и запрещает все L1 source hashes. Self-test отвергает duplicate master, L1 reuse и anchor drift. Fresh-check PASS; до freeze изображений серии нет.
+
+Generation gate открыт только для четырёх независимых component sets по этим exact commits; layouts после изображений не меняются.
