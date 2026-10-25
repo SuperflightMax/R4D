@@ -22,36 +22,52 @@ export function kneeFor(hip,ankle,l1=Math.sqrt(26500),l2=Math.sqrt(26000)) {
   return add(add(hip,mul(n,a)),[n[1]*h,-n[0]*h]);
 }
 
-export function poseAt(q,time=0) {
+export function poseAt(q,time=0,options={}) {
   // Idle never rises above bind. Breathing fades out through the transition.
   const breath=4*Math.sin(time*1.7)*(1-q);
-  const pelvis=[bind.pelvis[0]-40*q,bind.pelvis[1]+4+156*q+breath];
-  const pelvicAngle=rad(10*q),chestAngle=rad(20*q);
+  const pelvis=options.pelvis||[bind.pelvis[0]-40*q,bind.pelvis[1]+4+156*q+breath];
+  const pelvicAngle=options.pelvicAngle??rad(10*q),chestAngle=options.chestAngle??rad(20*q);
   const waist=add(pelvis,rotate(sub(bind.waist,bind.pelvis),pelvicAngle));
   const bodyPoint=p=>{
     const lower=p[1]>=bind.waist[1];
     const baseOrigin=lower?bind.pelvis:bind.waist,baseEnd=lower?bind.waist:bind.neck;
     const delta=sub(baseEnd,baseOrigin),t=(p[1]-baseOrigin[1])/delta[1];
     const baseCenter=add(baseOrigin,mul(delta,t));
-    const a=rad(10*q+10*q*smooth((bind.waist[1]+30-p[1])/75));
+    const a=pelvicAngle+(chestAngle-pelvicAngle)*smooth((bind.waist[1]+30-p[1])/75);
     const center=add(lower?pelvis:waist,rotate(sub(baseCenter,baseOrigin),lower?pelvicAngle:chestAngle));
     return add(center,rotate([p[0]-baseCenter[0],0],a));
   };
   const result={q,time,pelvis,waist,bodyPoint,pelvicAngle,chestAngle,neck:bodyPoint(bind.neck)};
   for(const side of ['far','near']) {
-    const b=bind[side],hip=add(pelvis,sub(b.hip,bind.pelvis)),ankle=b.ankle.slice(),knee=kneeFor(hip,ankle,length(sub(b.knee,b.hip)),length(sub(b.ankle,b.knee)));
+    const b=bind[side],hip=add(pelvis,sub(b.hip,bind.pelvis)),ankle=options.feet?.[side]?.p||b.ankle.slice(),knee=kneeFor(hip,ankle,length(sub(b.knee,b.hip)),length(sub(b.ankle,b.knee)));
     const shoulder=bodyPoint(b.shoulder);
-    const upper=Math.atan2(b.elbow[0]-b.shoulder[0],b.elbow[1]-b.shoulder[1])*(1-q)+rad(side==='near'?60:50)*q;
-    const lower=Math.atan2(b.wrist[0]-b.elbow[0],b.wrist[1]-b.elbow[1])*(1-q)+rad(side==='near'?105:100)*q;
+    const upper=options.arms?.[side]?.[0]??(Math.atan2(b.elbow[0]-b.shoulder[0],b.elbow[1]-b.shoulder[1])*(1-q)+rad(side==='near'?60:50)*q);
+    const lower=options.arms?.[side]?.[1]??(Math.atan2(b.wrist[0]-b.elbow[0],b.wrist[1]-b.elbow[1])*(1-q)+rad(side==='near'?105:100)*q);
     const elbow=add(shoulder,mul([Math.sin(upper),Math.cos(upper)],length(sub(b.elbow,b.shoulder))));
     const wrist=add(elbow,mul([Math.sin(lower),Math.cos(lower)],length(sub(b.wrist,b.elbow))));
-    result[side]={hip,knee,ankle,shoulder,elbow,wrist};
+    result[side]={hip,knee,ankle,shoulder,elbow,wrist,footAngle:options.feet?.[side]?.angle||0};
   }
   return result;
 }
 
 function angle(v){return Math.atan2(v[1],v[0])}
 export function rigid(p,origin,target,a){return add(target,rotate(sub(p,origin),a))}
+
+function rootAttachment(p,base,current,kind,parentAngle){
+ const a=kind==='arm'?base.shoulder:base.hip,A=kind==='arm'?current.shoulder:current.hip;
+ const b=kind==='arm'?base.elbow:base.knee,B=kind==='arm'?current.elbow:current.knee;
+ const ab=sub(b,a),ra=angle(sub(B,A))-angle(ab),root=kind==='leg'?55:40,reach=kind==='leg'?70:55;
+ let weight=smooth((p[1]-a[1]+root)/(root+reach));
+ if(kind==='arm'){
+  const u=mul(ab,1/length(ab)),v=sub(p,a),along=v[0]*u[0]+v[1]*u[1];
+  const side=base.shoulder[0]>=bind.pelvis[0]?1:-1;
+  const outside=(v[0]*u[1]-v[1]*u[0])*side;
+  const outer=smooth((outside+5)/35)*smooth((along+35)/50);
+  const inner=smooth((-outside-5)/30)*(1-smooth((along-10)/55));
+  weight=clamp(weight+(1-weight)*outer*.55-weight*inner*.2,0,1);
+ }
+ return rigid(p,a,A,parentAngle+(ra-parentAngle)*weight);
+}
 
 // Restore the better initial knee construction only; proximal C1 attachment
 // remains below. The two unsuccessful C2 field variants are recorded in notes.
@@ -81,20 +97,21 @@ export function limbPoint(p,base,current,kind,parentAngle=0) {
   const bent=kind==='leg'?initialKneePoint(p,base,current):rigid(p,b,B,ra+delta*w);
   // Proximal surface gradually leaves the torso; the middle of the segment
   // reaches full bone rotation. No global scaling or changed bone lengths.
-  const root=kind==='leg'?55:40,reach=kind==='leg'?70:55;
-  const rootWeight=smooth((p[1]-a[1]+root)/(root+reach));
-  const attached=rigid(p,a,A,parentAngle+(ra-parentAngle)*rootWeight);
+  const reach=kind==='leg'?70:55;
+  const attached=rootAttachment(p,base,current,kind,parentAngle);
   return mix(attached,bent,smooth((p[1]-a[1]-reach+12)/24));
 }
 
 export function mapPoint(id,p,pose) {
   if(id==='body') {
-    const body=pose.bodyPoint(p),b=bind.near,c=pose.near;
-    // Only the lower garment surface follows the outgoing thigh. Pelvic mass
-    // and upper torso retain their existing anchors and shape.
-    const r=angle(sub(c.knee,c.hip))-angle(sub(b.knee,b.hip));
-    const weight=smooth((p[1]-bind.pelvis[1]+8)/65);
-    return mix(body,rigid(p,b.hip,c.hip,r),weight*0.8);
+    const body=pose.bodyPoint(p);
+    // Only the lower joining cloth (A.y565..613), not central buttock mass.
+    // Its near/far borders share the exact root rule of the adjoining leg.
+    const near=rootAttachment(p,bind.near,pose.near,'leg',pose.pelvicAngle);
+    const far=rootAttachment(p,bind.far,pose.far,'leg',pose.pelvicAngle);
+    const side=smooth((p[0]-(bind.pelvis[0]-10))/20);
+    const weight=smooth((p[1]-(bind.pelvis[1]+15))/20);
+    return mix(body,mix(far,near,side),weight);
   }
   if(id==='head') return rigid(p,bind.neck,pose.neck,pose.chestAngle*0.55);
   const side=id.endsWith('near')?'near':'far',b=bind[side],c=pose[side];
@@ -107,7 +124,7 @@ export function mapPoint(id,p,pose) {
     // Actual boot sole is at ankle+31; its whole lower foot stays fixed.
     // Rotation eases from the instep (ankle+12) to the hidden top (ankle-32).
     const top=smooth((b.ankle[1]+12-p[1])/44);
-    return rigid(p,b.ankle,c.ankle,a*top);
+    return rigid(p,b.ankle,c.ankle,c.footAngle+(a-c.footAngle)*top);
   }
   throw Error(`Неизвестная поверхность ${id}`);
 }

@@ -1,8 +1,10 @@
 {
-  "version": "p1_candidate_c2_arms01",
+  "version": "p2_candidate_c2",
   "artVersion": "c1_arms01",
   "sourceMetadata": "art/metadata/c1_arms01.json",
-  "status": "P1_C1_TARGETED_ARM_HAND_ART_CANDIDATE_PENDING_MOTION_VIEW",
+  "status": "P2_CANDIDATE_C2_PENDING_PERSONAL_REVIEWS_CTO_GATE",
+  "runtimeRevision": "Motion C1 + push recovery control fix + shared lower-cloth joining rule + transverse shoulder-root rule + coordinated precontact/landing absorption. PNG and knee bend unchanged.",
+  "artStatus": "Unchanged accepted P1 c1_arms01 raster; no pixel or knee-field changes for P2-C1.",
   "scale": 1,
   "translation": [
     0,
@@ -46,6 +48,14 @@
       "wrist": [
         548,
         570
+      ],
+      "heel": [
+        524,
+        906
+      ],
+      "toe": [
+        625,
+        906
       ]
     },
     "far": {
@@ -72,6 +82,14 @@
       "wrist": [
         441,
         570
+      ],
+      "heel": [
+        503,
+        906
+      ],
+      "toe": [
+        603,
+        906
       ]
     }
   },

@@ -1,0 +1,19 @@
+{
+  "tool":"image_gen.imagegen (built-in)",
+  "transparent_background":true,
+  "prompt_file":"p2_bodyhem01_prompt.txt",
+  "references":[
+    {"role":"edit target, exact retained body source; other pieces context only","path":"attempt03_raw.png"},
+    {"role":"frozen body+near leg in flight, diagnostic context","path":"C:/Users/user/.codex/visualizations/2026/10/25/01a173ea-2ed0-7e23-b4f3-b240f83957df/asset-p2-art-flight-pelvis.png"}
+  ],
+  "raw_file":"p2_bodyhem01_raw.png",
+  "raw_size":[1448,1086],
+  "raw_mode":"RGBA",
+  "alpha_extrema":[0,255],
+  "original_tool_path":"C:/Users/user/.codex/generated_images/01a173ea-2ed0-7e23-b4f3-b240f83957df/exec-27464c45-4613-462f-ba65-a5cec7f107b9.png",
+  "preservation":"Copied unchanged; original retained",
+  "status":"REJECTED_NOT_FOR_INTEGRATION",
+  "reason":"Requested false body hem remains almost unchanged, meaningful improvement not established. Minor unrequested silhouette drift: alpha>127 bbox changes86,119,121,307 to85,118,124,310. No production parts extracted, no initial/current PNG overwritten.",
+  "comparison":"../metadata/p2_bodyhem01_compare.png",
+  "next_step":"Local diagnosis of adjoining body/leg deformation fields with Builder, not blind repeated generation."
+}

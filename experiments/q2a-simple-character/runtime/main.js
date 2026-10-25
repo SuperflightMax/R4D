@@ -1,4 +1,5 @@
 import {bind,poseAt,mapPoint,clamp,setMeasuredBind} from './pose.js';
+import {Motion} from './motion.js';
 const {Application,Container,Graphics,Mesh,MeshGeometry,Assets}=PIXI;
 const app=new Application();
 await app.init({width:900,height:720,backgroundAlpha:0,antialias:true,preserveDrawingBuffer:true,preference:'webgl'});
@@ -8,7 +9,7 @@ function resize(){const width=document.querySelector('#stage').clientWidth,heigh
 resize();window.addEventListener('resize',resize);
 const surfaces=new Container(),guides=new Graphics();world.addChild(surfaces,guides);
 const status=document.querySelector('#status'),scrub=document.querySelector('#scrub');
-let q=0,target=0,velocity=0,paused=false,time=0,realArt=false,dark=false,manifest=null;
+let paused=false,realArt=false,dark=false,manifest=null,motion=null,history=[],cursor=0,accumulator=0;
 const meshes=[];
 const order=['arm_far','hand_far','leg_far','foot_far','body','leg_near','foot_near','arm_near','hand_near','head'];
 
@@ -34,39 +35,44 @@ async function loadArt(){
     const indices=[];
     for(let y=0;y<ny-1;y++)for(let x=0;x<nx-1;x++){const i=y*nx+x;indices.push(i,i+1,i+nx,i+1,i+nx+1,i+nx)}
     const geometry=new MeshGeometry({positions,uvs,indices:new Uint32Array(indices)});
-    const mesh=new Mesh({geometry,texture});surfaces.addChild(mesh);meshes.push({id,mesh,points});
+    const mesh=new Mesh({geometry,texture});mesh.label=id;surfaces.addChild(mesh);meshes.push({id,mesh,points});
   }
   realArt=true;status.textContent=`Диагностическая растровая сборка · ${manifest.version} · отклонения от контракта сохранены; художественная оценка ожидается`;
+  motion=new Motion();history=[motion.save()];
   document.querySelector('#guides').checked=false;
 }
 document.querySelector('#guides').checked=true;
-function command(t){target=t;paused=false;updateButtons()}
-function updateButtons(){document.querySelector('#pause').textContent=paused?'Продолжить':'Пауза';for(const id of ['idle','low'])document.querySelector('#'+id).setAttribute('aria-pressed',String(target===(id==='low'?1:0)))}
-document.querySelector('#idle').onclick=()=>command(0);
-document.querySelector('#low').onclick=()=>command(1);
-document.querySelector('#pause').onclick=()=>{paused=!paused;updateButtons()};
+function command(action){if(!motion)return;history=history.slice(0,cursor+1);motion.command(action);paused=false;updateButtons()}
+function updateButtons(){document.querySelector('#pause').textContent=paused?'Продолжить':'Пауза';for(const id of ['idle','low','walk'])document.querySelector('#'+id).setAttribute('aria-pressed',String(motion?.s.goal===id));document.querySelector('#jump').setAttribute('aria-pressed',String(motion&&motion.s.stage!=='ground'))}
+for(const id of ['idle','low','walk','jump'])document.querySelector('#'+id).onclick=()=>command(id);
+document.querySelector('#pause').onclick=()=>{if(!paused)paused=true;else{history=history.slice(0,cursor+1);paused=false}updateButtons()};
 document.querySelector('#background').onclick=()=>{dark=!dark;document.body.classList.toggle('dark',dark);document.querySelector('#background').textContent=dark?'Светлый фон':'Тёмный фон'};
-scrub.oninput=()=>{q=Number(scrub.value);target=q;velocity=0;paused=true;updateButtons();render()};
+scrub.oninput=()=>{if(!motion)return;cursor=Number(scrub.value);motion.restore(history[cursor]);paused=true;updateButtons();render()};
 
 function render(){
-  const pose=poseAt(q,time);
-  for(const {id,mesh,points} of meshes){const mode=document.querySelector('#surface').value;mesh.visible=mode==='all'||id===mode||(mode==='pelvis'&&(id==='body'||id==='leg_near'));const data=mesh.geometry.getBuffer('aPosition').data;for(let i=0;i<points.length;i++)data.set(mapPoint(id,points[i],pose),i*2);mesh.geometry.getBuffer('aPosition').update()}
+  if(!motion)return;
+  const pose=motion.pose();world.x=(app.renderer.width-1024*world.scale.x)/2-pose.originX*world.scale.x;
+  for(const {id,mesh,points} of meshes){const mode=document.querySelector('#surface').value;mesh.visible=mode==='all'||id===mode||(mode==='pelvis'&&(id==='body'||id==='leg_near'))||(mode==='pelvis_far'&&(id==='body'||id==='leg_far'));const data=mesh.geometry.getBuffer('aPosition').data;for(let i=0;i<points.length;i++)data.set(mapPoint(id,points[i],pose),i*2);mesh.geometry.getBuffer('aPosition').update()}
   guides.clear();
   // Ground is a viewer guide, not character artwork.
-  guides.moveTo(120,bind.ground+1).lineTo(920,bind.ground+1).stroke({color:dark?0x879998:0x9b9e8c,width:1.5});
+  const left=pose.originX-200,right=pose.originX+1200;
+  guides.moveTo(left,bind.ground+1).lineTo(right,bind.ground+1).stroke({color:dark?0x879998:0x9b9e8c,width:1.5});
+  for(let x=Math.floor(left/60)*60;x<right;x+=60)guides.moveTo(x,bind.ground+1).lineTo(x-9,bind.ground+10).stroke({color:dark?0x879998:0x9b9e8c,width:1});
   if(document.querySelector('#guides').checked){
     for(const side of ['far','near']){const p=pose[side],color=side==='near'?0xc56a29:0x5e84b5;for(const chain of [['hip','knee','ankle'],['shoulder','elbow','wrist']]){guides.moveTo(...p[chain[0]]);for(const k of chain.slice(1))guides.lineTo(...p[k]);guides.stroke({color,width:3});for(const k of chain)guides.circle(...p[k],4).fill(color)}}
     guides.moveTo(...pose.pelvis).lineTo(...pose.waist).lineTo(...pose.neck).stroke({color:0x759452,width:4});
   }
-  scrub.value=String(q);document.querySelector('#amount').value=`${Math.round(q*100)}%`;
+  scrub.max=String(history.length-1);scrub.value=String(cursor);document.querySelector('#amount').value=`${motion.s.time.toFixed(1)} с`;
+  const names={ground:'На земле',prepare:'Подготовка',push:'Толчок',flight:'Полёт',land:'Принятие веса',idle:'Стойка',low:'Низкая поза',walk:'Ходьба'};
+  document.querySelector('#motionstate').textContent=`${names[motion.s.stage]} · ${names[motion.s.goal]}${motion.s.stage!=='ground'?' после посадки':''}`;
   app.renderer.render(app.stage);
 }
 await loadArt().catch(e=>{status.textContent='Ошибка сборки: '+e.message;console.error(e)});
 updateButtons();render();
 app.ticker.add(ticker=>{
   const dt=Math.min(ticker.deltaMS/1000,0.04);
-  if(!paused){time+=dt;const acceleration=40*(target-q)-13*velocity;velocity+=acceleration*dt;q=clamp(q+velocity*dt,0,1);if(Math.abs(q-target)<0.0001&&Math.abs(velocity)<0.001){q=target;velocity=0}}
+  if(!paused&&motion){accumulator+=dt;while(accumulator>=1/120){motion.tick(1/120);accumulator-=1/120;history.push(motion.save());if(history.length>3601)history.shift();cursor=history.length-1}updateButtons()}
   render();
 });
 // Read-only observations for reproducible self-checks; commands use the UI.
-window.q2a={get state(){return {q,target,velocity,paused,time,realArt,version:manifest?.version,pose:poseAt(q,time)}},app};
+window.q2a={get state(){return {q:motion?.s.q,paused,time:motion?.s.time,realArt,version:manifest?.version,motion:motion?.save(),cursor,historyLength:history.length,pose:motion?.pose()}},app};

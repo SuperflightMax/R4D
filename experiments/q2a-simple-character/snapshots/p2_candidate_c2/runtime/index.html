@@ -1,0 +1,25 @@
+<!doctype html>
+<html lang="ru">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Q2A · полное движение</title>
+<link rel="icon" href="data:,">
+<link rel="stylesheet" href="/runtime/style.css">
+<main>
+  <header><h1>Q2A · лесной разведчик</h1><p>Стойка · низкая поза · ходьба · прыжок</p></header>
+  <div class="controls">
+    <button id="idle">Стойка</button><button id="low">Низкая поза</button>
+    <button id="walk">Ходьба</button><button id="jump">Прыжок</button>
+    <button id="pause">Пауза</button><button id="background">Тёмный фон</button>
+    <label><input id="guides" type="checkbox"> Ориентиры</label>
+  </div>
+  <p id="motionstate" aria-live="polite">Загрузка движения…</p>
+  <label class="scrub">Запись <input id="scrub" type="range" min="0" max="0" step="1" value="0"><output id="amount">0 с</output></label>
+  <details><summary>Диагностика поверхностей</summary><label>Показ <select id="surface"><option value="all">Вся сборка</option><option value="body">Только корпус</option><option value="leg_near">Только ближняя нога</option><option value="leg_far">Только дальняя нога</option><option value="arm_near">Только ближняя рука</option><option value="arm_far">Только дальняя рука</option><option value="pelvis">Корпус и ближняя нога</option><option value="pelvis_far">Корпус и дальняя нога</option></select></label></details>
+  <div id="stage"></div>
+  <p id="status" role="status">Загрузка…</p>
+  <p class="note">Свободно меняйте команды. В полёте выберите поведение после посадки. Ползунок останавливает кадр из последних 30 секунд; новая команда продолжает из выбранного кадра. Камера следует за персонажем, метки земли показывают перенос опоры.</p>
+</main>
+<script src="/runtime/vendor/pixi.min.js"></script>
+<script type="module" src="/runtime/main.js"></script>
+</html>
