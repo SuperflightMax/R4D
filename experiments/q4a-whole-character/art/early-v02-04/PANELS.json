@@ -1,0 +1,846 @@
+{
+  "status": "ASSET_FINAL_AGREED_LEAD_LOCKED_2_ROOT_1_HEM_WAITING_START",
+  "panelCount": 3,
+  "gusset": false,
+  "source": "source/whole-v02.png",
+  "sourceSize": [
+    1024,
+    1536
+  ],
+  "sourceTrace": "early-v02-03/CLOTH_TRACE.json",
+  "hiddenReferenceOnly": "repairs/torso-under-arms-v01.png",
+  "panels": [
+    {
+      "id": "waistSeat",
+      "proposedTransform": "rigid_root",
+      "referencePivot": [
+        538,
+        645
+      ],
+      "visibleOwnership": "natural top waistband attachment only; not a large rigid lower shorts shield",
+      "agreementBoundary": [
+        [
+          450,
+          600
+        ],
+        [
+          461,
+          597
+        ],
+        [
+          474,
+          594
+        ],
+        [
+          489,
+          592
+        ],
+        [
+          502,
+          591
+        ],
+        [
+          522,
+          592
+        ],
+        [
+          544,
+          594
+        ],
+        [
+          564,
+          596
+        ],
+        [
+          582,
+          599
+        ],
+        [
+          598,
+          603
+        ],
+        [
+          608,
+          607
+        ],
+        [
+          618,
+          611
+        ],
+        [
+          625,
+          614
+        ],
+        [
+          625,
+          626
+        ],
+        [
+          618,
+          623
+        ],
+        [
+          608,
+          619
+        ],
+        [
+          598,
+          615
+        ],
+        [
+          582,
+          611
+        ],
+        [
+          564,
+          608
+        ],
+        [
+          544,
+          606
+        ],
+        [
+          522,
+          604
+        ],
+        [
+          502,
+          603
+        ],
+        [
+          489,
+          604
+        ],
+        [
+          474,
+          606
+        ],
+        [
+          461,
+          609
+        ],
+        [
+          450,
+          612
+        ]
+      ],
+      "boundaryEvidence": "top mixed visible/occluded per trace03; bottom is PROPOSED HIDDEN ASSEMBLY CUT, not observed transverse seam",
+      "anchors": [
+        {
+          "source": [
+            538,
+            645
+          ],
+          "target": "pelvis_root_translation"
+        }
+      ],
+      "drawOrder": 30
+    },
+    {
+      "id": "nearFlap",
+      "proposedTransform": "single_positive_affine",
+      "referencePivot": [
+        525,
+        685
+      ],
+      "referenceAxis": [
+        [
+          525,
+          685
+        ],
+        [
+          503,
+          967
+        ]
+      ],
+      "agreementBoundary": [
+        [
+          450,
+          600
+        ],
+        [
+          461,
+          597
+        ],
+        [
+          474,
+          594
+        ],
+        [
+          489,
+          592
+        ],
+        [
+          502,
+          591
+        ],
+        [
+          522,
+          592
+        ],
+        [
+          544,
+          594
+        ],
+        [
+          564,
+          596
+        ],
+        [
+          582,
+          599
+        ],
+        [
+          598,
+          603
+        ],
+        [
+          605,
+          615
+        ],
+        [
+          609,
+          630
+        ],
+        [
+          610,
+          646
+        ],
+        [
+          610,
+          664
+        ],
+        [
+          608,
+          682
+        ],
+        [
+          604,
+          701
+        ],
+        [
+          600,
+          720
+        ],
+        [
+          602,
+          736
+        ],
+        [
+          603,
+          748
+        ],
+        [
+          600,
+          757
+        ],
+        [
+          592,
+          757
+        ],
+        [
+          598,
+          754
+        ],
+        [
+          598,
+          750
+        ],
+        [
+          594,
+          746
+        ],
+        [
+          583,
+          741
+        ],
+        [
+          568,
+          737
+        ],
+        [
+          553,
+          733
+        ],
+        [
+          540,
+          728
+        ],
+        [
+          531,
+          720
+        ],
+        [
+          524,
+          711
+        ],
+        [
+          520,
+          700
+        ],
+        [
+          516,
+          712
+        ],
+        [
+          510,
+          723
+        ],
+        [
+          501,
+          733
+        ],
+        [
+          489,
+          739
+        ],
+        [
+          475,
+          744
+        ],
+        [
+          460,
+          748
+        ],
+        [
+          446,
+          751
+        ],
+        [
+          458,
+          759
+        ],
+        [
+          449,
+          757
+        ],
+        [
+          443,
+          754
+        ],
+        [
+          442,
+          750
+        ],
+        [
+          444,
+          733
+        ],
+        [
+          446,
+          715
+        ],
+        [
+          443,
+          701
+        ],
+        [
+          440,
+          684
+        ],
+        [
+          439,
+          665
+        ],
+        [
+          438,
+          646
+        ],
+        [
+          439,
+          628
+        ],
+        [
+          444,
+          613
+        ]
+      ],
+      "visibleOwnership": "all near cloth below waistband, original center seam, BOTH slit arcs and nearHem fold",
+      "anchors": [
+        {
+          "source": [
+            452,
+            613
+          ],
+          "target": "root_translation",
+          "role": "A_hidden_upper_back_attachment"
+        },
+        {
+          "source": [
+            598,
+            615
+          ],
+          "target": "root_translation",
+          "role": "B_hidden_upper_front_attachment"
+        },
+        {
+          "source": [
+            592,
+            757
+          ],
+          "target": "rigid_near_thigh",
+          "role": "C_near_front_hem_locked_owner_near"
+        }
+      ],
+      "drawOrder": 20
+    },
+    {
+      "id": "farFlap",
+      "proposedTransform": "single_positive_affine",
+      "referencePivot": [
+        570,
+        690
+      ],
+      "referenceAxis": [
+        [
+          570,
+          690
+        ],
+        [
+          606,
+          960
+        ]
+      ],
+      "agreementBoundary": [
+        [
+          598,
+          603
+        ],
+        [
+          608,
+          607
+        ],
+        [
+          618,
+          611
+        ],
+        [
+          625,
+          614
+        ],
+        [
+          625,
+          633
+        ],
+        [
+          628,
+          654
+        ],
+        [
+          631,
+          676
+        ],
+        [
+          632,
+          698
+        ],
+        [
+          633,
+          721
+        ],
+        [
+          636,
+          741
+        ],
+        [
+          638,
+          754
+        ],
+        [
+          630,
+          758
+        ],
+        [
+          618,
+          761
+        ],
+        [
+          607,
+          763
+        ],
+        [
+          596,
+          765
+        ],
+        [
+          592,
+          757
+        ],
+        [
+          600,
+          757
+        ],
+        [
+          603,
+          748
+        ],
+        [
+          602,
+          736
+        ],
+        [
+          600,
+          720
+        ],
+        [
+          604,
+          701
+        ],
+        [
+          608,
+          682
+        ],
+        [
+          610,
+          664
+        ],
+        [
+          610,
+          646
+        ],
+        [
+          609,
+          630
+        ],
+        [
+          605,
+          615
+        ]
+      ],
+      "visibleOwnership": "own far front strip and far hem, never nearHem arc",
+      "anchors": [
+        {
+          "source": [
+            598,
+            615
+          ],
+          "target": "root_translation",
+          "role": "A_hidden_upper_back_attachment"
+        },
+        {
+          "source": [
+            625,
+            626
+          ],
+          "target": "root_translation",
+          "role": "B_hidden_upper_front_attachment"
+        },
+        {
+          "source": [
+            638,
+            754
+          ],
+          "target": "rigid_far_thigh",
+          "role": "C_far_front_hem"
+        }
+      ],
+      "drawOrder": 10
+    }
+  ],
+  "waistCurve": [
+    [
+      450,
+      600
+    ],
+    [
+      461,
+      597
+    ],
+    [
+      474,
+      594
+    ],
+    [
+      489,
+      592
+    ],
+    [
+      502,
+      591
+    ],
+    [
+      522,
+      592
+    ],
+    [
+      544,
+      594
+    ],
+    [
+      564,
+      596
+    ],
+    [
+      582,
+      599
+    ],
+    [
+      598,
+      603
+    ],
+    [
+      608,
+      607
+    ],
+    [
+      618,
+      611
+    ],
+    [
+      625,
+      614
+    ]
+  ],
+  "proposedHiddenAttachmentCut": [
+    [
+      450,
+      612
+    ],
+    [
+      461,
+      609
+    ],
+    [
+      474,
+      606
+    ],
+    [
+      489,
+      604
+    ],
+    [
+      502,
+      603
+    ],
+    [
+      522,
+      604
+    ],
+    [
+      544,
+      606
+    ],
+    [
+      564,
+      608
+    ],
+    [
+      582,
+      611
+    ],
+    [
+      598,
+      615
+    ],
+    [
+      608,
+      619
+    ],
+    [
+      618,
+      623
+    ],
+    [
+      625,
+      626
+    ]
+  ],
+  "nearFarCurve": {
+    "points": [
+      [
+        598,
+        603
+      ],
+      [
+        605,
+        615
+      ],
+      [
+        609,
+        630
+      ],
+      [
+        610,
+        646
+      ],
+      [
+        610,
+        664
+      ],
+      [
+        608,
+        682
+      ],
+      [
+        604,
+        701
+      ],
+      [
+        600,
+        720
+      ],
+      [
+        602,
+        736
+      ],
+      [
+        603,
+        748
+      ],
+      [
+        600,
+        757
+      ],
+      [
+        592,
+        757
+      ]
+    ],
+    "owner": "near_front_edge_far_hidden_underlap",
+    "observation": "inferred_occlusion_boundary_supported_by_existing_repair_NOT_fully_observed_v02",
+    "role": "curved_panel_boundary_to_agree_with_Builder"
+  },
+  "visibleBoundaryOwnerRule": "waistband strip waistSeat; below it near/far curved regions; all shared nearHem boundary pixels nearFlap",
+  "hiddenMargins": [
+    {
+      "id": "flap_under_waist",
+      "availableSourceStrip": [
+        [
+          450,
+          600
+        ],
+        [
+          461,
+          597
+        ],
+        [
+          474,
+          594
+        ],
+        [
+          489,
+          592
+        ],
+        [
+          502,
+          591
+        ],
+        [
+          522,
+          592
+        ],
+        [
+          544,
+          594
+        ],
+        [
+          564,
+          596
+        ],
+        [
+          582,
+          599
+        ],
+        [
+          598,
+          603
+        ],
+        [
+          608,
+          607
+        ],
+        [
+          618,
+          611
+        ],
+        [
+          625,
+          614
+        ],
+        [
+          625,
+          626
+        ],
+        [
+          618,
+          623
+        ],
+        [
+          608,
+          619
+        ],
+        [
+          598,
+          615
+        ],
+        [
+          582,
+          611
+        ],
+        [
+          564,
+          608
+        ],
+        [
+          544,
+          606
+        ],
+        [
+          522,
+          604
+        ],
+        [
+          502,
+          603
+        ],
+        [
+          489,
+          604
+        ],
+        [
+          474,
+          606
+        ],
+        [
+          461,
+          609
+        ],
+        [
+          450,
+          612
+        ]
+      ],
+      "sourceDepthPixels": 12,
+      "provenance": "same existing source/repair cloth pixels inside source silhouette",
+      "neutralOccluder": "waistSeat",
+      "drawFlapsBelowWaist": true,
+      "sufficiency": "UNPROVEN; two root anchors fix the attachment chord, not every point of the curved edge"
+    },
+    {
+      "id": "far_under_near",
+      "curve": "nearFarCurve",
+      "proposedMaxSourceDepthPixels": 8,
+      "provenance": "existing cloth inside original outline only; no new pixels",
+      "neutralOccluder": "nearFlap",
+      "sufficiency": "UNPROVEN; never extend external hem"
+    }
+  ],
+  "epsilonDeterminantProposal": 0.0001,
+  "coverageContract": {
+    "target": "every visible semantic garment pixel in v02 including dark folds/lines; source alpha>=1 and >=128 audited separately",
+    "unassignedRequired": 0,
+    "duplicateVisibleOwnerRequired": 0,
+    "measured": false,
+    "hiddenExcludedFromVisibleOwnerCounts": true,
+    "sourceRestIdentityRequired": true
+  },
+  "activeAnchorScheme": "two_root_plus_one_own_thigh_hem_per_flap; fixed by Lead after crossed proposals",
+  "consideredNotImplemented": "one_root_plus_two_hem; superseded before manufacture, never run as an alternative",
+  "risks": [
+    "two root anchors fix a chord; curved edge and source hidden margins still need unchanged-deep-low checking",
+    "bottom of waistSeat is an unobserved hidden assembly cut, not a claimed drawn natural transverse seam"
+  ],
+  "noImplementation": true,
+  "liveContractChanged": false,
+  "forbidden": "new masks/renderer before agreement, cell deformation, vertical threshold, invented gusset, new raster repair, altered body coverage"
+}
