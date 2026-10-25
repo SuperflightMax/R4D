@@ -1,0 +1,13 @@
+{
+  "name": "r4d-q4a-whole-character",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "node build/serve.mjs",
+    "build": "node build/build.mjs",
+    "check": "node --test builder/motion.test.mjs"
+  },
+  "dependencies": { "pixi.js": "8.14.3" },
+  "devDependencies": { "esbuild": "0.25.12" }
+}

@@ -1,0 +1,24 @@
+<!doctype html>
+<html lang="ru">
+<head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Q4A · Мирон</title><link rel="stylesheet" href="style.css"></head>
+<body>
+<main>
+  <header><p class="eyebrow">R4D / Q4A · новый опыт с нуля</p><h1>Мирон</h1>
+  <p>Цельный рисунок → части → движение</p></header>
+  <section class="viewer" aria-label="Персонаж в движении"><div id="stage"></div>
+  <p id="asset-status" role="status">Загрузка материалов…</p></section>
+  <section class="controls" aria-label="Управление движением">
+    <div class="actions"><button data-command="idle">Покой · 1</button><button data-command="low">Присед · 2</button>
+    <button data-command="walk">Ходьба · 3</button><button data-command="jump">Прыжок · 4</button></div>
+    <div class="tools"><button id="rest">Исходная раскладка</button><button id="pause">Пауза</button><button id="step">Шаг 1/60 с</button>
+    <label>Скорость <select id="speed"><option value="1">1×</option><option value="0.5">0,5×</option><option value="0.25">0,25×</option><option value="0.1">0,1×</option></select></label>
+    <label>Фон <select id="background"><option value="light">Светлый</option><option value="dark">Тёмный</option></select></label>
+    <label><input id="joints" type="checkbox"> Суставы</label>
+    <button id="reload">Перечитать арт</button></div>
+    <p id="motion-status" aria-live="off"></p>
+    <p class="hint">Команды доступны в любой момент. В воздухе выбирается поведение после приземления. Пробел — пауза; → — один шаг на паузе.</p>
+    <details><summary>Измерения текущей позы</summary><pre id="measurements"></pre></details>
+  </section>
+</main><script type="module" src="main.js"></script>
+</body></html>

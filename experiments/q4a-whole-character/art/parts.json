@@ -1,0 +1,413 @@
+{
+  "version": "early-v01-neutral-low-only",
+  "scope": "restricted early gate; no full candidate",
+  "source": "source/whole-v02.png",
+  "sourceSize": [
+    1024,
+    1536
+  ],
+  "figureBounds": [
+    314,
+    20,
+    473,
+    1433
+  ],
+  "jointPoints": {
+    "pelvis": [
+      538,
+      645
+    ],
+    "chest": [
+      540,
+      405
+    ],
+    "neck": [
+      528,
+      222
+    ],
+    "head": [
+      535,
+      114
+    ],
+    "nearShoulder": [
+      477,
+      304
+    ],
+    "nearElbow": [
+      505,
+      518
+    ],
+    "nearWrist": [
+      633,
+      682
+    ],
+    "nearHand": [
+      660,
+      753
+    ],
+    "farShoulder": [
+      444,
+      321
+    ],
+    "farElbow": [
+      403,
+      508
+    ],
+    "farWrist": [
+      411,
+      688
+    ],
+    "farHand": [
+      410,
+      746
+    ],
+    "nearHip": [
+      525,
+      685
+    ],
+    "nearKnee": [
+      503,
+      967
+    ],
+    "nearAnkle": [
+      393,
+      1325
+    ],
+    "nearToe": [
+      518,
+      1387
+    ],
+    "farHip": [
+      570,
+      690
+    ],
+    "farKnee": [
+      606,
+      960
+    ],
+    "farAnkle": [
+      595,
+      1316
+    ],
+    "farToe": [
+      746,
+      1370
+    ]
+  },
+  "contacts": {
+    "near": {
+      "heel": [
+        380,
+        1439
+      ],
+      "toe": [
+        500,
+        1451
+      ]
+    },
+    "far": {
+      "heel": [
+        580,
+        1412
+      ],
+      "toe": [
+        720,
+        1416
+      ]
+    }
+  },
+  "groundY": 1451,
+  "measurements": {
+    "nearthigh": {
+      "from": "nearHip",
+      "to": "nearKnee",
+      "length": 282.85685425670704,
+      "axis": [
+        -22,
+        282
+      ]
+    },
+    "nearshin": {
+      "from": "nearKnee",
+      "to": "nearAnkle",
+      "length": 374.5183573604904,
+      "axis": [
+        -110,
+        358
+      ]
+    },
+    "nearupperArm": {
+      "from": "nearShoulder",
+      "to": "nearElbow",
+      "length": 215.82400237230334,
+      "axis": [
+        28,
+        214
+      ]
+    },
+    "nearforearm": {
+      "from": "nearElbow",
+      "to": "nearWrist",
+      "length": 208.0384579831335,
+      "axis": [
+        128,
+        164
+      ]
+    },
+    "farthigh": {
+      "from": "farHip",
+      "to": "farKnee",
+      "length": 272.389427107588,
+      "axis": [
+        36,
+        270
+      ]
+    },
+    "farshin": {
+      "from": "farKnee",
+      "to": "farAnkle",
+      "length": 356.1699032765121,
+      "axis": [
+        -11,
+        356
+      ]
+    },
+    "farupperArm": {
+      "from": "farShoulder",
+      "to": "farElbow",
+      "length": 191.44189719076647,
+      "axis": [
+        -41,
+        187
+      ]
+    },
+    "farforearm": {
+      "from": "farElbow",
+      "to": "farWrist",
+      "length": 180.17769007288334,
+      "axis": [
+        8,
+        180
+      ]
+    }
+  },
+  "landmarkNote": "Manual anatomical interpretation; far shoulder/hips inferred under occlusion. Contacts are actual outsole pixel locations, not matched baseline.",
+  "parts": [
+    {
+      "id": "farUpperArm",
+      "file": "early/parts/farUpperArm.png",
+      "cropRect": [
+        377,
+        315,
+        102,
+        221
+      ],
+      "from": "farShoulder",
+      "to": "farElbow",
+      "z": 5,
+      "rigidPelvis": false,
+      "side": "far",
+      "mask": "early/masks/farUpperArm.png",
+      "restorationMask": "early/masks/farUpperArm-restored.png",
+      "provenance": "whole-v02 pixels; named local repair only where restorationMask is nonzero"
+    },
+    {
+      "id": "farForearm",
+      "file": "early/parts/farForearm.png",
+      "cropRect": [
+        375,
+        487,
+        73,
+        315
+      ],
+      "from": "farElbow",
+      "to": "farWrist",
+      "z": 6,
+      "rigidPelvis": false,
+      "side": "far",
+      "mask": "early/masks/farForearm.png",
+      "restorationMask": "early/masks/farForearm-restored.png",
+      "provenance": "whole-v02 pixels; named local repair only where restorationMask is nonzero"
+    },
+    {
+      "id": "farThigh",
+      "file": "early/parts/farThigh.png",
+      "cropRect": [
+        535,
+        639,
+        106,
+        353
+      ],
+      "from": "farHip",
+      "to": "farKnee",
+      "z": 10,
+      "rigidPelvis": false,
+      "side": "far",
+      "mask": "early/masks/farThigh.png",
+      "restorationMask": "early/masks/farThigh-restored.png",
+      "provenance": "whole-v02 pixels; named local repair only where restorationMask is nonzero"
+    },
+    {
+      "id": "farShin",
+      "file": "early/parts/farShin.png",
+      "cropRect": [
+        531,
+        934,
+        112,
+        409
+      ],
+      "from": "farKnee",
+      "to": "farAnkle",
+      "z": 11,
+      "rigidPelvis": false,
+      "side": "far",
+      "mask": "early/masks/farShin.png",
+      "restorationMask": "early/masks/farShin-restored.png",
+      "provenance": "whole-v02 pixels; named local repair only where restorationMask is nonzero"
+    },
+    {
+      "id": "farFoot",
+      "file": "early/parts/farFoot.png",
+      "cropRect": [
+        532,
+        1305,
+        256,
+        113
+      ],
+      "from": "farAnkle",
+      "to": "farToe",
+      "z": 12,
+      "rigidPelvis": false,
+      "side": "far",
+      "mask": "early/masks/farFoot.png",
+      "restorationMask": "early/masks/farFoot-restored.png",
+      "provenance": "whole-v02 pixels; named local repair only where restorationMask is nonzero"
+    },
+    {
+      "id": "torso",
+      "file": "early/parts/torso.png",
+      "cropRect": [
+        406,
+        19,
+        222,
+        603
+      ],
+      "from": "pelvis",
+      "to": "neck",
+      "z": 20,
+      "rigidPelvis": false,
+      "side": "center",
+      "mask": "early/masks/torso.png",
+      "restorationMask": "early/masks/torso-restored.png",
+      "provenance": "whole-v02 pixels; named local repair only where restorationMask is nonzero"
+    },
+    {
+      "id": "pelvis",
+      "file": "early/parts/pelvis.png",
+      "cropRect": [
+        438,
+        594,
+        193,
+        101
+      ],
+      "from": "pelvis",
+      "to": "chest",
+      "z": 25,
+      "rigidPelvis": true,
+      "side": "center",
+      "mask": "early/masks/pelvis.png",
+      "restorationMask": "early/masks/pelvis-restored.png",
+      "provenance": "whole-v02 pixels; named local repair only where restorationMask is nonzero"
+    },
+    {
+      "id": "nearThigh",
+      "file": "early/parts/nearThigh.png",
+      "cropRect": [
+        439,
+        636,
+        151,
+        359
+      ],
+      "from": "nearHip",
+      "to": "nearKnee",
+      "z": 30,
+      "rigidPelvis": false,
+      "side": "near",
+      "mask": "early/masks/nearThigh.png",
+      "restorationMask": "early/masks/nearThigh-restored.png",
+      "provenance": "whole-v02 pixels; named local repair only where restorationMask is nonzero"
+    },
+    {
+      "id": "nearShin",
+      "file": "early/parts/nearShin.png",
+      "cropRect": [
+        354,
+        937,
+        187,
+        425
+      ],
+      "from": "nearKnee",
+      "to": "nearAnkle",
+      "z": 31,
+      "rigidPelvis": false,
+      "side": "near",
+      "mask": "early/masks/nearShin.png",
+      "restorationMask": "early/masks/nearShin-restored.png",
+      "provenance": "whole-v02 pixels; named local repair only where restorationMask is nonzero"
+    },
+    {
+      "id": "nearFoot",
+      "file": "early/parts/nearFoot.png",
+      "cropRect": [
+        313,
+        1327,
+        256,
+        127
+      ],
+      "from": "nearAnkle",
+      "to": "nearToe",
+      "z": 32,
+      "rigidPelvis": false,
+      "side": "near",
+      "mask": "early/masks/nearFoot.png",
+      "restorationMask": "early/masks/nearFoot-restored.png",
+      "provenance": "whole-v02 pixels; named local repair only where restorationMask is nonzero"
+    },
+    {
+      "id": "nearUpperArm",
+      "file": "early/parts/nearUpperArm.png",
+      "cropRect": [
+        416,
+        246,
+        127,
+        290
+      ],
+      "from": "nearShoulder",
+      "to": "nearElbow",
+      "z": 40,
+      "rigidPelvis": false,
+      "side": "near",
+      "mask": "early/masks/nearUpperArm.png",
+      "restorationMask": "early/masks/nearUpperArm-restored.png",
+      "provenance": "whole-v02 pixels; named local repair only where restorationMask is nonzero"
+    },
+    {
+      "id": "nearForearm",
+      "file": "early/parts/nearForearm.png",
+      "cropRect": [
+        477,
+        493,
+        217,
+        303
+      ],
+      "from": "nearElbow",
+      "to": "nearWrist",
+      "z": 41,
+      "rigidPelvis": false,
+      "side": "near",
+      "mask": "early/masks/nearForearm.png",
+      "restorationMask": "early/masks/nearForearm-restored.png",
+      "provenance": "whole-v02 pixels; named local repair only where restorationMask is nonzero"
+    }
+  ]
+}
