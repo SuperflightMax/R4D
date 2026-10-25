@@ -1,0 +1,60 @@
+{
+  "schema": "r4d.p0.asset-components.v1",
+  "environment": {
+    "rawFile": "../raw/environment-floor-plate-source.png",
+    "rawSize": [
+      1254,
+      1254
+    ],
+    "preparedFile": "environment-floor-plate-1536.png",
+    "preparedSize": [
+      1536,
+      1536
+    ],
+    "transform": "uniform full-frame bicubic resize; no crop; no independent axis transform"
+  },
+  "drumMaster": {
+    "rawFile": "../raw/drum-master-source.png",
+    "rawSize": [
+      1254,
+      1254
+    ],
+    "alphaBoundsAtThreshold": [
+      154,
+      123,
+      1099,
+      1131
+    ],
+    "alphaDropBelow": 8,
+    "alphaOpaqueAt": 240,
+    "paddingPx": 64,
+    "cropRect": [
+      90,
+      59,
+      1074,
+      1137
+    ],
+    "preparedFile": "drum-master-rgba.png",
+    "preparedSize": [
+      1074,
+      1137
+    ],
+    "baseCenterAnchorPx": [
+      537.0,
+      1072
+    ],
+    "anchorMeaning": "center of lowest visible base-contact edge beneath the object axis"
+  },
+  "shadowMaster": {
+    "preparedFile": "drum-shadow-rgba.png",
+    "preparedSize": [
+      1074,
+      1137
+    ],
+    "baseCenterAnchorPx": [
+      537.0,
+      1072
+    ],
+    "rule": "separate deterministic soft contact/cast shadow, offset right/down; same canvas and anchor as drum master"
+  }
+}
