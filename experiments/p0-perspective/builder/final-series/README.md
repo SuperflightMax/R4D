@@ -48,3 +48,21 @@ Checker требует четыре уникальных plate hashes, четы�
 четыре уникальных shadow hashes и четыре уникальных тройки. Любой L1 source
 hash запрещён. `--self-test` проверяет положительный synthetic contract и
 обязательные отказы duplicate/L1/invariant drift без создания изображений.
+
+## Фактическая детерминированная сборка
+
+```powershell
+npm run build:final-series
+npm run check:final-series
+```
+
+Сборщик не меняет frozen layouts. Для каждого board подготовленная видимая
+высота собственного master нормализуется к `120 px` при `S=1` (то же
+формальное правило, что у принятого L1), после чего применяются только frozen
+`S(z)`. Shadow использует тот же source anchor и destination rectangle и
+рисуется непосредственно перед master.
+
+`output/board-0N/` содержит `composite.png`, фактический
+`integration-manifest.json`, `numeric-report.json` и `hashes.json` с raw,
+prepared и output SHA-256. `output/integration/` — вход factual cross-series
+checker; `output/gallery.html` — единая сопоставимая review-страница.

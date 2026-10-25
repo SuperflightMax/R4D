@@ -1,0 +1,112 @@
+{
+  "schema": "r4d.p0.final-board-integration.v1",
+  "boardId": "board-04",
+  "layoutSha256": "d5142aebe5628ced093cb4ebfa90f77ac5d5677299c34f08fe34f5a4d248bd1f",
+  "frame": [
+    1536,
+    1536
+  ],
+  "playablePlane": {
+    "quadNormalized": [
+      [
+        0.225,
+        0.255
+      ],
+      [
+        0.775,
+        0.255
+      ],
+      [
+        0.915,
+        0.775
+      ],
+      [
+        0.085,
+        0.775
+      ]
+    ],
+    "seams": [
+      {
+        "q": 0.255,
+        "yPx": 391.68
+      },
+      {
+        "q": 0.775,
+        "yPx": 1190.4
+      }
+    ]
+  },
+  "sources": {
+    "plate": {
+      "file": "asset-artist/final-series/board-04/prepared/environment-floor-plate-1536.png",
+      "sha256": "468375d6ffcd02f36eddbb62a4e617a97837a161377cdefc88c3f7f2d2f5b907"
+    },
+    "master": {
+      "file": "asset-artist/final-series/board-04/prepared/control-master-rgba.png",
+      "sha256": "bf205ec8584df2e138a2facf45f4d1a08e717af0cd26eabd2b36c44c637b1514"
+    },
+    "shadow": {
+      "file": "asset-artist/final-series/board-04/prepared/control-shadow-rgba.png",
+      "sha256": "233673dc1e143af74f8fe9ad543fe4ec25823ec798deb8161ef8d6d62195bebf"
+    }
+  },
+  "instances": [
+    {
+      "instanceId": "board-04-drum-far",
+      "p": 0.67,
+      "q": 0.338,
+      "uniformScale": 0.939
+    },
+    {
+      "instanceId": "board-04-drum-mid-far",
+      "p": 0.47,
+      "q": 0.453,
+      "uniformScale": 0.978
+    },
+    {
+      "instanceId": "board-04-drum-mid-near",
+      "p": 0.31,
+      "q": 0.567,
+      "uniformScale": 1.018
+    },
+    {
+      "instanceId": "board-04-drum-near",
+      "p": 0.6,
+      "q": 0.681,
+      "uniformScale": 1.058
+    }
+  ],
+  "baseCenterDefinition": "center of lowest visible base-contact edge beneath the object axis",
+  "deterministicAssembly": true,
+  "sortKey": [
+    "q",
+    "p",
+    "instanceId"
+  ],
+  "painterDirection": "far-to-near",
+  "shadowRule": "same-anchor-destination-scale;draw-before-master",
+  "controlMarkersAllowed": false,
+  "overlays": [],
+  "provenance": {
+    "base": "e5892fbea71fbbfeb9f22e6a18f0f788cf9a1449",
+    "research": "627a9feb33cc6fdc8e63738ada13577752b9bf4a",
+    "builderFreeze": "0260519c5e3ff74365556713042d576b7bbec66e",
+    "assetComponents": "557e4650ee22cb7387290f5baece37d1219484cb",
+    "conceptFrozenBrief": "ae82913a18cf0beed2b67f1c421b30e1c1988e3b"
+  },
+  "buildCommand": "node final-series/scripts/build-final-series.mjs --board board-04 --out final-series/output",
+  "output": {
+    "file": "board-04/composite.png",
+    "sha256": "4db1465934ad1e7fb3f831d81b06c7995d02ec38c72ed58b9555e77be8916225"
+  },
+  "sourceNormalization": {
+    "rule": "prepared visible height -> 120 px at uniformScale 1; frozen S(z) applies afterward",
+    "sourceVisibleHeightPx": 1011,
+    "nominalVisibleHeightAtScale1Px": 120,
+    "scale": 0.118694362018
+  },
+  "sourceAnchorPx": [
+    451,
+    1074
+  ]
+}

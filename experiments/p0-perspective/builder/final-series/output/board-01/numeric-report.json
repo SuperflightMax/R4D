@@ -1,0 +1,201 @@
+{
+  "schema": "r4d.p0.final-board-numeric-report.v1",
+  "boardId": "board-01",
+  "status": "PASS-machine-contract",
+  "frame": {
+    "width": 1536,
+    "height": 1536
+  },
+  "layoutSha256": "835ed7c08fa43dd6fccb09b3c3559172789f2eb2a645b3cc498e44a3c96e1372",
+  "componentDimensions": {
+    "plate": {
+      "width": 1536,
+      "height": 1536
+    },
+    "master": {
+      "width": 1047,
+      "height": 1210
+    },
+    "shadow": {
+      "width": 1047,
+      "height": 1210
+    }
+  },
+  "normalization": {
+    "rule": "prepared visible height -> 120 px at uniformScale 1; frozen S(z) applies afterward",
+    "sourceVisibleHeightPx": 1082,
+    "nominalVisibleHeightAtScale1Px": 120,
+    "scale": 0.110905730129
+  },
+  "expectedQ": [
+    0.338,
+    0.453,
+    0.567,
+    0.681
+  ],
+  "actualQ": [
+    0.338,
+    0.453,
+    0.567,
+    0.681
+  ],
+  "baseCenterYPx": [
+    519.168,
+    695.808,
+    870.912,
+    1046.016
+  ],
+  "expectedUniformScales": [
+    0.939,
+    0.978,
+    1.018,
+    1.058
+  ],
+  "actualUniformScales": [
+    0.939,
+    0.978,
+    1.018,
+    1.058
+  ],
+  "instances": [
+    {
+      "instanceId": "board-01-drum-far",
+      "p": 0.42,
+      "q": 0.338,
+      "uniformScale": 0.939,
+      "drawIndex": 0,
+      "baseCenterPx": {
+        "x": 645.12,
+        "y": 519.168
+      },
+      "sourceNormalizationScale": 0.110905730129,
+      "combinedRasterScale": 0.104140480591,
+      "destinationRectPx": {
+        "x": 590.654529,
+        "y": 399.92715,
+        "width": 109.035083,
+        "height": 126.009982
+      },
+      "sourceAnchorPx": [
+        523,
+        1145
+      ],
+      "shadowDestinationEqualsMaster": true,
+      "zOrder": [
+        "0:shadow",
+        "0:master"
+      ]
+    },
+    {
+      "instanceId": "board-01-drum-mid-far",
+      "p": 0.62,
+      "q": 0.453,
+      "uniformScale": 0.978,
+      "drawIndex": 1,
+      "baseCenterPx": {
+        "x": 952.32,
+        "y": 695.808
+      },
+      "sourceNormalizationScale": 0.110905730129,
+      "combinedRasterScale": 0.108465804067,
+      "destinationRectPx": {
+        "x": 895.592384,
+        "y": 571.614654,
+        "width": 113.563697,
+        "height": 131.243623
+      },
+      "sourceAnchorPx": [
+        523,
+        1145
+      ],
+      "shadowDestinationEqualsMaster": true,
+      "zOrder": [
+        "1:shadow",
+        "1:master"
+      ]
+    },
+    {
+      "instanceId": "board-01-drum-mid-near",
+      "p": 0.35,
+      "q": 0.567,
+      "uniformScale": 1.018,
+      "drawIndex": 2,
+      "baseCenterPx": {
+        "x": 537.6,
+        "y": 870.912
+      },
+      "sourceNormalizationScale": 0.110905730129,
+      "combinedRasterScale": 0.112902033272,
+      "destinationRectPx": {
+        "x": 478.552237,
+        "y": 741.639172,
+        "width": 118.208429,
+        "height": 136.61146
+      },
+      "sourceAnchorPx": [
+        523,
+        1145
+      ],
+      "shadowDestinationEqualsMaster": true,
+      "zOrder": [
+        "2:shadow",
+        "2:master"
+      ]
+    },
+    {
+      "instanceId": "board-01-drum-near",
+      "p": 0.58,
+      "q": 0.681,
+      "uniformScale": 1.058,
+      "drawIndex": 3,
+      "baseCenterPx": {
+        "x": 890.88,
+        "y": 1046.016
+      },
+      "sourceNormalizationScale": 0.110905730129,
+      "combinedRasterScale": 0.117338262477,
+      "destinationRectPx": {
+        "x": 829.512089,
+        "y": 911.663689,
+        "width": 122.853161,
+        "height": 141.979298
+      },
+      "sourceAnchorPx": [
+        523,
+        1145
+      ],
+      "shadowDestinationEqualsMaster": true,
+      "zOrder": [
+        "3:shadow",
+        "3:master"
+      ]
+    }
+  ],
+  "anchorsInsidePlayableQuad": [
+    {
+      "instanceId": "board-01-drum-far",
+      "inside": true
+    },
+    {
+      "instanceId": "board-01-drum-mid-far",
+      "inside": true
+    },
+    {
+      "instanceId": "board-01-drum-mid-near",
+      "inside": true
+    },
+    {
+      "instanceId": "board-01-drum-near",
+      "inside": true
+    }
+  ],
+  "stableOrder": [
+    "board-01-drum-far",
+    "board-01-drum-mid-far",
+    "board-01-drum-mid-near",
+    "board-01-drum-near"
+  ],
+  "shadowMasterDestinationIdentity": true,
+  "controlMarkersAllowed": false,
+  "overlays": []
+}
