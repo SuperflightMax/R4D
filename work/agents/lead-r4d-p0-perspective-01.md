@@ -1,6 +1,6 @@
 # Lead P0 perspective — рабочее состояние
 
-Обновлено: 25 октября 2026, Europe/Kyiv.
+Обновлено: 26 октября 2026, Europe/Kyiv.
 
 ## Канон и границы
 
@@ -104,3 +104,21 @@ Builder собирает четыре boards детерминированно. V
 - Cross-series checker требует четыре exact manifests, разные plate/master/shadow hashes, 12 уникальных component hashes и запрещает все L1 source hashes. Self-test отвергает duplicate master, L1 reuse и anchor drift. Fresh-check PASS; до freeze изображений серии нет.
 
 Generation gate открыт только для четырёх независимых component sets по этим exact commits; layouts после изображений не меняются.
+
+## Final-series candidate и повторная проверка
+
+- Asset final component sets: `557e4650ee22cb7387290f5baece37d1219484cb`, 51 файл и 10 фактических image-generation вызовов: восемь обязательных sources и две plate-corrections. Сохранены показательные failures F1 markers и F3 chutes; 12 component hashes уникальны, L1 не переиспользован.
+- Builder first candidate: `4cdd9e6b1da397ae1549ab4085af0f830555fd42`. Composite SHA-256: F1 `2fee80e59e52f519a519d18ec340bec11e1f96b276a125ffbbbcd684946b19c4`, F2 `873e58c160e7ecfd0831002b6c5c3cd273693518fe39ea38d2953643c05ed52b`, F3 `114c16ed5c412191e27175b6a498e109f56f02b9ac302c8b80fc0b237ff836c6`, F4 `4db1465934ad1e7fb3f831d81b06c7995d02ec38c72ed58b9555e77be8916225`.
+- Frozen QA: `91b11a2090dd1ce00c9603c9d88fa73d42ed0f4c`, `REPORT_FINAL_SERIES.md`; F2–F4 PASS, F1 FAIL из-за яркого drum на сильной baked diagonal floor shadow. Серия была заблокирована без усреднения результата.
+- Разрешена ровно одна F1 plate-only component correction: layout, master, shadow и F2–F4 запрещено менять. Asset correction: `62387b6fda2190f0377a59bcbc3435923365ffac`; новый plate SHA-256 `221a351ed7acebdec03cad4395ac0e04690e6b1c186de59778e1bff8f8efe10a`, один exact ImageGen edit, исходный plate сохранён как evidence.
+- Builder corrected candidate: `9c1050596751deee3e736fe2d4f968a37c91af97`; corrected F1 composite SHA-256 `6c9e6c221ebf17cc6f9549b8b43f29cea1f04416beffbe185f9252b17d084e4e`; F2–F4 побайтно не изменились; все fresh checks PASS.
+- Final repeat QA: `0c3934908d9e795b631e9eaee89025e62541e2ce`, `REPORT_F1_CORRECTION.md`; verdict `READY_FOR_RESEARCH_RECIPE_AND_PRERELEASE`, F1–F4 и gallery PASS. Это не публикация, не приёмка Макса и не открытие P1.
+- Research cross-series conclusion и reproducible recipe: `ee4d8e5c7dbb3b6618d58d6dacb0caf9b73dfb1b`, `CROSS_SERIES_CONCLUSION_AND_RECIPE.md` и `README.md`. Разделены generator capability, deterministic composition и human/agent interventions; четыре composite hashes пересчитаны независимо и совпали.
+
+## Prerelease gate
+
+Release Engineer подтвердил, что accepted visual/research chain достаточна по содержанию, но существующий tracked candidate ещё не является frozen self-contained route package. Для `/review/r4d/p0-perspective/` нужны route tree, original reference, recipe, QA pages, manifest и fail-closed packaging/check command.
+
+Предлагаемый browser allowlist: `index.html`, `site.css`, SHA-pinned `assets/reference/03-sun-temple.jpg`, formal SVG, четыре финальные доски, три показательные failure images, `recipe.html`, `qa.html`. Raw payloads, prompts, components, scripts/layouts, intermediate diagnostics/L1, локальные пути, логи, Git metadata и P1+ в browser tree не включать; полный provenance остаётся вне публичного дерева.
+
+До сборки пакета требуется решение CTO: допускается ли копия исходного read-only JPG с SHA-256 `f5cfa2bbe8e4b49ecbc0f4c7a0cee99842b182b56ae495979153b8fc9ff86e32` внутри authenticated Review route. До этого публикация и packaging blocked; P1 закрыт.
