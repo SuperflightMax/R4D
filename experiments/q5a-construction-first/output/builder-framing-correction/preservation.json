@@ -1,0 +1,29 @@
+{
+  "candidate": "Q5A-NELA-ASSEMBLY-03",
+  "baselineFiles": 1350,
+  "changed": [
+    "ASSEMBLY.md",
+    "index.html",
+    "SELF_CHECK.md",
+    "assembly\\app.js",
+    "assembly\\build.mjs",
+    "assembly\\prepare_assets.py",
+    "assembly\\renderer.js",
+    "assembly\\tests.mjs",
+    "assembly\\assets\\inputs.json",
+    "dist\\index.html",
+    "dist\\assembly\\app.js",
+    "dist\\assembly\\renderer.js",
+    "dist\\assembly\\assets\\inputs.json"
+  ],
+  "newProduction": [
+    "assembly\\framing-check.mjs",
+    "assembly\\framing.js",
+    "dist\\assembly\\framing.js"
+  ],
+  "unexpected": [],
+  "oldReviewEvidenceUnchanged": true,
+  "oldServiceCliUnchanged": true,
+  "protectedMotionRigArtConstructionUnchanged": true
+}
+

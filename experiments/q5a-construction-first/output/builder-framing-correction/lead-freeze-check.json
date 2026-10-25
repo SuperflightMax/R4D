@@ -1,0 +1,257 @@
+{
+  "result": "LEAD_DIST_FRAMING_PASS",
+  "witnesses": [
+    {
+      "label": "desktop-Concept129",
+      "samePose": true,
+      "checks": [
+        {
+          "zoom": 1,
+          "diagnostics": false,
+          "tick": 129,
+          "phase": "flight",
+          "margin": 11.88057347584072,
+          "scale": 1,
+          "cssScale": 0.6328125
+        },
+        {
+          "zoom": 2,
+          "diagnostics": false,
+          "tick": 129,
+          "phase": "flight",
+          "margin": 24.00003855324394,
+          "scale": 2,
+          "cssScale": 0.94921875
+        },
+        {
+          "zoom": 2,
+          "diagnostics": true,
+          "tick": 129,
+          "phase": "flight",
+          "margin": 24.00003855324394,
+          "scale": 2,
+          "cssScale": 0.94921875
+        }
+      ]
+    },
+    {
+      "label": "desktop-Asset350",
+      "samePose": true,
+      "checks": [
+        {
+          "zoom": 1,
+          "diagnostics": false,
+          "tick": 350,
+          "phase": "flight",
+          "margin": 13.506659200741751,
+          "scale": 1,
+          "cssScale": 0.6328125
+        },
+        {
+          "zoom": 2,
+          "diagnostics": false,
+          "tick": 350,
+          "phase": "flight",
+          "margin": 24.000012737421002,
+          "scale": 2,
+          "cssScale": 0.94921875
+        },
+        {
+          "zoom": 2,
+          "diagnostics": true,
+          "tick": 350,
+          "phase": "flight",
+          "margin": 24.000012737421002,
+          "scale": 2,
+          "cssScale": 0.94921875
+        }
+      ]
+    },
+    {
+      "label": "mobile-Concept130",
+      "samePose": true,
+      "checks": [
+        {
+          "zoom": 1,
+          "diagnostics": false,
+          "tick": 130,
+          "phase": "flight",
+          "margin": 11.880896857774246,
+          "scale": 1,
+          "cssScale": 0.37916666666666665
+        },
+        {
+          "zoom": 2,
+          "diagnostics": false,
+          "tick": 130,
+          "phase": "flight",
+          "margin": 23.999952895235992,
+          "scale": 2,
+          "cssScale": 0.56875
+        },
+        {
+          "zoom": 2,
+          "diagnostics": true,
+          "tick": 130,
+          "phase": "flight",
+          "margin": 23.999952895235992,
+          "scale": 2,
+          "cssScale": 0.56875
+        }
+      ]
+    },
+    {
+      "label": "mobile-Asset350",
+      "samePose": true,
+      "checks": [
+        {
+          "zoom": 1,
+          "diagnostics": false,
+          "tick": 350,
+          "phase": "flight",
+          "margin": 13.506659200741751,
+          "scale": 1,
+          "cssScale": 0.37916666666666665
+        },
+        {
+          "zoom": 2,
+          "diagnostics": false,
+          "tick": 350,
+          "phase": "flight",
+          "margin": 24.000012737421002,
+          "scale": 2,
+          "cssScale": 0.56875
+        },
+        {
+          "zoom": 2,
+          "diagnostics": true,
+          "tick": 350,
+          "phase": "flight",
+          "margin": 24.000012737421002,
+          "scale": 2,
+          "cssScale": 0.56875
+        }
+      ]
+    },
+    {
+      "label": "mobile-AssetRecipe2824",
+      "samePose": true,
+      "checks": [
+        {
+          "zoom": 1,
+          "diagnostics": false,
+          "tick": 2824,
+          "phase": "flight",
+          "margin": 13.499980148902068,
+          "scale": 1,
+          "cssScale": 0.37916666666666665
+        },
+        {
+          "zoom": 2,
+          "diagnostics": false,
+          "tick": 2824,
+          "phase": "flight",
+          "margin": 23.999960297804137,
+          "scale": 2,
+          "cssScale": 0.56875
+        },
+        {
+          "zoom": 2,
+          "diagnostics": true,
+          "tick": 2824,
+          "phase": "flight",
+          "margin": 23.999960297804137,
+          "scale": 2,
+          "cssScale": 0.56875
+        }
+      ]
+    }
+  ],
+  "jumps": [
+    {
+      "label": "desktop",
+      "origin": "idle",
+      "zoom": 1,
+      "steps": 207,
+      "minGpuMargin": 11.531036245257496
+    },
+    {
+      "label": "desktop",
+      "origin": "idle",
+      "zoom": 2,
+      "steps": 207,
+      "minGpuMargin": 23.999941955138183
+    },
+    {
+      "label": "desktop",
+      "origin": "low",
+      "zoom": 1,
+      "steps": 207,
+      "minGpuMargin": 20.908419302528273
+    },
+    {
+      "label": "desktop",
+      "origin": "low",
+      "zoom": 2,
+      "steps": 207,
+      "minGpuMargin": 23.999940828256513
+    },
+    {
+      "label": "desktop",
+      "origin": "walk",
+      "zoom": 1,
+      "steps": 207,
+      "minGpuMargin": 11.616374991275848
+    },
+    {
+      "label": "desktop",
+      "origin": "walk",
+      "zoom": 2,
+      "steps": 207,
+      "minGpuMargin": 23.99994324101317
+    },
+    {
+      "label": "mobile",
+      "origin": "idle",
+      "zoom": 1,
+      "steps": 207,
+      "minGpuMargin": 11.531036245257496
+    },
+    {
+      "label": "mobile",
+      "origin": "idle",
+      "zoom": 2,
+      "steps": 207,
+      "minGpuMargin": 23.999941955138183
+    },
+    {
+      "label": "mobile",
+      "origin": "low",
+      "zoom": 1,
+      "steps": 207,
+      "minGpuMargin": 20.908419302528273
+    },
+    {
+      "label": "mobile",
+      "origin": "low",
+      "zoom": 2,
+      "steps": 207,
+      "minGpuMargin": 23.999940828256513
+    },
+    {
+      "label": "mobile",
+      "origin": "walk",
+      "zoom": 1,
+      "steps": 207,
+      "minGpuMargin": 11.616374991275848
+    },
+    {
+      "label": "mobile",
+      "origin": "walk",
+      "zoom": 2,
+      "steps": 207,
+      "minGpuMargin": 23.99994324101317
+    }
+  ],
+  "errors": []
+}

@@ -7,6 +7,22 @@
 
 ## Текущее положение
 
+**ASSEMBLY03_FROZEN — BUILDER_SELF_CHECK_PASS — AWAITING_TARGETED_INDEPENDENT_PERSONAL_ARTIST_REREVIEW.** Кандидат `Q5A-NELA-ASSEMBLY-03` исправляет только CM1/AM-A1 (кадрирование 2×). База этого хода `HEAD = origin/main = 651580dbbf764879dad5f413b3272ff4cde19557`. Оба прежних отрицательных motion review и их evidence сохранены побайтно; их verdict не меняется задним числом. Technical/Visual QA **blocked/not started**, release и Q4A/Q2A не запускались.
+
+Lead лично прочитал production diff и общий `assembly/framing.js`: origin/scale вычисляются по bbox всех material vertices с padding 24 px, без ветвления по pose/tick/phase/маршруту. Прежний 1× сохранён. Подключение renderer применяется одинаково к арту, mesh, костям и полу. Изменения app/index/inputs вне framing — только номер кандидата03, controls и command semantics сохранены.
+
+Побайтно с exact базой сверены **1164 защищённых файла**: принятые art/construction, `rig.js`, `motion.js`, style, первая сборка, оба отрицательных motion review, старые output/evidence. Три accepted SHA v4/package/validation из таблицы ниже неизменны. Семантика app.js/index.html дополнительно сверена целиком после замены только номера02→03. Новая production-правка остаётся только в framing, его подключении/сборке, метаданных номера кандидата и тестах.
+
+Повторные проверки Lead из каталога Q5A:
+
+- `npm test` — PASS, весь отчёт совпал с `output/builder-framing-correction/npm-test.json`: прежние **15120 motion frames**, 0 инверсий/строгих самопересечений; новые **20618 framing assertions**. Concept129/130 и Asset350 (idle/low/walk) имеют landmark error 0; recipe2824 проверен по сохранённому recipe/elapsed, без обещания полного исторического realtime motor state. Проверены соседние кадры и полный jump из idle/low/walk. Минимальный logical margin 2× `23.999999999999886` px, min/max scale `2/2`, CSS ratio `1.5`.
+- `npm run build` — PASS; **26/26** dist-файлов повторены побайтно, включая новый framing.js.
+- Независимая узкая техническая проверка фактического dist через [Playwright skill](C:/Users/user/.codex/skills/playwright/SKILL.md), собственная session `q5a-lead-freeze03`, localhost5190: **LEAD_DIST_FRAMING_PASS**. Desktop1280×720 и отдельный mobile390×844/touch/DPR3 context; 5 exact/recipe witness-групп с соседями, light/dark/diagnostics, samePose=true; 12 полных jump sweeps (2484 rendered substeps), min GPU uniform margin 2× **23.999940828256513 px**, scale2, CSS ratio1.5, page/WebGL errors0. Это измерение кадрирования, не художественный re-review и не независимый QA PASS.
+
+Скрипт, полный log и JSON независимого dist smoke сохранены как `output/builder-framing-correction/lead-freeze-check.*`; завершение браузера — `lead-browser-close.log`. До своего запуска Lead подтвердил отсутствие listener5189; cleanup Builder сообщает его server/browser closed. После проверки собственные browser/context и server5190 закрыты, слушателей5189/5190 нет. Production Lead не исправлял. Все новые проверки/evidence находятся в разрешённом correction scope; `.playwright-cli` любого уровня и чужие work-файлы не включаются.
+
+## Исторический отрицательный motion gate assembly02
+
 **ASSEMBLY02_FROZEN — MOTION_REVIEWS_CHANGES_REQUIRED — QA_BLOCKED_NOT_STARTED.** Исторический review gate относится к exact frozen commit `f86e1dccb2748b901d1e2480669347c71de464ae`, `Q5A-NELA-ASSEMBLY-02`. Оба существующих художника выполнили независимый личный просмотр движения:
 
 - [ARTIST_MOTION_REVIEW.md](ARTIST_MOTION_REVIEW.md), Asset Artist — **CHANGES_REQUIRED**, AM-A1.
@@ -107,4 +123,4 @@ python experiments/q5a-construction-first/construction/attempts/v1/build_package
 
 ## Следующий шаг
 
-Ожидается узкая коррекция Builder по AM-A1/CM1: кадрирование 2× на вершине прыжка, затем независимый повторный просмотр затронутого движения обоими существующими художниками на новой конкретной версии. Текущий ход сохраняет только исторические reviews/evidence/state отдельным commit/push; саму коррекцию, выдачу поручений, QA и release не запускает. Technical/Visual QA пока blocked/not started. Внешняя публикация остаётся отдельным release-шагом после CTO acceptance. Все существенные attempts/corrections сохранять; окончательную приёмку и решение об остановке принимает CTO.
+Ожидается адресный независимый личный re-review исправленного 2× jump на assembly03 обоими существующими художниками по отдельной выдаче CTO. Текущий ход только проверяет и замораживает кандидат отдельным commit/push; artist re-review, Technical/Visual QA, release, Q4A/Q2A не запускаются. QA пока blocked/not started. Прежние отрицательные review остаются историей assembly02. Внешняя публикация — отдельный release-шаг после CTO acceptance; окончательную приёмку и решение об остановке принимает CTO.

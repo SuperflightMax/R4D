@@ -1,0 +1,46 @@
+async page => {
+ const url='http://127.0.0.1:5190/review/r4d/q5a-construction-first/';
+ const report={result:'LEAD_DIST_FRAMING_PASS',witnesses:[],jumps:[],errors:[]};
+ async function fresh(p){
+  await p.goto(url);await p.waitForFunction(()=>window.q5a,null,{polling:50});
+  await p.evaluate(()=>{q5a.pause(true);const held=[...window.__heldFrames];window.__heldFrames=[];requestAnimationFrame=window.__originalRAF;for(const cb of held)requestAnimationFrame(cb);});
+  await p.locator('summary').click();
+ }
+ async function prepare(p){await p.addInitScript(()=>{window.__originalRAF=requestAnimationFrame.bind(window);window.__heldFrames=[];window.requestAnimationFrame=cb=>(window.__heldFrames.push(cb),0);});p.on('pageerror',e=>report.errors.push(e.message));}
+ const step=(p,n)=>p.evaluate(n=>q5a.step(n),n);
+ const command=(p,n)=>p.locator(`[data-command="${n}"]`).click();
+ async function measure(p){return p.evaluate(()=>{
+  const r=q5a.renderer,g=r.gl,z=g.getUniform(r.program,r.locations.zoom),o=g.getUniform(r.program,r.locations.origin),c=g.getUniform(r.program,r.locations.camera),w=r.canvas.width,h=r.canvas.height,css=r.canvas.getBoundingClientRect().width;
+  let min=Infinity;for(const s of Object.values(q5a.getPose().surfaces))for(const [x,y] of s.vertices){const px=o[0]+(x-c)*z,py=o[1]-y*z;min=Math.min(min,px,w-px,py,h-py);}
+  const large=document.querySelector('#zoom').checked;
+  if(q5a.candidate!=='Q5A-NELA-ASSEMBLY-03'||min<(large?23.999:-.001)||z!==(large?2:1)||q5a.getStats().webglError||q5a.getStats().inverted)throw Error(JSON.stringify({min,z,tick:q5a.motion.tick}));
+  return {tick:q5a.motion.tick,phase:q5a.motion.phase,margin:min,scale:z,cssScale:z*css/w};
+ });}
+ async function witness(p,label){
+  const pose=await p.evaluate(()=>JSON.stringify(q5a.getPose().landmarks));let one;const checks=[];
+  for(const zoom of [1,2])for(const variant of (zoom===1?[false]:[false,true])){
+   await p.locator('#zoom').setChecked(zoom===2);await p.locator('#dark').setChecked(variant);await p.locator('#bones').setChecked(variant);await p.locator('#mesh').setChecked(variant);
+   const r=await measure(p);if(zoom===1)one=r.cssScale;else if(Math.abs(r.cssScale/one-1.5)>1e-9)throw Error('CSS zoom ratio differs');checks.push({zoom,diagnostics:variant,...r});
+  }
+  if(pose!==await p.evaluate(()=>JSON.stringify(q5a.getPose().landmarks)))throw Error('view toggle changed pose');report.witnesses.push({label,samePose:true,checks});
+ }
+ async function run(p,label,start){
+  await prepare(p);await fresh(p);await step(p,start);await command(p,'jump');await step(p,117);
+  for(let n=0;n<7;n++){if(n)await step(p,1);await p.locator('#zoom').check();await measure(p);if(n===3)await witness(p,label+'-Concept'+(start+120));}
+  await fresh(p);await step(p,240);await command(p,'jump');await step(p,12);await command(p,'walk');await step(p,12);while(await p.evaluate(()=>q5a.motion.phase!=='push'))await step(p,2);await command(p,'low');await step(p,12);while(await p.evaluate(()=>q5a.motion.phase!=='flight'))await step(p,2);await command(p,'idle');await command(p,'jump');await step(p,45);
+  for(let n=0;n<7;n++){if(n)await step(p,1);await p.locator('#zoom').check();await measure(p);if(n===3){if(await p.evaluate(()=>q5a.motion.tick)!==350)throw Error('Asset tick350 mismatch');await witness(p,label+'-Asset350');}}
+  if(label==='mobile'){
+   await fresh(p);await step(p,2714);await command(p,'jump');await step(p,12);await command(p,'jump');while(await p.evaluate(()=>q5a.motion.phase!=='push'))await step(p,2);await command(p,'walk');await command(p,'jump');await step(p,12);while(await p.evaluate(()=>q5a.motion.phase!=='flight'))await step(p,2);await command(p,'low');await step(p,45);
+   for(let n=0;n<7;n++){if(n)await step(p,1);await p.locator('#zoom').check();await measure(p);if(n===3){if(await p.evaluate(()=>q5a.motion.tick)!==2824)throw Error('recipe tick2824 mismatch');await witness(p,label+'-AssetRecipe2824');}}
+  }
+  for(const origin of ['idle','low','walk'])for(const zoom of [1,2]){
+   await fresh(p);await command(p,origin);await step(p,240);await p.locator('#zoom').setChecked(zoom===2);await command(p,'jump');let min=Infinity,n=0;
+   do{await step(p,1);const r=await measure(p);min=Math.min(min,r.margin);if(++n>600)throw Error('jump did not finish');}while(await p.evaluate(()=>q5a.motion.phase!=='ground'));
+   report.jumps.push({label,origin,zoom,steps:n,minGpuMargin:min});
+  }
+ }
+ await page.setViewportSize({width:1280,height:720});await run(page,'desktop',9);
+ const context=await page.context().browser().newContext({viewport:{width:390,height:844},isMobile:true,hasTouch:true,deviceScaleFactor:3});
+ try{await run(await context.newPage(),'mobile',10);}finally{await context.close();}
+ if(report.errors.length)throw Error(JSON.stringify(report.errors));return report;
+}

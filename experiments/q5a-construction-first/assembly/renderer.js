@@ -1,4 +1,5 @@
 import {cross} from './rig.js';
+import {framing} from './framing.js';
 export class Renderer{
  constructor(canvas,overlay,rig){this.canvas=canvas;this.overlay=overlay;this.rig=rig;this.gl=canvas.getContext('webgl',{alpha:false,antialias:true,premultipliedAlpha:false,preserveDrawingBuffer:true});if(!this.gl)throw Error('Нужен WebGL для просмотра');let gl=this.gl;
   const shader=(type,source)=>{let s=gl.createShader(type);gl.shaderSource(s,source);gl.compileShader(s);if(!gl.getShaderParameter(s,gl.COMPILE_STATUS))throw Error(gl.getShaderInfoLog(s));return s;};
@@ -8,10 +9,9 @@ export class Renderer{
  texture(image,nearest=false){let gl=this.gl,t=gl.createTexture();gl.bindTexture(gl.TEXTURE_2D,t);gl.texParameteri(gl.TEXTURE_2D,gl.TEXTURE_MIN_FILTER,nearest?gl.NEAREST:gl.LINEAR);gl.texParameteri(gl.TEXTURE_2D,gl.TEXTURE_MAG_FILTER,nearest?gl.NEAREST:gl.LINEAR);gl.texParameteri(gl.TEXTURE_2D,gl.TEXTURE_WRAP_S,gl.CLAMP_TO_EDGE);gl.texParameteri(gl.TEXTURE_2D,gl.TEXTURE_WRAP_T,gl.CLAMP_TO_EDGE);if(image)gl.texImage2D(gl.TEXTURE_2D,0,gl.RGBA,gl.RGBA,gl.UNSIGNED_BYTE,image);else gl.texImage2D(gl.TEXTURE_2D,0,gl.RGBA,1,1,0,gl.RGBA,gl.UNSIGNED_BYTE,new Uint8Array([255,255,255,255]));return t;}
  async load(manifest){const image=url=>new Promise((resolve,reject)=>{let im=new Image();im.onload=()=>resolve(im);im.onerror=()=>reject(Error('Не загрузилось '+url));im.src=url;});for(let m of manifest.textures){this.materials[m.id]={rgb:this.texture(await image(new URL('./assets/'+m.rgb,import.meta.url))),alpha:m.alpha?this.texture(await image(new URL('./assets/'+m.alpha,import.meta.url)),true):this.white,hasAuthoredAlpha:!!m.alpha};}}
  draw(pose,motion,options={}){
-  let gl=this.gl,zoom=options.zoom??1,w=zoom===2?1280:960,h=zoom===2?960:640;if(this.canvas.width!==w||this.canvas.height!==h){this.canvas.width=this.overlay.width=w;this.canvas.height=this.overlay.height=h;}gl.viewport(0,0,w,h);const dark=options.dark;gl.clearColor(...(dark?[.075,.096,.12,1]:[.929,.941,.945,1]));gl.clear(gl.COLOR_BUFFER_BIT);
-  const camera=motion.worldX,origin=[w/2,zoom===2?900:560],project=p=>[origin[0]+(p[0]-camera)*zoom,origin[1]-p[1]*zoom];
-  // At diagnostic x2, follow body vertically so jump/raised hands stay visible.
-  const maxY=Math.max(...Object.values(pose.surfaces).flatMap(g=>g.vertices).map(p=>p[1]));if(zoom===2)origin[1]=Math.min(900,h-40+Math.max(0,maxY*2-(h-80)));
+  const frame=framing(pose,motion.worldX,options.zoom??1);
+  let gl=this.gl,zoom=frame.scale,w=frame.width,h=frame.height;if(this.canvas.width!==w||this.canvas.height!==h){this.canvas.width=this.overlay.width=w;this.canvas.height=this.overlay.height=h;}gl.viewport(0,0,w,h);const dark=options.dark;gl.clearColor(...(dark?[.075,.096,.12,1]:[.929,.941,.945,1]));gl.clear(gl.COLOR_BUFFER_BIT);
+  const camera=motion.worldX,origin=frame.origin,project=p=>[origin[0]+(p[0]-camera)*zoom,origin[1]-p[1]*zoom];
   gl.useProgram(this.program);gl.uniform2f(this.locations.viewport,w,h);gl.uniform2f(this.locations.origin,...origin);gl.uniform1f(this.locations.camera,camera);gl.uniform1f(this.locations.zoom,zoom);
   let inverted=0,zero=0,faces=0;for(let op of this.rig.data.draw_operations){let m=this.materials[op.surface];gl.activeTexture(gl.TEXTURE0);gl.bindTexture(gl.TEXTURE_2D,m.rgb);gl.activeTexture(gl.TEXTURE1);gl.bindTexture(gl.TEXTURE_2D,m.alpha);
    let values=[];for(let panel of this.rig.pieces(pose,op))for(let tri of panel.triangles){let a=cross(...tri.map(i=>panel.vertices[i]));if(Math.abs(a)<1e-7){zero++;continue;}if(a*cross(...tri.map(i=>panel.uv[i]))>1e-10)inverted++;for(let i of tri)values.push(...panel.vertices[i],...panel.uv[i]);faces++;}
@@ -24,6 +24,6 @@ export class Renderer{
    for(let [i,f] of pose.spec.feet.entries()){if(f.contact){let [x,y]=project([f.anchorX,0]);ctx.fillStyle=i?'#ef9c38':'#3b9ca4';ctx.fillRect(x-6,y-2,12,4);}}
   }
   if(options.mesh){ctx.lineWidth=.5;for(let op of this.rig.data.draw_operations)for(let panel of this.rig.pieces(pose,op))for(let tri of panel.triangles){ctx.strokeStyle=cross(...tri.map(i=>panel.vertices[i]))*cross(...tri.map(i=>panel.uv[i]))>1e-10?'#ff164b':dark?'#9bd4bf75':'#244c4c55';ctx.beginPath();tri.forEach((id,i)=>{let [x,y]=project(panel.vertices[id]);i?ctx.lineTo(x,y):ctx.moveTo(x,y);});ctx.closePath();ctx.stroke();}}
-  this.stats={inverted,zero,faces,authoredMasks:Object.values(this.materials).filter(m=>m.hasAuthoredAlpha).length,webglError:gl.getError()};return this.stats;
+  this.stats={inverted,zero,faces,authoredMasks:Object.values(this.materials).filter(m=>m.hasAuthoredAlpha).length,webglError:gl.getError(),framing:frame};return this.stats;
  }
 }

@@ -17,7 +17,7 @@ sha=lambda p:hashlib.sha256(p.read_bytes()).hexdigest()
 for p,h in PINS.items():assert sha(ROOT/p)==h,p
 data=json.loads((ROOT/'construction/construction.json').read_bytes());package=json.loads((ROOT/'art/package.json').read_bytes())
 out=ROOT/'assembly/assets';out.mkdir(parents=True,exist_ok=True)
-manifest={'candidate':'Q5A-NELA-ASSEMBLY-02','inputs':PINS,'textures':[]}
+manifest={'candidate':'Q5A-NELA-ASSEMBLY-03','inputs':PINS,'textures':[]}
 for s in package['surfaces']:
  p=ROOT/'art'/s['file'];assert sha(p)==s['sha256']
  target=out/(s['id']+'.png');Image.fromarray(material_rgb(Image.open(p).convert('RGBA'))).save(target)

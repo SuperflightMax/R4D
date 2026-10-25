@@ -1,6 +1,18 @@
 # Q5A — Нэла, первая production assembly
 
-Кандидат **Q5A-NELA-ASSEMBLY-02**. Builder `builder-r4d-q5a-01`, 25 октября 2026, Europe/Kyiv. Собственная проверка завершена; требуется обязательный личный просмотр движения Asset Artist и Concept Artist. Художественный PASS движения не объявляется.
+Кандидат **Q5A-NELA-ASSEMBLY-03**. Builder `builder-r4d-q5a-01`, 25 октября 2026, Europe/Kyiv. Собственная проверка завершена; требуется обязательный личный просмотр движения Asset Artist и Concept Artist. Художественный PASS движения не объявляется.
+
+## Коррекция 02 → 03: только framing 2×
+
+Основание — CM1/AM-A1 в двух motion review на frozen **f86e1dccb2748b901d1e2480669347c71de464ae**; отзывы зафиксированы **651580dbbf764879dad5f413b3272ff4cde19557**, это exact HEAD=origin/main в начале коррекции. История ASSEMBLY-02 остаётся в этом commit и исходных review/evidence; новые результаты не подменяют их.
+
+**Мешало:** верхний сдвиг 2× ошибочно ограничивался originY≤900. На apex волосы/кисти уходили выше canvas, хотя внизу оставалось место. **Изменено:** `framing.js` вычисляет консервативный bounding box всех material vertices и допустимый интервал origin по обеим осям с отступом24px. Scale запрашивается2; только если bbox не помещается, применяется общий fit. Нет проверок по ID позы, фазе, tick или маршруту. Режим1× сохраняет исходные viewport/scale/origin. **Результат:** на20618 frame checks весь bbox остаётся в2× с отступом≥24px; scale всегда2, CSS-увеличение относительно1× при той же ширине сцены —1.5. Jump height, траектория, timing, мах рук, rig, принятые изображения/маски и управление не менялись.
+
+Новый renderer использует один и тот же origin/scale для арта, костей, mesh и отметок пола. В полёте линия земли может оказаться вне крупного кадра: приоритет framing — целый силуэт. Анатомические/world coordinates остаются прежними. Метаданные имени кандидата03 обновлены также в inputs manifest и сборке; три accepted SHA и ресурсы неизменны.
+
+Все новые correction evidence — только [output/builder-framing-correction/](output/builder-framing-correction/). `npm test` сохранил прежние15120 кадров и добавил full-jump bbox checks, точные Concept129/130 и Asset desktop350/low/walk witnesses с соседними кадрами. Mobile Asset2824 проверяется по сохранённому paused command recipe/elapsed; старый realtime журнал не содержит полного начального motor state, поэтому побайтная идентичность всей его предыстории не заявляется. Отдельный браузер: порт5189/session q5a-builder-framing-5189, short desktop1280×720 и mobile390×844. Результаты — в актуальном дополнении SELF_CHECK.md.
+
+Только собственные сервер/браузер остановлены по завершении. Новых artist review/QA/release, commit/push нет. Требуется дальнейшее решение CTO и личный повторный просмотр художников; Builder не меняет их CHANGES_REQUIRED задним числом.
 
 ## Открыть и повторить
 

@@ -1,3 +1,31 @@
+# Q5A-NELA-ASSEMBLY-03 — коррекция framing 2×
+
+25 октября2026, Europe/Kyiv. **BUILDER_CORRECTION_SELF_CHECK_COMPLETE.** Узкий CM1/AM-A1; художественный PASS не объявляется. Frozen02 — f86e1dccb2748b901d1e2480669347c71de464ae; текущая база и оба неизменённых review —651580dbbf764879dad5f413b3272ff4cde19557.
+
+## Что исправлено и проверено
+
+Прежняя проверка02 не измеряла bounding box каждого flight кадра и пропустила обрезание apex. Новый общий fit использует весь material bbox, padding24px и допустимый camera origin; 1× оставлен прежним. Ни motion.js, ни rig.js, принятый арт/конструкция, controls или source reviewer evidence не изменялись. На exact свидетелях старая формула воспроизводимо даёт отрицательный верхний отступ, новая — положительный.
+
+`npm test` — PASS: все прежние15120 кадров/14 сценариев без изменения motion; дополнительно20618 framing checks с1×/2×. Минимальные logical margins:1×11.5107px,2×24px (допуск floating point); min/max scale2.0/2.0. CSS scale ratio2×:1×=1.5. Есть весь prepare/push/flight/landing/recovery из idle/low/walk и соседние±3 кадра точных свидетелей. `npm run build` — PASS, в dist включён framing.js, accepted SHA/derived resource hashes проверены.
+
+Собственные текущие команды и измерения сохранены только в [output/builder-framing-correction/](output/builder-framing-correction/): `npm-test.log/json`, `build.log`, browser driver/config/logs, новые screenshots и итоговые browser JSON. Старые output/self-check и artist-motion-* не перезаписывались.
+
+Браузерный regression независимо проецирует каждый material vertex по фактическим WebGL uniform origin/scale/camera, проверяет canvas margins и CSS-увеличение. Источник bbox не берётся из нового framing-report как единственное доказательство. Воспроизводятся Concept start9/10+120substeps (129/130), Asset desktop350 с полным сравнением landmarks, их соседи и mobile recipe2824; переключение1×/2×/фонов/diagnostics не меняет pose. На старом Mobile Asset realtime не сохранены все начальные моторы/тики команд; его paused recipe/phase воспроизведены, абсолютная историческая world-поза не выдумывается. Точные desktop и Concept landmarks сверены отдельно.
+
+Фактический браузерный итог — `browser-regression.json`: **BROWSER_FRAMING_PASS**,5 групп точных/recipe witnesses,2484 отрисованных substeps в12 полных jump sweeps (3 origins×2 масштаба×2 viewport),4 realtime маршрута A/B,0 page errors. WebGL Float32 minimum2× margin **23.9999408283px**; minimum CSS margin short desktop **11.3905969165px**, mobile **6.8249831730px**. Во всех измерениях scale2 и ratio **1.5**, samePose=true; Concept129/130 и Asset350 landmark error0.
+
+`dist-smoke.json` — **DIST_FRAMING_PASS**,28 фактических canvas checks на соседях126…132, desktop/mobile,1×/2×, light и dark+diagnostics; min2× margin23.9999846605px. Dist обслуживался тем же собственным5189 после остановки source server. Новые screenshots содержат целые волосы/кисти/обувь на верхней точке; лично просмотрены desktop CM1 light/diagnostics и mobile CM1/AM-A1 diagnostics. Отзывы художников не обновляются этим результатом.
+
+Точные команды correction выполнялись из Q5A: `npm test` и `npm run build` с redirect только в новую correction directory. Браузер: `$env:PORT='5189'; node assembly/server.mjs`, а CLI из `output/builder-framing-correction`: `npx --yes --package @playwright/cli playwright-cli -s=q5a-builder-framing-5189 open http://127.0.0.1:5189/review/r4d/q5a-construction-first/ --config=cli.config.json`, затем `run-code --filename=browser-regression.js` с тем же prefix. После source server stop: `node assembly/server.mjs --dist` с PORT5189, затем `run-code --filename=dist-smoke.js`.
+
+Для zero-tick повторяемости test driver удерживает только первый requestAnimationFrame до штатной паузы, затем восстанавливает реальный scheduler. Ошибка первого harness `undefined.push` устранена сохранением/обнулением массива callbacks вместо delete; ожидания используют polling50мс. Это изменение только test driver, не production и не ослабление bbox assertions. Моторы/pose вручную не подменяются. Обе основные последовательности затем отдельно выполняются настоящими UI-командами и обычным requestAnimationFrame. Проверены короткий desktop1280×720 и отдельный mobile390×844/touch/DPR3 context; light/dark,1×/2×,без/с bones+mesh. Это Chrome emulation, не физический телефон. Служебные старые .playwright-cli не затрагиваются; outputDir CLI направлен в новую correction directory.
+
+Допуск browser GPU margins учитывает округление uniform доFloat32, а геометрический padding оставляет запас для anti-aliasing/диагностических штрихов. Целый силуэт проверяется внутри canvas; при открытии настроек страницу можно прокручивать, семантика controls/scroll не менялась. Динамическое кадрирование может увести линию земли за2× canvas в полёте; оно не меняет самого движения.
+
+Собственный browser и сервер5189 остановлены. QA, художнический повторный review, release, Q4A/Q2A и commit/push не запускались. Ниже оставлена историческая запись self-check02; она не заменяет новые CM1/AM-A1 результаты.
+
+---
+
 # Q5A-NELA-ASSEMBLY-02 — собственная проверка Builder
 
 25 октября2026, Europe/Kyiv. **BUILDER_SELF_CHECK_COMPLETE / AWAITING_PERSONAL_ARTIST_MOTION_REVIEW.** Это проверка исполнителя, не независимый Technical/Visual QA и не художественный PASS.
