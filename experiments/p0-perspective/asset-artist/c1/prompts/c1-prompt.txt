@@ -1,0 +1,68 @@
+Use case: stylized-concept
+Asset type: corrected diagnostic P0 game-board environment raster, one finished square image
+
+Primary request: Create one corrected, finished square game board called “Jade Sky Observatory”. This must remain an independent new scene, not a redraw of 03-sun-temple.jpg. Preserve the same Jade Sky Observatory theme, material quality, warm light, compositional hierarchy, and polished finish as diagnostic d1 while correcting only the locked field geometry and repeated drum family below.
+
+Input images and strict roles:
+- Image 1, formal-reference-v1.png: the SAME and ONLY geometry control. Follow its camera, exact field contour, central axis, depth rows, ground contacts, upright-volume projection, and scale-by-depth. Do not copy its text, labels, dashed guides, colored technical regions, or bare primitive appearance.
+- Image 2, 03-sun-temple.jpg: the SAME art-quality reference ONLY. Match its degree of finish, material depth, coherent warm lighting, readable game-space hierarchy, and polished stylized-game rendering. Do not copy its exact obstacle arrangement, temple facade, four foreground cups, or theme literally.
+
+Camera and field geometry — higher priority than decoration:
+- Keep the same elevated frontal three-quarter view looking along the central axis toward the far landmark. This is not strict top-down, not diagonal isometric, not a low frontal view, and not wide-angle or fisheye.
+- Keep building and obstacle verticals nearly vertical in the image.
+- Keep one single continuous game plane and one camera. Do not independently widen, raise, lower, tilt, crop, stretch, or transform the field for decoration.
+- Do not give individual objects their own camera.
+
+CORRECTION C1 — KEEP THE SAME CAMERA AND ART DIRECTION
+
+The previous diagnostic made the floor too long, opened it too strongly, raised the far floor/architecture seam, lowered the near floor/threshold seam, and weakened side-edge convergence. Correct only these geometric defects and the repeated drum family. Do not redesign the scene.
+
+FIELD BOUNDARY LOCK — NON-NEGOTIABLE
+- Use formal-reference-v1.png as the same and only geometry control.
+- The playable floor is exactly the quadrilateral with normalized clockwise corners:
+  far-left (0.225, 0.255), far-right (0.775, 0.255),
+  near-right (0.915, 0.775), near-left (0.085, 0.775).
+- The far floor/architecture seam stays on q=0.255. Do not move it upward.
+- The near floor/foreground-threshold seam stays on q=0.775. Do not move it downward.
+- Both visible side boundaries pass through their exact far and near corner pairs as straight guides. Preserve their stronger convergence from the formal reference; do not widen the far field or make the view more top-down/wide-angle.
+- Architecture may overlap the boundary locally, but must not extend, replace, or imply a second playable floor beyond it.
+
+CONTROL ROW LOCK
+- Keep the four formal depth rows at normalized q positions 0.338, 0.453, 0.567, and 0.681 (approximately y=519, 695, 871, 1047 in a 1536 reference frame).
+- Anchor each drum by the center of its visible base on its assigned row. Do not use the shadow, silhouette center, or top ellipse as the anchor.
+- Keep the foreground threshold separate below q=0.775; it must not pull the nearest drum or playable floor lower.
+
+ONE IDENTICAL DRUM MASTER — UNIFORM SCALE ONLY
+- Use one single jade-and-bronze pedestal-drum construction duplicated four times at the four formal control depths.
+- Lock the master design: identical width-to-height ratio, body profile, top-ellipse aspect ratio, rim thickness, base thickness, bevels, panel count, ornament placement, jade insets, and bronze bands.
+- Between copies change ONLY uniform image scale and position. Do not make a nearer copy squatter, wider, taller, more open at the top, more detailed, or differently constructed.
+- Apply the exact visible scales in far-to-near order: 0.939, 0.978, 1.018, 1.058. Width, height, top ellipse, rims, ornaments, and every construction detail scale together by the same factor.
+- The nearest drum is only about 12.7% larger than the farthest (1.058 / 0.939), not dramatically larger. The four sizes must increase smoothly and monotonically.
+- Keep all four complete and clearly readable, with visible bases and without occlusion that prevents comparison.
+
+PRESERVE
+- Preserve the finished jade/bronze/sandstone material quality, warm coherent upper-left light, contact shadows, calm floor, distant observatory, side framing, foreground mass, and polished stylized-game finish achieved in d1.
+- Do not output the technical grid, row lines, coordinates, labels, markers, or primitive appearance from the formal reference.
+
+Priority for c1:
+exact field corners and seams > exact control rows and identical uniformly scaled drums > readable bases and coherent volumes > preservation of d1 art quality > small decoration.
+
+Composition:
+- One central distant observatory landmark on the far axis.
+- A broad, calm, readable single game plane with clear paths and breathing room.
+- The four locked drums are the only repeated diagnostic family that must occupy the four control rows.
+- A second obstacle family may appear only if it does not interfere with the locked corners, seams, rows, or drum comparison.
+- Side architecture frames and reinforces depth without becoming extra terraces or covering the field.
+- A strong foreground threshold is partially cropped by the frame below q=0.775, but it must not look like UI and must not consume the playable plane.
+- The environment itself must make the perspective readable without any overlay.
+
+Art direction:
+- Theme: ancient jade sky observatory, warm and inhabited rather than dark or ruined.
+- Materials: pale carved sandstone floor, aged warm bronze, deep jade-green enamel/stone, small ivory highlights, restrained plants only as secondary accents.
+- Lighting: one coherent warm source from upper left; short soft contact shadows plus consistent longer cast shadows; shadows never replace visible bases.
+- Style: polished stylized 3D game environment render; large readable forms, rounded bevels, material seams, restrained handmade irregularity, sparse floor texture, finished background and edges.
+- Preserve a quiet floor around obstacles. Keep detail and contrast subordinate to the spatial hierarchy.
+
+Do not add: text, letters, numbers, labels, logos, watermark, interface, technical grid, guide lines, control points, wireframes, colored diagnostic zones, ball, collider outlines, physics markers, floating objects, false terraces, incompatible ellipses, multiple local perspectives, photorealism, gray blockout, bare cubes/cylinders as final art, excessive micro-noise, or plastic smoothness.
+
+Output intent: one clean corrected square raster game-board image suitable for diagnostic comparison against the same formal reference. No technical overlay in the output. Do not use a new camera, crop, stretch, or post-process the result.
