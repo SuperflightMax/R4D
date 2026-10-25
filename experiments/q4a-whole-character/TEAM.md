@@ -72,3 +72,13 @@ CTO закрыл boundary mapping03 и разрешил минимальные �
 ### EARLY_V02_04_GARMENT_FAIL
 
 Совместный договор до изготовления сохранён/pushed `406bb89`: 3 панели, 2 root+1 hem, один rigid root и два единых affine. Изготовление, численная проверка, exact snapshot04 и оба личных garment-only rereview выполнены. Matrices positive во всех 15 samples, visible coverage 0/0, тело02 и прежний диапазон неизменны. Но поясное соединение/задний near-подол теряют связь с ягодицей, ткань сжимается в полосу; оба художника дали FAIL. Точная причина, RGBA-диагностика, проверки и передача CTO — в итоговом разделе `CORRECTION_04.md`. B/repair/full motion/QA/release/Q2A не открыты; дальнейшее решение ожидается от CTO. Источники и evidence01/02/03 сохранены.
+
+### EARLY_V02_05 — единственная аналитика 1root+2hem разрешена
+
+CTO принял FAIL04 и закрыл 2root+1hem/mapping03. Поручение05 и непересекающееся владение — в `CORRECTION_05.md` (Lead). Сначала один раз сверить фиксированные координаты с source/trace и получить явный договор Asset/Builder, затем read-only A на frozen02/15 samples, без новых масок/renderer. При доказанном аналитическом FAIL остановиться; B только если невозможность не показана. Весь старый evidence frozen. При FAIL05 семейство 3-panel/single-affine для v02 закрывается, следующий whole-source — отдельное решение CTO. Body/full motion/QA/release/Q2A не открыты.
+
+### EARLY_V02_05_READ_ONLY_A_FAIL_STOP
+
+Фиксированные anchors подтверждены без замены точек; первоначальное AA-сомнение исправлено на геометрическую сверку. Read-only A выполнен на прежних 15 samples и frozen02/04. Determinants positive и оба hem exact, но существующий hidden material не закрывает upper near seam уже в neutral. Точный inverse-lookup всех трёх PNG alpha0, Lead сверил hashes и 3×3 alpha по witness. A остановлен, B не открыт, новых масок/renderer/repair/body изменений нет. Семейство 3-panel/single-affine для v02 закрыто по решению CTO. Новый whole-source не запускается до его следующего решения.
+
+Итог/передача — `HANDOFF_05.md` (Lead). `CORRECTION_05.md` остаётся неизменным hashed brief анализа; текущий результат не дописывается в его входные байты. Sources/repairs, все методы и evidence01–04 сохранены; чужие dirty/untracked не тронуты. Full motion/QA/candidate/release/Q2A закрыты.
