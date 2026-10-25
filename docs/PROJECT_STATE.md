@@ -10,7 +10,7 @@ production поручение CTO — опубликовать принятый 
 
 ## Текущий статус
 
-**Q2A_P2_FULL_MOTION_ACTIVE.** Q5A принят и
+**Q2A_INDEPENDENT_QA_ACTIVE.** Q5A принят и
 опубликован. Исследование Q4A закрыто как
 `RESEARCH_CLOSED_NEGATIVE_PARTIAL`; CTO принял достоверный evidence viewer
 `negative-review-v02` и отдельно поручил штатную публикацию, выполненную
@@ -22,11 +22,13 @@ production поручение CTO — опубликовать принятый 
 возврата на правку. Exact P1 `p1_candidate_c2_arms01` из commit
 `6d5c6b593c80f057249a58b706fcdb7c5d62eae5`
 [принят CTO с ограничениями](../experiments/q2a-simple-character/CTO_P1_DECISION.md).
-Открыт ровно следующий этап P2_FULL_MOTION: walk, jump и обязательные
-переходы на той же основе с Builder self-check и личным просмотром
-Concept/Asset. Независимые QA и публикация остаются закрыты до следующего CTO
-gate; принципиальное разрешение Макса публиковать все готовые результаты
-зафиксировано, но незавершённый P2 готовым результатом не считается. Q4A не
+Full-motion candidate `p2_candidate_c2` из commit
+`3c27b07d489f68b3d7d8b4c8beabd35c51402fd4`
+[принят CTO для независимого QA](../experiments/q2a-simple-character/CTO_P2_DECISION.md).
+Открыты существующие Technical QA и Visual QA на неизменном exact frozen;
+производство и release не открыты. Принципиальное разрешение Макса публиковать
+все готовые результаты зафиксировано: после двух QA PASS и финальной приёмки
+Q2A будет опубликован отдельной карточкой без нового вопроса о VPS. Q4A не
 переоткрывается; Q7 и работа вне Queue A требуют нового прямого поручения Max.
 
 ## Сохранённое последующее состояние

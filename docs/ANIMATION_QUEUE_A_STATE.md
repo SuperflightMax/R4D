@@ -6,23 +6,23 @@
 
 ## Текущее выполнение
 
-**Q2A_P2_FULL_MOTION_ACTIVE.** Q5A принят и опубликован.
+**Q2A_INDEPENDENT_QA_ACTIVE.** Q5A принят и опубликован.
 Q4A закрыт как отрицательный/частичный исследовательский результат; его viewer
 опубликован десятой карточкой Review, полноценная анимация и художественный
 PASS не заявляются. Более поздний прямой handoff Макса через Дот поручил
 продолжить уже согласованную последовательную Queue A следующим пунктом Q2A.
 Новая команда создана, самостоятельно выбрала метод и прошла отдельный CTO
 production gate. Exact P1 `p1_candidate_c2_arms01` из commit `6d5c6b5…`
-принят CTO с явно сохранёнными ограничениями. Открыт только следующий этап
-P2_FULL_MOTION: walk/jump и обязательные переходы на той же основе.
-Независимые QA и публикация пока закрыты.
+принят CTO с явно сохранёнными ограничениями. Full-motion frozen
+`p2_candidate_c2` из commit `3c27b07…` принят для независимого QA.
+Открыты существующие Technical QA и Visual QA; публикация пока закрыта.
 Актуальная граница — в [операционном состоянии проекта](PROJECT_STATE.md).
 
 | Порядок | Опыт | Состояние | Материалы и показ |
 |---|---|---|---|
 | 1 | Q5A — конструкция до арта | Accepted by CTO; ASSEMBLY03 frozen `101343caa68579aacd5e6c01b94206680c364ab7`; опубликован в существующем Review; серверная доставка и auth-барьер подтверждены | [Открыть Q5A](https://superflight.space/review/r4d/q5a-construction-first/), [release record](../experiments/q5a-construction-first/RELEASE_ASSEMBLY03.md): `PUBLISHED_DELIVERY_VERIFIED_WITH_AUTH_LIMITATION`; post-auth public canvas не проверен, обычный вход SuperFlight сохранён |
 | 2 | Q4A — цельный образ до частей | **RESEARCH_CLOSED_NEGATIVE_PARTIAL**; evidence viewer `negative-review-v02` принят CTO и опубликован из exact commit `47b637ba77681cc17ccf23757396073047430c37` | [Открыть Q4A](https://superflight.space/review/r4d/q4a-whole-character/), [приёмка](../experiments/q4a-whole-character/ACCEPTANCE_NEGATIVE_REVIEW_V02.md), [release record](../experiments/q4a-whole-character/RELEASE_NEGATIVE_REVIEW_V02.md); 26 сохранённых состояний, rejected отдельно; полного движения нет |
-| 3 | Q2A — свободный выбор способа | **P2_FULL_MOTION_ACTIVE**; P1 `6d5c6b5…` принят CTO с ограничениями | Новый согласованный комплект крупных растровых деталей → локальная деформация; следующий gate — runnable frozen full motion, Builder self-check и личные Concept/Asset reviews; QA/release ещё не открыты |
+| 3 | Q2A — свободный выбор способа | **INDEPENDENT_QA_ACTIVE**; P2 C2 `3c27b07…` принят для QA | Новый согласованный комплект крупных растровых деталей → локальная деформация; Technical/Visual QA проверяют exact full motion, release откроется только после двух PASS и финальной CTO-приёмки |
 
 Независимые review `attempt03` завершили уже существующие сессии:
 Concept Artist `01a16ffd-87e7-7cf3-a9a2-29d2cd97a7ec` и Builder
