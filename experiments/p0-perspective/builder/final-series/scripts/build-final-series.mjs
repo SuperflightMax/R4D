@@ -65,7 +65,7 @@ async function buildBoard(boardId) {
   const compositeDimensions = pngDimensions(await readFile(compositePath));
   const integration = {
     ...seed,
-    provenance:{base:'e5892fbea71fbbfeb9f22e6a18f0f788cf9a1449',research:'627a9feb33cc6fdc8e63738ada13577752b9bf4a',builderFreeze:'0260519c5e3ff74365556713042d576b7bbec66e',assetComponents:'557e4650ee22cb7387290f5baece37d1219484cb',conceptFrozenBrief:'ae82913a18cf0beed2b67f1c421b30e1c1988e3b'},
+    provenance:{base:'e5892fbea71fbbfeb9f22e6a18f0f788cf9a1449',research:'627a9feb33cc6fdc8e63738ada13577752b9bf4a',builderFreeze:'0260519c5e3ff74365556713042d576b7bbec66e',assetComponents:'557e4650ee22cb7387290f5baece37d1219484cb',...(boardId==='board-01'?{assetF1PlateCorrection:'62387b6fda2190f0377a59bcbc3435923365ffac'}:{}),conceptFrozenBrief:'ae82913a18cf0beed2b67f1c421b30e1c1988e3b'},
     buildCommand:`node final-series/scripts/build-final-series.mjs --board ${boardId} --out final-series/output`,
     sources:{
       plate:{file:sourceHashes.plate.file,sha256:sourceHashes.plate.sha256},

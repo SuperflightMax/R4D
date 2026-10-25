@@ -39,7 +39,7 @@
   "sources": {
     "plate": {
       "file": "asset-artist/final-series/board-01/prepared/environment-floor-plate-1536.png",
-      "sha256": "19f9bf2439fb012fff826e6e952703f4e5af0112e1fb8b739d1d746549b4c6cc"
+      "sha256": "221a351ed7acebdec03cad4395ac0e04690e6b1c186de59778e1bff8f8efe10a"
     },
     "master": {
       "file": "asset-artist/final-series/board-01/prepared/control-master-rgba.png",
@@ -92,12 +92,13 @@
     "research": "627a9feb33cc6fdc8e63738ada13577752b9bf4a",
     "builderFreeze": "0260519c5e3ff74365556713042d576b7bbec66e",
     "assetComponents": "557e4650ee22cb7387290f5baece37d1219484cb",
+    "assetF1PlateCorrection": "62387b6fda2190f0377a59bcbc3435923365ffac",
     "conceptFrozenBrief": "ae82913a18cf0beed2b67f1c421b30e1c1988e3b"
   },
   "buildCommand": "node final-series/scripts/build-final-series.mjs --board board-01 --out final-series/output",
   "output": {
     "file": "board-01/composite.png",
-    "sha256": "2fee80e59e52f519a519d18ec340bec11e1f96b276a125ffbbbcd684946b19c4"
+    "sha256": "6c9e6c221ebf17cc6f9549b8b43f29cea1f04416beffbe185f9252b17d084e4e"
   },
   "sourceNormalization": {
     "rule": "prepared visible height -> 120 px at uniformScale 1; frozen S(z) applies afterward",
