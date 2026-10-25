@@ -1,0 +1,266 @@
+{
+  "schema": "r4d.p0.layered-composition-contract.v2",
+  "status": "contract-only-L1-and-final-series-closed",
+  "source": {
+    "baseCommit": "e5892fbea71fbbfeb9f22e6a18f0f788cf9a1449",
+    "researchCommit": "627a9feb33cc6fdc8e63738ada13577752b9bf4a",
+    "conceptCommit": "d38139573648f097bd04e1c833ffff9be467ff71",
+    "visualQaRubricCommit": "21150e583311e8688146a27fa48aaa8c41c8aaa8",
+    "builderV1Commit": "91716e4c488bdb118fc04c03dab7794f4dad6cbe",
+    "builderEolFixCommit": "0cc217d120597e1ec9f26cb2caa79e54d59386ba",
+    "researchModelSchema": "r4d.p0.perspective-model.v0.1",
+    "researchModelSha256": "48b9421d50e963141821d43fabb0c3872be97cb34c5c13711b23bd5fe2349fd2"
+  },
+  "frame": {
+    "widthPx": 1536,
+    "heightPx": 1536,
+    "channels": [
+      "R",
+      "G",
+      "B",
+      "A"
+    ]
+  },
+  "playablePlane": {
+    "coordinateConvention": "normalized p=x/width, q=y/height; origin top-left",
+    "quadOrder": [
+      "far-left",
+      "far-right",
+      "near-right",
+      "near-left"
+    ],
+    "quadNormalized": [
+      [
+        0.225,
+        0.255
+      ],
+      [
+        0.775,
+        0.255
+      ],
+      [
+        0.915,
+        0.775
+      ],
+      [
+        0.085,
+        0.775
+      ]
+    ],
+    "quadPx": [
+      [
+        345.6,
+        391.68
+      ],
+      [
+        1190.4,
+        391.68
+      ],
+      [
+        1405.44,
+        1190.4
+      ],
+      [
+        130.56,
+        1190.4
+      ]
+    ],
+    "seams": [
+      {
+        "id": "far-architecture-to-playable",
+        "q": 0.255,
+        "yPx": 391.68,
+        "fromNormalized": [
+          0.225,
+          0.255
+        ],
+        "toNormalized": [
+          0.775,
+          0.255
+        ],
+        "fromPx": [
+          345.6,
+          391.68
+        ],
+        "toPx": [
+          1190.4,
+          391.68
+        ]
+      },
+      {
+        "id": "near-playable-to-foreground",
+        "q": 0.775,
+        "yPx": 1190.4,
+        "fromNormalized": [
+          0.085,
+          0.775
+        ],
+        "toNormalized": [
+          0.915,
+          0.775
+        ],
+        "fromPx": [
+          130.56,
+          1190.4
+        ],
+        "toPx": [
+          1405.44,
+          1190.4
+        ]
+      }
+    ],
+    "qToPixelY": {
+      "formula": "yPx=q*1536",
+      "rounding": "none; retain exact decimal product"
+    }
+  },
+  "repeatedVolumeFamily": {
+    "master": {
+      "count": 1,
+      "assetId": "asset-rgba-master-assigned-by-Asset-before-L1",
+      "format": "RGBA",
+      "requiredChannels": [
+        "R",
+        "G",
+        "B",
+        "A"
+      ],
+      "status": "not-yet-supplied; no placeholder permitted",
+      "reuseRule": "all four instances reference the same master bytes"
+    },
+    "anchors": [
+      {
+        "id": "row-far",
+        "baseCenterNormalized": {
+          "p": null,
+          "q": 0.338
+        },
+        "baseCenterYPx": 519.168,
+        "uniformScale": 0.939,
+        "horizontalPlacementStatus": "deferred-until-L1-real-asset-components"
+      },
+      {
+        "id": "row-mid-far",
+        "baseCenterNormalized": {
+          "p": null,
+          "q": 0.453
+        },
+        "baseCenterYPx": 695.808,
+        "uniformScale": 0.978,
+        "horizontalPlacementStatus": "deferred-until-L1-real-asset-components"
+      },
+      {
+        "id": "row-mid-near",
+        "baseCenterNormalized": {
+          "p": null,
+          "q": 0.567
+        },
+        "baseCenterYPx": 870.912,
+        "uniformScale": 1.018,
+        "horizontalPlacementStatus": "deferred-until-L1-real-asset-components"
+      },
+      {
+        "id": "row-near",
+        "baseCenterNormalized": {
+          "p": null,
+          "q": 0.681
+        },
+        "baseCenterYPx": 1046.016,
+        "uniformScale": 1.058,
+        "horizontalPlacementStatus": "deferred-until-L1-real-asset-components"
+      }
+    ],
+    "scalingRule": "uniform: scaleX=scaleY=uniformScale; no per-axis stretch and no per-instance master"
+  },
+  "deterministicComposition": {
+    "randomness": "forbidden",
+    "stableSortKeyAscending": [
+      "baseCenter.q",
+      "baseCenter.p",
+      "instanceId"
+    ],
+    "painterDirection": "far-to-near",
+    "layerOrder": [
+      {
+        "order": 0,
+        "id": "background-architecture"
+      },
+      {
+        "order": 100,
+        "id": "playable-floor"
+      },
+      {
+        "order": 200,
+        "id": "instances-back-to-front",
+        "perInstanceOrder": [
+          "contact-shadow",
+          "rgba-master"
+        ]
+      },
+      {
+        "order": 300,
+        "id": "foreground-architecture"
+      }
+    ],
+    "occlusionRule": "each farther instance pair is fully drawn before the next nearer pair; foreground architecture draws after all instances",
+    "tieBreakRule": "p must be fixed by L1 contract before build; then instanceId ascending is final stable tie-breaker"
+  },
+  "contactShadows": {
+    "masterPolicy": "one deterministic shadow recipe for the family",
+    "placement": "shadow base-center equals its instance base-center anchor",
+    "scaling": "shadow scaleX=shadow scaleY=the same instance uniformScale",
+    "zOrder": "immediately before the corresponding rgba-master in the same sorted instance pair",
+    "independentOffsetOrScale": "forbidden"
+  },
+  "cleanOutput": {
+    "controlMarkersAllowed": false,
+    "forbiddenVisibleElements": [
+      "control points",
+      "anchor dots",
+      "perspective grid",
+      "center axis",
+      "row labels",
+      "debug text",
+      "colored guide zones",
+      "wireframe guides"
+    ],
+    "technicalTemplatesAreInputsOnly": true
+  },
+  "tolerances": {
+    "finalAspectRatio": [
+      1,
+      1
+    ],
+    "centerOffsetMaxNormalizedX": 0.02,
+    "farEdgeYTarget": 0.255,
+    "nearEdgeYTarget": 0.775,
+    "edgeYMaxAbsError": 0.025,
+    "cornerMaxErrorFrameDiagonal": 0.035,
+    "cornerRmsMaxErrorFrameDiagonal": 0.025,
+    "nearToFarFieldWidthTarget": 1.5090909091,
+    "nearToFarFieldWidthRange": [
+      1.4,
+      1.62
+    ],
+    "sideGuideMaxDeviationNormalizedX": 0.02,
+    "objectScaleSlopeTarget": 0.18,
+    "objectScaleSlopeRange": [
+      0.1,
+      0.26
+    ],
+    "objectNearToFarRatioRange": [
+      1.11,
+      1.3
+    ],
+    "objectDimensionRelativeErrorMax": 0.08,
+    "baseAnchorErrorMaxNormalizedY": 0.015,
+    "verticalAngleErrorMaxDeg": 3,
+    "recedingEdgeMedianAngleErrorMaxDeg": 6
+  },
+  "gates": {
+    "current": "contract-v2-only",
+    "l1Composite": "closed-until-real-Asset-components",
+    "newImages": "closed",
+    "finalSeries": "closed"
+  }
+}

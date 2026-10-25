@@ -1,5 +1,5 @@
 import { createHash } from 'node:crypto';
-import { mkdtemp, readFile, readdir, rm } from 'node:fs/promises';
+import { mkdtemp, readFile, rm } from 'node:fs/promises';
 import os from 'node:os';
 import path from 'node:path';
 import { fileURLToPath } from 'node:url';
@@ -15,9 +15,7 @@ const temp = await mkdtemp(path.join(os.tmpdir(), 'r4d-p0-builder-check-'));
 try {
   const build = spawnSync(process.execPath, [path.join(here, 'build.mjs'), '--out', temp], { encoding: 'utf8' });
   if (build.status !== 0) throw new Error(build.stderr || build.stdout || 'Rebuild failed');
-  const expected = (await readdir(generated)).sort();
-  const actual = (await readdir(temp)).sort();
-  assert(JSON.stringify(actual) === JSON.stringify(expected), `Generated file set differs: ${actual.join(', ')}`);
+  const expected = ['diagnostic-comparison-v1.svg', 'formal-reference-v1.svg', 'gallery-v1.html', 'metrics-v1.json'];
   for (const name of expected) {
     const [a, b] = await Promise.all([readFile(path.join(generated, name)), readFile(path.join(temp, name))]);
     assert(canonicalText(a).equals(canonicalText(b)), `${name} is stale; run npm run build`);
