@@ -73,3 +73,13 @@ CTO выбрал deterministic layered composition: в текущем досту
 6. Только PASS обязательной геометрии и художественной законченности возвращается CTO для решения о четырёх досках. При FAIL — stop/evidence, L2 не открывается.
 
 Финальная серия, публикация и P1 остаются закрыты.
+
+## Layered diagnostic L1
+
+- Concept art-integration brief: `b807bcd53cc4baa45ef06925126256f09f99b1ac`.
+- Builder composition contract v2: `606737181da71457372b0f026b4d25cced68d4ee`; exact frame/quad/seams/q→pixels/anchors/scales/order/shadows/marker ban и машинные проверки.
+- Asset components: `0e23670803d57e6df564a1553c4d87a824e8bcd0`; finished opaque plate, один clean RGBA master, отдельная shadow RGBA, metadata/provenance и воспроизводимая alpha-preparation.
+- Builder L1 composite: `9a8a01002672398bf171d540c50009c32c4a8f9d`, composite SHA-256 `6d4ebbac63ad381b0a538db08fda07e0897c594c7322da6afd4652ad5d1f9a17`. Layout был frozen до первого render: `p=.50/.36/.64/.48`, `q=.338/.453/.567/.681`, scales `.939/.978/1.018/1.058`; после render не подгонялся. Fresh-check воспроизвёл PNG побайтно.
+- Visual QA L1: `4cf8c4b7132013c5520b56d1abb46f99e0049850`, `REPORT_L1.md`; verdict `L1_PASS_FOR_CTO_SERIES_DECISION`. Formal quad, rows/S(z), one-master identity, grounding/shadows, art completeness и leakage прошли. Неблокирующее ограничение: тень компактная, края sprite немного резче plate.
+
+L1 PASS подтверждает layered contract на одном finished diagnostic, но не несколько независимых досок и не полный P0. Финальная серия не открывается автоматически; ожидается отдельное решение CTO.
