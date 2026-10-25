@@ -1,0 +1,533 @@
+{
+  "status": "V3_TECHNICAL_VERIFICATION_ONLY_NOT_PRODUCT_CANDIDATE",
+  "construction_sha256": "4c26901562ded5cd43dac994cd308a3e23743e055c94b71fee43d527ab8977fc",
+  "v2_commit": "d3bdf8f1cffebe2179805eeb54a8a36faab08805",
+  "material_attempt": "02 read-only rejected evidence; AR1-AR3 UNRESOLVED",
+  "art_package_sha256": "31c60339464400caed6e329c3260ba1a840d8c83e26ab9e06af58ff1952a014e",
+  "protected_files": 74,
+  "before_v2": {
+    "inversions": 45,
+    "self_intersections": 3,
+    "self_intersections_by_surface": {
+      "pelvis_shorts": 2,
+      "far_leg_skin": 1
+    },
+    "declared_zero_fold_faces": 28,
+    "interior_deficient_pixels": 139,
+    "poses": [
+      {
+        "pose": "bind",
+        "interior_deficient_pixels": 6
+      },
+      {
+        "pose": "idle_shift",
+        "interior_deficient_pixels": 11
+      },
+      {
+        "pose": "low_mid",
+        "interior_deficient_pixels": 2
+      },
+      {
+        "pose": "low_deep",
+        "interior_deficient_pixels": 3
+      },
+      {
+        "pose": "walk_far_contact",
+        "interior_deficient_pixels": 21
+      },
+      {
+        "pose": "walk_near_contact",
+        "interior_deficient_pixels": 12
+      },
+      {
+        "pose": "walk_far_pass",
+        "interior_deficient_pixels": 5
+      },
+      {
+        "pose": "walk_near_pass",
+        "interior_deficient_pixels": 20
+      },
+      {
+        "pose": "jump_prepare",
+        "interior_deficient_pixels": 0
+      },
+      {
+        "pose": "jump_push",
+        "interior_deficient_pixels": 6
+      },
+      {
+        "pose": "jump_apex",
+        "interior_deficient_pixels": 4
+      },
+      {
+        "pose": "jump_precontact",
+        "interior_deficient_pixels": 7
+      },
+      {
+        "pose": "jump_landing",
+        "interior_deficient_pixels": 0
+      },
+      {
+        "pose": "interrupt_low_to_walk",
+        "interior_deficient_pixels": 9
+      },
+      {
+        "pose": "interrupt_low_to_jump",
+        "interior_deficient_pixels": 4
+      },
+      {
+        "pose": "range_compression",
+        "interior_deficient_pixels": 3
+      },
+      {
+        "pose": "range_reach",
+        "interior_deficient_pixels": 6
+      },
+      {
+        "pose": "idle_settle_left",
+        "interior_deficient_pixels": 14
+      },
+      {
+        "pose": "idle_settle_right",
+        "interior_deficient_pixels": 6
+      }
+    ]
+  },
+  "after_v3": {
+    "inversions": 0,
+    "self_intersections": 0,
+    "self_intersections_by_surface": {},
+    "declared_zero_fold_faces": 28,
+    "interior_deficient_pixels": 0
+  },
+  "poses": [
+    {
+      "pose": "bind",
+      "interior_deficient_pixels": 0,
+      "background_checks": {
+        "light": {
+          "interior_alpha_deficient_pixels": 0,
+          "composition_error_pixels": 0,
+          "interior_partial_AA_pixels": 2
+        },
+        "dark": {
+          "interior_alpha_deficient_pixels": 0,
+          "composition_error_pixels": 0,
+          "interior_partial_AA_pixels": 2
+        }
+      }
+    },
+    {
+      "pose": "idle_shift",
+      "interior_deficient_pixels": 0,
+      "background_checks": {
+        "light": {
+          "interior_alpha_deficient_pixels": 0,
+          "composition_error_pixels": 0,
+          "interior_partial_AA_pixels": 0
+        },
+        "dark": {
+          "interior_alpha_deficient_pixels": 0,
+          "composition_error_pixels": 0,
+          "interior_partial_AA_pixels": 0
+        }
+      }
+    },
+    {
+      "pose": "low_mid",
+      "interior_deficient_pixels": 0,
+      "background_checks": {
+        "light": {
+          "interior_alpha_deficient_pixels": 0,
+          "composition_error_pixels": 0,
+          "interior_partial_AA_pixels": 0
+        },
+        "dark": {
+          "interior_alpha_deficient_pixels": 0,
+          "composition_error_pixels": 0,
+          "interior_partial_AA_pixels": 0
+        }
+      }
+    },
+    {
+      "pose": "low_deep",
+      "interior_deficient_pixels": 0,
+      "background_checks": {
+        "light": {
+          "interior_alpha_deficient_pixels": 0,
+          "composition_error_pixels": 0,
+          "interior_partial_AA_pixels": 0
+        },
+        "dark": {
+          "interior_alpha_deficient_pixels": 0,
+          "composition_error_pixels": 0,
+          "interior_partial_AA_pixels": 0
+        }
+      }
+    },
+    {
+      "pose": "walk_far_contact",
+      "interior_deficient_pixels": 0,
+      "background_checks": {
+        "light": {
+          "interior_alpha_deficient_pixels": 0,
+          "composition_error_pixels": 0,
+          "interior_partial_AA_pixels": 0
+        },
+        "dark": {
+          "interior_alpha_deficient_pixels": 0,
+          "composition_error_pixels": 0,
+          "interior_partial_AA_pixels": 0
+        }
+      }
+    },
+    {
+      "pose": "walk_near_contact",
+      "interior_deficient_pixels": 0,
+      "background_checks": {
+        "light": {
+          "interior_alpha_deficient_pixels": 0,
+          "composition_error_pixels": 0,
+          "interior_partial_AA_pixels": 0
+        },
+        "dark": {
+          "interior_alpha_deficient_pixels": 0,
+          "composition_error_pixels": 0,
+          "interior_partial_AA_pixels": 0
+        }
+      }
+    },
+    {
+      "pose": "walk_far_pass",
+      "interior_deficient_pixels": 0,
+      "background_checks": {
+        "light": {
+          "interior_alpha_deficient_pixels": 0,
+          "composition_error_pixels": 0,
+          "interior_partial_AA_pixels": 0
+        },
+        "dark": {
+          "interior_alpha_deficient_pixels": 0,
+          "composition_error_pixels": 0,
+          "interior_partial_AA_pixels": 0
+        }
+      }
+    },
+    {
+      "pose": "walk_near_pass",
+      "interior_deficient_pixels": 0,
+      "background_checks": {
+        "light": {
+          "interior_alpha_deficient_pixels": 0,
+          "composition_error_pixels": 0,
+          "interior_partial_AA_pixels": 0
+        },
+        "dark": {
+          "interior_alpha_deficient_pixels": 0,
+          "composition_error_pixels": 0,
+          "interior_partial_AA_pixels": 0
+        }
+      }
+    },
+    {
+      "pose": "jump_prepare",
+      "interior_deficient_pixels": 0,
+      "background_checks": {
+        "light": {
+          "interior_alpha_deficient_pixels": 0,
+          "composition_error_pixels": 0,
+          "interior_partial_AA_pixels": 0
+        },
+        "dark": {
+          "interior_alpha_deficient_pixels": 0,
+          "composition_error_pixels": 0,
+          "interior_partial_AA_pixels": 0
+        }
+      }
+    },
+    {
+      "pose": "jump_push",
+      "interior_deficient_pixels": 0,
+      "background_checks": {
+        "light": {
+          "interior_alpha_deficient_pixels": 0,
+          "composition_error_pixels": 0,
+          "interior_partial_AA_pixels": 0
+        },
+        "dark": {
+          "interior_alpha_deficient_pixels": 0,
+          "composition_error_pixels": 0,
+          "interior_partial_AA_pixels": 0
+        }
+      }
+    },
+    {
+      "pose": "jump_apex",
+      "interior_deficient_pixels": 0,
+      "background_checks": {
+        "light": {
+          "interior_alpha_deficient_pixels": 0,
+          "composition_error_pixels": 0,
+          "interior_partial_AA_pixels": 0
+        },
+        "dark": {
+          "interior_alpha_deficient_pixels": 0,
+          "composition_error_pixels": 0,
+          "interior_partial_AA_pixels": 0
+        }
+      }
+    },
+    {
+      "pose": "jump_precontact",
+      "interior_deficient_pixels": 0,
+      "background_checks": {
+        "light": {
+          "interior_alpha_deficient_pixels": 0,
+          "composition_error_pixels": 0,
+          "interior_partial_AA_pixels": 0
+        },
+        "dark": {
+          "interior_alpha_deficient_pixels": 0,
+          "composition_error_pixels": 0,
+          "interior_partial_AA_pixels": 0
+        }
+      }
+    },
+    {
+      "pose": "jump_landing",
+      "interior_deficient_pixels": 0,
+      "background_checks": {
+        "light": {
+          "interior_alpha_deficient_pixels": 0,
+          "composition_error_pixels": 0,
+          "interior_partial_AA_pixels": 0
+        },
+        "dark": {
+          "interior_alpha_deficient_pixels": 0,
+          "composition_error_pixels": 0,
+          "interior_partial_AA_pixels": 0
+        }
+      }
+    },
+    {
+      "pose": "interrupt_low_to_walk",
+      "interior_deficient_pixels": 0,
+      "background_checks": {
+        "light": {
+          "interior_alpha_deficient_pixels": 0,
+          "composition_error_pixels": 0,
+          "interior_partial_AA_pixels": 0
+        },
+        "dark": {
+          "interior_alpha_deficient_pixels": 0,
+          "composition_error_pixels": 0,
+          "interior_partial_AA_pixels": 0
+        }
+      }
+    },
+    {
+      "pose": "interrupt_low_to_jump",
+      "interior_deficient_pixels": 0,
+      "background_checks": {
+        "light": {
+          "interior_alpha_deficient_pixels": 0,
+          "composition_error_pixels": 0,
+          "interior_partial_AA_pixels": 0
+        },
+        "dark": {
+          "interior_alpha_deficient_pixels": 0,
+          "composition_error_pixels": 0,
+          "interior_partial_AA_pixels": 0
+        }
+      }
+    },
+    {
+      "pose": "range_compression",
+      "interior_deficient_pixels": 0,
+      "background_checks": {
+        "light": {
+          "interior_alpha_deficient_pixels": 0,
+          "composition_error_pixels": 0,
+          "interior_partial_AA_pixels": 0
+        },
+        "dark": {
+          "interior_alpha_deficient_pixels": 0,
+          "composition_error_pixels": 0,
+          "interior_partial_AA_pixels": 0
+        }
+      }
+    },
+    {
+      "pose": "range_reach",
+      "interior_deficient_pixels": 0,
+      "background_checks": {
+        "light": {
+          "interior_alpha_deficient_pixels": 0,
+          "composition_error_pixels": 0,
+          "interior_partial_AA_pixels": 0
+        },
+        "dark": {
+          "interior_alpha_deficient_pixels": 0,
+          "composition_error_pixels": 0,
+          "interior_partial_AA_pixels": 0
+        }
+      }
+    },
+    {
+      "pose": "idle_settle_left",
+      "interior_deficient_pixels": 0,
+      "background_checks": {
+        "light": {
+          "interior_alpha_deficient_pixels": 0,
+          "composition_error_pixels": 0,
+          "interior_partial_AA_pixels": 0
+        },
+        "dark": {
+          "interior_alpha_deficient_pixels": 0,
+          "composition_error_pixels": 0,
+          "interior_partial_AA_pixels": 0
+        }
+      }
+    },
+    {
+      "pose": "idle_settle_right",
+      "interior_deficient_pixels": 0,
+      "background_checks": {
+        "light": {
+          "interior_alpha_deficient_pixels": 0,
+          "composition_error_pixels": 0,
+          "interior_partial_AA_pixels": 0
+        },
+        "dark": {
+          "interior_alpha_deficient_pixels": 0,
+          "composition_error_pixels": 0,
+          "interior_partial_AA_pixels": 0
+        }
+      }
+    }
+  ],
+  "regression_v2_checks": {
+    "A1": "PASS actual chest blend, armhole and shoulder sweep",
+    "A2_C1": "PASS shared posterior positions/tangents, side independence, fixed garment hem",
+    "A3": "PASS immutable UV/topology/weights; nonnegative faces; zero faces only in declared full joint band",
+    "C2_forearm_visible_fraction": {
+      "bind": 1.0,
+      "idle_shift": 1.0,
+      "walk_near_pass": 1.0,
+      "idle_settle_left": 1.0,
+      "idle_settle_right": 1.0
+    },
+    "zero_fold_faces_across_static_poses": 28,
+    "v1_archive": "PASS 9 byte hashes and pinned manifest; original 17 body/foot configurations retained"
+  },
+  "construction_v3_mesh_checks": {
+    "inversions": 0,
+    "unintended_self_intersections": 0,
+    "v2_regression": "PASS all 19 inputs, landmarks, lengths, viewport and ranges identical; skin UV unchanged",
+    "inner_calf_hem_contact_corrective": [
+      [
+        "range_compression",
+        "far_leg_skin",
+        5.219607061641367
+      ]
+    ]
+  },
+  "old_failure_probes": [
+    {
+      "pose": "bind",
+      "pixel": [
+        484,
+        529
+      ],
+      "alpha": 255
+    },
+    {
+      "pose": "walk_far_contact",
+      "pixel": [
+        459,
+        342
+      ],
+      "alpha": 255
+    },
+    {
+      "pose": "walk_far_contact",
+      "pixel": [
+        518,
+        454
+      ],
+      "alpha": 255
+    },
+    {
+      "pose": "idle_settle_left",
+      "pixel": [
+        455,
+        299
+      ],
+      "alpha": 255
+    }
+  ],
+  "render_contract": "explicit v3 triangles/UV, reject flipped, skip zero, 2x geometric coverage, RGB-only material sampling at pixel centres; no pose patches",
+  "outputs_sha256": {
+    "rgba/bind.png": "bb482e7bab744859f142a826affb514dd66f8a1b1d7c8e40df87ba1fc32492da",
+    "light/bind.png": "8a3a1d929542ed946a2c963ad4757181889aef6a091fe9f5d5de47c0194e675f",
+    "dark/bind.png": "7ed9cc4aaa2b5af90abd7aa453259d007361e33175b1597c0ee8fd7fe5829d8b",
+    "rgba/idle_shift.png": "bc73c4788400781149206f5525e23d70a0194bb8cd00a92b896a3840f83075b0",
+    "light/idle_shift.png": "407c9f67e808dd15d487d73c9fe2ae38b5bac7add7fc24850979eb3ff767f70e",
+    "dark/idle_shift.png": "1e13cac57a8cc0ee9d272eee9e72df22f519f33831703fe513f903f1b8aa6f67",
+    "rgba/low_mid.png": "6f68ee26772b7f78fda3835744747a4bb8760315e2fa1bd0ad02da589c47f838",
+    "light/low_mid.png": "bec6698fe23fbeae81b874aec9041573a5ef101ab916e34687fc7a79c7fd47f3",
+    "dark/low_mid.png": "ac8ba815604ebe3b4240deafd9043e9d7488a853ba28d6c942e4b2aed7ebd47a",
+    "rgba/low_deep.png": "24a732bba007762c52d5bea6955146546721e068ac7f4c7417918cf8926b5fa9",
+    "light/low_deep.png": "e7a5b89b68f98ee672582cfb6fbe980726a69a83856a67da9f07261aac244d04",
+    "dark/low_deep.png": "12cee70c055219baeb3e17d3914d6028cdc3c8671ac91afb125307244faa949a",
+    "rgba/walk_far_contact.png": "0e3fcac7a608fb271542613a60b746ff8c63c00369b759e213fb618a1de8edff",
+    "light/walk_far_contact.png": "b834fe81f5bba7186872f9bdbc01e8c1996aca0c0492826ea79e4a268e10af57",
+    "dark/walk_far_contact.png": "f40fcf7146a23754b5105c2a0086ad314b63562c5107a3c59dfadb5aeef4557f",
+    "rgba/walk_near_contact.png": "97aee053966b2db5c8864927383881eb7918db13a8448fa3f5054a9a30b9e85a",
+    "light/walk_near_contact.png": "9aa7ec34dc4931d9bf6089574001f5cd003799c9fcf8c56fd1a0dfc7c15c5b98",
+    "dark/walk_near_contact.png": "b3e69bb64718d7bdfe011966d7db6f72a27d4b1bd882fc7c1285b4326a33f6e8",
+    "rgba/walk_far_pass.png": "08733f19b74de4177276aefb35e92e0f52811f88a8d4790537b2eab591bad6db",
+    "light/walk_far_pass.png": "c965241a8edd8bafe8386e8359330e9207e35d3ed2c0e74124d1cea5a5c7e94e",
+    "dark/walk_far_pass.png": "521288dc75d410b9df7db1c495da6e0b12e8b433163be1cbf75241dd94cf9684",
+    "rgba/walk_near_pass.png": "3b8532c170a92ed460a506a00fa2046a06f3f45fac096dd7250e62f570e77978",
+    "light/walk_near_pass.png": "8eab38e811cde64c6c5c97a809123ef4fa01e5bd60d89fd377e7da590ab11ca2",
+    "dark/walk_near_pass.png": "2238b30a9263ed9ebfe2bf73eb98e795009824b81f1bdfada1ac4dbec460c6ac",
+    "rgba/jump_prepare.png": "f8e4b69c0bf42e6bb8be1b20223e5180bf44635b64de2f3415b8b145ee55f942",
+    "light/jump_prepare.png": "7a88222dde3d841037380c971bdadb3be4329bb030a8735e318d25d8ed62aa2f",
+    "dark/jump_prepare.png": "c44b30b8ceaa3ff81810d593ab2c4c1a5ce03ec87de0bbc837ccc4e4a3aa20ab",
+    "rgba/jump_push.png": "d2767640e4507c24c2a217c5f046eaef42d53402b159855e987b85c7a585d1a0",
+    "light/jump_push.png": "43d4ce4f8c6625bbfecac648751ffe13443881813750d9f850fc57d65fa3b51b",
+    "dark/jump_push.png": "ba4f3427cd97913e5de434d64d93cf71e5042d12fd58073ccab99da53b809f2e",
+    "rgba/jump_apex.png": "1eea076f0cf4904f06c12865b7c46a6fec2ca0d7c25abda0b99817cab74b1c66",
+    "light/jump_apex.png": "4b116d1ca4ab953f551c3c5ce668a9593234aa17f80576833cd4b4486ecc5ac5",
+    "dark/jump_apex.png": "3c234afd1d3a5dee810c1fd973a8310133fb7ce2790d4b1bb8e9ad020b42e18b",
+    "rgba/jump_precontact.png": "6b58e3e0efaa65ab4203b189cd923b84ff4150ad0cb33dd8cf1d8c46f1694bc6",
+    "light/jump_precontact.png": "332fd78d75c358ff835a4cb27aa968e77dd1b997b880f618d153901afd7d1601",
+    "dark/jump_precontact.png": "3ae9b7158c13a82fc820f5b9f4cb223aa2eb0db951ce055ba73f9c60f9fff8c6",
+    "rgba/jump_landing.png": "fabe096973aa2bd93866f578d6bde3ce12725b57552b9b55c9e9ed067c1327e4",
+    "light/jump_landing.png": "ac92599ec12f6d09813b4a7301f1ef37c42c36864d16a50ca70f6c258cc3e816",
+    "dark/jump_landing.png": "63635d82a3274ad88cffadb4e92f2c4794e14a2b7d76226abb262ec70742e8d6",
+    "rgba/interrupt_low_to_walk.png": "ad8e40b6936e49e7dceef74af823ceaf57a7a0dd1c10dd40099f3da1fdba5ea6",
+    "light/interrupt_low_to_walk.png": "2b74fee4f08ad3f36a4d902dcb8844b43d988a11899515c50c6b815826477648",
+    "dark/interrupt_low_to_walk.png": "08d35a7a997599bdff05a8804d74b8f68d94dfe60d6a487bd415c36cccedd477",
+    "rgba/interrupt_low_to_jump.png": "73e5362bcb1ea4c18228aa28215f2ae142f74f1a991cce033e62722d126a9d03",
+    "light/interrupt_low_to_jump.png": "3202534f155be68d474c2ebcd0929a29a329ce71e0efb9419f0718e75a62e754",
+    "dark/interrupt_low_to_jump.png": "476cc56fefa4924a73e996133427bd5bdbb2156a7f4b3ac1517c6506dde5f53a",
+    "rgba/range_compression.png": "5715c628ea3650156d3daf4a9c2d2934364d2cc4d915d70a2900bfced86b4d30",
+    "light/range_compression.png": "3a00385666c53df86a5a6dae9c4b89fb30e4cfbcb6f0d5e1ebff195af8fb8adc",
+    "dark/range_compression.png": "6d3552e9f4edf0ca88be2f7c700d5364dc4291f514df24e6045fb9b11d5defa8",
+    "rgba/range_reach.png": "af4f16d5955bc7dcf949de373eb5fe374aa2a0925c171cfeb5c6fb348e7c0ba5",
+    "light/range_reach.png": "9e46746e89567c74e16d5649d8bd620e05f7124e10f6928bbc8ff8e42d7c96ca",
+    "dark/range_reach.png": "edd1f729f1ceb5d218e56f3f7a03e56bf30e929e868b45cf0594215df310ea6a",
+    "rgba/idle_settle_left.png": "2b5c8ad0684cc990b93e3442946756fa17f82c511f0d8dedae0242a71260a289",
+    "light/idle_settle_left.png": "63aa83540135c008dfc245570262a9008ddcf982e8b6fa86a6a290471eefe819",
+    "dark/idle_settle_left.png": "408495c814da7f452bcc8e91b49aa1e8403ca6f1e5e3aab99944999cdbedf195",
+    "rgba/idle_settle_right.png": "d5f7ee3867ca6211a5d78e1c68c8a57c33b2db131c292de0fba20b4f08f74b7c",
+    "light/idle_settle_right.png": "d259622985d7061bc427eccbab8ff455b95907952ce54d1b368898d22aed732d",
+    "dark/idle_settle_right.png": "a61b46642317403525b5f373b7a06c12b4ae7d9cfcdfa84a9573cc79ec412b7e",
+    "light-sheet.png": "c17e980be10034f195a4aaa815ed83dcd45e2a56ed8b37e78aba6b68c330894c",
+    "dark-sheet.png": "6f7cc57c66ce7e8628075d5529e319535932301227a254e9bff15f284e555316",
+    "low-deep-x2.png": "07f24321d12208b98380cf9bb0fcbbc3256fdca27fb054b1df511c4ab5ed57c1"
+  },
+  "clean_art_attempt03": "FORBIDDEN pending two v3 reviews"
+}

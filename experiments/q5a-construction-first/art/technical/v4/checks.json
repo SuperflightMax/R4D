@@ -1,0 +1,1297 @@
+{
+  "status": "V4_SILHOUETTE_TECHNICAL_ONLY_NOT_PRODUCT_CANDIDATE",
+  "construction_sha256": "7d06ea4636b49c718dad5e9d9f07000d09fa7e5cf105ec325abb84742bfdba26",
+  "v2_commit": "d3bdf8f1cffebe2179805eeb54a8a36faab08805",
+  "material_attempt": "02 read-only rejected evidence; AR1-AR3 UNRESOLVED",
+  "art_package_sha256": "31c60339464400caed6e329c3260ba1a840d8c83e26ab9e06af58ff1952a014e",
+  "protected_files": 162,
+  "before_v2": {
+    "inversions": 45,
+    "self_intersections": 3,
+    "self_intersections_by_surface": {
+      "pelvis_shorts": 2,
+      "far_leg_skin": 1
+    },
+    "declared_zero_fold_faces": 28,
+    "interior_deficient_pixels": 139,
+    "poses": [
+      {
+        "pose": "bind",
+        "interior_deficient_pixels": 6
+      },
+      {
+        "pose": "idle_shift",
+        "interior_deficient_pixels": 11
+      },
+      {
+        "pose": "low_mid",
+        "interior_deficient_pixels": 2
+      },
+      {
+        "pose": "low_deep",
+        "interior_deficient_pixels": 3
+      },
+      {
+        "pose": "walk_far_contact",
+        "interior_deficient_pixels": 21
+      },
+      {
+        "pose": "walk_near_contact",
+        "interior_deficient_pixels": 12
+      },
+      {
+        "pose": "walk_far_pass",
+        "interior_deficient_pixels": 5
+      },
+      {
+        "pose": "walk_near_pass",
+        "interior_deficient_pixels": 20
+      },
+      {
+        "pose": "jump_prepare",
+        "interior_deficient_pixels": 0
+      },
+      {
+        "pose": "jump_push",
+        "interior_deficient_pixels": 6
+      },
+      {
+        "pose": "jump_apex",
+        "interior_deficient_pixels": 4
+      },
+      {
+        "pose": "jump_precontact",
+        "interior_deficient_pixels": 7
+      },
+      {
+        "pose": "jump_landing",
+        "interior_deficient_pixels": 0
+      },
+      {
+        "pose": "interrupt_low_to_walk",
+        "interior_deficient_pixels": 9
+      },
+      {
+        "pose": "interrupt_low_to_jump",
+        "interior_deficient_pixels": 4
+      },
+      {
+        "pose": "range_compression",
+        "interior_deficient_pixels": 3
+      },
+      {
+        "pose": "range_reach",
+        "interior_deficient_pixels": 6
+      },
+      {
+        "pose": "idle_settle_left",
+        "interior_deficient_pixels": 14
+      },
+      {
+        "pose": "idle_settle_right",
+        "interior_deficient_pixels": 6
+      }
+    ]
+  },
+  "before_v3": {
+    "inversions": 0,
+    "self_intersections": 0,
+    "self_intersections_by_surface": {},
+    "declared_zero_fold_faces": 28,
+    "interior_deficient_pixels": 0
+  },
+  "after_v4": {
+    "inversions": 0,
+    "self_intersections": 0,
+    "self_intersections_by_surface": {},
+    "declared_zero_fold_faces": 28,
+    "interior_deficient_pixels": 0,
+    "opaque_outside_silhouette_pixels": 0
+  },
+  "poses": [
+    {
+      "pose": "bind",
+      "interior_deficient_pixels": 0,
+      "opaque_outside_silhouette_pixels": 0,
+      "full_state_x2": {
+        "interior_deficient_pixels": 0,
+        "opaque_outside_silhouette_pixels": 0,
+        "viewport": [
+          1920,
+          1280
+        ]
+      },
+      "background_checks": {
+        "light": {
+          "interior_alpha_deficient_pixels": 0,
+          "composition_error_pixels": 0,
+          "interior_partial_AA_pixels": 0
+        },
+        "dark": {
+          "interior_alpha_deficient_pixels": 0,
+          "composition_error_pixels": 0,
+          "interior_partial_AA_pixels": 0
+        }
+      }
+    },
+    {
+      "pose": "idle_shift",
+      "interior_deficient_pixels": 0,
+      "opaque_outside_silhouette_pixels": 0,
+      "full_state_x2": {
+        "interior_deficient_pixels": 0,
+        "opaque_outside_silhouette_pixels": 0,
+        "viewport": [
+          1920,
+          1280
+        ]
+      },
+      "background_checks": {
+        "light": {
+          "interior_alpha_deficient_pixels": 0,
+          "composition_error_pixels": 0,
+          "interior_partial_AA_pixels": 1
+        },
+        "dark": {
+          "interior_alpha_deficient_pixels": 0,
+          "composition_error_pixels": 0,
+          "interior_partial_AA_pixels": 1
+        }
+      }
+    },
+    {
+      "pose": "low_mid",
+      "interior_deficient_pixels": 0,
+      "opaque_outside_silhouette_pixels": 0,
+      "full_state_x2": {
+        "interior_deficient_pixels": 0,
+        "opaque_outside_silhouette_pixels": 0,
+        "viewport": [
+          1920,
+          1280
+        ]
+      },
+      "background_checks": {
+        "light": {
+          "interior_alpha_deficient_pixels": 0,
+          "composition_error_pixels": 0,
+          "interior_partial_AA_pixels": 0
+        },
+        "dark": {
+          "interior_alpha_deficient_pixels": 0,
+          "composition_error_pixels": 0,
+          "interior_partial_AA_pixels": 0
+        }
+      }
+    },
+    {
+      "pose": "low_deep",
+      "interior_deficient_pixels": 0,
+      "opaque_outside_silhouette_pixels": 0,
+      "full_state_x2": {
+        "interior_deficient_pixels": 0,
+        "opaque_outside_silhouette_pixels": 0,
+        "viewport": [
+          1920,
+          1280
+        ]
+      },
+      "background_checks": {
+        "light": {
+          "interior_alpha_deficient_pixels": 0,
+          "composition_error_pixels": 0,
+          "interior_partial_AA_pixels": 0
+        },
+        "dark": {
+          "interior_alpha_deficient_pixels": 0,
+          "composition_error_pixels": 0,
+          "interior_partial_AA_pixels": 0
+        }
+      }
+    },
+    {
+      "pose": "walk_far_contact",
+      "interior_deficient_pixels": 0,
+      "opaque_outside_silhouette_pixels": 0,
+      "full_state_x2": {
+        "interior_deficient_pixels": 0,
+        "opaque_outside_silhouette_pixels": 0,
+        "viewport": [
+          1920,
+          1280
+        ]
+      },
+      "background_checks": {
+        "light": {
+          "interior_alpha_deficient_pixels": 0,
+          "composition_error_pixels": 0,
+          "interior_partial_AA_pixels": 1
+        },
+        "dark": {
+          "interior_alpha_deficient_pixels": 0,
+          "composition_error_pixels": 0,
+          "interior_partial_AA_pixels": 1
+        }
+      }
+    },
+    {
+      "pose": "walk_near_contact",
+      "interior_deficient_pixels": 0,
+      "opaque_outside_silhouette_pixels": 0,
+      "full_state_x2": {
+        "interior_deficient_pixels": 0,
+        "opaque_outside_silhouette_pixels": 0,
+        "viewport": [
+          1920,
+          1280
+        ]
+      },
+      "background_checks": {
+        "light": {
+          "interior_alpha_deficient_pixels": 0,
+          "composition_error_pixels": 0,
+          "interior_partial_AA_pixels": 0
+        },
+        "dark": {
+          "interior_alpha_deficient_pixels": 0,
+          "composition_error_pixels": 0,
+          "interior_partial_AA_pixels": 0
+        }
+      }
+    },
+    {
+      "pose": "walk_far_pass",
+      "interior_deficient_pixels": 0,
+      "opaque_outside_silhouette_pixels": 0,
+      "full_state_x2": {
+        "interior_deficient_pixels": 0,
+        "opaque_outside_silhouette_pixels": 0,
+        "viewport": [
+          1920,
+          1280
+        ]
+      },
+      "background_checks": {
+        "light": {
+          "interior_alpha_deficient_pixels": 0,
+          "composition_error_pixels": 0,
+          "interior_partial_AA_pixels": 0
+        },
+        "dark": {
+          "interior_alpha_deficient_pixels": 0,
+          "composition_error_pixels": 0,
+          "interior_partial_AA_pixels": 0
+        }
+      }
+    },
+    {
+      "pose": "walk_near_pass",
+      "interior_deficient_pixels": 0,
+      "opaque_outside_silhouette_pixels": 0,
+      "full_state_x2": {
+        "interior_deficient_pixels": 0,
+        "opaque_outside_silhouette_pixels": 0,
+        "viewport": [
+          1920,
+          1280
+        ]
+      },
+      "background_checks": {
+        "light": {
+          "interior_alpha_deficient_pixels": 0,
+          "composition_error_pixels": 0,
+          "interior_partial_AA_pixels": 3
+        },
+        "dark": {
+          "interior_alpha_deficient_pixels": 0,
+          "composition_error_pixels": 0,
+          "interior_partial_AA_pixels": 3
+        }
+      }
+    },
+    {
+      "pose": "jump_prepare",
+      "interior_deficient_pixels": 0,
+      "opaque_outside_silhouette_pixels": 0,
+      "full_state_x2": {
+        "interior_deficient_pixels": 0,
+        "opaque_outside_silhouette_pixels": 0,
+        "viewport": [
+          1920,
+          1280
+        ]
+      },
+      "background_checks": {
+        "light": {
+          "interior_alpha_deficient_pixels": 0,
+          "composition_error_pixels": 0,
+          "interior_partial_AA_pixels": 0
+        },
+        "dark": {
+          "interior_alpha_deficient_pixels": 0,
+          "composition_error_pixels": 0,
+          "interior_partial_AA_pixels": 0
+        }
+      }
+    },
+    {
+      "pose": "jump_push",
+      "interior_deficient_pixels": 0,
+      "opaque_outside_silhouette_pixels": 0,
+      "full_state_x2": {
+        "interior_deficient_pixels": 0,
+        "opaque_outside_silhouette_pixels": 0,
+        "viewport": [
+          1920,
+          1280
+        ]
+      },
+      "background_checks": {
+        "light": {
+          "interior_alpha_deficient_pixels": 0,
+          "composition_error_pixels": 0,
+          "interior_partial_AA_pixels": 1
+        },
+        "dark": {
+          "interior_alpha_deficient_pixels": 0,
+          "composition_error_pixels": 0,
+          "interior_partial_AA_pixels": 1
+        }
+      }
+    },
+    {
+      "pose": "jump_apex",
+      "interior_deficient_pixels": 0,
+      "opaque_outside_silhouette_pixels": 0,
+      "full_state_x2": {
+        "interior_deficient_pixels": 0,
+        "opaque_outside_silhouette_pixels": 0,
+        "viewport": [
+          1920,
+          1280
+        ]
+      },
+      "background_checks": {
+        "light": {
+          "interior_alpha_deficient_pixels": 0,
+          "composition_error_pixels": 0,
+          "interior_partial_AA_pixels": 0
+        },
+        "dark": {
+          "interior_alpha_deficient_pixels": 0,
+          "composition_error_pixels": 0,
+          "interior_partial_AA_pixels": 0
+        }
+      }
+    },
+    {
+      "pose": "jump_precontact",
+      "interior_deficient_pixels": 0,
+      "opaque_outside_silhouette_pixels": 0,
+      "full_state_x2": {
+        "interior_deficient_pixels": 0,
+        "opaque_outside_silhouette_pixels": 0,
+        "viewport": [
+          1920,
+          1280
+        ]
+      },
+      "background_checks": {
+        "light": {
+          "interior_alpha_deficient_pixels": 0,
+          "composition_error_pixels": 0,
+          "interior_partial_AA_pixels": 0
+        },
+        "dark": {
+          "interior_alpha_deficient_pixels": 0,
+          "composition_error_pixels": 0,
+          "interior_partial_AA_pixels": 0
+        }
+      }
+    },
+    {
+      "pose": "jump_landing",
+      "interior_deficient_pixels": 0,
+      "opaque_outside_silhouette_pixels": 0,
+      "full_state_x2": {
+        "interior_deficient_pixels": 0,
+        "opaque_outside_silhouette_pixels": 0,
+        "viewport": [
+          1920,
+          1280
+        ]
+      },
+      "background_checks": {
+        "light": {
+          "interior_alpha_deficient_pixels": 0,
+          "composition_error_pixels": 0,
+          "interior_partial_AA_pixels": 0
+        },
+        "dark": {
+          "interior_alpha_deficient_pixels": 0,
+          "composition_error_pixels": 0,
+          "interior_partial_AA_pixels": 0
+        }
+      }
+    },
+    {
+      "pose": "interrupt_low_to_walk",
+      "interior_deficient_pixels": 0,
+      "opaque_outside_silhouette_pixels": 0,
+      "full_state_x2": {
+        "interior_deficient_pixels": 0,
+        "opaque_outside_silhouette_pixels": 0,
+        "viewport": [
+          1920,
+          1280
+        ]
+      },
+      "background_checks": {
+        "light": {
+          "interior_alpha_deficient_pixels": 0,
+          "composition_error_pixels": 0,
+          "interior_partial_AA_pixels": 0
+        },
+        "dark": {
+          "interior_alpha_deficient_pixels": 0,
+          "composition_error_pixels": 0,
+          "interior_partial_AA_pixels": 0
+        }
+      }
+    },
+    {
+      "pose": "interrupt_low_to_jump",
+      "interior_deficient_pixels": 0,
+      "opaque_outside_silhouette_pixels": 0,
+      "full_state_x2": {
+        "interior_deficient_pixels": 0,
+        "opaque_outside_silhouette_pixels": 0,
+        "viewport": [
+          1920,
+          1280
+        ]
+      },
+      "background_checks": {
+        "light": {
+          "interior_alpha_deficient_pixels": 0,
+          "composition_error_pixels": 0,
+          "interior_partial_AA_pixels": 0
+        },
+        "dark": {
+          "interior_alpha_deficient_pixels": 0,
+          "composition_error_pixels": 0,
+          "interior_partial_AA_pixels": 0
+        }
+      }
+    },
+    {
+      "pose": "range_compression",
+      "interior_deficient_pixels": 0,
+      "opaque_outside_silhouette_pixels": 0,
+      "full_state_x2": {
+        "interior_deficient_pixels": 0,
+        "opaque_outside_silhouette_pixels": 0,
+        "viewport": [
+          1920,
+          1280
+        ]
+      },
+      "background_checks": {
+        "light": {
+          "interior_alpha_deficient_pixels": 0,
+          "composition_error_pixels": 0,
+          "interior_partial_AA_pixels": 4
+        },
+        "dark": {
+          "interior_alpha_deficient_pixels": 0,
+          "composition_error_pixels": 0,
+          "interior_partial_AA_pixels": 4
+        }
+      }
+    },
+    {
+      "pose": "range_reach",
+      "interior_deficient_pixels": 0,
+      "opaque_outside_silhouette_pixels": 0,
+      "full_state_x2": {
+        "interior_deficient_pixels": 0,
+        "opaque_outside_silhouette_pixels": 0,
+        "viewport": [
+          1920,
+          1280
+        ]
+      },
+      "background_checks": {
+        "light": {
+          "interior_alpha_deficient_pixels": 0,
+          "composition_error_pixels": 0,
+          "interior_partial_AA_pixels": 0
+        },
+        "dark": {
+          "interior_alpha_deficient_pixels": 0,
+          "composition_error_pixels": 0,
+          "interior_partial_AA_pixels": 0
+        }
+      }
+    },
+    {
+      "pose": "idle_settle_left",
+      "interior_deficient_pixels": 0,
+      "opaque_outside_silhouette_pixels": 0,
+      "full_state_x2": {
+        "interior_deficient_pixels": 0,
+        "opaque_outside_silhouette_pixels": 0,
+        "viewport": [
+          1920,
+          1280
+        ]
+      },
+      "background_checks": {
+        "light": {
+          "interior_alpha_deficient_pixels": 0,
+          "composition_error_pixels": 0,
+          "interior_partial_AA_pixels": 1
+        },
+        "dark": {
+          "interior_alpha_deficient_pixels": 0,
+          "composition_error_pixels": 0,
+          "interior_partial_AA_pixels": 1
+        }
+      }
+    },
+    {
+      "pose": "idle_settle_right",
+      "interior_deficient_pixels": 0,
+      "opaque_outside_silhouette_pixels": 0,
+      "full_state_x2": {
+        "interior_deficient_pixels": 0,
+        "opaque_outside_silhouette_pixels": 0,
+        "viewport": [
+          1920,
+          1280
+        ]
+      },
+      "background_checks": {
+        "light": {
+          "interior_alpha_deficient_pixels": 0,
+          "composition_error_pixels": 0,
+          "interior_partial_AA_pixels": 0
+        },
+        "dark": {
+          "interior_alpha_deficient_pixels": 0,
+          "composition_error_pixels": 0,
+          "interior_partial_AA_pixels": 0
+        }
+      }
+    }
+  ],
+  "regression_v2_checks": {
+    "A1": "PASS actual chest blend, armhole and shoulder sweep",
+    "A2_C1": "PASS shared posterior positions/tangents, side independence, fixed garment hem",
+    "A3": "PASS immutable UV/topology/weights; nonnegative faces; zero faces only in declared full joint band",
+    "C2_forearm_visible_fraction": {
+      "bind": 1.0,
+      "idle_shift": 1.0,
+      "walk_near_pass": 1.0,
+      "idle_settle_left": 1.0,
+      "idle_settle_right": 1.0
+    },
+    "zero_fold_faces_across_static_poses": 28,
+    "v1_archive": "PASS 9 byte hashes and pinned manifest; original 17 body/foot configurations retained"
+  },
+  "construction_v3_mesh_checks": {
+    "inversions": 0,
+    "unintended_self_intersections": 0,
+    "v2_regression": "PASS all 19 inputs, landmarks, lengths, viewport and ranges identical; original segment UV unchanged; v4 contour UV explicit",
+    "inner_calf_hem_contact_corrective": [
+      [
+        "range_compression",
+        "far_leg_skin",
+        5.219607061641367
+      ]
+    ]
+  },
+  "old_failure_probes": [
+    {
+      "pose": "bind",
+      "pixel": [
+        484,
+        529
+      ],
+      "alpha": 255
+    },
+    {
+      "pose": "walk_far_contact",
+      "pixel": [
+        459,
+        342
+      ],
+      "alpha": 255
+    },
+    {
+      "pose": "walk_far_contact",
+      "pixel": [
+        518,
+        454
+      ],
+      "alpha": 255
+    },
+    {
+      "pose": "idle_settle_left",
+      "pixel": [
+        455,
+        299
+      ],
+      "alpha": 255
+    }
+  ],
+  "construction_v4_silhouette_checks": {
+    "v3_archive": "PASS 13 byte hashes and pinned manifest",
+    "v3_geometry_preserved": "PASS original skin rows, all cloth/rigid meshes, 19 inputs/landmarks, bones/pivots/feet/ranges",
+    "hands": [
+      {
+        "pose": "bind",
+        "surface": "far_hand",
+        "area_units2": 333.8665625,
+        "vertices": 44,
+        "faces": 42,
+        "wrist_landmarks": "PASS",
+        "bbox_area_fraction": 0.671315
+      },
+      {
+        "pose": "bind",
+        "surface": "near_hand",
+        "area_units2": 333.8665625,
+        "vertices": 44,
+        "faces": 42,
+        "wrist_landmarks": "PASS",
+        "bbox_area_fraction": 0.671315
+      },
+      {
+        "pose": "idle_shift",
+        "surface": "far_hand",
+        "area_units2": 333.8665625,
+        "vertices": 44,
+        "faces": 42,
+        "wrist_landmarks": "PASS",
+        "bbox_area_fraction": 0.671315
+      },
+      {
+        "pose": "idle_shift",
+        "surface": "near_hand",
+        "area_units2": 333.8665625,
+        "vertices": 44,
+        "faces": 42,
+        "wrist_landmarks": "PASS",
+        "bbox_area_fraction": 0.671315
+      },
+      {
+        "pose": "low_mid",
+        "surface": "far_hand",
+        "area_units2": 333.8665625,
+        "vertices": 44,
+        "faces": 42,
+        "wrist_landmarks": "PASS",
+        "bbox_area_fraction": 0.671315
+      },
+      {
+        "pose": "low_mid",
+        "surface": "near_hand",
+        "area_units2": 333.8665625,
+        "vertices": 44,
+        "faces": 42,
+        "wrist_landmarks": "PASS",
+        "bbox_area_fraction": 0.671315
+      },
+      {
+        "pose": "low_deep",
+        "surface": "far_hand",
+        "area_units2": 333.8665625,
+        "vertices": 44,
+        "faces": 42,
+        "wrist_landmarks": "PASS",
+        "bbox_area_fraction": 0.671315
+      },
+      {
+        "pose": "low_deep",
+        "surface": "near_hand",
+        "area_units2": 333.8665625,
+        "vertices": 44,
+        "faces": 42,
+        "wrist_landmarks": "PASS",
+        "bbox_area_fraction": 0.671315
+      },
+      {
+        "pose": "walk_far_contact",
+        "surface": "far_hand",
+        "area_units2": 333.8665625,
+        "vertices": 44,
+        "faces": 42,
+        "wrist_landmarks": "PASS",
+        "bbox_area_fraction": 0.671315
+      },
+      {
+        "pose": "walk_far_contact",
+        "surface": "near_hand",
+        "area_units2": 333.8665625,
+        "vertices": 44,
+        "faces": 42,
+        "wrist_landmarks": "PASS",
+        "bbox_area_fraction": 0.671315
+      },
+      {
+        "pose": "walk_near_contact",
+        "surface": "far_hand",
+        "area_units2": 333.8665625,
+        "vertices": 44,
+        "faces": 42,
+        "wrist_landmarks": "PASS",
+        "bbox_area_fraction": 0.671315
+      },
+      {
+        "pose": "walk_near_contact",
+        "surface": "near_hand",
+        "area_units2": 333.8665625,
+        "vertices": 44,
+        "faces": 42,
+        "wrist_landmarks": "PASS",
+        "bbox_area_fraction": 0.671315
+      },
+      {
+        "pose": "walk_far_pass",
+        "surface": "far_hand",
+        "area_units2": 333.8665625,
+        "vertices": 44,
+        "faces": 42,
+        "wrist_landmarks": "PASS",
+        "bbox_area_fraction": 0.671315
+      },
+      {
+        "pose": "walk_far_pass",
+        "surface": "near_hand",
+        "area_units2": 333.8665625,
+        "vertices": 44,
+        "faces": 42,
+        "wrist_landmarks": "PASS",
+        "bbox_area_fraction": 0.671315
+      },
+      {
+        "pose": "walk_near_pass",
+        "surface": "far_hand",
+        "area_units2": 333.8665625,
+        "vertices": 44,
+        "faces": 42,
+        "wrist_landmarks": "PASS",
+        "bbox_area_fraction": 0.671315
+      },
+      {
+        "pose": "walk_near_pass",
+        "surface": "near_hand",
+        "area_units2": 333.8665625,
+        "vertices": 44,
+        "faces": 42,
+        "wrist_landmarks": "PASS",
+        "bbox_area_fraction": 0.671315
+      },
+      {
+        "pose": "jump_prepare",
+        "surface": "far_hand",
+        "area_units2": 333.8665625,
+        "vertices": 44,
+        "faces": 42,
+        "wrist_landmarks": "PASS",
+        "bbox_area_fraction": 0.671315
+      },
+      {
+        "pose": "jump_prepare",
+        "surface": "near_hand",
+        "area_units2": 333.8665625,
+        "vertices": 44,
+        "faces": 42,
+        "wrist_landmarks": "PASS",
+        "bbox_area_fraction": 0.671315
+      },
+      {
+        "pose": "jump_push",
+        "surface": "far_hand",
+        "area_units2": 333.8665625,
+        "vertices": 44,
+        "faces": 42,
+        "wrist_landmarks": "PASS",
+        "bbox_area_fraction": 0.671315
+      },
+      {
+        "pose": "jump_push",
+        "surface": "near_hand",
+        "area_units2": 333.8665625,
+        "vertices": 44,
+        "faces": 42,
+        "wrist_landmarks": "PASS",
+        "bbox_area_fraction": 0.671315
+      },
+      {
+        "pose": "jump_apex",
+        "surface": "far_hand",
+        "area_units2": 333.8665625,
+        "vertices": 44,
+        "faces": 42,
+        "wrist_landmarks": "PASS",
+        "bbox_area_fraction": 0.671315
+      },
+      {
+        "pose": "jump_apex",
+        "surface": "near_hand",
+        "area_units2": 333.8665625,
+        "vertices": 44,
+        "faces": 42,
+        "wrist_landmarks": "PASS",
+        "bbox_area_fraction": 0.671315
+      },
+      {
+        "pose": "jump_precontact",
+        "surface": "far_hand",
+        "area_units2": 333.8665625,
+        "vertices": 44,
+        "faces": 42,
+        "wrist_landmarks": "PASS",
+        "bbox_area_fraction": 0.671315
+      },
+      {
+        "pose": "jump_precontact",
+        "surface": "near_hand",
+        "area_units2": 333.8665625,
+        "vertices": 44,
+        "faces": 42,
+        "wrist_landmarks": "PASS",
+        "bbox_area_fraction": 0.671315
+      },
+      {
+        "pose": "jump_landing",
+        "surface": "far_hand",
+        "area_units2": 333.8665625,
+        "vertices": 44,
+        "faces": 42,
+        "wrist_landmarks": "PASS",
+        "bbox_area_fraction": 0.671315
+      },
+      {
+        "pose": "jump_landing",
+        "surface": "near_hand",
+        "area_units2": 333.8665625,
+        "vertices": 44,
+        "faces": 42,
+        "wrist_landmarks": "PASS",
+        "bbox_area_fraction": 0.671315
+      },
+      {
+        "pose": "interrupt_low_to_walk",
+        "surface": "far_hand",
+        "area_units2": 333.8665625,
+        "vertices": 44,
+        "faces": 42,
+        "wrist_landmarks": "PASS",
+        "bbox_area_fraction": 0.671315
+      },
+      {
+        "pose": "interrupt_low_to_walk",
+        "surface": "near_hand",
+        "area_units2": 333.8665625,
+        "vertices": 44,
+        "faces": 42,
+        "wrist_landmarks": "PASS",
+        "bbox_area_fraction": 0.671315
+      },
+      {
+        "pose": "interrupt_low_to_jump",
+        "surface": "far_hand",
+        "area_units2": 333.8665625,
+        "vertices": 44,
+        "faces": 42,
+        "wrist_landmarks": "PASS",
+        "bbox_area_fraction": 0.671315
+      },
+      {
+        "pose": "interrupt_low_to_jump",
+        "surface": "near_hand",
+        "area_units2": 333.8665625,
+        "vertices": 44,
+        "faces": 42,
+        "wrist_landmarks": "PASS",
+        "bbox_area_fraction": 0.671315
+      },
+      {
+        "pose": "range_compression",
+        "surface": "far_hand",
+        "area_units2": 333.8665625,
+        "vertices": 44,
+        "faces": 42,
+        "wrist_landmarks": "PASS",
+        "bbox_area_fraction": 0.671315
+      },
+      {
+        "pose": "range_compression",
+        "surface": "near_hand",
+        "area_units2": 333.8665625,
+        "vertices": 44,
+        "faces": 42,
+        "wrist_landmarks": "PASS",
+        "bbox_area_fraction": 0.671315
+      },
+      {
+        "pose": "range_reach",
+        "surface": "far_hand",
+        "area_units2": 333.8665625,
+        "vertices": 44,
+        "faces": 42,
+        "wrist_landmarks": "PASS",
+        "bbox_area_fraction": 0.671315
+      },
+      {
+        "pose": "range_reach",
+        "surface": "near_hand",
+        "area_units2": 333.8665625,
+        "vertices": 44,
+        "faces": 42,
+        "wrist_landmarks": "PASS",
+        "bbox_area_fraction": 0.671315
+      },
+      {
+        "pose": "idle_settle_left",
+        "surface": "far_hand",
+        "area_units2": 333.8665625,
+        "vertices": 44,
+        "faces": 42,
+        "wrist_landmarks": "PASS",
+        "bbox_area_fraction": 0.671315
+      },
+      {
+        "pose": "idle_settle_left",
+        "surface": "near_hand",
+        "area_units2": 333.8665625,
+        "vertices": 44,
+        "faces": 42,
+        "wrist_landmarks": "PASS",
+        "bbox_area_fraction": 0.671315
+      },
+      {
+        "pose": "idle_settle_right",
+        "surface": "far_hand",
+        "area_units2": 333.8665625,
+        "vertices": 44,
+        "faces": 42,
+        "wrist_landmarks": "PASS",
+        "bbox_area_fraction": 0.671315
+      },
+      {
+        "pose": "idle_settle_right",
+        "surface": "near_hand",
+        "area_units2": 333.8665625,
+        "vertices": 44,
+        "faces": 42,
+        "wrist_landmarks": "PASS",
+        "bbox_area_fraction": 0.671315
+      }
+    ],
+    "silhouette_regions_checked": 380,
+    "outer_bend": "9 quadratic samples through original joint extremum",
+    "inner_bend": "9 quadratic samples in same skin mesh, original fold faces retained"
+  },
+  "isolated_hand_checks": [
+    {
+      "pose": "bind",
+      "surface": "far_hand",
+      "transparent_bbox_pixels": 166,
+      "opaque_outside": 0
+    },
+    {
+      "pose": "bind",
+      "surface": "near_hand",
+      "transparent_bbox_pixels": 291,
+      "opaque_outside": 0
+    },
+    {
+      "pose": "idle_shift",
+      "surface": "far_hand",
+      "transparent_bbox_pixels": 179,
+      "opaque_outside": 0
+    },
+    {
+      "pose": "idle_shift",
+      "surface": "near_hand",
+      "transparent_bbox_pixels": 270,
+      "opaque_outside": 0
+    },
+    {
+      "pose": "low_mid",
+      "surface": "far_hand",
+      "transparent_bbox_pixels": 200,
+      "opaque_outside": 0
+    },
+    {
+      "pose": "low_mid",
+      "surface": "near_hand",
+      "transparent_bbox_pixels": 187,
+      "opaque_outside": 0
+    },
+    {
+      "pose": "low_deep",
+      "surface": "far_hand",
+      "transparent_bbox_pixels": 236,
+      "opaque_outside": 0
+    },
+    {
+      "pose": "low_deep",
+      "surface": "near_hand",
+      "transparent_bbox_pixels": 300,
+      "opaque_outside": 0
+    },
+    {
+      "pose": "walk_far_contact",
+      "surface": "far_hand",
+      "transparent_bbox_pixels": 179,
+      "opaque_outside": 0
+    },
+    {
+      "pose": "walk_far_contact",
+      "surface": "near_hand",
+      "transparent_bbox_pixels": 271,
+      "opaque_outside": 0
+    },
+    {
+      "pose": "walk_near_contact",
+      "surface": "far_hand",
+      "transparent_bbox_pixels": 238,
+      "opaque_outside": 0
+    },
+    {
+      "pose": "walk_near_contact",
+      "surface": "near_hand",
+      "transparent_bbox_pixels": 168,
+      "opaque_outside": 0
+    },
+    {
+      "pose": "walk_far_pass",
+      "surface": "far_hand",
+      "transparent_bbox_pixels": 303,
+      "opaque_outside": 0
+    },
+    {
+      "pose": "walk_far_pass",
+      "surface": "near_hand",
+      "transparent_bbox_pixels": 242,
+      "opaque_outside": 0
+    },
+    {
+      "pose": "walk_near_pass",
+      "surface": "far_hand",
+      "transparent_bbox_pixels": 144,
+      "opaque_outside": 0
+    },
+    {
+      "pose": "walk_near_pass",
+      "surface": "near_hand",
+      "transparent_bbox_pixels": 280,
+      "opaque_outside": 0
+    },
+    {
+      "pose": "jump_prepare",
+      "surface": "far_hand",
+      "transparent_bbox_pixels": 224,
+      "opaque_outside": 0
+    },
+    {
+      "pose": "jump_prepare",
+      "surface": "near_hand",
+      "transparent_bbox_pixels": 277,
+      "opaque_outside": 0
+    },
+    {
+      "pose": "jump_push",
+      "surface": "far_hand",
+      "transparent_bbox_pixels": 302,
+      "opaque_outside": 0
+    },
+    {
+      "pose": "jump_push",
+      "surface": "near_hand",
+      "transparent_bbox_pixels": 293,
+      "opaque_outside": 0
+    },
+    {
+      "pose": "jump_apex",
+      "surface": "far_hand",
+      "transparent_bbox_pixels": 169,
+      "opaque_outside": 0
+    },
+    {
+      "pose": "jump_apex",
+      "surface": "near_hand",
+      "transparent_bbox_pixels": 138,
+      "opaque_outside": 0
+    },
+    {
+      "pose": "jump_precontact",
+      "surface": "far_hand",
+      "transparent_bbox_pixels": 221,
+      "opaque_outside": 0
+    },
+    {
+      "pose": "jump_precontact",
+      "surface": "near_hand",
+      "transparent_bbox_pixels": 262,
+      "opaque_outside": 0
+    },
+    {
+      "pose": "jump_landing",
+      "surface": "far_hand",
+      "transparent_bbox_pixels": 258,
+      "opaque_outside": 0
+    },
+    {
+      "pose": "jump_landing",
+      "surface": "near_hand",
+      "transparent_bbox_pixels": 297,
+      "opaque_outside": 0
+    },
+    {
+      "pose": "interrupt_low_to_walk",
+      "surface": "far_hand",
+      "transparent_bbox_pixels": 220,
+      "opaque_outside": 0
+    },
+    {
+      "pose": "interrupt_low_to_walk",
+      "surface": "near_hand",
+      "transparent_bbox_pixels": 215,
+      "opaque_outside": 0
+    },
+    {
+      "pose": "interrupt_low_to_jump",
+      "surface": "far_hand",
+      "transparent_bbox_pixels": 188,
+      "opaque_outside": 0
+    },
+    {
+      "pose": "interrupt_low_to_jump",
+      "surface": "near_hand",
+      "transparent_bbox_pixels": 200,
+      "opaque_outside": 0
+    },
+    {
+      "pose": "range_compression",
+      "surface": "far_hand",
+      "transparent_bbox_pixels": 165,
+      "opaque_outside": 0
+    },
+    {
+      "pose": "range_compression",
+      "surface": "near_hand",
+      "transparent_bbox_pixels": 142,
+      "opaque_outside": 0
+    },
+    {
+      "pose": "range_reach",
+      "surface": "far_hand",
+      "transparent_bbox_pixels": 184,
+      "opaque_outside": 0
+    },
+    {
+      "pose": "range_reach",
+      "surface": "near_hand",
+      "transparent_bbox_pixels": 228,
+      "opaque_outside": 0
+    },
+    {
+      "pose": "idle_settle_left",
+      "surface": "far_hand",
+      "transparent_bbox_pixels": 180,
+      "opaque_outside": 0
+    },
+    {
+      "pose": "idle_settle_left",
+      "surface": "near_hand",
+      "transparent_bbox_pixels": 267,
+      "opaque_outside": 0
+    },
+    {
+      "pose": "idle_settle_right",
+      "surface": "far_hand",
+      "transparent_bbox_pixels": 165,
+      "opaque_outside": 0
+    },
+    {
+      "pose": "idle_settle_right",
+      "surface": "near_hand",
+      "transparent_bbox_pixels": 271,
+      "opaque_outside": 0
+    }
+  ],
+  "authored_alpha_subtraction": "PASS RAM-only synthetic mask reduces coverage and is not refilled",
+  "render_contract": "explicit v4 triangles/UV; reject flipped; skip 28 zero faces; conservative internal footprint clipped to each accepted anatomical contour before composition; 2x BOX; optional separate authored alpha can subtract; attempt02 RGB only; no pose patches",
+  "outputs_sha256": {
+    "hand-contours.png": "68984034aa98a78d6b6659b5f791e44291539b6c6c0036f78cbbc5fea41dd839",
+    "joint-controls.png": "a7af8fc33e0751719629f99aa877a0335a6b7eeabb1b8fd527f8e8089f0f2121",
+    "rgba/bind.png": "e70cd156995869cc783b89e1786d9637c5bf771ae630d68b48d3dc96e7086ac2",
+    "light/bind.png": "e88ea18ea85ec7af6dcbe7b8e0b16277c2f63d415bde3980a2ad2af234757330",
+    "dark/bind.png": "985b298d95c17f00b614abed5b261470ff3fb7debcad628356744967af11fcf8",
+    "rgba/idle_shift.png": "99b22707d543c8eb37acb871d69c11476938c39837e00e1ce6a4c989a4018919",
+    "light/idle_shift.png": "a5c239ea09b9056d36ec4e36b087654760a39ddedeb2f4e9f7590639e1869603",
+    "dark/idle_shift.png": "b5d33dce39b17bcfc09b060f0db379e9760ee3119ad5a88172b108298b549399",
+    "rgba/low_mid.png": "16ac052044c49f07ee647dbc9a361974996015561790fadac2f9eb95de7a7855",
+    "light/low_mid.png": "27238380322f1c3c60e567132c770aeafdf2f657bd41760ca32e7e6a1aa5b478",
+    "dark/low_mid.png": "0640a86c8e88207d932991c304719e7549341cb858ad8986809a822ddd0ebfd2",
+    "rgba/low_deep.png": "9b4a289e8050e291095871a68e2f89a467273865b2d16c1e304b8c18fed5162b",
+    "light/low_deep.png": "298d23ebc8b74051eaa3b3836c3a525b445164e137c5e2597d6a1dc6ad09e666",
+    "dark/low_deep.png": "92ee083634fadadaea2ce6b592690a8bf3780a7e1fd5a7c33b6289fc16638178",
+    "rgba/walk_far_contact.png": "8388a4c7b3a293a25cc03ac95dc0ea1a0cb3a7cc5b2400d93f98c06a365faf0f",
+    "light/walk_far_contact.png": "49e1484c7359f3e928d25b0fbf01e59393768357453d64373db0a87a297e7535",
+    "dark/walk_far_contact.png": "7874d89b72bf1a14d5679f096f15fd0991fcf5b7935cfb756413ed8f24c51501",
+    "rgba/walk_near_contact.png": "a29fe7f941f44008bb2ebaef9d3f8a65f97015cc5fc4435699e60d0430f2b380",
+    "light/walk_near_contact.png": "6e5ee59d8d8d1303335b19934e99dfdb53a8da2ea5e77c9c802a9e4f7a025271",
+    "dark/walk_near_contact.png": "d04fb118aa1d1589078614463d24c03e38412ce859b20be737642be6e0c76b0b",
+    "rgba/walk_far_pass.png": "8e25ac52ded39daf5529c8accf8ee2424e82539756cb38dfe522226f3e427e43",
+    "light/walk_far_pass.png": "197e0c5c3d16450ea47bad2b5e6470217b0caa8130739a7b75234bdb7a5d3570",
+    "dark/walk_far_pass.png": "89f20b85eb58331e5fd1e75f9c3a31418a16deb4c2ef1a4864aa86bb8b17394c",
+    "rgba/walk_near_pass.png": "3ffc8be4ddd0198027e6bb1d3a2d0ecacfa072877d3ccf6d09d4256f462377c5",
+    "light/walk_near_pass.png": "ee6d3dbf23930daa0e6ec6ddf4cf777271d30fa69a0f359765b2e94f7d75b0aa",
+    "dark/walk_near_pass.png": "12c0d8d7da550d9a363e64cd608b36c0dc5c7c88d1f04190903564ee50b95141",
+    "rgba/jump_prepare.png": "fb4381b4c9a457d62b2578614dea28e702e4cd3e7654ac786841f26254e0eecc",
+    "light/jump_prepare.png": "d98726a13c74af3c5baec379169a092f22087071209db02c79f1e1e24d6c1279",
+    "dark/jump_prepare.png": "58ba3978658bfc72027c1b4a37a5d7bc6fe5e41e3ce83c27dccecd40a715faf8",
+    "rgba/jump_push.png": "ec5797279586aa22cb04b538c828e13a23c22c6e5acdd5d9ee7d935185a0dbaf",
+    "light/jump_push.png": "4988212c481946a9f2f66ceb0e28ee64576b9743e0302ef6470855d23e28662d",
+    "dark/jump_push.png": "0a63ae6301062a14e4614791e2ca41ba2f272fb7ff684be640674cbccdcd506b",
+    "rgba/jump_apex.png": "9dbca649574441e879adb5498c92f0cd46b96fe4defb90b17d6567b5d0e636e8",
+    "light/jump_apex.png": "991224a65d7d254681b92eb40985c4edccd6be0eac5bfc93ffccdf3f05114dec",
+    "dark/jump_apex.png": "66c813e836f43436a39923c15289b2359085341764c055d4d3ffdb14037e86b6",
+    "rgba/jump_precontact.png": "c5f9e13034fc9cb7469a7784c4b9c66bba27656c04f46c1b3873221030fa1db8",
+    "light/jump_precontact.png": "67fea65e5179d3d3747b0ebc0bcee22aa8ac179d3c22eebf7c4f22bc1e6efeb5",
+    "dark/jump_precontact.png": "9511d6230dc86803acb86fea39c4dc23ce8effe1f98ad38f80b828cbfaab38fb",
+    "rgba/jump_landing.png": "f657e374ce41face2dcf2cf5236727d0dcb86a810e946256797da2be9441caa8",
+    "light/jump_landing.png": "4cf621c72f636b06649eae525e1e79c3a2800ae5a5bd582de25573ae03164e06",
+    "dark/jump_landing.png": "04e33fcc90a28fb986005d500de2dd5378696b26a14faef4b1ea0863de200ed5",
+    "rgba/interrupt_low_to_walk.png": "c5ca1625242d0d0f04323bfc22db881e470b3a81f75277a844002928540213de",
+    "light/interrupt_low_to_walk.png": "e157b5551ac9f92b0a5279de81ddb369ed4c8c9332bb19907d5d7ac0e6b5e6c3",
+    "dark/interrupt_low_to_walk.png": "892d028dd1053a4bf569d0c7d877a50a0992e3399edfe40a6a712cdd0fe080c6",
+    "rgba/interrupt_low_to_jump.png": "36f32a623aa8d7a4109792603065c9c6c7144913f8d0a7343545df44486e2876",
+    "light/interrupt_low_to_jump.png": "a0c415ce5ed594d125e2703f99e71465f2a10e5ab7840634dee2ba9ba8fd1526",
+    "dark/interrupt_low_to_jump.png": "5182762ee8477e214acfef4c0ce8adf44889320d64c2f7ba0365aac39a3607ad",
+    "rgba/range_compression.png": "d1286cd641f341df58149b5016ec7d4888dfa76bbebb6fe92fdb3a09f3390b6e",
+    "light/range_compression.png": "937d05655556c047129f5cbca0ca8bf5fd752888cd303037208438c9b4f118b9",
+    "dark/range_compression.png": "bff697c7876a26edfaec5f30042460050d5b71dcae1a4fcd901c7cdeca1e5b23",
+    "rgba/range_reach.png": "826e7d44f7da64ea01aaa189920d8655fc8df31c3ab72a79c74fa63978dcbf0f",
+    "light/range_reach.png": "47b3b9cbfa7359ceab42fbfe2e772ef3ab7581595421c3f48d36a20609297104",
+    "dark/range_reach.png": "d0de3f487ded95e847e0906c61fee05f8e91bdb00f5143948d884d4049d6d000",
+    "rgba/idle_settle_left.png": "367c3bb3cdc36cbea7f60bf8b3038bf2bff16e5e8891c59eacdcd6dd0cbea528",
+    "light/idle_settle_left.png": "112e19b82014d4b0bbec7aa0223ae1c75bf582cf1676d304814237a59be4aaa9",
+    "dark/idle_settle_left.png": "df2f93385705a963981dbe1319e7f4f128b2dd277cc19f4a36e63b8f5a50cac1",
+    "rgba/idle_settle_right.png": "5801602a8afda53031e52854df50f39836f1534ecf788d5125bcdb50ec67110d",
+    "light/idle_settle_right.png": "49701649c9bffbbe71ee9e7c8251d7e67355f2b49558483cce3551d86ac119f2",
+    "dark/idle_settle_right.png": "18a0ee578cb886a5374d2e612525bf6e0e517525876656d332a02a647c15b928",
+    "light-sheet.png": "b5fdb7891b7a1334bd1169d1124276f3e03d5813e06e8765c5fd3646a0d0feed",
+    "dark-sheet.png": "d3abf6e2159fdca18fb7fd688b0b65e7473eeeacc1e79d9bdd9583a9b39e69e2",
+    "low-deep-x2.png": "c02652dead83851cbdbeb9dd70e285c02ed629d7576f24fff3e21c6a1a045522",
+    "landing-x2.png": "eaa74a503543d79edafc8a28f0a15c1274889d3366101f7d63ade5aecdc104a8"
+  },
+  "clean_art_attempt03": "FORBIDDEN pending two v4 reviews"
+}

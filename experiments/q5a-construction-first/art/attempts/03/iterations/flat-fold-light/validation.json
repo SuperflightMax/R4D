@@ -1,0 +1,477 @@
+{
+  "status": "ART_ATTEMPT03_REQUIRES_CONCEPT_BUILDER_REVIEW",
+  "construction_sha256": "7d06ea4636b49c718dad5e9d9f07000d09fa7e5cf105ec325abb84742bfdba26",
+  "additional_imagegen_calls": 0,
+  "geometry": {
+    "inversions": 0,
+    "self_intersections": 0,
+    "self_intersections_by_surface": {},
+    "declared_zero_fold_faces": 28
+  },
+  "protected_previous_files": 162,
+  "dimensions_alpha_ICC_pivots": "PASS",
+  "pose_checks": [
+    {
+      "pose": "bind",
+      "interior_gaps": 0,
+      "opaque_outside": 0,
+      "full_x2_body_gaps": 0,
+      "full_x2_opaque_outside": 0
+    },
+    {
+      "pose": "idle_shift",
+      "interior_gaps": 0,
+      "opaque_outside": 0,
+      "full_x2_body_gaps": 0,
+      "full_x2_opaque_outside": 0
+    },
+    {
+      "pose": "low_mid",
+      "interior_gaps": 0,
+      "opaque_outside": 0,
+      "full_x2_body_gaps": 0,
+      "full_x2_opaque_outside": 0
+    },
+    {
+      "pose": "low_deep",
+      "interior_gaps": 0,
+      "opaque_outside": 0,
+      "full_x2_body_gaps": 0,
+      "full_x2_opaque_outside": 0
+    },
+    {
+      "pose": "walk_far_contact",
+      "interior_gaps": 0,
+      "opaque_outside": 0,
+      "full_x2_body_gaps": 0,
+      "full_x2_opaque_outside": 0
+    },
+    {
+      "pose": "walk_near_contact",
+      "interior_gaps": 0,
+      "opaque_outside": 0,
+      "full_x2_body_gaps": 0,
+      "full_x2_opaque_outside": 0
+    },
+    {
+      "pose": "walk_far_pass",
+      "interior_gaps": 0,
+      "opaque_outside": 0,
+      "full_x2_body_gaps": 0,
+      "full_x2_opaque_outside": 0
+    },
+    {
+      "pose": "walk_near_pass",
+      "interior_gaps": 0,
+      "opaque_outside": 0,
+      "full_x2_body_gaps": 0,
+      "full_x2_opaque_outside": 0
+    },
+    {
+      "pose": "jump_prepare",
+      "interior_gaps": 0,
+      "opaque_outside": 0,
+      "full_x2_body_gaps": 0,
+      "full_x2_opaque_outside": 0
+    },
+    {
+      "pose": "jump_push",
+      "interior_gaps": 0,
+      "opaque_outside": 0,
+      "full_x2_body_gaps": 0,
+      "full_x2_opaque_outside": 0
+    },
+    {
+      "pose": "jump_apex",
+      "interior_gaps": 0,
+      "opaque_outside": 0,
+      "full_x2_body_gaps": 0,
+      "full_x2_opaque_outside": 0
+    },
+    {
+      "pose": "jump_precontact",
+      "interior_gaps": 0,
+      "opaque_outside": 0,
+      "full_x2_body_gaps": 0,
+      "full_x2_opaque_outside": 0
+    },
+    {
+      "pose": "jump_landing",
+      "interior_gaps": 0,
+      "opaque_outside": 0,
+      "full_x2_body_gaps": 0,
+      "full_x2_opaque_outside": 0
+    },
+    {
+      "pose": "interrupt_low_to_walk",
+      "interior_gaps": 0,
+      "opaque_outside": 0,
+      "full_x2_body_gaps": 0,
+      "full_x2_opaque_outside": 0
+    },
+    {
+      "pose": "interrupt_low_to_jump",
+      "interior_gaps": 0,
+      "opaque_outside": 0,
+      "full_x2_body_gaps": 0,
+      "full_x2_opaque_outside": 0
+    },
+    {
+      "pose": "range_compression",
+      "interior_gaps": 0,
+      "opaque_outside": 0,
+      "full_x2_body_gaps": 0,
+      "full_x2_opaque_outside": 0
+    },
+    {
+      "pose": "range_reach",
+      "interior_gaps": 0,
+      "opaque_outside": 0,
+      "full_x2_body_gaps": 0,
+      "full_x2_opaque_outside": 0
+    },
+    {
+      "pose": "idle_settle_left",
+      "interior_gaps": 0,
+      "opaque_outside": 0,
+      "full_x2_body_gaps": 0,
+      "full_x2_opaque_outside": 0
+    },
+    {
+      "pose": "idle_settle_right",
+      "interior_gaps": 0,
+      "opaque_outside": 0,
+      "full_x2_body_gaps": 0,
+      "full_x2_opaque_outside": 0
+    }
+  ],
+  "authored_hand_alpha_checks": [
+    {
+      "pose": "bind",
+      "surface": "far_hand",
+      "subtracted_pixels": 10,
+      "alpha_not_refilled": true
+    },
+    {
+      "pose": "bind",
+      "surface": "near_hand",
+      "subtracted_pixels": 11,
+      "alpha_not_refilled": true
+    },
+    {
+      "pose": "idle_shift",
+      "surface": "far_hand",
+      "subtracted_pixels": 9,
+      "alpha_not_refilled": true
+    },
+    {
+      "pose": "idle_shift",
+      "surface": "near_hand",
+      "subtracted_pixels": 10,
+      "alpha_not_refilled": true
+    },
+    {
+      "pose": "low_mid",
+      "surface": "far_hand",
+      "subtracted_pixels": 11,
+      "alpha_not_refilled": true
+    },
+    {
+      "pose": "low_mid",
+      "surface": "near_hand",
+      "subtracted_pixels": 10,
+      "alpha_not_refilled": true
+    },
+    {
+      "pose": "low_deep",
+      "surface": "far_hand",
+      "subtracted_pixels": 12,
+      "alpha_not_refilled": true
+    },
+    {
+      "pose": "low_deep",
+      "surface": "near_hand",
+      "subtracted_pixels": 10,
+      "alpha_not_refilled": true
+    },
+    {
+      "pose": "walk_far_contact",
+      "surface": "far_hand",
+      "subtracted_pixels": 10,
+      "alpha_not_refilled": true
+    },
+    {
+      "pose": "walk_far_contact",
+      "surface": "near_hand",
+      "subtracted_pixels": 11,
+      "alpha_not_refilled": true
+    },
+    {
+      "pose": "walk_near_contact",
+      "surface": "far_hand",
+      "subtracted_pixels": 11,
+      "alpha_not_refilled": true
+    },
+    {
+      "pose": "walk_near_contact",
+      "surface": "near_hand",
+      "subtracted_pixels": 11,
+      "alpha_not_refilled": true
+    },
+    {
+      "pose": "walk_far_pass",
+      "surface": "far_hand",
+      "subtracted_pixels": 11,
+      "alpha_not_refilled": true
+    },
+    {
+      "pose": "walk_far_pass",
+      "surface": "near_hand",
+      "subtracted_pixels": 11,
+      "alpha_not_refilled": true
+    },
+    {
+      "pose": "walk_near_pass",
+      "surface": "far_hand",
+      "subtracted_pixels": 9,
+      "alpha_not_refilled": true
+    },
+    {
+      "pose": "walk_near_pass",
+      "surface": "near_hand",
+      "subtracted_pixels": 9,
+      "alpha_not_refilled": true
+    },
+    {
+      "pose": "jump_prepare",
+      "surface": "far_hand",
+      "subtracted_pixels": 12,
+      "alpha_not_refilled": true
+    },
+    {
+      "pose": "jump_prepare",
+      "surface": "near_hand",
+      "subtracted_pixels": 11,
+      "alpha_not_refilled": true
+    },
+    {
+      "pose": "jump_push",
+      "surface": "far_hand",
+      "subtracted_pixels": 12,
+      "alpha_not_refilled": true
+    },
+    {
+      "pose": "jump_push",
+      "surface": "near_hand",
+      "subtracted_pixels": 10,
+      "alpha_not_refilled": true
+    },
+    {
+      "pose": "jump_apex",
+      "surface": "far_hand",
+      "subtracted_pixels": 11,
+      "alpha_not_refilled": true
+    },
+    {
+      "pose": "jump_apex",
+      "surface": "near_hand",
+      "subtracted_pixels": 9,
+      "alpha_not_refilled": true
+    },
+    {
+      "pose": "jump_precontact",
+      "surface": "far_hand",
+      "subtracted_pixels": 10,
+      "alpha_not_refilled": true
+    },
+    {
+      "pose": "jump_precontact",
+      "surface": "near_hand",
+      "subtracted_pixels": 11,
+      "alpha_not_refilled": true
+    },
+    {
+      "pose": "jump_landing",
+      "surface": "far_hand",
+      "subtracted_pixels": 11,
+      "alpha_not_refilled": true
+    },
+    {
+      "pose": "jump_landing",
+      "surface": "near_hand",
+      "subtracted_pixels": 10,
+      "alpha_not_refilled": true
+    },
+    {
+      "pose": "interrupt_low_to_walk",
+      "surface": "far_hand",
+      "subtracted_pixels": 11,
+      "alpha_not_refilled": true
+    },
+    {
+      "pose": "interrupt_low_to_walk",
+      "surface": "near_hand",
+      "subtracted_pixels": 8,
+      "alpha_not_refilled": true
+    },
+    {
+      "pose": "interrupt_low_to_jump",
+      "surface": "far_hand",
+      "subtracted_pixels": 9,
+      "alpha_not_refilled": true
+    },
+    {
+      "pose": "interrupt_low_to_jump",
+      "surface": "near_hand",
+      "subtracted_pixels": 9,
+      "alpha_not_refilled": true
+    },
+    {
+      "pose": "range_compression",
+      "surface": "far_hand",
+      "subtracted_pixels": 10,
+      "alpha_not_refilled": true
+    },
+    {
+      "pose": "range_compression",
+      "surface": "near_hand",
+      "subtracted_pixels": 13,
+      "alpha_not_refilled": true
+    },
+    {
+      "pose": "range_reach",
+      "surface": "far_hand",
+      "subtracted_pixels": 10,
+      "alpha_not_refilled": true
+    },
+    {
+      "pose": "range_reach",
+      "surface": "near_hand",
+      "subtracted_pixels": 9,
+      "alpha_not_refilled": true
+    },
+    {
+      "pose": "idle_settle_left",
+      "surface": "far_hand",
+      "subtracted_pixels": 10,
+      "alpha_not_refilled": true
+    },
+    {
+      "pose": "idle_settle_left",
+      "surface": "near_hand",
+      "subtracted_pixels": 10,
+      "alpha_not_refilled": true
+    },
+    {
+      "pose": "idle_settle_right",
+      "surface": "far_hand",
+      "subtracted_pixels": 13,
+      "alpha_not_refilled": true
+    },
+    {
+      "pose": "idle_settle_right",
+      "surface": "near_hand",
+      "subtracted_pixels": 11,
+      "alpha_not_refilled": true
+    }
+  ],
+  "surface_count": 15,
+  "retouched_surfaces": [
+    "far_leg_skin",
+    "far_shorts_leg",
+    "near_leg_skin",
+    "near_shorts_leg",
+    "pelvis_shorts",
+    "far_arm_skin",
+    "far_hand",
+    "near_arm_skin",
+    "near_hand"
+  ],
+  "note": "numeric tests do not certify absence of painted seams; visual review is separate",
+  "outputs_sha256": {
+    "textures/far_shoe.png": "602390c123a693d47de17cef4503e64250f44fd1fcfc1c3e1f00c7823a56b85b",
+    "textures/far_leg_skin.png": "0c30a2ad837ff3c5a2fac41ccbed3fa9aa8b0ee9de55fde6a2a53e2e541be636",
+    "textures/far_shorts_leg.png": "30b0506f8fbc511e3b9257ea2c1a04cdd74de349bb614b7aecdb3425086208b5",
+    "textures/near_shoe.png": "46f0284d6552b1cb7d748cd8324fbd9ef83cfc9c12c8f06dacb0d23962b9e1f0",
+    "textures/near_leg_skin.png": "223722df7639451bc00c152e3a0a771b439f228fa9600cf1e0d184f2922d987f",
+    "textures/near_shorts_leg.png": "94111064ccd62c267cbeacba044eeef53dfd18690899ea3dcc0059913748ca5a",
+    "textures/pelvis_shorts.png": "856cce33bfa01d3d0fe0f4f43dafee240455c003d207773428362f3fffd75ec4",
+    "textures/far_arm_skin.png": "f4a718d5781054c74fdc9d1f46b11e0aaa8e23afd0eb26fb48c260e886ec6889",
+    "textures/far_hand.png": "bc33731fc4e425a50ba431c273e909e8e3312776660f09bb0f82026a4e42864a",
+    "textures/torso_top.png": "6fd9875fdd92455d272dc97126c8f57977d9e77e79b15f894351ea075449d63c",
+    "textures/neck_skin.png": "d8f63c70b7c07345c69894955763166e9e984cd4ef324cce374642bca0d1d10e",
+    "textures/head_face.png": "5655c68671c7c7417a81c33724020be06ddca790a6079b0a8cb9ed03ebfbb9c6",
+    "textures/near_arm_skin.png": "1e41b203b6a590898e7f0faca53260d2a81213946879d26f1577d20ff566c348",
+    "textures/near_hand.png": "23cda3627d01c9163a5ff5cd53529d50d30e608e4399762f904974d8ce9f6d72",
+    "textures/hair.png": "191fe02375136d55495e3601244b6e3f6623048018eabc75e107fe804e720f98",
+    "silhouette-alpha/far_hand.png": "86f6c94b7cf3d1faa2097c30b365582ea79f349da3d0582ee69ea1b8fc1f2588",
+    "silhouette-alpha/near_hand.png": "b7d3dc8ec1527eefea2429528a634ba0b4bfd3142b6c56f411d5b3cd0cf8cfb8",
+    "preview/rgba/bind.png": "13a329f0f2c50bc2e8eacdf50fba164896b582b9a66719e95e5b85288243e4e7",
+    "preview/light/bind.png": "817788b24e9f0448f56feedeeebbc2cacce5f62e4e12794e4e3c7cfcf55defb5",
+    "preview/dark/bind.png": "4d6865fcf8a568434ff35ed3d1670a43a19dc9fb32617cead5053d78462375a1",
+    "preview/rgba/idle_shift.png": "a29d7eac8454e4d2e5ae1b4811e1a0fc7c6d8deb195f0e0252e934094a9e0265",
+    "preview/light/idle_shift.png": "5882b4e92036d2c8cbfeb95a6939b8ba42507fb35656a6602dcc25ba6baf1b58",
+    "preview/dark/idle_shift.png": "fba79cd6d7d389324186ae82fa9753026898e32cba854ad183d5d84f0c49aa4f",
+    "preview/rgba/low_mid.png": "abe2525b7889f23c08b7d21f400712ab079f57ca3ce6aa2128710152ea72be00",
+    "preview/light/low_mid.png": "7723cf59abb99f7d1d55ce12d57011f404b456489d16f863b35821dbe0cb0707",
+    "preview/dark/low_mid.png": "c3ec917aabe668fb89403483af59ee5c79622bab9fba848d2c0d01a7599379d8",
+    "preview/rgba/low_deep.png": "cbd831e837d5ca7e97b715b3c327a3983466d9ff6aa5e55c3a6ff1ae261eb6cc",
+    "preview/light/low_deep.png": "65682912ccce1cf44615574c1478046fa0b3f96aa472cd4c8f265df007c99b29",
+    "preview/light/low_deep-x2.png": "69a90388a74bc2b500776d592351125363f85ddd7b762f22953eccb167dbeaa5",
+    "preview/dark/low_deep.png": "7d26019b935d6f902b7451df785b123fe1f06a763a7fb4891f91b9be6cf02441",
+    "preview/dark/low_deep-x2.png": "564683de7ea467a46124d726608ab8ae21d462e0cc49ce83910bc73bc9149968",
+    "preview/rgba/walk_far_contact.png": "04999e56d1d817e703adc0732fe110e2248c6b12108a6571f45cbf1404623a40",
+    "preview/light/walk_far_contact.png": "19e8717e5f554dda285776912ca3a3f28de77c0aff18eeb5d79a41c8b4eae13c",
+    "preview/dark/walk_far_contact.png": "1a0196f7c8eb5eee0ed6f4103413cb05dd0e3b75351ccac482fcea019d5b8334",
+    "preview/rgba/walk_near_contact.png": "48c6fd0813ee65285cefc587d5132751855b4b86ab9cae894c217d6cb7b21af7",
+    "preview/light/walk_near_contact.png": "2779a541080c52a1723814530747c9a37aefcb9a6e092a1640b313f05ab50a2d",
+    "preview/dark/walk_near_contact.png": "545a07f2eab80cfe39c90d3d8308654d8eb8a497e8a98b679d0b535384373d82",
+    "preview/rgba/walk_far_pass.png": "0395a7b0169cdd721606190dfb0eb37ee5e06179a2f7f3f060e6c8b7bb167027",
+    "preview/light/walk_far_pass.png": "00e0463b7788a4dc0e4fbd17cdafc09402f7053e884c0214286160cc93ccb394",
+    "preview/dark/walk_far_pass.png": "2f7db52ae1acdde9cc2e4d34ec60180da82af9b21ac60d91575a5b699c9df636",
+    "preview/rgba/walk_near_pass.png": "11e6597d7613744a1b5b693e9235dd75cb5508e855273d466e61d4532f88f26a",
+    "preview/light/walk_near_pass.png": "543c4103a54c75533ac650ae65f4e48dd46a1453c1079a719e64e228665fea9a",
+    "preview/dark/walk_near_pass.png": "969f83734c15c87b219bdbbfc5b1d6fe52325d40f7e2b584adc1f00485762e0c",
+    "preview/rgba/jump_prepare.png": "6445cc8d02465cffcb779ac8dff319f2fcbaa3ebe6ebcb85d5399f646472bd7e",
+    "preview/light/jump_prepare.png": "c8aac9ffb4db81b01ffa6dae5f10c83373e9f2b11aa45c9f0e386827189ff0d1",
+    "preview/dark/jump_prepare.png": "945e6bc8312649355b9e04fa068887181f39f92bf83ade72235b2ae85dc5af30",
+    "preview/rgba/jump_push.png": "bbccc8e39e15d583895a3c06a2db7611e11701c080174f3d3c4c5bdca8b96094",
+    "preview/light/jump_push.png": "bef4929391f8dc9955c92feeeeb4d293b81ec1f52ccb27f29025f5236da27514",
+    "preview/dark/jump_push.png": "13af027c11b53e4244858a5270d4eb1988e76606a1e43bd7bb57b9e2d5925156",
+    "preview/rgba/jump_apex.png": "a9d0f5cbd006c0d95cdfc1c4bc96d42ef3d970483918cfc9cf9fb1a2013a15f3",
+    "preview/light/jump_apex.png": "ce4809aedd2936c366f1eaed85dec0f8657abeea6cf6ad99e1bd1cb68cac024a",
+    "preview/dark/jump_apex.png": "c5aa0707b65169785ea488b0fe708eaec2e7b425dedffc91f68a9da66fbd4e5e",
+    "preview/rgba/jump_precontact.png": "ed16d5b3173e8391feebce9851aa59051532f35a818f12ab1fffb4efa25d7e4c",
+    "preview/light/jump_precontact.png": "b7a2a6084120c20b691e0fb95fbddf11f85a78d0b509868f94c7ab1e800943f7",
+    "preview/dark/jump_precontact.png": "c057fd9b30e4ca107ef210860dc7ba9fb2dcc650f42c0e102dada230bcc83f76",
+    "preview/rgba/jump_landing.png": "fccd5811e27f168d0021aff80d2862318cb71d1dff5a8285cf7ef36b0ff69901",
+    "preview/light/jump_landing.png": "520c8674486a76721bfd013cd1b9ff01296e7ce32a2056ac5507f958876a323f",
+    "preview/light/jump_landing-x2.png": "06142f7846c0b4dfe7676a133b870bab9dd2e9c3eae360e16e7147f265da04a0",
+    "preview/dark/jump_landing.png": "02697a95d8a8e196fb14d2422f046289f4f8f1ac3557b3d98334e5148e9aceb5",
+    "preview/dark/jump_landing-x2.png": "5e9badea8460a1e701353eaddff88ac92e2bd768e51d9a48bca2dfe379cd3f41",
+    "preview/rgba/interrupt_low_to_walk.png": "38d8234f922ab91397310edeec3eb93183a73c059fe5faec04f83a7e438b6933",
+    "preview/light/interrupt_low_to_walk.png": "f139363fc6b2b415f5c5e472d791b565e57f867ba406d2a73db80cad73ecf865",
+    "preview/dark/interrupt_low_to_walk.png": "f849e5c06a076bea59ba17f13dcb48d8a12099ec4708ea180a40fe8fc954f379",
+    "preview/rgba/interrupt_low_to_jump.png": "d0ab680b170e95a3f618ad584f984d6f884ff7590654c9a7c4c36185e9ba307c",
+    "preview/light/interrupt_low_to_jump.png": "7133e65cd5d3605c86a55aa3fb0a2a9705e8f8f36ef2dcc04b0205805d4fff70",
+    "preview/dark/interrupt_low_to_jump.png": "85bcb9dbd2514dc395130c790130d48cfd2417939940cee1a21b6f2b87452474",
+    "preview/rgba/range_compression.png": "dda483e222ac61ee004585555d9290774876b872df924770aa9072ca48aef113",
+    "preview/light/range_compression.png": "9196fb6dfcb097ac9234188b1cfef2eaa88e354d69c3dd116f26fabd77539aae",
+    "preview/light/range_compression-x2.png": "7def12e1bfd287513b9da623a2abef974320ec3a39cacd06bf97b9cacfbc6f1a",
+    "preview/dark/range_compression.png": "e24e91738d7c78aa3463862f35001d3c1ed0d1311ecc129332d8fe6429245352",
+    "preview/dark/range_compression-x2.png": "fa771763c000a82f99ce3b8cb6c988672db13ca63c7602bdaf3aee4dd6b6f330",
+    "preview/rgba/range_reach.png": "34fdb358e54fbd85c5397626141458d46764e17e1ec9ca62994de75679287660",
+    "preview/light/range_reach.png": "7a1b0538879076ac367e4378b20cc1d6ef9e4ec3b1db0408d6b3306b68e72cc9",
+    "preview/dark/range_reach.png": "066e5768e1ea7ddeb472257e64173c8d5fde353fd920fe093a094e1b54415399",
+    "preview/rgba/idle_settle_left.png": "377b33f3c4697db6543bab3bd3dcae83df1ccd4eede95765ad0758764f7f56c9",
+    "preview/light/idle_settle_left.png": "cedbf0522f78dc2a45995ea60dea5680938a4d2ee728ef436ade44c6b71ee118",
+    "preview/dark/idle_settle_left.png": "21baa9d47b7f836397d8d5df8fcb1c8ad7f6cc3ba1ebbd5cb7379f24c2762996",
+    "preview/rgba/idle_settle_right.png": "1bd0abc108b83923bb22a4b790de93ab5219464bd5a3a97982cf7db983414638",
+    "preview/light/idle_settle_right.png": "81af772bc143e7aa88521b33c0dec3b13d0ef3488e91486bb456e59b98d370f7",
+    "preview/dark/idle_settle_right.png": "fcd163d989b7a9be30a756604aef74bbf35eb7a8eda2d0f2a88899de2bbc81dd",
+    "preview/light-sheet-1x.png": "9441c4a4c8b00a4650bbda914a7ace10fcb0e7e386a568ca9e4c307c84f5c8c6",
+    "preview/light-sheet-2x.png": "70373e51d8f5f0623d705da84096cc8e6fa7821bf3cf4b4e9ddc887810343fb8",
+    "preview/dark-sheet-1x.png": "adcc79db0bcf4301c4282bb9e8966809a6ed9f62b62e0013baaac9b6a2aa5992",
+    "preview/dark-sheet-2x.png": "b0cc3d2547bafd26f0bb58620942fbdf944716da8abc6a58a0b25f28a6c11a88"
+  }
+}

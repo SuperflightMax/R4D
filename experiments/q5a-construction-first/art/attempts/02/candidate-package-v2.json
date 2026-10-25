@@ -1,0 +1,466 @@
+{
+  "status": "ART_READY_FOR_CONCEPT_AND_BUILDER_REVIEW",
+  "construction_sha256": "70f324aa7126f7aea0eca24e42aa370b18bb48d070810f3819a5cab16116e092",
+  "gate_commit": "d3bdf8f1cffebe2179805eeb54a8a36faab08805",
+  "method": "built-in generated atlas + deterministic registration, mask cleanup, local clone and fold smoothing",
+  "surfaces": [
+    {
+      "id": "far_leg_skin",
+      "file": "attempts\\02\\textures\\far_leg_skin.png",
+      "source": "nela-atlas-02.png",
+      "source_size": [
+        1024,
+        1024
+      ],
+      "pivot_source_px": [
+        504.0,
+        496.0
+      ],
+      "sha256": "449d93be1449c1631dc9da8b2a090aededebbe52113a8a7c9946b93b1a69dc1e",
+      "alpha_extrema": [
+        0,
+        255
+      ],
+      "cell": 0,
+      "raw_cell_bbox": [
+        0,
+        0,
+        314,
+        314
+      ],
+      "raw_material_y_range": [
+        31,
+        313
+      ],
+      "method": "rowwise generated-pixel transport to immutable source polygon"
+    },
+    {
+      "id": "near_leg_skin",
+      "file": "attempts\\02\\textures\\near_leg_skin.png",
+      "source": "nela-atlas-02.png",
+      "source_size": [
+        1024,
+        1024
+      ],
+      "pivot_source_px": [
+        520.0,
+        496.0
+      ],
+      "sha256": "7a605c6a478fc2aaeb5a940782d8915b4598b84a837a37fc115a802eae4ac780",
+      "alpha_extrema": [
+        0,
+        255
+      ],
+      "cell": 1,
+      "raw_cell_bbox": [
+        314,
+        0,
+        627,
+        314
+      ],
+      "raw_material_y_range": [
+        31,
+        313
+      ],
+      "method": "rowwise generated-pixel transport to immutable source polygon"
+    },
+    {
+      "id": "far_arm_skin",
+      "file": "attempts\\02\\textures\\far_arm_skin.png",
+      "source": "nela-atlas-02.png",
+      "source_size": [
+        1024,
+        1024
+      ],
+      "pivot_source_px": [
+        500.0,
+        248.0
+      ],
+      "sha256": "d1736f5973c0348f681e0c82c9b3e43a1c35fcfef9ff145b03832c775ff85ac3",
+      "alpha_extrema": [
+        0,
+        255
+      ],
+      "cell": 2,
+      "raw_cell_bbox": [
+        627,
+        0,
+        940,
+        314
+      ],
+      "raw_material_y_range": [
+        66,
+        313
+      ],
+      "method": "rowwise generated-pixel transport to immutable source polygon"
+    },
+    {
+      "id": "near_arm_skin",
+      "file": "attempts\\02\\textures\\near_arm_skin.png",
+      "source": "nela-atlas-02.png",
+      "source_size": [
+        1024,
+        1024
+      ],
+      "pivot_source_px": [
+        524.0,
+        248.0
+      ],
+      "sha256": "1942f8a818d83b2d143b221cf3a5df05a08779d8fb79af0fa687b035b35c39f4",
+      "alpha_extrema": [
+        0,
+        255
+      ],
+      "cell": 3,
+      "raw_cell_bbox": [
+        940,
+        0,
+        1254,
+        314
+      ],
+      "raw_material_y_range": [
+        63,
+        313
+      ],
+      "method": "rowwise generated-pixel transport to immutable source polygon"
+    },
+    {
+      "id": "torso_top",
+      "file": "attempts\\02\\textures\\torso_top.png",
+      "source": "nela-atlas-04-armhole-repair.png",
+      "source_size": [
+        1024,
+        1024
+      ],
+      "pivot_source_px": [
+        512.0,
+        316.0
+      ],
+      "sha256": "80352a4fbe230dde12aac0329b5a69afa472389b2b3116456d4915080734b709",
+      "alpha_extrema": [
+        0,
+        255
+      ],
+      "cell": 4,
+      "raw_cell_bbox": [
+        0,
+        314,
+        314,
+        627
+      ],
+      "raw_material_y_range": [
+        77,
+        312
+      ],
+      "method": "rowwise generated-pixel transport to immutable source polygon"
+    },
+    {
+      "id": "pelvis_shorts",
+      "file": "attempts\\02\\textures\\pelvis_shorts.png",
+      "source": "nela-atlas-02.png",
+      "source_size": [
+        1024,
+        1024
+      ],
+      "pivot_source_px": [
+        512,
+        496
+      ],
+      "sha256": "50ac4d3eba5f4d14dcbd362bd9ee4faee993bab71ee634be0b625545dcdc17d3",
+      "alpha_extrema": [
+        0,
+        255
+      ],
+      "cell": 5,
+      "raw_cell_bbox": [
+        314,
+        314,
+        627,
+        627
+      ],
+      "raw_material_y_range": [
+        139,
+        258
+      ],
+      "method": "rowwise generated-pixel transport to immutable source polygon"
+    },
+    {
+      "id": "far_shorts_leg",
+      "file": "attempts\\02\\textures\\far_shorts_leg.png",
+      "source": "nela-atlas-02.png",
+      "source_size": [
+        1024,
+        1024
+      ],
+      "pivot_source_px": [
+        504.0,
+        496.0
+      ],
+      "sha256": "d69113385404a8005f2d79a9eb06ec512ae8e8a5f202d005a99ef3758cab78ec",
+      "alpha_extrema": [
+        0,
+        255
+      ],
+      "cell": 6,
+      "raw_cell_bbox": [
+        627,
+        314,
+        940,
+        627
+      ],
+      "raw_material_y_range": [
+        143,
+        301
+      ],
+      "method": "rowwise generated-pixel transport to immutable source polygon"
+    },
+    {
+      "id": "near_shorts_leg",
+      "file": "attempts\\02\\textures\\near_shorts_leg.png",
+      "source": "nela-atlas-02.png",
+      "source_size": [
+        1024,
+        1024
+      ],
+      "pivot_source_px": [
+        520.0,
+        496.0
+      ],
+      "sha256": "0ef76c7bb876aa718734faf3a787f55c450a557aad01dcfe3ffbe58af9bc81a9",
+      "alpha_extrema": [
+        0,
+        255
+      ],
+      "cell": 7,
+      "raw_cell_bbox": [
+        940,
+        314,
+        1254,
+        627
+      ],
+      "raw_material_y_range": [
+        144,
+        305
+      ],
+      "method": "rowwise generated-pixel transport to immutable source polygon"
+    },
+    {
+      "id": "far_hand",
+      "file": "attempts\\02\\textures\\far_hand.png",
+      "source": "nela-atlas-02.png",
+      "source_size": [
+        1024,
+        1024
+      ],
+      "pivot_source_px": [
+        436.0340137974196,
+        495.94012447161197
+      ],
+      "sha256": "45f620f783a31ec2f51f724ccc12c4351057b3d75b4381369edb77b26eb1d57c",
+      "alpha_extrema": [
+        0,
+        255
+      ],
+      "cell": 8,
+      "raw_cell_bbox": [
+        0,
+        627,
+        314,
+        940
+      ],
+      "raw_material_y_range": [
+        122,
+        239
+      ],
+      "method": "rowwise generated-pixel transport to immutable source polygon"
+    },
+    {
+      "id": "near_hand",
+      "file": "attempts\\02\\textures\\near_hand.png",
+      "source": "nela-atlas-02.png",
+      "source_size": [
+        1024,
+        1024
+      ],
+      "pivot_source_px": [
+        601.1420155160193,
+        492.1619588633605
+      ],
+      "sha256": "91e4dd6939f355eec5996cdeefa53ebd233df73966ca96bb73d6ea3a8d09748b",
+      "alpha_extrema": [
+        0,
+        255
+      ],
+      "cell": 9,
+      "raw_cell_bbox": [
+        314,
+        627,
+        627,
+        940
+      ],
+      "raw_material_y_range": [
+        111,
+        245
+      ],
+      "method": "rowwise generated-pixel transport to immutable source polygon"
+    },
+    {
+      "id": "far_shoe",
+      "file": "attempts\\02\\textures\\far_shoe.png",
+      "source": "nela-atlas-02.png",
+      "source_size": [
+        1024,
+        1024
+      ],
+      "pivot_source_px": [
+        488.0,
+        868.0
+      ],
+      "sha256": "50d211fc7979945c560016c9790d365c10ec5f68daccea07163c76fe1145e632",
+      "alpha_extrema": [
+        0,
+        255
+      ],
+      "cell": 10,
+      "raw_cell_bbox": [
+        627,
+        627,
+        940,
+        940
+      ],
+      "raw_material_y_range": [
+        147,
+        241
+      ],
+      "method": "rowwise generated-pixel transport to immutable source polygon"
+    },
+    {
+      "id": "near_shoe",
+      "file": "attempts\\02\\textures\\near_shoe.png",
+      "source": "nela-atlas-02.png",
+      "source_size": [
+        1024,
+        1024
+      ],
+      "pivot_source_px": [
+        536.0,
+        868.0
+      ],
+      "sha256": "edfbbd11a27f380f0ff77d530916beca9174568db560ebf1edcb0c2ac2e7075f",
+      "alpha_extrema": [
+        0,
+        255
+      ],
+      "cell": 11,
+      "raw_cell_bbox": [
+        940,
+        627,
+        1254,
+        940
+      ],
+      "raw_material_y_range": [
+        144,
+        242
+      ],
+      "method": "rowwise generated-pixel transport to immutable source polygon"
+    },
+    {
+      "id": "neck_skin",
+      "file": "attempts\\02\\textures\\neck_skin.png",
+      "source": "nela-atlas-02.png",
+      "source_size": [
+        1024,
+        1024
+      ],
+      "pivot_source_px": [
+        512.0,
+        220.0
+      ],
+      "sha256": "681dee69e883d83d4fd2b1f98b11b45bd5e6307d78224a491b52158759c0d97a",
+      "alpha_extrema": [
+        0,
+        255
+      ],
+      "cell": 12,
+      "raw_cell_bbox": [
+        0,
+        940,
+        314,
+        1254
+      ],
+      "raw_material_y_range": [
+        89,
+        224
+      ],
+      "method": "rowwise generated-pixel transport to immutable source polygon"
+    },
+    {
+      "id": "head_face",
+      "file": "attempts\\02\\textures\\head_face.png",
+      "source": "nela-atlas-03-head-repair.png",
+      "source_size": [
+        1024,
+        1024
+      ],
+      "pivot_source_px": [
+        522.0,
+        180.0
+      ],
+      "sha256": "edff068f101b7d187c6e230759c893dedbb7abffa4fa83d4849f22aa4a66b42f",
+      "alpha_extrema": [
+        0,
+        255
+      ],
+      "cell": 13,
+      "raw_cell_bbox": [
+        314,
+        940,
+        627,
+        1254
+      ],
+      "raw_material_y_range": [
+        55,
+        226
+      ],
+      "method": "rowwise generated-pixel transport to immutable source polygon"
+    },
+    {
+      "id": "hair",
+      "file": "attempts\\02\\textures\\hair.png",
+      "source": "nela-atlas-02.png",
+      "source_size": [
+        1024,
+        1024
+      ],
+      "pivot_source_px": [
+        522.0,
+        180.0
+      ],
+      "sha256": "e236b44d863088b9879ab59069b7724cb4a53d391eb1ceb81c7288b08c6f0307",
+      "alpha_extrema": [
+        0,
+        255
+      ],
+      "cell": 14,
+      "raw_cell_bbox": [
+        627,
+        940,
+        940,
+        1254
+      ],
+      "raw_material_y_range": [
+        32,
+        246
+      ],
+      "method": "rowwise generated-pixel transport to immutable source polygon"
+    }
+  ],
+  "checks": {
+    "surface_count": 15,
+    "dimensions_all_1024": true,
+    "alpha_all_nontrivial": true,
+    "pivots_unchanged": true
+  },
+  "selected_attempt": "02",
+  "validation": "validation.json"
+}

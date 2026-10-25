@@ -10,14 +10,16 @@
 
 | Порядок | Опыт | Состояние | Материалы и показ |
 |---|---|---|---|
-| 1 | Q5A — конструкция до арта | Активен: конструкция доведена до v4, статический арт `attempt03` готов; независимые Concept/Builder review выданы существующим сессиям | `experiments/q5a-construction-first/LEAD_STATE.md`, `DESIGN.md`, `CONSTRUCTION.md`, `ART.md`, `art/attempts/03/`; motion/demo и QA ещё не начаты |
+| 1 | Q5A — конструкция до арта | Art gate пройден: `ART_CONCEPT_PASS` и `ART_INTEGRATION_PASS` для статического `attempt03` на конструкции v4; static candidate ready for assembly | `experiments/q5a-construction-first/LEAD_STATE.md`, `ART_CONCEPT_REREVIEW_ATTEMPT03.md`, `ART_BUILDER_REREVIEW_ATTEMPT03.md`, `art/package.json`, `art/validation.json`; assembly, motion/demo и QA ещё не начаты |
 | 2 | Q4A — цельный образ до частей | Ожидает завершения Q5A | Предусмотрен `experiments/q4a-whole-character/`; фактической ссылки на результат пока нет |
 | 3 | Q2A — свободный выбор способа | Ожидает завершения Q4A | Предусмотрен `experiments/q2a-simple-character/`; фактической ссылки на результат пока нет |
 
-Текущие независимые review `attempt03` выполняют уже существующие сессии:
+Независимые review `attempt03` завершили уже существующие сессии:
 Concept Artist `01a16ffd-87e7-7cf3-a9a2-29d2cd97a7ec` и Builder
 `01a16ffd-8811-7d20-b80a-6a938f50b5a5`. Новые сотрудники или дубли сессий
 не создавались.
+
+Lead повторно проверил exact v4/package/validation SHA, детерминированную конструкцию, побайтное воспроизведение 86 файлов attempt03 и независимую validation: PASS. Неудачные attempts, архивы v1/v3, прежний attempt02 и цепочка исправлений сохранены. Точные версии и границы статического PASS находятся в `experiments/q5a-construction-first/LEAD_STATE.md`. Следующий этап assembly требует отдельного поручения CTO; текущий closeout не запускает движение, demo, QA или release.
 
 CTO по ходу заменяет сведения фактическим состоянием: активный опыт, команда, ссылки на материалы/демо, полученное качество и решение о продолжении или остановке. Появление каталога само по себе не означает начала или завершения опыта. Новый отдельный статусный сервис не требуется.
 

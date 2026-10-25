@@ -7,11 +7,47 @@ import json
 import math
 import io
 import hashlib
+import subprocess
 import xml.etree.ElementTree as ET
 from pathlib import Path
 from html import escape
 
 HERE = Path(__file__).resolve().parent
+V2_COMMIT = 'd3bdf8f1cffebe2179805eeb54a8a36faab08805'
+
+
+def signed_area(a,b,c):
+    return (b[0]-a[0])*(c[1]-a[1])-(b[1]-a[1])*(c[0]-a[0])
+
+
+def rigid_triangles(poly):
+    """Author explicit topology for a rigid polygon, never used for cloth."""
+    ids=list(range(len(poly)))
+    if poly[0]==poly[-1]:ids.pop()
+    orient=sum(poly[ids[i]][0]*poly[ids[(i+1)%len(ids)]][1]-poly[ids[(i+1)%len(ids)]][0]*poly[ids[i]][1] for i in range(len(ids)))
+    sign=1 if orient>0 else -1
+    out=[]
+    while len(ids)>3:
+        for j,b in enumerate(ids):
+            a,c=ids[j-1],ids[(j+1)%len(ids)]
+            if sign*signed_area(poly[a],poly[b],poly[c])<1e-8:continue
+            if any(all(sign*x>1e-8 for x in [signed_area(poly[a],poly[b],poly[k]),signed_area(poly[b],poly[c],poly[k]),signed_area(poly[c],poly[a],poly[k])]) for k in ids if k not in (a,b,c)):continue
+            out.append([a,b,c] if sign>0 else [a,c,b]);ids.pop(j);break
+        else:raise ValueError('non-simple rigid polygon')
+    out.append(ids if sign>0 else list(reversed(ids)))
+    return out
+
+
+def row_mesh(rows,positive=True):
+    rows=[[list(point) for point in row] for row in rows]
+    vertices=[p for row in rows for p in row]
+    triangles=[]
+    for i in range(len(rows)-1):
+        n=2*i
+        triangles.extend([[n,n+1,n+2],[n+1,n+3,n+2]] if positive else [[n,n+2,n+1],[n+1,n+2,n+3]])
+    return {'vertices':vertices,'triangles':triangles,
+            'outline':[r[0] for r in rows]+[r[1] for r in reversed(rows)],
+            'parameter_rows':rows,'topology_policy':'explicit_constant_rows_no_fallback'}
 
 
 def add(a, b):
@@ -34,6 +70,15 @@ def unit(v):
 
 def lerp(a, b, t):
     return [a[i] * (1 - t) + b[i] * t for i in range(2)]
+
+
+def quadratic(a,c,b,t):
+    return [(1-t)**2*a[i]+2*(1-t)*t*c[i]+t*t*b[i] for i in range(2)]
+
+
+def soften_closed(points):
+    # Corner-cut only inside the explicit anatomical control polygon; no overshoot.
+    return [lerp(a,b,t) for a,b in zip(points,points[1:]+points[:1]) for t in (.25,.75)]
 
 
 def rotate(v, degrees):
@@ -120,6 +165,22 @@ def chain_mesh(points, stations, roots, names, root_frame=None):
     for i,(t,_) in enumerate(stations):
         if .77 <= t <= 1.23:
             rows[i][inner_index] = lerp(rows[i][inner_index],fold_point,collapse)
+    hem_correction=0
+    if stations==LEG_STATIONS:
+        # General calf/shorts self-contact constraint at the fixed t=.5 hem.
+        # Only the inner calf is constrained; bones and outer joint contour stay.
+        h0,h1=rows[2]
+        h_inner=rows[2][inner_index]
+        outside=unit(delta(h_inner,rows[2][1-inner_index]))
+        for i in range(joint_row+1,len(rows)-1):
+            p,q=rows[i][inner_index],rows[i+1][inner_index]
+            crossing=(signed_area(p,q,h0)*signed_area(p,q,h1)<-1e-7 and
+                      signed_area(h0,h1,p)*signed_area(h0,h1,q)<-1e-7)
+            if crossing:
+                distance=sum(x*y for x,y in zip(delta(p,h_inner),outside))
+                shift=max(0,.35-distance)
+                rows[i][inner_index]=add(p,[outside[0]*shift,outside[1]*shift])
+                hem_correction=max(hem_correction,shift)
     vertices = [p for row in rows for p in row]
     triangles = []
     for i in range(len(rows)-1):
@@ -130,7 +191,50 @@ def chain_mesh(points, stations, roots, names, root_frame=None):
             # Fixed topology: zero-area fold faces stay present; never pop out.
             triangles.append(tri)
     outline = [r[0] for r in rows] + [r[1] for r in reversed(rows)]
+    # Smooth outer bend, preserving the original anatomical joint extremum.
+    # Replace only the two outer-edge faces; the two intentional inner fold
+    # faces retain their indices and their zero-area behaviour.
+    outer=1-inner_index
+    oa,om,ob=[2*i+outer for i in (joint_row-1,joint_row,joint_row+1)]
+    control=[2*vertices[om][k]-.5*(vertices[oa][k]+vertices[ob][k]) for k in range(2)]
+    arc=[]
+    for k in range(9):
+        if k in (0,4,8):index={0:oa,4:om,8:ob}[k]
+        else:
+            index=len(vertices);vertices.append(quadratic(vertices[oa],control,vertices[ob],k/8))
+            lo,hi,t=(oa,om,k/4) if k<4 else (om,ob,(k-4)/4)
+            weights.append({name:weights[lo].get(name,0)*(1-t)+weights[hi].get(name,0)*t for name in names})
+        arc.append(index)
+    for first,last,sequence in [(oa,om,arc[:5]),(om,ob,arc[4:])]:
+        old=next(t for t in triangles if first in t and last in t)
+        pivot=next(i for i in old if i not in (first,last))
+        orientation=1 if old[(old.index(first)+1)%3]==last else -1
+        triangles.remove(old)
+        for p,q in zip(sequence,sequence[1:]):
+            triangles.append([p,q,pivot] if orientation>0 else [p,pivot,q])
+    chains=[[2*i+side for i in range(len(rows))] for side in (0,1)]
+    start=chains[outer].index(oa);end=chains[outer].index(ob)
+    chains[outer][start:end+1]=arc
+    outline=[vertices[i] for i in chains[0]]+[vertices[i] for i in reversed(chains[1])]
+    # Concave inner fold fillet is part of the SAME continuous skin mesh.
+    # The coalescing material vertices remain real internal fold vertices;
+    # this connected fillet makes them interior, rather than a pointed silhouette.
+    fold_id=2*joint_row+inner_index
+    centre=vertices[fold_id]
+    radius=8 if stations==LEG_STATIONS else 6
+    t0=add(centre,[-u[0]*radius,-u[1]*radius])
+    t1=add(centre,[v[0]*radius,v[1]*radius])
+    fillet=[]
+    for k in range(9):
+        p=quadratic(t0,centre,t1,k/8)
+        index=len(vertices);vertices.append(p);fillet.append(index)
+        source_id=2*(joint_row-2)+inner_index if k<4 else 2*(joint_row+2)+inner_index
+        weights.append({name:.8*weights[fold_id].get(name,0)+.2*weights[source_id].get(name,0) for name in names})
+    for p,q in zip(fillet,fillet[1:]):
+        triangles.append([fold_id,q,p] if inner_index==0 else [fold_id,p,q])
+    inner_region=[vertices[fold_id]]+[vertices[i] for i in fillet]
     cap=[]
+    cap_start=len(vertices)
     if root_frame:
         # Continuous clavicle/deltoid contour returning into chest, no flat cut
         # and no separate circular cover. Its chest-carried controls affect geometry.
@@ -154,13 +258,17 @@ def chain_mesh(points, stations, roots, names, root_frame=None):
             'joint_flex_deg': theta, 'station_t_width': stations,
             'fold_inner_vertex_ids':[2*i+inner_index for i,(t,_) in enumerate(stations) if .77<=t<=1.23],
             'fold_compression':collapse,'uv_policy':'immutable_bind_vertex_id_no_reprojection',
-            'root_frame':list(root_frame) if root_frame else None,'root_weight_applied_to_geometry':bool(root_frame)}
+            'root_frame':list(root_frame) if root_frame else None,'root_weight_applied_to_geometry':bool(root_frame),
+            'contour_chains':chains,'outer_bend_control':control,'outer_bend_vertex_ids':arc,
+            'inner_fillet_vertex_ids':fillet,'inner_fillet_pivot':fold_id,
+            'silhouette_regions':[outline,inner_region]}
+    result['calf_hem_contact_correction']=hem_correction
     if root_frame:
         result['root_outline']=[r[0] for r in rows[:3]]+[r[1] for r in reversed(rows[:3])]+cap
-        result['limb_outline']=[r[0] for r in rows[2:]]+[r[1] for r in reversed(rows[2:])]
+        result['limb_outline']=[vertices[i] for i in chains[0] if i not in (0,2)]+[vertices[i] for i in reversed(chains[1]) if i not in (1,3)]
         result['root_rows']=rows[:3]
         result['limb_rows']=rows[2:]
-        result['cap_vertex_ids']=list(range(2*len(rows),len(vertices)))
+        result['cap_vertex_ids']=list(range(cap_start,len(vertices)))
     return result
 
 
@@ -194,6 +302,30 @@ def surface_polygon(poly):
     return {'outline': poly, 'vertices': poly, 'triangles': []}
 
 
+HAND_CONTROLS=[[-7,-5],[-3,-5.6],[2,-5.5],[8,-6],[13,-6.3],[18,-5.7],
+               [21,-4.6],[22.4,-2.4],[21.8,-.6],[23,1],[22.3,2.8],[20,4],
+               [16,4.5],[12,5],[8,4.8],[8.7,7.7],[7.7,10],[5.8,10.6],
+               [4.2,9.8],[1,6],[-2,5.5],[-7,5]]
+
+
+def hand_surface(wrist,angle,side):
+    local=soften_closed(HAND_CONTROLS)
+    sign=-1 if side=='far' else 1
+    direction=[math.sin(math.radians(angle)),-math.cos(math.radians(angle))]
+    normal=[-direction[1]*sign,direction[0]*sign]
+    convert=lambda p:add(wrist,[direction[0]*p[0]+normal[0]*p[1],direction[1]*p[0]+normal[1]*p[1]])
+    mesh=surface_polygon([convert(p) for p in local])
+    thumb=max(range(len(local)),key=lambda i:local[i][1])
+    fingertip=max(range(len(local)),key=lambda i:local[i][0])
+    mesh.update({'anatomical_local_outline':local,'anatomical_controls':HAND_CONTROLS,
+                 'wrist_overlap':7,'thumb_vertex_id':thumb,'finger_vertex_id':fingertip,
+                 'anatomical_landmarks':{'wrist':wrist,'palm_center':convert([8,0]),
+                                         'thumb_tip':convert(local[thumb]),'finger_tip':convert(local[fingertip])},
+                 'hand_frame':{'direction':direction,'normal':normal},
+                 'silhouette_policy':'explicit rounded palm/thumb/grouped-finger outline, not bounding quad'})
+    return mesh
+
+
 def bezier(a,b,c,d,steps=8):
     return [[(1-t)**3*a[i]+3*(1-t)**2*t*b[i]+3*(1-t)*t*t*c[i]+t**3*d[i] for i in range(2)]
             for t in [k/steps for k in range(steps+1)]]
@@ -213,24 +345,56 @@ def seated_shorts(root,lean,joints,legs):
         posterior=lerp(legs[side]['vertices'][3],legs[side]['vertices'][5],(.28-.22)/(.5-.22))
         anterior=lerp(legs[side]['vertices'][2],legs[side]['vertices'][4],(.28-.22)/(.5-.22))
         back_waist=add(root,rotate([-19,24],-lean*.25))
-        front_waist=add(root,rotate([18,24],-lean*.25))
+        # Raise only hidden front waist registration; the old front Bezier
+        # crossed the waist edge when the thigh approached horizontal.
+        front_waist=add(root,rotate([18,36],-lean*.25))
         back_control=add(back_waist,rotate([-5,-15],-lean*.25))
         join_control=add(posterior,[-direction[0]*18,-direction[1]*18])
-        rear=bezier(back_waist,back_control,join_control,posterior)
-        front=bezier(front_waist,add(front_waist,rotate([8,-12],-lean*.25)),
-                     add(anterior,[-direction[0]*10,-direction[1]*10]),anterior)
-        outline=[back_waist,front_waist]+front[1:]+list(reversed(rear))
-        patches.append({'side':side,'outline':outline,'posterior_join':posterior,
+        rear=bezier(back_waist,back_control,join_control,posterior,16)
+        front=[lerp(front_waist,anterior,k/16) for k in range(17)]
+        mesh=row_mesh(list(zip(rear,front)),positive=False)
+        mesh.update({'side':side,'posterior_join':posterior,
                         'anterior_join':anterior,'thigh_direction':direction,
                         'rear_curve_controls':[back_waist,back_control,join_control,posterior],
-                        'material_owner':side+'_hip','join_t':.28})
-    vertices=[p for patch in patches for p in patch['outline']]
-    return {'outline':patches[1]['outline'],'patches':patches,'vertices':vertices,'triangles':[],
-            'deformation':'independent_hip_seated_panels_shared_waist'}
+                        'material_owner':side+'_hip','join_t':.28,
+                        'parameter_domain':{'s':[0,1],'u':[0,1],'rows':17,'columns':2},
+                        'deformation':'cubic_rear_linear_front_ruled_rows'})
+        patches.append(mesh)
+    vertices=[p for patch in patches for p in patch['vertices']]
+    triangles=[t for t in patches[0]['triangles']]+[[i+len(patches[0]['vertices']) for i in t] for t in patches[1]['triangles']]
+    return {'outline':patches[1]['outline'],'patches':patches,'vertices':vertices,'triangles':triangles,
+            'deformation':'v3_independent_ruled_hip_panels'}
+
+
+def torso_mesh(local,root,lean):
+    left=local[:6];right=list(reversed(local[6:]))
+    def at(chain,y):
+        for a,b in zip(chain,chain[1:]):
+            if a[1]<=y<=b[1]:return [a[0]+(b[0]-a[0])*(y-a[1])/(b[1]-a[1]),y]
+        raise ValueError(y)
+    rows=[]
+    for y in range(12,141,2):
+        angle=-lean*(.25+.75*max(0,min(1,(y-12)/87)))
+        rows.append([add(root,rotate(at(chain,y),angle)) for chain in (left,right)])
+    result=row_mesh(rows)
+    result['parameter_domain']={'y':[12,140],'step':2,'rows':65,'columns':2}
+    return result
 
 
 def surface_outlines(surface):
-    return [p['outline'] for p in surface['patches']] if 'patches' in surface else [surface['outline']]
+    if 'patches' in surface:return [p['outline'] for p in surface['patches']]
+    return surface.get('silhouette_regions',[surface['outline']])
+
+
+def convex_hull(points):
+    points=sorted(set(tuple(p) for p in points))
+    def half(sequence):
+        out=[]
+        for p in sequence:
+            while len(out)>=2 and signed_area(out[-2],out[-1],p)<=0:out.pop()
+            out.append(p)
+        return out
+    return [list(p) for p in half(points)[:-1]+half(reversed(points))[:-1]]
 
 
 def foot(ankle, contact):
@@ -269,7 +433,7 @@ def solve(spec):
         # Fixed garment boundary: skin above the t=.5 hem is an exported hidden
         # continuation, not an exposed rectangular root behind the soft seat.
         leg['visible_from_t']=.5
-        leg['visible_outline']=[leg['vertices'][k] for k in (4,6,8,10,12,14,16,17,15,13,11,9,7,5)]
+        leg['visible_outline']=[leg['vertices'][k] for k in leg['contour_chains'][0] if k not in (0,2)]+[leg['vertices'][k] for k in reversed(leg['contour_chains'][1]) if k not in (1,3)]
         geom[f'{side}_arm_skin'] = arm
         # Posterior upper corner ends at the exact seated-curve join t=.28.
         # Keeping the old root/back corner here would reintroduce the rear flap.
@@ -278,20 +442,14 @@ def solve(spec):
         geom[f'{side}_shorts_leg'] = surface_polygon([leg['vertices'][0],leg['vertices'][2],anterior,
                                                      leg['vertices'][4],leg['vertices'][5],posterior])
         geom[f'{side}_shoe'] = surface_polygon(shoe)
-        hand_end = limb_tip(wrist,23,upper+bend+5)
-        tangent = unit(delta(hand_end,wrist))
-        n = [-tangent[1],tangent[0]]
-        handpoly = [add(wrist,[-tangent[0]*7+n[0]*6,-tangent[1]*7+n[1]*6]),
-                    add(hand_end,[n[0]*8,n[1]*8]),add(hand_end,[-n[0]*7,-n[1]*7]),
-                    add(wrist,[-tangent[0]*7-n[0]*6,-tangent[1]*7-n[1]*6])]
-        geom[f'{side}_hand'] = surface_polygon(handpoly)
+        geom[f'{side}_hand'] = hand_surface(wrist,upper+bend+5,side)
     # Torso uses shaped chest/waist rows, separate from short saddle. No circular joint caps.
     armhole_lift=max(0,min(1,spec['arms'][1][0]/140))
     torso_local = [[-21,12],[-23,63],[-30,99],[-27,119],[-17,130],[-12,140],
                    [9,140],[15,134],[8-2*armhole_lift,120+4*armhole_lift],
                    [11,108+6*armhole_lift],[29,97+2*armhole_lift],[30,93],[24,62],[20,12]]
     # Soft waist gradually transfers pelvic tilt into chest tilt; hem stays overlapped.
-    geom['torso_top'] = surface_polygon([add(root,rotate(p,-lean*(.25+.75*max(0,min(1,(p[1]-12)/87))))) for p in torso_local])
+    geom['torso_top'] = torso_mesh(torso_local,root,lean)
     geom['torso_top']['armhole_lift']=armhole_lift
     geom['torso_top']['armhole_chest_local']=torso_local[7:11]
     geom['pelvis_shorts'] = seated_shorts(root,lean,joints,{s:geom[s+'_leg_skin'] for s in ('far','near')})
@@ -338,16 +496,18 @@ def draw_shapes(pose):
     for name,fragment in DRAW_OPS:
         surface=pose['surfaces'][name]
         if 'arm_skin' in name:
-            rows=surface['root_rows'] if fragment=='root' else surface['limb_rows'] if fragment=='limb' else surface['root_rows'][:2]+surface['limb_rows']
-            first=[r[0] for r in rows]
-            second=[r[1] for r in rows]
+            rows=surface['root_rows']
+            first=[r[0] for r in rows] if fragment=='root' else [surface['vertices'][i] for i in surface['contour_chains'][0] if fragment!='limb' or i not in (0,2)]
+            second=[r[1] for r in rows] if fragment=='root' else [surface['vertices'][i] for i in surface['contour_chains'][1] if fragment!='limb' or i not in (1,3)]
             cap=[surface['vertices'][i] for i in surface['cap_vertex_ids']] if fragment!='limb' else []
             edges=[first,second]
             if cap:
-                edges.append([rows[0][1]]+cap+[rows[0][0]])
+                edges.append([surface['vertices'][1]]+cap+[surface['vertices'][0]])
             yield name,first+list(reversed(second))+cap,edges
+            if fragment!='root':yield name,surface['silhouette_regions'][1],[[surface['vertices'][i] for i in surface['inner_fillet_vertex_ids']]]
         elif 'leg_skin' in name:
             yield name,surface['visible_outline'],None
+            yield name,surface['silhouette_regions'][1],[[surface['vertices'][i] for i in surface['inner_fillet_vertex_ids']]]
         else:
             for poly in surface_outlines(surface):
                 yield name,poly,None
@@ -388,7 +548,7 @@ def sheets(poses):
     diagnostic = '<text x="24" y="30" font-size="18">DIAGNOSTIC x2 / low_deep / continuous surface envelopes, no texture</text><path d="M20 880H1260" stroke="#687885"/>' + figure(poses[3],640,880,2)
     bind = '<text x="20" y="25" font-size="17">EXPORT registration 1024 x 1024 / source px = 2 units / ground (512,900)</text>' + figure(target,512,900,2)
     calm=[p for p in poses if p['id'] in ('bind','idle_shift','idle_settle_left','idle_settle_right','walk_near_pass')]
-    readability='<text x="18" y="25" font-size="18">v2 / FAR ARM / 1:1 / no joint guides / construction only</text>'
+    readability='<text x="18" y="25" font-size="18">v4 / FAR ARM / 1:1 / no joint guides / construction only</text>'
     for i,p in enumerate(calm):
         readability+=f'<text x="{i*320+12}" y="65" font-size="16">{p["id"]}</text><path d="M{i*320+8} 659h304" stroke="#687885"/>'
         readability+=figure(p,i*320+140,659,guides=False)
@@ -430,6 +590,20 @@ def raster_preview(poses):
 def build():
     poses = [solve(p) for p in POSES]
     bind = poses[0]
+    # All render topology and material coordinates are authored here, once.
+    # The integration renderer is forbidden to infer bind-fallback diagonals.
+    for name,b in bind['surfaces'].items():
+        if not b['triangles']:
+            b['triangles']=rigid_triangles(b['vertices'])
+        for pose in poses:
+            g=pose['surfaces'][name]
+            assert len(g['vertices'])==len(b['vertices'])
+            g['triangles']=b['triangles']
+            g['uv']=[[(512+2*x)/1024,(900-2*y)/1024] for x,y in b['vertices']]
+            if 'patches' in b:
+                for bp,gp in zip(b['patches'],g['patches']):
+                    gp['triangles']=bp['triangles']
+                    gp['uv']=[[(512+2*x)/1024,(900-2*y)/1024] for x,y in bp['vertices']]
     surfaces=[]
     for rank,name in enumerate(DRAW):
         parent = 'head' if name in ('head_face','hair') else 'neck' if name=='neck_skin' else 'pelvis'
@@ -443,12 +617,13 @@ def build():
                          'pivot_source_px':[512+2*pivot[0],900-2*pivot[1]],
                          'source_size_px':[1024,1024], 'export_file':name+'.png',
                          'deformation':'pose_corrected_continuous_mesh' if '_skin' in name and ('arm' in name or 'leg' in name)
-                                       else 'soft_waist_rows' if name=='torso_top'
-                                       else 'pelvic_saddle_corrective' if name=='pelvis_shorts'
+                                       else 'v3_explicit_horizontal_rows' if name=='torso_top'
+                                       else 'v3_explicit_ruled_hip_panels' if name=='pelvis_shorts'
                                        else 'shared_thigh_rows' if 'shorts_leg' in name else 'rigid_registered_surface',
                          'geometry_bind':bind['surfaces'][name]})
-    data={'format':'r4d-q5a-construction-v2','status':'AWAITING_TWO_ARTIST_REREVIEWS_NO_CLEAN_ART',
-          'supersedes_json_sha256':'55a78cbc0fe856eeac2fb899dcd160bdcd44c41b5a57822574a1cd49947fb965',
+    data={'format':'r4d-q5a-construction-v4','status':'V4_SILHOUETTE_TECHNICAL_ONLY_AWAITING_TWO_REVIEWS_NO_ATTEMPT03',
+          'supersedes_json_sha256':'4c26901562ded5cd43dac994cd308a3e23743e055c94b71fee43d527ab8977fc',
+          'supersedes_commit':V2_COMMIT,
           'author':'builder-r4d-q5a-01','base':'93194c5cab8a7be0913faa0ffa57dcc7ca9ae7a6',
           'units':{'logical':'screen px at target','x':'forward/right','y':'up','ground_y':0,
                    'source_transform':{'x_offset':512,'y_offset':900,'scale':2,'flip_y':True}},
@@ -458,6 +633,11 @@ def build():
           'hierarchy':{'pelvis':None,'chest':'pelvis','neck':'chest','head':'neck'},
           'surfaces':surfaces,'draw_order':DRAW,
           'draw_operations':[{'surface':s,'fragment':f} for s,f in DRAW_OPS],'poses':poses,
+          'integration_contract':{'meshes':'explicit constant triangles and immutable bind UV for every surface/panel; renderer may not infer diagonals',
+                                  'solid_material_coverage':'outer v4 anatomical silhouette clips all coverage per surface; internal triangle seam coverage may never extend beyond it',
+                                  'sampling':'own-material RGB input, optional authored silhouette alpha may subtract from outer mesh envelope; conservative seam footprint clipped before composition',
+                                  'invalid_faces':'reject flipped faces; do not rasterize zero-area fold faces',
+                                  'art_status':'attempt02 is immutable rejected evidence, technical RGB input only; attempt03 prohibited until two v4 reviews and CTO release'},
           'ranges_deg':{'torso_forward':[-5,35],'upper_arm_from_down':[-35,140],
                         'elbow_flex':[10,135],'knee_flex':[0,140],
                         'hip_from_pelvis_down':[-35,135],'ankle_shoe_pitch':[-30,20],
@@ -481,11 +661,12 @@ def build():
             mesh=surface['geometry_bind']
             inner=mesh['fold_inner_vertex_ids']
             row_bases=[i-i%2 for i in inner]
-            zone=[mesh['vertices'][i] for i in row_bases]+[mesh['vertices'][i+1] for i in reversed(row_bases)]
+            zone_ids=sorted(set([k for i in row_bases for k in (i,i+1)]+mesh['outer_bend_vertex_ids']+mesh['inner_fillet_vertex_ids']))
+            zone=convex_hull([mesh['vertices'][i] for i in zone_ids])
             contract={'vertex_ids':list(range(len(mesh['vertices']))),'topology':mesh['triangles'],
                       'immutable_uv':surface['uv'],'fold_inner_vertex_ids':inner,
                       'source_low_contrast_zone_px':[[512+2*x,900-2*y] for x,y in zone],
-                      'low_contrast_vertex_ids':[k for i in row_bases for k in (i,i+1)],
+                      'low_contrast_vertex_ids':zone_ids,
                       'source_guard_px':4,'compression_start_deg':70,'compression_end_deg':90,
                       'compression_curve':'smoothstep((flex-70)/20)',
                       'visibility':'no alpha cutoff; fixed faces lose projected area continuously, zero faces remain in topology',
@@ -501,7 +682,7 @@ def build():
     outputs={'construction.json':json.dumps(data,ensure_ascii=False,indent=2,allow_nan=False)+'\n'}
     outputs.update(sheets(poses))
     outputs.update(raster_preview(poses))
-    uv_body='<text x="15" y="25" font-size="18">v2 immutable source registration / blue = low-contrast fold strip, +4 source px guard / NOT ART</text>'
+    uv_body='<text x="15" y="25" font-size="18">v4 immutable source registration / blue = full bend controls +4 source px guard / NOT ART</text>'
     for i,(name,contract) in enumerate(fold_contracts.items()):
         ox=(i%2)*1024
         oy=(i//2)*1024+45
@@ -665,6 +846,94 @@ def validate_v2(data):
             'v1_archive':'PASS 9 byte hashes and pinned manifest; original 17 body/foot configurations retained'}
 
 
+def validate_v3(data):
+    raw=subprocess.check_output(['git','show',V2_COMMIT+':experiments/q5a-construction-first/construction/construction.json'],cwd=HERE.parents[2])
+    assert hashlib.sha256(raw).hexdigest()=='70f324aa7126f7aea0eca24e42aa370b18bb48d070810f3819a5cab16116e092'
+    v2=json.loads(raw)
+    assert data['viewport']==v2['viewport'] and data['ranges_deg']==v2['ranges_deg'] and data['lengths']==v2['lengths']
+    inversions=0;intersections=0;contact=[]
+    for pose,old in zip(data['poses'],v2['poses']):
+        assert pose['id']==old['id'] and pose['inputs']==old['inputs'] and pose['landmarks']==old['landmarks']
+        for name,g in pose['surfaces'].items():
+            if name.endswith(('_arm_skin','_leg_skin')):
+                assert g['uv'][:18]==old['surfaces'][name]['uv'][:18]
+                for i,(a,b) in enumerate(zip(g['vertices'][:18],old['surfaces'][name]['vertices'][:18])):
+                    if a!=b:
+                        assert 'leg_skin' in name and i%2==1 and g['calf_hem_contact_correction']>0
+                if g.get('calf_hem_contact_correction'):contact.append([pose['id'],name,g['calf_hem_contact_correction']])
+            for q in g.get('patches',[g]):
+                assert q['triangles'] and len(q['uv'])==len(q['vertices'])
+                for tri in q['triangles']:
+                    sa=signed_area(*[q['uv'][i] for i in tri]);pa=signed_area(*[q['vertices'][i] for i in tri])
+                    inversions+=int(sa*pa>1e-10)
+                poly=q['outline'];n=len(poly)
+                for i in range(n):
+                    for j in range(i+2,n):
+                        if (j+1)%n==i:continue
+                        a,b,c,d=poly[i],poly[(i+1)%n],poly[j],poly[(j+1)%n]
+                        intersections+=int(signed_area(a,b,c)*signed_area(a,b,d)<-1e-7 and signed_area(c,d,a)*signed_area(c,d,b)<-1e-7)
+    assert inversions==0 and intersections==0,(inversions,intersections)
+    return {'inversions':inversions,'unintended_self_intersections':intersections,
+            'v2_regression':'PASS all 19 inputs, landmarks, lengths, viewport and ranges identical; original segment UV unchanged; v4 contour UV explicit',
+            'inner_calf_hem_contact_corrective':contact}
+
+
+def validate_v4(data):
+    archive=HERE/'attempts/v3'
+    raw=(archive/'manifest.json').read_bytes()
+    assert hashlib.sha256(raw).hexdigest()=='c0ea2fb64a0beb71dbae4a6718311b774583a22d0b1eaa750f4b0a18f0793c3c'
+    manifest=json.loads(raw)
+    for entry in manifest['files']:
+        content=(archive/entry['file']).read_bytes()
+        assert len(content)==entry['bytes'] and hashlib.sha256(content).hexdigest()==entry['sha256']
+    old=json.loads((archive/'construction.json').read_bytes())
+    for key in ('viewport','units','lengths','hierarchy','ranges_deg','hidden_continuation_units','draw_order','draw_operations'):
+        assert data[key]==old[key],key
+    hand_checks=[];regions_checked=0
+    def area(poly):return abs(sum(a[0]*b[1]-b[0]*a[1] for a,b in zip(poly,poly[1:]+poly[:1]))/2)
+    for pose,previous in zip(data['poses'],old['poses']):
+        assert pose['inputs']==previous['inputs'] and pose['landmarks']==previous['landmarks']
+        for name,g in pose['surfaces'].items():
+            before=previous['surfaces'][name]
+            if not name.endswith(('_hand','_arm_skin','_leg_skin')):assert g==before,('cloth/rigid changed',name)
+            if name.endswith(('_arm_skin','_leg_skin')):
+                assert g['vertices'][:18]==before['vertices'][:18] and g['uv'][:18]==before['uv'][:18]
+                assert g['fold_inner_vertex_ids']==before['fold_inner_vertex_ids']
+                assert len(g['outer_bend_vertex_ids'])==9 and len(g['inner_fillet_vertex_ids'])==9
+            if name.endswith('_hand'):
+                wrist=pose['landmarks'][name.replace('hand','wrist')]
+                assert wrist==g['anatomical_landmarks']['wrist'] and inside(wrist,g['outline'])
+                frame=g['hand_frame'];local=[]
+                for p in g['vertices']:
+                    d=delta(p,wrist)
+                    local.append([sum(x*y for x,y in zip(d,frame[k])) for k in ('direction','normal')])
+                assert max(abs(x-y) for a,b in zip(local,g['anatomical_local_outline']) for x,y in zip(a,b))<1e-10
+                reference=data['poses'][0]['surfaces'][name]
+                assert g['uv']==reference['uv'] and g['triangles']==reference['triangles']
+                assert abs(area(g['outline'])-area(reference['outline']))<1e-8
+                thumb=g['vertices'][g['thumb_vertex_id']];finger=g['vertices'][g['finger_vertex_id']]
+                assert thumb==g['anatomical_landmarks']['thumb_tip'] and finger==g['anatomical_landmarks']['finger_tip']
+                assert 9<max(p[1] for p in local)<11 and max(p[0] for p in local)>22
+                bbox=(max(p[0] for p in local)-min(p[0] for p in local))*(max(p[1] for p in local)-min(p[1] for p in local))
+                assert area(local)/bbox<.85 and not inside([21,9],local)
+                assert inside([-3,0],local) and inside([8,0],local)
+                arm=pose['surfaces'][name.replace('hand','arm_skin')]
+                for offset in (-3,0,3):
+                    overlap=add(wrist,[-3*frame['direction'][k]+offset*frame['normal'][k] for k in range(2)])
+                    assert inside(overlap,g['outline']) and any(inside(overlap,p) for p in surface_outlines(arm)),('wrist continuity',pose['id'],name)
+                hand_checks.append({'pose':pose['id'],'surface':name,'area_units2':round(area(local),9),'vertices':len(local),'faces':len(g['triangles']),'wrist_landmarks':'PASS','bbox_area_fraction':round(area(local)/bbox,6)})
+            for poly in surface_outlines(g):
+                regions_checked+=1;n=len(poly)
+                for i in range(n):
+                    for j in range(i+2,n):
+                        if (j+1)%n==i:continue
+                        a,b,c,d=poly[i],poly[(i+1)%n],poly[j],poly[(j+1)%n]
+                        assert not (signed_area(a,b,c)*signed_area(a,b,d)<-1e-7 and signed_area(c,d,a)*signed_area(c,d,b)<-1e-7),('region crossing',pose['id'],name,i,j)
+    return {'v3_archive':'PASS 13 byte hashes and pinned manifest','v3_geometry_preserved':'PASS original skin rows, all cloth/rigid meshes, 19 inputs/landmarks, bones/pivots/feet/ranges',
+            'hands':hand_checks,'silhouette_regions_checked':regions_checked,'outer_bend':'9 quadratic samples through original joint extremum',
+            'inner_bend':'9 quadratic samples in same skin mesh, original fold faces retained'}
+
+
 def main():
     parser=argparse.ArgumentParser()
     parser.add_argument('--check',action='store_true',help='read-only: validate data and compare deterministic outputs')
@@ -673,6 +942,8 @@ def main():
     boxes=validate(data)
     validate_fold_sweep()
     correction_checks=validate_v2(data)
+    mesh_checks=validate_v3(data)
+    silhouette_checks=validate_v4(data)
     if args.check:
         parsed=json.loads((HERE/'construction.json').read_text(encoding='utf-8'))
         validate(parsed)
@@ -688,7 +959,7 @@ def main():
             target.write_bytes(raw)
     print(json.dumps({'result':'PASS','mode':'read-only check' if args.check else 'generate',
                       'static_poses':len(data['poses']),'surfaces':len(data['surfaces']),
-                      'outputs':list(outputs),'correction_checks':correction_checks,'bounds':boxes},ensure_ascii=False,indent=2))
+                      'outputs':list(outputs),'correction_checks':correction_checks,'v3_mesh_checks':mesh_checks,'v4_silhouette_checks':silhouette_checks,'bounds':boxes},ensure_ascii=False,indent=2))
 
 
 if __name__=='__main__':

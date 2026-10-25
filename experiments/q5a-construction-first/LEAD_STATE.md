@@ -7,6 +7,45 @@
 
 ## Текущее положение
 
+**ART_GATE_PASSED — STATIC_CANDIDATE_READY_FOR_ASSEMBLY.** После хронологической коррекции CTO поручил закрыть только art gate. Исходная база этого хода: `HEAD = origin/main = 03644152f985ecf225c06ae748100534fbe106ab`. Работа Queue A разрешена; существующая команда сохраняется, Q4A/Q2A не начаты.
+
+Принят статический арт Нэлы `art/attempts/03/` на конструкции v4. Три точных SHA-256 независимо сверены Lead:
+
+| Вход | SHA-256 |
+|---|---|
+| `construction/construction.json`, v4 | `7d06ea4636b49c718dad5e9d9f07000d09fa7e5cf105ec325abb84742bfdba26` |
+| `art/package.json` | `a18bf91c3b00bd29a9246cb206d48d40c454a421136f7d88e5d35d52dc8013b0` |
+| `art/validation.json` | `cc64f60aaa49fc2f9e9282130eef697402a752a346ecae1c79445a7d07066b1e` |
+
+Оба независимых заключения получены для этой версии:
+
+- [ART_CONCEPT_REREVIEW_ATTEMPT03.md](ART_CONCEPT_REREVIEW_ATTEMPT03.md) — `ART_CONCEPT_PASS`, AR1–AR3 закрыты для показанных статических поз.
+- [ART_BUILDER_REREVIEW_ATTEMPT03.md](ART_BUILDER_REREVIEW_ATTEMPT03.md) — `ART_INTEGRATION_PASS`, статические блокеры B1/B2 не воспроизводятся.
+
+Root package/validation побайтно совпадают с `art/attempts/03/candidate-package.json` и `candidate-validation.json`. Проверены SHA всех 15 текстур, 84 outputs, 7 evidence, четырёх генераторных источников и скриптов воспроизведения. Для интеграции обязательны **обе отдельные `silhouette_alpha_file` кистей**: загрузка только RGB или геометрической оболочки не воспроизводит принятый кандидат. Сохраняются общая source-регистрация, pivots, explicit UV/triangles и 16 draw operations.
+
+Цепочка сохранена: v2 — gate commit `d3bdf8f1cffebe2179805eeb54a8a36faab08805`; attempt01/02 и отрицательные художественный/Builder reviews остаются доступными. B1/B2 привели к v3, блокер R1 — к v4 с отдельными `ART_V4_PASS` и `CONCEPT_V4_PASS`, затем выполнен attempt03. Архив v1: **9/9**, архив v3: **13/13** файлов совпали с manifest. Хеши прежних технических PNG v3 **60/60**, v4 **63/63** совпали. Прежние root package/validation и ART.md сохранены в `art/attempts/02/`; отвергнутый плоский вариант кожи — в `art/attempts/03/iterations/flat-fold-light/`. Источники, prompts, processing scripts и correction log сохранены; неудачи не заменены финальным результатом.
+
+Повторные проверки Lead из `D:\dev\R4D`, без writer-режимов и pyc:
+
+```powershell
+python -B experiments/q5a-construction-first/construction/build_package.py --check
+python -B experiments/q5a-construction-first/art/attempts/03/prepare_attempt03.py --check
+python -B experiments/q5a-construction-first/art/attempts/03/validate_attempt03.py
+```
+
+Результаты: construction — PASS, 19 поз/15 поверхностей; reproduction — PASS, 86 файлов побайтно; validation — PASS, 76 hand/scale случаев, 162 защищённых файла. В проверенной статике 0 инверсий и строгих самопересечений; 28 предусмотренных нулевых fold-граней учитываются отдельно. Цветовые пробы запястий — 0, тканевые — максимум 0.718740/255; это локальные пробы, не доказательство идеальной живописи.
+
+Обычный staged `git diff --check` до защиты байтов отметил `new blank line at EOF` в `ART_BUILDER_REREVIEW_ATTEMPT03.md:176` и защищённом `art/attempts/02/ART-attempt02.md:148`. Эти существующие документы не редактируются ради форматирования. После сохранения исходных CRLF повторная staged-проверка с `core.whitespace=cr-at-eol,-blank-at-eof` проходит: CR признаётся частью окончания строки, конечные пустые строки сохраняются ради идентичности evidence; остальные пробельные правила сохранены.
+
+Проверка staged blobs выявила нормализацию CRLF→LF у части хешируемых JSON/документов. Добавлен только локальный `experiments/q5a-construction-first/.gitattributes` с `* -text`, чтобы Git сохранял байты артефактов и архивов при commit/checkout. Исходные файлы не нормализуются и не пересоздаются; после повторного staging содержимое всех Q5A blobs сверяется побайтно с проверенными рабочими файлами. Настройки остальных каталогов не меняются.
+
+**Motion/demo, product assembly, Technical QA и Visual QA ещё не начаты.** Статический PASS не подтверждает вес, контакты во времени, промежуточные кадры, прерывания и выбор наземной цели в полёте. Свет и складки в сильном сжатии приняты художником для показанных поз; их поведение во времени требует последующего просмотра собранного движения.
+
+## Сохранённый construction gate v2
+
+Ниже сохранено описание состояния при фиксации v2; его формулировки «текущий» и «арт ещё не создан» относятся к тому моменту. Актуальная версия и пройденный art gate указаны выше.
+
 **CONSTRUCTION_GATE_PASSED.** По отдельному поручению CTO Lead проверил и фиксирует конструкцию до первого чистового арта. Образ — Нэла, взрослая полевая ботаник с открытой живой анатомией, бирюзовым топом и терракотовыми шортами; [DESIGN.md](DESIGN.md) имеет статус `DESIGN_APPROVED_FOR_CONSTRUCTION`. Конструкцию изготовил Builder, замечания первой версии разобраны и исправлены в v2. Предыдущая запись об ожидании межчатовой переписки больше не описывает фактическое состояние работ. В этом интеграционном ходе межчатовых сообщений нет.
 
 Текущий [construction/construction.json](construction/construction.json) имеет SHA-256 `70f324aa7126f7aea0eca24e42aa370b18bb48d070810f3819a5cab16116e092`: 15 материалов, 19 статических поз. Экранный рост 390 px, viewport 960×640, диагностика ×2. [CONSTRUCTION.md](CONSTRUCTION.md) содержит конструкцию, контракт исходников и причины коррекций.
@@ -41,4 +80,4 @@ python experiments/q5a-construction-first/construction/attempts/v1/build_package
 
 ## Следующий шаг
 
-Следующий производственный этап — чистовой растр по сохранённой конструкции v2. В текущем поручении CTO разрешены только проверка, обновление двух файлов состояния, отдельный commit и push construction gate; чистовой арт, product build, QA и release в этом ходе не начинаются. После этого требуется отдельная выдача следующего шага CTO. Внешняя публикация остаётся отдельным release-шагом после CTO acceptance. Все существенные attempts/corrections сохранять; последующие художественный просмотр и обе QA-проверки должны относиться к собранному поведению и известной версии. Окончательную приёмку и решение об остановке принимает CTO.
+Следующий производственный этап — assembly по принятому статическому attempt03/v4 после отдельного поручения CTO. Текущий ход ограничен проверками, обновлением состояния и отдельным commit/push art gate; assembly, motion/demo, Technical/Visual QA, Q4A/Q2A и release не запускаются. Внешняя публикация остаётся отдельным release-шагом после CTO acceptance. Все существенные attempts/corrections сохранять; последующие художественный просмотр и обе QA-проверки должны относиться к собранному поведению и известной версии. Окончательную приёмку и решение об остановке принимает CTO.

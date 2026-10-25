@@ -1,0 +1,5 @@
+Use case: precise-object-edit
+Asset type: repair ONE cell of an animation surface texture atlas.
+Input images: Image 1 is the atlas edit target. Image 2 is geometry registration only.
+Primary request: change ONLY row 4 column 2, the head_face cell, into a complete bare-skin right-facing profile head WITHOUT any hair and WITHOUT a neck, matching the head-face silhouette in row4 column2 of Image2. Keep Nela's same eye, eyebrow, nose, ear, calm half-smile, warm skin and hand-painted finish. The scalp is plain skin because the separate hair cell is composited over it later. Remove the neck extension below the jaw; the head ends at the jaw/chin contour. No floating hair scraps.
+Constraints: Every other cell is invariant: preserve row1 legs/arms, row2 fabrics, row3 hands/shoes, row4 column1 neck, row4 column3 separate hair and empty cell4. Preserve 4x4 grid, canvas framing, positions, warm shading, and genuine transparent background. No new limbs, no text or watermark. Do not change hairstyle in the separate hair cell. Only the head_face cell is repaired.
