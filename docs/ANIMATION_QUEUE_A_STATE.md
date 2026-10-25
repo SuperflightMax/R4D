@@ -6,7 +6,7 @@
 
 ## Текущее выполнение
 
-**Q2A_ACCEPTED_RELEASE_PACKAGE_READY.** Q5A принят и опубликован.
+**Q2A_PUBLISHED_QUEUE_A_COMPLETE_IDLE.** Q5A принят и опубликован.
 Q4A закрыт как отрицательный/частичный исследовательский результат; его viewer
 опубликован десятой карточкой Review, полноценная анимация и художественный
 PASS не заявляются. Более поздний прямой handoff Макса через Дот поручил
@@ -17,15 +17,17 @@ production gate. Exact P1 `p1_candidate_c2_arms01` из commit `6d5c6b5…`
 `p2_candidate_c2` из commit `3c27b07…` принят CTO как завершённый PoC с
 ограничениями после двух независимых QA PASS из `d81c4bd…`.
 Подготовлен и локально проверен exact Review package: 18 публичных файлов,
-1 179 499 байт. Новая коррекция не открыта. Серверная доставка ещё не
-выполнялась; Q2A не опубликован. Следующий шаг — CTO delivery gate.
+1 179 499 байт. По последующему прямому delivery brief CTO exact пакет
+опубликован одиннадцатой карточкой Review без пересборки или редактирования.
+Новая коррекция не открыта; после выпуска Queue A — idle, без Q7,
+новых проверок, найма или публикаций.
 Актуальная граница — в [операционном состоянии проекта](PROJECT_STATE.md).
 
 | Порядок | Опыт | Состояние | Материалы и показ |
 |---|---|---|---|
 | 1 | Q5A — конструкция до арта | Accepted by CTO; ASSEMBLY03 frozen `101343caa68579aacd5e6c01b94206680c364ab7`; опубликован в существующем Review; серверная доставка и auth-барьер подтверждены | [Открыть Q5A](https://superflight.space/review/r4d/q5a-construction-first/), [release record](../experiments/q5a-construction-first/RELEASE_ASSEMBLY03.md): `PUBLISHED_DELIVERY_VERIFIED_WITH_AUTH_LIMITATION`; post-auth public canvas не проверен, обычный вход SuperFlight сохранён |
 | 2 | Q4A — цельный образ до частей | **RESEARCH_CLOSED_NEGATIVE_PARTIAL**; evidence viewer `negative-review-v02` принят CTO и опубликован из exact commit `47b637ba77681cc17ccf23757396073047430c37` | [Открыть Q4A](https://superflight.space/review/r4d/q4a-whole-character/), [приёмка](../experiments/q4a-whole-character/ACCEPTANCE_NEGATIVE_REVIEW_V02.md), [release record](../experiments/q4a-whole-character/RELEASE_NEGATIVE_REVIEW_V02.md); 26 сохранённых состояний, rejected отдельно; полного движения нет |
-| 3 | Q2A — свободный выбор способа | **Q2A_ACCEPTED_RELEASE_PACKAGE_READY**; P2 C2 `3c27b07…` принят как завершённый PoC с ограничениями | [Приёмка](../experiments/q2a-simple-character/CTO_ACCEPTANCE_P2_C2.md), [QA gate](../experiments/q2a-simple-character/QA_GATE.md), [проверенный пакет](../experiments/q2a-simple-character/RELEASE_PACKAGE_STATE.md); 18 файлов/1 179 499 байт для отдельного Review route, пока не опубликован |
+| 3 | Q2A — свободный выбор способа | **Q2A_PUBLISHED_QUEUE_A_COMPLETE_IDLE**; P2 C2 `3c27b07…` принят как завершённый PoC с ограничениями; exact package опубликован из `66baa7c80dbe55bf28746d4c2a36af6a1deca28d` | [Открыть Q2A](https://superflight.space/review/r4d/q2a-simple-character/), [приёмка](../experiments/q2a-simple-character/CTO_ACCEPTANCE_P2_C2.md), [release record](../experiments/q2a-simple-character/RELEASE_P2_C2.md); 18 exact файлов/1 179 499 байт; post-auth canvas не проверен |
 
 Независимые review `attempt03` завершили уже существующие сессии:
 Concept Artist `01a16ffd-87e7-7cf3-a9a2-29d2cd97a7ec` и Builder
@@ -79,11 +81,14 @@ CTO лично проверил exact frozen P1 на светлом/тёмном
 следующего gate; готовый принятый Q2A должен быть опубликован в Review по
 прямому разрешению Макса.
 
+25 октября 2026, 22:51:58 Europe/Kyiv, Release Engineer выполнил прямой Q2A delivery brief: активирован immutable root `/srv/superflight-review/releases/66baa7c80dbe55bf28746d4c2a36af6a1deca28d`. Фактическая прежняя live-основа Q4A содержала 396 browser-файлов; 395 сохранены побайтно, в каталоге только новая карточка и счётчик 10→11. Добавлены 18 exact файлов принятого package (public tree `e2e60f6d3b714ef0d0409f1de36f6a870ac17bc8`); всего414 файлов/42270006 bytes. Package/production diff=none. Серверные paths/hash/size/права/no-symlinks сверены до/после, все414 файлов совпали по локальному HTTP; desktop1440×1000/mobile390×844 controls/обе последовательности/flight targets/pause/history/light-dark прошли без errors/failed/external/overflow. Обычная публичная auth-граница сохранена; post-auth canvas не проверен, личный Chrome не использовался по brief. Полные hashes, ограничения и свежий rollback — в [RELEASE_P2_C2.md](../experiments/q2a-simple-character/RELEASE_P2_C2.md). После выпуска **Q2A_PUBLISHED_QUEUE_A_COMPLETE_IDLE**; Q7, corrections, новые проверки/публикации/найм не запускаются.
+
 CTO по ходу заменяет сведения фактическим состоянием: активный опыт, команда, ссылки на материалы/демо, полученное качество и решение о продолжении или остановке. Появление каталога само по себе не означает начала или завершения опыта. Новый отдельный статусный сервис не требуется.
 
 ## Итог очереди
 
-Сравнительный итог всей очереди отсутствует: Q5A принят и опубликован,
+Все три результата Queue A опубликованы; отдельный сравнительный вывод CTO
+этим delivery не создавался. Q5A принят и опубликован,
 Q4A закрыт negative/partial и опубликован как evidence viewer; Q2A принят CTO
 как завершённый PoC с ограничениями. Оба независимых QA дали PASS без
 блокеров в проверенном объёме. CTO принял дополнительные 49,201185° при
@@ -96,7 +101,7 @@ toe-contact и 61,257567° свободной стопы, особенности
 `/review/r4d/q2a-simple-character/`, 18 файлов и 1 179 499 байт.
 SHA256 provenance: `61691306ebe4adb5c043dd0abfc4ceebb333f9984f4032c1692d8cba85aafca5`.
 Независимый локальный package-QA прошёл; source snapshot не изменён,
-частные материалы вне публичного дерева. Следующий gate — CTO delivery
-brief, отдельного согласования допустимости VPS с Максом не требуется.
-**Публикация этим шагом не выполнялась, Q2A пока не опубликован.**
-Материалы Q1–Q6, Q5A и frozen Q4A сохраняются.
+частные материалы вне публичного дерева. Отдельный CTO delivery brief
+выполнен: Q2A опубликован и проверен в указанных release record границах.
+**Q2A_PUBLISHED_QUEUE_A_COMPLETE_IDLE.** Материалы Q1–Q6, Q5A, frozen Q4A
+и принятый Q2A сохранены; новые задачи не запускаются.
