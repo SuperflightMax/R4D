@@ -12,6 +12,7 @@ Research for development. What AI can really do.
 
 - [Контекст архитектора и текущая точка обсуждения](architect/START_HERE.md).
 - **[Новый заказ CTO: перспективные доски Millionko, P0–P6](orders/perspective/ORDER.md)**; [состояние](docs/PERSPECTIVE_RESEARCH_STATE.md), [исходные картинки в синхронизируемой папке](references/perspective/README.md). Две приёмки Макса — после перспективы и коллайдеров; затем пять самостоятельных способов визуализации последовательно без ожидания промежуточного просмотра.
+- **[Новый CTO и разрешение начать P0](work/requests/DIRECTOR_PERSPECTIVE_CTO_START.md)** — прямое решение Макса от 25 октября; кадровая передача подготовлена, назначение и фактический старт подтверждаются отдельно.
 - **[Скелетная очередь: Q5A → Q4A → Q2A с чистого листа](CTO_EXPERIMENT_QUEUE_A.md)**; [фактическое состояние](docs/ANIMATION_QUEUE_A_STATE.md).
 - [Завершённая очередь Q1–Q6](CTO_EXPERIMENT_QUEUE.md) и [её сравнительный вывод](docs/Q1_Q6_COMPARATIVE_CONCLUSION.md) сохраняются отдельно.
 - [Завершённое поручение Researcher](CTO_RESEARCH_TASK.md): [профессиональная подготовка арта](docs/research/2d-raster-preparation/art-preparation.md), [AI-подходы](docs/research/2d-raster-preparation/ai-approaches.md) и [рекомендация CTO](docs/research/2d-raster-preparation/recommendation.md).
