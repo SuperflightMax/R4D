@@ -1,0 +1,1020 @@
+{
+  "cursor": 116,
+  "events": [
+    {
+      "sequence": 27,
+      "source": {
+        "tabId": 3
+      },
+      "method": "Network.requestWillBeSent",
+      "params": {
+        "documentURL": "http://127.0.0.1:4340/review/r4d/q2a-simple-character/",
+        "frameId": "8F608B8FBA00B04083C3F2739FB4A9C7",
+        "hasUserGesture": false,
+        "initiator": {
+          "type": "other"
+        },
+        "loaderId": "1133CB94DEAFDB6755D17704832F4658",
+        "redirectHasExtraInfo": false,
+        "request": {
+          "headers": {
+            "Upgrade-Insecure-Requests": "1",
+            "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/155.0.0.0 Safari/537.36",
+            "sec-ch-ua": "\"Google Chrome\";v=\"155\", \"Chromium\";v=\"155\", \"Not(A:Brand\";v=\"24\"",
+            "sec-ch-ua-mobile": "?0",
+            "sec-ch-ua-platform": "\"Windows\""
+          },
+          "initialPriority": "VeryHigh",
+          "isSameSite": true,
+          "method": "GET",
+          "mixedContentType": "none",
+          "referrerPolicy": "strict-origin-when-cross-origin",
+          "url": "http://127.0.0.1:4340/review/r4d/q2a-simple-character/"
+        },
+        "requestId": "1133CB94DEAFDB6755D17704832F4658",
+        "timestamp": 1165790.896958,
+        "type": "Document",
+        "wallTime": 1792957247.540885
+      }
+    },
+    {
+      "sequence": 31,
+      "source": {
+        "tabId": 3
+      },
+      "method": "Network.responseReceived",
+      "params": {
+        "frameId": "8F608B8FBA00B04083C3F2739FB4A9C7",
+        "hasExtraInfo": true,
+        "loaderId": "1133CB94DEAFDB6755D17704832F4658",
+        "requestId": "1133CB94DEAFDB6755D17704832F4658",
+        "response": {
+          "alternateProtocolUsage": "unspecifiedReason",
+          "charset": "utf-8",
+          "connectionId": 423572,
+          "connectionReused": true,
+          "encodedDataLength": 196,
+          "fromDiskCache": false,
+          "fromPrefetchCache": false,
+          "fromServiceWorker": false,
+          "headers": {
+            "Cache-Control": "no-store",
+            "Connection": "keep-alive",
+            "Content-Type": "text/html; charset=utf-8",
+            "Date": "Sun, 25 Oct 2026 19:40:47 GMT",
+            "Keep-Alive": "timeout=5",
+            "Transfer-Encoding": "chunked"
+          },
+          "mimeType": "text/html",
+          "protocol": "http/1.1",
+          "remoteIPAddress": "127.0.0.1",
+          "remotePort": 4340,
+          "responseTime": 1792957247545.4,
+          "securityState": "secure",
+          "status": 200,
+          "statusText": "OK",
+          "timing": {
+            "connectEnd": -1,
+            "connectStart": -1,
+            "dnsEnd": -1,
+            "dnsStart": -1,
+            "proxyEnd": -1,
+            "proxyStart": -1,
+            "pushEnd": 0,
+            "pushStart": 0,
+            "receiveHeadersEnd": 2.109,
+            "receiveHeadersStart": 2.034,
+            "requestTime": 1165790.899448,
+            "sendEnd": 0.948,
+            "sendStart": 0.779,
+            "sslEnd": -1,
+            "sslStart": -1,
+            "workerFetchStart": -1,
+            "workerReady": -1,
+            "workerRespondWithSettled": -1,
+            "workerStart": -1
+          },
+          "url": "http://127.0.0.1:4340/review/r4d/q2a-simple-character/"
+        },
+        "timestamp": 1165790.905263,
+        "type": "Document"
+      }
+    },
+    {
+      "sequence": 44,
+      "source": {
+        "tabId": 3
+      },
+      "method": "Network.requestWillBeSent",
+      "params": {
+        "documentURL": "http://127.0.0.1:4340/review/r4d/q2a-simple-character/",
+        "frameId": "8F608B8FBA00B04083C3F2739FB4A9C7",
+        "hasUserGesture": false,
+        "initiator": {
+          "columnNumber": 50,
+          "lineNumber": 7,
+          "type": "parser",
+          "url": "http://127.0.0.1:4340/review/r4d/q2a-simple-character/"
+        },
+        "loaderId": "1133CB94DEAFDB6755D17704832F4658",
+        "redirectHasExtraInfo": false,
+        "renderBlockingBehavior": "Blocking",
+        "request": {
+          "headers": {
+            "Referer": "http://127.0.0.1:4340/review/r4d/q2a-simple-character/",
+            "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/155.0.0.0 Safari/537.36",
+            "sec-ch-ua": "\"Google Chrome\";v=\"155\", \"Chromium\";v=\"155\", \"Not(A:Brand\";v=\"24\"",
+            "sec-ch-ua-mobile": "?0",
+            "sec-ch-ua-platform": "\"Windows\""
+          },
+          "initialPriority": "VeryHigh",
+          "isSameSite": true,
+          "method": "GET",
+          "mixedContentType": "none",
+          "referrerPolicy": "strict-origin-when-cross-origin",
+          "url": "http://127.0.0.1:4340/review/r4d/q2a-simple-character/runtime/style.css"
+        },
+        "requestId": "11488.27",
+        "timestamp": 1165790.919866,
+        "type": "Stylesheet",
+        "wallTime": 1792957247.563826
+      }
+    },
+    {
+      "sequence": 45,
+      "source": {
+        "tabId": 3
+      },
+      "method": "Network.requestWillBeSent",
+      "params": {
+        "documentURL": "http://127.0.0.1:4340/review/r4d/q2a-simple-character/",
+        "frameId": "8F608B8FBA00B04083C3F2739FB4A9C7",
+        "hasUserGesture": false,
+        "initiator": {
+          "columnNumber": 43,
+          "lineNumber": 27,
+          "type": "parser",
+          "url": "http://127.0.0.1:4340/review/r4d/q2a-simple-character/"
+        },
+        "loaderId": "1133CB94DEAFDB6755D17704832F4658",
+        "redirectHasExtraInfo": false,
+        "renderBlockingBehavior": "Blocking",
+        "request": {
+          "headers": {
+            "Referer": "http://127.0.0.1:4340/review/r4d/q2a-simple-character/",
+            "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/155.0.0.0 Safari/537.36",
+            "sec-ch-ua": "\"Google Chrome\";v=\"155\", \"Chromium\";v=\"155\", \"Not(A:Brand\";v=\"24\"",
+            "sec-ch-ua-mobile": "?0",
+            "sec-ch-ua-platform": "\"Windows\""
+          },
+          "initialPriority": "High",
+          "isSameSite": true,
+          "method": "GET",
+          "mixedContentType": "none",
+          "referrerPolicy": "strict-origin-when-cross-origin",
+          "url": "http://127.0.0.1:4340/review/r4d/q2a-simple-character/runtime/vendor/pixi.min.js"
+        },
+        "requestId": "11488.28",
+        "timestamp": 1165790.920197,
+        "type": "Script",
+        "wallTime": 1792957247.564135
+      }
+    },
+    {
+      "sequence": 46,
+      "source": {
+        "tabId": 3
+      },
+      "method": "Network.requestWillBeSent",
+      "params": {
+        "documentURL": "http://127.0.0.1:4340/review/r4d/q2a-simple-character/",
+        "frameId": "8F608B8FBA00B04083C3F2739FB4A9C7",
+        "hasUserGesture": false,
+        "initiator": {
+          "columnNumber": 46,
+          "lineNumber": 28,
+          "type": "parser",
+          "url": "http://127.0.0.1:4340/review/r4d/q2a-simple-character/"
+        },
+        "loaderId": "1133CB94DEAFDB6755D17704832F4658",
+        "redirectHasExtraInfo": false,
+        "renderBlockingBehavior": "NonBlocking",
+        "request": {
+          "headers": {
+            "Origin": "http://127.0.0.1:4340",
+            "Referer": "http://127.0.0.1:4340/review/r4d/q2a-simple-character/",
+            "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/155.0.0.0 Safari/537.36",
+            "sec-ch-ua": "\"Google Chrome\";v=\"155\", \"Chromium\";v=\"155\", \"Not(A:Brand\";v=\"24\"",
+            "sec-ch-ua-mobile": "?0",
+            "sec-ch-ua-platform": "\"Windows\""
+          },
+          "initialPriority": "High",
+          "isSameSite": true,
+          "method": "GET",
+          "mixedContentType": "none",
+          "referrerPolicy": "strict-origin-when-cross-origin",
+          "url": "http://127.0.0.1:4340/review/r4d/q2a-simple-character/runtime/main.js"
+        },
+        "requestId": "11488.29",
+        "timestamp": 1165790.920297,
+        "type": "Script",
+        "wallTime": 1792957247.564235
+      }
+    },
+    {
+      "sequence": 51,
+      "source": {
+        "tabId": 3
+      },
+      "method": "Network.responseReceived",
+      "params": {
+        "frameId": "8F608B8FBA00B04083C3F2739FB4A9C7",
+        "hasExtraInfo": true,
+        "loaderId": "1133CB94DEAFDB6755D17704832F4658",
+        "requestId": "11488.27",
+        "response": {
+          "alternateProtocolUsage": "unspecifiedReason",
+          "charset": "utf-8",
+          "connectionId": 423572,
+          "connectionReused": true,
+          "encodedDataLength": 195,
+          "fromDiskCache": false,
+          "fromPrefetchCache": false,
+          "fromServiceWorker": false,
+          "headers": {
+            "Cache-Control": "no-store",
+            "Connection": "keep-alive",
+            "Content-Type": "text/css; charset=utf-8",
+            "Date": "Sun, 25 Oct 2026 19:40:47 GMT",
+            "Keep-Alive": "timeout=5",
+            "Transfer-Encoding": "chunked"
+          },
+          "mimeType": "text/css",
+          "protocol": "http/1.1",
+          "remoteIPAddress": "127.0.0.1",
+          "remotePort": 4340,
+          "responseTime": 1792957247579.445,
+          "securityState": "secure",
+          "status": 200,
+          "statusText": "OK",
+          "timing": {
+            "connectEnd": -1,
+            "connectStart": -1,
+            "dnsEnd": -1,
+            "dnsStart": -1,
+            "proxyEnd": -1,
+            "proxyStart": -1,
+            "pushEnd": 0,
+            "pushStart": 0,
+            "receiveHeadersEnd": 8.772,
+            "receiveHeadersStart": 8.7,
+            "requestTime": 1165790.926827,
+            "sendEnd": 7.83,
+            "sendStart": 7.651,
+            "sslEnd": -1,
+            "sslStart": -1,
+            "workerFetchStart": -1,
+            "workerReady": -1,
+            "workerRespondWithSettled": -1,
+            "workerStart": -1
+          },
+          "url": "http://127.0.0.1:4340/review/r4d/q2a-simple-character/runtime/style.css"
+        },
+        "timestamp": 1165790.954025,
+        "type": "Stylesheet"
+      }
+    },
+    {
+      "sequence": 55,
+      "source": {
+        "tabId": 3
+      },
+      "method": "Network.responseReceived",
+      "params": {
+        "frameId": "8F608B8FBA00B04083C3F2739FB4A9C7",
+        "hasExtraInfo": true,
+        "loaderId": "1133CB94DEAFDB6755D17704832F4658",
+        "requestId": "11488.29",
+        "response": {
+          "alternateProtocolUsage": "unspecifiedReason",
+          "charset": "utf-8",
+          "connectionId": 423597,
+          "connectionReused": false,
+          "encodedDataLength": 202,
+          "fromDiskCache": false,
+          "fromPrefetchCache": false,
+          "fromServiceWorker": false,
+          "headers": {
+            "Cache-Control": "no-store",
+            "Connection": "keep-alive",
+            "Content-Type": "text/javascript; charset=utf-8",
+            "Date": "Sun, 25 Oct 2026 19:40:47 GMT",
+            "Keep-Alive": "timeout=5",
+            "Transfer-Encoding": "chunked"
+          },
+          "mimeType": "text/javascript",
+          "protocol": "http/1.1",
+          "remoteIPAddress": "127.0.0.1",
+          "remotePort": 4340,
+          "responseTime": 1792957247582.734,
+          "securityState": "secure",
+          "status": 200,
+          "statusText": "OK",
+          "timing": {
+            "connectEnd": 2.871,
+            "connectStart": 2.222,
+            "dnsEnd": 2.222,
+            "dnsStart": 2.21,
+            "proxyEnd": -1,
+            "proxyStart": -1,
+            "pushEnd": 0,
+            "pushStart": 0,
+            "receiveHeadersEnd": 4.995,
+            "receiveHeadersStart": 4.937,
+            "requestTime": 1165790.93388,
+            "sendEnd": 3.102,
+            "sendStart": 2.97,
+            "sslEnd": -1,
+            "sslStart": -1,
+            "workerFetchStart": -1,
+            "workerReady": -1,
+            "workerRespondWithSettled": -1,
+            "workerStart": -1
+          },
+          "url": "http://127.0.0.1:4340/review/r4d/q2a-simple-character/runtime/main.js"
+        },
+        "timestamp": 1165790.955838,
+        "type": "Script"
+      }
+    },
+    {
+      "sequence": 60,
+      "source": {
+        "tabId": 3
+      },
+      "method": "Network.responseReceived",
+      "params": {
+        "frameId": "8F608B8FBA00B04083C3F2739FB4A9C7",
+        "hasExtraInfo": true,
+        "loaderId": "1133CB94DEAFDB6755D17704832F4658",
+        "requestId": "11488.28",
+        "response": {
+          "alternateProtocolUsage": "unspecifiedReason",
+          "charset": "utf-8",
+          "connectionId": 423592,
+          "connectionReused": false,
+          "encodedDataLength": 202,
+          "fromDiskCache": false,
+          "fromPrefetchCache": false,
+          "fromServiceWorker": false,
+          "headers": {
+            "Cache-Control": "no-store",
+            "Connection": "keep-alive",
+            "Content-Type": "text/javascript; charset=utf-8",
+            "Date": "Sun, 25 Oct 2026 19:40:47 GMT",
+            "Keep-Alive": "timeout=5",
+            "Transfer-Encoding": "chunked"
+          },
+          "mimeType": "text/javascript",
+          "protocol": "http/1.1",
+          "remoteIPAddress": "127.0.0.1",
+          "remotePort": 4340,
+          "responseTime": 1792957247581.609,
+          "securityState": "secure",
+          "status": 200,
+          "statusText": "OK",
+          "timing": {
+            "connectEnd": 8.363,
+            "connectStart": 7.65,
+            "dnsEnd": 7.65,
+            "dnsStart": 7.631,
+            "proxyEnd": -1,
+            "proxyStart": -1,
+            "pushEnd": 0,
+            "pushStart": 0,
+            "receiveHeadersEnd": 10.626,
+            "receiveHeadersStart": 10.563,
+            "requestTime": 1165790.927128,
+            "sendEnd": 8.718,
+            "sendStart": 8.58,
+            "sslEnd": -1,
+            "sslStart": -1,
+            "workerFetchStart": -1,
+            "workerReady": -1,
+            "workerRespondWithSettled": -1,
+            "workerStart": -1
+          },
+          "url": "http://127.0.0.1:4340/review/r4d/q2a-simple-character/runtime/vendor/pixi.min.js"
+        },
+        "timestamp": 1165790.97934,
+        "type": "Script"
+      }
+    },
+    {
+      "sequence": 67,
+      "source": {
+        "tabId": 3
+      },
+      "method": "Network.requestWillBeSent",
+      "params": {
+        "documentURL": "http://127.0.0.1:4340/review/r4d/q2a-simple-character/",
+        "frameId": "8F608B8FBA00B04083C3F2739FB4A9C7",
+        "hasUserGesture": false,
+        "initiator": {
+          "columnNumber": 57,
+          "lineNumber": 0,
+          "type": "script",
+          "url": "http://127.0.0.1:4340/review/r4d/q2a-simple-character/runtime/main.js"
+        },
+        "loaderId": "1133CB94DEAFDB6755D17704832F4658",
+        "redirectHasExtraInfo": false,
+        "renderBlockingBehavior": "NonBlocking",
+        "request": {
+          "headers": {
+            "Origin": "http://127.0.0.1:4340",
+            "Referer": "http://127.0.0.1:4340/review/r4d/q2a-simple-character/runtime/main.js",
+            "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/155.0.0.0 Safari/537.36",
+            "sec-ch-ua": "\"Google Chrome\";v=\"155\", \"Chromium\";v=\"155\", \"Not(A:Brand\";v=\"24\"",
+            "sec-ch-ua-mobile": "?0",
+            "sec-ch-ua-platform": "\"Windows\""
+          },
+          "initialPriority": "High",
+          "isSameSite": true,
+          "method": "GET",
+          "mixedContentType": "none",
+          "referrerPolicy": "strict-origin-when-cross-origin",
+          "url": "http://127.0.0.1:4340/review/r4d/q2a-simple-character/runtime/pose.js"
+        },
+        "requestId": "11488.33",
+        "timestamp": 1165791.009427,
+        "type": "Script",
+        "wallTime": 1792957247.653373
+      }
+    },
+    {
+      "sequence": 68,
+      "source": {
+        "tabId": 3
+      },
+      "method": "Network.requestWillBeSent",
+      "params": {
+        "documentURL": "http://127.0.0.1:4340/review/r4d/q2a-simple-character/",
+        "frameId": "8F608B8FBA00B04083C3F2739FB4A9C7",
+        "hasUserGesture": false,
+        "initiator": {
+          "columnNumber": 21,
+          "lineNumber": 1,
+          "type": "script",
+          "url": "http://127.0.0.1:4340/review/r4d/q2a-simple-character/runtime/main.js"
+        },
+        "loaderId": "1133CB94DEAFDB6755D17704832F4658",
+        "redirectHasExtraInfo": false,
+        "renderBlockingBehavior": "NonBlocking",
+        "request": {
+          "headers": {
+            "Origin": "http://127.0.0.1:4340",
+            "Referer": "http://127.0.0.1:4340/review/r4d/q2a-simple-character/runtime/main.js",
+            "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/155.0.0.0 Safari/537.36",
+            "sec-ch-ua": "\"Google Chrome\";v=\"155\", \"Chromium\";v=\"155\", \"Not(A:Brand\";v=\"24\"",
+            "sec-ch-ua-mobile": "?0",
+            "sec-ch-ua-platform": "\"Windows\""
+          },
+          "initialPriority": "High",
+          "isSameSite": true,
+          "method": "GET",
+          "mixedContentType": "none",
+          "referrerPolicy": "strict-origin-when-cross-origin",
+          "url": "http://127.0.0.1:4340/review/r4d/q2a-simple-character/runtime/motion.js"
+        },
+        "requestId": "11488.34",
+        "timestamp": 1165791.009555,
+        "type": "Script",
+        "wallTime": 1792957247.653491
+      }
+    },
+    {
+      "sequence": 73,
+      "source": {
+        "tabId": 3
+      },
+      "method": "Network.responseReceived",
+      "params": {
+        "frameId": "8F608B8FBA00B04083C3F2739FB4A9C7",
+        "hasExtraInfo": true,
+        "loaderId": "1133CB94DEAFDB6755D17704832F4658",
+        "requestId": "11488.33",
+        "response": {
+          "alternateProtocolUsage": "unspecifiedReason",
+          "charset": "utf-8",
+          "connectionId": 423597,
+          "connectionReused": true,
+          "encodedDataLength": 202,
+          "fromDiskCache": false,
+          "fromPrefetchCache": false,
+          "fromServiceWorker": false,
+          "headers": {
+            "Cache-Control": "no-store",
+            "Connection": "keep-alive",
+            "Content-Type": "text/javascript; charset=utf-8",
+            "Date": "Sun, 25 Oct 2026 19:40:47 GMT",
+            "Keep-Alive": "timeout=5",
+            "Transfer-Encoding": "chunked"
+          },
+          "mimeType": "text/javascript",
+          "protocol": "http/1.1",
+          "remoteIPAddress": "127.0.0.1",
+          "remotePort": 4340,
+          "responseTime": 1792957247656.19,
+          "securityState": "secure",
+          "status": 200,
+          "statusText": "OK",
+          "timing": {
+            "connectEnd": -1,
+            "connectStart": -1,
+            "dnsEnd": -1,
+            "dnsStart": -1,
+            "proxyEnd": -1,
+            "proxyStart": -1,
+            "pushEnd": 0,
+            "pushStart": 0,
+            "receiveHeadersEnd": 1.668,
+            "receiveHeadersStart": 1.603,
+            "requestTime": 1165791.010669,
+            "sendEnd": 0.709,
+            "sendStart": 0.6,
+            "sslEnd": -1,
+            "sslStart": -1,
+            "workerFetchStart": -1,
+            "workerReady": -1,
+            "workerRespondWithSettled": -1,
+            "workerStart": -1
+          },
+          "url": "http://127.0.0.1:4340/review/r4d/q2a-simple-character/runtime/pose.js"
+        },
+        "timestamp": 1165791.01438,
+        "type": "Script"
+      }
+    },
+    {
+      "sequence": 77,
+      "source": {
+        "tabId": 3
+      },
+      "method": "Network.responseReceived",
+      "params": {
+        "frameId": "8F608B8FBA00B04083C3F2739FB4A9C7",
+        "hasExtraInfo": true,
+        "loaderId": "1133CB94DEAFDB6755D17704832F4658",
+        "requestId": "11488.34",
+        "response": {
+          "alternateProtocolUsage": "unspecifiedReason",
+          "charset": "utf-8",
+          "connectionId": 423592,
+          "connectionReused": true,
+          "encodedDataLength": 202,
+          "fromDiskCache": false,
+          "fromPrefetchCache": false,
+          "fromServiceWorker": false,
+          "headers": {
+            "Cache-Control": "no-store",
+            "Connection": "keep-alive",
+            "Content-Type": "text/javascript; charset=utf-8",
+            "Date": "Sun, 25 Oct 2026 19:40:47 GMT",
+            "Keep-Alive": "timeout=5",
+            "Transfer-Encoding": "chunked"
+          },
+          "mimeType": "text/javascript",
+          "protocol": "http/1.1",
+          "remoteIPAddress": "127.0.0.1",
+          "remotePort": 4340,
+          "responseTime": 1792957247656.692,
+          "securityState": "secure",
+          "status": 200,
+          "statusText": "OK",
+          "timing": {
+            "connectEnd": -1,
+            "connectStart": -1,
+            "dnsEnd": -1,
+            "dnsStart": -1,
+            "proxyEnd": -1,
+            "proxyStart": -1,
+            "pushEnd": 0,
+            "pushStart": 0,
+            "receiveHeadersEnd": 1.931,
+            "receiveHeadersStart": 1.898,
+            "requestTime": 1165791.010876,
+            "sendEnd": 0.835,
+            "sendStart": 0.757,
+            "sslEnd": -1,
+            "sslStart": -1,
+            "workerFetchStart": -1,
+            "workerReady": -1,
+            "workerRespondWithSettled": -1,
+            "workerStart": -1
+          },
+          "url": "http://127.0.0.1:4340/review/r4d/q2a-simple-character/runtime/motion.js"
+        },
+        "timestamp": 1165791.01581,
+        "type": "Script"
+      }
+    },
+    {
+      "sequence": 83,
+      "source": {
+        "tabId": 3
+      },
+      "method": "Network.requestWillBeSent",
+      "params": {
+        "documentURL": "http://127.0.0.1:4340/review/r4d/q2a-simple-character/",
+        "frameId": "8F608B8FBA00B04083C3F2739FB4A9C7",
+        "hasUserGesture": false,
+        "initiator": {
+          "stack": {
+            "callFrames": [
+              {
+                "columnNumber": 23,
+                "functionName": "loadArt",
+                "lineNumber": 16,
+                "scriptId": "9",
+                "url": "http://127.0.0.1:4340/review/r4d/q2a-simple-character/runtime/main.js"
+              },
+              {
+                "columnNumber": 6,
+                "functionName": "",
+                "lineNumber": 63,
+                "scriptId": "9",
+                "url": "http://127.0.0.1:4340/review/r4d/q2a-simple-character/runtime/main.js"
+              }
+            ]
+          },
+          "type": "script"
+        },
+        "loaderId": "1133CB94DEAFDB6755D17704832F4658",
+        "redirectHasExtraInfo": false,
+        "request": {
+          "headers": {
+            "Referer": "http://127.0.0.1:4340/review/r4d/q2a-simple-character/",
+            "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/155.0.0.0 Safari/537.36",
+            "sec-ch-ua": "\"Google Chrome\";v=\"155\", \"Chromium\";v=\"155\", \"Not(A:Brand\";v=\"24\"",
+            "sec-ch-ua-mobile": "?0",
+            "sec-ch-ua-platform": "\"Windows\""
+          },
+          "initialPriority": "High",
+          "isSameSite": true,
+          "method": "GET",
+          "mixedContentType": "none",
+          "referrerPolicy": "strict-origin-when-cross-origin",
+          "url": "http://127.0.0.1:4340/review/r4d/q2a-simple-character/runtime/art-binding.json"
+        },
+        "requestId": "11488.35",
+        "timestamp": 1165791.068356,
+        "type": "Fetch",
+        "wallTime": 1792957247.712357
+      }
+    },
+    {
+      "sequence": 86,
+      "source": {
+        "tabId": 3
+      },
+      "method": "Network.responseReceived",
+      "params": {
+        "frameId": "8F608B8FBA00B04083C3F2739FB4A9C7",
+        "hasExtraInfo": true,
+        "loaderId": "1133CB94DEAFDB6755D17704832F4658",
+        "requestId": "11488.35",
+        "response": {
+          "alternateProtocolUsage": "unspecifiedReason",
+          "charset": "utf-8",
+          "connectionId": 423592,
+          "connectionReused": true,
+          "encodedDataLength": 203,
+          "fromDiskCache": false,
+          "fromPrefetchCache": false,
+          "fromServiceWorker": false,
+          "headers": {
+            "Cache-Control": "no-store",
+            "Connection": "keep-alive",
+            "Content-Type": "application/json; charset=utf-8",
+            "Date": "Sun, 25 Oct 2026 19:40:47 GMT",
+            "Keep-Alive": "timeout=5",
+            "Transfer-Encoding": "chunked"
+          },
+          "mimeType": "application/json",
+          "protocol": "http/1.1",
+          "remoteIPAddress": "127.0.0.1",
+          "remotePort": 4340,
+          "responseTime": 1792957247715.449,
+          "securityState": "secure",
+          "status": 200,
+          "statusText": "OK",
+          "timing": {
+            "connectEnd": -1,
+            "connectStart": -1,
+            "dnsEnd": -1,
+            "dnsStart": -1,
+            "proxyEnd": -1,
+            "proxyStart": -1,
+            "pushEnd": 0,
+            "pushStart": 0,
+            "receiveHeadersEnd": 1.859,
+            "receiveHeadersStart": 1.787,
+            "requestTime": 1165791.069744,
+            "sendEnd": 0.723,
+            "sendStart": 0.598,
+            "sslEnd": -1,
+            "sslStart": -1,
+            "workerFetchStart": -1,
+            "workerReady": -1,
+            "workerRespondWithSettled": -1,
+            "workerStart": -1
+          },
+          "url": "http://127.0.0.1:4340/review/r4d/q2a-simple-character/runtime/art-binding.json"
+        },
+        "timestamp": 1165791.082604,
+        "type": "Fetch"
+      }
+    },
+    {
+      "sequence": 93,
+      "source": {
+        "tabId": 3
+      },
+      "method": "Network.requestWillBeSent",
+      "params": {
+        "documentURL": "http://127.0.0.1:4340/review/r4d/q2a-simple-character/",
+        "frameId": "8F608B8FBA00B04083C3F2739FB4A9C7",
+        "hasUserGesture": false,
+        "initiator": {
+          "stack": {
+            "callFrames": [
+              {
+                "columnNumber": 36409,
+                "functionName": "",
+                "lineNumber": 123,
+                "scriptId": "10",
+                "url": "http://127.0.0.1:4340/review/r4d/q2a-simple-character/runtime/vendor/pixi.min.js"
+              },
+              {
+                "columnNumber": 36327,
+                "functionName": "hl",
+                "lineNumber": 123,
+                "scriptId": "10",
+                "url": "http://127.0.0.1:4340/review/r4d/q2a-simple-character/runtime/vendor/pixi.min.js"
+              },
+              {
+                "columnNumber": 36647,
+                "functionName": "test",
+                "lineNumber": 123,
+                "scriptId": "10",
+                "url": "http://127.0.0.1:4340/review/r4d/q2a-simple-character/runtime/vendor/pixi.min.js"
+              },
+              {
+                "columnNumber": 11247,
+                "functionName": "_detectFormats",
+                "lineNumber": 348,
+                "scriptId": "10",
+                "url": "http://127.0.0.1:4340/review/r4d/q2a-simple-character/runtime/vendor/pixi.min.js"
+              },
+              {
+                "columnNumber": 8491,
+                "functionName": "init",
+                "lineNumber": 348,
+                "scriptId": "10",
+                "url": "http://127.0.0.1:4340/review/r4d/q2a-simple-character/runtime/vendor/pixi.min.js"
+              },
+              {
+                "columnNumber": 8901,
+                "functionName": "load",
+                "lineNumber": 348,
+                "scriptId": "10",
+                "url": "http://127.0.0.1:4340/review/r4d/q2a-simple-character/runtime/vendor/pixi.min.js"
+              },
+              {
+                "columnNumber": 31,
+                "functionName": "loadArt",
+                "lineNumber": 25,
+                "scriptId": "9",
+                "url": "http://127.0.0.1:4340/review/r4d/q2a-simple-character/runtime/main.js"
+              }
+            ]
+          },
+          "type": "script"
+        },
+        "loaderId": "1133CB94DEAFDB6755D17704832F4658",
+        "redirectHasExtraInfo": false,
+        "request": {
+          "headers": {
+            "Referer": "http://127.0.0.1:4340/",
+            "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/155.0.0.0 Safari/537.36"
+          },
+          "initialPriority": "Low",
+          "isSameSite": false,
+          "method": "GET",
+          "mixedContentType": "none",
+          "referrerPolicy": "strict-origin-when-cross-origin",
+          "url": "data:image/avif;base64,AAAAIGZ0eXBhdmlmAAAAAGF2aWZtaWYxbWlhZk1BMUIAAADybWV0YQAAAAAAAAAoaGRscgAAAAAAAAAAcGljdAAAAAAAAAAAAAAAAGxpYmF2aWYAAAAADnBpdG0AAAAAAAEAAAAeaWxvYwAAAABEAAABAAEAAAABAAABGgAAAB0AAAAoaWluZgAAAAAAAQAAABppbmZlAgAAAAABAABhdjAxQ29sb3IAAAAAamlwcnAAAABLaXBjbwAAABRpc3BlAAAAAAAAAAIAAAACAAAAEHBpeGkAAAAAAwgICAAAAAxhdjFDgQ0MAAAAABNjb2xybmNseAACAAIAAYAAAAAXaXBtYQAAAAAAAAABAAEEAQKDBAAAACVtZGF0EgAKCBgANogQEAwgMg8f8D///8WfhwB8+ErK42A="
+        },
+        "requestId": "11488.36",
+        "timestamp": 1165791.092954,
+        "type": "Image",
+        "wallTime": 1792957247.737524
+      }
+    },
+    {
+      "sequence": 95,
+      "source": {
+        "tabId": 3
+      },
+      "method": "Network.responseReceived",
+      "params": {
+        "frameId": "8F608B8FBA00B04083C3F2739FB4A9C7",
+        "hasExtraInfo": false,
+        "loaderId": "1133CB94DEAFDB6755D17704832F4658",
+        "requestId": "11488.36",
+        "response": {
+          "charset": "",
+          "connectionId": 0,
+          "connectionReused": false,
+          "encodedDataLength": 0,
+          "fromDiskCache": false,
+          "fromPrefetchCache": false,
+          "fromServiceWorker": false,
+          "headers": {
+            "Content-Type": "image/avif"
+          },
+          "mimeType": "image/avif",
+          "protocol": "data",
+          "securityState": "unknown",
+          "status": 200,
+          "statusText": "OK",
+          "url": "data:image/avif;base64,AAAAIGZ0eXBhdmlmAAAAAGF2aWZtaWYxbWlhZk1BMUIAAADybWV0YQAAAAAAAAAoaGRscgAAAAAAAAAAcGljdAAAAAAAAAAAAAAAAGxpYmF2aWYAAAAADnBpdG0AAAAAAAEAAAAeaWxvYwAAAABEAAABAAEAAAABAAABGgAAAB0AAAAoaWluZgAAAAAAAQAAABppbmZlAgAAAAABAABhdjAxQ29sb3IAAAAAamlwcnAAAABLaXBjbwAAABRpc3BlAAAAAAAAAAIAAAACAAAAEHBpeGkAAAAAAwgICAAAAAxhdjFDgQ0MAAAAABNjb2xybmNseAACAAIAAYAAAAAXaXBtYQAAAAAAAAABAAEEAQKDBAAAACVtZGF0EgAKCBgANogQEAwgMg8f8D///8WfhwB8+ErK42A="
+        },
+        "timestamp": 1165791.093636,
+        "type": "Image"
+      }
+    },
+    {
+      "sequence": 98,
+      "source": {
+        "tabId": 3
+      },
+      "method": "Network.requestWillBeSent",
+      "params": {
+        "documentURL": "http://127.0.0.1:4340/review/r4d/q2a-simple-character/",
+        "frameId": "8F608B8FBA00B04083C3F2739FB4A9C7",
+        "hasUserGesture": false,
+        "initiator": {
+          "stack": {
+            "callFrames": [
+              {
+                "columnNumber": 36409,
+                "functionName": "",
+                "lineNumber": 123,
+                "scriptId": "10",
+                "url": "http://127.0.0.1:4340/review/r4d/q2a-simple-character/runtime/vendor/pixi.min.js"
+              },
+              {
+                "columnNumber": 36327,
+                "functionName": "hl",
+                "lineNumber": 123,
+                "scriptId": "10",
+                "url": "http://127.0.0.1:4340/review/r4d/q2a-simple-character/runtime/vendor/pixi.min.js"
+              },
+              {
+                "columnNumber": 38033,
+                "functionName": "test",
+                "lineNumber": 123,
+                "scriptId": "10",
+                "url": "http://127.0.0.1:4340/review/r4d/q2a-simple-character/runtime/vendor/pixi.min.js"
+              },
+              {
+                "columnNumber": 11247,
+                "functionName": "_detectFormats",
+                "lineNumber": 348,
+                "scriptId": "10",
+                "url": "http://127.0.0.1:4340/review/r4d/q2a-simple-character/runtime/vendor/pixi.min.js"
+              }
+            ]
+          },
+          "type": "script"
+        },
+        "loaderId": "1133CB94DEAFDB6755D17704832F4658",
+        "redirectHasExtraInfo": false,
+        "request": {
+          "headers": {
+            "Referer": "http://127.0.0.1:4340/",
+            "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/155.0.0.0 Safari/537.36"
+          },
+          "initialPriority": "Low",
+          "isSameSite": false,
+          "method": "GET",
+          "mixedContentType": "none",
+          "referrerPolicy": "strict-origin-when-cross-origin",
+          "url": "data:image/webp;base64,UklGRh4AAABXRUJQVlA4TBEAAAAvAAAAAAfQ//73v/+BiOh/AAA="
+        },
+        "requestId": "11488.37",
+        "timestamp": 1165791.093923,
+        "type": "Image",
+        "wallTime": 1792957247.73789
+      }
+    },
+    {
+      "sequence": 100,
+      "source": {
+        "tabId": 3
+      },
+      "method": "Network.responseReceived",
+      "params": {
+        "frameId": "8F608B8FBA00B04083C3F2739FB4A9C7",
+        "hasExtraInfo": false,
+        "loaderId": "1133CB94DEAFDB6755D17704832F4658",
+        "requestId": "11488.37",
+        "response": {
+          "charset": "",
+          "connectionId": 0,
+          "connectionReused": false,
+          "encodedDataLength": 0,
+          "fromDiskCache": false,
+          "fromPrefetchCache": false,
+          "fromServiceWorker": false,
+          "headers": {
+            "Content-Type": "image/webp"
+          },
+          "mimeType": "image/webp",
+          "protocol": "data",
+          "securityState": "unknown",
+          "status": 200,
+          "statusText": "OK",
+          "url": "data:image/webp;base64,UklGRh4AAABXRUJQVlA4TBEAAAAvAAAAAAfQ//73v/+BiOh/AAA="
+        },
+        "timestamp": 1165791.093993,
+        "type": "Image"
+      }
+    },
+    {
+      "sequence": 103,
+      "source": {
+        "tabId": 3
+      },
+      "method": "Network.requestWillBeSent",
+      "params": {
+        "documentURL": "blob:http://127.0.0.1:4340/072db22f-c7fd-4105-9b24-2d0900c03a8d",
+        "frameId": "8F608B8FBA00B04083C3F2739FB4A9C7",
+        "hasUserGesture": false,
+        "initiator": {
+          "type": "other",
+          "url": "http://127.0.0.1:4340/review/r4d/q2a-simple-character/"
+        },
+        "loaderId": "",
+        "redirectHasExtraInfo": false,
+        "request": {
+          "headers": {
+            "Accept": "*/*"
+          },
+          "initialPriority": "VeryLow",
+          "method": "GET",
+          "referrerPolicy": "strict-origin-when-cross-origin",
+          "url": "blob:http://127.0.0.1:4340/072db22f-c7fd-4105-9b24-2d0900c03a8d"
+        },
+        "requestId": "A63FB1DB853E73EEB6CA41FB27123ADE",
+        "timestamp": 1165791.097409,
+        "type": "Script",
+        "wallTime": 1792957247.741336
+      }
+    },
+    {
+      "sequence": 104,
+      "source": {
+        "tabId": 3
+      },
+      "method": "Network.requestWillBeSent",
+      "params": {
+        "documentURL": "blob:http://127.0.0.1:4340/00280d2b-44f7-4daf-b688-c30a6695b99e",
+        "frameId": "8F608B8FBA00B04083C3F2739FB4A9C7",
+        "hasUserGesture": false,
+        "initiator": {
+          "type": "other",
+          "url": "http://127.0.0.1:4340/review/r4d/q2a-simple-character/"
+        },
+        "loaderId": "",
+        "redirectHasExtraInfo": false,
+        "request": {
+          "headers": {
+            "Accept": "*/*"
+          },
+          "initialPriority": "VeryLow",
+          "method": "GET",
+          "referrerPolicy": "strict-origin-when-cross-origin",
+          "url": "blob:http://127.0.0.1:4340/00280d2b-44f7-4daf-b688-c30a6695b99e"
+        },
+        "requestId": "6A8E0A04107978AEC2D4C83C65938FC5",
+        "timestamp": 1165791.123509,
+        "type": "Script",
+        "wallTime": 1792957247.767436
+      }
+    }
+  ],
+  "hasMore": false,
+  "truncated": false
+}

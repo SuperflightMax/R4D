@@ -1,0 +1,233 @@
+{
+  "version": "p2_candidate_c2",
+  "scale": 1,
+  "translation": [
+    0,
+    0
+  ],
+  "rig": {
+    "pelvis": [
+      495,
+      550
+    ],
+    "neck": [
+      501,
+      330
+    ],
+    "waist": [
+      500,
+      479
+    ],
+    "ground": 906,
+    "near": {
+      "hip": [
+        500,
+        550
+      ],
+      "knee": [
+        542,
+        708
+      ],
+      "ankle": [
+        547,
+        875
+      ],
+      "shoulder": [
+        502,
+        369
+      ],
+      "elbow": [
+        537,
+        482
+      ],
+      "wrist": [
+        548,
+        570
+      ],
+      "heel": [
+        524,
+        906
+      ],
+      "toe": [
+        625,
+        906
+      ]
+    },
+    "far": {
+      "hip": [
+        490,
+        550
+      ],
+      "knee": [
+        531,
+        708
+      ],
+      "ankle": [
+        526,
+        875
+      ],
+      "shoulder": [
+        488,
+        369
+      ],
+      "elbow": [
+        444,
+        482
+      ],
+      "wrist": [
+        441,
+        570
+      ],
+      "heel": [
+        503,
+        906
+      ],
+      "toe": [
+        603,
+        906
+      ]
+    }
+  },
+  "parts": {
+    "body": {
+      "url": "./art/parts/c1_arms01/body.png",
+      "crop": [
+        78,
+        111,
+        137,
+        323
+      ],
+      "offset": [
+        -350,
+        -179
+      ],
+      "layer": 4
+    },
+    "head": {
+      "url": "./art/parts/c1_arms01/head.png",
+      "crop": [
+        445,
+        55,
+        112,
+        154
+      ],
+      "offset": [
+        -2,
+        -140
+      ],
+      "layer": 9
+    },
+    "arm_near": {
+      "url": "./art/parts/c1_arms01/arm_near.png",
+      "crop": [
+        97,
+        526,
+        121,
+        257
+      ],
+      "offset": [
+        -360,
+        199
+      ],
+      "layer": 7
+    },
+    "arm_far": {
+      "url": "./art/parts/c1_arms01/arm_far.png",
+      "crop": [
+        313,
+        527,
+        122,
+        257
+      ],
+      "offset": [
+        -99,
+        199
+      ],
+      "layer": 0
+    },
+    "hand_near": {
+      "url": "./art/parts/c1_arms01/hand_near.png",
+      "crop": [
+        158,
+        803,
+        78,
+        112
+      ],
+      "offset": [
+        -355,
+        264
+      ],
+      "layer": 8
+    },
+    "hand_far": {
+      "url": "./art/parts/c1_arms01/hand_far.png",
+      "crop": [
+        302,
+        803,
+        76,
+        112
+      ],
+      "offset": [
+        -102,
+        264
+      ],
+      "layer": 1
+    },
+    "leg_near": {
+      "url": "./art/parts/c1_arms01/leg_near.png",
+      "crop": [
+        726,
+        52,
+        135,
+        387
+      ],
+      "offset": [
+        281,
+        -450
+      ],
+      "layer": 5
+    },
+    "leg_far": {
+      "url": "./art/parts/c1_arms01/leg_far.png",
+      "crop": [
+        968,
+        52,
+        136,
+        387
+      ],
+      "offset": [
+        529,
+        -450
+      ],
+      "layer": 2
+    },
+    "foot_near": {
+      "url": "./art/parts/c1_arms01/foot_near.png",
+      "crop": [
+        704,
+        791,
+        132,
+        92
+      ],
+      "offset": [
+        196,
+        -35
+      ],
+      "layer": 6
+    },
+    "foot_far": {
+      "url": "./art/parts/c1_arms01/foot_far.png",
+      "crop": [
+        964,
+        791,
+        131,
+        92
+      ],
+      "offset": [
+        477,
+        -35
+      ],
+      "layer": 3
+    }
+  }
+}

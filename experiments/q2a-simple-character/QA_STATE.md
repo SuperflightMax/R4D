@@ -1,7 +1,7 @@
 # Q2A — независимый QA exact P2 C2
 
 25 октября 2026 года. Lead `lead-r4d-q2a-01`.
-**Q2A_QA_READY_FOR_CTO_FINAL_ACCEPTANCE.**
+**INDEPENDENT_QA_P2_C2_COMPLETED_ACCEPTED_BY_CTO.**
 
 Основание — [CTO_P2_DECISION.md](CTO_P2_DECISION.md) из
 `f47403d646ba4bfa72361bdb03d95aa3a9fbe77b`.
@@ -51,5 +51,9 @@ Technical QA дополнительно воспроизвёл 49,20° на да
 Кандидат и snapshot неизменны. Собственный 4334 и вкладки QA закрыты;
 существующие демонстрационные серверы сохранены.
 
-Следующий шаг — передать commit/push QA-owned материалов CTO для финальной
-приёмки. Команда ждёт решения; продукт, release и VPS не менять.
+QA delivery: `d81c4bd1a31d3b23cedacf936f290fbef251090b`.
+CTO завершил [финальную приёмку](CTO_ACCEPTANCE_P2_C2.md) с ограничениями,
+новую коррекцию не открыл. Последующее поручение ограничено локальной
+подготовкой и проверкой пакета; актуальный следующий шаг — в
+[RELEASE_PACKAGE_STATE.md](RELEASE_PACKAGE_STATE.md).
+Продукт неизменен, VPS-публикация ещё не выполнялась.

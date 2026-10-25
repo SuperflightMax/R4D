@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="ru">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Q2A · полное движение</title>
+<style>details code{overflow-wrap:anywhere}details p{max-width:80ch}</style>
+<link rel="icon" href="data:,">
+<link rel="stylesheet" href="./runtime/style.css">
+<main>
+  <header><h1>Q2A · лесной разведчик</h1><p>Стойка · низкая поза · ходьба · прыжок</p></header>
+  <div class="controls">
+    <button id="idle">Стойка</button><button id="low">Низкая поза</button>
+    <button id="walk">Ходьба</button><button id="jump">Прыжок</button>
+    <button id="pause">Пауза</button><button id="background">Тёмный фон</button>
+  </div>
+  <p id="motionstate" aria-live="polite">Загрузка движения…</p>
+  <label class="scrub">Запись <input id="scrub" type="range" min="0" max="0" step="1" value="0"><output id="amount">0 с</output></label>
+  <div id="stage"></div>
+  <p id="status" role="status">Загрузка…</p>
+  <p class="note">Свободно меняйте команды. В полёте выберите поведение после посадки. Ползунок останавливает кадр из последних 30 секунд; новая команда продолжает из выбранного кадра. Камера следует за персонажем, метки земли показывают перенос опоры.</p>
+  <details class="note"><summary>Об опыте и ограничениях</summary>
+    <p>Q2A принят CTO как завершённый PoC с ограничениями. Два независимых QA получили PASS в проверенном объёме. Это не художественное совершенство и не доказательство универсальности метода.</p>
+    <p>Остаются резкий сгиб колена, линия шорт, жёсткость плеча и ограниченная видимость дальней стороны. В воспроизведённых переходах отмечены сильные сгибы стопы: 49,20° при носочной опоре и 61,26° у свободной стопы; условия контакта различаются. Есть субпиксельное пересечение свободной стопы с землёй.</p>
+    <p>Проверки выполнены агентами в браузере; реальный телефон/touch, каждый момент команды и все кадры не проверены.</p>
+    <p>Принятый source: <code>3c27b07d489f68b3d7d8b4c8beabd35c51402fd4</code><br>Frozen tree: <code>0c60f912f11cae1ce5e5cf99a6a8ce8fafc70bc4</code></p>
+  </details>
+</main>
+<script src="./runtime/vendor/pixi.min.js"></script>
+<script type="module" src="./runtime/main.js"></script>
+</html>

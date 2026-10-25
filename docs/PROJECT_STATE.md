@@ -10,7 +10,7 @@ production поручение CTO — опубликовать принятый 
 
 ## Текущий статус
 
-**Q2A_INDEPENDENT_QA_ACTIVE.** Q5A принят и
+**Q2A_ACCEPTED_RELEASE_PACKAGE_READY.** Q5A принят и
 опубликован. Исследование Q4A закрыто как
 `RESEARCH_CLOSED_NEGATIVE_PARTIAL`; CTO принял достоверный evidence viewer
 `negative-review-v02` и отдельно поручил штатную публикацию, выполненную
@@ -24,11 +24,18 @@ production поручение CTO — опубликовать принятый 
 [принят CTO с ограничениями](../experiments/q2a-simple-character/CTO_P1_DECISION.md).
 Full-motion candidate `p2_candidate_c2` из commit
 `3c27b07d489f68b3d7d8b4c8beabd35c51402fd4`
-[принят CTO для независимого QA](../experiments/q2a-simple-character/CTO_P2_DECISION.md).
-Открыты существующие Technical QA и Visual QA на неизменном exact frozen;
-производство и release не открыты. Принципиальное разрешение Макса публиковать
-все готовые результаты зафиксировано: после двух QA PASS и финальной приёмки
-Q2A будет опубликован отдельной карточкой без нового вопроса о VPS. Q4A не
+[принят CTO как завершённый PoC с ограничениями](../experiments/q2a-simple-character/CTO_ACCEPTANCE_P2_C2.md)
+после независимых Technical/Visual QA PASS из `d81c4bd1a31d3b23cedacf936f290fbef251090b`.
+Новая correction-итерация не открыта. Существующий Builder подготовил
+[release package](../experiments/q2a-simple-character/release-package/PACKAGE.md)
+для `/review/r4d/q2a-simple-character/`: 18 публичных файлов, 1 179 499 байт.
+Отдельный [локальный package-QA](../experiments/q2a-simple-character/RELEASE_PACKAGE_TECHNICAL_QA.md)
+прошёл без блокеров; source snapshot неизменен. Состав, provenance и следующий
+шаг — в [состоянии пакета](../experiments/q2a-simple-character/RELEASE_PACKAGE_STATE.md).
+Принципиальное разрешение Макса публиковать все готовые результаты зафиксировано;
+новый вопрос о допустимости VPS не требуется. Текущее поручение ограничено
+проверенным пакетом: **серверная доставка ещё не выполнялась, Q2A не опубликован**.
+Следующий gate — прямое поручение CTO на доставку exact package. Q4A не
 переоткрывается; Q7 и работа вне Queue A требуют нового прямого поручения Max.
 
 ## Сохранённое последующее состояние
