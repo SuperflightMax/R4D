@@ -1,0 +1,149 @@
+{
+  "schema": "r4d.p0.final-series-freeze.v1",
+  "status": "four-layouts-frozen-before-images",
+  "contractV2Commit": "606737181da71457372b0f026b4d25cced68d4ee",
+  "frame": [
+    1536,
+    1536
+  ],
+  "quadNormalized": [
+    [
+      0.225,
+      0.255
+    ],
+    [
+      0.775,
+      0.255
+    ],
+    [
+      0.915,
+      0.775
+    ],
+    [
+      0.085,
+      0.775
+    ]
+  ],
+  "seams": [
+    {
+      "q": 0.255,
+      "yPx": 391.68
+    },
+    {
+      "q": 0.775,
+      "yPx": 1190.4
+    }
+  ],
+  "q": [
+    0.338,
+    0.453,
+    0.567,
+    0.681
+  ],
+  "scales": [
+    0.939,
+    0.978,
+    1.018,
+    1.058
+  ],
+  "baseCenterDefinition": "center of lowest visible base-contact edge beneath the object axis",
+  "assembly": {
+    "deterministic": true,
+    "sortKey": [
+      "q",
+      "p",
+      "instanceId"
+    ],
+    "direction": "far-to-near",
+    "perInstance": [
+      "shadow",
+      "master"
+    ],
+    "shadowAnchorScaleEqualsMaster": true,
+    "controlMarkersAllowed": false
+  },
+  "layouts": [
+    {
+      "boardId": "board-01",
+      "file": "layouts/board-01.json",
+      "sha256": "835ed7c08fa43dd6fccb09b3c3559172789f2eb2a645b3cc498e44a3c96e1372",
+      "sourceSetId": "p0-final-board-01-components",
+      "p": [
+        0.42,
+        0.62,
+        0.35,
+        0.58
+      ],
+      "instanceIds": [
+        "board-01-drum-far",
+        "board-01-drum-mid-far",
+        "board-01-drum-mid-near",
+        "board-01-drum-near"
+      ]
+    },
+    {
+      "boardId": "board-02",
+      "file": "layouts/board-02.json",
+      "sha256": "5a538a39e16050a0ff5b6cde2bb6a2e27d5084fea9b284da11b9b461c6fb56e8",
+      "sourceSetId": "p0-final-board-02-components",
+      "p": [
+        0.58,
+        0.38,
+        0.66,
+        0.44
+      ],
+      "instanceIds": [
+        "board-02-drum-far",
+        "board-02-drum-mid-far",
+        "board-02-drum-mid-near",
+        "board-02-drum-near"
+      ]
+    },
+    {
+      "boardId": "board-03",
+      "file": "layouts/board-03.json",
+      "sha256": "24e1892241dd00b2b027f9ccdcecc49645d7289c0e62cebf14e7a36bef9d56b6",
+      "sourceSetId": "p0-final-board-03-components",
+      "p": [
+        0.33,
+        0.52,
+        0.69,
+        0.54
+      ],
+      "instanceIds": [
+        "board-03-drum-far",
+        "board-03-drum-mid-far",
+        "board-03-drum-mid-near",
+        "board-03-drum-near"
+      ]
+    },
+    {
+      "boardId": "board-04",
+      "file": "layouts/board-04.json",
+      "sha256": "d5142aebe5628ced093cb4ebfa90f77ac5d5677299c34f08fe34f5a4d248bd1f",
+      "sourceSetId": "p0-final-board-04-components",
+      "p": [
+        0.67,
+        0.47,
+        0.31,
+        0.6
+      ],
+      "instanceIds": [
+        "board-04-drum-far",
+        "board-04-drum-mid-far",
+        "board-04-drum-mid-near",
+        "board-04-drum-near"
+      ]
+    }
+  ],
+  "forbiddenL1SourceHashes": {
+    "plate": "dd50392203e30387c6bb0219102da9295213b56fe89375be6f33aed478ade3b6",
+    "master": "6318a55c01b3116678445604440113d4e450489db9bfc3b0ac2f1839c52bb878",
+    "shadow": "0d25b1a01fb17f2875254d80155f62a2173caee5fd4d13fc6f6762bbb02d45e8"
+  },
+  "gates": {
+    "layouts": "frozen",
+    "images": "not-created-by-this-checkpoint",
+    "boards": "not-assembled-by-this-checkpoint"
+  }
+}
