@@ -1,0 +1,20 @@
+{
+  "schema": "r4d.p0.final-series-layout.v1",
+  "status": "frozen-before-images",
+  "boardId": "board-02",
+  "sourceSetId": "p0-final-board-02-components",
+  "frame": [1536, 1536],
+  "instances": [
+    { "instanceId": "board-02-drum-far", "p": 0.58, "q": 0.338, "uniformScale": 0.939 },
+    { "instanceId": "board-02-drum-mid-far", "p": 0.38, "q": 0.453, "uniformScale": 0.978 },
+    { "instanceId": "board-02-drum-mid-near", "p": 0.66, "q": 0.567, "uniformScale": 1.018 },
+    { "instanceId": "board-02-drum-near", "p": 0.44, "q": 0.681, "uniformScale": 1.058 }
+  ],
+  "componentSlots": {
+    "plate": "board-02-new-environment-plate",
+    "master": "board-02-new-rgba-master",
+    "shadow": "board-02-new-shadow-master"
+  },
+  "assembly": "deterministic-layered-composition-v2",
+  "controlMarkersAllowed": false
+}
