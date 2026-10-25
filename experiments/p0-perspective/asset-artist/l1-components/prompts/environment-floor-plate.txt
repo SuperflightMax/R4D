@@ -1,0 +1,33 @@
+Use case: stylized-concept
+Asset type: finished 1536×1536 game environment and floor plate for later deterministic layered composition
+
+Primary request: Create one independent finished square environment/floor plate for the “Jade Sky Observatory”. This plate will later receive separately composited drum sprites. The output itself must contain NO drums, NO standalone playable-floor obstacles, and NO shadows, bases, empty patches, or markers reserved for future drums.
+
+Input images and strict roles:
+- Image 1, formal-reference-v1.png: the SAME and ONLY geometry control. Follow its camera, exact playable-floor quadrilateral, far/near seams, central axis, depth, and upright architecture projection. Do not copy its labels, rows, volume samples, guide lines, markers, technical colors, or primitive look.
+- Image 2, 03-sun-temple.jpg: art-quality reference ONLY. Match its degree of finish, warm coherent light, material depth, readable game-space hierarchy, and polished stylized-game rendering. Do not copy its exact temple, obstacle arrangement, or four foreground cups.
+
+NON-NEGOTIABLE FRAME AND FLOOR
+- Square full frame, intended final component size 1536×1536.
+- One elevated frontal three-quarter camera along the center axis; nearly vertical architectural verticals; not top-down, diagonal isometric, low frontal, wide-angle, or fisheye.
+- The playable floor is exactly the quadrilateral with normalized clockwise corners: far-left (0.225,0.255), far-right (0.775,0.255), near-right (0.915,0.775), near-left (0.085,0.775).
+- Far architecture/floor seam stays at q=0.255. Near floor/foreground seam stays at q=0.775.
+- Side floor boundaries pass through those exact corner pairs and remain straight. Do not raise, lower, widen, crop, stretch, or invent another playable floor.
+
+EMPTY PLAYABLE PLANE FOR LATER COMPOSITION
+- Keep the entire playable quadrilateral free of drums and other discrete obstacle objects.
+- Do not paint four placeholders, repeated clean spots, circular ornaments, anchor dots, control rows, center-axis markers, sockets, pedestals, baked contact shadows, or darker patches where future sprites might sit.
+- Floor material and sparse texture continue naturally and continuously across the whole playable plane.
+- The floor remains calm and readable, with enough clean visual space for later objects and shadows, but it must not look like a blank blockout.
+
+FINISHED ENVIRONMENT
+- Preserve the Jade Sky Observatory theme: one strong distant observatory landmark centered on the far axis, side architecture framing depth, and a substantial foreground threshold below q=0.775.
+- Materials: pale carved sandstone floor and architecture, aged warm bronze, deep jade-green enamel/stone, small ivory highlights, restrained plants only as secondary accents.
+- Lighting: one coherent warm source from upper left. Static architecture has its own consistent shadows and material depth. Do not bake local shadows for future obstacles into the playable floor.
+- Style: polished stylized 3D game environment render, large readable forms, rounded bevels, material seams, restrained handmade irregularity, sparse floor texture, finished background and edges.
+
+Do not add: drums, barrels, columns or blocks standing as playable obstacles on the floor; their shadows; text; letters; numbers; logos; watermark; UI; ball; collider outlines; technical grid; guide lines; control points; rows; colored zones; wireframes; compass/target ornaments on the floor; false terraces; photorealism; gray blockout; excessive micro-noise; rectangular cleanup patches.
+
+Priority: exact formal frame/quad/seams > truly empty continuous playable floor > unified finished architecture/light/materials > small decoration.
+
+Output intent: one clean finished square environment/floor plate, no transparent holes, no future obstacle graphics, ready for deterministic composition without global redraw.

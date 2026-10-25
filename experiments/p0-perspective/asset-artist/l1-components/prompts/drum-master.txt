@@ -1,0 +1,27 @@
+Use case: stylized-concept
+Asset type: one clean-cut RGBA game obstacle master sprite with genuine transparent background
+
+Primary request: Create exactly ONE finished Jade Sky Observatory pedestal drum as a reusable RGBA master sprite. It will be placed four times by deterministic composition using uniform scaling. Generate one object only, not a set, not four variants, and not a scene.
+
+Input images and strict roles:
+- Image 1, formal-reference-v1.png: geometry/view reference ONLY. Match the formal standing cylinder sample: nearly vertical sides, consistent visible top ellipse, readable side mass, and a stable visible base contact. Do not copy grid, rows, labels, markers, other samples, or background.
+- Image 2, 03-sun-temple.jpg: art-quality reference ONLY. Match its polished stylized-game material depth, bevel quality, warm coherent light, and readable construction. Do not copy a whole scene.
+
+ONE LOCKED MASTER CONSTRUCTION
+- One centered upright pedestal drum with a circular cylindrical body.
+- Stable identical construction for later reuse: fixed width-to-height ratio; one top ellipse; consistent rim and base thickness; rounded bevels; six evenly spaced jade inset panels around the body; continuous upper and lower bronze bands; one centered bronze sun medallion on the visible front; pale sandstone trim only where structurally plausible.
+- The object is already final art, not a blockout or colored primitive.
+- View matches the formal sample volume: elevated frontal three-quarter view, top ellipse visible, verticals nearly vertical, object axis vertical in canvas.
+- Warm light from upper left, coherent with the environment plate. Include highlights and self-shadowing on the object only.
+
+TRANSPARENCY AND CUTOUT — NON-NEGOTIABLE
+- Genuine RGBA transparent background: alpha exactly zero outside the object.
+- One isolated object only. No floor, platform, pedestal beneath it, environment, sky, gradient, colored matte, checkerboard, vignette, halo, glow, labels, guide lines, crop marks, or watermark.
+- Do NOT include contact shadow or cast shadow in this object master; shadow will be a separate layer.
+- Preserve clean antialiased edges without white, dark, green, or gold fringe.
+- Keep generous transparent padding on all sides so later uniform scaling never clips the top, bevels, or sides.
+- Keep the entire visible base edge complete and unobscured. The stable base anchor is the center of the lowest visible base-contact edge directly beneath the vertical object axis.
+
+Do not add: additional drums, alternate views, turntable sheet, floor fragment, shadow, text, UI, ball, collider, technical marker, photorealism, excessive micro-noise, or asymmetrical attachments that change the footprint.
+
+Output intent: one clean finished transparent-background RGBA master asset, suitable for four byte-identical references and uniform scales 0.939 / 0.978 / 1.018 / 1.058.
