@@ -58,3 +58,18 @@
 - Visual QA c1: `ac2c5f639cb49f05b074b54a6501cdedd02d6883`, `experiments/p0-perspective/qa/visual/REPORT_C1.md`. Решение `STOP_ESCALATE_CONTROL_TRANSFER_OPTIONS`: поле заметно улучшилось, основания/объёмы и художественное качество в целом PASS, но row anchors и uniform drum master + S(z) повторно FAIL; появились вторичные leaked control markers.
 - Release route: отдельная страница `https://superflight.space/review/r4d/p0-perspective/` внутри существующего Review. Новая инфраструктура, права и credentials не нужны. Публикация заблокирована до accepted 40-символьного candidate commit, frozen self-contained route tree, allowlist/manifest и данных карточки. До этого Release Engineer ничего не публикует.
 - Четыре финальные доски закрыты до решения CTO о control-передаче. Не запущенные варианты: deterministic layered composition с одним art master; structural img2img с edge/depth/segmentation control; precomposed exact raster control с masked/local finish.
+
+## Решение CTO после c1
+
+CTO выбрал deterministic layered composition: в текущем доступном `image_gen` нет hard mask, edge/depth control-strength или другого интерфейса, достаточного для доказуемых вариантов structural img2img / masked finish. Третья single-shot генерация запрещена.
+
+Открыт только один diagnostic L1:
+
+1. Builder фиксирует contract v2 до новых изображений: frame, exact quad/seams, q→pixels, anchors `.338/.453/.567/.681`, один RGBA master со scales `.939/.978/1.018/1.058`, z-order/occlusion, contact shadows, отсутствие markers, машинная проверка и воспроизводимая сборка.
+2. Concept Artist фиксирует art-integration brief для законченного component-based результата.
+3. После обоих exact commits Asset Artist создаёт одну independent finished environment/floor plate без встроенного семейства и один clean RGBA art master.
+4. Builder программно собирает L1, сохраняет components/manifest/hashes/command/numeric report; глобальная перерисовка после композиции запрещена.
+5. Visual QA применяет неизменный rubric `21150e58…` к geometry, identity, grounding, art cohesion и leakage.
+6. Только PASS обязательной геометрии и художественной законченности возвращается CTO для решения о четырёх досках. При FAIL — stop/evidence, L2 не открывается.
+
+Финальная серия, публикация и P1 остаются закрыты.
