@@ -6,15 +6,15 @@
 
 ## Текущее выполнение
 
-**IDLE — дальнейшее исполнение не разрешено.** Общая административная пауза
-снята, но по текущему прямому указанию Макса это не запускает новую работу
-R4D. Существующие результаты и сессии сохранены; публикация Q5A, Q4A, Q2A,
-коррекции, проверки и найм не начинаются без отдельного прямого поручения.
+**IDLE после отдельно разрешённого выпуска Q5A.** По новому прямому разрешению
+Макса, переданному CTO, выполнены штатная публикация Q5A и инвентаризация
+принятых результатов. Это не возобновляет автоматически исследования:
+Q4A, Q2A, коррекции, дополнительные проверки и найм не начинаются без отдельного прямого поручения.
 Актуальная граница — в [операционном состоянии проекта](PROJECT_STATE.md).
 
 | Порядок | Опыт | Состояние | Материалы и показ |
 |---|---|---|---|
-| 1 | Q5A — конструкция до арта | Сохранённый локальный результат: accepted by CTO; ASSEMBLY03 frozen `101343caa68579aacd5e6c01b94206680c364ab7`; release blocked/not published; продолжение не разрешено | [Release record](../experiments/q5a-construction-first/RELEASE_ASSEMBLY03.md): `BLOCKED_BY_VPS_ACCESS_PROHIBITION`; доступный показ Q5A не подтверждён; приёмка — `experiments/q5a-construction-first/CTO_ACCEPTANCE_ASSEMBLY03.md` |
+| 1 | Q5A — конструкция до арта | Accepted by CTO; ASSEMBLY03 frozen `101343caa68579aacd5e6c01b94206680c364ab7`; опубликован в существующем Review; серверная доставка и auth-барьер подтверждены | [Открыть Q5A](https://superflight.space/review/r4d/q5a-construction-first/), [release record](../experiments/q5a-construction-first/RELEASE_ASSEMBLY03.md): `PUBLISHED_DELIVERY_VERIFIED_WITH_AUTH_LIMITATION`; post-auth public canvas не проверен, обычный вход SuperFlight сохранён |
 | 2 | Q4A — цельный образ до частей | Не начат; проект idle, запуск не разрешён | Предусмотренный путь `experiments/q4a-whole-character/` сам по себе не означает старт |
 | 3 | Q2A — свободный выбор способа | Не начат; проект idle, запуск не разрешён | Предусмотренный путь `experiments/q2a-simple-character/` сам по себе не означает старт |
 
@@ -23,15 +23,15 @@ Concept Artist `01a16ffd-87e7-7cf3-a9a2-29d2cd97a7ec` и Builder
 `01a16ffd-8811-7d20-b80a-6a938f50b5a5`. Новые сотрудники или дубли сессий
 не создавались.
 
-Статический арт, исходные attempts, corrections и отрицательные review сохранены в истории. Art/motion gate assembly03 закрыт двумя независимыми художественными PASS. На QA base `0f032c21f555473aca7c61960a8c563d2440fc97` получены TECHNICAL_QA_PASS и VISUAL_QA_PASS для неизменного frozen production `101343c…`. CTO `cto-r4d-01` принял Q5A для PoC release без блокеров; слабый contrast служебного dark badge принят как non-blocking limitation без нового correction cycle. Формальная приёмка и известные Chrome/mobile emulation/PoC-ограничения сохранены в `CTO_ACCEPTANCE_ASSEMBLY03.md`. Production diff=none; Lead сохраняет QA/evidence/acceptance/state. Публикация Release Engineer — отдельный следующий шаг, её доступность пока не подтверждена. Q4A/Q2A не стартовали; этот ход не запускает release или новые опыты.
+Статический арт, исходные attempts, corrections и отрицательные review сохранены в истории. Art/motion gate assembly03 закрыт двумя независимыми художественными PASS. На QA base `0f032c21f555473aca7c61960a8c563d2440fc97` получены TECHNICAL_QA_PASS и VISUAL_QA_PASS для неизменного frozen production `101343c…`. CTO `cto-r4d-01` принял Q5A для PoC release без блокеров; слабый contrast служебного dark badge принят как non-blocking limitation без нового correction cycle. Формальная приёмка и известные Chrome/mobile emulation/PoC-ограничения сохранены в `CTO_ACCEPTANCE_ASSEMBLY03.md`. Production diff=none; приёмка и QA не менялись. Отдельная публикация выполнена Release Engineer по новому brief; Q4A/Q2A не стартовали.
 
-После отдельного production release brief CTO Release Engineer read-only проверил HEAD=локальный origin/main=`31ade6bb3109052c297e08013607ddd04eea866a` и предыдущие release reports Q1/Q5/Q6. Штатный Review release требует серверного release-каталога, переключения nginx Review root, проверки конфигурации и reload на VPS; эти действия прямо запрещены brief. Публикация остановлена до внешних изменений: **BLOCKED_BY_VPS_ACCESS_PROHIBITION**, Q5A не опубликован, доступность и delivery smoke не проверены. Production diff=none; приёмка и QA не меняются. Подробности — [RELEASE_ASSEMBLY03.md](../experiments/q5a-construction-first/RELEASE_ASSEMBLY03.md). При текущем статусе проекта это не открытый следующий шаг: повторную публикацию и переход к Q4A/Q2A не начинать без отдельного прямого поручения Макса.
+Первый release brief привёл к остановке **BLOCKED_BY_VPS_ACCESS_PROHIBITION** до внешних изменений; этот факт сохранён в [release record](../experiments/q5a-construction-first/RELEASE_ASSEMBLY03.md). Затем CTO передал прямое исправление и разрешение Макса на штатный VPS Review release. 25 октября 2026, 12:22:46 Europe/Kyiv, активирован immutable release `31ade6bb3109052c297e08013607ddd04eea866a`: все 26 Q5A dist-файлов точны относительно frozen/acceptance Git bytes, без пересборки. Все 333 прежних browser-файла кроме каталога сохранены побайтно; в каталоге только новая карточка и счётчик 8→9. Инвентаризация подтвердила оба первых модельных PoC и Q1–Q6 в Review; других готовых непоказанных результатов в этом объёме не найдено. Проверены локальные desktop/mobile exact bytes, все 360 файлов по HTTP, серверное дерево до/после и 39 публичных HTTPS/auth checks. Post-auth public canvas не проверен из-за отсутствия сессии; по прямому уточнению CTO личный Chrome не использовался, выпуск завершается с этим ограничением без отката. Q4A/Q2A остаются не начатыми: разрешение охватывало только доставку и инвентаризацию.
 
 CTO по ходу заменяет сведения фактическим состоянием: активный опыт, команда, ссылки на материалы/демо, полученное качество и решение о продолжении или остановке. Появление каталога само по себе не означает начала или завершения опыта. Новый отдельный статусный сервис не требуется.
 
 ## Итог очереди
 
-Очередь A остановлена в сохранённом состоянии после локальной приёмки Q5A;
+Очередь A остановлена в сохранённом состоянии после приёмки и публикации Q5A;
 Q4A и Q2A не начинались. Сравнительный итог Q5A/Q4A/Q2A отсутствует и не
 заказывается текущим административным изменением. Материалы Q1–Q6 и Q5A
 сохраняются без переписывания.
