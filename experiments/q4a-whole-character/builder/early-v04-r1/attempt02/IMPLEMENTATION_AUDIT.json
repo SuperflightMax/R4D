@@ -1,0 +1,36 @@
+{
+  "restFIdentityMaxError": 1.709743457922741e-14,
+  "restGlobalStepMaxError": 4.7975845518521965e-11,
+  "restOrientationMin": 0.9999999999999751,
+  "energyGradientChecks": [
+    {
+      "vertex": 167,
+      "axis": 0,
+      "analytic": -2.2883795303130228e-08,
+      "finiteDifference": -2.9842794901924208e-09,
+      "error": 1.9899515812937807e-08
+    },
+    {
+      "vertex": 167,
+      "axis": 1,
+      "analytic": -3.503336110100008e-08,
+      "finiteDifference": -7.048583938740194e-08,
+      "error": 3.5452478286401856e-08
+    },
+    {
+      "vertex": 18,
+      "axis": 0,
+      "analytic": 1.9875441692462914e-07,
+      "finiteDifference": 1.637801005927031e-07,
+      "error": 3.497431633192605e-08
+    },
+    {
+      "vertex": 435,
+      "axis": 1,
+      "analytic": -9.722017058066967e-08,
+      "finiteDifference": -1.411137873219559e-07,
+      "error": 4.389361674128622e-08
+    }
+  ],
+  "implementationFinding": "Only confirmed interface bug: original far-cuff endpoint index11 wrongly free because 2px AA miter distance3.536 > heuristic3.5 threshold. Semantic owner must come from original trace, not padded-distance heuristic."
+}

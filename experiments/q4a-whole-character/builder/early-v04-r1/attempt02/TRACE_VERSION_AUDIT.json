@@ -1,0 +1,15 @@
+{
+  "usedTraceSha256": "c967ab5f1a635c3587fa7b56d5298529d87cd6353f57ffa1f0793f666fbcd708",
+  "usedEmbeddedValuesReproducedExactOriginalBytes": false,
+  "currentAssetTraceSha256": "330468ff7eba951f88efb8b4af464f3b772094a67bea9ac62124b0cc3345484a",
+  "changedFields": [
+    "boundary",
+    "handTraceEnvelope"
+  ],
+  "oldBoundaryEqualsCurrentHandTraceEnvelope": true,
+  "allSemanticSeamsUnchanged": true,
+  "noRerunWithUpdatedBoundary": true,
+  "usedOriginalBytesUnavailable": true,
+  "inputCaptureWeakness": "prepare read JSON values first and hashed file bytes later; concurrent update could race. Embedded rest values and solve rest hash are authoritative for computed geometry.",
+  "diagnosis": "real boundary geometry update, all semantic seam paths unchanged; old envelope cage FAIL is not stable actual-boundary test"
+}

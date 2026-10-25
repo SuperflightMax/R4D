@@ -1,0 +1,50 @@
+{
+  "finalInputVersion": "stable actual trace44 / inputs03",
+  "hashTiming": "rest/targets created before solve; input/code hashes captured during run and verified unchanged after run; stable Asset source copied and verified before/after copy",
+  "sha256": {
+    "builder\\early-v04-r1\\CAGE_REST.json": "4a61860b531a233745fac0ba6402678f391fff908af3631df61865672b85d0f7",
+    "builder\\early-v04-r1\\CAGE_TARGETS.json": "3907a869b637708170c0d5650e404fc359f63013f1843789b7592198a3a19a6b",
+    "builder\\early-v04-r1\\SOURCE_GEOMETRY.json": "6decc6ffe46937a7f09717cf4198699d32108a396f2798299bfb05cdf975d391",
+    "builder\\early-v04-r1\\CAGE_SOLVER_CONTRACT.md": "76d305e59d4cb1863fceec08790ada0062d1ea89d4c1d0f7018e080c422b36de",
+    "builder\\early-v04-r1\\prepare-cage.mjs": "74b2707e9c924b58f92feb7fc4781cd8ddbfb98b7106296d3431b20fd0747d22",
+    "builder\\early-v04-r1\\solve-cage.py": "8d2ea57b947f76ca5122eb6ce56d5c0ab07fb6b85cd8b88baffcd4ef4b8c621f",
+    "builder\\early-v04-r1\\check-geometry.mjs": "277694e7112e5bc642f6e858cf4ff550ceec684de1b554dd92275265da21c713",
+    "builder\\early-v04-r1\\render-cage-failure.mjs": "03194975d11ca91eb202012f5dd9af1b304d5e6ea3428c93f1e3b4300289f03e",
+    "app\\early-v04-r1\\kinematics.mjs": "0b52bf57d267dbc0e669f4eb4d75fd2e49360f0861515cd2e26167bc69344efe",
+    "art\\early-v04-r1\\SHORTS_TRACE.json": "330468ff7eba951f88efb8b4af464f3b772094a67bea9ac62124b0cc3345484a",
+    "art\\early-v04-r1\\MATERIALS.json": "5c03e254dca5e430d978b9fcf4bd713df639375039af25523b442d3239a0c65f",
+    "art\\whole-v04\\raw\\whole-v04.png": "56947ae376af812075e42f23d2c874ef1c9f30de6f51718700f4376cfae38bb3",
+    "builder\\early-v04-r1\\inputs03\\INPUT_CAPTURE.json": "7ffb0c7cf3e896b3d35ef5a8bb8e01a772f2c3f9dcc10d1a45467d6b8e2aab88",
+    "builder\\early-v04-r1\\inputs03\\MATERIALS.json": "5c03e254dca5e430d978b9fcf4bd713df639375039af25523b442d3239a0c65f",
+    "builder\\early-v04-r1\\inputs03\\SHORTS_TRACE.json": "330468ff7eba951f88efb8b4af464f3b772094a67bea9ac62124b0cc3345484a",
+    "builder\\early-v04-r1\\inputs03\\materials\\far_arm.png": "836d23c526dfc2c2751763ac5732f2012cc4920073848e059ae5cf5ba747e749",
+    "builder\\early-v04-r1\\inputs03\\materials\\far_shin.png": "e8c442c3089aa5c00503ad5deac11bea3570f18b9a8df63b329f8572a5483840",
+    "builder\\early-v04-r1\\inputs03\\materials\\far_shoe.png": "122fd799411b6549be0f047875908276512b9f8e9ec95707a8442cecacaf4b68",
+    "builder\\early-v04-r1\\inputs03\\materials\\far_thigh.png": "7d842e3ef9a54b1be1bbce23e2dfe077b4bfc7006d37878c5d374f5c4e277469",
+    "builder\\early-v04-r1\\inputs03\\materials\\hip_shorts.png": "dbc11925677a79a415a6ea1f7d5721d7d9452d1cede4b5ef1c5b0a3af8734a66",
+    "builder\\early-v04-r1\\inputs03\\materials\\near_arm.png": "a9f34755bbaeec6f1b5783a67c87acf0e6321c25fdf2ea1edb6f949cd1821ef1",
+    "builder\\early-v04-r1\\inputs03\\materials\\near_shin.png": "99acce8bb50a4d4fdae6e329c1b92c9f10f705d2b480fcc9d197994d54f08a56",
+    "builder\\early-v04-r1\\inputs03\\materials\\near_shoe.png": "b24b0dd27337a5664417c3b08dd53a95f1f14f53bb097445b2847d835d0833d5",
+    "builder\\early-v04-r1\\inputs03\\materials\\near_thigh.png": "c7ab904fddf988799bef71f9c170ab40fa5a026e389cadf78a6e6d106600219e",
+    "builder\\early-v04-r1\\inputs03\\materials\\torso_head_tank.png": "395a3eec8a0c50cd0226f5c722625bfacdb76946302c1120834bf5561b31dbf1"
+  },
+  "checks": {
+    "restEqualsSolveInput": true,
+    "targetsEqualSolveInput": true,
+    "sourceGeometryEqualsRestInput": true,
+    "traceBytesHashEqualsRestInput": true,
+    "traceValuesEqualRestSemanticTrace": true,
+    "traceEqualsStableAssetBytes": true,
+    "manifestEqualsStableAssetBytes": true,
+    "materialsMatchFrozenManifest": true,
+    "materialsEqualStableAssetBytes": true,
+    "inputsAndCodeUnchangedSinceCapturedDuringRun": true,
+    "originalRawSourceUnchanged": true,
+    "sourceTraceSemanticPathsMatchFrozen": true
+  },
+  "historicalWrongInputEvidence": [
+    "attempt01",
+    "attempt02"
+  ],
+  "note": "No prior envelope run is attributed to this stable material/trace."
+}

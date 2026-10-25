@@ -120,3 +120,9 @@ CTO принял source FAIL без переименования в PASS, зак
 ### R0 согласован троими
 
 Три proposals и три явных R0_AGREEMENT.md прочитаны Lead: один cage/deformation способ hip/shorts, раздельные arm/tank owners и ограниченные hidden repair назначения, новые v04 центры/опора полных цепей, full low drop230px и shoulder swing±25°. Точные geometry/rest constraints фиксируются в R1 до прогона, кадрами не подгоняются; положительная площадь не заменяет живой объём. После опубликованного R0 — отдельный старт Lead на минимальное изготовление/один exact after/совместный gate. Исходный whole FAIL не переписан; полный комплект/движения/QA/release/Q2A закрыты.
+
+### R1 — технический STOP до full after
+
+R0 опубликован `746cd6d`, затем R1 отдельно запущен Lead. Минимальные source-derived материалы/локальный hidden tank repair и новый v04 full-chain low230 feasibility получены. Найден cuff-owner bug, затем Lead выявил ранний envelope31 vs stable actual44 trace mismatch; оба исправления/исторические прогоны сохранены. Корректный pipeline по frozen actual44 contour покрывает все52221 alpha pixels, но fixed ARAP continuation останавливается low53/240/drop50,79px на triangle923 с отрицательной ориентацией initial harmonic iterate. Это конкретный solver FAIL, не общая невозможность cage.
+
+Exact rendered after/full shoulder swing+low/immutable build не получены; личные MOTION_REVIEW двух художников не выполнялись. Shoulder hidden corridor остаётся раскрытым ограничением материала. Совместного PASS нет, full parts не открыты. Точный итог/ссылки — `EARLY_V04_R1.md`; дальше только прямое решение CTO. Прежние raw/evidence/guide/R0 и чужие материалы сохранены; whole calls/full motion/QA/release/Q2A закрыты.

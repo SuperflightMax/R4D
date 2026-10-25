@@ -1,0 +1,16 @@
+{
+  "finalInputVersion": "stable actual trace44 / inputs03",
+  "currentTraceSHA256": "330468ff7eba951f88efb8b4af464f3b772094a67bea9ac62124b0cc3345484a",
+  "actualBoundaryVertices": 44,
+  "usedRestSemanticTraceEqualsFrozenActual": true,
+  "correctedInputRunCompleted": true,
+  "correctedInputResult": "SOLVER_FAIL_STOP",
+  "correctedInputStopLow": 0.22083333333333333,
+  "historicalEnvelopeAttempts": [
+    "attempt01",
+    "attempt02"
+  ],
+  "historicalOriginalBytesRecoveredExact": true,
+  "priorDiagnosisFile": "attempt02/TRACE_VERSION_AUDIT.json",
+  "historyNote": "Earlier LF serialization did not reproduce original bytes; later exact CRLF recovery verified. Final actual-boundary inputs fixed after Asset freeze, not attributed retrospectively."
+}

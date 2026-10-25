@@ -1,0 +1,172 @@
+{
+  "version": "v04-r1-materials01",
+  "canvas": [
+    1024,
+    1536
+  ],
+  "source": "art/whole-v04/raw/whole-v04.png",
+  "sourceSHA256": "56947ae376af812075e42f23d2c874ef1c9f30de6f51718700f4376cfae38bb3",
+  "coordinates": "full source canvas; cropRect [x,y,width,height]",
+  "drawOrder": [
+    "far_thigh",
+    "far_shin",
+    "far_shoe",
+    "near_thigh",
+    "near_shin",
+    "near_shoe",
+    "hip_shorts",
+    "far_arm",
+    "torso_head_tank",
+    "near_arm"
+  ],
+  "materials": [
+    {
+      "id": "near_arm",
+      "file": "materials/near_arm.png",
+      "cropRect": [
+        0,
+        0,
+        1024,
+        1536
+      ],
+      "owner": "near_arm",
+      "classification": "source-extracted",
+      "sha256": "a9f34755bbaeec6f1b5783a67c87acf0e6321c25fdf2ea1edb6f949cd1821ef1",
+      "hidden": "No generated hidden continuation; knee source overlaps are duplicated original visible skin."
+    },
+    {
+      "id": "far_arm",
+      "file": "materials/far_arm.png",
+      "cropRect": [
+        0,
+        0,
+        1024,
+        1536
+      ],
+      "owner": "far_arm",
+      "classification": "source-extracted",
+      "sha256": "836d23c526dfc2c2751763ac5732f2012cc4920073848e059ae5cf5ba747e749",
+      "hidden": "No generated hidden continuation; knee source overlaps are duplicated original visible skin."
+    },
+    {
+      "id": "hip_shorts",
+      "file": "materials/hip_shorts.png",
+      "cropRect": [
+        0,
+        0,
+        1024,
+        1536
+      ],
+      "owner": "hip_shorts",
+      "classification": "source-extracted",
+      "sha256": "dbc11925677a79a415a6ea1f7d5721d7d9452d1cede4b5ef1c5b0a3af8734a66",
+      "hidden": "No generated hidden continuation; knee source overlaps are duplicated original visible skin."
+    },
+    {
+      "id": "near_thigh",
+      "file": "materials/near_thigh.png",
+      "cropRect": [
+        0,
+        0,
+        1024,
+        1536
+      ],
+      "owner": "near_thigh",
+      "classification": "source-extracted",
+      "sha256": "c7ab904fddf988799bef71f9c170ab40fa5a026e389cadf78a6e6d106600219e",
+      "hidden": "No generated hidden continuation; knee source overlaps are duplicated original visible skin."
+    },
+    {
+      "id": "far_thigh",
+      "file": "materials/far_thigh.png",
+      "cropRect": [
+        0,
+        0,
+        1024,
+        1536
+      ],
+      "owner": "far_thigh",
+      "classification": "source-extracted",
+      "sha256": "7d842e3ef9a54b1be1bbce23e2dfe077b4bfc7006d37878c5d374f5c4e277469",
+      "hidden": "No generated hidden continuation; knee source overlaps are duplicated original visible skin."
+    },
+    {
+      "id": "near_shin",
+      "file": "materials/near_shin.png",
+      "cropRect": [
+        0,
+        0,
+        1024,
+        1536
+      ],
+      "owner": "near_shin",
+      "classification": "source-extracted",
+      "sha256": "99acce8bb50a4d4fdae6e329c1b92c9f10f705d2b480fcc9d197994d54f08a56",
+      "hidden": "No generated hidden continuation; knee source overlaps are duplicated original visible skin."
+    },
+    {
+      "id": "far_shin",
+      "file": "materials/far_shin.png",
+      "cropRect": [
+        0,
+        0,
+        1024,
+        1536
+      ],
+      "owner": "far_shin",
+      "classification": "source-extracted",
+      "sha256": "e8c442c3089aa5c00503ad5deac11bea3570f18b9a8df63b329f8572a5483840",
+      "hidden": "No generated hidden continuation; knee source overlaps are duplicated original visible skin."
+    },
+    {
+      "id": "near_shoe",
+      "file": "materials/near_shoe.png",
+      "cropRect": [
+        0,
+        0,
+        1024,
+        1536
+      ],
+      "owner": "near_shoe",
+      "classification": "source-extracted",
+      "sha256": "b24b0dd27337a5664417c3b08dd53a95f1f14f53bb097445b2847d835d0833d5",
+      "hidden": "No generated hidden continuation; knee source overlaps are duplicated original visible skin."
+    },
+    {
+      "id": "far_shoe",
+      "file": "materials/far_shoe.png",
+      "cropRect": [
+        0,
+        0,
+        1024,
+        1536
+      ],
+      "owner": "far_shoe",
+      "classification": "source-extracted",
+      "sha256": "122fd799411b6549be0f047875908276512b9f8e9ec95707a8442cecacaf4b68",
+      "hidden": "No generated hidden continuation; knee source overlaps are duplicated original visible skin."
+    },
+    {
+      "id": "torso_head_tank",
+      "file": "materials/torso_head_tank.png",
+      "cropRect": [
+        0,
+        0,
+        1024,
+        1536
+      ],
+      "owner": "torso_head_tank",
+      "classification": "source-extracted + bounded reconstructed hidden subset",
+      "sha256": "395a3eec8a0c50cd0226f5c722625bfacdb76946302c1120834bf5561b31dbf1",
+      "hidden": "tank subset only from tank-01 attempt02"
+    }
+  ],
+  "trace": "SHORTS_TRACE.json",
+  "status": "STABLE_MATERIALS01_WITH_SHOULDER_LIMITATION; no motion PASS",
+  "review": "INITIAL_ASSEMBLY_REVIEW.md",
+  "limitations": [
+    "Known narrow diagonal missing-tank corridor behind source arm; no automatic mask expansion or new hidden repair.",
+    "No generated shoulder continuation/hip/crotch/under-cuff; source overlaps only."
+  ],
+  "jointReference": "builder/early-v04-r1/R1_INTERFACE.md"
+}

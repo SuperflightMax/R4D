@@ -1,0 +1,49 @@
+{
+  "scope": "final package input hashes; file timestamps are not proof of pre/post reads; rest/target/trace linkage and material manifest checked explicitly",
+  "sha256": {
+    "art\\whole-v04\\raw\\whole-v04.png": "56947ae376af812075e42f23d2c874ef1c9f30de6f51718700f4376cfae38bb3",
+    "art\\early-v04-r1\\MATERIALS.json": "5c03e254dca5e430d978b9fcf4bd713df639375039af25523b442d3239a0c65f",
+    "art\\early-v04-r1\\SHORTS_TRACE.json": "330468ff7eba951f88efb8b4af464f3b772094a67bea9ac62124b0cc3345484a",
+    "builder\\early-v04-r1\\SOURCE_GEOMETRY.json": "6decc6ffe46937a7f09717cf4198699d32108a396f2798299bfb05cdf975d391",
+    "builder\\early-v04-r1\\CAGE_REST.json": "a2c30f4f378c317e38cda880eb31cb0b91d461d047b3cd632e806d29a3ffb981",
+    "builder\\early-v04-r1\\CAGE_TARGETS.json": "45b7dce9d2602bc41ed9c6eb454c16feb19fdb7bd635f3b14f800b2d4ef8bda8",
+    "builder\\early-v04-r1\\CAGE_SOLVER_CONTRACT.md": "76d305e59d4cb1863fceec08790ada0062d1ea89d4c1d0f7018e080c422b36de",
+    "builder\\early-v04-r1\\prepare-cage.mjs": "4a31dfc72781fb215ba7ba747255727710c537ed66027b07699c973fe8e4fc87",
+    "builder\\early-v04-r1\\solve-cage.py": "8d2ea57b947f76ca5122eb6ce56d5c0ab07fb6b85cd8b88baffcd4ef4b8c621f",
+    "app\\early-v04-r1\\kinematics.mjs": "0b52bf57d267dbc0e669f4eb4d75fd2e49360f0861515cd2e26167bc69344efe",
+    "art\\early-v04-r1\\materials\\near_arm.png": "a9f34755bbaeec6f1b5783a67c87acf0e6321c25fdf2ea1edb6f949cd1821ef1",
+    "art\\early-v04-r1\\materials\\far_arm.png": "836d23c526dfc2c2751763ac5732f2012cc4920073848e059ae5cf5ba747e749",
+    "art\\early-v04-r1\\materials\\hip_shorts.png": "dbc11925677a79a415a6ea1f7d5721d7d9452d1cede4b5ef1c5b0a3af8734a66",
+    "art\\early-v04-r1\\materials\\near_thigh.png": "c7ab904fddf988799bef71f9c170ab40fa5a026e389cadf78a6e6d106600219e",
+    "art\\early-v04-r1\\materials\\far_thigh.png": "7d842e3ef9a54b1be1bbce23e2dfe077b4bfc7006d37878c5d374f5c4e277469",
+    "art\\early-v04-r1\\materials\\near_shin.png": "99acce8bb50a4d4fdae6e329c1b92c9f10f705d2b480fcc9d197994d54f08a56",
+    "art\\early-v04-r1\\materials\\far_shin.png": "e8c442c3089aa5c00503ad5deac11bea3570f18b9a8df63b329f8572a5483840",
+    "art\\early-v04-r1\\materials\\near_shoe.png": "b24b0dd27337a5664417c3b08dd53a95f1f14f53bb097445b2847d835d0833d5",
+    "art\\early-v04-r1\\materials\\far_shoe.png": "122fd799411b6549be0f047875908276512b9f8e9ec95707a8442cecacaf4b68",
+    "art\\early-v04-r1\\materials\\torso_head_tank.png": "395a3eec8a0c50cd0226f5c722625bfacdb76946302c1120834bf5561b31dbf1",
+    "builder/early-v04-r1/SOURCE_TRACE_USED.json": "a8ecf9f2878ec31a6421607aae356e8c5b1784be964b02f88d5823c03f551f12"
+  },
+  "checks": {
+    "restEqualsSolveInput": true,
+    "targetsEqualSolveInput": true,
+    "sourceGeometryEqualsRestInput": true,
+    "traceEqualsRestInput": false,
+    "materialsMatchAssetManifest": true,
+    "usedTraceReproducedOriginalHash": false
+  },
+  "traceVersionAudit": {
+    "usedTraceSha256": "c967ab5f1a635c3587fa7b56d5298529d87cd6353f57ffa1f0793f666fbcd708",
+    "usedEmbeddedValuesReproducedExactOriginalBytes": false,
+    "currentAssetTraceSha256": "330468ff7eba951f88efb8b4af464f3b772094a67bea9ac62124b0cc3345484a",
+    "changedFields": [
+      "boundary",
+      "handTraceEnvelope"
+    ],
+    "oldBoundaryEqualsCurrentHandTraceEnvelope": true,
+    "allSemanticSeamsUnchanged": true,
+    "noRerunWithUpdatedBoundary": true,
+    "usedOriginalBytesUnavailable": true,
+    "inputCaptureWeakness": "prepare read JSON values first and hashed file bytes later; concurrent update could race. Embedded rest values and solve rest hash are authoritative for computed geometry.",
+    "diagnosis": "real boundary geometry update, all semantic seam paths unchanged; old envelope cage FAIL is not stable actual-boundary test"
+  }
+}

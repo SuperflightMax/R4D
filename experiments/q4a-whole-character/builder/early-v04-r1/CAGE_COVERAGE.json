@@ -1,0 +1,65 @@
+{
+  "version": "stable actual input03",
+  "sourceNonzeroAlphaCells": 52221,
+  "outsideCageCells": 0,
+  "outsideDenseCells": 0,
+  "maxOmittedAlpha": 0,
+  "firstOutside": [],
+  "geometryPaddingPx": 2,
+  "extrapolation": false,
+  "materialShoeSupport": {
+    "near": {
+      "1": 1473,
+      "128": 1469,
+      "250": 1468
+    },
+    "far": {
+      "1": 1474,
+      "128": 1464,
+      "250": 1461
+    }
+  },
+  "nonzeroPixelCellCorners": [
+    {
+      "corner": [
+        0,
+        0
+      ],
+      "outsideCount": 0
+    },
+    {
+      "corner": [
+        1,
+        0
+      ],
+      "outsideCount": 0
+    },
+    {
+      "corner": [
+        0,
+        1
+      ],
+      "outsideCount": 0
+    },
+    {
+      "corner": [
+        1,
+        1
+      ],
+      "outsideCount": 2
+    }
+  ],
+  "partialCellCornerExceptions": [
+    [
+      588,
+      848,
+      253
+    ],
+    [
+      586,
+      849,
+      253
+    ]
+  ],
+  "coverageDefinition": "All 52221 nonzero source pixel centers covered. Two bottom-right cell-corner exceptions disclosed separately; not a byte-identical full footprint claim."
+}

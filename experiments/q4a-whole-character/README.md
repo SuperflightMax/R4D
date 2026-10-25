@@ -2,7 +2,7 @@
 
 Канонический заказ: [Queue A](../../CTO_EXPERIMENT_QUEUE_A.md), общие условия и секция Q4A. [Команда и состояние](TEAM.md), [договор до генерации](AGREEMENT.md).
 
-**Текущий этап — ранний source-derived repair/slicing test raw-v04.** [R0 согласован троими](EARLY_V04_R1.md#r0-завершён--один-общий-договор): одна ограниченная cage hip/shorts, локальные доказанные hidden repairs плеча/майки, опора полных chains без stretch, полноценный low drop230px. После публикации R0 и отдельного старта Lead — только минимальный R1 shoulder swing+hip low. Новые whole calls/full parts/full motion/QA/release/Q2A закрыты.
+**Текущий результат — R1_TECHNICAL_FAIL_BEFORE_FULL_AFTER.** [R0](EARLY_V04_R1.md#r0-завершён--один-общий-договор) опубликован `746cd6d`; минимальные source-derived материалы и full-chain low230 feasibility получены. На финальном actual44 contour fixed cage solver остановлен при drop50,79px из230, triangle923 меняет ориентацию. [Точный результат и границы](EARLY_V04_R1.md#итог-корректного-r1-input-прогона-технический-stop-до-full-after). Exact rendered after/два личных motion reviews не получены, художественного PASS нет; это отказ конкретного численного продолжения, не доказательство невозможности cage вообще. Новые whole calls/full parts/full motion/QA/release/Q2A закрыты.
 
 **Whole-v04 остаётся SOURCE_POSE_FAIL**, опубликован `263e5b4`: near upper-arm перекрывает майку (alpha253–254), dense soles расходятся на5–7px при допуске4. [Точный source gate](WHOLE_V04.md#g-завершён-source_pose_fail-по-пунктам2-и3). Новое разрешение CTO проверяет source-derived repair/slicing, не переписывает этот результат.
 
@@ -13,6 +13,8 @@
 История: [garment04](CORRECTION_04.md#итог-early_v02_04_garment_fail), [boundary-тест03](CORRECTION_03.md#этап-a-fail-дальнейшие-этапы-не-начаты), [коррекция02](CORRECTION_02.md#итог-early_v02_02_gate_fail), [первая попытка](HANDOFF.md).
 
 ## Открыть раннюю попытку
+
+R1 доступен как [статическая исходная сборка](art/early-v04-r1/diagnostics/initial-assembly-light.png), [кинематическая feasibility полного low](builder/early-v04-r1/GEOMETRY_FEASIBILITY.png) и [witness solver STOP](builder/early-v04-r1/CAGE_FAILURE.png), [подробности](EARLY_V04_R1.md). Это материалы незавершённого до движения теста; нового анимационного build/URL нет.
 
 Последний статический [raw-v04](art/whole-v04/raw/whole-v04.png) на [светлом](art/whole-v04/previews/whole-v04-light.png), [тёмном](art/whole-v04/previews/whole-v04-dark.png), [checker-фоне](art/whole-v04/previews/whole-v04-checker.png). Это непринятый исходник, не новое анимационное демо. Сохранены [raw-v03 correction02](art/whole-v03/raw/whole-v03-correction02.png) и первый [raw-v03](art/whole-v03/raw/whole-v03.png); correction01-изображение не получено.
 
@@ -38,5 +40,6 @@
 - Whole-v03: [общий PREGEN/source status](WHOLE_V03.md), личные [Concept](concept/whole-v03/SOURCE_REVIEW.md), [Asset](art/whole-v03/SOURCE_REVIEW.md), [Builder](builder/whole-v03/SOURCE_REVIEW.md); [условия недоступной correction01](art/whole-v03/raw/whole-v03-correction01-conditions.md).
 - Correction02: [условия/raw provenance](art/whole-v03/raw/whole-v03-correction02-conditions.md), личные [Concept](concept/whole-v03/SOURCE_REVIEW_CORRECTION02.md), [Asset](art/whole-v03/SOURCE_REVIEW_CORRECTION02.md), [Builder](builder/whole-v03/SOURCE_REVIEW_CORRECTION02.md). Единогласный source pose FAIL; новый fitted garment принят только статически.
 - Whole-v04: [P→G и итог](WHOLE_V04.md), [условия двух references/raw](art/whole-v04/raw/whole-v04-conditions.md), личные [Concept](concept/whole-v04/SOURCE_REVIEW.md)/[Asset](art/whole-v04/SOURCE_REVIEW.md)/[Builder](builder/whole-v04/SOURCE_REVIEW.md), [реальная alpha/sole проверка](builder/whole-v04/source/RAW_CHECK.json). Guide принят, новый source FAIL; движения нет.
+- Early-v04-r1: [R0→R1 и передача CTO](EARLY_V04_R1.md), [Asset materials/ограничения](art/early-v04-r1/RESULT.md), [Builder fixed-solver результат](builder/early-v04-r1/RESULT.md). Сохранились две envelope-input попытки и корректный actual-contour run; full after не достигнут.
 
 `npm run check` содержит шесть проверок общего механизма/опоры. Для04 повторены `node builder/early-v02-04/check-matrices.mjs`, `node builder/early-v02-04/check-material.mjs`, `npm run build` — успешно. Они не подтверждают художественное качество: garment gate04 FAIL. Независимые Technical QA и Visual QA пока подготовили планы, полный кандидат им не выдавался.

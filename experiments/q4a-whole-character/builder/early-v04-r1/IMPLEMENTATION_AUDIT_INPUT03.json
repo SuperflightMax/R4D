@@ -1,0 +1,37 @@
+{
+  "inputVersion": "stable actual trace44 / inputs03",
+  "restFIdentityMaxError": 7.316369732279782e-14,
+  "restGlobalStepMaxError": 9.265477274311706e-11,
+  "restOrientationMin": 0.9999999999999517,
+  "energyGradientChecksWithNonzeroPerturbation": [
+    {
+      "vertex": 221,
+      "axis": 0,
+      "analytic": 5.184670810898237,
+      "finiteDifference": 5.18467080382834,
+      "absoluteError": 7.069897556277738e-09
+    },
+    {
+      "vertex": 221,
+      "axis": 1,
+      "analytic": 0.8137502184060308,
+      "finiteDifference": 0.8137502146610132,
+      "absoluteError": 3.7450176293418735e-09
+    },
+    {
+      "vertex": 611,
+      "axis": 0,
+      "analytic": 1.6032020403295393,
+      "finiteDifference": 1.6032020323564211,
+      "absoluteError": 7.973118165693904e-09
+    },
+    {
+      "vertex": 344,
+      "axis": 1,
+      "analytic": -0.8850587993040826,
+      "finiteDifference": -0.8850586993958132,
+      "absoluteError": 9.99082694352893e-08
+    }
+  ],
+  "noFurtherImplementationBugConfirmed": true
+}

@@ -1,0 +1,35 @@
+{
+  "stableVersion": "v04-r1-materials01",
+  "currentTraceSHA256": "330468ff7eba951f88efb8b4af464f3b772094a67bea9ac62124b0cc3345484a",
+  "manifestSHA256": "5c03e254dca5e430d978b9fcf4bd713df639375039af25523b442d3239a0c65f",
+  "hipTextureSHA256": "dbc11925677a79a415a6ea1f7d5721d7d9452d1cede4b5ef1c5b0a3af8734a66",
+  "originalSolverTraceSHA256": "c967ab5f1a635c3587fa7b56d5298529d87cd6353f57ffa1f0793f666fbcd708",
+  "originalTraceRecoveredFile": "history/SHORTS_TRACE_INITIAL_EXACT_RECOVERED.json",
+  "recovery": "Current handTraceEnvelope replaces boundary; omit newly added handTraceEnvelope key; preserve original key order; json.dumps(indent=2) plus trailing newline translated to Windows CRLF. Hash equals original CAGE_REST sourceTraceSha256, values equal embedded semanticTrace. Historical exact-byte recovery, not claim that an old copy existed before cleanup.",
+  "changedFields": [
+    "boundary",
+    "handTraceEnvelope"
+  ],
+  "boundaryVertexCounts": {
+    "solverInput": 31,
+    "currentStable": 44
+  },
+  "oldBoundaryEqualsCurrentHandTraceEnvelope": true,
+  "unchangedFields": [
+    "canvas",
+    "waistband",
+    "nearLegOpening",
+    "farLegOpening",
+    "sideSeam",
+    "crotchSeam",
+    "owner",
+    "hidden"
+  ],
+  "changePurpose": "source semantic cleanup excludes skin below cuffs and mustard waistband fringe; actual contour via HSV plum segmentation plus cv2 approxPolyDP epsilon1 raw px; not a solver-driven fix.",
+  "sourcePixels": {
+    "previousHipNonzeroAlpha": 55039,
+    "currentHipNonzeroAlpha": 52221,
+    "visibleRGBSameRaw": true
+  },
+  "linkage": "Solver STOP belongs to original 31-vertex trace geometry; final 44-vertex trace not rerun. No motion/artistic PASS. Materials/trace remain unchanged."
+}
