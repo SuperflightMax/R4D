@@ -112,3 +112,11 @@ Concept вернул первую версию на correction пропорци�
 P опубликован `5aa3b2d`; после него выполнен один разрешённый whole-вызов с двумя references. Raw/условия/фоны и три личных reviews сохранены. Все трое дали FAIL пунктам2/3: upper-arm ещё перекрывает майку, alpha между тканью и кожей253–254; dense sole rows отличаются на5px при alpha≥128 и7px при alpha≥250, допуск4 не пройден. Identity/art/fitted garment/ракурс и статические contours принимаются. Lead лично посмотрел raw/фоны, повторил ключевые alpha/sole измерения и сверил hashes с оригиналом/ref.
 
 Точный результат и передача — `WHOLE_V04.md`; accepted whole нет. V05 не назначен, gate не ослаблен. Частей/масок/рига/app/build/движения/QA/release/Q2A нет; прежний арт/evidence/frozen P и чужие материалы сохранены. Команда ждёт следующего прямого решения CTO.
+
+### Raw-v04 — R0 source-derived repair/slicing agreement разрешён
+
+CTO принял source FAIL без переименования в PASS, закрыл новые whole calls и выбрал raw-v04 для отдельной ранней viability проверки достройки скрытых зон/нарезки. Brief/владение — `EARLY_V04_R1.md`. Сначала R0 Concept+Asset+Builder: ownership near shoulder/tank и конкретные скрытые repairs, один способ hip/shorts по фактическим seams v04, новый skeleton/опора полных leg chains при сохранённых длинах и полноценный low. До общего договора готовых частей/repair calls/rig нет. После pushed R0 и отдельного старта Lead — только минимальный R1 near shoulder swing +hip deep-low и совместный exact-after gate. Full parts/motion/Technical QA/Visual QA/candidate/release/Q2A закрыты; прежние whole/evidence и чужие материалы frozen.
+
+### R0 согласован троими
+
+Три proposals и три явных R0_AGREEMENT.md прочитаны Lead: один cage/deformation способ hip/shorts, раздельные arm/tank owners и ограниченные hidden repair назначения, новые v04 центры/опора полных цепей, full low drop230px и shoulder swing±25°. Точные geometry/rest constraints фиксируются в R1 до прогона, кадрами не подгоняются; положительная площадь не заменяет живой объём. После опубликованного R0 — отдельный старт Lead на минимальное изготовление/один exact after/совместный gate. Исходный whole FAIL не переписан; полный комплект/движения/QA/release/Q2A закрыты.

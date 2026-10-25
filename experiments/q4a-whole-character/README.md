@@ -2,7 +2,9 @@
 
 Канонический заказ: [Queue A](../../CTO_EXPERIMENT_QUEUE_A.md), общие условия и секция Q4A. [Команда и состояние](TEAM.md), [договор до генерации](AGREEMENT.md).
 
-**Текущая попытка — whole-v04: SOURCE_POSE_FAIL.** P с исправленным [единым pose-guide](builder/whole-v04/pose-guide.png) опубликован `5aa3b2d`; G выполнен одним whole-вызовом и тремя личными reviews. Near upper-arm ещё перекрывает майку (alpha253–254), плотные подошвы расходятся на5–7px при допуске4. [Точный gate, raw-проверка и передача CTO](WHOLE_V04.md#g-завершён-source_pose_fail-по-пунктам2-и3). Accepted whole нет; v05 автоматически не запускается, нарезка/rig/full parts/motion/QA/release/Q2A закрыты.
+**Текущий этап — ранний source-derived repair/slicing test raw-v04.** [R0 согласован троими](EARLY_V04_R1.md#r0-завершён--один-общий-договор): одна ограниченная cage hip/shorts, локальные доказанные hidden repairs плеча/майки, опора полных chains без stretch, полноценный low drop230px. После публикации R0 и отдельного старта Lead — только минимальный R1 shoulder swing+hip low. Новые whole calls/full parts/full motion/QA/release/Q2A закрыты.
+
+**Whole-v04 остаётся SOURCE_POSE_FAIL**, опубликован `263e5b4`: near upper-arm перекрывает майку (alpha253–254), dense soles расходятся на5–7px при допуске4. [Точный source gate](WHOLE_V04.md#g-завершён-source_pose_fail-по-пунктам2-и3). Новое разрешение CTO проверяет source-derived repair/slicing, не переписывает этот результат.
 
 Последний source — whole-v03 correction02: identity/art/fitted shorts/ракурс приняты, но верхняя ближняя рука перекрывает майку, плотные подошвы различаются на15 px. [SOURCE_POSE_FAIL](WHOLE_V03.md#correction02-source_pose_fail-gate-завершён), опубликован `182a3e9`; все прежние материалы frozen.
 
