@@ -1,0 +1,17 @@
+:root { font: 16px/1.5 system-ui, sans-serif; color: #302d29; background: #f4f1eb; }
+* { box-sizing: border-box; }
+body { margin: 0; } main { max-width: 1080px; margin: auto; padding: 22px; }
+header { display: flex; flex-wrap: wrap; align-items: baseline; gap: 0 20px; }
+h1 { margin: 0; font-size: 28px; } header p { margin: 0; color: #635d52; }
+.eyebrow { width: 100%; letter-spacing: .06em; font-size: 12px; }
+.viewer { position: relative; border: 1px solid #c7c1b5; border-radius: 12px; overflow: hidden; margin-top: 16px; }
+#stage { width: 100%; height: min(67vw, 650px); min-height: 430px; background: #eee9df; }
+#stage canvas { display: block; width: 100%; height: 100%; }
+#asset-status { position: absolute; top: 10px; left: 14px; right: 14px; margin: 0; font-size: 13px; color: #302d29; background: #f4f1ebe8; padding: 5px 9px; border-radius: 5px; }
+.controls { padding-top: 14px; } .actions,.tools { display: flex; flex-wrap: wrap; align-items: center; gap: 9px; margin-bottom: 10px; }
+button, select { font: inherit; border: 1px solid #b5ad9f; border-radius: 7px; background: #fffcf6; color: inherit; padding: 8px 12px; }
+button { cursor: pointer; } button[aria-pressed="true"] { color: white; background: #5c4a78; border-color: #5c4a78; }
+button:focus-visible,select:focus-visible { outline: 3px solid #b0781c; outline-offset: 2px; }
+label { display: flex; align-items: center; gap: 6px; } .hint,#motion-status { font-size: 13px; margin: 6px 0; } .hint { color: #635d52; }
+pre { max-height: 360px; overflow: auto; font-size: 12px; }
+@media (max-width: 600px) { main { padding: 12px; } #stage { min-height: 470px; } .actions button { flex: 1 1 40%; } header > p:last-child { width: 100%; } }

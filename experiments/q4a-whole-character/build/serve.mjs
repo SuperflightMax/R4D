@@ -15,7 +15,7 @@ createServer(async (req, res) => {
     if (relative.endsWith('/')) relative += 'index.html';
     // Development reads current art directly; packaged build/site remains standalone.
     const base = relative.startsWith('art/') ? fileURLToPath(new URL('../', import.meta.url))
-      : /^early-v02-0[12]\//.test(relative) ? fileURLToPath(new URL('./', import.meta.url)) : root;
+      : /^early-v02-0[123]\//.test(relative) ? fileURLToPath(new URL('./', import.meta.url)) : root;
     const target = path.resolve(base, relative);
     if (!target.startsWith(base)) { res.writeHead(403); res.end(); return; }
     const body = await readFile(target);

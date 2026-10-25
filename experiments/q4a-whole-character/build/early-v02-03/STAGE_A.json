@@ -1,0 +1,6104 @@
+{
+  "stage": "A_ONLY",
+  "traceSha256": "cc93b238e3ee09e7e4eabb0c3965da02982d215368d86efb7cfaadb934275eb9",
+  "materialSha256": "df51207b000f0fc9f5cd27ef757401e614dad264934384b615cf88268babad16",
+  "method": "traced-boundary triangulation; boundary arc-length binding; piecewise-affine exhaustive alpha-cell mapping",
+  "sourceCoverage": {
+    "nonzero": 27681,
+    "near": 23164,
+    "far": 4517,
+    "rawBoundaryOverlap": 5,
+    "outsideTraceButIncluded": 1411,
+    "outsideTraceVisibleSource": 575,
+    "visibleSource": 12107,
+    "unassigned": 0,
+    "duplicateVisibleOwner": 0
+  },
+  "hiddenOverlapAppliedPixels": 0,
+  "parameterTrialsAfterThisGate": 0,
+  "inheritedPoseInvariants": {
+    "maxLengthError": 1.7053025658242404e-13,
+    "maxSupportError": 0,
+    "additionalPelvisDrop": 243.60999999989826,
+    "lowKnees": {
+      "near": 116.96287323425969,
+      "far": 101.04041613765648
+    }
+  },
+  "result": "FAIL",
+  "firstFailure": {
+    "pose": "neutral",
+    "side": "near",
+    "sourceCell": [
+      583,
+      741
+    ],
+    "alpha": 253,
+    "visibleV02Alpha": 253,
+    "source": [
+      {
+        "x": 583,
+        "y": 741
+      },
+      {
+        "x": 584,
+        "y": 741
+      },
+      {
+        "x": 583,
+        "y": 742
+      }
+    ],
+    "target": [
+      {
+        "x": 596.9651762894488,
+        "y": 762.8182109799294
+      },
+      {
+        "x": 597.7479645707903,
+        "y": 762.8173779709334
+      },
+      {
+        "x": 598.0234684379718,
+        "y": 762.4699247515748
+      }
+    ],
+    "signedArea2": -0.27175281122850314,
+    "mapping": [
+      {
+        "face": "near-main",
+        "sourceVertexIndices": [
+          18,
+          23,
+          24
+        ],
+        "barycentric": [
+          0,
+          0,
+          1
+        ],
+        "extrapolated": false,
+        "distanceSquared": 0
+      },
+      {
+        "face": "near-main",
+        "sourceVertexIndices": [
+          30,
+          18,
+          24
+        ],
+        "barycentric": [
+          0.01846965699208447,
+          0.10817941952506596,
+          0.8733509234828496
+        ],
+        "extrapolated": false,
+        "distanceSquared": 0
+      },
+      {
+        "face": "near-main",
+        "sourceVertexIndices": [
+          18,
+          23,
+          24
+        ],
+        "barycentric": [
+          -0.4782608695652174,
+          0.8695652173913043,
+          0.6086956521739131
+        ],
+        "extrapolated": true,
+        "distanceSquared": 0.8287671232876704
+      }
+    ]
+  },
+  "rows": [
+    {
+      "pose": "neutral",
+      "side": "near",
+      "sourceOpaqueCells": 23164,
+      "invertedCellTriangles": {
+        "alpha1": 148,
+        "alpha16": 148,
+        "alpha128": 148,
+        "visibleV02": 148
+      },
+      "minimumArea": -3.2830189341162135,
+      "first": {
+        "sourceCell": [
+          583,
+          741
+        ],
+        "alpha": 253,
+        "visibleV02Alpha": 253,
+        "source": [
+          {
+            "x": 583,
+            "y": 741
+          },
+          {
+            "x": 584,
+            "y": 741
+          },
+          {
+            "x": 583,
+            "y": 742
+          }
+        ],
+        "target": [
+          {
+            "x": 596.9651762894488,
+            "y": 762.8182109799294
+          },
+          {
+            "x": 597.7479645707903,
+            "y": 762.8173779709334
+          },
+          {
+            "x": 598.0234684379718,
+            "y": 762.4699247515748
+          }
+        ],
+        "signedArea2": -0.27175281122850314,
+        "mapping": [
+          {
+            "face": "near-main",
+            "sourceVertexIndices": [
+              18,
+              23,
+              24
+            ],
+            "barycentric": [
+              0,
+              0,
+              1
+            ],
+            "extrapolated": false,
+            "distanceSquared": 0
+          },
+          {
+            "face": "near-main",
+            "sourceVertexIndices": [
+              30,
+              18,
+              24
+            ],
+            "barycentric": [
+              0.01846965699208447,
+              0.10817941952506596,
+              0.8733509234828496
+            ],
+            "extrapolated": false,
+            "distanceSquared": 0
+          },
+          {
+            "face": "near-main",
+            "sourceVertexIndices": [
+              18,
+              23,
+              24
+            ],
+            "barycentric": [
+              -0.4782608695652174,
+              0.8695652173913043,
+              0.6086956521739131
+            ],
+            "extrapolated": true,
+            "distanceSquared": 0.8287671232876704
+          }
+        ]
+      },
+      "boundaryFailures": [
+        {
+          "face": "near-main",
+          "triangle": 42,
+          "indices": [
+            18,
+            23,
+            24
+          ],
+          "sourceArea2": 23,
+          "area2": -12.100912700026761,
+          "jacobian": -0.5261266391315983,
+          "inverted": true,
+          "source": [
+            {
+              "x": 603,
+              "y": 748
+            },
+            {
+              "x": 594,
+              "y": 746
+            },
+            {
+              "x": 583,
+              "y": 741
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "pose": "neutral",
+      "side": "far",
+      "sourceOpaqueCells": 4517,
+      "invertedCellTriangles": {
+        "alpha1": 2,
+        "alpha16": 0,
+        "alpha128": 0,
+        "visibleV02": 0
+      },
+      "minimumArea": -0.23353033458661843,
+      "first": {
+        "sourceCell": [
+          637,
+          740
+        ],
+        "alpha": 1,
+        "visibleV02Alpha": 0,
+        "source": [
+          {
+            "x": 637,
+            "y": 740
+          },
+          {
+            "x": 638,
+            "y": 740
+          },
+          {
+            "x": 637,
+            "y": 741
+          }
+        ],
+        "target": [
+          {
+            "x": 640.8493164120873,
+            "y": 774.727779272665
+          },
+          {
+            "x": 641.1130640039769,
+            "y": 774.9041766914902
+          },
+          {
+            "x": 641.8306244194628,
+            "y": 775.3133507744521
+          }
+        ],
+        "signedArea2": -0.018657126098021587,
+        "mapping": [
+          {
+            "face": "far-main",
+            "sourceVertexIndices": [
+              24,
+              8,
+              9
+            ],
+            "barycentric": [
+              -0.11111111111111105,
+              0.6666666666666666,
+              0.4444444444444444
+            ],
+            "extrapolated": true,
+            "distanceSquared": 1.2933985330073343
+          },
+          {
+            "face": "far-main",
+            "sourceVertexIndices": [
+              24,
+              8,
+              9
+            ],
+            "barycentric": [
+              -0.20772946859903382,
+              1.2028985507246377,
+              0.004830917874396135
+            ],
+            "extrapolated": true,
+            "distanceSquared": 4.520782396088019
+          },
+          {
+            "face": "far-main",
+            "sourceVertexIndices": [
+              9,
+              10,
+              11
+            ],
+            "barycentric": [
+              0.9642857142857143,
+              0.15178571428571427,
+              -0.11607142857142858
+            ],
+            "extrapolated": true,
+            "distanceSquared": 0.976878612716763
+          }
+        ]
+      },
+      "boundaryFailures": []
+    },
+    {
+      "pose": "down-3",
+      "side": "near",
+      "sourceOpaqueCells": 23164,
+      "invertedCellTriangles": {
+        "alpha1": 476,
+        "alpha16": 476,
+        "alpha128": 476,
+        "visibleV02": 451
+      },
+      "minimumArea": -8.783320035017057,
+      "first": {
+        "sourceCell": [
+          543,
+          714
+        ],
+        "alpha": 253,
+        "visibleV02Alpha": 253,
+        "source": [
+          {
+            "x": 543,
+            "y": 714
+          },
+          {
+            "x": 544,
+            "y": 714
+          },
+          {
+            "x": 543,
+            "y": 715
+          }
+        ],
+        "target": [
+          {
+            "x": 530.0282053059251,
+            "y": 789.8822568383958
+          },
+          {
+            "x": 530.5585837161727,
+            "y": 789.9774533452141
+          },
+          {
+            "x": 531.0282735337396,
+            "y": 789.8521662280639
+          }
+        ],
+        "signedArea2": -0.11116241193915499,
+        "mapping": [
+          {
+            "face": "near-main",
+            "sourceVertexIndices": [
+              30,
+              18,
+              24
+            ],
+            "barycentric": [
+              0.6860158311345648,
+              0.16094986807387862,
+              0.15303430079155672
+            ],
+            "extrapolated": false,
+            "distanceSquared": 0
+          },
+          {
+            "face": "near-main",
+            "sourceVertexIndices": [
+              30,
+              18,
+              24
+            ],
+            "barycentric": [
+              0.704485488126649,
+              0.2691292875989446,
+              0.026385224274406333
+            ],
+            "extrapolated": false,
+            "distanceSquared": 0
+          },
+          {
+            "face": "near-main",
+            "sourceVertexIndices": [
+              24,
+              25,
+              30
+            ],
+            "barycentric": [
+              0.3608815426997245,
+              0.005509641873278237,
+              0.6336088154269972
+            ],
+            "extrapolated": false,
+            "distanceSquared": 0
+          }
+        ]
+      },
+      "boundaryFailures": [
+        {
+          "face": "near-main",
+          "triangle": 20,
+          "indices": [
+            19,
+            21,
+            22
+          ],
+          "sourceArea2": 8,
+          "area2": -2.8710899644046943,
+          "jacobian": -0.3588862455505868,
+          "inverted": true,
+          "source": [
+            {
+              "x": 600,
+              "y": 757
+            },
+            {
+              "x": 598,
+              "y": 754
+            },
+            {
+              "x": 598,
+              "y": 750
+            }
+          ]
+        },
+        {
+          "face": "near-main",
+          "triangle": 40,
+          "indices": [
+            18,
+            19,
+            22
+          ],
+          "sourceArea2": 39,
+          "area2": -2.9159152879088412,
+          "jacobian": -0.07476705866432927,
+          "inverted": true,
+          "source": [
+            {
+              "x": 603,
+              "y": 748
+            },
+            {
+              "x": 600,
+              "y": 757
+            },
+            {
+              "x": 598,
+              "y": 750
+            }
+          ]
+        },
+        {
+          "face": "near-main",
+          "triangle": 41,
+          "indices": [
+            18,
+            22,
+            23
+          ],
+          "sourceArea2": 28,
+          "area2": -6.771902514461238,
+          "jacobian": -0.2418536612307585,
+          "inverted": true,
+          "source": [
+            {
+              "x": 603,
+              "y": 748
+            },
+            {
+              "x": 598,
+              "y": 750
+            },
+            {
+              "x": 594,
+              "y": 746
+            }
+          ]
+        },
+        {
+          "face": "near-main",
+          "triangle": 42,
+          "indices": [
+            18,
+            23,
+            24
+          ],
+          "sourceArea2": 23,
+          "area2": -39.880444148590946,
+          "jacobian": -1.7339323542865628,
+          "inverted": true,
+          "source": [
+            {
+              "x": 603,
+              "y": 748
+            },
+            {
+              "x": 594,
+              "y": 746
+            },
+            {
+              "x": 583,
+              "y": 741
+            }
+          ]
+        },
+        {
+          "face": "near-main",
+          "triangle": 47,
+          "indices": [
+            30,
+            18,
+            24
+          ],
+          "sourceArea2": 379,
+          "area2": -48.60240946010731,
+          "jacobian": -0.12823854738814594,
+          "inverted": true,
+          "source": [
+            {
+              "x": 520,
+              "y": 700
+            },
+            {
+              "x": 603,
+              "y": 748
+            },
+            {
+              "x": 583,
+              "y": 741
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "pose": "down-3",
+      "side": "far",
+      "sourceOpaqueCells": 4517,
+      "invertedCellTriangles": {
+        "alpha1": 992,
+        "alpha16": 710,
+        "alpha128": 659,
+        "visibleV02": 0
+      },
+      "minimumArea": -2.173359620510621,
+      "first": {
+        "sourceCell": [
+          612,
+          641
+        ],
+        "alpha": 253,
+        "visibleV02Alpha": 0,
+        "source": [
+          {
+            "x": 613,
+            "y": 641
+          },
+          {
+            "x": 613,
+            "y": 642
+          },
+          {
+            "x": 612,
+            "y": 642
+          }
+        ],
+        "target": [
+          {
+            "x": 585.0690997447448,
+            "y": 728.5114763654979
+          },
+          {
+            "x": 584.198169503525,
+            "y": 729.7737643012721
+          },
+          {
+            "x": 584.579431460984,
+            "y": 729.2935685910446
+          }
+        ],
+        "signedArea2": -0.06304540352899879,
+        "mapping": [
+          {
+            "face": "far-main",
+            "sourceVertexIndices": [
+              24,
+              25,
+              7
+            ],
+            "barycentric": [
+              0.5205479452054795,
+              0.2602739726027397,
+              0.2191780821917808
+            ],
+            "extrapolated": false,
+            "distanceSquared": 0
+          },
+          {
+            "face": "far-main",
+            "sourceVertexIndices": [
+              24,
+              7,
+              8
+            ],
+            "barycentric": [
+              0.8264642082429502,
+              0.1648590021691974,
+              0.008676789587852495
+            ],
+            "extrapolated": false,
+            "distanceSquared": 0
+          },
+          {
+            "face": "far-main",
+            "sourceVertexIndices": [
+              24,
+              8,
+              9
+            ],
+            "barycentric": [
+              0.8840579710144928,
+              0.043478260869565216,
+              0.07246376811594203
+            ],
+            "extrapolated": false,
+            "distanceSquared": 0
+          }
+        ]
+      },
+      "boundaryFailures": [
+        {
+          "face": "far-main",
+          "triangle": 15,
+          "indices": [
+            24,
+            7,
+            8
+          ],
+          "sourceArea2": 461,
+          "area2": -57.37491985581323,
+          "jacobian": -0.1244575268021979,
+          "inverted": true,
+          "source": [
+            {
+              "x": 609,
+              "y": 630
+            },
+            {
+              "x": 632,
+              "y": 698
+            },
+            {
+              "x": 633,
+              "y": 721
+            }
+          ]
+        },
+        {
+          "face": "far-main",
+          "triangle": 16,
+          "indices": [
+            24,
+            8,
+            9
+          ],
+          "sourceArea2": 207,
+          "area2": -439.1303542163164,
+          "jacobian": -2.121402677373509,
+          "inverted": true,
+          "source": [
+            {
+              "x": 609,
+              "y": 630
+            },
+            {
+              "x": 633,
+              "y": 721
+            },
+            {
+              "x": 636,
+              "y": 741
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "pose": "down-6",
+      "side": "near",
+      "sourceOpaqueCells": 23164,
+      "invertedCellTriangles": {
+        "alpha1": 4320,
+        "alpha16": 4320,
+        "alpha128": 4320,
+        "visibleV02": 3601
+      },
+      "minimumArea": -23.774471944079124,
+      "first": {
+        "sourceCell": [
+          450,
+          635
+        ],
+        "alpha": 252,
+        "visibleV02Alpha": 252,
+        "source": [
+          {
+            "x": 450,
+            "y": 635
+          },
+          {
+            "x": 451,
+            "y": 635
+          },
+          {
+            "x": 450,
+            "y": 636
+          }
+        ],
+        "target": [
+          {
+            "x": 390.0958796124035,
+            "y": 789.4952886045374
+          },
+          {
+            "x": 390.6796439513148,
+            "y": 789.6760271273885
+          },
+          {
+            "x": 390.8896877770477,
+            "y": 789.6610217448894
+          }
+        ],
+        "signedArea2": -0.04672261799164493,
+        "mapping": [
+          {
+            "face": "near-main",
+            "sourceVertexIndices": [
+              48,
+              16,
+              17
+            ],
+            "barycentric": [
+              0.9322742474916388,
+              0.019648829431438128,
+              0.04807692307692308
+            ],
+            "extrapolated": false,
+            "distanceSquared": 0
+          },
+          {
+            "face": "near-main",
+            "sourceVertexIndices": [
+              48,
+              16,
+              17
+            ],
+            "barycentric": [
+              0.9255852842809364,
+              0.06479933110367893,
+              0.009615384615384616
+            ],
+            "extrapolated": false,
+            "distanceSquared": 0
+          },
+          {
+            "face": "near-main",
+            "sourceVertexIndices": [
+              48,
+              17,
+              18
+            ],
+            "barycentric": [
+              0.9329004329004329,
+              0.004329004329004329,
+              0.06277056277056277
+            ],
+            "extrapolated": false,
+            "distanceSquared": 0
+          }
+        ]
+      },
+      "boundaryFailures": [
+        {
+          "face": "near-main",
+          "triangle": 17,
+          "indices": [
+            48,
+            16,
+            17
+          ],
+          "sourceArea2": 2392,
+          "area2": -30.664862468152933,
+          "jacobian": -0.012819758556920122,
+          "inverted": true,
+          "source": [
+            {
+              "x": 439,
+              "y": 628
+            },
+            {
+              "x": 600,
+              "y": 720
+            },
+            {
+              "x": 602,
+              "y": 736
+            }
+          ]
+        },
+        {
+          "face": "near-main",
+          "triangle": 18,
+          "indices": [
+            48,
+            17,
+            18
+          ],
+          "sourceArea2": 1848,
+          "area2": -176.30488196887381,
+          "jacobian": -0.0954030746584815,
+          "inverted": true,
+          "source": [
+            {
+              "x": 439,
+              "y": 628
+            },
+            {
+              "x": 602,
+              "y": 736
+            },
+            {
+              "x": 603,
+              "y": 748
+            }
+          ]
+        },
+        {
+          "face": "near-main",
+          "triangle": 20,
+          "indices": [
+            19,
+            21,
+            22
+          ],
+          "sourceArea2": 8,
+          "area2": -10.842418227173566,
+          "jacobian": -1.3553022783966957,
+          "inverted": true,
+          "source": [
+            {
+              "x": 600,
+              "y": 757
+            },
+            {
+              "x": 598,
+              "y": 754
+            },
+            {
+              "x": 598,
+              "y": 750
+            }
+          ]
+        },
+        {
+          "face": "near-main",
+          "triangle": 40,
+          "indices": [
+            18,
+            19,
+            22
+          ],
+          "sourceArea2": 39,
+          "area2": -34.64196479660854,
+          "jacobian": -0.8882555076053472,
+          "inverted": true,
+          "source": [
+            {
+              "x": 603,
+              "y": 748
+            },
+            {
+              "x": 600,
+              "y": 757
+            },
+            {
+              "x": 598,
+              "y": 750
+            }
+          ]
+        },
+        {
+          "face": "near-main",
+          "triangle": 41,
+          "indices": [
+            18,
+            22,
+            23
+          ],
+          "sourceArea2": 28,
+          "area2": -22.87321016988129,
+          "jacobian": -0.8169003632100461,
+          "inverted": true,
+          "source": [
+            {
+              "x": 603,
+              "y": 748
+            },
+            {
+              "x": 598,
+              "y": 750
+            },
+            {
+              "x": 594,
+              "y": 746
+            }
+          ]
+        },
+        {
+          "face": "near-main",
+          "triangle": 42,
+          "indices": [
+            18,
+            23,
+            24
+          ],
+          "sourceArea2": 23,
+          "area2": -59.03451749243926,
+          "jacobian": -2.566718151845185,
+          "inverted": true,
+          "source": [
+            {
+              "x": 603,
+              "y": 748
+            },
+            {
+              "x": 594,
+              "y": 746
+            },
+            {
+              "x": 583,
+              "y": 741
+            }
+          ]
+        },
+        {
+          "face": "near-main",
+          "triangle": 47,
+          "indices": [
+            30,
+            18,
+            24
+          ],
+          "sourceArea2": 379,
+          "area2": -210.07475510160748,
+          "jacobian": -0.5542869527746899,
+          "inverted": true,
+          "source": [
+            {
+              "x": 520,
+              "y": 700
+            },
+            {
+              "x": 603,
+              "y": 748
+            },
+            {
+              "x": 583,
+              "y": 741
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "pose": "down-6",
+      "side": "far",
+      "sourceOpaqueCells": 4517,
+      "invertedCellTriangles": {
+        "alpha1": 1793,
+        "alpha16": 1226,
+        "alpha128": 1139,
+        "visibleV02": 0
+      },
+      "minimumArea": -3.3342616817970487,
+      "first": {
+        "sourceCell": [
+          608,
+          623
+        ],
+        "alpha": 252,
+        "visibleV02Alpha": 0,
+        "source": [
+          {
+            "x": 608,
+            "y": 623
+          },
+          {
+            "x": 609,
+            "y": 623
+          },
+          {
+            "x": 608,
+            "y": 624
+          }
+        ],
+        "target": [
+          {
+            "x": 544.1570618403354,
+            "y": 789.1928860088847
+          },
+          {
+            "x": 544.3606924387235,
+            "y": 789.8484347943696
+          },
+          {
+            "x": 544.40522179339,
+            "y": 789.576888302707
+          }
+        ],
+        "signedArea2": -0.08448633895748958,
+        "mapping": [
+          {
+            "face": "far-main",
+            "sourceVertexIndices": [
+              25,
+              6,
+              7
+            ],
+            "barycentric": [
+              0.8864970645792565,
+              0.06457925636007827,
+              0.04892367906066536
+            ],
+            "extrapolated": false,
+            "distanceSquared": 0
+          },
+          {
+            "face": "far-main",
+            "sourceVertexIndices": [
+              25,
+              5,
+              6
+            ],
+            "barycentric": [
+              0.8354755784061696,
+              0.09254498714652956,
+              0.07197943444730077
+            ],
+            "extrapolated": false,
+            "distanceSquared": 0
+          },
+          {
+            "face": "far-main",
+            "sourceVertexIndices": [
+              25,
+              6,
+              7
+            ],
+            "barycentric": [
+              0.888454011741683,
+              0.011741682974559686,
+              0.09980430528375733
+            ],
+            "extrapolated": false,
+            "distanceSquared": 0
+          }
+        ]
+      },
+      "boundaryFailures": [
+        {
+          "face": "far-main",
+          "triangle": 6,
+          "indices": [
+            25,
+            6,
+            7
+          ],
+          "sourceArea2": 511,
+          "area2": -119.86152594132238,
+          "jacobian": -0.23456267307499487,
+          "inverted": true,
+          "source": [
+            {
+              "x": 605,
+              "y": 615
+            },
+            {
+              "x": 631,
+              "y": 676
+            },
+            {
+              "x": 632,
+              "y": 698
+            }
+          ]
+        },
+        {
+          "face": "far-main",
+          "triangle": 15,
+          "indices": [
+            24,
+            7,
+            8
+          ],
+          "sourceArea2": 461,
+          "area2": -312.62527653746554,
+          "jacobian": -0.6781459360899469,
+          "inverted": true,
+          "source": [
+            {
+              "x": 609,
+              "y": 630
+            },
+            {
+              "x": 632,
+              "y": 698
+            },
+            {
+              "x": 633,
+              "y": 721
+            }
+          ]
+        },
+        {
+          "face": "far-main",
+          "triangle": 16,
+          "indices": [
+            24,
+            8,
+            9
+          ],
+          "sourceArea2": 207,
+          "area2": -690.1921681312285,
+          "jacobian": -3.3342616817933743,
+          "inverted": true,
+          "source": [
+            {
+              "x": 609,
+              "y": 630
+            },
+            {
+              "x": 633,
+              "y": 721
+            },
+            {
+              "x": 636,
+              "y": 741
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "pose": "down-9",
+      "side": "near",
+      "sourceOpaqueCells": 23164,
+      "invertedCellTriangles": {
+        "alpha1": 4753,
+        "alpha16": 4753,
+        "alpha128": 4753,
+        "visibleV02": 3863
+      },
+      "minimumArea": -39.48104963119414,
+      "first": {
+        "sourceCell": [
+          445,
+          631
+        ],
+        "alpha": 250,
+        "visibleV02Alpha": 250,
+        "source": [
+          {
+            "x": 445,
+            "y": 631
+          },
+          {
+            "x": 446,
+            "y": 631
+          },
+          {
+            "x": 445,
+            "y": 632
+          }
+        ],
+        "target": [
+          {
+            "x": 360.20753513032713,
+            "y": 837.7442451344363
+          },
+          {
+            "x": 360.85187311220477,
+            "y": 837.8534840287174
+          },
+          {
+            "x": 360.86631872733,
+            "y": 837.795045640275
+          }
+        ],
+        "signedArea2": -0.03923209629662797,
+        "mapping": [
+          {
+            "face": "near-main",
+            "sourceVertexIndices": [
+              48,
+              15,
+              16
+            ],
+            "barycentric": [
+              0.963233148526408,
+              0.020134228187919462,
+              0.0166326232856726
+            ],
+            "extrapolated": false,
+            "distanceSquared": 0
+          },
+          {
+            "face": "near-main",
+            "sourceVertexIndices": [
+              48,
+              14,
+              15
+            ],
+            "barycentric": [
+              0.957688940764517,
+              0.0046688065363291505,
+              0.03764225269915378
+            ],
+            "extrapolated": false,
+            "distanceSquared": 0
+          },
+          {
+            "face": "near-main",
+            "sourceVertexIndices": [
+              48,
+              17,
+              18
+            ],
+            "barycentric": [
+              0.9632034632034632,
+              0.03463203463203463,
+              0.0021645021645021645
+            ],
+            "extrapolated": false,
+            "distanceSquared": 0
+          }
+        ]
+      },
+      "boundaryFailures": [
+        {
+          "face": "near-main",
+          "triangle": 17,
+          "indices": [
+            48,
+            16,
+            17
+          ],
+          "sourceArea2": 2392,
+          "area2": -627.8888999980209,
+          "jacobian": -0.26249535953094516,
+          "inverted": true,
+          "source": [
+            {
+              "x": 439,
+              "y": 628
+            },
+            {
+              "x": 600,
+              "y": 720
+            },
+            {
+              "x": 602,
+              "y": 736
+            }
+          ]
+        },
+        {
+          "face": "near-main",
+          "triangle": 18,
+          "indices": [
+            48,
+            17,
+            18
+          ],
+          "sourceArea2": 1848,
+          "area2": -665.1390054646126,
+          "jacobian": -0.35992370425574277,
+          "inverted": true,
+          "source": [
+            {
+              "x": 439,
+              "y": 628
+            },
+            {
+              "x": 602,
+              "y": 736
+            },
+            {
+              "x": 603,
+              "y": 748
+            }
+          ]
+        },
+        {
+          "face": "near-main",
+          "triangle": 20,
+          "indices": [
+            19,
+            21,
+            22
+          ],
+          "sourceArea2": 8,
+          "area2": -15.989072602858784,
+          "jacobian": -1.998634075357348,
+          "inverted": true,
+          "source": [
+            {
+              "x": 600,
+              "y": 757
+            },
+            {
+              "x": 598,
+              "y": 754
+            },
+            {
+              "x": 598,
+              "y": 750
+            }
+          ]
+        },
+        {
+          "face": "near-main",
+          "triangle": 40,
+          "indices": [
+            18,
+            19,
+            22
+          ],
+          "sourceArea2": 39,
+          "area2": -55.49553180001746,
+          "jacobian": -1.4229623538466016,
+          "inverted": true,
+          "source": [
+            {
+              "x": 603,
+              "y": 748
+            },
+            {
+              "x": 600,
+              "y": 757
+            },
+            {
+              "x": 598,
+              "y": 750
+            }
+          ]
+        },
+        {
+          "face": "near-main",
+          "triangle": 41,
+          "indices": [
+            18,
+            22,
+            23
+          ],
+          "sourceArea2": 28,
+          "area2": -29.262854381500965,
+          "jacobian": -1.0451019421964631,
+          "inverted": true,
+          "source": [
+            {
+              "x": 603,
+              "y": 748
+            },
+            {
+              "x": 598,
+              "y": 750
+            },
+            {
+              "x": 594,
+              "y": 746
+            }
+          ]
+        },
+        {
+          "face": "near-main",
+          "triangle": 42,
+          "indices": [
+            18,
+            23,
+            24
+          ],
+          "sourceArea2": 23,
+          "area2": -59.912232277948384,
+          "jacobian": -2.6048796642586254,
+          "inverted": true,
+          "source": [
+            {
+              "x": 603,
+              "y": 748
+            },
+            {
+              "x": 594,
+              "y": 746
+            },
+            {
+              "x": 583,
+              "y": 741
+            }
+          ]
+        },
+        {
+          "face": "near-main",
+          "triangle": 47,
+          "indices": [
+            30,
+            18,
+            24
+          ],
+          "sourceArea2": 379,
+          "area2": -249.50102651431416,
+          "jacobian": -0.658314054127478,
+          "inverted": true,
+          "source": [
+            {
+              "x": 520,
+              "y": 700
+            },
+            {
+              "x": 603,
+              "y": 748
+            },
+            {
+              "x": 583,
+              "y": 741
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "pose": "down-9",
+      "side": "far",
+      "sourceOpaqueCells": 4517,
+      "invertedCellTriangles": {
+        "alpha1": 1826,
+        "alpha16": 1260,
+        "alpha128": 1175,
+        "visibleV02": 0
+      },
+      "minimumArea": -3.2873404235103587,
+      "first": {
+        "sourceCell": [
+          607,
+          620
+        ],
+        "alpha": 252,
+        "visibleV02Alpha": 0,
+        "source": [
+          {
+            "x": 607,
+            "y": 620
+          },
+          {
+            "x": 608,
+            "y": 620
+          },
+          {
+            "x": 607,
+            "y": 621
+          }
+        ],
+        "target": [
+          {
+            "x": 514.7595054490662,
+            "y": 845.9920358133984
+          },
+          {
+            "x": 515.0084913818243,
+            "y": 846.8675102241832
+          },
+          {
+            "x": 515.0114500157259,
+            "y": 846.1529974649491
+          }
+        ],
+        "signedArea2": -0.18049383409723685,
+        "mapping": [
+          {
+            "face": "far-main",
+            "sourceVertexIndices": [
+              25,
+              6,
+              7
+            ],
+            "barycentric": [
+              0.923679060665362,
+              0.060665362035225046,
+              0.015655577299412915
+            ],
+            "extrapolated": false,
+            "distanceSquared": 0
+          },
+          {
+            "face": "far-main",
+            "sourceVertexIndices": [
+              25,
+              4,
+              5
+            ],
+            "barycentric": [
+              0.8688524590163934,
+              0.00546448087431694,
+              0.12568306010928962
+            ],
+            "extrapolated": false,
+            "distanceSquared": 0
+          },
+          {
+            "face": "far-main",
+            "sourceVertexIndices": [
+              25,
+              6,
+              7
+            ],
+            "barycentric": [
+              0.9256360078277887,
+              0.007827788649706457,
+              0.06653620352250489
+            ],
+            "extrapolated": false,
+            "distanceSquared": 0
+          }
+        ]
+      },
+      "boundaryFailures": [
+        {
+          "face": "far-main",
+          "triangle": 6,
+          "indices": [
+            25,
+            6,
+            7
+          ],
+          "sourceArea2": 511,
+          "area2": -170.1734624131127,
+          "jacobian": -0.33302047438965304,
+          "inverted": true,
+          "source": [
+            {
+              "x": 605,
+              "y": 615
+            },
+            {
+              "x": 631,
+              "y": 676
+            },
+            {
+              "x": 632,
+              "y": 698
+            }
+          ]
+        },
+        {
+          "face": "far-main",
+          "triangle": 15,
+          "indices": [
+            24,
+            7,
+            8
+          ],
+          "sourceArea2": 461,
+          "area2": -363.9035932405759,
+          "jacobian": -0.7893787272029846,
+          "inverted": true,
+          "source": [
+            {
+              "x": 609,
+              "y": 630
+            },
+            {
+              "x": 632,
+              "y": 698
+            },
+            {
+              "x": 633,
+              "y": 721
+            }
+          ]
+        },
+        {
+          "face": "far-main",
+          "triangle": 16,
+          "indices": [
+            24,
+            8,
+            9
+          ],
+          "sourceArea2": 207,
+          "area2": -680.4794676655084,
+          "jacobian": -3.2873404235048715,
+          "inverted": true,
+          "source": [
+            {
+              "x": 609,
+              "y": 630
+            },
+            {
+              "x": 633,
+              "y": 721
+            },
+            {
+              "x": 636,
+              "y": 741
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "pose": "down-15",
+      "side": "near",
+      "sourceOpaqueCells": 23164,
+      "invertedCellTriangles": {
+        "alpha1": 8330,
+        "alpha16": 8330,
+        "alpha128": 8330,
+        "visibleV02": 4807
+      },
+      "minimumArea": -56.76925010673665,
+      "first": {
+        "sourceCell": [
+          443,
+          630
+        ],
+        "alpha": 228,
+        "visibleV02Alpha": 228,
+        "source": [
+          {
+            "x": 443,
+            "y": 630
+          },
+          {
+            "x": 444,
+            "y": 630
+          },
+          {
+            "x": 443,
+            "y": 631
+          }
+        ],
+        "target": [
+          {
+            "x": 335.5509173804238,
+            "y": 887.4960452306354
+          },
+          {
+            "x": 336.1328622145034,
+            "y": 887.6722997908953
+          },
+          {
+            "x": 336.33516251267463,
+            "y": 887.5907191253262
+          }
+        ],
+        "signedArea2": -0.0831317969832887,
+        "mapping": [
+          {
+            "face": "near-main",
+            "sourceVertexIndices": [
+              48,
+              15,
+              16
+            ],
+            "barycentric": [
+              0.975488765684272,
+              0.013422818791946308,
+              0.011088415523781734
+            ],
+            "extrapolated": false,
+            "distanceSquared": 0
+          },
+          {
+            "face": "near-main",
+            "sourceVertexIndices": [
+              48,
+              14,
+              15
+            ],
+            "barycentric": [
+              0.9699445579223811,
+              0.010213014298220018,
+              0.019842427779398892
+            ],
+            "extrapolated": false,
+            "distanceSquared": 0
+          },
+          {
+            "face": "near-main",
+            "sourceVertexIndices": [
+              30,
+              48,
+              18
+            ],
+            "barycentric": [
+              0.0057471264367815605,
+              0.9727011494252874,
+              0.021551724137931036
+            ],
+            "extrapolated": false,
+            "distanceSquared": 0
+          }
+        ]
+      },
+      "boundaryFailures": [
+        {
+          "face": "near-main",
+          "triangle": 16,
+          "indices": [
+            48,
+            15,
+            16
+          ],
+          "sourceArea2": 3427,
+          "area2": -286.64328271456134,
+          "jacobian": -0.0836426269957868,
+          "inverted": true,
+          "source": [
+            {
+              "x": 439,
+              "y": 628
+            },
+            {
+              "x": 604,
+              "y": 701
+            },
+            {
+              "x": 600,
+              "y": 720
+            }
+          ]
+        },
+        {
+          "face": "near-main",
+          "triangle": 17,
+          "indices": [
+            48,
+            16,
+            17
+          ],
+          "sourceArea2": 2392,
+          "area2": -1098.4891366569823,
+          "jacobian": -0.45923458890342067,
+          "inverted": true,
+          "source": [
+            {
+              "x": 439,
+              "y": 628
+            },
+            {
+              "x": 600,
+              "y": 720
+            },
+            {
+              "x": 602,
+              "y": 736
+            }
+          ]
+        },
+        {
+          "face": "near-main",
+          "triangle": 18,
+          "indices": [
+            48,
+            17,
+            18
+          ],
+          "sourceArea2": 1848,
+          "area2": -1044.8053798514106,
+          "jacobian": -0.5653708765429711,
+          "inverted": true,
+          "source": [
+            {
+              "x": 439,
+              "y": 628
+            },
+            {
+              "x": 602,
+              "y": 736
+            },
+            {
+              "x": 603,
+              "y": 748
+            }
+          ]
+        },
+        {
+          "face": "near-main",
+          "triangle": 19,
+          "indices": [
+            19,
+            20,
+            21
+          ],
+          "sourceArea2": 24,
+          "area2": -0.8223030677228569,
+          "jacobian": -0.034262627821785706,
+          "inverted": true,
+          "source": [
+            {
+              "x": 600,
+              "y": 757
+            },
+            {
+              "x": 592,
+              "y": 757
+            },
+            {
+              "x": 598,
+              "y": 754
+            }
+          ]
+        },
+        {
+          "face": "near-main",
+          "triangle": 20,
+          "indices": [
+            19,
+            21,
+            22
+          ],
+          "sourceArea2": 8,
+          "area2": -20.092076590380955,
+          "jacobian": -2.5115095737976194,
+          "inverted": true,
+          "source": [
+            {
+              "x": 600,
+              "y": 757
+            },
+            {
+              "x": 598,
+              "y": 754
+            },
+            {
+              "x": 598,
+              "y": 750
+            }
+          ]
+        },
+        {
+          "face": "near-main",
+          "triangle": 40,
+          "indices": [
+            18,
+            19,
+            22
+          ],
+          "sourceArea2": 39,
+          "area2": -72.48710079374275,
+          "jacobian": -1.858643610095968,
+          "inverted": true,
+          "source": [
+            {
+              "x": 603,
+              "y": 748
+            },
+            {
+              "x": 600,
+              "y": 757
+            },
+            {
+              "x": 598,
+              "y": 750
+            }
+          ]
+        },
+        {
+          "face": "near-main",
+          "triangle": 41,
+          "indices": [
+            18,
+            22,
+            23
+          ],
+          "sourceArea2": 28,
+          "area2": -30.529476655017508,
+          "jacobian": -1.090338451964911,
+          "inverted": true,
+          "source": [
+            {
+              "x": 603,
+              "y": 748
+            },
+            {
+              "x": 598,
+              "y": 750
+            },
+            {
+              "x": 594,
+              "y": 746
+            }
+          ]
+        },
+        {
+          "face": "near-main",
+          "triangle": 42,
+          "indices": [
+            18,
+            23,
+            24
+          ],
+          "sourceArea2": 23,
+          "area2": -49.61439861858886,
+          "jacobian": -2.1571477660256027,
+          "inverted": true,
+          "source": [
+            {
+              "x": 603,
+              "y": 748
+            },
+            {
+              "x": 594,
+              "y": 746
+            },
+            {
+              "x": 583,
+              "y": 741
+            }
+          ]
+        },
+        {
+          "face": "near-main",
+          "triangle": 47,
+          "indices": [
+            30,
+            18,
+            24
+          ],
+          "sourceArea2": 379,
+          "area2": -218.91982931325992,
+          "jacobian": -0.5776248794545117,
+          "inverted": true,
+          "source": [
+            {
+              "x": 520,
+              "y": 700
+            },
+            {
+              "x": 603,
+              "y": 748
+            },
+            {
+              "x": 583,
+              "y": 741
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "pose": "down-15",
+      "side": "far",
+      "sourceOpaqueCells": 4517,
+      "invertedCellTriangles": {
+        "alpha1": 1833,
+        "alpha16": 1267,
+        "alpha128": 1182,
+        "visibleV02": 0
+      },
+      "minimumArea": -2.552391905643768,
+      "first": {
+        "sourceCell": [
+          605,
+          616
+        ],
+        "alpha": 252,
+        "visibleV02Alpha": 0,
+        "source": [
+          {
+            "x": 606,
+            "y": 616
+          },
+          {
+            "x": 606,
+            "y": 617
+          },
+          {
+            "x": 605,
+            "y": 617
+          }
+        ],
+        "target": [
+          {
+            "x": 486.22756272681306,
+            "y": 903.6551172532958
+          },
+          {
+            "x": 485.72641948637545,
+            "y": 903.9114582021153
+          },
+          {
+            "x": 480.11736570333125,
+            "y": 908.06580828142
+          }
+        ],
+        "signedArea2": -0.6440942919294455,
+        "mapping": [
+          {
+            "face": "far-main",
+            "sourceVertexIndices": [
+              25,
+              4,
+              5
+            ],
+            "barycentric": [
+              0.9508196721311475,
+              0.04371584699453552,
+              0.00546448087431694
+            ],
+            "extrapolated": false,
+            "distanceSquared": 0
+          },
+          {
+            "face": "far-main",
+            "sourceVertexIndices": [
+              25,
+              5,
+              6
+            ],
+            "barycentric": [
+              0.9588688946015425,
+              0.02313624678663239,
+              0.017994858611825194
+            ],
+            "extrapolated": false,
+            "distanceSquared": 0
+          },
+          {
+            "face": "far-main",
+            "sourceVertexIndices": [
+              24,
+              25,
+              7
+            ],
+            "barycentric": [
+              0.7397260273972603,
+              0.3698630136986301,
+              -0.1095890410958904
+            ],
+            "extrapolated": true,
+            "distanceSquared": 0.2655601659751036
+          }
+        ]
+      },
+      "boundaryFailures": [
+        {
+          "face": "far-main",
+          "triangle": 6,
+          "indices": [
+            25,
+            6,
+            7
+          ],
+          "sourceArea2": 511,
+          "area2": -137.63005274416878,
+          "jacobian": -0.26933474118232636,
+          "inverted": true,
+          "source": [
+            {
+              "x": 605,
+              "y": 615
+            },
+            {
+              "x": 631,
+              "y": 676
+            },
+            {
+              "x": 632,
+              "y": 698
+            }
+          ]
+        },
+        {
+          "face": "far-main",
+          "triangle": 15,
+          "indices": [
+            24,
+            7,
+            8
+          ],
+          "sourceArea2": 461,
+          "area2": -310.54669104503785,
+          "jacobian": -0.6736370738504075,
+          "inverted": true,
+          "source": [
+            {
+              "x": 609,
+              "y": 630
+            },
+            {
+              "x": 632,
+              "y": 698
+            },
+            {
+              "x": 633,
+              "y": 721
+            }
+          ]
+        },
+        {
+          "face": "far-main",
+          "triangle": 16,
+          "indices": [
+            24,
+            8,
+            9
+          ],
+          "sourceArea2": 207,
+          "area2": -528.3451244671761,
+          "jacobian": -2.552391905638532,
+          "inverted": true,
+          "source": [
+            {
+              "x": 609,
+              "y": 630
+            },
+            {
+              "x": 633,
+              "y": 721
+            },
+            {
+              "x": 636,
+              "y": 741
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "pose": "down-30",
+      "side": "near",
+      "sourceOpaqueCells": 23164,
+      "invertedCellTriangles": {
+        "alpha1": 11603,
+        "alpha16": 11603,
+        "alpha128": 11603,
+        "visibleV02": 5396
+      },
+      "minimumArea": -64.06560147568143,
+      "first": {
+        "sourceCell": [
+          443,
+          629
+        ],
+        "alpha": 201,
+        "visibleV02Alpha": 201,
+        "source": [
+          {
+            "x": 443,
+            "y": 629
+          },
+          {
+            "x": 444,
+            "y": 629
+          },
+          {
+            "x": 443,
+            "y": 630
+          }
+        ],
+        "target": [
+          {
+            "x": 326.4226382101842,
+            "y": 908.0035489012384
+          },
+          {
+            "x": 327.1562691010383,
+            "y": 908.1685600139876
+          },
+          {
+            "x": 326.5893549543639,
+            "y": 908.0219906348624
+          }
+        ],
+        "signedArea2": -0.013980690003590852,
+        "mapping": [
+          {
+            "face": "near-main",
+            "sourceVertexIndices": [
+              48,
+              13,
+              14
+            ],
+            "barycentric": [
+              0.9765079365079365,
+              0.014920634920634921,
+              0.008571428571428572
+            ],
+            "extrapolated": false,
+            "distanceSquared": 0
+          },
+          {
+            "face": "near-main",
+            "sourceVertexIndices": [
+              48,
+              12,
+              13
+            ],
+            "barycentric": [
+              0.9707602339181287,
+              0.0029239766081871343,
+              0.02631578947368421
+            ],
+            "extrapolated": false,
+            "distanceSquared": 0
+          },
+          {
+            "face": "near-main",
+            "sourceVertexIndices": [
+              48,
+              15,
+              16
+            ],
+            "barycentric": [
+              0.975488765684272,
+              0.013422818791946308,
+              0.011088415523781734
+            ],
+            "extrapolated": false,
+            "distanceSquared": 0
+          }
+        ]
+      },
+      "boundaryFailures": [
+        {
+          "face": "near-main",
+          "triangle": 15,
+          "indices": [
+            48,
+            14,
+            15
+          ],
+          "sourceArea2": 3427,
+          "area2": -75.62768073095867,
+          "jacobian": -0.022068188132757127,
+          "inverted": true,
+          "source": [
+            {
+              "x": 439,
+              "y": 628
+            },
+            {
+              "x": 608,
+              "y": 682
+            },
+            {
+              "x": 604,
+              "y": 701
+            }
+          ]
+        },
+        {
+          "face": "near-main",
+          "triangle": 16,
+          "indices": [
+            48,
+            15,
+            16
+          ],
+          "sourceArea2": 3427,
+          "area2": -486.7608150209694,
+          "jacobian": -0.14203700467492542,
+          "inverted": true,
+          "source": [
+            {
+              "x": 439,
+              "y": 628
+            },
+            {
+              "x": 604,
+              "y": 701
+            },
+            {
+              "x": 600,
+              "y": 720
+            }
+          ]
+        },
+        {
+          "face": "near-main",
+          "triangle": 17,
+          "indices": [
+            48,
+            16,
+            17
+          ],
+          "sourceArea2": 2392,
+          "area2": -1245.2137308463243,
+          "jacobian": -0.5205743021932794,
+          "inverted": true,
+          "source": [
+            {
+              "x": 439,
+              "y": 628
+            },
+            {
+              "x": 600,
+              "y": 720
+            },
+            {
+              "x": 602,
+              "y": 736
+            }
+          ]
+        },
+        {
+          "face": "near-main",
+          "triangle": 18,
+          "indices": [
+            48,
+            17,
+            18
+          ],
+          "sourceArea2": 1848,
+          "area2": -1161.0036372127383,
+          "jacobian": -0.6282487214354645,
+          "inverted": true,
+          "source": [
+            {
+              "x": 439,
+              "y": 628
+            },
+            {
+              "x": 602,
+              "y": 736
+            },
+            {
+              "x": 603,
+              "y": 748
+            }
+          ]
+        },
+        {
+          "face": "near-main",
+          "triangle": 19,
+          "indices": [
+            19,
+            20,
+            21
+          ],
+          "sourceArea2": 24,
+          "area2": -4.914153501166843,
+          "jacobian": -0.2047563958819518,
+          "inverted": true,
+          "source": [
+            {
+              "x": 600,
+              "y": 757
+            },
+            {
+              "x": 592,
+              "y": 757
+            },
+            {
+              "x": 598,
+              "y": 754
+            }
+          ]
+        },
+        {
+          "face": "near-main",
+          "triangle": 20,
+          "indices": [
+            19,
+            21,
+            22
+          ],
+          "sourceArea2": 8,
+          "area2": -21.386503462624702,
+          "jacobian": -2.673312932828088,
+          "inverted": true,
+          "source": [
+            {
+              "x": 600,
+              "y": 757
+            },
+            {
+              "x": 598,
+              "y": 754
+            },
+            {
+              "x": 598,
+              "y": 750
+            }
+          ]
+        },
+        {
+          "face": "near-main",
+          "triangle": 40,
+          "indices": [
+            18,
+            19,
+            22
+          ],
+          "sourceArea2": 39,
+          "area2": -77.9928012748228,
+          "jacobian": -1.9998154173031486,
+          "inverted": true,
+          "source": [
+            {
+              "x": 603,
+              "y": 748
+            },
+            {
+              "x": 600,
+              "y": 757
+            },
+            {
+              "x": 598,
+              "y": 750
+            }
+          ]
+        },
+        {
+          "face": "near-main",
+          "triangle": 41,
+          "indices": [
+            18,
+            22,
+            23
+          ],
+          "sourceArea2": 28,
+          "area2": -29.466201726567135,
+          "jacobian": -1.0523643473773976,
+          "inverted": true,
+          "source": [
+            {
+              "x": 603,
+              "y": 748
+            },
+            {
+              "x": 598,
+              "y": 750
+            },
+            {
+              "x": 594,
+              "y": 746
+            }
+          ]
+        },
+        {
+          "face": "near-main",
+          "triangle": 42,
+          "indices": [
+            18,
+            23,
+            24
+          ],
+          "sourceArea2": 23,
+          "area2": -42.155579535360026,
+          "jacobian": -1.832851284146088,
+          "inverted": true,
+          "source": [
+            {
+              "x": 603,
+              "y": 748
+            },
+            {
+              "x": 594,
+              "y": 746
+            },
+            {
+              "x": 583,
+              "y": 741
+            }
+          ]
+        },
+        {
+          "face": "near-main",
+          "triangle": 47,
+          "indices": [
+            30,
+            18,
+            24
+          ],
+          "sourceArea2": 379,
+          "area2": -185.54560141352476,
+          "jacobian": -0.48956623064254556,
+          "inverted": true,
+          "source": [
+            {
+              "x": 520,
+              "y": 700
+            },
+            {
+              "x": 603,
+              "y": 748
+            },
+            {
+              "x": 583,
+              "y": 741
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "pose": "down-30",
+      "side": "far",
+      "sourceOpaqueCells": 4517,
+      "invertedCellTriangles": {
+        "alpha1": 1851,
+        "alpha16": 1285,
+        "alpha128": 1200,
+        "visibleV02": 0
+      },
+      "minimumArea": -2.0742074661531706,
+      "first": {
+        "sourceCell": [
+          605,
+          615
+        ],
+        "alpha": 252,
+        "visibleV02Alpha": 0,
+        "source": [
+          {
+            "x": 606,
+            "y": 615
+          },
+          {
+            "x": 606,
+            "y": 616
+          },
+          {
+            "x": 605,
+            "y": 616
+          }
+        ],
+        "target": [
+          {
+            "x": 475.4240577455292,
+            "y": 927.5040014810063
+          },
+          {
+            "x": 474.41057167604333,
+            "y": 928.0699360279584
+          },
+          {
+            "x": 471.1052128625731,
+            "y": 929.9554707416866
+          }
+        ],
+        "signedArea2": -0.04034642327999194,
+        "mapping": [
+          {
+            "face": "far-main",
+            "sourceVertexIndices": [
+              25,
+              3,
+              4
+            ],
+            "barycentric": [
+              0.95,
+              0.04736842105263158,
+              0.002631578947368421
+            ],
+            "extrapolated": false,
+            "distanceSquared": 0
+          },
+          {
+            "face": "far-main",
+            "sourceVertexIndices": [
+              25,
+              4,
+              5
+            ],
+            "barycentric": [
+              0.9508196721311475,
+              0.04371584699453552,
+              0.00546448087431694
+            ],
+            "extrapolated": false,
+            "distanceSquared": 0
+          },
+          {
+            "face": "far-main",
+            "sourceVertexIndices": [
+              24,
+              25,
+              7
+            ],
+            "barycentric": [
+              0.36986301369863017,
+              0.684931506849315,
+              -0.0547945205479452
+            ],
+            "extrapolated": true,
+            "distanceSquared": 0.0663900414937759
+          }
+        ]
+      },
+      "boundaryFailures": [
+        {
+          "face": "far-main",
+          "triangle": 6,
+          "indices": [
+            25,
+            6,
+            7
+          ],
+          "sourceArea2": 511,
+          "area2": -102.01374554008851,
+          "jacobian": -0.1996355098631869,
+          "inverted": true,
+          "source": [
+            {
+              "x": 605,
+              "y": 615
+            },
+            {
+              "x": 631,
+              "y": 676
+            },
+            {
+              "x": 632,
+              "y": 698
+            }
+          ]
+        },
+        {
+          "face": "far-main",
+          "triangle": 15,
+          "indices": [
+            24,
+            7,
+            8
+          ],
+          "sourceArea2": 461,
+          "area2": -260.74799712974163,
+          "jacobian": -0.5656138766371835,
+          "inverted": true,
+          "source": [
+            {
+              "x": 609,
+              "y": 630
+            },
+            {
+              "x": 632,
+              "y": 698
+            },
+            {
+              "x": 633,
+              "y": 721
+            }
+          ]
+        },
+        {
+          "face": "far-main",
+          "triangle": 16,
+          "indices": [
+            24,
+            8,
+            9
+          ],
+          "sourceArea2": 207,
+          "area2": -429.3609454923174,
+          "jacobian": -2.074207466146461,
+          "inverted": true,
+          "source": [
+            {
+              "x": 609,
+              "y": 630
+            },
+            {
+              "x": 633,
+              "y": 721
+            },
+            {
+              "x": 636,
+              "y": 741
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "pose": "down-60",
+      "side": "near",
+      "sourceOpaqueCells": 23164,
+      "invertedCellTriangles": {
+        "alpha1": 11611,
+        "alpha16": 11611,
+        "alpha128": 11611,
+        "visibleV02": 5402
+      },
+      "minimumArea": -64.31510023440973,
+      "first": {
+        "sourceCell": [
+          443,
+          629
+        ],
+        "alpha": 201,
+        "visibleV02Alpha": 201,
+        "source": [
+          {
+            "x": 443,
+            "y": 629
+          },
+          {
+            "x": 444,
+            "y": 629
+          },
+          {
+            "x": 443,
+            "y": 630
+          }
+        ],
+        "target": [
+          {
+            "x": 326.1225611772774,
+            "y": 908.7055742910918
+          },
+          {
+            "x": 326.85515289405305,
+            "y": 908.8714515686387
+          },
+          {
+            "x": 326.2883610247515,
+            "y": 908.7215034847294
+          }
+        ],
+        "signedArea2": -0.015832832002877613,
+        "mapping": [
+          {
+            "face": "near-main",
+            "sourceVertexIndices": [
+              48,
+              13,
+              14
+            ],
+            "barycentric": [
+              0.9765079365079365,
+              0.014920634920634921,
+              0.008571428571428572
+            ],
+            "extrapolated": false,
+            "distanceSquared": 0
+          },
+          {
+            "face": "near-main",
+            "sourceVertexIndices": [
+              48,
+              12,
+              13
+            ],
+            "barycentric": [
+              0.9707602339181287,
+              0.0029239766081871343,
+              0.02631578947368421
+            ],
+            "extrapolated": false,
+            "distanceSquared": 0
+          },
+          {
+            "face": "near-main",
+            "sourceVertexIndices": [
+              48,
+              15,
+              16
+            ],
+            "barycentric": [
+              0.975488765684272,
+              0.013422818791946308,
+              0.011088415523781734
+            ],
+            "extrapolated": false,
+            "distanceSquared": 0
+          }
+        ]
+      },
+      "boundaryFailures": [
+        {
+          "face": "near-main",
+          "triangle": 15,
+          "indices": [
+            48,
+            14,
+            15
+          ],
+          "sourceArea2": 3427,
+          "area2": -81.08608748616598,
+          "jacobian": -0.023660953453798067,
+          "inverted": true,
+          "source": [
+            {
+              "x": 439,
+              "y": 628
+            },
+            {
+              "x": 608,
+              "y": 682
+            },
+            {
+              "x": 604,
+              "y": 701
+            }
+          ]
+        },
+        {
+          "face": "near-main",
+          "triangle": 16,
+          "indices": [
+            48,
+            15,
+            16
+          ],
+          "sourceArea2": 3427,
+          "area2": -493.1210533738631,
+          "jacobian": -0.14389292482458801,
+          "inverted": true,
+          "source": [
+            {
+              "x": 439,
+              "y": 628
+            },
+            {
+              "x": 604,
+              "y": 701
+            },
+            {
+              "x": 600,
+              "y": 720
+            }
+          ]
+        },
+        {
+          "face": "near-main",
+          "triangle": 17,
+          "indices": [
+            48,
+            16,
+            17
+          ],
+          "sourceArea2": 2392,
+          "area2": -1249.6751289769759,
+          "jacobian": -0.5224394351910434,
+          "inverted": true,
+          "source": [
+            {
+              "x": 439,
+              "y": 628
+            },
+            {
+              "x": 600,
+              "y": 720
+            },
+            {
+              "x": 602,
+              "y": 736
+            }
+          ]
+        },
+        {
+          "face": "near-main",
+          "triangle": 18,
+          "indices": [
+            48,
+            17,
+            18
+          ],
+          "sourceArea2": 1848,
+          "area2": -1164.5050868011958,
+          "jacobian": -0.6301434452387423,
+          "inverted": true,
+          "source": [
+            {
+              "x": 439,
+              "y": 628
+            },
+            {
+              "x": 602,
+              "y": 736
+            },
+            {
+              "x": 603,
+              "y": 748
+            }
+          ]
+        },
+        {
+          "face": "near-main",
+          "triangle": 19,
+          "indices": [
+            19,
+            20,
+            21
+          ],
+          "sourceArea2": 24,
+          "area2": -5.055782512054669,
+          "jacobian": -0.21065760466894454,
+          "inverted": true,
+          "source": [
+            {
+              "x": 600,
+              "y": 757
+            },
+            {
+              "x": 592,
+              "y": 757
+            },
+            {
+              "x": 598,
+              "y": 754
+            }
+          ]
+        },
+        {
+          "face": "near-main",
+          "triangle": 20,
+          "indices": [
+            19,
+            21,
+            22
+          ],
+          "sourceArea2": 8,
+          "area2": -21.4261050510456,
+          "jacobian": -2.6782631313807,
+          "inverted": true,
+          "source": [
+            {
+              "x": 600,
+              "y": 757
+            },
+            {
+              "x": 598,
+              "y": 754
+            },
+            {
+              "x": 598,
+              "y": 750
+            }
+          ]
+        },
+        {
+          "face": "near-main",
+          "triangle": 40,
+          "indices": [
+            18,
+            19,
+            22
+          ],
+          "sourceArea2": 39,
+          "area2": -78.1633414201618,
+          "jacobian": -2.0041882415426104,
+          "inverted": true,
+          "source": [
+            {
+              "x": 603,
+              "y": 748
+            },
+            {
+              "x": 600,
+              "y": 757
+            },
+            {
+              "x": 598,
+              "y": 750
+            }
+          ]
+        },
+        {
+          "face": "near-main",
+          "triangle": 41,
+          "indices": [
+            18,
+            22,
+            23
+          ],
+          "sourceArea2": 28,
+          "area2": -29.41290395273902,
+          "jacobian": -1.050460855454965,
+          "inverted": true,
+          "source": [
+            {
+              "x": 603,
+              "y": 748
+            },
+            {
+              "x": 598,
+              "y": 750
+            },
+            {
+              "x": 594,
+              "y": 746
+            }
+          ]
+        },
+        {
+          "face": "near-main",
+          "triangle": 42,
+          "indices": [
+            18,
+            23,
+            24
+          ],
+          "sourceArea2": 23,
+          "area2": -41.86756959512771,
+          "jacobian": -1.8203291128316397,
+          "inverted": true,
+          "source": [
+            {
+              "x": 603,
+              "y": 748
+            },
+            {
+              "x": 594,
+              "y": 746
+            },
+            {
+              "x": 583,
+              "y": 741
+            }
+          ]
+        },
+        {
+          "face": "near-main",
+          "triangle": 47,
+          "indices": [
+            30,
+            18,
+            24
+          ],
+          "sourceArea2": 379,
+          "area2": -184.1875442476594,
+          "jacobian": -0.4859829663526633,
+          "inverted": true,
+          "source": [
+            {
+              "x": 520,
+              "y": 700
+            },
+            {
+              "x": 603,
+              "y": 748
+            },
+            {
+              "x": 583,
+              "y": 741
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "pose": "down-60",
+      "side": "far",
+      "sourceOpaqueCells": 4517,
+      "invertedCellTriangles": {
+        "alpha1": 1851,
+        "alpha16": 1285,
+        "alpha128": 1200,
+        "visibleV02": 0
+      },
+      "minimumArea": -2.056227419427392,
+      "first": {
+        "sourceCell": [
+          605,
+          615
+        ],
+        "alpha": 252,
+        "visibleV02Alpha": 0,
+        "source": [
+          {
+            "x": 606,
+            "y": 615
+          },
+          {
+            "x": 606,
+            "y": 616
+          },
+          {
+            "x": 605,
+            "y": 616
+          }
+        ],
+        "target": [
+          {
+            "x": 475.02298604136814,
+            "y": 928.3370302609512
+          },
+          {
+            "x": 474.0071327175583,
+            "y": 928.9025598292724
+          },
+          {
+            "x": 470.6999794183518,
+            "y": 930.7935607495534
+          }
+        ],
+        "signedArea2": -0.05068659252282437,
+        "mapping": [
+          {
+            "face": "far-main",
+            "sourceVertexIndices": [
+              25,
+              3,
+              4
+            ],
+            "barycentric": [
+              0.95,
+              0.04736842105263158,
+              0.002631578947368421
+            ],
+            "extrapolated": false,
+            "distanceSquared": 0
+          },
+          {
+            "face": "far-main",
+            "sourceVertexIndices": [
+              25,
+              4,
+              5
+            ],
+            "barycentric": [
+              0.9508196721311475,
+              0.04371584699453552,
+              0.00546448087431694
+            ],
+            "extrapolated": false,
+            "distanceSquared": 0
+          },
+          {
+            "face": "far-main",
+            "sourceVertexIndices": [
+              24,
+              25,
+              7
+            ],
+            "barycentric": [
+              0.36986301369863017,
+              0.684931506849315,
+              -0.0547945205479452
+            ],
+            "extrapolated": true,
+            "distanceSquared": 0.0663900414937759
+          }
+        ]
+      },
+      "boundaryFailures": [
+        {
+          "face": "far-main",
+          "triangle": 6,
+          "indices": [
+            25,
+            6,
+            7
+          ],
+          "sourceArea2": 511,
+          "area2": -100.58232442648492,
+          "jacobian": -0.19683429437668282,
+          "inverted": true,
+          "source": [
+            {
+              "x": 605,
+              "y": 615
+            },
+            {
+              "x": 631,
+              "y": 676
+            },
+            {
+              "x": 632,
+              "y": 698
+            }
+          ]
+        },
+        {
+          "face": "far-main",
+          "triangle": 15,
+          "indices": [
+            24,
+            7,
+            8
+          ],
+          "sourceArea2": 461,
+          "area2": -258.77910673025093,
+          "jacobian": -0.5613429647077026,
+          "inverted": true,
+          "source": [
+            {
+              "x": 609,
+              "y": 630
+            },
+            {
+              "x": 632,
+              "y": 698
+            },
+            {
+              "x": 633,
+              "y": 721
+            }
+          ]
+        },
+        {
+          "face": "far-main",
+          "triangle": 16,
+          "indices": [
+            24,
+            8,
+            9
+          ],
+          "sourceArea2": 207,
+          "area2": -425.63907582046636,
+          "jacobian": -2.0562274194225427,
+          "inverted": true,
+          "source": [
+            {
+              "x": 609,
+              "y": 630
+            },
+            {
+              "x": 633,
+              "y": 721
+            },
+            {
+              "x": 636,
+              "y": 741
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "pose": "down-120",
+      "side": "near",
+      "sourceOpaqueCells": 23164,
+      "invertedCellTriangles": {
+        "alpha1": 11611,
+        "alpha16": 11611,
+        "alpha128": 11611,
+        "visibleV02": 5402
+      },
+      "minimumArea": -64.31525843804496,
+      "first": {
+        "sourceCell": [
+          443,
+          629
+        ],
+        "alpha": 201,
+        "visibleV02Alpha": 201,
+        "source": [
+          {
+            "x": 443,
+            "y": 629
+          },
+          {
+            "x": 444,
+            "y": 629
+          },
+          {
+            "x": 443,
+            "y": 630
+          }
+        ],
+        "target": [
+          {
+            "x": 326.122371007257,
+            "y": 908.7060194157838
+          },
+          {
+            "x": 326.85496206450443,
+            "y": 908.8718972429469
+          },
+          {
+            "x": 326.28817027112655,
+            "y": 908.7219470161901
+          }
+        ],
+        "signedArea2": -0.015834004014813115,
+        "mapping": [
+          {
+            "face": "near-main",
+            "sourceVertexIndices": [
+              48,
+              13,
+              14
+            ],
+            "barycentric": [
+              0.9765079365079365,
+              0.014920634920634921,
+              0.008571428571428572
+            ],
+            "extrapolated": false,
+            "distanceSquared": 0
+          },
+          {
+            "face": "near-main",
+            "sourceVertexIndices": [
+              48,
+              12,
+              13
+            ],
+            "barycentric": [
+              0.9707602339181287,
+              0.0029239766081871343,
+              0.02631578947368421
+            ],
+            "extrapolated": false,
+            "distanceSquared": 0
+          },
+          {
+            "face": "near-main",
+            "sourceVertexIndices": [
+              48,
+              15,
+              16
+            ],
+            "barycentric": [
+              0.975488765684272,
+              0.013422818791946308,
+              0.011088415523781734
+            ],
+            "extrapolated": false,
+            "distanceSquared": 0
+          }
+        ]
+      },
+      "boundaryFailures": [
+        {
+          "face": "near-main",
+          "triangle": 15,
+          "indices": [
+            48,
+            14,
+            15
+          ],
+          "sourceArea2": 3427,
+          "area2": -81.08953894612432,
+          "jacobian": -0.023661960591223906,
+          "inverted": true,
+          "source": [
+            {
+              "x": 439,
+              "y": 628
+            },
+            {
+              "x": 608,
+              "y": 682
+            },
+            {
+              "x": 604,
+              "y": 701
+            }
+          ]
+        },
+        {
+          "face": "near-main",
+          "triangle": 16,
+          "indices": [
+            48,
+            15,
+            16
+          ],
+          "sourceArea2": 3427,
+          "area2": -493.1250759730806,
+          "jacobian": -0.14389409862068298,
+          "inverted": true,
+          "source": [
+            {
+              "x": 439,
+              "y": 628
+            },
+            {
+              "x": 604,
+              "y": 701
+            },
+            {
+              "x": 600,
+              "y": 720
+            }
+          ]
+        },
+        {
+          "face": "near-main",
+          "triangle": 17,
+          "indices": [
+            48,
+            16,
+            17
+          ],
+          "sourceArea2": 2392,
+          "area2": -1249.6779459564705,
+          "jacobian": -0.5224406128580562,
+          "inverted": true,
+          "source": [
+            {
+              "x": 439,
+              "y": 628
+            },
+            {
+              "x": 600,
+              "y": 720
+            },
+            {
+              "x": 602,
+              "y": 736
+            }
+          ]
+        },
+        {
+          "face": "near-main",
+          "triangle": 18,
+          "indices": [
+            48,
+            17,
+            18
+          ],
+          "sourceArea2": 1848,
+          "area2": -1164.5072968902396,
+          "jacobian": -0.6301446411743721,
+          "inverted": true,
+          "source": [
+            {
+              "x": 439,
+              "y": 628
+            },
+            {
+              "x": 602,
+              "y": 736
+            },
+            {
+              "x": 603,
+              "y": 748
+            }
+          ]
+        },
+        {
+          "face": "near-main",
+          "triangle": 19,
+          "indices": [
+            19,
+            20,
+            21
+          ],
+          "sourceArea2": 24,
+          "area2": -5.055872353309725,
+          "jacobian": -0.2106613480545719,
+          "inverted": true,
+          "source": [
+            {
+              "x": 600,
+              "y": 757
+            },
+            {
+              "x": 592,
+              "y": 757
+            },
+            {
+              "x": 598,
+              "y": 754
+            }
+          ]
+        },
+        {
+          "face": "near-main",
+          "triangle": 20,
+          "indices": [
+            19,
+            21,
+            22
+          ],
+          "sourceArea2": 8,
+          "area2": -21.426130062101613,
+          "jacobian": -2.6782662577627017,
+          "inverted": true,
+          "source": [
+            {
+              "x": 600,
+              "y": 757
+            },
+            {
+              "x": 598,
+              "y": 754
+            },
+            {
+              "x": 598,
+              "y": 750
+            }
+          ]
+        },
+        {
+          "face": "near-main",
+          "triangle": 40,
+          "indices": [
+            18,
+            19,
+            22
+          ],
+          "sourceArea2": 39,
+          "area2": -78.163449178111,
+          "jacobian": -2.0041910045669487,
+          "inverted": true,
+          "source": [
+            {
+              "x": 603,
+              "y": 748
+            },
+            {
+              "x": 600,
+              "y": 757
+            },
+            {
+              "x": 598,
+              "y": 750
+            }
+          ]
+        },
+        {
+          "face": "near-main",
+          "triangle": 41,
+          "indices": [
+            18,
+            22,
+            23
+          ],
+          "sourceArea2": 28,
+          "area2": -29.412869795453744,
+          "jacobian": -1.0504596355519193,
+          "inverted": true,
+          "source": [
+            {
+              "x": 603,
+              "y": 748
+            },
+            {
+              "x": 598,
+              "y": 750
+            },
+            {
+              "x": 594,
+              "y": 746
+            }
+          ]
+        },
+        {
+          "face": "near-main",
+          "triangle": 42,
+          "indices": [
+            18,
+            23,
+            24
+          ],
+          "sourceArea2": 23,
+          "area2": -41.86738626818564,
+          "jacobian": -1.8203211420950278,
+          "inverted": true,
+          "source": [
+            {
+              "x": 603,
+              "y": 748
+            },
+            {
+              "x": 594,
+              "y": 746
+            },
+            {
+              "x": 583,
+              "y": 741
+            }
+          ]
+        },
+        {
+          "face": "near-main",
+          "triangle": 47,
+          "indices": [
+            30,
+            18,
+            24
+          ],
+          "sourceArea2": 379,
+          "area2": -184.18667849091753,
+          "jacobian": -0.4859806820340832,
+          "inverted": true,
+          "source": [
+            {
+              "x": 520,
+              "y": 700
+            },
+            {
+              "x": 603,
+              "y": 748
+            },
+            {
+              "x": 583,
+              "y": 741
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "pose": "down-120",
+      "side": "far",
+      "sourceOpaqueCells": 4517,
+      "invertedCellTriangles": {
+        "alpha1": 1851,
+        "alpha16": 1285,
+        "alpha128": 1200,
+        "visibleV02": 0
+      },
+      "minimumArea": -2.056215984772983,
+      "first": {
+        "sourceCell": [
+          605,
+          615
+        ],
+        "alpha": 252,
+        "visibleV02Alpha": 0,
+        "source": [
+          {
+            "x": 606,
+            "y": 615
+          },
+          {
+            "x": 606,
+            "y": 616
+          },
+          {
+            "x": 605,
+            "y": 616
+          }
+        ],
+        "target": [
+          {
+            "x": 475.0227317226071,
+            "y": 928.3375584604831
+          },
+          {
+            "x": 474.0068768989091,
+            "y": 928.9030877732196
+          },
+          {
+            "x": 470.69972246916393,
+            "y": 930.7940921590434
+          }
+        ],
+        "signedArea2": -0.05069315520613449,
+        "mapping": [
+          {
+            "face": "far-main",
+            "sourceVertexIndices": [
+              25,
+              3,
+              4
+            ],
+            "barycentric": [
+              0.95,
+              0.04736842105263158,
+              0.002631578947368421
+            ],
+            "extrapolated": false,
+            "distanceSquared": 0
+          },
+          {
+            "face": "far-main",
+            "sourceVertexIndices": [
+              25,
+              4,
+              5
+            ],
+            "barycentric": [
+              0.9508196721311475,
+              0.04371584699453552,
+              0.00546448087431694
+            ],
+            "extrapolated": false,
+            "distanceSquared": 0
+          },
+          {
+            "face": "far-main",
+            "sourceVertexIndices": [
+              24,
+              25,
+              7
+            ],
+            "barycentric": [
+              0.36986301369863017,
+              0.684931506849315,
+              -0.0547945205479452
+            ],
+            "extrapolated": true,
+            "distanceSquared": 0.0663900414937759
+          }
+        ]
+      },
+      "boundaryFailures": [
+        {
+          "face": "far-main",
+          "triangle": 6,
+          "indices": [
+            25,
+            6,
+            7
+          ],
+          "sourceArea2": 511,
+          "area2": -100.58141234930184,
+          "jacobian": -0.19683250948982747,
+          "inverted": true,
+          "source": [
+            {
+              "x": 605,
+              "y": 615
+            },
+            {
+              "x": 631,
+              "y": 676
+            },
+            {
+              "x": 632,
+              "y": 698
+            }
+          ]
+        },
+        {
+          "face": "far-main",
+          "triangle": 15,
+          "indices": [
+            24,
+            7,
+            8
+          ],
+          "sourceArea2": 461,
+          "area2": -258.7778527615779,
+          "jacobian": -0.5613402446021213,
+          "inverted": true,
+          "source": [
+            {
+              "x": 609,
+              "y": 630
+            },
+            {
+              "x": 632,
+              "y": 698
+            },
+            {
+              "x": 633,
+              "y": 721
+            }
+          ]
+        },
+        {
+          "face": "far-main",
+          "triangle": 16,
+          "indices": [
+            24,
+            8,
+            9
+          ],
+          "sourceArea2": 207,
+          "area2": -425.6367088465414,
+          "jacobian": -2.0562159847659007,
+          "inverted": true,
+          "source": [
+            {
+              "x": 609,
+              "y": 630
+            },
+            {
+              "x": 633,
+              "y": 721
+            },
+            {
+              "x": 636,
+              "y": 741
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "pose": "up-3",
+      "side": "near",
+      "sourceOpaqueCells": 23164,
+      "invertedCellTriangles": {
+        "alpha1": 7894,
+        "alpha16": 7894,
+        "alpha128": 7894,
+        "visibleV02": 4528
+      },
+      "minimumArea": -48.68899289864447,
+      "first": {
+        "sourceCell": [
+          444,
+          630
+        ],
+        "alpha": 246,
+        "visibleV02Alpha": 246,
+        "source": [
+          {
+            "x": 444,
+            "y": 630
+          },
+          {
+            "x": 445,
+            "y": 630
+          },
+          {
+            "x": 444,
+            "y": 631
+          }
+        ],
+        "target": [
+          {
+            "x": 346.5396389850205,
+            "y": 864.561818501561
+          },
+          {
+            "x": 347.23011658761885,
+            "y": 864.6911765534369
+          },
+          {
+            "x": 347.02862849294957,
+            "y": 864.6439458880437
+          }
+        ],
+        "signedArea2": -0.006547609207188755,
+        "mapping": [
+          {
+            "face": "near-main",
+            "sourceVertexIndices": [
+              48,
+              14,
+              15
+            ],
+            "barycentric": [
+              0.9699445579223811,
+              0.010213014298220018,
+              0.019842427779398892
+            ],
+            "extrapolated": false,
+            "distanceSquared": 0
+          },
+          {
+            "face": "near-main",
+            "sourceVertexIndices": [
+              48,
+              14,
+              15
+            ],
+            "barycentric": [
+              0.9644003501604902,
+              0.031514444120221766,
+              0.004085205719288007
+            ],
+            "extrapolated": false,
+            "distanceSquared": 0
+          },
+          {
+            "face": "near-main",
+            "sourceVertexIndices": [
+              48,
+              16,
+              17
+            ],
+            "barycentric": [
+              0.9690635451505017,
+              0.021321070234113712,
+              0.009615384615384616
+            ],
+            "extrapolated": false,
+            "distanceSquared": 0
+          }
+        ]
+      },
+      "boundaryFailures": [
+        {
+          "face": "near-main",
+          "triangle": 16,
+          "indices": [
+            48,
+            15,
+            16
+          ],
+          "sourceArea2": 3427,
+          "area2": -33.80748946358199,
+          "jacobian": -0.009865039236528155,
+          "inverted": true,
+          "source": [
+            {
+              "x": 439,
+              "y": 628
+            },
+            {
+              "x": 604,
+              "y": 701
+            },
+            {
+              "x": 600,
+              "y": 720
+            }
+          ]
+        },
+        {
+          "face": "near-main",
+          "triangle": 17,
+          "indices": [
+            48,
+            16,
+            17
+          ],
+          "sourceArea2": 2392,
+          "area2": -900.2449691116035,
+          "jacobian": -0.3763565924379613,
+          "inverted": true,
+          "source": [
+            {
+              "x": 439,
+              "y": 628
+            },
+            {
+              "x": 600,
+              "y": 720
+            },
+            {
+              "x": 602,
+              "y": 736
+            }
+          ]
+        },
+        {
+          "face": "near-main",
+          "triangle": 18,
+          "indices": [
+            48,
+            17,
+            18
+          ],
+          "sourceArea2": 1848,
+          "area2": -885.7726591500423,
+          "jacobian": -0.4793142094967761,
+          "inverted": true,
+          "source": [
+            {
+              "x": 439,
+              "y": 628
+            },
+            {
+              "x": 602,
+              "y": 736
+            },
+            {
+              "x": 603,
+              "y": 748
+            }
+          ]
+        },
+        {
+          "face": "near-main",
+          "triangle": 20,
+          "indices": [
+            19,
+            21,
+            22
+          ],
+          "sourceArea2": 8,
+          "area2": -18.357467693315954,
+          "jacobian": -2.294683461664494,
+          "inverted": true,
+          "source": [
+            {
+              "x": 600,
+              "y": 757
+            },
+            {
+              "x": 598,
+              "y": 754
+            },
+            {
+              "x": 598,
+              "y": 750
+            }
+          ]
+        },
+        {
+          "face": "near-main",
+          "triangle": 40,
+          "indices": [
+            18,
+            19,
+            22
+          ],
+          "sourceArea2": 39,
+          "area2": -65.24350784773759,
+          "jacobian": -1.6729104576342972,
+          "inverted": true,
+          "source": [
+            {
+              "x": 603,
+              "y": 748
+            },
+            {
+              "x": 600,
+              "y": 757
+            },
+            {
+              "x": 598,
+              "y": 750
+            }
+          ]
+        },
+        {
+          "face": "near-main",
+          "triangle": 41,
+          "indices": [
+            18,
+            22,
+            23
+          ],
+          "sourceArea2": 28,
+          "area2": -30.608973437887364,
+          "jacobian": -1.0931776227816916,
+          "inverted": true,
+          "source": [
+            {
+              "x": 603,
+              "y": 748
+            },
+            {
+              "x": 598,
+              "y": 750
+            },
+            {
+              "x": 594,
+              "y": 746
+            }
+          ]
+        },
+        {
+          "face": "near-main",
+          "triangle": 42,
+          "indices": [
+            18,
+            23,
+            24
+          ],
+          "sourceArea2": 23,
+          "area2": -55.73673450670402,
+          "jacobian": -2.4233362829001748,
+          "inverted": true,
+          "source": [
+            {
+              "x": 603,
+              "y": 748
+            },
+            {
+              "x": 594,
+              "y": 746
+            },
+            {
+              "x": 583,
+              "y": 741
+            }
+          ]
+        },
+        {
+          "face": "near-main",
+          "triangle": 47,
+          "indices": [
+            30,
+            18,
+            24
+          ],
+          "sourceArea2": 379,
+          "area2": -241.81887600595064,
+          "jacobian": -0.6380445277201864,
+          "inverted": true,
+          "source": [
+            {
+              "x": 520,
+              "y": 700
+            },
+            {
+              "x": 603,
+              "y": 748
+            },
+            {
+              "x": 583,
+              "y": 741
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "pose": "up-3",
+      "side": "far",
+      "sourceOpaqueCells": 4517,
+      "invertedCellTriangles": {
+        "alpha1": 1822,
+        "alpha16": 1256,
+        "alpha128": 1171,
+        "visibleV02": 0
+      },
+      "minimumArea": -2.97005437490162,
+      "first": {
+        "sourceCell": [
+          606,
+          617
+        ],
+        "alpha": 252,
+        "visibleV02Alpha": 0,
+        "source": [
+          {
+            "x": 606,
+            "y": 617
+          },
+          {
+            "x": 607,
+            "y": 617
+          },
+          {
+            "x": 606,
+            "y": 618
+          }
+        ],
+        "target": [
+          {
+            "x": 499.0210020176869,
+            "y": 876.5571808489399
+          },
+          {
+            "x": 499.9096281022443,
+            "y": 877.1995460696783
+          },
+          {
+            "x": 499.13686368889944,
+            "y": 876.629813180074
+          }
+        ],
+        "signedArea2": -0.009882523975524901,
+        "mapping": [
+          {
+            "face": "far-main",
+            "sourceVertexIndices": [
+              25,
+              5,
+              6
+            ],
+            "barycentric": [
+              0.9588688946015425,
+              0.02313624678663239,
+              0.017994858611825194
+            ],
+            "extrapolated": false,
+            "distanceSquared": 0
+          },
+          {
+            "face": "far-main",
+            "sourceVertexIndices": [
+              25,
+              4,
+              5
+            ],
+            "barycentric": [
+              0.9016393442622951,
+              0.08743169398907104,
+              0.01092896174863388
+            ],
+            "extrapolated": false,
+            "distanceSquared": 0
+          },
+          {
+            "face": "far-main",
+            "sourceVertexIndices": [
+              25,
+              6,
+              7
+            ],
+            "barycentric": [
+              0.9628180039138943,
+              0.003913894324853229,
+              0.033268101761252444
+            ],
+            "extrapolated": false,
+            "distanceSquared": 0
+          }
+        ]
+      },
+      "boundaryFailures": [
+        {
+          "face": "far-main",
+          "triangle": 6,
+          "indices": [
+            25,
+            6,
+            7
+          ],
+          "sourceArea2": 511,
+          "area2": -162.45806860042313,
+          "jacobian": -0.3179218563609063,
+          "inverted": true,
+          "source": [
+            {
+              "x": 605,
+              "y": 615
+            },
+            {
+              "x": 631,
+              "y": 676
+            },
+            {
+              "x": 632,
+              "y": 698
+            }
+          ]
+        },
+        {
+          "face": "far-main",
+          "triangle": 15,
+          "indices": [
+            24,
+            7,
+            8
+          ],
+          "sourceArea2": 461,
+          "area2": -347.4814177476399,
+          "jacobian": -0.7537557868712362,
+          "inverted": true,
+          "source": [
+            {
+              "x": 609,
+              "y": 630
+            },
+            {
+              "x": 632,
+              "y": 698
+            },
+            {
+              "x": 633,
+              "y": 721
+            }
+          ]
+        },
+        {
+          "face": "far-main",
+          "triangle": 16,
+          "indices": [
+            24,
+            8,
+            9
+          ],
+          "sourceArea2": 207,
+          "area2": -614.801255603594,
+          "jacobian": -2.970054374896589,
+          "inverted": true,
+          "source": [
+            {
+              "x": 609,
+              "y": 630
+            },
+            {
+              "x": 633,
+              "y": 721
+            },
+            {
+              "x": 636,
+              "y": 741
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "pose": "up-6",
+      "side": "near",
+      "sourceOpaqueCells": 23164,
+      "invertedCellTriangles": {
+        "alpha1": 4423,
+        "alpha16": 4423,
+        "alpha128": 4423,
+        "visibleV02": 3666
+      },
+      "minimumArea": -27.210372718382956,
+      "first": {
+        "sourceCell": [
+          449,
+          634
+        ],
+        "alpha": 252,
+        "visibleV02Alpha": 252,
+        "source": [
+          {
+            "x": 449,
+            "y": 634
+          },
+          {
+            "x": 450,
+            "y": 634
+          },
+          {
+            "x": 449,
+            "y": 635
+          }
+        ],
+        "target": [
+          {
+            "x": 383.068702540441,
+            "y": 800.5633964755469
+          },
+          {
+            "x": 383.69369106108655,
+            "y": 800.6964192345706
+          },
+          {
+            "x": 383.83851676230864,
+            "y": 800.6772114709194
+          }
+        ],
+        "signedArea2": -0.031269746143406316,
+        "mapping": [
+          {
+            "face": "near-main",
+            "sourceVertexIndices": [
+              48,
+              16,
+              17
+            ],
+            "barycentric": [
+              0.9381270903010033,
+              0.042642140468227424,
+              0.019230769230769232
+            ],
+            "extrapolated": false,
+            "distanceSquared": 0
+          },
+          {
+            "face": "near-main",
+            "sourceVertexIndices": [
+              48,
+              15,
+              16
+            ],
+            "barycentric": [
+              0.9320105048147067,
+              0.013422818791946308,
+              0.054566676393346954
+            ],
+            "extrapolated": false,
+            "distanceSquared": 0
+          },
+          {
+            "face": "near-main",
+            "sourceVertexIndices": [
+              48,
+              17,
+              18
+            ],
+            "barycentric": [
+              0.9388528138528138,
+              0.02813852813852814,
+              0.03300865800865801
+            ],
+            "extrapolated": false,
+            "distanceSquared": 0
+          }
+        ]
+      },
+      "boundaryFailures": [
+        {
+          "face": "near-main",
+          "triangle": 17,
+          "indices": [
+            48,
+            16,
+            17
+          ],
+          "sourceArea2": 2392,
+          "area2": -178.13631464440095,
+          "jacobian": -0.07447170344665592,
+          "inverted": true,
+          "source": [
+            {
+              "x": 439,
+              "y": 628
+            },
+            {
+              "x": 600,
+              "y": 720
+            },
+            {
+              "x": 602,
+              "y": 736
+            }
+          ]
+        },
+        {
+          "face": "near-main",
+          "triangle": 18,
+          "indices": [
+            48,
+            17,
+            18
+          ],
+          "sourceArea2": 1848,
+          "area2": -297.5037785390796,
+          "jacobian": -0.1609868931488526,
+          "inverted": true,
+          "source": [
+            {
+              "x": 439,
+              "y": 628
+            },
+            {
+              "x": 602,
+              "y": 736
+            },
+            {
+              "x": 603,
+              "y": 748
+            }
+          ]
+        },
+        {
+          "face": "near-main",
+          "triangle": 20,
+          "indices": [
+            19,
+            21,
+            22
+          ],
+          "sourceArea2": 8,
+          "area2": -12.10694888339117,
+          "jacobian": -1.5133686104238961,
+          "inverted": true,
+          "source": [
+            {
+              "x": 600,
+              "y": 757
+            },
+            {
+              "x": 598,
+              "y": 754
+            },
+            {
+              "x": 598,
+              "y": 750
+            }
+          ]
+        },
+        {
+          "face": "near-main",
+          "triangle": 40,
+          "indices": [
+            18,
+            19,
+            22
+          ],
+          "sourceArea2": 39,
+          "area2": -39.73361270289792,
+          "jacobian": -1.0188105821255877,
+          "inverted": true,
+          "source": [
+            {
+              "x": 603,
+              "y": 748
+            },
+            {
+              "x": 600,
+              "y": 757
+            },
+            {
+              "x": 598,
+              "y": 750
+            }
+          ]
+        },
+        {
+          "face": "near-main",
+          "triangle": 41,
+          "indices": [
+            18,
+            22,
+            23
+          ],
+          "sourceArea2": 28,
+          "area2": -24.786495656846363,
+          "jacobian": -0.885231987744513,
+          "inverted": true,
+          "source": [
+            {
+              "x": 603,
+              "y": 748
+            },
+            {
+              "x": 598,
+              "y": 750
+            },
+            {
+              "x": 594,
+              "y": 746
+            }
+          ]
+        },
+        {
+          "face": "near-main",
+          "triangle": 42,
+          "indices": [
+            18,
+            23,
+            24
+          ],
+          "sourceArea2": 23,
+          "area2": -60.23557197522102,
+          "jacobian": -2.6189379119661313,
+          "inverted": true,
+          "source": [
+            {
+              "x": 603,
+              "y": 748
+            },
+            {
+              "x": 594,
+              "y": 746
+            },
+            {
+              "x": 583,
+              "y": 741
+            }
+          ]
+        },
+        {
+          "face": "near-main",
+          "triangle": 47,
+          "indices": [
+            30,
+            18,
+            24
+          ],
+          "sourceArea2": 379,
+          "area2": -225.32057263127967,
+          "jacobian": -0.5945133842513975,
+          "inverted": true,
+          "source": [
+            {
+              "x": 520,
+              "y": 700
+            },
+            {
+              "x": 603,
+              "y": 748
+            },
+            {
+              "x": 583,
+              "y": 741
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "pose": "up-6",
+      "side": "far",
+      "sourceOpaqueCells": 4517,
+      "invertedCellTriangles": {
+        "alpha1": 1809,
+        "alpha16": 1242,
+        "alpha128": 1155,
+        "visibleV02": 0
+      },
+      "minimumArea": -3.389274956581749,
+      "first": {
+        "sourceCell": [
+          607,
+          620
+        ],
+        "alpha": 252,
+        "visibleV02Alpha": 0,
+        "source": [
+          {
+            "x": 607,
+            "y": 620
+          },
+          {
+            "x": 608,
+            "y": 620
+          },
+          {
+            "x": 607,
+            "y": 621
+          }
+        ],
+        "target": [
+          {
+            "x": 536.9640628978192,
+            "y": 800.8097580374247
+          },
+          {
+            "x": 537.3298967381676,
+            "y": 801.489869154197
+          },
+          {
+            "x": 537.215848503406,
+            "y": 801.1417068490588
+          }
+        ],
+        "signedArea2": -0.04980408084368361,
+        "mapping": [
+          {
+            "face": "far-main",
+            "sourceVertexIndices": [
+              25,
+              6,
+              7
+            ],
+            "barycentric": [
+              0.923679060665362,
+              0.060665362035225046,
+              0.015655577299412915
+            ],
+            "extrapolated": false,
+            "distanceSquared": 0
+          },
+          {
+            "face": "far-main",
+            "sourceVertexIndices": [
+              25,
+              4,
+              5
+            ],
+            "barycentric": [
+              0.8688524590163934,
+              0.00546448087431694,
+              0.12568306010928962
+            ],
+            "extrapolated": false,
+            "distanceSquared": 0
+          },
+          {
+            "face": "far-main",
+            "sourceVertexIndices": [
+              25,
+              6,
+              7
+            ],
+            "barycentric": [
+              0.9256360078277887,
+              0.007827788649706457,
+              0.06653620352250489
+            ],
+            "extrapolated": false,
+            "distanceSquared": 0
+          }
+        ]
+      },
+      "boundaryFailures": [
+        {
+          "face": "far-main",
+          "triangle": 6,
+          "indices": [
+            25,
+            6,
+            7
+          ],
+          "sourceArea2": 511,
+          "area2": -139.20395551306484,
+          "jacobian": -0.2724147857398529,
+          "inverted": true,
+          "source": [
+            {
+              "x": 605,
+              "y": 615
+            },
+            {
+              "x": 631,
+              "y": 676
+            },
+            {
+              "x": 632,
+              "y": 698
+            }
+          ]
+        },
+        {
+          "face": "far-main",
+          "triangle": 15,
+          "indices": [
+            24,
+            7,
+            8
+          ],
+          "sourceArea2": 461,
+          "area2": -334.2662610261666,
+          "jacobian": -0.7250895033105567,
+          "inverted": true,
+          "source": [
+            {
+              "x": 609,
+              "y": 630
+            },
+            {
+              "x": 632,
+              "y": 698
+            },
+            {
+              "x": 633,
+              "y": 721
+            }
+          ]
+        },
+        {
+          "face": "far-main",
+          "triangle": 16,
+          "indices": [
+            24,
+            8,
+            9
+          ],
+          "sourceArea2": 207,
+          "area2": -701.5799160119393,
+          "jacobian": -3.389274956579417,
+          "inverted": true,
+          "source": [
+            {
+              "x": 609,
+              "y": 630
+            },
+            {
+              "x": 633,
+              "y": 721
+            },
+            {
+              "x": 636,
+              "y": 741
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "pose": "up-9",
+      "side": "near",
+      "sourceOpaqueCells": 23164,
+      "invertedCellTriangles": {
+        "alpha1": 520,
+        "alpha16": 520,
+        "alpha128": 520,
+        "visibleV02": 492
+      },
+      "minimumArea": -13.286184305510247,
+      "first": {
+        "sourceCell": [
+          536,
+          710
+        ],
+        "alpha": 253,
+        "visibleV02Alpha": 253,
+        "source": [
+          {
+            "x": 536,
+            "y": 710
+          },
+          {
+            "x": 537,
+            "y": 710
+          },
+          {
+            "x": 536,
+            "y": 711
+          }
+        ],
+        "target": [
+          {
+            "x": 508.8463462792618,
+            "y": 815.3514061178023
+          },
+          {
+            "x": 509.2394646401413,
+            "y": 815.5124577687387
+          },
+          {
+            "x": 509.70691877314914,
+            "y": 815.661994450315
+          }
+        ],
+        "signedArea2": -0.016498644705353477,
+        "mapping": [
+          {
+            "face": "near-main",
+            "sourceVertexIndices": [
+              30,
+              18,
+              24
+            ],
+            "barycentric": [
+              0.7678100263852243,
+              0.06860158311345646,
+              0.16358839050131926
+            ],
+            "extrapolated": false,
+            "distanceSquared": 0
+          },
+          {
+            "face": "near-main",
+            "sourceVertexIndices": [
+              30,
+              18,
+              24
+            ],
+            "barycentric": [
+              0.7862796833773088,
+              0.17678100263852242,
+              0.036939313984168866
+            ],
+            "extrapolated": false,
+            "distanceSquared": 0
+          },
+          {
+            "face": "near-main",
+            "sourceVertexIndices": [
+              24,
+              25,
+              30
+            ],
+            "barycentric": [
+              0.1763085399449036,
+              0.10192837465564739,
+              0.721763085399449
+            ],
+            "extrapolated": false,
+            "distanceSquared": 0
+          }
+        ]
+      },
+      "boundaryFailures": [
+        {
+          "face": "near-main",
+          "triangle": 20,
+          "indices": [
+            19,
+            21,
+            22
+          ],
+          "sourceArea2": 8,
+          "area2": -6.315248568871338,
+          "jacobian": -0.7894060711089173,
+          "inverted": true,
+          "source": [
+            {
+              "x": 600,
+              "y": 757
+            },
+            {
+              "x": 598,
+              "y": 754
+            },
+            {
+              "x": 598,
+              "y": 750
+            }
+          ]
+        },
+        {
+          "face": "near-main",
+          "triangle": 40,
+          "indices": [
+            18,
+            19,
+            22
+          ],
+          "sourceArea2": 39,
+          "area2": -16.549807931810125,
+          "jacobian": -0.42435404953359296,
+          "inverted": true,
+          "source": [
+            {
+              "x": 603,
+              "y": 748
+            },
+            {
+              "x": 600,
+              "y": 757
+            },
+            {
+              "x": 598,
+              "y": 750
+            }
+          ]
+        },
+        {
+          "face": "near-main",
+          "triangle": 41,
+          "indices": [
+            18,
+            22,
+            23
+          ],
+          "sourceArea2": 28,
+          "area2": -14.537330273151897,
+          "jacobian": -0.519190366898282,
+          "inverted": true,
+          "source": [
+            {
+              "x": 603,
+              "y": 748
+            },
+            {
+              "x": 598,
+              "y": 750
+            },
+            {
+              "x": 594,
+              "y": 746
+            }
+          ]
+        },
+        {
+          "face": "near-main",
+          "triangle": 42,
+          "indices": [
+            18,
+            23,
+            24
+          ],
+          "sourceArea2": 23,
+          "area2": -50.47352242404356,
+          "jacobian": -2.1945009749584155,
+          "inverted": true,
+          "source": [
+            {
+              "x": 603,
+              "y": 748
+            },
+            {
+              "x": 594,
+              "y": 746
+            },
+            {
+              "x": 583,
+              "y": 741
+            }
+          ]
+        },
+        {
+          "face": "near-main",
+          "triangle": 47,
+          "indices": [
+            30,
+            18,
+            24
+          ],
+          "sourceArea2": 379,
+          "area2": -131.44778710269844,
+          "jacobian": -0.3468279343079115,
+          "inverted": true,
+          "source": [
+            {
+              "x": 520,
+              "y": 700
+            },
+            {
+              "x": 603,
+              "y": 748
+            },
+            {
+              "x": 583,
+              "y": 741
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "pose": "up-9",
+      "side": "far",
+      "sourceOpaqueCells": 4517,
+      "invertedCellTriangles": {
+        "alpha1": 1696,
+        "alpha16": 1128,
+        "alpha128": 1041,
+        "visibleV02": 0
+      },
+      "minimumArea": -2.8293024821600836,
+      "first": {
+        "sourceCell": [
+          610,
+          629
+        ],
+        "alpha": 252,
+        "visibleV02Alpha": 0,
+        "source": [
+          {
+            "x": 610,
+            "y": 629
+          },
+          {
+            "x": 611,
+            "y": 629
+          },
+          {
+            "x": 610,
+            "y": 630
+          }
+        ],
+        "target": [
+          {
+            "x": 567.8932024800242,
+            "y": 748.9576910488156
+          },
+          {
+            "x": 568.0264303553563,
+            "y": 749.4143504247531
+          },
+          {
+            "x": 568.1152850607778,
+            "y": 749.5197077016848
+          }
+        ],
+        "signedArea2": -0.0265398081705035,
+        "mapping": [
+          {
+            "face": "far-main",
+            "sourceVertexIndices": [
+              25,
+              6,
+              7
+            ],
+            "barycentric": [
+              0.812133072407045,
+              0.07240704500978473,
+              0.11545988258317025
+            ],
+            "extrapolated": false,
+            "distanceSquared": 0
+          },
+          {
+            "face": "far-main",
+            "sourceVertexIndices": [
+              25,
+              5,
+              6
+            ],
+            "barycentric": [
+              0.768637532133676,
+              0.005141388174807198,
+              0.2262210796915167
+            ],
+            "extrapolated": false,
+            "distanceSquared": 0
+          },
+          {
+            "face": "far-main",
+            "sourceVertexIndices": [
+              25,
+              6,
+              7
+            ],
+            "barycentric": [
+              0.8140900195694716,
+              0.019569471624266144,
+              0.16634050880626222
+            ],
+            "extrapolated": false,
+            "distanceSquared": 0
+          }
+        ]
+      },
+      "boundaryFailures": [
+        {
+          "face": "far-main",
+          "triangle": 6,
+          "indices": [
+            25,
+            6,
+            7
+          ],
+          "sourceArea2": 511,
+          "area2": -18.054372101809918,
+          "jacobian": -0.03533145225403115,
+          "inverted": true,
+          "source": [
+            {
+              "x": 605,
+              "y": 615
+            },
+            {
+              "x": 631,
+              "y": 676
+            },
+            {
+              "x": 632,
+              "y": 698
+            }
+          ]
+        },
+        {
+          "face": "far-main",
+          "triangle": 15,
+          "indices": [
+            24,
+            7,
+            8
+          ],
+          "sourceArea2": 461,
+          "area2": -193.0318946238126,
+          "jacobian": -0.41872428334883427,
+          "inverted": true,
+          "source": [
+            {
+              "x": 609,
+              "y": 630
+            },
+            {
+              "x": 632,
+              "y": 698
+            },
+            {
+              "x": 633,
+              "y": 721
+            }
+          ]
+        },
+        {
+          "face": "far-main",
+          "triangle": 16,
+          "indices": [
+            24,
+            8,
+            9
+          ],
+          "sourceArea2": 207,
+          "area2": -585.6656138066664,
+          "jacobian": -2.829302482157809,
+          "inverted": true,
+          "source": [
+            {
+              "x": 609,
+              "y": 630
+            },
+            {
+              "x": 633,
+              "y": 721
+            },
+            {
+              "x": 636,
+              "y": 741
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "pose": "up-15",
+      "side": "near",
+      "sourceOpaqueCells": 23164,
+      "invertedCellTriangles": {
+        "alpha1": 179,
+        "alpha16": 179,
+        "alpha128": 179,
+        "visibleV02": 174
+      },
+      "minimumArea": -6.001767558217481,
+      "first": {
+        "sourceCell": [
+          583,
+          741
+        ],
+        "alpha": 253,
+        "visibleV02Alpha": 253,
+        "source": [
+          {
+            "x": 583,
+            "y": 741
+          },
+          {
+            "x": 584,
+            "y": 741
+          },
+          {
+            "x": 583,
+            "y": 742
+          }
+        ],
+        "target": [
+          {
+            "x": 588.9180470067547,
+            "y": 776.4429134848409
+          },
+          {
+            "x": 589.5738758926094,
+            "y": 776.4857715622616
+          },
+          {
+            "x": 590.4652336800199,
+            "y": 775.3742765702767
+          }
+        ],
+        "signedArea2": -0.7671524032888348,
+        "mapping": [
+          {
+            "face": "near-main",
+            "sourceVertexIndices": [
+              18,
+              23,
+              24
+            ],
+            "barycentric": [
+              0,
+              0,
+              1
+            ],
+            "extrapolated": false,
+            "distanceSquared": 0
+          },
+          {
+            "face": "near-main",
+            "sourceVertexIndices": [
+              30,
+              18,
+              24
+            ],
+            "barycentric": [
+              0.01846965699208447,
+              0.10817941952506596,
+              0.8733509234828496
+            ],
+            "extrapolated": false,
+            "distanceSquared": 0
+          },
+          {
+            "face": "near-main",
+            "sourceVertexIndices": [
+              18,
+              23,
+              24
+            ],
+            "barycentric": [
+              -0.4782608695652174,
+              0.8695652173913043,
+              0.6086956521739131
+            ],
+            "extrapolated": true,
+            "distanceSquared": 0.8287671232876704
+          }
+        ]
+      },
+      "boundaryFailures": [
+        {
+          "face": "near-main",
+          "triangle": 42,
+          "indices": [
+            18,
+            23,
+            24
+          ],
+          "sourceArea2": 23,
+          "area2": -27.34854853498109,
+          "jacobian": -1.1890673276078736,
+          "inverted": true,
+          "source": [
+            {
+              "x": 603,
+              "y": 748
+            },
+            {
+              "x": 594,
+              "y": 746
+            },
+            {
+              "x": 583,
+              "y": 741
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "pose": "up-15",
+      "side": "far",
+      "sourceOpaqueCells": 4517,
+      "invertedCellTriangles": {
+        "alpha1": 387,
+        "alpha16": 298,
+        "alpha128": 273,
+        "visibleV02": 0
+      },
+      "minimumArea": -1.7947408328886125,
+      "first": {
+        "sourceCell": [
+          613,
+          645
+        ],
+        "alpha": 253,
+        "visibleV02Alpha": 0,
+        "source": [
+          {
+            "x": 614,
+            "y": 645
+          },
+          {
+            "x": 614,
+            "y": 646
+          },
+          {
+            "x": 613,
+            "y": 646
+          }
+        ],
+        "target": [
+          {
+            "x": 599.6887303837418,
+            "y": 707.1019159113583
+          },
+          {
+            "x": 599.941283172574,
+            "y": 707.8975093789577
+          },
+          {
+            "x": 599.9252346168826,
+            "y": 707.6163451758292
+          }
+        ],
+        "signedArea2": -0.0582406775473604,
+        "mapping": [
+          {
+            "face": "far-main",
+            "sourceVertexIndices": [
+              24,
+              7,
+              8
+            ],
+            "barycentric": [
+              0.7830802603036876,
+              0.20607375271149675,
+              0.010845986984815618
+            ],
+            "extrapolated": false,
+            "distanceSquared": 0
+          },
+          {
+            "face": "far-main",
+            "sourceVertexIndices": [
+              24,
+              7,
+              8
+            ],
+            "barycentric": [
+              0.7852494577006507,
+              0.1540130151843818,
+              0.06073752711496746
+            ],
+            "extrapolated": false,
+            "distanceSquared": 0
+          },
+          {
+            "face": "far-main",
+            "sourceVertexIndices": [
+              24,
+              8,
+              9
+            ],
+            "barycentric": [
+              0.8454106280193237,
+              0.057971014492753624,
+              0.0966183574879227
+            ],
+            "extrapolated": false,
+            "distanceSquared": 0
+          }
+        ]
+      },
+      "boundaryFailures": [
+        {
+          "face": "far-main",
+          "triangle": 16,
+          "indices": [
+            24,
+            8,
+            9
+          ],
+          "sourceArea2": 207,
+          "area2": -246.63235720434886,
+          "jacobian": -1.1914606628229414,
+          "inverted": true,
+          "source": [
+            {
+              "x": 609,
+              "y": 630
+            },
+            {
+              "x": 633,
+              "y": 721
+            },
+            {
+              "x": 636,
+              "y": 741
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "pose": "up-30",
+      "side": "near",
+      "sourceOpaqueCells": 23164,
+      "invertedCellTriangles": {
+        "alpha1": 149,
+        "alpha16": 149,
+        "alpha128": 149,
+        "visibleV02": 149
+      },
+      "minimumArea": -3.375878723822991,
+      "first": {
+        "sourceCell": [
+          583,
+          741
+        ],
+        "alpha": 253,
+        "visibleV02Alpha": 253,
+        "source": [
+          {
+            "x": 583,
+            "y": 741
+          },
+          {
+            "x": 584,
+            "y": 741
+          },
+          {
+            "x": 583,
+            "y": 742
+          }
+        ],
+        "target": [
+          {
+            "x": 596.7282872913129,
+            "y": 763.2501844398082
+          },
+          {
+            "x": 597.5066313133354,
+            "y": 763.2506972416196
+          },
+          {
+            "x": 597.8047044784227,
+            "y": 762.8769121531142
+          }
+        ],
+        "signedArea2": -0.29108624161836133,
+        "mapping": [
+          {
+            "face": "near-main",
+            "sourceVertexIndices": [
+              18,
+              23,
+              24
+            ],
+            "barycentric": [
+              0,
+              0,
+              1
+            ],
+            "extrapolated": false,
+            "distanceSquared": 0
+          },
+          {
+            "face": "near-main",
+            "sourceVertexIndices": [
+              30,
+              18,
+              24
+            ],
+            "barycentric": [
+              0.01846965699208447,
+              0.10817941952506596,
+              0.8733509234828496
+            ],
+            "extrapolated": false,
+            "distanceSquared": 0
+          },
+          {
+            "face": "near-main",
+            "sourceVertexIndices": [
+              18,
+              23,
+              24
+            ],
+            "barycentric": [
+              -0.4782608695652174,
+              0.8695652173913043,
+              0.6086956521739131
+            ],
+            "extrapolated": true,
+            "distanceSquared": 0.8287671232876704
+          }
+        ]
+      },
+      "boundaryFailures": [
+        {
+          "face": "near-main",
+          "triangle": 42,
+          "indices": [
+            18,
+            23,
+            24
+          ],
+          "sourceArea2": 23,
+          "area2": -12.676117000710367,
+          "jacobian": -0.5511355217700159,
+          "inverted": true,
+          "source": [
+            {
+              "x": 603,
+              "y": 748
+            },
+            {
+              "x": 594,
+              "y": 746
+            },
+            {
+              "x": 583,
+              "y": 741
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "pose": "up-30",
+      "side": "far",
+      "sourceOpaqueCells": 4517,
+      "invertedCellTriangles": {
+        "alpha1": 2,
+        "alpha16": 0,
+        "alpha128": 0,
+        "visibleV02": 0
+      },
+      "minimumArea": -0.32191126852630725,
+      "first": {
+        "sourceCell": [
+          637,
+          740
+        ],
+        "alpha": 1,
+        "visibleV02Alpha": 0,
+        "source": [
+          {
+            "x": 637,
+            "y": 740
+          },
+          {
+            "x": 638,
+            "y": 740
+          },
+          {
+            "x": 637,
+            "y": 741
+          }
+        ],
+        "target": [
+          {
+            "x": 640.6810651123433,
+            "y": 774.9877116488183
+          },
+          {
+            "x": 640.8854297764042,
+            "y": 775.1825419729748
+          },
+          {
+            "x": 641.7401672919332,
+            "y": 775.53543118307
+          }
+        ],
+        "signedArea2": -0.09441070234745695,
+        "mapping": [
+          {
+            "face": "far-main",
+            "sourceVertexIndices": [
+              24,
+              8,
+              9
+            ],
+            "barycentric": [
+              -0.11111111111111105,
+              0.6666666666666666,
+              0.4444444444444444
+            ],
+            "extrapolated": true,
+            "distanceSquared": 1.2933985330073343
+          },
+          {
+            "face": "far-main",
+            "sourceVertexIndices": [
+              24,
+              8,
+              9
+            ],
+            "barycentric": [
+              -0.20772946859903382,
+              1.2028985507246377,
+              0.004830917874396135
+            ],
+            "extrapolated": true,
+            "distanceSquared": 4.520782396088019
+          },
+          {
+            "face": "far-main",
+            "sourceVertexIndices": [
+              9,
+              10,
+              11
+            ],
+            "barycentric": [
+              0.9642857142857143,
+              0.15178571428571427,
+              -0.11607142857142858
+            ],
+            "extrapolated": true,
+            "distanceSquared": 0.976878612716763
+          }
+        ]
+      },
+      "boundaryFailures": []
+    },
+    {
+      "pose": "up-60",
+      "side": "near",
+      "sourceOpaqueCells": 23164,
+      "invertedCellTriangles": {
+        "alpha1": 148,
+        "alpha16": 148,
+        "alpha128": 148,
+        "visibleV02": 148
+      },
+      "minimumArea": -3.2830778588525105,
+      "first": {
+        "sourceCell": [
+          583,
+          741
+        ],
+        "alpha": 253,
+        "visibleV02Alpha": 253,
+        "source": [
+          {
+            "x": 583,
+            "y": 741
+          },
+          {
+            "x": 584,
+            "y": 741
+          },
+          {
+            "x": 583,
+            "y": 742
+          }
+        ],
+        "target": [
+          {
+            "x": 596.9650269282314,
+            "y": 762.8184842328546
+          },
+          {
+            "x": 597.7478123864972,
+            "y": 762.8176520741256
+          },
+          {
+            "x": 598.0233306146124,
+            "y": 762.4701821389535
+          }
+        ],
+        "signedArea2": -0.27176513753871934,
+        "mapping": [
+          {
+            "face": "near-main",
+            "sourceVertexIndices": [
+              18,
+              23,
+              24
+            ],
+            "barycentric": [
+              0,
+              0,
+              1
+            ],
+            "extrapolated": false,
+            "distanceSquared": 0
+          },
+          {
+            "face": "near-main",
+            "sourceVertexIndices": [
+              30,
+              18,
+              24
+            ],
+            "barycentric": [
+              0.01846965699208447,
+              0.10817941952506596,
+              0.8733509234828496
+            ],
+            "extrapolated": false,
+            "distanceSquared": 0
+          },
+          {
+            "face": "near-main",
+            "sourceVertexIndices": [
+              18,
+              23,
+              24
+            ],
+            "barycentric": [
+              -0.4782608695652174,
+              0.8695652173913043,
+              0.6086956521739131
+            ],
+            "extrapolated": true,
+            "distanceSquared": 0.8287671232876704
+          }
+        ]
+      },
+      "boundaryFailures": [
+        {
+          "face": "near-main",
+          "triangle": 42,
+          "indices": [
+            18,
+            23,
+            24
+          ],
+          "sourceArea2": 23,
+          "area2": -12.101279011138928,
+          "jacobian": -0.5261425657016925,
+          "inverted": true,
+          "source": [
+            {
+              "x": 603,
+              "y": 748
+            },
+            {
+              "x": 594,
+              "y": 746
+            },
+            {
+              "x": 583,
+              "y": 741
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "pose": "up-60",
+      "side": "far",
+      "sourceOpaqueCells": 4517,
+      "invertedCellTriangles": {
+        "alpha1": 2,
+        "alpha16": 0,
+        "alpha128": 0,
+        "visibleV02": 0
+      },
+      "minimumArea": -0.23358774340121002,
+      "first": {
+        "sourceCell": [
+          637,
+          740
+        ],
+        "alpha": 1,
+        "visibleV02Alpha": 0,
+        "source": [
+          {
+            "x": 637,
+            "y": 740
+          },
+          {
+            "x": 638,
+            "y": 740
+          },
+          {
+            "x": 637,
+            "y": 741
+          }
+        ],
+        "target": [
+          {
+            "x": 640.8492134982753,
+            "y": 774.7279396584815
+          },
+          {
+            "x": 641.1129229090822,
+            "y": 774.9043487868488
+          },
+          {
+            "x": 641.8305715613694,
+            "y": 775.3134870071328
+          }
+        ],
+        "signedArea2": -0.018706174214252108,
+        "mapping": [
+          {
+            "face": "far-main",
+            "sourceVertexIndices": [
+              24,
+              8,
+              9
+            ],
+            "barycentric": [
+              -0.11111111111111105,
+              0.6666666666666666,
+              0.4444444444444444
+            ],
+            "extrapolated": true,
+            "distanceSquared": 1.2933985330073343
+          },
+          {
+            "face": "far-main",
+            "sourceVertexIndices": [
+              24,
+              8,
+              9
+            ],
+            "barycentric": [
+              -0.20772946859903382,
+              1.2028985507246377,
+              0.004830917874396135
+            ],
+            "extrapolated": true,
+            "distanceSquared": 4.520782396088019
+          },
+          {
+            "face": "far-main",
+            "sourceVertexIndices": [
+              9,
+              10,
+              11
+            ],
+            "barycentric": [
+              0.9642857142857143,
+              0.15178571428571427,
+              -0.11607142857142858
+            ],
+            "extrapolated": true,
+            "distanceSquared": 0.976878612716763
+          }
+        ]
+      },
+      "boundaryFailures": []
+    },
+    {
+      "pose": "up-120",
+      "side": "near",
+      "sourceOpaqueCells": 23164,
+      "invertedCellTriangles": {
+        "alpha1": 148,
+        "alpha16": 148,
+        "alpha128": 148,
+        "visibleV02": 148
+      },
+      "minimumArea": -3.283018934129102,
+      "first": {
+        "sourceCell": [
+          583,
+          741
+        ],
+        "alpha": 253,
+        "visibleV02Alpha": 253,
+        "source": [
+          {
+            "x": 583,
+            "y": 741
+          },
+          {
+            "x": 584,
+            "y": 741
+          },
+          {
+            "x": 583,
+            "y": 742
+          }
+        ],
+        "target": [
+          {
+            "x": 596.9651762894161,
+            "y": 762.8182109799892
+          },
+          {
+            "x": 597.7479645707572,
+            "y": 762.8173779709933
+          },
+          {
+            "x": 598.0234684379418,
+            "y": 762.469924751631
+          }
+        ],
+        "signedArea2": -0.2717528112313106,
+        "mapping": [
+          {
+            "face": "near-main",
+            "sourceVertexIndices": [
+              18,
+              23,
+              24
+            ],
+            "barycentric": [
+              0,
+              0,
+              1
+            ],
+            "extrapolated": false,
+            "distanceSquared": 0
+          },
+          {
+            "face": "near-main",
+            "sourceVertexIndices": [
+              30,
+              18,
+              24
+            ],
+            "barycentric": [
+              0.01846965699208447,
+              0.10817941952506596,
+              0.8733509234828496
+            ],
+            "extrapolated": false,
+            "distanceSquared": 0
+          },
+          {
+            "face": "near-main",
+            "sourceVertexIndices": [
+              18,
+              23,
+              24
+            ],
+            "barycentric": [
+              -0.4782608695652174,
+              0.8695652173913043,
+              0.6086956521739131
+            ],
+            "extrapolated": true,
+            "distanceSquared": 0.8287671232876704
+          }
+        ]
+      },
+      "boundaryFailures": [
+        {
+          "face": "near-main",
+          "triangle": 42,
+          "indices": [
+            18,
+            23,
+            24
+          ],
+          "sourceArea2": 23,
+          "area2": -12.100912700106907,
+          "jacobian": -0.526126639135083,
+          "inverted": true,
+          "source": [
+            {
+              "x": 603,
+              "y": 748
+            },
+            {
+              "x": 594,
+              "y": 746
+            },
+            {
+              "x": 583,
+              "y": 741
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "pose": "up-120",
+      "side": "far",
+      "sourceOpaqueCells": 4517,
+      "invertedCellTriangles": {
+        "alpha1": 2,
+        "alpha16": 0,
+        "alpha128": 0,
+        "visibleV02": 0
+      },
+      "minimumArea": -0.23353033459941053,
+      "first": {
+        "sourceCell": [
+          637,
+          740
+        ],
+        "alpha": 1,
+        "visibleV02Alpha": 0,
+        "source": [
+          {
+            "x": 637,
+            "y": 740
+          },
+          {
+            "x": 638,
+            "y": 740
+          },
+          {
+            "x": 637,
+            "y": 741
+          }
+        ],
+        "target": [
+          {
+            "x": 640.8493164120649,
+            "y": 774.7277792727002
+          },
+          {
+            "x": 641.113064003946,
+            "y": 774.9041766915279
+          },
+          {
+            "x": 641.8306244194512,
+            "y": 775.3133507744822
+          }
+        ],
+        "signedArea2": -0.018657126108753253,
+        "mapping": [
+          {
+            "face": "far-main",
+            "sourceVertexIndices": [
+              24,
+              8,
+              9
+            ],
+            "barycentric": [
+              -0.11111111111111105,
+              0.6666666666666666,
+              0.4444444444444444
+            ],
+            "extrapolated": true,
+            "distanceSquared": 1.2933985330073343
+          },
+          {
+            "face": "far-main",
+            "sourceVertexIndices": [
+              24,
+              8,
+              9
+            ],
+            "barycentric": [
+              -0.20772946859903382,
+              1.2028985507246377,
+              0.004830917874396135
+            ],
+            "extrapolated": true,
+            "distanceSquared": 4.520782396088019
+          },
+          {
+            "face": "far-main",
+            "sourceVertexIndices": [
+              9,
+              10,
+              11
+            ],
+            "barycentric": [
+              0.9642857142857143,
+              0.15178571428571427,
+              -0.11607142857142858
+            ],
+            "extrapolated": true,
+            "distanceSquared": 0.976878612716763
+          }
+        ]
+      },
+      "boundaryFailures": []
+    }
+  ]
+}

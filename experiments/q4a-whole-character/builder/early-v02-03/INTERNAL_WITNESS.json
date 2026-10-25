@@ -1,0 +1,136 @@
+{
+  "readOnlyFrozenStageA": true,
+  "parameterChanges": 0,
+  "sourceIdentity": {
+    "testedCellTriangles": 55362,
+    "minimumSignedArea2": 0.9999999999972715,
+    "inversions": 0
+  },
+  "fullyInternalVisibleCell": {
+    "pose": "neutral",
+    "side": "near",
+    "sourceCell": [
+      592,
+      744
+    ],
+    "alpha": 253,
+    "visibleV02Alpha": 253,
+    "source": [
+      {
+        "x": 592,
+        "y": 744
+      },
+      {
+        "x": 593,
+        "y": 744
+      },
+      {
+        "x": 592,
+        "y": 745
+      }
+    ],
+    "target": [
+      {
+        "x": 605.6925065585808,
+        "y": 764.3173371489565
+      },
+      {
+        "x": 606.4752948399224,
+        "y": 764.3165041399606
+      },
+      {
+        "x": 606.6761666716784,
+        "y": 764.0966250173547
+      }
+    ],
+    "sourceSignedArea2": 1,
+    "targetSignedArea2": -0.1719514724446804,
+    "mapping": [
+      {
+        "face": "near-main",
+        "sourceVertexIndices": [
+          30,
+          18,
+          24
+        ],
+        "barycentric": [
+          0.0079155672823219,
+          0.47493403693931396,
+          0.5171503957783641
+        ],
+        "extrapolated": false
+      },
+      {
+        "face": "near-main",
+        "sourceVertexIndices": [
+          30,
+          18,
+          24
+        ],
+        "barycentric": [
+          0.026385224274406316,
+          0.58311345646438,
+          0.39050131926121373
+        ],
+        "extrapolated": false
+      },
+      {
+        "face": "near-main",
+        "sourceVertexIndices": [
+          18,
+          23,
+          24
+        ],
+        "barycentric": [
+          0.04347826086956527,
+          0.7391304347826086,
+          0.21739130434782608
+        ],
+        "extrapolated": false
+      }
+    ]
+  },
+  "boundaryFace": {
+    "pose": "neutral",
+    "side": "near",
+    "face": "near-main",
+    "triangle": 42,
+    "indices": [
+      18,
+      23,
+      24
+    ],
+    "sourceArea2": 23,
+    "area2": -12.100912700026761,
+    "jacobian": -0.5261266391315983,
+    "inverted": true,
+    "source": [
+      {
+        "x": 603,
+        "y": 748
+      },
+      {
+        "x": 594,
+        "y": 746
+      },
+      {
+        "x": 583,
+        "y": 741
+      }
+    ],
+    "target": [
+      {
+        "x": 616.5461586360819,
+        "y": 766.3170050499889
+      },
+      {
+        "x": 608.9517525508986,
+        "y": 764.3420185558542
+      },
+      {
+        "x": 596.9651762894488,
+        "y": 762.8182109799294
+      }
+    ]
+  }
+}
