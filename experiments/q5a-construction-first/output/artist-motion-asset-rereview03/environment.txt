@@ -1,0 +1,14 @@
+### Result
+{
+  "ua": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/155.0.0.0 Safari/537.36",
+  "viewport": [
+    1280,
+    720
+  ],
+  "dpr": 1,
+  "gl": "WebGL 1.0 (OpenGL ES 2.0 Chromium)"
+}
+### Ran Playwright code
+```js
+await page.evaluate('() => ({ua:navigator.userAgent,viewport:[innerWidth,innerHeight],dpr:devicePixelRatio,gl:q5a.renderer.gl.getParameter(q5a.renderer.gl.VERSION)})');
+```

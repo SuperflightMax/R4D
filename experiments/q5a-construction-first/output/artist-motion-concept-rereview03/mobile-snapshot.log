@@ -1,0 +1,43 @@
+### Page
+- Page URL: http://127.0.0.1:5193/review/r4d/q5a-construction-first/
+- Page Title: Нэла · Q5A
+### Snapshot
+```yaml
+- main [ref=e2]:
+  - generic [ref=e3]:
+    - generic [ref=e4]:
+      - paragraph [ref=e5]: R4D / Q5A / ASSEMBLY 03
+      - heading "Нэла в движении" [level=1] [ref=e6]
+      - paragraph [ref=e7]: Меняйте действие в любой момент. В полёте выберите, что делать после посадки.
+    - generic [ref=e8]: Можно управлять
+  - region "Просмотр персонажа" [ref=e9]:
+    - generic "Анимированный персонаж Нэла" [ref=e11]
+    - generic [ref=e12]:
+      - generic [ref=e13]: Стойка
+      - generic [ref=e14]: "После посадки: стойка"
+  - region "Управление движением" [ref=e15]:
+    - generic [ref=e16]:
+      - button "Стойка" [ref=e17] [cursor=pointer]
+      - button "Присед" [ref=e18] [cursor=pointer]
+      - button "Ходьба" [ref=e19] [cursor=pointer]
+      - button "Прыжок ↑" [ref=e20] [cursor=pointer]
+    - generic [ref=e21]:
+      - button "Пауза" [ref=e22] [cursor=pointer]
+      - button "Кадр +" [ref=e23] [cursor=pointer]
+      - generic [ref=e24]:
+        - text: Скорость
+        - combobox "Скорость" [ref=e25] [cursor=pointer]:
+          - option "1×" [selected]
+          - option "¼×"
+          - option "⅒×"
+      - generic [ref=e26]:
+        - text: Остановка в
+        - combobox "Остановка в" [ref=e27] [cursor=pointer]:
+          - option "стойку" [selected]
+          - option "присед"
+      - button "Стоп" [ref=e28] [cursor=pointer]
+  - group [ref=e29]:
+    - generic "Диагностика и просмотр" [ref=e30] [cursor=pointer]
+  - alert
+  - generic [ref=e31]: Construction v4 · art attempt03 · две авторские маски кистей
+```

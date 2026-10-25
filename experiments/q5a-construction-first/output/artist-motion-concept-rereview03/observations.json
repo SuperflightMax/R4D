@@ -1,0 +1,300 @@
+{
+  "candidate": "Q5A-NELA-ASSEMBLY-03",
+  "base": "101343caa68579aacd5e6c01b94206680c364ab7",
+  "devices": {
+    "desktop": {
+      "environment": {
+        "ua": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/155.0.0.0 Safari/537.36",
+        "viewport": [
+          1280,
+          720
+        ],
+        "dpr": 1,
+        "touch": 9,
+        "candidate": "Q5A-NELA-ASSEMBLY-03"
+      },
+      "initialTick": 0,
+      "seed": 9,
+      "witnessTick": 129,
+      "witnessTime": 1.0749999999999986,
+      "witnessElapsed": 0.49166666666666736,
+      "oldWitnessTick": 129,
+      "landmarkCount": 16,
+      "oldNewMaximumLandmarkDelta": 0.0,
+      "allWitnessControlModesSamePose": true,
+      "twoXMargins": {
+        "left": 574.6230492819444,
+        "right": 467.84788170896695,
+        "top": 24,
+        "bottom": 113.15385634001052
+      },
+      "twoXScale": 2,
+      "cssMagnificationOverOneX": 1.5,
+      "witnessNeighbors": [
+        123,
+        125,
+        127,
+        129,
+        131,
+        133,
+        135
+      ],
+      "stepRuns": [
+        {
+          "start": "idle",
+          "sampleCount": 145,
+          "visualCaptures": 53,
+          "phases": [
+            "flight",
+            "ground",
+            "landing",
+            "prepare",
+            "push"
+          ],
+          "minimumMargin": 23.999999999999886,
+          "scales": [
+            2
+          ],
+          "originYRange": [
+            900,
+            1120.8844800400827
+          ],
+          "maximumOriginYDeltaPer1Over60": 25.970695449172695,
+          "endPhase": "ground",
+          "endTarget": "idle"
+        },
+        {
+          "start": "low",
+          "sampleCount": 145,
+          "visualCaptures": 53,
+          "phases": [
+            "flight",
+            "ground",
+            "landing",
+            "prepare",
+            "push"
+          ],
+          "minimumMargin": 23.999999999999886,
+          "scales": [
+            2
+          ],
+          "originYRange": [
+            900,
+            1102.1100385273767
+          ],
+          "maximumOriginYDeltaPer1Over60": 22.862110329657185,
+          "endPhase": "ground",
+          "endTarget": "low"
+        },
+        {
+          "start": "walk",
+          "sampleCount": 145,
+          "visualCaptures": 53,
+          "phases": [
+            "flight",
+            "ground",
+            "landing",
+            "prepare",
+            "push"
+          ],
+          "minimumMargin": 24,
+          "scales": [
+            2
+          ],
+          "originYRange": [
+            900,
+            1120.6829888666464
+          ],
+          "maximumOriginYDeltaPer1Over60": 26.053868919224215,
+          "endPhase": "ground",
+          "endTarget": "walk"
+        }
+      ],
+      "realtimeRuns": [
+        {
+          "start": "idle",
+          "captureCount": 14,
+          "phases": [
+            "flight",
+            "ground",
+            "landing",
+            "prepare",
+            "push"
+          ],
+          "minimumMargin": 23.999999999999886
+        },
+        {
+          "start": "low",
+          "captureCount": 14,
+          "phases": [
+            "flight",
+            "ground",
+            "landing",
+            "prepare",
+            "push"
+          ],
+          "minimumMargin": 24
+        },
+        {
+          "start": "walk",
+          "captureCount": 13,
+          "phases": [
+            "flight",
+            "ground",
+            "landing",
+            "prepare",
+            "push"
+          ],
+          "minimumMargin": 23.999999999999886
+        }
+      ]
+    },
+    "mobile": {
+      "environment": {
+        "ua": "Mozilla/5.0 (Linux; Android 16; Pixel 10) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/155.0.8059.12 Mobile Safari/537.36",
+        "viewport": [
+          390,
+          844
+        ],
+        "dpr": 3,
+        "touch": 1,
+        "candidate": "Q5A-NELA-ASSEMBLY-03"
+      },
+      "initialTick": 1,
+      "seed": 10,
+      "witnessTick": 130,
+      "witnessTime": 1.083333333333332,
+      "witnessElapsed": 0.49166666666666736,
+      "oldWitnessTick": 130,
+      "landmarkCount": 16,
+      "oldNewMaximumLandmarkDelta": 0.0,
+      "allWitnessControlModesSamePose": true,
+      "twoXMargins": {
+        "left": 574.6230492819444,
+        "right": 467.847544033874,
+        "top": 24,
+        "bottom": 113.15450310387757
+      },
+      "twoXScale": 2,
+      "cssMagnificationOverOneX": 1.5,
+      "witnessNeighbors": [
+        124,
+        126,
+        128,
+        130,
+        132,
+        134,
+        136
+      ],
+      "stepRuns": [
+        {
+          "start": "idle",
+          "sampleCount": 145,
+          "visualCaptures": 53,
+          "phases": [
+            "flight",
+            "ground",
+            "landing",
+            "prepare",
+            "push"
+          ],
+          "minimumMargin": 23.999999999999886,
+          "scales": [
+            2
+          ],
+          "originYRange": [
+            900,
+            1120.8840851611658
+          ],
+          "maximumOriginYDeltaPer1Over60": 25.97077869598411,
+          "endPhase": "ground",
+          "endTarget": "idle"
+        },
+        {
+          "start": "low",
+          "sampleCount": 145,
+          "visualCaptures": 53,
+          "phases": [
+            "flight",
+            "ground",
+            "landing",
+            "prepare",
+            "push"
+          ],
+          "minimumMargin": 23.999999999999886,
+          "scales": [
+            2
+          ],
+          "originYRange": [
+            900,
+            1102.1100385273426
+          ],
+          "maximumOriginYDeltaPer1Over60": 22.862110329610687,
+          "endPhase": "ground",
+          "endTarget": "low"
+        },
+        {
+          "start": "walk",
+          "sampleCount": 145,
+          "visualCaptures": 53,
+          "phases": [
+            "flight",
+            "ground",
+            "landing",
+            "prepare",
+            "push"
+          ],
+          "minimumMargin": 23.999999999999886,
+          "scales": [
+            2
+          ],
+          "originYRange": [
+            900,
+            1120.686199502647
+          ],
+          "maximumOriginYDeltaPer1Over60": 26.048729855157603,
+          "endPhase": "ground",
+          "endTarget": "walk"
+        }
+      ],
+      "realtimeRuns": [
+        {
+          "start": "idle",
+          "captureCount": 12,
+          "phases": [
+            "flight",
+            "ground",
+            "landing",
+            "prepare",
+            "push"
+          ],
+          "minimumMargin": 24
+        },
+        {
+          "start": "low",
+          "captureCount": 12,
+          "phases": [
+            "flight",
+            "ground",
+            "landing",
+            "prepare",
+            "push"
+          ],
+          "minimumMargin": 24
+        },
+        {
+          "start": "walk",
+          "captureCount": 12,
+          "phases": [
+            "flight",
+            "ground",
+            "landing",
+            "prepare",
+            "push"
+          ],
+          "minimumMargin": 24
+        }
+      ]
+    }
+  }
+}

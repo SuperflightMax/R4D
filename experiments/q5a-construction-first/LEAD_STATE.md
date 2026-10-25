@@ -7,6 +7,19 @@
 
 ## Текущее положение
 
+**ASSEMBLY03_FROZEN — ART_MOTION_GATE_CLOSED — READY_FOR_INDEPENDENT_TECHNICAL_AND_VISUAL_QA.** Production frozen commit: `101343caa68579aacd5e6c01b94206680c364ab7`, `Q5A-NELA-ASSEMBLY-03`. Оба существующих художника завершили адресный независимый личный re-review:
+
+- [ARTIST_MOTION_REREVIEW_ASSEMBLY03.md](ARTIST_MOTION_REREVIEW_ASSEMBLY03.md) — **ARTIST_MOTION_PASS**, AM-A1 закрыт.
+- [CONCEPT_MOTION_REREVIEW_ASSEMBLY03.md](CONCEPT_MOTION_REREVIEW_ASSEMBLY03.md) — **CONCEPT_MOTION_PASS**, CM1 закрыт.
+
+Оба PASS относятся к точной frozen assembly03 и исправленному framing/jump. Прежний полный motion review assembly02 и отрицательные verdict/evidence сохраняются историей, без ретроспективного изменения. Это закрытие художественного art/motion gate, не Technical/Visual QA PASS и не release acceptance CTO. **Technical QA и Visual QA ещё not started**; кандидат готов к их независимой проверке после отдельной выдачи CTO. QA, release, Q4A/Q2A в этом ходе не запускаются.
+
+Проверки closeout Lead: до обновления state все **1299** tracked Q5A-файлов побайтно совпали с exact frozen commit, включая production assembly/dist/art/construction, оба старых отрицательных review и всю сохранённую evidence-историю. Проверены точная версия/однозначные verdict в новых отчётах, существование всех **31** локальных Markdown-ссылок, **399/399** SHA кадров нового Asset evidence-index, ключевые CM1/AM-A1 PNG/JSON и cleanup. Landmarks Concept129/130 и Asset350 независимо сопоставлены со старыми witness JSON: совпали; mobile2824 присутствует как recipe/elapsed witness с сохранённой оговоркой об отсутствии полной исторической motor-предыстории. Существование кадров Concept step/realtime, на которые ссылаются JSON, проверено отдельно.
+
+Intentional evidence сохраняется целиком в `output/artist-motion-asset-rereview03/` и `output/artist-motion-concept-rereview03/`, без `.playwright-cli` на любом уровне. По cleanup/close evidence свои браузеры художники закрыли; Lead дополнительно подтвердил отсутствие listener5192/5193. Production не меняется, тесты/серверы/новые review/QA Lead не запускал. Ход ограничен двумя PASS, их evidence и двумя файлами состояния, отдельным commit/push.
+
+## История заморозки коррекции assembly03
+
 **ASSEMBLY03_FROZEN — BUILDER_SELF_CHECK_PASS — AWAITING_TARGETED_INDEPENDENT_PERSONAL_ARTIST_REREVIEW.** Кандидат `Q5A-NELA-ASSEMBLY-03` исправляет только CM1/AM-A1 (кадрирование 2×). База этого хода `HEAD = origin/main = 651580dbbf764879dad5f413b3272ff4cde19557`. Оба прежних отрицательных motion review и их evidence сохранены побайтно; их verdict не меняется задним числом. Technical/Visual QA **blocked/not started**, release и Q4A/Q2A не запускались.
 
 Lead лично прочитал production diff и общий `assembly/framing.js`: origin/scale вычисляются по bbox всех material vertices с padding 24 px, без ветвления по pose/tick/phase/маршруту. Прежний 1× сохранён. Подключение renderer применяется одинаково к арту, mesh, костям и полу. Изменения app/index/inputs вне framing — только номер кандидата03, controls и command semantics сохранены.
@@ -123,4 +136,4 @@ python experiments/q5a-construction-first/construction/attempts/v1/build_package
 
 ## Следующий шаг
 
-Ожидается адресный независимый личный re-review исправленного 2× jump на assembly03 обоими существующими художниками по отдельной выдаче CTO. Текущий ход только проверяет и замораживает кандидат отдельным commit/push; artist re-review, Technical/Visual QA, release, Q4A/Q2A не запускаются. QA пока blocked/not started. Прежние отрицательные review остаются историей assembly02. Внешняя публикация — отдельный release-шаг после CTO acceptance; окончательную приёмку и решение об остановке принимает CTO.
+Art/motion gate закрыт двумя независимыми PASS на frozen assembly03. Следующий шаг — независимые Technical QA и Visual QA существующими специалистами на конкретной замороженной версии по отдельной выдаче CTO. Они ещё not started; этот closeout не отправляет поручений и не запускает проверки. Прежние отрицательные review остаются историей assembly02. Внешняя публикация — отдельный release-шаг после CTO acceptance; окончательную приёмку и решение об остановке принимает CTO. Release и Q4A/Q2A не начаты.
