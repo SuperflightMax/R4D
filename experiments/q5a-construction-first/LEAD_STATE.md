@@ -7,6 +7,19 @@
 
 ## Текущее положение
 
+**ASSEMBLY02_FROZEN — MOTION_REVIEWS_CHANGES_REQUIRED — QA_BLOCKED_NOT_STARTED.** Исторический review gate относится к exact frozen commit `f86e1dccb2748b901d1e2480669347c71de464ae`, `Q5A-NELA-ASSEMBLY-02`. Оба существующих художника выполнили независимый личный просмотр движения:
+
+- [ARTIST_MOTION_REVIEW.md](ARTIST_MOTION_REVIEW.md), Asset Artist — **CHANGES_REQUIRED**, AM-A1.
+- [CONCEPT_MOTION_REVIEW.md](CONCEPT_MOTION_REVIEW.md), Concept Artist — **CHANGES_REQUIRED**, CM1.
+
+Единственное обязательное замечание обоих: в flight apex режим 2× обрезает голову/поднятые кисти на desktop и mobile, тогда как 1× сохраняет целую фигуру. Иных обязательных художественных исправлений в этих просмотрах не назначено. Это не условный PASS; motion gate остаётся открытым. Ожидается узкая коррекция Builder только кадрирования 2× по поручению CTO, без изменения арта, диапазона прыжка или махов ради сокрытия дефекта.
+
+Lead проверил exact commit в обоих отчётах, однозначность verdict, существование всех 45 локальных Markdown-ссылок, desktop/mobile repro JSON Concept (`samePose=true`, phase=flight), AM-A1 исходные кадры и совпадение всех **195/195** SHA кадров Asset по evidence-index. Concept CM1 воспроизводится после jump и 60 UI-шагов «Кадр +»; exact scripts, JSON и сопоставленные 1×/2× PNG сохранены рядом с видео и последовательностями. Полные intentional evidence сохранены в `output/artist-motion-asset/` и `output/artist-motion-concept/`; служебные `.playwright-cli` на любом уровне исключаются из commit и не удаляются.
+
+По cleanup/close evidence браузеры художников закрыты. Lead дополнительно проверил отсутствие localhost-слушателей 5187/5188. До обновления двух файлов состояния tracked diff всего Q5A против frozen commit был пуст; assembly, dist, арт, конструкция и первая попытка production не меняются этим ходом. Lead не запускал серверы, новые motion review, тесты/сборку, QA или исправления. Technical/Visual QA заблокированы до устранения замечания и повторного художественного просмотра; release, Q4A/Q2A не начаты.
+
+## История заморозки assembly02
+
 **ASSEMBLY_FROZEN — AWAITING_INDEPENDENT_PERSONAL_ARTIST_MOTION_REVIEW.** Кандидат `Q5A-NELA-ASSEMBLY-02` подготовлен Builder и проверен Lead для отдельной фиксации в Git. База этого хода: `HEAD = origin/main = a7e11f8e02d9ac552caff52dcae206d8a5f95489`. Прочитаны [ASSEMBLY.md](ASSEMBLY.md) и [SELF_CHECK.md](SELF_CHECK.md). Исправления реализации Lead не выполнял, расхождений при воспроизведении не найдено. Это заморозка кандидата, **не художественный PASS движения и не независимый QA PASS**.
 
 Три принятых SHA конструкции v4/package/validation из таблицы ниже неизменны; отдельно сверены 15 исходных текстур, 15 производных RGB, обе authored hand alpha и rig-data. Первая реальная сборка `assembly/attempts/01/` сохранена, все **30/30** файлов из snapshot совпали по SHA. Её известные дефекты и последующие существенные коррекции описаны в `assembly/attempts/01/ATTEMPT.md` и ASSEMBLY.md; архив не ремонтировался.
@@ -94,4 +107,4 @@ python experiments/q5a-construction-first/construction/attempts/v1/build_package
 
 ## Следующий шаг
 
-Ожидается независимый личный просмотр движения `Q5A-NELA-ASSEMBLY-02` существующими Asset Artist и Concept Artist на замороженной версии после отдельной выдачи CTO. Этот ход ограничен проверками, обновлением состояния и отдельным commit/push assembly; поручения на review/QA и внешнюю публикацию не выдаются. Внешняя публикация остаётся отдельным release-шагом после CTO acceptance. Все существенные attempts/corrections сохранять; последующие художественный просмотр и обе QA-проверки должны относиться к собранному поведению и известной версии. Окончательную приёмку и решение об остановке принимает CTO.
+Ожидается узкая коррекция Builder по AM-A1/CM1: кадрирование 2× на вершине прыжка, затем независимый повторный просмотр затронутого движения обоими существующими художниками на новой конкретной версии. Текущий ход сохраняет только исторические reviews/evidence/state отдельным commit/push; саму коррекцию, выдачу поручений, QA и release не запускает. Technical/Visual QA пока blocked/not started. Внешняя публикация остаётся отдельным release-шагом после CTO acceptance. Все существенные attempts/corrections сохранять; окончательную приёмку и решение об остановке принимает CTO.
