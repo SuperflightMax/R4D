@@ -1,0 +1,934 @@
+{
+  "cursor": 207,
+  "events": [
+    {
+      "sequence": 27,
+      "source": {
+        "tabId": 1
+      },
+      "method": "Network.requestWillBeSent",
+      "params": {
+        "documentURL": "http://127.0.0.1:4333/runtime/",
+        "frameId": "DEF863F760E56C4080F162538089A13A",
+        "hasUserGesture": false,
+        "initiator": {
+          "type": "other"
+        },
+        "loaderId": "ACFE9B511CF7418C861FC26D5EA5C89B",
+        "redirectHasExtraInfo": false,
+        "request": {
+          "headers": {
+            "Upgrade-Insecure-Requests": "1",
+            "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/155.0.0.0 Safari/537.36",
+            "sec-ch-ua": "\"Google Chrome\";v=\"155\", \"Chromium\";v=\"155\", \"Not(A:Brand\";v=\"24\"",
+            "sec-ch-ua-mobile": "?0",
+            "sec-ch-ua-platform": "\"Windows\""
+          },
+          "initialPriority": "VeryHigh",
+          "isSameSite": true,
+          "method": "GET",
+          "mixedContentType": "none",
+          "referrerPolicy": "strict-origin-when-cross-origin",
+          "url": "http://127.0.0.1:4333/runtime/"
+        },
+        "requestId": "ACFE9B511CF7418C861FC26D5EA5C89B",
+        "timestamp": 1164176.520597,
+        "type": "Document",
+        "wallTime": 1792955633.164525
+      }
+    },
+    {
+      "sequence": 44,
+      "source": {
+        "tabId": 1
+      },
+      "method": "Network.requestWillBeSent",
+      "params": {
+        "documentURL": "http://127.0.0.1:4333/runtime/",
+        "frameId": "DEF863F760E56C4080F162538089A13A",
+        "hasUserGesture": false,
+        "initiator": {
+          "columnNumber": 49,
+          "lineNumber": 6,
+          "type": "parser",
+          "url": "http://127.0.0.1:4333/runtime/"
+        },
+        "loaderId": "ACFE9B511CF7418C861FC26D5EA5C89B",
+        "redirectHasExtraInfo": false,
+        "renderBlockingBehavior": "Blocking",
+        "request": {
+          "headers": {
+            "Referer": "http://127.0.0.1:4333/runtime/",
+            "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/155.0.0.0 Safari/537.36",
+            "sec-ch-ua": "\"Google Chrome\";v=\"155\", \"Chromium\";v=\"155\", \"Not(A:Brand\";v=\"24\"",
+            "sec-ch-ua-mobile": "?0",
+            "sec-ch-ua-platform": "\"Windows\""
+          },
+          "initialPriority": "VeryHigh",
+          "isSameSite": true,
+          "method": "GET",
+          "mixedContentType": "none",
+          "referrerPolicy": "strict-origin-when-cross-origin",
+          "url": "http://127.0.0.1:4333/runtime/style.css"
+        },
+        "requestId": "36592.27",
+        "timestamp": 1164176.549705,
+        "type": "Stylesheet",
+        "wallTime": 1792955633.193696
+      }
+    },
+    {
+      "sequence": 45,
+      "source": {
+        "tabId": 1
+      },
+      "method": "Network.requestWillBeSent",
+      "params": {
+        "documentURL": "http://127.0.0.1:4333/runtime/",
+        "frameId": "DEF863F760E56C4080F162538089A13A",
+        "hasUserGesture": false,
+        "initiator": {
+          "columnNumber": 42,
+          "lineNumber": 22,
+          "type": "parser",
+          "url": "http://127.0.0.1:4333/runtime/"
+        },
+        "loaderId": "ACFE9B511CF7418C861FC26D5EA5C89B",
+        "redirectHasExtraInfo": false,
+        "renderBlockingBehavior": "Blocking",
+        "request": {
+          "headers": {
+            "Referer": "http://127.0.0.1:4333/runtime/",
+            "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/155.0.0.0 Safari/537.36",
+            "sec-ch-ua": "\"Google Chrome\";v=\"155\", \"Chromium\";v=\"155\", \"Not(A:Brand\";v=\"24\"",
+            "sec-ch-ua-mobile": "?0",
+            "sec-ch-ua-platform": "\"Windows\""
+          },
+          "initialPriority": "High",
+          "isSameSite": true,
+          "method": "GET",
+          "mixedContentType": "none",
+          "referrerPolicy": "strict-origin-when-cross-origin",
+          "url": "http://127.0.0.1:4333/runtime/vendor/pixi.min.js"
+        },
+        "requestId": "36592.28",
+        "timestamp": 1164176.550194,
+        "type": "Script",
+        "wallTime": 1792955633.194145
+      }
+    },
+    {
+      "sequence": 46,
+      "source": {
+        "tabId": 1
+      },
+      "method": "Network.requestWillBeSent",
+      "params": {
+        "documentURL": "http://127.0.0.1:4333/runtime/",
+        "frameId": "DEF863F760E56C4080F162538089A13A",
+        "hasUserGesture": false,
+        "initiator": {
+          "columnNumber": 45,
+          "lineNumber": 23,
+          "type": "parser",
+          "url": "http://127.0.0.1:4333/runtime/"
+        },
+        "loaderId": "ACFE9B511CF7418C861FC26D5EA5C89B",
+        "redirectHasExtraInfo": false,
+        "renderBlockingBehavior": "NonBlocking",
+        "request": {
+          "headers": {
+            "Origin": "http://127.0.0.1:4333",
+            "Referer": "http://127.0.0.1:4333/runtime/",
+            "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/155.0.0.0 Safari/537.36",
+            "sec-ch-ua": "\"Google Chrome\";v=\"155\", \"Chromium\";v=\"155\", \"Not(A:Brand\";v=\"24\"",
+            "sec-ch-ua-mobile": "?0",
+            "sec-ch-ua-platform": "\"Windows\""
+          },
+          "initialPriority": "High",
+          "isSameSite": true,
+          "method": "GET",
+          "mixedContentType": "none",
+          "referrerPolicy": "strict-origin-when-cross-origin",
+          "url": "http://127.0.0.1:4333/runtime/main.js"
+        },
+        "requestId": "36592.29",
+        "timestamp": 1164176.550339,
+        "type": "Script",
+        "wallTime": 1792955633.194285
+      }
+    },
+    {
+      "sequence": 67,
+      "source": {
+        "tabId": 1
+      },
+      "method": "Network.requestWillBeSent",
+      "params": {
+        "documentURL": "http://127.0.0.1:4333/runtime/",
+        "frameId": "DEF863F760E56C4080F162538089A13A",
+        "hasUserGesture": false,
+        "initiator": {
+          "columnNumber": 57,
+          "lineNumber": 0,
+          "type": "script",
+          "url": "http://127.0.0.1:4333/runtime/main.js"
+        },
+        "loaderId": "ACFE9B511CF7418C861FC26D5EA5C89B",
+        "redirectHasExtraInfo": false,
+        "renderBlockingBehavior": "NonBlocking",
+        "request": {
+          "headers": {
+            "Origin": "http://127.0.0.1:4333",
+            "Referer": "http://127.0.0.1:4333/runtime/main.js",
+            "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/155.0.0.0 Safari/537.36",
+            "sec-ch-ua": "\"Google Chrome\";v=\"155\", \"Chromium\";v=\"155\", \"Not(A:Brand\";v=\"24\"",
+            "sec-ch-ua-mobile": "?0",
+            "sec-ch-ua-platform": "\"Windows\""
+          },
+          "initialPriority": "High",
+          "isSameSite": true,
+          "method": "GET",
+          "mixedContentType": "none",
+          "referrerPolicy": "strict-origin-when-cross-origin",
+          "url": "http://127.0.0.1:4333/runtime/pose.js"
+        },
+        "requestId": "36592.33",
+        "timestamp": 1164176.649832,
+        "type": "Script",
+        "wallTime": 1792955633.293778
+      }
+    },
+    {
+      "sequence": 68,
+      "source": {
+        "tabId": 1
+      },
+      "method": "Network.requestWillBeSent",
+      "params": {
+        "documentURL": "http://127.0.0.1:4333/runtime/",
+        "frameId": "DEF863F760E56C4080F162538089A13A",
+        "hasUserGesture": false,
+        "initiator": {
+          "columnNumber": 21,
+          "lineNumber": 1,
+          "type": "script",
+          "url": "http://127.0.0.1:4333/runtime/main.js"
+        },
+        "loaderId": "ACFE9B511CF7418C861FC26D5EA5C89B",
+        "redirectHasExtraInfo": false,
+        "renderBlockingBehavior": "NonBlocking",
+        "request": {
+          "headers": {
+            "Origin": "http://127.0.0.1:4333",
+            "Referer": "http://127.0.0.1:4333/runtime/main.js",
+            "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/155.0.0.0 Safari/537.36",
+            "sec-ch-ua": "\"Google Chrome\";v=\"155\", \"Chromium\";v=\"155\", \"Not(A:Brand\";v=\"24\"",
+            "sec-ch-ua-mobile": "?0",
+            "sec-ch-ua-platform": "\"Windows\""
+          },
+          "initialPriority": "High",
+          "isSameSite": true,
+          "method": "GET",
+          "mixedContentType": "none",
+          "referrerPolicy": "strict-origin-when-cross-origin",
+          "url": "http://127.0.0.1:4333/runtime/motion.js"
+        },
+        "requestId": "36592.34",
+        "timestamp": 1164176.649956,
+        "type": "Script",
+        "wallTime": 1792955633.293892
+      }
+    },
+    {
+      "sequence": 83,
+      "source": {
+        "tabId": 1
+      },
+      "method": "Network.requestWillBeSent",
+      "params": {
+        "documentURL": "http://127.0.0.1:4333/runtime/",
+        "frameId": "DEF863F760E56C4080F162538089A13A",
+        "hasUserGesture": false,
+        "initiator": {
+          "stack": {
+            "callFrames": [
+              {
+                "columnNumber": 23,
+                "functionName": "loadArt",
+                "lineNumber": 16,
+                "scriptId": "9",
+                "url": "http://127.0.0.1:4333/runtime/main.js"
+              },
+              {
+                "columnNumber": 6,
+                "functionName": "",
+                "lineNumber": 69,
+                "scriptId": "9",
+                "url": "http://127.0.0.1:4333/runtime/main.js"
+              }
+            ]
+          },
+          "type": "script"
+        },
+        "loaderId": "ACFE9B511CF7418C861FC26D5EA5C89B",
+        "redirectHasExtraInfo": false,
+        "request": {
+          "headers": {
+            "Referer": "http://127.0.0.1:4333/runtime/",
+            "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/155.0.0.0 Safari/537.36",
+            "sec-ch-ua": "\"Google Chrome\";v=\"155\", \"Chromium\";v=\"155\", \"Not(A:Brand\";v=\"24\"",
+            "sec-ch-ua-mobile": "?0",
+            "sec-ch-ua-platform": "\"Windows\""
+          },
+          "initialPriority": "High",
+          "isSameSite": true,
+          "method": "GET",
+          "mixedContentType": "none",
+          "referrerPolicy": "strict-origin-when-cross-origin",
+          "url": "http://127.0.0.1:4333/runtime/art-binding.json"
+        },
+        "requestId": "36592.35",
+        "timestamp": 1164176.69607,
+        "type": "Fetch",
+        "wallTime": 1792955633.340043
+      }
+    },
+    {
+      "sequence": 93,
+      "source": {
+        "tabId": 1
+      },
+      "method": "Network.requestWillBeSent",
+      "params": {
+        "documentURL": "http://127.0.0.1:4333/runtime/",
+        "frameId": "DEF863F760E56C4080F162538089A13A",
+        "hasUserGesture": false,
+        "initiator": {
+          "stack": {
+            "callFrames": [
+              {
+                "columnNumber": 36409,
+                "functionName": "",
+                "lineNumber": 123,
+                "scriptId": "10",
+                "url": "http://127.0.0.1:4333/runtime/vendor/pixi.min.js"
+              },
+              {
+                "columnNumber": 36327,
+                "functionName": "hl",
+                "lineNumber": 123,
+                "scriptId": "10",
+                "url": "http://127.0.0.1:4333/runtime/vendor/pixi.min.js"
+              },
+              {
+                "columnNumber": 36647,
+                "functionName": "test",
+                "lineNumber": 123,
+                "scriptId": "10",
+                "url": "http://127.0.0.1:4333/runtime/vendor/pixi.min.js"
+              },
+              {
+                "columnNumber": 11247,
+                "functionName": "_detectFormats",
+                "lineNumber": 348,
+                "scriptId": "10",
+                "url": "http://127.0.0.1:4333/runtime/vendor/pixi.min.js"
+              },
+              {
+                "columnNumber": 8491,
+                "functionName": "init",
+                "lineNumber": 348,
+                "scriptId": "10",
+                "url": "http://127.0.0.1:4333/runtime/vendor/pixi.min.js"
+              },
+              {
+                "columnNumber": 8901,
+                "functionName": "load",
+                "lineNumber": 348,
+                "scriptId": "10",
+                "url": "http://127.0.0.1:4333/runtime/vendor/pixi.min.js"
+              },
+              {
+                "columnNumber": 31,
+                "functionName": "loadArt",
+                "lineNumber": 25,
+                "scriptId": "9",
+                "url": "http://127.0.0.1:4333/runtime/main.js"
+              }
+            ]
+          },
+          "type": "script"
+        },
+        "loaderId": "ACFE9B511CF7418C861FC26D5EA5C89B",
+        "redirectHasExtraInfo": false,
+        "request": {
+          "headers": {
+            "Referer": "http://127.0.0.1:4333/",
+            "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/155.0.0.0 Safari/537.36"
+          },
+          "initialPriority": "Low",
+          "isSameSite": false,
+          "method": "GET",
+          "mixedContentType": "none",
+          "referrerPolicy": "strict-origin-when-cross-origin",
+          "url": "data:image/avif;base64,AAAAIGZ0eXBhdmlmAAAAAGF2aWZtaWYxbWlhZk1BMUIAAADybWV0YQAAAAAAAAAoaGRscgAAAAAAAAAAcGljdAAAAAAAAAAAAAAAAGxpYmF2aWYAAAAADnBpdG0AAAAAAAEAAAAeaWxvYwAAAABEAAABAAEAAAABAAABGgAAAB0AAAAoaWluZgAAAAAAAQAAABppbmZlAgAAAAABAABhdjAxQ29sb3IAAAAAamlwcnAAAABLaXBjbwAAABRpc3BlAAAAAAAAAAIAAAACAAAAEHBpeGkAAAAAAwgICAAAAAxhdjFDgQ0MAAAAABNjb2xybmNseAACAAIAAYAAAAAXaXBtYQAAAAAAAAABAAEEAQKDBAAAACVtZGF0EgAKCBgANogQEAwgMg8f8D///8WfhwB8+ErK42A="
+        },
+        "requestId": "36592.36",
+        "timestamp": 1164176.71297,
+        "type": "Image",
+        "wallTime": 1792955633.357517
+      }
+    },
+    {
+      "sequence": 98,
+      "source": {
+        "tabId": 1
+      },
+      "method": "Network.requestWillBeSent",
+      "params": {
+        "documentURL": "http://127.0.0.1:4333/runtime/",
+        "frameId": "DEF863F760E56C4080F162538089A13A",
+        "hasUserGesture": false,
+        "initiator": {
+          "stack": {
+            "callFrames": [
+              {
+                "columnNumber": 36409,
+                "functionName": "",
+                "lineNumber": 123,
+                "scriptId": "10",
+                "url": "http://127.0.0.1:4333/runtime/vendor/pixi.min.js"
+              },
+              {
+                "columnNumber": 36327,
+                "functionName": "hl",
+                "lineNumber": 123,
+                "scriptId": "10",
+                "url": "http://127.0.0.1:4333/runtime/vendor/pixi.min.js"
+              },
+              {
+                "columnNumber": 38033,
+                "functionName": "test",
+                "lineNumber": 123,
+                "scriptId": "10",
+                "url": "http://127.0.0.1:4333/runtime/vendor/pixi.min.js"
+              },
+              {
+                "columnNumber": 11247,
+                "functionName": "_detectFormats",
+                "lineNumber": 348,
+                "scriptId": "10",
+                "url": "http://127.0.0.1:4333/runtime/vendor/pixi.min.js"
+              }
+            ]
+          },
+          "type": "script"
+        },
+        "loaderId": "ACFE9B511CF7418C861FC26D5EA5C89B",
+        "redirectHasExtraInfo": false,
+        "request": {
+          "headers": {
+            "Referer": "http://127.0.0.1:4333/",
+            "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/155.0.0.0 Safari/537.36"
+          },
+          "initialPriority": "Low",
+          "isSameSite": false,
+          "method": "GET",
+          "mixedContentType": "none",
+          "referrerPolicy": "strict-origin-when-cross-origin",
+          "url": "data:image/webp;base64,UklGRh4AAABXRUJQVlA4TBEAAAAvAAAAAAfQ//73v/+BiOh/AAA="
+        },
+        "requestId": "36592.37",
+        "timestamp": 1164176.714074,
+        "type": "Image",
+        "wallTime": 1792955633.358039
+      }
+    },
+    {
+      "sequence": 103,
+      "source": {
+        "tabId": 1
+      },
+      "method": "Network.requestWillBeSent",
+      "params": {
+        "documentURL": "blob:http://127.0.0.1:4333/400937a3-570d-458d-9074-2b8b49203bc2",
+        "frameId": "DEF863F760E56C4080F162538089A13A",
+        "hasUserGesture": false,
+        "initiator": {
+          "type": "other",
+          "url": "http://127.0.0.1:4333/runtime/"
+        },
+        "loaderId": "",
+        "redirectHasExtraInfo": false,
+        "request": {
+          "headers": {
+            "Accept": "*/*"
+          },
+          "initialPriority": "VeryLow",
+          "method": "GET",
+          "referrerPolicy": "strict-origin-when-cross-origin",
+          "url": "blob:http://127.0.0.1:4333/400937a3-570d-458d-9074-2b8b49203bc2"
+        },
+        "requestId": "867BEA5C2047399A50C30819E910E4ED",
+        "timestamp": 1164176.717337,
+        "type": "Script",
+        "wallTime": 1792955633.361265
+      }
+    },
+    {
+      "sequence": 104,
+      "source": {
+        "tabId": 1
+      },
+      "method": "Network.requestWillBeSent",
+      "params": {
+        "documentURL": "blob:http://127.0.0.1:4333/b62a2236-4394-426f-8947-10221ad1b98a",
+        "frameId": "DEF863F760E56C4080F162538089A13A",
+        "hasUserGesture": false,
+        "initiator": {
+          "type": "other",
+          "url": "http://127.0.0.1:4333/runtime/"
+        },
+        "loaderId": "",
+        "redirectHasExtraInfo": false,
+        "request": {
+          "headers": {
+            "Accept": "*/*"
+          },
+          "initialPriority": "VeryLow",
+          "method": "GET",
+          "referrerPolicy": "strict-origin-when-cross-origin",
+          "url": "blob:http://127.0.0.1:4333/b62a2236-4394-426f-8947-10221ad1b98a"
+        },
+        "requestId": "D6256B60428040A2D7BDC939871FA140",
+        "timestamp": 1164176.730286,
+        "type": "Script",
+        "wallTime": 1792955633.374219
+      }
+    },
+    {
+      "sequence": 117,
+      "source": {
+        "tabId": 1
+      },
+      "method": "Network.requestWillBeSent",
+      "params": {
+        "documentURL": "http://127.0.0.1:4333/runtime/",
+        "frameId": "DEF863F760E56C4080F162538089A13A",
+        "hasUserGesture": false,
+        "initiator": {
+          "type": "other"
+        },
+        "loaderId": "6C942233C047C892EA2069A2092BA870",
+        "redirectHasExtraInfo": false,
+        "request": {
+          "headers": {
+            "Upgrade-Insecure-Requests": "1",
+            "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/155.0.0.0 Safari/537.36",
+            "sec-ch-ua": "\"Google Chrome\";v=\"155\", \"Chromium\";v=\"155\", \"Not(A:Brand\";v=\"24\"",
+            "sec-ch-ua-mobile": "?0",
+            "sec-ch-ua-platform": "\"Windows\""
+          },
+          "initialPriority": "VeryHigh",
+          "isSameSite": true,
+          "method": "GET",
+          "mixedContentType": "none",
+          "referrerPolicy": "strict-origin-when-cross-origin",
+          "url": "http://127.0.0.1:4333/runtime/"
+        },
+        "requestId": "6C942233C047C892EA2069A2092BA870",
+        "timestamp": 1164336.066465,
+        "type": "Document",
+        "wallTime": 1792955792.710398
+      }
+    },
+    {
+      "sequence": 134,
+      "source": {
+        "tabId": 1
+      },
+      "method": "Network.requestWillBeSent",
+      "params": {
+        "documentURL": "http://127.0.0.1:4333/runtime/",
+        "frameId": "DEF863F760E56C4080F162538089A13A",
+        "hasUserGesture": false,
+        "initiator": {
+          "columnNumber": 49,
+          "lineNumber": 6,
+          "type": "parser",
+          "url": "http://127.0.0.1:4333/runtime/"
+        },
+        "loaderId": "6C942233C047C892EA2069A2092BA870",
+        "redirectHasExtraInfo": false,
+        "renderBlockingBehavior": "Blocking",
+        "request": {
+          "headers": {
+            "Referer": "http://127.0.0.1:4333/runtime/",
+            "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/155.0.0.0 Safari/537.36",
+            "sec-ch-ua": "\"Google Chrome\";v=\"155\", \"Chromium\";v=\"155\", \"Not(A:Brand\";v=\"24\"",
+            "sec-ch-ua-mobile": "?0",
+            "sec-ch-ua-platform": "\"Windows\""
+          },
+          "initialPriority": "VeryHigh",
+          "isSameSite": true,
+          "method": "GET",
+          "mixedContentType": "none",
+          "referrerPolicy": "strict-origin-when-cross-origin",
+          "url": "http://127.0.0.1:4333/runtime/style.css"
+        },
+        "requestId": "36592.52",
+        "timestamp": 1164336.084742,
+        "type": "Stylesheet",
+        "wallTime": 1792955792.728683
+      }
+    },
+    {
+      "sequence": 135,
+      "source": {
+        "tabId": 1
+      },
+      "method": "Network.requestWillBeSent",
+      "params": {
+        "documentURL": "http://127.0.0.1:4333/runtime/",
+        "frameId": "DEF863F760E56C4080F162538089A13A",
+        "hasUserGesture": false,
+        "initiator": {
+          "columnNumber": 42,
+          "lineNumber": 22,
+          "type": "parser",
+          "url": "http://127.0.0.1:4333/runtime/"
+        },
+        "loaderId": "6C942233C047C892EA2069A2092BA870",
+        "redirectHasExtraInfo": false,
+        "renderBlockingBehavior": "Blocking",
+        "request": {
+          "headers": {
+            "Referer": "http://127.0.0.1:4333/runtime/",
+            "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/155.0.0.0 Safari/537.36",
+            "sec-ch-ua": "\"Google Chrome\";v=\"155\", \"Chromium\";v=\"155\", \"Not(A:Brand\";v=\"24\"",
+            "sec-ch-ua-mobile": "?0",
+            "sec-ch-ua-platform": "\"Windows\""
+          },
+          "initialPriority": "High",
+          "isSameSite": true,
+          "method": "GET",
+          "mixedContentType": "none",
+          "referrerPolicy": "strict-origin-when-cross-origin",
+          "url": "http://127.0.0.1:4333/runtime/vendor/pixi.min.js"
+        },
+        "requestId": "36592.53",
+        "timestamp": 1164336.085018,
+        "type": "Script",
+        "wallTime": 1792955792.728956
+      }
+    },
+    {
+      "sequence": 136,
+      "source": {
+        "tabId": 1
+      },
+      "method": "Network.requestWillBeSent",
+      "params": {
+        "documentURL": "http://127.0.0.1:4333/runtime/",
+        "frameId": "DEF863F760E56C4080F162538089A13A",
+        "hasUserGesture": false,
+        "initiator": {
+          "columnNumber": 45,
+          "lineNumber": 23,
+          "type": "parser",
+          "url": "http://127.0.0.1:4333/runtime/"
+        },
+        "loaderId": "6C942233C047C892EA2069A2092BA870",
+        "redirectHasExtraInfo": false,
+        "renderBlockingBehavior": "NonBlocking",
+        "request": {
+          "headers": {
+            "Origin": "http://127.0.0.1:4333",
+            "Referer": "http://127.0.0.1:4333/runtime/",
+            "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/155.0.0.0 Safari/537.36",
+            "sec-ch-ua": "\"Google Chrome\";v=\"155\", \"Chromium\";v=\"155\", \"Not(A:Brand\";v=\"24\"",
+            "sec-ch-ua-mobile": "?0",
+            "sec-ch-ua-platform": "\"Windows\""
+          },
+          "initialPriority": "High",
+          "isSameSite": true,
+          "method": "GET",
+          "mixedContentType": "none",
+          "referrerPolicy": "strict-origin-when-cross-origin",
+          "url": "http://127.0.0.1:4333/runtime/main.js"
+        },
+        "requestId": "36592.54",
+        "timestamp": 1164336.08511,
+        "type": "Script",
+        "wallTime": 1792955792.729046
+      }
+    },
+    {
+      "sequence": 159,
+      "source": {
+        "tabId": 1
+      },
+      "method": "Network.requestWillBeSent",
+      "params": {
+        "documentURL": "http://127.0.0.1:4333/runtime/",
+        "frameId": "DEF863F760E56C4080F162538089A13A",
+        "hasUserGesture": false,
+        "initiator": {
+          "columnNumber": 57,
+          "lineNumber": 0,
+          "type": "script",
+          "url": "http://127.0.0.1:4333/runtime/main.js"
+        },
+        "loaderId": "6C942233C047C892EA2069A2092BA870",
+        "redirectHasExtraInfo": false,
+        "renderBlockingBehavior": "NonBlocking",
+        "request": {
+          "headers": {
+            "Origin": "http://127.0.0.1:4333",
+            "Referer": "http://127.0.0.1:4333/runtime/main.js",
+            "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/155.0.0.0 Safari/537.36",
+            "sec-ch-ua": "\"Google Chrome\";v=\"155\", \"Chromium\";v=\"155\", \"Not(A:Brand\";v=\"24\"",
+            "sec-ch-ua-mobile": "?0",
+            "sec-ch-ua-platform": "\"Windows\""
+          },
+          "initialPriority": "High",
+          "isSameSite": true,
+          "method": "GET",
+          "mixedContentType": "none",
+          "referrerPolicy": "strict-origin-when-cross-origin",
+          "url": "http://127.0.0.1:4333/runtime/pose.js"
+        },
+        "requestId": "36592.58",
+        "timestamp": 1164336.165074,
+        "type": "Script",
+        "wallTime": 1792955792.809019
+      }
+    },
+    {
+      "sequence": 160,
+      "source": {
+        "tabId": 1
+      },
+      "method": "Network.requestWillBeSent",
+      "params": {
+        "documentURL": "http://127.0.0.1:4333/runtime/",
+        "frameId": "DEF863F760E56C4080F162538089A13A",
+        "hasUserGesture": false,
+        "initiator": {
+          "columnNumber": 21,
+          "lineNumber": 1,
+          "type": "script",
+          "url": "http://127.0.0.1:4333/runtime/main.js"
+        },
+        "loaderId": "6C942233C047C892EA2069A2092BA870",
+        "redirectHasExtraInfo": false,
+        "renderBlockingBehavior": "NonBlocking",
+        "request": {
+          "headers": {
+            "Origin": "http://127.0.0.1:4333",
+            "Referer": "http://127.0.0.1:4333/runtime/main.js",
+            "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/155.0.0.0 Safari/537.36",
+            "sec-ch-ua": "\"Google Chrome\";v=\"155\", \"Chromium\";v=\"155\", \"Not(A:Brand\";v=\"24\"",
+            "sec-ch-ua-mobile": "?0",
+            "sec-ch-ua-platform": "\"Windows\""
+          },
+          "initialPriority": "High",
+          "isSameSite": true,
+          "method": "GET",
+          "mixedContentType": "none",
+          "referrerPolicy": "strict-origin-when-cross-origin",
+          "url": "http://127.0.0.1:4333/runtime/motion.js"
+        },
+        "requestId": "36592.59",
+        "timestamp": 1164336.165189,
+        "type": "Script",
+        "wallTime": 1792955792.809122
+      }
+    },
+    {
+      "sequence": 176,
+      "source": {
+        "tabId": 1
+      },
+      "method": "Network.requestWillBeSent",
+      "params": {
+        "documentURL": "http://127.0.0.1:4333/runtime/",
+        "frameId": "DEF863F760E56C4080F162538089A13A",
+        "hasUserGesture": false,
+        "initiator": {
+          "stack": {
+            "callFrames": [
+              {
+                "columnNumber": 23,
+                "functionName": "loadArt",
+                "lineNumber": 16,
+                "scriptId": "9",
+                "url": "http://127.0.0.1:4333/runtime/main.js"
+              },
+              {
+                "columnNumber": 6,
+                "functionName": "",
+                "lineNumber": 69,
+                "scriptId": "9",
+                "url": "http://127.0.0.1:4333/runtime/main.js"
+              }
+            ]
+          },
+          "type": "script"
+        },
+        "loaderId": "6C942233C047C892EA2069A2092BA870",
+        "redirectHasExtraInfo": false,
+        "request": {
+          "headers": {
+            "Referer": "http://127.0.0.1:4333/runtime/",
+            "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/155.0.0.0 Safari/537.36",
+            "sec-ch-ua": "\"Google Chrome\";v=\"155\", \"Chromium\";v=\"155\", \"Not(A:Brand\";v=\"24\"",
+            "sec-ch-ua-mobile": "?0",
+            "sec-ch-ua-platform": "\"Windows\""
+          },
+          "initialPriority": "High",
+          "isSameSite": true,
+          "method": "GET",
+          "mixedContentType": "none",
+          "referrerPolicy": "strict-origin-when-cross-origin",
+          "url": "http://127.0.0.1:4333/runtime/art-binding.json"
+        },
+        "requestId": "36592.60",
+        "timestamp": 1164336.21013,
+        "type": "Fetch",
+        "wallTime": 1792955792.854092
+      }
+    },
+    {
+      "sequence": 186,
+      "source": {
+        "tabId": 1
+      },
+      "method": "Network.requestWillBeSent",
+      "params": {
+        "documentURL": "http://127.0.0.1:4333/runtime/",
+        "frameId": "DEF863F760E56C4080F162538089A13A",
+        "hasUserGesture": false,
+        "initiator": {
+          "type": "other"
+        },
+        "loaderId": "6C942233C047C892EA2069A2092BA870",
+        "redirectHasExtraInfo": false,
+        "request": {
+          "headers": {
+            "Referer": "http://127.0.0.1:4333/",
+            "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/155.0.0.0 Safari/537.36"
+          },
+          "initialPriority": "Low",
+          "isSameSite": false,
+          "method": "GET",
+          "mixedContentType": "none",
+          "referrerPolicy": "strict-origin-when-cross-origin",
+          "url": "data:image/avif;base64,AAAAIGZ0eXBhdmlmAAAAAGF2aWZtaWYxbWlhZk1BMUIAAADybWV0YQAAAAAAAAAoaGRscgAAAAAAAAAAcGljdAAAAAAAAAAAAAAAAGxpYmF2aWYAAAAADnBpdG0AAAAAAAEAAAAeaWxvYwAAAABEAAABAAEAAAABAAABGgAAAB0AAAAoaWluZgAAAAAAAQAAABppbmZlAgAAAAABAABhdjAxQ29sb3IAAAAAamlwcnAAAABLaXBjbwAAABRpc3BlAAAAAAAAAAIAAAACAAAAEHBpeGkAAAAAAwgICAAAAAxhdjFDgQ0MAAAAABNjb2xybmNseAACAAIAAYAAAAAXaXBtYQAAAAAAAAABAAEEAQKDBAAAACVtZGF0EgAKCBgANogQEAwgMg8f8D///8WfhwB8+ErK42A="
+        },
+        "requestId": "36592.61",
+        "timestamp": 1164336.225897,
+        "type": "Image",
+        "wallTime": 1792955792.869839
+      }
+    },
+    {
+      "sequence": 191,
+      "source": {
+        "tabId": 1
+      },
+      "method": "Network.requestWillBeSent",
+      "params": {
+        "documentURL": "http://127.0.0.1:4333/runtime/",
+        "frameId": "DEF863F760E56C4080F162538089A13A",
+        "hasUserGesture": false,
+        "initiator": {
+          "type": "other"
+        },
+        "loaderId": "6C942233C047C892EA2069A2092BA870",
+        "redirectHasExtraInfo": false,
+        "request": {
+          "headers": {
+            "Referer": "http://127.0.0.1:4333/",
+            "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/155.0.0.0 Safari/537.36"
+          },
+          "initialPriority": "Low",
+          "isSameSite": false,
+          "method": "GET",
+          "mixedContentType": "none",
+          "referrerPolicy": "strict-origin-when-cross-origin",
+          "url": "data:image/webp;base64,UklGRh4AAABXRUJQVlA4TBEAAAAvAAAAAAfQ//73v/+BiOh/AAA="
+        },
+        "requestId": "36592.62",
+        "timestamp": 1164336.226395,
+        "type": "Image",
+        "wallTime": 1792955792.870345
+      }
+    },
+    {
+      "sequence": 196,
+      "source": {
+        "tabId": 1
+      },
+      "method": "Network.requestWillBeSent",
+      "params": {
+        "documentURL": "blob:http://127.0.0.1:4333/92803132-9457-4053-94c6-6ffb2e1a3f14",
+        "frameId": "DEF863F760E56C4080F162538089A13A",
+        "hasUserGesture": false,
+        "initiator": {
+          "type": "other",
+          "url": "http://127.0.0.1:4333/runtime/"
+        },
+        "loaderId": "",
+        "redirectHasExtraInfo": false,
+        "request": {
+          "headers": {
+            "Accept": "*/*"
+          },
+          "initialPriority": "VeryLow",
+          "method": "GET",
+          "referrerPolicy": "strict-origin-when-cross-origin",
+          "url": "blob:http://127.0.0.1:4333/92803132-9457-4053-94c6-6ffb2e1a3f14"
+        },
+        "requestId": "B64DA183E7B5A0E632E9697ADC919D49",
+        "timestamp": 1164336.230613,
+        "type": "Script",
+        "wallTime": 1792955792.874539
+      }
+    },
+    {
+      "sequence": 197,
+      "source": {
+        "tabId": 1
+      },
+      "method": "Network.requestWillBeSent",
+      "params": {
+        "documentURL": "blob:http://127.0.0.1:4333/a09b5904-dfd8-4d1b-936e-25a14c9f1a83",
+        "frameId": "DEF863F760E56C4080F162538089A13A",
+        "hasUserGesture": false,
+        "initiator": {
+          "type": "other",
+          "url": "http://127.0.0.1:4333/runtime/"
+        },
+        "loaderId": "",
+        "redirectHasExtraInfo": false,
+        "request": {
+          "headers": {
+            "Accept": "*/*"
+          },
+          "initialPriority": "VeryLow",
+          "method": "GET",
+          "referrerPolicy": "strict-origin-when-cross-origin",
+          "url": "blob:http://127.0.0.1:4333/a09b5904-dfd8-4d1b-936e-25a14c9f1a83"
+        },
+        "requestId": "0D5BB03E7B13A678680AD82C15C5464E",
+        "timestamp": 1164336.240724,
+        "type": "Script",
+        "wallTime": 1792955792.884651
+      }
+    }
+  ],
+  "hasMore": false,
+  "truncated": false
+}
