@@ -1,0 +1,12 @@
+Use case: precise-object-edit
+Asset type: one authorized component-level lighting correction of F1 environment/floor plate v2
+
+Input image role: Image 1 is the F1 plate edit target. It is not a style reference and must not be globally redesigned.
+
+Primary request: Change ONLY the lighting painted on the continuous playable limestone floor. Remove the large strong diagonal baked architectural shadow that crosses from the upper center/right through the right-middle of the playable plane. Restore natural directly sunlit pale-limestone color, texture and slab seams underneath it so the entire playable plane has one compatible bright direct-lit state. Also remove any other strong isolated baked cast-shadow patch that intersects any of the four frozen control-anchor zones at p/q: (0.42,0.338), (0.62,0.453), (0.35,0.567), (0.58,0.681). Very gentle broad ambient value variation is allowed, but no hard or high-contrast shadow may cross those zones.
+
+Invariants — preserve exactly: square framing; camera and perspective; full architecture and its silhouettes; distant astrolabe mechanism; towers, balustrades, stairs, walls, foreground receiving niches and their geometry; playable-floor boundaries and far/near seams; every slab line and material scale except where texture must be reconstructed beneath the removed shadow; blue/brass/limestone palette; image sharpness, finish and grain; upper-left sunlight on architecture. Keep the already marker-free floor empty.
+
+Do not change: crop, canvas, camera, perspective, architecture, theme, material design, floor quadrilateral, rows, markers, master, shadow layer, foreground, sky or background. Do not add drums, objects, bases, floor ornaments, clean rectangular patches, text, UI, ball, colliders or watermark. Do not globally relight or redraw the scene.
+
+Output intent: the same finished F1 environment plate with architecture unchanged and a calm, continuous, predominantly direct-lit playable floor that can receive all four bright control instances without a lighting discontinuity.
