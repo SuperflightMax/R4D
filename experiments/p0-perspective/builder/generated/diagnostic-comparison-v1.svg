@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1536" height="1536" viewBox="0 0 1536 1536">
+  <rect width="1536" height="1536" fill="#f8e8c7"/>
+  <style>text{font-family:Segoe UI,Arial,sans-serif;fill:#3b211b}.h{font-size:34px;font-weight:700}.s{font-size:22px}.m{font-size:20px;font-family:Consolas,monospace}</style>
+  <text class="h" x="52" y="62">P0 v1 · selected 2.5D vs strict homography</text>
+  <text class="s" x="52" y="102">Same four corners; different intermediate depth law. Homography remains diagnostic only.</text>
+  <text class="h" x="210" y="160">Selected 2.5D</text><text class="h" x="980" y="160">Strict homography</text>
+  <polygon points="172.80,380.84 595.20,380.84 702.72,780.20 65.28,780.20" fill="#efd197" stroke="#713b31" stroke-width="6"/><g stroke="#4d9f98" stroke-width="4" stroke-dasharray="12 10"><line x1="155.60" y1="444.74" x2="612.40" y2="444.74"/><line x1="131.94" y1="532.60" x2="636.06" y2="532.60"/><line x1="108.29" y1="620.46" x2="659.71" y2="620.46"/><line x1="84.63" y1="708.32" x2="683.37" y2="708.32"/></g><polygon points="940.80,380.84 1363.20,380.84 1470.72,780.20 833.28,780.20" fill="#efd197" stroke="#713b31" stroke-width="6"/><g stroke="#4d9f98" stroke-width="4" stroke-dasharray="12 10"><line x1="928.75" y1="425.60" x2="1375.25" y2="425.60"/><line x1="909.74" y1="496.19" x2="1394.26" y2="496.19"/><line x1="887.20" y1="579.92" x2="1416.80" y2="579.92"/><line x1="860.03" y1="680.83" x2="1443.97" y2="680.83"/></g>
+  <rect x="42" y="1000" width="700" height="430" rx="24" fill="#fff5dc" stroke="#9e674a" stroke-width="4"/>
+  <text class="h" x="76" y="1050">Selected object rule</text><text class="m" x="76" y="1100">S(z) = 0.91 + 0.18z</text>
+  <text class="m" x="76" y="1150">field near/far = 1.509</text><text class="m" x="76" y="1200">object near/far = 1.198</text>
+  <text class="s" x="76" y="1260">The weaker object scale matches the illustrated language</text><text class="s" x="76" y="1292">without claiming a physically exact recovered camera.</text>
+  <rect x="790" y="1000" width="704" height="430" rx="24" fill="#fff5dc" stroke="#9e674a" stroke-width="4"/>
+  <text class="h" x="825" y="1050">Explicit comparison vector</text><g class="m"><text x="825" y="1080">z 0.16 · selected 913.61px / strict 893px · Δ -20.61px</text><text x="825" y="1130">z 0.38 · selected 1008.23px / strict 969.02px · Δ -39.21px</text><text x="825" y="1180">z 0.60 · selected 1102.85px / strict 1059.19px · Δ -43.66px</text><text x="825" y="1230">z 0.82 · selected 1197.47px / strict 1167.86px · Δ -29.6px</text></g>
+  <text class="s" x="825" y="1320">No aggregate score. Each difference stays visible.</text>
+</svg>

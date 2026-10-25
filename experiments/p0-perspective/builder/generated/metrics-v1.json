@@ -1,0 +1,180 @@
+{
+  "schema": "r4d.p0.builder-metrics.v1",
+  "sourceModelSchema": "r4d.p0.perspective-model.v0.1",
+  "sourceModelSha256": "48b9421d50e963141821d43fabb0c3872be97cb34c5c13711b23bd5fe2349fd2",
+  "sourceImage": {
+    "file": "03-sun-temple.jpg",
+    "readOnlyPath": "K:\\Agents\\R4D\\Assets\\perspective\\03-sun-temple.jpg",
+    "sha256": "f5cfa2bbe8e4b49ecbc0f4c7a0cee99842b182b56ae495979153b8fc9ff86e32",
+    "widthPx": 1536,
+    "heightPx": 1536
+  },
+  "provenance": {
+    "base": "e5892fbea71fbbfeb9f22e6a18f0f788cf9a1449",
+    "research": "627a9feb33cc6fdc8e63738ada13577752b9bf4a",
+    "concept": "d38139573648f097bd04e1c833ffff9be467ff71",
+    "visualQaRubric": "21150e583311e8688146a27fa48aaa8c41c8aaa8"
+  },
+  "selectedModel": {
+    "type": "ruled-trapezoid-with-independent-weak-depth-scale",
+    "claim": "deterministic 2.5D composition reference; not exact camera recovery",
+    "fieldQuadNormalizedClockwise": [
+      [
+        0.225,
+        0.255
+      ],
+      [
+        0.775,
+        0.255
+      ],
+      [
+        0.915,
+        0.775
+      ],
+      [
+        0.085,
+        0.775
+      ]
+    ],
+    "fieldQuadPxClockwise": [
+      [
+        345.6,
+        391.68
+      ],
+      [
+        1190.4,
+        391.68
+      ],
+      [
+        1405.44,
+        1190.4
+      ],
+      [
+        130.56,
+        1190.4
+      ]
+    ],
+    "virtualVanishingPointPx": [
+      768,
+      -1177.23
+    ],
+    "objectScale": {
+      "intercept": 0.91,
+      "slope": 0.18
+    },
+    "nearToFarFieldWidthRatio": 1.5090909091,
+    "nearToFarObjectScaleRatio": 1.1978021978
+  },
+  "comparison": {
+    "purpose": "diagnostic vector only; no opaque aggregate score",
+    "rows": [
+      {
+        "z": 0.16,
+        "selected": {
+          "yPx": 519.48,
+          "widthPx": 913.61,
+          "objectScale": 0.9388
+        },
+        "strictHomography": {
+          "yPx": 481.2,
+          "widthPx": 893,
+          "impliedRelativeScaleToMid": 0.8788
+        },
+        "delta": {
+          "yPx": -38.28,
+          "fieldWidthPx": -20.61
+        }
+      },
+      {
+        "z": 0.38,
+        "selected": {
+          "yPx": 695.19,
+          "widthPx": 1008.23,
+          "objectScale": 0.9784
+        },
+        "strictHomography": {
+          "yPx": 622.38,
+          "widthPx": 969.02,
+          "impliedRelativeScaleToMid": 0.9536
+        },
+        "delta": {
+          "yPx": -72.82,
+          "fieldWidthPx": -39.21
+        }
+      },
+      {
+        "z": 0.6,
+        "selected": {
+          "yPx": 870.91,
+          "widthPx": 1102.85,
+          "objectScale": 1.018
+        },
+        "strictHomography": {
+          "yPx": 789.83,
+          "widthPx": 1059.19,
+          "impliedRelativeScaleToMid": 1.0423
+        },
+        "delta": {
+          "yPx": -81.08,
+          "fieldWidthPx": -43.66
+        }
+      },
+      {
+        "z": 0.82,
+        "selected": {
+          "yPx": 1046.63,
+          "widthPx": 1197.47,
+          "objectScale": 1.0576
+        },
+        "strictHomography": {
+          "yPx": 991.65,
+          "widthPx": 1167.86,
+          "impliedRelativeScaleToMid": 1.1492
+        },
+        "delta": {
+          "yPx": -54.98,
+          "fieldWidthPx": -29.6
+        }
+      }
+    ]
+  },
+  "tolerances": {
+    "finalAspectRatio": [
+      1,
+      1
+    ],
+    "centerOffsetMaxNormalizedX": 0.02,
+    "farEdgeYTarget": 0.255,
+    "nearEdgeYTarget": 0.775,
+    "edgeYMaxAbsError": 0.025,
+    "cornerMaxErrorFrameDiagonal": 0.035,
+    "cornerRmsMaxErrorFrameDiagonal": 0.025,
+    "nearToFarFieldWidthTarget": 1.5090909091,
+    "nearToFarFieldWidthRange": [
+      1.4,
+      1.62
+    ],
+    "sideGuideMaxDeviationNormalizedX": 0.02,
+    "objectScaleSlopeTarget": 0.18,
+    "objectScaleSlopeRange": [
+      0.1,
+      0.26
+    ],
+    "objectNearToFarRatioRange": [
+      1.11,
+      1.3
+    ],
+    "objectDimensionRelativeErrorMax": 0.08,
+    "baseAnchorErrorMaxNormalizedY": 0.015,
+    "verticalAngleErrorMaxDeg": 3,
+    "recedingEdgeMedianAngleErrorMaxDeg": 6
+  },
+  "exclusions": [
+    "exact recovery of the source camera",
+    "P1 collider mapping",
+    "physics",
+    "ball",
+    "sim-core",
+    "claims about generator reproducibility before the P0 generation series"
+  ]
+}
