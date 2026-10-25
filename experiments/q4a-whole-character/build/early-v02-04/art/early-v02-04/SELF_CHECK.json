@@ -1,0 +1,71 @@
+{
+  "reference": "EVERY alpha>=1 pixel of immutable cycle02 garment PNG; observed v02 RGBA restored exactly outside existing arm-occlusion masks",
+  "referenceCellCount": 27681,
+  "referenceOpaque128Count": 26914,
+  "sourceObservedCount": 18705,
+  "sourceOccludedExistingRepairCount": 8976,
+  "unassigned": 0,
+  "duplicateVisibleOwner": 0,
+  "manualTraceFringeAssignedToNearestCurvedRegion": 1247,
+  "nearHem592757": {
+    "inReference": true,
+    "visibleOwner": "nearFlap"
+  },
+  "sourceObservedPixelMutation": {
+    "differentPixels": 0,
+    "maxRGBAChannelDifference": [
+      0,
+      0,
+      0,
+      0
+    ]
+  },
+  "visibleOnlyCompositionVsReference": {
+    "differentPixels": 0,
+    "maxRGBAChannelDifference": [
+      0,
+      0,
+      0,
+      0
+    ]
+  },
+  "ordinarySourceOverWithHiddenVsReference": {
+    "differentPixels": 3015,
+    "maxRGBAChannelDifference": [
+      0,
+      0,
+      0,
+      5
+    ]
+  },
+  "hiddenCopies": {
+    "nearFlap": 1654,
+    "farFlap": 1374,
+    "waistSeat": 0
+  },
+  "notes": [
+    "Coverage and visible-only composition are separate from ordinary source-over alpha accumulation.",
+    "Hidden reserves use existing covered cloth interior alpha>=250; exposed fuzzy edge remains solely on its visible owner.",
+    "No alpha/source correction, margin removal or special renderer added to force byte equality.",
+    "This is source-rest diagnostic, not the transformed neutral or motion PASS.",
+    "Garment-reference completeness inherits cycle02 semantic mask; no cell from it is excluded. It is not an independent pixel-perfect segmentation audit of the original illustration."
+  ],
+  "compositedRGB_light": {
+    "differentPixels": 3015,
+    "maxRGBAChannelDifference": [
+      4,
+      4,
+      4,
+      0
+    ]
+  },
+  "compositedRGB_dark": {
+    "differentPixels": 1682,
+    "maxRGBAChannelDifference": [
+      1,
+      1,
+      1,
+      0
+    ]
+  }
+}

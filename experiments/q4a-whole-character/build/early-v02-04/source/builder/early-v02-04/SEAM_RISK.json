@@ -1,0 +1,480 @@
+{
+  "scope": "agreement-only deep-low seam risk; no construction or full determinant gate",
+  "model": "one affine per flap, exactly 2 root anchors + 1 thigh hem anchor; no alternative tried",
+  "availableMaterialStrip": {
+    "id": "flap_under_waist",
+    "availableSourceStrip": [
+      [
+        450,
+        600
+      ],
+      [
+        461,
+        597
+      ],
+      [
+        474,
+        594
+      ],
+      [
+        489,
+        592
+      ],
+      [
+        502,
+        591
+      ],
+      [
+        522,
+        592
+      ],
+      [
+        544,
+        594
+      ],
+      [
+        564,
+        596
+      ],
+      [
+        582,
+        599
+      ],
+      [
+        598,
+        603
+      ],
+      [
+        608,
+        607
+      ],
+      [
+        618,
+        611
+      ],
+      [
+        625,
+        614
+      ],
+      [
+        625,
+        626
+      ],
+      [
+        618,
+        623
+      ],
+      [
+        608,
+        619
+      ],
+      [
+        598,
+        615
+      ],
+      [
+        582,
+        611
+      ],
+      [
+        564,
+        608
+      ],
+      [
+        544,
+        606
+      ],
+      [
+        522,
+        604
+      ],
+      [
+        502,
+        603
+      ],
+      [
+        489,
+        604
+      ],
+      [
+        474,
+        606
+      ],
+      [
+        461,
+        609
+      ],
+      [
+        450,
+        612
+      ]
+    ],
+    "sourceDepthPixels": 12,
+    "provenance": "same existing source/repair cloth pixels inside source silhouette",
+    "neutralOccluder": "waistSeat",
+    "drawFlapsBelowWaist": true,
+    "sufficiency": "UNPROVEN; two root anchors fix the attachment chord, not every point of the curved edge"
+  },
+  "observedLimit": "two anchors fix their straight line, not the whole traced curved attachment",
+  "panels": {
+    "near": {
+      "chosenSourceAnchors": [
+        [
+          452,
+          613
+        ],
+        [
+          598,
+          615
+        ],
+        [
+          592,
+          757
+        ]
+      ],
+      "targetAnchors": [
+        [
+          323.03000000005386,
+          898.0824629255014
+        ],
+        [
+          469.03000000005386,
+          900.0824629255014
+        ],
+        [
+          482.70801374242836,
+          923.6075026385174
+        ]
+      ],
+      "matrix2x3": [
+        [
+          0.9981027753815682,
+          0.13849739714552065,
+          -213.01135892261908
+        ],
+        [
+          0.011422576194272225,
+          0.16615193781818038,
+          791.0683206031457
+        ]
+      ],
+      "determinantDeepLow": 0.1642547131997485,
+      "attachmentCurve": [
+        {
+          "source": [
+            450,
+            612
+          ],
+          "target": [
+            320.8952970521453,
+            897.8934658352946
+          ],
+          "rootTarget": [
+            321.03000000005386,
+            897.0824629255014
+          ],
+          "deltaFromRoot": [
+            -0.13470294790857906,
+            0.8110029097931601
+          ],
+          "distanceFromFixedAnchorLine": -0.972511496915214
+        },
+        {
+          "source": [
+            461,
+            609
+          ],
+          "target": [
+            331.4589353899059,
+            897.520658359977
+          ],
+          "rootTarget": [
+            332.03000000005386,
+            894.0824629255014
+          ],
+          "deltaFromRoot": [
+            -0.571064610147971,
+            3.438195434475574
+          ],
+          "distanceFromFixedAnchorLine": -4.122900853119428
+        },
+        {
+          "source": [
+            474,
+            606
+          ],
+          "target": [
+            344.0187792784298,
+            897.1706960370481
+          ],
+          "rootTarget": [
+            345.03000000005386,
+            891.0824629255014
+          ],
+          "deltaFromRoot": [
+            -1.0112207216240563,
+            6.088233111546629
+          ],
+          "distanceFromFixedAnchorLine": -7.300684899377592
+        },
+        {
+          "source": [
+            489,
+            604
+          ],
+          "target": [
+            358.71332611486224,
+            897.0097308043257
+          ],
+          "rootTarget": [
+            360.03000000005386,
+            889.0824629255014
+          ],
+          "deltaFromRoot": [
+            -1.3166738851916193,
+            7.927267878824296
+          ],
+          "distanceFromFixedAnchorLine": -9.505957448720542
+        },
+        {
+          "source": [
+            502,
+            603
+          ],
+          "target": [
+            371.55016479767716,
+            896.9920723570332
+          ],
+          "rootTarget": [
+            373.03000000005386,
+            888.0824629255014
+          ],
+          "deltaFromRoot": [
+            -1.4798352023767052,
+            8.909609431531749
+          ],
+          "distanceFromFixedAnchorLine": -10.683929121040379
+        },
+        {
+          "source": [
+            522,
+            604
+          ],
+          "target": [
+            391.65071770245396,
+            897.3866758187368
+          ],
+          "rootTarget": [
+            393.03000000005386,
+            889.0824629255014
+          ],
+          "deltaFromRoot": [
+            -1.3792822975999002,
+            8.30421289323533
+          ],
+          "distanceFromFixedAnchorLine": -9.957969834610712
+        },
+        {
+          "source": [
+            544,
+            606
+          ],
+          "target": [
+            413.8859735551396,
+            897.9702763706471
+          ],
+          "rootTarget": [
+            415.03000000005386,
+            891.0824629255014
+          ],
+          "deltaFromRoot": [
+            -1.1440264449142319,
+            6.887813445145639
+          ],
+          "distanceFromFixedAnchorLine": -8.25949905126583
+        },
+        {
+          "source": [
+            564,
+            608
+          ],
+          "target": [
+            434.125023857062,
+            898.531031770169
+          ],
+          "rootTarget": [
+            435.03000000005386,
+            893.0824629255014
+          ],
+          "deltaFromRoot": [
+            -0.9049761429918703,
+            5.448568844667534
+          ],
+          "distanceFromFixedAnchorLine": -6.5336335778670005
+        },
+        {
+          "source": [
+            582,
+            611
+          ],
+          "target": [
+            452.5063660053667,
+            899.2350939551204
+          ],
+          "rootTarget": [
+            453.03000000005386,
+            896.0824629255014
+          ],
+          "deltaFromRoot": [
+            -0.5236339946871453,
+            3.1526310296189877
+          ],
+          "distanceFromFixedAnchorLine": -3.7804672274450573
+        },
+        {
+          "source": [
+            598,
+            615
+          ],
+          "target": [
+            469.0300000000539,
+            900.0824629255014
+          ],
+          "rootTarget": [
+            469.03000000005386,
+            900.0824629255014
+          ],
+          "deltaFromRoot": [
+            5.684341886080802e-14,
+            0.0
+          ],
+          "distanceFromFixedAnchorLine": 0.0
+        }
+      ],
+      "maxAttachmentDisplacementPx": 9.031669416482911
+    },
+    "far": {
+      "chosenSourceAnchors": [
+        [
+          598,
+          615
+        ],
+        [
+          625,
+          626
+        ],
+        [
+          634,
+          758
+        ]
+      ],
+      "targetAnchors": [
+        [
+          469.03000000005386,
+          900.0824629255014
+        ],
+        [
+          496.03000000005386,
+          911.0824629255014
+        ],
+        [
+          523.6824259136158,
+          931.6247076843118
+        ]
+      ],
+      "matrix2x3": [
+        [
+          0.9407859494807554,
+          0.1453435785472362,
+          -182.94629859598822
+        ],
+        [
+          0.3538341436228281,
+          0.13149801110761286,
+          607.6183682078682
+        ]
+      ],
+      "determinantDeepLow": 0.07228396058836793,
+      "attachmentCurve": [
+        {
+          "source": [
+            598,
+            615
+          ],
+          "target": [
+            469.03000000005386,
+            900.0824629255013
+          ],
+          "rootTarget": [
+            469.03000000005386,
+            900.0824629255014
+          ],
+          "deltaFromRoot": [
+            0.0,
+            -1.1368683772161603e-13
+          ],
+          "distanceFromFixedAnchorLine": 0.0
+        },
+        {
+          "source": [
+            608,
+            619
+          ],
+          "target": [
+            479.01923380905043,
+            904.1467964061601
+          ],
+          "rootTarget": [
+            479.03000000005386,
+            904.0824629255014
+          ],
+          "deltaFromRoot": [
+            -0.010766191003426684,
+            0.06433348065866085
+          ],
+          "distanceFromFixedAnchorLine": -0.06859943405700354
+        },
+        {
+          "source": [
+            618,
+            623
+          ],
+          "target": [
+            489.0084676180469,
+            908.2111298868188
+          ],
+          "rootTarget": [
+            489.03000000005386,
+            908.0824629255014
+          ],
+          "deltaFromRoot": [
+            -0.021532382006967055,
+            0.1286669613173217
+          ],
+          "distanceFromFixedAnchorLine": -0.13719886811400708
+        },
+        {
+          "source": [
+            625,
+            626
+          ],
+          "target": [
+            496.03000000005386,
+            911.0824629255014
+          ],
+          "rootTarget": [
+            496.03000000005386,
+            911.0824629255014
+          ],
+          "deltaFromRoot": [
+            0.0,
+            0.0
+          ],
+          "distanceFromFixedAnchorLine": 0.0
+        }
+      ],
+      "maxAttachmentDisplacementPx": 0.13045623944268483
+    }
+  },
+  "actualAlphaOcclusionMeasured": false
+}

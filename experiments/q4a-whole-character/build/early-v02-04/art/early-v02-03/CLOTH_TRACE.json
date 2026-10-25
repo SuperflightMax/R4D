@@ -1,0 +1,817 @@
+{
+  "stage": "A_TRACE_FOR_BUILDER_AGREEMENT_ONLY",
+  "source": "source/whole-v02.png",
+  "sourceSize": [
+    1024,
+    1536
+  ],
+  "referenceOnly": "repairs/torso-under-arms-v01.png",
+  "coordinates": "original source pixels; x right y down",
+  "curveType": "manual_piecewise_linear_source_trace_not_vertical_threshold",
+  "curves": {
+    "waist_back_visible": {
+      "points": [
+        [
+          450,
+          600
+        ],
+        [
+          461,
+          597
+        ],
+        [
+          474,
+          594
+        ],
+        [
+          489,
+          592
+        ],
+        [
+          502,
+          591
+        ]
+      ],
+      "owner": "near",
+      "observation": "visible_v02"
+    },
+    "waist_occluded": {
+      "points": [
+        [
+          502,
+          591
+        ],
+        [
+          522,
+          592
+        ],
+        [
+          544,
+          594
+        ],
+        [
+          564,
+          596
+        ],
+        [
+          582,
+          599
+        ],
+        [
+          598,
+          603
+        ]
+      ],
+      "owner": "near",
+      "observation": "occluded_v02_existing_repair_reference"
+    },
+    "waist_front_visible": {
+      "points": [
+        [
+          598,
+          603
+        ],
+        [
+          608,
+          607
+        ],
+        [
+          618,
+          611
+        ],
+        [
+          625,
+          614
+        ]
+      ],
+      "owner": "far",
+      "observation": "visible_v02_with_partial_arm_occlusion"
+    },
+    "original_center_seam": {
+      "points": [
+        [
+          522,
+          598
+        ],
+        [
+          524,
+          615
+        ],
+        [
+          525,
+          633
+        ],
+        [
+          525,
+          651
+        ],
+        [
+          524,
+          670
+        ],
+        [
+          522,
+          687
+        ],
+        [
+          520,
+          700
+        ]
+      ],
+      "owner": "near",
+      "observation": "upper_occluded_below_633_visible_v02",
+      "role": "internal_drawn_seam_ending_at_near_side_slit_NOT_near_far_partition",
+      "segments": [
+        {
+          "indices": [
+            0,
+            2
+          ],
+          "evidence": "occluded_v02_existing_repair_reference"
+        },
+        {
+          "indices": [
+            2,
+            6
+          ],
+          "evidence": "visible_v02"
+        }
+      ]
+    },
+    "near_back_side": {
+      "points": [
+        [
+          450,
+          600
+        ],
+        [
+          444,
+          613
+        ],
+        [
+          439,
+          628
+        ],
+        [
+          438,
+          646
+        ],
+        [
+          439,
+          665
+        ],
+        [
+          440,
+          684
+        ],
+        [
+          443,
+          701
+        ],
+        [
+          446,
+          715
+        ],
+        [
+          444,
+          733
+        ],
+        [
+          442,
+          750
+        ]
+      ],
+      "owner": "near",
+      "observation": "visible_v02_except_small_far_hand_contact"
+    },
+    "near_hem_skin_boundary": {
+      "points": [
+        [
+          446,
+          751
+        ],
+        [
+          460,
+          748
+        ],
+        [
+          475,
+          744
+        ],
+        [
+          489,
+          739
+        ],
+        [
+          501,
+          733
+        ],
+        [
+          510,
+          723
+        ],
+        [
+          516,
+          712
+        ],
+        [
+          520,
+          700
+        ],
+        [
+          524,
+          711
+        ],
+        [
+          531,
+          720
+        ],
+        [
+          540,
+          728
+        ],
+        [
+          553,
+          733
+        ],
+        [
+          568,
+          737
+        ],
+        [
+          583,
+          741
+        ],
+        [
+          594,
+          746
+        ]
+      ],
+      "owner": "near",
+      "observation": "visible_v02; front_end_partial_arm_occlusion"
+    },
+    "near_back_fold_lip": {
+      "points": [
+        [
+          442,
+          750
+        ],
+        [
+          443,
+          754
+        ],
+        [
+          449,
+          757
+        ],
+        [
+          458,
+          759
+        ]
+      ],
+      "owner": "near",
+      "observation": "visible_v02",
+      "role": "outer_fold_not_separate_panel"
+    },
+    "near_front_fold_lip": {
+      "points": [
+        [
+          594,
+          746
+        ],
+        [
+          598,
+          750
+        ],
+        [
+          598,
+          754
+        ],
+        [
+          592,
+          757
+        ]
+      ],
+      "owner": "near",
+      "observation": "visible_v02",
+      "role": "nearHem_anchor_inside_front_fold"
+    },
+    "far_front_side": {
+      "points": [
+        [
+          625,
+          614
+        ],
+        [
+          625,
+          633
+        ],
+        [
+          628,
+          654
+        ],
+        [
+          631,
+          676
+        ],
+        [
+          632,
+          698
+        ],
+        [
+          633,
+          721
+        ],
+        [
+          636,
+          741
+        ],
+        [
+          638,
+          754
+        ]
+      ],
+      "owner": "far",
+      "observation": "mostly_occluded_v02_existing_repair_reference"
+    },
+    "far_hem": {
+      "points": [
+        [
+          596,
+          765
+        ],
+        [
+          607,
+          763
+        ],
+        [
+          618,
+          761
+        ],
+        [
+          630,
+          758
+        ],
+        [
+          638,
+          754
+        ]
+      ],
+      "owner": "far",
+      "observation": "left_portion_visible_v02_remainder_occluded_existing_repair",
+      "segments": [
+        {
+          "indices": [
+            0,
+            1
+          ],
+          "evidence": "visible_v02"
+        },
+        {
+          "indices": [
+            1,
+            4
+          ],
+          "evidence": "occluded_v02_existing_repair_reference"
+        }
+      ]
+    },
+    "panel_separation_proposal": {
+      "points": [
+        [
+          598,
+          603
+        ],
+        [
+          605,
+          615
+        ],
+        [
+          609,
+          630
+        ],
+        [
+          610,
+          646
+        ],
+        [
+          610,
+          664
+        ],
+        [
+          608,
+          682
+        ],
+        [
+          604,
+          701
+        ],
+        [
+          600,
+          720
+        ],
+        [
+          602,
+          736
+        ],
+        [
+          603,
+          748
+        ],
+        [
+          600,
+          757
+        ],
+        [
+          592,
+          757
+        ]
+      ],
+      "owner": "near_front_edge_far_hidden_underlap",
+      "observation": "inferred_occlusion_boundary_supported_by_existing_repair_NOT_fully_observed_v02",
+      "role": "curved_panel_boundary_to_agree_with_Builder"
+    }
+  },
+  "anchors": {
+    "nearHem": {
+      "point": [
+        592,
+        757
+      ],
+      "owner": "near",
+      "locked": true
+    },
+    "nearSlitApex": {
+      "point": [
+        520,
+        700
+      ],
+      "owner": "near"
+    },
+    "nearHip": {
+      "point": [
+        525,
+        685
+      ],
+      "owner": "near"
+    },
+    "farHip": {
+      "point": [
+        570,
+        690
+      ],
+      "owner": "far"
+    }
+  },
+  "proposedPanels": {
+    "near": {
+      "boundary": [
+        [
+          450,
+          600
+        ],
+        [
+          461,
+          597
+        ],
+        [
+          474,
+          594
+        ],
+        [
+          489,
+          592
+        ],
+        [
+          502,
+          591
+        ],
+        [
+          522,
+          592
+        ],
+        [
+          544,
+          594
+        ],
+        [
+          564,
+          596
+        ],
+        [
+          582,
+          599
+        ],
+        [
+          598,
+          603
+        ],
+        [
+          605,
+          615
+        ],
+        [
+          609,
+          630
+        ],
+        [
+          610,
+          646
+        ],
+        [
+          610,
+          664
+        ],
+        [
+          608,
+          682
+        ],
+        [
+          604,
+          701
+        ],
+        [
+          600,
+          720
+        ],
+        [
+          602,
+          736
+        ],
+        [
+          603,
+          748
+        ],
+        [
+          600,
+          757
+        ],
+        [
+          592,
+          757
+        ],
+        [
+          598,
+          754
+        ],
+        [
+          598,
+          750
+        ],
+        [
+          594,
+          746
+        ],
+        [
+          583,
+          741
+        ],
+        [
+          568,
+          737
+        ],
+        [
+          553,
+          733
+        ],
+        [
+          540,
+          728
+        ],
+        [
+          531,
+          720
+        ],
+        [
+          524,
+          711
+        ],
+        [
+          520,
+          700
+        ],
+        [
+          516,
+          712
+        ],
+        [
+          510,
+          723
+        ],
+        [
+          501,
+          733
+        ],
+        [
+          489,
+          739
+        ],
+        [
+          475,
+          744
+        ],
+        [
+          460,
+          748
+        ],
+        [
+          446,
+          751
+        ],
+        [
+          458,
+          759
+        ],
+        [
+          449,
+          757
+        ],
+        [
+          443,
+          754
+        ],
+        [
+          442,
+          750
+        ],
+        [
+          444,
+          733
+        ],
+        [
+          446,
+          715
+        ],
+        [
+          443,
+          701
+        ],
+        [
+          440,
+          684
+        ],
+        [
+          439,
+          665
+        ],
+        [
+          438,
+          646
+        ],
+        [
+          439,
+          628
+        ],
+        [
+          444,
+          613
+        ]
+      ],
+      "ownsOriginalCenterSeam": true,
+      "ownsNearHem592757": true
+    },
+    "far": {
+      "boundary": [
+        [
+          598,
+          603
+        ],
+        [
+          608,
+          607
+        ],
+        [
+          618,
+          611
+        ],
+        [
+          625,
+          614
+        ],
+        [
+          625,
+          633
+        ],
+        [
+          628,
+          654
+        ],
+        [
+          631,
+          676
+        ],
+        [
+          632,
+          698
+        ],
+        [
+          633,
+          721
+        ],
+        [
+          636,
+          741
+        ],
+        [
+          638,
+          754
+        ],
+        [
+          630,
+          758
+        ],
+        [
+          618,
+          761
+        ],
+        [
+          607,
+          763
+        ],
+        [
+          596,
+          765
+        ],
+        [
+          592,
+          757
+        ],
+        [
+          600,
+          757
+        ],
+        [
+          603,
+          748
+        ],
+        [
+          602,
+          736
+        ],
+        [
+          600,
+          720
+        ],
+        [
+          604,
+          701
+        ],
+        [
+          608,
+          682
+        ],
+        [
+          610,
+          664
+        ],
+        [
+          610,
+          646
+        ],
+        [
+          609,
+          630
+        ],
+        [
+          605,
+          615
+        ]
+      ],
+      "visibleFarHem": [
+        [
+          596,
+          765
+        ],
+        [
+          607,
+          763
+        ],
+        [
+          618,
+          761
+        ],
+        [
+          630,
+          758
+        ],
+        [
+          638,
+          754
+        ]
+      ]
+    }
+  },
+  "uncertainty": {
+    "visibleTracePixels": 3,
+    "occludedReferencePixels": 8,
+    "note": "Manual anatomical/material interpretation; hidden boundary is a proposal, not directly observed ground truth."
+  },
+  "hiddenOverlap": {
+    "side": "far under near",
+    "guideCurve": "panel_separation_proposal",
+    "maxSourcePixels": 8,
+    "rule": "only behind near-owned seam/interior, never two visible contours or extension of outer hems; no new raster pixels"
+  },
+  "requiresExplicitBuilderAgreement": true,
+  "forbidden": "vertical x split; phase-B coverage edits; raster repair; altered limb lengths or shallower low"
+}

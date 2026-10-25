@@ -68,3 +68,7 @@ CTO разрешил конкретную новую гипотезу: крив�
 ### EARLY_V02_04 — новая garment-гипотеза
 
 CTO закрыл boundary mapping03 и разрешил минимальные естественные артикулируемые garment-панели, каждая с одним orientation-preserving rigid/affine transform, без cell mesh. Полное поручение, пути и последовательность в `CORRECTION_04.md` (Lead). Сначала совместный договор Asset/Builder о 3/4 панелях и pivots; после garment PASS — только body coverage. Все evidence01/02/03 frozen. Полные части/motion/QA/release/Q2A закрыты до итогового PASS.
+
+### EARLY_V02_04_GARMENT_FAIL
+
+Совместный договор до изготовления сохранён/pushed `406bb89`: 3 панели, 2 root+1 hem, один rigid root и два единых affine. Изготовление, численная проверка, exact snapshot04 и оба личных garment-only rereview выполнены. Matrices positive во всех 15 samples, visible coverage 0/0, тело02 и прежний диапазон неизменны. Но поясное соединение/задний near-подол теряют связь с ягодицей, ткань сжимается в полосу; оба художника дали FAIL. Точная причина, RGBA-диагностика, проверки и передача CTO — в итоговом разделе `CORRECTION_04.md`. B/repair/full motion/QA/release/Q2A не открыты; дальнейшее решение ожидается от CTO. Источники и evidence01/02/03 сохранены.

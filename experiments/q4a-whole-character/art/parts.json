@@ -1,6 +1,6 @@
 {
-  "version": "early-v02-02-masks-awaiting-cloth-deformation",
-  "scope": "Restricted neutral/low only; primary shorts deformation needs Builder. No artistic PASS.",
+  "version": "early-v02-04-three-panels-2root-1hem-garment-only",
+  "scope": "Garment only; body files identical to immutable cycle02; source-rest RGBA overlap diagnostic disclosed; no motion PASS",
   "source": "source/whole-v02.png",
   "sourceSize": [
     1024,
@@ -302,67 +302,6 @@
       "provenance": "whole-v02; accepted existing repair pixels + explicitly masked same-side hidden skin translations"
     },
     {
-      "id": "pelvis",
-      "file": "early-v02-02/parts/pelvis.png",
-      "cropRect": [
-        438,
-        592,
-        201,
-        174
-      ],
-      "from": "pelvis",
-      "to": "chest",
-      "z": 35,
-      "rigidPelvis": false,
-      "side": "center",
-      "mask": "early-v02-02/masks/pelvis.png",
-      "restorationMask": "early-v02-02/masks/pelvis-restored.png",
-      "provenance": "whole-v02; accepted existing repair pixels + explicitly masked same-side hidden skin translations",
-      "deformation": {
-        "kind": "shorts-primary-surface",
-        "agreement": "early-v02-02/CONTOURS.md",
-        "waist": [
-          [
-            450,
-            596
-          ],
-          [
-            525,
-            597
-          ],
-          [
-            625,
-            613
-          ]
-        ],
-        "nearHem": [
-          [
-            447,
-            755
-          ],
-          [
-            592,
-            757
-          ]
-        ],
-        "farHem": [
-          [
-            597,
-            766
-          ],
-          [
-            634,
-            761
-          ]
-        ],
-        "crotch": [
-          520,
-          707
-        ],
-        "requiresBuilderImplementation": true
-      }
-    },
-    {
       "id": "nearThigh",
       "file": "early-v02-02/parts/nearThigh.png",
       "cropRect": [
@@ -451,6 +390,163 @@
       "mask": "early-v02-02/masks/nearForearm.png",
       "restorationMask": "early-v02-02/masks/nearForearm-restored.png",
       "provenance": "whole-v02; accepted existing repair pixels + explicitly masked same-side hidden skin translations"
+    },
+    {
+      "id": "waistSeat",
+      "file": "early-v02-04/parts/waistSeat.png",
+      "visibleFile": "early-v02-04/visible/waistSeat.png",
+      "hiddenFile": "early-v02-04/hidden/waistSeat.png",
+      "cropRect": [
+        450,
+        592,
+        175,
+        34
+      ],
+      "from": "pelvis",
+      "to": "chest",
+      "z": 36,
+      "rigidPelvis": true,
+      "garmentPanel": {
+        "kind": "rigid-root",
+        "anchors": [
+          {
+            "source": [
+              538,
+              645
+            ],
+            "target": "pelvis_root_translation"
+          }
+        ],
+        "referencePivot": [
+          538,
+          645
+        ],
+        "epsilon": 0.0001
+      },
+      "visibleMask": "early-v02-04/masks/waistSeat-visible.png",
+      "hiddenMask": "early-v02-04/masks/waistSeat-hidden.png",
+      "provenance": {
+        "observedSource": "source/whole-v02.png",
+        "storedReference": "early-v02-02/parts/pelvis.png",
+        "observedSourceMask": "early-v02-04/masks/source-observed.png",
+        "note": "No new repair; hidden copies are existing garment pixels inside original garment area."
+      }
+    },
+    {
+      "id": "nearFlap",
+      "file": "early-v02-04/parts/nearFlap.png",
+      "visibleFile": "early-v02-04/visible/nearFlap.png",
+      "hiddenFile": "early-v02-04/hidden/nearFlap.png",
+      "cropRect": [
+        438,
+        592,
+        173,
+        170
+      ],
+      "from": "nearHip",
+      "to": "nearKnee",
+      "z": 35,
+      "rigidPelvis": false,
+      "garmentPanel": {
+        "kind": "single-affine",
+        "anchors": [
+          {
+            "source": [
+              452,
+              613
+            ],
+            "target": "root_translation",
+            "role": "A_hidden_upper_back_attachment"
+          },
+          {
+            "source": [
+              598,
+              615
+            ],
+            "target": "root_translation",
+            "role": "B_hidden_upper_front_attachment"
+          },
+          {
+            "source": [
+              592,
+              757
+            ],
+            "target": "rigid_near_thigh",
+            "role": "C_near_front_hem_locked_owner_near"
+          }
+        ],
+        "referencePivot": [
+          525,
+          685
+        ],
+        "epsilon": 0.0001
+      },
+      "visibleMask": "early-v02-04/masks/nearFlap-visible.png",
+      "hiddenMask": "early-v02-04/masks/nearFlap-hidden.png",
+      "provenance": {
+        "observedSource": "source/whole-v02.png",
+        "storedReference": "early-v02-02/parts/pelvis.png",
+        "observedSourceMask": "early-v02-04/masks/source-observed.png",
+        "note": "No new repair; hidden copies are existing garment pixels inside original garment area."
+      }
+    },
+    {
+      "id": "farFlap",
+      "file": "early-v02-04/parts/farFlap.png",
+      "visibleFile": "early-v02-04/visible/farFlap.png",
+      "hiddenFile": "early-v02-04/hidden/farFlap.png",
+      "cropRect": [
+        585,
+        605,
+        54,
+        161
+      ],
+      "from": "farHip",
+      "to": "farKnee",
+      "z": 15,
+      "rigidPelvis": false,
+      "garmentPanel": {
+        "kind": "single-affine",
+        "anchors": [
+          {
+            "source": [
+              598,
+              615
+            ],
+            "target": "root_translation",
+            "role": "A_hidden_upper_back_attachment"
+          },
+          {
+            "source": [
+              625,
+              626
+            ],
+            "target": "root_translation",
+            "role": "B_hidden_upper_front_attachment"
+          },
+          {
+            "source": [
+              634,
+              758
+            ],
+            "target": "rigid_far_thigh",
+            "role": "C_far_front_hem"
+          }
+        ],
+        "referencePivot": [
+          570,
+          690
+        ],
+        "epsilon": 0.0001
+      },
+      "visibleMask": "early-v02-04/masks/farFlap-visible.png",
+      "hiddenMask": "early-v02-04/masks/farFlap-hidden.png",
+      "provenance": {
+        "observedSource": "source/whole-v02.png",
+        "storedReference": "early-v02-02/parts/pelvis.png",
+        "observedSourceMask": "early-v02-04/masks/source-observed.png",
+        "note": "No new repair; hidden copies are existing garment pixels inside original garment area."
+      }
     }
   ],
   "contourAgreement": "early-v02-02/CONTOURS.md",
@@ -579,5 +675,7 @@
         ]
       ]
     }
-  }
+  },
+  "garmentAgreement": "early-v02-04/PANELS.json",
+  "garmentSelfCheck": "early-v02-04/SELF_CHECK.json"
 }

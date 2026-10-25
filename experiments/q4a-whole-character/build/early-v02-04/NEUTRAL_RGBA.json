@@ -1,0 +1,51 @@
+{
+  "scope": "identity source-neutral, exact RGBA; ordinary source-over in agreed far/near/seat order",
+  "visibleOwnership": {
+    "referenceCells": 27681,
+    "unassigned": 0,
+    "duplicateVisibleOwner": 0,
+    "extraVisibleOutsideReference": 0
+  },
+  "referenceShape": [
+    1024,
+    1536
+  ],
+  "referenceSha256": "cc465a781427d324243ed7802e1aadd9c723bfb68da8bc9a328a53d548ba427b",
+  "visibleOnly": {
+    "differentPixels": 0,
+    "maxChannelDifference": [
+      0,
+      0,
+      0,
+      0
+    ],
+    "first": null
+  },
+  "withActualHidden": {
+    "differentPixels": 3015,
+    "maxChannelDifference": [
+      0,
+      0,
+      0,
+      5
+    ],
+    "first": {
+      "xy": [
+        505,
+        592
+      ],
+      "expected": [
+        24,
+        13,
+        16,
+        253
+      ],
+      "actual": [
+        24,
+        13,
+        16,
+        255
+      ]
+    }
+  }
+}

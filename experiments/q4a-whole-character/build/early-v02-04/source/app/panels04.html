@@ -1,0 +1,11 @@
+<!doctype html><html lang="ru"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Q4A · Garment04</title><link rel="stylesheet" href="style.css"></head><body><main>
+<header><p class="eyebrow">R4D / Q4A · EARLY_V02_04 · garment gate</p><h1>Мирон</h1><p>Три панели · одно преобразование на объект</p></header>
+<section class="viewer"><div id="stage"></div><p id="asset-status" role="status">Загрузка материала04…</p></section>
+<section class="controls"><div class="actions"><button data-command="idle" disabled>Покой</button><button data-command="low" disabled>Глубокий присед</button></div>
+<div class="tools"><button id="rest">Source-neutral</button><button id="pause">Пауза</button><button id="step">Шаг 1/60 с</button>
+<label>Скорость <select id="speed"><option value="1">1×</option><option value="0.5">0,5×</option><option value="0.25">0,25×</option><option value="0.1">0,1×</option></select></label>
+<label>Фон <select id="background"><option value="light">Светлый</option><option value="dark">Тёмный</option></select></label>
+<label>Сохранённая поза <select id="sample"><option value="live">Живой переход</option></select></label><label><input type="checkbox" id="garment-only"> Одежда крупно (3×)</label><button id="reload">Перечитать материал</button></div>
+<p id="motion-status"></p><p class="hint">Garment04: neutral ↔ тот же глубокий low. Тело02 — неизменный контекст; его дефекты в этом этапе не исправляются. Walk/jump закрыты. Выбор source-neutral/sample — сравнение, не анимационный переход.</p>
+<details><summary>Матрицы текущей позы</summary><pre id="measurements"></pre></details></section>
+</main><script type="module" src="main.js"></script></body></html>
