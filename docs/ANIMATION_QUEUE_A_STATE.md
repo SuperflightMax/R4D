@@ -6,19 +6,20 @@
 
 ## Текущее выполнение
 
-**IDLE после отдельно порученного выпуска Q4A evidence viewer.** Q5A принят и
-опубликован. Q4A закрыт как отрицательный/частичный исследовательский результат;
-CTO принял достоверный viewer v02 и отдельно поручил его публикацию. Viewer
-опубликован десятой карточкой Review; полноценная анимация и художественный
-PASS не заявляются. По текущему release brief CTO после выпуска — idle,
-без запуска Q2A, corrections или нового исследования. Актуальная
-граница — в [операционном состоянии проекта](PROJECT_STATE.md).
+**Q2A_PREPARATION_ACTIVE; production gate закрыт.** Q5A принят и опубликован.
+Q4A закрыт как отрицательный/частичный исследовательский результат; его viewer
+опубликован десятой карточкой Review, полноценная анимация и художественный
+PASS не заявляются. Более поздний прямой handoff Макса через Дот поручил
+продолжить уже согласованную последовательную Queue A следующим пунктом Q2A.
+Новая команда создана и получила только подготовительный выбор метода;
+генерация, арт, риг, runtime, QA и публикация ждут отдельного CTO gate.
+Актуальная граница — в [операционном состоянии проекта](PROJECT_STATE.md).
 
 | Порядок | Опыт | Состояние | Материалы и показ |
 |---|---|---|---|
 | 1 | Q5A — конструкция до арта | Accepted by CTO; ASSEMBLY03 frozen `101343caa68579aacd5e6c01b94206680c364ab7`; опубликован в существующем Review; серверная доставка и auth-барьер подтверждены | [Открыть Q5A](https://superflight.space/review/r4d/q5a-construction-first/), [release record](../experiments/q5a-construction-first/RELEASE_ASSEMBLY03.md): `PUBLISHED_DELIVERY_VERIFIED_WITH_AUTH_LIMITATION`; post-auth public canvas не проверен, обычный вход SuperFlight сохранён |
 | 2 | Q4A — цельный образ до частей | **RESEARCH_CLOSED_NEGATIVE_PARTIAL**; evidence viewer `negative-review-v02` принят CTO и опубликован из exact commit `47b637ba77681cc17ccf23757396073047430c37` | [Открыть Q4A](https://superflight.space/review/r4d/q4a-whole-character/), [приёмка](../experiments/q4a-whole-character/ACCEPTANCE_NEGATIVE_REVIEW_V02.md), [release record](../experiments/q4a-whole-character/RELEASE_NEGATIVE_REVIEW_V02.md); 26 сохранённых состояний, rejected отдельно; полного движения нет |
-| 3 | Q2A — свободный выбор способа | Не начат; после выпуска Q4A — idle по прямому release brief CTO | Предусмотренный путь `experiments/q2a-simple-character/` сам по себе не означает старт; нового поручения этой записью не создаётся |
+| 3 | Q2A — свободный выбор способа | **PREPARATION_ACTIVE**; новый Lead получил handoff, production не начат | Команда самостоятельно выбирает и обосновывает способ; ближайший gate — CTO review `PREPARATION_PLAN.md` до генерации/арта/рига/runtime/QA |
 
 Независимые review `attempt03` завершили уже существующие сессии:
 Concept Artist `01a16ffd-87e7-7cf3-a9a2-29d2cd97a7ec` и Builder
@@ -41,11 +42,24 @@ Q4A, GPT-6.1 Sol / medium, local, cwd `D:\dev\R4D`.
 
 25 октября 2026, 19:01:34 Europe/Kyiv, Release Engineer активировал immutable Review release `47b637ba77681cc17ccf23757396073047430c37`. Все 36 route-tree файлов `negative-review-v02` совпали с accepted Git objects; 35 записей build manifest, source manifest и snapshot сверены, viewer не пересобирался и не редактировался. Из прежних 360 browser-файлов 359 сохранены побайтно; только в каталоге добавлена честная карточка Q4A и счётчик 9→10. Проверены 396 файлов по локальному HTTP, серверное дерево до/после, desktop1440×1000/mobile390×844 controls/play-stop-low25/rejected/light-dark; внешних запросов/errors/overflow нет. Обычная публичная авторизация и защитные headers сохранены. Post-auth canvas не проверен, личный Chrome не использован — это явно разрешённое CTO ограничение доставки, не новый QA PASS. Подробности, hashes и rollback — в [release record](../experiments/q4a-whole-character/RELEASE_NEGATIVE_REVIEW_V02.md). Q2A и дальнейшие corrections не запускались; после выпуска R4D idle.
 
+После выпуска получен более поздний прямой handoff Макса через Дот продолжить
+каноническую Queue A пунктом Q2A. Staff Director выдал новую независимую
+команду: Lead `01a173ea-2ed7-75e1-aaf9-c7bfe2452662`, Concept Artist
+`01a173ea-2ea3-79d2-b464-30aead2ea96f`, Asset Artist
+`01a173ea-2ed0-7e23-b4f3-b240f83957df`, Builder
+`01a173ea-2ed4-72f2-aebc-7682fbedf2de`, Technical QA
+`01a173ea-2ed3-7350-b592-8cf8f5d379c1`, Visual QA
+`01a173ea-2ed6-76b3-b544-30af5042acaf`. Все — `gpt-6.1-sol` / medium,
+local, cwd `D:\dev\R4D`, без worktree и истории прежних команд. Lead получил
+preparation brief: совместно с Concept/Asset/Builder выбрать метод и подготовить
+один production plan. QA остаются ready; производство и публикация не открыты.
+
 CTO по ходу заменяет сведения фактическим состоянием: активный опыт, команда, ссылки на материалы/демо, полученное качество и решение о продолжении или остановке. Появление каталога само по себе не означает начала или завершения опыта. Новый отдельный статусный сервис не требуется.
 
 ## Итог очереди
 
 Сравнительный итог всей очереди отсутствует: Q5A принят и опубликован,
-Q4A закрыт negative/partial и опубликован как evidence viewer, Q2A не начат.
-После этого release R4D idle по отдельному поручению CTO; эта запись не
-запускает следующий опыт. Материалы Q1–Q6, Q5A и frozen Q4A сохраняются.
+Q4A закрыт negative/partial и опубликован как evidence viewer, Q2A находится
+в подготовительной фазе выбора метода. Следующий gate — решение CTO по плану;
+эта запись сама не открывает производство. Материалы Q1–Q6, Q5A и frozen Q4A
+сохраняются.
