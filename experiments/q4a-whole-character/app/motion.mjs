@@ -1,3 +1,4 @@
+import { supportOffset } from './support.mjs';
 const TAU = Math.PI * 2;
 export const STEP = 1 / 60;
 const clamp = (v, a, b) => Math.max(a, Math.min(b, v));
@@ -31,15 +32,23 @@ export class Motion {
     this.contactRest = options.contacts || null;
     this.groundY = options.groundY ?? (this.contactRest ? Math.max(...Object.values(this.contactRest).flatMap(c => [c.heel.y, c.toe.y])) : null);
     this.footAngles = { near: 0, far: 0 };
+    this.soleContours = options.soleContours || null;
+    this.footSupport = {};
     this.neutralRootY = 0;
     if (this.contactRest) {
       // Put the two measured support lines on one plane by rotation, then solve
       // one shared pelvis translation. Never scale a segment or its texture.
       for (const side of ['near', 'far']) {
         const c = this.contactRest[side];
-        this.footAngles[side] = -Math.atan2(c.toe.y - c.heel.y, c.toe.x - c.heel.x);
+        // The source shoes have curved soles: their two internal landmarks are
+        // not a tangent line. Keep the actual source orientation and solve the
+        // full alpha support; only the anatomical chain changes its pose.
+        this.footAngles[side] = this.soleContours ? 0 : -Math.atan2(c.toe.y - c.heel.y, c.toe.x - c.heel.x);
         const ankle = joints[`${side}Ankle`], hip = joints[`${side}Hip`];
-        const contactOffset = rotate(sub(c.heel, ankle), this.footAngles[side]);
+        const contactOffset = this.soleContours
+          ? supportOffset(this.soleContours[side], ankle, this.footAngles[side])
+          : rotate(sub(c.heel, ankle), this.footAngles[side]);
+        this.footSupport[side] = contactOffset;
         const targetY = this.groundY - contactOffset.y;
         const L1 = length(sub(joints[`${side}Knee`], hip));
         const L2 = length(sub(ankle, joints[`${side}Knee`]));
@@ -131,7 +140,7 @@ export class Motion {
       const stride = H * 0.15;
       const stepX = q < 0.5 ? stride * (0.5 - 2 * q) : -stride * 0.5 + stride * (1 - Math.cos((q - 0.5) * TAU)) / 2;
       const stepY = q < 0.5 ? 0 : -Math.sin((q - 0.5) * TAU) * H * 0.065;
-      const baseAnkleY = this.contactRest ? this.groundY - rotate(sub(this.contactRest[side].heel, r[ankleKey]), this.footAngles[side]).y : r[ankleKey].y;
+      const baseAnkleY = this.contactRest ? this.groundY - this.footSupport[side].y : r[ankleKey].y;
       const ankle = { x: r[ankleKey].x + stepX * v.walking + H * 0.025 * v.tuck,
         y: baseAnkleY + stepY * v.walking - lift - H * 0.11 * v.tuck };
       const upper = length(sub(r[kneeKey], r[hipKey])), lower = length(sub(r[ankleKey], r[kneeKey]));
@@ -145,6 +154,10 @@ export class Motion {
       p[toeKey] = add(p[ankleKey], rotate(sub(r[toeKey], r[ankleKey]), footPitch));
       if (this.contactRest) {
         for (const name of ['heel', 'toe']) p[`${side}Contact${name}`] = add(p[ankleKey], rotate(sub(this.contactRest[side][name], r[ankleKey]), footPitch));
+      }
+      if (this.soleContours) {
+        const support = supportOffset(this.soleContours[side], r[ankleKey], footPitch);
+        p[`${side}ActualSupport`] = add(p[ankleKey], rotate(sub(support.sourcePoint, r[ankleKey]), footPitch));
       }
       const shoulderKey = `${side}Shoulder`, elbowKey = `${side}Elbow`, wristKey = `${side}Wrist`;
       p[shoulderKey] = onTorso(shoulderKey);
@@ -177,6 +190,10 @@ export class Motion {
       if (this.contactRest) for (const name of ['heel', 'toe']) {
         const contact = p[`${side}Contact${name}`] || this.contactRest[side][name];
         row.contacts[name] = { ...contact, groundError: contact.y - this.groundY };
+      }
+      if (this.soleContours && p[`${side}ActualSupport`]) {
+        row.actualAlphaSupport = { ...p[`${side}ActualSupport`],
+          groundError: p[`${side}ActualSupport`].y - this.groundY };
       }
       const hip = p[`${side}Hip`], knee = p[`${side}Knee`], ankle = p[`${side}Ankle`];
       const u = sub(hip, knee), w = sub(ankle, knee);

@@ -1,0 +1,306 @@
+{
+  "joints": {
+    "pelvis": [
+      538,
+      645
+    ],
+    "chest": [
+      540,
+      405
+    ],
+    "neck": [
+      528,
+      222
+    ],
+    "head": [
+      535,
+      114
+    ],
+    "nearShoulder": [
+      477,
+      304
+    ],
+    "nearElbow": [
+      505,
+      518
+    ],
+    "nearWrist": [
+      633,
+      682
+    ],
+    "nearHand": [
+      660,
+      753
+    ],
+    "farShoulder": [
+      444,
+      321
+    ],
+    "farElbow": [
+      403,
+      508
+    ],
+    "farWrist": [
+      411,
+      688
+    ],
+    "farHand": [
+      410,
+      746
+    ],
+    "nearHip": [
+      525,
+      685
+    ],
+    "nearKnee": [
+      503,
+      967
+    ],
+    "nearAnkle": [
+      393,
+      1325
+    ],
+    "nearToe": [
+      518,
+      1387
+    ],
+    "farHip": [
+      570,
+      690
+    ],
+    "farKnee": [
+      606,
+      960
+    ],
+    "farAnkle": [
+      595,
+      1316
+    ],
+    "farToe": [
+      746,
+      1370
+    ]
+  },
+  "contacts": {
+    "near": {
+      "heel": [
+        380,
+        1439
+      ],
+      "toe": [
+        500,
+        1451
+      ]
+    },
+    "far": {
+      "heel": [
+        580,
+        1412
+      ],
+      "toe": [
+        720,
+        1416
+      ]
+    }
+  },
+  "lengths": {
+    "nearthigh": {
+      "from": "nearHip",
+      "to": "nearKnee",
+      "length": 282.85685425670704,
+      "axis": [
+        -22,
+        282
+      ]
+    },
+    "nearshin": {
+      "from": "nearKnee",
+      "to": "nearAnkle",
+      "length": 374.5183573604904,
+      "axis": [
+        -110,
+        358
+      ]
+    },
+    "nearupperArm": {
+      "from": "nearShoulder",
+      "to": "nearElbow",
+      "length": 215.82400237230334,
+      "axis": [
+        28,
+        214
+      ]
+    },
+    "nearforearm": {
+      "from": "nearElbow",
+      "to": "nearWrist",
+      "length": 208.0384579831335,
+      "axis": [
+        128,
+        164
+      ]
+    },
+    "farthigh": {
+      "from": "farHip",
+      "to": "farKnee",
+      "length": 272.389427107588,
+      "axis": [
+        36,
+        270
+      ]
+    },
+    "farshin": {
+      "from": "farKnee",
+      "to": "farAnkle",
+      "length": 356.1699032765121,
+      "axis": [
+        -11,
+        356
+      ]
+    },
+    "farupperArm": {
+      "from": "farShoulder",
+      "to": "farElbow",
+      "length": 191.44189719076647,
+      "axis": [
+        -41,
+        187
+      ]
+    },
+    "farforearm": {
+      "from": "farElbow",
+      "to": "farWrist",
+      "length": 180.17769007288334,
+      "axis": [
+        8,
+        180
+      ]
+    }
+  },
+  "donors": {
+    "farThigh": {
+      "sourceRect": [
+        582,
+        805,
+        48,
+        135
+      ],
+      "translations": [
+        [
+          -20,
+          -115
+        ],
+        [
+          0,
+          -115
+        ],
+        [
+          10,
+          -115
+        ]
+      ],
+      "targetPoly": [
+        [
+          548,
+          680
+        ],
+        [
+          565,
+          665
+        ],
+        [
+          596,
+          670
+        ],
+        [
+          618,
+          691
+        ],
+        [
+          629,
+          725
+        ],
+        [
+          630,
+          791
+        ],
+        [
+          616,
+          813
+        ],
+        [
+          562,
+          810
+        ],
+        [
+          546,
+          765
+        ]
+      ]
+    },
+    "nearThigh": {
+      "sourceRect": [
+        460,
+        785,
+        100,
+        145
+      ],
+      "translations": [
+        [
+          0,
+          -115
+        ],
+        [
+          -18,
+          -115
+        ],
+        [
+          35,
+          -115
+        ]
+      ],
+      "targetPoly": [
+        [
+          461,
+          675
+        ],
+        [
+          495,
+          659
+        ],
+        [
+          535,
+          664
+        ],
+        [
+          568,
+          695
+        ],
+        [
+          590,
+          748
+        ],
+        [
+          590,
+          788
+        ],
+        [
+          568,
+          812
+        ],
+        [
+          456,
+          812
+        ],
+        [
+          440,
+          782
+        ],
+        [
+          441,
+          730
+        ]
+      ]
+    }
+  }
+}

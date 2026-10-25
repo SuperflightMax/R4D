@@ -1,6 +1,7 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
 import { Motion, STEP } from '../app/motion.mjs';
+import { lowerAlphaContour } from '../app/support.mjs';
 
 // Synthetic measured landmarks test control/kinematic invariants, not Miron's art.
 const rest = { pelvis: { x: 0, y: 0 }, chest: { x: 0, y: -110 }, neck: { x: 0, y: -170 }, head: { x: 0, y: -210 } };
@@ -64,4 +65,27 @@ test('early gate aligns measured soles through shared pelvis translation and foo
       for (const contact of Object.values(side.contacts)) assert.ok(Math.abs(contact.groundError) < 0.001);
     }
   }
+});
+test('real lower alpha boundary rather than internal landmarks contacts the floor throughout low and return', () => {
+  const contacts = {
+    near: { heel: { x: 4, y: 242 }, toe: { x: 42, y: 240 } },
+    far: { heel: { x: -20, y: 208 }, toe: { x: 18, y: 206 } },
+  };
+  const soleContours = {
+    near: [{ x: 4, y: 242 }, { x: 20, y: 249 }, { x: 42, y: 240 }],
+    far: [{ x: -20, y: 208 }, { x: 0, y: 211 }, { x: 18, y: 206 }],
+  };
+  const m = new Motion(rest, 460, { early: true, contacts, soleContours });
+  for (const target of ['low', 'idle']) {
+    m.command(target);
+    for (let n = 0; n < 120; n++) {
+      m.advance(STEP);
+      for (const side of Object.values(m.measurements().sides)) {
+        assert.ok(Math.abs(side.actualAlphaSupport.groundError) < 1e-9);
+        for (const link of Object.values(side.lengths)) assert.ok(Math.abs(link.error) < 0.001);
+      }
+    }
+  }
+  const rgba = new Uint8ClampedArray(3 * 4 * 4); rgba[(2 * 3 + 1) * 4 + 3] = 128;
+  assert.deepEqual(lowerAlphaContour(rgba, 3, 4, [10, 20]), [{ x: 10.5, y: 22.5 }, { x: 11.5, y: 22.5 }]);
 });

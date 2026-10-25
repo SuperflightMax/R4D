@@ -1,5 +1,7 @@
-import { Application, Assets, Container, Graphics, Sprite } from 'pixi.js';
+import { Application, Assets, Container, Graphics, Sprite, MeshSimple } from 'pixi.js';
 import { Motion, STEP } from './motion.mjs';
+import { lowerAlphaContour } from './support.mjs';
+import { clothGeometry, clothPoint } from './cloth.mjs';
 
 const host = document.querySelector('#stage');
 const status = document.querySelector('#asset-status');
@@ -58,14 +60,37 @@ async function load() {
     const contacts = next.contacts ? Object.fromEntries(Object.entries(next.contacts).map(([side, c]) =>
       [side, { heel: point(c.heel), toe: point(c.toe) }])) : null;
     if (earlyOnly && !contacts) throw new Error('Для раннего теста нужны измеренные контакты обеих подошв');
-    const nextMotion = new Motion(next.jointPoints, next.figureBounds[3], { contacts, groundY: next.groundY, early: earlyOnly });
+    const soleContours = {};
+    for (const side of ['near', 'far']) {
+      const foot = nextParts.find(p => p.id === `${side}Foot`);
+      if (!foot) throw new Error(`Нет настоящей стопы ${side}`);
+      const canvas = document.createElement('canvas');
+      canvas.width = foot.sprite.texture.width; canvas.height = foot.sprite.texture.height;
+      if (canvas.width !== foot.cropRect[2] || canvas.height !== foot.cropRect[3]) throw new Error(`Размер PNG/crop различается: ${foot.id}`);
+      const context = canvas.getContext('2d', { willReadFrequently: true });
+      context.drawImage(foot.sprite.texture.source.resource, 0, 0);
+      soleContours[side] = lowerAlphaContour(context.getImageData(0, 0, canvas.width, canvas.height).data,
+        canvas.width, canvas.height, foot.cropRect);
+    }
+    const nextMotion = new Motion(next.jointPoints, next.figureBounds[3], { contacts, soleContours, groundY: next.groundY, early: earlyOnly });
+    if (next.parts.some(p => p.file.startsWith('early-v02-02/'))) {
+      const garment=nextParts.find(p=>p.id==='pelvis');
+      if (!garment) throw new Error('Correction 02 requires the single main garment layer');
+      const panels=[];
+      for (const [side,region,z] of [['far',[520,garment.cropRect[0]+garment.cropRect[2]],15],['near',[garment.cropRect[0],520],35]]) {
+        const geometry=clothGeometry(garment.cropRect,region);
+        const mesh=new MeshSimple({texture:garment.sprite.texture,vertices:geometry.vertices,uvs:geometry.uvs,indices:geometry.indices});
+        panels.push({...garment,id:`pelvis-${side}`,sprite:mesh,cloth:geometry,clothSide:side,z});
+      }
+      garment.sprite.destroy(); nextParts.splice(nextParts.indexOf(garment),1,...panels);
+    }
     figure.removeChildren().forEach(child => child.destroy());
     sourceSprite = null;
     model = next; parts = nextParts; motion = nextMotion;
     figure.sortableChildren = true;
     for (const part of parts) { part.sprite.zIndex = part.z ?? 0; figure.addChild(part.sprite); }
     errorText = '';
-    status.textContent = `Ограниченный тест neutral/low · ${next.version || 'working'} · ${parts.length} реальных частей. Это не полный кандидат.`;
+    status.textContent = `Ограниченный тест neutral/low · ${next.version || 'working'} · ${next.parts.length} исходных слоёв. Это не полный кандидат.`;
     actions.forEach(button => { button.disabled = earlyOnly && !['idle', 'low'].includes(button.dataset.command); });
     document.querySelector('.hint').textContent = 'Ограниченный тест: исходная раскладка, общая опора и глубокий присед. Ходьба и прыжок пока закрыты. Пробел — пауза; → — шаг.';
     draw();
@@ -124,6 +149,14 @@ function draw() {
   figure.scale.set(scale);
   figure.position.set(W / 2 - r.pelvis.x * scale, floor - floorInSource * scale);
   for (const part of parts) {
+    if (part.cloth) {
+      const vertices=part.sprite.vertices;
+      for(let i=0;i<part.cloth.source.length;i++) {
+        const point=sourceRest ? part.cloth.source[i] : clothPoint(part.cloth.source[i],r,p,part.clothSide);
+        vertices[i*2]=point.x;vertices[i*2+1]=point.y;
+      }
+      continue;
+    }
     const a = r[part.from], b = r[part.to], A = p[part.from], B = p[part.to];
     const sprite = part.sprite;
     sprite.pivot.set(a.x - part.cropRect[0], a.y - part.cropRect[1]);
