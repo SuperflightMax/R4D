@@ -6,9 +6,11 @@
     "build": "npm run build:v1 && npm run build:contract:v2",
     "build:v1": "node scripts/build.mjs",
     "build:contract:v2": "node scripts/build-contract-v2.mjs",
-    "check": "npm run check:v1 && npm run check:contract:v2",
+    "check": "npm run check:v1 && npm run check:contract:v2 && npm run check:l1",
     "check:v1": "node scripts/check.mjs",
     "check:contract:v2": "node scripts/check-contract-v2.mjs",
+    "build:l1": "node l1/scripts/build-l1.mjs",
+    "check:l1": "node l1/scripts/check-l1.mjs",
     "preview:build": "node scripts/build.mjs --out output/playwright/gallery-v1/site --portable-gallery",
     "preview:serve": "node scripts/serve.mjs --root output/playwright/gallery-v1/site --port 4175"
   }
