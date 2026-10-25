@@ -45,3 +45,29 @@ Builder передаёт exact snapshot/версию/локальный URL с �
 После PASS presentation+QA Lead commit/push и передача CTO exact candidate/commit/ограничений. Acceptance и отдельный release — CTO, самостоятельно не публиковать. Q2A закрыт. Чужой dirty/untracked baseline не трогать. Release Engineer не запрашивается этим поручением.
 
 Статус: brief сохранён, производство viewer до R2 stop package commit и отдельного старта Lead не начато.
+
+## Производство разрешённого viewer начато
+
+Exact R2/stop/closure package опубликован `62a3b8cfd9599cc5d71e6433784c3661c5527a5f`. После push Lead дал отдельный старт Builder только на frozen-data viewer. Concept/Asset готовят условия личной factual review; Technical/Visual QA открыты CTO исключительно для evidence candidate и готовят scoped планы. Exact candidate ещё не получен. Все источники/R1/R2 immutable, numerical/artistic производство закрыто; публикация остаётся отдельным CTO решением.
+
+## Редакторская коррекция перед проверками
+
+CTO при независимом просмотре frozen v01 нашёл зависимые от момента формулировки: «Локальный просмотр · v01» и «приёмка и отдельная публикация ещё не выполнены». Они не подходят для последующей публикации тех же байтов. v01 сохранён как superseded, выдача на review остановлена. Все четыре reviewers — Concept, Asset, Technical и Visual QA — подтвердили, что substantive проверка v01 не начиналась.
+
+Builder получил прямое поручение CTO через Lead: создать отдельный immutable `build/negative-review-v02/` только с редакторской правкой и новой версией, пересобрать manifests и проверить браузером. Исследовательские данные, геометрия и controls не меняются. Все четыре review получают только один frozen v02 после передачи Lead. Приёмка, release и Q2A этим поручением не разрешены.
+
+### Frozen v02 выдан на четыре review
+
+Snapshot: `build/negative-review-v02/`; URL: `http://127.0.0.1:4197/review/r4d/q4a-whole-character/`. Build manifest SHA256 `c403b92bd4da73c072e20dac6d6fcc5bdb29222d92c6e7524f7757c5865133c8`, source manifest SHA256 `51737944bd88908185cae36c529049ce05935b9d06a5b08cf66298106db88e6c`. Research source package остаётся `62a3b8cfd9599cc5d71e6433784c3661c5527a5f`.
+
+Lead независимо сверил одинаковый набор37 файлов v01/v02, все35 content hashes v02 и origin hashes. Изменились только index.html, отображение версии в viewer.js, два manifests и SNAPSHOT.json; data/assets/reports/CSS побайтно совпадают. Три редакторские замены и metadata diff сохранены Builder в `builder/negative-review/editorial-v02/CONTENT_DIFF.json`. v01 не перезаписан. В сохранённых data/evidence.json метка v01 обозначает прежний неизменный набор данных; номер текущего viewer берётся из manifest v02.
+
+Builder повторил браузерную проверку frozen v02: desktop/mobile, оба фона, source select, accepted playback/pause/restart/конец25, отдельный rejected; errors/bad responses/external requests отсутствуют. Raw summary — `builder/negative-review/output/playwright/BROWSER_CHECK_FROZEN_V02.json`. Lead лично посмотрел v02-header.png и v02-conclusion.png и подтвердил новые тексты. HTTP route возвращает manifest версии v02.
+
+Всем четырём существующим reviewers передан этот один snapshot/URL/hashes и их отдельные scoped задания. История выдачи сохраняется; актуальная приёмка приведена ниже.
+
+## Четыре review завершены; CTO принял v02
+
+Получены CONCEPT_VIEWER_ONLY_PASS, ASSET_SOURCE_PROVENANCE_PRESENTATION_PASS, TECHNICAL_QA_PASS и VISUAL_PRESENTATION_PASS_WITH_MINOR_NOTE для одного exact frozen v02. CTO принял VQA-N01 («Показ остановлен» остаётся во время play) как неблокирующий и прямо запретил ненужную правку/v03. Решение, точные ссылки/хеши и ограничения собраны в [ACCEPTANCE_NEGATIVE_REVIEW_V02.md](ACCEPTANCE_NEGATIVE_REVIEW_V02.md).
+
+Статус доставки: `ACCEPTED_FOR_POC_EVIDENCE_RELEASE`, пакет готов отдельному Release Engineer после commit/push. Lead не публикует. Статус исследования остаётся `RESEARCH_CLOSED_NEGATIVE_PARTIAL`; art/motion PASS и разрешения Q2A нет. Frozen v01/v02, source catalog, численные/art data и исходные closure/stop документы неизменны.

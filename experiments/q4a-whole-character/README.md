@@ -4,7 +4,7 @@
 
 **Исследование Q4A закрыто CTO с отрицательным/частичным результатом.** [CLOSURE](CLOSURE.md), [решение CTO](CTO_STOP_DECISION.md). Единственный R2 дал `R2_FAIL_STOP`:26/241 exact outputs low0..25; rejected candidate пути кlow26 нарушил σmin≥0.30. Full low230/full-motion/художественный after не получены; ни нового solve/whole/repair, ни full parts/motion больше нет. Универсальная невозможность cage/Q4A не заявлена.
 
-**Доставка результата: evidence Review candidate готовится** по [отдельному brief](EVIDENCE_VIEWER.md), только frozen данные, не полная animation demo. После presentation review и ограниченной Technical/Visual QA — CTO acceptance и отдельный release. Старые Review cards/URLs не меняются, Q2A закрыт.
+**Доставка результата: frozen evidence viewer v02 принят CTO для PoC release.** [Приёмка и четыре независимых отчёта](ACCEPTANCE_NEGATIVE_REVIEW_V02.md), [точный snapshot](build/negative-review-v02/SNAPSHOT.json), [локальный просмотр](http://127.0.0.1:4197/review/r4d/q4a-whole-character/). Это показ frozen данных отрицательного/частичного опыта, не художественный/motion PASS. Замечание VQA-N01 принято CTO без правки/v03. Пакет готов отдельному Release Engineer; Lead не запускает release. Старые Review cards/URLs не меняются, Q2A закрыт.
 
 **Принятый R1 остаётся R1_TECHNICAL_FAIL_BEFORE_FULL_AFTER**, опубликован `bd125d2`: исходный harmonic continuation остановился при drop50,79px из230. [Точный результат](EARLY_V04_R1.md#итог-корректного-r1-input-прогона-технический-stop-до-full-after). Это отказ конкретного численного пути, не доказательство невозможности cage; полного художественного after нет.
 

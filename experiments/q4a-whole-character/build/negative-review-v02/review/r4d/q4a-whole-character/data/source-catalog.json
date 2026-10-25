@@ -1,0 +1,80 @@
+{
+  "schemaVersion": 1,
+  "date": "2026-10-25",
+  "author": "asset-artist-r4d-q4a-01",
+  "workspaceRoot": "D:\\dev\\R4D",
+  "pathBase": "repository root; origin files copied byte-for-byte only",
+  "scopeRu": "Каталог сохранённых whole attempts для frozen-evidence viewer. Не общий animation PASS; статусы с указанной областью/авторством из сохранённых reviews.",
+  "sources": [
+    {
+      "id": "whole-v01",
+      "nameRu": "Цельный источник v01",
+      "originPath": "experiments/q4a-whole-character/art/source/whole-v01.png",
+      "sha256": "424220a6c4470d8cecc5bd214d03c1cd2605d5620b66fea206f033d543dc3c19",
+      "statusRu": "Сохранённая попытка: качество исходной позы не принято; готовность к полной нарезке не подтверждена.",
+      "statusScope": "asset-observation",
+      "reviewPath": "experiments/q4a-whole-character/art/source/whole-v01-notes.md",
+      "reviewSHA256": "192d7126903e5b3cc4bce8678cd1c1ecac1b4ddead9a8e0dd68b9796bbf1c1d1",
+      "noteRu": "Ближняя рука у бока, не хватает просветов; подошвы на разных уровнях. Первоначальное замечание об ореоле уточнено alpha-проверкой: основной фон — hidden RGB при alpha0."
+    },
+    {
+      "id": "whole-v02",
+      "nameRu": "Правка цельного источника v02",
+      "originPath": "experiments/q4a-whole-character/art/source/whole-v02.png",
+      "sha256": "7e4b0efa371bec370a8af4e8ce284acaedc19565a056ffe506a1b0f30abb3f4d",
+      "statusRu": "Частично полезная правка; условия подготовки полностью не выполнены по личному выводу Asset.",
+      "statusScope": "asset-observation",
+      "reviewPath": "experiments/q4a-whole-character/art/source/whole-v02-notes.md",
+      "reviewSHA256": "df5ed2ca5093647a7be76448bf1ac2cd19ceb9b65e8b3d5fce01d64d2d3384ac",
+      "noteRu": "Руки раскрыты лучше, но ближняя цепь перекрывает torso/shorts; sole rows1452/1416 при alpha≥128, разница36px. Этот source-статус не заменяет позднюю историю тестов."
+    },
+    {
+      "id": "whole-v03",
+      "nameRu": "Первый цельный источник v03",
+      "originPath": "experiments/q4a-whole-character/art/whole-v03/raw/whole-v03.png",
+      "sha256": "e59765185321aa89f6d1246f6b2f53828dc074fcf07b22c05e26efb5d2ff69ff",
+      "statusRu": "SOURCE_POSE_FAIL",
+      "statusScope": "asset-source-gate",
+      "reviewPath": "experiments/q4a-whole-character/art/whole-v03/SOURCE_REVIEW.md",
+      "reviewSHA256": "a943945d08cd788939addf98b79bd81c71e110dfead5ada7f215d77fa6dd3786",
+      "noteRu": "Идентичность/briefs/ракурс приняты для source; верхняя рука перекрывает майку, sole rows1458/1438: разница20px."
+    },
+    {
+      "id": "whole-v03-correction02",
+      "nameRu": "v03: закрытый спортивный низ",
+      "originPath": "experiments/q4a-whole-character/art/whole-v03/raw/whole-v03-correction02.png",
+      "sha256": "ed40c54d4e916383c00b2002292ea7aec281d2e3162df0a14955b163f5c11e4a",
+      "statusRu": "SOURCE_POSE_FAIL по пункту2",
+      "statusScope": "asset-source-gate",
+      "reviewPath": "experiments/q4a-whole-character/art/whole-v03/SOURCE_REVIEW_CORRECTION02.md",
+      "reviewSHA256": "f82c7e3af2fe4ffd180c3dda33d3de84b056d8dc8ebd0c4162c7a0142b31260c",
+      "noteRu": "Fitted mid-thigh shorts соответствуют обновлённому brief; верхняя рука на tank, sole mismatch15px."
+    },
+    {
+      "id": "whole-v04",
+      "nameRu": "Цельный источник v04 с pose guide",
+      "originPath": "experiments/q4a-whole-character/art/whole-v04/raw/whole-v04.png",
+      "sha256": "56947ae376af812075e42f23d2c874ef1c9f30de6f51718700f4376cfae38bb3",
+      "statusRu": "SOURCE_POSE_FAIL; отдельно выбран CTO для R1/R2 viability test без изменения source FAIL",
+      "statusScope": "asset-source-gate-plus-cto-selection",
+      "reviewPath": "experiments/q4a-whole-character/art/whole-v04/SOURCE_REVIEW.md",
+      "reviewSHA256": "bcba4edb3b0b47163d1766b4a320741c79ab63a433cad569febe8c4a89ca8b81",
+      "noteRu": "Верхняя рука на tank; dense sole rows1469/1464 при alpha≥128 и1468/1461 при≥250. Минимальный R1 repair не завершил hidden shoulder corridor; full motion/artistic PASS отсутствует."
+    }
+  ],
+  "nonImageEvents": [
+    {
+      "id": "whole-v03-correction01",
+      "nameRu": "Correction01: изображение не получено",
+      "status": "OUTPUT_BLOCKED_NO_RAW",
+      "originPath": null,
+      "sha256": null,
+      "reviewPath": "experiments/q4a-whole-character/art/whole-v03/SOURCE_REVIEW_CORRECTION01.md",
+      "conditionsPath": "experiments/q4a-whole-character/art/whole-v03/raw/whole-v03-correction01-conditions.md",
+      "noteRu": "Output moderation блок; raw не возвращён, художественного просмотра/вердикта нет. Не подставлять raw-v03 или placeholder вместо correction01."
+    }
+  ],
+  "canonicalClosure": "experiments/q4a-whole-character/CLOSURE.md",
+  "selectionDecisionForV04": "experiments/q4a-whole-character/EARLY_V04_R1.md",
+  "viewerReviewStatus": "WAITING_EXACT_SNAPSHOT; no final REVIEW or artistic PASS"
+}

@@ -1,0 +1,303 @@
+{
+  "version": "negative-review-v02",
+  "sourcePackageCommit": "62a3b8cfd9599cc5d71e6433784c3661c5527a5f",
+  "researchManifestSha256": "c02ada675af95499a5d91b9e5d0b3e799dbb5a1f71ec9618cbbf4e0791f6d7e8",
+  "route": "/review/r4d/q4a-whole-character/",
+  "scope": "frozen evidence viewer, no solve/art/repair/full character motion",
+  "entries": [
+    {
+      "destination": "data/source-catalog.json",
+      "origin": "experiments/q4a-whole-character/art/negative-review/SOURCE_CATALOG.json",
+      "originSha256": "5063b713e700026d113b4e710e34cbb1cab0c28617e4901b07327eb5a6d75001",
+      "outputSha256": "5063b713e700026d113b4e710e34cbb1cab0c28617e4901b07327eb5a6d75001",
+      "transformation": "exact byte copy"
+    },
+    {
+      "destination": "assets/whole-v01.png",
+      "origin": "experiments/q4a-whole-character/art/source/whole-v01.png",
+      "originSha256": "424220a6c4470d8cecc5bd214d03c1cd2605d5620b66fea206f033d543dc3c19",
+      "outputSha256": "424220a6c4470d8cecc5bd214d03c1cd2605d5620b66fea206f033d543dc3c19",
+      "transformation": "exact byte copy"
+    },
+    {
+      "destination": "assets/whole-v01-shoulder.png",
+      "origins": [
+        {
+          "origin": "experiments/q4a-whole-character/art/source/whole-v01.png",
+          "sha256": "424220a6c4470d8cecc5bd214d03c1cd2605d5620b66fea206f033d543dc3c19"
+        }
+      ],
+      "outputSha256": "25e42bbb9711680131327c25c842cfb69cbe4c091b85afcfb13477de0cb7f00c",
+      "transformation": "deterministic rectangular source crop [280,200,580,420], no paint/mask/repair"
+    },
+    {
+      "destination": "assets/whole-v01-hip.png",
+      "origins": [
+        {
+          "origin": "experiments/q4a-whole-character/art/source/whole-v01.png",
+          "sha256": "424220a6c4470d8cecc5bd214d03c1cd2605d5620b66fea206f033d543dc3c19"
+        }
+      ],
+      "outputSha256": "aee05cc0210dd203e12765202fbfe57fdbe96baecd6865445af7fc05f6a7bdc8",
+      "transformation": "deterministic rectangular source crop [260,560,520,470], no paint/mask/repair"
+    },
+    {
+      "destination": "reports/whole-v01-source-review.md",
+      "origin": "experiments/q4a-whole-character/art/source/whole-v01-notes.md",
+      "originSha256": "192d7126903e5b3cc4bce8678cd1c1ecac1b4ddead9a8e0dd68b9796bbf1c1d1",
+      "outputSha256": "192d7126903e5b3cc4bce8678cd1c1ecac1b4ddead9a8e0dd68b9796bbf1c1d1",
+      "transformation": "exact byte copy"
+    },
+    {
+      "destination": "assets/whole-v02.png",
+      "origin": "experiments/q4a-whole-character/art/source/whole-v02.png",
+      "originSha256": "7e4b0efa371bec370a8af4e8ce284acaedc19565a056ffe506a1b0f30abb3f4d",
+      "outputSha256": "7e4b0efa371bec370a8af4e8ce284acaedc19565a056ffe506a1b0f30abb3f4d",
+      "transformation": "exact byte copy"
+    },
+    {
+      "destination": "assets/whole-v02-shoulder.png",
+      "origins": [
+        {
+          "origin": "experiments/q4a-whole-character/art/source/whole-v02.png",
+          "sha256": "7e4b0efa371bec370a8af4e8ce284acaedc19565a056ffe506a1b0f30abb3f4d"
+        }
+      ],
+      "outputSha256": "09b4be7d11cd78ca27e989475bfc540083ca96ee32b3f0175fb2c4e565a82a2b",
+      "transformation": "deterministic rectangular source crop [280,200,580,420], no paint/mask/repair"
+    },
+    {
+      "destination": "assets/whole-v02-hip.png",
+      "origins": [
+        {
+          "origin": "experiments/q4a-whole-character/art/source/whole-v02.png",
+          "sha256": "7e4b0efa371bec370a8af4e8ce284acaedc19565a056ffe506a1b0f30abb3f4d"
+        }
+      ],
+      "outputSha256": "38f64554b38a792f844eb2ea92ed0566a6b7b1b1eabe3b858bac8f83d07b5199",
+      "transformation": "deterministic rectangular source crop [260,560,520,470], no paint/mask/repair"
+    },
+    {
+      "destination": "reports/whole-v02-source-review.md",
+      "origin": "experiments/q4a-whole-character/art/source/whole-v02-notes.md",
+      "originSha256": "df5ed2ca5093647a7be76448bf1ac2cd19ceb9b65e8b3d5fce01d64d2d3384ac",
+      "outputSha256": "df5ed2ca5093647a7be76448bf1ac2cd19ceb9b65e8b3d5fce01d64d2d3384ac",
+      "transformation": "exact byte copy"
+    },
+    {
+      "destination": "assets/whole-v03.png",
+      "origin": "experiments/q4a-whole-character/art/whole-v03/raw/whole-v03.png",
+      "originSha256": "e59765185321aa89f6d1246f6b2f53828dc074fcf07b22c05e26efb5d2ff69ff",
+      "outputSha256": "e59765185321aa89f6d1246f6b2f53828dc074fcf07b22c05e26efb5d2ff69ff",
+      "transformation": "exact byte copy"
+    },
+    {
+      "destination": "assets/whole-v03-shoulder.png",
+      "origins": [
+        {
+          "origin": "experiments/q4a-whole-character/art/whole-v03/raw/whole-v03.png",
+          "sha256": "e59765185321aa89f6d1246f6b2f53828dc074fcf07b22c05e26efb5d2ff69ff"
+        }
+      ],
+      "outputSha256": "9bd04f1f6ea603377df05773496590f0ecbe29af0ab64e2377dfd7236d68facb",
+      "transformation": "deterministic rectangular source crop [280,200,580,420], no paint/mask/repair"
+    },
+    {
+      "destination": "assets/whole-v03-hip.png",
+      "origins": [
+        {
+          "origin": "experiments/q4a-whole-character/art/whole-v03/raw/whole-v03.png",
+          "sha256": "e59765185321aa89f6d1246f6b2f53828dc074fcf07b22c05e26efb5d2ff69ff"
+        }
+      ],
+      "outputSha256": "246d1541a035faadc17347892ba67b26e50db387446833d0e0c4c51d5b868b5d",
+      "transformation": "deterministic rectangular source crop [260,560,520,470], no paint/mask/repair"
+    },
+    {
+      "destination": "reports/whole-v03-source-review.md",
+      "origin": "experiments/q4a-whole-character/art/whole-v03/SOURCE_REVIEW.md",
+      "originSha256": "a943945d08cd788939addf98b79bd81c71e110dfead5ada7f215d77fa6dd3786",
+      "outputSha256": "a943945d08cd788939addf98b79bd81c71e110dfead5ada7f215d77fa6dd3786",
+      "transformation": "exact byte copy"
+    },
+    {
+      "destination": "assets/whole-v03-correction02.png",
+      "origin": "experiments/q4a-whole-character/art/whole-v03/raw/whole-v03-correction02.png",
+      "originSha256": "ed40c54d4e916383c00b2002292ea7aec281d2e3162df0a14955b163f5c11e4a",
+      "outputSha256": "ed40c54d4e916383c00b2002292ea7aec281d2e3162df0a14955b163f5c11e4a",
+      "transformation": "exact byte copy"
+    },
+    {
+      "destination": "assets/whole-v03-correction02-shoulder.png",
+      "origins": [
+        {
+          "origin": "experiments/q4a-whole-character/art/whole-v03/raw/whole-v03-correction02.png",
+          "sha256": "ed40c54d4e916383c00b2002292ea7aec281d2e3162df0a14955b163f5c11e4a"
+        }
+      ],
+      "outputSha256": "1c6caf0b2f96f2f359e18ed7e894d40b1e69bbd99a57307999212cbb2ad73fec",
+      "transformation": "deterministic rectangular source crop [280,200,580,420], no paint/mask/repair"
+    },
+    {
+      "destination": "assets/whole-v03-correction02-hip.png",
+      "origins": [
+        {
+          "origin": "experiments/q4a-whole-character/art/whole-v03/raw/whole-v03-correction02.png",
+          "sha256": "ed40c54d4e916383c00b2002292ea7aec281d2e3162df0a14955b163f5c11e4a"
+        }
+      ],
+      "outputSha256": "a86486b43b2339e7880649ea28394958cfe871b0ea5a15126337e1aa5b2a3b53",
+      "transformation": "deterministic rectangular source crop [260,560,520,470], no paint/mask/repair"
+    },
+    {
+      "destination": "reports/whole-v03-correction02-source-review.md",
+      "origin": "experiments/q4a-whole-character/art/whole-v03/SOURCE_REVIEW_CORRECTION02.md",
+      "originSha256": "f82c7e3af2fe4ffd180c3dda33d3de84b056d8dc8ebd0c4162c7a0142b31260c",
+      "outputSha256": "f82c7e3af2fe4ffd180c3dda33d3de84b056d8dc8ebd0c4162c7a0142b31260c",
+      "transformation": "exact byte copy"
+    },
+    {
+      "destination": "assets/whole-v04.png",
+      "origin": "experiments/q4a-whole-character/art/whole-v04/raw/whole-v04.png",
+      "originSha256": "56947ae376af812075e42f23d2c874ef1c9f30de6f51718700f4376cfae38bb3",
+      "outputSha256": "56947ae376af812075e42f23d2c874ef1c9f30de6f51718700f4376cfae38bb3",
+      "transformation": "exact byte copy"
+    },
+    {
+      "destination": "assets/whole-v04-shoulder.png",
+      "origins": [
+        {
+          "origin": "experiments/q4a-whole-character/art/whole-v04/raw/whole-v04.png",
+          "sha256": "56947ae376af812075e42f23d2c874ef1c9f30de6f51718700f4376cfae38bb3"
+        }
+      ],
+      "outputSha256": "e68ab51103cdf9fd9cf03365ff2dc425c709a1f7aa061c881819d1fe200eb88a",
+      "transformation": "deterministic rectangular source crop [280,200,580,420], no paint/mask/repair"
+    },
+    {
+      "destination": "assets/whole-v04-hip.png",
+      "origins": [
+        {
+          "origin": "experiments/q4a-whole-character/art/whole-v04/raw/whole-v04.png",
+          "sha256": "56947ae376af812075e42f23d2c874ef1c9f30de6f51718700f4376cfae38bb3"
+        }
+      ],
+      "outputSha256": "7ad0640d490eb9811a03ed2a3c90a94efe06ffe5adb2e6c8c880377944d93ce3",
+      "transformation": "deterministic rectangular source crop [260,560,520,470], no paint/mask/repair"
+    },
+    {
+      "destination": "reports/whole-v04-source-review.md",
+      "origin": "experiments/q4a-whole-character/art/whole-v04/SOURCE_REVIEW.md",
+      "originSha256": "bcba4edb3b0b47163d1766b4a320741c79ab63a433cad569febe8c4a89ca8b81",
+      "outputSha256": "bcba4edb3b0b47163d1766b4a320741c79ab63a433cad569febe8c4a89ca8b81",
+      "transformation": "exact byte copy"
+    },
+    {
+      "destination": "data/evidence.json",
+      "origins": [
+        {
+          "origin": "experiments/q4a-whole-character/builder/early-v04-r1/CAGE_REST.json",
+          "sha256": "4a61860b531a233745fac0ba6402678f391fff908af3631df61865672b85d0f7"
+        },
+        {
+          "origin": "experiments/q4a-whole-character/builder/early-v04-r2/R2_RESULT.json",
+          "sha256": "e9a449702648b56072725d4e2cb2e8d2c78b028fc48dd81ba26c2f51d7705eff"
+        },
+        {
+          "origin": "experiments/q4a-whole-character/builder/early-v04-r2/R2_FAILURE.json",
+          "sha256": "3525d6820dc631b29c465b612ca48cd0e33869eacf0b9f7d6b9c79700da8ab3a"
+        },
+        {
+          "origin": "experiments/q4a-whole-character/art/negative-review/SOURCE_CATALOG.json",
+          "sha256": "5063b713e700026d113b4e710e34cbb1cab0c28617e4901b07327eb5a6d75001"
+        }
+      ],
+      "outputSha256": "7209e25110969abff78ba98302a76aef23b9f8c1a26b6e966ffbed1fdabe6f74",
+      "transformation": "lossless JSON projection of saved rest and 26 exact outputs; selected rejected candidate kept separately; no optimization, interpolation, new poses or vertex rounding"
+    },
+    {
+      "destination": "assets/hip-texture.png",
+      "origin": "experiments/q4a-whole-character/builder/early-v04-r1/inputs03/materials/hip_shorts.png",
+      "originSha256": "dbc11925677a79a415a6ea1f7d5721d7d9452d1cede4b5ef1c5b0a3af8734a66",
+      "outputSha256": "dbc11925677a79a415a6ea1f7d5721d7d9452d1cede4b5ef1c5b0a3af8734a66",
+      "transformation": "exact byte copy"
+    },
+    {
+      "destination": "assets/r1-witness.png",
+      "origin": "experiments/q4a-whole-character/builder/early-v04-r1/CAGE_FAILURE.png",
+      "originSha256": "eaaf50cb0e36dcfe5f58fbd5441f6e0b9c00de74427f4e7c33bd597570dc26b0",
+      "outputSha256": "eaaf50cb0e36dcfe5f58fbd5441f6e0b9c00de74427f4e7c33bd597570dc26b0",
+      "transformation": "exact byte copy"
+    },
+    {
+      "destination": "assets/r2-witness.png",
+      "origin": "experiments/q4a-whole-character/builder/early-v04-r2/R2_WITNESS.png",
+      "originSha256": "e0076a09f1c0ce96607590b920be1881ce62e2793ac07242308f88232705b964",
+      "outputSha256": "e0076a09f1c0ce96607590b920be1881ce62e2793ac07242308f88232705b964",
+      "transformation": "exact byte copy"
+    },
+    {
+      "destination": "assets/leg-chain-feasibility.png",
+      "origin": "experiments/q4a-whole-character/builder/early-v04-r1/GEOMETRY_FEASIBILITY.png",
+      "originSha256": "e69ccb39258c6434b9711a51d01fa4b98c92c4ba1ddb3112c494940fefbf678f",
+      "outputSha256": "e69ccb39258c6434b9711a51d01fa4b98c92c4ba1ddb3112c494940fefbf678f",
+      "transformation": "exact byte copy"
+    },
+    {
+      "destination": "reports/r1-result.md",
+      "origin": "experiments/q4a-whole-character/builder/early-v04-r1/RESULT.md",
+      "originSha256": "b841b8780b4c5c0019582d3f66c54138cf9a4f74573e995d15fc1336e256ae6f",
+      "outputSha256": "b841b8780b4c5c0019582d3f66c54138cf9a4f74573e995d15fc1336e256ae6f",
+      "transformation": "exact byte copy"
+    },
+    {
+      "destination": "reports/r2-result.md",
+      "origin": "experiments/q4a-whole-character/builder/early-v04-r2/RESULT.md",
+      "originSha256": "187fc6e9853852910b3514a84571c64cd4034c35e4349f38623d60d6afd00ab8",
+      "outputSha256": "187fc6e9853852910b3514a84571c64cd4034c35e4349f38623d60d6afd00ab8",
+      "transformation": "exact byte copy"
+    },
+    {
+      "destination": "reports/capture-audit.md",
+      "origin": "experiments/q4a-whole-character/builder/early-v04-r2/EXECUTION_CAPTURE_AUDIT.md",
+      "originSha256": "f191b9b8812234f29d27aecf49364b818c8d71baf2a58f6c67c291bdb812dc2c",
+      "outputSha256": "f191b9b8812234f29d27aecf49364b818c8d71baf2a58f6c67c291bdb812dc2c",
+      "transformation": "exact byte copy"
+    },
+    {
+      "destination": "reports/cto-stop.md",
+      "origin": "experiments/q4a-whole-character/CTO_STOP_DECISION.md",
+      "originSha256": "04665c7982f86304d8d793f833d5f377f76860ddfebbee02c4cf956bf3c0a123",
+      "outputSha256": "04665c7982f86304d8d793f833d5f377f76860ddfebbee02c4cf956bf3c0a123",
+      "transformation": "exact byte copy"
+    },
+    {
+      "destination": "reports/closure.md",
+      "origin": "experiments/q4a-whole-character/CLOSURE.md",
+      "originSha256": "330d0df95477d5683134bff6f2a5abfc00d32358e5df41fb1faee18b86cf5110",
+      "outputSha256": "330d0df95477d5683134bff6f2a5abfc00d32358e5df41fb1faee18b86cf5110",
+      "transformation": "exact byte copy"
+    },
+    {
+      "destination": "index.html",
+      "origin": "experiments/q4a-whole-character/app/negative-review/index.html",
+      "originSha256": "5c036196f0bcaf933158afc1fbf9231c1a14d7356c26a44d0ac2baec389f8834",
+      "outputSha256": "5c036196f0bcaf933158afc1fbf9231c1a14d7356c26a44d0ac2baec389f8834",
+      "transformation": "exact byte copy"
+    },
+    {
+      "destination": "viewer.css",
+      "origin": "experiments/q4a-whole-character/app/negative-review/viewer.css",
+      "originSha256": "015495c3325ce7ef37bfe51ec83de4cc39d6e638a82891a2208527ff146f7b8c",
+      "outputSha256": "015495c3325ce7ef37bfe51ec83de4cc39d6e638a82891a2208527ff146f7b8c",
+      "transformation": "exact byte copy"
+    },
+    {
+      "destination": "viewer.js",
+      "origin": "experiments/q4a-whole-character/app/negative-review/viewer.mjs",
+      "originSha256": "28a36251aa85c84d375c9fef2cf6d9badd2ce494c81cd206bd2fd9d9339fdad5",
+      "outputSha256": "d087d0eb71919ea3a068c3085d46a9d84b16b22eafb9f58a53ccc5931b3e2340",
+      "transformation": "esbuild bundle, pixi.js8.14.3 local dependency; no solver/runtime-motion imports"
+    }
+  ]
+}

@@ -1,0 +1,1653 @@
+{
+  "candidate": "negative-review-v02",
+  "url": "http://127.0.0.1:4197/review/r4d/q4a-whole-character/",
+  "buildManifestSHA256": "c403b92bd4da73c072e20dac6d6fcc5bdb29222d92c6e7524f7757c5865133c8",
+  "fileCount": 36,
+  "sourceEntryCount": 34,
+  "frozenOriginsChecked": 34,
+  "originNotes": [
+    {
+      "origin": "experiments/q4a-whole-character/art/negative-review/SOURCE_CATALOG.json",
+      "note": "new viewer catalog; not present in research commit; source images/reviews verified separately"
+    },
+    {
+      "origin": "experiments/q4a-whole-character/builder/early-v04-r2/R2_RESULT.json",
+      "note": "working-tree CRLF vs committed LF only; candidate exact to hashed working-tree origin"
+    },
+    {
+      "origin": "experiments/q4a-whole-character/builder/early-v04-r2/R2_FAILURE.json",
+      "note": "working-tree CRLF vs committed LF only; candidate exact to hashed working-tree origin"
+    },
+    {
+      "origin": "experiments/q4a-whole-character/art/negative-review/SOURCE_CATALOG.json",
+      "note": "new viewer catalog; not present in research commit; source images/reviews verified separately"
+    },
+    {
+      "origin": "experiments/q4a-whole-character/builder/early-v04-r1/RESULT.md",
+      "note": "working-tree CRLF vs committed LF only; candidate exact to hashed working-tree origin"
+    },
+    {
+      "origin": "experiments/q4a-whole-character/builder/early-v04-r2/EXECUTION_CAPTURE_AUDIT.md",
+      "note": "working-tree CRLF vs committed LF only; candidate exact to hashed working-tree origin"
+    }
+  ],
+  "checks": [
+    {
+      "check": "build manifest supplied hash",
+      "pass": true
+    },
+    {
+      "check": "source manifest supplied hash",
+      "pass": true
+    },
+    {
+      "check": "complete manifest tree",
+      "pass": true
+    },
+    {
+      "check": "file assets/hip-texture.png",
+      "pass": true
+    },
+    {
+      "check": "file assets/leg-chain-feasibility.png",
+      "pass": true
+    },
+    {
+      "check": "file assets/r1-witness.png",
+      "pass": true
+    },
+    {
+      "check": "file assets/r2-witness.png",
+      "pass": true
+    },
+    {
+      "check": "file assets/whole-v01-hip.png",
+      "pass": true
+    },
+    {
+      "check": "file assets/whole-v01-shoulder.png",
+      "pass": true
+    },
+    {
+      "check": "file assets/whole-v01.png",
+      "pass": true
+    },
+    {
+      "check": "file assets/whole-v02-hip.png",
+      "pass": true
+    },
+    {
+      "check": "file assets/whole-v02-shoulder.png",
+      "pass": true
+    },
+    {
+      "check": "file assets/whole-v02.png",
+      "pass": true
+    },
+    {
+      "check": "file assets/whole-v03-correction02-hip.png",
+      "pass": true
+    },
+    {
+      "check": "file assets/whole-v03-correction02-shoulder.png",
+      "pass": true
+    },
+    {
+      "check": "file assets/whole-v03-correction02.png",
+      "pass": true
+    },
+    {
+      "check": "file assets/whole-v03-hip.png",
+      "pass": true
+    },
+    {
+      "check": "file assets/whole-v03-shoulder.png",
+      "pass": true
+    },
+    {
+      "check": "file assets/whole-v03.png",
+      "pass": true
+    },
+    {
+      "check": "file assets/whole-v04-hip.png",
+      "pass": true
+    },
+    {
+      "check": "file assets/whole-v04-shoulder.png",
+      "pass": true
+    },
+    {
+      "check": "file assets/whole-v04.png",
+      "pass": true
+    },
+    {
+      "check": "file data/evidence.json",
+      "pass": true
+    },
+    {
+      "check": "file data/source-catalog.json",
+      "pass": true
+    },
+    {
+      "check": "file index.html",
+      "pass": true
+    },
+    {
+      "check": "file reports/capture-audit.md",
+      "pass": true
+    },
+    {
+      "check": "file reports/closure.md",
+      "pass": true
+    },
+    {
+      "check": "file reports/cto-stop.md",
+      "pass": true
+    },
+    {
+      "check": "file reports/r1-result.md",
+      "pass": true
+    },
+    {
+      "check": "file reports/r2-result.md",
+      "pass": true
+    },
+    {
+      "check": "file reports/whole-v01-source-review.md",
+      "pass": true
+    },
+    {
+      "check": "file reports/whole-v02-source-review.md",
+      "pass": true
+    },
+    {
+      "check": "file reports/whole-v03-correction02-source-review.md",
+      "pass": true
+    },
+    {
+      "check": "file reports/whole-v03-source-review.md",
+      "pass": true
+    },
+    {
+      "check": "file reports/whole-v04-source-review.md",
+      "pass": true
+    },
+    {
+      "check": "file source-manifest.json",
+      "pass": true
+    },
+    {
+      "check": "file viewer.css",
+      "pass": true
+    },
+    {
+      "check": "file viewer.js",
+      "pass": true
+    },
+    {
+      "check": "HTTP exact assets/hip-texture.png",
+      "pass": true
+    },
+    {
+      "check": "HTTP exact assets/leg-chain-feasibility.png",
+      "pass": true
+    },
+    {
+      "check": "HTTP exact assets/r1-witness.png",
+      "pass": true
+    },
+    {
+      "check": "HTTP exact assets/r2-witness.png",
+      "pass": true
+    },
+    {
+      "check": "HTTP exact assets/whole-v01-hip.png",
+      "pass": true
+    },
+    {
+      "check": "HTTP exact assets/whole-v01-shoulder.png",
+      "pass": true
+    },
+    {
+      "check": "HTTP exact assets/whole-v01.png",
+      "pass": true
+    },
+    {
+      "check": "HTTP exact assets/whole-v02-hip.png",
+      "pass": true
+    },
+    {
+      "check": "HTTP exact assets/whole-v02-shoulder.png",
+      "pass": true
+    },
+    {
+      "check": "HTTP exact assets/whole-v02.png",
+      "pass": true
+    },
+    {
+      "check": "HTTP exact assets/whole-v03-correction02-hip.png",
+      "pass": true
+    },
+    {
+      "check": "HTTP exact assets/whole-v03-correction02-shoulder.png",
+      "pass": true
+    },
+    {
+      "check": "HTTP exact assets/whole-v03-correction02.png",
+      "pass": true
+    },
+    {
+      "check": "HTTP exact assets/whole-v03-hip.png",
+      "pass": true
+    },
+    {
+      "check": "HTTP exact assets/whole-v03-shoulder.png",
+      "pass": true
+    },
+    {
+      "check": "HTTP exact assets/whole-v03.png",
+      "pass": true
+    },
+    {
+      "check": "HTTP exact assets/whole-v04-hip.png",
+      "pass": true
+    },
+    {
+      "check": "HTTP exact assets/whole-v04-shoulder.png",
+      "pass": true
+    },
+    {
+      "check": "HTTP exact assets/whole-v04.png",
+      "pass": true
+    },
+    {
+      "check": "HTTP exact build-manifest.json",
+      "pass": true
+    },
+    {
+      "check": "HTTP exact data/evidence.json",
+      "pass": true
+    },
+    {
+      "check": "HTTP exact data/source-catalog.json",
+      "pass": true
+    },
+    {
+      "check": "HTTP exact index.html",
+      "pass": true
+    },
+    {
+      "check": "HTTP exact reports/capture-audit.md",
+      "pass": true
+    },
+    {
+      "check": "HTTP exact reports/closure.md",
+      "pass": true
+    },
+    {
+      "check": "HTTP exact reports/cto-stop.md",
+      "pass": true
+    },
+    {
+      "check": "HTTP exact reports/r1-result.md",
+      "pass": true
+    },
+    {
+      "check": "HTTP exact reports/r2-result.md",
+      "pass": true
+    },
+    {
+      "check": "HTTP exact reports/whole-v01-source-review.md",
+      "pass": true
+    },
+    {
+      "check": "HTTP exact reports/whole-v02-source-review.md",
+      "pass": true
+    },
+    {
+      "check": "HTTP exact reports/whole-v03-correction02-source-review.md",
+      "pass": true
+    },
+    {
+      "check": "HTTP exact reports/whole-v03-source-review.md",
+      "pass": true
+    },
+    {
+      "check": "HTTP exact reports/whole-v04-source-review.md",
+      "pass": true
+    },
+    {
+      "check": "HTTP exact source-manifest.json",
+      "pass": true
+    },
+    {
+      "check": "HTTP exact viewer.css",
+      "pass": true
+    },
+    {
+      "check": "HTTP exact viewer.js",
+      "pass": true
+    },
+    {
+      "check": "output data/source-catalog.json",
+      "pass": true
+    },
+    {
+      "check": "origin experiments/q4a-whole-character/art/negative-review/SOURCE_CATALOG.json",
+      "pass": true
+    },
+    {
+      "check": "exact copy data/source-catalog.json",
+      "pass": true
+    },
+    {
+      "check": "output assets/whole-v01.png",
+      "pass": true
+    },
+    {
+      "check": "origin experiments/q4a-whole-character/art/source/whole-v01.png",
+      "pass": true
+    },
+    {
+      "check": "committed origin content experiments/q4a-whole-character/art/source/whole-v01.png",
+      "pass": true
+    },
+    {
+      "check": "exact copy assets/whole-v01.png",
+      "pass": true
+    },
+    {
+      "check": "output assets/whole-v01-shoulder.png",
+      "pass": true
+    },
+    {
+      "check": "origin experiments/q4a-whole-character/art/source/whole-v01.png",
+      "pass": true
+    },
+    {
+      "check": "committed origin content experiments/q4a-whole-character/art/source/whole-v01.png",
+      "pass": true
+    },
+    {
+      "check": "crop pixels assets/whole-v01-shoulder.png",
+      "pass": true
+    },
+    {
+      "check": "output assets/whole-v01-hip.png",
+      "pass": true
+    },
+    {
+      "check": "origin experiments/q4a-whole-character/art/source/whole-v01.png",
+      "pass": true
+    },
+    {
+      "check": "committed origin content experiments/q4a-whole-character/art/source/whole-v01.png",
+      "pass": true
+    },
+    {
+      "check": "crop pixels assets/whole-v01-hip.png",
+      "pass": true
+    },
+    {
+      "check": "output reports/whole-v01-source-review.md",
+      "pass": true
+    },
+    {
+      "check": "origin experiments/q4a-whole-character/art/source/whole-v01-notes.md",
+      "pass": true
+    },
+    {
+      "check": "committed origin content experiments/q4a-whole-character/art/source/whole-v01-notes.md",
+      "pass": true
+    },
+    {
+      "check": "exact copy reports/whole-v01-source-review.md",
+      "pass": true
+    },
+    {
+      "check": "output assets/whole-v02.png",
+      "pass": true
+    },
+    {
+      "check": "origin experiments/q4a-whole-character/art/source/whole-v02.png",
+      "pass": true
+    },
+    {
+      "check": "committed origin content experiments/q4a-whole-character/art/source/whole-v02.png",
+      "pass": true
+    },
+    {
+      "check": "exact copy assets/whole-v02.png",
+      "pass": true
+    },
+    {
+      "check": "output assets/whole-v02-shoulder.png",
+      "pass": true
+    },
+    {
+      "check": "origin experiments/q4a-whole-character/art/source/whole-v02.png",
+      "pass": true
+    },
+    {
+      "check": "committed origin content experiments/q4a-whole-character/art/source/whole-v02.png",
+      "pass": true
+    },
+    {
+      "check": "crop pixels assets/whole-v02-shoulder.png",
+      "pass": true
+    },
+    {
+      "check": "output assets/whole-v02-hip.png",
+      "pass": true
+    },
+    {
+      "check": "origin experiments/q4a-whole-character/art/source/whole-v02.png",
+      "pass": true
+    },
+    {
+      "check": "committed origin content experiments/q4a-whole-character/art/source/whole-v02.png",
+      "pass": true
+    },
+    {
+      "check": "crop pixels assets/whole-v02-hip.png",
+      "pass": true
+    },
+    {
+      "check": "output reports/whole-v02-source-review.md",
+      "pass": true
+    },
+    {
+      "check": "origin experiments/q4a-whole-character/art/source/whole-v02-notes.md",
+      "pass": true
+    },
+    {
+      "check": "committed origin content experiments/q4a-whole-character/art/source/whole-v02-notes.md",
+      "pass": true
+    },
+    {
+      "check": "exact copy reports/whole-v02-source-review.md",
+      "pass": true
+    },
+    {
+      "check": "output assets/whole-v03.png",
+      "pass": true
+    },
+    {
+      "check": "origin experiments/q4a-whole-character/art/whole-v03/raw/whole-v03.png",
+      "pass": true
+    },
+    {
+      "check": "committed origin content experiments/q4a-whole-character/art/whole-v03/raw/whole-v03.png",
+      "pass": true
+    },
+    {
+      "check": "exact copy assets/whole-v03.png",
+      "pass": true
+    },
+    {
+      "check": "output assets/whole-v03-shoulder.png",
+      "pass": true
+    },
+    {
+      "check": "origin experiments/q4a-whole-character/art/whole-v03/raw/whole-v03.png",
+      "pass": true
+    },
+    {
+      "check": "committed origin content experiments/q4a-whole-character/art/whole-v03/raw/whole-v03.png",
+      "pass": true
+    },
+    {
+      "check": "crop pixels assets/whole-v03-shoulder.png",
+      "pass": true
+    },
+    {
+      "check": "output assets/whole-v03-hip.png",
+      "pass": true
+    },
+    {
+      "check": "origin experiments/q4a-whole-character/art/whole-v03/raw/whole-v03.png",
+      "pass": true
+    },
+    {
+      "check": "committed origin content experiments/q4a-whole-character/art/whole-v03/raw/whole-v03.png",
+      "pass": true
+    },
+    {
+      "check": "crop pixels assets/whole-v03-hip.png",
+      "pass": true
+    },
+    {
+      "check": "output reports/whole-v03-source-review.md",
+      "pass": true
+    },
+    {
+      "check": "origin experiments/q4a-whole-character/art/whole-v03/SOURCE_REVIEW.md",
+      "pass": true
+    },
+    {
+      "check": "committed origin content experiments/q4a-whole-character/art/whole-v03/SOURCE_REVIEW.md",
+      "pass": true
+    },
+    {
+      "check": "exact copy reports/whole-v03-source-review.md",
+      "pass": true
+    },
+    {
+      "check": "output assets/whole-v03-correction02.png",
+      "pass": true
+    },
+    {
+      "check": "origin experiments/q4a-whole-character/art/whole-v03/raw/whole-v03-correction02.png",
+      "pass": true
+    },
+    {
+      "check": "committed origin content experiments/q4a-whole-character/art/whole-v03/raw/whole-v03-correction02.png",
+      "pass": true
+    },
+    {
+      "check": "exact copy assets/whole-v03-correction02.png",
+      "pass": true
+    },
+    {
+      "check": "output assets/whole-v03-correction02-shoulder.png",
+      "pass": true
+    },
+    {
+      "check": "origin experiments/q4a-whole-character/art/whole-v03/raw/whole-v03-correction02.png",
+      "pass": true
+    },
+    {
+      "check": "committed origin content experiments/q4a-whole-character/art/whole-v03/raw/whole-v03-correction02.png",
+      "pass": true
+    },
+    {
+      "check": "crop pixels assets/whole-v03-correction02-shoulder.png",
+      "pass": true
+    },
+    {
+      "check": "output assets/whole-v03-correction02-hip.png",
+      "pass": true
+    },
+    {
+      "check": "origin experiments/q4a-whole-character/art/whole-v03/raw/whole-v03-correction02.png",
+      "pass": true
+    },
+    {
+      "check": "committed origin content experiments/q4a-whole-character/art/whole-v03/raw/whole-v03-correction02.png",
+      "pass": true
+    },
+    {
+      "check": "crop pixels assets/whole-v03-correction02-hip.png",
+      "pass": true
+    },
+    {
+      "check": "output reports/whole-v03-correction02-source-review.md",
+      "pass": true
+    },
+    {
+      "check": "origin experiments/q4a-whole-character/art/whole-v03/SOURCE_REVIEW_CORRECTION02.md",
+      "pass": true
+    },
+    {
+      "check": "committed origin content experiments/q4a-whole-character/art/whole-v03/SOURCE_REVIEW_CORRECTION02.md",
+      "pass": true
+    },
+    {
+      "check": "exact copy reports/whole-v03-correction02-source-review.md",
+      "pass": true
+    },
+    {
+      "check": "output assets/whole-v04.png",
+      "pass": true
+    },
+    {
+      "check": "origin experiments/q4a-whole-character/art/whole-v04/raw/whole-v04.png",
+      "pass": true
+    },
+    {
+      "check": "committed origin content experiments/q4a-whole-character/art/whole-v04/raw/whole-v04.png",
+      "pass": true
+    },
+    {
+      "check": "exact copy assets/whole-v04.png",
+      "pass": true
+    },
+    {
+      "check": "output assets/whole-v04-shoulder.png",
+      "pass": true
+    },
+    {
+      "check": "origin experiments/q4a-whole-character/art/whole-v04/raw/whole-v04.png",
+      "pass": true
+    },
+    {
+      "check": "committed origin content experiments/q4a-whole-character/art/whole-v04/raw/whole-v04.png",
+      "pass": true
+    },
+    {
+      "check": "crop pixels assets/whole-v04-shoulder.png",
+      "pass": true
+    },
+    {
+      "check": "output assets/whole-v04-hip.png",
+      "pass": true
+    },
+    {
+      "check": "origin experiments/q4a-whole-character/art/whole-v04/raw/whole-v04.png",
+      "pass": true
+    },
+    {
+      "check": "committed origin content experiments/q4a-whole-character/art/whole-v04/raw/whole-v04.png",
+      "pass": true
+    },
+    {
+      "check": "crop pixels assets/whole-v04-hip.png",
+      "pass": true
+    },
+    {
+      "check": "output reports/whole-v04-source-review.md",
+      "pass": true
+    },
+    {
+      "check": "origin experiments/q4a-whole-character/art/whole-v04/SOURCE_REVIEW.md",
+      "pass": true
+    },
+    {
+      "check": "committed origin content experiments/q4a-whole-character/art/whole-v04/SOURCE_REVIEW.md",
+      "pass": true
+    },
+    {
+      "check": "exact copy reports/whole-v04-source-review.md",
+      "pass": true
+    },
+    {
+      "check": "output data/evidence.json",
+      "pass": true
+    },
+    {
+      "check": "origin experiments/q4a-whole-character/builder/early-v04-r1/CAGE_REST.json",
+      "pass": true
+    },
+    {
+      "check": "committed origin content experiments/q4a-whole-character/builder/early-v04-r1/CAGE_REST.json",
+      "pass": true
+    },
+    {
+      "check": "origin experiments/q4a-whole-character/builder/early-v04-r2/R2_RESULT.json",
+      "pass": true
+    },
+    {
+      "check": "committed origin content experiments/q4a-whole-character/builder/early-v04-r2/R2_RESULT.json",
+      "pass": true
+    },
+    {
+      "check": "origin experiments/q4a-whole-character/builder/early-v04-r2/R2_FAILURE.json",
+      "pass": true
+    },
+    {
+      "check": "committed origin content experiments/q4a-whole-character/builder/early-v04-r2/R2_FAILURE.json",
+      "pass": true
+    },
+    {
+      "check": "origin experiments/q4a-whole-character/art/negative-review/SOURCE_CATALOG.json",
+      "pass": true
+    },
+    {
+      "check": "output assets/hip-texture.png",
+      "pass": true
+    },
+    {
+      "check": "origin experiments/q4a-whole-character/builder/early-v04-r1/inputs03/materials/hip_shorts.png",
+      "pass": true
+    },
+    {
+      "check": "committed origin content experiments/q4a-whole-character/builder/early-v04-r1/inputs03/materials/hip_shorts.png",
+      "pass": true
+    },
+    {
+      "check": "exact copy assets/hip-texture.png",
+      "pass": true
+    },
+    {
+      "check": "output assets/r1-witness.png",
+      "pass": true
+    },
+    {
+      "check": "origin experiments/q4a-whole-character/builder/early-v04-r1/CAGE_FAILURE.png",
+      "pass": true
+    },
+    {
+      "check": "committed origin content experiments/q4a-whole-character/builder/early-v04-r1/CAGE_FAILURE.png",
+      "pass": true
+    },
+    {
+      "check": "exact copy assets/r1-witness.png",
+      "pass": true
+    },
+    {
+      "check": "output assets/r2-witness.png",
+      "pass": true
+    },
+    {
+      "check": "origin experiments/q4a-whole-character/builder/early-v04-r2/R2_WITNESS.png",
+      "pass": true
+    },
+    {
+      "check": "committed origin content experiments/q4a-whole-character/builder/early-v04-r2/R2_WITNESS.png",
+      "pass": true
+    },
+    {
+      "check": "exact copy assets/r2-witness.png",
+      "pass": true
+    },
+    {
+      "check": "output assets/leg-chain-feasibility.png",
+      "pass": true
+    },
+    {
+      "check": "origin experiments/q4a-whole-character/builder/early-v04-r1/GEOMETRY_FEASIBILITY.png",
+      "pass": true
+    },
+    {
+      "check": "committed origin content experiments/q4a-whole-character/builder/early-v04-r1/GEOMETRY_FEASIBILITY.png",
+      "pass": true
+    },
+    {
+      "check": "exact copy assets/leg-chain-feasibility.png",
+      "pass": true
+    },
+    {
+      "check": "output reports/r1-result.md",
+      "pass": true
+    },
+    {
+      "check": "origin experiments/q4a-whole-character/builder/early-v04-r1/RESULT.md",
+      "pass": true
+    },
+    {
+      "check": "committed origin content experiments/q4a-whole-character/builder/early-v04-r1/RESULT.md",
+      "pass": true
+    },
+    {
+      "check": "exact copy reports/r1-result.md",
+      "pass": true
+    },
+    {
+      "check": "output reports/r2-result.md",
+      "pass": true
+    },
+    {
+      "check": "origin experiments/q4a-whole-character/builder/early-v04-r2/RESULT.md",
+      "pass": true
+    },
+    {
+      "check": "committed origin content experiments/q4a-whole-character/builder/early-v04-r2/RESULT.md",
+      "pass": true
+    },
+    {
+      "check": "exact copy reports/r2-result.md",
+      "pass": true
+    },
+    {
+      "check": "output reports/capture-audit.md",
+      "pass": true
+    },
+    {
+      "check": "origin experiments/q4a-whole-character/builder/early-v04-r2/EXECUTION_CAPTURE_AUDIT.md",
+      "pass": true
+    },
+    {
+      "check": "committed origin content experiments/q4a-whole-character/builder/early-v04-r2/EXECUTION_CAPTURE_AUDIT.md",
+      "pass": true
+    },
+    {
+      "check": "exact copy reports/capture-audit.md",
+      "pass": true
+    },
+    {
+      "check": "output reports/cto-stop.md",
+      "pass": true
+    },
+    {
+      "check": "origin experiments/q4a-whole-character/CTO_STOP_DECISION.md",
+      "pass": true
+    },
+    {
+      "check": "committed origin content experiments/q4a-whole-character/CTO_STOP_DECISION.md",
+      "pass": true
+    },
+    {
+      "check": "exact copy reports/cto-stop.md",
+      "pass": true
+    },
+    {
+      "check": "output reports/closure.md",
+      "pass": true
+    },
+    {
+      "check": "origin experiments/q4a-whole-character/CLOSURE.md",
+      "pass": true
+    },
+    {
+      "check": "committed origin content experiments/q4a-whole-character/CLOSURE.md",
+      "pass": true
+    },
+    {
+      "check": "exact copy reports/closure.md",
+      "pass": true
+    },
+    {
+      "check": "output index.html",
+      "pass": true
+    },
+    {
+      "check": "origin experiments/q4a-whole-character/app/negative-review/index.html",
+      "pass": true
+    },
+    {
+      "check": "exact copy index.html",
+      "pass": true
+    },
+    {
+      "check": "output viewer.css",
+      "pass": true
+    },
+    {
+      "check": "origin experiments/q4a-whole-character/app/negative-review/viewer.css",
+      "pass": true
+    },
+    {
+      "check": "exact copy viewer.css",
+      "pass": true
+    },
+    {
+      "check": "output viewer.js",
+      "pass": true
+    },
+    {
+      "check": "origin experiments/q4a-whole-character/app/negative-review/viewer.mjs",
+      "pass": true
+    },
+    {
+      "check": "five whole sources",
+      "pass": true
+    },
+    {
+      "check": "catalog whole-v01 id",
+      "pass": true
+    },
+    {
+      "check": "catalog whole-v01 origin",
+      "pass": true
+    },
+    {
+      "check": "catalog whole-v01 sha256",
+      "pass": true
+    },
+    {
+      "check": "catalog whole-v01 statusScope",
+      "pass": true
+    },
+    {
+      "check": "catalog status whole-v01",
+      "pass": true
+    },
+    {
+      "check": "catalog whole-v02 id",
+      "pass": true
+    },
+    {
+      "check": "catalog whole-v02 origin",
+      "pass": true
+    },
+    {
+      "check": "catalog whole-v02 sha256",
+      "pass": true
+    },
+    {
+      "check": "catalog whole-v02 statusScope",
+      "pass": true
+    },
+    {
+      "check": "catalog status whole-v02",
+      "pass": true
+    },
+    {
+      "check": "catalog whole-v03 id",
+      "pass": true
+    },
+    {
+      "check": "catalog whole-v03 origin",
+      "pass": true
+    },
+    {
+      "check": "catalog whole-v03 sha256",
+      "pass": true
+    },
+    {
+      "check": "catalog whole-v03 statusScope",
+      "pass": true
+    },
+    {
+      "check": "catalog status whole-v03",
+      "pass": true
+    },
+    {
+      "check": "catalog whole-v03-correction02 id",
+      "pass": true
+    },
+    {
+      "check": "catalog whole-v03-correction02 origin",
+      "pass": true
+    },
+    {
+      "check": "catalog whole-v03-correction02 sha256",
+      "pass": true
+    },
+    {
+      "check": "catalog whole-v03-correction02 statusScope",
+      "pass": true
+    },
+    {
+      "check": "catalog status whole-v03-correction02",
+      "pass": true
+    },
+    {
+      "check": "catalog whole-v04 id",
+      "pass": true
+    },
+    {
+      "check": "catalog whole-v04 origin",
+      "pass": true
+    },
+    {
+      "check": "catalog whole-v04 sha256",
+      "pass": true
+    },
+    {
+      "check": "catalog whole-v04 statusScope",
+      "pass": true
+    },
+    {
+      "check": "catalog status whole-v04",
+      "pass": true
+    },
+    {
+      "check": "rest vertices",
+      "pass": true
+    },
+    {
+      "check": "rest triangles",
+      "pass": true
+    },
+    {
+      "check": "rest constraints",
+      "pass": true
+    },
+    {
+      "check": "exact count/order",
+      "pass": true
+    },
+    {
+      "check": "accepted 0 label",
+      "pass": true
+    },
+    {
+      "check": "accepted 0 low",
+      "pass": true
+    },
+    {
+      "check": "accepted 0 vertices",
+      "pass": true
+    },
+    {
+      "check": "accepted 0 minSingularValue",
+      "pass": true
+    },
+    {
+      "check": "accepted 0 maxCondition",
+      "pass": true
+    },
+    {
+      "check": "accepted 0 pinErrorPx",
+      "pass": true
+    },
+    {
+      "check": "accepted 1 label",
+      "pass": true
+    },
+    {
+      "check": "accepted 1 low",
+      "pass": true
+    },
+    {
+      "check": "accepted 1 vertices",
+      "pass": true
+    },
+    {
+      "check": "accepted 1 minSingularValue",
+      "pass": true
+    },
+    {
+      "check": "accepted 1 maxCondition",
+      "pass": true
+    },
+    {
+      "check": "accepted 1 pinErrorPx",
+      "pass": true
+    },
+    {
+      "check": "accepted 2 label",
+      "pass": true
+    },
+    {
+      "check": "accepted 2 low",
+      "pass": true
+    },
+    {
+      "check": "accepted 2 vertices",
+      "pass": true
+    },
+    {
+      "check": "accepted 2 minSingularValue",
+      "pass": true
+    },
+    {
+      "check": "accepted 2 maxCondition",
+      "pass": true
+    },
+    {
+      "check": "accepted 2 pinErrorPx",
+      "pass": true
+    },
+    {
+      "check": "accepted 3 label",
+      "pass": true
+    },
+    {
+      "check": "accepted 3 low",
+      "pass": true
+    },
+    {
+      "check": "accepted 3 vertices",
+      "pass": true
+    },
+    {
+      "check": "accepted 3 minSingularValue",
+      "pass": true
+    },
+    {
+      "check": "accepted 3 maxCondition",
+      "pass": true
+    },
+    {
+      "check": "accepted 3 pinErrorPx",
+      "pass": true
+    },
+    {
+      "check": "accepted 4 label",
+      "pass": true
+    },
+    {
+      "check": "accepted 4 low",
+      "pass": true
+    },
+    {
+      "check": "accepted 4 vertices",
+      "pass": true
+    },
+    {
+      "check": "accepted 4 minSingularValue",
+      "pass": true
+    },
+    {
+      "check": "accepted 4 maxCondition",
+      "pass": true
+    },
+    {
+      "check": "accepted 4 pinErrorPx",
+      "pass": true
+    },
+    {
+      "check": "accepted 5 label",
+      "pass": true
+    },
+    {
+      "check": "accepted 5 low",
+      "pass": true
+    },
+    {
+      "check": "accepted 5 vertices",
+      "pass": true
+    },
+    {
+      "check": "accepted 5 minSingularValue",
+      "pass": true
+    },
+    {
+      "check": "accepted 5 maxCondition",
+      "pass": true
+    },
+    {
+      "check": "accepted 5 pinErrorPx",
+      "pass": true
+    },
+    {
+      "check": "accepted 6 label",
+      "pass": true
+    },
+    {
+      "check": "accepted 6 low",
+      "pass": true
+    },
+    {
+      "check": "accepted 6 vertices",
+      "pass": true
+    },
+    {
+      "check": "accepted 6 minSingularValue",
+      "pass": true
+    },
+    {
+      "check": "accepted 6 maxCondition",
+      "pass": true
+    },
+    {
+      "check": "accepted 6 pinErrorPx",
+      "pass": true
+    },
+    {
+      "check": "accepted 7 label",
+      "pass": true
+    },
+    {
+      "check": "accepted 7 low",
+      "pass": true
+    },
+    {
+      "check": "accepted 7 vertices",
+      "pass": true
+    },
+    {
+      "check": "accepted 7 minSingularValue",
+      "pass": true
+    },
+    {
+      "check": "accepted 7 maxCondition",
+      "pass": true
+    },
+    {
+      "check": "accepted 7 pinErrorPx",
+      "pass": true
+    },
+    {
+      "check": "accepted 8 label",
+      "pass": true
+    },
+    {
+      "check": "accepted 8 low",
+      "pass": true
+    },
+    {
+      "check": "accepted 8 vertices",
+      "pass": true
+    },
+    {
+      "check": "accepted 8 minSingularValue",
+      "pass": true
+    },
+    {
+      "check": "accepted 8 maxCondition",
+      "pass": true
+    },
+    {
+      "check": "accepted 8 pinErrorPx",
+      "pass": true
+    },
+    {
+      "check": "accepted 9 label",
+      "pass": true
+    },
+    {
+      "check": "accepted 9 low",
+      "pass": true
+    },
+    {
+      "check": "accepted 9 vertices",
+      "pass": true
+    },
+    {
+      "check": "accepted 9 minSingularValue",
+      "pass": true
+    },
+    {
+      "check": "accepted 9 maxCondition",
+      "pass": true
+    },
+    {
+      "check": "accepted 9 pinErrorPx",
+      "pass": true
+    },
+    {
+      "check": "accepted 10 label",
+      "pass": true
+    },
+    {
+      "check": "accepted 10 low",
+      "pass": true
+    },
+    {
+      "check": "accepted 10 vertices",
+      "pass": true
+    },
+    {
+      "check": "accepted 10 minSingularValue",
+      "pass": true
+    },
+    {
+      "check": "accepted 10 maxCondition",
+      "pass": true
+    },
+    {
+      "check": "accepted 10 pinErrorPx",
+      "pass": true
+    },
+    {
+      "check": "accepted 11 label",
+      "pass": true
+    },
+    {
+      "check": "accepted 11 low",
+      "pass": true
+    },
+    {
+      "check": "accepted 11 vertices",
+      "pass": true
+    },
+    {
+      "check": "accepted 11 minSingularValue",
+      "pass": true
+    },
+    {
+      "check": "accepted 11 maxCondition",
+      "pass": true
+    },
+    {
+      "check": "accepted 11 pinErrorPx",
+      "pass": true
+    },
+    {
+      "check": "accepted 12 label",
+      "pass": true
+    },
+    {
+      "check": "accepted 12 low",
+      "pass": true
+    },
+    {
+      "check": "accepted 12 vertices",
+      "pass": true
+    },
+    {
+      "check": "accepted 12 minSingularValue",
+      "pass": true
+    },
+    {
+      "check": "accepted 12 maxCondition",
+      "pass": true
+    },
+    {
+      "check": "accepted 12 pinErrorPx",
+      "pass": true
+    },
+    {
+      "check": "accepted 13 label",
+      "pass": true
+    },
+    {
+      "check": "accepted 13 low",
+      "pass": true
+    },
+    {
+      "check": "accepted 13 vertices",
+      "pass": true
+    },
+    {
+      "check": "accepted 13 minSingularValue",
+      "pass": true
+    },
+    {
+      "check": "accepted 13 maxCondition",
+      "pass": true
+    },
+    {
+      "check": "accepted 13 pinErrorPx",
+      "pass": true
+    },
+    {
+      "check": "accepted 14 label",
+      "pass": true
+    },
+    {
+      "check": "accepted 14 low",
+      "pass": true
+    },
+    {
+      "check": "accepted 14 vertices",
+      "pass": true
+    },
+    {
+      "check": "accepted 14 minSingularValue",
+      "pass": true
+    },
+    {
+      "check": "accepted 14 maxCondition",
+      "pass": true
+    },
+    {
+      "check": "accepted 14 pinErrorPx",
+      "pass": true
+    },
+    {
+      "check": "accepted 15 label",
+      "pass": true
+    },
+    {
+      "check": "accepted 15 low",
+      "pass": true
+    },
+    {
+      "check": "accepted 15 vertices",
+      "pass": true
+    },
+    {
+      "check": "accepted 15 minSingularValue",
+      "pass": true
+    },
+    {
+      "check": "accepted 15 maxCondition",
+      "pass": true
+    },
+    {
+      "check": "accepted 15 pinErrorPx",
+      "pass": true
+    },
+    {
+      "check": "accepted 16 label",
+      "pass": true
+    },
+    {
+      "check": "accepted 16 low",
+      "pass": true
+    },
+    {
+      "check": "accepted 16 vertices",
+      "pass": true
+    },
+    {
+      "check": "accepted 16 minSingularValue",
+      "pass": true
+    },
+    {
+      "check": "accepted 16 maxCondition",
+      "pass": true
+    },
+    {
+      "check": "accepted 16 pinErrorPx",
+      "pass": true
+    },
+    {
+      "check": "accepted 17 label",
+      "pass": true
+    },
+    {
+      "check": "accepted 17 low",
+      "pass": true
+    },
+    {
+      "check": "accepted 17 vertices",
+      "pass": true
+    },
+    {
+      "check": "accepted 17 minSingularValue",
+      "pass": true
+    },
+    {
+      "check": "accepted 17 maxCondition",
+      "pass": true
+    },
+    {
+      "check": "accepted 17 pinErrorPx",
+      "pass": true
+    },
+    {
+      "check": "accepted 18 label",
+      "pass": true
+    },
+    {
+      "check": "accepted 18 low",
+      "pass": true
+    },
+    {
+      "check": "accepted 18 vertices",
+      "pass": true
+    },
+    {
+      "check": "accepted 18 minSingularValue",
+      "pass": true
+    },
+    {
+      "check": "accepted 18 maxCondition",
+      "pass": true
+    },
+    {
+      "check": "accepted 18 pinErrorPx",
+      "pass": true
+    },
+    {
+      "check": "accepted 19 label",
+      "pass": true
+    },
+    {
+      "check": "accepted 19 low",
+      "pass": true
+    },
+    {
+      "check": "accepted 19 vertices",
+      "pass": true
+    },
+    {
+      "check": "accepted 19 minSingularValue",
+      "pass": true
+    },
+    {
+      "check": "accepted 19 maxCondition",
+      "pass": true
+    },
+    {
+      "check": "accepted 19 pinErrorPx",
+      "pass": true
+    },
+    {
+      "check": "accepted 20 label",
+      "pass": true
+    },
+    {
+      "check": "accepted 20 low",
+      "pass": true
+    },
+    {
+      "check": "accepted 20 vertices",
+      "pass": true
+    },
+    {
+      "check": "accepted 20 minSingularValue",
+      "pass": true
+    },
+    {
+      "check": "accepted 20 maxCondition",
+      "pass": true
+    },
+    {
+      "check": "accepted 20 pinErrorPx",
+      "pass": true
+    },
+    {
+      "check": "accepted 21 label",
+      "pass": true
+    },
+    {
+      "check": "accepted 21 low",
+      "pass": true
+    },
+    {
+      "check": "accepted 21 vertices",
+      "pass": true
+    },
+    {
+      "check": "accepted 21 minSingularValue",
+      "pass": true
+    },
+    {
+      "check": "accepted 21 maxCondition",
+      "pass": true
+    },
+    {
+      "check": "accepted 21 pinErrorPx",
+      "pass": true
+    },
+    {
+      "check": "accepted 22 label",
+      "pass": true
+    },
+    {
+      "check": "accepted 22 low",
+      "pass": true
+    },
+    {
+      "check": "accepted 22 vertices",
+      "pass": true
+    },
+    {
+      "check": "accepted 22 minSingularValue",
+      "pass": true
+    },
+    {
+      "check": "accepted 22 maxCondition",
+      "pass": true
+    },
+    {
+      "check": "accepted 22 pinErrorPx",
+      "pass": true
+    },
+    {
+      "check": "accepted 23 label",
+      "pass": true
+    },
+    {
+      "check": "accepted 23 low",
+      "pass": true
+    },
+    {
+      "check": "accepted 23 vertices",
+      "pass": true
+    },
+    {
+      "check": "accepted 23 minSingularValue",
+      "pass": true
+    },
+    {
+      "check": "accepted 23 maxCondition",
+      "pass": true
+    },
+    {
+      "check": "accepted 23 pinErrorPx",
+      "pass": true
+    },
+    {
+      "check": "accepted 24 label",
+      "pass": true
+    },
+    {
+      "check": "accepted 24 low",
+      "pass": true
+    },
+    {
+      "check": "accepted 24 vertices",
+      "pass": true
+    },
+    {
+      "check": "accepted 24 minSingularValue",
+      "pass": true
+    },
+    {
+      "check": "accepted 24 maxCondition",
+      "pass": true
+    },
+    {
+      "check": "accepted 24 pinErrorPx",
+      "pass": true
+    },
+    {
+      "check": "accepted 25 label",
+      "pass": true
+    },
+    {
+      "check": "accepted 25 low",
+      "pass": true
+    },
+    {
+      "check": "accepted 25 vertices",
+      "pass": true
+    },
+    {
+      "check": "accepted 25 minSingularValue",
+      "pass": true
+    },
+    {
+      "check": "accepted 25 maxCondition",
+      "pass": true
+    },
+    {
+      "check": "accepted 25 pinErrorPx",
+      "pass": true
+    },
+    {
+      "check": "rejected vertices",
+      "pass": true
+    },
+    {
+      "check": "rejected indices",
+      "pass": true
+    },
+    {
+      "check": "rejected metrics",
+      "pass": true
+    },
+    {
+      "check": "rejected meta",
+      "pass": true
+    },
+    {
+      "check": "rejected sourceTriangle",
+      "pass": true
+    },
+    {
+      "check": "triangle923",
+      "pass": true
+    },
+    {
+      "check": "no interpolation",
+      "pass": true
+    },
+    {
+      "check": "source commit",
+      "pass": true
+    },
+    {
+      "check": "correction01 no fake image",
+      "pass": true
+    }
+  ],
+  "failed": []
+}

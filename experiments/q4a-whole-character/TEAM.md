@@ -148,3 +148,9 @@ CTO независимо принял `2b9e0a8`/точный manifest и дал 
 CTO принял это как последний численный отрицательный/частичный результат и содержательно закрыл Q4A без объявления глобальной невозможности cage. [CLOSURE](CLOSURE.md), [решение](CTO_STOP_DECISION.md). Новые solver/topology/anchors/whole/repair/full parts/motion запрещены; Q2A закрыт.
 
 После exact R2 package commit разрешён только evidence Review candidate из frozen данных (`EVIDENCE_VIEWER.md`): Builder — viewer, Concept/Asset — truthful presentation, Technical/Visual QA — только integrity/controls/responsive/readability evidence candidate. Старые Review URLs/cards не меняются. Candidate после QA возвращается CTO на acceptance/отдельный release, не deploy команды.
+
+### Frozen evidence v02 принят CTO для отдельного PoC release
+
+Четыре независимых review exact v02 завершены: Concept/Asset presentation PASS, Technical QA PASS, Visual presentation PASS с minor VQA-N01. CTO принял замечание без изменения candidate/v03 и принял v02 для защищённого Review release. Точная версия, hashes, отчёты и решение — [ACCEPTANCE_NEGATIVE_REVIEW_V02.md](ACCEPTANCE_NEGATIVE_REVIEW_V02.md). V01 superseded сохранён, все frozen данные неизменны.
+
+Lead фиксирует и отправляет только Q4A-owned пакет в Git; готовность передачи Release Engineer не означает deploy или его запуск командой. Исследование закрыто negative/partial, полной анимации/art PASS нет, Q2A закрыт. Сотрудники остаются существующей постоянной командой; новый найм/чаты/агенты не создаются. Чужие dirty/untracked материалы сохранены.
