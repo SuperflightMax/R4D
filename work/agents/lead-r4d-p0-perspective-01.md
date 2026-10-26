@@ -138,3 +138,10 @@ Builder получил адресное поручение собрать пак
 - Browser tree содержит ровно 13 allowlisted routes. Reference, formal SVG, F1–F4 и три failure PNG взяты побайтно из exact inputs; HTML только представляет принятые Research/QA выводы.
 - `npm run build:prerelease`, `npm run check:prerelease` и полный `npm run check` PASS. Отдельный clean-worktree rebuild exact commit PASS, post-rebuild status clean. Playwright desktop/mobile: routes 200, console 0 errors / 0 warnings.
 - Release Engineer получил exact package на отдельный read-only audit. Publication запрещена до следующего решения CTO.
+
+## Release audit v1 и узкая presentation correction
+
+- Release Engineer audit exact `94b6f709ece6b0f9df78ee315ebc0bec89b12e62`: `PACKAGE_INTEGRITY_PASS / PUBLICATION_HOLD`. Ровно 13 файлов, hashes/sizes/source pins, original/F1–F4/failures, fresh rebuild и fail-closed mutation probes PASS. Existing nginx `/review/` auth contract совместим: unauth page/asset наследуют 303 login, foreign Origin 403, dotfile 404.
+- Два presentation findings закрываются до CTO publication decision: краткий browser `recipe.html` должен явно показывать фактические input hashes, `image_gen`, 11 invocations, settings/limitations, prompt/evidence locations и named corrections; заголовок «Принятая серия» заменяется на «Проверенная QA серия», чтобы не имитировать приёмку Макса.
+- Builder получил узкое поручение изменить только HTML/manifest/check artifacts. Accepted binaries, source recipe/QA, 13-route allowlist и P0 gates неизменны; после нового exact commit требуется повторный read-only Release audit.
+- Release audit рекомендует отдельный каталоговый раздел `R4D · перспективные доски` с одной карточкой, не менять существующий skeleton section/count 11. Exact catalog delta ещё не frozen; публикация запрещена.
