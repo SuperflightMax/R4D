@@ -1,5 +1,5 @@
 {
-  "id": "p1-board03-ball-candidate-b-v1",
+  "id": "p1-board03-ball-b-shadow-c-v2",
   "scope": "board-03-only",
   "reference": {
     "file": "03-sun-temple.jpg",
@@ -7,29 +7,28 @@
   },
   "selected": {
     "ball": "candidate-b/ball-64.png",
-    "shadow": "candidate-b/shadow-96x48.png",
-    "ballDiameterPx": 64,
-    "shadowSizePx": [96, 48]
+    "ballMaster": "candidate-b/ball-master-512.png",
+    "ballAssetDiameterPx": 64,
+    "projectedBallRadiusPx": 18,
+    "projectedBallDiameterPx": 36,
+    "shadow": "candidate-c/shadow-r18-54x27.png",
+    "shadowHighResolution": "candidate-c/shadow-96x48.png",
+    "shadowMaster": "candidate-c/shadow-master-768x384.png",
+    "shadowScreenSizePx": [54, 27]
   },
-  "masters": {
-    "ball": "candidate-b/ball-master-512.png",
-    "shadow": "candidate-b/shadow-master-768x384.png"
+  "shadowCorrection": {
+    "failedCandidate": "candidate-b/shadow-96x48.png",
+    "selectedCandidate": "candidate-c/shadow-r18-54x27.png",
+    "reason": "Candidate B loses useful contrast at the accepted projected radius of 18 px; candidate C keeps a soft but visible contact core and down-left penumbra."
   },
-  "alternatives": [
-    {
-      "ball": "candidate-b/ball-80.png",
-      "shadow": "candidate-b/shadow-120x60.png"
-    },
-    {
-      "ball": "candidate-b/ball-96.png",
-      "shadow": "candidate-b/shadow-144x72.png"
-    }
-  ],
-  "viewerSuggestion": {
+  "viewerContract": {
     "ballAnchor": [0.5, 0.5],
     "shadowAnchor": [0.5, 0.5],
     "shadowOffsetInBallDiameters": [-0.18, 0.25],
+    "shadowDirection": "down-left",
     "shadowIsVisualOnly": true,
+    "affectsCollider": false,
+    "affectsPrng": false,
     "drawOrder": ["shadow", "ball", "geometry-overlay"]
   }
 }
