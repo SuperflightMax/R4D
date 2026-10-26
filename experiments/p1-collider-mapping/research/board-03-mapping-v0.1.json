@@ -1,0 +1,196 @@
+{
+  "schema": "r4d.p1.board-03-mapping.v0.1",
+  "status": "board-03-research-checkpoint-for-builders",
+  "scope": {
+    "board": "03-sun-temple",
+    "otherBoards": "closed-pending-independent-qa-and-cto-decision",
+    "publication": "forbidden-at-this-checkpoint"
+  },
+  "sources": {
+    "r4dBaseCommit": "e5892fbea71fbbfeb9f22e6a18f0f788cf9a1449",
+    "p0PublishedPackageCommit": "2c64c06f0deefcdc5725ba0373f3844dfcd636f9",
+    "p0FormalResearchCommit": "627a9feb33cc6fdc8e63738ada13577752b9bf4a",
+    "p0RecipeCommit": "ee4d8e5c7dbb3b6618d58d6dacb0caf9b73dfb1b",
+    "sourceImage": {
+      "path": "K:\\Agents\\R4D\\Assets\\perspective\\03-sun-temple.jpg",
+      "sha256": "f5cfa2bbe8e4b49ecbc0f4c7a0cee99842b182b56ae495979153b8fc9ff86e32",
+      "widthPx": 1536,
+      "heightPx": 1536,
+      "readOnly": true
+    }
+  },
+  "coordinateSystems": {
+    "imagePixels": {
+      "origin": "top-left",
+      "xDirection": "right",
+      "yDirection": "down",
+      "extent": [1536, 1536]
+    },
+    "imageNormalized": {
+      "p": "xPx / 1536",
+      "q": "yPx / 1536"
+    },
+    "flat": {
+      "origin": "far-left playable-plane corner",
+      "xDirection": "left-to-right",
+      "yDirection": "far-to-near",
+      "extent": {
+        "x": [0, 1000],
+        "y": [0, 1000]
+      },
+      "canonicalSimAdapter": "numeric identity: sim x = flat x, sim y = flat y; only schema field names may change"
+    }
+  },
+  "transform": {
+    "id": "p0-selected-ruled-trapezoid-v0.1",
+    "reason": "preserves the accepted P0 selected model and its linear depth rows; it is not an exact recovered camera",
+    "constants": {
+      "flatSize": 1000,
+      "centerP": 0.5,
+      "farQ": 0.255,
+      "qPerZ": 0.52,
+      "farHalfWidth": 0.275,
+      "halfWidthPerZ": 0.14
+    },
+    "forward": [
+      "u = 2 * xFlat / 1000 - 1",
+      "z = yFlat / 1000",
+      "p = 0.5 + u * (0.275 + 0.14 * z)",
+      "q = 0.255 + 0.52 * z",
+      "xPx = 1536 * p",
+      "yPx = 1536 * q"
+    ],
+    "inverse": [
+      "p = xPx / 1536",
+      "q = yPx / 1536",
+      "z = (q - 0.255) / 0.52",
+      "u = (p - 0.5) / (0.275 + 0.14 * z)",
+      "xFlat = 500 * (u + 1)",
+      "yFlat = 1000 * z"
+    ],
+    "validDomain": "0 <= xFlat <= 1000 and 0 <= yFlat <= 1000; inverse accepts only points inside the forward-mapped quad",
+    "outsideDomainPolicy": "invalid; never clamp or extrapolate",
+    "quadFlatClockwise": [[0, 0], [1000, 0], [1000, 1000], [0, 1000]],
+    "quadImageNormalizedClockwise": [[0.225, 0.255], [0.775, 0.255], [0.915, 0.775], [0.085, 0.775]],
+    "quadImagePxClockwise": [[345.6, 391.68], [1190.4, 391.68], [1405.44, 1190.4], [130.56, 1190.4]]
+  },
+  "geometryConventions": {
+    "units": "flat units",
+    "circle": "center plus radius; viewer samples the actual config circle in flat space before forward mapping",
+    "axisAlignedSegmentLoop": {
+      "meaning": "four simulator segments, not a new physical primitive",
+      "vertexOrder": "top-left, top-right, bottom-right, bottom-left, close",
+      "expansion": "center [cx,cy] and halfExtents [hx,hy] expand to four closed segments at cx+-hx, cy+-hy"
+    },
+    "baseAnchorConvention": "the visible lower support-center cue is used as the exact flat center; no speculative hidden-depth offset is added",
+    "sizeRule": {
+      "p0ObjectScale": "S(z) = 0.91 + 0.18 * z",
+      "p0PlaneHalfWidth": "R(z) = 0.275 + 0.14 * z",
+      "horizontalCompensation": "Kx(z) = S(z) * 0.345 / R(z)",
+      "wheelNominalHalfExtentsAtZ05": [48, 14],
+      "headNominalHalfExtentsAtZ05": [45, 30],
+      "barrelNominalRadiusAtZ05": 34,
+      "application": "wheel/head half-width and barrel radius multiply by Kx; wheel/head half-depth multiplies by S"
+    }
+  },
+  "start": {
+    "id": "start-center-chute",
+    "positionFlat": [500, 75],
+    "directionFlat": [0, 1],
+    "sourceCue": "center far chute exit",
+    "ownedElsewhere": ["launch speed", "ball radius", "angleDeviationDeg", "bounceDeviation", "seed"]
+  },
+  "bounds": [
+    {"id": "bound-far", "from": [0, 0], "to": [1000, 0]},
+    {"id": "bound-left", "from": [0, 0], "to": [0, 1000]},
+    {"id": "bound-right", "from": [1000, 0], "to": [1000, 1000]},
+    {"id": "bound-near-01", "from": [0, 1000], "to": [25, 1000]},
+    {"id": "bound-near-02", "from": [185, 1000], "to": [255, 1000]},
+    {"id": "bound-near-03", "from": [430, 1000], "to": [575, 1000]},
+    {"id": "bound-near-04", "from": [735, 1000], "to": [815, 1000]},
+    {"id": "bound-near-05", "from": [975, 1000], "to": [1000, 1000]}
+  ],
+  "goals": [
+    {"id": "goal-01", "rectFlat": {"x": [25, 185], "y": [955, 1000]}},
+    {"id": "goal-02", "rectFlat": {"x": [255, 430], "y": [955, 1000]}},
+    {"id": "goal-03", "rectFlat": {"x": [575, 735], "y": [955, 1000]}},
+    {"id": "goal-04", "rectFlat": {"x": [815, 975], "y": [955, 1000]}}
+  ],
+  "obstacles": [
+    {"id": "head-01", "family": "head", "shape": "axisAlignedSegmentLoop", "sourceAnchorPx": [600, 545], "centerFlat": [318.839979, 191.957131], "halfExtentsFlat": [48.577, 28.337]},
+    {"id": "wheel-02", "family": "wheel", "shape": "axisAlignedSegmentLoop", "sourceAnchorPx": [941, 549], "centerFlat": [686.119414, 196.965144], "halfExtentsFlat": [51.745, 13.236]},
+    {"id": "wheel-03", "family": "wheel", "shape": "axisAlignedSegmentLoop", "sourceAnchorPx": [1135, 575], "centerFlat": [888.972773, 229.517228], "halfExtentsFlat": [51.293, 13.318]},
+    {"id": "wheel-01", "family": "wheel", "shape": "axisAlignedSegmentLoop", "sourceAnchorPx": [403, 588], "centerFlat": [115.995934, 245.793269], "halfExtentsFlat": [51.072, 13.359]},
+    {"id": "barrel-01", "family": "barrel", "shape": "circle", "sourceAnchorPx": [770, 603], "centerFlat": [502.086403, 264.573317], "radiusFlat": 35.998},
+    {"id": "barrel-02", "family": "barrel", "shape": "circle", "sourceAnchorPx": [534, 700], "centerFlat": [268.504426, 386.017628], "radiusFlat": 34.917},
+    {"id": "barrel-03", "family": "barrel", "shape": "circle", "sourceAnchorPx": [1006, 700], "centerFlat": [735.452763, 386.017628], "radiusFlat": 34.917},
+    {"id": "head-02", "family": "head", "shape": "axisAlignedSegmentLoop", "sourceAnchorPx": [356, 735], "centerFlat": [99.869711, 429.83774], "halfExtentsFlat": [45.734, 29.621]},
+    {"id": "head-03", "family": "head", "shape": "axisAlignedSegmentLoop", "sourceAnchorPx": [878, 735], "centerFlat": [606.830902, 429.83774], "halfExtentsFlat": [45.734, 29.621]},
+    {"id": "wheel-04", "family": "wheel", "shape": "axisAlignedSegmentLoop", "sourceAnchorPx": [655, 743], "centerFlat": [390.71274, 439.853766], "halfExtentsFlat": [48.668, 13.848]},
+    {"id": "barrel-04", "family": "barrel", "shape": "circle", "sourceAnchorPx": [1185, 770], "centerFlat": [897.706931, 473.657853], "radiusFlat": 34.204},
+    {"id": "barrel-05", "family": "barrel", "shape": "circle", "sourceAnchorPx": [492, 849], "centerFlat": [247.032497, 572.566106], "radiusFlat": 33.459},
+    {"id": "wheel-06", "family": "wheel", "shape": "axisAlignedSegmentLoop", "sourceAnchorPx": [1035, 849], "centerFlat": [744.718563, 572.566106], "halfExtentsFlat": [47.236, 14.183]},
+    {"id": "head-04", "family": "head", "shape": "axisAlignedSegmentLoop", "sourceAnchorPx": [767, 870], "centerFlat": [499.092853, 598.858173], "halfExtentsFlat": [44.034, 30.534]},
+    {"id": "wheel-05", "family": "wheel", "shape": "axisAlignedSegmentLoop", "sourceAnchorPx": [311, 917], "centerFlat": [94.737661, 657.702324], "halfExtentsFlat": [46.394, 14.397]},
+    {"id": "head-05", "family": "head", "shape": "axisAlignedSegmentLoop", "sourceAnchorPx": [1232, 921], "centerFlat": [910.685447, 662.710337], "halfExtentsFlat": [43.449, 30.879]},
+    {"id": "barrel-06", "family": "barrel", "shape": "circle", "sourceAnchorPx": [610, 968], "centerFlat": [363.218403, 721.554487], "radiusFlat": 32.439},
+    {"id": "barrel-07", "family": "barrel", "shape": "circle", "sourceAnchorPx": [919, 972], "centerFlat": [630.478363, 726.5625], "radiusFlat": 32.407},
+    {"id": "head-06", "family": "head", "shape": "axisAlignedSegmentLoop", "sourceAnchorPx": [421, 1048], "centerFlat": [210.399675, 821.714744], "halfExtentsFlat": [42.109, 31.737]},
+    {"id": "head-07", "family": "head", "shape": "axisAlignedSegmentLoop", "sourceAnchorPx": [1124, 1057], "centerFlat": [795.91474, 832.982772], "halfExtentsFlat": [42.019, 31.798]},
+    {"id": "wheel-07", "family": "wheel", "shape": "axisAlignedSegmentLoop", "sourceAnchorPx": [765, 1069], "centerFlat": [497.519658, 848.006811], "halfExtentsFlat": [44.695, 14.877]}
+  ],
+  "baseInference": {
+    "barrel": {
+      "observation": "lower cylindrical rim is partly visible",
+      "choice": "circle",
+      "sourceAnchorUncertaintyPx": [5, 8],
+      "sizeUncertaintyFlat": 6,
+      "confidence": "medium"
+    },
+    "head": {
+      "observation": "lower plinth is visible but its rear edge is hidden",
+      "choice": "four-segment rectangle",
+      "sourceAnchorUncertaintyPx": [5, 8],
+      "sizeUncertaintyFlat": [8, 10],
+      "confidence": "medium"
+    },
+    "wheel": {
+      "observation": "true footprint is hidden; only lower contact cue and shadow are visible",
+      "choice": "thin four-segment rectangle, deliberately not the full upright disk silhouette",
+      "sourceAnchorUncertaintyPx": [6, 10],
+      "sizeUncertaintyFlat": [10, 8],
+      "confidence": "low; first visual-QA priority"
+    }
+  },
+  "diagnosticRendering": {
+    "sourceOfTruth": "the exact config consumed by the simulator after segment-loop expansion",
+    "perspectiveView": "source image plus pointwise-forward-mapped actual config",
+    "flatView": "inverse-warped floor image plus actual config in flat coordinates",
+    "circleSamples": 96,
+    "segmentSamples": 32,
+    "fill": "none",
+    "drawOrder": "art, then goals/bounds/obstacles/start diagnostics above art",
+    "artOffPolicy": "no image masks or occluders may hide diagnostics",
+    "viewTogglePolicy": "must preserve seed, tick and complete simulation state"
+  },
+  "requiredChecks": {
+    "roundTripFlatMaxError": 1e-9,
+    "roundTripImageNormalizedMaxError": 1e-12,
+    "cornerImageNormalizedMaxError": 1e-12,
+    "sourceAnchorPixelMaxErrorAfterRoundTrip": 0.001,
+    "configIdentity": "Simulation Builder and Viewer Builder must expose the same canonical config digest",
+    "toggleInvariance": "Art, Geometry and view toggles must leave config digest, seed, tick, position and velocity unchanged",
+    "resizeInvariance": "uniform display scaling changes only viewport pixels; normalized overlay coordinates stay identical",
+    "noClamp": true
+  },
+  "deferred": {
+    "waterZoneBoard04": [
+      "whether painted water is traversable floor or void",
+      "which shorelines, islands, bridges or steps collapse to the single 2D plane",
+      "which water edges become bounds or obstacle segments",
+      "how reflection or water hides support bases",
+      "whether visible height changes require explicit uncertainty annotations"
+    ],
+    "reason": "board 04 is outside the board-03 checkpoint and may not be inspected or mapped until independent QA and the CTO transition decision"
+  }
+}
