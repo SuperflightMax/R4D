@@ -152,3 +152,9 @@ Builder получил адресное поручение собрать пак
 - Browser recipe теперь явно фиксирует `image_gen`, 11 invocations, exact hashes/settings/limitations/evidence paths и named failures/correction без raw prompt payload. Index использует «Проверенная QA серия F1–F4»; формулировка, имитировавшая приёмку Макса, удалена.
 - Release re-audit: `FINAL_PRERELEASE_AUDIT_PASS / PUBLICATION_FORBIDDEN_PENDING_CTO`. Fresh disposable-clone checker и расширенные mutation probes PASS; package total 13 files / 37,505,775 bytes. Existing auth/deployment contract повторно подтверждён без live changes.
 - CTO передан exact publication gate: package `9e58b344f5ca7df1a054f6e8fb8357a7372ac10d` и отдельный catalog section `R4D · перспективные доски Millionko`, count `1 демонстрация`, без изменения skeleton section/count 11. До решения CTO ничего не публиковать.
+
+## CTO publication hold по browser status
+
+CTO принял package `9e58b344f5ca7df1a054f6e8fb8357a7372ac10d`, source pins/checks и предложенный catalog delta без изменений. Публикация всё ещё не разрешена: четыре prerelease-надписи в browser bytes после выпуска стали бы ложными.
+
+Builder получил ровно одну presentation-only correction: заменить title, index eyebrow/footer и QA footer на формулировки опубликованного результата, всё ещё ожидающего приёмки Max. Главный P0/P1 status, QA facts, recipe facts, CSS/layout, 13-route allowlist и все binary/SVG assets заморожены. После нового commit требуется узкий read-only Release audit и отдельное окончательное разрешение CTO.
