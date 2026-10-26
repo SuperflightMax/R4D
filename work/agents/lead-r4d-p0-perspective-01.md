@@ -165,3 +165,18 @@ Builder получил ровно одну presentation-only correction: зам�
 - Final narrow Release audit: `FINAL_PRERELEASE_AUDIT_PASS / NO_PACKAGE_BLOCKERS`; fresh/mutation/auth checks PASS, package 37,505,860 bytes.
 - CTO дал `PUBLISH AUTHORIZED` только exact `2c64c06f0deefcdc5725ba0373f3844dfcd636f9` и ранее принятому отдельному catalog delta. Любой live conflict/unexpected diff требует abort/rollback без импровизации.
 - Release Engineer получил публикационное поручение: перечитать actual live root/manifest, сохранить все прежние bytes/entries, добавить только 13 P0 routes и exact catalog card, выполнить atomic switch и полный post-publish audit. После успешного выпуска — немедленный STOP P0; P1–P6 закрыты до явной приёмки Макса.
+
+## P0 опубликован — обязательный STOP
+
+- Exact package: `2c64c06f0deefcdc5725ba0373f3844dfcd636f9`.
+- URL: `https://superflight.space/review/r4d/p0-perspective/`.
+- Immutable live root/version: `/srv/superflight-review/releases/2c64c06f0deefcdc5725ba0373f3844dfcd636f9`.
+- Release manifest: `/srv/superflight-review/releases/2c64c06f0deefcdc5725ba0373f3844dfcd636f9/RELEASE_MANIFEST.json`; SHA-256 `a4921de4bb15d0f60e99f71a5ebabec5a0de6ec2bd9db25954222e4ea3e52c65`; 249,979 bytes.
+- Release содержит 427 browser files / 79,776,624 bytes; P0 — exact 13 files / 37,505,860 bytes. Все 413 прежних non-catalog files побайтно сохранены; previous immutable release повторно проверен.
+- Catalog exact: отдельный раздел `R4D · перспективные доски Millionko`, count `1 демонстрация`, принятая карточка. Skeleton section/count `11 демонстраций` неизменны.
+- Atomic Review-only switch, `nginx -t` до/после и graceful reload PASS; nginx active. Live snippet SHA-256 `a122594f640783a2597e0c7eee2d36a66d1a0de2fb65e6525201f899ae5f7015`; защищённые vhost/Imagen/portal/compose hashes неизменны.
+- Public auth/security checks PASS: P0 page/HTML/CSS/original/formal/F1–F4/failures → штатный unauth 303 login; foreign Origin 403; dotfile 404; POST 403; security/no-store/noindex/nosniff/referrer/DENY сохранены. Все 11 прежних R4D routes сохранили auth 303.
+- Authenticated browser 200 не проверялся: безопасной существующей сессии не было, browser helper дважды не инициализировался; cookies/credentials не читались и не создавались, auth не обходился. Доступность за auth подтверждена live nginx mapping и полной on-server hash/size/readability проверкой.
+- Rollback: `/opt/superflight-studio/backups/review-p0-20261026T004544Z`; guarded `rollback.py` подготовлен и не запускался.
+
+P0 остановлен после публикации. Никаких corrections, нового production или P1–P6 до явной приёмки Макса.
