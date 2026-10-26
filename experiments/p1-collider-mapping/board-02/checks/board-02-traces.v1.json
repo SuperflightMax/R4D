@@ -1,0 +1,487 @@
+{
+  "schemaVersion": 1,
+  "board": "02-dark-temple",
+  "simCoreCommit": "5a6fa03f1cdb3de88a2d9c7dbe795eb8e2a7f023",
+  "mappingCanonicalSha256": "4f5862f5c2a602fccdc4d4419f7b5e6e4049fb807038d386ee3950d9cad24a12",
+  "configFile": "runtime/board-02-config.v1.json",
+  "tickMs": 8,
+  "checkpoints": [
+    0,
+    1,
+    120,
+    360,
+    720,
+    1200,
+    2500
+  ],
+  "runs": [
+    {
+      "seed": 1,
+      "snapshots": [
+        {
+          "seed": 1,
+          "tick": 0,
+          "rngU32": 1,
+          "ball": {
+            "pos": {
+              "x": 500,
+              "y": 60
+            },
+            "vel": {
+              "x": 0,
+              "y": 0
+            }
+          },
+          "done": false
+        },
+        {
+          "seed": 1,
+          "tick": 1,
+          "rngU32": 1,
+          "ball": {
+            "pos": {
+              "x": 500,
+              "y": 60.03968
+            },
+            "vel": {
+              "x": 0,
+              "y": 4.96
+            }
+          },
+          "done": false
+        },
+        {
+          "seed": 1,
+          "tick": 120,
+          "rngU32": 1586005467,
+          "ball": {
+            "pos": {
+              "x": 439.8306684,
+              "y": 135.4097874
+            },
+            "vel": {
+              "x": -104.3967339,
+              "y": 226.2158829
+            }
+          },
+          "done": false
+        },
+        {
+          "seed": 1,
+          "tick": 360,
+          "rngU32": 2745540835,
+          "ball": {
+            "pos": {
+              "x": 653.6330277,
+              "y": 541.5288724
+            },
+            "vel": {
+              "x": -210.3923439,
+              "y": 306.4139345
+            }
+          },
+          "done": false
+        },
+        {
+          "seed": 1,
+          "tick": 674,
+          "rngU32": 4212701329,
+          "ball": {
+            "pos": {
+              "x": 927.2622559,
+              "y": 1025.7881939
+            },
+            "vel": {
+              "x": -120.0389107,
+              "y": 617.6604593
+            }
+          },
+          "done": true,
+          "result": {
+            "kind": "IN_BUCKET",
+            "bucketId": "goal-04"
+          }
+        },
+        {
+          "seed": 1,
+          "tick": 674,
+          "rngU32": 4212701329,
+          "ball": {
+            "pos": {
+              "x": 927.2622559,
+              "y": 1025.7881939
+            },
+            "vel": {
+              "x": -120.0389107,
+              "y": 617.6604593
+            }
+          },
+          "done": true,
+          "result": {
+            "kind": "IN_BUCKET",
+            "bucketId": "goal-04"
+          }
+        },
+        {
+          "seed": 1,
+          "tick": 674,
+          "rngU32": 4212701329,
+          "ball": {
+            "pos": {
+              "x": 927.2622559,
+              "y": 1025.7881939
+            },
+            "vel": {
+              "x": -120.0389107,
+              "y": 617.6604593
+            }
+          },
+          "done": true,
+          "result": {
+            "kind": "IN_BUCKET",
+            "bucketId": "goal-04"
+          }
+        }
+      ],
+      "events": [
+        {
+          "type": "run_started",
+          "tick": 0,
+          "timeSec": 0,
+          "dropId": "start-center-chute",
+          "ballId": "ball-02"
+        },
+        {
+          "type": "ball_spawned",
+          "tick": 0,
+          "timeSec": 0,
+          "dropId": "start-center-chute",
+          "ballId": "ball-02",
+          "x": 500,
+          "y": 60,
+          "vx": 0,
+          "vy": 0
+        },
+        {
+          "type": "object_hit",
+          "tick": 47,
+          "timeSec": 0.376,
+          "ballId": "ball-02",
+          "objectKind": "pin",
+          "objectId": "drum-01",
+          "x": 499.96318919354746,
+          "y": 106.53151616246744
+        },
+        {
+          "type": "object_hit",
+          "tick": 164,
+          "timeSec": 1.312,
+          "ballId": "ball-02",
+          "objectKind": "segment",
+          "objectId": "pillar-01:top",
+          "x": 403.1085044914728,
+          "y": 257.44253845401096
+        },
+        {
+          "type": "object_hit",
+          "tick": 209,
+          "timeSec": 1.672,
+          "ballId": "ball-02",
+          "objectKind": "pin",
+          "objectId": "skull-03",
+          "x": 526.9701373463619,
+          "y": 372.6792779097095
+        },
+        {
+          "type": "object_hit",
+          "tick": 275,
+          "timeSec": 2.2,
+          "ballId": "ball-02",
+          "objectKind": "pin",
+          "objectId": "drum-05",
+          "x": 742.8728706139983,
+          "y": 651.9695796710629
+        },
+        {
+          "type": "object_hit",
+          "tick": 324,
+          "timeSec": 2.592,
+          "ballId": "ball-02",
+          "objectKind": "segment",
+          "objectId": "cube-03:bottom",
+          "x": 712.5428857401046,
+          "y": 479.3425699232259
+        },
+        {
+          "type": "object_hit",
+          "tick": 360,
+          "timeSec": 2.88,
+          "ballId": "ball-02",
+          "objectKind": "segment",
+          "objectId": "pillar-03:top",
+          "x": 653.4423339498597,
+          "y": 543.9844510467341
+        },
+        {
+          "type": "object_hit",
+          "tick": 448,
+          "timeSec": 3.584,
+          "ballId": "ball-02",
+          "objectKind": "segment",
+          "objectId": "cube-06:top",
+          "x": 760.7146947351999,
+          "y": 908.774183
+        },
+        {
+          "type": "object_hit",
+          "tick": 616,
+          "timeSec": 4.928,
+          "ballId": "ball-02",
+          "objectKind": "wall",
+          "objectId": "wall_right",
+          "x": 982,
+          "y": 807.4643030352
+        },
+        {
+          "type": "bucket_entered",
+          "tick": 674,
+          "timeSec": 5.392,
+          "ballId": "ball-02",
+          "bucketId": "goal-04",
+          "x": 927.2622559,
+          "y": 1025.7881939
+        },
+        {
+          "type": "ball_finished",
+          "tick": 674,
+          "timeSec": 5.392,
+          "ballId": "ball-02",
+          "result": {
+            "kind": "IN_BUCKET",
+            "bucketId": "goal-04"
+          }
+        },
+        {
+          "type": "run_finished",
+          "tick": 674,
+          "timeSec": 5.392,
+          "dropId": "start-center-chute",
+          "ballId": "ball-02",
+          "result": {
+            "kind": "IN_BUCKET",
+            "bucketId": "goal-04"
+          }
+        }
+      ]
+    },
+    {
+      "seed": 2,
+      "snapshots": [
+        {
+          "seed": 2,
+          "tick": 0,
+          "rngU32": 2,
+          "ball": {
+            "pos": {
+              "x": 500,
+              "y": 60
+            },
+            "vel": {
+              "x": 0,
+              "y": 0
+            }
+          },
+          "done": false
+        },
+        {
+          "seed": 2,
+          "tick": 1,
+          "rngU32": 2,
+          "ball": {
+            "pos": {
+              "x": 500,
+              "y": 60.03968
+            },
+            "vel": {
+              "x": 0,
+              "y": 4.96
+            }
+          },
+          "done": false
+        },
+        {
+          "seed": 2,
+          "tick": 120,
+          "rngU32": 1975575172,
+          "ball": {
+            "pos": {
+              "x": 440.3619708,
+              "y": 134.9861034
+            },
+            "vel": {
+              "x": -103.4743338,
+              "y": 225.4803257
+            }
+          },
+          "done": false
+        },
+        {
+          "seed": 2,
+          "tick": 360,
+          "rngU32": 503495672,
+          "ball": {
+            "pos": {
+              "x": 419.0536294,
+              "y": 375.1096943
+            },
+            "vel": {
+              "x": -42.7004292,
+              "y": 410.6868794
+            }
+          },
+          "done": false
+        },
+        {
+          "seed": 2,
+          "tick": 476,
+          "rngU32": 503495672,
+          "ball": {
+            "pos": {
+              "x": 379.427635,
+              "y": 1025.4955943
+            },
+            "vel": {
+              "x": -42.7004292,
+              "y": 986.0468794
+            }
+          },
+          "done": true,
+          "result": {
+            "kind": "IN_BUCKET",
+            "bucketId": "goal-02"
+          }
+        },
+        {
+          "seed": 2,
+          "tick": 476,
+          "rngU32": 503495672,
+          "ball": {
+            "pos": {
+              "x": 379.427635,
+              "y": 1025.4955943
+            },
+            "vel": {
+              "x": -42.7004292,
+              "y": 986.0468794
+            }
+          },
+          "done": true,
+          "result": {
+            "kind": "IN_BUCKET",
+            "bucketId": "goal-02"
+          }
+        },
+        {
+          "seed": 2,
+          "tick": 476,
+          "rngU32": 503495672,
+          "ball": {
+            "pos": {
+              "x": 379.427635,
+              "y": 1025.4955943
+            },
+            "vel": {
+              "x": -42.7004292,
+              "y": 986.0468794
+            }
+          },
+          "done": true,
+          "result": {
+            "kind": "IN_BUCKET",
+            "bucketId": "goal-02"
+          }
+        }
+      ],
+      "events": [
+        {
+          "type": "run_started",
+          "tick": 0,
+          "timeSec": 0,
+          "dropId": "start-center-chute",
+          "ballId": "ball-02"
+        },
+        {
+          "type": "ball_spawned",
+          "tick": 0,
+          "timeSec": 0,
+          "dropId": "start-center-chute",
+          "ballId": "ball-02",
+          "x": 500,
+          "y": 60,
+          "vx": 0,
+          "vy": 0
+        },
+        {
+          "type": "object_hit",
+          "tick": 47,
+          "timeSec": 0.376,
+          "ballId": "ball-02",
+          "objectKind": "pin",
+          "objectId": "drum-01",
+          "x": 499.96318919354746,
+          "y": 106.53151616246744
+        },
+        {
+          "type": "object_hit",
+          "tick": 165,
+          "timeSec": 1.32,
+          "ballId": "ball-02",
+          "objectKind": "segment",
+          "objectId": "pillar-01:top",
+          "x": 404.31657212221995,
+          "y": 260.1405024921915
+        },
+        {
+          "type": "object_hit",
+          "tick": 197,
+          "timeSec": 1.576,
+          "ballId": "ball-02",
+          "objectKind": "pin",
+          "objectId": "skull-03",
+          "x": 474.39338023192903,
+          "y": 360.32638433432777
+        },
+        {
+          "type": "bucket_entered",
+          "tick": 476,
+          "timeSec": 3.8080000000000003,
+          "ballId": "ball-02",
+          "bucketId": "goal-02",
+          "x": 379.427635,
+          "y": 1025.4955943
+        },
+        {
+          "type": "ball_finished",
+          "tick": 476,
+          "timeSec": 3.8080000000000003,
+          "ballId": "ball-02",
+          "result": {
+            "kind": "IN_BUCKET",
+            "bucketId": "goal-02"
+          }
+        },
+        {
+          "type": "run_finished",
+          "tick": 476,
+          "timeSec": 3.8080000000000003,
+          "dropId": "start-center-chute",
+          "ballId": "ball-02",
+          "result": {
+            "kind": "IN_BUCKET",
+            "bucketId": "goal-02"
+          }
+        }
+      ]
+    }
+  ]
+}
