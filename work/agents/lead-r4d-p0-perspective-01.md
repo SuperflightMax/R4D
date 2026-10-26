@@ -130,3 +130,11 @@ CTO проверил exact Lead state `1e07b43f56c5a55f7d6f41b5eb2d1d8703b514df`
 Builder получил адресное поручение собрать пакет без новых генераций и без изменений accepted boards/recipe/QA. Browser allowlist уточнён CTO: original JPG, formal SVG, четыре final boards и ровно три failures — d1 single-shot `2db5dffdbcd0fecaee7ffa209ea3ebe8c775cd2f`, c1 corrected single-shot `6452515fff9f7cb90b619cbe632b62b9573d668b`, QA-failed F1 composite из `4cdd9e6b1da397ae1549ab4085af0f830555fd42` — плюс HTML/CSS recipe/QA. Manifest, build и fail-closed checker должны быть tracked вне browser tree.
 
 После Builder commit разрешён только отдельный read-only Release audit. Публикация требует следующего решения CTO; P1 закрыт.
+
+## Frozen prerelease package
+
+- Builder package: `94b6f709ece6b0f9df78ee315ebc0bec89b12e62`, branch `codex/r4d-p0-perspective-builder-01`.
+- Manifest: `experiments/p0-perspective/builder/prerelease/manifest.json`; browser root: `experiments/p0-perspective/builder/prerelease/site/`.
+- Browser tree содержит ровно 13 allowlisted routes. Reference, formal SVG, F1–F4 и три failure PNG взяты побайтно из exact inputs; HTML только представляет принятые Research/QA выводы.
+- `npm run build:prerelease`, `npm run check:prerelease` и полный `npm run check` PASS. Отдельный clean-worktree rebuild exact commit PASS, post-rebuild status clean. Playwright desktop/mobile: routes 200, console 0 errors / 0 warnings.
+- Release Engineer получил exact package на отдельный read-only audit. Publication запрещена до следующего решения CTO.
