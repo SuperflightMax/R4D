@@ -1,0 +1,379 @@
+{
+  "schemaVersion": 1,
+  "board": "02-dark-temple",
+  "mapping": {
+    "commit": "bbf4b70d67f32a45118630d49c53c2fc48ec0971",
+    "schema": "r4d.p1.board-02.mapping.v0.1",
+    "canonicalization": "Research Python json.dumps(ensure_ascii=False,separators=(comma,colon))",
+    "canonicalSha256": "4f5862f5c2a602fccdc4d4419f7b5e6e4049fb807038d386ee3950d9cad24a12",
+    "jsSemanticSha256": "04d45ad1b02b0b1ccdb12a6d9b901986673f14933079b059d29ba9f7eb28814a",
+    "sourceImageSha256": "7ceff71bd0a871fecd725527dff5522450c8e75a74eb99c107b5d8624bf8fa3a"
+  },
+  "simCoreCommit": "5a6fa03f1cdb3de88a2d9c7dbe795eb8e2a7f023",
+  "config": {
+    "file": "board-02-config.v1.json",
+    "sha256": "aea8c0d299b71facbed00d7774da6e31211a7cfb6c119604637a4caa65e4dd48",
+    "simulationDomain": {
+      "width": 1000,
+      "height": 1150,
+      "playablePlaneY": [
+        0,
+        1000
+      ],
+      "receiverApronY": [
+        1000,
+        1150
+      ]
+    },
+    "counts": {
+      "pins": 12,
+      "obstacleSegments": 48,
+      "explicitNearSegments": 5,
+      "totalSegments": 53,
+      "implicitWalls": 3,
+      "buckets": 4,
+      "drops": 1
+    },
+    "ballRadiusFlat": 18,
+    "goalMapping": "direct bucketCircle centerFlat/radiusFlat transfer",
+    "implicitBounds": [
+      "bound-far",
+      "bound-left",
+      "bound-right"
+    ]
+  },
+  "mappingTable": [
+    {
+      "mappingId": "start-center-chute",
+      "mappingShape": "start",
+      "simKind": "drop",
+      "simIds": [
+        "start-center-chute"
+      ]
+    },
+    {
+      "mappingId": "drum-01",
+      "mappingShape": "circle",
+      "simKind": "pin",
+      "simIds": [
+        "drum-01"
+      ]
+    },
+    {
+      "mappingId": "skull-01",
+      "mappingShape": "circle",
+      "simKind": "pin",
+      "simIds": [
+        "skull-01"
+      ]
+    },
+    {
+      "mappingId": "skull-02",
+      "mappingShape": "circle",
+      "simKind": "pin",
+      "simIds": [
+        "skull-02"
+      ]
+    },
+    {
+      "mappingId": "drum-02",
+      "mappingShape": "circle",
+      "simKind": "pin",
+      "simIds": [
+        "drum-02"
+      ]
+    },
+    {
+      "mappingId": "pillar-01",
+      "mappingShape": "axisAlignedSegmentLoop",
+      "simKind": "segments",
+      "simIds": [
+        "pillar-01:top",
+        "pillar-01:right",
+        "pillar-01:bottom",
+        "pillar-01:left"
+      ]
+    },
+    {
+      "mappingId": "cube-01",
+      "mappingShape": "axisAlignedSegmentLoop",
+      "simKind": "segments",
+      "simIds": [
+        "cube-01:top",
+        "cube-01:right",
+        "cube-01:bottom",
+        "cube-01:left"
+      ]
+    },
+    {
+      "mappingId": "drum-03",
+      "mappingShape": "circle",
+      "simKind": "pin",
+      "simIds": [
+        "drum-03"
+      ]
+    },
+    {
+      "mappingId": "skull-03",
+      "mappingShape": "circle",
+      "simKind": "pin",
+      "simIds": [
+        "skull-03"
+      ]
+    },
+    {
+      "mappingId": "cube-02",
+      "mappingShape": "axisAlignedSegmentLoop",
+      "simKind": "segments",
+      "simIds": [
+        "cube-02:top",
+        "cube-02:right",
+        "cube-02:bottom",
+        "cube-02:left"
+      ]
+    },
+    {
+      "mappingId": "cube-03",
+      "mappingShape": "axisAlignedSegmentLoop",
+      "simKind": "segments",
+      "simIds": [
+        "cube-03:top",
+        "cube-03:right",
+        "cube-03:bottom",
+        "cube-03:left"
+      ]
+    },
+    {
+      "mappingId": "drum-04",
+      "mappingShape": "circle",
+      "simKind": "pin",
+      "simIds": [
+        "drum-04"
+      ]
+    },
+    {
+      "mappingId": "pillar-02",
+      "mappingShape": "axisAlignedSegmentLoop",
+      "simKind": "segments",
+      "simIds": [
+        "pillar-02:top",
+        "pillar-02:right",
+        "pillar-02:bottom",
+        "pillar-02:left"
+      ]
+    },
+    {
+      "mappingId": "skull-04",
+      "mappingShape": "circle",
+      "simKind": "pin",
+      "simIds": [
+        "skull-04"
+      ]
+    },
+    {
+      "mappingId": "pillar-03",
+      "mappingShape": "axisAlignedSegmentLoop",
+      "simKind": "segments",
+      "simIds": [
+        "pillar-03:top",
+        "pillar-03:right",
+        "pillar-03:bottom",
+        "pillar-03:left"
+      ]
+    },
+    {
+      "mappingId": "drum-05",
+      "mappingShape": "circle",
+      "simKind": "pin",
+      "simIds": [
+        "drum-05"
+      ]
+    },
+    {
+      "mappingId": "skull-05",
+      "mappingShape": "circle",
+      "simKind": "pin",
+      "simIds": [
+        "skull-05"
+      ]
+    },
+    {
+      "mappingId": "cube-04",
+      "mappingShape": "axisAlignedSegmentLoop",
+      "simKind": "segments",
+      "simIds": [
+        "cube-04:top",
+        "cube-04:right",
+        "cube-04:bottom",
+        "cube-04:left"
+      ]
+    },
+    {
+      "mappingId": "pillar-05",
+      "mappingShape": "axisAlignedSegmentLoop",
+      "simKind": "segments",
+      "simIds": [
+        "pillar-05:top",
+        "pillar-05:right",
+        "pillar-05:bottom",
+        "pillar-05:left"
+      ]
+    },
+    {
+      "mappingId": "pillar-04",
+      "mappingShape": "axisAlignedSegmentLoop",
+      "simKind": "segments",
+      "simIds": [
+        "pillar-04:top",
+        "pillar-04:right",
+        "pillar-04:bottom",
+        "pillar-04:left"
+      ]
+    },
+    {
+      "mappingId": "drum-06",
+      "mappingShape": "circle",
+      "simKind": "pin",
+      "simIds": [
+        "drum-06"
+      ]
+    },
+    {
+      "mappingId": "skull-06",
+      "mappingShape": "circle",
+      "simKind": "pin",
+      "simIds": [
+        "skull-06"
+      ]
+    },
+    {
+      "mappingId": "cube-05",
+      "mappingShape": "axisAlignedSegmentLoop",
+      "simKind": "segments",
+      "simIds": [
+        "cube-05:top",
+        "cube-05:right",
+        "cube-05:bottom",
+        "cube-05:left"
+      ]
+    },
+    {
+      "mappingId": "cube-06",
+      "mappingShape": "axisAlignedSegmentLoop",
+      "simKind": "segments",
+      "simIds": [
+        "cube-06:top",
+        "cube-06:right",
+        "cube-06:bottom",
+        "cube-06:left"
+      ]
+    },
+    {
+      "mappingId": "pillar-06",
+      "mappingShape": "axisAlignedSegmentLoop",
+      "simKind": "segments",
+      "simIds": [
+        "pillar-06:top",
+        "pillar-06:right",
+        "pillar-06:bottom",
+        "pillar-06:left"
+      ]
+    },
+    {
+      "mappingId": "bound-far",
+      "mappingShape": "segment",
+      "simKind": "implicit-wall",
+      "simIds": [
+        "wall_top"
+      ]
+    },
+    {
+      "mappingId": "bound-left",
+      "mappingShape": "segment",
+      "simKind": "implicit-wall",
+      "simIds": [
+        "wall_left"
+      ]
+    },
+    {
+      "mappingId": "bound-right",
+      "mappingShape": "segment",
+      "simKind": "implicit-wall",
+      "simIds": [
+        "wall_right"
+      ]
+    },
+    {
+      "mappingId": "bound-near-01",
+      "mappingShape": "segment",
+      "simKind": "segment",
+      "simIds": [
+        "bound-near-01"
+      ]
+    },
+    {
+      "mappingId": "bound-near-02",
+      "mappingShape": "segment",
+      "simKind": "segment",
+      "simIds": [
+        "bound-near-02"
+      ]
+    },
+    {
+      "mappingId": "bound-near-03",
+      "mappingShape": "segment",
+      "simKind": "segment",
+      "simIds": [
+        "bound-near-03"
+      ]
+    },
+    {
+      "mappingId": "bound-near-04",
+      "mappingShape": "segment",
+      "simKind": "segment",
+      "simIds": [
+        "bound-near-04"
+      ]
+    },
+    {
+      "mappingId": "bound-near-05",
+      "mappingShape": "segment",
+      "simKind": "segment",
+      "simIds": [
+        "bound-near-05"
+      ]
+    },
+    {
+      "mappingId": "goal-01",
+      "mappingShape": "bucketCircle",
+      "simKind": "bucket",
+      "simIds": [
+        "goal-01"
+      ]
+    },
+    {
+      "mappingId": "goal-02",
+      "mappingShape": "bucketCircle",
+      "simKind": "bucket",
+      "simIds": [
+        "goal-02"
+      ]
+    },
+    {
+      "mappingId": "goal-03",
+      "mappingShape": "bucketCircle",
+      "simKind": "bucket",
+      "simIds": [
+        "goal-03"
+      ]
+    },
+    {
+      "mappingId": "goal-04",
+      "mappingShape": "bucketCircle",
+      "simKind": "bucket",
+      "simIds": [
+        "goal-04"
+      ]
+    }
+  ]
+}

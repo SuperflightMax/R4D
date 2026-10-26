@@ -1,7 +1,7 @@
 # P1 collider mapping — PixiJS viewer
 
-Viewer объединяет принятый checkpoint `03-sun-temple.jpg` и разрешённый
-vertical slice `01-jungle.jpg`. Он не содержит собственной геометрии или
+Viewer объединяет `03-sun-temple.jpg`, `01-jungle.jpg` и
+`02-dark-temple.jpg`. Он не содержит собственной геометрии или
 физики: каждый board bundle читает точный Simulation Builder config,
 подключает version-pinned настоящий `@millionko/sim-core` через adapter и
 строит overlay только из config primitives.
@@ -18,8 +18,8 @@ Candidate-B ball масштабируется равномерно из физи
 нативные 64 px не используются как фиксированный экранный размер. Выбранная
 manifest тень candidate-C — отдельный визуальный sprite без PRNG/physics.
 Переключение доски сбрасывает выбранную доску к началу с текущим seed.
-Perspective/flat и Art/Geometry внутри доски не меняют tick/RNG. Доски 02/04
-и публикация вне границы.
+Perspective/flat и Art/Geometry внутри доски не меняют tick/RNG. Board 04
+и публикация пока вне этой ревизии.
 
 Board 03 projection port реализует exact Researcher mapping v0.2
 `83e3b0e63ecc3fb7878719c30f59a3b4306fc467`. Perspective-контуры окружностей
@@ -42,6 +42,17 @@ traces SHA-256:
 Seed 1 честно заканчивается `LOST` на tick 395, seed 2 — `LOST` на tick 561.
 Когда физический шар целиком вышел за mapped domain, он не дорисовывается
 экстраполяцией; terminal diagnostics остаются видимыми.
+
+Board 02 использует отдельную exact Research homography v0.1 и flat domain
+`1000×1150`. Config-only overlay содержит 12 circle pins, 48 obstacle
+segments, пять explicit near segments, три implicit walls и четыре goals
+`r=34`. Canonical mapping SHA-256:
+`4f5862f5c2a602fccdc4d4419f7b5e6e4049fb807038d386ee3950d9cad24a12`;
+config SHA-256:
+`aea8c0d299b71facbed00d7774da6e31211a7cfb6c119604637a4caa65e4dd48`;
+traces SHA-256:
+`d6aee07a7104ea8d1e48ed63859d0511005e69d239aa10a49001b4bfca4dd236`.
+Seed 1 приходит в `goal-04` на tick 674, seed 2 — в `goal-02` на tick 476.
 
 ## Проверка checkpoint
 
@@ -76,6 +87,10 @@ Board 01 integration evidence хранится отдельно в
 `output/playwright/board-01/`: `perspective.png`, `flat.png`, `art-only.png`,
 `geometry-only.png`, `collision-tick061.png`,
 `seed1-terminal-lost-tick395.png`, `seed2-terminal-lost-tick561.png`.
+
+Board 02 integration evidence хранится в `output/playwright/board-02/`:
+perspective/flat, art-only/geometry-only, `collision-tick047.png`,
+`seed1-terminal-goal04-tick674.png` и `seed2-terminal-goal02-tick476.png`.
 
 `npm run candidate:manifest` создаёт
 `scale-candidate-manifest.sha256`. Это непубликуемый scale-candidate manifest,

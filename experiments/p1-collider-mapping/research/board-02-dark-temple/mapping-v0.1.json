@@ -1,0 +1,80 @@
+{
+  "schema": "r4d.p1.board-02.mapping.v0.1",
+  "status": "board-02-independent-mapping-package",
+  "scope": {"board": "02-dark-temple", "publication": "forbidden", "board03FrozenGate": "d75da6483066aff686c72a05d48c02efecf4e38d"},
+  "source": {"path": "K:\\Agents\\R4D\\Assets\\perspective\\02-dark-temple.jpg", "sha256": "7ceff71bd0a871fecd725527dff5522450c8e75a74eb99c107b5d8624bf8fa3a", "widthPx": 1536, "heightPx": 1536, "readOnly": true},
+  "coordinates": {
+    "image": "origin top-left; x right; y down",
+    "flat": "origin far-left; x right; y far-to-near; board-02 units",
+    "flatExtent": {"x": [0, 1000], "y": [0, 1150]},
+    "domains": {"playable": {"x": [0, 1000], "y": [0, 1000]}, "receiverApron": {"x": [0, 1000], "y": [1000, 1150]}}
+  },
+  "transform": {
+    "mode": "perspective-homography",
+    "reason": "board-02 measured near/far floor widening is about 1.37 and its stone side walls define a different quad from boards 01 and 03",
+    "flatQuadClockwise": [[0, 0], [1000, 0], [1000, 1000], [0, 1000]],
+    "imageQuadPxClockwise": [[320, 252], [1216, 252], [1381, 1128], [155, 1128]],
+    "forwardMatrix": [[0.896, -0.20672104404567704, 320], [0, 0.5723784665579119, 252], [0, -0.00026916802610114194, 1]],
+    "inverseMatrix": [[1.1160714285714286, 0.21021893346379658, -410.11802837573384], [0, 1.5619903783431182, -393.62157534246575], [0, 0.000420437866927593, 0.8940496575342465]],
+    "forward": "image homogeneous point = forwardMatrix * [xFlat,yFlat,1], divide by w",
+    "inverse": "flat homogeneous point = inverseMatrix * [xPx,yPx,1], divide by w",
+    "validDomain": "0<=xFlat<=1000 and 0<=yFlat<=1150; y>1000 is receiver apron only",
+    "outsideDomain": "invalid; no clamp and no implicit extrapolation"
+  },
+  "start": {"id": "start-center-chute", "positionFlat": [500, 60], "directionFlat": [0, 1], "sourceCue": "center upper stone chute"},
+  "bounds": [
+    {"id": "bound-far", "from": [0, 0], "to": [1000, 0]},
+    {"id": "bound-left", "from": [0, 0], "to": [0, 1000]},
+    {"id": "bound-right", "from": [1000, 0], "to": [1000, 1000]},
+    {"id": "bound-near-01", "from": [0, 1000], "to": [20, 1000]},
+    {"id": "bound-near-02", "from": [160, 1000], "to": [290, 1000]},
+    {"id": "bound-near-03", "from": [435, 1000], "to": [570, 1000]},
+    {"id": "bound-near-04", "from": [715, 1000], "to": [850, 1000]},
+    {"id": "bound-near-05", "from": [990, 1000], "to": [1000, 1000]}
+  ],
+  "goals": [
+    {"id": "goal-01", "shape": "bucketCircle", "centerFlat": [89.804457, 1053.094355], "radiusFlat": 34, "visibleDarkOpening": {"centerPx": [255.07, 1192.91], "widthPx": 213.04, "heightPx": 103.3, "angleDeg": -1.78}},
+    {"id": "goal-02", "shape": "bucketCircle", "centerFlat": [362.059789, 1052.821656], "radiusFlat": 34, "visibleDarkOpening": {"centerPx": [595.53, 1192.57], "widthPx": 203.59, "heightPx": 99.81, "angleDeg": -0.38}},
+    {"id": "goal-03", "shape": "bucketCircle", "centerFlat": [643.438703, 1054.23267], "radiusFlat": 34, "visibleDarkOpening": {"centerPx": [947.44, 1194.33], "widthPx": 214.29, "heightPx": 102.15, "angleDeg": -1.99}},
+    {"id": "goal-04", "shape": "bucketCircle", "centerFlat": [921.189473, 1054.168566], "radiusFlat": 34, "visibleDarkOpening": {"centerPx": [1294.89, 1194.25], "widthPx": 226.49, "heightPx": 109.28, "angleDeg": -4.21}}
+  ],
+  "obstacles": [
+    {"id": "drum-01", "family": "drum", "shape": "circle", "sourceAnchorPx": [780, 354], "centerFlat": [512.842127, 152.771466], "radiusFlat": 30},
+    {"id": "skull-01", "family": "skull-base", "shape": "circle", "sourceAnchorPx": [500, 360], "centerFlat": [213.884583, 161.367691], "radiusFlat": 32},
+    {"id": "skull-02", "family": "skull-base", "shape": "circle", "sourceAnchorPx": [1069, 360], "centerFlat": [821.346047, 161.367691], "radiusFlat": 32},
+    {"id": "drum-02", "family": "drum", "shape": "circle", "sourceAnchorPx": [386, 458], "centerFlat": [107.642846, 296.122766], "radiusFlat": 30},
+    {"id": "pillar-01", "family": "upright-pillar", "shape": "axisAlignedSegmentLoop", "sourceAnchorPx": [633, 458], "centerFlat": [361.339749, 296.122766], "halfExtentsFlat": [26, 30]},
+    {"id": "cube-01", "family": "square-block", "shape": "axisAlignedSegmentLoop", "sourceAnchorPx": [930, 458], "centerFlat": [666.392301, 296.122766], "halfExtentsFlat": [32, 30]},
+    {"id": "drum-03", "family": "drum", "shape": "circle", "sourceAnchorPx": [1158, 478], "centerFlat": [897.49801, 322.377821], "radiusFlat": 30},
+    {"id": "skull-03", "family": "skull-base", "shape": "circle", "sourceAnchorPx": [759, 545], "centerFlat": [491.057027, 407.467904], "radiusFlat": 32},
+    {"id": "cube-02", "family": "square-block", "shape": "axisAlignedSegmentLoop", "sourceAnchorPx": [500, 559], "centerFlat": [235.086425, 424.711636], "halfExtentsFlat": [32, 30]},
+    {"id": "cube-03", "family": "square-block", "shape": "axisAlignedSegmentLoop", "sourceAnchorPx": [1021, 565], "centerFlat": [749.528815, 432.046891], "halfExtentsFlat": [32, 30]},
+    {"id": "drum-04", "family": "drum", "shape": "circle", "sourceAnchorPx": [610, 672], "centerFlat": [350.126043, 557.57686], "radiusFlat": 30},
+    {"id": "pillar-02", "family": "upright-pillar", "shape": "axisAlignedSegmentLoop", "sourceAnchorPx": [354, 681], "centerFlat": [108.551204, 567.699192], "halfExtentsFlat": [26, 30]},
+    {"id": "skull-04", "family": "skull-base", "shape": "circle", "sourceAnchorPx": [1169, 684], "centerFlat": [878.7522, 571.058897], "radiusFlat": 32},
+    {"id": "pillar-03", "family": "upright-pillar", "shape": "axisAlignedSegmentLoop", "sourceAnchorPx": [884, 687], "centerFlat": [609.447399, 574.411436], "halfExtentsFlat": [26, 30]},
+    {"id": "drum-05", "family": "drum", "shape": "circle", "sourceAnchorPx": [1055, 801], "centerFlat": [760.243089, 696.716373], "radiusFlat": 30},
+    {"id": "skull-05", "family": "skull-base", "shape": "circle", "sourceAnchorPx": [466, 801], "centerFlat": [226.155356, 696.716373], "radiusFlat": 32},
+    {"id": "cube-04", "family": "square-block", "shape": "axisAlignedSegmentLoop", "sourceAnchorPx": [723, 805], "centerFlat": [459.251013, 700.835034], "halfExtentsFlat": [32, 30]},
+    {"id": "pillar-05", "family": "upright-pillar", "shape": "axisAlignedSegmentLoop", "sourceAnchorPx": [1225, 925], "centerFlat": [897.554683, 819.373854], "halfExtentsFlat": [26, 30]},
+    {"id": "pillar-04", "family": "upright-pillar", "shape": "axisAlignedSegmentLoop", "sourceAnchorPx": [302, 927], "centerFlat": [94.881536, 821.270565], "halfExtentsFlat": [26, 30]},
+    {"id": "drum-06", "family": "drum", "shape": "circle", "sourceAnchorPx": [558, 928], "centerFlat": [317.495655, 822.217989], "radiusFlat": 30},
+    {"id": "skull-06", "family": "skull-base", "shape": "circle", "sourceAnchorPx": [902, 934], "centerFlat": [616.226846, 827.889532], "radiusFlat": 32},
+    {"id": "cube-05", "family": "square-block", "shape": "axisAlignedSegmentLoop", "sourceAnchorPx": [393, 1077], "centerFlat": [189.257681, 956.774183], "halfExtentsFlat": [32, 30]},
+    {"id": "cube-06", "family": "square-block", "shape": "axisAlignedSegmentLoop", "sourceAnchorPx": [1057, 1077], "centerFlat": [739.478747, 956.774183], "halfExtentsFlat": [32, 30]},
+    {"id": "pillar-06", "family": "upright-pillar", "shape": "axisAlignedSegmentLoop", "sourceAnchorPx": [712, 1085], "centerFlat": [453.71141, 963.645491], "halfExtentsFlat": [26, 30]}
+  ],
+  "uncertainty": {
+    "floorQuad": "manual inner-wall/floor seam approximation; far seam is partly covered by chute ramps; 8-12 px",
+    "skullBases": "rear footprint hidden by skull volume; circle is an allowed irregular-base approximation",
+    "blockBases": "lower block outline is visible; four axis-aligned segments approximate the rectangular footprint",
+    "goals": "dark rectangular opening measured at grayscale threshold 34; bucket circle is inscribed and does not claim rectangle recovery"
+  },
+  "rejectedVariants": [
+    "identity mapping: rejected because stone wall widening is substantial",
+    "board-03 and board-01 transforms: rejected because both miss dark-temple wall seams",
+    "skull silhouette collider: rejected because teeth and forehead are not floor support"
+  ],
+  "diagnostics": {"circleSamples": 96, "segmentSamples": 32, "overlay": "evidence/overlay.png", "flatPreview": "evidence/flat-preview.png", "sourceOfTruth": "mapping JSON; future viewer contours come from adapted simulator config"},
+  "checks": {"roundTripFlatMaxError": 1e-6, "roundTripImageMaxErrorPx": 1e-6, "sourceAnchorMaxErrorPx": 0.001, "goalContainmentMaxRectValue": 1, "finiteRequired": true, "playableObstacleBoundsRequired": true}
+}

@@ -1,5 +1,6 @@
 import './style.css';
 import { board01Bundle } from './board01-bundle';
+import { board02Bundle } from './board02-bundle';
 import { board03Bundle } from './board03-bundle';
 import { BoardScene } from './scene';
 import { formatTerminalResult } from './terminal-status';
@@ -13,6 +14,7 @@ const root: HTMLElement = queriedRoot;
 const bundles: Readonly<Record<BoardId, BoardBundle>> = Object.freeze({
   '03': board03Bundle,
   '01': board01Bundle,
+  '02': board02Bundle,
 });
 
 try {
@@ -85,7 +87,8 @@ try {
 
   root.querySelectorAll<HTMLButtonElement>('button[data-board]').forEach((button) => {
     button.addEventListener('click', () => {
-      void mountBoard(button.dataset.board === '01' ? '01' : '03').catch(showFailure);
+      const boardId = button.dataset.board as BoardId;
+      if (boardId in bundles) void mountBoard(boardId).catch(showFailure);
     });
   });
   root.querySelectorAll<HTMLInputElement>('input[data-layer]').forEach((input) => {
@@ -144,6 +147,7 @@ function layout(): string {
   <section class="board-selector" aria-label="Board selection">
     <button data-board="03" aria-pressed="true">Board 03 · Sun Temple</button>
     <button data-board="01" aria-pressed="false">Board 01 · Jungle</button>
+    <button data-board="02" aria-pressed="false">Board 02 · Dark Temple</button>
   </section>
   <section class="controls" aria-label="Viewer controls">
     <label><input type="checkbox" data-layer="art" checked> Арт</label>

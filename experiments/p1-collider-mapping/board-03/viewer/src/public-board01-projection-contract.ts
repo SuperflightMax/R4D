@@ -1,4 +1,4 @@
-import type { Board01MappingContract } from './projection';
+import type { HomographyMappingContract } from './projection';
 
 // Public runtime subset of Research board-01 mapping. Private source paths,
 // evidence metadata and the Research JSON itself never enter the browser tree.
@@ -22,4 +22,4 @@ export const board01ProjectionContract = Object.freeze({
       [0, 0.0004964320944950485, 0.8580204209744161],
     ],
   },
-} satisfies Board01MappingContract);
+} satisfies HomographyMappingContract);

@@ -1,7 +1,7 @@
-# Board 01 — локальный scale candidate
+# Boards 01/02 — локальный scale candidate
 
-Статус: **локально подготовлен, не опубликован**. Scope добавляет только
-board 01 к принятому viewer board 03; board 02/04 не включены.
+Статус: **локально подготовлен, не опубликован**. Scope добавляет boards 01/02
+к принятому viewer board 03; board 04 пока не включён.
 
 - Viewer source HEAD фиксируется итоговым коммитом Builder.
 - Research canonical mapping: `9a248421ad8453d839940bccf7e9838e9091ffa83ab40e1b50998f57e7041d5c`.
@@ -11,6 +11,8 @@ board 01 к принятому viewer board 03; board 02/04 не включен�
 - Public route: `/review/r4d/p1-collider-mapping/`.
 - Build hashes: `scale-candidate-manifest.sha256` (не финальный release manifest).
 - Browser evidence: `output/playwright/board-01/`.
+- Board 02 Research/config/traces: `4f5862f5c2a602fccdc4d4419f7b5e6e4049fb807038d386ee3950d9cad24a12` / `aea8c0d299b71facbed00d7774da6e31211a7cfb6c119604637a4caa65e4dd48` / `d6aee07a7104ea8d1e48ed63859d0511005e69d239aa10a49001b4bfca4dd236`.
+- Board 02 browser evidence: `output/playwright/board-02/`.
 
 Никакой публикации этим пакетом не выполняется. Финальную release provenance и
 публикацию оформляет Release Engineer после отдельного решения CTO/QA.

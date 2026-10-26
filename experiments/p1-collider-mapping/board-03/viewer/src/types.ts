@@ -57,7 +57,7 @@ export interface ProjectionPort {
   flatToSim(point: Readonly<Point>): Point;
 }
 
-export type BoardId = '03' | '01';
+export type BoardId = '03' | '01' | '02';
 
 export interface BoardBundle {
   readonly id: BoardId;

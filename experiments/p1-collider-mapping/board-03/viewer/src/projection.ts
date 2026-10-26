@@ -26,7 +26,7 @@ export interface Board03MappingContract {
   };
 }
 
-export interface Board01MappingContract {
+export interface HomographyMappingContract {
   source: { widthPx: number; heightPx: number };
   flat: {
     extent: { x: [number, number]; y: [number, number] };
@@ -80,7 +80,10 @@ export function createBoard03Projection(contract: Board03MappingContract): Proje
   return Object.freeze(projection);
 }
 
-export function createBoard01Projection(contract: Board01MappingContract): ProjectionPort {
+export function createHomographyProjection(
+  contract: HomographyMappingContract,
+  boardLabel: string,
+): ProjectionPort {
   const { widthPx: width, heightPx: height } = contract.source;
   const { x: flatX, y: flatY } = contract.flat.extent;
   const projection: ProjectionPort = {
@@ -88,20 +91,20 @@ export function createBoard01Projection(contract: Board01MappingContract): Proje
     imageSize: { width, height },
     flatSize: { width: flatX[1] - flatX[0], height: flatY[1] - flatY[0] },
     simToImage(point): Point {
-      assertDomain(point, contract.flat.extent, 'board 01');
+      assertDomain(point, contract.flat.extent, boardLabel);
       return applyHomography(contract.transform.forwardMatrix, point);
     },
     imageToSim(point): Point {
       const flat = applyHomography(contract.transform.inverseMatrix, point);
-      assertDomain(flat, contract.flat.extent, 'board 01');
+      assertDomain(flat, contract.flat.extent, boardLabel);
       return flat;
     },
     simToFlat(point): Point {
-      assertDomain(point, contract.flat.extent, 'board 01');
+      assertDomain(point, contract.flat.extent, boardLabel);
       return { x: point.x, y: point.y };
     },
     flatToSim(point): Point {
-      assertDomain(point, contract.flat.extent, 'board 01');
+      assertDomain(point, contract.flat.extent, boardLabel);
       return { x: point.x, y: point.y };
     },
   };
@@ -109,7 +112,7 @@ export function createBoard01Projection(contract: Board01MappingContract): Proje
 }
 
 function applyHomography(
-  matrix: Board01MappingContract['transform']['forwardMatrix'],
+  matrix: HomographyMappingContract['transform']['forwardMatrix'],
   point: Readonly<Point>,
 ): Point {
   const denominator = matrix[2][0] * point.x + matrix[2][1] * point.y + matrix[2][2];
@@ -121,6 +124,9 @@ function applyHomography(
     y: (matrix[1][0] * point.x + matrix[1][1] * point.y + matrix[1][2]) / denominator,
   };
 }
+
+export const createBoard01Projection = (contract: HomographyMappingContract): ProjectionPort =>
+  createHomographyProjection(contract, 'board 01');
 
 function assertFlatDomain(point: Readonly<Point>, contract: Board03MappingContract): void {
   assertDomain(point, contract.coordinateSystems.flat.extent, 'board 03');
