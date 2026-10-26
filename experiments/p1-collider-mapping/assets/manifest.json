@@ -1,0 +1,35 @@
+{
+  "id": "p1-board03-ball-candidate-b-v1",
+  "scope": "board-03-only",
+  "reference": {
+    "file": "03-sun-temple.jpg",
+    "sha256": "f5cfa2bbe8e4b49ecbc0f4c7a0cee99842b182b56ae495979153b8fc9ff86e32"
+  },
+  "selected": {
+    "ball": "candidate-b/ball-64.png",
+    "shadow": "candidate-b/shadow-96x48.png",
+    "ballDiameterPx": 64,
+    "shadowSizePx": [96, 48]
+  },
+  "masters": {
+    "ball": "candidate-b/ball-master-512.png",
+    "shadow": "candidate-b/shadow-master-768x384.png"
+  },
+  "alternatives": [
+    {
+      "ball": "candidate-b/ball-80.png",
+      "shadow": "candidate-b/shadow-120x60.png"
+    },
+    {
+      "ball": "candidate-b/ball-96.png",
+      "shadow": "candidate-b/shadow-144x72.png"
+    }
+  ],
+  "viewerSuggestion": {
+    "ballAnchor": [0.5, 0.5],
+    "shadowAnchor": [0.5, 0.5],
+    "shadowOffsetInBallDiameters": [-0.18, 0.25],
+    "shadowIsVisualOnly": true,
+    "drawOrder": ["shadow", "ball", "geometry-overlay"]
+  }
+}
