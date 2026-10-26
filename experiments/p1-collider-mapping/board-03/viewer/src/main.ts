@@ -1,6 +1,7 @@
 import './style.css';
 import { board03Bundle } from './board03-bundle';
 import { Board03Scene } from './scene';
+import { formatTerminalResult } from './terminal-status';
 import { ViewerState } from './viewer-state';
 
 const root = document.querySelector<HTMLElement>('#app');
@@ -22,7 +23,7 @@ try {
     setText(root, '[data-seed-value]', String(snapshot.seed));
     setText(root, '[data-tick]', String(snapshot.tick));
     setText(root, '[data-rng]', String(snapshot.rngU32));
-    setText(root, '[data-status]', snapshot.done ? `done: ${String(snapshot.result)}` : 'running');
+    setText(root, '[data-status]', snapshot.done ? formatTerminalResult(snapshot.result) : 'running');
     scene.render();
     if (snapshot.done && timer !== undefined) {
       window.clearInterval(timer);
