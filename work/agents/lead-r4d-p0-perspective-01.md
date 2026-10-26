@@ -158,3 +158,10 @@ Builder получил адресное поручение собрать пак
 CTO принял package `9e58b344f5ca7df1a054f6e8fb8357a7372ac10d`, source pins/checks и предложенный catalog delta без изменений. Публикация всё ещё не разрешена: четыре prerelease-надписи в browser bytes после выпуска стали бы ложными.
 
 Builder получил ровно одну presentation-only correction: заменить title, index eyebrow/footer и QA footer на формулировки опубликованного результата, всё ещё ожидающего приёмки Max. Главный P0/P1 status, QA facts, recipe facts, CSS/layout, 13-route allowlist и все binary/SVG assets заморожены. После нового commit требуется узкий read-only Release audit и отдельное окончательное разрешение CTO.
+
+## Final package и разрешение публикации
+
+- Final Builder package: `2c64c06f0deefcdc5725ba0373f3844dfcd636f9`, parent `9e58b344f5ca7df1a054f6e8fb8357a7372ac10d`. Изменены ровно пять ожидаемых presentation/build files; recipe/CSS/layout и все девять binary/SVG routes неизменны; allowlist 13.
+- Final narrow Release audit: `FINAL_PRERELEASE_AUDIT_PASS / NO_PACKAGE_BLOCKERS`; fresh/mutation/auth checks PASS, package 37,505,860 bytes.
+- CTO дал `PUBLISH AUTHORIZED` только exact `2c64c06f0deefcdc5725ba0373f3844dfcd636f9` и ранее принятому отдельному catalog delta. Любой live conflict/unexpected diff требует abort/rollback без импровизации.
+- Release Engineer получил публикационное поручение: перечитать actual live root/manifest, сохранить все прежние bytes/entries, добавить только 13 P0 routes и exact catalog card, выполнить atomic switch и полный post-publish audit. После успешного выпуска — немедленный STOP P0; P1–P6 закрыты до явной приёмки Макса.
