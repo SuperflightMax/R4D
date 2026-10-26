@@ -16,6 +16,10 @@ function sha256(value) {
   return createHash("sha256").update(value).digest("hex");
 }
 
+function canonicalLf(text) {
+  return text.replace(/\r\n/g, "\n");
+}
+
 function canonicalSha(value) {
   return sha256(JSON.stringify(value));
 }
@@ -239,7 +243,7 @@ const expectedOverlay = overlayLines.join("\n");
 if (process.argv.includes("--write-overlay")) {
   await writeFile(overlayUrl, expectedOverlay, "utf8");
 }
-const actualOverlay = await readFile(overlayUrl, "utf8");
+const actualOverlay = canonicalLf(await readFile(overlayUrl, "utf8"));
 assert.equal(actualOverlay, expectedOverlay, "goal overlay is stale; regenerate with --write-overlay");
 
 console.log(

@@ -5,7 +5,13 @@ export interface Board03MappingContract {
     sourceImage: { widthPx: number; heightPx: number };
   };
   coordinateSystems: {
-    flat: { extent: { x: [number, number]; y: [number, number] } };
+    flat: {
+      extent: { x: [number, number]; y: [number, number] };
+      semanticDomains: {
+        playablePlane: { x: [number, number]; y: [number, number] };
+        foregroundReceiverApron: { x: [number, number]; y: [number, number] };
+      };
+    };
   };
   transform: {
     id: string;
@@ -25,10 +31,11 @@ const DOMAIN_EPSILON = 1e-8;
 export function createBoard03Projection(contract: Board03MappingContract): ProjectionPort {
   const { widthPx: width, heightPx: height } = contract.sources.sourceImage;
   const { flatSize, centerP, farQ, qPerZ, farHalfWidth, halfWidthPerZ } = contract.transform.constants;
+  const { x: flatX, y: flatY } = contract.coordinateSystems.flat.extent;
   const projection: ProjectionPort = {
     mode: 'perspective',
     imageSize: { width, height },
-    flatSize: { width: flatSize, height: flatSize },
+    flatSize: { width: flatX[1] - flatX[0], height: flatY[1] - flatY[0] },
     simToImage(point): Point {
       assertFlatDomain(point, contract);
       const u = (2 * point.x) / flatSize - 1;

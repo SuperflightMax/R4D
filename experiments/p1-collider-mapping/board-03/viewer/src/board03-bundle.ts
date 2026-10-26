@@ -55,9 +55,9 @@ export const board03Bundle: Board03Bundle = Object.freeze({
   }),
   art: Object.freeze({
     ballUrl: `${import.meta.env.BASE_URL}assets/ball-candidate-b-64.png`,
-    shadowUrl: `${import.meta.env.BASE_URL}assets/shadow-candidate-b-96x48.png`,
+    shadowUrl: `${import.meta.env.BASE_URL}assets/shadow-candidate-c-r18-54x27.png`,
     ballNativeDiameter: 64,
-    shadowNativeSize: [96, 48] as const,
+    shadowNativeSize: [54, 27] as const,
     shadowOffsetInBallDiameters: [-0.18, 0.25] as const,
   }),
   geometry: geometryFromConfig(authoredConfig),

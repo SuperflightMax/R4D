@@ -102,7 +102,7 @@ function layout(
     <button data-reset>Новый запуск</button>
   </section>
   <section class="diagnostics"><span>seed <b data-seed-value></b></span><span>tick <b data-tick></b></span><span>rng <b data-rng></b></span><span>fixed tick 8 ms</span><span data-status></span></section>
-  <aside class="notice">Goal rectangles Researcher представлены настоящими trigger-кругами bucket из config: это вписанная физическая аппроксимация, не скрытый прямоугольный collider.</aside>
+  <aside class="notice"><strong>Flat domain 1000×1150:</strong> playable plane <code>y=0…1000</code>; foreground receiver apron <code>y=1000…1150</code>. Goal contours — прямые bucket circles <code>r=48</code> из config, без старой rectangular approximation.</aside>
   <section class="viewport" data-viewport></section>`;
 }
 

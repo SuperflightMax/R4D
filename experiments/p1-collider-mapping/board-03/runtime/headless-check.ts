@@ -55,7 +55,7 @@ async function main(): Promise<void>
   assert.ok(configBuckets.every((bucket) => bucket.r === 48 && !('nearMiss' in bucket)), 'v0.2 bucket circles must transfer directly');
   assert.equal(
     manifestConfig.sha256,
-    createHash('sha256').update(configText).digest('hex'),
+    createHash('sha256').update(configText.replace(/\r\n/g, '\n')).digest('hex'),
     'config digest must match the Viewer-facing manifest'
   );
   const coreUrl = pathToFileURL(path.join(sourceRoot, String(version.entrypoint))).href;

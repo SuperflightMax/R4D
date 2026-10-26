@@ -8,7 +8,13 @@ export const board03ProjectionContract = Object.freeze({
     sourceImage: { widthPx: 1536, heightPx: 1536 },
   },
   coordinateSystems: {
-    flat: { extent: { x: [0, 1000], y: [0, 1000] } },
+    flat: {
+      extent: { x: [0, 1000], y: [0, 1150] },
+      semanticDomains: {
+        playablePlane: { x: [0, 1000], y: [0, 1000] },
+        foregroundReceiverApron: { x: [0, 1000], y: [1000, 1150] },
+      },
+    },
   },
   transform: {
     id: 'p0-selected-ruled-trapezoid-v0.1',

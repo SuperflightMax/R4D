@@ -11,6 +11,10 @@ describe('geometryFromConfig', () => {
     expect(geometry.filter((item) => item.kind === 'segment' && item.role === 'boundary')).toHaveLength(8);
     expect(geometry.filter((item) => item.kind === 'circle' && item.role === 'goal')).toHaveLength(4);
     expect(geometry).toHaveLength(75);
+    expect(geometry.find((item) => item.id === 'wall_left')).toMatchObject({
+      from: { x: 0, y: 0 },
+      to: { x: 0, y: 1150 },
+    });
   });
 
   it('renders goal triggers as their actual config circles', () => {
@@ -19,8 +23,8 @@ describe('geometryFromConfig', () => {
       kind: 'circle',
       id: 'goal-01',
       role: 'goal',
-      center: { x: 105, y: 977.5 },
-      radius: 22.5,
+      center: { x: 111.741585, y: 1074.481671 },
+      radius: 48,
     });
   });
 });

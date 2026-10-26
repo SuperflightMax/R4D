@@ -8,8 +8,10 @@
     "prepare:assets": "node scripts/prepare-viewer-assets.mjs",
     "dev": "npm run check:inputs && npm run prepare:assets && vite",
     "build": "npm run check:inputs && npm run prepare:assets && tsc --noEmit && vite build",
+    "release:manifest": "node scripts/check-release.mjs --write-manifest",
+    "check:release": "node scripts/check-release.mjs",
     "test": "vitest run",
-    "check": "npm run test && npm run build"
+    "check": "npm run test && npm run build && npm run check:release"
   },
   "dependencies": {
     "pixi.js": "8.22.0"
