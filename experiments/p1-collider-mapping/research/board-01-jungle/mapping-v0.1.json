@@ -1,0 +1,108 @@
+{
+  "schema": "r4d.p1.board-01.mapping.v0.1",
+  "status": "board-01-independent-mapping-package",
+  "scope": {
+    "board": "01-jungle",
+    "publication": "forbidden",
+    "board03FrozenGate": "d75da6483066aff686c72a05d48c02efecf4e38d"
+  },
+  "source": {
+    "path": "K:\\Agents\\R4D\\Assets\\perspective\\01-jungle.jpg",
+    "sha256": "c8f9e4245c1de8c2086e615bc75dc10aea59b76b614d6e106593e07262e24f72",
+    "widthPx": 1536,
+    "heightPx": 1536,
+    "readOnly": true
+  },
+  "coordinates": {
+    "image": "origin top-left; x right; y down",
+    "flat": "origin far-left; x right; y far-to-near; units are board-01 mapping units",
+    "flatExtent": {"x": [0, 1000], "y": [0, 1180]},
+    "domains": {
+      "playable": {"x": [0, 1000], "y": [0, 1000]},
+      "receiverApron": {"x": [0, 1000], "y": [1000, 1180]}
+    }
+  },
+  "transform": {
+    "mode": "perspective-homography",
+    "reason": "board-01 has its own measured 1.41x near/far floor widening; identity and board-03 parameters visibly drift from the jungle rails",
+    "flatQuadClockwise": [[0, 0], [1000, 0], [1000, 1000], [0, 1000]],
+    "imageQuadPxClockwise": [[390, 286], [1146, 286], [1301, 1112], [235, 1112]],
+    "forwardMatrix": [[0.756, -0.22333958724202627, 390], [0, 0.5026228893058161, 286], [0, -0.00029080675422138837, 1]],
+    "inverseMatrix": [[1.3227513227513228, 0.24821604724752427, -586.8628053858077], [0, 1.707085847521683, -488.2265523912013], [0, 0.0004964320944950485, 0.8580204209744161]],
+    "forward": "image homogeneous point = forwardMatrix * [xFlat,yFlat,1], then divide x,y by w",
+    "inverse": "flat homogeneous point = inverseMatrix * [xPx,yPx,1], then divide x,y by w",
+    "validDomain": "0<=xFlat<=1000 and 0<=yFlat<=1180; y>1000 is receiver apron only",
+    "outsideDomain": "invalid; no clamp and no implicit extrapolation",
+    "receiverApronImagePxClockwise": [[235, 1112], [1301, 1112], [1343.475578, 1338.353728], [192.524422, 1338.353728]]
+  },
+  "start": {"id": "start-center-chute", "positionFlat": [500, 60], "directionFlat": [0, 1], "sourceCue": "center upper chute"},
+  "bounds": [
+    {"id": "bound-far", "from": [0, 0], "to": [1000, 0]},
+    {"id": "bound-left", "from": [0, 0], "to": [0, 1000]},
+    {"id": "bound-right", "from": [1000, 0], "to": [1000, 1000]},
+    {"id": "bound-near-01", "from": [0, 1000], "to": [60, 1000]},
+    {"id": "bound-near-02", "from": [200, 1000], "to": [320, 1000]},
+    {"id": "bound-near-03", "from": [460, 1000], "to": [560, 1000]},
+    {"id": "bound-near-04", "from": [700, 1000], "to": [815, 1000]},
+    {"id": "bound-near-05", "from": [955, 1000], "to": [1000, 1000]}
+  ],
+  "goals": [
+    {"id": "goal-01", "shape": "bucketCircle", "centerFlat": [130.797127, 1101.601446], "radiusFlat": 26, "visibleDarkOpening": {"centerPx": [357.32, 1235.48], "majorDiameterPx": 183.91, "minorDiameterPx": 79.79, "majorAxisAngleDeg": -3.67}},
+    {"id": "goal-02", "shape": "bucketCircle", "centerFlat": [389.711678, 1121.839877], "radiusFlat": 26, "visibleDarkOpening": {"centerPx": [644.25, 1261.37], "majorDiameterPx": 164.07, "minorDiameterPx": 70.81, "majorAxisAngleDeg": -2.37}},
+    {"id": "goal-03", "shape": "bucketCircle", "centerFlat": [629.053427, 1123.350023], "radiusFlat": 26, "visibleDarkOpening": {"centerPx": [912.9, 1263.32], "majorDiameterPx": 163.09, "minorDiameterPx": 74.58, "majorAxisAngleDeg": -1.95}},
+    {"id": "goal-04", "shape": "bucketCircle", "centerFlat": [883.7665, 1106.574394], "radiusFlat": 26, "visibleDarkOpening": {"centerPx": [1195.79, 1241.8], "majorDiameterPx": 179.3, "minorDiameterPx": 75.35, "majorAxisAngleDeg": 3.72}}
+  ],
+  "obstacles": [
+    {"id": "flower-01", "family": "flower-plinth", "shape": "circle", "sourceAnchorPx": [519, 388], "centerFlat": [186.50888, 165.730799], "radiusFlat": 32},
+    {"id": "frog-01", "family": "frog-plinth", "shape": "circle", "sourceAnchorPx": [1030, 397], "centerFlat": [828.461326, 179.590387], "radiusFlat": 36},
+    {"id": "leaf-01", "family": "leaf-plinth", "shape": "circle", "sourceAnchorPx": [773, 402], "centerFlat": [506.253634, 187.239558], "radiusFlat": 34},
+    {"id": "drum-02", "family": "drum", "shape": "circle", "sourceAnchorPx": [1081, 477], "centerFlat": [878.164191, 297.815015], "radiusFlat": 28},
+    {"id": "drum-01", "family": "drum", "shape": "circle", "sourceAnchorPx": [628, 481], "centerFlat": [331.159312, 303.501502], "radiusFlat": 28},
+    {"id": "flower-02", "family": "flower-plinth", "shape": "circle", "sourceAnchorPx": [876, 498], "centerFlat": [629.253987, 327.441116], "radiusFlat": 32},
+    {"id": "frog-02", "family": "frog-plinth", "shape": "circle", "sourceAnchorPx": [487, 539], "centerFlat": [169.781444, 383.700913], "radiusFlat": 36},
+    {"id": "leaf-02", "family": "leaf-plinth", "shape": "circle", "sourceAnchorPx": [722, 562], "centerFlat": [446.485713, 414.379394], "radiusFlat": 34},
+    {"id": "leaf-03", "family": "leaf-plinth", "shape": "circle", "sourceAnchorPx": [1002, 570], "centerFlat": [771.277312, 424.906245], "radiusFlat": 34},
+    {"id": "flower-03", "family": "flower-plinth", "shape": "circle", "sourceAnchorPx": [843, 660], "centerFlat": [583.671441, 538.474006], "radiusFlat": 32},
+    {"id": "drum-03", "family": "drum", "shape": "circle", "sourceAnchorPx": [568, 663], "centerFlat": [277.156069, 542.112377], "radiusFlat": 28},
+    {"id": "frog-03", "family": "frog-plinth", "shape": "circle", "sourceAnchorPx": [1136, 674], "centerFlat": [908.155373, 555.375328], "radiusFlat": 36},
+    {"id": "drum-04", "family": "drum", "shape": "circle", "sourceAnchorPx": [947, 742], "centerFlat": [693.067264, 634.742549], "radiusFlat": 28},
+    {"id": "frog-04", "family": "frog-plinth", "shape": "circle", "sourceAnchorPx": [698, 747], "centerFlat": [424.65134, 640.406273], "radiusFlat": 36},
+    {"id": "drum-05", "family": "drum", "shape": "circle", "sourceAnchorPx": [1201, 767], "centerFlat": [962.34969, 662.834199], "radiusFlat": 28},
+    {"id": "flower-04", "family": "flower-plinth", "shape": "circle", "sourceAnchorPx": [520, 822], "centerFlat": [240.900766, 722.697239], "radiusFlat": 32},
+    {"id": "leaf-04", "family": "leaf-plinth", "shape": "circle", "sourceAnchorPx": [1067, 833], "centerFlat": [811.040193, 734.361343], "radiusFlat": 34},
+    {"id": "flower-05", "family": "flower-plinth", "shape": "circle", "sourceAnchorPx": [802, 839], "centerFlat": [535.286461, 740.681454], "radiusFlat": 32},
+    {"id": "leaf-05", "family": "leaf-plinth", "shape": "circle", "sourceAnchorPx": [617, 939], "centerFlat": [349.161795, 841.830676], "radiusFlat": 34},
+    {"id": "drum-06", "family": "drum", "shape": "circle", "sourceAnchorPx": [425, 956], "centerFlat": [159.537394, 858.276573], "radiusFlat": 28},
+    {"id": "flower-06", "family": "flower-plinth", "shape": "circle", "sourceAnchorPx": [1145, 956], "centerFlat": [874.211085, 858.276573], "radiusFlat": 32},
+    {"id": "frog-05", "family": "frog-plinth", "shape": "circle", "sourceAnchorPx": [921, 959], "centerFlat": [651.698624, 861.157191], "radiusFlat": 36},
+    {"id": "flower-07", "family": "flower-plinth", "shape": "circle", "sourceAnchorPx": [505, 1065], "centerFlat": [249.132163, 958.967418], "radiusFlat": 32},
+    {"id": "drum-08", "family": "drum", "shape": "circle", "sourceAnchorPx": [991, 1065], "centerFlat": [712.713033, 958.967418], "radiusFlat": 28},
+    {"id": "drum-07", "family": "drum", "shape": "circle", "sourceAnchorPx": [693, 1067], "centerFlat": [428.510927, 960.741594], "radiusFlat": 28}
+  ],
+  "uncertainty": {
+    "floorQuad": "manual inner-rail/floor seam approximation; near edge is painted slightly curved; expected anchor uncertainty 8-14 px",
+    "obstacleAnchors": "visible center of the lower plinth/rim, not silhouette center or shadow tip; 6-10 px uncertainty",
+    "obstacleRadii": "family-constant 28-36 flat units; frog rear footprint and leaf rear edge are partly hidden",
+    "goals": "dark opening fit at grayscale threshold 60; bucket circle is deliberately inscribed, not a claim that the oval basket mouth is circular"
+  },
+  "rejectedVariants": [
+    "board-03 transform: rejected because its seams and side expansion do not follow the jungle rails",
+    "identity mapping: rejected because measured near/far floor width ratio is about 1.41",
+    "full silhouette circles: rejected because leaves, frogs and flowers rise above smaller stone bases"
+  ],
+  "diagnostics": {
+    "circleSamples": 96,
+    "segmentSamples": 32,
+    "overlay": "evidence/overlay.png",
+    "flatPreview": "evidence/flat-preview.png",
+    "sourceOfTruth": "mapping JSON; future viewer geometry must be generated from the adapted simulator config derived from these ids"
+  },
+  "checks": {
+    "roundTripFlatMaxError": 1e-6,
+    "roundTripImageMaxErrorPx": 1e-6,
+    "sourceAnchorMaxErrorPx": 0.001,
+    "goalContainmentMaxEllipseValue": 1,
+    "finiteRequired": true,
+    "playableObstacleBoundsRequired": true
+  }
+}
