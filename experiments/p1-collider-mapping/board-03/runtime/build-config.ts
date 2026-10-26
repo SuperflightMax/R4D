@@ -63,6 +63,7 @@ function expandLoop(obstacle: LoopObstacle): Record<string, unknown>[]
 
 const mappingText = await readFile(mappingPath, 'utf8');
 const mapping = JSON.parse(mappingText) as Mapping;
+const canonicalMappingText = JSON.stringify(mapping);
 if (mapping.schema !== expectedMappingSchema)
 {
   throw new Error(`unexpected mapping schema: ${mapping.schema}`);
@@ -175,7 +176,8 @@ const manifest = {
   mapping: {
     commit: expectedMappingCommit,
     schema: mapping.schema,
-    sha256: sha256(mappingText),
+    canonicalization: 'JSON.stringify(JSON.parse(sourceBytes))',
+    sha256: sha256(canonicalMappingText),
     sourceImageSha256: expectedImageSha256
   },
   simCoreCommit: '5a6fa03f1cdb3de88a2d9c7dbe795eb8e2a7f023',
@@ -183,7 +185,16 @@ const manifest = {
     file: 'board-03-config.v1.json',
     sha256: sha256(configText),
     ballRadiusFlat: config.board.ball.r,
-    goalApproximation: 'inscribed bucket circle inside each rectangular Researcher goal zone',
+    segmentBreakdown: {
+      obstacleSegments: obstacleSegments.length,
+      explicitNearBoundarySegments: explicitBounds.length,
+      total: obstacleSegments.length + explicitBounds.length
+    },
+    goalApproximation: {
+      declaredMappingShape: 'rectFlat',
+      coreShape: 'bucket circle',
+      rule: 'inscribed circle inside each visible and declared rectangular Researcher goal zone'
+    },
     implicitBounds: ['bound-far', 'bound-left', 'bound-right']
   },
   mappingTable

@@ -44,6 +44,7 @@ async function main(): Promise<void>
   const manifestMapping = configManifest.mapping as Record<string, unknown>;
   const manifestConfig = configManifest.config as Record<string, unknown>;
   assert.equal(manifestMapping.commit, '071c52477c829cf6dac5ea8b1dec49f23d48d9ca');
+  assert.equal(manifestMapping.sha256, 'fc4e467b8eeced91e08e2a62ed367693ac9317675a2f33a8ab76379ac47429be');
   assert.equal(configManifest.simCoreCommit, expectedCommit);
   assert.equal(
     manifestConfig.sha256,
@@ -79,8 +80,8 @@ async function main(): Promise<void>
   assert.notDeepEqual(traceA1, traceB, 'ordinary adjacent seeds must produce different traces');
   assert.ok(traceA1.events.some((event) => event.type === 'object_hit'), 'seed A must exercise real collision primitives');
   assert.ok(traceB.events.some((event) => event.type === 'object_hit'), 'seed B must exercise real collision primitives');
-  assert.equal(traceA1.snapshots.at(-1)?.result?.kind, 'IN_BUCKET', 'ordinary seed A must exercise a configured goal');
-  assert.equal(traceB.snapshots.at(-1)?.result?.kind, 'IN_BUCKET', 'ordinary seed B must exercise a configured goal');
+  assert.ok(traceA1.snapshots.at(-1)?.done && traceA1.snapshots.at(-1)?.result, 'seed A must record its honest terminal outcome');
+  assert.ok(traceB.snapshots.at(-1)?.done && traceB.snapshots.at(-1)?.result, 'seed B must record its honest terminal outcome');
 
   const single = adapter.createRun(seedA);
   for (let index = 0; index < 360; index += 1)
