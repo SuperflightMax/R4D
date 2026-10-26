@@ -52,7 +52,6 @@ export interface ProjectionPort {
   imageToSim(point: Readonly<Point>): Point;
   simToFlat(point: Readonly<Point>): Point;
   flatToSim(point: Readonly<Point>): Point;
-  radiusToView(radius: number, center: Readonly<Point>, view: ViewId): number;
 }
 
 export interface Board03Bundle {
