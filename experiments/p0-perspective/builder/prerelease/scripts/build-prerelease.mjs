@@ -60,9 +60,9 @@ const binaryRoutes={
 await rm(site,{recursive:true,force:true});
 for(const [route,source] of Object.entries(binaryRoutes))await put(route,source.bytes);
 await put('site.css',Buffer.from(css(),'utf8'));
-await put('index.html',Buffer.from(indexHtml(formalRoute).replaceAll('Принятая серия F1–F4','Проверенная QA серия F1–F4'),'utf8'));
+await put('index.html',Buffer.from(indexHtml(formalRoute).replaceAll('Принятая серия F1–F4','Проверенная QA серия F1–F4').replace('<title>P0 perspective — frozen prerelease</title>','<title>P0 perspective — результат исследования</title>').replace('Frozen prerelease · публикация запрещена','Результат P0 · ожидает приёмки Max').replace('Frozen P0 prerelease · local static package · publication forbidden','P0 · опубликованный результат для приёмки Max · P1 закрыт'),'utf8'));
 await put('recipe.html',Buffer.from(recipeHtml().replace('<section><h2>Что доказано',`${generationFacts()}<section><h2>Что доказано`),'utf8'));
-await put('qa.html',Buffer.from(qaHtml(),'utf8'));
+await put('qa.html',Buffer.from(qaHtml().replace('Frozen rubric 21150e58… · final QA 0c393490… · publication forbidden','Frozen rubric 21150e58… · final QA 0c393490… · P0 ожидает приёмки Max; P1 закрыт'),'utf8'));
 
 const browserAllowlist=(await listFiles(site)).sort();
 const files={};
