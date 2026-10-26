@@ -1,6 +1,7 @@
 import './style.css';
 import { board01Bundle } from './board01-bundle';
 import { board02Bundle } from './board02-bundle';
+import { board04Bundle } from './board04-bundle';
 import { board03Bundle } from './board03-bundle';
 import { BoardScene } from './scene';
 import { formatTerminalResult } from './terminal-status';
@@ -15,6 +16,7 @@ const bundles: Readonly<Record<BoardId, BoardBundle>> = Object.freeze({
   '03': board03Bundle,
   '01': board01Bundle,
   '02': board02Bundle,
+  '04': board04Bundle,
 });
 
 try {
@@ -148,6 +150,7 @@ function layout(): string {
     <button data-board="03" aria-pressed="true">Board 03 · Sun Temple</button>
     <button data-board="01" aria-pressed="false">Board 01 · Jungle</button>
     <button data-board="02" aria-pressed="false">Board 02 · Dark Temple</button>
+    <button data-board="04" aria-pressed="false">Board 04 · Water Temple</button>
   </section>
   <section class="controls" aria-label="Viewer controls">
     <label><input type="checkbox" data-layer="art" checked> Арт</label>
@@ -173,7 +176,8 @@ function setPins(rootNode: HTMLElement, bundle: BoardBundle): void {
 function setNotice(rootNode: HTMLElement, bundle: BoardBundle): void {
   const node = rootNode.querySelector('[data-notice]');
   if (!node) return;
-  node.innerHTML = `<strong>${bundle.label} · flat domain 1000×${bundle.domain.apronMaxY}:</strong> playable plane <code>y=0…${bundle.domain.playableMaxY}</code>; foreground receiver apron <code>y=${bundle.domain.playableMaxY}…${bundle.domain.apronMaxY}</code>. Geometry — только config primitives; bucket circles <code>r=${bundle.domain.goalRadius}</code>.`;
+  const modelNotice = bundle.modelNotice ? `<br><strong>Модель:</strong> ${bundle.modelNotice}` : '';
+  node.innerHTML = `<strong>${bundle.label} · flat domain 1000×${bundle.domain.apronMaxY}:</strong> playable plane <code>y=0…${bundle.domain.playableMaxY}</code>; foreground receiver apron <code>y=${bundle.domain.playableMaxY}…${bundle.domain.apronMaxY}</code>. Geometry — только config primitives; bucket circles <code>r=${bundle.domain.goalRadius}</code>.${modelNotice}`;
 }
 
 function setText(rootNode: HTMLElement, selector: string, text: string): void {

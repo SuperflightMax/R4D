@@ -1,0 +1,574 @@
+{
+  "schemaVersion": 1,
+  "board": "04-water-temple",
+  "simCoreCommit": "5a6fa03f1cdb3de88a2d9c7dbe795eb8e2a7f023",
+  "mappingCanonicalSha256": "a65a72549fd7ebd7a49c9322dcdff00d03daa9cdbbf9c1fad094dc29c80fceac",
+  "configFile": "runtime/board-04-config.v1.json",
+  "tickMs": 8,
+  "checkpoints": [
+    0,
+    1,
+    120,
+    360,
+    720,
+    1200,
+    2500
+  ],
+  "runs": [
+    {
+      "seed": 1,
+      "snapshots": [
+        {
+          "seed": 1,
+          "tick": 0,
+          "rngU32": 1,
+          "ball": {
+            "pos": {
+              "x": 500,
+              "y": 55
+            },
+            "vel": {
+              "x": 0,
+              "y": 0
+            }
+          },
+          "done": false
+        },
+        {
+          "seed": 1,
+          "tick": 1,
+          "rngU32": 1,
+          "ball": {
+            "pos": {
+              "x": 500,
+              "y": 55.03968
+            },
+            "vel": {
+              "x": 0,
+              "y": 4.96
+            }
+          },
+          "done": false
+        },
+        {
+          "seed": 1,
+          "tick": 120,
+          "rngU32": 3027450565,
+          "ball": {
+            "pos": {
+              "x": 491.1964861,
+              "y": 108.3919601
+            },
+            "vel": {
+              "x": -70.3710983,
+              "y": -102.5471536
+            }
+          },
+          "done": false
+        },
+        {
+          "seed": 1,
+          "tick": 360,
+          "rngU32": 1814098701,
+          "ball": {
+            "pos": {
+              "x": 427.674047,
+              "y": 282.843459
+            },
+            "vel": {
+              "x": 122.7723611,
+              "y": -152.0325962
+            }
+          },
+          "done": false
+        },
+        {
+          "seed": 1,
+          "tick": 720,
+          "rngU32": 4212701329,
+          "ball": {
+            "pos": {
+              "x": 566.0973434,
+              "y": 638.7696201
+            },
+            "vel": {
+              "x": -61.7911545,
+              "y": 428.302609
+            }
+          },
+          "done": false
+        },
+        {
+          "seed": 1,
+          "tick": 1016,
+          "rngU32": 3037600243,
+          "ball": {
+            "pos": {
+              "x": 139.47993,
+              "y": 1051.5739122
+            },
+            "vel": {
+              "x": 276.0907498,
+              "y": 500.5923414
+            }
+          },
+          "done": true,
+          "result": {
+            "kind": "IN_BUCKET",
+            "bucketId": "goal-01"
+          }
+        },
+        {
+          "seed": 1,
+          "tick": 1016,
+          "rngU32": 3037600243,
+          "ball": {
+            "pos": {
+              "x": 139.47993,
+              "y": 1051.5739122
+            },
+            "vel": {
+              "x": 276.0907498,
+              "y": 500.5923414
+            }
+          },
+          "done": true,
+          "result": {
+            "kind": "IN_BUCKET",
+            "bucketId": "goal-01"
+          }
+        }
+      ],
+      "events": [
+        {
+          "type": "run_started",
+          "tick": 0,
+          "timeSec": 0,
+          "dropId": "start-center-cascade",
+          "ballId": "ball-04"
+        },
+        {
+          "type": "ball_spawned",
+          "tick": 0,
+          "timeSec": 0,
+          "dropId": "start-center-cascade",
+          "ballId": "ball-04",
+          "x": 500,
+          "y": 55,
+          "vx": 0,
+          "vy": 0
+        },
+        {
+          "type": "object_hit",
+          "tick": 50,
+          "timeSec": 0.4,
+          "ballId": "ball-04",
+          "objectKind": "pin",
+          "objectId": "frog-01",
+          "x": 499.99125820941634,
+          "y": 107.34903461476614
+        },
+        {
+          "type": "object_hit",
+          "tick": 119,
+          "timeSec": 0.9520000000000001,
+          "ballId": "ball-04",
+          "objectKind": "pin",
+          "objectId": "frog-01",
+          "x": 491.1964860975799,
+          "y": 108.39196005138861
+        },
+        {
+          "type": "object_hit",
+          "tick": 180,
+          "timeSec": 1.44,
+          "ballId": "ball-04",
+          "objectKind": "pin",
+          "objectId": "frog-01",
+          "x": 456.6831412339491,
+          "y": 133.28419499024523
+        },
+        {
+          "type": "object_hit",
+          "tick": 243,
+          "timeSec": 1.944,
+          "ballId": "ball-04",
+          "objectKind": "segment",
+          "objectId": "pillar-03:top",
+          "x": 393.56448074720004,
+          "y": 296.791667
+        },
+        {
+          "type": "object_hit",
+          "tick": 284,
+          "timeSec": 2.2720000000000002,
+          "ballId": "ball-04",
+          "objectKind": "segment",
+          "objectId": "arch-01:right",
+          "x": 353.3804804929302,
+          "y": 222.95265142132868
+        },
+        {
+          "type": "object_hit",
+          "tick": 349,
+          "timeSec": 2.7920000000000003,
+          "ballId": "ball-04",
+          "objectKind": "segment",
+          "objectId": "pillar-03:top",
+          "x": 417.8522580408,
+          "y": 296.791667
+        },
+        {
+          "type": "object_hit",
+          "tick": 534,
+          "timeSec": 4.272,
+          "ballId": "ball-04",
+          "objectKind": "segment",
+          "objectId": "arch-06:top",
+          "x": 599.5553544888,
+          "y": 677.537285
+        },
+        {
+          "type": "object_hit",
+          "tick": 571,
+          "timeSec": 4.5680000000000005,
+          "ballId": "ball-04",
+          "objectKind": "segment",
+          "objectId": "pillar-06:bottom",
+          "x": 639.2671748616108,
+          "y": 563.2983668924137
+        },
+        {
+          "type": "object_hit",
+          "tick": 730,
+          "timeSec": 5.84,
+          "ballId": "ball-04",
+          "objectKind": "segment",
+          "objectId": "arch-06:top",
+          "x": 560.4285933661401,
+          "y": 678.3224450025026
+        },
+        {
+          "type": "object_hit",
+          "tick": 813,
+          "timeSec": 6.5040000000000004,
+          "ballId": "ball-04",
+          "objectKind": "segment",
+          "objectId": "pillar-07:top",
+          "x": 371.77068133427304,
+          "y": 663.3668495399542
+        },
+        {
+          "type": "object_hit",
+          "tick": 851,
+          "timeSec": 6.808,
+          "ballId": "ball-04",
+          "objectKind": "pin",
+          "objectId": "frog-04",
+          "x": 273.07505180290707,
+          "y": 715.1057927794747
+        },
+        {
+          "type": "object_hit",
+          "tick": 889,
+          "timeSec": 7.112,
+          "ballId": "ball-04",
+          "objectKind": "segment",
+          "objectId": "arch-07:top",
+          "x": 259.00844411007535,
+          "y": 861.7392445550842
+        },
+        {
+          "type": "object_hit",
+          "tick": 960,
+          "timeSec": 7.68,
+          "ballId": "ball-04",
+          "objectKind": "wall",
+          "objectId": "wall_left",
+          "x": 18,
+          "y": 890.2380836896001
+        },
+        {
+          "type": "bucket_entered",
+          "tick": 1016,
+          "timeSec": 8.128,
+          "ballId": "ball-04",
+          "bucketId": "goal-01",
+          "x": 139.47993,
+          "y": 1051.5739122
+        },
+        {
+          "type": "ball_finished",
+          "tick": 1016,
+          "timeSec": 8.128,
+          "ballId": "ball-04",
+          "result": {
+            "kind": "IN_BUCKET",
+            "bucketId": "goal-01"
+          }
+        },
+        {
+          "type": "run_finished",
+          "tick": 1016,
+          "timeSec": 8.128,
+          "dropId": "start-center-cascade",
+          "ballId": "ball-04",
+          "result": {
+            "kind": "IN_BUCKET",
+            "bucketId": "goal-01"
+          }
+        }
+      ]
+    },
+    {
+      "seed": 2,
+      "snapshots": [
+        {
+          "seed": 2,
+          "tick": 0,
+          "rngU32": 2,
+          "ball": {
+            "pos": {
+              "x": 500,
+              "y": 55
+            },
+            "vel": {
+              "x": 0,
+              "y": 0
+            }
+          },
+          "done": false
+        },
+        {
+          "seed": 2,
+          "tick": 1,
+          "rngU32": 2,
+          "ball": {
+            "pos": {
+              "x": 500,
+              "y": 55.03968
+            },
+            "vel": {
+              "x": 0,
+              "y": 4.96
+            }
+          },
+          "done": false
+        },
+        {
+          "seed": 2,
+          "tick": 120,
+          "rngU32": 3186434646,
+          "ball": {
+            "pos": {
+              "x": 491.8556075,
+              "y": 108.2605222
+            },
+            "vel": {
+              "x": -65.0935841,
+              "y": -102.1437104
+            }
+          },
+          "done": false
+        },
+        {
+          "seed": 2,
+          "tick": 360,
+          "rngU32": 2028691434,
+          "ball": {
+            "pos": {
+              "x": 43.4862813,
+              "y": 422.1396237
+            },
+            "vel": {
+              "x": -378.3888442,
+              "y": 410.2256901
+            }
+          },
+          "done": false
+        },
+        {
+          "seed": 2,
+          "tick": 720,
+          "rngU32": 1919597778,
+          "ball": {
+            "pos": {
+              "x": 389.5848734,
+              "y": 856.9157283
+            },
+            "vel": {
+              "x": 150.3216319,
+              "y": 479.2477722
+            }
+          },
+          "done": false
+        },
+        {
+          "seed": 2,
+          "tick": 797,
+          "rngU32": 1919597778,
+          "ball": {
+            "pos": {
+              "x": 482.1830021,
+              "y": 1271.2913977
+            },
+            "vel": {
+              "x": 150.3216319,
+              "y": 861.1677722
+            }
+          },
+          "done": true,
+          "result": {
+            "kind": "LOST",
+            "finalX": 482.1830021,
+            "nearMissBucketIds": []
+          }
+        },
+        {
+          "seed": 2,
+          "tick": 797,
+          "rngU32": 1919597778,
+          "ball": {
+            "pos": {
+              "x": 482.1830021,
+              "y": 1271.2913977
+            },
+            "vel": {
+              "x": 150.3216319,
+              "y": 861.1677722
+            }
+          },
+          "done": true,
+          "result": {
+            "kind": "LOST",
+            "finalX": 482.1830021,
+            "nearMissBucketIds": []
+          }
+        }
+      ],
+      "events": [
+        {
+          "type": "run_started",
+          "tick": 0,
+          "timeSec": 0,
+          "dropId": "start-center-cascade",
+          "ballId": "ball-04"
+        },
+        {
+          "type": "ball_spawned",
+          "tick": 0,
+          "timeSec": 0,
+          "dropId": "start-center-cascade",
+          "ballId": "ball-04",
+          "x": 500,
+          "y": 55,
+          "vx": 0,
+          "vy": 0
+        },
+        {
+          "type": "object_hit",
+          "tick": 50,
+          "timeSec": 0.4,
+          "ballId": "ball-04",
+          "objectKind": "pin",
+          "objectId": "frog-01",
+          "x": 499.99125820941634,
+          "y": 107.34903461476614
+        },
+        {
+          "type": "object_hit",
+          "tick": 119,
+          "timeSec": 0.9520000000000001,
+          "ballId": "ball-04",
+          "objectKind": "pin",
+          "objectId": "frog-01",
+          "x": 491.85560745395003,
+          "y": 108.26052215397628
+        },
+        {
+          "type": "object_hit",
+          "tick": 174,
+          "timeSec": 1.3920000000000001,
+          "ballId": "ball-04",
+          "objectKind": "pin",
+          "objectId": "frog-01",
+          "x": 463.17550875164324,
+          "y": 124.38919345890606
+        },
+        {
+          "type": "object_hit",
+          "tick": 250,
+          "timeSec": 2,
+          "ballId": "ball-04",
+          "objectKind": "segment",
+          "objectId": "pillar-03:top",
+          "x": 373.4413585331007,
+          "y": 297.9793041650359
+        },
+        {
+          "type": "object_hit",
+          "tick": 368,
+          "timeSec": 2.944,
+          "ballId": "ball-04",
+          "objectKind": "wall",
+          "objectId": "wall_left",
+          "x": 18,
+          "y": 453.4614732208
+        },
+        {
+          "type": "object_hit",
+          "tick": 463,
+          "timeSec": 3.704,
+          "ballId": "ball-04",
+          "objectKind": "segment",
+          "objectId": "bound-near-02",
+          "x": 206.5029710376,
+          "y": 982
+        },
+        {
+          "type": "object_hit",
+          "tick": 548,
+          "timeSec": 4.384,
+          "ballId": "ball-04",
+          "objectKind": "segment",
+          "objectId": "pillar-07:left",
+          "x": 360.186875,
+          "y": 691.6465959912
+        },
+        {
+          "type": "object_hit",
+          "tick": 622,
+          "timeSec": 4.976,
+          "ballId": "ball-04",
+          "objectKind": "pin",
+          "objectId": "frog-04",
+          "x": 272.93528268402133,
+          "y": 669.7695349452097
+        },
+        {
+          "type": "ball_finished",
+          "tick": 797,
+          "timeSec": 6.376,
+          "ballId": "ball-04",
+          "result": {
+            "kind": "LOST",
+            "finalX": 482.1830021,
+            "nearMissBucketIds": []
+          }
+        },
+        {
+          "type": "run_finished",
+          "tick": 797,
+          "timeSec": 6.376,
+          "dropId": "start-center-cascade",
+          "ballId": "ball-04",
+          "result": {
+            "kind": "LOST",
+            "finalX": 482.1830021,
+            "nearMissBucketIds": []
+          }
+        }
+      ]
+    }
+  ]
+}

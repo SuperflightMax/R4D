@@ -1,7 +1,7 @@
-# Boards 01/02 — локальный scale candidate
+# Boards 01/02/04 — локальный scale candidate
 
-Статус: **локально подготовлен, не опубликован**. Scope добавляет boards 01/02
-к принятому viewer board 03; board 04 пока не включён.
+Статус: **локально подготовлен, не опубликован**. Scope добавляет boards
+01/02/04 к принятому viewer board 03.
 
 - Viewer source HEAD фиксируется итоговым коммитом Builder.
 - Research canonical mapping: `9a248421ad8453d839940bccf7e9838e9091ffa83ab40e1b50998f57e7041d5c`.
@@ -13,6 +13,9 @@
 - Browser evidence: `output/playwright/board-01/`.
 - Board 02 Research/config/traces: `4f5862f5c2a602fccdc4d4419f7b5e6e4049fb807038d386ee3950d9cad24a12` / `aea8c0d299b71facbed00d7774da6e31211a7cfb6c119604637a4caa65e4dd48` / `d6aee07a7104ea8d1e48ed63859d0511005e69d239aa10a49001b4bfca4dd236`.
 - Board 02 browser evidence: `output/playwright/board-02/`.
+- Board 04 Research/config/traces: `a65a72549fd7ebd7a49c9322dcdff00d03daa9cdbbf9c1fad094dc29c80fceac` / `39fbcbff7c312a88fc29d8114bbc6ce02aa3a8898b00bc6ed4495d8f2eb329b3` / `ad90b706f07b556f0730c7d6b45d2dfc0bcaac6d829952da31cf22934a856a39`.
+- Board 04 plane model: single continuous 2D plane; no shoreline/height colliders; outer cascades outside domain; front pools are goals only.
+- Board 04 browser evidence: `output/playwright/board-04/`.
 
 Никакой публикации этим пакетом не выполняется. Финальную release provenance и
 публикацию оформляет Release Engineer после отдельного решения CTO/QA.

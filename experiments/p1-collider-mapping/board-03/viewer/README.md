@@ -1,7 +1,7 @@
 # P1 collider mapping — PixiJS viewer
 
-Viewer объединяет `03-sun-temple.jpg`, `01-jungle.jpg` и
-`02-dark-temple.jpg`. Он не содержит собственной геометрии или
+Viewer объединяет `03-sun-temple.jpg`, `01-jungle.jpg`,
+`02-dark-temple.jpg` и `04-water-temple.jpg`. Он не содержит собственной геометрии или
 физики: каждый board bundle читает точный Simulation Builder config,
 подключает version-pinned настоящий `@millionko/sim-core` через adapter и
 строит overlay только из config primitives.
@@ -18,8 +18,8 @@ Candidate-B ball масштабируется равномерно из физи
 нативные 64 px не используются как фиксированный экранный размер. Выбранная
 manifest тень candidate-C — отдельный визуальный sprite без PRNG/physics.
 Переключение доски сбрасывает выбранную доску к началу с текущим seed.
-Perspective/flat и Art/Geometry внутри доски не меняют tick/RNG. Board 04
-и публикация пока вне этой ревизии.
+Perspective/flat и Art/Geometry внутри доски не меняют tick/RNG. Публикация
+вне этой ревизии.
 
 Board 03 projection port реализует exact Researcher mapping v0.2
 `83e3b0e63ecc3fb7878719c30f59a3b4306fc467`. Perspective-контуры окружностей
@@ -53,6 +53,22 @@ config SHA-256:
 traces SHA-256:
 `d6aee07a7104ea8d1e48ed63859d0511005e69d239aa10a49001b4bfca4dd236`.
 Seed 1 приходит в `goal-04` на tick 674, seed 2 — в `goal-02` на tick 476.
+
+Board 04 использует отдельную exact Research homography v0.1 и flat domain
+`1000×1250`. Config-only overlay содержит 6 circle pins, 60 obstacle
+segments, пять explicit near segments, три implicit walls и четыре goals
+`r=45`. Canonical mapping/config/traces SHA-256 соответственно:
+`a65a72549fd7ebd7a49c9322dcdff00d03daa9cdbbf9c1fad094dc29c80fceac`,
+`39fbcbff7c312a88fc29d8114bbc6ce02aa3a8898b00bc6ed4495d8f2eb329b3`,
+`ad90b706f07b556f0730c7d6b45d2dfc0bcaac6d829952da31cf22934a856a39`.
+Seed 1 приходит в `goal-01` на tick 1016; seed 2 честно заканчивается `LOST`
+на tick 797.
+
+Физическая модель board 04 — **single continuous 2D plane**. Water channels,
+islands, bridges, ramps и steps схлопнуты в одну проходимую плоскость;
+shoreline/height colliders не создаются. Outer cascades находятся вне domain,
+а четыре front pools существуют только как receiver goals. Видимые уровни
+воды и высоты арта не интерпретируются как отдельная геометрия.
 
 ## Проверка checkpoint
 
@@ -91,6 +107,10 @@ Board 01 integration evidence хранится отдельно в
 Board 02 integration evidence хранится в `output/playwright/board-02/`:
 perspective/flat, art-only/geometry-only, `collision-tick047.png`,
 `seed1-terminal-goal04-tick674.png` и `seed2-terminal-goal02-tick476.png`.
+
+Board 04 integration evidence хранится в `output/playwright/board-04/`:
+perspective/flat, art-only/geometry-only, `collision-tick050.png`,
+`seed1-terminal-goal01-tick1016.png` и `seed2-terminal-lost-tick797.png`.
 
 `npm run candidate:manifest` создаёт
 `scale-candidate-manifest.sha256`. Это непубликуемый scale-candidate manifest,

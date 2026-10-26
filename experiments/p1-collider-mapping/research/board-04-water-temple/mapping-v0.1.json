@@ -1,0 +1,88 @@
+{
+  "schema": "r4d.p1.board-04.mapping.v0.1",
+  "status": "board-04-independent-mapping-package",
+  "scope": {"board": "04-water-temple", "publication": "forbidden", "board03FrozenGate": "d75da6483066aff686c72a05d48c02efecf4e38d"},
+  "source": {"path": "K:\\Agents\\R4D\\Assets\\perspective\\04-water-temple.jpg", "sha256": "8da65c76c110b6ba7cefe113564fe12feed4428e84e84835f033e7da31d3b80d", "widthPx": 1536, "heightPx": 1536, "readOnly": true},
+  "coordinates": {
+    "image": "origin top-left; x right; y down",
+    "flat": "origin far-left; x right; y far-to-near; board-04 units",
+    "flatExtent": {"x": [0, 1000], "y": [0, 1250]},
+    "domains": {"playable": {"x": [0, 1000], "y": [0, 1000]}, "receiverApron": {"x": [0, 1000], "y": [1000, 1250]}}
+  },
+  "transform": {
+    "mode": "perspective-homography",
+    "reason": "board-04 outer temple walls define the navigation footprint; all green islands, internal water channels and painted crossings are intentionally flattened inside one quad",
+    "flatQuadClockwise": [[0, 0], [1000, 0], [1000, 1000], [0, 1000]],
+    "imageQuadPxClockwise": [[190, 250], [1346, 250], [1430, 1060], [106, 1060]],
+    "forwardMatrix": [[1.156, -0.09745015105740179, 190], [0, 0.6754984894259819, 250], [0, -0.0001268882175226586, 1]],
+    "inverseMatrix": [[0.8650519031141869, 0.08970908624887862, -186.78713315391514], [0, 1.4139860737323253, -353.4965184330813], [0, 0.00017941817249775724, 0.9551454568755606]],
+    "forward": "image homogeneous point = forwardMatrix * [xFlat,yFlat,1], divide by w",
+    "inverse": "flat homogeneous point = inverseMatrix * [xPx,yPx,1], divide by w",
+    "validDomain": "0<=xFlat<=1000 and 0<=yFlat<=1250; y>1000 is receiver apron only",
+    "outsideDomain": "invalid; no clamp and no implicit extrapolation"
+  },
+  "planeCollapse": {
+    "model": "single-continuous-2d-navigation-plane",
+    "greenStoneIslands": {"flatRole": "traversable floor", "collidersFromShoreline": false},
+    "internalWaterChannels": {"flatRole": "traversable floor", "collidersFromWaterEdge": false, "depthMechanic": false},
+    "bridgesRampsAndSteps": {"flatRole": "traversable floor", "collidersFromElevationEdge": false, "heightMechanic": false},
+    "outerCascadesBeyondTempleWalls": {"flatRole": "background outside playable domain"},
+    "foregroundWaterBasins": {"flatRole": "receiver apron only", "goalTriggerSource": "visible water component", "traversable": false},
+    "rule": "Only outer temple bounds, obstacle support footprints and four goal triggers survive projection; visible water levels, island heights, steps and bridge elevation do not survive as separate geometry."
+  },
+  "start": {"id": "start-center-cascade", "positionFlat": [500, 55], "directionFlat": [0, 1], "sourceCue": "center upper cascade outlet"},
+  "bounds": [
+    {"id": "bound-far", "from": [0, 0], "to": [1000, 0]},
+    {"id": "bound-left", "from": [0, 0], "to": [0, 1000]},
+    {"id": "bound-right", "from": [1000, 0], "to": [1000, 1000]},
+    {"id": "bound-near-01", "from": [0, 1000], "to": [35, 1000]},
+    {"id": "bound-near-02", "from": [190, 1000], "to": [300, 1000]},
+    {"id": "bound-near-03", "from": [455, 1000], "to": [550, 1000]},
+    {"id": "bound-near-04", "from": [715, 1000], "to": [810, 1000]},
+    {"id": "bound-near-05", "from": [970, 1000], "to": [1000, 1000]}
+  ],
+  "goals": [
+    {"id": "goal-01", "shape": "bucketCircle", "centerFlat": [113.093989, 1088.003538], "radiusFlat": 45, "visibleWaterReceiver": {"centerPx": [249.1, 1142.7], "widthPx": 258, "heightPx": 260, "angleDeg": 0, "measurement": "HSV H=75..105, S>=70, V>=50 connected-component bounding box"}},
+    {"id": "goal-02", "shape": "bucketCircle", "centerFlat": [373.718075, 1089.473948], "radiusFlat": 45, "visibleWaterReceiver": {"centerPx": [598.6, 1144.1], "widthPx": 229, "heightPx": 261, "angleDeg": 0, "measurement": "HSV H=75..105, S>=70, V>=50 connected-component bounding box"}},
+    {"id": "goal-03", "shape": "bucketCircle", "centerFlat": [628.822485, 1089.158913], "radiusFlat": 45, "visibleWaterReceiver": {"centerPx": [940.8, 1143.8], "widthPx": 229, "heightPx": 260, "angleDeg": 0, "measurement": "HSV H=75..105, S>=70, V>=50 connected-component bounding box"}},
+    {"id": "goal-04", "shape": "bucketCircle", "centerFlat": [891.462308, 1089.158913], "radiusFlat": 45, "visibleWaterReceiver": {"centerPx": [1293.1, 1143.8], "widthPx": 262, "heightPx": 260, "angleDeg": 0, "measurement": "HSV H=75..105, S>=70, V>=50 connected-component bounding box"}}
+  ],
+  "obstacles": [
+    {"id": "pillar-01", "family": "upright-pillar", "shape": "axisAlignedSegmentLoop", "sourceAnchorPx": [379, 370], "centerFlat": [170.587128, 166.10212], "halfExtentsFlat": [25, 30]},
+    {"id": "arch-01", "family": "white-arch-base", "shape": "axisAlignedSegmentLoop", "sourceAnchorPx": [538, 389], "centerFlat": [305.879264, 191.761695], "halfExtentsFlat": [31, 24]},
+    {"id": "frog-01", "family": "frog-base", "shape": "circle", "sourceAnchorPx": [770, 365], "centerFlat": [501.695128, 159.321112], "radiusFlat": 34},
+    {"id": "arch-02", "family": "white-arch-base", "shape": "axisAlignedSegmentLoop", "sourceAnchorPx": [997, 389], "centerFlat": [693.276733, 191.761695], "halfExtentsFlat": [31, 24]},
+    {"id": "pillar-02", "family": "upright-pillar", "shape": "axisAlignedSegmentLoop", "sourceAnchorPx": [1159, 370], "centerFlat": [831.106511, 166.10212], "halfExtentsFlat": [25, 30]},
+    {"id": "frog-02", "family": "frog-base", "shape": "circle", "sourceAnchorPx": [456, 511], "centerFlat": [242.177171, 352.541501], "radiusFlat": 34},
+    {"id": "pillar-03", "family": "upright-pillar", "shape": "axisAlignedSegmentLoop", "sourceAnchorPx": [653, 505], "centerFlat": [404.871324, 344.791667], "halfExtentsFlat": [25, 30]},
+    {"id": "pillar-04", "family": "upright-pillar", "shape": "axisAlignedSegmentLoop", "sourceAnchorPx": [886, 506], "centerFlat": [597.59355, 346.084414], "halfExtentsFlat": [25, 30]},
+    {"id": "frog-03", "family": "frog-base", "shape": "circle", "sourceAnchorPx": [1080, 511], "centerFlat": [757.822829, 352.541501], "radiusFlat": 34},
+    {"id": "arch-03", "family": "white-arch-base", "shape": "axisAlignedSegmentLoop", "sourceAnchorPx": [321, 646], "centerFlat": [138.972647, 522.79417], "halfExtentsFlat": [31, 24]},
+    {"id": "pillar-05", "family": "upright-pillar", "shape": "axisAlignedSegmentLoop", "sourceAnchorPx": [548, 655], "centerFlat": [322.580645, 533.870968], "halfExtentsFlat": [25, 30]},
+    {"id": "arch-04", "family": "white-arch-base", "shape": "axisAlignedSegmentLoop", "sourceAnchorPx": [768, 645], "centerFlat": [500, 521.561353], "halfExtentsFlat": [31, 24]},
+    {"id": "pillar-06", "family": "upright-pillar", "shape": "axisAlignedSegmentLoop", "sourceAnchorPx": [994, 655], "centerFlat": [682.258065, 533.870968], "halfExtentsFlat": [25, 30]},
+    {"id": "arch-05", "family": "white-arch-base", "shape": "axisAlignedSegmentLoop", "sourceAnchorPx": [1215, 646], "centerFlat": [861.027353, 522.79417], "halfExtentsFlat": [31, 24]},
+    {"id": "frog-04", "family": "frog-base", "shape": "circle", "sourceAnchorPx": [421, 787], "centerFlat": [226.20634, 692.581942], "radiusFlat": 34},
+    {"id": "pillar-07", "family": "upright-pillar", "shape": "axisAlignedSegmentLoop", "sourceAnchorPx": [645, 802], "centerFlat": [403.186875, 710.184473], "halfExtentsFlat": [25, 30]},
+    {"id": "arch-06", "family": "white-arch-base", "shape": "axisAlignedSegmentLoop", "sourceAnchorPx": [891, 810], "centerFlat": [596.686852, 719.537285], "halfExtentsFlat": [31, 24]},
+    {"id": "frog-05", "family": "frog-base", "shape": "circle", "sourceAnchorPx": [1123, 788], "centerFlat": [780.060073, 693.758133], "radiusFlat": 34},
+    {"id": "arch-07", "family": "white-arch-base", "shape": "axisAlignedSegmentLoop", "sourceAnchorPx": [505, 970], "centerFlat": [298.518897, 901.600272], "halfExtentsFlat": [31, 24]},
+    {"id": "frog-06", "family": "frog-base", "shape": "circle", "sourceAnchorPx": [769, 973], "centerFlat": [500.765723, 904.925583], "radiusFlat": 34},
+    {"id": "arch-08", "family": "white-arch-base", "shape": "axisAlignedSegmentLoop", "sourceAnchorPx": [1020, 972], "centerFlat": [692.992807, 903.817498], "halfExtentsFlat": [31, 24]}
+  ],
+  "uncertainty": {
+    "floorQuad": "manual outer inner-wall seam approximation; near edge is partly hidden by basin rails; 10-14 px",
+    "planeCollapse": "the painting shows several water levels, islands, short bridges and steps, but provides no authoritative height or passability model; all are deliberately one traversable plane",
+    "frogBases": "rear footprint is hidden by the body; circle is an allowed irregular-base approximation",
+    "archAndPillarBases": "visible lower support determines the anchor, while hidden rear depth is represented by a family-sized rectangle",
+    "goals": "water-component bounds are color-threshold evidence; bucket circle is an inscribed trigger and does not claim recovery of basin volume"
+  },
+  "rejectedVariants": [
+    "water shorelines as colliders: rejected because they would invent passability rules and split the required single 2D plane",
+    "bridge and stair height tiers: rejected because no physical height model or Millionko source view was provided",
+    "obstacle silhouette colliders: rejected because heads, arch tops and shadows are not floor support",
+    "board-01, board-02 or board-03 transforms: rejected because water-temple outer walls define a different quad"
+  ],
+  "diagnostics": {"circleSamples": 96, "segmentSamples": 32, "overlay": "evidence/overlay.png", "flatPreview": "evidence/flat-preview.png", "sourceOfTruth": "mapping JSON; future viewer contours come from adapted simulator config"},
+  "checks": {"roundTripFlatMaxError": 1e-6, "roundTripImageMaxErrorPx": 1e-6, "sourceAnchorMaxErrorPx": 0.001, "goalContainmentMaxRectValue": 1, "finiteRequired": true, "playableObstacleBoundsRequired": true, "singlePlaneCollapseRequired": true}
+}

@@ -23,6 +23,11 @@ const [
   board02Config,
   board02ManifestText,
   board02Traces,
+  board04Image,
+  board04MappingText,
+  board04Config,
+  board04ManifestText,
+  board04Traces,
   ball,
   shadow,
   assetManifestText,
@@ -40,12 +45,18 @@ const [
   readFile(paths.board02.config, 'utf8'),
   readFile(paths.board02.configManifest, 'utf8'),
   readFile(paths.board02.traces, 'utf8'),
+  readFile(paths.board04.image),
+  readFile(paths.board04.mapping, 'utf8'),
+  readFile(paths.board04.config, 'utf8'),
+  readFile(paths.board04.configManifest, 'utf8'),
+  readFile(paths.board04.traces, 'utf8'),
   readFile(paths.ball),
   readFile(paths.shadow),
   readFile(paths.assetManifest, 'utf8'),
 ]);
 const board01Manifest = JSON.parse(board01ManifestText);
 const board02Manifest = JSON.parse(board02ManifestText);
+const board04Manifest = JSON.parse(board04ManifestText);
 const assetManifest = JSON.parse(assetManifestText);
 
 assertEqual(sha(board03Image), expected.board03.image, 'board-03 source image SHA-256');
@@ -66,6 +77,13 @@ assertEqual(board02Manifest.mapping.canonicalSha256, expected.board02.mappingCan
 assertEqual(sha(canonicalLf(board02Config)), expected.board02.config, 'board-02 config canonical LF SHA-256');
 assertEqual(sha(canonicalLf(board02Traces)), expected.board02.traces, 'board-02 traces canonical LF SHA-256');
 
+assertEqual(sha(board04Image), expected.board04.image, 'board-04 source image SHA-256');
+assertEqual(sha(JSON.stringify(JSON.parse(board04MappingText))), expected.board04.mappingJsSemantic, 'board-04 JS semantic mapping SHA-256');
+assertEqual(board04Manifest.mapping.commit, expected.board04.researchCommit, 'board-04 Research commit');
+assertEqual(board04Manifest.mapping.canonicalSha256, expected.board04.mappingCanonical, 'board-04 canonical mapping SHA-256');
+assertEqual(sha(canonicalLf(board04Config)), expected.board04.config, 'board-04 config canonical LF SHA-256');
+assertEqual(sha(canonicalLf(board04Traces)), expected.board04.traces, 'board-04 traces canonical LF SHA-256');
+
 assertEqual(sha(ball), expected.ball, 'candidate-B ball SHA-256');
 assertEqual(sha(shadow), expected.shadow, 'candidate-C shadow SHA-256');
 assertEqual(assetManifest.selected.ball, 'candidate-b/ball-64.png', 'asset manifest ball');
@@ -81,4 +99,4 @@ assertEqual(
   'sim-core source must be detached',
 );
 
-console.log(`PASS exact viewer inputs: board03=${expected.board03.mapping} board01=${expected.board01.mappingCanonical} board02=${expected.board02.mappingCanonical} core=${expected.simCore}`);
+console.log(`PASS exact viewer inputs: board03=${expected.board03.mapping} board01=${expected.board01.mappingCanonical} board02=${expected.board02.mappingCanonical} board04=${expected.board04.mappingCanonical} core=${expected.simCore}`);
