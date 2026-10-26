@@ -1,0 +1,101 @@
+import { createHash } from 'node:crypto';
+import { mkdir, readFile, rm, writeFile } from 'node:fs/promises';
+import { spawnSync } from 'node:child_process';
+import path from 'node:path';
+import { fileURLToPath } from 'node:url';
+
+const here=path.dirname(fileURLToPath(import.meta.url));
+const packageRoot=path.resolve(here,'..');
+const builder=path.resolve(packageRoot,'..');
+const repo=path.resolve(builder,'..','..','..');
+const outFlag=process.argv.indexOf('--out');
+const manifestFlag=process.argv.indexOf('--manifest');
+const site=outFlag>=0?path.resolve(process.argv[outFlag+1]):path.join(packageRoot,'site');
+const manifestPath=manifestFlag>=0?path.resolve(process.argv[manifestFlag+1]):path.join(packageRoot,'manifest.json');
+
+const pins={
+  acceptedBuilder:'9c1050596751deee3e736fe2d4f968a37c91af97',
+  finalQa:'0c3934908d9e795b631e9eaee89025e62541e2ce',
+  researchRecipe:'ee4d8e5c7dbb3b6618d58d6dacb0caf9b73dfb1b',
+  d1:'2db5dffdbcd0fecaee7ffa209ea3ebe8c775cd2f',
+  c1:'6452515fff9f7cb90b619cbe632b62b9573d668b',
+  failedSeries:'4cdd9e6b1da397ae1549ab4085af0f830555fd42',
+};
+const reference={path:'K:\\Agents\\R4D\\Assets\\perspective\\03-sun-temple.jpg',sha256:'f5cfa2bbe8e4b49ecbc0f4c7a0cee99842b182b56ae495979153b8fc9ff86e32'};
+const expectedBoards={
+  'board-01':'6c9e6c221ebf17cc6f9549b8b43f29cea1f04416beffbe185f9252b17d084e4e',
+  'board-02':'873e58c160e7ecfd0831002b6c5c3cd273693518fe39ea38d2953643c05ed52b',
+  'board-03':'114c16ed5c412191e27175b6a498e109f56f02b9ac302c8b80fc0b237ff836c6',
+  'board-04':'4db1465934ad1e7fb3f831d81b06c7995d02ec38c72ed58b9555e77be8916225',
+};
+
+const sources={};
+sources.reference=await fsSource(reference.path,reference.sha256);
+sources.formal=await gitSource(pins.acceptedBuilder,'experiments/p0-perspective/builder/generated/formal-reference-v1.svg');
+for(const [boardId,expected] of Object.entries(expectedBoards)){
+  const source=await gitSource(pins.acceptedBuilder,`experiments/p0-perspective/builder/final-series/output/${boardId}/composite.png`);
+  assert(source.sha256===expected,`${boardId} accepted hash mismatch`);sources[boardId]=source;
+}
+sources.d1=await gitSource(pins.d1,'experiments/p0-perspective/asset-artist/d1/output/d1-jade-sky-observatory.png');
+sources.c1=await gitSource(pins.c1,'experiments/p0-perspective/asset-artist/c1/output/c1-jade-sky-observatory.png');
+sources.failedF1=await gitSource(pins.failedSeries,'experiments/p0-perspective/builder/final-series/output/board-01/composite.png');
+sources.recipe=await gitSource(pins.researchRecipe,'experiments/p0-perspective/research/CROSS_SERIES_CONCLUSION_AND_RECIPE.md');
+for(const name of ['RUBRIC_V0.1.md','REPORT_D1.md','REPORT_C1.md','REPORT_L1.md','REPORT_FINAL_SERIES.md','REPORT_F1_CORRECTION.md']){
+  sources[`qa:${name}`]=await gitSource(pins.finalQa,`experiments/p0-perspective/qa/visual/${name}`);
+}
+
+const formalRoute=`assets/formal/formal-reference-v1.${sources.formal.sha256}.svg`;
+const binaryRoutes={
+  'assets/reference/03-sun-temple.jpg':sources.reference,
+  [formalRoute]:sources.formal,
+  'assets/boards/f1.png':sources['board-01'],
+  'assets/boards/f2.png':sources['board-02'],
+  'assets/boards/f3.png':sources['board-03'],
+  'assets/boards/f4.png':sources['board-04'],
+  'assets/failures/d1-single-shot.png':sources.d1,
+  'assets/failures/c1-corrected-single-shot.png':sources.c1,
+  'assets/failures/f1-qa-failed-composite.png':sources.failedF1,
+};
+
+await rm(site,{recursive:true,force:true});
+for(const [route,source] of Object.entries(binaryRoutes))await put(route,source.bytes);
+await put('site.css',Buffer.from(css(),'utf8'));
+await put('index.html',Buffer.from(indexHtml(formalRoute),'utf8'));
+await put('recipe.html',Buffer.from(recipeHtml(),'utf8'));
+await put('qa.html',Buffer.from(qaHtml(),'utf8'));
+
+const browserAllowlist=(await listFiles(site)).sort();
+const files={};
+for(const route of browserAllowlist){const bytes=await readFile(path.join(site,...route.split('/')));files[route]={size:bytes.length,sha256:sha(bytes)};}
+const sourcePins=Object.fromEntries(Object.entries(sources).map(([id,s])=>[id,{kind:s.kind,...(s.commit?{commit:s.commit}:{}),path:s.path,size:s.size,sha256:s.sha256}]));
+const manifest={
+  schema:'r4d.p0.frozen-prerelease.v1',
+  status:'P0 — результат исследования, ожидает явной приёмки Max; P1 закрыт',
+  publication:'forbidden',
+  buildCommand:'npm run build:prerelease',
+  checkCommand:'npm run check:prerelease',
+  exactInputs:pins,
+  browserAllowlist,
+  files,
+  sourcePins,
+  byteIdentity:{reference:{route:'assets/reference/03-sun-temple.jpg',sha256:reference.sha256},boards:Object.fromEntries(Object.entries(expectedBoards).map(([id,hash],i)=>[`F${i+1}`,{route:`assets/boards/f${i+1}.png`,sha256:hash}]))},
+  exclusions:['publication','runtime dependencies','external URLs','unlisted routes','later-stage scope'],
+};
+await mkdir(path.dirname(manifestPath),{recursive:true});
+await writeFile(manifestPath,`${JSON.stringify(manifest,null,2)}\n`,'utf8');
+console.log(`Built frozen P0 prerelease: ${browserAllowlist.length} allowlisted routes; manifest ${manifestPath}`);
+
+async function put(route,bytes){const target=path.join(site,...route.split('/'));await mkdir(path.dirname(target),{recursive:true});await writeFile(target,bytes);}
+async function gitSource(commit,file){const r=spawnSync('git',['show',`${commit}:${file}`],{cwd:repo,encoding:null,maxBuffer:64*1024*1024});if(r.status!==0)throw new Error(Buffer.from(r.stderr??'').toString('utf8')||`Cannot read ${commit}:${file}`);const bytes=Buffer.from(r.stdout);return{kind:'git-blob',commit,path:file,size:bytes.length,sha256:sha(bytes),bytes};}
+async function fsSource(file,expected){const bytes=await readFile(file);const actual=sha(bytes);assert(actual===expected,`Reference SHA-256 differs: ${actual}`);return{kind:'read-only-file',path:file,size:bytes.length,sha256:actual,bytes};}
+async function listFiles(root,dir=root){const {readdir}=await import('node:fs/promises');const entries=await readdir(dir,{withFileTypes:true});const out=[];for(const e of entries){const full=path.join(dir,e.name);if(e.isDirectory())out.push(...await listFiles(root,full));else out.push(path.relative(root,full).replaceAll('\\','/'));}return out;}
+function sha(b){return createHash('sha256').update(b).digest('hex');}
+function assert(c,m){if(!c)throw new Error(m);}
+
+function shell(title,body){return `<!doctype html><html lang="ru"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>${title}</title><link rel="icon" href="data:,"><link rel="stylesheet" href="site.css"></head><body>${body}</body></html>\n`;}
+function nav(){return `<nav aria-label="Разделы"><a href="index.html">Сравнение</a><a href="recipe.html">Рецепт</a><a href="qa.html">QA</a></nav>`;}
+function figure(src,title,text,tag=''){return `<figure><div class="frame"><img src="${src}" alt="${title}"></div><figcaption>${tag?`<span class="tag">${tag}</span>`:''}<strong>${title}</strong><span>${text}</span></figcaption></figure>`;}
+function indexHtml(formal){return shell('P0 perspective — frozen prerelease',`<header>${nav()}<p class="eyebrow">Frozen prerelease · публикация запрещена</p><h1>P0 perspective</h1><p class="status">P0 — результат исследования, ожидает явной приёмки Max; P1 закрыт</p><p class="lede">Single-shot d1/c1 не удержал точные ряды и слабый S(z). Детерминированная layered-композиция удержала их в четырёх независимо оформленных досках. Это не означает, что камера исходного изображения была точно восстановлена.</p></header><main><section><div class="section-head"><h2>Исходник и формальная модель</h2><p>Одинаковые рамки, без crop и независимого растяжения осей.</p></div><div class="grid two">${figure('assets/reference/03-sun-temple.jpg','Original art reference','Только художественный ориентир: материалы, фаски, свет.')} ${figure(formal,'SHA-pinned formal SVG','Quad, seams, четыре base-center rows и S(z).')}</div></section><section><div class="section-head"><h2>Принятая серия F1–F4</h2><p>Четыре board-owned набора компонентов, frozen layouts и побайтово проверяемая сборка.</p></div><div class="grid two boards">${figure('assets/boards/f1.png','F1 · Воздушная астролябия','Исправленный plate; layout/master/shadow не менялись.','PASS')}${figure('assets/boards/f2.png','F2 · Сад святилища','Тёплый садовый двор и лотосовый master.','PASS')}${figure('assets/boards/f3.png','F3 · Янтарные печи','Кузнечный двор и отдельное семейство объёмов.','PASS')}${figure('assets/boards/f4.png','F4 · Приливный двор','Сухое поле, морская архитектура и tidal master.','PASS')}</div></section><section><div class="section-head"><h2>Сохранённые неудачи</h2><p>Ровно три существенных состояния; удачная выборка не скрывает историю метода.</p></div><div class="grid three failures">${figure('assets/failures/d1-single-shot.png','d1 · single-shot','Причина: поле, ряды и рост объектов ушли от formal control. Следующий узкий проход усилил передачу control.','FAIL')}${figure('assets/failures/c1-corrected-single-shot.png','c1 · targeted single-shot','Причина: drift рядов и S(z) повторился, появились marker-like детали. Исправление: single-shot остановлен, применена layered-сборка.','FAIL')}${figure('assets/failures/f1-qa-failed-composite.png','F1 · первый series candidate','Причина: baked diagonal shadow конфликтовала с ярким master. Исправление: один plate-only edit; frozen layout и остальные boards сохранены.','FAIL')}</div></section><section class="links"><a class="card-link" href="recipe.html"><strong>Воспроизводимый рецепт</strong><span>Формальная модель, сборка и границы вывода →</span></a><a class="card-link" href="qa.html"><strong>QA и история решений</strong><span>Критерии, blockers, correction и финальный verdict →</span></a></section></main><footer>Frozen P0 prerelease · local static package · publication forbidden</footer>`);}
+function recipeHtml(){return shell('P0 perspective — рецепт',`<header>${nav()}<p class="eyebrow">Research recipe · exact source ee4d8e5c…</p><h1>Воспроизводимый 2.5D-язык доски</h1><p class="lede">Результат фиксирует композиционный язык, а не единственную pinhole-камеру исходника. Single-shot создавал законченный мир, но числовой контракт удержала layered-композиция.</p></header><main class="prose"><section><h2>Формальная модель</h2><table><tbody><tr><th>Кадр</th><td>1536 × 1536, 1:1</td></tr><tr><th>Quad</th><td>(.225,.255) (.775,.255) (.915,.775) (.085,.775)</td></tr><tr><th>Seams</th><td>q=.255 / .775</td></tr><tr><th>Rows</th><td>q=.338/.453/.567/.681</td></tr><tr><th>Scale</th><td>S(z)=.91+.18z → .939/.978/1.018/1.058</td></tr><tr><th>Master</th><td>Видимая высота 120 px при S=1; один master на board</td></tr><tr><th>Порядок</th><td>(q,p,instanceId), far-to-near; shadow перед master</td></tr></tbody></table></section><section><h2>Последовательность</h2><ol><li>Заморозить formal data, brief, layouts и hashes до изображений.</li><li>Создать для каждой темы собственные plate, RGBA master и отдельную shadow.</li><li>Разделить роли: formal raster управляет геометрией; original art reference — только качеством арта.</li><li>Сохранить provenance каждой попытки и причины узких corrections.</li><li>Подготовить компоненты детерминированно, не меняя raw.</li><li>Нормализовать master к 120 px, применить frozen p/q/scales и собрать без global redraw.</li><li>Сначала проверить hashes и инварианты, затем полный кадр независимым Visual QA.</li><li>При дефекте исправлять только его компонент, сохраняя прежнее состояние evidence.</li></ol></section><section><h2>Что доказано</h2><p>Четыре finished boards используют 12 разных prepared component hashes, четыре уникальные source-тройки и 16 instance IDs. Accepted composites воспроизводятся побайтно из сохранённых компонентов.</p><div class="hashes"><code>F1 6c9e6c221ebf17cc6f9549b8b43f29cea1f04416beffbe185f9252b17d084e4e</code><code>F2 873e58c160e7ecfd0831002b6c5c3cd273693518fe39ea38d2953643c05ed52b</code><code>F3 114c16ed5c412191e27175b6a498e109f56f02b9ac302c8b80fc0b237ff836c6</code><code>F4 4db1465934ad1e7fb3f831d81b06c7995d02ec38c72ed58b9555e77be8916225</code></div></section><section><h2>Оставшиеся ограничения</h2><ul><li>Это одна серия и один художественный ориентир, не доказательство универсальности.</li><li>Painted seams оценены визуально; underlying camera не признана точной реконструкцией.</li><li>Некоторые masters чуть резче plate, а contact shadows компактнее архитектурных теней.</li><li>Layered-сборка не умеет автоматически согласовать master с локальной baked shadow.</li><li>Raw generation не обещает byte-level repeatability: интерфейс не раскрыл seed/model/settings.</li><li>Результат сочетает генерацию компонентов, заранее принятые правила, corrections и независимый QA; это не один автоматический вызов.</li></ul></section></main><footer>Rendered from Research exact ee4d8e5c… · source unchanged</footer>`);}
+function qaHtml(){return shell('P0 perspective — QA',`<header>${nav()}<p class="eyebrow">Independent Visual QA · exact source 0c393490…</p><h1>Финальный verdict: PASS F1–F4</h1><p class="lede">Единственный blocker первого series candidate устранён plate-only correction. F2–F4 остались побайтно неизменны. Verdict разрешает prerelease preparation, но не публикацию.</p></header><main class="prose"><section><h2>Frozen критерии</h2><div class="criteria"><article><strong>Поле</strong><span>Одна умеренно перспективная плоскость, читаемые seams и сопоставимый квадрат.</span></article><article><strong>Основания</strong><span>Однозначный контакт объёмов с полом; тень не заменяет основание.</span></article><article><strong>Глубина</strong><span>Стабильные rows и слабый последовательный рост одного master.</span></article><article><strong>Объёмы</strong><span>Совместимые верхние/боковые плоскости и единый вид внутри кадра.</span></article><article><strong>Finished art</strong><span>Цельный свет, материалы, читаемое поле и отсутствие служебной графики.</span></article></div></section><section><h2>История gate</h2><ol class="timeline"><li><strong>d1 — targeted correction.</strong> Законченный art, но field/rows/scale drift.</li><li><strong>c1 — stop single-shot.</strong> Поле приблизилось, exact rows и S(z) снова не удержаны.</li><li><strong>L1 — layered PASS.</strong> Exact rows/scales, master identity, grounding и finished board подтверждены.</li><li><strong>Первый F1–F4 candidate — BLOCKED.</strong> F2–F4 PASS; F1 нарушал световую цельность из-за baked floor shadow.</li><li><strong>F1 correction — PASS.</strong> Один plate-only edit убрал конфликт; camera/architecture/layout/master/shadow сохранены.</li></ol></section><section><h2>Финальная проверка</h2><ul><li>F1–F4: PASS; comparable gallery: PASS.</li><li>F1 corrected composite: <code>6c9e6c221ebf17cc6f9549b8b43f29cea1f04416beffbe185f9252b17d084e4e</code>.</li><li>F2–F4 exact bytes сохранены после correction.</li><li>Frozen quad, rows, scales, painter order и one-master identity не менялись.</li><li>Полный deterministic check и fresh byte reproduction завершились PASS.</li></ul></section><section><h2>Ограничения QA</h2><p>Near seam нескольких boards частично закрыт foreground-архитектурой. Painted quad проверен по видимым направляющим и рабочим допускам, а не как точная camera recovery. Небольшая разница резкости master/plate и компактность shadows признаны неблокирующими.</p></section></main><footer>Frozen rubric 21150e58… · final QA 0c393490… · publication forbidden</footer>`);}
+function css(){return `:root{color-scheme:dark;--bg:#100e0b;--panel:#1b1712;--ink:#f3eadc;--muted:#b9aa96;--line:#40372b;--gold:#e0ac62;--pass:#89c99b;--fail:#e58d72}*{box-sizing:border-box}body{margin:0;background:radial-gradient(circle at 50% 0,#2a2116 0,#100e0b 38rem);color:var(--ink);font:16px/1.55 Inter,Segoe UI,Arial,sans-serif}header,main,footer{width:min(1480px,calc(100% - 40px));margin:auto}header{padding:24px 0 42px}nav{display:flex;gap:8px;margin-bottom:48px}nav a{color:var(--muted);text-decoration:none;border:1px solid var(--line);border-radius:999px;padding:7px 14px}nav a:hover{color:var(--ink);border-color:var(--gold)}.eyebrow{color:var(--gold);font-size:.78rem;font-weight:750;letter-spacing:.13em;text-transform:uppercase}.status{display:inline-block;color:#17120c;background:var(--gold);padding:8px 12px;border-radius:4px;font-weight:750}h1{font-size:clamp(2.7rem,7vw,6.8rem);line-height:.92;letter-spacing:-.055em;margin:18px 0 24px;max-width:1100px}h2{font-size:clamp(1.5rem,3vw,2.5rem);letter-spacing:-.03em;margin:0}.lede{font-size:clamp(1.05rem,2vw,1.4rem);max-width:960px;color:#d3c6b4}section{margin:0 0 72px}.section-head{display:flex;justify-content:space-between;align-items:end;gap:20px;margin-bottom:20px}.section-head p{margin:0;color:var(--muted);max-width:580px}.grid{display:grid;gap:18px}.two{grid-template-columns:repeat(2,minmax(0,1fr))}.three{grid-template-columns:repeat(3,minmax(0,1fr))}figure{margin:0;background:var(--panel);border:1px solid var(--line);border-radius:8px;overflow:hidden}.frame{aspect-ratio:1;background:#050504;display:grid;place-items:center}.frame img{display:block;width:100%;height:100%;object-fit:contain}figcaption{display:grid;grid-template-columns:auto 1fr;gap:2px 10px;padding:14px 16px}figcaption strong{font-size:1.03rem}figcaption span:last-child{grid-column:1/-1;color:var(--muted)}.tag{font-size:.69rem;letter-spacing:.09em;color:#102017;background:var(--pass);padding:2px 6px;border-radius:3px;align-self:center}.failures .tag{background:var(--fail);color:#25100a}.links{display:grid;grid-template-columns:1fr 1fr;gap:18px}.card-link{display:grid;padding:24px;color:var(--ink);text-decoration:none;border:1px solid var(--line);background:var(--panel);border-radius:8px}.card-link span{color:var(--muted)}.prose{max-width:1060px}.prose section{border-top:1px solid var(--line);padding-top:28px}.prose h2{margin-bottom:18px}.prose p,.prose li,.prose td{color:#d4c8b8}.prose li{margin-bottom:10px}.prose table{border-collapse:collapse;width:100%}.prose th,.prose td{padding:12px;text-align:left;border-bottom:1px solid var(--line)}.hashes{display:grid;gap:8px}.hashes code,.prose code{font:12px/1.5 ui-monospace,SFMono-Regular,Consolas,monospace;overflow-wrap:anywhere;color:#f0c88d}.criteria{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}.criteria article{display:grid;padding:16px;background:var(--panel);border:1px solid var(--line);border-radius:6px}.criteria span{color:var(--muted)}.timeline strong{color:var(--ink)}footer{border-top:1px solid var(--line);padding:28px 0 52px;color:var(--muted);font-size:.85rem}@media(max-width:820px){header,main,footer{width:min(100% - 24px,1480px)}nav{margin-bottom:32px}.two,.three,.links,.criteria{grid-template-columns:1fr}.section-head{display:block}.section-head p{margin-top:8px}section{margin-bottom:48px}}\n`;}

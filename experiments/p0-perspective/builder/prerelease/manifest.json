@@ -1,0 +1,228 @@
+{
+  "schema": "r4d.p0.frozen-prerelease.v1",
+  "status": "P0 — результат исследования, ожидает явной приёмки Max; P1 закрыт",
+  "publication": "forbidden",
+  "buildCommand": "npm run build:prerelease",
+  "checkCommand": "npm run check:prerelease",
+  "exactInputs": {
+    "acceptedBuilder": "9c1050596751deee3e736fe2d4f968a37c91af97",
+    "finalQa": "0c3934908d9e795b631e9eaee89025e62541e2ce",
+    "researchRecipe": "ee4d8e5c7dbb3b6618d58d6dacb0caf9b73dfb1b",
+    "d1": "2db5dffdbcd0fecaee7ffa209ea3ebe8c775cd2f",
+    "c1": "6452515fff9f7cb90b619cbe632b62b9573d668b",
+    "failedSeries": "4cdd9e6b1da397ae1549ab4085af0f830555fd42"
+  },
+  "browserAllowlist": [
+    "assets/boards/f1.png",
+    "assets/boards/f2.png",
+    "assets/boards/f3.png",
+    "assets/boards/f4.png",
+    "assets/failures/c1-corrected-single-shot.png",
+    "assets/failures/d1-single-shot.png",
+    "assets/failures/f1-qa-failed-composite.png",
+    "assets/formal/formal-reference-v1.e74d9b54d6ceb45413f9dc67725cec7e9b65bb323e9f4144e0e9cd40bc29ed77.svg",
+    "assets/reference/03-sun-temple.jpg",
+    "index.html",
+    "qa.html",
+    "recipe.html",
+    "site.css"
+  ],
+  "files": {
+    "assets/boards/f1.png": {
+      "size": 6140880,
+      "sha256": "6c9e6c221ebf17cc6f9549b8b43f29cea1f04416beffbe185f9252b17d084e4e"
+    },
+    "assets/boards/f2.png": {
+      "size": 6600040,
+      "sha256": "873e58c160e7ecfd0831002b6c5c3cd273693518fe39ea38d2953643c05ed52b"
+    },
+    "assets/boards/f3.png": {
+      "size": 5848410,
+      "sha256": "114c16ed5c412191e27175b6a498e109f56f02b9ac302c8b80fc0b237ff836c6"
+    },
+    "assets/boards/f4.png": {
+      "size": 6574675,
+      "sha256": "4db1465934ad1e7fb3f831d81b06c7995d02ec38c72ed58b9555e77be8916225"
+    },
+    "assets/failures/c1-corrected-single-shot.png": {
+      "size": 2769535,
+      "sha256": "f6993beb13dc3af5f3901e3f0868fc42f921d95ffadc1bebe3812d652e6fe4f7"
+    },
+    "assets/failures/d1-single-shot.png": {
+      "size": 2737499,
+      "sha256": "05990a70ed85ee893d484545c2f5aa0ec0f5277b2db0331bfacc6ae3b63393b5"
+    },
+    "assets/failures/f1-qa-failed-composite.png": {
+      "size": 6253236,
+      "sha256": "2fee80e59e52f519a519d18ec340bec11e1f96b276a125ffbbbcd684946b19c4"
+    },
+    "assets/formal/formal-reference-v1.e74d9b54d6ceb45413f9dc67725cec7e9b65bb323e9f4144e0e9cd40bc29ed77.svg": {
+      "size": 8307,
+      "sha256": "e74d9b54d6ceb45413f9dc67725cec7e9b65bb323e9f4144e0e9cd40bc29ed77"
+    },
+    "assets/reference/03-sun-temple.jpg": {
+      "size": 552549,
+      "sha256": "f5cfa2bbe8e4b49ecbc0f4c7a0cee99842b182b56ae495979153b8fc9ff86e32"
+    },
+    "index.html": {
+      "size": 5535,
+      "sha256": "ac1306df28b41f0c70913a52b37c1c1c2ce293cd18375c374479f25443b17980"
+    },
+    "qa.html": {
+      "size": 3675,
+      "sha256": "5937d7d0ec93d40c12a3936f1c20838ec5c2ffbf4a982d4c2792fd07507ec976"
+    },
+    "recipe.html": {
+      "size": 4381,
+      "sha256": "c01998d6fa1713b1e8a672546db4883247539d8ab556254034ca61c6d413dbb5"
+    },
+    "site.css": {
+      "size": 3335,
+      "sha256": "bb4bb63966b6d3460dc4c3bcb64cfcdf0084b84085478e90f2a5394168fc8dac"
+    }
+  },
+  "sourcePins": {
+    "reference": {
+      "kind": "read-only-file",
+      "path": "K:\\Agents\\R4D\\Assets\\perspective\\03-sun-temple.jpg",
+      "size": 552549,
+      "sha256": "f5cfa2bbe8e4b49ecbc0f4c7a0cee99842b182b56ae495979153b8fc9ff86e32"
+    },
+    "formal": {
+      "kind": "git-blob",
+      "commit": "9c1050596751deee3e736fe2d4f968a37c91af97",
+      "path": "experiments/p0-perspective/builder/generated/formal-reference-v1.svg",
+      "size": 8307,
+      "sha256": "e74d9b54d6ceb45413f9dc67725cec7e9b65bb323e9f4144e0e9cd40bc29ed77"
+    },
+    "board-01": {
+      "kind": "git-blob",
+      "commit": "9c1050596751deee3e736fe2d4f968a37c91af97",
+      "path": "experiments/p0-perspective/builder/final-series/output/board-01/composite.png",
+      "size": 6140880,
+      "sha256": "6c9e6c221ebf17cc6f9549b8b43f29cea1f04416beffbe185f9252b17d084e4e"
+    },
+    "board-02": {
+      "kind": "git-blob",
+      "commit": "9c1050596751deee3e736fe2d4f968a37c91af97",
+      "path": "experiments/p0-perspective/builder/final-series/output/board-02/composite.png",
+      "size": 6600040,
+      "sha256": "873e58c160e7ecfd0831002b6c5c3cd273693518fe39ea38d2953643c05ed52b"
+    },
+    "board-03": {
+      "kind": "git-blob",
+      "commit": "9c1050596751deee3e736fe2d4f968a37c91af97",
+      "path": "experiments/p0-perspective/builder/final-series/output/board-03/composite.png",
+      "size": 5848410,
+      "sha256": "114c16ed5c412191e27175b6a498e109f56f02b9ac302c8b80fc0b237ff836c6"
+    },
+    "board-04": {
+      "kind": "git-blob",
+      "commit": "9c1050596751deee3e736fe2d4f968a37c91af97",
+      "path": "experiments/p0-perspective/builder/final-series/output/board-04/composite.png",
+      "size": 6574675,
+      "sha256": "4db1465934ad1e7fb3f831d81b06c7995d02ec38c72ed58b9555e77be8916225"
+    },
+    "d1": {
+      "kind": "git-blob",
+      "commit": "2db5dffdbcd0fecaee7ffa209ea3ebe8c775cd2f",
+      "path": "experiments/p0-perspective/asset-artist/d1/output/d1-jade-sky-observatory.png",
+      "size": 2737499,
+      "sha256": "05990a70ed85ee893d484545c2f5aa0ec0f5277b2db0331bfacc6ae3b63393b5"
+    },
+    "c1": {
+      "kind": "git-blob",
+      "commit": "6452515fff9f7cb90b619cbe632b62b9573d668b",
+      "path": "experiments/p0-perspective/asset-artist/c1/output/c1-jade-sky-observatory.png",
+      "size": 2769535,
+      "sha256": "f6993beb13dc3af5f3901e3f0868fc42f921d95ffadc1bebe3812d652e6fe4f7"
+    },
+    "failedF1": {
+      "kind": "git-blob",
+      "commit": "4cdd9e6b1da397ae1549ab4085af0f830555fd42",
+      "path": "experiments/p0-perspective/builder/final-series/output/board-01/composite.png",
+      "size": 6253236,
+      "sha256": "2fee80e59e52f519a519d18ec340bec11e1f96b276a125ffbbbcd684946b19c4"
+    },
+    "recipe": {
+      "kind": "git-blob",
+      "commit": "ee4d8e5c7dbb3b6618d58d6dacb0caf9b73dfb1b",
+      "path": "experiments/p0-perspective/research/CROSS_SERIES_CONCLUSION_AND_RECIPE.md",
+      "size": 17325,
+      "sha256": "9ffe076b1746d5c4ef78da2f7d9a95bedcadf5e7f49f07f6d5899c0cc8373619"
+    },
+    "qa:RUBRIC_V0.1.md": {
+      "kind": "git-blob",
+      "commit": "0c3934908d9e795b631e9eaee89025e62541e2ce",
+      "path": "experiments/p0-perspective/qa/visual/RUBRIC_V0.1.md",
+      "size": 13302,
+      "sha256": "0c31308a713d42e0e3b3236652380b8687f5ade320e219ca12437ec4be5b70f3"
+    },
+    "qa:REPORT_D1.md": {
+      "kind": "git-blob",
+      "commit": "0c3934908d9e795b631e9eaee89025e62541e2ce",
+      "path": "experiments/p0-perspective/qa/visual/REPORT_D1.md",
+      "size": 13639,
+      "sha256": "1bf4dfe9702a51c52ec62638d19fb640c23d57bf5a52a76eb50799c81758cbac"
+    },
+    "qa:REPORT_C1.md": {
+      "kind": "git-blob",
+      "commit": "0c3934908d9e795b631e9eaee89025e62541e2ce",
+      "path": "experiments/p0-perspective/qa/visual/REPORT_C1.md",
+      "size": 12002,
+      "sha256": "e99c3ae80aa868142d8a7c2e5e68045bdd921478299a9f2b08c1cc2653d46c1f"
+    },
+    "qa:REPORT_L1.md": {
+      "kind": "git-blob",
+      "commit": "0c3934908d9e795b631e9eaee89025e62541e2ce",
+      "path": "experiments/p0-perspective/qa/visual/REPORT_L1.md",
+      "size": 10113,
+      "sha256": "7b68ec257e1f4bbb71081098511f47a1b373e0b0220a16c33d1ef9ecff25fc11"
+    },
+    "qa:REPORT_FINAL_SERIES.md": {
+      "kind": "git-blob",
+      "commit": "0c3934908d9e795b631e9eaee89025e62541e2ce",
+      "path": "experiments/p0-perspective/qa/visual/REPORT_FINAL_SERIES.md",
+      "size": 10598,
+      "sha256": "d7122deddde2156a046d99870ad13d31e0660643d0c3bce9cb94eb86e67547d5"
+    },
+    "qa:REPORT_F1_CORRECTION.md": {
+      "kind": "git-blob",
+      "commit": "0c3934908d9e795b631e9eaee89025e62541e2ce",
+      "path": "experiments/p0-perspective/qa/visual/REPORT_F1_CORRECTION.md",
+      "size": 6155,
+      "sha256": "cf770635e4b4db496ae7cd055c76fa946688a74a41d27c94b4c6e6a0cb77820c"
+    }
+  },
+  "byteIdentity": {
+    "reference": {
+      "route": "assets/reference/03-sun-temple.jpg",
+      "sha256": "f5cfa2bbe8e4b49ecbc0f4c7a0cee99842b182b56ae495979153b8fc9ff86e32"
+    },
+    "boards": {
+      "F1": {
+        "route": "assets/boards/f1.png",
+        "sha256": "6c9e6c221ebf17cc6f9549b8b43f29cea1f04416beffbe185f9252b17d084e4e"
+      },
+      "F2": {
+        "route": "assets/boards/f2.png",
+        "sha256": "873e58c160e7ecfd0831002b6c5c3cd273693518fe39ea38d2953643c05ed52b"
+      },
+      "F3": {
+        "route": "assets/boards/f3.png",
+        "sha256": "114c16ed5c412191e27175b6a498e109f56f02b9ac302c8b80fc0b237ff836c6"
+      },
+      "F4": {
+        "route": "assets/boards/f4.png",
+        "sha256": "4db1465934ad1e7fb3f831d81b06c7995d02ec38c72ed58b9555e77be8916225"
+      }
+    }
+  },
+  "exclusions": [
+    "publication",
+    "runtime dependencies",
+    "external URLs",
+    "unlisted routes",
+    "later-stage scope"
+  ]
+}
