@@ -1,75 +1,58 @@
-import type { Point, ProjectionPort } from './types';
+import type { ProjectionPort } from './types';
 
 export async function rectifyArt(
   sourceUrl: string,
   projection: ProjectionPort,
-  gridSize = 32,
 ): Promise<HTMLCanvasElement> {
   const image = await loadImage(sourceUrl);
+  const sourceCanvas = document.createElement('canvas');
+  sourceCanvas.width = image.naturalWidth;
+  sourceCanvas.height = image.naturalHeight;
+  const sourceContext = sourceCanvas.getContext('2d', { willReadFrequently: true });
+  if (!sourceContext) throw new Error('2D canvas is unavailable for source sampling');
+  sourceContext.drawImage(image, 0, 0);
+  const source = sourceContext.getImageData(0, 0, sourceCanvas.width, sourceCanvas.height);
+
   const canvas = document.createElement('canvas');
   canvas.width = projection.flatSize.width;
   canvas.height = projection.flatSize.height;
   const context = canvas.getContext('2d');
   if (!context) throw new Error('2D canvas is unavailable for flat art rectification');
-
-  for (let row = 0; row < gridSize; row += 1) {
-    for (let column = 0; column < gridSize; column += 1) {
-      const x0 = (column / gridSize) * canvas.width;
-      const x1 = ((column + 1) / gridSize) * canvas.width;
-      const y0 = (row / gridSize) * canvas.height;
-      const y1 = ((row + 1) / gridSize) * canvas.height;
-      const destination = [
-        { x: x0, y: y0 },
-        { x: x1, y: y0 },
-        { x: x1, y: y1 },
-        { x: x0, y: y1 },
-      ];
-      const source = destination.map((point) =>
-        projection.simToImage(projection.flatToSim(point)),
-      );
-      drawTriangle(context, image, [source[0], source[1], source[2]], [destination[0], destination[1], destination[2]]);
-      drawTriangle(context, image, [source[0], source[2], source[3]], [destination[0], destination[2], destination[3]]);
+  const output = context.createImageData(canvas.width, canvas.height);
+  for (let y = 0; y < canvas.height; y += 1) {
+    for (let x = 0; x < canvas.width; x += 1) {
+      const sample = projection.simToImage(projection.flatToSim({ x: x + 0.5, y: y + 0.5 }));
+      bilinearSample(source, sample.x - 0.5, sample.y - 0.5, output.data, (y * canvas.width + x) * 4);
     }
   }
+  context.putImageData(output, 0, 0);
   return canvas;
 }
 
-function drawTriangle(
-  context: CanvasRenderingContext2D,
-  image: CanvasImageSource,
-  source: readonly [Point, Point, Point],
-  destination: readonly [Point, Point, Point],
+function bilinearSample(
+  source: ImageData,
+  x: number,
+  y: number,
+  output: Uint8ClampedArray,
+  outputOffset: number,
 ): void {
-  const [s0, s1, s2] = source;
-  const [d0, d1, d2] = destination;
-  const determinant = s0.x * (s1.y - s2.y) + s1.x * (s2.y - s0.y) + s2.x * (s0.y - s1.y);
-  if (Math.abs(determinant) < 1e-9) return;
-
-  const a = (d0.x * (s1.y - s2.y) + d1.x * (s2.y - s0.y) + d2.x * (s0.y - s1.y)) / determinant;
-  const c = (d0.x * (s2.x - s1.x) + d1.x * (s0.x - s2.x) + d2.x * (s1.x - s0.x)) / determinant;
-  const e = (
-    d0.x * (s1.x * s2.y - s2.x * s1.y)
-    + d1.x * (s2.x * s0.y - s0.x * s2.y)
-    + d2.x * (s0.x * s1.y - s1.x * s0.y)
-  ) / determinant;
-  const b = (d0.y * (s1.y - s2.y) + d1.y * (s2.y - s0.y) + d2.y * (s0.y - s1.y)) / determinant;
-  const d = (d0.y * (s2.x - s1.x) + d1.y * (s0.x - s2.x) + d2.y * (s1.x - s0.x)) / determinant;
-  const f = (
-    d0.y * (s1.x * s2.y - s2.x * s1.y)
-    + d1.y * (s2.x * s0.y - s0.x * s2.y)
-    + d2.y * (s0.x * s1.y - s1.x * s0.y)
-  ) / determinant;
-
-  context.save();
-  context.beginPath();
-  context.moveTo(d0.x, d0.y);
-  context.lineTo(d1.x, d1.y);
-  context.lineTo(d2.x, d2.y);
-  context.closePath();
-  context.clip();
-  context.setTransform(a, b, c, d, e, f);
-  context.drawImage(image, 0, 0);
-  context.restore();
+  const x0 = Math.max(0, Math.min(source.width - 1, Math.floor(x)));
+  const y0 = Math.max(0, Math.min(source.height - 1, Math.floor(y)));
+  const x1 = Math.min(source.width - 1, x0 + 1);
+  const y1 = Math.min(source.height - 1, y0 + 1);
+  const tx = x - Math.floor(x);
+  const ty = y - Math.floor(y);
+  const offsets = [
+    (y0 * source.width + x0) * 4,
+    (y0 * source.width + x1) * 4,
+    (y1 * source.width + x0) * 4,
+    (y1 * source.width + x1) * 4,
+  ];
+  for (let channel = 0; channel < 4; channel += 1) {
+    const top = source.data[offsets[0] + channel] * (1 - tx) + source.data[offsets[1] + channel] * tx;
+    const bottom = source.data[offsets[2] + channel] * (1 - tx) + source.data[offsets[3] + channel] * tx;
+    output[outputOffset + channel] = top * (1 - ty) + bottom * ty;
+  }
 }
 
 function loadImage(url: string): Promise<HTMLImageElement> {

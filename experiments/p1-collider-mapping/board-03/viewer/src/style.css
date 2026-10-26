@@ -18,6 +18,7 @@ button:hover { border-color: #5ee7f2; }
 input[type="checkbox"] { accent-color: #5ee7f2; }
 input[type="number"] { width: 90px; }
 .diagnostics { display: flex; flex-wrap: wrap; gap: 18px; padding: 9px 13px; border-inline: 1px solid #29434b; background: #09161b; }
+.notice { padding: 9px 13px; border-inline: 1px solid #29434b; color: #d9cda7; background: #17160f; font-size: .82rem; }
 .diagnostics b { color: #f3f7f8; }
 .viewport { overflow: auto; border: 1px solid #29434b; border-radius: 0 0 10px 10px; background: #050a0d; }
 .viewport canvas { display: block; max-width: 100%; height: auto; margin: 0 auto; }

@@ -46,9 +46,15 @@ export class ViewerState {
   }
 
   private assertVisualOnly(change: () => void): void {
-    const before = JSON.stringify(this.bundle.simulation.snapshot());
+    const before = JSON.stringify({
+      pins: this.bundle.sourcePins,
+      state: this.bundle.simulation.snapshot(),
+    });
     change();
-    const after = JSON.stringify(this.bundle.simulation.snapshot());
+    const after = JSON.stringify({
+      pins: this.bundle.sourcePins,
+      state: this.bundle.simulation.snapshot(),
+    });
     if (after !== before) {
       throw new Error('Visual control mutated simulation state');
     }

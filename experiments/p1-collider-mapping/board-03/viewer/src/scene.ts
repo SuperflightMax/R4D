@@ -5,6 +5,8 @@ import type { ViewerState } from './viewer-state';
 
 const IMAGE_PATH = '/assets/03-sun-temple.jpg';
 const GEOMETRY_COLOR = 0x4df2ff;
+const BOUNDARY_COLOR = 0xffc857;
+const GOAL_COLOR = 0xb9ff66;
 const BALL_COLOR = 0xff4f87;
 const CIRCLE_SAMPLES = 96;
 const SEGMENT_SAMPLES = 32;
@@ -12,10 +14,12 @@ const SEGMENT_SAMPLES = 32;
 export class Board03Scene {
   readonly app = new Application();
   private readonly artLayer = new Container();
+  private readonly ballArtLayer = new Container();
   private readonly geometryLayer = new Container();
-  private readonly ballLayer = new Container();
   private perspectiveArt?: Sprite;
   private flatArt?: Sprite;
+  private ballArt?: Sprite;
+  private shadowArt?: Sprite;
 
   constructor(
     private readonly host: HTMLElement,
@@ -34,7 +38,7 @@ export class Board03Scene {
       autoDensity: true,
     });
     this.host.replaceChildren(this.app.canvas);
-    this.app.stage.addChild(this.artLayer, this.geometryLayer, this.ballLayer);
+    this.app.stage.addChild(this.artLayer, this.ballArtLayer, this.geometryLayer);
     this.perspectiveArt = new Sprite(await Assets.load(IMAGE_PATH));
     this.artLayer.addChild(this.perspectiveArt);
     if (this.bundle.projection.mode === 'perspective') {
@@ -42,6 +46,11 @@ export class Board03Scene {
       this.flatArt = new Sprite(Texture.from(rectified));
       this.artLayer.addChild(this.flatArt);
     }
+    this.shadowArt = new Sprite(await Assets.load(this.bundle.art.shadowUrl));
+    this.shadowArt.anchor.set(0.5);
+    this.ballArt = new Sprite(await Assets.load(this.bundle.art.ballUrl));
+    this.ballArt.anchor.set(0.5);
+    this.ballArtLayer.addChild(this.shadowArt, this.ballArt);
     this.render();
   }
 
@@ -50,6 +59,7 @@ export class Board03Scene {
     const size = this.viewSize(view);
     this.app.renderer.resize(size.width, size.height);
     this.artLayer.visible = this.state.visibility.art;
+    this.ballArtLayer.visible = this.state.visibility.art;
     this.geometryLayer.visible = this.state.visibility.geometry;
 
     if (this.perspectiveArt) {
@@ -64,22 +74,40 @@ export class Board03Scene {
     }
 
     this.geometryLayer.removeChildren().forEach((child) => child.destroy());
-    this.ballLayer.removeChildren().forEach((child) => child.destroy());
 
     for (const primitive of this.bundle.geometry) {
       this.geometryLayer.addChild(this.drawPrimitive(primitive, view));
     }
 
     const ball = this.state.snapshot.ball;
+    const ballCenter = this.project(ball, view);
+    const visibleDiameter = this.visibleBallDiameter(ball, view);
+    if (this.shadowArt) {
+      const [offsetX, offsetY] = this.bundle.art.shadowOffsetInBallDiameters;
+      this.shadowArt.visible = this.state.visibility.art;
+      this.shadowArt.position.set(
+        ballCenter.x + offsetX * visibleDiameter,
+        ballCenter.y + offsetY * visibleDiameter,
+      );
+      this.shadowArt.width = visibleDiameter * 1.5;
+      this.shadowArt.height = visibleDiameter * 0.75;
+    }
+    if (this.ballArt) {
+      this.ballArt.visible = this.state.visibility.art;
+      this.ballArt.position.set(ballCenter.x, ballCenter.y);
+      this.ballArt.width = visibleDiameter;
+      this.ballArt.height = visibleDiameter;
+    }
     const contour = this.drawSampledCircle(ball, ball.radius, view, BALL_COLOR, 4);
     contour.visible = this.state.visibility.geometry;
-    this.ballLayer.addChild(contour);
+    this.geometryLayer.addChild(contour);
   }
 
   private drawPrimitive(primitive: GeometryPrimitive, view: ViewId): Graphics {
     const graphics = new Graphics();
     if (primitive.kind === 'circle') {
-      return this.drawSampledCircle(primitive.center, primitive.radius, view, GEOMETRY_COLOR, 3);
+      const color = primitive.role === 'goal' ? GOAL_COLOR : GEOMETRY_COLOR;
+      return this.drawSampledCircle(primitive.center, primitive.radius, view, color, 3);
     }
     for (let index = 0; index <= SEGMENT_SAMPLES; index += 1) {
       const amount = index / SEGMENT_SAMPLES;
@@ -91,10 +119,18 @@ export class Board03Scene {
       else graphics.lineTo(projected.x, projected.y);
     }
     return graphics.stroke({
-      color: GEOMETRY_COLOR,
+      color: primitive.role === 'boundary' ? BOUNDARY_COLOR : GEOMETRY_COLOR,
       width: 3,
       alpha: 0.95,
     });
+  }
+
+  private visibleBallDiameter(ball: Readonly<Point>, view: ViewId): number {
+    if (view === 'flat') return this.state.snapshot.ball.radius * 2;
+    const radius = this.state.snapshot.ball.radius;
+    const top = this.project({ x: ball.x, y: ball.y - radius }, view);
+    const bottom = this.project({ x: ball.x, y: ball.y + radius }, view);
+    return Math.hypot(bottom.x - top.x, bottom.y - top.y);
   }
 
   private drawSampledCircle(

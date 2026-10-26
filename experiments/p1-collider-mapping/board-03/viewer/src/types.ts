@@ -8,6 +8,7 @@ export interface Point {
 export interface CircleGeometry {
   kind: 'circle';
   id: string;
+  role: 'obstacle' | 'goal';
   center: Point;
   radius: number;
 }
@@ -15,6 +16,7 @@ export interface CircleGeometry {
 export interface SegmentGeometry {
   kind: 'segment';
   id: string;
+  role: 'obstacle' | 'boundary';
   from: Point;
   to: Point;
 }
@@ -39,6 +41,7 @@ export interface SimulationSnapshot {
 }
 
 export interface SimulationPort {
+  readonly tickMs: number;
   snapshot(): Readonly<SimulationSnapshot>;
   stepTicks(count: number): Readonly<SimulationSnapshot>;
   reset(seed: number): Readonly<SimulationSnapshot>;
@@ -59,7 +62,16 @@ export interface Board03Bundle {
     imageSha256: string;
     projectionVersion: string;
     configVersion: string;
+    configSha256: string;
+    mappingSha256: string;
     simCoreCommit: string;
+  }>;
+  readonly art: Readonly<{
+    ballUrl: string;
+    shadowUrl: string;
+    ballNativeDiameter: number;
+    shadowNativeSize: readonly [number, number];
+    shadowOffsetInBallDiameters: readonly [number, number];
   }>;
   readonly geometry: readonly GeometryPrimitive[];
   readonly projection: ProjectionPort;

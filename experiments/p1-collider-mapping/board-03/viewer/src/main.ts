@@ -1,5 +1,5 @@
 import './style.css';
-import { requireBoard03Bundle } from './dependency-gate';
+import { board03Bundle } from './board03-bundle';
 import { Board03Scene } from './scene';
 import { ViewerState } from './viewer-state';
 
@@ -7,22 +7,29 @@ const root = document.querySelector<HTMLElement>('#app');
 if (!root) throw new Error('#app is missing');
 
 try {
-  const bundle = requireBoard03Bundle();
+  const bundle = board03Bundle;
   const state = new ViewerState(bundle);
-  root.innerHTML = layout(bundle.projection.mode === 'perspective');
+  root.innerHTML = layout(bundle.projection.mode === 'perspective', bundle.sourcePins);
 
   const viewport = root.querySelector<HTMLElement>('[data-viewport]');
   if (!viewport) throw new Error('viewer viewport is missing');
   const scene = new Board03Scene(viewport, bundle, state);
   await scene.init();
+  let timer: number | undefined;
 
   const sync = (): void => {
     const snapshot = state.snapshot;
-    setText(root, '[data-seed]', String(snapshot.seed));
+    setText(root, '[data-seed-value]', String(snapshot.seed));
     setText(root, '[data-tick]', String(snapshot.tick));
     setText(root, '[data-rng]', String(snapshot.rngU32));
     setText(root, '[data-status]', snapshot.done ? `done: ${String(snapshot.result)}` : 'running');
     scene.render();
+    if (snapshot.done && timer !== undefined) {
+      window.clearInterval(timer);
+      timer = undefined;
+      const play = root.querySelector<HTMLButtonElement>('button[data-play]');
+      if (play) play.textContent = 'Старт';
+    }
   };
 
   root.querySelectorAll<HTMLInputElement>('input[data-layer]').forEach((input) => {
@@ -49,24 +56,52 @@ try {
     state.reset(Number(input?.value ?? 1));
     sync();
   });
+  root.querySelectorAll<HTMLButtonElement>('button[data-seed]').forEach((button) => {
+    button.addEventListener('click', () => {
+      const seed = Number(button.dataset.seed);
+      const input = root.querySelector<HTMLInputElement>('input[data-seed-input]');
+      if (input) input.value = String(seed);
+      state.reset(seed);
+      sync();
+    });
+  });
+  root.querySelector<HTMLButtonElement>('button[data-play]')?.addEventListener('click', (event) => {
+    const button = event.currentTarget as HTMLButtonElement;
+    if (timer !== undefined) {
+      window.clearInterval(timer);
+      timer = undefined;
+      button.textContent = 'Старт';
+      return;
+    }
+    button.textContent = 'Пауза';
+    timer = window.setInterval(() => {
+      state.stepTicks(1);
+      sync();
+    }, bundle.simulation.tickMs);
+  });
   sync();
 } catch (error) {
   const message = error instanceof Error ? error.message : String(error);
   root.innerHTML = `<section class="dependency-gate"><p class="eyebrow">Board 03 · integration gate</p><h1>Pixi viewer shell готов</h1><p>${escapeHtml(message)}</p><p>Projection/config/adapter не подменяются заглушкой. После их точной фиксации bridge установит единый bundle.</p></section>`;
 }
 
-function layout(hasFlatView: boolean): string {
-  return `<header><div><p class="eyebrow">R4D P1 · board 03 only</p><h1>Collider mapping viewer</h1></div><div class="pins">config + projection + sim-core</div></header>
+function layout(
+  hasFlatView: boolean,
+  pins: typeof board03Bundle.sourcePins,
+): string {
+  return `<header><div><p class="eyebrow">R4D P1 · board 03 only</p><h1>Collider mapping viewer</h1></div><div class="pins">config ${pins.configSha256.slice(0, 12)}…<br>mapping ${pins.mappingSha256.slice(0, 12)}…<br>sim-core ${pins.simCoreCommit.slice(0, 12)}…</div></header>
   <section class="controls" aria-label="Viewer controls">
     <label><input type="checkbox" data-layer="art" checked> Арт</label>
     <label><input type="checkbox" data-layer="geometry" checked> Геометрия</label>
     <button data-view="perspective">Исходная перспектива</button>
     ${hasFlatView ? '<button data-view="flat">Плоская доска</button>' : ''}
-    <button data-step="1">+1 тик</button><button data-step="10">+10 тиков</button>
+    <button data-play>Старт</button><button data-step="1">+1 тик</button><button data-step="10">+10 тиков</button>
+    <button data-seed="1">Seed 1</button><button data-seed="2">Seed 2</button>
     <input data-seed-input type="number" min="0" step="1" value="1" aria-label="Seed">
     <button data-reset>Новый запуск</button>
   </section>
-  <section class="diagnostics"><span>seed <b data-seed></b></span><span>tick <b data-tick></b></span><span>rng <b data-rng></b></span><span data-status></span></section>
+  <section class="diagnostics"><span>seed <b data-seed-value></b></span><span>tick <b data-tick></b></span><span>rng <b data-rng></b></span><span>fixed tick 8 ms</span><span data-status></span></section>
+  <aside class="notice">Goal rectangles Researcher представлены настоящими trigger-кругами bucket из config: это вписанная физическая аппроксимация, не скрытый прямоугольный collider.</aside>
   <section class="viewport" data-viewport></section>`;
 }
 

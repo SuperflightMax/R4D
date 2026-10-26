@@ -4,6 +4,9 @@
     "useDefineForClassFields": true,
     "module": "ESNext",
     "moduleResolution": "Bundler",
+    "paths": {
+      "@millionko/sim-core": ["../../../../../millionko-source/sim-builder/packages/sim-core/src/index.ts"]
+    },
     "strict": true,
     "noEmit": true,
     "resolveJsonModule": true,

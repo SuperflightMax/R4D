@@ -16,7 +16,16 @@ function fixture(): { bundle: Board03Bundle; current: SimulationSnapshot } {
       imageSha256: 'fixture-only',
       projectionVersion: 'fixture-only',
       configVersion: 'fixture-only',
+      configSha256: 'fixture-only',
+      mappingSha256: 'fixture-only',
       simCoreCommit: 'fixture-only',
+    },
+    art: {
+      ballUrl: 'fixture-only',
+      shadowUrl: 'fixture-only',
+      ballNativeDiameter: 64,
+      shadowNativeSize: [96, 48],
+      shadowOffsetInBallDiameters: [-0.18, 0.25],
     },
     geometry: [],
     projection: {
@@ -29,6 +38,7 @@ function fixture(): { bundle: Board03Bundle; current: SimulationSnapshot } {
       flatToSim: (point) => ({ ...point }),
     },
     simulation: {
+      tickMs: 8,
       snapshot: () => structuredClone(current),
       stepTicks: (count) => {
         current.tick += count;

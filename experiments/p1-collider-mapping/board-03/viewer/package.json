@@ -4,9 +4,10 @@
   "private": true,
   "type": "module",
   "scripts": {
-    "prepare:asset": "node scripts/prepare-board-asset.mjs",
-    "dev": "npm run prepare:asset && vite",
-    "build": "npm run prepare:asset && tsc --noEmit && vite build",
+    "check:inputs": "node scripts/check-inputs.mjs",
+    "prepare:assets": "node scripts/prepare-viewer-assets.mjs",
+    "dev": "npm run check:inputs && npm run prepare:assets && vite",
+    "build": "npm run check:inputs && npm run prepare:assets && tsc --noEmit && vite build",
     "test": "vitest run",
     "check": "npm run test && npm run build"
   },
