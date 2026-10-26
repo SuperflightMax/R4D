@@ -1,4 +1,5 @@
-import { Application, Assets, Container, Graphics, Sprite } from 'pixi.js';
+import { Application, Assets, Container, Graphics, Sprite, Texture } from 'pixi.js';
+import { rectifyArt } from './rectify-art';
 import type { Board03Bundle, GeometryPrimitive, Point, ViewId } from './types';
 import type { ViewerState } from './viewer-state';
 
@@ -11,7 +12,8 @@ export class Board03Scene {
   private readonly artLayer = new Container();
   private readonly geometryLayer = new Container();
   private readonly ballLayer = new Container();
-  private art?: Sprite;
+  private perspectiveArt?: Sprite;
+  private flatArt?: Sprite;
 
   constructor(
     private readonly host: HTMLElement,
@@ -31,8 +33,13 @@ export class Board03Scene {
     });
     this.host.replaceChildren(this.app.canvas);
     this.app.stage.addChild(this.artLayer, this.geometryLayer, this.ballLayer);
-    this.art = new Sprite(await Assets.load(IMAGE_PATH));
-    this.artLayer.addChild(this.art);
+    this.perspectiveArt = new Sprite(await Assets.load(IMAGE_PATH));
+    this.artLayer.addChild(this.perspectiveArt);
+    if (this.bundle.projection.mode === 'perspective') {
+      const rectified = await rectifyArt(IMAGE_PATH, this.bundle.projection);
+      this.flatArt = new Sprite(Texture.from(rectified));
+      this.artLayer.addChild(this.flatArt);
+    }
     this.render();
   }
 
@@ -43,10 +50,15 @@ export class Board03Scene {
     this.artLayer.visible = this.state.visibility.art;
     this.geometryLayer.visible = this.state.visibility.geometry;
 
-    if (this.art) {
-      this.art.visible = view === 'perspective';
-      this.art.width = this.bundle.projection.imageSize.width;
-      this.art.height = this.bundle.projection.imageSize.height;
+    if (this.perspectiveArt) {
+      this.perspectiveArt.visible = view === 'perspective';
+      this.perspectiveArt.width = this.bundle.projection.imageSize.width;
+      this.perspectiveArt.height = this.bundle.projection.imageSize.height;
+    }
+    if (this.flatArt) {
+      this.flatArt.visible = view === 'flat';
+      this.flatArt.width = this.bundle.projection.flatSize.width;
+      this.flatArt.height = this.bundle.projection.flatSize.height;
     }
 
     this.geometryLayer.removeChildren().forEach((child) => child.destroy());

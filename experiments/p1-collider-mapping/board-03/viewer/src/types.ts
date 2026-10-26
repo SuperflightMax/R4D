@@ -51,6 +51,7 @@ export interface ProjectionPort {
   simToImage(point: Readonly<Point>): Point;
   imageToSim(point: Readonly<Point>): Point;
   simToFlat(point: Readonly<Point>): Point;
+  flatToSim(point: Readonly<Point>): Point;
   radiusToView(radius: number, center: Readonly<Point>, view: ViewId): number;
 }
 

@@ -26,6 +26,7 @@ function fixture(): { bundle: Board03Bundle; current: SimulationSnapshot } {
       simToImage: (point) => ({ ...point }),
       imageToSim: (point) => ({ ...point }),
       simToFlat: (point) => ({ ...point }),
+      flatToSim: (point) => ({ ...point }),
       radiusToView: (radius) => radius,
     },
     simulation: {

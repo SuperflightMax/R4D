@@ -9,7 +9,8 @@ Builder config/adapter.
 диагностические `+1/+10` ticks, seed reset, точные seed/tick/rng indicators и
 защита от изменения simulation snapshot визуальными переключателями.
 
-Flat art rectification и raster ball/shadow намеренно не подменены временной
-реализацией: они подключаются только после точных projection и asset inputs.
+Flat art rectification уже строится из переданных `flatToSim` и `simToImage`
+без собственного набора координат. Raster ball/shadow намеренно не подменены
+временной графикой: они подключаются только после точного asset input.
 Публичная сборка и доски 01/02/04 вне границы.
 
