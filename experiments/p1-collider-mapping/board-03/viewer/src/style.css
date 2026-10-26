@@ -1,0 +1,32 @@
+:root {
+  color: #f3f7f8;
+  background: #071015;
+  font: 16px/1.45 Inter, "Segoe UI", sans-serif;
+}
+
+* { box-sizing: border-box; }
+body { margin: 0; min-width: 320px; background: radial-gradient(circle at top, #17313a, #071015 38rem); }
+#app { width: min(1540px, calc(100% - 32px)); margin: 0 auto; padding: 24px 0 56px; }
+header { display: flex; align-items: end; justify-content: space-between; gap: 20px; margin-bottom: 20px; }
+h1 { margin: 4px 0 0; font-size: clamp(2rem, 5vw, 4rem); letter-spacing: -.05em; }
+.eyebrow { margin: 0; color: #5ee7f2; font-size: .78rem; font-weight: 800; letter-spacing: .12em; text-transform: uppercase; }
+.pins, .diagnostics { color: #a5bbc2; font: .78rem ui-monospace, monospace; }
+.controls { display: flex; flex-wrap: wrap; gap: 8px; align-items: center; padding: 12px; border: 1px solid #29434b; border-radius: 10px 10px 0 0; background: #0b1a20; }
+button, label, input { border: 1px solid #36545e; border-radius: 6px; background: #10272e; color: inherit; padding: 8px 11px; }
+button, label { cursor: pointer; }
+button:hover { border-color: #5ee7f2; }
+input[type="checkbox"] { accent-color: #5ee7f2; }
+input[type="number"] { width: 90px; }
+.diagnostics { display: flex; flex-wrap: wrap; gap: 18px; padding: 9px 13px; border-inline: 1px solid #29434b; background: #09161b; }
+.diagnostics b { color: #f3f7f8; }
+.viewport { overflow: auto; border: 1px solid #29434b; border-radius: 0 0 10px 10px; background: #050a0d; }
+.viewport canvas { display: block; max-width: 100%; height: auto; margin: 0 auto; }
+.dependency-gate { max-width: 760px; margin: 12vh auto; padding: 32px; border: 1px solid #29434b; border-radius: 12px; background: #0b1a20; }
+.dependency-gate p { color: #b8c8cd; }
+
+@media (max-width: 720px) {
+  #app { width: min(100% - 16px, 1540px); }
+  header { display: block; }
+  .pins { margin-top: 10px; }
+}
+
