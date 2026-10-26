@@ -1,6 +1,6 @@
 {
-  "schema": "r4d.p1.board-03-mapping.v0.1",
-  "status": "board-03-research-checkpoint-for-builders",
+  "schema": "r4d.p1.board-03-mapping.v0.2",
+  "status": "g7-goal-corrected-board-03-research-checkpoint",
   "scope": {
     "board": "03-sun-temple",
     "otherBoards": "closed-pending-independent-qa-and-cto-decision",
@@ -36,14 +36,18 @@
       "yDirection": "far-to-near",
       "extent": {
         "x": [0, 1000],
-        "y": [0, 1000]
+        "y": [0, 1150]
+      },
+      "semanticDomains": {
+        "playablePlane": {"x": [0, 1000], "y": [0, 1000]},
+        "foregroundReceiverApron": {"x": [0, 1000], "y": [1000, 1150]}
       },
       "canonicalSimAdapter": "numeric identity: sim x = flat x, sim y = flat y; only schema field names may change"
     }
   },
   "transform": {
     "id": "p0-selected-ruled-trapezoid-v0.1",
-    "reason": "preserves the accepted P0 selected model and its linear depth rows; it is not an exact recovered camera",
+    "reason": "preserves the accepted P0 selected model and its linear depth rows; y=1000..1150 is an explicit synthetic 2D foreground-receiver apron, not recovered camera space",
     "constants": {
       "flatSize": 1000,
       "centerP": 0.5,
@@ -68,11 +72,18 @@
       "xFlat = 500 * (u + 1)",
       "yFlat = 1000 * z"
     ],
-    "validDomain": "0 <= xFlat <= 1000 and 0 <= yFlat <= 1000; inverse accepts only points inside the forward-mapped quad",
+    "validDomain": "0 <= xFlat <= 1000 and 0 <= yFlat <= 1150; y<=1000 is the playable plane and 1000<y<=1150 is only the foreground receiver apron",
+    "validInverseImageDomain": "0.255 <= q <= 0.853; z=(q-0.255)/0.52; 0.5-(0.275+0.14*z) <= p <= 0.5+(0.275+0.14*z); q<=0.775 is playable and q>0.775 is receiver apron only",
     "outsideDomainPolicy": "invalid; never clamp or extrapolate",
     "quadFlatClockwise": [[0, 0], [1000, 0], [1000, 1000], [0, 1000]],
     "quadImageNormalizedClockwise": [[0.225, 0.255], [0.775, 0.255], [0.915, 0.775], [0.085, 0.775]],
-    "quadImagePxClockwise": [[345.6, 391.68], [1190.4, 391.68], [1405.44, 1190.4], [130.56, 1190.4]]
+    "quadImagePxClockwise": [[345.6, 391.68], [1190.4, 391.68], [1405.44, 1190.4], [130.56, 1190.4]],
+    "receiverApron": {
+      "flatClockwise": [[0, 1000], [1000, 1000], [1000, 1150], [0, 1150]],
+      "imageNormalizedClockwise": [[0.085, 0.775], [0.915, 0.775], [0.936, 0.853], [0.064, 0.853]],
+      "imagePxClockwise": [[130.56, 1190.4], [1405.44, 1190.4], [1437.696, 1310.208], [98.304, 1310.208]],
+      "semantics": "2D collapse of the painted foreground receivers; no obstacles, start points or ordinary playfield geometry may be placed here"
+    }
   },
   "geometryConventions": {
     "units": "flat units",
@@ -110,11 +121,17 @@
     {"id": "bound-near-04", "from": [735, 1000], "to": [815, 1000]},
     {"id": "bound-near-05", "from": [975, 1000], "to": [1000, 1000]}
   ],
+  "goalEvidence": {
+    "method": "OpenCV grayscale threshold <65 inside four fixed foreground receiver regions, largest connected contour, fitEllipse; measurements are evidence for the painted dark entrances, not camera recovery",
+    "sourceImageSha256": "f5cfa2bbe8e4b49ecbc0f4c7a0cee99842b182b56ae495979153b8fc9ff86e32",
+    "bucketChoice": "one Millionko bucket-circle per receiver, radius 48 flat units; every 96-sample projected circle lies inside its fitted dark-opening ellipse",
+    "overlay": "goal-overlay-v0.2.svg"
+  },
   "goals": [
-    {"id": "goal-01", "rectFlat": {"x": [25, 185], "y": [955, 1000]}},
-    {"id": "goal-02", "rectFlat": {"x": [255, 430], "y": [955, 1000]}},
-    {"id": "goal-03", "rectFlat": {"x": [575, 735], "y": [955, 1000]}},
-    {"id": "goal-04", "rectFlat": {"x": [815, 975], "y": [955, 1000]}}
+    {"id": "goal-01", "shape": "bucketCircle", "centerFlat": [111.741585, 1074.481671], "radiusFlat": 48, "visibleDarkOpening": {"centerPx": [260.58, 1249.89], "majorDiameterPx": 194.42, "minorDiameterPx": 81.79, "majorAxisAngleDeg": -3.59, "thresholdBoundingBoxPx": [160, 1205, 201, 87]}},
+    {"id": "goal-02", "shape": "bucketCircle", "centerFlat": [357.485417, 1076.697716], "radiusFlat": 48, "visibleDarkOpening": {"centerPx": [581.61, 1251.66], "majorDiameterPx": 186.28, "minorDiameterPx": 79.41, "majorAxisAngleDeg": -1.88, "thresholdBoundingBoxPx": [485, 1207, 192, 85]}},
+    {"id": "goal-03", "shape": "bucketCircle", "centerFlat": [640.903009, 1076.660156], "radiusFlat": 48, "visibleDarkOpening": {"centerPx": [952.28, 1251.63], "majorDiameterPx": 186.47, "minorDiameterPx": 79.69, "majorAxisAngleDeg": 0.07, "thresholdBoundingBoxPx": [855, 1207, 192, 85]}},
+    {"id": "goal-04", "shape": "bucketCircle", "centerFlat": [886.412572, 1075.157752], "radiusFlat": 48, "visibleDarkOpening": {"centerPx": [1273.12, 1250.43], "majorDiameterPx": 194.47, "minorDiameterPx": 81.3, "majorAxisAngleDeg": 3.07, "thresholdBoundingBoxPx": [1172, 1206, 201, 86]}}
   ],
   "obstacles": [
     {"id": "head-01", "family": "head", "shape": "axisAlignedSegmentLoop", "sourceAnchorPx": [600, 545], "centerFlat": [318.839979, 191.957131], "halfExtentsFlat": [48.577, 28.337]},
@@ -165,7 +182,7 @@
   "diagnosticRendering": {
     "sourceOfTruth": "the exact config consumed by the simulator after segment-loop expansion",
     "perspectiveView": "source image plus pointwise-forward-mapped actual config",
-    "flatView": "inverse-warped floor image plus actual config in flat coordinates",
+    "flatView": "inverse-warped playable floor plus explicitly delimited receiver apron and actual config in flat coordinates",
     "circleSamples": 96,
     "segmentSamples": 32,
     "fill": "none",
@@ -178,10 +195,20 @@
     "roundTripImageNormalizedMaxError": 1e-12,
     "cornerImageNormalizedMaxError": 1e-12,
     "sourceAnchorPixelMaxErrorAfterRoundTrip": 0.001,
+    "goalCenterPixelMaxErrorAfterRoundTrip": 0.001,
+    "goalProjectedContourInsideMeasuredEllipseMax": 1,
+    "receiverApronRoundTripFlatMaxError": 1e-9,
     "configIdentity": "Simulation Builder and Viewer Builder must expose the same canonical config digest",
     "toggleInvariance": "Art, Geometry and view toggles must leave config digest, seed, tick, position and velocity unchanged",
     "resizeInvariance": "uniform display scaling changes only viewport pixels; normalized overlay coordinates stay identical",
-    "noClamp": true
+    "noClamp": true,
+    "noImplicitExtrapolation": true
+  },
+  "g7Correction": {
+    "frozenEvidence": "seed1/tick920 and seed2/tick1004 terminated above the four painted dark receivers with the v0.1 goal strips",
+    "change": "replace only four goal strips with four bucket-circles centered inside the painted dark openings and make their y>1000 apron explicit",
+    "forbidden": ["seed selection", "trajectory editing", "obstacle drift", "start drift", "P0 changes", "sim-core changes"],
+    "frozenStartBoundsObstaclesCanonicalSha256": "45e937b017c04ef854532a4b2c156b90cbdf4c0f0574fab5d1827c02de66b733"
   },
   "deferred": {
     "waterZoneBoard04": [
