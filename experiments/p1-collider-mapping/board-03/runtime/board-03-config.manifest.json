@@ -3,7 +3,8 @@
   "mapping": {
     "commit": "071c52477c829cf6dac5ea8b1dec49f23d48d9ca",
     "schema": "r4d.p1.board-03-mapping.v0.1",
-    "sha256": "938944a7bb56cca114dd0cb2421ffa4830a0b619e8fa444a9ef658921d3b9924",
+    "canonicalization": "JSON.stringify(JSON.parse(sourceBytes))",
+    "sha256": "fc4e467b8eeced91e08e2a62ed367693ac9317675a2f33a8ab76379ac47429be",
     "sourceImageSha256": "f5cfa2bbe8e4b49ecbc0f4c7a0cee99842b182b56ae495979153b8fc9ff86e32"
   },
   "simCoreCommit": "5a6fa03f1cdb3de88a2d9c7dbe795eb8e2a7f023",
@@ -11,7 +12,16 @@
     "file": "board-03-config.v1.json",
     "sha256": "69ebafc086bea82513b9107ebf272d4f6b1d552cd080810eefe893616c454c6f",
     "ballRadiusFlat": 18,
-    "goalApproximation": "inscribed bucket circle inside each rectangular Researcher goal zone",
+    "segmentBreakdown": {
+      "obstacleSegments": 56,
+      "explicitNearBoundarySegments": 5,
+      "total": 61
+    },
+    "goalApproximation": {
+      "declaredMappingShape": "rectFlat",
+      "coreShape": "bucket circle",
+      "rule": "inscribed circle inside each visible and declared rectangular Researcher goal zone"
+    },
     "implicitBounds": [
       "bound-far",
       "bound-left",
