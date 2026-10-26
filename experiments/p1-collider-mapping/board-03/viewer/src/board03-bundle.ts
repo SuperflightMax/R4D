@@ -1,11 +1,10 @@
 import * as simCore from '@millionko/sim-core';
-import mapping from '../../../research/board-03-mapping-v0.1.json';
 import config from '../../runtime/board-03-config.v1.json';
 import configManifest from '../../runtime/board-03-config.manifest.json';
-import simVersion from '../../runtime/sim-core-version.json';
 import { createBoard03Adapter, type SimCorePublicApi } from '../../runtime/sim-adapter';
 import { geometryFromConfig, type Board03Config } from './config-geometry';
-import { createBoard03Projection, type Board03MappingContract } from './projection';
+import { createBoard03Projection } from './projection';
+import { board03ProjectionContract } from './public-projection-contract';
 import type { Board03Bundle, SimulationPort, SimulationSnapshot } from './types';
 
 const authoredConfig = config as unknown as Board03Config;
@@ -48,20 +47,20 @@ const simulation: SimulationPort = Object.freeze({
 export const board03Bundle: Board03Bundle = Object.freeze({
   sourcePins: Object.freeze({
     imageSha256: configManifest.mapping.sourceImageSha256,
-    projectionVersion: mapping.transform.id,
+    projectionVersion: board03ProjectionContract.transform.id,
     configVersion: configManifest.config.file,
     configSha256: configManifest.config.sha256,
     mappingSha256: configManifest.mapping.sha256,
-    simCoreCommit: simVersion.sourceCommit,
+    simCoreCommit: configManifest.simCoreCommit,
   }),
   art: Object.freeze({
-    ballUrl: '/assets/ball-candidate-b-64.png',
-    shadowUrl: '/assets/shadow-candidate-b-96x48.png',
+    ballUrl: `${import.meta.env.BASE_URL}assets/ball-candidate-b-64.png`,
+    shadowUrl: `${import.meta.env.BASE_URL}assets/shadow-candidate-b-96x48.png`,
     ballNativeDiameter: 64,
     shadowNativeSize: [96, 48] as const,
     shadowOffsetInBallDiameters: [-0.18, 0.25] as const,
   }),
   geometry: geometryFromConfig(authoredConfig),
-  projection: createBoard03Projection(mapping as unknown as Board03MappingContract),
+  projection: createBoard03Projection(board03ProjectionContract),
   simulation,
 });

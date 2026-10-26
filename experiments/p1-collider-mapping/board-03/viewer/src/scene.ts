@@ -3,7 +3,7 @@ import { rectifyArt } from './rectify-art';
 import type { Board03Bundle, GeometryPrimitive, Point, ViewId } from './types';
 import type { ViewerState } from './viewer-state';
 
-const IMAGE_PATH = '/assets/03-sun-temple.jpg';
+const IMAGE_PATH = `${import.meta.env.BASE_URL}assets/03-sun-temple.jpg`;
 const GEOMETRY_COLOR = 0x4df2ff;
 const BOUNDARY_COLOR = 0xffc857;
 const GOAL_COLOR = 0xb9ff66;

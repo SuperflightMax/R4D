@@ -1,8 +1,10 @@
 import { describe, expect, it } from 'vitest';
 import mapping from '../../../research/board-03-mapping-v0.1.json';
 import { createBoard03Projection, type Board03MappingContract } from '../src/projection';
+import { board03ProjectionContract } from '../src/public-projection-contract';
 
-const projection = createBoard03Projection(mapping as unknown as Board03MappingContract);
+const canonicalMapping = mapping as unknown as Board03MappingContract;
+const projection = createBoard03Projection(board03ProjectionContract);
 
 describe('board 03 projection', () => {
   it('round-trips the full 21x21 flat lattice', () => {
@@ -15,6 +17,21 @@ describe('board 03 projection', () => {
   });
 
   it('maps exact flat corners to the accepted P0 quad', () => {
+    expect(board03ProjectionContract).toEqual({
+      sources: {
+        sourceImage: {
+          widthPx: canonicalMapping.sources.sourceImage.widthPx,
+          heightPx: canonicalMapping.sources.sourceImage.heightPx,
+        },
+      },
+      coordinateSystems: {
+        flat: { extent: canonicalMapping.coordinateSystems.flat.extent },
+      },
+      transform: {
+        id: canonicalMapping.transform.id,
+        constants: canonicalMapping.transform.constants,
+      },
+    });
     const expected = mapping.transform.quadImagePxClockwise;
     const corners = [
       { x: 0, y: 0 },

@@ -13,6 +13,7 @@ if (actualCommit !== expectedCommit) {
 }
 
 export default defineConfig({
+  base: '/review/r4d/p1-collider-mapping/',
   resolve: {
     alias: {
       '@millionko/sim-core': path.join(simRoot, 'packages/sim-core/src/index.ts'),
