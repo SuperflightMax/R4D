@@ -40,12 +40,19 @@ async function main(): Promise<void>
 
   const configText = await readFile(path.join(runtimeDir, 'board-03-config.v1.json'), 'utf8');
   const config = JSON.parse(configText) as Record<string, unknown>;
+  const configBoard = config.board as Record<string, unknown>;
+  const configBuckets = configBoard.buckets as Array<Record<string, unknown>>;
   const configManifest = await loadJson('board-03-config.manifest.json');
   const manifestMapping = configManifest.mapping as Record<string, unknown>;
   const manifestConfig = configManifest.config as Record<string, unknown>;
-  assert.equal(manifestMapping.commit, '071c52477c829cf6dac5ea8b1dec49f23d48d9ca');
-  assert.equal(manifestMapping.sha256, 'fc4e467b8eeced91e08e2a62ed367693ac9317675a2f33a8ab76379ac47429be');
+  assert.equal(manifestMapping.commit, '83e3b0e63ecc3fb7878719c30f59a3b4306fc467');
+  assert.equal(manifestMapping.sha256, '070c0fb3f9b6d39601a8230dc2c5b4e792a223872ad611c9de48b8717b387bbf');
   assert.equal(configManifest.simCoreCommit, expectedCommit);
+  assert.equal(configBoard.height, 1150, 'simulation domain must include the receiver apron');
+  assert.equal((configBoard.pins as unknown[]).length, 7);
+  assert.equal((configBoard.segments as unknown[]).length, 61);
+  assert.equal(configBuckets.length, 4);
+  assert.ok(configBuckets.every((bucket) => bucket.r === 48 && !('nearMiss' in bucket)), 'v0.2 bucket circles must transfer directly');
   assert.equal(
     manifestConfig.sha256,
     createHash('sha256').update(configText).digest('hex'),
@@ -58,7 +65,7 @@ async function main(): Promise<void>
   // The first two ordinary uint32 seeds; no trajectory filtering or reroll.
   const seedA = 1;
   const seedB = 2;
-  const checkpoints = [0, 1, 120, 360, 720, 1200];
+  const checkpoints = [0, 1, 120, 360, 720, 1200, 2500];
 
   function trace(seed: number): { snapshots: Board03Snapshot[]; events: readonly Readonly<Record<string, unknown>>[] }
   {

@@ -4,15 +4,19 @@
 `runtime/board-03-config.v1.json`; Viewer обязан строить геометрию из него, а не
 из отдельной разметки.
 
-Config детерминированно собран из Researcher mapping commit
-`071c52477c829cf6dac5ea8b1dec49f23d48d9ca`. Семь круглых оснований стали
+Config детерминированно собран из Researcher mapping v0.2 commit
+`83e3b0e63ecc3fb7878719c30f59a3b4306fc467`. Семь круглых оснований стали
 pins, четырнадцать прямоугольных оснований развёрнуты в 56 штатных segments,
 пять ближних границ добавлены как segments, а дальняя/левая/правая границы
-сопоставлены встроенным стенкам ядра. Четыре прямоугольные goal-зоны сведены к
-вписанным trigger-кругам `bucket`; видимая и объявленная прямоугольная форма не
-скрывается и этот консервативный компромисс явно записан в
-`runtime/board-03-config.manifest.json`. Итого config содержит ровно 56
-obstacle segments + 5 явных ближних boundary segments = 61 segment.
+сопоставлены встроенным стенкам ядра. Итого config содержит ровно 56 obstacle
+segments + 5 явных ближних boundary segments = 61 segment.
+
+Четыре `bucketCircle` из mapping v0.2 переносятся в core `bucket` напрямую по
+`centerFlat` и `radiusFlat=48`, без прежней прямоугольной аппроксимации. Высота
+симуляции — `1150`: `y=0..1000` остаётся игровым полем, `y=1000..1150` — явно
+объявленный foreground receiver apron. Встроенные left/right walls sim-core
+используют `board.height`, поэтому закономерно продолжаются через весь apron;
+это зафиксировано в `runtime/board-03-config.manifest.json`.
 
 `runtime/sim-adapter.ts` принимает публичный API настоящего
 `@millionko/sim-core`, создаёт запуск с заданным seed и продвигает ту же session
