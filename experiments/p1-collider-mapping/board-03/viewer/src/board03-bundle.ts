@@ -45,6 +45,9 @@ const simulation: SimulationPort = Object.freeze({
   },
 });
 export const board03Bundle: Board03Bundle = Object.freeze({
+  id: '03',
+  label: 'Board 03 · Sun Temple',
+  domain: Object.freeze({ playableMaxY: 1000, apronMaxY: 1150, goalRadius: 48 }),
   sourcePins: Object.freeze({
     imageSha256: configManifest.mapping.sourceImageSha256,
     projectionVersion: board03ProjectionContract.transform.id,
@@ -54,6 +57,7 @@ export const board03Bundle: Board03Bundle = Object.freeze({
     simCoreCommit: configManifest.simCoreCommit,
   }),
   art: Object.freeze({
+    imageUrl: `${import.meta.env.BASE_URL}assets/03-sun-temple.jpg`,
     ballUrl: `${import.meta.env.BASE_URL}assets/ball-candidate-b-64.png`,
     shadowUrl: `${import.meta.env.BASE_URL}assets/shadow-candidate-c-r18-54x27.png`,
     ballNativeDiameter: 64,

@@ -26,6 +26,20 @@ export interface Board03MappingContract {
   };
 }
 
+export interface Board01MappingContract {
+  source: { widthPx: number; heightPx: number };
+  flat: {
+    extent: { x: [number, number]; y: [number, number] };
+    playable: { x: [number, number]; y: [number, number] };
+    receiverApron: { x: [number, number]; y: [number, number] };
+  };
+  transform: {
+    id: string;
+    forwardMatrix: [[number, number, number], [number, number, number], [number, number, number]];
+    inverseMatrix: [[number, number, number], [number, number, number], [number, number, number]];
+  };
+}
+
 const DOMAIN_EPSILON = 1e-8;
 
 export function createBoard03Projection(contract: Board03MappingContract): ProjectionPort {
@@ -66,18 +80,65 @@ export function createBoard03Projection(contract: Board03MappingContract): Proje
   return Object.freeze(projection);
 }
 
+export function createBoard01Projection(contract: Board01MappingContract): ProjectionPort {
+  const { widthPx: width, heightPx: height } = contract.source;
+  const { x: flatX, y: flatY } = contract.flat.extent;
+  const projection: ProjectionPort = {
+    mode: 'perspective',
+    imageSize: { width, height },
+    flatSize: { width: flatX[1] - flatX[0], height: flatY[1] - flatY[0] },
+    simToImage(point): Point {
+      assertDomain(point, contract.flat.extent, 'board 01');
+      return applyHomography(contract.transform.forwardMatrix, point);
+    },
+    imageToSim(point): Point {
+      const flat = applyHomography(contract.transform.inverseMatrix, point);
+      assertDomain(flat, contract.flat.extent, 'board 01');
+      return flat;
+    },
+    simToFlat(point): Point {
+      assertDomain(point, contract.flat.extent, 'board 01');
+      return { x: point.x, y: point.y };
+    },
+    flatToSim(point): Point {
+      assertDomain(point, contract.flat.extent, 'board 01');
+      return { x: point.x, y: point.y };
+    },
+  };
+  return Object.freeze(projection);
+}
+
+function applyHomography(
+  matrix: Board01MappingContract['transform']['forwardMatrix'],
+  point: Readonly<Point>,
+): Point {
+  const denominator = matrix[2][0] * point.x + matrix[2][1] * point.y + matrix[2][2];
+  if (!Number.isFinite(denominator) || Math.abs(denominator) < Number.EPSILON) {
+    throw new RangeError('Projection denominator is invalid');
+  }
+  return {
+    x: (matrix[0][0] * point.x + matrix[0][1] * point.y + matrix[0][2]) / denominator,
+    y: (matrix[1][0] * point.x + matrix[1][1] * point.y + matrix[1][2]) / denominator,
+  };
+}
+
 function assertFlatDomain(point: Readonly<Point>, contract: Board03MappingContract): void {
-  const [[minX, maxX], [minY, maxY]] = [
-    contract.coordinateSystems.flat.extent.x,
-    contract.coordinateSystems.flat.extent.y,
-  ];
+  assertDomain(point, contract.coordinateSystems.flat.extent, 'board 03');
+}
+
+function assertDomain(
+  point: Readonly<Point>,
+  extent: { x: [number, number]; y: [number, number] },
+  board: string,
+): void {
+  const [[minX, maxX], [minY, maxY]] = [extent.x, extent.y];
   if (
     point.x < minX - DOMAIN_EPSILON
     || point.x > maxX + DOMAIN_EPSILON
     || point.y < minY - DOMAIN_EPSILON
     || point.y > maxY + DOMAIN_EPSILON
   ) {
-    throw new RangeError(`Point is outside board 03 mapping domain: ${point.x}, ${point.y}`);
+    throw new RangeError(`Point is outside ${board} mapping domain: ${point.x}, ${point.y}`);
   }
 }
 

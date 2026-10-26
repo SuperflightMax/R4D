@@ -3,7 +3,7 @@ import { readdir, readFile, stat, writeFile } from 'node:fs/promises';
 import path from 'node:path';
 
 const distRoot = path.resolve('dist');
-const manifestPath = path.resolve('release-manifest.sha256');
+const manifestPath = path.resolve('scale-candidate-manifest.sha256');
 const route = '/review/r4d/p1-collider-mapping/';
 
 async function filesUnder(directory) {
@@ -37,10 +37,12 @@ const publicText = (await Promise.all(files
 assert(!/[A-Za-z]:\\(?:Users|dev|Agents|Windows|Program Files)(?:\\|$)/i.test(publicText), 'release contains an absolute Windows path');
 assert(!publicText.includes('millionko-source'), 'release contains the private sim-core checkout path');
 assert(!publicText.includes('board-03-mapping-v0.2.json'), 'release contains the private Research mapping filename');
+assert(!publicText.includes('board-01-jungle') && !publicText.includes('mapping-v0.1.json'), 'release contains the private board-01 Research path');
 assert(!publicText.includes('sourceMappingURL='), 'release contains a source-map reference');
 
 const expectedAssets = new Map([
   ['assets/03-sun-temple.jpg', 'f5cfa2bbe8e4b49ecbc0f4c7a0cee99842b182b56ae495979153b8fc9ff86e32'],
+  ['assets/01-jungle.jpg', 'c8f9e4245c1de8c2086e615bc75dc10aea59b76b614d6e106593e07262e24f72'],
   ['assets/ball-candidate-b-64.png', '05b797dd1dbb97d029e7d93a526f718844b2d1f02504f484ccf9f74def7c5087'],
   ['assets/shadow-candidate-c-r18-54x27.png', 'ee10607ce00c2a3d7e8644e941879748cdb841f671dda8399353929fce5ed213'],
 ]);
@@ -59,7 +61,7 @@ const manifest = `${(await Promise.all(files.map(async (file) => {
 if (process.argv.includes('--write-manifest')) {
   await writeFile(manifestPath, manifest, 'utf8');
 } else {
-  assert((await readFile(manifestPath, 'utf8')).replace(/\r\n/g, '\n') === manifest, 'release-manifest.sha256 is stale');
+  assert((await readFile(manifestPath, 'utf8')).replace(/\r\n/g, '\n') === manifest, 'scale-candidate-manifest.sha256 is stale');
 }
 
-console.log(`PASS nested release privacy: route=${route} files=${files.length}`);
+console.log(`PASS nested candidate privacy: route=${route} files=${files.length}`);

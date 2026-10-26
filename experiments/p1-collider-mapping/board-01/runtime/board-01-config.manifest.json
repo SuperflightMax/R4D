@@ -1,0 +1,352 @@
+{
+  "schemaVersion": 1,
+  "board": "01-jungle",
+  "mapping": {
+    "commit": "92df55715867916669bc370a8040d6bf7d3e1eb7",
+    "schema": "r4d.p1.board-01.mapping.v0.1",
+    "canonicalization": "Research Python json.dumps(ensure_ascii=False,separators=(comma,colon))",
+    "canonicalSha256": "9a248421ad8453d839940bccf7e9838e9091ffa83ab40e1b50998f57e7041d5c",
+    "jsSemanticSha256": "25c72590f39559b6d775d485731d3138e0f91f05f02165fb5c940d0962a0cb7d",
+    "sourceImageSha256": "c8f9e4245c1de8c2086e615bc75dc10aea59b76b614d6e106593e07262e24f72"
+  },
+  "simCoreCommit": "5a6fa03f1cdb3de88a2d9c7dbe795eb8e2a7f023",
+  "config": {
+    "file": "board-01-config.v1.json",
+    "sha256": "7d652dc28e30bfc42f7d862fc6cb4bfc2489b4e88593c655d31baca4f85de057",
+    "simulationDomain": {
+      "width": 1000,
+      "height": 1180,
+      "playablePlaneY": [
+        0,
+        1000
+      ],
+      "receiverApronY": [
+        1000,
+        1180
+      ]
+    },
+    "counts": {
+      "pins": 25,
+      "explicitSegments": 5,
+      "implicitWalls": 3,
+      "buckets": 4,
+      "drops": 1
+    },
+    "ballRadiusFlat": 18,
+    "goalMapping": "direct bucketCircle centerFlat/radiusFlat transfer",
+    "implicitBounds": {
+      "mapped": [
+        "bound-far",
+        "bound-left",
+        "bound-right"
+      ],
+      "apronBehavior": "Millionko implicit left/right walls use board.height and continue through y=1000..1180; top remains wall_top"
+    }
+  },
+  "mappingTable": [
+    {
+      "mappingId": "start-center-chute",
+      "mappingShape": "start",
+      "simKind": "drop",
+      "simIds": [
+        "start-center-chute"
+      ]
+    },
+    {
+      "mappingId": "flower-01",
+      "mappingShape": "circle",
+      "simKind": "pin",
+      "simIds": [
+        "flower-01"
+      ]
+    },
+    {
+      "mappingId": "frog-01",
+      "mappingShape": "circle",
+      "simKind": "pin",
+      "simIds": [
+        "frog-01"
+      ]
+    },
+    {
+      "mappingId": "leaf-01",
+      "mappingShape": "circle",
+      "simKind": "pin",
+      "simIds": [
+        "leaf-01"
+      ]
+    },
+    {
+      "mappingId": "drum-02",
+      "mappingShape": "circle",
+      "simKind": "pin",
+      "simIds": [
+        "drum-02"
+      ]
+    },
+    {
+      "mappingId": "drum-01",
+      "mappingShape": "circle",
+      "simKind": "pin",
+      "simIds": [
+        "drum-01"
+      ]
+    },
+    {
+      "mappingId": "flower-02",
+      "mappingShape": "circle",
+      "simKind": "pin",
+      "simIds": [
+        "flower-02"
+      ]
+    },
+    {
+      "mappingId": "frog-02",
+      "mappingShape": "circle",
+      "simKind": "pin",
+      "simIds": [
+        "frog-02"
+      ]
+    },
+    {
+      "mappingId": "leaf-02",
+      "mappingShape": "circle",
+      "simKind": "pin",
+      "simIds": [
+        "leaf-02"
+      ]
+    },
+    {
+      "mappingId": "leaf-03",
+      "mappingShape": "circle",
+      "simKind": "pin",
+      "simIds": [
+        "leaf-03"
+      ]
+    },
+    {
+      "mappingId": "flower-03",
+      "mappingShape": "circle",
+      "simKind": "pin",
+      "simIds": [
+        "flower-03"
+      ]
+    },
+    {
+      "mappingId": "drum-03",
+      "mappingShape": "circle",
+      "simKind": "pin",
+      "simIds": [
+        "drum-03"
+      ]
+    },
+    {
+      "mappingId": "frog-03",
+      "mappingShape": "circle",
+      "simKind": "pin",
+      "simIds": [
+        "frog-03"
+      ]
+    },
+    {
+      "mappingId": "drum-04",
+      "mappingShape": "circle",
+      "simKind": "pin",
+      "simIds": [
+        "drum-04"
+      ]
+    },
+    {
+      "mappingId": "frog-04",
+      "mappingShape": "circle",
+      "simKind": "pin",
+      "simIds": [
+        "frog-04"
+      ]
+    },
+    {
+      "mappingId": "drum-05",
+      "mappingShape": "circle",
+      "simKind": "pin",
+      "simIds": [
+        "drum-05"
+      ]
+    },
+    {
+      "mappingId": "flower-04",
+      "mappingShape": "circle",
+      "simKind": "pin",
+      "simIds": [
+        "flower-04"
+      ]
+    },
+    {
+      "mappingId": "leaf-04",
+      "mappingShape": "circle",
+      "simKind": "pin",
+      "simIds": [
+        "leaf-04"
+      ]
+    },
+    {
+      "mappingId": "flower-05",
+      "mappingShape": "circle",
+      "simKind": "pin",
+      "simIds": [
+        "flower-05"
+      ]
+    },
+    {
+      "mappingId": "leaf-05",
+      "mappingShape": "circle",
+      "simKind": "pin",
+      "simIds": [
+        "leaf-05"
+      ]
+    },
+    {
+      "mappingId": "drum-06",
+      "mappingShape": "circle",
+      "simKind": "pin",
+      "simIds": [
+        "drum-06"
+      ]
+    },
+    {
+      "mappingId": "flower-06",
+      "mappingShape": "circle",
+      "simKind": "pin",
+      "simIds": [
+        "flower-06"
+      ]
+    },
+    {
+      "mappingId": "frog-05",
+      "mappingShape": "circle",
+      "simKind": "pin",
+      "simIds": [
+        "frog-05"
+      ]
+    },
+    {
+      "mappingId": "flower-07",
+      "mappingShape": "circle",
+      "simKind": "pin",
+      "simIds": [
+        "flower-07"
+      ]
+    },
+    {
+      "mappingId": "drum-08",
+      "mappingShape": "circle",
+      "simKind": "pin",
+      "simIds": [
+        "drum-08"
+      ]
+    },
+    {
+      "mappingId": "drum-07",
+      "mappingShape": "circle",
+      "simKind": "pin",
+      "simIds": [
+        "drum-07"
+      ]
+    },
+    {
+      "mappingId": "bound-far",
+      "mappingShape": "segment",
+      "simKind": "implicit-wall",
+      "simIds": [
+        "wall_top"
+      ]
+    },
+    {
+      "mappingId": "bound-left",
+      "mappingShape": "segment",
+      "simKind": "implicit-wall",
+      "simIds": [
+        "wall_left"
+      ]
+    },
+    {
+      "mappingId": "bound-right",
+      "mappingShape": "segment",
+      "simKind": "implicit-wall",
+      "simIds": [
+        "wall_right"
+      ]
+    },
+    {
+      "mappingId": "bound-near-01",
+      "mappingShape": "segment",
+      "simKind": "segment",
+      "simIds": [
+        "bound-near-01"
+      ]
+    },
+    {
+      "mappingId": "bound-near-02",
+      "mappingShape": "segment",
+      "simKind": "segment",
+      "simIds": [
+        "bound-near-02"
+      ]
+    },
+    {
+      "mappingId": "bound-near-03",
+      "mappingShape": "segment",
+      "simKind": "segment",
+      "simIds": [
+        "bound-near-03"
+      ]
+    },
+    {
+      "mappingId": "bound-near-04",
+      "mappingShape": "segment",
+      "simKind": "segment",
+      "simIds": [
+        "bound-near-04"
+      ]
+    },
+    {
+      "mappingId": "bound-near-05",
+      "mappingShape": "segment",
+      "simKind": "segment",
+      "simIds": [
+        "bound-near-05"
+      ]
+    },
+    {
+      "mappingId": "goal-01",
+      "mappingShape": "bucketCircle",
+      "simKind": "bucket",
+      "simIds": [
+        "goal-01"
+      ]
+    },
+    {
+      "mappingId": "goal-02",
+      "mappingShape": "bucketCircle",
+      "simKind": "bucket",
+      "simIds": [
+        "goal-02"
+      ]
+    },
+    {
+      "mappingId": "goal-03",
+      "mappingShape": "bucketCircle",
+      "simKind": "bucket",
+      "simIds": [
+        "goal-03"
+      ]
+    },
+    {
+      "mappingId": "goal-04",
+      "mappingShape": "bucketCircle",
+      "simKind": "bucket",
+      "simIds": [
+        "goal-04"
+      ]
+    }
+  ]
+}

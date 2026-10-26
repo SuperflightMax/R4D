@@ -12,6 +12,9 @@ function fixture(): { bundle: Board03Bundle; current: SimulationSnapshot } {
     result: null,
   };
   const bundle: Board03Bundle = {
+    id: '03',
+    label: 'fixture-only',
+    domain: { playableMaxY: 8, apronMaxY: 10, goalRadius: 1 },
     sourcePins: {
       imageSha256: 'fixture-only',
       projectionVersion: 'fixture-only',
@@ -21,6 +24,7 @@ function fixture(): { bundle: Board03Bundle; current: SimulationSnapshot } {
       simCoreCommit: 'fixture-only',
     },
     art: {
+      imageUrl: 'fixture-only',
       ballUrl: 'fixture-only',
       shadowUrl: 'fixture-only',
       ballNativeDiameter: 64,

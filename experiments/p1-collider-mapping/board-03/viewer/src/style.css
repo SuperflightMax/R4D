@@ -11,7 +11,10 @@ header { display: flex; align-items: end; justify-content: space-between; gap: 2
 h1 { margin: 4px 0 0; font-size: clamp(2rem, 5vw, 4rem); letter-spacing: -.05em; }
 .eyebrow { margin: 0; color: #5ee7f2; font-size: .78rem; font-weight: 800; letter-spacing: .12em; text-transform: uppercase; }
 .pins, .diagnostics { color: #a5bbc2; font: .78rem ui-monospace, monospace; }
-.controls { display: flex; flex-wrap: wrap; gap: 8px; align-items: center; padding: 12px; border: 1px solid #29434b; border-radius: 10px 10px 0 0; background: #0b1a20; }
+.board-selector, .controls { display: flex; flex-wrap: wrap; gap: 8px; align-items: center; padding: 12px; border: 1px solid #29434b; background: #0b1a20; }
+.board-selector { border-radius: 10px 10px 0 0; }
+.controls { border-top: 0; }
+button[aria-pressed="true"] { border-color: #5ee7f2; background: #16404a; }
 button, label, input { border: 1px solid #36545e; border-radius: 6px; background: #10272e; color: inherit; padding: 8px 11px; }
 button, label { cursor: pointer; }
 button:hover { border-color: #5ee7f2; }

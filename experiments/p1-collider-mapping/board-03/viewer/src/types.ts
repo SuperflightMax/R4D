@@ -57,7 +57,16 @@ export interface ProjectionPort {
   flatToSim(point: Readonly<Point>): Point;
 }
 
-export interface Board03Bundle {
+export type BoardId = '03' | '01';
+
+export interface BoardBundle {
+  readonly id: BoardId;
+  readonly label: string;
+  readonly domain: Readonly<{
+    playableMaxY: number;
+    apronMaxY: number;
+    goalRadius: number;
+  }>;
   readonly sourcePins: Readonly<{
     imageSha256: string;
     projectionVersion: string;
@@ -67,6 +76,7 @@ export interface Board03Bundle {
     simCoreCommit: string;
   }>;
   readonly art: Readonly<{
+    imageUrl: string;
     ballUrl: string;
     shadowUrl: string;
     ballNativeDiameter: number;
@@ -77,4 +87,6 @@ export interface Board03Bundle {
   readonly projection: ProjectionPort;
   readonly simulation: SimulationPort;
 }
+
+export type Board03Bundle = BoardBundle;
 

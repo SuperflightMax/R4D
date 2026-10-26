@@ -1,4 +1,4 @@
-import type { Board03Bundle, SimulationSnapshot, ViewId } from './types';
+import type { BoardBundle, SimulationSnapshot, ViewId } from './types';
 
 export interface VisibilityState {
   art: boolean;
@@ -9,7 +9,7 @@ export class ViewerState {
   view: ViewId = 'perspective';
   visibility: VisibilityState = { art: true, geometry: true };
 
-  constructor(private readonly bundle: Board03Bundle) {}
+  constructor(private readonly bundle: BoardBundle) {}
 
   get snapshot(): Readonly<SimulationSnapshot> {
     return this.bundle.simulation.snapshot();
