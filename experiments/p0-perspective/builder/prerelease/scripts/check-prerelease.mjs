@@ -44,6 +44,8 @@ async function validate(siteRoot,m,verifySources){
   assert(!/(?:BEGIN [A-Z ]*PRIVATE KEY|(?:api|secret|token|password)[_-]?key\s*[:=])/i.test(all),'Inline secret pattern found');
   const withoutStatus=all.replaceAll('P0 — результат исследования, ожидает явной приёмки Max; P1 закрыт','');assert(!/\bP[1-9][0-9]*\b/.test(withoutStatus),'Later-stage scope leaked into browser content');
   assert(!/(?:physics|collider|sim-core|шарик)/i.test(all),'Out-of-scope runtime topic leaked into browser content');
+  const indexText=await readFile(path.join(siteRoot,'index.html'),'utf8');assert(indexText.includes('Проверенная QA серия F1–F4')&&!indexText.includes('Принятая серия F1–F4'),'Index QA-series wording is not exact');
+  const recipeText=await readFile(path.join(siteRoot,'recipe.html'),'utf8');for(const fact of ['image_gen','11 invocations','10 initial final-series calls','1 allowed F1 plate-only lighting edit','transparent_background=false','transparent_background=true','num_last_images_to_include=1','plate-v1-rejected-markers.png','plate-v1-rejected-chutes.png','plate-v2-qa-failure-baked-shadow.png','plate-v3-source.png','raw generator repeatability не обещается'])assert(recipeText.includes(fact),`Recipe presentation missing factual marker: ${fact}`);
   assert((actual.filter(x=>x.startsWith('assets/failures/'))).length===3,'Exactly three failure images required');assert(actual.filter(x=>x.endsWith('.svg')).length===1,'Exactly one formal SVG required');
 }
 async function sourceBytes(pin){return pin.kind==='git-blob'?gitBlob(pin.commit,pin.path):readFile(pin.path);}
