@@ -5,13 +5,21 @@ import { fileURLToPath } from 'node:url';
 
 type Point = [number, number];
 type Bound = { id: string; from: Point; to: Point };
-type Goal = { id: string; rectFlat: { x: Point; y: Point } };
+type Goal = { id: string; shape: 'bucketCircle'; centerFlat: Point; radiusFlat: number };
 type CircleObstacle = { id: string; shape: 'circle'; centerFlat: Point; radiusFlat: number };
 type LoopObstacle = { id: string; shape: 'axisAlignedSegmentLoop'; centerFlat: Point; halfExtentsFlat: Point };
 type Mapping = {
   schema: string;
   sources: { sourceImage: { sha256: string } };
-  coordinateSystems: { flat: { extent: { x: Point; y: Point } } };
+  coordinateSystems: {
+    flat: {
+      extent: { x: Point; y: Point };
+      semanticDomains: {
+        playablePlane: { x: Point; y: Point };
+        foregroundReceiverApron: { x: Point; y: Point };
+      };
+    };
+  };
   start: { id: string; positionFlat: Point; directionFlat: Point };
   bounds: Bound[];
   goals: Goal[];
@@ -19,12 +27,14 @@ type Mapping = {
 };
 
 const runtimeDir = path.dirname(fileURLToPath(import.meta.url));
-const expectedMappingCommit = '071c52477c829cf6dac5ea8b1dec49f23d48d9ca';
-const expectedMappingSchema = 'r4d.p1.board-03-mapping.v0.1';
+const expectedMappingCommit = '83e3b0e63ecc3fb7878719c30f59a3b4306fc467';
+const expectedMappingSchema = 'r4d.p1.board-03-mapping.v0.2';
+const expectedMappingSha256 = '070c0fb3f9b6d39601a8230dc2c5b4e792a223872ad611c9de48b8717b387bbf';
+const expectedFrozenGeometrySha256 = '45e937b017c04ef854532a4b2c156b90cbdf4c0f0574fab5d1827c02de66b733';
 const expectedImageSha256 = 'f5cfa2bbe8e4b49ecbc0f4c7a0cee99842b182b56ae495979153b8fc9ff86e32';
 const mappingPath = path.resolve(
   process.env.BOARD_03_MAPPING_PATH
-    ?? path.join(runtimeDir, '..', '..', 'research', 'board-03-mapping-v0.1.json')
+    ?? path.join(runtimeDir, '..', '..', 'research', 'board-03-mapping-v0.2.json')
 );
 
 function sha256(text: string): string
@@ -72,6 +82,19 @@ if (mapping.sources.sourceImage.sha256 !== expectedImageSha256)
 {
   throw new Error('mapping points to an unexpected source image');
 }
+if (sha256(canonicalMappingText) !== expectedMappingSha256)
+{
+  throw new Error('mapping canonical digest differs from the accepted Research v0.2');
+}
+const frozenGeometryText = JSON.stringify({
+  start: mapping.start,
+  bounds: mapping.bounds,
+  obstacles: mapping.obstacles
+});
+if (sha256(frozenGeometryText) !== expectedFrozenGeometrySha256)
+{
+  throw new Error('start, bounds or obstacles drifted from the frozen Research geometry');
+}
 if (mapping.obstacles.length !== 21 || mapping.bounds.length !== 8 || mapping.goals.length !== 4)
 {
   throw new Error('mapping inventory differs from Researcher checkpoint');
@@ -79,9 +102,16 @@ if (mapping.obstacles.length !== 21 || mapping.bounds.length !== 8 || mapping.go
 
 const [minX, maxX] = mapping.coordinateSystems.flat.extent.x;
 const [minY, maxY] = mapping.coordinateSystems.flat.extent.y;
-if (minX !== 0 || minY !== 0 || maxX !== 1000 || maxY !== 1000)
+if (minX !== 0 || minY !== 0 || maxX !== 1000 || maxY !== 1150)
 {
-  throw new Error('board 03 runtime requires the accepted 1000x1000 flat plane');
+  throw new Error('board 03 runtime requires the accepted 1000x1150 simulation domain');
+}
+const playable = mapping.coordinateSystems.flat.semanticDomains.playablePlane;
+const apron = mapping.coordinateSystems.flat.semanticDomains.foregroundReceiverApron;
+if (JSON.stringify(playable) !== JSON.stringify({ x: [0, 1000], y: [0, 1000] })
+  || JSON.stringify(apron) !== JSON.stringify({ x: [0, 1000], y: [1000, 1150] }))
+{
+  throw new Error('playable-plane or receiver-apron domain differs from Research v0.2');
 }
 
 const pins = mapping.obstacles
@@ -103,23 +133,13 @@ const explicitBounds = mapping.bounds
   .filter((bound) => !['bound-far', 'bound-left', 'bound-right'].includes(bound.id))
   .map((bound) => segment(bound.id, bound.from, bound.to));
 
-const buckets = mapping.goals.map((goal) =>
-{
-  const width = goal.rectFlat.x[1] - goal.rectFlat.x[0];
-  const height = goal.rectFlat.y[1] - goal.rectFlat.y[0];
-  return {
-    id: goal.id,
-    x: (goal.rectFlat.x[0] + goal.rectFlat.x[1]) / 2,
-    y: (goal.rectFlat.y[0] + goal.rectFlat.y[1]) / 2,
-    r: Math.min(width, height) / 2,
-    prizeMul: 1,
-    nearMiss: {
-      x: (goal.rectFlat.x[0] + goal.rectFlat.x[1]) / 2,
-      y: (goal.rectFlat.y[0] + goal.rectFlat.y[1]) / 2,
-      r: Math.min(width / 2, 60)
-    }
-  };
-});
+const buckets = mapping.goals.map((goal) => ({
+  id: goal.id,
+  x: goal.centerFlat[0],
+  y: goal.centerFlat[1],
+  r: goal.radiusFlat,
+  prizeMul: 1
+}));
 
 const direction = mapping.start.directionFlat;
 const angleDeg = Math.atan2(direction[1], direction[0]) * 180 / Math.PI;
@@ -169,7 +189,12 @@ const mappingTable = [
         : bound.id === 'bound-right' ? 'wall_right'
           : bound.id]
   })),
-  ...mapping.goals.map((goal) => ({ mappingId: goal.id, simKind: 'bucket', simIds: [goal.id] }))
+  ...mapping.goals.map((goal) => ({
+    mappingId: goal.id,
+    mappingShape: goal.shape,
+    simKind: 'bucket',
+    simIds: [goal.id]
+  }))
 ];
 const manifest = {
   schemaVersion: 1,
@@ -177,7 +202,7 @@ const manifest = {
     commit: expectedMappingCommit,
     schema: mapping.schema,
     canonicalization: 'JSON.stringify(JSON.parse(sourceBytes))',
-    sha256: sha256(canonicalMappingText),
+    sha256: expectedMappingSha256,
     sourceImageSha256: expectedImageSha256
   },
   simCoreCommit: '5a6fa03f1cdb3de88a2d9c7dbe795eb8e2a7f023',
@@ -190,12 +215,22 @@ const manifest = {
       explicitNearBoundarySegments: explicitBounds.length,
       total: obstacleSegments.length + explicitBounds.length
     },
-    goalApproximation: {
-      declaredMappingShape: 'rectFlat',
-      coreShape: 'bucket circle',
-      rule: 'inscribed circle inside each visible and declared rectangular Researcher goal zone'
+    simulationDomain: {
+      width: maxX,
+      height: maxY,
+      playablePlaneY: playable.y,
+      receiverApronY: apron.y
     },
-    implicitBounds: ['bound-far', 'bound-left', 'bound-right']
+    goalMapping: {
+      declaredMappingShape: 'bucketCircle',
+      coreShape: 'bucket circle',
+      rule: 'direct centerFlat/radiusFlat transfer with no geometric approximation'
+    },
+    implicitBounds: {
+      mapped: ['bound-far', 'bound-left', 'bound-right'],
+      apronBehavior: 'Millionko implicit left/right walls use board.height and therefore continue through y=1000..1150; top remains wall_top'
+    },
+    frozenStartBoundsObstaclesCanonicalSha256: expectedFrozenGeometrySha256
   },
   mappingTable
 };

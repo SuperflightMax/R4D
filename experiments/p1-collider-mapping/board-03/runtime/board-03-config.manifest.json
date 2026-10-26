@@ -1,32 +1,48 @@
 {
   "schemaVersion": 1,
   "mapping": {
-    "commit": "071c52477c829cf6dac5ea8b1dec49f23d48d9ca",
-    "schema": "r4d.p1.board-03-mapping.v0.1",
+    "commit": "83e3b0e63ecc3fb7878719c30f59a3b4306fc467",
+    "schema": "r4d.p1.board-03-mapping.v0.2",
     "canonicalization": "JSON.stringify(JSON.parse(sourceBytes))",
-    "sha256": "fc4e467b8eeced91e08e2a62ed367693ac9317675a2f33a8ab76379ac47429be",
+    "sha256": "070c0fb3f9b6d39601a8230dc2c5b4e792a223872ad611c9de48b8717b387bbf",
     "sourceImageSha256": "f5cfa2bbe8e4b49ecbc0f4c7a0cee99842b182b56ae495979153b8fc9ff86e32"
   },
   "simCoreCommit": "5a6fa03f1cdb3de88a2d9c7dbe795eb8e2a7f023",
   "config": {
     "file": "board-03-config.v1.json",
-    "sha256": "69ebafc086bea82513b9107ebf272d4f6b1d552cd080810eefe893616c454c6f",
+    "sha256": "4c708fab600a7224bd43782b0e48540db1ea19ad1a399fb175cb840dc438e4b6",
     "ballRadiusFlat": 18,
     "segmentBreakdown": {
       "obstacleSegments": 56,
       "explicitNearBoundarySegments": 5,
       "total": 61
     },
-    "goalApproximation": {
-      "declaredMappingShape": "rectFlat",
-      "coreShape": "bucket circle",
-      "rule": "inscribed circle inside each visible and declared rectangular Researcher goal zone"
+    "simulationDomain": {
+      "width": 1000,
+      "height": 1150,
+      "playablePlaneY": [
+        0,
+        1000
+      ],
+      "receiverApronY": [
+        1000,
+        1150
+      ]
     },
-    "implicitBounds": [
-      "bound-far",
-      "bound-left",
-      "bound-right"
-    ]
+    "goalMapping": {
+      "declaredMappingShape": "bucketCircle",
+      "coreShape": "bucket circle",
+      "rule": "direct centerFlat/radiusFlat transfer with no geometric approximation"
+    },
+    "implicitBounds": {
+      "mapped": [
+        "bound-far",
+        "bound-left",
+        "bound-right"
+      ],
+      "apronBehavior": "Millionko implicit left/right walls use board.height and therefore continue through y=1000..1150; top remains wall_top"
+    },
+    "frozenStartBoundsObstaclesCanonicalSha256": "45e937b017c04ef854532a4b2c156b90cbdf4c0f0574fab5d1827c02de66b733"
   },
   "mappingTable": [
     {
@@ -276,6 +292,7 @@
     },
     {
       "mappingId": "goal-01",
+      "mappingShape": "bucketCircle",
       "simKind": "bucket",
       "simIds": [
         "goal-01"
@@ -283,6 +300,7 @@
     },
     {
       "mappingId": "goal-02",
+      "mappingShape": "bucketCircle",
       "simKind": "bucket",
       "simIds": [
         "goal-02"
@@ -290,6 +308,7 @@
     },
     {
       "mappingId": "goal-03",
+      "mappingShape": "bucketCircle",
       "simKind": "bucket",
       "simIds": [
         "goal-03"
@@ -297,6 +316,7 @@
     },
     {
       "mappingId": "goal-04",
+      "mappingShape": "bucketCircle",
       "simKind": "bucket",
       "simIds": [
         "goal-04"

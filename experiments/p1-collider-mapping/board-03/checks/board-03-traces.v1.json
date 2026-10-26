@@ -9,7 +9,8 @@
     120,
     360,
     720,
-    1200
+    1200,
+    2500
   ],
   "runs": [
     {
@@ -97,16 +98,36 @@
         },
         {
           "seed": 1,
-          "tick": 920,
+          "tick": 935,
           "rngU32": 1403919595,
           "ball": {
             "pos": {
-              "x": 357.8317539,
-              "y": 961.9617716
+              "x": 370.4735889,
+              "y": 1034.1813461
             },
             "vel": {
               "x": 105.3486303,
-              "y": 562.1497831
+              "y": 636.5497831
+            }
+          },
+          "done": true,
+          "result": {
+            "kind": "IN_BUCKET",
+            "bucketId": "goal-02"
+          }
+        },
+        {
+          "seed": 1,
+          "tick": 935,
+          "rngU32": 1403919595,
+          "ball": {
+            "pos": {
+              "x": 370.4735889,
+              "y": 1034.1813461
+            },
+            "vel": {
+              "x": 105.3486303,
+              "y": 636.5497831
             }
           },
           "done": true,
@@ -226,25 +247,18 @@
           "y": 771.977744
         },
         {
-          "type": "near_miss",
-          "tick": 910,
-          "timeSec": 7.28,
-          "ballId": "ball-03",
-          "bucketId": "goal-02"
-        },
-        {
           "type": "bucket_entered",
-          "tick": 920,
-          "timeSec": 7.36,
+          "tick": 935,
+          "timeSec": 7.48,
           "ballId": "ball-03",
           "bucketId": "goal-02",
-          "x": 357.8317539,
-          "y": 961.9617716
+          "x": 370.4735889,
+          "y": 1034.1813461
         },
         {
           "type": "ball_finished",
-          "tick": 920,
-          "timeSec": 7.36,
+          "tick": 935,
+          "timeSec": 7.48,
           "ballId": "ball-03",
           "result": {
             "kind": "IN_BUCKET",
@@ -253,8 +267,8 @@
         },
         {
           "type": "run_finished",
-          "tick": 920,
-          "timeSec": 7.36,
+          "tick": 935,
+          "timeSec": 7.48,
           "dropId": "start-center-chute",
           "ballId": "ball-03",
           "result": {
@@ -349,16 +363,36 @@
         },
         {
           "seed": 2,
-          "tick": 1004,
+          "tick": 1023,
           "rngU32": 2866302536,
           "ball": {
             "pos": {
-              "x": 127.4066809,
-              "y": 978.4264996
+              "x": 105.188934,
+              "y": 1027.4863483
             },
             "vel": {
               "x": -146.1693887,
-              "y": 273.1621566
+              "y": 367.4021566
+            }
+          },
+          "done": true,
+          "result": {
+            "kind": "IN_BUCKET",
+            "bucketId": "goal-01"
+          }
+        },
+        {
+          "seed": 2,
+          "tick": 1023,
+          "rngU32": 2866302536,
+          "ball": {
+            "pos": {
+              "x": 105.188934,
+              "y": 1027.4863483
+            },
+            "vel": {
+              "x": -146.1693887,
+              "y": 367.4021566
             }
           },
           "done": true,
@@ -488,13 +522,6 @@
           "y": 982
         },
         {
-          "type": "near_miss",
-          "tick": 847,
-          "timeSec": 6.776,
-          "ballId": "ball-03",
-          "bucketId": "goal-02"
-        },
-        {
           "type": "object_hit",
           "tick": 890,
           "timeSec": 7.12,
@@ -505,25 +532,18 @@
           "y": 982.5829446805539
         },
         {
-          "type": "near_miss",
-          "tick": 983,
-          "timeSec": 7.864,
-          "ballId": "ball-03",
-          "bucketId": "goal-01"
-        },
-        {
           "type": "bucket_entered",
-          "tick": 1004,
-          "timeSec": 8.032,
+          "tick": 1023,
+          "timeSec": 8.184000000000001,
           "ballId": "ball-03",
           "bucketId": "goal-01",
-          "x": 127.4066809,
-          "y": 978.4264996
+          "x": 105.188934,
+          "y": 1027.4863483
         },
         {
           "type": "ball_finished",
-          "tick": 1004,
-          "timeSec": 8.032,
+          "tick": 1023,
+          "timeSec": 8.184000000000001,
           "ballId": "ball-03",
           "result": {
             "kind": "IN_BUCKET",
@@ -532,8 +552,8 @@
         },
         {
           "type": "run_finished",
-          "tick": 1004,
-          "timeSec": 8.032,
+          "tick": 1023,
+          "timeSec": 8.184000000000001,
           "dropId": "start-center-chute",
           "ballId": "ball-03",
           "result": {
