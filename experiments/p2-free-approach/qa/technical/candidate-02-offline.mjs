@@ -8,10 +8,16 @@ import { SourceTextModule } from 'node:vm';
 import path from 'node:path';
 import { pathToFileURL } from 'node:url';
 
-const argument = name => process.argv[process.argv.indexOf(name) + 1];
-assert.ok(process.argv.includes('--artifact') && process.argv.includes('--output'));
+const argument = name => {
+  const index = process.argv.indexOf(name);
+  const value = index >= 0 ? process.argv[index + 1] : undefined;
+  assert.ok(value && !value.startsWith('--'), `Required argument ${name}`);
+  return value;
+};
 const artifact = path.resolve(argument('--artifact'));
 const output = path.resolve(argument('--output'));
+const coreRoot = path.resolve(argument('--core-root'));
+const pixiRoot = path.resolve(argument('--pixi-root'));
 const runtimeRoot = 'E:/R4D/perspective/p2-runtime/';
 for (const dir of [artifact, output]) assert.ok(dir.replaceAll('\\', '/').toLowerCase().startsWith(runtimeRoot.toLowerCase()));
 assert.notEqual(artifact, output);
@@ -21,8 +27,6 @@ const repo = process.cwd();
 const sourceCommit = '5f40f6692dc5e7238afc961a2e0afa826cdefc9b';
 const coreCommit = '5a6fa03f1cdb3de88a2d9c7dbe795eb8e2a7f023';
 const p1 = '4b47db04c7140ebf88f69b91faa0b790d46f22ec:experiments/p1-collider-mapping/clean-repeat-01/';
-const coreRoot = 'D:/dev/.codex-worktrees/r4d-p1-collider-mapping/millionko-source/lead';
-const pixiRoot = 'D:/dev/.codex-worktrees/r4d-p1-clean-repeat-01/lead/experiments/p1-collider-mapping/clean-repeat-01/viewer/node_modules/pixi.js';
 const hash = bytes => createHash('sha256').update(bytes).digest('hex');
 const lf = bytes => Buffer.from(bytes.toString('utf8').replaceAll('\r\n', '\n'));
 const git = (args, cwd = repo) => execFileSync('git', args, { cwd, maxBuffer: 16 * 1024 * 1024 });
