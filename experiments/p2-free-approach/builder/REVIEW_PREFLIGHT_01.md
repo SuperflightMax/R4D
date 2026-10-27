@@ -33,6 +33,10 @@ Manifest использует ключ `published_files`; первый summary-r
 
 ## Намеченный intent для Lead/CTO, сейчас не исполняется
 
+Адресный независимый offline TQA прочитан полностью из `6a9f37a17bbcea1e93d79bb7053b45285b9ce76a:experiments/p2-free-approach/qa/technical/candidate-02-REPORT.md`. Он сверил все15 файлов/входы и11087 compiled/native состояний, события/replay/ticks для6 seed. Все6 исходов LOST совпали с native; browser/UI/Pixi/download/visual и полного Technical QA PASS нет.
+
+Builder принимает найденный [P2] дефект source `5f40f669…`, `scripts/build-static.mjs:80`: граница `(?:^|["'\s])[A-Z]:[\\/]` пропускает настоящие локальные пути в template literal и file URI. Это ослабление эвристики будущих сборок, а не только исключение доказанного Pixi false positive. В **текущих exact bytes** независимая TQA признаков утечки не нашла. Факты передаются CTO вместе; отсутствие найденной утечки не объявляет scanner исправленным. Исправление — отдельное будущее поручение с новым source/candidate при необходимости; текущий candidate не меняется и не пересобирается. TQA-отчёт не является разрешением публикации.
+
 Тот же frozen `p2-jungle-static-candidate-02`, source `5f40f6692dc5e7238afc961a2e0afa826cdefc9b`, 15 files/2448166 bytes; tree SHA256 `5bc6fd3b7f99e20fe98e3f98d972371538beee767abebc905fa595af55205b4d`, build manifest SHA256 `6cf78e7b64625828929cd5905afe033570579f8e2950c103c757d53016a49aa0`.
 
 Предлагаемый release id: `p2-jungle-static-candidate-02`.
