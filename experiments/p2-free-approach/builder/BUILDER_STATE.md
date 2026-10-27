@@ -2,7 +2,7 @@
 
 staff_id `builder-r4d-p2-free-01`; branch `codex/r4d-p2-free-builder-01`; исходный HEAD `df760b680f0d0264342fc8577fcc5779b80a3a15`. Рабочая копия только `E:/R4D/perspective/p2-worktrees/builder`.
 
-Этап 2 прямо выдан Lead. Код основы и малый стык Artist написаны. Лёгкий физический selfcheck выполнен настоящим ядром; сервер и браузерная проверка не запускались. Ни полный technical PASS, ни artistic PASS не заявлены.
+Этап 2 прямо выдан Lead. Код основы, малый стык Artist и отдельный source-only пакет готового Artist v2 подготовлены. Текущий статус нового пакета — SOURCE_READY_RUNTIME_UNVERIFIED. Прежняя лёгкая физическая проверка относится к основе; сервер и браузерная проверка не запускались. Ни полный technical PASS, ни artistic PASS не заявлены; P2 не закрыт.
 
 Принято для первого малого стыка: неподвижный исходный Jungle и его тени, отдельные ball/shadow, точные прозрачные накладки четырёх семейств. Переходы по depth проверяем на настоящих контактах, не объявляем доказанными заранее. Контракт — `ASSET_CONTRACT.md`.
 
@@ -23,7 +23,19 @@ Temp/cache/output/staging/archive остаются только в `E:/R4D/persp
 
 Отдельный generic tool-policy rejection `call_7b166cdf46834d468b5f9c297aad6e9f` не разблокирован. Повтор, дробление, смена runner/сессии/launcher или другой способ запуска сервера/браузера запрещены. Не сканировать и не перечитывать чувствительные allowlists/config/tool-output, не менять security/credentials. Для фиксации этого обновления такие чтения не выполнялись.
 
-Текущее поручение Builder — только сохранить эти условия и остановиться. Runtime, повтор, интеграционный запуск, install/build, новый runtime/QA-пакет и полная QA не поручены. P3–P6, другие доски, публикация/deploy закрыты. Старые планы запуска ниже не являются разрешением; одинаковые пинги и повторные disk-check в цикле не выполняются.
+Последнее поручение Builder — узкий SOURCE-ONLY handoff: закончить данные Artist v2 для существующего generic consumer и доставить commit, без runtime. Разрешены текстовые изменения через apply_patch, точное копирование готовых PNG, read-only сравнение данных и Git diff/status/commit/push. Runtime, повтор, prepare/serve/selfcheck, install/build, симуляции, тесты/QA, сервер/браузер и другой runtime-процесс запрещены. P3–P6, другие доски, публикация/deploy закрыты. Старые планы запуска ниже не являются разрешением; одинаковые пинги и повторные disk-check в цикле не выполняются.
+
+## Source-only пакет Jungle art v2
+
+Lead input HEAD `5b4b015dcdf5c8553ec348976698c07186989551`, Artist exact `080bdc62bd547b40b688b555e429ba88dcd31e23`. Один новый source-каталог: `experiments/p2-free-approach/builder/source-packets/jungle-art-v2/`. Единственный manifest будущего просмотра — `manifest.json` в этом каталоге, generic schema `r4d.p2.assets.v1`, status SOURCE_READY_RUNTIME_UNVERIFIED. Рядом лежат точные `ball-v2.png` и `shadow-native-disc-v1.png`; отдельного staging нет. Размеры, SHA256, поля и ограничения находятся в README пакета.
+
+Ball: centerPx [627,629.5], diameterPx830.5, canvas [1254,1254], bytes851662. Shadow: center [64,64], footprint [96,96], nativeRadii [1.15,1.15], offset [-8,+14], opacity1 с исходной PNG alpha. Перенесены ровно четыре прежних source-полигона/sourceRect/anchors/native-depth. Существующий `src/main.mjs` не менялся; его blob совпадает с exact Lead input. Физика, config и проекция не менялись; private core для этого поручения не читался и не копировался.
+
+Выполнено только сравнение bytes/SHA256, PNG IHDR-размеров, значений полей и относительных ссылок. Первое строковое сравнение JSON остановилось на эквивалентных числах 627 и 627.0; последующее числовое сравнение подтвердило равенство без изменения данных. Это не runtime, selfcheck или QA PASS. Сцена не просмотрена. Runtime-запрет остаётся самостоятельной границей и не мешает сдаче этого data-only пакета.
+
+Старый `prepare-artist-probe.mjs` (blob `2131d11b656c3137a4444927f76ccdac49d87a15`), старый diagnostic manifest (SHA256 `e49f5fa1287e23956414c9629ae57ec940eed906009b630c12e6c955fc07a894`) и runtime-packet-01 не изменены. Их история не объявляется проверенным артом.
+
+Один read-only замер перед копированием малого готового пакета: C7.905743/D16.312515/E48.35675 GiB. Для source-файлов менее 1 MiB это не исчерпывает диск; прежний резерв 10 GiB не применялся. Активные C-original не трогались. После доставки нового source-only commit остановиться; новый запуск не поручен. Actual turn ID текущего handoff не показан интерфейсом, Lead может подтвердить его через wait_threads.
 
 ## История прежнего disk STOP: условие >=10 GiB недействующее
 
@@ -33,7 +45,7 @@ Temp/cache/output/staging/archive остаются только в `E:/R4D/persp
 
 Следующий шаг после нового основания Lead/CTO: свежий проходящий guard для конкретного пакета, запустить локальный сервер, получить кадры контактов. Лёгкий native selfcheck уже выполнен, результат ниже. Ассеты передаются отдельным manifest без правок worktree Artist. Приватные исходники, карты и credentials в tracked файлы не добавлять.
 
-## Малый стык и настоящая самопроверка
+## История малого стыка и настоящей самопроверки основы
 
 Artist exact `fc892908d54cd06a44eb785edea4a9c5b32e3c97` прочитан адресно из Git. Его commit не cherry-picked и ветка Artist не изменена. Adapter подготовил `E:/R4D/perspective/p2-runtime/output/builder/artist-probe-v1/manifest.json` и проверенную SHA256 отдельную тень. Четыре объекта: flower-01, leaf-01, frog-01, wood-01. Их exact source-полигоны ограничивают текстуру исходника; native-depth совпадает с config. Все видимые поверхности этих четырёх объектов исключены из слоя тени. Шар пока диагностический, финальной генерации нет.
 
@@ -60,3 +72,4 @@ E-config/flags были только подготовлены. Фактичес�
 - Кодовый checkpoint `a5cac8f7edda7aa2c7e21cafa12a27eaef9a7477` сохранён и pushed; далее добавлен адресный стык малого пакета Artist и выполнена описанная лёгкая native-проверка.
 - Ограниченный runtime-пакет отклонён инструментом до создания процесса; точный call и отсутствие фактического запуска сохранены выше.
 - 27 октября получено новое правило диска (>4 / <=4 / <=2 GiB); старый guard отмечен как недействующий и оставлен историей. Отдельный tool-policy запрет сохранён. Выполнено только обновление state, без runtime/QA, нового disk-check, cleanup или изменения безопасности.
+- Получен узкий SOURCE-ONLY handoff по готовому Artist v2: создан один versioned generic manifest с точными PNG, только сравнение данных. Старые diagnostic пакет/скрипт и consumer сохранены; runtime, тесты/QA, сервер/браузер не запускались.

@@ -2,7 +2,11 @@
 
 Основа отдельного локального стенда. Обязательства: [общий заказ](../../../orders/perspective/ORDER.md), [P2](../../../orders/perspective/P2-free-approach.md). Методы P3–P6 не использовались. Канонический R4D-вход `df760b680f0d0264342fc8577fcc5779b80a3a15`.
 
-## Запуск
+## Текущий source-only handoff
+
+Статус: **SOURCE_READY_RUNTIME_UNVERIFIED**. Единственный manifest для будущего просмотра — [source-packets/jungle-art-v2/manifest.json](source-packets/jungle-art-v2/manifest.json); точные готовые PNG лежат рядом. [Описание пакета](source-packets/jungle-art-v2/README.md) содержит SHA256, bytes и перенос полей Artist v2. Существующий generic consumer не менялся. Сцена не просмотрена, runtime не выполнен, P2 не закрыт. Этот handoff не разрешает запуск.
+
+## Историческая инструкция запуска diagnostic-основы
 
 Рабочая папка: `E:/R4D/perspective/p2-worktrees/builder/experiments/p2-free-approach/builder`. Node 24, установка пакетов и сборка не требуются. Перед разрешённым тяжёлым пакетом требуется свежий совокупный disk guard; эта инструкция его не отменяет.
 
