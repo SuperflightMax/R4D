@@ -1,0 +1,63 @@
+{
+  "schema": "r4d.p2.artist.ball-generation-run-record.v1",
+  "staffId": "asset-artist-r4d-p2-free-01",
+  "actualTurnId": null,
+  "actualTurnIdEvidence": "Not exposed; no substitute ID asserted",
+  "assetCount": 1,
+  "imagegenInvocationCount": 2,
+  "events": [
+    {
+      "event": "initial-generation",
+      "outputArtifactId": "exec-12c02b22-8c4f-4661-8723-537043b2e3cc",
+      "outputWrittenAtUtc": "2026-10-27T20:15:29.3016900Z",
+      "requestFile": "generation-request-v1.json",
+      "promptFile": "prompts/ball-v1.txt",
+      "promptSha256": "89550b55b48a06b197822769cf75c1fff22e1f1246c957213dd4bdbf542bd713",
+      "rawFile": "ball-v1.png",
+      "sha256": "8e3a9cc2251376736f789935e1f6acbb3df5a3b599d23c0c7ba2262f31b19679",
+      "metricsFile": "ball-v1.metrics.json",
+      "copyManifestFile": "ball-v1-copy-manifest.json",
+      "reasonForCorrection": "Canvas border contained alpha-1 dust; inner sphere min alpha251. Preserve visual art; request matte-only correction."
+    },
+    {
+      "event": "targeted-matte-correction",
+      "outputArtifactId": "exec-8c4da8f5-2fae-4f30-92fc-bd1c939b360b",
+      "outputWrittenAtUtc": "2026-10-27T20:19:17.6865051Z",
+      "requestFile": "generation-request-v2.json",
+      "promptFile": "prompts/ball-v2-matte-correction.txt",
+      "promptSha256": "5d0dec1cd097daaf3ce1cb153d6d3dd195bef8d7c01e069059ed4481812faf1e",
+      "rawFile": "ball-v2.png",
+      "sha256": "3484ec77027226f061bce2738972aed404455bb15c8c778fe5a3de6c7ffecfc3",
+      "metricsFile": "ball-v2.metrics.json",
+      "copyManifestFile": "ball-v2-copy-manifest.json",
+      "reasonForSelection": "Framing/light/material retained; canvas border fully clear and inner minimum alpha improved to252. Faint alpha1 dust in padding remains explicitly recorded; no further reroll."
+    }
+  ],
+  "selfReview": {
+    "selectedAsset": "ball-v2.png",
+    "reviewMethod": "Raw and E copy viewed; read-only raster/alpha measurements; unchanged Jungle viewed for material/light comparison. No browser/runtime/build/install/full QA.",
+    "volumeAndLight": "One nearly circular volumetric honey-gold sphere, soft upper-right highlight, lower-left shade and cool ambient fill. Material texture fits painted warm jungle ornaments; no baked external cast shadow.",
+    "shape": "832x829 sizing bounds; mean diameter830.5; maximum circle residual4.6465 texture px is about0.195 source px at35px display diameter. No independent axis scaling.",
+    "alphaResidual": "Outside105% radius max alpha1/255; inner80% disc min252/255. The matte correction improved border and opacity but did not produce mathematically perfect padding/interior.",
+    "sharpnessLimit": "The intended28–37px rendered appearance has not been inspected in the actual runtime; high-resolution texture and light direction alone do not prove scene integration.",
+    "shadow": "Separate unchanged128-square RGBA disc, alpha0..76, RGB35/36/20, native radius18.4 and offset[-8,+14]. Direction agrees with ball highlight and source shadows. Real contact/occlusion/density pending runtime.",
+    "artisticPassClaimed": false,
+    "status": "READY_ASSET_RUNTIME_UNVERIFIED"
+  },
+  "preservation": {
+    "firstAndCorrectedRawRetained": true,
+    "sourceJpgUnchanged": true,
+    "COriginalsRetained": true,
+    "newContoursAuthored": false,
+    "privateCoreReadOrCopied": false,
+    "runtimeToolRejectionRetried": false
+  },
+  "postPacketDiskObservation": {
+    "recordedAtUtc": "2026-10-27T20:22:08.605357+00:00",
+    "freeBytes": {
+      "C": 11022974976,
+      "E": 52110921728
+    },
+    "policy": "New Max rule; no cleanup or stop needed at observed space; no known single operation exhausts disk"
+  }
+}

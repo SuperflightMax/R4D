@@ -1,0 +1,51 @@
+{
+  "schema": "r4d.p2.artist.generation-packet.v3",
+  "recordedAtUtc": "2026-10-27T20:18:38.025390+00:00",
+  "actualTurnId": null,
+  "actualTurnIdEvidence": "Not exposed by current interface",
+  "purpose": "one targeted transparency-matte correction of the same single ball; preserve initial raw and metrics",
+  "initialOutputArtifactId": "exec-12c02b22-8c4f-4661-8723-537043b2e3cc",
+  "initialSha256": "8e3a9cc2251376736f789935e1f6acbb3df5a3b599d23c0c7ba2262f31b19679",
+  "reason": "Low-alpha pixels outside disc reach canvas border; sphere interior has alpha 251..255. Request zero-alpha padding and opaque interior without changing art.",
+  "promptPath": "prompts/ball-v2-matte-correction.txt",
+  "tool": "built-in image_gen.imagegen",
+  "transparentBackground": true,
+  "freshDiskAssessment": {
+    "freeBytes": {
+      "C": 11020652544,
+      "D": 17518616576,
+      "E": 52112830464
+    },
+    "freeGiB": {
+      "C": 10.263782501220703,
+      "D": 16.31548309326172,
+      "E": 48.53385543823242
+    },
+    "rule": "Max updated rule relayed at 20:04 UTC: observe >4 GiB, diagnose <=4, safe checkpoint <=2; never exhaust disk in known operation",
+    "unchangedCombinedCPeakGiB": 1.525,
+    "projectedCFreeAfterPeakGiB": 8.738782501220703,
+    "initialManagedCWriteIncluded": true,
+    "decision": "PROCEED_OBSERVE_GROWTH"
+  },
+  "referencedImagePaths": [
+    "C:\\Users\\user\\.codex\\generated_images\\01a17e5e-6d28-7fd2-b1d8-2734c32248ef\\exec-12c02b22-8c4f-4661-8723-537043b2e3cc.png"
+  ],
+  "toolInvocationPerformed": true,
+  "invocationStatus": "completed; selected for ready asset with explicitly retained alpha residuals; runtime unverified",
+  "toolIds": [
+    "exec-8c4da8f5-2fae-4f30-92fc-bd1c939b360b"
+  ],
+  "rawPaths": [
+    "C:\\Users\\user\\.codex\\generated_images\\01a17e5e-6d28-7fd2-b1d8-2734c32248ef\\exec-8c4da8f5-2fae-4f30-92fc-bd1c939b360b.png"
+  ],
+  "projectDestination": "experiments/p2-free-approach/asset-artist/ball-v2.png",
+  "stableEDestination": "E:/CodexGeneratedImages/projects/r4d/2026-10-27/p2-asset-artist-free-01/ball-v2/",
+  "sourceRetained": true,
+  "pixelEditingOutsideImagegenPerformed": false,
+  "toolIdKind": "output artifact ID; separate tool-call ID not exposed",
+  "promptSha256": "5d0dec1cd097daaf3ce1cb153d6d3dd195bef8d7c01e069059ed4481812faf1e",
+  "requestPath": "generation-request-v2.json",
+  "resultSha256": "3484ec77027226f061bce2738972aed404455bb15c8c778fe5a3de6c7ffecfc3",
+  "resultMetricsPath": "ball-v2.metrics.json",
+  "correctionResult": "Canvas border alpha is zero; low-alpha dust elsewhere remains <=1/255 outside 105% disc; inner 80% disc alpha >=252. No exact perfect-alpha claim."
+}
