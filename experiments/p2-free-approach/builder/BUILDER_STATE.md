@@ -14,6 +14,8 @@ CTO/Lead передали прямое решение Макса через до
 
 Первый read-only замер: C7.871078/D16.312206/E41.623604 GiB. Перед build будет свежая оценка ожидаемого пика. Ни release, ни root switch сейчас не выполняются. Старые остановки и source-only состояния ниже остаются историей и не отменяют это конкретное разрешение сборки.
 
+Первая ordinary build попытка из source `5c4bb7e9dbebb1e034e5414bdab7396af97ba4fe` в `E:/R4D/perspective/p2-runtime/output/p2-jungle-static-candidate-01` скомпилировала настоящий core (21962 bytes), но завершилась до freeze: поиск локальных путей ошибочно нашёл `e:\\` внутри стандартного `file:` URI-regex prebuilt Pixi. Это false positive статической проверки, не runtime/tool-policy отказ. Проверка уточнена до настоящего quoted/whitespace drive-prefix; deprecated legalComments option убран. Первый каталог и `output/builder/static-build-01.*.log` сохранены; исправленная сборка получит candidate-02. Физика, config, проекция и PNG неизменны.
+
 Этап 2 прямо выдан Lead. Код основы, малый стык Artist и отдельный source-only пакет готового Artist v2 подготовлены. Текущий статус нового пакета — SOURCE_READY_RUNTIME_UNVERIFIED. Прежняя лёгкая физическая проверка относится к основе; сервер и браузерная проверка не запускались. Ни полный technical PASS, ни artistic PASS не заявлены; P2 не закрыт.
 
 Принято для первого малого стыка: неподвижный исходный Jungle и его тени, отдельные ball/shadow, точные прозрачные накладки четырёх семейств. Переходы по depth проверяем на настоящих контактах, не объявляем доказанными заранее. Контракт — `ASSET_CONTRACT.md`.

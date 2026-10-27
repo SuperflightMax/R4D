@@ -65,7 +65,7 @@ await build({
       if(existsSync(target)) return target;
     }
   }}],
-  output:{file:path.join(browserRoot,'runtime/sim-core.mjs'),format:'esm',sourcemap:false,minify:true,comments:false,legalComments:'none'},
+  output:{file:path.join(browserRoot,'runtime/sim-core.mjs'),format:'esm',sourcemap:false,minify:true,comments:false},
 });
 unlinkSync(wrapper);
 const compiledCore=readFileSync(path.join(browserRoot,'runtime/sim-core.mjs'));
@@ -77,7 +77,7 @@ const files=collect(browserRoot).sort().map(relative=>{
   const bytes=readFileSync(path.join(browserRoot,relative));
   if(/\.(?:mjs|json|html|css|txt)$/.test(relative)) {
     const text=bytes.toString('utf8');
-    if(/sourceMappingURL|millionko-source|packages[\\/]sim-core[\\/]src|[CDEK]:[\\/]/i.test(text)) throw new Error(`Private/local source reference in ${relative}`);
+    if(/sourceMappingURL|millionko-source|packages[\\/]sim-core[\\/]src|(?:^|["'\s])[A-Z]:[\\/]/im.test(text)) throw new Error(`Private/local source reference in ${relative}`);
   }
   return {path:relative,bytes:bytes.length,sha256:sha256(bytes),kind:relative==='runtime/sim-core.mjs'?'authorized-private-compiled-runtime':'public-scene-or-asset'};
 });
