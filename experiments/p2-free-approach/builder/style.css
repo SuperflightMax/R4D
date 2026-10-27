@@ -1,0 +1,10 @@
+:root { color-scheme: dark; font: 15px/1.45 system-ui, sans-serif; background: #101a18; color: #ecf2e8; }
+body { margin: 0; } main { max-width: 1120px; margin: auto; padding: 16px; }
+header { display: flex; align-items: baseline; gap: 24px; } h1 { font-size: 23px; margin: 0 0 12px; }
+header p { color: #d7cba5; margin: 0; } nav, .row { display: flex; align-items: center; flex-wrap: wrap; gap: 10px; margin: 10px 0; }
+button, input, select { font: inherit; color: inherit; background: #233731; border: 1px solid #6c8974; border-radius: 5px; padding: 7px 10px; }
+button { cursor: pointer; } button:hover { background: #345143; } input[type=number] { width: 125px; } input[type=checkbox] { accent-color: #e9bc65; }
+#stage { height: min(77vh, 1000px); min-height: 400px; background: #182421; overflow: auto; border: 1px solid #43594b; }
+#stage canvas { display: block; } #status { display: block; padding: 10px 0; font-variant-numeric: tabular-nums; }
+details { border-top: 1px solid #43594b; padding-top: 10px; } summary { cursor: pointer; } pre { white-space: pre-wrap; font-size: 12px; }
+.error { color: #ffbcb1; } #save-status { color: #d7cba5; overflow-wrap: anywhere; }

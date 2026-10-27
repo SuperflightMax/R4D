@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>R4D P2 — Jungle</title><link rel="stylesheet" href="/style.css">
+  <script type="importmap">{"imports":{"pixi.js":"/vendor/pixi.mjs"}}</script>
+</head>
+<body>
+  <main>
+    <header><h1>P2 · Jungle</h1><p id="asset-status">Загрузка сцены…</p></header>
+    <nav aria-label="Просмотр">
+      <button id="random">Новый бросок</button><button id="replay">Повтор</button>
+      <button id="pause">Продолжить</button>
+      <label><input id="art" type="checkbox" checked> Арт</label>
+      <label><input id="geometry" type="checkbox" checked> Геометрия</label>
+      <label>Масштаб <select id="zoom"><option value="1">По размеру</option><option value="1.5">150%</option><option value="2">200%</option></select></label>
+    </nav>
+    <section id="stage" aria-label="Игровое поле"></section>
+    <output id="status" aria-live="polite"></output>
+    <details id="qa" open><summary>Проверка по физическим тикам</summary>
+      <div class="row"><button id="step1">+1 тик</button><button id="step10">+10 тиков</button><button id="step100">+100 тиков</button>
+        <label>Тик <input id="target" type="number" min="0" max="3200" value="0"></label><button id="seek">Показать</button></div>
+      <div class="row"><label>Seed <input id="seed" type="number" min="0" max="4294967295"></label><button id="load-seed">Повторить seed</button><button id="save">Сохранить повтор</button></div>
+      <label>Контакт <select id="contacts"><option value="">Пока нет контактов</option></select></label>
+      <p id="save-status"></p><pre id="state"></pre>
+    </details>
+  </main>
+  <script type="module" src="/src/main.mjs"></script>
+</body></html>
