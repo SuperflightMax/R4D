@@ -63,4 +63,14 @@ Exact файл-набор, bytes/SHA256, route-relative HTML/import/resource ref
 
 Нужен существующий разрешённый маршрут показа этих bytes; здесь не предлагается менять auth/nginx locations ради preview. Без такого маршрута browser-проверка остаётся непроведённой; static candidate уже пригоден для адресной передачи и чтения.
 
+## Дополнительная оценка встроенного file-preview
+
+CTO отдельно разрешил оценить file/встроенный preview exact нового bundle без старого Node server, изменения frozen bytes и нового сервиса/порта. Встроенный IAB выбран через `mcp__cua_repl`; личный Chrome не использовался. Действие `cua.createBrowserTab('iab', 'file:///E:/R4D/perspective/p2-runtime/output/p2-jungle-static-candidate-02/bundle/review/r4d/p2-free-approach/index.html?seed=1&paused=1', ...)` отклонено browser security policy. Дословная конкретная причина: **"The requested URL protocol is not allowed. Allowed protocols: \"http:\", \"https:\"."** Call ID инструмент не показал.
+
+Навигация и приложение не выполнились; снимка сцены и visual PASS нет. IAB оставил `about:blank` вкладку1, её состояние прочитано и она закрыта. Повтор, альтернативная browser surface, raw CDP, data/blob URL, инъекция кода или новый сервис как обход не предпринимались. Этот отказ ограничивает конкретный file-preview и не расширяется до запрета обычной сборки/штатного release. Для дальнейшего просмотра нужен существующий разрешённый HTTP(S) target; такой exact preview URL пока не предоставлен. Дополнительная оценка не меняла artifact, BUILD_MANIFEST или STATIC_CHECK.
+
+## Координация release-окна
+
+Первое общее Review release-окно зарезервировано за P2. Перед **любыми** server writes Lead передаёт CTO exact candidate/release intent и получает единственный token; до этого только build/freeze/read-only preflight. Token не получен. После него общие writes выполняются без параллельных изменений до postchecks и освобождения окна. Текущий live root берётся свежим; исторические roots не используются как актуальные. SSH/security configs/credentials не читались, alias/host не выдумывались; CTO запросил у Макса только несекретный указатель.
+
 Staff release-engineer прочитан на e9dfa0e32226e3f72de1f75e5c77a43d5ebfd9b3, R4D роль — из exact Lead base. Перед будущей внешней записью всё ещё обязательны действующие service/release инструкции, read-only сверка текущих live route/root/manifest, immutable release с сохранением других cards/auth, свежий rollback и только разрешённый штатный root switch + nginx -t + graceful reload. Исторические roots из release record не приняты за текущие. Внешних записей/публикации/root switch сейчас нет; отдельный exact gate Lead не получен.
