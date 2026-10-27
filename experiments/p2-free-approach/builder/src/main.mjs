@@ -1,4 +1,4 @@
-import { Application, Assets, Container, Graphics, Matrix, Sprite } from 'pixi.js';
+import { Application, Assets, Container, Graphics, Matrix, Rectangle, Sprite, Texture } from 'pixi.js';
 import * as core from '/private/core/index.js';
 import { Controller, randomSeed } from './controller.mjs';
 import { transform } from '../inputs/view-math.mjs';
@@ -21,6 +21,7 @@ async function main() {
   const provenance = { ...metadata, projection: accepted.projection, source: accepted.source };
   const sim = new Controller(core, config, provenance, requestedSeed);
   let paused = params.get('paused') === '1';
+  let knownContacts = [];
   let accumulator = 0, runCounter = 0, contactSignature = '', lastSaved = '';
   const observations = [];
   let runId = `observed-${++runCounter}`;
@@ -56,12 +57,21 @@ async function main() {
     const bucket = config.board.buckets.find(bucket => bucket.id === item.id);
     const depth = item.depthNativeY ?? pin?.y ?? bucket?.y;
     if (!Number.isFinite(depth)) throw new Error(`Occluder needs accepted collider id or depthNativeY: ${item.id}`);
-    const texture = await Assets.load(sourceFile(item.file));
+    const texture = item.fileRole === 'source'
+      ? new Texture({ source: base.texture.source, frame: new Rectangle(...item.sourceRect) })
+      : await Assets.load(sourceFile(item.file));
     const makePatch = container => {
       const sprite = new Sprite(texture);
       const [x, y, width, height] = item.sourceRect;
       sprite.position.set(x, y); sprite.width = width; sprite.height = height;
-      container.addChild(sprite); return sprite;
+      container.addChild(sprite);
+      if (item.polygonRectLocalPx) {
+        const mask = new Graphics().poly(item.polygonRectLocalPx.flat()).fill(0xffffff);
+        mask.position.set(x, y);
+        container.addChild(mask);
+        sprite.mask = mask;
+      }
+      return sprite;
     };
     occluders.push({ id: item.id, depth, ball: makePatch(ballOcclusion), shadow: makePatch(shadowOcclusion) });
   }
@@ -95,16 +105,18 @@ async function main() {
     const ball = sim.state.ball.pos, r = config.board.ball.r, point = project(ball);
     const right = project({ x: ball.x + r, y: ball.y }), left = project({ x: ball.x - r, y: ball.y });
     const radiusPx = Math.hypot(right.x - left.x, right.y - left.y) / 2;
-    const lift = radiusPx * (art.ball?.liftRadii ?? 0.8);
+    const dy = project({ x: ball.x, y: ball.y+1 }).y - project({ x: ball.x, y: ball.y-1 }).y;
+    const k = dy / 2 / (radiusPx/r);
+    const lift = radiusPx * (art.ball?.liftRadii ?? Math.sqrt(Math.max(0, 1-k*k)));
     const isArt = $('art').checked;
     base.visible = isArt; shadowLayer.visible = isArt; shadowOcclusion.visible = isArt; ballOcclusion.visible = isArt;
-    marker.clear();
+    marker.clear(); marker.visible = isArt && !ballSprite;
     if (ballSprite) {
       ballSprite.visible = isArt;
       ballSprite.position.set(point.x, point.y - lift);
       ballSprite.scale.set(2 * radiusPx / art.ball.diameterPx);
     }
-    if (!ballSprite || !isArt) marker.circle(point.x, point.y, radiusPx).stroke({ color: 0xffdc5b, width: 3 });
+    if (!ballSprite) marker.circle(point.x, point.y-lift, radiusPx).stroke({ color: 0xffdc5b, width: 3 });
     const shadowPosition = { x: ball.x + (art.shadow?.offsetNative?.[0] ?? 8), y: ball.y + (art.shadow?.offsetNative?.[1] ?? 12) };
     if (shadowSprite) {
       const p = project(shadowPosition), px = project({ x: shadowPosition.x + 1, y: shadowPosition.y }), py = project({ x: shadowPosition.x, y: shadowPosition.y + 1 });
@@ -114,7 +126,9 @@ async function main() {
     }
     for (const patch of occluders) {
       patch.ball.visible = ball.y < patch.depth;
-      patch.shadow.visible = shadowPosition.y < patch.depth;
+      // The floor shadow never paints any visible object surface. This pass is
+      // below the ball, so it cannot hide a foreground ball with the same patch.
+      patch.shadow.visible = true;
     }
     // Both the collision path and geometry are above every artistic occluder.
     diagnostic.clear(); diagnostic.visible = $('geometry').checked;
@@ -135,11 +149,14 @@ async function main() {
       circlePath(diagnostic, ball, r, 0xffdc5b, 3);
     }
     const contacts = sim.contacts;
-    const signature = contacts.map(c => `${c.objectId}:${c.observedAtTick}`).join(',');
+    for (const event of contacts) {
+      if (!knownContacts.some(c => c.objectId === event.objectId && c.observedAtTick === event.observedAtTick)) knownContacts.push(structuredClone(event));
+    }
+    const signature = knownContacts.map(c => `${c.objectId}:${c.observedAtTick}`).join(',');
     if (signature !== contactSignature) {
       contactSignature = signature;
       $('contacts').replaceChildren(new Option('Выбрать контакт', ''));
-      for (const event of contacts) $('contacts').add(new Option(`${event.observedAtTick}: ${event.objectKind} ${event.objectId}`, String(event.observedAtTick)));
+      for (const event of knownContacts) $('contacts').add(new Option(`${event.observedAtTick}: ${event.objectKind} ${event.objectId}`, String(event.observedAtTick)));
     }
     const result = sim.state.result ? ` · ${sim.state.result.kind}${sim.state.result.bucketId ? ' '+sim.state.result.bucketId : ''}` : '';
     $('status').textContent = `Seed ${sim.seed} · тик ${sim.state.tick} · ${(sim.state.tick*config.defaults.tickMs/1000).toFixed(3)} с · контактов ${contacts.length}${result}`;
@@ -169,7 +186,7 @@ async function main() {
   }
   function start(seed, reason) {
     record('superseded'); sim.reset(seed); runId = `observed-${++runCounter}`;
-    accumulator = 0; contactSignature = ''; lastSaved = ''; record(reason); render();
+    accumulator = 0; contactSignature = ''; knownContacts = []; lastSaved = ''; record(reason); render();
   }
   function step(count) { paused = true; accumulator = 0; sim.advance(count); render(); return sim.snapshot(); }
   function seek(tick) { paused = true; accumulator = 0; sim.seek(tick); contactSignature = ''; render(); return sim.snapshot(); }
