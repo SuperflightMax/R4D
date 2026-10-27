@@ -5,7 +5,9 @@
   "scripts": {
     "prepare:inputs": "node scripts/prepare-inputs.mjs",
     "check": "node scripts/selfcheck.mjs",
-    "serve": "node scripts/serve.mjs"
+    "serve": "node scripts/serve.mjs",
+    "build:static": "node scripts/build-static.mjs",
+    "check:static": "node scripts/check-static.mjs"
   },
   "engines": { "node": ">=24" }
 }

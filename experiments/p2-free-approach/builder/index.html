@@ -2,12 +2,13 @@
 <html lang="ru">
 <head>
   <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
-  <title>R4D P2 — Jungle</title><link rel="stylesheet" href="/style.css">
-  <script type="importmap">{"imports":{"pixi.js":"/vendor/pixi.mjs"}}</script>
+  <title>R4D P2 — Jungle</title><link rel="stylesheet" href="./style.css">
+  <script type="importmap">{"imports":{"pixi.js":"./vendor/pixi.mjs"}}</script>
 </head>
 <body>
   <main>
     <header><h1>P2 · Jungle</h1><p id="asset-status">Загрузка сцены…</p></header>
+    <p>Пробный результат: перекрытия подготовлены только для четырёх объектов. Остальные препятствия, ограда и бортики корзин пока без накладок; художественное качество движения не подтверждено.</p>
     <nav aria-label="Просмотр">
       <button id="random">Новый бросок</button><button id="replay">Повтор</button>
       <button id="pause">Продолжить</button>
@@ -22,8 +23,8 @@
         <label>Тик <input id="target" type="number" min="0" max="3200" value="0"></label><button id="seek">Показать</button></div>
       <div class="row"><label>Seed <input id="seed" type="number" min="0" max="4294967295"></label><button id="load-seed">Повторить seed</button><button id="save">Сохранить повтор</button></div>
       <label>Контакт <select id="contacts"><option value="">Пока нет контактов</option></select></label>
-      <p id="save-status"></p><pre id="state"></pre>
+      <p id="save-status">«Сохранить повтор» скачивает JSON с seed, конфигурацией и наблюдавшимися запусками.</p><pre id="state"></pre>
     </details>
   </main>
-  <script type="module" src="/src/main.mjs"></script>
+  <script type="module" src="./src/main.mjs"></script>
 </body></html>
