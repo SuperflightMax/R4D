@@ -1,0 +1,65 @@
+{
+  "schema": "r4d.p2.artist.generation-packet.v2",
+  "recordedAtUtc": "2026-10-27T20:15:02.761882+00:00",
+  "staffId": "asset-artist-r4d-p2-free-01",
+  "actualTurnId": null,
+  "actualTurnIdEvidence": "Current interface does not expose the actual turn ID; not inferred from other IDs.",
+  "scope": "one own transparent raster ball; built-in image_gen only; no runtime, browser, install, build, full QA or further contours",
+  "authority": "Direct Max disk-policy update relayed through trusted Dot to CTO at 20:04 UTC on 2026-10-27; addressed Lead production instruction.",
+  "historicalPacket": "generation-packet-v1.json",
+  "historicalPacketUnchanged": true,
+  "historicalConditionInvalidated": "The old post-peak >=10 GiB guard and minimum C free 11.525 GiB no longer apply; old STOP retained as history only.",
+  "freshDiskAssessment": {
+    "recordedAtUtc": "2026-10-27T20:15:02.761882+00:00",
+    "freeBytes": {
+      "C": 11034976256,
+      "D": 17519792128,
+      "E": 52114989056
+    },
+    "freeGiB": {
+      "C": 10.277122497558594,
+      "D": 16.316577911376953,
+      "E": 48.535865783691406
+    },
+    "rule": {
+      "above4GiB": "observe growth; no disk-only stop or cleanup",
+      "atMost4GiB": "warning and diagnose",
+      "atMost2GiB": "safe checkpoint and stop own work for review",
+      "neverStart": "a known individual peak that exhausts available space"
+    },
+    "unchangedCombinedCPeakGiB": 1.525,
+    "includesInitialManagedCImageOutput": true,
+    "basisGiB": {
+      "P2HistorySQLite": 1.25,
+      "UGHWithMargin": 0.11,
+      "coordinationWithMargin": 0.055,
+      "managedImageWithMargin": 0.11
+    },
+    "projectedCFreeAfterPeakGiB": 8.752122497558593,
+    "operationKnownToExhaustDisk": false,
+    "decision": "PROCEED_OBSERVE_GROWTH"
+  },
+  "tool": "built-in image_gen.imagegen",
+  "promptPath": "prompts/ball-v1.txt",
+  "promptSha256": "89550b55b48a06b197822769cf75c1fff22e1f1246c957213dd4bdbf542bd713",
+  "requestPath": "generation-request-v1.json",
+  "requestedOutputCount": 1,
+  "transparentBackground": true,
+  "toolInvocationPerformed": true,
+  "invocationStatus": "completed initial generation; alpha self-review requests one narrow matte correction",
+  "toolIds": [
+    "exec-12c02b22-8c4f-4661-8723-537043b2e3cc"
+  ],
+  "rawPaths": [
+    "C:\\Users\\user\\.codex\\generated_images\\01a17e5e-6d28-7fd2-b1d8-2734c32248ef\\exec-12c02b22-8c4f-4661-8723-537043b2e3cc.png"
+  ],
+  "modelSeedAndPreset": "not exposed; not guessed",
+  "finalStableEDestination": "E:/CodexGeneratedImages/projects/r4d/2026-10-27/p2-asset-artist-free-01/ball-v1/",
+  "projectDestination": "experiments/p2-free-approach/asset-artist/ball-v1.png",
+  "heavyRuntimeRoot": "E:/R4D/perspective/p2-runtime/asset-artist/",
+  "handoff": "At checkpoint copy raw to E with byte/hash/timestamp/ordinary attribute verification and source-to-destination manifest; retain active C originals.",
+  "otherToolPolicyRejection": "call_7b166cdf46834d468b5f9c297aad6e9f remains closed; no retry or alternate runtime path.",
+  "toolIdKind": "output artifact ID from built-in result; separate tool-call ID not exposed",
+  "resultSha256": "8e3a9cc2251376736f789935e1f6acbb3df5a3b599d23c0c7ba2262f31b19679",
+  "resultMetricsPath": "ball-v1.metrics.json"
+}

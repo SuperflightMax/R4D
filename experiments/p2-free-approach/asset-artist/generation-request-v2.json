@@ -1,0 +1,7 @@
+{
+  "prompt": "Use case: background-extraction\nAsset type: correction of the existing single transparent Jungle game-ball sprite.\nEdit target: the provided raster ball image only.\nPrimary request: change only the transparency matte. Preserve the same round honey-gold sphere, its size and centered position, warm highlight on the upper right, darker olive-brown lower left, material and painted texture. Do not redesign or add details.\nTransparency correction: the entire padding outside the circular sphere must have alpha exactly zero, with no haze, dust, stray low-alpha pixels, edge fragments or colored background. All pixels safely inside the sphere must be fully opaque alpha 255. Preserve only a narrow smooth antialiased alpha transition at the circular silhouette. Keep the full circle and ample transparent padding on every side.\nConstraints: exactly one unchanged sphere, genuine transparent alpha background. No floor, cast shadow, contact shadow, glow, trail, labels, decorations, watermark, checkerboard, border or other objects. Preserve the existing canvas framing; do not crop the sphere.\n",
+  "transparent_background": true,
+  "referenced_image_paths": [
+    "C:\\Users\\user\\.codex\\generated_images\\01a17e5e-6d28-7fd2-b1d8-2734c32248ef\\exec-12c02b22-8c4f-4661-8723-537043b2e3cc.png"
+  ]
+}
