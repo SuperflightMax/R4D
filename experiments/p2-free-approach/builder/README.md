@@ -4,6 +4,8 @@
 
 ## Текущая статическая сборка P2
 
+Готов один [frozen candidate-02](STATIC_CANDIDATE_02.md): source `5f40f6692dc5e7238afc961a2e0afa826cdefc9b`, 15 файлов / 2448166 bytes, полный manifest/provenance на E. Статус FROZEN_PENDING_INDEPENDENT_QA. Реальный browser preview до root switch пока не доступен по подтверждённому маршруту; публикации нет.
+
 28 октября получено новое поручение CTO/Lead: самостоятельный static bundle для `/review/r4d/p2-free-approach/`, затем независимые проверки одного frozen candidate и отдельный exact release gate Lead. Исходный art по умолчанию — Jungle v2. Все ресурсы относительны route. Повторы сохраняются явным скачиванием JSON; random/replay не зависят от API. Только четыре прежние накладки остаются известным ограничением.
 
 `scripts/build-static.mjs` использует имеющиеся Pixi8.22.0 и Rolldown1.2.15, принимает явные `--output`, `--version`, `--core-root`, `--pixi-root`, `--bundler-root`, `--source`. Output должен быть новым каталогом внутри P2 runtime на E; повторная запись кандидата запрещена. Перед сборкой требуется чистый source commit и проверяются pinned inputs/core. Настоящее неизменённое ядро компилируется отдельно в `runtime/sim-core.mjs`; TS, maps и локальные пути в browser tree не попадают. Приватный compiled runtime хранится только в E artifact, не в публичном Git. Pixi MIT license включается.
