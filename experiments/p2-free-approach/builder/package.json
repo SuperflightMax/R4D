@@ -1,0 +1,11 @@
+{
+  "name": "r4d-p2-builder",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "prepare:inputs": "node scripts/prepare-inputs.mjs",
+    "check": "node scripts/selfcheck.mjs",
+    "serve": "node scripts/serve.mjs"
+  },
+  "engines": { "node": ">=24" }
+}
