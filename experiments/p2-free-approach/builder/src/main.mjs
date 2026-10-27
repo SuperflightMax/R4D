@@ -1,9 +1,11 @@
 import { Application, Assets, Container, Graphics, Matrix, Rectangle, Sprite, Texture } from 'pixi.js';
-import * as core from '/private/core/index.js';
+import * as core from '../runtime/sim-core.mjs';
 import { Controller, randomSeed } from './controller.mjs';
 import { transform } from '../inputs/view-math.mjs';
 
 const $ = id => document.getElementById(id);
+const routeBase = new URL('../', import.meta.url);
+const resource = relative => new URL(relative, routeBase).href;
 const json = async url => {
   const response = await fetch(url);
   if (!response.ok) throw new Error(`${url}: ${response.status}`);
@@ -12,7 +14,7 @@ const json = async url => {
 
 async function main() {
   const [config, accepted, metadata, art] = await Promise.all([
-    json('/inputs/config.json'), json('/inputs/manifest.json'), json('/metadata.json'), json('/assets/manifest.json'),
+    json(resource('inputs/config.json')), json(resource('inputs/manifest.json')), json(resource('metadata.json')), json(resource('assets/manifest.json')),
   ]);
   if (JSON.stringify(art.sourceSize) !== '[1536,1536]') throw new Error('Asset sourceSize must match accepted Jungle');
   const project = point => transform(accepted.projection.nativeToSource, point);
@@ -31,12 +33,12 @@ async function main() {
   stage.appendChild(app.canvas);
   const scene = new Container();
   app.stage.addChild(scene);
-  const base = new Sprite(await Assets.load('/source/01-jungle.jpg'));
+  const base = new Sprite(await Assets.load(resource('source/01-jungle.jpg')));
   scene.addChild(base);
   const shadowLayer = new Container(), shadowOcclusion = new Container(), ballLayer = new Container(), ballOcclusion = new Container();
   const diagnostic = new Graphics();
   scene.addChild(shadowLayer, shadowOcclusion, ballLayer, ballOcclusion, diagnostic);
-  const sourceFile = file => '/assets/files/' + file.split('/').map(encodeURIComponent).join('/');
+  const sourceFile = file => resource('assets/files/' + file.split('/').map(encodeURIComponent).join('/'));
   let ballSprite, shadowSprite;
   const marker = new Graphics();
   ballLayer.addChild(marker);
@@ -176,13 +178,16 @@ async function main() {
     else observations[i] = { ...(previous.tick > item.tick ? previous : item), inspectedTicks };
     return item;
   }
-  async function save(reason = 'manual') {
+  function save(reason = 'manual') {
     record(reason);
-    const response = await fetch('/api/checkpoint', { method: 'POST', headers: {'Content-Type':'application/json'}, body: JSON.stringify({ schema:'r4d.p2.checkpoint.v1', reason, observations, artManifest: art }) });
-    if (!response.ok) throw new Error(await response.text());
-    const saved = await response.json();
-    $('save-status').textContent = `Повтор сохранён: ${saved.saved}`;
-    return saved;
+    const checkpoint = { schema:'r4d.p2.checkpoint.v1', reason, observations:structuredClone(observations), artManifest:structuredClone(art) };
+    const filename = `r4d-p2-seed-${sim.seed}-tick-${sim.state.tick}.json`;
+    const url = URL.createObjectURL(new Blob([JSON.stringify(checkpoint,null,2)+'\n'], {type:'application/json'}));
+    const link = document.createElement('a');
+    link.href = url; link.download = filename; document.body.appendChild(link);
+    link.click(); link.remove(); setTimeout(() => URL.revokeObjectURL(url), 1000);
+    $('save-status').textContent = `JSON передан браузеру для скачивания: ${filename}`;
+    return { filename, checkpoint };
   }
   function start(seed, reason) {
     record('superseded'); sim.reset(seed); runId = `observed-${++runCounter}`;
@@ -190,13 +195,13 @@ async function main() {
   }
   function step(count) { paused = true; accumulator = 0; sim.advance(count); render(); return sim.snapshot(); }
   function seek(tick) { paused = true; accumulator = 0; sim.seek(tick); contactSignature = ''; render(); return sim.snapshot(); }
-  $('random').onclick = async () => { await save('before-new-random'); start(randomSeed(), 'ordinary-random'); paused = false; render(); };
-  $('replay').onclick = async () => { await save('before-replay'); const seed = sim.seed; start(seed, 'replay'); paused = false; render(); };
+  $('random').onclick = () => { start(randomSeed(), 'ordinary-random'); paused = false; render(); };
+  $('replay').onclick = () => { const seed = sim.seed; start(seed, 'replay'); paused = false; render(); };
   $('pause').onclick = () => { paused = !paused; accumulator = 0; render(); };
   $('step1').onclick = () => step(1); $('step10').onclick = () => step(10); $('step100').onclick = () => step(100);
   $('seek').onclick = () => seek(Number($('target').value));
-  $('load-seed').onclick = async () => { const seed = Number($('seed').value); await save('before-explicit-seed'); start(seed, 'explicit-seed'); paused = true; render(); };
-  $('save').onclick = () => save().catch(showError);
+  $('load-seed').onclick = () => { const seed = Number($('seed').value); start(seed, 'explicit-seed'); paused = true; render(); };
+  $('save').onclick = () => { try { save(); } catch(error) { showError(error); } };
   $('contacts').onchange = () => { if ($('contacts').value) seek(Number($('contacts').value)); };
   $('art').onchange = render; $('geometry').onchange = render;
   for (const field of [$('seed'), $('target')]) field.onfocus = () => { paused = true; accumulator = 0; render(); };
@@ -208,7 +213,8 @@ async function main() {
     }
     if (sim.state.done && lastSaved !== `${runId}:${sim.state.tick}`) {
       lastSaved = `${runId}:${sim.state.tick}`;
-      save('completed').catch(showError);
+      record('completed');
+      $('save-status').textContent = 'Запуск завершён. «Сохранить повтор» скачивает JSON всех наблюдавшихся запусков.';
     }
   });
   window.addEventListener('unhandledrejection', event => showError(event.reason));

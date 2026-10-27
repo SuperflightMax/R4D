@@ -2,9 +2,19 @@
 
 Основа отдельного локального стенда. Обязательства: [общий заказ](../../../orders/perspective/ORDER.md), [P2](../../../orders/perspective/P2-free-approach.md). Методы P3–P6 не использовались. Канонический R4D-вход `df760b680f0d0264342fc8577fcc5779b80a3a15`.
 
-## Текущий source-only handoff
+## Текущая статическая сборка P2
 
-Статус: **SOURCE_READY_RUNTIME_UNVERIFIED**. Единственный manifest для будущего просмотра — [source-packets/jungle-art-v2/manifest.json](source-packets/jungle-art-v2/manifest.json); точные готовые PNG лежат рядом. [Описание пакета](source-packets/jungle-art-v2/README.md) содержит SHA256, bytes и перенос полей Artist v2. Существующий generic consumer не менялся. Сцена не просмотрена, runtime не выполнен, P2 не закрыт. Этот handoff не разрешает запуск.
+28 октября получено новое поручение CTO/Lead: самостоятельный static bundle для `/review/r4d/p2-free-approach/`, затем независимые проверки одного frozen candidate и отдельный exact release gate Lead. Исходный art по умолчанию — Jungle v2. Все ресурсы относительны route. Повторы сохраняются явным скачиванием JSON; random/replay не зависят от API. Только четыре прежние накладки остаются известным ограничением.
+
+`scripts/build-static.mjs` использует имеющиеся Pixi8.22.0 и Rolldown1.2.15, принимает явные `--output`, `--version`, `--core-root`, `--pixi-root`, `--bundler-root`, `--source`. Output должен быть новым каталогом внутри P2 runtime на E; повторная запись кандидата запрещена. Перед сборкой требуется чистый source commit и проверяются pinned inputs/core. Настоящее неизменённое ядро компилируется отдельно в `runtime/sim-core.mjs`; TS, maps и локальные пути в browser tree не попадают. Приватный compiled runtime хранится только в E artifact, не в публичном Git. Pixi MIT license включается.
+
+`BUILD_MANIFEST.json` находится вне browser tree: source commit, provenance, точные bytes/SHA256 всех файлов и tree digest. `scripts/check-static.mjs --artifact <E artifact>` проверяет exact файл-набор, относительные ресурсы, default art/config и реальные траектории уже скомпилированного ядра против прежнего pinned native baseline. Это не просмотр Pixi, не проверка download через браузер и не независимый QA.
+
+Старый `serve.mjs` и отклонённый Windows server/browser packet не используются и не являются способом проверки. Нового сервиса/порта нет. Подтверждённый существующий маршрут просмотра frozen candidate до root switch пока не установлен; protected Review и его auth не менялись. До gate нет внешней записи. Точные artifact paths и результаты находятся в рабочем состоянии после сборки.
+
+## История source-only handoff
+
+Исторический статус данных: **SOURCE_READY_RUNTIME_UNVERIFIED**. Source manifest — [source-packets/jungle-art-v2/manifest.json](source-packets/jungle-art-v2/manifest.json); точные готовые PNG лежат рядом. [Описание пакета](source-packets/jungle-art-v2/README.md) содержит SHA256, bytes и перенос полей Artist v2. Этот пакет сохранён; browser manifest статического кандидата выводится из него с актуальной source provenance. Сцена не просмотрена, P2 не закрыт.
 
 ## Историческая инструкция запуска diagnostic-основы
 
