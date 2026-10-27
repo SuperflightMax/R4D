@@ -1,0 +1,50 @@
+{
+  "schema": "r4d.p2.artist.generation-packet.v1",
+  "recordedAtUtc": "2026-10-27T17:37:17.395685+00:00",
+  "intent": "one own transparent raster ball; no source-scene modification",
+  "promptPath": "prompts/ball-v1.txt",
+  "promptSha256": "89550b55b48a06b197822769cf75c1fff22e1f1246c957213dd4bdbf542bd713",
+  "tool": "built-in image_gen.imagegen",
+  "transparentBackground": true,
+  "referenceImages": [],
+  "requestedOutputCount": 1,
+  "toolInvocationPerformed": false,
+  "rawPaths": [],
+  "toolIds": [],
+  "modelAndSeed": "not exposed; not guessed",
+  "finalManagedCopyDestination": "E:/CodexGeneratedImages/projects/r4d/2026-10-27/p2-asset-artist-free-01/ball-v1/",
+  "projectDestination": "experiments/p2-free-approach/asset-artist/ball-v1.png",
+  "heavyRuntimeRoot": "E:/R4D/perspective/p2-runtime/asset-artist/",
+  "diskGuard": {
+    "observedFreeGiB": {
+      "C": 11.409805297851562,
+      "D": 16.31747055053711,
+      "E": 48.862327575683594
+    },
+    "observedFreeBytes": {
+      "C": 12251185152,
+      "D": 17520750592,
+      "E": 52465524736
+    },
+    "measurementSource": "earlier stage-2 read-only preflight; C/E latest observation, D initial observation; not a fresh generation guard",
+    "newDiskMeasurementPerformedByThisScript": false,
+    "reserveGiB": 10,
+    "combinedCPeakGiB": 1.525,
+    "basisGiB": {
+      "P2HistorySQLite": 1.25,
+      "UGHWithMargin": 0.11,
+      "coordinationWithMargin": 0.055,
+      "managedImageWithMargin": 0.11
+    },
+    "concurrentScope": "Lead-provided current bounded scope; do not lower history budget",
+    "minimumCFreeGiB": 11.525,
+    "afterCombinedCPeakGiB": 9.884805297851562,
+    "missingCHeadroomGiB": 0.11519470214843786,
+    "decision": "STOP_GENERATION_PACKET",
+    "leadClosedGeneration": true
+  },
+  "invocationAllowedByThisRecordAlone": false,
+  "preservation": "No global TEMP/TMP/CODEX_HOME changes, no cleanup, no active image migration. Initial managed C write counted. Copy only at checkpoint with bytes/hash/timestamps/attributes and manifest; keep active C originals.",
+  "generationAvailable": false,
+  "whyNoFinishedBall": "No invocation; generation requires a fresh passing guard and known current combined scope."
+}

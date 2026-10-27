@@ -1,0 +1,98 @@
+{
+  "schema": "r4d.p2.artist.ball-raster-metrics.v1",
+  "assetPath": "ball-v1.png",
+  "sha256": "8e3a9cc2251376736f789935e1f6acbb3df5a3b599d23c0c7ba2262f31b19679",
+  "bytes": 925440,
+  "format": "PNG",
+  "mode": "RGBA",
+  "canvasPx": [
+    1254,
+    1254
+  ],
+  "coordinateConvention": "bounds [left,top,right,bottom] right/bottom exclusive; pixel centers at x+0.5/y+0.5",
+  "alpha": {
+    "range": [
+      0,
+      255
+    ],
+    "fullyTransparentPixelCount": 1027246,
+    "partiallyTransparentPixelCount": 545069,
+    "fullyOpaquePixelCount": 201,
+    "canvasBorderAllTransparent": false,
+    "boundsByMinimumAlpha": {
+      "1": [
+        0,
+        0,
+        1240,
+        1254
+      ],
+      "16": [
+        212,
+        215,
+        1042,
+        1044
+      ],
+      "128": [
+        213,
+        216,
+        1042,
+        1044
+      ],
+      "250": [
+        214,
+        217,
+        1041,
+        1043
+      ],
+      "254": [
+        224,
+        225,
+        1032,
+        1040
+      ],
+      "255": [
+        234,
+        225,
+        1032,
+        1011
+      ]
+    },
+    "inner80PercentRadiusMinimumAlpha": 251,
+    "outside105PercentRadiusMaximumAlpha": 1,
+    "outside105PercentRadiusPixelsAtLeastAlpha16": 0
+  },
+  "usableDisc": {
+    "minimumAlphaForSizing": 128,
+    "centerPx": [
+      627.5,
+      630.0
+    ],
+    "diameterPx": 828.5,
+    "widthPx": 829,
+    "heightPx": 828,
+    "canvasAnchorNormalized": [
+      0.5003987240829346,
+      0.5023923444976076
+    ],
+    "displayScaleRule": "screen pixels per texture pixel = (2*16/wProjection)/diameterPx; uniform XY",
+    "sphereCenterAnchor": true,
+    "alphaBoundaryVsCircleAbsResidualPx": {
+      "median": 1.7112139446764445,
+      "p95": 3.57098909245434,
+      "maximum": 4.337509338883422
+    }
+  },
+  "lightMeasurement": {
+    "region": "alpha>=250 annulus radius .15 to .75 of usable disc",
+    "meanRec709EncodedRGBLumaByQuadrant": {
+      "upperLeft": 162.35237465141566,
+      "upperRight": 213.64935590946502,
+      "lowerLeft": 97.2672546337972,
+      "lowerRight": 149.13620542386832
+    },
+    "physicalRadianceClaimed": false
+  },
+  "pixelProcessingPerformed": false,
+  "rawAndUsablePNGIdentical": true,
+  "runtimeOrMotionReviewed": false
+}
