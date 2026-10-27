@@ -1,6 +1,6 @@
 # Состояние исследования перспективных досок
 
-Обновлено: 27 октября 2026, Europe/Kyiv. Канонический заказ: [orders/perspective/ORDER.md](../orders/perspective/ORDER.md), редакция 4, ветка `main`.
+Обновлено: 28 октября 2026, Europe/Kyiv. Канонический заказ: [orders/perspective/ORDER.md](../orders/perspective/ORDER.md), редакция 4, ветка `main`.
 
 ## Действующие условия диска — правило Макса 27 октября, 20:04 UTC
 
@@ -26,7 +26,7 @@ P0 выполнен и одобрен Максом; его приёмка сох
 | --- | --- | --- |
 | P0 | Выполнен и одобрен Максом, по его прямому сообщению 26 октября | Переход к P1 уже состоялся; принятые результаты сохраняются |
 | P1 | Новый повтор принят Максом 27 октября; прежняя попытка остаётся отклонённой | Передать версию маппинга и проекции, начать P2 без новой приёмки шарика или тени |
-| P2 | Подготовительный пакет и планы QA доставлены; native selfcheck пройден. Собственный rasterball изготовлен, прошёл self-review Artist и передан с отдельной тенью/manifest. Сцена/перекрытия в браузере не проверены | Независимый арт-пакет выполнен. Runtime call остаётся отклонённым; финальная QA, публикация/deploy и следующие этапы не открыты |
+| P2 | Арт изготовлен; новый пакет данных для существующего consumer подготовлен и интегрирован. Статус SOURCE_READY_RUNTIME_UNVERIFIED. Сцена/перекрытия в браузере не проверены | Source-only пакет выполнен. Runtime call остаётся отклонённым; финальная QA, публикация/deploy и следующие этапы не открыты |
 | P3–P6 | Общая очередь согласована, этой команде этапы закрыты и старт не поручен | Следующие независимые команды и переходы организует CTO |
 | Повтор успешных способов | Разрешён 27 октября после исходных пяти опытов и сравнения | Те же успешные команды применяют свои методы к обеим `04-water-temple.jpg` и `02-dark-temple.jpg`; публикуют результаты и обновляют сравнение |
 | P0+ | Разрешён и остаётся последним | После этапа повторов и обновления сравнения — новая независимая команда на фиксированной паре 01 и 04; по результату завершить очередь |
@@ -98,6 +98,22 @@ Artist выбрал второй raw после улучшения alpha кра�
 Адресный source-only пакет, 21:55 UTC: CTO по поручению Макса через доверенный Dot разрешил только исходную интеграцию готовых ball-v2/shadow в один версионированный manifest/пакет данных для существующего generic consumer. Поручение выдано единственному существующему Builder, actual turn `01a17f5c-aee5-7e23-942b-d9bb4a020ae9`; первый read-only command завершён. Lead подтвердил исходные HEAD `5b4b015dcdf5c8553ec348976698c07186989551`, свою ветку и чистый status. Замер C7.906254/D16.312515/E48.356750 GiB выше действующего порога 4 GiB; прежний резерв 10 GiB не применяется.
 
 Разрешены apply_patch текстовых исходников/manifest, точные копии готовых PNG и read-only сверка bytes/SHA/полей/относительных путей; staging при необходимости — только данные в отдельном versioned каталоге `E:\R4D\perspective\p2-runtime\output`. Старые diagnostic script/manifest/packet сохраняются неизменными, четыре текущих occluders не расширяются. Prepare/serve/selfcheck, install/build, симуляция, тесты/QA, сервер/браузер или иной runtime-процесс не разрешены. Source-only не используется как оболочка ранее отклонённой операции; новый runner/сессия, sensitive policy/config reads, permissions/credentials/private core не требуются и не открываются. Ожидаемый статус ограниченного пакета `SOURCE_READY_RUNTIME_UNVERIFIED`; на момент этой записи новый source-ready пакет ещё не доставлен.
+
+Source-only пакет доставлен 27 октября в 22:00 UTC (28 октября, 00:00 Europe/Kyiv). Builder commit `e217cd139fbda153261a69977fe590867cbf57ed` отправлен в его ветку и адресно интегрирован Lead как `822f0d36ad5f6ac99fb85573f84d0c75d3d5363e`, ветка `codex/r4d-p2-free-lead-01`. Единственный новый entrypoint: [builder/source-packets/jungle-art-v2/manifest.json](../experiments/p2-free-approach/builder/source-packets/jungle-art-v2/manifest.json), абсолютный путь `E:\R4D\perspective\p2-worktrees\lead\experiments\p2-free-approach\builder\source-packets\jungle-art-v2\manifest.json`. Оба PNG находятся рядом; отдельный staging не создавался. Это manifest generic schema `r4d.p2.assets.v1`, статус `SOURCE_READY_RUNTIME_UNVERIFIED`, а не Artist contract и не QA-вердикт.
+
+Статически сверены относительные `ball.file` / `shadow.file` и реальные файлы Lead:
+
+| Файл в `builder/source-packets/jungle-art-v2/` | Байты | SHA-256 |
+| --- | ---: | --- |
+| `ball-v2.png` | 851662 | `3484ec77027226f061bce2738972aed404455bb15c8c778fe5a3de6c7ffecfc3` |
+| `shadow-native-disc-v1.png` | 2263 | `bd54c9f8251b634657076831fd38854855aea8004ea4dc71603b3bac3a39f572` |
+| `manifest.json` в рабочей копии Lead, CRLF | 13935 | `a89277784a0e46424cf55b3e5ef376f767c2354f862fd947db84f15ce30a75c4` |
+
+Для переноса между Git/worktree: manifest canonical LF UTF-8 — 13066 байт, SHA-256 `4e97f911907ef2c7123347fe55414379487e9a98495df068bee3240ebc886e6e`, Git blob `e51ee0ad1424b73077d7bc343d06d2d524bd64b2`. Разница CRLF/LF не является изменением данных.
+
+Поля шара `[627,629.5]` / diameter830.5 / canvas1254×1254 перенесены из Artist v2 без коррекции. Тень: center `[64,64]`, footprint `[96,96]`, nativeRadii `[1.15,1.15]`, offset `[-8,14]`, opacity1 с исходной PNG alpha. Для `flower-01`, `leaf-01`, `frog-01`, `wood-01` read-only сравнением подтверждено совпадение sourceRect, обоих polygon, base anchor и native-depth с прежними Artist occluders; `fileRole: source` использует существующий неизменённый Jungle. Физика, config и проекция не менялись.
+
+Git diff относительно входа `5b4b015…` подтверждает неизменность consumer `src/main.mjs`, `scripts/prepare-artist-probe.mjs` и старого `assets.manifest.json`; исторический runtime-packet не редактировался. Выполнены только текстовая исходная интеграция, точные копии данных и разрешённая read-only сверка bytes/SHA/полей/путей и Git diff/status. Скрипты, runtime, симуляция, install/build, тесты/QA, сервер и браузер не запускались; сцена не просмотрена. Приватное ядро, активные C-original, грязный D-checkout и security/permissions не затронуты. Ограниченный source-only handoff завершён; это не снятие tool-policy запрета и не закрытие P2.
 
 ## Действующие уточнения 27 октября
 
