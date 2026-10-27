@@ -1,0 +1,860 @@
+{
+  "schema": "r4d.p2.artist.asset-contract.v1",
+  "staffId": "asset-artist-r4d-p2-free-01",
+  "status": "proposed early assembled-example contract; motion unverified; generated ball absent",
+  "source": {
+    "path": "K:\\Agents\\R4D\\Assets\\perspective\\01-jungle.jpg",
+    "sha256": "c8f9e4245c1de8c2086e615bc75dc10aea59b76b614d6e106593e07262e24f72",
+    "sizePx": [
+      1536,
+      1536
+    ],
+    "unchanged": true
+  },
+  "acceptedP1": {
+    "commit": "4b47db04c7140ebf88f69b91faa0b790d46f22ec",
+    "subtree": "experiments/p1-collider-mapping/clean-repeat-01",
+    "configCanonicalLfSha256": "dd5c519cd6d4b7295118e0a3a1063efed424a0ce739450bd5153c6a9941982db",
+    "manifestCanonicalLfSha256": "7784dc0a215d0e472cf06a4eee03793592727cf0fa9a1fa0e0c78e5f1d17da18",
+    "projectionCanonicalLfSha256": "9ca9e520f1927426a3a5ba73a5eacaf90fedffc9385e7d08d5b1e6ee644b020c"
+  },
+  "projection": {
+    "nativeToSource": [
+      [
+        1,
+        -0.11464664692356805,
+        -28578.75944602019
+      ],
+      [
+        0,
+        0.41847748123620804,
+        -13508.364740680081
+      ],
+      [
+        0,
+        -0.0001486986341421116,
+        6.066459862490026
+      ]
+    ],
+    "sourceToNative": [
+      [
+        1,
+        9.330392800216167,
+        25487.205399837876
+      ],
+      [
+        0,
+        11.446119221308955,
+        25487.410584018282
+      ],
+      [
+        0,
+        0.00028056268944599974,
+        0.7895779829155002
+      ]
+    ],
+    "sourceImageQuadPx": [
+      [
+        0,
+        0
+      ],
+      [
+        1536,
+        0
+      ],
+      [
+        1536,
+        1536
+      ],
+      [
+        0,
+        1536
+      ]
+    ],
+    "wholeSourceNativePolygon": [
+      [
+        32279.529003236516,
+        32279.78886886708
+      ],
+      [
+        34224.87200067972,
+        32279.78886886708
+      ],
+      [
+        33882.78085960095,
+        35287.065733072224
+      ],
+      [
+        32624.303212088456,
+        35287.065733072224
+      ]
+    ],
+    "wholeSourceNativeBounds": {
+      "minX": 32279.529003236516,
+      "maxX": 34224.87200067972,
+      "minY": 32279.78886886708,
+      "maxY": 35287.065733072224
+    },
+    "playableFloorNativePolygon": [
+      [
+        32854.28178584701,
+        33100.26049847829
+      ],
+      [
+        32872.49271428415,
+        33385.83075031849
+      ],
+      [
+        32825.8639760591,
+        33672.20927446468
+      ],
+      [
+        32905.07720788279,
+        33976.31840235649
+      ],
+      [
+        32890.26126433138,
+        34255.52957162956
+      ],
+      [
+        32796.30848746218,
+        34487.96922797659
+      ],
+      [
+        32869.47390724526,
+        34695.15134655699
+      ],
+      [
+        33681.541637328584,
+        34695.15134655699
+      ],
+      [
+        33794.495771830014,
+        34487.96922797659
+      ],
+      [
+        33720.95509481277,
+        34255.52957162956
+      ],
+      [
+        33787.45532679023,
+        33976.31840235649
+      ],
+      [
+        33729.57340566892,
+        33672.20927446468
+      ],
+      [
+        33673.67029105261,
+        33385.83075031849
+      ],
+      [
+        33650.85123613328,
+        33100.26049847829
+      ]
+    ]
+  },
+  "ball": {
+    "assetPath": null,
+    "toolInvocationPerformed": false,
+    "physicalRadiusNative": 16,
+    "appearance": "satin honey-gold sphere; upper-right warm light; lower-left olive-brown shade",
+    "display": "uniform screen-space circle; radius=16/w; proposed floor-contact lift derived from local Jacobian",
+    "alphaBoundsPx": null,
+    "rawSha256": null
+  },
+  "light": {
+    "observation": "bright upper-right surfaces; cast shadows down-left",
+    "physicalReconstructionClaimed": false
+  },
+  "shadow": {
+    "assetPath": "shadow-native-disc-v1.png",
+    "sha256": "bd54c9f8251b634657076831fd38854855aea8004ea4dc71603b3bac3a39f572",
+    "sizePx": [
+      128,
+      128
+    ],
+    "provenance": "new procedural alpha gradient from standard-library prepare-assets.py, no input image edits",
+    "anchorPx": [
+      64,
+      64
+    ],
+    "textureRadiusPx": 48,
+    "nativeRadius": 18.4,
+    "nativeOffset": [
+      -8,
+      14
+    ],
+    "maxAlpha": 0.3,
+    "rgb": [
+      35,
+      36,
+      20
+    ],
+    "mapping": "floor plane through accepted H",
+    "blend": "normal"
+  },
+  "occlusion": {
+    "probesPath": "occlusion-probes-v1.json",
+    "builderManifestPath": "occluders-v1.json",
+    "kind": "unchanged source texture clipped by authored source silhouettes; initial Builder depthNativeY contract",
+    "nativeConfigChanged": false,
+    "artToggleDisablesMasks": true,
+    "diagnosticsMasked": false,
+    "unprepared": [
+      "other 21 obstacles",
+      "railings",
+      "basket front rims"
+    ]
+  },
+  "pins": [
+    {
+      "pinId": "flower-01",
+      "nativeCenter": [
+        32982.10427784783,
+        33295.09546643628
+      ],
+      "nativeRadius": 44.62098571998958,
+      "sourceCenterPx": [
+        525.4691425053203,
+        380.881722604278
+      ],
+      "observedFrontContactPx": [
+        524,
+        400
+      ],
+      "localScale": {
+        "sourcePxPerNativeX": 0.8964391833701818,
+        "sourcePxPerNativeY": 0.42591087174868425,
+        "floorForeshorteningK": 0.4751140731571588,
+        "ballRadiusSourcePx": 14.343026933922909,
+        "proposedSphereCenterLiftSourcePx": 12.62077666131386
+      },
+      "occlusionStatus": "initial-probe"
+    },
+    {
+      "pinId": "leaf-01",
+      "nativeCenter": [
+        33257.103055588785,
+        33328.97811206313
+      ],
+      "nativeRadius": 49.97188529432575,
+      "sourceCenterPx": [
+        771.9933085614629,
+        395.3781834746942
+      ],
+      "observedFrontContactPx": [
+        772,
+        417
+      ],
+      "localScale": {
+        "sourcePxPerNativeX": 0.900506349419435,
+        "sourcePxPerNativeY": 0.42978437460354346,
+        "floorForeshorteningK": 0.4772696770884842,
+        "ballRadiusSourcePx": 14.40810159071096,
+        "proposedSphereCenterLiftSourcePx": 12.661218410286892
+      },
+      "occlusionStatus": "initial-probe"
+    },
+    {
+      "pinId": "frog-01",
+      "nativeCenter": [
+        33523.76813123743,
+        33306.91584579162
+      ],
+      "nativeRadius": 49.005746624320594,
+      "sourceCenterPx": [
+        1011.4166569436551,
+        385.9240956853891
+      ],
+      "observedFrontContactPx": [
+        1013,
+        407
+      ],
+      "localScale": {
+        "sourcePxPerNativeX": 0.8978538851230089,
+        "sourcePxPerNativeY": 0.4272562219077325,
+        "floorForeshorteningK": 0.475863867147155,
+        "ballRadiusSourcePx": 14.365662161968142,
+        "proposedSphereCenterLiftSourcePx": 12.634872072448244
+      },
+      "occlusionStatus": "initial-probe"
+    },
+    {
+      "pinId": "wood-01",
+      "nativeCenter": [
+        33101.88779971951,
+        33516.93876987417
+      ],
+      "nativeRadius": 32.47610540354854,
+      "sourceCenterPx": [
+        628.6379171404694,
+        478.2464227639511
+      ],
+      "observedFrontContactPx": [
+        628,
+        493
+      ],
+      "localScale": {
+        "sourcePxPerNativeX": 0.9237560855040836,
+        "sourcePxPerNativeY": 0.4522636550789088,
+        "floorForeshorteningK": 0.4895920710845585,
+        "ballRadiusSourcePx": 14.780097368065338,
+        "proposedSphereCenterLiftSourcePx": 12.887529643066834
+      },
+      "occlusionStatus": "initial-probe"
+    },
+    {
+      "pinId": "flower-02",
+      "nativeCenter": [
+        33380.562134421954,
+        33530.233282658526
+      ],
+      "nativeRadius": 45.38351877747797,
+      "sourceCenterPx": [
+        886.2755402544583,
+        484.27004775792415
+      ],
+      "observedFrontContactPx": [
+        887,
+        505
+      ],
+      "localScale": {
+        "sourcePxPerNativeX": 0.9254460899326068,
+        "sourcePxPerNativeY": 0.4539199943606084,
+        "floorForeshorteningK": 0.49048777589374654,
+        "ballRadiusSourcePx": 14.807137438921709,
+        "proposedSphereCenterLiftSourcePx": 12.903651368792913
+      },
+      "occlusionStatus": "not-prepared"
+    },
+    {
+      "pinId": "wood-02",
+      "nativeCenter": [
+        33587.93396983491,
+        33516.93876987417
+      ],
+      "nativeRadius": 32.47610540354854,
+      "sourceCenterPx": [
+        1077.6260246205215,
+        478.2464227639511
+      ],
+      "observedFrontContactPx": [
+        1079,
+        493
+      ],
+      "localScale": {
+        "sourcePxPerNativeX": 0.9237560855040836,
+        "sourcePxPerNativeY": 0.4522636550789088,
+        "floorForeshorteningK": 0.4895920710845585,
+        "ballRadiusSourcePx": 14.780097368065338,
+        "proposedSphereCenterLiftSourcePx": 12.887529643066834
+      },
+      "occlusionStatus": "not-prepared"
+    },
+    {
+      "pinId": "frog-02",
+      "nativeCenter": [
+        32948.158051844744,
+        33634.85738798833
+      ],
+      "nativeRadius": 47.92511291991522,
+      "sourceCenterPx": [
+        481.94720861408734,
+        532.4547649566687
+      ],
+      "observedFrontContactPx": [
+        480,
+        555
+      ],
+      "localScale": {
+        "sourcePxPerNativeX": 0.9389649237800813,
+        "sourcePxPerNativeY": 0.46727850232026485,
+        "floorForeshorteningK": 0.4976527775277237,
+        "ballRadiusSourcePx": 15.023438780481301,
+        "proposedSphereCenterLiftSourcePx": 13.03097532481042
+      },
+      "occlusionStatus": "not-prepared"
+    },
+    {
+      "pinId": "leaf-02",
+      "nativeCenter": [
+        33220.24445754825,
+        33676.055127292115
+      ],
+      "nativeRadius": 48.70831724129279,
+      "sourceCenterPx": [
+        737.2325646638005,
+        551.8169569900757
+      ],
+      "observedFrontContactPx": [
+        737,
+        575
+      ],
+      "localScale": {
+        "sourcePxPerNativeX": 0.944397232450544,
+        "sourcePxPerNativeY": 0.472700949647814,
+        "floorForeshorteningK": 0.5005319090370888,
+        "ballRadiusSourcePx": 15.110355719208703,
+        "proposedSphereCenterLiftSourcePx": 13.081308263501368
+      },
+      "occlusionStatus": "not-prepared"
+    },
+    {
+      "pinId": "leaf-03",
+      "nativeCenter": [
+        33495.692557377544,
+        33708.45237135722
+      ],
+      "nativeRadius": 49.54077468376489,
+      "sourceCenterPx": [
+        998.3995566007252,
+        567.2011564213329
+      ],
+      "observedFrontContactPx": [
+        1000,
+        591
+      ],
+      "localScale": {
+        "sourcePxPerNativeX": 0.9487134648179509,
+        "sourcePxPerNativeY": 0.47703164755514676,
+        "floorForeshorteningK": 0.5028195184798865,
+        "ballRadiusSourcePx": 15.179415437087215,
+        "proposedSphereCenterLiftSourcePx": 13.120956507159534
+      },
+      "occlusionStatus": "not-prepared"
+    },
+    {
+      "pinId": "wood-03",
+      "nativeCenter": [
+        33048.040620357926,
+        33875.80059132175
+      ],
+      "nativeRadius": 31.90441210678833,
+      "sourceCenterPx": [
+        568.9357605046531,
+        648.961775738838
+      ],
+      "observedFrontContactPx": [
+        568,
+        665
+      ],
+      "localScale": {
+        "sourcePxPerNativeX": 0.9716524440644408,
+        "sourcePxPerNativeY": 0.5003788656075147,
+        "floorForeshorteningK": 0.5149772108990126,
+        "ballRadiusSourcePx": 15.546439105031054,
+        "proposedSphereCenterLiftSourcePx": 13.326467742987749
+      },
+      "occlusionStatus": "not-prepared"
+    },
+    {
+      "pinId": "flower-03",
+      "nativeCenter": [
+        33327.77201639532,
+        33857.38732422164
+      ],
+      "nativeRadius": 44.37224230558652,
+      "sourceCenterPx": [
+        840.5524171112315,
+        639.7726129873554
+      ],
+      "observedFrontContactPx": [
+        841,
+        662
+      ],
+      "localScale": {
+        "sourcePxPerNativeX": 0.9690743078491278,
+        "sourcePxPerNativeY": 0.4977270256190014,
+        "floorForeshorteningK": 0.5136107949489576,
+        "ballRadiusSourcePx": 15.505188925586046,
+        "proposedSphereCenterLiftSourcePx": 13.30381307964158
+      },
+      "occlusionStatus": "not-prepared"
+    },
+    {
+      "pinId": "frog-03",
+      "nativeCenter": [
+        33623.770528529574,
+        33859.21790429951
+      ],
+      "nativeRadius": 48.487099129026284,
+      "sourceCenterPx": [
+        1127.4910079461204,
+        640.6839825717879
+      ],
+      "observedFrontContactPx": [
+        1130,
+        665
+      ],
+      "localScale": {
+        "sourcePxPerNativeX": 0.9693300041508156,
+        "sourcePxPerNativeY": 0.49798971703236455,
+        "floorForeshorteningK": 0.5137463143613613,
+        "ballRadiusSourcePx": 15.50928006641305,
+        "proposedSphereCenterLiftSourcePx": 13.306065010412496
+      },
+      "occlusionStatus": "not-prepared"
+    },
+    {
+      "pinId": "frog-04",
+      "nativeCenter": [
+        33183.163481675765,
+        34037.81138863775
+      ],
+      "nativeRadius": 49.24910619082636,
+      "sourceCenterPx": [
+        698.531895014324,
+        731.9716387501211
+      ],
+      "observedFrontContactPx": [
+        698,
+        758
+      ],
+      "localScale": {
+        "sourcePxPerNativeX": 0.9949419144814302,
+        "sourcePxPerNativeY": 0.5246534311341389,
+        "floorForeshorteningK": 0.5273206641491142,
+        "ballRadiusSourcePx": 15.919070631702883,
+        "proposedSphereCenterLiftSourcePx": 13.525898740569298
+      },
+      "occlusionStatus": "not-prepared"
+    },
+    {
+      "pinId": "wood-04",
+      "nativeCenter": [
+        33433.9500738487,
+        34041.74228104549
+      ],
+      "nativeRadius": 32.143977007385345,
+      "sourceCenterPx": [
+        948.1530125799296,
+        734.0351950247388
+      ],
+      "observedFrontContactPx": [
+        949,
+        751
+      ],
+      "localScale": {
+        "sourcePxPerNativeX": 0.9955208713796599,
+        "sourcePxPerNativeY": 0.5252642006580814,
+        "floorForeshorteningK": 0.5276275121486251,
+        "ballRadiusSourcePx": 15.928333942074559,
+        "proposedSphereCenterLiftSourcePx": 13.530734908497886
+      },
+      "occlusionStatus": "not-prepared"
+    },
+    {
+      "pinId": "wood-05",
+      "nativeCenter": [
+        33682.368293229054,
+        34081.29892794594
+      ],
+      "nativeRadius": 31.955752387694464,
+      "sourceCenterPx": [
+        1197.9586651504903,
+        754.9352695425929
+      ],
+      "observedFrontContactPx": [
+        1200,
+        772
+      ],
+      "localScale": {
+        "sourcePxPerNativeX": 1.0013846524960108,
+        "sourcePxPerNativeY": 0.5314702086749417,
+        "floorForeshorteningK": 0.5307353246828984,
+        "ballRadiusSourcePx": 16.022154439936173,
+        "proposedSphereCenterLiftSourcePx": 13.579378620675763
+      },
+      "occlusionStatus": "not-prepared"
+    },
+    {
+      "pinId": "flower-04",
+      "nativeCenter": [
+        33007.71214527875,
+        34179.94341792299
+      ],
+      "nativeRadius": 43.29375429236969,
+      "sourceCenterPx": [
+        518.6618559351721,
+        808.1434312269298
+      ],
+      "observedFrontContactPx": [
+        517,
+        832
+      ],
+      "localScale": {
+        "sourcePxPerNativeX": 1.0163128774386463,
+        "sourcePxPerNativeY": 0.5474341931303068,
+        "floorForeshorteningK": 0.5386473056505721,
+        "ballRadiusSourcePx": 16.26100603901834,
+        "proposedSphereCenterLiftSourcePx": 13.70040741270434
+      },
+      "occlusionStatus": "not-prepared"
+    },
+    {
+      "pinId": "flower-05",
+      "nativeCenter": [
+        33285.13357773812,
+        34221.24416829724
+      ],
+      "nativeRadius": 44.97914941694413,
+      "sourceCenterPx": [
+        800.7947958848813,
+        830.8948784451542
+      ],
+      "observedFrontContactPx": [
+        801,
+        856
+      ],
+      "localScale": {
+        "sourcePxPerNativeX": 1.0226960846589805,
+        "sourcePxPerNativeY": 0.5543323829581922,
+        "floorForeshorteningK": 0.5420304147766783,
+        "ballRadiusSourcePx": 16.36313735454369,
+        "proposedSphereCenterLiftSourcePx": 13.750907607858451
+      },
+      "occlusionStatus": "not-prepared"
+    },
+    {
+      "pinId": "leaf-04",
+      "nativeCenter": [
+        33543.26285698555,
+        34199.3276024258
+      ],
+      "nativeRadius": 49.05332797153468,
+      "sourceCenterPx": [
+        1063.8066951463993,
+        818.7861737139783
+      ],
+      "observedFrontContactPx": [
+        1066,
+        846
+      ],
+      "localScale": {
+        "sourcePxPerNativeX": 1.019298833893894,
+        "sourcePxPerNativeY": 0.5506556733881689,
+        "floorForeshorteningK": 0.5402298669219223,
+        "ballRadiusSourcePx": 16.308781342302304,
+        "proposedSphereCenterLiftSourcePx": 13.724124787707806
+      },
+      "occlusionStatus": "not-prepared"
+    },
+    {
+      "pinId": "wood-06",
+      "nativeCenter": [
+        32929.345639735395,
+        34434.13825301294
+      ],
+      "nativeRadius": 32.16911823781643,
+      "sourceCenterPx": [
+        425.7543464856103,
+        952.8575731768409
+      ],
+      "observedFrontContactPx": [
+        424,
+        972
+      ],
+      "localScale": {
+        "sourcePxPerNativeX": 1.0569142663049838,
+        "sourcePxPerNativeY": 0.592047543541194,
+        "floorForeshorteningK": 0.5601661008995714,
+        "ballRadiusSourcePx": 16.91062826087974,
+        "proposedSphereCenterLiftSourcePx": 14.00843149540644
+      },
+      "occlusionStatus": "not-prepared"
+    },
+    {
+      "pinId": "leaf-05",
+      "nativeCenter": [
+        33114.54075536323,
+        34363.55781357324
+      ],
+      "nativeRadius": 48.788933318758126,
+      "sourceCenterPx": [
+        623.1299609208431,
+        911.5290359361815
+      ],
+      "observedFrontContactPx": [
+        622,
+        940
+      ],
+      "localScale": {
+        "sourcePxPerNativeX": 1.045319020745875,
+        "sourcePxPerNativeY": 0.5791282751008034,
+        "floorForeshorteningK": 0.554020603860794,
+        "ballRadiusSourcePx": 16.725104331934,
+        "proposedSphereCenterLiftSourcePx": 13.923698783176906
+      },
+      "occlusionStatus": "not-prepared"
+    },
+    {
+      "pinId": "frog-05",
+      "nativeCenter": [
+        33397.654005936,
+        34396.68997420478
+      ],
+      "nativeRadius": 49.4893903044378,
+      "sourceCenterPx": [
+        919.8401506536927,
+        930.8161351593445
+      ],
+      "observedFrontContactPx": [
+        921,
+        960
+      ],
+      "localScale": {
+        "sourcePxPerNativeX": 1.0507302611755378,
+        "sourcePxPerNativeY": 0.5851396717316008,
+        "floorForeshorteningK": 0.5568885691718417,
+        "ballRadiusSourcePx": 16.811684178808605,
+        "proposedSphereCenterLiftSourcePx": 13.963569939555471
+      },
+      "occlusionStatus": "not-prepared"
+    },
+    {
+      "pinId": "flower-06",
+      "nativeCenter": [
+        33609.94745653071,
+        34403.91194882328
+      ],
+      "nativeRadius": 45.630967034617505,
+      "sourceCenterPx": [
+        1143.3234245854387,
+        935.0467727705154
+      ],
+      "observedFrontContactPx": [
+        1146,
+        962
+      ],
+      "localScale": {
+        "sourcePxPerNativeX": 1.0519172202417992,
+        "sourcePxPerNativeY": 0.5864624263078724,
+        "floorForeshorteningK": 0.5575176592061731,
+        "ballRadiusSourcePx": 16.830675523868788,
+        "proposedSphereCenterLiftSourcePx": 13.97223908889342
+      },
+      "occlusionStatus": "not-prepared"
+    },
+    {
+      "pinId": "flower-07",
+      "nativeCenter": [
+        33004.49724257842,
+        34601.47322043386
+      ],
+      "nativeRadius": 45.14213471002636,
+      "sourceCenterPx": [
+        498.00371409506613,
+        1054.603613001406
+      ],
+      "observedFrontContactPx": [
+        496,
+        1083
+      ],
+      "localScale": {
+        "sourcePxPerNativeX": 1.0854604088786435,
+        "sourcePxPerNativeY": 0.6244605950863629,
+        "floorForeshorteningK": 0.5752955980508532,
+        "ballRadiusSourcePx": 17.367366542058296,
+        "proposedSphereCenterLiftSourcePx": 14.205560731397005
+      },
+      "occlusionStatus": "not-prepared"
+    },
+    {
+      "pinId": "wood-07",
+      "nativeCenter": [
+        33189.08291747258,
+        34600.12791716486
+      ],
+      "nativeRadius": 32.25138350228438,
+      "sourceCenterPx": [
+        698.3799250102294,
+        1053.763706499332
+      ],
+      "observedFrontContactPx": [
+        698,
+        1074
+      ],
+      "localScale": {
+        "sourcePxPerNativeX": 1.0852247624515385,
+        "sourcePxPerNativeY": 0.6241894918125203,
+        "floorForeshorteningK": 0.5751707051011876,
+        "ballRadiusSourcePx": 17.363596199224617,
+        "proposedSphereCenterLiftSourcePx": 14.204001809958328
+      },
+      "occlusionStatus": "not-prepared"
+    },
+    {
+      "pinId": "wood-08",
+      "nativeCenter": [
+        33452.218349997915,
+        34598.53376751601
+      ],
+      "nativeRadius": 32.2596801779234,
+      "sourceCenterPx": [
+        983.8862472302754,
+        1052.7689109515238
+      ],
+      "observedFrontContactPx": [
+        985,
+        1073
+      ],
+      "localScale": {
+        "sourcePxPerNativeX": 1.0849456599371963,
+        "sourcePxPerNativeY": 0.6238684699187474,
+        "floorForeshorteningK": 0.5750227803619777,
+        "ballRadiusSourcePx": 17.35913055899514,
+        "proposedSphereCenterLiftSourcePx": 14.202153907699937
+      },
+      "occlusionStatus": "not-prepared"
+    }
+  ],
+  "dropScale": {
+    "sourcePxPerNativeX": 0.8796386062276661,
+    "sourcePxPerNativeY": 0.4100960883626788,
+    "floorForeshorteningK": 0.46620974279582567,
+    "ballRadiusSourcePx": 14.074217699642658,
+    "proposedSphereCenterLiftSourcePx": 12.451097567050061
+  },
+  "basketScales": [
+    {
+      "id": "receiver-01",
+      "sourcePxPerNativeX": 1.136973470945487,
+      "sourcePxPerNativeY": 0.6851374802992419,
+      "floorForeshorteningK": 0.6025975959927136,
+      "ballRadiusSourcePx": 18.191575535127793,
+      "proposedSphereCenterLiftSourcePx": 14.517699491348372
+    },
+    {
+      "id": "receiver-02",
+      "sourcePxPerNativeX": 1.1442632998908373,
+      "sourcePxPerNativeY": 0.6939513122232003,
+      "floorForeshorteningK": 0.6064612159538834,
+      "ballRadiusSourcePx": 18.308212798253397,
+      "proposedSphereCenterLiftSourcePx": 14.557099278003028
+    },
+    {
+      "id": "receiver-03",
+      "sourcePxPerNativeX": 1.1450515953274816,
+      "sourcePxPerNativeY": 0.694907782789321,
+      "floorForeshorteningK": 0.6068790136837278,
+      "ballRadiusSourcePx": 18.320825525239705,
+      "proposedSphereCenterLiftSourcePx": 14.561286355315426
+    },
+    {
+      "id": "receiver-04",
+      "sourcePxPerNativeX": 1.1385686646677495,
+      "sourcePxPerNativeY": 0.687061348768101,
+      "floorForeshorteningK": 0.6034430509894589,
+      "ballRadiusSourcePx": 18.217098634683992,
+      "proposedSphereCenterLiftSourcePx": 14.5264255287121
+    }
+  ],
+  "validation": {
+    "sourceHashMatched": true,
+    "configHashMatched": true,
+    "projectionHashMatched": true,
+    "all25ProjectedCentersMatchAcceptedResearch": true,
+    "assembledMotionReviewed": false
+  }
+}

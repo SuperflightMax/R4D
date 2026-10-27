@@ -1,0 +1,34 @@
+{
+  "schema": "r4d.p2.artist.occlusion-probes.v1",
+  "status": "four manually authored conservative initial source silhouettes; unverified in assembled motion",
+  "sourceSha256": "c8f9e4245c1de8c2086e615bc75dc10aea59b76b614d6e106593e07262e24f72",
+  "coordinateSpace": "source-image-pixels-1536-square",
+  "notColliders": true,
+  "contourUncertaintyPx": 5,
+  "probes": [
+    {
+      "pinId": "flower-01",
+      "observedFrontContactPx": [524, 400],
+      "sourcePolygonPx": [[489,352],[493,343],[503,341],[508,335],[519,335],[525,338],[537,334],[547,338],[553,346],[562,349],[562,358],[567,366],[565,383],[555,393],[540,399],[518,400],[501,395],[488,385],[486,369]],
+      "reviewFocus": "petal tips and rounded lower stone; exclude the shadow left of the base"
+    },
+    {
+      "pinId": "leaf-01",
+      "observedFrontContactPx": [772, 417],
+      "sourcePolygonPx": [[728,373],[728,359],[738,359],[741,348],[751,351],[759,342],[768,344],[773,337],[781,344],[788,343],[791,353],[804,350],[807,360],[815,362],[813,374],[817,381],[813,398],[801,410],[782,416],[762,417],[741,410],[730,401],[726,389]],
+      "reviewFocus": "leaf tips and gaps; no opaque triangle between protruding leaves"
+    },
+    {
+      "pinId": "frog-01",
+      "observedFrontContactPx": [1013, 407],
+      "sourcePolygonPx": [[970,363],[976,351],[980,339],[989,335],[997,340],[1006,341],[1012,333],[1021,330],[1030,334],[1036,344],[1043,348],[1051,357],[1054,370],[1052,382],[1046,396],[1031,404],[1013,407],[993,405],[976,398],[968,385],[966,373]],
+      "reviewFocus": "eye lobes and separate stone base; do not use the circular physical footprint as the full painted silhouette"
+    },
+    {
+      "pinId": "wood-01",
+      "observedFrontContactPx": [628, 493],
+      "sourcePolygonPx": [[601,424],[606,416],[618,411],[633,410],[647,414],[655,421],[656,437],[660,444],[658,453],[658,470],[662,478],[657,486],[646,491],[629,494],[612,491],[599,485],[595,478],[598,469],[598,453],[596,443],[599,436]],
+      "reviewFocus": "round top rim, rope bulges and bottom rim; exclude long lower-left cast shadow"
+    }
+  ]
+}
