@@ -1,6 +1,6 @@
 # P2 Jungle — план независимой технической проверки
 
-**Текущий режим: resume по новой явной команде Max от 28 октября 05:36 UTC; порученный source/data-разбор завершён.** [Диагноз Android/zoom/ball и целевой план slowdown QA](candidate-03-ANDROID_SOURCE_DIAGNOSIS-01.md). [Checkpoint pause/resume](PAUSE_STATE.md). Возобновление не является новым auth-фактом; browser/login цикл не повторять без основания, новая релевантная QA — по адресному candidate handoff.
+**Текущий режим: адресная независимая offline QA нового candidate-04 завершена.** [Новый verdict04](candidate-04-REPORT.md), [сохранённый Android/source-разбор03](candidate-03-ANDROID_SOURCE_DIAGNOSIS-01.md), [рабочее состояние](PAUSE_STATE.md). Нового auth/HTTPtarget04 нет; browser/login-only03 цикл не повторять. Node/source результаты не означают UI/Pixi/wall-time/DOM-download/Android/art PASS.
 
 Автор: `technical-qa-r4d-p2-free-01`. Подготовка: 27 октября 2026, Europe/Kyiv; turn `01a17e69-c5ca-77e1-aaf4-7cb50523b797`.
 
