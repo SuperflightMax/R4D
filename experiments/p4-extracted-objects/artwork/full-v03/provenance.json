@@ -1,0 +1,38 @@
+{
+  "version": "p4-full-v03",
+  "parentManifestSha256": "209350371d807a879fef1ab61a2aff02868d4e24414892f4d50a17cee02c5543",
+  "kind": "display-parameter-only shadow correction",
+  "generationCalls": 0,
+  "allCopiedComponentsByteIdentical": 65,
+  "bodyAndShadowRawPreserved": true,
+  "changedFields": {
+    "ball.render.shadowSourceCenterOffsetR": {
+      "before": [
+        -0.55,
+        0.6
+      ],
+      "after": [
+        -0.95,
+        0.86
+      ]
+    },
+    "ball.render.shadowSourceContentHalfSizeR": {
+      "before": [
+        1.12,
+        0.42
+      ],
+      "after": [
+        1.55,
+        0.58
+      ]
+    },
+    "ball.shadow.opacityMultiplier": {
+      "before": 0.42,
+      "after": 0.65
+    }
+  },
+  "reason": "Exact consumer source applies content radii, pivot, offset, size and opacity correctly. Builder via Lead also confirmed live current02 mapping: alpha0.42, one shadow sprite, correct scale/offset and no repeated opacity/premultiply. The dense old shadow center lies inside the sphere and only a small faint edge remains visible at574px. Correct display parameters only; keep both PNGs, body position/r16/P1/core. New full-v03 parameters still need same-state actual consumer and independent VQA.",
+  "evidence": "proposal.json",
+  "rawExtractionProvenance": "../full-v02/provenance.json",
+  "finalArtPass": false
+}

@@ -193,3 +193,73 @@ RAM18,41GiB, CPU9%, C/D/E15,20/16,31/16,41GiB. Проходы последова
 сравнение wood и preview в принятой drop-точке просмотрены. Начальный radius
 по H/r16 равен14,0742176996px. В manifest тень шара имеет явный alpha multiplier.
 Финальная полная сцена Pixi/QA этим чтением не подтверждается.
+
+## 2026-10-28 — VQA-01: shadow-only full-v03
+
+Получен связный пакет коррекции после двух законченных независимых QA
+`p4-full-v02-candidate-02`, artifact SHA
+`c7815edc846749478e56e76d072233ae5a6fcd0ee86d2c14f9936379bff9b757`.
+Прочитаны exact TQA commit `cae522158d74f12765d766c71874886ce53465cc`
+и VQA commit `4864087953cc47844d33ec24c0bee99027e3ea0b`. Current02 не прошёл
+приёмку. Дефект кадрового цикла — участок Builder; Artist его не менял.
+
+Лично просмотрены реальные кадры VQA30 (целый обычный кадр, доска574²)
+и31 (открытый пол, дополнительное увеличение), оба seed1842222754/t590.
+SHA кадра30 `bbbe222a6630c4f8bcc42cfa5425585ea819e7de7eb81b645a3a865d131d9b60`.
+Состояние взято из сохранённого QA index: pos=(33044.4293332,33432.8780893),
+rngU32=4229712522. Новая траектория/симуляция/подбор seed не выполнялись.
+Frozen art manifest209350371d807a879fef1ab61a2aff02868d4e24414892f4d50a17cee02c5543
+и shadow PNGe172a8aee8446d8083680e20fd484f95c48daa823174415d60e3a99b6799b516
+самостоятельно сверены с исходным full-v02.
+
+### Диагноз и подтверждение от Builder
+
+Read-only просмотрены только относящиеся к стыку art/ball-placement/scene
+из exact P4 consumer source `b2db9e947ebf2213e725a66f1e778f9137b14d5f`.
+Расхождения content radius, pivot, offset, scale или opacity с manifest не
+обнаружены. Consumer/native source не копировался и в новую ветку/пакет не включён.
+Builder через Lead отдельно сообщил собственное живое наблюдение current02:
+viewport1280×720, t590, alpha0.42, один shadow sprite, half-height2.29CSSpx,
+standard PNG loader, правильные scale/offset и без повторного premultiply/opacity.
+Это полученное подтверждение, не мой личный осмотр WebGL.
+
+Старый центр тени внутри сферы (0.814R), основная плотная область перекрыта
+body. На обычном масштабе остаётся слабая узкая кромка. Имеющийся мягкий PNG
+достаточен; причина в выбранных художественных display parameters.
+
+### Минимальная коррекция
+
+Новая явная версия `p4-full-v03`, те же schema/файлы/loader. Меняются:
+
+- ball.render.shadowSourceCenterOffsetR: [-0.55,0.60] → [-0.95,0.86];
+- ball.render.shadowSourceContentHalfSizeR: [1.12,0.42] → [1.55,0.58];
+- ball.shadow.opacityMultiplier:0.42 →0.65.
+
+Текстовые shadow formulas в ball.placement синхронизированы. Мягкость самого
+PNG/его alpha сохранена; новая тень смещена вниз-влево по свету сцены.
+Все65 PNG из полного пакета, включая floor/pins/object shadows/baskets/
+foreground/ball-body/ball-shadow и provenance mask, скопированы побайтно.
+Body/r16/bodyCenter/P1/config/anchors/core/PRNG не менялись. Full-v02,
+starter и чужой immutable candidate02 сохранены. Новых image_gen calls нет;
+актуальные skill и правило E-images прочитаны, C originals не трогались.
+
+### Статическое evidence и предел вывода
+
+`tools/prepare_shadow_v03.py` независимо собирает неподвижный кадр из Artist
+PNG на сохранённой позиции, без кода consumer/native. Before/after показывает
+две целые доски574×574. Новое мягкое пятно читается отдельно от края шара
+в этой статике; дополнительный увеличенный crop служит только пояснением.
+Это предложение, не live proof/Art PASS. Вспомогательный alpha-анализ:
+непокрытая alpha34%→78%, exposed pixels alpha≥0.1 при574²:7→46.
+Такая метрика объясняет эффект, но не заменяет субъективный целевой критерий.
+R=14.6113843638source px, center=(577.7912292052,440.6627982678)px в обеих версиях.
+
+Нужны actual full-v03 consumer на том же состоянии и независимая VQA.
+Ограничения receiver01/03, partial front-rim при capture и отсутствия отдельной
+фазы погружения после native end сохраняются; новые исследования не открывались.
+
+Перед лёгким render/copy: RAM16.65GiB, CPU0%, C/D/E14.45/16.29/16.31GiB.
+Ожидаемый дополнительный пик <0.25GiB RAM и <64MB файлов, последовательная
+обработка, без браузера/сервера/чужих процессов. Порогов E4/2GiB не достигнуто.
+Отдельное уточнение Lead разрешило обычный push только своей artwork-only
+коррекции; hold Builder source и запрет deploy/другого транспорта сохраняются.

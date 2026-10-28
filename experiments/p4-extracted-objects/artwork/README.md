@@ -1,9 +1,13 @@
 # P4: извлечённый арт
 
-Текущий полный пакет: **[full-v02/README.md](full-v02/README.md)**,
-manifest `full-v02/manifest.json`, версия `p4-full-v02`.
+Текущая коррекция: **[full-v03/README.md](full-v03/README.md)**,
+manifest `full-v03/manifest.json`, версия `p4-full-v03`.
+Это только параметры тени шара после VQA-01; все PNG исходного полного
+пакета сохранены побайтно. Требуются новый consumer и независимая VQA.
+
+Исходный полный пакет **[full-v02/README.md](full-v02/README.md)** сохранён.
 25 pins, 4 receiver rear/front, 3 статичных foreground-слоя, свои ball/shadow.
-Пакет подготовлен к полной интеграции; финальный Art/QA PASS не заявлен.
+Candidate02 не прошёл приёмку; полный Art/QA PASS не заявлен.
 
 Ниже сохранён контракт первого малого стыка. Его загрузка/регистрация и
 частичное перекрытие wood реально подтверждены consumer commit
