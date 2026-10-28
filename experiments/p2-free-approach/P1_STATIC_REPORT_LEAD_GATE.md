@@ -6,7 +6,15 @@
 
 Основание: Max28октября12:38UTC, `Sentinel_9809efe64b3881918b49cd3b4c1237a8`, через CTO. Публикуется статический отчёт accepted P1 exact `4b47db04c7140ebf88f69b91faa0b790d46f22ec`, subtree `experiments/p1-collider-mapping/clean-repeat-01/`. P1 не перезапускается; это не третий research slot. P2 frozen04/df309 сохраняются без rebuild/reQA.
 
-## Exact PUBLIC intent: CTO gate выдан, один execution handoff отправлен
+## Actual delivery: serving проверен, ожидаются PUBLIC VQA и документы
+
+Builder actual switch15:08:16.715563UTC; after-snippet SHA289c2de9aa8c535a7755d94d4e69b4368ae82ea154c148449eec9d98467e2bd8. Первая JPG HTTP status/bytes проверка сразу послеreload не прошла (exec-ce4864df-b232-483d-a7d1-5026241a056d exit1/AssertionError); операция остановлена, повторныхupload/switch/hotfix нет. Причина этого первого ответа не доказана и не объявляется race. Неудачный факт сохранён в private operational evidence.
+
+Разрешённый отдельный read-only recheck15:10:44UTC подтвердил all12PublicChecksPassed=true:12HTTP200/exactbytesSHA/MIME/headers, catalog/P2/full562inventory/548preserved/oldroot/nginx-t/active. Root и CTO лично сверили `E:/R4D/perspective/p2-runtime/output/builder/p1-static-report-execution-01/POST_DELIVERY_RECHECK.json`,19032bytes SHA256 `e46d0fed438a0a975438035a0ae31b5858212c2930d874c4f4c4f2b21617e181`. Это delivery byte/status checks, не page render PASS.
+
+После fresh проверки отсутствия public-view turn Lead отправил ровно одно read-only HTTPS поручение existing VQA; successful receipt. Actual новый VQA turn `01a18313-2339-7113-93ab-3dffc35ee86b` inProgress, первый browsercontrol call_8f9febf6e15e4beea9fde4900abe9452 completed; фактический rendered scope/verdict ещё ожидается. Старый filedenial не повторяется/не обходится, staticPASS не подменяет actualview. Builder phase `AWAIT_ROOT_VQA_DOCS_PENDING_LOCK_HELD`: docs не append до реального VQAотчёта; own lock held, окно освобождает толькоCTO. Новый URL готовым не объявлен. P2frozen04/df309/P4 неизменны.
+
+## История: CTO gate и один execution handoff
 
 CTO лично reviewed exact ed33072/оба QA/intent/plan/template/sealed/Root119checks и выдал один single-use token в2026-10-28T14:53:26Z. Literal token хранится только в private operational communication/evidence, в Git и reportpage не записывается. Второй token для этого шага не запрашивать. Все immutable bindings и полный declared write-set из EXECUTION_PLAN сохранены; CTO отдельно освобождает окно после actual delivery/postchecks/docs/render/owned-lock completion.
 
