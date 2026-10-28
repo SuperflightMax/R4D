@@ -1,0 +1,6056 @@
+{
+  "candidate": {
+    "name": "p4-full-v02-candidate-02",
+    "artifactSha256": "c7815edc846749478e56e76d072233ae5a6fcd0ee86d2c14f9936379bff9b757",
+    "builderCommit": "b2db9e947ebf2213e725a66f1e778f9137b14d5f",
+    "art": {
+      "commit": "b2c0339704c9a6a86e4a1188b0022ba724aadd43",
+      "manifestPath": "experiments/p4-extracted-objects/artwork/full-v02/manifest.json",
+      "manifestSha256": "209350371d807a879fef1ab61a2aff02868d4e24414892f4d50a17cee02c5543",
+      "version": "p4-full-v02"
+    },
+    "localVerifiedFiles": 100,
+    "httpVerified": {
+      "artifact.json": "c7815edc846749478e56e76d072233ae5a6fcd0ee86d2c14f9936379bff9b757",
+      "app.js": "994cead8ae6065b09e302934de545582289b3c350c8ad9312316b2ed947b94ca",
+      "art/manifest.json": "209350371d807a879fef1ab61a2aff02868d4e24414892f4d50a17cee02c5543",
+      "index.html": "b9c9ea7fcf307d2258dacb67ac1895250e7655ce3ebf84e68c7ba965995b946c",
+      "art/background.png": "9344fdcefcb3d36afa6a4585fc6db3c550b301e24cb5935202d5c4e10781b0b8"
+    },
+    "preview": "http://127.0.0.1:4394/"
+  },
+  "httpAfterReview": {
+    "artifact.json": "c7815edc846749478e56e76d072233ae5a6fcd0ee86d2c14f9936379bff9b757",
+    "app.js": "994cead8ae6065b09e302934de545582289b3c350c8ad9312316b2ed947b94ca",
+    "art/manifest.json": "209350371d807a879fef1ab61a2aff02868d4e24414892f4d50a17cee02c5543"
+  },
+  "rawRuntime": "E:\\R4D\\perspective\\p4-runtime\\visual-qa\\frozen02-qa-01",
+  "normalSourceImageSizeCssPx": [
+    574,
+    574
+  ],
+  "normalSourceScale": 0.3736979166666667,
+  "detailSourceScale": 0.7473958333333334,
+  "screenshots": [
+    {
+      "file": "01-default-seed0-t0.jpg",
+      "imageSha256": "613055f694727d06482a934a9cd17d73c13ca290918e351bac29934db3382831",
+      "metadataFile": "01-default-seed0-t0.json",
+      "metadataSha256": "e567dc2846c1392cf6101b16753b0bc912c05f5374559103959e015399e2ce8d",
+      "state": {
+        "tick": 0,
+        "rngU32": 0,
+        "ball": {
+          "pos": {
+            "x": 33254.863169496064,
+            "y": 33151.81331014809
+          },
+          "vel": {
+            "x": 0,
+            "y": 0
+          }
+        },
+        "nearMissBucketIds": [],
+        "done": false,
+        "seed": 0,
+        "dropId": "board01-start",
+        "tickMs": 5,
+        "timeSec": 0,
+        "status": "active",
+        "started": true,
+        "finished": false
+      },
+      "viewport": {
+        "dpr": 1,
+        "height": 720,
+        "width": 1280
+      },
+      "canvas": [
+        {
+          "height": 590,
+          "rect": {
+            "height": 590,
+            "width": 840,
+            "x": 17,
+            "y": 103.5
+          },
+          "width": 840
+        }
+      ],
+      "controls": [
+        {
+          "checked": false,
+          "id": "seed",
+          "value": "0"
+        },
+        {
+          "checked": false,
+          "id": "count",
+          "value": "10"
+        },
+        {
+          "checked": false,
+          "id": "seek",
+          "value": "0"
+        },
+        {
+          "checked": false,
+          "id": "tick-input",
+          "value": "0"
+        },
+        {
+          "checked": true,
+          "id": "art",
+          "value": "on"
+        },
+        {
+          "checked": false,
+          "id": "geometry",
+          "value": "on"
+        },
+        {
+          "checked": true,
+          "id": "showParts",
+          "value": "on"
+        },
+        {
+          "checked": false,
+          "id": "diagnosticBall",
+          "value": "on"
+        },
+        {
+          "checked": false,
+          "id": "view",
+          "value": "source"
+        },
+        {
+          "checked": false,
+          "id": "zoom",
+          "value": "1"
+        },
+        {
+          "checked": false,
+          "id": "followBall",
+          "value": "on"
+        },
+        {
+          "checked": false,
+          "id": "import",
+          "value": ""
+        }
+      ]
+    },
+    {
+      "file": "02-plate-parts-off-t0.jpg",
+      "imageSha256": "30c2240db326a09b638e6e1ad87219a84affbead3de27ee45f134e756a9ba099",
+      "metadataFile": "02-plate-parts-off-t0.json",
+      "metadataSha256": "8b81b2b22f4fbe1a5cfef06fc71aa0087d233e008f2e9f1829571ae1381a352c",
+      "state": {
+        "tick": 0,
+        "rngU32": 0,
+        "ball": {
+          "pos": {
+            "x": 33254.863169496064,
+            "y": 33151.81331014809
+          },
+          "vel": {
+            "x": 0,
+            "y": 0
+          }
+        },
+        "nearMissBucketIds": [],
+        "done": false,
+        "seed": 0,
+        "dropId": "board01-start",
+        "tickMs": 5,
+        "timeSec": 0,
+        "status": "active",
+        "started": true,
+        "finished": false
+      },
+      "viewport": {
+        "dpr": 1,
+        "height": 720,
+        "width": 1280
+      },
+      "canvas": [
+        {
+          "height": 590,
+          "rect": {
+            "height": 590,
+            "width": 840,
+            "x": 17,
+            "y": 103.5
+          },
+          "width": 840
+        }
+      ],
+      "controls": [
+        {
+          "checked": false,
+          "id": "seed",
+          "value": "0"
+        },
+        {
+          "checked": false,
+          "id": "count",
+          "value": "10"
+        },
+        {
+          "checked": false,
+          "id": "seek",
+          "value": "0"
+        },
+        {
+          "checked": false,
+          "id": "tick-input",
+          "value": "0"
+        },
+        {
+          "checked": true,
+          "id": "art",
+          "value": "on"
+        },
+        {
+          "checked": false,
+          "id": "geometry",
+          "value": "on"
+        },
+        {
+          "checked": false,
+          "id": "showParts",
+          "value": "on"
+        },
+        {
+          "checked": false,
+          "id": "diagnosticBall",
+          "value": "on"
+        },
+        {
+          "checked": false,
+          "id": "view",
+          "value": "source"
+        },
+        {
+          "checked": false,
+          "id": "zoom",
+          "value": "1"
+        },
+        {
+          "checked": false,
+          "id": "followBall",
+          "value": "on"
+        },
+        {
+          "checked": false,
+          "id": "import",
+          "value": ""
+        }
+      ]
+    },
+    {
+      "file": "03-seed1842222754-t605-normal.jpg",
+      "imageSha256": "7455b2471d052f084a5ea2d2c2d3dbfdb4f9018f1e90db5ee83d1c75d6c83e20",
+      "metadataFile": "03-seed1842222754-t605-normal.json",
+      "metadataSha256": "3059ba3e739d7e2ccd22a10f67006fcb58f93974710c71060ea67598ad4a5f5d",
+      "state": {
+        "ball": {
+          "pos": {
+            "x": 33254.8631695,
+            "y": 33204.3658101
+          },
+          "vel": {
+            "x": 0,
+            "y": 318.5
+          }
+        },
+        "done": false,
+        "dropId": "board01-start",
+        "finished": false,
+        "nearMissBucketIds": [],
+        "rngU32": 1842222754,
+        "seed": 1842222754,
+        "started": true,
+        "status": "active",
+        "tick": 65,
+        "tickMs": 5,
+        "timeSec": 0.325
+      },
+      "viewport": {
+        "dpr": 1,
+        "height": 720,
+        "width": 1280
+      },
+      "canvas": {
+        "height": 590,
+        "width": 840,
+        "x": 17,
+        "y": 103.5
+      },
+      "controls": [
+        {
+          "checked": false,
+          "id": "seed",
+          "value": "1842222754"
+        },
+        {
+          "checked": false,
+          "id": "count",
+          "value": "10"
+        },
+        {
+          "checked": false,
+          "id": "seek",
+          "value": "65"
+        },
+        {
+          "checked": false,
+          "id": "tick-input",
+          "value": "65"
+        },
+        {
+          "checked": true,
+          "id": "art",
+          "value": "on"
+        },
+        {
+          "checked": false,
+          "id": "geometry",
+          "value": "on"
+        },
+        {
+          "checked": true,
+          "id": "showParts",
+          "value": "on"
+        },
+        {
+          "checked": false,
+          "id": "diagnosticBall",
+          "value": "on"
+        },
+        {
+          "checked": false,
+          "id": "view",
+          "value": "source"
+        },
+        {
+          "checked": false,
+          "id": "zoom",
+          "value": "1"
+        },
+        {
+          "checked": false,
+          "id": "followBall",
+          "value": "on"
+        },
+        {
+          "checked": false,
+          "id": "import",
+          "value": ""
+        }
+      ]
+    },
+    {
+      "file": "04-seed1842222754-t605-normal.jpg",
+      "imageSha256": "3d2ce87cafd54fe52b74e7cdbb38d848a8f17458349a62c479e728b01f5ddf6b",
+      "metadataFile": "04-seed1842222754-t605-normal.json",
+      "metadataSha256": "36f2aa717aaa3b5bc5e956c00db247bee5b958618e60e13dcfbb9001af4c67f4",
+      "state": {
+        "ball": {
+          "pos": {
+            "x": 33069.5501347,
+            "y": 33451.5819913
+          },
+          "vel": {
+            "x": 334.9440105,
+            "y": 283.6853543
+          }
+        },
+        "done": false,
+        "dropId": "board01-start",
+        "finished": false,
+        "nearMissBucketIds": [],
+        "rngU32": 4229712522,
+        "seed": 1842222754,
+        "started": true,
+        "status": "active",
+        "tick": 605,
+        "tickMs": 5,
+        "timeSec": 3.025
+      },
+      "viewport": {
+        "dpr": 1,
+        "height": 720,
+        "width": 1280
+      },
+      "canvas": {
+        "height": 590,
+        "width": 840,
+        "x": 17,
+        "y": 103.5
+      },
+      "controls": [
+        {
+          "checked": false,
+          "id": "seed",
+          "value": "1842222754"
+        },
+        {
+          "checked": false,
+          "id": "count",
+          "value": "10"
+        },
+        {
+          "checked": false,
+          "id": "seek",
+          "value": "605"
+        },
+        {
+          "checked": false,
+          "id": "tick-input",
+          "value": "605"
+        },
+        {
+          "checked": true,
+          "id": "art",
+          "value": "on"
+        },
+        {
+          "checked": false,
+          "id": "geometry",
+          "value": "on"
+        },
+        {
+          "checked": true,
+          "id": "showParts",
+          "value": "on"
+        },
+        {
+          "checked": false,
+          "id": "diagnosticBall",
+          "value": "on"
+        },
+        {
+          "checked": false,
+          "id": "view",
+          "value": "source"
+        },
+        {
+          "checked": false,
+          "id": "zoom",
+          "value": "1"
+        },
+        {
+          "checked": false,
+          "id": "followBall",
+          "value": "on"
+        },
+        {
+          "checked": false,
+          "id": "import",
+          "value": ""
+        }
+      ]
+    },
+    {
+      "file": "05-wood-before-t615-detail.jpg",
+      "imageSha256": "4555ca41e0f62862d21163ca98637a3ff230c63adc04c756e8e6f6182f9586b9",
+      "metadataFile": "05-wood-before-t615-detail.json",
+      "metadataSha256": "528431ff1ec2738c432d82f12b6f9d45b24c8ca8de4eb40dd2bce0d9697910f4",
+      "state": {
+        "ball": {
+          "pos": {
+            "x": 33086.2973357,
+            "y": 33467.1137593
+          },
+          "vel": {
+            "x": 334.9440105,
+            "y": 332.6853543
+          }
+        },
+        "done": false,
+        "dropId": "board01-start",
+        "finished": false,
+        "nearMissBucketIds": [],
+        "rngU32": 4229712522,
+        "seed": 1842222754,
+        "started": true,
+        "status": "active",
+        "tick": 615,
+        "tickMs": 5,
+        "timeSec": 3.075
+      },
+      "viewport": {
+        "dpr": 1,
+        "height": 720,
+        "width": 1280
+      },
+      "canvas": {
+        "height": 590,
+        "width": 840,
+        "x": 17,
+        "y": 103.5
+      },
+      "controls": [
+        {
+          "checked": false,
+          "id": "seed",
+          "value": "1842222754"
+        },
+        {
+          "checked": false,
+          "id": "count",
+          "value": "10"
+        },
+        {
+          "checked": false,
+          "id": "seek",
+          "value": "615"
+        },
+        {
+          "checked": false,
+          "id": "tick-input",
+          "value": "615"
+        },
+        {
+          "checked": true,
+          "id": "art",
+          "value": "on"
+        },
+        {
+          "checked": false,
+          "id": "geometry",
+          "value": "on"
+        },
+        {
+          "checked": true,
+          "id": "showParts",
+          "value": "on"
+        },
+        {
+          "checked": false,
+          "id": "diagnosticBall",
+          "value": "on"
+        },
+        {
+          "checked": false,
+          "id": "view",
+          "value": "source"
+        },
+        {
+          "checked": false,
+          "id": "zoom",
+          "value": "2"
+        },
+        {
+          "checked": true,
+          "id": "followBall",
+          "value": "on"
+        },
+        {
+          "checked": false,
+          "id": "import",
+          "value": ""
+        }
+      ]
+    },
+    {
+      "file": "06-wood-contact-t616-detail.jpg",
+      "imageSha256": "104eaad76b57612607a9637c5dbaaa0de67171bbc65fef089427a38d175079e8",
+      "metadataFile": "06-wood-contact-t616-detail.json",
+      "metadataSha256": "08e530a3d491f4b1579b8aae25eee5919cf9c5ab3f37c3a65fce4abd0278bb0b",
+      "state": {
+        "ball": {
+          "pos": {
+            "x": 33087.9720558,
+            "y": 33468.8016861
+          },
+          "vel": {
+            "x": 334.9440105,
+            "y": 337.5853543
+          }
+        },
+        "done": false,
+        "dropId": "board01-start",
+        "finished": false,
+        "nearMissBucketIds": [],
+        "rngU32": 4229712522,
+        "seed": 1842222754,
+        "started": true,
+        "status": "active",
+        "tick": 616,
+        "tickMs": 5,
+        "timeSec": 3.08
+      },
+      "viewport": {
+        "dpr": 1,
+        "height": 720,
+        "width": 1280
+      },
+      "canvas": {
+        "height": 590,
+        "width": 840,
+        "x": 17,
+        "y": 103.5
+      },
+      "controls": [
+        {
+          "checked": false,
+          "id": "seed",
+          "value": "1842222754"
+        },
+        {
+          "checked": false,
+          "id": "count",
+          "value": "10"
+        },
+        {
+          "checked": false,
+          "id": "seek",
+          "value": "616"
+        },
+        {
+          "checked": false,
+          "id": "tick-input",
+          "value": "616"
+        },
+        {
+          "checked": true,
+          "id": "art",
+          "value": "on"
+        },
+        {
+          "checked": false,
+          "id": "geometry",
+          "value": "on"
+        },
+        {
+          "checked": true,
+          "id": "showParts",
+          "value": "on"
+        },
+        {
+          "checked": false,
+          "id": "diagnosticBall",
+          "value": "on"
+        },
+        {
+          "checked": false,
+          "id": "view",
+          "value": "source"
+        },
+        {
+          "checked": false,
+          "id": "zoom",
+          "value": "2"
+        },
+        {
+          "checked": true,
+          "id": "followBall",
+          "value": "on"
+        },
+        {
+          "checked": false,
+          "id": "import",
+          "value": ""
+        }
+      ]
+    },
+    {
+      "file": "07-wood-after-t617-detail.jpg",
+      "imageSha256": "52bba87aee819adab2dc6c5514d9b1d8760152cf8e02a65917ff55cdedbe06e2",
+      "metadataFile": "07-wood-after-t617-detail.json",
+      "metadataSha256": "0a584f36d17e3b643c224bd0a172ae73edca56d3534475e25ee4057ac6ea8a81",
+      "state": {
+        "ball": {
+          "pos": {
+            "x": 33089.5282859,
+            "y": 33470.0647343
+          },
+          "vel": {
+            "x": 144.5418614,
+            "y": -387.2083827
+          }
+        },
+        "done": false,
+        "dropId": "board01-start",
+        "finished": false,
+        "nearMissBucketIds": [],
+        "rngU32": 2499212876,
+        "seed": 1842222754,
+        "started": true,
+        "status": "active",
+        "tick": 617,
+        "tickMs": 5,
+        "timeSec": 3.085
+      },
+      "viewport": {
+        "dpr": 1,
+        "height": 720,
+        "width": 1280
+      },
+      "canvas": {
+        "height": 590,
+        "width": 840,
+        "x": 17,
+        "y": 103.5
+      },
+      "controls": [
+        {
+          "checked": false,
+          "id": "seed",
+          "value": "1842222754"
+        },
+        {
+          "checked": false,
+          "id": "count",
+          "value": "10"
+        },
+        {
+          "checked": false,
+          "id": "seek",
+          "value": "617"
+        },
+        {
+          "checked": false,
+          "id": "tick-input",
+          "value": "617"
+        },
+        {
+          "checked": true,
+          "id": "art",
+          "value": "on"
+        },
+        {
+          "checked": false,
+          "id": "geometry",
+          "value": "on"
+        },
+        {
+          "checked": true,
+          "id": "showParts",
+          "value": "on"
+        },
+        {
+          "checked": false,
+          "id": "diagnosticBall",
+          "value": "on"
+        },
+        {
+          "checked": false,
+          "id": "view",
+          "value": "source"
+        },
+        {
+          "checked": false,
+          "id": "zoom",
+          "value": "2"
+        },
+        {
+          "checked": true,
+          "id": "followBall",
+          "value": "on"
+        },
+        {
+          "checked": false,
+          "id": "import",
+          "value": ""
+        }
+      ]
+    },
+    {
+      "file": "08-receiver02-seed1842222754-t2421-normal.jpg",
+      "imageSha256": "a1c8d820f8aa3660ecb6f822e251d36b1bda262be70e9f7a323f5a9009e41be8",
+      "metadataFile": "08-receiver02-seed1842222754-t2421-normal.json",
+      "metadataSha256": "eaa66b343e7720827c5eccdc1eac5051462494a60eb98ecfb027ab7ed36779a7",
+      "state": {
+        "ball": {
+          "pos": {
+            "x": 33125.5579614,
+            "y": 34902.8412534
+          },
+          "vel": {
+            "x": 593.3527495,
+            "y": 796.7864548
+          }
+        },
+        "done": true,
+        "dropId": "board01-start",
+        "finished": true,
+        "nearMissBucketIds": [],
+        "result": {
+          "bucketId": "receiver-02",
+          "kind": "IN_BUCKET"
+        },
+        "rngU32": 3946641644,
+        "seed": 1842222754,
+        "started": true,
+        "status": "finished",
+        "tick": 2421,
+        "tickMs": 5,
+        "timeSec": 12.105
+      },
+      "viewport": {
+        "dpr": 1,
+        "height": 720,
+        "width": 1280
+      },
+      "canvas": {
+        "height": 590,
+        "width": 840,
+        "x": 17,
+        "y": 103.5
+      },
+      "controls": [
+        {
+          "checked": false,
+          "id": "seed",
+          "value": "1842222754"
+        },
+        {
+          "checked": false,
+          "id": "count",
+          "value": "10"
+        },
+        {
+          "checked": false,
+          "id": "seek",
+          "value": "2421"
+        },
+        {
+          "checked": false,
+          "id": "tick-input",
+          "value": "2421"
+        },
+        {
+          "checked": true,
+          "id": "art",
+          "value": "on"
+        },
+        {
+          "checked": false,
+          "id": "geometry",
+          "value": "on"
+        },
+        {
+          "checked": true,
+          "id": "showParts",
+          "value": "on"
+        },
+        {
+          "checked": false,
+          "id": "diagnosticBall",
+          "value": "on"
+        },
+        {
+          "checked": false,
+          "id": "view",
+          "value": "source"
+        },
+        {
+          "checked": false,
+          "id": "zoom",
+          "value": "1"
+        },
+        {
+          "checked": false,
+          "id": "followBall",
+          "value": "on"
+        },
+        {
+          "checked": false,
+          "id": "import",
+          "value": ""
+        }
+      ]
+    },
+    {
+      "file": "09-receiver02-before-t2419-detail.jpg",
+      "imageSha256": "06ebb9db3736aa53464c8677eee61772dd9aaa4396f8ee39b09b0067ae067c90",
+      "metadataFile": "09-receiver02-before-t2419-detail.json",
+      "metadataSha256": "a86cd174c1395a55b8681b7cf257868cbd2377db44a573e742c3578cf44eb003",
+      "state": {
+        "ball": {
+          "pos": {
+            "x": 33119.624434,
+            "y": 34894.8978888
+          },
+          "vel": {
+            "x": 593.3527495,
+            "y": 786.9864548
+          }
+        },
+        "done": false,
+        "dropId": "board01-start",
+        "finished": false,
+        "nearMissBucketIds": [],
+        "rngU32": 3946641644,
+        "seed": 1842222754,
+        "started": true,
+        "status": "active",
+        "tick": 2419,
+        "tickMs": 5,
+        "timeSec": 12.095
+      },
+      "viewport": {
+        "dpr": 1,
+        "height": 720,
+        "width": 1280
+      },
+      "canvas": {
+        "height": 590,
+        "width": 840,
+        "x": 17,
+        "y": 103.5
+      },
+      "controls": [
+        {
+          "checked": false,
+          "id": "seed",
+          "value": "1842222754"
+        },
+        {
+          "checked": false,
+          "id": "count",
+          "value": "10"
+        },
+        {
+          "checked": false,
+          "id": "seek",
+          "value": "2419"
+        },
+        {
+          "checked": false,
+          "id": "tick-input",
+          "value": "2419"
+        },
+        {
+          "checked": true,
+          "id": "art",
+          "value": "on"
+        },
+        {
+          "checked": false,
+          "id": "geometry",
+          "value": "on"
+        },
+        {
+          "checked": true,
+          "id": "showParts",
+          "value": "on"
+        },
+        {
+          "checked": false,
+          "id": "diagnosticBall",
+          "value": "on"
+        },
+        {
+          "checked": false,
+          "id": "view",
+          "value": "source"
+        },
+        {
+          "checked": false,
+          "id": "zoom",
+          "value": "2"
+        },
+        {
+          "checked": true,
+          "id": "followBall",
+          "value": "on"
+        },
+        {
+          "checked": false,
+          "id": "import",
+          "value": ""
+        }
+      ]
+    },
+    {
+      "file": "10-receiver02-at-t2420-detail.jpg",
+      "imageSha256": "3f1ed90d81d1095f26720792dce7a6c7efb6a83a702d63ea277c39681197e170",
+      "metadataFile": "10-receiver02-at-t2420-detail.json",
+      "metadataSha256": "61b712c27c16b88810ffc12eb3b254d6b1ee73fec5473d064840b16976620309",
+      "state": {
+        "ball": {
+          "pos": {
+            "x": 33122.5911977,
+            "y": 34898.8573211
+          },
+          "vel": {
+            "x": 593.3527495,
+            "y": 791.8864548
+          }
+        },
+        "done": false,
+        "dropId": "board01-start",
+        "finished": false,
+        "nearMissBucketIds": [],
+        "rngU32": 3946641644,
+        "seed": 1842222754,
+        "started": true,
+        "status": "active",
+        "tick": 2420,
+        "tickMs": 5,
+        "timeSec": 12.1
+      },
+      "viewport": {
+        "dpr": 1,
+        "height": 720,
+        "width": 1280
+      },
+      "canvas": {
+        "height": 590,
+        "width": 840,
+        "x": 17,
+        "y": 103.5
+      },
+      "controls": [
+        {
+          "checked": false,
+          "id": "seed",
+          "value": "1842222754"
+        },
+        {
+          "checked": false,
+          "id": "count",
+          "value": "10"
+        },
+        {
+          "checked": false,
+          "id": "seek",
+          "value": "2420"
+        },
+        {
+          "checked": false,
+          "id": "tick-input",
+          "value": "2420"
+        },
+        {
+          "checked": true,
+          "id": "art",
+          "value": "on"
+        },
+        {
+          "checked": false,
+          "id": "geometry",
+          "value": "on"
+        },
+        {
+          "checked": true,
+          "id": "showParts",
+          "value": "on"
+        },
+        {
+          "checked": false,
+          "id": "diagnosticBall",
+          "value": "on"
+        },
+        {
+          "checked": false,
+          "id": "view",
+          "value": "source"
+        },
+        {
+          "checked": false,
+          "id": "zoom",
+          "value": "2"
+        },
+        {
+          "checked": true,
+          "id": "followBall",
+          "value": "on"
+        },
+        {
+          "checked": false,
+          "id": "import",
+          "value": ""
+        }
+      ]
+    },
+    {
+      "file": "11-receiver02-capture-t2421-detail.jpg",
+      "imageSha256": "2b897810bf810867b17fba8acc41ac85ce6140268ee2cdd707c198610e1061cc",
+      "metadataFile": "11-receiver02-capture-t2421-detail.json",
+      "metadataSha256": "68293645206a99fe935777b381a49a2323e47cd916e462614d30174ebf1d003b",
+      "state": {
+        "ball": {
+          "pos": {
+            "x": 33125.5579614,
+            "y": 34902.8412534
+          },
+          "vel": {
+            "x": 593.3527495,
+            "y": 796.7864548
+          }
+        },
+        "done": true,
+        "dropId": "board01-start",
+        "finished": true,
+        "nearMissBucketIds": [],
+        "result": {
+          "bucketId": "receiver-02",
+          "kind": "IN_BUCKET"
+        },
+        "rngU32": 3946641644,
+        "seed": 1842222754,
+        "started": true,
+        "status": "finished",
+        "tick": 2421,
+        "tickMs": 5,
+        "timeSec": 12.105
+      },
+      "viewport": {
+        "dpr": 1,
+        "height": 720,
+        "width": 1280
+      },
+      "canvas": {
+        "height": 590,
+        "width": 840,
+        "x": 17,
+        "y": 103.5
+      },
+      "controls": [
+        {
+          "checked": false,
+          "id": "seed",
+          "value": "1842222754"
+        },
+        {
+          "checked": false,
+          "id": "count",
+          "value": "10"
+        },
+        {
+          "checked": false,
+          "id": "seek",
+          "value": "2421"
+        },
+        {
+          "checked": false,
+          "id": "tick-input",
+          "value": "2421"
+        },
+        {
+          "checked": true,
+          "id": "art",
+          "value": "on"
+        },
+        {
+          "checked": false,
+          "id": "geometry",
+          "value": "on"
+        },
+        {
+          "checked": true,
+          "id": "showParts",
+          "value": "on"
+        },
+        {
+          "checked": false,
+          "id": "diagnosticBall",
+          "value": "on"
+        },
+        {
+          "checked": false,
+          "id": "view",
+          "value": "source"
+        },
+        {
+          "checked": false,
+          "id": "zoom",
+          "value": "2"
+        },
+        {
+          "checked": true,
+          "id": "followBall",
+          "value": "on"
+        },
+        {
+          "checked": false,
+          "id": "import",
+          "value": ""
+        }
+      ]
+    },
+    {
+      "file": "12-flower02-seed1842222754-t860.jpg",
+      "imageSha256": "5ae352b5942b390b6d64270741c6521ffea6111c3540031d3da43f2fcac1d3fb",
+      "metadataFile": "12-flower02-seed1842222754-t860.json",
+      "metadataSha256": "367e111e7a6f39fb72a7be7f65fe9c27a781cdf8b9037c98ef7c3e0118de8358",
+      "state": {
+        "ball": {
+          "pos": {
+            "x": 33318.5814197,
+            "y": 33582.3159445
+          },
+          "vel": {
+            "x": 499.8519979,
+            "y": -151.5780694
+          }
+        },
+        "done": false,
+        "dropId": "board01-start",
+        "finished": false,
+        "nearMissBucketIds": [],
+        "rngU32": 326898014,
+        "seed": 1842222754,
+        "started": true,
+        "status": "active",
+        "tick": 860,
+        "tickMs": 5,
+        "timeSec": 4.3
+      },
+      "viewport": {
+        "dpr": 1,
+        "height": 720,
+        "width": 1280
+      },
+      "canvas": {
+        "height": 590,
+        "width": 840,
+        "x": 17,
+        "y": 103.5
+      },
+      "controls": [
+        {
+          "checked": false,
+          "id": "seed",
+          "value": "1842222754"
+        },
+        {
+          "checked": false,
+          "id": "count",
+          "value": "10"
+        },
+        {
+          "checked": false,
+          "id": "seek",
+          "value": "860"
+        },
+        {
+          "checked": false,
+          "id": "tick-input",
+          "value": "860"
+        },
+        {
+          "checked": true,
+          "id": "art",
+          "value": "on"
+        },
+        {
+          "checked": false,
+          "id": "geometry",
+          "value": "on"
+        },
+        {
+          "checked": true,
+          "id": "showParts",
+          "value": "on"
+        },
+        {
+          "checked": false,
+          "id": "diagnosticBall",
+          "value": "on"
+        },
+        {
+          "checked": false,
+          "id": "view",
+          "value": "source"
+        },
+        {
+          "checked": false,
+          "id": "zoom",
+          "value": "2"
+        },
+        {
+          "checked": true,
+          "id": "followBall",
+          "value": "on"
+        },
+        {
+          "checked": false,
+          "id": "import",
+          "value": ""
+        }
+      ]
+    },
+    {
+      "file": "12-flower02-seed1842222754-t868.jpg",
+      "imageSha256": "af031d761ae356a323e487efa1ff28275941764e1ab777129daefaf8de5f14e4",
+      "metadataFile": "12-flower02-seed1842222754-t868.json",
+      "metadataSha256": "5e8e049f626d3895260f79f8cf18b44f984b146eaa131e1924313e53e803bc97",
+      "state": {
+        "ball": {
+          "pos": {
+            "x": 33338.5754997,
+            "y": 33577.1348221
+          },
+          "vel": {
+            "x": 499.8519979,
+            "y": -112.3780694
+          }
+        },
+        "done": false,
+        "dropId": "board01-start",
+        "finished": false,
+        "nearMissBucketIds": [],
+        "rngU32": 326898014,
+        "seed": 1842222754,
+        "started": true,
+        "status": "active",
+        "tick": 868,
+        "tickMs": 5,
+        "timeSec": 4.34
+      },
+      "viewport": {
+        "dpr": 1,
+        "height": 720,
+        "width": 1280
+      },
+      "canvas": {
+        "height": 590,
+        "width": 840,
+        "x": 17,
+        "y": 103.5
+      },
+      "controls": [
+        {
+          "checked": false,
+          "id": "seed",
+          "value": "1842222754"
+        },
+        {
+          "checked": false,
+          "id": "count",
+          "value": "10"
+        },
+        {
+          "checked": false,
+          "id": "seek",
+          "value": "868"
+        },
+        {
+          "checked": false,
+          "id": "tick-input",
+          "value": "868"
+        },
+        {
+          "checked": true,
+          "id": "art",
+          "value": "on"
+        },
+        {
+          "checked": false,
+          "id": "geometry",
+          "value": "on"
+        },
+        {
+          "checked": true,
+          "id": "showParts",
+          "value": "on"
+        },
+        {
+          "checked": false,
+          "id": "diagnosticBall",
+          "value": "on"
+        },
+        {
+          "checked": false,
+          "id": "view",
+          "value": "source"
+        },
+        {
+          "checked": false,
+          "id": "zoom",
+          "value": "2"
+        },
+        {
+          "checked": true,
+          "id": "followBall",
+          "value": "on"
+        },
+        {
+          "checked": false,
+          "id": "import",
+          "value": ""
+        }
+      ]
+    },
+    {
+      "file": "12-flower02-seed1842222754-t869.jpg",
+      "imageSha256": "d23ff2314c18a61f7e338ee5e2037a0bcabf0bb8808e995b1f65b53d1143b75b",
+      "metadataFile": "12-flower02-seed1842222754-t869.json",
+      "metadataSha256": "e9b94ea64e5aacf0f235554c51b0d6eb5f0762d24e51781a156169a52021bd96",
+      "state": {
+        "ball": {
+          "pos": {
+            "x": 33340.7616612,
+            "y": 33576.9650567
+          },
+          "vel": {
+            "x": 10.1297459,
+            "y": 450.6558683
+          }
+        },
+        "done": false,
+        "dropId": "board01-start",
+        "finished": false,
+        "nearMissBucketIds": [],
+        "rngU32": 4177881152,
+        "seed": 1842222754,
+        "started": true,
+        "status": "active",
+        "tick": 869,
+        "tickMs": 5,
+        "timeSec": 4.345
+      },
+      "viewport": {
+        "dpr": 1,
+        "height": 720,
+        "width": 1280
+      },
+      "canvas": {
+        "height": 590,
+        "width": 840,
+        "x": 17,
+        "y": 103.5
+      },
+      "controls": [
+        {
+          "checked": false,
+          "id": "seed",
+          "value": "1842222754"
+        },
+        {
+          "checked": false,
+          "id": "count",
+          "value": "10"
+        },
+        {
+          "checked": false,
+          "id": "seek",
+          "value": "869"
+        },
+        {
+          "checked": false,
+          "id": "tick-input",
+          "value": "869"
+        },
+        {
+          "checked": true,
+          "id": "art",
+          "value": "on"
+        },
+        {
+          "checked": false,
+          "id": "geometry",
+          "value": "on"
+        },
+        {
+          "checked": true,
+          "id": "showParts",
+          "value": "on"
+        },
+        {
+          "checked": false,
+          "id": "diagnosticBall",
+          "value": "on"
+        },
+        {
+          "checked": false,
+          "id": "view",
+          "value": "source"
+        },
+        {
+          "checked": false,
+          "id": "zoom",
+          "value": "2"
+        },
+        {
+          "checked": true,
+          "id": "followBall",
+          "value": "on"
+        },
+        {
+          "checked": false,
+          "id": "import",
+          "value": ""
+        }
+      ]
+    },
+    {
+      "file": "12-frog02-seed1842222754-t430.jpg",
+      "imageSha256": "180f6e4c133f9c29e4ce86f4ee45ab30b17740e63342177242ef2d541d513f02",
+      "metadataFile": "12-frog02-seed1842222754-t430.json",
+      "metadataSha256": "0a3462efcadb2a3ae78d228bdeeb6a815a0b2e997a840144920fa98d6dbc2b57",
+      "state": {
+        "ball": {
+          "pos": {
+            "x": 32965.7897187,
+            "y": 33526.1064907
+          },
+          "vel": {
+            "x": -289.8598378,
+            "y": 725.9517651
+          }
+        },
+        "done": false,
+        "dropId": "board01-start",
+        "finished": false,
+        "nearMissBucketIds": [],
+        "rngU32": 934433526,
+        "seed": 1842222754,
+        "started": true,
+        "status": "active",
+        "tick": 430,
+        "tickMs": 5,
+        "timeSec": 2.15
+      },
+      "viewport": {
+        "dpr": 1,
+        "height": 720,
+        "width": 1280
+      },
+      "canvas": {
+        "height": 590,
+        "width": 840,
+        "x": 17,
+        "y": 103.5
+      },
+      "controls": [
+        {
+          "checked": false,
+          "id": "seed",
+          "value": "1842222754"
+        },
+        {
+          "checked": false,
+          "id": "count",
+          "value": "10"
+        },
+        {
+          "checked": false,
+          "id": "seek",
+          "value": "430"
+        },
+        {
+          "checked": false,
+          "id": "tick-input",
+          "value": "430"
+        },
+        {
+          "checked": true,
+          "id": "art",
+          "value": "on"
+        },
+        {
+          "checked": false,
+          "id": "geometry",
+          "value": "on"
+        },
+        {
+          "checked": true,
+          "id": "showParts",
+          "value": "on"
+        },
+        {
+          "checked": false,
+          "id": "diagnosticBall",
+          "value": "on"
+        },
+        {
+          "checked": false,
+          "id": "view",
+          "value": "source"
+        },
+        {
+          "checked": false,
+          "id": "zoom",
+          "value": "2"
+        },
+        {
+          "checked": true,
+          "id": "followBall",
+          "value": "on"
+        },
+        {
+          "checked": false,
+          "id": "import",
+          "value": ""
+        }
+      ]
+    },
+    {
+      "file": "12-frog02-seed1842222754-t441.jpg",
+      "imageSha256": "44fe90705720a58e2480082cd42ca038c04a3bf6875d5d59e1fa8c7cbadf91a3",
+      "metadataFile": "12-frog02-seed1842222754-t441.json",
+      "metadataSha256": "f3135c3cb83889282e17f74b652e073b8a0ba095851f580d8458df78e9977e4a",
+      "state": {
+        "ball": {
+          "pos": {
+            "x": 32949.8474275,
+            "y": 33567.6508375
+          },
+          "vel": {
+            "x": -289.8598378,
+            "y": 779.8517651
+          }
+        },
+        "done": false,
+        "dropId": "board01-start",
+        "finished": false,
+        "nearMissBucketIds": [],
+        "rngU32": 934433526,
+        "seed": 1842222754,
+        "started": true,
+        "status": "active",
+        "tick": 441,
+        "tickMs": 5,
+        "timeSec": 2.205
+      },
+      "viewport": {
+        "dpr": 1,
+        "height": 720,
+        "width": 1280
+      },
+      "canvas": {
+        "height": 590,
+        "width": 840,
+        "x": 17,
+        "y": 103.5
+      },
+      "controls": [
+        {
+          "checked": false,
+          "id": "seed",
+          "value": "1842222754"
+        },
+        {
+          "checked": false,
+          "id": "count",
+          "value": "10"
+        },
+        {
+          "checked": false,
+          "id": "seek",
+          "value": "441"
+        },
+        {
+          "checked": false,
+          "id": "tick-input",
+          "value": "441"
+        },
+        {
+          "checked": true,
+          "id": "art",
+          "value": "on"
+        },
+        {
+          "checked": false,
+          "id": "geometry",
+          "value": "on"
+        },
+        {
+          "checked": true,
+          "id": "showParts",
+          "value": "on"
+        },
+        {
+          "checked": false,
+          "id": "diagnosticBall",
+          "value": "on"
+        },
+        {
+          "checked": false,
+          "id": "view",
+          "value": "source"
+        },
+        {
+          "checked": false,
+          "id": "zoom",
+          "value": "2"
+        },
+        {
+          "checked": true,
+          "id": "followBall",
+          "value": "on"
+        },
+        {
+          "checked": false,
+          "id": "import",
+          "value": ""
+        }
+      ]
+    },
+    {
+      "file": "12-frog02-seed1842222754-t442.jpg",
+      "imageSha256": "8654e952d71525625c3a6514aaa2252214bfa88a0e066bb3984688e6421f42f2",
+      "metadataFile": "12-frog02-seed1842222754-t442.json",
+      "metadataSha256": "dd435237f92c5ee0b9f85c0955ac9f36274098d9a84dd5432e2d0ce86b7e2299",
+      "state": {
+        "ball": {
+          "pos": {
+            "x": 32948.4005633,
+            "y": 33570.9327351
+          },
+          "vel": {
+            "x": -289.6895117,
+            "y": -626.3496619
+          }
+        },
+        "done": false,
+        "dropId": "board01-start",
+        "finished": false,
+        "nearMissBucketIds": [],
+        "rngU32": 1638487448,
+        "seed": 1842222754,
+        "started": true,
+        "status": "active",
+        "tick": 442,
+        "tickMs": 5,
+        "timeSec": 2.21
+      },
+      "viewport": {
+        "dpr": 1,
+        "height": 720,
+        "width": 1280
+      },
+      "canvas": {
+        "height": 590,
+        "width": 840,
+        "x": 17,
+        "y": 103.5
+      },
+      "controls": [
+        {
+          "checked": false,
+          "id": "seed",
+          "value": "1842222754"
+        },
+        {
+          "checked": false,
+          "id": "count",
+          "value": "10"
+        },
+        {
+          "checked": false,
+          "id": "seek",
+          "value": "442"
+        },
+        {
+          "checked": false,
+          "id": "tick-input",
+          "value": "442"
+        },
+        {
+          "checked": true,
+          "id": "art",
+          "value": "on"
+        },
+        {
+          "checked": false,
+          "id": "geometry",
+          "value": "on"
+        },
+        {
+          "checked": true,
+          "id": "showParts",
+          "value": "on"
+        },
+        {
+          "checked": false,
+          "id": "diagnosticBall",
+          "value": "on"
+        },
+        {
+          "checked": false,
+          "id": "view",
+          "value": "source"
+        },
+        {
+          "checked": false,
+          "id": "zoom",
+          "value": "2"
+        },
+        {
+          "checked": true,
+          "id": "followBall",
+          "value": "on"
+        },
+        {
+          "checked": false,
+          "id": "import",
+          "value": ""
+        }
+      ]
+    },
+    {
+      "file": "12-leaf01-seed1842222754-t85.jpg",
+      "imageSha256": "0cbaccca040a605e413e1cb2b191bd1dc4deb534d06e274f7358cc0505520573",
+      "metadataFile": "12-leaf01-seed1842222754-t85.json",
+      "metadataSha256": "1b4421384ccd5cb692ba11f66ec405cce6f905ded26817d9990c4e33cf8ccb98",
+      "state": {
+        "ball": {
+          "pos": {
+            "x": 33254.8631695,
+            "y": 33241.3608101
+          },
+          "vel": {
+            "x": 0,
+            "y": 416.5
+          }
+        },
+        "done": false,
+        "dropId": "board01-start",
+        "finished": false,
+        "nearMissBucketIds": [],
+        "rngU32": 1842222754,
+        "seed": 1842222754,
+        "started": true,
+        "status": "active",
+        "tick": 85,
+        "tickMs": 5,
+        "timeSec": 0.425
+      },
+      "viewport": {
+        "dpr": 1,
+        "height": 720,
+        "width": 1280
+      },
+      "canvas": {
+        "height": 590,
+        "width": 840,
+        "x": 17,
+        "y": 103.5
+      },
+      "controls": [
+        {
+          "checked": false,
+          "id": "seed",
+          "value": "1842222754"
+        },
+        {
+          "checked": false,
+          "id": "count",
+          "value": "10"
+        },
+        {
+          "checked": false,
+          "id": "seek",
+          "value": "85"
+        },
+        {
+          "checked": false,
+          "id": "tick-input",
+          "value": "85"
+        },
+        {
+          "checked": true,
+          "id": "art",
+          "value": "on"
+        },
+        {
+          "checked": false,
+          "id": "geometry",
+          "value": "on"
+        },
+        {
+          "checked": true,
+          "id": "showParts",
+          "value": "on"
+        },
+        {
+          "checked": false,
+          "id": "diagnosticBall",
+          "value": "on"
+        },
+        {
+          "checked": false,
+          "id": "view",
+          "value": "source"
+        },
+        {
+          "checked": false,
+          "id": "zoom",
+          "value": "2"
+        },
+        {
+          "checked": true,
+          "id": "followBall",
+          "value": "on"
+        },
+        {
+          "checked": false,
+          "id": "import",
+          "value": ""
+        }
+      ]
+    },
+    {
+      "file": "12-leaf01-seed1842222754-t94.jpg",
+      "imageSha256": "0e563676ee97e2debef4be103364b0f2cb46ce36567a3bd51617e661e26f867d",
+      "metadataFile": "12-leaf01-seed1842222754-t94.json",
+      "metadataSha256": "cdbf6661ce6005454807ed0c606d125a0933930ebabd2e0a32db21048e5fde9d",
+      "state": {
+        "ball": {
+          "pos": {
+            "x": 33254.8631695,
+            "y": 33261.2058101
+          },
+          "vel": {
+            "x": 0,
+            "y": 460.6
+          }
+        },
+        "done": false,
+        "dropId": "board01-start",
+        "finished": false,
+        "nearMissBucketIds": [],
+        "rngU32": 1842222754,
+        "seed": 1842222754,
+        "started": true,
+        "status": "active",
+        "tick": 94,
+        "tickMs": 5,
+        "timeSec": 0.47
+      },
+      "viewport": {
+        "dpr": 1,
+        "height": 720,
+        "width": 1280
+      },
+      "canvas": {
+        "height": 590,
+        "width": 840,
+        "x": 17,
+        "y": 103.5
+      },
+      "controls": [
+        {
+          "checked": false,
+          "id": "seed",
+          "value": "1842222754"
+        },
+        {
+          "checked": false,
+          "id": "count",
+          "value": "10"
+        },
+        {
+          "checked": false,
+          "id": "seek",
+          "value": "94"
+        },
+        {
+          "checked": false,
+          "id": "tick-input",
+          "value": "94"
+        },
+        {
+          "checked": true,
+          "id": "art",
+          "value": "on"
+        },
+        {
+          "checked": false,
+          "id": "geometry",
+          "value": "on"
+        },
+        {
+          "checked": true,
+          "id": "showParts",
+          "value": "on"
+        },
+        {
+          "checked": false,
+          "id": "diagnosticBall",
+          "value": "on"
+        },
+        {
+          "checked": false,
+          "id": "view",
+          "value": "source"
+        },
+        {
+          "checked": false,
+          "id": "zoom",
+          "value": "2"
+        },
+        {
+          "checked": true,
+          "id": "followBall",
+          "value": "on"
+        },
+        {
+          "checked": false,
+          "id": "import",
+          "value": ""
+        }
+      ]
+    },
+    {
+      "file": "12-leaf01-seed1842222754-t95.jpg",
+      "imageSha256": "3a7b9cd8aac01a46a2fc817f9339cc7c5371788aef03a74eef81a35f69446832",
+      "metadataFile": "12-leaf01-seed1842222754-t95.json",
+      "metadataSha256": "3afbf02c3984f34449dbf6dc37e50109b1311a29f22197e32d3122736dc84172",
+      "state": {
+        "ball": {
+          "pos": {
+            "x": 33254.8464511,
+            "y": 33263.0448323
+          },
+          "vel": {
+            "x": -32.8056722,
+            "y": -368.9416512
+          }
+        },
+        "done": false,
+        "dropId": "board01-start",
+        "finished": false,
+        "nearMissBucketIds": [],
+        "rngU32": 1441747492,
+        "seed": 1842222754,
+        "started": true,
+        "status": "active",
+        "tick": 95,
+        "tickMs": 5,
+        "timeSec": 0.475
+      },
+      "viewport": {
+        "dpr": 1,
+        "height": 720,
+        "width": 1280
+      },
+      "canvas": {
+        "height": 590,
+        "width": 840,
+        "x": 17,
+        "y": 103.5
+      },
+      "controls": [
+        {
+          "checked": false,
+          "id": "seed",
+          "value": "1842222754"
+        },
+        {
+          "checked": false,
+          "id": "count",
+          "value": "10"
+        },
+        {
+          "checked": false,
+          "id": "seek",
+          "value": "95"
+        },
+        {
+          "checked": false,
+          "id": "tick-input",
+          "value": "95"
+        },
+        {
+          "checked": true,
+          "id": "art",
+          "value": "on"
+        },
+        {
+          "checked": false,
+          "id": "geometry",
+          "value": "on"
+        },
+        {
+          "checked": true,
+          "id": "showParts",
+          "value": "on"
+        },
+        {
+          "checked": false,
+          "id": "diagnosticBall",
+          "value": "on"
+        },
+        {
+          "checked": false,
+          "id": "view",
+          "value": "source"
+        },
+        {
+          "checked": false,
+          "id": "zoom",
+          "value": "2"
+        },
+        {
+          "checked": true,
+          "id": "followBall",
+          "value": "on"
+        },
+        {
+          "checked": false,
+          "id": "import",
+          "value": ""
+        }
+      ]
+    },
+    {
+      "file": "13-flower02-t869-view.jpg",
+      "imageSha256": "d23ff2314c18a61f7e338ee5e2037a0bcabf0bb8808e995b1f65b53d1143b75b",
+      "metadataFile": "13-flower02-t869-view.json",
+      "metadataSha256": "e9b94ea64e5aacf0f235554c51b0d6eb5f0762d24e51781a156169a52021bd96",
+      "state": {
+        "ball": {
+          "pos": {
+            "x": 33340.7616612,
+            "y": 33576.9650567
+          },
+          "vel": {
+            "x": 10.1297459,
+            "y": 450.6558683
+          }
+        },
+        "done": false,
+        "dropId": "board01-start",
+        "finished": false,
+        "nearMissBucketIds": [],
+        "rngU32": 4177881152,
+        "seed": 1842222754,
+        "started": true,
+        "status": "active",
+        "tick": 869,
+        "tickMs": 5,
+        "timeSec": 4.345
+      },
+      "viewport": {
+        "dpr": 1,
+        "height": 720,
+        "width": 1280
+      },
+      "canvas": {
+        "height": 590,
+        "width": 840,
+        "x": 17,
+        "y": 103.5
+      },
+      "controls": [
+        {
+          "checked": false,
+          "id": "seed",
+          "value": "1842222754"
+        },
+        {
+          "checked": false,
+          "id": "count",
+          "value": "10"
+        },
+        {
+          "checked": false,
+          "id": "seek",
+          "value": "869"
+        },
+        {
+          "checked": false,
+          "id": "tick-input",
+          "value": "869"
+        },
+        {
+          "checked": true,
+          "id": "art",
+          "value": "on"
+        },
+        {
+          "checked": false,
+          "id": "geometry",
+          "value": "on"
+        },
+        {
+          "checked": true,
+          "id": "showParts",
+          "value": "on"
+        },
+        {
+          "checked": false,
+          "id": "diagnosticBall",
+          "value": "on"
+        },
+        {
+          "checked": false,
+          "id": "view",
+          "value": "source"
+        },
+        {
+          "checked": false,
+          "id": "zoom",
+          "value": "2"
+        },
+        {
+          "checked": true,
+          "id": "followBall",
+          "value": "on"
+        },
+        {
+          "checked": false,
+          "id": "import",
+          "value": ""
+        }
+      ]
+    },
+    {
+      "file": "14-side-seed2964851399-t543.jpg",
+      "imageSha256": "0ed940252991d66fc18b0c1b52b13b9b2a45aa1721c0161bb9d804b51d5853d1",
+      "metadataFile": "14-side-seed2964851399-t543.json",
+      "metadataSha256": "57c32c1a5e0870cc533ce6c928f1e049ab343300a8fea1f3c424dd88506ec985",
+      "state": {
+        "ball": {
+          "pos": {
+            "x": 33049.9997743,
+            "y": 33519.0880759
+          },
+          "vel": {
+            "x": 516.8484005,
+            "y": 163.0644247
+          }
+        },
+        "done": false,
+        "dropId": "board01-start",
+        "finished": false,
+        "nearMissBucketIds": [],
+        "rngU32": 370262863,
+        "seed": 2964851399,
+        "started": true,
+        "status": "active",
+        "tick": 543,
+        "tickMs": 5,
+        "timeSec": 2.715
+      },
+      "viewport": {
+        "dpr": 1,
+        "height": 720,
+        "width": 1280
+      },
+      "canvas": {
+        "height": 590,
+        "width": 840,
+        "x": 17,
+        "y": 103.5
+      },
+      "controls": [
+        {
+          "checked": false,
+          "id": "seed",
+          "value": "2964851399"
+        },
+        {
+          "checked": false,
+          "id": "count",
+          "value": "10"
+        },
+        {
+          "checked": false,
+          "id": "seek",
+          "value": "543"
+        },
+        {
+          "checked": false,
+          "id": "tick-input",
+          "value": "543"
+        },
+        {
+          "checked": true,
+          "id": "art",
+          "value": "on"
+        },
+        {
+          "checked": false,
+          "id": "geometry",
+          "value": "on"
+        },
+        {
+          "checked": true,
+          "id": "showParts",
+          "value": "on"
+        },
+        {
+          "checked": false,
+          "id": "diagnosticBall",
+          "value": "on"
+        },
+        {
+          "checked": false,
+          "id": "view",
+          "value": "source"
+        },
+        {
+          "checked": false,
+          "id": "zoom",
+          "value": "2"
+        },
+        {
+          "checked": true,
+          "id": "followBall",
+          "value": "on"
+        },
+        {
+          "checked": false,
+          "id": "import",
+          "value": ""
+        }
+      ]
+    },
+    {
+      "file": "14-side-seed2964851399-t544.jpg",
+      "imageSha256": "5974c5a86ca6c3b2ed9b774827e97cd72616c73e00ed3064c37e347e887309bd",
+      "metadataFile": "14-side-seed2964851399-t544.json",
+      "metadataSha256": "98aaf81acaef113f9639cc82c2e305b11e6d55225ea1c310e4dd345bcff3340d",
+      "state": {
+        "ball": {
+          "pos": {
+            "x": 33052.5840163,
+            "y": 33519.927898
+          },
+          "vel": {
+            "x": 516.8484005,
+            "y": 167.9644247
+          }
+        },
+        "done": false,
+        "dropId": "board01-start",
+        "finished": false,
+        "nearMissBucketIds": [],
+        "rngU32": 370262863,
+        "seed": 2964851399,
+        "started": true,
+        "status": "active",
+        "tick": 544,
+        "tickMs": 5,
+        "timeSec": 2.72
+      },
+      "viewport": {
+        "dpr": 1,
+        "height": 720,
+        "width": 1280
+      },
+      "canvas": {
+        "height": 590,
+        "width": 840,
+        "x": 17,
+        "y": 103.5
+      },
+      "controls": [
+        {
+          "checked": false,
+          "id": "seed",
+          "value": "2964851399"
+        },
+        {
+          "checked": false,
+          "id": "count",
+          "value": "10"
+        },
+        {
+          "checked": false,
+          "id": "seek",
+          "value": "544"
+        },
+        {
+          "checked": false,
+          "id": "tick-input",
+          "value": "544"
+        },
+        {
+          "checked": true,
+          "id": "art",
+          "value": "on"
+        },
+        {
+          "checked": false,
+          "id": "geometry",
+          "value": "on"
+        },
+        {
+          "checked": true,
+          "id": "showParts",
+          "value": "on"
+        },
+        {
+          "checked": false,
+          "id": "diagnosticBall",
+          "value": "on"
+        },
+        {
+          "checked": false,
+          "id": "view",
+          "value": "source"
+        },
+        {
+          "checked": false,
+          "id": "zoom",
+          "value": "2"
+        },
+        {
+          "checked": true,
+          "id": "followBall",
+          "value": "on"
+        },
+        {
+          "checked": false,
+          "id": "import",
+          "value": ""
+        }
+      ]
+    },
+    {
+      "file": "14-side-seed2964851399-t545.jpg",
+      "imageSha256": "d4ab1967eb2c60e125810acf92685c6e79370c0d07699557da293bda61fe3602",
+      "metadataFile": "14-side-seed2964851399-t545.json",
+      "metadataSha256": "032ead4975baac8db2ce97503c2f6ab643c7749f3736d61c9d68078435bcc26b",
+      "state": {
+        "ball": {
+          "pos": {
+            "x": 33053.5757499,
+            "y": 33520.923571
+          },
+          "vel": {
+            "x": -378.9275213,
+            "y": 259.3565201
+          }
+        },
+        "done": false,
+        "dropId": "board01-start",
+        "finished": false,
+        "nearMissBucketIds": [],
+        "rngU32": 226655321,
+        "seed": 2964851399,
+        "started": true,
+        "status": "active",
+        "tick": 545,
+        "tickMs": 5,
+        "timeSec": 2.725
+      },
+      "viewport": {
+        "dpr": 1,
+        "height": 720,
+        "width": 1280
+      },
+      "canvas": {
+        "height": 590,
+        "width": 840,
+        "x": 17,
+        "y": 103.5
+      },
+      "controls": [
+        {
+          "checked": false,
+          "id": "seed",
+          "value": "2964851399"
+        },
+        {
+          "checked": false,
+          "id": "count",
+          "value": "10"
+        },
+        {
+          "checked": false,
+          "id": "seek",
+          "value": "545"
+        },
+        {
+          "checked": false,
+          "id": "tick-input",
+          "value": "545"
+        },
+        {
+          "checked": true,
+          "id": "art",
+          "value": "on"
+        },
+        {
+          "checked": false,
+          "id": "geometry",
+          "value": "on"
+        },
+        {
+          "checked": true,
+          "id": "showParts",
+          "value": "on"
+        },
+        {
+          "checked": false,
+          "id": "diagnosticBall",
+          "value": "on"
+        },
+        {
+          "checked": false,
+          "id": "view",
+          "value": "source"
+        },
+        {
+          "checked": false,
+          "id": "zoom",
+          "value": "2"
+        },
+        {
+          "checked": true,
+          "id": "followBall",
+          "value": "on"
+        },
+        {
+          "checked": false,
+          "id": "import",
+          "value": ""
+        }
+      ]
+    },
+    {
+      "file": "15-side-seed2964851399-t545-detail.jpg",
+      "imageSha256": "d4ab1967eb2c60e125810acf92685c6e79370c0d07699557da293bda61fe3602",
+      "metadataFile": "15-side-seed2964851399-t545-detail.json",
+      "metadataSha256": "032ead4975baac8db2ce97503c2f6ab643c7749f3736d61c9d68078435bcc26b",
+      "state": {
+        "ball": {
+          "pos": {
+            "x": 33053.5757499,
+            "y": 33520.923571
+          },
+          "vel": {
+            "x": -378.9275213,
+            "y": 259.3565201
+          }
+        },
+        "done": false,
+        "dropId": "board01-start",
+        "finished": false,
+        "nearMissBucketIds": [],
+        "rngU32": 226655321,
+        "seed": 2964851399,
+        "started": true,
+        "status": "active",
+        "tick": 545,
+        "tickMs": 5,
+        "timeSec": 2.725
+      },
+      "viewport": {
+        "dpr": 1,
+        "height": 720,
+        "width": 1280
+      },
+      "canvas": {
+        "height": 590,
+        "width": 840,
+        "x": 17,
+        "y": 103.5
+      },
+      "controls": [
+        {
+          "checked": false,
+          "id": "seed",
+          "value": "2964851399"
+        },
+        {
+          "checked": false,
+          "id": "count",
+          "value": "10"
+        },
+        {
+          "checked": false,
+          "id": "seek",
+          "value": "545"
+        },
+        {
+          "checked": false,
+          "id": "tick-input",
+          "value": "545"
+        },
+        {
+          "checked": true,
+          "id": "art",
+          "value": "on"
+        },
+        {
+          "checked": false,
+          "id": "geometry",
+          "value": "on"
+        },
+        {
+          "checked": true,
+          "id": "showParts",
+          "value": "on"
+        },
+        {
+          "checked": false,
+          "id": "diagnosticBall",
+          "value": "on"
+        },
+        {
+          "checked": false,
+          "id": "view",
+          "value": "source"
+        },
+        {
+          "checked": false,
+          "id": "zoom",
+          "value": "2"
+        },
+        {
+          "checked": true,
+          "id": "followBall",
+          "value": "on"
+        },
+        {
+          "checked": false,
+          "id": "import",
+          "value": ""
+        }
+      ]
+    },
+    {
+      "file": "16-side-t545-geometry.jpg",
+      "imageSha256": "c91fe38a0b9803978d08ac04f739bd2591a7fb582b7caeb1eea29b9c7ece8ec3",
+      "metadataFile": "16-side-t545-geometry.json",
+      "metadataSha256": "6bbcca6b6f7e201ada96edd9b945b9067cd71d9d9ee2853090ec5b76c85aeed9",
+      "state": {
+        "ball": {
+          "pos": {
+            "x": 33053.5757499,
+            "y": 33520.923571
+          },
+          "vel": {
+            "x": -378.9275213,
+            "y": 259.3565201
+          }
+        },
+        "done": false,
+        "dropId": "board01-start",
+        "finished": false,
+        "nearMissBucketIds": [],
+        "rngU32": 226655321,
+        "seed": 2964851399,
+        "started": true,
+        "status": "active",
+        "tick": 545,
+        "tickMs": 5,
+        "timeSec": 2.725
+      },
+      "viewport": {
+        "dpr": 1,
+        "height": 720,
+        "width": 1280
+      },
+      "canvas": {
+        "height": 590,
+        "width": 840,
+        "x": 17,
+        "y": 103.5
+      },
+      "controls": [
+        {
+          "checked": false,
+          "id": "seed",
+          "value": "2964851399"
+        },
+        {
+          "checked": false,
+          "id": "count",
+          "value": "10"
+        },
+        {
+          "checked": false,
+          "id": "seek",
+          "value": "545"
+        },
+        {
+          "checked": false,
+          "id": "tick-input",
+          "value": "545"
+        },
+        {
+          "checked": true,
+          "id": "art",
+          "value": "on"
+        },
+        {
+          "checked": true,
+          "id": "geometry",
+          "value": "on"
+        },
+        {
+          "checked": true,
+          "id": "showParts",
+          "value": "on"
+        },
+        {
+          "checked": false,
+          "id": "diagnosticBall",
+          "value": "on"
+        },
+        {
+          "checked": false,
+          "id": "view",
+          "value": "source"
+        },
+        {
+          "checked": false,
+          "id": "zoom",
+          "value": "2"
+        },
+        {
+          "checked": true,
+          "id": "followBall",
+          "value": "on"
+        },
+        {
+          "checked": false,
+          "id": "import",
+          "value": ""
+        }
+      ]
+    },
+    {
+      "file": "17-side-t545-art-off.jpg",
+      "imageSha256": "407b0e611e40d5b2e786fcf0aae87d6b1b809189df65a4ffe36544138c0ab9c3",
+      "metadataFile": "17-side-t545-art-off.json",
+      "metadataSha256": "7502d8a1ac37314272f54ec4ddfcd57698ee238f21cffde0e59e56c306857689",
+      "state": {
+        "ball": {
+          "pos": {
+            "x": 33053.5757499,
+            "y": 33520.923571
+          },
+          "vel": {
+            "x": -378.9275213,
+            "y": 259.3565201
+          }
+        },
+        "done": false,
+        "dropId": "board01-start",
+        "finished": false,
+        "nearMissBucketIds": [],
+        "rngU32": 226655321,
+        "seed": 2964851399,
+        "started": true,
+        "status": "active",
+        "tick": 545,
+        "tickMs": 5,
+        "timeSec": 2.725
+      },
+      "viewport": {
+        "dpr": 1,
+        "height": 720,
+        "width": 1280
+      },
+      "canvas": {
+        "height": 590,
+        "width": 840,
+        "x": 17,
+        "y": 103.5
+      },
+      "controls": [
+        {
+          "checked": false,
+          "id": "seed",
+          "value": "2964851399"
+        },
+        {
+          "checked": false,
+          "id": "count",
+          "value": "10"
+        },
+        {
+          "checked": false,
+          "id": "seek",
+          "value": "545"
+        },
+        {
+          "checked": false,
+          "id": "tick-input",
+          "value": "545"
+        },
+        {
+          "checked": false,
+          "id": "art",
+          "value": "on"
+        },
+        {
+          "checked": true,
+          "id": "geometry",
+          "value": "on"
+        },
+        {
+          "checked": true,
+          "id": "showParts",
+          "value": "on"
+        },
+        {
+          "checked": false,
+          "id": "diagnosticBall",
+          "value": "on"
+        },
+        {
+          "checked": false,
+          "id": "view",
+          "value": "source"
+        },
+        {
+          "checked": false,
+          "id": "zoom",
+          "value": "2"
+        },
+        {
+          "checked": true,
+          "id": "followBall",
+          "value": "on"
+        },
+        {
+          "checked": false,
+          "id": "import",
+          "value": ""
+        }
+      ]
+    },
+    {
+      "file": "18-left2-seed2964851399-t470.jpg",
+      "imageSha256": "6f21be5694060606f0cb6a23cd0a9d9bf80acd425f68e197088aaf9c6ea2a71e",
+      "metadataFile": "18-left2-seed2964851399-t470.json",
+      "metadataSha256": "bae1061e7de277ee34ed991c41730a124a4f6f14563fcc79c46d55b64c5371fb",
+      "state": {
+        "ball": {
+          "pos": {
+            "x": 32870.9725028,
+            "y": 33525.3805841
+          },
+          "vel": {
+            "x": -553.6596992,
+            "y": -354.7662537
+          }
+        },
+        "done": false,
+        "dropId": "board01-start",
+        "finished": false,
+        "nearMissBucketIds": [],
+        "rngU32": 4082361941,
+        "seed": 2964851399,
+        "started": true,
+        "status": "active",
+        "tick": 470,
+        "tickMs": 5,
+        "timeSec": 2.35
+      },
+      "viewport": {
+        "dpr": 1,
+        "height": 720,
+        "width": 1280
+      },
+      "canvas": {
+        "height": 590,
+        "width": 840,
+        "x": 17,
+        "y": 103.5
+      },
+      "controls": [
+        {
+          "checked": false,
+          "id": "seed",
+          "value": "2964851399"
+        },
+        {
+          "checked": false,
+          "id": "count",
+          "value": "10"
+        },
+        {
+          "checked": false,
+          "id": "seek",
+          "value": "470"
+        },
+        {
+          "checked": false,
+          "id": "tick-input",
+          "value": "470"
+        },
+        {
+          "checked": true,
+          "id": "art",
+          "value": "on"
+        },
+        {
+          "checked": false,
+          "id": "geometry",
+          "value": "on"
+        },
+        {
+          "checked": true,
+          "id": "showParts",
+          "value": "on"
+        },
+        {
+          "checked": false,
+          "id": "diagnosticBall",
+          "value": "on"
+        },
+        {
+          "checked": false,
+          "id": "view",
+          "value": "source"
+        },
+        {
+          "checked": false,
+          "id": "zoom",
+          "value": "2"
+        },
+        {
+          "checked": true,
+          "id": "followBall",
+          "value": "on"
+        },
+        {
+          "checked": false,
+          "id": "import",
+          "value": ""
+        }
+      ]
+    },
+    {
+      "file": "18-left2-seed2964851399-t471.jpg",
+      "imageSha256": "5202a34ea0785c5b45a8f248b2ed75a87d9b5eabbfe371bba5c6916ae6124747",
+      "metadataFile": "18-left2-seed2964851399-t471.json",
+      "metadataSha256": "7e2f1cbc9f1387bda2aa750b119020ef4f4790f29486a40bfaf5b1b3d5a980ad",
+      "state": {
+        "ball": {
+          "pos": {
+            "x": 32868.2042043,
+            "y": 33523.6312528
+          },
+          "vel": {
+            "x": -553.6596992,
+            "y": -349.8662537
+          }
+        },
+        "done": false,
+        "dropId": "board01-start",
+        "finished": false,
+        "nearMissBucketIds": [],
+        "rngU32": 4082361941,
+        "seed": 2964851399,
+        "started": true,
+        "status": "active",
+        "tick": 471,
+        "tickMs": 5,
+        "timeSec": 2.355
+      },
+      "viewport": {
+        "dpr": 1,
+        "height": 720,
+        "width": 1280
+      },
+      "canvas": {
+        "height": 590,
+        "width": 840,
+        "x": 17,
+        "y": 103.5
+      },
+      "controls": [
+        {
+          "checked": false,
+          "id": "seed",
+          "value": "2964851399"
+        },
+        {
+          "checked": false,
+          "id": "count",
+          "value": "10"
+        },
+        {
+          "checked": false,
+          "id": "seek",
+          "value": "471"
+        },
+        {
+          "checked": false,
+          "id": "tick-input",
+          "value": "471"
+        },
+        {
+          "checked": true,
+          "id": "art",
+          "value": "on"
+        },
+        {
+          "checked": false,
+          "id": "geometry",
+          "value": "on"
+        },
+        {
+          "checked": true,
+          "id": "showParts",
+          "value": "on"
+        },
+        {
+          "checked": false,
+          "id": "diagnosticBall",
+          "value": "on"
+        },
+        {
+          "checked": false,
+          "id": "view",
+          "value": "source"
+        },
+        {
+          "checked": false,
+          "id": "zoom",
+          "value": "2"
+        },
+        {
+          "checked": true,
+          "id": "followBall",
+          "value": "on"
+        },
+        {
+          "checked": false,
+          "id": "import",
+          "value": ""
+        }
+      ]
+    },
+    {
+      "file": "18-left2-seed2964851399-t472.jpg",
+      "imageSha256": "54972713a6a7c527e45b437fede2e97718f53c5b153c1d5adb8ad3370a7624dc",
+      "metadataFile": "18-left2-seed2964851399-t472.json",
+      "metadataSha256": "d123675e02bca42c414ca9f7495d16bb1584f7bf8d01c5ef2e4d0b3448eafd58",
+      "state": {
+        "ball": {
+          "pos": {
+            "x": 32866.5185923,
+            "y": 33522.0827068
+          },
+          "vel": {
+            "x": 516.8484005,
+            "y": -184.8355753
+          }
+        },
+        "done": false,
+        "dropId": "board01-start",
+        "finished": false,
+        "nearMissBucketIds": [],
+        "rngU32": 370262863,
+        "seed": 2964851399,
+        "started": true,
+        "status": "active",
+        "tick": 472,
+        "tickMs": 5,
+        "timeSec": 2.36
+      },
+      "viewport": {
+        "dpr": 1,
+        "height": 720,
+        "width": 1280
+      },
+      "canvas": {
+        "height": 590,
+        "width": 840,
+        "x": 17,
+        "y": 103.5
+      },
+      "controls": [
+        {
+          "checked": false,
+          "id": "seed",
+          "value": "2964851399"
+        },
+        {
+          "checked": false,
+          "id": "count",
+          "value": "10"
+        },
+        {
+          "checked": false,
+          "id": "seek",
+          "value": "472"
+        },
+        {
+          "checked": false,
+          "id": "tick-input",
+          "value": "472"
+        },
+        {
+          "checked": true,
+          "id": "art",
+          "value": "on"
+        },
+        {
+          "checked": false,
+          "id": "geometry",
+          "value": "on"
+        },
+        {
+          "checked": true,
+          "id": "showParts",
+          "value": "on"
+        },
+        {
+          "checked": false,
+          "id": "diagnosticBall",
+          "value": "on"
+        },
+        {
+          "checked": false,
+          "id": "view",
+          "value": "source"
+        },
+        {
+          "checked": false,
+          "id": "zoom",
+          "value": "2"
+        },
+        {
+          "checked": true,
+          "id": "followBall",
+          "value": "on"
+        },
+        {
+          "checked": false,
+          "id": "import",
+          "value": ""
+        }
+      ]
+    },
+    {
+      "file": "19-left2-t472-view.jpg",
+      "imageSha256": "54972713a6a7c527e45b437fede2e97718f53c5b153c1d5adb8ad3370a7624dc",
+      "metadataFile": "19-left2-t472-view.json",
+      "metadataSha256": "d123675e02bca42c414ca9f7495d16bb1584f7bf8d01c5ef2e4d0b3448eafd58",
+      "state": {
+        "ball": {
+          "pos": {
+            "x": 32866.5185923,
+            "y": 33522.0827068
+          },
+          "vel": {
+            "x": 516.8484005,
+            "y": -184.8355753
+          }
+        },
+        "done": false,
+        "dropId": "board01-start",
+        "finished": false,
+        "nearMissBucketIds": [],
+        "rngU32": 370262863,
+        "seed": 2964851399,
+        "started": true,
+        "status": "active",
+        "tick": 472,
+        "tickMs": 5,
+        "timeSec": 2.36
+      },
+      "viewport": {
+        "dpr": 1,
+        "height": 720,
+        "width": 1280
+      },
+      "canvas": {
+        "height": 590,
+        "width": 840,
+        "x": 17,
+        "y": 103.5
+      },
+      "controls": [
+        {
+          "checked": false,
+          "id": "seed",
+          "value": "2964851399"
+        },
+        {
+          "checked": false,
+          "id": "count",
+          "value": "10"
+        },
+        {
+          "checked": false,
+          "id": "seek",
+          "value": "472"
+        },
+        {
+          "checked": false,
+          "id": "tick-input",
+          "value": "472"
+        },
+        {
+          "checked": true,
+          "id": "art",
+          "value": "on"
+        },
+        {
+          "checked": false,
+          "id": "geometry",
+          "value": "on"
+        },
+        {
+          "checked": true,
+          "id": "showParts",
+          "value": "on"
+        },
+        {
+          "checked": false,
+          "id": "diagnosticBall",
+          "value": "on"
+        },
+        {
+          "checked": false,
+          "id": "view",
+          "value": "source"
+        },
+        {
+          "checked": false,
+          "id": "zoom",
+          "value": "2"
+        },
+        {
+          "checked": true,
+          "id": "followBall",
+          "value": "on"
+        },
+        {
+          "checked": false,
+          "id": "import",
+          "value": ""
+        }
+      ]
+    },
+    {
+      "file": "20-seed2964851399-LOST-t1323-normal.jpg",
+      "imageSha256": "6f2a87c79d5006ec815d793ce1abb0f2903f19faf3720db84806f40e7abc7c68",
+      "metadataFile": "20-seed2964851399-LOST-t1323-normal.json",
+      "metadataSha256": "a1255f8105ef93c87940ab557a2ade8c5d0f796abaaff80b8f35aa701fbd8208",
+      "state": {
+        "ball": {
+          "pos": {
+            "x": 33677.7269946,
+            "y": 35373.2786713
+          },
+          "vel": {
+            "x": 551.5115774,
+            "y": 1774.7334134
+          }
+        },
+        "done": true,
+        "dropId": "board01-start",
+        "finished": true,
+        "nearMissBucketIds": [],
+        "result": {
+          "finalX": 33677.7269946,
+          "kind": "LOST",
+          "nearMissBucketIds": []
+        },
+        "rngU32": 1409817083,
+        "seed": 2964851399,
+        "started": true,
+        "status": "finished",
+        "tick": 1323,
+        "tickMs": 5,
+        "timeSec": 6.615
+      },
+      "viewport": {
+        "dpr": 1,
+        "height": 720,
+        "width": 1280
+      },
+      "canvas": {
+        "height": 590,
+        "width": 840,
+        "x": 17,
+        "y": 103.5
+      },
+      "controls": [
+        {
+          "checked": false,
+          "id": "seed",
+          "value": "2964851399"
+        },
+        {
+          "checked": false,
+          "id": "count",
+          "value": "10"
+        },
+        {
+          "checked": false,
+          "id": "seek",
+          "value": "1323"
+        },
+        {
+          "checked": false,
+          "id": "tick-input",
+          "value": "1323"
+        },
+        {
+          "checked": true,
+          "id": "art",
+          "value": "on"
+        },
+        {
+          "checked": false,
+          "id": "geometry",
+          "value": "on"
+        },
+        {
+          "checked": true,
+          "id": "showParts",
+          "value": "on"
+        },
+        {
+          "checked": false,
+          "id": "diagnosticBall",
+          "value": "on"
+        },
+        {
+          "checked": false,
+          "id": "view",
+          "value": "source"
+        },
+        {
+          "checked": false,
+          "id": "zoom",
+          "value": "1"
+        },
+        {
+          "checked": false,
+          "id": "followBall",
+          "value": "on"
+        },
+        {
+          "checked": false,
+          "id": "import",
+          "value": ""
+        }
+      ]
+    },
+    {
+      "file": "21-LOST-approach-seed2964851399-t1200.jpg",
+      "imageSha256": "64ae40897b30e1db2acf0b67dbddd19901c19484ba1c7fef07d2a6083a98af72",
+      "metadataFile": "21-LOST-approach-seed2964851399-t1200.json",
+      "metadataSha256": "7f5b10c9fdcd78c7828e0765ae7e30b3689098a4d55cc470bab38a00d03a1468",
+      "state": {
+        "ball": {
+          "pos": {
+            "x": 33338.5473729,
+            "y": 34465.641118
+          },
+          "vel": {
+            "x": 551.5115774,
+            "y": 1172.0334134
+          }
+        },
+        "done": false,
+        "dropId": "board01-start",
+        "finished": false,
+        "nearMissBucketIds": [],
+        "rngU32": 1409817083,
+        "seed": 2964851399,
+        "started": true,
+        "status": "active",
+        "tick": 1200,
+        "tickMs": 5,
+        "timeSec": 6
+      },
+      "viewport": {
+        "dpr": 1,
+        "height": 720,
+        "width": 1280
+      },
+      "canvas": {
+        "height": 590,
+        "width": 840,
+        "x": 17,
+        "y": 103.5
+      },
+      "controls": [
+        {
+          "checked": false,
+          "id": "seed",
+          "value": "2964851399"
+        },
+        {
+          "checked": false,
+          "id": "count",
+          "value": "10"
+        },
+        {
+          "checked": false,
+          "id": "seek",
+          "value": "1200"
+        },
+        {
+          "checked": false,
+          "id": "tick-input",
+          "value": "1200"
+        },
+        {
+          "checked": true,
+          "id": "art",
+          "value": "on"
+        },
+        {
+          "checked": false,
+          "id": "geometry",
+          "value": "on"
+        },
+        {
+          "checked": true,
+          "id": "showParts",
+          "value": "on"
+        },
+        {
+          "checked": false,
+          "id": "diagnosticBall",
+          "value": "on"
+        },
+        {
+          "checked": false,
+          "id": "view",
+          "value": "source"
+        },
+        {
+          "checked": false,
+          "id": "zoom",
+          "value": "2"
+        },
+        {
+          "checked": true,
+          "id": "followBall",
+          "value": "on"
+        },
+        {
+          "checked": false,
+          "id": "import",
+          "value": ""
+        }
+      ]
+    },
+    {
+      "file": "21-LOST-approach-seed2964851399-t1250.jpg",
+      "imageSha256": "d0db0e02f8bc2d732cf9d3bd573e38d9a08e971aeef98684bf25210bdd697c3f",
+      "metadataFile": "21-LOST-approach-seed2964851399-t1250.json",
+      "metadataSha256": "282424c12fd81c27cd97528a63a62829b41162eb9208ea681079e0b2db3806e8",
+      "state": {
+        "ball": {
+          "pos": {
+            "x": 33476.4252679,
+            "y": 34789.886973
+          },
+          "vel": {
+            "x": 551.5115774,
+            "y": 1417.0334134
+          }
+        },
+        "done": false,
+        "dropId": "board01-start",
+        "finished": false,
+        "nearMissBucketIds": [],
+        "rngU32": 1409817083,
+        "seed": 2964851399,
+        "started": true,
+        "status": "active",
+        "tick": 1250,
+        "tickMs": 5,
+        "timeSec": 6.25
+      },
+      "viewport": {
+        "dpr": 1,
+        "height": 720,
+        "width": 1280
+      },
+      "canvas": {
+        "height": 590,
+        "width": 840,
+        "x": 17,
+        "y": 103.5
+      },
+      "controls": [
+        {
+          "checked": false,
+          "id": "seed",
+          "value": "2964851399"
+        },
+        {
+          "checked": false,
+          "id": "count",
+          "value": "10"
+        },
+        {
+          "checked": false,
+          "id": "seek",
+          "value": "1250"
+        },
+        {
+          "checked": false,
+          "id": "tick-input",
+          "value": "1250"
+        },
+        {
+          "checked": true,
+          "id": "art",
+          "value": "on"
+        },
+        {
+          "checked": false,
+          "id": "geometry",
+          "value": "on"
+        },
+        {
+          "checked": true,
+          "id": "showParts",
+          "value": "on"
+        },
+        {
+          "checked": false,
+          "id": "diagnosticBall",
+          "value": "on"
+        },
+        {
+          "checked": false,
+          "id": "view",
+          "value": "source"
+        },
+        {
+          "checked": false,
+          "id": "zoom",
+          "value": "2"
+        },
+        {
+          "checked": true,
+          "id": "followBall",
+          "value": "on"
+        },
+        {
+          "checked": false,
+          "id": "import",
+          "value": ""
+        }
+      ]
+    },
+    {
+      "file": "21-LOST-approach-seed2964851399-t1290.jpg",
+      "imageSha256": "33760896e1fc3ec85681a66bc511e3ebb2525cb7be7075ddd240da80d7bc9d48",
+      "metadataFile": "21-LOST-approach-seed2964851399-t1290.json",
+      "metadataSha256": "95a6f0a42a4e8d6d1db91161e9c809f4133642278d3e0f5ee10fd6321206f480",
+      "state": {
+        "ball": {
+          "pos": {
+            "x": 33586.7275839,
+            "y": 35093.383657
+          },
+          "vel": {
+            "x": 551.5115774,
+            "y": 1613.0334134
+          }
+        },
+        "done": false,
+        "dropId": "board01-start",
+        "finished": false,
+        "nearMissBucketIds": [],
+        "rngU32": 1409817083,
+        "seed": 2964851399,
+        "started": true,
+        "status": "active",
+        "tick": 1290,
+        "tickMs": 5,
+        "timeSec": 6.45
+      },
+      "viewport": {
+        "dpr": 1,
+        "height": 720,
+        "width": 1280
+      },
+      "canvas": {
+        "height": 590,
+        "width": 840,
+        "x": 17,
+        "y": 103.5
+      },
+      "controls": [
+        {
+          "checked": false,
+          "id": "seed",
+          "value": "2964851399"
+        },
+        {
+          "checked": false,
+          "id": "count",
+          "value": "10"
+        },
+        {
+          "checked": false,
+          "id": "seek",
+          "value": "1290"
+        },
+        {
+          "checked": false,
+          "id": "tick-input",
+          "value": "1290"
+        },
+        {
+          "checked": true,
+          "id": "art",
+          "value": "on"
+        },
+        {
+          "checked": false,
+          "id": "geometry",
+          "value": "on"
+        },
+        {
+          "checked": true,
+          "id": "showParts",
+          "value": "on"
+        },
+        {
+          "checked": false,
+          "id": "diagnosticBall",
+          "value": "on"
+        },
+        {
+          "checked": false,
+          "id": "view",
+          "value": "source"
+        },
+        {
+          "checked": false,
+          "id": "zoom",
+          "value": "2"
+        },
+        {
+          "checked": true,
+          "id": "followBall",
+          "value": "on"
+        },
+        {
+          "checked": false,
+          "id": "import",
+          "value": ""
+        }
+      ]
+    },
+    {
+      "file": "22-LOST-approach-t1250-view.jpg",
+      "imageSha256": "33760896e1fc3ec85681a66bc511e3ebb2525cb7be7075ddd240da80d7bc9d48",
+      "metadataFile": "22-LOST-approach-t1250-view.json",
+      "metadataSha256": "95a6f0a42a4e8d6d1db91161e9c809f4133642278d3e0f5ee10fd6321206f480",
+      "state": {
+        "ball": {
+          "pos": {
+            "x": 33586.7275839,
+            "y": 35093.383657
+          },
+          "vel": {
+            "x": 551.5115774,
+            "y": 1613.0334134
+          }
+        },
+        "done": false,
+        "dropId": "board01-start",
+        "finished": false,
+        "nearMissBucketIds": [],
+        "rngU32": 1409817083,
+        "seed": 2964851399,
+        "started": true,
+        "status": "active",
+        "tick": 1290,
+        "tickMs": 5,
+        "timeSec": 6.45
+      },
+      "viewport": {
+        "dpr": 1,
+        "height": 720,
+        "width": 1280
+      },
+      "canvas": {
+        "height": 590,
+        "width": 840,
+        "x": 17,
+        "y": 103.5
+      },
+      "controls": [
+        {
+          "checked": false,
+          "id": "seed",
+          "value": "2964851399"
+        },
+        {
+          "checked": false,
+          "id": "count",
+          "value": "10"
+        },
+        {
+          "checked": false,
+          "id": "seek",
+          "value": "1290"
+        },
+        {
+          "checked": false,
+          "id": "tick-input",
+          "value": "1290"
+        },
+        {
+          "checked": true,
+          "id": "art",
+          "value": "on"
+        },
+        {
+          "checked": false,
+          "id": "geometry",
+          "value": "on"
+        },
+        {
+          "checked": true,
+          "id": "showParts",
+          "value": "on"
+        },
+        {
+          "checked": false,
+          "id": "diagnosticBall",
+          "value": "on"
+        },
+        {
+          "checked": false,
+          "id": "view",
+          "value": "source"
+        },
+        {
+          "checked": false,
+          "id": "zoom",
+          "value": "2"
+        },
+        {
+          "checked": true,
+          "id": "followBall",
+          "value": "on"
+        },
+        {
+          "checked": false,
+          "id": "import",
+          "value": ""
+        }
+      ]
+    },
+    {
+      "file": "23-random01-result.jpg",
+      "imageSha256": "ef40a469f0a4333eb252f3db57533e949eaf9da91663f0de13f14db80d442f0d",
+      "metadataFile": "23-random01-result.json",
+      "metadataSha256": "3edb13b7017ce357b9e73dd164fb002993b340091eed7d7d5b12595bc5d7ff92",
+      "state": {
+        "ball": {
+          "pos": {
+            "x": 33256.5349989,
+            "y": 35368.7478546
+          },
+          "vel": {
+            "x": 665.9132656,
+            "y": 1497.4205054
+          }
+        },
+        "done": true,
+        "dropId": "board01-start",
+        "finished": true,
+        "nearMissBucketIds": [],
+        "result": {
+          "finalX": 33256.5349989,
+          "kind": "LOST",
+          "nearMissBucketIds": []
+        },
+        "rngU32": 3375056646,
+        "seed": 4176331824,
+        "started": true,
+        "status": "finished",
+        "tick": 1319,
+        "tickMs": 5,
+        "timeSec": 6.595
+      },
+      "viewport": {
+        "dpr": 1,
+        "height": 720,
+        "width": 1280
+      },
+      "canvas": {
+        "height": 590,
+        "width": 840,
+        "x": 17,
+        "y": 103.5
+      },
+      "controls": [
+        {
+          "checked": false,
+          "id": "seed",
+          "value": "4176331824"
+        },
+        {
+          "checked": false,
+          "id": "count",
+          "value": "10"
+        },
+        {
+          "checked": false,
+          "id": "seek",
+          "value": "1319"
+        },
+        {
+          "checked": false,
+          "id": "tick-input",
+          "value": "1319"
+        },
+        {
+          "checked": true,
+          "id": "art",
+          "value": "on"
+        },
+        {
+          "checked": false,
+          "id": "geometry",
+          "value": "on"
+        },
+        {
+          "checked": true,
+          "id": "showParts",
+          "value": "on"
+        },
+        {
+          "checked": false,
+          "id": "diagnosticBall",
+          "value": "on"
+        },
+        {
+          "checked": false,
+          "id": "view",
+          "value": "source"
+        },
+        {
+          "checked": false,
+          "id": "zoom",
+          "value": "1"
+        },
+        {
+          "checked": false,
+          "id": "followBall",
+          "value": "on"
+        },
+        {
+          "checked": false,
+          "id": "import",
+          "value": ""
+        }
+      ]
+    },
+    {
+      "file": "24-random02-live-sample.jpg",
+      "imageSha256": "06cee05345172d1bb3cb054104fd3d6a010e1f01c41dfddcf00a24b3bdb4273a",
+      "metadataFile": "24-random02-live-sample.json",
+      "metadataSha256": "d9d2dcf70bdba2dc7d68ce80ae8349f7e365ab8fa1154a0fc6c00bf728303e17",
+      "state": {
+        "ball": {
+          "pos": {
+            "x": 33254.8631695,
+            "y": 33179.4493101
+          },
+          "vel": {
+            "x": 0,
+            "y": 230.3
+          }
+        },
+        "done": false,
+        "dropId": "board01-start",
+        "finished": false,
+        "nearMissBucketIds": [],
+        "rngU32": 2149594954,
+        "seed": 2149594954,
+        "started": true,
+        "status": "active",
+        "tick": 47,
+        "tickMs": 5,
+        "timeSec": 0.235
+      },
+      "viewport": {
+        "dpr": 1,
+        "height": 720,
+        "width": 1280
+      },
+      "canvas": {
+        "height": 590,
+        "width": 840,
+        "x": 17,
+        "y": 103.5
+      },
+      "controls": [
+        {
+          "checked": false,
+          "id": "seed",
+          "value": "2149594954"
+        },
+        {
+          "checked": false,
+          "id": "count",
+          "value": "10"
+        },
+        {
+          "checked": false,
+          "id": "seek",
+          "value": "47"
+        },
+        {
+          "checked": false,
+          "id": "tick-input",
+          "value": "47"
+        },
+        {
+          "checked": true,
+          "id": "art",
+          "value": "on"
+        },
+        {
+          "checked": false,
+          "id": "geometry",
+          "value": "on"
+        },
+        {
+          "checked": true,
+          "id": "showParts",
+          "value": "on"
+        },
+        {
+          "checked": false,
+          "id": "diagnosticBall",
+          "value": "on"
+        },
+        {
+          "checked": false,
+          "id": "view",
+          "value": "source"
+        },
+        {
+          "checked": false,
+          "id": "zoom",
+          "value": "1"
+        },
+        {
+          "checked": false,
+          "id": "followBall",
+          "value": "on"
+        },
+        {
+          "checked": false,
+          "id": "import",
+          "value": ""
+        }
+      ]
+    },
+    {
+      "file": "25-random02-paused.jpg",
+      "imageSha256": "440c4e8f9c36a6803548776bdec6f5f124004d32744a0ada5e4a25f401219cd9",
+      "metadataFile": "25-random02-paused.json",
+      "metadataSha256": "e31d13938cce446822cf3d78f4ebecbb0b2c34da644657206cd092079db81c6b",
+      "state": {
+        "ball": {
+          "pos": {
+            "x": 33254.8631695,
+            "y": 33225.3868101
+          },
+          "vel": {
+            "x": 0,
+            "y": 377.3
+          }
+        },
+        "done": false,
+        "dropId": "board01-start",
+        "finished": false,
+        "nearMissBucketIds": [],
+        "rngU32": 2149594954,
+        "seed": 2149594954,
+        "started": true,
+        "status": "active",
+        "tick": 77,
+        "tickMs": 5,
+        "timeSec": 0.385
+      },
+      "viewport": {
+        "dpr": 1,
+        "height": 720,
+        "width": 1280
+      },
+      "canvas": {
+        "height": 590,
+        "width": 840,
+        "x": 17,
+        "y": 103.5
+      },
+      "controls": [
+        {
+          "checked": false,
+          "id": "seed",
+          "value": "2149594954"
+        },
+        {
+          "checked": false,
+          "id": "count",
+          "value": "10"
+        },
+        {
+          "checked": false,
+          "id": "seek",
+          "value": "77"
+        },
+        {
+          "checked": false,
+          "id": "tick-input",
+          "value": "77"
+        },
+        {
+          "checked": true,
+          "id": "art",
+          "value": "on"
+        },
+        {
+          "checked": false,
+          "id": "geometry",
+          "value": "on"
+        },
+        {
+          "checked": true,
+          "id": "showParts",
+          "value": "on"
+        },
+        {
+          "checked": false,
+          "id": "diagnosticBall",
+          "value": "on"
+        },
+        {
+          "checked": false,
+          "id": "view",
+          "value": "source"
+        },
+        {
+          "checked": false,
+          "id": "zoom",
+          "value": "1"
+        },
+        {
+          "checked": false,
+          "id": "followBall",
+          "value": "on"
+        },
+        {
+          "checked": false,
+          "id": "import",
+          "value": ""
+        }
+      ]
+    },
+    {
+      "file": "26-random02-result.jpg",
+      "imageSha256": "183a6094a324aa84e94360dbf2e664741ec465a6e77e25af929b8dfa6cd66ea7",
+      "metadataFile": "26-random02-result.json",
+      "metadataSha256": "edcf21c9233fb8d9959c88ed60d92577b8498d6ca0e9138dbb8a0fb8595fa773",
+      "state": {
+        "ball": {
+          "pos": {
+            "x": 33755.8345873,
+            "y": 35372.689061
+          },
+          "vel": {
+            "x": 451.529214,
+            "y": 1240.2517147
+          }
+        },
+        "done": true,
+        "dropId": "board01-start",
+        "finished": true,
+        "nearMissBucketIds": [],
+        "result": {
+          "finalX": 33755.8345873,
+          "kind": "LOST",
+          "nearMissBucketIds": []
+        },
+        "rngU32": 4078372306,
+        "seed": 2149594954,
+        "started": true,
+        "status": "finished",
+        "tick": 1697,
+        "tickMs": 5,
+        "timeSec": 8.485
+      },
+      "viewport": {
+        "dpr": 1,
+        "height": 720,
+        "width": 1280
+      },
+      "canvas": {
+        "height": 590,
+        "width": 840,
+        "x": 17,
+        "y": 103.5
+      },
+      "controls": [
+        {
+          "checked": false,
+          "id": "seed",
+          "value": "2149594954"
+        },
+        {
+          "checked": false,
+          "id": "count",
+          "value": "10"
+        },
+        {
+          "checked": false,
+          "id": "seek",
+          "value": "1697"
+        },
+        {
+          "checked": false,
+          "id": "tick-input",
+          "value": "1697"
+        },
+        {
+          "checked": true,
+          "id": "art",
+          "value": "on"
+        },
+        {
+          "checked": false,
+          "id": "geometry",
+          "value": "on"
+        },
+        {
+          "checked": true,
+          "id": "showParts",
+          "value": "on"
+        },
+        {
+          "checked": false,
+          "id": "diagnosticBall",
+          "value": "on"
+        },
+        {
+          "checked": false,
+          "id": "view",
+          "value": "source"
+        },
+        {
+          "checked": false,
+          "id": "zoom",
+          "value": "1"
+        },
+        {
+          "checked": false,
+          "id": "followBall",
+          "value": "on"
+        },
+        {
+          "checked": false,
+          "id": "import",
+          "value": ""
+        }
+      ]
+    },
+    {
+      "file": "27-wood-partial-seed1842222754-t590.jpg",
+      "imageSha256": "402e9978c5d4a384b89b15754a41bb008c7c99b978b66dd59a2826e2d1b51689",
+      "metadataFile": "27-wood-partial-seed1842222754-t590.json",
+      "metadataSha256": "ac0faa347c1eedd7b501490e7af1b194f4cd654ea56d7be6884410406b224c27",
+      "state": {
+        "ball": {
+          "pos": {
+            "x": 33044.4293332,
+            "y": 33432.8780893
+          },
+          "vel": {
+            "x": 334.9440105,
+            "y": 210.1853543
+          }
+        },
+        "done": false,
+        "dropId": "board01-start",
+        "finished": false,
+        "nearMissBucketIds": [],
+        "rngU32": 4229712522,
+        "seed": 1842222754,
+        "started": true,
+        "status": "active",
+        "tick": 590,
+        "tickMs": 5,
+        "timeSec": 2.95
+      },
+      "viewport": {
+        "dpr": 1,
+        "height": 720,
+        "width": 1280
+      },
+      "canvas": {
+        "height": 590,
+        "width": 840,
+        "x": 17,
+        "y": 103.5
+      },
+      "controls": [
+        {
+          "checked": false,
+          "id": "seed",
+          "value": "1842222754"
+        },
+        {
+          "checked": false,
+          "id": "count",
+          "value": "10"
+        },
+        {
+          "checked": false,
+          "id": "seek",
+          "value": "590"
+        },
+        {
+          "checked": false,
+          "id": "tick-input",
+          "value": "590"
+        },
+        {
+          "checked": true,
+          "id": "art",
+          "value": "on"
+        },
+        {
+          "checked": false,
+          "id": "geometry",
+          "value": "on"
+        },
+        {
+          "checked": true,
+          "id": "showParts",
+          "value": "on"
+        },
+        {
+          "checked": false,
+          "id": "diagnosticBall",
+          "value": "on"
+        },
+        {
+          "checked": false,
+          "id": "view",
+          "value": "source"
+        },
+        {
+          "checked": false,
+          "id": "zoom",
+          "value": "2"
+        },
+        {
+          "checked": true,
+          "id": "followBall",
+          "value": "on"
+        },
+        {
+          "checked": false,
+          "id": "import",
+          "value": ""
+        }
+      ]
+    },
+    {
+      "file": "27-wood-partial-seed1842222754-t605.jpg",
+      "imageSha256": "c553c9654e6e3c201e28c077debe3ac738b48448d3c47fa35845c413c8b75e6f",
+      "metadataFile": "27-wood-partial-seed1842222754-t605.json",
+      "metadataSha256": "6c9cd52fc0f6a3fcda6f3246a33721d45f6d31467b11c4d4279da359463c6d61",
+      "state": {
+        "ball": {
+          "pos": {
+            "x": 33069.5501347,
+            "y": 33451.5819913
+          },
+          "vel": {
+            "x": 334.9440105,
+            "y": 283.6853543
+          }
+        },
+        "done": false,
+        "dropId": "board01-start",
+        "finished": false,
+        "nearMissBucketIds": [],
+        "rngU32": 4229712522,
+        "seed": 1842222754,
+        "started": true,
+        "status": "active",
+        "tick": 605,
+        "tickMs": 5,
+        "timeSec": 3.025
+      },
+      "viewport": {
+        "dpr": 1,
+        "height": 720,
+        "width": 1280
+      },
+      "canvas": {
+        "height": 590,
+        "width": 840,
+        "x": 17,
+        "y": 103.5
+      },
+      "controls": [
+        {
+          "checked": false,
+          "id": "seed",
+          "value": "1842222754"
+        },
+        {
+          "checked": false,
+          "id": "count",
+          "value": "10"
+        },
+        {
+          "checked": false,
+          "id": "seek",
+          "value": "605"
+        },
+        {
+          "checked": false,
+          "id": "tick-input",
+          "value": "605"
+        },
+        {
+          "checked": true,
+          "id": "art",
+          "value": "on"
+        },
+        {
+          "checked": false,
+          "id": "geometry",
+          "value": "on"
+        },
+        {
+          "checked": true,
+          "id": "showParts",
+          "value": "on"
+        },
+        {
+          "checked": false,
+          "id": "diagnosticBall",
+          "value": "on"
+        },
+        {
+          "checked": false,
+          "id": "view",
+          "value": "source"
+        },
+        {
+          "checked": false,
+          "id": "zoom",
+          "value": "2"
+        },
+        {
+          "checked": true,
+          "id": "followBall",
+          "value": "on"
+        },
+        {
+          "checked": false,
+          "id": "import",
+          "value": ""
+        }
+      ]
+    },
+    {
+      "file": "27-wood-partial-seed1842222754-t610.jpg",
+      "imageSha256": "18330955fd236f86ced9deea4ad9c5f20f61db5170cf5495eb18dfeec85c587f",
+      "metadataFile": "27-wood-partial-seed1842222754-t610.json",
+      "metadataSha256": "9a4f1a21cbdcf1a02f44cc5526e76b8f59407bd85c121dac7fea425cfbd6e205",
+      "state": {
+        "ball": {
+          "pos": {
+            "x": 33077.9237352,
+            "y": 33459.0416253
+          },
+          "vel": {
+            "x": 334.9440105,
+            "y": 308.1853543
+          }
+        },
+        "done": false,
+        "dropId": "board01-start",
+        "finished": false,
+        "nearMissBucketIds": [],
+        "rngU32": 4229712522,
+        "seed": 1842222754,
+        "started": true,
+        "status": "active",
+        "tick": 610,
+        "tickMs": 5,
+        "timeSec": 3.05
+      },
+      "viewport": {
+        "dpr": 1,
+        "height": 720,
+        "width": 1280
+      },
+      "canvas": {
+        "height": 590,
+        "width": 840,
+        "x": 17,
+        "y": 103.5
+      },
+      "controls": [
+        {
+          "checked": false,
+          "id": "seed",
+          "value": "1842222754"
+        },
+        {
+          "checked": false,
+          "id": "count",
+          "value": "10"
+        },
+        {
+          "checked": false,
+          "id": "seek",
+          "value": "610"
+        },
+        {
+          "checked": false,
+          "id": "tick-input",
+          "value": "610"
+        },
+        {
+          "checked": true,
+          "id": "art",
+          "value": "on"
+        },
+        {
+          "checked": false,
+          "id": "geometry",
+          "value": "on"
+        },
+        {
+          "checked": true,
+          "id": "showParts",
+          "value": "on"
+        },
+        {
+          "checked": false,
+          "id": "diagnosticBall",
+          "value": "on"
+        },
+        {
+          "checked": false,
+          "id": "view",
+          "value": "source"
+        },
+        {
+          "checked": false,
+          "id": "zoom",
+          "value": "2"
+        },
+        {
+          "checked": true,
+          "id": "followBall",
+          "value": "on"
+        },
+        {
+          "checked": false,
+          "id": "import",
+          "value": ""
+        }
+      ]
+    },
+    {
+      "file": "28-wood-partial-t610-detail.jpg",
+      "imageSha256": "18330955fd236f86ced9deea4ad9c5f20f61db5170cf5495eb18dfeec85c587f",
+      "metadataFile": "28-wood-partial-t610-detail.json",
+      "metadataSha256": "9a4f1a21cbdcf1a02f44cc5526e76b8f59407bd85c121dac7fea425cfbd6e205",
+      "state": {
+        "ball": {
+          "pos": {
+            "x": 33077.9237352,
+            "y": 33459.0416253
+          },
+          "vel": {
+            "x": 334.9440105,
+            "y": 308.1853543
+          }
+        },
+        "done": false,
+        "dropId": "board01-start",
+        "finished": false,
+        "nearMissBucketIds": [],
+        "rngU32": 4229712522,
+        "seed": 1842222754,
+        "started": true,
+        "status": "active",
+        "tick": 610,
+        "tickMs": 5,
+        "timeSec": 3.05
+      },
+      "viewport": {
+        "dpr": 1,
+        "height": 720,
+        "width": 1280
+      },
+      "canvas": {
+        "height": 590,
+        "width": 840,
+        "x": 17,
+        "y": 103.5
+      },
+      "controls": [
+        {
+          "checked": false,
+          "id": "seed",
+          "value": "1842222754"
+        },
+        {
+          "checked": false,
+          "id": "count",
+          "value": "10"
+        },
+        {
+          "checked": false,
+          "id": "seek",
+          "value": "610"
+        },
+        {
+          "checked": false,
+          "id": "tick-input",
+          "value": "610"
+        },
+        {
+          "checked": true,
+          "id": "art",
+          "value": "on"
+        },
+        {
+          "checked": false,
+          "id": "geometry",
+          "value": "on"
+        },
+        {
+          "checked": true,
+          "id": "showParts",
+          "value": "on"
+        },
+        {
+          "checked": false,
+          "id": "diagnosticBall",
+          "value": "on"
+        },
+        {
+          "checked": false,
+          "id": "view",
+          "value": "source"
+        },
+        {
+          "checked": false,
+          "id": "zoom",
+          "value": "2"
+        },
+        {
+          "checked": true,
+          "id": "followBall",
+          "value": "on"
+        },
+        {
+          "checked": false,
+          "id": "import",
+          "value": ""
+        }
+      ]
+    },
+    {
+      "file": "29-left6-t2334-detail.jpg",
+      "imageSha256": "992c68c36270521f88df18c1add93765c79ea70cd88cfc5ba3fc3d5f3bf2f5f4",
+      "metadataFile": "29-left6-t2334-detail.json",
+      "metadataSha256": "25c318e66bd784cc17b1972cc0cece7eb1b4664ddb943d3f571c21a239a4cc21",
+      "state": {
+        "ball": {
+          "pos": {
+            "x": 32869.6980019,
+            "y": 34647.1682208
+          },
+          "vel": {
+            "x": -355.7548522,
+            "y": 691.9357242
+          }
+        },
+        "done": false,
+        "dropId": "board01-start",
+        "finished": false,
+        "nearMissBucketIds": [],
+        "rngU32": 3137748010,
+        "seed": 1842222754,
+        "started": true,
+        "status": "active",
+        "tick": 2334,
+        "tickMs": 5,
+        "timeSec": 11.67
+      },
+      "viewport": {
+        "dpr": 1,
+        "height": 720,
+        "width": 1280
+      },
+      "canvas": {
+        "height": 590,
+        "width": 840,
+        "x": 17,
+        "y": 103.5
+      },
+      "controls": [
+        {
+          "checked": false,
+          "id": "seed",
+          "value": "1842222754"
+        },
+        {
+          "checked": false,
+          "id": "count",
+          "value": "10"
+        },
+        {
+          "checked": false,
+          "id": "seek",
+          "value": "2334"
+        },
+        {
+          "checked": false,
+          "id": "tick-input",
+          "value": "2334"
+        },
+        {
+          "checked": true,
+          "id": "art",
+          "value": "on"
+        },
+        {
+          "checked": false,
+          "id": "geometry",
+          "value": "on"
+        },
+        {
+          "checked": true,
+          "id": "showParts",
+          "value": "on"
+        },
+        {
+          "checked": false,
+          "id": "diagnosticBall",
+          "value": "on"
+        },
+        {
+          "checked": false,
+          "id": "view",
+          "value": "source"
+        },
+        {
+          "checked": false,
+          "id": "zoom",
+          "value": "2"
+        },
+        {
+          "checked": true,
+          "id": "followBall",
+          "value": "on"
+        },
+        {
+          "checked": false,
+          "id": "import",
+          "value": ""
+        }
+      ]
+    },
+    {
+      "file": "30-ball-shadow-seed1842222754-t590-normal.jpg",
+      "imageSha256": "bbbe222a6630c4f8bcc42cfa5425585ea819e7de7eb81b645a3a865d131d9b60",
+      "metadataFile": "30-ball-shadow-seed1842222754-t590-normal.json",
+      "metadataSha256": "a6988247493b96f9149aa8eb46c7bf756a0636f8939633949d3ffcf03c18ca18",
+      "state": {
+        "ball": {
+          "pos": {
+            "x": 33044.4293332,
+            "y": 33432.8780893
+          },
+          "vel": {
+            "x": 334.9440105,
+            "y": 210.1853543
+          }
+        },
+        "done": false,
+        "dropId": "board01-start",
+        "finished": false,
+        "nearMissBucketIds": [],
+        "rngU32": 4229712522,
+        "seed": 1842222754,
+        "started": true,
+        "status": "active",
+        "tick": 590,
+        "tickMs": 5,
+        "timeSec": 2.95
+      },
+      "viewport": {
+        "dpr": 1,
+        "height": 720,
+        "width": 1280
+      },
+      "canvas": {
+        "height": 590,
+        "width": 840,
+        "x": 17,
+        "y": 103.5
+      },
+      "controls": [
+        {
+          "checked": false,
+          "id": "seed",
+          "value": "1842222754"
+        },
+        {
+          "checked": false,
+          "id": "count",
+          "value": "10"
+        },
+        {
+          "checked": false,
+          "id": "seek",
+          "value": "590"
+        },
+        {
+          "checked": false,
+          "id": "tick-input",
+          "value": "590"
+        },
+        {
+          "checked": true,
+          "id": "art",
+          "value": "on"
+        },
+        {
+          "checked": false,
+          "id": "geometry",
+          "value": "on"
+        },
+        {
+          "checked": true,
+          "id": "showParts",
+          "value": "on"
+        },
+        {
+          "checked": false,
+          "id": "diagnosticBall",
+          "value": "on"
+        },
+        {
+          "checked": false,
+          "id": "view",
+          "value": "source"
+        },
+        {
+          "checked": false,
+          "id": "zoom",
+          "value": "1"
+        },
+        {
+          "checked": false,
+          "id": "followBall",
+          "value": "on"
+        },
+        {
+          "checked": false,
+          "id": "import",
+          "value": ""
+        }
+      ]
+    },
+    {
+      "file": "31-ball-shadow-t590-clean-plate-detail.jpg",
+      "imageSha256": "865b26cb02f78a224b60c10a0a81fa32c41c0d438157ad5e83f7a95e784af93e",
+      "metadataFile": "31-ball-shadow-t590-clean-plate-detail.json",
+      "metadataSha256": "be431ac26b1ae09cd5f593ec6eda6c36606517f78332c59bf681d3a9e210d642",
+      "state": {
+        "ball": {
+          "pos": {
+            "x": 33044.4293332,
+            "y": 33432.8780893
+          },
+          "vel": {
+            "x": 334.9440105,
+            "y": 210.1853543
+          }
+        },
+        "done": false,
+        "dropId": "board01-start",
+        "finished": false,
+        "nearMissBucketIds": [],
+        "rngU32": 4229712522,
+        "seed": 1842222754,
+        "started": true,
+        "status": "active",
+        "tick": 590,
+        "tickMs": 5,
+        "timeSec": 2.95
+      },
+      "viewport": {
+        "dpr": 1,
+        "height": 720,
+        "width": 1280
+      },
+      "canvas": {
+        "height": 590,
+        "width": 840,
+        "x": 17,
+        "y": 103.5
+      },
+      "controls": [
+        {
+          "checked": false,
+          "id": "seed",
+          "value": "1842222754"
+        },
+        {
+          "checked": false,
+          "id": "count",
+          "value": "10"
+        },
+        {
+          "checked": false,
+          "id": "seek",
+          "value": "590"
+        },
+        {
+          "checked": false,
+          "id": "tick-input",
+          "value": "590"
+        },
+        {
+          "checked": true,
+          "id": "art",
+          "value": "on"
+        },
+        {
+          "checked": false,
+          "id": "geometry",
+          "value": "on"
+        },
+        {
+          "checked": false,
+          "id": "showParts",
+          "value": "on"
+        },
+        {
+          "checked": false,
+          "id": "diagnosticBall",
+          "value": "on"
+        },
+        {
+          "checked": false,
+          "id": "view",
+          "value": "source"
+        },
+        {
+          "checked": false,
+          "id": "zoom",
+          "value": "2"
+        },
+        {
+          "checked": true,
+          "id": "followBall",
+          "value": "on"
+        },
+        {
+          "checked": false,
+          "id": "import",
+          "value": ""
+        }
+      ]
+    },
+    {
+      "file": "32-platform-seed1842222754-t2370.jpg",
+      "imageSha256": "fe97031672df115a058d30182bb8c2e071d7e456e62063062438c85a73b7b40d",
+      "metadataFile": "32-platform-seed1842222754-t2370.json",
+      "metadataSha256": "f6769484db8eda8b163d3cf9161ab58c8d197f00297e47ada06e3e0929b2114c",
+      "state": {
+        "ball": {
+          "pos": {
+            "x": 32974.2530127,
+            "y": 34730.8982061
+          },
+          "vel": {
+            "x": 593.3527495,
+            "y": 546.8864548
+          }
+        },
+        "done": false,
+        "dropId": "board01-start",
+        "finished": false,
+        "nearMissBucketIds": [],
+        "rngU32": 3946641644,
+        "seed": 1842222754,
+        "started": true,
+        "status": "active",
+        "tick": 2370,
+        "tickMs": 5,
+        "timeSec": 11.85
+      },
+      "viewport": {
+        "dpr": 1,
+        "height": 720,
+        "width": 1280
+      },
+      "canvas": {
+        "height": 590,
+        "width": 840,
+        "x": 17,
+        "y": 103.5
+      },
+      "controls": [
+        {
+          "checked": false,
+          "id": "seed",
+          "value": "1842222754"
+        },
+        {
+          "checked": false,
+          "id": "count",
+          "value": "10"
+        },
+        {
+          "checked": false,
+          "id": "seek",
+          "value": "2370"
+        },
+        {
+          "checked": false,
+          "id": "tick-input",
+          "value": "2370"
+        },
+        {
+          "checked": true,
+          "id": "art",
+          "value": "on"
+        },
+        {
+          "checked": false,
+          "id": "geometry",
+          "value": "on"
+        },
+        {
+          "checked": true,
+          "id": "showParts",
+          "value": "on"
+        },
+        {
+          "checked": false,
+          "id": "diagnosticBall",
+          "value": "on"
+        },
+        {
+          "checked": false,
+          "id": "view",
+          "value": "source"
+        },
+        {
+          "checked": false,
+          "id": "zoom",
+          "value": "2"
+        },
+        {
+          "checked": true,
+          "id": "followBall",
+          "value": "on"
+        },
+        {
+          "checked": false,
+          "id": "import",
+          "value": ""
+        }
+      ]
+    },
+    {
+      "file": "32-platform-seed1842222754-t2380.jpg",
+      "imageSha256": "ef32f9a2b4d8f9ec5168e4a921dd25a9bb32b64781c27d11ba2446873c32db86",
+      "metadataFile": "32-platform-seed1842222754-t2380.json",
+      "metadataSha256": "e5371d8242834b4783b19ee4b63e659109a4434c314bb1db44ae9e291a5ccb1d",
+      "state": {
+        "ball": {
+          "pos": {
+            "x": 33003.9206497,
+            "y": 34759.5900291
+          },
+          "vel": {
+            "x": 593.3527495,
+            "y": 595.8864548
+          }
+        },
+        "done": false,
+        "dropId": "board01-start",
+        "finished": false,
+        "nearMissBucketIds": [],
+        "rngU32": 3946641644,
+        "seed": 1842222754,
+        "started": true,
+        "status": "active",
+        "tick": 2380,
+        "tickMs": 5,
+        "timeSec": 11.9
+      },
+      "viewport": {
+        "dpr": 1,
+        "height": 720,
+        "width": 1280
+      },
+      "canvas": {
+        "height": 590,
+        "width": 840,
+        "x": 17,
+        "y": 103.5
+      },
+      "controls": [
+        {
+          "checked": false,
+          "id": "seed",
+          "value": "1842222754"
+        },
+        {
+          "checked": false,
+          "id": "count",
+          "value": "10"
+        },
+        {
+          "checked": false,
+          "id": "seek",
+          "value": "2380"
+        },
+        {
+          "checked": false,
+          "id": "tick-input",
+          "value": "2380"
+        },
+        {
+          "checked": true,
+          "id": "art",
+          "value": "on"
+        },
+        {
+          "checked": false,
+          "id": "geometry",
+          "value": "on"
+        },
+        {
+          "checked": true,
+          "id": "showParts",
+          "value": "on"
+        },
+        {
+          "checked": false,
+          "id": "diagnosticBall",
+          "value": "on"
+        },
+        {
+          "checked": false,
+          "id": "view",
+          "value": "source"
+        },
+        {
+          "checked": false,
+          "id": "zoom",
+          "value": "2"
+        },
+        {
+          "checked": true,
+          "id": "followBall",
+          "value": "on"
+        },
+        {
+          "checked": false,
+          "id": "import",
+          "value": ""
+        }
+      ]
+    },
+    {
+      "file": "32-platform-seed1842222754-t2390.jpg",
+      "imageSha256": "7325e346f1c6f1013113fd5566fa1dd931461973c8156fec3c4ee235ea440ef2",
+      "metadataFile": "32-platform-seed1842222754-t2390.json",
+      "metadataSha256": "d08c0a6bebe0a3f0043997ee599f70ebad600f8c38888e8dff94c7ced4ba4bf1",
+      "state": {
+        "ball": {
+          "pos": {
+            "x": 33033.5882867,
+            "y": 34790.7318521
+          },
+          "vel": {
+            "x": 593.3527495,
+            "y": 644.8864548
+          }
+        },
+        "done": false,
+        "dropId": "board01-start",
+        "finished": false,
+        "nearMissBucketIds": [],
+        "rngU32": 3946641644,
+        "seed": 1842222754,
+        "started": true,
+        "status": "active",
+        "tick": 2390,
+        "tickMs": 5,
+        "timeSec": 11.95
+      },
+      "viewport": {
+        "dpr": 1,
+        "height": 720,
+        "width": 1280
+      },
+      "canvas": {
+        "height": 590,
+        "width": 840,
+        "x": 17,
+        "y": 103.5
+      },
+      "controls": [
+        {
+          "checked": false,
+          "id": "seed",
+          "value": "1842222754"
+        },
+        {
+          "checked": false,
+          "id": "count",
+          "value": "10"
+        },
+        {
+          "checked": false,
+          "id": "seek",
+          "value": "2390"
+        },
+        {
+          "checked": false,
+          "id": "tick-input",
+          "value": "2390"
+        },
+        {
+          "checked": true,
+          "id": "art",
+          "value": "on"
+        },
+        {
+          "checked": false,
+          "id": "geometry",
+          "value": "on"
+        },
+        {
+          "checked": true,
+          "id": "showParts",
+          "value": "on"
+        },
+        {
+          "checked": false,
+          "id": "diagnosticBall",
+          "value": "on"
+        },
+        {
+          "checked": false,
+          "id": "view",
+          "value": "source"
+        },
+        {
+          "checked": false,
+          "id": "zoom",
+          "value": "2"
+        },
+        {
+          "checked": true,
+          "id": "followBall",
+          "value": "on"
+        },
+        {
+          "checked": false,
+          "id": "import",
+          "value": ""
+        }
+      ]
+    },
+    {
+      "file": "33-platform-t2390-detail.jpg",
+      "imageSha256": "7325e346f1c6f1013113fd5566fa1dd931461973c8156fec3c4ee235ea440ef2",
+      "metadataFile": "33-platform-t2390-detail.json",
+      "metadataSha256": "d08c0a6bebe0a3f0043997ee599f70ebad600f8c38888e8dff94c7ced4ba4bf1",
+      "state": {
+        "ball": {
+          "pos": {
+            "x": 33033.5882867,
+            "y": 34790.7318521
+          },
+          "vel": {
+            "x": 593.3527495,
+            "y": 644.8864548
+          }
+        },
+        "done": false,
+        "dropId": "board01-start",
+        "finished": false,
+        "nearMissBucketIds": [],
+        "rngU32": 3946641644,
+        "seed": 1842222754,
+        "started": true,
+        "status": "active",
+        "tick": 2390,
+        "tickMs": 5,
+        "timeSec": 11.95
+      },
+      "viewport": {
+        "dpr": 1,
+        "height": 720,
+        "width": 1280
+      },
+      "canvas": {
+        "height": 590,
+        "width": 840,
+        "x": 17,
+        "y": 103.5
+      },
+      "controls": [
+        {
+          "checked": false,
+          "id": "seed",
+          "value": "1842222754"
+        },
+        {
+          "checked": false,
+          "id": "count",
+          "value": "10"
+        },
+        {
+          "checked": false,
+          "id": "seek",
+          "value": "2390"
+        },
+        {
+          "checked": false,
+          "id": "tick-input",
+          "value": "2390"
+        },
+        {
+          "checked": true,
+          "id": "art",
+          "value": "on"
+        },
+        {
+          "checked": false,
+          "id": "geometry",
+          "value": "on"
+        },
+        {
+          "checked": true,
+          "id": "showParts",
+          "value": "on"
+        },
+        {
+          "checked": false,
+          "id": "diagnosticBall",
+          "value": "on"
+        },
+        {
+          "checked": false,
+          "id": "view",
+          "value": "source"
+        },
+        {
+          "checked": false,
+          "id": "zoom",
+          "value": "2"
+        },
+        {
+          "checked": true,
+          "id": "followBall",
+          "value": "on"
+        },
+        {
+          "checked": false,
+          "id": "import",
+          "value": ""
+        }
+      ]
+    },
+    {
+      "file": "34-platform-t2390-art-off.jpg",
+      "imageSha256": "d1bf12eb7b7b57cfb295c1c783a3b6e8856ae76ac7df487b0a81cc831edbd9f7",
+      "metadataFile": "34-platform-t2390-art-off.json",
+      "metadataSha256": "c549770ba5096d1007a7da36c20ad32f180590e90faf5a0f051ca25da194507e",
+      "state": {
+        "ball": {
+          "pos": {
+            "x": 33033.5882867,
+            "y": 34790.7318521
+          },
+          "vel": {
+            "x": 593.3527495,
+            "y": 644.8864548
+          }
+        },
+        "done": false,
+        "dropId": "board01-start",
+        "finished": false,
+        "nearMissBucketIds": [],
+        "rngU32": 3946641644,
+        "seed": 1842222754,
+        "started": true,
+        "status": "active",
+        "tick": 2390,
+        "tickMs": 5,
+        "timeSec": 11.95
+      },
+      "viewport": {
+        "dpr": 1,
+        "height": 720,
+        "width": 1280
+      },
+      "canvas": {
+        "height": 590,
+        "width": 840,
+        "x": 17,
+        "y": 103.5
+      },
+      "controls": [
+        {
+          "checked": false,
+          "id": "seed",
+          "value": "1842222754"
+        },
+        {
+          "checked": false,
+          "id": "count",
+          "value": "10"
+        },
+        {
+          "checked": false,
+          "id": "seek",
+          "value": "2390"
+        },
+        {
+          "checked": false,
+          "id": "tick-input",
+          "value": "2390"
+        },
+        {
+          "checked": false,
+          "id": "art",
+          "value": "on"
+        },
+        {
+          "checked": true,
+          "id": "geometry",
+          "value": "on"
+        },
+        {
+          "checked": true,
+          "id": "showParts",
+          "value": "on"
+        },
+        {
+          "checked": false,
+          "id": "diagnosticBall",
+          "value": "on"
+        },
+        {
+          "checked": false,
+          "id": "view",
+          "value": "source"
+        },
+        {
+          "checked": false,
+          "id": "zoom",
+          "value": "2"
+        },
+        {
+          "checked": true,
+          "id": "followBall",
+          "value": "on"
+        },
+        {
+          "checked": false,
+          "id": "import",
+          "value": ""
+        }
+      ]
+    },
+    {
+      "file": "35-receiver04-seed4-t2086.jpg",
+      "imageSha256": "d325586763d45bf605075f9eeb215c0fa56c69c4df5f83a91f5b72d1545c3ca5",
+      "metadataFile": "35-receiver04-seed4-t2086.json",
+      "metadataSha256": "acebf5f03b4df77335e5e9ec7fbcdb67489a4be9bd2a2d87f32990fa2b4dafd6",
+      "state": {
+        "ball": {
+          "pos": {
+            "x": 33617.0579888,
+            "y": 34852.008001
+          },
+          "vel": {
+            "x": 275.8141875,
+            "y": 984.1050776
+          }
+        },
+        "done": false,
+        "dropId": "board01-start",
+        "finished": false,
+        "nearMissBucketIds": [],
+        "rngU32": 1716849652,
+        "seed": 4,
+        "started": true,
+        "status": "active",
+        "tick": 2086,
+        "tickMs": 5,
+        "timeSec": 10.43
+      },
+      "viewport": {
+        "dpr": 1,
+        "height": 720,
+        "width": 1280
+      },
+      "canvas": {
+        "height": 590,
+        "width": 840,
+        "x": 17,
+        "y": 103.5
+      },
+      "controls": [
+        {
+          "checked": false,
+          "id": "seed",
+          "value": "4"
+        },
+        {
+          "checked": false,
+          "id": "count",
+          "value": "10"
+        },
+        {
+          "checked": false,
+          "id": "seek",
+          "value": "2086"
+        },
+        {
+          "checked": false,
+          "id": "tick-input",
+          "value": "2086"
+        },
+        {
+          "checked": true,
+          "id": "art",
+          "value": "on"
+        },
+        {
+          "checked": false,
+          "id": "geometry",
+          "value": "on"
+        },
+        {
+          "checked": true,
+          "id": "showParts",
+          "value": "on"
+        },
+        {
+          "checked": false,
+          "id": "diagnosticBall",
+          "value": "on"
+        },
+        {
+          "checked": false,
+          "id": "view",
+          "value": "source"
+        },
+        {
+          "checked": false,
+          "id": "zoom",
+          "value": "2"
+        },
+        {
+          "checked": true,
+          "id": "followBall",
+          "value": "on"
+        },
+        {
+          "checked": false,
+          "id": "import",
+          "value": ""
+        }
+      ]
+    },
+    {
+      "file": "35-receiver04-seed4-t2087.jpg",
+      "imageSha256": "47389b12b93b77d573b2ac5a76922c66eb70c4da06c94360bc1addea8b4722f1",
+      "metadataFile": "35-receiver04-seed4-t2087.json",
+      "metadataSha256": "c67dd0f4f2a9a3f725fbd13c2e06168060492a9f709d37387b8115a9de0e0be6",
+      "state": {
+        "ball": {
+          "pos": {
+            "x": 33618.4370597,
+            "y": 34856.9530264
+          },
+          "vel": {
+            "x": 275.8141875,
+            "y": 989.0050776
+          }
+        },
+        "done": false,
+        "dropId": "board01-start",
+        "finished": false,
+        "nearMissBucketIds": [],
+        "rngU32": 1716849652,
+        "seed": 4,
+        "started": true,
+        "status": "active",
+        "tick": 2087,
+        "tickMs": 5,
+        "timeSec": 10.435
+      },
+      "viewport": {
+        "dpr": 1,
+        "height": 720,
+        "width": 1280
+      },
+      "canvas": {
+        "height": 590,
+        "width": 840,
+        "x": 17,
+        "y": 103.5
+      },
+      "controls": [
+        {
+          "checked": false,
+          "id": "seed",
+          "value": "4"
+        },
+        {
+          "checked": false,
+          "id": "count",
+          "value": "10"
+        },
+        {
+          "checked": false,
+          "id": "seek",
+          "value": "2087"
+        },
+        {
+          "checked": false,
+          "id": "tick-input",
+          "value": "2087"
+        },
+        {
+          "checked": true,
+          "id": "art",
+          "value": "on"
+        },
+        {
+          "checked": false,
+          "id": "geometry",
+          "value": "on"
+        },
+        {
+          "checked": true,
+          "id": "showParts",
+          "value": "on"
+        },
+        {
+          "checked": false,
+          "id": "diagnosticBall",
+          "value": "on"
+        },
+        {
+          "checked": false,
+          "id": "view",
+          "value": "source"
+        },
+        {
+          "checked": false,
+          "id": "zoom",
+          "value": "2"
+        },
+        {
+          "checked": true,
+          "id": "followBall",
+          "value": "on"
+        },
+        {
+          "checked": false,
+          "id": "import",
+          "value": ""
+        }
+      ]
+    },
+    {
+      "file": "35-receiver04-seed4-t2088.jpg",
+      "imageSha256": "d6e612781ee6e65f7f56b1e78eb0dd67922dc3b418363186fab61fc3ac88247f",
+      "metadataFile": "35-receiver04-seed4-t2088.json",
+      "metadataSha256": "949e9a08d35757c203402ba9cdc347bb13ccdbc5387c62e681ed099c2b8d8044",
+      "state": {
+        "ball": {
+          "pos": {
+            "x": 33619.8161306,
+            "y": 34861.9225518
+          },
+          "vel": {
+            "x": 275.8141875,
+            "y": 993.9050776
+          }
+        },
+        "done": true,
+        "dropId": "board01-start",
+        "finished": true,
+        "nearMissBucketIds": [],
+        "result": {
+          "bucketId": "receiver-04",
+          "kind": "IN_BUCKET"
+        },
+        "rngU32": 1716849652,
+        "seed": 4,
+        "started": true,
+        "status": "finished",
+        "tick": 2088,
+        "tickMs": 5,
+        "timeSec": 10.44
+      },
+      "viewport": {
+        "dpr": 1,
+        "height": 720,
+        "width": 1280
+      },
+      "canvas": {
+        "height": 590,
+        "width": 840,
+        "x": 17,
+        "y": 103.5
+      },
+      "controls": [
+        {
+          "checked": false,
+          "id": "seed",
+          "value": "4"
+        },
+        {
+          "checked": false,
+          "id": "count",
+          "value": "10"
+        },
+        {
+          "checked": false,
+          "id": "seek",
+          "value": "2088"
+        },
+        {
+          "checked": false,
+          "id": "tick-input",
+          "value": "2088"
+        },
+        {
+          "checked": true,
+          "id": "art",
+          "value": "on"
+        },
+        {
+          "checked": false,
+          "id": "geometry",
+          "value": "on"
+        },
+        {
+          "checked": true,
+          "id": "showParts",
+          "value": "on"
+        },
+        {
+          "checked": false,
+          "id": "diagnosticBall",
+          "value": "on"
+        },
+        {
+          "checked": false,
+          "id": "view",
+          "value": "source"
+        },
+        {
+          "checked": false,
+          "id": "zoom",
+          "value": "2"
+        },
+        {
+          "checked": true,
+          "id": "followBall",
+          "value": "on"
+        },
+        {
+          "checked": false,
+          "id": "import",
+          "value": ""
+        }
+      ]
+    },
+    {
+      "file": "36-receiver04-seed4-t2088-detail.jpg",
+      "imageSha256": "d6e612781ee6e65f7f56b1e78eb0dd67922dc3b418363186fab61fc3ac88247f",
+      "metadataFile": "36-receiver04-seed4-t2088-detail.json",
+      "metadataSha256": "949e9a08d35757c203402ba9cdc347bb13ccdbc5387c62e681ed099c2b8d8044",
+      "state": {
+        "ball": {
+          "pos": {
+            "x": 33619.8161306,
+            "y": 34861.9225518
+          },
+          "vel": {
+            "x": 275.8141875,
+            "y": 993.9050776
+          }
+        },
+        "done": true,
+        "dropId": "board01-start",
+        "finished": true,
+        "nearMissBucketIds": [],
+        "result": {
+          "bucketId": "receiver-04",
+          "kind": "IN_BUCKET"
+        },
+        "rngU32": 1716849652,
+        "seed": 4,
+        "started": true,
+        "status": "finished",
+        "tick": 2088,
+        "tickMs": 5,
+        "timeSec": 10.44
+      },
+      "viewport": {
+        "dpr": 1,
+        "height": 720,
+        "width": 1280
+      },
+      "canvas": {
+        "height": 590,
+        "width": 840,
+        "x": 17,
+        "y": 103.5
+      },
+      "controls": [
+        {
+          "checked": false,
+          "id": "seed",
+          "value": "4"
+        },
+        {
+          "checked": false,
+          "id": "count",
+          "value": "10"
+        },
+        {
+          "checked": false,
+          "id": "seek",
+          "value": "2088"
+        },
+        {
+          "checked": false,
+          "id": "tick-input",
+          "value": "2088"
+        },
+        {
+          "checked": true,
+          "id": "art",
+          "value": "on"
+        },
+        {
+          "checked": false,
+          "id": "geometry",
+          "value": "on"
+        },
+        {
+          "checked": true,
+          "id": "showParts",
+          "value": "on"
+        },
+        {
+          "checked": false,
+          "id": "diagnosticBall",
+          "value": "on"
+        },
+        {
+          "checked": false,
+          "id": "view",
+          "value": "source"
+        },
+        {
+          "checked": false,
+          "id": "zoom",
+          "value": "2"
+        },
+        {
+          "checked": true,
+          "id": "followBall",
+          "value": "on"
+        },
+        {
+          "checked": false,
+          "id": "import",
+          "value": ""
+        }
+      ]
+    },
+    {
+      "file": "37-receiver04-after-plus1.jpg",
+      "imageSha256": "d6e612781ee6e65f7f56b1e78eb0dd67922dc3b418363186fab61fc3ac88247f",
+      "metadataFile": "37-receiver04-after-plus1.json",
+      "metadataSha256": "949e9a08d35757c203402ba9cdc347bb13ccdbc5387c62e681ed099c2b8d8044",
+      "state": {
+        "ball": {
+          "pos": {
+            "x": 33619.8161306,
+            "y": 34861.9225518
+          },
+          "vel": {
+            "x": 275.8141875,
+            "y": 993.9050776
+          }
+        },
+        "done": true,
+        "dropId": "board01-start",
+        "finished": true,
+        "nearMissBucketIds": [],
+        "result": {
+          "bucketId": "receiver-04",
+          "kind": "IN_BUCKET"
+        },
+        "rngU32": 1716849652,
+        "seed": 4,
+        "started": true,
+        "status": "finished",
+        "tick": 2088,
+        "tickMs": 5,
+        "timeSec": 10.44
+      },
+      "viewport": {
+        "dpr": 1,
+        "height": 720,
+        "width": 1280
+      },
+      "canvas": {
+        "height": 590,
+        "width": 840,
+        "x": 17,
+        "y": 103.5
+      },
+      "controls": [
+        {
+          "checked": false,
+          "id": "seed",
+          "value": "4"
+        },
+        {
+          "checked": false,
+          "id": "count",
+          "value": "10"
+        },
+        {
+          "checked": false,
+          "id": "seek",
+          "value": "2088"
+        },
+        {
+          "checked": false,
+          "id": "tick-input",
+          "value": "2088"
+        },
+        {
+          "checked": true,
+          "id": "art",
+          "value": "on"
+        },
+        {
+          "checked": false,
+          "id": "geometry",
+          "value": "on"
+        },
+        {
+          "checked": true,
+          "id": "showParts",
+          "value": "on"
+        },
+        {
+          "checked": false,
+          "id": "diagnosticBall",
+          "value": "on"
+        },
+        {
+          "checked": false,
+          "id": "view",
+          "value": "source"
+        },
+        {
+          "checked": false,
+          "id": "zoom",
+          "value": "2"
+        },
+        {
+          "checked": true,
+          "id": "followBall",
+          "value": "on"
+        },
+        {
+          "checked": false,
+          "id": "import",
+          "value": ""
+        }
+      ]
+    },
+    {
+      "file": "38-receiver04-seed4-t2088-normal.jpg",
+      "imageSha256": "a5d2b0dbc8dfbdad9b03b57dcdc524b4596b9fb5cee5e8aac4dd3e380504435b",
+      "metadataFile": "38-receiver04-seed4-t2088-normal.json",
+      "metadataSha256": "cc3a65b246567197e85a960cc60d12a2e004d984cfd978b2424c337e40247953",
+      "state": {
+        "ball": {
+          "pos": {
+            "x": 33619.8161306,
+            "y": 34861.9225518
+          },
+          "vel": {
+            "x": 275.8141875,
+            "y": 993.9050776
+          }
+        },
+        "done": true,
+        "dropId": "board01-start",
+        "finished": true,
+        "nearMissBucketIds": [],
+        "result": {
+          "bucketId": "receiver-04",
+          "kind": "IN_BUCKET"
+        },
+        "rngU32": 1716849652,
+        "seed": 4,
+        "started": true,
+        "status": "finished",
+        "tick": 2088,
+        "tickMs": 5,
+        "timeSec": 10.44
+      },
+      "viewport": {
+        "dpr": 1,
+        "height": 720,
+        "width": 1280
+      },
+      "canvas": {
+        "height": 590,
+        "width": 840,
+        "x": 17,
+        "y": 103.5
+      },
+      "controls": [
+        {
+          "checked": false,
+          "id": "seed",
+          "value": "4"
+        },
+        {
+          "checked": false,
+          "id": "count",
+          "value": "10"
+        },
+        {
+          "checked": false,
+          "id": "seek",
+          "value": "2088"
+        },
+        {
+          "checked": false,
+          "id": "tick-input",
+          "value": "2088"
+        },
+        {
+          "checked": true,
+          "id": "art",
+          "value": "on"
+        },
+        {
+          "checked": false,
+          "id": "geometry",
+          "value": "on"
+        },
+        {
+          "checked": true,
+          "id": "showParts",
+          "value": "on"
+        },
+        {
+          "checked": false,
+          "id": "diagnosticBall",
+          "value": "on"
+        },
+        {
+          "checked": false,
+          "id": "view",
+          "value": "source"
+        },
+        {
+          "checked": false,
+          "id": "zoom",
+          "value": "1"
+        },
+        {
+          "checked": false,
+          "id": "followBall",
+          "value": "on"
+        },
+        {
+          "checked": false,
+          "id": "import",
+          "value": ""
+        }
+      ]
+    }
+  ],
+  "committedEvidence": [
+    {
+      "file": "30-ball-shadow-seed1842222754-t590-normal.jpg",
+      "sha256": "bbbe222a6630c4f8bcc42cfa5425585ea819e7de7eb81b645a3a865d131d9b60"
+    },
+    {
+      "file": "02-plate-parts-off-t0.jpg",
+      "sha256": "30c2240db326a09b638e6e1ad87219a84affbead3de27ee45f134e756a9ba099"
+    },
+    {
+      "file": "31-ball-shadow-t590-clean-plate-detail.jpg",
+      "sha256": "865b26cb02f78a224b60c10a0a81fa32c41c0d438157ad5e83f7a95e784af93e"
+    },
+    {
+      "file": "families-motion-sheet.jpg",
+      "sha256": "d35d7dd09e4ad94155a82dea4c72db8faf194e17997f5e6dacd01eed0e61e1aa"
+    },
+    {
+      "file": "side-and-receiver-sheet.jpg",
+      "sha256": "6345ab413f14214153396db2057bf19fed713d9123709973bbd8b26a4ba2f62c"
+    },
+    {
+      "file": "border-and-platform-sheet.jpg",
+      "sha256": "bf84759ae503aa1b9007b319c745e9343e13bc4db068481eecc7c38c0c9b1596"
+    },
+    {
+      "file": "34-platform-t2390-art-off.jpg",
+      "sha256": "d1bf12eb7b7b57cfb295c1c783a3b6e8856ae76ac7df487b0a81cc831edbd9f7"
+    },
+    {
+      "file": "receiver04-sheet.jpg",
+      "sha256": "5826bb50b9b6df297fe2c1f4861874907d9c81ae3ea83778101463891dc2ae72"
+    }
+  ],
+  "exclusions": [
+    {
+      "file": "03-seed1842222754-t605-normal.jpg",
+      "reason": "Capture name reflected intended tick; actual paused tick65 in metadata. Not used for tick605 claims."
+    },
+    {
+      "file": "22-LOST-approach-t1250-view.jpg",
+      "reason": "Duplicate snapshot of actual tick1290. Not used for tick1250 claims."
+    },
+    {
+      "file": "24-random02-live-sample.jpg",
+      "reason": "Taken during real-time playback; metadata and JPEG not atomic. Not used for exact tick claims."
+    }
+  ],
+  "httpAfterSeed4": {
+    "artifact.json": "c7815edc846749478e56e76d072233ae5a6fcd0ee86d2c14f9936379bff9b757",
+    "app.js": "994cead8ae6065b09e302934de545582289b3c350c8ad9312316b2ed947b94ca",
+    "art/manifest.json": "209350371d807a879fef1ab61a2aff02868d4e24414892f4d50a17cee02c5543"
+  }
+}
