@@ -1,0 +1,56 @@
+{
+  "schema": "r4d-p3-assets-v1",
+  "sourceSize": [
+    1536,
+    1536
+  ],
+  "ball": {
+    "path": "assets/ball-v1.png",
+    "anchorPx": [
+      626.5,
+      624.5
+    ],
+    "radiusPx": 487.5
+  },
+  "shadow": {
+    "path": "assets/shadow-v1.png",
+    "anchorPx": [
+      625.5,
+      627.5
+    ],
+    "radiusPx": 554.5,
+    "offsetRadius": [
+      -0.45,
+      0.5
+    ],
+    "scaleRadius": [
+      1.15,
+      1.0
+    ],
+    "alpha": 0.72
+  },
+  "occluders": [
+    {
+      "id": "leaf-01",
+      "path": "masks/leaf-01.png",
+      "rectPx": [
+        722,
+        337,
+        100,
+        84
+      ],
+      "depthNativeY": 33328.97811206313
+    },
+    {
+      "id": "flower-01",
+      "path": "masks/flower-01.png",
+      "rectPx": [
+        484,
+        331,
+        87,
+        75
+      ],
+      "depthNativeY": 33295.09546643628
+    }
+  ]
+}
