@@ -5,34 +5,35 @@
 Worktree: `E:\R4D\perspective\p3-worktrees\release-engineer`.
 Ветка: `codex/r4d-p3-masks-release-engineer-01`.
 
-## PAUSED_SAFE — checkpoint паузы Max
+## Текущее состояние — LOCAL_INTENT_READY
 
-Прямая временная пауза Max через Dot/CTO: `2026-10-28T00:46:00Z`
-(02:46 Europe/Kyiv). Заказ сохранён; продолжение только после новой явной
-команды Max. Старый stage 2, поздние inputs/checkpoints и свободный token
-не разрешают возобновление. Оба слота paused/reserved.
+Пауза Max00:46UTC сохранена checkpoint
+`3ec9adf9032969f13056b4d820c500c66e006f9e`. Новая прямая команда Max05:36UTC
+`Sentinel_6074724116dc819181f7316416fab9f5`, переданная Lead/CTO, разрешила
+возобновление прежнего участка. Начальная сверка checkpoint/ветки/чистоты
+прошла. UGH не затрагивается; новых сессий/worktrees/людей нет.
 
-До checkpoint HEAD `3210845628c1258c8c1e2b9e34883be4708aa7a8`, своя ветка,
-дерево чистое; незавершённого WIP и выполняющейся atomic release нет.
-Свои долгоживущие процессы, серверы и браузерные вкладки не запускались;
-останавливать нечего. Immutable/raw assets не менялись. `server_write=false`.
-По сообщению CTO P2 limited release completed/token released; новых
-server writes, reload или rollback не выполнять.
+Получены exact frozen candidate и две независимые QA тех же bytes. Lead gate
+разрешил intent частичного результата, без full visual/art PASS. Сформированы
+локальный immutable release, полный manifest, exact archive, baseline guard,
+минимальная дельта каталога и rollback plan. Всё закреплено в
+[INTENT_FROZEN_01.md](INTENT_FROZEN_01.md) и `intent-frozen-01/`.
+CODE/ART/QA commits, hashes и конкретный write-set канонически указаны там.
 
-Exact resume point: после новой явной команды Max сверить этот checkpoint
-и своё Git-дерево, затем получить названный frozen bundle/manifest hash,
-две QA тех же bytes и Lead/CTO gate из таблицы ниже. До отдельного P3 token
-серверная запись запрещена; актуальный live baseline проверяется перед
-будущей разрешённой записью. Сейчас новых работ/проверок не начинать;
-после сохранения checkpoint остановиться без активного ожидания.
+`server_write=false`: CTO gate/token ещё нет. Ни upload/staging/backups,
+ни webroot/nginx/service-doc writes, ни nginx-t/reload/публикация не выполнены.
+Свои серверы/браузеры не запускались, Builder preview PID112732 не трогался.
+Следующий шаг — CTO gate и новый single P3 token, затем fresh guard/resources
+перед разрешённой записью. До token остановиться без активного ожидания.
 
 ## Поручение и состояние
 
 Получен stage 2/2 от Lead `lead-r4d-p3-masks-01` по старту CTO
 `cto-r4d-perspective-01`. Разрешена локальная подготовка доставки;
-`server_write=false`. Release token не выдан; первое серверное окно у P2.
-Frozen candidate, build manifest и обе QA пока не переданы.
-Публикация, серверный аудит и проверка текущего live root не выполнялись.
+`server_write=false`. Release token не выдан; P2 limited03 завершён и token
+освобождён по сообщению CTO. Это само по себе P3 запись не разрешает.
+Current live root/manifest и opaque inventory проверены read-only;
+повторный guard06:32:06UTC совпал после локальной упаковки.
 
 Заказ: `orders/perspective/ORDER.md` и `P3-masks.md` на exact R4D
 `64061757802dc60770ab156ef5672af741d65d03`. Обязательства не изменяются.
@@ -91,12 +92,16 @@ immutable release, атомарная замена только root в
 `/etc/nginx/snippets/review.locations.conf`, `nginx -t` и graceful reload.
 Общий `/test/<slug>/` contour из PROCEDURES не является целью этого выпуска.
 
-Ни historical roots в runbook, ни успешное SSH чтение не подтверждают будущую
-live цель P3. Текущий root/snippet/manifest не читались; config/keys/credentials/
-allowlist/session DB файлы не открывались. P2 products и QA findings не читались.
-Серверных файлов, docs или service state этот проход не менял.
+Ни historical roots в runbook, ни успешное SSH чтение не подменяют fresh guard.
+При текущей подготовке прочитаны только root/hash Review-snippet и opaque
+manifest/inventory; остальные configs/keys/credentials/allowlists/session DB
+не открывались. P2 products и QA findings не исследовались. Серверных файлов,
+docs или service state этот проход не менял; свежие hashes — в intent.
 
-## Точные входы для следующего прохода
+## Контракт входов
+
+Candidate/manifest/обе QA и Lead gate теперь получены и сверены; точные значения
+в intent. CTO gate/token остаются впереди. Таблица ниже сохраняет состав входа.
 
 | От кого | Что передать |
 | --- | --- |
@@ -136,7 +141,7 @@ smoke не править. Дефект bundle возвращается Builder 
 3. Через установленный `vps1-direct` получить read-only текущий root,
    baseline manifest/хеши и подтвердить существующий механизм root switch,
    auth и отката. Baseline должен учитывать завершившееся окно P2.
-   Кандидат и две QA пока отсутствуют, поэтому этот шаг сейчас не выполняется.
+   В текущей подготовке этот read-only шаг выполнен; итоговый guard в intent.
 4. Из разрешённого baseline локально подготовить полное новое immutable Review
    tree: прежние материалы сохраняются побайтно, добавляются только P3 route
    и согласованное минимальное изменение существующего каталога. Набор
@@ -207,13 +212,13 @@ action/target/toolcall/reason, не обходить отказ.
 
 ## Ресурсы и следующий шаг
 
-Текущий этап на паузе; тяжёлых операций нет.
+Текущий локальный intent готов; выполняющихся тяжёлых операций нет.
 Перед будущей тяжёлой упаковкой/проверкой — свежие system-wide
 RAM/CPU/C/D/E и оценка совокупного пика с P2/Millionko. Тяжёлые temp/cache/
 output/build/staging — только `E:\R4D\perspective\p3-runtime\release-engineer`,
 с process-local параметрами. E≤4 GiB — диагностика; E≤2 GiB — безопасный
 checkpoint/stop. Глобальные настройки не менять.
 
-Следующий проход допустим только после новой явной команды Max и точных
-входов из таблицы. Локальная подготовка сохранена; публикация не выполнена,
-активного ожидания нет.
+Продолжение продуктового участка разрешено новой командой Max05:36UTC;
+серверная запись остаётся за отдельным CTO gate/token на этот exact intent.
+Локальная подготовка сохранена; публикация не выполнена, активного ожидания нет.
