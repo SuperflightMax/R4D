@@ -1,6 +1,6 @@
 # Release Engineer P4: подготовка публичной публикации
 
-Состояние: Stage 2, только read-only/local подготовка. 28 октября в 18:33–18:34 Europe/Kiev сверены identity/layout и 15 payload hashes frozen `p4-full-v02-candidate-02`, artifact SHA256 `c7815edc846749478e56e76d072233ae5a6fcd0ee86d2c14f9936379bff9b757`. Новый неполный intent: [candidate-02 public write-intent DRAFT](p4-candidate-02-public-write-intent-draft.md). Независимые TQA/VQA conclusions и новый single release-token CTO не получены; REMOTE_WRITES_HOLD_CTO Builder действует. Ни серверной доставки, ни переноса source Builder не было.
+Состояние: Stage 2, только read-only/local подготовка. Актуальный target — frozen `p4-full-v03-candidate-03`, artifact SHA256 `298649ec518a13e8070201e822108005a6b5081454452f50243d18f2fde2d542`. Прочитаны независимые TQA/VQA conclusions на03: PASS порученных дельт, не полный Art PASS/приёмка P4. Сверены identity, layout111 и 5 ключевых payload hashes. Актуальный неполный intent: [candidate-03 public release-intent DRAFT](p4-candidate-03-public-write-intent-draft.md). Operator inputs, решение о bounded publication и single release-token CTO не получены; REMOTE_WRITES_HOLD_CTO Builder действует. Ни серверной доставки, ни переноса source Builder не было.
 
 ## Рабочая область и ограничения
 
@@ -57,4 +57,4 @@ HTTP refusal record: action `GET without auth/cookies; redirects disabled`; targ
 - [ ] Проверить P4 и переход из каталога в разрешённом изолированном браузере, загрузку арта/управления, отсутствие resource/console ошибок; публичный доступ без auth. Проверить прежние route metadata без чтения чужих продуктов и private boundary без login/credentials.
 - [ ] Проверить сохранность прежних записей/bytes в рамках разрешённого сравнения, вернуть URL, manifest digest, baseline/rollback location и фактические postchecks; при сбое остановить конкретную операцию и действовать только в согласованных полномочиях.
 
-Следующий шаг: получить operator fields, независимые conclusions и отдельное решение/token CTO по новому candidate-02 draft. Списки первоначального prep не заменяют актуальный draft. Сейчас публикация не выполняется.
+Следующий шаг: получить exact missing operator fields, окончательный TQA report pin и отдельное решение/token CTO о bounded publication по draft03. Списки первоначального prep не заменяют актуальный draft. Сейчас публикация не выполняется.

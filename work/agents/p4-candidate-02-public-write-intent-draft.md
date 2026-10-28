@@ -1,5 +1,7 @@
 # P4 candidate-02: public write-intent DRAFT — НЕПОЛНЫЙ
 
+Исторический draft02; заменён [draft03](p4-candidate-03-public-write-intent-draft.md). Не использовать для будущего token, baseline или публикации.
+
 28 октября 2026, 18:33–18:34 Europe/Kiev (16:33–16:34 UTC). Только read-only/local подготовка для новой публичной схемы Andy. Запись не разрешена.
 
 ## Проверено на frozen02
