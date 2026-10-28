@@ -4,7 +4,7 @@
 
 ## Текущая статическая сборка P2
 
-**Delivery04 сейчас на serialization hold:** CTO window/token выдан P3,04token/serverwrite=false. Уже запущенный local packet сохранён как [obsolete03 draft](RELEASE_DRAFT_04_SERIALIZATION_HOLD_01.md), не ready/token request; raw files не перезаписаны. Frozen04 и actual TQA df309… сохраняются. До адресного explicit CTO P3-token release черезLead никаких новых baseline probes/упаковок/серверных действий; после него нужен новый coherent baseline и fresh новый intent outputID. Это не продуктовая пауза и не требует нового Max resume.
+После explicitCTOP3tokenrelease/Leadunlock подготовлен один [fresh LOCAL intent04-02](RELEASE_INTENT_04_FINAL_02.md) на заново прочитанном coherent actualP3 deliverybaseline:549→550files/88606776bytes,533otherrecordsopaque preserved,18-memberpatch. **Нового P2 token/gate нет, serverwrite=false**; теперь reviewLead до tokenrequest. [Obsolete03 draft01](RELEASE_DRAFT_04_SERIALIZATION_HOLD_01.md) и всеrawfiles/checks/status сохранены безoverwrite;01 data не reused. Frozen04/source/actualTQAdf309…неизменны, нового build/browser/login-only QA не было. Details/guards/modes/counters preservation — в новом handoff.
 
 Для будущей доставки04 выполнен только [read-only preflight04-01](REVIEW_PREFLIGHT_04_01.md): coherent06:33UTC snapshot установил actual live03/all472filehashes/modes и absent04targets; draftP2card+39bytes/root-onlyinverse проверены в памяти. Финальные release intent/manifest/archive не готовились, token/serverwrites0. Sharedbaseline может измениться; после actualTQA нужны новое адресное final-local поручение и свежиеguards.
 
