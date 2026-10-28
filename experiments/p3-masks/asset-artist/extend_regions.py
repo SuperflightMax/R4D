@@ -42,6 +42,6 @@ def main():
     if boundary_path.exists():
         regions.extend(json.loads(boundary_path.read_text(encoding='utf8'))['regions'])
     data['regions']=regions
-    (ROOT/'regions.json').write_text(json.dumps(data,indent=2)+'\n',encoding='utf8')
+    (ROOT/'regions.json').write_bytes((json.dumps(data,indent=2)+'\n').encode('utf8'))
 
 if __name__=='__main__':main()

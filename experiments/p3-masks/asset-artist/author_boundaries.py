@@ -70,6 +70,6 @@ def main():
                 'depthBasis':'observed front inner rim, accepted inverse projection; not the capture-circle center',
                 'depthLineSourcePx':[a,b],'depthLineNative':[native(a),native(b)],
                 'polygons':[clipped]})
-    (ROOT/'boundary_regions.json').write_text(json.dumps({'regions':regions},indent=2)+'\n',encoding='utf8')
+    (ROOT/'boundary_regions.json').write_bytes((json.dumps({'regions':regions},indent=2)+'\n').encode('utf8'))
 
 if __name__=='__main__':main()

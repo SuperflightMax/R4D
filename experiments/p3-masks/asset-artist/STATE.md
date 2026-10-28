@@ -40,6 +40,13 @@ source-aligned, source/config неизменны. Basket-front depth lines по�
 физического основания. Pixel contours/sourceBounds в regions.json;
 точный consumer package assets.json, hashes.json. Весь payload ~1.82 MB.
 
+Для exact handoff JSON записывается UTF-8/LF без Windows newline conversion.
+Текущий assets.json canonical-byte SHA256:
+`98cef793f5cf9191fea315caf4bf11d727c20b2d5a9d5704972e97e02cfd2f73`.
+Прежние озвученные raw CRLF hashes не использовать как Git hashes; причина
+и исправление сохранены в RUN_LOG. PNG/координаты/глубины от этой правки
+не изменились. Фактический consumer payload ~1.805MB.
+
 Проверены размеры/white RGB/alpha/hash integrity, все 25 exact pin depths,
 пять точек исключения baked shadows и четыре пары hole/front-rim корзин.
 Полный динамический/художественный PASS пока отсутствует. Риск: scalar pin

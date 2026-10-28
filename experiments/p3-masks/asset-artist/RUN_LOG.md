@@ -53,3 +53,15 @@ Front-rim probe обнаружил AA просвет на границе пол�
 Итог авторинга: 51 unique RGBA masks, 25 exact config pin depths, source
 1536² без rescale. Ball/shadow raw прежние, дополнительная генерация не нужна.
 Проверки являются самопроверкой пакета, не full movement/art QA PASS.
+
+## 2026-10-28 — исправление exact Git handoff hashes
+
+Проверка всех hashes по байтам commit9cf4331 обнаружила отличие assets.json:
+Python write_text на Windows автоматически записывал CRLF, Git нормализовал
+текст в LF. Локальная проверка проходила, но её raw hash не соответствовал
+Git-объекту. Предыдущий озвученный SHA654f77e7 относится к рабочему CRLF и
+не должен использоваться для exact Git handoff.
+
+JSON writers заменены на явную UTF-8/LF запись байтов; все входящие в hashes
+тексты пересчитаны. PNG и числовые значения не изменились. Добавлена проверка
+LF; полный список дополнительно проверяется по git show exact commit.

@@ -47,6 +47,7 @@ def main():
     for name,h in json.loads((ROOT/'hashes.json').read_text()).items():
         raw=(ROOT/name).read_bytes()
         assert len(raw)==h['bytes'] and hashlib.sha256(raw).hexdigest()==h['sha256'],name
+        if name.endswith(('.json','.py')):assert b'\r\n' not in raw,(name,'expected canonical LF')
     print('51 unique masks; 25 exact pin depths; source-size crops/white RGB/alpha/hashes; '
           'five shadow exclusion probes and four open-basket/front-rim probes verified. No movement/art PASS.')
 
