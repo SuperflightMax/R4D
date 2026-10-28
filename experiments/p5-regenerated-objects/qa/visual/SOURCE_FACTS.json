@@ -1,0 +1,632 @@
+{
+  "status": "SOURCE_PREPARATION_ONLY_NO_P5_CANDIDATE_VERDICT",
+  "source": {
+    "path": "K:\\Agents\\R4D\\Assets\\perspective\\01-jungle.jpg",
+    "bytes": 671136,
+    "sha256": "c8f9e4245c1de8c2086e615bc75dc10aea59b76b614d6e106593e07262e24f72",
+    "dimensionsPx": [
+      1536,
+      1536
+    ]
+  },
+  "verifiedCommonInputs": [
+    {
+      "commit": "4b47db04c7140ebf88f69b91faa0b790d46f22ec",
+      "path": "experiments/p1-collider-mapping/clean-repeat-01/simulation/boards/01/trial-01/config.json",
+      "bytes": 9503,
+      "sha256": "dd5c519cd6d4b7295118e0a3a1063efed424a0ce739450bd5153c6a9941982db"
+    },
+    {
+      "commit": "4b47db04c7140ebf88f69b91faa0b790d46f22ec",
+      "path": "experiments/p1-collider-mapping/clean-repeat-01/simulation/boards/01/trial-01/manifest.json",
+      "bytes": 11565,
+      "sha256": "7784dc0a215d0e472cf06a4eee03793592727cf0fa9a1fa0e0c78e5f1d17da18"
+    },
+    {
+      "commit": "4b47db04c7140ebf88f69b91faa0b790d46f22ec",
+      "path": "experiments/p1-collider-mapping/clean-repeat-01/simulation/projection.mjs",
+      "bytes": 614,
+      "sha256": "b59a0c1e6c34b417d253178457ef3580b8bea0aa89c989d1342f9376e19b9431"
+    },
+    {
+      "commit": "4b47db04c7140ebf88f69b91faa0b790d46f22ec",
+      "path": "experiments/p1-collider-mapping/clean-repeat-01/viewer/src/view-math.mjs",
+      "bytes": 3050,
+      "sha256": "96f01cc2093c353ff958cb906fe0c8ae93412425d0f7a5ec7cca0f2bf9f1aa5e"
+    }
+  ],
+  "method": "Independent direct homogeneous division of the exact P1 nativeToSource matrix; 720 samples per ground circle. Rounded display only. Horizontal r16 diameter is project(x+16,y).x - project(x-16,y).x. These are source pixels, not texture/CSS pixels, sphere silhouette height, or a collision test.",
+  "counts": {
+    "pins": 25,
+    "segments": 16,
+    "buckets": 4,
+    "drops": 1,
+    "families": {
+      "flower": 7,
+      "leaf": 5,
+      "frog": 5,
+      "wood": 8
+    }
+  },
+  "pins": [
+    {
+      "id": "flower-01",
+      "nativeAnchor": [
+        32982.10427784783,
+        33295.09546643628
+      ],
+      "nativeRadius": 44.62098571998958,
+      "sourceAnchorPx": [
+        525.469,
+        380.882
+      ],
+      "projectedGroundCircleBoundsSizePxApprox": [
+        80.054,
+        38.01
+      ],
+      "ballR16HorizontalDiameterPxAtAnchor": 28.686
+    },
+    {
+      "id": "leaf-01",
+      "nativeAnchor": [
+        33257.103055588785,
+        33328.97811206313
+      ],
+      "nativeRadius": 49.97188529432575,
+      "sourceAnchorPx": [
+        771.993,
+        395.378
+      ],
+      "projectedGroundCircleBoundsSizePxApprox": [
+        90.002,
+        42.956
+      ],
+      "ballR16HorizontalDiameterPxAtAnchor": 28.816
+    },
+    {
+      "id": "frog-01",
+      "nativeAnchor": [
+        33523.76813123743,
+        33306.91584579162
+      ],
+      "nativeRadius": 49.005746624320594,
+      "sourceAnchorPx": [
+        1011.417,
+        385.924
+      ],
+      "projectedGroundCircleBoundsSizePxApprox": [
+        88.058,
+        41.878
+      ],
+      "ballR16HorizontalDiameterPxAtAnchor": 28.731
+    },
+    {
+      "id": "wood-01",
+      "nativeAnchor": [
+        33101.88779971951,
+        33516.93876987417
+      ],
+      "nativeRadius": 32.47610540354854,
+      "sourceAnchorPx": [
+        628.638,
+        478.246
+      ],
+      "projectedGroundCircleBoundsSizePxApprox": [
+        60.014,
+        29.376
+      ],
+      "ballR16HorizontalDiameterPxAtAnchor": 29.56
+    },
+    {
+      "id": "flower-02",
+      "nativeAnchor": [
+        33380.562134421954,
+        33530.233282658526
+      ],
+      "nativeRadius": 45.38351877747797,
+      "sourceAnchorPx": [
+        886.276,
+        484.27
+      ],
+      "projectedGroundCircleBoundsSizePxApprox": [
+        84.014,
+        41.203
+      ],
+      "ballR16HorizontalDiameterPxAtAnchor": 29.614
+    },
+    {
+      "id": "wood-02",
+      "nativeAnchor": [
+        33587.93396983491,
+        33516.93876987417
+      ],
+      "nativeRadius": 32.47610540354854,
+      "sourceAnchorPx": [
+        1077.626,
+        478.246
+      ],
+      "projectedGroundCircleBoundsSizePxApprox": [
+        60.063,
+        29.376
+      ],
+      "ballR16HorizontalDiameterPxAtAnchor": 29.56
+    },
+    {
+      "id": "frog-02",
+      "nativeAnchor": [
+        32948.158051844744,
+        33634.85738798833
+      ],
+      "nativeRadius": 47.92511291991522,
+      "sourceAnchorPx": [
+        481.947,
+        532.455
+      ],
+      "projectedGroundCircleBoundsSizePxApprox": [
+        90.085,
+        44.791
+      ],
+      "ballR16HorizontalDiameterPxAtAnchor": 30.047
+    },
+    {
+      "id": "leaf-02",
+      "nativeAnchor": [
+        33220.24445754825,
+        33676.055127292115
+      ],
+      "nativeRadius": 48.70831724129279,
+      "sourceAnchorPx": [
+        737.233,
+        551.817
+      ],
+      "projectedGroundCircleBoundsSizePxApprox": [
+        92.003,
+        46.051
+      ],
+      "ballR16HorizontalDiameterPxAtAnchor": 30.221
+    },
+    {
+      "id": "leaf-03",
+      "nativeAnchor": [
+        33495.692557377544,
+        33708.45237135722
+      ],
+      "nativeRadius": 49.54077468376489,
+      "sourceAnchorPx": [
+        998.4,
+        567.201
+      ],
+      "projectedGroundCircleBoundsSizePxApprox": [
+        94.056,
+        47.267
+      ],
+      "ballR16HorizontalDiameterPxAtAnchor": 30.359
+    },
+    {
+      "id": "wood-03",
+      "nativeAnchor": [
+        33048.040620357926,
+        33875.80059132175
+      ],
+      "nativeRadius": 31.90441210678833,
+      "sourceAnchorPx": [
+        568.936,
+        648.962
+      ],
+      "projectedGroundCircleBoundsSizePxApprox": [
+        62.029,
+        31.929
+      ],
+      "ballR16HorizontalDiameterPxAtAnchor": 31.093
+    },
+    {
+      "id": "flower-03",
+      "nativeAnchor": [
+        33327.77201639532,
+        33857.38732422164
+      ],
+      "nativeRadius": 44.37224230558652,
+      "sourceAnchorPx": [
+        840.552,
+        639.773
+      ],
+      "projectedGroundCircleBoundsSizePxApprox": [
+        86.006,
+        44.172
+      ],
+      "ballR16HorizontalDiameterPxAtAnchor": 31.01
+    },
+    {
+      "id": "frog-03",
+      "nativeAnchor": [
+        33623.770528529574,
+        33859.21790429951
+      ],
+      "nativeRadius": 48.487099129026284,
+      "sourceAnchorPx": [
+        1127.491,
+        640.684
+      ],
+      "projectedGroundCircleBoundsSizePxApprox": [
+        94.134,
+        48.295
+      ],
+      "ballR16HorizontalDiameterPxAtAnchor": 31.019
+    },
+    {
+      "id": "frog-04",
+      "nativeAnchor": [
+        33183.163481675765,
+        34037.81138863775
+      ],
+      "nativeRadius": 49.24910619082636,
+      "sourceAnchorPx": [
+        698.532,
+        731.972
+      ],
+      "projectedGroundCircleBoundsSizePxApprox": [
+        98.008,
+        51.68
+      ],
+      "ballR16HorizontalDiameterPxAtAnchor": 31.838
+    },
+    {
+      "id": "wood-04",
+      "nativeAnchor": [
+        33433.9500738487,
+        34041.74228104549
+      ],
+      "nativeRadius": 32.143977007385345,
+      "sourceAnchorPx": [
+        948.153,
+        734.035
+      ],
+      "projectedGroundCircleBoundsSizePxApprox": [
+        64.022,
+        33.769
+      ],
+      "ballR16HorizontalDiameterPxAtAnchor": 31.857
+    },
+    {
+      "id": "wood-05",
+      "nativeAnchor": [
+        33682.368293229054,
+        34081.29892794594
+      ],
+      "nativeRadius": 31.955752387694464,
+      "sourceAnchorPx": [
+        1197.959,
+        754.935
+      ],
+      "projectedGroundCircleBoundsSizePxApprox": [
+        64.129,
+        33.968
+      ],
+      "ballR16HorizontalDiameterPxAtAnchor": 32.044
+    },
+    {
+      "id": "flower-04",
+      "nativeAnchor": [
+        33007.71214527875,
+        34179.94341792299
+      ],
+      "nativeRadius": 43.29375429236969,
+      "sourceAnchorPx": [
+        518.662,
+        808.143
+      ],
+      "projectedGroundCircleBoundsSizePxApprox": [
+        88.063,
+        47.403
+      ],
+      "ballR16HorizontalDiameterPxAtAnchor": 32.522
+    },
+    {
+      "id": "flower-05",
+      "nativeAnchor": [
+        33285.13357773812,
+        34221.24416829724
+      ],
+      "nativeRadius": 44.97914941694413,
+      "sourceAnchorPx": [
+        800.795,
+        830.895
+      ],
+      "projectedGroundCircleBoundsSizePxApprox": [
+        92.003,
+        49.869
+      ],
+      "ballR16HorizontalDiameterPxAtAnchor": 32.726
+    },
+    {
+      "id": "leaf-04",
+      "nativeAnchor": [
+        33543.26285698555,
+        34199.3276024258
+      ],
+      "nativeRadius": 49.05332797153468,
+      "sourceAnchorPx": [
+        1063.807,
+        818.786
+      ],
+      "projectedGroundCircleBoundsSizePxApprox": [
+        100.097,
+        54.026
+      ],
+      "ballR16HorizontalDiameterPxAtAnchor": 32.618
+    },
+    {
+      "id": "wood-06",
+      "nativeAnchor": [
+        32929.345639735395,
+        34434.13825301294
+      ],
+      "nativeRadius": 32.16911823781643,
+      "sourceAnchorPx": [
+        425.754,
+        952.858
+      ],
+      "projectedGroundCircleBoundsSizePxApprox": [
+        68.09,
+        38.092
+      ],
+      "ballR16HorizontalDiameterPxAtAnchor": 33.821
+    },
+    {
+      "id": "leaf-05",
+      "nativeAnchor": [
+        33114.54075536323,
+        34363.55781357324
+      ],
+      "nativeRadius": 48.788933318758126,
+      "sourceAnchorPx": [
+        623.13,
+        911.529
+      ],
+      "projectedGroundCircleBoundsSizePxApprox": [
+        102.027,
+        56.513
+      ],
+      "ballR16HorizontalDiameterPxAtAnchor": 33.45
+    },
+    {
+      "id": "frog-05",
+      "nativeAnchor": [
+        33397.654005936,
+        34396.68997420478
+      ],
+      "nativeRadius": 49.4893903044378,
+      "sourceAnchorPx": [
+        919.84,
+        930.816
+      ],
+      "projectedGroundCircleBoundsSizePxApprox": [
+        104.028,
+        57.92
+      ],
+      "ballR16HorizontalDiameterPxAtAnchor": 33.623
+    },
+    {
+      "id": "flower-06",
+      "nativeAnchor": [
+        33609.94745653071,
+        34403.91194882328
+      ],
+      "nativeRadius": 45.630967034617505,
+      "sourceAnchorPx": [
+        1143.323,
+        935.047
+      ],
+      "projectedGroundCircleBoundsSizePxApprox": [
+        96.149,
+        53.524
+      ],
+      "ballR16HorizontalDiameterPxAtAnchor": 33.661
+    },
+    {
+      "id": "flower-07",
+      "nativeAnchor": [
+        33004.49724257842,
+        34601.47322043386
+      ],
+      "nativeRadius": 45.14213471002636,
+      "sourceAnchorPx": [
+        498.004,
+        1054.604
+      ],
+      "projectedGroundCircleBoundsSizePxApprox": [
+        98.083,
+        56.382
+      ],
+      "ballR16HorizontalDiameterPxAtAnchor": 34.735
+    },
+    {
+      "id": "wood-07",
+      "nativeAnchor": [
+        33189.08291747258,
+        34600.12791716486
+      ],
+      "nativeRadius": 32.25138350228438,
+      "sourceAnchorPx": [
+        698.38,
+        1053.764
+      ],
+      "projectedGroundCircleBoundsSizePxApprox": [
+        70.005,
+        40.263
+      ],
+      "ballR16HorizontalDiameterPxAtAnchor": 34.727
+    },
+    {
+      "id": "wood-08",
+      "nativeAnchor": [
+        33452.218349997915,
+        34598.53376751601
+      ],
+      "nativeRadius": 32.2596801779234,
+      "sourceAnchorPx": [
+        983.886,
+        1052.769
+      ],
+      "projectedGroundCircleBoundsSizePxApprox": [
+        70.036,
+        40.253
+      ],
+      "ballR16HorizontalDiameterPxAtAnchor": 34.718
+    }
+  ],
+  "drops": [
+    {
+      "id": "board01-start",
+      "nativeAnchor": [
+        33254.863169496064,
+        33151.81331014809
+      ],
+      "nativeRadius": 16,
+      "sourceAnchorPx": [
+        770.0,
+        321.0
+      ],
+      "projectedGroundCircleBoundsSizePxApprox": [
+        28.148,
+        13.123
+      ],
+      "ballR16HorizontalDiameterPxAtAnchor": 28.148
+    }
+  ],
+  "buckets": [
+    {
+      "id": "receiver-01",
+      "nativeAnchor": [
+        32893.24699917258,
+        34882.17558293618
+      ],
+      "nativeRadius": 33.523990645255964,
+      "sourceAnchorPx": [
+        358.559,
+        1238.21
+      ],
+      "projectedGroundCircleBoundsSizePxApprox": [
+        76.376,
+        45.939
+      ],
+      "ballR16HorizontalDiameterPxAtAnchor": 36.383
+    },
+    {
+      "id": "receiver-02",
+      "nativeAnchor": [
+        33147.03047341419,
+        34919.8575927248
+      ],
+      "nativeRadius": 27.859680215191496,
+      "sourceAnchorPx": [
+        646.31,
+        1264.193
+      ],
+      "projectedGroundCircleBoundsSizePxApprox": [
+        63.769,
+        38.667
+      ],
+      "ballR16HorizontalDiameterPxAtAnchor": 36.616
+    },
+    {
+      "id": "receiver-03",
+      "nativeAnchor": [
+        33381.51442545501,
+        34923.90364051326
+      ],
+      "nativeRadius": 28.5120754734123,
+      "sourceAnchorPx": [
+        914.72,
+        1267.002
+      ],
+      "projectedGroundCircleBoundsSizePxApprox": [
+        65.311,
+        39.627
+      ],
+      "ballR16HorizontalDiameterPxAtAnchor": 36.642
+    },
+    {
+      "id": "receiver-04",
+      "nativeAnchor": [
+        33627.12626589451,
+        34890.46257444717
+      ],
+      "nativeRadius": 31.47800941620484,
+      "sourceAnchorPx": [
+        1193.553,
+        1243.896
+      ],
+      "projectedGroundCircleBoundsSizePxApprox": [
+        71.822,
+        43.256
+      ],
+      "ballR16HorizontalDiameterPxAtAnchor": 36.434
+    }
+  ],
+  "floorBoundarySourcePx": [
+    [
+      420.0,
+      300.0
+    ],
+    [
+      423.0,
+      420.0
+    ],
+    [
+      365.0,
+      550.0
+    ],
+    [
+      425.0,
+      700.0
+    ],
+    [
+      395.0,
+      850.0
+    ],
+    [
+      281.0,
+      985.0
+    ],
+    [
+      345.0,
+      1114.0
+    ],
+    [
+      1240.0,
+      1114.0
+    ],
+    [
+      1345.0,
+      985.0
+    ],
+    [
+      1249.0,
+      850.0
+    ],
+    [
+      1295.0,
+      700.0
+    ],
+    [
+      1218.0,
+      550.0
+    ],
+    [
+      1150.0,
+      420.0
+    ],
+    [
+      1116.0,
+      300.0
+    ]
+  ],
+  "limitations": [
+    "No native simulation run",
+    "No P5 generated assets inspected",
+    "No browser/candidate/contact/occlusion/basket QA",
+    "Common mapping is held fixed, not endorsed as defect-free",
+    "P0 diagnostic rows/scales are not substituted for accepted P1"
+  ]
+}
