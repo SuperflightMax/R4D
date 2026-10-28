@@ -1,0 +1,2165 @@
+{
+  "schema": "r4d.p1.clean-repeat-01.board01.projection.candidate-01",
+  "status": "independent fresh-source research candidate; not sim-core config or QA PASS",
+  "source": {
+    "path": "K:\\Agents\\R4D\\Assets\\perspective\\01-jungle.jpg",
+    "sha256": "c8f9e4245c1de8c2086e615bc75dc10aea59b76b614d6e106593e07262e24f72",
+    "width": 1536,
+    "height": 1536,
+    "readOnly": true
+  },
+  "fit": {
+    "method": "repeated support width by family; median of independent family vanishing rows; floor foreshortening from approximately circular horizontal tops",
+    "familyWidthFits": {
+      "flower-base": {
+        "measurementsVWidthPx": [
+          [
+            400,
+            80
+          ],
+          [
+            505,
+            84
+          ],
+          [
+            662,
+            86
+          ],
+          [
+            832,
+            88
+          ],
+          [
+            856,
+            92
+          ],
+          [
+            962,
+            96
+          ],
+          [
+            1083,
+            98
+          ]
+        ],
+        "slope": 0.025704515513756444,
+        "intercept": 69.6808668252987,
+        "rms": 1.4416904459041255,
+        "vp": -2710.8414779499403
+      },
+      "leaf-base": {
+        "measurementsVWidthPx": [
+          [
+            417,
+            90
+          ],
+          [
+            575,
+            92
+          ],
+          [
+            591,
+            94
+          ],
+          [
+            846,
+            100
+          ],
+          [
+            940,
+            102
+          ]
+        ],
+        "slope": 0.023965636654817487,
+        "intercept": 79.45195402198398,
+        "rms": 0.6400582181837502,
+        "vp": -3315.2448719117515
+      },
+      "frog-base": {
+        "measurementsVWidthPx": [
+          [
+            407,
+            88
+          ],
+          [
+            555,
+            90
+          ],
+          [
+            665,
+            94
+          ],
+          [
+            758,
+            98
+          ],
+          [
+            960,
+            104
+          ]
+        ],
+        "slope": 0.030380240792388297,
+        "intercept": 74.47561890989223,
+        "rms": 0.890730626519193,
+        "vp": -2451.449263316963
+      },
+      "wood-base": {
+        "measurementsVWidthPx": [
+          [
+            493,
+            60
+          ],
+          [
+            493,
+            60
+          ],
+          [
+            665,
+            62
+          ],
+          [
+            751,
+            64
+          ],
+          [
+            772,
+            64
+          ],
+          [
+            972,
+            68
+          ],
+          [
+            1074,
+            70
+          ],
+          [
+            1073,
+            70
+          ]
+        ],
+        "slope": 0.017479614371525478,
+        "intercept": 51.00009834499877,
+        "rms": 0.3629330370313629,
+        "vp": -2917.6901309721457
+      }
+    },
+    "vanishingPointPx": [
+      771,
+      -2814.265804461043
+    ],
+    "vanishingXAssumption": "approximately frontal camera centered on middle chute; not independently recovered from converging floor lines",
+    "referenceRow": 750,
+    "parallelTopMeasurementsVWidthHeightPx": [
+      [
+        429,
+        54,
+        29
+      ],
+      [
+        430,
+        54,
+        29
+      ],
+      [
+        590,
+        57,
+        29
+      ],
+      [
+        678,
+        60,
+        31
+      ],
+      [
+        703,
+        59,
+        30
+      ],
+      [
+        894,
+        61,
+        34
+      ],
+      [
+        989,
+        61,
+        32
+      ],
+      [
+        989,
+        61,
+        32
+      ]
+    ],
+    "foreshorteningCandidates": [
+      0.590189908026449,
+      0.5900079901616381,
+      0.532684136875273,
+      0.5273187768103106,
+      0.5152691452384891,
+      0.535732890073553,
+      0.49162453501801795,
+      0.49162453501801795
+    ],
+    "qMedian": 0.5300014568427918,
+    "forward": [
+      [
+        1,
+        -0.11464664692356805,
+        771
+      ],
+      [
+        0,
+        0.41847748123620804,
+        750
+      ],
+      [
+        0,
+        -0.0001486986341421116,
+        1
+      ]
+    ],
+    "inverse": [
+      [
+        1,
+        0,
+        -771
+      ],
+      [
+        0,
+        1.8867872665048513,
+        -1415.0904498786385
+      ],
+      [
+        0,
+        0.00028056268944599974,
+        0.7895779829155002
+      ]
+    ]
+  },
+  "transform": {
+    "mode": "projective",
+    "forward": [
+      [
+        1,
+        -0.11464664692356805,
+        771
+      ],
+      [
+        0,
+        0.41847748123620804,
+        750
+      ],
+      [
+        0,
+        -0.0001486986341421116,
+        1
+      ]
+    ],
+    "inverse": [
+      [
+        1,
+        0,
+        -771
+      ],
+      [
+        0,
+        1.8867872665048513,
+        -1415.0904498786385
+      ],
+      [
+        0,
+        0.00028056268944599974,
+        0.7895779829155002
+      ]
+    ],
+    "formula": "row-major matrix times homogeneous [x,y,1], divide by w",
+    "horizonSourceY": -2814.265804461043
+  },
+  "coordinates": {
+    "x": "right",
+    "y": "toward receivers",
+    "scale": "one x unit equals one image pixel at source row 750; y foreshortening 0.5300014568427918",
+    "metricRecovery": false
+  },
+  "domains": {
+    "sourceImageQuadPx": [
+      [
+        0,
+        0
+      ],
+      [
+        1536,
+        0
+      ],
+      [
+        1536,
+        1536
+      ],
+      [
+        0,
+        1536
+      ]
+    ],
+    "wholeSourceFlatPolygon": [
+      [
+        -976.4709967634845,
+        -1792.2111311329206
+      ],
+      [
+        968.872000679722,
+        -1792.2111311329206
+      ],
+      [
+        626.780859600947,
+        1215.065733072221
+      ],
+      [
+        -631.6967879115426,
+        1215.065733072221
+      ]
+    ],
+    "wholeSourceFlatBounds": {
+      "minX": -976.4709967634845,
+      "maxX": 968.872000679722,
+      "minY": -1792.2111311329206,
+      "maxY": 1215.065733072221
+    },
+    "playableFloorSourcePolygon": [
+      [
+        420,
+        300
+      ],
+      [
+        423,
+        420
+      ],
+      [
+        365,
+        550
+      ],
+      [
+        425,
+        700
+      ],
+      [
+        395,
+        850
+      ],
+      [
+        281,
+        985
+      ],
+      [
+        345,
+        1114
+      ],
+      [
+        1240,
+        1114
+      ],
+      [
+        1345,
+        985
+      ],
+      [
+        1249,
+        850
+      ],
+      [
+        1295,
+        700
+      ],
+      [
+        1218,
+        550
+      ],
+      [
+        1150,
+        420
+      ],
+      [
+        1116,
+        300
+      ]
+    ],
+    "playableFloorFlatPolygon": [
+      [
+        -401.7182141529936,
+        -971.7395015217145
+      ],
+      [
+        -383.50728571584943,
+        -686.1692496815111
+      ],
+      [
+        -430.1360239408932,
+        -399.7907255353218
+      ],
+      [
+        -350.9227921172153,
+        -95.6815976435103
+      ],
+      [
+        -365.7387356686231,
+        183.5295716295589
+      ],
+      [
+        -459.69151253781916,
+        415.9692279765866
+      ],
+      [
+        -386.52609275474555,
+        623.1513465569856
+      ],
+      [
+        425.5416373285814,
+        623.1513465569856
+      ],
+      [
+        538.4957718300167,
+        415.9692279765866
+      ],
+      [
+        464.9550948127709,
+        183.5295716295589
+      ],
+      [
+        531.4553267902336,
+        -95.6815976435103
+      ],
+      [
+        473.57340566891446,
+        -399.7907255353218
+      ],
+      [
+        417.67029105260616,
+        -686.1692496815111
+      ],
+      [
+        394.8512361332843,
+        -971.7395015217145
+      ]
+    ],
+    "playableFloorFlatBounds": {
+      "minX": -459.69151253781916,
+      "maxX": 538.4957718300167,
+      "minY": -971.7395015217145,
+      "maxY": 623.1513465569856
+    },
+    "rule": "Entire source image and its inverse are valid transform domains; floor bounds never replace full-image framing."
+  },
+  "bounds": {
+    "segments": [
+      {
+        "id": "far",
+        "fromSourcePx": [
+          420,
+          300
+        ],
+        "toSourcePx": [
+          1116,
+          300
+        ],
+        "fromFlat": [
+          -401.7182141529936,
+          -971.7395015217145
+        ],
+        "toFlat": [
+          394.8512361332843,
+          -971.7395015217145
+        ]
+      },
+      {
+        "id": "left-1",
+        "fromSourcePx": [
+          420,
+          300
+        ],
+        "toSourcePx": [
+          423,
+          420
+        ],
+        "fromFlat": [
+          -401.7182141529936,
+          -971.7395015217145
+        ],
+        "toFlat": [
+          -383.50728571584943,
+          -686.1692496815111
+        ]
+      },
+      {
+        "id": "left-2",
+        "fromSourcePx": [
+          423,
+          420
+        ],
+        "toSourcePx": [
+          365,
+          550
+        ],
+        "fromFlat": [
+          -383.50728571584943,
+          -686.1692496815111
+        ],
+        "toFlat": [
+          -430.1360239408932,
+          -399.7907255353218
+        ]
+      },
+      {
+        "id": "left-3",
+        "fromSourcePx": [
+          365,
+          550
+        ],
+        "toSourcePx": [
+          425,
+          700
+        ],
+        "fromFlat": [
+          -430.1360239408932,
+          -399.7907255353218
+        ],
+        "toFlat": [
+          -350.9227921172153,
+          -95.6815976435103
+        ]
+      },
+      {
+        "id": "left-4",
+        "fromSourcePx": [
+          425,
+          700
+        ],
+        "toSourcePx": [
+          395,
+          850
+        ],
+        "fromFlat": [
+          -350.9227921172153,
+          -95.6815976435103
+        ],
+        "toFlat": [
+          -365.7387356686231,
+          183.5295716295589
+        ]
+      },
+      {
+        "id": "left-5",
+        "fromSourcePx": [
+          395,
+          850
+        ],
+        "toSourcePx": [
+          281,
+          985
+        ],
+        "fromFlat": [
+          -365.7387356686231,
+          183.5295716295589
+        ],
+        "toFlat": [
+          -459.69151253781916,
+          415.9692279765866
+        ]
+      },
+      {
+        "id": "left-6",
+        "fromSourcePx": [
+          281,
+          985
+        ],
+        "toSourcePx": [
+          345,
+          1114
+        ],
+        "fromFlat": [
+          -459.69151253781916,
+          415.9692279765866
+        ],
+        "toFlat": [
+          -386.52609275474555,
+          623.1513465569856
+        ]
+      },
+      {
+        "id": "right-1",
+        "fromSourcePx": [
+          1116,
+          300
+        ],
+        "toSourcePx": [
+          1150,
+          420
+        ],
+        "fromFlat": [
+          394.8512361332843,
+          -971.7395015217145
+        ],
+        "toFlat": [
+          417.67029105260616,
+          -686.1692496815111
+        ]
+      },
+      {
+        "id": "right-2",
+        "fromSourcePx": [
+          1150,
+          420
+        ],
+        "toSourcePx": [
+          1218,
+          550
+        ],
+        "fromFlat": [
+          417.67029105260616,
+          -686.1692496815111
+        ],
+        "toFlat": [
+          473.57340566891446,
+          -399.7907255353218
+        ]
+      },
+      {
+        "id": "right-3",
+        "fromSourcePx": [
+          1218,
+          550
+        ],
+        "toSourcePx": [
+          1295,
+          700
+        ],
+        "fromFlat": [
+          473.57340566891446,
+          -399.7907255353218
+        ],
+        "toFlat": [
+          531.4553267902336,
+          -95.6815976435103
+        ]
+      },
+      {
+        "id": "right-4",
+        "fromSourcePx": [
+          1295,
+          700
+        ],
+        "toSourcePx": [
+          1249,
+          850
+        ],
+        "fromFlat": [
+          531.4553267902336,
+          -95.6815976435103
+        ],
+        "toFlat": [
+          464.9550948127709,
+          183.5295716295589
+        ]
+      },
+      {
+        "id": "right-5",
+        "fromSourcePx": [
+          1249,
+          850
+        ],
+        "toSourcePx": [
+          1345,
+          985
+        ],
+        "fromFlat": [
+          464.9550948127709,
+          183.5295716295589
+        ],
+        "toFlat": [
+          538.4957718300167,
+          415.9692279765866
+        ]
+      },
+      {
+        "id": "right-6",
+        "fromSourcePx": [
+          1345,
+          985
+        ],
+        "toSourcePx": [
+          1240,
+          1114
+        ],
+        "fromFlat": [
+          538.4957718300167,
+          415.9692279765866
+        ],
+        "toFlat": [
+          425.5416373285814,
+          623.1513465569856
+        ]
+      },
+      {
+        "id": "near-divider-1",
+        "fromSourcePx": [
+          480,
+          1114
+        ],
+        "toSourcePx": [
+          540,
+          1114
+        ],
+        "fromFlat": [
+          -264.03542955781916,
+          623.1513465569856
+        ],
+        "toFlat": [
+          -209.59513480362963,
+          623.1513465569856
+        ]
+      },
+      {
+        "id": "near-divider-2",
+        "fromSourcePx": [
+          760,
+          1114
+        ],
+        "toSourcePx": [
+          800,
+          1114
+        ],
+        "fromFlat": [
+          -9.980720704934745,
+          623.1513465569856
+        ],
+        "toFlat": [
+          26.3128091311916,
+          623.1513465569856
+        ]
+      },
+      {
+        "id": "near-divider-3",
+        "fromSourcePx": [
+          1040,
+          1114
+        ],
+        "toSourcePx": [
+          1100,
+          1114
+        ],
+        "fromFlat": [
+          244.07398814794968,
+          623.1513465569856
+        ],
+        "toFlat": [
+          298.5142829021392,
+          623.1513465569856
+        ]
+      }
+    ],
+    "receiverGapsAtSourceRowPx": 1114,
+    "receiverGapIntervalsXPx": [
+      [
+        345,
+        480
+      ],
+      [
+        540,
+        760
+      ],
+      [
+        800,
+        1040
+      ],
+      [
+        1100,
+        1240
+      ]
+    ],
+    "status": "proposed visible support-boundary polyline; requires contact/receiver QA"
+  },
+  "start": {
+    "sourcePx": [
+      770,
+      321
+    ],
+    "positionFlat": [
+      -1.1368305039367295,
+      -920.1866898519072
+    ],
+    "directionFlat": [
+      0,
+      1
+    ]
+  },
+  "obstacles": [
+    {
+      "id": "flower-01",
+      "objectId": "flower-01",
+      "family": "flower-base",
+      "primitive": "circle",
+      "observedFrontContactPx": [
+        524,
+        400
+      ],
+      "supportHalfWidthPx": 40,
+      "observationUncertaintyPx": 10,
+      "centerFlat": [
+        -273.89572215216833,
+        -776.9045335637211
+      ],
+      "radiusFlat": 44.62098571998958,
+      "sourceCenterPx": [
+        525.469142505324,
+        380.8817226042779
+      ],
+      "hiddenSupport": "rear support is inferred, not observed"
+    },
+    {
+      "id": "leaf-01",
+      "objectId": "leaf-01",
+      "family": "leaf-base",
+      "primitive": "circle",
+      "observedFrontContactPx": [
+        772,
+        417
+      ],
+      "supportHalfWidthPx": 45,
+      "observationUncertaintyPx": 10,
+      "centerFlat": [
+        1.1030555887851332,
+        -743.0218879368705
+      ],
+      "radiusFlat": 49.97188529432575,
+      "sourceCenterPx": [
+        771.9933085614637,
+        395.3781834746939
+      ],
+      "hiddenSupport": "rear support is inferred, not observed"
+    },
+    {
+      "id": "frog-01",
+      "objectId": "frog-01",
+      "family": "frog-base",
+      "primitive": "circle",
+      "observedFrontContactPx": [
+        1013,
+        407
+      ],
+      "supportHalfWidthPx": 44,
+      "observationUncertaintyPx": 10,
+      "centerFlat": [
+        267.76813123743074,
+        -765.0841542083801
+      ],
+      "radiusFlat": 49.005746624320594,
+      "sourceCenterPx": [
+        1011.4166569436547,
+        385.9240956853899
+      ],
+      "hiddenSupport": "rear support is inferred, not observed"
+    },
+    {
+      "id": "wood-01",
+      "objectId": "wood-01",
+      "family": "wood-base",
+      "primitive": "circle",
+      "observedFrontContactPx": [
+        628,
+        493
+      ],
+      "supportHalfWidthPx": 30,
+      "observationUncertaintyPx": 10,
+      "centerFlat": [
+        -154.11220028049394,
+        -555.0612301258304
+      ],
+      "radiusFlat": 32.47610540354854,
+      "sourceCenterPx": [
+        628.6379171404698,
+        478.24642276395195
+      ],
+      "hiddenSupport": "rear support is inferred, not observed"
+    },
+    {
+      "id": "flower-02",
+      "objectId": "flower-02",
+      "family": "flower-base",
+      "primitive": "circle",
+      "observedFrontContactPx": [
+        887,
+        505
+      ],
+      "supportHalfWidthPx": 42,
+      "observationUncertaintyPx": 10,
+      "centerFlat": [
+        124.5621344219568,
+        -541.7667173414726
+      ],
+      "radiusFlat": 45.38351877747797,
+      "sourceCenterPx": [
+        886.2755402544597,
+        484.270047757925
+      ],
+      "hiddenSupport": "rear support is inferred, not observed"
+    },
+    {
+      "id": "wood-02",
+      "objectId": "wood-02",
+      "family": "wood-base",
+      "primitive": "circle",
+      "observedFrontContactPx": [
+        1079,
+        493
+      ],
+      "supportHalfWidthPx": 30,
+      "observationUncertaintyPx": 10,
+      "centerFlat": [
+        331.93396983491,
+        -555.0612301258304
+      ],
+      "radiusFlat": 32.47610540354854,
+      "sourceCenterPx": [
+        1077.6260246205268,
+        478.24642276395195
+      ],
+      "hiddenSupport": "rear support is inferred, not observed"
+    },
+    {
+      "id": "frog-02",
+      "objectId": "frog-02",
+      "family": "frog-base",
+      "primitive": "circle",
+      "observedFrontContactPx": [
+        480,
+        555
+      ],
+      "supportHalfWidthPx": 45,
+      "observationUncertaintyPx": 10,
+      "centerFlat": [
+        -307.8419481552531,
+        -437.1426120116637
+      ],
+      "radiusFlat": 47.92511291991522,
+      "sourceCenterPx": [
+        481.947208614091,
+        532.4547649566713
+      ],
+      "hiddenSupport": "rear support is inferred, not observed"
+    },
+    {
+      "id": "leaf-02",
+      "objectId": "leaf-02",
+      "family": "leaf-base",
+      "primitive": "circle",
+      "observedFrontContactPx": [
+        737,
+        575
+      ],
+      "supportHalfWidthPx": 46,
+      "observationUncertaintyPx": 10,
+      "centerFlat": [
+        -35.75554245175119,
+        -395.9448727078844
+      ],
+      "radiusFlat": 48.70831724129279,
+      "sourceCenterPx": [
+        737.2325646637983,
+        551.8169569900756
+      ],
+      "hiddenSupport": "rear support is inferred, not observed"
+    },
+    {
+      "id": "leaf-03",
+      "objectId": "leaf-03",
+      "family": "leaf-base",
+      "primitive": "circle",
+      "observedFrontContactPx": [
+        1000,
+        591
+      ],
+      "supportHalfWidthPx": 47,
+      "observationUncertaintyPx": 10,
+      "centerFlat": [
+        239.69255737754747,
+        -363.54762864277996
+      ],
+      "radiusFlat": 49.54077468376489,
+      "sourceCenterPx": [
+        998.3995566007285,
+        567.2011564213328
+      ],
+      "hiddenSupport": "rear support is inferred, not observed"
+    },
+    {
+      "id": "wood-03",
+      "objectId": "wood-03",
+      "family": "wood-base",
+      "primitive": "circle",
+      "observedFrontContactPx": [
+        568,
+        665
+      ],
+      "supportHalfWidthPx": 31,
+      "observationUncertaintyPx": 10,
+      "centerFlat": [
+        -207.9593796420716,
+        -196.19940867825272
+      ],
+      "radiusFlat": 31.90441210678833,
+      "sourceCenterPx": [
+        568.9357605046563,
+        648.9617757388379
+      ],
+      "hiddenSupport": "rear support is inferred, not observed"
+    },
+    {
+      "id": "flower-03",
+      "objectId": "flower-03",
+      "family": "flower-base",
+      "primitive": "circle",
+      "observedFrontContactPx": [
+        841,
+        662
+      ],
+      "supportHalfWidthPx": 43,
+      "observationUncertaintyPx": 10,
+      "centerFlat": [
+        71.77201639532137,
+        -214.61267577835994
+      ],
+      "radiusFlat": 44.37224230558652,
+      "sourceCenterPx": [
+        840.5524171112322,
+        639.7726129873538
+      ],
+      "hiddenSupport": "rear support is inferred, not observed"
+    },
+    {
+      "id": "frog-03",
+      "objectId": "frog-03",
+      "family": "frog-base",
+      "primitive": "circle",
+      "observedFrontContactPx": [
+        1130,
+        665
+      ],
+      "supportHalfWidthPx": 47,
+      "observationUncertaintyPx": 10,
+      "centerFlat": [
+        367.7705285295749,
+        -212.7820957004907
+      ],
+      "radiusFlat": 48.487099129026284,
+      "sourceCenterPx": [
+        1127.4910079461201,
+        640.6839825717865
+      ],
+      "hiddenSupport": "rear support is inferred, not observed"
+    },
+    {
+      "id": "frog-04",
+      "objectId": "frog-04",
+      "family": "frog-base",
+      "primitive": "circle",
+      "observedFrontContactPx": [
+        698,
+        758
+      ],
+      "supportHalfWidthPx": 49,
+      "observationUncertaintyPx": 10,
+      "centerFlat": [
+        -72.83651832423257,
+        -34.18861136225546
+      ],
+      "radiusFlat": 49.24910619082636,
+      "sourceCenterPx": [
+        698.5318950143263,
+        731.9716387501195
+      ],
+      "hiddenSupport": "rear support is inferred, not observed"
+    },
+    {
+      "id": "wood-04",
+      "objectId": "wood-04",
+      "family": "wood-base",
+      "primitive": "circle",
+      "observedFrontContactPx": [
+        949,
+        751
+      ],
+      "supportHalfWidthPx": 32,
+      "observationUncertaintyPx": 10,
+      "centerFlat": [
+        177.9500738486939,
+        -30.25771895451282
+      ],
+      "radiusFlat": 32.143977007385345,
+      "sourceCenterPx": [
+        948.1530125799266,
+        734.035195024738
+      ],
+      "hiddenSupport": "rear support is inferred, not observed"
+    },
+    {
+      "id": "wood-05",
+      "objectId": "wood-05",
+      "family": "wood-base",
+      "primitive": "circle",
+      "observedFrontContactPx": [
+        1200,
+        772
+      ],
+      "supportHalfWidthPx": 32,
+      "observationUncertaintyPx": 10,
+      "centerFlat": [
+        426.3682932290574,
+        9.298927945946037
+      ],
+      "radiusFlat": 31.955752387694464,
+      "sourceCenterPx": [
+        1197.9586651504972,
+        754.9352695425946
+      ],
+      "hiddenSupport": "rear support is inferred, not observed"
+    },
+    {
+      "id": "flower-04",
+      "objectId": "flower-04",
+      "family": "flower-base",
+      "primitive": "circle",
+      "observedFrontContactPx": [
+        517,
+        832
+      ],
+      "supportHalfWidthPx": 44,
+      "observationUncertaintyPx": 10,
+      "centerFlat": [
+        -248.2878547212554,
+        107.94341792299016
+      ],
+      "radiusFlat": 43.29375429236969,
+      "sourceCenterPx": [
+        518.6618559351723,
+        808.1434312269323
+      ],
+      "hiddenSupport": "rear support is inferred, not observed"
+    },
+    {
+      "id": "flower-05",
+      "objectId": "flower-05",
+      "family": "flower-base",
+      "primitive": "circle",
+      "observedFrontContactPx": [
+        801,
+        856
+      ],
+      "supportHalfWidthPx": 46,
+      "observationUncertaintyPx": 10,
+      "centerFlat": [
+        29.133577738120533,
+        149.24416829724228
+      ],
+      "radiusFlat": 44.97914941694413,
+      "sourceCenterPx": [
+        800.794795884884,
+        830.8948784451546
+      ],
+      "hiddenSupport": "rear support is inferred, not observed"
+    },
+    {
+      "id": "leaf-04",
+      "objectId": "leaf-04",
+      "family": "leaf-base",
+      "primitive": "circle",
+      "observedFrontContactPx": [
+        1066,
+        846
+      ],
+      "supportHalfWidthPx": 50,
+      "observationUncertaintyPx": 10,
+      "centerFlat": [
+        287.2628569855544,
+        127.3276024258017
+      ],
+      "radiusFlat": 49.05332797153468,
+      "sourceCenterPx": [
+        1063.8066951464039,
+        818.7861737139783
+      ],
+      "hiddenSupport": "rear support is inferred, not observed"
+    },
+    {
+      "id": "wood-06",
+      "objectId": "wood-06",
+      "family": "wood-base",
+      "primitive": "circle",
+      "observedFrontContactPx": [
+        424,
+        972
+      ],
+      "supportHalfWidthPx": 34,
+      "observationUncertaintyPx": 10,
+      "centerFlat": [
+        -326.65436026460765,
+        362.13825301293883
+      ],
+      "radiusFlat": 32.16911823781643,
+      "sourceCenterPx": [
+        425.7543464856086,
+        952.8575731768403
+      ],
+      "hiddenSupport": "rear support is inferred, not observed"
+    },
+    {
+      "id": "leaf-05",
+      "objectId": "leaf-05",
+      "family": "leaf-base",
+      "primitive": "circle",
+      "observedFrontContactPx": [
+        622,
+        940
+      ],
+      "supportHalfWidthPx": 51,
+      "observationUncertaintyPx": 10,
+      "centerFlat": [
+        -141.45924463676482,
+        291.55781357324236
+      ],
+      "radiusFlat": 48.788933318758126,
+      "sourceCenterPx": [
+        623.129960920846,
+        911.5290359361805
+      ],
+      "hiddenSupport": "rear support is inferred, not observed"
+    },
+    {
+      "id": "frog-05",
+      "objectId": "frog-05",
+      "family": "frog-base",
+      "primitive": "circle",
+      "observedFrontContactPx": [
+        921,
+        960
+      ],
+      "supportHalfWidthPx": 52,
+      "observationUncertaintyPx": 10,
+      "centerFlat": [
+        141.6540059359974,
+        324.68997420478166
+      ],
+      "radiusFlat": 49.4893903044378,
+      "sourceCenterPx": [
+        919.8401506536916,
+        930.8161351593429
+      ],
+      "hiddenSupport": "rear support is inferred, not observed"
+    },
+    {
+      "id": "flower-06",
+      "objectId": "flower-06",
+      "family": "flower-base",
+      "primitive": "circle",
+      "observedFrontContactPx": [
+        1146,
+        962
+      ],
+      "supportHalfWidthPx": 48,
+      "observationUncertaintyPx": 10,
+      "centerFlat": [
+        353.94745653071254,
+        331.91194882328296
+      ],
+      "radiusFlat": 45.630967034617505,
+      "sourceCenterPx": [
+        1143.3234245854421,
+        935.0467727705159
+      ],
+      "hiddenSupport": "rear support is inferred, not observed"
+    },
+    {
+      "id": "flower-07",
+      "objectId": "flower-07",
+      "family": "flower-base",
+      "primitive": "circle",
+      "observedFrontContactPx": [
+        496,
+        1083
+      ],
+      "supportHalfWidthPx": 49,
+      "observationUncertaintyPx": 10,
+      "centerFlat": [
+        -251.50275742158058,
+        529.4732204338559
+      ],
+      "radiusFlat": 45.14213471002636,
+      "sourceCenterPx": [
+        498.00371409506494,
+        1054.6036130014063
+      ],
+      "hiddenSupport": "rear support is inferred, not observed"
+    },
+    {
+      "id": "wood-07",
+      "objectId": "wood-07",
+      "family": "wood-base",
+      "primitive": "circle",
+      "observedFrontContactPx": [
+        698,
+        1074
+      ],
+      "supportHalfWidthPx": 35,
+      "observationUncertaintyPx": 10,
+      "centerFlat": [
+        -66.91708252741779,
+        528.1279171648542
+      ],
+      "radiusFlat": 32.25138350228438,
+      "sourceCenterPx": [
+        698.3799250102331,
+        1053.7637064993307
+      ],
+      "hiddenSupport": "rear support is inferred, not observed"
+    },
+    {
+      "id": "wood-08",
+      "objectId": "wood-08",
+      "family": "wood-base",
+      "primitive": "circle",
+      "observedFrontContactPx": [
+        985,
+        1073
+      ],
+      "supportHalfWidthPx": 35,
+      "observationUncertaintyPx": 10,
+      "centerFlat": [
+        196.2183499979149,
+        526.5337675160138
+      ],
+      "radiusFlat": 32.2596801779234,
+      "sourceCenterPx": [
+        983.8862472302757,
+        1052.7689109515256
+      ],
+      "hiddenSupport": "rear support is inferred, not observed"
+    }
+  ],
+  "goals": [
+    {
+      "id": "receiver-01",
+      "primitive": "bucketCircle",
+      "sourceCenterPx": [
+        358.55946155336045,
+        1238.2098586093357
+      ],
+      "centerFlat": [
+        -362.7530008274173,
+        810.1755829361774
+      ],
+      "radiusFlat": 33.523990645255964,
+      "radiusDerivation": "0.70 * minimum distance to inverse observed opening boundary (or certified water patch circle)",
+      "openingContourPx": [
+        [
+          451,
+          1236
+        ],
+        [
+          449,
+          1234
+        ],
+        [
+          445,
+          1235
+        ],
+        [
+          441,
+          1231
+        ],
+        [
+          440,
+          1226
+        ],
+        [
+          443,
+          1223
+        ],
+        [
+          421,
+          1211
+        ],
+        [
+          417,
+          1211
+        ],
+        [
+          412,
+          1205
+        ],
+        [
+          403,
+          1205
+        ],
+        [
+          391,
+          1201
+        ],
+        [
+          372,
+          1200
+        ],
+        [
+          368,
+          1195
+        ],
+        [
+          364,
+          1200
+        ],
+        [
+          330,
+          1201
+        ],
+        [
+          326,
+          1206
+        ],
+        [
+          304,
+          1213
+        ],
+        [
+          303,
+          1198
+        ],
+        [
+          303,
+          1208
+        ],
+        [
+          290,
+          1217
+        ],
+        [
+          294,
+          1218
+        ],
+        [
+          299,
+          1215
+        ],
+        [
+          303,
+          1217
+        ],
+        [
+          294,
+          1224
+        ],
+        [
+          292,
+          1223
+        ],
+        [
+          292,
+          1227
+        ],
+        [
+          290,
+          1225
+        ],
+        [
+          284,
+          1228
+        ],
+        [
+          280,
+          1227
+        ],
+        [
+          268,
+          1239
+        ],
+        [
+          268,
+          1247
+        ],
+        [
+          263,
+          1255
+        ],
+        [
+          271,
+          1261
+        ],
+        [
+          275,
+          1262
+        ],
+        [
+          276,
+          1260
+        ],
+        [
+          276,
+          1264
+        ],
+        [
+          317,
+          1274
+        ],
+        [
+          322,
+          1270
+        ],
+        [
+          348,
+          1271
+        ],
+        [
+          352,
+          1275
+        ],
+        [
+          372,
+          1274
+        ],
+        [
+          393,
+          1270
+        ],
+        [
+          398,
+          1271
+        ],
+        [
+          403,
+          1267
+        ],
+        [
+          431,
+          1258
+        ],
+        [
+          450,
+          1243
+        ]
+      ],
+      "grayBelow": 45,
+      "measurementRoiPx": [
+        180,
+        1180,
+        1370,
+        1310
+      ],
+      "status": "conservative research trigger; simulator bucket semantics not verified"
+    },
+    {
+      "id": "receiver-02",
+      "primitive": "bucketCircle",
+      "sourceCenterPx": [
+        646.3101699213796,
+        1264.1927466396146
+      ],
+      "centerFlat": [
+        -108.96952658580938,
+        847.8575927248
+      ],
+      "radiusFlat": 27.859680215191496,
+      "radiusDerivation": "0.70 * minimum distance to inverse observed opening boundary (or certified water patch circle)",
+      "openingContourPx": [
+        [
+          567,
+          1281
+        ],
+        [
+          576,
+          1288
+        ],
+        [
+          582,
+          1287
+        ],
+        [
+          614,
+          1295
+        ],
+        [
+          620,
+          1292
+        ],
+        [
+          646,
+          1292
+        ],
+        [
+          649,
+          1296
+        ],
+        [
+          692,
+          1291
+        ],
+        [
+          717,
+          1280
+        ],
+        [
+          729,
+          1268
+        ],
+        [
+          727,
+          1270
+        ],
+        [
+          724,
+          1269
+        ],
+        [
+          722,
+          1263
+        ],
+        [
+          724,
+          1261
+        ],
+        [
+          727,
+          1266
+        ],
+        [
+          724,
+          1256
+        ],
+        [
+          722,
+          1255
+        ],
+        [
+          719,
+          1260
+        ],
+        [
+          714,
+          1255
+        ],
+        [
+          717,
+          1250
+        ],
+        [
+          709,
+          1244
+        ],
+        [
+          704,
+          1245
+        ],
+        [
+          700,
+          1241
+        ],
+        [
+          693,
+          1238
+        ],
+        [
+          690,
+          1239
+        ],
+        [
+          685,
+          1233
+        ],
+        [
+          645,
+          1230
+        ],
+        [
+          642,
+          1227
+        ],
+        [
+          637,
+          1230
+        ],
+        [
+          607,
+          1233
+        ],
+        [
+          601,
+          1238
+        ],
+        [
+          597,
+          1237
+        ],
+        [
+          583,
+          1244
+        ],
+        [
+          581,
+          1241
+        ],
+        [
+          577,
+          1248
+        ],
+        [
+          569,
+          1252
+        ],
+        [
+          572,
+          1254
+        ],
+        [
+          572,
+          1257
+        ],
+        [
+          578,
+          1253
+        ],
+        [
+          576,
+          1251
+        ],
+        [
+          578,
+          1247
+        ],
+        [
+          587,
+          1244
+        ],
+        [
+          591,
+          1246
+        ],
+        [
+          583,
+          1252
+        ],
+        [
+          579,
+          1251
+        ],
+        [
+          583,
+          1254
+        ],
+        [
+          578,
+          1261
+        ],
+        [
+          571,
+          1280
+        ]
+      ],
+      "grayBelow": 45,
+      "measurementRoiPx": [
+        180,
+        1180,
+        1370,
+        1310
+      ],
+      "status": "conservative research trigger; simulator bucket semantics not verified"
+    },
+    {
+      "id": "receiver-03",
+      "primitive": "bucketCircle",
+      "sourceCenterPx": [
+        914.7204931038691,
+        1267.0024411082632
+      ],
+      "centerFlat": [
+        125.51442545500797,
+        851.9036405132579
+      ],
+      "radiusFlat": 28.5120754734123,
+      "radiusDerivation": "0.70 * minimum distance to inverse observed opening boundary (or certified water patch circle)",
+      "openingContourPx": [
+        [
+          833,
+          1281
+        ],
+        [
+          855,
+          1291
+        ],
+        [
+          859,
+          1295
+        ],
+        [
+          864,
+          1294
+        ],
+        [
+          894,
+          1300
+        ],
+        [
+          902,
+          1300
+        ],
+        [
+          906,
+          1296
+        ],
+        [
+          929,
+          1295
+        ],
+        [
+          933,
+          1299
+        ],
+        [
+          974,
+          1290
+        ],
+        [
+          994,
+          1278
+        ],
+        [
+          1000,
+          1269
+        ],
+        [
+          999,
+          1266
+        ],
+        [
+          997,
+          1271
+        ],
+        [
+          991,
+          1265
+        ],
+        [
+          995,
+          1262
+        ],
+        [
+          993,
+          1258
+        ],
+        [
+          988,
+          1263
+        ],
+        [
+          981,
+          1257
+        ],
+        [
+          981,
+          1249
+        ],
+        [
+          969,
+          1241
+        ],
+        [
+          966,
+          1244
+        ],
+        [
+          959,
+          1238
+        ],
+        [
+          947,
+          1237
+        ],
+        [
+          943,
+          1231
+        ],
+        [
+          906,
+          1231
+        ],
+        [
+          900,
+          1228
+        ],
+        [
+          896,
+          1231
+        ],
+        [
+          866,
+          1235
+        ],
+        [
+          861,
+          1240
+        ],
+        [
+          855,
+          1241
+        ],
+        [
+          848,
+          1246
+        ],
+        [
+          855,
+          1246
+        ],
+        [
+          843,
+          1256
+        ],
+        [
+          843,
+          1263
+        ],
+        [
+          836,
+          1281
+        ]
+      ],
+      "grayBelow": 45,
+      "measurementRoiPx": [
+        180,
+        1180,
+        1370,
+        1310
+      ],
+      "status": "conservative research trigger; simulator bucket semantics not verified"
+    },
+    {
+      "id": "receiver-04",
+      "primitive": "bucketCircle",
+      "sourceCenterPx": [
+        1193.5527369826436,
+        1243.8955530450858
+      ],
+      "centerFlat": [
+        371.12626589451315,
+        818.4625744471674
+      ],
+      "radiusFlat": 31.47800941620484,
+      "radiusDerivation": "0.70 * minimum distance to inverse observed opening boundary (or certified water patch circle)",
+      "openingContourPx": [
+        [
+          1107,
+          1227
+        ],
+        [
+          1118,
+          1224
+        ],
+        [
+          1106,
+          1247
+        ],
+        [
+          1111,
+          1254
+        ],
+        [
+          1118,
+          1260
+        ],
+        [
+          1123,
+          1260
+        ],
+        [
+          1149,
+          1273
+        ],
+        [
+          1193,
+          1280
+        ],
+        [
+          1199,
+          1275
+        ],
+        [
+          1224,
+          1275
+        ],
+        [
+          1229,
+          1279
+        ],
+        [
+          1268,
+          1272
+        ],
+        [
+          1270,
+          1269
+        ],
+        [
+          1289,
+          1260
+        ],
+        [
+          1285,
+          1248
+        ],
+        [
+          1277,
+          1240
+        ],
+        [
+          1278,
+          1244
+        ],
+        [
+          1275,
+          1248
+        ],
+        [
+          1268,
+          1240
+        ],
+        [
+          1272,
+          1236
+        ],
+        [
+          1276,
+          1238
+        ],
+        [
+          1265,
+          1228
+        ],
+        [
+          1260,
+          1227
+        ],
+        [
+          1269,
+          1235
+        ],
+        [
+          1268,
+          1238
+        ],
+        [
+          1264,
+          1238
+        ],
+        [
+          1254,
+          1229
+        ],
+        [
+          1257,
+          1224
+        ],
+        [
+          1250,
+          1222
+        ],
+        [
+          1245,
+          1217
+        ],
+        [
+          1241,
+          1220
+        ],
+        [
+          1234,
+          1215
+        ],
+        [
+          1221,
+          1213
+        ],
+        [
+          1215,
+          1207
+        ],
+        [
+          1172,
+          1205
+        ],
+        [
+          1169,
+          1201
+        ],
+        [
+          1161,
+          1206
+        ],
+        [
+          1137,
+          1209
+        ],
+        [
+          1129,
+          1215
+        ],
+        [
+          1140,
+          1213
+        ],
+        [
+          1138,
+          1217
+        ],
+        [
+          1130,
+          1220
+        ],
+        [
+          1120,
+          1218
+        ],
+        [
+          1117,
+          1221
+        ],
+        [
+          1114,
+          1220
+        ]
+      ],
+      "grayBelow": 45,
+      "measurementRoiPx": [
+        180,
+        1180,
+        1370,
+        1310
+      ],
+      "status": "conservative research trigger; simulator bucket semantics not verified"
+    }
+  ],
+  "uncertainty": [
+    "The snake/rope railing is curved and elevated; its silhouette cannot calibrate a rectangular floor.",
+    "Family width trends imply vanishing rows from about -2451 to -3315. Camera is a median approximation, not exact recovery.",
+    "Vanishing x=771 is a frontal-center assumption from middle chute axis; uncertainty is substantial.",
+    "Irregular stone supports and wooden cylinders use circles; plants and frog heads are excluded.",
+    "Platform front is above hanging basket openings. Transition from floor to receiver needs simulator review."
+  ],
+  "presentation": {
+    "views": [
+      "source-perspective",
+      "inverse-floor"
+    ],
+    "framings": [
+      "whole-source",
+      "playable-floor"
+    ],
+    "fullImageRule": "Use inverse of all four source image corners for whole-source frame. Rendering source and inverse views uses one geometry and preserves run/tick.",
+    "recommendation": "See BOARD03_CHECKPOINT.md for whole-source versus floor readability; actual UI evidence still required."
+  },
+  "oldP1ArtifactsUsed": false
+}
