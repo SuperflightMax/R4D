@@ -1,6 +1,12 @@
 # P2 candidate04 — checkpoint сериализации доставки
 
-## Candidate04 обслуживается: actual QA назначает CTO; docs/cleanup остановлены
+## Текущая фаза: CTO назначил два actual04 PUBLIC QA прохода
+
+По адресному поручению CTO Lead свежим чтением подтвердил отсутствие actual04 PUBLIC заданий у двух существующих независимых ролей и передал ровно два отдельных поручения. TQA начал turn `01a18363-280e-73c3-a33b-5429354498b0`, VQA — `01a18363-2ac3-77a2-be19-b81bbf952244`; оба inProgress. Первых browser observations на момент checkpoint ещё нет; получение exact04 и PASS не приписываются. Область — bounded actual PUBLIC UI/clock/export и независимый desktop/narrow scene view соответственно, без source/frozen/server изменений и повторных offline matrices.
+
+Builder остаётся на `P2_C04_SERVED_AWAIT_CTO_QA_DOCS_PENDING_LOCK_HELD`; его не перезапускали. После обоих фактических committed reports/точных ограничений CTO разрешил одно продолжение тем же Builder по текущему token: fresh phase/nonce/inode/raw guards, bound render receipt, append-only docs, final checks и только owned lock/temp completion. Нового upload/switch/token/hotfix нет. Реальный продуктовый blocker или новая denial передаются CTO без автоматического исправления. Review window освобождает только explicit CTO release.
+
+## История serving: docs/cleanup остановлены перед actual QA
 
 Builder execution `01a18352-5090-7b73-b79b-622ef3a4a008` completed/checkoutclean; handoff `ec4794831546bc44bbf327c913fb3040d791670e`/Lead8bc27a3: [serving receipt](builder/DELIVERY_04_PUBLIC_PENDING_QA.md). Root прочитал полный отчёт и проверил отсутствие literal operational token в новых committed files. Это limitedHTTPdelivery, **не actual UI/Pixi/WebGL/Android/Art/P2 closure PASS**.
 
