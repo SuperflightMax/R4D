@@ -1,6 +1,27 @@
 # P2 candidate05 — малая разрешённая UI-итерация
 
-## Текущее состояние: independent static TQA завершён, один LOCAL intent05 готовится
+## Текущее состояние: один immutable LOCAL intent05 проверен, ожидает нового CTO gate
+
+Builder prep **`01a183b4-71fd-7b22-8f57-e6da57231b5f` completed/idle/clean**; final handoff original **`ab250e1461d27751bafab4e28335e6e7b5a30828`** / Lead **`17beda41a3e896d62e4ef9284d47aecbd0fac25a`**, [полный LOCAL handoff](builder/RELEASE_INTENT_05_LOCAL.md)10845bytes/SHA `e67dd2ecb492d52ff0adacbf5fe3d2d129e8fbc723ca1c4499737a343ae1271c`. Preparation helper758b778/Leadcb5cab7, correction/source **`02aff92f41e94746d1bda8bfad46172c41d5e2e0`** / Lead50b316f; это не новый build pin. Frozen implementation/build остаётся **0367d462…**, TQA74e4a77…; C04/C05/raw failures не менялись.
+
+Exact immutable target `E:/R4D/perspective/p2-runtime/output/p2-review-release-intent-05-final-01`: **48files/8906816bytes**, seal покрывает47files и исключает только себя. Root полностью прочитал intent/plan/template/handoff и embedded read-only remote snapshot source; source поддерживает только snapshot/seal, не execution. Собственная metadata/package проверка **316 checks passed**, без продукта/QA/серверных writes. Private Root receipt `E:/R4D/perspective/p2-runtime/output/lead-freeze/p2-public-intent-05-final01-REVIEW.json`: **21500bytes/SHA `1bea4872cc69bab845e98a3c6b23fdcea8f1853ef008e71a5fb5d13fc6c6ea34`**, status **LOCAL_C05_FINAL01_PACKET_VERIFIED_AWAIT_CTO_GATE**, executionAuthorized=false.
+
+| Immutable artifact | Bytes | SHA256 |
+| --- | ---: | --- |
+| RELEASE_INTENT.json |11279|`c1d7b3c5ed447da8ae07cacde8e53fe542ce5369da1d1587ec284a014092c993`|
+| EXECUTION_PLAN.md |7958|`72d578ae4e5886d6776efa19c92d035b0ef89ae477f2af898806f25943ee2fb9`|
+| SEALED_PACKET.json |8358|`57a02a6b587756aa34c45190806c6078aa0c34b6d2d84692e919c94b7b8b79d9`|
+| payload tar |2590720|`13b10b792ea1a527c340142ef8ef599409cac5828a106b2b79bf58a10d7458c5`|
+| PLANNED_INVENTORY.json |164107|`b919e3c0d6e424b752abb0f72e4fc744eb94a5657997caf5c1a187b4b524fa11`|
+| DOCUMENTATION_APPEND_TEMPLATE.md |2603|`1a8bead5e3bbca62314f3ea9da648e18d82d95ad40ba19ff690564495ceb925b`|
+
+Final coherent fresh baseline **18:20:48.400884–18:20:49.923870UTC**, snapshot993807/SHA `0896d35441f70559288ff21324fcf2ca95b1426e8c1faae7f67e26939472cc07`: current raw PUBLIC root C04,563files/81dirs/90775084bytes/tree892fa950…; full raw docs/config/files/dirs before=after, P2exact04/P1all12/HTTP verified. Planned root **563files/81dirs/90775981bytes/tree `e0ed126b888d68d92651212f96dc095199f5434c64c76a552a8b051490a17281`**;545foreign files/все81directory records/12P1 exact metadata. Root manifest109417/SHA `88581ebb378fb3dac24d296a8aebbf61ba476db3f59ab7d49e5cf0da481f0bc7` вне/review и вне собственного published_files. Tar18safe regular leaves=16frozen05+catalog+rootmanifest; local payload отдельными inode от frozen. Catalog one-card inverse/all3 numeric spans/P1card exact, material section counter4 сохранён; after13032/SHA73ea7e97…. Raw snippet952/4d32b2…→952/**`f0d2a81929bbeb44f21610c9bde3f925297b40bd060bc762b7a052832d8ee7eb`**, только один root literal. Docs prefixes76645/293737/1003:27/0640 и vhost/MIME metadata exact; foreign content не интерпретировался.
+
+Один ordinary local helper AssertionError `exec-3aa1d470-79c4-4660-9ddb-922de0b6d60d` (global span count3 вместо ожидаемого1) остановился **до final create**. Ownership/phase/target-absence подтверждены, helper исправлен отдельным commit, initial/precorrection snapshots сохранены, final packet создан один раз без overwrite/rename/final02. Supplemental ALL_COUNTERS_VERIFICATION1328/SHA6fa93e15… находится вне immutable packet; Root сверил его hash и самостоятельно все3 counter bytes/order+inverse. Policy reason не возвращён; серверных writes0.
+
+**Нового write token и authorization исполнения нет.** Root передаёт packet только на CTO review. Future gate должен явно перечислить12 allowed private backup filenames из Root receipt, cleanup ограничить matching own lock/temps и сохранить upload/archive/backup/old+new immutable releases. Future fresh RAW guards сравнивают защищённые state bytes/records/owners/modes, не timestamps/resource samples dated JSON;4/2 policy применяется заново перед любым write включая lock. После будущего serving+all16HTTP/inventory STOP docs/cleanup с owned lock для отдельно назначенного CTO actual PUBLIC05 QA. Current source/model/static facts не принимают black200/GPU/live state/Art/Android; Full Technical/Art/P2 closure нет. C04 token/window closed17:18:45Z, C05 окно не запрашивалось/не захватывалось. VQA/Artist/закрытые/чужие исследования не будили.
+
+## История static TQA и LOCAL preparation
 
 TQA turn **`01a183a5-80d3-7a82-aa69-080d38fa9801` completed/idle/clean**, original **`74e4a77d1e8fc982d62bfc0cb02237103b2a6f19`** / Lead **`926f43185ab032d3e8d4f78b48caff46a4831a7d`**. [Полный bounded report](qa/technical/candidate-05-STATIC-01.md)13930bytes/SHA `ccb6812f7283e14042e4cb3150eebb9c28b7e125e05c8793d28ba3ce865ce9b1`; EVIDENCE30564bytes/SHA `52438e74014edf96c3d8a62dc9e0eeff9a254536b02c65d601570614cfa93eb0`. Root полностью прочитал report, сверил evidence/3related receipts/runnerGit18611-SHA2a3deda5… и execution limits. Новых actionable code/artifact defects нет; full16/13unchanged/5JS+HTMLemissions/13protected source/privacy/изолированная fit-status model passed. Actual PUBLIC05/black200/live paused resize/browser/GPU/physics/native/Art не проверены. Root принял review **только для LOCAL intent подготовки**, не для доставки/Full PASS.
 
