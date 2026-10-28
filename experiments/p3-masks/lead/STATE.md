@@ -44,6 +44,45 @@ handoff и продолжать). Разрешение ограничено су
 готовит только локальную доставку. Кандидата и выполненной продуктовой QA
 ещё нет. CTO получил actual-start сообщение с этими фактами и turn IDs.
 
+## Текущие зависимости и ранний стык
+
+| Вклад | Exact версия и состояние |
+| --- | --- |
+| Consumer contract Builder | `4b51ebae9e635fbf2460d935647a4d8d49836ac6:experiments/p3-masks/builder/ASSET_CONTRACT.md`, опубликован |
+| Ранний art packet | `7f75ccb0e515e3c955c8b9bc248990573d8f8678:experiments/p3-masks/asset-artist/assets.json`, собственные ball/shadow, leaf-01/flower-01 masks; передан Builder |
+| TQA preflight | `c380b6ae6d364b39815b963f5b0b96c249266863:experiments/p3-masks/technical-qa/STATE.md`, входы сверены, готов к frozen candidate; ход завершён |
+| VQA preparation | `0b90e9546f4a26f087087c35eac24171f6c72556:experiments/p3-masks/visual-qa/STATE.md`, исходник просмотрен, готов к frozen candidate; ход завершён |
+
+Оба QA находятся без активного ожидания; выполненной продуктовой QA нет.
+Builder сообщил загрузку сцены в браузере без console errors и exact +1tick
+=5ms; исправляет ввод seek и экранную толщину диагностических контуров.
+Это его самопроверка, ещё не независимая QA и не художественный результат.
+Artist принял `r4d-p3-assets-v1`, сделал crop alpha masks с измеренными
+anchors/radius и native depth из принятого config. Весь набор пока не
+расширяет до реального стыка. Открытый риск: scalar depth против передней
+дуги footprint при боковом переходе. Builder получил exact art packet и
+должен сохранить обычный seed и соседние тики partial/depth swap; при
+невстречающемся объекте назвать первый реально достигнутый ID, а не искать
+красивый seed. Полного frozen candidate пока нет.
+
+Release получил от CTO и ДотМакса общие несекретные pointers:
+`vps1-direct`; `/home/sf/assistant-context/vps/services/superflight-studio.md`;
+`/opt/superflight-studio/README_RU.txt` и обязательные INDEX/PROCEDURES;
+`/srv/superflight-review/releases/<release-id>` и `/review/r4d/<slug>/`.
+Доступ SSH и чтение runbook подтверждены Release, live root ещё не проверен.
+Это исторические указатели, не разрешение записи: `server_write=false`,
+token нет, первое окно P2. Чужие product artifacts не передавались.
+Общее delivery-уточнение CTO передано Builder и Release: browser-facing
+ES modules — `.js` с явными src/import references; `.mjs` MIME в текущем
+Review не подтверждён. Node-only scripts не переименовываются; глобальные
+MIME/nginx настройки не меняются. После выпуска нужна проверка MIME.
+
+Последний Lead resource snapshot `2026-10-28T00:08:18Z`:
+RAM free4.354/31.907GiB, CPU49%/24logical;
+C7.774231 / D16.306244 / E31.915936GiB свободно.
+Builder оценил лёгкую сборку до0.3GiB RAM, браузер подключает отдельно.
+Все будущие тяжёлые операции требуют нового snapshot и совокупной оценки.
+
 ## Закреплённые общие входы
 
 - Jungle: `K:\Agents\R4D\Assets\perspective\01-jungle.jpg`, 1536×1536,
