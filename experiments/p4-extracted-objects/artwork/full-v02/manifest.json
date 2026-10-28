@@ -1,0 +1,3253 @@
+{
+  "schema": "r4d.p4.artwork.v1",
+  "version": "p4-full-v02",
+  "status": "full source-extracted packet for real consumer/QA; final Art PASS NOT CLAIMED",
+  "source": {
+    "canvasPx": [
+      1536,
+      1536
+    ],
+    "sha256": "c8f9e4245c1de8c2086e615bc75dc10aea59b76b614d6e106593e07262e24f72",
+    "name": "01-jungle.jpg"
+  },
+  "p1": {
+    "commit": "4b47db04c7140ebf88f69b91faa0b790d46f22ec",
+    "configShaLf": "dd5c519cd6d4b7295118e0a3a1063efed424a0ce739450bd5153c6a9941982db",
+    "manifestShaLf": "7784dc0a215d0e472cf06a4eee03793592727cf0fa9a1fa0e0c78e5f1d17da18",
+    "projectionShaLf": "9ca9e520f1927426a3a5ba73a5eacaf90fedffc9385e7d08d5b1e6ee644b020c",
+    "translationOffset": [
+      33256,
+      34072
+    ],
+    "nativeToSource": [
+      [
+        1,
+        -0.11464664692356805,
+        -28578.75944602019
+      ],
+      [
+        0,
+        0.41847748123620804,
+        -13508.364740680081
+      ],
+      [
+        0,
+        -0.0001486986341421116,
+        6.066459862490026
+      ]
+    ],
+    "sourceToNative": [
+      [
+        1,
+        9.330392800216167,
+        25487.205399837876
+      ],
+      [
+        0,
+        11.446119221308955,
+        25487.410584018282
+      ],
+      [
+        0,
+        0.00028056268944599974,
+        0.7895779829155002
+      ]
+    ]
+  },
+  "registration": {
+    "sourceRectConvention": "integer x,y,width,height; PNG at sourceRect origin when untransformed",
+    "anchorRule": "anchorLocalPx = anchorSourcePx - sourceRect.xy; native = research + P1 translation; no extra scaling or relocation",
+    "alpha": "PNG RGBA straight/unassociated; let Pixi upload premultiply once; do not premultiply bytes again",
+    "shadows": "25 ground-shadow parts once; none of their old bodies/shadows retained on cleaned floor; architectural environmental shadows remain fixed",
+    "scope": "all25 pins, all4 receiver bodies/fronts, static border foreground, generated ball/shadow; full common geometry unchanged"
+  },
+  "background": {
+    "file": "background.png",
+    "sha256": "9344fdcefcb3d36afa6a4585fc6db3c550b301e24cb5935202d5c4e10781b0b8",
+    "sourceRectPx": {
+      "x": 0,
+      "y": 0,
+      "width": 1536,
+      "height": 1536
+    },
+    "provenance": {
+      "kind": "source-with-local-restoration",
+      "regionMask": "restoration-regions.png",
+      "regionMaskSha256": "e08e1a082616a5bb2337eb9296e843efb7a77e9c227d9c2e1565f79c34b76fca",
+      "restoredIds": [
+        "flower-01",
+        "leaf-01",
+        "frog-01",
+        "wood-01",
+        "flower-02",
+        "wood-02",
+        "frog-02",
+        "leaf-02",
+        "leaf-03",
+        "wood-03",
+        "flower-03",
+        "frog-03",
+        "frog-04",
+        "wood-04",
+        "wood-05",
+        "flower-04",
+        "flower-05",
+        "leaf-04",
+        "wood-06",
+        "leaf-05",
+        "frog-05",
+        "flower-06",
+        "flower-07",
+        "wood-07",
+        "wood-08",
+        "receiver-01",
+        "receiver-02",
+        "receiver-03",
+        "receiver-04",
+        "rail-left",
+        "rail-right",
+        "near-platform-front"
+      ],
+      "method": "empty generated restoration plate used only under removed source cutouts/shadows; per-floor-patch Poisson boundary matching and 5px transition; exterior source pixels retained"
+    }
+  },
+  "objects": [
+    {
+      "objectId": "flower-01",
+      "nativeKind": "pin",
+      "anchorSourcePx": [
+        525.469142505324,
+        380.8817226042779
+      ],
+      "anchorLocalPx": [
+        63.469142505324044,
+        56.88172260427791
+      ],
+      "anchorNative": [
+        32982.10427784783,
+        33295.09546643628
+      ],
+      "anchorResearch": [
+        -273.8957221521705,
+        -776.9045335637202
+      ],
+      "sourceRectPx": {
+        "x": 462,
+        "y": 324,
+        "width": 114,
+        "height": 103
+      },
+      "parts": [
+        {
+          "partId": "flower-01-ground-shadow",
+          "file": "flower-01-ground-shadow.png",
+          "sha256": "46333d5173fde8a8307fbe01ec6d964e6619ddf315a5d3d1e77e466630993871",
+          "sizePx": [
+            114,
+            103
+          ],
+          "sourceRectPx": {
+            "x": 462,
+            "y": 324,
+            "width": 114,
+            "height": 103
+          },
+          "anchorLocalPx": [
+            63.469142505324044,
+            56.88172260427791
+          ],
+          "role": "ground-shadow",
+          "depth": {
+            "layer": "ground",
+            "sortNativeY": 33295.09546643628
+          },
+          "alpha": "straight",
+          "provenance": {
+            "kind": "restored",
+            "method": "source cast-shadow region + locally recovered luminance alpha, soft floor component 0.11; dark olive; source shadow removed from background",
+            "limitation": "estimated opacity; not an exact lighting decomposition"
+          }
+        },
+        {
+          "partId": "flower-01-body",
+          "file": "flower-01-body.png",
+          "sha256": "407a51d3f65833bd7dc725f81b37a6a08ffdbe63238c39dc35d3db0279200470",
+          "sizePx": [
+            114,
+            103
+          ],
+          "sourceRectPx": {
+            "x": 462,
+            "y": 324,
+            "width": 114,
+            "height": 103
+          },
+          "anchorLocalPx": [
+            63.469142505324044,
+            56.88172260427791
+          ],
+          "role": "body",
+          "depth": {
+            "layer": "body",
+            "sortNativeY": 33295.09546643628,
+            "occlusion": "sort with ball ground native Y, alpha provides partial occlusion"
+          },
+          "alpha": "straight",
+          "provenance": {
+            "kind": "extracted",
+            "method": "starter exact alpha; RGB identical to source"
+          }
+        }
+      ]
+    },
+    {
+      "objectId": "leaf-01",
+      "nativeKind": "pin",
+      "anchorSourcePx": [
+        771.9933085614637,
+        395.3781834746939
+      ],
+      "anchorLocalPx": [
+        105.99330856146366,
+        65.37818347469391
+      ],
+      "anchorNative": [
+        33257.103055588785,
+        33328.97811206313
+      ],
+      "anchorResearch": [
+        1.1030555887846276,
+        -743.0218879368695
+      ],
+      "sourceRectPx": {
+        "x": 666,
+        "y": 330,
+        "width": 159,
+        "height": 159
+      },
+      "parts": [
+        {
+          "partId": "leaf-01-ground-shadow",
+          "file": "leaf-01-ground-shadow.png",
+          "sha256": "2af194f8f31ed10485b77dfa5cf3d4460999c442be059d34075324cb36c2d228",
+          "sizePx": [
+            159,
+            159
+          ],
+          "sourceRectPx": {
+            "x": 666,
+            "y": 330,
+            "width": 159,
+            "height": 159
+          },
+          "anchorLocalPx": [
+            105.99330856146366,
+            65.37818347469391
+          ],
+          "role": "ground-shadow",
+          "depth": {
+            "layer": "ground",
+            "sortNativeY": 33328.97811206313
+          },
+          "alpha": "straight",
+          "provenance": {
+            "kind": "restored",
+            "method": "source cast-shadow region + locally recovered luminance alpha, soft floor component 0.11; dark olive; source shadow removed from background",
+            "limitation": "estimated opacity; not an exact lighting decomposition"
+          }
+        },
+        {
+          "partId": "leaf-01-body",
+          "file": "leaf-01-body.png",
+          "sha256": "d5e60b709b15efaf4b84b934dd740e8bcea3ebbe0a0ea142f4ffd15f592197b7",
+          "sizePx": [
+            159,
+            159
+          ],
+          "sourceRectPx": {
+            "x": 666,
+            "y": 330,
+            "width": 159,
+            "height": 159
+          },
+          "anchorLocalPx": [
+            105.99330856146366,
+            65.37818347469391
+          ],
+          "role": "body",
+          "depth": {
+            "layer": "body",
+            "sortNativeY": 33328.97811206313,
+            "occlusion": "sort with ball ground native Y, alpha provides partial occlusion"
+          },
+          "alpha": "straight",
+          "provenance": {
+            "kind": "extracted",
+            "method": "artist family outline + local GrabCut, original RGB; RGB identical to source"
+          }
+        }
+      ]
+    },
+    {
+      "objectId": "frog-01",
+      "nativeKind": "pin",
+      "anchorSourcePx": [
+        1011.4166569436547,
+        385.9240956853899
+      ],
+      "anchorLocalPx": [
+        102.41665694365474,
+        64.92409568538989
+      ],
+      "anchorNative": [
+        33523.76813123743,
+        33306.91584579162
+      ],
+      "anchorResearch": [
+        267.7681312374334,
+        -765.0841542083799
+      ],
+      "sourceRectPx": {
+        "x": 909,
+        "y": 321,
+        "width": 157,
+        "height": 157
+      },
+      "parts": [
+        {
+          "partId": "frog-01-ground-shadow",
+          "file": "frog-01-ground-shadow.png",
+          "sha256": "b8de83dd9fb0feddae9dca64df62a3d1e474960411e93220e9b0775014077452",
+          "sizePx": [
+            157,
+            157
+          ],
+          "sourceRectPx": {
+            "x": 909,
+            "y": 321,
+            "width": 157,
+            "height": 157
+          },
+          "anchorLocalPx": [
+            102.41665694365474,
+            64.92409568538989
+          ],
+          "role": "ground-shadow",
+          "depth": {
+            "layer": "ground",
+            "sortNativeY": 33306.91584579162
+          },
+          "alpha": "straight",
+          "provenance": {
+            "kind": "restored",
+            "method": "source cast-shadow region + locally recovered luminance alpha, soft floor component 0.11; dark olive; source shadow removed from background",
+            "limitation": "estimated opacity; not an exact lighting decomposition"
+          }
+        },
+        {
+          "partId": "frog-01-body",
+          "file": "frog-01-body.png",
+          "sha256": "70f139c7507087aae27549e32dd624f3c88e7625fc91ca524084e40ccfa96f50",
+          "sizePx": [
+            157,
+            157
+          ],
+          "sourceRectPx": {
+            "x": 909,
+            "y": 321,
+            "width": 157,
+            "height": 157
+          },
+          "anchorLocalPx": [
+            102.41665694365474,
+            64.92409568538989
+          ],
+          "role": "body",
+          "depth": {
+            "layer": "body",
+            "sortNativeY": 33306.91584579162,
+            "occlusion": "sort with ball ground native Y, alpha provides partial occlusion"
+          },
+          "alpha": "straight",
+          "provenance": {
+            "kind": "extracted",
+            "method": "artist family outline + local GrabCut, original RGB; RGB identical to source"
+          }
+        }
+      ]
+    },
+    {
+      "objectId": "wood-01",
+      "nativeKind": "pin",
+      "anchorSourcePx": [
+        628.6379171404698,
+        478.24642276395195
+      ],
+      "anchorLocalPx": [
+        74.63791714046977,
+        78.24642276395195
+      ],
+      "anchorNative": [
+        33101.88779971951,
+        33516.93876987417
+      ],
+      "anchorResearch": [
+        -154.11220028049138,
+        -555.0612301258298
+      ],
+      "sourceRectPx": {
+        "x": 554,
+        "y": 400,
+        "width": 118,
+        "height": 135
+      },
+      "parts": [
+        {
+          "partId": "wood-01-ground-shadow",
+          "file": "wood-01-ground-shadow.png",
+          "sha256": "db2a7a0a98a245969341f60194119a6ed62aed6e3e7f3a2420f049012c4050d7",
+          "sizePx": [
+            118,
+            135
+          ],
+          "sourceRectPx": {
+            "x": 554,
+            "y": 400,
+            "width": 118,
+            "height": 135
+          },
+          "anchorLocalPx": [
+            74.63791714046977,
+            78.24642276395195
+          ],
+          "role": "ground-shadow",
+          "depth": {
+            "layer": "ground",
+            "sortNativeY": 33516.93876987417
+          },
+          "alpha": "straight",
+          "provenance": {
+            "kind": "restored",
+            "method": "source cast-shadow region + locally recovered luminance alpha, soft floor component 0.11; dark olive; source shadow removed from background",
+            "limitation": "estimated opacity; not an exact lighting decomposition"
+          }
+        },
+        {
+          "partId": "wood-01-body",
+          "file": "wood-01-body.png",
+          "sha256": "0da5eedca7c8f5cc70916ab88f3512facd35193a5a8bf3a789d3029050ea7a9d",
+          "sizePx": [
+            118,
+            135
+          ],
+          "sourceRectPx": {
+            "x": 554,
+            "y": 400,
+            "width": 118,
+            "height": 135
+          },
+          "anchorLocalPx": [
+            74.63791714046977,
+            78.24642276395195
+          ],
+          "role": "body",
+          "depth": {
+            "layer": "body",
+            "sortNativeY": 33516.93876987417,
+            "occlusion": "sort with ball ground native Y, alpha provides partial occlusion"
+          },
+          "alpha": "straight",
+          "provenance": {
+            "kind": "extracted",
+            "method": "starter exact alpha; RGB identical to source"
+          }
+        }
+      ]
+    },
+    {
+      "objectId": "flower-02",
+      "nativeKind": "pin",
+      "anchorSourcePx": [
+        886.2755402544597,
+        484.270047757925
+      ],
+      "anchorLocalPx": [
+        99.27554025445966,
+        61.270047757925
+      ],
+      "anchorNative": [
+        33380.562134421954,
+        33530.233282658526
+      ],
+      "anchorResearch": [
+        124.5621344219544,
+        -541.7667173414738
+      ],
+      "sourceRectPx": {
+        "x": 787,
+        "y": 423,
+        "width": 151,
+        "height": 150
+      },
+      "parts": [
+        {
+          "partId": "flower-02-ground-shadow",
+          "file": "flower-02-ground-shadow.png",
+          "sha256": "68c212b4292f8b15e6796b04debfea0897828d850731f586b1bdf8ada7e9b865",
+          "sizePx": [
+            151,
+            150
+          ],
+          "sourceRectPx": {
+            "x": 787,
+            "y": 423,
+            "width": 151,
+            "height": 150
+          },
+          "anchorLocalPx": [
+            99.27554025445966,
+            61.270047757925
+          ],
+          "role": "ground-shadow",
+          "depth": {
+            "layer": "ground",
+            "sortNativeY": 33530.233282658526
+          },
+          "alpha": "straight",
+          "provenance": {
+            "kind": "restored",
+            "method": "source cast-shadow region + locally recovered luminance alpha, soft floor component 0.11; dark olive; source shadow removed from background",
+            "limitation": "estimated opacity; not an exact lighting decomposition"
+          }
+        },
+        {
+          "partId": "flower-02-body",
+          "file": "flower-02-body.png",
+          "sha256": "62f75619281399e6e530330f4ffb890fe234361bab5284aee9530d5b012c894c",
+          "sizePx": [
+            151,
+            150
+          ],
+          "sourceRectPx": {
+            "x": 787,
+            "y": 423,
+            "width": 151,
+            "height": 150
+          },
+          "anchorLocalPx": [
+            99.27554025445966,
+            61.270047757925
+          ],
+          "role": "body",
+          "depth": {
+            "layer": "body",
+            "sortNativeY": 33530.233282658526,
+            "occlusion": "sort with ball ground native Y, alpha provides partial occlusion"
+          },
+          "alpha": "straight",
+          "provenance": {
+            "kind": "extracted",
+            "method": "artist family outline + local GrabCut, original RGB; RGB identical to source"
+          }
+        }
+      ]
+    },
+    {
+      "objectId": "wood-02",
+      "nativeKind": "pin",
+      "anchorSourcePx": [
+        1077.6260246205268,
+        478.24642276395195
+      ],
+      "anchorLocalPx": [
+        72.62602462052678,
+        77.24642276395195
+      ],
+      "anchorNative": [
+        33587.93396983491,
+        33516.93876987417
+      ],
+      "anchorResearch": [
+        331.93396983490675,
+        -555.0612301258298
+      ],
+      "sourceRectPx": {
+        "x": 1005,
+        "y": 401,
+        "width": 112,
+        "height": 144
+      },
+      "parts": [
+        {
+          "partId": "wood-02-ground-shadow",
+          "file": "wood-02-ground-shadow.png",
+          "sha256": "2f093e0ccb7c06578f101a7721204075fdac3dbb78a03d57068014be59f58d0e",
+          "sizePx": [
+            112,
+            144
+          ],
+          "sourceRectPx": {
+            "x": 1005,
+            "y": 401,
+            "width": 112,
+            "height": 144
+          },
+          "anchorLocalPx": [
+            72.62602462052678,
+            77.24642276395195
+          ],
+          "role": "ground-shadow",
+          "depth": {
+            "layer": "ground",
+            "sortNativeY": 33516.93876987417
+          },
+          "alpha": "straight",
+          "provenance": {
+            "kind": "restored",
+            "method": "source cast-shadow region + locally recovered luminance alpha, soft floor component 0.11; dark olive; source shadow removed from background",
+            "limitation": "estimated opacity; not an exact lighting decomposition"
+          }
+        },
+        {
+          "partId": "wood-02-body",
+          "file": "wood-02-body.png",
+          "sha256": "f16a239c303cc8b083cc9d53d71a2e58aae7b95b089e0ea7cda866fd494ea531",
+          "sizePx": [
+            112,
+            144
+          ],
+          "sourceRectPx": {
+            "x": 1005,
+            "y": 401,
+            "width": 112,
+            "height": 144
+          },
+          "anchorLocalPx": [
+            72.62602462052678,
+            77.24642276395195
+          ],
+          "role": "body",
+          "depth": {
+            "layer": "body",
+            "sortNativeY": 33516.93876987417,
+            "occlusion": "sort with ball ground native Y, alpha provides partial occlusion"
+          },
+          "alpha": "straight",
+          "provenance": {
+            "kind": "extracted",
+            "method": "artist family outline + local GrabCut, original RGB; RGB identical to source"
+          }
+        }
+      ]
+    },
+    {
+      "objectId": "frog-02",
+      "nativeKind": "pin",
+      "anchorSourcePx": [
+        481.947208614091,
+        532.4547649566713
+      ],
+      "anchorLocalPx": [
+        107.94720861409098,
+        62.45476495667128
+      ],
+      "anchorNative": [
+        32948.158051844744,
+        33634.85738798833
+      ],
+      "anchorResearch": [
+        -307.8419481552555,
+        -437.14261201166664
+      ],
+      "sourceRectPx": {
+        "x": 374,
+        "y": 470,
+        "width": 158,
+        "height": 157
+      },
+      "parts": [
+        {
+          "partId": "frog-02-ground-shadow",
+          "file": "frog-02-ground-shadow.png",
+          "sha256": "e3edf7f9202109b3a026aaaecabef28b820ffd2eb8efdc3dd8a22e2884c12eab",
+          "sizePx": [
+            158,
+            157
+          ],
+          "sourceRectPx": {
+            "x": 374,
+            "y": 470,
+            "width": 158,
+            "height": 157
+          },
+          "anchorLocalPx": [
+            107.94720861409098,
+            62.45476495667128
+          ],
+          "role": "ground-shadow",
+          "depth": {
+            "layer": "ground",
+            "sortNativeY": 33634.85738798833
+          },
+          "alpha": "straight",
+          "provenance": {
+            "kind": "restored",
+            "method": "source cast-shadow region + locally recovered luminance alpha, soft floor component 0.11; dark olive; source shadow removed from background",
+            "limitation": "estimated opacity; not an exact lighting decomposition"
+          }
+        },
+        {
+          "partId": "frog-02-body",
+          "file": "frog-02-body.png",
+          "sha256": "047f1681dc150399ac96e595bc534a4319ea4a0461384944c2fa55330d0fb364",
+          "sizePx": [
+            158,
+            157
+          ],
+          "sourceRectPx": {
+            "x": 374,
+            "y": 470,
+            "width": 158,
+            "height": 157
+          },
+          "anchorLocalPx": [
+            107.94720861409098,
+            62.45476495667128
+          ],
+          "role": "body",
+          "depth": {
+            "layer": "body",
+            "sortNativeY": 33634.85738798833,
+            "occlusion": "sort with ball ground native Y, alpha provides partial occlusion"
+          },
+          "alpha": "straight",
+          "provenance": {
+            "kind": "extracted",
+            "method": "artist family outline + local GrabCut, original RGB; RGB identical to source"
+          }
+        }
+      ]
+    },
+    {
+      "objectId": "leaf-02",
+      "nativeKind": "pin",
+      "anchorSourcePx": [
+        737.2325646637983,
+        551.8169569900756
+      ],
+      "anchorLocalPx": [
+        108.23256466379826,
+        66.8169569900756
+      ],
+      "anchorNative": [
+        33220.24445754825,
+        33676.055127292115
+      ],
+      "anchorResearch": [
+        -35.755542451748624,
+        -395.9448727078852
+      ],
+      "sourceRectPx": {
+        "x": 629,
+        "y": 485,
+        "width": 162,
+        "height": 163
+      },
+      "parts": [
+        {
+          "partId": "leaf-02-ground-shadow",
+          "file": "leaf-02-ground-shadow.png",
+          "sha256": "9acd9c2e02f862194fa6275ce3627e9d3dc3acc3636a05324d7630a503e7909f",
+          "sizePx": [
+            162,
+            163
+          ],
+          "sourceRectPx": {
+            "x": 629,
+            "y": 485,
+            "width": 162,
+            "height": 163
+          },
+          "anchorLocalPx": [
+            108.23256466379826,
+            66.8169569900756
+          ],
+          "role": "ground-shadow",
+          "depth": {
+            "layer": "ground",
+            "sortNativeY": 33676.055127292115
+          },
+          "alpha": "straight",
+          "provenance": {
+            "kind": "restored",
+            "method": "source cast-shadow region + locally recovered luminance alpha, soft floor component 0.11; dark olive; source shadow removed from background",
+            "limitation": "estimated opacity; not an exact lighting decomposition"
+          }
+        },
+        {
+          "partId": "leaf-02-body",
+          "file": "leaf-02-body.png",
+          "sha256": "12cd5d7379ce42d92b970c1023d5b63a2253e0bb95a88cc08d6f61bc1b6f606c",
+          "sizePx": [
+            162,
+            163
+          ],
+          "sourceRectPx": {
+            "x": 629,
+            "y": 485,
+            "width": 162,
+            "height": 163
+          },
+          "anchorLocalPx": [
+            108.23256466379826,
+            66.8169569900756
+          ],
+          "role": "body",
+          "depth": {
+            "layer": "body",
+            "sortNativeY": 33676.055127292115,
+            "occlusion": "sort with ball ground native Y, alpha provides partial occlusion"
+          },
+          "alpha": "straight",
+          "provenance": {
+            "kind": "extracted",
+            "method": "artist family outline + local GrabCut, original RGB; RGB identical to source"
+          }
+        }
+      ]
+    },
+    {
+      "objectId": "leaf-03",
+      "nativeKind": "pin",
+      "anchorSourcePx": [
+        998.3995566007285,
+        567.2011564213328
+      ],
+      "anchorLocalPx": [
+        108.39955660072849,
+        65.20115642133283
+      ],
+      "anchorNative": [
+        33495.692557377544,
+        33708.45237135722
+      ],
+      "anchorResearch": [
+        239.6925573775443,
+        -363.5476286427802
+      ],
+      "sourceRectPx": {
+        "x": 890,
+        "y": 502,
+        "width": 165,
+        "height": 164
+      },
+      "parts": [
+        {
+          "partId": "leaf-03-ground-shadow",
+          "file": "leaf-03-ground-shadow.png",
+          "sha256": "049b0f9f4d3d3ec3de10bb49fed11aeb105b7ee325d788c313d77e562a58945f",
+          "sizePx": [
+            165,
+            164
+          ],
+          "sourceRectPx": {
+            "x": 890,
+            "y": 502,
+            "width": 165,
+            "height": 164
+          },
+          "anchorLocalPx": [
+            108.39955660072849,
+            65.20115642133283
+          ],
+          "role": "ground-shadow",
+          "depth": {
+            "layer": "ground",
+            "sortNativeY": 33708.45237135722
+          },
+          "alpha": "straight",
+          "provenance": {
+            "kind": "restored",
+            "method": "source cast-shadow region + locally recovered luminance alpha, soft floor component 0.11; dark olive; source shadow removed from background",
+            "limitation": "estimated opacity; not an exact lighting decomposition"
+          }
+        },
+        {
+          "partId": "leaf-03-body",
+          "file": "leaf-03-body.png",
+          "sha256": "dd971c1e3439f571571e379d6673f2c0358cc5146f3a813201a3012c2df9d274",
+          "sizePx": [
+            165,
+            164
+          ],
+          "sourceRectPx": {
+            "x": 890,
+            "y": 502,
+            "width": 165,
+            "height": 164
+          },
+          "anchorLocalPx": [
+            108.39955660072849,
+            65.20115642133283
+          ],
+          "role": "body",
+          "depth": {
+            "layer": "body",
+            "sortNativeY": 33708.45237135722,
+            "occlusion": "sort with ball ground native Y, alpha provides partial occlusion"
+          },
+          "alpha": "straight",
+          "provenance": {
+            "kind": "extracted",
+            "method": "artist family outline + local GrabCut, original RGB; RGB identical to source"
+          }
+        }
+      ]
+    },
+    {
+      "objectId": "wood-03",
+      "nativeKind": "pin",
+      "anchorSourcePx": [
+        568.9357605046563,
+        648.9617757388379
+      ],
+      "anchorLocalPx": [
+        76.93576050465629,
+        82.9617757388379
+      ],
+      "anchorNative": [
+        33048.040620357926,
+        33875.80059132175
+      ],
+      "anchorResearch": [
+        -207.95937964207405,
+        -196.19940867825062
+      ],
+      "sourceRectPx": {
+        "x": 492,
+        "y": 566,
+        "width": 116,
+        "height": 152
+      },
+      "parts": [
+        {
+          "partId": "wood-03-ground-shadow",
+          "file": "wood-03-ground-shadow.png",
+          "sha256": "55f5ccffd99c080edd400bde6ae49e6958d9951ee7000b299ee62bff133b7efd",
+          "sizePx": [
+            116,
+            152
+          ],
+          "sourceRectPx": {
+            "x": 492,
+            "y": 566,
+            "width": 116,
+            "height": 152
+          },
+          "anchorLocalPx": [
+            76.93576050465629,
+            82.9617757388379
+          ],
+          "role": "ground-shadow",
+          "depth": {
+            "layer": "ground",
+            "sortNativeY": 33875.80059132175
+          },
+          "alpha": "straight",
+          "provenance": {
+            "kind": "restored",
+            "method": "source cast-shadow region + locally recovered luminance alpha, soft floor component 0.11; dark olive; source shadow removed from background",
+            "limitation": "estimated opacity; not an exact lighting decomposition"
+          }
+        },
+        {
+          "partId": "wood-03-body",
+          "file": "wood-03-body.png",
+          "sha256": "1b87c9bdc41481107162075264ae8e71f31f7cda46b6c27d7e542a0cdbe39b28",
+          "sizePx": [
+            116,
+            152
+          ],
+          "sourceRectPx": {
+            "x": 492,
+            "y": 566,
+            "width": 116,
+            "height": 152
+          },
+          "anchorLocalPx": [
+            76.93576050465629,
+            82.9617757388379
+          ],
+          "role": "body",
+          "depth": {
+            "layer": "body",
+            "sortNativeY": 33875.80059132175,
+            "occlusion": "sort with ball ground native Y, alpha provides partial occlusion"
+          },
+          "alpha": "straight",
+          "provenance": {
+            "kind": "extracted",
+            "method": "artist family outline + local GrabCut, original RGB; RGB identical to source"
+          }
+        }
+      ]
+    },
+    {
+      "objectId": "flower-03",
+      "nativeKind": "pin",
+      "anchorSourcePx": [
+        840.5524171112322,
+        639.7726129873538
+      ],
+      "anchorLocalPx": [
+        101.55241711123222,
+        63.772612987353796
+      ],
+      "anchorNative": [
+        33327.77201639532,
+        33857.38732422164
+      ],
+      "anchorResearch": [
+        71.77201639531995,
+        -214.6126757783568
+      ],
+      "sourceRectPx": {
+        "x": 739,
+        "y": 576,
+        "width": 153,
+        "height": 155
+      },
+      "parts": [
+        {
+          "partId": "flower-03-ground-shadow",
+          "file": "flower-03-ground-shadow.png",
+          "sha256": "bef937bc0d59431fcfeabf3250f758c65702e29532348a61531dd508f49aa9fe",
+          "sizePx": [
+            153,
+            155
+          ],
+          "sourceRectPx": {
+            "x": 739,
+            "y": 576,
+            "width": 153,
+            "height": 155
+          },
+          "anchorLocalPx": [
+            101.55241711123222,
+            63.772612987353796
+          ],
+          "role": "ground-shadow",
+          "depth": {
+            "layer": "ground",
+            "sortNativeY": 33857.38732422164
+          },
+          "alpha": "straight",
+          "provenance": {
+            "kind": "restored",
+            "method": "source cast-shadow region + locally recovered luminance alpha, soft floor component 0.11; dark olive; source shadow removed from background",
+            "limitation": "estimated opacity; not an exact lighting decomposition"
+          }
+        },
+        {
+          "partId": "flower-03-body",
+          "file": "flower-03-body.png",
+          "sha256": "2b8cf13c792dab99bbba6afab4361a7e002df35fcd28072bd5707b4ba3f65502",
+          "sizePx": [
+            153,
+            155
+          ],
+          "sourceRectPx": {
+            "x": 739,
+            "y": 576,
+            "width": 153,
+            "height": 155
+          },
+          "anchorLocalPx": [
+            101.55241711123222,
+            63.772612987353796
+          ],
+          "role": "body",
+          "depth": {
+            "layer": "body",
+            "sortNativeY": 33857.38732422164,
+            "occlusion": "sort with ball ground native Y, alpha provides partial occlusion"
+          },
+          "alpha": "straight",
+          "provenance": {
+            "kind": "extracted",
+            "method": "artist family outline + local GrabCut, original RGB; RGB identical to source"
+          }
+        }
+      ]
+    },
+    {
+      "objectId": "frog-03",
+      "nativeKind": "pin",
+      "anchorSourcePx": [
+        1127.4910079461201,
+        640.6839825717865
+      ],
+      "anchorLocalPx": [
+        107.49100794612013,
+        65.68398257178649
+      ],
+      "anchorNative": [
+        33623.770528529574,
+        33859.21790429951
+      ],
+      "anchorResearch": [
+        367.7705285295742,
+        -212.78209570048784
+      ],
+      "sourceRectPx": {
+        "x": 1020,
+        "y": 575,
+        "width": 167,
+        "height": 165
+      },
+      "parts": [
+        {
+          "partId": "frog-03-ground-shadow",
+          "file": "frog-03-ground-shadow.png",
+          "sha256": "c874c7c933f2206b2f96d8b0d2a936a082bcac4cfed0f94e035e2ea1b7b9accf",
+          "sizePx": [
+            167,
+            165
+          ],
+          "sourceRectPx": {
+            "x": 1020,
+            "y": 575,
+            "width": 167,
+            "height": 165
+          },
+          "anchorLocalPx": [
+            107.49100794612013,
+            65.68398257178649
+          ],
+          "role": "ground-shadow",
+          "depth": {
+            "layer": "ground",
+            "sortNativeY": 33859.21790429951
+          },
+          "alpha": "straight",
+          "provenance": {
+            "kind": "restored",
+            "method": "source cast-shadow region + locally recovered luminance alpha, soft floor component 0.11; dark olive; source shadow removed from background",
+            "limitation": "estimated opacity; not an exact lighting decomposition"
+          }
+        },
+        {
+          "partId": "frog-03-body",
+          "file": "frog-03-body.png",
+          "sha256": "5a25aa7bdd9165e427c527194fcf1ee8cce1da056970dd3e2e43145ae2f0610e",
+          "sizePx": [
+            167,
+            165
+          ],
+          "sourceRectPx": {
+            "x": 1020,
+            "y": 575,
+            "width": 167,
+            "height": 165
+          },
+          "anchorLocalPx": [
+            107.49100794612013,
+            65.68398257178649
+          ],
+          "role": "body",
+          "depth": {
+            "layer": "body",
+            "sortNativeY": 33859.21790429951,
+            "occlusion": "sort with ball ground native Y, alpha provides partial occlusion"
+          },
+          "alpha": "straight",
+          "provenance": {
+            "kind": "extracted",
+            "method": "artist family outline + local GrabCut, original RGB; RGB identical to source"
+          }
+        }
+      ]
+    },
+    {
+      "objectId": "frog-04",
+      "nativeKind": "pin",
+      "anchorSourcePx": [
+        698.5318950143263,
+        731.9716387501195
+      ],
+      "anchorLocalPx": [
+        114.53189501432632,
+        64.9716387501195
+      ],
+      "anchorNative": [
+        33183.163481675765,
+        34037.81138863775
+      ],
+      "anchorResearch": [
+        -72.83651832423493,
+        -34.18861136225314
+      ],
+      "sourceRectPx": {
+        "x": 584,
+        "y": 667,
+        "width": 170,
+        "height": 169
+      },
+      "parts": [
+        {
+          "partId": "frog-04-ground-shadow",
+          "file": "frog-04-ground-shadow.png",
+          "sha256": "d01e92eb8063d337f484d52e898007e5218fdfdf7343c76d1dc876165bb82ffc",
+          "sizePx": [
+            170,
+            169
+          ],
+          "sourceRectPx": {
+            "x": 584,
+            "y": 667,
+            "width": 170,
+            "height": 169
+          },
+          "anchorLocalPx": [
+            114.53189501432632,
+            64.9716387501195
+          ],
+          "role": "ground-shadow",
+          "depth": {
+            "layer": "ground",
+            "sortNativeY": 34037.81138863775
+          },
+          "alpha": "straight",
+          "provenance": {
+            "kind": "restored",
+            "method": "source cast-shadow region + locally recovered luminance alpha, soft floor component 0.11; dark olive; source shadow removed from background",
+            "limitation": "estimated opacity; not an exact lighting decomposition"
+          }
+        },
+        {
+          "partId": "frog-04-body",
+          "file": "frog-04-body.png",
+          "sha256": "a0ceb219cc544b5a7d6faea362f9bb49e498eec8f933ab69de939e99dd1c83ce",
+          "sizePx": [
+            170,
+            169
+          ],
+          "sourceRectPx": {
+            "x": 584,
+            "y": 667,
+            "width": 170,
+            "height": 169
+          },
+          "anchorLocalPx": [
+            114.53189501432632,
+            64.9716387501195
+          ],
+          "role": "body",
+          "depth": {
+            "layer": "body",
+            "sortNativeY": 34037.81138863775,
+            "occlusion": "sort with ball ground native Y, alpha provides partial occlusion"
+          },
+          "alpha": "straight",
+          "provenance": {
+            "kind": "extracted",
+            "method": "artist family outline + local GrabCut, original RGB; RGB identical to source"
+          }
+        }
+      ]
+    },
+    {
+      "objectId": "wood-04",
+      "nativeKind": "pin",
+      "anchorSourcePx": [
+        948.1530125799266,
+        734.035195024738
+      ],
+      "anchorLocalPx": [
+        78.15301257992655,
+        85.03519502473796
+      ],
+      "anchorNative": [
+        33433.9500738487,
+        34041.74228104549
+      ],
+      "anchorResearch": [
+        177.95007384869677,
+        -30.2577189545118
+      ],
+      "sourceRectPx": {
+        "x": 870,
+        "y": 649,
+        "width": 123,
+        "height": 157
+      },
+      "parts": [
+        {
+          "partId": "wood-04-ground-shadow",
+          "file": "wood-04-ground-shadow.png",
+          "sha256": "690560c7445798793a268b23a89ce6769775b37023403a05fb702b5874793276",
+          "sizePx": [
+            123,
+            157
+          ],
+          "sourceRectPx": {
+            "x": 870,
+            "y": 649,
+            "width": 123,
+            "height": 157
+          },
+          "anchorLocalPx": [
+            78.15301257992655,
+            85.03519502473796
+          ],
+          "role": "ground-shadow",
+          "depth": {
+            "layer": "ground",
+            "sortNativeY": 34041.74228104549
+          },
+          "alpha": "straight",
+          "provenance": {
+            "kind": "restored",
+            "method": "source cast-shadow region + locally recovered luminance alpha, soft floor component 0.11; dark olive; source shadow removed from background",
+            "limitation": "estimated opacity; not an exact lighting decomposition"
+          }
+        },
+        {
+          "partId": "wood-04-body",
+          "file": "wood-04-body.png",
+          "sha256": "f7cf33dc681131a620eb353ad980ad480b7382d05be2dfc58a87ab6de966ea0f",
+          "sizePx": [
+            123,
+            157
+          ],
+          "sourceRectPx": {
+            "x": 870,
+            "y": 649,
+            "width": 123,
+            "height": 157
+          },
+          "anchorLocalPx": [
+            78.15301257992655,
+            85.03519502473796
+          ],
+          "role": "body",
+          "depth": {
+            "layer": "body",
+            "sortNativeY": 34041.74228104549,
+            "occlusion": "sort with ball ground native Y, alpha provides partial occlusion"
+          },
+          "alpha": "straight",
+          "provenance": {
+            "kind": "extracted",
+            "method": "artist family outline + local GrabCut, original RGB; RGB identical to source"
+          }
+        }
+      ]
+    },
+    {
+      "objectId": "wood-05",
+      "nativeKind": "pin",
+      "anchorSourcePx": [
+        1197.9586651504972,
+        754.9352695425946
+      ],
+      "anchorLocalPx": [
+        76.95866515049715,
+        82.9352695425946
+      ],
+      "anchorNative": [
+        33682.368293229054,
+        34081.29892794594
+      ],
+      "anchorResearch": [
+        426.36829322905396,
+        9.298927945943433
+      ],
+      "sourceRectPx": {
+        "x": 1121,
+        "y": 672,
+        "width": 119,
+        "height": 155
+      },
+      "parts": [
+        {
+          "partId": "wood-05-ground-shadow",
+          "file": "wood-05-ground-shadow.png",
+          "sha256": "ae7722265de2b75f605f422843eb95789792e286f059d894614f62edf2242010",
+          "sizePx": [
+            119,
+            155
+          ],
+          "sourceRectPx": {
+            "x": 1121,
+            "y": 672,
+            "width": 119,
+            "height": 155
+          },
+          "anchorLocalPx": [
+            76.95866515049715,
+            82.9352695425946
+          ],
+          "role": "ground-shadow",
+          "depth": {
+            "layer": "ground",
+            "sortNativeY": 34081.29892794594
+          },
+          "alpha": "straight",
+          "provenance": {
+            "kind": "restored",
+            "method": "source cast-shadow region + locally recovered luminance alpha, soft floor component 0.11; dark olive; source shadow removed from background",
+            "limitation": "estimated opacity; not an exact lighting decomposition"
+          }
+        },
+        {
+          "partId": "wood-05-body",
+          "file": "wood-05-body.png",
+          "sha256": "34ce375d9fbc54e2ea93809fd3b4bd99d074f7e1a39e4aa07ceeec0be4f36d13",
+          "sizePx": [
+            119,
+            155
+          ],
+          "sourceRectPx": {
+            "x": 1121,
+            "y": 672,
+            "width": 119,
+            "height": 155
+          },
+          "anchorLocalPx": [
+            76.95866515049715,
+            82.9352695425946
+          ],
+          "role": "body",
+          "depth": {
+            "layer": "body",
+            "sortNativeY": 34081.29892794594,
+            "occlusion": "sort with ball ground native Y, alpha provides partial occlusion"
+          },
+          "alpha": "straight",
+          "provenance": {
+            "kind": "extracted",
+            "method": "artist family outline + local GrabCut, original RGB; RGB identical to source"
+          }
+        }
+      ]
+    },
+    {
+      "objectId": "flower-04",
+      "nativeKind": "pin",
+      "anchorSourcePx": [
+        518.6618559351723,
+        808.1434312269323
+      ],
+      "anchorLocalPx": [
+        105.6618559351723,
+        69.14343122693231
+      ],
+      "anchorNative": [
+        33007.71214527875,
+        34179.94341792299
+      ],
+      "anchorResearch": [
+        -248.2878547212531,
+        107.94341792298655
+      ],
+      "sourceRectPx": {
+        "x": 413,
+        "y": 739,
+        "width": 161,
+        "height": 164
+      },
+      "parts": [
+        {
+          "partId": "flower-04-ground-shadow",
+          "file": "flower-04-ground-shadow.png",
+          "sha256": "b9517dc51dd2469dbc8fd97367c5fed7f341459fddff76d392a6a0f936d545d5",
+          "sizePx": [
+            161,
+            164
+          ],
+          "sourceRectPx": {
+            "x": 413,
+            "y": 739,
+            "width": 161,
+            "height": 164
+          },
+          "anchorLocalPx": [
+            105.6618559351723,
+            69.14343122693231
+          ],
+          "role": "ground-shadow",
+          "depth": {
+            "layer": "ground",
+            "sortNativeY": 34179.94341792299
+          },
+          "alpha": "straight",
+          "provenance": {
+            "kind": "restored",
+            "method": "source cast-shadow region + locally recovered luminance alpha, soft floor component 0.11; dark olive; source shadow removed from background",
+            "limitation": "estimated opacity; not an exact lighting decomposition"
+          }
+        },
+        {
+          "partId": "flower-04-body",
+          "file": "flower-04-body.png",
+          "sha256": "7b9ce8cf9fc551c3a21b8d1a60f88824cf859f05240812081d9913ca7377ff83",
+          "sizePx": [
+            161,
+            164
+          ],
+          "sourceRectPx": {
+            "x": 413,
+            "y": 739,
+            "width": 161,
+            "height": 164
+          },
+          "anchorLocalPx": [
+            105.6618559351723,
+            69.14343122693231
+          ],
+          "role": "body",
+          "depth": {
+            "layer": "body",
+            "sortNativeY": 34179.94341792299,
+            "occlusion": "sort with ball ground native Y, alpha provides partial occlusion"
+          },
+          "alpha": "straight",
+          "provenance": {
+            "kind": "extracted",
+            "method": "artist family outline + local GrabCut, original RGB; RGB identical to source"
+          }
+        }
+      ]
+    },
+    {
+      "objectId": "flower-05",
+      "nativeKind": "pin",
+      "anchorSourcePx": [
+        800.794795884884,
+        830.8948784451546
+      ],
+      "anchorLocalPx": [
+        107.79479588488402,
+        62.89487844515463
+      ],
+      "anchorNative": [
+        33285.13357773812,
+        34221.24416829724
+      ],
+      "anchorResearch": [
+        29.13357773811731,
+        149.24416829724214
+      ],
+      "sourceRectPx": {
+        "x": 693,
+        "y": 768,
+        "width": 167,
+        "height": 161
+      },
+      "parts": [
+        {
+          "partId": "flower-05-ground-shadow",
+          "file": "flower-05-ground-shadow.png",
+          "sha256": "f639462c32eaf2feca94cec13b9719511b41357413f188a765b153aa64ad4a37",
+          "sizePx": [
+            167,
+            161
+          ],
+          "sourceRectPx": {
+            "x": 693,
+            "y": 768,
+            "width": 167,
+            "height": 161
+          },
+          "anchorLocalPx": [
+            107.79479588488402,
+            62.89487844515463
+          ],
+          "role": "ground-shadow",
+          "depth": {
+            "layer": "ground",
+            "sortNativeY": 34221.24416829724
+          },
+          "alpha": "straight",
+          "provenance": {
+            "kind": "restored",
+            "method": "source cast-shadow region + locally recovered luminance alpha, soft floor component 0.11; dark olive; source shadow removed from background",
+            "limitation": "estimated opacity; not an exact lighting decomposition"
+          }
+        },
+        {
+          "partId": "flower-05-body",
+          "file": "flower-05-body.png",
+          "sha256": "fc86dfcf23cd8d45f458aa06446a50fbb0f952986c577d1f5d4a03daad41368f",
+          "sizePx": [
+            167,
+            161
+          ],
+          "sourceRectPx": {
+            "x": 693,
+            "y": 768,
+            "width": 167,
+            "height": 161
+          },
+          "anchorLocalPx": [
+            107.79479588488402,
+            62.89487844515463
+          ],
+          "role": "body",
+          "depth": {
+            "layer": "body",
+            "sortNativeY": 34221.24416829724,
+            "occlusion": "sort with ball ground native Y, alpha provides partial occlusion"
+          },
+          "alpha": "straight",
+          "provenance": {
+            "kind": "extracted",
+            "method": "artist family outline + local GrabCut, original RGB; RGB identical to source"
+          }
+        }
+      ]
+    },
+    {
+      "objectId": "leaf-04",
+      "nativeKind": "pin",
+      "anchorSourcePx": [
+        1063.8066951464039,
+        818.7861737139783
+      ],
+      "anchorLocalPx": [
+        113.80669514640385,
+        71.78617371397831
+      ],
+      "anchorNative": [
+        33543.26285698555,
+        34199.3276024258
+      ],
+      "anchorResearch": [
+        287.2628569855515,
+        127.32760242580116
+      ],
+      "sourceRectPx": {
+        "x": 950,
+        "y": 747,
+        "width": 174,
+        "height": 178
+      },
+      "parts": [
+        {
+          "partId": "leaf-04-ground-shadow",
+          "file": "leaf-04-ground-shadow.png",
+          "sha256": "6f78f5ecf1758b2767d9dc85d9e6794a542bd1ee521dd6add2e4d3f1aa88354e",
+          "sizePx": [
+            174,
+            178
+          ],
+          "sourceRectPx": {
+            "x": 950,
+            "y": 747,
+            "width": 174,
+            "height": 178
+          },
+          "anchorLocalPx": [
+            113.80669514640385,
+            71.78617371397831
+          ],
+          "role": "ground-shadow",
+          "depth": {
+            "layer": "ground",
+            "sortNativeY": 34199.3276024258
+          },
+          "alpha": "straight",
+          "provenance": {
+            "kind": "restored",
+            "method": "source cast-shadow region + locally recovered luminance alpha, soft floor component 0.11; dark olive; source shadow removed from background",
+            "limitation": "estimated opacity; not an exact lighting decomposition"
+          }
+        },
+        {
+          "partId": "leaf-04-body",
+          "file": "leaf-04-body.png",
+          "sha256": "3d16a71a78776aaddc018ac6649b578633c8a9a1bb6b1a7344bba20ec051577e",
+          "sizePx": [
+            174,
+            178
+          ],
+          "sourceRectPx": {
+            "x": 950,
+            "y": 747,
+            "width": 174,
+            "height": 178
+          },
+          "anchorLocalPx": [
+            113.80669514640385,
+            71.78617371397831
+          ],
+          "role": "body",
+          "depth": {
+            "layer": "body",
+            "sortNativeY": 34199.3276024258,
+            "occlusion": "sort with ball ground native Y, alpha provides partial occlusion"
+          },
+          "alpha": "straight",
+          "provenance": {
+            "kind": "extracted",
+            "method": "artist family outline + local GrabCut, original RGB; RGB identical to source"
+          }
+        }
+      ]
+    },
+    {
+      "objectId": "wood-06",
+      "nativeKind": "pin",
+      "anchorSourcePx": [
+        425.7543464856086,
+        952.8575731768403
+      ],
+      "anchorLocalPx": [
+        84.75434648560861,
+        86.85757317684033
+      ],
+      "anchorNative": [
+        32929.345639735395,
+        34434.13825301294
+      ],
+      "anchorResearch": [
+        -326.6543602646052,
+        362.1382530129413
+      ],
+      "sourceRectPx": {
+        "x": 341,
+        "y": 866,
+        "width": 125,
+        "height": 163
+      },
+      "parts": [
+        {
+          "partId": "wood-06-ground-shadow",
+          "file": "wood-06-ground-shadow.png",
+          "sha256": "f5af7b7291c9eb3e1b2ab3c984cdf7650a808c15b20b729dff7bba8b307c3b54",
+          "sizePx": [
+            125,
+            163
+          ],
+          "sourceRectPx": {
+            "x": 341,
+            "y": 866,
+            "width": 125,
+            "height": 163
+          },
+          "anchorLocalPx": [
+            84.75434648560861,
+            86.85757317684033
+          ],
+          "role": "ground-shadow",
+          "depth": {
+            "layer": "ground",
+            "sortNativeY": 34434.13825301294
+          },
+          "alpha": "straight",
+          "provenance": {
+            "kind": "restored",
+            "method": "source cast-shadow region + locally recovered luminance alpha, soft floor component 0.11; dark olive; source shadow removed from background",
+            "limitation": "estimated opacity; not an exact lighting decomposition"
+          }
+        },
+        {
+          "partId": "wood-06-body",
+          "file": "wood-06-body.png",
+          "sha256": "5bef480530baf2d9c6a0f0316fefb29437250592e826f4fb3f7199a6a92d218e",
+          "sizePx": [
+            125,
+            163
+          ],
+          "sourceRectPx": {
+            "x": 341,
+            "y": 866,
+            "width": 125,
+            "height": 163
+          },
+          "anchorLocalPx": [
+            84.75434648560861,
+            86.85757317684033
+          ],
+          "role": "body",
+          "depth": {
+            "layer": "body",
+            "sortNativeY": 34434.13825301294,
+            "occlusion": "sort with ball ground native Y, alpha provides partial occlusion"
+          },
+          "alpha": "straight",
+          "provenance": {
+            "kind": "extracted",
+            "method": "artist family outline + local GrabCut, original RGB; RGB identical to source"
+          }
+        }
+      ]
+    },
+    {
+      "objectId": "leaf-05",
+      "nativeKind": "pin",
+      "anchorSourcePx": [
+        623.129960920846,
+        911.5290359361805
+      ],
+      "anchorLocalPx": [
+        119.12996092084597,
+        72.52903593618055
+      ],
+      "anchorNative": [
+        33114.54075536323,
+        34363.55781357324
+      ],
+      "anchorResearch": [
+        -141.45924463676783,
+        291.55781357324304
+      ],
+      "sourceRectPx": {
+        "x": 504,
+        "y": 839,
+        "width": 179,
+        "height": 181
+      },
+      "parts": [
+        {
+          "partId": "leaf-05-ground-shadow",
+          "file": "leaf-05-ground-shadow.png",
+          "sha256": "34da2f2e47852ae5575a04df2dc0606d7698bcaeaaa00348d4bc47f54ea6b3b1",
+          "sizePx": [
+            179,
+            181
+          ],
+          "sourceRectPx": {
+            "x": 504,
+            "y": 839,
+            "width": 179,
+            "height": 181
+          },
+          "anchorLocalPx": [
+            119.12996092084597,
+            72.52903593618055
+          ],
+          "role": "ground-shadow",
+          "depth": {
+            "layer": "ground",
+            "sortNativeY": 34363.55781357324
+          },
+          "alpha": "straight",
+          "provenance": {
+            "kind": "restored",
+            "method": "source cast-shadow region + locally recovered luminance alpha, soft floor component 0.11; dark olive; source shadow removed from background",
+            "limitation": "estimated opacity; not an exact lighting decomposition"
+          }
+        },
+        {
+          "partId": "leaf-05-body",
+          "file": "leaf-05-body.png",
+          "sha256": "0088d5636d2f736c14b143709fdaa515572489fe4589888cc00aa812621c0b7d",
+          "sizePx": [
+            179,
+            181
+          ],
+          "sourceRectPx": {
+            "x": 504,
+            "y": 839,
+            "width": 179,
+            "height": 181
+          },
+          "anchorLocalPx": [
+            119.12996092084597,
+            72.52903593618055
+          ],
+          "role": "body",
+          "depth": {
+            "layer": "body",
+            "sortNativeY": 34363.55781357324,
+            "occlusion": "sort with ball ground native Y, alpha provides partial occlusion"
+          },
+          "alpha": "straight",
+          "provenance": {
+            "kind": "extracted",
+            "method": "artist family outline + local GrabCut, original RGB; RGB identical to source"
+          }
+        }
+      ]
+    },
+    {
+      "objectId": "frog-05",
+      "nativeKind": "pin",
+      "anchorSourcePx": [
+        919.8401506536916,
+        930.8161351593429
+      ],
+      "anchorLocalPx": [
+        119.84015065369158,
+        68.81613515934293
+      ],
+      "anchorNative": [
+        33397.654005936,
+        34396.68997420478
+      ],
+      "anchorResearch": [
+        141.6540059359977,
+        324.68997420478263
+      ],
+      "sourceRectPx": {
+        "x": 800,
+        "y": 862,
+        "width": 180,
+        "height": 180
+      },
+      "parts": [
+        {
+          "partId": "frog-05-ground-shadow",
+          "file": "frog-05-ground-shadow.png",
+          "sha256": "83574f54b822ddfc1af167e84badfdbc618496a0635c5a912bfde244178bc65e",
+          "sizePx": [
+            180,
+            180
+          ],
+          "sourceRectPx": {
+            "x": 800,
+            "y": 862,
+            "width": 180,
+            "height": 180
+          },
+          "anchorLocalPx": [
+            119.84015065369158,
+            68.81613515934293
+          ],
+          "role": "ground-shadow",
+          "depth": {
+            "layer": "ground",
+            "sortNativeY": 34396.68997420478
+          },
+          "alpha": "straight",
+          "provenance": {
+            "kind": "restored",
+            "method": "source cast-shadow region + locally recovered luminance alpha, soft floor component 0.11; dark olive; source shadow removed from background",
+            "limitation": "estimated opacity; not an exact lighting decomposition"
+          }
+        },
+        {
+          "partId": "frog-05-body",
+          "file": "frog-05-body.png",
+          "sha256": "1402a50c613d300e8cdc66f818a0bab15f422f366124e8fc8a62ed6ef3dfef02",
+          "sizePx": [
+            180,
+            180
+          ],
+          "sourceRectPx": {
+            "x": 800,
+            "y": 862,
+            "width": 180,
+            "height": 180
+          },
+          "anchorLocalPx": [
+            119.84015065369158,
+            68.81613515934293
+          ],
+          "role": "body",
+          "depth": {
+            "layer": "body",
+            "sortNativeY": 34396.68997420478,
+            "occlusion": "sort with ball ground native Y, alpha provides partial occlusion"
+          },
+          "alpha": "straight",
+          "provenance": {
+            "kind": "extracted",
+            "method": "artist family outline + local GrabCut, original RGB; RGB identical to source"
+          }
+        }
+      ]
+    },
+    {
+      "objectId": "flower-06",
+      "nativeKind": "pin",
+      "anchorSourcePx": [
+        1143.3234245854421,
+        935.0467727705159
+      ],
+      "anchorLocalPx": [
+        109.32342458544213,
+        65.04677277051587
+      ],
+      "anchorNative": [
+        33609.94745653071,
+        34403.91194882328
+      ],
+      "anchorResearch": [
+        353.94745653071004,
+        331.9119488232827
+      ],
+      "sourceRectPx": {
+        "x": 1034,
+        "y": 870,
+        "width": 167,
+        "height": 168
+      },
+      "parts": [
+        {
+          "partId": "flower-06-ground-shadow",
+          "file": "flower-06-ground-shadow.png",
+          "sha256": "73d02d730ad9bc9b978291fd4edd142ec5c51f91b60fa30e96b007c08c47f8cd",
+          "sizePx": [
+            167,
+            168
+          ],
+          "sourceRectPx": {
+            "x": 1034,
+            "y": 870,
+            "width": 167,
+            "height": 168
+          },
+          "anchorLocalPx": [
+            109.32342458544213,
+            65.04677277051587
+          ],
+          "role": "ground-shadow",
+          "depth": {
+            "layer": "ground",
+            "sortNativeY": 34403.91194882328
+          },
+          "alpha": "straight",
+          "provenance": {
+            "kind": "restored",
+            "method": "source cast-shadow region + locally recovered luminance alpha, soft floor component 0.11; dark olive; source shadow removed from background",
+            "limitation": "estimated opacity; not an exact lighting decomposition"
+          }
+        },
+        {
+          "partId": "flower-06-body",
+          "file": "flower-06-body.png",
+          "sha256": "c1b4ec314eaea111e61f50e47a15325694c30449d292859deac8d15941e39f87",
+          "sizePx": [
+            167,
+            168
+          ],
+          "sourceRectPx": {
+            "x": 1034,
+            "y": 870,
+            "width": 167,
+            "height": 168
+          },
+          "anchorLocalPx": [
+            109.32342458544213,
+            65.04677277051587
+          ],
+          "role": "body",
+          "depth": {
+            "layer": "body",
+            "sortNativeY": 34403.91194882328,
+            "occlusion": "sort with ball ground native Y, alpha provides partial occlusion"
+          },
+          "alpha": "straight",
+          "provenance": {
+            "kind": "extracted",
+            "method": "artist family outline + local GrabCut, original RGB; RGB identical to source"
+          }
+        }
+      ]
+    },
+    {
+      "objectId": "flower-07",
+      "nativeKind": "pin",
+      "anchorSourcePx": [
+        498.00371409506494,
+        1054.6036130014063
+      ],
+      "anchorLocalPx": [
+        112.00371409506494,
+        63.6036130014063
+      ],
+      "anchorNative": [
+        33004.49724257842,
+        34601.47322043386
+      ],
+      "anchorResearch": [
+        -251.50275742157828,
+        529.4732204338579
+      ],
+      "sourceRectPx": {
+        "x": 386,
+        "y": 991,
+        "width": 169,
+        "height": 118
+      },
+      "parts": [
+        {
+          "partId": "flower-07-ground-shadow",
+          "file": "flower-07-ground-shadow.png",
+          "sha256": "c1b0fcfe5aa5578529c098fcea916528bcc856d1af85cb60f24135eeb778c819",
+          "sizePx": [
+            169,
+            118
+          ],
+          "sourceRectPx": {
+            "x": 386,
+            "y": 991,
+            "width": 169,
+            "height": 118
+          },
+          "anchorLocalPx": [
+            112.00371409506494,
+            63.6036130014063
+          ],
+          "role": "ground-shadow",
+          "depth": {
+            "layer": "ground",
+            "sortNativeY": 34601.47322043386
+          },
+          "alpha": "straight",
+          "provenance": {
+            "kind": "restored",
+            "method": "source cast-shadow region + locally recovered luminance alpha, soft floor component 0.11; dark olive; source shadow removed from background",
+            "limitation": "estimated opacity; not an exact lighting decomposition"
+          }
+        },
+        {
+          "partId": "flower-07-body",
+          "file": "flower-07-body.png",
+          "sha256": "cc0370c40cf4bb8ad79f65f213460d04afddfc6d1e92ace75c3822492760ee3a",
+          "sizePx": [
+            169,
+            118
+          ],
+          "sourceRectPx": {
+            "x": 386,
+            "y": 991,
+            "width": 169,
+            "height": 118
+          },
+          "anchorLocalPx": [
+            112.00371409506494,
+            63.6036130014063
+          ],
+          "role": "body",
+          "depth": {
+            "layer": "body",
+            "sortNativeY": 34601.47322043386,
+            "occlusion": "sort with ball ground native Y, alpha provides partial occlusion"
+          },
+          "alpha": "straight",
+          "provenance": {
+            "kind": "extracted",
+            "method": "artist family outline + local GrabCut, original RGB; RGB identical to source"
+          }
+        }
+      ]
+    },
+    {
+      "objectId": "wood-07",
+      "nativeKind": "pin",
+      "anchorSourcePx": [
+        698.3799250102331,
+        1053.7637064993307
+      ],
+      "anchorLocalPx": [
+        84.37992501023314,
+        94.76370649933074
+      ],
+      "anchorNative": [
+        33189.08291747258,
+        34600.12791716486
+      ],
+      "anchorResearch": [
+        -66.91708252741955,
+        528.1279171648566
+      ],
+      "sourceRectPx": {
+        "x": 614,
+        "y": 959,
+        "width": 127,
+        "height": 150
+      },
+      "parts": [
+        {
+          "partId": "wood-07-ground-shadow",
+          "file": "wood-07-ground-shadow.png",
+          "sha256": "6367bb960f46d51fd7bd3c98854340e3d2518a517f6dbae84e610dbaed60794f",
+          "sizePx": [
+            127,
+            150
+          ],
+          "sourceRectPx": {
+            "x": 614,
+            "y": 959,
+            "width": 127,
+            "height": 150
+          },
+          "anchorLocalPx": [
+            84.37992501023314,
+            94.76370649933074
+          ],
+          "role": "ground-shadow",
+          "depth": {
+            "layer": "ground",
+            "sortNativeY": 34600.12791716486
+          },
+          "alpha": "straight",
+          "provenance": {
+            "kind": "restored",
+            "method": "source cast-shadow region + locally recovered luminance alpha, soft floor component 0.11; dark olive; source shadow removed from background",
+            "limitation": "estimated opacity; not an exact lighting decomposition"
+          }
+        },
+        {
+          "partId": "wood-07-body",
+          "file": "wood-07-body.png",
+          "sha256": "d813a70333b67db4ecf9fa69217681a5015b481caa2ff247610638835a72b9f0",
+          "sizePx": [
+            127,
+            150
+          ],
+          "sourceRectPx": {
+            "x": 614,
+            "y": 959,
+            "width": 127,
+            "height": 150
+          },
+          "anchorLocalPx": [
+            84.37992501023314,
+            94.76370649933074
+          ],
+          "role": "body",
+          "depth": {
+            "layer": "body",
+            "sortNativeY": 34600.12791716486,
+            "occlusion": "sort with ball ground native Y, alpha provides partial occlusion"
+          },
+          "alpha": "straight",
+          "provenance": {
+            "kind": "extracted",
+            "method": "artist family outline + local GrabCut, original RGB; RGB identical to source"
+          }
+        }
+      ]
+    },
+    {
+      "objectId": "wood-08",
+      "nativeKind": "pin",
+      "anchorSourcePx": [
+        983.8862472302757,
+        1052.7689109515256
+      ],
+      "anchorLocalPx": [
+        82.88624723027567,
+        91.76891095152564
+      ],
+      "anchorNative": [
+        33452.218349997915,
+        34598.53376751601
+      ],
+      "anchorResearch": [
+        196.21834999791463,
+        526.5337675160117
+      ],
+      "sourceRectPx": {
+        "x": 901,
+        "y": 961,
+        "width": 127,
+        "height": 148
+      },
+      "parts": [
+        {
+          "partId": "wood-08-ground-shadow",
+          "file": "wood-08-ground-shadow.png",
+          "sha256": "5cf1a0d8537bf92db5717313ca5326735385084162b545f6fdac489586428d12",
+          "sizePx": [
+            127,
+            148
+          ],
+          "sourceRectPx": {
+            "x": 901,
+            "y": 961,
+            "width": 127,
+            "height": 148
+          },
+          "anchorLocalPx": [
+            82.88624723027567,
+            91.76891095152564
+          ],
+          "role": "ground-shadow",
+          "depth": {
+            "layer": "ground",
+            "sortNativeY": 34598.53376751601
+          },
+          "alpha": "straight",
+          "provenance": {
+            "kind": "restored",
+            "method": "source cast-shadow region + locally recovered luminance alpha, soft floor component 0.11; dark olive; source shadow removed from background",
+            "limitation": "estimated opacity; not an exact lighting decomposition"
+          }
+        },
+        {
+          "partId": "wood-08-body",
+          "file": "wood-08-body.png",
+          "sha256": "5edb7ee503c7bf50dce8ada1959f7c88e7c6140d9ee49d96f57ddfde45cc00ed",
+          "sizePx": [
+            127,
+            148
+          ],
+          "sourceRectPx": {
+            "x": 901,
+            "y": 961,
+            "width": 127,
+            "height": 148
+          },
+          "anchorLocalPx": [
+            82.88624723027567,
+            91.76891095152564
+          ],
+          "role": "body",
+          "depth": {
+            "layer": "body",
+            "sortNativeY": 34598.53376751601,
+            "occlusion": "sort with ball ground native Y, alpha provides partial occlusion"
+          },
+          "alpha": "straight",
+          "provenance": {
+            "kind": "extracted",
+            "method": "artist family outline + local GrabCut, original RGB; RGB identical to source"
+          }
+        }
+      ]
+    },
+    {
+      "objectId": "receiver-01",
+      "nativeKind": "bucket",
+      "anchorSourcePx": [
+        358.55946155336045,
+        1238.2098586093357
+      ],
+      "anchorLocalPx": [
+        170.55946155336045,
+        75.2098586093357
+      ],
+      "anchorNative": [
+        32893.24699917258,
+        34882.17558293618
+      ],
+      "anchorResearch": [
+        -362.7530008274189,
+        810.1755829361791
+      ],
+      "sourceRectPx": {
+        "x": 188,
+        "y": 1163,
+        "width": 321,
+        "height": 280
+      },
+      "parts": [
+        {
+          "partId": "receiver-01-body",
+          "file": "receiver-01-body.png",
+          "sha256": "0e3a4d6c40fcc58a3a63e94791d1107ca4d2163df81b7f3367a332c5c314507e",
+          "sizePx": [
+            321,
+            280
+          ],
+          "sourceRectPx": {
+            "x": 188,
+            "y": 1163,
+            "width": 321,
+            "height": 280
+          },
+          "anchorLocalPx": [
+            170.55946155336045,
+            75.2098586093357
+          ],
+          "role": "body",
+          "depth": {
+            "layer": "receiver-back",
+            "sortNativeY": 34882.17558293618,
+            "occlusion": "rear before ball; front after ball while its source billboard overlaps receiver sourceRect"
+          },
+          "alpha": "straight",
+          "provenance": {
+            "kind": "extracted",
+            "method": "byte-identical starter-v01 source RGB/alpha and crop"
+          }
+        },
+        {
+          "partId": "receiver-01-foreground",
+          "file": "receiver-01-foreground.png",
+          "sha256": "b98f63d72ca83907f6c77136dce641605cc4e9765c7ded7eb005427304b84ddf",
+          "sizePx": [
+            321,
+            280
+          ],
+          "sourceRectPx": {
+            "x": 188,
+            "y": 1163,
+            "width": 321,
+            "height": 280
+          },
+          "anchorLocalPx": [
+            170.55946155336045,
+            75.2098586093357
+          ],
+          "role": "foreground",
+          "depth": {
+            "layer": "receiver-front",
+            "sortNativeY": 34882.17558293618,
+            "occlusion": "rear before ball; front after ball while its source billboard overlaps receiver sourceRect"
+          },
+          "alpha": "straight",
+          "provenance": {
+            "kind": "extracted",
+            "method": "byte-identical starter-v01 source RGB/alpha and crop"
+          }
+        }
+      ]
+    },
+    {
+      "objectId": "receiver-02",
+      "nativeKind": "bucket",
+      "anchorSourcePx": [
+        646.3101699213796,
+        1264.1927466396146
+      ],
+      "anchorLocalPx": [
+        151.3101699213796,
+        73.1927466396146
+      ],
+      "anchorNative": [
+        33147.03047341419,
+        34919.8575927248
+      ],
+      "anchorResearch": [
+        -108.96952658580994,
+        847.8575927248021
+      ],
+      "sourceRectPx": {
+        "x": 495,
+        "y": 1191,
+        "width": 295,
+        "height": 286
+      },
+      "parts": [
+        {
+          "partId": "receiver-02-body",
+          "file": "receiver-02-body.png",
+          "sha256": "c7924677d2f476e9af1023b3018e68017060f3d8245f1962520640b06455bea6",
+          "sizePx": [
+            295,
+            286
+          ],
+          "sourceRectPx": {
+            "x": 495,
+            "y": 1191,
+            "width": 295,
+            "height": 286
+          },
+          "anchorLocalPx": [
+            151.3101699213796,
+            73.1927466396146
+          ],
+          "role": "body",
+          "depth": {
+            "layer": "receiver-back",
+            "sortNativeY": 34919.8575927248,
+            "occlusion": "rear before ball; front after ball while its source billboard overlaps receiver sourceRect"
+          },
+          "alpha": "straight",
+          "provenance": {
+            "kind": "extracted",
+            "method": "original source RGB; artist silhouette and P1 opening contour guide the exclusive front/rear alpha split"
+          }
+        },
+        {
+          "partId": "receiver-02-foreground",
+          "file": "receiver-02-foreground.png",
+          "sha256": "d7581bffeba50c438f7461e51233bcdeb24cb155599fe295367d0bb764924f7a",
+          "sizePx": [
+            295,
+            286
+          ],
+          "sourceRectPx": {
+            "x": 495,
+            "y": 1191,
+            "width": 295,
+            "height": 286
+          },
+          "anchorLocalPx": [
+            151.3101699213796,
+            73.1927466396146
+          ],
+          "role": "foreground",
+          "depth": {
+            "layer": "receiver-front",
+            "sortNativeY": 34919.8575927248,
+            "occlusion": "rear before ball; front after ball while its source billboard overlaps receiver sourceRect"
+          },
+          "alpha": "straight",
+          "provenance": {
+            "kind": "extracted",
+            "method": "original source RGB; artist silhouette and P1 opening contour guide the exclusive front/rear alpha split"
+          }
+        }
+      ]
+    },
+    {
+      "objectId": "receiver-03",
+      "nativeKind": "bucket",
+      "anchorSourcePx": [
+        914.7204931038691,
+        1267.0024411082632
+      ],
+      "anchorLocalPx": [
+        139.7204931038691,
+        73.00244110826316
+      ],
+      "anchorNative": [
+        33381.51442545501,
+        34923.90364051326
+      ],
+      "anchorResearch": [
+        125.5144254550105,
+        851.9036405132574
+      ],
+      "sourceRectPx": {
+        "x": 775,
+        "y": 1194,
+        "width": 296,
+        "height": 291
+      },
+      "parts": [
+        {
+          "partId": "receiver-03-body",
+          "file": "receiver-03-body.png",
+          "sha256": "69cbec3dce57285f43e93eccab4517a581bf8dbaea1a96cd1708c9ba162e1bb2",
+          "sizePx": [
+            296,
+            291
+          ],
+          "sourceRectPx": {
+            "x": 775,
+            "y": 1194,
+            "width": 296,
+            "height": 291
+          },
+          "anchorLocalPx": [
+            139.7204931038691,
+            73.00244110826316
+          ],
+          "role": "body",
+          "depth": {
+            "layer": "receiver-back",
+            "sortNativeY": 34923.90364051326,
+            "occlusion": "rear before ball; front after ball while its source billboard overlaps receiver sourceRect"
+          },
+          "alpha": "straight",
+          "provenance": {
+            "kind": "extracted",
+            "method": "original source RGB; artist silhouette and P1 opening contour guide the exclusive front/rear alpha split"
+          }
+        },
+        {
+          "partId": "receiver-03-foreground",
+          "file": "receiver-03-foreground.png",
+          "sha256": "34bc49247a37e430f29fe4e2d156323e29d9fe5cb900ff27852f528e20966004",
+          "sizePx": [
+            296,
+            291
+          ],
+          "sourceRectPx": {
+            "x": 775,
+            "y": 1194,
+            "width": 296,
+            "height": 291
+          },
+          "anchorLocalPx": [
+            139.7204931038691,
+            73.00244110826316
+          ],
+          "role": "foreground",
+          "depth": {
+            "layer": "receiver-front",
+            "sortNativeY": 34923.90364051326,
+            "occlusion": "rear before ball; front after ball while its source billboard overlaps receiver sourceRect"
+          },
+          "alpha": "straight",
+          "provenance": {
+            "kind": "extracted",
+            "method": "original source RGB; artist silhouette and P1 opening contour guide the exclusive front/rear alpha split"
+          }
+        }
+      ]
+    },
+    {
+      "objectId": "receiver-04",
+      "nativeKind": "bucket",
+      "anchorSourcePx": [
+        1193.5527369826436,
+        1243.8955530450858
+      ],
+      "anchorLocalPx": [
+        154.55273698264364,
+        78.89555304508576
+      ],
+      "anchorNative": [
+        33627.12626589451,
+        34890.46257444717
+      ],
+      "anchorResearch": [
+        371.12626589451247,
+        818.4625744471705
+      ],
+      "sourceRectPx": {
+        "x": 1039,
+        "y": 1165,
+        "width": 299,
+        "height": 291
+      },
+      "parts": [
+        {
+          "partId": "receiver-04-body",
+          "file": "receiver-04-body.png",
+          "sha256": "ee94c3e405aed1530a40f3d93b391295ef58a1c4a241d6e8f0e48bba4205981b",
+          "sizePx": [
+            299,
+            291
+          ],
+          "sourceRectPx": {
+            "x": 1039,
+            "y": 1165,
+            "width": 299,
+            "height": 291
+          },
+          "anchorLocalPx": [
+            154.55273698264364,
+            78.89555304508576
+          ],
+          "role": "body",
+          "depth": {
+            "layer": "receiver-back",
+            "sortNativeY": 34890.46257444717,
+            "occlusion": "rear before ball; front after ball while its source billboard overlaps receiver sourceRect"
+          },
+          "alpha": "straight",
+          "provenance": {
+            "kind": "extracted",
+            "method": "original source RGB; artist silhouette and P1 opening contour guide the exclusive front/rear alpha split"
+          }
+        },
+        {
+          "partId": "receiver-04-foreground",
+          "file": "receiver-04-foreground.png",
+          "sha256": "1a95b3e080f0f2005e96927e3e366d4df13d280a07985ce2621b811eddaa4b7d",
+          "sizePx": [
+            299,
+            291
+          ],
+          "sourceRectPx": {
+            "x": 1039,
+            "y": 1165,
+            "width": 299,
+            "height": 291
+          },
+          "anchorLocalPx": [
+            154.55273698264364,
+            78.89555304508576
+          ],
+          "role": "foreground",
+          "depth": {
+            "layer": "receiver-front",
+            "sortNativeY": 34890.46257444717,
+            "occlusion": "rear before ball; front after ball while its source billboard overlaps receiver sourceRect"
+          },
+          "alpha": "straight",
+          "provenance": {
+            "kind": "extracted",
+            "method": "original source RGB; artist silhouette and P1 opening contour guide the exclusive front/rear alpha split"
+          }
+        }
+      ]
+    }
+  ],
+  "remaining": [
+    "needs real full Pixi scene confirmation; no final Art/QA PASS",
+    "shadow opacity is restored/estimated, not exact decomposition of original floor lighting",
+    "fine leaf/feather/basket silhouette and receiver entry remain visual QA targets",
+    "side foreground bands include source scenery outside the playable interior; not independently movable snake sprites",
+    "hidden rear 3D surfaces are not invented; original camera/placement is fixed and only required hidden floor/backdrop restored"
+  ],
+  "sceneParts": [
+    {
+      "partId": "rail-left",
+      "file": "rail-left.png",
+      "sha256": "8c4aa1a23b74b9b9eba1d17e1cc52aaf06741da3be46e38775dccd4b13661fd8",
+      "sizePx": [
+        444,
+        968
+      ],
+      "sourceRectPx": {
+        "x": 0,
+        "y": 176,
+        "width": 444,
+        "height": 968
+      },
+      "anchorLocalPx": [
+        222.0,
+        968
+      ],
+      "role": "foreground",
+      "depth": {
+        "layer": "scene-front",
+        "occlusion": "fixed source-space foreground alpha, draw after depth-sorted bodies/ball and before receiver-front; inverse-view uses P1 source mesh"
+      },
+      "alpha": "straight",
+      "provenance": {
+        "kind": "extracted",
+        "method": "original RGB architectural foreground band; outside-playfield scenery retained with the band, not a movable independent rail",
+        "sourceOutlinePx": [
+          [
+            0,
+            180
+          ],
+          [
+            222,
+            180
+          ],
+          [
+            232,
+            205
+          ],
+          [
+            283,
+            223
+          ],
+          [
+            326,
+            237
+          ],
+          [
+            355,
+            260
+          ],
+          [
+            385,
+            278
+          ],
+          [
+            407,
+            323
+          ],
+          [
+            420,
+            357
+          ],
+          [
+            432,
+            380
+          ],
+          [
+            438,
+            409
+          ],
+          [
+            427,
+            438
+          ],
+          [
+            401,
+            461
+          ],
+          [
+            363,
+            480
+          ],
+          [
+            343,
+            507
+          ],
+          [
+            336,
+            540
+          ],
+          [
+            352,
+            564
+          ],
+          [
+            392,
+            578
+          ],
+          [
+            422,
+            596
+          ],
+          [
+            440,
+            627
+          ],
+          [
+            440,
+            660
+          ],
+          [
+            428,
+            696
+          ],
+          [
+            402,
+            721
+          ],
+          [
+            365,
+            740
+          ],
+          [
+            328,
+            759
+          ],
+          [
+            291,
+            786
+          ],
+          [
+            267,
+            823
+          ],
+          [
+            256,
+            855
+          ],
+          [
+            261,
+            902
+          ],
+          [
+            286,
+            943
+          ],
+          [
+            318,
+            968
+          ],
+          [
+            345,
+            1001
+          ],
+          [
+            363,
+            1028
+          ],
+          [
+            358,
+            1055
+          ],
+          [
+            336,
+            1076
+          ],
+          [
+            311,
+            1081
+          ],
+          [
+            296,
+            1107
+          ],
+          [
+            0,
+            1140
+          ]
+        ]
+      },
+      "anchorSourcePx": [
+        222.0,
+        1144
+      ],
+      "anchorNative": [
+        32761.64665858372,
+        34741.39781121478
+      ]
+    },
+    {
+      "partId": "rail-right",
+      "file": "rail-right.png",
+      "sha256": "8756e76b2730edcc089156ab10ac1e32084cbe05996234085aadfdf471058543",
+      "sizePx": [
+        457,
+        978
+      ],
+      "sourceRectPx": {
+        "x": 1079,
+        "y": 176,
+        "width": 457,
+        "height": 978
+      },
+      "anchorLocalPx": [
+        228.5,
+        978
+      ],
+      "role": "foreground",
+      "depth": {
+        "layer": "scene-front",
+        "occlusion": "fixed source-space foreground alpha, draw after depth-sorted bodies/ball and before receiver-front; inverse-view uses P1 source mesh"
+      },
+      "alpha": "straight",
+      "provenance": {
+        "kind": "extracted",
+        "method": "original RGB architectural foreground band; outside-playfield scenery retained with the band, not a movable independent rail",
+        "sourceOutlinePx": [
+          [
+            1536,
+            180
+          ],
+          [
+            1288,
+            180
+          ],
+          [
+            1270,
+            202
+          ],
+          [
+            1210,
+            220
+          ],
+          [
+            1168,
+            236
+          ],
+          [
+            1137,
+            249
+          ],
+          [
+            1124,
+            271
+          ],
+          [
+            1120,
+            300
+          ],
+          [
+            1131,
+            326
+          ],
+          [
+            1163,
+            344
+          ],
+          [
+            1190,
+            370
+          ],
+          [
+            1199,
+            400
+          ],
+          [
+            1185,
+            434
+          ],
+          [
+            1178,
+            467
+          ],
+          [
+            1186,
+            499
+          ],
+          [
+            1213,
+            527
+          ],
+          [
+            1235,
+            547
+          ],
+          [
+            1267,
+            562
+          ],
+          [
+            1289,
+            588
+          ],
+          [
+            1304,
+            621
+          ],
+          [
+            1308,
+            650
+          ],
+          [
+            1302,
+            677
+          ],
+          [
+            1281,
+            706
+          ],
+          [
+            1270,
+            737
+          ],
+          [
+            1270,
+            776
+          ],
+          [
+            1279,
+            808
+          ],
+          [
+            1295,
+            836
+          ],
+          [
+            1304,
+            863
+          ],
+          [
+            1295,
+            903
+          ],
+          [
+            1278,
+            927
+          ],
+          [
+            1251,
+            950
+          ],
+          [
+            1238,
+            985
+          ],
+          [
+            1226,
+            1007
+          ],
+          [
+            1228,
+            1043
+          ],
+          [
+            1253,
+            1064
+          ],
+          [
+            1281,
+            1074
+          ],
+          [
+            1295,
+            1110
+          ],
+          [
+            1536,
+            1150
+          ]
+        ]
+      },
+      "anchorSourcePx": [
+        1307.5,
+        1154
+      ],
+      "anchorNative": [
+        33737.88017091588,
+        34756.65791177627
+      ]
+    },
+    {
+      "partId": "near-platform-front",
+      "file": "near-platform-front.png",
+      "sha256": "cb7d45e7e72cb417f6fe234ebd2cd336b585ebcb16a277f8c45eba9c78200ada",
+      "sizePx": [
+        974,
+        107
+      ],
+      "sourceRectPx": {
+        "x": 308,
+        "y": 1085,
+        "width": 974,
+        "height": 107
+      },
+      "anchorLocalPx": [
+        487.0,
+        29
+      ],
+      "role": "foreground",
+      "depth": {
+        "layer": "scene-front",
+        "occlusion": "fixed source-space foreground alpha, draw after depth-sorted bodies/ball and before receiver-front; inverse-view uses P1 source mesh"
+      },
+      "alpha": "straight",
+      "provenance": {
+        "kind": "extracted",
+        "method": "original RGB architectural foreground band; outside-playfield scenery retained with the band, not a movable independent rail",
+        "sourceOutlinePx": [
+          [
+            312,
+            1094
+          ],
+          [
+            420,
+            1106
+          ],
+          [
+            600,
+            1116
+          ],
+          [
+            790,
+            1123
+          ],
+          [
+            970,
+            1118
+          ],
+          [
+            1160,
+            1102
+          ],
+          [
+            1240,
+            1088
+          ],
+          [
+            1278,
+            1124
+          ],
+          [
+            1184,
+            1160
+          ],
+          [
+            1004,
+            1177
+          ],
+          [
+            774,
+            1188
+          ],
+          [
+            540,
+            1175
+          ],
+          [
+            360,
+            1158
+          ],
+          [
+            312,
+            1139
+          ]
+        ]
+      },
+      "anchorSourcePx": [
+        795.0,
+        1114
+      ],
+      "anchorNative": [
+        33277.77611790168,
+        34695.15134655698
+      ]
+    }
+  ],
+  "ball": {
+    "body": {
+      "file": "ball-body.png",
+      "sha256": "bf510895011a6a0a69896003517d242cd5a104e9c1ea37431895ca5bdf196b89",
+      "sizePx": [
+        256,
+        256
+      ],
+      "alpha": "straight",
+      "contentBoundsPxAlpha16": [
+        28,
+        28,
+        228,
+        229
+      ],
+      "centerLocalPx": [
+        128.0,
+        128.5
+      ],
+      "contentRadiusPx": [
+        100.0,
+        100.5
+      ],
+      "provenance": {
+        "kind": "generated",
+        "rawSha256": "06fdab4f271496d1e934df1bfd7b8d71e43d23ba1af4d973296de34fc6a8ed34",
+        "tool": "built-in image_gen",
+        "processing": "uniform downsample only; actual generated alpha retained"
+      },
+      "role": "body",
+      "depth": {
+        "layer": "body",
+        "sortNativeY": "simulation ball.pos.y"
+      }
+    },
+    "shadow": {
+      "file": "ball-shadow.png",
+      "sha256": "e172a8aee8446d8083680e20fd484f95c48daa823174415d60e3a99b6799b516",
+      "sizePx": [
+        256,
+        256
+      ],
+      "alpha": "straight",
+      "contentBoundsPxAlpha16": [
+        28,
+        102,
+        228,
+        154
+      ],
+      "centerLocalPx": [
+        128.0,
+        128.0
+      ],
+      "contentRadiusPx": [
+        100.0,
+        26.0
+      ],
+      "provenance": {
+        "kind": "generated",
+        "rawSha256": "44f6601746becbc946cdc2d6b9eb9c1fcac33eb65b8a1c72144715dec3158805",
+        "tool": "built-in image_gen",
+        "processing": "uniform downsample only; actual generated alpha retained"
+      },
+      "role": "ground-shadow",
+      "depth": {
+        "layer": "ground"
+      },
+      "opacityMultiplier": 0.42
+    },
+    "nativeRadius": 16,
+    "placement": {
+      "bodyCenter": "P = project(nativeToSource, simulation ball.pos); no additional position offset or radius change",
+      "sourceRadiusPx": "R = nativeRadius / (H[2][0]*x + H[2][1]*y + H[2][2]); this H has H00=1, H10=0",
+      "bodyScale": "uniform scale R / body.contentRadiusPx[0], pivot body.centerLocalPx; keep the generated circular sprite",
+      "shadowCenterSourcePx": "P + [-0.55*R, +0.60*R]",
+      "shadowContentHalfSizeSourcePx": "[1.12*R, 0.42*R]; scale content bounds, not transparent canvas",
+      "shadowLayer": "ground, once, before bodies/ball; existing foreground alpha occludes it",
+      "depth": "same simulation ball.pos.y as diagnostic; no physics or PRNG effects",
+      "inverseView": "form source-space actor quad with these rules, transform its vertices by P1 sourceToNative; do not treat raster sphere as a floor circle"
+    },
+    "render": {
+      "radiusRule": "native-horizontal-projective-derivative",
+      "bodySourceCenterOffsetR": [
+        0,
+        0
+      ],
+      "bodyUniformScaleRule": "R / body.contentRadiusPx[0]",
+      "shadowSourceCenterOffsetR": [
+        -0.55,
+        0.6
+      ],
+      "shadowSourceContentHalfSizeR": [
+        1.12,
+        0.42
+      ],
+      "sourceToNativeQuad": true,
+      "noPhysicsEffects": true
+    }
+  }
+}

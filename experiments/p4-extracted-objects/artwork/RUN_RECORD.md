@@ -81,3 +81,115 @@ Raw originals на C не удалены; raw-копии на E побайтно
 и края восстановленных теней, seam foreground при частичном перекрытии
 шарика, точная загрузка straight alpha в consumer. Ball/shadow ещё не
 изготовлены; полная нарезка не начата до подтверждения маленького стыка.
+
+## 2026-10-28 — полный комплект после реального малого стыка
+
+Lead передал подтверждение фактического Pixi-стыка starter. Прочитаны exact
+`d0634841896beb7a5870356263b328fdfaac26f3` consumer `ART_INTEGRATION.md` и
+`BUILDER_STATE.md`; просмотрены кадры loaded/parts-off, wood tick615 и receiver
+tick2385 из runtime Builder. Это чтение результата P4; другие опыты не читались.
+Реальная загрузка/регистрация starter подтверждены; полное попадание в
+receiver-01 и полный Art/QA PASS этим не подтверждены. Отклонённый push Builder
+не повторялся и не объявляется доставкой.
+
+### Причина и исправление wood
+
+Starter использовал кусок полного generated frame с отличающимися тоном и
+геометрией floor seams; переход по маске был около 2px. В новом фоне каждая
+область удалённого препятствия/тени согласована с исходной границей методом
+Poisson NORMAL_CLONE и переходом 5px. Он переносит градиенты чистого пола,
+а не сохраняет контур исходного предмета. Тело wood-01, его anchor и геометрия
+не менялись. Border restoration остаётся под своей исходной foreground alpha,
+чтобы сгенерированный цвет не вытекал на соседний исходный пол.
+
+### Три генерации полного продолжения
+
+Built-in `image_gen`, без CLI/API fallback. Все tool-managed C originals
+сохранены. E-копии raw находятся в собственных runtime full-v01/full-v02;
+copy2, bytes/SHA проверены, записи — raw/copy-manifest.json и provenance пакета.
+Model/seed/sampler/quality генератора не раскрыты и не выдумываются.
+
+1. Empty restoration plate, edit исходного JPG, transparent_background=false,
+   output `exec-e6f738de-e5c7-41c2-9e5e-26ddc4342610.png`, 1254×1254.
+   Генерация равномерно приведена к 1536² и используется только в записанных
+   областях локального восстановления. RGB объектов из неё не берутся.
+
+Точный prompt:
+
+```text
+Use case: precise-object-edit. Edit target: supplied jungle game board. Produce an EMPTY RESTORATION PLATE for extraction of the existing foreground and obstacles, not a new game board. Keep the EXACT square full-frame camera, platform shape, size, three entrance temples, landscape, light from upper right, warm stone floor and perspective. Remove ALL 25 small freestanding objects from the stone playing floor: every red flower on a round mossy base, every turquoise leaf-fan on a base, every frog statue on a base, and every teal-and-gold wooden cylindrical peg. Remove ALL their cast/contact shadows too. The entire playing floor must be empty uninterrupted matching stone paving with natural seams and moss; no pegs, no round bases, no round marks, no leftover shadows. Also remove all FOUR hanging basket receptacles below the platform including their rims, dark holes, woven bodies and feathers; restore the distant jungle/sky behind them. Preserve suspension ropes and vines wherever already visible. Remove only the large winding turquoise feathered SNAKE RAILS on the left and right edge of the playing floor, including their large near-end snake heads; restore plausible continuing stone ledge, wood/rope support or vegetation behind their silhouettes. Do not remove the entrance temples or the structural platform itself. Preserve everything else as closely as possible. We will use only locally masked restored pixels from this image behind the source-extracted sprites, so do not relocate architecture or change the floor plane. No ball, no text, no diagrams, no added furniture, no replacement obstacle set.
+```
+
+2. Own raster ball, исходный JPG только как style/light reference,
+   transparent_background=true, output
+   `exec-f9d50b3c-2c0a-405e-ad69-884ff688bc0e.png`, 1280×1280.
+   Сохранена alpha; только равномерное уменьшение до 256². Отдельной cast shadow
+   в этом файле нет. Радиус задаётся общим r16 и принятой P1, не размером canvas.
+
+Точный prompt:
+
+```text
+Use case: stylized-concept. Asset type: ONE isolated volumetric raster game ball with genuine transparent background. The supplied jungle board is STYLE AND LIGHTING REFERENCE ONLY; do not redraw the board. Make a single perfectly round smooth warm pale amber-gold ceramic/stone sphere, compatible with the richly painted 3D jungle temple game art. Clear rounded volume, subtle natural material texture, warm soft highlight from upper right, gentle olive-brown shading on lower left and underside. Keep the silhouette circular and clean for a small gameplay sprite. One centered ball fills about 75 percent of the square canvas with transparent padding all around. No cast shadow or ground plane in this asset, because its shadow is a separate layer. No rings, pedestal, face, feathers, text, outline, symbols, glow, watermark, or other objects. Output actual alpha transparency, not a checkerboard.
+```
+
+3. Own separate ball shadow, без reference, transparent_background=true, output
+   `exec-fe609b28-2a60-4548-aec2-2ec4826c1764.png`, 1280×1280.
+   Сохранена исходная alpha; равномерное уменьшение до 256². Генератор дал
+   пик alpha216 вместо запрошенного около35%; в manifest явно задан display
+   opacityMultiplier0.42 (пик≈91), исходная alpha не переписывалась.
+
+Точный prompt:
+
+```text
+Use case: stylized-concept. Asset type: ONE simple soft cast/contact shadow sprite, actual transparent RGBA. Create a single centered horizontal oval shadow for a small round ball on pale jungle-temple stone. Dark muted olive-brown color, semi-transparent, densest at center about 35 percent opacity, smoothly fading to fully transparent at the edge, no solid black border, no highlights. Oval long axis horizontal, width about 70 percent of square canvas, height about 30 percent. Very simple soft blurred elliptical shadow only. No ball, floor, pedestal, background, text, symbols, checkerboard or other objects. Keep enough fully transparent padding on all four sides. It will be scaled and offset separately beneath a round raster ball.
+```
+
+### Значимая первая неудача полного прохода и коррекции
+
+Первый full-v01 имел потерю светлой крышки wood-07, отсечённый лепесток
+flower-04 с остатком на фоне, лишнюю подложку у корзин и остаточные внутренние
+края rail. Он не передавался как готовый комплект. Полный первоначальный
+пакет сохранён в собственном runtime:
+`full-v01/rejected-pass-01/`, manifest SHA256
+`3cff1415b6d90334fbcdd50599f90b2a6f2321c3339cd66cace830323bf28d3e`.
+Исходная неудачная статическая сборка — `full-v01/evidence/reassembled-no-ball.png`.
+
+Full-v02: у столбиков добавлены явные foreground seeds светлых крышек;
+красные лепестки помечены объектом; removal region опирается на консервативный
+исходный контур, а не только на уточнённую alpha. Для wood-07 крышка дополнена
+по просмотренному source crop с координатной сеткой. У остальных корзин
+исходная silhouette уточнена GrabCut, без генерации новых body pixels.
+Край фиксированных боковых полос дополнен исходными turquoise rail tips
+с исключением областей pegs. Повторной генерации набора или скрытого reroll нет.
+Существенные comparison sheets/кропы сохранены в runtime evidence, компактное
+сравнение первого дефекта и исправления включено в пакет.
+
+### Состав и предел проверки full-v02
+
+25 pin body + 25 ground-shadow, 4 receiver rear/front = 58 частей;
+3 static source foreground bands; один generated ball и отдельная shadow.
+Foreground bands содержат внешнюю исходную декорацию вместе с бортами и
+не выдаются за независимые перемещаемые snake-объекты. Config, физическое ядро,
+проекция, native/source anchors, r16 и PRNG не менялись. Body flower-01/wood-01
+и обе части receiver-01 переиспользованы побайтно из сохранённого starter.
+
+Собственная проверка: hashes, source dimensions, 29 anchors/P1 inverse,
+источник RGB тел/foreground, размеры/alpha PNG, полнота ID, просмотр чистой
+подложки, контактного листа и статической обратной сборки. Preview шара
+поставлен только в принятую drop-точку; траектория не придумывалась.
+Это не динамический или независимый QA. Тонкие края, естественность теней,
+частичные перекрытия и реальный вход в корзины подтверждаются в полном consumer.
+
+Ресурсы повторно перед обработкой: свободно RAM16,06GiB, CPU5%,
+C/D/E15,50/16,31/16,45GiB. Перед последней коррекцией:
+RAM18,41GiB, CPU9%, C/D/E15,20/16,31/16,41GiB. Проходы последовательные,
+ожидаемый пик до1GiB RAM/0,5GiB файлов; дефицита или порогов E не достигнуто.
+Новые чаты/сотрудники/браузеры/серверы не запускались, чужие файлы не менялись.
+
+Независимое чтение сохранённого пакета подтвердило 61 declared RGBA part,
+2 actor RGBA, размеры/SHA/alpha, полноту object IDs P1 и исходные RGB у
+36 source body/foreground parts. Все 11 indexed starter-файлов неизменны;
+обе части receiver-01 также побайтно сохранены в новом пакете. Статические
+сравнение wood и preview в принятой drop-точке просмотрены. Начальный radius
+по H/r16 равен14,0742176996px. В manifest тень шара имеет явный alpha multiplier.
+Финальная полная сцена Pixi/QA этим чтением не подтверждается.
