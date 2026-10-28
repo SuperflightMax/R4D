@@ -6,7 +6,13 @@
 
 Основание: Max28октября12:38UTC, `Sentinel_9809efe64b3881918b49cd3b4c1237a8`, через CTO. Публикуется статический отчёт accepted P1 exact `4b47db04c7140ebf88f69b91faa0b790d46f22ec`, subtree `experiments/p1-collider-mapping/clean-repeat-01/`. P1 не перезапускается; это не третий research slot. P2 frozen04/df309 сохраняются без rebuild/reQA.
 
-## Exact PUBLIC intent: Root review пройден, ожидается новый CTO token
+## Exact PUBLIC intent: CTO gate выдан, один execution handoff отправлен
+
+CTO лично reviewed exact ed33072/оба QA/intent/plan/template/sealed/Root119checks и выдал один single-use token в2026-10-28T14:53:26Z. Literal token хранится только в private operational communication/evidence, в Git и reportpage не записывается. Второй token для этого шага не запрашивать. Все immutable bindings и полный declared write-set из EXECUTION_PLAN сохранены; CTO отдельно освобождает окно после actual delivery/postchecks/docs/render/owned-lock completion.
+
+Actual новый Lead turn `01a18303-ff95-7ea3-8e86-29c71bd14ac0`: confirmed cleaned330729ff416982b4797ac1515050265c398c84, intent/plan/sealed hashes повторно совпали. Fresh read_thread показал latest Builder prep01a182d8-3df4-7001-81b7-e91d39117e88 completed и отсутствие execution-turn. Сделан ровно один successful execution send (isError=false) тому же Builder/ReleaseEngineer. Его actual new turn `01a18305-98b9-70a3-9dc3-732d515f4079` inProgress; первый fresh guard ещё ожидается. Новых staff/worktree/model/effort/device нет, P4 не будили.
+
+Разрешение не утверждает switch/HTTP/render PASS. Перед ПЕРВОЙ записью, включаяlock, обязательны fresh host+VPS resources/совокупныйpeak и полные raw PUBLIC guards/docs/vhost/MIME/root/catalog/P2body/files+dirs/hash/modes/owners/8absenttargets/ancestors; любой drift или unowned target → STOP к CTO без silentadaptation/записи. Затем phase-aware guards под lock и перед staging/rename/switch/docs, fresh PUBLIC rollback snapshot. Token не освобождается самим switch или Lead. VQA назначается адресно только после actual serving exactbytes; localfiledenial не обходится. P2frozen04/df309 и UGH не трогать.
 
 Builder actual intent turn `01a182d8-3df4-7001-81b7-e91d39117e88` completed; source handoff `f0c172f415731bdf1c2f31f9ff8769570eaa8ab9` интегрирован Lead какe8d20e7. Builder checkout clean/остановлен, server_write=false. Новый runtime `E:/R4D/perspective/p2-runtime/output/p1-static-report-release-intent-01` создан в свободном namespace; source/candidate01 не менялись.
 
