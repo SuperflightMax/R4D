@@ -2,7 +2,7 @@
 
 ## Актуально после outage: PUBLIC Review и отдельный accepted-P1 static report
 
-**C05 PUBLIC served, focused actual QA assigned sequentially; docs/cleanup/window CLOSED.**
+**C05 PUBLIC served, оба bounded actual QA reviewed; docs/cleanup/window CLOSED.**
 Same Builder completed/clean serving commit `b8b87b8fb3a897d13123501caf39e4ebc9db07d5`:
 single switch19:02:30.622116UTC, all16HTTP200/bytes/SHA/MIME/headers first pass19:02:34.797534,
 6JS application/javascript;563files/81dirs/90775981bytes/treee0ed126b… planned exact,
@@ -19,13 +19,21 @@ paused94–96 physical/RNG invariance, stable dimensions, no black in captured20
 viewport frames, hint clears/restores and ordinary playback observed. Download/error
 owners live UNVERIFIED; no universal blackfix/Art/P2 PASS. TQA surfaceReleased19:18:01.434UTC,
 own viewport/priorvisibility restored/tabclosed, cleanup evidence verified. Then ONE
-VQA send after fresh idle C04preflight; new actual turn `01a183f6-2614-7232-a67e-82872b353316`
-active, first completed action exec-3fb48ebc…/clean1ff6280/current skill/resources.
-Focused visual delta pending. Known paused94–96/200%/Fit only, no fullmatrix/seedhunt/
-GPU/device expansion. Same inode12 lock
+VQA send after fresh idle C04preflight; actual turn `01a183f6-2614-7232-a67e-82872b353316`
+completed/clean `4b9aa77`/Lead`3f38cb5`, first completed exec-3fb48ebc…/clean1ff6280.
+Full report9692/SHA09870b90… read, index2017/SHAa15f1490… and all11inputs verified,
+Root30checks passed and raw95/200+Fit220+narrow220 viewed. BLACK_200_NOT_REPRODUCED_IN_THIS_RUN,
+VISUAL_LIMITATIONS_REMAIN: captured94/95/96 and returnFit96 show scene; finecontact/
+partialocclusion/ballshadowgrounding unaccepted, narrow stage scrollbars remain,
+4occluders only/other21+rails+baskets unaccepted. API lookup exact primary TypeError
+performance.getEntriesByType on undefined preserved in own VQA audit; ordinary
+scope/binding, no explicitdenial/product/race inference; Rootread confirms failedstatus,
+primaryreason not returned to Root. VQA surfaceReleased19:31:30.659UTC, paused220,
+viewport/priorvisibility restored/own tab4closed. No further browser tests. Known
+paused94–96/200%/Fit only, no fullmatrix/seedhunt/GPU/device expansion. Same inode12 lock
 HELD/writers stopped. **Docs/cleanup only on further CTO message, window release
 explicit CTO only**, even after QA. Frozen0367/intent05/C04 immutable; no new build,
-upload/switch/hotfix. Actual black200/FullTechnical/Art/P2 closure unverified.
+upload/switch/hotfix. Universal black200fix/FullTechnical/Art/P2 closure unverified.
 Full [C05 checkpoint and limitations](../experiments/p2-free-approach/LEAD_DELIVERY_05_CHECKPOINT.md).
 
 Ниже — история prewrite и предыдущих фаз; текущее состояние выше имеет приоритет.

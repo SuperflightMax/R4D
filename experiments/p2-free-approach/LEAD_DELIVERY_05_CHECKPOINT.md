@@ -1,6 +1,6 @@
 # P2 candidate05 — малая разрешённая UI-итерация
 
-## Текущее состояние: C05 PUBLIC served, actual TQA reviewed, focused VQA идёт, lock held
+## Текущее состояние: C05 PUBLIC served, оба bounded actual QA reviewed, docs pending/lock held
 
 **P2_C05_SERVED_AWAIT_CTO_QA_DOCS_PENDING_LOCK_HELD**. Same Builder execution
 `01a183dc-82ff-7813-aef3-fadf6dc3db35` completed/clean; serving handoff original
@@ -52,15 +52,53 @@ TQA explicitly surfaceReleased19:18:01.434UTC: paused37, own viewport reset,
 priorvisibility=false restored, own tab2closed; actual cleanup/API audit verified.
 Only after this, fresh VQA preflight completed C04/idle1ff6280, ONE send
 `exec-69efb762-12a5-4779-9d47-fd57baa05df4` completed1820ms; NEW actual VQA turn
-`01a183f6-2614-7232-a67e-82872b353316` inProgress. First completed assigned action
+`01a183f6-2614-7232-a67e-82872b353316` completed/clean. First completed assigned action
 `exec-3fb48ebc-5dd3-4d15-b2e5-2df97200e5c4` exit0: ownworktree/clean1ff6280/branch,
-current computer-use skill/resources. Focused actual visual delta pending;
+current computer-use skill/resources. First own PUBLIC05 open
+`call_281583aad24c45f3b3366841eb591714` completed. Focused actual visual delta complete;
 no second permission gate between roles per explicit CTO assignment.
+
+CTO accepted exact limited TQA94e125 report after own Git/hash/image review;
+duplicate TQA tests not requested. During VQA, CTO noted metadata lookup failure
+`call_b4d57396065446adb8e2d26c7541e9e9`; primary reason was unavailable in his
+read_thread result. Lead forwarded only an audit-detail instruction to the same
+running VQA: preserve own primary error verbatim/classify honestly, no extra test,
+retry or scope expansion, no inferred product/policy/race cause. Final own VQA audit
+preserves `TypeError: Cannot read properties of undefined (reading 'getEntriesByType')`:
+performance undefined in read-only DOM evaluation scope, ordinary API scope/binding
+error, no explicit policy denial in own primary result. Failed lookup not repeated;
+normal known-public metadata navigation confirmed candidate05/source0367. Root
+read_thread independently confirmed failed call status but did not return primary
+text; the exact reason is attributed to VQA own saved audit, not invented by Lead.
+
+VQA original **`4b9aa770d735f2dba49c2752c942105fa979bbae`** / Lead **`3f38cb5`**,
+[full report](qa/visual/CANDIDATE_05_PUBLIC_VISUAL_DELTA_01.md)9692bytes/SHA
+`09870b9083221edbd2e47febf3afa4fb633bc7f5cca0b7d9ef60b366db9b7ef3` fully read.
+EVIDENCE_HASHES2017/SHA`a15f1490acda990393de6bb55234b28679da366257c341e05eee3f1b22fadf25`;
+PUBLIC_VISUAL_OBSERVATIONS38113/SHA`12e590520c95f9238945b970f78c96ba9bb018c7bc607fff4769a04003374ad3`.
+Root verified all11indexed files/full12file1212898byte packet, focused paused
+state/dimension pairs, same96 returnFit, same220 desktop/narrow, provenance,
+cleanup and exact failure audit: **30 checks passed**. Own receipt2582/SHA
+`65b6371808734c517c80deefa41051f153168c9975d21a8400b435b9681839c0`.
+Root viewed raw95/200, Fit220 and narrow220; no new browser/product/remote execution.
+
+**BLACK_200_NOT_REPRODUCED_IN_THIS_RUN / VISUAL_LIMITATIONS_REMAIN**: VQA captured
+94/95/96 at200% and returnFit96 with scene visible, brief ordinary same-seed
+motion and one390×844 sample only. No continuous/fine contact/partial-occlusion/
+ball-shadow-grounding acceptance; Fit/narrow ball and shadow small, internal narrow
+stage scrollbars remain, no global page horizontal overflow observed in that sample.
+Current4occluders only, remaining21/rails/baskets unaccepted; no winning-seed hunt,
+GPU/device/native/Android/gestures/download/visibility expansion or FullArt/P2PASS.
+VQA explicitly **surfaceReleased19:31:30.659UTC**, paused220, viewportreset1280×720,
+priorvisibility=false restored, onlyown tab4closed; no browser return after release.
+Both QA writers done/clean. Root fresh19:36:15 hostfree16.040GiB/CPU2%, C14.328,
+D16.288/E16.230GiB, own0.1GiB/1MiB+concurrent4GiB/2GiB allowance healthy.
 
 **Owned lock inode12 HELD, writers stopped. Docs/cleanup/window release CLOSED
 until further addressed CTO continuation, including after both QA reports.**
 No duplicate build/upload/switch/hotfix; no new source/config/art/clock/core changes.
-Actual05 black200 fix/visual verdict/Full Technical/Art/P2 closure remain unverified.
+Bounded actual05 verdicts are recorded; universal black200 fix and Full Technical/
+Art/P2 closure remain unverified. Next step requires further addressed CTO message.
 Event waits with cursors replace active polling; no optional browser tests after release.
 
 ## История: gate, execution dispatch и первый prewrite guard
