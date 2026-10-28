@@ -3,6 +3,7 @@ import { readFileSync, writeFileSync, mkdirSync, copyFileSync, existsSync, readd
 import path from 'node:path';
 import { pathToFileURL } from 'node:url';
 import { root, pins, verifyInputs, verifyCore, canonicalLF, sha256 } from './pins.mjs';
+import { scanBrowserText, PINNED_PIXI_SHA256 } from './scan-browser-text.mjs';
 
 const argument = name => { const i=process.argv.indexOf(name); if(i<0 || !process.argv[i+1]) throw new Error(`Required argument ${name}`); return process.argv[i+1]; };
 const output=path.resolve(argument('--output'));
@@ -36,7 +37,29 @@ const browserRoot=path.join(output,'bundle',route);
 mkdirSync(browserRoot,{recursive:true});
 const put=(relative,bytes)=>{ const target=path.join(browserRoot,relative); mkdirSync(path.dirname(target),{recursive:true}); writeFileSync(target,bytes); };
 const copy=(relative,from)=>put(relative,readFileSync(from));
-for(const file of ['index.html','style.css','src/main.mjs','src/controller.mjs','inputs/view-math.mjs','inputs/config.json']) copy(file,path.join(root,file));
+const moduleEmissions=[];
+function emit(source,output,references=[]){
+  const sourceBytes=readFileSync(path.join(root,source));
+  let text=sourceBytes.toString('utf8');
+  for(const [before,after] of references){
+    if(text.split(before).length!==2) throw new Error(`Expected one declared reference in ${source}: ${before}`);
+    text=text.replace(before,after);
+  }
+  put(output,text);
+  moduleEmissions.push({source,output,sourceGitBlob:git('rev-parse',`HEAD:experiments/p2-free-approach/builder/${source}`),sourceCanonicalLfSha256:sha256(canonicalLF(sourceBytes)),references});
+}
+emit('index.html','index.html',[
+  ['"pixi.js":"./vendor/pixi.mjs"','"pixi.js":"./vendor/pixi.js"'],
+  ['src="./src/main.mjs"','src="./src/main.js"'],
+]);
+emit('src/main.mjs','src/main.js',[
+  ["from '../runtime/sim-core.mjs'","from '../runtime/sim-core.js'"],
+  ["from './controller.mjs'","from './controller.js'"],
+  ["from '../inputs/view-math.mjs'","from '../inputs/view-math.js'"],
+]);
+emit('src/controller.mjs','src/controller.js');
+emit('inputs/view-math.mjs','inputs/view-math.js');
+for(const file of ['style.css','inputs/config.json']) copy(file,path.join(root,file));
 const accepted=JSON.parse(readFileSync(path.join(root,'inputs/manifest.json'),'utf8'));
 // Keep every accepted projection/domain number. Replace only the local JPG path.
 accepted.source={sha256:pins.sourceSha256,width:accepted.source.width,height:accepted.source.height,readOnly:true,url:'source/01-jungle.jpg'};
@@ -52,7 +75,7 @@ delete art.provenance.runtimeExecuted;
 put('assets/manifest.json',JSON.stringify(art,null,2)+'\n');
 for(const asset of [art.ball,art.shadow]) copy(`assets/files/${asset.file}`,path.join(packet,asset.file));
 const pixi=readFileSync(path.join(pixiRoot,'dist/pixi.min.mjs'),'utf8').replace(/^\/\/[#@]\s*sourceMappingURL=.*$/gm,'');
-put('vendor/pixi.mjs',pixi);
+put('vendor/pixi.js',pixi);
 copy('vendor/PIXI-LICENSE.txt',path.join(pixiRoot,'LICENSE'));
 const wrapper=path.join(output,'core-entry.mjs');
 writeFileSync(wrapper,`export { createSimRunSession, stepSimRunSession, timeoutSimRunSession, runHeadlessOnce } from ${JSON.stringify(path.join(coreSrc,'index.ts').replaceAll('\\','/'))};\n`);
@@ -65,23 +88,25 @@ await build({
       if(existsSync(target)) return target;
     }
   }}],
-  output:{file:path.join(browserRoot,'runtime/sim-core.mjs'),format:'esm',sourcemap:false,minify:true,comments:false},
+  output:{file:path.join(browserRoot,'runtime/sim-core.js'),format:'esm',sourcemap:false,minify:true,comments:false},
 });
 unlinkSync(wrapper);
-const compiledCore=readFileSync(path.join(browserRoot,'runtime/sim-core.mjs'));
+const compiledCore=readFileSync(path.join(browserRoot,'runtime/sim-core.js'));
 const metadata={schema:'r4d.p2.static-metadata.v1',candidate:version,sourceCommit,coreCommit:pins.coreCommit,compiledCoreSha256:sha256(compiledCore),p1Commit:pins.p1Commit,configSha256:pins.configSha256,projectionSha256:pins.projectionSha256,sourceSha256:pins.sourceSha256,pixiVersion:pixiPackage.version,pixiSha256:sha256(Buffer.from(pixi)),assetPacket:'jungle-art-v2',limitations:'Only four occluders; scene/art quality awaits independent visual review'};
 put('metadata.json',JSON.stringify(metadata,null,2)+'\n');
 const collect=(dir,prefix='')=>readdirSync(dir,{withFileTypes:true}).flatMap(entry=>entry.isDirectory()?collect(path.join(dir,entry.name),prefix+entry.name+'/'):[prefix+entry.name]);
+const privacyScan=[];
 const files=collect(browserRoot).sort().map(relative=>{
   if(/\.(?:ts|tsx|map|py|ps1|sh)$/.test(relative)) throw new Error('Unexpected source/map/script in browser tree');
   const bytes=readFileSync(path.join(browserRoot,relative));
-  if(/\.(?:mjs|json|html|css|txt)$/.test(relative)) {
-    const text=bytes.toString('utf8');
-    if(/sourceMappingURL|millionko-source|packages[\\/]sim-core[\\/]src|(?:^|["'\s])[A-Z]:[\\/]/im.test(text)) throw new Error(`Private/local source reference in ${relative}`);
+  if(/\.(?:js|mjs|json|html|css|txt)$/.test(relative)) {
+    const audit=scanBrowserText(relative,bytes);
+    if(audit.violations.length) throw new Error(`Private/local source reference in ${relative}: ${JSON.stringify(audit.violations)}`);
+    privacyScan.push({path:relative,...audit});
   }
-  return {path:relative,bytes:bytes.length,sha256:sha256(bytes),kind:relative==='runtime/sim-core.mjs'?'authorized-private-compiled-runtime':'public-scene-or-asset'};
+  return {path:relative,bytes:bytes.length,sha256:sha256(bytes),kind:relative==='runtime/sim-core.js'?'authorized-private-compiled-runtime':'public-scene-or-asset'};
 });
 const treeSha256=sha256(Buffer.from(JSON.stringify(files)+'\n'));
-const manifest={schema:'r4d.p2.static-build.v1',status:'FROZEN_PENDING_INDEPENDENT_QA',candidate:version,sourceCommit,route:'/'+route+'/',sourceInputs:{...pins,leadBase:'ec090addd2f261b4f4f2b5abd8c742df4672d115',artSourceCommit:'e217cd139fbda153261a69977fe590867cbf57ed'},dependencies:{pixi:pixiPackage.version,bundler:bundlerPackage.version,node:process.version},core:{commit:pins.coreCommit,sourceTree:execFileSync('git',['rev-parse',`${pins.coreCommit}:packages/sim-core`],{cwd:coreRoot,encoding:'utf8'}).trim(),compiledSha256:sha256(compiledCore),sourceOrMapsIncluded:false},treeDigestRule:'SHA256(JSON.stringify(sorted per-file records)+LF)',treeSha256,fileCount:files.length,totalBytes:files.reduce((sum,f)=>sum+f.bytes,0),files,limitations:['Only four source-aligned occluders; other 21 obstacles/railings/basket rims uncovered','No browser view or artistic PASS is implied by compilation','Release requires an exact Lead gate; no external write performed']};
+const manifest={schema:'r4d.p2.static-build.v1',status:'FROZEN_PENDING_INDEPENDENT_QA',candidate:version,sourceCommit,route:'/'+route+'/',sourceInputs:{...pins,leadBase:'ec090addd2f261b4f4f2b5abd8c742df4672d115',artSourceCommit:'e217cd139fbda153261a69977fe590867cbf57ed'},moduleEmissions,privacyScan:{pinnedPixiSha256:PINNED_PIXI_SHA256,files:privacyScan},mime:{extension:'.js',expected:'application/javascript',basis:'Existing mapping observed read-only; no server changes; actual HTTP unverified'},dependencies:{pixi:pixiPackage.version,bundler:bundlerPackage.version,node:process.version},core:{commit:pins.coreCommit,sourceTree:execFileSync('git',['rev-parse',`${pins.coreCommit}:packages/sim-core`],{cwd:coreRoot,encoding:'utf8'}).trim(),compiledSha256:sha256(compiledCore),emittedPath:'runtime/sim-core.js',sourceOrMapsIncluded:false},treeDigestRule:'SHA256(JSON.stringify(sorted per-file records)+LF)',treeSha256,fileCount:files.length,totalBytes:files.reduce((sum,f)=>sum+f.bytes,0),files,limitations:['Only four source-aligned occluders; other 21 obstacles/railings/basket rims uncovered','No browser view or artistic PASS is implied by compilation','New source/build bytes require fresh independent TQA/VQA; old results are baseline only','Release requires an exact Lead gate; no external write performed']};
 writeFileSync(path.join(output,'BUILD_MANIFEST.json'),JSON.stringify(manifest,null,2)+'\n');
 console.log(JSON.stringify({candidate:version,sourceCommit,browserRoot,manifest:path.join(output,'BUILD_MANIFEST.json'),treeSha256,fileCount:manifest.fileCount,totalBytes:manifest.totalBytes,manifestSha256:sha256(readFileSync(path.join(output,'BUILD_MANIFEST.json')))}));
