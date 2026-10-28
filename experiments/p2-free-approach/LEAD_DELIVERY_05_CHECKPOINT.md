@@ -1,6 +1,14 @@
 # P2 candidate05 — малая разрешённая UI-итерация
 
-## Текущее состояние: один immutable LOCAL intent05 проверен, ожидает нового CTO gate
+## Текущее состояние: CTO выдал новый exact gate, одно execution C05 начато
+
+CTO лично прочитал full final01 handoff/intent/plan/template/source diff/independent TQA и независимо проверил47sealed records/18safe tar leaves/raw root-only delta/all3counters. **Новый conditional single-use C05 token issued2026-10-28T18:49:42Z**, exclusive shared window выделено P2; literal только private operational chat/E, не Git/public. C04 token закрыт. Это limited delivery, не actual PUBLIC05/black200/Full Art/P2 PASS; research slot не закрывает. Exact12 private backup filenames и retain/cleanup/resource4/2 conditions CTO задал отдельно и принял.
+
+Lead current turn `01a183da-2bba-7e30-8cf9-427d8e0dcb53` fresh read подтвердил prep01a183b4… completed/idle/cleanab250e1/no execution, clean own43b726e и заново6bound artifacts/все47sealed/Rootreview+counterproof+frozen hashes. Передано ровно одно execution поручение тому же Builder/ReleaseEngineer. Actual send **`exec-d634a6c6-b79f-4b76-a0a9-18d20e80c198` completed**, actual new Builder turn **`01a183dc-82ff-7813-aef3-fadf6dc3db35` inProgress**.
+
+Первое completed assigned действие **`exec-dd2e6727-b4f1-4f41-b8b0-0a8d814f9a62` exit0**,18:54:20.212241UTC: cleanab250e1/прежняя ветка/worktree, execution target preflight, own worktree processes[]. Host18:54:21UTC total31.907/free16.407GiB RAM/CPU9%, C/D/E>4GiB. Полный protected RAW server/resource/fullinventory/8absent-target guard до любого write включая lock ещё ожидается; actual lock/upload/switch не подтверждены. Dated envelope UTC/resources не сравниваются с dated snapshot JSON hash, проверяются exact protected bytes/records/metadata. Drift/unowned occupied target/denial=>STOP без rebind/rename/другого actor. После serving/all16HTTP/fullinventory/preservation STOP ownedlockheld перед docs/cleanup; **actual PUBLIC05 QA CTO назначает отдельно**, Root/Builder сами не будят TQA/VQA. Docs/cleanup только поздним addressed same-token continuation, shared window release только explicit CTO. Новых source/build/frozen/QA/unsupported API изменений не разрешено.
+
+## История: LOCAL intent и Root review перед CTO gate
 
 Builder prep **`01a183b4-71fd-7b22-8f57-e6da57231b5f` completed/idle/clean**; final handoff original **`ab250e1461d27751bafab4e28335e6e7b5a30828`** / Lead **`17beda41a3e896d62e4ef9284d47aecbd0fac25a`**, [полный LOCAL handoff](builder/RELEASE_INTENT_05_LOCAL.md)10845bytes/SHA `e67dd2ecb492d52ff0adacbf5fe3d2d129e8fbc723ca1c4499737a343ae1271c`. Preparation helper758b778/Leadcb5cab7, correction/source **`02aff92f41e94746d1bda8bfad46172c41d5e2e0`** / Lead50b316f; это не новый build pin. Frozen implementation/build остаётся **0367d462…**, TQA74e4a77…; C04/C05/raw failures не менялись.
 
