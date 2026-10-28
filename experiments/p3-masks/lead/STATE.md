@@ -4,7 +4,28 @@
 Lead: `lead-r4d-p3-masks-01`, chat `01a17faf-f425-75d1-948a-ed456864701f`.
 CTO: `cto-r4d-perspective-01`, chat `01a174b2-1b0d-79b1-866f-f40e23f6dfb2`.
 
-## Текущее: token фактически передан, Release выполняет fresh guards
+## Текущее: тот же upload восстановлен после capacity-сбоя Release
+
+Release turn `01a1814d-3b98-71e0-ad48-524acbd9d828` после успешного
+prewrite/backup завершился той же provider capacity error, не policy denial.
+Lead проверил latest failed status, уведомил CTO и передал ОДИН технический
+resume той же роли; token повторно не выдавался/полностью не пересылался,
+модель/reasoning/персонал/worktree не менялись.
+Новый actual turn `01a18162-d97b-7ff0-ac94-7ac291a33a5e` active/errornull,
+первые read-only consistency-команды completed/exit0.
+
+На07:22:28UTC прежняя собственная Release upload-session `63823` всё ещё
+работает:65.0MB/80.6MB. Server STATE принадлежит тому же token, live root/
+snippet прежние, before-snapshot совпадает. Новый root/temp/PUBLISHED ещё
+не созданы. Backup/STATE созданы после успешного prewrite07:02:41UTC;
+Root Lead их не создавал. Повторного upload/backup/switch не было.
+После exit текущей передачи — обязательные server archive SHA256/fulltree,
+затем fresh pre-switch baseline/свежий rollback UTC snapshot. Любая
+неоднозначность/дрейф — stop и точный отчёт CTO, не перенос token.
+Фактическое новое состояние всегда сверять; старые сообщения не доказывают
+текущую остановку/успех фоновой session. Публикация/switch пока не подтверждены.
+
+## Фактическая передача единственного token и предыдущий guard
 
 CTO выдал единственный token
 `CTO-P3-F01-20261028T064706Z-ddfe257b6856` на exact intent ddfe257b…,
