@@ -2,6 +2,8 @@
 
 2026-10-28 22:53 UTC. Stage 2 активен по адресному Lead contract `5ae51fa0342689cb0ad4b5b5d5681ddc16b60e81:experiments/p5-regenerated-objects/coordination/STAGE2.md`. **Early c01 заморожен и готов к адресным двум независимым QA.** Exact handoff — `HANDOFF_C01.md`; consumer source `0c611039246904443128b9d12084af2c5a0ae6e6`; immutable index `.../output/previews/c01/index.json` SHA256 `a19fea2f7ce677f9fa24c5822e0c411a032bd79fda58c055ff8e386ec474f4ac`,7149bytes,22publicfiles/13937155bytes. Это не final/release seal.
 
+Обновление23:04UTC: обе независимые QA проверяют exact c01. Его public root/listener не меняются. License supplement для **следующего** package подготовлен: `licenses/pixi-colord-2.9.6/README.md`, exact LICENSE.md+SOURCE.json;42installed files совпали с official npm archive, exact publisher gitHead5344fbf77b736f81cd33c21050021bc09bc9dd1d. Isolated license-package-001 проверен; missingRuntimeLicenseFiles0. c01 всё ещё содержит прежний gap, все22file pins и ownership unchanged. Нового app build/candidate нет.
+
 ## Получено и сделано
 
 - Schema/example + exact P1 targets опубликованы и pushed: `b327e5ff53190c9a356f350835390de2e77580ac`, `contracts/ASSET_CONSUMER.md` и соседние JSON. Четыре exact P1 файла и Jungle671136bytes проверены SHA256/bytes. Исходный JPG прочитан read-only и просмотрен.
@@ -26,6 +28,6 @@ Fresh guard22:43:23UTC: free RAM16.305/31.907GiB; CPU system5%, aggregate normal
 
 Own c01 preview: PID32108, exec session55195, URL http://127.0.0.1:55185/, root `E:/R4D/perspective/p5-runtime/builder/output/previews/c01/public`. Старый собственный PID22076/session80690 штатно остановлен Builder через Stop-Process после проверки ownership/command/port. Старый exec exit1 сообщён Lead после этой замены; первичного error/denial текста не было. Порт проверен свободным перед новым запуском. Current `preview-owner.json` сохраняет replacement record. UI service C: stub как checkout не использовался.
 
-Остаются21pins/3receivers, far-view variants, side-rail/near-platform occluders, самостоятельная оценка теней/partial occlusion и обе независимые QA. Installed @pixi/colord2.9.6 объявляет MIT, но package не содержит license file: нужно завершить license packaging до release; это не runtime blocker. Timeout-ветка и UI download сохранения ещё не испытаны отдельным сценарием. Корневой .gitignore отсутствует — ordinary file absence, не denial. Denial не было.
+Остаются21pins/3receivers, far-view variants, side-rail/near-platform occluders, самостоятельная оценка теней/partial occlusion и обе независимые QA. Installed @pixi/colord2.9.6 по-прежнему не содержит license file; проверенный exact supplement теперь включается в следующий package, без изменения installed dependency/c01. Timeout-ветка и UI download сохранения ещё не испытаны отдельным сценарием. Корневой .gitignore отсутствует — ordinary file absence, не denial. Denial не было.
 
 Server release writes0; gate закрыт. Другие чаты/worktree/processes/devices, модели и source checkout не менялись. P2–P4/P6 не читались. Полный P5, artistic/technical PASS и delivery не заявлены.

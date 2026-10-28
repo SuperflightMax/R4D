@@ -1,0 +1,262 @@
+{
+  "schema": "r4d.p5.license-source/1",
+  "packageName": "@pixi/colord",
+  "version": "2.9.6",
+  "licenseSpdx": "MIT",
+  "copyrightNotice": "Copyright (c) 2020 Vlad Shilov omgovich@ya.ru",
+  "registryMetadata": {
+    "url": "https://registry.npmjs.org/@pixi%2fcolord/2.9.6",
+    "httpStatus": 200,
+    "fetchedUtc": "2026-10-28T22:58:32.895Z",
+    "bytes": 5327,
+    "sha256": "63b5fca10eff46f53b7a81007d0acbe9f6eeee29fd38251e7740c29cc5b0ba3f"
+  },
+  "publishedArchive": {
+    "url": "https://registry.npmjs.org/@pixi/colord/-/colord-2.9.6.tgz",
+    "bytes": 30553,
+    "sha256": "53c41fe64870c917d08ccf06cf324c85b03a00b6c08371a06f7b29ff19dded20",
+    "sha1": "7e4e7851480da6fd3cef4e331f008d60be7e1204",
+    "integrity": "sha512-nezytU2pw587fQstUu1AsJZDVEynjskwOL+kibwcdxsMBFqPsFFNA7xl0ii/gXuDi6M0xj3mfRJj8pBSc2jCfA==",
+    "fileCount": 42,
+    "unpackedBytes": 109845,
+    "containsLicenseFile": false
+  },
+  "repository": {
+    "name": "pixijs/colord",
+    "commit": "5344fbf77b736f81cd33c21050021bc09bc9dd1d",
+    "commitBasis": "Exact gitHead in npm version metadata",
+    "license": {
+      "path": "LICENSE.md",
+      "url": "https://github.com/pixijs/colord/blob/5344fbf77b736f81cd33c21050021bc09bc9dd1d/LICENSE.md",
+      "bytes": 1083,
+      "sha256": "7613d4594ee8b6163926af3435dae61c9e3d5a27cd137bd76a543ba40002d8fc",
+      "gitBlob": "e437003733acd123c76c2a9df0c13a6f3b02b51e"
+    },
+    "packageJson": {
+      "path": "package.json",
+      "url": "https://github.com/pixijs/colord/blob/5344fbf77b736f81cd33c21050021bc09bc9dd1d/package.json",
+      "sha256": "d92aec39b7b030ebb6419b8ca4da12fd1a9b7bbd12d2979ab019308b417507e8",
+      "bytes": 5963,
+      "gitBlob": "93f3ca386429119f7df96742146242dece16f11a"
+    }
+  },
+  "installedIdentity": {
+    "packageJsonSha256": "d92aec39b7b030ebb6419b8ca4da12fd1a9b7bbd12d2979ab019308b417507e8",
+    "matchedFiles": 42,
+    "allPublishedFilesMatch": true,
+    "files": [
+      {
+        "path": "README.md",
+        "bytes": 38375,
+        "sha256": "48b9200b3832ce380879d41bd6394bdd0a7b206457c09a031569565c0c35d80a"
+      },
+      {
+        "path": "colord.d.ts",
+        "bytes": 3350,
+        "sha256": "338f39ce45a8e6b75b417d157004aac00b6c83e02fecb27df5d73384b048f2e2"
+      },
+      {
+        "path": "constants.d.ts",
+        "bytes": 368,
+        "sha256": "76f6782d6404f0e8b72afe56c5f93781030f6d713abe0caf2cfd6852cf3358e9"
+      },
+      {
+        "path": "extend.d.ts",
+        "bytes": 217,
+        "sha256": "975ea2b7bdb52e85d215df613d29484ef8f26045075d24c62dfbccdc811c4262"
+      },
+      {
+        "path": "helpers.d.ts",
+        "bytes": 908,
+        "sha256": "a886bf8cb9411ccd9f78f06b1c66467693affebfdc50dd0efbf6cd88fd11f598"
+      },
+      {
+        "path": "index.d.ts",
+        "bytes": 347,
+        "sha256": "322abaac408a649098c9a91d03dc9459fb0b287c33d405a75e554d3311bda314"
+      },
+      {
+        "path": "index.js",
+        "bytes": 5928,
+        "sha256": "ec6d1c9b7b3cb6a35c46a8dca6fd6bed620ff0bf088e3e2d5c4d126b3b5ed2b1"
+      },
+      {
+        "path": "index.mjs",
+        "bytes": 5868,
+        "sha256": "e83f97abe065db9490ba5abfffded254f0cac0b83a3a04f68bc1c0e9997c1168"
+      },
+      {
+        "path": "package.json",
+        "bytes": 5963,
+        "sha256": "d92aec39b7b030ebb6419b8ca4da12fd1a9b7bbd12d2979ab019308b417507e8"
+      },
+      {
+        "path": "parse.d.ts",
+        "bytes": 434,
+        "sha256": "0407d7b91af25ab375da0dc7d54acafe1e34a0688388d4c928dcc27084ada216"
+      },
+      {
+        "path": "plugins/a11y.d.ts",
+        "bytes": 1618,
+        "sha256": "c169f6f3f3fae672a6fb3ccac8311410a130695858d179a14bcb6957f091a172"
+      },
+      {
+        "path": "plugins/a11y.js",
+        "bytes": 813,
+        "sha256": "98a5dd609a8338310241cf8ed50905ca4426349a2577a9f7b5866935372c783b"
+      },
+      {
+        "path": "plugins/a11y.mjs",
+        "bytes": 812,
+        "sha256": "47fa36dbc57cf656b2436a187a06d812cc751735ae4ebbf5aa5de18c85ee7e63"
+      },
+      {
+        "path": "plugins/cmyk.d.ts",
+        "bytes": 871,
+        "sha256": "2af0093cff6c1d503f10fa7bef1f243b5542bab2f418ebf69d1a3fbb77d5e80d"
+      },
+      {
+        "path": "plugins/cmyk.js",
+        "bytes": 1631,
+        "sha256": "115fd0194a3fabb7cef647e3de666840aade1f2e7e3712d1c177117a5eb08217"
+      },
+      {
+        "path": "plugins/cmyk.mjs",
+        "bytes": 1630,
+        "sha256": "749cb2562ae8995f8c6a3df7fa021e7b3500cbe201ce0a8657d9c53db2a96847"
+      },
+      {
+        "path": "plugins/harmonies.d.ts",
+        "bytes": 602,
+        "sha256": "5948304e3b7b351d3222910854040ce3516e60b269368f3785477fb4b2c72045"
+      },
+      {
+        "path": "plugins/harmonies.js",
+        "bytes": 358,
+        "sha256": "5ad3a0b24f1921328550a849787e517e7e98d824315e9e6d46a78adb187804a9"
+      },
+      {
+        "path": "plugins/harmonies.mjs",
+        "bytes": 357,
+        "sha256": "74d81e2831f83c159a14bb548b7f7e5773ba4aa6b5b35e56ad099c7ce7fcef3f"
+      },
+      {
+        "path": "plugins/hwb.d.ts",
+        "bytes": 820,
+        "sha256": "2c0d20a10c91bd2199f6c974cc313dc276be92d9c246b49df5996668331e2954"
+      },
+      {
+        "path": "plugins/hwb.js",
+        "bytes": 1847,
+        "sha256": "31ebbe242c6abb06da4cc64e48ad06d75dd64905992ad57cd5cad4f65c91de03"
+      },
+      {
+        "path": "plugins/hwb.mjs",
+        "bytes": 1846,
+        "sha256": "29405b632b31f0bbcf1b7ec9d919fc9be2a6589915c59c110816019e62231d3d"
+      },
+      {
+        "path": "plugins/lab.d.ts",
+        "bytes": 805,
+        "sha256": "4483e3e45eb59ce172b76d1572d849e94eeea20e14444444547cca4e4822e74a"
+      },
+      {
+        "path": "plugins/lab.js",
+        "bytes": 3157,
+        "sha256": "d6256e455be4974594e383363ac895e0514ecd79d665778cdf2193d2fb698e71"
+      },
+      {
+        "path": "plugins/lab.mjs",
+        "bytes": 3156,
+        "sha256": "ca97ec88c215d638fd082e5b6a903e6f032b07e02b8e0ec937f95905fbc826e6"
+      },
+      {
+        "path": "plugins/lch.d.ts",
+        "bytes": 944,
+        "sha256": "410d2ad44f401ddce87ebd87fdeb4635702ea46eab78d88c8a2a964adcaf1868"
+      },
+      {
+        "path": "plugins/lch.js",
+        "bytes": 2888,
+        "sha256": "3666ab1deb11dc119ec5fa68eee3008969b695c4084349100d20ae96b9cac0c5"
+      },
+      {
+        "path": "plugins/lch.mjs",
+        "bytes": 2887,
+        "sha256": "bfcbd387fb2716182cd3afbb9572271eea2a3144007c63a83b8698422f4fd68d"
+      },
+      {
+        "path": "plugins/minify.d.ts",
+        "bytes": 528,
+        "sha256": "645007111a433ac1827d2e9cddbe51123a422ab5ddf97f3be0c5fce1a2e7152d"
+      },
+      {
+        "path": "plugins/minify.js",
+        "bytes": 1102,
+        "sha256": "bfc3617173f3afdf6e93f8b3602b60106247370d320422a7a3c1783633280675"
+      },
+      {
+        "path": "plugins/minify.mjs",
+        "bytes": 1101,
+        "sha256": "03d9466fa28b5cb41772adce6d45ac40dddef220b49d7bcc9050cdd3f9538e94"
+      },
+      {
+        "path": "plugins/mix.d.ts",
+        "bytes": 850,
+        "sha256": "57fac6e4f1d4df99ac38874a4ad53f5da6bd27dc64ad707340a93c7ba7eacc94"
+      },
+      {
+        "path": "plugins/mix.js",
+        "bytes": 2097,
+        "sha256": "92cb72c5c563815e1e54a79dcfbb115ab418695919b803c6286cb6688f05b894"
+      },
+      {
+        "path": "plugins/mix.mjs",
+        "bytes": 2096,
+        "sha256": "d98f465d6c8b7b80bb8a43b8fa29a54d4186cbd6e3a033f5ecaec7824cd3b419"
+      },
+      {
+        "path": "plugins/names.d.ts",
+        "bytes": 631,
+        "sha256": "83302faa9f53c11e66fb70c0f370f67bcea423e88d1ff283612aac7b2d156754"
+      },
+      {
+        "path": "plugins/names.js",
+        "bytes": 3537,
+        "sha256": "f57c398fcd5dda838ebba847fe1e0df0a2960d881f7a0de3a2a3c47a6b89babc"
+      },
+      {
+        "path": "plugins/names.mjs",
+        "bytes": 3536,
+        "sha256": "6f60e71eb2c32fecf62d173509946241aa9e4017159d51d9630245cefa158cf7"
+      },
+      {
+        "path": "plugins/xyz.d.ts",
+        "bytes": 419,
+        "sha256": "4b8fffb0b6bb049687ca05921817fe09b2f67fa53c718f2fa5c24bbac023c935"
+      },
+      {
+        "path": "plugins/xyz.js",
+        "bytes": 1522,
+        "sha256": "d7b207fa82fd94a8e2f122a2db2f11e4c8f475bcbc0a002815a72551b94d697e"
+      },
+      {
+        "path": "plugins/xyz.mjs",
+        "bytes": 1521,
+        "sha256": "d55d1e3cd3edc18c2c5a13de3721c9eaa740a073d6543e02fe1f7c667258c048"
+      },
+      {
+        "path": "random.d.ts",
+        "bytes": 80,
+        "sha256": "ad0a6126b041acb019343d6bdc96e8bc8ef52bf6bef0f8e5daa79c6e16353679"
+      },
+      {
+        "path": "types.d.ts",
+        "bytes": 2025,
+        "sha256": "c74e7a3979485fff4476da29e9a0a013f7d800caf22b4ad20f8ede87bef6d50a"
+      }
+    ]
+  },
+  "gap": "Official published archive omits license file; installed bytes match archive. Original P5 collector searched installed package files only. Exact upstream publication omission mechanism is unverified.",
+  "privateNativeScope": "No license or copyright assertion for private Millionko is made here."
+}

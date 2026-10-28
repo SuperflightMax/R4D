@@ -11,6 +11,7 @@ if (existsSync(base)) throw new Error('Preview id already exists; immutable prev
 const sourceRoot = resolve(runtime, 'site');
 const publicRoot = resolve(base, 'public');
 const preview = JSON.parse(readFileSync(resolve(sourceRoot, 'data/preview-input.json')));
+const dependencyLock = JSON.parse(readFileSync(resolve(sourceRoot, 'data/dependency-lock.json')));
 const files = ['index.html', 'style.css', 'app.js', 'THIRD_PARTY_LICENSES.txt',
   ...['config.json', 'p1-manifest.json', 'input-verification.json', 'targets.json', 'preview-input.json', 'dependency-pins.json', 'dependency-lock.json'].map(p => 'data/' + p)];
 if (preview.manifestUrl) {
@@ -33,7 +34,8 @@ const index = { schema: 'r4d.p5.preview-index/1', id, createdUtc: new Date().toI
   inputPins: JSON.parse(readFileSync(resolve(sourceRoot, 'data/input-verification.json'))),
   artistManifest: preview.artistManifest ?? null, earlyFloor: preview.earlyFloor,
   inventory, inventoryBytes: inventory.reduce((sum, f) => sum + f.bytes, 0),
-  knownLimits: ['No independent technical/artistic QA of these bytes yet', 'Private staging and raw native TS/maps excluded by explicit file list; release privacy approval pending', '@pixi/colord package declares MIT but installed package lacks license file; resolve before release'],
+  knownLimits: ['No independent technical/artistic QA of these bytes yet', 'Private staging and raw native TS/maps excluded by explicit file list; release privacy approval pending',
+    ...dependencyLock.packages.filter(p => !p.buildToolOnly && !p.licenseFiles.length).map(p => `${p.name}@${p.version}: no packaged license text; resolve before release`)],
   serverWrites: 0, releaseGate: 'closed' };
 const bytes = Buffer.from(JSON.stringify(index, null, 2) + '\n');
 writeFileSync(resolve(base, 'index.json'), bytes);
