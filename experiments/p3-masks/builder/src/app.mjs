@@ -10,8 +10,8 @@ const app=new PIXI.Application();
 await app.init({width:viewport.clientWidth,height:viewport.clientHeight,background:0x0a100d,antialias:true,resolution:Math.min(devicePixelRatio,2),autoDensity:true,preference:'webgl',autoStart:false});
 viewport.appendChild(app.canvas);
 const root=new PIXI.Container();app.stage.addChild(root);
-const backgroundLayer=new PIXI.Container(),shadowLayer=new PIXI.Container(),ballLayer=new PIXI.Container(),occlusionLayer=new PIXI.Container(),geometry=new PIXI.Graphics();
-root.addChild(backgroundLayer,shadowLayer,ballLayer,occlusionLayer,geometry);
+const backgroundLayer=new PIXI.Container(),shadowLayer=new PIXI.Container(),shadowOcclusionLayer=new PIXI.Container(),ballLayer=new PIXI.Container(),occlusionLayer=new PIXI.Container(),geometry=new PIXI.Graphics();
+root.addChild(backgroundLayer,shadowLayer,shadowOcclusionLayer,ballLayer,occlusionLayer,geometry);
 let run,tick=0,playing=false,lastFrame=0,accumulator=0,view='source',framing='whole',zoom=1;
 let ballMesh,shadowMesh;
 const staticMeshes=[],occluders=[];
@@ -43,7 +43,8 @@ async function loadArtist(){
   const context=canvas.getContext('2d');context.drawImage(sourceImage,x,y,w,h,0,0,w,h);context.globalCompositeOperation='destination-in';context.drawImage(maskTexture.source.resource,0,0);
   const texture=PIXI.Texture.from(canvas);
   const overlay=grid(texture,item.rectPx,Math.max(2,Math.ceil(Math.max(w,h)/24)));
-  staticMeshes.push(overlay);occlusionLayer.addChild(overlay.mesh);occluders.push({...item,...overlay});
+  const shadowOverlay=grid(texture,item.rectPx,Math.max(2,Math.ceil(Math.max(w,h)/24)));
+  staticMeshes.push(overlay,shadowOverlay);occlusionLayer.addChild(overlay.mesh);shadowOcclusionLayer.addChild(shadowOverlay.mesh);occluders.push({...item,...overlay,shadowOverlay});
  }
  if(assets.ball){const texture=await PIXI.Assets.load('./assets/artist/'+assets.ball.path);ballMesh=grid(texture,[0,0,1,1],6);ballLayer.addChild(ballMesh.mesh);}
  if(assets.shadow){const texture=await PIXI.Assets.load('./assets/artist/'+assets.shadow.path);shadowMesh=grid(texture,[0,0,1,1],6);shadowMesh.mesh.alpha=assets.shadow.alpha??1;shadowLayer.addChild(shadowMesh.mesh);}
@@ -77,7 +78,7 @@ function updateBallMesh(){
 function line(points,color,width=1.7,closed=false){
  const first=nativeToView(points[0]);geometry.moveTo(first.x,first.y);
  for(const point of points.slice(1)){const p=nativeToView(point);geometry.lineTo(p.x,p.y);}
- if(closed)geometry.closePath();geometry.stroke({color,width});
+ if(closed)geometry.closePath();geometry.stroke({color,width:width/Math.max(root.scale.x,1e-6)});
 }
 function circle(x,y,r,color,width=1.7){const points=[];for(let i=0;i<64;i++){const a=i*Math.PI*2/64;points.push({x:x+Math.cos(a)*r,y:y+Math.sin(a)*r});}line(points,color,width,true);}
 function drawGeometry(){
@@ -99,8 +100,10 @@ function fit(){
 function render(){
  if(!run)return;
  const art=$('art').checked,pos=run.states[tick].ball.pos;
- backgroundLayer.visible=art;shadowLayer.visible=art;ballLayer.visible=art;occlusionLayer.visible=art;
- for(const item of occluders)item.mesh.visible=pos.y<depthAt(item,pos.x);
+ backgroundLayer.visible=art;shadowLayer.visible=art;shadowOcclusionLayer.visible=art;ballLayer.visible=art;occlusionLayer.visible=art;
+ const shadowOffset=assets.shadow?.offsetRadius??[0.35,0.4],radius=baseline.board.ball.r;
+ const shadowPosition={x:pos.x+shadowOffset[0]*radius,y:pos.y+shadowOffset[1]*radius};
+ for(const item of occluders){item.mesh.visible=pos.y<depthAt(item,pos.x);item.shadowOverlay.mesh.visible=shadowPosition.y<depthAt(item,shadowPosition.x);}
  updateBallMesh();drawGeometry();app.render();
  $('seek').value=tick;$('tick').value=tick;$('time').textContent=`/ ${run.lastTick} · ${(tick*baseline.defaults.tickMs/1000).toFixed(3)} с`;
  $('play').textContent=playing?'Пауза':'Пуск';
@@ -122,7 +125,7 @@ $('random').onclick=action(()=>{const buffer=new Uint32Array(1);crypto.getRandom
 $('replay').onclick=action(()=>{setRun($('seed').value,true);message('Повтор seed с исходного состояния.');});
 $('play').onclick=()=>{if(tick===run.lastTick)tick=0;playing=!playing;lastFrame=performance.now();accumulator=0;render();};
 $('step').onclick=()=>seek(tick+1);$('step10').onclick=()=>seek(tick+10);
-$('seek').oninput=()=>seek($('seek').value);$('tick').onchange=action(()=>seek($('tick').value));
+$('seek').oninput=()=>seek($('seek').value);$('tick').oninput=action(()=>seek($('tick').value));
 for(const id of ['art','geometry'])$(id).onchange=render;
 $('view').onchange=()=>{view=$('view').value;for(const mesh of staticMeshes)updateMesh(mesh);fit();render();};
 $('framing').onchange=()=>{framing=$('framing').value;fit();render();};

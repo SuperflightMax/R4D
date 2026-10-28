@@ -55,7 +55,7 @@ if(process.env.P3_ARTIST_ASSETS){
  const artistAssets=path.resolve(process.env.P3_ARTIST_ASSETS);
  const assets=JSON.parse(fs.readFileSync(path.join(artistAssets,'assets.json'),'utf8'));
  fs.cpSync(artistAssets,path.join(output,'assets/artist'),{recursive:true});
- artistSource={...assets.provenance,contract:assets.schema};
+ artistSource={commit:JSON.parse(fs.readFileSync(path.join(artistAssets,'handoff.json'),'utf8')).commit,contract:assets.schema};
 }else{
  fs.mkdirSync(path.join(output,'assets/artist'));
  fs.writeFileSync(path.join(output,'assets/artist/assets.json'),JSON.stringify({schema:'r4d-p3-assets-v1',sourceSize:[1536,1536],occluders:[],status:'diagnostic: Artist handoff pending'},null,2));
