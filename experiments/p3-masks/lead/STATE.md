@@ -4,7 +4,64 @@
 Lead: `lead-r4d-p3-masks-01`, chat `01a17faf-f425-75d1-948a-ed456864701f`.
 CTO: `cto-r4d-perspective-01`, chat `01a174b2-1b0d-79b1-866f-f40e23f6dfb2`.
 
-## Текущий рубеж: один frozen candidate на реальной QA
+## ПАУЗА ПО ПРЯМОЙ КОМАНДЕ MAX
+
+28 октября 2026,00:46UTC: Max через доверенный Dot поручил мягкую временную
+паузу всей команды R4D, CTO подтвердил немедленное применение. Это не отмена
+заказа. Новые задания/QA/тесты/generation/build/install/deploy/эксперименты
+не запускать. Старый stage2, поздний checkpoint и освобождённый release token
+не разрешают продолжение. **Resume только по новой явной команде Max.**
+Оба слота paused/reserved, P4–P6 не открывать, на другое устройство не переносить.
+
+Lead немедленно отправил PAUSE_ACK CTO. Собственных серверов, браузерных
+вкладок, незавершённых writers/exec sessions у Lead нет; последний wait
+вернул interruption. Только этот безопасный state/commit/push checkpoint
+и сбор фактических ACK существующих пяти участников. Массовая pause не
+дублируется: CTO направил её всем напрямую. Immutable/raw assets сохраняются,
+reset/clean/switch/потеря WIP и global cleanup не выполняются.
+
+Все пять участников фактически **PAUSED_SAFE/idle**, финалы прочитаны
+Lead и независимо подтверждены CTO. Checkpoint commits запушены:
+
+- Builder `ac9b1a2a49ff06b29cb4ba6c188df8b48c91e4a7`;
+- Artist `545bf170e4284806d2cc0867a0e96bd7644e0f67`;
+- TQA `f176d9a54f5351f391cfa929ed13bab959effc27`;
+- VQA `911840f42b06b4a33f381ecdb09a62fcef5f542b`;
+- Release `3ec9adf9032969f13056b4d820c500c66e006f9e`.
+
+Каждый подтвердил чистое дерево/сохранённый WIP. Builder фактически
+остановил свой preview PID24412/loopback6866 и закрыл свою вкладку;
+прежний preview URL сейчас не работает, старый PID нельзя считать текущим
+владельцем при resume. TQA/VQA закрыли свои IAB-вкладки. Artist/Release
+серверов и вкладок не имели. Активных собственных exec/atomic операций
+участники не имеют. Lead чужие PID/вкладки не трогал; своих активных нет.
+
+TQA resume: `experiments/p3-masks/technical-qa/PAUSE_CHECKPOINT.md` наf176;
+последний state seed1061109253/tick1368 после import, evidence сохранены
+в `E:\R4D\perspective\p3-runtime\technical-qa\frozen-01`.
+VQA resume: `experiments/p3-masks/visual-qa/PAUSE_CHECKPOINT.md` на911840;
+все220raw files сохранены в
+`E:\R4D\perspective\p3-runtime\visual-qa\frozen-01`, 7ключевых кадров и
+3checkpoint JSON включены в Git checkpoint. Остальные resume points —
+STATE.md соответствующих ролей на указанных commits. Immutable/raw assets
+сохранены. Окончательных QA verdicts и художественного PASS нет.
+
+После собственного checkpoint/commit/push Lead останавливается без active
+ожиданий. Других участников не будить, не ждать, их QA/WIP сейчас не мержить.
+
+P3 публикации/серверных записей не было. По CTO P2 limited release уже
+completed/token released; новых writes/reload/rollback это не разрешает.
+P3 token отсутствует. После resume release только через прежний exact gate.
+
+Точная следующая работа ПОСЛЕ ЯВНОГО RESUME: сверить этот checkpoint и
+STATE/WIP пяти участников с фактическим Git без повторения сделанного.
+Builder восстанавливает только свой frozen preview после свежих ресурсов/
+проверки свободного loopback port. TQA/VQA продолжают незавершённую QA
+того же frozen01 из своих WIP; сначала получить оба отчёта, затем связанный
+пакет существенных исправлений. Новая версия — только при реальном изменении.
+Fresh RAM/CPU/C/D/E перед любой тяжёлой операцией; старые snapshots не гарантия.
+
+## Сохранённый рубеж: frozen01, QA прервана паузой
 
 `P3-frozen-01` выдан обеим QA. Code
 `f1aca21e7b9ba19001e7e8762fcaf2511bf9bf74`, Artist
@@ -21,13 +78,17 @@ Frozen bytes не перезаписываются во время обеих QA
 provenance/blob IDs/toolchain и licenses в `build.json`/handoff.
 
 Адресная выдача обеим QA успешна, фактические новые ходы подтверждены
-`read_thread`, оба inProgress на первой проверке:
+`read_thread`, оба были inProgress до pause:
 
 - TQA `01a17ff7-1769-7f91-a29d-3197ec953758`;
 - VQA `01a17ff7-601a-70e3-878a-4e61175de022`.
 
-Свои первые действия — сверка дерева/handoff/bytes; планы из preflight
-не выдаются за выполненную QA. Отчётов и художественного PASS пока нет.
+До pause TQA независимо сверил77 files на диске/HTTP, пересобрал native
+из14exact blobs с byte equality, сравнил все состояния5saved runs и сохранил
+первые3новых seeds4002564341/892542836/1061109253 без отсева. VQA сверил76
+payload files disk/HTTP, просмотрел seed0→receiver03 и свой ordinary
+1126639243→LOST, сохранил/повторил его и начал контакты/частичное скрытие.
+Это частичные результаты: окончательных QA verdicts/artPASS нет.
 Особое внимание: фактическое наложение силуэтов при смене порядка,
 читаемая shadow/grounding в нормальном масштабе и known left-5/mapping.
 Обеим QA переданы сохранённые хорошие/LOST runs без отбора; собственные
