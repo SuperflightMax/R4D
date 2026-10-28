@@ -41,8 +41,9 @@ handoff и продолжать). Разрешение ограничено су
 читает exact inputs/задание, Artist проверил дерево, прочитал imagegen skill
 и обозначил source1536²/alpha/anchors/masks без baked shadows. TQA/VQA
 проверили свои деревья и начали подготовку; Release сверил свою копию и
-готовит только локальную доставку. Кандидата и выполненной продуктовой QA
-ещё нет. CTO получил actual-start сообщение с этими фактами и turn IDs.
+готовит только локальную доставку. Полного frozen candidate и выполненной
+продуктовой QA ещё нет. CTO получил actual-start сообщение с этими фактами
+и turn IDs.
 
 ## Текущие зависимости и ранний стык
 
@@ -55,17 +56,35 @@ handoff и продолжать). Разрешение ограничено су
 
 Оба QA находятся без активного ожидания; выполненной продуктовой QA нет.
 Builder сообщил загрузку сцены в браузере без console errors и exact +1tick
-=5ms; исправляет ввод seek и экранную толщину диагностических контуров.
+=5ms; исправил ввод seek и экранную толщину диагностических контуров.
 Это его самопроверка, ещё не независимая QA и не художественный результат.
 Artist принял `r4d-p3-assets-v1`, сделал crop alpha masks с измеренными
-anchors/radius и native depth из принятого config. Весь набор пока не
-расширяет до реального стыка. Открытый риск: scalar depth против передней
-дуги footprint при боковом переходе. Builder получил exact art packet и
-должен сохранить обычный seed и соседние тики partial/depth swap; при
-невстречающемся объекте назвать первый реально достигнутый ID, а не искать
-красивый seed. Полного frozen candidate пока нет.
+anchors/radius и native depth из принятого config.
 
-Release получил от CTO и ДотМакса общие несекретные pointers:
+**Ранний реальный стык состоялся.** Builder checkpoint-02:
+source `b1d74c00ec33ed71147718243b6f0f6ae89c8b72`, build
+`E:\R4D\perspective\p3-runtime\builder\checkpoint-02`, manifest SHA256
+`01076d5aab91ad97f6758588e6b8510f5a9f1b01e9d3230a1f14e07bcc688442`.
+P3 preview: `http://127.0.0.1:6866/review/r4d/p3-masks/` (текущие preview
+bytes не объявляются неизменяемым frozen candidate).
+Native seed0: leaf-01 partial tick60, contact94/95, rebound150. Lead реально
+просмотрел JPG tick60/94/150 из
+`E:\R4D\perspective\p3-runtime\builder\evidence-02`; у контакта leaf
+закрывает шарик. Это early checkpoint, без независимого QA/artPASS.
+Первый native контакт leaf-01 tick94 также получен на обычных random seeds
+2818447218 и 2099436614. Разные траектории с LOST сохранены, seed0 завершился
+receiver-03. Открытый риск: scalar depth против передней дуги footprint
+при боковом переходе; leaf scalar swap tick358 происходит далеко от
+силуэта и не доказывает достаточность правила. Builder отдельно исправил
+оценку перекрытия shadow по её собственному положению на плоскости.
+CTO получил реальный early milestone и ограничения. Artist получил
+продолжение полного комплекта масок; Builder продолжает боковые события,
+browser download/import и `.js`-упаковку. Обе QA получат один полный freeze.
+
+Release local handoff опубликован на
+`3210845628c1258c8c1e2b9e34883be4708aa7a8:experiments/p3-masks/release/STATE.md`;
+его последний ход `01a17fd8-bfda-75a0-b8f7-dcf1e37c4d53` завершён,
+активного ожидания нет. Release получил от CTO и ДотМакса общие несекретные pointers:
 `vps1-direct`; `/home/sf/assistant-context/vps/services/superflight-studio.md`;
 `/opt/superflight-studio/README_RU.txt` и обязательные INDEX/PROCEDURES;
 `/srv/superflight-review/releases/<release-id>` и `/review/r4d/<slug>/`.
@@ -193,6 +212,6 @@ process-local env. E≤4 GiB — диагностика, E≤2 GiB — safe chec
 Ориентир CTO: первый связный просмотр через 60–90 минут активной работы;
 ограниченная попытка 4–6 активных часов с QA/осмысленными исправлениями.
 Ожидание разрешений и ресурсов не считать активной продуктовой работой.
-Следующее действие: соединить контракт Artist/Builder и получить ранний
-реальный пример частичного перекрытия с собственными ball/shadow; после
-доводки зафиксировать единый candidate для обеих независимых QA.
+Следующее действие: получить полный art packet и полезную доводку Builder,
+зафиксировать один source/build/hash candidate для обеих независимых QA;
+связанные реальные дефекты возвращать назначенным владельцам одним пакетом.
