@@ -5,6 +5,39 @@
 `orders/perspective/ORDER.md` + `P3-masks.md`; stage 2 выдан Lead.
 Работа только в собственном E worktree/ветке. Серверная запись не разрешена.
 
+## PAUSED_SAFE — временная пауза по прямой команде Max
+
+28 октября 2026. Получена адресная команда CTO о немедленной мягкой паузе
+всей команды. Заказ не отменён. Продолжение ТОЛЬКО после новой явной команды
+Max; прежний stage2/поздний checkpoint не дают разрешения продолжать.
+
+В момент получения выполняющихся atomic writers/build/tests/generation/release
+не было. Собственный Node preview PID24412 остановлен после проверки owner:
+командная строка соответствовала own preview.mjs + full-checkpoint-06.
+Собственная IAB вкладка1 с URL127.0.0.1:6866/review/r4d/p3-masks/ закрыта.
+Других активных собственных серверов/вкладок/нагрузки нет. Чужие процессы,
+Millionko и остальные команды не трогались. Preview URL ниже сейчас OFFLINE.
+
+WIP перед паузой: дерево чистое, HEAD4603d99a5904d10924f55416e36100b2c470b534,
+ветка codex/r4d-p3-masks-builder-01. Этот pause checkpoint меняет только STATE.
+Frozen source f1aca21e7b9ba19001e7e8762fcaf2511bf9bf74 и Artist
+f899a308aed156a11e2a1013292ed68c6669959d сохранены без изменения.
+Immutable/raw assets и весь own runtime сохранены; ничего не очищалось.
+Frozen directory: E:\R4D\perspective\p3-runtime\builder\full-checkpoint-06.
+Manifest SHA256 e2e9f7d837b3d05f484f75a877af6992a70ee88363add783d80f3c6e206f431f.
+Evidence: own runtime evidence-full05/evidence-full06/evidence-02.
+
+Exact next action после явного resume Max: прочитать этот STATE и
+FROZEN_CANDIDATE.md, сверить фактический статус/уже полученные результаты
+TQA/VQA через Lead. Не повторять выполненные проверки и не менять frozen bytes.
+Если для разрешённого продолжения нужен preview — отдельно подтвердить свободный
+loopback port/ownership и возобновить только свой preview указанного bundle;
+новая коррекция продукта требует новой именованной версии, не overwrite full06.
+Сейчас новых операций/ожиданий не запускать. Оба слота paused/reserved;
+свободный release token не даёт разрешения выпуска, P4–P6 не открываются.
+
+Нижеследующая выдача кандидата описывает состояние ДО временной паузы.
+
 ## Текущий переход: frozen candidate 01 для обеих QA
 
 Полный handoff — [FROZEN_CANDIDATE.md](FROZEN_CANDIDATE.md).
