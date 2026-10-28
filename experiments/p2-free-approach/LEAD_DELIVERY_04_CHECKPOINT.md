@@ -1,6 +1,26 @@
 # P2 candidate04 — checkpoint сериализации доставки
 
-## Текущая фаза: оба actual QA отчёта приняты для docs; одно продолжение Builder
+## Текущая фаза: delivery/docs завершены, owned lock снят, окно ожидает CTO release
+
+**P2_C04_DELIVERY_DOCS_COMPLETE_LOCK_RELEASED_WINDOW_HELD**. Same-Builder continuation `01a18378-0842-7ac3-a9af-5f4e6f19e878` completed/clean; original **`2cf9b6521cb2485a91ace37b44925b2a11fdc7b2`** / Lead **`5b840125690a2036c43a592185aa4e84cc396cfa`**, [полный финальный handoff](builder/DELIVERY_04_PUBLIC_COMPLETE.md). Root прочитал все 169 строк и проверил отсутствие literal operational token/owned nonce в обоих новых committed файлах. Git blob handoff11569 bytes/SHA `7ff7338d22e282948f3feb36092c6b1dff0701ef2ef39d0f9dcb05b19314d0d8`.
+
+Первый fresh served-phase guard17:08:10–17:08:18UTC до write подтвердил current phase/ownership и raw state; перед finish/append guards повторены. Atomic append service **17:09:35.266647UTC**:72789→76645bytes, SHA `6664e51d308260e4eb58a36047730f1d723ce0e873acf51b730afa99697816b1`. CHANGELOG **17:09:37.174573UTC**:291345→293737bytes, SHA `daa2e1aa49e5c70954cf7317cbba61f0744e0583ffba0777c3581f8ba3339bef`. Полные old prefixes exact, uid1003/gid27/0640 сохранены.
+
+Final guard17:09:37–17:09:39UTC passed:563files/81dirs/90775084bytes/tree892fa950…/545foreign/all12P1/count4/old562-file root intact; все16HTTP200/exactbytesSHA/MIME/headers/all6JS application/javascript. Root сравнил все16 expected rows final HTTP receipt с immutable BUILD_MANIFEST, прочитал QA bounds в render receipt и проверил docs/prefix/owner/mode/final cleanup. Snippet952/4d32b2…/vhost35c0…/MIME6f95… unchanged; nginx-t/active passed, repeat reload/upload/switch/QA/build/hotfix/rollback отсутствуют.
+
+Matching owned inode11 lock снят **17:09:39.804627UTC**. Read-only повтор **17:11:59.570926UTC** подтвердил отсутствие lock и exact owned stage/snippet/service/CHANGELOG temps, docs prefixes/hash/1003:27/0640 и raw configs. Owned writers idle; активных owned exec/server/browser/QA нет. Архив/backup/immutable releases сохранены. Shared Review window **held** до отдельного explicit CTO release; собственный cleanup его не освобождает.
+
+Root сверил local private copies `E:/R4D/perspective/p2-runtime/output/builder/p2-review-execution-04-final03-01/docs-completion-01/evidence/`:
+
+| Receipt | Bytes | SHA256 |
+| --- | ---: | --- |
+| PUBLIC_RENDER_RECEIPT.json |28289|`670b939d7d7f731140fc3826e1daf26e37a2aa8f742e6242c01db8bf39f4556c`|
+| DOCS_RESULT.json |30554|`f423de269e3958e8481aba6c6c40c0c111e898203cdb1177e610cf7334e9d638`|
+| FINAL_ACTUAL_STATE.json |2085|`71a5fca2b69727bba4f3a36c32053457b507f92b1dcda9dcdfc555f093471cde`|
+
+Private Root server-receipt review `E:/R4D/perspective/p2-runtime/output/lead-freeze/p2-candidate04-final-delivery-review-01.json`:4502 bytes/SHA `c24ca01471b929801c903de34779ea33c3159f4a06f09d19f585860711b319fb`, выполнен до финального Git handoff; сейчас handoff тоже прочитан/импортирован. Server/render status **PUBLIC_QA_REPORTS_DOCUMENTED_WITH_FINDINGS_NOT_FULL_PRODUCT_PASS**. Оба actual QA pins/findings/limits сохранены: black200 с Fit+step97 recovery/неизвестной причиной, stale completion hint, непроверенные export/hidden suspension/WebGL backend/native/fine contact/partial occlusion/shadow/Android. **Full Technical/Art/P2 closure не выдан**, P1 PASS не наследуется. Следующий шаг — только итоговая передача CTO/его explicit release окна; исправления/новый token/новая QA не поручены.
+
+## История: actual QA отчёты и одно docs continuation
 
 Оба независимых actual PUBLIC QA turns completed/clean. TQA `27b9adf765fabc0ac6858253b4a61158b3c3bfbb` / Lead `cc22d56`: [UI report](qa/technical/candidate-04-PUBLIC-01.md). VQA `1ff628005fbe82ec087d30d5c62dde61265e9c7d` / Lead `877b589`: [visual report](qa/visual/CANDIDATE_04_PUBLIC_VISUAL_01.md), verdict **PUBLIC_VISUAL_OBSERVED_WITH_LIMITATIONS**. Root полностью прочитал оба отчёта, сверил TQA evidence и 7 inputs, VQA index и все 17 rows (16 raw JPG + JSON), лично просмотрел 7 кадров. VQA Git blob 12957 bytes/SHA `2a396de45786f5228939fb78c793a5b270ab8f1a855085e3834d2cf19343cc0a`; observations126742/SHA `2faa736425c412af1adabf65d507cc6b2c28ca344058b0dc0fe170d9f9ba0561`; index2788/SHA `eaefe7990b6a2645974727b5bcfe04225fb1fcca3e7874326c6536cd60945d96`.
 
