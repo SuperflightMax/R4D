@@ -1,6 +1,8 @@
 # Accepted P1 — static PUBLIC report: Lead gate
 
-Статус: candidate и targeted QA ожидаются. Не release approval и не готовый URL.
+**Frozen candidate01 передан независимой QA.** Full Builder handoff `383164ff397e83a5ad47238f6ebe196688f649ff` (build source `2135851427c568038b23fded38d6cbe8b6f6b0e3`) интегрирован Lead как804f6ef/f46cc3f. Manifest4037bytes SHA256 `00eb21e37f4a30e1dfbf7addad0eeafe1e66b266c553495ea30ae8d96255a14c` независимо сверён Lead;12publicfiles/2057712bytes, public tree `88e934cab5ce2621cc6ad811b7bc40bcfb5ccce74262a35068654552aeeb99f7`. Accepted4b47/frozenbytes не менялись. Нет release approval/token/готового URL.
+
+После нового capacity restore actual Lead turn `01a182c1-a662-7211-b88b-3d2053e7cad2`, входной cleanHEAD68ed8e6 сохранён без отката. Повторная read_thread проверка подтвердила отсутствие ранее начатых P1staticQA. Lead сделал ровно два успешных адресных send (isError=false): TQA actual newturn `01a182c2-c54e-73d3-9cd6-d4629df4240e`, VQA `01a182c2-cce2-7b90-bd78-b76bee5a4b44`. Первый TQA exec-e26a6d85-ac04-43a8-9830-eb6776d87592 completed; первый VQA exec-98c03cd9-682e-4244-8193-65fefbb30c04 completed/exit0. Следующий VQA read/preflight d536...exit1 ещё разбирается владельцем; обычный CSS/content path pointer передан, policy-denial не установлен. Оба QA фактически active, verdict ожидается. Повторных start/Builder/Artist wake не требуется.
 
 Основание: Max28октября12:38UTC, `Sentinel_9809efe64b3881918b49cd3b4c1237a8`, через CTO. Публикуется статический отчёт accepted P1 exact `4b47db04c7140ebf88f69b91faa0b790d46f22ec`, subtree `experiments/p1-collider-mapping/clean-repeat-01/`. P1 не перезапускается; это не третий research slot. P2 frozen04/df309 сохраняются без rebuild/reQA.
 
