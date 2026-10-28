@@ -21,6 +21,14 @@ Lead прочитал Research checkpoints01–04, support revision03, start rev
 
 Builder сообщил, что accepted Viewer final figures04 относятся к trial02; новые схемы не нужны. Это сообщение владельца, exact copied bytes/provenance и correspondence ещё подлежат targeted QA.
 
+## Фактические границы текущей QA
+
+VQA сообщила о просмотре всех10JPG: Git-exact accepted inputs, figure IDs/captions/full-file refs согласованы;03final jaguar supports,04trial02/start и две Research whole-source figures различимы. Итоговый подписанный report ещё ожидается. Обычный VQAreadexit1 — неверный путь style.css вместоreport.css; path/content audit prefix исправлены, это не policy denial.
+
+Новый конкретный browser denial: `cua_repl.js`, call `call_abc1dd4797314b4f99b8273827bb843b`, `cua.createBrowserTab("iab", "file:///E:/R4D/perspective/p2-runtime/output/p1-static-report-candidate-01/public/review/r4d/p1-mapping-report/index.html", {visible:false})`. Причина по receipt владельца: `file:` запрещён, допустимыHTTP/HTTPS. Операция остановлена, без другогоactor/browser/server обхода. Это protocol restriction, автоматический approval-review rejection не установлен. Whole QA не остановлена. Page render/desktop/mobile/overflow/browser link execution не наблюдались; никакого fullrenderPASS. Будущий обычный actual PUBLICHTTP page view после разрешённого release — отдельный post-publication check, не обход local-file operation.
+
+TQA отдельно сверяет local CSS/JPG/anchors и два root-relative возврата `/review/`; не заявлять, что буквально все ссылки строго относительные. Новых симуляций/сборок/serverwrites не было. CTO уведомлён об actualturns/первых completed действиях и точной новой границе просмотра.
+
 ## Gate отдельной публикации
 
 1. Frozen named candidate с exact source commit, whitelist файлов, bytes/SHA/tree. PUBLIC payload только HTML/CSS/figures и явно безопасная необходимая metadata; no JS/core/TS/maps/private logs/full source tree.
