@@ -2,7 +2,15 @@
 
 staff_id `builder-r4d-p2-free-01`; branch `codex/r4d-p2-free-builder-01`; исходный HEAD `df760b680f0d0264342fc8577fcc5779b80a3a15`. Рабочая копия только `E:/R4D/perspective/p2-worktrees/builder`.
 
-## Resume 28 октября: source diagnosis/plan, без product implementation
+## Playback source handoff 01: implementation готов, build не начат
+
+Адресное разрешение Lead после review diagnostic/plan086d0852732815014ed4a596bcd67528874a04df исполнено узко. Actual SOURCE commit `0a80b0b63c688b6f77b8f710576adf2ea5c263c1` содержит реальные rate/helper/UI/emission изменения и targeted selfcheck; после него worktree clean. Ровно6 code/check files,252+/24−. UI«Скорость» default0.25×/0.5×/1×; purePlaybackClock выдаёт целыеfixed5ms native ticks, fractional carry наratechange, reset+discard-first-delta наpause/start/replay/seek/manual/hidden/terminal. Rate/history/conditions экспортируются отдельно от полного physicsconfig/seed/provenance; rewind не теряет latest presentationhistory. P2QA setter/snapshot добавлены. Подробно — PLAYBACK_SOURCE_01.md.
+
+Meaningful targeted Node selfcheck exit0/10checks, без старой fullmatrix. Exact rational-time/frame-partition oracle, fractional/ratechange/reset/hidden/end/invalid/historyfixtures; readonly compiled03 realcore seed1 reference256ticks и4 prefixes до128 черезcontact95, exactframes/events; native seek94/+1/+10/+100 и95. AmbientMath.random/crypto accesses0. Newhelper strictbrowsertextscan прошёл, scanner/SDKexception unchanged. Evidence88509bytes SHA256 `211c28256ef31bf5ac5d749281c04219e7e90beab169721c3756943e82e51f26` в `E:/R4D/perspective/p2-runtime/output/builder/playback-source-selfcheck-01/EVIDENCE.json`. SourceRecords bind testedcanonicalLFsha; parser/diffchecks passed. DOM/WebGL/actualAndroid/UI/download unverified, никакого fullQA/artPASS.
+
+Freshresources передNode06:06:01UTC: freeRAM10.771GiB,CPU7%,C/D/E8.050644/16.326077/43.132099GiB; plannedRAM≤128MiB/Eoutput≤2MiB; processTEMP/TMP E,Nodecache disabled. NativeController/core/config/projection/r16/PRNG/art/occluders/touchCSS/gestures/zoomfit не менялись. Explicitnewhelper.mjs→.js emission/reference+receipt подготовлены source-only, будущийbundle6modules; build/check-static не запускались. Frozen03/sourcee7ed…/oldartifacts неизменны, старыйtokenreleased, serverwrites/reload/rollback0. Следующийшаг — exactnarrow newcandidatebuildgate отLead после source review; до него новых запусков нет. После docscommit/push остановитьсябезactivewait.
+
+## История resume 28 октября: source diagnosis/plan до implementation
 
 Новая ЯВНАЯ команда Max от2026-10-28 05:36UTC (07:36 Europe/Kiev) через trusted Dot/CTO сняла паузу, кроме UGH. Lead адресно поручил только Android layout/SDK/visible-ball diagnosis и reviewable playback-rate plan. Исходный resume HEAD `be4f3664c7764409a6d60c158f11cd941d2eb2e9` clean; pause/current status/delivery и feedback1–7 из Lead `dceb1b9e425fb22812e871542118819c85492de8:docs/PERSPECTIVE_RESEARCH_STATE.md` прочитаны без reset/clean/switch. Работа только в собственной E worktree/ветке, без новых staff/session/worktree/device.
 
