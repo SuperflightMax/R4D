@@ -69,6 +69,25 @@ if(process.env.P3_ARTIST_ASSETS){
 const nativeProvenance={coreCommit,sourceTreeGitOid:execFileSync('git',['-C',coreRepo,'rev-parse',`${coreCommit}:packages/sim-core/src`],{encoding:'utf8'}).trim(),readMode:'exact Git objects; no source edits',inputGitBlobOids:[...nativeInputBlobs].sort(),nodeVersion:process.versions.node,typescriptTransform:'node:module stripTypeScriptTypes transform; sourceMap=false',bundler:`rolldown ${rolldownVersion}`,minify:true,compiledSha256:sha(fs.readFileSync(path.join(output,'native-core.js')))};
 const meta={schema:'r4d-p3-build-v1',sourceCommit,coreCommit,nativeProvenance,p1Commit:'4b47db04c7140ebf88f69b91faa0b790d46f22ec',pixi:pixiVersion,artistSource,configSha256:sha(fs.readFileSync(path.join(output,'data/config.json'))),projectionSha256:sha(fs.readFileSync(path.join(output,'data/projection.json'))),builtAt:new Date().toISOString()};
 fs.writeFileSync(path.join(output,'build.json'),JSON.stringify(meta,null,2)+'\n');
+const catalog=JSON.parse(fs.readFileSync(path.join(here,'replay-catalog.json'),'utf8'));
+const {makeRun,checkpoint}=await import(pathToFileURL(path.join(output,'run-model.js')));
+fs.mkdirSync(path.join(output,'replays'));
+const replayIndex={runs:[],frames:[]};
+const runsBySeed=new Map();
+for(const record of catalog.runs){
+ const config=JSON.parse(fs.readFileSync(path.join(output,'data/config.json'),'utf8'));
+ const run=makeRun(config,record.seed);runsBySeed.set(record.seed,run);
+ const relative=`replays/seed-${record.seed}-tick-${run.lastTick}.json`;
+ fs.writeFileSync(path.join(output,relative),JSON.stringify(checkpoint(run,run.lastTick,meta),null,2)+'\n');
+ replayIndex.runs.push({...record,lastTick:run.lastTick,result:run.result,path:relative});
+}
+for(const record of catalog.frames){
+ const run=runsBySeed.get(record.seed);
+ const relative=`replays/seed-${record.seed}-tick-${record.tick}.json`;
+ fs.writeFileSync(path.join(output,relative),JSON.stringify(checkpoint(run,record.tick,meta),null,2)+'\n');
+ replayIndex.frames.push({...record,path:relative});
+}
+fs.writeFileSync(path.join(output,'replays/index.json'),JSON.stringify(replayIndex,null,2)+'\n');
 const files=[];
 function visit(dir){for(const entry of fs.readdirSync(dir,{withFileTypes:true})){const full=path.join(dir,entry.name);if(entry.isDirectory())visit(full);else{const bytes=fs.readFileSync(full);files.push({path:path.relative(output,full).replaceAll('\\','/'),bytes:bytes.length,sha256:sha(bytes)});}}}
 visit(output);files.sort((a,b)=>a.path.localeCompare(b.path));

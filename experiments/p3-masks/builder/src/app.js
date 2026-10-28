@@ -4,7 +4,7 @@ import {makeRun,checkpoint,importCheckpoint,uintSeed} from './run-model.js';
 
 const $=id=>document.getElementById(id);
 const json=async url=>{const response=await fetch(url);if(!response.ok)throw Error(`${url}: HTTP ${response.status}`);return response.json();};
-const [baseline,manifest,projection,build,assets]=await Promise.all(['data/config.json','data/manifest.json','data/projection.json','build.json','assets/artist/assets.json'].map(json));
+const [baseline,manifest,projection,build,assets,replays]=await Promise.all(['data/config.json','data/manifest.json','data/projection.json','build.json','assets/artist/assets.json','replays/index.json'].map(json));
 const viewport=$('viewport');
 const app=new PIXI.Application();
 await app.init({width:viewport.clientWidth,height:viewport.clientHeight,background:0x0a100d,antialias:true,resolution:Math.min(devicePixelRatio,2),autoDensity:true,preference:'webgl',autoStart:false});
@@ -137,6 +137,24 @@ $('import').onchange=action(async()=>{
  const file=$('import').files[0];if(!file)return;
  const result=importCheckpoint(JSON.parse(await file.text()),baseline,build);setRun(result.run.seed,false);seek(result.tick);message('Checkpoint воспроизведён настоящим ядром; точное состояние совпало.');$('import').value='';
 });
+for(const saved of replays.runs){
+ const row=document.createElement('p'),button=document.createElement('button'),link=document.createElement('a');
+ button.className='hit';button.textContent=`${saved.seed} · ${saved.result.kind}${saved.result.bucketId?' · '+saved.result.bucketId:''}`;
+ button.onclick=()=>{setRun(saved.seed,true);message(saved.label);};
+ link.href='./'+saved.path;link.download='';link.textContent='Checkpoint JSON';row.append(button,link);$('replays').appendChild(row);
+}
+for(const saved of replays.frames){
+ const row=document.createElement('p'),button=document.createElement('button'),link=document.createElement('a');
+ button.className='hit';button.textContent=`${saved.label} · тик ${saved.tick}`;
+ button.onclick=()=>{setRun(saved.seed,false);seek(saved.tick);message('Сохранённый кадр обычного запуска; +1 тик показывает соседнее состояние.');};
+ link.href='./'+saved.path;link.download='';link.textContent='Checkpoint JSON';row.append(button,link);$('replays').appendChild(row);
+}
+let drag=null;
+app.canvas.style.cursor='grab';app.canvas.style.touchAction='none';
+app.canvas.addEventListener('pointerdown',event=>{drag={x:event.clientX,y:event.clientY};app.canvas.setPointerCapture(event.pointerId);app.canvas.style.cursor='grabbing';});
+app.canvas.addEventListener('pointermove',event=>{if(!drag)return;root.position.x+=event.clientX-drag.x;root.position.y+=event.clientY-drag.y;drag={x:event.clientX,y:event.clientY};app.render();});
+const endDrag=()=>{drag=null;app.canvas.style.cursor='grab';};
+app.canvas.addEventListener('pointerup',endDrag);app.canvas.addEventListener('pointercancel',endDrag);app.canvas.addEventListener('lostpointercapture',endDrag);
 new ResizeObserver(()=>{app.renderer.resize(viewport.clientWidth,viewport.clientHeight);fit();render();}).observe(viewport);
 $('version').textContent=`Core ${build.coreCommit.slice(0,12)} · P1 ${build.p1Commit.slice(0,12)} · Pixi ${build.pixi} · source ${build.sourceCommit.slice(0,12)} · масок ${occluders.length}`;
 fit();setRun(baseline.rng.seed,false);

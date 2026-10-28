@@ -23,11 +23,15 @@ assert.equal(sha(fs.readFileSync(path.join(directory,'data/manifest.json'))),'77
 assert.equal(sha(fs.readFileSync(path.join(directory,'data/projection.json'))),'9ca9e520f1927426a3a5ba73a5eacaf90fedffc9385e7d08d5b1e6ee644b020c');
 const {makeRun,checkpoint,importCheckpoint}=await import(pathToFileURL(path.join(directory,'run-model.js')));
 const build=JSON.parse(fs.readFileSync(path.join(directory,'build.json')));
+assert.equal(build.nativeProvenance.compiledSha256,sha(fs.readFileSync(path.join(directory,'native-core.js'))));
+const replayIndex=JSON.parse(fs.readFileSync(path.join(directory,'replays/index.json')));
 const runs=[];
-for(const seed of [0,2818447218,2099436614,3925936860]){
+for(const {seed,path:replayPath} of replayIndex.runs){
  const run=makeRun(config,seed),tick=Math.min(95,run.lastTick),cp=checkpoint(run,tick,build);
  const restored=importCheckpoint(JSON.parse(JSON.stringify(cp)),config,build);
  assert.deepEqual(restored.run.states[tick],run.states[tick]);
+ const saved=importCheckpoint(JSON.parse(fs.readFileSync(path.join(directory,replayPath))),config,build);
+ assert.deepEqual(saved.run.states[saved.tick],run.states[run.lastTick]);
  const changed=structuredClone(cp);changed.config.physics.gravityY+=1;
  assert.throws(()=>importCheckpoint(changed,config,build));
  const badState=structuredClone(cp);badState.state.rngU32^=1;
@@ -36,4 +40,4 @@ for(const seed of [0,2818447218,2099436614,3925936860]){
 }
 const first=makeRun(config,2818447218),second=makeRun(config,2099436614);
 assert.notDeepEqual(first.states[500].ball,second.states[500].ball);
-console.log(JSON.stringify({sourceCommit:fileManifest.sourceCommit,filesVerified:fileManifest.files.length,bytes,manifestSha256:sha(fs.readFileSync(path.join(directory,'file-manifest.json'))),route:url??null,httpHashesAndJavaScriptMime:!!url,nativeReplay:true,tamperRejected:true,ordinaryRuns:runs},null,2));
+console.log(JSON.stringify({sourceCommit:fileManifest.sourceCommit,artistCommit:build.artistSource.commit,filesVerified:fileManifest.files.length,bytes,manifestSha256:sha(fs.readFileSync(path.join(directory,'file-manifest.json'))),route:url??null,httpHashesAndJavaScriptMime:!!url,nativeReplay:true,tamperRejected:true,ordinaryRuns:runs},null,2));
