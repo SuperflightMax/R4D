@@ -1,6 +1,6 @@
 # P5 Builder — состояние
 
-2026-10-28 22:49 UTC. Stage 2 активен по адресному Lead contract `5ae51fa0342689cb0ad4b5b5d5681ddc16b60e81:experiments/p5-regenerated-objects/coordination/STAGE2.md`. Следующий переход — immutable early candidate c01 и передача Lead для двух независимых QA.
+2026-10-28 22:53 UTC. Stage 2 активен по адресному Lead contract `5ae51fa0342689cb0ad4b5b5d5681ddc16b60e81:experiments/p5-regenerated-objects/coordination/STAGE2.md`. **Early c01 заморожен и готов к адресным двум независимым QA.** Exact handoff — `HANDOFF_C01.md`; consumer source `0c611039246904443128b9d12084af2c5a0ae6e6`; immutable index `.../output/previews/c01/index.json` SHA256 `a19fea2f7ce677f9fa24c5822e0c411a032bd79fda58c055ff8e386ec474f4ac`,7149bytes,22publicfiles/13937155bytes. Это не final/release seal.
 
 ## Получено и сделано
 
@@ -24,7 +24,7 @@ Body footprint depth residuals after uniform scale: flower+3.123736, leaf+1.0921
 
 Fresh guard22:43:23UTC: free RAM16.305/31.907GiB; CPU system5%, aggregate normalized6.75%; aggregate working set19.468GiB (shared pages могут учитываться повторно),444processes; C16.967/D16.282/E12.170GiB. Оценка своего peak1.2GiB RAM/0.2GiB E плюс concurrent allowance4GiB RAM/2GiB E соблюдена. TEMP/TMP/cache/output только own E/process-local. Установки/глобальных env/settings изменений нет.
 
-Own dev preview до freeze: PID22076, exec session80690, URL http://127.0.0.1:55185/, root `E:/R4D/perspective/p5-runtime/builder/site`. Порт проверен свободным до запуска. При handoff будет заменён только собственный listener на immutable c01 root с новым ownership pin. UI service C: stub как checkout не использовался.
+Own c01 preview: PID32108, exec session55195, URL http://127.0.0.1:55185/, root `E:/R4D/perspective/p5-runtime/builder/output/previews/c01/public`. Старый собственный PID22076/session80690 штатно остановлен Builder через Stop-Process после проверки ownership/command/port. Старый exec exit1 сообщён Lead после этой замены; первичного error/denial текста не было. Порт проверен свободным перед новым запуском. Current `preview-owner.json` сохраняет replacement record. UI service C: stub как checkout не использовался.
 
 Остаются21pins/3receivers, far-view variants, side-rail/near-platform occluders, самостоятельная оценка теней/partial occlusion и обе независимые QA. Installed @pixi/colord2.9.6 объявляет MIT, но package не содержит license file: нужно завершить license packaging до release; это не runtime blocker. Timeout-ветка и UI download сохранения ещё не испытаны отдельным сценарием. Корневой .gitignore отсутствует — ordinary file absence, не denial. Denial не было.
 
