@@ -1,6 +1,6 @@
 # P2 candidate05 — малая разрешённая UI-итерация
 
-## Текущее состояние: C05 PUBLIC served, focused actual TQA идёт, lock held
+## Текущее состояние: C05 PUBLIC served, actual TQA reviewed, focused VQA идёт, lock held
 
 **P2_C05_SERVED_AWAIT_CTO_QA_DOCS_PENDING_LOCK_HELD**. Same Builder execution
 `01a183dc-82ff-7813-aef3-fadf6dc3db35` completed/clean; serving handoff original
@@ -27,15 +27,35 @@ nonce; literal excluded from Git/public/report/receipt, subsequent reads whiteli
 
 CTO separately explicitly assigned **sequential actual PUBLIC05 TQA → VQA**.
 One actual TQA send `exec-e59b58f1-79cc-45af-bbbe-300002ba287b` completed312ms;
-new TQA turn `01a183ed-f333-7b90-96dd-037c97b1f292` inProgress. First completed
+new TQA turn `01a183ed-f333-7b90-96dd-037c97b1f292` completed/clean. First completed
 action `exec-1df160bd-906d-4d2c-9032-7561f85653cc` exit0,19:13:24UTC: own clean74e4a77,
 current computer-use skill/4:2 resources/absent new output. Actual PUBLIC05 open
 `call_61d933d8d03d422c856a139992374a3f` and first read-only provenance/state diagnostic
 `call_57c982b11b3c42de8a3df888a8cd4715` completed. Scope only known paused94/95/96,
 200%/Fit+small viewport stability, physical/RNG/tick invariance, completion hint
 lifecycle and brief ordinary playback. No broad seed/physics/network/GPU/device matrix.
-VQA not yet sent; only after explicit own TQA surface release/viewport+visibility
-restoration, then short actual visual delta under the same CTO assignment.
+TQA original `94e125165c98565c766b0af7c4faef0ec7252c5d` / Lead `b2de2f0` imported:
+[full actual report](qa/technical/candidate-05-PUBLIC-01.md)11758bytes/SHA
+`a9de853707a3e01f8fd690c0b8d763c0cc72b35d9c702f6324721ab2d0d9a8e6`.
+EVIDENCE17994/SHA`c2126ecf1c5e0e053b97a61320faaedd081ef4848d43fdb9d05d5a4128ebbc7f`;
+raw observations103330/SHA`5ed6764d1873f3da0b55e0a369508dc5ff4fcc8246522307a3a4b58dd5e3dd7d`.
+Root fully read report, verified all15inputs/4summary hashes, recomputed paused
+fullphysical equality and dimension groups, viewed raw95/200+rewind hint images.
+Own32check receipt1999/SHA`bf04114fdfde127a95ee614d952ea487026a6d459e640efbeef429e67f024210`.
+No new actionable findings; physical/RNG invariant94/95/96, saved oracle0/94/95/96/1735
+matched read-only; stable canvas samples and no black in captured viewport frames,
+two95/200frames equal29.8s apart. Completion hint clears/restores and ordinary
+start/pause/resume observed. Download/error ownership live UNVERIFIED; code/model
+attribution only. Sparse desktop seed1 evidence, no universal blackfix/Art/P2 PASS.
+
+TQA explicitly surfaceReleased19:18:01.434UTC: paused37, own viewport reset,
+priorvisibility=false restored, own tab2closed; actual cleanup/API audit verified.
+Only after this, fresh VQA preflight completed C04/idle1ff6280, ONE send
+`exec-69efb762-12a5-4779-9d47-fd57baa05df4` completed1820ms; NEW actual VQA turn
+`01a183f6-2614-7232-a67e-82872b353316` inProgress. First completed assigned action
+`exec-3fb48ebc-5dd3-4d15-b2e5-2df97200e5c4` exit0: ownworktree/clean1ff6280/branch,
+current computer-use skill/resources. Focused actual visual delta pending;
+no second permission gate between roles per explicit CTO assignment.
 
 **Owned lock inode12 HELD, writers stopped. Docs/cleanup/window release CLOSED
 until further addressed CTO continuation, including after both QA reports.**

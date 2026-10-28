@@ -12,12 +12,17 @@ single switch19:02:30.622116UTC, all16HTTP200/bytes/SHA/MIME/headers first pass1
 `6b7c88cd3bff739d31cd164a78139597fb06f8b8e6af0a1a4cad2f5f83da9e3e`.
 This is receipt verification, not an independent actual browser PASS.
 
-CTO separately authorised focused actual PUBLIC05 TQA→VQA. One TQA send completed,
-new actual turn `01a183ed-f333-7b90-96dd-037c97b1f292` active, first completed action
-19:13:24UTC/clean74e4a77/resources4:2; actual own PUBLIC05 tab opened and read-only
-diagnostic started. VQA not sent until TQA explicitly releases own browser surface
-and restores viewport/visibility. Known paused94–96/200%/Fit, state invariance and hint
-lifecycle only; no full matrix/seed hunt/GPU or device expansion. Same inode12 lock
+CTO separately authorised focused actual PUBLIC05 TQA→VQA. Actual TQA completed/clean
+`94e1251`/Lead`b2de2f0`: full report11758/SHAa9de8537… read, all15inputs verified,
+Root32saved-evidence checks passed. No new findings; actual candidate05/source0367,
+paused94–96 physical/RNG invariance, stable dimensions, no black in captured200%
+viewport frames, hint clears/restores and ordinary playback observed. Download/error
+owners live UNVERIFIED; no universal blackfix/Art/P2 PASS. TQA surfaceReleased19:18:01.434UTC,
+own viewport/priorvisibility restored/tabclosed, cleanup evidence verified. Then ONE
+VQA send after fresh idle C04preflight; new actual turn `01a183f6-2614-7232-a67e-82872b353316`
+active, first completed action exec-3fb48ebc…/clean1ff6280/current skill/resources.
+Focused visual delta pending. Known paused94–96/200%/Fit only, no fullmatrix/seedhunt/
+GPU/device expansion. Same inode12 lock
 HELD/writers stopped. **Docs/cleanup only on further CTO message, window release
 explicit CTO only**, even after QA. Frozen0367/intent05/C04 immutable; no new build,
 upload/switch/hotfix. Actual black200/FullTechnical/Art/P2 closure unverified.
