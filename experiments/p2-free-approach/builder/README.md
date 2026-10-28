@@ -4,6 +4,8 @@
 
 ## Текущая статическая сборка P2
 
+Для будущей доставки04 выполнен только [read-only preflight04-01](REVIEW_PREFLIGHT_04_01.md): coherent06:33UTC snapshot установил actual live03/all472filehashes/modes и absent04targets; draftP2card+39bytes/root-onlyinverse проверены в памяти. Финальные release intent/manifest/archive не готовились, token/serverwrites0. Sharedbaseline может измениться; после actualTQA нужны новое адресное final-local поручение и свежиеguards.
+
 После явного resume Max [diagnosis/plan01](ANDROID_LAYOUT_AND_PLAYBACK_PLAN_01.md) и [playback source01](PLAYBACK_SOURCE_01.md) прошли review Lead. По отдельному build gate заморожен локальный [candidate04](STATIC_CANDIDATE_04.md):actualbuildHEAD08f9b9eaa6aa1063eb7fcd9cf373ddacf907725a/implementation0a80…,16files/2452021bytes/tree60d216a64c86fed4b83f4ed3802e3d1393cdda2db8776818d22710173dc2ffed.6.js modules,0.25×default/0.5×/1×, fractional clock иhistory; ownstatic/emittedboundarychecks passed, independentTQA pending.04 пока не опубликован; published03/frozenbytes сохранены. UI/DOM/WebGL/mobile/MIME unverified, touch/size/occlusion не исправлялись. Новый release intent/gate/token не выдан.
 
 **Limited Review опубликован:** [Jungle P2](https://superflight.space/review/r4d/p2-free-approach/). [Actual delivery03](DELIVERY_03.md): root switch28 октября02:41:09 Europe/Kiev; fresh guards,472-file tree/15 frozen hashes/456 preserved oldfiles и защитные HTTP статусы проверены, server docs обновлены. Реальные authenticated200/JS MIME/browser/Pixi/UI/download/scene остаются непроверенными; P2 не закрыт, полного Technical/art PASS нет. Lead явно освободил single token после сверки evidence/postchecks/docs; после уведомления только локальная финализация. Frozen03/source e7ed… не менялся.
