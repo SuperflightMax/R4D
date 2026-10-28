@@ -1,6 +1,6 @@
 # P4 candidate-03: public release-intent DRAFT — НЕПОЛНЫЙ
 
-28 октября 2026. CTO разрешил будущую публикацию **ограниченного прототипа с остаточными пробелами**, не принятой полной P4. Token отсутствует, все VPS/public writes закрыты. Выполнен [Stage A checkpoint](p4-candidate-03-stage-a-checkpoint.md); local subset proposal не является approved allowlist, финального baseline/rollback seal нет. Этот draft заменяет intent02.
+28 октября 2026. CTO разрешил будущую публикацию **ограниченного прототипа с остаточными пробелами**, не принятой полной P4. Token отсутствует, все VPS/public writes закрыты. Stage A subset и точечная privacy disposition приняты для Stage B; [Stage B остановлен на exact catalog anchor](p4-candidate-03-stage-b-stop.md). Fresh coherent C05 baseline сохранён private/local, полного пакета/seal нет. Этот draft заменяет intent02.
 
 ## Exact candidate и проверка Release
 
@@ -25,26 +25,26 @@ Layout03: 65 PNG, 7 JPG, 23 JSON, 2 JS, 1 HTML, 1 CSS, 1 MJS, 3 Markdown, 8 lice
 
 ## Предлагаемый write set, требующий решения CTO
 
-Только `https://superflight.space/review/r4d/p4-extracted-objects/`: Stage A предлагает browser subset **82 files / 10 099 772 bytes**, byte-exact, entry index.html, завершающий `/`. Предыдущее предложение «111 + markers» НЕ approved allowlist и заменено: helper/Markdown/evidence/history/restoration mask/markers и ненужные fixtures не включены. Exact local manifest SHA256 `95d33355b9f50d77e38cfdb2279bec6ee3746e6230a1ac7e1e32d1f4ecc63241`; один source-path privacy flag в обязательном P1 JSON требует disposition CTO. Никаких rebuild/правок frozen bytes или production-запуска serve.mjs.
+Только `https://superflight.space/review/r4d/p4-extracted-objects/`: CTO принял browser content subset **82 files / 10 099 772 bytes**, byte-exact, entry index.html, завершающий `/`. Предыдущее предложение «111 + markers» заменено: helper/Markdown/evidence/history/restoration mask/markers и ненужные fixtures не включены. Exact local manifest SHA256 `95d33355b9f50d77e38cfdb2279bec6ee3746e6230a1ac7e1e32d1f4ecc63241`; единственный P1 source-path flag принят узкой disposition CTO для exact JSON, proof history сохранена. Content approval не является sealed write allowlist/token. Никаких rebuild/правок frozen bytes или production-запуска serve.mjs.
 
 Единственная внешняя дельта — согласованная CTO карточка в текущем `https://superflight.space/review/` сразу после P3 href `./r4d/p3-masks/`: P4 href `./r4d/p4-extracted-objects/`, заданные eyebrow/title/description/CTA и expected counter4→5. Exact local параметры — `stage-a-03/catalog-proposal.json`; insertion/inverse проверяются только на будущем coherent baseline, другое actual section/counter означает STOP. Все foreign bytes/entries/routes, shared assets/auth/security/global MIME сохраняются.
 
-Схема Andy: основной superflight.space/Review public, private sf.superflight.space. Stage A read-only проверил actual operator identity/raw snippet и отсутствие targets; private receipts в own runtime. Это не final CURRENT PUBLIC snapshot/seal: сначала отдельное освобождение P2 C05 window. Старые protected snippets/templates/rollback и прежние public snapshots не применять. GET `/review/r4d/` с403 не повторялся/не обходился; secrets/allowlists/keys/cookies не читались.
+Схема Andy: основной superflight.space/Review public, private sf.superflight.space. После C05 window release Stage B read-only сохранил fresh coherent root/config/docs/inventory guards и отсутствие8 targets; private receipts в exact own runtime target. Seal не создан из-за catalog anchor mismatch; будущие preswitch guards всё равно должны быть свежими. Старые protected snippets/templates/rollback не применять. GET `/review/r4d/` с403 не повторялся/не обходился; secrets/allowlists/keys/cookies не читались.
 
 ## Exact missing fields
 
 | Поле | Что должен передать/решить CTO/operator |
 | --- | --- |
-| `operatorAndTargets` | Preliminary identity/actual root и absence guards получены в Stage A; final binding/seal только после window release. Privileged writes не испытывались. |
+| `operatorAndTargets` | Fresh Stage B identity/C05 root/config/docs/inventory/8-target guards получены; полный binding/seal не завершён из-за catalog guard. Privileged writes не испытывались. |
 | `catalogAndBoundedDecision` | Решение CTO о bounded publication и exact card parameters получены; actual section/counter4→5 и inverse остаются для Stage B. |
-| `privacyDisposition` | Явное решение по локальному original-image path в обязательном P1 JSON; bytes не менять. |
-| `windowReleaseAndCoherentBaseline` | Отдельное подтверждение завершённой P2 C05 delivery/window release и поручение на ONE fresh coherent CURRENT PUBLIC baseline + full sealed LOCAL intent. |
+| `privacyDisposition` | ACCEPTED CTO только existing source.path пользовательского original image в exact P1 JSON11565/SHA7784dc0a215d0e472cf06a4eee03793592727cf0fa9a1fa0e0c78e5f1d17da18. Verbatim; не общее исключение и не zero-local-paths. |
+| `windowReleaseAndCoherentBaseline` | C05 window released2026-10-28T20:02:14Z; Stage B поручен, один fresh coherent baseline сохранён. STOP: expected P3 href `./r4d/p3-masks/` отсутствует, actual `/review/r4d/p3-masks/`; нужна disposition Root/CTO без silent rebind. |
 | `rootReviewAndSingleCTOToken03` | Review полностью sealed пакета Root/CTO и новый single-use exact-bound token03 с учётом HOLD. Никакого server write до этого. |
 
 ## После отдельного решения и token
 
 Получить exact approved bytes и окончательные QA pins → непосредственно перед writes свежий current public root/catalog/snippet/auth snapshot и rollback по новому baseline → сверить single CTO token с03 и точным write set → точечная доставка → HTTP bytes/SHA, MIME/cache/base paths/import map + реальный UI во вложенном Review-prefix (64 textures, raster ball/shadow, random/replay, pause/resume) → сохранность foreign catalog/routes и private boundary. Это smoke доставки, не новая широкая QA. Если каталог изменился, пересчитать одну вставку без перезаписи чужих bytes.
 
-Перед тяжёлым шагом повторить RAM/CPU/C/D/E и aggregate peak; только own E-runtime/process-local env. Здесь шаги лёгкие; E свободно 16,258 GiB. E <=4 GiB — warn/diagnostic, <=2 GiB — checkpoint/stop.
+Перед тяжёлым шагом повторить RAM/CPU/C/D/E и aggregate peak; только own E-runtime/process-local env. Stage B private checkpoint содержит fresh host/VPS resources с concurrent allowance4GiBRAM/2GiBE; порогиE4/2GiB не достигнуты, тяжёлая package preparation не начата.
 
 **Builder source remote HOLD сохраняется:** никакого push/dry-run/actor/branch/transport/PR/cherry-pick обхода, переноса held source в свою ветку или публикации без отдельного решения. Допустимый собственный report-only commit/push содержит только документы Release. Сейчас delivery не выполняется и не объявляется.
