@@ -1,0 +1,24 @@
+<!doctype html>
+<html lang="ru">
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>P4 — извлечённые объекты</title>
+<link rel="stylesheet" href="./style.css">
+<header><h1>P4 · Извлечённые объекты</h1><p id="art-status">Подключение сцены…</p></header>
+<main>
+ <section class="board"><div id="scene"></div></section>
+ <aside>
+  <div class="row"><label>Seed <input id="seed" type="number" min="0" max="4294967295" value="0"></label><button id="random">Случайный бросок</button><button id="replay">Повторить</button></div>
+  <div class="row"><button id="play">Продолжить</button><button id="step">+1 тик</button><input id="count" type="number" min="1" max="3200" value="10" aria-label="Число тиков"><button id="steps">+N тиков</button></div>
+  <label>Тик <input id="seek" type="range" min="0" max="3200" value="0"></label>
+  <div class="row"><input id="tick-input" type="number" min="0" max="3200" value="0" aria-label="Точный тик"><button id="goto">Перейти</button><output id="time">0</output></div>
+  <div class="row"><label><input id="art" type="checkbox" checked> Арт</label><label><input id="geometry" type="checkbox" checked> Геометрия</label></div>
+  <div class="row"><label>Вид <select id="view"><option value="source">Исходная перспектива</option><option value="flat">Плоскость native</option></select></label><label>Масштаб <input id="zoom" type="range" min="0.5" max="2" step="0.1" value="1"></label></div>
+  <div class="row"><button id="export">Экспорт checkpoint</button><label class="file-button">Импорт<input id="import" type="file" accept="application/json,.json"></label></div>
+  <p id="message" role="status"></p>
+  <details open><summary>Точное состояние</summary><pre id="state"></pre></details>
+  <details><summary>Контакты и результат</summary><pre id="events"></pre></details>
+  <details><summary>Входы и версия</summary><pre id="versions"></pre></details>
+ </aside>
+</main>
+<script type="module" src="./app.js"></script>
+</html>

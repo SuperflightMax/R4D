@@ -1,0 +1,13 @@
+{
+  "name": "r4d-p4-extracted-consumer",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "prepare": "node scripts/prepare.mjs",
+    "check": "node scripts/check.mjs",
+    "serve": "node scripts/serve.mjs"
+  },
+  "dependencies": { "pixi.js": "8.22.0" },
+  "devDependencies": { "esbuild": "0.25.12" }
+}
