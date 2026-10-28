@@ -1,5 +1,15 @@
 # P2 candidate04 — checkpoint сериализации доставки
 
+## LIMITED PUBLIC delivery: CTO gate выдан, один execution handoff
+
+CTO принял exact final03/134-check review и выдал один НОВЫЙ single-use P2 token в2026-10-28T16:20:31Z; shared Review window выделено P2. Literal и operational receipts только privateE/declaredprivatebackup, не Git/reportpage. Старый P1 token закрыт. Никакого actual UI/Art/P2 PASS этим gate не выдано.
+
+Lead actual turn `01a18351-0cc9-7503-8466-b07e47546f8c` подтвердил clean12ac2828503a23707163d7758a155b525f09d433 и неизменные intent307d8b…/plan190581…/sealedd7e9dc…/archivea1179a…. Freshread Builder prep01a18336-20cd-7e81-a5c1-20fd166ce68e completed/no execution; сделан ровно один successful send sameBuilder/ReleaseEngineer. Actual новый execution turn `01a18352-5090-7b73-b79b-622ef3a4a008` inProgress, первый command exec-4c8b8019-96a6-45be-b47d-657be54d7b5f completed; полныйfreshguard пока ожидается. Новых ролей/чатов/worktrees/model/effort/device нет.
+
+Разрешён только boundplan write-set и immutable16frozenbytes. До первойwrite/lock — freshhost+VPS/aggregate resources и fullrawroot/snippet/vhost/MIME/docs/filesdirs/owners/modes/HTTP/8absenttargets/ancestors/oldP1lockabsent; далее phase-aware guards. Любойdrift/occupiedunownedtarget→STOPCTO безrebase/rename/adaptation. После actual switch+all16HTTP/hash/MIME/headers/full563inventory/545foreign/P1/config/oldroot checks Builder обязан остановить docs/cleanup сownedlockheld и сообщитьRoot. **Actual04PUBLIC TQA/VQA назначает CTO сам** отдельными addressedtasks; Root/Builder сейчас не будят QA. P1renderPASS не наследуется. Docs/finalcleanup толькопослеactualQA/отдельногопродолжения темжеtoken; window освобождает толькоexplicitCTO. Никакихfrozenhotfix/build/newphysics/mapping/art/touch/size/height fixes, protectedrollback/localfilebridge или чужихproductsreads.
+
+## История подготовки local final03 и завершения P1
+
 **P1_CLOSED_CTO_WINDOW_RELEASED / P2_PUBLIC_INTENT03_LOCAL_PREPARATION.** CTO явно освободил P1token/sharedReviewwindow2026-10-28T15:47:25Z после принятой delivery/PUBLICVQA/docs/lockcompletion. Literal token не вGit/publicpage; новогоserver-write tokenнет. P1auxpublication завершена, не третийresearchslot.
 
 Новое прямое поручение: тот же Builder послеcompleted eed2759 получает ровно один read-only freshactualPUBLICbaseline и immutable LOCAL intent `E:/R4D/perspective/p2-runtime/output/p2-review-release-intent-04-final-03` толькоеслиотсутствует; занятыйtarget→STOPбезавтоматическогоrename. Lead подтвердил входной cleanf3c7afe5626b25c06a214e8d280895911f289aee, Builderlatest01a18325-2fd9-7ae0-8b03-6992cb75cd2c completed, новыйlocaltargetabsent и manifest04SHA60f79d…совпадает. Дальнейшийsuccessfulsend/actualnewturn фиксируется пофакту.
