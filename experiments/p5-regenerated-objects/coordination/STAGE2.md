@@ -72,6 +72,23 @@ Release gate закрыт: серверные writes сейчас 0. После 
 | VQA | 6c36558dbefdd957147b585474c6732ed6e6c07b:experiments/p5-regenerated-objects/qa/visual/PREPARATION.md; SOURCE_FACTS.json SHA256 d96c4092916735384c4b2bf283a625e00764c3e35d1bc776fd412ed955a438fe,14095bytes. Pushed. | Самостоятельно просмотрен исходный JPG/P1; кандидат ещё не оценён. Подготовка передана Artist/Builder. |
 | Release | 6844d9a3ab0aa7ec6f4a621f98f8f436b9fd1262:experiments/p5-regenerated-objects/release/DELIVERY_CONTRACT.md. Pushed. | Только local delivery/privacy/handoff контракт; SSH/HTTP/server reads/writes0. Gate закрыт. |
 
-TQA/VQA/Release завершили первые Stage2 turns и idle; повторно без входа не будить. Следующий handoff — exact малый manifest/PNG набор Artist в consumer Builder и material runtime pins/URL для адресной независимой QA. Lead не выполняет за них генерацию/реализацию/QA.
+TQA/VQA/Release завершили первые Stage2 turns и idle; повторно без входа не будить. Lead не выполняет за них генерацию/реализацию/QA.
 
 Consumer v1 uniform scale/part depth — рабочий технический способ, не дополнительное требование заказчика. Если фактический ракурс требует полезной адресной коррекции схемы, она обсуждается по конкретному случаю без изменения P1 геометрии и физики.
+
+### Mini01 и следующий просмотр
+
+Artist завершил mini01 и push: 5085be86d5b5e9bf22619254f42b95ad3dc1320e:experiments/p5-regenerated-objects/asset-artist/HANDOFF_MINI_01.md. Manifest asset-manifest.mini-01.json там же: canonical Git LF23553bytes, SHA256 7b8935f4db6f9c20ec6fc2867e115dd787a2a93982f5ef4a5588810d8470e77f; schema b327e5f проверена. Read-only PNG root E:/R4D/perspective/p5-runtime/asset-artist/selected/mini-set-01/,10textures/13instances: floor, flower-07/leaf-05/frog-05/wood-04 + shadows, ball/shadow, receiver-01 back/front. Exact files/alpha/anchors/provenance в manifest, BINDINGS.mini-01.json и records/tool-invocations.json. Raw и activeC originals сохранены. Mini01 передан Builder адресно; во время ранней QA не изменять.
+
+Builder получил сборку Pixi8.17.1/exactnative с generatedfloor1254² -> source1536². В actual IAB самопроверены state95/96/seek95, Art/Geometry/framing на паузе не изменили position/velocity/RNG. Слабый contrast geometry исправлен outline. Upfrontseed0=>receiver03 tick1956; первый обычный UIseed1696420279=>receiver01 tick875 сохранён без отбора. Пока это self-check floor-only, не visual contact/basket PASS. Exact consumer c01/build/URL evidence ожидаются для независимых QA.
+
+Очередь полезных коррекций/проверок:
+
+| Вопрос | Первичная причина/факт | Владелец и следующий шаг |
+|---|---|---|
+| A01 far-view | Первые master footprints глубже дальних P1. В mini01 выбраны существующие близкие по ракурсу targets; остаточная depth delta +3.12/+1.09/-.96/+.02 sourcepx. | Artist продолжает новые far variants/оставшиеся21pins в новой версии, без изменения mini01/геометрии/скрытого растяжения. Early image quality ещё оценит VQA. |
+| A02 receivers | Подготовлен только receiver01 back/front; верхние ropes дошли до canvas edge, регистрация native-edited front пока не проверена в сборке. | Builder c01, затем TQA/VQA actual движение/частичное скрытие; Artist готовит оставшиеся receiver targets в новой версии. |
+| A03 foreground | Полная side-rail/near-platform occlusion пока не подготовлена. | Artist готовит нужную переднюю архитектуру/parts с измеримыми anchors/alpha; actual QA после сборки. |
+| R01 event/time | Native contact t=>poststate t+1; lifecycle/bucket tick отличаются; timeout через штатный API. | Передано Builder, применено в self-check; независимый actual consumer проход ещё впереди. |
+
+Artist повторно свежо проверен idle/completed, затем адресно продолжил существующее поручение: независимая подготовка far variants/remaining coverage/foreground в новой версии с прежними guards и provenance. Builder получает mini01 сейчас и freeze раннего c01; обе QA остаются idle до exact runtime handoff. Release gate закрыт.
