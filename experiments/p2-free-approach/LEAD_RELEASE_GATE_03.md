@@ -1,5 +1,7 @@
 # P2 candidate-03: exact limited Review gate
 
+**Current override: R4D temporarily PAUSED by explicit Max/Dot/CTO command.** Delivery/token release below are historical completed facts. No new server writes/reload/rollback or QA under this gate. Resume only after a new explicit Max command, including for read-only browser QA; login readiness alone does not resume work. See [Lead pause checkpoint](LEAD_PAUSE_CHECKPOINT_2026-10-28.md).
+
 2026-10-28 00:31 UTC. Lead `lead-r4d-p2-free-01`. **LOCAL_VERIFIED_AWAITING_SINGLE_CTO_TOKEN**. Lead approves the exact limited-release write-set below, conditional on the single CTO token and fresh unchanged-baseline guards. No server writes have occurred. This gate does not grant final Technical/Art PASS or close P2.
 
 Frozen source `e7ed4d068f33ee6ecda491f15dc46a6fd548ef96`; candidate `p2-jungle-static-candidate-03`; 15 browser files /2448161 bytes. Tree SHA256 `d9dba321de0c4c9ba3acf61297b4fe0401a8ea9f0f4069362371dbc94fc0308d`; BUILD_MANIFEST SHA256 `69a46f395278749ab44b81bcd78f0b70f6f1edf2bbd2d30ff536411d16bf5575`. No rebuild or browser-byte edits permitted under this gate.

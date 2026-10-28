@@ -1,0 +1,15 @@
+# P2 Lead — временная мягкая пауза
+
+**PAUSED_SAFE для Lead. Продолжение только после новой явной команды Max.** Прямая pause-команда Max через доверенный Dot подтверждена CTO. Заказ не отменён. Старый stage2, готовность IAB/login, поздние отчёты и свободный release token не разрешают возобновление. Новые задания, QA, tests, generation, build, install, deploy, эксперименты и слоты не начинать; на другое устройство не переносить.
+
+Входной checkpoint Lead: clean/pushed `be43d4ccf07bbead7beadf582ac052731a565520`, branch `codex/r4d-p2-free-lead-01`, worktree `E:/R4D/perspective/p2-worktrees/lead`. Несохранённых product edits или активной атомарной операции у Lead нет. Этот файл и pause-обновление состояния — только безопасный checkpoint, без новой реализации/нагрузки.
+
+P2 limited publication03 завершена, token явно освобождён2026-10-28T00:46:13Z. Новых server writes/reload/rollback не выполнять. URL `https://superflight.space/review/r4d/p2-free-approach/`; live root `/srv/superflight-review/releases/p2-jungle-static-candidate-03`; source `e7ed4d068f33ee6ecda491f15dc46a6fd548ef96`; RELEASE_MANIFEST SHA256 `171a889a53da529d2a668da9811b3f6a9661cdc52ab54a46e254900553cfed35`. Frozen15/tree/BUILD_MANIFEST и raw art/evidence сохранены; ничего не удалено и не пересобрано. [Delivery](builder/DELIVERY_03.md), [gate/release record](LEAD_RELEASE_GATE_03.md), [TQA access](qa/technical/candidate-03-ACCESS-01.md), [VQA access](qa/visual/CANDIDATE_03_REVIEW_ACCESS_01.md).
+
+Текущая граница качества: offline-инварианты и доставка подтверждены; обе QA увидели только login. Authenticated HTTP200/JS MIME/Pixi/UI/download/движение/арт не проверены. P2 не закрыт, slot1 не освобождён; оба слота paused/reserved. Четыре occluders; остальные21/ограда/бортики не покрыты.
+
+Lead не создавал действующих серверов/PID/фоновых задач; собственных незавершённых exec-сессий нет. Ранее открытая Lead-вкладка Review закрыта до pause, браузер ради проверки паузы не открывался. Чужие/неизвестные процессы, Millionko и вкладки Max не затронуты. Reset/clean/switch/global cleanup, secrets/config/credentials reads не выполнялись.
+
+CTO разослал pause четырём P2-ролям напрямую. На первом одноразовом snapshot их новые turns обрабатывают pause: Builder `01a17ffc-12ae-7421-ae49-3409d57637f3`, Artist `01a17ffc-197f-7a63-acef-1017e510a0b9`, TQA `01a17ffc-1ff1-7df3-ab09-f8ebe30bce9e`, VQA `01a17ffc-2614-7160-a5f5-8a5a873130a7`. Это не утверждение о завершённой остановке всех четырёх. Lead массовый pause не дублирует и active ожидание не держит; краткие фактические ACK/пункты продолжения передаёт CTO по доступному snapshot.
+
+Точная следующая операция **только после новой явной команды Max**: прочитать новую границу resume, проверить сохранённый Lead branch/status/checkpoint и собрать адресные resume-разрешения/фактические ACK существующих ролей. Если Max отдельно разрешит browser QA и готова допустимая авторизованная IAB-сессия — тем же TQA/VQA адресно выдать read-only проверку exact опубликованного03 без rebuild/server writes. Сам факт логина не является resume. Старые denied Windows launcher/file-preview ограничения сохраняются.
