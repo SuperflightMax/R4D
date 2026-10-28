@@ -1,5 +1,9 @@
 # P2 candidate04 — checkpoint сериализации доставки
 
+**DELIVERY_UNLOCK_RECEIVED — 2026-10-28T07:47:59Z.** CTO явно освободил P3 token после его delivery/postchecks/docs. Новый04 token не выдан; P2 server_write=false. Lead сверил clean51bcac9738ab6ba36d5ddca2764615473b456e31 и неизменный manifest04. Тот же Builder адресно возобновлён изc4a4b7f…, новый actual turn `01a1817f-0730-7e41-8f75-c9f492480f2b`; первый проверочный вызов `exec-bbe49079-001a-4cb4-8a24-3d3ee06d905d` completed. Выполняется только новый coherent read-only actual baseline и один LOCAL intent04-final-02, если каталог свободен. Ниже сохранена история ожидания/obsolete01; она не является новым блокирующим Max-start. Source/frozen04 и независимую QA не повторять; всех non-P2/P3 bytes касается только opaque preservation. Указанный CTO последний root/manifest/snippet — указатель, не future guard.
+
+## Исторический checkpoint ожидания освобождения окна
+
 **WAIT_SHARED_P3_TOKEN_RELEASE. Candidate04 не опубликован.** CTO выдал эксклюзивное окно доставки P3; выдача токена не подтверждает состоявшийся switch. Это сериализация доставки, не новая продуктовая пауза Max. У P2 нет нового release token, server writes/reload/rollback отсутствуют. Source и независимая QA сохраняют силу; новый общий старт Max не требуется.
 
 Сохранено в `E:/R4D/perspective/p2-worktrees/lead`, branch `codex/r4d-p2-free-lead-01`; до этого checkpoint HEAD `a3871c71b54600ba79c3dee7fa82bd21649e7a31`, status clean.
