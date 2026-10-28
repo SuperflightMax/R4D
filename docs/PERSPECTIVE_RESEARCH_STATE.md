@@ -2,7 +2,16 @@
 
 ## Актуально после outage: PUBLIC Review и отдельный accepted-P1 static report
 
-**C05 PUBLIC served, оба bounded actual QA reviewed; docs/cleanup/window CLOSED.**
+**C05 PUBLIC served, bounded QA accepted; same-token docs/finalization authorised and running.**
+CTO personally accepted exact limited TQA94e125/VQA4b9aa770 and addressed ONLY same
+Builder planned later phase. Fresh idle/cleanb8b87b8 preflight; ONE send exec-f06422d0…
+completed307ms, NEW actual Builder turn `01a18407-e6da-7920-998d-ea9f7673f438` active.
+First completed action exec-88ca6a4b… exit0/own Git+resource checkpoint. Full plan/template
+reread/hash matched; phase-aware RAW/ownership/inode12/resources guards before any
+new render/doc write, append-only exact prefixes1003:27/0640,11normalbackupfiles,
+required final checks and matching own cleanup only. Actual append/cleanup not yet
+confirmed. No new token/build/upload/switch/QA/source change. **Shared window remains
+HELD until explicit CTO RELEASE, including after owned lock removal.**
 Same Builder completed/clean serving commit `b8b87b8fb3a897d13123501caf39e4ebc9db07d5`:
 single switch19:02:30.622116UTC, all16HTTP200/bytes/SHA/MIME/headers first pass19:02:34.797534,
 6JS application/javascript;563files/81dirs/90775981bytes/treee0ed126b… planned exact,
@@ -31,8 +40,8 @@ scope/binding, no explicitdenial/product/race inference; Rootread confirms faile
 primaryreason not returned to Root. VQA surfaceReleased19:31:30.659UTC, paused220,
 viewport/priorvisibility restored/own tab4closed. No further browser tests. Known
 paused94–96/200%/Fit only, no fullmatrix/seedhunt/GPU/device expansion. Same inode12 lock
-HELD/writers stopped. **Docs/cleanup only on further CTO message, window release
-explicit CTO only**, even after QA. Frozen0367/intent05/C04 immutable; no new build,
+HELD at QA checkpoint/writers stopped then. CTO has now authorised same-token
+docs/cleanup continuation; **window release explicit CTO only**. Frozen0367/intent05/C04 immutable; no new build,
 upload/switch/hotfix. Universal black200fix/FullTechnical/Art/P2 closure unverified.
 Full [C05 checkpoint and limitations](../experiments/p2-free-approach/LEAD_DELIVERY_05_CHECKPOINT.md).
 

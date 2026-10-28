@@ -1,6 +1,35 @@
 # P2 candidate05 — малая разрешённая UI-итерация
 
-## Текущее состояние: C05 PUBLIC served, оба bounded actual QA reviewed, docs pending/lock held
+## Текущее состояние: CTO authorised same-token docs/finalization, Builder active
+
+CTO лично принял exact limited TQA94e125 и VQA4b9aa770 после report/hash/image review
+и адресно разрешил planned later docs/finalization SAME executor/SAME C05 token.
+Literal token/nonce только private operational chat/E; не новый token/build/upload/
+switch/QA/research closure. Immutable plan72d578ae… и append-template2603/SHA
+`1a8bead5e3bbca62314f3ea9da648e18d82d95ad40ba19ff690564495ceb925b`
+Lead полностью перечитал и hashes повторно сверил. Fresh Builder preflight:
+servingturn01a183dc… completed/idle/cleanb8b87b8, continuation ещё не существовал.
+
+ONE actual send `exec-f06422d0-d7b4-4b6a-8251-1cbdc6c6c5d2` completed307ms,
+Root turn `01a18406-b0e6-7ce3-a306-651e3363dbce`; NEW actual Builder continuation
+`01a18407-e6da-7920-998d-ea9f7673f438` active. First completed assigned action
+`exec-88ca6a4b-b24c-4184-b333-0548707fe4f8` exit0: own E worktree Git checkpoint
+and host resources. Subsequent first read commands completed; no new server write,
+render receipt/doc append/cleanup result yet independently confirmed by Lead.
+
+Scope exactly phase-aware fresh host/VPS/aggregate4:2 + nonce/inode12/raw PUBLIC05/
+full563+81/16/P1/opaque545/oldC04/vhost/MIME/catalog/current docs76645+293737/
+uid1003:27/0640 guards BEFORE any new remote write. Then only allowlisted honest
+PUBLIC_RENDER_RECEIPT + immutable-template append-only docs through exact temps,
+DOCS_RESULT and final guards/matching own cleanup. Normal backup exactly11files;
+no placeholder rollback or new server paths. Drift/occupied unowned target/denial
+STOP exact action, no adaptation/alternate actor. Actual append/cleanup pending.
+No QA/Artist/P4 wake or optional probes/source changes. Removing own lock later
+**does not release shared window: explicit CTO RELEASE remains required**.
+Root19:42:46 hostfree16.257GiB, C14.149/D16.288/E16.229GiB; own0.1GiB+concurrent4GiB
+RAM allowance healthy. Role resource/phase guards still required for actual writes.
+
+## История: C05 serving и оба bounded actual QA, до docs continuation
 
 **P2_C05_SERVED_AWAIT_CTO_QA_DOCS_PENDING_LOCK_HELD**. Same Builder execution
 `01a183dc-82ff-7813-aef3-fadf6dc3db35` completed/clean; serving handoff original
