@@ -143,9 +143,9 @@ fit();setRun(baseline.rng.seed,false);
 message(ballMesh?`Сцена загружена: ${occluders.length} масок. Художественное качество проверяется отдельно.`:'Диагностический checkpoint: настоящий core/config/projection; художественные ball/shadow и маски ещё не подключены.');
 function frame(now){
  if(playing){
-  accumulator+=Math.min(now-lastFrame,250);
+  accumulator+=Math.max(0,Math.min(now-lastFrame,250));
   const steps=Math.floor(accumulator/baseline.defaults.tickMs);
-  if(steps){accumulator-=steps*baseline.defaults.tickMs;tick=Math.min(run.lastTick,tick+steps);if(tick===run.lastTick)playing=false;render();}
+  if(steps>0){accumulator-=steps*baseline.defaults.tickMs;tick=Math.min(run.lastTick,tick+steps);if(tick===run.lastTick)playing=false;render();}
  }lastFrame=now;requestAnimationFrame(frame);
 }requestAnimationFrame(frame);
 // Small read-only inspection surface for reproducible QA; no state patching.

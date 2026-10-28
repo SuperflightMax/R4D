@@ -18,6 +18,10 @@ const sha=b=>createHash('sha256').update(b).digest('hex');
 const sourceCommit=execFileSync('git',['-C',repo,'rev-parse','HEAD'],{encoding:'utf8'}).trim();
 if(execFileSync('git',['-C',repo,'status','--porcelain=v1','--','experiments/p3-masks/builder'],{encoding:'utf8'}).trim())throw Error('Commit Builder source before freezing');
 const {rolldown}=await import(pathToFileURL(path.join(p1deps,'rolldown/dist/index.mjs')));
+const rolldownVersion=JSON.parse(fs.readFileSync(path.join(p1deps,'rolldown/package.json'),'utf8')).version;
+const pixiVersion=JSON.parse(fs.readFileSync(path.join(p1deps,'pixi.js/package.json'),'utf8')).version;
+if(pixiVersion!=='8.22.0')throw Error('Pinned PixiJS version unavailable');
+const nativeInputBlobs=new Set();
 const plugin={
  name:'exact-native-core',
  resolveId(id,importer){
@@ -29,7 +33,9 @@ const plugin={
   if(id==='\0native-entry')return 'export {createSimRunSession,stepSimRunSession,timeoutSimRunSession} from "./Sim.js";';
   if(id.startsWith('\0native/')){
    const file='packages/sim-core/src/'+id.slice(8);
-   const ts=execFileSync('git',['-C',coreRepo,'show',`${coreCommit}:${file}`],{encoding:'utf8'});
+   const exactBytes=execFileSync('git',['-C',coreRepo,'show',`${coreCommit}:${file}`]);
+   nativeInputBlobs.add(createHash('sha1').update(Buffer.from(`blob ${exactBytes.length}\0`)).update(exactBytes).digest('hex'));
+   const ts=exactBytes.toString('utf8');
    return stripTypeScriptTypes(ts,{mode:'transform',sourceMap:false});
   }
  }
@@ -60,7 +66,8 @@ if(process.env.P3_ARTIST_ASSETS){
  fs.mkdirSync(path.join(output,'assets/artist'));
  fs.writeFileSync(path.join(output,'assets/artist/assets.json'),JSON.stringify({schema:'r4d-p3-assets-v1',sourceSize:[1536,1536],occluders:[],status:'diagnostic: Artist handoff pending'},null,2));
 }
-const meta={schema:'r4d-p3-build-v1',sourceCommit,coreCommit,p1Commit:'4b47db04c7140ebf88f69b91faa0b790d46f22ec',pixi:'8.22.0',artistSource,configSha256:sha(fs.readFileSync(path.join(output,'data/config.json'))),projectionSha256:sha(fs.readFileSync(path.join(output,'data/projection.json'))),builtAt:new Date().toISOString()};
+const nativeProvenance={coreCommit,sourceTreeGitOid:execFileSync('git',['-C',coreRepo,'rev-parse',`${coreCommit}:packages/sim-core/src`],{encoding:'utf8'}).trim(),readMode:'exact Git objects; no source edits',inputGitBlobOids:[...nativeInputBlobs].sort(),nodeVersion:process.versions.node,typescriptTransform:'node:module stripTypeScriptTypes transform; sourceMap=false',bundler:`rolldown ${rolldownVersion}`,minify:true,compiledSha256:sha(fs.readFileSync(path.join(output,'native-core.js')))};
+const meta={schema:'r4d-p3-build-v1',sourceCommit,coreCommit,nativeProvenance,p1Commit:'4b47db04c7140ebf88f69b91faa0b790d46f22ec',pixi:pixiVersion,artistSource,configSha256:sha(fs.readFileSync(path.join(output,'data/config.json'))),projectionSha256:sha(fs.readFileSync(path.join(output,'data/projection.json'))),builtAt:new Date().toISOString()};
 fs.writeFileSync(path.join(output,'build.json'),JSON.stringify(meta,null,2)+'\n');
 const files=[];
 function visit(dir){for(const entry of fs.readdirSync(dir,{withFileTypes:true})){const full=path.join(dir,entry.name);if(entry.isDirectory())visit(full);else{const bytes=fs.readFileSync(full);files.push({path:path.relative(output,full).replaceAll('\\','/'),bytes:bytes.length,sha256:sha(bytes)});}}}
