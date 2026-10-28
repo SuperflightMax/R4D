@@ -4,7 +4,38 @@
 Lead: `lead-r4d-p3-masks-01`, chat `01a17faf-f425-75d1-948a-ed456864701f`.
 CTO: `cto-r4d-perspective-01`, chat `01a174b2-1b0d-79b1-866f-f40e23f6dfb2`.
 
-## Текущее: оба QA завершены, публикационная подготовка frozen01
+## Текущее: exact intent готов, запрошен новый single CTO token
+
+Release preparation завершена, commit
+`ddfe257b68563183fc64b1b678b4cd1bf06e7aca` отправлен. Lead полностью прочитал
+`experiments/p3-masks/release/INTENT_FROZEN_01.md`, baseline guard и нулевой
+контекст catalog delta; независимо сверил actual manifest/archive SHA256.
+Оба совпали. Новый actual Release turn `01a1812a-2672-7e42-b0d0-12fb9da33e59`
+completed/idle, своих процессов/вкладок у Release нет.
+
+- Proposed root `/srv/superflight-review/releases/p3-jungle-masks-frozen-01`;
+- release manifest `381ff209d36f24c1734e2f2012d0b298cb13efd37e928956ceaf00ab967c2937`;
+- transport archive `23a3df76a29b05d8cc7ea17ff1cf0e9e360848a540f15386d26e1a85998f463c`,80568959bytes;
+- fresh baseline06:32:06UTC `/srv/superflight-review/releases/p2-jungle-static-candidate-03`, manifest `171a889a53da529d2a668da9811b3f6a9661cdc52ab54a46e254900553cfed35`;
+- old snippet `d8cf0b3cd5a56241dc86562705daab81da09c648ad1aba8adcf232be2eb23104`, candidate root-only snippet `c67b27e4b179dfe3cb803268435b7558b0c48b8ea8b1018ec709149511be1ba8`;
+- proposed backup `/opt/superflight-studio/backups/review-p3-frozen-01/` пока не создан.
+
+Готовы549browser files/88602877bytes,550сoutermanifest/88710090bytes.
+471 прежний browser-файл сохранён побайтно; старая дельта только
+review/index.html: карточка «Частичный исследовательский результат» и
+счётчик2→3. Пакет P3 не менялся. Existing auth/MIME/security сохраняются.
+Fresh guard/actualinventory и отсутствие proposed root/backup проверяются
+снова непосредственно перед первой записью. При несовпадении — stop,
+возврат CTO, token не переносить на новые bytes/baseline.
+
+Конкретный intent/gate/write-set/rollback отправлены CTO для нового single
+token. До его выдачи server_write=false, remote upload/staging/backup,
+nginx-t/reload/service-doc writes НЕ выполнялись. CTO подтвердил выбранный
+partial outcome и прочитал оба QA; это ещё не серверный token.
+Slot остаётся занят, P3 не опубликован. Следующий шаг — принять фактический
+token и передать exact разрешение существующему Release без расширения.
+
+## Завершённые QA и Lead gate
 
 Итоговая [запись результата](../RESULT.md) подготовлена для частичного
 исследовательского закрытия. TQA и VQA полностью прочитаны Lead:

@@ -1,0 +1,68 @@
+{
+  "server_write": false,
+  "releaseId": "p3-jungle-masks-frozen-01",
+  "proposedRoot": "/srv/superflight-review/releases/p3-jungle-masks-frozen-01",
+  "releaseTree": "E:\\R4D\\perspective\\p3-runtime\\release-engineer\\intent-p3-frozen-01\\release\\p3-jungle-masks-frozen-01",
+  "manifest": {
+    "path": "RELEASE_MANIFEST.json",
+    "bytes": 107213,
+    "sha256": "381ff209d36f24c1734e2f2012d0b298cb13efd37e928956ceaf00ab967c2937"
+  },
+  "archive": {
+    "path": "p3-jungle-masks-frozen-01.tar.gz",
+    "bytes": 80568959,
+    "sha256": "23a3df76a29b05d8cc7ea17ff1cf0e9e360848a540f15386d26e1a85998f463c"
+  },
+  "payload": {
+    "manifestSha256": "e2e9f7d837b3d05f484f75a877af6992a70ee88363add783d80f3c6e206f431f",
+    "manifestBytes": 12815,
+    "payloadFiles": 76,
+    "payloadBytes": 3388537
+  },
+  "publishedFiles": 549,
+  "publishedBytes": 88602877,
+  "totalFiles": 550,
+  "totalBytes": 88710090,
+  "unchangedBaselineFiles": 471,
+  "changedBaselineFiles": [
+    "review/index.html"
+  ],
+  "addedFiles": 77,
+  "catalog": {
+    "path": "review/index.html",
+    "previous_sha256": "84a652cdf90b42416ebfb2c61fc9d02babd19e9bb2905cc2d0451507e7610a4d",
+    "sha256": "759de374bafabe98bcc1d96e297e0972df1439bd7322e3920438ec46eb188694",
+    "previous_bytes": 11371,
+    "bytes": 11955,
+    "added_card_sha256": "65cc660948afcc9108b066604e823b97a2ba30999097aafe598995f5dc8f443e",
+    "perspective_count_before": 2,
+    "perspective_count_after": 3,
+    "reverse_delta_restores_exact_baseline": true
+  },
+  "qa": [
+    {
+      "commit": "c0db64fe4a0204d77be0d3ab61ffe21331d9c90a",
+      "path": "experiments/p3-masks/technical-qa/TQA_REPORT_FROZEN_01.md",
+      "sha256": "689e821a27dd99a5a24944e17022a1d396f1b5ab451549c7754b0c23f4a99502",
+      "bytes": 12623
+    },
+    {
+      "commit": "0f282b89a5d58f6613153ceb385657c8fb761b1d",
+      "path": "experiments/p3-masks/visual-qa/REPORT_FROZEN_01.md",
+      "sha256": "a250791f4ecb3543bd6ed32a79762d98da4fac4e9c3e1db95df5880f3ca1e362",
+      "bytes": 16014
+    }
+  ],
+  "baselineGuard": {
+    "root": "/srv/superflight-review/releases/p2-jungle-static-candidate-03",
+    "manifestSha256": "171a889a53da529d2a668da9811b3f6a9661cdc52ab54a46e254900553cfed35",
+    "snippetSha256": "d8cf0b3cd5a56241dc86562705daab81da09c648ad1aba8adcf232be2eb23104",
+    "snippetRootNormalizedSha256": "1ed5f62aafffd08ff9359fc4b615139006fc2e0e3cbf152b0363b6d0dcb7230f",
+    "candidateSnippetSha256": "c67b27e4b179dfe3cb803268435b7558b0c48b8ea8b1018ec709149511be1ba8",
+    "rootDirectiveCount": 1
+  },
+  "rollbackProposed": "/opt/superflight-studio/backups/review-p3-frozen-01",
+  "rollbackExists": false,
+  "ctotoken": null,
+  "rollbackTargetAbsentReadOnly": true
+}
