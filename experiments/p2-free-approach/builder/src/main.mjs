@@ -1,6 +1,7 @@
 import { Application, Assets, Container, Graphics, Matrix, Rectangle, Sprite, Texture } from 'pixi.js';
 import * as core from '../runtime/sim-core.mjs';
 import { Controller, randomSeed } from './controller.mjs';
+import { PlaybackClock, mergeObservation } from './playback-clock.mjs';
 import { transform } from '../inputs/view-math.mjs';
 
 const $ = id => document.getElementById(id);
@@ -24,7 +25,9 @@ async function main() {
   const sim = new Controller(core, config, provenance, requestedSeed);
   let paused = params.get('paused') === '1';
   let knownContacts = [];
-  let accumulator = 0, runCounter = 0, contactSignature = '', lastSaved = '';
+  const clock = new PlaybackClock(config.defaults.tickMs, Number($('playback-rate').value));
+  let runCounter = 0, contactSignature = '', lastSaved = '';
+  let presentationHistory = [], presentationSequence = 0;
   const observations = [];
   let runId = `observed-${++runCounter}`;
   const stage = $('stage');
@@ -161,7 +164,7 @@ async function main() {
       for (const event of knownContacts) $('contacts').add(new Option(`${event.observedAtTick}: ${event.objectKind} ${event.objectId}`, String(event.observedAtTick)));
     }
     const result = sim.state.result ? ` · ${sim.state.result.kind}${sim.state.result.bucketId ? ' '+sim.state.result.bucketId : ''}` : '';
-    $('status').textContent = `Seed ${sim.seed} · тик ${sim.state.tick} · ${(sim.state.tick*config.defaults.tickMs/1000).toFixed(3)} с · контактов ${contacts.length}${result}`;
+    $('status').textContent = `Seed ${sim.seed} · тик ${sim.state.tick} · ${(sim.state.tick*config.defaults.tickMs/1000).toFixed(3)} с симуляции · ${String(clock.rate).replace('.', ',')}× · контактов ${contacts.length}${result}`;
     if (document.activeElement !== $('seed')) $('seed').value = sim.seed;
     if (document.activeElement !== $('target')) $('target').value = sim.state.tick;
     $('state').textContent = JSON.stringify({ state: sim.snapshot(), lastContact: contacts.at(-1), ballSource: point, radiusPx, occludedBy: occluders.filter(p=>p.ball.visible).map(p=>p.id) }, null, 2);
@@ -169,13 +172,20 @@ async function main() {
     app.render();
   }
 
-  function record(reason) {
-    const item = { id: runId, reason, ...sim.descriptor() };
+  function presentation() {
+    return { schema: 'r4d.p2.presentation.v1', atTick: sim.state.tick,
+      clock: clock.snapshot(), history: structuredClone(presentationHistory) };
+  }
+  function record(reason, details = {}) {
+    presentationHistory.push({ sequence: ++presentationSequence, reason, atTick: sim.state.tick,
+      rate: clock.rate, paused, hidden: document.hidden, zoom: Number($('zoom').value),
+      art: $('art').checked, geometry: $('geometry').checked, ...details });
+    const item = { id: runId, reason, ...sim.descriptor(), presentation: presentation() };
     const i = observations.findIndex(run => run.id === runId);
     const previous = observations[i];
-    const inspectedTicks = [...new Set([...(previous?.inspectedTicks || []), item.tick])];
-    if (i < 0) observations.push({ ...item, inspectedTicks });
-    else observations[i] = { ...(previous.tick > item.tick ? previous : item), inspectedTicks };
+    const merged = mergeObservation(previous, item);
+    if (i < 0) observations.push(merged);
+    else observations[i] = merged;
     return item;
   }
   function save(reason = 'manual') {
@@ -189,27 +199,38 @@ async function main() {
     $('save-status').textContent = `JSON передан браузеру для скачивания: ${filename}`;
     return { filename, checkpoint };
   }
-  function start(seed, reason) {
+  function start(seed, reason, nextPaused = paused) {
     record('superseded'); sim.reset(seed); runId = `observed-${++runCounter}`;
-    accumulator = 0; contactSignature = ''; knownContacts = []; lastSaved = ''; record(reason); render();
+    paused = nextPaused; clock.reset(); presentationHistory = []; presentationSequence = 0;
+    contactSignature = ''; knownContacts = []; lastSaved = ''; record(reason); render();
   }
-  function step(count) { paused = true; accumulator = 0; sim.advance(count); render(); return sim.snapshot(); }
-  function seek(tick) { paused = true; accumulator = 0; sim.seek(tick); contactSignature = ''; render(); return sim.snapshot(); }
-  $('random').onclick = () => { start(randomSeed(), 'ordinary-random'); paused = false; render(); };
-  $('replay').onclick = () => { const seed = sim.seed; start(seed, 'replay'); paused = false; render(); };
-  $('pause').onclick = () => { paused = !paused; accumulator = 0; render(); };
+  function step(count) { paused = true; clock.reset(); sim.advance(count); record('manual-step', { requestedTicks: count }); render(); return sim.snapshot(); }
+  function seek(tick) { paused = true; clock.reset(); sim.seek(tick); contactSignature = ''; record('seek', { requestedTick: tick }); render(); return sim.snapshot(); }
+  function setPlaybackRate(rate) {
+    clock.setRate(rate); $('playback-rate').value = String(rate);
+    record('rate-change'); render(); return presentation();
+  }
+  $('random').onclick = () => start(randomSeed(), 'ordinary-random', false);
+  $('replay').onclick = () => start(sim.seed, 'replay', false);
+  $('pause').onclick = () => { paused = !paused; clock.reset(); record(paused ? 'pause' : 'continue'); render(); };
+  $('playback-rate').onchange = () => setPlaybackRate(Number($('playback-rate').value));
   $('step1').onclick = () => step(1); $('step10').onclick = () => step(10); $('step100').onclick = () => step(100);
   $('seek').onclick = () => seek(Number($('target').value));
-  $('load-seed').onclick = () => { const seed = Number($('seed').value); start(seed, 'explicit-seed'); paused = true; render(); };
+  $('load-seed').onclick = () => start(Number($('seed').value), 'explicit-seed', true);
   $('save').onclick = () => { try { save(); } catch(error) { showError(error); } };
   $('contacts').onchange = () => { if ($('contacts').value) seek(Number($('contacts').value)); };
   $('art').onchange = render; $('geometry').onchange = render;
-  for (const field of [$('seed'), $('target')]) field.onfocus = () => { paused = true; accumulator = 0; render(); };
+  for (const field of [$('seed'), $('target')]) field.onfocus = () => { paused = true; clock.reset(); record('focus-pause'); render(); };
+  clock.setSuspended(document.hidden);
+  document.addEventListener('visibilitychange', () => {
+    clock.setSuspended(document.hidden);
+    record(document.hidden ? 'visibility-hidden' : 'visibility-visible');
+    if (!document.hidden) render();
+  });
   app.ticker.add(ticker => {
     if (!paused && !sim.state.done) {
-      accumulator += ticker.deltaMS;
-      const ticks = Math.min(Math.floor(accumulator / config.defaults.tickMs), sim.maxTicks - sim.state.tick);
-      if (ticks) { sim.advance(ticks); accumulator -= ticks * config.defaults.tickMs; render(); }
+      const ticks = clock.consume(ticker.deltaMS, sim.maxTicks - sim.state.tick);
+      if (ticks) { sim.advance(ticks); if (sim.state.done) clock.reset(); render(); }
     }
     if (sim.state.done && lastSaved !== `${runId}:${sim.state.tick}`) {
       lastSaved = `${runId}:${sim.state.tick}`;
@@ -219,11 +240,11 @@ async function main() {
   });
   window.addEventListener('unhandledrejection', event => showError(event.reason));
   window.p2QA = {
-    snapshot: () => ({ state: sim.snapshot(), seed: sim.seed, contacts: structuredClone(sim.contacts), provenance, art: structuredClone(art), paused }),
-    pause: () => { paused = true; accumulator = 0; render(); },
-    step, seek,
-    replay: seed => { record('before-qa-replay'); start(seed, 'qa-replay'); paused = true; render(); return sim.snapshot(); },
-    random: () => { record('before-qa-random'); start(randomSeed(), 'ordinary-qa-random'); paused = true; render(); return sim.seed; },
+    snapshot: () => ({ state: sim.snapshot(), seed: sim.seed, contacts: structuredClone(sim.contacts), provenance, art: structuredClone(art), paused, presentation: presentation() }),
+    pause: () => { paused = true; clock.reset(); record('qa-pause'); render(); },
+    step, seek, setPlaybackRate,
+    replay: seed => { record('before-qa-replay'); start(seed, 'qa-replay', true); return sim.snapshot(); },
+    random: () => { record('before-qa-random'); start(randomSeed(), 'ordinary-qa-random', true); return sim.seed; },
     finish: () => step(sim.maxTicks),
     setArt: visible => { $('art').checked = visible; render(); },
     setGeometry: visible => { $('geometry').checked = visible; render(); },

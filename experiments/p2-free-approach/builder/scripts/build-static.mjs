@@ -55,9 +55,11 @@ emit('index.html','index.html',[
 emit('src/main.mjs','src/main.js',[
   ["from '../runtime/sim-core.mjs'","from '../runtime/sim-core.js'"],
   ["from './controller.mjs'","from './controller.js'"],
+  ["from './playback-clock.mjs'","from './playback-clock.js'"],
   ["from '../inputs/view-math.mjs'","from '../inputs/view-math.js'"],
 ]);
 emit('src/controller.mjs','src/controller.js');
+emit('src/playback-clock.mjs','src/playback-clock.js');
 emit('inputs/view-math.mjs','inputs/view-math.js');
 for(const file of ['style.css','inputs/config.json']) copy(file,path.join(root,file));
 const accepted=JSON.parse(readFileSync(path.join(root,'inputs/manifest.json'),'utf8'));

@@ -42,6 +42,8 @@ for(const match of html.matchAll(/(?:src|href)="([^"]+)"/g)){
 }
 assert.ok(main.includes("from '../runtime/sim-core.js'"));
 assert.ok(main.includes("from './controller.js'"));
+assert.ok(main.includes("from './playback-clock.js'"));
+assert.ok(manifest.moduleEmissions.some(item=>item.source==='src/playback-clock.mjs'&&item.output==='src/playback-clock.js'));
 assert.ok(main.includes("from '../inputs/view-math.js'"));
 assert.ok(main.includes("new URL('../', import.meta.url)"));
 assert.ok(!/\/api\/checkpoint|method\s*:\s*['"]POST['"]/.test(main));
