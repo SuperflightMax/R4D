@@ -38,11 +38,42 @@ manifest вне browser tree, сохранение прежнего Review, за
 Старые roots, hashes и backup paths не используются как текущий rollback.
 
 В release records есть указатели на локальный `work/REVIEW_HANDOFF.md`,
-четыре серверных документа, service doc и CHANGELOG. Exact актуальные пути
-серверных документов и SSH alias не установлены. В своём worktree файл
-`work/REVIEW_HANDOFF.md` отсутствует (`Test-Path` вернул `False`). Sensitive config,
-credentials, session DB и чужие рабочие копии для их угадывания не читались.
-Доступ и service doc pointers ожидаются от CTO после ответа Max.
+четыре серверных документа, service doc и CHANGELOG. В своём worktree файл
+`work/REVIEW_HANDOFF.md` отсутствует (`Test-Path` вернул `False`).
+
+### Уточнение CTO: доступ и документы установлены
+
+Последующим адресным уточнением Lead передал решённые CTO access pointers;
+повторный вопрос Max не требуется. Existing SSH alias — `vps1-direct`.
+Read-only SSH чтение документов фактически прошло с `BatchMode=yes` и
+`StrictHostKeyChecking=yes`; старые Windows control scripts не запускались.
+Следующим уточнением Lead передал подтверждённые ДотМакса общие pointers:
+immutable roots `/srv/superflight-review/releases/<release-id>` и защищённый
+маршрут `/review/r4d/<slug>/`; P3 slug — `p3-masks` из заказа. Это исторические
+указатели: актуальный live root/manifest сверяется read-only перед записью.
+
+Прочитаны относящиеся к Review сведения runbook, указатели README и полностью
+обязательные INDEX/PROCEDURES. SHA256 самих документов сняты read-only
+`2026-10-28T00:08:49Z` (02:08:49 Europe/Kyiv):
+
+| Документ | SHA256 |
+| --- | --- |
+| `/home/sf/assistant-context/vps/services/superflight-studio.md` | `e793dddd6db66fad7b0548358b2da47d0869a6c20cfa5ea40dbb4149a169e77f` |
+| `/opt/superflight-studio/README_RU.txt` | `7b4e78bcd3bda70daa7ed4203d28b8be367c51cb596c9f54db8ac366ed9f1cf9` |
+| `/home/sf/assistant-context/vps/INDEX.md` | `e925b847f4cf1bb747a68817f7a2755a58c39efccee724ce967649bd65f62064` |
+| `/home/sf/assistant-context/vps/PROCEDURES.md` | `34fb7d9ac43a8b234a86bb6272b23a329afda28b9a1adf4dbf1fda3a56728bc9` |
+
+Процедуры требуют свежую проверку live перед изменением, минимальное
+изменение, проверку runtime/пользовательского пути и обновление service doc
+и `/home/sf/assistant-context/vps/CHANGELOG.md`. Описанный для Review процесс —
+immutable release, атомарная замена только root в
+`/etc/nginx/snippets/review.locations.conf`, `nginx -t` и graceful reload.
+Общий `/test/<slug>/` contour из PROCEDURES не является целью этого выпуска.
+
+Ни historical roots в runbook, ни успешное SSH чтение не подтверждают будущую
+live цель P3. Текущий root/snippet/manifest не читались; config/keys/credentials/
+allowlist/session DB файлы не открывались. P2 products и QA findings не читались.
+Серверных файлов, docs или service state этот проход не менял.
 
 ## Точные входы для следующего прохода
 
@@ -54,7 +85,7 @@ credentials, session DB и чужие рабочие копии для их уг
 | Technical QA | Exact report commit/path; проверенные candidate ID и manifest SHA256, фактические проверки и ограничения. В том числе route-relative static loading и runtime dependencies. |
 | Visual QA | Exact report commit/path для тех же candidate ID и manifest SHA256; просмотренные движение/кадры и честные художественные ограничения. План проверки не заменяет выполненную QA. |
 | Lead/CTO | Принятая disposition именно этого candidate с обеими QA и ограничениями; текст существующей карточки/её минимального дополнения и размещаемых ограничений. Частичное закрытие опыта отдельно от художественного PASS. |
-| CTO | Документированный доступ, актуальные service doc pointers, разрешённый read-only способ получить live root и baseline Review. Перед любыми server/webroot/nginx writes — отдельный single release token с точным bundle hash, baseline и пределами операции. |
+| CTO | После exact candidate/двух QA — подтвердить сериализованное окно и актуальный baseline в release intent. Доступ `vps1-direct` и doc pointers уже переданы. Перед любыми server/webroot/nginx writes — отдельный single release token с точным bundle hash, baseline и пределами операции. |
 
 Builder передаёт готовые проверенные bytes. Release не пересобирает и не
 меняет продукт ради smoke. Изменение bytes после QA означает другой candidate
@@ -71,8 +102,8 @@ Builder передаёт готовые проверенные bytes. Release н
    ограничения и предполагаемый объём изменения каталога. Не заполнять
    отсутствующие значения догадками. Manifest не включает собственный hash;
    hash его точных bytes хранится в intent/записи выпуска.
-3. После передачи документированного доступа получить read-only текущий root,
-   baseline manifest/хеши и сведения о существующем механизме root switch,
+3. Через установленный `vps1-direct` получить read-only текущий root,
+   baseline manifest/хеши и подтвердить существующий механизм root switch,
    auth и отката. Baseline должен учитывать завершившееся окно P2.
    Кандидат и две QA пока отсутствуют, поэтому этот шаг сейчас не выполняется.
 4. Из разрешённого baseline локально подготовить полное новое immutable Review
@@ -101,6 +132,28 @@ Builder передаёт готовые проверенные bytes. Release н
    в разрешённых пределах; вернуть URL, manifest/hash, выполненные проверки,
    ограничения и фактический rollback pointer. Серверные записи по штатному
    учёту append-only; успешный скрипт сам по себе не подтверждает доступность.
+
+### Будущие точные операции с сервером
+
+Ниже план, а не выполненные команды. Значения `live-root`, `release-id` и
+`backup-id` фиксируются фактической проверкой и token, сейчас не придуманы.
+
+| Режим | Target и действие |
+| --- | --- |
+| Read-only после candidate/QA | Через `vps1-direct` перечитать применимые service doc/PROCEDURES; проверить hostname/date, место на диске и статус nginx. Runtime/container metadata — только предусмотренные процедурой сведения о состоянии, без inspect env/auth/config. |
+| Read-only baseline | Из `/etc/nginx/snippets/review.locations.conf` получить только текущую root-директиву, SHA256 и metadata. Secret-bearing config в чат/репозиторий не выводить. Manifest текущего immutable release и opaque inventory использовать только для сохранности paths/bytes; P2 реализации и QA findings не исследовать. Расположение manifest вне served tree подтвердить по текущему release, не угадывать. |
+| Local | Сверить frozen P3 и обе QA; подготовить intent и exact manifest полного нового Review. В E runtime сохранить разрешённый opaque baseline, добавить только P3 и согласованную карточку. До token на VPS ничего не создавать. |
+| Write только по token | Создать согласованный свежий backup под `/opt/superflight-studio/backups/review-p3-<backup-id>/`: exact прежний Review-snippet, root/hash и rollback metadata. Копирование конфигурации остаётся на сервере, секреты не выводятся. |
+| Write только по token | Доставить согласованный immutable release под `/srv/superflight-review/releases/<release-id>/`, со штатным расположением served tree и manifest вне него. Сверить весь tree с manifest, permissions/ownership и сохранность прежних bytes; старые releases не изменять. |
+| Write/control только по token | Подготовить в том же nginx-каталоге candidate snippet, меняя единственный root; проверить byte equality остального и атомарно заменить только `/etc/nginx/snippets/review.locations.conf` с сохранением root:root/0644. `sudo nginx -t` до/после, затем только `sudo systemctl reload nginx`; не restart. |
+| Read-only delivery | Сверить новый root/hash и bytes, статус nginx, target `/review/r4d/p3-masks/`, каталог/старые маршруты и auth-поведение. Authenticated browser проверять только существующим разрешённым способом; отсутствие такой проверки явно назвать, cookies/login не добывать. |
+| Write учёта по token | Добавить запись выпуска/результатов/rollback в `/home/sf/assistant-context/vps/services/superflight-studio.md` и `/home/sf/assistant-context/vps/CHANGELOG.md`. Append-only, без чужих продуктовых выводов. Общие INDEX/README и другие services для этого не менять. |
+
+Если fresh baseline уже отличается от token или live изменился во время
+подготовки, switch не выполнять: вернуть CTO точное расхождение и обновить
+intent в его сериализованном процессе. Разрешение чтения не становится правом
+записи. При denial остановить конкретную операцию и вернуть exact
+action/target/toolcall/reason, не обходить отказ.
 
 ## Минимальный rollback contract
 
