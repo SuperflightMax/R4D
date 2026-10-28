@@ -4,7 +4,7 @@
 Lead: `lead-r4d-p3-masks-01`, chat `01a17faf-f425-75d1-948a-ed456864701f`.
 CTO: `cto-r4d-perspective-01`, chat `01a174b2-1b0d-79b1-866f-f40e23f6dfb2`.
 
-## Текущее: P3 опубликован; готов финальный handoff CTO
+## Текущее: P3 опубликован; финальный handoff передан CTO
 
 Тот же upload session63823 завершился с exact archive SHA256. После полного
 staging550files/modes/ownership и fresh pre-switch guard Release переключил
@@ -32,8 +32,12 @@ Lead полностью прочитал finalreport/evidence и интегри�
 `390e178ecc044cadb9b67f4a2506d5efdc171fef`:
 [DELIVERY_FROZEN_01.md](../release/DELIVERY_FROZEN_01.md),
 [DELIVERY_EVIDENCE.json](../release/DELIVERY_EVIDENCE.json).
-Результат связан с отчётом доставки. Следующее действие Lead — отправить
-CTO точный итоговый handoff и запросить явное освобождение sharedокна.
+Результат связан с отчётом доставки. Финальный handoff с exact identity,
+QA/доставкой/ограничениями/cleanup и запросом явного освобождения окна
+успешно отправлен CTO в07:42:59UTC, send_message_to_thread isError=false,
+target `01a174b2-1b0d-79b1-866f-f40e23f6dfb2`. Передан интеграционный
+commit `2491c0d0bd64d5033ae5307fa098c2e795571ea8`, pushed/clean.
+Дальнейшее решение об окне/слоте — за CTO; адресное подтверждение ожидается.
 До явного CTO release окно/слот не объявляются свободными; P4–P6 не запускаются.
 Собственные вкладки/execsessions/serverprocesses Release завершены.
 
