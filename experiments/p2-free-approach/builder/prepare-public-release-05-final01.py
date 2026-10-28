@@ -346,13 +346,33 @@ def seal():
     assert not git('status', '--porcelain'), 'Dirty preparation checkout: STOP'
     owner = json.loads((WORK / 'LOCAL_OWNERSHIP.json').read_bytes())
     head = git('rev-parse', 'HEAD').decode().strip()
-    assert owner['turn'] == TURN and owner['preparationSourceCommit'] == head and owner['helperSha256'] == sha(Path(__file__).read_bytes())
-    assert json.loads((WORK / 'BASELINE_COMPLETE.json').read_bytes())['phase'] == 'BASELINE_COMPLETE'
+    assert owner['turn'] == TURN and owner['checkpointAtStart'] == START
+    phase = json.loads((WORK / 'BASELINE_COMPLETE.json').read_bytes())
+    assert phase['phase'] == 'BASELINE_COMPLETE' and phase['turn'] == TURN
+    correction = owner['preparationSourceCommit'] != head
+    if correction:
+        # One bounded local packaging correction, original snapshots/owner stay immutable.
+        original = '758b7789134d31b81b6f624e8be36ff6b8be96e5'
+        helper_path = Path(__file__).relative_to(REPO).as_posix()
+        assert owner['preparationSourceCommit'] == original and git('rev-parse', 'HEAD^').decode().strip() == original
+        assert sha(git('show', original + ':' + helper_path)) == owner['helperSha256']
+        assert not (WORK / 'SEALED_COMPLETE.json').exists() and not (WORK / 'TECHNICAL_CORRECTION.json').exists()
+        assert sorted(p.name for p in WORK.iterdir() if p.is_file()) == ['ACTUAL_PUBLIC_FINAL.json', 'ACTUAL_PUBLIC_FINAL.stderr.log', 'ACTUAL_PUBLIC_INITIAL.json', 'ACTUAL_PUBLIC_INITIAL.stderr.log', 'BASELINE_COMPLETE.json', 'HOST_RESOURCES.json', 'LOCAL_OWNERSHIP.json']
+    else:
+        assert owner['helperSha256'] == sha(Path(__file__).read_bytes())
     os.environ['TEMP'] = os.environ['TMP'] = str(WORK / 'tmp')
     os.environ['PYTHONDONTWRITEBYTECODE'] = '1'
     host = resources(); m, old, mraw, report, evidence = pins()
     b0 = json.loads((WORK / 'ACTUAL_PUBLIC_INITIAL.json').read_bytes())
-    b = read_remote(old, 'ACTUAL_PUBLIC_FINAL')
+    assert phase['baselineSha256'] == sha(jb(b0))
+    if correction:
+        correction_receipt = {'turn': TURN, 'phase': 'OWNED_LOCAL_PACKAGE_CORRECTION_BEFORE_FINAL_CREATE', 'originalHelperCommit': original,
+                              'originalHelperSha256': owner['helperSha256'], 'correctedHelperCommit': head, 'correctedHelperSha256': sha(Path(__file__).read_bytes()),
+                              'technicalError': 'catalog counter selector matched additional numeric span(s); assertion before final target creation',
+                              'correction': 'match material-count span explicitly; preserve all previous read-only snapshots; one fresh corrected-phase read',
+                              'ownershipAndPhaseProven': True, 'finalTargetStillAbsent': True, 'noOverwriteOrRenumber': True, 'policyDenial': False, 'server_writes': 0}
+        write_new(WORK / 'TECHNICAL_CORRECTION.json', jb(correction_receipt))
+    b = read_remote(old, 'ACTUAL_PUBLIC_CORRECTED' if correction else 'ACTUAL_PUBLIC_FINAL')
     for key in ('actualRoot', 'before', 'after', 'files', 'directories', 'filesAfter', 'directoriesAfter', 'targets', 'snippetBase64', 'catalogBase64', 'releaseManifestBase64', 'docsBase64'):
         assert b[key] == b0[key], 'Baseline drift since initial read: STOP, no adaptation: ' + key
     packet = {}
@@ -362,6 +382,9 @@ def seal():
     add('HOST_RESOURCES.json', (WORK / 'HOST_RESOURCES.json').read_bytes())
     add('PACKAGE_RESOURCES.json', jb(host))
     add('baseline/ACTUAL_PUBLIC_INITIAL.json', jb(b0)); add('baseline/ACTUAL_PUBLIC.json', jb(b))
+    if correction:
+        add('audit/LOCAL_TECHNICAL_CORRECTION.json', jb(correction_receipt))
+        add('baseline/ACTUAL_PUBLIC_PRECORRECTION.json', (WORK / 'ACTUAL_PUBLIC_FINAL.json').read_bytes())
     for key, name in [('snippetBase64', 'review.locations.conf.before'), ('catalogBase64', 'catalog.before.html'), ('releaseManifestBase64', 'RELEASE_MANIFEST.before.json')]:
         add('baseline/' + name, base64.b64decode(b[key]))
     for path, data in b['docsBase64'].items():
@@ -400,8 +423,9 @@ def seal():
     p1pattern = rb'<a class="card" href="\./r4d/p1-mapping-report/">.*?</a>'
     p1cards = re.findall(p1pattern, catalog, re.S)
     assert len(p1cards) == 1 and p1cards == re.findall(p1pattern, previous_catalog, re.S) == re.findall(p1pattern, updated, re.S)
-    counters = re.findall(rb'<span>\d+ [^<]+</span>', catalog)
-    assert len(counters) == 1 and counters == re.findall(rb'<span>\d+ [^<]+</span>', updated)
+    counter_pattern = r'<span>[0-9]+ материал(?:а|ов)?</span>'.encode()
+    counters = re.findall(counter_pattern, catalog)
+    assert len(counters) == 1 and counters == re.findall(counter_pattern, updated)
     add('payload/review/index.html', updated)
     catalog_delta = {'changedOnly': 'exact existing P2 card; every other byte preserved', 'beforeBytes': len(catalog), 'beforeSha256': sha(catalog),
                      'afterBytes': len(updated), 'afterSha256': sha(updated), 'cardBefore': card_before.decode(), 'cardAfter': card_after.decode(),
@@ -481,7 +505,7 @@ def seal():
     add('EXECUTION_PLAN.md', plan); add('DOCUMENTATION_APPEND_TEMPLATE.md', template)
     intent.update(executionPlanBytes=len(plan), executionPlanSha256=sha(plan), documentationTemplateBytes=len(template), documentationTemplateSha256=sha(template))
     add('RELEASE_INTENT.json', jb(intent))
-    add('LOCAL_OWNERSHIP.json', jb(dict(owner, phase='LOCAL_PACKET_OWNER_SEAL_IS_COMPLETION_MARKER', finalTarget=str(OUT))))
+    add('LOCAL_OWNERSHIP.json', jb(dict(owner, phase='LOCAL_PACKET_OWNER_SEAL_IS_COMPLETION_MARKER', finalTarget=str(OUT), sealingSourceCommit=head, sealingHelperSha256=sha(Path(__file__).read_bytes()))))
     sealed = {'status': 'LOCAL_PACKET_VALIDATED_NOT_AUTHORIZED', 'actualTurnId': TURN, 'server_writes': 0, 'newExactCtoTokenRequired': True, 'newQaRun': False,
               'files': [{'path': n, 'bytes': len(data), 'sha256': sha(data)} for n, data in sorted(packet.items())], 'sealExcludesItself': True}
     add('SEALED_PACKET.json', jb(sealed))
