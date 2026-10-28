@@ -92,3 +92,13 @@ Builder получил сборку Pixi8.17.1/exactnative с generatedfloor1254
 | R01 event/time | Native contact t=>poststate t+1; lifecycle/bucket tick отличаются; timeout через штатный API. | Передано Builder, применено в self-check; независимый actual consumer проход ещё впереди. |
 
 Artist повторно свежо проверен idle/completed, затем адресно продолжил существующее поручение: независимая подготовка far variants/remaining coverage/foreground в новой версии с прежними guards и provenance. Builder получает mini01 сейчас и freeze раннего c01; обе QA остаются idle до exact runtime handoff. Release gate закрыт.
+
+### Актуализация 23:02 UTC
+
+Первый материальный checkpoint — CHECKPOINT_C01.md в этой папке: actual Pixi/native, generated mini01 и первый независимый VQA receiver finding, exact artifact/source/evidence pins. Consumer0c611039246904443128b9d12084af2c5a0ae6e6; handoff a259c8bcbf4f3b242a1f2001f06d14a0e89a6d4d; c01 inventory SHA256a19fea2f7ce677f9fa24c5822e0c411a032bd79fda58c055ff8e386ec474f4ac. Обе QA уже active в новых turns, исходная фраза об idle выше относится к предыдущему переходу.
+
+A04: actual seed1696420279/tick875 sphere на дальнем rim при nativeIN_BUCKET. Приоритетная визуальная проблема; VQA исследует соседние кадры/регистрацию, TQA independently runtime, первичная причина пока не установлена. Не двигать bucket/ball и не маскировать вопрос изменением физики. Исправление по подтверждённому finding в новом candidate.
+
+A03 уточнено: registration mismatch у двух generated foreground edits, rejected сохранены. Адресный следующий способ — явная scene-clipped foreground part из того же generated floor, Artist source-region/provenance + Builder renderer/schema; не скрытая маска, Geometry поверх и Art off отключает всё. C01 не изменяется.
+
+Builder turn01a184bb-7dbb-7c03-b8b1-4e361852627f закрывает license gap и готовит контракт этой дельты; Artist turn01a184ac-9f1c-7313-b8f6-ef0e340a32c5 готовит mini02. Native/P1 invariants сохраняются. Release пока idle, новых серверных чтений/записей нет; его gate закрыт.
