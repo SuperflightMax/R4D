@@ -1,0 +1,766 @@
+{
+  "schema": "r4d.p5.vqa-evidence/1",
+  "candidate": "c01",
+  "assembledUtc": "2026-10-28T23:10:41.442533+00:00",
+  "handoffCommit": "a259c8bcbf4f3b242a1f2001f06d14a0e89a6d4d",
+  "consumerCommit": "0c611039246904443128b9d12084af2c5a0ae6e6",
+  "artistCommit": "5085be86d5b5e9bf22619254f42b95ad3dc1320e",
+  "appSha256": "39d0cc5cdc8e869df975f008057c3c408ed3e41ce40bdd870dd0f001f19f1f44",
+  "stagedManifestSha256": "96305bca8706f22a0cad0537599a30a5ef9ae75bc49d998da5ccc573e55da7b5",
+  "acceptedInputPins": {
+    "schema": "r4d.p5.input-verification/1",
+    "p1Commit": "4b47db04c7140ebf88f69b91faa0b790d46f22ec",
+    "inputs": [
+      {
+        "source": "4b47db04c7140ebf88f69b91faa0b790d46f22ec:experiments/p1-collider-mapping/clean-repeat-01/simulation/boards/01/trial-01/config.json",
+        "destination": "public/data/config.json",
+        "bytes": 9503,
+        "sha256": "dd5c519cd6d4b7295118e0a3a1063efed424a0ce739450bd5153c6a9941982db"
+      },
+      {
+        "source": "4b47db04c7140ebf88f69b91faa0b790d46f22ec:experiments/p1-collider-mapping/clean-repeat-01/simulation/boards/01/trial-01/manifest.json",
+        "destination": "public/data/p1-manifest.json",
+        "bytes": 11565,
+        "sha256": "7784dc0a215d0e472cf06a4eee03793592727cf0fa9a1fa0e0c78e5f1d17da18"
+      },
+      {
+        "source": "4b47db04c7140ebf88f69b91faa0b790d46f22ec:experiments/p1-collider-mapping/clean-repeat-01/simulation/projection.mjs",
+        "destination": "src/p1-projection.mjs",
+        "bytes": 614,
+        "sha256": "b59a0c1e6c34b417d253178457ef3580b8bea0aa89c989d1342f9376e19b9431"
+      },
+      {
+        "source": "4b47db04c7140ebf88f69b91faa0b790d46f22ec:experiments/p1-collider-mapping/clean-repeat-01/viewer/src/view-math.mjs",
+        "destination": "src/p1-view-math.mjs",
+        "bytes": 3050,
+        "sha256": "96f01cc2093c353ff958cb906fe0c8ae93412425d0f7a5ec7cca0f2bf9f1aa5e"
+      }
+    ],
+    "source": {
+      "path": "K:/Agents/R4D/Assets/perspective/01-jungle.jpg",
+      "width": 1536,
+      "height": 1536,
+      "bytes": 671136,
+      "sha256": "c8f9e4245c1de8c2086e615bc75dc10aea59b76b614d6e106593e07262e24f72"
+    },
+    "native": {
+      "commit": "5a6fa03f1cdb3de88a2d9c7dbe795eb8e2a7f023",
+      "tree": "008d16a80a26bb77d562a45218b01da09b0d9ff0"
+    },
+    "counts": {
+      "pins": 25,
+      "segments": 16,
+      "buckets": 4,
+      "drops": 1
+    },
+    "defaults": {
+      "tickMs": 5,
+      "quantizeDigits": 7
+    },
+    "physics": {
+      "gravityY": 980,
+      "maxBallSpeed": 2000,
+      "angleDeviationDeg": 2,
+      "bounceDeviation": 0.02,
+      "wallBounce": 1
+    },
+    "rngAlgorithm": "lcg32",
+    "ballRadius": 16
+  },
+  "start": {
+    "id": "board01-start",
+    "x": 33254.863169496064,
+    "y": 33151.81331014809,
+    "angleDeg": 90,
+    "speed": 0
+  },
+  "browser": {
+    "browser": "Codex IAB",
+    "tabId": "1",
+    "url": "http://127.0.0.1:55185/",
+    "scope": "Own new tab only; no Builder page or personal Chrome use",
+    "listenerOwner": {
+      "pid": 32108,
+      "session": 55195,
+      "root": "E:/R4D/perspective/p5-runtime/builder/output/previews/c01/public",
+      "controlledByVqa": false
+    },
+    "cleanup": "Own tab closed after evidence capture",
+    "closedUtc": "2026-10-28T23:08:28.818Z",
+    "ownPeakEstimateGiB": {
+      "ram": 2,
+      "E": 0.2
+    },
+    "concurrentAllowanceGiB": {
+      "ram": 4,
+      "E": 2
+    }
+  },
+  "viewport": "Unedited 1265x712 browser screenshot pixels. No browser zoom changed. CSS viewport and DPR not separately instrumented; no subpixel visual precision claimed.",
+  "guard": {
+    "observedUtc": "2026-10-28T22:57:16.2665442Z",
+    "systemRamGiB": 31.907,
+    "freeRamGiB": 15.89,
+    "systemCpuPct": 3,
+    "aggregateProcessCpuPct": 3.417,
+    "aggregateWorkingSetGiB": 20.203,
+    "aggregatePrivateGiB": 19.124,
+    "processCount": 444,
+    "diskFreeGiB": {
+      "C": 16.921,
+      "D": 16.282,
+      "E": 12.134
+    }
+  },
+  "ownOrdinaryReplay": {
+    "seed": 3339315606,
+    "selection": "First and only VQA New throw; no hunting or discarded run",
+    "candidate": "c01",
+    "consumerCommit": "0c611039246904443128b9d12084af2c5a0ae6e6",
+    "configSha256": "dd5c519cd6d4b7295118e0a3a1063efed424a0ce739450bd5153c6a9941982db",
+    "coreCommit": "5a6fa03f1cdb3de88a2d9c7dbe795eb8e2a7f023",
+    "p1Commit": "4b47db04c7140ebf88f69b91faa0b790d46f22ec",
+    "startId": "board01-start",
+    "startedObservedUtc": "2026-10-28T23:04:33.437Z",
+    "terminal": {
+      "tick": 1709,
+      "rngU32": 3706765538,
+      "ball": {
+        "pos": {
+          "x": 32982.9916626,
+          "y": 35372.5193698
+        },
+        "vel": {
+          "x": 161.1079593,
+          "y": 1590.6581421
+        }
+      },
+      "nearMissBucketIds": [],
+      "done": true,
+      "result": {
+        "kind": "LOST",
+        "finalX": 32982.9916626,
+        "nearMissBucketIds": []
+      }
+    },
+    "realtimeScreenshotTick": 44,
+    "realtimePreScreenshotAxTick": 34
+  },
+  "navigation": "Builder c01 replay index aca3ca025c5aee9a0fdf7069035ce376207029c38b99f48f0611e650b7a93c4b used only to locate events in already ordinary seeds. Displayed evidence is from own actual browser. No P2-P4/P6 results read.",
+  "limits": [
+    "Early 4/25 pins, 1/4 receivers; no final/artistic/technical/release PASS",
+    "All screenshots returned by getScreenshot were JPEG bytes despite original .png filenames. Bytes and names retained to preserve previously embedded links; actual MIME/dimensions recorded here. No transcode/edit.",
+    "Expanded debug captures can have different scroll. The consistent contact captures have debug collapsed.",
+    "Realtime first screenshot tick44 differs from pre-screenshot AX tick34; separately recorded, not a frozen frame.",
+    "These metadata checks do not replace visible assessment or independent TQA"
+  ],
+  "files": [
+    {
+      "path": "E:/R4D/perspective/p5-runtime/visual-qa/evidence/c01/BROWSER_OWNER.json",
+      "bytes": 542,
+      "sha256": "ca361395f27cb3c68962a41385c6b23e81139dad27a1f39f33e6fff0a4befe02"
+    },
+    {
+      "path": "E:/R4D/perspective/p5-runtime/visual-qa/evidence/c01/initial-whole-geometry.png",
+      "bytes": 125070,
+      "sha256": "699313e9547ea69299fe5bdfaf081addf30d633eaefd4f472a5bfbf92d66c711",
+      "mimeType": "image/jpeg",
+      "renderedViewportScreenshotPx": [
+        1265,
+        712
+      ],
+      "origin": "Own Codex IAB tab 1 actual screenshot, original returned bytes, unedited",
+      "seed": 0,
+      "stateTick": 0,
+      "framing": "whole",
+      "art": true,
+      "geometry": true
+    },
+    {
+      "path": "E:/R4D/perspective/p5-runtime/visual-qa/evidence/c01/INTEGRITY.json",
+      "bytes": 7355,
+      "sha256": "c60fe4e0cf26827f817d46383b3e1de6deab6a3250fc8d006c4cf41b86ac2ca1"
+    },
+    {
+      "path": "E:/R4D/perspective/p5-runtime/visual-qa/evidence/c01/own-ordinary-realtime-later-whole-art.ax.txt",
+      "bytes": 2122,
+      "sha256": "a867b81291f0c9d43bf0b906de80459338bad787828d231fe7823fb11ad87bbc"
+    },
+    {
+      "path": "E:/R4D/perspective/p5-runtime/visual-qa/evidence/c01/own-ordinary-realtime-later-whole-art.png",
+      "bytes": 111129,
+      "sha256": "e84968599c9008383324501474dde6079dc27cc8929c5102d1d31898adb36468",
+      "mimeType": "image/jpeg",
+      "renderedViewportScreenshotPx": [
+        1265,
+        712
+      ],
+      "origin": "Own Codex IAB tab 1 actual screenshot, original returned bytes, unedited",
+      "seed": 3339315606,
+      "stateTick": 1709,
+      "realtimeTerminal": true,
+      "framing": "whole",
+      "art": true,
+      "geometry": false,
+      "axEvidencePath": "E:/R4D/perspective/p5-runtime/visual-qa/evidence/c01/own-ordinary-realtime-later-whole-art.ax.txt"
+    },
+    {
+      "path": "E:/R4D/perspective/p5-runtime/visual-qa/evidence/c01/own-ordinary-start-whole-art.ax.txt",
+      "bytes": 2121,
+      "sha256": "c620823bac9dc005e5431e199eba76a43e83288020c6f267ffb9b6b8d2ec81db"
+    },
+    {
+      "path": "E:/R4D/perspective/p5-runtime/visual-qa/evidence/c01/own-ordinary-start-whole-art.png",
+      "bytes": 110943,
+      "sha256": "52fe62643bdc2835a9014a8b0fad115af6e987ca6493c3ab1a1f9b821dafaca4",
+      "mimeType": "image/jpeg",
+      "renderedViewportScreenshotPx": [
+        1265,
+        712
+      ],
+      "origin": "Own Codex IAB tab 1 actual screenshot, original returned bytes, unedited",
+      "seed": 3339315606,
+      "screenshotVisibleTick": 44,
+      "preScreenshotAxTick": 34,
+      "realtime": true,
+      "framing": "whole",
+      "art": true,
+      "geometry": false,
+      "axEvidencePath": "E:/R4D/perspective/p5-runtime/visual-qa/evidence/c01/own-ordinary-start-whole-art.ax.txt"
+    },
+    {
+      "path": "E:/R4D/perspective/p5-runtime/visual-qa/evidence/c01/own-ordinary-terminal.ax.txt",
+      "bytes": 7288,
+      "sha256": "6c25a8926823f3adbeda6d7e9c33fe54424651555c00b22fee3932b5464166ee"
+    },
+    {
+      "path": "E:/R4D/perspective/p5-runtime/visual-qa/evidence/c01/OWN_REPLAY.json",
+      "bytes": 934,
+      "sha256": "c6a145d5338d2323d4dd871deaf4ef69f7a81f01aa3da7a9def3f77dc47344ac"
+    },
+    {
+      "path": "E:/R4D/perspective/p5-runtime/visual-qa/evidence/c01/RECEIVER_DIAGNOSIS.json",
+      "bytes": 1424,
+      "sha256": "63f31c60cc64a0dac5230d367001a7c02e7db6f075bdb66e8461c87332d13774"
+    },
+    {
+      "path": "E:/R4D/perspective/p5-runtime/visual-qa/evidence/c01/seed0-t1715-field-art-consistent.ax.txt",
+      "bytes": 2118,
+      "sha256": "a1e5bb0656e9e8cff6c337ecb64db1daa474b62d1e6344a989668590563b7b26"
+    },
+    {
+      "path": "E:/R4D/perspective/p5-runtime/visual-qa/evidence/c01/seed0-t1715-field-art-consistent.png",
+      "bytes": 140598,
+      "sha256": "f559364184ef72e4dad226dd16cc99a76c3766d1265aae4c46f1c1b50e254204",
+      "mimeType": "image/jpeg",
+      "renderedViewportScreenshotPx": [
+        1265,
+        712
+      ],
+      "origin": "Own Codex IAB tab 1 actual screenshot, original returned bytes, unedited",
+      "seed": 0,
+      "stateTick": 1715,
+      "framing": "field",
+      "art": true,
+      "geometry": false,
+      "axEvidencePath": "E:/R4D/perspective/p5-runtime/visual-qa/evidence/c01/seed0-t1715-field-art-consistent.ax.txt"
+    },
+    {
+      "path": "E:/R4D/perspective/p5-runtime/visual-qa/evidence/c01/seed0-t1715-field-art.ax.txt",
+      "bytes": 7155,
+      "sha256": "b287be840fc480447171c5c880bca8698828febd4f141d8441f8391777a4321d"
+    },
+    {
+      "path": "E:/R4D/perspective/p5-runtime/visual-qa/evidence/c01/seed0-t1715-field-art.png",
+      "bytes": 146465,
+      "sha256": "a97c30d521899c9a8695fc54f0d228b155f9ba034b775a66c49a2764c011d265",
+      "mimeType": "image/jpeg",
+      "renderedViewportScreenshotPx": [
+        1265,
+        712
+      ],
+      "origin": "Own Codex IAB tab 1 actual screenshot, original returned bytes, unedited",
+      "seed": 0,
+      "stateTick": 1715,
+      "framing": "field",
+      "art": true,
+      "geometry": false,
+      "axEvidencePath": "E:/R4D/perspective/p5-runtime/visual-qa/evidence/c01/seed0-t1715-field-art.ax.txt"
+    },
+    {
+      "path": "E:/R4D/perspective/p5-runtime/visual-qa/evidence/c01/seed0-t1716-field-art-consistent.ax.txt",
+      "bytes": 2118,
+      "sha256": "bc27ec3aedfec0f7719a9b5db0fd47c3d01137fe11c1c5577c6c717351d7c659"
+    },
+    {
+      "path": "E:/R4D/perspective/p5-runtime/visual-qa/evidence/c01/seed0-t1716-field-art-consistent.png",
+      "bytes": 144901,
+      "sha256": "5c44861a3fe66c1b339f66d15e8005182fc9f71ce15f4b3b39466116ae171f35",
+      "mimeType": "image/jpeg",
+      "renderedViewportScreenshotPx": [
+        1265,
+        712
+      ],
+      "origin": "Own Codex IAB tab 1 actual screenshot, original returned bytes, unedited",
+      "seed": 0,
+      "stateTick": 1716,
+      "framing": "field",
+      "art": true,
+      "geometry": false,
+      "axEvidencePath": "E:/R4D/perspective/p5-runtime/visual-qa/evidence/c01/seed0-t1716-field-art-consistent.ax.txt"
+    },
+    {
+      "path": "E:/R4D/perspective/p5-runtime/visual-qa/evidence/c01/seed0-t1716-field-art.ax.txt",
+      "bytes": 7153,
+      "sha256": "47c654680564a841bb52a8f745d23a1ce547515cd24896c45976c6885cdbb19f"
+    },
+    {
+      "path": "E:/R4D/perspective/p5-runtime/visual-qa/evidence/c01/seed0-t1716-field-art.png",
+      "bytes": 101531,
+      "sha256": "4e8d605d2e43280dadce546de4edcbd1245e9858afbb1332145bef5b6bdb6c64",
+      "mimeType": "image/jpeg",
+      "renderedViewportScreenshotPx": [
+        1265,
+        712
+      ],
+      "origin": "Own Codex IAB tab 1 actual screenshot, original returned bytes, unedited",
+      "seed": 0,
+      "stateTick": 1716,
+      "framing": "field",
+      "art": true,
+      "geometry": false,
+      "axEvidencePath": "E:/R4D/perspective/p5-runtime/visual-qa/evidence/c01/seed0-t1716-field-art.ax.txt"
+    },
+    {
+      "path": "E:/R4D/perspective/p5-runtime/visual-qa/evidence/c01/seed0-t1717-field-art-consistent.ax.txt",
+      "bytes": 2118,
+      "sha256": "5982b846cff38d18574b32882578e14b856478c60d27d47f9b493412e223f80c"
+    },
+    {
+      "path": "E:/R4D/perspective/p5-runtime/visual-qa/evidence/c01/seed0-t1717-field-art-consistent.png",
+      "bytes": 144879,
+      "sha256": "7f19231340c0657c0426b92024ba3a7a34b955532d6c4732f7de00176d2dfeac",
+      "mimeType": "image/jpeg",
+      "renderedViewportScreenshotPx": [
+        1265,
+        712
+      ],
+      "origin": "Own Codex IAB tab 1 actual screenshot, original returned bytes, unedited",
+      "seed": 0,
+      "stateTick": 1717,
+      "framing": "field",
+      "art": true,
+      "geometry": false,
+      "axEvidencePath": "E:/R4D/perspective/p5-runtime/visual-qa/evidence/c01/seed0-t1717-field-art-consistent.ax.txt"
+    },
+    {
+      "path": "E:/R4D/perspective/p5-runtime/visual-qa/evidence/c01/seed0-t1717-field-art-geometry.ax.txt",
+      "bytes": 7182,
+      "sha256": "a428ab27337d7bfe43625ee4fc7a1b54b3850471f9c9cd2f74067e8125caac43"
+    },
+    {
+      "path": "E:/R4D/perspective/p5-runtime/visual-qa/evidence/c01/seed0-t1717-field-art-geometry.png",
+      "bytes": 153605,
+      "sha256": "212e20d0646c4a47786ed7b8e51bc0f48119555c0a29c3fa267a0dc37cfe873d",
+      "mimeType": "image/jpeg",
+      "renderedViewportScreenshotPx": [
+        1265,
+        712
+      ],
+      "origin": "Own Codex IAB tab 1 actual screenshot, original returned bytes, unedited",
+      "seed": 0,
+      "stateTick": 1717,
+      "framing": "field",
+      "art": true,
+      "geometry": true,
+      "axEvidencePath": "E:/R4D/perspective/p5-runtime/visual-qa/evidence/c01/seed0-t1717-field-art-geometry.ax.txt"
+    },
+    {
+      "path": "E:/R4D/perspective/p5-runtime/visual-qa/evidence/c01/seed0-t1717-field-art.ax.txt",
+      "bytes": 7154,
+      "sha256": "9acda5ba5cb690186363b9f31be5dca0fb20a90492584b663529dd4055147f58"
+    },
+    {
+      "path": "E:/R4D/perspective/p5-runtime/visual-qa/evidence/c01/seed0-t1717-field-art.png",
+      "bytes": 101524,
+      "sha256": "9a2add1f10dc0a1c08972908c7dbfbfa9017c584670fe59594a63703b5ff7057",
+      "mimeType": "image/jpeg",
+      "renderedViewportScreenshotPx": [
+        1265,
+        712
+      ],
+      "origin": "Own Codex IAB tab 1 actual screenshot, original returned bytes, unedited",
+      "seed": 0,
+      "stateTick": 1717,
+      "framing": "field",
+      "art": true,
+      "geometry": false,
+      "axEvidencePath": "E:/R4D/perspective/p5-runtime/visual-qa/evidence/c01/seed0-t1717-field-art.ax.txt"
+    },
+    {
+      "path": "E:/R4D/perspective/p5-runtime/visual-qa/evidence/c01/seed0-t1956-whole-art-absent-receiver03.ax.txt",
+      "bytes": 2116,
+      "sha256": "7d73606ac953fff843644d85f760bd12b3a99620302cacbe6ceba3bd9d4f59a3"
+    },
+    {
+      "path": "E:/R4D/perspective/p5-runtime/visual-qa/evidence/c01/seed0-t1956-whole-art-absent-receiver03.png",
+      "bytes": 118423,
+      "sha256": "ad4c6fced95a189b0402375ed893e9a60180915f9f6a2623729aae19aef28482",
+      "mimeType": "image/jpeg",
+      "renderedViewportScreenshotPx": [
+        1265,
+        712
+      ],
+      "origin": "Own Codex IAB tab 1 actual screenshot, original returned bytes, unedited",
+      "seed": 0,
+      "stateTick": 1956,
+      "framing": "whole",
+      "art": true,
+      "geometry": false,
+      "axEvidencePath": "E:/R4D/perspective/p5-runtime/visual-qa/evidence/c01/seed0-t1956-whole-art-absent-receiver03.ax.txt"
+    },
+    {
+      "path": "E:/R4D/perspective/p5-runtime/visual-qa/evidence/c01/seed1696420279-t833-field-art.ax.txt",
+      "bytes": 2153,
+      "sha256": "8db69b843a178a3bdcce7f3fb471ecc62da5bd87270566860be92bfba716cb3d"
+    },
+    {
+      "path": "E:/R4D/perspective/p5-runtime/visual-qa/evidence/c01/seed1696420279-t833-field-art.png",
+      "bytes": 148097,
+      "sha256": "2c668327ca2bd5bea44cce04b2d48e905c0f0cff3a28b51da67c0899d5b99a6a",
+      "mimeType": "image/jpeg",
+      "renderedViewportScreenshotPx": [
+        1265,
+        712
+      ],
+      "origin": "Own Codex IAB tab 1 actual screenshot, original returned bytes, unedited",
+      "seed": 1696420279,
+      "stateTick": 833,
+      "framing": "field",
+      "art": true,
+      "geometry": false,
+      "axEvidencePath": "E:/R4D/perspective/p5-runtime/visual-qa/evidence/c01/seed1696420279-t833-field-art.ax.txt"
+    },
+    {
+      "path": "E:/R4D/perspective/p5-runtime/visual-qa/evidence/c01/seed1696420279-t834-art.png",
+      "bytes": 111287,
+      "sha256": "b87dc31fc902e3168708165119accb1e8a23bdd1eafbf067703df07f1c44e95a",
+      "mimeType": "image/jpeg",
+      "renderedViewportScreenshotPx": [
+        1265,
+        712
+      ],
+      "origin": "Own Codex IAB tab 1 actual screenshot, original returned bytes, unedited",
+      "seed": 1696420279,
+      "stateTick": 834,
+      "framing": "whole",
+      "art": true,
+      "geometry": false
+    },
+    {
+      "path": "E:/R4D/perspective/p5-runtime/visual-qa/evidence/c01/seed1696420279-t834-field-art.ax.txt",
+      "bytes": 2153,
+      "sha256": "c722449e62b44024f669f65ce6c0a6f465323e96c6a714eec1c2dd57bdfe3d4e"
+    },
+    {
+      "path": "E:/R4D/perspective/p5-runtime/visual-qa/evidence/c01/seed1696420279-t834-field-art.png",
+      "bytes": 145325,
+      "sha256": "856e9f95d3c4e098c00b3be4de1be01d65b93d95242b938969dbef724484f0a3",
+      "mimeType": "image/jpeg",
+      "renderedViewportScreenshotPx": [
+        1265,
+        712
+      ],
+      "origin": "Own Codex IAB tab 1 actual screenshot, original returned bytes, unedited",
+      "seed": 1696420279,
+      "stateTick": 834,
+      "framing": "field",
+      "art": true,
+      "geometry": false,
+      "axEvidencePath": "E:/R4D/perspective/p5-runtime/visual-qa/evidence/c01/seed1696420279-t834-field-art.ax.txt"
+    },
+    {
+      "path": "E:/R4D/perspective/p5-runtime/visual-qa/evidence/c01/seed1696420279-t835-art.png",
+      "bytes": 115357,
+      "sha256": "cad610546dccd78912c3baa52053d98d827780e53fbb34c6aa2db3f5ad7233db",
+      "mimeType": "image/jpeg",
+      "renderedViewportScreenshotPx": [
+        1265,
+        712
+      ],
+      "origin": "Own Codex IAB tab 1 actual screenshot, original returned bytes, unedited",
+      "seed": 1696420279,
+      "stateTick": 835,
+      "framing": "whole",
+      "art": true,
+      "geometry": false
+    },
+    {
+      "path": "E:/R4D/perspective/p5-runtime/visual-qa/evidence/c01/seed1696420279-t835-field-art.ax.txt",
+      "bytes": 2153,
+      "sha256": "4c457c6503d0fa234bff41aafa287290980ca1321185c685957d95ecc3ca7bf2"
+    },
+    {
+      "path": "E:/R4D/perspective/p5-runtime/visual-qa/evidence/c01/seed1696420279-t835-field-art.png",
+      "bytes": 145230,
+      "sha256": "ed7f5b14632bc0e10c2e769431347fbf922a3f76e91b868a21270f852860ce7a",
+      "mimeType": "image/jpeg",
+      "renderedViewportScreenshotPx": [
+        1265,
+        712
+      ],
+      "origin": "Own Codex IAB tab 1 actual screenshot, original returned bytes, unedited",
+      "seed": 1696420279,
+      "stateTick": 835,
+      "framing": "field",
+      "art": true,
+      "geometry": false,
+      "axEvidencePath": "E:/R4D/perspective/p5-runtime/visual-qa/evidence/c01/seed1696420279-t835-field-art.ax.txt"
+    },
+    {
+      "path": "E:/R4D/perspective/p5-runtime/visual-qa/evidence/c01/seed1696420279-t836-art.png",
+      "bytes": 115340,
+      "sha256": "3518438b7e4f5e295ce2a7a41794e19a229915c6fe976f5a3378b1e5360aa6ee",
+      "mimeType": "image/jpeg",
+      "renderedViewportScreenshotPx": [
+        1265,
+        712
+      ],
+      "origin": "Own Codex IAB tab 1 actual screenshot, original returned bytes, unedited",
+      "seed": 1696420279,
+      "stateTick": 836,
+      "framing": "whole",
+      "art": true,
+      "geometry": false
+    },
+    {
+      "path": "E:/R4D/perspective/p5-runtime/visual-qa/evidence/c01/seed1696420279-t836-field-art.ax.txt",
+      "bytes": 2153,
+      "sha256": "9fdcc0e80ff6b513cb1bdd73baf8d4b9dae974153a0d584130b93ad3e2706514"
+    },
+    {
+      "path": "E:/R4D/perspective/p5-runtime/visual-qa/evidence/c01/seed1696420279-t836-field-art.png",
+      "bytes": 145293,
+      "sha256": "47be485cfccf83d78e90d665673c8e9d16e2d11e53dd09d93026c587a17df368",
+      "mimeType": "image/jpeg",
+      "renderedViewportScreenshotPx": [
+        1265,
+        712
+      ],
+      "origin": "Own Codex IAB tab 1 actual screenshot, original returned bytes, unedited",
+      "seed": 1696420279,
+      "stateTick": 836,
+      "framing": "field",
+      "art": true,
+      "geometry": false,
+      "axEvidencePath": "E:/R4D/perspective/p5-runtime/visual-qa/evidence/c01/seed1696420279-t836-field-art.ax.txt"
+    },
+    {
+      "path": "E:/R4D/perspective/p5-runtime/visual-qa/evidence/c01/seed1696420279-t860-whole-art.ax.txt",
+      "bytes": 2147,
+      "sha256": "fd9393b7936dfbe63a7d1531838cdcefb4001d6afee4e92493d0c01ea07cbb07"
+    },
+    {
+      "path": "E:/R4D/perspective/p5-runtime/visual-qa/evidence/c01/seed1696420279-t860-whole-art.png",
+      "bytes": 118643,
+      "sha256": "29e5aa65c6b71e0a4a2adeb3f712fc6b4829028550a40b4aef58bba84e184789",
+      "mimeType": "image/jpeg",
+      "renderedViewportScreenshotPx": [
+        1265,
+        712
+      ],
+      "origin": "Own Codex IAB tab 1 actual screenshot, original returned bytes, unedited",
+      "seed": 1696420279,
+      "stateTick": 860,
+      "framing": "whole",
+      "art": true,
+      "geometry": false,
+      "axEvidencePath": "E:/R4D/perspective/p5-runtime/visual-qa/evidence/c01/seed1696420279-t860-whole-art.ax.txt"
+    },
+    {
+      "path": "E:/R4D/perspective/p5-runtime/visual-qa/evidence/c01/seed1696420279-t870-whole-art.ax.txt",
+      "bytes": 2147,
+      "sha256": "d1feb6c555fa067ead02ec7dc23aeca330b8e018d0b2325e54f51410ebff2e29"
+    },
+    {
+      "path": "E:/R4D/perspective/p5-runtime/visual-qa/evidence/c01/seed1696420279-t870-whole-art.png",
+      "bytes": 118560,
+      "sha256": "2ae2e3dff05ad641fd68ea0b0e50e2b121fc557817c041b2041d073bea3060b0",
+      "mimeType": "image/jpeg",
+      "renderedViewportScreenshotPx": [
+        1265,
+        712
+      ],
+      "origin": "Own Codex IAB tab 1 actual screenshot, original returned bytes, unedited",
+      "seed": 1696420279,
+      "stateTick": 870,
+      "framing": "whole",
+      "art": true,
+      "geometry": false,
+      "axEvidencePath": "E:/R4D/perspective/p5-runtime/visual-qa/evidence/c01/seed1696420279-t870-whole-art.ax.txt"
+    },
+    {
+      "path": "E:/R4D/perspective/p5-runtime/visual-qa/evidence/c01/seed1696420279-t874-art.png",
+      "bytes": 115282,
+      "sha256": "6e5695e69a8bdcd35fbbd50feafbe2e67e4b242105f90e20ebea61b90a0f9e78",
+      "mimeType": "image/jpeg",
+      "renderedViewportScreenshotPx": [
+        1265,
+        712
+      ],
+      "origin": "Own Codex IAB tab 1 actual screenshot, original returned bytes, unedited",
+      "seed": 1696420279,
+      "stateTick": 874,
+      "framing": "whole",
+      "art": true,
+      "geometry": false
+    },
+    {
+      "path": "E:/R4D/perspective/p5-runtime/visual-qa/evidence/c01/seed1696420279-t874-whole-art.ax.txt",
+      "bytes": 2147,
+      "sha256": "639455d964fca18054d1c6e2318749952953d250f0e45524ff2db91c5a44a231"
+    },
+    {
+      "path": "E:/R4D/perspective/p5-runtime/visual-qa/evidence/c01/seed1696420279-t874-whole-art.png",
+      "bytes": 118545,
+      "sha256": "a89e4a683db38892af882414dd2fe5950c9d4d6599c7a146962ec1ee45882436",
+      "mimeType": "image/jpeg",
+      "renderedViewportScreenshotPx": [
+        1265,
+        712
+      ],
+      "origin": "Own Codex IAB tab 1 actual screenshot, original returned bytes, unedited",
+      "seed": 1696420279,
+      "stateTick": 874,
+      "framing": "whole",
+      "art": true,
+      "geometry": false,
+      "axEvidencePath": "E:/R4D/perspective/p5-runtime/visual-qa/evidence/c01/seed1696420279-t874-whole-art.ax.txt"
+    },
+    {
+      "path": "E:/R4D/perspective/p5-runtime/visual-qa/evidence/c01/seed1696420279-t875-art.png",
+      "bytes": 115889,
+      "sha256": "18a787b518ca6bf19ed152dff7387ba3ac14e08c5b958b22e9b724903f94e8d7",
+      "mimeType": "image/jpeg",
+      "renderedViewportScreenshotPx": [
+        1265,
+        712
+      ],
+      "origin": "Own Codex IAB tab 1 actual screenshot, original returned bytes, unedited",
+      "seed": 1696420279,
+      "stateTick": 875,
+      "framing": "whole",
+      "art": true,
+      "geometry": false
+    },
+    {
+      "path": "E:/R4D/perspective/p5-runtime/visual-qa/evidence/c01/seed1696420279-t875-data.ax.txt",
+      "bytes": 7280,
+      "sha256": "d84eefb11ae33c83ee0536dc063914bb40082e261fa1c812311e6c24f4e51d3e"
+    },
+    {
+      "path": "E:/R4D/perspective/p5-runtime/visual-qa/evidence/c01/seed1696420279-t875-field-art-geometry.ax.txt",
+      "bytes": 7294,
+      "sha256": "6ab1effd94101fb125aba5018140da1822003e1c653ff89acf81e1040361e2be"
+    },
+    {
+      "path": "E:/R4D/perspective/p5-runtime/visual-qa/evidence/c01/seed1696420279-t875-field-art-geometry.png",
+      "bytes": 148926,
+      "sha256": "6927ec23cc34a45ac5408e497e3c50f8c7ff76f65898c4f88e57599d038e1bad",
+      "mimeType": "image/jpeg",
+      "renderedViewportScreenshotPx": [
+        1265,
+        712
+      ],
+      "origin": "Own Codex IAB tab 1 actual screenshot, original returned bytes, unedited",
+      "seed": 1696420279,
+      "stateTick": 875,
+      "framing": "field",
+      "art": true,
+      "geometry": true,
+      "axEvidencePath": "E:/R4D/perspective/p5-runtime/visual-qa/evidence/c01/seed1696420279-t875-field-art-geometry.ax.txt"
+    },
+    {
+      "path": "E:/R4D/perspective/p5-runtime/visual-qa/evidence/c01/seed1696420279-t875-field-art.png",
+      "bytes": 140714,
+      "sha256": "6f34ec526dd410a3bfb271d178699852654e17e2626f0b8ddbe3b60debe00e27",
+      "mimeType": "image/jpeg",
+      "renderedViewportScreenshotPx": [
+        1265,
+        712
+      ],
+      "origin": "Own Codex IAB tab 1 actual screenshot, original returned bytes, unedited",
+      "seed": 1696420279,
+      "stateTick": 875,
+      "framing": "field",
+      "art": true,
+      "geometry": false
+    },
+    {
+      "path": "E:/R4D/perspective/p5-runtime/visual-qa/evidence/c01/seed1696420279-t875-whole-art.ax.txt",
+      "bytes": 2151,
+      "sha256": "0482859ac334741ad1a9c0a0c8f9581480f035a3043c0564308b078ce08865cf"
+    },
+    {
+      "path": "E:/R4D/perspective/p5-runtime/visual-qa/evidence/c01/seed1696420279-t875-whole-art.png",
+      "bytes": 115889,
+      "sha256": "18a787b518ca6bf19ed152dff7387ba3ac14e08c5b958b22e9b724903f94e8d7",
+      "mimeType": "image/jpeg",
+      "renderedViewportScreenshotPx": [
+        1265,
+        712
+      ],
+      "origin": "Own Codex IAB tab 1 actual screenshot, original returned bytes, unedited",
+      "seed": 1696420279,
+      "stateTick": 875,
+      "framing": "whole",
+      "art": true,
+      "geometry": false,
+      "axEvidencePath": "E:/R4D/perspective/p5-runtime/visual-qa/evidence/c01/seed1696420279-t875-whole-art.ax.txt"
+    },
+    {
+      "path": "E:/R4D/perspective/p5-runtime/visual-qa/evidence/c01/seed1696420279-t875-whole-geometry-only.ax.txt",
+      "bytes": 2163,
+      "sha256": "381098a5b8908c0cb4b6635ff80d6e0fae69028a5b428c4aa4968ec90e7138c6"
+    },
+    {
+      "path": "E:/R4D/perspective/p5-runtime/visual-qa/evidence/c01/seed1696420279-t875-whole-geometry-only.png",
+      "bytes": 36609,
+      "sha256": "3dcd580dc3d35b855af641cda1331601e6737d4519b67e3ffcc4b878ca5dd019",
+      "mimeType": "image/jpeg",
+      "renderedViewportScreenshotPx": [
+        1265,
+        712
+      ],
+      "origin": "Own Codex IAB tab 1 actual screenshot, original returned bytes, unedited",
+      "seed": 1696420279,
+      "stateTick": 875,
+      "framing": "whole",
+      "art": false,
+      "geometry": true,
+      "axEvidencePath": "E:/R4D/perspective/p5-runtime/visual-qa/evidence/c01/seed1696420279-t875-whole-geometry-only.ax.txt"
+    },
+    {
+      "path": "E:/R4D/perspective/p5-runtime/visual-qa/evidence/c01/seed1696420279-terminal-hold-whole-art.ax.txt",
+      "bytes": 2151,
+      "sha256": "0482859ac334741ad1a9c0a0c8f9581480f035a3043c0564308b078ce08865cf"
+    },
+    {
+      "path": "E:/R4D/perspective/p5-runtime/visual-qa/evidence/c01/seed1696420279-terminal-hold-whole-art.png",
+      "bytes": 115889,
+      "sha256": "18a787b518ca6bf19ed152dff7387ba3ac14e08c5b958b22e9b724903f94e8d7",
+      "mimeType": "image/jpeg",
+      "renderedViewportScreenshotPx": [
+        1265,
+        712
+      ],
+      "origin": "Own Codex IAB tab 1 actual screenshot, original returned bytes, unedited",
+      "seed": 1696420279,
+      "stateTick": 875,
+      "framing": "whole",
+      "art": true,
+      "geometry": false,
+      "axEvidencePath": "E:/R4D/perspective/p5-runtime/visual-qa/evidence/c01/seed1696420279-terminal-hold-whole-art.ax.txt"
+    }
+  ]
+}

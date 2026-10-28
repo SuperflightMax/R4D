@@ -1,14 +1,16 @@
 # Visual QA P5 — текущее состояние
 
-Обновлено 2026-10-28 22:26 UTC / 29 октября Europe/Kyiv.
+Обновлено 2026-10-28 23:11 UTC / 29 октября Europe/Kyiv.
 
 - Роль действующая, адресный Stage 2 открыт после публикации P4; новый найм/подагенты не создавались.
 - Канон заказа R4D `64061757802dc60770ab156ef5672af741d65d03`, контракт Lead `5ae51fa0342689cb0ad4b5b5d5681ddc16b60e81:experiments/p5-regenerated-objects/coordination/STAGE2.md` полностью прочитан.
 - Завершена независимая подготовка: просмотр exact Jungle, чтение и hash/bytes verification четырёх exact P1 файлов, чтение общего recipe P0, предметные ориентиры арта/масштаба/света/теней/контактов/receiver.
 - Результат и ограничения: [PREPARATION.md](PREPARATION.md). Численные source-space опоры: [SOURCE_FACTS.json](SOURCE_FACTS.json); воспроизведение `python experiments/p5-regenerated-objects/qa/visual/measure_source.py` из корня собственного worktree с TEMP/TMP в own E runtime.
 - Source evidence: неизменённый `K:/Agents/R4D/Assets/perspective/01-jungle.jpg`, SHA-256 `c8f9e4245c1de8c2086e615bc75dc10aea59b76b614d6e106593e07262e24f72`, фактически просмотрен в original detail. Не публиковался как копия.
-- Успех подготовки не является PASS будущего generated арта. Consumer/asset candidate не получен; native/browser/motion/baskets/frozen QA не проводились. Технический/художественный вердикты отсутствуют.
-- Следующий нужный вход от Lead: schema+manifest, exact ранний candidate/bytes и owner PID/session/URL/root либо воспроизводимый preview; обычные replay cases. Не ждать полного набора 25 перед ранним просмотром.
-- После получения: fresh resource guard; независимый просмотр реальной сборки и кадров до/во/после событий, конкретные коррекции по первичной причине; затем адресная проверка значимых изменений и exact frozen bytes. Не исправлять проверяемый продукт самостоятельно.
-- Изоляция: все команды cwd `E:/R4D/perspective/p5-worktrees/visual-qa`, branch `codex/r4d-p5-regenerated-visual-qa-01`; own runtime `E:/R4D/perspective/p5-runtime/visual-qa`. UI C: — stub. Свой server/PID/browser session не создавался, cleanup не требуется. Server writes 0, release gate закрыт.
-- Guard, actual limits и непройденные свойства сохранены в PREPARATION; перед тяжёлым продолжением перечитать contract и освежить guard. P2–P4/P6 inputs не открывались.
+- Получен и реально просмотрен early c01: consumer `0c611039246904443128b9d12084af2c5a0ae6e6`, Artist `5085be86d5b5e9bf22619254f42b95ad3dc1320e`, полный handoff `a259c8bcbf4f3b242a1f2001f06d14a0e89a6d4d`. Все22public files и4HTTP files совпали по hash/bytes; c01 не менялся.
+- [REPORT_C01.md](REPORT_C01.md): художественный PASS не выставлен. Семейства/материалы и опора четырёх показанных предметов содержательны; C01-V01 — terminal875 оставляет сферу у дальнего обода receiver01. C01-V02 — рекомендация расширить Field framing для готового приёмника. Общий mapping дефект не доказан; сама VQA продукт не исправляла.
+- Actual own IAB: seeds1696420279/0, указанные контактные окна до/во/после, art/geometry, receiver01 874/875/terminal hold. Один собственный обычный seed3339315606 сохранён: LOST1709, без отбора. Неполные21pins/3receivers, широкие перекрытия и frozen QA остаются unverified.
+- Exact pins и55evidence files/28screenshots: [EVIDENCE_C01.json](EVIDENCE_C01.json). Тяжёлые bytes только `E:/R4D/perspective/p5-runtime/visual-qa/evidence/c01/`. Screenshot API вернул JPEG bytes под первоначальными `.png` именами; исходные bytes/ссылки сохранены, MIME честно записан. Ошибка первоначального PNG-header assertion исправлена в собственном metadata indexer; это не runtime/policy defect c01.
+- Следующий нужный вход от Lead: новый exact candidate с коррекцией aperture/ball registration и/или framing, затем полный generated coverage/frozen handoff. Значимую дельту проверять адресно; не повторять законченные матрицы ради статуса, не исправлять проверяемый продукт самостоятельно.
+- Изоляция: все команды cwd `E:/R4D/perspective/p5-worktrees/visual-qa`, branch `codex/r4d-p5-regenerated-visual-qa-01`; own runtime `E:/R4D/perspective/p5-runtime/visual-qa`. UI C: — stub. Своя IAB tab1 закрыта после capture. Own server не запускался; Builder PID32108/session55195 не менялся. Deploy/Review writes0, release gate закрыт.
+- Последний guard, actual limits и непройденные свойства сохранены в REPORT_C01/EVIDENCE_C01; перед тяжёлым продолжением освежить guard. PREPARATION остаётся исходным ориентиром. P2–P4/P6 inputs не открывались.
