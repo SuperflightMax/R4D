@@ -8,7 +8,7 @@ $taskMeasures=Get-Content -LiteralPath (Join-Path $taskRuntime 'manifests/image-
 $taskContours=@(Get-Content -LiteralPath (Join-Path $taskOwn 'records/contact-contour-measurements.json') -Raw|ConvertFrom-Json -AsHashtable)+@(Get-Content -LiteralPath (Join-Path $taskRuntime 'manifests/contact-contours.mini-02.json') -Raw|ConvertFrom-Json -AsHashtable)
 $taskCopies=Get-Content -LiteralPath (Join-Path $taskRuntime 'manifests/copy-records.jsonl')|ForEach-Object{$_|ConvertFrom-Json -AsHashtable}
 $taskInvocations=Get-Content -LiteralPath (Join-Path $taskOwn 'records/tool-invocations.mini02.json') -Raw|ConvertFrom-Json -AsHashtable
-$taskRegions=Get-Content -LiteralPath (Join-Path $taskOwn 'foreground-regions.mini-02.json') -Raw|ConvertFrom-Json -AsHashtable
+$taskRegions=Get-Content -LiteralPath (Join-Path $taskOwn 'FOREGROUND_AUTHORING.mini-02.json') -Raw|ConvertFrom-Json -AsHashtable
 function Write-P5Json([string]$Name,$Value){$taskText=($Value|ConvertTo-Json -Depth 24)-replace "`r`n","`n";[IO.File]::WriteAllText((Join-Path $taskOwn $Name),$taskText+"`n",[Text.UTF8Encoding]::new($false))}
 function Copy-P5Object($Value){return ($Value|ConvertTo-Json -Depth 24|ConvertFrom-Json -AsHashtable)}
 $taskFiles=[System.Collections.Generic.HashSet[string]]::new()
