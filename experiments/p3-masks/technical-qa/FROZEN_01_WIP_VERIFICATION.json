@@ -1,0 +1,1214 @@
+{
+  "candidate": "P3-frozen-01",
+  "utc": "2026-10-28T00:47:47.581Z",
+  "sourceCommit": "f1aca21e7b9ba19001e7e8762fcaf2511bf9bf74",
+  "artistCommit": "f899a308aed156a11e2a1013292ed68c6669959d",
+  "manifestSha256": "e2e9f7d837b3d05f484f75a877af6992a70ee88363add783d80f3c6e206f431f",
+  "payloadFiles": 76,
+  "payloadBytes": 3388537,
+  "totalFiles": 77,
+  "totalBytes": 3401352,
+  "served": [
+    {
+      "path": "app.js",
+      "bytes": 14778,
+      "sha256": "89583e2e73040e0f8eaa5a0e8de63ee3f3d2022c42ca67d79b16b882b2a48542",
+      "contentType": "text/javascript; charset=utf-8"
+    },
+    {
+      "path": "assets/artist/assets.json",
+      "bytes": 13060,
+      "sha256": "98cef793f5cf9191fea315caf4bf11d727c20b2d5a9d5704972e97e02cfd2f73",
+      "contentType": "application/json"
+    },
+    {
+      "path": "assets/artist/assets/ball-v1.png",
+      "bytes": 995000,
+      "sha256": "c40b8e5fd774b0b03979bd52eb0c19b23b4fee0a009b6e0fa8cc1d93c8c3935f",
+      "contentType": "image/png"
+    },
+    {
+      "path": "assets/artist/assets/shadow-v1.png",
+      "bytes": 534365,
+      "sha256": "8c27af99276d888ad05dfaa5138808261b20ed7b3ef9cbd7071e15d6c7ee1c99",
+      "contentType": "image/png"
+    },
+    {
+      "path": "assets/artist/handoff.json",
+      "bytes": 8617,
+      "sha256": "cde185e79a7ad730e933ea4cc9f80c542f337ad6d7c9d6cd07d491414b42475d",
+      "contentType": "application/json"
+    },
+    {
+      "path": "assets/artist/masks/board-front-fascia.png",
+      "bytes": 4732,
+      "sha256": "6ff31d95a8a633c99455689edf58b40b6d59cb6b29c2e1c6d5e4233c1787a5f2",
+      "contentType": "image/png"
+    },
+    {
+      "path": "assets/artist/masks/far-ramp-01.png",
+      "bytes": 1758,
+      "sha256": "7416574cea072d108c107506ce800f4d754dbac1968472d07fa020206f17b666",
+      "contentType": "image/png"
+    },
+    {
+      "path": "assets/artist/masks/far-ramp-02.png",
+      "bytes": 1801,
+      "sha256": "563cf584ddb8e7cc5eb88ac205e27e8cf3eaef52f98540d8da3b430fb93b97a7",
+      "contentType": "image/png"
+    },
+    {
+      "path": "assets/artist/masks/far-ramp-03.png",
+      "bytes": 1953,
+      "sha256": "c4fc894e5ad8b0661832a3b228735ea4e8f3f7c1acfd1805770745fcab226fb9",
+      "contentType": "image/png"
+    },
+    {
+      "path": "assets/artist/masks/flower-01.png",
+      "bytes": 1740,
+      "sha256": "f9d5a2b7a298b7c354a698c36b4646399011de33c3b9e029d4a6c5e22abef1eb",
+      "contentType": "image/png"
+    },
+    {
+      "path": "assets/artist/masks/flower-02.png",
+      "bytes": 1836,
+      "sha256": "f6d99801ad9466e11d86e2b986abb816286c282c41c2e94dc24e32041e14917f",
+      "contentType": "image/png"
+    },
+    {
+      "path": "assets/artist/masks/flower-03.png",
+      "bytes": 1874,
+      "sha256": "47d6b4773217a48ff28679bf7b2facefd74fa69c9ad3024db2ea4720ca72a38c",
+      "contentType": "image/png"
+    },
+    {
+      "path": "assets/artist/masks/flower-04.png",
+      "bytes": 1974,
+      "sha256": "5a583b7a0b16af76066beae8a35cad07f48eda2f91a2aeaab133877870f308c0",
+      "contentType": "image/png"
+    },
+    {
+      "path": "assets/artist/masks/flower-05.png",
+      "bytes": 1995,
+      "sha256": "761f7c4effff3213b1955371dcfa8bc356704ed7c058158562e2f8b69fde77cf",
+      "contentType": "image/png"
+    },
+    {
+      "path": "assets/artist/masks/flower-06.png",
+      "bytes": 2020,
+      "sha256": "9b16370b889b20816c56de702efab8a83f9d103cb6e1cd4d81afc538fe8ca47a",
+      "contentType": "image/png"
+    },
+    {
+      "path": "assets/artist/masks/flower-07.png",
+      "bytes": 2148,
+      "sha256": "538808ca90b4c7e3d0155cf1c62a4171b46e8038c972c5d5cefe9bc919b0cdd0",
+      "contentType": "image/png"
+    },
+    {
+      "path": "assets/artist/masks/frog-01.png",
+      "bytes": 2092,
+      "sha256": "a8dee1247136d567ade68ca2968b7e70330af29d3f4c7232043dac8d8a4c8e46",
+      "contentType": "image/png"
+    },
+    {
+      "path": "assets/artist/masks/frog-02.png",
+      "bytes": 2209,
+      "sha256": "cac8f260b4a199cbc312d9d52d4b9bd76b79243db3d3d5063d08bf4959a509a6",
+      "contentType": "image/png"
+    },
+    {
+      "path": "assets/artist/masks/frog-03.png",
+      "bytes": 2198,
+      "sha256": "0d9a9901ada8b60dce634bcb0040a6e77feaa0a0f0daf8057e88b7ad92185e96",
+      "contentType": "image/png"
+    },
+    {
+      "path": "assets/artist/masks/frog-04.png",
+      "bytes": 2355,
+      "sha256": "6d567c7cc451b4895592c02d84b992d1d797cef3c8ec78bf2e37462b116b7554",
+      "contentType": "image/png"
+    },
+    {
+      "path": "assets/artist/masks/frog-05.png",
+      "bytes": 2488,
+      "sha256": "c4991cc9b01ac2ef58143e6be806d9fa8190f3f05012a68cff1da1468391de6f",
+      "contentType": "image/png"
+    },
+    {
+      "path": "assets/artist/masks/leaf-01.png",
+      "bytes": 2373,
+      "sha256": "126c2b969cde0ae68156e5d2c7f7c6e28faabec949e9bde87dbd2c781aabcc7e",
+      "contentType": "image/png"
+    },
+    {
+      "path": "assets/artist/masks/leaf-02.png",
+      "bytes": 2697,
+      "sha256": "55d0cfccb1923f69c477c25781d93aa6d8a6d2d11d973e19c7f6dcb6a72587e6",
+      "contentType": "image/png"
+    },
+    {
+      "path": "assets/artist/masks/leaf-03.png",
+      "bytes": 2603,
+      "sha256": "44f9123a40896fe321fd5f139e261e50304acea23cf98d187701fa70cd8d9445",
+      "contentType": "image/png"
+    },
+    {
+      "path": "assets/artist/masks/leaf-04.png",
+      "bytes": 2822,
+      "sha256": "3dbe7c1502641232a9f051c029fff2759ef4ef35e343c3dbd357d67ff8856c9b",
+      "contentType": "image/png"
+    },
+    {
+      "path": "assets/artist/masks/leaf-05.png",
+      "bytes": 2904,
+      "sha256": "db5ba11e0cf1855ac7b55442906f7f861ac49483d987e74ebac292175b70a5c4",
+      "contentType": "image/png"
+    },
+    {
+      "path": "assets/artist/masks/rail-left-middle.png",
+      "bytes": 8033,
+      "sha256": "81677b6ffd8d2229350a8494775b9fc668c8639fda704330bbfa246ce18d3ee3",
+      "contentType": "image/png"
+    },
+    {
+      "path": "assets/artist/masks/rail-left-near.png",
+      "bytes": 5891,
+      "sha256": "4feaeca468a1d5226dd7235eb1bd7f225f2017aaa7c440e214b02c0af4ce3d3d",
+      "contentType": "image/png"
+    },
+    {
+      "path": "assets/artist/masks/rail-left-upper.png",
+      "bytes": 8265,
+      "sha256": "87791affee48d25767edc177f951332e28729dde1fa7b67f1e8f0ec24e5ac7e4",
+      "contentType": "image/png"
+    },
+    {
+      "path": "assets/artist/masks/rail-right-middle.png",
+      "bytes": 7204,
+      "sha256": "28929c5d1d9e49e9a248b1d1df3b271aaceb694b113a0b5281ba43b91a981034",
+      "contentType": "image/png"
+    },
+    {
+      "path": "assets/artist/masks/rail-right-near.png",
+      "bytes": 6535,
+      "sha256": "33ece6f687df3bc25b7344138d6e0d31a6a6c916cbf4317e432cf8370232bd0d",
+      "contentType": "image/png"
+    },
+    {
+      "path": "assets/artist/masks/rail-right-upper.png",
+      "bytes": 7593,
+      "sha256": "74c592cf0c2a93533d13fbeff759ee92609570ee0b846ecf1ee598742a35c8dc",
+      "contentType": "image/png"
+    },
+    {
+      "path": "assets/artist/masks/receiver-01-front-1.png",
+      "bytes": 1922,
+      "sha256": "b0f43e8d88ff67572db00ebe16eb2a843577e538a0b91497f70dcda463132a0c",
+      "contentType": "image/png"
+    },
+    {
+      "path": "assets/artist/masks/receiver-01-front-2.png",
+      "bytes": 1778,
+      "sha256": "b414ede3ddf18ca252495dce0a9445dd85fd64be2677701e775e1670d33945de",
+      "contentType": "image/png"
+    },
+    {
+      "path": "assets/artist/masks/receiver-01-front-3.png",
+      "bytes": 1419,
+      "sha256": "d9ca446e6b396f24eb83ae7a6b04025bd68b4306899ccf516258e419e44a65ce",
+      "contentType": "image/png"
+    },
+    {
+      "path": "assets/artist/masks/receiver-01-front-4.png",
+      "bytes": 1877,
+      "sha256": "10ac1094bab32bedcbc01ea17b76272e929ee6efe840194b518f781ca2b63d8f",
+      "contentType": "image/png"
+    },
+    {
+      "path": "assets/artist/masks/receiver-02-front-1.png",
+      "bytes": 1926,
+      "sha256": "34fa79016f5c3df7722f0491530e6f510b5da46ccf6c4b529629b05275404f40",
+      "contentType": "image/png"
+    },
+    {
+      "path": "assets/artist/masks/receiver-02-front-2.png",
+      "bytes": 1664,
+      "sha256": "f071b61c1b4f45482302768db00cfdcf61abdd833ca3e66d4b039834862eead3",
+      "contentType": "image/png"
+    },
+    {
+      "path": "assets/artist/masks/receiver-02-front-3.png",
+      "bytes": 1559,
+      "sha256": "188134ae3934ee23e59af1a02b30781a936c886660a9792be5f3a94181a5ce54",
+      "contentType": "image/png"
+    },
+    {
+      "path": "assets/artist/masks/receiver-02-front-4.png",
+      "bytes": 1638,
+      "sha256": "31a550072370609628e6601cd10dacd1f6b565753b431a4b24525fccfdc4301e",
+      "contentType": "image/png"
+    },
+    {
+      "path": "assets/artist/masks/receiver-03-front-1.png",
+      "bytes": 1473,
+      "sha256": "79a36b182ab3d62bd544c46a9c9988d7826f812350f7795f8be86649fe56dad3",
+      "contentType": "image/png"
+    },
+    {
+      "path": "assets/artist/masks/receiver-03-front-2.png",
+      "bytes": 1462,
+      "sha256": "adb233716ef07f2698a28f3a77309acfdba1a65a10fad5c7b2584b1974488c0d",
+      "contentType": "image/png"
+    },
+    {
+      "path": "assets/artist/masks/receiver-03-front-3.png",
+      "bytes": 1662,
+      "sha256": "d89119c4d36da9a861dc8f068f59be6aa7f13a0528986a130605180216608ba9",
+      "contentType": "image/png"
+    },
+    {
+      "path": "assets/artist/masks/receiver-03-front-4.png",
+      "bytes": 1787,
+      "sha256": "057aa33165fad28492c00e3fd5737a3ed16774fe2e21f4efb38426ecd5a057b1",
+      "contentType": "image/png"
+    },
+    {
+      "path": "assets/artist/masks/receiver-04-front-1.png",
+      "bytes": 1907,
+      "sha256": "56bb83c5ea328b7ada8818cf37756904f47f248e2f9ea8f25b33afe5841c7cbf",
+      "contentType": "image/png"
+    },
+    {
+      "path": "assets/artist/masks/receiver-04-front-2.png",
+      "bytes": 1556,
+      "sha256": "eff5699380a3e8879c9c408f2753e5f79aed0de18553712f88579bea81b2d25c",
+      "contentType": "image/png"
+    },
+    {
+      "path": "assets/artist/masks/receiver-04-front-3.png",
+      "bytes": 1750,
+      "sha256": "f91c2c5f40b75fb5151a70b8016dff48f24dbff2ac32fa57bc3f7371836baf54",
+      "contentType": "image/png"
+    },
+    {
+      "path": "assets/artist/masks/receiver-04-front-4.png",
+      "bytes": 1913,
+      "sha256": "bf1b503ad300d5c854e026753665e3976582993a92808ec503035407604c6fa7",
+      "contentType": "image/png"
+    },
+    {
+      "path": "assets/artist/masks/wood-01.png",
+      "bytes": 1707,
+      "sha256": "7a2f85e7736c40c2023786756e9b8dc19bb5a961b27ec54c0e0d3044e9b2b9fc",
+      "contentType": "image/png"
+    },
+    {
+      "path": "assets/artist/masks/wood-02.png",
+      "bytes": 1707,
+      "sha256": "7a2f85e7736c40c2023786756e9b8dc19bb5a961b27ec54c0e0d3044e9b2b9fc",
+      "contentType": "image/png"
+    },
+    {
+      "path": "assets/artist/masks/wood-03.png",
+      "bytes": 1750,
+      "sha256": "addb12fce96a592ca3261af648cf8b262a48f3ac755cae4b60195d4e6fe9e7e8",
+      "contentType": "image/png"
+    },
+    {
+      "path": "assets/artist/masks/wood-04.png",
+      "bytes": 1819,
+      "sha256": "9c64ead0ce29eec98ce12d3148fb4f1e50ba2574b3da9851ab1cb29e7d17b816",
+      "contentType": "image/png"
+    },
+    {
+      "path": "assets/artist/masks/wood-05.png",
+      "bytes": 1766,
+      "sha256": "52a40a7f68a6b3c85beb6d8176bd128c2d72da2c2fed6b898cf7a079a9682ef7",
+      "contentType": "image/png"
+    },
+    {
+      "path": "assets/artist/masks/wood-06.png",
+      "bytes": 1793,
+      "sha256": "df473ec82bc2932e01db4a6ac054534d327553024421fcffb5a013732bf95e6f",
+      "contentType": "image/png"
+    },
+    {
+      "path": "assets/artist/masks/wood-07.png",
+      "bytes": 2030,
+      "sha256": "394f554372a4f9723f15d8a76108ee2c2fbaddcdbfeb7b17ee52cf8d1b5af8c7",
+      "contentType": "image/png"
+    },
+    {
+      "path": "assets/artist/masks/wood-08.png",
+      "bytes": 2014,
+      "sha256": "c806b617b41621ae56d73c35e321805022da933a741d13aa3ff194106856ec7a",
+      "contentType": "image/png"
+    },
+    {
+      "path": "assets/jungle.jpg",
+      "bytes": 671136,
+      "sha256": "c8f9e4245c1de8c2086e615bc75dc10aea59b76b614d6e106593e07262e24f72",
+      "contentType": "image/jpeg"
+    },
+    {
+      "path": "build.json",
+      "bytes": 1777,
+      "sha256": "8889c22628e896ab812d8d1eec4d16aa2f19a0a9840de0f50f8df848cf8e82e4",
+      "contentType": "application/json"
+    },
+    {
+      "path": "data/config.json",
+      "bytes": 9503,
+      "sha256": "dd5c519cd6d4b7295118e0a3a1063efed424a0ce739450bd5153c6a9941982db",
+      "contentType": "application/json"
+    },
+    {
+      "path": "data/manifest.json",
+      "bytes": 11565,
+      "sha256": "7784dc0a215d0e472cf06a4eee03793592727cf0fa9a1fa0e0c78e5f1d17da18",
+      "contentType": "application/json"
+    },
+    {
+      "path": "data/projection.json",
+      "bytes": 40346,
+      "sha256": "9ca9e520f1927426a3a5ba73a5eacaf90fedffc9385e7d08d5b1e6ee644b020c",
+      "contentType": "application/json"
+    },
+    {
+      "path": "index.html",
+      "bytes": 3161,
+      "sha256": "c034b5a176c5113a96c9e6443f96fe102b492484d1610c835de4b79d6b6e2a19",
+      "contentType": "text/html; charset=utf-8"
+    },
+    {
+      "path": "native-core.js",
+      "bytes": 21490,
+      "sha256": "af8e6dea9ee5c46759f99ba3b68f4afa91c740b4fd2aba2d2d3f65bfa66753fa",
+      "contentType": "text/javascript; charset=utf-8"
+    },
+    {
+      "path": "replays/index.json",
+      "bytes": 1802,
+      "sha256": "63b366925d018e8e0c965299d5270ae2dd1202a939f5a1642daa2b208b12e557",
+      "contentType": "application/json"
+    },
+    {
+      "path": "replays/seed-0-tick-1503.json",
+      "bytes": 11016,
+      "sha256": "21c67564b1d78b7205dd1dc3b00235c6c0239e06bf46634060523620375b32f1",
+      "contentType": "application/json"
+    },
+    {
+      "path": "replays/seed-0-tick-1956.json",
+      "bytes": 11100,
+      "sha256": "11c62bc75e244e5bda600d5ed0ff2d08cd3a87fd111da16f03ab5c4ed058de24",
+      "contentType": "application/json"
+    },
+    {
+      "path": "replays/seed-1199311181-tick-1367.json",
+      "bytes": 11115,
+      "sha256": "c48d49d2d37f4b8f82a940f7bcfd69ffe1db4e0d46a4b07b09b95449e2b39389",
+      "contentType": "application/json"
+    },
+    {
+      "path": "replays/seed-2099436614-tick-487.json",
+      "bytes": 11035,
+      "sha256": "4826db6f49d7f815d77f99c50a223ddb4803671fc2c17aab40055e9229995d1a",
+      "contentType": "application/json"
+    },
+    {
+      "path": "replays/seed-2099436614-tick-747.json",
+      "bytes": 11140,
+      "sha256": "dbaad2db57839e04db25640215c7105cfa0d0dec6b253b00f45028c00b1f22dc",
+      "contentType": "application/json"
+    },
+    {
+      "path": "replays/seed-2818447218-tick-762.json",
+      "bytes": 11138,
+      "sha256": "1b8d7f448adfe1effc6b6226152759211bedd7a16c78203993df59b45eef03ea",
+      "contentType": "application/json"
+    },
+    {
+      "path": "replays/seed-3925936860-tick-1256.json",
+      "bytes": 11143,
+      "sha256": "89e38371839b18be54232ad3d17f03da2ad70c0349d9118fdcc75ac7cc5832b9",
+      "contentType": "application/json"
+    },
+    {
+      "path": "run-model.js",
+      "bytes": 2598,
+      "sha256": "e9a990e5918117cf0cb319a942b55ca13eadd8197d4d6b7edc7fdb2375de25dd",
+      "contentType": "text/javascript; charset=utf-8"
+    },
+    {
+      "path": "style.css",
+      "bytes": 2256,
+      "sha256": "9dc0e5b447e59f6cbef6cfd5b24d1c9edbcda0154c01a728ac12b0b5fa1f38a9",
+      "contentType": "text/css; charset=utf-8"
+    },
+    {
+      "path": "vendor/PIXI-LICENSE.txt",
+      "bytes": 1092,
+      "sha256": "5ce7447bc57f7349ffc48338782fbcabe613696e00712b20d66bc58e780f9473",
+      "contentType": "text/plain; charset=utf-8"
+    },
+    {
+      "path": "vendor/pixi.js",
+      "bytes": 841282,
+      "sha256": "a073adb40aaa803fd19066c21997a09f895397e98a5555be8bd0a7c57873d4ef",
+      "contentType": "text/javascript; charset=utf-8"
+    },
+    {
+      "path": "view-math.js",
+      "bytes": 3050,
+      "sha256": "96f01cc2093c353ff958cb906fe0c8ae93412425d0f7a5ec7cca0f2bf9f1aa5e",
+      "contentType": "text/javascript; charset=utf-8"
+    },
+    {
+      "path": "file-manifest.json",
+      "bytes": 12815,
+      "sha256": "e2e9f7d837b3d05f484f75a877af6992a70ee88363add783d80f3c6e206f431f",
+      "contentType": "application/json"
+    }
+  ],
+  "sourceLinkedFiles": [
+    "app.js",
+    "index.html",
+    "run-model.js",
+    "style.css",
+    "data/config.json",
+    "data/manifest.json",
+    "data/projection.json",
+    "view-math.js",
+    "assets/artist/assets.json",
+    "assets/artist/assets/ball-v1.png",
+    "assets/artist/assets/shadow-v1.png",
+    "assets/artist/masks/leaf-01.png",
+    "assets/artist/masks/flower-01.png",
+    "assets/artist/masks/frog-01.png",
+    "assets/artist/masks/wood-01.png",
+    "assets/artist/masks/flower-02.png",
+    "assets/artist/masks/wood-02.png",
+    "assets/artist/masks/frog-02.png",
+    "assets/artist/masks/leaf-02.png",
+    "assets/artist/masks/leaf-03.png",
+    "assets/artist/masks/wood-03.png",
+    "assets/artist/masks/flower-03.png",
+    "assets/artist/masks/frog-03.png",
+    "assets/artist/masks/frog-04.png",
+    "assets/artist/masks/wood-04.png",
+    "assets/artist/masks/wood-05.png",
+    "assets/artist/masks/flower-04.png",
+    "assets/artist/masks/flower-05.png",
+    "assets/artist/masks/leaf-04.png",
+    "assets/artist/masks/wood-06.png",
+    "assets/artist/masks/leaf-05.png",
+    "assets/artist/masks/frog-05.png",
+    "assets/artist/masks/flower-06.png",
+    "assets/artist/masks/flower-07.png",
+    "assets/artist/masks/wood-07.png",
+    "assets/artist/masks/wood-08.png",
+    "assets/artist/masks/rail-left-upper.png",
+    "assets/artist/masks/rail-left-middle.png",
+    "assets/artist/masks/rail-left-near.png",
+    "assets/artist/masks/rail-right-upper.png",
+    "assets/artist/masks/rail-right-middle.png",
+    "assets/artist/masks/rail-right-near.png",
+    "assets/artist/masks/far-ramp-01.png",
+    "assets/artist/masks/far-ramp-02.png",
+    "assets/artist/masks/far-ramp-03.png",
+    "assets/artist/masks/board-front-fascia.png",
+    "assets/artist/masks/receiver-01-front-1.png",
+    "assets/artist/masks/receiver-01-front-2.png",
+    "assets/artist/masks/receiver-01-front-3.png",
+    "assets/artist/masks/receiver-01-front-4.png",
+    "assets/artist/masks/receiver-02-front-1.png",
+    "assets/artist/masks/receiver-02-front-2.png",
+    "assets/artist/masks/receiver-02-front-3.png",
+    "assets/artist/masks/receiver-02-front-4.png",
+    "assets/artist/masks/receiver-03-front-1.png",
+    "assets/artist/masks/receiver-03-front-2.png",
+    "assets/artist/masks/receiver-03-front-3.png",
+    "assets/artist/masks/receiver-03-front-4.png",
+    "assets/artist/masks/receiver-04-front-1.png",
+    "assets/artist/masks/receiver-04-front-2.png",
+    "assets/artist/masks/receiver-04-front-3.png",
+    "assets/artist/masks/receiver-04-front-4.png"
+  ],
+  "nativeCompiledSha256": "af8e6dea9ee5c46759f99ba3b68f4afa91c740b4fd2aba2d2d3f65bfa66753fa",
+  "nativeInputGitBlobOids": [
+    "1d59fa5216e98f318f0b7e9739cb40b2542d68fe",
+    "25affc928add181fae5211e5fd863ef0dfa4e044",
+    "34e2e8672cfe78671b527ae1a0fc412a0647a293",
+    "3c65ca5b33a455bc589aaeb406ccc664dbb6d462",
+    "440d6d4bec18626876a4251aebbdde37c3ae97b2",
+    "48859e2c31479e72076e2db6e1d73377ee6f9357",
+    "4eff6a89c53b43c3eba9d0963c5fd4b1e4ee3612",
+    "78065aa2dfb164905f05f0a86b6f7444e589884c",
+    "7cac28acf462fc60e420e3dbeacdf36aafeb5761",
+    "90db0e89547b9b17ce3aeab60f5f404a91cf45ed",
+    "aa0ec2b622bb5e80c59bd330a5f465bed69402b6",
+    "bf832c5dc41108d6ae9fb5064aae6fecec6f8002",
+    "cfd73d71c44a6a646ed8512e0622cf5992eb84bc",
+    "d8b49b61e1d4bea81ddad010812859697fe79c5c"
+  ],
+  "nativeOracleModules": 14,
+  "savedRuns": [
+    {
+      "seed": 0,
+      "lastTick": 1956,
+      "result": {
+        "kind": "IN_BUCKET",
+        "bucketId": "receiver-03"
+      },
+      "ticksCompared": 1957,
+      "traceSha256": "ecdcab689bdc414018344afcf0e9aa8f05a29b957de4aa62bf6e9d616cf0b70c",
+      "hits": [
+        {
+          "type": "object_hit",
+          "tick": 94,
+          "timeSec": 0.47000000000000003,
+          "ballId": "board01-ball",
+          "objectKind": "pin",
+          "objectId": "leaf-01",
+          "x": 33254.8464510643,
+          "y": 33263.0448322622
+        },
+        {
+          "type": "object_hit",
+          "tick": 248,
+          "timeSec": 1.24,
+          "ballId": "board01-ball",
+          "objectKind": "pin",
+          "objectId": "leaf-01",
+          "x": 33228.205766686944,
+          "y": 33269.67181945087
+        },
+        {
+          "type": "object_hit",
+          "tick": 441,
+          "timeSec": 2.205,
+          "ballId": "board01-ball",
+          "objectKind": "pin",
+          "objectId": "frog-02",
+          "x": 32942.30030888849,
+          "y": 33571.20122639118
+        },
+        {
+          "type": "object_hit",
+          "tick": 475,
+          "timeSec": 2.375,
+          "ballId": "board01-ball",
+          "objectKind": "segment",
+          "objectId": "left-2",
+          "x": 32872.05902433346,
+          "y": 33488.05517769079
+        },
+        {
+          "type": "object_hit",
+          "tick": 571,
+          "timeSec": 2.855,
+          "ballId": "board01-ball",
+          "objectKind": "pin",
+          "objectId": "wood-01",
+          "x": 33080.299421824726,
+          "y": 33473.535144046735
+        },
+        {
+          "type": "object_hit",
+          "tick": 788,
+          "timeSec": 3.94,
+          "ballId": "board01-ball",
+          "objectKind": "pin",
+          "objectId": "leaf-02",
+          "x": 33225.43076290652,
+          "y": 33611.5549834401
+        },
+        {
+          "type": "object_hit",
+          "tick": 890,
+          "timeSec": 4.45,
+          "ballId": "board01-ball",
+          "objectKind": "pin",
+          "objectId": "flower-02",
+          "x": 33345.68420243173,
+          "y": 33479.72124213757
+        },
+        {
+          "type": "object_hit",
+          "tick": 956,
+          "timeSec": 4.78,
+          "ballId": "board01-ball",
+          "objectKind": "pin",
+          "objectId": "flower-02",
+          "x": 33382.61836095011,
+          "y": 33468.88421330968
+        },
+        {
+          "type": "object_hit",
+          "tick": 1009,
+          "timeSec": 5.045,
+          "ballId": "board01-ball",
+          "objectKind": "pin",
+          "objectId": "flower-02",
+          "x": 33414.28897561776,
+          "y": 33478.94550087321
+        },
+        {
+          "type": "object_hit",
+          "tick": 1116,
+          "timeSec": 5.58,
+          "ballId": "board01-ball",
+          "objectKind": "pin",
+          "objectId": "leaf-03",
+          "x": 33518.049885423134,
+          "y": 33646.842769598974
+        },
+        {
+          "type": "object_hit",
+          "tick": 1193,
+          "timeSec": 5.965,
+          "ballId": "board01-ball",
+          "objectKind": "segment",
+          "objectId": "right-2",
+          "x": 33705.64731741568,
+          "y": 33633.15284268347
+        },
+        {
+          "type": "object_hit",
+          "tick": 1263,
+          "timeSec": 6.315,
+          "ballId": "board01-ball",
+          "objectKind": "pin",
+          "objectId": "frog-03",
+          "x": 33595.94473796874,
+          "y": 33801.04307010343
+        },
+        {
+          "type": "object_hit",
+          "tick": 1328,
+          "timeSec": 6.640000000000001,
+          "ballId": "board01-ball",
+          "objectKind": "pin",
+          "objectId": "flower-03",
+          "x": 33381.138772213584,
+          "y": 33829.15973108234
+        },
+        {
+          "type": "object_hit",
+          "tick": 1377,
+          "timeSec": 6.885,
+          "ballId": "board01-ball",
+          "objectKind": "pin",
+          "objectId": "leaf-03",
+          "x": 33489.34292257195,
+          "y": 33773.6848424432
+        },
+        {
+          "type": "object_hit",
+          "tick": 1416,
+          "timeSec": 7.08,
+          "ballId": "board01-ball",
+          "objectKind": "pin",
+          "objectId": "frog-03",
+          "x": 33568.867667655744,
+          "y": 33825.390965006314
+        },
+        {
+          "type": "object_hit",
+          "tick": 1502,
+          "timeSec": 7.51,
+          "ballId": "board01-ball",
+          "objectKind": "pin",
+          "objectId": "flower-03",
+          "x": 33388.13374594503,
+          "y": 33856.26071569525
+        },
+        {
+          "type": "object_hit",
+          "tick": 1614,
+          "timeSec": 8.07,
+          "ballId": "board01-ball",
+          "objectKind": "pin",
+          "objectId": "leaf-04",
+          "x": 33589.22352016374,
+          "y": 34153.288999923185
+        },
+        {
+          "type": "object_hit",
+          "tick": 1646,
+          "timeSec": 8.23,
+          "ballId": "board01-ball",
+          "objectKind": "segment",
+          "objectId": "right-4",
+          "x": 33710.782005227025,
+          "y": 34229.18532299748
+        },
+        {
+          "type": "object_hit",
+          "tick": 1715,
+          "timeSec": 8.575000000000001,
+          "ballId": "board01-ball",
+          "objectKind": "pin",
+          "objectId": "frog-05",
+          "x": 33440.60924791745,
+          "y": 34347.25610495745
+        },
+        {
+          "type": "object_hit",
+          "tick": 1751,
+          "timeSec": 8.755,
+          "ballId": "board01-ball",
+          "objectKind": "pin",
+          "objectId": "leaf-04",
+          "x": 33487.6926748985,
+          "y": 34233.1490503987
+        },
+        {
+          "type": "object_hit",
+          "tick": 1808,
+          "timeSec": 9.040000000000001,
+          "ballId": "board01-ball",
+          "objectKind": "pin",
+          "objectId": "flower-05",
+          "x": 33334.64411203823,
+          "y": 34256.84141056306
+        },
+        {
+          "type": "object_hit",
+          "tick": 1915,
+          "timeSec": 9.575000000000001,
+          "ballId": "board01-ball",
+          "objectKind": "segment",
+          "objectId": "near-divider-2",
+          "x": 33297.87142234633,
+          "y": 34691.41911467493
+        }
+      ]
+    },
+    {
+      "seed": 2818447218,
+      "lastTick": 762,
+      "result": {
+        "kind": "LOST",
+        "finalX": 32512.837527,
+        "nearMissBucketIds": []
+      },
+      "ticksCompared": 763,
+      "traceSha256": "2c733a3a66150c632d8fc092476463378d68f5002b9024af1c7b06966b65e886",
+      "hits": [
+        {
+          "type": "object_hit",
+          "tick": 94,
+          "timeSec": 0.47000000000000003,
+          "ballId": "board01-ball",
+          "objectKind": "pin",
+          "objectId": "leaf-01",
+          "x": 33254.8464510643,
+          "y": 33263.0448322622
+        },
+        {
+          "type": "object_hit",
+          "tick": 247,
+          "timeSec": 1.235,
+          "ballId": "board01-ball",
+          "objectKind": "pin",
+          "objectId": "leaf-01",
+          "x": 33239.86875979616,
+          "y": 33265.29712041083
+        },
+        {
+          "type": "object_hit",
+          "tick": 604,
+          "timeSec": 3.02,
+          "ballId": "board01-ball",
+          "objectKind": "pin",
+          "objectId": "wood-06",
+          "x": 32894.99266322389,
+          "y": 34400.37233888925
+        },
+        {
+          "type": "object_hit",
+          "tick": 612,
+          "timeSec": 3.06,
+          "ballId": "board01-ball",
+          "objectKind": "segment",
+          "objectId": "left-5",
+          "x": 32843.02952210626,
+          "y": 34415.076574885985
+        },
+        {
+          "type": "object_hit",
+          "tick": 657,
+          "timeSec": 3.285,
+          "ballId": "board01-ball",
+          "objectKind": "segment",
+          "objectId": "near-divider-1",
+          "x": 32976.27858302235,
+          "y": 34691.99701641176
+        }
+      ]
+    },
+    {
+      "seed": 2099436614,
+      "lastTick": 747,
+      "result": {
+        "kind": "LOST",
+        "finalX": 33238.8298468,
+        "nearMissBucketIds": []
+      },
+      "ticksCompared": 748,
+      "traceSha256": "fd77f075d69532af282ee36a8dd3e9c8dbc8c34c1af11be33237d5f61a91ead4",
+      "hits": [
+        {
+          "type": "object_hit",
+          "tick": 94,
+          "timeSec": 0.47000000000000003,
+          "ballId": "board01-ball",
+          "objectKind": "pin",
+          "objectId": "leaf-01",
+          "x": 33254.8464510643,
+          "y": 33263.0448322622
+        },
+        {
+          "type": "object_hit",
+          "tick": 252,
+          "timeSec": 1.26,
+          "ballId": "board01-ball",
+          "objectKind": "pin",
+          "objectId": "leaf-01",
+          "x": 33239.949905528636,
+          "y": 33265.27521501518
+        },
+        {
+          "type": "object_hit",
+          "tick": 615,
+          "timeSec": 3.075,
+          "ballId": "board01-ball",
+          "objectKind": "pin",
+          "objectId": "wood-06",
+          "x": 32889.59510794374,
+          "y": 34406.93238647484
+        },
+        {
+          "type": "object_hit",
+          "tick": 625,
+          "timeSec": 3.125,
+          "ballId": "board01-ball",
+          "objectKind": "segment",
+          "objectId": "left-5",
+          "x": 32829.55082424973,
+          "y": 34448.42294315927
+        },
+        {
+          "type": "object_hit",
+          "tick": 643,
+          "timeSec": 3.215,
+          "ballId": "board01-ball",
+          "objectKind": "segment",
+          "objectId": "left-6",
+          "x": 32845.69513107139,
+          "y": 34579.76782456278
+        }
+      ]
+    },
+    {
+      "seed": 3925936860,
+      "lastTick": 1256,
+      "result": {
+        "kind": "LOST",
+        "finalX": 32879.3342798,
+        "nearMissBucketIds": []
+      },
+      "ticksCompared": 1257,
+      "traceSha256": "652b555cc5a84caa2a4dbc076409e381d947a7578b5679805af8e28b110357d2",
+      "hits": [
+        {
+          "type": "object_hit",
+          "tick": 94,
+          "timeSec": 0.47000000000000003,
+          "ballId": "board01-ball",
+          "objectKind": "pin",
+          "objectId": "leaf-01",
+          "x": 33254.8464510643,
+          "y": 33263.0448322622
+        },
+        {
+          "type": "object_hit",
+          "tick": 251,
+          "timeSec": 1.2550000000000001,
+          "ballId": "board01-ball",
+          "objectKind": "pin",
+          "objectId": "leaf-01",
+          "x": 33227.22198755051,
+          "y": 33270.16135065807
+        },
+        {
+          "type": "object_hit",
+          "tick": 438,
+          "timeSec": 2.19,
+          "ballId": "board01-ball",
+          "objectKind": "pin",
+          "objectId": "frog-02",
+          "x": 32934.00633668494,
+          "y": 33572.51840323674
+        },
+        {
+          "type": "object_hit",
+          "tick": 461,
+          "timeSec": 2.305,
+          "ballId": "board01-ball",
+          "objectKind": "segment",
+          "objectId": "left-2",
+          "x": 32865.419475193594,
+          "y": 33528.833126141675
+        },
+        {
+          "type": "object_hit",
+          "tick": 534,
+          "timeSec": 2.67,
+          "ballId": "board01-ball",
+          "objectKind": "pin",
+          "objectId": "wood-01",
+          "x": 33064.43202054222,
+          "y": 33547.71209275809
+        },
+        {
+          "type": "object_hit",
+          "tick": 642,
+          "timeSec": 3.21,
+          "ballId": "board01-ball",
+          "objectKind": "pin",
+          "objectId": "frog-04",
+          "x": 33141.10645465618,
+          "y": 33987.92499433052
+        },
+        {
+          "type": "object_hit",
+          "tick": 689,
+          "timeSec": 3.4450000000000003,
+          "ballId": "board01-ball",
+          "objectKind": "segment",
+          "objectId": "left-3",
+          "x": 32920.723453614075,
+          "y": 33972.972510171116
+        },
+        {
+          "type": "object_hit",
+          "tick": 828,
+          "timeSec": 4.14,
+          "ballId": "board01-ball",
+          "objectKind": "pin",
+          "objectId": "wood-04",
+          "x": 33402.725797315616,
+          "y": 34005.096857360215
+        },
+        {
+          "type": "object_hit",
+          "tick": 866,
+          "timeSec": 4.33,
+          "ballId": "board01-ball",
+          "objectKind": "pin",
+          "objectId": "flower-03",
+          "x": 33369.95684487219,
+          "y": 33900.575839910205
+        },
+        {
+          "type": "object_hit",
+          "tick": 1062,
+          "timeSec": 5.3100000000000005,
+          "ballId": "board01-ball",
+          "objectKind": "segment",
+          "objectId": "right-6",
+          "x": 33764.52405141374,
+          "y": 34509.51817777326
+        },
+        {
+          "type": "object_hit",
+          "tick": 1119,
+          "timeSec": 5.595,
+          "ballId": "board01-ball",
+          "objectKind": "pin",
+          "objectId": "wood-08",
+          "x": 33480.24711104424,
+          "y": 34637.81971010472
+        }
+      ]
+    },
+    {
+      "seed": 1199311181,
+      "lastTick": 1367,
+      "result": {
+        "kind": "IN_BUCKET",
+        "bucketId": "receiver-01"
+      },
+      "ticksCompared": 1368,
+      "traceSha256": "62c089bbc6e0be151934adcf6b4be3da3c481168ab9214693b3be4e563f56796",
+      "hits": [
+        {
+          "type": "object_hit",
+          "tick": 94,
+          "timeSec": 0.47000000000000003,
+          "ballId": "board01-ball",
+          "objectKind": "pin",
+          "objectId": "leaf-01",
+          "x": 33254.8464510643,
+          "y": 33263.0448322622
+        },
+        {
+          "type": "object_hit",
+          "tick": 246,
+          "timeSec": 1.23,
+          "ballId": "board01-ball",
+          "objectKind": "pin",
+          "objectId": "leaf-01",
+          "x": 33242.61771968528,
+          "y": 33264.61613032663
+        },
+        {
+          "type": "object_hit",
+          "tick": 440,
+          "timeSec": 2.2,
+          "ballId": "board01-ball",
+          "objectKind": "pin",
+          "objectId": "wood-01",
+          "x": 33081.55368185645,
+          "y": 33472.93358329546
+        },
+        {
+          "type": "object_hit",
+          "tick": 511,
+          "timeSec": 2.555,
+          "ballId": "board01-ball",
+          "objectKind": "segment",
+          "objectId": "left-2",
+          "x": 32877.20028117522,
+          "y": 33456.4792525715
+        },
+        {
+          "type": "object_hit",
+          "tick": 668,
+          "timeSec": 3.34,
+          "ballId": "board01-ball",
+          "objectKind": "pin",
+          "objectId": "frog-04",
+          "x": 33203.911173621775,
+          "y": 33975.94880594339
+        },
+        {
+          "type": "object_hit",
+          "tick": 747,
+          "timeSec": 3.735,
+          "ballId": "board01-ball",
+          "objectKind": "pin",
+          "objectId": "frog-03",
+          "x": 33560.41336277667,
+          "y": 33871.23686855754
+        },
+        {
+          "type": "object_hit",
+          "tick": 835,
+          "timeSec": 4.175,
+          "ballId": "board01-ball",
+          "objectKind": "pin",
+          "objectId": "frog-04",
+          "x": 33243.11318217677,
+          "y": 34063.569479959544
+        },
+        {
+          "type": "object_hit",
+          "tick": 861,
+          "timeSec": 4.305,
+          "ballId": "board01-ball",
+          "objectKind": "pin",
+          "objectId": "flower-05",
+          "x": 33231.017975943214,
+          "y": 34193.137971365075
+        },
+        {
+          "type": "object_hit",
+          "tick": 889,
+          "timeSec": 4.445,
+          "ballId": "board01-ball",
+          "objectKind": "pin",
+          "objectId": "leaf-05",
+          "x": 33126.69407860496,
+          "y": 34299.918968401726
+        },
+        {
+          "type": "object_hit",
+          "tick": 921,
+          "timeSec": 4.605,
+          "ballId": "board01-ball",
+          "objectKind": "pin",
+          "objectId": "flower-04",
+          "x": 33065.3211081648,
+          "y": 34165.90929189828
+        },
+        {
+          "type": "object_hit",
+          "tick": 995,
+          "timeSec": 4.9750000000000005,
+          "ballId": "board01-ball",
+          "objectKind": "pin",
+          "objectId": "wood-03",
+          "x": 33053.6538332586,
+          "y": 33923.37500188277
+        },
+        {
+          "type": "object_hit",
+          "tick": 1111,
+          "timeSec": 5.555,
+          "ballId": "board01-ball",
+          "objectKind": "pin",
+          "objectId": "leaf-05",
+          "x": 33084.703896955325,
+          "y": 34306.048094734346
+        },
+        {
+          "type": "object_hit",
+          "tick": 1165,
+          "timeSec": 5.825,
+          "ballId": "board01-ball",
+          "objectKind": "segment",
+          "objectId": "left-4",
+          "x": 32908.452214948564,
+          "y": 34214.66462050734
+        },
+        {
+          "type": "object_hit",
+          "tick": 1182,
+          "timeSec": 5.91,
+          "ballId": "board01-ball",
+          "objectKind": "pin",
+          "objectId": "flower-04",
+          "x": 32954.869185867596,
+          "y": 34206.838974038365
+        },
+        {
+          "type": "object_hit",
+          "tick": 1278,
+          "timeSec": 6.390000000000001,
+          "ballId": "board01-ball",
+          "objectKind": "segment",
+          "objectId": "left-6",
+          "x": 32816.438965771464,
+          "y": 34496.92330147594
+        },
+        {
+          "type": "object_hit",
+          "tick": 1318,
+          "timeSec": 6.59,
+          "ballId": "board01-ball",
+          "objectKind": "pin",
+          "objectId": "flower-07",
+          "x": 32945.27209558525,
+          "y": 34616.66343440655
+        }
+      ]
+    }
+  ],
+  "browserSamples": [],
+  "scanFindings": []
+}

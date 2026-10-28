@@ -4,7 +4,30 @@
 Lead: `lead-r4d-p3-masks-01`, chat `01a17faf-f425-75d1-948a-ed456864701f`.
 CTO: `cto-r4d-perspective-01`, chat `01a174b2-1b0d-79b1-866f-f40e23f6dfb2`.
 
-## Текущее: P3 возобновлён, продолжается QA frozen01
+## Текущее: оба QA завершены, публикационная подготовка frozen01
+
+Итоговая [запись результата](../RESULT.md) подготовлена для частичного
+исследовательского закрытия. TQA и VQA полностью прочитаны Lead:
+
+- `c0db64fe4a0204d77be0d3ab61ffe21331d9c90a:experiments/p3-masks/technical-qa/TQA_REPORT_FROZEN_01.md` — technical QA complete,11493 native states/51browser snapshots, новых P3 technical defects нет;
+- `0f282b89a5d58f6613153ceb385657c8fb761b1d:experiments/p3-masks/visual-qa/REPORT_FROZEN_01.md` — визуальный результат ЧАСТИЧНЫЙ, подтверждены masks/shadow/overlaps/receiver01/03/front-rim02, новых конкретных P3-дефектов нет, полный visualPASS не выдан из-за общего MAP-01.
+
+Оба QA commit+push выполнены, деревья чистые, свои вкладки закрыты,
+активных процессов/ожидания у QA нет. Frozen code/art/bytes не менялись.
+Дополнительные правки без найденной причины не назначены; Artist не будили.
+Lead gate: готовить публикацию exact frozen01 как ограниченного ЧАСТИЧНОГО
+результата с явным ранним отскоком left-5/seed2818447218/t612. Это не
+приёмка полной визуальной цели и не художественный PASS.
+
+Release существующей команды адресно вызван для конкретного read-only/local
+intent: свежий live root/manifest/opaque baseline, exact write-set/full
+release hash, минимальная дельта каталога и rollback. Он получает оба QA
+report commit и этот gate. Server_write=false; отдельного CTO token ещё нет.
+Ни remote staging/upload/backups, ни nginx/service-doc writes до token.
+Исходники/отчёты четырёх завершивших ролей интегрируются в свою ветку Lead;
+immutable bundle остаётся тем же. Slot пока не освобождён, P3 не опубликован.
+
+## Возобновление05:36UTC и выполненная QA
 
 Новая прямая команда Max 28 октября 2026,05:36UTC, через доверенный Dot:
 «Можно продолжать всем, кому еще продолжать, кроме угых, разумеется».
@@ -23,8 +46,8 @@ Manifest frozen01 повторно совпал с сохранённым e2e9f7
 | --- | --- | --- |
 | Lead | `01a18109-14ad-7aa3-b0ce-a8c0adfec746` | State/Git/manifest и свежие system resources сверены, три адресные выдачи успешны |
 | Builder | `01a18109-f322-7db1-aa28-89289a29cc27` | Completed: pause/Git/WIP, все76 payload hashes, ресурсы и свободный port6866 проверены; preview восстановлен без rebuild |
-| TQA | `01a1810b-8377-77e1-bb04-c9d9796504da` | InProgress: сохранённый oracle подтвердил5400 состояний3новых seeds и17browser/export checkpoints включая rngU32; остаются browser regressions |
-| VQA | `01a1810b-96c0-73f1-8d31-fa099ec09733` | InProgress: собственные Git/WIP/220raw/manifest сверены, ресурсы измерены, продолжается недостающий visual пакет |
+| TQA | `01a1810b-8377-77e1-bb04-c9d9796504da` | Completed: оставшиеся browser/native случаи, отчёт c0db64fe, technical QA завершена |
+| VQA | `01a1810b-96c0-73f1-8d31-fa099ec09733` | Completed: недостающие shadow/grounding/baskets/overlaps, отчёт0f282b89, частичный visual verdict |
 
 Builder preview фактически HTTP200 на
 `http://127.0.0.1:6866/review/r4d/p3-masks/`.
