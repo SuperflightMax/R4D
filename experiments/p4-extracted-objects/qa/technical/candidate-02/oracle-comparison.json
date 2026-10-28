@@ -1,0 +1,443 @@
+{
+  "candidate": "p4-full-v02-candidate-02",
+  "builderCommit": "b2db9e947ebf2213e725a66f1e778f9137b14d5f",
+  "scope": "exact native states/events for observed UI scenarios, not visual acceptance",
+  "bundleChecks": [
+    {
+      "seed": 1842222754,
+      "states": 2422,
+      "final": {
+        "kind": "IN_BUCKET",
+        "bucketId": "receiver-02"
+      }
+    },
+    {
+      "seed": 1,
+      "states": 1736,
+      "final": {
+        "kind": "LOST",
+        "finalX": 33780.1301239,
+        "nearMissBucketIds": []
+      }
+    },
+    {
+      "seed": 386928037,
+      "states": 1059,
+      "final": {
+        "kind": "LOST",
+        "finalX": 33708.5261133,
+        "nearMissBucketIds": []
+      }
+    },
+    {
+      "seed": 228664868,
+      "states": 1926,
+      "final": {
+        "kind": "LOST",
+        "finalX": 33064.2305405,
+        "nearMissBucketIds": []
+      }
+    },
+    {
+      "seed": 2964851399,
+      "states": 1324,
+      "final": {
+        "kind": "LOST",
+        "finalX": 33677.7269946,
+        "nearMissBucketIds": []
+      }
+    },
+    {
+      "seed": 4,
+      "states": 2089,
+      "final": {
+        "kind": "IN_BUCKET",
+        "bucketId": "receiver-04"
+      }
+    },
+    {
+      "seed": 0,
+      "states": 1957,
+      "final": {
+        "kind": "IN_BUCKET",
+        "bucketId": "receiver-03"
+      }
+    }
+  ],
+  "uiChecks": [
+    {
+      "label": "import-frozen605",
+      "seed": 1842222754,
+      "tick": 605,
+      "status": "PASS"
+    },
+    {
+      "label": "plus1-to606",
+      "seed": 1842222754,
+      "tick": 606,
+      "status": "PASS"
+    },
+    {
+      "label": "download-import605",
+      "seed": 1842222754,
+      "tick": 605,
+      "status": "PASS"
+    },
+    {
+      "label": "same-file-reimport605",
+      "seed": 1842222754,
+      "tick": 605,
+      "status": "PASS"
+    },
+    {
+      "label": "art-off-geometry-on605",
+      "seed": 1842222754,
+      "tick": 605,
+      "status": "PASS"
+    },
+    {
+      "label": "changed-view-at605",
+      "seed": 1842222754,
+      "tick": 605,
+      "status": "PASS"
+    },
+    {
+      "label": "changed-view-next606",
+      "seed": 1842222754,
+      "tick": 606,
+      "status": "PASS"
+    },
+    {
+      "label": "seed1-seek94",
+      "seed": 1,
+      "tick": 80,
+      "status": "PASS"
+    },
+    {
+      "label": "seed1-plus1-95",
+      "seed": 1,
+      "tick": 81,
+      "status": "PASS"
+    },
+    {
+      "label": "seed1-plus10-105",
+      "seed": 1,
+      "tick": 91,
+      "status": "PASS"
+    },
+    {
+      "label": "seed1-slider-back94",
+      "seed": 1,
+      "tick": 94,
+      "status": "PASS"
+    },
+    {
+      "label": "seed1-final",
+      "seed": 1,
+      "tick": 1735,
+      "status": "PASS"
+    },
+    {
+      "label": "seed1-paused-seek94",
+      "seed": 1,
+      "tick": 94,
+      "status": "PASS"
+    },
+    {
+      "label": "seed1-paused-plus1-95",
+      "seed": 1,
+      "tick": 95,
+      "status": "PASS"
+    },
+    {
+      "label": "seed1-paused-plus10-105",
+      "seed": 1,
+      "tick": 105,
+      "status": "PASS"
+    },
+    {
+      "label": "seed1-paused-slider-back94",
+      "seed": 1,
+      "tick": 94,
+      "status": "PASS"
+    },
+    {
+      "label": "random1-paused",
+      "seed": 386928037,
+      "tick": 70,
+      "status": "PASS"
+    },
+    {
+      "label": "random1-terminal",
+      "seed": 386928037,
+      "tick": 1058,
+      "status": "PASS"
+    },
+    {
+      "label": "random2-paused",
+      "seed": 228664868,
+      "tick": 77,
+      "status": "PASS"
+    },
+    {
+      "label": "random2-terminal",
+      "seed": 228664868,
+      "tick": 1925,
+      "status": "PASS"
+    },
+    {
+      "label": "random2-terminal-noop",
+      "seed": 228664868,
+      "tick": 1925,
+      "status": "PASS"
+    },
+    {
+      "label": "random2-replay-terminal",
+      "seed": 228664868,
+      "tick": 1925,
+      "status": "PASS"
+    },
+    {
+      "label": "wrong-config-rejected",
+      "seed": 228664868,
+      "tick": 1925,
+      "status": "PASS"
+    },
+    {
+      "label": "wrong-state-rejected",
+      "seed": 228664868,
+      "tick": 1925,
+      "status": "PASS"
+    },
+    {
+      "label": "wrong-binding-rejected",
+      "seed": 228664868,
+      "tick": 1925,
+      "status": "PASS"
+    },
+    {
+      "label": "wood-contact-615",
+      "seed": 1842222754,
+      "tick": 615,
+      "status": "PASS"
+    },
+    {
+      "label": "wood-contact-616",
+      "seed": 1842222754,
+      "tick": 616,
+      "status": "PASS"
+    },
+    {
+      "label": "wood-contact-617",
+      "seed": 1842222754,
+      "tick": 617,
+      "status": "PASS"
+    },
+    {
+      "label": "side-contact-543",
+      "seed": 2964851399,
+      "tick": 543,
+      "status": "PASS"
+    },
+    {
+      "label": "side-contact-544",
+      "seed": 2964851399,
+      "tick": 544,
+      "status": "PASS"
+    },
+    {
+      "label": "side-contact-545",
+      "seed": 2964851399,
+      "tick": 545,
+      "status": "PASS"
+    },
+    {
+      "label": "left-boundary-527",
+      "seed": 1,
+      "tick": 527,
+      "status": "PASS"
+    },
+    {
+      "label": "left-boundary-528",
+      "seed": 1,
+      "tick": 528,
+      "status": "PASS"
+    },
+    {
+      "label": "left-boundary-529",
+      "seed": 1,
+      "tick": 529,
+      "status": "PASS"
+    },
+    {
+      "label": "leaf-first-contact-94",
+      "seed": 1,
+      "tick": 94,
+      "status": "PASS"
+    },
+    {
+      "label": "leaf-first-contact-95",
+      "seed": 1,
+      "tick": 95,
+      "status": "PASS"
+    },
+    {
+      "label": "leaf-first-contact-96",
+      "seed": 1,
+      "tick": 96,
+      "status": "PASS"
+    },
+    {
+      "label": "receiver02-2419",
+      "seed": 1842222754,
+      "tick": 2419,
+      "status": "PASS"
+    },
+    {
+      "label": "receiver02-2420",
+      "seed": 1842222754,
+      "tick": 2420,
+      "status": "PASS"
+    },
+    {
+      "label": "receiver02-2421",
+      "seed": 1842222754,
+      "tick": 2421,
+      "status": "PASS"
+    },
+    {
+      "label": "receiver04-2086",
+      "seed": 4,
+      "tick": 2086,
+      "status": "PASS"
+    },
+    {
+      "label": "receiver04-2087",
+      "seed": 4,
+      "tick": 2087,
+      "status": "PASS"
+    },
+    {
+      "label": "receiver04-2088",
+      "seed": 4,
+      "tick": 2088,
+      "status": "PASS"
+    },
+    {
+      "label": "receiver04-terminal-noop",
+      "seed": 4,
+      "tick": 2088,
+      "status": "PASS"
+    },
+    {
+      "label": "running-seek-requested1000",
+      "seed": 4,
+      "tick": 1000,
+      "status": "PASS"
+    },
+    {
+      "label": "running-edit1000-overwritten",
+      "seed": 4,
+      "tick": 1000,
+      "status": "PASS"
+    },
+    {
+      "label": "realtime-start-from1000",
+      "seed": 4,
+      "tick": 1000,
+      "status": "PASS"
+    },
+    {
+      "label": "realtime-later",
+      "seed": 4,
+      "tick": 1000,
+      "status": "PASS"
+    },
+    {
+      "label": "fresh-reload-initial",
+      "seed": 0,
+      "tick": 0,
+      "status": "PASS"
+    },
+    {
+      "label": "fresh-continue0",
+      "seed": 0,
+      "tick": 59,
+      "status": "PASS"
+    },
+    {
+      "label": "fresh-import605",
+      "seed": 1842222754,
+      "tick": 605,
+      "status": "PASS"
+    },
+    {
+      "label": "fresh-resume1",
+      "seed": 1842222754,
+      "tick": 605,
+      "status": "PASS"
+    },
+    {
+      "label": "fresh-pause1",
+      "seed": 1842222754,
+      "tick": 605,
+      "status": "PASS"
+    },
+    {
+      "label": "fresh-resume2",
+      "seed": 1842222754,
+      "tick": 605,
+      "status": "PASS"
+    },
+    {
+      "label": "fresh-pause2",
+      "seed": 1842222754,
+      "tick": 605,
+      "status": "PASS"
+    },
+    {
+      "label": "fresh-resume3",
+      "seed": 1842222754,
+      "tick": 605,
+      "status": "PASS"
+    },
+    {
+      "label": "fresh-pause3",
+      "seed": 1842222754,
+      "tick": 605,
+      "status": "PASS"
+    },
+    {
+      "label": "fresh-stalled-playing605",
+      "seed": 1842222754,
+      "tick": 605,
+      "status": "PASS"
+    },
+    {
+      "label": "fresh-stalled-manual606-works",
+      "seed": 1842222754,
+      "tick": 606,
+      "status": "PASS"
+    }
+  ],
+  "downloads": [
+    {
+      "file": "download-seed1842222754-t605.json",
+      "seed": 1842222754,
+      "tick": 605,
+      "status": "PASS"
+    },
+    {
+      "file": "random1-download.json",
+      "seed": 386928037,
+      "tick": 1058,
+      "status": "PASS"
+    },
+    {
+      "file": "random2-download.json",
+      "seed": 228664868,
+      "tick": 1925,
+      "status": "PASS"
+    }
+  ]
+}
