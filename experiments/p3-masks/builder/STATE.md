@@ -5,6 +5,29 @@
 `orders/perspective/ORDER.md` + `P3-masks.md`; stage 2 выдан Lead.
 Работа только в собственном E worktree/ветке. Серверная запись не разрешена.
 
+## Текущий переход: frozen candidate 01 для обеих QA
+
+Полный handoff — [FROZEN_CANDIDATE.md](FROZEN_CANDIDATE.md).
+Source f1aca21 + final Artist f899, 51 masks, 77 total served files.
+Frozen bytes уже собраны в `full-checkpoint-06`; метаданные, точный source,
+полные manifest hash/path, native provenance и наблюдения закреплены в handoff.
+Preview PID24412, стабильный loopback route6866.
+Builder больше не меняет candidate bytes во время обеих QA; исправление
+требует новой именованной версии. Это выдача на QA, не art PASS и не release.
+
+Доводка после раннего checkpoint: добавлены все 51 маски и исправленный
+Artist shadow scale, семь browser checkpoint файлов/каталог пяти обычных
+runs, drag-pan для просмотра увеличенных корзин. Код зафиксирован до сборки.
+Все 76 payload file/HTTP hashes + .js MIME сверены; основные browser files
+и общие inputs побайтно совпали с source Git objects. Все пять ordinary
+runs воспроизвелись, два боковых перехода не показали видимого pop.
+Сохранён реальный общий mapping defect left-5/seed2818447218/tick612:
+accepted collision boundary проходит по видимому полу раньше painted rail.
+Не скрыт масками и не исправлялся подгонкой. Ограничения/известное непроверенное
+перечислены в handoff для TQA/VQA.
+
+Ниже — история ранних checkpoint; её preview PID/build уже не текущие.
+
 ## Сделано
 
 - Контракт source-aligned alpha, anchors/radius/depth предложен в
