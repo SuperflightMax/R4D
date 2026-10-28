@@ -2,7 +2,7 @@
 
 Автор: `technical-qa-r4d-p2-free-01`. Подготовка: 27 октября 2026, Europe/Kyiv; turn `01a17e69-c5ca-77e1-aaf4-7cb50523b797`.
 
-Основание: `orders/perspective/ORDER.md` (редакция 4) и `orders/perspective/P2-free-approach.md` на `df760b680f0d0264342fc8577fcc5779b80a3a15`. Только P2 и Jungle. Это план проверки, не QA-вердикт. Текущее обновление 28 октября: адресно выдан и отдельно проверен frozen `p2-jungle-static-candidate-03`, результат — [candidate-03-REPORT.md](candidate-03-REPORT.md). [candidate-02-REPORT.md](candidate-02-REPORT.md) сохранён как baseline, прежний вывод не перенесён автоматически. Браузерная/UI/scene часть остаётся непроверенной.
+Основание: `orders/perspective/ORDER.md` (редакция 4) и `orders/perspective/P2-free-approach.md` на `df760b680f0d0264342fc8577fcc5779b80a3a15`. Только P2 и Jungle. Это план проверки, не QA-вердикт. Текущее обновление 28 октября: frozen `p2-jungle-static-candidate-03` отдельно проверен offline — [candidate-03-REPORT.md](candidate-03-REPORT.md); после штатной публикации обычный HTTPS URL проверен в существующем IAB и перенаправил на login — [candidate-03-ACCESS-01.md](candidate-03-ACCESS-01.md). Post-auth/UI/scene часть остаётся непроверенной. [candidate-02-REPORT.md](candidate-02-REPORT.md) сохранён как baseline, прежний вывод не перенесён автоматически.
 
 ## Прочитанные и закреплённые входы
 
