@@ -4,26 +4,56 @@
 Lead: `lead-r4d-p3-masks-01`, chat `01a17faf-f425-75d1-948a-ed456864701f`.
 CTO: `cto-r4d-perspective-01`, chat `01a174b2-1b0d-79b1-866f-f40e23f6dfb2`.
 
-## Текущее: тот же upload восстановлен после capacity-сбоя Release
+## Текущее: P3 опубликован; готов финальный handoff CTO
 
-Release turn `01a1814d-3b98-71e0-ad48-524acbd9d828` после успешного
-prewrite/backup завершился той же provider capacity error, не policy denial.
-Lead проверил latest failed status, уведомил CTO и передал ОДИН технический
-resume той же роли; token повторно не выдавался/полностью не пересылался,
-модель/reasoning/персонал/worktree не менялись.
-Новый actual turn `01a18162-d97b-7ff0-ac94-7ac291a33a5e` active/errornull,
-первые read-only consistency-команды completed/exit0.
+Тот же upload session63823 завершился с exact archive SHA256. После полного
+staging550files/modes/ownership и fresh pre-switch guard Release переключил
+root в **2026-10-28T07:28:49.094847UTC** на
+`/srv/superflight-review/releases/p3-jungle-masks-frozen-01`.
+Live snippet SHA256 `c67b27e4b179dfe3cb803268435b7558b0c48b8ea8b1018ec709149511be1ba8`.
+nginx-t до/после PASS, graceful reload выполнен. Свежий rollback snapshot
+сохранён непосредственно перед switch. Единственный token прежний; второго
+upload/backup/switch не было. Lead серверную работу не выполнял.
 
-На07:22:28UTC прежняя собственная Release upload-session `63823` всё ещё
-работает:65.0MB/80.6MB. Server STATE принадлежит тому же token, live root/
-snippet прежние, before-snapshot совпадает. Новый root/temp/PUBLISHED ещё
-не созданы. Backup/STATE созданы после успешного prewrite07:02:41UTC;
-Root Lead их не создавал. Повторного upload/backup/switch не было.
-После exit текущей передачи — обязательные server archive SHA256/fulltree,
-затем fresh pre-switch baseline/свежий rollback UTC snapshot. Любая
-неоднозначность/дрейф — stop и точный отчёт CTO, не перенос token.
-Фактическое новое состояние всегда сверять; старые сообщения не доказывают
-текущую остановку/успех фоновой session. Публикация/switch пока не подтверждены.
+Postchecks: все550files/modes нового дерева, сохранность прежнего release,
+471 прежнего browserfile подтверждены.95HTTPS checks:93auth303,Origin403,
+dotfile404; прежние защитные заголовки/nginxactive. Старые14R4Droutes проверены
+отдельно после исправления только release checker относительных cataloghref.
+ExistingIABsession далаlogin; **post-authJS MIME/body/UI НЕПРОВЕРЕНЫ**.
+Auth303/login не объявляются module/UI PASS; новых cookies/auth/security
+изменений нет. Об этом ограничении и actualswitch CTO адресно уведомлён.
+
+Release turn `01a18162-d97b-7ff0-ac94-7ac291a33a5e` completed/idle/errornull.
+Append-only serviceDoc/CHANGELOG завершены07:34:21UTC; финальные STATE/
+PUBLISHED прочитаны обратно, SHA обоих
+`1fcb590f6248f1aff30e992f5c3f4c637464902ff6fed20ddd647d9e156a4930`.
+Все разрешённые serverwrites завершены, `server_write=false`.
+Lead полностью прочитал finalreport/evidence и интегрировал commit
+`390e178ecc044cadb9b67f4a2506d5efdc171fef`:
+[DELIVERY_FROZEN_01.md](../release/DELIVERY_FROZEN_01.md),
+[DELIVERY_EVIDENCE.json](../release/DELIVERY_EVIDENCE.json).
+Результат связан с отчётом доставки. Следующее действие Lead — отправить
+CTO точный итоговый handoff и запросить явное освобождение sharedокна.
+До явного CTO release окно/слот не объявляются свободными; P4–P6 не запускаются.
+Собственные вкладки/execsessions/serverprocesses Release завершены.
+
+RESULT уже указывает реальный Review URL/доставку/ограничение post-auth;
+commit `e8bfad6` pushed. Частичный visual verdict и MAP-01 неизменны.
+Builder cleanup completed: PID112732 отсутствует, port6866 listener0,
+session69658 Unknownprocess; kill не потребовался, своих вкладок нет.
+Checkpoint `6de20083954a3a41e5a39b3ae70f9753a012bd0c` прочитан/интегрирован.
+Frozen bundle/raw/evidence сохранены без изменения/cleanup.
+
+## История восстановления того же upload после capacity-сбоя
+
+Release turn `01a1814d-3b98-71e0-ad48-524acbd9d828` после prewrite/backup
+завершился provider capacity error, не policy denial. Lead проверил failed
+status, уведомил CTO и передал ОДИН технический resume той же роли.
+Token повторно не выдавался/полностью не пересылался; модель/reasoning/
+персонал/worktree не менялись. На07:22:28UTC session63823 передала65.0/80.6MB;
+STATE/token/before-snapshot и oldliveguard совпали. Передача продолжена
+в новом turn01a18162 без дублирования. Этот исторический снимок не текущая
+стадия: actualswitch и postchecks подтверждены выше.
 
 ## Фактическая передача единственного token и предыдущий guard
 
