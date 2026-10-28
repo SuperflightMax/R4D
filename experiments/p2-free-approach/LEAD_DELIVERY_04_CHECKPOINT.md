@@ -1,6 +1,12 @@
 # P2 candidate04 — checkpoint сериализации доставки
 
-## Текущая фаза: delivery/docs завершены, owned lock снят, окно ожидает CTO release
+## Текущая фаза: CTO принял limited delivery/docs и явно освободил окно
+
+CTO лично прочитал final original `2cf9b6521cb2485a91ace37b44925b2a11fdc7b2`, оба exact actual QA reports, receipt summaries/docs/FINAL_ACTUAL_STATE и сверил receipt hashes/16 final HTTP rows. **LIMITED delivery/docs приняты. Текущий C04 token и shared Review window ЯВНО ОСВОБОЖДЕНЫ CTO 2026-10-28T17:18:45Z.** Matching owned lock/temps absent, writers idle подтверждены; новых server-write tokens нет. Frozen C04 и все raw evidence сохраняются неизменными. Full Technical/Art/P2 PASS не выдан; P2 research slot остаётся активным по решению CTO.
+
+CTO назначил один короткий **read-only code diagnostic** уже наблюдённого zoom200 и вторичного stale completion hint для следующего решения об итерации/partial stop. После fresh read Builder completed/idle turn `01a18378-0842-7ac3-a9af-5f4e6f19e878` Lead turn `01a18386-8e1c-73f3-adc0-491210c1f1e5` отправил ровно одно поручение тому же Builder. Actual diagnostic turn **`01a18387-8ed9-7600-8656-b8a6436ec277`** inProgress; первый completed read-only action ещё ожидается. Scope: собственный frozen04 UI/render source и сохранённые QA observations/raw frames; zoom/resize/render/paused redraw/canvas dimensions и seek/reset/save-status callback. Только точные refs/строки, факты vs inference/unknown, минимальный возможный fix/scope/риск/оценка для решения CTO; **реализация не разрешена**. Ориентир15–20 активных минут, без больших новых отчётов/коммитов/артефактов Builder. Никаких browser/QA/Node/core/simulation/build/SDK experiments/source/frozen/server changes; physics/native/config/projection/r16/art/gestures/anchors/size/height вне scope. TQA/VQA/Artist и закрытые/чужие исследования не будили, P4 независимо.
+
+## История: delivery/docs завершены, owned lock снят до release CTO
 
 **P2_C04_DELIVERY_DOCS_COMPLETE_LOCK_RELEASED_WINDOW_HELD**. Same-Builder continuation `01a18378-0842-7ac3-a9af-5f4e6f19e878` completed/clean; original **`2cf9b6521cb2485a91ace37b44925b2a11fdc7b2`** / Lead **`5b840125690a2036c43a592185aa4e84cc396cfa`**, [полный финальный handoff](builder/DELIVERY_04_PUBLIC_COMPLETE.md). Root прочитал все 169 строк и проверил отсутствие literal operational token/owned nonce в обоих новых committed файлах. Git blob handoff11569 bytes/SHA `7ff7338d22e282948f3feb36092c6b1dff0701ef2ef39d0f9dcb05b19314d0d8`.
 
