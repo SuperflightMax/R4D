@@ -57,48 +57,32 @@ Release gate закрыт: серверные writes сейчас 0. После 
 
 ## Текущее состояние
 
-- Все пять latest Stage1 turns completed/READY; fresh read 2026-10-28 около22:16 UTC. Stage2 дублей не было.
-- Lead worktree чистый при старте, HEAD exact64061757802dc60770ab156ef5672af741d65d03; runtime существует. Фактический gpt-6.1-sol/xhigh подтверждён Director через turn_context и передан CTO; локальная догадка этим не подменяется.
-- Все пять адресных send receipts и наблюдавшиеся новые turns сохранены в DISPATCH.json (commit a1ca011). Каждая первоначальная передача выполнена ровно один раз; последующие сообщения — адресные handoffs внутри текущего Stage2.
-- Ни QA PASS, ни готовый product, ни release сейчас не заявлены.
+Первый материальный checkpoint закреплён в CHECKPOINT_C01.md, commit4eeac03. Пять initial send receipts и новые Stage2 turns — DISPATCH.json, commita1ca011; все пять отправок success, без повторного первоначального запуска. Общая рабочая карточка не меняет заказ. Production нового метода начался; release/server writes остаются0.
 
-Первые фактически выполненные действия (не единый runtime checkpoint):
+### Exact ранний результат и завершённые QA
 
-| Владелец | Завершённое действие и точный pin | Ограничение |
+- Consumer0c611039246904443128b9d12084af2c5a0ae6e6; handoffa259c8bcbf4f3b242a1f2001f06d14a0e89a6d4d:experiments/p5-regenerated-objects/builder/HANDOFF_C01.md.
+- Generated Artist mini01:5085be86d5b5e9bf22619254f42b95ad3dc1320e:experiments/p5-regenerated-objects/asset-artist/asset-manifest.mini-01.json, GitLF23553bytes,SHA2567b8935f4db6f9c20ec6fc2867e115dd787a2a93982f5ef4a5588810d8470e77f. Selected PNG read-only root E:/R4D/perspective/p5-runtime/asset-artist/selected/mini-set-01/. Raw/nativeC refs сохранены.
+- C01 immutable root E:/R4D/perspective/p5-runtime/builder/output/previews/c01/public;22files/13937155bytes. Index рядомindex.json7149bytes,SHA256a19fea2f7ce677f9fa24c5822e0c411a032bd79fda58c055ff8e386ec474f4ac. AppSHA25639d0cc5cdc8e869df975f008057c3c408ed3e41ce40bdd870dd0f001f19f1f44. Coverage4/25pins,1/4receivers,10textures/13instances;ball/shadow иgeneratedfloor реально вPixi/native. Native/source anchors/config/projection неизменны; uniformscale, безXYwarp.
+- Preview http://127.0.0.1:55185/, own Builder PID32108/session55195, rootc01. Обе QA завершили и закрыли собственные вкладки, listener не меняли. Старый ownPID22076 завершён штатно; exit1 не был denial/runtimeerror. Новые candidate/preview только по адресу с ownership/freeport, c01 не перезаписывать.
+- TQA sourceoracle:4e989becd94a3e25b22988ca644c608b04c4528b:experiments/p5-regenerated-objects/qa/technical/REPORT_SOURCE_ORACLE_001.md.37nativefiles/tree exact,1922projectionpoints иupfront0–3replays уже проверены; без причины не повторять.
+- TQA actualc01 completed/pushed:955af7f4d7d576c6296671f141e5314198eb3f1f:experiments/p5-regenerated-objects/qa/technical/REPORT_C01.md иC01_EVIDENCE_PINS.json.22files disk/HTTP,10PNG/metadata и33browserstates подтверждены. Runtime controls/state/RNG/config invariance проверены actual UI. Evidence root E:/R4D/perspective/p5-runtime/technical-qa/c01/,indexSHA256b34472b1c85021f73f24f432cb856a2e7ea29df40e3adae99a7eaf01b1edaf85. Ordinaryseed3957814979 LOST847 иreplay сохранён.
+- VQA actualc01 completed/pushed:ca0219cf65490242a55b1b5b57591e458e556be6:experiments/p5-regenerated-objects/qa/visual/REPORT_C01.md иEVIDENCE_C01.json (29521bytes,SHA2569523761e4e36277ca6f559a0b2a532cef7c7eee4932c18069d6d2b719977dd5e). Evidence root E:/R4D/perspective/p5-runtime/visual-qa/evidence/c01/. Четыре семейства/материалы/тени/опора содержательны, без выраженногоsticker/matte в просмотренных кадрах. Узкиеflower/frogконтакты просмотрены. Ordinaryseed3339315606 LOST1709 сохранён. ОбщегоartisticPASS нет.
+
+### Текущая очередь полезных коррекций
+
+| ID | Проверенный факт и граница | Владелец/следующий шаг |
 |---|---|---|
-| Builder | Consumer schema/пример/targets: b327e5ff53190c9a356f350835390de2e77580ac:experiments/p5-regenerated-objects/builder/contracts/ASSET_CONSUMER.md; рядом asset-manifest.schema.json и asset-manifest.example.json, targets в builder/public/data/targets.json. Pushed. | Consumer runtime ещё не передан; schema передана Artist. |
-| Artist | Generated floor candidate E:/R4D/perspective/p5-runtime/asset-artist/raw/floor-v1.png, SHA256 24a54990c4876fc809af3efd42a711a8a47fefeef51caf3b88608017cbce6e06, 3079122 bytes; verified copy22:22:17UTC, originalC сохранён. | Raw candidate, не art PASS; границы/проекция требуют actual сборки. Flower/leaf получены по сообщению Artist, exact pins ожидаются. Floor передан Builder. |
-| TQA | 4e989becd94a3e25b22988ca644c608b04c4528b:experiments/p5-regenerated-objects/qa/technical/REPORT_SOURCE_ORACLE_001.md. 37 native files/tree exact, projection1922points, seeds0–3 exact replay. Private checkpoint-index SHA256 0f9de629046c84c1789aa84e7784e6b09710694dc1915a0c39539ff01460a114. Pushed. | Не browser/art PASS. Ordinary0=>receiver03 tick1956,1–3LOST сохранены. Event94=>states94/95/96, side475=>475/476/477; timeout limit3200 через штатный API. Передано Builder. |
-| VQA | 6c36558dbefdd957147b585474c6732ed6e6c07b:experiments/p5-regenerated-objects/qa/visual/PREPARATION.md; SOURCE_FACTS.json SHA256 d96c4092916735384c4b2bf283a625e00764c3e35d1bc776fd412ed955a438fe,14095bytes. Pushed. | Самостоятельно просмотрен исходный JPG/P1; кандидат ещё не оценён. Подготовка передана Artist/Builder. |
-| Release | 6844d9a3ab0aa7ec6f4a621f98f8f436b9fd1262:experiments/p5-regenerated-objects/release/DELIVERY_CONTRACT.md. Pushed. | Только local delivery/privacy/handoff контракт; SSH/HTTP/server reads/writes0. Gate закрыт. |
+| A01 ракурс/полнота | Первые masters ближе к переднему ракурсу;far/mid variants иremaining21pins/3receivers ещё не переданы. Генерации не всегда выдерживают измереннуюdepth; названиеfarнеPASS. | Artist turn01a184ac-9f1c-7313-b8f6-ef0e340a32c5: отдельный mini02/fullcoverage, P0geometryguide толькоref, реальныеgenerations/отбор/остаточныеошибки. Mini01 immutable. |
+| A04/C01-V01/F-C01-01 приёмник | ОбеactualQA:seed1696420279,874→875 nativeIN_BUCKET, sphereнаfar rim иterminalhold. Groundsource≈380.921/1221.626, receivercenter358.559/1238.210, validnative distance30.398<33.524; visible spherecenter≈17.7sourcepxвышеground из-заbottomanchor. Точнаяaperture/вкладparts ещёнеизолированы, P1bugне доказан. | Artist измеряетtrueaperture/authoredanchor/front-back; Builder диагностируетpolicy sphereheight/parts/contract. Исправлениепоизолированнойпричине вновомcandidate. Native/source target/r16/physics не двигать; ошибочныйtexture-localanchor допустимо уточнить по факту сprovenance. Не маскироватьодинcaseисчезновением илиложнымterminal. |
+| A03 foreground | Двеnativeeditпробы сдвинулислойотносительноgeneratedfloor, rejected сохранены. | Принятsceneclip изтого жеgeneratedfloor. Builder8bf447629ec78a1ccb088b4ba7a784746e0aca83:contracts/GENERATED_FLOOR_CLIP.md+schema+пример опубликованы и переданыArtist. Artistproductionpolygon source1536+exactfloorSHA/parent/limitations; Builderminimalrender. Art off отключаетmask, Geometryповерх; actualQA следующегоcandidate. |
+| C01-V02 framing | Field обрезает готовыйreceiver01;Wholeдоступен. Это рекомендацияпросмотру, отдельноотобязательногоvisibleentry. | Builder: учитыватьнужныеrenderedreceiver/foregroundbounds вField, uniformcontain, native/RNGне менять. Адресныйповтор874/875Whole/Field. |
+| P01 license | Installed42files совпали сofficialnpm@pixi/colord2.9.6;LICENSEвtarballотсутствует. ТочныйofficialrepoLICENSE найденчерезgitHead/package.json. | Buildersource365e8220221c6f26983e65f4496d875a9a222b1c, futurepackagefragmentпроверен,LICENSEодинраз. Вc01gapисторическисохраняется, finalpackageпроверитRelease. |
 
-TQA/VQA/Release завершили первые Stage2 turns и idle; повторно без входа не будить. Lead не выполняет за них генерацию/реализацию/QA.
+### Следующий переход и ограничения
 
-Consumer v1 uniform scale/part depth — рабочий технический способ, не дополнительное требование заказчика. Если фактический ракурс требует полезной адресной коррекции схемы, она обсуждается по конкретному случаю без изменения P1 геометрии и физики.
+Builder turn01a184bb-7dbb-7c03-b8b1-4e361852627f работаетнадlicense/clip/framing/receiverdiagnosis, Artistнадновойверсией. TQA/VQA idle доmeaningful newfrozen handoff; готовыеcommonoracle/c01матрицы без причины не повторять. СледующаяindependentQA адресно проверяетдельты/fullcoverage и обязательныеcontact/partialocclusion/side/basketсценарии вactualmotion. Lead не генерирует, не пишетproduct и не проводитприёмку вместоних.
 
-### Mini01 и следующий просмотр
+Release idle:6844d9a3ab0aa7ec6f4a621f98f8f436b9fd1262:experiments/p5-regenerated-objects/release/DELIVERY_CONTRACT.md. Толькоlocalподготовка;SSH/HTTP/servermetadata/writes0. Gate:лучшийразумныйрезультат→frozen+обенезависимыеQA→новыйexactCTOreview/singleusetoken→разрешённаядоставка. C01 не final/release.
 
-Artist завершил mini01 и push: 5085be86d5b5e9bf22619254f42b95ad3dc1320e:experiments/p5-regenerated-objects/asset-artist/HANDOFF_MINI_01.md. Manifest asset-manifest.mini-01.json там же: canonical Git LF23553bytes, SHA256 7b8935f4db6f9c20ec6fc2867e115dd787a2a93982f5ef4a5588810d8470e77f; schema b327e5f проверена. Read-only PNG root E:/R4D/perspective/p5-runtime/asset-artist/selected/mini-set-01/,10textures/13instances: floor, flower-07/leaf-05/frog-05/wood-04 + shadows, ball/shadow, receiver-01 back/front. Exact files/alpha/anchors/provenance в manifest, BINDINGS.mini-01.json и records/tool-invocations.json. Raw и activeC originals сохранены. Mini01 передан Builder адресно; во время ранней QA не изменять.
-
-Builder получил сборку Pixi8.17.1/exactnative с generatedfloor1254² -> source1536². В actual IAB самопроверены state95/96/seek95, Art/Geometry/framing на паузе не изменили position/velocity/RNG. Слабый contrast geometry исправлен outline. Upfrontseed0=>receiver03 tick1956; первый обычный UIseed1696420279=>receiver01 tick875 сохранён без отбора. Пока это self-check floor-only, не visual contact/basket PASS. Exact consumer c01/build/URL evidence ожидаются для независимых QA.
-
-Очередь полезных коррекций/проверок:
-
-| Вопрос | Первичная причина/факт | Владелец и следующий шаг |
-|---|---|---|
-| A01 far-view | Первые master footprints глубже дальних P1. В mini01 выбраны существующие близкие по ракурсу targets; остаточная depth delta +3.12/+1.09/-.96/+.02 sourcepx. | Artist продолжает новые far variants/оставшиеся21pins в новой версии, без изменения mini01/геометрии/скрытого растяжения. Early image quality ещё оценит VQA. |
-| A02 receivers | Подготовлен только receiver01 back/front; верхние ropes дошли до canvas edge, регистрация native-edited front пока не проверена в сборке. | Builder c01, затем TQA/VQA actual движение/частичное скрытие; Artist готовит оставшиеся receiver targets в новой версии. |
-| A03 foreground | Полная side-rail/near-platform occlusion пока не подготовлена. | Artist готовит нужную переднюю архитектуру/parts с измеримыми anchors/alpha; actual QA после сборки. |
-| R01 event/time | Native contact t=>poststate t+1; lifecycle/bucket tick отличаются; timeout через штатный API. | Передано Builder, применено в self-check; независимый actual consumer проход ещё впереди. |
-
-Artist повторно свежо проверен idle/completed, затем адресно продолжил существующее поручение: независимая подготовка far variants/remaining coverage/foreground в новой версии с прежними guards и provenance. Builder получает mini01 сейчас и freeze раннего c01; обе QA остаются idle до exact runtime handoff. Release gate закрыт.
-
-### Актуализация 23:02 UTC
-
-Первый материальный checkpoint — CHECKPOINT_C01.md в этой папке: actual Pixi/native, generated mini01 и первый независимый VQA receiver finding, exact artifact/source/evidence pins. Consumer0c611039246904443128b9d12084af2c5a0ae6e6; handoff a259c8bcbf4f3b242a1f2001f06d14a0e89a6d4d; c01 inventory SHA256a19fea2f7ce677f9fa24c5822e0c411a032bd79fda58c055ff8e386ec474f4ac. Обе QA уже active в новых turns, исходная фраза об idle выше относится к предыдущему переходу.
-
-A04: actual seed1696420279/tick875 sphere на дальнем rim при nativeIN_BUCKET. Приоритетная визуальная проблема; VQA исследует соседние кадры/регистрацию, TQA independently runtime, первичная причина пока не установлена. Не двигать bucket/ball и не маскировать вопрос изменением физики. Исправление по подтверждённому finding в новом candidate.
-
-A03 уточнено: registration mismatch у двух generated foreground edits, rejected сохранены. Адресный следующий способ — явная scene-clipped foreground part из того же generated floor, Artist source-region/provenance + Builder renderer/schema; не скрытая маска, Geometry поверх и Art off отключает всё. C01 не изменяется.
-
-Builder turn01a184bb-7dbb-7c03-b8b1-4e361852627f закрывает license gap и готовит контракт этой дельты; Artist turn01a184ac-9f1c-7313-b8f6-ef0e340a32c5 готовит mini02. Native/P1 invariants сохраняются. Release пока idle, новых серверных чтений/записей нет; его gate закрыт.
+Требование, рабочая техническая гипотеза и измеренный результат различаются. Uniformscale/partdepth consumer v1 — внутренний способ, не дополнительный заказ. Бюджет8–12активныхчасов сохраняется, основанийегоувеличивать/менятьсоставсейчаснет. Наблюдаемоеокновремени невыдаватьзаизмеренноеactiveвремя. E~12.12GiB/RAMfree~16GiB поlatestQAguards; передкаждымheavyсвойfreshguard+peak+aggregate/concurrentallowance. Модель/effort/host/settings/globalenv/credentials не менялись, новыхchats/roles/worktree/subagents/P6нет. Новаяdenialостанавливаетexactoperation/targetиобходы;ordinaryfailuresпоprimarytext.
