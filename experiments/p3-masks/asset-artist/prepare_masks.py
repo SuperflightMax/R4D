@@ -59,7 +59,7 @@ def main():
         'ball':{'path':'assets/ball-v1.png','anchorPx':[626.5,624.5],'radiusPx':487.5},
         'shadow':{'path':'assets/shadow-v1.png','anchorPx':[625.5,627.5],
                   'radiusPx':554.5,'offsetRadius':[-0.45,0.5],
-                  'scaleRadius':[1.15,1.0],'alpha':0.72},
+                  'scaleRadius':[1.15,2.6],'alpha':0.72},
         'occluders':occluders
     }
     (ROOT / 'assets.json').write_text(json.dumps(contract,indent=2)+'\n',encoding='utf8')
