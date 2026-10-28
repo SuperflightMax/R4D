@@ -1,6 +1,25 @@
 # P2 candidate04 — checkpoint сериализации доставки
 
-## LIMITED PUBLIC delivery: CTO gate выдан, один execution handoff
+## Candidate04 обслуживается: actual QA назначает CTO; docs/cleanup остановлены
+
+Builder execution `01a18352-5090-7b73-b79b-622ef3a4a008` completed/checkoutclean; handoff `ec4794831546bc44bbf327c913fb3040d791670e`/Lead8bc27a3: [serving receipt](builder/DELIVERY_04_PUBLIC_PENDING_QA.md). Root прочитал полный отчёт и проверил отсутствие literal operational token в новых committed files. Это limitedHTTPdelivery, **не actual UI/Pixi/WebGL/Android/Art/P2 closure PASS**.
+
+Fresh rawguard повторён16:28:20–16:28:21UTC до первогоwrite/lock; все old562files/81dirs/docs/config/HTTP/8targets точны. Stage545foreign+18payload отдельнымиinode проверен как563files/81dirs/90775084bytes/tree892fa950…, oldP1root562/0e6…intact; newroot atomicNOREPLACE16:28:28.591959UTC. Exact RAW PUBLIC snippet switch **16:29:55.132471UTC**, after952SHA `4d32b2d6ee8e19d5c6c24ab61e25f8e8226c0e6d7baa64cc8d2a5e6eae036235`; nginx-t/gracefulreload/activepassed, onlyone rootliteral, noauth/vhost/MIME/securitychanges.
+
+**16:29:59.296760UTC** первый recordedHTTPattempt прошёл: все16frozen04files200/exactbytesSHA/MIME/headers, all6JS application/javascript; full563inventory/545opaqueForeign/P1all12/tree88e934…/catalogcount4/oldroot/config проверены. Catalog12839SHA24f65b…; rootmanifest109751SHA30cfef…; config/art/compiledcore/frozenmanifest unchanged. Новых technical/HTTP failures/policydenials/rebuild/physicsQA не было. P1renderPASS не наследуется. QA target только существующий PUBLIC P2route, ready/fullPASS пока не объявлять.
+
+Root сверил private local copies `E:/R4D/perspective/p2-runtime/output/builder/p2-review-execution-04-final03-01/evidence/`:
+
+| Receipt | Bytes | SHA256 |
+| --- | ---: | --- |
+| BASELINE_GUARD.json |5699|`a11e075838c3f064c3626cc220c64944707fa7ba6c92915393e0ddb7c5eadd5a`|
+| PAYLOAD_CHECKS.json |922|`14db01b7e62c1d99c1e6f78aa18a0665d9e2f1855bb90ff93d9c39003cb3144d`|
+| PRE_SWITCH_GUARD.json |6929|`5f5cc4c7dbda86c569b89a533f96d0186d99d690e6049e386a53a0562a6ea75d`|
+| POSTCHECKS.json |24476|`af643978b7aadcbf4fab35b30c078519cdaa06eb8ee1f6d4bd05a91d8978bde6`|
+
+Private serverbackup `/opt/superflight-studio/backups/review-p2-candidate-04-public-final03/`; nonce/hash/currentownership только privateE. Phase **P2_C04_SERVED_AWAIT_CTO_QA_DOCS_PENDING_LOCK_HELD**: ownlockheld, ownedactiveexec/server/browser/QA writers отсутствуют; документы остаютсяP1after72789/291345/UID1003/27/0640. Append/PUBLIC_RENDER_RECEIPT/DOCS_RESULT/cleanup не выполнялись. **CTO назначает actual04 PUBLIC TQA/VQA адресно сам**, Root/Builder ихнебудили. Послеactualresults+отдельногоdirective тотжеBuilder продолжает фазу сfreshownednonce/inode/live/docs guards, безduplicateupload/switch/newtoken. Window освобождает толькоexplicitCTO. P4independent, UGH/P3/P5/P6нетронуты.
+
+## История: LIMITED PUBLIC gate и один execution handoff
 
 CTO принял exact final03/134-check review и выдал один НОВЫЙ single-use P2 token в2026-10-28T16:20:31Z; shared Review window выделено P2. Literal и operational receipts только privateE/declaredprivatebackup, не Git/reportpage. Старый P1 token закрыт. Никакого actual UI/Art/P2 PASS этим gate не выдано.
 
