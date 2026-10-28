@@ -1,6 +1,16 @@
 # P2 candidate05 — малая разрешённая UI-итерация
 
-## Текущее состояние
+## Текущее состояние: source/freeze готовы, independent static TQA идёт
+
+Implementation/build source **`0367d46211ed170c8840cf702b5ea1cc05f6e430`** / Lead **`73304c8`**. Frozen handoff **`3c4ecc72fc436df6252412a34721345c5dc30064`** / Lead **`d7c1c95`**, [полный компактный checkpoint](builder/CANDIDATE05_FREEZE.md), Git blob7106bytes/SHA `1691e5fca151b13aa98dfc2470d4961b790dac26a8d96bab56ff971af4cbc4ad`. Root полностью прочитал source diff4files и handoff, сверил4 local check/resource receipts и оба C04/C05 full16file bytes/SHA/tree без запуска продукта.
+
+Frozen05: **16files/2453059bytes**, BUILD_MANIFEST **9013bytes/SHA `aa40eea4d51100e157b0bdf32623e874a39777c52be2c801c3dce20285fc4b1b`**, browser tree **`19afaab7ef62e88948419b2fdc38210395ed64acba7aa024d4dc6619d7f6bdec`**. Main16809/SHA `9e71e579cbf9a0e20a51eb2109801d94bfdb1714876718f2727fa4d55d53e87b`. Изменены main.js и только provenance assets/manifest.json/metadata.json; остальные13 browser files exact C04. Core21962/dbb01f…/native008d16…/Pixi/config/projection/art/clock/controller/index/CSS unchanged, reuse без rebundle/execution. Clean source commit предшествовал повторному absent-check/create05.
+
+9 UI model/source checks и package-only/privacy checks passed; browser/PixiGPU/core/controller/clock/seed/physics execution=false. C04 negative control моделирует observed instability, C05 стабилен в модели; completion lifecycle/download/error preservation проверены в этом объёме. Actual PUBLIC05/black200/Art PASS **не выданы**. Fresh pre-build17:48:09UTC free16.684GiB/CPU9%, aggregate19.723GiB с allowance; C/D/E>4GiB, process-local own E. Source/freeze/check scope завершён, оставшаяся локальная работа Builder для этого checkpoint0; intent/serving не делались.
+
+После fresh TQA idle/completed27b9adf/noC05 task Lead передал ровно одно ограниченное independent code/artifact regression. Actual TQA turn **`01a183a5-80d3-7a82-aa69-080d38fa9801` inProgress**; первый completed read **`exec-faf877bd-ba01-46ff-92dc-b97a7046d6be`** exit0: clean own27b9adf, exact source0367/обоих manifest hashes/output absent. Scope — changed fit/status/source-emission/privacy/13unchanged; без browser/physics/native/seed rerun/unsupported API/frozen edits. VQA/Artist не будили. После bounded report тот же Builder получает одно LOCAL intent05 prep от fresh PUBLIC baseline, не delivery. Новый write token/lock/upload/stage/snippet/docs/server writes отсутствуют.
+
+## История разрешения и первого checkpoint
 
 CTO явно разрешил **одну малую implementation итерацию C05** после completed read-only diagnostic. Research slot P2 активен, Full Technical/Art/P2 closure не выдан. C04 limited delivery/docs приняты, прежний token и shared Review window явно освобождены CTO2026-10-28T17:18:45Z. Нового server-write token нет; текущая работа локальная.
 
