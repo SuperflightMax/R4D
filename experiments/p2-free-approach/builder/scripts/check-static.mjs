@@ -9,9 +9,13 @@ import { scanBrowserText } from './scan-browser-text.mjs';
 const i=process.argv.indexOf('--artifact');
 if(i<0 || !process.argv[i+1]) throw new Error('--artifact is required');
 const artifact=path.resolve(process.argv[i+1]);
+const packageOnly=process.argv.includes('--package-only');
 const manifest=JSON.parse(readFileSync(path.join(artifact,'BUILD_MANIFEST.json'),'utf8'));
 const root=path.join(artifact,'bundle',manifest.route);
-const list=(dir,prefix='')=>readdirSync(dir,{withFileTypes:true}).flatMap(entry=>entry.isDirectory()?list(path.join(dir,entry.name),prefix+entry.name+'/'):[prefix+entry.name]);
+const list=(dir,prefix='')=>readdirSync(dir,{withFileTypes:true}).flatMap(entry=>{
+  assert.ok(!entry.isSymbolicLink(),'Symlinks are not allowed in the browser package');
+  return entry.isDirectory()?list(path.join(dir,entry.name),prefix+entry.name+'/'):[prefix+entry.name];
+});
 assert.deepEqual(list(root).sort(),manifest.files.map(f=>f.path));
 for(const file of manifest.files){const bytes=readFileSync(path.join(root,file.path));assert.equal(bytes.length,file.bytes);assert.equal(sha256(bytes),file.sha256);if(/\.(?:js|mjs|json|html|css|txt)$/.test(file.path))assert.deepEqual(scanBrowserText(file.path,bytes).violations,[]);}
 assert.equal(sha256(Buffer.from(JSON.stringify(manifest.files)+'\n')),manifest.treeSha256);
@@ -51,10 +55,11 @@ assert.ok(main.includes('link.download = filename'));
 for(const ref of ['inputs/config.json','inputs/manifest.json','metadata.json','assets/manifest.json','source/01-jungle.jpg']){
   assert.ok(main.includes(`resource('${ref}')`));assert.ok(manifest.files.some(f=>f.path===ref));
 }
+const runs=[];
+if(!packageOnly) {
 const core=await import(pathToFileURL(path.join(root,'runtime/sim-core.js')).href);
 const {Controller}=await import(pathToFileURL(path.join(root,'src/controller.js')).href);
 const expected={1:{ticks:1735,path:'76dbe2227e8e7ed57842e8141b43be37ce728e6160fee11d5ca80a10ef89b376'},2:{ticks:1290,path:'930c1e942212ff8cb2227d88469ff0ba8dc31ea8bc94a137c5e15a5f0a2e9123'}};
-const runs=[];
 for(const seed of [1,2]){
   const sim=new Controller(core,config,{},seed);sim.advance(sim.maxTicks);
   const first=sim.snapshot();
@@ -65,6 +70,10 @@ for(const seed of [1,2]){
   sim.advance(1);assert.equal(sim.state.tick,96);
   runs.push({seed,ticks:first.tick,result:first.result,trajectorySha256:expected[seed].path,exactReplayContactTick:95});
 }
-const report={schema:'r4d.p2.static-check.v1',sourceCommit:manifest.sourceCommit,candidate:manifest.candidate,treeSha256:manifest.treeSha256,checks:['Exact file set and all bytes/SHA256','Actual artifact privacy scan including every emitted .js; pinned SDK exact-span exception only','Declared source→.js module emission receipts; only explicit references changed','Relative HTML/import/resource references under route','No required POST API; replay download source present','Jungle v2 exact PNG/config and four-object data','Compiled real sim-core trajectories match earlier pinned native baseline','Exact contact replay and one physical tick'],runs,mimePrediction:manifest.mime,browserExecuted:false,visualPass:false,independentQA:false,limitations:['Download DOM interaction and Pixi rendering not executed','Existing mapping predicts JS MIME; real HTTP200 not observed','New independent TQA/VQA required on these bytes; previous PASS not carried forward']};
-writeFileSync(path.join(artifact,'STATIC_CHECK.json'),JSON.stringify(report,null,2)+'\n');
-console.log(JSON.stringify({pass:true,scope:'static-data and compiled-core artifact checks only',candidate:manifest.candidate,treeSha256:manifest.treeSha256,browserExecuted:false,visualPass:false,runs:runs.map(r=>({seed:r.seed,ticks:r.ticks,result:r.result.kind}))}));
+}
+const report={schema:'r4d.p2.static-check.v1',scope:packageOnly?'package-only; core/controller never imported or executed':'static-data and compiled-core artifact checks',sourceCommit:manifest.sourceCommit,candidate:manifest.candidate,treeSha256:manifest.treeSha256,checks:['Exact file set and all bytes/SHA256','Actual artifact privacy scan including every emitted .js; pinned SDK exact-span exception only','Declared source→.js module emission receipts; only explicit references changed','Relative HTML/import/resource references under route','No required POST API; replay download source present','Jungle v2 exact PNG/config and four-object data',...(packageOnly?[]:['Compiled real sim-core trajectories match earlier pinned native baseline','Exact contact replay and one physical tick'])],runs,physicsExecuted:!packageOnly,mimePrediction:manifest.mime,browserExecuted:false,visualPass:false,independentQA:false,limitations:['Download DOM interaction and Pixi rendering not executed','Existing mapping predicts JS MIME; real HTTP200 not observed','New independent TQA/VQA required on these bytes; previous PASS not carried forward',...(packageOnly?['Existing physics/oracle results are attributed baseline only; no new trajectory/control/clock execution']:[])]};
+const ri=process.argv.indexOf('--report');
+const reportPath=ri>=0?path.resolve(process.argv[ri+1]):path.join(artifact,packageOnly?'PACKAGE_STATIC_CHECK.json':'STATIC_CHECK.json');
+if(ri>=0 && !reportPath.replaceAll('\\','/').toLowerCase().startsWith('e:/r4d/perspective/p2-runtime/')) throw new Error('Report must stay in E runtime');
+writeFileSync(reportPath,JSON.stringify(report,null,2)+'\n',{flag:packageOnly?'wx':'w'});
+console.log(JSON.stringify({pass:true,scope:report.scope,candidate:manifest.candidate,treeSha256:manifest.treeSha256,physicsExecuted:!packageOnly,browserExecuted:false,visualPass:false,runs:runs.map(r=>({seed:r.seed,ticks:r.ticks,result:r.result.kind}))}));

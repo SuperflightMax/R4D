@@ -6,10 +6,12 @@ import { root, pins, verifyInputs, verifyCore, canonicalLF, sha256 } from './pin
 import { scanBrowserText, PINNED_PIXI_SHA256 } from './scan-browser-text.mjs';
 
 const argument = name => { const i=process.argv.indexOf(name); if(i<0 || !process.argv[i+1]) throw new Error(`Required argument ${name}`); return process.argv[i+1]; };
+const optional = name => { const i=process.argv.indexOf(name); return i<0?null:argument(name); };
 const output=path.resolve(argument('--output'));
-const coreRoot=path.resolve(argument('--core-root'));
-const pixiRoot=path.resolve(argument('--pixi-root'));
-const bundlerRoot=path.resolve(argument('--bundler-root'));
+const reuseRoot=optional('--reuse-artifact')?path.resolve(argument('--reuse-artifact')):null;
+const coreRoot=reuseRoot?null:path.resolve(argument('--core-root'));
+const pixiRoot=reuseRoot?null:path.resolve(argument('--pixi-root'));
+const bundlerRoot=reuseRoot?null:path.resolve(argument('--bundler-root'));
 const sourcePath=path.resolve(argument('--source'));
 const version=argument('--version');
 if(!/^p2-jungle-static-[a-z0-9-]+$/.test(version)) throw new Error('Invalid candidate version');
@@ -19,9 +21,26 @@ const git=(...args)=>execFileSync('git',args,{cwd:root,encoding:'utf8'}).trim();
 const sourceCommit=git('rev-parse','HEAD');
 if(git('--no-optional-locks','status','--porcelain=v1')) throw new Error('Freeze requires a clean source commit');
 verifyInputs();
-const coreSrc=verifyCore(coreRoot);
-const pixiPackage=JSON.parse(readFileSync(path.join(pixiRoot,'package.json'),'utf8'));
-const bundlerPackage=JSON.parse(readFileSync(path.join(bundlerRoot,'package.json'),'utf8'));
+let baseline, baselineBrowser;
+if(reuseRoot) {
+  const raw=readFileSync(path.join(reuseRoot,'BUILD_MANIFEST.json'));
+  if(sha256(raw)!=='60f79d1bdad8d3737376952043013394bb3098de6b15200fc5c352dd875dd1f7') throw new Error('Expected exact frozen04 manifest');
+  baseline=JSON.parse(raw);baselineBrowser=path.join(reuseRoot,'bundle',baseline.route);
+  for(const [key,value] of Object.entries(pins)) if(baseline.sourceInputs[key]!==value) throw new Error(`Frozen04 input pin differs: ${key}`);
+  const listing=(dir,prefix='')=>readdirSync(dir,{withFileTypes:true}).flatMap(entry=>{
+    if(entry.isSymbolicLink()) throw new Error('Frozen04 symlink is not allowed');
+    return entry.isDirectory()?listing(path.join(dir,entry.name),prefix+entry.name+'/'):[prefix+entry.name];
+  });
+  if(JSON.stringify(listing(baselineBrowser).sort())!==JSON.stringify(baseline.files.map(f=>f.path))) throw new Error('Frozen04 file set differs');
+  for(const file of baseline.files) {
+    const bytes=readFileSync(path.join(baselineBrowser,file.path));
+    if(bytes.length!==file.bytes || sha256(bytes)!==file.sha256) throw new Error(`Frozen04 bytes differ: ${file.path}`);
+  }
+  if(baseline.core.compiledSha256!=='dbb01f3276fca9df7bacd69ecfb1e3737e74f6bd606b67041ec6ba5ca092c2a7') throw new Error('Compiled core pin differs');
+}
+const coreSrc=reuseRoot?null:verifyCore(coreRoot);
+const pixiPackage=reuseRoot?{version:baseline.dependencies.pixi}:JSON.parse(readFileSync(path.join(pixiRoot,'package.json'),'utf8'));
+const bundlerPackage=reuseRoot?{version:baseline.dependencies.bundler}:JSON.parse(readFileSync(path.join(bundlerRoot,'package.json'),'utf8'));
 if(pixiPackage.version!=='8.22.0' || bundlerPackage.version!=='1.2.15') throw new Error('Unexpected existing dependency version');
 const sourceBytes=readFileSync(sourcePath);
 if(sha256(sourceBytes)!==pins.sourceSha256) throw new Error('Wrong source JPG');
@@ -34,6 +53,7 @@ for(const asset of [art.ball,art.shadow]) {
 }
 const route='review/r4d/p2-free-approach';
 const browserRoot=path.join(output,'bundle',route);
+if(existsSync(output)) throw new Error('Candidate appeared before create; stop without overwrite/renumber');
 mkdirSync(browserRoot,{recursive:true});
 const put=(relative,bytes)=>{ const target=path.join(browserRoot,relative); mkdirSync(path.dirname(target),{recursive:true}); writeFileSync(target,bytes); };
 const copy=(relative,from)=>put(relative,readFileSync(from));
@@ -76,9 +96,12 @@ art.provenance.candidate=version;
 delete art.provenance.runtimeExecuted;
 put('assets/manifest.json',JSON.stringify(art,null,2)+'\n');
 for(const asset of [art.ball,art.shadow]) copy(`assets/files/${asset.file}`,path.join(packet,asset.file));
-const pixi=readFileSync(path.join(pixiRoot,'dist/pixi.min.mjs'),'utf8').replace(/^\/\/[#@]\s*sourceMappingURL=.*$/gm,'');
+const pixi=reuseRoot?readFileSync(path.join(baselineBrowser,'vendor/pixi.js')):readFileSync(path.join(pixiRoot,'dist/pixi.min.mjs'),'utf8').replace(/^\/\/[#@]\s*sourceMappingURL=.*$/gm,'');
 put('vendor/pixi.js',pixi);
-copy('vendor/PIXI-LICENSE.txt',path.join(pixiRoot,'LICENSE'));
+copy('vendor/PIXI-LICENSE.txt',reuseRoot?path.join(baselineBrowser,'vendor/PIXI-LICENSE.txt'):path.join(pixiRoot,'LICENSE'));
+if(reuseRoot) {
+  copy('runtime/sim-core.js',path.join(baselineBrowser,'runtime/sim-core.js'));
+} else {
 const wrapper=path.join(output,'core-entry.mjs');
 writeFileSync(wrapper,`export { createSimRunSession, stepSimRunSession, timeoutSimRunSession, runHeadlessOnce } from ${JSON.stringify(path.join(coreSrc,'index.ts').replaceAll('\\','/'))};\n`);
 const {build}=await import(pathToFileURL(path.join(bundlerRoot,'dist/index.mjs')).href);
@@ -93,6 +116,7 @@ await build({
   output:{file:path.join(browserRoot,'runtime/sim-core.js'),format:'esm',sourcemap:false,minify:true,comments:false},
 });
 unlinkSync(wrapper);
+}
 const compiledCore=readFileSync(path.join(browserRoot,'runtime/sim-core.js'));
 const metadata={schema:'r4d.p2.static-metadata.v1',candidate:version,sourceCommit,coreCommit:pins.coreCommit,compiledCoreSha256:sha256(compiledCore),p1Commit:pins.p1Commit,configSha256:pins.configSha256,projectionSha256:pins.projectionSha256,sourceSha256:pins.sourceSha256,pixiVersion:pixiPackage.version,pixiSha256:sha256(Buffer.from(pixi)),assetPacket:'jungle-art-v2',limitations:'Only four occluders; scene/art quality awaits independent visual review'};
 put('metadata.json',JSON.stringify(metadata,null,2)+'\n');
@@ -109,6 +133,6 @@ const files=collect(browserRoot).sort().map(relative=>{
   return {path:relative,bytes:bytes.length,sha256:sha256(bytes),kind:relative==='runtime/sim-core.js'?'authorized-private-compiled-runtime':'public-scene-or-asset'};
 });
 const treeSha256=sha256(Buffer.from(JSON.stringify(files)+'\n'));
-const manifest={schema:'r4d.p2.static-build.v1',status:'FROZEN_PENDING_INDEPENDENT_QA',candidate:version,sourceCommit,route:'/'+route+'/',sourceInputs:{...pins,leadBase:'ec090addd2f261b4f4f2b5abd8c742df4672d115',artSourceCommit:'e217cd139fbda153261a69977fe590867cbf57ed'},moduleEmissions,privacyScan:{pinnedPixiSha256:PINNED_PIXI_SHA256,files:privacyScan},mime:{extension:'.js',expected:'application/javascript',basis:'Existing mapping observed read-only; no server changes; actual HTTP unverified'},dependencies:{pixi:pixiPackage.version,bundler:bundlerPackage.version,node:process.version},core:{commit:pins.coreCommit,sourceTree:execFileSync('git',['rev-parse',`${pins.coreCommit}:packages/sim-core`],{cwd:coreRoot,encoding:'utf8'}).trim(),compiledSha256:sha256(compiledCore),emittedPath:'runtime/sim-core.js',sourceOrMapsIncluded:false},treeDigestRule:'SHA256(JSON.stringify(sorted per-file records)+LF)',treeSha256,fileCount:files.length,totalBytes:files.reduce((sum,f)=>sum+f.bytes,0),files,limitations:['Only four source-aligned occluders; other 21 obstacles/railings/basket rims uncovered','No browser view or artistic PASS is implied by compilation','New source/build bytes require fresh independent TQA/VQA; old results are baseline only','Release requires an exact Lead gate; no external write performed']};
+const manifest={schema:'r4d.p2.static-build.v1',status:'FROZEN_PENDING_INDEPENDENT_QA',candidate:version,sourceCommit,route:'/'+route+'/',sourceInputs:{...pins,leadBase:'ec090addd2f261b4f4f2b5abd8c742df4672d115',artSourceCommit:'e217cd139fbda153261a69977fe590867cbf57ed'},moduleEmissions,privacyScan:{pinnedPixiSha256:PINNED_PIXI_SHA256,files:privacyScan},mime:{extension:'.js',expected:'application/javascript',basis:'Existing mapping observed read-only; no server changes; actual HTTP unverified'},dependencies:{pixi:pixiPackage.version,bundler:bundlerPackage.version,node:process.version},core:{commit:pins.coreCommit,sourceTree:reuseRoot?baseline.core.sourceTree:execFileSync('git',['rev-parse',`${pins.coreCommit}:packages/sim-core`],{cwd:coreRoot,encoding:'utf8'}).trim(),compiledSha256:sha256(compiledCore),emittedPath:'runtime/sim-core.js',sourceOrMapsIncluded:false,...(reuseRoot?{reusedFrom:{candidate:baseline.candidate,sourceCommit:baseline.sourceCommit,manifestSha256:'60f79d1bdad8d3737376952043013394bb3098de6b15200fc5c352dd875dd1f7',rebundled:false}}:{})},treeDigestRule:'SHA256(JSON.stringify(sorted per-file records)+LF)',treeSha256,fileCount:files.length,totalBytes:files.reduce((sum,f)=>sum+f.bytes,0),files,limitations:['Only four source-aligned occluders; other 21 obstacles/railings/basket rims uncovered','No browser view or artistic PASS is implied by compilation','New source/build bytes require fresh independent TQA/VQA; old results are baseline only','Release requires an exact Lead gate; no external write performed']};
 writeFileSync(path.join(output,'BUILD_MANIFEST.json'),JSON.stringify(manifest,null,2)+'\n');
 console.log(JSON.stringify({candidate:version,sourceCommit,browserRoot,manifest:path.join(output,'BUILD_MANIFEST.json'),treeSha256,fileCount:manifest.fileCount,totalBytes:manifest.totalBytes,manifestSha256:sha256(readFileSync(path.join(output,'BUILD_MANIFEST.json')))}));
