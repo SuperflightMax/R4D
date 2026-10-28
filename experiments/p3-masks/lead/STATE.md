@@ -4,7 +4,35 @@
 Lead: `lead-r4d-p3-masks-01`, chat `01a17faf-f425-75d1-948a-ed456864701f`.
 CTO: `cto-r4d-perspective-01`, chat `01a174b2-1b0d-79b1-866f-f40e23f6dfb2`.
 
-## Текущее: exact intent готов, запрошен новый single CTO token
+## Текущее: token фактически передан, Release выполняет fresh guards
+
+CTO выдал единственный token
+`CTO-P3-F01-20261028T064706Z-ddfe257b6856` на exact intent ddfe257b…,
+те же bytes/targets/write-set/rollback. P2 server_write=false/hold подтверждён
+CTO, shared окно эксклюзивно P3 до его явного освобождения.
+
+Предыдущий Lead turn `01a18109-14ad-7aa3-b0ce-a8c0adfec746` завершился
+capacity error: «Selected model is at capacity. Please try a different model.»
+Модель/reasoning не менялись. Собственный read_thread подтвердил: прежние
+передачи Release не содержали token, несмотря на последний текст о намерении.
+После адресного технического resume token ОДИН РАЗ фактически отправлен
+существующему Release chat `01a17fb0-3262-7d02-957e-29f4c9d649b6`;
+tool вернул isError=false и правильный threadId. Это не новая выдача/выпуск.
+
+Новый ACTUAL Release turn `01a1814d-3b98-71e0-ad48-524acbd9d828`
+inProgress/errornull; первые read-only Git-команды completed/exit0.
+Release получил token и начал fresh resources/live guard/inventory/modes/
+absence всех3targets. Содержательного guard/switch checkpoint пока нет;
+публикация/серверные записи не объявляются выполненными.
+При любом восстановлении НЕ дублировать token send: сначала сверить этот
+успешный результат и actual Release status. Lead не выполняет серверную
+работу вместо Release. Никаких QA/build/подготовки пакета заново.
+
+Следующее действие: наблюдать фактический prewrite/switch/postchecks,
+передать CTO checkpoint. Любой drift/занятый target — stop и точный отчёт,
+token не переносить на другой baseline/bytes. Slot до delivery/handoff занят.
+
+## Exact intent и границы разрешённого выпуска
 
 Release preparation завершена, commit
 `ddfe257b68563183fc64b1b678b4cd1bf06e7aca` отправлен. Lead полностью прочитал
