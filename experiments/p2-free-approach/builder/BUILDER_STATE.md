@@ -2,7 +2,31 @@
 
 staff_id `builder-r4d-p2-free-01`; branch `codex/r4d-p2-free-builder-01`; исходный HEAD `df760b680f0d0264342fc8577fcc5779b80a3a15`. Рабочая копия только `E:/R4D/perspective/p2-worktrees/builder`.
 
-## Current PUBLIC final03 — local only, после завершённой P1 publication
+## Current LIMITED PUBLIC candidate04 — served, ждём CTO QA, docs/lock held
+
+По новому exact CTO gate issued2026-10-28T16:20:31Z тот же Builder/ReleaseEngineer
+выполнил один guarded delivery неизменённого frozen04/final03 packet.
+Первый read-only fresh guard16:24:23–16:24:24UTC PASS; raw guard повторён
+непосредственно перед первым write16:28:20–16:28:21UTC. Own lock inode11
+удерживается с тем же private nonce. Staging/newroot NOREPLACE16:28:28UTC;
+root-only snippet switch16:29:55.132471UTC, nginx-t/reload/active passed.
+
+Current **P2_C04_SERVED_AWAIT_CTO_QA_DOCS_PENDING_LOCK_HELD**.
+Actual PUBLIC все16frozen04files200/exactbytesSHA/MIME/headers подтвердились
+16:29:59UTC на первом recorded HTTP attempt; всеJS application/javascript.
+Full563files/81dirs/90775084bytes/tree892fa950ee4ce08f02a71b76f99241eeb95d52038515699fff8e8a447f9e6b8f;
+545foreign records, old562-file P1root, все12P1files/card/count4 сохранены.
+Actual P2 UI/Pixi/WebGL/timing/download/Android/ArtPASS не заявлен, P1PASS
+не наследован. CTO назначает existing QA отдельно; мы QA не будим.
+
+Подробная промежуточная передача:
+[DELIVERY_04_PUBLIC_PENDING_QA.md](DELIVERY_04_PUBLIC_PENDING_QA.md).
+Private POSTCHECKS24476bytes/SHAaf643978b7aadcbf4fab35b30c078519cdaa06eb8ee1f6d4bd05a91d8978bde6.
+Server docs НЕ дополнены, cleanup НЕ выполнен, окно CTO НЕ освобождено.
+Остановка на текущей own phase до фактических QA результатов и адресного
+продолжения docs/lock completion тем же token; не повторять upload/switch.
+
+## История PUBLIC final03 preparation — immutable packet, затем разрешён delivery
 
 Root/CTO явно закрыли P1 auxiliary delivery и освободили её token/window
 2026-10-28T15:47:25Z; новый server-write token P2 не выдан. В том же E-worktree,
