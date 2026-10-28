@@ -13,6 +13,19 @@ const json = async url => {
   return response.json();
 };
 
+const initialSaveStatus = $('save-status').textContent;
+const completionSaveStatus = 'Запуск завершён. «Сохранить повтор» скачивает JSON всех наблюдавшихся запусков.';
+let saveStatusOwner = 'initial';
+function setSaveStatus(message, owner) {
+  $('save-status').textContent = message;
+  $('save-status').classList.toggle('error', owner === 'error');
+  saveStatusOwner = owner;
+}
+function syncCompletionHint(done) {
+  if (done && saveStatusOwner === 'initial') setSaveStatus(completionSaveStatus, 'completion');
+  else if (!done && saveStatusOwner === 'completion') setSaveStatus(initialSaveStatus, 'initial');
+}
+
 async function main() {
   const [config, accepted, metadata, art] = await Promise.all([
     json(resource('inputs/config.json')), json(resource('inputs/manifest.json')), json(resource('metadata.json')), json(resource('assets/manifest.json')),
@@ -86,12 +99,18 @@ async function main() {
 
   function fit() {
     const zoom = Number($('zoom').value);
-    const scale = Math.min(stage.clientWidth, stage.clientHeight) / 1536 * zoom;
-    const width = Math.max(stage.clientWidth, Math.round(1536 * scale));
-    const height = Math.max(stage.clientHeight, Math.round(1536 * scale));
-    app.renderer.resize(width, height);
+    // Border-box size does not change when the canvas introduces scrollbars.
+    // Measuring clientWidth/Height here feeds their gutters back into resize.
+    const bounds = stage.getBoundingClientRect(), css = getComputedStyle(stage);
+    const viewportWidth = Math.max(1, Math.round(bounds.width - parseFloat(css.borderLeftWidth) - parseFloat(css.borderRightWidth)));
+    const viewportHeight = Math.max(1, Math.round(bounds.height - parseFloat(css.borderTopWidth) - parseFloat(css.borderBottomWidth)));
+    const scale = Math.min(viewportWidth, viewportHeight) / 1536 * zoom;
+    const width = Math.max(viewportWidth, Math.round(1536 * scale));
+    const height = Math.max(viewportHeight, Math.round(1536 * scale));
+    if (app.canvas.width !== width || app.canvas.height !== height) app.renderer.resize(width, height);
     scene.scale.set(scale);
     scene.position.set((width - 1536 * scale) / 2, (height - 1536 * scale) / 2);
+    render();
   }
   new ResizeObserver(fit).observe(stage);
   $('zoom').onchange = fit;
@@ -107,6 +126,7 @@ async function main() {
   }
 
   function render() {
+    syncCompletionHint(sim.state.done);
     const ball = sim.state.ball.pos, r = config.board.ball.r, point = project(ball);
     const right = project({ x: ball.x + r, y: ball.y }), left = project({ x: ball.x - r, y: ball.y });
     const radiusPx = Math.hypot(right.x - left.x, right.y - left.y) / 2;
@@ -196,7 +216,7 @@ async function main() {
     const link = document.createElement('a');
     link.href = url; link.download = filename; document.body.appendChild(link);
     link.click(); link.remove(); setTimeout(() => URL.revokeObjectURL(url), 1000);
-    $('save-status').textContent = `JSON передан браузеру для скачивания: ${filename}`;
+    setSaveStatus(`JSON передан браузеру для скачивания: ${filename}`, 'download');
     return { filename, checkpoint };
   }
   function start(seed, reason, nextPaused = paused) {
@@ -235,7 +255,6 @@ async function main() {
     if (sim.state.done && lastSaved !== `${runId}:${sim.state.tick}`) {
       lastSaved = `${runId}:${sim.state.tick}`;
       record('completed');
-      $('save-status').textContent = 'Запуск завершён. «Сохранить повтор» скачивает JSON всех наблюдавшихся запусков.';
     }
   });
   window.addEventListener('unhandledrejection', event => showError(event.reason));
@@ -248,7 +267,7 @@ async function main() {
     finish: () => step(sim.maxTicks),
     setArt: visible => { $('art').checked = visible; render(); },
     setGeometry: visible => { $('geometry').checked = visible; render(); },
-    setZoom: value => { $('zoom').value = String(value); fit(); render(); },
+    setZoom: value => { $('zoom').value = String(value); fit(); },
     exportRuns: () => { record('qa-export'); return structuredClone(observations); }, save,
     ready: true,
   };
@@ -256,8 +275,7 @@ async function main() {
   render();
 }
 function showError(error) {
-  $('save-status').textContent = error?.message || String(error);
-  $('save-status').classList.add('error');
+  setSaveStatus(error?.message || String(error), 'error');
   console.error(error);
 }
 main().catch(error => { $('asset-status').textContent = 'Сцена не запущена'; showError(error); });
