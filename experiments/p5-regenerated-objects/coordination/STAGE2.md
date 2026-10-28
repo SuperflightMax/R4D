@@ -59,5 +59,19 @@ Release gate закрыт: серверные writes сейчас 0. После 
 
 - Все пять latest Stage1 turns completed/READY; fresh read 2026-10-28 около22:16 UTC. Stage2 дублей не было.
 - Lead worktree чистый при старте, HEAD exact64061757802dc60770ab156ef5672af741d65d03; runtime существует. Фактический gpt-6.1-sol/xhigh подтверждён Director через turn_context и передан CTO; локальная догадка этим не подменяется.
-- Подтверждения пяти адресных отправок и новые turn/action pins будут добавлены после фактических событий. ACK/план не считается началом производства.
+- Все пять адресных send receipts и наблюдавшиеся новые turns сохранены в DISPATCH.json (commit a1ca011). Каждая первоначальная передача выполнена ровно один раз; последующие сообщения — адресные handoffs внутри текущего Stage2.
 - Ни QA PASS, ни готовый product, ни release сейчас не заявлены.
+
+Первые фактически выполненные действия (не единый runtime checkpoint):
+
+| Владелец | Завершённое действие и точный pin | Ограничение |
+|---|---|---|
+| Builder | Consumer schema/пример/targets: b327e5ff53190c9a356f350835390de2e77580ac:experiments/p5-regenerated-objects/builder/contracts/ASSET_CONSUMER.md; рядом asset-manifest.schema.json и asset-manifest.example.json, targets в builder/public/data/targets.json. Pushed. | Consumer runtime ещё не передан; schema передана Artist. |
+| Artist | Generated floor candidate E:/R4D/perspective/p5-runtime/asset-artist/raw/floor-v1.png, SHA256 24a54990c4876fc809af3efd42a711a8a47fefeef51caf3b88608017cbce6e06, 3079122 bytes; verified copy22:22:17UTC, originalC сохранён. | Raw candidate, не art PASS; границы/проекция требуют actual сборки. Flower/leaf получены по сообщению Artist, exact pins ожидаются. Floor передан Builder. |
+| TQA | 4e989becd94a3e25b22988ca644c608b04c4528b:experiments/p5-regenerated-objects/qa/technical/REPORT_SOURCE_ORACLE_001.md. 37 native files/tree exact, projection1922points, seeds0–3 exact replay. Private checkpoint-index SHA256 0f9de629046c84c1789aa84e7784e6b09710694dc1915a0c39539ff01460a114. Pushed. | Не browser/art PASS. Ordinary0=>receiver03 tick1956,1–3LOST сохранены. Event94=>states94/95/96, side475=>475/476/477; timeout limit3200 через штатный API. Передано Builder. |
+| VQA | 6c36558dbefdd957147b585474c6732ed6e6c07b:experiments/p5-regenerated-objects/qa/visual/PREPARATION.md; SOURCE_FACTS.json SHA256 d96c4092916735384c4b2bf283a625e00764c3e35d1bc776fd412ed955a438fe,14095bytes. Pushed. | Самостоятельно просмотрен исходный JPG/P1; кандидат ещё не оценён. Подготовка передана Artist/Builder. |
+| Release | 6844d9a3ab0aa7ec6f4a621f98f8f436b9fd1262:experiments/p5-regenerated-objects/release/DELIVERY_CONTRACT.md. Pushed. | Только local delivery/privacy/handoff контракт; SSH/HTTP/server reads/writes0. Gate закрыт. |
+
+TQA/VQA/Release завершили первые Stage2 turns и idle; повторно без входа не будить. Следующий handoff — exact малый manifest/PNG набор Artist в consumer Builder и material runtime pins/URL для адресной независимой QA. Lead не выполняет за них генерацию/реализацию/QA.
+
+Consumer v1 uniform scale/part depth — рабочий технический способ, не дополнительное требование заказчика. Если фактический ракурс требует полезной адресной коррекции схемы, она обсуждается по конкретному случаю без изменения P1 геометрии и физики.
