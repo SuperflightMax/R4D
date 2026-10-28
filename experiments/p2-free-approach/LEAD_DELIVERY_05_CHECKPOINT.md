@@ -1,6 +1,65 @@
 # P2 candidate05 — малая разрешённая UI-итерация
 
-## Текущее состояние: CTO authorised same-token docs/finalization, Builder active
+## Текущее состояние: delivery/docs complete, owned lock released, window HELD
+
+**P2_C05_DELIVERY_DOCS_COMPLETE_LOCK_RELEASED_WINDOW_HELD**. Same-token continuation
+`01a18407-e6da-7920-998d-ea9f7673f438` completed/idle/clean; final Builder handoff
+original **`856b8073e4f8161ea2b11836911847aad883bfa0`** pushed and imported,
+[full completion report](builder/DELIVERY_05_PUBLIC_COMPLETE.md)8837bytes/SHA
+`29a8847e631adfaa739212eb4290dd22e85ab77c803b8da80196fdf8001b93bd` fully read.
+First actual assigned action exec-88ca6a4b… exit0 at19:41:38UTC; exact send/turn below.
+
+First fresh docs prewrite guard19:48:15.917689–19:48:17.997658UTC passed before
+any new server write; guard.result28573/SHA
+`124faaf726f18dd134685393dc0ef4ca67dfd51f844ed33e5fcb7b8a199070ad`.
+Only allowlisted render/docs receipts and append-only two docs through exact temps.
+Original prefixes preserved byte-for-byte, uid1003/gid27/0640 throughout:
+
+| Document | Append UTC | Suffix bytes/SHA256 | Result bytes/SHA256 |
+| --- | --- | --- | --- |
+| service |19:49:25.504758|3939 /88868df0a597562306eb56427091b8a9043f6f9e154cd715bf2aa1cacbf0f90e|80584 /cc7703b68dbe29e2d94baa73e93752119f5a8b8ee24f46114eab74d186145a76|
+| CHANGELOG |19:49:27.322107|1742 /7ed6b1440ac8cc3a1d581154b67d0275001ed24a26bb215c9a00d543e52c0d8f|295479 /6f1af1852d13c8a62a66a8863a2825937037e02ba8318205b1344bb0ca799e2b|
+
+Required final all16 HTTP/bytes/SHA/MIME/security, root563/81/90775981/treee0ed…,
+P1all12/545opaque foreign/73dirs/catalog/oldC04/snippet/vhost/MIME/docs passed
+19:49:27.322348–19:49:29.343220UTC. Matching own nonce/inode12 lock removed
+**19:49:29.437657UTC**; final after-cleanup guard19:49:29.437731–19:49:31.247870
+confirmed state and absent lock/stage/declared temps. No repeated delivery/reload/
+upload/switch/build/QA/rollback/source change. Uploadtar/privatebackup/old+new roots
+retained; exactly11normal backupfiles, no ROLLBACK_RESULT placeholder.
+
+Read-back19:51:44.819804UTC independently rechecked actual entire doc prefix bytes
+against exact retained before snapshots, resulting metadata and both receipt bytes.
+Owned processes absent19:52:40UTC; executor subsequently completed/pushed/clean.
+Lead inspected collector prefix-comparison code and verified all receipt/guard/HTTP/
+metadata/preservation/cleanup/QA pin claims: **94 local checks passed**, no new remote
+or browser/product action. Own receipt6639/SHA
+`820ad2268b02e3dbcfd1b44e7fef89bd889bbf5957e4fa868c9ce45347c78f2b`,
+`E:/R4D/perspective/p2-runtime/output/lead-freeze/p2-public05-FINALIZATION-REVIEW-01.json`.
+Local checker corrected nullable after-cleanup all16 field and six-field read-back
+metadata projection; no product/delivery defect or policy denial.
+
+| Final private receipt | Bytes | SHA256 |
+| --- | ---: | --- |
+| PUBLIC_RENDER_RECEIPT.json |25477|cf0805cf66ece855d65a11de48e5c0b944b621e510fb068466c616827c9e9f99|
+| DOCS_RESULT.json |32413|3842cea076a549abedf2cda552898fe820182f37b4ccb4bef2c892fe33463a6a|
+| finish.result.json |45784|207505f094e68a2295801309771de61e3da908cb4d309a983c5ea7e7c200c026|
+| FINAL_ACTUAL.json |3225|470db489facd5abc534ccebc071f6e42c16fd38ed212e0215c823e4f1ab6f997|
+
+Accepted limited TQA94e125/VQA4b9aa770/actual95–96/200 no-black captures and hint
+lifecycle preserved with all limits: sparse desktop/IAB/seed1 only; live download/
+error/visibility/Android unverified, fine contact/partial occlusion/ball-shadow
+grounding unaccepted, Fit/narrow small ball/shadow and internal stage scrollbars,
+4occluders only/remaining21+rails+baskets unaccepted. C04 black history unchanged;
+no universal blackfix/FullTechnical/Art/P2/research-slot closure.
+
+**Authorised delivery/docs/finalization complete. Shared window STILL logically
+HELD until explicit CTO RELEASE after review; lock removal does not release it.**
+No further Builder/QA/Artist/P4 tasks sent. Root19:56:50 freeRAM17.271GiB,
+C14.132/D16.288/E16.218GiB; own0.1GiB/1MiB+concurrent4GiB/2GiB allowance healthy.
+Literal token/nonce scans of new handoff/receipts passed, no Git/public exposure.
+
+## История: адресное разрешение docs/finalization и старт continuation
 
 CTO лично принял exact limited TQA94e125 и VQA4b9aa770 после report/hash/image review
 и адресно разрешил planned later docs/finalization SAME executor/SAME C05 token.

@@ -2,7 +2,27 @@
 
 ## Актуально после outage: PUBLIC Review и отдельный accepted-P1 static report
 
-**C05 PUBLIC served, bounded QA accepted; same-token docs/finalization authorised and running.**
+**C05 delivery/docs/finalization complete; owned lock released, shared window STILL HELD.**
+Same Builder continuation01a18407… completed/idle/clean; final handoff original
+`856b8073e4f8161ea2b11836911847aad883bfa0`, report8837/SHA29a8847e… fully read/imported.
+Fresh prewrite19:48:15–17UTC matched bound PUBLIC05/ownership/docs/resources. Actual
+append service19:49:25.504758UTC→80584/SHAcc7703b6…, CHANGELOG19:49:27.322107→295479/
+SHA6f1af185…; every old prefix byte and1003:27/0640 preserved. Required final16HTTP/
+root563+81/90775981/treee0ed…/P1/opaque545/catalog/oldC04/configs/docs passed.
+Matching owned lock inode12 removed19:49:29.437657UTC; after-cleanup guard/read-back
+confirmed lock/temps/stage absent,11normal privatebackupfiles, uploadtar/old+new roots
+retained, no repeated delivery/reload/build/QA/rollback/source change, writers idle.
+Render25477/SHA cf0805cf66ece855d65a11de48e5c0b944b621e510fb068466c616827c9e9f99;
+Docs32413/SHA3842cea076a549abedf2cda552898fe820182f37b4ccb4bef2c892fe33463a6a.
+Lead fully read finalhandoff, inspected prefix read-back source and passed94local
+receipt/guard/pin/preservation checks; review6639/SHA
+`820ad2268b02e3dbcfd1b44e7fef89bd889bbf5957e4fa868c9ce45347c78f2b`.
+Bounded actual TQA/VQA accepted with sparse seed1/desktop, fine contact/occlusion/
+shadow/Android/download/visibility limits; universal blackfix/FullArt/P2 closure not
+claimed. **Only explicit CTO RELEASE frees shared window; cleanup did not.**
+Full [C05 completion checkpoint](../experiments/p2-free-approach/LEAD_DELIVERY_05_CHECKPOINT.md).
+
+История разрешения и запуска continuation до подтверждения результата:
 CTO personally accepted exact limited TQA94e125/VQA4b9aa770 and addressed ONLY same
 Builder planned later phase. Fresh idle/cleanb8b87b8 preflight; ONE send exec-f06422d0…
 completed307ms, NEW actual Builder turn `01a18407-e6da-7920-998d-ea9f7673f438` active.
