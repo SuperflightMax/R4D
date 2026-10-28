@@ -91,6 +91,16 @@ Builder передаёт готовые проверенные bytes. Release н
 меняет продукт ради smoke. Изменение bytes после QA означает другой candidate
 и возврат владельцу для решения о затронутых проверках.
 
+Уточнение CTO по delivery: JavaScript MIME для `.mjs` в действующем Review
+не подтверждён. Browser-facing ES modules должны быть `.js` с корректными
+`src`/`import` references уже до freeze; Node-only `.mjs` не переименовываются.
+В будущем release smoke проверить Content-Type JavaScript и exact body bytes
+для всех поставленных browser `.js`, а также фактическую загрузку module graph.
+Auth redirect/login HTML не подтверждают MIME модуля: без разрешённого
+authenticated просмотра соответствующая проверка остаётся неподтверждённой.
+Глобальные `mime.types`/nginx ради этого не менять; продукт на сервере ради
+smoke не править. Дефект bundle возвращается Builder через Lead до нового freeze.
+
 ## Минимальный маршрут после получения входов
 
 1. Сверить candidate manifest SHA256 и каждый path/size/SHA256 готового bundle;
