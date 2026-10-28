@@ -8,6 +8,26 @@ Frozen04 source08f9b9eaa6aa1063eb7fcd9cf373ddacf907725a, independentTQA df309394
 
 Адресный P2 send выполнен один раз, receipt isError=false. Actual новый Builder turn `01a18336-20cd-7e81-a5c1-20fd166ce68e` inProgress; первый command `exec-2490b18e-1a80-4d21-a98c-cb1e92f7bb5f` completed. Builder подтвердил scope: свежая PUBLIC база после P1, frozen04 только чтение/копирование по manifest, server writes и повторная QA не выполняются. Сам packet final03 пока ожидается; новый token не выдан.
 
+## Immutable final03 готов; Root review завершён, нового token нет
+
+Builder actual turn `01a18336-20cd-7e81-a5c1-20fd166ce68e` completed, source preparation `8d29a9b904889f4e9d7d310097187abd54647f98`/Lead a257725 и handoff `6ce75222206f1dcb7a2e742d314ed253118f1475`/Lead757bce1 интегрированы. Конфликт касался только вставленной BUILDER_STATE истории: все строки сохранены, markers удалены, продукт/frozen не менялись. [Полный handoff](builder/RELEASE_INTENT_04_FINAL_03.md) прочитан вместе с полными intent/plan/template/raw snippet.
+
+Runtime `E:/R4D/perspective/p2-runtime/output/p2-review-release-intent-04-final-03` создан один раз в absent target, immutable после seal. Server_write=false/executionAuthorized=false. Root отдельный read-only packaging checker прошёл134проверки:18regular tar leaves/no traversal/links/owner-modes,16frozen04bytes+nativeJSONtree,563planned records/90775084bytes/81dirs,545foreign и12P1files preserved, old15P2→new16 (11unchanged/4expectedchanges/1clock/0deleted), coredbb01f…unchanged,562published metadata rows, oneP2card replacement/exactinverse/count4/P1cardunchanged, one RAW PUBLIC root literal, df309 report/evidence hash exact, UI/Art ограничения сохранены. Product code/новая QA не исполнялись.
+
+| Артефакт | Bytes | SHA256 |
+| --- | ---: | --- |
+| RELEASE_INTENT.json |15366|`307d8b595d7b3a6d513d615344d19aa9b6332266c9c611dc65783396ec2eff57`|
+| Delta tar |2590720|`a1179a794425da145ba803231973881f1b22391b44f2a0aca7234fa2e85abe36`|
+| EXECUTION_PLAN.md |9613|`190581d5a860af955e72edffa5667c83e2162e4d1237036d0176d5b63dff3a1a`|
+| SEALED_PACKET.json |2756|`d7e9dc65d4dd5ccf833be029467cc747dee7b2e2bef22a5acbc54b2aeb8fb0b2`|
+| Root REVIEW.json |9052|`6e1368e9ca9eb0f7a850545b41250810b4695a893578e35e32de7edafaba03b5`|
+
+Root checker: `E:/R4D/perspective/p2-runtime/output/lead-freeze/check-p2-public-intent-04-final03.py`; receipt `E:/R4D/perspective/p2-runtime/output/lead-freeze/p2-public-intent-04-final03-REVIEW.json`. Первое локальное чтение checker использовало неверный bundle path; исправлен только helper на actualbundle/review/r4d/p2-free-approach, затем exit0. Это ordinaryFileNotFound, не policy/productdefect. Отдельный builder stdoutcp1251/U+2192 тоже ordinaryreaderror, process-onlyUTF8 исправлен безpayload/globalsettings. Artifact/old01/02 не перезаписаны.
+
+Actual PUBLIC baseline15:56:45–15:56:51UTC: P1live root562files/90770774bytes, currentP2C03/P1/catalog/currentJS200, JS application/javascript; fullrawbefore/after/docsmodes/owners и8absenttargets согласованы. Baseline338479SHA `560fff0fff2b513ef5d7dce4702d04556070c99b9dcb05efcd2718ecc810b7b0` — datedevidence, не futureguard. Plannedroot `/srv/superflight-review/releases/p2-jungle-static-candidate-04`,563files tree `892fa950ee4ce08f02a71b76f99241eeb95d52038515699fff8e8a447f9e6b8f`, manifest109751SHA `30cfefd2b30cca2b1d5ac6723644798d34e43aacd1bd37c55f4c22f7a1fcd5f9`. Snippetbefore953/289c2de9…→after952/`4d32b2d6ee8e19d5c6c24ab61e25f8e8226c0e6d7baa64cc8d2a5e6eae036235`, толькоrootliteral, PUBLICrollbackfreshbefore/no protectedauth. Catalogafter12839SHA `24f65bbce6b82d26d17b94aa5b4f5d781b6aafb906e4ddd6fcc1283ecb930895`, однаP2card, count4безновойкарточки.
+
+Root common resource sample16:08:16UTC:freeRAM16.647GiB/CPU2%, C14.508/D16.295/E16.365GiB. Builder package16:00:57UTC:16.640GiBfree/CPU2%, own0.25GiB+concurrentallowance4GiB →aggregate19.517GiB; VPSsnapshotavailable5333778432bytes/CPU12.12%/disk30340952064bytes. Датированные наблюдения, freshhost+VPS/aggregateguards обязательны до любойfuturewrite включаяlock. Ни lock/upload/stage/switch/docs/rollback наVPS не выполнялись. Ready только для отдельного exactLead/CTOgate и НОВОГОtoken; currentliveP2 ещё03, C04необъявлятьlive.
+
 ## История P1 priority и старых protected intents
 
 
