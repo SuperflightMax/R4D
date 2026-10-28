@@ -63,13 +63,13 @@ $taskManifest=[ordered]@{
  limits=@('Only four obstacle targets and receiver-01 included; remaining21pins/3receivers intentionally absent from this early set','Measured generated base depths are closer to near field than requested far view; residual source footprint depth error is recorded, no XY warp or collider change','Native-generated faint alpha residue extends beyond visible silhouette; pending actual-scale inspection','Receiver front is native imagegen edit, not pixel-identical alpha masking; registration must be checked in assembly','No independently prepared side-rail/front-platform occluder yet','No Pixi/native/browser inspection or independent QA verdict for these bytes yet')
 }
 $taskManifestPath=Join-Path $taskOwn 'asset-manifest.mini-01.json'
-$taskJson=$taskManifest | ConvertTo-Json -Depth 18
+$taskJson=($taskManifest | ConvertTo-Json -Depth 18) -replace "`r`n","`n"
 if(-not (Test-Json -Json $taskJson -SchemaFile (Join-Path $taskRuntime 'refs/asset-manifest.schema.json'))) {throw 'Consumer schema invalid'}
 [IO.File]::WriteAllText($taskManifestPath,$taskJson+"`n",[Text.UTF8Encoding]::new($false))
 $taskFit=@(foreach($taskBinding in $taskBindings){
  $taskTexture=$taskTextures | Where-Object {$_.id -eq $taskBinding.texture};$taskTarget=$taskTargets.objects | Where-Object {$_.id -eq $taskBinding.target};$taskScale=$taskTarget.sourcePx.footprintWidth/$taskTexture.footprintPx.width
  [ordered]@{targetId=$taskBinding.target;textureId=$taskBinding.texture;native=$taskTarget.native;sourceAnchor=$taskTarget.sourcePx.anchor;targetFootprintSourcePx=@($taskTarget.sourcePx.footprintWidth,$taskTarget.sourcePx.footprintDepth);textureFootprintPx=$taskTexture.footprintPx;uniformScale=$taskScale;renderedFootprintDepthSourcePx=$taskTexture.footprintPx.depth*$taskScale;depthResidualSourcePx=$taskTexture.footprintPx.depth*$taskScale-$taskTarget.sourcePx.footprintDepth;geometryModified=$false}
 })
-[IO.File]::WriteAllText((Join-Path $taskOwn 'BINDINGS.mini-01.json'),(($taskFit | ConvertTo-Json -Depth 10)+"`n"),[Text.UTF8Encoding]::new($false))
+[IO.File]::WriteAllText((Join-Path $taskOwn 'BINDINGS.mini-01.json'),((($taskFit | ConvertTo-Json -Depth 10) -replace "`r`n","`n")+"`n"),[Text.UTF8Encoding]::new($false))
 $taskManifestItem=Get-Item -LiteralPath $taskManifestPath
 [ordered]@{manifest=$taskManifestPath;sha256=(Get-FileHash -LiteralPath $taskManifestPath -Algorithm SHA256).Hash.ToLowerInvariant();bytes=$taskManifestItem.Length;textures=$taskTextures.Count;instances=$taskInstances.Count;selectedDirectory=$taskSelected;schemaValidated=$true;bindings=$taskFit} | ConvertTo-Json -Depth 10
