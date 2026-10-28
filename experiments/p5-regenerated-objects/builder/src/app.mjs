@@ -1,6 +1,7 @@
 import { Application, Assets, Container, Graphics, Sprite } from 'pixi.js';
 import { NativeRun } from './controller.mjs';
 import { project, bounds } from './p1-projection.mjs';
+import { importantPartBounds, fieldFramingBounds } from './framing.mjs';
 
 const read = async path => {
   const response = await fetch(path);
@@ -114,11 +115,17 @@ if (preview.manifestUrl) {
   art.addChild(floor);
 }
 
+const fieldGroundPoints = [...targets.objects.flatMap(o => o.sourcePx.groundPolygon),
+  ...actual.board.segments.flatMap(s => [point(s.x1, s.y1), point(s.x2, s.y2)])];
+const fieldImportantParts = sprites.map(item => importantPartBounds(item.spec, item.texture,
+  { x: item.sprite.x, y: item.sprite.y, scale: item.sprite.scale.x })).filter(Boolean);
+const fieldDomain = fieldFramingBounds(fieldGroundPoints, fieldImportantParts);
+
 function layout() {
   const width = host.clientWidth, height = host.clientHeight;
   app.renderer.resize(width, height);
   const domain = view.framing === 'whole' ? { minX: 0, maxX: 1536, minY: 0, maxY: 1536 }
-    : bounds([...targets.objects.flatMap(o => o.sourcePx.groundPolygon), ...actual.board.segments.flatMap(s => [point(s.x1, s.y1), point(s.x2, s.y2)])]);
+    : fieldDomain;
   const margin = 8;
   const scale = Math.min((width - margin * 2) / (domain.maxX - domain.minX), (height - margin * 2) / (domain.maxY - domain.minY));
   scene.scale.set(scale);
@@ -189,6 +196,7 @@ el('coverage').textContent = `${pinBodies.size}/25 препятствий · ${r
 el('notice').textContent = preview.warnings.join(' ') + (!manifest ? ' Шарик пока показан диагностическим контуром.' : ` ${25 - pinBodies.size} препятствие(й) и ${4 - receiverBodies.size} приёмник(а) ещё без арта; физическая геометрия сохранена.`);
 const clippedForegroundParts = (manifest?.instances ?? []).filter(i => i.sourceClipPx).map(i => ({ instanceId: i.id, parentId: i.parentId, textureId: i.textureId, role: i.role, ...i.sourceClipPx }));
 el('diagnostics').textContent = JSON.stringify({ pins, earlyFloor: preview.earlyFloor, nativeCounts: inputs.counts, footprintFits, clippedForegroundParts,
+  fieldFraming: { domainSourcePx: fieldDomain, importantPartsSourcePx: fieldImportantParts, rule: 'Actual geometry plus receiver/foreground alpha>=16 visible bounds; fixed across Art/Geometry toggles' },
   eventFrameRule: 'collision event tick t → state t+1; lifecycle events retain state tick', manifestStatus: manifest?.status ?? null }, null, 2);
 new ResizeObserver(layout).observe(host);
 app.ticker.add(() => {
@@ -207,5 +215,5 @@ window.__P5__ = {
   ready: true, snapshot: () => run.snapshot(), config: () => run.config(), replay, step,
   seek: tick => { setPaused(true); const state = run.seek(tick); render(); return state; },
   setPaused, setView, view: () => ({ ...view }), record: () => run.replayRecord(),
-  meta: () => structuredClone({ pins, preview, manifest, renderer: app.renderer.type }),
+  meta: () => structuredClone({ pins, preview, manifest, renderer: app.renderer.type, fieldFraming: { domainSourcePx: fieldDomain, importantPartsSourcePx: fieldImportantParts } }),
 };
