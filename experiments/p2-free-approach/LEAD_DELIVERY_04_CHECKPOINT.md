@@ -6,6 +6,8 @@
 
 Frozen04 source08f9b9eaa6aa1063eb7fcd9cf373ddacf907725a, independentTQA df30939444dfc3875fe1f0fc39b31a4621be1d28,16files/2452021bytes/tree60d216a64c86fed4b83f4ed3802e3d1393cdda2db8776818d22710173dc2ffed, manifest60f79d1bdad8d3737376952043013394bb3098de6b15200fc5c352dd875dd1f7. No build/physics/QA/mapping/art/code edits. Baseline толькоactualPUBLICпослеP1: всеP1bytes/card/newdocs сохранять, rawsnippet/vhost/MIME/docs/root/inventory/owners/modes иcurrentPUBLICrollback свежие; чужиеproductsopaque. Old01/02 obsoleteсохранены. Никакихremotelock/upload/stage/switch/backup/serverdocswrites безновогоотдельногоexactCTOtoken. P4independent; UGH/P3/P5/P6небудить. Resourceshost+VPS/aggregatepeak4/2GiB/ownE обязательны.
 
+Адресный P2 send выполнен один раз, receipt isError=false. Actual новый Builder turn `01a18336-20cd-7e81-a5c1-20fd166ce68e` inProgress; первый command `exec-2490b18e-1a80-4d21-a98c-cb1e92f7bb5f` completed. Builder подтвердил scope: свежая PUBLIC база после P1, frozen04 только чтение/копирование по manifest, server writes и повторная QA не выполняются. Сам packet final03 пока ожидается; новый token не выдан.
+
 ## История P1 priority и старых protected intents
 
 
