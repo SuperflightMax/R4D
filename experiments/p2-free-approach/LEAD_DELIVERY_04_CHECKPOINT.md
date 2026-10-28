@@ -1,5 +1,14 @@
 # P2 candidate04 — checkpoint сериализации доставки
 
+**PUBLIC_P1_STATIC_PRIORITY — 2026-10-28 после outage.** Max12:36UTC разрешил продолжение P2/P4 кроме UGH; Max12:38UTC отдельно поручил static report принятого P1 exact4b47 для показа Славе. CTO передал эти команды. `superflight.space`/Review теперь PUBLIC; закрытый portal=`sf.superflight.space`. Все protected intents01/02, snippets/templates/guards/rollback ниже являются историей и не допускаются к новому release. P2candidate04 не опубликован, нового token нет, server_write=false.
+
+Lead фактически возобновлён turn `01a1829b-1678-7c81-a99c-3664bcf99c88`, проверил clean `29530fcf45d827099d373bb4be3fe232f9903ac1`. Builder actual turn `01a1829b-0da3-7913-bbdb-3bd738d0c0f7` уже получил начальное задание CTO; Lead не дублирует его. Сначала PUBLIC read-only baseline + accepted-P1 image/recipe inventory; затем HTML/CSS/figures без JS/core/maps/private logs/full source. Direct/inverse figures exact accepted4b47 найдены для всех четырёх досок; floor inverse не true3Dtop-down. Existing TQA/VQA получают named exact candidate и ограниченную static QA. Новая отдельная публикация P1 — только exact PUBLIC intent/Lead gate/новый single CTO token/actual HTTP200+view checks. Route `p1-mapping-report` пока предложение, не готовый URL.
+
+Frozen P2source04/df309/manifest остаются без rebuild/reQA. Не готовить ещё один полный04 intent до P1: после P1 изменится catalog baseline. После P1resume — новый PUBLIC04 intent от фактической новой базы. См. актуальный верхний раздел [канонического состояния](../../docs/PERSPECTIVE_RESEARCH_STATE.md).
+
+## История прежнего protected delivery-unlock
+
+
 **DELIVERY_UNLOCK_RECEIVED — 2026-10-28T07:47:59Z.** CTO явно освободил P3 token после его delivery/postchecks/docs. Новый04 token не выдан; P2 server_write=false. Lead сверил clean51bcac9738ab6ba36d5ddca2764615473b456e31 и неизменный manifest04. Тот же Builder адресно возобновлён изc4a4b7f…, новый actual turn `01a1817f-0730-7e41-8f75-c9f492480f2b`; первый проверочный вызов `exec-bbe49079-001a-4cb4-8a24-3d3ee06d905d` completed. Выполняется только новый coherent read-only actual baseline и один LOCAL intent04-final-02, если каталог свободен. Ниже сохранена история ожидания/obsolete01; она не является новым блокирующим Max-start. Source/frozen04 и независимую QA не повторять; всех non-P2/P3 bytes касается только opaque preservation. Указанный CTO последний root/manifest/snippet — указатель, не future guard.
 
 ## Исторический checkpoint ожидания освобождения окна

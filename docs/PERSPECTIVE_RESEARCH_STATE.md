@@ -1,5 +1,20 @@
 # Состояние исследования перспективных досок
 
+## Актуально после outage: PUBLIC Review и отдельный accepted-P1 static report
+
+Команды Max28октября12:36UTC (`Sentinel_6cca7a9b06c081918cd0ce14c70170ec`) и12:38UTC (`Sentinel_9809efe64b3881918b49cd3b4c1237a8`), переданные CTO: продолжить P2/P4 кроме UGH и отдельно опубликовать статическую страницу принятого P1 для показа Славе. Это публикация exact `4b47db04c7140ebf88f69b91faa0b790d46f22ec`, а не новое исследование P1/команда/третий слот. Accepted commit не менять. Страница содержит метод, результаты, ограничения и source/inverse geometry figures четырёх досок; без simulation/JS/core/TS/maps/private logs/полного source tree. Inverse-floor — проекция плоскости пола, не настоящий вид сверху объёмной сцены; drops/buckets не объявлять отдельно принятой проверкой качества.
+
+Andy перевёл `superflight.space`/Review в PUBLIC, закрытый портал теперь `sf.superflight.space`; CTO сообщил unauthenticated HTTP200 каталога/P2/P3 в12:50UTC. Старые protected snippets/templates/root-normalized guards/rollback и intents04-final-01/02 сохранены только как история, не будущая база. Нужны фактический read-only PUBLIC root/catalog/snippet/auth/docs/files/modes inventory, новый exact intent, Lead gate и новый single CTO token. Не восстанавливать прежнюю auth, не менять credentials/security/global MIME. Чужие P3/P4 publication bytes — opaque, их продукты/код/арт/рецепты/QA не изучать. P4 server_write=false; shared writes сериализует CTO.
+
+Lead actual resumed turn `01a1829b-1678-7c81-a99c-3664bcf99c88`, проверенный clean HEAD `29530fcf45d827099d373bb4be3fe232f9903ac1`, собственный E-worktree/ветка. Builder actual new turn `01a1829b-0da3-7913-bbdb-3bd738d0c0f7`; CTO уже дал начальное задание, Lead его не дублировал. После checkpoint/WIP Builder читает PUBLIC baseline и accepted-P1 inventory, затем создаёт небольшой candidate в `experiments/p1-collider-mapping/accepted-static-report-01/`, runtime `p1-static-report-candidate-01` только если свободен. Existing direct/inverse research evidence всех четырёх досок найдено по exact4b47. Предложенный route `p1-mapping-report` ещё не опубликован; URL пока не выдавать.
+
+На named exact static candidate Lead адресно назначает только существующие TQA (provenance/whitelist/refs/no-core/no-secrets) и VQA (actual figure↔caption↔text/readability). Artist/старая P1-команда не пробуждаются; physicsQA/random seeds/imagegen не повторять. После accepted static QA — отдельный PUBLIC intent/свежая база/write-set/rollback, Lead review, новый CTO token, доставка тем же Builder ReleaseEngineer, actual HTTP200 страницы/изображений и реальные view/text проверки; только затем URL.
+
+P2 source/frozen04/independent df309 сохраняют силу:16files/2452021bytes, tree `60d216a64c86fed4b83f4ed3802e3d1393cdda2db8776818d22710173dc2ffed`, manifest `60f79d1bdad8d3737376952043013394bb3098de6b15200fc5c352dd875dd1f7`. Не пересобирать/не повторять QA и не паковать ещё один04 intent до P1: его card изменит общую базу. После P1 — новый PUBLIC intent04 против обновлённой базы. Touch/size/height/occlusion fixes не разрешены; P3 закрыт boundedpartial, UGH/Torrent/чужие файлы не трогать. Перед тяжёлым шагом новый общий RAM/CPU/C/D/E sample с P4/Millionko/P1: >4GiB observe, ≤4 warn/diagnose, ≤2 safe checkpoint stop. Capacity outage не является policy; denied old launcher/file-preview операции остаются запрещены.
+
+Ниже — предыдущие состояния и исторические protected-публикации; актуальные правила этого раздела имеют приоритет.
+
+
 Обновлено: 28 октября 2026, Europe/Kyiv. Канонический заказ: [orders/perspective/ORDER.md](../orders/perspective/ORDER.md), редакция 4, ветка `main`.
 
 ## Действует адресный resume P2 — новая команда Max 28 октября05:36UTC
