@@ -2,7 +2,34 @@
 
 staff_id `builder-r4d-p2-free-01`; branch `codex/r4d-p2-free-builder-01`; исходный HEAD `df760b680f0d0264342fc8577fcc5779b80a3a15`. Рабочая копия только `E:/R4D/perspective/p2-worktrees/builder`.
 
-## Current LIMITED PUBLIC candidate04 — served, ждём CTO QA, docs/lock held
+## Current LIMITED PUBLIC candidate04 — delivery/docs complete, findings open
+
+Actual continuation turn `01a18378-0842-7ac3-a9af-5f4e6f19e878`, тот же
+Builder/ReleaseEngineer/branch/chat. По двум actual PUBLIC QA reports и
+адресному продолжению same token выполнены только private render receipt,
+guarded append-only service/CHANGELOG, final checks и matching own lock completion.
+
+Current **P2_C04_DELIVERY_DOCS_COMPLETE_LOCK_RELEASED_WINDOW_HELD**.
+Первый fresh served guard17:08:10–17:08:18UTC PASS; docs oldprefix/uid1003/gid27/
+0640 preserved. Service76645bytes/SHA6664e51d308260e4eb58a36047730f1d723ce0e873acf51b730afa99697816b1;
+CHANGELOG293737bytes/SHAdaa2e1aa49e5c70954cf7317cbba61f0744e0583ffba0777c3581f8ba3339bef.
+Render receipt28289bytes/SHA670b939d7d7f731140fc3826e1daf26e37a2aa8f742e6242c01db8bf39f4556c;
+DOCS_RESULT30554bytes/SHAf423de269e3958e8481aba6c6c40c0c111e898203cdb1177e610cf7334e9d638.
+Own lock inode11 снят17:09:39.804627UTC, owned writers idle, own temps absent.
+Окно Review НЕ освобождено: только отдельный explicit CTOrelease.
+
+Actual QA findings/limits сохранены, **не Full Technical/Art/P2 closure**:
+TQA27b9adf — bounded controls/seed1 checks/visible-focused timings, P3 stale
+completion hint; download/export/hidden-focus-loss/WebGL backend unconfirmed.
+VQA1ff6280 — PUBLIC_VISUAL_OBSERVED_WITH_LIMITATIONS: blackcanvas200%94/95/96,
+fit+1→97 recovery/cause unknown; nativefloor UI не найден, geometry projection;
+thin contacts/occlusion/shadow/grounding/остальные объекты не приняты; Android
+gestures untested. Нет hotfix/rebuild/новойQA/delivery/reload/rollback.
+Полная итоговая передача: [DELIVERY_04_PUBLIC_COMPLETE.md](DELIVERY_04_PUBLIC_COMPLETE.md).
+Публичные16frozenfiles, полный563tree/545foreign/P1all12/oldroot/configs exact.
+P4/UGH/другие роли не будили/не трогали. Дальнейшие product решения — CTO.
+
+## История LIMITED PUBLIC candidate04 — serving до actual QA/docs completion
 
 По новому exact CTO gate issued2026-10-28T16:20:31Z тот же Builder/ReleaseEngineer
 выполнил один guarded delivery неизменённого frozen04/final03 packet.
