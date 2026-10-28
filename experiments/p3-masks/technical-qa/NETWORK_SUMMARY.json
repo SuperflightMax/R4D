@@ -1,0 +1,133 @@
+{
+  "candidate": "P3-frozen-01",
+  "sourceCommit": "f1aca21e7b9ba19001e7e8762fcaf2511bf9bf74",
+  "artistCommit": "f899a308aed156a11e2a1013292ed68c6669959d",
+  "manifestSha256": "e2e9f7d837b3d05f484f75a877af6992a70ee88363add783d80f3c6e206f431f",
+  "rootTabId": 2,
+  "requests": [
+    {
+      "url": "http://127.0.0.1:6866/review/r4d/p3-masks/",
+      "method": "GET"
+    },
+    {
+      "url": "http://127.0.0.1:6866/review/r4d/p3-masks/style.css",
+      "method": "GET"
+    },
+    {
+      "url": "http://127.0.0.1:6866/review/r4d/p3-masks/app.js",
+      "method": "GET"
+    },
+    {
+      "url": "http://127.0.0.1:6866/review/r4d/p3-masks/vendor/pixi.js",
+      "method": "GET"
+    },
+    {
+      "url": "http://127.0.0.1:6866/review/r4d/p3-masks/view-math.js",
+      "method": "GET"
+    },
+    {
+      "url": "http://127.0.0.1:6866/review/r4d/p3-masks/run-model.js",
+      "method": "GET"
+    },
+    {
+      "url": "http://127.0.0.1:6866/review/r4d/p3-masks/native-core.js",
+      "method": "GET"
+    },
+    {
+      "url": "http://127.0.0.1:6866/review/r4d/p3-masks/data/config.json",
+      "method": "GET"
+    },
+    {
+      "url": "http://127.0.0.1:6866/review/r4d/p3-masks/data/manifest.json",
+      "method": "GET"
+    },
+    {
+      "url": "http://127.0.0.1:6866/review/r4d/p3-masks/data/projection.json",
+      "method": "GET"
+    },
+    {
+      "url": "http://127.0.0.1:6866/review/r4d/p3-masks/build.json",
+      "method": "GET"
+    },
+    {
+      "url": "http://127.0.0.1:6866/review/r4d/p3-masks/assets/artist/assets.json",
+      "method": "GET"
+    },
+    {
+      "url": "http://127.0.0.1:6866/review/r4d/p3-masks/replays/index.json",
+      "method": "GET"
+    }
+  ],
+  "responses": [
+    {
+      "url": "http://127.0.0.1:6866/review/r4d/p3-masks/",
+      "status": 200,
+      "mime": "text/html"
+    },
+    {
+      "url": "http://127.0.0.1:6866/review/r4d/p3-masks/style.css",
+      "status": 200,
+      "mime": "text/css"
+    },
+    {
+      "url": "http://127.0.0.1:6866/review/r4d/p3-masks/app.js",
+      "status": 200,
+      "mime": "text/javascript"
+    },
+    {
+      "url": "http://127.0.0.1:6866/review/r4d/p3-masks/view-math.js",
+      "status": 200,
+      "mime": "text/javascript"
+    },
+    {
+      "url": "http://127.0.0.1:6866/review/r4d/p3-masks/run-model.js",
+      "status": 200,
+      "mime": "text/javascript"
+    },
+    {
+      "url": "http://127.0.0.1:6866/review/r4d/p3-masks/native-core.js",
+      "status": 200,
+      "mime": "text/javascript"
+    },
+    {
+      "url": "http://127.0.0.1:6866/review/r4d/p3-masks/vendor/pixi.js",
+      "status": 200,
+      "mime": "text/javascript"
+    },
+    {
+      "url": "http://127.0.0.1:6866/review/r4d/p3-masks/data/config.json",
+      "status": 200,
+      "mime": "application/json"
+    },
+    {
+      "url": "http://127.0.0.1:6866/review/r4d/p3-masks/data/manifest.json",
+      "status": 200,
+      "mime": "application/json"
+    },
+    {
+      "url": "http://127.0.0.1:6866/review/r4d/p3-masks/data/projection.json",
+      "status": 200,
+      "mime": "application/json"
+    },
+    {
+      "url": "http://127.0.0.1:6866/review/r4d/p3-masks/build.json",
+      "status": 200,
+      "mime": "application/json"
+    },
+    {
+      "url": "http://127.0.0.1:6866/review/r4d/p3-masks/assets/artist/assets.json",
+      "status": 200,
+      "mime": "application/json"
+    },
+    {
+      "url": "http://127.0.0.1:6866/review/r4d/p3-masks/replays/index.json",
+      "status": 200,
+      "mime": "application/json"
+    }
+  ],
+  "loadingFailures": [],
+  "console": [],
+  "observedRootPngJpgRequests": 0,
+  "sceneReady51Masks": true,
+  "scope": "Root document/module/JSON network capture. PNG/JPG traffic is absent from this capture; not claimed as observed. All payload local/HTTP bytes were separately verified and 51-mask scene initialization completed."
+}

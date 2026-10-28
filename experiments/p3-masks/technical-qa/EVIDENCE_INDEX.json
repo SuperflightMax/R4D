@@ -1,0 +1,147 @@
+{
+  "candidate": "P3-frozen-01",
+  "sourceCommit": "f1aca21e7b9ba19001e7e8762fcaf2511bf9bf74",
+  "artistCommit": "f899a308aed156a11e2a1013292ed68c6669959d",
+  "manifestSha256": "e2e9f7d837b3d05f484f75a877af6992a70ee88363add783d80f3c6e206f431f",
+  "textDigestRule": "JSON checkpoint digests use the committed UTF-8 LF bytes with final newline; JPEG digests use raw bytes. A Windows checkout may convert JSON line endings.",
+  "frames": [
+    {
+      "path": "evidence/frozen-01/flower03-t1503.jpg",
+      "bytes": 146961,
+      "sha256": "0cff8b8beeb8a655d38addc86d15539786a0b54493ff3d7394e1f4fdaa1ed41b"
+    },
+    {
+      "path": "evidence/frozen-01/flower03-t1504.jpg",
+      "bytes": 148974,
+      "sha256": "47dcc4edb648704193fed9a4a91353ebb81052de39aac4bbc2db50c1ed475eb7"
+    },
+    {
+      "path": "evidence/frozen-01/flower03-t1505.jpg",
+      "bytes": 146993,
+      "sha256": "82de9d57e761d94c4fc02fecd44850244870a40202eb91a9ef70e6e28ca4a2a5"
+    },
+    {
+      "path": "evidence/frozen-01/frog02-t487-viewport-final.jpg",
+      "bytes": 158008,
+      "sha256": "851ede837b82eaadcfee4066b2d4da476b0f9c8a20af89fd1f78271b32af14b9"
+    },
+    {
+      "path": "evidence/frozen-01/frog02-t488-viewport-final.jpg",
+      "bytes": 158017,
+      "sha256": "159cf5b71e9c98bda2d96d67a9ebc6a9ecb6184dccc06ee0c9cf5200a6ef3873"
+    },
+    {
+      "path": "evidence/frozen-01/frog02-t489-viewport-final.jpg",
+      "bytes": 158025,
+      "sha256": "3826e0f836cf499615ed36f6490e5ebd9ab4b131e9a69155c1e9af7b5368e444"
+    },
+    {
+      "path": "evidence/frozen-01/left5-t612-art.jpg",
+      "bytes": 155890,
+      "sha256": "e91ebd99f7e3213a3a96f3913c7f19b28d68b0485e3495f7fd99c3e4fea16d2d"
+    },
+    {
+      "path": "evidence/frozen-01/left5-t613-viewport-final.jpg",
+      "bytes": 161490,
+      "sha256": "caece9459fc5f1acabba09d3374beb14304680c2d9ae229fae57c9d6c0cafb0b"
+    },
+    {
+      "path": "evidence/frozen-01/leaf01-t65-viewport.jpg",
+      "bytes": 149904,
+      "sha256": "1280e02bcdb7748bf1e404dee4e45e04d765f912a0062ccb911764909f00c0f9"
+    },
+    {
+      "path": "evidence/frozen-01/leaf01-t70-viewport.jpg",
+      "bytes": 149719,
+      "sha256": "1fe96bb4fc48ef33fde32e401655b07ef7b0a486e984bc8ea58a6f961d22e48f"
+    },
+    {
+      "path": "evidence/frozen-01/leaf01-t70-viewport-diagnostic.jpg",
+      "bytes": 69471,
+      "sha256": "f58aba44a354bb0abd49d9675357c031be5310f10294aadfdc40bd5e6c1f7bf6"
+    },
+    {
+      "path": "evidence/frozen-01/leaf01-t70-geometry-above-art.jpg",
+      "bytes": 154071,
+      "sha256": "763732df0e4b8dd871dd53c3df27a32313c1028f13df1c98f9b13a8bcca69f0b"
+    },
+    {
+      "path": "evidence/frozen-01/receiver03-focus-t1945.jpg",
+      "bytes": 138855,
+      "sha256": "000e67085ed8548ffea876aec646cb83c66904df9f34195d8e2f60dd2c144b08"
+    },
+    {
+      "path": "evidence/frozen-01/receiver03-focus-t1950.jpg",
+      "bytes": 138851,
+      "sha256": "d0ddc1f6e803f7c9a087bbfe5626f142deb0690322c5b7cb6b2aeb4deade14b8"
+    },
+    {
+      "path": "evidence/frozen-01/receiver03-focus-t1956.jpg",
+      "bytes": 139750,
+      "sha256": "ca8fb3604dc64c9a163f19825bfc7f419afbb866b421ea6f9a685216a67d2575"
+    }
+  ],
+  "checkpoints": [
+    {
+      "path": "evidence/frozen-01/seed-4002564341-t1999.json",
+      "seed": 4002564341,
+      "tick": 1999,
+      "result": {
+        "kind": "LOST",
+        "finalX": 33517.4432797,
+        "nearMissBucketIds": []
+      },
+      "bytes": 11142,
+      "sha256": "6ac79e3fd42cc57ae831c0e08276d27dcb99a9fe323cecef420cb63b64df4d6b"
+    },
+    {
+      "path": "evidence/frozen-01/seed-892542836-t1814.json",
+      "seed": 892542836,
+      "tick": 1814,
+      "result": {
+        "kind": "LOST",
+        "finalX": 33557.7204653,
+        "nearMissBucketIds": []
+      },
+      "bytes": 11140,
+      "sha256": "8cb67da3dcae2489b265b7261fcfe8fe6f2ed1e366d72359c6a01c13609c690e"
+    },
+    {
+      "path": "evidence/frozen-01/seed-1061109253-t1584.json",
+      "seed": 1061109253,
+      "tick": 1584,
+      "result": {
+        "kind": "LOST",
+        "finalX": 33298.7881759,
+        "nearMissBucketIds": []
+      },
+      "bytes": 11142,
+      "sha256": "c0290d2202adbfe7069e765987d44df42e175ba4dcf7d30114916b3928cbca75"
+    },
+    {
+      "path": "evidence/frozen-01/seed-2818447218-t613.json",
+      "seed": 2818447218,
+      "tick": 613,
+      "result": null,
+      "bytes": 11034,
+      "sha256": "d339b22322f58e18a6c6fd365c04fe8b6a493b94ed20db63901b946556deaaff"
+    },
+    {
+      "path": "evidence/frozen-01/seed-0-t1956.json",
+      "seed": 0,
+      "tick": 1956,
+      "result": {
+        "kind": "IN_BUCKET",
+        "bucketId": "receiver-03"
+      },
+      "bytes": 11100,
+      "sha256": "11c62bc75e244e5bda600d5ed0ff2d08cd3a87fd111da16f03ab5c4ed058de24"
+    }
+  ],
+  "excludedEarlyCaptures": [
+    "receiver03-t1945.jpg",
+    "leaf01-t60-diagnostic.jpg",
+    "leaf01-t60-scoped-diagnostic.jpg"
+  ],
+  "captureNote": "Excluded early image captures did not match expected tick/controls. Selected final viewport captures and explicit same-checkpoint proofs support conclusions; all original runtime data retained."
+}

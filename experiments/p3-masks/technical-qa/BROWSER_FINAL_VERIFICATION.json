@@ -1,0 +1,428 @@
+{
+  "candidate": "P3-frozen-01",
+  "utc": "2026-10-28T06:03:50.034Z",
+  "manifestSha256": "e2e9f7d837b3d05f484f75a877af6992a70ee88363add783d80f3c6e206f431f",
+  "ordinary": [
+    {
+      "seed": 4002564341,
+      "lastTick": 1999,
+      "result": {
+        "kind": "LOST",
+        "finalX": 33517.4432797,
+        "nearMissBucketIds": []
+      },
+      "ticksCompared": 2000,
+      "traceSha256": "fb0e5615638e8eea06dca0e70d3d100cdf2a765b146d252ff7a8b85efa496e5f",
+      "contacts": 14
+    },
+    {
+      "seed": 892542836,
+      "lastTick": 1814,
+      "result": {
+        "kind": "LOST",
+        "finalX": 33557.7204653,
+        "nearMissBucketIds": []
+      },
+      "ticksCompared": 1815,
+      "traceSha256": "1362440463b9f0d0d98d8c0e2443f7ae04929b3045f3d2acd4785467e8d9dd37",
+      "contacts": 20
+    },
+    {
+      "seed": 1061109253,
+      "lastTick": 1584,
+      "result": {
+        "kind": "LOST",
+        "finalX": 33298.7881759,
+        "nearMissBucketIds": []
+      },
+      "ticksCompared": 1585,
+      "traceSha256": "696be522b0f6ef40ce73c16335905edf60d4ca3b3e1cdc8edea29a53c6c7e974",
+      "contacts": 21
+    }
+  ],
+  "samples": [
+    {
+      "file": "art-off-geometry-off.json",
+      "seed": 1061109253,
+      "tick": 1367,
+      "stateSha256": "02cdc066850fdaeb3c3d96cfab5b120183c84a1f168361a1e173ad7d0e374efb",
+      "result": null
+    },
+    {
+      "file": "art-off-geometry-on.json",
+      "seed": 1061109253,
+      "tick": 1367,
+      "stateSha256": "02cdc066850fdaeb3c3d96cfab5b120183c84a1f168361a1e173ad7d0e374efb",
+      "result": null
+    },
+    {
+      "file": "art-on-geometry-on.json",
+      "seed": 1061109253,
+      "tick": 1367,
+      "stateSha256": "02cdc066850fdaeb3c3d96cfab5b120183c84a1f168361a1e173ad7d0e374efb",
+      "result": null
+    },
+    {
+      "file": "exported-ordinary03-t1367.json",
+      "seed": 1061109253,
+      "tick": 1367,
+      "stateSha256": "02cdc066850fdaeb3c3d96cfab5b120183c84a1f168361a1e173ad7d0e374efb",
+      "result": null
+    },
+    {
+      "file": "flat-floor-200-after-pan.json",
+      "seed": 1061109253,
+      "tick": 1367,
+      "stateSha256": "02cdc066850fdaeb3c3d96cfab5b120183c84a1f168361a1e173ad7d0e374efb",
+      "result": null
+    },
+    {
+      "file": "flat-floor-200-before-pan.json",
+      "seed": 1061109253,
+      "tick": 1367,
+      "stateSha256": "02cdc066850fdaeb3c3d96cfab5b120183c84a1f168361a1e173ad7d0e374efb",
+      "result": null
+    },
+    {
+      "file": "flower03-t1503.json",
+      "seed": 0,
+      "tick": 1503,
+      "stateSha256": "a21527503d4bb4d73529d3735fdab725cf3a4c2d90e8db4d94e41650c7775f77",
+      "result": null
+    },
+    {
+      "file": "flower03-t1504.json",
+      "seed": 0,
+      "tick": 1504,
+      "stateSha256": "94a7ba188dd93251d971599bdd8d5ada11d12ea696cc58298a9eecd1064c6672",
+      "result": null
+    },
+    {
+      "file": "flower03-t1505.json",
+      "seed": 0,
+      "tick": 1505,
+      "stateSha256": "caf825b4cb798a934b454e2b5eb01073d34f55077487eeb2a88c1c52e9065162",
+      "result": null
+    },
+    {
+      "file": "fresh-reload.json",
+      "seed": 0,
+      "tick": 0,
+      "stateSha256": "7bc094f74196ebf0bd67dfa590e5d49bedefd0b4a56a7a8168e95a9af2bdafad",
+      "result": null
+    },
+    {
+      "file": "frog02-t487.json",
+      "seed": 2099436614,
+      "tick": 487,
+      "stateSha256": "ed2738737b14cbab237c28f1dac32813020add0a96c75170d14033fbd6e3f7da",
+      "result": null
+    },
+    {
+      "file": "frog02-t488.json",
+      "seed": 2099436614,
+      "tick": 488,
+      "stateSha256": "6d2524c90c02c774beffe3e38e7dfa70ce74e5338ac1c6c54fb2be780487d8a9",
+      "result": null
+    },
+    {
+      "file": "frog02-t489.json",
+      "seed": 2099436614,
+      "tick": 489,
+      "stateSha256": "a4480b28c25aa24275824ae9b21e689267452a201932fac91e8debf98d706440",
+      "result": null
+    },
+    {
+      "file": "frog02-whole-t487.json",
+      "seed": 2099436614,
+      "tick": 487,
+      "stateSha256": "ed2738737b14cbab237c28f1dac32813020add0a96c75170d14033fbd6e3f7da",
+      "result": null
+    },
+    {
+      "file": "frog02-whole-t488.json",
+      "seed": 2099436614,
+      "tick": 488,
+      "stateSha256": "6d2524c90c02c774beffe3e38e7dfa70ce74e5338ac1c6c54fb2be780487d8a9",
+      "result": null
+    },
+    {
+      "file": "frog02-whole-t489.json",
+      "seed": 2099436614,
+      "tick": 489,
+      "stateSha256": "a4480b28c25aa24275824ae9b21e689267452a201932fac91e8debf98d706440",
+      "result": null
+    },
+    {
+      "file": "imported-ordinary03-next1.json",
+      "seed": 1061109253,
+      "tick": 1368,
+      "stateSha256": "1dba667312a1a3f14f8c684cb683e62fb07541dd34d5c5760f52c1cbfd1207e8",
+      "result": null
+    },
+    {
+      "file": "imported-ordinary03-t1367.json",
+      "seed": 1061109253,
+      "tick": 1367,
+      "stateSha256": "02cdc066850fdaeb3c3d96cfab5b120183c84a1f168361a1e173ad7d0e374efb",
+      "result": null
+    },
+    {
+      "file": "leaf01-t110.json",
+      "seed": 0,
+      "tick": 110,
+      "stateSha256": "957c5006d93833969611140b78cc18987b208142897fe5f0e39efa8e06f5cc7f",
+      "result": null
+    },
+    {
+      "file": "leaf01-t60-art.json",
+      "seed": 0,
+      "tick": 60,
+      "stateSha256": "d9d2bb5c4a3d70b530d3ba01559d728d844078e2bf7a5b65d1550ac523fbe1e7",
+      "result": null
+    },
+    {
+      "file": "leaf01-t60-diagnostic.json",
+      "seed": 0,
+      "tick": 60,
+      "stateSha256": "d9d2bb5c4a3d70b530d3ba01559d728d844078e2bf7a5b65d1550ac523fbe1e7",
+      "result": null
+    },
+    {
+      "file": "leaf01-t65-viewport.json",
+      "seed": 0,
+      "tick": 65,
+      "stateSha256": "e482f8a3307cf60eff5c892d4c4e8f699a9c952d65ab86de9af111e9b184d441",
+      "result": null
+    },
+    {
+      "file": "leaf01-t70-geometry-above-art.json",
+      "seed": 0,
+      "tick": 70,
+      "stateSha256": "496c4f9b2b2ed31dfc19e055d0026b7f04452553a178a15bc8e77bb3612c1862",
+      "result": null
+    },
+    {
+      "file": "leaf01-t70-viewport-diagnostic.json",
+      "seed": 0,
+      "tick": 70,
+      "stateSha256": "496c4f9b2b2ed31dfc19e055d0026b7f04452553a178a15bc8e77bb3612c1862",
+      "result": null
+    },
+    {
+      "file": "leaf01-t70-viewport.json",
+      "seed": 0,
+      "tick": 70,
+      "stateSha256": "496c4f9b2b2ed31dfc19e055d0026b7f04452553a178a15bc8e77bb3612c1862",
+      "result": null
+    },
+    {
+      "file": "leaf01-t90.json",
+      "seed": 0,
+      "tick": 90,
+      "stateSha256": "e9d7904a3f5dbf198b05b35688d8f77300a7ef2881fa6f512e45e8c3b8723809",
+      "result": null
+    },
+    {
+      "file": "leaf01-t94.json",
+      "seed": 0,
+      "tick": 94,
+      "stateSha256": "9697d67ca5a1e0e7f4b6c609b48c72bc06908ed845f4e833d6491076210779e4",
+      "result": null
+    },
+    {
+      "file": "left5-t611-art.json",
+      "seed": 2818447218,
+      "tick": 611,
+      "stateSha256": "db03d466b43ccd9f0dccefa237e2710ba900556c45a38903af276dcc81a5c977",
+      "result": null
+    },
+    {
+      "file": "left5-t612-art.json",
+      "seed": 2818447218,
+      "tick": 612,
+      "stateSha256": "d966853840e975118d35ac4129f3b40fb94b3c0e5d2741fb5657528d8d771815",
+      "result": null
+    },
+    {
+      "file": "left5-t613-geometry.json",
+      "seed": 2818447218,
+      "tick": 613,
+      "stateSha256": "4e7a86a7ef92c220f8b4b50ac24edd1ba94b42b29328a7b656fad5a4cc0fd01b",
+      "result": null
+    },
+    {
+      "file": "ordinary-01-end.json",
+      "seed": 4002564341,
+      "tick": 1999,
+      "stateSha256": "877b06746368095952090bc0aad51fc202f8ce8fd46925aba1e7c0bf16302901",
+      "result": {
+        "kind": "LOST",
+        "finalX": 33517.4432797,
+        "nearMissBucketIds": []
+      }
+    },
+    {
+      "file": "ordinary-02-end.json",
+      "seed": 892542836,
+      "tick": 1814,
+      "stateSha256": "c03b90c07c8499d70ac9347336626fc4766823797f7f818d99977f0678383032",
+      "result": {
+        "kind": "LOST",
+        "finalX": 33557.7204653,
+        "nearMissBucketIds": []
+      }
+    },
+    {
+      "file": "ordinary-02-start.json",
+      "seed": 892542836,
+      "tick": 80,
+      "stateSha256": "26a9aac56aaf1d7467d29f58874d108c15f579989ef85e906403e53bb8b3392b",
+      "result": null
+    },
+    {
+      "file": "ordinary-03-paused.json",
+      "seed": 1061109253,
+      "tick": 1356,
+      "stateSha256": "235667b2dfac40b375589d2da7ae6475f9e42a100c60ee9de9eca757eb7b3f90",
+      "result": null
+    },
+    {
+      "file": "ordinary-03-plus1.json",
+      "seed": 1061109253,
+      "tick": 1357,
+      "stateSha256": "d6dde9dac40d63302d62f0f67375644fed2d9e756b96d659cf50afb17b747303",
+      "result": null
+    },
+    {
+      "file": "ordinary-03-plus10.json",
+      "seed": 1061109253,
+      "tick": 1367,
+      "stateSha256": "02cdc066850fdaeb3c3d96cfab5b120183c84a1f168361a1e173ad7d0e374efb",
+      "result": null
+    },
+    {
+      "file": "ordinary-03-start.json",
+      "seed": 1061109253,
+      "tick": 66,
+      "stateSha256": "d97778b1999a68d8141eddd8aa9d5da90e277d49b69e6c396a81be2611bcf332",
+      "result": null
+    },
+    {
+      "file": "paused-before-controls.json",
+      "seed": 1061109253,
+      "tick": 1367,
+      "stateSha256": "02cdc066850fdaeb3c3d96cfab5b120183c84a1f168361a1e173ad7d0e374efb",
+      "result": null
+    },
+    {
+      "file": "receiver03-t1945.json",
+      "seed": 0,
+      "tick": 1945,
+      "stateSha256": "0104ad1f7658b53cfc56e13f6717f8a67515740aaface010cb7f4ebabd0df3d8",
+      "result": null
+    },
+    {
+      "file": "receiver03-t1950.json",
+      "seed": 0,
+      "tick": 1950,
+      "stateSha256": "4db3cf21282c39039c5e5ac837edbbecefdf67858e6cd47e4542d9355e3cdbfb",
+      "result": null
+    },
+    {
+      "file": "receiver03-t1956.json",
+      "seed": 0,
+      "tick": 1956,
+      "stateSha256": "e5cc9b4bdef701293c8dc7d2f4ed39ed18ecef99e42ed2697c14262585152714",
+      "result": {
+        "kind": "IN_BUCKET",
+        "bucketId": "receiver-03"
+      }
+    },
+    {
+      "file": "resume-import-third-t1367.json",
+      "seed": 1061109253,
+      "tick": 1367,
+      "stateSha256": "02cdc066850fdaeb3c3d96cfab5b120183c84a1f168361a1e173ad7d0e374efb",
+      "result": null
+    },
+    {
+      "file": "resume-seek-back-500.json",
+      "seed": 1061109253,
+      "tick": 500,
+      "stateSha256": "1f3e127966c9e5e60f9357cff2bf06ec8dfc9e55a4b3e7373958d283f34a45fc",
+      "result": null
+    },
+    {
+      "file": "resume-seek-end.json",
+      "seed": 1061109253,
+      "tick": 1584,
+      "stateSha256": "9a860873a42ef778eb034d4d214851804049df035b8993788e74883aec0edacc",
+      "result": {
+        "kind": "LOST",
+        "finalX": 33298.7881759,
+        "nearMissBucketIds": []
+      }
+    },
+    {
+      "file": "resume-seek-forward-1367.json",
+      "seed": 1061109253,
+      "tick": 1367,
+      "stateSha256": "02cdc066850fdaeb3c3d96cfab5b120183c84a1f168361a1e173ad7d0e374efb",
+      "result": null
+    },
+    {
+      "file": "resume-seek-home.json",
+      "seed": 1061109253,
+      "tick": 0,
+      "stateSha256": "57e54e19232ac8de62070cfe01b016f6c8cb95b9d303c50780286bdf7866a910",
+      "result": null
+    },
+    {
+      "file": "resume-third-playing.json",
+      "seed": 1061109253,
+      "tick": 1367,
+      "stateSha256": "02cdc066850fdaeb3c3d96cfab5b120183c84a1f168361a1e173ad7d0e374efb",
+      "result": null
+    },
+    {
+      "file": "resume-third-replay-render-changes.json",
+      "seed": 1061109253,
+      "tick": 109,
+      "stateSha256": "1bdc984cc7b4829f54f689518aee54767d09df683ade1da820d3494996b449f7",
+      "result": null
+    },
+    {
+      "file": "resume-third-replay-start.json",
+      "seed": 1061109253,
+      "tick": 6,
+      "stateSha256": "85ec6f3dc3c4053b87a43d1f0227da58ce1b30b6c558bad3fda7d97352938e61",
+      "result": null
+    },
+    {
+      "file": "resume-third-replay-terminal.json",
+      "seed": 1061109253,
+      "tick": 1584,
+      "stateSha256": "9a860873a42ef778eb034d4d214851804049df035b8993788e74883aec0edacc",
+      "result": {
+        "kind": "LOST",
+        "finalX": 33298.7881759,
+        "nearMissBucketIds": []
+      }
+    },
+    {
+      "file": "resume-third-terminal.json",
+      "seed": 1061109253,
+      "tick": 1584,
+      "stateSha256": "9a860873a42ef778eb034d4d214851804049df035b8993788e74883aec0edacc",
+      "result": {
+        "kind": "LOST",
+        "finalX": 33298.7881759,
+        "nearMissBucketIds": []
+      }
+    }
+  ],
+  "previouslyComparedSamples": 17,
+  "newlyComparedSamples": 34,
+  "scope": "Pending browser samples against cached independent oracle; completed ordinary full-trace comparisons retained without repeating."
+}
