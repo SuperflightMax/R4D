@@ -1,8 +1,10 @@
-# Technical QA — безопасная временная пауза
+# Technical QA — checkpoint pause/resume
 
 28 октября 2026. `technical-qa-r4d-p2-free-01`.
 
-**PAUSED_SAFE.** Прямая команда Max через доверенный Dot от `2026-10-28 00:46 UTC`, адресно подтверждённая CTO, применена. Это временная пауза, заказ не отменён. Продолжение возможно только после новой явной команды Max; прежние stage2, release, слоты и token не разрешают продолжать.
+**RESUMED_SCOPE_COMPLETE.** Новая явная команда Max от `2026-10-28 05:36 UTC` через trusted Dot/CTO и адресный Lead handoff сняла паузу. Порученный source/data-разбор Android gestures/zoom/ball readability и целевой план slowdown QA завершены: [отчёт](candidate-03-ANDROID_SOURCE_DIAGNOSIS-01.md). Продукт и frozen candidate не менялись, browser не открывался. Новая релевантная QA ожидает адресный candidate handoff; resume сам по себе не подтверждает auth и не разрешает повтор login-only цикла.
+
+История: прямая команда Max от `2026-10-28 00:46 UTC` была применена как PAUSED_SAFE; её checkpoint `36601e05388aa0dcf352f63adf7dbca30ec48659` сохранён в Git. Заказ не отменялся; прежние stage2, release, слоты и token сами по себе паузу не снимали.
 
 - Worktree: `E:\R4D\perspective\p2-worktrees\technical-qa`.
 - Ветка: `codex/r4d-p2-free-technical-qa-01`.
@@ -23,4 +25,4 @@ Frozen candidate-03: source `e7ed4d068f33ee6ecda491f15dc46a6fd548ef96`, tree `d9
 
 ## Точная точка продолжения
 
-Сейчас никаких новых заданий, тестов, QA, generation/build/install/deploy, экспериментов и активного ожидания. После новой явной команды Max сначала сверить её scope с этим checkpoint и HEAD/status своего worktree. Если адресно возобновлена browser QA того же candidate-03, следующий тест — одна обычная HTTPS-навигация текущего IAB к `https://superflight.space/review/r4d/p2-free-approach/?seed=1&paused=1`; при login снова ограничиться access-выводом. При подтверждённом доступе продолжить только явно разрешённые HTTP module/UI state/download проверки. Новая команда или auth-доступ не предполагаются заранее. Старые launcher/file/security ограничения сохраняются; credentials/config/allowlists не читать, новые серверы/порты/устройства не использовать.
+Текущий source/data-разбор выполнен; после его commit/push остановиться без активного ожидания. Следующее действие — принять адресный new candidate handoff и сверить его bytes/scope перед релевантной QA жестов/slowdown по записанному плану. Для browser-части нужен новый факт допустимого просмотра; старый login-only цикл ради resume не повторять. Старые launcher/file/security ограничения сохраняются; credentials/secretconfigs/allowlists не читать, новые серверы/порты/устройства не использовать. Параметры physics/core/geometry/radius этим разбором не меняются; server writes0, release token освобождён, P2 не закрыт, другие проекты и слоты не открыты.
