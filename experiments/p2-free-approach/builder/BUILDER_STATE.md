@@ -2,7 +2,15 @@
 
 staff_id `builder-r4d-p2-free-01`; branch `codex/r4d-p2-free-builder-01`; исходный HEAD `df760b680f0d0264342fc8577fcc5779b80a3a15`. Рабочая копия только `E:/R4D/perspective/p2-worktrees/builder`.
 
-## PAUSED_SAFE: мягкая временная пауза Max от 28 октября 2026
+## Resume 28 октября: source diagnosis/plan, без product implementation
+
+Новая ЯВНАЯ команда Max от2026-10-28 05:36UTC (07:36 Europe/Kiev) через trusted Dot/CTO сняла паузу, кроме UGH. Lead адресно поручил только Android layout/SDK/visible-ball diagnosis и reviewable playback-rate plan. Исходный resume HEAD `be4f3664c7764409a6d60c158f11cd941d2eb2e9` clean; pause/current status/delivery и feedback1–7 из Lead `dceb1b9e425fb22812e871542118819c85492de8:docs/PERSPECTIVE_RESEARCH_STATE.md` прочитаны без reset/clean/switch. Работа только в собственной E worktree/ветке, без новых staff/session/worktree/device.
+
+Готов `ANDROID_LAYOUT_AND_PLAYBACK_PLAN_01.md`: факты exacte7ed main/style/index/controller и pinnedPixi8.22.0; SDK PointerEvents path inline touchAction=none — сильная причина native gesture suppression, но actual Android не воспроизведён. Spatial select не равен pinch/scroll; пример stage356 CSS px даёт ball≈6.5px наdrop/8.2px внизуplayable по принятой матрице, это арифметическая prediction не замер. Предложение rate0.25(default)/0.5/1 через fractional sim-ms budget и отдельный pure playback clock, fixedtick5/core/config/PRNG/radius unchanged; exactsteps/replay и evidence plan описаны. Варианты touch/size/occlusion не реализованы.
+
+Текущий scope завершён source-only report/checkpoint: никаких app правок, нового runtime/QA/build/install/assets, serverwrites/reload/rollback/browser/login попыток. Frozen03/sourcee7ed… не менялся, старый token освобождён; resume не доказывает auth, old denials сохраняются. Следующее действие — адресный узкий implementation/build scope от Lead после сопоставления независимых QA; до него новых запусков не начинать. Heavy guard нужен только перед будущим тяжёлым пакетом. После report commit/push остановиться без activewait; P2slot1 не closed.
+
+## История PAUSED_SAFE: мягкая временная пауза Max от 28 октября 2026
 
 Прямая команда Max через доверенный Dot от2026-10-28 00:46UTC (02:46 Europe/Kiev), подтверждена CTO. Заказ не отменён. Новые задания/runtime/tests/QA/generation/build/install/deploy/эксперименты/слоты не начинать. Продолжение только после новой ЯВНОЙ команды Max; прежние stage2/gate/checkpoints и свободный token не разрешают продолжать. Оба слота paused/reserved; P4–P6 не начинать, на другое устройство не переносить.
 

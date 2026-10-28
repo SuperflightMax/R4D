@@ -4,6 +4,8 @@
 
 ## Текущая статическая сборка P2
 
+После явного resume Max подготовлен только [Android layout diagnosis и playback plan01](ANDROID_LAYOUT_AND_PLAYBACK_PLAN_01.md): source/SDK факты, границы невоспроизведённого Android behavior, расчёт видимого размера и proposal0.25×/0.5×/1× с прежним fixedtick/core/config. Product implementation/build ещё не выполнялись; frozen03 остаётся неизменным. Lead сопоставляет этот report с независимыми QA перед узким следующим поручением.
+
 **Limited Review опубликован:** [Jungle P2](https://superflight.space/review/r4d/p2-free-approach/). [Actual delivery03](DELIVERY_03.md): root switch28 октября02:41:09 Europe/Kiev; fresh guards,472-file tree/15 frozen hashes/456 preserved oldfiles и защитные HTTP статусы проверены, server docs обновлены. Реальные authenticated200/JS MIME/browser/Pixi/UI/download/scene остаются непроверенными; P2 не закрыт, полного Technical/art PASS нет. Lead явно освободил single token после сверки evidence/postchecks/docs; после уведомления только локальная финализация. Frozen03/source e7ed… не менялся.
 
 Заморожен [candidate-03](STATIC_CANDIDATE_03.md): source `e7ed4d068f33ee6ecda491f15dc46a6fd548ef96`, **15 files/2448161 bytes**, tree SHA256 `d9dba321de0c4c9ba3acf61297b4fe0401a8ea9f0f4069362371dbc94fc0308d`, BUILD_MANIFEST SHA256 `69a46f395278749ab44b81bcd78f0b70f6f1edf2bbd2d30ff536411d16bf5575`. Новые actual03 TQA/VQA получены: offline-инварианты подтверждены в ограниченном объёме, scanner finding закрыт; VQA — RUNTIME_VISUAL_NOT_OBSERVED. Полного Technical QA/art PASS нет. Browser/HTTP/UI/Pixi/download/visual не проверены; frozen bytes не менялись.
