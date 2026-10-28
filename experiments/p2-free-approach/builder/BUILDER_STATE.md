@@ -2,7 +2,38 @@
 
 staff_id `builder-r4d-p2-free-01`; branch `codex/r4d-p2-free-builder-01`; исходный HEAD `df760b680f0d0264342fc8577fcc5779b80a3a15`. Рабочая копия только `E:/R4D/perspective/p2-worktrees/builder`.
 
-## Current C05 — LIMITED PUBLIC served, owned lock held, QA/docs pending
+## Current C05 — delivery/docs complete, own lock released, CTO window held
+
+**P2_C05_DELIVERY_DOCS_COMPLETE_LOCK_RELEASED_WINDOW_HELD**.
+Same-token addressed continuation turn `01a18407-e6da-7920-998d-ea9f7673f438`,
+initial cleanb8b87b8. Fresh first docs prewrite guard19:48:15–17UTC passed; original
+nonce/inode12/phase and RAW PUBLIC05/oldC04/16HTTP/P1/foreign/config/docprefix exact.
+Accepted actual TQA94e125 and VQA4b9aa770 recorded with bounded findings/limitations,
+no new QA/probes/product/source/frozen edits or repeated delivery/switch/reload.
+
+Private render receipt25477/SHAcf0805cf66ece855d65a11de48e5c0b944b621e510fb068466c616827c9e9f99;
+DOCS_RESULT32413/SHA3842cea076a549abedf2cda552898fe820182f37b4ccb4bef2c892fe33463a6a.
+Service append19:49:25.504758UTC ->80584bytes/
+SHAcc7703b68dbe29e2d94baa73e93752119f5a8b8ee24f46114eab74d186145a76;
+CHANGELOG append19:49:27.322107UTC ->295479bytes/
+SHA6f1af1852d13c8a62a66a8863a2825937037e02ba8318205b1344bb0ca799e2b.
+Every old prefix byte and1003:27/0640 preserved; template filled with actual scope
+and truthful held-lock/cleanup-pending state at append, no literal token/nonce.
+
+Matching owned lock inode12 removed **19:49:29.437657UTC**. Required final16HTTP,
+full563/81/newtree/oldroot/P1/545foreign/config/docprefix checks passed; after-cleanup
+guard19:49:29–31UTC and read-back19:51:44UTC confirmed lock/stage/temps absent.
+Private backup exactly11allowed normalfiles, noROLLBACK_RESULT; upload/backup/old+new
+immutable roots retained. Owned processes empty19:52:40UTC. FINAL_ACTUAL3225bytes/
+SHA470db489facd5abc534ccebc071f6e42c16fd38ed212e0215c823e4f1ab6f997.
+
+Full handoff: [DELIVERY_05_PUBLIC_COMPLETE.md](DELIVERY_05_PUBLIC_COMPLETE.md).
+**Shared window STILL HELD; only explicit CTO releases.** No Full Technical/Art/P2
+closure/universal blackfix: one desktop IAB/seed1 sparse samples, fine contacts/
+occlusion/ball-shadow/remaining21/rails/baskets unaccepted, Android/download/error/
+visibility unverified. Authorised delivery/docs/finalization done; STOP after handoff.
+
+## История C05 — LIMITED PUBLIC serving checkpoint, lock held before QA/docs
 
 Status **P2_C05_SERVED_AWAIT_CTO_QA_DOCS_PENDING_LOCK_HELD**.
 Execution turn `01a183dc-82ff-7813-aef3-fadf6dc3db35`, initial cleanab250e1,
