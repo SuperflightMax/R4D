@@ -1,0 +1,362 @@
+{
+  "schema": "r4d.p4.artwork.v1",
+  "version": "p4-starter-v01",
+  "status": "small integration sample; consumer seam NOT YET VERIFIED; not full art or QA PASS",
+  "source": {
+    "canvasPx": [
+      1536,
+      1536
+    ],
+    "sha256": "c8f9e4245c1de8c2086e615bc75dc10aea59b76b614d6e106593e07262e24f72",
+    "name": "01-jungle.jpg"
+  },
+  "p1": {
+    "commit": "4b47db04c7140ebf88f69b91faa0b790d46f22ec",
+    "configShaLf": "dd5c519cd6d4b7295118e0a3a1063efed424a0ce739450bd5153c6a9941982db",
+    "manifestShaLf": "7784dc0a215d0e472cf06a4eee03793592727cf0fa9a1fa0e0c78e5f1d17da18",
+    "projectionShaLf": "9ca9e520f1927426a3a5ba73a5eacaf90fedffc9385e7d08d5b1e6ee644b020c",
+    "translationOffset": [
+      33256,
+      34072
+    ],
+    "nativeToSource": [
+      [
+        1,
+        -0.11464664692356805,
+        -28578.75944602019
+      ],
+      [
+        0,
+        0.41847748123620804,
+        -13508.364740680081
+      ],
+      [
+        0,
+        -0.0001486986341421116,
+        6.066459862490026
+      ]
+    ],
+    "sourceToNative": [
+      [
+        1,
+        9.330392800216167,
+        25487.205399837876
+      ],
+      [
+        0,
+        11.446119221308955,
+        25487.410584018282
+      ],
+      [
+        0,
+        0.00028056268944599974,
+        0.7895779829155002
+      ]
+    ]
+  },
+  "registration": {
+    "sourceRectConvention": "integer x,y,width,height; PNG at sourceRect origin when untransformed",
+    "anchorRule": "anchorLocalPx = anchorSourcePx - sourceRect.xy; native = research + P1 translation; no extra scaling or relocation",
+    "alpha": "PNG RGBA straight/unassociated; let Pixi upload premultiply once; do not premultiply bytes again",
+    "shadows": "ground-shadow parts once, below bodies and ball; selected baked originals removed from background; 23 other obstacles remain baked in this starter",
+    "scope": "flower-01, wood-01 and left basket only; complete config stays active; not an extraction claim for the other objects"
+  },
+  "background": {
+    "file": "background.png",
+    "sha256": "756747106bbd9072d72df4f20e3ef9bbe65be0d8e11f5ef31188cfb8a31b3fc6",
+    "sourceRectPx": {
+      "x": 0,
+      "y": 0,
+      "width": 1536,
+      "height": 1536
+    },
+    "provenance": {
+      "kind": "source-with-local-restoration",
+      "regionMask": "restoration-regions.png",
+      "regionMaskSha256": "b35cd4dbbcb588e40d053f1a3a8cab546a49299f6908c2ff075877fa71bfab15",
+      "restoredIds": [
+        "flower-01",
+        "wood-01",
+        "receiver-01"
+      ],
+      "outsideMask": "byte-identical RGB to decoded source",
+      "method": "two image_gen restorations composited only under removal masks"
+    }
+  },
+  "objects": [
+    {
+      "objectId": "flower-01",
+      "nativeKind": "pin",
+      "anchorSourcePx": [
+        525.469142505324,
+        380.8817226042779
+      ],
+      "anchorLocalPx": [
+        63.469142505324044,
+        56.88172260427791
+      ],
+      "anchorNative": [
+        32982.10427784783,
+        33295.09546643628
+      ],
+      "anchorResearch": [
+        -273.8957221521705,
+        -776.9045335637202
+      ],
+      "sourceRectPx": {
+        "x": 462,
+        "y": 324,
+        "width": 114,
+        "height": 103
+      },
+      "parts": [
+        {
+          "partId": "flower-01:ground-shadow",
+          "file": "flower-01-ground-shadow.png",
+          "sha256": "12f1e361ad5fed223fb4a33901808a047360ad5f51c17e5d85be96b8d642d585",
+          "sizePx": [
+            114,
+            103
+          ],
+          "sourceRectPx": {
+            "x": 462,
+            "y": 324,
+            "width": 114,
+            "height": 103
+          },
+          "anchorLocalPx": [
+            63.469142505324044,
+            56.88172260427791
+          ],
+          "role": "ground-shadow",
+          "depth": {
+            "layer": "ground",
+            "sortNativeY": 33295.09546643628
+          },
+          "alpha": "straight",
+          "provenance": {
+            "kind": "restored",
+            "method": "source-shadow luminance recovery against local restored floor; dark olive tint; original shape, approximate alpha",
+            "source": "01-jungle.jpg",
+            "limitations": "floor texture and restoration estimates can affect edge opacity"
+          }
+        },
+        {
+          "partId": "flower-01:body",
+          "file": "flower-01-body.png",
+          "sha256": "407a51d3f65833bd7dc725f81b37a6a08ffdbe63238c39dc35d3db0279200470",
+          "sizePx": [
+            114,
+            103
+          ],
+          "sourceRectPx": {
+            "x": 462,
+            "y": 324,
+            "width": 114,
+            "height": 103
+          },
+          "anchorLocalPx": [
+            63.469142505324044,
+            56.88172260427791
+          ],
+          "role": "body",
+          "depth": {
+            "layer": "body",
+            "sortNativeY": 33295.09546643628,
+            "occlusion": "compare ball ground native Y with this base anchor; partial overlap uses sprite alpha"
+          },
+          "alpha": "straight",
+          "provenance": {
+            "kind": "extracted",
+            "method": "original RGB with artist-selected antialiased silhouette; no recolor, warp or regenerated object pixels"
+          }
+        }
+      ]
+    },
+    {
+      "objectId": "wood-01",
+      "nativeKind": "pin",
+      "anchorSourcePx": [
+        628.6379171404698,
+        478.24642276395195
+      ],
+      "anchorLocalPx": [
+        74.63791714046977,
+        78.24642276395195
+      ],
+      "anchorNative": [
+        33101.88779971951,
+        33516.93876987417
+      ],
+      "anchorResearch": [
+        -154.11220028049138,
+        -555.0612301258298
+      ],
+      "sourceRectPx": {
+        "x": 554,
+        "y": 400,
+        "width": 118,
+        "height": 135
+      },
+      "parts": [
+        {
+          "partId": "wood-01:ground-shadow",
+          "file": "wood-01-ground-shadow.png",
+          "sha256": "5091434db0b16fc489b2aacd24a51ff619f6ab4a9993dbef1533ce36aaad7662",
+          "sizePx": [
+            118,
+            135
+          ],
+          "sourceRectPx": {
+            "x": 554,
+            "y": 400,
+            "width": 118,
+            "height": 135
+          },
+          "anchorLocalPx": [
+            74.63791714046977,
+            78.24642276395195
+          ],
+          "role": "ground-shadow",
+          "depth": {
+            "layer": "ground",
+            "sortNativeY": 33516.93876987417
+          },
+          "alpha": "straight",
+          "provenance": {
+            "kind": "restored",
+            "method": "source-shadow luminance recovery against local restored floor; dark olive tint; original shape, approximate alpha",
+            "source": "01-jungle.jpg",
+            "limitations": "floor texture and restoration estimates can affect edge opacity"
+          }
+        },
+        {
+          "partId": "wood-01:body",
+          "file": "wood-01-body.png",
+          "sha256": "0da5eedca7c8f5cc70916ab88f3512facd35193a5a8bf3a789d3029050ea7a9d",
+          "sizePx": [
+            118,
+            135
+          ],
+          "sourceRectPx": {
+            "x": 554,
+            "y": 400,
+            "width": 118,
+            "height": 135
+          },
+          "anchorLocalPx": [
+            74.63791714046977,
+            78.24642276395195
+          ],
+          "role": "body",
+          "depth": {
+            "layer": "body",
+            "sortNativeY": 33516.93876987417,
+            "occlusion": "compare ball ground native Y with this base anchor; partial overlap uses sprite alpha"
+          },
+          "alpha": "straight",
+          "provenance": {
+            "kind": "extracted",
+            "method": "original RGB with artist-selected antialiased silhouette; no recolor, warp or regenerated object pixels"
+          }
+        }
+      ]
+    },
+    {
+      "objectId": "receiver-01",
+      "nativeKind": "bucket",
+      "anchorSourcePx": [
+        358.55946155336045,
+        1238.2098586093357
+      ],
+      "anchorLocalPx": [
+        170.55946155336045,
+        75.2098586093357
+      ],
+      "anchorNative": [
+        32893.24699917258,
+        34882.17558293618
+      ],
+      "anchorResearch": [
+        -362.7530008274189,
+        810.1755829361791
+      ],
+      "sourceRectPx": {
+        "x": 188,
+        "y": 1163,
+        "width": 321,
+        "height": 280
+      },
+      "parts": [
+        {
+          "partId": "receiver-01:body",
+          "file": "receiver-01-body.png",
+          "sha256": "0e3a4d6c40fcc58a3a63e94791d1107ca4d2163df81b7f3367a332c5c314507e",
+          "sizePx": [
+            321,
+            280
+          ],
+          "sourceRectPx": {
+            "x": 188,
+            "y": 1163,
+            "width": 321,
+            "height": 280
+          },
+          "anchorLocalPx": [
+            170.55946155336045,
+            75.2098586093357
+          ],
+          "role": "body",
+          "depth": {
+            "layer": "receiver-back",
+            "sortNativeY": 34882.17558293618,
+            "occlusion": "back before ball; front after ball while it overlaps this receiver opening; retain the shared source anchor"
+          },
+          "alpha": "straight",
+          "provenance": {
+            "kind": "extracted",
+            "method": "original RGB with artist-selected alpha silhouette and opening boundary; no generative replacement"
+          }
+        },
+        {
+          "partId": "receiver-01:foreground",
+          "file": "receiver-01-foreground.png",
+          "sha256": "b98f63d72ca83907f6c77136dce641605cc4e9765c7ded7eb005427304b84ddf",
+          "sizePx": [
+            321,
+            280
+          ],
+          "sourceRectPx": {
+            "x": 188,
+            "y": 1163,
+            "width": 321,
+            "height": 280
+          },
+          "anchorLocalPx": [
+            170.55946155336045,
+            75.2098586093357
+          ],
+          "role": "foreground",
+          "depth": {
+            "layer": "receiver-front",
+            "sortNativeY": 34882.17558293618,
+            "occlusion": "back before ball; front after ball while it overlaps this receiver opening; retain the shared source anchor"
+          },
+          "alpha": "straight",
+          "provenance": {
+            "kind": "extracted",
+            "method": "original RGB with artist-selected alpha silhouette and opening boundary; no generative replacement"
+          }
+        }
+      ]
+    }
+  ],
+  "remaining": [
+    "consumer PNG alpha/registration/depth seam needs real PixiJS confirmation before full slicing",
+    "shadow alpha is approximate and needs normal-scale assembled review",
+    "basket fine foliage/rope outline needs assembled review",
+    "hidden back surfaces are not regenerated in this starter",
+    "ball and separate ball-shadow not included yet",
+    "23 pins, remaining receivers and rail foreground still baked into starter background"
+  ]
+}
