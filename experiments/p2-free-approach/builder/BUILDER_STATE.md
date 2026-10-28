@@ -2,7 +2,35 @@
 
 staff_id `builder-r4d-p2-free-01`; branch `codex/r4d-p2-free-builder-01`; исходный HEAD `df760b680f0d0264342fc8577fcc5779b80a3a15`. Рабочая копия только `E:/R4D/perspective/p2-worktrees/builder`.
 
-## Current C05 — immutable LOCAL intent05, STOP for Root/CTO review
+## Current C05 — LIMITED PUBLIC served, owned lock held, QA/docs pending
+
+Status **P2_C05_SERVED_AWAIT_CTO_QA_DOCS_PENDING_LOCK_HELD**.
+Execution turn `01a183dc-82ff-7813-aef3-fadf6dc3db35`, initial cleanab250e1,
+new conditional single-use CTO gate issued18:49:42UTC. Literal authorization/nonce
+только private operational state, не в этом Git handoff. Same Builder/ReleaseEngineer.
+
+Fresh first prewrite guard18:58:44–46UTC passed; повторён прямо перед первым
+write19:01:36–38UTC. Owned lock inode12 создан19:01:38UTC. Separate-inode stage,
+exact563files/81dirs/90775981bytes/treee0ed126b… и atomicNOREPLACE root completed.
+Single raw PUBLIC root literal switch **19:02:30.622116UTC**; nginx-t до/после,
+graceful reload/active passed. All16 HTTP200/bytes/SHA/MIME/headers passed с первого
+набора, все6JS application/javascript. Serving verified19:02:34.797534UTC.
+
+Current root `/srv/superflight-review/releases/p2-jungle-static-candidate-05`.
+Full new inventory/545foreignfiles/73foreigndirs/P1all12/catalog inverse/all3numeric
+spans exact; oldroot/configs/docs unchanged. POSTCHECKS23637bytes/SHA
+546c5ca9026eb0fb56c3986112ceccfb83880313be4efc3126b80dfaebd4ec18.
+Read-only evidence361759bytes/SHA8a3b4deeba7782ead4b0af0fabb10008614bb62e883ba30fd1903a5822ca1c78.
+Full handoff: [DELIVERY_05_PUBLIC_SERVING.md](DELIVERY_05_PUBLIC_SERVING.md).
+
+**STOP before docs/cleanup, own lock inode12 HELD; shared window NOT released.**
+Owned writers stopped. CTO separately assigns actual PUBLIC05 runtime QA;
+мы TQA/VQA/Artist не будим. Actual black200/browser/GPU/Android/download/visibility,
+Full Technical/Art/P2 closure не подтверждены. Frozen0367/16files/manifestaa40…,
+immutable intent05 и всеC04/raw failures неизменны. Только later addressed CTO
+continuation same executor/same token для render receipt/docs/final checks/own cleanup.
+
+## История C05 — immutable LOCAL intent05 review checkpoint
 
 Status **LOCAL_INTENT05_SEALED_AWAIT_ROOT_CTO_NEW_EXACT_TOKEN**.
 Actual preparation turn `01a183b4-71fd-7b22-8f57-e6da57231b5f`; initial clean
