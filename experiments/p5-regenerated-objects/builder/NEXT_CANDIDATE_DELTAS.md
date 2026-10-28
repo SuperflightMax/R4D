@@ -2,6 +2,8 @@
 
 2026-10-28 23:19UTC /29октября Europe/Kyiv. Это подготовка следующего candidate. **c01/public root/index/listener не менялись.** Ни новой сборки, ни повторной c01 QA/native oracle здесь нет.
 
+Обновление23:37UTC: после Artist diagnosis `3c2e50c7caa64b281480ba895e13cf309dcbd655` Lead адресно принял вариант1. Действующий следующий receiver anchor contract — `contracts/RECEIVER_ANCHOR_POLICY.md`: optical point отдельно, logical anchor ниже на общую metadata-derived clearance. Числовой анализ c01 ниже остаётся историей измерений; новый контракт не объявляется уже проверенным на c02. Exact Artist aliases/policy handoff ещё нужен.
+
 ## Зафиксированные source changes
 
 - License: `365e8220221c6f26983e65f4496d875a9a222b1c`. Exact official @pixi/colord2.9.6 supplement и42published/installed file pins — `licenses/pixi-colord-2.9.6/README.md`, `LICENSE.md`, `SOURCE.json`. Isolated future terms9330bytes SHA256 `583c1487aefadfa1b72c181ab73a5f7a2030afb0545cf49b90ff66973faef82f`; missingRuntimeLicenseFiles0. Это не исправляет frozen c01 задним числом.

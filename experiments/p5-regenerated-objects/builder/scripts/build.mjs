@@ -41,7 +41,9 @@ if (manifestFlag >= 0) {
   const manifest = JSON.parse(sourceBytes);
   writeFileSync(resolve(runtime, 'output/artist-manifest.original.json'), sourceBytes);
   for (const texture of manifest.textures) {
-    const name = `${texture.sha256.slice(0, 16)}-${texture.id}.png`;
+    // Binding aliases share exact PNG bytes. A shared URL also lets Pixi reuse
+    // one texture resource while Sprite anchors/scales remain per alias.
+    const name = `${texture.sha256}.png`;
     const textureBytes = readFileSync(resolve(dirname(path), texture.file));
     if (textureBytes.length !== texture.bytes || sha(textureBytes) !== texture.sha256) throw new Error(`Texture changed before staging: ${texture.id}`);
     writeFileSync(resolve(site, 'assets', name), textureBytes);

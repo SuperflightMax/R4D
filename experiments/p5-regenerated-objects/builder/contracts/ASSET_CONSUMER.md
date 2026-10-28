@@ -45,3 +45,7 @@
 ## Разрешённая foreground delta после c01
 
 Для следующего candidate добавлено optional `instance.sourceClipPx` — явная область той же generated floor texture. Exact поля/units/parent/provenance и ограничения: `GENERATED_FLOOR_CLIP.md`. Старые manifests остаются совместимыми; source/current c01 bytes и его проверки не переопределяются. Actual Artist contour ещё не передан, live runtime не менялся.
+
+## Адресное уточнение receiver anchor
+
+Следующий candidate разделяет optical aperture point и logical capture anchor по общему правилу сферы для всех4buckets: `RECEIVER_ANCHOR_POLICY.md`. Это объявленная смена authored anchor и отображения чаши относительно logical plane, без переноса native/source target. Alias PNG не является новой генерацией, renderer не добавляет скрытый offset.
