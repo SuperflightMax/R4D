@@ -1,0 +1,24 @@
+{
+  "exampleOnly": true,
+  "id": "near-ledge-example",
+  "textureId": "floor-generated-example",
+  "targetId": "$source",
+  "parentId": "floor-example",
+  "role": "foreground",
+  "depthOffsetRadii": 0,
+  "depthReason": "Illustrative instance fragment only. Replace the rectangle with Artist exact near-ledge contour; no native target is moved.",
+  "sourceClipPx": {
+    "coordinateSpace": "source1536",
+    "polygon": [[200, 1100], [1300, 1100], [1300, 1140], [200, 1140]],
+    "provenance": {
+      "method": "scene-region-from-generated-floor",
+      "sourceTextureId": "floor-generated-example",
+      "sourceSha256": "0000000000000000000000000000000000000000000000000000000000000000",
+      "note": "Example only: parentId must name the existing floor instance using this same textureId; replace the zero hash with its exact generated PNG SHA256."
+    },
+    "limitations": [
+      "The rectangle is illustrative, not a measured or accepted contour.",
+      "Artist must supply exact floor registration and exclusions around basket openings/ropes."
+    ]
+  }
+}

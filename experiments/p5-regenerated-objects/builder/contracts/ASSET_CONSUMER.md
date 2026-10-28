@@ -41,3 +41,7 @@
 ## Передача
 
 Передать Lead exact commit + manifest path + SHA256/bytes и пути реальных подготовленных PNG. Тяжёлые raw/evidence могут оставаться в собственном E runtime с hash/bytes; файл manifest должен ссылаться на доступные final bytes. Builder ничего не читает из чужих worktree без адресного handoff. Первый комплект сразу проверяется и собирается; всех 25 ждать не нужно.
+
+## Разрешённая foreground delta после c01
+
+Для следующего candidate добавлено optional `instance.sourceClipPx` — явная область той же generated floor texture. Exact поля/units/parent/provenance и ограничения: `GENERATED_FLOOR_CLIP.md`. Старые manifests остаются совместимыми; source/current c01 bytes и его проверки не переопределяются. Actual Artist contour ещё не передан, live runtime не менялся.

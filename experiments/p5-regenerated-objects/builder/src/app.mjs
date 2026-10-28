@@ -60,12 +60,12 @@ for (const drop of actual.board.drops) {
 }
 
 function positionSprite(item, state) {
-  const { spec, texture, sprite } = item;
+  const { spec, texture, sprite, layer } = item;
   if (spec.targetId === '$source') {
     const scale = 1536 / texture.sizePx[0];
     sprite.scale.set(scale);
     sprite.position.set(-texture.groundAnchorPx[0] * scale, -texture.groundAnchorPx[1] * scale);
-    sprite.zIndex = spec.role === 'floor' ? -1e8 : 1e8;
+    layer.zIndex = spec.role === 'floor' ? -1e8 : 1e8;
     return;
   }
   const target = spec.targetId === '$ball'
@@ -77,7 +77,7 @@ function positionSprite(item, state) {
   const scale = width / texture.footprintPx.width;
   sprite.scale.set(scale);
   sprite.position.set(sourceAnchor[0] - texture.groundAnchorPx[0] * scale, sourceAnchor[1] - texture.groundAnchorPx[1] * scale);
-  sprite.zIndex = spec.role === 'shadow' ? -1e7 + target.y : target.y + target.r * spec.depthOffsetRadii;
+  layer.zIndex = spec.role === 'shadow' ? -1e7 + target.y : target.y + target.r * spec.depthOffsetRadii;
 }
 
 if (preview.manifestUrl) {
@@ -90,8 +90,18 @@ if (preview.manifestUrl) {
   }
   for (const spec of [...manifest.instances].sort((a, b) => a.id.localeCompare(b.id))) {
     const resource = textureMap.get(spec.textureId);
-    const item = { spec, texture: resource.info, sprite: new Sprite(resource.texture) };
-    art.addChild(item.sprite);
+    const sprite = new Sprite(resource.texture);
+    let layer = sprite;
+    if (spec.sourceClipPx) {
+      // The exact Artist-declared source1536 contour clips only this generated
+      // floor part. Both sprite and mask remain under the same Art tree.
+      layer = new Container();
+      const mask = new Graphics().poly(spec.sourceClipPx.polygon.flat(), true).fill({ color: 0xffffff });
+      layer.addChild(sprite, mask);
+      sprite.mask = mask;
+    }
+    const item = { spec, texture: resource.info, sprite, layer };
+    art.addChild(layer);
     positionSprite(item, run.snapshot());
     sprites.push(item);
     if (spec.targetId === '$ball') dynamicSprites.push(item);
@@ -177,7 +187,8 @@ const footprintFits = sprites.filter(item => item.spec.targetId !== '$source' &&
 });
 el('coverage').textContent = `${pinBodies.size}/25 препятствий · ${receiverBodies.size}/4 приёмников · ${manifest?.status ?? 'ранний floor без комплекта'}`;
 el('notice').textContent = preview.warnings.join(' ') + (!manifest ? ' Шарик пока показан диагностическим контуром.' : ` ${25 - pinBodies.size} препятствие(й) и ${4 - receiverBodies.size} приёмник(а) ещё без арта; физическая геометрия сохранена.`);
-el('diagnostics').textContent = JSON.stringify({ pins, earlyFloor: preview.earlyFloor, nativeCounts: inputs.counts, footprintFits,
+const clippedForegroundParts = (manifest?.instances ?? []).filter(i => i.sourceClipPx).map(i => ({ instanceId: i.id, parentId: i.parentId, textureId: i.textureId, role: i.role, ...i.sourceClipPx }));
+el('diagnostics').textContent = JSON.stringify({ pins, earlyFloor: preview.earlyFloor, nativeCounts: inputs.counts, footprintFits, clippedForegroundParts,
   eventFrameRule: 'collision event tick t → state t+1; lifecycle events retain state tick', manifestStatus: manifest?.status ?? null }, null, 2);
 new ResizeObserver(layout).observe(host);
 app.ticker.add(() => {

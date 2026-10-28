@@ -4,6 +4,8 @@
 
 Обновление23:04UTC: обе независимые QA проверяют exact c01. Его public root/listener не меняются. License supplement для **следующего** package подготовлен: `licenses/pixi-colord-2.9.6/README.md`, exact LICENSE.md+SOURCE.json;42installed files совпали с official npm archive, exact publisher gitHead5344fbf77b736f81cd33c21050021bc09bc9dd1d. Isolated license-package-001 проверен; missingRuntimeLicenseFiles0. c01 всё ещё содержит прежний gap, все22file pins и ownership unchanged. Нового app build/candidate нет.
 
+Обновление23:08UTC: по адресному уточнению Lead подготовлен optional foreground contract `contracts/GENERATED_FLOOR_CLIP.md` + schema/validator/renderer source. `sourceClipPx` использует exact generated floor texture и parent floor instance, polygon source1536, source SHA/provenance/limitations. Sprite и polygon mask внутри общего Art tree, Geometry sibling/native controller не меняются. Никакой production polygon не выдуман; exact part/contour от Artist ещё не передан. Source разобран, прежний schema example проходит; actual mask/render runtime до нового candidate остаётся unverified. c01 QA и listener не затрагивались.
+
 ## Получено и сделано
 
 - Schema/example + exact P1 targets опубликованы и pushed: `b327e5ff53190c9a356f350835390de2e77580ac`, `contracts/ASSET_CONSUMER.md` и соседние JSON. Четыре exact P1 файла и Jungle671136bytes проверены SHA256/bytes. Исходный JPG прочитан read-only и просмотрен.

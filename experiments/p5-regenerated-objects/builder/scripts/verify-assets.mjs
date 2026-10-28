@@ -48,6 +48,8 @@ for (const texture of manifest.textures) {
 }
 const ids = new Set();
 const footprintFits = [];
+const clippedForegroundParts = [];
+const instancesById = new Map(manifest.instances.map(instance => [instance.id, instance]));
 const roles = ['floor', 'shadow', 'body', 'receiver-back', 'receiver-front', 'ball', 'foreground'];
 for (const instance of manifest.instances) {
   assert(instance.id && !ids.has(instance.id), `Duplicate instance: ${instance.id}`);
@@ -57,6 +59,20 @@ for (const instance of manifest.instances) {
   assert(instance.parentId && roles.includes(instance.role) && Number.isFinite(instance.depthOffsetRadii) && Math.abs(instance.depthOffsetRadii) <= 1 && instance.depthReason, `Part metadata: ${instance.id}`);
   assert(instance.targetId !== '$source' || ['floor', 'foreground'].includes(instance.role), `Source-bound layer: ${instance.id}`);
   const texture = textures.get(instance.textureId);
+  if (instance.sourceClipPx) {
+    const clip = instance.sourceClipPx;
+    const parent = instancesById.get(instance.parentId);
+    const provenance = clip.provenance;
+    assert(instance.role === 'foreground' && instance.targetId === '$source' && instance.depthOffsetRadii === 0 && clip.coordinateSpace === 'source1536', `Source clip must be an explicit source-bound foreground: ${instance.id}`);
+    assert(parent?.role === 'floor' && parent.textureId === instance.textureId, `Clipped foreground must name its existing generated floor instance as parent: ${instance.id}`);
+    assert(texture.provenance?.method === 'generated' && provenance?.method === 'scene-region-from-generated-floor' && provenance.sourceTextureId === instance.textureId && provenance.sourceSha256 === texture.sha256 && typeof provenance.note === 'string' && provenance.note.trim(), `Clip source/provenance mismatch: ${instance.id}`);
+    assert(Array.isArray(clip.limitations) && clip.limitations.every(v => typeof v === 'string'), `Clip limitations must be declared: ${instance.id}`);
+    const polygon = clip.polygon;
+    assert(Array.isArray(polygon) && polygon.length >= 3 && polygon.every(p => Array.isArray(p) && p.length === 2 && p.every(v => Number.isFinite(v) && v >= 0 && v <= 1536)), `Clip polygon must contain source1536 points: ${instance.id}`);
+    const area = Math.abs(polygon.reduce((sum, p, i) => { const q = polygon[(i + 1) % polygon.length]; return sum + p[0] * q[1] - q[0] * p[1]; }, 0)) / 2;
+    assert(area > 0 && area < 1536 * 1536, `Clip must be a non-empty declared part, not the whole frame: ${instance.id}`);
+    clippedForegroundParts.push({ instanceId: instance.id, parentId: instance.parentId, sourceTextureId: instance.textureId, sourceSha256: texture.sha256, polygon, sourceAreaPx2: area, limitations: clip.limitations });
+  }
   if (instance.targetId === '$source') {
     assert(texture.sizePx[0] === texture.sizePx[1] && texture.groundAnchorPx.every(n => n === 0) && texture.footprintPx.width === texture.sizePx[0] && texture.footprintPx.depth === texture.sizePx[1], `Full source-frame texture contract: ${instance.id}`);
   } else {
@@ -69,4 +85,4 @@ for (const instance of manifest.instances) {
       depthRatio: renderedDepth / target.sourcePx.footprintDepth, note: instance.targetId === '$ball' ? 'Reference at drop only; dynamic projected width, sphere silhouette is not its footprint' : 'No axis warp or target change applied' });
   }
 }
-console.log(JSON.stringify({ status: example ? 'example-shape-checked-no-assets' : 'verified', textures: textures.size, instances: ids.size, measurements, footprintFits }));
+console.log(JSON.stringify({ status: example ? 'example-shape-checked-no-assets' : 'verified', textures: textures.size, instances: ids.size, measurements, footprintFits, clippedForegroundParts }));
