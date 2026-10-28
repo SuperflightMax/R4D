@@ -2,7 +2,38 @@
 
 staff_id `builder-r4d-p2-free-01`; branch `codex/r4d-p2-free-builder-01`; исходный HEAD `df760b680f0d0264342fc8577fcc5779b80a3a15`. Рабочая копия только `E:/R4D/perspective/p2-worktrees/builder`.
 
-## Fresh final LOCAL intent04-02: after explicit P3 release, no P2 token yet
+## Current PUBLIC final03 — local only, после завершённой P1 publication
+
+Root/CTO явно закрыли P1 auxiliary delivery и освободили её token/window
+2026-10-28T15:47:25Z; новый server-write token P2 не выдан. В том же E-worktree,
+branch/role/chat, от clean eed2759 выполнена одна read-only PUBLIC snapshot и
+один новый immutable local packet `p2-review-release-intent-04-final-03`.
+Подробности: [RELEASE_INTENT_04_FINAL_03.md](RELEASE_INTENT_04_FINAL_03.md).
+
+Actual PUBLIC baseline15:56:45–15:56:51UTC: root
+`/srv/superflight-review/releases/p1-mapping-report-candidate-01`,562files/
+90770774bytes, coherent raw snippet953/289c2…/docs/config/inventory/owners/modes.
+Catalog/P1/P2/current P2JS HTTP200, JS application/javascript.8new targets
+absent, старый P1lock отсутствует. Снимок не заменяет будущие fresh guards.
+
+Current **IMMUTABLE_LOCAL_READY_AWAIT_ROOT_REVIEW_NEW_EXACT_CTO_TOKEN**.
+Intent15366bytes/SHA307d8b595d7b3a6d513d615344d19aa9b6332266c9c611dc65783396ec2eff57;
+archive2590720bytes/18leaves/SHAa1179a794425da145ba803231973881f1b22391b44f2a0aca7234fa2e85abe36;
+sealed2756bytes/SHAd7e9dc65d4dd5ccf833be029467cc747dee7b2e2bef22a5acbc54b2aeb8fb0b2.
+Planned563files/90775084bytes/tree892fa950ee4ce08f02a71b76f99241eeb95d52038515699fff8e8a447f9e6b8f;
+545foreign records и12P1files полностью сохранены. Только existing P2card
+меняется, count4 остаётся. RAW PUBLIC root-only after952/4d32b2…; rollback
+только к fresh current PUBLIC before, никаких protected templates/normalizedguards.
+
+Frozen04/16files2452021bytes/build08f9/implementation0a80/manifest60f79…/tree60d216…
+и независимая TQAdf309/evidence249046/3e216… неизменны. No build/physics/QA/
+imagegen/gesture/size/height/occlusion fixes; actual04UI/Pixi/WebGL/timing/download/
+Android/ArtPASS остаются unverified, P1renderPASS не наследуется. Server_write=false,
+нет lock/mkdir/upload/staging/backup/snippet/docs/reload/rollback/cleanup на VPS.
+Final01/02 теперь obsolete для PUBLIC базы и сохранены raw без перезаписи.
+Остановка после handoff для Rootreview/нового exact CTOtoken, без active wait.
+
+## История protected final LOCAL intent04-02 — obsolete, не использовать
 
 АдресныйDELIVERY-UNLOCK отCTO07:47:59UTC черезLead получен; owncheckpointc4a4b7f330639872e5a5c2ed7fc26d2eceffabb8/branchcleanverified, новыйoutput02absent. Выполнен ОДИН freshread-onlycoherentcapture+localpacket `E:/R4D/perspective/p2-runtime/output/p2-review-release-intent-04-final-02/`. Actualbaseline08:04:43.791045–08:04:44.594794UTC (10:04Europe/Kiev): `/srv/superflight-review/releases/p3-jungle-masks-frozen-01`, manifest107213bytes SHA381ff209d36f24c1734e2f2012d0b298cb13efd37e928956ceaf00ab967c2937/snippet1080bytes SHAc67b27e4b179dfe3cb803268435b7558b0c48b8ea8b1018ec709149511be1ba8/catalog11955 SHA759de374bafabe98bcc1d96e297e0972df1439bd7322e3920438ec46eb188694. Все549currentpaths/bytes/hash+549files/79dirsowner/modes recorded, errors0/no symlinks; before/afterroot/hashcoherent. CTOhint independentlymatched, неassumed. P3product/art/recipes/results не анализировались/непечатались; currentpublishedrecords сохраненыopaque, otherprovenance exactprevious-manifestreference. P1input4b47…неизменен, deliverybaseНЕsourceinput.
 
