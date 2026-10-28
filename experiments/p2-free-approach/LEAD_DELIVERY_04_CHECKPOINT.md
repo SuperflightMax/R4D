@@ -1,5 +1,7 @@
 # P2 candidate04 — checkpoint сериализации доставки
 
+После completed read-only diagnostic CTO отдельно разрешил одну малую C05 UI-итерацию; её текущее состояние — в [C05 checkpoint](LEAD_DELIVERY_05_CHECKPOINT.md). C04/source pins/raw evidence остаются неизменными, его token/window закрыты17:18:45Z.
+
 ## Текущая фаза: CTO release зафиксирован; read-only diagnostic завершён
 
 Diagnostic turn **`01a18387-8ed9-7600-8656-b8a6436ec277` completed/idle**, clean Builder HEAD2cf9b65. Первый completed read `exec-8a516d8d-123d-4b8c-8831-e6563c8c4a27`; новых файлов/коммитов/запусков продукта/QA/browser/Node/build/SDK/server изменений не было. Source ref build `08f9b9eaa6aa1063eb7fcd9cf373ddacf907725a`, implementation0a80b0…; нужные UI source files одинаковы между ними и HEAD, frozen main hash exact. Root статически сверил указанные строки и существующий VQA raw JSON.
