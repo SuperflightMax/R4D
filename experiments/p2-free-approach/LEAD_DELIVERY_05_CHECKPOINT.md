@@ -1,6 +1,14 @@
 # P2 candidate05 — малая разрешённая UI-итерация
 
-## Текущее состояние: source/freeze готовы, independent static TQA идёт
+## Текущее состояние: independent static TQA завершён, один LOCAL intent05 готовится
+
+TQA turn **`01a183a5-80d3-7a82-aa69-080d38fa9801` completed/idle/clean**, original **`74e4a77d1e8fc982d62bfc0cb02237103b2a6f19`** / Lead **`926f43185ab032d3e8d4f78b48caff46a4831a7d`**. [Полный bounded report](qa/technical/candidate-05-STATIC-01.md)13930bytes/SHA `ccb6812f7283e14042e4cb3150eebb9c28b7e125e05c8793d28ba3ce865ce9b1`; EVIDENCE30564bytes/SHA `52438e74014edf96c3d8a62dc9e0eeff9a254536b02c65d601570614cfa93eb0`. Root полностью прочитал report, сверил evidence/3related receipts/runnerGit18611-SHA2a3deda5… и execution limits. Новых actionable code/artifact defects нет; full16/13unchanged/5JS+HTMLemissions/13protected source/privacy/изолированная fit-status model passed. Actual PUBLIC05/black200/live paused resize/browser/GPU/physics/native/Art не проверены. Root принял review **только для LOCAL intent подготовки**, не для доставки/Full PASS.
+
+После fresh Builder latest implementation `01a18393-6d58-7001-8b25-a45c2fbfff86` completed/idle/clean3c4ecc72…/no-intent и повторного local-target absence Lead передал ровно **одно LOCAL preparation** поручение тому же Builder. Actual new prep turn **`01a183b4-71fd-7b22-8f57-e6da57231b5f` inProgress**; первый completed read ещё ожидается. Exact immutable target **`E:/R4D/perspective/p2-runtime/output/p2-review-release-intent-05-final-01`**: fresh absence before create, occupied=>STOP без удаления/overwrite/rename/номера02. Frozen05/source0367/C04/raw failures не менять.
+
+Только read-only fresh coherent CURRENT PUBLIC baseline: P4 мог поменять root/catalog/docs, поэтому старые C04 raw hashes не подставляются как текущие. Foreign/P1/P3/P4 bytes/records opaque; active files+dirs/owners/modes/hash, raw current snippet/docs prefix/config metadata/HTTP нужны для exact future root-only delta,18leaf archive/планового inventory/append template/нового intent+seal. Future write-set имеет восемь новых C05final01 targets, но **сейчас ни один не создаётся на сервере**. Нового token нет, C04 token/window закрыты17:18:45Z; server writes0. Будущие delivery/runtime QA и docs completion требуют отдельного CTO gate/pins/token; VQA/Artist/старые закрытые исследования не будили. Дальше — полный LOCAL packet review Root/CTO, не автоматическое исполнение.
+
+## История source/freeze и назначения static TQA
 
 Implementation/build source **`0367d46211ed170c8840cf702b5ea1cc05f6e430`** / Lead **`73304c8`**. Frozen handoff **`3c4ecc72fc436df6252412a34721345c5dc30064`** / Lead **`d7c1c95`**, [полный компактный checkpoint](builder/CANDIDATE05_FREEZE.md), Git blob7106bytes/SHA `1691e5fca151b13aa98dfc2470d4961b790dac26a8d96bab56ff971af4cbc4ad`. Root полностью прочитал source diff4files и handoff, сверил4 local check/resource receipts и оба C04/C05 full16file bytes/SHA/tree без запуска продукта.
 
