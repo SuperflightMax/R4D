@@ -4,7 +4,7 @@
 
 ## Текущая статическая сборка P2
 
-После явного resume Max подготовлен только [Android layout diagnosis и playback plan01](ANDROID_LAYOUT_AND_PLAYBACK_PLAN_01.md): source/SDK факты, границы невоспроизведённого Android behavior, расчёт видимого размера и proposal0.25×/0.5×/1× с прежним fixedtick/core/config. Product implementation/build ещё не выполнялись; frozen03 остаётся неизменным. Lead сопоставляет этот report с независимыми QA перед узким следующим поручением.
+После явного resume Max [Android diagnosis/plan01](ANDROID_LAYOUT_AND_PLAYBACK_PLAN_01.md) прошёл review Lead; узкий [playback source01](PLAYBACK_SOURCE_01.md) реализован в `0a80b0b63c688b6f77b8f710576adf2ea5c263c1`:«Скорость»0.25×default/0.5×/1×, fractional presentation clock с прежним nativefixedtick/core/config и отдельной history.10 targeted source checks passed, UI/DOM/WebGL/mobile unverified. Нового build/release ещё нет; published03/frozenbytes неизменны. Touch/size/occlusion остаются только диагнозом; nextbuildgate выдаёт Lead после source review.
 
 **Limited Review опубликован:** [Jungle P2](https://superflight.space/review/r4d/p2-free-approach/). [Actual delivery03](DELIVERY_03.md): root switch28 октября02:41:09 Europe/Kiev; fresh guards,472-file tree/15 frozen hashes/456 preserved oldfiles и защитные HTTP статусы проверены, server docs обновлены. Реальные authenticated200/JS MIME/browser/Pixi/UI/download/scene остаются непроверенными; P2 не закрыт, полного Technical/art PASS нет. Lead явно освободил single token после сверки evidence/postchecks/docs; после уведомления только локальная финализация. Frozen03/source e7ed… не менялся.
 
