@@ -1,0 +1,20 @@
+[
+  {
+    "id":"near-ledge",
+    "authoringTexturePolygonPx":[[270,869],[320,888],[395,896],[475,908],[555,916],[635,917],[710,914],[790,906],[865,895],[945,879],[1003,861],[1030,876],[1003,918],[940,942],[865,951],[790,957],[710,960],[635,960],[555,956],[475,952],[395,945],[320,928],[270,904]],
+    "reason":"Curved near platform lip and immediate short edge moss, excluding lower wall and basket space. All displayed pixels reused from this generated floor.",
+    "limitations":["Artist traced polygon is an initial region, not a per-pixel alpha segmentation; painted moss may be cut at the boundary.","No trailing roots or complete lower stone wall retained.","Region remains above raw1254y960/source1536y1175.89; receiver openings below are excluded.","Actual near-edge partial occlusion and rope attachments require next candidate QA."]
+  },
+  {
+    "id":"near-serpent-left",
+    "authoringTexturePolygonPx":[[147,748],[175,735],[205,766],[240,782],[270,812],[294,844],[291,873],[275,892],[250,903],[217,886],[193,875],[168,850],[151,820]],
+    "reason":"Nearest left serpent head and immediately attached rail tip. Generated-floor part with fixed source registration; not the full side rail.",
+    "limitations":["Some attached feathers/foliage cross this coarse boundary; review actual ball overlap near left edge.","Long left rail remains unpartitioned and is not unconditionally placed in front.","No basket opening or lower wall included."]
+  },
+  {
+    "id":"near-serpent-right",
+    "authoringTexturePolygonPx":[[1090,735],[1130,748],[1125,815],[1116,850],[1094,879],[1060,900],[1025,891],[1003,867],[1008,836],[1030,810],[1060,790]],
+    "reason":"Nearest right serpent head and immediately attached rail tip, separately traced rather than mirrored; same generated floor pixels/registration.",
+    "limitations":["Initial hand-traced region; edge feathers and actual partial occlusion remain unverified.","Long right rail remains unpartitioned; no claim all wall contacts are resolved.","No basket opening or lower wall included."]
+  }
+]

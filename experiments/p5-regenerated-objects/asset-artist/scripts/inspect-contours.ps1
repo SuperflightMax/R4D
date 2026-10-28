@@ -1,3 +1,4 @@
+param([string]$SpecsJson='', [string]$Output='E:/R4D/perspective/p5-runtime/asset-artist/manifests/contact-contour-measurements.json')
 $ErrorActionPreference='Stop'
 Add-Type -AssemblyName System.Drawing
 $taskSpecs=@(
@@ -6,6 +7,7 @@ $taskSpecs=@(
   @{name='frog-v1';cx=642.0;rx=480.0},
   @{name='wood-v1';cx=628.0;rx=291.0}
 )
+if($SpecsJson){$taskSpecs=Get-Content -LiteralPath $SpecsJson -Raw | ConvertFrom-Json}
 $taskRecords=@(foreach($taskSpec in $taskSpecs){
   $taskImage=[System.Drawing.Bitmap]::new(('E:/R4D/perspective/p5-runtime/asset-artist/raw/'+$taskSpec.name+'.png'))
   try {
@@ -23,5 +25,5 @@ $taskRecords=@(foreach($taskSpec in $taskSpecs){
     [ordered]@{name=$taskSpec.name;contactEllipseFit=@{cx=$taskSpec.cx;cy=$taskCy;rx=$taskSpec.rx;ry=$taskRy;width=2*$taskSpec.rx;depth=2*$taskRy;ratio=$taskRy/$taskSpec.rx};samples=$taskSamples;method='Least-squares lower alpha>=128 contour y=cy+ry*sqrt(1-fraction^2); hand-painted contour approximation, not camera reconstruction'}
   } finally {$taskImage.Dispose()}
 })
-$taskRecords | ConvertTo-Json -Depth 7 | Set-Content -LiteralPath E:/R4D/perspective/p5-runtime/asset-artist/manifests/contact-contour-measurements.json -Encoding utf8NoBOM
+$taskRecords | ConvertTo-Json -Depth 7 | Set-Content -LiteralPath $Output -Encoding utf8NoBOM
 $taskRecords | ConvertTo-Json -Depth 7

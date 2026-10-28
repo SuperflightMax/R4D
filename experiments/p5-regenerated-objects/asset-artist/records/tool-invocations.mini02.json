@@ -1,0 +1,377 @@
+[
+  {
+    "id": "flower-far-v1",
+    "promptFile": "prompts/011-flower-far-v1.txt",
+    "tool": "image_gen.imagegen",
+    "arguments": {
+      "prompt": "Use case: precise-object-edit\nAsset type: new FAR-VIEW flower obstacle variant for the same jungle board, standalone transparent sprite.\nInput image 1: my generated flower-v1, edit target / identity, material, color and light reference. Input image 2: original Jungle board, camera and family reference only.\nPrimary request: re-render this SAME red flower stone obstacle from a LOWER elevated frontal camera, as seen in the far rows of the original board. Correct the ground circular base perspective: its ellipse depth must be about 0.48 of its width, NOT the current overly deep ~0.61. Camera elevation approximately 28.5 degrees above the ground plane. Broad horizontal base ellipse, visibly more compressed in depth, no yaw. This is a 3D viewpoint redraw, NOT vertical squash of the whole bitmap: maintain the object's standing physical proportions and stone wall heights; the flower petals/top are correctly foreshortened for the lower view.\nKeep the same coral red sculpted flower, yellow-green center, warm mossy pale limestone, rounded beveled blocks, detail level, soft upper-left sunlight and shaded front/right side. Keep single whole object and its recognizable design. Flat circular base actually rests on ground.\nComposition:1254-square untrimmed transparent canvas, single object centered with generous padding, entire silhouette uncut. No floor patch or external cast shadow, no other objects. Actual transparent RGBA; no matte, checkerboard, grid, labels, text, logos or watermark.",
+      "referenced_image_paths": [
+        "E:/R4D/perspective/p5-runtime/asset-artist/raw/flower-v1.png",
+        "K:/Agents/R4D/Assets/perspective/01-jungle.jpg"
+      ],
+      "transparent_background": true
+    },
+    "outputHint": "Generated images are saved to C:\\Users\\user\\.codex\\generated_images\\01a1842d-becc-7012-b425-bc311371f6f9 as C:\\Users\\user\\.codex\\generated_images\\01a1842d-becc-7012-b425-bc311371f6f9\\exec-bec4b473-1bac-4780-b34e-c0bbba353734.png by default.\nIf you need to use a generated image at another path, copy it and leave the original in place unless the user explicitly asks you to delete it.\nThe generated image is already displayed to the user. There is no need to render it in the final response as a Markdown image or file link.",
+    "settingsNotExposed": [
+      "model",
+      "seed",
+      "sampler",
+      "steps",
+      "cfg",
+      "sizePreset"
+    ]
+  },
+  {
+    "id": "leaf-far-v1",
+    "promptFile": "prompts/012-leaf-far-v1.txt",
+    "tool": "image_gen.imagegen",
+    "arguments": {
+      "prompt": "Use case: precise-object-edit\nAsset type: FAR-VIEW variant of my generated leaf-fan obstacle, standalone transparent sprite.\nInput image 1: edit target / identity and material reference, generated leaf-v1. Input image 2: original Jungle board, far-row camera reference only.\nPrimary request: re-render the same teal/green leaf-fan and golden medallion on its mossy pale stone base from the LOWER elevated frontal camera of the far rows. The circular base ground ellipse must have depth/width about 0.48 (not current0.56); camera elevation about28.5degrees above ground. Keep no yaw, broad horizontal ellipse. Do not vertically squash the sprite: redraw the perspective of base/top/leaf fan while preserving its standing height and recognizable silhouette. One low stone row only, same materials and leaf arrangement.\nKeep turquoise/emerald painted sculptural leaves, worn gold trim, warm mossy limestone, soft upper-left sun and shaded front/right, original-family detail/softness. No external shadows or floor patch.\nComposition:1254-square RGBA, one complete centered object, transparent padding all around. No crop, painted checkerboard or matte, other objects, guides, labels, text or watermark.",
+      "referenced_image_paths": [
+        "E:/R4D/perspective/p5-runtime/asset-artist/raw/leaf-v1.png",
+        "K:/Agents/R4D/Assets/perspective/01-jungle.jpg"
+      ],
+      "transparent_background": true
+    },
+    "outputHint": "Generated images are saved to C:\\Users\\user\\.codex\\generated_images\\01a1842d-becc-7012-b425-bc311371f6f9 as C:\\Users\\user\\.codex\\generated_images\\01a1842d-becc-7012-b425-bc311371f6f9\\exec-645ebd95-9813-4d07-83b7-b3f94bc63e5d.png by default.\nIf you need to use a generated image at another path, copy it and leave the original in place unless the user explicitly asks you to delete it.\nThe generated image is already displayed to the user. There is no need to render it in the final response as a Markdown image or file link.",
+    "settingsNotExposed": [
+      "model",
+      "seed",
+      "sampler",
+      "steps",
+      "cfg",
+      "sizePreset"
+    ]
+  },
+  {
+    "id": "frog-far-v1",
+    "promptFile": "prompts/013-frog-far-v1.txt",
+    "tool": "image_gen.imagegen",
+    "arguments": {
+      "prompt": "Use case: precise-object-edit\nAsset type: FAR-VIEW frog head variant for the supplied jungle board, standalone transparent RGBA.\nInput image1: generated frog-v1, edit target / same identity, materials and light. Input image2: original Jungle board for far-row camera only.\nPrimary request: re-render this same green smiling frog head on mossy pale limestone from a slightly LOWER elevated frontal camera. Correct the circular base ground ellipse to depth/width approximately0.48 instead of current0.55. Camera elevation about28.5degrees above ground, no yaw; flatter visible top surfaces as in far board rows. Preserve the standing physical height and smiling head silhouette; redraw viewpoint rather than squash the bitmap vertically. Keep two raised amber/green eyes, broad rounded muzzle, nostrils, green mottled sculpted stone, low single-row beveled mossy limestone base.\nKeep painted casual fantasy game style, detail and softness, warm upper-left daylight and shaded front/right side. No external cast/contact shadow or floor patch.\nComposition:1254-square transparent canvas, centered whole object, generous empty padding, no cropping. Actual alpha0 background, no checkerboard/matte, scene, extra objects, labels, text, watermark or technical guides.",
+      "referenced_image_paths": [
+        "E:/R4D/perspective/p5-runtime/asset-artist/raw/frog-v1.png",
+        "K:/Agents/R4D/Assets/perspective/01-jungle.jpg"
+      ],
+      "transparent_background": true
+    },
+    "outputHint": "Generated images are saved to C:\\Users\\user\\.codex\\generated_images\\01a1842d-becc-7012-b425-bc311371f6f9 as C:\\Users\\user\\.codex\\generated_images\\01a1842d-becc-7012-b425-bc311371f6f9\\exec-57024d37-661a-4aca-a0c9-8a7547b470bc.png by default.\nIf you need to use a generated image at another path, copy it and leave the original in place unless the user explicitly asks you to delete it.\nThe generated image is already displayed to the user. There is no need to render it in the final response as a Markdown image or file link.",
+    "settingsNotExposed": [
+      "model",
+      "seed",
+      "sampler",
+      "steps",
+      "cfg",
+      "sizePreset"
+    ]
+  },
+  {
+    "id": "wood-far-v1",
+    "promptFile": "prompts/014-wood-far-v1.txt",
+    "tool": "image_gen.imagegen",
+    "arguments": {
+      "prompt": "Use case: precise-object-edit\nAsset type: FAR-VIEW variant of my generated wood obstacle on transparent RGBA.\nInput image1: generated wood-v1, edit target / identity/material/light. Input image2: original Jungle board, camera reference for the far wooden cylinders.\nPrimary request: re-render this same short upright wooden cylinder from a slightly lower elevated frontal camera, not a 2D squash. Match the far-row ground/base ellipse depth/width about0.49 rather than current0.528, elevation about29degrees. Make both cut top and bottom contact ellipses consistent with this viewpoint, no yaw, maintain standing physical height and brown/teal/gold decoration. Preserve recognizable cut wood rings, turquoise middle band with small gold triangles, two gold-brown hoops, soft moss at foot. No stone pedestal.\nKeep source-like painted fantasy game volume and detail, upper-left warm sunlight, shaded front/right. One whole centered object on1254-square transparent canvas, comfortable padding; no shadow/floor patch/extra objects, matte, checkerboard, guides, text, logos or watermark.",
+      "referenced_image_paths": [
+        "E:/R4D/perspective/p5-runtime/asset-artist/raw/wood-v1.png",
+        "K:/Agents/R4D/Assets/perspective/01-jungle.jpg"
+      ],
+      "transparent_background": true
+    },
+    "outputHint": "Generated images are saved to C:\\Users\\user\\.codex\\generated_images\\01a1842d-becc-7012-b425-bc311371f6f9 as C:\\Users\\user\\.codex\\generated_images\\01a1842d-becc-7012-b425-bc311371f6f9\\exec-70fd17c4-e14e-42a4-8558-717ebe87f259.png by default.\nIf you need to use a generated image at another path, copy it and leave the original in place unless the user explicitly asks you to delete it.\nThe generated image is already displayed to the user. There is no need to render it in the final response as a Markdown image or file link.",
+    "settingsNotExposed": [
+      "model",
+      "seed",
+      "sampler",
+      "steps",
+      "cfg",
+      "sizePreset"
+    ]
+  },
+  {
+    "id": "flower-mid-v1",
+    "promptFile": "prompts/015-flower-mid-v1.txt",
+    "tool": "image_gen.imagegen",
+    "arguments": {
+      "prompt": "Use case: precise-object-edit\nAsset type: MIDDLE-VIEW flower obstacle variant for the same board, standalone transparent sprite.\nInput image1: original generated flower-v1, edit target for same object/material/color/light. Input image2: original Jungle board for camera/family.\nPrimary request: re-render this same red flower stone from a slightly lower elevated frontal camera, with circular base ground ellipse depth/width about0.54 rather than current0.607. This is the intermediate camera between far and near board rows, elevation approximately32.7degrees, no yaw. Keep physical height and recognizable flower/stone proportions; redraw the 3D viewpoint, do not stretch/squash the pixels. Same red rounded petals, small yellow-green center and mossy warm limestone plinth, thick beveled blocks, soft painted fantasy art. Upper-left warm sunlight, shaded front/right; no external shadow.\nComposition:one whole centered object on1254-square transparent RGBA, ample padding, no floor patch, extra objects, scene, matte/checkerboard, technical guides, text or watermark.",
+      "referenced_image_paths": [
+        "E:/R4D/perspective/p5-runtime/asset-artist/raw/flower-v1.png",
+        "K:/Agents/R4D/Assets/perspective/01-jungle.jpg"
+      ],
+      "transparent_background": true
+    },
+    "outputHint": "Generated images are saved to C:\\Users\\user\\.codex\\generated_images\\01a1842d-becc-7012-b425-bc311371f6f9 as C:\\Users\\user\\.codex\\generated_images\\01a1842d-becc-7012-b425-bc311371f6f9\\exec-53d855fa-5be4-4a16-b769-fa30a77dbca4.png by default.\nIf you need to use a generated image at another path, copy it and leave the original in place unless the user explicitly asks you to delete it.\nThe generated image is already displayed to the user. There is no need to render it in the final response as a Markdown image or file link.",
+    "settingsNotExposed": [
+      "model",
+      "seed",
+      "sampler",
+      "steps",
+      "cfg",
+      "sizePreset"
+    ]
+  },
+  {
+    "id": "leaf-mid-v1",
+    "promptFile": "prompts/016-leaf-mid-v1.txt",
+    "tool": "image_gen.imagegen",
+    "arguments": {
+      "prompt": "Use case: precise-object-edit\nAsset type: MIDDLE-VIEW variant of my leaf-fan game obstacle, transparent RGBA.\nInput image1: generated leaf-v1, identity/material/light edit target. Input image2: original Jungle board as camera reference.\nPrimary request: re-render the same sculpted turquoise/green leaf fan with round gold medallion and low mossy limestone base at an INTERMEDIATE elevated frontal view. Circular ground base ellipse depth/width approximately0.515, between distant0.48 and near0.56; camera elevation31degrees. No yaw. Preserve physical standing height, proportions and design, redraw the viewpoint rather than stretching the bitmap. Visible upper base ellipse is less deep than input, low single-row stone face stays convincing.\nKeep all original-family color/material detail, soft upper-left warm sunlight and shaded front/right. No floor patch or external shadow.\nComposition:1254-square transparent canvas, centered complete standalone object, ample transparent padding, no matte/checkerboard/scene/other objects/text/grid/labels/watermark.",
+      "referenced_image_paths": [
+        "E:/R4D/perspective/p5-runtime/asset-artist/raw/leaf-v1.png",
+        "K:/Agents/R4D/Assets/perspective/01-jungle.jpg"
+      ],
+      "transparent_background": true
+    },
+    "outputHint": "Generated images are saved to C:\\Users\\user\\.codex\\generated_images\\01a1842d-becc-7012-b425-bc311371f6f9 as C:\\Users\\user\\.codex\\generated_images\\01a1842d-becc-7012-b425-bc311371f6f9\\exec-72afa0b9-70ad-4948-a7f4-e0a195a3e08b.png by default.\nIf you need to use a generated image at another path, copy it and leave the original in place unless the user explicitly asks you to delete it.\nThe generated image is already displayed to the user. There is no need to render it in the final response as a Markdown image or file link.",
+    "settingsNotExposed": [
+      "model",
+      "seed",
+      "sampler",
+      "steps",
+      "cfg",
+      "sizePreset"
+    ]
+  },
+  {
+    "id": "wood-near-v1",
+    "promptFile": "prompts/017-wood-near-v1.txt",
+    "tool": "image_gen.imagegen",
+    "arguments": {
+      "prompt": "Use case: precise-object-edit\nAsset type: NEAR-VIEW wood cylinder game obstacle, same identity on transparent RGBA.\nInput image1: generated wood-v1 as edit target/material/light/design. Input image2: original Jungle board for front-row camera.\nPrimary request: re-render this same short upright brown wooden post from the slightly HIGHER elevated frontal camera of the nearest board row. Circular ground/base ellipse depth/width approximately0.575 instead of current0.528; camera elevation about35degrees. Show slightly more of the cut top oval, no yaw. Keep standing physical height, proportions and all recognizable brown wood rings, broad turquoise band with gold triangles, gold-brown top/lower hoops and small foot moss. Redraw viewpoint, do not stretch or squash pixels.\nKeep warm upper-left sunlight, shaded front/right, softly painted casual jungle game style and crispness matched to source. No ground patch or external shadow.\nComposition:1254-square actual transparent RGBA, one entire centered object, generous transparent margins, no extra objects, matte/checkerboard/scene, guides, labels, text, logos or watermark.",
+      "referenced_image_paths": [
+        "E:/R4D/perspective/p5-runtime/asset-artist/raw/wood-v1.png",
+        "K:/Agents/R4D/Assets/perspective/01-jungle.jpg"
+      ],
+      "transparent_background": true
+    },
+    "outputHint": "Generated images are saved to C:\\Users\\user\\.codex\\generated_images\\01a1842d-becc-7012-b425-bc311371f6f9 as C:\\Users\\user\\.codex\\generated_images\\01a1842d-becc-7012-b425-bc311371f6f9\\exec-6fb7f20d-9760-46ba-8408-d6a3cf3d6512.png by default.\nIf you need to use a generated image at another path, copy it and leave the original in place unless the user explicitly asks you to delete it.\nThe generated image is already displayed to the user. There is no need to render it in the final response as a Markdown image or file link.",
+    "settingsNotExposed": [
+      "model",
+      "seed",
+      "sampler",
+      "steps",
+      "cfg",
+      "sizePreset"
+    ]
+  },
+  {
+    "id": "foreground-near-v1",
+    "promptFile": "prompts/018-foreground-near-v1.txt",
+    "tool": "image_gen.imagegen",
+    "arguments": {
+      "prompt": "Use case: precise-object-edit\nAsset type: source-registered NEAR PLATFORM LIP occlusion layer, full untrimmed1254-square transparent PNG.\nInput image1: edit target, my generated floor-v1. Create a transparent architectural part from this generated image, not from the user's original.\nPrimary request: retain ONLY the curved near stone platform ledge/lip and the small moss/grass clumps growing directly on its edge, plus the two nearest serpent heads and immediately attached short rail tips at the lower corners. These details occupy roughly x180..1100,y820..975 in this1254-square image. The retained near lip must have its exact irregular curved top edge following the existing far edge of the front fascia. Keep its existing thickness/painted stone face about35pixels; it is not a straight rectangular stripe.\nErase to actual alpha0 ALL other content: the entire open floor above the lip; distant temples; all long side rails and background; the big vertical stone wall BELOW the lip; hanging foliage/roots/waterfalls below it. Do NOT retain the large wall under the board: this layer will render in front and must not cover the basket receivers below. Preserve only small edge moss, not long trailing roots.\nInvariants: exact original1254x1254 canvas, exact positions, perspective, scale, colors, light, texture and contour registration of retained details; do not recenter, zoom, crop, move or redraw architecture. No new content or external shadow. Genuine transparent RGBA everywhere erased, no checkerboard/matte/text/guides/watermark.",
+      "referenced_image_paths": [
+        "E:/R4D/perspective/p5-runtime/asset-artist/raw/floor-v1.png"
+      ],
+      "transparent_background": true
+    },
+    "outputHint": "Generated images are saved to C:\\Users\\user\\.codex\\generated_images\\01a1842d-becc-7012-b425-bc311371f6f9 as C:\\Users\\user\\.codex\\generated_images\\01a1842d-becc-7012-b425-bc311371f6f9\\exec-1527cccd-08e6-4f0f-9517-e285550bbd89.png by default.\nIf you need to use a generated image at another path, copy it and leave the original in place unless the user explicitly asks you to delete it.\nThe generated image is already displayed to the user. There is no need to render it in the final response as a Markdown image or file link.",
+    "settingsNotExposed": [
+      "model",
+      "seed",
+      "sampler",
+      "steps",
+      "cfg",
+      "sizePreset"
+    ]
+  },
+  {
+    "id": "foreground-near-v2",
+    "promptFile": "prompts/019-foreground-near-v2.txt",
+    "tool": "image_gen.imagegen",
+    "arguments": {
+      "prompt": "Use case: precise-object-edit\nAsset type: corrected source-registered foreground layer on1254-square transparent canvas.\nInput image1: my generated floor-v1, PRIMARY spatial registration reference and edit target. Input image2: previous extracted-looking foreground-near-v1, component identity only; its placement is WRONG and must not control coordinates.\nPrimary request: use Image1's exact composition and erase everything except the nearest curved platform lip, its small edge moss, and two nearest serpent heads/short rail tips. The previous attempt moved these details down and outward. Correct their placement to Image1: left serpent head remains roughly centered at(245,845), right head at(1060,845), curved near ledge remains around y920..958 at the center. Nothing in the foreground may move down to y1040 or expand toward x50/x1200 as in Image2. Copy the exact original positions and apparent sizes of Image1's retained architecture. This is alpha isolation at fixed registration, not a new composition.\nErase ALL floor surface ABOVE the curved lip, all distant/side architecture, ALL vertical wall and hanging foliage BELOW the thin lip. Only retain the lip's existing stone face thickness and small moss directly along its edge; no opaque patch/floor/wall behind or below it. Leave the basket area below y990 fully transparent. Keep canvas1254x1254, no recenter/zoom/crop. Original light/colors/materials unchanged. Genuine transparent RGBA with no background, matte, checkerboard, new objects, guides, text or watermark.",
+      "referenced_image_paths": [
+        "E:/R4D/perspective/p5-runtime/asset-artist/raw/floor-v1.png",
+        "E:/R4D/perspective/p5-runtime/asset-artist/raw/foreground-near-v1.png"
+      ],
+      "transparent_background": true
+    },
+    "outputHint": "Generated images are saved to C:\\Users\\user\\.codex\\generated_images\\01a1842d-becc-7012-b425-bc311371f6f9 as C:\\Users\\user\\.codex\\generated_images\\01a1842d-becc-7012-b425-bc311371f6f9\\exec-44060fdc-297f-4a82-aa85-74dfb000c593.png by default.\nIf you need to use a generated image at another path, copy it and leave the original in place unless the user explicitly asks you to delete it.\nThe generated image is already displayed to the user. There is no need to render it in the final response as a Markdown image or file link.",
+    "settingsNotExposed": [
+      "model",
+      "seed",
+      "sampler",
+      "steps",
+      "cfg",
+      "sizePreset"
+    ]
+  },
+  {
+    "id": "flower-mid-v2",
+    "promptFile": "prompts/020-flower-mid-v2.txt",
+    "tool": "image_gen.imagegen",
+    "arguments": {
+      "prompt": "Use case: precise-object-edit\nAsset type: corrected intermediate camera flower variant, transparent game sprite.\nInput image1: generated flower-far-v1, edit target, actual flatter viewpoint baseline. Input image2: original board for style/family reference only.\nPrimary request: tilt the camera SLIGHTLY MORE DOWNWARD than Image1, so the visible circular ground base becomes a little DEEPER. Current measured ellipse depth/width is0.451; desired about0.53. Increase visible ground ellipse depth by about17% at same diameter, not a drastic high/top-down view. Show slightly more top surface of the flower. Preserve physical standing height; redraw 3D viewpoint, no 2D image stretching. Keep same object identity, red rounded flower, pale mossy stone, yellow-green center and soft warm upper-left light.\nComposition: one whole centered obstacle on1254-square transparent RGBA, original-like padding, no floor or shadow, no extra objects, matte/checkerboard/text/guides/watermark.",
+      "referenced_image_paths": [
+        "E:/R4D/perspective/p5-runtime/asset-artist/raw/flower-far-v1.png",
+        "K:/Agents/R4D/Assets/perspective/01-jungle.jpg"
+      ],
+      "transparent_background": true
+    },
+    "outputHint": "Generated images are saved to C:\\Users\\user\\.codex\\generated_images\\01a1842d-becc-7012-b425-bc311371f6f9 as C:\\Users\\user\\.codex\\generated_images\\01a1842d-becc-7012-b425-bc311371f6f9\\exec-da40dde4-4dd7-42f7-b21c-ded683caffa7.png by default.\nIf you need to use a generated image at another path, copy it and leave the original in place unless the user explicitly asks you to delete it.\nThe generated image is already displayed to the user. There is no need to render it in the final response as a Markdown image or file link.",
+    "settingsNotExposed": [
+      "model",
+      "seed",
+      "sampler",
+      "steps",
+      "cfg",
+      "sizePreset"
+    ]
+  },
+  {
+    "id": "foreground-near-v3",
+    "promptFile": "prompts/021-foreground-near-v3.txt",
+    "tool": "image_gen.imagegen",
+    "arguments": {
+      "prompt": "Use case: precise-object-edit\nAsset type: repositioned foreground part, still full1254-square transparent canvas.\nInput image1: edit target, generated foreground-near-v2. Retain its art identity, colors and light.\nPrimary request: change ONLY its size and position within this SAME1254x1254 transparent canvas: uniformly SCALE the entire visible architectural part down to84% of current width AND height, then move it to the following registered placement. Keep its center at x627. The center-bottom of the curved stone lip must be at y950, not y1050. The full visible part should lie approximately x145..1110,y765..960. Left serpent head should end near x235,y845; right near x1060,y845. The foreground's large transparent padding MUST stay; do not auto-crop/recenter/enlarge the visible object to fill the canvas.\nPreserve exact relative shapes, textures, perspective, lighting and colors of the existing component during this uniform scale/translation. No extra scenery, floor or wall, no trailing foliage, no shadow. All space outside the architectural part remains alpha0, especially below y990. No matte/checkerboard, guides, text or watermark.",
+      "referenced_image_paths": [
+        "E:/R4D/perspective/p5-runtime/asset-artist/raw/foreground-near-v2.png"
+      ],
+      "transparent_background": true
+    },
+    "outputHint": "Generated images are saved to C:\\Users\\user\\.codex\\generated_images\\01a1842d-becc-7012-b425-bc311371f6f9 as C:\\Users\\user\\.codex\\generated_images\\01a1842d-becc-7012-b425-bc311371f6f9\\exec-158938e2-0bca-40bb-8f04-be358968c4c2.png by default.\nIf you need to use a generated image at another path, copy it and leave the original in place unless the user explicitly asks you to delete it.\nThe generated image is already displayed to the user. There is no need to render it in the final response as a Markdown image or file link.",
+    "settingsNotExposed": [
+      "model",
+      "seed",
+      "sampler",
+      "steps",
+      "cfg",
+      "sizePreset"
+    ]
+  },
+  {
+    "id": "leaf-mid-v2",
+    "promptFile": "prompts/022-leaf-mid-v2.txt",
+    "tool": "image_gen.imagegen",
+    "arguments": {
+      "prompt": "Use case: precise-object-edit\nAsset type: corrected intermediate leaf-fan viewpoint, transparent game sprite.\nInput image1: generated leaf-far-v1, edit target / actual flatter baseline. Input image2: original board, identity/art reference only.\nPrimary request: tilt the camera SLIGHTLY MORE DOWNWARD than Image1 to show modestly more top surface of the round stone base. Current measured base ground ellipse depth/width is0.456; desired about0.51, only12% more depth at same diameter. Not an overhead view. Redraw the3D viewpoint while keeping standing object height, leaf-fan proportions and low base; do not stretch pixels vertically. Same teal/green leaves, worn gold medallion with jade center, warm pale mossy limestone, softly painted casual jungle fantasy style and warm upper-left light.\nOne whole centered object on1254-square genuinely transparent RGBA with comfortable margins, no external shadow/floor/scene/other objects, matte/checkerboard/technical guides/text/watermark.",
+      "referenced_image_paths": [
+        "E:/R4D/perspective/p5-runtime/asset-artist/raw/leaf-far-v1.png",
+        "K:/Agents/R4D/Assets/perspective/01-jungle.jpg"
+      ],
+      "transparent_background": true
+    },
+    "outputHint": "Generated images are saved to C:\\Users\\user\\.codex\\generated_images\\01a1842d-becc-7012-b425-bc311371f6f9 as C:\\Users\\user\\.codex\\generated_images\\01a1842d-becc-7012-b425-bc311371f6f9\\exec-97ed7774-bc8d-4bae-b31b-bfd4a983c1e9.png by default.\nIf you need to use a generated image at another path, copy it and leave the original in place unless the user explicitly asks you to delete it.\nThe generated image is already displayed to the user. There is no need to render it in the final response as a Markdown image or file link.",
+    "settingsNotExposed": [
+      "model",
+      "seed",
+      "sampler",
+      "steps",
+      "cfg",
+      "sizePreset"
+    ]
+  },
+  {
+    "id": "flower-mid-v3",
+    "promptFile": "prompts/023-flower-mid-v3-from-source-ref.txt",
+    "tool": "image_gen.imagegen",
+    "arguments": {
+      "prompt": "Use case: stylized-concept\nAsset type: NEW regenerated middle-row red flower obstacle sprite, not a cutout.\nInput image1: small ORIGINAL flower-03 crop, reference-only for exact squat object design, base proportions and viewpoint; original ground/shadow pixels MUST NOT be included in output. Input image2: original full Jungle board, reference-only for painted art quality, lighting and scene consistency.\nPrimary request: newly illustrate ONE matching low red flower stone on a SINGLE short row of pale mossy limestone blocks. Match Image1's low squat proportions and viewpoint closely: the flower is mostly horizontal on top of its round plinth, six rounded coral red petals around a small warm yellow-green center. The base is a very LOW disk, not a tall two-story drum. Ground circular footprint is seen as a horizontal ellipse, depth approximately0.52 times width. Elevation roughly31degrees, frontal no yaw. The front contact curve is broad and shallow. Total visible object height about0.65 of base diameter. Do not turn it into an upright flower sign.\nLighting/art: soft polished hand-painted casual jungle fantasy, warm upper-left sunlight, shadowed front/right, gently weathered beveled stone with moss, sculpted red petals; source-like gentle detail rather than excessive cracks/high-contrast noise.\nComposition:one complete centered standalone object with20% transparent padding on1254-square canvas. Actual transparent RGBA, no ground patch, no cast/contact shadow outside object, no other objects, scene, matte/checkerboard/text/technical guides/watermark. All final pixels newly generated; input crops are visual references only.",
+      "referenced_image_paths": [
+        "E:/R4D/perspective/p5-runtime/asset-artist/refs/reference-flower-03.png",
+        "K:/Agents/R4D/Assets/perspective/01-jungle.jpg"
+      ],
+      "transparent_background": true
+    },
+    "outputHint": "Generated images are saved to C:\\Users\\user\\.codex\\generated_images\\01a1842d-becc-7012-b425-bc311371f6f9 as C:\\Users\\user\\.codex\\generated_images\\01a1842d-becc-7012-b425-bc311371f6f9\\exec-7ba5918c-fe76-4616-966b-248427d74420.png by default.\nIf you need to use a generated image at another path, copy it and leave the original in place unless the user explicitly asks you to delete it.\nThe generated image is already displayed to the user. There is no need to render it in the final response as a Markdown image or file link.",
+    "settingsNotExposed": [
+      "model",
+      "seed",
+      "sampler",
+      "steps",
+      "cfg",
+      "sizePreset"
+    ]
+  },
+  {
+    "id": "leaf-mid-v3",
+    "promptFile": "prompts/024-leaf-mid-v3-from-source-ref.txt",
+    "tool": "image_gen.imagegen",
+    "arguments": {
+      "prompt": "Use case: stylized-concept\nAsset type: NEW regenerated middle-row leaf obstacle sprite, not a cutout.\nInput image1: ORIGINAL leaf-03 crop, reference-only for actual low base, warm medallion, teal leaf fan and viewpoint; none of the original floor/shadow may enter the output. Input image2: full original Jungle board as art/light reference only.\nPrimary request: newly illustrate ONE matching squat fan of layered turquoise/green sculpted leaves with a warm GOLD round medallion/center, resting on one very LOW round pale mossy limestone base as seen in Image1. Keep the leaves spread broadly with short pointed tips and a raised green central leaf, no enormous upright fan. Same elevated frontal camera as the cropped middle-row object; base ground ellipse depth/width about0.51. One short row of base blocks, no tall drum, no extra lower tier. Total silhouette height around0.8 of base diameter. Rounded softly painted sculptural volume, rich casual fantasy game art matching the source and its gently weathered material detail.\nLighting: warm soft upper-left sunlight, shadowed front/right side. No floor patch or external cast/contact shadow because shadow is separate.\nComposition: one whole centered standalone object with generous20% transparent margins on1254-square actual transparent RGBA canvas. No scene, other objects, matte/checkerboard, text, guides, logos or watermark. Every final pixel newly generated; original crops references only.",
+      "referenced_image_paths": [
+        "E:/R4D/perspective/p5-runtime/asset-artist/refs/reference-leaf-03.png",
+        "K:/Agents/R4D/Assets/perspective/01-jungle.jpg"
+      ],
+      "transparent_background": true
+    },
+    "outputHint": "Generated images are saved to C:\\Users\\user\\.codex\\generated_images\\01a1842d-becc-7012-b425-bc311371f6f9 as C:\\Users\\user\\.codex\\generated_images\\01a1842d-becc-7012-b425-bc311371f6f9\\exec-6a7084da-b92e-4bf9-877a-f431fb47335a.png by default.\nIf you need to use a generated image at another path, copy it and leave the original in place unless the user explicitly asks you to delete it.\nThe generated image is already displayed to the user. There is no need to render it in the final response as a Markdown image or file link.",
+    "settingsNotExposed": [
+      "model",
+      "seed",
+      "sampler",
+      "steps",
+      "cfg",
+      "sizePreset"
+    ]
+  },
+  {
+    "id": "flower-mid-v4",
+    "promptFile": "prompts/025-flower-mid-v4-geometry-guide.txt",
+    "tool": "image_gen.imagegen",
+    "arguments": {
+      "prompt": "Use case: sketch-to-render\nAsset type: newly generated middle-view flower obstacle with a strict geometric camera guide, transparent game sprite.\nInput image1: GEOMETRY CONTROL ONLY. The low gray cylindrical support is an exact perspective guide: ground ellipse center(627,850), width900, depth459 (ratio0.51), one low70px stone course. The blue outline is the ground footprint, not artwork. Input image2: original flower-03 crop, DESIGN/MATERIAL reference only. Input image3: full Jungle source, painted quality and upper-left light only, not another geometry control.\nPrimary request: replace the geometry diagram with a finished sculpted red flower on a LOW single-course pale mossy limestone support, preserving Image1's base outline/footprint/view and low wall height. Six rounded coral-red petals with a small yellow-green center, horizontal atop the support as in Image2. Maintain the exact shallow ellipse and one-course base of Image1; no taller second tier, deeper round base or overhead view. All actual pixels newly rendered painted art; technical diagram is not final material.\nWarm soft upper-left sunlight, shaded front/right, polished soft casual jungle fantasy art, source-like detail/materials. No external shadow or floor patch.\nKeep full1254-square canvas, support contacts the same blue-guide ellipse; generous transparent padding. REMOVE all guide lines/blue/gray technical colors and white backdrop completely. Genuinely transparent RGBA background, no diagram marks, text/grid/labels/logos/watermark/other objects.",
+      "referenced_image_paths": [
+        "E:/R4D/perspective/p5-runtime/asset-artist/refs/mid-footprint-guide.png",
+        "E:/R4D/perspective/p5-runtime/asset-artist/refs/reference-flower-03.png",
+        "K:/Agents/R4D/Assets/perspective/01-jungle.jpg"
+      ],
+      "transparent_background": true
+    },
+    "outputHint": "Generated images are saved to C:\\Users\\user\\.codex\\generated_images\\01a1842d-becc-7012-b425-bc311371f6f9 as C:\\Users\\user\\.codex\\generated_images\\01a1842d-becc-7012-b425-bc311371f6f9\\exec-fd229c54-d0d4-439a-b674-7175e79524ba.png by default.\nIf you need to use a generated image at another path, copy it and leave the original in place unless the user explicitly asks you to delete it.\nThe generated image is already displayed to the user. There is no need to render it in the final response as a Markdown image or file link.",
+    "settingsNotExposed": [
+      "model",
+      "seed",
+      "sampler",
+      "steps",
+      "cfg",
+      "sizePreset"
+    ]
+  },
+  {
+    "id": "leaf-mid-v4",
+    "promptFile": "prompts/026-leaf-mid-v4-geometry-guide.txt",
+    "tool": "image_gen.imagegen",
+    "arguments": {
+      "prompt": "Use case: sketch-to-render\nAsset type: newly generated intermediate-view leaf obstacle using a strict support geometry guide, transparent game sprite.\nInput image1: GEOMETRY CONTROL ONLY. Keep this low cylinder's circular ground support ellipse at center(627,850), width900depth459, ratio0.51 and low70px wall. Blue line marks ground footprint; gray and white are diagram colors, not final material. Input image2: original leaf-03 crop as object design/material reference only. Input image3: original full Jungle board for finished painted style and upper-left lighting only.\nPrimary request: turn the guide into one finished low mossy pale limestone obstacle carrying the squat teal/green leaf fan and warm GOLD center from Image2. Retain Image1's shallow ellipse camera, ground contour and low single-course support. Do not deepen the base, add a lower tier or change viewpoint. The leaf fan is centered on top, has source-like short pointed leaves and raised center leaf, no enormous upright sign. Rounded sculptural casually painted game volume; new raster art throughout.\nMatch warm upper-left light, softly shaded front/right, gentle limestone/moss/gold/teal texture from original. No external shadow or floor patch.\nKeep1254-square canvas and generous transparent margins. Remove ALL gray/blue guide lines and white backdrop. Genuine transparent RGBA background; no markers/grid/text/logos/watermark/extra objects.",
+      "referenced_image_paths": [
+        "E:/R4D/perspective/p5-runtime/asset-artist/refs/mid-footprint-guide.png",
+        "E:/R4D/perspective/p5-runtime/asset-artist/refs/reference-leaf-03.png",
+        "K:/Agents/R4D/Assets/perspective/01-jungle.jpg"
+      ],
+      "transparent_background": true
+    },
+    "outputHint": "Generated images are saved to C:\\Users\\user\\.codex\\generated_images\\01a1842d-becc-7012-b425-bc311371f6f9 as C:\\Users\\user\\.codex\\generated_images\\01a1842d-becc-7012-b425-bc311371f6f9\\exec-c34f29c4-0f80-4b7a-bffd-d6c9b721d075.png by default.\nIf you need to use a generated image at another path, copy it and leave the original in place unless the user explicitly asks you to delete it.\nThe generated image is already displayed to the user. There is no need to render it in the final response as a Markdown image or file link.",
+    "settingsNotExposed": [
+      "model",
+      "seed",
+      "sampler",
+      "steps",
+      "cfg",
+      "sizePreset"
+    ]
+  },
+  {
+    "id": "flower-mid-v5",
+    "promptFile": "prompts/027-flower-mid-v5-low-control.txt",
+    "tool": "image_gen.imagegen",
+    "arguments": {
+      "prompt": "Use case: sketch-to-render\nAsset type: new shallow/intermediate flower obstacle view with strict low cylindrical support control, transparent game sprite.\nInput image1: GEOMETRY CONTROL ONLY. It shows the intended shallow LOW support: one70px wall course, ground ellipse center(627,850),width900depth409.5. Match the shape/perspective of this support closely; blue/gray/white are technical guide colors to remove. Input image2: original flower crop for identity/material only. Input image3: full Jungle board for finished painted quality and warm upper-left light only, not camera.\nPrimary request: render a finished squat red six-petal flower with a yellow-green center on mossy warm pale stone, following Image1's shallow ground ellipse and low wall. Preserve the base footprint and camera of the guide. No tall extra lower tier. The flower lies on top and is low, no upright flower sign. Every final pixel native-generated, no technical shapes in final.\nPainted polished casual jungle fantasy, rounded volume and source-like gentle material detail, upper-left sunlight, shaded front/right. No external cast/contact shadow or floor patch.\nOne whole centered object with transparent padding in1254-square canvas. Remove all guide lines/colors and white backdrop, output actual transparent RGBA. No text, grid, labels, watermarks or extra objects.",
+      "referenced_image_paths": [
+        "E:/R4D/perspective/p5-runtime/asset-artist/refs/mid-footprint-guide-low-control.png",
+        "E:/R4D/perspective/p5-runtime/asset-artist/refs/reference-flower-03.png",
+        "K:/Agents/R4D/Assets/perspective/01-jungle.jpg"
+      ],
+      "transparent_background": true
+    },
+    "outputHint": "Generated images are saved to C:\\Users\\user\\.codex\\generated_images\\01a1842d-becc-7012-b425-bc311371f6f9 as C:\\Users\\user\\.codex\\generated_images\\01a1842d-becc-7012-b425-bc311371f6f9\\exec-fed10dd7-3c8a-4be2-97db-e53c03a32617.png by default.\nIf you need to use a generated image at another path, copy it and leave the original in place unless the user explicitly asks you to delete it.\nThe generated image is already displayed to the user. There is no need to render it in the final response as a Markdown image or file link.",
+    "settingsNotExposed": [
+      "model",
+      "seed",
+      "sampler",
+      "steps",
+      "cfg",
+      "sizePreset"
+    ]
+  }
+]

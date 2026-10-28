@@ -1,0 +1,5 @@
+Use case: precise-object-edit
+Asset type: repositioned foreground part, still full1254-square transparent canvas.
+Input image1: edit target, generated foreground-near-v2. Retain its art identity, colors and light.
+Primary request: change ONLY its size and position within this SAME1254x1254 transparent canvas: uniformly SCALE the entire visible architectural part down to84% of current width AND height, then move it to the following registered placement. Keep its center at x627. The center-bottom of the curved stone lip must be at y950, not y1050. The full visible part should lie approximately x145..1110,y765..960. Left serpent head should end near x235,y845; right near x1060,y845. The foreground's large transparent padding MUST stay; do not auto-crop/recenter/enlarge the visible object to fill the canvas.
+Preserve exact relative shapes, textures, perspective, lighting and colors of the existing component during this uniform scale/translation. No extra scenery, floor or wall, no trailing foliage, no shadow. All space outside the architectural part remains alpha0, especially below y990. No matte/checkerboard, guides, text or watermark.

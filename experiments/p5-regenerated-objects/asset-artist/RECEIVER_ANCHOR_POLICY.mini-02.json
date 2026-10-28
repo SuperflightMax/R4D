@@ -1,0 +1,215 @@
+{
+  "id": "receiver-sphere-height-v1",
+  "approval": "Explicit Lead decision29Oct2026, option1; applies to next candidate only",
+  "contractCommit": "2c8551e45876396e4b8f5df7f6d6c93713f89e2c",
+  "formula": "W(p,r)=128sample exact P1 projected circle width; sR=Wbucket/290; sB=Wball(r16)/959; L=1089-(150+941/2)=468.5; hR=L*sB/sR; A=[628,477+hR]",
+  "opticalReferenceTexturePx": [
+    628,
+    477
+  ],
+  "ballRawSha256": "75832ede4adb16bf321c1decbc4bd544e1f1e5a1c617a8b5453a3ec9e299c751",
+  "ballMetadataProxyLimit": "visible-bounds center620.5 is a proxy, not a fitted exact sphere center; original visible bounds alpha>=16; artist contour uncertainty does not alter frozen reference O",
+  "oldReceiverMeasurement": "records/receiver01-aperture-contour.json",
+  "builderExpectedArtifact": {
+    "bytes": 4036,
+    "sha256": "c10764513f0e83d008db2530acaa89f489eefd6dfe83c9d5ca132d6cee9f898f",
+    "file": "E:/R4D/perspective/p5-runtime/builder/output/receiver-policy-001/expected-rule.json"
+  },
+  "effect": "All visual cups move upward relative to unchanged logical/native/source targets. PNG/sphere metadata/physics unchanged; not a one-pixel measurement correction or sink",
+  "futureBallChange": "Recompute all aliases if sphere PNG/visible bounds/ground anchor/footprint/radius or projection changes",
+  "rows": [
+    {
+      "targetId": "receiver-01",
+      "native": {
+        "anchor": [
+          32893.24699917258,
+          34882.17558293618
+        ],
+        "radius": 33.523990645255964
+      },
+      "logicalTargetSource": [
+        358.55946155335715,
+        1238.2098586093362
+      ],
+      "opticalReferenceTexturePx": [
+        628,
+        477
+      ],
+      "previousLogicalAnchorTexturePx": [
+        628,
+        477
+      ],
+      "newLogicalAnchorTexturePx": [
+        628,
+        544.6165848583883
+      ],
+      "footprintCenterEqualsLogicalAnchor": true,
+      "nativeBallRadius": 16,
+      "circleSamples": 128,
+      "ballVisibleBoundsCenterProxyY": 620.5,
+      "ballGroundAnchorY": 1089,
+      "L": 468.5,
+      "ballFootprintWidth": 959,
+      "receiverFootprintWidth": 290,
+      "projectedBucketWidthSourcePx": 76.3693607942858,
+      "projectedBallWidthSourcePx": 36.448814004886174,
+      "receiverUniformScale": 0.26334262342857173,
+      "ballUniformScale": 0.0380071053231347,
+      "hRTexturePx": 67.61658485838826,
+      "visualCupShiftSourceY": -17.806328843888608,
+      "opticalReferenceSourceAfterCorrection": [
+        358.55946155335715,
+        1220.4035297654475
+      ],
+      "builderExpectedHR": 67.61658485838826,
+      "independentCalculationDelta": 0.0,
+      "seedDependent": false,
+      "geometryModified": false
+    },
+    {
+      "targetId": "receiver-02",
+      "native": {
+        "anchor": [
+          33147.03047341419,
+          34919.8575927248
+        ],
+        "radius": 27.859680215191496
+      },
+      "logicalTargetSource": [
+        646.3101699213796,
+        1264.1927466396157
+      ],
+      "opticalReferenceTexturePx": [
+        628,
+        477
+      ],
+      "previousLogicalAnchorTexturePx": [
+        628,
+        477
+      ],
+      "newLogicalAnchorTexturePx": [
+        628,
+        558.3641031099444
+      ],
+      "footprintCenterEqualsLogicalAnchor": true,
+      "nativeBallRadius": 16,
+      "circleSamples": 128,
+      "ballVisibleBoundsCenterProxyY": 620.5,
+      "ballGroundAnchorY": 1089,
+      "L": 468.5,
+      "ballFootprintWidth": 959,
+      "receiverFootprintWidth": 290,
+      "projectedBucketWidthSourcePx": 63.75761923388518,
+      "projectedBallWidthSourcePx": 36.616425596506815,
+      "receiverUniformScale": 0.21985385942719027,
+      "ballUniformScale": 0.03818188279093516,
+      "hRTexturePx": 81.36410310994435,
+      "visualCupShiftSourceY": -17.88821208755312,
+      "opticalReferenceSourceAfterCorrection": [
+        646.3101699213796,
+        1246.3045345520627
+      ],
+      "builderExpectedHR": 81.36410310994435,
+      "independentCalculationDelta": 0.0,
+      "seedDependent": false,
+      "geometryModified": false
+    },
+    {
+      "targetId": "receiver-03",
+      "native": {
+        "anchor": [
+          33381.51442545501,
+          34923.90364051326
+        ],
+        "radius": 28.5120754734123
+      },
+      "logicalTargetSource": [
+        914.7204931038729,
+        1267.0024411082616
+      ],
+      "opticalReferenceTexturePx": [
+        628,
+        477
+      ],
+      "previousLogicalAnchorTexturePx": [
+        628,
+        477
+      ],
+      "newLogicalAnchorTexturePx": [
+        628,
+        556.499109389974
+      ],
+      "footprintCenterEqualsLogicalAnchor": true,
+      "nativeBallRadius": 16,
+      "circleSamples": 128,
+      "ballVisibleBoundsCenterProxyY": 620.5,
+      "ballGroundAnchorY": 1089,
+      "L": 468.5,
+      "ballFootprintWidth": 959,
+      "receiverFootprintWidth": 290,
+      "projectedBucketWidthSourcePx": 65.29828228973793,
+      "projectedBallWidthSourcePx": 36.64165105047937,
+      "receiverUniformScale": 0.22516649065426872,
+      "ballUniformScale": 0.0382081867054008,
+      "hRTexturePx": 79.49910938997404,
+      "visualCupShiftSourceY": -17.900535471480275,
+      "opticalReferenceSourceAfterCorrection": [
+        914.7204931038729,
+        1249.1019056367813
+      ],
+      "builderExpectedHR": 79.49910938997404,
+      "independentCalculationDelta": 0.0,
+      "seedDependent": false,
+      "geometryModified": false
+    },
+    {
+      "targetId": "receiver-04",
+      "native": {
+        "anchor": [
+          33627.12626589451,
+          34890.46257444717
+        ],
+        "radius": 31.47800941620484
+      },
+      "logicalTargetSource": [
+        1193.5527369826405,
+        1243.8955530450871
+      ],
+      "opticalReferenceTexturePx": [
+        628,
+        477
+      ],
+      "previousLogicalAnchorTexturePx": [
+        628,
+        477
+      ],
+      "newLogicalAnchorTexturePx": [
+        628,
+        549.0114715231791
+      ],
+      "footprintCenterEqualsLogicalAnchor": true,
+      "nativeBallRadius": 16,
+      "circleSamples": 128,
+      "ballVisibleBoundsCenterProxyY": 620.5,
+      "ballGroundAnchorY": 1089,
+      "L": 468.5,
+      "ballFootprintWidth": 959,
+      "receiverFootprintWidth": 290,
+      "projectedBucketWidthSourcePx": 71.81440748838372,
+      "projectedBallWidthSourcePx": 36.50264050529404,
+      "receiverUniformScale": 0.24763588789097835,
+      "ballUniformScale": 0.038063233060786274,
+      "hRTexturePx": 72.01147152317914,
+      "visualCupShiftSourceY": -17.83262468897837,
+      "opticalReferenceSourceAfterCorrection": [
+        1193.5527369826405,
+        1226.0629283561088
+      ],
+      "builderExpectedHR": 72.01147152317914,
+      "independentCalculationDelta": 0.0,
+      "seedDependent": false,
+      "geometryModified": false
+    }
+  ],
+  "actualQA": "Not performed on these next-candidate aliases yet"
+}
