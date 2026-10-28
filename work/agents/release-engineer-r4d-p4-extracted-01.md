@@ -1,6 +1,6 @@
 # Release Engineer P4: подготовка публичной публикации
 
-Состояние: Stage 2 начат; выполнены только HTTP GET без cookies/credentials, проверка собственного окружения и небольшая локальная подготовка. Серверных writes/deploy не было. Frozen artifact, заключения TQA/VQA и новый single release-token CTO ещё не получены.
+Состояние: Stage 2, только read-only/local подготовка. 28 октября в 18:33–18:34 Europe/Kiev сверены identity/layout и 15 payload hashes frozen `p4-full-v02-candidate-02`, artifact SHA256 `c7815edc846749478e56e76d072233ae5a6fcd0ee86d2c14f9936379bff9b757`. Новый неполный intent: [candidate-02 public write-intent DRAFT](p4-candidate-02-public-write-intent-draft.md). Независимые TQA/VQA conclusions и новый single release-token CTO не получены; REMOTE_WRITES_HOLD_CTO Builder действует. Ни серверной доставки, ни переноса source Builder не было.
 
 ## Рабочая область и ограничения
 
@@ -57,4 +57,4 @@ HTTP refusal record: action `GET without auth/cookies; redirects disabled`; targ
 - [ ] Проверить P4 и переход из каталога в разрешённом изолированном браузере, загрузку арта/управления, отсутствие resource/console ошибок; публичный доступ без auth. Проверить прежние route metadata без чтения чужих продуктов и private boundary без login/credentials.
 - [ ] Проверить сохранность прежних записей/bytes в рамках разрешённого сравнения, вернуть URL, manifest digest, baseline/rollback location и фактические postchecks; при сбое остановить конкретную операцию и действовать только в согласованных полномочиях.
 
-Следующий шаг: получить недостающие входы и frozen handoff от CTO/Lead. Сейчас публикация не выполняется.
+Следующий шаг: получить operator fields, независимые conclusions и отдельное решение/token CTO по новому candidate-02 draft. Списки первоначального prep не заменяют актуальный draft. Сейчас публикация не выполняется.
