@@ -5,6 +5,31 @@
 `orders/perspective/ORDER.md` + `P3-masks.md`; stage 2 выдан Lead.
 Работа только в собственном E worktree/ветке. Серверная запись не разрешена.
 
+## Текущий статус — PREVIEW_RESUMED_FOR_QA
+
+28 октября 2026. Получен адресный resume Lead по новой прямой команде Max.
+Текущий участок ограничен восстановлением preview frozen01; новой реализации,
+rebuild/generation/тестовой матрицы и собственных браузерных вкладок не было.
+
+Pause checkpoint ac9b1a2 прочитан; при входе HEAD/branch совпали, WIP отсутствовал.
+Сверены exact manifest и все76 сохранённых payload hashes, source f1aca21,
+Artist f899, 51 masks. Frozen bytes не менялись и не пересоздавались.
+Свежие system-wide ресурсы: RAM free12.653/31.907GiB, CPU40%/24logical,
+C8.117/D16.303/E47.066GiB; оценка preview+двухQA до3.3GiB оставляет запас.
+Loopback6866 был свободен перед запуском.
+
+Собственный preview фактически запущен: PID112732, exec session69658.
+Listener127.0.0.1:6866 подтверждён с этим owner. URL снова ONLINE:
+http://127.0.0.1:6866/review/r4d/p3-masks/.
+Каталог E:\R4D\perspective\p3-runtime\builder\full-checkpoint-06.
+Startup GET manifest дал HTTP200 и exact SHA256
+e2e9f7d837b3d05f484f75a877af6992a70ee88363add783d80f3c6e206f431f.
+TEMP/TMP заданы только process-local на собственный E runtime temp.
+
+Preview оставлен для двух QA. До конкретного QA-дефекта новых продуктовых
+действий не требуется. server_write=false; UGH/другие проекты не затрагиваются.
+Ниже PAUSED_SAFE — историческая запись уже снятой паузы, PID24412 остаётся старым.
+
 ## PAUSED_SAFE — временная пауза по прямой команде Max
 
 28 октября 2026. Получена адресная команда CTO о немедленной мягкой паузе
