@@ -2,11 +2,30 @@
 
 **Frozen candidate01 передан независимой QA.** Full Builder handoff `383164ff397e83a5ad47238f6ebe196688f649ff` (build source `2135851427c568038b23fded38d6cbe8b6f6b0e3`) интегрирован Lead как804f6ef/f46cc3f. Manifest4037bytes SHA256 `00eb21e37f4a30e1dfbf7addad0eeafe1e66b266c553495ea30ae8d96255a14c` независимо сверён Lead;12publicfiles/2057712bytes, public tree `88e934cab5ce2621cc6ad811b7bc40bcfb5ccce74262a35068654552aeeb99f7`. Accepted4b47/frozenbytes не менялись. Нет release approval/token/готового URL.
 
-После нового capacity restore actual Lead turn `01a182c1-a662-7211-b88b-3d2053e7cad2`, входной cleanHEAD68ed8e6 сохранён без отката. Повторная read_thread проверка подтвердила отсутствие ранее начатых P1staticQA. Lead сделал ровно два успешных адресных send (isError=false): TQA actual newturn `01a182c2-c54e-73d3-9cd6-d4629df4240e`, VQA `01a182c2-cce2-7b90-bd78-b76bee5a4b44`. Первый TQA exec-e26a6d85-ac04-43a8-9830-eb6776d87592 completed; первый VQA exec-98c03cd9-682e-4244-8193-65fefbb30c04 completed/exit0. Следующий VQA read/preflight d536...exit1 ещё разбирается владельцем; обычный CSS/content path pointer передан, policy-denial не установлен. Оба QA фактически active, verdict ожидается. Повторных start/Builder/Artist wake не требуется.
+История восстановления: actual Lead turn `01a182c1-a662-7211-b88b-3d2053e7cad2` продолжил clean68ed8e6 без отката. Перед отправкой проверено отсутствие дублей. Два successful send receipts подтверждены CTO как exec-b7220e08-50d4-40ff-98c9-fb6d9d35fc9a→TQA иexec-6decc79d-73df-4e08-b01c-c39ef683a0f4→VQA; actual QA turns01a182c2-c54e-73d3-9cd6-d4629df4240e и01a182c2-cce2-7b90-bd78-b76bee5a4b44 завершились exact verdict ниже. Их первые чтения completed. Обычная path typo исправлена; новый protocol denial отдельно сохранён. Повторный start этих QA не требуется.
 
 Основание: Max28октября12:38UTC, `Sentinel_9809efe64b3881918b49cd3b4c1237a8`, через CTO. Публикуется статический отчёт accepted P1 exact `4b47db04c7140ebf88f69b91faa0b790d46f22ec`, subtree `experiments/p1-collider-mapping/clean-repeat-01/`. P1 не перезапускается; это не третий research slot. P2 frozen04/df309 сохраняются без rebuild/reQA.
 
-## Решение Lead после двух фактических verdict
+## Exact PUBLIC intent: Root review пройден, ожидается новый CTO token
+
+Builder actual intent turn `01a182d8-3df4-7001-81b7-e91d39117e88` completed; source handoff `f0c172f415731bdf1c2f31f9ff8769570eaa8ab9` интегрирован Lead какe8d20e7. Builder checkout clean/остановлен, server_write=false. Новый runtime `E:/R4D/perspective/p2-runtime/output/p1-static-report-release-intent-01` создан в свободном namespace; source/candidate01 не менялись.
+
+Lead прочитал полный [intent handoff](../p1-collider-mapping/accepted-static-report-01/audit/RELEASE_INTENT_01_HANDOFF.md), RELEASE_INTENT, EXECUTION_PLAN, документационный append template и actual PUBLIC before/after snippets. Новый отдельный read-only checker прошёл119 проверок без извлечения архива: exact14regular tar entries/bytes/modes/owners,12frozen P1 bytes,562planned records/81dirs/90770774bytes,548inherited unchanged,561published manifest rows безself, catalog ровно2замены с exact inverse, snippet только1root literal, Git-exact report pins и сохранённый PAGE_RENDER_NOT_OBSERVED. Foreign products обрабатывались только как metadata/opaque bytes.
+
+| Артефакт | Bytes | SHA256 |
+| --- | ---: | --- |
+| RELEASE_INTENT.json |10595|`760c6ed76c1ff97a9f33223b1c8f7a1b86973e6efb1284c08ab51e1e27d6b4ba`|
+| Delta archive |2191360|`b66db602929b95bb0d3f8a5a22e90f90a38d14ca7bbe93ca8702cc0a9dd3858f`|
+| EXECUTION_PLAN.md |14614|`66fc6c0ef90c1d1783ba86716aaeeb0aeaa5d635d0e5e568304ae05335a0eaf1`|
+| Root REVIEW.json |9086|`bb48742e688be68c4fa90660a969778f01ea6d962f68d8924cb947520393712a`|
+
+Root checker `E:/R4D/perspective/p2-runtime/output/lead-freeze/check-p1-public-intent-01.py`; receipt `E:/R4D/perspective/p2-runtime/output/lead-freeze/p1-public-intent-01-REVIEW.json`. Статус receipt LOCAL_PACKET_VERIFIED_AWAIT_CTO_GATE, не server authorization. Fresh common resource sample Lead14:26:45UTC:freeRAM15.986GiB/CPU4%, C15.538/D16.309/E16.451GiB; checker лёгкий и завершилсяexit0.
+
+Baseline read14:15:32–34UTC: root `/srv/superflight-review/releases/p3-jungle-masks-frozen-01`,550files/88710090bytes, raw PUBLIC snippet948SHA d264c2fc62fa6673e6c527e995b4c4cdb0dd02845dfe6d7c12dbea53dc537598. Newroot `/srv/superflight-review/releases/p1-mapping-report-candidate-01`,562files tree `0e6c8f857cf60a77f7383580a87b243c2204e127095c26512fbefeec020a65b7`, manifest109438SHA bfe6bcc0224a0161a232ddf5dde08fa9b2bdc2d7fab4c942c9b6fd140f10ba94. After snippet953SHA289c2de9aa8c535a7755d94d4e69b4368ae82ea154c148449eec9d98467e2bd8; сохраняет все PUBLIC/security bytes кромеroot. Rollback толькок exactfreshPUBLIC before, никакой oldprotected auth. Vhost/globalMIME/credentials не изменять.
+
+**Решение:** exact packet готов к review/gate CTO и новому single token. До получения token нет remote lock/mkdir/upload/staging/backup/docs/snippet/reload/rollback. Перед любым future write — новые raw guards/docs/inventory/targets/resource checks; drift остановит этот intent. Доставка тем же Builder ReleaseEngineer. После разрешённого switch — actual PUBLICHTTP status/bytes/MIME/headers и отдельный actual desktop/mobile view; PAGE_RENDER_NOT_OBSERVED до него не снимать, URL заранее не объявлять. P2frozen04/df309 не пересобирать/не паковать до завершенияP1 и освобожденияtoken.
+
+## История: решение Lead после двух фактических verdict
 
 **TARGETED_STATIC_QA_COMPLETE; разрешена только подготовка нового LOCAL PUBLIC intent.** [TQA report](qa/technical/P1_STATIC_REPORT_CANDIDATE_01.md), original `054bb5bd6a385d36ce51fe382f2526e95cdcee99`, Lead55b1635, полностью прочитан. Нет blocking defects в проверенной static-области:12files/all hashes/both trees/10Git blobs/selected versions/31refs и обратимый catalog draft согласованы. Evidence21615bytes SHA `36787ee737913bde70b9140dc55261eed26e0b02250790926262c826437a01ff` независимо сверён Lead. TQA явно ограничила550-record PUBLIC snapshot датой13:25 и не заявила независимый raw snippet auth analysis, liveHTTP или page rendering.
 
