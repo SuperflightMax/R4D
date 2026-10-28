@@ -1,6 +1,6 @@
 # Release Engineer P4: подготовка публичной публикации
 
-Состояние: [Stage B STOP по exact catalog anchor](p4-candidate-03-stage-b-stop.md), только read-only VPS/local. C05 window released, fresh coherent baseline563/81/90 775 981 получен;8 targets absent/no links. Expected P3 href `./r4d/p3-masks/` отсутствует, actual `/review/r4d/p3-masks/`; silent rebind не выполнялся. Subset82/10 099 772 и узкая privacy disposition приняты CTO, exact frozen/QA pins прежние. Full plan/tar/seal отсутствуют, single token нет; Builder source HOLD и bounded scope сохраняются. Серверной доставки/переноса source не было.
+Состояние: [ONE sealed LOCAL Stage B handoff готов](p4-candidate-03-sealed-local-handoff.md), только read-only VPS/local. CTO selector correction выполнена отдельно, historical STOP/proofs неизменны. SealSHA `f961973514026324b2033d702d0b1424aa5dd1d6142c8815d22a12a44bfe485f`;84-leaf tar, full plan/append template/newroot645/85/100 931 804 готовы. Fresh C05 baseline+preseal equality совпали,8 targets absent. Subset82 и narrow privacy disposition приняты, frozen/QA pins прежние. Server token нет, VPS writes0; Builder source HOLD/bounded scope сохраняются, actual HTTP/UI UNVERIFIED.
 
 ## Рабочая область и ограничения
 
@@ -57,4 +57,4 @@ HTTP refusal record: action `GET without auth/cookies; redirects disabled`; targ
 - [ ] Проверить P4 и переход из каталога в разрешённом изолированном браузере, загрузку арта/управления, отсутствие resource/console ошибок; публичный доступ без auth. Проверить прежние route metadata без чтения чужих продуктов и private boundary без login/credentials.
 - [ ] Проверить сохранность прежних записей/bytes в рамках разрешённого сравнения, вернуть URL, manifest digest, baseline/rollback location и фактические postchecks; при сбое остановить конкретную операцию и действовать только в согласованных полномочиях.
 
-Окончательный TQA pin: published clean commit `2c4671b5ed5b04a1635c2429328cf433ac4ec35f`, blob `16b8b76c1d48f00a15e700e5c7294915eeaa2cd8`. Следующий шаг: точная disposition Root/CTO для несовпавшего catalog anchor и отдельное продолжение с актуальными guards; затем full seal/review/token. Активного ожидания нет. Списки первоначального prep не заменяют актуальный draft/Stage B STOP checkpoint. Сейчас публикация не выполняется.
+Окончательный TQA pin: published clean commit `2c4671b5ed5b04a1635c2429328cf433ac4ec35f`, blob `16b8b76c1d48f00a15e700e5c7294915eeaa2cd8`. Следующий шаг: Root/CTO review полного LOCAL seal, затем только отдельный single-use token и fresh execution phase guards. STOP/idle, активного ожидания нет. Списки первоначального prep не заменяют актуальный sealed handoff. Сейчас публикация не выполняется.
