@@ -1,6 +1,49 @@
 # P2 candidate05 — малая разрешённая UI-итерация
 
-## Текущее состояние: CTO выдал новый exact gate, одно execution C05 начато
+## Текущее состояние: C05 PUBLIC served, focused actual TQA идёт, lock held
+
+**P2_C05_SERVED_AWAIT_CTO_QA_DOCS_PENDING_LOCK_HELD**. Same Builder execution
+`01a183dc-82ff-7813-aef3-fadf6dc3db35` completed/clean; serving handoff original
+`b8b87b8fb3a897d13123501caf39e4ebc9db07d5`, [полный отчёт](builder/DELIVERY_05_PUBLIC_SERVING.md)
+9414bytes/SHA`2a792eccea5cc643d8ac2310f8f8bc441ff587bfa2f4301189778cb03dcc6d75`.
+Actual single switch **19:02:30.622116UTC**, all16 HTTP200/bytes/SHA/MIME/headers
+с первой попытки **19:02:34.797534UTC**, все6JS application/javascript.
+Immutable frozen0367/manifestaa40…/tree19af… unchanged. Full root563files/81dirs/
+90775981bytes/tree`e0ed126b888d68d92651212f96dc095199f5434c64c76a552a8b051490a17281`;
+545foreign records/P1all12/oldroot/configs/docs preserved. Foreign product content
+не изучался. Docs1003:27/0640 unchanged; no rollback.
+
+Lead fully read serving handoff and independently compared local frozen bytes,
+all16 expected/actual HTTP rows, MIME/security headers, complete new inventory vs
+sealed plan, old tree,545foreign/P1 records, protected RAW metadata and phase claims:
+**132 checks passed**. This verifies Builder receipts, not a new browser/remote run.
+POSTCHECKS23637/SHA`546c5ca9026eb0fb56c3986112ceccfb83880313be4efc3126b80dfaebd4ec18`;
+SERVING_EVIDENCE361759/SHA`8a3b4deeba7782ead4b0af0fabb10008614bb62e883ba30fd1903a5822ca1c78`.
+Own receipt `E:/R4D/perspective/p2-runtime/output/lead-freeze/p2-public05-SERVING-REVIEW-01.json`
+5355/SHA`6b7c88cd3bff739d31cd164a78139597fb06f8b8e6af0a1a4cad2f5f83da9e3e`.
+First local checker assertion assumed literal index.html URL; corrected to route
+root, no delivery defect. One private Lead diagnostic accidentally printed lock
+nonce; literal excluded from Git/public/report/receipt, subsequent reads whitelisted.
+
+CTO separately explicitly assigned **sequential actual PUBLIC05 TQA → VQA**.
+One actual TQA send `exec-e59b58f1-79cc-45af-bbbe-300002ba287b` completed312ms;
+new TQA turn `01a183ed-f333-7b90-96dd-037c97b1f292` inProgress. First completed
+action `exec-1df160bd-906d-4d2c-9032-7561f85653cc` exit0,19:13:24UTC: own clean74e4a77,
+current computer-use skill/4:2 resources/absent new output. Actual PUBLIC05 open
+`call_61d933d8d03d422c856a139992374a3f` and first read-only provenance/state diagnostic
+`call_57c982b11b3c42de8a3df888a8cd4715` completed. Scope only known paused94/95/96,
+200%/Fit+small viewport stability, physical/RNG/tick invariance, completion hint
+lifecycle and brief ordinary playback. No broad seed/physics/network/GPU/device matrix.
+VQA not yet sent; only after explicit own TQA surface release/viewport+visibility
+restoration, then short actual visual delta under the same CTO assignment.
+
+**Owned lock inode12 HELD, writers stopped. Docs/cleanup/window release CLOSED
+until further addressed CTO continuation, including after both QA reports.**
+No duplicate build/upload/switch/hotfix; no new source/config/art/clock/core changes.
+Actual05 black200 fix/visual verdict/Full Technical/Art/P2 closure remain unverified.
+Event waits with cursors replace active polling; no optional browser tests after release.
+
+## История: gate, execution dispatch и первый prewrite guard
 
 **FIRST FRESH PREWRITE GUARD PASS**: actual completed **`exec-24be25f1-3a73-4d7f-baf4-6f455725f016` exit0**, **18:58:44.633424–18:58:46.303693UTC**, до любого server write. Protected root/raw before+after/config/doc bytes/full563+81 inventories/owners/modes/HTTP/8targetabsence и C04/P1/currentmanifest согласованы, UTC/resource envelope не сравнивался с dated SHA. 47sealed/18archive/16frozen local pins verified исполнителем. Private `E:/R4D/perspective/p2-runtime/output/builder/p2-review-execution-05-final01-01/FIRST_GUARD.json`: **1018541bytes/SHA `a791c632d1133de939f9c2757bc031b6d62f7a1aa4cbf9cc54aa65941bd0af64`**; Root сверил local identity. Host free17.165GiB/CPU4%, aggregate18.992/31.907GiB; VPS MemAvailable5587718144bytes/shortCPU38%/disk30244782080bytes. Server writes0 именно на этом guard checkpoint; следующий lock/stage/switch ещё не принят Root как факт.
 

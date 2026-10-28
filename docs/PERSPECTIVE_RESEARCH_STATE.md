@@ -2,6 +2,29 @@
 
 ## Актуально после outage: PUBLIC Review и отдельный accepted-P1 static report
 
+**C05 PUBLIC served, focused actual QA assigned sequentially; docs/cleanup/window CLOSED.**
+Same Builder completed/clean serving commit `b8b87b8fb3a897d13123501caf39e4ebc9db07d5`:
+single switch19:02:30.622116UTC, all16HTTP200/bytes/SHA/MIME/headers first pass19:02:34.797534,
+6JS application/javascript;563files/81dirs/90775981bytes/treee0ed126b… planned exact,
+545foreign/P1all12/oldroot/configs/docs preserved. Lead fully read handoff and passed
+132 local receipt/inventory/frozen-byte checks; POSTCHECKS23637/SHA
+`546c5ca9026eb0fb56c3986112ceccfb83880313be4efc3126b80dfaebd4ec18`, own review5355/SHA
+`6b7c88cd3bff739d31cd164a78139597fb06f8b8e6af0a1a4cad2f5f83da9e3e`.
+This is receipt verification, not an independent actual browser PASS.
+
+CTO separately authorised focused actual PUBLIC05 TQA→VQA. One TQA send completed,
+new actual turn `01a183ed-f333-7b90-96dd-037c97b1f292` active, first completed action
+19:13:24UTC/clean74e4a77/resources4:2; actual own PUBLIC05 tab opened and read-only
+diagnostic started. VQA not sent until TQA explicitly releases own browser surface
+and restores viewport/visibility. Known paused94–96/200%/Fit, state invariance and hint
+lifecycle only; no full matrix/seed hunt/GPU or device expansion. Same inode12 lock
+HELD/writers stopped. **Docs/cleanup only on further CTO message, window release
+explicit CTO only**, even after QA. Frozen0367/intent05/C04 immutable; no new build,
+upload/switch/hotfix. Actual black200/FullTechnical/Art/P2 closure unverified.
+Full [C05 checkpoint and limitations](../experiments/p2-free-approach/LEAD_DELIVERY_05_CHECKPOINT.md).
+
+Ниже — история prewrite и предыдущих фаз; текущее состояние выше имеет приоритет.
+
 C05 execution FIRST FRESH PREWRITE GUARD прошёл18:58:44.633424–18:58:46.303693UTC, command `exec-24be25f1-3a73-4d7f-baf4-6f455725f016` completed/exit0. Raw configs/docs/currentroot/full563+81/HTTP/8absent targets exact;47sealed/18tar/16frozen pinned, protected bytes/records сравнивались отдельно от datedUTC/resource envelope. FIRST_GUARD1018541/SHA `a791c632d1133de939f9c2757bc031b6d62f7a1aa4cbf9cc54aa65941bd0af64`, Rootlocalhash checked. Hostfree17.165GiB/aggregate18.992;VPSavailable5587718144bytes/disk30.24GB,4/2 healthy. На guard serverwrites0; lock/stage/switch/actual05 Root ещё не подтверждал. Local private-operator SyntaxError исправлен до writes, ASTvalidationpassed, неpolicy/source/frozen дефект. Execution sameBuilder01a183dc… продолжается; после serving STOP docs/cleanup/QA до addressedCTO. [Подробный checkpoint](../experiments/p2-free-approach/LEAD_DELIVERY_05_CHECKPOINT.md).
 
 CTO выдал **новый exact conditional single-use C05 PUBLIC delivery gate18:49:42UTC**, P2 exclusive shared window; это не actual UI/black200/Art/P2 closure PASS. После fresh prep completed/idle/noexecution и local hashes Lead передал ровно один execution sameBuilder, send `exec-d634a6c6-b79f-4b76-a0a9-18d20e80c198` completed. Actual Builder turn `01a183dc-82ff-7813-aef3-fadf6dc3db35` inProgress; первое assigned действие `exec-dd2e6727-b4f1-4f41-b8b0-0a8d814f9a62` completed/exit0,18:54:20UTC cleanab250e1/ownprocesses[]/host free16.407GiB/CPU9%/диски>4. Full fresh RAW/resource/inventory/8target-absence guard ещё ожидается, server write/switch не подтверждены. Token literal privateonly, C04token closed, no source/frozen edits/QA. После serving+all16checks STOP с ownedlock перед docs/cleanup для addressed CTO actual PUBLIC05 QA; окно release только explicitCTO. [Текущий execution checkpoint](../experiments/p2-free-approach/LEAD_DELIVERY_05_CHECKPOINT.md).
