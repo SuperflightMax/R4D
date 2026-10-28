@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>P5 — заново сгенерированные элементы</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main>
+    <header><p class="eyebrow">R4D · P5 · рабочая сборка</p><h1>Заново сгенерированные элементы</h1><p id="notice" role="status">Загрузка…</p></header>
+    <section class="toolbar" aria-label="Управление броском">
+      <button id="new-run">Новый бросок</button>
+      <label>Seed <input id="seed" type="number" min="0" max="4294967295" value="0" step="1"></label>
+      <button id="replay">Повтор</button>
+      <button id="pause">Продолжить</button>
+      <button id="step-one">+1 тик</button>
+      <button id="step-ten">+10 тиков</button>
+      <button id="save">Сохранить повтор</button>
+    </section>
+    <section class="display-controls" aria-label="Вид сцены">
+      <label><input id="art" type="checkbox" checked> Арт</label>
+      <label><input id="geometry" type="checkbox" checked> Геометрия</label>
+      <label>Кадр <select id="framing"><option value="whole">Вся сцена</option><option value="floor">Игровое поле</option></select></label>
+      <span id="coverage"></span>
+    </section>
+    <div id="stage" aria-label="Игровая сцена PixiJS"></div>
+    <section class="timeline" aria-label="Физический тик">
+      <label for="tick">Тик <output id="tick-value">0</output></label>
+      <input id="tick" type="range" min="0" max="3200" value="0" step="1">
+      <output id="state"></output>
+    </section>
+    <details><summary>Данные проверки</summary><pre id="current-state"></pre><pre id="diagnostics"></pre></details>
+  </main>
+  <script type="module" src="app.js"></script>
+</body>
+</html>

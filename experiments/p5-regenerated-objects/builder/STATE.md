@@ -1,13 +1,31 @@
 # P5 Builder — состояние
 
-2026-10-28 22:25 UTC. Stage 2 адресно открыт Lead после опубликованного P4. Contract: `5ae51fa0342689cb0ad4b5b5d5681ddc16b60e81:experiments/p5-regenerated-objects/coordination/STAGE2.md`.
+2026-10-28 22:49 UTC. Stage 2 активен по адресному Lead contract `5ae51fa0342689cb0ad4b5b5d5681ddc16b60e81:experiments/p5-regenerated-objects/coordination/STAGE2.md`. Следующий переход — immutable early candidate c01 и передача Lead для двух независимых QA.
 
-Первый материальный результат: `contracts/ASSET_CONSUMER.md`, JSON schema/example, exact P1 inputs и вычисленная таблица `public/data/targets.json`. Пример проверен по структуре; это явно не реальные ассеты и не художественный результат. Четыре P1 файла побайтно сверены SHA256+bytes, исходный Jungle проверен read-only (671136 bytes). Exact native tree подтверждён; API Config/Sim/SimState прочитаны, запуск native ещё не заявляется.
+## Получено и сделано
 
-Resource guard 22:19:39 UTC: total/free RAM 31.907/16.595 GiB, CPU 1%, aggregate process working set 19.015 GiB (сумма не равна unique physical use), 431 processes; C/D/E free 17.133/16.282/12.203 GiB. Первый schema шаг peak <0.1 GiB RAM/<0.01 GiB E. Следующая локальная сборка ожидается <=1 GiB RAM/0.3 GiB E, плюс allowance другим процессам 4 GiB RAM/2 GiB E; перед ней свежий guard.
+- Schema/example + exact P1 targets опубликованы и pushed: `b327e5ff53190c9a356f350835390de2e77580ac`, `contracts/ASSET_CONSUMER.md` и соседние JSON. Четыре exact P1 файла и Jungle671136bytes проверены SHA256/bytes. Исходный JPG прочитан read-only и просмотрен.
+- Собственный PixiJS8.17.1 consumer + native controller. Exact Millionko commit/tree подтверждены; 27 runtime files/82713bytes материализованы Git bytes только в own private runtime. Core/physics/config/projection не правились. pause/step/seek/replay используют native state; штатный timeout на3200; collision event tick t привязан к state t+1.
+- Exact mini01 Artist: `5085be86d5b5e9bf22619254f42b95ad3dc1320e:experiments/p5-regenerated-objects/asset-artist/asset-manifest.mini-01.json`, 23553bytes, SHA256 `7b8935f4db6f9c20ec6fc2867e115dd787a2a93982f5ef4a5588810d8470e77f`. Handoff, manifest, BINDINGS и actual tool invocation prompts прочитаны. Все10PNG/13instances независимо сверены SHA/bytes/dimensions/alpha bounds/anchors.
+- В настоящем встроенном браузере уже собраны generated floor, flower-07/leaf-05/frog-05/wood-04 с тенями, ball/shadow, receiver-01 full/back+front. Coverage4/25pins и1/4receivers отображается явно. Не выполнено клонирование masters на отсутствующие targets.
+- Artifact staging сохраняет exact PNG bytes. Полный Artist provenance остаётся вне web root; публичный render manifest имеет отдельную schema и digest-связь с исходным. Explicit freeze whitelist исключает raw native TS/maps/private staging; release privacy approval ещё не получен.
 
-Найденные обычные зависимости в read-only native node_modules: PixiJS 8.17.1, esbuild 0.25.12, TypeScript 5.9.3, playwright-core 1.60.0; Pillow 12.1.1. Установка не выполнялась. Их точные package pins будут записаны при сборке. Отсутствие корневого .gitignore — обычное отсутствие файла, не denial.
+## Фактическая самопроверка
 
-Lead передал ранний floor raw candidate Artist: runtime asset-artist/raw/floor-v1.png, SHA256 24a54990c4876fc809af3efd42a711a8a47fefeef51caf3b88608017cbce6e06, 3079122 bytes. Ещё не проверен Builder, не принят как final. Следующий шаг — проверить exact floor и материализовать private native из exact Git bytes в own runtime; собрать собственный Pixi consumer, не ожидая полного набора. Native state/RNG/физика/P1 не изменяются.
+В floor-only app `607fdb55e2d36acd9100c2b82213027fd00ac4880564debc65c0143b0d55c339` через UI подтверждены +1tick, state95/96, обратный seek95 с точным совпадением native JSON, неизменность state/RNG при Art/Geometry/framing. Первый обычный New throw seed1696420279 наблюдался без отбора и завершился receiver-01/tick875. Default seed0 завершился receiver-03/tick1956.
 
-Server writes 0. Release gate закрыт. Другие чаты, worktree и модели не изменялись. P2–P4/P6 не читались. Ни independent QA PASS, ни готовая сцена не заявлены.
+В mini01 app `39d0cc5cdc8e869df975f008057c3c408ed3e41ce40bdd870dd0f001f19f1f44` observed seed1696420279 повторён в actual browser realtime и снова дал exact native terminal875. Сохранены actual screenshots контакта flower-07/state835 и receiver01/states874/875. Numeric finish не объявляется художественно убедительным входом: sphere в этом кадре близка к дальнему ободу; registration/front layer должны отдельно оценить VQA/Artist.
+
+Для сохранения двух уже наблюдавшихся seeds использован exact consumer controller, без нового поиска seeds и без повтора четырёхseed source-oracle matrix. `evidence/c01-replays/index.json` SHA256 `aca3ca025c5aee9a0fdf7069035ce376207029c38b99f48f0611e650b7a93c4b`,5430bytes. Seed0 trace совпал с TQA hash `971c4b1c96f9e8aa271161fe31025cb776d7ad830dae5758cb54e01c77c8a572`; covered frog-05 event1715/state1716. Seed1696420279: flower-07 event834/state835, receiver01 tick875. Это preservation/integration, не независимый QA PASS.
+
+Body footprint depth residuals after uniform scale: flower+3.123736, leaf+1.092168, frog-0.958852, wood+0.016809 source px. Shadow footprints также выведены отдельно; shape cast shadow не выдаётся за collision footprint. Нет XY warp, hidden instance offsets или переноса native geometry.
+
+## Ресурсы и границы
+
+Fresh guard22:43:23UTC: free RAM16.305/31.907GiB; CPU system5%, aggregate normalized6.75%; aggregate working set19.468GiB (shared pages могут учитываться повторно),444processes; C16.967/D16.282/E12.170GiB. Оценка своего peak1.2GiB RAM/0.2GiB E плюс concurrent allowance4GiB RAM/2GiB E соблюдена. TEMP/TMP/cache/output только own E/process-local. Установки/глобальных env/settings изменений нет.
+
+Own dev preview до freeze: PID22076, exec session80690, URL http://127.0.0.1:55185/, root `E:/R4D/perspective/p5-runtime/builder/site`. Порт проверен свободным до запуска. При handoff будет заменён только собственный listener на immutable c01 root с новым ownership pin. UI service C: stub как checkout не использовался.
+
+Остаются21pins/3receivers, far-view variants, side-rail/near-platform occluders, самостоятельная оценка теней/partial occlusion и обе независимые QA. Installed @pixi/colord2.9.6 объявляет MIT, но package не содержит license file: нужно завершить license packaging до release; это не runtime blocker. Timeout-ветка и UI download сохранения ещё не испытаны отдельным сценарием. Корневой .gitignore отсутствует — ordinary file absence, не denial. Denial не было.
+
+Server release writes0; gate закрыт. Другие чаты/worktree/processes/devices, модели и source checkout не менялись. P2–P4/P6 не читались. Полный P5, artistic/technical PASS и delivery не заявлены.

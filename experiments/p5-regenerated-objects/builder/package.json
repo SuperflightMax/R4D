@@ -4,6 +4,8 @@
   "type": "module",
   "scripts": {
     "prepare:inputs": "node scripts/prepare-inputs.mjs",
-    "verify:assets": "node scripts/verify-assets.mjs"
+    "verify:assets": "node scripts/verify-assets.mjs",
+    "prepare:native": "node scripts/prepare-native.mjs",
+    "build": "node scripts/build.mjs"
   }
 }
