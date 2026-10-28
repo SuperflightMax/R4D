@@ -2,7 +2,30 @@
 
 staff_id `builder-r4d-p2-free-01`; branch `codex/r4d-p2-free-builder-01`; исходный HEAD `df760b680f0d0264342fc8577fcc5779b80a3a15`. Рабочая копия только `E:/R4D/perspective/p2-worktrees/builder`.
 
-## Current C05 — narrow UI source/freeze, awaiting independent limited review
+## Current C05 — immutable LOCAL intent05, STOP for Root/CTO review
+
+Status **LOCAL_INTENT05_SEALED_AWAIT_ROOT_CTO_NEW_EXACT_TOKEN**.
+Actual preparation turn `01a183b4-71fd-7b22-8f57-e6da57231b5f`; initial clean
+`3c4ecc72fc436df6252412a34721345c5dc30064`. Independent bounded static/source/model
+TQA completed at74e4a77, Lead926f431; actual PUBLIC05 still unverified.
+Frozen/build/source0367d462 unchanged; preparation helper02aff92 is a separate pin.
+
+Exactly one LOCAL packet exists at
+`E:/R4D/perspective/p2-runtime/output/p2-review-release-intent-05-final-01`:
+48files/8906816bytes; delta archive18regular leaves. Fresh coherent PUBLIC read
+18:20:48–18:20:49UTC still rootcandidate04,563files/81dirs/90775084bytes.
+Planned563files/81dirs/90775981bytes;545foreign files/73foreign dirs and P1all12
+preserved exactly; one P2card only, all3numeric spans and count4 unchanged.
+
+Intent SHA c1d7b3c5ed447da8ae07cacde8e53fe542ce5369da1d1587ec284a014092c993;
+sealed SHA57a02a6b587756aa34c45190806c6078aa0c34b6d2d84692e919c94b7b8b79d9.
+Full pins/resources/ordinary local selector failure + owned recovery and strict
+all-counter supplement: [RELEASE_INTENT_05_LOCAL.md](RELEASE_INTENT_05_LOCAL.md).
+Packet immutable; no overwrite/new target/number02. **server_writes=0**; no new token,
+lock/upload/stage/reload/docs/browser/QA/physics/build. STOP after local handoff;
+execution requires separate exact CTO gate and fresh RAW guards before even lock.
+
+## История C05 — narrow UI source/freeze checkpoint
 
 CTO разрешил один C05 source+freeze проход по zoom200 и completion hint.
 Actual turn `01a18393-6d58-7001-8b25-a45c2fbfff86`, initial clean2cf9b65.
