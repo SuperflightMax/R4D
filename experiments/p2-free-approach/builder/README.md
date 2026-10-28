@@ -4,6 +4,8 @@
 
 ## Текущая статическая сборка P2
 
+**Delivery04 сейчас на serialization hold:** CTO window/token выдан P3,04token/serverwrite=false. Уже запущенный local packet сохранён как [obsolete03 draft](RELEASE_DRAFT_04_SERIALIZATION_HOLD_01.md), не ready/token request; raw files не перезаписаны. Frozen04 и actual TQA df309… сохраняются. До адресного explicit CTO P3-token release черезLead никаких новых baseline probes/упаковок/серверных действий; после него нужен новый coherent baseline и fresh новый intent outputID. Это не продуктовая пауза и не требует нового Max resume.
+
 Для будущей доставки04 выполнен только [read-only preflight04-01](REVIEW_PREFLIGHT_04_01.md): coherent06:33UTC snapshot установил actual live03/all472filehashes/modes и absent04targets; draftP2card+39bytes/root-onlyinverse проверены в памяти. Финальные release intent/manifest/archive не готовились, token/serverwrites0. Sharedbaseline может измениться; после actualTQA нужны новое адресное final-local поручение и свежиеguards.
 
 После явного resume Max [diagnosis/plan01](ANDROID_LAYOUT_AND_PLAYBACK_PLAN_01.md) и [playback source01](PLAYBACK_SOURCE_01.md) прошли review Lead. По отдельному build gate заморожен локальный [candidate04](STATIC_CANDIDATE_04.md):actualbuildHEAD08f9b9eaa6aa1063eb7fcd9cf373ddacf907725a/implementation0a80…,16files/2452021bytes/tree60d216a64c86fed4b83f4ed3802e3d1393cdda2db8776818d22710173dc2ffed.6.js modules,0.25×default/0.5×/1×, fractional clock иhistory; ownstatic/emittedboundarychecks passed, independentTQA pending.04 пока не опубликован; published03/frozenbytes сохранены. UI/DOM/WebGL/mobile/MIME unverified, touch/size/occlusion не исправлялись. Новый release intent/gate/token не выдан.
