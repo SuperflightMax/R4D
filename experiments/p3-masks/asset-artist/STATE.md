@@ -27,11 +27,31 @@ shadow alpha>=8 bbox [71,455,1180,800]. Слабые alpha выбросы raw с
 crop без изменения source scale. Тени не включены намеренно; точность контура
 ещё требует визуальной проверки на реальных тиках.
 
-Пока нет просмотра реального частичного перекрытия в собранном P3 и нет PASS.
-Риск: scalar depth pin.y против передней footprint-дуги при боковых контактах.
-Не готовить всю сцену до раннего стыка. Следующий шаг: Builder подключает
-exact пакет; затем проверяем соседние реальные тики и полезно корректируем.
+Первый реальный стык подтверждён Builder и Lead: checkpoint02 source
+`b1d74c00ec33ed71147718243b6f0f6ae89c8b72`, native seed0 leaf-01 partial60,
+contact94/95, rebound150. Artist просмотрел три сохранённых Pixi кадра из
+`E:\R4D\perspective\p3-runtime\builder\evidence-02`. Собственный art-only
+контакт-лист из actual trace не выдаётся за Pixi/независимую QA.
+
+Полный подготовленный пакет: 51 masks = 25 pins + 6 боковых участков +
+3 дальних спуска + 1 front fascia + 16 basket-front strips. Все координаты
+source-aligned, source/config неизменны. Basket-front depth lines получены
+из наблюдаемой передней кромки принятой inverse projection; не из нового
+физического основания. Pixel contours/sourceBounds в regions.json;
+точный consumer package assets.json, hashes.json. Весь payload ~1.82 MB.
+
+Проверены размеры/white RGB/alpha/hash integrity, все 25 exact pin depths,
+пять точек исключения baked shadows и четыре пары hole/front-rim корзин.
+Полный динамический/художественный PASS пока отсутствует. Риск: scalar pin
+depth на боковых контактах; точность мелких ручных контуров/листвы/бортов.
+Builder назвал полезные обычные run contacts: seed0 frog-02/441, wood-01/571,
+flower-02/890/956/1009; сохранённые random — wood-06/604/615.
+Следующий шаг: подключить exact полный пакет, проверить эти реальные тики
+и вернуть Artist конкретные дефекты. Арт не объявляется принятой сценой.
 
 Ресурсы перед shadow-generation: RAM free4.519GiB, CPU37%, C7.793/D16.306/
 E33.343GiB. Одновременно с P2/Millionko; новый локальный пик <0.5GiB RAM,
 <0.1GiB files. Тяжёлый runtime только E:\R4D\perspective\p3-runtime\asset-artist.
+
+Свежий замер перед финальным overlay: UTC00:18:20, RAM free10.146/31.907GiB,
+CPU1%, C7.727/D16.305/E31.544GiB. Локальные маски/пробы добавляют <0.5GiB RAM.

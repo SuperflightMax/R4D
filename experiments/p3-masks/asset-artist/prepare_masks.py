@@ -63,12 +63,14 @@ def main():
         'occluders':occluders
     }
     (ROOT / 'assets.json').write_text(json.dumps(contract,indent=2)+'\n',encoding='utf8')
-    paths = [ROOT/'assets.json',ROOT/'regions.json',ROOT/'prepare_masks.py',
+    paths = [ROOT/'assets.json',ROOT/'regions.json',ROOT/'boundary_regions.json',
+             ROOT/'prepare_masks.py',ROOT/'extend_regions.py',ROOT/'author_boundaries.py',
              *sorted((ROOT/'assets').glob('*.png')),*sorted(masks.glob('*.png'))]
     hashes = {p.relative_to(ROOT).as_posix():{'bytes':p.stat().st_size,
               'sha256':hashlib.sha256(p.read_bytes()).hexdigest()} for p in paths}
     (ROOT / 'hashes.json').write_text(json.dumps(hashes,indent=2)+'\n',encoding='utf8')
-    print(json.dumps({'occluders':len(occluders),'paths':hashes},indent=2))
+    print(json.dumps({'occluders':len(occluders),'assetsSha256':hashes['assets.json']['sha256'],
+                      'files':len(hashes),'totalBytes':sum(p['bytes'] for p in hashes.values())}))
 
 if __name__ == '__main__':
     main()
