@@ -1,4 +1,4 @@
-import {createSimRunSession,stepSimRunSession,timeoutSimRunSession} from './native-core.mjs';
+import {createSimRunSession,stepSimRunSession,timeoutSimRunSession} from './native-core.js';
 
 export const CORE_COMMIT='5a6fa03f1cdb3de88a2d9c7dbe795eb8e2a7f023';
 export const P1_COMMIT='4b47db04c7140ebf88f69b91faa0b790d46f22ec';

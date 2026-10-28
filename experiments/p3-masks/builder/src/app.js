@@ -1,6 +1,6 @@
-import * as PIXI from './vendor/pixi.mjs';
-import {transform,boundsOf,contain} from './view-math.mjs';
-import {makeRun,checkpoint,importCheckpoint,uintSeed} from './run-model.mjs';
+import * as PIXI from './vendor/pixi.js';
+import {transform,boundsOf,contain} from './view-math.js';
+import {makeRun,checkpoint,importCheckpoint,uintSeed} from './run-model.js';
 
 const $=id=>document.getElementById(id);
 const json=async url=>{const response=await fetch(url);if(!response.ok)throw Error(`${url}: HTTP ${response.status}`);return response.json();};
