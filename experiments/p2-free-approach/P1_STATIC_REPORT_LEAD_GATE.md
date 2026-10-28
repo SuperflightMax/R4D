@@ -6,7 +6,15 @@
 
 Основание: Max28октября12:38UTC, `Sentinel_9809efe64b3881918b49cd3b4c1237a8`, через CTO. Публикуется статический отчёт accepted P1 exact `4b47db04c7140ebf88f69b91faa0b790d46f22ec`, subtree `experiments/p1-collider-mapping/clean-repeat-01/`. P1 не перезапускается; это не третий research slot. P2 frozen04/df309 сохраняются без rebuild/reQA.
 
-## Actual delivery: serving проверен, ожидаются PUBLIC VQA и документы
+## Actual PUBLIC VQA завершён; выполняется только docs/lock completion
+
+VQA actual turn01a18313-2339-7113-93ab-3dffc35ee86b completed, report original `b7a24e1882aceca035af01981d460685b963aece`/Lead09d5afb: [PUBLIC view](qa/visual/P1_STATIC_REPORT_PUBLIC_VIEW_01.md), BOUNDED_PUBLIC_RENDER_PASS_WITH_NOTES. Desktop1280×720/narrow390×844 фактически просмотрены, CSS/10inlineJPG/captions/10fullJPG/backlinks/P1card/count4 наблюдены, persistent pageoverflow/обрезки в measuredstates не обнаружены. Lead полностью прочитал report, посмотрел actualdesktop intro/mobileintro/stationaryJungle screenshots и сверил JSON181811bytes SHA `a52d60a8110b101acf5f273a607396daaf86ce8b0c63e858602ca505a99fb61a`. CTO и DotMax отдельно подтвердили этот bounded verdict и существующее разрешение завершения.
+
+Notes сохраняются без hotfix: «слева/справа» неточно при verticalmobilepairs, captionsясны; physicalAndroid/другиеengines/physics/Art/universalPASS не заявлены. Один rawmobileframe blankarea не воспроизвёлся stationaryнаsame scrollY5908, оба кадра сохранены, причина неизвестна. Supplemental fullPage capture вернул только Unable to capture screenshot, policyreasonнеустановлен, не повторялся/не заменялся; actual28viewport/JPGscreenshots существуют. NewPUBLICpolicydenialнет; viewportreset finalactual1280×720/ownTabclosed/VQAclean.
+
+Перед docs continuation freshreadBuilderlatest01a18313-d8e6-7db0-912b-d3b4c3ff810a completed подтвердил AWAIT_ROOT_VQA_DOCS_PENDING_LOCK_HELD, VQAresult ещё не получен и DOCS_RESULT отсутствует. Первый Root orchestration JS не распарсился до любого send/инструмента; после повторной проверки сделан ровно один рабочий successful send с VQAreport. Он разрешает только phase-aware ownstate/locknonce/inode/live-root/config/docs guards, private renderreceipt, bound append-onlyservice+CHANGELOG, finalchecks и cleanup matchingownedlock/temp. Никаких повторныхupload/switch/reload/rollback/hotfix/rebuild/newtoken. Token/windowпо-прежнемуheldдоexplicitCTOrelease. Actualfinaldocs/lock/writersidle ещё ожидаются.
+
+## История: serving проверен, PUBLIC VQA назначен
 
 Builder actual switch15:08:16.715563UTC; after-snippet SHA289c2de9aa8c535a7755d94d4e69b4368ae82ea154c148449eec9d98467e2bd8. Первая JPG HTTP status/bytes проверка сразу послеreload не прошла (exec-ce4864df-b232-483d-a7d1-5026241a056d exit1/AssertionError); операция остановлена, повторныхupload/switch/hotfix нет. Причина этого первого ответа не доказана и не объявляется race. Неудачный факт сохранён в private operational evidence.
 
