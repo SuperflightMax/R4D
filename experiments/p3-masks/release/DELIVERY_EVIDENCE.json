@@ -1,0 +1,249 @@
+{
+  "token": "CTO-P3-F01-20261028T064706Z-ddfe257b6856",
+  "serverWritesComplete": true,
+  "ctowindowReleasedByEngineer": false,
+  "begin": {
+    "token": "CTO-P3-F01-20261028T064706Z-ddfe257b6856",
+    "status": "BACKUP_CREATED",
+    "backupUtc": "2026-10-28T07:06:22.133763+00:00",
+    "beforeGuard": {
+      "utc": "2026-10-28T07:06:21.796919+00:00",
+      "root": "/srv/superflight-review/releases/p2-jungle-static-candidate-03",
+      "snippetSha256": "d8cf0b3cd5a56241dc86562705daab81da09c648ad1aba8adcf232be2eb23104",
+      "manifestSha256": "171a889a53da529d2a668da9811b3f6a9661cdc52ab54a46e254900553cfed35",
+      "inventory": {
+        "files": 473,
+        "browserFiles": 472,
+        "browserBytes": 85200941,
+        "directories": 71,
+        "manifestSha256": "171a889a53da529d2a668da9811b3f6a9661cdc52ab54a46e254900553cfed35",
+        "ownership": "root:root",
+        "dirsMode": "0755",
+        "filesMode": "0644"
+      },
+      "resources": {
+        "utc": "2026-10-28T07:06:21.797219+00:00",
+        "memBytes": {
+          "MemTotal": 11575050240,
+          "MemAvailable": 5077737472
+        },
+        "loadAverage": [
+          0.62255859375,
+          0.72412109375,
+          0.76611328125
+        ],
+        "cpuCount": 4,
+        "diskFreeBytes": 30630899712
+      }
+    },
+    "beforeHttp": [
+      {
+        "path": "/review/",
+        "status": 303,
+        "headers": {
+          "Location": "https://superflight.space/login?next=review",
+          "X-Frame-Options": null,
+          "Cache-Control": null,
+          "X-Robots-Tag": null,
+          "X-Content-Type-Options": null,
+          "Referrer-Policy": null,
+          "Content-Type": "text/html"
+        },
+        "foreignOrigin": false
+      },
+      {
+        "path": "/review/",
+        "status": 403,
+        "headers": {
+          "Location": null,
+          "X-Frame-Options": "DENY",
+          "Cache-Control": "no-store",
+          "X-Robots-Tag": "noindex, nofollow, noarchive",
+          "X-Content-Type-Options": "nosniff",
+          "Referrer-Policy": "same-origin",
+          "Content-Type": "text/html"
+        },
+        "foreignOrigin": true
+      },
+      {
+        "path": "/review/.r4d-p3-probe",
+        "status": 404,
+        "headers": {
+          "Location": null,
+          "X-Frame-Options": "DENY",
+          "Cache-Control": "no-store",
+          "X-Robots-Tag": "noindex, nofollow, noarchive",
+          "X-Content-Type-Options": "nosniff",
+          "Referrer-Policy": "same-origin",
+          "Content-Type": "text/html"
+        },
+        "foreignOrigin": false
+      }
+    ],
+    "archiveSha256": "23a3df76a29b05d8cc7ea17ff1cf0e9e360848a540f15386d26e1a85998f463c",
+    "manifestSha256": "381ff209d36f24c1734e2f2012d0b298cb13efd37e928956ceaf00ab967c2937",
+    "newRoot": "/srv/superflight-review/releases/p3-jungle-masks-frozen-01",
+    "expectedSnippetSha256": "c67b27e4b179dfe3cb803268435b7558b0c48b8ea8b1018ec709149511be1ba8"
+  },
+  "upload": {
+    "status": "ARCHIVE_UPLOADED",
+    "utc": "2026-10-28T07:25:42.609869+00:00",
+    "archiveSha256": "23a3df76a29b05d8cc7ea17ff1cf0e9e360848a540f15386d26e1a85998f463c",
+    "bytes": 80568959
+  },
+  "stage": {
+    "status": "STAGED_VERIFIED",
+    "utc": "2026-10-28T07:27:20.466520+00:00",
+    "inventory": {
+      "files": 550,
+      "browserFiles": 549,
+      "browserBytes": 88602877,
+      "directories": 79,
+      "manifestSha256": "381ff209d36f24c1734e2f2012d0b298cb13efd37e928956ceaf00ab967c2937",
+      "ownership": "root:root",
+      "dirsMode": "0755",
+      "filesMode": "0644"
+    },
+    "unchangedOldBrowserFiles": 471
+  },
+  "switch": {
+    "status": "PUBLISHED_PENDING_POSTCHECKS",
+    "switchUtc": "2026-10-28T07:28:49.094847+00:00",
+    "root": "/srv/superflight-review/releases/p3-jungle-masks-frozen-01",
+    "snippetSha256": "c67b27e4b179dfe3cb803268435b7558b0c48b8ea8b1018ec709149511be1ba8",
+    "nginxTestBeforeAfter": "passed",
+    "reload": "graceful",
+    "rollbackSnapshotRefreshedUtc": "2026-10-28T07:28:49.037213+00:00"
+  },
+  "postcheck": {
+    "utc": "2026-10-28T07:30:23.939952+00:00",
+    "inventory": {
+      "files": 550,
+      "browserFiles": 549,
+      "browserBytes": 88602877,
+      "directories": 79,
+      "manifestSha256": "381ff209d36f24c1734e2f2012d0b298cb13efd37e928956ceaf00ab967c2937",
+      "ownership": "root:root",
+      "dirsMode": "0755",
+      "filesMode": "0644"
+    },
+    "oldInventoryReverified": {
+      "files": 473,
+      "browserFiles": 472,
+      "browserBytes": 85200941,
+      "directories": 71,
+      "manifestSha256": "171a889a53da529d2a668da9811b3f6a9661cdc52ab54a46e254900553cfed35",
+      "ownership": "root:root",
+      "dirsMode": "0755",
+      "filesMode": "0644"
+    },
+    "httpChecks": 81,
+    "auth303Count": 79,
+    "oldRouteAuth303Count": 0,
+    "foreignOrigin403": true,
+    "dotfile404": true,
+    "protectionHeadersIdentical": true,
+    "publicJsMimeBodyVerified": false,
+    "postAuthUiVerified": false,
+    "limitation": "Unauthenticated requests redirect to existing login; not proof of JS MIME/body/UI.",
+    "resources": {
+      "utc": "2026-10-28T07:30:23.940863+00:00",
+      "memBytes": {
+        "MemTotal": 11575050240,
+        "MemAvailable": 5324664832
+      },
+      "loadAverage": [
+        1.068359375,
+        1.0732421875,
+        0.9462890625
+      ],
+      "cpuCount": 4,
+      "diskFreeBytes": 30464966656
+    }
+  },
+  "oldroutes": {
+    "utc": "2026-10-28T07:32:01.023676+00:00",
+    "oldRouteAuth303Count": 14,
+    "httpChecks": 95,
+    "auth303Count": 93,
+    "protectionHeadersIdentical": true,
+    "newPayloadChecksRepeated": false,
+    "productChanged": false
+  },
+  "document": {
+    "status": "PUBLISHED_DELIVERY_VERIFIED_WITH_AUTH_LIMITATION",
+    "switchUtc": "2026-10-28T07:28:49.094847+00:00",
+    "documentedUtc": "2026-10-28T07:34:21.668330+00:00",
+    "docs": [
+      {
+        "path": "/home/sf/assistant-context/vps/services/superflight-studio.md",
+        "sha256": "f0fcd3a137ea8eee3006952764c45f322b38f68e62a7b9affe2ea8ebfdf96c59"
+      },
+      {
+        "path": "/home/sf/assistant-context/vps/CHANGELOG.md",
+        "sha256": "f7af707f9d0228371b7fc0fb93d4b65e61efc1dd489df527a1e4da111e08dd30"
+      }
+    ],
+    "backup": "/opt/superflight-studio/backups/review-p3-frozen-01",
+    "publishedRecordSha256": "1fcb590f6248f1aff30e992f5c3f4c637464902ff6fed20ddd647d9e156a4930",
+    "stateRecordSha256": "1fcb590f6248f1aff30e992f5c3f4c637464902ff6fed20ddd647d9e156a4930",
+    "beforeSnapshotSha256": "d8cf0b3cd5a56241dc86562705daab81da09c648ad1aba8adcf232be2eb23104",
+    "ctowindowReleasedByEngineer": false
+  },
+  "host-resources-before-write": {
+    "utc": "2026-10-28T07:05:52.5051174Z",
+    "ramTotalGiB": 31.907,
+    "ramFreeGiB": 10.843,
+    "cpuLoadPercent": [
+      9
+    ],
+    "disks": [
+      {
+        "DeviceID": "C:",
+        "freeGiB": 8.238
+      },
+      {
+        "DeviceID": "D:",
+        "freeGiB": 16.322
+      },
+      {
+        "DeviceID": "E:",
+        "freeGiB": 33.267
+      }
+    ],
+    "estimatedAdditionalPeakGiB": 0.5,
+    "estimatedAdditionalDiskGiB": 0.2
+  },
+  "host-resources-before-stage": {
+    "utc": "2026-10-28T07:26:48.3931601Z",
+    "ramTotalGiB": 31.907,
+    "ramFreeGiB": 10.715,
+    "cpuLoadPercent": [
+      5
+    ],
+    "disks": [
+      {
+        "DeviceID": "C:",
+        "freeGiB": 8.229
+      },
+      {
+        "DeviceID": "D:",
+        "freeGiB": 16.322
+      },
+      {
+        "DeviceID": "E:",
+        "freeGiB": 30.488
+      }
+    ],
+    "estimatedAdditionalPeakGiB": 0.5
+  },
+  "browser": {
+    "method": "Existing IAB",
+    "result": "Ordinary login, no post-auth session",
+    "ownTab1Closed": true,
+    "credentialsOrCookiesRead": false,
+    "loginPerformed": false,
+    "publicJsMimeBodyVerified": false,
+    "publicAuthenticatedUiVerified": false
+  }
+}
