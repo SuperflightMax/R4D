@@ -1,6 +1,6 @@
 # P2 Jungle — частичный исследовательский результат
 
-28 октября 2026. **PARTIAL_RESEARCH_RESULT**, итог существующей попытки для review CTO. [Опубликованный C05](https://superflight.space/review/r4d/p2-free-approach/) сохранён. Limited delivery, actual QA и docs приняты; полного Technical/Art PASS нет. Серверное окно освобождено CTO в **20:02:14 UTC / 22:02:14 Europe/Kyiv**. Исследовательский slot ожидает отдельного release после review этого текста.
+28 октября 2026. **COMPLETED BOUNDED PARTIAL RESEARCH RESULT**, принят CTO после review exact `ac2a01abf30a8ad19a50407a08ee91545d449074`. [Опубликованный C05](https://superflight.space/review/r4d/p2-free-approach/) сохранён. Limited delivery, actual QA и docs приняты; полного Technical/Art PASS и достижения художественной цели не заявлено. Серверное окно освобождено CTO в **20:02:14 UTC / 22:02:14 Europe/Kyiv**, исследовательский slot P2 — explicit CTO release в **20:18:34 UTC / 22:18:34 Europe/Kyiv**.
 
 ## Способ и реальное производство
 
@@ -51,4 +51,4 @@ Package-only проверка не запускает физику/Pixi. Пол�
 
 Получены собственный производственный маршрут ассетов, работающая Pixi/native интеграция, точные replay/QA pins и опубликованный ограниченный пример. Полнота перекрытий и обязательное художественное качество не доказаны; технические/model/HTTP факты этого не заменяют. CTO завершил текущую попытку частичным результатом: candidate06, дальнейшая дорисовка, новые тесты и device/SDK поиск не назначены. C04/C05 и raw failures сохраняются.
 
-Серверная доставка/docs/cleanup приняты, token закрыт и окно released20:02:14UTC; дальнейших server actions по нему нет. По read-only статусу20:07UTC Builder856b807/TQA94e125/VQA4b9aa770 — completed/idle, Artistbf961453 — completed/notLoaded; все четыре worktree чистые. Новых поручений команде нет, оставшейся разрешённой production-работы **0**. Итог передаётся CTO для review; research slot самостоятельно не освобождаем. [Полная история, receipts и операционное завершение](LEAD_DELIVERY_05_CHECKPOINT.md).
+Серверная доставка/docs/cleanup приняты, token закрыт и окно released20:02:14UTC; дальнейших server actions по нему нет. По read-only статусу20:07UTC Builder856b807/TQA94e125/VQA4b9aa770 — completed/idle, Artistbf961453 — completed/notLoaded; все четыре worktree чистые. Новых поручений команде нет, оставшейся разрешённой production-работы **0**. CTO принял итог и explicit освободил research slot P2 в20:18:34UTC. Эта последняя административная фиксация сохраняет partial и все ограничения; работа остановлена. [Полная история, receipts и операционное завершение](LEAD_DELIVERY_05_CHECKPOINT.md).

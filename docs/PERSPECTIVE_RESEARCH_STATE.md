@@ -1,6 +1,12 @@
 # Состояние исследования перспективных досок
 
-## P2: частичный итог для review CTO; серверное окно освобождено
+## P2: completed bounded partial принят; research slot освобождён CTO
+
+**CTO EXPLICIT P2 RESEARCH SLOT RELEASE28октября20:18:34UTC /22:18:34Europe/Kyiv.**
+RESULT.md exact`ac2a01abf30a8ad19a50407a08ee91545d449074` полностью прочитан и hash/diff/
+clean checkout проверены CTO. Принят **COMPLETED BOUNDED PARTIAL RESEARCH RESULT**,
+без FullArt/Technical/goal success. Доставка/limitedQA/docs/cleanup/итог завершены;
+оставшаяся разрешённая production0, C04/C05/raw failures и ограничения сохранены.
 
 CTO принял limited delivery/actual QA/docs C05 и **explicitly CLOSED delivery token /
 RELEASED shared server-write window28октября20:02:14UTC (22:02:14Europe/Kyiv)**.
@@ -14,8 +20,8 @@ narrow/Android/download/visibility limits честно отражены. Candida
 новых tests/build/browser/server/SDK/device действий и новых поручений ролям нет.
 Read-only20:07UTC Builder/TQA/VQA completed/idle, Artist completed/notLoaded;
 все4worktrees clean. Оставшаяся разрешённая production-работа0. Lead выполняет только
-итоговый report/state handoff; **research SLOT P2 ждёт review синтеза и отдельного
-explicit CTO release**, самостоятельно не освобождён. Другие команды Lead не будит.
+последнюю административную фиксацию release и report/state handoff, затем STOP;
+**research SLOT P2 explicit освобождён CTO20:18:34UTC**. Другие команды Lead не будит.
 
 Ниже — сохранённая операционная история; текущий P2 итог находится выше.
 

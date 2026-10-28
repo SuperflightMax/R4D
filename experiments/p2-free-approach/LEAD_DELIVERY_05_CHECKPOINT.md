@@ -1,6 +1,13 @@
 # P2 candidate05 — малая разрешённая UI-итерация
 
-## Текущее состояние: CTO принял delivery, token CLOSED/window RELEASED; P2 PARTIAL
+## Текущее состояние: completed bounded partial принят, research SLOT RELEASED, STOP
+
+CTO explicit P2 research SLOT RELEASE **2026-10-28T20:18:34UTC /22:18:34Europe/Kyiv**
+после полного review exact RESULT.md `ac2a01abf30a8ad19a50407a08ee91545d449074`,
+SHA`63aab5d90165c7a2106780f1504caaea6c51ffdcb4544113c604e32d6cd78457`,3-file diff
+и clean checkout. Принят **COMPLETED BOUNDED PARTIAL RESEARCH RESULT**, без FullArt/
+Technical/goal success. Slot освобождён CTO, production remaining0. Эта правка —
+только административная фиксация release, без новой итерации/задач ролям/запусков.
 
 CTO explicit release **2026-10-28T20:02:14UTC /22:02:14Europe/Kyiv**: C05 delivery
 token CLOSED, shared server-write window RELEASED после его own exact finalhandoff/
@@ -11,13 +18,14 @@ CTO завершил текущую bounded попытку **PARTIAL_RESEARCH_RE
 Technical success. Published C05 сохраняется, C04/C05/raw evidence неизменны;
 candidate06/Artist fix/physics/device/SDK hunt/newtests не назначены. Lead подготовил
 единственный [краткий итог и воспроизводимый рецепт](RESULT.md) по собственной P2
-истории, без чужих методов и без новых production actions. Синтез предназначен для
-review CTO; **P2 research SLOT остаётся до отдельного explicit CTO release**.
+истории, без чужих методов и без новых production actions. Синтез принят CTO;
+**research SLOT P2 explicit освобождён20:18:34UTC**, все ограничения partial сохранены.
 
 Read-only status20:07UTC: Builder856b807/TQA94e125/VQA4b9aa770 completed/idle;
 Artistbf961453 completed/notLoaded; все4worktrees clean. Новых задач/пробуждений не
-было; оставшаяся разрешённая production-работа0. Текущая работа Lead — только
-report/state commit/push и handoff CTO, без новых tests/build/browser/server calls.
+было; оставшаяся разрешённая production-работа0. Последняя работа Lead — только
+административный report/state commit/push и handoff CTO, затем STOP. Новых tests/
+build/browser/server/cleanup и пробуждений команды нет.
 
 ## История: delivery/docs complete до explicit CTO release окна
 
