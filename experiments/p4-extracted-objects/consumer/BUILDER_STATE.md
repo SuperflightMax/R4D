@@ -26,7 +26,13 @@ UI самопроверка во встроенной изолированной
 +N(10) = tick11/0.055s; seek145 = 0.725s. Art-off, geometry toggle,
 source/native и zoom не изменили paused state/PRNG. Random дал seed2709884210,
 запуск двигался. Сохранены source/native PNG в runtime/evidence.
-UI file-flow export/import остаётся непроверенным; native roundtrip прошёл.
+UI-импорт ordinary-03 через реальный file chooser проверен: seed1842222754,
+tick2421, IN_BUCKET receiver-02; показано «Checkpoint точно воспроизведён».
+Screenshot и AX state сохранены в runtime/evidence. Native roundtrip прошёл;
+браузерное скачивание экспорта отдельно не проверено.
+
+Первый кодовый commit: `569e48d63c84f1f9facba7324152a3f3356b1c68`, push выполнен.
+Сервер остаётся для стыковки, владелец Builder, exec session 69411.
 
 Стыковка: ART_INTEGRATION.md — proposal v1. Вопрос Artist через Lead:
 нужен exact commit/path manifest, PNG двух типов (flower-01/wood-01), очищенный
