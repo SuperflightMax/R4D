@@ -2,7 +2,17 @@
 
 staff_id `builder-r4d-p2-free-01`; branch `codex/r4d-p2-free-builder-01`; исходный HEAD `df760b680f0d0264342fc8577fcc5779b80a3a15`. Рабочая копия только `E:/R4D/perspective/p2-worktrees/builder`.
 
-## Playback source handoff 01: implementation готов, build не начат
+## Frozen candidate04: pending targeted independent QA
+
+Адресный Lead/CTO standalone build gate исполнен. Actual clean build HEAD `08f9b9eaa6aa1063eb7fcd9cf373ddacf907725a`, implementation отдельно `0a80b0b63c688b6f77b8f710576adf2ea5c263c1`; tested6source canonicalSHA совпали доbuild. Новый absent output `E:/R4D/perspective/p2-runtime/output/p2-jungle-static-candidate-04/`:16browserfiles/2452021bytes,6.jsmodules,treeSHA `60d216a64c86fed4b83f4ed3802e3d1393cdda2db8776818d22710173dc2ffed`; BUILD_MANIFEST8751bytes SHA `60f79d1bdad8d3737376952043013394bb3098de6b15200fc5c352dd875dd1f7`. Browser16/BUILD_MANIFEST FROZEN, не менять/rebuild. Lead independentlyverifiedactualset/allhashes/tree/manifest и уже передал exact04 targetedTQA; новогоQAresult пока нет. Подробно STATIC_CANDIDATE_04.md.
+
+Actual-artifact ownchecks exit0:16exactfiles/13strictprivacytextfiles/5sourceblob→outputreceipts, parse/link graph6.js безDOM/Pixi evaluation; core21962bytes SHAdbb01f3276fca9df7bacd69ecfb1e3737e74f6bd606b67041ec6ba5ca092c2a7 identical03, oldfullnativeaudit не повторялся.10 targetedchecks выполнены на emitted04 JS clock/controller/core+actualconfig, rationaloracle/4prefixes128/reference256/contact95/seek+ticks/RNG0/historyrewind; boundaryEVIDENCE89011bytes SHAc00555b4f9898047dfffccca11f195f20864743130c803a9a53c5eec1c593373 в `output/builder/playback-artifact-candidate04-01/`. STATIC_ARTIFACT_CHECK2091bytes SHA68fbf2845e89d559624853d95f3fbc2992ffc5fe9cbe7154ae2874f620233920. Operatoradapters внеbrowser сdeclaredrefs; actualUI/WebGL/Android/MIME unverified, fullQA/artPASSнет.
+
+Transfer outsidebrowser CANDIDATE_TRANSFER.tar2478080bytes/17regularmembers SHA `833d38e59547897571a01273191152be984ff4cfcec62c22dc9ad06f56963f29`; allmemberbytes checked. Scope03→04:11oldidentical/4changed/1newclock/0deleted, SCOPE_DIFF_03_04.json8251bytes SHA94122f77971c968202568692245fd96db436a46b1112ad15083b3f5d7f2f70e9. Config/core/projection/r16/art/touch/occlusion/fit preserved; old03 checkedunchanged. UI source04 contains0.25default/0.5/1 playbackonly.
+
+Freshbuildguard06:13UTC freeRAM11.013GiB/CPU4%/C8.040821,D16.324112,E41.738964; conservative peakC1.525/D.25/E1.375GiB+RAM≤1GiB помещался; Nodeheap512MiB. Передartifactchecks06:20UTC freeRAM11.861/CPU19%/C8.041733,D16.322075,E40.763302. ProcessTEMP/cache/outputonlyE/Nodecachedisabled, rule4/2, noinstall/globalcleanup/settings. Serverwrites/upload/staging/mkdir/nginx/reload/rollback0, oldtokenreleased; newreleaseintent/gate/token НЕвыдан/неprepared. Nextstep — independenttargetedQA/отдельныйLeadscope; послеhandoffdocscommit/push stopбезactivewait. P2slotнеclosed.
+
+## История playback source handoff 01 до build04
 
 Адресное разрешение Lead после review diagnostic/plan086d0852732815014ed4a596bcd67528874a04df исполнено узко. Actual SOURCE commit `0a80b0b63c688b6f77b8f710576adf2ea5c263c1` содержит реальные rate/helper/UI/emission изменения и targeted selfcheck; после него worktree clean. Ровно6 code/check files,252+/24−. UI«Скорость» default0.25×/0.5×/1×; purePlaybackClock выдаёт целыеfixed5ms native ticks, fractional carry наratechange, reset+discard-first-delta наpause/start/replay/seek/manual/hidden/terminal. Rate/history/conditions экспортируются отдельно от полного physicsconfig/seed/provenance; rewind не теряет latest presentationhistory. P2QA setter/snapshot добавлены. Подробно — PLAYBACK_SOURCE_01.md.
 
