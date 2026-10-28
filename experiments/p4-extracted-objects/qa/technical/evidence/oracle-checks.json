@@ -1,0 +1,128 @@
+{
+  "schema": "r4d.p4.technical-qa.oracle.v1",
+  "scope": "input/native oracle preparation only; no P4 candidate tested",
+  "node": "v24.15.0",
+  "inputVersions": {
+    "p1Commit": "4b47db04c7140ebf88f69b91faa0b790d46f22ec",
+    "coreCommit": "5a6fa03f1cdb3de88a2d9c7dbe795eb8e2a7f023"
+  },
+  "checks": [
+    {
+      "name": "exact-config-and-native-validation",
+      "status": "PASS"
+    },
+    {
+      "name": "projection-and-native-translation",
+      "status": "PASS",
+      "points": 62,
+      "maxNativeRoundTrip": 1.0289757937229989e-11,
+      "maxSourceDifference": 3.4581174018638034e-12
+    },
+    {
+      "name": "fixed-seeds-replay-chunks-checkpoint-restoration-and-native-headless",
+      "status": "PASS",
+      "seeds": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8
+      ],
+      "results": [
+        {
+          "seed": 1,
+          "tick": 1735,
+          "result": {
+            "kind": "LOST",
+            "finalX": 33780.1301239,
+            "nearMissBucketIds": []
+          }
+        },
+        {
+          "seed": 2,
+          "tick": 1290,
+          "result": {
+            "kind": "LOST",
+            "finalX": 33244.7794791,
+            "nearMissBucketIds": []
+          }
+        },
+        {
+          "seed": 3,
+          "tick": 2887,
+          "result": {
+            "kind": "LOST",
+            "finalX": 33282.4262306,
+            "nearMissBucketIds": []
+          }
+        },
+        {
+          "seed": 4,
+          "tick": 2088,
+          "result": {
+            "kind": "IN_BUCKET",
+            "bucketId": "receiver-04"
+          }
+        },
+        {
+          "seed": 5,
+          "tick": 1410,
+          "result": {
+            "kind": "LOST",
+            "finalX": 33562.2203592,
+            "nearMissBucketIds": []
+          }
+        },
+        {
+          "seed": 6,
+          "tick": 2726,
+          "result": {
+            "kind": "LOST",
+            "finalX": 33706.3571897,
+            "nearMissBucketIds": []
+          }
+        },
+        {
+          "seed": 7,
+          "tick": 1824,
+          "result": {
+            "kind": "LOST",
+            "finalX": 33083.5673112,
+            "nearMissBucketIds": []
+          }
+        },
+        {
+          "seed": 8,
+          "tick": 1501,
+          "result": {
+            "kind": "LOST",
+            "finalX": 33785.8034685,
+            "nearMissBucketIds": []
+          }
+        }
+      ],
+      "exactReplay": true
+    },
+    {
+      "name": "different-seeds-change-physical-trajectory",
+      "status": "PASS",
+      "distinctPhysicalTraces": 8,
+      "seeds": 8
+    },
+    {
+      "name": "native-world-defaults",
+      "status": "PASS",
+      "enabledAndVisibleObjects": 46
+    },
+    {
+      "name": "diagnostic-bucket-and-open-bottom-states-not-ordinary-runs",
+      "status": "PASS",
+      "samples": 10,
+      "bucketRule": "center distance < bucket.r, not bucket.r - ball.r",
+      "bottomRule": "ball.pos.y - ball.r > board.height"
+    }
+  ]
+}

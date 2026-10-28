@@ -1,0 +1,223 @@
+{
+  "schema": "r4d.p4.technical-qa.inputs.v1",
+  "p1Commit": "4b47db04c7140ebf88f69b91faa0b790d46f22ec",
+  "nativeCommit": "5a6fa03f1cdb3de88a2d9c7dbe795eb8e2a7f023",
+  "source": {
+    "sha256": "c8f9e4245c1de8c2086e615bc75dc10aea59b76b614d6e106593e07262e24f72",
+    "dimensions": [
+      1536,
+      1536
+    ]
+  },
+  "records": [
+    {
+      "name": "config.json",
+      "commit": "4b47db04c7140ebf88f69b91faa0b790d46f22ec",
+      "path": "experiments/p1-collider-mapping/clean-repeat-01/simulation/boards/01/trial-01/config.json",
+      "gitBlob": "81b876017c0ddf2ce83419e38aa45846f7765869",
+      "sha256": "dd5c519cd6d4b7295118e0a3a1063efed424a0ce739450bd5153c6a9941982db",
+      "shaLf": "dd5c519cd6d4b7295118e0a3a1063efed424a0ce739450bd5153c6a9941982db",
+      "expectedShaLf": "dd5c519cd6d4b7295118e0a3a1063efed424a0ce739450bd5153c6a9941982db"
+    },
+    {
+      "name": "manifest.json",
+      "commit": "4b47db04c7140ebf88f69b91faa0b790d46f22ec",
+      "path": "experiments/p1-collider-mapping/clean-repeat-01/simulation/boards/01/trial-01/manifest.json",
+      "gitBlob": "3d29c3ce3d45bcc2d62716f2c82b7266157e2a3a",
+      "sha256": "7784dc0a215d0e472cf06a4eee03793592727cf0fa9a1fa0e0c78e5f1d17da18",
+      "shaLf": "7784dc0a215d0e472cf06a4eee03793592727cf0fa9a1fa0e0c78e5f1d17da18",
+      "expectedShaLf": "7784dc0a215d0e472cf06a4eee03793592727cf0fa9a1fa0e0c78e5f1d17da18"
+    },
+    {
+      "name": "projection.json",
+      "commit": "4b47db04c7140ebf88f69b91faa0b790d46f22ec",
+      "path": "experiments/p1-collider-mapping/clean-repeat-01/research/board01-projection.candidate-01.json",
+      "gitBlob": "4c2773b29cec50cbf3982b1efbd450cbc55aea37",
+      "sha256": "9ca9e520f1927426a3a5ba73a5eacaf90fedffc9385e7d08d5b1e6ee644b020c",
+      "shaLf": "9ca9e520f1927426a3a5ba73a5eacaf90fedffc9385e7d08d5b1e6ee644b020c",
+      "expectedShaLf": "9ca9e520f1927426a3a5ba73a5eacaf90fedffc9385e7d08d5b1e6ee644b020c"
+    },
+    {
+      "name": "view-math.mjs",
+      "commit": "4b47db04c7140ebf88f69b91faa0b790d46f22ec",
+      "path": "experiments/p1-collider-mapping/clean-repeat-01/viewer/src/view-math.mjs",
+      "gitBlob": "ce3ae207f7690efa942bfa04ac5cdbafc7b96db4",
+      "sha256": "96f01cc2093c353ff958cb906fe0c8ae93412425d0f7a5ec7cca0f2bf9f1aa5e",
+      "shaLf": "96f01cc2093c353ff958cb906fe0c8ae93412425d0f7a5ec7cca0f2bf9f1aa5e",
+      "expectedShaLf": null
+    }
+  ],
+  "nativeFiles": [
+    {
+      "path": "packages/sim-core/package.json",
+      "bytes": 425,
+      "sha256": "0d7fe2578d70e00492556c1dfcf0ea924a174c16be85ad29658f560e5b5d9f64",
+      "gitBlob": "7f77ad87ff88268837774700bc9acd15d5e64e5b"
+    },
+    {
+      "path": "packages/sim-core/src/Config.ts",
+      "bytes": 1205,
+      "sha256": "be615453f17b23ebef47cfd866f91c43109df005d0c8e0b57f1b79677ab5a870",
+      "gitBlob": "7cac28acf462fc60e420e3dbeacdf36aafeb5761"
+    },
+    {
+      "path": "packages/sim-core/src/LevelLogic.ts",
+      "bytes": 1057,
+      "sha256": "e5c6a5aeeb82d22569b3d8e7ef9d807baf1591bc67d343876df5d18ab57487e6",
+      "gitBlob": "a3b3f0a7e01c257c45268a4ef45eb5bcdc9d3a1b"
+    },
+    {
+      "path": "packages/sim-core/src/LevelPackage.ts",
+      "bytes": 1765,
+      "sha256": "74bc077912aa8dda2d17c004b3ea13074af20592e54fa080346f83be0c3f87e6",
+      "gitBlob": "6616824e35fe54eeeb9efe83d7b9a13fd6e9dac1"
+    },
+    {
+      "path": "packages/sim-core/src/LevelPlugin.ts",
+      "bytes": 4231,
+      "sha256": "91e663b4452e79fab750cca1988f699552384f4c6f3eb8af87416a66763d19ad",
+      "gitBlob": "d5f8e6ecb235f7bea2da48c758d2388cea0928b6"
+    },
+    {
+      "path": "packages/sim-core/src/LevelPluginRuntime.ts",
+      "bytes": 11619,
+      "sha256": "d054b5eb125b8ce59ed55c96a8a100cd6305d83b08b05d55c06a6a9fc702ea30",
+      "gitBlob": "bf832c5dc41108d6ae9fb5064aae6fecec6f8002"
+    },
+    {
+      "path": "packages/sim-core/src/PrngLcg32.ts",
+      "bytes": 702,
+      "sha256": "b16a04e23c877c9178451b0a7ec456a5c4836a2fb07b2cde925f9d38c6f064d7",
+      "gitBlob": "aa0ec2b622bb5e80c59bd330a5f465bed69402b6"
+    },
+    {
+      "path": "packages/sim-core/src/Quantize.ts",
+      "bytes": 317,
+      "sha256": "4bced43ab469d3a25958148ecd463a78cd53d0226a88cc4c1bd6b782d441942b",
+      "gitBlob": "90db0e89547b9b17ce3aeab60f5f404a91cf45ed"
+    },
+    {
+      "path": "packages/sim-core/src/Sim.ts",
+      "bytes": 25026,
+      "sha256": "809b8c7b83444780589f04d63661de03a839528651a1e38588c073e02ce4bad0",
+      "gitBlob": "34e2e8672cfe78671b527ae1a0fc412a0647a293"
+    },
+    {
+      "path": "packages/sim-core/src/SimState.ts",
+      "bytes": 687,
+      "sha256": "114ea4c5bd3d5211d913308c7471341edf57c23fbaa7881dfacbdb8cdb8d66c9",
+      "gitBlob": "edd8d37f8d8c59f19ef394239d45b8707f7a58da"
+    },
+    {
+      "path": "packages/sim-core/src/Vec2.ts",
+      "bytes": 627,
+      "sha256": "b3ad2a7d43f0bd0a34bd08e6e26384f0957b527f351376e6bd2b1e11acfdbec4",
+      "gitBlob": "1d59fa5216e98f318f0b7e9739cb40b2542d68fe"
+    },
+    {
+      "path": "packages/sim-core/src/board-visual.ts",
+      "bytes": 293,
+      "sha256": "875c710f518c1406c83ef049ae0c67c1e48fc537233508d7dc108413aa305f7c",
+      "gitBlob": "0e8cf501527e3aefd910d7ebc8df62d42fd6e205"
+    },
+    {
+      "path": "packages/sim-core/src/index.ts",
+      "bytes": 2141,
+      "sha256": "497763d432e577b24575cef04f6495e30e42cac0952733c40df4ea5c220237a7",
+      "gitBlob": "087849f904b54f55c55029917d7d4dc5ab075e58"
+    },
+    {
+      "path": "packages/sim-core/src/json/parseConfigJson.ts",
+      "bytes": 270,
+      "sha256": "5d473e5a3a06b268a9df0bb8a2f6c7a89ac8bdd95abb59275b492a4747fa2fc8",
+      "gitBlob": "32156057dbf6ea97135167c64dae6e1040b484cb"
+    },
+    {
+      "path": "packages/sim-core/src/runtime/SimBallDef.ts",
+      "bytes": 257,
+      "sha256": "beb5e1f8a5c39ebdaa83eaddf5791c8e70b29d3ec209495cc5aabab1bc7b2a1f",
+      "gitBlob": "78065aa2dfb164905f05f0a86b6f7444e589884c"
+    },
+    {
+      "path": "packages/sim-core/src/runtime/SimBoard.ts",
+      "bytes": 383,
+      "sha256": "93fa33b8206c4b84b2f9af83f52dcaa18e1b1d4b0f6d8137189960642d920de0",
+      "gitBlob": "48859e2c31479e72076e2db6e1d73377ee6f9357"
+    },
+    {
+      "path": "packages/sim-core/src/runtime/SimBucket.ts",
+      "bytes": 870,
+      "sha256": "e6e9aa464c7d82b119449270645a230d7ebb21257c754325d01b19cfed56d9c9",
+      "gitBlob": "4eff6a89c53b43c3eba9d0963c5fd4b1e4ee3612"
+    },
+    {
+      "path": "packages/sim-core/src/runtime/SimDrop.ts",
+      "bytes": 609,
+      "sha256": "0fdc5bcf1161159d43554e66710c277f07467b9fbdfe686c2b0f77b6fa420618",
+      "gitBlob": "d8b49b61e1d4bea81ddad010812859697fe79c5c"
+    },
+    {
+      "path": "packages/sim-core/src/runtime/SimPin.ts",
+      "bytes": 717,
+      "sha256": "a930e32a22e3f72832db64a412ccf5b36017d2875b50361e4789f8d334bafa8c",
+      "gitBlob": "25affc928add181fae5211e5fd863ef0dfa4e044"
+    },
+    {
+      "path": "packages/sim-core/src/runtime/SimSegment.ts",
+      "bytes": 793,
+      "sha256": "930ad3968b424dfa3d0ea3af32296bed0eea189863ee06fcbf10a5b3284280f4",
+      "gitBlob": "440d6d4bec18626876a4251aebbdde37c3ae97b2"
+    },
+    {
+      "path": "packages/sim-core/src/runtime/SimTypes.ts",
+      "bytes": 280,
+      "sha256": "17921acd47c3a47e41417ef54c51b27befc091799397d5c4a9083608a6381d6f",
+      "gitBlob": "d9fb7c1da79a3752a9bc62c020efe6210bc99521"
+    },
+    {
+      "path": "packages/sim-core/src/runtime/SimWorld.ts",
+      "bytes": 10662,
+      "sha256": "aa489952c9dcce23bd103efae44bf60f9bd260ce057383478592eef0ca779584",
+      "gitBlob": "3c65ca5b33a455bc589aaeb406ccc664dbb6d462"
+    },
+    {
+      "path": "packages/sim-core/src/runtime/buildWorld.ts",
+      "bytes": 1658,
+      "sha256": "2c636a71279e9b73e2631b17192bf9cdfaaa3e71ec121a6114c1005658872edd",
+      "gitBlob": "cfd73d71c44a6a646ed8512e0622cf5992eb84bc"
+    },
+    {
+      "path": "packages/sim-core/src/runtime/runHeadless.ts",
+      "bytes": 473,
+      "sha256": "8b130d08ff985485047c3990bcbcc1bdb83468d28f75d2d4ea1f03f662a4d3f2",
+      "gitBlob": "94a7e4f94c0dc5e44d45051f632109be779c2d85"
+    },
+    {
+      "path": "packages/sim-core/src/types/board-visual.ts",
+      "bytes": 1217,
+      "sha256": "394ca3c4dc6fd0aa758e6b90c12961f48ee1b3eca6fb4d5b1a77b87719cab55e",
+      "gitBlob": "c1e01c3b544a0d05941ea7f0b269636be653e5d4"
+    },
+    {
+      "path": "packages/sim-core/src/types/board.ts",
+      "bytes": 1701,
+      "sha256": "a3d6e804458083be90c4e24ba4f7ef30d507a404bfb41411b31ad8b29d80c8e6",
+      "gitBlob": "01d54020f0fe3d8da8ed2c95e24a32515eb651bb"
+    },
+    {
+      "path": "packages/sim-core/src/validate/validateConfig.ts",
+      "bytes": 12728,
+      "sha256": "6542650746a7562298e23e5855ed64ed45dee669409c93f95e88b333251a3f90",
+      "gitBlob": "14038672263be689a2dbebf36df79b253728e696"
+    }
+  ],
+  "recipe": {
+    "commit": "ee4d8e5c7dbb3b6618d58d6dacb0caf9b73dfb1b",
+    "path": "experiments/p0-perspective/research/CROSS_SERIES_CONCLUSION_AND_RECIPE.md",
+    "sha256": "9ffe076b1746d5c4ef78da2f7d9a95bedcadf5e7f49f07f6d5899c0cc8373619"
+  },
+  "nativeCheckout": {
+    "head": "5a6fa03f1cdb3de88a2d9c7dbe795eb8e2a7f023",
+    "clean": true
+  }
+}

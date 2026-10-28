@@ -1,0 +1,213 @@
+[
+  {
+    "label": "receiver-01-one-unit-inside",
+    "state": {
+      "tick": 43,
+      "rngU32": 0,
+      "ball": {
+        "pos": {
+          "x": 32925.7709898,
+          "y": 34882.1755829
+        },
+        "vel": {
+          "x": 0,
+          "y": 0
+        }
+      },
+      "nearMissBucketIds": [],
+      "done": true,
+      "result": {
+        "kind": "IN_BUCKET",
+        "bucketId": "receiver-01"
+      }
+    }
+  },
+  {
+    "label": "receiver-01-outside",
+    "state": {
+      "tick": 43,
+      "rngU32": 0,
+      "ball": {
+        "pos": {
+          "x": 32926.7809898,
+          "y": 34882.1755829
+        },
+        "vel": {
+          "x": 0,
+          "y": 0
+        }
+      },
+      "nearMissBucketIds": [],
+      "done": false
+    }
+  },
+  {
+    "label": "receiver-02-one-unit-inside",
+    "state": {
+      "tick": 43,
+      "rngU32": 0,
+      "ball": {
+        "pos": {
+          "x": 33173.8901536,
+          "y": 34919.8575927
+        },
+        "vel": {
+          "x": 0,
+          "y": 0
+        }
+      },
+      "nearMissBucketIds": [],
+      "done": true,
+      "result": {
+        "kind": "IN_BUCKET",
+        "bucketId": "receiver-02"
+      }
+    }
+  },
+  {
+    "label": "receiver-02-outside",
+    "state": {
+      "tick": 43,
+      "rngU32": 0,
+      "ball": {
+        "pos": {
+          "x": 33174.9001536,
+          "y": 34919.8575927
+        },
+        "vel": {
+          "x": 0,
+          "y": 0
+        }
+      },
+      "nearMissBucketIds": [],
+      "done": false
+    }
+  },
+  {
+    "label": "receiver-03-one-unit-inside",
+    "state": {
+      "tick": 43,
+      "rngU32": 0,
+      "ball": {
+        "pos": {
+          "x": 33409.0265009,
+          "y": 34923.9036405
+        },
+        "vel": {
+          "x": 0,
+          "y": 0
+        }
+      },
+      "nearMissBucketIds": [],
+      "done": true,
+      "result": {
+        "kind": "IN_BUCKET",
+        "bucketId": "receiver-03"
+      }
+    }
+  },
+  {
+    "label": "receiver-03-outside",
+    "state": {
+      "tick": 43,
+      "rngU32": 0,
+      "ball": {
+        "pos": {
+          "x": 33410.0365009,
+          "y": 34923.9036405
+        },
+        "vel": {
+          "x": 0,
+          "y": 0
+        }
+      },
+      "nearMissBucketIds": [],
+      "done": false
+    }
+  },
+  {
+    "label": "receiver-04-one-unit-inside",
+    "state": {
+      "tick": 43,
+      "rngU32": 0,
+      "ball": {
+        "pos": {
+          "x": 33657.6042753,
+          "y": 34890.4625744
+        },
+        "vel": {
+          "x": 0,
+          "y": 0
+        }
+      },
+      "nearMissBucketIds": [],
+      "done": true,
+      "result": {
+        "kind": "IN_BUCKET",
+        "bucketId": "receiver-04"
+      }
+    }
+  },
+  {
+    "label": "receiver-04-outside",
+    "state": {
+      "tick": 43,
+      "rngU32": 0,
+      "ball": {
+        "pos": {
+          "x": 33658.6142753,
+          "y": 34890.4625744
+        },
+        "vel": {
+          "x": 0,
+          "y": 0
+        }
+      },
+      "nearMissBucketIds": [],
+      "done": false
+    }
+  },
+  {
+    "label": "bottom-ball-not-wholly-below",
+    "state": {
+      "tick": 43,
+      "rngU32": 0,
+      "ball": {
+        "pos": {
+          "x": 33254.8631695,
+          "y": 35367.99
+        },
+        "vel": {
+          "x": 0,
+          "y": 0
+        }
+      },
+      "nearMissBucketIds": [],
+      "done": false
+    }
+  },
+  {
+    "label": "bottom-ball-wholly-below",
+    "state": {
+      "tick": 43,
+      "rngU32": 0,
+      "ball": {
+        "pos": {
+          "x": 33254.8631695,
+          "y": 35368.01
+        },
+        "vel": {
+          "x": 0,
+          "y": 0
+        }
+      },
+      "nearMissBucketIds": [],
+      "done": true,
+      "result": {
+        "kind": "LOST",
+        "finalX": 33254.8631695,
+        "nearMissBucketIds": []
+      }
+    }
+  }
+]

@@ -1,0 +1,2878 @@
+[
+  {
+    "seed": 1,
+    "finalTick": 1735,
+    "result": {
+      "kind": "LOST",
+      "finalX": 33780.1301239,
+      "nearMissBucketIds": []
+    },
+    "finalState": {
+      "tick": 1735,
+      "rngU32": 1629134493,
+      "ball": {
+        "pos": {
+          "x": 33780.1301239,
+          "y": 35375.7259347
+        },
+        "vel": {
+          "x": 764.3470855,
+          "y": 1699.2982232
+        }
+      },
+      "nearMissBucketIds": [],
+      "done": true,
+      "result": {
+        "kind": "LOST",
+        "finalX": 33780.1301239,
+        "nearMissBucketIds": []
+      }
+    },
+    "contactCount": 14,
+    "contactObjects": [
+      "leaf-01",
+      "frog-02",
+      "left-1",
+      "leaf-02",
+      "wood-01",
+      "left-3",
+      "leaf-05"
+    ],
+    "bucketEntries": [],
+    "trajectorySha256": "144ad7fd3a728c694f39bf21124778e59a101b9478f9f4f1a847364c5192d5cc",
+    "physicalTraceSha256": "cc51a063a579055a7b6fefee2e47fbff2fbe4982e3937e4679ff3cbd7a1ef889",
+    "checkpoints": [
+      {
+        "state": {
+          "tick": 0,
+          "rngU32": 1,
+          "ball": {
+            "pos": {
+              "x": 33254.863169496064,
+              "y": 33151.81331014809
+            },
+            "vel": {
+              "x": 0,
+              "y": 0
+            }
+          },
+          "nearMissBucketIds": [],
+          "done": false
+        },
+        "sha256": "6a435ebf1d86fbcea9cf732db37e667dcffb4dae96bee954e0e21c5071851927"
+      },
+      {
+        "state": {
+          "tick": 1,
+          "rngU32": 1,
+          "ball": {
+            "pos": {
+              "x": 33254.8631695,
+              "y": 33151.8378101
+            },
+            "vel": {
+              "x": 0,
+              "y": 4.9
+            }
+          },
+          "nearMissBucketIds": [],
+          "done": false
+        },
+        "sha256": "755631e7cf2efe4f57560333cf2f32c88f476fc736f0671d62291039a17dc3aa"
+      },
+      {
+        "state": {
+          "tick": 50,
+          "rngU32": 1,
+          "ball": {
+            "pos": {
+              "x": 33254.8631695,
+              "y": 33183.0508101
+            },
+            "vel": {
+              "x": 0,
+              "y": 245
+            }
+          },
+          "nearMissBucketIds": [],
+          "done": false
+        },
+        "sha256": "019e64a12d25919377147946643464749c7595043f8f35b06b78386371b1509e"
+      },
+      {
+        "state": {
+          "tick": 94,
+          "rngU32": 1,
+          "ball": {
+            "pos": {
+              "x": 33254.8631695,
+              "y": 33261.2058101
+            },
+            "vel": {
+              "x": 0,
+              "y": 460.6
+            }
+          },
+          "nearMissBucketIds": [],
+          "done": false
+        },
+        "sha256": "b73d8324875c439769956abdc90a307b4bcfb0fb045e6db686936d7377a21caf"
+      },
+      {
+        "state": {
+          "tick": 95,
+          "rngU32": 1586005467,
+          "ball": {
+            "pos": {
+              "x": 33254.8464511,
+              "y": 33263.0448323
+            },
+            "vel": {
+              "x": -32.0217063,
+              "y": -370.890938
+            }
+          },
+          "nearMissBucketIds": [],
+          "done": false
+        },
+        "sha256": "b9bad892ed894206ad4e1ca5d4693d1067ff0ff21a7fdb80f513f0bd751ea61d"
+      },
+      {
+        "state": {
+          "tick": 96,
+          "rngU32": 1586005467,
+          "ball": {
+            "pos": {
+              "x": 33254.6863426,
+              "y": 33261.2148776
+            },
+            "vel": {
+              "x": -32.0217063,
+              "y": -365.990938
+            }
+          },
+          "nearMissBucketIds": [],
+          "done": false
+        },
+        "sha256": "cae2cbc728aa9a6ffd64347c2ee90cdc6c22daab3fe85b0d12cc58b04e63c0f1"
+      },
+      {
+        "state": {
+          "tick": 100,
+          "rngU32": 1586005467,
+          "ball": {
+            "pos": {
+              "x": 33254.0459086,
+              "y": 33254.1400588
+            },
+            "vel": {
+              "x": -32.0217063,
+              "y": -346.390938
+            }
+          },
+          "nearMissBucketIds": [],
+          "done": false
+        },
+        "sha256": "2ac24a0b964c09a4896fbc8d77d0d21cf254475161ca852d58d88a5360b92e4e"
+      },
+      {
+        "state": {
+          "tick": 248,
+          "rngU32": 1586005467,
+          "ball": {
+            "pos": {
+              "x": 33230.3498506,
+              "y": 33267.9477632
+            },
+            "vel": {
+              "x": -32.0217063,
+              "y": 378.809062
+            }
+          },
+          "nearMissBucketIds": [],
+          "done": false
+        },
+        "sha256": "1b1b0b8232f5c8d3a6020c4fd59706fa901fa722f96b81f72e3b5a96c18fd55c"
+      },
+      {
+        "state": {
+          "tick": 249,
+          "rngU32": 3027450565,
+          "ball": {
+            "pos": {
+              "x": 33229.7663986,
+              "y": 33268.9364862
+            },
+            "vel": {
+              "x": -281.5518502,
+              "y": -173.7947217
+            }
+          },
+          "nearMissBucketIds": [],
+          "done": false
+        },
+        "sha256": "824814133effb2a52e374a4684b1495311a7bc57953bd8bbbeb3f74c044977b3"
+      },
+      {
+        "state": {
+          "tick": 250,
+          "rngU32": 3027450565,
+          "ball": {
+            "pos": {
+              "x": 33228.3586393,
+              "y": 33268.0920126
+            },
+            "vel": {
+              "x": -281.5518502,
+              "y": -168.8947217
+            }
+          },
+          "nearMissBucketIds": [],
+          "done": false
+        },
+        "sha256": "61c19c7ec322658b929ac1c7c39d4ee9f8d7d35e4248e302bf288fc1bc2e8882"
+      },
+      {
+        "state": {
+          "tick": 444,
+          "rngU32": 3027450565,
+          "ball": {
+            "pos": {
+              "x": 32955.2533351,
+              "y": 33567.6816342
+            },
+            "vel": {
+              "x": -281.5518502,
+              "y": 781.7052783
+            }
+          },
+          "nearMissBucketIds": [],
+          "done": false
+        },
+        "sha256": "59c4b7c3bffdf64b5814227bd4e815d4869bda36c50a8fe29b322e045ca90faa"
+      },
+      {
+        "state": {
+          "tick": 445,
+          "rngU32": 1587069247,
+          "ball": {
+            "pos": {
+              "x": 32953.8838363,
+              "y": 33571.1892213
+            },
+            "vel": {
+              "x": -157.7279021,
+              "y": -655.3005444
+            }
+          },
+          "nearMissBucketIds": [],
+          "done": false
+        },
+        "sha256": "db2d167e9b4bd504671eb132a474e50eaa262d5e05a500afdc2de8e4345e15b8"
+      },
+      {
+        "state": {
+          "tick": 446,
+          "rngU32": 1587069247,
+          "ball": {
+            "pos": {
+              "x": 32953.0951968,
+              "y": 33567.9372186
+            },
+            "vel": {
+              "x": -157.7279021,
+              "y": -650.4005444
+            }
+          },
+          "nearMissBucketIds": [],
+          "done": false
+        },
+        "sha256": "bdabc59fbfd1cf5d140c895099299ab22f1f2fae6fbe76025152a728b5a2dffb"
+      },
+      {
+        "state": {
+          "tick": 867,
+          "rngU32": 1814098701,
+          "ball": {
+            "pos": {
+              "x": 33142.6227214,
+              "y": 33476.2013455
+            },
+            "vel": {
+              "x": -87.2371839,
+              "y": -153.2631411
+            }
+          },
+          "nearMissBucketIds": [],
+          "done": false
+        },
+        "sha256": "530e9df958487e7915608e61c294bb8c80fe1493e1d457beb12e98b7098cbf8e"
+      },
+      {
+        "state": {
+          "tick": 1734,
+          "rngU32": 1629134493,
+          "ball": {
+            "pos": {
+              "x": 33776.3083885,
+              "y": 35367.2294436
+            },
+            "vel": {
+              "x": 764.3470855,
+              "y": 1694.3982232
+            }
+          },
+          "nearMissBucketIds": [],
+          "done": false
+        },
+        "sha256": "d2507a7b843253bc375f5fbe714cd7a5e073f5838d0ab29078b1417eb02a1bb9"
+      },
+      {
+        "state": {
+          "tick": 1735,
+          "rngU32": 1629134493,
+          "ball": {
+            "pos": {
+              "x": 33780.1301239,
+              "y": 35375.7259347
+            },
+            "vel": {
+              "x": 764.3470855,
+              "y": 1699.2982232
+            }
+          },
+          "nearMissBucketIds": [],
+          "done": true,
+          "result": {
+            "kind": "LOST",
+            "finalX": 33780.1301239,
+            "nearMissBucketIds": []
+          }
+        },
+        "sha256": "d666838abcb63558e142af39d4a23219dd72d9817037fd1d3b2bc8aa54e4140b"
+      }
+    ]
+  },
+  {
+    "seed": 2,
+    "finalTick": 1290,
+    "result": {
+      "kind": "LOST",
+      "finalX": 33244.7794791,
+      "nearMissBucketIds": []
+    },
+    "finalState": {
+      "tick": 1290,
+      "rngU32": 2866302536,
+      "ball": {
+        "pos": {
+          "x": 33244.7794791,
+          "y": 35372.5005251
+        },
+        "vel": {
+          "x": 169.028896,
+          "y": 1511.6364702
+        }
+      },
+      "nearMissBucketIds": [],
+      "done": true,
+      "result": {
+        "kind": "LOST",
+        "finalX": 33244.7794791,
+        "nearMissBucketIds": []
+      }
+    },
+    "contactCount": 11,
+    "contactObjects": [
+      "leaf-01",
+      "frog-02",
+      "wood-01",
+      "flower-02",
+      "left-3",
+      "wood-06",
+      "leaf-05",
+      "flower-07"
+    ],
+    "bucketEntries": [],
+    "trajectorySha256": "f711ad52fd8df362a5ad5642943daf95e61b1f3e312b8bd31f1639cf109c1d5a",
+    "physicalTraceSha256": "67985a1c1a1b205a8d76eb44747f26d42de16f76a58b286c8c47bccc5b2b14f3",
+    "checkpoints": [
+      {
+        "state": {
+          "tick": 0,
+          "rngU32": 2,
+          "ball": {
+            "pos": {
+              "x": 33254.863169496064,
+              "y": 33151.81331014809
+            },
+            "vel": {
+              "x": 0,
+              "y": 0
+            }
+          },
+          "nearMissBucketIds": [],
+          "done": false
+        },
+        "sha256": "9bf8c39f02ce81de9c71be44decb568f8466761d3285c53c443c640ae172846a"
+      },
+      {
+        "state": {
+          "tick": 1,
+          "rngU32": 2,
+          "ball": {
+            "pos": {
+              "x": 33254.8631695,
+              "y": 33151.8378101
+            },
+            "vel": {
+              "x": 0,
+              "y": 4.9
+            }
+          },
+          "nearMissBucketIds": [],
+          "done": false
+        },
+        "sha256": "ac75e86c6669d07842633e78816db792984e0246cabe4903dfb7f5baace5d135"
+      },
+      {
+        "state": {
+          "tick": 50,
+          "rngU32": 2,
+          "ball": {
+            "pos": {
+              "x": 33254.8631695,
+              "y": 33183.0508101
+            },
+            "vel": {
+              "x": 0,
+              "y": 245
+            }
+          },
+          "nearMissBucketIds": [],
+          "done": false
+        },
+        "sha256": "e6b4a00e3a60993714815c5b39e6609e047dec47e18d8770c90ac798bb2a81b3"
+      },
+      {
+        "state": {
+          "tick": 94,
+          "rngU32": 2,
+          "ball": {
+            "pos": {
+              "x": 33254.8631695,
+              "y": 33261.2058101
+            },
+            "vel": {
+              "x": 0,
+              "y": 460.6
+            }
+          },
+          "nearMissBucketIds": [],
+          "done": false
+        },
+        "sha256": "1943ec4b0d87d38a1ae531ec7753c5cf4b9334528dc587dd7e306a836917baa9"
+      },
+      {
+        "state": {
+          "tick": 95,
+          "rngU32": 1975575172,
+          "ball": {
+            "pos": {
+              "x": 33254.8464511,
+              "y": 33263.0448323
+            },
+            "vel": {
+              "x": -29.6727477,
+              "y": -371.0934794
+            }
+          },
+          "nearMissBucketIds": [],
+          "done": false
+        },
+        "sha256": "369989d28aff88639d9f86883a28869f1d8d3eaafcff0212becaa5201582ded0"
+      },
+      {
+        "state": {
+          "tick": 96,
+          "rngU32": 1975575172,
+          "ball": {
+            "pos": {
+              "x": 33254.6980874,
+              "y": 33261.2138649
+            },
+            "vel": {
+              "x": -29.6727477,
+              "y": -366.1934794
+            }
+          },
+          "nearMissBucketIds": [],
+          "done": false
+        },
+        "sha256": "e6946b50f9747a05e698baeb53466a4ccad1fe1df06f9fa4bcbd9a53738fb077"
+      },
+      {
+        "state": {
+          "tick": 100,
+          "rngU32": 1975575172,
+          "ball": {
+            "pos": {
+              "x": 33254.1046326,
+              "y": 33254.1349953
+            },
+            "vel": {
+              "x": -29.6727477,
+              "y": -346.5934794
+            }
+          },
+          "nearMissBucketIds": [],
+          "done": false
+        },
+        "sha256": "9771123eca81f4b6b8de7000b73252e58644f13a5407d2027d045ecdbd0bbcf1"
+      },
+      {
+        "state": {
+          "tick": 248,
+          "rngU32": 1975575172,
+          "ball": {
+            "pos": {
+              "x": 33232.146805,
+              "y": 33267.7928201
+            },
+            "vel": {
+              "x": -29.6727477,
+              "y": 378.6065206
+            }
+          },
+          "nearMissBucketIds": [],
+          "done": false
+        },
+        "sha256": "0b2c388756bbd7836833befbddc09be7f8116d47e879b2bc3dac843e6b7df757"
+      },
+      {
+        "state": {
+          "tick": 249,
+          "rngU32": 3186434646,
+          "ball": {
+            "pos": {
+              "x": 33231.3718726,
+              "y": 33268.2311297
+            },
+            "vel": {
+              "x": -266.0333507,
+              "y": -186.3601829
+            }
+          },
+          "nearMissBucketIds": [],
+          "done": false
+        },
+        "sha256": "492021f497d0b1dfae84829a8dc1c0f29e48c08de0f0532580d31fcb738a4bd5"
+      },
+      {
+        "state": {
+          "tick": 250,
+          "rngU32": 3186434646,
+          "ball": {
+            "pos": {
+              "x": 33230.0417058,
+              "y": 33267.3238288
+            },
+            "vel": {
+              "x": -266.0333507,
+              "y": -181.4601829
+            }
+          },
+          "nearMissBucketIds": [],
+          "done": false
+        },
+        "sha256": "8699dd98fc0ac7b80a6259238784867fcefb0a60f1506abda70d1c46b1f6aab4"
+      },
+      {
+        "state": {
+          "tick": 448,
+          "rngU32": 3186434646,
+          "ball": {
+            "pos": {
+              "x": 32966.6686794,
+              "y": 33570.3527506
+            },
+            "vel": {
+              "x": -266.0333507,
+              "y": 788.7398171
+            }
+          },
+          "nearMissBucketIds": [],
+          "done": false
+        },
+        "sha256": "39fcf66212bfcdc741d655552465846bec799abf02a1bfa0d586101be88041da"
+      },
+      {
+        "state": {
+          "tick": 449,
+          "rngU32": 503495672,
+          "ball": {
+            "pos": {
+              "x": 32965.6109727,
+              "y": 33573.3609197
+            },
+            "vel": {
+              "x": 131.1983719,
+              "y": -672.9700975
+            }
+          },
+          "nearMissBucketIds": [],
+          "done": false
+        },
+        "sha256": "0de61d4afb66ec01b23002623a53ad6778fe40c0f8598e92c86bddbfc915e319"
+      },
+      {
+        "state": {
+          "tick": 450,
+          "rngU32": 503495672,
+          "ball": {
+            "pos": {
+              "x": 32966.2669646,
+              "y": 33570.0205692
+            },
+            "vel": {
+              "x": 131.1983719,
+              "y": -668.0700975
+            }
+          },
+          "nearMissBucketIds": [],
+          "done": false
+        },
+        "sha256": "868bb25ce5b9d5129eeafce6c0fb8d5eaffde51cad8b058696e97c694edaff65"
+      },
+      {
+        "state": {
+          "tick": 645,
+          "rngU32": 503495672,
+          "ball": {
+            "pos": {
+              "x": 33094.1853851,
+              "y": 33386.8472217
+            },
+            "vel": {
+              "x": 131.1983719,
+              "y": 287.4299025
+            }
+          },
+          "nearMissBucketIds": [],
+          "done": false
+        },
+        "sha256": "595a491b841078702c20f86ec540ade967993d99b645ce4a077de77d6140504a"
+      },
+      {
+        "state": {
+          "tick": 1289,
+          "rngU32": 2866302536,
+          "ball": {
+            "pos": {
+              "x": 33243.9343346,
+              "y": 35364.9423427
+            },
+            "vel": {
+              "x": 169.028896,
+              "y": 1506.7364702
+            }
+          },
+          "nearMissBucketIds": [],
+          "done": false
+        },
+        "sha256": "e1e0f0670760e8a72c12061174d6335105d2d8ec548678d6f60b42a71bab26db"
+      },
+      {
+        "state": {
+          "tick": 1290,
+          "rngU32": 2866302536,
+          "ball": {
+            "pos": {
+              "x": 33244.7794791,
+              "y": 35372.5005251
+            },
+            "vel": {
+              "x": 169.028896,
+              "y": 1511.6364702
+            }
+          },
+          "nearMissBucketIds": [],
+          "done": true,
+          "result": {
+            "kind": "LOST",
+            "finalX": 33244.7794791,
+            "nearMissBucketIds": []
+          }
+        },
+        "sha256": "b5d771ca128e50a34a46ef3e4e3e4c6392a256abe4b9fc3ebaaa5ba08d3a7f96"
+      }
+    ]
+  },
+  {
+    "seed": 3,
+    "finalTick": 2887,
+    "result": {
+      "kind": "LOST",
+      "finalX": 33282.4262306,
+      "nearMissBucketIds": []
+    },
+    "finalState": {
+      "tick": 2887,
+      "rngU32": 1810077343,
+      "ball": {
+        "pos": {
+          "x": 33282.4262306,
+          "y": 35369.5159409
+        },
+        "vel": {
+          "x": -371.58302,
+          "y": 1221.5059602
+        }
+      },
+      "nearMissBucketIds": [],
+      "done": true,
+      "result": {
+        "kind": "LOST",
+        "finalX": 33282.4262306,
+        "nearMissBucketIds": []
+      }
+    },
+    "contactCount": 30,
+    "contactObjects": [
+      "leaf-01",
+      "frog-02",
+      "wood-01",
+      "left-2",
+      "frog-04",
+      "left-4",
+      "flower-04",
+      "flower-03",
+      "flower-05",
+      "wood-06",
+      "leaf-05",
+      "flower-07",
+      "left-6",
+      "wood-07",
+      "wood-08",
+      "frog-05",
+      "near-divider-3",
+      "right-6"
+    ],
+    "bucketEntries": [],
+    "trajectorySha256": "fd11de4151ea595414cbdf26fd350c1853a3d45e334370dba97075447a0be7c7",
+    "physicalTraceSha256": "c3c783be618694967fb548c40b8f68541a39fc0e8e9ee10814e84a99e7abbff9",
+    "checkpoints": [
+      {
+        "state": {
+          "tick": 0,
+          "rngU32": 3,
+          "ball": {
+            "pos": {
+              "x": 33254.863169496064,
+              "y": 33151.81331014809
+            },
+            "vel": {
+              "x": 0,
+              "y": 0
+            }
+          },
+          "nearMissBucketIds": [],
+          "done": false
+        },
+        "sha256": "019861585b0894c26f4e8e40779bb9f2817f0c8bff9e9db6e87d36225a79e044"
+      },
+      {
+        "state": {
+          "tick": 1,
+          "rngU32": 3,
+          "ball": {
+            "pos": {
+              "x": 33254.8631695,
+              "y": 33151.8378101
+            },
+            "vel": {
+              "x": 0,
+              "y": 4.9
+            }
+          },
+          "nearMissBucketIds": [],
+          "done": false
+        },
+        "sha256": "042b75ae8c0d8e2226cf2f144a0e0df4fda2a167e879add1add1b7869ecdf974"
+      },
+      {
+        "state": {
+          "tick": 50,
+          "rngU32": 3,
+          "ball": {
+            "pos": {
+              "x": 33254.8631695,
+              "y": 33183.0508101
+            },
+            "vel": {
+              "x": 0,
+              "y": 245
+            }
+          },
+          "nearMissBucketIds": [],
+          "done": false
+        },
+        "sha256": "1141bad17f261e6e927bc69d358192e83f3428fa51d2e88811d37011de2f2abe"
+      },
+      {
+        "state": {
+          "tick": 94,
+          "rngU32": 3,
+          "ball": {
+            "pos": {
+              "x": 33254.8631695,
+              "y": 33261.2058101
+            },
+            "vel": {
+              "x": 0,
+              "y": 460.6
+            }
+          },
+          "nearMissBucketIds": [],
+          "done": false
+        },
+        "sha256": "8936649e08d6edd7bf1a8f4f1ca91e73d4a4c4bf12ca316c1c2b9a21656a10f4"
+      },
+      {
+        "state": {
+          "tick": 95,
+          "rngU32": 2365144877,
+          "ball": {
+            "pos": {
+              "x": 33254.8464511,
+              "y": 33263.0448323
+            },
+            "vel": {
+              "x": -27.322508,
+              "y": -371.2811439
+            }
+          },
+          "nearMissBucketIds": [],
+          "done": false
+        },
+        "sha256": "3af0138f95044e24f75fe14fcb471559ae987c4569d3a4e1f1aabab989dacc7f"
+      },
+      {
+        "state": {
+          "tick": 96,
+          "rngU32": 2365144877,
+          "ball": {
+            "pos": {
+              "x": 33254.7098386,
+              "y": 33261.2129266
+            },
+            "vel": {
+              "x": -27.322508,
+              "y": -366.3811439
+            }
+          },
+          "nearMissBucketIds": [],
+          "done": false
+        },
+        "sha256": "fca0621e32b3b717ff9952a31f1a0afa37938f62dec973148f4ad38426d8ae09"
+      },
+      {
+        "state": {
+          "tick": 100,
+          "rngU32": 2365144877,
+          "ball": {
+            "pos": {
+              "x": 33254.1633886,
+              "y": 33254.1303038
+            },
+            "vel": {
+              "x": -27.322508,
+              "y": -346.7811439
+            }
+          },
+          "nearMissBucketIds": [],
+          "done": false
+        },
+        "sha256": "648f0790198743292a9819dbb9bb4f6a104c68b3a436a9d6d0dcfa45182c6cc6"
+      },
+      {
+        "state": {
+          "tick": 247,
+          "rngU32": 2365144877,
+          "ball": {
+            "pos": {
+              "x": 33234.0813511,
+              "y": 33265.7571659
+            },
+            "vel": {
+              "x": -27.322508,
+              "y": 373.5188561
+            }
+          },
+          "nearMissBucketIds": [],
+          "done": false
+        },
+        "sha256": "5545343ba2af4c211e6ed5393026f79e1fdad0f675c50ed25eda8848761168e8"
+      },
+      {
+        "state": {
+          "tick": 248,
+          "rngU32": 3345418727,
+          "ball": {
+            "pos": {
+              "x": 33233.7976781,
+              "y": 33267.2598082
+            },
+            "vel": {
+              "x": -245.2046286,
+              "y": -214.3293483
+            }
+          },
+          "nearMissBucketIds": [],
+          "done": false
+        },
+        "sha256": "291b06aeae44ffc57eba425f5927a8d917dd88b6efa39a2a9bce4d83cab8214c"
+      },
+      {
+        "state": {
+          "tick": 249,
+          "rngU32": 3345418727,
+          "ball": {
+            "pos": {
+              "x": 33232.571655,
+              "y": 33266.2126615
+            },
+            "vel": {
+              "x": -245.2046286,
+              "y": -209.4293483
+            }
+          },
+          "nearMissBucketIds": [],
+          "done": false
+        },
+        "sha256": "7063f17829c08c2e24ede7ecae91f854242e6d4baa7e3cd95155417ed8c65019"
+      },
+      {
+        "state": {
+          "tick": 456,
+          "rngU32": 3345418727,
+          "ball": {
+            "pos": {
+              "x": 32978.7848733,
+              "y": 33576.8892946
+            },
+            "vel": {
+              "x": -245.2046286,
+              "y": 804.8706517
+            }
+          },
+          "nearMissBucketIds": [],
+          "done": false
+        },
+        "sha256": "c100bc5e201ab986cb9aee874d5733c44cc118354fc8779634f60702d34fb938"
+      },
+      {
+        "state": {
+          "tick": 457,
+          "rngU32": 3714889393,
+          "ball": {
+            "pos": {
+              "x": 32978.7609496,
+              "y": 33578.7335721
+            },
+            "vel": {
+              "x": 483.3659245,
+              "y": -491.0012689
+            }
+          },
+          "nearMissBucketIds": [],
+          "done": false
+        },
+        "sha256": "4f4a0954aaafe9f04eca0ad3b88329c745f9b42359d1493bd8ecb457dacfc936"
+      },
+      {
+        "state": {
+          "tick": 458,
+          "rngU32": 3714889393,
+          "ball": {
+            "pos": {
+              "x": 32981.1777792,
+              "y": 33576.3030658
+            },
+            "vel": {
+              "x": 483.3659245,
+              "y": -486.1012689
+            }
+          },
+          "nearMissBucketIds": [],
+          "done": false
+        },
+        "sha256": "92ff02943cf673f20d25b9a940095dcdc85799803d58fa40158ccb96582cdbe1"
+      },
+      {
+        "state": {
+          "tick": 1443,
+          "rngU32": 4232815369,
+          "ball": {
+            "pos": {
+              "x": 33073.1813555,
+              "y": 34095.6893087
+            },
+            "vel": {
+              "x": 230.6019249,
+              "y": -381.5970169
+            }
+          },
+          "nearMissBucketIds": [],
+          "done": false
+        },
+        "sha256": "134e220ae8668a2e95dee1547aa1520aa592ea1489aa3f25eb8f843c36845347"
+      },
+      {
+        "state": {
+          "tick": 2886,
+          "rngU32": 1810077343,
+          "ball": {
+            "pos": {
+              "x": 33284.2841457,
+              "y": 35363.4084111
+            },
+            "vel": {
+              "x": -371.58302,
+              "y": 1216.6059602
+            }
+          },
+          "nearMissBucketIds": [],
+          "done": false
+        },
+        "sha256": "6ea41e52b198c00b5ea9760aa97494ad507e7b7a6e0eb4a285133569682bb4ea"
+      },
+      {
+        "state": {
+          "tick": 2887,
+          "rngU32": 1810077343,
+          "ball": {
+            "pos": {
+              "x": 33282.4262306,
+              "y": 35369.5159409
+            },
+            "vel": {
+              "x": -371.58302,
+              "y": 1221.5059602
+            }
+          },
+          "nearMissBucketIds": [],
+          "done": true,
+          "result": {
+            "kind": "LOST",
+            "finalX": 33282.4262306,
+            "nearMissBucketIds": []
+          }
+        },
+        "sha256": "59b011927bc285e0afeaf9598b80c6d2f47b2477ccf16b79b0cdced89411a1d6"
+      }
+    ]
+  },
+  {
+    "seed": 4,
+    "finalTick": 2088,
+    "result": {
+      "kind": "IN_BUCKET",
+      "bucketId": "receiver-04"
+    },
+    "finalState": {
+      "tick": 2088,
+      "rngU32": 1716849652,
+      "ball": {
+        "pos": {
+          "x": 33619.8161306,
+          "y": 34861.9225518
+        },
+        "vel": {
+          "x": 275.8141875,
+          "y": 993.9050776
+        }
+      },
+      "nearMissBucketIds": [],
+      "done": true,
+      "result": {
+        "kind": "IN_BUCKET",
+        "bucketId": "receiver-04"
+      }
+    },
+    "contactCount": 24,
+    "contactObjects": [
+      "leaf-01",
+      "frog-02",
+      "leaf-03",
+      "left-4",
+      "flower-07",
+      "wood-08",
+      "right-4",
+      "wood-05",
+      "flower-06",
+      "leaf-04",
+      "right-6",
+      "near-divider-3"
+    ],
+    "bucketEntries": [
+      {
+        "type": "bucket_entered",
+        "tick": 2088,
+        "timeSec": 10.44,
+        "ballId": "board01-ball",
+        "bucketId": "receiver-04",
+        "x": 33619.8161306,
+        "y": 34861.9225518
+      }
+    ],
+    "trajectorySha256": "b846d8406f357ad0f0a66dc9ea3c4e81ed58c207211d25054d4c205a486e1bf3",
+    "physicalTraceSha256": "b126588110b225e2595419827e0e8035add302cf8616b31cda056c5e8f8c7b67",
+    "checkpoints": [
+      {
+        "state": {
+          "tick": 0,
+          "rngU32": 4,
+          "ball": {
+            "pos": {
+              "x": 33254.863169496064,
+              "y": 33151.81331014809
+            },
+            "vel": {
+              "x": 0,
+              "y": 0
+            }
+          },
+          "nearMissBucketIds": [],
+          "done": false
+        },
+        "sha256": "29c580de84be22a04f0b4af51357eb1db99e15cd872e549e9ac51b02d3172a09"
+      },
+      {
+        "state": {
+          "tick": 1,
+          "rngU32": 4,
+          "ball": {
+            "pos": {
+              "x": 33254.8631695,
+              "y": 33151.8378101
+            },
+            "vel": {
+              "x": 0,
+              "y": 4.9
+            }
+          },
+          "nearMissBucketIds": [],
+          "done": false
+        },
+        "sha256": "5e522035e1d61e61c3a21f351d383af5e8d4077c8fc753f4760678391fb29e05"
+      },
+      {
+        "state": {
+          "tick": 50,
+          "rngU32": 4,
+          "ball": {
+            "pos": {
+              "x": 33254.8631695,
+              "y": 33183.0508101
+            },
+            "vel": {
+              "x": 0,
+              "y": 245
+            }
+          },
+          "nearMissBucketIds": [],
+          "done": false
+        },
+        "sha256": "7b8e7f613685cf5baf8e320219a0492053cde592bbbaa35e59ecb05811708acf"
+      },
+      {
+        "state": {
+          "tick": 94,
+          "rngU32": 4,
+          "ball": {
+            "pos": {
+              "x": 33254.8631695,
+              "y": 33261.2058101
+            },
+            "vel": {
+              "x": 0,
+              "y": 460.6
+            }
+          },
+          "nearMissBucketIds": [],
+          "done": false
+        },
+        "sha256": "f90a2d45ecd2c9dcde8a4019e9eb4373becc3ccc141ba62796469e25c1d03388"
+      },
+      {
+        "state": {
+          "tick": 95,
+          "rngU32": 2754714582,
+          "ball": {
+            "pos": {
+              "x": 33254.8464511,
+              "y": 33263.0448323
+            },
+            "vel": {
+              "x": -24.9710814,
+              "y": -371.4539236
+            }
+          },
+          "nearMissBucketIds": [],
+          "done": false
+        },
+        "sha256": "61d500637fc7aceb71b7f25ba55d55b2b894e0d3fc2b72f95e83b9c10f040c1f"
+      },
+      {
+        "state": {
+          "tick": 96,
+          "rngU32": 2754714582,
+          "ball": {
+            "pos": {
+              "x": 33254.7215957,
+              "y": 33261.2120627
+            },
+            "vel": {
+              "x": -24.9710814,
+              "y": -366.5539236
+            }
+          },
+          "nearMissBucketIds": [],
+          "done": false
+        },
+        "sha256": "df9db0d15a62a28b3fc3f1c25882a81a21f974f9c06f023e6c5da6fdad5cb509"
+      },
+      {
+        "state": {
+          "tick": 100,
+          "rngU32": 2754714582,
+          "ball": {
+            "pos": {
+              "x": 33254.2221741,
+              "y": 33254.1259843
+            },
+            "vel": {
+              "x": -24.9710814,
+              "y": -346.9539236
+            }
+          },
+          "nearMissBucketIds": [],
+          "done": false
+        },
+        "sha256": "d4fc8c1f6265c187134049248c810d046db80b2a849c596f48c92784cf228a72"
+      },
+      {
+        "state": {
+          "tick": 247,
+          "rngU32": 2754714582,
+          "ball": {
+            "pos": {
+              "x": 33235.8684303,
+              "y": 33265.6258531
+            },
+            "vel": {
+              "x": -24.9710814,
+              "y": 373.3460764
+            }
+          },
+          "nearMissBucketIds": [],
+          "done": false
+        },
+        "sha256": "41b4bb5d4a4d8d5eb082f5346d650640bd2fbf5ec14d94e0830f99a016e78d13"
+      },
+      {
+        "state": {
+          "tick": 248,
+          "rngU32": 3504402808,
+          "ball": {
+            "pos": {
+              "x": 33235.4464548,
+              "y": 33266.6621326
+            },
+            "vel": {
+              "x": -227.7614011,
+              "y": -224.4359576
+            }
+          },
+          "nearMissBucketIds": [],
+          "done": false
+        },
+        "sha256": "1d41fb554d9fdc0fa2e2fa02525c6206e126353d2cad1fd48f519d901b33241b"
+      },
+      {
+        "state": {
+          "tick": 249,
+          "rngU32": 3504402808,
+          "ball": {
+            "pos": {
+              "x": 33234.3076478,
+              "y": 33265.5644528
+            },
+            "vel": {
+              "x": -227.7614011,
+              "y": -219.5359576
+            }
+          },
+          "nearMissBucketIds": [],
+          "done": false
+        },
+        "sha256": "58fd4c9858749c5c054ba24fe808e31ccc177380a09eaf27f5e9af333691ea2b"
+      },
+      {
+        "state": {
+          "tick": 461,
+          "rngU32": 3504402808,
+          "ball": {
+            "pos": {
+              "x": 32992.8805638,
+              "y": 33586.0173352
+            },
+            "vel": {
+              "x": -227.7614011,
+              "y": 819.2640424
+            }
+          },
+          "nearMissBucketIds": [],
+          "done": false
+        },
+        "sha256": "db5b263aecd227e7330dfd5e883d9aac22c84304c7216a34577e08bfadc7f215"
+      },
+      {
+        "state": {
+          "tick": 462,
+          "rngU32": 2631315818,
+          "ball": {
+            "pos": {
+              "x": 32992.7749722,
+              "y": 33589.0780206
+            },
+            "vel": {
+              "x": 710.328412,
+              "y": -131.6991883
+            }
+          },
+          "nearMissBucketIds": [],
+          "done": false
+        },
+        "sha256": "24a8869694e0d9121d0330d7731a3e1f89fc217eb500ab47cfd84df67c0eb83d"
+      },
+      {
+        "state": {
+          "tick": 463,
+          "rngU32": 2631315818,
+          "ball": {
+            "pos": {
+              "x": 32996.3266143,
+              "y": 33588.4440247
+            },
+            "vel": {
+              "x": 710.328412,
+              "y": -126.7991883
+            }
+          },
+          "nearMissBucketIds": [],
+          "done": false
+        },
+        "sha256": "392972d67b9101720ab789315ca307c0e9a0f029447df40efcc9d5b55974eee5"
+      },
+      {
+        "state": {
+          "tick": 1044,
+          "rngU32": 2293550972,
+          "ball": {
+            "pos": {
+              "x": 33747.786511,
+              "y": 33972.9600504
+            },
+            "vel": {
+              "x": -39.3159985,
+              "y": -243.6575057
+            }
+          },
+          "nearMissBucketIds": [],
+          "done": false
+        },
+        "sha256": "bd0d0a0dd162d8a43d09b5d2a7f4f9ccd5c29accf600e06f10fd76dd97343f2d"
+      },
+      {
+        "state": {
+          "tick": 2087,
+          "rngU32": 1716849652,
+          "ball": {
+            "pos": {
+              "x": 33618.4370597,
+              "y": 34856.9530264
+            },
+            "vel": {
+              "x": 275.8141875,
+              "y": 989.0050776
+            }
+          },
+          "nearMissBucketIds": [],
+          "done": false
+        },
+        "sha256": "7447dbac0109149e214c443a76575030e92fec9dc5ed5ecafd2432979835415d"
+      },
+      {
+        "state": {
+          "tick": 2088,
+          "rngU32": 1716849652,
+          "ball": {
+            "pos": {
+              "x": 33619.8161306,
+              "y": 34861.9225518
+            },
+            "vel": {
+              "x": 275.8141875,
+              "y": 993.9050776
+            }
+          },
+          "nearMissBucketIds": [],
+          "done": true,
+          "result": {
+            "kind": "IN_BUCKET",
+            "bucketId": "receiver-04"
+          }
+        },
+        "sha256": "18e60ff989f400d5ff37cba98d6bcece4af6950daaa0826b5d57063447dfb46c"
+      }
+    ]
+  },
+  {
+    "seed": 5,
+    "finalTick": 1410,
+    "result": {
+      "kind": "LOST",
+      "finalX": 33562.2203592,
+      "nearMissBucketIds": []
+    },
+    "finalState": {
+      "tick": 1410,
+      "rngU32": 3426367269,
+      "ball": {
+        "pos": {
+          "x": 33562.2203592,
+          "y": 35371.0293291
+        },
+        "vel": {
+          "x": 311.9398565,
+          "y": 1411.1043493
+        }
+      },
+      "nearMissBucketIds": [],
+      "done": true,
+      "result": {
+        "kind": "LOST",
+        "finalX": 33562.2203592,
+        "nearMissBucketIds": []
+      }
+    },
+    "contactCount": 16,
+    "contactObjects": [
+      "leaf-01",
+      "frog-02",
+      "flower-03",
+      "flower-04",
+      "left-4",
+      "wood-03",
+      "frog-04",
+      "leaf-05",
+      "flower-05",
+      "wood-07",
+      "frog-05"
+    ],
+    "bucketEntries": [],
+    "trajectorySha256": "0415d6b4209ae1bbc1fff00499a6ce1bdb57d1e1c311894daedf7df46d7ca70b",
+    "physicalTraceSha256": "2a7d4213a8eeac237718174842abd90c26b5451f94aa55d30c6750f3e0e7e261",
+    "checkpoints": [
+      {
+        "state": {
+          "tick": 0,
+          "rngU32": 5,
+          "ball": {
+            "pos": {
+              "x": 33254.863169496064,
+              "y": 33151.81331014809
+            },
+            "vel": {
+              "x": 0,
+              "y": 0
+            }
+          },
+          "nearMissBucketIds": [],
+          "done": false
+        },
+        "sha256": "0d264a7cd6e74a8421c0f234fc0c94335a6579b93929b36b803303b57691c654"
+      },
+      {
+        "state": {
+          "tick": 1,
+          "rngU32": 5,
+          "ball": {
+            "pos": {
+              "x": 33254.8631695,
+              "y": 33151.8378101
+            },
+            "vel": {
+              "x": 0,
+              "y": 4.9
+            }
+          },
+          "nearMissBucketIds": [],
+          "done": false
+        },
+        "sha256": "68196f225ac6a797240fa8d1c5a70903454dd4de57c6eda60257a746079e1437"
+      },
+      {
+        "state": {
+          "tick": 50,
+          "rngU32": 5,
+          "ball": {
+            "pos": {
+              "x": 33254.8631695,
+              "y": 33183.0508101
+            },
+            "vel": {
+              "x": 0,
+              "y": 245
+            }
+          },
+          "nearMissBucketIds": [],
+          "done": false
+        },
+        "sha256": "15dbf1f3aec0d56167c74ad33ee771c375e2441ee8c5c85e63d0d1b67983315b"
+      },
+      {
+        "state": {
+          "tick": 94,
+          "rngU32": 5,
+          "ball": {
+            "pos": {
+              "x": 33254.8631695,
+              "y": 33261.2058101
+            },
+            "vel": {
+              "x": 0,
+              "y": 460.6
+            }
+          },
+          "nearMissBucketIds": [],
+          "done": false
+        },
+        "sha256": "cb78080d07f670aec73378cd7ee59fe037402059deb6d69830b9d54eaa0ec53c"
+      },
+      {
+        "state": {
+          "tick": 95,
+          "rngU32": 3144284287,
+          "ball": {
+            "pos": {
+              "x": 33254.8464511,
+              "y": 33263.0448323
+            },
+            "vel": {
+              "x": -22.6185622,
+              "y": -371.6118108
+            }
+          },
+          "nearMissBucketIds": [],
+          "done": false
+        },
+        "sha256": "da1a0b2d7735c120ff4e4c11e3c88d412d778614b01e000919e48e823a3266eb"
+      },
+      {
+        "state": {
+          "tick": 96,
+          "rngU32": 3144284287,
+          "ball": {
+            "pos": {
+              "x": 33254.7333583,
+              "y": 33261.2112732
+            },
+            "vel": {
+              "x": -22.6185622,
+              "y": -366.7118108
+            }
+          },
+          "nearMissBucketIds": [],
+          "done": false
+        },
+        "sha256": "c025dfbea27936b97985a72490d61daae8ad7cc8663d28f053e653a4dd532667"
+      },
+      {
+        "state": {
+          "tick": 100,
+          "rngU32": 3144284287,
+          "ball": {
+            "pos": {
+              "x": 33254.2809871,
+              "y": 33254.1220368
+            },
+            "vel": {
+              "x": -22.6185622,
+              "y": -347.1118108
+            }
+          },
+          "nearMissBucketIds": [],
+          "done": false
+        },
+        "sha256": "9d2d6e578ae7da91b3569a643557b5a14257ff87023ab178d58bbd71e4a9da10"
+      },
+      {
+        "state": {
+          "tick": 247,
+          "rngU32": 3144284287,
+          "ball": {
+            "pos": {
+              "x": 33237.6563455,
+              "y": 33265.5058491
+            },
+            "vel": {
+              "x": -22.6185622,
+              "y": 373.1881892
+            }
+          },
+          "nearMissBucketIds": [],
+          "done": false
+        },
+        "sha256": "7722d8e599751f0cf85b92b7ebb87c3931838a3ccb0a02f963d2709b43722d29"
+      },
+      {
+        "state": {
+          "tick": 248,
+          "rngU32": 3663386889,
+          "ball": {
+            "pos": {
+              "x": 33237.1320477,
+              "y": 33266.1016579
+            },
+            "vel": {
+              "x": -209.520893,
+              "y": -233.4978138
+            }
+          },
+          "nearMissBucketIds": [],
+          "done": false
+        },
+        "sha256": "7aba018f27efb2ae2e214cb2797a89ce67f78e12c7a3b0f3600a8a2f21369c1b"
+      },
+      {
+        "state": {
+          "tick": 249,
+          "rngU32": 3663386889,
+          "ball": {
+            "pos": {
+              "x": 33236.0844432,
+              "y": 33264.9586688
+            },
+            "vel": {
+              "x": -209.520893,
+              "y": -228.5978138
+            }
+          },
+          "nearMissBucketIds": [],
+          "done": false
+        },
+        "sha256": "ab49d908f7833f6ec4f38d205c7fb9f67fa9756986bc4392025f9784006bd506"
+      },
+      {
+        "state": {
+          "tick": 468,
+          "rngU32": 3663386889,
+          "ball": {
+            "pos": {
+              "x": 33006.6590577,
+              "y": 33604.8490559
+            },
+            "vel": {
+              "x": -209.520893,
+              "y": 844.5021862
+            }
+          },
+          "nearMissBucketIds": [],
+          "done": false
+        },
+        "sha256": "5180cdade16ada49ea9af514739898a53f1c4b162f76e84df6919384ca44bb5b"
+      },
+      {
+        "state": {
+          "tick": 469,
+          "rngU32": 1547742243,
+          "ball": {
+            "pos": {
+              "x": 33006.4879075,
+              "y": 33608.7030767
+            },
+            "vel": {
+              "x": 688.7873629,
+              "y": 441.8655212
+            }
+          },
+          "nearMissBucketIds": [],
+          "done": false
+        },
+        "sha256": "a4ac6f7442bd325bcf6ed947a711b99339c219e36ef0864ec540549a3f2309cc"
+      },
+      {
+        "state": {
+          "tick": 470,
+          "rngU32": 1547742243,
+          "ball": {
+            "pos": {
+              "x": 33009.9318443,
+              "y": 33610.9369043
+            },
+            "vel": {
+              "x": 688.7873629,
+              "y": 446.7655212
+            }
+          },
+          "nearMissBucketIds": [],
+          "done": false
+        },
+        "sha256": "eb772136be5648f2c037183637de156eab92803a72cecb549b51683dbe1b53fe"
+      },
+      {
+        "state": {
+          "tick": 705,
+          "rngU32": 2766835755,
+          "ball": {
+            "pos": {
+              "x": 33007.386554,
+              "y": 33993.0737036
+            },
+            "vel": {
+              "x": -119.7686883,
+              "y": 699.8659669
+            }
+          },
+          "nearMissBucketIds": [],
+          "done": false
+        },
+        "sha256": "a8ea12e8b6b26dbcd48c5f88e55945cb5fa98ad5585c8cdb1e866e90a4a80a4f"
+      },
+      {
+        "state": {
+          "tick": 1409,
+          "rngU32": 3426367269,
+          "ball": {
+            "pos": {
+              "x": 33560.6606599,
+              "y": 35363.9738074
+            },
+            "vel": {
+              "x": 311.9398565,
+              "y": 1406.2043493
+            }
+          },
+          "nearMissBucketIds": [],
+          "done": false
+        },
+        "sha256": "31fe701fedb860e8e9842cb39782425dfc5be77f5bb45583ee2ba10dceb003b8"
+      },
+      {
+        "state": {
+          "tick": 1410,
+          "rngU32": 3426367269,
+          "ball": {
+            "pos": {
+              "x": 33562.2203592,
+              "y": 35371.0293291
+            },
+            "vel": {
+              "x": 311.9398565,
+              "y": 1411.1043493
+            }
+          },
+          "nearMissBucketIds": [],
+          "done": true,
+          "result": {
+            "kind": "LOST",
+            "finalX": 33562.2203592,
+            "nearMissBucketIds": []
+          }
+        },
+        "sha256": "ef3d7bb8fa59b84d60e66db17852b7e9a20c50cb634081319b16d830564cb9ac"
+      }
+    ]
+  },
+  {
+    "seed": 6,
+    "finalTick": 2726,
+    "result": {
+      "kind": "LOST",
+      "finalX": 33706.3571897,
+      "nearMissBucketIds": []
+    },
+    "finalState": {
+      "tick": 2726,
+      "rngU32": 683278500,
+      "ball": {
+        "pos": {
+          "x": 33706.3571897,
+          "y": 35369.4356546
+        },
+        "vel": {
+          "x": 91.8552525,
+          "y": 1248.1783998
+        }
+      },
+      "nearMissBucketIds": [],
+      "done": true,
+      "result": {
+        "kind": "LOST",
+        "finalX": 33706.3571897,
+        "nearMissBucketIds": []
+      }
+    },
+    "contactCount": 23,
+    "contactObjects": [
+      "leaf-01",
+      "frog-02",
+      "wood-03",
+      "left-3",
+      "flower-03",
+      "leaf-03",
+      "flower-02",
+      "right-3",
+      "right-4",
+      "flower-06",
+      "right-5",
+      "frog-05",
+      "near-divider-3",
+      "wood-08"
+    ],
+    "bucketEntries": [],
+    "trajectorySha256": "d4a35833f162955d52c339be0f58f8fb6c3bc7efce232c5ceaf5dd0693a60011",
+    "physicalTraceSha256": "a202a0f1d70768833aed4dbdf829442c72fb001a38993ddee48b9816e6f362e5",
+    "checkpoints": [
+      {
+        "state": {
+          "tick": 0,
+          "rngU32": 6,
+          "ball": {
+            "pos": {
+              "x": 33254.863169496064,
+              "y": 33151.81331014809
+            },
+            "vel": {
+              "x": 0,
+              "y": 0
+            }
+          },
+          "nearMissBucketIds": [],
+          "done": false
+        },
+        "sha256": "d042c1a7e14db6b87205026ddda94d397bbb955aa0cc70c7b73b4ef3e503554d"
+      },
+      {
+        "state": {
+          "tick": 1,
+          "rngU32": 6,
+          "ball": {
+            "pos": {
+              "x": 33254.8631695,
+              "y": 33151.8378101
+            },
+            "vel": {
+              "x": 0,
+              "y": 4.9
+            }
+          },
+          "nearMissBucketIds": [],
+          "done": false
+        },
+        "sha256": "6d409064eef9db84106768aa06b5be2c80f719c67a20fd27eec6e36876e298d9"
+      },
+      {
+        "state": {
+          "tick": 50,
+          "rngU32": 6,
+          "ball": {
+            "pos": {
+              "x": 33254.8631695,
+              "y": 33183.0508101
+            },
+            "vel": {
+              "x": 0,
+              "y": 245
+            }
+          },
+          "nearMissBucketIds": [],
+          "done": false
+        },
+        "sha256": "b22384560c69c567d86151542550f3ee43092cccbab77487dc0ef2253702bb1e"
+      },
+      {
+        "state": {
+          "tick": 94,
+          "rngU32": 6,
+          "ball": {
+            "pos": {
+              "x": 33254.8631695,
+              "y": 33261.2058101
+            },
+            "vel": {
+              "x": 0,
+              "y": 460.6
+            }
+          },
+          "nearMissBucketIds": [],
+          "done": false
+        },
+        "sha256": "7aae9de55cd8dd6ecd19cc7ad926b14403c52dd2a8d0b4129682bb14a33a3554"
+      },
+      {
+        "state": {
+          "tick": 95,
+          "rngU32": 3533853992,
+          "ball": {
+            "pos": {
+              "x": 33254.8464511,
+              "y": 33263.0448323
+            },
+            "vel": {
+              "x": -20.2650448,
+              "y": -371.7547989
+            }
+          },
+          "nearMissBucketIds": [],
+          "done": false
+        },
+        "sha256": "46d058c708f11b2360f193b6385eb9316227ac19abe5dc10fd16957a26554d25"
+      },
+      {
+        "state": {
+          "tick": 96,
+          "rngU32": 3533853992,
+          "ball": {
+            "pos": {
+              "x": 33254.7451259,
+              "y": 33261.2105583
+            },
+            "vel": {
+              "x": -20.2650448,
+              "y": -366.8547989
+            }
+          },
+          "nearMissBucketIds": [],
+          "done": false
+        },
+        "sha256": "20731487422c98f06e93d54fea8e84658ea93d9c4072542b9e59950774292271"
+      },
+      {
+        "state": {
+          "tick": 100,
+          "rngU32": 3533853992,
+          "ball": {
+            "pos": {
+              "x": 33254.3398251,
+              "y": 33254.1184623
+            },
+            "vel": {
+              "x": -20.2650448,
+              "y": -347.2547989
+            }
+          },
+          "nearMissBucketIds": [],
+          "done": false
+        },
+        "sha256": "6d7f0b0b2b397253e5613b6457d6ffeda4a1f5f5c1cd5d33f85b917ff1e8f2f8"
+      },
+      {
+        "state": {
+          "tick": 247,
+          "rngU32": 3533853992,
+          "ball": {
+            "pos": {
+              "x": 33239.4450207,
+              "y": 33265.3971843
+            },
+            "vel": {
+              "x": -20.2650448,
+              "y": 373.0452011
+            }
+          },
+          "nearMissBucketIds": [],
+          "done": false
+        },
+        "sha256": "c0fba4bc319d387e42073759f54c74935ce5f3a11f74b0027d2b250913f16d9d"
+      },
+      {
+        "state": {
+          "tick": 248,
+          "rngU32": 3822370970,
+          "ball": {
+            "pos": {
+              "x": 33238.8525709,
+              "y": 33265.5808767
+            },
+            "vel": {
+              "x": -194.1320486,
+              "y": -255.2910738
+            }
+          },
+          "nearMissBucketIds": [],
+          "done": false
+        },
+        "sha256": "715150bc671a211ed0411c4a26447b51abce31a73dfaad8ca127114e0c5ec632"
+      },
+      {
+        "state": {
+          "tick": 249,
+          "rngU32": 3822370970,
+          "ball": {
+            "pos": {
+              "x": 33237.8819107,
+              "y": 33264.3289213
+            },
+            "vel": {
+              "x": -194.1320486,
+              "y": -250.3910738
+            }
+          },
+          "nearMissBucketIds": [],
+          "done": false
+        },
+        "sha256": "e82c0a6b3d175c252af61dd0b743687369a3a497b34cece0e2e271763d572659"
+      },
+      {
+        "state": {
+          "tick": 481,
+          "rngU32": 3822370970,
+          "ball": {
+            "pos": {
+              "x": 33012.6887443,
+              "y": 33636.0612685
+            },
+            "vel": {
+              "x": -194.1320486,
+              "y": 886.4089262
+            }
+          },
+          "nearMissBucketIds": [],
+          "done": false
+        },
+        "sha256": "d41be2d690aafcb06b5af37e3249b4ff5bc9668fd480793a19c911fba86e837f"
+      },
+      {
+        "state": {
+          "tick": 482,
+          "rngU32": 464168668,
+          "ball": {
+            "pos": {
+              "x": 33011.8311666,
+              "y": 33640.5278838
+            },
+            "vel": {
+              "x": 36.2884967,
+              "y": 908.9609539
+            }
+          },
+          "nearMissBucketIds": [],
+          "done": false
+        },
+        "sha256": "cd9c4fba9788fe4584fdd51e066417278442cbdc7d7218e054ef4647d1b6cf71"
+      },
+      {
+        "state": {
+          "tick": 483,
+          "rngU32": 464168668,
+          "ball": {
+            "pos": {
+              "x": 33012.0126091,
+              "y": 33645.0971886
+            },
+            "vel": {
+              "x": 36.2884967,
+              "y": 913.8609539
+            }
+          },
+          "nearMissBucketIds": [],
+          "done": false
+        },
+        "sha256": "e8b955b60d3a47af7aa57c7e8fe89c6da8f5e186090a5edd12c9f0ad81d294ac"
+      },
+      {
+        "state": {
+          "tick": 1363,
+          "rngU32": 3596887892,
+          "ball": {
+            "pos": {
+              "x": 33606.1302462,
+              "y": 34329.4389149
+            },
+            "vel": {
+              "x": 634.7629743,
+              "y": -55.2758327
+            }
+          },
+          "nearMissBucketIds": [],
+          "done": false
+        },
+        "sha256": "39f9ef8bbc1e5c34e394b9c67b8bc15c9827a27a96914388c8a6dad3f6bdaed8"
+      },
+      {
+        "state": {
+          "tick": 2725,
+          "rngU32": 683278500,
+          "ball": {
+            "pos": {
+              "x": 33705.8979134,
+              "y": 35363.1947626
+            },
+            "vel": {
+              "x": 91.8552525,
+              "y": 1243.2783998
+            }
+          },
+          "nearMissBucketIds": [],
+          "done": false
+        },
+        "sha256": "d4a5af21b4f782c796f7cdbe82af4b59e0937f2d895bff830b7e9099d7f0f40e"
+      },
+      {
+        "state": {
+          "tick": 2726,
+          "rngU32": 683278500,
+          "ball": {
+            "pos": {
+              "x": 33706.3571897,
+              "y": 35369.4356546
+            },
+            "vel": {
+              "x": 91.8552525,
+              "y": 1248.1783998
+            }
+          },
+          "nearMissBucketIds": [],
+          "done": true,
+          "result": {
+            "kind": "LOST",
+            "finalX": 33706.3571897,
+            "nearMissBucketIds": []
+          }
+        },
+        "sha256": "221a25e9a7e86c300f555c660cd3fe9365be4cb72b4c8d9fe131d66b74742a8b"
+      }
+    ]
+  },
+  {
+    "seed": 7,
+    "finalTick": 1824,
+    "result": {
+      "kind": "LOST",
+      "finalX": 33083.5673112,
+      "nearMissBucketIds": []
+    },
+    "finalState": {
+      "tick": 1824,
+      "rngU32": 2536230063,
+      "ball": {
+        "pos": {
+          "x": 33083.5673112,
+          "y": 35368.7811319
+        },
+        "vel": {
+          "x": -426.6294934,
+          "y": 1470.5303558
+        }
+      },
+      "nearMissBucketIds": [],
+      "done": true,
+      "result": {
+        "kind": "LOST",
+        "finalX": 33083.5673112,
+        "nearMissBucketIds": []
+      }
+    },
+    "contactCount": 20,
+    "contactObjects": [
+      "leaf-01",
+      "wood-01",
+      "left-2",
+      "frog-02",
+      "leaf-02",
+      "leaf-03",
+      "wood-02",
+      "right-3",
+      "right-4",
+      "wood-05",
+      "wood-04",
+      "leaf-04",
+      "flower-06"
+    ],
+    "bucketEntries": [],
+    "trajectorySha256": "8daaf5fb440aa8785d45924f0eff5f0f913d7750c6356c511c841433e5594b7a",
+    "physicalTraceSha256": "a7977d2cac0da300e2cadfc07a978bb6bf8001462eb470c0e9029a9bd0061d6c",
+    "checkpoints": [
+      {
+        "state": {
+          "tick": 0,
+          "rngU32": 7,
+          "ball": {
+            "pos": {
+              "x": 33254.863169496064,
+              "y": 33151.81331014809
+            },
+            "vel": {
+              "x": 0,
+              "y": 0
+            }
+          },
+          "nearMissBucketIds": [],
+          "done": false
+        },
+        "sha256": "e480e33502352ec1ba115816bced23b7347b659e2781dfc7051574df29a3ad2d"
+      },
+      {
+        "state": {
+          "tick": 1,
+          "rngU32": 7,
+          "ball": {
+            "pos": {
+              "x": 33254.8631695,
+              "y": 33151.8378101
+            },
+            "vel": {
+              "x": 0,
+              "y": 4.9
+            }
+          },
+          "nearMissBucketIds": [],
+          "done": false
+        },
+        "sha256": "8aaa7dba05baa0d97eb2605888ecbf072dfee2d3f255237577b263eb9a630ac1"
+      },
+      {
+        "state": {
+          "tick": 50,
+          "rngU32": 7,
+          "ball": {
+            "pos": {
+              "x": 33254.8631695,
+              "y": 33183.0508101
+            },
+            "vel": {
+              "x": 0,
+              "y": 245
+            }
+          },
+          "nearMissBucketIds": [],
+          "done": false
+        },
+        "sha256": "4f2652867507d0630cafde4a3d4cbf3c37fe1437ecb48f7c0837aaee99697816"
+      },
+      {
+        "state": {
+          "tick": 94,
+          "rngU32": 7,
+          "ball": {
+            "pos": {
+              "x": 33254.8631695,
+              "y": 33261.2058101
+            },
+            "vel": {
+              "x": 0,
+              "y": 460.6
+            }
+          },
+          "nearMissBucketIds": [],
+          "done": false
+        },
+        "sha256": "0a0ed938519f8c3dc363fcd9d77c46e7dc53af0fc7bb1b44048799d5414cb90e"
+      },
+      {
+        "state": {
+          "tick": 95,
+          "rngU32": 3923423697,
+          "ball": {
+            "pos": {
+              "x": 33254.8464511,
+              "y": 33263.0448323
+            },
+            "vel": {
+              "x": -17.9106234,
+              "y": -371.8828813
+            }
+          },
+          "nearMissBucketIds": [],
+          "done": false
+        },
+        "sha256": "3a3586dd6da709fae2ab4e17ff43dd79189b0a8c8685b447dc897738ebfc8346"
+      },
+      {
+        "state": {
+          "tick": 96,
+          "rngU32": 3923423697,
+          "ball": {
+            "pos": {
+              "x": 33254.756898,
+              "y": 33261.2099179
+            },
+            "vel": {
+              "x": -17.9106234,
+              "y": -366.9828813
+            }
+          },
+          "nearMissBucketIds": [],
+          "done": false
+        },
+        "sha256": "4d98830278702ea09746cc3f2a407f6acb17bee668467288878b9fd4c028c6ce"
+      },
+      {
+        "state": {
+          "tick": 100,
+          "rngU32": 3923423697,
+          "ball": {
+            "pos": {
+              "x": 33254.3986856,
+              "y": 33254.1152603
+            },
+            "vel": {
+              "x": -17.9106234,
+              "y": -347.3828813
+            }
+          },
+          "nearMissBucketIds": [],
+          "done": false
+        },
+        "sha256": "693cc92fd3e4cad6a06f5698f9fd0461e00de144dbe6c7d2355364e3ff533e7a"
+      },
+      {
+        "state": {
+          "tick": 246,
+          "rngU32": 3923423697,
+          "ball": {
+            "pos": {
+              "x": 33241.323933,
+              "y": 33263.4352579
+            },
+            "vel": {
+              "x": -17.9106234,
+              "y": 368.0171187
+            }
+          },
+          "nearMissBucketIds": [],
+          "done": false
+        },
+        "sha256": "5479bc1f41d84baab4ffb1a0ffffe4328ead052948aeed4ae65c55a59b119160"
+      },
+      {
+        "state": {
+          "tick": 247,
+          "rngU32": 3981355051,
+          "ball": {
+            "pos": {
+              "x": 33241.1506781,
+              "y": 33264.9639628
+            },
+            "vel": {
+              "x": -167.0506678,
+              "y": -261.6465831
+            }
+          },
+          "nearMissBucketIds": [],
+          "done": false
+        },
+        "sha256": "c92ddbab2e15da733194374af8ab4183a40f4f5cce7c2858585b3eb3de7b9f95"
+      },
+      {
+        "state": {
+          "tick": 248,
+          "rngU32": 3981355051,
+          "ball": {
+            "pos": {
+              "x": 33240.3154248,
+              "y": 33263.6802299
+            },
+            "vel": {
+              "x": -167.0506678,
+              "y": -256.7465831
+            }
+          },
+          "nearMissBucketIds": [],
+          "done": false
+        },
+        "sha256": "95a668bbefb85e79a295d715f27421fe9df8fb5fc53bde05c80b6f6c36f23385"
+      },
+      {
+        "state": {
+          "tick": 440,
+          "rngU32": 3981355051,
+          "ball": {
+            "pos": {
+              "x": 33079.9467912,
+              "y": 33471.1395131
+            },
+            "vel": {
+              "x": -167.0506678,
+              "y": 684.0534169
+            }
+          },
+          "nearMissBucketIds": [],
+          "done": false
+        },
+        "sha256": "fc6a10ce6af89919717bf2bd88f21bb1a64141351b4b6f8e86828068abc6d4c2"
+      },
+      {
+        "state": {
+          "tick": 441,
+          "rngU32": 3675562389,
+          "ball": {
+            "pos": {
+              "x": 33078.9287352,
+              "y": 33474.2443423
+            },
+            "vel": {
+              "x": -611.1221043,
+              "y": -159.0593199
+            }
+          },
+          "nearMissBucketIds": [],
+          "done": false
+        },
+        "sha256": "7b6e77e58ff733654a7ee6752df4c0a6f09b2bcd6f3fe3f6c3f301a4fe325106"
+      },
+      {
+        "state": {
+          "tick": 442,
+          "rngU32": 3675562389,
+          "ball": {
+            "pos": {
+              "x": 33075.8731247,
+              "y": 33473.4735457
+            },
+            "vel": {
+              "x": -611.1221043,
+              "y": -154.1593199
+            }
+          },
+          "nearMissBucketIds": [],
+          "done": false
+        },
+        "sha256": "1bf0573354ed68ff4d9672a011f2832f3104452ef4316ea3c5ceef9e416cc005"
+      },
+      {
+        "state": {
+          "tick": 912,
+          "rngU32": 4216642115,
+          "ball": {
+            "pos": {
+              "x": 33741.7918173,
+              "y": 34047.5695323
+            },
+            "vel": {
+              "x": -301.4074696,
+              "y": -436.12761
+            }
+          },
+          "nearMissBucketIds": [],
+          "done": false
+        },
+        "sha256": "b12f874a3a0fd2221264c58140ccc1305d2c69f9e9767bf8118f06bcf83510bf"
+      },
+      {
+        "state": {
+          "tick": 1823,
+          "rngU32": 2536230063,
+          "ball": {
+            "pos": {
+              "x": 33085.7004587,
+              "y": 35361.4284801
+            },
+            "vel": {
+              "x": -426.6294934,
+              "y": 1465.6303558
+            }
+          },
+          "nearMissBucketIds": [],
+          "done": false
+        },
+        "sha256": "b381065fb01c1189e86ec5174fad7d39c9a0a5f6f0e925b64e5c90b9dafbe4e5"
+      },
+      {
+        "state": {
+          "tick": 1824,
+          "rngU32": 2536230063,
+          "ball": {
+            "pos": {
+              "x": 33083.5673112,
+              "y": 35368.7811319
+            },
+            "vel": {
+              "x": -426.6294934,
+              "y": 1470.5303558
+            }
+          },
+          "nearMissBucketIds": [],
+          "done": true,
+          "result": {
+            "kind": "LOST",
+            "finalX": 33083.5673112,
+            "nearMissBucketIds": []
+          }
+        },
+        "sha256": "a085d13e1d62211a27b9167b0d64a0f78989e49cb19bb6e3f88e0d5acd73ae27"
+      }
+    ]
+  },
+  {
+    "seed": 8,
+    "finalTick": 1501,
+    "result": {
+      "kind": "LOST",
+      "finalX": 33785.8034685,
+      "nearMissBucketIds": []
+    },
+    "finalState": {
+      "tick": 1501,
+      "rngU32": 3525509376,
+      "ball": {
+        "pos": {
+          "x": 33785.8034685,
+          "y": 35375.8838184
+        },
+        "vel": {
+          "x": 345.5896033,
+          "y": 1620.2228555
+        }
+      },
+      "nearMissBucketIds": [],
+      "done": true,
+      "result": {
+        "kind": "LOST",
+        "finalX": 33785.8034685,
+        "nearMissBucketIds": []
+      }
+    },
+    "contactCount": 12,
+    "contactObjects": [
+      "leaf-01",
+      "frog-02",
+      "left-2",
+      "wood-01",
+      "leaf-04",
+      "frog-03",
+      "frog-05",
+      "flower-05",
+      "wood-04",
+      "frog-04"
+    ],
+    "bucketEntries": [],
+    "trajectorySha256": "c7f0f3345ec4e10275fd56241e90bf299b47e0d7cf634f531691a377b0590037",
+    "physicalTraceSha256": "848754d26667314bc728917440ef461f277213b1dd85807fe633032dc12d3124",
+    "checkpoints": [
+      {
+        "state": {
+          "tick": 0,
+          "rngU32": 8,
+          "ball": {
+            "pos": {
+              "x": 33254.863169496064,
+              "y": 33151.81331014809
+            },
+            "vel": {
+              "x": 0,
+              "y": 0
+            }
+          },
+          "nearMissBucketIds": [],
+          "done": false
+        },
+        "sha256": "2e902419fb637577590bac5a629087962d9fff8d133730f358aeed6b96b2f504"
+      },
+      {
+        "state": {
+          "tick": 1,
+          "rngU32": 8,
+          "ball": {
+            "pos": {
+              "x": 33254.8631695,
+              "y": 33151.8378101
+            },
+            "vel": {
+              "x": 0,
+              "y": 4.9
+            }
+          },
+          "nearMissBucketIds": [],
+          "done": false
+        },
+        "sha256": "243f3beadf1b8a2adc8d92c697f48dc02e1702bd9b5c92366a231fad7d1dcd90"
+      },
+      {
+        "state": {
+          "tick": 50,
+          "rngU32": 8,
+          "ball": {
+            "pos": {
+              "x": 33254.8631695,
+              "y": 33183.0508101
+            },
+            "vel": {
+              "x": 0,
+              "y": 245
+            }
+          },
+          "nearMissBucketIds": [],
+          "done": false
+        },
+        "sha256": "15484fc54f9a67a43bf5cd66b51958b8cbdd67733ed7b008ca7df08acfbd1f5c"
+      },
+      {
+        "state": {
+          "tick": 94,
+          "rngU32": 8,
+          "ball": {
+            "pos": {
+              "x": 33254.8631695,
+              "y": 33261.2058101
+            },
+            "vel": {
+              "x": 0,
+              "y": 460.6
+            }
+          },
+          "nearMissBucketIds": [],
+          "done": false
+        },
+        "sha256": "487b566a1d77506c695bb2dfc328dbe6834dadf4a626d671344b3fa73d0a7df0"
+      },
+      {
+        "state": {
+          "tick": 95,
+          "rngU32": 18026106,
+          "ball": {
+            "pos": {
+              "x": 33254.8464511,
+              "y": 33263.0448323
+            },
+            "vel": {
+              "x": -41.4666332,
+              "y": -370.0047993
+            }
+          },
+          "nearMissBucketIds": [],
+          "done": false
+        },
+        "sha256": "d72acbd33f6d059706ac0becb8af0c4dc541fc237136f1d66183892de68635b9"
+      },
+      {
+        "state": {
+          "tick": 96,
+          "rngU32": 18026106,
+          "ball": {
+            "pos": {
+              "x": 33254.6391179,
+              "y": 33261.2193083
+            },
+            "vel": {
+              "x": -41.4666332,
+              "y": -365.1047993
+            }
+          },
+          "nearMissBucketIds": [],
+          "done": false
+        },
+        "sha256": "26d5f5f4c8652711e2032c18a59007bbf62f4f8310bab2198556deb5f6f63136"
+      },
+      {
+        "state": {
+          "tick": 100,
+          "rngU32": 18026106,
+          "ball": {
+            "pos": {
+              "x": 33253.8097851,
+              "y": 33254.1622123
+            },
+            "vel": {
+              "x": -41.4666332,
+              "y": -345.5047993
+            }
+          },
+          "nearMissBucketIds": [],
+          "done": false
+        },
+        "sha256": "849b417202b1a67c53b6944c85da45f772050a1cc9a272ad5c2a01a8bbb27250"
+      },
+      {
+        "state": {
+          "tick": 250,
+          "rngU32": 18026106,
+          "ball": {
+            "pos": {
+              "x": 33222.7098051,
+              "y": 33272.4961123
+            },
+            "vel": {
+              "x": -41.4666332,
+              "y": 389.4952007
+            }
+          },
+          "nearMissBucketIds": [],
+          "done": false
+        },
+        "sha256": "382a7523b31f57664c8e6b39add7a622af998294db13e9e9a5958cdf6a790f0a"
+      },
+      {
+        "state": {
+          "tick": 251,
+          "rngU32": 4140339132,
+          "ball": {
+            "pos": {
+              "x": 33221.74811,
+              "y": 33273.2796608
+            },
+            "vel": {
+              "x": -338.8306931,
+              "y": -89.3753842
+            }
+          },
+          "nearMissBucketIds": [],
+          "done": false
+        },
+        "sha256": "bb3a91094a2ca66af84f34b94d1b9182b4c9891f3e88186bb3c3bef46bcb29cd"
+      },
+      {
+        "state": {
+          "tick": 252,
+          "rngU32": 4140339132,
+          "ball": {
+            "pos": {
+              "x": 33220.0539565,
+              "y": 33272.8572839
+            },
+            "vel": {
+              "x": -338.8306931,
+              "y": -84.4753842
+            }
+          },
+          "nearMissBucketIds": [],
+          "done": false
+        },
+        "sha256": "b009201ae8d6585de7c1be57ebb3d3808d70b24c078c8cc4d5b67c8d3b26da8c"
+      },
+      {
+        "state": {
+          "tick": 426,
+          "rngU32": 4140339132,
+          "ball": {
+            "pos": {
+              "x": 32925.2712475,
+              "y": 33572.3762033
+            },
+            "vel": {
+              "x": -338.8306931,
+              "y": 768.1246158
+            }
+          },
+          "nearMissBucketIds": [],
+          "done": false
+        },
+        "sha256": "114014bdf3d1a2bad6b874cf8530abf1865a7a012653beba847976482013b859"
+      },
+      {
+        "state": {
+          "tick": 427,
+          "rngU32": 2591988814,
+          "ball": {
+            "pos": {
+              "x": 32923.4364808,
+              "y": 33575.9060183
+            },
+            "vel": {
+              "x": -746.5649657,
+              "y": -208.2039355
+            }
+          },
+          "nearMissBucketIds": [],
+          "done": false
+        },
+        "sha256": "104845c5e6e92f922f00d1010a6d94e7651ff2d8bf055050339be36f98733332"
+      },
+      {
+        "state": {
+          "tick": 428,
+          "rngU32": 2591988814,
+          "ball": {
+            "pos": {
+              "x": 32919.703656,
+              "y": 33574.8894986
+            },
+            "vel": {
+              "x": -746.5649657,
+              "y": -203.3039355
+            }
+          },
+          "nearMissBucketIds": [],
+          "done": false
+        },
+        "sha256": "2e35b7264f0ee5c0094a30e310125acbc0c64fd556b7aa6e5a3ddb2cc248ecf5"
+      },
+      {
+        "state": {
+          "tick": 750,
+          "rngU32": 927983332,
+          "ball": {
+            "pos": {
+              "x": 33317.003964,
+              "y": 33601.0316997
+            },
+            "vel": {
+              "x": 342.3182062,
+              "y": 506.824347
+            }
+          },
+          "nearMissBucketIds": [],
+          "done": false
+        },
+        "sha256": "4da231156cb53e4e7c114a98bda832dbc27596fb9bf2ea19f07eb1a9615742e1"
+      },
+      {
+        "state": {
+          "tick": 1500,
+          "rngU32": 3525509376,
+          "ball": {
+            "pos": {
+              "x": 33784.0755205,
+              "y": 35367.7827041
+            },
+            "vel": {
+              "x": 345.5896033,
+              "y": 1615.3228555
+            }
+          },
+          "nearMissBucketIds": [],
+          "done": false
+        },
+        "sha256": "24d719172f974690143a3650365654ba9c0100a9e44e367288865c47802716eb"
+      },
+      {
+        "state": {
+          "tick": 1501,
+          "rngU32": 3525509376,
+          "ball": {
+            "pos": {
+              "x": 33785.8034685,
+              "y": 35375.8838184
+            },
+            "vel": {
+              "x": 345.5896033,
+              "y": 1620.2228555
+            }
+          },
+          "nearMissBucketIds": [],
+          "done": true,
+          "result": {
+            "kind": "LOST",
+            "finalX": 33785.8034685,
+            "nearMissBucketIds": []
+          }
+        },
+        "sha256": "8889c26dc3596975094e360c437566869372e7f07d6d4efefeea1bd8456eee24"
+      }
+    ]
+  }
+]

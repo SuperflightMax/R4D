@@ -1,0 +1,360 @@
+[
+  {
+    "label": "first-pin-contact",
+    "seed": 1,
+    "ticks": [
+      94,
+      95,
+      96
+    ],
+    "frames": [
+      {
+        "state": {
+          "tick": 94,
+          "rngU32": 1,
+          "ball": {
+            "pos": {
+              "x": 33254.8631695,
+              "y": 33261.2058101
+            },
+            "vel": {
+              "x": 0,
+              "y": 460.6
+            }
+          },
+          "nearMissBucketIds": [],
+          "done": false
+        },
+        "events": []
+      },
+      {
+        "state": {
+          "tick": 95,
+          "rngU32": 1586005467,
+          "ball": {
+            "pos": {
+              "x": 33254.8464511,
+              "y": 33263.0448323
+            },
+            "vel": {
+              "x": -32.0217063,
+              "y": -370.890938
+            }
+          },
+          "nearMissBucketIds": [],
+          "done": false
+        },
+        "events": [
+          {
+            "type": "object_hit",
+            "tick": 94,
+            "timeSec": 0.47000000000000003,
+            "ballId": "board01-ball",
+            "objectKind": "pin",
+            "objectId": "leaf-01",
+            "x": 33254.8464510643,
+            "y": 33263.0448322622
+          }
+        ]
+      },
+      {
+        "state": {
+          "tick": 96,
+          "rngU32": 1586005467,
+          "ball": {
+            "pos": {
+              "x": 33254.6863426,
+              "y": 33261.2148776
+            },
+            "vel": {
+              "x": -32.0217063,
+              "y": -365.990938
+            }
+          },
+          "nearMissBucketIds": [],
+          "done": false
+        },
+        "events": []
+      }
+    ]
+  },
+  {
+    "label": "first-side-contact",
+    "seed": 1,
+    "ticks": [
+      527,
+      528,
+      529
+    ],
+    "frames": [
+      {
+        "state": {
+          "tick": 527,
+          "rngU32": 1587069247,
+          "ball": {
+            "pos": {
+              "x": 32889.2153973,
+              "y": 33385.8894999
+            },
+            "vel": {
+              "x": -157.7279021,
+              "y": -253.5005444
+            }
+          },
+          "nearMissBucketIds": [],
+          "done": false
+        },
+        "events": []
+      },
+      {
+        "state": {
+          "tick": 528,
+          "rngU32": 2388811721,
+          "ball": {
+            "pos": {
+              "x": 32888.4496014,
+              "y": 33384.6450404
+            },
+            "vel": {
+              "x": 100.6167086,
+              "y": -264.6163868
+            }
+          },
+          "nearMissBucketIds": [],
+          "done": false
+        },
+        "events": [
+          {
+            "type": "object_hit",
+            "tick": 527,
+            "timeSec": 2.6350000000000002,
+            "ballId": "board01-ball",
+            "objectKind": "segment",
+            "objectId": "left-1",
+            "x": 32888.44960139376,
+            "y": 33384.645040432275
+          }
+        ]
+      },
+      {
+        "state": {
+          "tick": 529,
+          "rngU32": 2388811721,
+          "ball": {
+            "pos": {
+              "x": 32888.9526849,
+              "y": 33383.3464585
+            },
+            "vel": {
+              "x": 100.6167086,
+              "y": -259.7163868
+            }
+          },
+          "nearMissBucketIds": [],
+          "done": false
+        },
+        "events": []
+      }
+    ]
+  },
+  {
+    "label": "ordinary-bucket-entry",
+    "seed": 4,
+    "ticks": [
+      2086,
+      2087,
+      2088
+    ],
+    "frames": [
+      {
+        "state": {
+          "tick": 2086,
+          "rngU32": 1716849652,
+          "ball": {
+            "pos": {
+              "x": 33617.0579888,
+              "y": 34852.008001
+            },
+            "vel": {
+              "x": 275.8141875,
+              "y": 984.1050776
+            }
+          },
+          "nearMissBucketIds": [],
+          "done": false
+        },
+        "events": []
+      },
+      {
+        "state": {
+          "tick": 2087,
+          "rngU32": 1716849652,
+          "ball": {
+            "pos": {
+              "x": 33618.4370597,
+              "y": 34856.9530264
+            },
+            "vel": {
+              "x": 275.8141875,
+              "y": 989.0050776
+            }
+          },
+          "nearMissBucketIds": [],
+          "done": false
+        },
+        "events": []
+      },
+      {
+        "state": {
+          "tick": 2088,
+          "rngU32": 1716849652,
+          "ball": {
+            "pos": {
+              "x": 33619.8161306,
+              "y": 34861.9225518
+            },
+            "vel": {
+              "x": 275.8141875,
+              "y": 993.9050776
+            }
+          },
+          "nearMissBucketIds": [],
+          "done": true,
+          "result": {
+            "kind": "IN_BUCKET",
+            "bucketId": "receiver-04"
+          }
+        },
+        "events": [
+          {
+            "type": "bucket_entered",
+            "tick": 2088,
+            "timeSec": 10.44,
+            "ballId": "board01-ball",
+            "bucketId": "receiver-04",
+            "x": 33619.8161306,
+            "y": 34861.9225518
+          },
+          {
+            "type": "ball_finished",
+            "tick": 2088,
+            "timeSec": 10.44,
+            "ballId": "board01-ball",
+            "result": {
+              "kind": "IN_BUCKET",
+              "bucketId": "receiver-04"
+            }
+          },
+          {
+            "type": "run_finished",
+            "tick": 2088,
+            "timeSec": 10.44,
+            "dropId": "board01-start",
+            "ballId": "board01-ball",
+            "result": {
+              "kind": "IN_BUCKET",
+              "bucketId": "receiver-04"
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "label": "ordinary-open-bottom-loss",
+    "seed": 1,
+    "ticks": [
+      1733,
+      1734,
+      1735
+    ],
+    "frames": [
+      {
+        "state": {
+          "tick": 1733,
+          "rngU32": 1629134493,
+          "ball": {
+            "pos": {
+              "x": 33772.4866531,
+              "y": 35358.7574525
+            },
+            "vel": {
+              "x": 764.3470855,
+              "y": 1689.4982232
+            }
+          },
+          "nearMissBucketIds": [],
+          "done": false
+        },
+        "events": []
+      },
+      {
+        "state": {
+          "tick": 1734,
+          "rngU32": 1629134493,
+          "ball": {
+            "pos": {
+              "x": 33776.3083885,
+              "y": 35367.2294436
+            },
+            "vel": {
+              "x": 764.3470855,
+              "y": 1694.3982232
+            }
+          },
+          "nearMissBucketIds": [],
+          "done": false
+        },
+        "events": []
+      },
+      {
+        "state": {
+          "tick": 1735,
+          "rngU32": 1629134493,
+          "ball": {
+            "pos": {
+              "x": 33780.1301239,
+              "y": 35375.7259347
+            },
+            "vel": {
+              "x": 764.3470855,
+              "y": 1699.2982232
+            }
+          },
+          "nearMissBucketIds": [],
+          "done": true,
+          "result": {
+            "kind": "LOST",
+            "finalX": 33780.1301239,
+            "nearMissBucketIds": []
+          }
+        },
+        "events": [
+          {
+            "type": "ball_finished",
+            "tick": 1735,
+            "timeSec": 8.675,
+            "ballId": "board01-ball",
+            "result": {
+              "kind": "LOST",
+              "finalX": 33780.1301239,
+              "nearMissBucketIds": []
+            }
+          },
+          {
+            "type": "run_finished",
+            "tick": 1735,
+            "timeSec": 8.675,
+            "dropId": "board01-start",
+            "ballId": "board01-ball",
+            "result": {
+              "kind": "LOST",
+              "finalX": 33780.1301239,
+              "nearMissBucketIds": []
+            }
+          }
+        ]
+      }
+    ]
+  }
+]
