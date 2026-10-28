@@ -4,7 +4,46 @@
 Lead: `lead-r4d-p3-masks-01`, chat `01a17faf-f425-75d1-948a-ed456864701f`.
 CTO: `cto-r4d-perspective-01`, chat `01a174b2-1b0d-79b1-866f-f40e23f6dfb2`.
 
-## Поручение и фактическое состояние
+## Текущий рубеж: один frozen candidate на реальной QA
+
+`P3-frozen-01` выдан обеим QA. Code
+`f1aca21e7b9ba19001e7e8762fcaf2511bf9bf74`, Artist
+`f899a308aed156a11e2a1013292ed68c6669959d`.
+Handoff: `4603d99a5904d10924f55416e36100b2c470b534:experiments/p3-masks/builder/FROZEN_CANDIDATE.md`.
+Immutable build `E:\R4D\perspective\p3-runtime\builder\full-checkpoint-06`;
+`file-manifest.json` SHA256
+`e2e9f7d837b3d05f484f75a877af6992a70ee88363add783d80f3c6e206f431f`.
+Lead независимо сверил точный manifest hash. 76payload files/3388537bytes,
+сmanifest77files/3401352bytes, 51masks. Preview
+`http://127.0.0.1:6866/review/r4d/p3-masks/`, собственный Builder PID24412.
+Frozen bytes не перезаписываются во время обеих QA. Native runtime SHA256
+`af8e6dea9ee5c46759f99ba3b68f4afa91c740b4fd2aba2d2d3f65bfa66753fa`;
+provenance/blob IDs/toolchain и licenses в `build.json`/handoff.
+
+Адресная выдача обеим QA успешна, фактические новые ходы подтверждены
+`read_thread`, оба inProgress на первой проверке:
+
+- TQA `01a17ff7-1769-7f91-a29d-3197ec953758`;
+- VQA `01a17ff7-601a-70e3-878a-4e61175de022`.
+
+Свои первые действия — сверка дерева/handoff/bytes; планы из preflight
+не выдаются за выполненную QA. Отчётов и художественного PASS пока нет.
+Особое внимание: фактическое наложение силуэтов при смене порядка,
+читаемая shadow/grounding в нормальном масштабе и known left-5/mapping.
+Обеим QA переданы сохранённые хорошие/LOST runs без отбора; собственные
+обычные runs сохраняются также. Каждый использует свою IAB-вкладку,
+свой runtime/отчёт, shared candidate не меняет. После обоих отчётов
+связанные дефекты возвращаются владельцам одним пакетом.
+
+Lead snapshot перед параллельной QA `2026-10-28T00:41:56Z`:
+RAM free10.236/31.907GiB, CPU9%/24logical;
+C7.706169 / D16.304096 / E31.385117GiB свободно.
+Оценка дополнительного совокупного пика двухQA до3GiB (TQAдо1/VQAдо2);
+это не измерение/резерв. Каждый повторяет fresh snapshot перед тяжёлым
+действием; Builder preview уже учитывается в system-wide snapshot,
+Artist/Release idle. Серверная запись P3 закрыта, token нет.
+
+## Основание и первоначальный старт
 
 Получен stage 2/2 CTO: отдельный P3 во втором слоте, P2 продолжает отдельно.
 Это уточняет только административную последовательность; обязательства
@@ -41,20 +80,22 @@ handoff и продолжать). Разрешение ограничено су
 читает exact inputs/задание, Artist проверил дерево, прочитал imagegen skill
 и обозначил source1536²/alpha/anchors/masks без baked shadows. TQA/VQA
 проверили свои деревья и начали подготовку; Release сверил свою копию и
-готовит только локальную доставку. Полного frozen candidate и выполненной
-продуктовой QA ещё нет. CTO получил actual-start сообщение с этими фактами
+готовил только локальную доставку. На этом раннем рубеже полного frozen
+candidate и выполненной продуктовой QA ещё не было. CTO получил actual-start сообщение с этими фактами
 и turn IDs.
 
-## Текущие зависимости и ранний стык
+## Версии подготовки и ранний стык
 
 | Вклад | Exact версия и состояние |
 | --- | --- |
 | Consumer contract Builder | `4b51ebae9e635fbf2460d935647a4d8d49836ac6:experiments/p3-masks/builder/ASSET_CONTRACT.md`, опубликован |
 | Ранний art packet | `7f75ccb0e515e3c955c8b9bc248990573d8f8678:experiments/p3-masks/asset-artist/assets.json`, собственные ball/shadow, leaf-01/flower-01 masks; передан Builder |
+| Полный исправленный art packet | `f899a308aed156a11e2a1013292ed68c6669959d:experiments/p3-masks/asset-artist/assets.json`, 51 masks, actual Git SHA256 `98cef793f5cf9191fea315caf4bf11d727c20b2d5a9d5704972e97e02cfd2f73`; передан Builder |
 | TQA preflight | `c380b6ae6d364b39815b963f5b0b96c249266863:experiments/p3-masks/technical-qa/STATE.md`, входы сверены, готов к frozen candidate; ход завершён |
 | VQA preparation | `0b90e9546f4a26f087087c35eac24171f6c72556:experiments/p3-masks/visual-qa/STATE.md`, исходник просмотрен, готов к frozen candidate; ход завершён |
 
-Оба QA находятся без активного ожидания; выполненной продуктовой QA нет.
+По завершении preflight оба QA остановились до отдельной выдачи frozen01;
+актуальные активные ходы реальной QA указаны в начале этой записи.
 Builder сообщил загрузку сцены в браузере без console errors и exact +1tick
 =5ms; исправил ввод seek и экранную толщину диагностических контуров.
 Это его самопроверка, ещё не независимая QA и не художественный результат.
@@ -81,6 +122,46 @@ CTO получил реальный early milestone и ограничения. A
 продолжение полного комплекта масок; Builder продолжает боковые события,
 browser download/import и `.js`-упаковку. Обе QA получат один полный freeze.
 
+Первый проход Builder завершён на `682d2d7e193f5d2fd771a629b2c71002be793dd3`;
+его самопроверки `.js`/MIME, browser download/import и обычного нового run
+прошли. Исправлена ошибка отрицательного первого animation tick, pinned
+core/config не менялись. Следующая интеграция начата новым фактическим
+ходом Builder `01a17fe5-6abf-7761-8b10-072ae999852d`.
+
+Полный Artist packet `9cf43318de31251561c53d7bd605459f31ef3431` содержит
+51 маску; shadow scale изменён на `[1.15,2.6]` для согласования с floor
+projection (raw PNG прежние). Ранние кадры старого пакета не доказывают
+полный новый вид. Есть конкретные обычные боковые события для self-check:
+seed0 flower-03 ticks1503–1505 и seed2099436614 frog-02 ticks487–489.
+
+**Расхождение byte identity обнаружено и исправлено до final freeze.**
+Artist указал рабочий CRLF SHA256 assets.json
+`654f77e7839bf6294c0bdc8dc42a26600c1110b10ec046ca8c7acf5f4a8623c4`,
+а exact Git LF bytes дают
+`98cef793f5cf9191fea315caf4bf11d727c20b2d5a9d5704972e97e02cfd2f73`.
+Lead независимо подтвердил расхождение; Artist сам обнаружил ту же причину
+и исправил явную LF-запись/хеши всего Git payload. Исправленный exact commit
+`f899a308aed156a11e2a1013292ed68c6669959d` опубликован и передан Builder.
+Artist сверил все 70 final files с Git bytes; внешний handoff manifest SHA256
+`a52c5a15faa6797d8dcbbd037034252fd7c13bb1cd8f5b1636e09718158ddc0d`.
+Lead проверил: assets.json в9cf/f899 — один blob
+`4e2d9cd1406e507fa9b79ff7b46dc4d67e0d75ee`, actual SHA25698cef выше.
+PNG/координаты/depth не менялись, предварительные визуальные self-checks
+сохраняют смысл; final build закрепляет именно f899 и фактические bytes.
+Ход Artist `01a17fe6-54bb-7163-a276-13c8935cff59` завершён, ожидания нет.
+
+Builder сообщил первый полный run с51 masks: seed0 → receiver-03/tick1956.
+Перед freeze добавляет доступ к сохранённым обычным удачным/LOST replays и
+перетаскивание увеличенного кадра, чтобы корзины оставались достижимыми.
+На этапе этой самопроверки полного frozen candidate и независимого QA
+verdict ещё не было; текущая выдача frozen01 описана в начале записи.
+Builder также сообщил известное ограничение общего маппинга:
+seed2818447218, left-5 околоtick612, контур принятой геометрии проходит
+по видимому полу перед нарисованным бортом; отскок выглядит преждевременным.
+Сохранены ticks611–613 и geometry overlay. Это наблюдение self-check;
+независимая QA ещё проверит источник. Config/remap не меняются.
+Все пять сохранённых обычных runs воспроизвелись: два попадания/три LOST.
+
 Release local handoff опубликован на
 `3210845628c1258c8c1e2b9e34883be4708aa7a8:experiments/p3-masks/release/STATE.md`;
 его последний ход `01a17fd8-bfda-75a0-b8f7-dcf1e37c4d53` завершён,
@@ -91,14 +172,18 @@ Release local handoff опубликован на
 Доступ SSH и чтение runbook подтверждены Release, live root ещё не проверен.
 Это исторические указатели, не разрешение записи: `server_write=false`,
 token нет, первое окно P2. Чужие product artifacts не передавались.
+CTO отдельно подтвердил занятие общего release-окна P2 токеном от
+28 октября00:34:30UTC; это разрешение P2, не подтверждение switch.
+P3 не пишет параллельно. После освобождения окна будущий live root/manifest
+проверяется заново; старый baseline не переносится как текущий.
 Общее delivery-уточнение CTO передано Builder и Release: browser-facing
 ES modules — `.js` с явными src/import references; `.mjs` MIME в текущем
 Review не подтверждён. Node-only scripts не переименовываются; глобальные
 MIME/nginx настройки не меняются. После выпуска нужна проверка MIME.
 
-Последний Lead resource snapshot `2026-10-28T00:08:18Z`:
-RAM free4.354/31.907GiB, CPU49%/24logical;
-C7.774231 / D16.306244 / E31.915936GiB свободно.
+Последний Lead resource snapshot `2026-10-28T00:23:43Z`:
+RAM free10.044/31.907GiB, CPU11%/24logical;
+C7.723415 / D16.304516 / E31.525036GiB свободно.
 Builder оценил лёгкую сборку до0.3GiB RAM, браузер подключает отдельно.
 Все будущие тяжёлые операции требуют нового snapshot и совокупной оценки.
 
@@ -124,8 +209,9 @@ Builder оценил лёгкую сборку до0.3GiB RAM, браузер п
   сохраняются как история; текущая приёмка задаётся ORDER и поручением CTO.
 - P0 recipe прочитан: `ee4d8e5c7dbb3b6618d58d6dacb0caf9b73dfb1b:experiments/p0-perspective/research/CROSS_SERIES_CONCLUSION_AND_RECIPE.md`.
   Рецепт удержания перспективы не заменяет метод P3 готовой layered-доской.
-- Native core: `5a6fa03f1cdb3de88a2d9c7dbe795eb8e2a7f023`, read-only
-  `D:\dev\.codex-worktrees\r4d-p1-collider-mapping\millionko-source\lead`.
+- Native core: `5a6fa03f1cdb3de88a2d9c7dbe795eb8e2a7f023`, авторизованная
+  read-only копия из адресного поручения CTO; локальный private source path
+  в текущем публичном учёте не дублируется.
   Lead независимо сверил HEAD. Приватные TS, source maps и credentials
   в публичный R4D не попадают; разрешён compiled browser runtime.
 - PixiJS 8.22.0 доступен read-only в P1 `viewer/node_modules/pixi.js`;
@@ -212,6 +298,6 @@ process-local env. E≤4 GiB — диагностика, E≤2 GiB — safe chec
 Ориентир CTO: первый связный просмотр через 60–90 минут активной работы;
 ограниченная попытка 4–6 активных часов с QA/осмысленными исправлениями.
 Ожидание разрешений и ресурсов не считать активной продуктовой работой.
-Следующее действие: получить полный art packet и полезную доводку Builder,
-зафиксировать один source/build/hash candidate для обеих независимых QA;
-связанные реальные дефекты возвращать назначенным владельцам одним пакетом.
+Следующее действие: получить оба независимых отчёта по указанному frozen01,
+вернуть связанные конкретные дефекты владельцам, затем проверить нужную
+новую версию. Выпуск — только после обеих QA/ограничений и отдельного token.
