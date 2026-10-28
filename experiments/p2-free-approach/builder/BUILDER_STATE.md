@@ -2,7 +2,33 @@
 
 staff_id `builder-r4d-p2-free-01`; branch `codex/r4d-p2-free-builder-01`; исходный HEAD `df760b680f0d0264342fc8577fcc5779b80a3a15`. Рабочая копия только `E:/R4D/perspective/p2-worktrees/builder`.
 
-## Current LIMITED PUBLIC candidate04 — delivery/docs complete, findings open
+## Current C05 — narrow UI source/freeze, awaiting independent limited review
+
+CTO разрешил один C05 source+freeze проход по zoom200 и completion hint.
+Actual turn `01a18393-6d58-7001-8b25-a45c2fbfff86`, initial clean2cf9b65.
+Clean implementation/build source **0367d46211ed170c8840cf702b5ea1cc05f6e430**.
+Main: stable border-box viewport, resize только при изменении buffer dimensions,
+common explicit redraw; completion-owned hint lifecycle с сохранностью download/error.
+CSS/index/default0.25/controls/physics/art/clock/controller unchanged.
+
+Frozen05 создан в absent exact path
+`E:/R4D/perspective/p2-runtime/output/p2-jungle-static-candidate-05`:
+16browserfiles/2453059bytes/tree19afaab7ef62e88948419b2fdc38210395ed64acba7aa024d4dc6619d7f6bdec,
+BUILD_MANIFEST9013bytes/SHAaa40eea4d51100e157b0bdf32623e874a39777c52be2c801c3dce20285fc4b1b.
+Compiled core/SDK reused exact C04 bytes, no rebundle/core import/physics suite.
+9 bounded UI model/source checks, package-only static/privacy/reference checks
+и scanner controls passed.13bundlefiles byte-identical C04; changed only main
+and candidate/source-consumer provenance in two manifests. Actual PUBLIC05
+GPU/zoom200/blackframe fix НЕ подтверждён, independent QA pending.
+
+Checkpoint: [CANDIDATE05_FREEZE.md](CANDIDATE05_FREEZE.md). Server_write=false;
+нет browser/localserver/renderer/QA/buildnative/нового intent/публикации/SSH.
+C04/frozen/raw evidence сохраняются. Stop после freeze checkpoint для Lead;
+existing TQA может назначить Lead, мы TQA/VQA/Artist не будим. Новый LOCAL
+intent05 только следующим поручением после limited review и fresh PUBLIC base.
+C04 token/окно CTO закрыты17:18:45UTC, нового server-write token нет.
+
+## История LIMITED PUBLIC candidate04 — delivery/docs complete, findings open
 
 Actual continuation turn `01a18378-0842-7ac3-a9af-5f4e6f19e878`, тот же
 Builder/ReleaseEngineer/branch/chat. По двум actual PUBLIC QA reports и
