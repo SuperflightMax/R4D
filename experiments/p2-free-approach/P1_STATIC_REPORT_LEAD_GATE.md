@@ -6,7 +6,23 @@
 
 Основание: Max28октября12:38UTC, `Sentinel_9809efe64b3881918b49cd3b4c1237a8`, через CTO. Публикуется статический отчёт accepted P1 exact `4b47db04c7140ebf88f69b91faa0b790d46f22ec`, subtree `experiments/p1-collider-mapping/clean-repeat-01/`. P1 не перезапускается; это не третий research slot. P2 frozen04/df309 сохраняются без rebuild/reQA.
 
-## Actual PUBLIC VQA завершён; выполняется только docs/lock completion
+## P1 опубликован, docs/owned lock завершены; ожидается explicit CTO release
+
+Проверенный результат: https://superflight.space/review/r4d/p1-mapping-report/ . Итоговый [Builder report](../p1-collider-mapping/accepted-static-report-01/audit/RELEASE_COMPLETE_01.md), original `eed2759a57c83356a98b1d5fd900b7ea0cb26b31`/Lead84020a6, прочитан полностью. Predecessor c64e733/Leadf11d3d5 сохраняет initial HTTP stop и отдельный successful recheck. Actual docs continuation turn `01a18325-2fd9-7ae0-8b03-6992cb75cd2c` completed/checkoutclean; Root проверил отсутствие token literal в новых Git reports. Публичные12files/2057712bytes/tree88e934ca…/frozenmanifest00eb21… неизменны; общийroot562files/90770774bytes/tree0e6c8f… и548opaqueinherited/oldroot/P2live03/config/HTTP/MIME/headers проверены. Actual bounded render1280×720/390×844 — VQAb7a24e1/Lead09d5afb, notes ниже сохранены, не fullphysics/Art/universalPASS.
+
+Service doc append15:39:06.384449UTC:69083→72789bytes, afterSHA `2bbc4ed03767ceba52af06c4d3b37e3fb3423340bbcf16f4c3558e1d04e92efc`. CHANGELOG append15:39:08.198591UTC:289574→291345bytes, afterSHA `e19755650908ece2c668ebee72a8ff5baac149ee1785a3e8b8f6c5440a927916`. Все oldbyteprefixesexact, uid1003/gid27/mode0640 сохранены; repeatread15:40:56UTC подтвердил hashes/prefix/права/tempabsence. Own matchingnonce/inode lock снят15:39:10.230413UTC, writersidle, ownedservers/browser/execsessions нет, immutableold/new releases/upload/backup сохранены.
+
+Root сверил exact local copies из `E:/R4D/perspective/p2-runtime/output/builder/p1-static-report-execution-01/docs-completion-01/evidence/`:
+
+| Receipt | Bytes | SHA256 |
+| --- | ---: | --- |
+| PUBLIC_RENDER_RECEIPT.json |13529|`153627c79885af794b6b7f69886e03f4271713efd48ea709f1e0d5a2ca9fbdd7`|
+| DOCS_RESULT.json |15879|`824aa9ba9bfc7d34726b4f13850d8e1d34778d06bcb82e19414d034cdb4b162e`|
+| FINAL_ACTUAL_STATE.json |1598|`8429e5aebc7d48275a7dc6a2815d5a2459850ee6395d836e97febf8abd8dfb03`|
+
+FINAL_ACTUAL_STATE15:40:56UTC:serverWrites=false, windowReleased=false, ownedlock/stage/snippet/docstemp absence, aftersnippet289c2…exact. Private server evidence остаётся `/opt/superflight-studio/backups/review-p1-static-report-01/`. Phase FINAL_DELIVERY_COMPLETE_LOCK_RELEASED_WINDOW_HELD: источник заверил только ownlockcompletion, **окно/token освобождает исключительно CTO отдельным сообщением**. Root передаёт actualfinalhandoff, новогоtokenнепросит. P2frozen04/df309/obsoleteintents/P4неизменны; новыйP2intent только послеexplicitCTOrelease и новойactualPUBLICбазы, безrebuild/reQA04.
+
+## История: actual PUBLIC VQA и docs completion handoff
 
 VQA actual turn01a18313-2339-7113-93ab-3dffc35ee86b completed, report original `b7a24e1882aceca035af01981d460685b963aece`/Lead09d5afb: [PUBLIC view](qa/visual/P1_STATIC_REPORT_PUBLIC_VIEW_01.md), BOUNDED_PUBLIC_RENDER_PASS_WITH_NOTES. Desktop1280×720/narrow390×844 фактически просмотрены, CSS/10inlineJPG/captions/10fullJPG/backlinks/P1card/count4 наблюдены, persistent pageoverflow/обрезки в measuredstates не обнаружены. Lead полностью прочитал report, посмотрел actualdesktop intro/mobileintro/stationaryJungle screenshots и сверил JSON181811bytes SHA `a52d60a8110b101acf5f273a607396daaf86ce8b0c63e858602ca505a99fb61a`. CTO и DotMax отдельно подтвердили этот bounded verdict и существующее разрешение завершения.
 
