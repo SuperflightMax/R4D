@@ -1,0 +1,217 @@
+{
+  "schema": "r4d.p5.receiver-aperture-measurement/1",
+  "receiverId": "receiver-01",
+  "consumer": "0c611039246904443128b9d12084af2c5a0ae6e6",
+  "textureId": "receiver-v1",
+  "texturePath": "E:/R4D/perspective/p5-runtime/asset-artist/selected/mini-set-01/receiver-v1.png",
+  "textureSha256": "8be0883ce8be36898f382c7afa8ede0ae7b0c6c98374cf28bc58988c25121d92",
+  "textureBytes": 1719504,
+  "textureSizePx": [
+    1254,
+    1254
+  ],
+  "method": "Artist manually traced approximate inner rim/aperture boundary in generated1254 texture, cross-checked with connected dark-cavity pixel spans. This is a measurement contour, not a render mask.",
+  "uncertaintyTexturePx": 12,
+  "uncertaintySourcePx": 3.160111481142861,
+  "polygonTexturePx": [
+    [
+      628,
+      340
+    ],
+    [
+      745,
+      347
+    ],
+    [
+      840,
+      373
+    ],
+    [
+      920,
+      408
+    ],
+    [
+      970,
+      450
+    ],
+    [
+      987,
+      490
+    ],
+    [
+      965,
+      532
+    ],
+    [
+      902,
+      568
+    ],
+    [
+      785,
+      591
+    ],
+    [
+      629,
+      597
+    ],
+    [
+      485,
+      588
+    ],
+    [
+      363,
+      560
+    ],
+    [
+      289,
+      522
+    ],
+    [
+      266,
+      483
+    ],
+    [
+      287,
+      440
+    ],
+    [
+      347,
+      400
+    ],
+    [
+      430,
+      366
+    ],
+    [
+      525,
+      346
+    ]
+  ],
+  "boundsTexturePx": [
+    266,
+    340,
+    721,
+    257
+  ],
+  "opticalApertureCenterEstimateTexturePx": [
+    626.5,
+    468.5
+  ],
+  "opticalApertureCenterEstimateSourcePx": [
+    358.1644476182143,
+    1235.9714463101934
+  ],
+  "declaredLogicalAnchorTexturePx": [
+    628,
+    477
+  ],
+  "declaredLogicalAnchorSourcePx": [
+    358.55946155335715,
+    1238.2098586093362
+  ],
+  "uniformSourceScale": 0.26334262342857173,
+  "polygonSource1536": [
+    [
+      358.55946155335715,
+      1202.1319191996217
+    ],
+    [
+      389.37054849450004,
+      1203.975317563622
+    ],
+    [
+      414.3880977202144,
+      1210.8222257727648
+    ],
+    [
+      435.4555075945001,
+      1220.0392175927648
+    ],
+    [
+      448.6226387659287,
+      1231.0996077767647
+    ],
+    [
+      453.0994633642144,
+      1241.6333127139076
+    ],
+    [
+      447.30592564878583,
+      1252.6937028979075
+    ],
+    [
+      430.7153403727858,
+      1262.1740373413363
+    ],
+    [
+      399.9042534316429,
+      1268.2309176801934
+    ],
+    [
+      358.8228041767857,
+      1269.8109734207649
+    ],
+    [
+      320.90146640307137,
+      1267.4408898099077
+    ],
+    [
+      288.7736663447856,
+      1260.0672963539078
+    ],
+    [
+      269.28631221107133,
+      1250.0602766636218
+    ],
+    [
+      263.2294318722142,
+      1239.7899143499076
+    ],
+    [
+      268.7596269642142,
+      1228.466181542479
+    ],
+    [
+      284.5601843699285,
+      1217.9324766053362
+    ],
+    [
+      306.4176221145,
+      1208.9788274087648
+    ],
+    [
+      331.43517134021425,
+      1203.7119749401932
+    ]
+  ],
+  "boundsSource1536": [
+    263.2294318722142,
+    1202.1319191996217,
+    189.8700314920002,
+    67.67905422114293
+  ],
+  "c01At875": {
+    "ballVisibleCenterReceiverTexture": [
+      712.9864126138082,
+      346.6975053365863
+    ],
+    "nativeCaptureDistance": 30.398183461003914,
+    "frontAlphaAtRoundedVisualCenter": 0,
+    "ballVisibleCenterSource": [
+      380.94000640686045,
+      1203.8956578253853
+    ],
+    "ballGroundSource": [
+      380.9210837032579,
+      1221.6262311009655
+    ],
+    "nativeReceiverRadius": 33.523990645255964
+  },
+  "limits": [
+    "Inner rim has painted thickness/shadows and no unique exact one-pixel semantic boundary",
+    "Threshold at center stone seam overestimates far reach; use contour and stated uncertainty, not lone center scan",
+    "The aperture center differs from original logical anchor by about2sourcepx; it does not explain17.7sourcepx sphere-height lift",
+    "No pixels, native/source anchors, radii, trajectory or c01 files modified",
+    "Contract options separate in RECEIVER_C01_DIAGNOSIS.md; no correction applied"
+  ]
+}
