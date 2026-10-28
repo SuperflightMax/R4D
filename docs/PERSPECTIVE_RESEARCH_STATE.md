@@ -1,5 +1,24 @@
 # Состояние исследования перспективных досок
 
+## P2: частичный итог для review CTO; серверное окно освобождено
+
+CTO принял limited delivery/actual QA/docs C05 и **explicitly CLOSED delivery token /
+RELEASED shared server-write window28октября20:02:14UTC (22:02:14Europe/Kyiv)**.
+Новых действий по нему нет. Предыдущие HELD записи ниже — история до этого release.
+
+Текущая bounded попытка P2 завершена решением CTO как **PARTIAL_RESEARCH_RESULT**,
+без FullArt/Technical success: [единый итог P2, метод, recipe, pins и ограничения](../experiments/p2-free-approach/RESULT.md).
+Published C05 остаётся доступным, C04/C05/raw failures сохранены. Непринятые fine
+contact/partialocclusion/ballshadow,4occluders/остальные21+rails+baskets и smallFit/
+narrow/Android/download/visibility limits честно отражены. Candidate06, дорисовки,
+новых tests/build/browser/server/SDK/device действий и новых поручений ролям нет.
+Read-only20:07UTC Builder/TQA/VQA completed/idle, Artist completed/notLoaded;
+все4worktrees clean. Оставшаяся разрешённая production-работа0. Lead выполняет только
+итоговый report/state handoff; **research SLOT P2 ждёт review синтеза и отдельного
+explicit CTO release**, самостоятельно не освобождён. Другие команды Lead не будит.
+
+Ниже — сохранённая операционная история; текущий P2 итог находится выше.
+
 ## Актуально после outage: PUBLIC Review и отдельный accepted-P1 static report
 
 **C05 delivery/docs/finalization complete; owned lock released, shared window STILL HELD.**

@@ -1,6 +1,25 @@
 # P2 candidate05 — малая разрешённая UI-итерация
 
-## Текущее состояние: delivery/docs complete, owned lock released, window HELD
+## Текущее состояние: CTO принял delivery, token CLOSED/window RELEASED; P2 PARTIAL
+
+CTO explicit release **2026-10-28T20:02:14UTC /22:02:14Europe/Kyiv**: C05 delivery
+token CLOSED, shared server-write window RELEASED после его own exact finalhandoff/
+receipt/16HTTP/inventory/QA/docprefix/11backup/absence review. Literal token не
+копируется в Git. Новых server actions/rollback/reuse/reload/QA по нему нет.
+
+CTO завершил текущую bounded попытку **PARTIAL_RESEARCH_RESULT**, без FullArt/
+Technical success. Published C05 сохраняется, C04/C05/raw evidence неизменны;
+candidate06/Artist fix/physics/device/SDK hunt/newtests не назначены. Lead подготовил
+единственный [краткий итог и воспроизводимый рецепт](RESULT.md) по собственной P2
+истории, без чужих методов и без новых production actions. Синтез предназначен для
+review CTO; **P2 research SLOT остаётся до отдельного explicit CTO release**.
+
+Read-only status20:07UTC: Builder856b807/TQA94e125/VQA4b9aa770 completed/idle;
+Artistbf961453 completed/notLoaded; все4worktrees clean. Новых задач/пробуждений не
+было; оставшаяся разрешённая production-работа0. Текущая работа Lead — только
+report/state commit/push и handoff CTO, без новых tests/build/browser/server calls.
+
+## История: delivery/docs complete до explicit CTO release окна
 
 **P2_C05_DELIVERY_DOCS_COMPLETE_LOCK_RELEASED_WINDOW_HELD**. Same-token continuation
 `01a18407-e6da-7920-998d-ea9f7673f438` completed/idle/clean; final Builder handoff
