@@ -1,6 +1,8 @@
 # P4 Extracted Objects — рабочее состояние Lead
 
-Обновлено: 28 октября 2026, после отдельного Stage 2 от CTO.
+Обновлено: 28 октября 2026, frozen03 передан повторной независимой QA.
+
+Текущее состояние: кандидат02 получил Technical FAIL и NO Art PASS. Оба замечания исправлены авторами в новой immutable03; TQA03 выполняется, первый VQA03 turn завершился model capacity до начала работы и повторен тому же сотруднику. Независимых PASS03 пока нет. Builder source remote-write HOLD и отдельный CTO token для любых public/server writes остаются закрытыми зависимостями. Ниже сохранена история точных handoffs.
 
 ## Задание и границы
 
@@ -107,6 +109,20 @@ Lead дождался обоих итогов, снова проверил idle/
 
 Root уточнил собственную общую формулировку hold Artist: запрет CTO относится к remote delivery Builder source/d063 и его продолжению; Artist не переносит этот код другой веткой/actor/transport. Обычный artwork-only commit/push в уже назначенную Artist ветку остаётся прежним разрешённым маршрутом; если появится конкретная denial, останавливается она. Public/VPS/server writes всё ещё закрыты без нового token. Builder remote hold не снимался.
 
+## Исправления и повторная QA03
+
+Builder turn `01a18374-ee8d-7792-a4d6-a1a7f2b8c947` завершён, local clean commit `54d381695a7ff9e89fc93084518ee326a50c1ec9`. Clock использует только rAF timestamp и сбрасывает базу после resume; native guard/core/PRNG не менялись. Четыре clock tests и шесть реальных import/Play/resume циклов прошли. Old failure воспроизведена отдельно. Проверка shadow consumer установила точное применение исходного Artist контракта: один Sprite, alpha0.42, прежние offsets/bounds/scale, без double premultiply. Поэтому shadow fix принадлежал display contract Artist.
+
+Artist turn `01a18374-fbae-71a2-b401-9f843ca93db8` завершён: artwork-only `b7efff1e2f519812421829808e71a0d83154926d` опубликован на его назначенной ветке, clean/remote equal. Новый `artwork/full-v03/manifest.json` SHA256 `276dfdfd32f1f543ce39d72fe7e360523c6ec70387d1c44dd21acd47f9fb1a6a`. Только shadow display fields: offsetR[-0.95,0.86], halfSizeR[1.55,0.58], opacityMultiplier0.65. Все65PNG побайтно прежние, ball body/r16/P1/native фиксированы. Lead сверил manifest SHA/fields и ball/shadow bytes. Static preview Artist не засчитывался как actual Pixi или Art PASS.
+
+Lead передал exact Artist pin существующему Builder после проверки completed/idle. Combined turn `01a18392-1f03-7012-8093-b0b33d418653` завершён. **Единственный текущий target — `p4-full-v03-candidate-03`**, source local clean `7d2344c1a8959f73ff26af5d3aba7dd02eb0e971`, artifact SHA256 `298649ec518a13e8070201e822108005a6b5081454452f50243d18f2fde2d542`, frozen=true/builderDirty=false/111payload files. Root в runtime Builder `candidates/p4-full-v03-candidate-03/`; handoff `evidence/full-v03-postfreeze-03/HANDOFF.md`. Lead отдельно сверил artifact SHA/source/art pins и просмотрел реальный кадр `shadow590-normal.jpg`. Preview при handoff PID33968/session79341, localhost4394; owner/bytes проверяются заново потребителем.
+
+Writer selfcheck frozen03: actual64textures и exact новые shadow fields; live0→60, import605→Play665, pause678→resume737, seek824→Play883, same-file605→606→605 без новых ошибок. Все111payload files совпали на диске/HTTP по writer report. Это не независимый QA/Art PASS. Старые freezes сохранены, Builder remote push не выполнялся.
+
+После проверки обеих QA completed/idle Lead отправил каждой одно одинаковое03 задание; оба receipts `isError=false`. TQA новый turn `01a183a1-facb-7c51-8606-d180dba7db47` выполняется: уже независимо подтвердил все111disk/HTTP bytes, native/config/P1/projection/65PNG неизменны и отсутствие private TS/maps/operator paths в payload. Проверяет fresh start/import605/Play/resume/seek против прежнего независимого native oracle, manual/same-file/mode invariants; unchanged широкая seed matrix не повторяется.
+
+Первый VQA03 turn `01a183a2-0113-7e03-bc74-f9f47bc49b81` завершился failed до действий: `Selected model is at capacity. Please try a different model.` Это platform availability, не продуктовый verdict и не policy-denial. Lead повторил только неисполненное задание тому же существующему сотруднику, без model/settings/roster изменений; retry receipt `isError=false`. Новый turn `01a183a5-6d57-7511-ac3a-c657fe25dda3` действительно выполняется, первое завершённое действие `exec-a281e7ec-5e59-4ddd-a8ed-b6fdd830970c`. VQA самостоятельно проверяет exact590 в обычном масштабе и нужную регрессию shadow/occlusions; неизвестные receiver01/03/front-rim и будущий Review prefix сохраняются честными пределами покрытия. Независимых результатов03 пока нет.
+
 ## Публикационная подготовка
 
 Исходная Release prep `1fcc9b80a2d018a5f7efc6776d1a00ac18e365bc` была read-only; кроме нового token/QA/frozen bytes ей недоставало текущего способа публикации, физических target/catalog paths и catalog-link mapping. Эти operator inputs не угадываются и не добываются из sensitive configs/allowlists/credentials.
@@ -119,6 +135,6 @@ Root уточнил собственную общую формулировку h
 
 Read-only факты CTO15:21UTC: remote по ls-remote и branch API остаётся `ecb0419d7ac59fd840e3d422688363027477a16e`; d063 меняет 11 текстовых файлов45,626bytes/max9875, без generated PNG. protected=false; effective branch rules и repo rulesets HTTP200[], combined statuses remote ecb пусты. Причина generic remote failed пока неизвестна: ни transient, ни policy-denial этими фактами не доказаны. Lead не повторяет/не переносит запись Builder другим actor и ждёт отдельного решения для этой операции.
 
-Следующий содержательный шаг: получить consumer clock fix/renderer diagnosis и shadow-only решение Artist, соединить их у существующего Builder и заморозить03 с минимальным достоверным fresh selfcheck. Обе независимые QA затем проверяют один и тот же03 с нужной регрессией; повтор unchanged native/широкой поисковой seed matrix не назначен. Публикация — только после готового corrected candidate, актуальных operator inputs, QA conclusions и отдельного нового single token CTO; Builder remote write hold остаётся отдельной незакрытой зависимостью. Пользоваться штатными wait cursors, не дублировать dispatch.
+Следующий содержательный шаг: получить самостоятельные TQA03/VQA03 verdicts на одном frozen03; при подтверждённом дефекте состыковать полезную адресную коррекцию. После достаточных QA conclusions Release обновляет конкретный intent на03 и указывает недостающие operator inputs. Публикация требует актуальных method/targets/catalog/rollback inputs и отдельного нового single token CTO; Builder remote write hold остаётся отдельной незакрытой зависимостью. Пользоваться штатными wait cursors, не дублировать активный dispatch.
 
 Оценка CTO: 90–120 active minutes до первого стыка; bounded проход 6–10 active hours с QA и полезными исправлениями. Новые рабочие turns начались 28.10.2026 около 13:30 UTC. Оценка не обещает художественный PASS и не является автоматическим cutoff.
