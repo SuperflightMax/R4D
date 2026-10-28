@@ -2,6 +2,67 @@
 
 staff_id `builder-r4d-p2-free-01`; branch `codex/r4d-p2-free-builder-01`; исходный HEAD `df760b680f0d0264342fc8577fcc5779b80a3a15`. Рабочая копия только `E:/R4D/perspective/p2-worktrees/builder`.
 
+## Current PUBLIC final03 — local only, после завершённой P1 publication
+
+Root/CTO явно закрыли P1 auxiliary delivery и освободили её token/window
+2026-10-28T15:47:25Z; новый server-write token P2 не выдан. В том же E-worktree,
+branch/role/chat, от clean eed2759 выполнена одна read-only PUBLIC snapshot и
+один новый immutable local packet `p2-review-release-intent-04-final-03`.
+Подробности: [RELEASE_INTENT_04_FINAL_03.md](RELEASE_INTENT_04_FINAL_03.md).
+
+Actual PUBLIC baseline15:56:45–15:56:51UTC: root
+`/srv/superflight-review/releases/p1-mapping-report-candidate-01`,562files/
+90770774bytes, coherent raw snippet953/289c2…/docs/config/inventory/owners/modes.
+Catalog/P1/P2/current P2JS HTTP200, JS application/javascript.8new targets
+absent, старый P1lock отсутствует. Снимок не заменяет будущие fresh guards.
+
+Current **IMMUTABLE_LOCAL_READY_AWAIT_ROOT_REVIEW_NEW_EXACT_CTO_TOKEN**.
+Intent15366bytes/SHA307d8b595d7b3a6d513d615344d19aa9b6332266c9c611dc65783396ec2eff57;
+archive2590720bytes/18leaves/SHAa1179a794425da145ba803231973881f1b22391b44f2a0aca7234fa2e85abe36;
+sealed2756bytes/SHAd7e9dc65d4dd5ccf833be029467cc747dee7b2e2bef22a5acbc54b2aeb8fb0b2.
+Planned563files/90775084bytes/tree892fa950ee4ce08f02a71b76f99241eeb95d52038515699fff8e8a447f9e6b8f;
+545foreign records и12P1files полностью сохранены. Только existing P2card
+меняется, count4 остаётся. RAW PUBLIC root-only after952/4d32b2…; rollback
+только к fresh current PUBLIC before, никаких protected templates/normalizedguards.
+
+Frozen04/16files2452021bytes/build08f9/implementation0a80/manifest60f79…/tree60d216…
+и независимая TQAdf309/evidence249046/3e216… неизменны. No build/physics/QA/
+imagegen/gesture/size/height/occlusion fixes; actual04UI/Pixi/WebGL/timing/download/
+Android/ArtPASS остаются unverified, P1renderPASS не наследуется. Server_write=false,
+нет lock/mkdir/upload/staging/backup/snippet/docs/reload/rollback/cleanup на VPS.
+Final01/02 теперь obsolete для PUBLIC базы и сохранены raw без перезаписи.
+Остановка после handoff для Rootreview/нового exact CTOtoken, без active wait.
+
+## История protected final LOCAL intent04-02 — obsolete, не использовать
+
+АдресныйDELIVERY-UNLOCK отCTO07:47:59UTC черезLead получен; owncheckpointc4a4b7f330639872e5a5c2ed7fc26d2eceffabb8/branchcleanverified, новыйoutput02absent. Выполнен ОДИН freshread-onlycoherentcapture+localpacket `E:/R4D/perspective/p2-runtime/output/p2-review-release-intent-04-final-02/`. Actualbaseline08:04:43.791045–08:04:44.594794UTC (10:04Europe/Kiev): `/srv/superflight-review/releases/p3-jungle-masks-frozen-01`, manifest107213bytes SHA381ff209d36f24c1734e2f2012d0b298cb13efd37e928956ceaf00ab967c2937/snippet1080bytes SHAc67b27e4b179dfe3cb803268435b7558b0c48b8ea8b1018ec709149511be1ba8/catalog11955 SHA759de374bafabe98bcc1d96e297e0972df1439bd7322e3920438ec46eb188694. Все549currentpaths/bytes/hash+549files/79dirsowner/modes recorded, errors0/no symlinks; before/afterroot/hashcoherent. CTOhint independentlymatched, неassumed. P3product/art/recipes/results не анализировались/непечатались; currentpublishedrecords сохраненыopaque, otherprovenance exactprevious-manifestreference. P1input4b47…неизменен, deliverybaseНЕsourceinput.
+
+Current **FINAL_LOCAL_READY_AWAITING_EXACT_LEAD_GATE_AND_SINGLE_CTO_TOKEN**. Intent15503bytes SHA `b2005ad07a1151fe1f328d9798111d32a62eaa1b68f4812b2450a3851ad56883`; fullmanifest116957 SHA `ced283f3a45b07fafe4f7ab411d55b2aa1e9ecf149d5bb70298b60e665cefb20`;18-memberarchive2600960 SHA `041eba71f9aa337534c8393441c28861a698ed5bd1a54602a24ce98f0b1cb1d6`. Dynamicplanned550files/88606776bytes,533otherfilesopaqueexact; current15P2→16frozen04. CatalogonlyP2candidate/ratephrase+39:11994 SHA74a3b6cc93ef38cac7129f647c6f11fcc172d5fa85a7568b255de4925d6daf6c; root-onlysnippet1084 SHA6a3c830425d59b55f04af5d1ff9d3626bae8a96d51700e6a51ed54a69f8dcb56. Inverse/memberbytes/hash/modes proofs passed. Exactinheritedmodeinventory144590 SHA81dc4cac432df044019cbbcee3ff7cbd7555d6818d3eec0bbaa337b400c1133f; NO foreignrecursivechmod/chown. OnlynewcontrolledP2convention644/755;catalogmodepreserved.
+
+Proposedabsentroot04/rollback `/opt/superflight-studio/backups/review-p2-candidate-04-20261028T080443Z`/temp04, allobservedabsent. Freshguards AFTERnewtoken BEFOREANYWRITE andagainpreswitch; futureactualrollbacktime directlypreswitch, notdirname. Concretewrite-set/controlactions+postchecks/guardedrollback in RELEASE_INTENT_04_FINAL_02.md+intent. Freshcurrentoperationalprefix/docs hashesretained, serviceP3append2382bytesopaque. Old01全33fileschecksumunchanged; utilitycodeonlyadapted, NO obsolete01baselinedata/tokenreuse.
+
+ActualTQAdf309…/turn01a1812a-54aa-75c3-a71f-bb8ac8c34437+evidence249046 SHA3e216f15232893321bda29f1fa40a47a8dafaf0e51179e41777e22958b0b3410 reflectedinfinalmetadata(no QA_PENDING/no VQA04claim/fullTechnicalartPASSfalse). Frozen04browser16/BUILD_MANIFEST60f79…/actualbuild08f9/impl0a80/source/QAunchanged; no build/QA/browser/login-only repeat. Localguard08:04UTCfreeRAM9.706CPU7%C8.212788D16.316658E19.382057GiB, plannedPython≤128MiBRAM/E≤16MiB;remoteavailable5145522176bytes/disk30460395520, futurepeak256MiB fits snapshot. ProcesslocalE/Python-B/rule4/2/no globalcleanup. Serverwrites/upload/mkdir/staging/nginx/reload/rollback0,newP2tokenNOTISSUED/windowNOTreserved. NextLeadreview/gate→newtoken; checkpointcommit/pushstopбезactivewait.
+
+## История delivery04 serialization hold: obsolete03 draft сохранён
+
+Последний адресный CTO/Lead steering: shared releasewindow/token эксклюзивно P3; это НЕфактswitch. P2server_write=false/04tokenнет. Только уже запущенная localprepare operation session81920 была доведена до consistency и завершиласьexit0; послеsteeringновых baseline probes/archives/serverwrites/reload/rollback/browser нет. Это serialization delivery, неproductpause/отмена/no newMaxresume needed. До адресного сообщенияLead о ЯВНОМCTOP3tokenrelease остановиться безactivepoll/wait, безупаковок/tokenrequest.
+
+Занятыйlocaldraft `E:/R4D/perspective/p2-runtime/output/p2-review-release-intent-04-final-01/` сохранён **OBSOLETE_BASE03_DRAFT_NOT_READY_NOT_FOR_TOKEN_REQUEST**. Rawintent14629bytes SHAd6f29f9c5968d9d3c0b8f779cfd699be8aa36985d1029141082cf3edb9319cf9/fullmanifest102569bytes SHAbf6a98abbc29928886811134c085286a787ef660e19ea7c39438044ba6691ef3/archive2580480bytes18members SHA5872f17ea4014cade760c4f76ccbeaa1e8df4449159d2e7deb4a2fa36ed542b8. OriginalrawREADYlabels НЕтекущийдопуск; не переписаны, currentdisposition в SERIALIZATION_STATUS.json. Snapshotпроцесса06:49:29.083397–.869568UTC ещё03/coherent, неfuturestate. Draftplanned473/85204840/catalog+39/rootonly не использоватьдляtoken. Backup064929proposal не создан/неfreshsnapshot. Подробно RELEASE_DRAFT_04_SERIALIZATION_HOLD_01.md.
+
+Actual04 TQAполностьюпрочитан: df30939444dfc3875fe1f0fc39b31a4621be1d28/turn01a1812a-54aa-75c3-a71f-bb8ac8c34437/blob727a549c21ad4640d838fd685a248b6280a0f203, report17040bytes SHAb8281a09412707b506b55254faa5518b6ac2e8b8f69913fe778b7aeec1fd5aa3. Evidence249046 SHA3e216f15232893321bda29f1fa40a47a8dafaf0e51179e41777e22958b0b3410/resource1369 SHA1842382793b521906c3655afd0103777ad16d4580d70eaf9f55bf323dde47903verified. Offlineinvariantsconfirmed/no newcodeblockers; BigIntoracle+2seeds3rates/mixedterminalLOST/rewindhistory exact. UI/Pixi/WebGL/mainDOMvisibility/walltime/MIME/download/Android/scene/fullTechnical/artPASSнет, VQA03nottransferred. Source/frozen04/QAretained; no rerun/rebuild.
+
+Exactresume после адресного explicitP3tokenrelease: новыйread-onlycoherentactualbaseline, opaquepreserveвсехP3bytes, затемONEfresh04intent в НОВОМ absentoutputID; old03draft/tokenнеreuse, driftSTOP/report. Sourcebuild08f9/impl0a80/browser16/BUILD_MANIFEST04 неизменны; всеoldartifacts/drafts сохранены. Собственнаяsession81920завершена, другихactivewriter/server/browserнет по учётувызовов. Сейчас толькоsafecheckpointcommit/push иstopбезactivewait.
+
+## История read-only delivery preflight04-01 до P3 serialization steering
+
+После frozen04handoff083e4cfadff30c8d63c6806ccd7835dd4f137e90 Lead адресно разрешил только independentread-only deliverypreflight. Новый Eoutput `output/builder/review-preflight-04-01/` создан localonly; existingvps1-direct+approvedrunbooks/hashes безSSHconfig/keys/settings/permissions/foreignimplementationreads. Actual root извлечён изsnippet, не предположен. Snapshot06:33:02.089604–06:33:03.097066UTC (08:33Europe/Kiev) coherent поroot/snippet/fullmanifest/catalogдо/после. Фактически live `/srv/superflight-review/releases/p2-jungle-static-candidate-03`, snippetSHAd8cf0b3cd5a56241dc86562705daab81da09c648ad1aba8adcf232be2eb23104, manifest100094bytes SHA171a889a53da529d2a668da9811b3f6a9661cdc52ab54a46e254900553cfed35; all472browserfiles/85200941bytes/path/hash/owner/modes exact,no symlinks. Catalog11371 SHA84a652cdf90b42416ebfb2c61fc9d02babd19e9bb2905cc2d0451507e7610a4d, P2subtree15 exact03. AcceptedP1input4b47… неизменен; deliverybaseline неsourceinput.
+
+Newrootcandidate04/rollbackproposal `/opt/superflight-studio/backups/review-p2-candidate-04-20261028T063302Z`/temp04 absent. Draftinmemoryonly: P2card03→04+slowdownphrase(+39bytes), prospectivecatalog11410 SHA41db08d928b7540939485c965cff9fcc3437caf0a8368c96f54652730a003196; snippetroot-only1084 SHA6a3c830425d59b55f04af5d1ff9d3626bae8a96d51700e6a51ed54a69f8dcb56. Exactinverseproof; sharedothers456files/cards/counterspreserved. Samplewouldyield473files/85204840bytes. НЕсозданыmodifiedcatalog/snippet/fullplannedmanifest/RELEASE_INTENT/releasearchive. FinalLOCALpacket толькопослеactual04TQAverdict+отдельногоLeadзадания, безQA_PENDINGпакета.
+
+Resourcesremote06:33UTC availableRAM5266886656bytes/disk30636916736bytes; currentallocated86605824, futureconservative256MiBdisk/128MiBRAMfits sample.4mandatoryserverdocs hashes unchanged vsreadversions,8approvedprotectedfileHASHES saved. OrdinaryunauthGET303/foreignOrigin403/dotfile404+denialheaders/GETonlysnippetchecked, nofollow/cookies/browser/noPOST; этоdeliverypreservationbaseline, не04HTTP200/PixiPASS. Source04/browser16/BUILD_MANIFEST и old03 не менялись. Serverwrites/upload/staging/mkdir/nginx/reload/rollback0,newtokenfalse/no slotreservation. SharedP3можетдвигатьbaseline; futureintent/executionneedfreshguards, mismatch/occupiedtargetSTOP/report неoverwrite.
+
+PREFLIGHT.json218203bytes SHA1c98b26dc9af7918b53451680794b9d1200e1c3100439e3e32acc1b1e1dccf32; BASELINE_FILE_HASH_METADATA207925bytes SHA50d99638f4e9f9dd04dde33d168e0da4a34378110b89300417ba760be2c3e9a8. Толькоsharedhashmetadata retained, чужие/P3recipe/art/sourcecontentsневыведены/неиспользованы. Подробно REVIEW_PREFLIGHT_04_01.md. После MDcommit/push stopбезactivewait; следующийшагactual04TQA+адресныйfinal-local scope, неrelease.
+
 ## Frozen candidate04: pending targeted independent QA
 
 Адресный Lead/CTO standalone build gate исполнен. Actual clean build HEAD `08f9b9eaa6aa1063eb7fcd9cf373ddacf907725a`, implementation отдельно `0a80b0b63c688b6f77b8f710576adf2ea5c263c1`; tested6source canonicalSHA совпали доbuild. Новый absent output `E:/R4D/perspective/p2-runtime/output/p2-jungle-static-candidate-04/`:16browserfiles/2452021bytes,6.jsmodules,treeSHA `60d216a64c86fed4b83f4ed3802e3d1393cdda2db8776818d22710173dc2ffed`; BUILD_MANIFEST8751bytes SHA `60f79d1bdad8d3737376952043013394bb3098de6b15200fc5c352dd875dd1f7`. Browser16/BUILD_MANIFEST FROZEN, не менять/rebuild. Lead independentlyverifiedactualset/allhashes/tree/manifest и уже передал exact04 targetedTQA; новогоQAresult пока нет. Подробно STATIC_CANDIDATE_04.md.
