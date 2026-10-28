@@ -9,9 +9,14 @@
 симулятора, JavaScript, библиотек, запуска физики или нового исследования P1.
 Изображения архивные; кнопки внутри снимков являются пикселями.
 
-Предлагаемый маршрут `/review/r4d/p1-mapping-report/` пока не опубликован.
-Локальная подготовка и проверка не являются разрешением записи на VPS.
-Целевая TQA/VQA и новый токен CTO нужны до любых серверных изменений.
+Опубликовано 28 октября 2026:
+https://superflight.space/review/r4d/p1-mapping-report/ .
+Доставка выполнена по exact CTO gate после bounded static QA; фактический
+PUBLIC render получил `BOUNDED_PUBLIC_RENDER_PASS_WITH_NOTES`. Итог,
+ограничения, hashes и завершение own lock —
+[`audit/RELEASE_COMPLETE_01.md`](audit/RELEASE_COMPLETE_01.md).
+Публичные bytes frozen candidate01 не менялись. Доставка завершена, окно
+сериализации CTO остаётся за CTO до его отдельного решения.
 
 `audit/` и `scripts/` не входят в публичный allowlist. Provenance сохраняет
 точный Git ref, blob, байтовый SHA-256 и соответствие подписей версиям.
