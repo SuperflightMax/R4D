@@ -1,6 +1,14 @@
 # P2 candidate04 — checkpoint сериализации доставки
 
-## Текущая фаза: CTO принял limited delivery/docs и явно освободил окно
+## Текущая фаза: CTO release зафиксирован; read-only diagnostic завершён
+
+Diagnostic turn **`01a18387-8ed9-7600-8656-b8a6436ec277` completed/idle**, clean Builder HEAD2cf9b65. Первый completed read `exec-8a516d8d-123d-4b8c-8831-e6563c8c4a27`; новых файлов/коммитов/запусков продукта/QA/browser/Node/build/SDK/server изменений не было. Source ref build `08f9b9eaa6aa1063eb7fcd9cf373ddacf907725a`, implementation0a80b0…; нужные UI source files одинаковы между ними и HEAD, frozen main hash exact. Root статически сверил указанные строки и существующий VQA raw JSON.
+
+**Zoom200: установлена нестабильность размеров, причина black frame остаётся inference.** `builder/src/main.mjs:87–98` считает canvas из stage.clientWidth/clientHeight и наблюдает тот же stage через ResizeObserver; `builder/style.css:7` задаёт overflow:auto. VQA raw tick95/zoom2 при том же viewport1280×720 показывает canvas1108×1108→1103×1078. Это согласуется с feedback через15px scrollbars. UI zoom вызывает fit без render (97), QA setZoom — fit+render (251), однако seek сам вызывает render (208/172), поэтому отсутствие redraw недостаточно как полный диагноз. **Stale hint: code-причина установлена** — terminal callback235–238 пишет save-status, seek208/start202–205 его не очищают; render обновляет другие статусы.
+
+Builder предложил один небольшой возможный fix: стабильное измерение viewport независимо от overflow canvas, resize только при изменении размеров, единый явный redraw после UI zoom/ResizeObserver; отдельно очищать только completion-owned hint, сохранив download/error сообщения. Scope main.mjs и при необходимости немного CSS; оценка **1–2 часа вместе с узкой проверкой после разрешения**, риски scrollbar/clipping/повторный resize. Устранение black canvas фактически не подтверждено. Это предложение CTO для решения об одной итерации или partial stop, **не разрешение исправлять/пересобирать/публиковать**; C04/raw evidence неизменны, token/window released, P2 slot active/Full PASS нет.
+
+## Подтверждённый release и история назначения diagnostic
 
 CTO лично прочитал final original `2cf9b6521cb2485a91ace37b44925b2a11fdc7b2`, оба exact actual QA reports, receipt summaries/docs/FINAL_ACTUAL_STATE и сверил receipt hashes/16 final HTTP rows. **LIMITED delivery/docs приняты. Текущий C04 token и shared Review window ЯВНО ОСВОБОЖДЕНЫ CTO 2026-10-28T17:18:45Z.** Matching owned lock/temps absent, writers idle подтверждены; новых server-write tokens нет. Frozen C04 и все raw evidence сохраняются неизменными. Full Technical/Art/P2 PASS не выдан; P2 research slot остаётся активным по решению CTO.
 
