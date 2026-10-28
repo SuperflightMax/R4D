@@ -2,7 +2,19 @@
 
 staff_id `builder-r4d-p2-free-01`; branch `codex/r4d-p2-free-builder-01`; исходный HEAD `df760b680f0d0264342fc8577fcc5779b80a3a15`. Рабочая копия только `E:/R4D/perspective/p2-worktrees/builder`.
 
-## Новое действующее поручение 28 октября: static P2 и последующий exact release gate
+## PAUSED_SAFE: мягкая временная пауза Max от 28 октября 2026
+
+Прямая команда Max через доверенный Dot от2026-10-28 00:46UTC (02:46 Europe/Kiev), подтверждена CTO. Заказ не отменён. Новые задания/runtime/tests/QA/generation/build/install/deploy/эксперименты/слоты не начинать. Продолжение только после новой ЯВНОЙ команды Max; прежние stage2/gate/checkpoints и свободный token не разрешают продолжать. Оба слота paused/reserved; P4–P6 не начинать, на другое устройство не переносить.
+
+На момент pause atomic операция отсутствует; P2 limited release/postchecks/server docs завершены, Lead явно освободил token. Новых server writes/reload/rollback нет. Resume base: source `e7ed4d068f33ee6ecda491f15dc46a6fd548ef96`, последний delivery/docs commit `a105b0a8f34977d809967ed6e3015e2880ab256a`; branch `codex/r4d-p2-free-builder-01`. До pause checkpoint Git status был чистым; текущая запись — единственный разрешённый checkpoint edit. Immutable/raw candidates, assets, manifests, final intent и runtime evidence сохраняются.
+
+Exact resume point: сначала прочитать этот pause checkpoint и `experiments/p2-free-approach/builder/DELIVERY_03.md` в СВОЁМ E worktree, затем актуальное адресное поручение Lead после новой явной команды Max. Candidate03 уже опубликован: не повторять release/build/QA. Текущая граница — ready authorized post-auth target отсутствовал, обе последующие QA попытки по сообщению Lead login-only; полного Technical/art PASS/P2closure нет. Следующую работу определит новое разрешённое поручение, старые launcher/file/security ограничения действуют.
+
+Состояние/receipt paths: `E:/R4D/perspective/p2-worktrees/builder/experiments/p2-free-approach/builder/DELIVERY_03.md`; `E:/R4D/perspective/p2-runtime/output/builder/review-delivery-03-01/` (phase/server evidence/index/TOKEN_RELEASE_NOTIFICATION.json); final local packet `E:/R4D/perspective/p2-runtime/output/p2-review-release-intent-03-final-01/`. WIP не терялся, reset/clean/switch/cleanup не выполнялись.
+
+По учёту собственных tool calls все SSH/Python/exec операции завершены; своих активных server/PID/exec sessions нет. Созданная ранее blank IAB tab1 была закрыта до delivery; новых своих browser tabs не открывалось. Останавливать собственную нагрузку не требуется. Чужие процессы/Millionko/Max/P3/unknown owners не проверялись и не останавливались. Новых процессов/серверов/браузеров ради проверки не запускалось; только разрешённый короткий Git checkpoint. После commit/push остановиться без active ожидания.
+
+## Состояние до временной паузы: завершённый static P2 limited release
 
 Последний checkpoint: **DELIVERED_LIMITED_RUNTIME_VISUAL_UNVERIFIED; TOKEN_RELEASED_BY_LEAD**. Exact Lead gate8dd5d6a727edf99fa71683d928f8cdd1abeb98ac и single CTO token получены адресно; исполнен только final intentSHA50b99bf62cb40ea579fbe4346f68e64ca42ea854b09514fbd0ddc0e2b7744f2c. Свежие resources и all457 baseline guards совпали до ANY write, targets отсутствовали; guard повторён перед switch. Snapshot actualUTC2026-10-28T00:41:08.994866+00:00, atomic root switch00:41:09.021470UTC (02:41:09 Europe/Kiev), nginx-t/gracefulreload passed. URL https://superflight.space/review/r4d/p2-free-approach/. Actual newroot `/srv/superflight-review/releases/p2-jungle-static-candidate-03`; fullmanifestSHA171a889a53da529d2a668da9811b3f6a9661cdc52ab54a46e254900553cfed35/archiveSHAa63433f59c5ec84c15a627938d394101810c89843544738e9171d2852918faae/snippetSHAd8cf0b3cd5a56241dc86562705daab81da09c648ad1aba8adcf232be2eb23104.
 
