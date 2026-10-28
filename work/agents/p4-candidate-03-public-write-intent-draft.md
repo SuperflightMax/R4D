@@ -1,6 +1,6 @@
 # P4 candidate-03: public release-intent DRAFT — НЕПОЛНЫЙ
 
-28 октября 2026. CTO разрешил будущую публикацию **ограниченного прототипа с остаточными пробелами**, не принятой полной P4. Token отсутствует, все VPS/public writes закрыты. После отдельной CTO selector disposition завершён [ONE sealed LOCAL handoff](p4-candidate-03-sealed-local-handoff.md). Historical STOP и original proposal сохранены; correction записана отдельно. Этот draft заменяет intent02, execution authority требует Root/CTO review и нового single-use token.
+28 октября 2026. Подготовительный draft завершился [фактической LIMITED PUBLIC delivery](p4-candidate-03-public-delivery.md) после Root/CTO review и отдельного single-use разрешения. Разрешение использовано одним operational cycle, повторное выполнение не разрешено. Immutable sealed packet, historical STOP и original proposal сохранены. Текст ниже — история pre-execution intent, не текущий grant. Shared window остаётся EXCLUSIVE P4 до отдельного CTO release; Full Art/P4 closure не заявляется.
 
 ## Exact candidate и проверка Release
 
