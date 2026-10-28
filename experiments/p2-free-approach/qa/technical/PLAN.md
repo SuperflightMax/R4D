@@ -1,5 +1,7 @@
 # P2 Jungle — план независимой технической проверки
 
+**Текущий режим: resume по новой явной команде Max от 28 октября 05:36 UTC; порученный source/data-разбор завершён.** [Диагноз Android/zoom/ball и целевой план slowdown QA](candidate-03-ANDROID_SOURCE_DIAGNOSIS-01.md). [Checkpoint pause/resume](PAUSE_STATE.md). Возобновление не является новым auth-фактом; browser/login цикл не повторять без основания, новая релевантная QA — по адресному candidate handoff.
+
 Автор: `technical-qa-r4d-p2-free-01`. Подготовка: 27 октября 2026, Europe/Kyiv; turn `01a17e69-c5ca-77e1-aaf4-7cb50523b797`.
 
 Основание: `orders/perspective/ORDER.md` (редакция 4) и `orders/perspective/P2-free-approach.md` на `df760b680f0d0264342fc8577fcc5779b80a3a15`. Только P2 и Jungle. Это план проверки, не QA-вердикт. Текущее обновление 28 октября: frozen `p2-jungle-static-candidate-03` отдельно проверен offline — [candidate-03-REPORT.md](candidate-03-REPORT.md); после штатной публикации обычный HTTPS URL проверен в существующем IAB и перенаправил на login — [candidate-03-ACCESS-01.md](candidate-03-ACCESS-01.md). Post-auth/UI/scene часть остаётся непроверенной. [candidate-02-REPORT.md](candidate-02-REPORT.md) сохранён как baseline, прежний вывод не перенесён автоматически.
