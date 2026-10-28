@@ -76,3 +76,10 @@ Ball/shadow raw PNG и измеренные center/radius прежние. Scale 
 Для воспроизведения авторинга в этом каталоге: `python -B author_boundaries.py`,
 затем `python -B extend_regions.py`, `python -B prepare_masks.py`,
 `python -B validate_assets.py`. Это не нужно browser-потребителю готовых PNG.
+
+Exact byte handoff: `python -B freeze_handoff.py <commit>` извлекает весь этот
+каталог из immutable Git objects в собственный E runtime. Внешний manifest
+охватывает также hashes.json, provenance, prompts, скрипты и рабочие записи;
+каждый digest считается после повторного чтения извлечённого файла. Сам
+manifest находится рядом с payload, его SHA сообщается отдельно. PNG не
+перегенерируются, не меняются и не нормализуются. Другие worktree не пишутся.

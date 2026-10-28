@@ -47,6 +47,11 @@ source-aligned, source/config неизменны. Basket-front depth lines по�
 и исправление сохранены в RUN_LOG. PNG/координаты/глубины от этой правки
 не изменились. Фактический consumer payload ~1.805MB.
 
+Для полной передачи вместе с текстовыми metadata добавлен freeze_handoff.py:
+он извлекает только собственный asset-artist prefix из exact commit в E runtime,
+сверяет прочитанные final bytes и формирует внешний manifest всех файлов,
+включая hashes.json и оба provenance. Digest самого manifest сообщается отдельно.
+
 Проверены размеры/white RGB/alpha/hash integrity, все 25 exact pin depths,
 пять точек исключения baked shadows и четыре пары hole/front-rim корзин.
 Полный динамический/художественный PASS пока отсутствует. Риск: scalar pin
