@@ -1,0 +1,620 @@
+{
+  "candidate": "p4-full-v03-candidate-03",
+  "artifactSha256": "298649ec518a13e8070201e822108005a6b5081454452f50243d18f2fde2d542",
+  "builderCommit": "7d2344c1a8959f73ff26af5d3aba7dd02eb0e971",
+  "art": {
+    "commit": "b7efff1e2f519812421829808e71a0d83154926d",
+    "manifestPath": "experiments/p4-extracted-objects/artwork/full-v03/manifest.json",
+    "manifestSha256": "276dfdfd32f1f543ce39d72fe7e360523c6ec70387d1c44dd21acd47f9fb1a6a",
+    "version": "p4-full-v03"
+  },
+  "binding": {
+    "p1Commit": "4b47db04c7140ebf88f69b91faa0b790d46f22ec",
+    "coreCommit": "5a6fa03f1cdb3de88a2d9c7dbe795eb8e2a7f023",
+    "config.json": "dd5c519cd6d4b7295118e0a3a1063efed424a0ce739450bd5153c6a9941982db",
+    "p1-manifest.json": "7784dc0a215d0e472cf06a4eee03793592727cf0fa9a1fa0e0c78e5f1d17da18",
+    "projection.json": "9ca9e520f1927426a3a5ba73a5eacaf90fedffc9385e7d08d5b1e6ee644b020c"
+  },
+  "checked": [
+    {
+      "file": "app.js",
+      "sha256": "855fd997a3f02629e924031841d9e3759d7d7f4008b1d8af034505dd12f76ece",
+      "httpStatus": 200
+    },
+    {
+      "file": "art/background.png",
+      "sha256": "9344fdcefcb3d36afa6a4585fc6db3c550b301e24cb5935202d5c4e10781b0b8",
+      "httpStatus": 200
+    },
+    {
+      "file": "art/ball-body.png",
+      "sha256": "bf510895011a6a0a69896003517d242cd5a104e9c1ea37431895ca5bdf196b89",
+      "httpStatus": 200
+    },
+    {
+      "file": "art/ball-shadow.png",
+      "sha256": "e172a8aee8446d8083680e20fd484f95c48daa823174415d60e3a99b6799b516",
+      "httpStatus": 200
+    },
+    {
+      "file": "art/flower-01-body.png",
+      "sha256": "407a51d3f65833bd7dc725f81b37a6a08ffdbe63238c39dc35d3db0279200470",
+      "httpStatus": 200
+    },
+    {
+      "file": "art/flower-01-ground-shadow.png",
+      "sha256": "46333d5173fde8a8307fbe01ec6d964e6619ddf315a5d3d1e77e466630993871",
+      "httpStatus": 200
+    },
+    {
+      "file": "art/flower-02-body.png",
+      "sha256": "62f75619281399e6e530330f4ffb890fe234361bab5284aee9530d5b012c894c",
+      "httpStatus": 200
+    },
+    {
+      "file": "art/flower-02-ground-shadow.png",
+      "sha256": "68c212b4292f8b15e6796b04debfea0897828d850731f586b1bdf8ada7e9b865",
+      "httpStatus": 200
+    },
+    {
+      "file": "art/flower-03-body.png",
+      "sha256": "2b8cf13c792dab99bbba6afab4361a7e002df35fcd28072bd5707b4ba3f65502",
+      "httpStatus": 200
+    },
+    {
+      "file": "art/flower-03-ground-shadow.png",
+      "sha256": "bef937bc0d59431fcfeabf3250f758c65702e29532348a61531dd508f49aa9fe",
+      "httpStatus": 200
+    },
+    {
+      "file": "art/flower-04-body.png",
+      "sha256": "7b9ce8cf9fc551c3a21b8d1a60f88824cf859f05240812081d9913ca7377ff83",
+      "httpStatus": 200
+    },
+    {
+      "file": "art/flower-04-ground-shadow.png",
+      "sha256": "b9517dc51dd2469dbc8fd97367c5fed7f341459fddff76d392a6a0f936d545d5",
+      "httpStatus": 200
+    },
+    {
+      "file": "art/flower-05-body.png",
+      "sha256": "fc86dfcf23cd8d45f458aa06446a50fbb0f952986c577d1f5d4a03daad41368f",
+      "httpStatus": 200
+    },
+    {
+      "file": "art/flower-05-ground-shadow.png",
+      "sha256": "f639462c32eaf2feca94cec13b9719511b41357413f188a765b153aa64ad4a37",
+      "httpStatus": 200
+    },
+    {
+      "file": "art/flower-06-body.png",
+      "sha256": "c1b4ec314eaea111e61f50e47a15325694c30449d292859deac8d15941e39f87",
+      "httpStatus": 200
+    },
+    {
+      "file": "art/flower-06-ground-shadow.png",
+      "sha256": "73d02d730ad9bc9b978291fd4edd142ec5c51f91b60fa30e96b007c08c47f8cd",
+      "httpStatus": 200
+    },
+    {
+      "file": "art/flower-07-body.png",
+      "sha256": "cc0370c40cf4bb8ad79f65f213460d04afddfc6d1e92ace75c3822492760ee3a",
+      "httpStatus": 200
+    },
+    {
+      "file": "art/flower-07-ground-shadow.png",
+      "sha256": "c1b0fcfe5aa5578529c098fcea916528bcc856d1af85cb60f24135eeb778c819",
+      "httpStatus": 200
+    },
+    {
+      "file": "art/frog-01-body.png",
+      "sha256": "70f139c7507087aae27549e32dd624f3c88e7625fc91ca524084e40ccfa96f50",
+      "httpStatus": 200
+    },
+    {
+      "file": "art/frog-01-ground-shadow.png",
+      "sha256": "b8de83dd9fb0feddae9dca64df62a3d1e474960411e93220e9b0775014077452",
+      "httpStatus": 200
+    },
+    {
+      "file": "art/frog-02-body.png",
+      "sha256": "047f1681dc150399ac96e595bc534a4319ea4a0461384944c2fa55330d0fb364",
+      "httpStatus": 200
+    },
+    {
+      "file": "art/frog-02-ground-shadow.png",
+      "sha256": "e3edf7f9202109b3a026aaaecabef28b820ffd2eb8efdc3dd8a22e2884c12eab",
+      "httpStatus": 200
+    },
+    {
+      "file": "art/frog-03-body.png",
+      "sha256": "5a25aa7bdd9165e427c527194fcf1ee8cce1da056970dd3e2e43145ae2f0610e",
+      "httpStatus": 200
+    },
+    {
+      "file": "art/frog-03-ground-shadow.png",
+      "sha256": "c874c7c933f2206b2f96d8b0d2a936a082bcac4cfed0f94e035e2ea1b7b9accf",
+      "httpStatus": 200
+    },
+    {
+      "file": "art/frog-04-body.png",
+      "sha256": "a0ceb219cc544b5a7d6faea362f9bb49e498eec8f933ab69de939e99dd1c83ce",
+      "httpStatus": 200
+    },
+    {
+      "file": "art/frog-04-ground-shadow.png",
+      "sha256": "d01e92eb8063d337f484d52e898007e5218fdfdf7343c76d1dc876165bb82ffc",
+      "httpStatus": 200
+    },
+    {
+      "file": "art/frog-05-body.png",
+      "sha256": "1402a50c613d300e8cdc66f818a0bab15f422f366124e8fc8a62ed6ef3dfef02",
+      "httpStatus": 200
+    },
+    {
+      "file": "art/frog-05-ground-shadow.png",
+      "sha256": "83574f54b822ddfc1af167e84badfdbc618496a0635c5a912bfde244178bc65e",
+      "httpStatus": 200
+    },
+    {
+      "file": "art/full-v02-contract.md",
+      "sha256": "8d3b6b7da860c1ad6f5d71003175ebf4d0cceb4edb12507e0821a25f17f13ec0",
+      "httpStatus": 200
+    },
+    {
+      "file": "art/leaf-01-body.png",
+      "sha256": "d5e60b709b15efaf4b84b934dd740e8bcea3ebbe0a0ea142f4ffd15f592197b7",
+      "httpStatus": 200
+    },
+    {
+      "file": "art/leaf-01-ground-shadow.png",
+      "sha256": "2af194f8f31ed10485b77dfa5cf3d4460999c442be059d34075324cb36c2d228",
+      "httpStatus": 200
+    },
+    {
+      "file": "art/leaf-02-body.png",
+      "sha256": "12cd5d7379ce42d92b970c1023d5b63a2253e0bb95a88cc08d6f61bc1b6f606c",
+      "httpStatus": 200
+    },
+    {
+      "file": "art/leaf-02-ground-shadow.png",
+      "sha256": "9acd9c2e02f862194fa6275ce3627e9d3dc3acc3636a05324d7630a503e7909f",
+      "httpStatus": 200
+    },
+    {
+      "file": "art/leaf-03-body.png",
+      "sha256": "dd971c1e3439f571571e379d6673f2c0358cc5146f3a813201a3012c2df9d274",
+      "httpStatus": 200
+    },
+    {
+      "file": "art/leaf-03-ground-shadow.png",
+      "sha256": "049b0f9f4d3d3ec3de10bb49fed11aeb105b7ee325d788c313d77e562a58945f",
+      "httpStatus": 200
+    },
+    {
+      "file": "art/leaf-04-body.png",
+      "sha256": "3d16a71a78776aaddc018ac6649b578633c8a9a1bb6b1a7344bba20ec051577e",
+      "httpStatus": 200
+    },
+    {
+      "file": "art/leaf-04-ground-shadow.png",
+      "sha256": "6f78f5ecf1758b2767d9dc85d9e6794a542bd1ee521dd6add2e4d3f1aa88354e",
+      "httpStatus": 200
+    },
+    {
+      "file": "art/leaf-05-body.png",
+      "sha256": "0088d5636d2f736c14b143709fdaa515572489fe4589888cc00aa812621c0b7d",
+      "httpStatus": 200
+    },
+    {
+      "file": "art/leaf-05-ground-shadow.png",
+      "sha256": "34da2f2e47852ae5575a04df2dc0606d7698bcaeaaa00348d4bc47f54ea6b3b1",
+      "httpStatus": 200
+    },
+    {
+      "file": "art/manifest.json",
+      "sha256": "276dfdfd32f1f543ce39d72fe7e360523c6ec70387d1c44dd21acd47f9fb1a6a",
+      "httpStatus": 200
+    },
+    {
+      "file": "art/near-platform-front.png",
+      "sha256": "cb7d45e7e72cb417f6fe234ebd2cd336b585ebcb16a277f8c45eba9c78200ada",
+      "httpStatus": 200
+    },
+    {
+      "file": "art/rail-left.png",
+      "sha256": "8c4aa1a23b74b9b9eba1d17e1cc52aaf06741da3be46e38775dccd4b13661fd8",
+      "httpStatus": 200
+    },
+    {
+      "file": "art/rail-right.png",
+      "sha256": "8756e76b2730edcc089156ab10ac1e32084cbe05996234085aadfdf471058543",
+      "httpStatus": 200
+    },
+    {
+      "file": "art/README.md",
+      "sha256": "ef9391109de1a7cde230f001240f33270651fc238f1a94fc3cb68e11bba8c8a3",
+      "httpStatus": 200
+    },
+    {
+      "file": "art/receiver-01-body.png",
+      "sha256": "0e3a4d6c40fcc58a3a63e94791d1107ca4d2163df81b7f3367a332c5c314507e",
+      "httpStatus": 200
+    },
+    {
+      "file": "art/receiver-01-foreground.png",
+      "sha256": "b98f63d72ca83907f6c77136dce641605cc4e9765c7ded7eb005427304b84ddf",
+      "httpStatus": 200
+    },
+    {
+      "file": "art/receiver-02-body.png",
+      "sha256": "c7924677d2f476e9af1023b3018e68017060f3d8245f1962520640b06455bea6",
+      "httpStatus": 200
+    },
+    {
+      "file": "art/receiver-02-foreground.png",
+      "sha256": "d7581bffeba50c438f7461e51233bcdeb24cb155599fe295367d0bb764924f7a",
+      "httpStatus": 200
+    },
+    {
+      "file": "art/receiver-03-body.png",
+      "sha256": "69cbec3dce57285f43e93eccab4517a581bf8dbaea1a96cd1708c9ba162e1bb2",
+      "httpStatus": 200
+    },
+    {
+      "file": "art/receiver-03-foreground.png",
+      "sha256": "34bc49247a37e430f29fe4e2d156323e29d9fe5cb900ff27852f528e20966004",
+      "httpStatus": 200
+    },
+    {
+      "file": "art/receiver-04-body.png",
+      "sha256": "ee94c3e405aed1530a40f3d93b391295ef58a1c4a241d6e8f0e48bba4205981b",
+      "httpStatus": 200
+    },
+    {
+      "file": "art/receiver-04-foreground.png",
+      "sha256": "1a95b3e080f0f2005e96927e3e366d4df13d280a07985ce2621b811eddaa4b7d",
+      "httpStatus": 200
+    },
+    {
+      "file": "art/restoration-regions.png",
+      "sha256": "e08e1a082616a5bb2337eb9296e843efb7a77e9c227d9c2e1565f79c34b76fca",
+      "httpStatus": 200
+    },
+    {
+      "file": "art/wood-01-body.png",
+      "sha256": "0da5eedca7c8f5cc70916ab88f3512facd35193a5a8bf3a789d3029050ea7a9d",
+      "httpStatus": 200
+    },
+    {
+      "file": "art/wood-01-ground-shadow.png",
+      "sha256": "db2a7a0a98a245969341f60194119a6ed62aed6e3e7f3a2420f049012c4050d7",
+      "httpStatus": 200
+    },
+    {
+      "file": "art/wood-02-body.png",
+      "sha256": "f16a239c303cc8b083cc9d53d71a2e58aae7b95b089e0ea7cda866fd494ea531",
+      "httpStatus": 200
+    },
+    {
+      "file": "art/wood-02-ground-shadow.png",
+      "sha256": "2f093e0ccb7c06578f101a7721204075fdac3dbb78a03d57068014be59f58d0e",
+      "httpStatus": 200
+    },
+    {
+      "file": "art/wood-03-body.png",
+      "sha256": "1b87c9bdc41481107162075264ae8e71f31f7cda46b6c27d7e542a0cdbe39b28",
+      "httpStatus": 200
+    },
+    {
+      "file": "art/wood-03-ground-shadow.png",
+      "sha256": "55f5ccffd99c080edd400bde6ae49e6958d9951ee7000b299ee62bff133b7efd",
+      "httpStatus": 200
+    },
+    {
+      "file": "art/wood-04-body.png",
+      "sha256": "f7cf33dc681131a620eb353ad980ad480b7382d05be2dfc58a87ab6de966ea0f",
+      "httpStatus": 200
+    },
+    {
+      "file": "art/wood-04-ground-shadow.png",
+      "sha256": "690560c7445798793a268b23a89ce6769775b37023403a05fb702b5874793276",
+      "httpStatus": 200
+    },
+    {
+      "file": "art/wood-05-body.png",
+      "sha256": "34ce375d9fbc54e2ea93809fd3b4bd99d074f7e1a39e4aa07ceeec0be4f36d13",
+      "httpStatus": 200
+    },
+    {
+      "file": "art/wood-05-ground-shadow.png",
+      "sha256": "ae7722265de2b75f605f422843eb95789792e286f059d894614f62edf2242010",
+      "httpStatus": 200
+    },
+    {
+      "file": "art/wood-06-body.png",
+      "sha256": "5bef480530baf2d9c6a0f0316fefb29437250592e826f4fb3f7199a6a92d218e",
+      "httpStatus": 200
+    },
+    {
+      "file": "art/wood-06-ground-shadow.png",
+      "sha256": "f5af7b7291c9eb3e1b2ab3c984cdf7650a808c15b20b729dff7bba8b307c3b54",
+      "httpStatus": 200
+    },
+    {
+      "file": "art/wood-07-body.png",
+      "sha256": "d813a70333b67db4ecf9fa69217681a5015b481caa2ff247610638835a72b9f0",
+      "httpStatus": 200
+    },
+    {
+      "file": "art/wood-07-ground-shadow.png",
+      "sha256": "6367bb960f46d51fd7bd3c98854340e3d2518a517f6dbae84e610dbaed60794f",
+      "httpStatus": 200
+    },
+    {
+      "file": "art/wood-08-body.png",
+      "sha256": "5edb7ee503c7bf50dce8ada1959f7c88e7c6140d9ee49d96f57ddfde45cc00ed",
+      "httpStatus": 200
+    },
+    {
+      "file": "art/wood-08-ground-shadow.png",
+      "sha256": "5cf1a0d8537bf92db5717313ca5326735385084162b545f6fdac489586428d12",
+      "httpStatus": 200
+    },
+    {
+      "file": "evidence/01-shadow-t590.jpg",
+      "sha256": "761a6e6f30ea10bb532f23eea7ef1ec2cc97a4cfc59354909fde4a9c97bf611f",
+      "httpStatus": 200
+    },
+    {
+      "file": "evidence/02-partial-t605.jpg",
+      "sha256": "37ada43a097206ca8c61b9f8e896badbca3f7be1dd5aaf204e49d14b61b0e470",
+      "httpStatus": 200
+    },
+    {
+      "file": "evidence/03-contact-t615.jpg",
+      "sha256": "51cf7092e61f5ebcbc57e5c44701dcd71a44f9db924b27b75be0febd32afd00b",
+      "httpStatus": 200
+    },
+    {
+      "file": "evidence/04-contact-t617.jpg",
+      "sha256": "17acf5edf229d37acce2b7cde78339c1e90fc03609ecc9f355145c53a5b28886",
+      "httpStatus": 200
+    },
+    {
+      "file": "evidence/05-capture-t2421.jpg",
+      "sha256": "51708fc434f650331175541d21194c61e894ff1098de9594126f05fa7eabd1f3",
+      "httpStatus": 200
+    },
+    {
+      "file": "evidence/06-lost-t1323.jpg",
+      "sha256": "d1c90dbca96272ddf723e242d34ad5603da80745610a9f6192272c0e671f4059",
+      "httpStatus": 200
+    },
+    {
+      "file": "evidence/playback-same-file.json",
+      "sha256": "929876b1aa271c61c289706ef8a1023a03051f4cb7125b91f791b99c63487e84",
+      "httpStatus": 200
+    },
+    {
+      "file": "evidence/provenance.json",
+      "sha256": "e60cc74498ad6c3c8e33cfb84b23a1220d1b582795ac4610c7861ce78fba5223",
+      "httpStatus": 200
+    },
+    {
+      "file": "evidence/view-checkpoint-invariant.json",
+      "sha256": "71b7f858c5e26e00d8258828e10810796583030a77ff6fc152c3a151bf47fcb4",
+      "httpStatus": 200
+    },
+    {
+      "file": "history/candidate02.json",
+      "sha256": "6d6dd2b72e9e1dfdfddbbee8fb1cfa3983df0b001830af8a1b6e74268c1466e2",
+      "httpStatus": 200
+    },
+    {
+      "file": "index.html",
+      "sha256": "b9c9ea7fcf307d2258dacb67ac1895250e7655ce3ebf84e68c7ba965995b946c",
+      "httpStatus": 200
+    },
+    {
+      "file": "input/art-binding.json",
+      "sha256": "74f3a61e06a3e0cba197284d441eedb3692caff446cf00a6c3b2cf6c6f24664f",
+      "httpStatus": 200
+    },
+    {
+      "file": "input/binding.json",
+      "sha256": "e4b9774cc6c2f638c2b271017feeb9c16bdf9fcc9674b79191ed2c8f3ced4747",
+      "httpStatus": 200
+    },
+    {
+      "file": "input/config.json",
+      "sha256": "dd5c519cd6d4b7295118e0a3a1063efed424a0ce739450bd5153c6a9941982db",
+      "httpStatus": 200
+    },
+    {
+      "file": "input/original.jpg",
+      "sha256": "c8f9e4245c1de8c2086e615bc75dc10aea59b76b614d6e106593e07262e24f72",
+      "httpStatus": 200
+    },
+    {
+      "file": "input/p1-manifest.json",
+      "sha256": "7784dc0a215d0e472cf06a4eee03793592727cf0fa9a1fa0e0c78e5f1d17da18",
+      "httpStatus": 200
+    },
+    {
+      "file": "input/projection.json",
+      "sha256": "9ca9e520f1927426a3a5ba73a5eacaf90fedffc9385e7d08d5b1e6ee644b020c",
+      "httpStatus": 200
+    },
+    {
+      "file": "licenses/@xmldom-xmldom-LICENSE",
+      "sha256": "4da724fc305d81606b245b324d4d2586916b9d248b23d82183df753ace0fdf71",
+      "httpStatus": 200
+    },
+    {
+      "file": "licenses/earcut-LICENSE",
+      "sha256": "0b348fff56384b43dbb37593906904e56d0f9deb51eae590d4dc6d427fbf1808",
+      "httpStatus": 200
+    },
+    {
+      "file": "licenses/eventemitter3-LICENSE",
+      "sha256": "3aecc12b1cb28832b5f65ab64291de96568c3f236a74d646281b4491f7bcadbf",
+      "httpStatus": 200
+    },
+    {
+      "file": "licenses/ismobilejs-LICENSE",
+      "sha256": "57c43c929cbc20653cb0e62620a413a8bc456888c1874ebc25d08e0122cd953e",
+      "httpStatus": 200
+    },
+    {
+      "file": "licenses/parse-svg-path-LICENSE",
+      "sha256": "2d5ffdfe09268750ba687a149db8392038772e7f156db3a98b615a7de0cab76e",
+      "httpStatus": 200
+    },
+    {
+      "file": "licenses/pixi-MIT.txt",
+      "sha256": "5ce7447bc57f7349ffc48338782fbcabe613696e00712b20d66bc58e780f9473",
+      "httpStatus": 200
+    },
+    {
+      "file": "licenses/pixi.js-LICENSE",
+      "sha256": "5ce7447bc57f7349ffc48338782fbcabe613696e00712b20d66bc58e780f9473",
+      "httpStatus": 200
+    },
+    {
+      "file": "licenses/tiny-lru-LICENSE",
+      "sha256": "8106f20bacca3558946439afb5e4854333f0a9944eee1c60488aa7ac7fc8f52b",
+      "httpStatus": 200
+    },
+    {
+      "file": "native-runtime.js",
+      "sha256": "8843446996582eaccbd9ff63d3147d74b7eca9a614d8e0df16851d1d89d46f50",
+      "httpStatus": 200
+    },
+    {
+      "file": "RUN.md",
+      "sha256": "972b6b138442e66fbbfa39300dc7579e562858af5f5fe5721a4a4501c42a3fc3",
+      "httpStatus": 200
+    },
+    {
+      "file": "runs/01-shadow-t590.checkpoint.json",
+      "sha256": "d7153a635d900fe133081cde70dc078d09c2d20ceb77a81d6839dd57cf479388",
+      "httpStatus": 200
+    },
+    {
+      "file": "runs/01-shadow-t590.view.json",
+      "sha256": "842527b75f56b045349c9fef65107ea01f398721844cd5f2a7577aef3a10e215",
+      "httpStatus": 200
+    },
+    {
+      "file": "runs/02-partial-t605.checkpoint.json",
+      "sha256": "b3a1be7e25af6b5739ecc0f8e9adf9de890e51afd06aef6d28373c60afb6e682",
+      "httpStatus": 200
+    },
+    {
+      "file": "runs/02-partial-t605.view.json",
+      "sha256": "93ce66dafdd88af22b3b185baffc47b607603833bd95aed19abdf10a749e2793",
+      "httpStatus": 200
+    },
+    {
+      "file": "runs/03-contact-t615.checkpoint.json",
+      "sha256": "3bb84f55fa00184b084246d4b43ff0f90895d1da1b936b9b0b8cbfd68a514782",
+      "httpStatus": 200
+    },
+    {
+      "file": "runs/03-contact-t615.view.json",
+      "sha256": "c0a7dafa7dd16aa034cd617480f6236142d909021b290dcd298a9e15d18223f1",
+      "httpStatus": 200
+    },
+    {
+      "file": "runs/04-contact-t617.checkpoint.json",
+      "sha256": "16a276ce1aced127f9f63b34e769f681540b04fa0b078c2decdd2e590e5fd089",
+      "httpStatus": 200
+    },
+    {
+      "file": "runs/04-contact-t617.view.json",
+      "sha256": "2649a7ef9717d575bd8ec473d6ec26088f67d2e9261a22dcfcb30c4a8e30b4ef",
+      "httpStatus": 200
+    },
+    {
+      "file": "runs/05-capture-t2421.checkpoint.json",
+      "sha256": "5a472d56179d34cafe326fa3c1d5bd9a347370dba814caaa4cd887849a829dc5",
+      "httpStatus": 200
+    },
+    {
+      "file": "runs/05-capture-t2421.view.json",
+      "sha256": "4d6839fe24153af6a4139dd4677b4f5eb10a6ce120da379a34ec5c0def030a92",
+      "httpStatus": 200
+    },
+    {
+      "file": "runs/06-lost-t1323.checkpoint.json",
+      "sha256": "2d41d15e2792182f1b9c81d71b23b4921318e1df47e8f6eb3c05f8dcc32a4fea",
+      "httpStatus": 200
+    },
+    {
+      "file": "runs/06-lost-t1323.view.json",
+      "sha256": "1580cecafed5d959fa1a962de985c6368e80700298eabdd8a8050b9cdcaf6ded",
+      "httpStatus": 200
+    },
+    {
+      "file": "runs/index.json",
+      "sha256": "f68de74ffdbfb52439a210c9b495a868f46d598717d3a3c4fad11f9dc299c978",
+      "httpStatus": 200
+    },
+    {
+      "file": "serve.mjs",
+      "sha256": "90402ed92bdcdb549a9c982a8dd206190dc441b3915f224c3563cd9797e15b3c",
+      "httpStatus": 200
+    },
+    {
+      "file": "style.css",
+      "sha256": "0eb8faa28f1d65053c1446b07a9605946034812b207936a0e0c0a0a6b7f10da2",
+      "httpStatus": 200
+    }
+  ],
+  "unchangedDependencies": [
+    "native-runtime.js",
+    "input/config.json",
+    "input/p1-manifest.json",
+    "input/projection.json"
+  ],
+  "unchangedPngCount": 65,
+  "actualFileCount": 113,
+  "privacyMatches": [],
+  "shadowRender": {
+    "radiusRule": "native-horizontal-projective-derivative",
+    "bodySourceCenterOffsetR": [
+      0,
+      0
+    ],
+    "bodyUniformScaleRule": "R / body.contentRadiusPx[0]",
+    "shadowSourceCenterOffsetR": [
+      -0.95,
+      0.86
+    ],
+    "shadowSourceContentHalfSizeR": [
+      1.55,
+      0.58
+    ],
+    "sourceToNativeQuad": true,
+    "noPhysicsEffects": true
+  },
+  "oldShadowRender": {
+    "radiusRule": "native-horizontal-projective-derivative",
+    "bodySourceCenterOffsetR": [
+      0,
+      0
+    ],
+    "bodyUniformScaleRule": "R / body.contentRadiusPx[0]",
+    "shadowSourceCenterOffsetR": [
+      -0.55,
+      0.6
+    ],
+    "shadowSourceContentHalfSizeR": [
+      1.12,
+      0.42
+    ],
+    "sourceToNativeQuad": true,
+    "noPhysicsEffects": true
+  }
+}

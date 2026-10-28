@@ -1,0 +1,350 @@
+{
+  "candidate": "p4-full-v03-candidate-03",
+  "artifactSha256": "298649ec518a13e8070201e822108005a6b5081454452f50243d18f2fde2d542",
+  "scope": "targeted current03 UI states/events, actual clock progress and shadow application; no new seed matrix or native build",
+  "reusedOracleCommit": "6b011256d31c4ab0e617721420a92feda65ffbfd",
+  "unchangedBundleReference": "candidate02 exact SHA and independent comparison in cae522158d74f12765d766c71874886ce53465cc",
+  "prefixes": [
+    {
+      "seed": 0,
+      "lastRequestedTick": 70,
+      "nativeSteps": 70
+    },
+    {
+      "seed": 1842222754,
+      "lastRequestedTick": 2421,
+      "nativeSteps": 2421
+    },
+    {
+      "seed": 1,
+      "lastRequestedTick": 529,
+      "nativeSteps": 529
+    },
+    {
+      "seed": 4,
+      "lastRequestedTick": 2088,
+      "nativeSteps": 2088
+    },
+    {
+      "seed": 386928037,
+      "lastRequestedTick": 1058,
+      "nativeSteps": 1058
+    }
+  ],
+  "uiChecks": [
+    {
+      "label": "fresh-initial",
+      "seed": 0,
+      "tick": 0,
+      "status": "PASS"
+    },
+    {
+      "label": "fresh-start-paused",
+      "seed": 0,
+      "tick": 70,
+      "status": "PASS"
+    },
+    {
+      "label": "current03-import605",
+      "seed": 1842222754,
+      "tick": 605,
+      "status": "PASS"
+    },
+    {
+      "label": "resume1-playing",
+      "seed": 1842222754,
+      "tick": 665,
+      "status": "PASS"
+    },
+    {
+      "label": "resume1-paused",
+      "seed": 1842222754,
+      "tick": 685,
+      "status": "PASS"
+    },
+    {
+      "label": "resume2-playing",
+      "seed": 1842222754,
+      "tick": 741,
+      "status": "PASS"
+    },
+    {
+      "label": "resume2-paused",
+      "seed": 1842222754,
+      "tick": 758,
+      "status": "PASS"
+    },
+    {
+      "label": "resume3-playing",
+      "seed": 1842222754,
+      "tick": 818,
+      "status": "PASS"
+    },
+    {
+      "label": "resume3-paused",
+      "seed": 1842222754,
+      "tick": 834,
+      "status": "PASS"
+    },
+    {
+      "label": "seek824",
+      "seed": 1842222754,
+      "tick": 824,
+      "status": "PASS"
+    },
+    {
+      "label": "seek824-play",
+      "seed": 1842222754,
+      "tick": 884,
+      "status": "PASS"
+    },
+    {
+      "label": "seek824-play-paused",
+      "seed": 1842222754,
+      "tick": 904,
+      "status": "PASS"
+    },
+    {
+      "label": "exact-pause-repeat",
+      "seed": 1842222754,
+      "tick": 904,
+      "status": "PASS"
+    },
+    {
+      "label": "manual-import605",
+      "seed": 1842222754,
+      "tick": 605,
+      "status": "PASS"
+    },
+    {
+      "label": "manual606",
+      "seed": 1842222754,
+      "tick": 606,
+      "status": "PASS"
+    },
+    {
+      "label": "same-file-first605",
+      "seed": 1842222754,
+      "tick": 605,
+      "status": "PASS"
+    },
+    {
+      "label": "manual-plus10-615",
+      "seed": 1842222754,
+      "tick": 615,
+      "status": "PASS"
+    },
+    {
+      "label": "same-file-second605",
+      "seed": 1842222754,
+      "tick": 605,
+      "status": "PASS"
+    },
+    {
+      "label": "mode-flags605",
+      "seed": 1842222754,
+      "tick": 605,
+      "status": "PASS"
+    },
+    {
+      "label": "mode-flags606",
+      "seed": 1842222754,
+      "tick": 606,
+      "status": "PASS"
+    },
+    {
+      "label": "shadow590",
+      "seed": 1842222754,
+      "tick": 590,
+      "status": "PASS"
+    },
+    {
+      "label": "ordinary03-t605",
+      "seed": 1842222754,
+      "tick": 605,
+      "status": "PASS"
+    },
+    {
+      "label": "ordinary03-t615",
+      "seed": 1842222754,
+      "tick": 615,
+      "status": "PASS"
+    },
+    {
+      "label": "ordinary03-t616",
+      "seed": 1842222754,
+      "tick": 616,
+      "status": "PASS"
+    },
+    {
+      "label": "ordinary03-t617",
+      "seed": 1842222754,
+      "tick": 617,
+      "status": "PASS"
+    },
+    {
+      "label": "ordinary03-t2419",
+      "seed": 1842222754,
+      "tick": 2419,
+      "status": "PASS"
+    },
+    {
+      "label": "ordinary03-t2420",
+      "seed": 1842222754,
+      "tick": 2420,
+      "status": "PASS"
+    },
+    {
+      "label": "ordinary03-t2421",
+      "seed": 1842222754,
+      "tick": 2421,
+      "status": "PASS"
+    },
+    {
+      "label": "replay-seed1-paused",
+      "seed": 1,
+      "tick": 73,
+      "status": "PASS"
+    },
+    {
+      "label": "left1-t527",
+      "seed": 1,
+      "tick": 527,
+      "status": "PASS"
+    },
+    {
+      "label": "left1-t528",
+      "seed": 1,
+      "tick": 528,
+      "status": "PASS"
+    },
+    {
+      "label": "left1-t529",
+      "seed": 1,
+      "tick": 529,
+      "status": "PASS"
+    },
+    {
+      "label": "replay-seed4-paused",
+      "seed": 4,
+      "tick": 70,
+      "status": "PASS"
+    },
+    {
+      "label": "old-stall-location1000",
+      "seed": 4,
+      "tick": 1000,
+      "status": "PASS"
+    },
+    {
+      "label": "old-stall1000-resumed",
+      "seed": 4,
+      "tick": 1069,
+      "status": "PASS"
+    },
+    {
+      "label": "receiver04-t2086",
+      "seed": 4,
+      "tick": 2086,
+      "status": "PASS"
+    },
+    {
+      "label": "receiver04-t2087",
+      "seed": 4,
+      "tick": 2087,
+      "status": "PASS"
+    },
+    {
+      "label": "receiver04-t2088",
+      "seed": 4,
+      "tick": 2088,
+      "status": "PASS"
+    },
+    {
+      "label": "reused-own02-lost",
+      "seed": 386928037,
+      "tick": 1058,
+      "status": "PASS"
+    },
+    {
+      "label": "reused-lost-terminal-noop-raw-string",
+      "seed": 386928037,
+      "tick": 1058,
+      "status": "PASS"
+    }
+  ],
+  "replacedObservation": {
+    "excludedLabel": "reused-lost-terminal-noop",
+    "reason": "Object-valued browser evaluate transport rounded first object_hit.timeSec; raw DOM text preserves full number.",
+    "objectTransportValue": 0.47,
+    "rawDomValue": 0.47000000000000003,
+    "replacementLabel": "reused-lost-terminal-noop-raw-string"
+  },
+  "transitions": [
+    {
+      "case": "fresh-start",
+      "from": 0,
+      "to": 70,
+      "seed": 0
+    },
+    {
+      "case": "resume1",
+      "seed": 1842222754,
+      "from": 605,
+      "to": 685
+    },
+    {
+      "case": "resume2",
+      "seed": 1842222754,
+      "from": 685,
+      "to": 758
+    },
+    {
+      "case": "resume3",
+      "seed": 1842222754,
+      "from": 758,
+      "to": 834
+    },
+    {
+      "case": "seek824-play",
+      "seed": 1842222754,
+      "from": 824,
+      "to": 904
+    },
+    {
+      "case": "replay-start-seed1",
+      "seed": 1,
+      "from": 0,
+      "to": 73
+    },
+    {
+      "case": "replay-start-seed4",
+      "seed": 4,
+      "from": 0,
+      "to": 70
+    },
+    {
+      "case": "old-stall1000-play",
+      "seed": 4,
+      "from": 1000,
+      "to": 1069
+    }
+  ],
+  "consoleErrors": 0,
+  "manualSameFilePauseAndModes": "PASS",
+  "shadow": {
+    "status": "PASS for numeric application",
+    "radius": 14.611384363781175,
+    "center": {
+      "x": 563.9104140596411,
+      "y": 453.2285888206846
+    },
+    "scale": [
+      0.22647645763860821,
+      0.32594626657665693
+    ],
+    "renderedAlpha": 0.65,
+    "visibleSource": true,
+    "flatVisible": false
+  }
+}

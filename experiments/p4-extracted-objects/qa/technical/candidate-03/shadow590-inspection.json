@@ -1,0 +1,507 @@
+{
+  "ballNativeY": 33432.8780893,
+  "actor": {
+    "center": {
+      "x": 577.7912292052332,
+      "y": 440.6627982678328
+    },
+    "radius": 14.611384363781175,
+    "bodyScale": 0.14611384363781174,
+    "shadowCenter": {
+      "x": 563.9104140596411,
+      "y": 453.2285888206846
+    },
+    "shadowScale": [
+      0.22647645763860821,
+      0.32594626657665693
+    ],
+    "shadowOpacity": 0.65,
+    "rendered": {
+      "body": {
+        "position": {
+          "x": 577.7912292052332,
+          "y": 440.6627982678328
+        },
+        "pivot": {
+          "x": 128,
+          "y": 128.5
+        },
+        "scale": {
+          "x": 0.14611384363781174,
+          "y": 0.14611384363781174
+        },
+        "sourceVisible": true,
+        "flatVisible": false,
+        "sourceAlpha": 1,
+        "flatAlpha": 1,
+        "textureAlphaMode": "premultiply-alpha-on-upload"
+      },
+      "shadow": {
+        "position": {
+          "x": 563.9104140596411,
+          "y": 453.2285888206846
+        },
+        "pivot": {
+          "x": 128,
+          "y": 128
+        },
+        "scale": {
+          "x": 0.22647645763860821,
+          "y": 0.32594626657665693
+        },
+        "sourceVisible": true,
+        "flatVisible": false,
+        "sourceAlpha": 0.65,
+        "flatAlpha": 0.65,
+        "textureAlphaMode": "premultiply-alpha-on-upload"
+      },
+      "groundAlpha": 1,
+      "artRootAlpha": 1,
+      "worldAlpha": 1,
+      "stageAlpha": 1,
+      "artVisible": true,
+      "fitScale": 0.3736979166666667,
+      "viewport": {
+        "width": 840,
+        "height": 590
+      }
+    }
+  },
+  "layerOrder": [
+    "background",
+    "ground",
+    "depth-sorted bodies/ball",
+    "scene-front",
+    "receiver-front",
+    "geometry"
+  ],
+  "parts": [
+    {
+      "id": "flower-01-ground-shadow",
+      "mode": "native-y",
+      "container": "ground",
+      "sourceCropOverlapsBall": true,
+      "zIndex": 33295.09546643628
+    },
+    {
+      "id": "flower-01-body",
+      "mode": "native-y",
+      "container": "bodies",
+      "sourceCropOverlapsBall": true,
+      "zIndex": 33295.09546643628
+    },
+    {
+      "id": "leaf-01-ground-shadow",
+      "mode": "native-y",
+      "container": "ground",
+      "sourceCropOverlapsBall": false,
+      "zIndex": 33328.97811206313
+    },
+    {
+      "id": "leaf-01-body",
+      "mode": "native-y",
+      "container": "bodies",
+      "sourceCropOverlapsBall": false,
+      "zIndex": 33328.97811206313
+    },
+    {
+      "id": "frog-01-ground-shadow",
+      "mode": "native-y",
+      "container": "ground",
+      "sourceCropOverlapsBall": false,
+      "zIndex": 33306.91584579162
+    },
+    {
+      "id": "frog-01-body",
+      "mode": "native-y",
+      "container": "bodies",
+      "sourceCropOverlapsBall": false,
+      "zIndex": 33306.91584579162
+    },
+    {
+      "id": "wood-01-ground-shadow",
+      "mode": "native-y",
+      "container": "ground",
+      "sourceCropOverlapsBall": true,
+      "zIndex": 33516.93876987417
+    },
+    {
+      "id": "wood-01-body",
+      "mode": "native-y",
+      "container": "bodies",
+      "sourceCropOverlapsBall": true,
+      "zIndex": 33516.93876987417
+    },
+    {
+      "id": "flower-02-ground-shadow",
+      "mode": "native-y",
+      "container": "ground",
+      "sourceCropOverlapsBall": false,
+      "zIndex": 33530.233282658526
+    },
+    {
+      "id": "flower-02-body",
+      "mode": "native-y",
+      "container": "bodies",
+      "sourceCropOverlapsBall": false,
+      "zIndex": 33530.233282658526
+    },
+    {
+      "id": "wood-02-ground-shadow",
+      "mode": "native-y",
+      "container": "ground",
+      "sourceCropOverlapsBall": false,
+      "zIndex": 33516.93876987417
+    },
+    {
+      "id": "wood-02-body",
+      "mode": "native-y",
+      "container": "bodies",
+      "sourceCropOverlapsBall": false,
+      "zIndex": 33516.93876987417
+    },
+    {
+      "id": "frog-02-ground-shadow",
+      "mode": "native-y",
+      "container": "ground",
+      "sourceCropOverlapsBall": false,
+      "zIndex": 33634.85738798833
+    },
+    {
+      "id": "frog-02-body",
+      "mode": "native-y",
+      "container": "bodies",
+      "sourceCropOverlapsBall": false,
+      "zIndex": 33634.85738798833
+    },
+    {
+      "id": "leaf-02-ground-shadow",
+      "mode": "native-y",
+      "container": "ground",
+      "sourceCropOverlapsBall": false,
+      "zIndex": 33676.055127292115
+    },
+    {
+      "id": "leaf-02-body",
+      "mode": "native-y",
+      "container": "bodies",
+      "sourceCropOverlapsBall": false,
+      "zIndex": 33676.055127292115
+    },
+    {
+      "id": "leaf-03-ground-shadow",
+      "mode": "native-y",
+      "container": "ground",
+      "sourceCropOverlapsBall": false,
+      "zIndex": 33708.45237135722
+    },
+    {
+      "id": "leaf-03-body",
+      "mode": "native-y",
+      "container": "bodies",
+      "sourceCropOverlapsBall": false,
+      "zIndex": 33708.45237135722
+    },
+    {
+      "id": "wood-03-ground-shadow",
+      "mode": "native-y",
+      "container": "ground",
+      "sourceCropOverlapsBall": false,
+      "zIndex": 33875.80059132175
+    },
+    {
+      "id": "wood-03-body",
+      "mode": "native-y",
+      "container": "bodies",
+      "sourceCropOverlapsBall": false,
+      "zIndex": 33875.80059132175
+    },
+    {
+      "id": "flower-03-ground-shadow",
+      "mode": "native-y",
+      "container": "ground",
+      "sourceCropOverlapsBall": false,
+      "zIndex": 33857.38732422164
+    },
+    {
+      "id": "flower-03-body",
+      "mode": "native-y",
+      "container": "bodies",
+      "sourceCropOverlapsBall": false,
+      "zIndex": 33857.38732422164
+    },
+    {
+      "id": "frog-03-ground-shadow",
+      "mode": "native-y",
+      "container": "ground",
+      "sourceCropOverlapsBall": false,
+      "zIndex": 33859.21790429951
+    },
+    {
+      "id": "frog-03-body",
+      "mode": "native-y",
+      "container": "bodies",
+      "sourceCropOverlapsBall": false,
+      "zIndex": 33859.21790429951
+    },
+    {
+      "id": "frog-04-ground-shadow",
+      "mode": "native-y",
+      "container": "ground",
+      "sourceCropOverlapsBall": false,
+      "zIndex": 34037.81138863775
+    },
+    {
+      "id": "frog-04-body",
+      "mode": "native-y",
+      "container": "bodies",
+      "sourceCropOverlapsBall": false,
+      "zIndex": 34037.81138863775
+    },
+    {
+      "id": "wood-04-ground-shadow",
+      "mode": "native-y",
+      "container": "ground",
+      "sourceCropOverlapsBall": false,
+      "zIndex": 34041.74228104549
+    },
+    {
+      "id": "wood-04-body",
+      "mode": "native-y",
+      "container": "bodies",
+      "sourceCropOverlapsBall": false,
+      "zIndex": 34041.74228104549
+    },
+    {
+      "id": "wood-05-ground-shadow",
+      "mode": "native-y",
+      "container": "ground",
+      "sourceCropOverlapsBall": false,
+      "zIndex": 34081.29892794594
+    },
+    {
+      "id": "wood-05-body",
+      "mode": "native-y",
+      "container": "bodies",
+      "sourceCropOverlapsBall": false,
+      "zIndex": 34081.29892794594
+    },
+    {
+      "id": "flower-04-ground-shadow",
+      "mode": "native-y",
+      "container": "ground",
+      "sourceCropOverlapsBall": false,
+      "zIndex": 34179.94341792299
+    },
+    {
+      "id": "flower-04-body",
+      "mode": "native-y",
+      "container": "bodies",
+      "sourceCropOverlapsBall": false,
+      "zIndex": 34179.94341792299
+    },
+    {
+      "id": "flower-05-ground-shadow",
+      "mode": "native-y",
+      "container": "ground",
+      "sourceCropOverlapsBall": false,
+      "zIndex": 34221.24416829724
+    },
+    {
+      "id": "flower-05-body",
+      "mode": "native-y",
+      "container": "bodies",
+      "sourceCropOverlapsBall": false,
+      "zIndex": 34221.24416829724
+    },
+    {
+      "id": "leaf-04-ground-shadow",
+      "mode": "native-y",
+      "container": "ground",
+      "sourceCropOverlapsBall": false,
+      "zIndex": 34199.3276024258
+    },
+    {
+      "id": "leaf-04-body",
+      "mode": "native-y",
+      "container": "bodies",
+      "sourceCropOverlapsBall": false,
+      "zIndex": 34199.3276024258
+    },
+    {
+      "id": "wood-06-ground-shadow",
+      "mode": "native-y",
+      "container": "ground",
+      "sourceCropOverlapsBall": false,
+      "zIndex": 34434.13825301294
+    },
+    {
+      "id": "wood-06-body",
+      "mode": "native-y",
+      "container": "bodies",
+      "sourceCropOverlapsBall": false,
+      "zIndex": 34434.13825301294
+    },
+    {
+      "id": "leaf-05-ground-shadow",
+      "mode": "native-y",
+      "container": "ground",
+      "sourceCropOverlapsBall": false,
+      "zIndex": 34363.55781357324
+    },
+    {
+      "id": "leaf-05-body",
+      "mode": "native-y",
+      "container": "bodies",
+      "sourceCropOverlapsBall": false,
+      "zIndex": 34363.55781357324
+    },
+    {
+      "id": "frog-05-ground-shadow",
+      "mode": "native-y",
+      "container": "ground",
+      "sourceCropOverlapsBall": false,
+      "zIndex": 34396.68997420478
+    },
+    {
+      "id": "frog-05-body",
+      "mode": "native-y",
+      "container": "bodies",
+      "sourceCropOverlapsBall": false,
+      "zIndex": 34396.68997420478
+    },
+    {
+      "id": "flower-06-ground-shadow",
+      "mode": "native-y",
+      "container": "ground",
+      "sourceCropOverlapsBall": false,
+      "zIndex": 34403.91194882328
+    },
+    {
+      "id": "flower-06-body",
+      "mode": "native-y",
+      "container": "bodies",
+      "sourceCropOverlapsBall": false,
+      "zIndex": 34403.91194882328
+    },
+    {
+      "id": "flower-07-ground-shadow",
+      "mode": "native-y",
+      "container": "ground",
+      "sourceCropOverlapsBall": false,
+      "zIndex": 34601.47322043386
+    },
+    {
+      "id": "flower-07-body",
+      "mode": "native-y",
+      "container": "bodies",
+      "sourceCropOverlapsBall": false,
+      "zIndex": 34601.47322043386
+    },
+    {
+      "id": "wood-07-ground-shadow",
+      "mode": "native-y",
+      "container": "ground",
+      "sourceCropOverlapsBall": false,
+      "zIndex": 34600.12791716486
+    },
+    {
+      "id": "wood-07-body",
+      "mode": "native-y",
+      "container": "bodies",
+      "sourceCropOverlapsBall": false,
+      "zIndex": 34600.12791716486
+    },
+    {
+      "id": "wood-08-ground-shadow",
+      "mode": "native-y",
+      "container": "ground",
+      "sourceCropOverlapsBall": false,
+      "zIndex": 34598.53376751601
+    },
+    {
+      "id": "wood-08-body",
+      "mode": "native-y",
+      "container": "bodies",
+      "sourceCropOverlapsBall": false,
+      "zIndex": 34598.53376751601
+    },
+    {
+      "id": "receiver-01-body",
+      "mode": "receiver-back",
+      "container": "bodies",
+      "sourceCropOverlapsBall": false,
+      "zIndex": 34882.17558293618
+    },
+    {
+      "id": "receiver-01-foreground",
+      "mode": "receiver-front",
+      "container": "receiver-front",
+      "sourceCropOverlapsBall": false,
+      "zIndex": 34882.17559293618
+    },
+    {
+      "id": "receiver-02-body",
+      "mode": "receiver-back",
+      "container": "bodies",
+      "sourceCropOverlapsBall": false,
+      "zIndex": 34919.8575927248
+    },
+    {
+      "id": "receiver-02-foreground",
+      "mode": "receiver-front",
+      "container": "receiver-front",
+      "sourceCropOverlapsBall": false,
+      "zIndex": 34919.857602724805
+    },
+    {
+      "id": "receiver-03-body",
+      "mode": "receiver-back",
+      "container": "bodies",
+      "sourceCropOverlapsBall": false,
+      "zIndex": 34923.90364051326
+    },
+    {
+      "id": "receiver-03-foreground",
+      "mode": "receiver-front",
+      "container": "receiver-front",
+      "sourceCropOverlapsBall": false,
+      "zIndex": 34923.90365051326
+    },
+    {
+      "id": "receiver-04-body",
+      "mode": "receiver-back",
+      "container": "bodies",
+      "sourceCropOverlapsBall": false,
+      "zIndex": 34890.46257444717
+    },
+    {
+      "id": "receiver-04-foreground",
+      "mode": "receiver-front",
+      "container": "receiver-front",
+      "sourceCropOverlapsBall": false,
+      "zIndex": 34890.462584447174
+    },
+    {
+      "id": "rail-left",
+      "mode": "scene-front",
+      "container": "scene-front",
+      "sourceCropOverlapsBall": false,
+      "zIndex": 0.00001
+    },
+    {
+      "id": "rail-right",
+      "mode": "scene-front",
+      "container": "scene-front",
+      "sourceCropOverlapsBall": false,
+      "zIndex": 0.00001
+    },
+    {
+      "id": "near-platform-front",
+      "mode": "scene-front",
+      "container": "scene-front",
+      "sourceCropOverlapsBall": false,
+      "zIndex": 0.00001
+    }
+  ]
+}
