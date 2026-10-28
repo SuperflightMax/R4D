@@ -1,0 +1,44 @@
+{
+  "schema": "r4d.p5.assets/1",
+  "status": "example-not-renderable",
+  "sourceSha256": "c8f9e4245c1de8c2086e615bc75dc10aea59b76b614d6e106593e07262e24f72",
+  "p1Commit": "4b47db04c7140ebf88f69b91faa0b790d46f22ec",
+  "lighting": {
+    "description": "EXAMPLE ONLY: replace with measured scene light and actual generation provenance",
+    "shadowDirectionSourcePx": [1, 1]
+  },
+  "textures": [
+    {
+      "id": "flower-master", "family": "flower", "file": "assets/flower-master.png",
+      "sha256": "0000000000000000000000000000000000000000000000000000000000000000", "bytes": 1,
+      "sizePx": [512, 512],
+      "alpha": {"policy": "straight-rgba", "bounds": [64, 40, 384, 390], "visibleBounds": [70, 45, 372, 380]},
+      "groundAnchorPx": [256, 360],
+      "footprintPx": {"center": [256, 360], "width": 300, "depth": 142.459269782245},
+      "provenance": {"method": "generated", "promptPath": "prompts/flower.txt", "toolOutputId": "EXAMPLE_ONLY", "rawSha256": "0000000000000000000000000000000000000000000000000000000000000000", "corrections": []}
+    },
+    {
+      "id": "flower-shadow", "family": "flower", "file": "assets/flower-shadow.png",
+      "sha256": "0000000000000000000000000000000000000000000000000000000000000000", "bytes": 1,
+      "sizePx": [512, 512],
+      "alpha": {"policy": "straight-rgba", "bounds": [90, 310, 350, 130], "visibleBounds": [105, 320, 320, 110]},
+      "groundAnchorPx": [256, 360],
+      "footprintPx": {"center": [256, 360], "width": 300, "depth": 142.459269782245},
+      "provenance": {"method": "generated", "promptPath": "prompts/flower.txt", "toolOutputId": "EXAMPLE_ONLY", "rawSha256": "0000000000000000000000000000000000000000000000000000000000000000", "corrections": []}
+    },
+    {
+      "id": "receiver-front", "family": "receiver", "file": "assets/receiver-front.png",
+      "sha256": "0000000000000000000000000000000000000000000000000000000000000000", "bytes": 1,
+      "sizePx": [512, 512],
+      "alpha": {"policy": "straight-rgba", "bounds": [40, 240, 432, 200], "visibleBounds": [45, 245, 422, 190]},
+      "groundAnchorPx": [256, 240],
+      "footprintPx": {"center": [256, 240], "width": 240, "depth": 144.365805861},
+      "provenance": {"method": "generated", "promptPath": "prompts/receiver.txt", "toolOutputId": "EXAMPLE_ONLY", "rawSha256": "0000000000000000000000000000000000000000000000000000000000000000", "corrections": []}
+    }
+  ],
+  "instances": [
+    {"id": "flower-01-shadow", "textureId": "flower-shadow", "targetId": "flower-01", "parentId": "flower-01", "role": "shadow", "depthOffsetRadii": 0, "depthReason": "Ground-plane shadow; anchor identical to body"},
+    {"id": "flower-01-body", "textureId": "flower-master", "targetId": "flower-01", "parentId": "flower-01", "role": "body", "depthOffsetRadii": 0, "depthReason": "Single body part located at footprint center; must be checked in motion"},
+    {"id": "receiver-01-front", "textureId": "receiver-front", "targetId": "receiver-01", "parentId": "receiver-01", "role": "receiver-front", "depthOffsetRadii": 1, "depthReason": "Near lip at front edge of the declared trigger footprint; no position or collider shift"}
+  ]
+}
