@@ -1,5 +1,14 @@
 # P2 candidate04 — checkpoint сериализации доставки
 
+**P1_CLOSED_CTO_WINDOW_RELEASED / P2_PUBLIC_INTENT03_LOCAL_PREPARATION.** CTO явно освободил P1token/sharedReviewwindow2026-10-28T15:47:25Z после принятой delivery/PUBLICVQA/docs/lockcompletion. Literal token не вGit/publicpage; новогоserver-write tokenнет. P1auxpublication завершена, не третийresearchslot.
+
+Новое прямое поручение: тот же Builder послеcompleted eed2759 получает ровно один read-only freshactualPUBLICbaseline и immutable LOCAL intent `E:/R4D/perspective/p2-runtime/output/p2-review-release-intent-04-final-03` толькоеслиотсутствует; занятыйtarget→STOPбезавтоматическогоrename. Lead подтвердил входной cleanf3c7afe5626b25c06a214e8d280895911f289aee, Builderlatest01a18325-2fd9-7ae0-8b03-6992cb75cd2c completed, новыйlocaltargetabsent и manifest04SHA60f79d…совпадает. Дальнейшийsuccessfulsend/actualnewturn фиксируется пофакту.
+
+Frozen04 source08f9b9eaa6aa1063eb7fcd9cf373ddacf907725a, independentTQA df30939444dfc3875fe1f0fc39b31a4621be1d28,16files/2452021bytes/tree60d216a64c86fed4b83f4ed3802e3d1393cdda2db8776818d22710173dc2ffed, manifest60f79d1bdad8d3737376952043013394bb3098de6b15200fc5c352dd875dd1f7. No build/physics/QA/mapping/art/code edits. Baseline толькоactualPUBLICпослеP1: всеP1bytes/card/newdocs сохранять, rawsnippet/vhost/MIME/docs/root/inventory/owners/modes иcurrentPUBLICrollback свежие; чужиеproductsopaque. Old01/02 obsoleteсохранены. Никакихremotelock/upload/stage/switch/backup/serverdocswrites безновогоотдельногоexactCTOtoken. P4independent; UGH/P3/P5/P6небудить. Resourceshost+VPS/aggregatepeak4/2GiB/ownE обязательны.
+
+## История P1 priority и старых protected intents
+
+
 **PUBLIC_P1_STATIC_PRIORITY — 2026-10-28 после outage.** Max12:36UTC разрешил продолжение P2/P4 кроме UGH; Max12:38UTC отдельно поручил static report принятого P1 exact4b47 для показа Славе. CTO передал эти команды. `superflight.space`/Review теперь PUBLIC; закрытый portal=`sf.superflight.space`. Все protected intents01/02, snippets/templates/guards/rollback ниже являются историей и не допускаются к новому release. P2candidate04 не опубликован, нового token нет, server_write=false.
 
 Lead фактически возобновлён turn `01a1829b-1678-7c81-a99c-3664bcf99c88`, проверил clean `29530fcf45d827099d373bb4be3fe232f9903ac1`. Builder actual turn `01a1829b-0da3-7913-bbdb-3bd738d0c0f7` уже получил начальное задание CTO; Lead не дублирует его. Сначала PUBLIC read-only baseline + accepted-P1 image/recipe inventory; затем HTML/CSS/figures без JS/core/maps/private logs/full source. Direct/inverse figures exact accepted4b47 найдены для всех четырёх досок; floor inverse не true3Dtop-down. Existing TQA/VQA получают named exact candidate и ограниченную static QA. Новая отдельная публикация P1 — только exact PUBLIC intent/Lead gate/новый single CTO token/actual HTTP200+view checks. Route `p1-mapping-report` пока предложение, не готовый URL.

@@ -6,7 +6,13 @@
 
 Основание: Max28октября12:38UTC, `Sentinel_9809efe64b3881918b49cd3b4c1237a8`, через CTO. Публикуется статический отчёт accepted P1 exact `4b47db04c7140ebf88f69b91faa0b790d46f22ec`, subtree `experiments/p1-collider-mapping/clean-repeat-01/`. P1 не перезапускается; это не третий research slot. P2 frozen04/df309 сохраняются без rebuild/reQA.
 
-## P1 опубликован, docs/owned lock завершены; ожидается explicit CTO release
+## P1 publication закрыта; CTO явно освободил окно
+
+CTO принял итоговую доставку/PUBLIC VQA/docs/receipts и **явно освободил single-use token и shared Review window в2026-10-28T15:47:25Z**. Literal token не записывается в Git/reportpage. Owned writersidle/locktempsabsent и12P1bytes/562inventory/548preserved/oldroot/P2/config/append-onlydocs подтверждены владельцем. Bounded notes и unknown cause первогоJPGfailure сохранены. P1static publication завершена как вспомогательная доставка acceptedP1, не третий researchslot. Нового server-write token сейчас нет.
+
+Следующее прямое поручение CTO — read-only fresh PUBLIC baseline послеP1 и один новый immutable LOCAL P2candidate04 intent03 тем же Builder; frozen04/QA df309 не rebuild/reQA/edit. Любые будущие sharedwrites потребуют нового отдельногоexactCTOtoken. P4 работает независимо, UGH/P3/P5/P6 не пробуждать.
+
+## История: P1 опубликован, docs/owned lock завершены; ожидался CTO release
 
 Проверенный результат: https://superflight.space/review/r4d/p1-mapping-report/ . Итоговый [Builder report](../p1-collider-mapping/accepted-static-report-01/audit/RELEASE_COMPLETE_01.md), original `eed2759a57c83356a98b1d5fd900b7ea0cb26b31`/Lead84020a6, прочитан полностью. Predecessor c64e733/Leadf11d3d5 сохраняет initial HTTP stop и отдельный successful recheck. Actual docs continuation turn `01a18325-2fd9-7ae0-8b03-6992cb75cd2c` completed/checkoutclean; Root проверил отсутствие token literal в новых Git reports. Публичные12files/2057712bytes/tree88e934ca…/frozenmanifest00eb21… неизменны; общийroot562files/90770774bytes/tree0e6c8f… и548opaqueinherited/oldroot/P2live03/config/HTTP/MIME/headers проверены. Actual bounded render1280×720/390×844 — VQAb7a24e1/Lead09d5afb, notes ниже сохранены, не fullphysics/Art/universalPASS.
 
