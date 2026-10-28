@@ -1,6 +1,6 @@
 # P4 candidate-03: public release-intent DRAFT — НЕПОЛНЫЙ
 
-28 октября 2026. Предмет — возможная публикация **ограниченного прототипа с остаточными пробелами**, не принятой полной P4. Token отсутствует, все VPS/public writes закрыты. Ни упаковки, ни серверного baseline/rollback в этом turn нет. Этот draft заменяет intent02.
+28 октября 2026. CTO разрешил будущую публикацию **ограниченного прототипа с остаточными пробелами**, не принятой полной P4. Token отсутствует, все VPS/public writes закрыты. Выполнен [Stage A checkpoint](p4-candidate-03-stage-a-checkpoint.md); local subset proposal не является approved allowlist, финального baseline/rollback seal нет. Этот draft заменяет intent02.
 
 ## Exact candidate и проверка Release
 
@@ -25,19 +25,21 @@ Layout03: 65 PNG, 7 JPG, 23 JSON, 2 JS, 1 HTML, 1 CSS, 1 MJS, 3 Markdown, 8 lice
 
 ## Предлагаемый write set, требующий решения CTO
 
-Только `https://superflight.space/review/r4d/p4-extracted-objects/`: 111 exact payload files + artifact.json/FROZEN.json, verbatim, entry index.html, завершающий `/`; без rebuild/repack и production-запуска local serve.mjs. Единственная внешняя дельта — ссылка в текущем `https://superflight.space/review/`. Предложение href `/review/r4d/p4-extracted-objects/`, label **«P4 — извлечённые объекты (ограниченный прототип)»**; место/label ещё не согласованы. Сохранить все foreign bytes/entries/routes; shared assets, auth, redirects, security/global MIME не менять.
+Только `https://superflight.space/review/r4d/p4-extracted-objects/`: Stage A предлагает browser subset **82 files / 10 099 772 bytes**, byte-exact, entry index.html, завершающий `/`. Предыдущее предложение «111 + markers» НЕ approved allowlist и заменено: helper/Markdown/evidence/history/restoration mask/markers и ненужные fixtures не включены. Exact local manifest SHA256 `95d33355b9f50d77e38cfdb2279bec6ee3746e6230a1ac7e1e32d1f4ecc63241`; один source-path privacy flag в обязательном P1 JSON требует disposition CTO. Никаких rebuild/правок frozen bytes или production-запуска serve.mjs.
 
-Схема Andy: основной superflight.space/Review public, private sf.superflight.space. Старые protected snippets/templates/rollback не применять. Старый public snapshot уже изменился и не является release baseline. Новых HTTP/server snapshot запросов здесь не было; прежний GET `/review/r4d/` с403 не повторялся/не обходился. Sensitive configs/allowlists/credentials/tool outputs не искались.
+Единственная внешняя дельта — согласованная CTO карточка в текущем `https://superflight.space/review/` сразу после P3 href `./r4d/p3-masks/`: P4 href `./r4d/p4-extracted-objects/`, заданные eyebrow/title/description/CTA и expected counter4→5. Exact local параметры — `stage-a-03/catalog-proposal.json`; insertion/inverse проверяются только на будущем coherent baseline, другое actual section/counter означает STOP. Все foreign bytes/entries/routes, shared assets/auth/security/global MIME сохраняются.
+
+Схема Andy: основной superflight.space/Review public, private sf.superflight.space. Stage A read-only проверил actual operator identity/raw snippet и отсутствие targets; private receipts в own runtime. Это не final CURRENT PUBLIC snapshot/seal: сначала отдельное освобождение P2 C05 window. Старые protected snippets/templates/rollback и прежние public snapshots не применять. GET `/review/r4d/` с403 не повторялся/не обходился; secrets/allowlists/keys/cookies не читались.
 
 ## Exact missing fields
 
 | Поле | Что должен передать/решить CTO/operator |
 | --- | --- |
-| `publishMethod`, `targetIdentity` | Текущий авторизованный способ точечной записи и проверенная production identity; без раскрытия credentials. |
-| `physicalPublicRoot`, `physicalP4Path`, `physicalCatalogPath` | Три точных актуальных physical paths и их logical URL mapping. Не угадывать по старой схеме. |
-| `catalogLinkPlacement`, `catalogLinkLabel` | Конкретное место единственного добавления и утверждённая честная подпись ограниченного прототипа. |
-| `authorizedSnapshotMethod`, `currentRoutingAuthReference`, `rollbackProcedureAuthority` | Разрешённый fresh root/catalog/snippet/auth snapshot, место его сохранения и точный rollback по этому baseline, без sensitive reads. |
-| `boundedPublicationDecision`, `singleCTOToken03` | Явное решение о допустимости bounded publication с перечисленными residuals; новый одноразовый token именно на03/digest/target/write set, с учётом source HOLD. |
+| `operatorAndTargets` | Preliminary identity/actual root и absence guards получены в Stage A; final binding/seal только после window release. Privileged writes не испытывались. |
+| `catalogAndBoundedDecision` | Решение CTO о bounded publication и exact card parameters получены; actual section/counter4→5 и inverse остаются для Stage B. |
+| `privacyDisposition` | Явное решение по локальному original-image path в обязательном P1 JSON; bytes не менять. |
+| `windowReleaseAndCoherentBaseline` | Отдельное подтверждение завершённой P2 C05 delivery/window release и поручение на ONE fresh coherent CURRENT PUBLIC baseline + full sealed LOCAL intent. |
+| `rootReviewAndSingleCTOToken03` | Review полностью sealed пакета Root/CTO и новый single-use exact-bound token03 с учётом HOLD. Никакого server write до этого. |
 
 ## После отдельного решения и token
 
