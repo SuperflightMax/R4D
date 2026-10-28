@@ -4,6 +4,12 @@
 
 ## Текущая статическая сборка P2
 
+Новое прямое поручение Dot/Lead: candidate-03 исправляет MIME delivery в самом сборщике. Node/source файлы остаются `.mjs`; browser outputs — только `.js` для пяти ES modules. HTML/importmap и три статических import main переписываются по явному списку с проверкой единственного совпадения, без массового rename и без правок minified Pixi. `moduleEmissions` фиксирует source blob/canonical SHA и конкретную адаптацию bytes. Nginx/MIME/security не меняются; существующий mapping `.js` даёт prediction JS MIME, HTTP ещё не проверен.
+
+В той же разрешённой build revision исправлен scanner regression: все `.js` проверяются, drive paths обнаруживаются независимо от quote/boundary, включая template/fileURI. Только точный span135846..135849 публичного Pixi URI-regex допускается при полном normalized SDK SHA256 `a073adb40aaa803fd19066c21997a09f895397e98a5555be8bd0a7c57873d4ef`, точном контексте и output path. HTTP(S) scheme delimiter классифицируется отдельно от drive prefix; никакая часть URL после scheme не пропускается. `scripts/check-browser-scan.mjs --pixi <pinned SDK bytes>` содержит контрольные примеры, изменённый/неподписанный SDK не получает exception. Полного skip файла нет.
+
+Candidate-02 и release-intent-01 сохранены как история и не публикуются по новому token. Новый source фиксируется до build в новый отсутствующий каталог; source/check/build/archive hashes candidate-03 будут адресно переданы Lead. Старые TQA/VQA — только baseline; нужны новые проверки exact03. Browser/HTTP VQA — после штатной limited publication и отдельного gate/token; старый launcher/file-preview не используется.
+
 Готов один [frozen candidate-02](STATIC_CANDIDATE_02.md): source `5f40f6692dc5e7238afc961a2e0afa826cdefc9b`, 15 файлов / 2448166 bytes, полный manifest/provenance на E. Статус FROZEN_PENDING_INDEPENDENT_QA. Реальный browser preview до root switch пока не доступен по подтверждённому маршруту; публикации нет.
 
 28 октября получено новое поручение CTO/Lead: самостоятельный static bundle для `/review/r4d/p2-free-approach/`, затем независимые проверки одного frozen candidate и отдельный exact release gate Lead. Исходный art по умолчанию — Jungle v2. Все ресурсы относительны route. Повторы сохраняются явным скачиванием JSON; random/replay не зависят от API. Только четыре прежние накладки остаются известным ограничением.
