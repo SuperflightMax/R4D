@@ -13,6 +13,7 @@ Frozen BUILD_MANIFEST SHA256 `6cf78e7b64625828929cd5905afe033570579f8e2950c103c7
 
 Каталог: `E:/R4D/perspective/p2-runtime/output/p2-review-release-intent-01/`.
 Машинный план: `RELEASE_INTENT.json`.
+Машинный intent SHA256: `5e0a7825b56d92a0ad12665a758a959676747081a8e080408a89db72aacfd401`. После подготовки он не редактировался; дополнительный MIME-field для gate находится отдельно в `MIME_FIELD.json` и не входит в transfer.
 Full planned manifest: `patch/RELEASE_MANIFEST.json` (в будущем release вне browser tree).
 Transfer: `release-patch.tar`, **17 regular files**, USTAR, нормализованные root:root644 headers. Содержит только full manifest, новый catalog и15 frozen files. Старую демку не скачивали/не пересобирали: она сохраняется guarded remote copy после token. Архив распакован в память при сверке, каждый member совпал с patch bytes, symlink/absolute/traversal entries нет.
 
@@ -64,6 +65,14 @@ P2 frozen route для подписи не редактировался. Под�
 Postchecks: exact new root/snippet/full manifest;472 paths/bytes/SHA256,15 frozen hashes,456 preserved oldfiles; modes/ownership/no symlinks; nginx active; прежний auth303/Origin403/dotfiles404/GET-only/headers; настоящий post-auth browser/UI/Pixi/download только при доступном existing authorized session, иначе честное непроверено. После записей docs — освободить эксклюзивный token. Rollback guard — expected live snippet `ba91de49370a9ac987c4a432825450f464ecac1280bb85a7774b3374b7d27bc0`, затем только fresh saved root/snippet + nginx test/graceful reload; поздние чужие изменения не затирать.
 
 ## Границы и фактически выполненное
+
+### Отдельный delivery-field `.mjs`: факты и prediction
+
+По адресному поручению Lead выполнен только узкий read-only MIME lookup обычным alias, без nginx -T/секретных configs/security scans/правок. Факты: `/etc/nginx/mime.types:8` содержит `application/javascript js;`, `.mjs` в этой таблице не найден. `/etc/nginx/nginx.conf:15` подключает эту таблицу, строка16 задаёт `default_type application/octet-stream;`. Vhost на строке39 включает прежний Review snippet; в exact скачанном Review snippet нет types/default_type/mjs override. Три vhost `default_type text/html` на179/231/284 относятся к named location `@studio_offline`, не задают JS MIME для Review.
+
+**Prediction по прочитанной цепочке наследования:** успешный static ответ для `.mjs` получит `application/octet-stream`, что несовместимо с загрузкой ES modules при сохранённом nosniff. **Фактический HTTP200/Content-Type не наблюдался**: route ещё не опубликован и готового post-auth доступа нет. Это конкретная delivery-зависимость для отдельного решения Lead/CTO, не доказательство проверенной browser ошибки и не новый общий аудит.
+
+Payload/frozen15/full manifest/archive/prospective snippet не изменены; `RELEASE_INTENT.json` сохраняет исходный hash. Config не исправлялся, frozen candidate не пересобирался и расширения не переименовывались. Перед gate обязательно передать этот field вместе с intent; нельзя выдавать подготовленный пакет за подтверждённый запускаемый browser-result. Локальный `MIME_FIELD.json` — отдельная operator запись, не browser/transfer файл.
 
 - Все данные manifest/catalog/snippet скачаны read-only обычным alias на E. Multi-source SCP скачал catalog, но второй filename получил protocol mismatch; отдельный точный SCP request snippet завершился успешно с прежней strict filename validation, без `-T`/обхода/смены credentials.
 - Свободное место перед малой подготовкой: C7.859528/D16.306396/E37.314228 GiB; payload меньше10MiB не исчерпывает диск. TEMP/TMP/Python cache параметры только process-local на E, bytecode запись отключена. Старый резерв10GiB не применялся; cleanup не выполнялся.
