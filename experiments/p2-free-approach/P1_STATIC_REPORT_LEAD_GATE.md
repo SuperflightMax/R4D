@@ -6,6 +6,14 @@
 
 Основание: Max28октября12:38UTC, `Sentinel_9809efe64b3881918b49cd3b4c1237a8`, через CTO. Публикуется статический отчёт accepted P1 exact `4b47db04c7140ebf88f69b91faa0b790d46f22ec`, subtree `experiments/p1-collider-mapping/clean-repeat-01/`. P1 не перезапускается; это не третий research slot. P2 frozen04/df309 сохраняются без rebuild/reQA.
 
+## Решение Lead после двух фактических verdict
+
+**TARGETED_STATIC_QA_COMPLETE; разрешена только подготовка нового LOCAL PUBLIC intent.** [TQA report](qa/technical/P1_STATIC_REPORT_CANDIDATE_01.md), original `054bb5bd6a385d36ce51fe382f2526e95cdcee99`, Lead55b1635, полностью прочитан. Нет blocking defects в проверенной static-области:12files/all hashes/both trees/10Git blobs/selected versions/31refs и обратимый catalog draft согласованы. Evidence21615bytes SHA `36787ee737913bde70b9140dc55261eed26e0b02250790926262c826437a01ff` независимо сверён Lead. TQA явно ограничила550-record PUBLIC snapshot датой13:25 и не заявила независимый raw snippet auth analysis, liveHTTP или page rendering.
+
+Вместе с VQA3c5a27e/Lead50befe6 это подтверждает whitelist/provenance и image↔caption↔text. Lead прочитал actual HTML/CSS, accepted method/revision docs, content provenance и draft card: границы принятого mapping, условной камеры/опор, whole-source/native-floor и drops/buckets согласованы. Дефектов, требующих менять frozen candidate01, не установлено. Обе QA сохраняют PAGE_RENDER_NOT_OBSERVED, не fullTechnical/physics/pagePASS; точный file-protocol denial ниже остаётся обязательной границей.
+
+Повторный read_thread подтвердил, что Builder latest383 turncompleted и нового intentturn нет. Lead сделал один успешный адресный send тому же Builder для свежего read-only ACTUAL PUBLIC baseline/docs и одного LOCAL intent `p1-static-report-release-intent-01`, только если путь свободен. Новых build/accepted inventory/QA/imagegen/localpreview/физики не поручено. Frozen12files/manifest не менять, archive whitelist и catalog delta строго выделить, чужие published bytes сохранить opaque. Любые remote mkdir/upload/staging/lock/backup/docs/snippet/reload/rollback запрещены до нового exact Lead/CTO gate и singleCTOtoken. Старые protected templates/intents/rollback непригодны. После actual разрешённого release — отдельные PUBLICHTTP page/images/bytes и actual view/layout/link checks; URL выдаётся после них.
+
 ## Прочитанные accepted inputs
 
 Lead прочитал Research checkpoints01–04, support revision03, start revision04, сохранённые numeric-check/revision-check и coordination selected-input table через `git show` exact4b47. Новые исследовательские расчёты/симуляции не запускались.
