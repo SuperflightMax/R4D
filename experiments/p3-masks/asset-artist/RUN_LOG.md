@@ -75,3 +75,14 @@ PNG/координаты/depth при исправлении LF не менял�
 Lead попросил явно охватить также hashes.json и provenance в извлечённых
 final bytes. Добавлен маленький exact Git extractor собственного prefix с
 внешним manifest; никаких raster reroll/новых сессий/чужих записей не нужно.
+
+## 2026-10-28 — мягкая временная пауза Max, 00:46 UTC
+
+CTO адресно доставил прямую команду Max о немедленной паузе R4D. В момент
+получения Artist уже закончил передачу f899a308 и не имел atomic операции,
+незаписанного WIP, своих серверов/PID/tab или ongoing exec sessions.
+В собственном STATE сохранены immutable handoff paths/hash и exact resume
+point. Только безопасный документальный checkpoint/commit/push; новых
+генераций, QA, сборок, установок, процессов, server writes или cleanup нет.
+Работа прекращается без active ожиданий. Возобновление только по новой
+явной команде Max; старый stage2/поздний checkpoint не разрешают продолжать.

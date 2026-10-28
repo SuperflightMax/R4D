@@ -2,6 +2,41 @@
 
 28 октября 2026. `asset-artist-r4d-p3-masks-01`.
 
+## Временная пауза Max — PAUSED_SAFE
+
+Применена прямая пауза Max через Dot от 2026-10-28 00:46 UTC,
+адресно доставленная CTO `cto-r4d-perspective-01`. Это не отмена заказа.
+Все прежние следующие шаги ниже приостановлены. Продолжение только после
+новой ЯВНОЙ команды Max; старый stage2, Lead checkpoint или свободный token
+не являются разрешением продолжать. P4–P6 не открывать.
+
+В момент паузы не было выполняющихся atomic операций и незаписанного WIP:
+собственная ветка `codex/r4d-p3-masks-asset-artist-01` была чистой на
+`f899a308aed156a11e2a1013292ed68c6669959d`. Здесь сохраняется только
+документальный checkpoint паузы, без новой реализации/генерации/QA/сборки.
+
+Последний переданный immutable payload остаётся на source commit
+`f899a308aed156a11e2a1013292ed68c6669959d`, 70 файлов:
+`E:\R4D\perspective\p3-runtime\asset-artist\handoff-f899a308aed1`.
+Внешний manifest:
+`E:\R4D\perspective\p3-runtime\asset-artist\handoff-f899a308aed1.manifest.json`,
+SHA256 `a52c5a15faa6797d8dcbbd037034252fd7c13bb1cd8f5b1636e09718158ddc0d`.
+Все извлечённые final bytes ранее сверены с Git, включая hashes/provenance.
+Этот пакет, runtime evidence и оба tool-managed C raw originals сохраняются.
+
+Своих серверов/PID, browser tabs или ongoing exec sessions нет. Единственное
+обращение к browser inventory ранее завершилось timeout/kernel reset,
+вкладки Artist не создавались. Чужие процессы и вкладки не трогались.
+
+Exact resume point: после новой явной команды Max сначала сверить её границы
+и актуальный exact P3 candidate у Lead. Продолжение участка — разбирать
+конкретные full-scene QA дефекты пакета51; пока full artistic/dynamic PASS
+не получен. Известные точки внимания: боковые pin-depth переходы и curved
+rail spans. Автоматически не запускать повторную генерацию/сборку/публикацию.
+До такой команды никаких active ожиданий или продуктовой работы.
+
+## Состояние до паузы
+
 Stage 2 принят от Lead по старту CTO. Собственное дерево до начала было чистым
 на `64061757802dc60770ab156ef5672af741d65d03`.
 
