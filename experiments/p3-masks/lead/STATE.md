@@ -4,7 +4,60 @@
 Lead: `lead-r4d-p3-masks-01`, chat `01a17faf-f425-75d1-948a-ed456864701f`.
 CTO: `cto-r4d-perspective-01`, chat `01a174b2-1b0d-79b1-866f-f40e23f6dfb2`.
 
-## ПАУЗА ПО ПРЯМОЙ КОМАНДЕ MAX
+## Текущее: P3 возобновлён, продолжается QA frozen01
+
+Новая прямая команда Max 28 октября 2026,05:36UTC, через доверенный Dot:
+«Можно продолжать всем, кому еще продолжать, кроме угых, разумеется».
+Trusted transcript `Sentinel_6074724116dc819181f7316416fab9f5`, адресное
+подтверждение CTO. Прежняя рабочая переписка P3 с командой/CTO разрешена;
+нового согласования не требуется. Пауза снята. UGH не трогать, P4–P6 не
+открывать; P2 остаётся отдельным слотом без передачи его продуктов/выводов.
+Ниже сохранён ИСТОРИЧЕСКИЙ снимок паузы, он не текущий запрет продолжения.
+
+Lead прочитал этот state и оба QA pause checkpoints; свой E worktree
+чистый на `152ba5ddacf52f007f15c56ba85c4dad86adf3e1`, ветка прежняя.
+Manifest frozen01 повторно совпал с сохранённым e2e9f7d8… до новых действий.
+Адресно возобновлены только три необходимые существующие роли:
+
+| Роль | Новый фактический turn | Первые завершённые действия |
+| --- | --- | --- |
+| Lead | `01a18109-14ad-7aa3-b0ce-a8c0adfec746` | State/Git/manifest и свежие system resources сверены, три адресные выдачи успешны |
+| Builder | `01a18109-f322-7db1-aa28-89289a29cc27` | Completed: pause/Git/WIP, все76 payload hashes, ресурсы и свободный port6866 проверены; preview восстановлен без rebuild |
+| TQA | `01a1810b-8377-77e1-bb04-c9d9796504da` | InProgress: сохранённый oracle подтвердил5400 состояний3новых seeds и17browser/export checkpoints включая rngU32; остаются browser regressions |
+| VQA | `01a1810b-96c0-73f1-8d31-fa099ec09733` | InProgress: собственные Git/WIP/220raw/manifest сверены, ресурсы измерены, продолжается недостающий visual пакет |
+
+Builder preview фактически HTTP200 на
+`http://127.0.0.1:6866/review/r4d/p3-masks/`.
+Новый собственный PID112732, exec session69658; старый24412 не актуален.
+Builder state commit `01d890a66e98832b31b65b3995a95d1f5a51b381` опубликован,
+дерево чистое. Frozen code/art/payload не менялись, пересборки не было.
+Готовность preview адресно передана обеим QA, каждый работает в своей
+новой отдельной IAB-вкладке. Artist/Release ради ACK не будили.
+
+После resume TQA не повторял native compilation/пять saved runs/77-file
+матрицу без причины: продолжена именно сверка ранее собранных browser
+samples и3новых traces. VQA сохраняет прежние наблюдения и продолжает
+shadow/grounding в обычном масштабе, корзины и actual silhouette overlap.
+Итоговых отчётов/PASS ещё нет. Общий config не менять; left-5/mapcaveat
+разделять с P3-дефектами. P2 Android feedback/замедление не новое P3 требование.
+
+Свежий Lead snapshot `2026-10-28T05:43:54Z`: RAM free13.316/31.907GiB,
+CPU20%/24logical, C8.11755/D16.30265/E47.269661GiB. Совокупный добавочный
+peak preview+обеих QA оценён до3.3GiB, не резерв/гарантия. Каждый делает
+fresh system-wide RAM/CPU/C/D/E перед тяжёлым шагом; прежние E4/2GiB
+и process-local E-runtime правила сохраняются. Builder дополнительно
+подтвердил freeRAM12.65GiB/port6866free до своего запуска.
+
+P3 server_write=false, собственного token нет. P2 limited03 уже завершён,
+старый token освобождён: shared lock свободен, но не разрешает новую запись.
+После обоих честных QA: связанные полезные исправления назначенным владельцам,
+новый candidate только при реальном изменении; затем bounded result,
+готовый exact release intent/fresh live baseline и новый single CTO token.
+Artist вызывается лишь по конкретному арт-дефекту, Release — при готовности
+выпуска. Исследование не закрывать/слот не освобождать до реального результата,
+QA, публикации и handoff. Продолжаем без новых людей/сессий/worktrees.
+
+## Исторический checkpoint паузы00:46UTC — снята05:36UTC
 
 28 октября 2026,00:46UTC: Max через доверенный Dot поручил мягкую временную
 паузу всей команды R4D, CTO подтвердил немедленное применение. Это не отмена
@@ -61,7 +114,7 @@ Builder восстанавливает только свой frozen preview по
 пакет существенных исправлений. Новая версия — только при реальном изменении.
 Fresh RAM/CPU/C/D/E перед любой тяжёлой операцией; старые snapshots не гарантия.
 
-## Сохранённый рубеж: frozen01, QA прервана паузой
+## Сохранённый frozen01 — тот же кандидат для продолженной QA
 
 `P3-frozen-01` выдан обеим QA. Code
 `f1aca21e7b9ba19001e7e8762fcaf2511bf9bf74`, Artist
@@ -72,7 +125,7 @@ Immutable build `E:\R4D\perspective\p3-runtime\builder\full-checkpoint-06`;
 `e2e9f7d837b3d05f484f75a877af6992a70ee88363add783d80f3c6e206f431f`.
 Lead независимо сверил точный manifest hash. 76payload files/3388537bytes,
 сmanifest77files/3401352bytes, 51masks. Preview
-`http://127.0.0.1:6866/review/r4d/p3-masks/`, собственный Builder PID24412.
+`http://127.0.0.1:6866/review/r4d/p3-masks/`; после resume Builder PID112732.
 Frozen bytes не перезаписываются во время обеих QA. Native runtime SHA256
 `af8e6dea9ee5c46759f99ba3b68f4afa91c740b4fd2aba2d2d3f65bfa66753fa`;
 provenance/blob IDs/toolchain и licenses в `build.json`/handoff.
