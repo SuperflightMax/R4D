@@ -1,0 +1,117 @@
+{
+  "records": [
+    {
+      "kind": "source",
+      "file": "01-jungle.jpg",
+      "sha256": "c8f9e4245c1de8c2086e615bc75dc10aea59b76b614d6e106593e07262e24f72",
+      "sizePx": [
+        1536,
+        1536
+      ]
+    },
+    {
+      "kind": "p1",
+      "commit": "4b47db04c7140ebf88f69b91faa0b790d46f22ec",
+      "path": "experiments/p1-collider-mapping/clean-repeat-01/simulation/boards/01/trial-01/config.json",
+      "shaLF": "dd5c519cd6d4b7295118e0a3a1063efed424a0ce739450bd5153c6a9941982db"
+    },
+    {
+      "kind": "p1",
+      "commit": "4b47db04c7140ebf88f69b91faa0b790d46f22ec",
+      "path": "experiments/p1-collider-mapping/clean-repeat-01/simulation/boards/01/trial-01/manifest.json",
+      "shaLF": "7784dc0a215d0e472cf06a4eee03793592727cf0fa9a1fa0e0c78e5f1d17da18"
+    },
+    {
+      "kind": "p1",
+      "commit": "4b47db04c7140ebf88f69b91faa0b790d46f22ec",
+      "path": "experiments/p1-collider-mapping/clean-repeat-01/research/board01-projection.candidate-01.json",
+      "shaLF": "9ca9e520f1927426a3a5ba73a5eacaf90fedffc9385e7d08d5b1e6ee644b020c"
+    },
+    {
+      "kind": "p1",
+      "commit": "4b47db04c7140ebf88f69b91faa0b790d46f22ec",
+      "path": "experiments/p1-collider-mapping/clean-repeat-01/research/evidence/board01-source-candidate.jpg",
+      "sha256": "a3cc9b7811fd1ca1413e3911b6ec092fcaacae70823cab4bf20c6041ff3a2c99"
+    },
+    {
+      "kind": "p1",
+      "commit": "4b47db04c7140ebf88f69b91faa0b790d46f22ec",
+      "path": "experiments/p1-collider-mapping/clean-repeat-01/research/evidence/board01-inverse-whole-source.jpg",
+      "sha256": "3fa9d7c4b39d4f8abfc061bc96f3c5332935d57d7a6debe113dd91027be58fbc"
+    },
+    {
+      "kind": "p1",
+      "commit": "4b47db04c7140ebf88f69b91faa0b790d46f22ec",
+      "path": "experiments/p1-collider-mapping/clean-repeat-01/viewer/src/view-math.mjs",
+      "sha256": "96f01cc2093c353ff958cb906fe0c8ae93412425d0f7a5ec7cca0f2bf9f1aa5e"
+    },
+    {
+      "kind": "p0",
+      "commit": "ee4d8e5c7dbb3b6618d58d6dacb0caf9b73dfb1b",
+      "path": "experiments/p0-perspective/research/CROSS_SERIES_CONCLUSION_AND_RECIPE.md",
+      "sha256": "9ffe076b1746d5c4ef78da2f7d9a95bedcadf5e7f49f07f6d5899c0cc8373619"
+    },
+    {
+      "kind": "inspection-crops",
+      "file": "source-risk-crops-1to1.png",
+      "sha256": "74ab885eb355a3d657a0cdd74c2377970820132cd5286a65657911fbfe880e64",
+      "rois": [
+        {
+          "label": "A flower-01: petals, moss, shadow",
+          "sourceRectXyxyPx": [
+            420,
+            315,
+            600,
+            450
+          ]
+        },
+        {
+          "label": "B wood-01: top, base, cast shadow",
+          "sourceRectXyxyPx": [
+            530,
+            390,
+            690,
+            550
+          ]
+        },
+        {
+          "label": "C leaf-02: tips, base, shadow",
+          "sourceRectXyxyPx": [
+            635,
+            485,
+            810,
+            625
+          ]
+        },
+        {
+          "label": "D left rail: curve and vegetation",
+          "sourceRectXyxyPx": [
+            265,
+            430,
+            475,
+            760
+          ]
+        },
+        {
+          "label": "E receiver-01: platform / rear / front",
+          "sourceRectXyxyPx": [
+            150,
+            1070,
+            530,
+            1460
+          ]
+        },
+        {
+          "label": "F near seam and receiver-02",
+          "sourceRectXyxyPx": [
+            490,
+            1010,
+            925,
+            1410
+          ]
+        }
+      ],
+      "pixelScale": 1
+    }
+  ]
+}
