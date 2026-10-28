@@ -1,0 +1,196 @@
+[
+  {
+    "promptFile": "prompts/001-floor-v1.txt",
+    "tool": "image_gen.imagegen",
+    "arguments": {
+      "prompt": "Use case: stylized-concept\nAsset type: freshly generated full-frame environment/floor plate for a layered 2.5D jungle pinball board.\nInput image 1: original 01-jungle.jpg, visual reference for camera, composition, art, materials and light; not a cutout source.\nPrimary request: freshly paint a matching jungle-temple board environment in the same square framing, camera, perspective and artistic language as the reference, but with a completely empty playable stone floor. Remove ALL 25 small obstacles (red flower stones, teal leaf stones, frog heads, wooden cylinders), their bases and all their cast/contact shadows. Reconstruct uninterrupted pale warm irregular stone paving and moss in their places. Remove the four hanging basket receivers at the bottom and their suspension ropes; show plausible jungle/stone background there for later separate receiver sprites.\nKeep the surrounding high jungle ruins, waterfalls, three far temple chutes, feathered turquoise-and-gold serpent side rails, lush plants and near stone ledge composition. Do not move or change the outline, placement or perspective of the playable floor. Maintain the source image's entire full-frame square composition, no zoom/crop. Playable floor remains approximately x440..1105 at y300 and x245..1290 at y1100, far/near edges at the same image positions.\nStyle: richly painted polished casual fantasy game art, rounded sculpted forms, crisp readable materials, warm limestone, moss, teal feathers, gold details; match the original sharpness, detail and depth.\nLighting: soft warm sunlight from upper left, existing architectural shadows only; no ghost shadows of removed objects and no large new shadow across the open field.\nConstraints: new generated bitmap plate; no obstacles, balls, baskets, placeholders, technical guides, markers, grid overlay, text, logos or watermark. One square image, ideally 1536x1536. Opaque finished environment, no transparency.",
+      "referenced_image_paths": [
+        "K:/Agents/R4D/Assets/perspective/01-jungle.jpg"
+      ],
+      "transparent_background": false
+    },
+    "outputHint": "Generated images are saved to C:\\Users\\user\\.codex\\generated_images\\01a1842d-becc-7012-b425-bc311371f6f9 as C:\\Users\\user\\.codex\\generated_images\\01a1842d-becc-7012-b425-bc311371f6f9\\exec-b63858f9-d849-495e-aff5-88cd52a459b1.png by default.\nIf you need to use a generated image at another path, copy it and leave the original in place unless the user explicitly asks you to delete it.\nThe generated image is already displayed to the user. There is no need to render it in the final response as a Markdown image or file link.",
+    "settingsNotExposed": [
+      "model",
+      "seed",
+      "sampler",
+      "steps",
+      "cfg",
+      "sizePreset"
+    ]
+  },
+  {
+    "promptFile": "prompts/002-flower-v1.txt",
+    "tool": "image_gen.imagegen",
+    "arguments": {
+      "prompt": "Use case: stylized-concept\nAsset type: one regenerated transparent game obstacle master, flower family, for the supplied jungle board.\nInput image 1 is a visual reference only: original 01-jungle.jpg. Generate a NEW separate bitmap illustration of ONE red flower obstacle like the seven red flower stones in the reference; never return a crop or a scene.\nSubject: low round weathered warm limestone drum plinth, moss between irregular beveled stone blocks; on its top a sculpted red six-petal flower with a small pale yellow-green round center. Rounded chunky petals, attractive softly painted sculptural volume. Match the actual original obstacle design, not a free redesign.\nView: same elevated front view as the board, no isometric rotation, front face visible and broad top oval. Ground contact is a horizontal ellipse; top and base ellipses have approximately 0.47 vertical/horizontal ratio. The flower stone is low: overall visible body height about 0.65 of its base diameter. Front lower contact edge centered under object. Do not include a floor tile, ground patch, pedestal outside the original base, foliage border or other objects.\nLighting/style: warm sunlight from upper left, gently shaded right/front side, richly painted polished casual jungle fantasy game art, mossy limestone and warm coral red, match source sharpness/materials and softness. Self-shading on object only; NO cast shadow outside object because a separate shadow layer will be used.\nComposition: single entire object centered in a square transparent canvas with generous 15% empty padding all around, preferably object occupies x200..1050,y260..1000 on a 1254 square. Genuinely transparent RGBA background, no opaque backdrop, no checkerboard painted in image, no drop shadow. No text, labels, grid, markers, outline, logos or watermark.",
+      "referenced_image_paths": [
+        "K:/Agents/R4D/Assets/perspective/01-jungle.jpg"
+      ],
+      "transparent_background": true
+    },
+    "outputHint": "Generated images are saved to C:\\Users\\user\\.codex\\generated_images\\01a1842d-becc-7012-b425-bc311371f6f9 as C:\\Users\\user\\.codex\\generated_images\\01a1842d-becc-7012-b425-bc311371f6f9\\exec-f35b8cb9-e1c4-4c4e-b1ae-4babc409e2ef.png by default.\nIf you need to use a generated image at another path, copy it and leave the original in place unless the user explicitly asks you to delete it.\nThe generated image is already displayed to the user. There is no need to render it in the final response as a Markdown image or file link.",
+    "settingsNotExposed": [
+      "model",
+      "seed",
+      "sampler",
+      "steps",
+      "cfg",
+      "sizePreset"
+    ]
+  },
+  {
+    "promptFile": "prompts/003-leaf-v1.txt",
+    "tool": "image_gen.imagegen",
+    "arguments": {
+      "prompt": "Use case: stylized-concept\nAsset type: one regenerated transparent game obstacle master, leaf family, for the supplied jungle board.\nInput image 1: original 01-jungle.jpg as visual reference only, not a cutout source.\nPrimary request: generate ONE new separate leaf-fan obstacle matching the teal leaf stones on the board: a squat, low, round mossy pale limestone plinth carrying a sculpted fan of seven layered turquoise/teal emerald leaves, an upright green middle leaf, and a small round golden medallion at the front center. Leaf tips radiate upward and sideways. Preserve the actual source family design and rich casual fantasy game painting.\nView: elevated frontal view exactly matching the original board; broad top surfaces visible, no turned isometric side view. Ground base ellipse depth/width approximately 0.47. LOW SINGLE layer stone base, height only 0.17 of base diameter. Total silhouette height about 0.85 of base diameter, with leaves taller than the base. Front lower rim centered under object. No floor patch, no surrounding plants.\nLighting: soft warm sunlight from upper left, softly shaded lower right, painted stone facets/moss, satin teal leaf volume and worn gold; source-like detail without hyperreal harsh texture. Self-shading only, NO cast/drop/contact shadow outside object; external shadow separate.\nComposition: entire single object centered with 15% transparent padding on every side. Actual transparent RGBA background, no painted checkerboard/backdrop, no other objects, no text/logos/watermark/technical lines.",
+      "referenced_image_paths": [
+        "K:/Agents/R4D/Assets/perspective/01-jungle.jpg"
+      ],
+      "transparent_background": true
+    },
+    "outputHint": "Generated images are saved to C:\\Users\\user\\.codex\\generated_images\\01a1842d-becc-7012-b425-bc311371f6f9 as C:\\Users\\user\\.codex\\generated_images\\01a1842d-becc-7012-b425-bc311371f6f9\\exec-4299d9ca-039d-4d11-b9e8-367c1344565a.png by default.\nIf you need to use a generated image at another path, copy it and leave the original in place unless the user explicitly asks you to delete it.\nThe generated image is already displayed to the user. There is no need to render it in the final response as a Markdown image or file link.",
+    "settingsNotExposed": [
+      "model",
+      "seed",
+      "sampler",
+      "steps",
+      "cfg",
+      "sizePreset"
+    ]
+  },
+  {
+    "promptFile": "prompts/004-frog-v1.txt",
+    "tool": "image_gen.imagegen",
+    "arguments": {
+      "prompt": "Use case: stylized-concept\nAsset type: ONE regenerated transparent frog-head obstacle master for the supplied jungle board.\nInput image 1 is original 01-jungle.jpg, reference for the actual family design, camera, art and lighting only; do not return an extracted crop.\nPrimary request: freshly paint one cute squat sculpted green frog HEAD on a low round mossy pale limestone plinth, matching the green frog obstacles on the reference board. Broad smiling rounded muzzle, two raised glossy amber-green eyes, small nostrils, softly mottled green stone/ceramic surface, no body or legs. Stone base is a SINGLE low row of warm irregular beveled blocks with moss, not a tall drum.\nView: source board's elevated front view looking down at broad top of head/base. No isometric yaw. Ground contact ellipse depth/width 0.47; base height only 0.14 of base diameter; frog head rises above base; entire silhouette height about 0.8 of base diameter. Flat bottom contact, entire object fits comfortably in frame.\nArt/light: polished hand-painted casual jungle fantasy game art, warm light from upper left, softly shaded right/front side, gentle readable surfaces and bevels, same sharpness and warmth as original. Self-shading only; NO shadow outside the object because cast shadow is rendered separately.\nComposition: one centered standalone object with 15% empty transparent padding, no ground plane/patch, no environment or surrounding foliage. Genuinely transparent RGBA background; no checkerboard painted into pixels; no extra objects, text, grids, labels, logo or watermark.",
+      "referenced_image_paths": [
+        "K:/Agents/R4D/Assets/perspective/01-jungle.jpg"
+      ],
+      "transparent_background": true
+    },
+    "outputHint": "Generated images are saved to C:\\Users\\user\\.codex\\generated_images\\01a1842d-becc-7012-b425-bc311371f6f9 as C:\\Users\\user\\.codex\\generated_images\\01a1842d-becc-7012-b425-bc311371f6f9\\exec-06f4f8d8-74b1-4695-9929-a04c64423fb5.png by default.\nIf you need to use a generated image at another path, copy it and leave the original in place unless the user explicitly asks you to delete it.\nThe generated image is already displayed to the user. There is no need to render it in the final response as a Markdown image or file link.",
+    "settingsNotExposed": [
+      "model",
+      "seed",
+      "sampler",
+      "steps",
+      "cfg",
+      "sizePreset"
+    ]
+  },
+  {
+    "promptFile": "prompts/005-wood-v1.txt",
+    "tool": "image_gen.imagegen",
+    "arguments": {
+      "prompt": "Use case: stylized-concept\nAsset type: ONE new transparent wooden cylinder obstacle master matching the supplied jungle board.\nInput image 1: original 01-jungle.jpg, reference only for the actual wood obstacle design/camera/material/light. New standalone generated bitmap, not a crop.\nSubject: one short upright cylindrical warm brown wooden post with visible cut growth rings on its broad upper oval, slightly chipped beveled edges, a wide turquoise-teal decorative band around its middle with small ochre/gold triangular geometric inlays, thin golden-brown rope/wood hoops around top and lower edges, tiny moss near foot. Precisely the family of eight wooden posts in the source board, not a tall totem or chest. No stone pedestal.\nView: elevated frontal source-board view, upper ellipse visible, ellipse depth/width 0.47, no side yaw. Total cylinder silhouette height approximately 1.35 times ground base diameter. Ground foot centered. Painted rounded soft game volume, polished hand-painted casual jungle fantasy style matching the reference, not realistic photography.\nLighting: warm sunlight upper left, softly shaded right/front, readable brown wood grain and saturated turquoise/gold; no harsh specular. Self-shading only. NO external cast/drop/contact shadow, separate shadow layer will supply it.\nComposition: centered whole single cylinder with 15% transparent padding every side. Real RGBA transparent background, no opaque matte/checkerboard/ground patch. No surrounding scene, extra objects, text, logos, grid or watermark.",
+      "referenced_image_paths": [
+        "K:/Agents/R4D/Assets/perspective/01-jungle.jpg"
+      ],
+      "transparent_background": true
+    },
+    "outputHint": "Generated images are saved to C:\\Users\\user\\.codex\\generated_images\\01a1842d-becc-7012-b425-bc311371f6f9 as C:\\Users\\user\\.codex\\generated_images\\01a1842d-becc-7012-b425-bc311371f6f9\\exec-57d62dd3-4076-432a-b7a4-4bf46a5d506a.png by default.\nIf you need to use a generated image at another path, copy it and leave the original in place unless the user explicitly asks you to delete it.\nThe generated image is already displayed to the user. There is no need to render it in the final response as a Markdown image or file link.",
+    "settingsNotExposed": [
+      "model",
+      "seed",
+      "sampler",
+      "steps",
+      "cfg",
+      "sizePreset"
+    ]
+  },
+  {
+    "promptFile": "prompts/006-ball-v1.txt",
+    "tool": "image_gen.imagegen",
+    "arguments": {
+      "prompt": "Use case: stylized-concept\nAsset type: one newly generated volumetric ball sprite for the supplied jungle fantasy board, transparent RGBA.\nInput image 1: original 01-jungle.jpg, style/material/lighting reference only. There is no ball in original; create a matching new ball.\nSubject: ONE perfectly round smooth turquoise jade sphere with a thin subtle worn-gold ornamental equatorial band, no protrusions, no pedestal. Rich teal body clearly readable against warm pale limestone floor. Convincing three-dimensional sphere: broad soft warm upper-left highlight, gentle jade texture, shaded deep teal lower-right hemisphere, soft reflected warm light near underside. Polished painted casual fantasy game art, source-matched warmth and sharpness, not photoreal glossy plastic or flat circle.\nComposition: face-on circular sphere, centered, occupying roughly 65% of square canvas, generous transparent padding all around. Entire spherical silhouette uncut. Self-shading on sphere only; NO cast/contact shadow, floor, scenery or ambient glow outside sphere. Shadow is a separate asset.\nConstraints: genuinely transparent RGBA background, no opaque matte or checkerboard pixels. No other objects, text, logos, grid or watermark.",
+      "referenced_image_paths": [
+        "K:/Agents/R4D/Assets/perspective/01-jungle.jpg"
+      ],
+      "transparent_background": true
+    },
+    "outputHint": "Generated images are saved to C:\\Users\\user\\.codex\\generated_images\\01a1842d-becc-7012-b425-bc311371f6f9 as C:\\Users\\user\\.codex\\generated_images\\01a1842d-becc-7012-b425-bc311371f6f9\\exec-647a7c6c-ae1c-4edf-8b6f-d0c0f621e650.png by default.\nIf you need to use a generated image at another path, copy it and leave the original in place unless the user explicitly asks you to delete it.\nThe generated image is already displayed to the user. There is no need to render it in the final response as a Markdown image or file link.",
+    "settingsNotExposed": [
+      "model",
+      "seed",
+      "sampler",
+      "steps",
+      "cfg",
+      "sizePreset"
+    ]
+  },
+  {
+    "promptFile": "prompts/007-obstacle-shadow-v1.txt",
+    "tool": "image_gen.imagegen",
+    "arguments": {
+      "prompt": "Use case: stylized-concept\nAsset type: ONE separate soft ground shadow sprite for a low round jungle game obstacle. Shadow only, transparent RGBA.\nPrimary request: generate a readable semitransparent soft cast/contact shadow on an otherwise genuinely transparent canvas, with no visible casting object. It belongs on a warm limestone ground plane, lit from upper left; shadow extends toward lower left in image space. Neutral dark olive-brown shadow, darkest contact core alpha around 0.50, outer cast area alpha around 0.25 fading smoothly to zero. Do not paint a floor or a solid gray plate.\nShape/view: broad horizontally flattened contact ellipse, depth/width about 0.48, joined continuously to a short cast shadow extending diagonally down-left. Ground anchor is at the center of the contact ellipse, around (740,600) in a 1254-square canvas; authored object footprint ellipse width600 depth285. The cast shadow center is around (630,680). Total visible soft shadow fits within x220..1080,y400..960, ample transparent margin. Natural slightly irregular painted softness, not a hard vector ellipse or luminous glow.\nConstraints: shadow only, no obstacle, no sphere, no object silhouette, no stone, no leaf, no text, no guides or watermark. Actual semitransparent RGBA pixels on zero-alpha empty background, no opaque white/black/checkerboard backdrop.",
+      "transparent_background": true
+    },
+    "outputHint": "Generated images are saved to C:\\Users\\user\\.codex\\generated_images\\01a1842d-becc-7012-b425-bc311371f6f9 as C:\\Users\\user\\.codex\\generated_images\\01a1842d-becc-7012-b425-bc311371f6f9\\exec-539572fc-7772-4e44-a8dc-b37eae095cd4.png by default.\nIf you need to use a generated image at another path, copy it and leave the original in place unless the user explicitly asks you to delete it.\nThe generated image is already displayed to the user. There is no need to render it in the final response as a Markdown image or file link.",
+    "settingsNotExposed": [
+      "model",
+      "seed",
+      "sampler",
+      "steps",
+      "cfg",
+      "sizePreset"
+    ]
+  },
+  {
+    "promptFile": "prompts/008-ball-shadow-v1.txt",
+    "tool": "image_gen.imagegen",
+    "arguments": {
+      "prompt": "Use case: stylized-concept\nAsset type: ONE separate ball contact/cast shadow texture on genuinely transparent RGBA.\nPrimary request: paint only the soft semitransparent shadow cast by a small sphere resting on a pale stone ground plane, no sphere visible. A compact dark neutral olive-brown contact ellipse with a short soft fade diagonally lower-left, consistent with warm sunlight upper-left. Smoothest darkest center about 55% opacity and outer fade to zero alpha; no opaque ground patch, no object, no glow.\nView: elevated board view, a horizontally wide ellipse about width700px depth330px on a 1254-square canvas. Ground contact anchor center (710,600), shadow visible centroid slightly down-left around(650,645), compact continuous connection to anchor. Soft shadow stays comfortably within canvas with transparent margins.\nStyle: natural simple painted ground shadow for polished jungle fantasy game art; no visible details or objects. Actual partially transparent pixels, background alpha0. No text, grids, markers, logos, white/black matte or painted checkerboard.",
+      "transparent_background": true
+    },
+    "outputHint": "Generated images are saved to C:\\Users\\user\\.codex\\generated_images\\01a1842d-becc-7012-b425-bc311371f6f9 as C:\\Users\\user\\.codex\\generated_images\\01a1842d-becc-7012-b425-bc311371f6f9\\exec-0079113d-3ff2-4f72-8f5f-2cfe4ba1bb2e.png by default.\nIf you need to use a generated image at another path, copy it and leave the original in place unless the user explicitly asks you to delete it.\nThe generated image is already displayed to the user. There is no need to render it in the final response as a Markdown image or file link.",
+    "settingsNotExposed": [
+      "model",
+      "seed",
+      "sampler",
+      "steps",
+      "cfg",
+      "sizePreset"
+    ]
+  },
+  {
+    "promptFile": "prompts/009-receiver-v1.txt",
+    "tool": "image_gen.imagegen",
+    "arguments": {
+      "prompt": "Use case: stylized-concept\nAsset type: ONE freshly generated transparent hanging basket receiver for the supplied jungle game board.\nInput image 1: original 01-jungle.jpg, reference for the actual four hanging receivers, view, art, materials and light only. Repaint one matching standalone basket, not a cutout or full scene.\nSubject: a round wide open woven golden-brown wicker basket with a thick pale weathered stone segmented rim bound with tan ropes, deep dark brown visible interior, gold/turquoise round front medallion and dangling red/teal/green feathers below it. Four stout rope attachments rise from the rim toward the top of canvas as if suspended under the front platform. Preserve the characteristic family from the reference.\nView: elevated frontal view matching bottom receivers of original, strongly visible open interior oval; outer rim ellipse depth/width approximately 0.45, rim wider than tapering woven basket body. Symmetric front view, no isometric yaw. Opening around upper-middle of sprite; body and feathers hang below it. Entire basket and ropes comfortably fit with transparent padding; roughly rim x190..1060,y370..750 and body down to y1120 on 1254 square, suspension ropes upward to y120. Clear separate far/back rim and near/front rim. Do not add a ground patch or platform.\nStyle/light: polished softly painted jungle fantasy game art, rich source-matched woven texture, beveled warm limestone, worn gold and turquoise/red feathers, warm sunlight from upper left with softly shaded right/front side and very dark interior. Self-shading only, no external cast shadow or backdrop.\nConstraints: one whole receiver, actual transparent RGBA background, no other objects, no scene, no text, guides, grid, labels, logos or watermark.",
+      "referenced_image_paths": [
+        "K:/Agents/R4D/Assets/perspective/01-jungle.jpg"
+      ],
+      "transparent_background": true
+    },
+    "outputHint": "Generated images are saved to C:\\Users\\user\\.codex\\generated_images\\01a1842d-becc-7012-b425-bc311371f6f9 as C:\\Users\\user\\.codex\\generated_images\\01a1842d-becc-7012-b425-bc311371f6f9\\exec-d8ea41b3-13b3-4f4d-9bea-148eb777d711.png by default.\nIf you need to use a generated image at another path, copy it and leave the original in place unless the user explicitly asks you to delete it.\nThe generated image is already displayed to the user. There is no need to render it in the final response as a Markdown image or file link.",
+    "settingsNotExposed": [
+      "model",
+      "seed",
+      "sampler",
+      "steps",
+      "cfg",
+      "sizePreset"
+    ]
+  },
+  {
+    "promptFile": "prompts/010-receiver-front-v1.txt",
+    "tool": "image_gen.imagegen",
+    "arguments": {
+      "prompt": "Use case: precise-object-edit\nAsset type: front occlusion layer from this generated receiver texture, same untrimmed square canvas and pixel registration.\nInput image 1: edit target, my generated receiver-v1 PNG.\nPrimary request: change ONLY transparency to create the near/front portion of this same basket. Keep the entire front stone lip (its curved upper edge starts near x200,y510 at the sides and reaches y600 at the center), front rope rim, wicker body, front jewel and hanging feathers, and the short front rope knots attached at left/right rim. Remove to actual alpha0 the entire dark open interior, entire far/back stone rim, and all long suspension ropes above the basket. Thus leave a U-shaped near lip and the full lower body below it as a transparent occluder to be placed over the original full basket.\nInvariants: retain exact original 1254x1254 canvas, original positions, scale, perspective, original contours, original colors, lighting and texture of every retained part. Do not recenter, zoom, shrink, repaint, add shadow or add missing far elements. Transparent region above/inside the near lip must be completely empty so a ball inside the opening shows. No new objects, text, guides or background. Preserve genuine transparent RGBA.",
+      "referenced_image_paths": [
+        "E:/R4D/perspective/p5-runtime/asset-artist/raw/receiver-v1.png"
+      ],
+      "transparent_background": true
+    },
+    "outputHint": "Generated images are saved to C:\\Users\\user\\.codex\\generated_images\\01a1842d-becc-7012-b425-bc311371f6f9 as C:\\Users\\user\\.codex\\generated_images\\01a1842d-becc-7012-b425-bc311371f6f9\\exec-4d497a95-007d-4cb5-a0fd-1fd339e14fb0.png by default.\nIf you need to use a generated image at another path, copy it and leave the original in place unless the user explicitly asks you to delete it.\nThe generated image is already displayed to the user. There is no need to render it in the final response as a Markdown image or file link.",
+    "settingsNotExposed": [
+      "model",
+      "seed",
+      "sampler",
+      "steps",
+      "cfg",
+      "sizePreset"
+    ]
+  }
+]

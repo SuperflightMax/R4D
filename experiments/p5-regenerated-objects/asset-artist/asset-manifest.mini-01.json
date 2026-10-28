@@ -1,0 +1,694 @@
+{
+  "schema": "r4d.p5.assets/1",
+  "status": "partial",
+  "sourceSha256": "c8f9e4245c1de8c2086e615bc75dc10aea59b76b614d6e106593e07262e24f72",
+  "p1Commit": "4b47db04c7140ebf88f69b91faa0b790d46f22ec",
+  "lighting": {
+    "obstacleShadowAnchorPx": [
+      760,
+      675
+    ],
+    "description": "Warm upper-left sunlight; neutral olive-brown separate contact/cast shadows qualitatively toward lower-left. Numerical angle not inferred from original JPG.",
+    "ballShadowVisibleBoundsCenterPx": [
+      603.5,
+      833.5
+    ],
+    "shadowDirectionSourcePx": [
+      -1,
+      1
+    ],
+    "obstacleShadowVisibleBoundsCenterPx": [
+      633.5,
+      727.5
+    ],
+    "ballShadowAnchorPx": [
+      680,
+      795
+    ]
+  },
+  "textures": [
+    {
+      "id": "floor-v1",
+      "family": "floor",
+      "file": "E:/R4D/perspective/p5-runtime/asset-artist/selected/mini-set-01/floor-v1.png",
+      "sha256": "24a54990c4876fc809af3efd42a711a8a47fefeef51caf3b88608017cbce6e06",
+      "bytes": 3079122,
+      "sizePx": [
+        1254,
+        1254
+      ],
+      "alpha": {
+        "visibleBounds": [
+          0,
+          0,
+          1254,
+          1254
+        ],
+        "maxAlpha": 255,
+        "bounds": [
+          0,
+          0,
+          1254,
+          1254
+        ],
+        "policy": "opaque",
+        "note": "Exact alpha>0/alpha>=16 bounds; native outputs contain very faint alpha outside visible silhouette. No trim/threshold/color correction applied."
+      },
+      "groundAnchorPx": [
+        0,
+        0
+      ],
+      "footprintPx": {
+        "center": [
+          0,
+          0
+        ],
+        "width": 1254,
+        "depth": 1254
+      },
+      "provenance": {
+        "promptSha256": "139b5663de7ad1359755c3cc8f96c4380f1a6d35343785bf519e96a0f3088833",
+        "promptPath": "prompts/001-floor-v1.txt",
+        "selection": "First generated candidate, preserved unchanged; partial integration candidate, no artistic PASS",
+        "corrections": [],
+        "method": "generated",
+        "references": [
+          "K:/Agents/R4D/Assets/perspective/01-jungle.jpg"
+        ],
+        "rawFile": "E:/R4D/perspective/p5-runtime/asset-artist/raw/floor-v1.png",
+        "rawSha256": "24a54990c4876fc809af3efd42a711a8a47fefeef51caf3b88608017cbce6e06",
+        "toolOutputId": "exec-b63858f9-d849-495e-aff5-88cd52a459b1",
+        "nativeOutputPath": "C:\\Users\\user\\.codex\\generated_images\\01a1842d-becc-7012-b425-bc311371f6f9\\exec-b63858f9-d849-495e-aff5-88cd52a459b1.png"
+      }
+    },
+    {
+      "id": "flower-v1",
+      "family": "flower",
+      "file": "E:/R4D/perspective/p5-runtime/asset-artist/selected/mini-set-01/flower-v1.png",
+      "sha256": "718f4d0da78e8bdec801d60585b83062c235cdb424a2de6f2994bd49ec8dd8b9",
+      "bytes": 1122217,
+      "sizePx": [
+        1254,
+        1254
+      ],
+      "alpha": {
+        "visibleBounds": [
+          205,
+          295,
+          846,
+          715
+        ],
+        "maxAlpha": 255,
+        "bounds": [
+          0,
+          21,
+          1238,
+          1233
+        ],
+        "policy": "straight-rgba",
+        "note": "Exact alpha>0/alpha>=16 bounds; native outputs contain very faint alpha outside visible silhouette. No trim/threshold/color correction applied."
+      },
+      "groundAnchorPx": [
+        628.0,
+        751.1634734650925
+      ],
+      "footprintPx": {
+        "center": [
+          628.0,
+          751.1634734650925
+        ],
+        "width": 844.0,
+        "depth": 512.0744093899137
+      },
+      "provenance": {
+        "promptSha256": "bda9cbc991bdd624fcf7026b076c3b277d6696fcf50abb8170fd7ff6d7cfb271",
+        "promptPath": "prompts/002-flower-v1.txt",
+        "selection": "First generated candidate, preserved unchanged; partial integration candidate, no artistic PASS",
+        "corrections": [],
+        "method": "generated",
+        "references": [
+          "K:/Agents/R4D/Assets/perspective/01-jungle.jpg"
+        ],
+        "rawFile": "E:/R4D/perspective/p5-runtime/asset-artist/raw/flower-v1.png",
+        "rawSha256": "718f4d0da78e8bdec801d60585b83062c235cdb424a2de6f2994bd49ec8dd8b9",
+        "toolOutputId": "exec-f35b8cb9-e1c4-4c4e-b1ae-4babc409e2ef",
+        "nativeOutputPath": "C:\\Users\\user\\.codex\\generated_images\\01a1842d-becc-7012-b425-bc311371f6f9\\exec-f35b8cb9-e1c4-4c4e-b1ae-4babc409e2ef.png"
+      }
+    },
+    {
+      "id": "leaf-v1",
+      "family": "leaf",
+      "file": "E:/R4D/perspective/p5-runtime/asset-artist/selected/mini-set-01/leaf-v1.png",
+      "sha256": "2c5f57f03db8893b4c65e119dd1329fb294c84097d94a55969388ddb89bd95da",
+      "bytes": 1374036,
+      "sizePx": [
+        1254,
+        1254
+      ],
+      "alpha": {
+        "visibleBounds": [
+          129,
+          222,
+          996,
+          812
+        ],
+        "maxAlpha": 255,
+        "bounds": [
+          0,
+          17,
+          1210,
+          1237
+        ],
+        "policy": "straight-rgba",
+        "note": "Exact alpha>0/alpha>=16 bounds; native outputs contain very faint alpha outside visible silhouette. No trim/threshold/color correction applied."
+      },
+      "groundAnchorPx": [
+        628.0,
+        772.997108315043
+      ],
+      "footprintPx": {
+        "center": [
+          628.0,
+          772.997108315043
+        ],
+        "width": 926.0,
+        "depth": 522.9032942665066
+      },
+      "provenance": {
+        "promptSha256": "d31fd93b0e15a4ff9d4b326120c365a7d4c84c31940c931dd2147d51484b7383",
+        "promptPath": "prompts/003-leaf-v1.txt",
+        "selection": "First generated candidate, preserved unchanged; partial integration candidate, no artistic PASS",
+        "corrections": [],
+        "method": "generated",
+        "references": [
+          "K:/Agents/R4D/Assets/perspective/01-jungle.jpg"
+        ],
+        "rawFile": "E:/R4D/perspective/p5-runtime/asset-artist/raw/leaf-v1.png",
+        "rawSha256": "2c5f57f03db8893b4c65e119dd1329fb294c84097d94a55969388ddb89bd95da",
+        "toolOutputId": "exec-4299d9ca-039d-4d11-b9e8-367c1344565a",
+        "nativeOutputPath": "C:\\Users\\user\\.codex\\generated_images\\01a1842d-becc-7012-b425-bc311371f6f9\\exec-4299d9ca-039d-4d11-b9e8-367c1344565a.png"
+      }
+    },
+    {
+      "id": "frog-v1",
+      "family": "frog",
+      "file": "E:/R4D/perspective/p5-runtime/asset-artist/selected/mini-set-01/frog-v1.png",
+      "sha256": "58da849ac33db814ec3d1a3a9eb207c5a11a7eaecc6737f3faea9248637f0370",
+      "bytes": 1450754,
+      "sizePx": [
+        1254,
+        1254
+      ],
+      "alpha": {
+        "visibleBounds": [
+          161,
+          250,
+          962,
+          799
+        ],
+        "maxAlpha": 255,
+        "bounds": [
+          0,
+          15,
+          1240,
+          1239
+        ],
+        "policy": "straight-rgba",
+        "note": "Exact alpha>0/alpha>=16 bounds; native outputs contain very faint alpha outside visible silhouette. No trim/threshold/color correction applied."
+      },
+      "groundAnchorPx": [
+        642.0,
+        783.4567491997757
+      ],
+      "footprintPx": {
+        "center": [
+          642.0,
+          783.4567491997757
+        ],
+        "width": 960.0,
+        "depth": 525.7254547603484
+      },
+      "provenance": {
+        "promptSha256": "c35bbe67bc6709f8b6da004761cd344291182726abb1a34e2f4342a45c51604b",
+        "promptPath": "prompts/004-frog-v1.txt",
+        "selection": "First generated candidate, preserved unchanged; partial integration candidate, no artistic PASS",
+        "corrections": [],
+        "method": "generated",
+        "references": [
+          "K:/Agents/R4D/Assets/perspective/01-jungle.jpg"
+        ],
+        "rawFile": "E:/R4D/perspective/p5-runtime/asset-artist/raw/frog-v1.png",
+        "rawSha256": "58da849ac33db814ec3d1a3a9eb207c5a11a7eaecc6737f3faea9248637f0370",
+        "toolOutputId": "exec-06f4f8d8-74b1-4695-9929-a04c64423fb5",
+        "nativeOutputPath": "C:\\Users\\user\\.codex\\generated_images\\01a1842d-becc-7012-b425-bc311371f6f9\\exec-06f4f8d8-74b1-4695-9929-a04c64423fb5.png"
+      }
+    },
+    {
+      "id": "wood-v1",
+      "family": "wood",
+      "file": "E:/R4D/perspective/p5-runtime/asset-artist/selected/mini-set-01/wood-v1.png",
+      "sha256": "7911ecdd632acb8d35b16ccf7e382ec1050a226f7b1e6d0d98c5cf981918b794",
+      "bytes": 1003262,
+      "sizePx": [
+        1254,
+        1254
+      ],
+      "alpha": {
+        "visibleBounds": [
+          327,
+          212,
+          602,
+          860
+        ],
+        "maxAlpha": 255,
+        "bounds": [
+          23,
+          53,
+          1199,
+          1201
+        ],
+        "policy": "straight-rgba",
+        "note": "Exact alpha>0/alpha>=16 bounds; native outputs contain very faint alpha outside visible silhouette. No trim/threshold/color correction applied."
+      },
+      "groundAnchorPx": [
+        628.0,
+        915.2647062483261
+      ],
+      "footprintPx": {
+        "center": [
+          628.0,
+          915.2647062483261
+        ],
+        "width": 582.0,
+        "depth": 307.1896284299443
+      },
+      "provenance": {
+        "promptSha256": "9df129dd5800ca686a7046e80d2e6439acaaa2f761168a888bc6b80e4bed7043",
+        "promptPath": "prompts/005-wood-v1.txt",
+        "selection": "First generated candidate, preserved unchanged; partial integration candidate, no artistic PASS",
+        "corrections": [],
+        "method": "generated",
+        "references": [
+          "K:/Agents/R4D/Assets/perspective/01-jungle.jpg"
+        ],
+        "rawFile": "E:/R4D/perspective/p5-runtime/asset-artist/raw/wood-v1.png",
+        "rawSha256": "7911ecdd632acb8d35b16ccf7e382ec1050a226f7b1e6d0d98c5cf981918b794",
+        "toolOutputId": "exec-57d62dd3-4076-432a-b7a4-4bf46a5d506a",
+        "nativeOutputPath": "C:\\Users\\user\\.codex\\generated_images\\01a1842d-becc-7012-b425-bc311371f6f9\\exec-57d62dd3-4076-432a-b7a4-4bf46a5d506a.png"
+      }
+    },
+    {
+      "id": "ball-v1",
+      "family": "ball",
+      "file": "E:/R4D/perspective/p5-runtime/asset-artist/selected/mini-set-01/ball-v1.png",
+      "sha256": "75832ede4adb16bf321c1decbc4bd544e1f1e5a1c617a8b5453a3ec9e299c751",
+      "bytes": 1461651,
+      "sizePx": [
+        1254,
+        1254
+      ],
+      "alpha": {
+        "visibleBounds": [
+          149,
+          150,
+          959,
+          941
+        ],
+        "maxAlpha": 255,
+        "bounds": [
+          0,
+          21,
+          1190,
+          1233
+        ],
+        "policy": "straight-rgba",
+        "note": "Exact alpha>0/alpha>=16 bounds; native outputs contain very faint alpha outside visible silhouette. No trim/threshold/color correction applied."
+      },
+      "groundAnchorPx": [
+        628,
+        1089
+      ],
+      "footprintPx": {
+        "center": [
+          628,
+          1089
+        ],
+        "width": 959,
+        "depth": 447.1
+      },
+      "provenance": {
+        "promptSha256": "0f705ae5fc6f6eed5b1f95d347d8fba4a7b2488cb8c37ed7c1986bb1e291c389",
+        "promptPath": "prompts/006-ball-v1.txt",
+        "selection": "First generated candidate, preserved unchanged; partial integration candidate, no artistic PASS",
+        "corrections": [],
+        "method": "generated",
+        "references": [
+          "K:/Agents/R4D/Assets/perspective/01-jungle.jpg"
+        ],
+        "rawFile": "E:/R4D/perspective/p5-runtime/asset-artist/raw/ball-v1.png",
+        "rawSha256": "75832ede4adb16bf321c1decbc4bd544e1f1e5a1c617a8b5453a3ec9e299c751",
+        "toolOutputId": "exec-647a7c6c-ae1c-4edf-8b6f-d0c0f621e650",
+        "nativeOutputPath": "C:\\Users\\user\\.codex\\generated_images\\01a1842d-becc-7012-b425-bc311371f6f9\\exec-647a7c6c-ae1c-4edf-8b6f-d0c0f621e650.png"
+      }
+    },
+    {
+      "id": "obstacle-shadow-v1",
+      "family": "obstacle-shadow",
+      "file": "E:/R4D/perspective/p5-runtime/asset-artist/selected/mini-set-01/obstacle-shadow-v1.png",
+      "sha256": "e4281cff5922a49c61ce8572224a178553b9dfe3624ca68544b6ff7158abde86",
+      "bytes": 392552,
+      "sizePx": [
+        1254,
+        1254
+      ],
+      "alpha": {
+        "visibleBounds": [
+          168,
+          590,
+          931,
+          275
+        ],
+        "maxAlpha": 225,
+        "bounds": [
+          0,
+          19,
+          1222,
+          1219
+        ],
+        "policy": "straight-rgba",
+        "note": "Exact alpha>0/alpha>=16 bounds; native outputs contain very faint alpha outside visible silhouette. No trim/threshold/color correction applied."
+      },
+      "groundAnchorPx": [
+        760,
+        675
+      ],
+      "footprintPx": {
+        "center": [
+          760,
+          675
+        ],
+        "width": 600,
+        "depth": 285
+      },
+      "provenance": {
+        "promptSha256": "19bdc8b672ce5fd8913c42f54815b43699360a5de2efa2c0711677d88a736445",
+        "promptPath": "prompts/007-obstacle-shadow-v1.txt",
+        "selection": "First generated candidate, preserved unchanged; partial integration candidate, no artistic PASS",
+        "corrections": [],
+        "method": "generated",
+        "references": [],
+        "rawFile": "E:/R4D/perspective/p5-runtime/asset-artist/raw/obstacle-shadow-v1.png",
+        "rawSha256": "e4281cff5922a49c61ce8572224a178553b9dfe3624ca68544b6ff7158abde86",
+        "toolOutputId": "exec-539572fc-7772-4e44-a8dc-b37eae095cd4",
+        "nativeOutputPath": "C:\\Users\\user\\.codex\\generated_images\\01a1842d-becc-7012-b425-bc311371f6f9\\exec-539572fc-7772-4e44-a8dc-b37eae095cd4.png"
+      }
+    },
+    {
+      "id": "ball-shadow-v1",
+      "family": "ball-shadow",
+      "file": "E:/R4D/perspective/p5-runtime/asset-artist/selected/mini-set-01/ball-shadow-v1.png",
+      "sha256": "34c890bb96a27e6db439a7e084ba0f0413df40e7257ae951c5eddb0152f22978",
+      "bytes": 294101,
+      "sizePx": [
+        1254,
+        1254
+      ],
+      "alpha": {
+        "visibleBounds": [
+          248,
+          689,
+          711,
+          289
+        ],
+        "maxAlpha": 247,
+        "bounds": [
+          33,
+          27,
+          1191,
+          1201
+        ],
+        "policy": "straight-rgba",
+        "note": "Exact alpha>0/alpha>=16 bounds; native outputs contain very faint alpha outside visible silhouette. No trim/threshold/color correction applied."
+      },
+      "groundAnchorPx": [
+        680,
+        795
+      ],
+      "footprintPx": {
+        "center": [
+          680,
+          795
+        ],
+        "width": 700,
+        "depth": 326.3
+      },
+      "provenance": {
+        "promptSha256": "f9513463447fec1eb97aaa9551384379162a0d56546628f32e06e820fe071388",
+        "promptPath": "prompts/008-ball-shadow-v1.txt",
+        "selection": "First generated candidate, preserved unchanged; partial integration candidate, no artistic PASS",
+        "corrections": [],
+        "method": "generated",
+        "references": [],
+        "rawFile": "E:/R4D/perspective/p5-runtime/asset-artist/raw/ball-shadow-v1.png",
+        "rawSha256": "34c890bb96a27e6db439a7e084ba0f0413df40e7257ae951c5eddb0152f22978",
+        "toolOutputId": "exec-0079113d-3ff2-4f72-8f5f-2cfe4ba1bb2e",
+        "nativeOutputPath": "C:\\Users\\user\\.codex\\generated_images\\01a1842d-becc-7012-b425-bc311371f6f9\\exec-0079113d-3ff2-4f72-8f5f-2cfe4ba1bb2e.png"
+      }
+    },
+    {
+      "id": "receiver-v1",
+      "family": "receiver",
+      "file": "E:/R4D/perspective/p5-runtime/asset-artist/selected/mini-set-01/receiver-v1.png",
+      "sha256": "8be0883ce8be36898f382c7afa8ede0ae7b0c6c98374cf28bc58988c25121d92",
+      "bytes": 1719504,
+      "sizePx": [
+        1254,
+        1254
+      ],
+      "alpha": {
+        "visibleBounds": [
+          82,
+          0,
+          1091,
+          1191
+        ],
+        "maxAlpha": 255,
+        "bounds": [
+          0,
+          0,
+          1230,
+          1254
+        ],
+        "policy": "straight-rgba",
+        "note": "Exact alpha>0/alpha>=16 bounds; native outputs contain very faint alpha outside visible silhouette. No trim/threshold/color correction applied."
+      },
+      "groundAnchorPx": [
+        628,
+        477
+      ],
+      "footprintPx": {
+        "center": [
+          628,
+          477
+        ],
+        "width": 290,
+        "depth": 174.4
+      },
+      "provenance": {
+        "promptSha256": "699d45a1f2274e5d7c83afd36314f0fe037ddaf0bb4f0ce3ba622ca0eac685f2",
+        "promptPath": "prompts/009-receiver-v1.txt",
+        "selection": "First generated candidate, preserved unchanged; partial integration candidate, no artistic PASS",
+        "corrections": [],
+        "method": "generated",
+        "references": [
+          "K:/Agents/R4D/Assets/perspective/01-jungle.jpg"
+        ],
+        "rawFile": "E:/R4D/perspective/p5-runtime/asset-artist/raw/receiver-v1.png",
+        "rawSha256": "8be0883ce8be36898f382c7afa8ede0ae7b0c6c98374cf28bc58988c25121d92",
+        "toolOutputId": "exec-d8ea41b3-13b3-4f4d-9bea-148eb777d711",
+        "nativeOutputPath": "C:\\Users\\user\\.codex\\generated_images\\01a1842d-becc-7012-b425-bc311371f6f9\\exec-d8ea41b3-13b3-4f4d-9bea-148eb777d711.png"
+      }
+    },
+    {
+      "id": "receiver-front-v1",
+      "family": "receiver",
+      "file": "E:/R4D/perspective/p5-runtime/asset-artist/selected/mini-set-01/receiver-front-v1.png",
+      "sha256": "acc1d25bd7345edcf1f709b2e643ab67400d41e853b348070dc06d9ce9491636",
+      "bytes": 1059394,
+      "sizePx": [
+        1254,
+        1254
+      ],
+      "alpha": {
+        "visibleBounds": [
+          80,
+          415,
+          1094,
+          777
+        ],
+        "maxAlpha": 255,
+        "bounds": [
+          0,
+          20,
+          1251,
+          1234
+        ],
+        "policy": "straight-rgba",
+        "note": "Exact alpha>0/alpha>=16 bounds; native outputs contain very faint alpha outside visible silhouette. No trim/threshold/color correction applied."
+      },
+      "groundAnchorPx": [
+        628,
+        477
+      ],
+      "footprintPx": {
+        "center": [
+          628,
+          477
+        ],
+        "width": 290,
+        "depth": 174.4
+      },
+      "provenance": {
+        "promptSha256": "187ee4f8952c8c72b44ee766cd80523a0809c929dce8d069ba9a099b0e691cbd",
+        "promptPath": "prompts/010-receiver-front-v1.txt",
+        "selection": "First generated candidate, preserved unchanged; partial integration candidate, no artistic PASS",
+        "corrections": [],
+        "method": "generated",
+        "references": [
+          "E:/R4D/perspective/p5-runtime/asset-artist/raw/receiver-v1.png"
+        ],
+        "rawFile": "E:/R4D/perspective/p5-runtime/asset-artist/raw/receiver-front-v1.png",
+        "rawSha256": "acc1d25bd7345edcf1f709b2e643ab67400d41e853b348070dc06d9ce9491636",
+        "toolOutputId": "exec-4d497a95-007d-4cb5-a0fd-1fd339e14fb0",
+        "nativeOutputPath": "C:\\Users\\user\\.codex\\generated_images\\01a1842d-becc-7012-b425-bc311371f6f9\\exec-4d497a95-007d-4cb5-a0fd-1fd339e14fb0.png"
+      }
+    }
+  ],
+  "instances": [
+    {
+      "id": "floor",
+      "textureId": "floor-v1",
+      "targetId": "$source",
+      "parentId": "board",
+      "role": "floor",
+      "depthOffsetRadii": 0.0,
+      "depthReason": "Full-frame newly generated floor/environment; uniform1254->1536, no crop"
+    },
+    {
+      "id": "flower-07-shadow",
+      "textureId": "obstacle-shadow-v1",
+      "targetId": "flower-07",
+      "parentId": "flower-07",
+      "role": "shadow",
+      "depthOffsetRadii": 0.0,
+      "depthReason": "Ground-plane cast shadow; shared target center, actual offset is authored in shadow pixels"
+    },
+    {
+      "id": "flower-07-body",
+      "textureId": "flower-v1",
+      "targetId": "flower-07",
+      "parentId": "flower-07",
+      "role": "body",
+      "depthOffsetRadii": 0.0,
+      "depthReason": "Single whole body at contact ellipse center; partial occlusion not yet verified in actual native motion"
+    },
+    {
+      "id": "leaf-05-shadow",
+      "textureId": "obstacle-shadow-v1",
+      "targetId": "leaf-05",
+      "parentId": "leaf-05",
+      "role": "shadow",
+      "depthOffsetRadii": 0.0,
+      "depthReason": "Ground-plane cast shadow; shared target center, actual offset is authored in shadow pixels"
+    },
+    {
+      "id": "leaf-05-body",
+      "textureId": "leaf-v1",
+      "targetId": "leaf-05",
+      "parentId": "leaf-05",
+      "role": "body",
+      "depthOffsetRadii": 0.0,
+      "depthReason": "Single whole body at contact ellipse center; partial occlusion not yet verified in actual native motion"
+    },
+    {
+      "id": "frog-05-shadow",
+      "textureId": "obstacle-shadow-v1",
+      "targetId": "frog-05",
+      "parentId": "frog-05",
+      "role": "shadow",
+      "depthOffsetRadii": 0.0,
+      "depthReason": "Ground-plane cast shadow; shared target center, actual offset is authored in shadow pixels"
+    },
+    {
+      "id": "frog-05-body",
+      "textureId": "frog-v1",
+      "targetId": "frog-05",
+      "parentId": "frog-05",
+      "role": "body",
+      "depthOffsetRadii": 0.0,
+      "depthReason": "Single whole body at contact ellipse center; partial occlusion not yet verified in actual native motion"
+    },
+    {
+      "id": "wood-04-shadow",
+      "textureId": "obstacle-shadow-v1",
+      "targetId": "wood-04",
+      "parentId": "wood-04",
+      "role": "shadow",
+      "depthOffsetRadii": 0.0,
+      "depthReason": "Ground-plane cast shadow; shared target center, actual offset is authored in shadow pixels"
+    },
+    {
+      "id": "wood-04-body",
+      "textureId": "wood-v1",
+      "targetId": "wood-04",
+      "parentId": "wood-04",
+      "role": "body",
+      "depthOffsetRadii": 0.0,
+      "depthReason": "Single whole body at contact ellipse center; partial occlusion not yet verified in actual native motion"
+    },
+    {
+      "id": "ball-shadow",
+      "textureId": "ball-shadow-v1",
+      "targetId": "$ball",
+      "parentId": "ball",
+      "role": "shadow",
+      "depthOffsetRadii": 0.0,
+      "depthReason": "Follows live r16 ground anchor; authored lower-left cast offset, no state shift"
+    },
+    {
+      "id": "ball",
+      "textureId": "ball-v1",
+      "targetId": "$ball",
+      "parentId": "ball",
+      "role": "ball",
+      "depthOffsetRadii": 0.0,
+      "depthReason": "Uniform circular sphere; contact under center, projected width from live r16"
+    },
+    {
+      "id": "receiver-01-back",
+      "textureId": "receiver-v1",
+      "targetId": "receiver-01",
+      "parentId": "receiver-01",
+      "role": "receiver-back",
+      "depthOffsetRadii": -1.0,
+      "depthReason": "Whole receiver below ball layer; far rim at rear edge of trigger footprint. Capture circle is a subregion of aperture."
+    },
+    {
+      "id": "receiver-01-front",
+      "textureId": "receiver-front-v1",
+      "targetId": "receiver-01",
+      "parentId": "receiver-01",
+      "role": "receiver-front",
+      "depthOffsetRadii": 1.0,
+      "depthReason": "Near lip/body at front edge of trigger footprint; separate generated alpha edit, retained canvas registration"
+    }
+  ],
+  "limits": [
+    "Only four obstacle targets and receiver-01 included; remaining21pins/3receivers intentionally absent from this early set",
+    "Measured generated base depths are closer to near field than requested far view; residual source footprint depth error is recorded, no XY warp or collider change",
+    "Native-generated faint alpha residue extends beyond visible silhouette; pending actual-scale inspection",
+    "Receiver front is native imagegen edit, not pixel-identical alpha masking; registration must be checked in assembly",
+    "No independently prepared side-rail/front-platform occluder yet",
+    "No Pixi/native/browser inspection or independent QA verdict for these bytes yet"
+  ]
+}
