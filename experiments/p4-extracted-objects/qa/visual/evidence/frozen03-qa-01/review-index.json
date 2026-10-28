@@ -1,0 +1,2702 @@
+{
+  "candidate": {
+    "name": "p4-full-v03-candidate-03",
+    "artifactSha256": "298649ec518a13e8070201e822108005a6b5081454452f50243d18f2fde2d542",
+    "builderCommit": "7d2344c1a8959f73ff26af5d3aba7dd02eb0e971",
+    "art": {
+      "commit": "b7efff1e2f519812421829808e71a0d83154926d",
+      "manifestPath": "experiments/p4-extracted-objects/artwork/full-v03/manifest.json",
+      "manifestSha256": "276dfdfd32f1f543ce39d72fe7e360523c6ec70387d1c44dd21acd47f9fb1a6a",
+      "version": "p4-full-v03"
+    },
+    "verifiedDiskAndHTTPPayloadFiles": 111,
+    "unchangedPNGs": 65,
+    "nativeSHA256": "8843446996582eaccbd9ff63d3147d74b7eca9a614d8e0df16851d1d89d46f50",
+    "binding": {
+      "p1Commit": "4b47db04c7140ebf88f69b91faa0b790d46f22ec",
+      "coreCommit": "5a6fa03f1cdb3de88a2d9c7dbe795eb8e2a7f023",
+      "config.json": "dd5c519cd6d4b7295118e0a3a1063efed424a0ce739450bd5153c6a9941982db",
+      "p1-manifest.json": "7784dc0a215d0e472cf06a4eee03793592727cf0fa9a1fa0e0c78e5f1d17da18",
+      "projection.json": "9ca9e520f1927426a3a5ba73a5eacaf90fedffc9385e7d08d5b1e6ee644b020c"
+    },
+    "ballRender": {
+      "radiusRule": "native-horizontal-projective-derivative",
+      "bodySourceCenterOffsetR": [
+        0,
+        0
+      ],
+      "bodyUniformScaleRule": "R / body.contentRadiusPx[0]",
+      "shadowSourceCenterOffsetR": [
+        -0.95,
+        0.86
+      ],
+      "shadowSourceContentHalfSizeR": [
+        1.55,
+        0.58
+      ],
+      "sourceToNativeQuad": true,
+      "noPhysicsEffects": true
+    },
+    "shadowOpacity": 0.65,
+    "httpFiles": {
+      "artifact.json": "298649ec518a13e8070201e822108005a6b5081454452f50243d18f2fde2d542",
+      "app.js": "855fd997a3f02629e924031841d9e3759d7d7f4008b1d8af034505dd12f76ece",
+      "art/background.png": "9344fdcefcb3d36afa6a4585fc6db3c550b301e24cb5935202d5c4e10781b0b8",
+      "art/ball-body.png": "bf510895011a6a0a69896003517d242cd5a104e9c1ea37431895ca5bdf196b89",
+      "art/ball-shadow.png": "e172a8aee8446d8083680e20fd484f95c48daa823174415d60e3a99b6799b516",
+      "art/flower-01-body.png": "407a51d3f65833bd7dc725f81b37a6a08ffdbe63238c39dc35d3db0279200470",
+      "art/flower-01-ground-shadow.png": "46333d5173fde8a8307fbe01ec6d964e6619ddf315a5d3d1e77e466630993871",
+      "art/flower-02-body.png": "62f75619281399e6e530330f4ffb890fe234361bab5284aee9530d5b012c894c",
+      "art/flower-02-ground-shadow.png": "68c212b4292f8b15e6796b04debfea0897828d850731f586b1bdf8ada7e9b865",
+      "art/flower-03-body.png": "2b8cf13c792dab99bbba6afab4361a7e002df35fcd28072bd5707b4ba3f65502",
+      "art/flower-03-ground-shadow.png": "bef937bc0d59431fcfeabf3250f758c65702e29532348a61531dd508f49aa9fe",
+      "art/flower-04-body.png": "7b9ce8cf9fc551c3a21b8d1a60f88824cf859f05240812081d9913ca7377ff83",
+      "art/flower-04-ground-shadow.png": "b9517dc51dd2469dbc8fd97367c5fed7f341459fddff76d392a6a0f936d545d5",
+      "art/flower-05-body.png": "fc86dfcf23cd8d45f458aa06446a50fbb0f952986c577d1f5d4a03daad41368f",
+      "art/flower-05-ground-shadow.png": "f639462c32eaf2feca94cec13b9719511b41357413f188a765b153aa64ad4a37",
+      "art/flower-06-body.png": "c1b4ec314eaea111e61f50e47a15325694c30449d292859deac8d15941e39f87",
+      "art/flower-06-ground-shadow.png": "73d02d730ad9bc9b978291fd4edd142ec5c51f91b60fa30e96b007c08c47f8cd",
+      "art/flower-07-body.png": "cc0370c40cf4bb8ad79f65f213460d04afddfc6d1e92ace75c3822492760ee3a",
+      "art/flower-07-ground-shadow.png": "c1b0fcfe5aa5578529c098fcea916528bcc856d1af85cb60f24135eeb778c819",
+      "art/frog-01-body.png": "70f139c7507087aae27549e32dd624f3c88e7625fc91ca524084e40ccfa96f50",
+      "art/frog-01-ground-shadow.png": "b8de83dd9fb0feddae9dca64df62a3d1e474960411e93220e9b0775014077452",
+      "art/frog-02-body.png": "047f1681dc150399ac96e595bc534a4319ea4a0461384944c2fa55330d0fb364",
+      "art/frog-02-ground-shadow.png": "e3edf7f9202109b3a026aaaecabef28b820ffd2eb8efdc3dd8a22e2884c12eab",
+      "art/frog-03-body.png": "5a25aa7bdd9165e427c527194fcf1ee8cce1da056970dd3e2e43145ae2f0610e",
+      "art/frog-03-ground-shadow.png": "c874c7c933f2206b2f96d8b0d2a936a082bcac4cfed0f94e035e2ea1b7b9accf",
+      "art/frog-04-body.png": "a0ceb219cc544b5a7d6faea362f9bb49e498eec8f933ab69de939e99dd1c83ce",
+      "art/frog-04-ground-shadow.png": "d01e92eb8063d337f484d52e898007e5218fdfdf7343c76d1dc876165bb82ffc",
+      "art/frog-05-body.png": "1402a50c613d300e8cdc66f818a0bab15f422f366124e8fc8a62ed6ef3dfef02",
+      "art/frog-05-ground-shadow.png": "83574f54b822ddfc1af167e84badfdbc618496a0635c5a912bfde244178bc65e",
+      "art/full-v02-contract.md": "8d3b6b7da860c1ad6f5d71003175ebf4d0cceb4edb12507e0821a25f17f13ec0",
+      "art/leaf-01-body.png": "d5e60b709b15efaf4b84b934dd740e8bcea3ebbe0a0ea142f4ffd15f592197b7",
+      "art/leaf-01-ground-shadow.png": "2af194f8f31ed10485b77dfa5cf3d4460999c442be059d34075324cb36c2d228",
+      "art/leaf-02-body.png": "12cd5d7379ce42d92b970c1023d5b63a2253e0bb95a88cc08d6f61bc1b6f606c",
+      "art/leaf-02-ground-shadow.png": "9acd9c2e02f862194fa6275ce3627e9d3dc3acc3636a05324d7630a503e7909f",
+      "art/leaf-03-body.png": "dd971c1e3439f571571e379d6673f2c0358cc5146f3a813201a3012c2df9d274",
+      "art/leaf-03-ground-shadow.png": "049b0f9f4d3d3ec3de10bb49fed11aeb105b7ee325d788c313d77e562a58945f",
+      "art/leaf-04-body.png": "3d16a71a78776aaddc018ac6649b578633c8a9a1bb6b1a7344bba20ec051577e",
+      "art/leaf-04-ground-shadow.png": "6f78f5ecf1758b2767d9dc85d9e6794a542bd1ee521dd6add2e4d3f1aa88354e",
+      "art/leaf-05-body.png": "0088d5636d2f736c14b143709fdaa515572489fe4589888cc00aa812621c0b7d",
+      "art/leaf-05-ground-shadow.png": "34da2f2e47852ae5575a04df2dc0606d7698bcaeaaa00348d4bc47f54ea6b3b1",
+      "art/manifest.json": "276dfdfd32f1f543ce39d72fe7e360523c6ec70387d1c44dd21acd47f9fb1a6a",
+      "art/near-platform-front.png": "cb7d45e7e72cb417f6fe234ebd2cd336b585ebcb16a277f8c45eba9c78200ada",
+      "art/rail-left.png": "8c4aa1a23b74b9b9eba1d17e1cc52aaf06741da3be46e38775dccd4b13661fd8",
+      "art/rail-right.png": "8756e76b2730edcc089156ab10ac1e32084cbe05996234085aadfdf471058543",
+      "art/README.md": "ef9391109de1a7cde230f001240f33270651fc238f1a94fc3cb68e11bba8c8a3",
+      "art/receiver-01-body.png": "0e3a4d6c40fcc58a3a63e94791d1107ca4d2163df81b7f3367a332c5c314507e",
+      "art/receiver-01-foreground.png": "b98f63d72ca83907f6c77136dce641605cc4e9765c7ded7eb005427304b84ddf",
+      "art/receiver-02-body.png": "c7924677d2f476e9af1023b3018e68017060f3d8245f1962520640b06455bea6",
+      "art/receiver-02-foreground.png": "d7581bffeba50c438f7461e51233bcdeb24cb155599fe295367d0bb764924f7a",
+      "art/receiver-03-body.png": "69cbec3dce57285f43e93eccab4517a581bf8dbaea1a96cd1708c9ba162e1bb2",
+      "art/receiver-03-foreground.png": "34bc49247a37e430f29fe4e2d156323e29d9fe5cb900ff27852f528e20966004",
+      "art/receiver-04-body.png": "ee94c3e405aed1530a40f3d93b391295ef58a1c4a241d6e8f0e48bba4205981b",
+      "art/receiver-04-foreground.png": "1a95b3e080f0f2005e96927e3e366d4df13d280a07985ce2621b811eddaa4b7d",
+      "art/restoration-regions.png": "e08e1a082616a5bb2337eb9296e843efb7a77e9c227d9c2e1565f79c34b76fca",
+      "art/wood-01-body.png": "0da5eedca7c8f5cc70916ab88f3512facd35193a5a8bf3a789d3029050ea7a9d",
+      "art/wood-01-ground-shadow.png": "db2a7a0a98a245969341f60194119a6ed62aed6e3e7f3a2420f049012c4050d7",
+      "art/wood-02-body.png": "f16a239c303cc8b083cc9d53d71a2e58aae7b95b089e0ea7cda866fd494ea531",
+      "art/wood-02-ground-shadow.png": "2f093e0ccb7c06578f101a7721204075fdac3dbb78a03d57068014be59f58d0e",
+      "art/wood-03-body.png": "1b87c9bdc41481107162075264ae8e71f31f7cda46b6c27d7e542a0cdbe39b28",
+      "art/wood-03-ground-shadow.png": "55f5ccffd99c080edd400bde6ae49e6958d9951ee7000b299ee62bff133b7efd",
+      "art/wood-04-body.png": "f7cf33dc681131a620eb353ad980ad480b7382d05be2dfc58a87ab6de966ea0f",
+      "art/wood-04-ground-shadow.png": "690560c7445798793a268b23a89ce6769775b37023403a05fb702b5874793276",
+      "art/wood-05-body.png": "34ce375d9fbc54e2ea93809fd3b4bd99d074f7e1a39e4aa07ceeec0be4f36d13",
+      "art/wood-05-ground-shadow.png": "ae7722265de2b75f605f422843eb95789792e286f059d894614f62edf2242010",
+      "art/wood-06-body.png": "5bef480530baf2d9c6a0f0316fefb29437250592e826f4fb3f7199a6a92d218e",
+      "art/wood-06-ground-shadow.png": "f5af7b7291c9eb3e1b2ab3c984cdf7650a808c15b20b729dff7bba8b307c3b54",
+      "art/wood-07-body.png": "d813a70333b67db4ecf9fa69217681a5015b481caa2ff247610638835a72b9f0",
+      "art/wood-07-ground-shadow.png": "6367bb960f46d51fd7bd3c98854340e3d2518a517f6dbae84e610dbaed60794f",
+      "art/wood-08-body.png": "5edb7ee503c7bf50dce8ada1959f7c88e7c6140d9ee49d96f57ddfde45cc00ed",
+      "art/wood-08-ground-shadow.png": "5cf1a0d8537bf92db5717313ca5326735385084162b545f6fdac489586428d12",
+      "evidence/01-shadow-t590.jpg": "761a6e6f30ea10bb532f23eea7ef1ec2cc97a4cfc59354909fde4a9c97bf611f",
+      "evidence/02-partial-t605.jpg": "37ada43a097206ca8c61b9f8e896badbca3f7be1dd5aaf204e49d14b61b0e470",
+      "evidence/03-contact-t615.jpg": "51cf7092e61f5ebcbc57e5c44701dcd71a44f9db924b27b75be0febd32afd00b",
+      "evidence/04-contact-t617.jpg": "17acf5edf229d37acce2b7cde78339c1e90fc03609ecc9f355145c53a5b28886",
+      "evidence/05-capture-t2421.jpg": "51708fc434f650331175541d21194c61e894ff1098de9594126f05fa7eabd1f3",
+      "evidence/06-lost-t1323.jpg": "d1c90dbca96272ddf723e242d34ad5603da80745610a9f6192272c0e671f4059",
+      "evidence/playback-same-file.json": "929876b1aa271c61c289706ef8a1023a03051f4cb7125b91f791b99c63487e84",
+      "evidence/provenance.json": "e60cc74498ad6c3c8e33cfb84b23a1220d1b582795ac4610c7861ce78fba5223",
+      "evidence/view-checkpoint-invariant.json": "71b7f858c5e26e00d8258828e10810796583030a77ff6fc152c3a151bf47fcb4",
+      "history/candidate02.json": "6d6dd2b72e9e1dfdfddbbee8fb1cfa3983df0b001830af8a1b6e74268c1466e2",
+      "index.html": "b9c9ea7fcf307d2258dacb67ac1895250e7655ce3ebf84e68c7ba965995b946c",
+      "input/art-binding.json": "74f3a61e06a3e0cba197284d441eedb3692caff446cf00a6c3b2cf6c6f24664f",
+      "input/binding.json": "e4b9774cc6c2f638c2b271017feeb9c16bdf9fcc9674b79191ed2c8f3ced4747",
+      "input/config.json": "dd5c519cd6d4b7295118e0a3a1063efed424a0ce739450bd5153c6a9941982db",
+      "input/original.jpg": "c8f9e4245c1de8c2086e615bc75dc10aea59b76b614d6e106593e07262e24f72",
+      "input/p1-manifest.json": "7784dc0a215d0e472cf06a4eee03793592727cf0fa9a1fa0e0c78e5f1d17da18",
+      "input/projection.json": "9ca9e520f1927426a3a5ba73a5eacaf90fedffc9385e7d08d5b1e6ee644b020c",
+      "licenses/@xmldom-xmldom-LICENSE": "4da724fc305d81606b245b324d4d2586916b9d248b23d82183df753ace0fdf71",
+      "licenses/earcut-LICENSE": "0b348fff56384b43dbb37593906904e56d0f9deb51eae590d4dc6d427fbf1808",
+      "licenses/eventemitter3-LICENSE": "3aecc12b1cb28832b5f65ab64291de96568c3f236a74d646281b4491f7bcadbf",
+      "licenses/ismobilejs-LICENSE": "57c43c929cbc20653cb0e62620a413a8bc456888c1874ebc25d08e0122cd953e",
+      "licenses/parse-svg-path-LICENSE": "2d5ffdfe09268750ba687a149db8392038772e7f156db3a98b615a7de0cab76e",
+      "licenses/pixi-MIT.txt": "5ce7447bc57f7349ffc48338782fbcabe613696e00712b20d66bc58e780f9473",
+      "licenses/pixi.js-LICENSE": "5ce7447bc57f7349ffc48338782fbcabe613696e00712b20d66bc58e780f9473",
+      "licenses/tiny-lru-LICENSE": "8106f20bacca3558946439afb5e4854333f0a9944eee1c60488aa7ac7fc8f52b",
+      "native-runtime.js": "8843446996582eaccbd9ff63d3147d74b7eca9a614d8e0df16851d1d89d46f50",
+      "RUN.md": "972b6b138442e66fbbfa39300dc7579e562858af5f5fe5721a4a4501c42a3fc3",
+      "runs/01-shadow-t590.checkpoint.json": "d7153a635d900fe133081cde70dc078d09c2d20ceb77a81d6839dd57cf479388",
+      "runs/01-shadow-t590.view.json": "842527b75f56b045349c9fef65107ea01f398721844cd5f2a7577aef3a10e215",
+      "runs/02-partial-t605.checkpoint.json": "b3a1be7e25af6b5739ecc0f8e9adf9de890e51afd06aef6d28373c60afb6e682",
+      "runs/02-partial-t605.view.json": "93ce66dafdd88af22b3b185baffc47b607603833bd95aed19abdf10a749e2793",
+      "runs/03-contact-t615.checkpoint.json": "3bb84f55fa00184b084246d4b43ff0f90895d1da1b936b9b0b8cbfd68a514782",
+      "runs/03-contact-t615.view.json": "c0a7dafa7dd16aa034cd617480f6236142d909021b290dcd298a9e15d18223f1",
+      "runs/04-contact-t617.checkpoint.json": "16a276ce1aced127f9f63b34e769f681540b04fa0b078c2decdd2e590e5fd089",
+      "runs/04-contact-t617.view.json": "2649a7ef9717d575bd8ec473d6ec26088f67d2e9261a22dcfcb30c4a8e30b4ef",
+      "runs/05-capture-t2421.checkpoint.json": "5a472d56179d34cafe326fa3c1d5bd9a347370dba814caaa4cd887849a829dc5",
+      "runs/05-capture-t2421.view.json": "4d6839fe24153af6a4139dd4677b4f5eb10a6ce120da379a34ec5c0def030a92",
+      "runs/06-lost-t1323.checkpoint.json": "2d41d15e2792182f1b9c81d71b23b4921318e1df47e8f6eb3c05f8dcc32a4fea",
+      "runs/06-lost-t1323.view.json": "1580cecafed5d959fa1a962de985c6368e80700298eabdd8a8050b9cdcaf6ded",
+      "runs/index.json": "f68de74ffdbfb52439a210c9b495a868f46d598717d3a3c4fad11f9dc299c978",
+      "serve.mjs": "90402ed92bdcdb549a9c982a8dd206190dc441b3915f224c3563cd9797e15b3c",
+      "style.css": "0eb8faa28f1d65053c1446b07a9605946034812b207936a0e0c0a0a6b7f10da2"
+    }
+  },
+  "postReviewHTTP": {
+    "artifact.json": "298649ec518a13e8070201e822108005a6b5081454452f50243d18f2fde2d542",
+    "app.js": "855fd997a3f02629e924031841d9e3759d7d7f4008b1d8af034505dd12f76ece",
+    "art/manifest.json": "276dfdfd32f1f543ce39d72fe7e360523c6ec70387d1c44dd21acd47f9fb1a6a"
+  },
+  "rawRuntime": "E:\\R4D\\perspective\\p4-runtime\\visual-qa\\frozen03-qa-01",
+  "frames": [
+    {
+      "file": "01-shadow-seed1842222754-t590-normal.jpg",
+      "sha256": "a0d762bf591ae17c617cb9b32a357e77d89a412c8d6d80ea3862912395a43549",
+      "metadataFile": "01-shadow-seed1842222754-t590-normal.json",
+      "metadataSha256": "4062258b90ec77f5a78667ca624e70e1abd635eb2a5edeaeb3d296a28d932f21",
+      "exactPausedTick": true,
+      "state": {
+        "ball": {
+          "pos": {
+            "x": 33044.4293332,
+            "y": 33432.8780893
+          },
+          "vel": {
+            "x": 334.9440105,
+            "y": 210.1853543
+          }
+        },
+        "done": false,
+        "dropId": "board01-start",
+        "finished": false,
+        "nearMissBucketIds": [],
+        "rngU32": 4229712522,
+        "seed": 1842222754,
+        "started": true,
+        "status": "active",
+        "tick": 590,
+        "tickMs": 5,
+        "timeSec": 2.95
+      },
+      "eventsSha256": "77ea289e359119c5fa69fdf0e0910195c715ceb96fae3bc0e17002b65555ecfd",
+      "viewport": {
+        "dpr": 1,
+        "height": 720,
+        "width": 1280
+      },
+      "canvas": {
+        "height": 590,
+        "width": 840,
+        "x": 17,
+        "y": 103.5
+      },
+      "view": "source",
+      "zoom": "1",
+      "flags": {
+        "art": true,
+        "geometry": false,
+        "showParts": true,
+        "diagnosticBall": false,
+        "followBall": false
+      }
+    },
+    {
+      "file": "02-normal-seed1842222754-t570.jpg",
+      "sha256": "4c77953999ac48a4a0f84a024b43bf5dcd9579bbb643a03181b1a0a235256ed3",
+      "metadataFile": "02-normal-seed1842222754-t570.json",
+      "metadataSha256": "3719441db7a7d4c45ff77d9bc174f3a5f2fe3514832315da7c5910cdeeb95ff3",
+      "exactPausedTick": true,
+      "state": {
+        "ball": {
+          "pos": {
+            "x": 33010.9349312,
+            "y": 33416.5145533
+          },
+          "vel": {
+            "x": 334.9440105,
+            "y": 112.1853543
+          }
+        },
+        "done": false,
+        "dropId": "board01-start",
+        "finished": false,
+        "nearMissBucketIds": [],
+        "rngU32": 4229712522,
+        "seed": 1842222754,
+        "started": true,
+        "status": "active",
+        "tick": 570,
+        "tickMs": 5,
+        "timeSec": 2.85
+      },
+      "eventsSha256": "77ea289e359119c5fa69fdf0e0910195c715ceb96fae3bc0e17002b65555ecfd",
+      "viewport": {
+        "dpr": 1,
+        "height": 720,
+        "width": 1280
+      },
+      "canvas": {
+        "height": 590,
+        "width": 840,
+        "x": 17,
+        "y": 103.5
+      },
+      "view": "source",
+      "zoom": "1",
+      "flags": {
+        "art": true,
+        "geometry": false,
+        "showParts": true,
+        "diagnosticBall": false,
+        "followBall": false
+      }
+    },
+    {
+      "file": "02-normal-seed1842222754-t605.jpg",
+      "sha256": "553e2c6e7ccd30d5036a8f39701171deaf93c4b349bdede62455fbf99a0efc2f",
+      "metadataFile": "02-normal-seed1842222754-t605.json",
+      "metadataSha256": "946df3ceefb80692873676afa8e5a284c3fddc45f14cda08e819fdf6a6f267c5",
+      "exactPausedTick": true,
+      "state": {
+        "ball": {
+          "pos": {
+            "x": 33069.5501347,
+            "y": 33451.5819913
+          },
+          "vel": {
+            "x": 334.9440105,
+            "y": 283.6853543
+          }
+        },
+        "done": false,
+        "dropId": "board01-start",
+        "finished": false,
+        "nearMissBucketIds": [],
+        "rngU32": 4229712522,
+        "seed": 1842222754,
+        "started": true,
+        "status": "active",
+        "tick": 605,
+        "tickMs": 5,
+        "timeSec": 3.025
+      },
+      "eventsSha256": "77ea289e359119c5fa69fdf0e0910195c715ceb96fae3bc0e17002b65555ecfd",
+      "viewport": {
+        "dpr": 1,
+        "height": 720,
+        "width": 1280
+      },
+      "canvas": {
+        "height": 590,
+        "width": 840,
+        "x": 17,
+        "y": 103.5
+      },
+      "view": "source",
+      "zoom": "1",
+      "flags": {
+        "art": true,
+        "geometry": false,
+        "showParts": true,
+        "diagnosticBall": false,
+        "followBall": false
+      }
+    },
+    {
+      "file": "02-normal-seed1842222754-t615.jpg",
+      "sha256": "25109d9ff5f1254fd495746d2b68d7e32d81f7190990949387c679de2c38d4b7",
+      "metadataFile": "02-normal-seed1842222754-t615.json",
+      "metadataSha256": "6e413dd040876db11ba5ab4e4f408d2dc187170f051c4d0f00f025aaa2ccb401",
+      "exactPausedTick": true,
+      "state": {
+        "ball": {
+          "pos": {
+            "x": 33086.2973357,
+            "y": 33467.1137593
+          },
+          "vel": {
+            "x": 334.9440105,
+            "y": 332.6853543
+          }
+        },
+        "done": false,
+        "dropId": "board01-start",
+        "finished": false,
+        "nearMissBucketIds": [],
+        "rngU32": 4229712522,
+        "seed": 1842222754,
+        "started": true,
+        "status": "active",
+        "tick": 615,
+        "tickMs": 5,
+        "timeSec": 3.075
+      },
+      "eventsSha256": "77ea289e359119c5fa69fdf0e0910195c715ceb96fae3bc0e17002b65555ecfd",
+      "viewport": {
+        "dpr": 1,
+        "height": 720,
+        "width": 1280
+      },
+      "canvas": {
+        "height": 590,
+        "width": 840,
+        "x": 17,
+        "y": 103.5
+      },
+      "view": "source",
+      "zoom": "1",
+      "flags": {
+        "art": true,
+        "geometry": false,
+        "showParts": true,
+        "diagnosticBall": false,
+        "followBall": false
+      }
+    },
+    {
+      "file": "02-normal-seed1842222754-t616.jpg",
+      "sha256": "7b5514e1ac85f41301db6affa4ce470e9f3adddef065623f9b139a4ba98b30fc",
+      "metadataFile": "02-normal-seed1842222754-t616.json",
+      "metadataSha256": "01540f36d5ebae945aeae57931776d784af50a6acb303969a857343bf510c4b7",
+      "exactPausedTick": true,
+      "state": {
+        "ball": {
+          "pos": {
+            "x": 33087.9720558,
+            "y": 33468.8016861
+          },
+          "vel": {
+            "x": 334.9440105,
+            "y": 337.5853543
+          }
+        },
+        "done": false,
+        "dropId": "board01-start",
+        "finished": false,
+        "nearMissBucketIds": [],
+        "rngU32": 4229712522,
+        "seed": 1842222754,
+        "started": true,
+        "status": "active",
+        "tick": 616,
+        "tickMs": 5,
+        "timeSec": 3.08
+      },
+      "eventsSha256": "77ea289e359119c5fa69fdf0e0910195c715ceb96fae3bc0e17002b65555ecfd",
+      "viewport": {
+        "dpr": 1,
+        "height": 720,
+        "width": 1280
+      },
+      "canvas": {
+        "height": 590,
+        "width": 840,
+        "x": 17,
+        "y": 103.5
+      },
+      "view": "source",
+      "zoom": "1",
+      "flags": {
+        "art": true,
+        "geometry": false,
+        "showParts": true,
+        "diagnosticBall": false,
+        "followBall": false
+      }
+    },
+    {
+      "file": "02-normal-seed1842222754-t617.jpg",
+      "sha256": "c618b5930d1a8f124eafc8ce2360d641bee5c0cd5ba0f4a1edd85529262c16af",
+      "metadataFile": "02-normal-seed1842222754-t617.json",
+      "metadataSha256": "88ad9a907f795383479139c38f98becda9c4b7ea8bce4e20d8d1a6637c06f64f",
+      "exactPausedTick": true,
+      "state": {
+        "ball": {
+          "pos": {
+            "x": 33089.5282859,
+            "y": 33470.0647343
+          },
+          "vel": {
+            "x": 144.5418614,
+            "y": -387.2083827
+          }
+        },
+        "done": false,
+        "dropId": "board01-start",
+        "finished": false,
+        "nearMissBucketIds": [],
+        "rngU32": 2499212876,
+        "seed": 1842222754,
+        "started": true,
+        "status": "active",
+        "tick": 617,
+        "tickMs": 5,
+        "timeSec": 3.085
+      },
+      "eventsSha256": "abb64cb3ba72e022070232fc0112b4a2886f48a5317a8cb184a666e631fca3f8",
+      "viewport": {
+        "dpr": 1,
+        "height": 720,
+        "width": 1280
+      },
+      "canvas": {
+        "height": 590,
+        "width": 840,
+        "x": 17,
+        "y": 103.5
+      },
+      "view": "source",
+      "zoom": "1",
+      "flags": {
+        "art": true,
+        "geometry": false,
+        "showParts": true,
+        "diagnosticBall": false,
+        "followBall": false
+      }
+    },
+    {
+      "file": "03-shadow-t590-parts-off-normal.jpg",
+      "sha256": "cb29cc123fea79b66a1bb67cdd72bbc7b0b05e1287c894b13a9f46cbaf850dca",
+      "metadataFile": "03-shadow-t590-parts-off-normal.json",
+      "metadataSha256": "9873741b41d8b1f131b0aac36ebdbd79a276e6f65b68b4bda29c7d8146de04f6",
+      "exactPausedTick": true,
+      "state": {
+        "ball": {
+          "pos": {
+            "x": 33044.4293332,
+            "y": 33432.8780893
+          },
+          "vel": {
+            "x": 334.9440105,
+            "y": 210.1853543
+          }
+        },
+        "done": false,
+        "dropId": "board01-start",
+        "finished": false,
+        "nearMissBucketIds": [],
+        "rngU32": 4229712522,
+        "seed": 1842222754,
+        "started": true,
+        "status": "active",
+        "tick": 590,
+        "tickMs": 5,
+        "timeSec": 2.95
+      },
+      "eventsSha256": "77ea289e359119c5fa69fdf0e0910195c715ceb96fae3bc0e17002b65555ecfd",
+      "viewport": {
+        "dpr": 1,
+        "height": 720,
+        "width": 1280
+      },
+      "canvas": {
+        "height": 590,
+        "width": 840,
+        "x": 17,
+        "y": 103.5
+      },
+      "view": "source",
+      "zoom": "1",
+      "flags": {
+        "art": true,
+        "geometry": false,
+        "showParts": false,
+        "diagnosticBall": false,
+        "followBall": false
+      }
+    },
+    {
+      "file": "04-shadow-t590-parts-off-detail.jpg",
+      "sha256": "c432779720a7f54d499ef427a84ecaba62bd516b7035358066a4ed4156f5bb62",
+      "metadataFile": "04-shadow-t590-parts-off-detail.json",
+      "metadataSha256": "eefba83417afd165a9f1207716eef746aa6dac453e83a836e79787673e25eaca",
+      "exactPausedTick": true,
+      "state": {
+        "ball": {
+          "pos": {
+            "x": 33044.4293332,
+            "y": 33432.8780893
+          },
+          "vel": {
+            "x": 334.9440105,
+            "y": 210.1853543
+          }
+        },
+        "done": false,
+        "dropId": "board01-start",
+        "finished": false,
+        "nearMissBucketIds": [],
+        "rngU32": 4229712522,
+        "seed": 1842222754,
+        "started": true,
+        "status": "active",
+        "tick": 590,
+        "tickMs": 5,
+        "timeSec": 2.95
+      },
+      "eventsSha256": "77ea289e359119c5fa69fdf0e0910195c715ceb96fae3bc0e17002b65555ecfd",
+      "viewport": {
+        "dpr": 1,
+        "height": 720,
+        "width": 1280
+      },
+      "canvas": {
+        "height": 590,
+        "width": 840,
+        "x": 17,
+        "y": 103.5
+      },
+      "view": "source",
+      "zoom": "2",
+      "flags": {
+        "art": true,
+        "geometry": false,
+        "showParts": false,
+        "diagnosticBall": false,
+        "followBall": true
+      }
+    },
+    {
+      "file": "05-regression-seed1842222754-t430.jpg",
+      "sha256": "ec50f1e9e3492321afc7abfa32485da500ac63c2cd94bfa96fc109af2ada16bd",
+      "metadataFile": "05-regression-seed1842222754-t430.json",
+      "metadataSha256": "2b1037ac696da1505a1f69a7769298db54faae7de2592fc55bae1a7e2931c699",
+      "exactPausedTick": true,
+      "state": {
+        "ball": {
+          "pos": {
+            "x": 32965.7897187,
+            "y": 33526.1064907
+          },
+          "vel": {
+            "x": -289.8598378,
+            "y": 725.9517651
+          }
+        },
+        "done": false,
+        "dropId": "board01-start",
+        "finished": false,
+        "nearMissBucketIds": [],
+        "rngU32": 934433526,
+        "seed": 1842222754,
+        "started": true,
+        "status": "active",
+        "tick": 430,
+        "tickMs": 5,
+        "timeSec": 2.15
+      },
+      "eventsSha256": "2e7a777f65004a3cd7cb832e395376f4e83da75cd43f95b209efcb87341cb71b",
+      "viewport": {
+        "dpr": 1,
+        "height": 720,
+        "width": 1280
+      },
+      "canvas": {
+        "height": 590,
+        "width": 840,
+        "x": 17,
+        "y": 103.5
+      },
+      "view": "source",
+      "zoom": "2",
+      "flags": {
+        "art": true,
+        "geometry": false,
+        "showParts": true,
+        "diagnosticBall": false,
+        "followBall": true
+      }
+    },
+    {
+      "file": "05-regression-seed1842222754-t441.jpg",
+      "sha256": "b6845d8b43059703dd81423c7297a78c376b1253dd919f586a7a12e7db60560b",
+      "metadataFile": "05-regression-seed1842222754-t441.json",
+      "metadataSha256": "e9d471aa95afae98e62a3d7a749fa086688fb710d9ed2bc8de07d2c624b95764",
+      "exactPausedTick": true,
+      "state": {
+        "ball": {
+          "pos": {
+            "x": 32949.8474275,
+            "y": 33567.6508375
+          },
+          "vel": {
+            "x": -289.8598378,
+            "y": 779.8517651
+          }
+        },
+        "done": false,
+        "dropId": "board01-start",
+        "finished": false,
+        "nearMissBucketIds": [],
+        "rngU32": 934433526,
+        "seed": 1842222754,
+        "started": true,
+        "status": "active",
+        "tick": 441,
+        "tickMs": 5,
+        "timeSec": 2.205
+      },
+      "eventsSha256": "2e7a777f65004a3cd7cb832e395376f4e83da75cd43f95b209efcb87341cb71b",
+      "viewport": {
+        "dpr": 1,
+        "height": 720,
+        "width": 1280
+      },
+      "canvas": {
+        "height": 590,
+        "width": 840,
+        "x": 17,
+        "y": 103.5
+      },
+      "view": "source",
+      "zoom": "2",
+      "flags": {
+        "art": true,
+        "geometry": false,
+        "showParts": true,
+        "diagnosticBall": false,
+        "followBall": true
+      }
+    },
+    {
+      "file": "05-regression-seed1842222754-t442.jpg",
+      "sha256": "8145dd954a7ab028d825a145e32d1a8cd985c799cf98e399c28bea0a5fd2f9a7",
+      "metadataFile": "05-regression-seed1842222754-t442.json",
+      "metadataSha256": "4cc2e31aa4dbab9bfda49f2bf6c6bb421ea3d9fe259685a86bce7da466ae672a",
+      "exactPausedTick": true,
+      "state": {
+        "ball": {
+          "pos": {
+            "x": 32948.4005633,
+            "y": 33570.9327351
+          },
+          "vel": {
+            "x": -289.6895117,
+            "y": -626.3496619
+          }
+        },
+        "done": false,
+        "dropId": "board01-start",
+        "finished": false,
+        "nearMissBucketIds": [],
+        "rngU32": 1638487448,
+        "seed": 1842222754,
+        "started": true,
+        "status": "active",
+        "tick": 442,
+        "tickMs": 5,
+        "timeSec": 2.21
+      },
+      "eventsSha256": "5ab7adb37a77b8f750dcac7d66dfc7650b42552cd718949dd6d612798b74a04f",
+      "viewport": {
+        "dpr": 1,
+        "height": 720,
+        "width": 1280
+      },
+      "canvas": {
+        "height": 590,
+        "width": 840,
+        "x": 17,
+        "y": 103.5
+      },
+      "view": "source",
+      "zoom": "2",
+      "flags": {
+        "art": true,
+        "geometry": false,
+        "showParts": true,
+        "diagnosticBall": false,
+        "followBall": true
+      }
+    },
+    {
+      "file": "05-regression-seed1842222754-t590.jpg",
+      "sha256": "1725dfccea6379e6384079b212a668d5c5e581b4814f3fd9aae58ebbd971d3c4",
+      "metadataFile": "05-regression-seed1842222754-t590.json",
+      "metadataSha256": "5e72c596ce08e09d79e3e20c895ed8e87ad571ea7fc2a183d40bad406746ead3",
+      "exactPausedTick": true,
+      "state": {
+        "ball": {
+          "pos": {
+            "x": 33044.4293332,
+            "y": 33432.8780893
+          },
+          "vel": {
+            "x": 334.9440105,
+            "y": 210.1853543
+          }
+        },
+        "done": false,
+        "dropId": "board01-start",
+        "finished": false,
+        "nearMissBucketIds": [],
+        "rngU32": 4229712522,
+        "seed": 1842222754,
+        "started": true,
+        "status": "active",
+        "tick": 590,
+        "tickMs": 5,
+        "timeSec": 2.95
+      },
+      "eventsSha256": "77ea289e359119c5fa69fdf0e0910195c715ceb96fae3bc0e17002b65555ecfd",
+      "viewport": {
+        "dpr": 1,
+        "height": 720,
+        "width": 1280
+      },
+      "canvas": {
+        "height": 590,
+        "width": 840,
+        "x": 17,
+        "y": 103.5
+      },
+      "view": "source",
+      "zoom": "2",
+      "flags": {
+        "art": true,
+        "geometry": false,
+        "showParts": true,
+        "diagnosticBall": false,
+        "followBall": true
+      }
+    },
+    {
+      "file": "05-regression-seed1842222754-t605.jpg",
+      "sha256": "2c5fff7a8f4e2f17795a68e6cae16087389c904477b1309054986ddaf1289c89",
+      "metadataFile": "05-regression-seed1842222754-t605.json",
+      "metadataSha256": "9d9e4f56c406dfc8079b5b30110a8622f970b1ef88b8d0298e99b43104d0406a",
+      "exactPausedTick": true,
+      "state": {
+        "ball": {
+          "pos": {
+            "x": 33069.5501347,
+            "y": 33451.5819913
+          },
+          "vel": {
+            "x": 334.9440105,
+            "y": 283.6853543
+          }
+        },
+        "done": false,
+        "dropId": "board01-start",
+        "finished": false,
+        "nearMissBucketIds": [],
+        "rngU32": 4229712522,
+        "seed": 1842222754,
+        "started": true,
+        "status": "active",
+        "tick": 605,
+        "tickMs": 5,
+        "timeSec": 3.025
+      },
+      "eventsSha256": "77ea289e359119c5fa69fdf0e0910195c715ceb96fae3bc0e17002b65555ecfd",
+      "viewport": {
+        "dpr": 1,
+        "height": 720,
+        "width": 1280
+      },
+      "canvas": {
+        "height": 590,
+        "width": 840,
+        "x": 17,
+        "y": 103.5
+      },
+      "view": "source",
+      "zoom": "2",
+      "flags": {
+        "art": true,
+        "geometry": false,
+        "showParts": true,
+        "diagnosticBall": false,
+        "followBall": true
+      }
+    },
+    {
+      "file": "05-regression-seed1842222754-t610.jpg",
+      "sha256": "2d1836b5cdb86792ddc7e89b299569bfa355c16f850ec0b4004b32fe3a59d358",
+      "metadataFile": "05-regression-seed1842222754-t610.json",
+      "metadataSha256": "812494a9241bdbf81df5109cee74fa6a775f48c5dc6cbaf2f7909501b5e8614f",
+      "exactPausedTick": true,
+      "state": {
+        "ball": {
+          "pos": {
+            "x": 33077.9237352,
+            "y": 33459.0416253
+          },
+          "vel": {
+            "x": 334.9440105,
+            "y": 308.1853543
+          }
+        },
+        "done": false,
+        "dropId": "board01-start",
+        "finished": false,
+        "nearMissBucketIds": [],
+        "rngU32": 4229712522,
+        "seed": 1842222754,
+        "started": true,
+        "status": "active",
+        "tick": 610,
+        "tickMs": 5,
+        "timeSec": 3.05
+      },
+      "eventsSha256": "77ea289e359119c5fa69fdf0e0910195c715ceb96fae3bc0e17002b65555ecfd",
+      "viewport": {
+        "dpr": 1,
+        "height": 720,
+        "width": 1280
+      },
+      "canvas": {
+        "height": 590,
+        "width": 840,
+        "x": 17,
+        "y": 103.5
+      },
+      "view": "source",
+      "zoom": "2",
+      "flags": {
+        "art": true,
+        "geometry": false,
+        "showParts": true,
+        "diagnosticBall": false,
+        "followBall": true
+      }
+    },
+    {
+      "file": "05-regression-seed1842222754-t615.jpg",
+      "sha256": "b8c9abfdfc1b3a26391f057d723b08e9f792b587ebdcbc71413dea6bf3b06de7",
+      "metadataFile": "05-regression-seed1842222754-t615.json",
+      "metadataSha256": "bfa7d406e74cb3d586065367591ec754d3d932a004e08fea236cdf4747db348c",
+      "exactPausedTick": true,
+      "state": {
+        "ball": {
+          "pos": {
+            "x": 33086.2973357,
+            "y": 33467.1137593
+          },
+          "vel": {
+            "x": 334.9440105,
+            "y": 332.6853543
+          }
+        },
+        "done": false,
+        "dropId": "board01-start",
+        "finished": false,
+        "nearMissBucketIds": [],
+        "rngU32": 4229712522,
+        "seed": 1842222754,
+        "started": true,
+        "status": "active",
+        "tick": 615,
+        "tickMs": 5,
+        "timeSec": 3.075
+      },
+      "eventsSha256": "77ea289e359119c5fa69fdf0e0910195c715ceb96fae3bc0e17002b65555ecfd",
+      "viewport": {
+        "dpr": 1,
+        "height": 720,
+        "width": 1280
+      },
+      "canvas": {
+        "height": 590,
+        "width": 840,
+        "x": 17,
+        "y": 103.5
+      },
+      "view": "source",
+      "zoom": "2",
+      "flags": {
+        "art": true,
+        "geometry": false,
+        "showParts": true,
+        "diagnosticBall": false,
+        "followBall": true
+      }
+    },
+    {
+      "file": "05-regression-seed1842222754-t616.jpg",
+      "sha256": "1b1dfc8209634334c73fe59e8ca7f63226a5e8d4d80a6e03ea6d486bcf929e02",
+      "metadataFile": "05-regression-seed1842222754-t616.json",
+      "metadataSha256": "b984a6dbca75f1dfa940e1cbcef4390eb8fdde85ebb24cd70227b6b9edeb1e8d",
+      "exactPausedTick": true,
+      "state": {
+        "ball": {
+          "pos": {
+            "x": 33087.9720558,
+            "y": 33468.8016861
+          },
+          "vel": {
+            "x": 334.9440105,
+            "y": 337.5853543
+          }
+        },
+        "done": false,
+        "dropId": "board01-start",
+        "finished": false,
+        "nearMissBucketIds": [],
+        "rngU32": 4229712522,
+        "seed": 1842222754,
+        "started": true,
+        "status": "active",
+        "tick": 616,
+        "tickMs": 5,
+        "timeSec": 3.08
+      },
+      "eventsSha256": "77ea289e359119c5fa69fdf0e0910195c715ceb96fae3bc0e17002b65555ecfd",
+      "viewport": {
+        "dpr": 1,
+        "height": 720,
+        "width": 1280
+      },
+      "canvas": {
+        "height": 590,
+        "width": 840,
+        "x": 17,
+        "y": 103.5
+      },
+      "view": "source",
+      "zoom": "2",
+      "flags": {
+        "art": true,
+        "geometry": false,
+        "showParts": true,
+        "diagnosticBall": false,
+        "followBall": true
+      }
+    },
+    {
+      "file": "05-regression-seed1842222754-t617.jpg",
+      "sha256": "34563923e20289f116f62f741f72010608e0e9a1a21eff34d0ca74149898b024",
+      "metadataFile": "05-regression-seed1842222754-t617.json",
+      "metadataSha256": "a5cf30555d2402e42b22f019361d5813e0ef3ea6f49569a28a769ddb08dc30d3",
+      "exactPausedTick": true,
+      "state": {
+        "ball": {
+          "pos": {
+            "x": 33089.5282859,
+            "y": 33470.0647343
+          },
+          "vel": {
+            "x": 144.5418614,
+            "y": -387.2083827
+          }
+        },
+        "done": false,
+        "dropId": "board01-start",
+        "finished": false,
+        "nearMissBucketIds": [],
+        "rngU32": 2499212876,
+        "seed": 1842222754,
+        "started": true,
+        "status": "active",
+        "tick": 617,
+        "tickMs": 5,
+        "timeSec": 3.085
+      },
+      "eventsSha256": "abb64cb3ba72e022070232fc0112b4a2886f48a5317a8cb184a666e631fca3f8",
+      "viewport": {
+        "dpr": 1,
+        "height": 720,
+        "width": 1280
+      },
+      "canvas": {
+        "height": 590,
+        "width": 840,
+        "x": 17,
+        "y": 103.5
+      },
+      "view": "source",
+      "zoom": "2",
+      "flags": {
+        "art": true,
+        "geometry": false,
+        "showParts": true,
+        "diagnosticBall": false,
+        "followBall": true
+      }
+    },
+    {
+      "file": "06-frog-t442-detail.jpg",
+      "sha256": "8145dd954a7ab028d825a145e32d1a8cd985c799cf98e399c28bea0a5fd2f9a7",
+      "metadataFile": "06-frog-t442-detail.json",
+      "metadataSha256": "4cc2e31aa4dbab9bfda49f2bf6c6bb421ea3d9fe259685a86bce7da466ae672a",
+      "exactPausedTick": true,
+      "state": {
+        "ball": {
+          "pos": {
+            "x": 32948.4005633,
+            "y": 33570.9327351
+          },
+          "vel": {
+            "x": -289.6895117,
+            "y": -626.3496619
+          }
+        },
+        "done": false,
+        "dropId": "board01-start",
+        "finished": false,
+        "nearMissBucketIds": [],
+        "rngU32": 1638487448,
+        "seed": 1842222754,
+        "started": true,
+        "status": "active",
+        "tick": 442,
+        "tickMs": 5,
+        "timeSec": 2.21
+      },
+      "eventsSha256": "5ab7adb37a77b8f750dcac7d66dfc7650b42552cd718949dd6d612798b74a04f",
+      "viewport": {
+        "dpr": 1,
+        "height": 720,
+        "width": 1280
+      },
+      "canvas": {
+        "height": 590,
+        "width": 840,
+        "x": 17,
+        "y": 103.5
+      },
+      "view": "source",
+      "zoom": "2",
+      "flags": {
+        "art": true,
+        "geometry": false,
+        "showParts": true,
+        "diagnosticBall": false,
+        "followBall": true
+      }
+    },
+    {
+      "file": "07-platform-seed1842222754-t2370.jpg",
+      "sha256": "a8f745be9ad753b3915e3a5650167af5765d99b0f080e0f774c5b87da583baad",
+      "metadataFile": "07-platform-seed1842222754-t2370.json",
+      "metadataSha256": "d5810f84750811e7cf78172883c1891479a66e37895f7301aaf70ca72bc9e734",
+      "exactPausedTick": true,
+      "state": {
+        "ball": {
+          "pos": {
+            "x": 32974.2530127,
+            "y": 34730.8982061
+          },
+          "vel": {
+            "x": 593.3527495,
+            "y": 546.8864548
+          }
+        },
+        "done": false,
+        "dropId": "board01-start",
+        "finished": false,
+        "nearMissBucketIds": [],
+        "rngU32": 3946641644,
+        "seed": 1842222754,
+        "started": true,
+        "status": "active",
+        "tick": 2370,
+        "tickMs": 5,
+        "timeSec": 11.85
+      },
+      "eventsSha256": "6f50651f3ec40363a4b488ba9b3f713bc4f1c1d4d0d952d7f55b0f0bca275cea",
+      "viewport": {
+        "dpr": 1,
+        "height": 720,
+        "width": 1280
+      },
+      "canvas": {
+        "height": 590,
+        "width": 840,
+        "x": 17,
+        "y": 103.5
+      },
+      "view": "source",
+      "zoom": "2",
+      "flags": {
+        "art": true,
+        "geometry": false,
+        "showParts": true,
+        "diagnosticBall": false,
+        "followBall": true
+      }
+    },
+    {
+      "file": "07-platform-seed1842222754-t2380.jpg",
+      "sha256": "cdd156b3c2874f47f3d1b8827f632f7e2a75be6ec4925fb491abced9017fd309",
+      "metadataFile": "07-platform-seed1842222754-t2380.json",
+      "metadataSha256": "a24e91ae512fb1248457a3371fbb5c5b63d4f34530fde8ffa53a2ec109f02087",
+      "exactPausedTick": true,
+      "state": {
+        "ball": {
+          "pos": {
+            "x": 33003.9206497,
+            "y": 34759.5900291
+          },
+          "vel": {
+            "x": 593.3527495,
+            "y": 595.8864548
+          }
+        },
+        "done": false,
+        "dropId": "board01-start",
+        "finished": false,
+        "nearMissBucketIds": [],
+        "rngU32": 3946641644,
+        "seed": 1842222754,
+        "started": true,
+        "status": "active",
+        "tick": 2380,
+        "tickMs": 5,
+        "timeSec": 11.9
+      },
+      "eventsSha256": "6f50651f3ec40363a4b488ba9b3f713bc4f1c1d4d0d952d7f55b0f0bca275cea",
+      "viewport": {
+        "dpr": 1,
+        "height": 720,
+        "width": 1280
+      },
+      "canvas": {
+        "height": 590,
+        "width": 840,
+        "x": 17,
+        "y": 103.5
+      },
+      "view": "source",
+      "zoom": "2",
+      "flags": {
+        "art": true,
+        "geometry": false,
+        "showParts": true,
+        "diagnosticBall": false,
+        "followBall": true
+      }
+    },
+    {
+      "file": "07-platform-seed1842222754-t2390.jpg",
+      "sha256": "750f54c77779308c926113b569ee0a45eca87d0f7539dcbc8e94f8110cc6ff32",
+      "metadataFile": "07-platform-seed1842222754-t2390.json",
+      "metadataSha256": "6c4a9fde3c7da9944209df75de295f14a07da2bb2f5ef2e4bcc9f5d3ec6d0448",
+      "exactPausedTick": true,
+      "state": {
+        "ball": {
+          "pos": {
+            "x": 33033.5882867,
+            "y": 34790.7318521
+          },
+          "vel": {
+            "x": 593.3527495,
+            "y": 644.8864548
+          }
+        },
+        "done": false,
+        "dropId": "board01-start",
+        "finished": false,
+        "nearMissBucketIds": [],
+        "rngU32": 3946641644,
+        "seed": 1842222754,
+        "started": true,
+        "status": "active",
+        "tick": 2390,
+        "tickMs": 5,
+        "timeSec": 11.95
+      },
+      "eventsSha256": "6f50651f3ec40363a4b488ba9b3f713bc4f1c1d4d0d952d7f55b0f0bca275cea",
+      "viewport": {
+        "dpr": 1,
+        "height": 720,
+        "width": 1280
+      },
+      "canvas": {
+        "height": 590,
+        "width": 840,
+        "x": 17,
+        "y": 103.5
+      },
+      "view": "source",
+      "zoom": "2",
+      "flags": {
+        "art": true,
+        "geometry": false,
+        "showParts": true,
+        "diagnosticBall": false,
+        "followBall": true
+      }
+    },
+    {
+      "file": "08-platform-t2390-detail.jpg",
+      "sha256": "750f54c77779308c926113b569ee0a45eca87d0f7539dcbc8e94f8110cc6ff32",
+      "metadataFile": "08-platform-t2390-detail.json",
+      "metadataSha256": "6c4a9fde3c7da9944209df75de295f14a07da2bb2f5ef2e4bcc9f5d3ec6d0448",
+      "exactPausedTick": true,
+      "state": {
+        "ball": {
+          "pos": {
+            "x": 33033.5882867,
+            "y": 34790.7318521
+          },
+          "vel": {
+            "x": 593.3527495,
+            "y": 644.8864548
+          }
+        },
+        "done": false,
+        "dropId": "board01-start",
+        "finished": false,
+        "nearMissBucketIds": [],
+        "rngU32": 3946641644,
+        "seed": 1842222754,
+        "started": true,
+        "status": "active",
+        "tick": 2390,
+        "tickMs": 5,
+        "timeSec": 11.95
+      },
+      "eventsSha256": "6f50651f3ec40363a4b488ba9b3f713bc4f1c1d4d0d952d7f55b0f0bca275cea",
+      "viewport": {
+        "dpr": 1,
+        "height": 720,
+        "width": 1280
+      },
+      "canvas": {
+        "height": 590,
+        "width": 840,
+        "x": 17,
+        "y": 103.5
+      },
+      "view": "source",
+      "zoom": "2",
+      "flags": {
+        "art": true,
+        "geometry": false,
+        "showParts": true,
+        "diagnosticBall": false,
+        "followBall": true
+      }
+    },
+    {
+      "file": "09-platform-t2390-art-off.jpg",
+      "sha256": "ea4a9a76b3f21f05f1c3d456961128a065595e4ae8b6b941b970694b64531102",
+      "metadataFile": "09-platform-t2390-art-off.json",
+      "metadataSha256": "e70d45b5be1a13aa246da9041d25d3afb481cae45c5d45a4c578bfcb0506bacc",
+      "exactPausedTick": true,
+      "state": {
+        "ball": {
+          "pos": {
+            "x": 33033.5882867,
+            "y": 34790.7318521
+          },
+          "vel": {
+            "x": 593.3527495,
+            "y": 644.8864548
+          }
+        },
+        "done": false,
+        "dropId": "board01-start",
+        "finished": false,
+        "nearMissBucketIds": [],
+        "rngU32": 3946641644,
+        "seed": 1842222754,
+        "started": true,
+        "status": "active",
+        "tick": 2390,
+        "tickMs": 5,
+        "timeSec": 11.95
+      },
+      "eventsSha256": "6f50651f3ec40363a4b488ba9b3f713bc4f1c1d4d0d952d7f55b0f0bca275cea",
+      "viewport": {
+        "dpr": 1,
+        "height": 720,
+        "width": 1280
+      },
+      "canvas": {
+        "height": 590,
+        "width": 840,
+        "x": 17,
+        "y": 103.5
+      },
+      "view": "source",
+      "zoom": "2",
+      "flags": {
+        "art": false,
+        "geometry": true,
+        "showParts": true,
+        "diagnosticBall": false,
+        "followBall": true
+      }
+    },
+    {
+      "file": "10-receiver02-seed1842222754-t2419.jpg",
+      "sha256": "466e1f58c20f60c18fd21213ab98bbc5de19a158ec9c58abfba89a824d16d51c",
+      "metadataFile": "10-receiver02-seed1842222754-t2419.json",
+      "metadataSha256": "96c725c9163ef5a43da3b27369bc7d6c2d342bb864e0e0ba68cf0c405ae989d3",
+      "exactPausedTick": true,
+      "state": {
+        "ball": {
+          "pos": {
+            "x": 33119.624434,
+            "y": 34894.8978888
+          },
+          "vel": {
+            "x": 593.3527495,
+            "y": 786.9864548
+          }
+        },
+        "done": false,
+        "dropId": "board01-start",
+        "finished": false,
+        "nearMissBucketIds": [],
+        "rngU32": 3946641644,
+        "seed": 1842222754,
+        "started": true,
+        "status": "active",
+        "tick": 2419,
+        "tickMs": 5,
+        "timeSec": 12.095
+      },
+      "eventsSha256": "6f50651f3ec40363a4b488ba9b3f713bc4f1c1d4d0d952d7f55b0f0bca275cea",
+      "viewport": {
+        "dpr": 1,
+        "height": 720,
+        "width": 1280
+      },
+      "canvas": {
+        "height": 590,
+        "width": 840,
+        "x": 17,
+        "y": 103.5
+      },
+      "view": "source",
+      "zoom": "2",
+      "flags": {
+        "art": true,
+        "geometry": false,
+        "showParts": true,
+        "diagnosticBall": false,
+        "followBall": true
+      }
+    },
+    {
+      "file": "10-receiver02-seed1842222754-t2420.jpg",
+      "sha256": "b9cddf1b7e780045c29bbcd3983d33786444e66e1a37a3f513a2c91c6e621f9e",
+      "metadataFile": "10-receiver02-seed1842222754-t2420.json",
+      "metadataSha256": "4b2eacc1e6ca8c2355f88103a28a62d07cae8edb2f297c1b1f8549cb3d640776",
+      "exactPausedTick": true,
+      "state": {
+        "ball": {
+          "pos": {
+            "x": 33122.5911977,
+            "y": 34898.8573211
+          },
+          "vel": {
+            "x": 593.3527495,
+            "y": 791.8864548
+          }
+        },
+        "done": false,
+        "dropId": "board01-start",
+        "finished": false,
+        "nearMissBucketIds": [],
+        "rngU32": 3946641644,
+        "seed": 1842222754,
+        "started": true,
+        "status": "active",
+        "tick": 2420,
+        "tickMs": 5,
+        "timeSec": 12.1
+      },
+      "eventsSha256": "6f50651f3ec40363a4b488ba9b3f713bc4f1c1d4d0d952d7f55b0f0bca275cea",
+      "viewport": {
+        "dpr": 1,
+        "height": 720,
+        "width": 1280
+      },
+      "canvas": {
+        "height": 590,
+        "width": 840,
+        "x": 17,
+        "y": 103.5
+      },
+      "view": "source",
+      "zoom": "2",
+      "flags": {
+        "art": true,
+        "geometry": false,
+        "showParts": true,
+        "diagnosticBall": false,
+        "followBall": true
+      }
+    },
+    {
+      "file": "10-receiver02-seed1842222754-t2421.jpg",
+      "sha256": "8b56e2563cf3686b894072af7701a81b5126aeeddd708af2205e738414d1f7a8",
+      "metadataFile": "10-receiver02-seed1842222754-t2421.json",
+      "metadataSha256": "dea4d57af13640f9b8f649d1ef3e4b5e4cf07e3b6d8befa9083d89019c340474",
+      "exactPausedTick": true,
+      "state": {
+        "ball": {
+          "pos": {
+            "x": 33125.5579614,
+            "y": 34902.8412534
+          },
+          "vel": {
+            "x": 593.3527495,
+            "y": 796.7864548
+          }
+        },
+        "done": true,
+        "dropId": "board01-start",
+        "finished": true,
+        "nearMissBucketIds": [],
+        "result": {
+          "bucketId": "receiver-02",
+          "kind": "IN_BUCKET"
+        },
+        "rngU32": 3946641644,
+        "seed": 1842222754,
+        "started": true,
+        "status": "finished",
+        "tick": 2421,
+        "tickMs": 5,
+        "timeSec": 12.105
+      },
+      "eventsSha256": "45478002999ac2c500e94aa4554daf1535d58ea3025bbbfb8cfa338131856320",
+      "viewport": {
+        "dpr": 1,
+        "height": 720,
+        "width": 1280
+      },
+      "canvas": {
+        "height": 590,
+        "width": 840,
+        "x": 17,
+        "y": 103.5
+      },
+      "view": "source",
+      "zoom": "2",
+      "flags": {
+        "art": true,
+        "geometry": false,
+        "showParts": true,
+        "diagnosticBall": false,
+        "followBall": true
+      }
+    },
+    {
+      "file": "11-receiver02-t2421-detail.jpg",
+      "sha256": "8b56e2563cf3686b894072af7701a81b5126aeeddd708af2205e738414d1f7a8",
+      "metadataFile": "11-receiver02-t2421-detail.json",
+      "metadataSha256": "dea4d57af13640f9b8f649d1ef3e4b5e4cf07e3b6d8befa9083d89019c340474",
+      "exactPausedTick": true,
+      "state": {
+        "ball": {
+          "pos": {
+            "x": 33125.5579614,
+            "y": 34902.8412534
+          },
+          "vel": {
+            "x": 593.3527495,
+            "y": 796.7864548
+          }
+        },
+        "done": true,
+        "dropId": "board01-start",
+        "finished": true,
+        "nearMissBucketIds": [],
+        "result": {
+          "bucketId": "receiver-02",
+          "kind": "IN_BUCKET"
+        },
+        "rngU32": 3946641644,
+        "seed": 1842222754,
+        "started": true,
+        "status": "finished",
+        "tick": 2421,
+        "tickMs": 5,
+        "timeSec": 12.105
+      },
+      "eventsSha256": "45478002999ac2c500e94aa4554daf1535d58ea3025bbbfb8cfa338131856320",
+      "viewport": {
+        "dpr": 1,
+        "height": 720,
+        "width": 1280
+      },
+      "canvas": {
+        "height": 590,
+        "width": 840,
+        "x": 17,
+        "y": 103.5
+      },
+      "view": "source",
+      "zoom": "2",
+      "flags": {
+        "art": true,
+        "geometry": false,
+        "showParts": true,
+        "diagnosticBall": false,
+        "followBall": true
+      }
+    },
+    {
+      "file": "12-border-side-seed2964851399-t470.jpg",
+      "sha256": "fe69be1b778553d622ed952de39329986c668d17dcf121c470796bd3d4979d2f",
+      "metadataFile": "12-border-side-seed2964851399-t470.json",
+      "metadataSha256": "d6aa3f0325978764bd0b51928d35d765546b04e967f6830fbafb63b4fea36dee",
+      "exactPausedTick": true,
+      "state": {
+        "ball": {
+          "pos": {
+            "x": 32870.9725028,
+            "y": 33525.3805841
+          },
+          "vel": {
+            "x": -553.6596992,
+            "y": -354.7662537
+          }
+        },
+        "done": false,
+        "dropId": "board01-start",
+        "finished": false,
+        "nearMissBucketIds": [],
+        "rngU32": 4082361941,
+        "seed": 2964851399,
+        "started": true,
+        "status": "active",
+        "tick": 470,
+        "tickMs": 5,
+        "timeSec": 2.35
+      },
+      "eventsSha256": "274c7a8ea3691d8c2d7c6286d749833e03dbc5ecf9405aca9c6f1d1227ffa5a0",
+      "viewport": {
+        "dpr": 1,
+        "height": 720,
+        "width": 1280
+      },
+      "canvas": {
+        "height": 590,
+        "width": 840,
+        "x": 17,
+        "y": 103.5
+      },
+      "view": "source",
+      "zoom": "2",
+      "flags": {
+        "art": true,
+        "geometry": false,
+        "showParts": true,
+        "diagnosticBall": false,
+        "followBall": true
+      }
+    },
+    {
+      "file": "12-border-side-seed2964851399-t471.jpg",
+      "sha256": "4c635f74653fd8cd352dd59ef09a94c27df9a1016eb13b2ee1320979f595d87e",
+      "metadataFile": "12-border-side-seed2964851399-t471.json",
+      "metadataSha256": "04e78547c61188f7e2a660d440f7ebd1ecaf0852c8a0493812a3ebd52e8dfb04",
+      "exactPausedTick": true,
+      "state": {
+        "ball": {
+          "pos": {
+            "x": 32868.2042043,
+            "y": 33523.6312528
+          },
+          "vel": {
+            "x": -553.6596992,
+            "y": -349.8662537
+          }
+        },
+        "done": false,
+        "dropId": "board01-start",
+        "finished": false,
+        "nearMissBucketIds": [],
+        "rngU32": 4082361941,
+        "seed": 2964851399,
+        "started": true,
+        "status": "active",
+        "tick": 471,
+        "tickMs": 5,
+        "timeSec": 2.355
+      },
+      "eventsSha256": "274c7a8ea3691d8c2d7c6286d749833e03dbc5ecf9405aca9c6f1d1227ffa5a0",
+      "viewport": {
+        "dpr": 1,
+        "height": 720,
+        "width": 1280
+      },
+      "canvas": {
+        "height": 590,
+        "width": 840,
+        "x": 17,
+        "y": 103.5
+      },
+      "view": "source",
+      "zoom": "2",
+      "flags": {
+        "art": true,
+        "geometry": false,
+        "showParts": true,
+        "diagnosticBall": false,
+        "followBall": true
+      }
+    },
+    {
+      "file": "12-border-side-seed2964851399-t472.jpg",
+      "sha256": "c4d9ee2681729611e68e9bf415d9ba323982251b84b0f06c1f2bf980a57303b2",
+      "metadataFile": "12-border-side-seed2964851399-t472.json",
+      "metadataSha256": "b5e2ca9811dcd34a67c1172a4c66da027adde9e5cb0c89cfcc9dade37f990c49",
+      "exactPausedTick": true,
+      "state": {
+        "ball": {
+          "pos": {
+            "x": 32866.5185923,
+            "y": 33522.0827068
+          },
+          "vel": {
+            "x": 516.8484005,
+            "y": -184.8355753
+          }
+        },
+        "done": false,
+        "dropId": "board01-start",
+        "finished": false,
+        "nearMissBucketIds": [],
+        "rngU32": 370262863,
+        "seed": 2964851399,
+        "started": true,
+        "status": "active",
+        "tick": 472,
+        "tickMs": 5,
+        "timeSec": 2.36
+      },
+      "eventsSha256": "9e5e837d44c03796f4366700da23160f890b53952932d244cb1d2e90d6c1aa7c",
+      "viewport": {
+        "dpr": 1,
+        "height": 720,
+        "width": 1280
+      },
+      "canvas": {
+        "height": 590,
+        "width": 840,
+        "x": 17,
+        "y": 103.5
+      },
+      "view": "source",
+      "zoom": "2",
+      "flags": {
+        "art": true,
+        "geometry": false,
+        "showParts": true,
+        "diagnosticBall": false,
+        "followBall": true
+      }
+    },
+    {
+      "file": "12-border-side-seed2964851399-t543.jpg",
+      "sha256": "8766ecacd1f66f2cff040e34e122eb25766c76fdd0342e2f4a0abcd4337c0085",
+      "metadataFile": "12-border-side-seed2964851399-t543.json",
+      "metadataSha256": "b77329f8f6e83699de29fff74fec28f5b3b055681e77a0a185454b2e6e74949d",
+      "exactPausedTick": true,
+      "state": {
+        "ball": {
+          "pos": {
+            "x": 33049.9997743,
+            "y": 33519.0880759
+          },
+          "vel": {
+            "x": 516.8484005,
+            "y": 163.0644247
+          }
+        },
+        "done": false,
+        "dropId": "board01-start",
+        "finished": false,
+        "nearMissBucketIds": [],
+        "rngU32": 370262863,
+        "seed": 2964851399,
+        "started": true,
+        "status": "active",
+        "tick": 543,
+        "tickMs": 5,
+        "timeSec": 2.715
+      },
+      "eventsSha256": "9e5e837d44c03796f4366700da23160f890b53952932d244cb1d2e90d6c1aa7c",
+      "viewport": {
+        "dpr": 1,
+        "height": 720,
+        "width": 1280
+      },
+      "canvas": {
+        "height": 590,
+        "width": 840,
+        "x": 17,
+        "y": 103.5
+      },
+      "view": "source",
+      "zoom": "2",
+      "flags": {
+        "art": true,
+        "geometry": false,
+        "showParts": true,
+        "diagnosticBall": false,
+        "followBall": true
+      }
+    },
+    {
+      "file": "12-border-side-seed2964851399-t544.jpg",
+      "sha256": "4ba63cfbdf6935b4f2a2c36acd2f242e00de187a59f47953ca670522d51e93fc",
+      "metadataFile": "12-border-side-seed2964851399-t544.json",
+      "metadataSha256": "55260697adbe28a07e442fee0213351ecaff72c9336c878c0297e9e5a693807d",
+      "exactPausedTick": true,
+      "state": {
+        "ball": {
+          "pos": {
+            "x": 33052.5840163,
+            "y": 33519.927898
+          },
+          "vel": {
+            "x": 516.8484005,
+            "y": 167.9644247
+          }
+        },
+        "done": false,
+        "dropId": "board01-start",
+        "finished": false,
+        "nearMissBucketIds": [],
+        "rngU32": 370262863,
+        "seed": 2964851399,
+        "started": true,
+        "status": "active",
+        "tick": 544,
+        "tickMs": 5,
+        "timeSec": 2.72
+      },
+      "eventsSha256": "9e5e837d44c03796f4366700da23160f890b53952932d244cb1d2e90d6c1aa7c",
+      "viewport": {
+        "dpr": 1,
+        "height": 720,
+        "width": 1280
+      },
+      "canvas": {
+        "height": 590,
+        "width": 840,
+        "x": 17,
+        "y": 103.5
+      },
+      "view": "source",
+      "zoom": "2",
+      "flags": {
+        "art": true,
+        "geometry": false,
+        "showParts": true,
+        "diagnosticBall": false,
+        "followBall": true
+      }
+    },
+    {
+      "file": "12-border-side-seed2964851399-t545.jpg",
+      "sha256": "efc8856d86e2548726e364b636d84790ee26c77d07da88601beee33b7f9daa34",
+      "metadataFile": "12-border-side-seed2964851399-t545.json",
+      "metadataSha256": "ba260fb9aeb36c911ada33d5d345c29787c2d40a1c18c306926ab775502e3479",
+      "exactPausedTick": true,
+      "state": {
+        "ball": {
+          "pos": {
+            "x": 33053.5757499,
+            "y": 33520.923571
+          },
+          "vel": {
+            "x": -378.9275213,
+            "y": 259.3565201
+          }
+        },
+        "done": false,
+        "dropId": "board01-start",
+        "finished": false,
+        "nearMissBucketIds": [],
+        "rngU32": 226655321,
+        "seed": 2964851399,
+        "started": true,
+        "status": "active",
+        "tick": 545,
+        "tickMs": 5,
+        "timeSec": 2.725
+      },
+      "eventsSha256": "d0b1997ce96400b1bf8e73f545c51e2b5a16e9e4b99bd925c5f8cdccfcf7cdd2",
+      "viewport": {
+        "dpr": 1,
+        "height": 720,
+        "width": 1280
+      },
+      "canvas": {
+        "height": 590,
+        "width": 840,
+        "x": 17,
+        "y": 103.5
+      },
+      "view": "source",
+      "zoom": "2",
+      "flags": {
+        "art": true,
+        "geometry": false,
+        "showParts": true,
+        "diagnosticBall": false,
+        "followBall": true
+      }
+    },
+    {
+      "file": "13-side-t545-detail.jpg",
+      "sha256": "efc8856d86e2548726e364b636d84790ee26c77d07da88601beee33b7f9daa34",
+      "metadataFile": "13-side-t545-detail.json",
+      "metadataSha256": "ba260fb9aeb36c911ada33d5d345c29787c2d40a1c18c306926ab775502e3479",
+      "exactPausedTick": true,
+      "state": {
+        "ball": {
+          "pos": {
+            "x": 33053.5757499,
+            "y": 33520.923571
+          },
+          "vel": {
+            "x": -378.9275213,
+            "y": 259.3565201
+          }
+        },
+        "done": false,
+        "dropId": "board01-start",
+        "finished": false,
+        "nearMissBucketIds": [],
+        "rngU32": 226655321,
+        "seed": 2964851399,
+        "started": true,
+        "status": "active",
+        "tick": 545,
+        "tickMs": 5,
+        "timeSec": 2.725
+      },
+      "eventsSha256": "d0b1997ce96400b1bf8e73f545c51e2b5a16e9e4b99bd925c5f8cdccfcf7cdd2",
+      "viewport": {
+        "dpr": 1,
+        "height": 720,
+        "width": 1280
+      },
+      "canvas": {
+        "height": 590,
+        "width": 840,
+        "x": 17,
+        "y": 103.5
+      },
+      "view": "source",
+      "zoom": "2",
+      "flags": {
+        "art": true,
+        "geometry": false,
+        "showParts": true,
+        "diagnosticBall": false,
+        "followBall": true
+      }
+    },
+    {
+      "file": "14-play-live-sample.jpg",
+      "sha256": "f9b9f1abbbdf3d39d44c6af0c10e3719a4c76b38b7a8525cceaaef5550f34f11",
+      "metadataFile": "14-play-live-sample.json",
+      "metadataSha256": "d523d56fa9c4a3d31d0abaf60250a721ea26e44a1d32943265281b5dd190f2d8",
+      "exactPausedTick": false,
+      "state": {
+        "ball": {
+          "pos": {
+            "x": 33012.6900012,
+            "y": 33542.5557008
+          },
+          "vel": {
+            "x": 223.5099411,
+            "y": -282.6887205
+          }
+        },
+        "done": false,
+        "dropId": "board01-start",
+        "finished": false,
+        "nearMissBucketIds": [],
+        "rngU32": 1234975731,
+        "seed": 2964851399,
+        "started": true,
+        "status": "active",
+        "tick": 605,
+        "tickMs": 5,
+        "timeSec": 3.025
+      },
+      "eventsSha256": "40de2d5e05b82c4fe06ef12da72edbe24565a61f42df44513b323a65af077b51",
+      "viewport": {
+        "dpr": 1,
+        "height": 720,
+        "width": 1280
+      },
+      "canvas": {
+        "height": 590,
+        "width": 840,
+        "x": 17,
+        "y": 103.5
+      },
+      "view": "source",
+      "zoom": "2",
+      "flags": {
+        "art": true,
+        "geometry": false,
+        "showParts": true,
+        "diagnosticBall": false,
+        "followBall": true
+      }
+    },
+    {
+      "file": "15-play-paused.jpg",
+      "sha256": "c6c1a70e4b05c7235f03b3ecb329ce88671dff11c208fbb41f023b0479b9c5e3",
+      "metadataFile": "15-play-paused.json",
+      "metadataSha256": "cf2401900e3fcdb45960161e7a7bf336403836f72326d6519c29ddf0d0b653ad",
+      "exactPausedTick": true,
+      "state": {
+        "ball": {
+          "pos": {
+            "x": 33045.0989425,
+            "y": 33512.2233364
+          },
+          "vel": {
+            "x": 223.5099411,
+            "y": -140.5887205
+          }
+        },
+        "done": false,
+        "dropId": "board01-start",
+        "finished": false,
+        "nearMissBucketIds": [],
+        "rngU32": 1234975731,
+        "seed": 2964851399,
+        "started": true,
+        "status": "active",
+        "tick": 634,
+        "tickMs": 5,
+        "timeSec": 3.17
+      },
+      "eventsSha256": "40de2d5e05b82c4fe06ef12da72edbe24565a61f42df44513b323a65af077b51",
+      "viewport": {
+        "dpr": 1,
+        "height": 720,
+        "width": 1280
+      },
+      "canvas": {
+        "height": 590,
+        "width": 840,
+        "x": 17,
+        "y": 103.5
+      },
+      "view": "source",
+      "zoom": "2",
+      "flags": {
+        "art": true,
+        "geometry": false,
+        "showParts": true,
+        "diagnosticBall": false,
+        "followBall": true
+      }
+    },
+    {
+      "file": "16-resume-live-sample.jpg",
+      "sha256": "37434d98542dcd057a4e3e93ba350632a1cb92ed17941afd6c5991c1752e47ca",
+      "metadataFile": "16-resume-live-sample.json",
+      "metadataSha256": "1d720a29ba19bb8e8be185834e29a967adf459db3bffd71be56a824258fc18fe",
+      "exactPausedTick": false,
+      "state": {
+        "ball": {
+          "pos": {
+            "x": 33024.099104,
+            "y": 33494.8389767
+          },
+          "vel": {
+            "x": -119.1107617,
+            "y": 75.3832514
+          }
+        },
+        "done": false,
+        "dropId": "board01-start",
+        "finished": false,
+        "nearMissBucketIds": [],
+        "rngU32": 4146532509,
+        "seed": 2964851399,
+        "started": true,
+        "status": "active",
+        "tick": 694,
+        "tickMs": 5,
+        "timeSec": 3.47
+      },
+      "eventsSha256": "d41e268d677c939e63a10ba4d47338d3878367381c1d55bc916b3187b544805d",
+      "viewport": {
+        "dpr": 1,
+        "height": 720,
+        "width": 1280
+      },
+      "canvas": {
+        "height": 590,
+        "width": 840,
+        "x": 17,
+        "y": 103.5
+      },
+      "view": "source",
+      "zoom": "2",
+      "flags": {
+        "art": true,
+        "geometry": false,
+        "showParts": true,
+        "diagnosticBall": false,
+        "followBall": true
+      }
+    },
+    {
+      "file": "17-resume-paused.jpg",
+      "sha256": "0c34858428a8828ff0852a3f72b68199456ecd181372055ee355d8e94e8273f2",
+      "metadataFile": "17-resume-paused.json",
+      "metadataSha256": "4cb4f45a69c44a2ae4fd3a4f6d86fc8dc28a0e9aa31ed9e314b2e14433107f06",
+      "exactPausedTick": true,
+      "state": {
+        "ball": {
+          "pos": {
+            "x": 33008.6147052,
+            "y": 33513.2383005
+          },
+          "vel": {
+            "x": -119.1107617,
+            "y": 202.7832514
+          }
+        },
+        "done": false,
+        "dropId": "board01-start",
+        "finished": false,
+        "nearMissBucketIds": [],
+        "rngU32": 4146532509,
+        "seed": 2964851399,
+        "started": true,
+        "status": "active",
+        "tick": 720,
+        "tickMs": 5,
+        "timeSec": 3.6
+      },
+      "eventsSha256": "d41e268d677c939e63a10ba4d47338d3878367381c1d55bc916b3187b544805d",
+      "viewport": {
+        "dpr": 1,
+        "height": 720,
+        "width": 1280
+      },
+      "canvas": {
+        "height": 590,
+        "width": 840,
+        "x": 17,
+        "y": 103.5
+      },
+      "view": "source",
+      "zoom": "2",
+      "flags": {
+        "art": true,
+        "geometry": false,
+        "showParts": true,
+        "diagnosticBall": false,
+        "followBall": true
+      }
+    },
+    {
+      "file": "18-LOST-seed2964851399-t1323-normal.jpg",
+      "sha256": "7a213e2d4805d2c2fc908fb43c938b02ce8c4e604b45f90431813a9ee858e105",
+      "metadataFile": "18-LOST-seed2964851399-t1323-normal.json",
+      "metadataSha256": "d067c6aea22bfb3ab2cb45fbc5dc45338c2880a3429c9665d73020af74da93be",
+      "exactPausedTick": true,
+      "state": {
+        "ball": {
+          "pos": {
+            "x": 33677.7269946,
+            "y": 35373.2786713
+          },
+          "vel": {
+            "x": 551.5115774,
+            "y": 1774.7334134
+          }
+        },
+        "done": true,
+        "dropId": "board01-start",
+        "finished": true,
+        "nearMissBucketIds": [],
+        "result": {
+          "finalX": 33677.7269946,
+          "kind": "LOST",
+          "nearMissBucketIds": []
+        },
+        "rngU32": 1409817083,
+        "seed": 2964851399,
+        "started": true,
+        "status": "finished",
+        "tick": 1323,
+        "tickMs": 5,
+        "timeSec": 6.615
+      },
+      "eventsSha256": "de6de63c3d1f6b083062d2c5d4ebcaab148bbf16a1765b67d587fc8ab1f2f69e",
+      "viewport": {
+        "dpr": 1,
+        "height": 720,
+        "width": 1280
+      },
+      "canvas": {
+        "height": 590,
+        "width": 840,
+        "x": 17,
+        "y": 103.5
+      },
+      "view": "source",
+      "zoom": "1",
+      "flags": {
+        "art": true,
+        "geometry": false,
+        "showParts": true,
+        "diagnosticBall": false,
+        "followBall": false
+      }
+    },
+    {
+      "file": "19-receiver04-seed4-t2086.jpg",
+      "sha256": "acae139976b9df723ca3c805bbbca96c586a23d89d5d58de54b9ebb81b4e6a2a",
+      "metadataFile": "19-receiver04-seed4-t2086.json",
+      "metadataSha256": "25ad20e4bb2ceaab0982a061b9a32e081341ecda8995b972a2dcfd0220cfc40f",
+      "exactPausedTick": true,
+      "state": {
+        "ball": {
+          "pos": {
+            "x": 33617.0579888,
+            "y": 34852.008001
+          },
+          "vel": {
+            "x": 275.8141875,
+            "y": 984.1050776
+          }
+        },
+        "done": false,
+        "dropId": "board01-start",
+        "finished": false,
+        "nearMissBucketIds": [],
+        "rngU32": 1716849652,
+        "seed": 4,
+        "started": true,
+        "status": "active",
+        "tick": 2086,
+        "tickMs": 5,
+        "timeSec": 10.43
+      },
+      "eventsSha256": "07e28b0f25bb4ab4bf8fc6294eaccc5c6740c38932d48c7ede2bf864dca800fb",
+      "viewport": {
+        "dpr": 1,
+        "height": 720,
+        "width": 1280
+      },
+      "canvas": {
+        "height": 590,
+        "width": 840,
+        "x": 17,
+        "y": 103.5
+      },
+      "view": "source",
+      "zoom": "2",
+      "flags": {
+        "art": true,
+        "geometry": false,
+        "showParts": true,
+        "diagnosticBall": false,
+        "followBall": true
+      }
+    },
+    {
+      "file": "19-receiver04-seed4-t2087.jpg",
+      "sha256": "304eddaa358054831a0ccffacdc3ffedba310dab86c9cbcd1135b27f57e09fc2",
+      "metadataFile": "19-receiver04-seed4-t2087.json",
+      "metadataSha256": "0092bdebbdcdd4900ee9bc0f29f71e801ef265a9094e970ad922a90ba3831b42",
+      "exactPausedTick": true,
+      "state": {
+        "ball": {
+          "pos": {
+            "x": 33618.4370597,
+            "y": 34856.9530264
+          },
+          "vel": {
+            "x": 275.8141875,
+            "y": 989.0050776
+          }
+        },
+        "done": false,
+        "dropId": "board01-start",
+        "finished": false,
+        "nearMissBucketIds": [],
+        "rngU32": 1716849652,
+        "seed": 4,
+        "started": true,
+        "status": "active",
+        "tick": 2087,
+        "tickMs": 5,
+        "timeSec": 10.435
+      },
+      "eventsSha256": "07e28b0f25bb4ab4bf8fc6294eaccc5c6740c38932d48c7ede2bf864dca800fb",
+      "viewport": {
+        "dpr": 1,
+        "height": 720,
+        "width": 1280
+      },
+      "canvas": {
+        "height": 590,
+        "width": 840,
+        "x": 17,
+        "y": 103.5
+      },
+      "view": "source",
+      "zoom": "2",
+      "flags": {
+        "art": true,
+        "geometry": false,
+        "showParts": true,
+        "diagnosticBall": false,
+        "followBall": true
+      }
+    },
+    {
+      "file": "19-receiver04-seed4-t2088.jpg",
+      "sha256": "cfd09de57ed2ab2a4d0d9564a9b963c5684ce1648832622efc24c9779f306171",
+      "metadataFile": "19-receiver04-seed4-t2088.json",
+      "metadataSha256": "4eed724c8ddf0db730f3a79c1911bcd745df5cae05bff309219fb73f9bb9912e",
+      "exactPausedTick": true,
+      "state": {
+        "ball": {
+          "pos": {
+            "x": 33619.8161306,
+            "y": 34861.9225518
+          },
+          "vel": {
+            "x": 275.8141875,
+            "y": 993.9050776
+          }
+        },
+        "done": true,
+        "dropId": "board01-start",
+        "finished": true,
+        "nearMissBucketIds": [],
+        "result": {
+          "bucketId": "receiver-04",
+          "kind": "IN_BUCKET"
+        },
+        "rngU32": 1716849652,
+        "seed": 4,
+        "started": true,
+        "status": "finished",
+        "tick": 2088,
+        "tickMs": 5,
+        "timeSec": 10.44
+      },
+      "eventsSha256": "f0a8e152a8bdc880227f753a67cf0a241228970ea5cd2f3457ea874b2ffe7c56",
+      "viewport": {
+        "dpr": 1,
+        "height": 720,
+        "width": 1280
+      },
+      "canvas": {
+        "height": 590,
+        "width": 840,
+        "x": 17,
+        "y": 103.5
+      },
+      "view": "source",
+      "zoom": "2",
+      "flags": {
+        "art": true,
+        "geometry": false,
+        "showParts": true,
+        "diagnosticBall": false,
+        "followBall": true
+      }
+    },
+    {
+      "file": "20-receiver04-t2088-detail.jpg",
+      "sha256": "cfd09de57ed2ab2a4d0d9564a9b963c5684ce1648832622efc24c9779f306171",
+      "metadataFile": "20-receiver04-t2088-detail.json",
+      "metadataSha256": "4eed724c8ddf0db730f3a79c1911bcd745df5cae05bff309219fb73f9bb9912e",
+      "exactPausedTick": true,
+      "state": {
+        "ball": {
+          "pos": {
+            "x": 33619.8161306,
+            "y": 34861.9225518
+          },
+          "vel": {
+            "x": 275.8141875,
+            "y": 993.9050776
+          }
+        },
+        "done": true,
+        "dropId": "board01-start",
+        "finished": true,
+        "nearMissBucketIds": [],
+        "result": {
+          "bucketId": "receiver-04",
+          "kind": "IN_BUCKET"
+        },
+        "rngU32": 1716849652,
+        "seed": 4,
+        "started": true,
+        "status": "finished",
+        "tick": 2088,
+        "tickMs": 5,
+        "timeSec": 10.44
+      },
+      "eventsSha256": "f0a8e152a8bdc880227f753a67cf0a241228970ea5cd2f3457ea874b2ffe7c56",
+      "viewport": {
+        "dpr": 1,
+        "height": 720,
+        "width": 1280
+      },
+      "canvas": {
+        "height": 590,
+        "width": 840,
+        "x": 17,
+        "y": 103.5
+      },
+      "view": "source",
+      "zoom": "2",
+      "flags": {
+        "art": true,
+        "geometry": false,
+        "showParts": true,
+        "diagnosticBall": false,
+        "followBall": true
+      }
+    },
+    {
+      "file": "21-receiver04-after-plus1.jpg",
+      "sha256": "cfd09de57ed2ab2a4d0d9564a9b963c5684ce1648832622efc24c9779f306171",
+      "metadataFile": "21-receiver04-after-plus1.json",
+      "metadataSha256": "4eed724c8ddf0db730f3a79c1911bcd745df5cae05bff309219fb73f9bb9912e",
+      "exactPausedTick": true,
+      "state": {
+        "ball": {
+          "pos": {
+            "x": 33619.8161306,
+            "y": 34861.9225518
+          },
+          "vel": {
+            "x": 275.8141875,
+            "y": 993.9050776
+          }
+        },
+        "done": true,
+        "dropId": "board01-start",
+        "finished": true,
+        "nearMissBucketIds": [],
+        "result": {
+          "bucketId": "receiver-04",
+          "kind": "IN_BUCKET"
+        },
+        "rngU32": 1716849652,
+        "seed": 4,
+        "started": true,
+        "status": "finished",
+        "tick": 2088,
+        "tickMs": 5,
+        "timeSec": 10.44
+      },
+      "eventsSha256": "f0a8e152a8bdc880227f753a67cf0a241228970ea5cd2f3457ea874b2ffe7c56",
+      "viewport": {
+        "dpr": 1,
+        "height": 720,
+        "width": 1280
+      },
+      "canvas": {
+        "height": 590,
+        "width": 840,
+        "x": 17,
+        "y": 103.5
+      },
+      "view": "source",
+      "zoom": "2",
+      "flags": {
+        "art": true,
+        "geometry": false,
+        "showParts": true,
+        "diagnosticBall": false,
+        "followBall": true
+      }
+    }
+  ],
+  "baselineComparison": {
+    "baselineRole": "own observed02 state/events, unchanged dependencies; not03 art verdict",
+    "matched": [
+      {
+        "file": "01-shadow-seed1842222754-t590-normal.json",
+        "seed": 1842222754,
+        "tick": 590
+      },
+      {
+        "file": "02-normal-seed1842222754-t605.json",
+        "seed": 1842222754,
+        "tick": 605
+      },
+      {
+        "file": "02-normal-seed1842222754-t615.json",
+        "seed": 1842222754,
+        "tick": 615
+      },
+      {
+        "file": "02-normal-seed1842222754-t616.json",
+        "seed": 1842222754,
+        "tick": 616
+      },
+      {
+        "file": "02-normal-seed1842222754-t617.json",
+        "seed": 1842222754,
+        "tick": 617
+      },
+      {
+        "file": "03-shadow-t590-parts-off-normal.json",
+        "seed": 1842222754,
+        "tick": 590
+      },
+      {
+        "file": "04-shadow-t590-parts-off-detail.json",
+        "seed": 1842222754,
+        "tick": 590
+      },
+      {
+        "file": "05-regression-seed1842222754-t430.json",
+        "seed": 1842222754,
+        "tick": 430
+      },
+      {
+        "file": "05-regression-seed1842222754-t441.json",
+        "seed": 1842222754,
+        "tick": 441
+      },
+      {
+        "file": "05-regression-seed1842222754-t442.json",
+        "seed": 1842222754,
+        "tick": 442
+      },
+      {
+        "file": "05-regression-seed1842222754-t590.json",
+        "seed": 1842222754,
+        "tick": 590
+      },
+      {
+        "file": "05-regression-seed1842222754-t605.json",
+        "seed": 1842222754,
+        "tick": 605
+      },
+      {
+        "file": "05-regression-seed1842222754-t610.json",
+        "seed": 1842222754,
+        "tick": 610
+      },
+      {
+        "file": "05-regression-seed1842222754-t615.json",
+        "seed": 1842222754,
+        "tick": 615
+      },
+      {
+        "file": "05-regression-seed1842222754-t616.json",
+        "seed": 1842222754,
+        "tick": 616
+      },
+      {
+        "file": "05-regression-seed1842222754-t617.json",
+        "seed": 1842222754,
+        "tick": 617
+      },
+      {
+        "file": "06-frog-t442-detail.json",
+        "seed": 1842222754,
+        "tick": 442
+      },
+      {
+        "file": "07-platform-seed1842222754-t2370.json",
+        "seed": 1842222754,
+        "tick": 2370
+      },
+      {
+        "file": "07-platform-seed1842222754-t2380.json",
+        "seed": 1842222754,
+        "tick": 2380
+      },
+      {
+        "file": "07-platform-seed1842222754-t2390.json",
+        "seed": 1842222754,
+        "tick": 2390
+      },
+      {
+        "file": "08-platform-t2390-detail.json",
+        "seed": 1842222754,
+        "tick": 2390
+      },
+      {
+        "file": "09-platform-t2390-art-off.json",
+        "seed": 1842222754,
+        "tick": 2390
+      },
+      {
+        "file": "10-receiver02-seed1842222754-t2419.json",
+        "seed": 1842222754,
+        "tick": 2419
+      },
+      {
+        "file": "10-receiver02-seed1842222754-t2420.json",
+        "seed": 1842222754,
+        "tick": 2420
+      },
+      {
+        "file": "10-receiver02-seed1842222754-t2421.json",
+        "seed": 1842222754,
+        "tick": 2421
+      },
+      {
+        "file": "11-receiver02-t2421-detail.json",
+        "seed": 1842222754,
+        "tick": 2421
+      },
+      {
+        "file": "12-border-side-seed2964851399-t470.json",
+        "seed": 2964851399,
+        "tick": 470
+      },
+      {
+        "file": "12-border-side-seed2964851399-t471.json",
+        "seed": 2964851399,
+        "tick": 471
+      },
+      {
+        "file": "12-border-side-seed2964851399-t472.json",
+        "seed": 2964851399,
+        "tick": 472
+      },
+      {
+        "file": "12-border-side-seed2964851399-t543.json",
+        "seed": 2964851399,
+        "tick": 543
+      },
+      {
+        "file": "12-border-side-seed2964851399-t544.json",
+        "seed": 2964851399,
+        "tick": 544
+      },
+      {
+        "file": "12-border-side-seed2964851399-t545.json",
+        "seed": 2964851399,
+        "tick": 545
+      },
+      {
+        "file": "13-side-t545-detail.json",
+        "seed": 2964851399,
+        "tick": 545
+      },
+      {
+        "file": "18-LOST-seed2964851399-t1323-normal.json",
+        "seed": 2964851399,
+        "tick": 1323
+      },
+      {
+        "file": "19-receiver04-seed4-t2086.json",
+        "seed": 4,
+        "tick": 2086
+      },
+      {
+        "file": "19-receiver04-seed4-t2087.json",
+        "seed": 4,
+        "tick": 2087
+      },
+      {
+        "file": "19-receiver04-seed4-t2088.json",
+        "seed": 4,
+        "tick": 2088
+      },
+      {
+        "file": "20-receiver04-t2088-detail.json",
+        "seed": 4,
+        "tick": 2088
+      },
+      {
+        "file": "21-receiver04-after-plus1.json",
+        "seed": 4,
+        "tick": 2088
+      }
+    ],
+    "notAvailableInOwn02Snapshots": [
+      {
+        "file": "02-normal-seed1842222754-t570.json",
+        "seed": 1842222754,
+        "tick": 570
+      },
+      {
+        "file": "15-play-paused.json",
+        "seed": 2964851399,
+        "tick": 634
+      },
+      {
+        "file": "17-resume-paused.json",
+        "seed": 2964851399,
+        "tick": 720
+      }
+    ]
+  },
+  "normalBeforeAfterSources": {
+    "cropScreenXyxy": [
+      150,
+      112,
+      724,
+      686
+    ],
+    "pixelScale": 1,
+    "sources": [
+      {
+        "file": "E:\\R4D\\perspective\\p4-runtime\\visual-qa\\frozen02-qa-01\\30-ball-shadow-seed1842222754-t590-normal.jpg",
+        "sha256": "bbbe222a6630c4f8bcc42cfa5425585ea819e7de7eb81b645a3a865d131d9b60"
+      },
+      {
+        "file": "E:\\R4D\\perspective\\p4-runtime\\visual-qa\\frozen03-qa-01\\01-shadow-seed1842222754-t590-normal.jpg",
+        "sha256": "a0d762bf591ae17c617cb9b32a357e77d89a412c8d6d80ea3862912395a43549"
+      }
+    ]
+  },
+  "errors": [],
+  "committedEvidence": [
+    {
+      "file": "01-shadow-seed1842222754-t590-normal.jpg",
+      "sha256": "a0d762bf591ae17c617cb9b32a357e77d89a412c8d6d80ea3862912395a43549"
+    },
+    {
+      "file": "normal-board574-before-after.jpg",
+      "sha256": "de38ccbc18316c3a876b0da09707908c26fa5a8f43e5002245541eac90d6d45d"
+    },
+    {
+      "file": "03-shadow-t590-parts-off-normal.jpg",
+      "sha256": "cb29cc123fea79b66a1bb67cdd72bbc7b0b05e1287c894b13a9f46cbaf850dca"
+    },
+    {
+      "file": "motion-shadow-regression.jpg",
+      "sha256": "9d38f48522bb196c25493f662e755581f08253178871caa7f421e134b2e8cfbb"
+    },
+    {
+      "file": "boundary-receiver-regression.jpg",
+      "sha256": "236b9255091377c29dfa1977278a40ee3b368d1c434cb30eabdffa93781d5ba5"
+    }
+  ],
+  "verdict": {
+    "VQA-01": "PASS_CLOSED",
+    "visualDeltaRegression": "PASS",
+    "fullOrderArtPass": false,
+    "coverageLimits": [
+      "receiver01 entry",
+      "receiver03 entry",
+      "partial front-rim at capture"
+    ]
+  }
+}
