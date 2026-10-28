@@ -74,12 +74,37 @@ Artist turn `01a182ef-8b92-7ee2-ba08-f72e74c60a17` завершён. Пакет 
 
 Lead просмотрел реальные full Pixi кадры `01-loaded-at-drop.png`, `16-ordinary03-receiver02-captured-t2421.png` и `24-final-wood-partial-t605.png` в `evidence/full-v02-selfcheck/` runtime Builder. Partial ball/wood и шар в отверстии корзины видны. Это самопроверка/evidence, не независимый Art/QA PASS. Отдельное погружение в глубину корзины сцена не изображает; Builder сохраняет этот предел и общий input отдельно. Named immutable freeze ещё ожидается; байты рабочей версии не назначаются QA заранее.
 
+Первый full freeze `p4-full-v02-candidate-01` создан локально от `fd0ca34b1301df34d270acb315649cbd5a963d39`, artifact SHA256 `0a4650342b8f3e93a235f7aebd4f084e52b0bd08f29f81fd34db6b354b1a2417`, frozen=true, 127 payload files. Lead сверил manifest/hash/source pins. Проверка fixture после freeze обнаружила UI-дефект повторного импорта того же JSON: input не вызывал onchange, состояние после +1 не возвращалось605. Candidate-01 сохранена неизменной; QA её НЕ получали. Builder исправляет file input и готовит новую активную candidate-02. Lead направил только узкое уточнение provenance evidence: старые кадры/records с прежним app.js SHA не переименовываются в новые; native ordinary runs/checkpoints можно использовать как вход, ключевой кадр и same-file reimport проверяются уже на финальных bytes02. Remote hold сохраняется. TQA/VQA повторно проверены: completed prep, новых QA turns нет.
+
+При подготовке02 capture helper по ошибке записал семь свежих raw кадров в прежний внешний каталог v1. Immutable01 не затронута: все127 files проверены. Коллизия и происхождение отражены в `capture-path-collision.json`. Lead ограничил лишнюю проверочную обвязку:16 records не являются дополнительным требованием заказа; достаточный свежий минимальный selfcheck и собственная независимая QA текущей02. Исторические renderer-records не переименованы в новые; old ordinary/native data остаются входами для воспроизведения.
+
+## Текущий единственный QA target
+
+Builder full turn `01a1831a-1560-70d2-bc62-da63ecb34362` завершён. **Активна только `p4-full-v02-candidate-02`.** Local source commit `b2db9e947ebf2213e725a66f1e778f9137b14d5f`, checkout clean. Immutable root в runtime Builder: `candidates/p4-full-v02-candidate-02/`. Artifact SHA256 `c7815edc846749478e56e76d072233ae5a6fcd0ee86d2c14f9936379bff9b757`, frozen=true, builderDirty=false,100 payload files. Lead отдельно сверил SHA и source/art pins; Artist по-прежнему b2c03397 / manifest20935037…02c5543. Native/core/config/projection не менялись. Новый Builder commit не отправлялся по явному hold.
+
+Preview при handoff: `http://127.0.0.1:4394/`, owner PID18176/session31861; Builder проверил identity02 после import fixture. `RUN.md` внутри freeze и `evidence/full-v02-final-check-02/handoff.json` в runtime Builder дают запуск/доказательства. Повторный import605→606→тот жеJSON→605 проверен уже на frozen02. Оставшееся на момент Builder handoff: другие3receiver entry и фактическое скачивание export, capture02 не изображает отдельное погружение в глубину. QA/Art PASS ещё отсутствует.
+
+Перед отправкой снова проверены обе QA: только завершённые prep turns, новых задач нет. Lead выполнил по одной успешной отправке TQA и VQA с **одним и тем же candidate02/artifact SHA**. Новые реальные turns и первые completed действия:
+
+| Роль | QA turn | Первые наблюдения |
+|---|---|---|
+| TQA | `01a18358-5c1d-7c32-aeda-29fcd142e397` | Локальные100 files и HTTP bytes совпали с manifest;64 textures без console errors; export фактически скачан кнопкой, содержимое/import проверяются. |
+| VQA | `01a18358-6176-7c93-974e-0ff8ecf04741` | Identity100 files/HTTP подтверждена; обычный assembled frame и parts-off осмотрены, бывшие25pins/корзины на plate не видны; проверяются края и динамические occlusions. |
+
+Обе роли ещё `inProgress`, выводов PASS/FAIL нет. Они читают immutable02, не правят продукт и дают отдельные отчёты/evidence. Candidate01 — только история; её не назначали QA. После замечаний любые изменения продукта создают новую явную версию, не подменяют эти bytes.
+
+## Публикационная подготовка
+
+Исходная Release prep `1fcc9b80a2d018a5f7efc6776d1a00ac18e365bc` была read-only; кроме нового token/QA/frozen bytes ей недоставало текущего способа публикации, физических target/catalog paths и catalog-link mapping. Эти operator inputs не угадываются и не добываются из sensitive configs/allowlists/credentials.
+
+После появления реального immutable02 Lead проверил Release completed/idle и выдал одно конкретное read-only/local продолжение: прочесть manifest/file-layout02, подготовить короткий новый write-intent DRAFT для logical `/review/r4d/p4-extracted-objects/` и точечного изменения public catalog, точно назвать missing operator fields. Полный преждевременный baseline/packaging не назначен; свежие snapshot/rollback непосредственно перед будущими approved writes. Новый turn Release `01a1835b-3b11-7193-aa26-cb2e15f92c99`, `inProgress`, первая completed command `exec-d86c2d17-7136-46f8-9813-c40812b2c5b4`. Предыдущий403 `/review/r4d/` не повторять/обходить; другие продукты не читать. Server writes/token отсутствуют, Builder remote hold не обходится.
+
 Свежие ресурсы Lead 15:12:54 UTC: free RAM 18.653/31.907 GiB, CPU 2%/24logical; C15.462/D16.309/E16.401 GiB. Каждая роль повторяет снимок перед своим тяжёлым действием. Ресурсы не являются текущим блокером. Прежняя недоставка d063 в remote остаётся отдельным фактом; не разрешены смена actor/branch/transport/credentials для обхода и ложная отметка push.
 
 Уточнение CTO по новому прямому поручению Max: до завершения его read-only диагностики d063 и отдельного проверенного решения действует явный HOLD на remote writes Builder. Запрещены повторный git push/--dry-run/force, другой actor/remote/session/branch, PR/cherry-pick workaround, изменения доступа/settings/security/credentials. d063 не переписывать. Локальная full-v02 интеграция, отдельные новые local commits/artifact/evidence и независимые QA этим hold не остановлены. Lead передал одно узкое дополнение в текущий Builder turn, receipt `isError=false`, без повторного задания реализации или ACK.
 
 Read-only факты CTO15:21UTC: remote по ls-remote и branch API остаётся `ecb0419d7ac59fd840e3d422688363027477a16e`; d063 меняет 11 текстовых файлов45,626bytes/max9875, без generated PNG. protected=false; effective branch rules и repo rulesets HTTP200[], combined statuses remote ecb пусты. Причина generic remote failed пока неизвестна: ни transient, ни policy-denial этими фактами не доказаны. Lead не повторяет/не переносит запись Builder другим actor и ждёт отдельного решения для этой операции.
 
-Следующий содержательный шаг: проверить actual full Pixi loading и получить named exact freeze одного полного candidate для обеих независимых QA, затем осмысленные исправления и только после отдельного token публикация. Отдельно остаётся недоставленный Builder commit. Пользоваться штатными wait cursors, не дублировать dispatch.
+Следующий содержательный шаг: собрать два независимых QA вывода по candidate02 и минимальный Release intent; свести существенные замечания по владельцам и выполнить доступные полезные исправления при необходимости, новой явной версией. Публикация — только после предоставления актуальных operator inputs, QA conclusions и отдельного нового single token CTO; Builder remote write hold остаётся отдельной незакрытой зависимостью. Пользоваться штатными wait cursors, не дублировать dispatch.
 
 Оценка CTO: 90–120 active minutes до первого стыка; bounded проход 6–10 active hours с QA и полезными исправлениями. Новые рабочие turns начались 28.10.2026 около 13:30 UTC. Оценка не обещает художественный PASS и не является автоматическим cutoff.
