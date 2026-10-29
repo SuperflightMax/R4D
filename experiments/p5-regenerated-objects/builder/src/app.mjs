@@ -193,7 +193,9 @@ const footprintFits = sprites.filter(item => item.spec.targetId !== '$source' &&
     depthDeltaSourcePx: item.texture.footprintPx.depth * scale - target.sourcePx.footprintDepth };
 });
 el('coverage').textContent = `${pinBodies.size}/25 препятствий · ${receiverBodies.size}/4 приёмников · ${manifest?.status ?? 'ранний floor без комплекта'}`;
-el('notice').textContent = preview.warnings.join(' ') + (!manifest ? ' Шарик пока показан диагностическим контуром.' : ` ${25 - pinBodies.size} препятствие(й) и ${4 - receiverBodies.size} приёмник(а) ещё без арта; физическая геометрия сохранена.`);
+el('notice').textContent = preview.warnings.join(' ') + (!manifest ? ' Шарик пока показан диагностическим контуром.'
+  : pinBodies.size === 25 && receiverBodies.size === 4 ? ' Полный набор подключён. Проверка качества продолжается.'
+  : ` Без арта: ${25 - pinBodies.size}/25 препятствий и ${4 - receiverBodies.size}/4 приёмников; физическая геометрия сохранена.`);
 const clippedForegroundParts = (manifest?.instances ?? []).filter(i => i.sourceClipPx).map(i => ({ instanceId: i.id, parentId: i.parentId, textureId: i.textureId, role: i.role, ...i.sourceClipPx }));
 el('diagnostics').textContent = JSON.stringify({ pins, earlyFloor: preview.earlyFloor, nativeCounts: inputs.counts, footprintFits, clippedForegroundParts,
   fieldFraming: { domainSourcePx: fieldDomain, importantPartsSourcePx: fieldImportantParts, rule: 'Actual geometry plus receiver/foreground alpha>=16 visible bounds; fixed across Art/Geometry toggles' },

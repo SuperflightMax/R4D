@@ -55,6 +55,7 @@ if (manifestFlag >= 0) {
   const stagedBytes = Buffer.from(JSON.stringify(manifest, null, 2) + '\n');
   writeFileSync(resolve(site, 'assets/manifest.json'), stagedBytes);
   preview.artistManifest = { commit: handoffPin.commit ?? null, path: handoffPin.path ?? null, sourceSha256: sha(sourceBytes), sourceBytes: sourceBytes.length, stagedSha256: sha(stagedBytes), stagedBytes: stagedBytes.length,
+    supporting: handoffPin.supporting ?? [],
     transformation: 'Exact final texture bytes; file URLs normalized; full provenance kept outside web root with per-texture digest' };
   preview.manifestUrl = 'assets/manifest.json';
   preview.warnings = manifest.status === 'partial' ? ['Неполный ранний набор Artist; качество ещё проверяется.'] : [];

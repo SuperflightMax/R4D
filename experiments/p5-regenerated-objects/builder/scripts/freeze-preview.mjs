@@ -14,9 +14,13 @@ const preview = JSON.parse(readFileSync(resolve(sourceRoot, 'data/preview-input.
 const dependencyLock = JSON.parse(readFileSync(resolve(sourceRoot, 'data/dependency-lock.json')));
 const files = ['index.html', 'style.css', 'app.js', 'THIRD_PARTY_LICENSES.txt',
   ...['config.json', 'p1-manifest.json', 'input-verification.json', 'targets.json', 'preview-input.json', 'dependency-pins.json', 'dependency-lock.json'].map(p => 'data/' + p)];
+let assetCoverage = null;
+let artistLimitations = [];
 if (preview.manifestUrl) {
   files.push(preview.manifestUrl);
   const manifest = JSON.parse(readFileSync(resolve(sourceRoot, preview.manifestUrl)));
+  assetCoverage = manifest.coverage ?? null;
+  artistLimitations = manifest.limitations ?? manifest.limits ?? [];
   for (const texture of manifest.textures) files.push('assets/' + texture.file);
 } else if (preview.earlyFloor) files.push(preview.earlyFloor.file);
 const inventory = [];
@@ -33,9 +37,10 @@ const index = { schema: 'r4d.p5.preview-index/1', id, createdUtc: new Date().toI
   status: preview.manifestUrl ? 'early generated candidate; independent QA not yet performed' : 'floor-only compatibility preview; not promised generated mini-set',
   inputPins: JSON.parse(readFileSync(resolve(sourceRoot, 'data/input-verification.json'))),
   artistManifest: preview.artistManifest ?? null, earlyFloor: preview.earlyFloor,
+  coverage: assetCoverage,
   inventory, inventoryBytes: inventory.reduce((sum, f) => sum + f.bytes, 0),
   knownLimits: ['No independent technical/artistic QA of these bytes yet', 'Private staging and raw native TS/maps excluded by explicit file list; release privacy approval pending',
-    ...dependencyLock.packages.filter(p => !p.buildToolOnly && !p.licenseFiles.length).map(p => `${p.name}@${p.version}: no packaged license text; resolve before release`)],
+    ...dependencyLock.packages.filter(p => !p.buildToolOnly && !p.licenseFiles.length).map(p => `${p.name}@${p.version}: no packaged license text; resolve before release`), ...artistLimitations],
   serverWrites: 0, releaseGate: 'closed' };
 const bytes = Buffer.from(JSON.stringify(index, null, 2) + '\n');
 writeFileSync(resolve(base, 'index.json'), bytes);
