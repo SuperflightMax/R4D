@@ -1,0 +1,59 @@
+{
+  "schema": "r4d.p6.visual-qa.whole-image-v01.registration.v1",
+  "turnId": "01a187b1-e92e-78a0-9d18-573f0a4673ed",
+  "nativeEditCall": "exec-70009f94-ad4b-47e6-a8e6-ce7e37eea12e",
+  "firstAttempt": "whole-board-v01; retained first whole-image edit, no later candidate included",
+  "draftCommit": "bdf470e5beb468266184cc2ea0c997191d9907b3",
+  "draftSha256": "bc13aa13e2b33b0e58cd0e87b90e684c3c4adbb3576d8d9b0379e3dee1bec532",
+  "acceptedP1": "4b47db04c7140ebf88f69b91faa0b790d46f22ec",
+  "rawSource": "E:\\R4D\\perspective\\p6-worktrees\\asset-artist\\experiments\\p6-geometry-first-art\\asset-artist\\raw\\whole-board-v01.png",
+  "rawSha256": "204e30e5b8d296afc916def97936c90c42b3524d68650e390297c8b18dd9b81e",
+  "registrationSource": "E:\\R4D\\perspective\\p6-worktrees\\builder\\experiments\\p6-geometry-first-art\\builder\\draft-v01\\registration.png",
+  "registrationSha256": "426bec72faf21fe6ba654dca988ed1d74241b1372246d78741419b19a3d5cf4a",
+  "transform": {
+    "rawSize": [
+      1254,
+      1254
+    ],
+    "outputSize": [
+      1536,
+      1536
+    ],
+    "scaleXY": [
+      1.2248803827751196,
+      1.2248803827751196
+    ],
+    "translation": [
+      0,
+      0
+    ],
+    "crop": false,
+    "fitHomography": false,
+    "localWarp": false,
+    "interpolation": "System.Drawing HighQualityBicubic"
+  },
+  "overlay": "exact frozen registration, source-over, DrawImageUnscaled at 0,0 after uniform normalization",
+  "outputs": [
+    {
+      "path": "E:\\R4D\\perspective\\p6-runtime\\visual-qa\\whole-image-v01\\whole-board-v01.raw.png",
+      "bytes": 3277881,
+      "sha256": "204e30e5b8d296afc916def97936c90c42b3524d68650e390297c8b18dd9b81e"
+    },
+    {
+      "path": "E:\\R4D\\perspective\\p6-runtime\\visual-qa\\whole-image-v01\\registration.frozen.png",
+      "bytes": 84015,
+      "sha256": "426bec72faf21fe6ba654dca988ed1d74241b1372246d78741419b19a3d5cf4a"
+    },
+    {
+      "path": "E:\\R4D\\perspective\\p6-runtime\\visual-qa\\whole-image-v01\\whole-board-v01.full-frame-1536.png",
+      "bytes": 7554470,
+      "sha256": "05bd12e60ae368c1d7b4a71e9ee6e2d0d76ed55b4bde000198158a8ab6a99e24"
+    },
+    {
+      "path": "E:\\R4D\\perspective\\p6-runtime\\visual-qa\\whole-image-v01\\whole-board-v01.registered-overlay.png",
+      "bytes": 7467763,
+      "sha256": "0a76c36baa2881df71118ccfd8aebe3d954581376a96f2a7117871cebb772390"
+    }
+  ],
+  "scope": "Static visual registration only; no art correction, motion QA or artistic PASS. Raw unchanged."
+}
