@@ -31,17 +31,28 @@ W-EARLY-POP retest — первый раздел полного Water VQA, за�
 early4eb и firstfull17dc. Ball/shadow metadata и6из7region records совпали;
 arch07 lintel cropheight111→110. Artist адресно возобновлён read-only:
 turn `01a18757-8481-7040-a9ba-3a6ba269076b`, без edits текущих payload.
-Он установил unionalpha3arch07 masks отличается в466source pixels из-за
-масштабирования/отсечения при full authoring; formal provenance report готовит.
+Полный [PROVENANCE_COMPARE.md](../asset-artist/PROVENANCE_COMPARE.md), commit
+`731bad21509b9a8f7022a4df4a2961ced8b49275`, прочитан и интегрирован Lead.
+Unionalpha3arch07 masks отличается в466source pixels из-за порядка
+масштабирования/отсечения при full authoring; остальные4early masks идентичны.
+Cropheight111→110 не объясняет отличие: source-aligned alpha реально отличается.
 От17dc→5c9 PNG точные, ровно24depth меняются — это отдельный факт.
 Нельзя объявлять ВЕСЬ early4eb→current5c9 переход только depth-коррекцией.
 
 Для изолированного A/B Builder после fresh idle адресно вызван на ОДИН
 дополнительный временный read-only loopback preview существующего original
-full-method-03 (SOURCEc73/ART17dc/manifestb3c697…). Rebuild/изменение bytes
-не поручены.6868current/6869Dark QA не переключать. Новый freeownedURL/PID
-ещё ожидаются; VQA сделает лишь несколько baseline comparative frames,
-не второй полный QA старой версии. Уточнение отправлено VQA до Water начала.
+full-method-03 (SOURCEc73/ART17dc/manifestb3c697…). Handoff
+`d4a99ac1586fbc0c026c6d6150a91f153003a68b` полностью прочитан и интегрирован.
+Actual URL `http://127.0.0.1:6870/review/r4d/p3-masks-water/`, owner Builder
+PID17380/session14523.97payload/3470168bytes, manifest16695bytes, всего98files/
+3486863bytes; все97local+HTTP/hash/MIME совпали. Builder независимо подтвердил
+73PNG, app/run-model/view-math/native/P1/JPG/Pixi byte-equal между обеими FULL.
+Rebuild/изменения bytes не было;6868current/6869Dark не переключались.
+Actual baseline URL и binding уже адресно отправлены VQA: только несколько
+comparative frames, не второй полный QA old. После A/B VQA явно освобождает
+чтение6870; только Builder после fresh ownership proof остановит этот PID.
+Fresh Builder11:18:09Z RAMfree16.645/31.907GiB CPU0% C17.035/D16.275/E11.763;
+extra owned idle Node<0.1GiB RAM. Старые previews остаются на своих bytes.
 Текущие проверки нового stablecandidate и Dark эта provenance задача не блокирует.
 
 Операционное уточнение CTO: P5 writewindow/token явно закрыт
