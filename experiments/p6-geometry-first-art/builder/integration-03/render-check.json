@@ -1,0 +1,178 @@
+{
+  "schema": "r4d.p6.actual-one-wood-frames.v1",
+  "instanceId": "wood-01",
+  "seed": 0,
+  "nativeHitEvent": {
+    "type": "object_hit",
+    "tick": 571,
+    "timeSec": 2.855,
+    "ballId": "board01-ball",
+    "objectKind": "pin",
+    "objectId": "wood-01",
+    "x": 33080.299421824726,
+    "y": 33473.535144046735
+  },
+  "woodRegistration": {
+    "commit": "f493bbf8d5ec92b429767e2bd9afd8de766c13e0",
+    "packet": "experiments/p6-geometry-first-art/asset-artist/components-v01/WOOD_PACKET_V01.json",
+    "packetSha256": "89849181ae119ae4703909b0f526d1d1a68588e6215a3ac8ae6c6dcecef616c6",
+    "masterSha256": "802f339d693d4dfc175a1e0f9013c78a6e9062bd6532a3db228bd98cd307e161",
+    "canvas": [
+      1254,
+      1254
+    ],
+    "instanceId": "wood-01",
+    "selection": {
+      "seed": 0,
+      "hitEventTick": 571,
+      "beforeStateTick": 571,
+      "contactStateTick": 572,
+      "afterStateTick": 573
+    },
+    "sourceGroundAnchor": [
+      625,
+      1032
+    ],
+    "sourceBaseEllipse": {
+      "centerPx": [
+        625,
+        1032
+      ],
+      "radiusXPx": 255,
+      "radiusYPx": 138,
+      "derivation": "Approximate fit to actual alpha>=128 lower wood contact rim, separate from upper ropes/trim silhouette. Centre-column bottom1170, near-edge x375 y1058 and x875 y1062; fit requires assembled overlay confirmation."
+    },
+    "sourceVisibleHeightAboveGroundPx": 949,
+    "actualUniformScale": 0.11764705882352741,
+    "projectedPinCenter": [
+      628.6379171404694,
+      478.2464227639511
+    ],
+    "projectedHorizontalRadius": 29.99999999999949,
+    "scaledBaseEllipseRadii": [
+      29.99999999999949,
+      16.235294117646784
+    ],
+    "actualProjectedCircleBounds": [
+      598.6363249617405,
+      463.6238911457956,
+      658.6379171404689,
+      492.9999999999992
+    ],
+    "maxSampledEllipseMismatchPx": 1.7325015273889661,
+    "visibleHeightAboveGroundPx": 111.64705882352752,
+    "draftHeightAboveGroundPx": 70.20546249831035,
+    "registration": "source anchor625/1032 at P(actual config center); uniform scale horizontal projected radius/255; no bbox or bottom1170 anchoring",
+    "shadowPolicy": {
+      "kind": "baked",
+      "layerId": "diagnostic-floor-without-wood-01-body",
+      "source": "single unchanged own draft ground shadow; no added or master-baked shadow"
+    },
+    "limitations": [
+      "Base ellipse is an artist fit to actual pixels, not a regenerated collider or proved exact match.",
+      "Relative visual height is higher than the illustrative draft; evaluate one real placed instance before multiplying all8.",
+      "Upper ropes and trim may overhang the physical base; full alpha width does not define native radius.",
+      "No flat-floor image, receiver parts or finished scene occlusion mask are included in this first packet."
+    ]
+  },
+  "physicsAndConfigChanged": false,
+  "extraShadowAdded": false,
+  "frames": [
+    {
+      "tick": 571,
+      "overlay": false,
+      "file": "frames/seed0-state571-ordinary.jpg",
+      "sha256": "e1628201971312b01eea0e49a2409232fd0b7c77f4ab8a064899f9979841b2a1",
+      "nativeSnapshotMatches": true,
+      "actualGroundAnchorMatches": true,
+      "onlyOneWoodInstance": true,
+      "woodAboveBall": true,
+      "inspectionCropSourcePx": [
+        555,
+        345,
+        725,
+        525
+      ]
+    },
+    {
+      "tick": 572,
+      "overlay": false,
+      "file": "frames/seed0-state572-ordinary.jpg",
+      "sha256": "4871f1bdc1cf7c7cdaa5ccde5675dc3e73b258b3d5b1d9403e479fba084aec85",
+      "nativeSnapshotMatches": true,
+      "actualGroundAnchorMatches": true,
+      "onlyOneWoodInstance": true,
+      "woodAboveBall": true,
+      "inspectionCropSourcePx": [
+        555,
+        345,
+        725,
+        525
+      ]
+    },
+    {
+      "tick": 573,
+      "overlay": false,
+      "file": "frames/seed0-state573-ordinary.jpg",
+      "sha256": "37824321dcabdbb938f7960abbb8e39e9bb4ccb6ed14f7fefa1f27dae2ac289e",
+      "nativeSnapshotMatches": true,
+      "actualGroundAnchorMatches": true,
+      "onlyOneWoodInstance": true,
+      "woodAboveBall": true,
+      "inspectionCropSourcePx": [
+        555,
+        345,
+        725,
+        525
+      ]
+    },
+    {
+      "tick": 571,
+      "overlay": true,
+      "file": "frames/seed0-state571-overlay.jpg",
+      "sha256": "95dd0e9d4cfca29a05b84ece7e387b0a5fd627409e71726ee73d83c19a8a4086",
+      "nativeSnapshotMatches": true,
+      "actualGroundAnchorMatches": true,
+      "onlyOneWoodInstance": true,
+      "woodAboveBall": true,
+      "inspectionCropSourcePx": [
+        555,
+        345,
+        725,
+        525
+      ]
+    },
+    {
+      "tick": 572,
+      "overlay": true,
+      "file": "frames/seed0-state572-overlay.jpg",
+      "sha256": "7eb7a9160e79cda65a0e295eac884c8924f7f53c3b3f5cebb8f8db48ead7c5ca",
+      "nativeSnapshotMatches": true,
+      "actualGroundAnchorMatches": true,
+      "onlyOneWoodInstance": true,
+      "woodAboveBall": true,
+      "inspectionCropSourcePx": [
+        555,
+        345,
+        725,
+        525
+      ]
+    },
+    {
+      "tick": 573,
+      "overlay": true,
+      "file": "frames/seed0-state573-overlay.jpg",
+      "sha256": "c4a3966c959ea32998864495b9a04c4234623b431fd7ecd7deeecf8d97c797cc",
+      "nativeSnapshotMatches": true,
+      "actualGroundAnchorMatches": true,
+      "onlyOneWoodInstance": true,
+      "woodAboveBall": true,
+      "inspectionCropSourcePx": [
+        555,
+        345,
+        725,
+        525
+      ]
+    }
+  ]
+}

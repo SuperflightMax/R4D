@@ -4,8 +4,9 @@ import path from 'node:path';
 import { site,runtime } from './paths.mjs';
 const types={'.html':'text/html; charset=utf-8','.css':'text/css; charset=utf-8','.mjs':'text/javascript; charset=utf-8','.json':'application/json','.png':'image/png','.jpg':'image/jpeg','.webp':'image/webp'};
 const baseline=process.argv.includes('--baseline');
-const servingSite=baseline?path.join(runtime,'candidates','baseline-b1bb84d','site'):site;
-const port=baseline?41766:41767;
+const integration02=process.argv.includes('--integration02');
+const servingSite=baseline?path.join(runtime,'candidates','baseline-b1bb84d','site'):integration02?path.join(runtime,'candidates','integration-02','site'):site;
+const port=baseline?41766:integration02?41767:41768;
 const server=http.createServer((req,res)=>{
   const url=new URL(req.url,'http://127.0.0.1');const relative=decodeURIComponent(url.pathname).replace(/^\/+/, '')||'index.html';
   const target=path.resolve(servingSite,relative);

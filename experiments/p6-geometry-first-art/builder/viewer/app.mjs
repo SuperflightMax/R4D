@@ -121,6 +121,7 @@ function draw(){
     nativeCenter:[p.x,p.y],projectedNativeCenter:map([p.x,p.y]),
     ball:ballSprite?{center:[ballSprite.x,ballSprite.y],scale:[ballSprite.scale.x,ballSprite.scale.y],anchor:[ballSprite.anchor.x,ballSprite.anchor.y],textureCanvas:[ballSprite.texture.width,ballSprite.texture.height],visualLiftPx:artist.ball.visualLiftPx,visibleRadius:uniformRadius([p.x,p.y],config.board.ball.r),opacity:ballSprite.alpha}:null,
     shadow:shadowSprite?{textureCanvas:[shadowSprite.texture.width,shadowSprite.texture.height],meshScale:[shadowSprite.scale.x,shadowSprite.scale.y],opacity:shadowSprite.alpha,firstGroundVertexSource:[shadowSprite.geometry.positions[0],shadowSprite.geometry.positions[1]],radiusNative:artist.ball.shadow.radiusNative,offsetNative:artist.ball.shadow.offsetNative}:null,
+    objectLayers:artistLayers.map(({layer,sp})=>({id:layer.id,objectId:layer.objectId,nativeBase:layer.nativeBase,nativeRadius:layer.nativeRadius,rect:layer.rect,actualPosition:[sp.x,sp.y],actualDimensions:[sp.width,sp.height],aboveBall:sp.parent===bodiesAbove,visible:sp.visible})),
   },null,2);
   const outcome=st.done?JSON.stringify(st.result):run.paused?'пауза':'движение';
   $('status').textContent=`Seed ${run.seed}\nТик ${st.tick} · ${(st.tick*.005).toFixed(3)} с\n${outcome}\nx ${p.x.toFixed(7)}\ny ${p.y.toFixed(7)}\nPRNG ${st.rngU32}`;
@@ -144,15 +145,15 @@ $('contact').onclick=guard(()=>{run.paused=true;const before=run.events.filter(e
 $('save').onclick=()=>{const blob=new Blob([JSON.stringify(run.exportReplay(),null,2)],{type:'application/json'}),url=URL.createObjectURL(blob),a=document.createElement('a');a.href=url;a.download=`p6-seed-${run.seed}-tick-${run.session.state.tick}.json`;a.click();setTimeout(()=>URL.revokeObjectURL(url),1000);};
 $('load').onchange=guard(async()=>{const file=$('load').files[0];if(file)run.importReplay(JSON.parse(await file.text()));frameAccumulator=0;});
 if(meta.artCandidate){artist=await fetch('artist.json').then(r=>r.json());}
-$('candidate').textContent=artist?.stage==='sphere-shadow-only'?`${artist.id} · sphere/shadow · геометрический фон`:artist?`${artist.id} · визуальная проверка ожидается`:'Геометрический черновик v01 · арт ещё не подключён';
-$('mode').textContent=artist?.stage==='sphere-shadow-only'?'Sphere/shadow v01: visualLiftPx=0. Слои перекрытий препятствий ещё не подключены.':artist?'Художественный кандидат':'Техническая сборка: круг — диагностический контур шарика';
+$('candidate').textContent=artist?.stage==='one-wood-sphere-shadow'?`${artist.id} · только wood-01`:artist?.stage==='sphere-shadow-only'?`${artist.id} · sphere/shadow · геометрический фон`:artist?`${artist.id} · визуальная проверка ожидается`:'Геометрический черновик v01 · арт ещё не подключён';
+$('mode').textContent=artist?.stage==='one-wood-sphere-shadow'?'Один actual wood-01 + sphere/shadow. Остальные24 объекта — черновик; перекрытия и ellipse проверяются.':artist?.stage==='sphere-shadow-only'?'Sphere/shadow v01: visualLiftPx=0. Слои перекрытий препятствий ещё не подключены.':artist?'Художественный кандидат':'Техническая сборка: круг — диагностический контур шарика';
 $('pins').textContent=JSON.stringify(meta,null,2);
 await rebuildArt();fitScene();
 const frameParams=new URLSearchParams(location.search);
 if(frameParams.get('frame')==='1'){
   document.body.classList.add('frame');
   run.reset(Number(frameParams.get('seed')??0));run.seek(Number(frameParams.get('tick')??0));
-  $('geometry').checked=false;$('art').checked=true;
+  $('geometry').checked=frameParams.get('geometry')==='1';$('art').checked=true;
 }
 draw();
 app.ticker.add(ticker=>{

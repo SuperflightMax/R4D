@@ -2,12 +2,20 @@
 import hashlib
 import json
 import math
+import argparse
+import sys
 from pathlib import Path
 from PIL import Image, ImageDraw, ImageFilter, ImageFont
 
 ROOT = Path(__file__).resolve().parents[1]
 OUT = ROOT / 'draft-v01'
+parser=argparse.ArgumentParser()
+parser.add_argument('--omit-body')
+parser.add_argument('--output')
+args=parser.parse_args()
+if args.omit_body and not args.output:parser.error('An omitted-body variant requires its own output')
 data = json.loads((OUT / 'geometry.json').read_text())
+if args.omit_body and args.omit_body not in [o['id'] for o in data['objects']]:parser.error('Unknown accepted object ID')
 SIZE = 1536
 S = 2
 def pts(poly): return [(round(x*S), round(y*S)) for x,y in poly]
@@ -44,6 +52,7 @@ for seg in data['segments']:
 
 palette={'flower':('#9b766b','#e2b2a2'),'leaf':('#5f8a87','#abd6c4'),'frog':('#6f8860','#bdd19a'),'wood':('#94754f','#cfb785')}
 for obj in sorted(data['objects'],key=lambda o:(o['native']['y'],o['native']['x'],o['id'])):
+    if obj['id']==args.omit_body:continue
     side,top=palette[obj['family']]
     base,cap=obj['base'],obj['top']
     polygon(d,base,'#647263','#435a4c',2)
@@ -66,6 +75,14 @@ for start in data['starts']:
     d.line(pts([(cx-20,cy),(cx+20,cy)]),fill='#334e48',width=6*S)
 
 draft=im.convert('RGB').resize((SIZE,SIZE),Image.Resampling.LANCZOS)
+if args.output:
+    target=Path(args.output).resolve()
+    allowed=Path(r'E:\R4D\perspective\p6-runtime\builder\candidates\integration-03').resolve()
+    if allowed not in target.parents:raise ValueError('Variant output must stay in own integration-03 runtime')
+    target.parent.mkdir(parents=True,exist_ok=True)
+    draft.save(target,optimize=False)
+    print(json.dumps({'file':str(target),'sha256':hashlib.sha256(target.read_bytes()).hexdigest(),'omittedBody':args.omit_body,'retainedShadow':'original single baked draft shadow'}))
+    sys.exit(0)
 draft.save(OUT/'geometry-draft.png',optimize=False)
 registration=Image.new('RGBA',(SIZE,SIZE));rd=ImageDraw.Draw(registration)
 font=ImageFont.truetype(r'C:\Windows\Fonts\arial.ttf',16)

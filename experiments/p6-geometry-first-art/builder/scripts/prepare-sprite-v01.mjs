@@ -3,7 +3,7 @@ import fs from 'node:fs';
 import path from 'node:path';
 import crypto from 'node:crypto';
 import { execFileSync } from 'node:child_process';
-import { root,runtime } from './paths.mjs';
+import { root,runtime,site,candidateName } from './paths.mjs';
 
 const commit='1adf57cfde5a20855c02a846baa045936e4d5a6d';
 const prefix='experiments/p6-geometry-first-art/asset-artist/';
@@ -16,7 +16,7 @@ const sha=b=>crypto.createHash('sha256').update(b).digest('hex');
 
 export function prepareSpriteV01(){
   const checkout=path.resolve(root,'../../..');
-  const dir=path.join(runtime,'candidates','integration-02','assets-input');
+  const dir=path.join(site,'..','assets-input');
   fs.mkdirSync(dir,{recursive:true});
   const sourceFiles=[];
   for(const [file,expected] of Object.entries(pins)){
@@ -47,7 +47,7 @@ export function prepareSpriteV01(){
   fs.writeFileSync(path.join(dir,'geometry-draft.png'),draft);
   const b=packet.ball,s=packet.shadow;
   const adapter={
-    schema:'r4d.p6.artist-adapter.v1',id:'p6-integration-02-sprite-v01',stage:'sphere-shadow-only',
+    schema:'r4d.p6.artist-adapter.v1',id:`p6-${candidateName}-sprite-v01`,stage:'sphere-shadow-only',
     status:'actual sphere/shadow over frozen geometry draft; board occlusion layers absent',
     p1Commit:packet.acceptedP1,configSha256:packet.configSha256,manifestSha256:packet.manifestSha256,
     width:1536,height:1536,
@@ -66,7 +66,7 @@ export function prepareSpriteV01(){
   };
   const text=JSON.stringify(adapter,null,2)+'\n';
   const artistPath=path.join(dir,'artist.json');fs.writeFileSync(artistPath,text);
-  const publicDir=path.join(root,'integration-02');fs.mkdirSync(publicDir,{recursive:true});
+  const publicDir=path.join(root,candidateName);fs.mkdirSync(publicDir,{recursive:true});
   fs.writeFileSync(path.join(publicDir,'SPRITE_ADAPTER_V01.json'),text);
   return {artistPath,adapter,adapterSha256:sha(text)};
 }

@@ -4,9 +4,11 @@ import crypto from 'node:crypto';
 import { createRequire } from 'node:module';
 import { root,runtime,site,coreCommit,coreTree } from './paths.mjs';
 import { prepareSpriteV01 } from './prepare-sprite-v01.mjs';
+import { prepareWoodV01 } from './prepare-wood-v01.mjs';
 const require = createRequire(path.join(runtime,'deps/package.json'));
 const esbuild = require('esbuild');
 const sha = b => crypto.createHash('sha256').update(b).digest('hex');
+if(fs.existsSync(path.join(site,'..','freeze-inventory.json')))throw new Error('This candidate output is frozen; use the explicitly assigned next candidate path');
 fs.mkdirSync(path.join(site,'native'),{recursive:true});
 const coreEntry = path.join(runtime,'private',coreCommit,'sim-core/src/index.ts');
 await esbuild.build({entryPoints:[coreEntry],outfile:path.join(site,'native/core.mjs'),bundle:true,format:'esm',platform:'neutral',target:'es2022',sourcemap:false,minify:true,legalComments:'none'});
@@ -21,11 +23,13 @@ const pixiVersion=JSON.parse(fs.readFileSync(path.join(runtime,'deps/node_module
 const meta={schema:'r4d.p6.consumer-build.v1',coreCommit,coreTree,coreSha256:sha(fs.readFileSync(path.join(site,'native/core.mjs'))),configSha256:sha(inputBytes),manifestSha256:sha(manifestBytes),p1Commit:'4b47db04c7140ebf88f69b91faa0b790d46f22ec',pixiVersion,esbuildVersion:esbuild.version,artStatus:'geometry draft only; no artistic PASS',artCandidate:null};
 meta.consumerSha256=sha(fs.readFileSync(path.join(site,'app.mjs')));
 meta.runtimeDependencyLockSha256=sha(fs.readFileSync(path.join(root,'runtime-deps/package-lock.json')));
-meta.consumerSources=Object.fromEntries(['viewer/app.mjs','viewer/controller.mjs','viewer/index.html','viewer/style.css','scripts/build.mjs','scripts/prepare-sprite-v01.mjs','scripts/paths.mjs','inputs/projection.mjs'].map(file=>[file,sha(fs.readFileSync(path.join(root,file)))]));
+meta.consumerSources=Object.fromEntries(['viewer/app.mjs','viewer/controller.mjs','viewer/index.html','viewer/style.css','scripts/build.mjs','scripts/prepare-sprite-v01.mjs','scripts/prepare-wood-v01.mjs','scripts/render-draft.py','scripts/paths.mjs','inputs/projection.mjs'].map(file=>[file,sha(fs.readFileSync(path.join(root,file)))]));
 // Optional artist handoff: copy only a P6-local frozen candidate, no raw native sources.
 const artistArg=process.argv.indexOf('--artist');
-const spriteOnly=process.argv.includes('--sprites-v01');
-const spritePrepared=spriteOnly?prepareSpriteV01():null;
+const oneWood=process.argv.includes('--wood-v01');
+const spriteOnly=process.argv.includes('--sprites-v01')||oneWood;
+const spherePrepared=spriteOnly?prepareSpriteV01():null;
+const spritePrepared=oneWood?prepareWoodV01(spherePrepared):spherePrepared;
 if(artistArg>=0||spriteOnly){
   const artistPath=spriteOnly?spritePrepared.artistPath:path.resolve(process.argv[artistArg+1]);
   const p6Root=path.resolve(root,'..')+path.sep;
@@ -33,7 +37,7 @@ if(artistArg>=0||spriteOnly){
   const artist=JSON.parse(fs.readFileSync(artistPath));
   if(artist.configSha256!==meta.configSha256 || artist.p1Commit!==meta.p1Commit) throw new Error('Artist candidate has different geometry pins');
   if(artist.manifestSha256&&artist.manifestSha256!==meta.manifestSha256)throw new Error('Artist projection manifest differs');
-  if(spriteOnly&&artist.stage!=='sphere-shadow-only')throw new Error('Unexpected sprite adapter stage');
+  if(spriteOnly&&artist.stage!==(oneWood?'one-wood-sphere-shadow':'sphere-shadow-only'))throw new Error('Unexpected sprite adapter stage');
   const dir=path.dirname(artistPath);
   if(artist.width!==1536||artist.height!==1536||!Array.isArray(artist.layers))throw new Error('Artist layers must declare 1536-square registration');
   const cfg=JSON.parse(inputBytes);
@@ -65,8 +69,9 @@ if(artistArg>=0||spriteOnly){
   }
   fs.writeFileSync(path.join(site,'artist.json'),JSON.stringify(artist,null,2)+'\n');
   meta.artCandidate={id:artist.id,stage:artist.stage??'board-layers',manifestSha256:sha(fs.readFileSync(artistPath))};
-  meta.artStatus=spriteOnly?'actual sphere/shadow; frozen geometry draft background; obstacle occlusion absent; visual QA pending':'artist candidate; visual QA pending';
+  meta.artStatus=oneWood?'one actual wood-01 plus actual sphere/shadow; remaining24 diagnostic draft bodies; visual QA pending':spriteOnly?'actual sphere/shadow; frozen geometry draft background; obstacle occlusion absent; visual QA pending':'artist candidate; visual QA pending';
   if(spriteOnly){meta.spriteSource=artist.spriteSource;meta.spriteAdapterSha256=spritePrepared.adapterSha256;}
+  if(oneWood)meta.woodSource=artist.woodSource;
 }else if(fs.existsSync(path.join(site,'artist.json')))fs.unlinkSync(path.join(site,'artist.json'));
 fs.writeFileSync(path.join(site,'build-meta.json'),JSON.stringify(meta,null,2)+'\n');
 console.log(JSON.stringify({site,...meta},null,2));

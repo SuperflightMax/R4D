@@ -1,0 +1,198 @@
+{
+  "schema": "r4d.p6.artist-adapter.v1",
+  "id": "p6-integration-03-one-wood-v01",
+  "stage": "one-wood-sphere-shadow",
+  "status": "one actual wood-01 over deterministic draft variant; only one object body has dynamic occlusion",
+  "p1Commit": "4b47db04c7140ebf88f69b91faa0b790d46f22ec",
+  "configSha256": "dd5c519cd6d4b7295118e0a3a1063efed424a0ce739450bd5153c6a9941982db",
+  "manifestSha256": "7784dc0a215d0e472cf06a4eee03793592727cf0fa9a1fa0e0c78e5f1d17da18",
+  "width": 1536,
+  "height": 1536,
+  "spriteSource": {
+    "commit": "1adf57cfde5a20855c02a846baa045936e4d5a6d",
+    "packet": "experiments/p6-geometry-first-art/asset-artist/SPRITE_PACKET_V01.json",
+    "packetSha256": "d23452ebeaa45725175fbc5d915420df0f2c60f13205eeffd3599622069640cb",
+    "files": [
+      {
+        "file": "SPRITE_PACKET_V01.json",
+        "source": "authorized local P6 bytes; exact CRLF packet hash; Git LF equivalence checked",
+        "bytes": 5521,
+        "sha256": "d23452ebeaa45725175fbc5d915420df0f2c60f13205eeffd3599622069640cb",
+        "gitSha256": "5ef0efec3633755935fa260a13f0e4e218da16e1479b54c4caee7d3b0d32bb6c"
+      },
+      {
+        "file": "raw/ball-v01.png",
+        "source": "exact Git blob",
+        "bytes": 1261875,
+        "sha256": "378cc5abe32dc2086bf87c580c31675d06b91b41bbef81065bc5fe786b88542c",
+        "gitSha256": "378cc5abe32dc2086bf87c580c31675d06b91b41bbef81065bc5fe786b88542c",
+        "canvas": [
+          1254,
+          1254
+        ]
+      },
+      {
+        "file": "raw/ball-shadow-v01.png",
+        "source": "exact Git blob",
+        "bytes": 458704,
+        "sha256": "3a4e58a4d3b9b707e6ec10ffe80e26c561605a4f99d5498c04ae5c684cf5606a",
+        "gitSha256": "3a4e58a4d3b9b707e6ec10ffe80e26c561605a4f99d5498c04ae5c684cf5606a",
+        "canvas": [
+          1774,
+          887
+        ]
+      }
+    ]
+  },
+  "layers": [
+    {
+      "id": "diagnostic-floor-without-wood-01-body",
+      "role": "background",
+      "texture": "draft-without-wood-01-body.png",
+      "fullFrame": true
+    },
+    {
+      "id": "wood-01-body",
+      "objectId": "wood-01",
+      "role": "body",
+      "texture": "raw/wood-master-v01.png",
+      "rect": [
+        555.1085053757648,
+        356.83465805807083,
+        147.52941176470338,
+        147.52941176470338
+      ],
+      "nativeBase": [
+        33101.88779971951,
+        33516.93876987417
+      ],
+      "nativeRadius": 32.47610540354854,
+      "order": 33516.93876987417
+    }
+  ],
+  "ball": {
+    "texture": "raw/ball-v01.png",
+    "canvas": [
+      1254,
+      1254
+    ],
+    "center": [
+      626,
+      636.5
+    ],
+    "visibleRadius": 428,
+    "opacity": 1,
+    "visualLiftPx": 0,
+    "scaleRule": "half distance P(x+r,y) to P(x-r,y); uniform sphere scale; center=P(x,y)",
+    "alphaPolicy": "raw unchanged; no alpha suppression",
+    "shadow": {
+      "texture": "raw/ball-shadow-v01.png",
+      "canvas": [
+        1774,
+        887
+      ],
+      "center": [
+        885.5,
+        442
+      ],
+      "visibleRadii": [
+        312,
+        312
+      ],
+      "radiusNative": [
+        22,
+        22
+      ],
+      "offsetNative": [
+        -6,
+        10
+      ],
+      "opacity": 0.42,
+      "projectionRule": "For each texture pixel (u,v), ground=(ballX-6+(u-885.5)*22/312, ballY+10+(v-442)*22/312); project ground by exact accepted nativeToSource. Render as one alpha ground layer before ball and correct obstacle occluders.",
+      "alphaPolicy": "raw unchanged; no second perspective flatten"
+    }
+  },
+  "hashes": {
+    "raw/ball-v01.png": "378cc5abe32dc2086bf87c580c31675d06b91b41bbef81065bc5fe786b88542c",
+    "raw/ball-shadow-v01.png": "3a4e58a4d3b9b707e6ec10ffe80e26c561605a4f99d5498c04ae5c684cf5606a",
+    "draft-without-wood-01-body.png": "f82d9cd20f7dc068d378eb441e26474b322fd452003813870c7a44d79f906c22",
+    "raw/wood-master-v01.png": "802f339d693d4dfc175a1e0f9013c78a6e9062bd6532a3db228bd98cd307e161"
+  },
+  "limitations": [
+    "Light/shape/opacity must be checked in actual assembled motion at ordinary scale.",
+    "No final board occlusion layers are included in this packet.",
+    "No winning seeds or altered physics are supplied.",
+    "Rendering alpha cutoff16/255 may suppress faint generated specks if the consumer supports it; metadata includes raw alpha extents honestly.",
+    "Only wood-01 replaced; other24 draft bodies remain baked diagnostic art. Existing single draft shadow retained; lighting is provisional."
+  ],
+  "shadows": {
+    "wood-01": {
+      "kind": "baked",
+      "layerId": "diagnostic-floor-without-wood-01-body",
+      "source": "single unchanged own draft ground shadow; no added or master-baked shadow"
+    }
+  },
+  "woodSource": {
+    "commit": "f493bbf8d5ec92b429767e2bd9afd8de766c13e0",
+    "packet": "experiments/p6-geometry-first-art/asset-artist/components-v01/WOOD_PACKET_V01.json",
+    "packetSha256": "89849181ae119ae4703909b0f526d1d1a68588e6215a3ac8ae6c6dcecef616c6",
+    "masterSha256": "802f339d693d4dfc175a1e0f9013c78a6e9062bd6532a3db228bd98cd307e161",
+    "canvas": [
+      1254,
+      1254
+    ],
+    "instanceId": "wood-01",
+    "selection": {
+      "seed": 0,
+      "hitEventTick": 571,
+      "beforeStateTick": 571,
+      "contactStateTick": 572,
+      "afterStateTick": 573
+    },
+    "sourceGroundAnchor": [
+      625,
+      1032
+    ],
+    "sourceBaseEllipse": {
+      "centerPx": [
+        625,
+        1032
+      ],
+      "radiusXPx": 255,
+      "radiusYPx": 138,
+      "derivation": "Approximate fit to actual alpha>=128 lower wood contact rim, separate from upper ropes/trim silhouette. Centre-column bottom1170, near-edge x375 y1058 and x875 y1062; fit requires assembled overlay confirmation."
+    },
+    "sourceVisibleHeightAboveGroundPx": 949,
+    "actualUniformScale": 0.11764705882352741,
+    "projectedPinCenter": [
+      628.6379171404694,
+      478.2464227639511
+    ],
+    "projectedHorizontalRadius": 29.99999999999949,
+    "scaledBaseEllipseRadii": [
+      29.99999999999949,
+      16.235294117646784
+    ],
+    "actualProjectedCircleBounds": [
+      598.6363249617405,
+      463.6238911457956,
+      658.6379171404689,
+      492.9999999999992
+    ],
+    "maxSampledEllipseMismatchPx": 1.7325015273889661,
+    "visibleHeightAboveGroundPx": 111.64705882352752,
+    "draftHeightAboveGroundPx": 70.20546249831035,
+    "registration": "source anchor625/1032 at P(actual config center); uniform scale horizontal projected radius/255; no bbox or bottom1170 anchoring",
+    "shadowPolicy": {
+      "kind": "baked",
+      "layerId": "diagnostic-floor-without-wood-01-body",
+      "source": "single unchanged own draft ground shadow; no added or master-baked shadow"
+    },
+    "limitations": [
+      "Base ellipse is an artist fit to actual pixels, not a regenerated collider or proved exact match.",
+      "Relative visual height is higher than the illustrative draft; evaluate one real placed instance before multiplying all8.",
+      "Upper ropes and trim may overhang the physical base; full alpha width does not define native radius.",
+      "No flat-floor image, receiver parts or finished scene occlusion mask are included in this first packet."
+    ]
+  }
+}

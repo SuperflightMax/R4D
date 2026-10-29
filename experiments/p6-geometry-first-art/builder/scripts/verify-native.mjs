@@ -4,7 +4,7 @@ import crypto from 'node:crypto';
 import assert from 'node:assert/strict';
 import { execFileSync } from 'node:child_process';
 import { pathToFileURL } from 'node:url';
-import { root,runtime,site } from './paths.mjs';
+import { root,runtime,site,candidateName } from './paths.mjs';
 import { RunController } from '../viewer/controller.mjs';
 const core=await import(pathToFileURL(path.join(site,'native/core.mjs')));
 const configSourceText=fs.readFileSync(path.join(root,'inputs/config.json'),'utf8');
@@ -40,5 +40,5 @@ for(const seed of [0,1,2]){
 }
 assert.equal(new Set(report.seeds.map(s=>s.stateHash)).size,3);
 report.checks=['native runUntilDone agrees with consumer session result/ticks','single ticks and batches produce identical states/events','saved replay recalculates exact state from fixed config and seed','seeking states94/95/96 reproduces retained native snapshots','ordinary predeclared seeds0/1/2 differ; all retained without selection','all independently calculated state/event canonical digests match QA contract'];
-const reportPath=path.join(root,'integration-02/native-selfcheck.json');fs.mkdirSync(path.dirname(reportPath),{recursive:true});fs.writeFileSync(reportPath,JSON.stringify(report,null,2)+'\n');
+const reportPath=path.join(root,candidateName,'native-selfcheck.json');fs.mkdirSync(path.dirname(reportPath),{recursive:true});fs.writeFileSync(reportPath,JSON.stringify(report,null,2)+'\n');
 console.log(JSON.stringify(report,null,2));

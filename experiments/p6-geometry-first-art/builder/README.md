@@ -18,7 +18,9 @@ node experiments/p6-geometry-first-art/builder/scripts/verify-native.mjs
 node experiments/p6-geometry-first-art/builder/scripts/serve.mjs
 ```
 
-Следующая сборка пишет только `runtime/candidates/integration-02/site`, её локальный адрес: `http://127.0.0.1:41767/`. Baseline `b1bb84d` по `http://127.0.0.1:41766/` заморожен для TQA: прежний runtime/site и snapshot не перезаписываются. Подробнее: [BASELINE_FREEZE.md](verification/BASELINE_FREEZE.md). При необходимости перезапуска baseline использовать `node experiments/p6-geometry-first-art/builder/scripts/serve.mjs --baseline`; это раздаёт immutable snapshot и не требует сборки. Не запускать второй процесс на уже занятом порту.
+Текущий single-wood candidate использует только `runtime/candidates/integration-03/site`, локальный адрес `http://127.0.0.1:41768/`; explicit build flag `--wood-v01`. Sphere/shadow integration-02 по41767 заморожен, его source pin38282825c2688e010612e35b6a807e027fb0b90a и [freeze inventory](integration-02/freeze-inventory.json) сохранены. Baseline `b1bb84d` по `http://127.0.0.1:41766/` заморожен для TQA: прежний runtime/site и snapshot не перезаписываются. Подробнее: [BASELINE_FREEZE.md](verification/BASELINE_FREEZE.md). Build останавливается перед записью, если parent текущего site содержит `freeze-inventory.json`.
+
+Для перезапуска существующих frozen endpoints без сборки: `serve.mjs --baseline` для41766, `serve.mjs --integration02` для41767, обычный `serve.mjs` для41768. Не запускать второй процесс на уже занятом порту.
 
 Сервер раздаёт только выбранный site. Он не раздаёт private raw TS или maps; sourcemaps не создаются. Неизменённые native Git blobs находятся только в runtime/private, с object inventory. Native source repo/HEAD не меняется.
 
@@ -39,3 +41,5 @@ Selfcheck самостоятельно рассчитывает normal seeds0/1/
 Стыковка frozen слоёв Artist описана в [CONSUMER_CONTRACT.md](CONSUMER_CONTRACT.md). Реальный художественный кандидат ещё требуется подключить и просмотреть на контактах, боковых отскоках и корзинах. Предусмотренный depth contract не объявляется доказанным качеством перекрытий.
 
 Actual ранний sphere/shadow candidate integration-02: [handoff и реальные кадры](integration-02/HANDOFF.md). Его сборка использует `build.mjs --sprites-v01`, explicit lift0, исходный прямоугольный shadow canvas. Это геометрический фон с настоящими sphere/shadow, без готовых obstacle occlusion layers. Полный board art пока не подключён. Его самостоятельная проверка находится в `integration-02/native-selfcheck.json`, traces — `runtime/candidates/integration-02/verification`; прежний baseline report сохранён.
+
+Один actual wood-01: [integration-03/HANDOFF.md](integration-03/HANDOFF.md), native seed0 states571/572/573, ordinary и overlay frames. Anchor/initial uniform scale следуют actual packet; сохранён один существующий draft shadow, без дублирования. Остальные7 wood пока не размножаются. Этот компонентный вариант отделён от whole-image trials Artist.
