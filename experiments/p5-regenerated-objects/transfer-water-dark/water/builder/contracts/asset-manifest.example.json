@@ -1,0 +1,294 @@
+{
+  "schema": "r4d.p5.assets/1",
+  "status": "example-not-renderable",
+  "sourceSha256": "8da65c76c110b6ba7cefe113564fe12feed4428e84e84835f033e7da31d3b80d",
+  "p1Commit": "4b47db04c7140ebf88f69b91faa0b790d46f22ec",
+  "lighting": {
+    "description": "EXAMPLE ONLY: derive actual lighting from this board, not Jungle constants",
+    "shadowDirectionSourcePx": [
+      20,
+      12
+    ]
+  },
+  "textures": [
+    {
+      "id": "floor-example",
+      "family": "floor",
+      "file": "EXAMPLE-NOT-A-REAL-ASSET/floor-example.png",
+      "sha256": "0000000000000000000000000000000000000000000000000000000000000000",
+      "bytes": 1,
+      "sizePx": [
+        256,
+        256
+      ],
+      "alpha": {
+        "policy": "opaque",
+        "bounds": [
+          0,
+          0,
+          256,
+          256
+        ],
+        "visibleBounds": [
+          0,
+          0,
+          256,
+          256
+        ]
+      },
+      "groundAnchorPx": [
+        0,
+        0
+      ],
+      "footprintPx": {
+        "center": [
+          0,
+          0
+        ],
+        "width": 256,
+        "depth": 256
+      },
+      "provenance": {
+        "method": "generated",
+        "promptPath": "EXAMPLE-NOT-A-GENERATION",
+        "toolOutputId": "EXAMPLE",
+        "rawSha256": "0000000000000000000000000000000000000000000000000000000000000000",
+        "corrections": []
+      }
+    },
+    {
+      "id": "body-example",
+      "family": "pillar",
+      "file": "EXAMPLE-NOT-A-REAL-ASSET/body-example.png",
+      "sha256": "0000000000000000000000000000000000000000000000000000000000000000",
+      "bytes": 1,
+      "sizePx": [
+        256,
+        256
+      ],
+      "alpha": {
+        "policy": "straight-rgba",
+        "bounds": [
+          16,
+          16,
+          224,
+          224
+        ],
+        "visibleBounds": [
+          16,
+          16,
+          224,
+          224
+        ]
+      },
+      "groundAnchorPx": [
+        128,
+        220
+      ],
+      "footprintPx": {
+        "center": [
+          128,
+          220
+        ],
+        "width": 80,
+        "depth": 30
+      },
+      "provenance": {
+        "method": "generated",
+        "promptPath": "EXAMPLE-NOT-A-GENERATION",
+        "toolOutputId": "EXAMPLE",
+        "rawSha256": "0000000000000000000000000000000000000000000000000000000000000000",
+        "corrections": []
+      }
+    },
+    {
+      "id": "shadow-example",
+      "family": "shadow",
+      "file": "EXAMPLE-NOT-A-REAL-ASSET/shadow-example.png",
+      "sha256": "0000000000000000000000000000000000000000000000000000000000000000",
+      "bytes": 1,
+      "sizePx": [
+        256,
+        256
+      ],
+      "alpha": {
+        "policy": "straight-rgba",
+        "bounds": [
+          16,
+          16,
+          224,
+          224
+        ],
+        "visibleBounds": [
+          16,
+          16,
+          224,
+          224
+        ]
+      },
+      "groundAnchorPx": [
+        128,
+        220
+      ],
+      "footprintPx": {
+        "center": [
+          128,
+          220
+        ],
+        "width": 80,
+        "depth": 30
+      },
+      "provenance": {
+        "method": "generated",
+        "promptPath": "EXAMPLE-NOT-A-GENERATION",
+        "toolOutputId": "EXAMPLE",
+        "rawSha256": "0000000000000000000000000000000000000000000000000000000000000000",
+        "corrections": []
+      }
+    },
+    {
+      "id": "ball-example",
+      "family": "ball",
+      "file": "EXAMPLE-NOT-A-REAL-ASSET/ball-example.png",
+      "sha256": "0000000000000000000000000000000000000000000000000000000000000000",
+      "bytes": 1,
+      "sizePx": [
+        256,
+        256
+      ],
+      "alpha": {
+        "policy": "straight-rgba",
+        "bounds": [
+          16,
+          16,
+          224,
+          224
+        ],
+        "visibleBounds": [
+          16,
+          16,
+          224,
+          224
+        ]
+      },
+      "groundAnchorPx": [
+        128,
+        220
+      ],
+      "footprintPx": {
+        "center": [
+          128,
+          220
+        ],
+        "width": 64,
+        "depth": 32
+      },
+      "provenance": {
+        "method": "generated",
+        "promptPath": "EXAMPLE-NOT-A-GENERATION",
+        "toolOutputId": "EXAMPLE",
+        "rawSha256": "0000000000000000000000000000000000000000000000000000000000000000",
+        "corrections": []
+      },
+      "sphereVisualCenterPx": [
+        128,
+        180
+      ]
+    },
+    {
+      "id": "arch-lintel-example",
+      "family": "arch-part",
+      "file": "EXAMPLE-NOT-A-REAL-ASSET/arch-lintel-example.png",
+      "sha256": "0000000000000000000000000000000000000000000000000000000000000000",
+      "bytes": 1,
+      "sizePx": [
+        256,
+        256
+      ],
+      "alpha": {
+        "policy": "straight-rgba",
+        "bounds": [
+          16,
+          16,
+          224,
+          224
+        ],
+        "visibleBounds": [
+          16,
+          16,
+          224,
+          224
+        ]
+      },
+      "groundAnchorPx": [
+        128,
+        220
+      ],
+      "footprintPx": {
+        "center": [
+          128,
+          220
+        ],
+        "width": 160,
+        "depth": 30
+      },
+      "provenance": {
+        "method": "generated",
+        "promptPath": "EXAMPLE-NOT-A-GENERATION",
+        "toolOutputId": "EXAMPLE",
+        "rawSha256": "0000000000000000000000000000000000000000000000000000000000000000",
+        "corrections": []
+      }
+    }
+  ],
+  "instances": [
+    {
+      "id": "floor",
+      "textureId": "floor-example",
+      "targetId": "$source",
+      "parentId": "floor",
+      "role": "floor",
+      "depthOffsetRadii": 0,
+      "depthReason": "NUMERIC EXAMPLE ONLY. Actual measured part ground depth and actual overlap review required."
+    },
+    {
+      "id": "pillar-01-body",
+      "textureId": "body-example",
+      "targetId": "pillar-01",
+      "parentId": "pillar-01-body",
+      "role": "body",
+      "depthOffsetRadii": 0,
+      "depthReason": "NUMERIC EXAMPLE ONLY. Actual measured part ground depth and actual overlap review required."
+    },
+    {
+      "id": "pillar-01-shadow",
+      "textureId": "shadow-example",
+      "targetId": "pillar-01",
+      "parentId": "pillar-01",
+      "role": "shadow",
+      "depthOffsetRadii": 0,
+      "depthReason": "NUMERIC EXAMPLE ONLY. Actual measured part ground depth and actual overlap review required."
+    },
+    {
+      "id": "ball",
+      "textureId": "ball-example",
+      "targetId": "$ball",
+      "parentId": "ball",
+      "role": "ball",
+      "depthOffsetRadii": 0,
+      "depthReason": "NUMERIC EXAMPLE ONLY. Actual measured part ground depth and actual overlap review required."
+    },
+    {
+      "id": "arch-01-lintel",
+      "textureId": "arch-lintel-example",
+      "targetId": "arch-01",
+      "parentId": "arch-01",
+      "role": "body",
+      "depthOffsetRadii": 1,
+      "depthReason": "NUMERIC EXAMPLE ONLY. Actual measured part ground depth and actual overlap review required."
+    }
+  ],
+  "limitations": [
+    "No actual generated bytes; numerical schema and registration example only"
+  ]
+}

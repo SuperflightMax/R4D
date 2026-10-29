@@ -1,0 +1,325 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "r4d.p5.assets/1",
+  "type": "object",
+  "required": [
+    "schema",
+    "status",
+    "sourceSha256",
+    "p1Commit",
+    "lighting",
+    "textures",
+    "instances"
+  ],
+  "properties": {
+    "schema": {
+      "const": "r4d.p5.assets/1"
+    },
+    "status": {
+      "enum": [
+        "example-not-renderable",
+        "partial",
+        "candidate"
+      ]
+    },
+    "sourceSha256": {
+      "const": "8da65c76c110b6ba7cefe113564fe12feed4428e84e84835f033e7da31d3b80d"
+    },
+    "p1Commit": {
+      "const": "4b47db04c7140ebf88f69b91faa0b790d46f22ec"
+    },
+    "lighting": {
+      "type": "object",
+      "required": [
+        "description",
+        "shadowDirectionSourcePx"
+      ],
+      "properties": {
+        "description": {
+          "type": "string"
+        },
+        "shadowDirectionSourcePx": {
+          "$ref": "#/$defs/point"
+        }
+      }
+    },
+    "textures": {
+      "type": "array",
+      "items": {
+        "$ref": "#/$defs/texture"
+      }
+    },
+    "instances": {
+      "type": "array",
+      "items": {
+        "$ref": "#/$defs/instance"
+      }
+    }
+  },
+  "$defs": {
+    "point": {
+      "type": "array",
+      "items": {
+        "type": "number"
+      },
+      "minItems": 2,
+      "maxItems": 2
+    },
+    "bbox": {
+      "type": "array",
+      "items": {
+        "type": "integer",
+        "minimum": 0
+      },
+      "minItems": 4,
+      "maxItems": 4
+    },
+    "texture": {
+      "type": "object",
+      "required": [
+        "id",
+        "family",
+        "file",
+        "sha256",
+        "bytes",
+        "sizePx",
+        "alpha",
+        "groundAnchorPx",
+        "footprintPx",
+        "provenance"
+      ],
+      "properties": {
+        "id": {
+          "type": "string",
+          "minLength": 1
+        },
+        "family": {
+          "type": "string"
+        },
+        "file": {
+          "type": "string"
+        },
+        "sha256": {
+          "type": "string",
+          "pattern": "^[a-f0-9]{64}$"
+        },
+        "bytes": {
+          "type": "integer",
+          "minimum": 1
+        },
+        "sizePx": {
+          "type": "array",
+          "items": {
+            "type": "integer",
+            "minimum": 1
+          },
+          "minItems": 2,
+          "maxItems": 2
+        },
+        "alpha": {
+          "type": "object",
+          "required": [
+            "policy",
+            "bounds",
+            "visibleBounds"
+          ],
+          "properties": {
+            "policy": {
+              "enum": [
+                "straight-rgba",
+                "opaque"
+              ]
+            },
+            "bounds": {
+              "$ref": "#/$defs/bbox"
+            },
+            "visibleBounds": {
+              "$ref": "#/$defs/bbox"
+            }
+          }
+        },
+        "groundAnchorPx": {
+          "$ref": "#/$defs/point"
+        },
+        "footprintPx": {
+          "type": "object",
+          "required": [
+            "center",
+            "width",
+            "depth"
+          ],
+          "properties": {
+            "center": {
+              "$ref": "#/$defs/point"
+            },
+            "width": {
+              "type": "number",
+              "exclusiveMinimum": 0
+            },
+            "depth": {
+              "type": "number",
+              "exclusiveMinimum": 0
+            }
+          }
+        },
+        "provenance": {
+          "type": "object",
+          "required": [
+            "method",
+            "promptPath",
+            "toolOutputId",
+            "rawSha256",
+            "corrections"
+          ],
+          "properties": {
+            "method": {
+              "const": "generated"
+            },
+            "promptPath": {
+              "type": "string"
+            },
+            "toolOutputId": {
+              "type": "string"
+            },
+            "rawSha256": {
+              "type": "string",
+              "pattern": "^[a-f0-9]{64}$"
+            },
+            "corrections": {
+              "type": "array"
+            }
+          }
+        },
+        "sphereVisualCenterPx": {
+          "$ref": "#/$defs/point"
+        },
+        "opticalOpeningPointPx": {
+          "$ref": "#/$defs/point"
+        }
+      }
+    },
+    "sourceClipPx": {
+      "type": "object",
+      "required": [
+        "coordinateSpace",
+        "polygon",
+        "provenance",
+        "limitations"
+      ],
+      "properties": {
+        "coordinateSpace": {
+          "const": "source1536"
+        },
+        "polygon": {
+          "type": "array",
+          "minItems": 3,
+          "items": {
+            "$ref": "#/$defs/point"
+          }
+        },
+        "provenance": {
+          "type": "object",
+          "required": [
+            "method",
+            "sourceTextureId",
+            "sourceSha256",
+            "note"
+          ],
+          "properties": {
+            "method": {
+              "const": "scene-region-from-generated-floor"
+            },
+            "sourceTextureId": {
+              "type": "string"
+            },
+            "sourceSha256": {
+              "type": "string",
+              "pattern": "^[a-f0-9]{64}$"
+            },
+            "note": {
+              "type": "string",
+              "minLength": 1
+            }
+          }
+        },
+        "limitations": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        }
+      }
+    },
+    "instance": {
+      "type": "object",
+      "required": [
+        "id",
+        "textureId",
+        "targetId",
+        "parentId",
+        "role",
+        "depthOffsetRadii",
+        "depthReason"
+      ],
+      "properties": {
+        "id": {
+          "type": "string"
+        },
+        "textureId": {
+          "type": "string"
+        },
+        "targetId": {
+          "type": "string"
+        },
+        "parentId": {
+          "type": "string"
+        },
+        "role": {
+          "enum": [
+            "floor",
+            "shadow",
+            "body",
+            "receiver-back",
+            "receiver-front",
+            "ball",
+            "foreground"
+          ]
+        },
+        "depthOffsetRadii": {
+          "type": "number",
+          "minimum": -1,
+          "maximum": 1
+        },
+        "depthReason": {
+          "type": "string"
+        },
+        "sourceClipPx": {
+          "$ref": "#/$defs/sourceClipPx"
+        }
+      },
+      "allOf": [
+        {
+          "if": {
+            "required": [
+              "sourceClipPx"
+            ]
+          },
+          "then": {
+            "properties": {
+              "targetId": {
+                "const": "$source"
+              },
+              "role": {
+                "const": "foreground"
+              },
+              "depthOffsetRadii": {
+                "const": 0
+              }
+            }
+          }
+        }
+      ]
+    }
+  },
+  "title": "P5 water generation baseline asset contract"
+}

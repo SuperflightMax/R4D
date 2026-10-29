@@ -1,0 +1,245 @@
+{
+  "schema": "r4d.p5.transfer-inputs/1",
+  "board": "water",
+  "boardId": "04",
+  "activeTrial": "trial-02",
+  "p1Commit": "4b47db04c7140ebf88f69b91faa0b790d46f22ec",
+  "canonicalRevision": "b1382dd4c230815a019e52e2ec4617ef705661d5",
+  "canonicalTransferBlob": "09f33f99d771ab28b9575de1a358acc40b4d571c",
+  "commonInputSha256": "497eb8cca3aa7413254a85b18d98a1e7dfde66d9779c39fc6b5932a21f2b4946",
+  "inputs": [
+    {
+      "path": "experiments/p1-collider-mapping/clean-repeat-01/simulation/boards/04/trial-02/config.json",
+      "revision": "4b47db04c7140ebf88f69b91faa0b790d46f22ec",
+      "destination": "public/data/config.json",
+      "bytes": 27231,
+      "sha256": "9048b28af2923c93d8be772367beeb828f1e4513a6298af1c803379f77d3e50c"
+    },
+    {
+      "path": "experiments/p1-collider-mapping/clean-repeat-01/simulation/boards/04/trial-02/manifest.json",
+      "revision": "4b47db04c7140ebf88f69b91faa0b790d46f22ec",
+      "destination": "public/data/p1-manifest.json",
+      "bytes": 15870,
+      "sha256": "48c4fef26fd8c94f06c278851222ef285edda54ac14e53da8908f4ee663dc420"
+    },
+    {
+      "path": "experiments/p1-collider-mapping/clean-repeat-01/viewer/src/view-math.mjs",
+      "revision": "4b47db04c7140ebf88f69b91faa0b790d46f22ec",
+      "destination": "src/p1-view-math.mjs",
+      "bytes": 3050,
+      "sha256": "96f01cc2093c353ff958cb906fe0c8ae93412425d0f7a5ec7cca0f2bf9f1aa5e"
+    },
+    {
+      "path": "experiments/p1-collider-mapping/clean-repeat-01/simulation/projection.mjs",
+      "revision": "4b47db04c7140ebf88f69b91faa0b790d46f22ec",
+      "destination": "src/p1-projection.mjs",
+      "bytes": 614,
+      "sha256": "b59a0c1e6c34b417d253178457ef3580b8bea0aa89c989d1342f9376e19b9431"
+    }
+  ],
+  "source": {
+    "path": "K:\\Agents\\R4D\\Assets\\perspective\\04-water-temple.jpg",
+    "width": 1536,
+    "height": 1536,
+    "bytes": 527016,
+    "sha256": "8da65c76c110b6ba7cefe113564fe12feed4428e84e84835f033e7da31d3b80d"
+  },
+  "native": {
+    "sourceCommit": "5a6fa03f1cdb3de88a2d9c7dbe795eb8e2a7f023",
+    "packageTree": "008d16a80a26bb77d562a45218b01da09b0d9ff0",
+    "useExistingAuthorizedOwnPrivateRuntime": true,
+    "rawSourcesOrMapsPublic": false,
+    "physics": "r16;tick5ms;quantize7;g980;maxspeed2000;angleDeviation2deg;bounceDeviation0.02;lcg32. Обычный новый бросок меняет seed, без отбора траекторий."
+  },
+  "counts": {
+    "pins": 6,
+    "segments": 106,
+    "buckets": 4,
+    "drops": 1
+  },
+  "defaults": {
+    "tickMs": 5,
+    "quantizeDigits": 7
+  },
+  "physics": {
+    "gravityY": 980,
+    "maxBallSpeed": 2000,
+    "angleDeviationDeg": 2,
+    "bounceDeviation": 0.02,
+    "wallBounce": 1
+  },
+  "rngAlgorithm": "lcg32",
+  "ballRadius": 16,
+  "projection": {
+    "nativeToSource": [
+      [
+        1,
+        -0.10580641230166693,
+        -28877.461986617916
+      ],
+      [
+        0,
+        0.3552488372689919,
+        -11472.51132296708
+      ],
+      [
+        0,
+        -0.00013776876601779547,
+        5.701221371591252
+      ]
+    ],
+    "sourceToNative": [
+      [
+        1,
+        10.300479251416514,
+        25792.688486579264
+      ],
+      [
+        0,
+        12.81753630163582,
+        25792.601403936715
+      ],
+      [
+        0,
+        0.00030973295800506716,
+        0.7986735772967063
+      ]
+    ],
+    "sourceImageQuadPx": [
+      [
+        0,
+        0
+      ],
+      [
+        1536,
+        0
+      ],
+      [
+        1536,
+        1536
+      ],
+      [
+        0,
+        1536
+      ]
+    ],
+    "wholeSourceNativePolygon": [
+      [
+        32294.4056492773,
+        32294.29661519251
+      ],
+      [
+        34217.5943507227,
+        32294.29661519251
+      ],
+      [
+        33858.62546930826,
+        35686.991572006424
+      ],
+      [
+        32653.37453069174,
+        35686.991572006424
+      ]
+    ],
+    "wholeSourceNativeBounds": {
+      "minX": 32294.4056492773,
+      "maxX": 34217.5943507227,
+      "minY": 32294.29661519251,
+      "maxY": 35686.991572006424
+    },
+    "playableFloorNativePolygon": [
+      [
+        32700.634273712487,
+        33155.71491435254
+      ],
+      [
+        32662.751710422785,
+        33333.724302771916
+      ],
+      [
+        32653.26312945168,
+        33720.561608460615
+      ],
+      [
+        32670,
+        34124
+      ],
+      [
+        32695.70816921879,
+        34547.41278939112
+      ],
+      [
+        32678.95566995609,
+        34918.80635443037
+      ],
+      [
+        33832.15382953458,
+        34918.80635443037
+      ],
+      [
+        33816.291830781214,
+        34547.41278939112
+      ],
+      [
+        33842,
+        34124
+      ],
+      [
+        33858.73687054832,
+        33720.561608460615
+      ],
+      [
+        33849.24828957722,
+        33333.724302771916
+      ],
+      [
+        33809.0989274047,
+        33155.71491435254
+      ]
+    ]
+  },
+  "translation": {
+    "offset": [
+      33256,
+      34124
+    ],
+    "researchToNative": [
+      [
+        1,
+        0,
+        33256
+      ],
+      [
+        0,
+        1,
+        34124
+      ],
+      [
+        0,
+        0,
+        1
+      ]
+    ],
+    "nativeToResearch": [
+      [
+        1,
+        0,
+        -33256
+      ],
+      [
+        0,
+        1,
+        -34124
+      ],
+      [
+        0,
+        0,
+        1
+      ]
+    ],
+    "padding": 32294,
+    "rule": "native = research + translation; no scale/rotation, clipping, axis alignment or vertex reordering"
+  },
+  "tokenGranted": false,
+  "serverWrites": 0
+}

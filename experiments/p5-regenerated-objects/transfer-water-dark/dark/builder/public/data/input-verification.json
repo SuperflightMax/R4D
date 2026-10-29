@@ -1,0 +1,277 @@
+{
+  "schema": "r4d.p5.transfer-inputs/1",
+  "board": "dark",
+  "boardId": "02",
+  "activeTrial": "trial-01",
+  "p1Commit": "4b47db04c7140ebf88f69b91faa0b790d46f22ec",
+  "canonicalRevision": "b1382dd4c230815a019e52e2ec4617ef705661d5",
+  "canonicalTransferBlob": "09f33f99d771ab28b9575de1a358acc40b4d571c",
+  "commonInputSha256": "497eb8cca3aa7413254a85b18d98a1e7dfde66d9779c39fc6b5932a21f2b4946",
+  "inputs": [
+    {
+      "path": "experiments/p1-collider-mapping/clean-repeat-01/simulation/boards/02/trial-01/config.json",
+      "revision": "4b47db04c7140ebf88f69b91faa0b790d46f22ec",
+      "destination": "public/data/config.json",
+      "bytes": 19508,
+      "sha256": "14be2a023833d266d1e333bf582af5fd5885deb445698c10ebd846ef0cc080b2"
+    },
+    {
+      "path": "experiments/p1-collider-mapping/clean-repeat-01/simulation/boards/02/trial-01/manifest.json",
+      "revision": "4b47db04c7140ebf88f69b91faa0b790d46f22ec",
+      "destination": "public/data/p1-manifest.json",
+      "bytes": 13939,
+      "sha256": "3fab422bd1f74d477d1648620c97ad6d7b8b0a55a70a1102d6e6885def564d81"
+    },
+    {
+      "path": "experiments/p1-collider-mapping/clean-repeat-01/viewer/src/view-math.mjs",
+      "revision": "4b47db04c7140ebf88f69b91faa0b790d46f22ec",
+      "destination": "src/p1-view-math.mjs",
+      "bytes": 3050,
+      "sha256": "96f01cc2093c353ff958cb906fe0c8ae93412425d0f7a5ec7cca0f2bf9f1aa5e"
+    },
+    {
+      "path": "experiments/p1-collider-mapping/clean-repeat-01/simulation/projection.mjs",
+      "revision": "4b47db04c7140ebf88f69b91faa0b790d46f22ec",
+      "destination": "src/p1-projection.mjs",
+      "bytes": 614,
+      "sha256": "b59a0c1e6c34b417d253178457ef3580b8bea0aa89c989d1342f9376e19b9431"
+    }
+  ],
+  "source": {
+    "path": "K:\\Agents\\R4D\\Assets\\perspective\\02-dark-temple.jpg",
+    "width": 1536,
+    "height": 1536,
+    "bytes": 536988,
+    "sha256": "7ceff71bd0a871fecd725527dff5522450c8e75a74eb99c107b5d8624bf8fa3a"
+  },
+  "native": {
+    "sourceCommit": "5a6fa03f1cdb3de88a2d9c7dbe795eb8e2a7f023",
+    "packageTree": "008d16a80a26bb77d562a45218b01da09b0d9ff0",
+    "useExistingAuthorizedOwnPrivateRuntime": true,
+    "rawSourcesOrMapsPublic": false,
+    "physics": "r16;tick5ms;quantize7;g980;maxspeed2000;angleDeviation2deg;bounceDeviation0.02;lcg32. Обычный новый бросок меняет seed, без отбора траекторий."
+  },
+  "counts": {
+    "pins": 12,
+    "segments": 70,
+    "buckets": 4,
+    "drops": 1
+  },
+  "defaults": {
+    "tickMs": 5,
+    "quantizeDigits": 7
+  },
+  "physics": {
+    "gravityY": 980,
+    "maxBallSpeed": 2000,
+    "angleDeviationDeg": 2,
+    "bounceDeviation": 0.02,
+    "wallBounce": 1
+  },
+  "rngAlgorithm": "lcg32",
+  "ballRadius": 16,
+  "projection": {
+    "nativeToSource": [
+      [
+        1,
+        -0.13956719825614036,
+        -27842.873230875444
+      ],
+      [
+        0,
+        0.45097762622940285,
+        -14593.55326069151
+      ],
+      [
+        0,
+        -0.00019089403350768935,
+        7.473598464312761
+      ]
+    ],
+    "sourceToNative": [
+      [
+        1,
+        10.875932356315827,
+        24962.7234087166
+      ],
+      [
+        0,
+        12.784047833351787,
+        24963.16651665375
+      ],
+      [
+        0,
+        0.000326535934077396,
+        0.7714248461458229
+      ]
+    ],
+    "sourceImageQuadPx": [
+      [
+        0,
+        0
+      ],
+      [
+        1536,
+        0
+      ],
+      [
+        1536,
+        1536
+      ],
+      [
+        0,
+        1536
+      ]
+    ],
+    "wholeSourceNativePolygon": [
+      [
+        32359.242165241176,
+        32359.816567192793
+      ],
+      [
+        34350.36289161411,
+        32359.816567192793
+      ],
+      [
+        33939.2750578835,
+        35035.36773135511
+      ],
+      [
+        32732.661345014265,
+        35035.36773135511
+      ]
+    ],
+    "wholeSourceNativeBounds": {
+      "minX": 32359.242165241176,
+      "maxX": 34350.36289161411,
+      "minY": 32359.816567192793,
+      "maxY": 35035.36773135511
+    },
+    "playableFloorNativePolygon": [
+      [
+        32828.392651758746,
+        33007.30444252906
+      ],
+      [
+        32824.90790053341,
+        33124.97928788483
+      ],
+      [
+        32812.4273338883,
+        33343.101930132565
+      ],
+      [
+        32812.58735945786,
+        33545.984296703595
+      ],
+      [
+        32815.83784896036,
+        33735.16973265605
+      ],
+      [
+        32813.87605813768,
+        33912
+      ],
+      [
+        32812.03833509587,
+        34077.64714903807
+      ],
+      [
+        32815.94544940967,
+        34233.1395282205
+      ],
+      [
+        32816.88782882306,
+        34379.383152767456
+      ],
+      [
+        32822.48335081387,
+        34545.11142261462
+      ],
+      [
+        33880.97129029415,
+        34545.11142261462
+      ],
+      [
+        33881.588882864664,
+        34379.383152767456
+      ],
+      [
+        33881.3658408677,
+        34233.1395282205
+      ],
+      [
+        33879.191935330215,
+        34077.64714903807
+      ],
+      [
+        33880.87605813768,
+        33912
+      ],
+      [
+        33884.741390601186,
+        33735.16973265605
+      ],
+      [
+        33880.3178329594,
+        33545.984296703595
+      ],
+      [
+        33883.33420669483,
+        33343.101930132565
+      ],
+      [
+        33878.52550383523,
+        33124.97928788483
+      ],
+      [
+        33881.47813544652,
+        33007.30444252906
+      ]
+    ]
+  },
+  "translation": {
+    "offset": [
+      33307,
+      33912
+    ],
+    "researchToNative": [
+      [
+        1,
+        0,
+        33307
+      ],
+      [
+        0,
+        1,
+        33912
+      ],
+      [
+        0,
+        0,
+        1
+      ]
+    ],
+    "nativeToResearch": [
+      [
+        1,
+        0,
+        -33307
+      ],
+      [
+        0,
+        1,
+        -33912
+      ],
+      [
+        0,
+        0,
+        1
+      ]
+    ],
+    "padding": 32359,
+    "rule": "native = research + translation; no scale/rotation, clipping, axis alignment or vertex reordering"
+  },
+  "tokenGranted": false,
+  "serverWrites": 0
+}
