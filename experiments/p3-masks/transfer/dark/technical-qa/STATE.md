@@ -1,8 +1,33 @@
-# Dark — подготовка независимой Technical QA
+# Dark — независимая Technical QA
 
 29 октября 2026, Europe/Kyiv. `technical-qa-r4d-p3-masks-01`.
-Статус: **INPUTS_VERIFIED_READY_FOR_FROZEN_CANDIDATE**.
-Это подготовка входов и будущей матрицы; вердикт по Dark не выдан.
+Статус: **DARK_FULL_METHOD_03_TECHNICAL_QA_COMPLETE**.
+Technical PASS для exact inputs/payload/native/PRNG/events/JSON/controls.
+Общий художественный/mapping PASS по всем masks и движению не выдан.
+
+Текущий кандидат: `dark-full-method-03`, CODE
+`c73d6128970b2b022d5313b08c34cafdec9a1bc3`, ART
+`17dc9fcdc261562acb581dd8590096819734c807`, frozen manifest
+`b3923f4ccab57a8361a9dc8f64de73fcee9b70fb38c87aac5e9623fbc62d0307`.
+QA стартовала с clean `fe09f8e37cff8352dbe629e28bd3e4e2c0e019aa` в прежнем
+собственном worktree/branch. Все 88 local/HTTP files проверены; 8 distinct
+runs / 11 793 native states и 66 browser checkpoint samples совпали с direct
+oracle. Первые три собственных UI seeds: 2190736337→receiver02/t1357,
+277429092→LOST/t1962, 3061636154→LOST/t2441. No filtering.
+
+Реальные cases: seed0/pillar02/t364–368 partial overlap,
+seed0/pillar04/t839–841 corner/side, seed0/receiver01/t860–888 entry,
+seed2/pillar04/t895–900 occluded front approach + geometry. Объём и пределы
+наблюдения, actual import/identity-negative, network observability и
+provenance-path allowlist изложены в
+[полном отчёте](reports/dark-full-method-03.md) и
+[evidence index](evidence/full-method-03/index.json).
+
+Подтверждённых technical defects в проверенном объёме нет. Source/ART/frozen
+и P1 inputs не правились; server_write=false. Own IAB закрыта, Builder
+preview6869 оставлен. Water/Jungle не менялись; их статусы не переоткрывались.
+
+Ниже сохранена история input preparation и заранее объявленная матрица.
 
 ## Поручение и исходный способ
 
@@ -64,7 +89,7 @@ read-only cached oracle. Runtime только
 `E:\R4D\perspective\p3-runtime\technical-qa\transfer-water-dark\dark`.
 Water данные/логи/кандидаты сюда не подставлялись.
 
-## Отдельная матрица Dark — ещё не исполнена на кандидате
+## Матрица Dark, объявленная до frozen-кандидата
 
 | Проверка | Доказательство после exact frozen выдачи |
 | --- | --- |
@@ -77,10 +102,10 @@ Water данные/логи/кандидаты сюда не подставля�
 | Просмотр | Независимые Art/Geometry, контуры actual config выше art и без заливки, Art-off снимает невидимые masks; view/zoom/pan не меняют native. |
 | Метод/качество | Цельная Dark-картинка, сохранённый исходный метод глубины/масок; перед существенной сменой сохранить исходную попытку. VQA оценивает собранный кадр и движение отдельно. |
 
-Нужен один именованный Dark frozen source/art/build/hash/file-manifest с
-одинаковыми bytes для обеих QA и подтверждённым отдельным preview/port.
-Сейчас candidate verdict отсутствует. `server_write=false`; нет uploads,
-staging/lock/service операций, новых серверов/браузеров или активного ожидания.
+На этапе подготовки требовался именованный Dark frozen source/art/build/hash/
+file-manifest с одинаковыми bytes для обеих QA и отдельным preview/port.
+Тогда candidate verdict отсутствовал. Текущее исполнение и ограничения —
+в отчёте выше. `server_write=false`; staging/lock/service/upload не разрешены.
 
 Ресурсы перед probe, 09:36:44UTC: RAM free16.737/31.907 GiB, CPU4%/24logical,
 C/D/E free16.288/16.280/11.941 GiB. Общая добавочная оценка двух лёгких QA

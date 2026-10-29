@@ -1,0 +1,618 @@
+{
+  "candidate": "dark-full-method-03",
+  "utc": "2026-10-29T10:57:07.593Z",
+  "sourceCommit": "c73d6128970b2b022d5313b08c34cafdec9a1bc3",
+  "artistCommit": "17dc9fcdc261562acb581dd8590096819734c807",
+  "manifestHash": "b3923f4ccab57a8361a9dc8f64de73fcee9b70fb38c87aac5e9623fbc62d0307",
+  "files": 88,
+  "totalBytes": 3398225,
+  "sourceLinked": [
+    "app.js",
+    "run-model.js",
+    "index.html",
+    "style.css",
+    "data/config.json",
+    "data/manifest.json",
+    "data/projection.json",
+    "view-math.js",
+    "assets/artist/assets.json",
+    "assets/artist/assets/ball.png",
+    "assets/artist/assets/shadow.png",
+    "assets/artist/masks/bowl-base-01.png",
+    "assets/artist/masks/bowl-base-02.png",
+    "assets/artist/masks/bowl-base-03.png",
+    "assets/artist/masks/bowl-base-04.png",
+    "assets/artist/masks/bowl-base-05.png",
+    "assets/artist/masks/bowl-base-06.png",
+    "assets/artist/masks/skull-base-01.png",
+    "assets/artist/masks/skull-base-02.png",
+    "assets/artist/masks/skull-base-03.png",
+    "assets/artist/masks/skull-base-04.png",
+    "assets/artist/masks/skull-base-05.png",
+    "assets/artist/masks/skull-base-06.png",
+    "assets/artist/masks/pillar-01-front.png",
+    "assets/artist/masks/pillar-01-side.png",
+    "assets/artist/masks/pillar-02-front.png",
+    "assets/artist/masks/pillar-02-side.png",
+    "assets/artist/masks/pillar-03-front.png",
+    "assets/artist/masks/pillar-03-side.png",
+    "assets/artist/masks/pillar-04-front.png",
+    "assets/artist/masks/pillar-04-side.png",
+    "assets/artist/masks/pillar-05-front.png",
+    "assets/artist/masks/pillar-05-side.png",
+    "assets/artist/masks/pillar-06-front.png",
+    "assets/artist/masks/pillar-06-side.png",
+    "assets/artist/masks/block-01-front.png",
+    "assets/artist/masks/block-01-side.png",
+    "assets/artist/masks/block-02-front.png",
+    "assets/artist/masks/block-02-side.png",
+    "assets/artist/masks/block-03-front.png",
+    "assets/artist/masks/block-03-side.png",
+    "assets/artist/masks/block-04-front.png",
+    "assets/artist/masks/block-04-side.png",
+    "assets/artist/masks/block-05-front.png",
+    "assets/artist/masks/block-05-side.png",
+    "assets/artist/masks/block-06-front.png",
+    "assets/artist/masks/block-06-side.png",
+    "assets/artist/masks/rail-left-1.png",
+    "assets/artist/masks/rail-right-1.png",
+    "assets/artist/masks/rail-left-2.png",
+    "assets/artist/masks/rail-right-2.png",
+    "assets/artist/masks/rail-left-3.png",
+    "assets/artist/masks/rail-right-3.png",
+    "assets/artist/masks/far-ramp-1.png",
+    "assets/artist/masks/far-ramp-2.png",
+    "assets/artist/masks/far-ramp-3.png",
+    "assets/artist/masks/receiver-01-front.png",
+    "assets/artist/masks/receiver-01-left-rim.png",
+    "assets/artist/masks/receiver-01-right-rim.png",
+    "assets/artist/masks/receiver-02-front.png",
+    "assets/artist/masks/receiver-02-left-rim.png",
+    "assets/artist/masks/receiver-02-right-rim.png",
+    "assets/artist/masks/receiver-03-front.png",
+    "assets/artist/masks/receiver-03-left-rim.png",
+    "assets/artist/masks/receiver-03-right-rim.png",
+    "assets/artist/masks/receiver-04-front.png",
+    "assets/artist/masks/receiver-04-left-rim.png",
+    "assets/artist/masks/receiver-04-right-rim.png",
+    "assets/artist/masks/platform-divider-1.png",
+    "assets/artist/masks/platform-divider-2.png",
+    "assets/artist/masks/platform-divider-3.png"
+  ],
+  "served": [
+    {
+      "path": "app.js",
+      "bytes": 14793,
+      "sha256": "760c9bada40cb3ecb944f332f6efa91bb3c1340ce7f1ad9c2cabeda4dca0a3e6",
+      "mime": "text/javascript; charset=utf-8"
+    },
+    {
+      "path": "assets/artist/assets.json",
+      "bytes": 18588,
+      "sha256": "ef5eb34be622f5ce6356d6fa51d7902c334a1f1f3c95acce225d7340928bbc29",
+      "mime": "application/json"
+    },
+    {
+      "path": "assets/artist/assets/ball.png",
+      "bytes": 995000,
+      "sha256": "c40b8e5fd774b0b03979bd52eb0c19b23b4fee0a009b6e0fa8cc1d93c8c3935f",
+      "mime": "image/png"
+    },
+    {
+      "path": "assets/artist/assets/shadow.png",
+      "bytes": 534365,
+      "sha256": "8c27af99276d888ad05dfaa5138808261b20ed7b3ef9cbd7071e15d6c7ee1c99",
+      "mime": "image/png"
+    },
+    {
+      "path": "assets/artist/handoff.json",
+      "bytes": 10177,
+      "sha256": "8a544bf2ac42859c9beaf7c2018c7246f4cda39cb0259cd8dc081841780dda9f",
+      "mime": "application/json"
+    },
+    {
+      "path": "assets/artist/masks/block-01-front.png",
+      "bytes": 1306,
+      "sha256": "eb420032649e63bab83c0653e261a2b9e93b2c31bff41eab75cebabe5e8e5be8",
+      "mime": "image/png"
+    },
+    {
+      "path": "assets/artist/masks/block-01-side.png",
+      "bytes": 1316,
+      "sha256": "6d70cae33cceea2d9631a0ee7216324f480528c63e9e6ed4573b0fc83e3e92cf",
+      "mime": "image/png"
+    },
+    {
+      "path": "assets/artist/masks/block-02-front.png",
+      "bytes": 1314,
+      "sha256": "fc0bd4b731ef965cba50eadd0a237eed63bcee6ec558a56686f77e595429e19e",
+      "mime": "image/png"
+    },
+    {
+      "path": "assets/artist/masks/block-02-side.png",
+      "bytes": 1111,
+      "sha256": "d56028f00a56a3264d51588120ef1685895137bb792f3a54745d53156ead04e9",
+      "mime": "image/png"
+    },
+    {
+      "path": "assets/artist/masks/block-03-front.png",
+      "bytes": 1296,
+      "sha256": "09d30fffd81446ca3bbfe968b9653e62ab5759103d830e652badbc4bca921985",
+      "mime": "image/png"
+    },
+    {
+      "path": "assets/artist/masks/block-03-side.png",
+      "bytes": 1306,
+      "sha256": "f59dab8387859628e43e8b8d17119e772559a80f894066c34e646f874f5d32f8",
+      "mime": "image/png"
+    },
+    {
+      "path": "assets/artist/masks/block-04-front.png",
+      "bytes": 1418,
+      "sha256": "d00e6fc8583d7b56be09e0a0e6040291bc0b8ef18b9f3c39c159f4494c38fd1a",
+      "mime": "image/png"
+    },
+    {
+      "path": "assets/artist/masks/block-04-side.png",
+      "bytes": 1487,
+      "sha256": "832e76508878c756f53d5317e29b368021631ed8d521a39af973792ccd2ea171",
+      "mime": "image/png"
+    },
+    {
+      "path": "assets/artist/masks/block-05-front.png",
+      "bytes": 1580,
+      "sha256": "aa6051686c797651e20dbec7d3fe202fc459754a721b9f39adc54652c2fa238a",
+      "mime": "image/png"
+    },
+    {
+      "path": "assets/artist/masks/block-05-side.png",
+      "bytes": 1475,
+      "sha256": "ac28a8d6eedbc04cb389cb0e947cc414a28ef15e2e275a973a00bf6f7d1daf2a",
+      "mime": "image/png"
+    },
+    {
+      "path": "assets/artist/masks/block-06-front.png",
+      "bytes": 1363,
+      "sha256": "e6658f093b86f333dd46a58ed7892dbd743c2ad3d55b8c8cd3fb0182a6be79c3",
+      "mime": "image/png"
+    },
+    {
+      "path": "assets/artist/masks/block-06-side.png",
+      "bytes": 1529,
+      "sha256": "be3b089c919b5769ce93690deaa3552e2ba6794dada648934843aa860d8484a8",
+      "mime": "image/png"
+    },
+    {
+      "path": "assets/artist/masks/bowl-base-01.png",
+      "bytes": 2285,
+      "sha256": "6433c5c2867a9d19dd0e5d0a9eccd55190965ab6599aac8113899163eb799f4f",
+      "mime": "image/png"
+    },
+    {
+      "path": "assets/artist/masks/bowl-base-02.png",
+      "bytes": 2323,
+      "sha256": "6c1ee521ef9d5ceac648dfabb352394c8f42e30d304f2e0ea0826f73a5251647",
+      "mime": "image/png"
+    },
+    {
+      "path": "assets/artist/masks/bowl-base-03.png",
+      "bytes": 2193,
+      "sha256": "946e4320ed800aca8637436bbbbdd4782186d880136008adb1dda7a799b637a7",
+      "mime": "image/png"
+    },
+    {
+      "path": "assets/artist/masks/bowl-base-04.png",
+      "bytes": 2537,
+      "sha256": "bbcf205925a6ab4ef6de72d4d70f3ef62ceb1a73f4c14ff872e36e2fe82f23c4",
+      "mime": "image/png"
+    },
+    {
+      "path": "assets/artist/masks/bowl-base-05.png",
+      "bytes": 2554,
+      "sha256": "a9c53fbf7ff6132aa5237b4718646c4bab3236238a9d77ca25434f07c72691b1",
+      "mime": "image/png"
+    },
+    {
+      "path": "assets/artist/masks/bowl-base-06.png",
+      "bytes": 2853,
+      "sha256": "f14bcbacf53c205886616d2596383def42027fcdf1a84eb624ccb7ff54397b23",
+      "mime": "image/png"
+    },
+    {
+      "path": "assets/artist/masks/far-ramp-1.png",
+      "bytes": 1443,
+      "sha256": "83e441d56d7caea066feb83729d34f778bc8a2309304f007bcbb607d6767f1ef",
+      "mime": "image/png"
+    },
+    {
+      "path": "assets/artist/masks/far-ramp-2.png",
+      "bytes": 1108,
+      "sha256": "8b7dc0e90e2748d8ee4cf0ebbabe127a5d3a097236fd1e1c7cb2f82fd173f4a4",
+      "mime": "image/png"
+    },
+    {
+      "path": "assets/artist/masks/far-ramp-3.png",
+      "bytes": 1098,
+      "sha256": "9276077fba4703fc519b7aea0953df668e844451206fef53b2217c3cbc3e2a7d",
+      "mime": "image/png"
+    },
+    {
+      "path": "assets/artist/masks/pillar-01-front.png",
+      "bytes": 1163,
+      "sha256": "9bc27dc42b82738b57b77adb9b32e4487fd790e00dff087464c3b57094f6a7c5",
+      "mime": "image/png"
+    },
+    {
+      "path": "assets/artist/masks/pillar-01-side.png",
+      "bytes": 461,
+      "sha256": "2e7cf9a2d29efd78d93c2ecb7065162361bef448921a102160237edbd5b17bd3",
+      "mime": "image/png"
+    },
+    {
+      "path": "assets/artist/masks/pillar-02-front.png",
+      "bytes": 1385,
+      "sha256": "1ddd276cc8f2cb46a6805429a11a57f3a7529d20f2a36f4dd75c000902de1159",
+      "mime": "image/png"
+    },
+    {
+      "path": "assets/artist/masks/pillar-02-side.png",
+      "bytes": 433,
+      "sha256": "986bc230301cb0df50f4ec536875e4c65a7e46d92028c2f03a40ad2615428b4f",
+      "mime": "image/png"
+    },
+    {
+      "path": "assets/artist/masks/pillar-03-front.png",
+      "bytes": 1386,
+      "sha256": "facd906dd2764018ba56e4425f531ecbd3b71e040530b08333c3e1078db755f6",
+      "mime": "image/png"
+    },
+    {
+      "path": "assets/artist/masks/pillar-03-side.png",
+      "bytes": 409,
+      "sha256": "cfa16c03f2507e54b29a6e0cf1fe5b2a9cd298755c6f7927aafa57ac976f0d14",
+      "mime": "image/png"
+    },
+    {
+      "path": "assets/artist/masks/pillar-04-front.png",
+      "bytes": 1430,
+      "sha256": "8313485f4534d3c77e6f5202c81ed524d283ac0fa01ec815598a68f344a41c71",
+      "mime": "image/png"
+    },
+    {
+      "path": "assets/artist/masks/pillar-04-side.png",
+      "bytes": 403,
+      "sha256": "b23a1e0b699ad575cb054b9761d494cf021b1e3ae8bef6551c25cb340227347a",
+      "mime": "image/png"
+    },
+    {
+      "path": "assets/artist/masks/pillar-05-front.png",
+      "bytes": 1398,
+      "sha256": "7bc73f3f6b41b535ad71debbcccad504f505add3dc1ed331bfdc5ea2dc9fcf86",
+      "mime": "image/png"
+    },
+    {
+      "path": "assets/artist/masks/pillar-05-side.png",
+      "bytes": 590,
+      "sha256": "a4ff68ede6f2b5e8fa2b73803705edb850896318d32029a2882db8344aaa5b03",
+      "mime": "image/png"
+    },
+    {
+      "path": "assets/artist/masks/pillar-06-front.png",
+      "bytes": 1433,
+      "sha256": "57067ef6ed83d99f52dc884ab87d6282afc99e01a8522e88e968851377d8f23f",
+      "mime": "image/png"
+    },
+    {
+      "path": "assets/artist/masks/pillar-06-side.png",
+      "bytes": 508,
+      "sha256": "6ea9773570c32c7681bffafa7013ce6436b5e7473ffffec42744ffe09e484c02",
+      "mime": "image/png"
+    },
+    {
+      "path": "assets/artist/masks/platform-divider-1.png",
+      "bytes": 1482,
+      "sha256": "d468ca391e5ac6589a57f4b61bb9ce30e5dde4e14f41add68118287dfc892296",
+      "mime": "image/png"
+    },
+    {
+      "path": "assets/artist/masks/platform-divider-2.png",
+      "bytes": 1501,
+      "sha256": "da921d0ac4296d06a5bea79ead04439cfbbe4786a81634f88dc039033d8dfe0b",
+      "mime": "image/png"
+    },
+    {
+      "path": "assets/artist/masks/platform-divider-3.png",
+      "bytes": 1486,
+      "sha256": "09609fa26ab31f81bbf16bb616b57fb1b0654546210cc674d239c08fb1e373ec",
+      "mime": "image/png"
+    },
+    {
+      "path": "assets/artist/masks/rail-left-1.png",
+      "bytes": 5636,
+      "sha256": "1cba639fbefb3cc0179b311e1a00e02e54518c8053c42a426008d5bb5fe56e02",
+      "mime": "image/png"
+    },
+    {
+      "path": "assets/artist/masks/rail-left-2.png",
+      "bytes": 3832,
+      "sha256": "1d9141d5dab16cf273899ba597b04c191019f10fb3434e7542be43e9b45ac56d",
+      "mime": "image/png"
+    },
+    {
+      "path": "assets/artist/masks/rail-left-3.png",
+      "bytes": 4378,
+      "sha256": "6b41c46e760df963684a25f5d5856fa839ca10d798394064696676f74c93f11c",
+      "mime": "image/png"
+    },
+    {
+      "path": "assets/artist/masks/rail-right-1.png",
+      "bytes": 5447,
+      "sha256": "74546bd35ef309e470a86d59eb5f5116fb71f23412279d4f7bd2a7839ed07bb7",
+      "mime": "image/png"
+    },
+    {
+      "path": "assets/artist/masks/rail-right-2.png",
+      "bytes": 4037,
+      "sha256": "250b50835a167ea068705df4df033621e57f83fc0e14908363f55d26b66913b9",
+      "mime": "image/png"
+    },
+    {
+      "path": "assets/artist/masks/rail-right-3.png",
+      "bytes": 4313,
+      "sha256": "f4183f5abed4baf3e628745ecd9e761eaaaedd1a5f11014824f11a8b4df3cc21",
+      "mime": "image/png"
+    },
+    {
+      "path": "assets/artist/masks/receiver-01-front.png",
+      "bytes": 4380,
+      "sha256": "61d78e319645d7bd682929194761f041952aee9139689a8fd5e8a4294dbaa75a",
+      "mime": "image/png"
+    },
+    {
+      "path": "assets/artist/masks/receiver-01-left-rim.png",
+      "bytes": 2330,
+      "sha256": "acb6a79cdcd17611b5a7745626a7a022d161f2d75bf4cbdeca696b310776e71c",
+      "mime": "image/png"
+    },
+    {
+      "path": "assets/artist/masks/receiver-01-right-rim.png",
+      "bytes": 1956,
+      "sha256": "9bf84d88445057ee6ac11542b81fdc3bf15fda44adfe2454154ea994442323fe",
+      "mime": "image/png"
+    },
+    {
+      "path": "assets/artist/masks/receiver-02-front.png",
+      "bytes": 3921,
+      "sha256": "2b82f448782f607b8595757c99dda3cb406694ee0e5cfe0820f27fe3b59a1aef",
+      "mime": "image/png"
+    },
+    {
+      "path": "assets/artist/masks/receiver-02-left-rim.png",
+      "bytes": 1771,
+      "sha256": "f7c65a7271e126e5cf7d74210d5bbf297d3fb8d262b8c47b8df472faf0a00278",
+      "mime": "image/png"
+    },
+    {
+      "path": "assets/artist/masks/receiver-02-right-rim.png",
+      "bytes": 1523,
+      "sha256": "72f866ae745f5cfddaedd3d3ae785e3396625f646c98ca6383379120b49412e7",
+      "mime": "image/png"
+    },
+    {
+      "path": "assets/artist/masks/receiver-03-front.png",
+      "bytes": 3945,
+      "sha256": "40def0465b7f035abb5a21f52b285c447b32399e368b96f36c312b50fd1be118",
+      "mime": "image/png"
+    },
+    {
+      "path": "assets/artist/masks/receiver-03-left-rim.png",
+      "bytes": 1915,
+      "sha256": "2eb24516300e6c1c7e1734790aaa325e88045d6dd0c9b64a638c195f6f4290a4",
+      "mime": "image/png"
+    },
+    {
+      "path": "assets/artist/masks/receiver-03-right-rim.png",
+      "bytes": 1729,
+      "sha256": "5f36ec328b0f3188b5919a2a47bafb74bbb4d80ed212575d189be278fe3b45d8",
+      "mime": "image/png"
+    },
+    {
+      "path": "assets/artist/masks/receiver-04-front.png",
+      "bytes": 4131,
+      "sha256": "9fc6de0615fdba85f5e14c1c6dfe115df01df8a3d1eb51dc5a13c7e2de280b75",
+      "mime": "image/png"
+    },
+    {
+      "path": "assets/artist/masks/receiver-04-left-rim.png",
+      "bytes": 1751,
+      "sha256": "12e794e4f1e7d60a5a52f63422ca0940c0ba40ea24dbee0323723cf253749d3f",
+      "mime": "image/png"
+    },
+    {
+      "path": "assets/artist/masks/receiver-04-right-rim.png",
+      "bytes": 2039,
+      "sha256": "9de78a14fa4cec062d3f167d759f607faed235657665e94eda89d8786a9ac6cf",
+      "mime": "image/png"
+    },
+    {
+      "path": "assets/artist/masks/skull-base-01.png",
+      "bytes": 2070,
+      "sha256": "a492efdc6cbf4a3088161015a9727d3e2345d620152c00c2a524f1e8a7182c22",
+      "mime": "image/png"
+    },
+    {
+      "path": "assets/artist/masks/skull-base-02.png",
+      "bytes": 2119,
+      "sha256": "fd3dfcb1aed2bfa10cf5b84bf16658b27c0a172204eceb97304a6ecd41de8ebf",
+      "mime": "image/png"
+    },
+    {
+      "path": "assets/artist/masks/skull-base-03.png",
+      "bytes": 2383,
+      "sha256": "1f26535c3ddacc3a93ffd9d6ea6505ff88bf5a275640eb657de8372a44200752",
+      "mime": "image/png"
+    },
+    {
+      "path": "assets/artist/masks/skull-base-04.png",
+      "bytes": 2344,
+      "sha256": "f55aef10bb9c3cf4b0344b637f656323e02ff1c294bb5d4e3e2222b0e5c8a24f",
+      "mime": "image/png"
+    },
+    {
+      "path": "assets/artist/masks/skull-base-05.png",
+      "bytes": 2558,
+      "sha256": "ecd08c065d6731bd09aac55556df4a7a2510f51c2900b5bd79891c18c9425541",
+      "mime": "image/png"
+    },
+    {
+      "path": "assets/artist/masks/skull-base-06.png",
+      "bytes": 2720,
+      "sha256": "5210b1e901fecf6a6ea693698bcd6f8b861fa820c17cfc0312261b8b084b5c8c",
+      "mime": "image/png"
+    },
+    {
+      "path": "assets/source.jpg",
+      "bytes": 536988,
+      "sha256": "7ceff71bd0a871fecd725527dff5522450c8e75a74eb99c107b5d8624bf8fa3a",
+      "mime": "image/jpeg"
+    },
+    {
+      "path": "build.json",
+      "bytes": 2677,
+      "sha256": "0c4f163b88c2fb9a34755245d76e337102974a5a9a5cba75b41c3e6dbb20fe75",
+      "mime": "application/json"
+    },
+    {
+      "path": "data/config.json",
+      "bytes": 19508,
+      "sha256": "14be2a023833d266d1e333bf582af5fd5885deb445698c10ebd846ef0cc080b2",
+      "mime": "application/json"
+    },
+    {
+      "path": "data/manifest.json",
+      "bytes": 13939,
+      "sha256": "3fab422bd1f74d477d1648620c97ad6d7b8b0a55a70a1102d6e6885def564d81",
+      "mime": "application/json"
+    },
+    {
+      "path": "data/projection.json",
+      "bytes": 39956,
+      "sha256": "4dfa46589bb3fdfc8e2ad8ff2554737697e3ce9172c5b8d5c5583577df0c8c48",
+      "mime": "application/json"
+    },
+    {
+      "path": "index.html",
+      "bytes": 3157,
+      "sha256": "15233d8e0e89ed6d59b28c5ef09267c5d72301b2a57018e06a475239328b10b7",
+      "mime": "text/html; charset=utf-8"
+    },
+    {
+      "path": "native-core.js",
+      "bytes": 21490,
+      "sha256": "af8e6dea9ee5c46759f99ba3b68f4afa91c740b4fd2aba2d2d3f65bfa66753fa",
+      "mime": "text/javascript; charset=utf-8"
+    },
+    {
+      "path": "replays/dark-seed-0-tick-365.json",
+      "bytes": 21807,
+      "sha256": "380717169b781272ccd0da492e4cea78fbe09909e235efcadb6c3b6e489a040b",
+      "mime": "application/json"
+    },
+    {
+      "path": "replays/dark-seed-0-tick-839.json",
+      "bytes": 21806,
+      "sha256": "91ffb644be807bcc19ea88819f9df04a47225652a12ae594857c77ddbc8e5e88",
+      "mime": "application/json"
+    },
+    {
+      "path": "replays/dark-seed-0-tick-880.json",
+      "bytes": 21805,
+      "sha256": "6a9090fe67010ac2cca4c4eaf1e1bb26d0517c08999001ff40ff56b9c304c92b",
+      "mime": "application/json"
+    },
+    {
+      "path": "replays/dark-seed-0-tick-888.json",
+      "bytes": 21887,
+      "sha256": "18ac511d13fd3cb8f7b83fabc78905113f49aab932805185c5566155329ffbc5",
+      "mime": "application/json"
+    },
+    {
+      "path": "replays/dark-seed-1-tick-884.json",
+      "bytes": 21888,
+      "sha256": "b29a5f92562a634edd4ef3575254c5a3955b3ef14d8bcf8de6d59daf56da9ebb",
+      "mime": "application/json"
+    },
+    {
+      "path": "replays/dark-seed-1189667321-tick-1470.json",
+      "bytes": 21931,
+      "sha256": "33f0bedbc2ff293898ffbf82fe95140b0c706a977f7c43c6c4f3c7015aeb7d0a",
+      "mime": "application/json"
+    },
+    {
+      "path": "replays/dark-seed-1551806092-tick-971.json",
+      "bytes": 21904,
+      "sha256": "f2614a50f2d72d86b50da360175a87b4f88a36186588a175de9b9c35fbc2f9a0",
+      "mime": "application/json"
+    },
+    {
+      "path": "replays/dark-seed-2-tick-1812.json",
+      "bytes": 21913,
+      "sha256": "6d5a273d954c0fed465b7e91aae32ae643147dbebf52569e6eb3ce4bf8d81a97",
+      "mime": "application/json"
+    },
+    {
+      "path": "replays/dark-seed-2-tick-896.json",
+      "bytes": 21805,
+      "sha256": "0388a9deba665e2016c0cc663ec01ac3afcf855e2c4cd8252e94cc39db24e126",
+      "mime": "application/json"
+    },
+    {
+      "path": "replays/index.json",
+      "bytes": 2082,
+      "sha256": "a4f5a042d809579de5a0969d728d5d8387276ed92f437d978dbfe12b1fd244aa",
+      "mime": "application/json"
+    },
+    {
+      "path": "run-model.js",
+      "bytes": 2646,
+      "sha256": "e5fba420926c045c50b7c814d5760b8f8205982ccb36482f23659acb166a7ccd",
+      "mime": "text/javascript; charset=utf-8"
+    },
+    {
+      "path": "style.css",
+      "bytes": 2256,
+      "sha256": "9dc0e5b447e59f6cbef6cfd5b24d1c9edbcda0154c01a728ac12b0b5fa1f38a9",
+      "mime": "text/css; charset=utf-8"
+    },
+    {
+      "path": "vendor/PIXI-LICENSE.txt",
+      "bytes": 1092,
+      "sha256": "5ce7447bc57f7349ffc48338782fbcabe613696e00712b20d66bc58e780f9473",
+      "mime": "text/plain; charset=utf-8"
+    },
+    {
+      "path": "vendor/pixi.js",
+      "bytes": 841282,
+      "sha256": "a073adb40aaa803fd19066c21997a09f895397e98a5555be8bd0a7c57873d4ef",
+      "mime": "text/javascript; charset=utf-8"
+    },
+    {
+      "path": "view-math.js",
+      "bytes": 3050,
+      "sha256": "96f01cc2093c353ff958cb906fe0c8ae93412425d0f7a5ec7cca0f2bf9f1aa5e",
+      "mime": "text/javascript; charset=utf-8"
+    },
+    {
+      "path": "file-manifest.json",
+      "bytes": 14842,
+      "sha256": "b3923f4ccab57a8361a9dc8f64de73fcee9b70fb38c87aac5e9623fbc62d0307",
+      "mime": "application/json"
+    }
+  ],
+  "privacy": [],
+  "declaredSourceAssetReferences": [
+    "data/manifest.json",
+    "data/projection.json"
+  ],
+  "compiledNativeReusedByExactHash": true
+}

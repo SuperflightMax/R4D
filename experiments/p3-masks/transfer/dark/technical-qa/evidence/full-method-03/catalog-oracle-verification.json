@@ -1,0 +1,61 @@
+{
+  "candidate": "dark-full-method-03",
+  "manifestHash": "b3923f4ccab57a8361a9dc8f64de73fcee9b70fb38c87aac5e9623fbc62d0307",
+  "utc": "2026-10-29T10:57:08.129Z",
+  "runs": [
+    {
+      "seed": 0,
+      "lastTick": 888,
+      "result": {
+        "kind": "IN_BUCKET",
+        "bucketId": "receiver-01"
+      },
+      "ticksCompared": 889,
+      "traceSha256": "5a6ebcc0dbb12205e60e39600eba369fd9764be3557544fb09851128c71191b4"
+    },
+    {
+      "seed": 1,
+      "lastTick": 884,
+      "result": {
+        "kind": "IN_BUCKET",
+        "bucketId": "receiver-01"
+      },
+      "ticksCompared": 885,
+      "traceSha256": "a51f4791d2e74acbf4116d49f4f36da3a4f25ab87e8269d54a9c6d875b52d521"
+    },
+    {
+      "seed": 2,
+      "lastTick": 1812,
+      "result": {
+        "kind": "LOST",
+        "finalX": 32824.3930072,
+        "nearMissBucketIds": []
+      },
+      "ticksCompared": 1813,
+      "traceSha256": "4d3df492aef15e4d6deb4b494239ac92e66675e414fa928644bd13cc227ddeda"
+    },
+    {
+      "seed": 1189667321,
+      "lastTick": 1470,
+      "result": {
+        "kind": "LOST",
+        "finalX": 34262.9555904,
+        "nearMissBucketIds": []
+      },
+      "ticksCompared": 1471,
+      "traceSha256": "c71d256d79b1df64e1611f77521f1ba64942eeae97acccc9662c3d44271fec05"
+    },
+    {
+      "seed": 1551806092,
+      "lastTick": 971,
+      "result": {
+        "kind": "IN_BUCKET",
+        "bucketId": "receiver-02"
+      },
+      "ticksCompared": 972,
+      "traceSha256": "a100d6fd49b1fbd85069686ee9fd82da087504e5c5d7d4f59c533923977898fa"
+    }
+  ],
+  "savedCheckpoints": 9,
+  "wrongBoardAndTamperedRngRejected": true
+}
