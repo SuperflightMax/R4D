@@ -6,6 +6,13 @@ Dark принимает board02 trial01 и собственный source; Water 
 
 ## PRODUCTION_STARTED — candidate/QA/publish ещё нет
 
+VQA matrices на русском `0ed5d4bae632e4fa3fd370ffeed193ab1d48c214`
+интегрированы: [PREPARATION.md](../visual-qa/PREPARATION.md).
+Dark cases PENDING. VQA сейчас делает раннюю Water диагностику, это не Dark
+выдача и не вторая QA одной роли; Dark frozen handoff будет отдельным.
+Artist сообщил36obstacle regions Dark с раздельными faces и oriented depth
+lines; добавляет borders/baskets. Exact полного Dark art handoff ещё нет.
+
 TQA input preparation completed/idle, commit
 `fe09f8e37cff8352dbe629e28bd3e4e2c0e019aa` прочитан и интегрирован:
 [Dark input state](../technical-qa/STATE.md). Predeclared native seeds:

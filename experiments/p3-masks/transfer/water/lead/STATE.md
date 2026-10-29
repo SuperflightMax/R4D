@@ -7,6 +7,37 @@ Worktree `E:\R4D\perspective\p3-worktrees\lead`, прежняя branch
 
 ## PRODUCTION_STARTED — candidate/QA/publish ещё нет
 
+Первый реальный видимый Water checkpoint: `early-art-02`, source
+`f3b7ce8d94b0a9173c48d7ca6defb3837a10ed03`, ART
+`4eb4001d8036048f716d9e7ab45bb560f3840cf6`, manifest
+`4221b9606f95304bde0862c74235e534573a7f1cfdada8c4b109320965f8ebcf`.
+Path `E:\R4D\perspective\p3-runtime\builder\transfer-water-dark\water\early-art-02`.
+Own Builder URL `http://127.0.0.1:6868/review/r4d/p3-masks-water/`,
+PID17640/session89871. Это именно ранний7mask стык; full candidate ещё нет.
+Lead реально открыл running seed1/t56 screenshot и paused1014/1015/1016
+из `water\evidence\browser-early02`; HUD ticks совпали. Первая видимая сцена
+получена около23 активных минут после передачи, CTO адресно уведомлён;
+полный2–3ч/4–6ч ориентир пока не пересматривается.
+
+Шар виден в arch07 opening. Доля видимого шара меняется1014→1015;
+проверяется корректность постепенного раскрытия/threshold transition,
+без преждевременного defect/PASS. Builder сохранил13frames1006–1018 и
+ordinary run LOST1196. VQA после fresh idle адресно возобновлён с прежними
+model/thinking только на раннюю независимую Water диагностику этой версии:
+actual turn `01a18718-4c71-7cb1-b9cd-b31bd20f16cf`, active/errornull.
+Builder получил hold этой версии6868 до окончания чтения VQA. Full build
+готовится отдельно, immutable bytes не переписываются.
+
+VQA fresh host: RAMfree16.08GiB,E11.92GiB,CPU0%,C16.25/D16.28GiB;
+его extra≤1GiB RAM/128MiB E. Даже консервативная совокупная верхняя
+≤5GiB/2.125GiB укладывается в фактические остатки; исходная4GiB оценка
+уже включала QA. TQA/Release idle, Root новых browsers/servers не запускает.
+Никакого резервирования или отмены свежих проверок/порогов E нет.
+
+VQA матрицы на русском `0ed5d4bae632e4fa3fd370ffeed193ab1d48c214`
+интегрированы: [PREPARATION.md](../visual-qa/PREPARATION.md).
+Все candidate cases ещё PENDING; ранняя диагностика не заменяет fullQA.
+
 Первый применимый ART checkpoint получен/адресно передан Builder:
 `4eb4001d8036048f716d9e7ab45bb560f3840cf6`, prefix
 `experiments/p3-masks/transfer/water/asset-artist/`.
