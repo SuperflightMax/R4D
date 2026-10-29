@@ -1,0 +1,82 @@
+{
+  "token": "CTO-P3-WD04-V3-20261029T163518Z-d69a711f4777",
+  "scopeSha256": "726cb8e2e568bb4ba4a5e89ee637f323acbfc03fb093cf626c03d9efc229a564",
+  "scriptSha256": "6280d062adc4b4cf561980c8ecfd3439e1542561747219ddcd6833d8aa40add9",
+  "status": "BACKUP_CREATED",
+  "backupUtc": "2026-10-29T16:38:36.499234+00:00",
+  "beforeHttp": [
+    {
+      "path": "/review/",
+      "foreignOrigin": false,
+      "startedUtc": "2026-10-29T16:38:36.310791+00:00",
+      "status": 200,
+      "headers": {
+        "Location": null,
+        "X-Frame-Options": "DENY",
+        "Cache-Control": "no-store",
+        "X-Robots-Tag": "noindex, nofollow, noarchive",
+        "X-Content-Type-Options": "nosniff",
+        "Referrer-Policy": "same-origin",
+        "Content-Type": "text/html"
+      },
+      "bodyComplete": true,
+      "responseUtc": "2026-10-29T16:38:36.380833+00:00",
+      "bodyBytes": 14511,
+      "bodySha256": "eb57e35bcebbe4a639b92c625f23de5efb90ae2c15da8a3996ca653fb61a6885"
+    },
+    {
+      "path": "/review/",
+      "foreignOrigin": true,
+      "startedUtc": "2026-10-29T16:38:36.382248+00:00",
+      "status": 403,
+      "headers": {
+        "Location": null,
+        "X-Frame-Options": "DENY",
+        "Cache-Control": "no-store",
+        "X-Robots-Tag": "noindex, nofollow, noarchive",
+        "X-Content-Type-Options": "nosniff",
+        "Referrer-Policy": "same-origin",
+        "Content-Type": "text/html"
+      },
+      "bodyComplete": true,
+      "responseUtc": "2026-10-29T16:38:36.429539+00:00",
+      "bodyBytes": 146,
+      "bodySha256": "32f2fa940d4b4fe19aca1e53a24e5aac29c57b7c5ee78588325b87f1b649c864"
+    },
+    {
+      "path": "/review/.p3-combined-probe",
+      "foreignOrigin": false,
+      "startedUtc": "2026-10-29T16:38:36.431342+00:00",
+      "status": 404,
+      "headers": {
+        "Location": null,
+        "X-Frame-Options": "DENY",
+        "Cache-Control": "no-store",
+        "X-Robots-Tag": "noindex, nofollow, noarchive",
+        "X-Content-Type-Options": "nosniff",
+        "Referrer-Policy": "same-origin",
+        "Content-Type": "text/html"
+      },
+      "bodyComplete": true,
+      "responseUtc": "2026-10-29T16:38:36.493177+00:00",
+      "bodyBytes": 146,
+      "bodySha256": "55f7d9e99b8e2d4e0e193b2f0275501e6d9c1ebd29cadbea6a0da48a8587e3e0"
+    }
+  ],
+  "resourcesBeforeWrite": {
+    "utc": "2026-10-29T16:38:36.310656+00:00",
+    "memBytes": {
+      "MemTotal": 11575050240,
+      "MemAvailable": 5232513024
+    },
+    "cpuCount": 4,
+    "loadAverage": [
+      0.9609375,
+      0.978515625,
+      0.97607421875
+    ],
+    "diskFreeBytes": 30236565504
+  },
+  "oldRoot": "/srv/superflight-review/releases/p5-jungle-regenerated-candidate-03",
+  "newRoot": "/srv/superflight-review/releases/p3-water-dark-front-edge-04"
+}

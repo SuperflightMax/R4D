@@ -1,0 +1,87 @@
+{
+  "status": "PREFLIGHT_PASS",
+  "utc": "2026-10-29T16:38:02.556788+00:00",
+  "euid": 0,
+  "resources": {
+    "utc": "2026-10-29T16:38:02.264677+00:00",
+    "memBytes": {
+      "MemTotal": 11575050240,
+      "MemAvailable": 5203599360
+    },
+    "cpuCount": 4,
+    "loadAverage": [
+      1.2958984375,
+      1.03173828125,
+      0.990234375
+    ],
+    "diskFreeBytes": 30236729344
+  },
+  "serverWrites": false,
+  "httpObservations": [
+    {
+      "path": "/review/",
+      "foreignOrigin": false,
+      "startedUtc": "2026-10-29T16:38:02.265016+00:00",
+      "status": 200,
+      "headers": {
+        "Location": null,
+        "X-Frame-Options": "DENY",
+        "Cache-Control": "no-store",
+        "X-Robots-Tag": "noindex, nofollow, noarchive",
+        "X-Content-Type-Options": "nosniff",
+        "Referrer-Policy": "same-origin",
+        "Content-Type": "text/html"
+      },
+      "bodyComplete": true,
+      "responseUtc": "2026-10-29T16:38:02.352899+00:00",
+      "bodyBytes": 14511,
+      "bodySha256": "eb57e35bcebbe4a639b92c625f23de5efb90ae2c15da8a3996ca653fb61a6885"
+    },
+    {
+      "path": "/review/",
+      "foreignOrigin": true,
+      "startedUtc": "2026-10-29T16:38:02.356085+00:00",
+      "status": 403,
+      "headers": {
+        "Location": null,
+        "X-Frame-Options": "DENY",
+        "Cache-Control": "no-store",
+        "X-Robots-Tag": "noindex, nofollow, noarchive",
+        "X-Content-Type-Options": "nosniff",
+        "Referrer-Policy": "same-origin",
+        "Content-Type": "text/html"
+      },
+      "bodyComplete": true,
+      "responseUtc": "2026-10-29T16:38:02.452386+00:00",
+      "bodyBytes": 146,
+      "bodySha256": "32f2fa940d4b4fe19aca1e53a24e5aac29c57b7c5ee78588325b87f1b649c864"
+    },
+    {
+      "path": "/review/.p3-combined-probe",
+      "foreignOrigin": false,
+      "startedUtc": "2026-10-29T16:38:02.458774+00:00",
+      "status": 404,
+      "headers": {
+        "Location": null,
+        "X-Frame-Options": "DENY",
+        "Cache-Control": "no-store",
+        "X-Robots-Tag": "noindex, nofollow, noarchive",
+        "X-Content-Type-Options": "nosniff",
+        "Referrer-Policy": "same-origin",
+        "Content-Type": "text/html"
+      },
+      "bodyComplete": true,
+      "responseUtc": "2026-10-29T16:38:02.555305+00:00",
+      "bodyBytes": 146,
+      "bodySha256": "55f7d9e99b8e2d4e0e193b2f0275501e6d9c1ebd29cadbea6a0da48a8587e3e0"
+    }
+  ],
+  "baselineMetadataSha256": "ed789cd60a3de3287f9a4456e68f9707df09d8487f2026d2111beee05e4d7a98",
+  "absentTargets": [
+    "/srv/superflight-review/releases/p3-water-dark-front-edge-04",
+    "/opt/superflight-studio/backups/review-p3-water-dark-front-edge-04",
+    "/etc/nginx/snippets/.review-p3-water-dark-front-edge-04.locations.conf.tmp",
+    "/srv/superflight-review/releases/p5-jungle-regenerated-candidate-03/review/r4d/p3-masks-water",
+    "/srv/superflight-review/releases/p5-jungle-regenerated-candidate-03/review/r4d/p3-masks-dark"
+  ]
+}

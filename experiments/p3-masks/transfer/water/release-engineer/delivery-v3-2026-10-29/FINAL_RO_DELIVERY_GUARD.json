@@ -1,0 +1,97 @@
+{
+  "status": "FINAL_RO_DELIVERY_GUARD_PASS",
+  "utc": "2026-10-29T16:44:58.033623+00:00",
+  "euid": 0,
+  "oldRoot": "/srv/superflight-review/releases/p5-jungle-regenerated-candidate-03",
+  "oldCount": {
+    "files": 674,
+    "directories": 88,
+    "bytes": 122587862
+  },
+  "oldMetadataSha256": "ed789cd60a3de3287f9a4456e68f9707df09d8487f2026d2111beee05e4d7a98",
+  "newRoot": "/srv/superflight-review/releases/p3-water-dark-front-edge-04",
+  "newCount": {
+    "files": 868,
+    "directories": 104,
+    "bytes": 129749260
+  },
+  "newMetadataSha256": "71419d91cc132a8d63d1be21718e0f20c72a796ff65decbaf6b4c7de796c9f65",
+  "oldManifestSha256": "b54342562a030361fb705d63b52750018956ea3cdfea204450f48a6bbeced9c5",
+  "newManifestSha256": "e8a801faf58b670fd2b2cb7ba1c327d20c025593c75881915ae7d211f2fcf3f3",
+  "liveSnippetSha256": "f7948d10efb040e83c15d86df26866aed9a5a90eb53bf85c7fd0206c05d1200e",
+  "normalizedSnippetSha256": "a6b469d123e41d2e7ab51c37120c0d8b1d1595107e0e437319a08a561ece945f",
+  "beforeSnippetSha256": "e2a466db57830bddb9003361028f99c132504ed3e12a632918898cd6c2a51224",
+  "remoteArchiveSha256": "0cee1516db37cb2ac8a38fec54214c47483f8bea755a71dbd0d04a244b3c9fbb",
+  "foreignFileRowsPreserved": 672,
+  "baselineDirectoryRowsPreserved": 88,
+  "jungleFilesPreserved": 77,
+  "frozenFilesVerified": 194,
+  "frozenBytesVerified": 7088324,
+  "docsAppendProofs": [
+    {
+      "before": {
+        "path": "/home/sf/assistant-context/vps/services/superflight-studio.md",
+        "inode": 2922368,
+        "uid": 1003,
+        "gid": 27,
+        "mode": 416,
+        "bytes": 85029,
+        "sha256": "052f8d7cc660cf21eee0613e1006f83eb306880fc40c3b0fb86e3429b2357b27"
+      },
+      "after": {
+        "path": "/home/sf/assistant-context/vps/services/superflight-studio.md",
+        "inode": 2922368,
+        "uid": 1003,
+        "gid": 27,
+        "mode": 416,
+        "bytes": 87360,
+        "sha256": "cd06c3e0b11174dca162131181bc5b57131bb26338c672857aeac95f7a7c07d0",
+        "prefixBytes": 85029,
+        "prefixSha256": "052f8d7cc660cf21eee0613e1006f83eb306880fc40c3b0fb86e3429b2357b27"
+      },
+      "originalPrefixAndMetadataPreserved": true
+    },
+    {
+      "before": {
+        "path": "/home/sf/assistant-context/vps/CHANGELOG.md",
+        "inode": 2884515,
+        "uid": 1003,
+        "gid": 27,
+        "mode": 416,
+        "bytes": 299916,
+        "sha256": "415a20f3971826d3e623735035a157f47dce5672be9fa8b9312c15ffc8e39428"
+      },
+      "after": {
+        "path": "/home/sf/assistant-context/vps/CHANGELOG.md",
+        "inode": 2884515,
+        "uid": 1003,
+        "gid": 27,
+        "mode": 416,
+        "bytes": 302247,
+        "sha256": "1470259976c2047a507feb952d7a8cca3813a40582568cec2ec66ad191cb6b9d",
+        "prefixBytes": 299916,
+        "prefixSha256": "415a20f3971826d3e623735035a157f47dce5672be9fa8b9312c15ffc8e39428"
+      },
+      "originalPrefixAndMetadataPreserved": true
+    }
+  ],
+  "publicChecks": 217,
+  "httpStatusCounts": {
+    "200": 215,
+    "403": 1,
+    "404": 1
+  },
+  "approvedPayloadsVerified": 197,
+  "publicModuleMimeBodyVerified": true,
+  "limitedResources": 0,
+  "nginxActive": true,
+  "tempAbsent": true,
+  "publishedRecordSha256": "8bdcaf51ae46d73be24935b64358c589ea9ff8aa9935e92526447d6067531e3b",
+  "stateEqualsPublished": true,
+  "switchUtc": "2026-10-29T16:40:46.555575+00:00",
+  "postchecksUtc": "2026-10-29T16:41:37.142460+00:00",
+  "documentedUtc": "2026-10-29T16:42:54.265087+00:00",
+  "rollbackPerformed": false,
+  "windowReleasedByEngineer": false,
+  "extraHttpRequests": 0
+}
