@@ -1,0 +1,552 @@
+{
+  "schema": "r4d.p5.transfer.visual-source-facts.v1",
+  "board": "dark",
+  "preparedAtUTC": "2026-10-29T23:25:09.186582+00:00",
+  "status": "REFERENCE_INPUT_PREPARATION_ONLY_ACTUAL_MOTION_UNVERIFIED",
+  "canonicalRevision": "b1382dd4c230815a019e52e2ec4617ef705661d5",
+  "transferOrderBlob": "09f33f99d771ab28b9575de1a358acc40b4d571c",
+  "commonInputFile": "E:\\R4D\\perspective\\coordination\\p4-p5-transfer-common-inputs-2026-10-29.json",
+  "commonInputFileSha256": "497eb8cca3aa7413254a85b18d98a1e7dfde66d9779c39fc6b5932a21f2b4946",
+  "acceptedP1Revision": "4b47db04c7140ebf88f69b91faa0b790d46f22ec",
+  "activeTrial": "trial-01",
+  "source": {
+    "source": "K:\\Agents\\R4D\\Assets\\perspective\\02-dark-temple.jpg",
+    "bytes": 536988,
+    "sha256": "7ceff71bd0a871fecd725527dff5522450c8e75a74eb99c107b5d8624bf8fa3a",
+    "dimensionsPx": [
+      1536,
+      1536
+    ],
+    "commonInputFile": "E:\\R4D\\perspective\\coordination\\p4-p5-transfer-common-inputs-2026-10-29.json",
+    "commonInputSha256": "497eb8cca3aa7413254a85b18d98a1e7dfde66d9779c39fc6b5932a21f2b4946"
+  },
+  "verifiedInputs": [
+    {
+      "revision": "4b47db04c7140ebf88f69b91faa0b790d46f22ec",
+      "path": "experiments/p1-collider-mapping/clean-repeat-01/simulation/boards/02/trial-01/config.json",
+      "bytes": 19508,
+      "sha256": "14be2a023833d266d1e333bf582af5fd5885deb445698c10ebd846ef0cc080b2",
+      "ownRuntimeCopy": "E:\\R4D\\perspective\\p5-runtime\\visual-qa\\transfer-water-dark\\dark\\inputs\\config.json"
+    },
+    {
+      "revision": "4b47db04c7140ebf88f69b91faa0b790d46f22ec",
+      "path": "experiments/p1-collider-mapping/clean-repeat-01/simulation/boards/02/trial-01/manifest.json",
+      "bytes": 13939,
+      "sha256": "3fab422bd1f74d477d1648620c97ad6d7b8b0a55a70a1102d6e6885def564d81",
+      "ownRuntimeCopy": "E:\\R4D\\perspective\\p5-runtime\\visual-qa\\transfer-water-dark\\dark\\inputs\\manifest.json"
+    },
+    {
+      "revision": "4b47db04c7140ebf88f69b91faa0b790d46f22ec",
+      "path": "experiments/p1-collider-mapping/clean-repeat-01/viewer/src/view-math.mjs",
+      "bytes": 3050,
+      "sha256": "96f01cc2093c353ff958cb906fe0c8ae93412425d0f7a5ec7cca0f2bf9f1aa5e",
+      "ownRuntimeCopy": "E:\\R4D\\perspective\\p5-runtime\\visual-qa\\transfer-water-dark\\dark\\inputs\\view-math.mjs"
+    }
+  ],
+  "methodBaseline": {
+    "jungleResult": "df0d95f40e60991632c885f0bc53d32497a090e7",
+    "consumer": "af23e124cf5bd1d9de884082ffbc993448217112",
+    "art": "a5ec68fb2ed6aeacd8c66bc575166567bd0c3966",
+    "independentVQA": "e227f3874c19539b7d38f0b8d318a911e7db2915"
+  },
+  "native": {
+    "sourceCommit": "5a6fa03f1cdb3de88a2d9c7dbe795eb8e2a7f023",
+    "packageTree": "008d16a80a26bb77d562a45218b01da09b0d9ff0",
+    "useExistingAuthorizedOwnPrivateRuntime": true,
+    "rawSourcesOrMapsPublic": false,
+    "physics": "r16;tick5ms;quantize7;g980;maxspeed2000;angleDeviation2deg;bounceDeviation0.02;lcg32. Обычный новый бросок меняет seed, без отбора траекторий."
+  },
+  "defaults": {
+    "tickMs": 5,
+    "quantizeDigits": 7
+  },
+  "physics": {
+    "gravityY": 980,
+    "maxBallSpeed": 2000,
+    "angleDeviationDeg": 2,
+    "bounceDeviation": 0.02,
+    "wallBounce": 1
+  },
+  "configDefaultRng": {
+    "algo": "lcg32",
+    "seed": 0
+  },
+  "nativeBoardDimensions": [
+    66710,
+    35100
+  ],
+  "nativeTimeSecRange": [
+    0,
+    16
+  ],
+  "counts": {
+    "pins": 12,
+    "segments": 70,
+    "drops": 1,
+    "buckets": 4
+  },
+  "nativeToSource": [
+    [
+      1,
+      -0.13956719825614036,
+      -27842.873230875444
+    ],
+    [
+      0,
+      0.45097762622940285,
+      -14593.55326069151
+    ],
+    [
+      0,
+      -0.00019089403350768935,
+      7.473598464312761
+    ]
+  ],
+  "sourceToNative": [
+    [
+      1,
+      10.875932356315827,
+      24962.7234087166
+    ],
+    [
+      0,
+      12.784047833351787,
+      24963.16651665375
+    ],
+    [
+      0,
+      0.000326535934077396,
+      0.7714248461458229
+    ]
+  ],
+  "coordinateMethod": "Direct homogeneous division of exact accepted P1 nativeToSource; display rounding 0.001 source px. Quad center proxy = project(mean of four native segment start vertices), not an artist anchor. Ground horizontal r16 diameter = abs(project(x+16,y).x - project(x-16,y).x), not sphere silhouette height or CSS pixels. No simulation or reachability inferred.",
+  "drops": [
+    {
+      "id": "board02-start",
+      "nativeAnchor": [
+        33349.528039973346,
+        33109.09546312392
+      ],
+      "sourceGroundAnchorPx": [
+        768.0,
+        293.0
+      ],
+      "nativeRadius": null,
+      "ballR16GroundHorizontalDiameterSourcePx": 27.747
+    }
+  ],
+  "pins": [
+    {
+      "id": "bowl-base-01",
+      "nativeAnchor": [
+        33372.62630208038,
+        33265.33454057419
+      ],
+      "sourceGroundAnchorPx": [
+        789.539,
+        363.497
+      ],
+      "nativeRadius": 46.06122769307567,
+      "ballR16GroundHorizontalDiameterSourcePx": 28.484
+    },
+    {
+      "id": "bowl-base-02",
+      "nativeAnchor": [
+        32925.87454816949,
+        33450.90752935672
+      ],
+      "sourceGroundAnchorPx": [
+        380.831,
+        452.251
+      ],
+      "nativeRadius": 45.69683166472709,
+      "ballR16GroundHorizontalDiameterSourcePx": 29.411
+    },
+    {
+      "id": "bowl-base-03",
+      "nativeAnchor": [
+        33764.501122173075,
+        33488.62133374682
+      ],
+      "sourceGroundAnchorPx": [
+        1154.415,
+        470.999
+      ],
+      "nativeRadius": 47.55610029729572,
+      "ballR16GroundHorizontalDiameterSourcePx": 29.607
+    },
+    {
+      "id": "bowl-base-04",
+      "nativeAnchor": [
+        33185.439425283745,
+        33847.56246367806
+      ],
+      "sourceGroundAnchorPx": [
+        611.04,
+        662.787
+      ],
+      "nativeRadius": 45.55353335480069,
+      "ballR16GroundHorizontalDiameterSourcePx": 31.611
+    },
+    {
+      "id": "bowl-base-05",
+      "nativeAnchor": [
+        33621.30497565033,
+        34034.60165695869
+      ],
+      "sourceGroundAnchorPx": [
+        1052.961,
+        773.391
+      ],
+      "nativeRadius": 47.85320768423311,
+      "ballR16GroundHorizontalDiameterSourcePx": 32.767
+    },
+    {
+      "id": "bowl-base-06",
+      "nativeAnchor": [
+        33154.106262477726,
+        34282.73632933471
+      ],
+      "sourceGroundAnchorPx": [
+        566.586,
+        933.24
+      ],
+      "nativeRadius": 46.46143233627314,
+      "ballR16GroundHorizontalDiameterSourcePx": 34.437
+    },
+    {
+      "id": "skull-base-01",
+      "nativeAnchor": [
+        33049.55490936593,
+        33252.91336923354
+      ],
+      "sourceGroundAnchorPx": [
+        502.45,
+        357.755
+      ],
+      "nativeRadius": 37.151918277474095,
+      "ballR16GroundHorizontalDiameterSourcePx": 28.424
+    },
+    {
+      "id": "skull-base-02",
+      "nativeAnchor": [
+        33677.02369252854,
+        33255.06699440539
+      ],
+      "sourceGroundAnchorPx": [
+        1059.916,
+        358.749
+      ],
+      "nativeRadius": 37.138351509015415,
+      "ballR16GroundHorizontalDiameterSourcePx": 28.434
+    },
+    {
+      "id": "skull-base-03",
+      "nativeAnchor": [
+        33337.22833551246,
+        33630.85380130959
+      ],
+      "sourceGroundAnchorPx": [
+        759.813,
+        544.013
+      ],
+      "nativeRadius": 35.824750483694494,
+      "ballR16GroundHorizontalDiameterSourcePx": 30.37
+    },
+    {
+      "id": "skull-base-04",
+      "nativeAnchor": [
+        33766.32601748817,
+        33870.5786289894
+      ],
+      "sourceGroundAnchorPx": [
+        1186.847,
+        675.975
+      ],
+      "nativeRadius": 36.284655333082725,
+      "ballR16GroundHorizontalDiameterSourcePx": 31.749
+    },
+    {
+      "id": "skull-base-05",
+      "nativeAnchor": [
+        33051.7125983366,
+        34071.4531863284
+      ],
+      "sourceGroundAnchorPx": [
+        467.822,
+        796.143
+      ],
+      "nativeRadius": 34.9042081718203,
+      "ballR16GroundHorizontalDiameterSourcePx": 33.005
+    },
+    {
+      "id": "skull-base-06",
+      "nativeAnchor": [
+        33455.286621423846,
+        34286.65987892238
+      ],
+      "sourceGroundAnchorPx": [
+        890.833,
+        935.899
+      ],
+      "nativeRadius": 35.28222725172218,
+      "ballR16GroundHorizontalDiameterSourcePx": 34.465
+    }
+  ],
+  "buckets": [
+    {
+      "id": "receiver-01",
+      "nativeAnchor": [
+        32895.27416667457,
+        34639.03401006639
+      ],
+      "sourceGroundAnchorPx": [
+        253.048,
+        1193.521
+      ],
+      "nativeRadius": 43.00973005868298,
+      "ballR16GroundHorizontalDiameterSourcePx": 37.157
+    },
+    {
+      "id": "receiver-02",
+      "nativeAnchor": [
+        33190.99753486421,
+        34639.561335368126
+      ],
+      "sourceGroundAnchorPx": [
+        596.412,
+        1193.936
+      ],
+      "nativeRadius": 42.51622154033621,
+      "ballR16GroundHorizontalDiameterSourcePx": 37.161
+    },
+    {
+      "id": "receiver-03",
+      "nativeAnchor": [
+        33492.7346694948,
+        34640.77828436916
+      ],
+      "sourceGroundAnchorPx": [
+        946.874,
+        1194.896
+      ],
+      "nativeRadius": 41.25417787781912,
+      "ballR16GroundHorizontalDiameterSourcePx": 37.171
+    },
+    {
+      "id": "receiver-04",
+      "nativeAnchor": [
+        33790.663139784796,
+        34639.995941136774
+      ],
+      "sourceGroundAnchorPx": [
+        1292.85,
+        1194.279
+      ],
+      "nativeRadius": 41.44518157305826,
+      "ballR16GroundHorizontalDiameterSourcePx": 37.165
+    }
+  ],
+  "fourSegmentGroundFootprints": [
+    {
+      "id": "pillar-01",
+      "segmentCount": 4,
+      "nativeStartVertexMean": [
+        33196.97168571732,
+        33464.868499482036
+      ],
+      "sourceGroundCenterProxyPx": [
+        629.749,
+        459.162
+      ]
+    },
+    {
+      "id": "pillar-02",
+      "segmentCount": 4,
+      "nativeStartVertexMean": [
+        32927.01160161463,
+        33875.64543401087
+      ],
+      "sourceGroundCenterProxyPx": [
+        353.754,
+        678.893
+      ]
+    },
+    {
+      "id": "pillar-03",
+      "segmentCount": 4,
+      "nativeStartVertexMean": [
+        33456.87264211891,
+        33876.94071157232
+      ],
+      "sourceGroundCenterProxyPx": [
+        880.0,
+        679.64
+      ]
+    },
+    {
+      "id": "pillar-04",
+      "segmentCount": 4,
+      "nativeStartVertexMean": [
+        32907.14775699726,
+        34283.33951839833
+      ],
+      "sourceGroundCenterProxyPx": [
+        300.765,
+        933.649
+      ]
+    },
+    {
+      "id": "pillar-05",
+      "segmentCount": 4,
+      "nativeStartVertexMean": [
+        33770.54964927895,
+        34282.94923055996
+      ],
+      "sourceGroundCenterProxyPx": [
+        1230.0,
+        933.385
+      ]
+    },
+    {
+      "id": "pillar-06",
+      "segmentCount": 4,
+      "nativeStartVertexMean": [
+        33293.11855776688,
+        34496.23789866319
+      ],
+      "sourceGroundCenterProxyPx": [
+        715.5,
+        1084.421
+      ]
+    },
+    {
+      "id": "block-01",
+      "segmentCount": 4,
+      "nativeStartVertexMean": [
+        33519.552287554034,
+        33444.584574790104
+      ],
+      "sourceGroundCenterProxyPx": [
+        926.264,
+        449.132
+      ]
+    },
+    {
+      "id": "block-02",
+      "segmentCount": 4,
+      "nativeStartVertexMean": [
+        33067.984292683184,
+        33655.11794824634
+      ],
+      "sourceGroundCenterProxyPx": [
+        503.281,
+        556.846
+      ]
+    },
+    {
+      "id": "block-03",
+      "segmentCount": 4,
+      "nativeStartVertexMean": [
+        33611.81409552248,
+        33670.62754897705
+      ],
+      "sourceGroundCenterProxyPx": [
+        1022.512,
+        565.108
+      ]
+    },
+    {
+      "id": "block-04",
+      "segmentCount": 4,
+      "nativeStartVertexMean": [
+        33310.54355101097,
+        34072.54541852553
+      ],
+      "sourceGroundCenterProxyPx": [
+        734.78,
+        796.823
+      ]
+    },
+    {
+      "id": "block-05",
+      "segmentCount": 4,
+      "nativeStartVertexMean": [
+        33006.15521170197,
+        34465.61368698532
+      ],
+      "sourceGroundCenterProxyPx": [
+        394.728,
+        1061.89
+      ]
+    },
+    {
+      "id": "block-06",
+      "segmentCount": 4,
+      "nativeStartVertexMean": [
+        33590.02780424376,
+        34467.67051302826
+      ],
+      "sourceGroundCenterProxyPx": [
+        1047.736,
+        1063.394
+      ]
+    }
+  ],
+  "boundarySegmentIds": [
+    "far",
+    "left-1",
+    "left-2",
+    "left-3",
+    "left-4",
+    "left-5",
+    "left-6",
+    "left-7",
+    "left-8",
+    "left-9",
+    "right-1",
+    "right-2",
+    "right-3",
+    "right-4",
+    "right-5",
+    "right-6",
+    "right-7",
+    "right-8",
+    "right-9",
+    "near-divider-1",
+    "near-divider-2",
+    "near-divider-3"
+  ],
+  "bucketSemanticsFromAcceptedManifest": "strict center distance < bucket.r; no ball-radius erosion, z, sinking or whole-silhouette containment",
+  "historicalManifestStatus": "actual core trial; supports, radius and registration provisional; no QA PASS or Max acceptance",
+  "acceptedUseMeaning": "CTO exact common input for transfer. Historical provisional manifest text retained; no claim that Max individually tested drops or baskets.",
+  "resourceGuard": {
+    "UTC": "2026-10-29T23:23:59.7735194Z",
+    "TotalRAMGiB": 31.907,
+    "FreeRAMGiB": 10.604,
+    "SystemCPUPct": 4,
+    "AggregateProcessCPUPct": 5.542,
+    "AggregateWorkingSetGiB": 26.509,
+    "AggregatePrivateGiB": 27.59,
+    "ProcessCount": 554,
+    "DiskFreeGiB": {
+      "C": 14.672,
+      "E": 9.764,
+      "D": 14.651
+    },
+    "OwnPeakEstimateGiB": {
+      "RAM": 0.5,
+      "E": 0.03
+    },
+    "ConcurrentAllowanceGiB": {
+      "RAM": 4,
+      "E": 2
+    }
+  },
+  "limitations": [
+    "No new simulation, native replay, browser, contact, ordering or receiver test in this preparation.",
+    "Original JPGs read only. New generated art must be evaluated in assembled motion at ordinary scale.",
+    "No full artistic PASS; all dynamic cases UNVERIFIED until actual candidate.",
+    "Jungle receiver02/04, some contours, long railings and raised vegetation limitations are retained, not promoted to PASS."
+  ]
+}

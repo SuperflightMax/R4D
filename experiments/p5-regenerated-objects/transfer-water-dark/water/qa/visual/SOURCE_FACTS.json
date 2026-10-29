@@ -1,0 +1,631 @@
+{
+  "schema": "r4d.p5.transfer.visual-source-facts.v1",
+  "board": "water",
+  "preparedAtUTC": "2026-10-29T23:25:09.186582+00:00",
+  "status": "REFERENCE_INPUT_PREPARATION_ONLY_ACTUAL_MOTION_UNVERIFIED",
+  "canonicalRevision": "b1382dd4c230815a019e52e2ec4617ef705661d5",
+  "transferOrderBlob": "09f33f99d771ab28b9575de1a358acc40b4d571c",
+  "commonInputFile": "E:\\R4D\\perspective\\coordination\\p4-p5-transfer-common-inputs-2026-10-29.json",
+  "commonInputFileSha256": "497eb8cca3aa7413254a85b18d98a1e7dfde66d9779c39fc6b5932a21f2b4946",
+  "acceptedP1Revision": "4b47db04c7140ebf88f69b91faa0b790d46f22ec",
+  "activeTrial": "trial-02",
+  "source": {
+    "source": "K:\\Agents\\R4D\\Assets\\perspective\\04-water-temple.jpg",
+    "bytes": 527016,
+    "sha256": "8da65c76c110b6ba7cefe113564fe12feed4428e84e84835f033e7da31d3b80d",
+    "dimensionsPx": [
+      1536,
+      1536
+    ],
+    "commonInputFile": "E:\\R4D\\perspective\\coordination\\p4-p5-transfer-common-inputs-2026-10-29.json",
+    "commonInputSha256": "497eb8cca3aa7413254a85b18d98a1e7dfde66d9779c39fc6b5932a21f2b4946"
+  },
+  "verifiedInputs": [
+    {
+      "revision": "4b47db04c7140ebf88f69b91faa0b790d46f22ec",
+      "path": "experiments/p1-collider-mapping/clean-repeat-01/simulation/boards/04/trial-02/config.json",
+      "bytes": 27231,
+      "sha256": "9048b28af2923c93d8be772367beeb828f1e4513a6298af1c803379f77d3e50c",
+      "ownRuntimeCopy": "E:\\R4D\\perspective\\p5-runtime\\visual-qa\\transfer-water-dark\\water\\inputs\\config.json"
+    },
+    {
+      "revision": "4b47db04c7140ebf88f69b91faa0b790d46f22ec",
+      "path": "experiments/p1-collider-mapping/clean-repeat-01/simulation/boards/04/trial-02/manifest.json",
+      "bytes": 15870,
+      "sha256": "48c4fef26fd8c94f06c278851222ef285edda54ac14e53da8908f4ee663dc420",
+      "ownRuntimeCopy": "E:\\R4D\\perspective\\p5-runtime\\visual-qa\\transfer-water-dark\\water\\inputs\\manifest.json"
+    },
+    {
+      "revision": "4b47db04c7140ebf88f69b91faa0b790d46f22ec",
+      "path": "experiments/p1-collider-mapping/clean-repeat-01/viewer/src/view-math.mjs",
+      "bytes": 3050,
+      "sha256": "96f01cc2093c353ff958cb906fe0c8ae93412425d0f7a5ec7cca0f2bf9f1aa5e",
+      "ownRuntimeCopy": "E:\\R4D\\perspective\\p5-runtime\\visual-qa\\transfer-water-dark\\water\\inputs\\view-math.mjs"
+    }
+  ],
+  "methodBaseline": {
+    "jungleResult": "df0d95f40e60991632c885f0bc53d32497a090e7",
+    "consumer": "af23e124cf5bd1d9de884082ffbc993448217112",
+    "art": "a5ec68fb2ed6aeacd8c66bc575166567bd0c3966",
+    "independentVQA": "e227f3874c19539b7d38f0b8d318a911e7db2915"
+  },
+  "native": {
+    "sourceCommit": "5a6fa03f1cdb3de88a2d9c7dbe795eb8e2a7f023",
+    "packageTree": "008d16a80a26bb77d562a45218b01da09b0d9ff0",
+    "useExistingAuthorizedOwnPrivateRuntime": true,
+    "rawSourcesOrMapsPublic": false,
+    "physics": "r16;tick5ms;quantize7;g980;maxspeed2000;angleDeviation2deg;bounceDeviation0.02;lcg32. Обычный новый бросок меняет seed, без отбора траекторий."
+  },
+  "defaults": {
+    "tickMs": 5,
+    "quantizeDigits": 7
+  },
+  "physics": {
+    "gravityY": 980,
+    "maxBallSpeed": 2000,
+    "angleDeviationDeg": 2,
+    "bounceDeviation": 0.02,
+    "wallBounce": 1
+  },
+  "configDefaultRng": {
+    "algo": "lcg32",
+    "seed": 0
+  },
+  "nativeBoardDimensions": [
+    66512,
+    35751
+  ],
+  "nativeTimeSecRange": [
+    0,
+    16
+  ],
+  "counts": {
+    "pins": 6,
+    "segments": 106,
+    "drops": 1,
+    "buckets": 4
+  },
+  "nativeToSource": [
+    [
+      1,
+      -0.10580641230166693,
+      -28877.461986617916
+    ],
+    [
+      0,
+      0.3552488372689919,
+      -11472.51132296708
+    ],
+    [
+      0,
+      -0.00013776876601779547,
+      5.701221371591252
+    ]
+  ],
+  "sourceToNative": [
+    [
+      1,
+      10.300479251416514,
+      25792.688486579264
+    ],
+    [
+      0,
+      12.81753630163582,
+      25792.601403936715
+    ],
+    [
+      0,
+      0.00030973295800506716,
+      0.7986735772967063
+    ]
+  ],
+  "coordinateMethod": "Direct homogeneous division of exact accepted P1 nativeToSource; display rounding 0.001 source px. Quad center proxy = project(mean of four native segment start vertices), not an artist anchor. Ground horizontal r16 diameter = abs(project(x+16,y).x - project(x-16,y).x), not sphere silhouette height or CSS pixels. No simulation or reachability inferred.",
+  "drops": [
+    {
+      "id": "board04-start",
+      "nativeAnchor": [
+        33192.751665295094,
+        33184.49424667716
+      ],
+      "sourceGroundAnchorPx": [
+        712.0,
+        280.0
+      ],
+      "nativeRadius": null,
+      "ballR16GroundHorizontalDiameterSourcePx": 28.333
+    }
+  ],
+  "pins": [
+    {
+      "id": "frog-01",
+      "nativeAnchor": [
+        33258.2003688668,
+        33343.64695747465
+      ],
+      "sourceGroundAnchorPx": [
+        769.987,
+        336.594
+      ],
+      "nativeRadius": 53.1603972348936,
+      "ballR16GroundHorizontalDiameterSourcePx": 28.894
+    },
+    {
+      "id": "frog-02",
+      "nativeAnchor": [
+        32931.74732780542,
+        33787.67670012167
+      ],
+      "sourceGroundAnchorPx": [
+        458.106,
+        507.028
+      ],
+      "nativeRadius": 51.270407454356246,
+      "ballR16GroundHorizontalDiameterSourcePx": 30.583
+    },
+    {
+      "id": "frog-03",
+      "nativeAnchor": [
+        33580.25267219458,
+        33787.67670012167
+      ],
+      "sourceGroundAnchorPx": [
+        1077.894,
+        507.028
+      ],
+      "nativeRadius": 51.270407454356246,
+      "ballR16GroundHorizontalDiameterSourcePx": 30.583
+    },
+    {
+      "id": "frog-04",
+      "nativeAnchor": [
+        32917.31564905389,
+        34385.98645367272
+      ],
+      "sourceGroundAnchorPx": [
+        416.634,
+        770.895
+      ],
+      "nativeRadius": 52.050948276463096,
+      "ballR16GroundHorizontalDiameterSourcePx": 33.198
+    },
+    {
+      "id": "frog-05",
+      "nativeAnchor": [
+        33599.46802821936,
+        34385.0151876666
+      ],
+      "sourceGroundAnchorPx": [
+        1124.28,
+        770.43
+      ],
+      "nativeRadius": 53.0222142825798,
+      "ballR16GroundHorizontalDiameterSourcePx": 33.194
+    },
+    {
+      "id": "frog-06",
+      "nativeAnchor": [
+        33256,
+        34718.769418297525
+      ],
+      "sourceGroundAnchorPx": [
+        768.0,
+        938.165
+      ],
+      "nativeRadius": 52.329383017033614,
+      "ballR16GroundHorizontalDiameterSourcePx": 34.856
+    }
+  ],
+  "buckets": [
+    {
+      "id": "receiver-01",
+      "nativeAnchor": [
+        32753.321467603175,
+        35177.24697995297
+      ],
+      "sourceGroundAnchorPx": [
+        180.0,
+        1198.0
+      ],
+      "nativeRadius": 31.296085932969625,
+      "ballR16GroundHorizontalDiameterSourcePx": 37.431
+    },
+    {
+      "id": "receiver-02",
+      "nativeAnchor": [
+        33065.660710537064,
+        35187.089912187264
+      ],
+      "sourceGroundAnchorPx": [
+        545.0,
+        1204.0
+      ],
+      "nativeRadius": 30.637312276520895,
+      "ballR16GroundHorizontalDiameterSourcePx": 37.491
+    },
+    {
+      "id": "receiver-03",
+      "nativeAnchor": [
+        33449.9072364754,
+        35182.17235242175
+      ],
+      "sourceGroundAnchorPx": [
+        995.0,
+        1201.0
+      ],
+      "nativeRadius": 31.13657495558225,
+      "ballR16GroundHorizontalDiameterSourcePx": 37.461
+    },
+    {
+      "id": "receiver-04",
+      "nativeAnchor": [
+        33739.27186718129,
+        35173.95904871723
+      ],
+      "sourceGroundAnchorPx": [
+        1333.0,
+        1196.0
+      ],
+      "nativeRadius": 32.979948584412966,
+      "ballR16GroundHorizontalDiameterSourcePx": 37.412
+    }
+  ],
+  "fourSegmentGroundFootprints": [
+    {
+      "id": "pillar-01",
+      "segmentCount": 4,
+      "nativeStartVertexMean": [
+        32830.98957142964,
+        33452.06398368454
+      ],
+      "sourceGroundCenterProxyPx": [
+        379.0,
+        376.447
+      ]
+    },
+    {
+      "id": "pillar-02",
+      "segmentCount": 4,
+      "nativeStartVertexMean": [
+        33682.10300036617,
+        33452.06398368454
+      ],
+      "sourceGroundCenterProxyPx": [
+        1158.0,
+        376.447
+      ]
+    },
+    {
+      "id": "pillar-03",
+      "segmentCount": 4,
+      "nativeStartVertexMean": [
+        33132.488777724,
+        33784.98793743003
+      ],
+      "sourceGroundCenterProxyPx": [
+        650.0,
+        505.936
+      ]
+    },
+    {
+      "id": "pillar-04",
+      "segmentCount": 4,
+      "nativeStartVertexMean": [
+        33382.65133809658,
+        33784.98793743003
+      ],
+      "sourceGroundCenterProxyPx": [
+        889.0,
+        505.936
+      ]
+    },
+    {
+      "id": "pillar-05",
+      "segmentCount": 4,
+      "nativeStartVertexMean": [
+        33036.02962987082,
+        34124.97758900579
+      ],
+      "sourceGroundCenterProxyPx": [
+        548.0,
+        650.435
+      ]
+    },
+    {
+      "id": "pillar-06",
+      "segmentCount": 4,
+      "nativeStartVertexMean": [
+        33476.970235447945,
+        34124.97758900579
+      ],
+      "sourceGroundCenterProxyPx": [
+        989.0,
+        650.435
+      ]
+    },
+    {
+      "id": "pillar-07",
+      "segmentCount": 4,
+      "nativeStartVertexMean": [
+        33134.77925182909,
+        34454.306507268906
+      ],
+      "sourceGroundCenterProxyPx": [
+        641.0,
+        803.924
+      ]
+    },
+    {
+      "id": "arch-01-left-foot",
+      "segmentCount": 4,
+      "nativeStartVertexMean": [
+        32972.77663041512,
+        33490.838883855155
+      ],
+      "sourceGroundCenterProxyPx": [
+        507.5,
+        390.966
+      ]
+    },
+    {
+      "id": "arch-01-right-foot",
+      "segmentCount": 4,
+      "nativeStartVertexMean": [
+        33051.05717786276,
+        33490.838883855155
+      ],
+      "sourceGroundCenterProxyPx": [
+        579.5,
+        390.966
+      ]
+    },
+    {
+      "id": "arch-02-left-foot",
+      "segmentCount": 4,
+      "nativeStartVertexMean": [
+        33464.74812652705,
+        33490.838883855155
+      ],
+      "sourceGroundCenterProxyPx": [
+        960.0,
+        390.966
+      ]
+    },
+    {
+      "id": "arch-02-right-foot",
+      "segmentCount": 4,
+      "nativeStartVertexMean": [
+        33543.572288887524,
+        33490.838883855155
+      ],
+      "sourceGroundCenterProxyPx": [
+        1032.5,
+        390.966
+      ]
+    },
+    {
+      "id": "arch-03-left-foot",
+      "segmentCount": 4,
+      "nativeStartVertexMean": [
+        32768.68306469445,
+        34096.83564101229
+      ],
+      "sourceGroundCenterProxyPx": [
+        282.5,
+        637.962
+      ]
+    },
+    {
+      "id": "arch-03-right-foot",
+      "segmentCount": 4,
+      "nativeStartVertexMean": [
+        32850.48807031217,
+        34096.83564101229
+      ],
+      "sourceGroundCenterProxyPx": [
+        364.0,
+        637.962
+      ]
+    },
+    {
+      "id": "arch-04-left-foot",
+      "segmentCount": 4,
+      "nativeStartVertexMean": [
+        33215.323140266315,
+        34092.30263396567
+      ],
+      "sourceGroundCenterProxyPx": [
+        727.5,
+        635.962
+      ]
+    },
+    {
+      "id": "arch-04-right-foot",
+      "segmentCount": 4,
+      "nativeStartVertexMean": [
+        33297.179043187185,
+        34092.30263396567
+      ],
+      "sourceGroundCenterProxyPx": [
+        809.0,
+        635.962
+      ]
+    },
+    {
+      "id": "arch-05-left-foot",
+      "segmentCount": 4,
+      "nativeStartVertexMean": [
+        33660.00631608751,
+        34096.83564101229
+      ],
+      "sourceGroundCenterProxyPx": [
+        1170.5,
+        637.962
+      ]
+    },
+    {
+      "id": "arch-05-right-foot",
+      "segmentCount": 4,
+      "nativeStartVertexMean": [
+        33744.32067770577,
+        34096.83564101229
+      ],
+      "sourceGroundCenterProxyPx": [
+        1254.5,
+        637.962
+      ]
+    },
+    {
+      "id": "arch-06-left-foot",
+      "segmentCount": 4,
+      "nativeStartVertexMean": [
+        33334.39513946106,
+        34443.09782717926
+      ],
+      "sourceGroundCenterProxyPx": [
+        850.0,
+        798.461
+      ]
+    },
+    {
+      "id": "arch-06-right-foot",
+      "segmentCount": 4,
+      "nativeStartVertexMean": [
+        33416.61443206658,
+        34443.09782717926
+      ],
+      "sourceGroundCenterProxyPx": [
+        936.0,
+        798.461
+      ]
+    },
+    {
+      "id": "arch-07-left-foot",
+      "segmentCount": 4,
+      "nativeStartVertexMean": [
+        32980.715155094884,
+        34755.12349268705
+      ],
+      "sourceGroundCenterProxyPx": [
+        466.5,
+        957.456
+      ]
+    },
+    {
+      "id": "arch-07-right-foot",
+      "segmentCount": 4,
+      "nativeStartVertexMean": [
+        33064.25931200639,
+        34755.12349268705
+      ],
+      "sourceGroundCenterProxyPx": [
+        558.0,
+        957.456
+      ]
+    },
+    {
+      "id": "arch-08-left-foot",
+      "segmentCount": 4,
+      "nativeStartVertexMean": [
+        33448.19721344121,
+        34755.12349268705
+      ],
+      "sourceGroundCenterProxyPx": [
+        978.5,
+        957.456
+      ]
+    },
+    {
+      "id": "arch-08-right-foot",
+      "segmentCount": 4,
+      "nativeStartVertexMean": [
+        33531.284844905116,
+        34755.12349268705
+      ],
+      "sourceGroundCenterProxyPx": [
+        1069.5,
+        957.456
+      ]
+    }
+  ],
+  "boundarySegmentIds": [
+    "far",
+    "left-1",
+    "left-2",
+    "left-3",
+    "left-4",
+    "left-5",
+    "right-1",
+    "right-2",
+    "right-3",
+    "right-4",
+    "right-5",
+    "near-divider-1",
+    "near-divider-2",
+    "near-divider-3"
+  ],
+  "bucketSemanticsFromAcceptedManifest": "strict center distance < bucket.r; no ball-radius erosion, z, sinking or whole-silhouette containment",
+  "historicalManifestStatus": "actual core trial; supports, radius and registration provisional; no QA PASS or Max acceptance",
+  "acceptedUseMeaning": "CTO exact common input for transfer. Historical provisional manifest text retained; no claim that Max individually tested drops or baskets.",
+  "resourceGuard": {
+    "UTC": "2026-10-29T23:23:59.7735194Z",
+    "TotalRAMGiB": 31.907,
+    "FreeRAMGiB": 10.604,
+    "SystemCPUPct": 4,
+    "AggregateProcessCPUPct": 5.542,
+    "AggregateWorkingSetGiB": 26.509,
+    "AggregatePrivateGiB": 27.59,
+    "ProcessCount": 554,
+    "DiskFreeGiB": {
+      "C": 14.672,
+      "E": 9.764,
+      "D": 14.651
+    },
+    "OwnPeakEstimateGiB": {
+      "RAM": 0.5,
+      "E": 0.03
+    },
+    "ConcurrentAllowanceGiB": {
+      "RAM": 4,
+      "E": 2
+    }
+  },
+  "limitations": [
+    "No new simulation, native replay, browser, contact, ordering or receiver test in this preparation.",
+    "Original JPGs read only. New generated art must be evaluated in assembled motion at ordinary scale.",
+    "No full artistic PASS; all dynamic cases UNVERIFIED until actual candidate.",
+    "Jungle receiver02/04, some contours, long railings and raised vegetation limitations are retained, not promoted to PASS."
+  ],
+  "planeCollapse": {
+    "model": "one continuous 2D navigation plane inside outer temple walls",
+    "greenIslands": "traversable same plane",
+    "internalWaterChannels": "traversable same plane; no water-edge collider or depth simulation",
+    "shortBridgesRampsSteps": "same plane; no height layer or elevation-edge collider",
+    "outerCascadesOutsideWalls": "background outside floor",
+    "foregroundBasins": "receiver region only; four goal triggers",
+    "supportRule": "retain only solid support footprints: pillars, frogs, and separate arch feet; no arch-lintel collider in 2D",
+    "unresolved": "Whether a chosen physical ball fits under the painted arches is a 2D approximation to be assessed in contact QA, not recovered hidden 3D."
+  },
+  "generatedShorelineHeightOrLintelColliders": 0,
+  "archIds": [
+    "arch-01",
+    "arch-02",
+    "arch-03",
+    "arch-04",
+    "arch-05",
+    "arch-06",
+    "arch-07",
+    "arch-08"
+  ],
+  "earlyMaterial": {
+    "artistRuntimePath": "E:\\R4D\\perspective\\p5-runtime\\asset-artist\\transfer-water-dark\\water\\raw\\floor-v1.png",
+    "ownExactByteSnapshot": "E:\\R4D\\perspective\\p5-runtime\\visual-qa\\transfer-water-dark\\water\\inputs\\early-floor-v1.png",
+    "bytes": 2477216,
+    "sha256": "37e1603fe031b18e9ae8d325f65b2c138612d15f49d6948ce0b27c9b35c3456c",
+    "dimensionsPx": [
+      1254,
+      1254
+    ],
+    "nominalTextureTo1536Scale": 1.2248803827751196,
+    "scope": "Pixel/reference language review only. Lead identifies this as newly generated native-imagegen floor; generation records WIP were not audited. Registration, full set, motion and shadows UNVERIFIED."
+  }
+}
