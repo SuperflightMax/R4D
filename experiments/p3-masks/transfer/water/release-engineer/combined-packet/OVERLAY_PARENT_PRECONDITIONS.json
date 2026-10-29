@@ -1,0 +1,25 @@
+{
+  "baselineRoot": "/srv/superflight-review/releases/p5-jungle-regenerated-candidate-03",
+  "baselineMetadataSha256": "ed789cd60a3de3287f9a4456e68f9707df09d8487f2026d2111beee05e4d7a98",
+  "confirmedUnchangedUtc": "2026-10-29T13:59:55.171643+00:00",
+  "intersection": [
+    {
+      "path": "review",
+      "uid": 0,
+      "gid": 0,
+      "mode": 493
+    },
+    {
+      "path": "review/r4d",
+      "uid": 0,
+      "gid": 0,
+      "mode": 493
+    }
+  ],
+  "legacyDirectoryCount": 4,
+  "legacyOverlayIntersection": [],
+  "newDirectoryCount": 16,
+  "existingParentsAllRootRoot0755": true,
+  "futureBehavior": "If baseline metadata or parent metadata differs, STOP; never normalize legacy ownership",
+  "serverWrites": false
+}

@@ -1,0 +1,90 @@
+{
+  "status": "WAIT_EXACT_CTO_TOKEN",
+  "serverWrite": false,
+  "token": null,
+  "canonicalIntent": "COMBINED_INTENT.md",
+  "releaseId": "p3-water-dark-front-edge-04",
+  "runtime": "E:\\R4D\\perspective\\p3-runtime\\release-engineer\\transfer-water-dark\\combined\\water-dark-front-edge-04",
+  "archive": {
+    "path": "p3-water-dark-front-edge-04-overlay.tar.gz",
+    "bytes": 4495459,
+    "sha256": "0cee1516db37cb2ac8a38fec54214c47483f8bea755a71dbd0d04a244b3c9fbb"
+  },
+  "archiveLocalPath": "E:\\R4D\\perspective\\p3-runtime\\release-engineer\\transfer-water-dark\\combined\\water-dark-front-edge-04\\p3-water-dark-front-edge-04-overlay.tar.gz",
+  "approvedFrozenFiles": 194,
+  "approvedFrozenBytes": 7088324,
+  "archiveEntries": 196,
+  "archiveEntryBytes": 7320545,
+  "fullNewCount": {
+    "files": 868,
+    "directories": 104,
+    "bytes": 129749260
+  },
+  "scopeSha256": "aff5355dcb376ab1edef8d45455c391bb5b1099f77a7ee07240f6efe11097959",
+  "writeScriptSha256": "e47debc4bd1892728d114550b08c3415886abf06f10a50b797c79a5a8b15512f",
+  "launcherSha256": "592a78db696e44bfe665b0a35d8eb66dea854a3bc0d5a354bacdf7b15fe71ef8",
+  "files": {
+    "ARCHIVE_MANIFEST.json": {
+      "bytes": 50581,
+      "sha256": "c61a8476f74f061e722df98130058283ffbfd37ff1e6522d488ea1cadbeaec70"
+    },
+    "BASELINE_EVIDENCE.json": {
+      "bytes": 177073,
+      "sha256": "61219937cdd69e08bc3cd6f647dbad6b88e48b06ba4744a2c3a9dd6f30147bf3"
+    },
+    "BOARD_PUBLICATIONS.json": {
+      "bytes": 6474,
+      "sha256": "f55a061cfca603dad9ff3722c01dd2c2792ccebc8b07a739551b2a9c2fc7157c"
+    },
+    "CATALOG_CARDS.html": {
+      "bytes": 1251,
+      "sha256": "d814c523c8b293ad07a5bc3b03670d5cde70b4aeb6a022061f1a8a05b192d1d5"
+    },
+    "CATALOG_DELTA.patch": {
+      "bytes": 1689,
+      "sha256": "8652995d5de5345f06022b76b71f0637c1b36ee96034787a7357b234cca1d53a"
+    },
+    "FINAL_RO_GUARD.json": {
+      "bytes": 1637,
+      "sha256": "2201f28c1d3138491ecdd239fc687d5743a5f6133d37ca275b75da7f1eaa0c64"
+    },
+    "OVERLAY_PARENT_PRECONDITIONS.json": {
+      "bytes": 722,
+      "sha256": "bbdb692c2592665c21fd314474cc17f145f040d17417a0f2e8dd0314f30c1a49"
+    },
+    "RELEASE_MANIFEST.json": {
+      "bytes": 216459,
+      "sha256": "e8a801faf58b670fd2b2cb7ba1c327d20c025593c75881915ae7d211f2fcf3f3"
+    },
+    "RESOURCES_BEFORE_AUDIT.json": {
+      "bytes": 380,
+      "sha256": "d7b82cded859913ded1497c935dd68ab3af924714de425ef23046e3643e58c61"
+    },
+    "RESOURCES_BEFORE_PACKAGE.json": {
+      "bytes": 380,
+      "sha256": "4c70c32ff2789a1894ce4a97d858902800420d8c8ed866093d72c7ca1e2e90f4"
+    },
+    "RESOURCES_BEFORE_SEAL.json": {
+      "bytes": 380,
+      "sha256": "c47955bc874e3e064a549c3fbc0f1cec84027c82a943c2d864e7471228e08c8b"
+    },
+    "WRITE_SCOPE.json": {
+      "bytes": 72260,
+      "sha256": "aff5355dcb376ab1edef8d45455c391bb5b1099f77a7ee07240f6efe11097959"
+    },
+    "prepare_combined.py": {
+      "bytes": 24500,
+      "sha256": "2ea5604a1cb5f93ffcbbfecd18233f4004c6bd46830093e08b0f5588e1e75785"
+    },
+    "combined_remote.py": {
+      "bytes": 15543,
+      "sha256": "e47debc4bd1892728d114550b08c3415886abf06f10a50b797c79a5a8b15512f"
+    },
+    "combined_execute.py": {
+      "bytes": 5544,
+      "sha256": "592a78db696e44bfe665b0a35d8eb66dea854a3bc0d5a354bacdf7b15fe71ef8"
+    }
+  },
+  "finalRoGuardUtc": "2026-10-29T13:59:55.171643+00:00",
+  "overlayParentPreconditionsVerified": true
+}
