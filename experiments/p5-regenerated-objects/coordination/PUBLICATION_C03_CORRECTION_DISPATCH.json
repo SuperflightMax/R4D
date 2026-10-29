@@ -1,0 +1,88 @@
+{
+  "schema": "r4d.p5.publication-corrective-dispatch/1",
+  "measuredUtc": "2026-10-29 10:30:38 UTC",
+  "sourceCtoThread": "01a174b2-1b0d-79b1-866f-f40e23f6dfb2",
+  "authority": "Direct CTO clarification of already verified common operational mode; same unused token, window, rights, alias, plan and nonce. Prior UID0 assertion was ordinary executor assumption failure, no permission/policy denial.",
+  "priorStop": {
+    "leadCheckpointCommit": "35d2ba607bd4d5a215f8916774077bfc389131dd",
+    "releaseCommit": "2507d3b32ad02653b4dd256c9b3b55bef0d459b8",
+    "roleTurn": "01a1871b-68a5-7e30-98a8-4db75920f4a7",
+    "serverWrites": 0,
+    "originalArtifactsRetained": true
+  },
+  "correctiveContinuation": {
+    "count": 1,
+    "preSendLatest": "completed/idle; no duplicate",
+    "newTurn": "01a1872f-983f-7372-835c-c9b161f16f97",
+    "model": "gpt-6.1-sol",
+    "thinking": "xhigh",
+    "actualSendReceipt": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"threadId\":\"01a1842d-ddd8-7b20-a27a-2ebc52ecea57\"}"
+        }
+      ],
+      "isError": false
+    },
+    "measuredImmediatelyAfterSendUtc": "2026-10-29 10:23:25 UTC",
+    "firstCompletedToolMarker": "exec-16c02762-85ce-453d-bc21-cb30fca67713",
+    "executorReportedOutputChunk": "71a6e4"
+  },
+  "transport": {
+    "alias": "vps1-direct",
+    "outerSshUid": 1003,
+    "outerSshGid": 27,
+    "source": "CTO operator attestation, common publication transport only; no P4 product/source/findings read",
+    "commandMode": "existing noninteractive sudo -n -- python3 -B via stdin/-c",
+    "newRightsOrIdentityTransport": false
+  },
+  "preservation": {
+    "sameExecutionRoot": "E:/R4D/perspective/p5-runtime/release-engineer/p5-review-release-execution-03-final-01",
+    "noNewRoot02": true,
+    "oldStopEvidenceControllerRetained": true,
+    "correctionCodeAndReceiptsNewFiles": true,
+    "tokenAnd84SealedArtifactsUnchanged": true,
+    "initialLocalReceiptCollision": "old stderr path protected by open xb; failed before SSH/sudo; retained and corrected using new local receipt paths"
+  },
+  "token": {
+    "id": "CTO-P5-C03-PUBLIC-20261029T095644Z-623ecdd42aef",
+    "bytes": 6878,
+    "sha256": "8e6c24bc70b84c231ade62b6d507363a490201347ebbecb3ccae50313c062f1d",
+    "nonce": "df5a2a1da52e4048b8ef1c8d3e5a8ef9",
+    "firstWriteDeadlineUtc": "2026-10-29T10:56:44.000Z",
+    "fileUnchanged": true
+  },
+  "phase0": {
+    "result": "PASS in existing sudo -n mode before writes",
+    "protectedRawCoreSha256": "e663e484d378f3f66ffd6783bbf0805e3192ecbcc11df03e221d7afea8b65522",
+    "configDocsSnippetCatalogAbsenceNoSymlink": "PASS",
+    "serverResourcesApprox": {
+      "availableRamGB": 5.06,
+      "availableDiskGB": 30.41
+    },
+    "provenance": "Executor actual P0 commentary/receipts; exact ns fields authoritative in Python raw records, not reserialized here"
+  },
+  "firstServerWrite": {
+    "utc": "2026-10-29T10:26:15.613347Z",
+    "action": "create exact owned backup directory",
+    "path": "/opt/superflight-studio/backups/review-p5-regenerated-candidate-03",
+    "dev": "2049",
+    "inode": "1104649",
+    "uid": 0,
+    "gid": 0,
+    "mode": "0700",
+    "nonce": "df5a2a1da52e4048b8ef1c8d3e5a8ef9",
+    "beforeDeadline": true
+  },
+  "archive": {
+    "bytes": 21862400,
+    "expectedSha256": "b32b08fd1d0f052ab3ed84b6810fb11203b85cad360c8fae408992635273849d",
+    "executorReportedExactUpload": true
+  },
+  "state": "Owned workflow active; retained flock, separate-inode clone/tree verification then remaining sealed phases; full Delivery handoff pending",
+  "window": "Same P5 owned token/window begun before deadline; CTO closes. P3 transfer server_write=false.",
+  "generalFullArtP5Pass": false,
+  "productionQaRepeated": false,
+  "P6ExperimentClosed": true
+}
