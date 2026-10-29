@@ -56,6 +56,101 @@
   "executionEvidenceRoot": "E:/R4D/perspective/p5-runtime/release-engineer/p5-review-release-execution-03-final-01",
   "sealSha256": "623ecdd42aef0fa8c8eaabf73e47543dd167407f27a696e74a2bde79de32d523",
   "publicUrl": "https://superflight.space/review/r4d/p5-regenerated-objects/",
+  "completion": {
+    "state": "STOP_BEFORE_FIRST_SERVER_WRITE",
+    "releaseCommit": "2507d3b32ad02653b4dd256c9b3b55bef0d459b8",
+    "releaseReport": {
+      "commit": "2507d3b32ad02653b4dd256c9b3b55bef0d459b8",
+      "path": "experiments/p5-regenerated-objects/release/DELIVERY_C03_TOKEN_FINAL_01_STOP.md",
+      "bytes": 4280,
+      "sha256": "549b0030ed8dff8f4140731672485efe46a11edb89e11405172a3ed8e88d8574"
+    },
+    "releaseState": "completed/pushed/clean; STOP/idle",
+    "executorTurn": "01a1871b-68a5-7e30-98a8-4db75920f4a7",
+    "firstCompletedToolMarker": "exec-485f54d7-b53e-41cf-9352-032cf987312f",
+    "firstCompletedOutputChunk": "8941a4",
+    "failureUtc": "2026-10-29T10:10:28Z",
+    "primary": {
+      "action": "guard('P0', initial=True), first assertion os.geteuid()==0",
+      "target": "effective identity of existing vps1-direct Python process",
+      "type": "AssertionError",
+      "text": "existing alias lacks required existing uid0",
+      "classification": "Executor's unproved UID0 assumption failed; numeric UID not emitted; no observed permission/policy denial",
+      "numericUid": null,
+      "alternateActorSudoTransportAttempted": false
+    },
+    "phase0": {
+      "tokenAnd84ReadonlyHashes": "verified",
+      "localResourceGuard": "completed",
+      "freshServerRawResourcesConfigDocsSnippetCatalogAbsence": "NOT_REACHED"
+    },
+    "firstServerWrite": null,
+    "serverWrites": 0,
+    "lockHeld": false,
+    "serverAbortReceipt": "not created; before-first-write failure",
+    "docsAppends": 0,
+    "rollback": "not needed/not attempted",
+    "publishedHttp29": "NOT_RUN/UNVERIFIED",
+    "publishedUi": "NOT_RUN/UNVERIFIED",
+    "publicationSucceeded": false,
+    "liveBeforeAfterProtectedGuards": "not freshly collected; no executor mutations",
+    "stopEvidence": {
+      "path": "E:/R4D/perspective/p5-runtime/release-engineer/p5-review-release-execution-03-final-01/STOP_BEFORE_WRITE.json",
+      "bytes": 1669,
+      "sha256": "ca02739aec84caeb8f7dc104eccd28ae815947cbc564f410a18f3a6b33a4ae95"
+    },
+    "evidenceIndex": {
+      "path": "E:/R4D/perspective/p5-runtime/release-engineer/p5-review-release-execution-03-final-01/EVIDENCE_PINS.json",
+      "bytes": 1069,
+      "sha256": "cb88bf1bff21d99c54b313547737fa2cdbf239ff87b264b624a2f55eb5748bc3",
+      "files": [
+        {
+          "bytes": 4663,
+          "path": "controller.py",
+          "sha256": "8411cc6982672e3de35dda30025de427d503b7f04dc650cb7d927bbaf6073f35"
+        },
+        {
+          "bytes": 389,
+          "path": "receipts/01-init.json",
+          "sha256": "ec93e5ec4042e6112379af5b9dcd7c9b6a2527f6ce3092fd14ece3b4db1912ce"
+        },
+        {
+          "bytes": 66,
+          "path": "receipts/event-1-REMOTE_READY.json",
+          "sha256": "28f17c9a79f0a2ff8370bb6fe04ee1c318e1b2564820fad630eb1296b22f1dd4"
+        },
+        {
+          "bytes": 0,
+          "path": "receipts/ssh.stderr",
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "bytes": 294,
+          "path": "receipts/token-verified.json",
+          "sha256": "a68d3835540b1df4c2190130c0efe62ac773081842528e619e36be6559876429"
+        },
+        {
+          "bytes": 16082,
+          "path": "remote-agent.py",
+          "sha256": "1e2450f61e9a943b57be1532af6a4cf98d795327ca004dfc1919f9e32d992a62"
+        },
+        {
+          "bytes": 668,
+          "path": "start-resource-guard.json",
+          "sha256": "2c6d9cf33de1a7f427fbec1e9c541e8a50ce777633e58922db3857f68cd28f96"
+        },
+        {
+          "bytes": 1669,
+          "path": "STOP_BEFORE_WRITE.json",
+          "sha256": "ca02739aec84caeb8f7dc104eccd28ae815947cbc564f410a18f3a6b33a4ae95"
+        }
+      ]
+    },
+    "retained": "Immutable token, sealed packet, older drafts/preflights/raw failures and exact execution evidence root unchanged/retained",
+    "tokenWindowState": "Token file unchanged; no write execution begun; executor did not close/release window. CTO decision controls subsequent use/actor/window.",
+    "quality": "CTO accepted bounded local C03; no general P5/FullArt PASS; receiver02/04/rails/contours gaps retained",
+    "next": "Lead/Release STOP/idle for CTO decision on execution mechanism and token/window"
+  },
   "scope": {
     "phases": "P0 through P8 plus guarded R/A exactly as token/plan/ledger",
     "phase0": "pending executor checkpoint at this dispatch record",
