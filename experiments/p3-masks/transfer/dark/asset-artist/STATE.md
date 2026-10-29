@@ -30,6 +30,21 @@ Full movement/art PASS ещё отсутствует. Обычные input сл�
 стыка: seed0 pillar02/t366, pillar04/t840, receiver01/t888. Затем все виды
 углов/боковых проходов. Дальнейшие изменения сохранять отдельной версией.
 
+Полный ART source17dc9fcdc261562acb581dd8590096819734c807 опубликован/сохранён:
+assets.json SHAef5eb34be622f5ce6356d6fa51d7902c334a1f1f3c95acce225d7340928bbc29.
+Собственный exact extracted packet73files: runtime dark/handoff-17dc9fcdc261;
+внешний manifest SHA90ad4be1739b9f601b4a6b415d38591cf9eebe53e5ea87f02852902283b88a3f.
+
+Builder frozen dark-full-method-03 sourcec73d6128970b2b022d5313b08c34cafdec9a1bc3,
+freeze commitcd1f7ada0c4789b0d512d0a9c47d513c036ee31f. State прочитан exact.
+Artist просмотрел сохранённые actual Pixi frames в собственном чтении:
+builder runtime dark/evidence/browser-full03/dark-seed0-pillar02-t365/366/367.jpg,
+dark-seed0-lower-t840.jpg иt888.jpg. Подключены свои ball/body masks, видна
+частичная видимость сбоку pillar02, реальный entry. Этот ограниченный осмотр
+не заменяет независимую full QA/real-time viewing; тени/прочие углы требуют её.
+Не менять frozen bundle/preview. Следующее — конкретные findings двух QA,
+при них именованная коррекция собственных данных; Water от Dark не зависит.
+
 Server_write=false. Никаких server upload/staging/service действий.
 Runtime только E:\R4D\perspective\p3-runtime\asset-artist\transfer-water-dark\dark.
 Свежая проверка ресурсов перед тяжёлым действием, E<=4 diagnosis/<=2 stop.

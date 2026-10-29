@@ -51,6 +51,17 @@ LOST1196 не изменился. Это оценка alpha, не Pixi/неза�
 exact comparative handoff Builder, actual frames1006–1018 и1020–1022,
 отдельная тень; при неуспехе сохранить отрицательное, не менять renderer.
 
+Exact targeted handoff опубликован5c9ba8c640b344094e0ada7c4ed6c9ec076550e5:
+variants/arch-front-edge-01/assets.json SHA
+4a5bc16f69146fe26a3e3893fcf3c1c8e5b943400bc65d5215cb41d58efeece6.
+Все83 final files извлечены/сверены с Git. Runtime water/handoff-5c9ba8c640b3,
+внешний manifest SHA7f260deb508977dd9a6d95cf981d26179516fbf41eaafad93af1255971963454.
+Полный formal VQA report26295340.../early-art-02/REPORT.md прочитан.
+Обоснование W-EARLY-POP-01 — P3 depth-data, не общий вход; реальное FPS не
+проверялось. Pending: comparative actual Pixi/independent VQA retest и full
+Water QA, включая тень и прочие случаи. До конкретных результатов новых
+попыток/новой сортировки не запускать. Это handoff, не утверждение полного PASS.
+
 Server_write=false. Свои дополнительные peak <=0.5GiB RAM/0.2GiB E;
 свежий09:32:15Z snapshot: RAMfree16.557GiB, CPU2%, C16.338/D16.280/E11.942GiB.
 Тяжёлое только E runtime suffix asset-artist/transfer-water-dark/water.
