@@ -1,0 +1,39 @@
+{
+  "status": "STOP_CONFIRMED_NO_SERVER_WRITE",
+  "utc": "2026-10-29T14:33:29.493371+00:00",
+  "euid": 0,
+  "oldRoot": "/srv/superflight-review/releases/p5-jungle-regenerated-candidate-03",
+  "baselineMetadataSha256": "ed789cd60a3de3287f9a4456e68f9707df09d8487f2026d2111beee05e4d7a98",
+  "oldManifestSha256": "b54342562a030361fb705d63b52750018956ea3cdfea204450f48a6bbeced9c5",
+  "oldSnippetSha256": "e2a466db57830bddb9003361028f99c132504ed3e12a632918898cd6c2a51224",
+  "baselineCount": {
+    "files": 674,
+    "directories": 88,
+    "bytes": 122587862
+  },
+  "plannedTargets": [
+    {
+      "path": "/srv/superflight-review/releases/p3-water-dark-front-edge-04",
+      "absent": true
+    },
+    {
+      "path": "/opt/superflight-studio/backups/review-p3-water-dark-front-edge-04",
+      "absent": true
+    },
+    {
+      "path": "/etc/nginx/snippets/.review-p3-water-dark-front-edge-04.locations.conf.tmp",
+      "absent": true
+    },
+    {
+      "path": "/srv/superflight-review/releases/p5-jungle-regenerated-candidate-03/review/r4d/p3-masks-water",
+      "absent": true
+    },
+    {
+      "path": "/srv/superflight-review/releases/p5-jungle-regenerated-candidate-03/review/r4d/p3-masks-dark",
+      "absent": true
+    }
+  ],
+  "backupAbsent": true,
+  "newRootAbsent": true,
+  "tempAbsent": true
+}
