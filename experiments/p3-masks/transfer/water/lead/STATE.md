@@ -23,8 +23,14 @@ Water исходные depth правила пока сохранены; исп�
 34752.6197802→34756.6559934 пересекает общий threshold34755.12349268705;
 три arch07 восстановительных meshes отключаются вместе. Builder оценивает
 alpha coverage35% на1014 и residual projected overlap23% на1015.
-Причина обоснованно указывает на binary P3 ordering; bounded VQA report
-с доказательствами ещё сохраняется. Это не изменение common mapping.
+Формальная ранняя VQA completed/idle: finding W-EARLY-POP-01 подтверждён.
+Report `26295340cafa78ea8bffe09e8005badda220d731` полностью прочитан Lead
+вместе с visible-states и интегрирован:
+[REPORT.md](../visual-qa/early-art-02/REPORT.md).
+29raw/12selectedfull/2comparison sheets сохранены; все30earlyfiles local+HTTP
+совпали. Cause — binary P3 ordering/стык depth/masks, не common mapping.
+Real-time FPS плавность/полнотаfeet/frog/shadow этой диагностикой не заявлены.
+Точный report адресно передан Builder/Artist и CTO; исходный вариант сохранён.
 VQA явно завершил чтение6868/закрыл свою вкладку; Lead адресно снял только
 local readhold у Builder (не server window/token). Immutable early02 сохранён.
 Artist получил конкретный проход ordinary depth-data correction по передним
@@ -54,7 +60,7 @@ Lead реально открыл running seed1/t56 screenshot и paused1014/1015
 без преждевременного defect/PASS. Builder сохранил13frames1006–1018 и
 ordinary run LOST1196. VQA после fresh idle адресно возобновлён с прежними
 model/thinking только на раннюю независимую Water диагностику этой версии:
-actual turn `01a18718-4c71-7cb1-b9cd-b31bd20f16cf`, active/errornull.
+actual turn `01a18718-4c71-7cb1-b9cd-b31bd20f16cf` теперь completed/idle/errornull.
 Builder получил hold этой версии6868 до окончания чтения VQA. Full build
 готовится отдельно, immutable bytes не переписываются.
 
