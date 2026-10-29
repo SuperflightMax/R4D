@@ -1,0 +1,213 @@
+{
+  "status": "PUBLISHED_COMBINED_PARTIAL_WITH_BOUNDED_PUBLIC_UI_SMOKE",
+  "serverRecordStatus": "PUBLISHED_COMBINED_PARTIAL_WITH_ACCESS_LIMITATIONS",
+  "executionTurnId": "01a18885-37e3-7290-a316-444d187b995e",
+  "releaseId": "p3-water-dark-front-edge-04",
+  "executionSourceCommit": "372344f9f6198cd811daa4612256a2fd8b32597b",
+  "token": "CTO-P3-WD04-V3-20261029T163518Z-d69a711f4777",
+  "authorizationSha256": "1bbc9511eada2766f971c8ee7a16c3ddac5beda455786d4500e5f4c2218ce7b2",
+  "scopeSha256": "726cb8e2e568bb4ba4a5e89ee637f323acbfc03fb093cf626c03d9efc229a564",
+  "remoteSha256": "6280d062adc4b4cf561980c8ecfd3439e1542561747219ddcd6833d8aa40add9",
+  "launcherSha256": "3cf1852fcea0b83fa43a1a394d549cd2c263a49599319662201b5593d17bfd12",
+  "archiveSha256": "0cee1516db37cb2ac8a38fec54214c47483f8bea755a71dbd0d04a244b3c9fbb",
+  "releaseManifestSha256": "e8a801faf58b670fd2b2cb7ba1c327d20c025593c75881915ae7d211f2fcf3f3",
+  "publishedRecordSha256": "8bdcaf51ae46d73be24935b64358c589ea9ff8aa9935e92526447d6067531e3b",
+  "phaseStarts": [
+    {
+      "phase": "preflight",
+      "startedUtc": "2026-10-29T16:37:42.812959+00:00",
+      "executionTurnId": "01a18885-37e3-7290-a316-444d187b995e"
+    },
+    {
+      "phase": "begin",
+      "startedUtc": "2026-10-29T16:38:17.682494+00:00",
+      "executionTurnId": "01a18885-37e3-7290-a316-444d187b995e",
+      "deadlineUtc": "2026-10-29T17:35:18+00:00",
+      "deadlineCheck": "PASS"
+    },
+    {
+      "phase": "upload",
+      "startedUtc": "2026-10-29T16:38:58.965077+00:00"
+    },
+    {
+      "phase": "stage",
+      "startedUtc": "2026-10-29T16:39:49.305249+00:00"
+    },
+    {
+      "phase": "switch",
+      "startedUtc": "2026-10-29T16:40:28.210325+00:00"
+    },
+    {
+      "phase": "postcheck",
+      "startedUtc": "2026-10-29T16:41:06.431705+00:00",
+      "plannedHttpChecks": 217
+    },
+    {
+      "phase": "document",
+      "startedUtc": "2026-10-29T16:42:37.128877+00:00",
+      "builtInProof": "duplicate-token guard before both opaque snapshots; append prefix/inode/uid/gid/mode proof"
+    }
+  ],
+  "preflightPassUtc": "2026-10-29T16:38:02.556788+00:00",
+  "backupFirstWriteUtc": "2026-10-29T16:38:36.499234+00:00",
+  "uploadUtc": "2026-10-29T16:39:25.873711+00:00",
+  "stagedUtc": "2026-10-29T16:40:08.432613+00:00",
+  "beforeSwitchUtc": "2026-10-29T16:40:46.495857+00:00",
+  "switchUtc": "2026-10-29T16:40:46.555575+00:00",
+  "postchecksUtc": "2026-10-29T16:41:37.142460+00:00",
+  "documentedUtc": "2026-10-29T16:42:54.265087+00:00",
+  "finalReadbackUtc": "2026-10-29T16:44:58.033623+00:00",
+  "toolResults": {
+    "preflight": {
+      "execChunk": "3156a9",
+      "sessionId": 24515,
+      "completionChunk": "84a2e0",
+      "exitCode": 0
+    },
+    "begin": {
+      "execChunk": "0ee219",
+      "sessionId": 72606,
+      "completionChunk": "98575b",
+      "exitCode": 0
+    },
+    "upload": {
+      "execChunk": "cacd15",
+      "sessionId": 57130,
+      "completionChunk": "e91f50",
+      "exitCode": 0
+    },
+    "stage": {
+      "execChunk": "08885e",
+      "sessionId": 82950,
+      "completionChunk": "721243",
+      "exitCode": 0
+    },
+    "switch": {
+      "execChunk": "eded08",
+      "sessionId": 76120,
+      "completionChunk": "8798f4",
+      "exitCode": 0
+    },
+    "postcheck": {
+      "execChunk": "15a516",
+      "sessionId": 67778,
+      "completionChunk": "598dd6",
+      "exitCode": 0
+    },
+    "document": {
+      "execChunk": "1ee3bd",
+      "sessionId": 76472,
+      "completionChunk": "3a30e1",
+      "exitCode": 0
+    },
+    "finalReadOnly": {
+      "execChunk": "c972d1",
+      "sessionId": 82431,
+      "completionChunk": "7efbc3",
+      "exitCode": 0
+    }
+  },
+  "publicUrls": {
+    "water": "https://superflight.space/review/r4d/p3-masks-water/",
+    "dark": "https://superflight.space/review/r4d/p3-masks-dark/"
+  },
+  "publicVerdicts": {
+    "water": "Technical PASS / Visual PARTIAL; W-DIVIDER-01 OPEN",
+    "dark": "Targeted Technical PASS / overall Visual PARTIAL; coverage/shadow limits"
+  },
+  "publicChecks": 217,
+  "httpStatusCounts": {
+    "200": 215,
+    "403": 1,
+    "404": 1
+  },
+  "approvedPayloadsVerified": 197,
+  "allTenPublicJsMimeBodyVerified": true,
+  "limitedResourceResponses": 0,
+  "boundedPublicUiSmoke": {
+    "passed": true,
+    "performedBy": "Lead",
+    "source": "E:\\R4D\\perspective\\p3-worktrees\\lead\\experiments\\p3-masks\\transfer\\water\\lead\\PUBLIC_UI_SMOKE.md",
+    "sourceSha256": "4cd6d76f9e0ce64a498df6cc9c01262a1a84688f0778709c93db25f554e9986b",
+    "waterMasks": 71,
+    "darkMasks": 60,
+    "seed": 0,
+    "stepTicks": 10,
+    "tickAfter": 10,
+    "timeAfterSeconds": 0.05,
+    "paused": true,
+    "universalAuthSecurityAcceptance": false,
+    "nativeProductQaRepeated": false
+  },
+  "postAuthJsMimeBodyUiVerified": false,
+  "oldMetadataSha256": "ed789cd60a3de3287f9a4456e68f9707df09d8487f2026d2111beee05e4d7a98",
+  "newMetadataSha256": "71419d91cc132a8d63d1be21718e0f20c72a796ff65decbaf6b4c7de796c9f65",
+  "foreignFileRowsPreserved": 672,
+  "baselineDirectoryRowsPreserved": 88,
+  "jungleFilesPreserved": 77,
+  "frozenFilesVerified": 194,
+  "frozenBytesVerified": 7088324,
+  "docsAppendProofs": [
+    {
+      "before": {
+        "path": "/home/sf/assistant-context/vps/services/superflight-studio.md",
+        "inode": 2922368,
+        "uid": 1003,
+        "gid": 27,
+        "mode": 416,
+        "bytes": 85029,
+        "sha256": "052f8d7cc660cf21eee0613e1006f83eb306880fc40c3b0fb86e3429b2357b27"
+      },
+      "after": {
+        "path": "/home/sf/assistant-context/vps/services/superflight-studio.md",
+        "inode": 2922368,
+        "uid": 1003,
+        "gid": 27,
+        "mode": 416,
+        "bytes": 87360,
+        "sha256": "cd06c3e0b11174dca162131181bc5b57131bb26338c672857aeac95f7a7c07d0",
+        "prefixBytes": 85029,
+        "prefixSha256": "052f8d7cc660cf21eee0613e1006f83eb306880fc40c3b0fb86e3429b2357b27"
+      },
+      "originalPrefixAndMetadataPreserved": true
+    },
+    {
+      "before": {
+        "path": "/home/sf/assistant-context/vps/CHANGELOG.md",
+        "inode": 2884515,
+        "uid": 1003,
+        "gid": 27,
+        "mode": 416,
+        "bytes": 299916,
+        "sha256": "415a20f3971826d3e623735035a157f47dce5672be9fa8b9312c15ffc8e39428"
+      },
+      "after": {
+        "path": "/home/sf/assistant-context/vps/CHANGELOG.md",
+        "inode": 2884515,
+        "uid": 1003,
+        "gid": 27,
+        "mode": 416,
+        "bytes": 302247,
+        "sha256": "1470259976c2047a507feb952d7a8cca3813a40582568cec2ec66ad191cb6b9d",
+        "prefixBytes": 299916,
+        "prefixSha256": "415a20f3971826d3e623735035a157f47dce5672be9fa8b9312c15ffc8e39428"
+      },
+      "originalPrefixAndMetadataPreserved": true
+    }
+  ],
+  "rollback": {
+    "performed": false,
+    "beforePath": "/opt/superflight-studio/backups/review-p3-water-dark-front-edge-04/review.locations.conf.before",
+    "beforeSha256": "e2a466db57830bddb9003361028f99c132504ed3e12a632918898cd6c2a51224",
+    "beforeRefreshedUtc": "2026-10-29T16:40:46.495857+00:00",
+    "guardRequired": "current own P3 root/snippet; preserve later foreign edits"
+  },
+  "engineerWriterActive": false,
+  "tokenOrWindowClosedByEngineer": false,
+  "closureAuthority": "CTO only after handoff review",
+  "nativeBuildOrProductQaRun": false,
+  "cleanupPerformed": false,
+  "phaseReplayOrFallback": false,
+  "extraPostcheckHttpRequests": 0,
+  "runtimeReceiptBytes": 233116
+}

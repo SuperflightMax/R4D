@@ -1,3 +1,13 @@
+Current FINAL DELIVERY: **PUBLISHED COMBINED PARTIAL; seven phases completed.**
+[Exact delivery handoff](../../water/release-engineer/DELIVERY_V3.md): switch16:40:46Z,217HTTP/197payload/10JS
+passed; both docs append-prefix/metadata proofs and final RO guards passed.
+Separate Lead bounded public UI smoke passed for Water71/Dark60 and +10ticks.
+Public verdicts remain PARTIAL; W-DIVIDER OPEN/Dark limits retained.
+Release writer idle after handoff; token/window/P3slot closure remains CTO.
+Historical preparations/STOP evidence preserved below.
+
+---
+
 Current LOCAL V3: **WAIT_V3_FULL_REVIEW_AND_EXACT_CTO_TOKEN; server_write=false; token=null.**
 [Canonical v3](../../water/release-engineer/COMBINED_INTENT_V3.md): strict200/403/404+7headers+catalogidentity;217HTTP
 plan unchanged; actual helper offline regression PASS, docs prefix proof.
