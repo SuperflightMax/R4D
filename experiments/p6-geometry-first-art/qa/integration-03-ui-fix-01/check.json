@@ -1,0 +1,84 @@
+{
+  "scope": "targeted UI defect regression and lift1 adapter only; no new full native run or art PASS",
+  "sourceCommit": "93963cdb1157afc517469f3c08b581455c7d1697",
+  "url": "http://127.0.0.1:41769/",
+  "inventoryFileSha256": "eaffd874d5eae1d0881199253fb7a706601b829b2d64d4d23a700e6ccd2f0046",
+  "files": 40,
+  "bytes": 6983315,
+  "consumerSha256": "7248b00992254b93f20eaf48b1d10a16719c1de9d7ee8dabe9e4438c6e1d53e5",
+  "coreSha256": "8843446996582eaccbd9ff63d3147d74b7eca9a614d8e0df16851d1d89d46f50",
+  "fixedScenarioConfirmed": true,
+  "ordinarySeed": 1608012128,
+  "inputHeldWhileMoving": {
+    "firstLiveTick": 93,
+    "nextLiveTick": 116,
+    "input": "95",
+    "pausedBeforeSeek": false,
+    "actualTickAfterSeek": 95,
+    "pausedAfterSeek": true
+  },
+  "nativeOracle": {
+    "method": "independent pinned native build, short prefix only",
+    "maxObservedTick": 116,
+    "generatedStates": 117,
+    "comparedSnapshots": 9,
+    "allEqual": true
+  },
+  "stepTicks": [
+    94,
+    95,
+    96,
+    0,
+    95
+  ],
+  "replay95ExactlyEqual": true,
+  "packetV02": {
+    "sourceCommit": "3899da2bc3fbaa9973bbc88dd823d58f958e7d60",
+    "bytes": 6798,
+    "sha256": "49766ad720b73ce4d92276917e7b394d6b552e078cdd0c0afe0b924c2650a680",
+    "encoding": "UTF8 LF without BOM; source Git identity equals declared used input identity"
+  },
+  "render": [
+    {
+      "tick": 95,
+      "nativeStateEqual": true,
+      "radius": 14.282009525822616,
+      "appliedLift": 14.282009525822616,
+      "center": [
+        769.9703127263558,
+        353.007071755419
+      ],
+      "expectedGroundPoint": [
+        769.9703127263558,
+        367.28908128124164
+      ],
+      "bottomError": 0,
+      "groundShadowExactlyUnchanged": true,
+      "oneWoodUnchanged": true
+    },
+    {
+      "tick": 1916,
+      "nativeStateEqual": true,
+      "radius": 17.623217777858144,
+      "appliedLift": 17.623217777858144,
+      "center": [
+        817.1193246163476,
+        1093.9755083979505
+      ],
+      "expectedGroundPoint": [
+        817.1193246163476,
+        1111.5987261758087
+      ],
+      "bottomError": 0,
+      "groundShadowExactlyUnchanged": true,
+      "oneWoodUnchanged": true
+    }
+  ],
+  "downloadOperationRetried": false,
+  "saveReplayDownloadButtonTested": false,
+  "limitations": [
+    "Full native audit remains the previously delivered baseline; only targeted snapshots checked here.",
+    "One actual wood and24 diagnostic bodies do not constitute final art/occlusion acceptance.",
+    "Download call limitation remains separate and unchanged."
+  ]
+}

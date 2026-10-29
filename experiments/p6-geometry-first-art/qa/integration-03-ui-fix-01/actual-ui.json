@@ -1,0 +1,285 @@
+{
+  "initial": {
+    "normalNew": {
+      "seed": 1608012128,
+      "state": {
+        "tick": 60,
+        "rngU32": 1608012128,
+        "ball": {
+          "pos": {
+            "x": 33254.8631695,
+            "y": 33196.6483101
+          },
+          "vel": {
+            "x": 0,
+            "y": 294
+          }
+        },
+        "nearMissBucketIds": [],
+        "done": false
+      },
+      "paused": false
+    },
+    "typedWhileMoving": {
+      "seed": 1608012128,
+      "state": {
+        "tick": 93,
+        "rngU32": 1608012128,
+        "ball": {
+          "pos": {
+            "x": 33254.8631695,
+            "y": 33258.9028101
+          },
+          "vel": {
+            "x": 0,
+            "y": 455.7
+          }
+        },
+        "nearMissBucketIds": [],
+        "done": false
+      },
+      "paused": false,
+      "input": "95"
+    },
+    "heldAcrossRedraw": {
+      "state": {
+        "tick": 116,
+        "rngU32": 3076284818,
+        "ball": {
+          "pos": {
+            "x": 33252.4283326,
+            "y": 33229.6855532
+          },
+          "vel": {
+            "x": -23.0296919,
+            "y": -268.7074186
+          }
+        },
+        "nearMissBucketIds": [],
+        "done": false
+      },
+      "paused": false,
+      "input": "95"
+    },
+    "seek95": {
+      "seed": 1608012128,
+      "state": {
+        "tick": 95,
+        "rngU32": 3076284818,
+        "ball": {
+          "pos": {
+            "x": 33254.8464511,
+            "y": 33263.0448323
+          },
+          "vel": {
+            "x": -23.0296919,
+            "y": -371.6074186
+          }
+        },
+        "nearMissBucketIds": [],
+        "done": false
+      },
+      "paused": true,
+      "input": "95",
+      "metrics": {
+        "seed": 1608012128,
+        "tick": 95,
+        "view": "source",
+        "artVisible": true,
+        "geometryVisible": true,
+        "nativeCenter": [
+          33254.8464511,
+          33263.0448323
+        ],
+        "projectedNativeCenter": [
+          769.9703127263558,
+          367.28908128124164
+        ],
+        "ball": {
+          "center": [
+            769.9703127263558,
+            353.007071755419
+          ],
+          "scale": [
+            0.03336918113509957,
+            0.03336918113509957
+          ],
+          "anchor": [
+            0.49920255183413076,
+            0.5075757575757576
+          ],
+          "textureCanvas": [
+            1254,
+            1254
+          ],
+          "liftRadiusFactor": 1,
+          "appliedVisualLiftPx": 14.282009525822616,
+          "visibleRadius": 14.282009525822616,
+          "opacity": 1
+        },
+        "shadow": {
+          "textureCanvas": [
+            1774,
+            887
+          ],
+          "meshScale": [
+            1,
+            1
+          ],
+          "opacity": 0.42,
+          "firstGroundVertexSource": [
+            709.0538330078125,
+            358.37554931640625
+          ],
+          "radiusNative": [
+            22,
+            22
+          ],
+          "offsetNative": [
+            -6,
+            10
+          ]
+        },
+        "objectLayers": [
+          {
+            "id": "wood-01-body",
+            "objectId": "wood-01",
+            "nativeBase": [
+              33101.88779971951,
+              33516.93876987417
+            ],
+            "nativeRadius": 32.47610540354854,
+            "rect": [
+              555.1085053757648,
+              356.83465805807083,
+              147.52941176470338,
+              147.52941176470338
+            ],
+            "actualPosition": [
+              555.1085053757648,
+              356.83465805807083
+            ],
+            "actualDimensions": [
+              147.52941176470338,
+              147.52941176470338
+            ],
+            "aboveBall": true,
+            "visible": true
+          }
+        ]
+      }
+    }
+  },
+  "steps": [
+    {
+      "action": "UI seek94",
+      "seed": 1608012128,
+      "state": {
+        "tick": 94,
+        "rngU32": 1608012128,
+        "ball": {
+          "pos": {
+            "x": 33254.8631695,
+            "y": 33261.2058101
+          },
+          "vel": {
+            "x": 0,
+            "y": 460.6
+          }
+        },
+        "nearMissBucketIds": [],
+        "done": false
+      },
+      "paused": true,
+      "input": "94"
+    },
+    {
+      "action": "UI +1 to95",
+      "seed": 1608012128,
+      "state": {
+        "tick": 95,
+        "rngU32": 3076284818,
+        "ball": {
+          "pos": {
+            "x": 33254.8464511,
+            "y": 33263.0448323
+          },
+          "vel": {
+            "x": -23.0296919,
+            "y": -371.6074186
+          }
+        },
+        "nearMissBucketIds": [],
+        "done": false
+      },
+      "paused": true,
+      "input": "95"
+    },
+    {
+      "action": "UI +1 to96",
+      "seed": 1608012128,
+      "state": {
+        "tick": 96,
+        "rngU32": 3076284818,
+        "ball": {
+          "pos": {
+            "x": 33254.7313026,
+            "y": 33261.2112952
+          },
+          "vel": {
+            "x": -23.0296919,
+            "y": -366.7074186
+          }
+        },
+        "nearMissBucketIds": [],
+        "done": false
+      },
+      "paused": true,
+      "input": "96"
+    },
+    {
+      "action": "UI repeat seed ->0",
+      "seed": 1608012128,
+      "state": {
+        "tick": 0,
+        "rngU32": 1608012128,
+        "ball": {
+          "pos": {
+            "x": 33254.863169496064,
+            "y": 33151.81331014809
+          },
+          "vel": {
+            "x": 0,
+            "y": 0
+          }
+        },
+        "nearMissBucketIds": [],
+        "done": false
+      },
+      "paused": true,
+      "input": "0"
+    },
+    {
+      "action": "UI replay seek95",
+      "seed": 1608012128,
+      "state": {
+        "tick": 95,
+        "rngU32": 3076284818,
+        "ball": {
+          "pos": {
+            "x": 33254.8464511,
+            "y": 33263.0448323
+          },
+          "vel": {
+            "x": -23.0296919,
+            "y": -371.6074186
+          }
+        },
+        "nearMissBucketIds": [],
+        "done": false
+      },
+      "paused": true,
+      "input": "95"
+    }
+  ]
+}
