@@ -25,9 +25,10 @@ Fullnew868/meta71419…c9f65, foreign672/Jungle77/frozen194 preserved;
 [PUBLIC_UI_SMOKE](../../water/lead/PUBLIC_UI_SMOKE.md).
 Release execution01a18885 completed/idle/errornull, source372344f unchanged.
 Все7фаз completedonce, не повторять. Полный handoff CTO отправлен.
-**CTO V3 token/window/slot closure pending**, Root/Release не закрывают сами.
+**CTO принял и ЗАКРЫЛ V3token/window, ОСВОБОДИЛ P3slot16:56:22Z**.
+Authority completion JSON/SHA в WaterSTATE. Все три tokens historical, reuse запрещён.
 V1/V2 tokens CLOSED, их STOP доfirstwrite сохранены; no auth/globalMIME changes.
 Builder d9864fd idle:3ownpreviewPID/listeners alreadyabsent, StopIssued=false,
 все manifests unchanged. Staff прежние5/6.1-sol/xhigh, Root/CTO max сохранены.
 Только ownE/processlocaltemp, никаких новыхcandidate/веток/ролей/очисток.
-Следующее — зафиксировать явную CTO closure и final LIVE URLs; server work нет.
+Closure зафиксирована; Lead idle, server/SSH/product/QA/cleanup work нет. Новое только по конкретному поручению.

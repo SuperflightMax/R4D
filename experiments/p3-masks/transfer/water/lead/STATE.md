@@ -1,7 +1,7 @@
 # P3 Water + Dark — Lead delivery checkpoint
 
 2026-10-29. **PUBLISHED: обе LIVE Review, оба verdict PARTIAL.**
-Research и release завершены; ожидается только явное CTO token/window/slot closure.
+Research и release завершены. CTO принял результат и закрыл token/window/P3slot16:56:22Z.
 Новых implementation/QA/candidate/publication действий не поручено.
 
 ## Два результата
@@ -68,7 +68,10 @@ V3 token CTO-P3-WD04-V3-20261029T163518Z-d69a711f4777;
 authoritative E:\R4D\perspective\coordination\p3-water-dark-front-edge-04-token-2026-10-29-v3.json
 SHA1bbc9511eada2766f971c8ee7a16c3ddac5beda455786d4500e5f4c2218ce7b2.
 Все7фаз completed once, exit0; повторять нельзя. Root/Release token не закрывают.
-Полный factual handoff CTO отправлен; **CTO closure pending**.
+Полный factual handoff CTO принят. **V3 token CLOSED, shared window CLOSED, P3slot RELEASED16:56:22Z.**
+Authority: E:\R4D\perspective\coordination\p3-transfer-water-dark-completion-2026-10-29.json,
+SHA d26076af2699ce5f01c822f2c7b77ceff43d9ee6a97317e4f31b70f162a7bc7a, полностью прочитана Lead.
+Все три tokens исторические, reuse запрещён. Дополнительная приёмка Max не требуется.
 V1 CLOSED14:36:01Z (http name collision), V2 CLOSED14:58:05Z (old303 assumption),
 оба остановились до firstwrite. Их auth/source/STOP/raw сохранены. Actual14:52
 statuses unknown, поздний200catalog не ретроистория. Prospective V3 baseline
@@ -92,5 +95,5 @@ Lead E:\R4D\perspective\p3-worktrees\lead, codex/r4d-p3-masks-lead-01;
 только own E/process-local TEMP/TMP. Cservice/Ddirty repo не использовать.
 Свежий system RAM/CPU/C/D/E перед тяжёлым; E<=4GiB diagnosis,<=2 checkpoint/stop.
 Новых staff/веток/worktree/акторов/процессов/очередей/кейсов не создавать.
-Source/raw/историю/Jungle сохранять. Сейчас только дождаться CTO closure,
-зафиксировать её и final two LIVE URLs. Новых server actions не осталось.
+Source/raw/историю/Jungle сохранять. CTO closure зафиксирована; новых server/SSH/продуктовых/QA/cleanup действий нет.
+Lead idle. Новые работы только по новому конкретному поручению.
