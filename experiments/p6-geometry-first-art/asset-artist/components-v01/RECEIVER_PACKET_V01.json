@@ -1,0 +1,138 @@
+{
+  "schema": "r4d.p6.receiver-layers.v1",
+  "acceptedP1": "4b47db04c7140ebf88f69b91faa0b790d46f22ec",
+  "raw": "raw/receiver-master-v02.png",
+  "rawSha256": "22df9e72c1db938778f0f78b1d04c8184114b113c044e9bb1457186e8928335c",
+  "rawCanvas": [
+    1536,
+    1024
+  ],
+  "mouthAnchorMasterPx": [
+    770.0,
+    350.0
+  ],
+  "safeInnerMouthEllipseRadiusPx": [
+    500.0,
+    230.0
+  ],
+  "visibleMouthRadiusFactorOfCaptureX": 2.3,
+  "frontMaskMethod": "Actual native front stone/gold rim edge: scan raw columns from mouth centre for opaque warm rim luma>=100 and R>=130; median9-column smoothing; preserve all actual body pixels below that edge. Rear is its complementary painted mouth/rear-rim/handle part.",
+  "preparedAlphaCutoff": 16,
+  "rawUnchanged": true,
+  "instances": [
+    {
+      "id": "receiver-01",
+      "nativeCentre": [
+        32893.24699917258,
+        34882.17558293618
+      ],
+      "nativeCaptureRadius": 33.523990645255964,
+      "mouthCentreSource": [
+        358.55946155335715,
+        1238.2098586093362
+      ],
+      "captureRadiusXSource": 38.11588800387989,
+      "uniformScale": 0.17533308481784746,
+      "holeRadiusXSource": 87.66654240892373,
+      "holeRadiusYSource": 40.326609508104916,
+      "captureSamples": 128,
+      "captureMaxSafeEllipseNorm": 0.32977711180303304,
+      "captureMaxSampleLuma": 39.87259999999999,
+      "captureMinSampleAlpha": 252
+    },
+    {
+      "id": "receiver-02",
+      "nativeCentre": [
+        33147.03047341419,
+        34919.8575927248
+      ],
+      "nativeCaptureRadius": 27.859680215191496,
+      "mouthCentreSource": [
+        646.3101699213796,
+        1264.1927466396157
+      ],
+      "captureRadiusXSource": 31.87880961694259,
+      "uniformScale": 0.1466425242379359,
+      "holeRadiusXSource": 73.32126211896795,
+      "holeRadiusYSource": 33.72778057472525,
+      "captureSamples": 128,
+      "captureMaxSafeEllipseNorm": 0.33178186465661735,
+      "captureMaxSampleLuma": 37.4302,
+      "captureMinSampleAlpha": 252
+    },
+    {
+      "id": "receiver-03",
+      "nativeCentre": [
+        33381.51442545501,
+        34923.90364051326
+      ],
+      "nativeCaptureRadius": 28.5120754734123,
+      "mouthCentreSource": [
+        914.7204931038729,
+        1267.0024411082616
+      ],
+      "captureRadiusXSource": 32.64779750692446,
+      "uniformScale": 0.15017986853185253,
+      "holeRadiusXSource": 75.08993426592626,
+      "holeRadiusYSource": 34.541369762326084,
+      "captureSamples": 128,
+      "captureMaxSafeEllipseNorm": 0.3323886734615575,
+      "captureMaxSampleLuma": 39.2176,
+      "captureMinSampleAlpha": 252
+    },
+    {
+      "id": "receiver-04",
+      "nativeCentre": [
+        33627.12626589451,
+        34890.46257444717
+      ],
+      "nativeCaptureRadius": 31.47800941620484,
+      "mouthCentreSource": [
+        1193.5527369826405,
+        1243.8955530450871
+      ],
+      "captureRadiusXSource": 35.8398751474075,
+      "uniformScale": 0.16486342567807447,
+      "holeRadiusXSource": 82.43171283903723,
+      "holeRadiusYSource": 37.918587905957125,
+      "captureSamples": 128,
+      "captureMaxSafeEllipseNorm": 0.3305570114843434,
+      "captureMaxSampleLuma": 46.62559999999999,
+      "captureMinSampleAlpha": 252
+    }
+  ],
+  "files": [
+    {
+      "path": "prepared/receiver-rear-master-v02.png",
+      "sha256": "f4b0d95d9e42f1210a56b0d6deb0933eca7fd009496528326e76c062e9978d26",
+      "bytes": 1231748
+    },
+    {
+      "path": "prepared/receiver-front-master-v02.png",
+      "sha256": "2675825d5559553259a4acfec334550badff35bac8419e2b94f66a33a76fb725",
+      "bytes": 1282607
+    },
+    {
+      "path": "prepared/receivers-rear-v01.png",
+      "sha256": "8272eb520609a23c35ac42988ff9ca04d3f1e9a1d4ca571d1956512fc24f734a",
+      "bytes": 158983
+    },
+    {
+      "path": "prepared/receivers-front-v01.png",
+      "sha256": "8fd85ceaa05572fe7719f3e5b9aa04a5ef216193490cdba5f110a9b6a47c7881",
+      "bytes": 147477
+    },
+    {
+      "path": "prepared/receivers-preview-v01.png",
+      "sha256": "1041b41ccda08264eb53ec93e782c7ecfbacb0f403c77930cd173075313fb8b3",
+      "bytes": 293709
+    }
+  ],
+  "ordering": "Full-frame receivers-rear below ball; receivers-front above ball; both at source0/0 and disabled with Art. Do not use mouth/receiver mask for the whole scene or geometry path.",
+  "limitations": [
+    "These are actual basket front/rear art layers, not finished long suspension ropes or boundary art.",
+    "128 accepted capture-circle samples per receiver were checked in the actual dark-mouth pixels; assembled capture/miss trajectories still need native/Pixi QA.",
+    "Static preview is a prepared-art composite, not a browser simulation frame.",
+    "Receiver master V01 has valid alpha but too shallow a camera; v02 is the actual native angle correction. Prepared background-extraction prompt was NOT invoked because outside alpha already was0."
+  ]
+}
