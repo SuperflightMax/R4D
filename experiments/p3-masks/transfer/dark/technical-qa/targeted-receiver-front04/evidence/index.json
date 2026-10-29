@@ -1,0 +1,737 @@
+{
+  "candidate": "dark-receiver-front-edge-04",
+  "qaBaselineHead": "c48236803b18ff2f15e7bead312dc5c0f8966e18",
+  "sourceCommit": "d7eac5d7d76127e3138480f1f16eaf28aac0f15a",
+  "artistCommit": "e5d3e1f44c112e483ff2a23fbd169cb119390865",
+  "manifestSha256": "d180e5a63bb1dec7c510507fc2ce990e7cb10927b337a19c4bb9effc67e4ed1b",
+  "utc": "2026-10-29T13:04:56.805Z",
+  "targetedOnly": true,
+  "fullMatrixRerun": false,
+  "nativeBuild": false,
+  "selectedNativeStates": 25,
+  "browserCheckpointSamples": 68,
+  "rawOld03Frames": 28,
+  "rawNew04TargetFrames": 28,
+  "rawNew04NearEntryFrames": 11,
+  "curatedFrames": 34,
+  "frames": [
+    {
+      "path": "frames/old03-z100-t2011.jpg",
+      "source": "browser/old03-z100-t2011.json",
+      "candidate": "old03",
+      "seed": 3858699109,
+      "tick": 2011,
+      "scale": 100,
+      "pan": {
+        "dx": 0,
+        "dy": 0
+      }
+    },
+    {
+      "path": "frames/old03-z100-t2012.jpg",
+      "source": "browser/old03-z100-t2012.json",
+      "candidate": "old03",
+      "seed": 3858699109,
+      "tick": 2012,
+      "scale": 100,
+      "pan": {
+        "dx": 0,
+        "dy": 0
+      }
+    },
+    {
+      "path": "frames/old03-z100-t2013.jpg",
+      "source": "browser/old03-z100-t2013.json",
+      "candidate": "old03",
+      "seed": 3858699109,
+      "tick": 2013,
+      "scale": 100,
+      "pan": {
+        "dx": 0,
+        "dy": 0
+      }
+    },
+    {
+      "path": "frames/old03-z200-t2011.jpg",
+      "source": "browser/old03-z200-t2011.json",
+      "candidate": "old03",
+      "seed": 3858699109,
+      "tick": 2011,
+      "scale": 200,
+      "pan": {
+        "dx": -250,
+        "dy": -300
+      }
+    },
+    {
+      "path": "frames/old03-z200-t2012.jpg",
+      "source": "browser/old03-z200-t2012.json",
+      "candidate": "old03",
+      "seed": 3858699109,
+      "tick": 2012,
+      "scale": 200,
+      "pan": {
+        "dx": -250,
+        "dy": -300
+      }
+    },
+    {
+      "path": "frames/old03-z200-t2013.jpg",
+      "source": "browser/old03-z200-t2013.json",
+      "candidate": "old03",
+      "seed": 3858699109,
+      "tick": 2013,
+      "scale": 200,
+      "pan": {
+        "dx": -250,
+        "dy": -300
+      }
+    },
+    {
+      "path": "frames/new04-z100-t2011.jpg",
+      "source": "browser/new04-z100-t2011.json",
+      "candidate": "new04",
+      "seed": 3858699109,
+      "tick": 2011,
+      "scale": 100,
+      "pan": {
+        "dx": 0,
+        "dy": 0
+      }
+    },
+    {
+      "path": "frames/new04-z100-t2012.jpg",
+      "source": "browser/new04-z100-t2012.json",
+      "candidate": "new04",
+      "seed": 3858699109,
+      "tick": 2012,
+      "scale": 100,
+      "pan": {
+        "dx": 0,
+        "dy": 0
+      }
+    },
+    {
+      "path": "frames/new04-z100-t2013.jpg",
+      "source": "browser/new04-z100-t2013.json",
+      "candidate": "new04",
+      "seed": 3858699109,
+      "tick": 2013,
+      "scale": 100,
+      "pan": {
+        "dx": 0,
+        "dy": 0
+      }
+    },
+    {
+      "path": "frames/new04-z200-t2011.jpg",
+      "source": "browser/new04-z200-t2011.json",
+      "candidate": "new04",
+      "seed": 3858699109,
+      "tick": 2011,
+      "scale": 200,
+      "pan": {
+        "dx": -250,
+        "dy": -300
+      }
+    },
+    {
+      "path": "frames/new04-z200-t2012.jpg",
+      "source": "browser/new04-z200-t2012.json",
+      "candidate": "new04",
+      "seed": 3858699109,
+      "tick": 2012,
+      "scale": 200,
+      "pan": {
+        "dx": -250,
+        "dy": -300
+      }
+    },
+    {
+      "path": "frames/new04-z200-t2013.jpg",
+      "source": "browser/new04-z200-t2013.json",
+      "candidate": "new04",
+      "seed": 3858699109,
+      "tick": 2013,
+      "scale": 200,
+      "pan": {
+        "dx": -250,
+        "dy": -300
+      }
+    },
+    {
+      "path": "frames/new04-z200-t2015.jpg",
+      "source": "browser/new04-z200-t2015.json",
+      "candidate": "new04",
+      "seed": 3858699109,
+      "tick": 2015,
+      "scale": 200,
+      "pan": {
+        "dx": -250,
+        "dy": -300
+      }
+    },
+    {
+      "path": "frames/new04-z200-t2017.jpg",
+      "source": "browser/new04-z200-t2017.json",
+      "candidate": "new04",
+      "seed": 3858699109,
+      "tick": 2017,
+      "scale": 200,
+      "pan": {
+        "dx": -250,
+        "dy": -300
+      }
+    },
+    {
+      "path": "frames/new04-z200-t2019.jpg",
+      "source": "browser/new04-z200-t2019.json",
+      "candidate": "new04",
+      "seed": 3858699109,
+      "tick": 2019,
+      "scale": 200,
+      "pan": {
+        "dx": -250,
+        "dy": -300
+      }
+    },
+    {
+      "path": "frames/new04-z100-t2044.jpg",
+      "source": "browser/new04-z100-t2044.json",
+      "candidate": "new04",
+      "seed": 3858699109,
+      "tick": 2044,
+      "scale": 100,
+      "pan": {
+        "dx": 0,
+        "dy": 0
+      }
+    },
+    {
+      "path": "frames/new04-z100-t2045.jpg",
+      "source": "browser/new04-z100-t2045.json",
+      "candidate": "new04",
+      "seed": 3858699109,
+      "tick": 2045,
+      "scale": 100,
+      "pan": {
+        "dx": 0,
+        "dy": 0
+      }
+    },
+    {
+      "path": "frames/new04-z100-t2046.jpg",
+      "source": "browser/new04-z100-t2046.json",
+      "candidate": "new04",
+      "seed": 3858699109,
+      "tick": 2046,
+      "scale": 100,
+      "pan": {
+        "dx": 0,
+        "dy": 0
+      }
+    },
+    {
+      "path": "frames/new04-z100-t2047.jpg",
+      "source": "browser/new04-z100-t2047.json",
+      "candidate": "new04",
+      "seed": 3858699109,
+      "tick": 2047,
+      "scale": 100,
+      "pan": {
+        "dx": 0,
+        "dy": 0
+      }
+    },
+    {
+      "path": "frames/new04-z200-t2044.jpg",
+      "source": "browser/new04-z200-t2044.json",
+      "candidate": "new04",
+      "seed": 3858699109,
+      "tick": 2044,
+      "scale": 200,
+      "pan": {
+        "dx": -250,
+        "dy": -300
+      }
+    },
+    {
+      "path": "frames/new04-z200-t2045.jpg",
+      "source": "browser/new04-z200-t2045.json",
+      "candidate": "new04",
+      "seed": 3858699109,
+      "tick": 2045,
+      "scale": 200,
+      "pan": {
+        "dx": -250,
+        "dy": -300
+      }
+    },
+    {
+      "path": "frames/new04-z200-t2046.jpg",
+      "source": "browser/new04-z200-t2046.json",
+      "candidate": "new04",
+      "seed": 3858699109,
+      "tick": 2046,
+      "scale": 200,
+      "pan": {
+        "dx": -250,
+        "dy": -300
+      }
+    },
+    {
+      "path": "frames/new04-z200-t2047.jpg",
+      "source": "browser/new04-z200-t2047.json",
+      "candidate": "new04",
+      "seed": 3858699109,
+      "tick": 2047,
+      "scale": 200,
+      "pan": {
+        "dx": -250,
+        "dy": -300
+      }
+    },
+    {
+      "path": "frames/new04-receiver01-t880.jpg",
+      "source": "browser/new04-receiver01-t880.json",
+      "candidate": "new04",
+      "seed": 0,
+      "tick": 880,
+      "scale": 200,
+      "pan": {
+        "dx": 0,
+        "dy": -300
+      }
+    },
+    {
+      "path": "frames/new04-receiver01-t884.jpg",
+      "source": "browser/new04-receiver01-t884.json",
+      "candidate": "new04",
+      "seed": 0,
+      "tick": 884,
+      "scale": 200,
+      "pan": {
+        "dx": 0,
+        "dy": -300
+      }
+    },
+    {
+      "path": "frames/new04-receiver01-t887.jpg",
+      "source": "browser/new04-receiver01-t887.json",
+      "candidate": "new04",
+      "seed": 0,
+      "tick": 887,
+      "scale": 200,
+      "pan": {
+        "dx": 0,
+        "dy": -300
+      }
+    },
+    {
+      "path": "frames/new04-receiver01-t888.jpg",
+      "source": "browser/new04-receiver01-t888.json",
+      "candidate": "new04",
+      "seed": 0,
+      "tick": 888,
+      "scale": 200,
+      "pan": {
+        "dx": 0,
+        "dy": -300
+      }
+    },
+    {
+      "path": "frames/new04-receiver02-t965.jpg",
+      "source": "browser/new04-receiver02-t965.json",
+      "candidate": "new04",
+      "seed": 1551806092,
+      "tick": 965,
+      "scale": 200,
+      "pan": {
+        "dx": 0,
+        "dy": -300
+      }
+    },
+    {
+      "path": "frames/new04-receiver02-t968.jpg",
+      "source": "browser/new04-receiver02-t968.json",
+      "candidate": "new04",
+      "seed": 1551806092,
+      "tick": 968,
+      "scale": 200,
+      "pan": {
+        "dx": 0,
+        "dy": -300
+      }
+    },
+    {
+      "path": "frames/new04-receiver02-t970.jpg",
+      "source": "browser/new04-receiver02-t970.json",
+      "candidate": "new04",
+      "seed": 1551806092,
+      "tick": 970,
+      "scale": 200,
+      "pan": {
+        "dx": 0,
+        "dy": -300
+      }
+    },
+    {
+      "path": "frames/new04-receiver02-t971.jpg",
+      "source": "browser/new04-receiver02-t971.json",
+      "candidate": "new04",
+      "seed": 1551806092,
+      "tick": 971,
+      "scale": 200,
+      "pan": {
+        "dx": 0,
+        "dy": -300
+      }
+    },
+    {
+      "path": "frames/new04-receiver03-t1430.jpg",
+      "source": "browser/new04-receiver03-t1430.json",
+      "candidate": "new04",
+      "seed": 3238915631,
+      "tick": 1430,
+      "scale": 200,
+      "pan": {
+        "dx": 0,
+        "dy": -300
+      }
+    },
+    {
+      "path": "frames/new04-receiver03-t1434.jpg",
+      "source": "browser/new04-receiver03-t1434.json",
+      "candidate": "new04",
+      "seed": 3238915631,
+      "tick": 1434,
+      "scale": 200,
+      "pan": {
+        "dx": 0,
+        "dy": -300
+      }
+    },
+    {
+      "path": "frames/new04-receiver03-t1435.jpg",
+      "source": "browser/new04-receiver03-t1435.json",
+      "candidate": "new04",
+      "seed": 3238915631,
+      "tick": 1435,
+      "scale": 200,
+      "pan": {
+        "dx": 0,
+        "dy": -300
+      }
+    }
+  ],
+  "checkpoints": [
+    {
+      "path": "checkpoints/old03-z200-t2011.json",
+      "source": "browser/old03-z200-t2011.json",
+      "kind": "public snapshot object",
+      "seed": 3858699109,
+      "tick": 2011
+    },
+    {
+      "path": "checkpoints/new04-z200-t2044.json",
+      "source": "browser/new04-z200-t2044.json",
+      "kind": "public snapshot object",
+      "seed": 3858699109,
+      "tick": 2044
+    },
+    {
+      "path": "checkpoints/new04-z200-t2045.json",
+      "source": "browser/new04-z200-t2045.json",
+      "kind": "public snapshot object",
+      "seed": 3858699109,
+      "tick": 2045
+    },
+    {
+      "path": "checkpoints/new04-z200-t2046.json",
+      "source": "browser/new04-z200-t2046.json",
+      "kind": "public snapshot object",
+      "seed": 3858699109,
+      "tick": 2046
+    },
+    {
+      "path": "checkpoints/new04-receiver01-t888.json",
+      "source": "browser/new04-receiver01-t888.json",
+      "kind": "public snapshot object",
+      "seed": 0,
+      "tick": 888
+    },
+    {
+      "path": "checkpoints/new04-receiver02-t971.json",
+      "source": "browser/new04-receiver02-t971.json",
+      "kind": "public snapshot object",
+      "seed": 1551806092,
+      "tick": 971
+    },
+    {
+      "path": "checkpoints/new04-receiver03-t1435.json",
+      "source": "browser/new04-receiver03-t1435.json",
+      "kind": "public snapshot object",
+      "seed": 3238915631,
+      "tick": 1435
+    },
+    {
+      "path": "checkpoints/new04-downloaded-2012.json",
+      "source": "browser/new04-downloaded-2012.json",
+      "kind": "actual browser download; bytes unchanged; exact VQA03 bytes",
+      "seed": 3858699109,
+      "tick": 2012
+    }
+  ],
+  "files": [
+    {
+      "path": "static-verification.json",
+      "bytes": 32996,
+      "sha256": "e5d0c1bc4153fcbb00843f5e202122c0a9bcebb78980234c6a9b28c8bcebbdbe"
+    },
+    {
+      "path": "selected-native-verification.json",
+      "bytes": 24890,
+      "sha256": "7cc84af160d43d0d6d50a1fc756a548c5e644986257798fa59e4e459a0cc6897"
+    },
+    {
+      "path": "resource-preflight.json",
+      "bytes": 466,
+      "sha256": "8d2f1969c53133ed314fc944159ff107ceedb0098c345f42cf909d448b97c01c"
+    },
+    {
+      "path": "resource-browser.json",
+      "bytes": 399,
+      "sha256": "83f5ffe9cd1b296f3c8b68d69e75b8de80cdd688fc516196d0d464e76d87319a"
+    },
+    {
+      "path": "resource-new-browser.json",
+      "bytes": 322,
+      "sha256": "2619b811b7622196d8a50e555e079f972060d8d659d48a6a666baa59e6e8e8ee"
+    },
+    {
+      "path": "resource-postflight.json",
+      "bytes": 322,
+      "sha256": "6d3d39138d250d1e6949b639b558b2fb131fa9518d9e7e585b359bce0408cabf"
+    },
+    {
+      "path": "frames/old03-z100-t2011.jpg",
+      "bytes": 109312,
+      "sha256": "85e4f4f5034c32229678f8537f1ca24fcce2cf3ed388e74c805ea622ac220b05"
+    },
+    {
+      "path": "frames/old03-z100-t2012.jpg",
+      "bytes": 109376,
+      "sha256": "e19854c42225d0f7332b302ef80c9e80d8f7bc112fa4f3dbd87a7b936f622ad5"
+    },
+    {
+      "path": "frames/old03-z100-t2013.jpg",
+      "bytes": 109354,
+      "sha256": "07bdef2b4c07e1e0e5f0eb2a4a1d720e9c532b55422a081ebb2d3b94e0b03a00"
+    },
+    {
+      "path": "frames/old03-z200-t2011.jpg",
+      "bytes": 106726,
+      "sha256": "275a700b56670dc9f1f38aa7c30d858e7bd61ea84bbecb8345b8ea99e21f1d90"
+    },
+    {
+      "path": "frames/old03-z200-t2012.jpg",
+      "bytes": 106780,
+      "sha256": "b6736f2c1c726bd3cd2f01f19b7b269a8b1b16d7271a21149bf738f0115a41e8"
+    },
+    {
+      "path": "frames/old03-z200-t2013.jpg",
+      "bytes": 106791,
+      "sha256": "7ed8f6a5957434af75d9d5e468853dd195f1a707e67eaa72927603a7c6b95d4b"
+    },
+    {
+      "path": "frames/new04-z100-t2011.jpg",
+      "bytes": 109264,
+      "sha256": "26dd3448162c7c1e5e4e943048ebe67d24c2b30b1ff45d5de418f0e777844294"
+    },
+    {
+      "path": "frames/new04-z100-t2012.jpg",
+      "bytes": 109294,
+      "sha256": "76ca9f73c42586ecc8deb0daa7eaf1cb81f4b5e4db193906e42d5917ec2c3dac"
+    },
+    {
+      "path": "frames/new04-z100-t2013.jpg",
+      "bytes": 109300,
+      "sha256": "8da5591b241fea2ae36dab1d2b63421325d534c764f234f312b1615773a012c2"
+    },
+    {
+      "path": "frames/new04-z200-t2011.jpg",
+      "bytes": 106738,
+      "sha256": "294cc3af7b1e795610fd485214eb6eedaf90faf9a5e9800e4f318c796b81af5d"
+    },
+    {
+      "path": "frames/new04-z200-t2012.jpg",
+      "bytes": 106745,
+      "sha256": "3147135f1630c55d12294f153924ac459b87a4a0960acc01be07ee7da25a7685"
+    },
+    {
+      "path": "frames/new04-z200-t2013.jpg",
+      "bytes": 106633,
+      "sha256": "458fa34318d5068a84e949e4a94fccca1c95c2ae867736d6cca063f3687980b5"
+    },
+    {
+      "path": "frames/new04-z200-t2015.jpg",
+      "bytes": 106681,
+      "sha256": "701794ecae489299d25d16c565f935ea05b0ad987e8f18967e8c3616dddbcd18"
+    },
+    {
+      "path": "frames/new04-z200-t2017.jpg",
+      "bytes": 106742,
+      "sha256": "816c57605209757e87613173ed0bc95f3b72016e5f8fa03b2cf5e0ede9fdc483"
+    },
+    {
+      "path": "frames/new04-z200-t2019.jpg",
+      "bytes": 106789,
+      "sha256": "c1199e9c9c0ffb6d2d9c70882ca79fe2415172eb5b1b35993f97f30055611090"
+    },
+    {
+      "path": "frames/new04-z100-t2044.jpg",
+      "bytes": 109434,
+      "sha256": "2486d39074b2749b59c0351fe6312b946f8029fd2788435665b7ce4c8a19115b"
+    },
+    {
+      "path": "frames/new04-z100-t2045.jpg",
+      "bytes": 109430,
+      "sha256": "1367d4268df407ed9f81827ed5230f5bf32476852552af1153c5572c422a9340"
+    },
+    {
+      "path": "frames/new04-z100-t2046.jpg",
+      "bytes": 109480,
+      "sha256": "3f6e9aa7b050a470ea5470062405cc67a4ea2741ef052ec93e3cede77cda0ff1"
+    },
+    {
+      "path": "frames/new04-z100-t2047.jpg",
+      "bytes": 109480,
+      "sha256": "b13f2bef21d2f5d119625711576b032cb5a63204fefd30b0eeb75658587e7980"
+    },
+    {
+      "path": "frames/new04-z200-t2044.jpg",
+      "bytes": 106998,
+      "sha256": "2bebe2e0c229df7e0aba736ac7db9576f0e889019b78b94c2d7c746a5eca8967"
+    },
+    {
+      "path": "frames/new04-z200-t2045.jpg",
+      "bytes": 107022,
+      "sha256": "8f087b8770125956942587e64399863954cb345736cd176c8dd4026937e85692"
+    },
+    {
+      "path": "frames/new04-z200-t2046.jpg",
+      "bytes": 106968,
+      "sha256": "9c662f513bc45e17009db98661d23ae029662bab59bbb20d33a61ceb0651b76f"
+    },
+    {
+      "path": "frames/new04-z200-t2047.jpg",
+      "bytes": 106988,
+      "sha256": "ffd7bfe5596d64a5152c9e893b6aba24cdf905b22ad8107ae061094535c2ebff"
+    },
+    {
+      "path": "frames/new04-receiver01-t880.jpg",
+      "bytes": 120489,
+      "sha256": "62bde99febdfc09167410e7c5d7f78036cfa32111a5ca713657a76c458c7fd63"
+    },
+    {
+      "path": "frames/new04-receiver01-t884.jpg",
+      "bytes": 120609,
+      "sha256": "459dc49c6d80edf29f55d2f850bf6913bcf4d8154878acdad842523700c4bd43"
+    },
+    {
+      "path": "frames/new04-receiver01-t887.jpg",
+      "bytes": 120738,
+      "sha256": "2421fbfa51488de7e85cc6e0e96bc01d5e3422d47ba3a75167effa753053282f"
+    },
+    {
+      "path": "frames/new04-receiver01-t888.jpg",
+      "bytes": 121514,
+      "sha256": "c505bacb2a4d2d9bff6e7a2caebc45b18409bbfa64d8182efd8bb1c649885fdd"
+    },
+    {
+      "path": "frames/new04-receiver02-t965.jpg",
+      "bytes": 121739,
+      "sha256": "b71f969c710bac76719d738664a0553d80181e0d6045b5f703da38c3732da40d"
+    },
+    {
+      "path": "frames/new04-receiver02-t968.jpg",
+      "bytes": 121756,
+      "sha256": "2dc367aa2a7734a4cfc9725f7f26f6052cecb212283b998987437b3e326daf0d"
+    },
+    {
+      "path": "frames/new04-receiver02-t970.jpg",
+      "bytes": 121839,
+      "sha256": "a352f49c8b88af8d7699651e3504c3209a06785d5721dfaf8c52855bc1353fdf"
+    },
+    {
+      "path": "frames/new04-receiver02-t971.jpg",
+      "bytes": 122368,
+      "sha256": "7a6cfa6b9c5881972fa510a4fe3cd9a716c1ba635f43f7580de9063a0b666dd7"
+    },
+    {
+      "path": "frames/new04-receiver03-t1430.jpg",
+      "bytes": 121678,
+      "sha256": "7ddc82aa379fcaade52d1f7f0dbba18aaa2995853437dcf36619be7940f7cf73"
+    },
+    {
+      "path": "frames/new04-receiver03-t1434.jpg",
+      "bytes": 121738,
+      "sha256": "0a941e01f84d120d4275bf024e3e176e53c21bf8363c708ea4dfef532bf01cdc"
+    },
+    {
+      "path": "frames/new04-receiver03-t1435.jpg",
+      "bytes": 122319,
+      "sha256": "965023be9c0b1d72e75e99391dad7fef5e35f1e46542228f62b85d441a2c725f"
+    },
+    {
+      "path": "checkpoints/old03-z200-t2011.json",
+      "bytes": 21823,
+      "sha256": "9398d6b8456771fcf061fcee3442c9be680e38fcd91a93c751fe995e9193710f"
+    },
+    {
+      "path": "checkpoints/new04-z200-t2044.json",
+      "bytes": 21825,
+      "sha256": "7fc580c5eef16fb5f70af6704f275f9b18ff7c52126d2fb6b3d3914a4ae49001"
+    },
+    {
+      "path": "checkpoints/new04-z200-t2045.json",
+      "bytes": 21824,
+      "sha256": "53e6cc9c7284aa890fe1f2076c7db825ed64b12f473137c06048fb3c2cea4254"
+    },
+    {
+      "path": "checkpoints/new04-z200-t2046.json",
+      "bytes": 21824,
+      "sha256": "90618c8fe84c8f2535a4b8ffa151e6e842ac2111805ef81221725fed9755477d"
+    },
+    {
+      "path": "checkpoints/new04-receiver01-t888.json",
+      "bytes": 21887,
+      "sha256": "18ac511d13fd3cb8f7b83fabc78905113f49aab932805185c5566155329ffbc5"
+    },
+    {
+      "path": "checkpoints/new04-receiver02-t971.json",
+      "bytes": 21904,
+      "sha256": "f2614a50f2d72d86b50da360175a87b4f88a36186588a175de9b9c35fbc2f9a0"
+    },
+    {
+      "path": "checkpoints/new04-receiver03-t1435.json",
+      "bytes": 21907,
+      "sha256": "f4261b74d0ad844b788b665089b7c1e4514da1558ead65712880d826bdac12e6"
+    },
+    {
+      "path": "checkpoints/new04-downloaded-2012.json",
+      "bytes": 21824,
+      "sha256": "8918878a7ba91d6de78fc37159d53b723b6aacb04a3fd7416759c1a38ec088f5"
+    },
+    {
+      "path": "browser-completion.json",
+      "bytes": 630,
+      "sha256": "a0beebe0b4ad1099b37041d0786c6f562cfbcd52d08aa8a3b540f967eae3c146"
+    },
+    {
+      "path": "raw-index.json",
+      "bytes": 24145,
+      "sha256": "20465104cb195e4981c83a10f4ee4964e8ef5fbf3ccaec9642cd6dfa4840b83c"
+    }
+  ]
+}
