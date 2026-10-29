@@ -116,7 +116,7 @@ report={'schema':'r4d.p6.qa.frozen-draft.v1','candidateCommit':COMMIT,'scope':'d
  'checkedPoints':checked_points,'maxSourceErrorPx':max_error,'maxRoundTripNative':max_roundtrip,
  'rasterProbeRule':'exact registration color within 4 px of independently projected sample; this tests diagnostic raster registration, not art quality',
  'rasterProbes':raster,'inverseFloor':{'file':output.name,'sha256':sha(output.read_bytes()),'dimensions':[W,HOUT],'scale':scale,'offset':[ox,oy],'outputToSourceMatrix':P,'limitation':'inverse projection rectifies the floor; upright volumes distort and are not reconstructed top-down 3D'},
- 'extraction':{'files':len(records),'totalBytes':sum(r['bytes'] for r in records),'manifestSha256':sha(json.dumps(records,indent=2).encode())}}
-(qa/'draft-v01-check.json').write_text(json.dumps(report,ensure_ascii=False,indent=2)+'\n',encoding='utf8')
+ 'extraction':{'files':len(records),'totalBytes':sum(r['bytes'] for r in records),'manifestSha256':sha((json.dumps(records,indent=2)+'\n').encode()),'manifestDigestEncoding':'UTF-8 JSON indent2, LF with final newline'}}
+(qa/'draft-v01-check.json').write_bytes((json.dumps(report,ensure_ascii=False,indent=2)+'\n').encode('utf8'))
 print(json.dumps({k:v for k,v in report.items() if k!='rasterProbes'},indent=2))
 print(json.dumps({'rasterMinimumCoverage':min(r['foundWithin4px']/r['probes'] for r in raster),'rasterObjectsWithLabelOcclusion':sum(r['foundWithin4px']!=r['probes'] for r in raster)},indent=2))

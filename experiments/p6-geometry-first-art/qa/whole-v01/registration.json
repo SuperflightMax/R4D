@@ -1,0 +1,690 @@
+{
+  "schema": "r4d.p6.qa.whole-image-v01.registration.v1",
+  "rawSha256": "204e30e5b8d296afc916def97936c90c42b3524d68650e390297c8b18dd9b81e",
+  "rawDimensions": [
+    1254,
+    1254
+  ],
+  "imagegenCallReportedByLead": "exec-70009f94-ad4b-47e6-a8e6-ce7e37eea12e",
+  "provenanceLimit": "raw bytes independently verified; tool edit provenance supplied by Lead",
+  "draftCommit": "bdf470e5beb468266184cc2ea0c997191d9907b3",
+  "draftSha256": "bc13aa13e2b33b0e58cd0e87b90e684c3c4adbb3576d8d9b0379e3dee1bec532",
+  "registration": {
+    "mode": "full-frame uniform only",
+    "sourceDimensions": [
+      1536,
+      1536
+    ],
+    "scale": 1.2248803827751196,
+    "crop": false,
+    "fittedHomography": false,
+    "translation": [
+      0,
+      0
+    ]
+  },
+  "pins": [
+    {
+      "id": "flower-01",
+      "expectedFrontSupport": [
+        523.9999999999965,
+        399.9999999999986
+      ],
+      "observedFrontSupportEstimate": [
+        495,
+        292
+      ],
+      "manualUncertaintyPx": 10,
+      "deltaEstimate": [
+        -28.999999999996476,
+        -107.99999999999858
+      ],
+      "deltaYInterval": [
+        -117.99999999999858,
+        -97.99999999999858
+      ]
+    },
+    {
+      "id": "leaf-01",
+      "expectedFrontSupport": [
+        771.9999999999992,
+        417.0000000000002
+      ],
+      "observedFrontSupportEstimate": [
+        770,
+        298
+      ],
+      "manualUncertaintyPx": 12,
+      "deltaEstimate": [
+        -1.9999999999992042,
+        -119.00000000000023
+      ],
+      "deltaYInterval": [
+        -131.00000000000023,
+        -107.00000000000023
+      ]
+    },
+    {
+      "id": "frog-01",
+      "expectedFrontSupport": [
+        1013.000000000002,
+        407.0000000000008
+      ],
+      "observedFrontSupportEstimate": [
+        1038,
+        296
+      ],
+      "manualUncertaintyPx": 20,
+      "deltaEstimate": [
+        24.999999999997954,
+        -111.0000000000008
+      ],
+      "deltaYInterval": [
+        -131.0000000000008,
+        -91.0000000000008
+      ]
+    },
+    {
+      "id": "wood-01",
+      "expectedFrontSupport": [
+        628.0000000000011,
+        492.9999999999992
+      ],
+      "observedFrontSupportEstimate": [
+        603,
+        390
+      ],
+      "manualUncertaintyPx": 20,
+      "deltaEstimate": [
+        -25.000000000001137,
+        -102.9999999999992
+      ],
+      "deltaYInterval": [
+        -122.9999999999992,
+        -82.9999999999992
+      ]
+    },
+    {
+      "id": "flower-02",
+      "expectedFrontSupport": [
+        886.9999999999977,
+        504.9999999999978
+      ],
+      "observedFrontSupportEstimate": [
+        892,
+        409
+      ],
+      "manualUncertaintyPx": 10,
+      "deltaEstimate": [
+        5.000000000002274,
+        -95.99999999999778
+      ],
+      "deltaYInterval": [
+        -105.99999999999778,
+        -85.99999999999778
+      ]
+    },
+    {
+      "id": "wood-02",
+      "expectedFrontSupport": [
+        1078.999999999996,
+        492.9999999999992
+      ],
+      "observedFrontSupportEstimate": [
+        1110,
+        395
+      ],
+      "manualUncertaintyPx": 20,
+      "deltaEstimate": [
+        31.000000000004093,
+        -97.9999999999992
+      ],
+      "deltaYInterval": [
+        -117.9999999999992,
+        -77.9999999999992
+      ]
+    },
+    {
+      "id": "frog-02",
+      "expectedFrontSupport": [
+        479.999999999997,
+        554.9999999999987
+      ],
+      "observedFrontSupportEstimate": [
+        445,
+        457
+      ],
+      "manualUncertaintyPx": 20,
+      "deltaEstimate": [
+        -34.99999999999699,
+        -97.99999999999875
+      ],
+      "deltaYInterval": [
+        -117.99999999999875,
+        -77.99999999999875
+      ]
+    },
+    {
+      "id": "leaf-02",
+      "expectedFrontSupport": [
+        737.0000000000018,
+        574.9999999999968
+      ],
+      "observedFrontSupportEstimate": [
+        730,
+        491
+      ],
+      "manualUncertaintyPx": 12,
+      "deltaEstimate": [
+        -7.000000000001819,
+        -83.99999999999682
+      ],
+      "deltaYInterval": [
+        -95.99999999999682,
+        -71.99999999999682
+      ]
+    },
+    {
+      "id": "leaf-03",
+      "expectedFrontSupport": [
+        999.9999999999976,
+        590.9999999999994
+      ],
+      "observedFrontSupportEstimate": [
+        1015,
+        510
+      ],
+      "manualUncertaintyPx": 12,
+      "deltaEstimate": [
+        15.000000000002387,
+        -80.99999999999943
+      ],
+      "deltaYInterval": [
+        -92.99999999999943,
+        -68.99999999999943
+      ]
+    },
+    {
+      "id": "wood-03",
+      "expectedFrontSupport": [
+        567.9999999999978,
+        664.9999999999995
+      ],
+      "observedFrontSupportEstimate": [
+        533,
+        582
+      ],
+      "manualUncertaintyPx": 20,
+      "deltaEstimate": [
+        -34.99999999999784,
+        -82.99999999999955
+      ],
+      "deltaYInterval": [
+        -102.99999999999955,
+        -62.999999999999545
+      ]
+    },
+    {
+      "id": "flower-03",
+      "expectedFrontSupport": [
+        840.9999999999967,
+        662.000000000002
+      ],
+      "observedFrontSupportEstimate": [
+        838,
+        596
+      ],
+      "manualUncertaintyPx": 10,
+      "deltaEstimate": [
+        -2.999999999996703,
+        -66.00000000000205
+      ],
+      "deltaYInterval": [
+        -76.00000000000205,
+        -56.000000000002046
+      ]
+    },
+    {
+      "id": "frog-03",
+      "expectedFrontSupport": [
+        1129.9999999999998,
+        664.9999999999995
+      ],
+      "observedFrontSupportEstimate": [
+        1156,
+        598
+      ],
+      "manualUncertaintyPx": 20,
+      "deltaEstimate": [
+        26.000000000000227,
+        -66.99999999999955
+      ],
+      "deltaYInterval": [
+        -86.99999999999955,
+        -46.999999999999545
+      ]
+    },
+    {
+      "id": "frog-04",
+      "expectedFrontSupport": [
+        697.9999999999976,
+        758.0000000000016
+      ],
+      "observedFrontSupportEstimate": [
+        668,
+        688
+      ],
+      "manualUncertaintyPx": 20,
+      "deltaEstimate": [
+        -29.999999999997613,
+        -70.00000000000159
+      ],
+      "deltaYInterval": [
+        -90.00000000000159,
+        -50.00000000000159
+      ]
+    },
+    {
+      "id": "wood-04",
+      "expectedFrontSupport": [
+        949.0000000000001,
+        751.0000000000005
+      ],
+      "observedFrontSupportEstimate": [
+        949,
+        690
+      ],
+      "manualUncertaintyPx": 20,
+      "deltaEstimate": [
+        -1.1368683772161603e-13,
+        -61.000000000000455
+      ],
+      "deltaYInterval": [
+        -81.00000000000045,
+        -41.000000000000455
+      ]
+    },
+    {
+      "id": "wood-05",
+      "expectedFrontSupport": [
+        1199.999999999996,
+        771.9999999999983
+      ],
+      "observedFrontSupportEstimate": [
+        1241,
+        701
+      ],
+      "manualUncertaintyPx": 20,
+      "deltaEstimate": [
+        41.00000000000409,
+        -70.9999999999983
+      ],
+      "deltaYInterval": [
+        -90.9999999999983,
+        -50.999999999998295
+      ]
+    },
+    {
+      "id": "flower-04",
+      "expectedFrontSupport": [
+        517.0000000000002,
+        831.9999999999958
+      ],
+      "observedFrontSupportEstimate": [
+        473,
+        769
+      ],
+      "manualUncertaintyPx": 10,
+      "deltaEstimate": [
+        -44.00000000000023,
+        -62.999999999995794
+      ],
+      "deltaYInterval": [
+        -72.9999999999958,
+        -52.999999999995794
+      ]
+    },
+    {
+      "id": "flower-05",
+      "expectedFrontSupport": [
+        800.9999999999951,
+        856.0000000000003
+      ],
+      "observedFrontSupportEstimate": [
+        804,
+        794
+      ],
+      "manualUncertaintyPx": 10,
+      "deltaEstimate": [
+        3.0000000000048885,
+        -62.00000000000034
+      ],
+      "deltaYInterval": [
+        -72.00000000000034,
+        -52.00000000000034
+      ]
+    },
+    {
+      "id": "leaf-04",
+      "expectedFrontSupport": [
+        1065.999999999996,
+        846.0000000000008
+      ],
+      "observedFrontSupportEstimate": [
+        1089,
+        784
+      ],
+      "manualUncertaintyPx": 12,
+      "deltaEstimate": [
+        23.000000000004093,
+        -62.000000000000796
+      ],
+      "deltaYInterval": [
+        -74.0000000000008,
+        -50.000000000000796
+      ]
+    },
+    {
+      "id": "wood-06",
+      "expectedFrontSupport": [
+        424.00000000000085,
+        972.0000000000039
+      ],
+      "observedFrontSupportEstimate": [
+        366,
+        920
+      ],
+      "manualUncertaintyPx": 20,
+      "deltaEstimate": [
+        -58.00000000000085,
+        -52.000000000003865
+      ],
+      "deltaYInterval": [
+        -72.00000000000387,
+        -32.000000000003865
+      ]
+    },
+    {
+      "id": "leaf-05",
+      "expectedFrontSupport": [
+        621.9999999999947,
+        939.9999999999982
+      ],
+      "observedFrontSupportEstimate": [
+        608,
+        882
+      ],
+      "manualUncertaintyPx": 12,
+      "deltaEstimate": [
+        -13.999999999994657,
+        -57.99999999999818
+      ],
+      "deltaYInterval": [
+        -69.99999999999818,
+        -45.99999999999818
+      ]
+    },
+    {
+      "id": "frog-05",
+      "expectedFrontSupport": [
+        920.9999999999991,
+        959.9999999999984
+      ],
+      "observedFrontSupportEstimate": [
+        943,
+        916
+      ],
+      "manualUncertaintyPx": 20,
+      "deltaEstimate": [
+        22.00000000000091,
+        -43.99999999999841
+      ],
+      "deltaYInterval": [
+        -63.99999999999841,
+        -23.99999999999841
+      ]
+    },
+    {
+      "id": "flower-06",
+      "expectedFrontSupport": [
+        1145.9999999999975,
+        961.9999999999991
+      ],
+      "observedFrontSupportEstimate": [
+        1180,
+        927
+      ],
+      "manualUncertaintyPx": 10,
+      "deltaEstimate": [
+        34.0000000000025,
+        -34.99999999999909
+      ],
+      "deltaYInterval": [
+        -44.99999999999909,
+        -24.99999999999909
+      ]
+    },
+    {
+      "id": "flower-07",
+      "expectedFrontSupport": [
+        496.00000000000233,
+        1082.9999999999998
+      ],
+      "observedFrontSupportEstimate": [
+        451,
+        1029
+      ],
+      "manualUncertaintyPx": 10,
+      "deltaEstimate": [
+        -45.00000000000233,
+        -53.99999999999977
+      ],
+      "deltaYInterval": [
+        -63.99999999999977,
+        -43.99999999999977
+      ]
+    },
+    {
+      "id": "wood-07",
+      "expectedFrontSupport": [
+        697.9999999999975,
+        1073.9999999999998
+      ],
+      "observedFrontSupportEstimate": [
+        689,
+        1030
+      ],
+      "manualUncertaintyPx": 20,
+      "deltaEstimate": [
+        -8.999999999997499,
+        -43.99999999999977
+      ],
+      "deltaYInterval": [
+        -63.99999999999977,
+        -23.999999999999773
+      ]
+    },
+    {
+      "id": "wood-08",
+      "expectedFrontSupport": [
+        984.9999999999998,
+        1072.9999999999973
+      ],
+      "observedFrontSupportEstimate": [
+        998,
+        1034
+      ],
+      "manualUncertaintyPx": 20,
+      "deltaEstimate": [
+        13.000000000000227,
+        -38.99999999999727
+      ],
+      "deltaYInterval": [
+        -58.99999999999727,
+        -18.99999999999727
+      ]
+    }
+  ],
+  "mouths": [
+    {
+      "id": "receiver-01",
+      "expectedCaptureCenter": [
+        358.55946155335715,
+        1238.2098586093362
+      ],
+      "expectedCaptureFront": [
+        356.2085144661843,
+        1261.30932378756
+      ],
+      "observedOpeningCenterEstimate": [
+        354,
+        1207
+      ],
+      "centerUncertaintyPx": 10,
+      "observedDarkMouthFrontEdgeYEstimate": 1238,
+      "frontEdgeUncertaintyPx": 8,
+      "captureFrontBeyondDarkMouthEstimatePx": 23.30932378756006,
+      "observation": "capture ellipse overlaps the front rim; it is not wholly presented inside the visible opening"
+    },
+    {
+      "id": "receiver-02",
+      "expectedCaptureCenter": [
+        646.3101699213796,
+        1264.1927466396157
+      ],
+      "expectedCaptureFront": [
+        645.716283076976,
+        1283.6180909312063
+      ],
+      "observedOpeningCenterEstimate": [
+        643,
+        1227
+      ],
+      "centerUncertaintyPx": 10,
+      "observedDarkMouthFrontEdgeYEstimate": 1250,
+      "frontEdgeUncertaintyPx": 8,
+      "captureFrontBeyondDarkMouthEstimatePx": 33.618090931206325,
+      "observation": "capture ellipse overlaps the front rim; it is not wholly presented inside the visible opening"
+    },
+    {
+      "id": "receiver-03",
+      "expectedCaptureCenter": [
+        914.7204931038729,
+        1267.0024411082616
+      ],
+      "expectedCaptureFront": [
+        915.421614244505,
+        1286.912360603868
+      ],
+      "observedOpeningCenterEstimate": [
+        922,
+        1226
+      ],
+      "centerUncertaintyPx": 10,
+      "observedDarkMouthFrontEdgeYEstimate": 1250,
+      "frontEdgeUncertaintyPx": 8,
+      "captureFrontBeyondDarkMouthEstimatePx": 36.91236060386791,
+      "observation": "capture ellipse overlaps the front rim; it is not wholly presented inside the visible opening"
+    },
+    {
+      "id": "receiver-04",
+      "expectedCaptureCenter": [
+        1193.5527369826405,
+        1243.8955530450871
+      ],
+      "expectedCaptureFront": [
+        1195.8167299792524,
+        1265.6387535698898
+      ],
+      "observedOpeningCenterEstimate": [
+        1225,
+        1215
+      ],
+      "centerUncertaintyPx": 10,
+      "observedDarkMouthFrontEdgeYEstimate": 1247,
+      "frontEdgeUncertaintyPx": 8,
+      "captureFrontBeyondDarkMouthEstimatePx": 18.638753569889786,
+      "observation": "capture ellipse overlaps the front rim; it is not wholly presented inside the visible opening"
+    }
+  ],
+  "floorObservations": [
+    {
+      "id": "far edge",
+      "expectedSourceY": 300,
+      "observedYBandEstimate": [
+        190,
+        205
+      ]
+    },
+    {
+      "id": "near floor edge",
+      "expectedSourceY": 1114.000000000001,
+      "observedYBandEstimate": [
+        1055,
+        1080
+      ]
+    }
+  ],
+  "nativeContactDiagnostic": {
+    "seed": 0,
+    "stateTick": 95,
+    "eventTick": 94,
+    "objectId": "leaf-01",
+    "sourceBallCenter": [
+      769.9703127263558,
+      367.28908128124164
+    ],
+    "interpretation": "registration risk: native contact sits below the displaced art support; assembled consumer has not been tested"
+  },
+  "summary": {
+    "all25ManualDeltaYIntervalsNegative": true,
+    "frontSupportDriftEstimateRangePx": [
+      -119.00000000000023,
+      -34.99999999999909
+    ],
+    "mouthCountWithVisibleRimOverlap": 4
+  },
+  "scope": "v01 image registration observations; no arbitrary formal gate and no consumer/art PASS",
+  "artifacts": [
+    {
+      "file": "basket-mouth-details.png",
+      "bytes": 568778,
+      "sha256": "35f5b4ed7218fd1ba4b4bdd9377b7919cfae558fa8ea2fb6067fb266a4359d98"
+    },
+    {
+      "file": "detail-sheet-1.png",
+      "bytes": 1048518,
+      "sha256": "acf77fb6cb3e7d18d94481fb072d647fcb500562879a68a9b800bfb06b598ddc"
+    },
+    {
+      "file": "detail-sheet-2.png",
+      "bytes": 1047588,
+      "sha256": "6d2dd61e87c7b8cab65a27b67952fb375c8ea8d54a88b97b20dfa416eadadf9b"
+    },
+    {
+      "file": "detail-sheet-3.png",
+      "bytes": 522309,
+      "sha256": "41e6d0ca29e9dd2591a2f9ef940d785f41a93105c4c9d815238e68831993e15e"
+    },
+    {
+      "file": "inverse-floor.png",
+      "bytes": 3046941,
+      "sha256": "4a958768f87e882f5c572b8a1785eef212278cb16b47644f46d53a66071add8d"
+    },
+    {
+      "file": "manual-support-anchors.png",
+      "bytes": 4383236,
+      "sha256": "9c19c15374d9d9ffeebc173b5e5bbfb9ce61aa575cb9987b74eaebcb91e1f282"
+    },
+    {
+      "file": "native-contact-95.png",
+      "bytes": 4379933,
+      "sha256": "eb9633d450eea1e94a027e2e4d9c2379f133a30461b4a436285f94fb17b9a24a"
+    },
+    {
+      "file": "overlay.png",
+      "bytes": 4380264,
+      "sha256": "8003d1eab35e99e0d00f97d48bd74e6c689579870f67dbe0577a9cddc21f8617"
+    }
+  ]
+}
