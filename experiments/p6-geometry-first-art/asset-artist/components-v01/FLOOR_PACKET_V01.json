@@ -1,0 +1,103 @@
+{
+  "schema": "r4d.p6.ground-layers.v1",
+  "acceptedP1": "4b47db04c7140ebf88f69b91faa0b790d46f22ec",
+  "canvas": [
+    1536,
+    1536
+  ],
+  "sourceToNative": [
+    [
+      1,
+      9.330392800216167,
+      25487.205399837876
+    ],
+    [
+      0,
+      11.446119221308955,
+      25487.410584018282
+    ],
+    [
+      0,
+      0.00028056268944599974,
+      0.7895779829155002
+    ]
+  ],
+  "floorPolygonSource": [
+    420.00000000000006,
+    300.0000000000012,
+    422.99999999999545,
+    420.00000000000097,
+    364.99999999999335,
+    549.9999999999993,
+    425.00000000000165,
+    700.0000000000003,
+    394.9999999999977,
+    849.9999999999993,
+    280.9999999999973,
+    985.0000000000007,
+    345.00000000000153,
+    1114.000000000001,
+    1240.0000000000023,
+    1114.000000000001,
+    1344.9999999999975,
+    985.0000000000007,
+    1248.9999999999998,
+    849.9999999999993,
+    1294.9999999999966,
+    700.0000000000003,
+    1218.0000000000005,
+    549.9999999999993,
+    1149.9999999999993,
+    420.00000000000097,
+    1115.9999999999984,
+    300.0000000000012
+  ],
+  "materialOriginNative": [
+    32796.30848746218,
+    33100.26049847829
+  ],
+  "materialPeriodNative": 512,
+  "materialWrap": "mirrored repeat, no crop/local fitting of a whole-board image",
+  "shadowInstances": 25,
+  "shadowLightDirectionNative": [
+    -0.55,
+    0.83
+  ],
+  "shadowLengthRadiusFactors": {
+    "wood": 0.85,
+    "others": 0.4
+  },
+  "shadowRadiusFactor": 1.15,
+  "shadowOpacity": 0.42,
+  "shadowAlphaCutoffRaw": 16,
+  "shadowSource": "own native ball-shadow-v01.png, re-used as separate ground mask",
+  "floorBakedShadow": false,
+  "dynamicBallShadowClip": {
+    "mask": "prepared/floor-mask-v01.png",
+    "scope": "dynamic ground shadow only, never the ball body",
+    "rule": "Clip the projected ball shadow to this accepted-floor mask. Outside the floor, including the board-to-receiver gap, there is no ground shadow surface. Disable this art mask together with Art."
+  },
+  "method": "Per output pixel, exact frozen inverse homography samples generated raster material and ground shadow patches inside exact accepted floor polygon; no collider/projection change",
+  "files": [
+    {
+      "path": "prepared/floor-layer-v01.png",
+      "sha256": "71c59894f2e9e79f5fee7357ccc34fb58863ef61cd72d43994d90123f70a0564",
+      "bytes": 2072841
+    },
+    {
+      "path": "prepared/floor-mask-v01.png",
+      "sha256": "ec7e2202d5817bace18d69c0c87745c796c904bd267c8446d2c306b86686d4b9",
+      "bytes": 18178
+    },
+    {
+      "path": "prepared/ground-shadows-v01.png",
+      "sha256": "53a655743b838308a91e9d9ab0ce52bfb85478250f0a0876f5ef532262d2e2c3",
+      "bytes": 235110
+    },
+    {
+      "path": "prepared/floor-shadow-preview-v01.png",
+      "sha256": "bee22fc5bacdae4ca1bf3c35a1f9bb9c951a6673c613c2ff8d600e9850ebcd44",
+      "bytes": 2096760
+    }
+  ]
+}
