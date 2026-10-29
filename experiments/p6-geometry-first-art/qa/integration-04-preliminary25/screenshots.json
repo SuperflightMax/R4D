@@ -1,0 +1,330 @@
+{
+  "source": "QA own actual IAB screenshots; never Builder QA frames",
+  "sourceCommit": "7a4450a8c2edc20880b3d300abc1d51187005479",
+  "candidateArtBytesUnmodified": true,
+  "actualScreenshotFormat": "JPEG; byte-identical captures use .jpg; derived diagnostics use PNG",
+  "diagnostics": [
+    "all25-rims-diagnostic.png",
+    "contacts-seed0-diagnostic.png",
+    "side-contacts-seeds1-2-diagnostic.png",
+    "edge-mask-diagnostic.png"
+  ],
+  "operations": "Crops, labels and diagnostic-only uniform resizing; source files retained in QA E runtime.",
+  "copiedOriginalScreenshots": [
+    "frame-source-all25-geometry.jpg",
+    "frame-source-edge1916-art-only.jpg",
+    "frame-flat-edge1916-art-only.jpg",
+    "source-terminal1956-geometry-only.jpg",
+    "live-seek-paused95.jpg"
+  ],
+  "screenshotInputs": {
+    "frame-source-all25-geometry.jpg": {
+      "sha256": "59a97e3b6f1465911443572878553b116c377e369a0e11e9bf0b985c35c5bedc",
+      "bytes": 273897
+    },
+    "frame-seed0-t0094.jpg": {
+      "sha256": "9cc1172be43893e17cf9dac2728d7c30615b930270388f56b22b3797cc6379fe",
+      "bytes": 273644,
+      "format": "JPEG",
+      "canvas": [
+        1536,
+        1536
+      ]
+    },
+    "frame-seed0-t0095.jpg": {
+      "sha256": "1a599f9eade1ba45775299ae80331cd6d9cb028dfe00bf0f378b1d4105939a78",
+      "bytes": 273676,
+      "format": "JPEG",
+      "canvas": [
+        1536,
+        1536
+      ]
+    },
+    "frame-seed0-t0096.jpg": {
+      "sha256": "ea60d4a2a5666a67312cfe92fd2d91a3162f4014206bfaccc259dc43130fa7cd",
+      "bytes": 273666,
+      "format": "JPEG",
+      "canvas": [
+        1536,
+        1536
+      ]
+    },
+    "frame-art-only-t0095.jpg": {
+      "sha256": "89c7612416a6f67d129224bd537d6ef4aab490c1c0dd60422ac583460828ff07",
+      "bytes": 262500,
+      "format": "JPEG",
+      "canvas": [
+        1536,
+        1536
+      ]
+    },
+    "frame-seed0-t0441.jpg": {
+      "sha256": "66aefe7c3aee4d01d1e74d208d2256927bfcd1fad3a9deee747b1cf67d6ec8dd",
+      "bytes": 273675,
+      "format": "JPEG",
+      "canvas": [
+        1536,
+        1536
+      ]
+    },
+    "frame-seed0-t0442.jpg": {
+      "sha256": "ca83cb15b38396324e5b4029a2b183d58a5347bd93203e73e4d0f939d9c15d28",
+      "bytes": 273675,
+      "format": "JPEG",
+      "canvas": [
+        1536,
+        1536
+      ]
+    },
+    "frame-seed0-t0443.jpg": {
+      "sha256": "55135570686f38db83b36b85a1131e287882ce3e4a3b42f056a543ce67d541e5",
+      "bytes": 273637,
+      "format": "JPEG",
+      "canvas": [
+        1536,
+        1536
+      ]
+    },
+    "frame-art-only-t0442.jpg": {
+      "sha256": "101da08602fe1ce038a0ef33507d76b48205b14c23cf026b93e59dfe0c7d6053",
+      "bytes": 262568,
+      "format": "JPEG",
+      "canvas": [
+        1536,
+        1536
+      ]
+    },
+    "frame-seed0-t0571.jpg": {
+      "sha256": "5f2dfb4d0f76087bddff4e8a51a8a0827f9cc885674c3553452777660e9da4b5",
+      "bytes": 273605,
+      "format": "JPEG",
+      "canvas": [
+        1536,
+        1536
+      ]
+    },
+    "frame-seed0-t0572.jpg": {
+      "sha256": "661a022bf7b409ad82aed3648150b20b5e03547f512f210613aa8d3a01fd0bc5",
+      "bytes": 273645,
+      "format": "JPEG",
+      "canvas": [
+        1536,
+        1536
+      ]
+    },
+    "frame-seed0-t0573.jpg": {
+      "sha256": "ea68c4db75a98e0ef7900cbc46f64a2472d94ae8ddc557601fd366f77e384668",
+      "bytes": 273669,
+      "format": "JPEG",
+      "canvas": [
+        1536,
+        1536
+      ]
+    },
+    "frame-art-only-t0572.jpg": {
+      "sha256": "b1bdfc876b95d8471831f41ad56845e91e34b89fb1631409c337a4e69c73b5d7",
+      "bytes": 262547,
+      "format": "JPEG",
+      "canvas": [
+        1536,
+        1536
+      ]
+    },
+    "frame-seed0-t0890.jpg": {
+      "sha256": "8d4b9dbbf00989b54a05f6d73538878b3669d80ae020c3a6633d2e188d2c0052",
+      "bytes": 273815,
+      "format": "JPEG",
+      "canvas": [
+        1536,
+        1536
+      ]
+    },
+    "frame-seed0-t0891.jpg": {
+      "sha256": "b54c9bb9d74cb82a919b0f7650d0529639807596eaa4b720924f269a62b776fc",
+      "bytes": 273783,
+      "format": "JPEG",
+      "canvas": [
+        1536,
+        1536
+      ]
+    },
+    "frame-seed0-t0892.jpg": {
+      "sha256": "1063e052a79dd43d86835f3b51c61690a7c5ce9a1c306acea7b8c142a3da0b4b",
+      "bytes": 273788,
+      "format": "JPEG",
+      "canvas": [
+        1536,
+        1536
+      ]
+    },
+    "frame-art-only-t0891.jpg": {
+      "sha256": "c843a5bc9b33a20167344d2b01ac357255f5f39e03c91bb50f82afcff991d2b4",
+      "bytes": 262679,
+      "format": "JPEG",
+      "canvas": [
+        1536,
+        1536
+      ]
+    },
+    "seed1-t1017.jpg": {
+      "sha256": "7ee11588e6339138f6da23eb9d798fd329cd2dcee78a28b2d049d87ba2babaf6",
+      "bytes": 165862,
+      "format": "JPEG",
+      "canvas": [
+        1425,
+        1187
+      ]
+    },
+    "seed1-t1018.jpg": {
+      "sha256": "b173eb1779f251222b0392682cd318f75ead1a095c4862c299168ba1322f1d7a",
+      "bytes": 168492,
+      "format": "JPEG",
+      "canvas": [
+        1425,
+        1187
+      ]
+    },
+    "seed1-t1019.jpg": {
+      "sha256": "788c03da672691fe23a6e4f209541c52d4f2035fd1275cc8230d1c156611580a",
+      "bytes": 168475,
+      "format": "JPEG",
+      "canvas": [
+        1425,
+        1187
+      ]
+    },
+    "seed1-t1574.jpg": {
+      "sha256": "6ca7de6e6d174880096d4b982d815b607685d45fb231d7d5092aee1ab5fbb2af",
+      "bytes": 174221,
+      "format": "JPEG",
+      "canvas": [
+        1425,
+        1187
+      ]
+    },
+    "seed1-t1575.jpg": {
+      "sha256": "f23d974e3c3733bd8846a58de3aa75c6919883a39d1d8168ef276c44aa4f9630",
+      "bytes": 172799,
+      "format": "JPEG",
+      "canvas": [
+        1425,
+        1187
+      ]
+    },
+    "seed1-t1576.jpg": {
+      "sha256": "0caa278f49bede0217e502507971cf9b6f7c9abebb372f80d8e442d89244649c",
+      "bytes": 172883,
+      "format": "JPEG",
+      "canvas": [
+        1425,
+        1187
+      ]
+    },
+    "seed2-t0778.jpg": {
+      "sha256": "37f7dede4d12418f21343d2fdaa98128913faa4fc76d36a2c66d8f3940c9c6ac",
+      "bytes": 157519,
+      "format": "JPEG",
+      "canvas": [
+        1425,
+        1187
+      ]
+    },
+    "seed2-t0779.jpg": {
+      "sha256": "56b38abe30614ccc7e6094ba6538ba34e0da832f394710746ff32089f761d27a",
+      "bytes": 159555,
+      "format": "JPEG",
+      "canvas": [
+        1425,
+        1187
+      ]
+    },
+    "seed2-t0780.jpg": {
+      "sha256": "aeeedf56677b9e833c6d076647f1794036956c83ef37fdf2d16b186dee59d3c1",
+      "bytes": 159638,
+      "format": "JPEG",
+      "canvas": [
+        1425,
+        1187
+      ]
+    },
+    "seed2-t1115.jpg": {
+      "sha256": "f59ee0a33b2ac40f382d39dc6a33f4918c93b6ed04ca02e11e976bef3fdd2405",
+      "bytes": 171268,
+      "format": "JPEG",
+      "canvas": [
+        1425,
+        1187
+      ]
+    },
+    "seed2-t1116.jpg": {
+      "sha256": "d5d6422504c9cb9b1fb25f2847637c263532efb5b54a0ce058ef171183532fd2",
+      "bytes": 173696,
+      "format": "JPEG",
+      "canvas": [
+        1425,
+        1187
+      ]
+    },
+    "seed2-t1117.jpg": {
+      "sha256": "3f125b4e572de333f18aad54d966270a24e10cdfffd35ef653ebf2b3afb99961",
+      "bytes": 173724,
+      "format": "JPEG",
+      "canvas": [
+        1425,
+        1187
+      ]
+    },
+    "frame-source-edge1916-art-only.jpg": {
+      "sha256": "df0b43f0f92d6fcc5c3b828e4d142402fccbdbb8b97d8ad8e45bba3c17420023",
+      "bytes": 262821
+    },
+    "frame-seed0-t1916.jpg": {
+      "sha256": "f3a93fe9013a957f2648aca596bc7b42eda89281e7192fd143344c6fb9c57d8f",
+      "bytes": 274170,
+      "format": "JPEG",
+      "canvas": [
+        1536,
+        1536
+      ]
+    },
+    "frame-flat-edge1916-art-only.jpg": {
+      "sha256": "1f90fd09f01736a472c2f6db9d721880e4d892fdc1e041d7939a24f51ad62045",
+      "bytes": 146811
+    },
+    "frame-source-terminal1956-art-only.jpg": {
+      "sha256": "e01e0714e15f47038502a79e9430f7cb93df74f84e78fbad440455e1a0efe8af",
+      "bytes": 263185,
+      "format": "JPEG",
+      "canvas": [
+        1536,
+        1536
+      ]
+    },
+    "frame-seed0-t1956.jpg": {
+      "sha256": "b9fb0810e81ceef7d49603ff47dfbca6ebc944f435e915814fe2a81b5188adb5",
+      "bytes": 274417,
+      "format": "JPEG",
+      "canvas": [
+        1536,
+        1536
+      ]
+    },
+    "frame-flat-terminal1956-art-only.jpg": {
+      "sha256": "a91333c8afa96870d6bde4d6b0152aa2bf8625d83f63c48bc8708056c11b3109",
+      "bytes": 146933,
+      "format": "JPEG",
+      "canvas": [
+        1536,
+        1536
+      ]
+    },
+    "source-terminal1956-geometry-only.jpg": {
+      "sha256": "828f49b289ec466b05ac1b0f22d7978f07abfaee3f1c3e9bec0be4c22d4201ee",
+      "bytes": 112125
+    },
+    "live-seek-paused95.jpg": {
+      "sha256": "9937057da9eeb312edb367ad353b6e2161ac7c9b3cabe54624531035894e25d3",
+      "bytes": 81218
+    }
+  }
+}

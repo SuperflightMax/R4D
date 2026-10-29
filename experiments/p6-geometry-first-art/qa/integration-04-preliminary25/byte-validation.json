@@ -1,0 +1,459 @@
+{
+  "sourceCommit": "7a4450a8c2edc20880b3d300abc1d51187005479",
+  "inventorySha256": "efa9ad5d74025c5893178a62a5da7ad4601bbbbc44fbef5d5b27914b402ad833",
+  "filesListSha256": "15c5a2308a78a29d7df7e3aac781aadb45642320c14d93aaedf3772e238813df",
+  "files": 74,
+  "bytes": 23530619,
+  "allDiskHttpEqual": true,
+  "inventoryStableAcrossRead": true,
+  "diskStableAcrossSecondRead": true,
+  "consumerSha256": "efaff71843b69a415b3dc755586c459ba6d7e146675fde441aa82b4123cff741",
+  "coreSha256": "8843446996582eaccbd9ff63d3147d74b7eca9a614d8e0df16851d1d89d46f50",
+  "controllerSourceSha256": "355591297e3a7ba7a1e775101785338956547261b5430de1d29b43f9357d108b",
+  "validated": [
+    {
+      "path": "app.mjs",
+      "sha256": "efaff71843b69a415b3dc755586c459ba6d7e146675fde441aa82b4123cff741",
+      "bytes": 1441101,
+      "diskAndHttpEqual": true
+    },
+    {
+      "path": "artist.json",
+      "sha256": "064afbe0cc0c85949135f7518f47576bdd4e2b2bc52b8997d7ac42063db60302",
+      "bytes": 59385,
+      "diskAndHttpEqual": true
+    },
+    {
+      "path": "artist/diagnostic-bare-floor.png",
+      "sha256": "a4a089ed882017b6ca0775e4d6292f5fb394b37a6151d45aaf12ff25fdca4e57",
+      "bytes": 54156,
+      "diskAndHttpEqual": true
+    },
+    {
+      "path": "artist/prepared/floor-layer-v01.png",
+      "sha256": "71c59894f2e9e79f5fee7357ccc34fb58863ef61cd72d43994d90123f70a0564",
+      "bytes": 2072841,
+      "diskAndHttpEqual": true
+    },
+    {
+      "path": "artist/prepared/floor-layer-v02.png",
+      "sha256": "e8964a4a7c8895d4cb6a186eaded419ae277bc6c408292ca841cb7bcdf6f537f",
+      "bytes": 2047520,
+      "diskAndHttpEqual": true
+    },
+    {
+      "path": "artist/prepared/floor-mask-v01.png",
+      "sha256": "ec7e2202d5817bace18d69c0c87745c796c904bd267c8446d2c306b86686d4b9",
+      "bytes": 18178,
+      "diskAndHttpEqual": true
+    },
+    {
+      "path": "artist/prepared/ground-shadows-v01.png",
+      "sha256": "53a655743b838308a91e9d9ab0ce52bfb85478250f0a0876f5ef532262d2e2c3",
+      "bytes": 235110,
+      "diskAndHttpEqual": true
+    },
+    {
+      "path": "artist/raw/ball-shadow-v01.png",
+      "sha256": "3a4e58a4d3b9b707e6ec10ffe80e26c561605a4f99d5498c04ae5c684cf5606a",
+      "bytes": 458704,
+      "diskAndHttpEqual": true
+    },
+    {
+      "path": "artist/raw/ball-v01.png",
+      "sha256": "378cc5abe32dc2086bf87c580c31675d06b91b41bbef81065bc5fe786b88542c",
+      "bytes": 1261875,
+      "diskAndHttpEqual": true
+    },
+    {
+      "path": "artist/raw/flower-master-v01.png",
+      "sha256": "42fc1808e7049d9dd6028770d476b4506722fdda70e83a13aaf33f2554a00a05",
+      "bytes": 1204651,
+      "diskAndHttpEqual": true
+    },
+    {
+      "path": "artist/raw/frog-master-v01.png",
+      "sha256": "2b052f5668c078968e6e70c8094c9e04c15774616c9b0e2358801c1302467229",
+      "bytes": 1592406,
+      "diskAndHttpEqual": true
+    },
+    {
+      "path": "artist/raw/leaf-master-v01.png",
+      "sha256": "bb382102d57762b25e3cd9e35bf7b50497cb668014f4fae6349d3baf5550e189",
+      "bytes": 1362630,
+      "diskAndHttpEqual": true
+    },
+    {
+      "path": "artist/raw/wood-master-v01.png",
+      "sha256": "802f339d693d4dfc175a1e0f9013c78a6e9062bd6532a3db228bd98cd307e161",
+      "bytes": 1130241,
+      "diskAndHttpEqual": true
+    },
+    {
+      "path": "artist/raw/wood-master-v02.png",
+      "sha256": "f829632e48595a301bd5c3b1d4a87316eb7eee0053965343ae0dac263ba45cb0",
+      "bytes": 1003704,
+      "diskAndHttpEqual": true
+    },
+    {
+      "path": "build-meta.json",
+      "sha256": "279af744bf0072741bf5178ad0d05293b3f1cd410c2a9b9d16ff1e5b18fc039f",
+      "bytes": 37834,
+      "diskAndHttpEqual": true
+    },
+    {
+      "path": "config.json",
+      "sha256": "dd5c519cd6d4b7295118e0a3a1063efed424a0ce739450bd5153c6a9941982db",
+      "bytes": 9503,
+      "diskAndHttpEqual": true
+    },
+    {
+      "path": "geometry-draft.png",
+      "sha256": "bc13aa13e2b33b0e58cd0e87b90e684c3c4adbb3576d8d9b0379e3dee1bec532",
+      "bytes": 338547,
+      "diskAndHttpEqual": true
+    },
+    {
+      "path": "geometry.json",
+      "sha256": "0544de7b4fcebf211b194fc63566a94b34a5b21b57fb0c56207a8c866d332d71",
+      "bytes": 575401,
+      "diskAndHttpEqual": true
+    },
+    {
+      "path": "index.html",
+      "sha256": "80e95dc9b7a313609ff76446c5a9d8ca2631770ac15dcf9286dababe2f73f615",
+      "bytes": 2389,
+      "diskAndHttpEqual": true
+    },
+    {
+      "path": "manifest.json",
+      "sha256": "7784dc0a215d0e472cf06a4eee03793592727cf0fa9a1fa0e0c78e5f1d17da18",
+      "bytes": 11565,
+      "diskAndHttpEqual": true
+    },
+    {
+      "path": "native/core.mjs",
+      "sha256": "8843446996582eaccbd9ff63d3147d74b7eca9a614d8e0df16851d1d89d46f50",
+      "bytes": 31367,
+      "diskAndHttpEqual": true
+    },
+    {
+      "path": "qa/FLOOR_V02_ALPHA_CHECK.json",
+      "sha256": "0e0931bafc2ef4754233a4b9305571c741996b450b71057d07da6ae56ea42a81",
+      "bytes": 446,
+      "diskAndHttpEqual": true
+    },
+    {
+      "path": "qa/FLOOR_V02_SELF_CHECK.json",
+      "sha256": "5076ca210c9353e42c5ecea080204120fdbbdcda0580cc96e40c75d2ce6a2d22",
+      "bytes": 67294,
+      "diskAndHttpEqual": true
+    },
+    {
+      "path": "qa/OLD_FROZEN_SITES_UNCHANGED.json",
+      "sha256": "48b762f6440216538aac22328ee1578d52b06ac21e15f1626d6f84d4d109dfa1",
+      "bytes": 1205,
+      "diskAndHttpEqual": true
+    },
+    {
+      "path": "qa/floor-v02-all25-rim-inspection.png",
+      "sha256": "1c2579663c700588e7ef324dd8cbf437089820778c3bb6720b50e5ade6980940",
+      "bytes": 1048667,
+      "diskAndHttpEqual": true
+    },
+    {
+      "path": "qa/floor-v02-contact-inspection.png",
+      "sha256": "09aceaa4c85cd219aa355c9e3b01e42234e9a6d8510c138eba0c030384ee5158",
+      "bytes": 486381,
+      "diskAndHttpEqual": true
+    },
+    {
+      "path": "qa/floor-v02-edge-mask-inspection.png",
+      "sha256": "ead51609f7c68731b2adf266704e3fa801433724cedce58b0111e0165af48883",
+      "bytes": 93473,
+      "diskAndHttpEqual": true
+    },
+    {
+      "path": "qa/floor-v02-frames/all-depth-state0-overlay.jpg",
+      "sha256": "16e0507f6178a80e37e1fbf60e585812af71230594222d47e659d81c20a978d2",
+      "bytes": 277215,
+      "diskAndHttpEqual": true
+    },
+    {
+      "path": "qa/floor-v02-frames/all-depth-state0-overlay.json",
+      "sha256": "023815fb263b658264776f89ebab24ab8f023ff54c171e79f07670b141beb2d9",
+      "bytes": 58887,
+      "diskAndHttpEqual": true
+    },
+    {
+      "path": "qa/floor-v02-frames/art-off-geometry-state95.jpg",
+      "sha256": "4d9c689b78699eb37fc2bef3317298ac98a4b5dda13653264a25777a27a7f802",
+      "bytes": 79027,
+      "diskAndHttpEqual": true
+    },
+    {
+      "path": "qa/floor-v02-frames/flat-near-edge1916.jpg",
+      "sha256": "1e339e135c3747b98273829127cf04234085e75b2db9a66398fa97ad82535bc1",
+      "bytes": 148784,
+      "diskAndHttpEqual": true
+    },
+    {
+      "path": "qa/floor-v02-frames/flat-near-edge1916.json",
+      "sha256": "81a4045801de17af44291ad4ef2eda1354bb6b3ce6fa667218ef54442da9984e",
+      "bytes": 17319,
+      "diskAndHttpEqual": true
+    },
+    {
+      "path": "qa/floor-v02-frames/near-edge1916-geometry-overlay.jpg",
+      "sha256": "f3a93fe9013a957f2648aca596bc7b42eda89281e7192fd143344c6fb9c57d8f",
+      "bytes": 274170,
+      "diskAndHttpEqual": true
+    },
+    {
+      "path": "qa/floor-v02-frames/normal-ui-active-to-paused95.jpg",
+      "sha256": "edf59e32d02e2309505634c0ed85e955ee95cf7d3fdd9c059b0bb827c5cea205",
+      "bytes": 115071,
+      "diskAndHttpEqual": true
+    },
+    {
+      "path": "qa/floor-v02-frames/normal-ui-active-to-paused95.json",
+      "sha256": "9f6ffd02b5b0f62accf7a0c5cfbd7225c187d5cab97ef35b06b1347996970a22",
+      "bytes": 18997,
+      "diskAndHttpEqual": true
+    },
+    {
+      "path": "qa/floor-v02-frames/ordinary-ui-near-edge1916.jpg",
+      "sha256": "8d0f37c1484c56714172ddf18dc339118022951f0504a369958b986421043572",
+      "bytes": 194076,
+      "diskAndHttpEqual": true
+    },
+    {
+      "path": "qa/floor-v02-frames/ordinary-ui-near-edge1916.json",
+      "sha256": "19ef584ae7c9a8ad600f38029800e74da5148a89bded1ca6fbfb17ac93373c2f",
+      "bytes": 18548,
+      "diskAndHttpEqual": true
+    },
+    {
+      "path": "qa/floor-v02-frames/ordinary-ui-overview0.jpg",
+      "sha256": "5f83901e7153949fe1ba33295e76bfcb984956a26670f035b6bb73f73aab9d17",
+      "bytes": 104619,
+      "diskAndHttpEqual": true
+    },
+    {
+      "path": "qa/floor-v02-frames/seed0-state0000-overview.jpg",
+      "sha256": "cbc4ea493c64720a81b14a8c8f12d7b06be412dbeab126ecd21873d8c80cb645",
+      "bytes": 262785,
+      "diskAndHttpEqual": true
+    },
+    {
+      "path": "qa/floor-v02-frames/seed0-state0000-overview.json",
+      "sha256": "2c0d2b5eebe018770cefe0f19f610a0c71c69952c6842eda9335fe8085b4a32b",
+      "bytes": 58889,
+      "diskAndHttpEqual": true
+    },
+    {
+      "path": "qa/floor-v02-frames/seed0-state0094-leaf-before.jpg",
+      "sha256": "bccbcf20e23c0a33f6d8f51ccaea472380e25fbeef8f461782823eee0d8eb11f",
+      "bytes": 262516,
+      "diskAndHttpEqual": true
+    },
+    {
+      "path": "qa/floor-v02-frames/seed0-state0094-leaf-before.json",
+      "sha256": "9ad9256257cee6d312fcb1838d1d082374482de88267bf88326e31b2a57cbc7a",
+      "bytes": 58880,
+      "diskAndHttpEqual": true
+    },
+    {
+      "path": "qa/floor-v02-frames/seed0-state0095-leaf-contact.jpg",
+      "sha256": "89c7612416a6f67d129224bd537d6ef4aab490c1c0dd60422ac583460828ff07",
+      "bytes": 262500,
+      "diskAndHttpEqual": true
+    },
+    {
+      "path": "qa/floor-v02-frames/seed0-state0095-leaf-contact.json",
+      "sha256": "b0a7a1e44ff11b4d144ce0599dfbd60c14ad176e31ed0c6db9197fbf92b36e49",
+      "bytes": 58907,
+      "diskAndHttpEqual": true
+    },
+    {
+      "path": "qa/floor-v02-frames/seed0-state0096-leaf-after.jpg",
+      "sha256": "857327704aa42e061b3d5da5e40f133738cbdafdda75973a373947fe68db7353",
+      "bytes": 262548,
+      "diskAndHttpEqual": true
+    },
+    {
+      "path": "qa/floor-v02-frames/seed0-state0096-leaf-after.json",
+      "sha256": "42d3f9c7224e08440dbcaebae580f94f28f461a4baa01ab7cfd60f013c531cd5",
+      "bytes": 58906,
+      "diskAndHttpEqual": true
+    },
+    {
+      "path": "qa/floor-v02-frames/seed0-state0441-frog-before.jpg",
+      "sha256": "a5816a8b42a38be83ea9c901c784e653bffb92a6659f493084df1ccf2198a6e3",
+      "bytes": 262575,
+      "diskAndHttpEqual": true
+    },
+    {
+      "path": "qa/floor-v02-frames/seed0-state0441-frog-before.json",
+      "sha256": "0b179c56e7b5660618c9263caa3c4101269e7e3a39a491a16ef9c8f0f1b86aff",
+      "bytes": 58917,
+      "diskAndHttpEqual": true
+    },
+    {
+      "path": "qa/floor-v02-frames/seed0-state0442-frog-contact.jpg",
+      "sha256": "101da08602fe1ce038a0ef33507d76b48205b14c23cf026b93e59dfe0c7d6053",
+      "bytes": 262568,
+      "diskAndHttpEqual": true
+    },
+    {
+      "path": "qa/floor-v02-frames/seed0-state0442-frog-contact.json",
+      "sha256": "3de33cf7efa57ba455d9fbd7111221893c95d656a6ff0e1c46ab8cd130c1fee7",
+      "bytes": 58919,
+      "diskAndHttpEqual": true
+    },
+    {
+      "path": "qa/floor-v02-frames/seed0-state0443-frog-after.jpg",
+      "sha256": "36bca885a1f7cc04245b2d8eedcae88062b6cd123980ded9dac9e1e06f4900e4",
+      "bytes": 262551,
+      "diskAndHttpEqual": true
+    },
+    {
+      "path": "qa/floor-v02-frames/seed0-state0443-frog-after.json",
+      "sha256": "6ac3898bbc776b89ce50300a5f2f3bc553bf06ab2dcce529b10a9c226bd33934",
+      "bytes": 58918,
+      "diskAndHttpEqual": true
+    },
+    {
+      "path": "qa/floor-v02-frames/seed0-state0571-wood-before.jpg",
+      "sha256": "ff4d837a253beeb0ebf5ac82a6251f3b95552ffb46fb29cd4a849e7d7145f993",
+      "bytes": 262514,
+      "diskAndHttpEqual": true
+    },
+    {
+      "path": "qa/floor-v02-frames/seed0-state0571-wood-before.json",
+      "sha256": "922115e5b0ac7b1230071465fd2d18a7f353ecf43bc2b75b26d9d7cff8f252f9",
+      "bytes": 58912,
+      "diskAndHttpEqual": true
+    },
+    {
+      "path": "qa/floor-v02-frames/seed0-state0572-wood-contact.jpg",
+      "sha256": "b1bdfc876b95d8471831f41ad56845e91e34b89fb1631409c337a4e69c73b5d7",
+      "bytes": 262547,
+      "diskAndHttpEqual": true
+    },
+    {
+      "path": "qa/floor-v02-frames/seed0-state0572-wood-contact.json",
+      "sha256": "88c16d758ad6e5a7c590a493b468300b4bf70e4af3363a569db1e9ccdefaa75e",
+      "bytes": 58913,
+      "diskAndHttpEqual": true
+    },
+    {
+      "path": "qa/floor-v02-frames/seed0-state0573-wood-after.jpg",
+      "sha256": "cd776e213e07072983fe1d6ac24082d218dfa59055475c6967b0b8d42f6ebbbb",
+      "bytes": 262510,
+      "diskAndHttpEqual": true
+    },
+    {
+      "path": "qa/floor-v02-frames/seed0-state0573-wood-after.json",
+      "sha256": "3707193b7cbe3f9528c6d9bebc7954c09af1caaf4264824f2fe61bfe8d9920cd",
+      "bytes": 58916,
+      "diskAndHttpEqual": true
+    },
+    {
+      "path": "qa/floor-v02-frames/seed0-state0890-flower-before.jpg",
+      "sha256": "c1d4933de02e572ebb908dc49053f068633cce297483d9221f33064fb8f2852e",
+      "bytes": 262644,
+      "diskAndHttpEqual": true
+    },
+    {
+      "path": "qa/floor-v02-frames/seed0-state0890-flower-before.json",
+      "sha256": "fe9bcf131ff929791883ce0dd981989ef816b28eb293b66f5cc4c133747acc73",
+      "bytes": 58913,
+      "diskAndHttpEqual": true
+    },
+    {
+      "path": "qa/floor-v02-frames/seed0-state0891-flower-contact.jpg",
+      "sha256": "c843a5bc9b33a20167344d2b01ac357255f5f39e03c91bb50f82afcff991d2b4",
+      "bytes": 262679,
+      "diskAndHttpEqual": true
+    },
+    {
+      "path": "qa/floor-v02-frames/seed0-state0891-flower-contact.json",
+      "sha256": "12af79e941166257a7ac6812108ad70fcb04f681e12b2ac3d9d80de551f5dc37",
+      "bytes": 58915,
+      "diskAndHttpEqual": true
+    },
+    {
+      "path": "qa/floor-v02-frames/seed0-state0892-flower-after.jpg",
+      "sha256": "9cb0258db1410449cdd41757bc46d12103232daccc55e0b819bdbdd8f9eb2db0",
+      "bytes": 262650,
+      "diskAndHttpEqual": true
+    },
+    {
+      "path": "qa/floor-v02-frames/seed0-state0892-flower-after.json",
+      "sha256": "cc1bb59fa9ee9f8d6e6f7b40d98106fe1a035018a47e2d9438e947a7de14b168",
+      "bytes": 58911,
+      "diskAndHttpEqual": true
+    },
+    {
+      "path": "qa/floor-v02-frames/seed0-state1916-near-edge.jpg",
+      "sha256": "df0b43f0f92d6fcc5c3b828e4d142402fccbdbb8b97d8ad8e45bba3c17420023",
+      "bytes": 262821,
+      "diskAndHttpEqual": true
+    },
+    {
+      "path": "qa/floor-v02-frames/seed0-state1916-near-edge.json",
+      "sha256": "b1ec17944dbd5b4efecdeb659328f266623c389931dc7e959ca206ec73dcd0a2",
+      "bytes": 58937,
+      "diskAndHttpEqual": true
+    },
+    {
+      "path": "qa/floor-v02-frames/seed0-state1956-receiver-terminal.jpg",
+      "sha256": "e01e0714e15f47038502a79e9430f7cb93df74f84e78fbad440455e1a0efe8af",
+      "bytes": 263185,
+      "diskAndHttpEqual": true
+    },
+    {
+      "path": "qa/floor-v02-frames/seed0-state1956-receiver-terminal.json",
+      "sha256": "37f8d13ff75b370ce7113d65bf22cff07b9a39d113db461fd4ae4848c0879a66",
+      "bytes": 59018,
+      "diskAndHttpEqual": true
+    },
+    {
+      "path": "qa/floor-v02-frames/seed1-state1735-ordinary-lost.jpg",
+      "sha256": "7eddff5e82dd97e51dd2d7024d34a9709e60ea0312cf264d14e6fa94f56c87af",
+      "bytes": 262496,
+      "diskAndHttpEqual": true
+    },
+    {
+      "path": "qa/floor-v02-frames/seed1-state1735-ordinary-lost.json",
+      "sha256": "51f059904d1a8d7ab2247bf61b414fafaf081bdf685e896d784e973d249d7a5f",
+      "bytes": 59044,
+      "diskAndHttpEqual": true
+    },
+    {
+      "path": "qa/floor-v02-frames/seed2-state1290-ordinary-lost.jpg",
+      "sha256": "7eddff5e82dd97e51dd2d7024d34a9709e60ea0312cf264d14e6fa94f56c87af",
+      "bytes": 262496,
+      "diskAndHttpEqual": true
+    },
+    {
+      "path": "qa/floor-v02-frames/seed2-state1290-ordinary-lost.json",
+      "sha256": "b4d87e4953e70aae8db0d3b216d339098e0830d86c96343a646a6502f3f23bf5",
+      "bytes": 59040,
+      "diskAndHttpEqual": true
+    },
+    {
+      "path": "qa/floor-v02-frames/source-flat-art-off-proof.json",
+      "sha256": "a1ffce16980d7dbf4379a5d97391c2b3f44973ccd1757441b6410a505dc5cd4a",
+      "bytes": 108619,
+      "diskAndHttpEqual": true
+    },
+    {
+      "path": "style.css",
+      "sha256": "d743f1a51e6c03c6b79301cdf5ecfd8ee5e1806f94438178e39a357f6ca28d4f",
+      "bytes": 2273,
+      "diskAndHttpEqual": true
+    }
+  ]
+}

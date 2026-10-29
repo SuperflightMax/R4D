@@ -1,0 +1,1520 @@
+{
+  "scope": "Preliminary25 integration only; no final-scene, motion or art acceptance",
+  "sourceCommit": "7a4450a8c2edc20880b3d300abc1d51187005479",
+  "url": "http://127.0.0.1:41770/",
+  "inventorySha256": "efa9ad5d74025c5893178a62a5da7ad4601bbbbc44fbef5d5b27914b402ad833",
+  "filesListSha256": "15c5a2308a78a29d7df7e3aac781aadb45642320c14d93aaedf3772e238813df",
+  "files": 74,
+  "bytes": 23530619,
+  "consumerSha256": "efaff71843b69a415b3dc755586c459ba6d7e146675fde441aa82b4123cff741",
+  "coreSha256": "8843446996582eaccbd9ff63d3147d74b7eca9a614d8e0df16851d1d89d46f50",
+  "controllerSha256": "355591297e3a7ba7a1e775101785338956547261b5430de1d29b43f9357d108b",
+  "unchangedController": true,
+  "newIndependentFullNativeOracleRun": false,
+  "stateContractSha256": "b9b303c8ef05245b88d2d1e09f4cdfc165048bde112a4f06319c4bdb383a1fb7",
+  "inputs": [
+    {
+      "commit": "a6d0493383f55ffcfc2de966d15c79bcd3c088bd",
+      "packet": "OBSTACLE_MASTERS_V01.json",
+      "sha256": "ce9843e959004ecd668a82d27d7862398cfbfc4315d4d0a4564b6f121f4f76d1",
+      "bytes": 10773
+    },
+    {
+      "commit": "0c3a6b7ae6916262b061234d8e6f5a7a9aa0f3b9",
+      "packet": "WOOD_PACKET_V02.json",
+      "sha256": "73523d0669c3f4121161a2dced82587bdcf6f467d9de9986cb7610b7bd8ea49a",
+      "bytes": 3492
+    },
+    {
+      "commit": "2467aced9c8c7a90fb567d368eee865ac931d922",
+      "packet": "SPRITE_PACKET_V03.json",
+      "sha256": "93d84435979c1df900abfb1ec5aca69967823b7f8255fc69cde644d68709bda1",
+      "bytes": 7986
+    },
+    {
+      "commit": "e805089167c4d2ec98ff0409b818b5016550e59e",
+      "packet": "FLOOR_PACKET_V02.json",
+      "sha256": "4b00ca7fd9aed2254db66897b3b8a9c8f90c8f415f4d8db53ba233da0b5a24be",
+      "bytes": 1998
+    }
+  ],
+  "oracle": "QA retained independent native seeds0/1/2, not Builder frames/QA artifacts",
+  "actualIabSnapshotsCompared": 82,
+  "samples": [
+    {
+      "label": "initial",
+      "seed": 0,
+      "tick": 0,
+      "rngU32": 0,
+      "nativeStateEqual": true,
+      "eventsEqual": false,
+      "view": "source",
+      "artVisible": true,
+      "geometryVisible": true,
+      "maskActive": true
+    },
+    {
+      "label": "seed0-t0094",
+      "seed": 0,
+      "tick": 94,
+      "rngU32": 0,
+      "nativeStateEqual": true,
+      "eventsEqual": true,
+      "view": "source",
+      "artVisible": true,
+      "geometryVisible": true,
+      "maskActive": true
+    },
+    {
+      "label": "seed0-t0094-large",
+      "seed": 0,
+      "tick": 94,
+      "rngU32": 0,
+      "nativeStateEqual": true,
+      "eventsEqual": true,
+      "view": "source",
+      "artVisible": true,
+      "geometryVisible": true,
+      "maskActive": true
+    },
+    {
+      "label": "seed0-t0095",
+      "seed": 0,
+      "tick": 95,
+      "rngU32": 1196435762,
+      "nativeStateEqual": true,
+      "eventsEqual": true,
+      "view": "source",
+      "artVisible": true,
+      "geometryVisible": true,
+      "maskActive": true
+    },
+    {
+      "label": "seed0-t0096",
+      "seed": 0,
+      "tick": 96,
+      "rngU32": 1196435762,
+      "nativeStateEqual": true,
+      "eventsEqual": true,
+      "view": "source",
+      "artVisible": true,
+      "geometryVisible": true,
+      "maskActive": true
+    },
+    {
+      "label": "seed0-t0441",
+      "seed": 0,
+      "tick": 441,
+      "rngU32": 2868466484,
+      "nativeStateEqual": true,
+      "eventsEqual": true,
+      "view": "source",
+      "artVisible": true,
+      "geometryVisible": true,
+      "maskActive": true
+    },
+    {
+      "label": "seed0-t0442",
+      "seed": 0,
+      "tick": 442,
+      "rngU32": 2670642822,
+      "nativeStateEqual": true,
+      "eventsEqual": true,
+      "view": "source",
+      "artVisible": true,
+      "geometryVisible": true,
+      "maskActive": true
+    },
+    {
+      "label": "seed0-t0443",
+      "seed": 0,
+      "tick": 443,
+      "rngU32": 2670642822,
+      "nativeStateEqual": true,
+      "eventsEqual": true,
+      "view": "source",
+      "artVisible": true,
+      "geometryVisible": true,
+      "maskActive": true
+    },
+    {
+      "label": "seed0-t0571",
+      "seed": 0,
+      "tick": 571,
+      "rngU32": 2748932008,
+      "nativeStateEqual": true,
+      "eventsEqual": true,
+      "view": "source",
+      "artVisible": true,
+      "geometryVisible": true,
+      "maskActive": true
+    },
+    {
+      "label": "seed0-t0572",
+      "seed": 0,
+      "tick": 572,
+      "rngU32": 2498801434,
+      "nativeStateEqual": true,
+      "eventsEqual": true,
+      "view": "source",
+      "artVisible": true,
+      "geometryVisible": true,
+      "maskActive": true
+    },
+    {
+      "label": "seed0-t0573",
+      "seed": 0,
+      "tick": 573,
+      "rngU32": 2498801434,
+      "nativeStateEqual": true,
+      "eventsEqual": true,
+      "view": "source",
+      "artVisible": true,
+      "geometryVisible": true,
+      "maskActive": true
+    },
+    {
+      "label": "seed0-t0890",
+      "seed": 0,
+      "tick": 890,
+      "rngU32": 3167820124,
+      "nativeStateEqual": true,
+      "eventsEqual": true,
+      "view": "source",
+      "artVisible": true,
+      "geometryVisible": true,
+      "maskActive": true
+    },
+    {
+      "label": "seed0-t0891",
+      "seed": 0,
+      "tick": 891,
+      "rngU32": 3801544430,
+      "nativeStateEqual": true,
+      "eventsEqual": true,
+      "view": "source",
+      "artVisible": true,
+      "geometryVisible": true,
+      "maskActive": true
+    },
+    {
+      "label": "seed0-t0892",
+      "seed": 0,
+      "tick": 892,
+      "rngU32": 3801544430,
+      "nativeStateEqual": true,
+      "eventsEqual": true,
+      "view": "source",
+      "artVisible": true,
+      "geometryVisible": true,
+      "maskActive": true
+    },
+    {
+      "label": "seed0-t1916",
+      "seed": 0,
+      "tick": 1916,
+      "rngU32": 3503432700,
+      "nativeStateEqual": true,
+      "eventsEqual": true,
+      "view": "source",
+      "artVisible": true,
+      "geometryVisible": true,
+      "maskActive": true
+    },
+    {
+      "label": "seed0-t1956",
+      "seed": 0,
+      "tick": 1956,
+      "rngU32": 3503432700,
+      "nativeStateEqual": true,
+      "eventsEqual": true,
+      "view": "source",
+      "artVisible": true,
+      "geometryVisible": true,
+      "maskActive": true
+    },
+    {
+      "label": "seed1-t0000",
+      "seed": 1,
+      "tick": 0,
+      "rngU32": 1,
+      "nativeStateEqual": true,
+      "eventsEqual": true,
+      "view": "source",
+      "artVisible": true,
+      "geometryVisible": true,
+      "maskActive": true
+    },
+    {
+      "label": "seed1-t1017",
+      "seed": 1,
+      "tick": 1017,
+      "rngU32": 4212701329,
+      "nativeStateEqual": true,
+      "eventsEqual": true,
+      "view": "source",
+      "artVisible": true,
+      "geometryVisible": true,
+      "maskActive": true
+    },
+    {
+      "label": "seed1-t1018",
+      "seed": 1,
+      "tick": 1018,
+      "rngU32": 1403919595,
+      "nativeStateEqual": true,
+      "eventsEqual": true,
+      "view": "source",
+      "artVisible": true,
+      "geometryVisible": true,
+      "maskActive": true
+    },
+    {
+      "label": "seed1-t1019",
+      "seed": 1,
+      "tick": 1019,
+      "rngU32": 1403919595,
+      "nativeStateEqual": true,
+      "eventsEqual": true,
+      "view": "source",
+      "artVisible": true,
+      "geometryVisible": true,
+      "maskActive": true
+    },
+    {
+      "label": "seed1-t1574",
+      "seed": 1,
+      "tick": 1574,
+      "rngU32": 3037600243,
+      "nativeStateEqual": true,
+      "eventsEqual": true,
+      "view": "source",
+      "artVisible": true,
+      "geometryVisible": true,
+      "maskActive": true
+    },
+    {
+      "label": "seed1-t1575",
+      "seed": 1,
+      "tick": 1575,
+      "rngU32": 1629134493,
+      "nativeStateEqual": true,
+      "eventsEqual": true,
+      "view": "source",
+      "artVisible": true,
+      "geometryVisible": true,
+      "maskActive": true
+    },
+    {
+      "label": "seed1-t1576",
+      "seed": 1,
+      "tick": 1576,
+      "rngU32": 1629134493,
+      "nativeStateEqual": true,
+      "eventsEqual": true,
+      "view": "source",
+      "artVisible": true,
+      "geometryVisible": true,
+      "maskActive": true
+    },
+    {
+      "label": "seed1-t1735",
+      "seed": 1,
+      "tick": 1735,
+      "rngU32": 1629134493,
+      "nativeStateEqual": true,
+      "eventsEqual": true,
+      "view": "source",
+      "artVisible": true,
+      "geometryVisible": true,
+      "maskActive": true
+    },
+    {
+      "label": "seed2-t0000",
+      "seed": 2,
+      "tick": 0,
+      "rngU32": 2,
+      "nativeStateEqual": true,
+      "eventsEqual": true,
+      "view": "source",
+      "artVisible": true,
+      "geometryVisible": true,
+      "maskActive": true
+    },
+    {
+      "label": "seed2-t0778",
+      "seed": 2,
+      "tick": 778,
+      "rngU32": 2028691434,
+      "nativeStateEqual": true,
+      "eventsEqual": true,
+      "view": "source",
+      "artVisible": true,
+      "geometryVisible": true,
+      "maskActive": true
+    },
+    {
+      "label": "seed2-t0779",
+      "seed": 2,
+      "tick": 779,
+      "rngU32": 2992280236,
+      "nativeStateEqual": true,
+      "eventsEqual": true,
+      "view": "source",
+      "artVisible": true,
+      "geometryVisible": true,
+      "maskActive": true
+    },
+    {
+      "label": "seed2-t0780",
+      "seed": 2,
+      "tick": 780,
+      "rngU32": 2992280236,
+      "nativeStateEqual": true,
+      "eventsEqual": true,
+      "view": "source",
+      "artVisible": true,
+      "geometryVisible": true,
+      "maskActive": true
+    },
+    {
+      "label": "seed2-t1115",
+      "seed": 2,
+      "tick": 1115,
+      "rngU32": 1796326438,
+      "nativeStateEqual": true,
+      "eventsEqual": true,
+      "view": "source",
+      "artVisible": true,
+      "geometryVisible": true,
+      "maskActive": true
+    },
+    {
+      "label": "seed2-t1116",
+      "seed": 2,
+      "tick": 1116,
+      "rngU32": 2866302536,
+      "nativeStateEqual": true,
+      "eventsEqual": true,
+      "view": "source",
+      "artVisible": true,
+      "geometryVisible": true,
+      "maskActive": true
+    },
+    {
+      "label": "seed2-t1117",
+      "seed": 2,
+      "tick": 1117,
+      "rngU32": 2866302536,
+      "nativeStateEqual": true,
+      "eventsEqual": true,
+      "view": "source",
+      "artVisible": true,
+      "geometryVisible": true,
+      "maskActive": true
+    },
+    {
+      "label": "seed2-t1290",
+      "seed": 2,
+      "tick": 1290,
+      "rngU32": 2866302536,
+      "nativeStateEqual": true,
+      "eventsEqual": true,
+      "view": "source",
+      "artVisible": true,
+      "geometryVisible": true,
+      "maskActive": true
+    },
+    {
+      "label": "source-edge1916",
+      "seed": 0,
+      "tick": 1916,
+      "rngU32": 3503432700,
+      "nativeStateEqual": true,
+      "eventsEqual": true,
+      "view": "source",
+      "artVisible": true,
+      "geometryVisible": true,
+      "maskActive": true
+    },
+    {
+      "label": "flat-edge1916",
+      "seed": 0,
+      "tick": 1916,
+      "rngU32": 3503432700,
+      "nativeStateEqual": true,
+      "eventsEqual": true,
+      "view": "flat",
+      "artVisible": true,
+      "geometryVisible": true,
+      "maskActive": true
+    },
+    {
+      "label": "flat-art-off-edge1916",
+      "seed": 0,
+      "tick": 1916,
+      "rngU32": 3503432700,
+      "nativeStateEqual": true,
+      "eventsEqual": true,
+      "view": "flat",
+      "artVisible": false,
+      "geometryVisible": true,
+      "maskActive": false
+    },
+    {
+      "label": "flat-registration-edge1916",
+      "seed": 0,
+      "tick": 1916,
+      "rngU32": 3503432700,
+      "nativeStateEqual": true,
+      "eventsEqual": true,
+      "view": "flat",
+      "artVisible": false,
+      "geometryVisible": true,
+      "maskActive": false
+    },
+    {
+      "label": "flat-art-on-edge1916",
+      "seed": 0,
+      "tick": 1916,
+      "rngU32": 3503432700,
+      "nativeStateEqual": true,
+      "eventsEqual": true,
+      "view": "flat",
+      "artVisible": true,
+      "geometryVisible": true,
+      "maskActive": true
+    },
+    {
+      "label": "source-registration-edge1916",
+      "seed": 0,
+      "tick": 1916,
+      "rngU32": 3503432700,
+      "nativeStateEqual": true,
+      "eventsEqual": true,
+      "view": "source",
+      "artVisible": true,
+      "geometryVisible": true,
+      "maskActive": true
+    },
+    {
+      "label": "source-return-edge1916",
+      "seed": 0,
+      "tick": 1916,
+      "rngU32": 3503432700,
+      "nativeStateEqual": true,
+      "eventsEqual": true,
+      "view": "source",
+      "artVisible": true,
+      "geometryVisible": true,
+      "maskActive": true
+    },
+    {
+      "label": "source-edge1916-art-only",
+      "seed": 0,
+      "tick": 1916,
+      "rngU32": 3503432700,
+      "nativeStateEqual": true,
+      "eventsEqual": true,
+      "view": "source",
+      "artVisible": true,
+      "geometryVisible": false,
+      "maskActive": true
+    },
+    {
+      "label": "source-terminal1956-art-only",
+      "seed": 0,
+      "tick": 1956,
+      "rngU32": 3503432700,
+      "nativeStateEqual": true,
+      "eventsEqual": true,
+      "view": "source",
+      "artVisible": true,
+      "geometryVisible": false,
+      "maskActive": true
+    },
+    {
+      "label": "source-terminal1956-geometry-only",
+      "seed": 0,
+      "tick": 1956,
+      "rngU32": 3503432700,
+      "nativeStateEqual": true,
+      "eventsEqual": true,
+      "view": "source",
+      "artVisible": false,
+      "geometryVisible": true,
+      "maskActive": false
+    },
+    {
+      "label": "source-terminal1956-art-on",
+      "seed": 0,
+      "tick": 1956,
+      "rngU32": 3503432700,
+      "nativeStateEqual": true,
+      "eventsEqual": true,
+      "view": "source",
+      "artVisible": true,
+      "geometryVisible": true,
+      "maskActive": true
+    },
+    {
+      "label": "flat-terminal1956-cycle1",
+      "seed": 0,
+      "tick": 1956,
+      "rngU32": 3503432700,
+      "nativeStateEqual": true,
+      "eventsEqual": true,
+      "view": "flat",
+      "artVisible": true,
+      "geometryVisible": true,
+      "maskActive": true
+    },
+    {
+      "label": "flat-terminal1956-off-cycle1",
+      "seed": 0,
+      "tick": 1956,
+      "rngU32": 3503432700,
+      "nativeStateEqual": true,
+      "eventsEqual": true,
+      "view": "flat",
+      "artVisible": false,
+      "geometryVisible": true,
+      "maskActive": false
+    },
+    {
+      "label": "source-terminal1956-cycle1",
+      "seed": 0,
+      "tick": 1956,
+      "rngU32": 3503432700,
+      "nativeStateEqual": true,
+      "eventsEqual": true,
+      "view": "source",
+      "artVisible": true,
+      "geometryVisible": true,
+      "maskActive": true
+    },
+    {
+      "label": "flat-terminal1956-cycle2",
+      "seed": 0,
+      "tick": 1956,
+      "rngU32": 3503432700,
+      "nativeStateEqual": true,
+      "eventsEqual": true,
+      "view": "flat",
+      "artVisible": true,
+      "geometryVisible": true,
+      "maskActive": true
+    },
+    {
+      "label": "flat-terminal1956-off-cycle2",
+      "seed": 0,
+      "tick": 1956,
+      "rngU32": 3503432700,
+      "nativeStateEqual": true,
+      "eventsEqual": true,
+      "view": "flat",
+      "artVisible": false,
+      "geometryVisible": true,
+      "maskActive": false
+    },
+    {
+      "label": "source-terminal1956-cycle2",
+      "seed": 0,
+      "tick": 1956,
+      "rngU32": 3503432700,
+      "nativeStateEqual": true,
+      "eventsEqual": true,
+      "view": "source",
+      "artVisible": true,
+      "geometryVisible": true,
+      "maskActive": true
+    },
+    {
+      "label": "source-terminal1956-resize920",
+      "seed": 0,
+      "tick": 1956,
+      "rngU32": 3503432700,
+      "nativeStateEqual": true,
+      "eventsEqual": true,
+      "view": "source",
+      "artVisible": true,
+      "geometryVisible": true,
+      "maskActive": true
+    },
+    {
+      "label": "source-terminal1956-resize-reset",
+      "seed": 0,
+      "tick": 1956,
+      "rngU32": 3503432700,
+      "nativeStateEqual": true,
+      "eventsEqual": true,
+      "view": "source",
+      "artVisible": true,
+      "geometryVisible": true,
+      "maskActive": true
+    },
+    {
+      "label": "live-typed95-first",
+      "seed": 0,
+      "tick": 63,
+      "rngU32": 0,
+      "nativeStateEqual": true,
+      "eventsEqual": true,
+      "view": "source",
+      "artVisible": true,
+      "geometryVisible": true,
+      "maskActive": true
+    },
+    {
+      "label": "live-typed95-redraw",
+      "seed": 0,
+      "tick": 90,
+      "rngU32": 0,
+      "nativeStateEqual": true,
+      "eventsEqual": true,
+      "view": "source",
+      "artVisible": true,
+      "geometryVisible": true,
+      "maskActive": true
+    },
+    {
+      "label": "live-seek-paused95",
+      "seed": 0,
+      "tick": 95,
+      "rngU32": 1196435762,
+      "nativeStateEqual": true,
+      "eventsEqual": true,
+      "view": "source",
+      "artVisible": true,
+      "geometryVisible": true,
+      "maskActive": true
+    },
+    {
+      "label": "step10-to105",
+      "seed": 0,
+      "tick": 105,
+      "rngU32": 1196435762,
+      "nativeStateEqual": true,
+      "eventsEqual": true,
+      "view": "source",
+      "artVisible": true,
+      "geometryVisible": true,
+      "maskActive": true
+    },
+    {
+      "label": "next-contact95",
+      "seed": 0,
+      "tick": 95,
+      "rngU32": 1196435762,
+      "nativeStateEqual": true,
+      "eventsEqual": true,
+      "view": "source",
+      "artVisible": true,
+      "geometryVisible": true,
+      "maskActive": true
+    },
+    {
+      "label": "api-replay-real-import95",
+      "seed": 0,
+      "tick": 95,
+      "rngU32": 1196435762,
+      "nativeStateEqual": true,
+      "eventsEqual": true,
+      "view": "source",
+      "artVisible": true,
+      "geometryVisible": true,
+      "maskActive": true
+    },
+    {
+      "label": "frame-source-all25-registration",
+      "seed": 0,
+      "tick": 0,
+      "rngU32": 0,
+      "nativeStateEqual": true,
+      "eventsEqual": true,
+      "view": "source",
+      "artVisible": true,
+      "geometryVisible": true,
+      "maskActive": true
+    },
+    {
+      "label": "frame-source-all25-geometry",
+      "seed": 0,
+      "tick": 0,
+      "rngU32": 0,
+      "nativeStateEqual": true,
+      "eventsEqual": true,
+      "view": "source",
+      "artVisible": true,
+      "geometryVisible": true,
+      "maskActive": true
+    },
+    {
+      "label": "frame-seed0-t0094",
+      "seed": 0,
+      "tick": 94,
+      "rngU32": 0,
+      "nativeStateEqual": true,
+      "eventsEqual": true,
+      "view": "source",
+      "artVisible": true,
+      "geometryVisible": true,
+      "maskActive": true
+    },
+    {
+      "label": "frame-seed0-t0095",
+      "seed": 0,
+      "tick": 95,
+      "rngU32": 1196435762,
+      "nativeStateEqual": true,
+      "eventsEqual": true,
+      "view": "source",
+      "artVisible": true,
+      "geometryVisible": true,
+      "maskActive": true
+    },
+    {
+      "label": "frame-seed0-t0096",
+      "seed": 0,
+      "tick": 96,
+      "rngU32": 1196435762,
+      "nativeStateEqual": true,
+      "eventsEqual": true,
+      "view": "source",
+      "artVisible": true,
+      "geometryVisible": true,
+      "maskActive": true
+    },
+    {
+      "label": "frame-seed0-t0441",
+      "seed": 0,
+      "tick": 441,
+      "rngU32": 2868466484,
+      "nativeStateEqual": true,
+      "eventsEqual": true,
+      "view": "source",
+      "artVisible": true,
+      "geometryVisible": true,
+      "maskActive": true
+    },
+    {
+      "label": "frame-seed0-t0442",
+      "seed": 0,
+      "tick": 442,
+      "rngU32": 2670642822,
+      "nativeStateEqual": true,
+      "eventsEqual": true,
+      "view": "source",
+      "artVisible": true,
+      "geometryVisible": true,
+      "maskActive": true
+    },
+    {
+      "label": "frame-seed0-t0443",
+      "seed": 0,
+      "tick": 443,
+      "rngU32": 2670642822,
+      "nativeStateEqual": true,
+      "eventsEqual": true,
+      "view": "source",
+      "artVisible": true,
+      "geometryVisible": true,
+      "maskActive": true
+    },
+    {
+      "label": "frame-seed0-t0571",
+      "seed": 0,
+      "tick": 571,
+      "rngU32": 2748932008,
+      "nativeStateEqual": true,
+      "eventsEqual": true,
+      "view": "source",
+      "artVisible": true,
+      "geometryVisible": true,
+      "maskActive": true
+    },
+    {
+      "label": "frame-seed0-t0572",
+      "seed": 0,
+      "tick": 572,
+      "rngU32": 2498801434,
+      "nativeStateEqual": true,
+      "eventsEqual": true,
+      "view": "source",
+      "artVisible": true,
+      "geometryVisible": true,
+      "maskActive": true
+    },
+    {
+      "label": "frame-seed0-t0573",
+      "seed": 0,
+      "tick": 573,
+      "rngU32": 2498801434,
+      "nativeStateEqual": true,
+      "eventsEqual": true,
+      "view": "source",
+      "artVisible": true,
+      "geometryVisible": true,
+      "maskActive": true
+    },
+    {
+      "label": "frame-seed0-t0890",
+      "seed": 0,
+      "tick": 890,
+      "rngU32": 3167820124,
+      "nativeStateEqual": true,
+      "eventsEqual": true,
+      "view": "source",
+      "artVisible": true,
+      "geometryVisible": true,
+      "maskActive": true
+    },
+    {
+      "label": "frame-seed0-t0891",
+      "seed": 0,
+      "tick": 891,
+      "rngU32": 3801544430,
+      "nativeStateEqual": true,
+      "eventsEqual": true,
+      "view": "source",
+      "artVisible": true,
+      "geometryVisible": true,
+      "maskActive": true
+    },
+    {
+      "label": "frame-seed0-t0892",
+      "seed": 0,
+      "tick": 892,
+      "rngU32": 3801544430,
+      "nativeStateEqual": true,
+      "eventsEqual": true,
+      "view": "source",
+      "artVisible": true,
+      "geometryVisible": true,
+      "maskActive": true
+    },
+    {
+      "label": "frame-seed0-t1916",
+      "seed": 0,
+      "tick": 1916,
+      "rngU32": 3503432700,
+      "nativeStateEqual": true,
+      "eventsEqual": true,
+      "view": "source",
+      "artVisible": true,
+      "geometryVisible": true,
+      "maskActive": true
+    },
+    {
+      "label": "frame-seed0-t1956",
+      "seed": 0,
+      "tick": 1956,
+      "rngU32": 3503432700,
+      "nativeStateEqual": true,
+      "eventsEqual": true,
+      "view": "source",
+      "artVisible": true,
+      "geometryVisible": true,
+      "maskActive": true
+    },
+    {
+      "label": "frame-source-edge1916-art-only",
+      "seed": 0,
+      "tick": 1916,
+      "rngU32": 3503432700,
+      "nativeStateEqual": true,
+      "eventsEqual": true,
+      "view": "source",
+      "artVisible": true,
+      "geometryVisible": false,
+      "maskActive": true
+    },
+    {
+      "label": "frame-source-terminal1956-art-only",
+      "seed": 0,
+      "tick": 1956,
+      "rngU32": 3503432700,
+      "nativeStateEqual": true,
+      "eventsEqual": true,
+      "view": "source",
+      "artVisible": true,
+      "geometryVisible": false,
+      "maskActive": true
+    },
+    {
+      "label": "frame-flat-terminal1956-art-only",
+      "seed": 0,
+      "tick": 1956,
+      "rngU32": 3503432700,
+      "nativeStateEqual": true,
+      "eventsEqual": true,
+      "view": "flat",
+      "artVisible": true,
+      "geometryVisible": false,
+      "maskActive": true
+    },
+    {
+      "label": "frame-flat-edge1916-art-only",
+      "seed": 0,
+      "tick": 1916,
+      "rngU32": 3503432700,
+      "nativeStateEqual": true,
+      "eventsEqual": true,
+      "view": "flat",
+      "artVisible": true,
+      "geometryVisible": false,
+      "maskActive": true
+    },
+    {
+      "label": "frame-art-only-t0000",
+      "seed": 0,
+      "tick": 0,
+      "rngU32": 0,
+      "nativeStateEqual": true,
+      "eventsEqual": true,
+      "view": "source",
+      "artVisible": true,
+      "geometryVisible": false,
+      "maskActive": true
+    },
+    {
+      "label": "frame-art-only-t0095",
+      "seed": 0,
+      "tick": 95,
+      "rngU32": 1196435762,
+      "nativeStateEqual": true,
+      "eventsEqual": true,
+      "view": "source",
+      "artVisible": true,
+      "geometryVisible": false,
+      "maskActive": true
+    },
+    {
+      "label": "frame-art-only-t0442",
+      "seed": 0,
+      "tick": 442,
+      "rngU32": 2670642822,
+      "nativeStateEqual": true,
+      "eventsEqual": true,
+      "view": "source",
+      "artVisible": true,
+      "geometryVisible": false,
+      "maskActive": true
+    },
+    {
+      "label": "frame-art-only-t0572",
+      "seed": 0,
+      "tick": 572,
+      "rngU32": 2498801434,
+      "nativeStateEqual": true,
+      "eventsEqual": true,
+      "view": "source",
+      "artVisible": true,
+      "geometryVisible": false,
+      "maskActive": true
+    },
+    {
+      "label": "frame-art-only-t0891",
+      "seed": 0,
+      "tick": 891,
+      "rngU32": 3801544430,
+      "nativeStateEqual": true,
+      "eventsEqual": true,
+      "view": "source",
+      "artVisible": true,
+      "geometryVisible": false,
+      "maskActive": true
+    }
+  ],
+  "assets": [
+    {
+      "family": "flower",
+      "texture": "raw/flower-master-v01.png",
+      "sha256": "42fc1808e7049d9dd6028770d476b4506722fdda70e83a13aaf33f2554a00a05",
+      "canvas": [
+        1254,
+        1254
+      ]
+    },
+    {
+      "family": "leaf",
+      "texture": "raw/leaf-master-v01.png",
+      "sha256": "bb382102d57762b25e3cd9e35bf7b50497cb668014f4fae6349d3baf5550e189",
+      "canvas": [
+        1470,
+        1070
+      ]
+    },
+    {
+      "family": "frog",
+      "texture": "raw/frog-master-v01.png",
+      "sha256": "2b052f5668c078968e6e70c8094c9e04c15774616c9b0e2358801c1302467229",
+      "canvas": [
+        1363,
+        1154
+      ]
+    },
+    {
+      "family": "wood",
+      "texture": "raw/wood-master-v02.png",
+      "sha256": "f829632e48595a301bd5c3b1d4a87316eb7eee0053965343ae0dac263ba45cb0",
+      "canvas": [
+        1254,
+        1254
+      ]
+    }
+  ],
+  "familyCounts": {
+    "flower": 7,
+    "leaf": 5,
+    "frog": 5,
+    "wood": 8
+  },
+  "registration": [
+    {
+      "id": "flower-01",
+      "family": "flower",
+      "nativeBase": [
+        32982.10427784783,
+        33295.09546643628
+      ],
+      "nativeRadius": 44.62098571998958,
+      "projectedCenter": [
+        525.4691425053203,
+        380.881722604278
+      ],
+      "sourceAnchorErrorPx": 5.684341886080802e-14,
+      "uniformScale": 0.08898776418241879,
+      "projectedHorizontalRadius": 39.99999999999724,
+      "assetEllipseVsTrueProjectedCircleSampleMaxNearestPx": 3.1362390670895572
+    },
+    {
+      "id": "leaf-01",
+      "family": "leaf",
+      "nativeBase": [
+        33257.103055588785,
+        33328.97811206313
+      ],
+      "nativeRadius": 49.97188529432575,
+      "projectedCenter": [
+        771.9933085614629,
+        395.3781834746942
+      ],
+      "sourceAnchorErrorPx": 0.0,
+      "uniformScale": 0.10263662074628292,
+      "projectedHorizontalRadius": 45.000000000000284,
+      "assetEllipseVsTrueProjectedCircleSampleMaxNearestPx": 3.9521787894106972
+    },
+    {
+      "id": "frog-01",
+      "family": "frog",
+      "nativeBase": [
+        33523.76813123743,
+        33306.91584579162
+      ],
+      "nativeRadius": 49.005746624320594,
+      "projectedCenter": [
+        1011.4166569436551,
+        385.9240956853891
+      ],
+      "sourceAnchorErrorPx": 0.0,
+      "uniformScale": 0.08635917566241916,
+      "projectedHorizontalRadius": 44.00000000000256,
+      "assetEllipseVsTrueProjectedCircleSampleMaxNearestPx": 2.6732199855140895
+    },
+    {
+      "id": "wood-01",
+      "family": "wood",
+      "nativeBase": [
+        33101.88779971951,
+        33516.93876987417
+      ],
+      "nativeRadius": 32.47610540354854,
+      "projectedCenter": [
+        628.6379171404694,
+        478.2464227639511
+      ],
+      "sourceAnchorErrorPx": 0.0,
+      "uniformScale": 0.11450381679389118,
+      "projectedHorizontalRadius": 29.99999999999949,
+      "assetEllipseVsTrueProjectedCircleSampleMaxNearestPx": 0.7272136255908617
+    },
+    {
+      "id": "flower-02",
+      "family": "flower",
+      "nativeBase": [
+        33380.562134421954,
+        33530.233282658526
+      ],
+      "nativeRadius": 45.38351877747797,
+      "projectedCenter": [
+        886.2755402544583,
+        484.27004775792415
+      ],
+      "sourceAnchorErrorPx": 0.0,
+      "uniformScale": 0.09343715239153971,
+      "projectedHorizontalRadius": 41.9999999999971,
+      "assetEllipseVsTrueProjectedCircleSampleMaxNearestPx": 2.6050446300261982
+    },
+    {
+      "id": "wood-02",
+      "family": "wood",
+      "nativeBase": [
+        33587.93396983491,
+        33516.93876987417
+      ],
+      "nativeRadius": 32.47610540354854,
+      "projectedCenter": [
+        1077.6260246205215,
+        478.2464227639511
+      ],
+      "sourceAnchorErrorPx": 0.0,
+      "uniformScale": 0.11450381679389096,
+      "projectedHorizontalRadius": 29.99999999999943,
+      "assetEllipseVsTrueProjectedCircleSampleMaxNearestPx": 0.8941300343058487
+    },
+    {
+      "id": "frog-02",
+      "family": "frog",
+      "nativeBase": [
+        32948.158051844744,
+        33634.85738798833
+      ],
+      "nativeRadius": 47.92511291991522,
+      "projectedCenter": [
+        481.94720861408734,
+        532.4547649566687
+      ],
+      "sourceAnchorErrorPx": 0.0,
+      "uniformScale": 0.08832188420020201,
+      "projectedHorizontalRadius": 45.00000000000293,
+      "assetEllipseVsTrueProjectedCircleSampleMaxNearestPx": 3.731940253286104
+    },
+    {
+      "id": "leaf-02",
+      "family": "leaf",
+      "nativeBase": [
+        33220.24445754825,
+        33676.055127292115
+      ],
+      "nativeRadius": 48.70831724129279,
+      "projectedCenter": [
+        737.2325646638005,
+        551.8169569900757
+      ],
+      "sourceAnchorErrorPx": 0.0,
+      "uniformScale": 0.1049174345406371,
+      "projectedHorizontalRadius": 45.99999999999693,
+      "assetEllipseVsTrueProjectedCircleSampleMaxNearestPx": 2.9841822261760416
+    },
+    {
+      "id": "leaf-03",
+      "family": "leaf",
+      "nativeBase": [
+        33495.692557377544,
+        33708.45237135722
+      ],
+      "nativeRadius": 49.54077468376489,
+      "projectedCenter": [
+        998.3995566007252,
+        567.2011564213329
+      ],
+      "sourceAnchorErrorPx": 0.0,
+      "uniformScale": 0.10719824833500904,
+      "projectedHorizontalRadius": 47.000000000001364,
+      "assetEllipseVsTrueProjectedCircleSampleMaxNearestPx": 3.037868173778665
+    },
+    {
+      "id": "wood-03",
+      "family": "wood",
+      "nativeBase": [
+        33048.040620357926,
+        33875.80059132175
+      ],
+      "nativeRadius": 31.90441210678833,
+      "projectedCenter": [
+        568.9357605046531,
+        648.961775738838
+      ],
+      "sourceAnchorErrorPx": 0.0,
+      "uniformScale": 0.11832061068701227,
+      "projectedHorizontalRadius": 30.999999999997215,
+      "assetEllipseVsTrueProjectedCircleSampleMaxNearestPx": 1.5429423881252717
+    },
+    {
+      "id": "flower-03",
+      "family": "flower",
+      "nativeBase": [
+        33327.77201639532,
+        33857.38732422164
+      ],
+      "nativeRadius": 44.37224230558652,
+      "projectedCenter": [
+        840.5524171112315,
+        639.7726129873554
+      ],
+      "sourceAnchorErrorPx": 0.0,
+      "uniformScale": 0.09566184649610981,
+      "projectedHorizontalRadius": 43.000000000001364,
+      "assetEllipseVsTrueProjectedCircleSampleMaxNearestPx": 1.6765537763486682
+    },
+    {
+      "id": "frog-03",
+      "family": "frog",
+      "nativeBase": [
+        33623.770528529574,
+        33859.21790429951
+      ],
+      "nativeRadius": 48.487099129026284,
+      "projectedCenter": [
+        1127.4910079461204,
+        640.6839825717879
+      ],
+      "sourceAnchorErrorPx": 0.0,
+      "uniformScale": 0.09224730127575363,
+      "projectedHorizontalRadius": 46.999999999996476,
+      "assetEllipseVsTrueProjectedCircleSampleMaxNearestPx": 4.695505982004483
+    },
+    {
+      "id": "frog-04",
+      "family": "frog",
+      "nativeBase": [
+        33183.163481675765,
+        34037.81138863775
+      ],
+      "nativeRadius": 49.24910619082636,
+      "projectedCenter": [
+        698.531895014324,
+        731.9716387501211
+      ],
+      "sourceAnchorErrorPx": 0.0,
+      "uniformScale": 0.09617271835133097,
+      "projectedHorizontalRadius": 49.000000000003126,
+      "assetEllipseVsTrueProjectedCircleSampleMaxNearestPx": 5.448216287058587
+    },
+    {
+      "id": "wood-04",
+      "family": "wood",
+      "nativeBase": [
+        33433.9500738487,
+        34041.74228104549
+      ],
+      "nativeRadius": 32.143977007385345,
+      "projectedCenter": [
+        948.1530125799296,
+        734.0351950247388
+      ],
+      "sourceAnchorErrorPx": 1.1368683772161603e-13,
+      "uniformScale": 0.12213740458015072,
+      "projectedHorizontalRadius": 31.99999999999949,
+      "assetEllipseVsTrueProjectedCircleSampleMaxNearestPx": 1.9803967976422998
+    },
+    {
+      "id": "wood-05",
+      "family": "wood",
+      "nativeBase": [
+        33682.368293229054,
+        34081.29892794594
+      ],
+      "nativeRadius": 31.955752387694464,
+      "projectedCenter": [
+        1197.9586651504903,
+        754.9352695425929
+      ],
+      "sourceAnchorErrorPx": 0.0,
+      "uniformScale": 0.12213740458015007,
+      "projectedHorizontalRadius": 31.999999999999318,
+      "assetEllipseVsTrueProjectedCircleSampleMaxNearestPx": 2.2409050004348314
+    },
+    {
+      "id": "flower-04",
+      "family": "flower",
+      "nativeBase": [
+        33007.71214527875,
+        34179.94341792299
+      ],
+      "nativeRadius": 43.29375429236969,
+      "projectedCenter": [
+        518.6618559351721,
+        808.1434312269298
+      ],
+      "sourceAnchorErrorPx": 0.0,
+      "uniformScale": 0.09788654060066405,
+      "projectedHorizontalRadius": 43.999999999998494,
+      "assetEllipseVsTrueProjectedCircleSampleMaxNearestPx": 0.9726872643136925
+    },
+    {
+      "id": "flower-05",
+      "family": "flower",
+      "nativeBase": [
+        33285.13357773812,
+        34221.24416829724
+      ],
+      "nativeRadius": 44.97914941694413,
+      "projectedCenter": [
+        800.7947958848813,
+        830.8948784451542
+      ],
+      "sourceAnchorErrorPx": 0.0,
+      "uniformScale": 0.10233592880979663,
+      "projectedHorizontalRadius": 46.00000000000358,
+      "assetEllipseVsTrueProjectedCircleSampleMaxNearestPx": 0.504474210174906
+    },
+    {
+      "id": "leaf-04",
+      "family": "leaf",
+      "nativeBase": [
+        33543.26285698555,
+        34199.3276024258
+      ],
+      "nativeRadius": 49.05332797153468,
+      "projectedCenter": [
+        1063.8066951463993,
+        818.7861737139783
+      ],
+      "sourceAnchorErrorPx": 0.0,
+      "uniformScale": 0.11404068971809984,
+      "projectedHorizontalRadius": 50.000000000003695,
+      "assetEllipseVsTrueProjectedCircleSampleMaxNearestPx": 1.6529840645241645
+    },
+    {
+      "id": "wood-06",
+      "family": "wood",
+      "nativeBase": [
+        32929.345639735395,
+        34434.13825301294
+      ],
+      "nativeRadius": 32.16911823781643,
+      "projectedCenter": [
+        425.7543464856103,
+        952.8575731768409
+      ],
+      "sourceAnchorErrorPx": 1.1368683772161603e-13,
+      "uniformScale": 0.12977099236642642,
+      "projectedHorizontalRadius": 34.00000000000372,
+      "assetEllipseVsTrueProjectedCircleSampleMaxNearestPx": 3.2822048089576352
+    },
+    {
+      "id": "leaf-05",
+      "family": "leaf",
+      "nativeBase": [
+        33114.54075536323,
+        34363.55781357324
+      ],
+      "nativeRadius": 48.788933318758126,
+      "projectedCenter": [
+        623.1299609208431,
+        911.5290359361815
+      ],
+      "sourceAnchorErrorPx": 0.0,
+      "uniformScale": 0.11632150351244792,
+      "projectedHorizontalRadius": 50.99999999999767,
+      "assetEllipseVsTrueProjectedCircleSampleMaxNearestPx": 0.8352093955923621
+    },
+    {
+      "id": "frog-05",
+      "family": "frog",
+      "nativeBase": [
+        33397.654005936,
+        34396.68997420478
+      ],
+      "nativeRadius": 49.4893903044378,
+      "projectedCenter": [
+        919.8401506536927,
+        930.8161351593445
+      ],
+      "sourceAnchorErrorPx": 0.0,
+      "uniformScale": 0.10206084396466723,
+      "projectedHorizontalRadius": 51.999999999997954,
+      "assetEllipseVsTrueProjectedCircleSampleMaxNearestPx": 7.355589075540893
+    },
+    {
+      "id": "flower-06",
+      "family": "flower",
+      "nativeBase": [
+        33609.94745653071,
+        34403.91194882328
+      ],
+      "nativeRadius": 45.630967034617505,
+      "projectedCenter": [
+        1143.3234245854387,
+        935.0467727705154
+      ],
+      "sourceAnchorErrorPx": 0.0,
+      "uniformScale": 0.10678531701890712,
+      "projectedHorizontalRadius": 47.99999999999875,
+      "assetEllipseVsTrueProjectedCircleSampleMaxNearestPx": 1.361651590552228
+    },
+    {
+      "id": "flower-07",
+      "family": "flower",
+      "nativeBase": [
+        33004.49724257842,
+        34601.47322043386
+      ],
+      "nativeRadius": 45.14213471002636,
+      "projectedCenter": [
+        498.00371409506613,
+        1054.603613001406
+      ],
+      "sourceAnchorErrorPx": 0.0,
+      "uniformScale": 0.10901001112346932,
+      "projectedHorizontalRadius": 48.99999999999946,
+      "assetEllipseVsTrueProjectedCircleSampleMaxNearestPx": 1.8038016038362976
+    },
+    {
+      "id": "wood-07",
+      "family": "wood",
+      "nativeBase": [
+        33189.08291747258,
+        34600.12791716486
+      ],
+      "nativeRadius": 32.25138350228438,
+      "projectedCenter": [
+        698.3799250102294,
+        1053.763706499332
+      ],
+      "sourceAnchorErrorPx": 1.1368683772161603e-13,
+      "uniformScale": 0.13358778625953938,
+      "projectedHorizontalRadius": 34.99999999999932,
+      "assetEllipseVsTrueProjectedCircleSampleMaxNearestPx": 3.8095157217468008
+    },
+    {
+      "id": "wood-08",
+      "family": "wood",
+      "nativeBase": [
+        33452.218349997915,
+        34598.53376751601
+      ],
+      "nativeRadius": 32.2596801779234,
+      "projectedCenter": [
+        983.8862472302754,
+        1052.7689109515238
+      ],
+      "sourceAnchorErrorPx": 0.0,
+      "uniformScale": 0.13358778625953546,
+      "projectedHorizontalRadius": 34.999999999998295,
+      "assetEllipseVsTrueProjectedCircleSampleMaxNearestPx": 3.835126615480962
+    }
+  ],
+  "maxAnchorErrorPx": 1.1368683772161603e-13,
+  "oneStaticShadowDrawLayerCovers25UniqueIds": true,
+  "sourceGeometryPathUnmasked": true,
+  "nativeStateAndPrngPreservedByViewToggles": true,
+  "liveTickEdit": {
+    "firstTick": 63,
+    "secondTick": 90,
+    "inputHeld": "95",
+    "seekPausedAt": 95
+  },
+  "apiReplayImportEqual": true,
+  "consoleWarningsOrErrors": [],
+  "saveReplayDownloadButtonTested": false,
+  "downloadOperationRetried": false,
+  "limitations": [
+    "Boundary and receiver art absent; surrounding scene unfinished.",
+    "Approximate master ellipses are not physical circles or replacement colliders.",
+    "Selected still frames do not constitute continuous-motion/art acceptance.",
+    "Save replay download remains unverified after the previously stopped operation."
+  ]
+}
