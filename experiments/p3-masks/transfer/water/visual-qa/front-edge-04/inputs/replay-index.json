@@ -1,0 +1,97 @@
+{
+  "board": "water",
+  "runs": [
+    {
+      "seed": 0,
+      "label": "Исходный seed",
+      "lastTick": 1326,
+      "result": {
+        "kind": "LOST",
+        "finalX": 32866.4825074,
+        "nearMissBucketIds": []
+      },
+      "path": "replays/water-seed-0-tick-1326.json"
+    },
+    {
+      "seed": 1,
+      "label": "Общий заранее заданный seed 1",
+      "lastTick": 1196,
+      "result": {
+        "kind": "LOST",
+        "finalX": 33728.1429454,
+        "nearMissBucketIds": []
+      },
+      "path": "replays/water-seed-1-tick-1196.json"
+    },
+    {
+      "seed": 2,
+      "label": "Общий заранее заданный seed 2",
+      "lastTick": 1275,
+      "result": {
+        "kind": "IN_BUCKET",
+        "bucketId": "receiver-02"
+      },
+      "path": "replays/water-seed-2-tick-1275.json"
+    },
+    {
+      "seed": 3675989190,
+      "label": "Обычный случайный запуск 1",
+      "lastTick": 934,
+      "result": {
+        "kind": "LOST",
+        "finalX": 33320.1117522,
+        "nearMissBucketIds": []
+      },
+      "path": "replays/water-seed-3675989190-tick-934.json"
+    },
+    {
+      "seed": 2939425288,
+      "label": "Обычный случайный запуск 2",
+      "lastTick": 984,
+      "result": {
+        "kind": "LOST",
+        "finalX": 32891.4204595,
+        "nearMissBucketIds": []
+      },
+      "path": "replays/water-seed-2939425288-tick-984.json"
+    }
+  ],
+  "frames": [
+    {
+      "seed": 1,
+      "tick": 1006,
+      "label": "arch-07: начало прохода у опоры",
+      "path": "replays/water-seed-1-tick-1006.json"
+    },
+    {
+      "seed": 1,
+      "tick": 1014,
+      "label": "arch-07: частичное перекрытие",
+      "path": "replays/water-seed-1-tick-1014.json"
+    },
+    {
+      "seed": 1,
+      "tick": 104,
+      "label": "frog-01: перед контактом",
+      "path": "replays/water-seed-1-tick-104.json"
+    },
+    {
+      "seed": 1,
+      "tick": 1020,
+      "label": "arch-07: перед новым front-edge threshold",
+      "path": "replays/water-seed-1-tick-1020.json"
+    },
+    {
+      "seed": 1,
+      "tick": 1021,
+      "label": "arch-07: новый front-edge threshold",
+      "path": "replays/water-seed-1-tick-1021.json"
+    },
+    {
+      "seed": 1,
+      "tick": 1022,
+      "label": "arch-07: после front-edge threshold",
+      "path": "replays/water-seed-1-tick-1022.json"
+    }
+  ]
+}
