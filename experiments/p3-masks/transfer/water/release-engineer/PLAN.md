@@ -1,3 +1,5 @@
+**Исторический per-board шаблон1cf782e. Заменён одним [combined intent](COMBINED_INTENT.md); не использовать как отдельный release/token request.**
+
 # P3 transfer — водная доска: локальный release plan
 
 29 октября 2026, Europe/Kyiv. Release Engineer `release-engineer-r4d-p3-masks-01`.

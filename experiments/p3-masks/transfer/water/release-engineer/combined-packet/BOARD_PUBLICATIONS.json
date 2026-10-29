@@ -1,0 +1,128 @@
+{
+  "water": {
+    "candidate": "water-front-edge-04",
+    "bundle": "E:\\R4D\\perspective\\p3-runtime\\builder\\transfer-water-dark\\water\\front-edge-04",
+    "source": "5196c0bd4981992c4e3d9678438aed1aa1c0d84c",
+    "art": "5c9ba8c640b344094e0ada7c4ed6c9ec076550e5",
+    "assetsSha256": "4a5bc16f69146fe26a3e3893fcf3c1c8e5b943400bc65d5215cb41d58efeece6",
+    "manifestSha256": "de1344afcb197115b76cb4006ead3d96e7b2581a1a299df1100d7a552d2ce2c6",
+    "manifestBytes": 17208,
+    "payloadFiles": 100,
+    "payloadBytes": 3561039,
+    "totalFiles": 101,
+    "totalBytes": 3578247,
+    "prefix": "review/r4d/p3-masks-water/",
+    "verdict": "Technical PASS / Visual PARTIAL; W-EARLY-POP locally closed; W-DIVIDER-01 OPEN coverage + planeCollapse limitation",
+    "qa": [
+      {
+        "commit": "c48236803b18ff2f15e7bead312dc5c0f8966e18",
+        "path": "experiments/p3-masks/transfer/water/technical-qa/reports/water-front-edge-04.md",
+        "bytes": 15627,
+        "sha256": "0d915fd8f986a938972bfea3f1a2952c1f9e7b0ab9c3f3d2cdbd389b2ae9d0be"
+      },
+      {
+        "commit": "42dacf338ba75071269cae1ecb6072e1dabf03be",
+        "path": "experiments/p3-masks/transfer/water/visual-qa/front-edge-04/REPORT.md",
+        "bytes": 27177,
+        "sha256": "b76f1e46bdbd745c4140da358ac1deb8f2abe1c8cbfab3e2bdcc545610ca80da"
+      }
+    ],
+    "publicUrl": "https://superflight.space/review/r4d/p3-masks-water/",
+    "leadResult": {
+      "commit": "71a4f50eb0d74562d9e5e5129c5535495cdae055",
+      "path": "experiments/p3-masks/transfer/water/lead/RESULT.md",
+      "bytes": 8898,
+      "sha256": "5050de8cc22b63bda148c3a5eab3c57042b4988b53e56efb1d57b9564d078e6a",
+      "label": "CTO accepted bounded Review; public PARTIAL"
+    },
+    "leadState": {
+      "commit": "71a4f50eb0d74562d9e5e5129c5535495cdae055",
+      "path": "experiments/p3-masks/transfer/water/lead/STATE.md",
+      "bytes": 9116,
+      "sha256": "99fac4af20d912fe5e5c28b9f276694f985750a5942af11d7301094620161c66",
+      "label": "Current combined handoff"
+    },
+    "preservedFirstApplication": {
+      "candidate": "water-full-method-03",
+      "source": "c73d6128970b2b022d5313b08c34cafdec9a1bc3",
+      "art": "17dc9fcdc261562acb581dd8590096819734c807",
+      "manifestSha256": "b3c697675ecd76af7848fa72367f943c1b9e4a27b325b098a9fef08135fe58d3",
+      "preserved": true
+    },
+    "rendererUnchangedComparison": "Current04 versus preserved transfer FULL03; not a claim of Jungle app byte identity",
+    "recipeChanged": true,
+    "depthRecipeChange": "Depth recipe changed: near/front support-edge midpoints instead of object centres;24 arch records; original full-method-03 preserved.",
+    "rendererSha256": "760c9bada40cb3ecb944f332f6efa91bb3c1340ce7f1ad9c2cabeda4dca0a3e6",
+    "compiledNativeSha256": "af8e6dea9ee5c46759f99ba3b68f4afa91c740b4fd2aba2d2d3f65bfa66753fa",
+    "dividerTriage": {
+      "commit": "cb8e8691ead826af21a2a4de93fb8dbb5ef07345",
+      "path": "experiments/p3-masks/transfer/water/asset-artist/W-DIVIDER-01_TRIAGE.md",
+      "bytes": 9904,
+      "sha256": "a8d42825ac13427708c238ca067d0629a5e1d8ef6c30df709bbf1a94284f90e7",
+      "label": "OPEN coverage+planeCollapse; not external blocker or uniquely physics fault"
+    }
+  },
+  "dark": {
+    "candidate": "dark-receiver-front-edge-04",
+    "bundle": "E:\\R4D\\perspective\\p3-runtime\\builder\\transfer-water-dark\\dark\\receiver-front-edge-04",
+    "source": "d7eac5d7d76127e3138480f1f16eaf28aac0f15a",
+    "art": "e5d3e1f44c112e483ff2a23fbd169cb119390865",
+    "assetsSha256": "2b02dcde6c07266b67285700040e4ae0342f06fb760ae6ed0cf1fdcdc9b6cbad",
+    "manifestSha256": "d180e5a63bb1dec7c510507fc2ce990e7cb10927b337a19c4bb9effc67e4ed1b",
+    "manifestBytes": 15737,
+    "payloadFiles": 92,
+    "payloadBytes": 3494340,
+    "totalFiles": 93,
+    "totalBytes": 3510077,
+    "prefix": "review/r4d/p3-masks-dark/",
+    "verdict": "Targeted Technical PASS / overall Visual PARTIAL; D-POP locally closed; coverage/shadow limitations",
+    "qa": [
+      {
+        "commit": "18e880e117f30747c4d938b1f94cf3622f20fdc0",
+        "path": "experiments/p3-masks/transfer/dark/technical-qa/targeted-receiver-front04/REPORT.md",
+        "bytes": 12593,
+        "sha256": "d1e67e42586ceb706013a993dbd303e1dda72885f3d5d82732a791f4bc75d791"
+      },
+      {
+        "commit": "bc34a864bc44cba231d466daa46bdc7b02651845",
+        "path": "experiments/p3-masks/transfer/dark/visual-qa/receiver-front-edge-04/REPORT.md",
+        "bytes": 19630,
+        "sha256": "d1ea7ae3d7e2a7026a557b5851dd6d5e7f1172298bcfe90c117e6025c1f61fc2"
+      }
+    ],
+    "publicUrl": "https://superflight.space/review/r4d/p3-masks-dark/",
+    "leadResult": {
+      "commit": "71a4f50eb0d74562d9e5e5129c5535495cdae055",
+      "path": "experiments/p3-masks/transfer/dark/lead/RESULT.md",
+      "bytes": 8568,
+      "sha256": "3c8830a44ed913ed02f43d6c83d4399a38bc4a558ae9afc6249df02de7171a92",
+      "label": "CTO accepted bounded Review; public PARTIAL"
+    },
+    "leadState": {
+      "commit": "71a4f50eb0d74562d9e5e5129c5535495cdae055",
+      "path": "experiments/p3-masks/transfer/dark/lead/STATE.md",
+      "bytes": 10288,
+      "sha256": "68360e27a340b1c05ff139765cb19bec2be54e05af55e50488218a96b6cce4aa",
+      "label": "Current combined handoff"
+    },
+    "preservedFirstApplication": {
+      "candidate": "dark-full-method-03",
+      "source": "c73d6128970b2b022d5313b08c34cafdec9a1bc3",
+      "art": "17dc9fcdc261562acb581dd8590096819734c807",
+      "manifestSha256": "b3923f4ccab57a8361a9dc8f64de73fcee9b70fb38c87aac5e9623fbc62d0307",
+      "preserved": true
+    },
+    "rendererUnchangedComparison": "Current04 versus preserved transfer FULL03; not a claim of Jungle app byte identity",
+    "recipeChanged": true,
+    "depthRecipeChange": "Depth recipe changed: lower common front support instead of upper inner rim;12 receiver lines; original full-method-03 and prior full TQA preserved.",
+    "rendererSha256": "760c9bada40cb3ecb944f332f6efa91bb3c1340ce7f1ad9c2cabeda4dca0a3e6",
+    "compiledNativeSha256": "af8e6dea9ee5c46759f99ba3b68f4afa91c740b4fd2aba2d2d3f65bfa66753fa",
+    "priorFullTechnicalQa": {
+      "commit": "b327ae601a4962dd5826abfbfdeefaf77c090a55",
+      "path": "experiments/p3-masks/transfer/dark/technical-qa/reports/dark-full-method-03.md",
+      "bytes": 14168,
+      "sha256": "d481ab1d821d52b548b386210cc33efd3aadf1ad821528cd277651ea27657159",
+      "label": "PREVIOUSLY PERFORMED on03, not repeated/new full QA on04"
+    }
+  }
+}
