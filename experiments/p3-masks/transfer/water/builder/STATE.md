@@ -1,6 +1,92 @@
 # Water P3 — Builder
 
-## Текущий checkpoint — FULL_FIRST_METHOD_PRESERVED / TARGETED_DATA_REPAIR_PENDING
+## Текущий checkpoint — WATER_FRONT_EDGE_04_FROZEN_FOR_BOTH_INDEPENDENT_QA
+
+Lead прямо изменил порядок: оформить full frozen candidate сейчас; VQA начнёт
+полный Water-проход со сравнительного retest старых1014–1016 и новых1020–1022,
+затем остальная матрица на ТЕХ ЖЕ bytes. Dark QA не прерывается.
+Имя water-front-edge-04, immutable bundle front-edge-04 ниже. Никакой новой
+сборки/перепаковки после freeze не было. При seal все100 файлов ещё раз
+побайтно сверены с существующим manifest; hash/size/counts ниже неизменны.
+Freeze record вне payload:
+E:\R4D\perspective\p3-runtime\builder\transfer-water-dark\water\candidates\water-front-edge-04.freeze.json.
+
+W-EARLY-POP-01 ОТКРЫТ до независимого comparative retest, а не закрыт selfcheck.
+Формальная исходная VQA:26295340cafa78ea8bffe09e8005badda220d731,
+experiments/p3-masks/transfer/water/visual-qa/early-art-02/REPORT.md.
+Нового установленного существенного selfcheck-дефекта для front-edge-04 нет.
+Это кандидат для TQA/VQA, не full artistic/method PASS. Все first-method/early
+результаты и плохие runs сохранены. Source/ART/native/P1/provenance ниже.
+
+Оба preview держать на named frozen bytes до явного завершения QA чтения:
+Water6868 PID29572/session61378; Dark6869 PID37660/session87426.
+Собственные браузерные вкладки после handoff закрываются; серверы остаются.
+Новых продуктовых задач и server/release действий не начинать. server_write=false.
+
+## Проверенная сборка и selfcheck — FRONT_EDGE_04
+
+Source5196c0bd4981992c4e3d9678438aed1aa1c0d84c,
+ART5c9ba8c640b344094e0ada7c4ed6c9ec076550e5, exact selected prefix
+experiments/p3-masks/transfer/water/asset-artist/variants/arch-front-edge-01/.
+assets.json SHA2564a5bc16f69146fe26a3e3893fcf3c1c8e5b943400bc65d5215cb41d58efeece6.
+Все74 raw consumer bytes проверены против Git/hashes/extracted packet;
+внешний Artist manifest7f260deb...3454 также совпал. Все73 PNG, ball/shadow
+параметры и остальные47 occluders побайтно/структурно прежние; только24 arch
+depth records изменены. Правило — midpoint near/front edge принятой feet.
+Renderer app.js SHA760c9bada40cb3ecb944f332f6efa91bb3c1340ce7f1ad9c2cabeda4dca0a3e6
+не изменился, как и native/config/source/projection. Tooling только явно
+выбирает named variant и сохраняет фактический prefix/variant в provenance.
+
+Named immutable retest bundle:
+E:\R4D\perspective\p3-runtime\builder\transfer-water-dark\water\front-edge-04.
+100 payload files/3561039 bytes; file-manifest.json SHA256
+de1344afcb197115b76cb4006ead3d96e7b2581a1a299df1100d7a552d2ce2c6.
+Owned URL http://127.0.0.1:6868/review/r4d/p3-masks-water/,
+PID29572 / exec session61378. Early02 процесс17640 остановлен только после
+command/root/port proof и явного снятия Lead read hold; старые bytes не тронуты.
+Dark6869 остаётся frozen full-method-03; не переключать его.
+
+Все100 local/HTTP bytes/size/MIME и exact native replay пяти seeds проходят.
+Ordinary browser seed1 вновь прошёл от старта до LOST1196. Сохранены34 actual
+Pixi full screenshots seed1/1006–1022 при100% и200%, с видимыми seed/tick и
+variant source; raw capture-log в water/evidence/browser-front04/.
+Ключевые1014–1016 и1020–1022 просмотрены: прежнего скачка1014→1015 и заметного
+скачка на новом1021 selfcheck не выявил. Это ограниченное наблюдение, НЕ VQA PASS.
+Read-only source-alpha estimate на всех1197 настоящих native states нашёл
+единственную смену arch07 predicate на1021, residual sphere overlap0.000017
+доли (~0.0017%). Это лишь численный контроль переноса threshold, не Pixi-proof.
+Его воспроизводимый script/data — water/evidence/depth-scan/. Никаких PNG edits.
+
+Дополнительный bounded selfcheck завершён. Все пять заранее объявленных seeds
+реально завершились в browser:0 LOST1326,1 LOST1196,2 receiver02/1275,
+3675989190 LOST934,2939425288 LOST984. Ни один плохой исход не отброшен.
+Полный downloaded browser checkpoint seed3675989190/t934 структурно совпал
+с native replay вплоть до config/rng/state; evidence large-seed-browser-replay-check.json.
+Actual соседние кадры: seed0 pillar05/469,pillar03/585,arch04/697,frog05/996,
+right4/1038,near-divider3/1122,arch08/1147; seed2 arch03 right-foot350/685,
+left-foot893,near-divider1/1082,arch07/1105,left5/1165 и receiver02/1275.
+По каждому contact сохранены соседние ±1, нижний receiver кадр не обрезан.
+Также frog01/104–106, отдельный uint32 seed2939425288/left3/701–703.
+Art-off/geometry/source/flat сохраняют seed0/t106. Own native import1021
+показал точное воспроизведение. Actual Dark JSON отвергнут с сохранением
+Water seed2939425288/t703; после этого own1021 import очистил ожидаемую ошибку.
+Это bounded coverage; все71 masks со всех сторон и все четыре receiver в
+движении не заявлены проверенными. Общая2D плоскость/высота исходника не менялась.
+
+Отдельный retest record: собственный runtime water/candidates/front-edge-04.retest.json.
+Manifest17208 bytes;100 payload/3561039 bytes, всего101 files/3578247 bytes.
+Owner command/root/listener logs — evidence/browser-front04/preview-ownership.json;
+10:48:42Z PID29572/127.0.0.1:6868. Совокупный собственный transfer runtime тогда
+Water31.18MiB/Dark12.04MiB. Renderer/native/source/inputs всё ещё прежние.
+
+Следующее по актуальному решению Lead: обе independent full QA, с comparative
+retest первым шагом VQA Water; отдельная тень/новый threshold остаются в scope.
+Selfcheck не подменяет независимый вердикт. Frozen bytes/preview удерживать.
+Первый полный original17dc и early02 сохранены. Новый sort/physics отсутствует.
+Snapshot перед сборкой10:33:44Z: RAMfree16.087GiB, CPU12%,
+C16.209/D16.277/E11.871GiB. server_write=false.
+
+## История — FULL_FIRST_METHOD_PRESERVED / TARGETED_DATA_REPAIR_PENDING
 
 Первое полное применение исходного метода сохранено отдельно:
 E:\R4D\perspective\p3-runtime\builder\transfer-water-dark\water\full-method-03.

@@ -12,8 +12,10 @@ native5ms/replay/checkpoint/ticks, independent Art/Geometry, source/flat/pan.
 
 1. Exact inputs извлечены prepare.mjs, их SHA совпали с accepted P1.
 2. Artist публикует board-specific assets.json + PNG с прежним v1 contract.
-3. `node import-artist.mjs <exact-commit>` создаёт отдельный own E snapshot;
-   перед build проверяются raw hashes Artist. Source commit закрепляется.
+3. `node import-artist.mjs <exact-commit> [variantName]` создаёт отдельный own E snapshot;
+   перед build проверяются raw hashes Artist. Source commit и фактический variant
+   prefix закрепляются. arch-front-edge-01 выбирает self-contained variant,
+   не подменяя original assets.json. Меняются только24 depth records арок.
 4. Process-local TEMP/TMP — own runtime water/temp; P3_ARTIST_ASSETS —
    путь exact Water snapshot. После fresh RAM/CPU/C/D/E выполнить
    `node build.mjs <new-absolute-water-runtime-directory>`.
@@ -29,6 +31,12 @@ native5ms/replay/checkpoint/ticks, independent Art/Geometry, source/flat/pan.
 фиксируются раздельно до смены метода. Первый полный71-mask ART17dc сохранён
 как full-method-03/source c73d612 до targeted data-коррекции. VQA ранних7 masks
 подтвердила binary depth скачок arch07/1014–1015; old full не выдан за PASS.
-Следующая обычная anchor-коррекция — отдельный named вариант, без нового sort.
+Обычная anchor-коррекция5c9ba8c6/variants/arch-front-edge-01 применена отдельно
+в front-edge-04/source5196c0bd. App/native/PNG/input не менялись. Все24 depth
+records независимо сверены с передними рёбрами16 accepted feet, без seed/tick.
+Сохранены actual1006–1022 при100%/200% и все5 ordinary browser outcomes.
+Lead назначил full freeze тех же100 payload files до independent retest:
+VQA начинает с прежнего/нового threshold, затем full matrix на тех же bytes.
+W-EARLY-POP-01 открыт до независимой проверки; selfcheck не закрывает finding.
 Exact bundle/manifest/evidence в STATE.md. Серверная публикация только отдельным
 Release по новому exact token CTO; текущий server_write=false.
