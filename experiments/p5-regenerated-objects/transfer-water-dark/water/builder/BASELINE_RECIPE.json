@@ -38,5 +38,32 @@
     }
   ],
   "tokenGranted": false,
-  "serverWrites": 0
+  "serverWrites": 0,
+  "sourceCodePinCommit": "62c58d0c6a5a8c6c51d83084158c65721000b19e",
+  "sourceCodePinsMeaning": "First scaffold snapshot retained; ordinary corrections listed separately",
+  "firstFrozenBaseline": {
+    "id": "w01",
+    "consumerCommit": "41349b8d8ae61ceb69e288301af7c080e2b006b5",
+    "fileIndexSha256": "b65666c1c942d71763115f05744358ef45463f0fa528a4da0e9f0b8b3d912c4e"
+  },
+  "ordinaryCorrections": [
+    {
+      "finding": "W01-V01",
+      "kind": "framing",
+      "description": "Include authored alpha>0 ball silhouette at accepted drop in fixed Field domain",
+      "methodChanged": false,
+      "sourceFiles": [
+        {
+          "path": "src/app.mjs",
+          "bytes": 12840,
+          "sha256": "dcc391a0aa65d09cc27dcefff62f92cad28ffea0269f7dc2842c1d898deeef34"
+        },
+        {
+          "path": "src/framing.mjs",
+          "bytes": 1331,
+          "sha256": "34eacade52288aa5def0504271ad2573f6b55dc0bdec267c19d43a18981bcad5"
+        }
+      ]
+    }
+  ]
 }
