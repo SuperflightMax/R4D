@@ -25,11 +25,33 @@ rect/alpha/ball/shadow/renderercode/P1/native/JPG сохранить. Нетseed
 Если без существенного нового метода data-only решение не обосновано — вернуть
 численный/source разбор и честноеограничение; сериювариантов/renderer не начинать.
 Исходный frozen03/всеreports/rawbytes сохранены;6869 пока на03 для возможного A/B.
-Artist выводит общую front support depthline из уже сохранённого нижнего
-ребра фасада вместо верхнейinnerкромки;12receiverdepth records,62PNG exact
-по его проверке. ЕгоPNG/source calculation даёт69.69%overlap2011→58.15%2012→
-0%с2018, newballthreshold2046/shadow2045 при уже нулевомпересечении. Это
-численное обоснование, НЕ actualbrowser/visualPASS. Commit/handoff ожидаются.
+ART variant готов: `e5d3e1f44c112e483ff2a23fbd169cb119390865`, prefix
+`experiments/p3-masks/transfer/dark/asset-artist/variants/receiver-front-edge-01/`.
+[README](../asset-artist/variants/receiver-front-edge-01/README.md) полностью
+прочитан Lead. Assets.json 18591 bytes, SHA256
+`2b02dcde6c07266b67285700040e4ae0342f06fb760ae6ed0cf1fdcdc9b6cbad`.
+76-file frozen packet: `E:\R4D\perspective\p3-runtime\asset-artist\transfer-water-dark\dark\handoff-e5d3e1f44c11`,
+external manifest SHA256
+`f5036ba0863766eb0ba00d47f383a910355b526d51d7ec20bc77ecfbd042c5f7`
+независимо совпал у Lead. Его direct Git сравнение отдельно подтвердило:
+меняются только 12 depthLineNative records, все 48 остальных records,
+62 PNG и top-level metadata/ball/shadow/rect полностью одинаковы с17dc.
+
+Правило: в сохранённом front-полигоне выбрать ребро с максимальным средним
+native Y через accepted sourceToNative; это нижняя опора фасада, edge11→12.
+Её общая линия назначена front/left-rim/right-rim всех четырёх приёмников.
+Численный расчёт:69.69% overlap2011→58.15%2012→0%с2018;
+newballthreshold2046/shadow2045. Это НЕ actualbrowser/visualPASS.
+
+Builder после fresh idle/completed/errornull cleanup-turn01a1877e получил
+конкретный handoff на ОДИН новый `dark-receiver-front-edge-04` в собственном
+`dark/receiver-front-edge-04`, runtime6.1-sol/xhigh. Новый free owned loopback
+URL/PID/session ещё ожидаются; OLD Dark6869 остаётся на03 для короткого A/B,
+Water6868 сохраняет свой frozen04. Native compiled af8/P1/JPG/renderer не менять,
+62 PNG/48 records сверить;_SOURCE commit допускается только для thin selector.
+Selfcheck: старые 5 predeclared +3 VQA ordinary, actual2010–2019/2044–2047,
+receiver01/02/03 entries и04corner, JSON/controls/negative/replay. Затем freeze
+и точный handoff обеим независимым QA; VQA последовательно после Water report.
 Новый frozen candidate ещё не выдан; TQA/VQA03 не проверяют futurevariant.
 
 Dark TQA report `b327ae601a4962dd5826abfbfdeefaf77c090a55` полностью прочитан
