@@ -59,7 +59,15 @@ Release gate закрыт: серверные writes сейчас 0. После 
 
 Первый материальный результат — [CHECKPOINT_C01.md](CHECKPOINT_C01.md), commit `4eeac03`. Пять actual initial send receipts и новые Stage 2 turns — [DISPATCH.json](DISPATCH.json), commit `a1ca011`. Каждый специалист получил одно первоначальное поручение; дальнейшие сообщения передают интерфейсы и коррекции внутри него. Production начался. Release/server writes = 0.
 
-### Готово и закреплено
+### Сейчас проверяется c02
+
+Producer freeze успешно завершён до capacity-сбоя его модели. Consumer `398b0daaaad914cc67b8390a51454d21db524e7a`, frozen root `E:/R4D/perspective/p5-runtime/builder/output/previews/c02/public`; index рядом, 10707 bytes, SHA256 `f40040bb40d529b7bf1f289e661d69f7f882fddfc962e40cdc5616a59c9d9389`. Inventory: 29 файлов / 21668434 bytes; app SHA256 `4a003dd39212f21b7a3dd1baa82c0d0738af3a9767c6e51225b9b54f5aac325c`, staged manifest SHA256 `275ade538d30119434723339487cf7d036a35bbbefe4ad6807f4dd810a6e4491`. Canonical input/native/Artist/deps pins — в producer index, не в пересказе чата.
+
+Actual c02 preview: `http://127.0.0.1:55185/`, Builder PID21340/session26545/root c02; current `preview-owner.json` проверен read-only. Старые preview ownership ниже относятся к c01. Builder turn `01a1850a-3773-7a32-abd8-4dfee77bc2c8` возобновлён с того же checkpoint: предыдущий ход failed с `Selected model is at capacity. Please try a different model.` Настройки не менялись; build/freeze/replay не повторяли. Остались docs/commit/push handoff и owner pins. C02 сам не переписывать ради отчёта.
+
+После fresh idle/no-duplicate проверки обе independent QA получили этот exact c02: TQA turn `01a1850e-9c56-7273-8446-f6dccd169cca`, VQA turn `01a1850e-9d8b-78d1-a3bc-7a34ef83ae0b`. Проверяют новый полный набор, receiver/clip/Field дельты и ранее unverified side/occlusion сценарии. VQA уже подтвердил 29 файлов и HTTP identity/ownership; художественного/общего PASS ещё нет. Показан producer кадр `evidence/c02-browser/seed1696420279-t875-field-art.jpg`, 144552 bytes, SHA256 `611985f45a233a72bc9e1c0f1e2aa726680bdf376171be98a0e8119eb3eb2f1a`; это self-check, не независимая VQA.
+
+### Сохранённые результаты c01
 
 | Область | Точная версия и результат |
 |---|---|
@@ -72,7 +80,7 @@ Release gate закрыт: серверные writes сейчас 0. После 
 
 Coverage c01: 4/25 pins, 1/4 receivers, 10 textures / 13 instances, свой ball/shadow и generated floor в actual Pixi/native. Native/source anchors, config и projection неизменны; масштаб равномерный, XY warp нет. Остальные colliders сохранены, отсутствие их арта явно обозначено.
 
-Обе QA завершили и закрыли собственные вкладки. Preview `http://127.0.0.1:55185/`, Builder PID32108/session55195 обслуживает immutable c01. C01 и mini01 не перезаписывать. Старый own PID22076 был штатно остановлен после ownership проверки; exit1 не сопровождался runtime error/denial. Новый preview требует своего root/pins и fresh ownership/free-port проверки.
+Обе QA c01 завершили и закрыли собственные вкладки. Исторический preview имел Builder PID32108/session55195; после их завершения Builder заменил только собственный listener для c02. C01 и mini01 не перезаписывать. Старый own PID22076 был штатно остановлен после ownership проверки; exit1 не сопровождался runtime error/denial. Новый preview требует своего root/pins и fresh ownership/free-port проверки.
 
 Evidence TQA: `E:/R4D/perspective/p5-runtime/technical-qa/c01/`, index SHA256 `b34472b1c85021f73f24f432cb856a2e7ea29df40e3adae99a7eaf01b1edaf85`. Evidence VQA: `E:/R4D/perspective/p5-runtime/visual-qa/evidence/c01/`; Git `EVIDENCE_C01.json` рядом с отчётом, 29521 bytes, SHA256 `9523761e4e36277ca6f559a0b2a532cef7c7eee4932c18069d6d2b719977dd5e`. Raw и active C imagegen refs сохранены Artist.
 
@@ -80,7 +88,7 @@ Evidence TQA: `E:/R4D/perspective/p5-runtime/technical-qa/c01/`, index SHA256 `b
 
 | ID | Факт и граница уверенности | Владелец и следующий шаг |
 |---|---|---|
-| A01: ракурс и полнота | Первые masters ближе к переднему ракурсу. Far/mid variants и оставшиеся 21 pin / 3 receivers ещё не переданы. Не все генерации выдерживают измеренную глубину; название far не означает PASS | Artist готовит отдельный mini02/full set с P0 geometry guide как референсом, сохраняет генерации, отбор и остаточные ошибки. Готовые примитивы не становятся артом |
+| A01: ракурс и полнота | Mini02 передан и собран в c02: 25/25 pins, 4/4 receivers, max depth residual 3.295859 source px; selected far/mid/near variants. Название far и числа не означают PASS | Artist сохранил генерации/отбор/остаточные ошибки; теперь TQA/VQA проверяют реальную полную сцену. P0 geometry guides остались референсами, не финальным артом |
 | A04 / C01-V01 / F-C01-01: приёмник | Обе actual QA: seed1696420279, 874→875 — native IN_BUCKET, sphere у дальнего rim и остаётся там после terminal. Ground source ≈(380.921,1221.626), receiver center ≈(358.559,1238.210); native distance30.398 < r33.524. Visible sphere center ≈17.7 source px выше ground из-за bottom anchor. Точная aperture ещё не измерена, P1 bug не доказан | Artist измеряет true aperture, authored anchor и front/back. Builder подтвердил back < ball < front, но visible alpha bounds почти не пересекаются: одной сортировки недостаточно. Согласовать арт и sphere-height policy по измерениям. Native/source targets, r16 и physics не менять; measurement-based исправление texture-local anchor допускается с provenance. Не маскировать один case исчезновением или ложным terminal |
 | A03: foreground | Две native-edit пробы сдвинули слой относительно generated floor; rejected сохранены | Принят явный scene clip из того же generated floor. Contract/schema/example опубликованы в `8bf447629ec78a1ccb088b4ba7a784746e0aca83:experiments/p5-regenerated-objects/builder/contracts/GENERATED_FLOOR_CLIP.md`. Artist передаёт production polygon в source1536, parent, exact floor SHA и ограничения; Builder реализует минимальный renderer. Art off выключает mask, Geometry выше. Следующий candidate требует actual QA |
 | C01-V02: Field framing | Field обрезает готовый receiver01; Whole позволяет просмотр. Это рекомендация просмотру, отдельно от обязательного visible entry | Builder source fix включает нужные rendered receiver bounds, исключает полный floor canvas. На mini01 нижняя граница расширена с1286.912 до1426.500 source px; Art/Geometry используют одинаковые bounds. Actual проверка — на следующем candidate |
