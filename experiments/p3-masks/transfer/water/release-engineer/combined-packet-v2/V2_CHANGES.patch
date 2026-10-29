@@ -1,0 +1,17 @@
+--- combined_remote.py
++++ combined_remote_v2.py
+@@ -2 +2,2 @@
+-import datetime,hashlib,http.client,json,os,re,shutil,stat,subprocess,tarfile
++import datetime,hashlib,json,os,re,shutil,stat,subprocess,tarfile
++import http.client as http_client
+@@ -80 +81 @@
+-        c=http.client.HTTPSConnection(s['publicHost'],timeout=25)
++        c=http_client.HTTPSConnection(s['publicHost'],timeout=25)
+--- combined_execute.py
++++ combined_execute_v2.py
+@@ -39 +39 @@
+-    remote=(CONTROL/'combined_remote.py').read_bytes()
++    remote=(CONTROL/'combined_remote_v2.py').read_bytes()
+@@ -50 +50 @@
+-    execution=RUNTIME/'execution';execution.mkdir(parents=True,exist_ok=True)
++    execution=RUNTIME/'execution-v2';execution.mkdir(parents=True,exist_ok=True)

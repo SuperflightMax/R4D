@@ -1,3 +1,9 @@
+Current local successor v2: [COMBINED_INTENT_V2.md](COMBINED_INTENT_V2.md).
+**WAIT_V2_REVIEW_EXACT_CTO_TOKEN; server_write=false; token=null.**
+Offline actual-helper regression PASS; no remote v2 execution. V1 stop below сохранён.
+
+---
+
 # P3 Water + Dark — execution checkpoint
 
 29 октября 2026. **STOP_PREFLIGHT_SCRIPT_ERROR; server writes performed=false.**

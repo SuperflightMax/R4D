@@ -1,0 +1,103 @@
+{
+  "status": "PASS",
+  "utc": "2026-10-29T14:39:16.822169+00:00",
+  "test": "AST-extracted actual nested HTTP helper / offline HTTPSConnection stub",
+  "networkUsed": false,
+  "sshUsed": false,
+  "remotePhaseRun": false,
+  "v1": {
+    "sourceSha256": "e47debc4bd1892728d114550b08c3415886abf06f10a50b797c79a5a8b15512f",
+    "expectedFailureReproduced": true,
+    "stubConnections": 0,
+    "exceptionType": "AttributeError",
+    "reason": "'function' object has no attribute 'client'"
+  },
+  "v2": {
+    "sourceSha256": "8dc3a6a933a0a95dc627d7352772d54cc0f64afc0d91a6ff603d5f209b559ec8",
+    "launcherSha256": "630c8b26a4b1eda85353d6dc66751fa9e0eee3ff8bce2b50957d224c5de13667",
+    "syntaxPass": true,
+    "exactMinimalDiffPass": true,
+    "stubConnections": 3,
+    "cases": [
+      {
+        "path": "/review/",
+        "foreignOrigin": false,
+        "status": 303,
+        "requestHeaders": {
+          "User-Agent": "R4D-P3-combined-delivery/1"
+        },
+        "responseHeaderKeys": [
+          "Location",
+          "X-Frame-Options",
+          "Cache-Control",
+          "X-Robots-Tag",
+          "X-Content-Type-Options",
+          "Referrer-Policy",
+          "Content-Type"
+        ],
+        "bodyRead": true,
+        "connectionClosed": true,
+        "events": [
+          "connect",
+          "request",
+          "getresponse",
+          "read",
+          "close"
+        ]
+      },
+      {
+        "path": "/review/",
+        "foreignOrigin": true,
+        "status": 403,
+        "requestHeaders": {
+          "User-Agent": "R4D-P3-combined-delivery/1",
+          "Origin": "https://example.invalid"
+        },
+        "responseHeaderKeys": [
+          "Location",
+          "X-Frame-Options",
+          "Cache-Control",
+          "X-Robots-Tag",
+          "X-Content-Type-Options",
+          "Referrer-Policy",
+          "Content-Type"
+        ],
+        "bodyRead": true,
+        "connectionClosed": true,
+        "events": [
+          "connect",
+          "request",
+          "getresponse",
+          "read",
+          "close"
+        ]
+      },
+      {
+        "path": "/review/.p3-combined-probe",
+        "foreignOrigin": false,
+        "status": 404,
+        "requestHeaders": {
+          "User-Agent": "R4D-P3-combined-delivery/1"
+        },
+        "responseHeaderKeys": [
+          "Location",
+          "X-Frame-Options",
+          "Cache-Control",
+          "X-Robots-Tag",
+          "X-Content-Type-Options",
+          "Referrer-Policy",
+          "Content-Type"
+        ],
+        "bodyRead": true,
+        "connectionClosed": true,
+        "events": [
+          "connect",
+          "request",
+          "getresponse",
+          "read",
+          "close"
+        ]
+      }
+    ]
+  }
+}

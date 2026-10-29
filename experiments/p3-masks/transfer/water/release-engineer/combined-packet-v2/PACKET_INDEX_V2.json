@@ -1,0 +1,81 @@
+{
+  "status": "WAIT_V2_REVIEW_EXACT_CTO_TOKEN",
+  "serverWrite": false,
+  "token": null,
+  "releaseId": "p3-water-dark-front-edge-04",
+  "v1SourceCommit": "fdac2e9ba909a034a4ad176d11a438a04dc78ccc",
+  "v1StopCheckpointCommit": "0efbba7f4e1d71c04dead81d205fcbc19967d2fd",
+  "canonicalIntent": "COMBINED_INTENT_V2.md",
+  "writeScript": "combined_remote_v2.py",
+  "writeScriptSha256": "8dc3a6a933a0a95dc627d7352772d54cc0f64afc0d91a6ff603d5f209b559ec8",
+  "launcher": "combined_execute_v2.py",
+  "launcherSha256": "630c8b26a4b1eda85353d6dc66751fa9e0eee3ff8bce2b50957d224c5de13667",
+  "executionDirectory": "E:\\R4D\\perspective\\p3-runtime\\release-engineer\\transfer-water-dark\\combined\\water-dark-front-edge-04\\execution-v2",
+  "executionDirectoryExists": false,
+  "remotePhasesRun": [],
+  "v2RemoteCalls": 0,
+  "newAuthorizationFileCreated": false,
+  "historicalTokenClosedAtUtc": "2026-10-29T14:36:01Z",
+  "historicalTokenReuseForbidden": true,
+  "windowOwner": "cto-r4d-perspective-01",
+  "windowState": "RESERVED_P3",
+  "immutableBindings": {
+    "v1CanonicalIntentSha256": "1a389f43d8af15a59863fab80cfdef6be75b2babe9da492e0108ec862f54cd40",
+    "v1PacketIndexSha256": "ae0b1054d192d05d78c91579239c942ded90682df8777ef6bf166ad0df782ecd",
+    "scopeSha256": "aff5355dcb376ab1edef8d45455c391bb5b1099f77a7ee07240f6efe11097959",
+    "archive": {
+      "path": "E:\\R4D\\perspective\\p3-runtime\\release-engineer\\transfer-water-dark\\combined\\water-dark-front-edge-04\\p3-water-dark-front-edge-04-overlay.tar.gz",
+      "bytes": 4495459,
+      "sha256": "0cee1516db37cb2ac8a38fec54214c47483f8bea755a71dbd0d04a244b3c9fbb"
+    },
+    "releaseManifestSha256": "e8a801faf58b670fd2b2cb7ba1c327d20c025593c75881915ae7d211f2fcf3f3",
+    "baselineMetadataSha256": "ed789cd60a3de3287f9a4456e68f9707df09d8487f2026d2111beee05e4d7a98",
+    "fullNewMetadataSha256": "71419d91cc132a8d63d1be21718e0f20c72a796ff65decbaf6b4c7de796c9f65",
+    "oldRoot": "/srv/superflight-review/releases/p5-jungle-regenerated-candidate-03",
+    "newRoot": "/srv/superflight-review/releases/p3-water-dark-front-edge-04",
+    "oldSnippetSha256": "e2a466db57830bddb9003361028f99c132504ed3e12a632918898cd6c2a51224",
+    "newSnippetSha256": "f7948d10efb040e83c15d86df26866aed9a5a90eb53bf85c7fd0206c05d1200e"
+  },
+  "httpHelperRegressionStatus": "PASS",
+  "v1FailureReproduced": true,
+  "v2Cases": [
+    303,
+    403,
+    404
+  ],
+  "files": {
+    "COMBINED_INTENT_V2.md": {
+      "bytes": 7909,
+      "sha256": "c972a5113e3f89915dd0e5ea17b571dc0b7307b35f6c73f9574035992cab6794"
+    },
+    "combined_remote_v2.py": {
+      "bytes": 15565,
+      "sha256": "8dc3a6a933a0a95dc627d7352772d54cc0f64afc0d91a6ff603d5f209b559ec8"
+    },
+    "combined_execute_v2.py": {
+      "bytes": 5550,
+      "sha256": "630c8b26a4b1eda85353d6dc66751fa9e0eee3ff8bce2b50957d224c5de13667"
+    },
+    "test_combined_http_v2.py": {
+      "bytes": 6568,
+      "sha256": "e15c5c9cb9b2f6097dcdce06e2dc3e7791caf5f0582656bec0daf4b12e7d49a8"
+    },
+    "combined-packet-v2/HOST_RESOURCES.json": {
+      "bytes": 424,
+      "sha256": "eb2e55013ded7cb92ba8b23c707f1e63340e59a3a8787d17d637cbe50b389d76"
+    },
+    "combined-packet-v2/HTTP_HELPER_REGRESSION.json": {
+      "bytes": 2717,
+      "sha256": "4f087f98f9d97f1b3d1513c1a6393ccdde615152e2d727e968363d92d44c185e"
+    },
+    "combined-packet-v2/STOP_GUARD_REFERENCE.json": {
+      "bytes": 1160,
+      "sha256": "35efc04d6b2508b4cd4f06128966d21f025ec289969595f2ee3b7bf5903bf5dd"
+    },
+    "combined-packet-v2/V2_CHANGES.patch": {
+      "bytes": 747,
+      "sha256": "76cf113194f63e6784f9022a99552f8c509ebfb9f747ec306cefb63088251cb6"
+    }
+  },
+  "selfExcluded": true
+}
