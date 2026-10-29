@@ -1,191 +1,115 @@
-# P3 Dark — состояние Lead
+# P3 Dark — текущее состояние Lead
 
-29 октября 2026. Stage2 transfer активен, тот же Lead/состав/ветки/worktrees.
-[Исходный способ и точный Dark P1](BASELINE.md) сохранены до переноса.
-Dark принимает board02 trial01 и собственный source; Water inputs не заменяют его.
+29 октября 2026. Lead: `lead-r4d-p3-masks-01`.
+Worktree: `E:\R4D\perspective\p3-worktrees\lead`.
+Branch: `codex/r4d-p3-masks-lead-01`. Новых ролей/веток/worktrees нет.
+[Метод и исходные входы](BASELINE.md) зафиксированы до переноса.
 
-## DARK_FULL03: TQA PASS / VQA FAIL D-POP-01 — bounded data-коррекция; публикации нет
+## Сейчас: новый frozen04 на адресной независимой QA, публикации нет
 
-Полный independent VQA report `2d40b3f31341bbf57fd2df76aa6637a3f1a303e8`
-прочитан и интегрирован Lead: [REPORT.md](../visual-qa/full-method-03/REPORT.md).
-Lead лично посмотрел actual D-POP-01 comparison PNG и полный100%2012 JPEG.
-Первые3обычныхUIruns:3858699109→LOST2083,3238915631→receiver03/1435,
-1771307888→receiver01/1692; все сохранены.613rawJPEG/58selectedJPEG/4sheets.
-Подтверждён реальный скачок перекрытия у receiver04front/right-rim seed3858699109
-2011→2012: nativey34699.484191→34704.4149515 пересекаетdepth34702.18106608216
-и34700.947287431554, целые meshes снимаются, шар резко раскрывается поверхкамня.
-Тень отдельно, одновременный switch не заявлен. Это localP3order/depthfinding,
-не повод менятьacceptedP1/native/траекторию. Полного artisticPASS нет.
+Builder handoff `86d35d7af73883d83fd976eb4c0d5ef281048024` полностью прочитан
+Lead: [STATE](../builder/STATE.md), [RECIPE](../builder/RECIPE.md), actual freeze.
+Candidate: `dark-receiver-front-edge-04`.
+SOURCE: `d7eac5d7d76127e3138480f1f16eaf28aac0f15a`.
+ART: `e5d3e1f44c112e483ff2a23fbd169cb119390865`.
+ART prefix: `experiments/p3-masks/transfer/dark/asset-artist/variants/receiver-front-edge-01/`.
+Bundle: `E:\R4D\perspective\p3-runtime\builder\transfer-water-dark\dark\receiver-front-edge-04`.
+Manifest SHA256: `d180e5a63bb1dec7c510507fc2ce990e7cb10927b337a19c4bb9effc67e4ed1b`.
+92 payload / 3494340 bytes; manifest 15737 bytes; всего 93 файла / 3510077 bytes.
+Freeze: `2026-10-29T12:23:43.716Z`, outside-payload record:
+`dark/candidates/dark-receiver-front-edge-04.freeze.json` в Builder runtime.
+Manifest независимо совпал у Lead.
 
-Artist после fresh completed/idle/errornull адресно возобновлён6.1-sol/xhigh,
-actualturn `01a1876f-9231-70f3-9157-c908a360cc36`:
-одна bounded ordinarydata correction receiver front/rims, если она обоснована
-общей acceptedgeometry/source anchor логикой, отдельный named variant. Все62PNG,
-rect/alpha/ball/shadow/renderercode/P1/native/JPG сохранить. Нетseed/tickподгона.
-Если без существенного нового метода data-only решение не обосновано — вернуть
-численный/source разбор и честноеограничение; сериювариантов/renderer не начинать.
-Исходный frozen03/всеreports/rawbytes сохранены;6869 пока на03 для возможного A/B.
-ART variant готов: `e5d3e1f44c112e483ff2a23fbd169cb119390865`, prefix
-`experiments/p3-masks/transfer/dark/asset-artist/variants/receiver-front-edge-01/`.
-[README](../asset-artist/variants/receiver-front-edge-01/README.md) полностью
-прочитан Lead. Assets.json 18591 bytes, SHA256
+NEW preview: `http://127.0.0.1:6870/review/r4d/p3-masks-dark/`.
+Builder owner PID15752 / exec session31501. Это новый Dark процесс.
+OLD Water6870/PID17380 остановлен владельцем в11:52:26Z; не переиспользовать.
+OLD Dark03: `http://127.0.0.1:6869/review/r4d/p3-masks-dark/`, PID37660/session87426.
+Water04: `http://127.0.0.1:6868/review/r4d/p3-masks-water/`, PID29572/session61378.
+Все три текущих процесса удерживает Builder; QA их не останавливает.
+OLD6869 нужен только для короткого A/B до явного read-complete обеих QA.
+
+## Изменение и независимость
+
+[README варианта](../asset-artist/variants/receiver-front-edge-01/README.md)
+прочитан Lead. Assets.json18591 bytes, SHA256:
 `2b02dcde6c07266b67285700040e4ae0342f06fb760ae6ed0cf1fdcdc9b6cbad`.
-76-file frozen packet: `E:\R4D\perspective\p3-runtime\asset-artist\transfer-water-dark\dark\handoff-e5d3e1f44c11`,
-external manifest SHA256
-`f5036ba0863766eb0ba00d47f383a910355b526d51d7ec20bc77ecfbd042c5f7`
-независимо совпал у Lead. Его direct Git сравнение отдельно подтвердило:
-меняются только 12 depthLineNative records, все 48 остальных records,
-62 PNG и top-level metadata/ball/shadow/rect полностью одинаковы с17dc.
+Lead самостоятельно сравнил exact Git bytes: ровно12 depthLineNative records
+четырёх receivers; все48 остальных records/62PNG/60rect/alpha/ball/shadow и
+metadata прежние относительно ART17dc. Внешний76-file Artist packet manifest:
+`f5036ba0863766eb0ba00d47f383a910355b526d51d7ec20bc77ecfbd042c5f7`, hash совпал.
 
-Правило: в сохранённом front-полигоне выбрать ребро с максимальным средним
-native Y через accepted sourceToNative; это нижняя опора фасада, edge11→12.
-Её общая линия назначена front/left-rim/right-rim всех четырёх приёмников.
-Численный расчёт:69.69% overlap2011→58.15%2012→0%с2018;
-newballthreshold2046/shadow2045. Это НЕ actualbrowser/visualPASS.
+Общее правило: выбрать в сохранённом front-полигоне ребро с максимальным
+средним nativeY после accepted sourceToNative; его линия служит общей передней
+опорой front/left-rim/right-rim. Это нижнее ребро фасада, исходный edge11→12,
+вместо верхней внутренней кромки. Новых силуэтов/сортировки/физики нет.
+Renderer app SHA256:
+`760c9bada40cb3ecb944f332f6efa91bb3c1340ce7f1ad9c2cabeda4dca0a3e6`.
+Compiled native SHA256:
+`af8e6dea9ee5c46759f99ba3b68f4afa91c740b4fd2aba2d2d3f65bfa66753fa`.
+Native5a6fa03/P1 4b47db04 board02 trial01 candidate01/JPG/проекция неизменны.
+CODE меняет только thin Dark import/build/static verifier/replay provenance.
+Native build и полная native-матрица при packaging не выполнялись.
 
-Builder после fresh idle/completed/errornull cleanup-turn01a1877e получил
-конкретный handoff на ОДИН новый `dark-receiver-front-edge-04` в собственном
-`dark/receiver-front-edge-04`, runtime6.1-sol/xhigh. Новый free owned loopback
-URL/PID/session ещё ожидаются; OLD Dark6869 остаётся на03 для короткого A/B,
-Water6868 сохраняет свой frozen04. Native compiled af8/P1/JPG/renderer не менять,
-62 PNG/48 records сверить;_SOURCE commit допускается только для thin selector.
-CTO затем прямо уточнил экономный объём, Builder адресно уведомлён:
-проверить новые exact bytes и ровно 12 depth-линий, D-POP на прежнем и новом
-порогах, отдельную тень и близкие уже хорошие receiver01/02/03 entries.
-При доказанно неизменённых renderer/core/config/PNG прежние native/browser/
-JSON/controls проверки использовать со ссылкой и пометкой «ранее выполнено».
-Полную матрицу/5+3 traces и native build автоматически не повторять; новое
-нарушение расширяет объём по факту. Общий Visual PASS не наследуется.
-После freeze — точный адресный handoff обеим независимым QA, VQA после Water.
-CTO принял Water TQA c482 в его проверенном объёме; divider-классификация
-остаётся отдельной. Release idle, SSH/intent до двух завершённых результатов
-не начинать. Это уточнение объёма, не новая задача/пауза.
-Новый frozen candidate ещё не выдан; TQA/VQA03 не проверяют futurevariant.
+## Что выполнено раньше и что проверяется теперь
 
-Dark TQA report `b327ae601a4962dd5826abfbfdeefaf77c090a55` полностью прочитан
-Lead и интегрирован: [dark-full-method-03.md](../technical-qa/reports/dark-full-method-03.md).
-Technical PASS в проверенном объёме, подтверждённых technical defects нет.
-88local/HTTPfiles+MIME,8runs/11793native states+orderedhits,66browser checkpoints,
-actual JSONroundtrip/controls/replay/seek/board-negative.23selected screenshots,
-8checkpoints,122raw-index entries сохранены. Source/art/manifest ровно frozen.
-CDP network неэкзостивен:12ResourceTiming200 безPNG/JPG;88HTTPbodies отдельно
-exact. В payload только два declaredKsource paths в P1inputs, privateTS/maps/
-неожиданныхsourcepaths/keys не найдено. Нет общей art/mapping приёмки.
-TQA Dark tab закрыта, preview не тронут; TQA уже на отдельном Water.
-VQA Dark `01a18736-3abe-7692-b507-77fe05a87176` завершила отчёт/commit/handoff,
-своюDarktab закрыла и перешла к уже выданному Water full QA. Новый Dark retest
-не дублируется параллельно; отдельный точный handoff будет после результатаArtist.
+Первый полный Dark03 сохранён: SOURCEc73d6128970b2b022d5313b08c34cafdec9a1bc3,
+ART17dc9fcdc261562acb581dd8590096819734c807, manifest
+`b3923f4ccab57a8361a9dc8f64de73fcee9b70fb38c87aac5e9623fbc62d0307`.
+[Полная Technical QA03](../technical-qa/reports/dark-full-method-03.md),
+commit `b327ae601a4962dd5826abfbfdeefaf77c090a55`, ранее выполнена:
+Technical PASS в проверенном объёме,11793 native states/66browser samples,
+JSON/controls/replay/negative. Этот report полностью прочитан Lead.
+[Полная Visual QA03](../visual-qa/full-method-03/REPORT.md),
+commit `2d40b3f31341bbf57fd2df76aa6637a3f1a303e8`, ранее выполнена:
+Visual FAIL по D-POP-01, остальные семейства с неполным покрытием экземпляров.
+Все первые3 ordinary outcomes,613raw/58selectedJPEG/4sheets сохранены.
+Lead прочитал report и лично посмотрел actual comparison PNG/100%2012.
 
-CTO10:55:12UTC явно закрыл P5 token/window, serverwriters нет; следующее
-окно зарезервировано P3. После обоих результатов/QA — один полный local
-intent/одно окно для двух отдельных sibling prefixes/вердиктов. Новых rights
-на serverwrites пока нет. Opaque expected pointer и условия future transport
-в [Water Lead state](../../water/lead/STATE.md), fresh guard он не заменяет.
+D-POP-01: seed3858699109, receiver04 front/right-rim,2011→2012.
+Непрерывный nativeY34699.484191→34704.4149515 снимает сразу два meshes,
+шар резко раскрывается поверх камня. Тень — отдельный predicate.
 
-Handoff `cd1f7ada0c4789b0d512d0a9c47d513c036ee31f` прочитан Lead и интегрирован.
-SOURCE `c73d6128970b2b022d5313b08c34cafdec9a1bc3`, ART17dc9fcdc261…,
-candidate `dark-full-method-03`. Immutable bundle:
-`E:\R4D\perspective\p3-runtime\builder\transfer-water-dark\dark\full-method-03`.
-Manifest14842bytes/SHA256
-`b3923f4ccab57a8361a9dc8f64de73fcee9b70fb38c87aac5e9623fbc62d0307`
-независимо совпал у Lead.87payload/3383383bytes, сmanifest88/3398225.
-[Builder STATE](../builder/STATE.md), [RECIPE](../builder/RECIPE.md).
-Actual freeze record `dark\candidates\dark-full-method-03.freeze.json` прочитан.
-URL `http://127.0.0.1:6869/review/r4d/p3-masks-dark/`, own Builder
-PID37660/session87426, bytes held для обеих QA. Это не server release.
+CTO прямо ограничил новый объём: exact новые bytes/scope12lines, D-POP на
+старом и новом порогах, отдельная тень, близкие ранее хорошие входы.
+Доказанно неизменённые native/browser/controls/negative/import проверки
+использовать со ссылкой «ранее выполнено»; автоматически не повторять всю
+матрицу/native build. Новое нарушение расширяет объём по факту. Общий
+Visual PASS не наследуется.
 
-После fresh completed/idle обеим существующим QA адресно выдан этот exact
-candidate с model=gpt-6.1-sol/thinking=xhigh, оба sends isError=false.
-Actual TQA turn `01a18736-392a-7db2-91a2-611c2f5153ad`,
-VQA turn `01a18736-3abe-7692-b507-77fe05a87176`, active/errornull.
-Первые конкретные действия — чтение handoff/matrix, fresh resources,
-проверка именованного bundle/manifest в своих worktrees. VQA поручено actual
-continuous ordinary motion перед соседними ticks; Water early step-only
-diagnosis не наследуется как realtime или Dark PASS.
+Точный frozen handoff реально отправлен обеим QA после fresh idle/errornull,
+оба send isError=false, selected gpt-6.1-sol/xhigh, Root max не менялся.
+TQA turn: `01a187a5-57eb-7e90-a0c5-3d79fdbc24c5`.
+VQA turn: `01a187a5-5a8c-7ef2-971c-4876a38daa11`.
+Обе active, новых вердиктов пока нет. Dispatch повторно не выдавать.
+D-POP-01 остаётся OPEN до независимого visible retest.
 
-Builder selfcheck: все87files local+HTTP/MIME, exact replay5predeclaredseeds;
-actual browser0→receiver01/888 и2→LOST1812, реальные import/download896 и
-cross-board rejection, controls/view invariants. Это не independent verdict.
-Scope/остаточные риски исходных binary scalar/line transitions и ручных
-contours переданы QA. Найденные concrete defects идут Lead сразу, frozen
-пакет QA не меняют. Полных verdict/report пока нет. CTO уведомлён exactIDs/hash.
-Текущие факты: VQA сохранил первые3UIordinaryruns в исходном порядке —
-3858699109→LOST2083,3238915631→receiver03/1435,1771307888→receiver01/1692.
-Continuous mode captured при100%, JSON через UI. Native contact840 признан
-почти целиком side pass, не засчитан за смену corner overlap. Entry01
-подтверждён, передняя кромка этим terminalframe ещё не покрыта; другие ordinary
-cases продолжаются. TQA realexport/reload/import/nexttick, boardId-only rejection,
-4Art/Geometryкомбинации/flat/zoom/pan state-invariance уже проверены, заканчивает
-replay/seek/contact/entry. Это промежуточный scope, не общий PASS.
-Lead отдельно просмотрел Builder running61, t840 и нижние880/888 с полным
-receiver opening/rim в кадре; источник — Builder selfcheck, не independentQA.
+Builder selfcheck сохранил40actualJPEG и4actualCP.2012 fullCP совпал сVQA03.
+2011–2018 раскрытие постепенное; новый порог shadow2045/ball2046 без видимого
+скачка по его наблюдению. Lead посмотрел actual new2012: камень сохраняет
+partial overlap. Это selfcheck/наблюдение Lead, не независимая closure.
+На новом пороге шар вне JPG; тень на тёмном фоне малоконтрастна. Не выдавать
+численный predicate за GPU/универсальное качество теней.
 
-Полный первый ART Dark получен и немедленно передан Builder:
-`17dc9fcdc261562acb581dd8590096819734c807`,60masks,
-assets.json18588bytes/SHA256
-`ef5eb34be622f5ce6356d6fa51d7902c334a1f1f3c95acce225d7340928bbc29`.
-Lead независимо сверил exact Git hash, прочитал STATE/CONSUMER_CONTRACT
-и интегрировал этот сохранённый первый вариант в свою ветку.
-Artist handoff `E:\R4D\perspective\p3-runtime\asset-artist\transfer-water-dark\dark\handoff-17dc9fcdc261`.
-12pins,24front/side loop faces,6walls,3ramps,12receiver rims,3dividers.
-Shadow alpha0.93, source/body PNG/r16/projection/PRNG без изменений;
-это reuse собственного frozen goldball/shadow, не новая генерация.
-Builder делает самостоятельный fullDark build/actual selfchecks; Water ранняя
-VQA не удерживает Dark. Конкретных Dark visual findings/PASS ещё нет.
+## Следующий gate
 
-VQA matrices на русском `0ed5d4bae632e4fa3fd370ffeed193ab1d48c214`
-интегрированы: [PREPARATION.md](../visual-qa/PREPARATION.md).
-Dark cases PENDING. VQA сейчас делает раннюю Water диагностику, это не Dark
-выдача и не вторая QA одной роли; Dark frozen handoff будет отдельным.
-Artist сообщил36obstacle regions Dark с раздельными faces и oriented depth
-lines; добавляет borders/baskets. Exact полного Dark art handoff ещё нет.
+Дождаться двух отдельных адресных Dark reports, прочитать их полностью,
+разрешить фактические новые дефекты в bounded объёме. Water имеет Technical
+PASS c482 и Visual PARTIAL42dacf; W-EARLY-POP локально закрыт, W-DIVIDER-01
+классифицирует Artist read-only turn01a187a1-bc02-7b22-8141-c085fb774d39.
+Затем отдельные обоснованные board RESULT/рецепты, только после этого Release.
 
-TQA input preparation completed/idle, commit
-`fe09f8e37cff8352dbe629e28bd3e4e2c0e019aa` прочитан и интегрирован:
-[Dark input state](../technical-qa/STATE.md). Predeclared native seeds:
-0→receiver01/t888,1→receiver01/t884,2→LOST/t1812. Переданы Artist/Builder/VQA
-обычные ориентиры seed0/pillar02:edge01/t366 иpillar04:edge04/t840,
-с соседними365–367/839–841; это ещё не факты painted silhouette overlap.
-VQA две отдельные матрицы подготовил; правит только язык новых документов
-на русский с сохранением входов/cases/PENDING. Candidate verdict ещё нет.
+Release idle, server_write=false, новых SSH-аудита/пакета/intent нет.
+CTO закрыл P5 token/window10:55:12UTC и резервировал следующее окно P3.
+Предпочтение: один combined intent/одно окно, но два отдельных sibling
+prefixes `/review/r4d/p3-masks-water/` и `/review/r4d/p3-masks-dark/`, artifacts
+и verdicts. Нужен новый exact CTO token. Expected opaque P5 pointer и строгие
+условия fresh guard/transport — в [Water STATE](../../water/lead/STATE.md).
+Это не fresh guard и не действующее разрешение писать.
 
-Builder native preparation: replay точный, cross-board checkpoint отклоняется;
-заранее выбранные native seeds1/2 совпали с точными исходами/тиками P1.
-Первый contact Dark bowl-base-01/89. Consumer contract опубликован на
-`f3b7ce8d94b0a9173c48d7ca6defb3837a10ed03`, Lead прочитал и передал Artist.
-Реального художественного candidate пока нет. Native package/src tree pins
-TQA согласовал отдельно, исходный ядро commit не менялся.
-
-Release completed/idle/server_write=false. Локальные планы обеих досок
-`1cf782e83c5e0aec0f80feeb9bc9693028a7fb5b` полностью прочитаны/интегрированы:
-[PLAN.md](../release-engineer/PLAN.md),
-[RELEASE_PLAN.json](../release-engineer/RELEASE_PLAN.json).
-Никаких SSH/live capture/upload/staging/serverdocs; future live hashes null.
-Новый exact token только после frozen bytes и независимых QA; резерв P3 подтверждён CTO.
-
-Пять реальных адресных handoff и turn IDs закреплены в
-[Water Lead state](../../water/lead/STATE.md); это общая команда, не вторая
-параллельная выдача тех же ролей. Все actual turns inProgress/errornull на
-первом checkpoint; CTO получил turn/send results и concrete Builder action.
-Builder переносит consumer, Artist готовит отдельные masks/ball/shadow,
-QA независимо готовят Dark матрицы, Release только local publication plan.
-
-Dark получает собственные source/config/art/runs/logs/candidate/порт/вердикт
-в `experiments/p3-masks/transfer/dark/<role>/`; role runtime
-`E:\R4D\perspective\p3-runtime\<role>\transfer-water-dark\dark`.
-Никаких Jungle файлов/публикации или материалов Water не переписывать.
-
-Следующий конкретный участок: freeze baseline depth/asset contract, получить
-собственный art handoff и immutable native/Pixi candidate, затем real movement
-и соседние overlap ticks у углов/передних/боковых граней, borders/baskets/shadow.
-QA verdict пока нет; победы ordinary runs не подбирать. Общие mapping defects
-вернуть CTO воспроизведением, локальные маски/renderer исправлять своим владельцем.
-
-Ресурсы и E≤4/≤2 thresholds как в Water Lead state; отдельная свежая проверка
-перед каждым тяжёлым шагом. Тяжёлые данные только собственный E runtime,
-env process-local; никакой общей очистки/изменения security/credentials/UGH.
-
-Server_write=false, токена нет; предполагаемый route `/review/r4d/p3-masks-dark/`.
-CTO зарезервировал следующее окно P3 после закрытия P5. Публикация после независимых QA и нового
-exact intent/token CTO. До того remote upload/staging/lock/nginx/docs запрещены.
-Остановка на ACK/STATE не считается выполнением: производство продолжается.
+Перед тяжёлым действием — fresh system-wide RAM/CPU/C/D/E и combined peak.
+Builder postflight12:21:57Z RAMfree15.024GiB/E11.624GiB/CPU1%; не резерв.
+E≤4GiB diagnose,≤2 safe checkpoint/stop. Только собственные E outputs и
+process-local TEMP/TMP. Никаких global settings/credentials/policies/cleanup.
+Legacy denied call7b166cdf46834d468b5f9c297aad6e9f не повторять/не обходить;
+новый denial — exact-operation STOP с action/target/toolcall/reason.
+Jungle, P2/P4/P5/P6 implementation/art/findings и чужие процессы не трогать.
