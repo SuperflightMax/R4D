@@ -63,7 +63,18 @@ OldDark6869 PID37660/session87426 сохраняется для коротког
 Dark [текущий STATE](../../dark/lead/STATE.md): targeted TQA/VQA идут;
 не повторяют автоматически прежнюю полную матрицу/native build.
 
-## Публикационный gate — V3 AUTHORIZED EXECUTION IN PROGRESS
+## Публикация выполнена — полный handoff и CTO closure pending
+
+LATEST ACTUAL: switch16:40:46.555575Z;217postchecks16:41:37.142460Z,
+215HTTP200+Origin403+dot404,197/197exactpayloads,10/10JS MIME/body verified,
+limitedResources0. Document16:42:54.288935Z, PUBLISHEDsha
+8bdcaf51ae46d73be24935b64358c589ea9ff8aa9935e92526447d6067531e3b,
+обаdocs originalprefixSHA+inode/uid/gid/mode сохранены. V3receipt прочитанLead.
+Оба LIVE URLs отражены RESULT, bounded publicIAB smoke двухscenes и+10ticks
+фактическиPASS, PUBLIC_UI_SMOKE.md. ОбщиевердиктыобаPARTIAL/WDIVOPEN.
+Release заканчиваетfinalROreadback/commit; OwnerBuilder отдельно останавливает
+только свои3preview послеfreshPIDownership. Files/raw/frozen не удаляются.
+Token/window/slot ещёТОЛЬКОCTOзакрываетпослеfullhandoff, Root неосвобождает.
 
 CURRENT: CTO V3 token CTO-P3-WD04-V3-20261029T163518Z-d69a711f4777 issued16:35:18Z,
 firstwriteDeadline17:35:18Z. Authoritativefile

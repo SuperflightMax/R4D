@@ -107,6 +107,11 @@ partial overlap. Это selfcheck/наблюдение Lead, не независ
 
 ## Следующий gate
 
+LATEST ACTUAL: обе страницы LIVEswitch16:40:46Z,217checks/197payloads/10JS PASS,
+docs-prefix metadata proof16:42:54Z PASS; publicIAB actualscenes/10ticks each PASS.
+RESULT обновлён, обаPARTIAL. Releasefinalhandoff/Builderownpreviewstoppending,
+окно/token/slot закрываеттолькоCTO послеfullreview.
+
 CURRENT: NEWV3token issued16:35:18Z/deadline17:35:18Z, authSHA1bbc9511eada2766f971c8ee7a16c3ddac5beda455786d4500e5f4c2218ce7b2.
 Послеfreshidleодинactualexecution01a18885-37e3-7290-a316-444d187b995e active,
 existingRelease6.1-sol/xhigh. RootUI-onlyпослеactualswitch, onlyReleasewrites.

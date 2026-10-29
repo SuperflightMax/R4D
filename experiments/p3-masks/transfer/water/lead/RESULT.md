@@ -3,8 +3,29 @@
 29 октября 2026. **Technical PASS в проверенном объёме / Visual PARTIAL.**
 Локальный W-EARLY-POP-01 исправлен. W-DIVIDER-01 остаётся известным открытым
 вопросом покрытия и пространственного чтения поверхности; полная художественная
-приёмка всех71 маски не заявляется. Оба bounded результата Water/Dark завершены;
-публикация Review требует отдельного согласованного окна. Сейчас server_write=false.
+приёмка всех71 маски не заявляется. Оба bounded результата Water/Dark завершены
+и опубликованы одним согласованным Release V3.
+
+## LIVE Review и фактическая публикационная проверка
+
+**[Открыть Water Review](https://superflight.space/review/r4d/p3-masks-water/)**.
+Switch2026-10-29T16:40:46.555575Z, postchecks16:41:37.142460Z,
+append-only documentation16:42:54.288935Z. Exact source/art/manifest ниже
+опубликованы без изменения frozen bytes. New root868files/104dirs,
+metadata71419d91cc132a8d63d1be21718e0f20c72a796ff65decbaf6b4c7de796c9f65.
+
+217 HTTP responses в принятом CTO контексте:215×200,Origin403,dotfile404;
+197/197 payload identities и10/10 JS MIME/body verified. Нормальный catalog200
+строго совпал с new15762bytes/SHAfd4e28b8bfb1764e9d6623009d8f21c23eb1e5df59590effc42ced55f842beeb.
+Оба docs сохранили старые byte-prefix SHA и inode/uid/gid/mode при append.
+Old roots/archive/raw,672foreign files/mixed ownership и77Jungle сохранены.
+
+[Короткий public IAB smoke](PUBLIC_UI_SMOKE.md): реально видна Water scene71,
+source5196, seed0 tick0→10/.050s; Dark также отдельно проверен. Это фактическая
+проверка текущего публичного UI/модулей в конкретных контекстах, не универсальная
+auth/security или новая полная visual/native приёмка. Историческое предположение
+auth303 не выдаётся за актуальную baseline. Итог остаётся PARTIAL/W-DIVIDER OPEN.
+Token/window/slot закрывает CTO по отдельному final delivery review.
 
 ## Точный результат
 

@@ -3,8 +3,27 @@
 29 октября2026. **Targeted Technical PASS, D-POP-01 локально закрыт.**
 Общая художественная оценка — PARTIAL: положительный адресный retest с явными
 пределами покрытия и теней. Общий Visual PASS всех60 масок/всех подходов не дан.
-Ограниченный результат готов к Review. Публикация — отдельный Release gate;
-пока server_write=false, действующего write token нет.
+Ограниченный результат опубликован одним согласованным Release V3 с Water.
+
+## LIVE Review и фактическая публикационная проверка
+
+**[Открыть Dark Review](https://superflight.space/review/r4d/p3-masks-dark/)**.
+Switch2026-10-29T16:40:46.555575Z, postchecks16:41:37.142460Z,
+append-only documentation16:42:54.288935Z. Frozen source/art/manifest ниже
+опубликованы точно, без нового native build/полной QA матрицы.
+
+Combined217 HTTP:215×200,Origin403,dotfile404;197/197 payload identities
+и10/10 JS MIME/body verified. Currentcatalog200 совпал с exact new15762/SHAfd4e28b8…2beeb.
+Newroot868files/104dirs/meta71419d91…c9f65; старый root/foreignbytes/metadata,
+mixed ownership и77Jungle сохранены. Для двух docs append-only prefix SHA
+и inode/uid/gid/mode доказаны отдельно.
+
+[Lead public IAB smoke](../../water/lead/PUBLIC_UI_SMOKE.md): фактический Dark
+canvas60/source d7ea загрузился; seed0 tick0→10/.050s, controls согласованы.
+Это текущий bounded public UI proof в конкретном контексте, не универсальная
+auth/security приёмка и не полная новая visual/native QA. Итог PARTIAL,
+coverage/shadow limits прежние. Token/window/slot закрывает только CTO после
+финального delivery review; историческая auth303 terminology не current claim.
 
 ## Точный результат
 
