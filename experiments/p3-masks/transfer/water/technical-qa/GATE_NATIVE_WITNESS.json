@@ -1,0 +1,72 @@
+{
+  "board": "water",
+  "p1Commit": "4b47db04c7140ebf88f69b91faa0b790d46f22ec",
+  "configSha256": "9048b28af2923c93d8be772367beeb828f1e4513a6298af1c803379f77d3e50c",
+  "projectionSha256": "ee0c6e429d4e0b1da6c342174d22369cd293c3fc4b18ccd7d09a4690f71da54f",
+  "coreCommit": "5a6fa03f1cdb3de88a2d9c7dbe795eb8e2a7f023",
+  "witnesses": [
+    {
+      "gate": "arch-07",
+      "seed": 1,
+      "tick": 1015,
+      "x": 33027.806352445725,
+      "y": 34755.12349268705,
+      "direction": "down",
+      "stepClearance": 4.171924990720601,
+      "source": [
+        518.0756543233299,
+        957.4558127467711
+      ],
+      "states": [
+        {
+          "tick": 1014,
+          "rngU32": 4212701329,
+          "ball": {
+            "pos": {
+              "x": 33030.4141769,
+              "y": 34752.6197802
+            },
+            "vel": {
+              "x": -840.8102451,
+              "y": 802.3426424
+            }
+          },
+          "nearMissBucketIds": [],
+          "done": false
+        },
+        {
+          "tick": 1015,
+          "rngU32": 4212701329,
+          "ball": {
+            "pos": {
+              "x": 33026.2101257,
+              "y": 34756.6559934
+            },
+            "vel": {
+              "x": -840.8102451,
+              "y": 807.2426424
+            }
+          },
+          "nearMissBucketIds": [],
+          "done": false
+        },
+        {
+          "tick": 1016,
+          "rngU32": 4212701329,
+          "ball": {
+            "pos": {
+              "x": 33022.0060745,
+              "y": 34760.7167066
+            },
+            "vel": {
+              "x": -840.8102451,
+              "y": 812.1426424
+            }
+          },
+          "nearMissBucketIds": [],
+          "done": false
+        }
+      ]
+    }
+  ]
+}
