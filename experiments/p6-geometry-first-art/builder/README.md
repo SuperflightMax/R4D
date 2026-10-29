@@ -18,7 +18,9 @@ node experiments/p6-geometry-first-art/builder/scripts/verify-native.mjs
 node experiments/p6-geometry-first-art/builder/scripts/serve.mjs
 ```
 
-Локальный адрес: `http://127.0.0.1:41766/`. Сервер раздаёт только runtime/site. Он не раздаёт private raw TS или maps; sourcemaps не создаются. Неизменённые native Git blobs находятся только в runtime/private, с object inventory. Native source repo/HEAD не меняется.
+Следующая сборка пишет только `runtime/candidates/integration-02/site`, её локальный адрес: `http://127.0.0.1:41767/`. Baseline `b1bb84d` по `http://127.0.0.1:41766/` заморожен для TQA: прежний runtime/site и snapshot не перезаписываются. Подробнее: [BASELINE_FREEZE.md](verification/BASELINE_FREEZE.md). При необходимости перезапуска baseline использовать `node experiments/p6-geometry-first-art/builder/scripts/serve.mjs --baseline`; это раздаёт immutable snapshot и не требует сборки. Не запускать второй процесс на уже занятом порту.
+
+Сервер раздаёт только выбранный site. Он не раздаёт private raw TS или maps; sourcemaps не создаются. Неизменённые native Git blobs находятся только в runtime/private, с object inventory. Native source repo/HEAD не меняется.
 
 Зависимости: Node.js, npm, Python3/Pillow для черновика. Версии PixiJS8.6.6 и esbuild0.25.5 зафиксированы. Никакие реализации других P2–P5 не используются.
 
