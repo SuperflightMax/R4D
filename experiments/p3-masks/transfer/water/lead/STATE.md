@@ -7,6 +7,25 @@ Worktree `E:\R4D\perspective\p3-worktrees\lead`, прежняя branch
 
 ## FULL_ART_READY / EARLY_WATER_QA — итогового freeze/QA/publish ещё нет
 
+Операционное уточнение CTO: P5 writewindow/token явно закрыт
+**2026-10-29T10:55:12Z**, активных serverwriters нет. Следующее окно
+резервируется под P3 после двух bounded results/independent QA и нового token.
+CTO предпочитает ОДИН полный local intent/одно окно для двух отдельных sibling
+prefixes/артефактов/вердиктов. Предыдущие per-board release templates — история
+плана, не разрешение двух самостоятельных writes. Сейчас server_write=false;
+новый аудит/SSH/пакет до готовности незамороженного Water не нужен и не запущен.
+
+Ожидаемый opaque pointer, НЕ fresh guard:
+root `/srv/superflight-review/releases/p5-jungle-regenerated-candidate-03`,
+674files/88dirs/122587862bytes; snippet957bytes/SHA256
+`e2a466db57830bddb9003361028f99c132504ed3e12a632918898cd6c2a51224`.
+Release сам снимет fresh opaque baseline без semantic foreign payload reads.
+Existing vps1-direct, outeruid1003/gid27 — только сообщённый контекст;
+перед future token writes euid0 проверяется через existing noninteractive
+`sudo -n -- python3 -B` stdin/-c. Не предполагать root у обычного SSHpython,
+не читать sudoers/allowlists/secrets; настоящий denial exact-operation STOP.
+Release пока idle, ACK/новый подготовительный цикл ему не выдавался.
+
 Новая named ordinary data-коррекция Artist:
 `5c9ba8c640b344094e0ada7c4ed6c9ec076550e5`, prefix
 `experiments/p3-masks/transfer/water/asset-artist/variants/arch-front-edge-01/`.
@@ -20,7 +39,9 @@ Lead независимо сверил SHA и структурный diff: ро�
 вариант интегрирован; оригинальные17dc/early02 сохранены.
 Внешний packet manifestSHA
 `7f260deb508977dd9a6d95cf981d26179516fbf41eaafad93af1255971963454`.
-Artist делает отдельную doc-only русскую версию README, не подменяя выдачу5c9.
+Doc-only русский README `99bcc37011e48cb854cc77742b3dc34f8f6cb71d`
+прочитан и интегрирован. Consumer остаётся5c9 с тем же hash и внешним manifest;
+Actor Artist completed/idle/clean, новых проверок/генераций по переводу не было.
 
 Builder собрал `front-edge-04`, SOURCE
 `5196c0bd4981992c4e3d9678438aed1aa1c0d84c`, manifestSHA
@@ -31,6 +52,14 @@ renderer/native/inputs/73PNG. Новый actual PID после перевода6
 выдан Lead; старый17640 нельзя считать актуальным владельцем.
 Full Water frozen handoff пока нет; обе QA сейчас заняты Dark exactfreeze,
 Water будет отдельно после selfcheck и явной выдачи. Новых QA ролей нет.
+Builder завершил selfcheck front-edge-04 на всех5predeclaredseeds:4LOST и
+receiver02/1275. Native/download большого uint32 совпал, cross-board Dark JSON
+отклонён с сохранением Water state. Lead реально просмотрел новые200% frames
+1015/1020/1021: на1015 шар остаётся частично скрыт, к1020–21 выходит;
+прежнего раскрытия на этих снимках не видно. Independent closure не заявлена.
+Builder поручено оформить immutable full QA candidate с открытым finding:
+после Dark comparative retest станет первым разделом полного Water VQA на
+тех же bytes, без дополнительного промежуточного gate и нового состава.
 
 Оба первых полных ART комплекта получены и переданы Builder, commit
 `17dc9fcdc261562acb581dd8590096819734c807` (pushed/clean).
@@ -180,7 +209,7 @@ candidate обеим независимым QA. Water gate подтвержда�
 overlap; input blocker отдельным воспроизведением CTO. Dark идёт отдельно.
 Не останавливать производство на одном STATE/ACK. Jungle не менять.
 
-Server_write=false, токена нет, P5 first release window. Published результата
+Server_write=false, токена нет, следующее окно зарезервировано CTO под P3. Published результата
 Water нет; будущий route `/review/r4d/p3-masks-water/`. Никакого remote
 staging/upload/lock/nginx/service-doc writes/cleanup до нового exact token.
 Legacy denial не повторять/не обходить; UGH/чужие методы не трогать.

@@ -6,6 +6,12 @@ Dark принимает board02 trial01 и собственный source; Water 
 
 ## DARK_FULL_METHOD_03_FROZEN — независимая QA идёт, публикации нет
 
+CTO10:55:12UTC явно закрыл P5 token/window, serverwriters нет; следующее
+окно зарезервировано P3. После обоих результатов/QA — один полный local
+intent/одно окно для двух отдельных sibling prefixes/вердиктов. Новых rights
+на serverwrites пока нет. Opaque expected pointer и условия future transport
+в [Water Lead state](../../water/lead/STATE.md), fresh guard он не заменяет.
+
 Handoff `cd1f7ada0c4789b0d512d0a9c47d513c036ee31f` прочитан Lead и интегрирован.
 SOURCE `c73d6128970b2b022d5313b08c34cafdec9a1bc3`, ART17dc9fcdc261…,
 candidate `dark-full-method-03`. Immutable bundle:
@@ -33,6 +39,16 @@ cross-board rejection, controls/view invariants. Это не independent verdict
 Scope/остаточные риски исходных binary scalar/line transitions и ручных
 contours переданы QA. Найденные concrete defects идут Lead сразу, frozen
 пакет QA не меняют. Полных verdict/report пока нет. CTO уведомлён exactIDs/hash.
+Текущие факты: VQA сохранил первые3UIordinaryruns в исходном порядке —
+3858699109→LOST2083,3238915631→receiver03/1435,1771307888→receiver01/1692.
+Continuous mode captured при100%, JSON через UI. Native contact840 признан
+почти целиком side pass, не засчитан за смену corner overlap. Entry01
+подтверждён, передняя кромка этим terminalframe ещё не покрыта; другие ordinary
+cases продолжаются. TQA realexport/reload/import/nexttick, boardId-only rejection,
+4Art/Geometryкомбинации/flat/zoom/pan state-invariance уже проверены, заканчивает
+replay/seek/contact/entry. Это промежуточный scope, не общий PASS.
+Lead отдельно просмотрел Builder running61, t840 и нижние880/888 с полным
+receiver opening/rim в кадре; источник — Builder selfcheck, не independentQA.
 
 Полный первый ART Dark получен и немедленно передан Builder:
 `17dc9fcdc261562acb581dd8590096819734c807`,60masks,
@@ -75,7 +91,7 @@ Release completed/idle/server_write=false. Локальные планы обе�
 [PLAN.md](../release-engineer/PLAN.md),
 [RELEASE_PLAN.json](../release-engineer/RELEASE_PLAN.json).
 Никаких SSH/live capture/upload/staging/serverdocs; future live hashes null.
-Новый exact token только после frozen bytes и независимых QA, P5 first.
+Новый exact token только после frozen bytes и независимых QA; резерв P3 подтверждён CTO.
 
 Пять реальных адресных handoff и turn IDs закреплены в
 [Water Lead state](../../water/lead/STATE.md); это общая команда, не вторая
@@ -100,6 +116,6 @@ QA verdict пока нет; победы ordinary runs не подбирать. 
 env process-local; никакой общей очистки/изменения security/credentials/UGH.
 
 Server_write=false, токена нет; предполагаемый route `/review/r4d/p3-masks-dark/`.
-P5 имеет следующее окно первым. Публикация после независимых QA и нового
+CTO зарезервировал следующее окно P3 после закрытия P5. Публикация после независимых QA и нового
 exact intent/token CTO. До того remote upload/staging/lock/nginx/docs запрещены.
 Остановка на ACK/STATE не считается выполнением: производство продолжается.
