@@ -1,0 +1,106 @@
+{
+  "schema": "r4d-p3-builder-candidate-v1",
+  "status": "FROZEN_FOR_INDEPENDENT_FULL_QA",
+  "candidate": "water-front-edge-04",
+  "bundle": "E:/R4D/perspective/p3-runtime/builder/transfer-water-dark/water/front-edge-04",
+  "sourceCommit": "5196c0bd4981992c4e3d9678438aed1aa1c0d84c",
+  "artistSource": {
+    "commit": "5c9ba8c640b344094e0ada7c4ed6c9ec076550e5",
+    "prefix": "experiments/p3-masks/transfer/water/asset-artist/variants/arch-front-edge-01/",
+    "variant": "arch-front-edge-01",
+    "assetsSha256": "4a5bc16f69146fe26a3e3893fcf3c1c8e5b943400bc65d5215cb41d58efeece6"
+  },
+  "manifestSha256": "de1344afcb197115b76cb4006ead3d96e7b2581a1a299df1100d7a552d2ce2c6",
+  "manifestBytes": 17208,
+  "payloadFiles": 100,
+  "payloadBytes": 3561039,
+  "totalFiles": 101,
+  "totalBytes": 3578247,
+  "url": "http://127.0.0.1:6868/review/r4d/p3-masks-water/",
+  "ownedPid": 29572,
+  "execSession": 61378,
+  "coreCommit": "5a6fa03f1cdb3de88a2d9c7dbe795eb8e2a7f023",
+  "p1Commit": "4b47db04c7140ebf88f69b91faa0b790d46f22ec",
+  "configSha256": "9048b28af2923c93d8be772367beeb828f1e4513a6298af1c803379f77d3e50c",
+  "p1ManifestSha256": "48c4fef26fd8c94f06c278851222ef285edda54ac14e53da8908f4ee663dc420",
+  "projectionSha256": "ee0c6e429d4e0b1da6c342174d22369cd293c3fc4b18ccd7d09a4690f71da54f",
+  "sourceSha256": "8da65c76c110b6ba7cefe113564fe12feed4428e84e84835f033e7da31d3b80d",
+  "nativeSha256": "af8e6dea9ee5c46759f99ba3b68f4afa91c740b4fd2aba2d2d3f65bfa66753fa",
+  "preservedFirstFull": {
+    "bundle": "E:/R4D/perspective/p3-runtime/builder/transfer-water-dark/water/full-method-03",
+    "sourceCommit": "c73d6128970b2b022d5313b08c34cafdec9a1bc3",
+    "artistCommit": "17dc9fcdc261562acb581dd8590096819734c807",
+    "manifestSha256": "b3c697675ecd76af7848fa72367f943c1b9e4a27b325b098a9fef08135fe58d3"
+  },
+  "changeScope": "Only24 arch depth records; 73 PNG,47 other regions, renderer/native/config/projection/source and ball/shadow parameters unchanged",
+  "target": {
+    "seed": 1,
+    "lastTick": 1196,
+    "result": "LOST",
+    "frames": "1006-1022 contiguous at100% and200%; inspect both former1014/1015 and new1020/1021/1022 threshold plus independent shadow"
+  },
+  "evidenceRoot": "E:/R4D/perspective/p3-runtime/builder/transfer-water-dark/water/evidence/browser-front04",
+  "diagnosticsRoot": "E:/R4D/perspective/p3-runtime/builder/transfer-water-dark/water/evidence/depth-scan",
+  "independentRetestPending": true,
+  "fullWaterVerdictPending": true,
+  "server_write": false,
+  "frozenAt": "2026-10-29T10:55:54.757Z",
+  "freezeAuthority": "Lead explicit instruction: full QA starts with comparative retest on same immutable bytes; do not interrupt Dark QA",
+  "finding": {
+    "id": "W-EARLY-POP-01",
+    "status": "OPEN_PENDING_INDEPENDENT_COMPARATIVE_RETEST",
+    "originalEvidence": "26295340cafa78ea8bffe09e8005badda220d731:experiments/p3-masks/transfer/water/visual-qa/early-art-02/REPORT.md",
+    "selfcheck": "Former1014-1015 jump not reproduced; no noticeable jump1020-1022; not an independent closure"
+  },
+  "methodBaseline": {
+    "code": "f1aca21e7b9ba19001e7e8762fcaf2511bf9bf74",
+    "art": "f899a308aed156a11e2a1013292ed68c6669959d",
+    "manifestSha256": "e2e9f7d837b3d05f484f75a877af6992a70ee88363add783d80f3c6e206f431f",
+    "corePackageTree": "008d16a80a26bb77d562a45218b01da09b0d9ff0",
+    "rendererSha256": "760c9bada40cb3ecb944f332f6efa91bb3c1340ce7f1ad9c2cabeda4dca0a3e6"
+  },
+  "browserOrdinaryRuns": [
+    {
+      "seed": 0,
+      "lastTick": 1326,
+      "result": "LOST"
+    },
+    {
+      "seed": 1,
+      "lastTick": 1196,
+      "result": "LOST"
+    },
+    {
+      "seed": 2,
+      "lastTick": 1275,
+      "result": "IN_BUCKET receiver-02"
+    },
+    {
+      "seed": 3675989190,
+      "lastTick": 934,
+      "result": "LOST"
+    },
+    {
+      "seed": 2939425288,
+      "lastTick": 984,
+      "result": "LOST"
+    }
+  ],
+  "actualSelfcheck": [
+    "all5 predeclared ordinary browser runs; every good/bad result preserved",
+    "34 raw contiguous actual Pixi frames1006-1022 at100%/200%, key old/new threshold frames inspected",
+    "other ordinary pillar03/05, arch03/04/08, frog01/05, side/divider and receiver02 cases with neighbors",
+    "Art-off/geometry/source/flat/zoom/pan preserve seed/tick",
+    "actual uint32 browser download exactly matches entire native checkpoint; native import1021 passes",
+    "actual cross-board Dark import rejected, Water seed/tick unchanged; own import clears expected error",
+    "all24 depth records independently derived from unchanged accepted16 feet front edges",
+    "all73PNG/47 other regions/ball-shadow params/app/native/source/accepted inputs unchanged"
+  ],
+  "qaPlan": "Both independent QA on these bytes; VQA begins old1014-1016/new1020-1022 comparative retest including separate shadow, then remaining full Water matrix; current Dark QA continues first",
+  "remainingRisks": [
+    "W-EARLY-POP-01 independent closure pending",
+    "manual silhouettes, inherited scalar/line approximation, unobserved sides/corners and other receivers",
+    "separate shadow/full artistic integration and real-time FPS smoothness remain independent QA scope",
+    "accepted common2D floor and source height limitations are unchanged"
+  ]
+}
