@@ -1,0 +1,461 @@
+{
+  "baselineArt": "17dc9fcdc261562acb581dd8590096819734c807",
+  "candidateAssetsSha256": "2b02dcde6c07266b67285700040e4ae0342f06fb760ae6ed0cf1fdcdc9b6cbad",
+  "seed": 3858699109,
+  "result": {
+    "kind": "LOST",
+    "finalX": 34123.8019097,
+    "nearMissBucketIds": []
+  },
+  "lastTick": 2083,
+  "vqaCommit": "2d40b3f31341bbf57fd2df76aa6637a3f1a303e8",
+  "exactVqaStateMatches": 11,
+  "nativeTraceSha256": "0f1b1b8c123c6bfcee2ed83d4e3bb0312b438569af58847e6f61a84f6530c05a",
+  "coreSha256": "af8e6dea9ee5c46759f99ba3b68f4afa91c740b4fd2aba2d2d3f65bfa66753fa",
+  "runModelSha256": "e5fba420926c045c50b7c814d5760b8f8205982ccb36482f23659acb166a7ccd",
+  "viewerAppSha256": "760c9bada40cb3ecb944f332f6efa91bb3c1340ce7f1ad9c2cabeda4dca0a3e6",
+  "method": "source-view sphere alpha weighted overlap; 4x4 samples/source pixel; bilinear each PNG; union 1-product(1-a); native r16, frozen lift0.65 and scalar/line gate unchanged",
+  "scope": "receiver-04 family only; shadow gates listed separately, shadow coverage not estimated; no Pixi/FPS/browser or independent visual PASS",
+  "candidateBallGateOffTick": 2046,
+  "candidateShadowGateOffTick": 2045,
+  "rows": [
+    {
+      "tick": 2009,
+      "native": [
+        33913.2101863,
+        34689.69617
+      ],
+      "sourceBallCenter": [
+        1443.0205625396175,
+        1221.6931561609456
+      ],
+      "baselineActive": [
+        "receiver-04-front",
+        "receiver-04-left-rim",
+        "receiver-04-right-rim"
+      ],
+      "candidateActive": [
+        "receiver-04-front",
+        "receiver-04-left-rim",
+        "receiver-04-right-rim"
+      ],
+      "baselineCoveragePct": 86.6563,
+      "candidateCoveragePct": 86.6563,
+      "latentAllThreeCoveragePct": 86.6563,
+      "baselineShadowActive": [
+        "receiver-04-front",
+        "receiver-04-left-rim",
+        "receiver-04-right-rim"
+      ],
+      "candidateShadowActive": [
+        "receiver-04-front",
+        "receiver-04-left-rim",
+        "receiver-04-right-rim"
+      ]
+    },
+    {
+      "tick": 2010,
+      "native": [
+        33916.0560204,
+        34694.5779305
+      ],
+      "sourceBallCenter": [
+        1447.1461284014388,
+        1225.619817268963
+      ],
+      "baselineActive": [
+        "receiver-04-front",
+        "receiver-04-left-rim",
+        "receiver-04-right-rim"
+      ],
+      "candidateActive": [
+        "receiver-04-front",
+        "receiver-04-left-rim",
+        "receiver-04-right-rim"
+      ],
+      "baselineCoveragePct": 79.5137,
+      "candidateCoveragePct": 79.5137,
+      "latentAllThreeCoveragePct": 79.5137,
+      "baselineShadowActive": [],
+      "candidateShadowActive": [
+        "receiver-04-front",
+        "receiver-04-left-rim",
+        "receiver-04-right-rim"
+      ]
+    },
+    {
+      "tick": 2011,
+      "native": [
+        33918.9018545,
+        34699.484191
+      ],
+      "sourceBallCenter": [
+        1451.2847078228397,
+        1229.5748632942107
+      ],
+      "baselineActive": [
+        "receiver-04-front",
+        "receiver-04-left-rim",
+        "receiver-04-right-rim"
+      ],
+      "candidateActive": [
+        "receiver-04-front",
+        "receiver-04-left-rim",
+        "receiver-04-right-rim"
+      ],
+      "baselineCoveragePct": 69.6854,
+      "candidateCoveragePct": 69.6854,
+      "latentAllThreeCoveragePct": 69.6854,
+      "baselineShadowActive": [],
+      "candidateShadowActive": [
+        "receiver-04-front",
+        "receiver-04-left-rim",
+        "receiver-04-right-rim"
+      ]
+    },
+    {
+      "tick": 2012,
+      "native": [
+        33921.7476886,
+        34704.4149515
+      ],
+      "sourceBallCenter": [
+        1455.4364123015484,
+        1233.5584535872053
+      ],
+      "baselineActive": [],
+      "candidateActive": [
+        "receiver-04-front",
+        "receiver-04-left-rim",
+        "receiver-04-right-rim"
+      ],
+      "baselineCoveragePct": 0.0,
+      "candidateCoveragePct": 58.1475,
+      "latentAllThreeCoveragePct": 58.1475,
+      "baselineShadowActive": [],
+      "candidateShadowActive": [
+        "receiver-04-front",
+        "receiver-04-left-rim",
+        "receiver-04-right-rim"
+      ]
+    },
+    {
+      "tick": 2013,
+      "native": [
+        33924.5935227,
+        34709.370212
+      ],
+      "sourceBallCenter": [
+        1459.6013542636624,
+        1237.5707491491773
+      ],
+      "baselineActive": [],
+      "candidateActive": [
+        "receiver-04-front",
+        "receiver-04-left-rim",
+        "receiver-04-right-rim"
+      ],
+      "baselineCoveragePct": 0.0,
+      "candidateCoveragePct": 45.5636,
+      "latentAllThreeCoveragePct": 45.5636,
+      "baselineShadowActive": [],
+      "candidateShadowActive": [
+        "receiver-04-front",
+        "receiver-04-left-rim",
+        "receiver-04-right-rim"
+      ]
+    },
+    {
+      "tick": 2014,
+      "native": [
+        33927.4393568,
+        34714.3499725
+      ],
+      "sourceBallCenter": [
+        1463.7796470750015,
+        1241.6119126501496
+      ],
+      "baselineActive": [],
+      "candidateActive": [
+        "receiver-04-front",
+        "receiver-04-left-rim",
+        "receiver-04-right-rim"
+      ],
+      "baselineCoveragePct": 0.0,
+      "candidateCoveragePct": 32.392,
+      "latentAllThreeCoveragePct": 32.392,
+      "baselineShadowActive": [],
+      "candidateShadowActive": [
+        "receiver-04-front",
+        "receiver-04-left-rim",
+        "receiver-04-right-rim"
+      ]
+    },
+    {
+      "tick": 2015,
+      "native": [
+        33930.2851909,
+        34719.354233
+      ],
+      "sourceBallCenter": [
+        1467.9714050526534,
+        1245.6821084472504
+      ],
+      "baselineActive": [],
+      "candidateActive": [
+        "receiver-04-front",
+        "receiver-04-left-rim",
+        "receiver-04-right-rim"
+      ],
+      "baselineCoveragePct": 0.0,
+      "candidateCoveragePct": 18.9019,
+      "latentAllThreeCoveragePct": 18.9019,
+      "baselineShadowActive": [],
+      "candidateShadowActive": [
+        "receiver-04-front",
+        "receiver-04-left-rim",
+        "receiver-04-right-rim"
+      ]
+    },
+    {
+      "tick": 2016,
+      "native": [
+        33933.131025,
+        34724.3829935
+      ],
+      "sourceBallCenter": [
+        1472.1767434766364,
+        1249.7815026033181
+      ],
+      "baselineActive": [],
+      "candidateActive": [
+        "receiver-04-front",
+        "receiver-04-left-rim",
+        "receiver-04-right-rim"
+      ],
+      "baselineCoveragePct": 0.0,
+      "candidateCoveragePct": 7.062,
+      "latentAllThreeCoveragePct": 7.062,
+      "baselineShadowActive": [],
+      "candidateShadowActive": [
+        "receiver-04-front",
+        "receiver-04-left-rim",
+        "receiver-04-right-rim"
+      ]
+    },
+    {
+      "tick": 2017,
+      "native": [
+        33935.9768591,
+        34729.436254
+      ],
+      "sourceBallCenter": [
+        1476.3957786017347,
+        1253.9102629057186
+      ],
+      "baselineActive": [],
+      "candidateActive": [
+        "receiver-04-front",
+        "receiver-04-left-rim",
+        "receiver-04-right-rim"
+      ],
+      "baselineCoveragePct": 0.0,
+      "candidateCoveragePct": 0.1708,
+      "latentAllThreeCoveragePct": 0.1708,
+      "baselineShadowActive": [],
+      "candidateShadowActive": [
+        "receiver-04-front",
+        "receiver-04-left-rim",
+        "receiver-04-right-rim"
+      ]
+    },
+    {
+      "tick": 2018,
+      "native": [
+        33938.8226932,
+        34734.5140145
+      ],
+      "sourceBallCenter": [
+        1480.6286276695128,
+        1258.0685588855324
+      ],
+      "baselineActive": [],
+      "candidateActive": [
+        "receiver-04-front",
+        "receiver-04-left-rim",
+        "receiver-04-right-rim"
+      ],
+      "baselineCoveragePct": 0.0,
+      "candidateCoveragePct": 0.0,
+      "latentAllThreeCoveragePct": 0.0,
+      "baselineShadowActive": [],
+      "candidateShadowActive": [
+        "receiver-04-front",
+        "receiver-04-left-rim",
+        "receiver-04-right-rim"
+      ]
+    },
+    {
+      "tick": 2019,
+      "native": [
+        33941.6685273,
+        34739.616275
+      ],
+      "sourceBallCenter": [
+        1484.875408920459,
+        1262.2565618369176
+      ],
+      "baselineActive": [],
+      "candidateActive": [
+        "receiver-04-front",
+        "receiver-04-left-rim",
+        "receiver-04-right-rim"
+      ],
+      "baselineCoveragePct": 0.0,
+      "candidateCoveragePct": 0.0,
+      "latentAllThreeCoveragePct": 0.0,
+      "baselineShadowActive": [],
+      "candidateShadowActive": [
+        "receiver-04-front",
+        "receiver-04-left-rim",
+        "receiver-04-right-rim"
+      ]
+    },
+    {
+      "tick": 2020,
+      "native": [
+        33944.5143614,
+        34744.7430355
+      ],
+      "sourceBallCenter": [
+        1489.1362416063603,
+        1266.4744448367958
+      ],
+      "baselineActive": [],
+      "candidateActive": [
+        "receiver-04-front",
+        "receiver-04-left-rim",
+        "receiver-04-right-rim"
+      ],
+      "baselineCoveragePct": 0.0,
+      "candidateCoveragePct": 0.0,
+      "latentAllThreeCoveragePct": 0.0,
+      "baselineShadowActive": [],
+      "candidateShadowActive": [
+        "receiver-04-front",
+        "receiver-04-left-rim",
+        "receiver-04-right-rim"
+      ]
+    },
+    {
+      "tick": 2021,
+      "native": [
+        33947.3601955,
+        34749.894296
+      ],
+      "sourceBallCenter": [
+        1493.4112460027377,
+        1270.7223827648368
+      ],
+      "baselineActive": [],
+      "candidateActive": [
+        "receiver-04-front",
+        "receiver-04-left-rim",
+        "receiver-04-right-rim"
+      ],
+      "baselineCoveragePct": 0.0,
+      "candidateCoveragePct": 0.0,
+      "latentAllThreeCoveragePct": 0.0,
+      "baselineShadowActive": [],
+      "candidateShadowActive": [
+        "receiver-04-front",
+        "receiver-04-left-rim",
+        "receiver-04-right-rim"
+      ]
+    },
+    {
+      "tick": 2022,
+      "native": [
+        33950.2060296,
+        34755.0700565
+      ],
+      "sourceBallCenter": [
+        1497.7005434215819,
+        1275.0005523237303
+      ],
+      "baselineActive": [],
+      "candidateActive": [
+        "receiver-04-front",
+        "receiver-04-left-rim",
+        "receiver-04-right-rim"
+      ],
+      "baselineCoveragePct": 0.0,
+      "candidateCoveragePct": 0.0,
+      "latentAllThreeCoveragePct": 0.0,
+      "baselineShadowActive": [],
+      "candidateShadowActive": [
+        "receiver-04-front",
+        "receiver-04-left-rim",
+        "receiver-04-right-rim"
+      ]
+    },
+    {
+      "tick": 2045,
+      "native": [
+        34015.6602139,
+        34880.874548
+      ],
+      "sourceBallCenter": [
+        1600.5948637941488,
+        1382.1778051994006
+      ],
+      "baselineActive": [],
+      "candidateActive": [
+        "receiver-04-front",
+        "receiver-04-left-rim",
+        "receiver-04-right-rim"
+      ],
+      "baselineCoveragePct": 0.0,
+      "candidateCoveragePct": 0.0,
+      "latentAllThreeCoveragePct": 0.0,
+      "baselineShadowActive": [],
+      "candidateShadowActive": []
+    },
+    {
+      "tick": 2046,
+      "native": [
+        34018.506048,
+        34886.6383085
+      ],
+      "sourceBallCenter": [
+        1605.2665230021862,
+        1387.2396710212913
+      ],
+      "baselineActive": [],
+      "candidateActive": [],
+      "baselineCoveragePct": 0.0,
+      "candidateCoveragePct": 0.0,
+      "latentAllThreeCoveragePct": 0.0,
+      "baselineShadowActive": [],
+      "candidateShadowActive": []
+    },
+    {
+      "tick": 2047,
+      "native": [
+        34021.3518821,
+        34892.426569
+      ],
+      "sourceBallCenter": [
+        1609.9558858620908,
+        1392.3368443325635
+      ],
+      "baselineActive": [],
+      "candidateActive": [],
+      "baselineCoveragePct": 0.0,
+      "candidateCoveragePct": 0.0,
+      "latentAllThreeCoveragePct": 0.0,
+      "baselineShadowActive": [],
+      "candidateShadowActive": []
+    }
+  ]
+}
