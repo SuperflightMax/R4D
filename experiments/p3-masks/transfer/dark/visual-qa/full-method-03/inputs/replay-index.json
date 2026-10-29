@@ -1,0 +1,83 @@
+{
+  "board": "dark",
+  "runs": [
+    {
+      "seed": 0,
+      "label": "Исходный seed",
+      "lastTick": 888,
+      "result": {
+        "kind": "IN_BUCKET",
+        "bucketId": "receiver-01"
+      },
+      "path": "replays/dark-seed-0-tick-888.json"
+    },
+    {
+      "seed": 1,
+      "label": "Общий заранее заданный seed 1",
+      "lastTick": 884,
+      "result": {
+        "kind": "IN_BUCKET",
+        "bucketId": "receiver-01"
+      },
+      "path": "replays/dark-seed-1-tick-884.json"
+    },
+    {
+      "seed": 2,
+      "label": "Общий заранее заданный seed 2",
+      "lastTick": 1812,
+      "result": {
+        "kind": "LOST",
+        "finalX": 32824.3930072,
+        "nearMissBucketIds": []
+      },
+      "path": "replays/dark-seed-2-tick-1812.json"
+    },
+    {
+      "seed": 1189667321,
+      "label": "Обычный случайный запуск 1",
+      "lastTick": 1470,
+      "result": {
+        "kind": "LOST",
+        "finalX": 34262.9555904,
+        "nearMissBucketIds": []
+      },
+      "path": "replays/dark-seed-1189667321-tick-1470.json"
+    },
+    {
+      "seed": 1551806092,
+      "label": "Обычный случайный запуск 2",
+      "lastTick": 971,
+      "result": {
+        "kind": "IN_BUCKET",
+        "bucketId": "receiver-02"
+      },
+      "path": "replays/dark-seed-1551806092-tick-971.json"
+    }
+  ],
+  "frames": [
+    {
+      "seed": 0,
+      "tick": 365,
+      "label": "pillar-02: перед боковым контактом",
+      "path": "replays/dark-seed-0-tick-365.json"
+    },
+    {
+      "seed": 0,
+      "tick": 839,
+      "label": "pillar-04: перед контактом угла",
+      "path": "replays/dark-seed-0-tick-839.json"
+    },
+    {
+      "seed": 0,
+      "tick": 880,
+      "label": "receiver-01: приближение",
+      "path": "replays/dark-seed-0-tick-880.json"
+    },
+    {
+      "seed": 2,
+      "tick": 896,
+      "label": "pillar-04: случай из LOST запуска",
+      "path": "replays/dark-seed-2-tick-896.json"
+    }
+  ]
+}

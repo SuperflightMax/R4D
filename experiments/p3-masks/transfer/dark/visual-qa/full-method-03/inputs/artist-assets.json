@@ -1,0 +1,1045 @@
+{
+  "schema": "r4d-p3-assets-v1",
+  "sourceSize": [
+    1536,
+    1536
+  ],
+  "ball": {
+    "path": "assets/ball.png",
+    "anchorPx": [
+      626.5,
+      624.5
+    ],
+    "radiusPx": 487.5
+  },
+  "shadow": {
+    "path": "assets/shadow.png",
+    "anchorPx": [
+      625.5,
+      627.5
+    ],
+    "radiusPx": 554.5,
+    "offsetRadius": [
+      -0.45,
+      0.5
+    ],
+    "scaleRadius": [
+      1.15,
+      2.6
+    ],
+    "alpha": 0.93
+  },
+  "occluders": [
+    {
+      "id": "bowl-base-01",
+      "path": "masks/bowl-base-01.png",
+      "rectPx": [
+        742,
+        290,
+        101,
+        101
+      ],
+      "depthNativeY": 33265.33454057419
+    },
+    {
+      "id": "bowl-base-02",
+      "path": "masks/bowl-base-02.png",
+      "rectPx": [
+        330,
+        384,
+        104,
+        101
+      ],
+      "depthNativeY": 33450.90752935672
+    },
+    {
+      "id": "bowl-base-03",
+      "path": "masks/bowl-base-03.png",
+      "rectPx": [
+        1103,
+        406,
+        109,
+        96
+      ],
+      "depthNativeY": 33488.62133374682
+    },
+    {
+      "id": "bowl-base-04",
+      "path": "masks/bowl-base-04.png",
+      "rectPx": [
+        557,
+        589,
+        110,
+        113
+      ],
+      "depthNativeY": 33847.56246367806
+    },
+    {
+      "id": "bowl-base-05",
+      "path": "masks/bowl-base-05.png",
+      "rectPx": [
+        997,
+        694,
+        117,
+        117
+      ],
+      "depthNativeY": 34034.60165695869
+    },
+    {
+      "id": "bowl-base-06",
+      "path": "masks/bowl-base-06.png",
+      "rectPx": [
+        503,
+        845,
+        124,
+        127
+      ],
+      "depthNativeY": 34282.73632933471
+    },
+    {
+      "id": "skull-base-01",
+      "path": "masks/skull-base-01.png",
+      "rectPx": [
+        459,
+        280,
+        87,
+        101
+      ],
+      "depthNativeY": 33252.91336923354
+    },
+    {
+      "id": "skull-base-02",
+      "path": "masks/skull-base-02.png",
+      "rectPx": [
+        1014,
+        280,
+        89,
+        103
+      ],
+      "depthNativeY": 33255.06699440539
+    },
+    {
+      "id": "skull-base-03",
+      "path": "masks/skull-base-03.png",
+      "rectPx": [
+        712,
+        453,
+        98,
+        116
+      ],
+      "depthNativeY": 33630.85380130959
+    },
+    {
+      "id": "skull-base-04",
+      "path": "masks/skull-base-04.png",
+      "rectPx": [
+        1126,
+        590,
+        108,
+        114
+      ],
+      "depthNativeY": 33870.5786289894
+    },
+    {
+      "id": "skull-base-05",
+      "path": "masks/skull-base-05.png",
+      "rectPx": [
+        418,
+        700,
+        101,
+        124
+      ],
+      "depthNativeY": 34071.4531863284
+    },
+    {
+      "id": "skull-base-06",
+      "path": "masks/skull-base-06.png",
+      "rectPx": [
+        835,
+        835,
+        111,
+        136
+      ],
+      "depthNativeY": 34286.65987892238
+    },
+    {
+      "id": "pillar-01-front",
+      "path": "masks/pillar-01-front.png",
+      "rectPx": [
+        589,
+        368,
+        74,
+        114
+      ],
+      "depthLineNative": [
+        [
+          33157.92330621011,
+          33496.60436102145
+        ],
+        [
+          33238.87054738707,
+          33496.60436102145
+        ]
+      ]
+    },
+    {
+      "id": "pillar-01-side",
+      "path": "masks/pillar-01-side.png",
+      "rectPx": [
+        656,
+        373,
+        17,
+        108
+      ],
+      "depthLineNative": [
+        [
+          33228.26897104712,
+          33432.11384295458
+        ],
+        [
+          33238.87054738707,
+          33496.60436102145
+        ]
+      ]
+    },
+    {
+      "id": "pillar-02-front",
+      "path": "masks/pillar-02-front.png",
+      "rectPx": [
+        308,
+        575,
+        83,
+        132
+      ],
+      "depthLineNative": [
+        [
+          32888.466059023594,
+          33906.863284322484
+        ],
+        [
+          32968.54450449357,
+          33906.863284322484
+        ]
+      ]
+    },
+    {
+      "id": "pillar-02-side",
+      "path": "masks/pillar-02-side.png",
+      "rectPx": [
+        384,
+        584,
+        14,
+        121
+      ],
+      "depthLineNative": [
+        [
+          32958.43714453147,
+          33844.427583699246
+        ],
+        [
+          32968.54450449357,
+          33906.863284322484
+        ]
+      ]
+    },
+    {
+      "id": "pillar-03-front",
+      "path": "masks/pillar-03-front.png",
+      "rectPx": [
+        834,
+        573,
+        84,
+        134
+      ],
+      "depthLineNative": [
+        [
+          33413.945901497354,
+          33908.57664182724
+        ],
+        [
+          33497.000141885284,
+          33908.57664182724
+        ]
+      ]
+    },
+    {
+      "id": "pillar-03-side",
+      "path": "masks/pillar-03-side.png",
+      "rectPx": [
+        911,
+        582,
+        14,
+        123
+      ],
+      "depthLineNative": [
+        [
+          33492.17376185484,
+          33846.18197893555
+        ],
+        [
+          33497.000141885284,
+          33908.57664182724
+        ]
+      ]
+    },
+    {
+      "id": "pillar-04-front",
+      "path": "masks/pillar-04-front.png",
+      "rectPx": [
+        250,
+        809,
+        91,
+        148
+      ],
+      "depthLineNative": [
+        [
+          32867.07610042804,
+          34310.28752414421
+        ],
+        [
+          32947.46142848581,
+          34310.28752414421
+        ]
+      ]
+    },
+    {
+      "id": "pillar-04-side",
+      "path": "masks/pillar-04-side.png",
+      "rectPx": [
+        334,
+        821,
+        13,
+        134
+      ],
+      "depthLineNative": [
+        [
+          32938.73050144855,
+          34255.644991691704
+        ],
+        [
+          32947.46142848581,
+          34310.28752414421
+        ]
+      ]
+    },
+    {
+      "id": "pillar-05-front",
+      "path": "masks/pillar-05-front.png",
+      "rectPx": [
+        1179,
+        811,
+        87,
+        149
+      ],
+      "depthLineNative": [
+        [
+          33725.3173588139,
+          34311.74742272747
+        ],
+        [
+          33810.296894206294,
+          34311.74742272747
+        ]
+      ]
+    },
+    {
+      "id": "pillar-05-side",
+      "path": "masks/pillar-05-side.png",
+      "rectPx": [
+        1259,
+        815,
+        23,
+        143
+      ],
+      "depthLineNative": [
+        [
+          33803.20210511062,
+          34254.151038392454
+        ],
+        [
+          33810.296894206294,
+          34311.74742272747
+        ]
+      ]
+    },
+    {
+      "id": "pillar-06-front",
+      "path": "masks/pillar-06-front.png",
+      "rectPx": [
+        666,
+        959,
+        88,
+        148
+      ],
+      "depthLineNative": [
+        [
+          33253.837238485394,
+          34518.51714886535
+        ],
+        [
+          33332.53277354587,
+          34518.51714886535
+        ]
+      ]
+    },
+    {
+      "id": "pillar-06-side",
+      "path": "masks/pillar-06-side.png",
+      "rectPx": [
+        747,
+        966,
+        18,
+        139
+      ],
+      "depthLineNative": [
+        [
+          33323.851137437254,
+          34473.95864846102
+        ],
+        [
+          33332.53277354587,
+          34518.51714886535
+        ]
+      ]
+    },
+    {
+      "id": "block-01-front",
+      "path": "masks/block-01-front.png",
+      "rectPx": [
+        882,
+        366,
+        52,
+        115
+      ],
+      "depthLineNative": [
+        [
+          33475.463365731994,
+          33452.42460815692
+        ],
+        [
+          33521.64624323191,
+          33496.60436102145
+        ]
+      ]
+    },
+    {
+      "id": "block-01-side",
+      "path": "masks/block-01-side.png",
+      "rectPx": [
+        927,
+        366,
+        47,
+        115
+      ],
+      "depthLineNative": [
+        [
+          33521.64624323191,
+          33496.60436102145
+        ],
+        [
+          33562.11896289431,
+          33436.187571347524
+        ]
+      ]
+    },
+    {
+      "id": "block-02-front",
+      "path": "masks/block-02-front.png",
+      "rectPx": [
+        452,
+        483,
+        57,
+        108
+      ],
+      "depthLineNative": [
+        [
+          33025.1765410109,
+          33664.80338562742
+        ],
+        [
+          33072.21274644587,
+          33711.30107893682
+        ]
+      ]
+    },
+    {
+      "id": "block-02-side",
+      "path": "masks/block-02-side.png",
+      "rectPx": [
+        502,
+        483,
+        49,
+        108
+      ],
+      "depthLineNative": [
+        [
+          33072.21274644587,
+          33711.30107893682
+        ],
+        [
+          33110.306143947695,
+          33644.091599445535
+        ]
+      ]
+    },
+    {
+      "id": "block-03-front",
+      "path": "masks/block-03-front.png",
+      "rectPx": [
+        973,
+        485,
+        57,
+        115
+      ],
+      "depthLineNative": [
+        [
+          33570.22163259809,
+          33676.035185917885
+        ],
+        [
+          33612.3452072982,
+          33726.01431410839
+        ]
+      ]
+    },
+    {
+      "id": "block-03-side",
+      "path": "masks/block-03-side.png",
+      "rectPx": [
+        1023,
+        485,
+        47,
+        115
+      ],
+      "depthLineNative": [
+        [
+          33612.3452072982,
+          33726.01431410839
+        ],
+        [
+          33652.67877392446,
+          33661.04920344483
+        ]
+      ]
+    },
+    {
+      "id": "block-04-front",
+      "path": "masks/block-04-front.png",
+      "rectPx": [
+        681,
+        702,
+        61,
+        136
+      ],
+      "depthLineNative": [
+        [
+          33264.27130361623,
+          34077.64714903807
+        ],
+        [
+          33313.591927959016,
+          34128.4638955501
+        ]
+      ]
+    },
+    {
+      "id": "block-04-side",
+      "path": "masks/block-04-side.png",
+      "rectPx": [
+        735,
+        702,
+        54,
+        136
+      ],
+      "depthLineNative": [
+        [
+          33313.591927959016,
+          34128.4638955501
+        ],
+        [
+          33352.53778310878,
+          34061.55534387107
+        ]
+      ]
+    },
+    {
+      "id": "block-05-front",
+      "path": "masks/block-05-front.png",
+      "rectPx": [
+        342,
+        965,
+        62,
+        135
+      ],
+      "depthLineNative": [
+        [
+          32962.48706149534,
+          34464.39640934765
+        ],
+        [
+          33013.28089645263,
+          34503.758961902764
+        ]
+      ]
+    },
+    {
+      "id": "block-05-side",
+      "path": "masks/block-05-side.png",
+      "rectPx": [
+        397,
+        965,
+        55,
+        135
+      ],
+      "depthLineNative": [
+        [
+          33013.28089645263,
+          34503.758961902764
+        ],
+        [
+          33048.43946664687,
+          34465.764836943534
+        ]
+      ]
+    },
+    {
+      "id": "block-06-front",
+      "path": "masks/block-06-front.png",
+      "rectPx": [
+        992,
+        965,
+        64,
+        135
+      ],
+      "depthLineNative": [
+        [
+          33542.91272291237,
+          34467.13246556261
+        ],
+        [
+          33591.54643542982,
+          34505.104500228255
+        ]
+      ]
+    },
+    {
+      "id": "block-06-side",
+      "path": "masks/block-06-side.png",
+      "rectPx": [
+        1049,
+        965,
+        59,
+        135
+      ],
+      "depthLineNative": [
+        [
+          33591.54643542982,
+          34505.104500228255
+        ],
+        [
+          33635.89168946221,
+          34467.13246556261
+        ]
+      ]
+    },
+    {
+      "id": "rail-left-1",
+      "path": "masks/rail-left-1.png",
+      "rectPx": [
+        236,
+        221,
+        158,
+        357
+      ],
+      "depthNativeY": 33545.984296703595
+    },
+    {
+      "id": "rail-right-1",
+      "path": "masks/rail-right-1.png",
+      "rectPx": [
+        1143,
+        221,
+        158,
+        357
+      ],
+      "depthNativeY": 33545.984296703595
+    },
+    {
+      "id": "rail-left-2",
+      "path": "masks/rail-left-2.png",
+      "rectPx": [
+        152,
+        572,
+        137,
+        281
+      ],
+      "depthNativeY": 34077.64714903807
+    },
+    {
+      "id": "rail-right-2",
+      "path": "masks/rail-right-2.png",
+      "rectPx": [
+        1248,
+        572,
+        137,
+        281
+      ],
+      "depthNativeY": 34077.64714903807
+    },
+    {
+      "id": "rail-left-3",
+      "path": "masks/rail-left-3.png",
+      "rectPx": [
+        74,
+        847,
+        137,
+        291
+      ],
+      "depthNativeY": 34545.11142261462
+    },
+    {
+      "id": "rail-right-3",
+      "path": "masks/rail-right-3.png",
+      "rectPx": [
+        1326,
+        847,
+        137,
+        291
+      ],
+      "depthNativeY": 34545.11142261462
+    },
+    {
+      "id": "far-ramp-1",
+      "path": "masks/far-ramp-1.png",
+      "rectPx": [
+        387,
+        159,
+        85,
+        116
+      ],
+      "depthNativeY": 33007.30444252906
+    },
+    {
+      "id": "far-ramp-2",
+      "path": "masks/far-ramp-2.png",
+      "rectPx": [
+        728,
+        159,
+        81,
+        117
+      ],
+      "depthNativeY": 33007.30444252906
+    },
+    {
+      "id": "far-ramp-3",
+      "path": "masks/far-ramp-3.png",
+      "rectPx": [
+        1066,
+        159,
+        85,
+        117
+      ],
+      "depthNativeY": 33007.30444252906
+    },
+    {
+      "id": "receiver-01-front",
+      "path": "masks/receiver-01-front.png",
+      "rectPx": [
+        55,
+        1218,
+        314,
+        184
+      ],
+      "depthLineNative": [
+        [
+          32812.68412886085,
+          34702.18106608216
+        ],
+        [
+          32946.85127441773,
+          34702.18106608216
+        ]
+      ]
+    },
+    {
+      "id": "receiver-01-left-rim",
+      "path": "masks/receiver-01-left-rim.png",
+      "rectPx": [
+        59,
+        1121,
+        113,
+        126
+      ],
+      "depthLineNative": [
+        [
+          32815.46130854232,
+          34577.92788624059
+        ],
+        [
+          32812.547026457796,
+          34700.947287431554
+        ]
+      ]
+    },
+    {
+      "id": "receiver-01-right-rim",
+      "path": "masks/receiver-01-right-rim.png",
+      "rectPx": [
+        304,
+        1121,
+        84,
+        125
+      ],
+      "depthLineNative": [
+        [
+          32980.470568275196,
+          34566.16797434495
+        ],
+        [
+          32945.90198965992,
+          34700.947287431554
+        ]
+      ]
+    },
+    {
+      "id": "receiver-02-front",
+      "path": "masks/receiver-02-front.png",
+      "rectPx": [
+        390,
+        1221,
+        344,
+        179
+      ],
+      "depthLineNative": [
+        [
+          33105.64403529834,
+          34702.18106608216
+        ],
+        [
+          33254.24688638982,
+          34702.18106608216
+        ]
+      ]
+    },
+    {
+      "id": "receiver-02-left-rim",
+      "path": "masks/receiver-02-left-rim.png",
+      "rectPx": [
+        392,
+        1121,
+        109,
+        127
+      ],
+      "depthLineNative": [
+        [
+          33103.511160666516,
+          34577.92788624059
+        ],
+        [
+          33105.58818763444,
+          34700.947287431554
+        ]
+      ]
+    },
+    {
+      "id": "receiver-02-right-rim",
+      "path": "masks/receiver-02-right-rim.png",
+      "rectPx": [
+        666,
+        1121,
+        71,
+        125
+      ],
+      "depthLineNative": [
+        [
+          33275.47717842954,
+          34579.23081986539
+        ],
+        [
+          33253.38286022788,
+          34700.947287431554
+        ]
+      ]
+    },
+    {
+      "id": "receiver-03-front",
+      "path": "masks/receiver-03-front.png",
+      "rectPx": [
+        768,
+        1224,
+        335,
+        177
+      ],
+      "depthLineNative": [
+        [
+          33420.68207961228,
+          34702.18106608216
+        ],
+        [
+          33575.229044747415,
+          34702.18106608216
+        ]
+      ]
+    },
+    {
+      "id": "receiver-03-left-rim",
+      "path": "masks/receiver-03-left-rim.png",
+      "rectPx": [
+        769,
+        1121,
+        99,
+        126
+      ],
+      "depthLineNative": [
+        [
+          33401.13584335173,
+          34579.23081986539
+        ],
+        [
+          33420.7136102331,
+          34700.947287431554
+        ]
+      ]
+    },
+    {
+      "id": "receiver-03-right-rim",
+      "path": "masks/receiver-03-right-rim.png",
+      "rectPx": [
+        1036,
+        1121,
+        67,
+        125
+      ],
+      "depthLineNative": [
+        [
+          33574.865464142465,
+          34577.92788624059
+        ],
+        [
+          33574.45404551708,
+          34700.947287431554
+        ]
+      ]
+    },
+    {
+      "id": "receiver-04-front",
+      "path": "masks/receiver-04-front.png",
+      "rectPx": [
+        1122,
+        1224,
+        341,
+        177
+      ],
+      "depthLineNative": [
+        [
+          33728.92685073346,
+          34702.18106608216
+        ],
+        [
+          33879.228020123126,
+          34702.18106608216
+        ]
+      ]
+    },
+    {
+      "id": "receiver-04-left-rim",
+      "path": "masks/receiver-04-left-rim.png",
+      "rectPx": [
+        1122,
+        1121,
+        109,
+        127
+      ],
+      "depthLineNative": [
+        [
+          33696.846198992585,
+          34580.533011173065
+        ],
+        [
+          33729.043875471136,
+          34700.947287431554
+        ]
+      ]
+    },
+    {
+      "id": "receiver-04-right-rim",
+      "path": "masks/receiver-04-right-rim.png",
+      "rectPx": [
+        1369,
+        1121,
+        94,
+        125
+      ],
+      "depthLineNative": [
+        [
+          33864.897889349355,
+          34583.13516937307
+        ],
+        [
+          33878.537337404734,
+          34700.947287431554
+        ]
+      ]
+    },
+    {
+      "id": "platform-divider-1",
+      "path": "masks/platform-divider-1.png",
+      "rectPx": [
+        352,
+        1191,
+        85,
+        196
+      ],
+      "depthLineNative": [
+        [
+          32998.72864396838,
+          34868.409312444346
+        ],
+        [
+          33064.12281746144,
+          34868.409312444346
+        ]
+      ]
+    },
+    {
+      "id": "platform-divider-2",
+      "path": "masks/platform-divider-2.png",
+      "rectPx": [
+        724,
+        1191,
+        85,
+        196
+      ],
+      "depthLineNative": [
+        [
+          33303.22026429542,
+          34868.409312444346
+        ],
+        [
+          33367.79701061981,
+          34868.409312444346
+        ]
+      ]
+    },
+    {
+      "id": "platform-divider-3",
+      "path": "masks/platform-divider-3.png",
+      "rectPx": [
+        1083,
+        1191,
+        77,
+        196
+      ],
+      "depthLineNative": [
+        [
+          33596.26790426117,
+          34868.409312444346
+        ],
+        [
+          33655.12266040492,
+          34868.409312444346
+        ]
+      ]
+    }
+  ]
+}

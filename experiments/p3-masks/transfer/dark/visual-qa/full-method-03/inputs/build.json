@@ -1,0 +1,55 @@
+{
+  "schema": "r4d-p3-transfer-build-v1",
+  "board": "dark",
+  "label": "Dark",
+  "sourceCommit": "c73d6128970b2b022d5313b08c34cafdec9a1bc3",
+  "coreCommit": "5a6fa03f1cdb3de88a2d9c7dbe795eb8e2a7f023",
+  "nativeProvenance": {
+    "coreCommit": "5a6fa03f1cdb3de88a2d9c7dbe795eb8e2a7f023",
+    "sourceTreeGitOid": "6539b91a379d32c22281d43e71bb17fecb608437",
+    "readMode": "exact Git objects; no source edits",
+    "inputGitBlobOids": [
+      "1d59fa5216e98f318f0b7e9739cb40b2542d68fe",
+      "25affc928add181fae5211e5fd863ef0dfa4e044",
+      "34e2e8672cfe78671b527ae1a0fc412a0647a293",
+      "3c65ca5b33a455bc589aaeb406ccc664dbb6d462",
+      "440d6d4bec18626876a4251aebbdde37c3ae97b2",
+      "48859e2c31479e72076e2db6e1d73377ee6f9357",
+      "4eff6a89c53b43c3eba9d0963c5fd4b1e4ee3612",
+      "78065aa2dfb164905f05f0a86b6f7444e589884c",
+      "7cac28acf462fc60e420e3dbeacdf36aafeb5761",
+      "90db0e89547b9b17ce3aeab60f5f404a91cf45ed",
+      "aa0ec2b622bb5e80c59bd330a5f465bed69402b6",
+      "bf832c5dc41108d6ae9fb5064aae6fecec6f8002",
+      "cfd73d71c44a6a646ed8512e0622cf5992eb84bc",
+      "d8b49b61e1d4bea81ddad010812859697fe79c5c"
+    ],
+    "nodeVersion": "24.15.0",
+    "typescriptTransform": "node:module stripTypeScriptTypes transform; sourceMap=false",
+    "bundler": "rolldown 1.2.15",
+    "minify": true,
+    "compiledSha256": "af8e6dea9ee5c46759f99ba3b68f4afa91c740b4fd2aba2d2d3f65bfa66753fa",
+    "corePackageTree": "008d16a80a26bb77d562a45218b01da09b0d9ff0",
+    "reusedExactCompiledModule": true,
+    "baselineManifestSha256": "e2e9f7d837b3d05f484f75a877af6992a70ee88363add783d80f3c6e206f431f"
+  },
+  "p1Commit": "4b47db04c7140ebf88f69b91faa0b790d46f22ec",
+  "orderCommit": "c6603f0f327350172df44687a4d4ead19e0e5e6b",
+  "pixi": "8.22.0",
+  "artistSource": {
+    "commit": "17dc9fcdc261562acb581dd8590096819734c807",
+    "prefix": "experiments/p3-masks/transfer/dark/asset-artist/",
+    "assetsSha256": "ef5eb34be622f5ce6356d6fa51d7902c334a1f1f3c95acce225d7340928bbc29"
+  },
+  "methodBaseline": {
+    "code": "f1aca21e7b9ba19001e7e8762fcaf2511bf9bf74",
+    "art": "f899a308aed156a11e2a1013292ed68c6669959d",
+    "manifestSha256": "e2e9f7d837b3d05f484f75a877af6992a70ee88363add783d80f3c6e206f431f",
+    "depth": "unchanged scalar/line; same alpha restoration passes"
+  },
+  "configSha256": "14be2a023833d266d1e333bf582af5fd5885deb445698c10ebd846ef0cc080b2",
+  "manifestSha256": "3fab422bd1f74d477d1648620c97ad6d7b8b0a55a70a1102d6e6885def564d81",
+  "projectionSha256": "4dfa46589bb3fdfc8e2ad8ff2554737697e3ce9172c5b8d5c5583577df0c8c48",
+  "sourceSha256": "7ceff71bd0a871fecd725527dff5522450c8e75a74eb99c107b5d8624bf8fa3a",
+  "builtAt": "2026-10-29T10:16:40.885Z"
+}
