@@ -34,9 +34,31 @@ Read-only source-alpha estimate на всех1197 настоящих native stat
 доли (~0.0017%). Это лишь численный контроль переноса threshold, не Pixi-proof.
 Его воспроизводимый script/data — water/evidence/depth-scan/. Никаких PNG edits.
 
+Дополнительный bounded selfcheck завершён. Все пять заранее объявленных seeds
+реально завершились в browser:0 LOST1326,1 LOST1196,2 receiver02/1275,
+3675989190 LOST934,2939425288 LOST984. Ни один плохой исход не отброшен.
+Полный downloaded browser checkpoint seed3675989190/t934 структурно совпал
+с native replay вплоть до config/rng/state; evidence large-seed-browser-replay-check.json.
+Actual соседние кадры: seed0 pillar05/469,pillar03/585,arch04/697,frog05/996,
+right4/1038,near-divider3/1122,arch08/1147; seed2 arch03 right-foot350/685,
+left-foot893,near-divider1/1082,arch07/1105,left5/1165 и receiver02/1275.
+По каждому contact сохранены соседние ±1, нижний receiver кадр не обрезан.
+Также frog01/104–106, отдельный uint32 seed2939425288/left3/701–703.
+Art-off/geometry/source/flat сохраняют seed0/t106. Own native import1021
+показал точное воспроизведение. Actual Dark JSON отвергнут с сохранением
+Water seed2939425288/t703; после этого own1021 import очистил ожидаемую ошибку.
+Это bounded coverage; все71 masks со всех сторон и все четыре receiver в
+движении не заявлены проверенными. Общая2D плоскость/высота исходника не менялась.
+
+Отдельный retest record: собственный runtime water/candidates/front-edge-04.retest.json.
+Manifest17208 bytes;100 payload/3561039 bytes, всего101 files/3578247 bytes.
+Owner command/root/listener logs — evidence/browser-front04/preview-ownership.json;
+10:48:42Z PID29572/127.0.0.1:6868. Совокупный собственный transfer runtime тогда
+Water31.18MiB/Dark12.04MiB. Renderer/native/source/inputs всё ещё прежние.
+
 Следующее: короткий независимый VQA retest того же диапазона, включая отдельную
-тень и новый threshold; затем полный Water freeze и full TQA/VQA. Остальные
-арки/границы/приёмники продолжают ordinary selfcheck, не выдавать его за full QA.
+тень и новый threshold; затем полный Water freeze и full TQA/VQA. Selfcheck
+не подменяет независимый вердикт. Preview/immutable bytes удерживать для QA.
 Первый полный original17dc и early02 сохранены. Новый sort/physics отсутствует.
 Snapshot перед сборкой10:33:44Z: RAMfree16.087GiB, CPU12%,
 C16.209/D16.277/E11.871GiB. server_write=false.
