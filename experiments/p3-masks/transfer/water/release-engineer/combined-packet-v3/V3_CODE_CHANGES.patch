@@ -1,0 +1,223 @@
+--- combined_remote_v2.py
++++ combined_remote_v3.py
+@@ -26,0 +27,130 @@
++
++HTTP_HEADER_NAMES=('Location','X-Frame-Options','Cache-Control','X-Robots-Tag',
++                   'X-Content-Type-Options','Referrer-Policy','Content-Type')
++CLOSED_TOKENS=('CTO-P3-F01-20261028T064706Z-ddfe257b6856',
++               'CTO-P3-WD04-20261029T142713Z-ae0b1054d192',
++               'CTO-P3-WD04-V2-20261029T144858Z-91df426327f8')
++
++class EvidenceError(RuntimeError):
++    def __init__(self,reason,evidence):
++        super().__init__('STOP: '+reason);self.evidence=evidence
++
++def require_evidence(ok,reason,evidence):
++    if not ok:raise EvidenceError(reason,evidence)
++
++def http_probe(host,path,foreign=False):
++    """One GET, no redirects/auth; only digest/length/selected headers survive."""
++    c=None;digest=hashlib.sha256();count=0
++    result={'path':path,'foreignOrigin':foreign,'startedUtc':now(),
++            'status':None,'headers':{},'bodyComplete':False}
++    try:
++        c=http_client.HTTPSConnection(host,timeout=25)
++        headers={'User-Agent':'R4D-P3-combined-delivery/1'}
++        if foreign:headers['Origin']='https://example.invalid'
++        c.request('GET',path,headers=headers);r=c.getresponse()
++        result.update(responseUtc=now(),status=r.status,
++                      headers={k:r.getheader(k) for k in HTTP_HEADER_NAMES})
++        while True:
++            chunk=r.read(65536)
++            if not chunk:break
++            digest.update(chunk);count+=len(chunk)
++        result.update(bodyBytes=count,bodySha256=digest.hexdigest(),bodyComplete=True)
++        return result
++    except Exception as error:
++        result.update(bodyBytes=count,bodySha256=digest.hexdigest(),bodyComplete=False)
++        raise EvidenceError('HTTP request failed: '+type(error).__name__+': '+str(error),
++                            {'httpObservations':[result]}) from error
++    finally:
++        if c is not None:c.close()
++
++def collect_http(host,requests):
++    observations=[]
++    for path,foreign in requests:
++        try:observations.append(http_probe(host,path,foreign))
++        except EvidenceError as error:
++            partial=error.evidence.get('httpObservations',[])
++            raise EvidenceError(str(error).removeprefix('STOP: '),
++                                {'httpObservations':observations+partial}) from error
++    return observations
++
++def verify_protection(observations,baseline,catalog_key):
++    evidence={'httpObservations':observations,'catalogBinding':catalog_key}
++    require_evidence(len(observations)==3,'expected exactly three protection observations',evidence)
++    require_evidence([(r['path'],r['foreignOrigin']) for r in observations]==
++                     [('/review/',False),('/review/',True),('/review/.p3-combined-probe',False)],
++                     'protection request context differs',evidence)
++    require_evidence([r['status'] for r in observations]==baseline['statuses'],
++                     'strict protection statuses differ',evidence)
++    require_evidence(all(r['bodyComplete'] and r['headers']==baseline['headers'] for r in observations),
++                     'strict seven protection headers/completeness differ',evidence)
++    expected=baseline[catalog_key];normal=observations[0]
++    require_evidence(normal['bodyBytes']==expected['bytes'] and normal['bodySha256']==expected['sha256'],
++                     'normal catalog body identity differs',evidence)
++    return True
++
++def verify_payload(observation,expected,policy):
++    """Report actual access limitations; never promote HTML/denial to module success."""
++    evidence={'httpObservations':[observation],'expectedPayload':expected}
++    require_evidence(observation['bodyComplete'],'resource body incomplete',evidence)
++    status=observation['status'];content_type=(observation['headers'].get('Content-Type') or '').split(';',1)[0].strip().lower()
++    result={'path':observation['path'],'status':status,'payloadIdentityVerified':False,
++            'javascriptMimeVerified':False if expected['kind']=='javascript' else None,
++            'moduleMimeBodyVerified':False if expected['kind']=='javascript' else None,
++            'outcome':'UNVERIFIED','reason':None}
++    if status in policy['accessLimitationStatuses']:
++        result.update(outcome='UNVERIFIED_ACCESS_RESPONSE',reason='No approved payload established; no access bypass')
++        return result
++    require_evidence(status==200,'unexpected resource status',evidence)
++    matches=observation['bodyBytes']==expected['bytes'] and observation['bodySha256']==expected['sha256']
++    if not matches:
++        if content_type=='text/html':
++            result.update(outcome='UNVERIFIED_HTML_RESPONSE',reason='HTML200 differs from approved payload; login/scene not inferred')
++            return result
++        raise EvidenceError('resource body identity differs',evidence)
++    result['payloadIdentityVerified']=True
++    if expected['kind']=='javascript':
++        result['javascriptMimeVerified']=content_type in policy['javascriptMimeTypes']
++        result['moduleMimeBodyVerified']=result['javascriptMimeVerified']
++        result.update(outcome='VERIFIED' if result['moduleMimeBodyVerified'] else 'UNVERIFIED_MODULE_MIME',
++                      reason=None if result['moduleMimeBodyVerified'] else 'Exact JS bytes but response MIME not an accepted JavaScript type')
++    else:result['outcome']='VERIFIED'
++    return result
++
++def opaque_doc_snapshot(path,prefix_bytes=None):
++    st=path.lstat();require(stat.S_ISREG(st.st_mode),'documentation target not regular')
++    full=hashlib.sha256();prefix=hashlib.sha256();count=0;remaining=prefix_bytes
++    with path.open('rb') as stream:
++        while True:
++            chunk=stream.read(65536)
++            if not chunk:break
++            full.update(chunk);count+=len(chunk)
++            if remaining is not None and remaining>0:
++                size=min(remaining,len(chunk));prefix.update(chunk[:size]);remaining-=size
++    require(count==st.st_size,'documentation changed during snapshot')
++    result={'path':str(path),'inode':st.st_ino,'uid':st.st_uid,'gid':st.st_gid,
++            'mode':stat.S_IMODE(st.st_mode),'bytes':count,'sha256':full.hexdigest()}
++    if prefix_bytes is not None:
++        require(remaining==0,'documentation original prefix shorter than before')
++        result.update(prefixBytes=prefix_bytes,prefixSha256=prefix.hexdigest())
++    return result
++
++def verify_doc_prefix(before,after):
++    proof={'docsBefore':before,'docsAfter':after}
++    require_evidence(all(before[k]==after[k] for k in ['path','inode','uid','gid','mode']),
++                     'documentation identity/metadata changed',proof)
++    require_evidence(after['bytes']>=before['bytes'] and after['prefixBytes']==before['bytes'] and
++                     after['prefixSha256']==before['sha256'],'documentation original prefix changed',proof)
++    return True
++
++def append_document(path,data,before):
++    require_evidence(opaque_doc_snapshot(path)==before,'documentation drift immediately before append',{'docsBefore':before})
++    with path.open('ab') as stream:
++        current=os.fstat(stream.fileno())
++        require_evidence((current.st_ino,current.st_uid,current.st_gid,stat.S_IMODE(current.st_mode),current.st_size)==
++                         (before['inode'],before['uid'],before['gid'],before['mode'],before['bytes']),
++                         'documentation open-file identity changed',{'docsBefore':before})
++        stream.write(data);stream.flush();os.fsync(stream.fileno())
++    after=opaque_doc_snapshot(path,before['bytes']);verify_doc_prefix(before,after)
++    return {'before':before,'after':after,'originalPrefixAndMetadataPreserved':True}
++
++
+@@ -38 +168,2 @@
+-    require(auth['token']!='CTO-P3-F01-20261028T064706Z-ddfe257b6856','completed Jungle token cannot be reused')
++    require(auth['token'] not in CLOSED_TOKENS,'closed historical token cannot be reused')
++    require(s['publicHost']==s['httpBaseline']['context']['host'] and s['transport']==s['httpBaseline']['context']['transport'],'HTTP baseline context differs')
+@@ -80,9 +210,0 @@
+-    def http(path,foreign=False):
+-        c=http_client.HTTPSConnection(s['publicHost'],timeout=25)
+-        headers={'User-Agent':'R4D-P3-combined-delivery/1'}
+-        if foreign:headers['Origin']='https://example.invalid'
+-        c.request('GET',path,headers=headers);r=c.getresponse()
+-        keys=['Location','X-Frame-Options','Cache-Control','X-Robots-Tag','X-Content-Type-Options','Referrer-Policy','Content-Type']
+-        result={'path':path,'status':r.status,'headers':{k:r.getheader(k) for k in keys},'foreignOrigin':foreign}
+-        r.read();c.close();return result
+-
+@@ -93,3 +215,3 @@
+-        checks=[http('/review/'),http('/review/',True),http('/review/.p3-combined-probe')]
+-        require([r['status'] for r in checks]==[303,403,404],'prewrite protection differs')
+-        if phase=='preflight':return {'status':'PREFLIGHT_PASS','utc':now(),'euid':os.geteuid(),'resources':res,'serverWrites':False}
++        checks=collect_http(s['publicHost'],[('/review/',False),('/review/',True),('/review/.p3-combined-probe',False)])
++        verify_protection(checks,s['httpBaseline'],'catalogBefore')
++        if phase=='preflight':return {'status':'PREFLIGHT_PASS','utc':now(),'euid':os.geteuid(),'resources':res,'serverWrites':False,'httpObservations':checks,'baselineMetadataSha256':s['baselineMetadataSha256'],'absentTargets':s['preconditions']}
+@@ -161,9 +283,22 @@
+-        paths=s['publicSmokePaths'];checks=[http(path) for path in paths]
+-        require(all(r['status']==303 for r in checks),'unexpected unauthenticated response')
+-        foreign=http('/review/',True);dot=http('/review/.p3-combined-probe')
+-        for a,b in zip(st['beforeHttp'],[checks[0],foreign,dot]):
+-            require(a['status']==b['status'] and a['headers']==b['headers'],'protection header/status drift')
+-        st.update(status='POSTCHECKED_AUTH_LIMITATION',postchecksUtc=now(),publicChecks=len(checks)+2,
+-            auth303=len(checks),foreignOrigin403=True,dotfile404=True,oldRoutes=s['oldRouteCount'],
+-            postAuthJsMimeBodyUiVerified=False,postAuthLimitation='Normal login barrier; no cookies/login/auth bypass')
+-        persist(st,True);return {k:st[k] for k in ['status','postchecksUtc','publicChecks','auth303','oldRoutes','postAuthJsMimeBodyUiVerified']}
++        paths=s['publicSmokePaths'];require(len(paths)+2==217,'HTTP plan count changed')
++        checks=collect_http(s['publicHost'],[(path,False) for path in paths]+[('/review/',True),('/review/.p3-combined-probe',False)])
++        try:
++            verify_protection([checks[0],checks[-2],checks[-1]],s['httpBaseline'],'catalogAfter')
++            payloads=[verify_payload(r,s['publicPayloadExpectations'][r['path']],s['publicResourcePolicy'])
++                      for r in checks[:-2] if r['path'] in s['publicPayloadExpectations']]
++            modules=[r for r in payloads if r['moduleMimeBodyVerified'] is not None]
++            require(len(modules)==10,'browser module observation count differs')
++        except EvidenceError as error:
++            error.evidence['httpObservations']=checks
++            raise
++        counts={str(status):sum(r['status']==status for r in checks) for status in sorted({r['status'] for r in checks})}
++        st.update(status='POSTCHECKED_WITH_ACCESS_LIMITATIONS',postchecksUtc=now(),publicChecks=len(checks),
++            httpObservations=checks,httpStatusCounts=counts,payloadResults=payloads,moduleResults=modules,
++            approvedPayloadsVerified=sum(r['payloadIdentityVerified'] for r in payloads),
++            publicModuleMimeBodyVerified=all(r['moduleMimeBodyVerified'] for r in modules),
++            limitedResources=sum(r['outcome']!='VERIFIED' for r in payloads),
++            foreignOrigin403=True,dotfile404=True,normalCatalogIdentityVerified=True,oldRoutes=s['oldRouteCount'],
++            oldRouteHttpAcceptance='Observed only; opaque original bytes/metadata remain strictly verified',
++            postAuthJsMimeBodyUiVerified=False,publicUiVerifiedBySsh=False,
++            accessLimitation='Only measured responses establish payload/MIME; HTML/denial does not establish scene or module. Separate lawful IAB evidence may follow; no access bypass.')
++        persist(st,True);return {k:st[k] for k in ['status','postchecksUtc','publicChecks','httpStatusCounts','approvedPayloadsVerified','publicModuleMimeBodyVerified','limitedResources','moduleResults','postAuthJsMimeBodyUiVerified']}
+@@ -174 +309 @@
+-        require(st['status']=='POSTCHECKED_AUTH_LIMITATION','unexpected document state');snip(new,s['newSnippetSha256'])
++        require(st['status']=='POSTCHECKED_WITH_ACCESS_LIMITATIONS','unexpected document state');snip(new,s['newSnippetSha256'])
+@@ -182 +317 @@
+-          +str(st['publicChecks'])+' HTTPS checks; normal auth303/Origin403/dotfile404 protections unchanged. Public post-auth JS MIME/body/UI not verified; no login/cookies/auth/globalMIME/services/ports changes.\n'
++          +str(st['publicChecks'])+' HTTPS checks; exact prospective context normal catalog200/bound new hash, Origin403 and dotfile404 with seven bound headers. Status counts '+json.dumps(st['httpStatusCounts'],sort_keys=True)+'. Approved payloads verified '+str(st['approvedPayloadsVerified'])+'; all10 public JS MIME/body verified='+str(st['publicModuleMimeBodyVerified'])+'; limited responses '+str(st['limitedResources'])+'. HTML/login/denial never counted as scene/module success. Public UI requires separate lawful IAB receipt; SSH does not verify UI. No auth/cookies/globalMIME/services/ports changes.\n'
+@@ -186,6 +321,4 @@
+-        for p in docs:require(auth['token'].encode() not in p.read_bytes(),'token already documented; do not repeat append')
+-        hashes=[]
+-        for p in docs:
+-            with p.open('ab') as f:f.write(block.encode());f.flush();os.fsync(f.fileno())
+-            hashes.append({'path':str(p),'sha256':sha(p.read_bytes())})
+-        st.update(status='PUBLISHED_COMBINED_PARTIAL_WITH_AUTH_LIMITATION',documentedUtc=now(),docs=hashes);persist(st,True)
++        before=[opaque_doc_snapshot(p) for p in docs]
++        st.update(documentStartedUtc=now(),docsBefore=before);persist(st,True)
++        proofs=[append_document(p,block.encode(),snapshot) for p,snapshot in zip(docs,before)]
++        st.update(status='PUBLISHED_COMBINED_PARTIAL_WITH_ACCESS_LIMITATIONS',documentedUtc=now(),docs=proofs);persist(st,True)
+@@ -193 +326 @@
+-        return {'status':st['status'],'utc':now(),'docs':hashes,'publishedRecordSha256':sha((backup/'PUBLISHED.json').read_bytes()),'windowReleasedByEngineer':False}
++        return {'status':st['status'],'utc':now(),'docs':proofs,'publishedRecordSha256':sha((backup/'PUBLISHED.json').read_bytes()),'windowReleasedByEngineer':False}
+--- combined_execute_v2.py
++++ combined_execute_v3.py
+@@ -37 +37 @@
+-    scope_bytes=(CONTROL/'combined-packet/WRITE_SCOPE.json').read_bytes();s=json.loads(scope_bytes)
++    scope_bytes=(CONTROL/'combined-packet-v3/WRITE_SCOPE_V3.json').read_bytes();s=json.loads(scope_bytes)
+@@ -39 +39 @@
+-    remote=(CONTROL/'combined_remote_v2.py').read_bytes()
++    remote=(CONTROL/'combined_remote_v3.py').read_bytes()
+@@ -47 +47 @@
+-    require(auth['token']!='CTO-P3-F01-20261028T064706Z-ddfe257b6856','completed Jungle token forbidden')
++    require(auth['token'] not in ['CTO-P3-F01-20261028T064706Z-ddfe257b6856','CTO-P3-WD04-20261029T142713Z-ae0b1054d192','CTO-P3-WD04-V2-20261029T144858Z-91df426327f8'],'closed historical token forbidden')
+@@ -50 +50 @@
+-    execution=RUNTIME/'execution-v2';execution.mkdir(parents=True,exist_ok=True)
++    execution=RUNTIME/'execution-v3';execution.mkdir(parents=True,exist_ok=True)
+@@ -64 +64 @@
+-             'except Exception as e:\n print(json.dumps({"status":"STOP","phase":'+repr(args.phase)+',"reason":str(e)})); raise SystemExit(1)\n').encode()
++             'except Exception as e:\n print(json.dumps({"status":"STOP","phase":'+repr(args.phase)+',"reason":str(e),"evidence":getattr(e,"evidence",None)})); raise SystemExit(1)\n').encode()

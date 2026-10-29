@@ -1,3 +1,13 @@
+Current LOCAL V3: **WAIT_V3_FULL_REVIEW_AND_EXACT_CTO_TOKEN; server_write=false; token=null.**
+[Canonical v3](../../water/release-engineer/COMBINED_INTENT_V3.md): strict200/403/404+7headers+catalogidentity;217HTTP
+plan unchanged; actual helper offline regression PASS, docs prefix proof.
+No v3 HTTP/IAB/launcher/phase/write attempt. execution-v3 fresh local/empty.
+Both prior tokens CLOSED; v1/v2 source/intent/index/failed receipts preserved.
+Same release/artifacts/PARTIAL verdicts; idle until full Lead/CTO review, NEW
+exact CTO token and separate execution command. Window remains RESERVED P3.
+
+---
+
 Current RO body identification: **old catalog size/SHA MATCH; server_write=false.**
 [Exact one-GET receipt and limits](../../water/release-engineer/REVIEW_BODY_IDENTITY_2026-10-29.md). Response15:12:00Z HTTP200,14511bytes,
 SHA eb57e35b…a6885. Only current content identity in this context; not14:52
