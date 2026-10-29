@@ -59,7 +59,7 @@ Release gate закрыт: серверные writes сейчас 0. После 
 
 Первый материальный результат — [CHECKPOINT_C01.md](CHECKPOINT_C01.md), commit `4eeac03`. Пять actual initial send receipts и новые Stage 2 turns — [DISPATCH.json](DISPATCH.json), commit `a1ca011`. Каждый специалист получил одно первоначальное поручение; дальнейшие сообщения передают интерфейсы и коррекции внутри него. Production начался. Release/server writes = 0.
 
-### C02 проверен; готовится c03
+### C02 проверен; frozen c03 проходит адресную QA
 
 Producer freeze успешно завершён до capacity-сбоя его модели. Consumer `398b0daaaad914cc67b8390a51454d21db524e7a`, frozen root `E:/R4D/perspective/p5-runtime/builder/output/previews/c02/public`; index рядом, 10707 bytes, SHA256 `f40040bb40d529b7bf1f289e661d69f7f882fddfc962e40cdc5616a59c9d9389`. Inventory: 29 файлов / 21668434 bytes; app SHA256 `4a003dd39212f21b7a3dd1baa82c0d0738af3a9767c6e51225b9b54f5aac325c`, staged manifest SHA256 `275ade538d30119434723339487cf7d036a35bbbefe4ad6807f4dd810a6e4491`. Canonical input/native/Artist/deps pins — в producer index, не в пересказе чата.
 
@@ -68,6 +68,10 @@ Actual c02 preview на момент завершения QA: `http://127.0.0.1:
 Обе independent QA завершены и pushed: TQA `a3fac041969bcc287ae5fbb0c25a53a71034d4ea:experiments/p5-regenerated-objects/qa/technical/REPORT_C02.md`; VQA `c662b0badfb5e44fb5ab6a55a8152f1570d18f0f:experiments/p5-regenerated-objects/qa/visual/REPORT_C02.md`. TQA подтвердил package/native/control invariants и 100 actual snapshots; VQA положительно оценил полный Jungle, материалы, свет, тени и опору. Receiver01/03 visible entry и Field закрывают прежние findings. Общего PASS нет: обе QA независимо подтвердили C02-V01 — расширенный near-ledge clip закрывает сферу над открытым полом. Native/config/P1 не являются причиной.
 
 Artist clip-only correction pushed `a5ec68fb2ed6aeacd8c66bc575166567bd0c3966:experiments/p5-regenerated-objects/asset-artist/HANDOFF_MINI_03.md`. Manifest mini03 89838 bytes SHA256 `a083143b199f78cefe2725907b91385145cb9c29067ad319dd862974a13714a0`; FOREGROUND mini03 15922 bytes SHA256 `118abd360f963b6088dab47f23c56554e9d4b31ef718d91345954fa3cc97e870`; DELTA 12713 bytes SHA256 `0dbab3cffcc65ced429fccf0993533e43038541c0b6370559729fec6a493de3a`. Меняется только near-ledge.sourceClipPx по всей каменной кромке; 17 PNG, остальные маски, bindings, receiver policy прежние. Контур выведен из силуэта generated floor, не из seed/tick. Статические проверки не означают runtime PASS. Builder после fresh idle проверки получил c03 build/selfcheck/freeze/handoff; затем обе QA проверят дельту и регрессии. Common/source oracle и завершённые матрицы без причины не повторять.
+
+C03 frozen: `E:/R4D/perspective/p5-runtime/builder/output/previews/c03/public`, 29 files / 21675411 bytes. Index 11618 bytes SHA256 `17838d163e6c710cad513a68b5cd5ba5c6543a708761b96e7ee62fa362c2ef2d`; consumer pin `af23e124cf5bd1d9de884082ffbc993448217112` (c02 handoff docs, код тот же); app.js SHA256 `4a003dd39212f21b7a3dd1baa82c0d0738af3a9767c6e51225b9b54f5aac325c` побайтно прежний. Staged manifest 66026 bytes SHA256 `13f443587180095cb701564ee7cdd24a3e1e062932cc075a3cb1de37e056ef91`. Preview owner `http://127.0.0.1:55185/`, PID12500/session67163/rootc03, начат 00:58:57 UTC после штатной замены own c02 listener. C01/C02 не менялись.
+
+После fresh idle checks назначены C03 delta-проходы: TQA turn `01a1852d-1fdf-7712-8a2e-56a26382ecc5`, VQA `01a1852d-2160-7a92-a8db-7847282255ad`, Release local audit `01a1852c-8886-7d62-8984-2f97d63110af`. Builder selfcheck `01a18528-c51f-72d3-9249-def194465143` параллелен, formal handoff docs pending. Все проверяют тот же immutable index; current owner/read-only identity проверены Lead. C03 PASS ещё не выдан, server reads/writes по-прежнему0.
 
 ### Сохранённые результаты c01
 
