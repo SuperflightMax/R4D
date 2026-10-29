@@ -41,6 +41,16 @@ rail и basin rims подготовлены. Ошибка широкой rail ma
 проходят. Принимаемый visual PASS не заявляется. Следующий шаг — exact full
 handoff, затем смотреть названные реальные frames/дефекты через Lead.
 
+После независимого VQA/поручения Lead подготовлен один data-only вариант:
+variants/arch-front-edge-01/assets.json. Baseline17dc и прежний assets.json
+не меняются. Общее правило всех8 arches — midpoint принятого front edge
+feet вместо centroid;24 depth entries,73 PNG и47 прочих областей byte-unchanged.
+Bounded self-check seed1: crossing переносится1015→1021, geometric overlap
+в момент crossing21.324%→0.001%; native state1014 совпал с Builder checkpoint,
+LOST1196 не изменился. Это оценка alpha, не Pixi/независимый PASS. Следующее:
+exact comparative handoff Builder, actual frames1006–1018 и1020–1022,
+отдельная тень; при неуспехе сохранить отрицательное, не менять renderer.
+
 Server_write=false. Свои дополнительные peak <=0.5GiB RAM/0.2GiB E;
 свежий09:32:15Z snapshot: RAMfree16.557GiB, CPU2%, C16.338/D16.280/E11.942GiB.
 Тяжёлое только E runtime suffix asset-artist/transfer-water-dark/water.

@@ -1,0 +1,986 @@
+{
+  "kind": "bounded alpha estimate; not browser/independent QA",
+  "ruleIndependentOfSeed": true,
+  "baselineArt": "17dc9fcdc261562acb581dd8590096819734c807",
+  "sameNativeSeed": 1,
+  "nativeResult": {
+    "kind": "LOST",
+    "finalX": 33728.1429454,
+    "nearMissBucketIds": []
+  },
+  "lastTick": 1196,
+  "nativeState1014MatchesBuilderCheckpointExactly": true,
+  "limits": "Pillow bilinear alpha sampling approximates Pixi texture filtering; no shadow/movement/art PASS. Actual Pixi comparative frames required.",
+  "flips": {
+    "baseline": [
+      {
+        "tick": 1015,
+        "native": [
+          33026.2101257,
+          34756.6559934
+        ],
+        "source": [
+          516.2692108269155,
+          958.2736643261883
+        ],
+        "baseline": {
+          "occludedAlphaPercent": 0.0,
+          "active": []
+        },
+        "frontEdge": {
+          "occludedAlphaPercent": 21.324,
+          "active": [
+            "arch-07-left-body",
+            "arch-07-lintel",
+            "arch-07-right-body"
+          ]
+        },
+        "allGeometric": {
+          "occludedAlphaPercent": 21.324,
+          "active": [
+            "arch-07-left-body",
+            "arch-07-lintel",
+            "arch-07-right-body"
+          ]
+        }
+      }
+    ],
+    "frontEdge": [
+      {
+        "tick": 1021,
+        "native": [
+          33019.4940429,
+          34779.8438391
+        ],
+        "source": [
+          508.00197421210436,
+          970.694681606193
+        ],
+        "baseline": {
+          "occludedAlphaPercent": 0.0,
+          "active": []
+        },
+        "frontEdge": {
+          "occludedAlphaPercent": 0.0,
+          "active": []
+        },
+        "allGeometric": {
+          "occludedAlphaPercent": 0.001,
+          "active": [
+            "arch-07-left-body",
+            "arch-07-lintel",
+            "arch-07-right-body"
+          ]
+        }
+      }
+    ]
+  },
+  "rows": [
+    {
+      "tick": 1006,
+      "native": [
+        33003.7236004,
+        34718.2712745
+      ],
+      "source": [
+        493.2274136705076,
+        937.9021206234927
+      ],
+      "baseline": {
+        "occludedAlphaPercent": 98.784,
+        "active": [
+          "arch-07-left-body",
+          "arch-07-lintel",
+          "arch-07-right-body"
+        ]
+      },
+      "frontEdge": {
+        "occludedAlphaPercent": 98.784,
+        "active": [
+          "arch-07-left-body",
+          "arch-07-lintel",
+          "arch-07-right-body"
+        ]
+      },
+      "allGeometric": {
+        "occludedAlphaPercent": 98.784,
+        "active": [
+          "arch-07-left-body",
+          "arch-07-lintel",
+          "arch-07-right-body"
+        ]
+      }
+    },
+    {
+      "tick": 1007,
+      "native": [
+        33006.0258935,
+        34723.7964884
+      ],
+      "source": [
+        495.50909176840645,
+        940.8199924662371
+      ],
+      "baseline": {
+        "occludedAlphaPercent": 92.357,
+        "active": [
+          "arch-07-left-body",
+          "arch-07-lintel",
+          "arch-07-right-body"
+        ]
+      },
+      "frontEdge": {
+        "occludedAlphaPercent": 92.357,
+        "active": [
+          "arch-07-left-body",
+          "arch-07-lintel",
+          "arch-07-right-body"
+        ]
+      },
+      "allGeometric": {
+        "occludedAlphaPercent": 92.357,
+        "active": [
+          "arch-07-left-body",
+          "arch-07-lintel",
+          "arch-07-right-body"
+        ]
+      }
+    },
+    {
+      "tick": 1008,
+      "native": [
+        33011.0398694,
+        34727.872484
+      ],
+      "source": [
+        500.81115577208186,
+        942.9756360860682
+      ],
+      "baseline": {
+        "occludedAlphaPercent": 82.22,
+        "active": [
+          "arch-07-left-body",
+          "arch-07-lintel",
+          "arch-07-right-body"
+        ]
+      },
+      "frontEdge": {
+        "occludedAlphaPercent": 82.22,
+        "active": [
+          "arch-07-left-body",
+          "arch-07-lintel",
+          "arch-07-right-body"
+        ]
+      },
+      "allGeometric": {
+        "occludedAlphaPercent": 82.22,
+        "active": [
+          "arch-07-left-body",
+          "arch-07-lintel",
+          "arch-07-right-body"
+        ]
+      }
+    },
+    {
+      "tick": 1009,
+      "native": [
+        33016.0538453,
+        34731.9729796
+      ],
+      "source": [
+        506.1187540643001,
+        945.1469030222695
+      ],
+      "baseline": {
+        "occludedAlphaPercent": 70.874,
+        "active": [
+          "arch-07-left-body",
+          "arch-07-lintel",
+          "arch-07-right-body"
+        ]
+      },
+      "frontEdge": {
+        "occludedAlphaPercent": 70.874,
+        "active": [
+          "arch-07-left-body",
+          "arch-07-lintel",
+          "arch-07-right-body"
+        ]
+      },
+      "allGeometric": {
+        "occludedAlphaPercent": 70.874,
+        "active": [
+          "arch-07-left-body",
+          "arch-07-lintel",
+          "arch-07-right-body"
+        ]
+      }
+    },
+    {
+      "tick": 1010,
+      "native": [
+        33021.0678212,
+        34736.0979752
+      ],
+      "source": [
+        511.4319555824975,
+        947.3338462021231
+      ],
+      "baseline": {
+        "occludedAlphaPercent": 60.94,
+        "active": [
+          "arch-07-left-body",
+          "arch-07-lintel",
+          "arch-07-right-body"
+        ]
+      },
+      "frontEdge": {
+        "occludedAlphaPercent": 60.94,
+        "active": [
+          "arch-07-left-body",
+          "arch-07-lintel",
+          "arch-07-right-body"
+        ]
+      },
+      "allGeometric": {
+        "occludedAlphaPercent": 60.94,
+        "active": [
+          "arch-07-left-body",
+          "arch-07-lintel",
+          "arch-07-right-body"
+        ]
+      }
+    },
+    {
+      "tick": 1011,
+      "native": [
+        33026.0817971,
+        34740.2474708
+      ],
+      "source": [
+        516.7508295588125,
+        949.5365190309456
+      ],
+      "baseline": {
+        "occludedAlphaPercent": 53.224,
+        "active": [
+          "arch-07-left-body",
+          "arch-07-lintel",
+          "arch-07-right-body"
+        ]
+      },
+      "frontEdge": {
+        "occludedAlphaPercent": 53.224,
+        "active": [
+          "arch-07-left-body",
+          "arch-07-lintel",
+          "arch-07-right-body"
+        ]
+      },
+      "allGeometric": {
+        "occludedAlphaPercent": 53.224,
+        "active": [
+          "arch-07-left-body",
+          "arch-07-lintel",
+          "arch-07-right-body"
+        ]
+      }
+    },
+    {
+      "tick": 1012,
+      "native": [
+        33031.095773,
+        34744.4214664
+      ],
+      "source": [
+        522.0754455236134,
+        951.7549753955109
+      ],
+      "baseline": {
+        "occludedAlphaPercent": 49.329,
+        "active": [
+          "arch-07-left-body",
+          "arch-07-lintel",
+          "arch-07-right-body"
+        ]
+      },
+      "frontEdge": {
+        "occludedAlphaPercent": 49.329,
+        "active": [
+          "arch-07-left-body",
+          "arch-07-lintel",
+          "arch-07-right-body"
+        ]
+      },
+      "allGeometric": {
+        "occludedAlphaPercent": 49.329,
+        "active": [
+          "arch-07-left-body",
+          "arch-07-lintel",
+          "arch-07-right-body"
+        ]
+      }
+    },
+    {
+      "tick": 1013,
+      "native": [
+        33034.6182281,
+        34748.608067
+      ],
+      "source": [
+        525.7743519532706,
+        953.982935564755
+      ],
+      "baseline": {
+        "occludedAlphaPercent": 47.176,
+        "active": [
+          "arch-07-left-body",
+          "arch-07-lintel",
+          "arch-07-right-body"
+        ]
+      },
+      "frontEdge": {
+        "occludedAlphaPercent": 47.176,
+        "active": [
+          "arch-07-left-body",
+          "arch-07-lintel",
+          "arch-07-right-body"
+        ]
+      },
+      "allGeometric": {
+        "occludedAlphaPercent": 47.176,
+        "active": [
+          "arch-07-left-body",
+          "arch-07-lintel",
+          "arch-07-right-body"
+        ]
+      }
+    },
+    {
+      "tick": 1014,
+      "native": [
+        33030.4141769,
+        34752.6197802
+      ],
+      "source": [
+        521.025122253009,
+        956.1204667979403
+      ],
+      "baseline": {
+        "occludedAlphaPercent": 32.869,
+        "active": [
+          "arch-07-left-body",
+          "arch-07-lintel",
+          "arch-07-right-body"
+        ]
+      },
+      "frontEdge": {
+        "occludedAlphaPercent": 32.869,
+        "active": [
+          "arch-07-left-body",
+          "arch-07-lintel",
+          "arch-07-right-body"
+        ]
+      },
+      "allGeometric": {
+        "occludedAlphaPercent": 32.869,
+        "active": [
+          "arch-07-left-body",
+          "arch-07-lintel",
+          "arch-07-right-body"
+        ]
+      }
+    },
+    {
+      "tick": 1015,
+      "native": [
+        33026.2101257,
+        34756.6559934
+      ],
+      "source": [
+        516.2692108269155,
+        958.2736643261883
+      ],
+      "baseline": {
+        "occludedAlphaPercent": 0.0,
+        "active": []
+      },
+      "frontEdge": {
+        "occludedAlphaPercent": 21.324,
+        "active": [
+          "arch-07-left-body",
+          "arch-07-lintel",
+          "arch-07-right-body"
+        ]
+      },
+      "allGeometric": {
+        "occludedAlphaPercent": 21.324,
+        "active": [
+          "arch-07-left-body",
+          "arch-07-lintel",
+          "arch-07-right-body"
+        ]
+      }
+    },
+    {
+      "tick": 1016,
+      "native": [
+        33022.0060745,
+        34760.7167066
+      ],
+      "source": [
+        511.50655266778045,
+        960.4425806965929
+      ],
+      "baseline": {
+        "occludedAlphaPercent": 0.0,
+        "active": []
+      },
+      "frontEdge": {
+        "occludedAlphaPercent": 14.197,
+        "active": [
+          "arch-07-left-body",
+          "arch-07-lintel",
+          "arch-07-right-body"
+        ]
+      },
+      "allGeometric": {
+        "occludedAlphaPercent": 14.197,
+        "active": [
+          "arch-07-left-body",
+          "arch-07-lintel",
+          "arch-07-right-body"
+        ]
+      }
+    },
+    {
+      "tick": 1017,
+      "native": [
+        33017.8020233,
+        34764.8019198
+      ],
+      "source": [
+        506.7370824594752,
+        962.6272689340028
+      ],
+      "baseline": {
+        "occludedAlphaPercent": 0.0,
+        "active": []
+      },
+      "frontEdge": {
+        "occludedAlphaPercent": 13.006,
+        "active": [
+          "arch-07-left-body",
+          "arch-07-lintel",
+          "arch-07-right-body"
+        ]
+      },
+      "allGeometric": {
+        "occludedAlphaPercent": 13.006,
+        "active": [
+          "arch-07-left-body",
+          "arch-07-lintel",
+          "arch-07-right-body"
+        ]
+      }
+    },
+    {
+      "tick": 1018,
+      "native": [
+        33013.5979721,
+        34768.911633
+      ],
+      "source": [
+        501.9607345735575,
+        964.8277825444416
+      ],
+      "baseline": {
+        "occludedAlphaPercent": 0.0,
+        "active": []
+      },
+      "frontEdge": {
+        "occludedAlphaPercent": 16.268,
+        "active": [
+          "arch-07-left-body",
+          "arch-07-lintel",
+          "arch-07-right-body"
+        ]
+      },
+      "allGeometric": {
+        "occludedAlphaPercent": 16.268,
+        "active": [
+          "arch-07-left-body",
+          "arch-07-lintel",
+          "arch-07-right-body"
+        ]
+      }
+    },
+    {
+      "tick": 1019,
+      "native": [
+        33011.3951983,
+        34772.8887207
+      ],
+      "source": [
+        499.38162974968066,
+        966.9598882833056
+      ],
+      "baseline": {
+        "occludedAlphaPercent": 0.0,
+        "active": []
+      },
+      "frontEdge": {
+        "occludedAlphaPercent": 17.691,
+        "active": [
+          "arch-07-left-body",
+          "arch-07-lintel",
+          "arch-07-right-body"
+        ]
+      },
+      "allGeometric": {
+        "occludedAlphaPercent": 17.691,
+        "active": [
+          "arch-07-left-body",
+          "arch-07-lintel",
+          "arch-07-right-body"
+        ]
+      }
+    },
+    {
+      "tick": 1020,
+      "native": [
+        33015.4446206,
+        34776.3540299
+      ],
+      "source": [
+        503.69002317766336,
+        968.8197238768474
+      ],
+      "baseline": {
+        "occludedAlphaPercent": 0.0,
+        "active": []
+      },
+      "frontEdge": {
+        "occludedAlphaPercent": 4.165,
+        "active": [
+          "arch-07-left-body",
+          "arch-07-lintel",
+          "arch-07-right-body"
+        ]
+      },
+      "allGeometric": {
+        "occludedAlphaPercent": 4.165,
+        "active": [
+          "arch-07-left-body",
+          "arch-07-lintel",
+          "arch-07-right-body"
+        ]
+      }
+    },
+    {
+      "tick": 1021,
+      "native": [
+        33019.4940429,
+        34779.8438391
+      ],
+      "source": [
+        508.00197421210436,
+        970.694681606193
+      ],
+      "baseline": {
+        "occludedAlphaPercent": 0.0,
+        "active": []
+      },
+      "frontEdge": {
+        "occludedAlphaPercent": 0.0,
+        "active": []
+      },
+      "allGeometric": {
+        "occludedAlphaPercent": 0.001,
+        "active": [
+          "arch-07-left-body",
+          "arch-07-lintel",
+          "arch-07-right-body"
+        ]
+      }
+    },
+    {
+      "tick": 1022,
+      "native": [
+        33023.5434652,
+        34783.3581483
+      ],
+      "source": [
+        512.3175365224752,
+        972.5848063450195
+      ],
+      "baseline": {
+        "occludedAlphaPercent": 0.0,
+        "active": []
+      },
+      "frontEdge": {
+        "occludedAlphaPercent": 0.0,
+        "active": []
+      },
+      "allGeometric": {
+        "occludedAlphaPercent": 0.0,
+        "active": [
+          "arch-07-left-body",
+          "arch-07-lintel",
+          "arch-07-right-body"
+        ]
+      }
+    },
+    {
+      "tick": 1023,
+      "native": [
+        33027.5928875,
+        34786.8969575
+      ],
+      "source": [
+        516.6367639727099,
+        974.4901434003359
+      ],
+      "baseline": {
+        "occludedAlphaPercent": 0.0,
+        "active": []
+      },
+      "frontEdge": {
+        "occludedAlphaPercent": 0.0,
+        "active": []
+      },
+      "allGeometric": {
+        "occludedAlphaPercent": 0.0,
+        "active": [
+          "arch-07-left-body",
+          "arch-07-lintel",
+          "arch-07-right-body"
+        ]
+      }
+    },
+    {
+      "tick": 1024,
+      "native": [
+        33031.6423098,
+        34790.4602667
+      ],
+      "source": [
+        520.9597106237215,
+        976.4107385153393
+      ],
+      "baseline": {
+        "occludedAlphaPercent": 0.0,
+        "active": []
+      },
+      "frontEdge": {
+        "occludedAlphaPercent": 0.0,
+        "active": []
+      },
+      "allGeometric": {
+        "occludedAlphaPercent": 0.0,
+        "active": [
+          "arch-07-left-body",
+          "arch-07-lintel",
+          "arch-07-right-body"
+        ]
+      }
+    },
+    {
+      "tick": 1025,
+      "native": [
+        33035.6917321,
+        34794.0480759
+      ],
+      "source": [
+        525.2864307359862,
+        978.3466378722665
+      ],
+      "baseline": {
+        "occludedAlphaPercent": 0.0,
+        "active": []
+      },
+      "frontEdge": {
+        "occludedAlphaPercent": 0.0,
+        "active": []
+      },
+      "allGeometric": {
+        "occludedAlphaPercent": 0.16,
+        "active": [
+          "arch-07-left-body",
+          "arch-07-lintel",
+          "arch-07-right-body"
+        ]
+      }
+    },
+    {
+      "tick": 1026,
+      "native": [
+        33039.7411544,
+        34797.6603851
+      ],
+      "source": [
+        529.6169787720476,
+        980.2978880953211
+      ],
+      "baseline": {
+        "occludedAlphaPercent": 0.0,
+        "active": []
+      },
+      "frontEdge": {
+        "occludedAlphaPercent": 0.0,
+        "active": []
+      },
+      "allGeometric": {
+        "occludedAlphaPercent": 5.968,
+        "active": [
+          "arch-07-left-body",
+          "arch-07-lintel",
+          "arch-07-right-body"
+        ]
+      }
+    },
+    {
+      "tick": 1027,
+      "native": [
+        33043.7905767,
+        34801.2971943
+      ],
+      "source": [
+        533.9514093991293,
+        982.2645362535936
+      ],
+      "baseline": {
+        "occludedAlphaPercent": 0.0,
+        "active": []
+      },
+      "frontEdge": {
+        "occludedAlphaPercent": 0.0,
+        "active": []
+      },
+      "allGeometric": {
+        "occludedAlphaPercent": 12.94,
+        "active": [
+          "arch-07-left-body",
+          "arch-07-lintel",
+          "arch-07-right-body"
+        ]
+      }
+    },
+    {
+      "tick": 1028,
+      "native": [
+        33047.839999,
+        34804.9585035
+      ],
+      "source": [
+        538.2897774917288,
+        984.246629864054
+      ],
+      "baseline": {
+        "occludedAlphaPercent": 0.0,
+        "active": []
+      },
+      "frontEdge": {
+        "occludedAlphaPercent": 0.0,
+        "active": []
+      },
+      "allGeometric": {
+        "occludedAlphaPercent": 19.241,
+        "active": [
+          "arch-07-left-body",
+          "arch-07-lintel",
+          "arch-07-right-body"
+        ]
+      }
+    },
+    {
+      "tick": 1029,
+      "native": [
+        33051.8894213,
+        34808.6443127
+      ],
+      "source": [
+        542.6321381342003,
+        986.2442168945564
+      ],
+      "baseline": {
+        "occludedAlphaPercent": 0.0,
+        "active": []
+      },
+      "frontEdge": {
+        "occludedAlphaPercent": 0.0,
+        "active": []
+      },
+      "allGeometric": {
+        "occludedAlphaPercent": 23.809,
+        "active": [
+          "arch-07-left-body",
+          "arch-07-lintel",
+          "arch-07-right-body"
+        ]
+      }
+    },
+    {
+      "tick": 1030,
+      "native": [
+        33055.9388436,
+        34812.3546219
+      ],
+      "source": [
+        546.9785466234534,
+        988.2573457668711
+      ],
+      "baseline": {
+        "occludedAlphaPercent": 0.0,
+        "active": []
+      },
+      "frontEdge": {
+        "occludedAlphaPercent": 0.0,
+        "active": []
+      },
+      "allGeometric": {
+        "occludedAlphaPercent": 26.366,
+        "active": [
+          "arch-07-left-body",
+          "arch-07-lintel",
+          "arch-07-right-body"
+        ]
+      }
+    },
+    {
+      "tick": 1031,
+      "native": [
+        33059.9882659,
+        34816.0894311
+      ],
+      "source": [
+        551.329058471574,
+        990.2860653597907
+      ],
+      "baseline": {
+        "occludedAlphaPercent": 0.0,
+        "active": []
+      },
+      "frontEdge": {
+        "occludedAlphaPercent": 0.0,
+        "active": []
+      },
+      "allGeometric": {
+        "occludedAlphaPercent": 27.113,
+        "active": [
+          "arch-07-left-body",
+          "arch-07-lintel",
+          "arch-07-right-body"
+        ]
+      }
+    },
+    {
+      "tick": 1032,
+      "native": [
+        33064.0376882,
+        34819.8487403
+      ],
+      "source": [
+        555.6837294085054,
+        992.3304250122178
+      ],
+      "baseline": {
+        "occludedAlphaPercent": 0.0,
+        "active": []
+      },
+      "frontEdge": {
+        "occludedAlphaPercent": 0.0,
+        "active": []
+      },
+      "allGeometric": {
+        "occludedAlphaPercent": 24.674,
+        "active": [
+          "arch-07-left-body",
+          "arch-07-lintel",
+          "arch-07-right-body"
+        ]
+      }
+    },
+    {
+      "tick": 1033,
+      "native": [
+        33068.0871105,
+        34823.6325495
+      ],
+      "source": [
+        560.0426153847676,
+        994.3904745263377
+      ],
+      "baseline": {
+        "occludedAlphaPercent": 0.0,
+        "active": []
+      },
+      "frontEdge": {
+        "occludedAlphaPercent": 0.0,
+        "active": []
+      },
+      "allGeometric": {
+        "occludedAlphaPercent": 18.466,
+        "active": [
+          "arch-07-left-body",
+          "arch-07-lintel",
+          "arch-07-right-body"
+        ]
+      }
+    },
+    {
+      "tick": 1034,
+      "native": [
+        33072.1365328,
+        34827.4408587
+      ],
+      "source": [
+        564.4057725741769,
+        996.4662641708103
+      ],
+      "baseline": {
+        "occludedAlphaPercent": 0.0,
+        "active": []
+      },
+      "frontEdge": {
+        "occludedAlphaPercent": 0.0,
+        "active": []
+      },
+      "allGeometric": {
+        "occludedAlphaPercent": 11.521,
+        "active": [
+          "arch-07-left-body",
+          "arch-07-lintel",
+          "arch-07-right-body"
+        ]
+      }
+    },
+    {
+      "tick": 1035,
+      "native": [
+        33076.1859551,
+        34831.2736679
+      ],
+      "source": [
+        568.7732573765591,
+        998.5578446839778
+      ],
+      "baseline": {
+        "occludedAlphaPercent": 0.0,
+        "active": []
+      },
+      "frontEdge": {
+        "occludedAlphaPercent": 0.0,
+        "active": []
+      },
+      "allGeometric": {
+        "occludedAlphaPercent": 4.962,
+        "active": [
+          "arch-07-left-body",
+          "arch-07-lintel",
+          "arch-07-right-body"
+        ]
+      }
+    }
+  ]
+}
