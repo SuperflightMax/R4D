@@ -49,9 +49,17 @@ Builder после fresh idle/completed/errornull cleanup-turn01a1877e полу�
 URL/PID/session ещё ожидаются; OLD Dark6869 остаётся на03 для короткого A/B,
 Water6868 сохраняет свой frozen04. Native compiled af8/P1/JPG/renderer не менять,
 62 PNG/48 records сверить;_SOURCE commit допускается только для thin selector.
-Selfcheck: старые 5 predeclared +3 VQA ordinary, actual2010–2019/2044–2047,
-receiver01/02/03 entries и04corner, JSON/controls/negative/replay. Затем freeze
-и точный handoff обеим независимым QA; VQA последовательно после Water report.
+CTO затем прямо уточнил экономный объём, Builder адресно уведомлён:
+проверить новые exact bytes и ровно 12 depth-линий, D-POP на прежнем и новом
+порогах, отдельную тень и близкие уже хорошие receiver01/02/03 entries.
+При доказанно неизменённых renderer/core/config/PNG прежние native/browser/
+JSON/controls проверки использовать со ссылкой и пометкой «ранее выполнено».
+Полную матрицу/5+3 traces и native build автоматически не повторять; новое
+нарушение расширяет объём по факту. Общий Visual PASS не наследуется.
+После freeze — точный адресный handoff обеим независимым QA, VQA после Water.
+CTO принял Water TQA c482 в его проверенном объёме; divider-классификация
+остаётся отдельной. Release idle, SSH/intent до двух завершённых результатов
+не начинать. Это уточнение объёма, не новая задача/пауза.
 Новый frozen candidate ещё не выдан; TQA/VQA03 не проверяют futurevariant.
 
 Dark TQA report `b327ae601a4962dd5826abfbfdeefaf77c090a55` полностью прочитан
