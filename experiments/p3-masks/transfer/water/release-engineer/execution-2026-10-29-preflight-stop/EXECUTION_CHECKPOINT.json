@@ -1,0 +1,77 @@
+{
+  "status": "STOP_PREFLIGHT_SCRIPT_ERROR",
+  "executionTurnId": "01a18812-15ad-7e82-8abc-58f0ee0a03ea",
+  "checkpointUtc": "2026-10-29T14:35:21.507008+00:00",
+  "sourceCommit": "fdac2e9ba909a034a4ad176d11a438a04dc78ccc",
+  "releaseId": "p3-water-dark-front-edge-04",
+  "authorizationPath": "E:\\R4D\\perspective\\coordination\\p3-water-dark-front-edge-04-token-2026-10-29.json",
+  "authorizationSha256": "264d922b47ae2e29caf0af009934b4999a2536c5cda881853bfc2bc5e458bef1",
+  "token": "CTO-P3-WD04-20261029T142713Z-ae0b1054d192",
+  "serverWriteAuthorizedByExternalToken": true,
+  "serverWritesPerformed": false,
+  "firstWriteStarted": false,
+  "beginUtc": null,
+  "windowReleasedByEngineer": false,
+  "phaseStarts": [
+    {
+      "phase": "preflight",
+      "startedUtc": "2026-10-29T14:31:55.7726602Z",
+      "executionTurnId": "01a18812-15ad-7e82-8abc-58f0ee0a03ea",
+      "command": "python -B combined_execute.py --phase preflight --authorization-file exact CTO file"
+    }
+  ],
+  "phaseResults": {
+    "preflight": "STOP",
+    "begin": "NOT_STARTED",
+    "upload": "NOT_STARTED",
+    "stage": "NOT_STARTED",
+    "switch": "NOT_STARTED",
+    "postcheck": "NOT_STARTED",
+    "document": "NOT_STARTED",
+    "rollback": "NOT_STARTED"
+  },
+  "failedOperation": {
+    "action": "preflight HTTPS protection guard",
+    "target": "https://superflight.space/review/",
+    "transport": "vps1-direct / sudo -n -- python3 -B",
+    "tool": "functions.exec / tools.exec_command then tools.write_stdin",
+    "execChunkId": "20de66",
+    "sessionId": 71992,
+    "completionChunkId": "3e8974",
+    "exitCode": 1,
+    "status": "STOP",
+    "reason": "'function' object has no attribute 'client'",
+    "sourceLines": [
+      79,
+      80,
+      92
+    ],
+    "cause": "Nested function http shadows imported module http; http.client resolves against that function.",
+    "policyDenial": false
+  },
+  "readOnlyStopGuard": {
+    "execChunkId": "6d3ef0",
+    "sessionId": 38029,
+    "completionChunkId": "a51cd3",
+    "status": "STOP_CONFIRMED_NO_SERVER_WRITE",
+    "utc": "2026-10-29T14:33:29.493371+00:00"
+  },
+  "immutablePacketUnchanged": true,
+  "scriptsUnchanged": true,
+  "noPhaseReplay": true,
+  "nextActionRequiresCtoDecision": "Review source correction, new exact source hashes and authorization/execution attempt; do not replay current recorded phase or change approved bytes under current token.",
+  "resourcesBeforePreflight": {
+    "utc": "2026-10-29T14:31:41.2784739Z",
+    "memTotalGiB": 31.907,
+    "memFreeGiB": 15.17,
+    "cpuLoadPercent": 1.0,
+    "driveFreeGiB": {
+      "E": 10.918,
+      "C": 15.593,
+      "D": 16.237
+    },
+    "estimatedAdditionalPeakGiB": 1,
+    "estimatedAdditionalLocalDiskMiB": 128,
+    "temp": "E:\\R4D\\perspective\\p3-runtime\\release-engineer\\transfer-water-dark\\combined\\water-dark-front-edge-04\\execution\\tmp"
+  }
+}
