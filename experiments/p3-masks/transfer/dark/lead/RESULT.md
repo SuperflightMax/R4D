@@ -9,7 +9,7 @@
 
 **[Открыть Dark Review](https://superflight.space/review/r4d/p3-masks-dark/)**.
 Switch2026-10-29T16:40:46.555575Z, postchecks16:41:37.142460Z,
-append-only documentation16:42:54.288935Z. Frozen source/art/manifest ниже
+append-only documentation16:42:54.265087Z. Frozen source/art/manifest ниже
 опубликованы точно, без нового native build/полной QA матрицы.
 
 Combined217 HTTP:215×200,Origin403,dotfile404;197/197 payload identities
