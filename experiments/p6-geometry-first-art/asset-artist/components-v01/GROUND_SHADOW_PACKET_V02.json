@@ -1,0 +1,80 @@
+{
+  "schema": "r4d.p6.static-ground-shadows.v2",
+  "acceptedP1": "4b47db04c7140ebf88f69b91faa0b790d46f22ec",
+  "canvas": [
+    1536,
+    1536
+  ],
+  "texture": "prepared/ground-shadows-v02.png",
+  "sha256": "5e36486a5c58fb5d5c5c7281e4ea21bc4d8b84f6144c332a2c75dc73bfeb042e",
+  "coveredObjectIds": [
+    "flower-01",
+    "leaf-01",
+    "frog-01",
+    "wood-01",
+    "flower-02",
+    "wood-02",
+    "frog-02",
+    "leaf-02",
+    "leaf-03",
+    "wood-03",
+    "flower-03",
+    "frog-03",
+    "frog-04",
+    "wood-04",
+    "wood-05",
+    "flower-04",
+    "flower-05",
+    "leaf-04",
+    "wood-06",
+    "leaf-05",
+    "frog-05",
+    "flower-06",
+    "flower-07",
+    "wood-07",
+    "wood-08"
+  ],
+  "casterCount": 25,
+  "rawMaskSource": "../raw/ball-shadow-v01.png",
+  "rawMaskSha256": "3a4e58a4d3b9b707e6ec10ffe80e26c561605a4f99d5498c04ae5c684cf5606a",
+  "lightDirectionNative": [
+    -6,
+    10
+  ],
+  "lightNormalized": true,
+  "heightToRadiusRatios": {
+    "wood": 3.1717557251908395,
+    "leaf": 1.3447064972268417,
+    "frog": 1.1615389889625225,
+    "flower": 1.0710367166040253
+  },
+  "castLengthFactorOfIllustrativeHeight": 0.75,
+  "contactOpacity": 0.72,
+  "castOpacity": 0.68,
+  "contactRadiusFactor": 1.0,
+  "castWidthRadiusFactor": 0.95,
+  "contactCastUnion": "maximum alpha per caster, then source-over between distinct casters; one final25-instance layer",
+  "alphaCutoffRaw": 16,
+  "floorMaskSha256": "ec7e2202d5817bace18d69c0c87745c796c904bd267c8446d2c306b86686d4b9",
+  "sourceToNative": [
+    [
+      1,
+      9.330392800216167,
+      25487.205399837876
+    ],
+    [
+      0,
+      11.446119221308955,
+      25487.410584018282
+    ],
+    [
+      0,
+      0.00028056268944599974,
+      0.7895779829155002
+    ]
+  ],
+  "method": "Illustrative simple contact+elongated cast masks derived from own raster heights and one native light vector, projected once through accepted inverse mapping. Not native z/physics or recovered3D lighting.",
+  "reason": "Actual all25 overview7a4450 showed weak radial shadows lost in coarse floor joints",
+  "replaces": "ground-shadows-v01.png once; do not stack old/new/static per-master copies",
+  "status": "actual shadow correction; next ordinary-scale assembled art review required"
+}

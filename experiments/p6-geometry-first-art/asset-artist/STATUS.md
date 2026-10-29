@@ -57,3 +57,20 @@ renormalize old prompts/raw/logs. Invocation JSONL is append-only.
 Resource guard: own/team planning peak3GiB RAM/2GiB E, concurrent P3 allowance separate.
 Fresh C/D/E+RAM+CPU before heavy steps. E>4GiB observation,<=4 warning/diagnose,<=2 safe
 WIP-stop. Latest E free about11GiB, no resource stop. Global env/settings/security untouched.
+
+## Recovery and current WIP after stream disconnect
+
+Previous model stream failed after floorV03 prompt preparation; no imagegen was pending.
+Own rollout showed last native receiver call completed; own C/E files had no floorv03.
+New turn first invoked floorV03 once, preserved native result and produced registered
+floor-layer-v03 + stronger one-layer25 contact/cast shadowsv02. See FLOOR_HANDOFF_V03.
+Own branch delivery only; do not publish held commits from Builder/Lead/VQA via this actor.
+
+Receiver packet7d5edbc is delivered: actual camera-corrected native master, full-frame
+front/rear layers at4 unchanged capture centres;128 raw dark-mouth samples per receiver.
+Long ropes are still missing. Background/boundary prompts exist but were not invoked.
+Current next tasks: inspect local requested frog-base checkpoint read-only (held report
+must not be copied/published), repair own frog support with far/near checks; review actual
+receiver approaches from2d860cc8 without assuming a partial-overlap defect; then finish
+boundary16/vertical sides/suspension ropes/start/outer jungle environment. Full scene
+and independent QA are pending. No new homogeneous whole-image reroll is needed.
