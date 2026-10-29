@@ -1,0 +1,9 @@
+{
+  "id":"near-ledge",
+  "coordinateSpace":"texture1254",
+  "sourceScale":1.2248803827751196,
+  "polygon":[[270,903],[300,905],[320,908],[350,910],[380,912],[400,913],[430,917],[460,922],[490,926],[520,929],[550,928],[580,928],[610,928],[640,930],[670,929],[700,930],[730,928],[760,928],[790,926],[810,921],[840,917],[870,914],[900,913],[930,910],[960,908],[985,905],[1005,902],[1030,898],[1030,929],[1000,939],[970,942],[940,945],[910,948],[880,951],[850,954],[820,956],[790,958],[760,960],[730,960],[700,960],[670,960],[640,960],[610,959],[580,958],[550,957],[520,956],[490,954],[460,952],[430,950],[400,948],[370,946],[340,944],[310,941],[290,939],[270,936]],
+  "basis":"Traced the actual upper seam/bevel of the near stone front fascia and its lower structural edge on immutable generated floor-v1. The former polygon began on flat paving on both wings. This version retains the vertical face, excludes open paving and does not promote raised plant tops above the stone seam. Short spans hidden by plants interpolate the visible adjacent stone edge.",
+  "measurementUncertaintyTexturePx":3,
+  "limitations":["Hand-traced structural-edge region, not per-pixel alpha segmentation; painted moss/feathers can cross the coarse boundary.","Small plant tops above the stone seam remain only in the floor layer; no broad flat-paving patch is promoted to foreground.","Bottom remains within raw y960/source y1175.89; lower wall, trailing roots and receiver openings are excluded.","Three diagnostic coordinate crops cover left, center and right portions; selection follows the full architectural seam, not a seed-specific hole.","Actual C03 motion, sphere visibility and attachment to adjacent head masks require independent QA; point tests are not runtime proof."]
+}

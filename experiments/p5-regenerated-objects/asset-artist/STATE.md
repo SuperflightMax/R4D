@@ -1,5 +1,7 @@
 # P5 Asset Artist — состояние
 
+Актуальный handoff: **mini03 / C02-V01, только near-ledge.sourceClipPx**. Manifest89838bytes/SHA`a083143b199f78cefe2725907b91385145cb9c29067ad319dd862974a13714a0`. Полный контур передней каменной грани переснят по фактическому шву generated floor; открытый пол исключён по всей ширине. Статические проверки и schema пройдены, семантика вне этого поля совпадает с frozenmini02. Все17PNG и receiver policy неизменны. Actual пересобранный runtime/QA ещё требуются; подробности `HANDOFF_MINI_03.md` и `DELTA_MINI_03.json`. Frozen499/C02 не перезаписывались.
+
 Stage 2 адресно открыт Lead после опубликованного P4. Применён Lead contract `5ae51fa0342689cb0ad4b5b5d5681ddc16b60e81:experiments/p5-regenerated-objects/coordination/STAGE2.md`.
 
 Собственный checkout: `E:/R4D/perspective/p5-worktrees/asset-artist`, ветка `codex/r4d-p5-regenerated-asset-artist-01`, исходный HEAD `64061757802dc60770ab156ef5672af741d65d03`. Runtime: `E:/R4D/perspective/p5-runtime/asset-artist`. UI C: service stub.
