@@ -65,6 +65,50 @@ Dark [текущий STATE](../../dark/lead/STATE.md): targeted TQA/VQA идут
 
 ## Публикационный gate — пока server_write=false
 
+CTO полностью прочитал оба RESULT71a4f50, обе QA-пары/triage и actual A/B,
+принял exact Water/Dark как завершённые bounded результаты. Публично оба
+PARTIAL, local W-EARLY-POP/D-POP CLOSED, W-DIVIDER OPEN. Нового product-цикла нет.
+Выбор depth-опоры в рецептах явно изменён, прежний renderer не равен recipe.
+
+Sealed combined intent Release `fdac2e9ba909a034a4ad176d11a438a04dc78ccc`
+полностью прочитан и интегрирован Lead:
+[COMBINED_INTENT](../release-engineer/COMBINED_INTENT.md),
+[PACKET_INDEX](../release-engineer/combined-packet/PACKET_INDEX.json),
+[WRITE_SCOPE](../release-engineer/combined-packet/WRITE_SCOPE.json).
+Canonical intent SHA1a389f43d8af15a59863fab80cfdef6be75b2babe9da492e0108ec862f54cd40.
+Scope aff5355dcb376ab1edef8d45455c391bb5b1099f77a7ee07240f6efe11097959.
+Remote script e47debc4bd1892728d114550b08c3415886abf06f10a50b797c79a5a8b15512f,
+launcher592a78db696e44bfe665b0a35d8eb66dea854a3bc0d5a354bacdf7b15fe71ef8.
+Оба future scripts по final Git bytes прочитаны полностью;3scripts syntax/
+все PACKET_INDEX hashes/10referenced Git docs проверены независимо.
+
+Archive4495459bytes SHA0cee1516db37cb2ac8a38fec54214c47483f8bea755a71dbd0d04a244b3c9fbb.
+Release manifest e8a801faf58b670fd2b2cb7ba1c327d20c025593c75881915ae7d211f2fcf3f3.
+Root независимо проверил все196tar entries/194frozen exact/обратимыйcatalogdelta/
+672foreign rows+uid/gid/modes; existing parentsreview/review-r4d actual0:0/0755.
+Будущий root `/srv/superflight-review/releases/p3-water-dark-front-edge-04`,
+868files/104dirs/129749260bytes, metadataSHA
+71419d91cc132a8d63d1be21718e0f20c72a796ff65decbaf6b4c7de796c9f65.
+Future URLs: https://superflight.space/review/r4d/p3-masks-water/ и dark sibling.
+Они ещё НЕ опубликованы. Root-only snippet switch/nginx-t/reload/append-only
+serviceDoc+CHANGELOG явно описаны как будущие token-bound действия.
+
+Fresh sealed RO guard13:59:55.171643Z: old674/88/122587862 unchanged,
+manifestb54342562a030361fb705d63b52750018956ea3cdfea204450f48a6bbeced9c5,
+metadataed789cd60a3de3287f9a4456e68f9707df09d8487f2026d2111beee05e4d7a98.
+Old snippet e2a466…51224, normalizeda6b469…e945f; futuref7948d…1200e/950bytes.
+Actual audit euid0 через existing sudo, все77Jungle hashes exact.82files/4dirs
+uid1003:gid27 сохраняются, не нормализуются. Targets отсутствуют. Перед первым
+future write script повторит full guard/euid/resources; текущий guard не разрешение.
+
+Prep turn01a187d1 завершился model-capacity systemError уже после staging21files.
+Нет policy denial/потери bytes. Та же existing сессия/6.1-sol/xhigh возобновлена,
+turn01a187fd-d9df-7ca2-b2d1-b0ef0faa4df6 completed/idle/errornull, commit/pushfdac,
+worktree чистый. Config/Root max не менялись. Новый token пока не выдан;
+authorization-file не создан, execution/server writes не запускались.
+Следующее: Lead передаёт fully-read concrete intent CTO для exact нового token,
+после него отдельная команда тому же Release; не повторять prep/QA/архив.
+
 Оба bounded RESULT/QA теперь завершены: Dark targeted TQA18e880e иVQAbc34a864
 полностью прочитаны Lead, localD-POP закрыт, общий artPASS не выдан.
 Existing Release получает ОДИН combined local intent/fresh opaque RO audit.

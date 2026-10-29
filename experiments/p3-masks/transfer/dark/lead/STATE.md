@@ -107,6 +107,12 @@ partial overlap. Это selfcheck/наблюдение Lead, не независ
 
 ## Следующий gate
 
+CTO принял exact оба результата71a4f50 для Review с публичным PARTIAL.
+Sealed combined intentfdac2e9ba909a034a4ad176d11a438a04dc78ccc полностью
+прочитан Lead, все архивные entries/code hashes/guard проверены.
+Подробный token-bound write-set и текущее WAIT_EXACT_CTO_TOKEN — в
+[Water STATE](../../water/lead/STATE.md). Записей/authorization/token ещё нет.
+
 Оба Dark reports прочитаны полностью, [Dark RESULT](RESULT.md) завершён.
 Water имеет Technical PASS c482/Visual PARTIAL42dacf и отдельный
 [Water RESULT](../../water/lead/RESULT.md). Artist triagecb8e869 прочитан:
