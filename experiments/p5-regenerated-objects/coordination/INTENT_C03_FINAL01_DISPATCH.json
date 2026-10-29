@@ -1,0 +1,63 @@
+{
+  "schema": "r4d.p5.final01-intent-dispatch/1",
+  "measuredUtc": "2026-10-29 09:10:45 UTC",
+  "ctoDecision": "C03 accepted as best verified bounded local attempt; no general P5/FullArt PASS; full local sealed intent separately authorized, server writes0/token absent",
+  "sourceThread": "01a174b2-1b0d-79b1-866f-f40e23f6dfb2",
+  "lead": {
+    "turn": "01a186e8-cb57-7b20-a85d-c438f6b267dd",
+    "headBefore": "faf096c5121ec50ce00f4b2956ef866203f558ab",
+    "branch": "codex/r4d-p5-regenerated-lead-01",
+    "cleanBefore": true
+  },
+  "release": {
+    "thread": "01a1842d-ddd8-7b20-a27a-2ebc52ecea57",
+    "preSendTurn": "01a186dd-d379-7011-ab7d-daa6796e2048",
+    "preSendStatus": "completed/idle; no duplicate",
+    "newTurn": "01a186eb-770c-7fa0-8fda-a19c72dcdbea",
+    "continuationCount": 1,
+    "firstCompletedAction": {
+      "id": "exec-dcfba8de-4003-42b1-b053-8866134013c9",
+      "exitCode": 0,
+      "checkedUtc": "2026-10-29T09:09:16.3344050Z",
+      "head": "8236f5f5c563ebdd33849a60ef64dfee823674e4",
+      "status": [],
+      "localTargetOccupied": false,
+      "action": "Created exact assigned local intent root once after ABSENT check",
+      "checkpoint": "E:/R4D/perspective/p5-runtime/release-engineer/output/p5-final-intent-01-start-checkpoint.json"
+    }
+  },
+  "sendReceipt": {
+    "tool": "mcp__codex_app__send_message_to_thread",
+    "target": "01a1842d-ddd8-7b20-a27a-2ebc52ecea57",
+    "host": "local",
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"threadId\":\"01a1842d-ddd8-7b20-a27a-2ebc52ecea57\"}"
+        }
+      ],
+      "isError": false
+    },
+    "measuredImmediatelyAfterSendUtc": "2026-10-29 09:09:00 UTC"
+  },
+  "localTarget": "E:/R4D/perspective/p5-runtime/release-engineer/p5-review-release-intent-03-final-01",
+  "frozen": {
+    "files": 29,
+    "bytes": 21675411,
+    "indexBytes": 11618,
+    "indexSha256": "17838d163e6c710cad513a68b5cd5ba5c6543a708761b96e7ee62fa362c2ef2d",
+    "manifestBytes": 66026,
+    "manifestSha256": "13f443587180095cb701564ee7cdd24a3e1e062932cc075a3cb1de37e056ef91"
+  },
+  "scope": {
+    "localSealedIntent": true,
+    "permittedServerReads": "fresh raw snippet, fixed guard metadata, two opaque full PUBLIC inventories, exact shared catalog/rootmanifest metadata, eight absence/no-symlink ancestor checks",
+    "serverWrites": 0,
+    "token": "not issued",
+    "completedRolesWoken": false,
+    "productQaBuildRepeated": false,
+    "resultRewritten": false,
+    "next": "sealed handoff then STOP/idle for CTO review/new exact single-use token"
+  }
+}
