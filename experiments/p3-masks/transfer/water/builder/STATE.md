@@ -1,6 +1,47 @@
 # Water P3 — Builder
 
-## Текущий checkpoint — FULL_FIRST_METHOD_PRESERVED / TARGETED_DATA_REPAIR_PENDING
+## Текущий checkpoint — FRONT_EDGE_04_BOUNDED_VQA_RETEST_READY
+
+Source5196c0bd4981992c4e3d9678438aed1aa1c0d84c,
+ART5c9ba8c640b344094e0ada7c4ed6c9ec076550e5, exact selected prefix
+experiments/p3-masks/transfer/water/asset-artist/variants/arch-front-edge-01/.
+assets.json SHA2564a5bc16f69146fe26a3e3893fcf3c1c8e5b943400bc65d5215cb41d58efeece6.
+Все74 raw consumer bytes проверены против Git/hashes/extracted packet;
+внешний Artist manifest7f260deb...3454 также совпал. Все73 PNG, ball/shadow
+параметры и остальные47 occluders побайтно/структурно прежние; только24 arch
+depth records изменены. Правило — midpoint near/front edge принятой feet.
+Renderer app.js SHA760c9bada40cb3ecb944f332f6efa91bb3c1340ce7f1ad9c2cabeda4dca0a3e6
+не изменился, как и native/config/source/projection. Tooling только явно
+выбирает named variant и сохраняет фактический prefix/variant в provenance.
+
+Named immutable retest bundle:
+E:\R4D\perspective\p3-runtime\builder\transfer-water-dark\water\front-edge-04.
+100 payload files/3561039 bytes; file-manifest.json SHA256
+de1344afcb197115b76cb4006ead3d96e7b2581a1a299df1100d7a552d2ce2c6.
+Owned URL http://127.0.0.1:6868/review/r4d/p3-masks-water/,
+PID29572 / exec session61378. Early02 процесс17640 остановлен только после
+command/root/port proof и явного снятия Lead read hold; старые bytes не тронуты.
+Dark6869 остаётся frozen full-method-03; не переключать его.
+
+Все100 local/HTTP bytes/size/MIME и exact native replay пяти seeds проходят.
+Ordinary browser seed1 вновь прошёл от старта до LOST1196. Сохранены34 actual
+Pixi full screenshots seed1/1006–1022 при100% и200%, с видимыми seed/tick и
+variant source; raw capture-log в water/evidence/browser-front04/.
+Ключевые1014–1016 и1020–1022 просмотрены: прежнего скачка1014→1015 и заметного
+скачка на новом1021 selfcheck не выявил. Это ограниченное наблюдение, НЕ VQA PASS.
+Read-only source-alpha estimate на всех1197 настоящих native states нашёл
+единственную смену arch07 predicate на1021, residual sphere overlap0.000017
+доли (~0.0017%). Это лишь численный контроль переноса threshold, не Pixi-proof.
+Его воспроизводимый script/data — water/evidence/depth-scan/. Никаких PNG edits.
+
+Следующее: короткий независимый VQA retest того же диапазона, включая отдельную
+тень и новый threshold; затем полный Water freeze и full TQA/VQA. Остальные
+арки/границы/приёмники продолжают ordinary selfcheck, не выдавать его за full QA.
+Первый полный original17dc и early02 сохранены. Новый sort/physics отсутствует.
+Snapshot перед сборкой10:33:44Z: RAMfree16.087GiB, CPU12%,
+C16.209/D16.277/E11.871GiB. server_write=false.
+
+## История — FULL_FIRST_METHOD_PRESERVED / TARGETED_DATA_REPAIR_PENDING
 
 Первое полное применение исходного метода сохранено отдельно:
 E:\R4D\perspective\p3-runtime\builder\transfer-water-dark\water\full-method-03.
