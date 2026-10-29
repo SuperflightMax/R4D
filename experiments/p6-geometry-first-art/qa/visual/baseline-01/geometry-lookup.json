@@ -1,0 +1,690 @@
+{
+  "schema": "r4d.p6.visual-qa.baseline-01.geometry.v1",
+  "scope": "Static provenance and projected lookup only; not candidate validation, motion QA or artistic PASS",
+  "source": {
+    "path": "K:\\Agents\\R4D\\Assets\\perspective\\01-jungle.jpg",
+    "bytes": 671136,
+    "sha256": "c8f9e4245c1de8c2086e615bc75dc10aea59b76b614d6e106593e07262e24f72",
+    "width": 1536,
+    "height": 1536
+  },
+  "inputs": [
+    {
+      "name": "config.json",
+      "gitObject": "4b47db04c7140ebf88f69b91faa0b790d46f22ec:experiments/p1-collider-mapping/clean-repeat-01/simulation/boards/01/trial-01/config.json",
+      "bytes": 9503,
+      "sha256": "dd5c519cd6d4b7295118e0a3a1063efed424a0ce739450bd5153c6a9941982db"
+    },
+    {
+      "name": "manifest.json",
+      "gitObject": "4b47db04c7140ebf88f69b91faa0b790d46f22ec:experiments/p1-collider-mapping/clean-repeat-01/simulation/boards/01/trial-01/manifest.json",
+      "bytes": 11565,
+      "sha256": "7784dc0a215d0e472cf06a4eee03793592727cf0fa9a1fa0e0c78e5f1d17da18"
+    },
+    {
+      "name": "projection.mjs",
+      "gitObject": "4b47db04c7140ebf88f69b91faa0b790d46f22ec:experiments/p1-collider-mapping/clean-repeat-01/simulation/projection.mjs",
+      "bytes": 614,
+      "sha256": "b59a0c1e6c34b417d253178457ef3580b8bea0aa89c989d1342f9376e19b9431"
+    },
+    {
+      "name": "view-math.mjs",
+      "gitObject": "4b47db04c7140ebf88f69b91faa0b790d46f22ec:experiments/p1-collider-mapping/clean-repeat-01/viewer/src/view-math.mjs",
+      "bytes": 3050,
+      "sha256": "96f01cc2093c353ff958cb906fe0c8ae93412425d0f7a5ec7cca0f2bf9f1aa5e"
+    },
+    {
+      "name": "P0-RECIPE.md",
+      "gitObject": "ee4d8e5c7dbb3b6618d58d6dacb0caf9b73dfb1b:experiments/p0-perspective/research/CROSS_SERIES_CONCLUSION_AND_RECIPE.md",
+      "bytes": 17325,
+      "sha256": "9ffe076b1746d5c4ef78da2f7d9a95bedcadf5e7f49f07f6d5899c0cc8373619"
+    }
+  ],
+  "method": "nativeToSource homography from accepted P1 manifest; 360 angular samples per original physical circle; pixel values rounded to 0.001 for lookup, not art tolerance; ball dimensions are floor-footprint extents, not final standing-sprite dimensions",
+  "counts": {
+    "pins": 25,
+    "segments": 16,
+    "buckets": 4,
+    "drops": 1
+  },
+  "dynamics": {
+    "radius": 16,
+    "tickMs": 5,
+    "quantizeDigits": 7,
+    "gravityY": 980,
+    "maxBallSpeed": 2000,
+    "angleDeviationDeg": 2,
+    "bounceDeviation": 0.02,
+    "rng": "lcg32",
+    "seedInInput": 0,
+    "seedRunsExecuted": 0
+  },
+  "sourceManifestStatus": "actual core trial; supports, radius and registration provisional; no QA PASS or Max acceptance",
+  "acceptanceNote": "Manifest retains historical trial/provisional wording; accepted-input authority is later CTO/Max pin at P1 exact 4b47db04c7140ebf88f69b91faa0b790d46f22ec. This baseline does not reopen P1 acceptance.",
+  "drop": {
+    "id": "board01-start",
+    "nativeX": 33254.863169496064,
+    "nativeY": 33151.81331014809,
+    "sourcePx": [
+      770.0,
+      321.0
+    ],
+    "angleDeg": 90,
+    "speed": 0
+  },
+  "objects": [
+    {
+      "id": "flower-01",
+      "kind": "pin",
+      "nativeX": 32982.10427784783,
+      "nativeY": 33295.09546643628,
+      "nativeR": 44.62098571998958,
+      "sourceCenterX": 525.469,
+      "sourceCenterY": 380.882,
+      "sourceMinX": 485.434,
+      "sourceMaxX": 565.487,
+      "sourceMinY": 361.99,
+      "sourceMaxY": 400.0,
+      "ballR16WidthAtDepth": 28.686,
+      "ballR16FloorDepthAtDepth": 13.629
+    },
+    {
+      "id": "leaf-01",
+      "kind": "pin",
+      "nativeX": 33257.103055588785,
+      "nativeY": 33328.97811206313,
+      "nativeR": 49.97188529432575,
+      "sourceCenterX": 771.993,
+      "sourceCenterY": 395.378,
+      "sourceMinX": 726.993,
+      "sourceMaxX": 816.993,
+      "sourceMinY": 374.044,
+      "sourceMaxY": 417.0,
+      "ballR16WidthAtDepth": 28.816,
+      "ballR16FloorDepthAtDepth": 13.753
+    },
+    {
+      "id": "frog-01",
+      "kind": "pin",
+      "nativeX": 33523.76813123743,
+      "nativeY": 33306.91584579162,
+      "nativeR": 49.005746624320594,
+      "sourceCenterX": 1011.417,
+      "sourceCenterY": 385.924,
+      "sourceMinX": 967.399,
+      "sourceMaxX": 1055.455,
+      "sourceMinY": 365.122,
+      "sourceMaxY": 407.0,
+      "ballR16WidthAtDepth": 28.731,
+      "ballR16FloorDepthAtDepth": 13.672
+    },
+    {
+      "id": "wood-01",
+      "kind": "pin",
+      "nativeX": 33101.88779971951,
+      "nativeY": 33516.93876987417,
+      "nativeR": 32.47610540354854,
+      "sourceCenterX": 628.638,
+      "sourceCenterY": 478.246,
+      "sourceMinX": 598.629,
+      "sourceMaxX": 658.642,
+      "sourceMinY": 463.624,
+      "sourceMaxY": 493.0,
+      "ballR16WidthAtDepth": 29.56,
+      "ballR16FloorDepthAtDepth": 14.473
+    },
+    {
+      "id": "flower-02",
+      "kind": "pin",
+      "nativeX": 33380.562134421954,
+      "nativeY": 33530.233282658526,
+      "nativeR": 45.38351877747797,
+      "sourceCenterX": 886.276,
+      "sourceCenterY": 484.27,
+      "sourceMinX": 844.274,
+      "sourceMaxX": 928.286,
+      "sourceMinY": 463.797,
+      "sourceMaxY": 505.0,
+      "ballR16WidthAtDepth": 29.614,
+      "ballR16FloorDepthAtDepth": 14.526
+    },
+    {
+      "id": "wood-02",
+      "kind": "pin",
+      "nativeX": 33587.93396983491,
+      "nativeY": 33516.93876987417,
+      "nativeR": 32.47610540354854,
+      "sourceCenterX": 1077.626,
+      "sourceCenterY": 478.246,
+      "sourceMinX": 1047.601,
+      "sourceMaxX": 1107.664,
+      "sourceMinY": 463.624,
+      "sourceMaxY": 493.0,
+      "ballR16WidthAtDepth": 29.56,
+      "ballR16FloorDepthAtDepth": 14.473
+    },
+    {
+      "id": "frog-02",
+      "kind": "pin",
+      "nativeX": 32948.158051844744,
+      "nativeY": 33634.85738798833,
+      "nativeR": 47.92511291991522,
+      "sourceCenterX": 481.947,
+      "sourceCenterY": 532.455,
+      "sourceMinX": 436.892,
+      "sourceMaxX": 526.977,
+      "sourceMinY": 510.209,
+      "sourceMaxY": 555.0,
+      "ballR16WidthAtDepth": 30.047,
+      "ballR16FloorDepthAtDepth": 14.953
+    },
+    {
+      "id": "leaf-02",
+      "kind": "pin",
+      "nativeX": 33220.24445754825,
+      "nativeY": 33676.055127292115,
+      "nativeR": 48.70831724129279,
+      "sourceCenterX": 737.233,
+      "sourceCenterY": 551.817,
+      "sourceMinX": 691.23,
+      "sourceMaxX": 783.233,
+      "sourceMinY": 528.949,
+      "sourceMaxY": 575.0,
+      "ballR16WidthAtDepth": 30.221,
+      "ballR16FloorDepthAtDepth": 15.127
+    },
+    {
+      "id": "leaf-03",
+      "kind": "pin",
+      "nativeX": 33495.692557377544,
+      "nativeY": 33708.45237135722,
+      "nativeR": 49.54077468376489,
+      "sourceCenterX": 998.4,
+      "sourceCenterY": 567.201,
+      "sourceMinX": 951.384,
+      "sourceMaxX": 1045.438,
+      "sourceMinY": 543.733,
+      "sourceMaxY": 591.0,
+      "ballR16WidthAtDepth": 30.359,
+      "ballR16FloorDepthAtDepth": 15.265
+    },
+    {
+      "id": "wood-03",
+      "kind": "pin",
+      "nativeX": 33048.040620357926,
+      "nativeY": 33875.80059132175,
+      "nativeR": 31.90441210678833,
+      "sourceCenterX": 568.936,
+      "sourceCenterY": 648.962,
+      "sourceMinX": 537.917,
+      "sourceMaxX": 599.945,
+      "sourceMinY": 633.071,
+      "sourceMaxY": 665.0,
+      "ballR16WidthAtDepth": 31.093,
+      "ballR16FloorDepthAtDepth": 16.012
+    },
+    {
+      "id": "flower-03",
+      "kind": "pin",
+      "nativeX": 33327.77201639532,
+      "nativeY": 33857.38732422164,
+      "nativeR": 44.37224230558652,
+      "sourceCenterX": 840.552,
+      "sourceCenterY": 639.773,
+      "sourceMinX": 797.552,
+      "sourceMaxX": 883.558,
+      "sourceMinY": 617.828,
+      "sourceMaxY": 662.0,
+      "ballR16WidthAtDepth": 31.01,
+      "ballR16FloorDepthAtDepth": 15.927
+    },
+    {
+      "id": "frog-03",
+      "kind": "pin",
+      "nativeX": 33623.770528529574,
+      "nativeY": 33859.21790429951,
+      "nativeR": 48.487099129026284,
+      "sourceCenterX": 1127.491,
+      "sourceCenterY": 640.684,
+      "sourceMinX": 1080.442,
+      "sourceMaxX": 1174.574,
+      "sourceMinY": 616.705,
+      "sourceMaxY": 665.0,
+      "ballR16WidthAtDepth": 31.019,
+      "ballR16FloorDepthAtDepth": 15.936
+    },
+    {
+      "id": "frog-04",
+      "kind": "pin",
+      "nativeX": 33183.163481675765,
+      "nativeY": 34037.81138863775,
+      "nativeR": 49.24910619082636,
+      "sourceCenterX": 698.532,
+      "sourceCenterY": 731.972,
+      "sourceMinX": 649.524,
+      "sourceMaxX": 747.532,
+      "sourceMinY": 706.32,
+      "sourceMaxY": 758.0,
+      "ballR16WidthAtDepth": 31.838,
+      "ballR16FloorDepthAtDepth": 16.789
+    },
+    {
+      "id": "wood-04",
+      "kind": "pin",
+      "nativeX": 33433.9500738487,
+      "nativeY": 34041.74228104549,
+      "nativeR": 32.143977007385345,
+      "sourceCenterX": 948.153,
+      "sourceCenterY": 734.035,
+      "sourceMinX": 916.146,
+      "sourceMaxX": 980.168,
+      "sourceMinY": 717.231,
+      "sourceMaxY": 751.0,
+      "ballR16WidthAtDepth": 31.857,
+      "ballR16FloorDepthAtDepth": 16.809
+    },
+    {
+      "id": "wood-05",
+      "kind": "pin",
+      "nativeX": 33682.368293229054,
+      "nativeY": 34081.29892794594,
+      "nativeR": 31.955752387694464,
+      "sourceCenterX": 1197.959,
+      "sourceCenterY": 754.935,
+      "sourceMinX": 1165.904,
+      "sourceMaxX": 1230.033,
+      "sourceMinY": 738.032,
+      "sourceMaxY": 772.0,
+      "ballR16WidthAtDepth": 32.044,
+      "ballR16FloorDepthAtDepth": 17.007
+    },
+    {
+      "id": "flower-04",
+      "kind": "pin",
+      "nativeX": 33007.71214527875,
+      "nativeY": 34179.94341792299,
+      "nativeR": 43.29375429236969,
+      "sourceCenterX": 518.662,
+      "sourceCenterY": 808.143,
+      "sourceMinX": 474.621,
+      "sourceMaxX": 562.683,
+      "sourceMinY": 784.597,
+      "sourceMaxY": 832.0,
+      "ballR16WidthAtDepth": 32.522,
+      "ballR16FloorDepthAtDepth": 17.518
+    },
+    {
+      "id": "flower-05",
+      "kind": "pin",
+      "nativeX": 33285.13357773812,
+      "nativeY": 34221.24416829724,
+      "nativeR": 44.97914941694413,
+      "sourceCenterX": 800.795,
+      "sourceCenterY": 830.895,
+      "sourceMinX": 754.795,
+      "sourceMaxX": 846.797,
+      "sourceMinY": 806.131,
+      "sourceMaxY": 856.0,
+      "ballR16WidthAtDepth": 32.726,
+      "ballR16FloorDepthAtDepth": 17.739
+    },
+    {
+      "id": "leaf-04",
+      "kind": "pin",
+      "nativeX": 33543.26285698555,
+      "nativeY": 34199.3276024258,
+      "nativeR": 49.05332797153468,
+      "sourceCenterX": 1063.807,
+      "sourceCenterY": 818.786,
+      "sourceMinX": 1013.774,
+      "sourceMaxX": 1113.872,
+      "sourceMinY": 791.974,
+      "sourceMaxY": 846.0,
+      "ballR16WidthAtDepth": 32.618,
+      "ballR16FloorDepthAtDepth": 17.621
+    },
+    {
+      "id": "wood-06",
+      "kind": "pin",
+      "nativeX": 32929.345639735395,
+      "nativeY": 34434.13825301294,
+      "nativeR": 32.16911823781643,
+      "sourceCenterX": 425.754,
+      "sourceCenterY": 952.858,
+      "sourceMinX": 391.701,
+      "sourceMaxX": 459.79,
+      "sourceMinY": 933.908,
+      "sourceMaxY": 972.0,
+      "ballR16WidthAtDepth": 33.821,
+      "ballR16FloorDepthAtDepth": 18.946
+    },
+    {
+      "id": "leaf-05",
+      "kind": "pin",
+      "nativeX": 33114.54075536323,
+      "nativeY": 34363.55781357324,
+      "nativeR": 48.788933318758126,
+      "sourceCenterX": 623.13,
+      "sourceCenterY": 911.529,
+      "sourceMinX": 572.108,
+      "sourceMaxX": 674.135,
+      "sourceMinY": 883.487,
+      "sourceMaxY": 940.0,
+      "ballR16WidthAtDepth": 33.45,
+      "ballR16FloorDepthAtDepth": 18.532
+    },
+    {
+      "id": "frog-05",
+      "kind": "pin",
+      "nativeX": 33397.654005936,
+      "nativeY": 34396.68997420478,
+      "nativeR": 49.4893903044378,
+      "sourceCenterX": 919.84,
+      "sourceCenterY": 930.816,
+      "sourceMinX": 867.835,
+      "sourceMaxX": 971.863,
+      "sourceMinY": 902.08,
+      "sourceMaxY": 960.0,
+      "ballR16WidthAtDepth": 33.623,
+      "ballR16FloorDepthAtDepth": 18.725
+    },
+    {
+      "id": "flower-06",
+      "kind": "pin",
+      "nativeX": 33609.94745653071,
+      "nativeY": 34403.91194882328,
+      "nativeR": 45.630967034617505,
+      "sourceCenterX": 1143.323,
+      "sourceCenterY": 935.047,
+      "sourceMinX": 1095.268,
+      "sourceMaxX": 1191.416,
+      "sourceMinY": 908.476,
+      "sourceMaxY": 962.0,
+      "ballR16WidthAtDepth": 33.661,
+      "ballR16FloorDepthAtDepth": 18.767
+    },
+    {
+      "id": "flower-07",
+      "kind": "pin",
+      "nativeX": 33004.49724257842,
+      "nativeY": 34601.47322043386,
+      "nativeR": 45.14213471002636,
+      "sourceCenterX": 498.004,
+      "sourceCenterY": 1054.604,
+      "sourceMinX": 448.948,
+      "sourceMaxX": 547.031,
+      "sourceMinY": 1026.618,
+      "sourceMaxY": 1083.0,
+      "ballR16WidthAtDepth": 34.735,
+      "ballR16FloorDepthAtDepth": 19.983
+    },
+    {
+      "id": "wood-07",
+      "kind": "pin",
+      "nativeX": 33189.08291747258,
+      "nativeY": 34600.12791716486,
+      "nativeR": 32.25138350228438,
+      "sourceCenterX": 698.38,
+      "sourceCenterY": 1053.764,
+      "sourceMinX": 663.375,
+      "sourceMaxX": 733.38,
+      "sourceMinY": 1033.737,
+      "sourceMaxY": 1074.0,
+      "ballR16WidthAtDepth": 34.727,
+      "ballR16FloorDepthAtDepth": 19.974
+    },
+    {
+      "id": "wood-08",
+      "kind": "pin",
+      "nativeX": 33452.218349997915,
+      "nativeY": 34598.53376751601,
+      "nativeR": 32.2596801779234,
+      "sourceCenterX": 983.886,
+      "sourceCenterY": 1052.769,
+      "sourceMinX": 948.875,
+      "sourceMaxX": 1018.91,
+      "sourceMinY": 1032.747,
+      "sourceMaxY": 1073.0,
+      "ballR16WidthAtDepth": 34.718,
+      "ballR16FloorDepthAtDepth": 19.964
+    },
+    {
+      "id": "receiver-01",
+      "kind": "bucket",
+      "nativeX": 32893.24699917258,
+      "nativeY": 34882.17558293618,
+      "nativeR": 33.523990645255964,
+      "sourceCenterX": 358.559,
+      "sourceCenterY": 1238.21,
+      "sourceMinX": 320.358,
+      "sourceMaxX": 396.734,
+      "sourceMinY": 1215.371,
+      "sourceMaxY": 1261.309,
+      "ballR16WidthAtDepth": 36.383,
+      "ballR16FloorDepthAtDepth": 21.925
+    },
+    {
+      "id": "receiver-02",
+      "kind": "bucket",
+      "nativeX": 33147.03047341419,
+      "nativeY": 34919.8575927248,
+      "nativeR": 27.859680215191496,
+      "sourceCenterX": 646.31,
+      "sourceCenterY": 1264.193,
+      "sourceMinX": 614.423,
+      "sourceMaxX": 678.192,
+      "sourceMinY": 1244.951,
+      "sourceMaxY": 1283.618,
+      "ballR16WidthAtDepth": 36.616,
+      "ballR16FloorDepthAtDepth": 22.207
+    },
+    {
+      "id": "receiver-03",
+      "kind": "bucket",
+      "nativeX": 33381.51442545501,
+      "nativeY": 34923.90364051326,
+      "nativeR": 28.5120754734123,
+      "sourceCenterX": 914.72,
+      "sourceCenterY": 1267.002,
+      "sourceMinX": 882.068,
+      "sourceMaxX": 947.378,
+      "sourceMinY": 1247.285,
+      "sourceMaxY": 1286.912,
+      "ballR16WidthAtDepth": 36.642,
+      "ballR16FloorDepthAtDepth": 22.237
+    },
+    {
+      "id": "receiver-04",
+      "kind": "bucket",
+      "nativeX": 33627.12626589451,
+      "nativeY": 34890.46257444717,
+      "nativeR": 31.47800941620484,
+      "sourceCenterX": 1193.553,
+      "sourceCenterY": 1243.896,
+      "sourceMinX": 1157.654,
+      "sourceMaxX": 1229.476,
+      "sourceMinY": 1222.383,
+      "sourceMaxY": 1265.639,
+      "ballR16WidthAtDepth": 36.434,
+      "ballR16FloorDepthAtDepth": 21.986
+    }
+  ],
+  "segments": [
+    {
+      "id": "far",
+      "fromPx": [
+        420.0,
+        300.0
+      ],
+      "toPx": [
+        1116.0,
+        300.0
+      ]
+    },
+    {
+      "id": "left-1",
+      "fromPx": [
+        420.0,
+        300.0
+      ],
+      "toPx": [
+        423.0,
+        420.0
+      ]
+    },
+    {
+      "id": "left-2",
+      "fromPx": [
+        423.0,
+        420.0
+      ],
+      "toPx": [
+        365.0,
+        550.0
+      ]
+    },
+    {
+      "id": "left-3",
+      "fromPx": [
+        365.0,
+        550.0
+      ],
+      "toPx": [
+        425.0,
+        700.0
+      ]
+    },
+    {
+      "id": "left-4",
+      "fromPx": [
+        425.0,
+        700.0
+      ],
+      "toPx": [
+        395.0,
+        850.0
+      ]
+    },
+    {
+      "id": "left-5",
+      "fromPx": [
+        395.0,
+        850.0
+      ],
+      "toPx": [
+        281.0,
+        985.0
+      ]
+    },
+    {
+      "id": "left-6",
+      "fromPx": [
+        281.0,
+        985.0
+      ],
+      "toPx": [
+        345.0,
+        1114.0
+      ]
+    },
+    {
+      "id": "right-1",
+      "fromPx": [
+        1116.0,
+        300.0
+      ],
+      "toPx": [
+        1150.0,
+        420.0
+      ]
+    },
+    {
+      "id": "right-2",
+      "fromPx": [
+        1150.0,
+        420.0
+      ],
+      "toPx": [
+        1218.0,
+        550.0
+      ]
+    },
+    {
+      "id": "right-3",
+      "fromPx": [
+        1218.0,
+        550.0
+      ],
+      "toPx": [
+        1295.0,
+        700.0
+      ]
+    },
+    {
+      "id": "right-4",
+      "fromPx": [
+        1295.0,
+        700.0
+      ],
+      "toPx": [
+        1249.0,
+        850.0
+      ]
+    },
+    {
+      "id": "right-5",
+      "fromPx": [
+        1249.0,
+        850.0
+      ],
+      "toPx": [
+        1345.0,
+        985.0
+      ]
+    },
+    {
+      "id": "right-6",
+      "fromPx": [
+        1345.0,
+        985.0
+      ],
+      "toPx": [
+        1240.0,
+        1114.0
+      ]
+    },
+    {
+      "id": "near-divider-1",
+      "fromPx": [
+        480.0,
+        1114.0
+      ],
+      "toPx": [
+        540.0,
+        1114.0
+      ]
+    },
+    {
+      "id": "near-divider-2",
+      "fromPx": [
+        760.0,
+        1114.0
+      ],
+      "toPx": [
+        800.0,
+        1114.0
+      ]
+    },
+    {
+      "id": "near-divider-3",
+      "fromPx": [
+        1040.0,
+        1114.0
+      ],
+      "toPx": [
+        1100.0,
+        1114.0
+      ]
+    }
+  ]
+}
