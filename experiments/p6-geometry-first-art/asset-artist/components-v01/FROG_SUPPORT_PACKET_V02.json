@@ -1,0 +1,261 @@
+{
+  "schema": "r4d.p6.frog-support-depth-variants.v2",
+  "status": "Two actual native artistic depth variants; actual assembled far/near review pending",
+  "acceptedP1": "4b47db04c7140ebf88f69b91faa0b790d46f22ec",
+  "configSha256": "dd5c519cd6d4b7295118e0a3a1063efed424a0ce739450bd5153c6a9941982db",
+  "supersedes": "frog master in OBSTACLE_MASTERS_V01 only; woodV02/flower/leaf unchanged",
+  "variants": [
+    {
+      "id": "frog-support-far-v03",
+      "family": "frog",
+      "instances": [
+        "frog-01",
+        "frog-02",
+        "frog-03"
+      ],
+      "texture": "raw/frog-support-far-v03.png",
+      "sha256": "355230e093362f0dd3e5cd4bb3bb6fa251ceb1131419ec632f7c3d85c0b65052",
+      "canvas": [
+        1363,
+        1154
+      ],
+      "groundAnchorPx": [
+        683.5,
+        720.5865037430885
+      ],
+      "baseEllipse": {
+        "centerPx": [
+          683.5,
+          720.5865037430885
+        ],
+        "radiusXPx": 553.0,
+        "radiusYPx": 260.1494433743339,
+        "lowerRimFitRmsPx": 1.3673444733358582
+      },
+      "visibleTopY": 222,
+      "visibleHeightAboveGroundPx": 498.58650374308854,
+      "alphaDiagnostics": {
+        "canvas": [
+          1363,
+          1154
+        ],
+        "alphaMax": 255,
+        "alphaWeightedCenter": [
+          681.3058008129799,
+          625.5175780958602
+        ],
+        "boundaryNonzero": 2,
+        "bounds": [
+          {
+            "threshold": 1,
+            "rectInclusive": [
+              0,
+              0,
+              1332,
+              1129
+            ]
+          },
+          {
+            "threshold": 16,
+            "rectInclusive": [
+              128,
+              221,
+              1235,
+              981
+            ]
+          },
+          {
+            "threshold": 128,
+            "rectInclusive": [
+              129,
+              222,
+              1234,
+              980
+            ]
+          }
+        ],
+        "centreRgba": [
+          150,
+          167,
+          74,
+          253
+        ]
+      }
+    },
+    {
+      "id": "frog-support-near-v02",
+      "family": "frog",
+      "instances": [
+        "frog-04",
+        "frog-05"
+      ],
+      "texture": "raw/frog-support-near-v02.png",
+      "sha256": "160e6204ce28256ff62c0a6f2e4a531b1f09b7d10b2e942b1123b7ec504593ef",
+      "canvas": [
+        1363,
+        1154
+      ],
+      "groundAnchorPx": [
+        683.0,
+        729.2106489245883
+      ],
+      "baseEllipse": {
+        "centerPx": [
+          683.0,
+          729.2106489245883
+        ],
+        "radiusXPx": 549.5,
+        "radiusYPx": 309.01700130815817,
+        "lowerRimFitRmsPx": 2.554685108696114
+      },
+      "visibleTopY": 188,
+      "visibleHeightAboveGroundPx": 541.2106489245883,
+      "alphaDiagnostics": {
+        "canvas": [
+          1363,
+          1154
+        ],
+        "alphaMax": 255,
+        "alphaWeightedCenter": [
+          682.0893749730957,
+          634.0640566359838
+        ],
+        "boundaryNonzero": 19,
+        "bounds": [
+          {
+            "threshold": 1,
+            "rectInclusive": [
+              0,
+              25,
+              1330,
+              1113
+            ]
+          },
+          {
+            "threshold": 16,
+            "rectInclusive": [
+              131,
+              187,
+              1231,
+              1040
+            ]
+          },
+          {
+            "threshold": 128,
+            "rectInclusive": [
+              132,
+              188,
+              1230,
+              1039
+            ]
+          }
+        ],
+        "centreRgba": [
+          12,
+          6,
+          0,
+          253
+        ]
+      }
+    }
+  ],
+  "instances": [
+    {
+      "id": "frog-01",
+      "variant": "frog-support-far-v03",
+      "nativeCentre": [
+        33523.76813123743,
+        33306.91584579162
+      ],
+      "nativeRadius": 49.005746624320594,
+      "sourceGroundCentre": [
+        1011.4166569436551,
+        385.9240956853891
+      ],
+      "uniformScale": 0.07956600361664115,
+      "targetProjectedNearY": 407.0000000000008,
+      "fittedNearY": 406.62314723777854,
+      "fittedNearExtentErrorPx": -0.3768527622222564,
+      "meaning": "Own raster lower-rim fit versus exact P1 projection; arithmetic/static rehearsal, actual new browser frame still required"
+    },
+    {
+      "id": "frog-02",
+      "variant": "frog-support-far-v03",
+      "nativeCentre": [
+        32948.158051844744,
+        33634.85738798833
+      ],
+      "nativeRadius": 47.92511291991522,
+      "sourceGroundCentre": [
+        481.94720861408734,
+        532.4547649566687
+      ],
+      "uniformScale": 0.08137432188065628,
+      "targetProjectedNearY": 554.9999999999987,
+      "fittedNearY": 553.6242494988853,
+      "fittedNearExtentErrorPx": -1.37575050111343,
+      "meaning": "Own raster lower-rim fit versus exact P1 projection; arithmetic/static rehearsal, actual new browser frame still required"
+    },
+    {
+      "id": "frog-03",
+      "variant": "frog-support-far-v03",
+      "nativeCentre": [
+        33623.770528529574,
+        33859.21790429951
+      ],
+      "nativeRadius": 48.487099129026284,
+      "sourceGroundCentre": [
+        1127.4910079461204,
+        640.6839825717879
+      ],
+      "uniformScale": 0.08499095840867356,
+      "targetProjectedNearY": 664.9999999999995,
+      "fittedNearY": 662.7943330936555,
+      "fittedNearExtentErrorPx": -2.2056669063440495,
+      "meaning": "Own raster lower-rim fit versus exact P1 projection; arithmetic/static rehearsal, actual new browser frame still required"
+    },
+    {
+      "id": "frog-04",
+      "variant": "frog-support-near-v02",
+      "nativeCentre": [
+        33183.163481675765,
+        34037.81138863775
+      ],
+      "nativeRadius": 49.24910619082636,
+      "sourceGroundCentre": [
+        698.531895014324,
+        731.9716387501211
+      ],
+      "uniformScale": 0.08917197452229868,
+      "targetProjectedNearY": 758.0000000000016,
+      "fittedNearY": 759.5272949177293,
+      "fittedNearExtentErrorPx": 1.5272949177276587,
+      "meaning": "Own raster lower-rim fit versus exact P1 projection; arithmetic/static rehearsal, actual new browser frame still required"
+    },
+    {
+      "id": "frog-05",
+      "variant": "frog-support-near-v02",
+      "nativeCentre": [
+        33397.654005936,
+        34396.68997420478
+      ],
+      "nativeRadius": 49.4893903044378,
+      "sourceGroundCentre": [
+        919.8401506536927,
+        930.8161351593445
+      ],
+      "uniformScale": 0.0946314831665113,
+      "targetProjectedNearY": 959.9999999999984,
+      "fittedNearY": 960.0588723168033,
+      "fittedNearExtentErrorPx": 0.058872316804922775,
+      "meaning": "Own raster lower-rim fit versus exact P1 projection; arithmetic/static rehearsal, actual new browser frame still required"
+    }
+  ],
+  "placementRule": "Choose explicitly listed variant by fixed ID. Place its measured lower-rim ellipse centre at exact P(pin centre). Uniform scale=projected horizontal radius/baseEllipse.radiusXPx. Never independently scale axes or alter geometry.",
+  "limits": [
+    "New native edits keep friendly frog identity/material but do not preserve head pixels/height exactly; actual heights are explicit.",
+    "Far variant measured aspect0.4704, near0.5624; requested0.50/0.55 were not achieved exactly.",
+    "The maximum remaining fitted near-edge gap is approximately2.21 source pixels on frog03; this is disclosed, not an artistic PASS.",
+    "Raw alpha<16 contains faint isolated native fringes; alpha diagnostics retained."
+  ]
+}

@@ -1,0 +1,391 @@
+{
+  "schema": "r4d.p6.receiver-layer-contract.v2",
+  "status": "Causal aperture/camera/depth repair after actual capture0/miss1/miss2; new actual assembled review required",
+  "acceptedP1": "4b47db04c7140ebf88f69b91faa0b790d46f22ec",
+  "supersedes": "RECEIVER_PACKET_V01 and both combined front/rear layers for consumer rendering",
+  "raw": "raw/receiver-master-v03.png",
+  "rawSha256": "c7e6b4e7e661ac982828e1d1d7a9ce68cc06dd8c997141494b3282411686f283",
+  "toolOutputId": "exec-518cfe39-9815-4357-b39e-7e56293adde1",
+  "mouthAnchorPx": [
+    770.0,
+    393.0
+  ],
+  "mouthEllipseMeasuredApprox": {
+    "radiusX": 507.0,
+    "radiusY": 287.0,
+    "aspect": 0.5660749506903353,
+    "basis": "Measured visible inner-lip guide of actual native camera edit, approximate, not a proof of exact projection"
+  },
+  "apertureFactor": 1.0,
+  "instances": [
+    {
+      "id": "receiver-01",
+      "nativeCentre": [
+        32893.24699917258,
+        34882.17558293618
+      ],
+      "nativeCaptureRadius": 33.523990645255964,
+      "mouthCentreSource": [
+        358.55946155335715,
+        1238.2098586093362
+      ],
+      "captureRadiusXSource": 38.11588800387989,
+      "uniformScale": 0.07517926627984199,
+      "rearDepthNativeY": 34848.651592290924,
+      "frontDepthNativeY": 34915.699573581434,
+      "ropeLoopsRawPx": [
+        [
+          165,
+          225
+        ],
+        [
+          1375,
+          225
+        ]
+      ]
+    },
+    {
+      "id": "receiver-02",
+      "nativeCentre": [
+        33147.03047341419,
+        34919.8575927248
+      ],
+      "nativeCaptureRadius": 27.859680215191496,
+      "mouthCentreSource": [
+        646.3101699213796,
+        1264.1927466396157
+      ],
+      "captureRadiusXSource": 31.87880961694259,
+      "uniformScale": 0.06287733652256922,
+      "rearDepthNativeY": 34891.99791250961,
+      "frontDepthNativeY": 34947.71727294,
+      "ropeLoopsRawPx": [
+        [
+          165,
+          225
+        ],
+        [
+          1375,
+          225
+        ]
+      ]
+    },
+    {
+      "id": "receiver-03",
+      "nativeCentre": [
+        33381.51442545501,
+        34923.90364051326
+      ],
+      "nativeCaptureRadius": 28.5120754734123,
+      "mouthCentreSource": [
+        914.7204931038729,
+        1267.0024411082616
+      ],
+      "captureRadiusXSource": 32.64779750692446,
+      "uniformScale": 0.06439407792292794,
+      "rearDepthNativeY": 34895.39156503985,
+      "frontDepthNativeY": 34952.415715986666,
+      "ropeLoopsRawPx": [
+        [
+          165,
+          225
+        ],
+        [
+          1375,
+          225
+        ]
+      ]
+    },
+    {
+      "id": "receiver-04",
+      "nativeCentre": [
+        33627.12626589451,
+        34890.46257444717
+      ],
+      "nativeCaptureRadius": 31.47800941620484,
+      "mouthCentreSource": [
+        1193.5527369826405,
+        1243.8955530450871
+      ],
+      "captureRadiusXSource": 35.8398751474075,
+      "uniformScale": 0.07069008904814102,
+      "rearDepthNativeY": 34858.984565030965,
+      "frontDepthNativeY": 34921.940583863376,
+      "ropeLoopsRawPx": [
+        [
+          165,
+          225
+        ],
+        [
+          1375,
+          225
+        ]
+      ]
+    }
+  ],
+  "layers": [
+    {
+      "id": "receiver-01-rear",
+      "texture": "prepared/receiver-01-rear-v02.png",
+      "sourceOrigin": [
+        0,
+        0
+      ],
+      "depthNativeY": 34848.651592290924,
+      "role": "rear",
+      "sha256": "80b18f32ab85207d93a32c2368667e5e5e46737eb2d3b7beb54d52d44bb70096"
+    },
+    {
+      "id": "receiver-01-front",
+      "texture": "prepared/receiver-01-front-v02.png",
+      "sourceOrigin": [
+        0,
+        0
+      ],
+      "depthNativeY": 34915.699573581434,
+      "role": "front",
+      "sha256": "2e4834a6ff778f1f962bc68daabd690a2de7026f67d06766503bd1ca7be8605e"
+    },
+    {
+      "id": "receiver-02-rear",
+      "texture": "prepared/receiver-02-rear-v02.png",
+      "sourceOrigin": [
+        0,
+        0
+      ],
+      "depthNativeY": 34891.99791250961,
+      "role": "rear",
+      "sha256": "a22d74078876d67fa22f5dd610fbada052585e62354642170bdbf40e2a3ed70b"
+    },
+    {
+      "id": "receiver-02-front",
+      "texture": "prepared/receiver-02-front-v02.png",
+      "sourceOrigin": [
+        0,
+        0
+      ],
+      "depthNativeY": 34947.71727294,
+      "role": "front",
+      "sha256": "de57fe017b0851fc33595314f302ea6e363edd97616a17db6390644b54f6107c"
+    },
+    {
+      "id": "receiver-03-rear",
+      "texture": "prepared/receiver-03-rear-v02.png",
+      "sourceOrigin": [
+        0,
+        0
+      ],
+      "depthNativeY": 34895.39156503985,
+      "role": "rear",
+      "sha256": "3f0c610d9f6b2de2bdc87096a89bfbe001d493cb6c216741c056a5c352434dc1"
+    },
+    {
+      "id": "receiver-03-front",
+      "texture": "prepared/receiver-03-front-v02.png",
+      "sourceOrigin": [
+        0,
+        0
+      ],
+      "depthNativeY": 34952.415715986666,
+      "role": "front",
+      "sha256": "de7bafab8f20cb1308f0ed983d40dc97fa4725807b1ffc5d032382efe3bddd50"
+    },
+    {
+      "id": "receiver-04-rear",
+      "texture": "prepared/receiver-04-rear-v02.png",
+      "sourceOrigin": [
+        0,
+        0
+      ],
+      "depthNativeY": 34858.984565030965,
+      "role": "rear",
+      "sha256": "a9de70cf1be31fcbff991d46b6bbefbbe1dba6230e20344d47afe18a5c83727a"
+    },
+    {
+      "id": "receiver-04-front",
+      "texture": "prepared/receiver-04-front-v02.png",
+      "sourceOrigin": [
+        0,
+        0
+      ],
+      "depthNativeY": 34921.940583863376,
+      "role": "front",
+      "sha256": "32fb409aad1f78d1846b8897054d66f9b8f3436464042d3fb215ded3c253fd8f"
+    }
+  ],
+  "sortRule": "Sort all8 receiver parts and ball by ascending native Y. rearDepth=captureCy-captureR; frontDepth=captureCy+captureR. A part with depth<=ball.nativeY draws below ball; a part with depth>ball.nativeY draws above. Use these same fixed thresholds for every state/seed/outcome.",
+  "sortTieRule": "Receiver part before ball at equal depth",
+  "splitMethod": "Actual raw stone/gold front rim, luminance edge within45 raw pixels of measured ellipse guide, median9 columns. Front/rear are complementary raw-alpha partitions, alpha<16 removed; no opening enlargement.",
+  "sourceRegistration": "Every layer1536-square at source0/0; mouthAnchor maps exactly to P(unchanged capture centre); all sprite scaling uniform; ball packetV03 unchanged.",
+  "rehearsals": [
+    {
+      "state": "last-approach-seed0-state1950",
+      "nativeCentre": [
+        33377.6955241,
+        34867.2350017
+      ],
+      "projectedNativeCentre": [
+        909.015960974251,
+        1227.9992977962884
+      ],
+      "ballCentreSource": [
+        909.015960974251,
+        1209.8535574996
+      ],
+      "visibleRadius": 18.145740296688416,
+      "staticArtRehearsal": "prepared/receiver-rehearsal-last-approach-seed0-state1950-v02.png",
+      "actualNewBrowserReview": "pending with Builder; retained native receipts read only, no held QA report copied"
+    },
+    {
+      "state": "last-approach-seed0-state1953",
+      "nativeCentre": [
+        33384.7388272,
+        34884.1079182
+      ],
+      "projectedNativeCentre": [
+        917.4204657439863,
+        1239.5342065782586
+      ],
+      "ballCentreSource": [
+        917.4204657439863,
+        1221.336686041084
+      ],
+      "visibleRadius": 18.19752053717457,
+      "staticArtRehearsal": "prepared/receiver-rehearsal-last-approach-seed0-state1953-v02.png",
+      "actualNewBrowserReview": "pending with Builder; retained native receipts read only, no held QA report copied"
+    },
+    {
+      "state": "last-approach-seed0-state1956",
+      "nativeCentre": [
+        33391.7821303,
+        34901.2013347
+      ],
+      "projectedNativeCentre": [
+        925.8788657241207,
+        1251.2871789435733
+      ],
+      "ballCentreSource": [
+        925.8788657241207,
+        1233.036899277826
+      ],
+      "visibleRadius": 18.250279665747314,
+      "staticArtRehearsal": "prepared/receiver-rehearsal-last-approach-seed0-state1956-v02.png",
+      "actualNewBrowserReview": "pending with Builder; retained native receipts read only, no held QA report copied"
+    },
+    {
+      "state": "partial-front-seed1-state1680",
+      "nativeCentre": [
+        33569.9346769,
+        34944.8014242
+      ],
+      "projectedNativeCentre": [
+        1131.7550468650938,
+        1281.5763306771148
+      ],
+      "ballCentreSource": [
+        1131.7550468650938,
+        1263.1900829174251
+      ],
+      "visibleRadius": 18.386247759689695,
+      "staticArtRehearsal": "prepared/receiver-rehearsal-partial-front-seed1-state1680-v02.png",
+      "actualNewBrowserReview": "pending with Builder; retained native receipts read only, no held QA report copied"
+    },
+    {
+      "state": "under-front-seed1-state1690",
+      "nativeCentre": [
+        33608.1520309,
+        35017.6388352
+      ],
+      "projectedNativeCentre": [
+        1180.7722373092022,
+        1333.196214502712
+      ],
+      "ballCentreSource": [
+        1180.7722373092022,
+        1314.5782449280623
+      ],
+      "visibleRadius": 18.617969574649692,
+      "staticArtRehearsal": "prepared/receiver-rehearsal-under-front-seed1-state1690-v02.png",
+      "actualNewBrowserReview": "pending with Builder; retained native receipts read only, no held QA report copied"
+    },
+    {
+      "state": "miss-approach-seed1-state1700",
+      "nativeCentre": [
+        33646.3693849,
+        35092.9262462
+      ],
+      "projectedNativeCentre": [
+        1231.2383199881324,
+        1387.9379781345813
+      ],
+      "ballCentreSource": [
+        1231.2383199881324,
+        1369.0742726170583
+      ],
+      "visibleRadius": 18.863705517522817,
+      "staticArtRehearsal": "prepared/receiver-rehearsal-miss-approach-seed1-state1700-v02.png",
+      "actualNewBrowserReview": "pending with Builder; retained native receipts read only, no held QA report copied"
+    },
+    {
+      "state": "partial-front-seed2-state1233",
+      "nativeCentre": [
+        33196.6062426,
+        34980.7861283
+      ],
+      "projectedNativeCentre": [
+        702.3259584086127,
+        1306.9171079085968
+      ],
+      "ballCentreSource": [
+        702.3259584086127,
+        1288.4171053231037
+      ],
+      "visibleRadius": 18.500002585493178,
+      "staticArtRehearsal": "prepared/receiver-rehearsal-partial-front-seed2-state1233-v02.png",
+      "actualNewBrowserReview": "pending with Builder; retained native receipts read only, no held QA report copied"
+    },
+    {
+      "state": "under-front-seed2-state1242",
+      "nativeCentre": [
+        33204.2125431,
+        35037.3437699
+      ],
+      "projectedNativeCentre": [
+        710.5327541506508,
+        1347.3854827791663
+      ],
+      "ballCentreSource": [
+        710.5327541506508,
+        1328.703817536214
+      ],
+      "visibleRadius": 18.681665242952306,
+      "staticArtRehearsal": "prepared/receiver-rehearsal-under-front-seed2-state1242-v02.png",
+      "actualNewBrowserReview": "pending with Builder; retained native receipts read only, no held QA report copied"
+    },
+    {
+      "state": "miss-approach-seed2-state1255",
+      "nativeCentre": [
+        33215.1994216,
+        35122.5416411
+      ],
+      "projectedNativeCentre": [
+        722.6458159050846,
+        1409.869529662835
+      ],
+      "ballCentreSource": [
+        722.6458159050846,
+        1390.9073733440243
+      ],
+      "visibleRadius": 18.96215631881074,
+      "staticArtRehearsal": "prepared/receiver-rehearsal-miss-approach-seed2-state1255-v02.png",
+      "actualNewBrowserReview": "pending with Builder; retained native receipts read only, no held QA report copied"
+    }
+  ],
+  "limits": [
+    "No outcome-based sink, position, opacity, mask or draw-order rule.",
+    "Raw mouth aspect~0.566 differs slightly from projected capture~0.603–0.607; exact visible rim checks and retained actual approaches remain required.",
+    "Static art rehearsals are own recompositions from frozen actual-state coordinates, not newly observed simulation or screenshots.",
+    "Earlier512 dark sample inclusion was insufficient and is not repeated as semantic proof.",
+    "Capture0 terminal may still show sphere at the far rim; actual visual acceptance remains independent."
+  ]
+}

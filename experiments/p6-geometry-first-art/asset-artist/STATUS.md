@@ -74,3 +74,5 @@ must not be copied/published), repair own frog support with far/near checks; rev
 receiver approaches from2d860cc8 without assuming a partial-overlap defect; then finish
 boundary16/vertical sides/suspension ropes/start/outer jungle environment. Full scene
 and independent QA are pending. No new homogeneous whole-image reroll is needed.
+
+Frog/receiver causal art packet V02 is prepared; see ART_REPAIR_HANDOFF_V02.md. Two measured frog depth masters,8 individually depth-sorted receiver parts and aperture1.0. Static rehearsals preserve retained0/1/2 coordinates; actual new consumer review still pending. Native Jungle background, boundary material, rope and start hatch now completed and preserved; registered world layers are being assembled. No blocked/held QA report is republished.
