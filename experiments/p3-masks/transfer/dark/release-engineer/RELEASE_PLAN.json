@@ -1,0 +1,355 @@
+{
+  "documentType": "local-release-plan-template-not-candidate-or-manifest",
+  "planStatus": "LOCAL_PLAN_COMPLETE_WAIT_FROZEN",
+  "board": "dark",
+  "boardId": "02",
+  "p1Trial": "01",
+  "staffId": "release-engineer-r4d-p3-masks-01",
+  "serverWrite": false,
+  "sshPerformed": false,
+  "liveCapturePerformed": false,
+  "deliveryExecutedThisTask": false,
+  "checkpoint": {
+    "actualTurnId": "01a186fc-4d21-7c02-955d-3731d997bef5",
+    "turnStatusObserved": "inProgress",
+    "turnIdSource": "read_thread own chat metadata",
+    "initialHead": "390e178ecc044cadb9b67f4a2506d5efdc171fef",
+    "branch": "codex/r4d-p3-masks-release-engineer-01",
+    "initialStatusPorcelain": "",
+    "firstActions": [
+      "git rev-parse HEAD / branch --show-current / status --porcelain=v1",
+      "git show four required order files in given order",
+      "Get-FileHash two original images; Git object identity verification"
+    ],
+    "recordedUtc": "2026-10-29T09:36:40.680036+00:00"
+  },
+  "authority": {
+    "orderFilesFullyRead": [
+      {
+        "commit": "c6603f0f327350172df44687a4d4ead19e0e5e6b",
+        "path": "orders/perspective/P3-transfer-water-dark.md",
+        "gitBlob": "37be178f1ba1ae9a947d8002f0ac56348374adeb",
+        "bytes": 11376,
+        "sha256": "03923f4536115879724f76c5ae857f20e43a75627ec1cf99eff17c99f85764e8",
+        "canonicalLfSha256": "03923f4536115879724f76c5ae857f20e43a75627ec1cf99eff17c99f85764e8"
+      },
+      {
+        "commit": "c6603f0f327350172df44687a4d4ead19e0e5e6b",
+        "path": "orders/perspective/P3-masks.md",
+        "gitBlob": "263ca2dd7a22c82b5a8eb29c3ddf215b55240159",
+        "bytes": 5021,
+        "sha256": "a104e8cc31198244c107b5b70fe6300fefac384c60f44b3c826c81a1b5aa3320",
+        "canonicalLfSha256": "a104e8cc31198244c107b5b70fe6300fefac384c60f44b3c826c81a1b5aa3320"
+      },
+      {
+        "commit": "c6603f0f327350172df44687a4d4ead19e0e5e6b",
+        "path": "orders/perspective/ORDER.md",
+        "gitBlob": "7fb0047e6f8326ec034e1439be746f18b86d1a8b",
+        "bytes": 36527,
+        "sha256": "4780e28cb1285104ac55881059f04f550fb42e06641da7953d26c2063b9f65e2",
+        "canonicalLfSha256": "4780e28cb1285104ac55881059f04f550fb42e06641da7953d26c2063b9f65e2"
+      },
+      {
+        "commit": "c6603f0f327350172df44687a4d4ead19e0e5e6b",
+        "path": "orders/perspective/P2-P6-transfer.md",
+        "gitBlob": "ecf0d58c2d5472ab330ce03c252941d26273ed35",
+        "bytes": 10125,
+        "sha256": "cee6b6d74846886fd05795a7eef0a0c2876318b6e89ccb7e9241c611b615670c",
+        "canonicalLfSha256": "cee6b6d74846886fd05795a7eef0a0c2876318b6e89ccb7e9241c611b615670c"
+      }
+    ],
+    "maxStartUtc": "2026-10-29T09:04:16Z",
+    "maxClarificationUtc": "2026-10-29T09:13:39Z",
+    "effect": "transfer starts now in second slot alongside P5; supersedes old queue only",
+    "serverQueue": "P5 first; no transfer server operation before new exact CTO token",
+    "oldJungleToken": "completed; cannot authorize transfer",
+    "runtimeInstruction": "gpt-6.1-sol/xhigh unchanged; not independently claimed from UI"
+  },
+  "acceptedInputs": {
+    "image": {
+      "path": "K:\\Agents\\R4D\\Assets\\perspective\\02-dark-temple.jpg",
+      "sha256": "7ceff71bd0a871fecd725527dff5522450c8e75a74eb99c107b5d8624bf8fa3a",
+      "bytes": 536988,
+      "sourceSize": [
+        1536,
+        1536
+      ],
+      "readOnly": true
+    },
+    "config": {
+      "commit": "4b47db04c7140ebf88f69b91faa0b790d46f22ec",
+      "path": "experiments/p1-collider-mapping/clean-repeat-01/simulation/boards/02/trial-01/config.json",
+      "gitBlob": "7cb6723a5dd0424ca88575d472d56dea8514f689",
+      "bytes": 19508,
+      "sha256": "14be2a023833d266d1e333bf582af5fd5885deb445698c10ebd846ef0cc080b2",
+      "canonicalLfSha256": "14be2a023833d266d1e333bf582af5fd5885deb445698c10ebd846ef0cc080b2"
+    },
+    "manifest": {
+      "commit": "4b47db04c7140ebf88f69b91faa0b790d46f22ec",
+      "path": "experiments/p1-collider-mapping/clean-repeat-01/simulation/boards/02/trial-01/manifest.json",
+      "gitBlob": "e04492ac7976e9bc6a7556177ef8b9472ed393f4",
+      "bytes": 13939,
+      "sha256": "3fab422bd1f74d477d1648620c97ad6d7b8b0a55a70a1102d6e6885def564d81",
+      "canonicalLfSha256": "3fab422bd1f74d477d1648620c97ad6d7b8b0a55a70a1102d6e6885def564d81"
+    },
+    "projection": {
+      "commit": "4b47db04c7140ebf88f69b91faa0b790d46f22ec",
+      "path": "experiments/p1-collider-mapping/clean-repeat-01/research/board02-projection.candidate-01.json",
+      "gitBlob": "49e3568f637bd8fc028f6c6c62822b4cc171d9ff",
+      "bytes": 39956,
+      "sha256": "4dfa46589bb3fdfc8e2ad8ff2554737697e3ce9172c5b8d5c5583577df0c8c48",
+      "canonicalLfSha256": "4dfa46589bb3fdfc8e2ad8ff2554737697e3ce9172c5b8d5c5583577df0c8c48"
+    },
+    "sharedViewMath": {
+      "commit": "4b47db04c7140ebf88f69b91faa0b790d46f22ec",
+      "path": "experiments/p1-collider-mapping/clean-repeat-01/viewer/src/view-math.mjs",
+      "gitBlob": "ce3ae207f7690efa942bfa04ac5cdbafc7b96db4",
+      "bytes": 3050,
+      "sha256": "96f01cc2093c353ff958cb906fe0c8ae93412425d0f7a5ec7cca0f2bf9f1aa5e",
+      "canonicalLfSha256": "96f01cc2093c353ff958cb906fe0c8ae93412425d0f7a5ec7cca0f2bf9f1aa5e"
+    },
+    "counts": {
+      "researchObjects": 24,
+      "researchPrimitives": 24,
+      "circleFootprints": 12,
+      "loopFootprints": 12,
+      "obstacleSegments": 48,
+      "explicitBounds": 22,
+      "pins": 12,
+      "segments": 70,
+      "buckets": 4,
+      "drops": 1
+    },
+    "preserve": [
+      "nativeToSource",
+      "sourceToNative",
+      "translation",
+      "domains",
+      "exact config / common physical settings"
+    ],
+    "native": {
+      "commit": "5a6fa03f1cdb3de88a2d9c7dbe795eb8e2a7f023",
+      "tree": "008d16a80a26bb77d562a45218b01da09b0d9ff0",
+      "verification": "CTO supplied pin; private sources not opened in this local plan pass"
+    },
+    "physics": {
+      "r": 16,
+      "tickMs": 5,
+      "gravity": 980,
+      "speedLimit": 2000,
+      "angleDeviationDeg": 2,
+      "bounceDeviation": 0.02,
+      "prng": "lcg32",
+      "quantize": 7,
+      "ordinaryRunChange": "rng.seed only"
+    },
+    "historicalManifestStatus": "actual core trial; supports, radius and registration provisional; no QA PASS or Max acceptance",
+    "historicalStatusInterpretation": "retained as history; current accepted P1/authority supplied by CTO, no inherited transfer QA PASS"
+  },
+  "jungleBaseline": {
+    "codeCommit": "f1aca21e7b9ba19001e7e8762fcaf2511bf9bf74",
+    "artCommit": "f899a308aed156a11e2a1013292ed68c6669959d",
+    "frozenManifestSha256": "e2e9f7d837b3d05f484f75a877af6992a70ee88363add783d80f3c6e206f431f",
+    "assetsJson": {
+      "commit": "f899a308aed156a11e2a1013292ed68c6669959d",
+      "path": "experiments/p3-masks/asset-artist/assets.json",
+      "gitBlob": "4e2d9cd1406e507fa9b79ff7b46dc4d67e0d75ee",
+      "bytes": 13060,
+      "sha256": "98cef793f5cf9191fea315caf4bf11d727c20b2d5a9d5704972e97e02cfd2f73",
+      "canonicalLfSha256": "98cef793f5cf9191fea315caf4bf11d727c20b2d5a9d5704972e97e02cfd2f73"
+    },
+    "assetPrefix": "experiments/p3-masks/asset-artist/",
+    "methodRefs": [
+      {
+        "commit": "f1aca21e7b9ba19001e7e8762fcaf2511bf9bf74",
+        "path": "experiments/p3-masks/builder/README.md"
+      },
+      {
+        "commit": "f1aca21e7b9ba19001e7e8762fcaf2511bf9bf74",
+        "path": "experiments/p3-masks/builder/ASSET_CONTRACT.md"
+      },
+      {
+        "commit": "f1aca21e7b9ba19001e7e8762fcaf2511bf9bf74",
+        "path": "experiments/p3-masks/builder/src/app.js"
+      },
+      {
+        "commit": "f1aca21e7b9ba19001e7e8762fcaf2511bf9bf74",
+        "path": "experiments/p3-masks/builder/src/run-model.js"
+      }
+    ],
+    "appliedReleaseRecipeRefs": [
+      {
+        "commit": "390e178ecc044cadb9b67f4a2506d5efdc171fef",
+        "path": "experiments/p3-masks/release/DELIVERY_FROZEN_01.md",
+        "use": "historical applied Jungle process; do not execute hardcoded Jungle operations for transfer"
+      },
+      {
+        "commit": "390e178ecc044cadb9b67f4a2506d5efdc171fef",
+        "path": "experiments/p3-masks/release/prepare_intent.py",
+        "use": "historical applied Jungle process; do not execute hardcoded Jungle operations for transfer"
+      },
+      {
+        "commit": "390e178ecc044cadb9b67f4a2506d5efdc171fef",
+        "path": "experiments/p3-masks/release/execute_frozen_01.py",
+        "use": "historical applied Jungle process; do not execute hardcoded Jungle operations for transfer"
+      },
+      {
+        "commit": "390e178ecc044cadb9b67f4a2506d5efdc171fef",
+        "path": "experiments/p3-masks/release/remote_frozen_01.py",
+        "use": "historical applied Jungle process; do not execute hardcoded Jungle operations for transfer"
+      }
+    ],
+    "preservedRoute": "/review/r4d/p3-masks/",
+    "verdict": "PARTIAL; MAP-01 left-5 seed2818447218/t612; post-auth public JS MIME/body/UI unverified",
+    "reopenJungleQA": false,
+    "modifyJungleFilesAssetsBundleOrPage": false
+  },
+  "isolation": {
+    "roleArea": "experiments/p3-masks/transfer/dark/release-engineer/",
+    "runtime": "E:\\R4D\\perspective\\p3-runtime\\release-engineer\\transfer-water-dark\\dark",
+    "route": "/review/r4d/p3-masks-dark/",
+    "currentLivePresence": "not checked; no SSH allowed this pass",
+    "localPreviewPort": null,
+    "previewPid": null,
+    "independentBundleAndVerdict": true,
+    "otherBoardConfigAssetsLogsCandidatesPortsMayBeMixed": false
+  },
+  "requiredFutureHandoff": {
+    "candidateId": null,
+    "codeCommit": null,
+    "artCommit": null,
+    "buildCommitOrRecipeRef": null,
+    "bundleAbsolutePath": null,
+    "frozenFileManifestPath": null,
+    "frozenFileManifestSha256": null,
+    "payloadFileCount": null,
+    "payloadBytes": null,
+    "tqaReportCommitPathAndSha256": null,
+    "vqaReportCommitPathAndSha256": null,
+    "qaMustIdentifySameBoardAndExactManifest": true,
+    "boardSpecificQaCoverage": [
+      "Прямоугольные и многогранные препятствия",
+      "Углы, передние и боковые проходы",
+      "Частичное наложение силуэтов до/во время/после контакта",
+      "Границы и корзины"
+    ],
+    "ordinaryGoodAndBadReplayRefs": null,
+    "methodFirstApplicationRefBeforeSignificantChange": null,
+    "methodChangesAndReason": null,
+    "separateBoardVerdict": null,
+    "leadGateAndApprovedLimitations": null,
+    "ctoGateAndNewExactToken": null
+  },
+  "manifestScheme": {
+    "notGeneratedNow": true,
+    "candidateManifestFields": [
+      "board",
+      "sourceImageSha256",
+      "P1 config/manifest/projection identities",
+      "native/Pixi/build provenance",
+      "CODE/ART commits",
+      "method baseline/change refs",
+      "files[path,bytes,sha256]"
+    ],
+    "fileEntryTemplate": {
+      "path": null,
+      "bytes": null,
+      "sha256": null
+    },
+    "pathsRelativeAndUnique": true,
+    "browserBaseRoute": "/review/r4d/p3-masks-dark/",
+    "browserModulesExtension": ".js",
+    "nodeOnlyMjsNotRenamed": true,
+    "excludeBrowserTree": [
+      "private TS",
+      "source maps",
+      "secrets/credentials",
+      "raw process/QA logs",
+      "node_modules"
+    ],
+    "selfHashExternalToManifest": true,
+    "fullReleaseFields": [
+      "releaseId",
+      "fresh previousRoot/manifestHash",
+      "this board candidate/QA/verdict",
+      "catalog delta hashes",
+      "all published_files[path,bytes,sha256]"
+    ],
+    "releaseManifestOutsideServedReviewTree": true,
+    "releaseManifestSha256": null,
+    "transportSha256": null,
+    "transportBytes": null,
+    "rebuildInRelease": false
+  },
+  "hashGuardScheme": {
+    "capturedNow": false,
+    "baselineUtc": null,
+    "liveRoot": null,
+    "liveManifestSha256": null,
+    "reviewSnippetSha256": null,
+    "rootNormalizedSnippetSha256": null,
+    "opaqueInventorySha256OrReference": null,
+    "ownershipModesSnapshot": null,
+    "allOwnNewTargetsAbsent": null,
+    "jungleRouteAndExistingCardsUnchanged": null,
+    "alreadyDeliveredSiblingPreserved": null,
+    "notAssumedFromHistoricalJungleRootOrHashes": true,
+    "repeatBeforeFirstWriteAndSwitch": true,
+    "driftOrOccupiedTargetAction": "STOP exact operation; report action/target/toolcall/reason to Lead/CTO; do not retarget token"
+  },
+  "rollbackScheme": {
+    "createdNow": false,
+    "backupPath": null,
+    "backupPathProposalPattern": "/opt/superflight-studio/backups/review-p3-dark-<release-id>/",
+    "tempSnippetProposalPattern": "/etc/nginx/snippets/.review-p3-dark-<release-id>.locations.conf.tmp",
+    "beforeRoot": null,
+    "beforeSnippetSha256": null,
+    "freshBeforeSnapshotUtc": null,
+    "publishedRoot": null,
+    "publishedSnippetSha256": null,
+    "guard": "restore only if current root/snippet are still our exact publication; never overwrite later writer",
+    "scope": "exact before-snippet atomic restore, nginx -t and graceful reload only if authorized",
+    "preserve": "old immutable roots, Jungle, already-delivered sibling, DB/sessions/other services"
+  },
+  "catalogDeltaScheme": {
+    "preparedAgainstLiveNow": false,
+    "existingCatalogPath": "review/index.html",
+    "newCardHref": "/review/r4d/p3-masks-dark/",
+    "titleProposal": "P3 — тёмная доска: цельная картинка и маски",
+    "statusFromThisBoardQa": null,
+    "caveatFromThisBoardQa": null,
+    "beforeCatalogSha256": null,
+    "afterCatalogSha256": null,
+    "zeroContextPatch": null,
+    "counter": "fresh actual count + this single new card; do not reuse Jungle 2->3",
+    "allowedChanges": [
+      "one new sibling card for this board",
+      "its existing section counter only"
+    ],
+    "keepAllOtherCardBytes": true,
+    "keepJungleAndOtherSiblingRoute": true,
+    "reverseDeltaMustRestoreExactBaseline": true,
+    "unexpectedExistingCardOrRoute": "STOP for ownership/version decision, no silent overwrite"
+  },
+  "futureWorkflow": [
+    "receive this board exact frozen bytes + both independent QA/verdict + method refs",
+    "fresh system-wide RAM/CPU/C/D/E and measured-current-load plus additional peak estimate before heavy local work",
+    "prepare concrete local release intent only when reactivated by Lead; no branch HEAD or rebuild",
+    "in separately authorized future stage capture fresh opaque live baseline after P5 and any prior transfer release",
+    "full new tree/manifest/hash, minimal catalog delta and guarded rollback per this board",
+    "new exact CTO token for named bytes/targets/guard; no implicit batch or reuse of Jungle token",
+    "preserve all existing browser bytes except approved own catalog delta; no auth/global MIME/access/services/ports changes",
+    "delivery smoke: body/MIME for actually served browser .js, auth and navigation; login303 is not post-auth verification",
+    "record this board result independently; CTO handles release window and comparison"
+  ],
+  "resourceRules": {
+    "heavyStepExecutedNow": false,
+    "heavyArtifactsOnlyOwnERuntime": true,
+    "env": "process-local only",
+    "eLe4GiB": "diagnosis",
+    "eLe2GiB": "safe checkpoint/stop",
+    "noOld10GiBReserve": true,
+    "noCleanupArchiveRawWorktreesOrForeignProcesses": true
+  },
+  "stopAfterThisLocalPlanCommitPush": true
+}
