@@ -1,0 +1,364 @@
+{
+  "schema": "r4d.p4.transfer.qa.native-prep.v1",
+  "board": "dark",
+  "activeTrial": "trial-01",
+  "scope": "native/input preparation only; no consumer or Art PASS",
+  "binding": {
+    "schema": "r4d.p4.transfer.qa.inputs.v1",
+    "board": "dark",
+    "boardId": "02",
+    "activeTrial": "trial-01",
+    "acceptedP1Revision": "4b47db04c7140ebf88f69b91faa0b790d46f22ec",
+    "canon": {
+      "commit": "b1382dd4c230815a019e52e2ec4617ef705661d5",
+      "path": "orders/perspective/P4-transfer-water-dark.md",
+      "blob": "0db67e8c3c841ede323a809789f5146ca4f77f11"
+    },
+    "coordinationDescriptorSha256": "497eb8cca3aa7413254a85b18d98a1e7dfde66d9779c39fc6b5932a21f2b4946",
+    "objects": [
+      {
+        "file": "config.json",
+        "gitPath": "experiments/p1-collider-mapping/clean-repeat-01/simulation/boards/02/trial-01/config.json",
+        "gitBlob": "7cb6723a5dd0424ca88575d472d56dea8514f689",
+        "bytes": 19508,
+        "sha256": "14be2a023833d266d1e333bf582af5fd5885deb445698c10ebd846ef0cc080b2"
+      },
+      {
+        "file": "manifest.json",
+        "gitPath": "experiments/p1-collider-mapping/clean-repeat-01/simulation/boards/02/trial-01/manifest.json",
+        "gitBlob": "e04492ac7976e9bc6a7556177ef8b9472ed393f4",
+        "bytes": 13939,
+        "sha256": "3fab422bd1f74d477d1648620c97ad6d7b8b0a55a70a1102d6e6885def564d81"
+      }
+    ],
+    "viewMath": {
+      "revision": "4b47db04c7140ebf88f69b91faa0b790d46f22ec",
+      "path": "experiments/p1-collider-mapping/clean-repeat-01/viewer/src/view-math.mjs",
+      "bytes": 3050,
+      "sha256": "96f01cc2093c353ff958cb906fe0c8ae93412425d0f7a5ec7cca0f2bf9f1aa5e"
+    },
+    "sourceImage": {
+      "name": "02-dark-temple.jpg",
+      "bytes": 536988,
+      "sha256": "7ceff71bd0a871fecd725527dff5522450c8e75a74eb99c107b5d8624bf8fa3a"
+    },
+    "native": {
+      "commit": "5a6fa03f1cdb3de88a2d9c7dbe795eb8e2a7f023",
+      "declaredPackageTree": "008d16a80a26bb77d562a45218b01da09b0d9ff0",
+      "verifiedOwnSourceFiles": 27,
+      "sourceHashesReference": "Jungle input-verification.json",
+      "packageTreeReconstructed": false,
+      "newCheckout": false,
+      "rebuild": false
+    },
+    "scope": "binding/startup preparation; not consumer/Art QA"
+  },
+  "startup": {
+    "drop": {
+      "id": "board02-start",
+      "x": 33349.528039973346,
+      "y": 33109.09546312392,
+      "angleDeg": 90,
+      "speed": 0
+    },
+    "nearest": [
+      {
+        "id": "far",
+        "t": 0.49486522821456713,
+        "point": {
+          "x": 33349.528039973346,
+          "y": 33007.30444252906
+        },
+        "distance": 101.79102059486468,
+        "kind": "segment",
+        "margin": 85.79102059486468
+      },
+      {
+        "id": "bowl-base-01",
+        "kind": "pin",
+        "distance": 157.93726297133657,
+        "margin": 95.8760352782609
+      },
+      {
+        "id": "skull-base-01",
+        "kind": "pin",
+        "distance": 332.66720488225013,
+        "margin": 279.51528660477607
+      }
+    ],
+    "nativeSessionCreated": true
+  },
+  "settings": {
+    "defaults": {
+      "tickMs": 5,
+      "quantizeDigits": 7
+    },
+    "physics": {
+      "gravityY": 980,
+      "maxBallSpeed": 2000,
+      "angleDeviationDeg": 2,
+      "bounceDeviation": 0.02,
+      "wallBounce": 1
+    },
+    "ball": {
+      "id": "board02-ball",
+      "r": 16,
+      "bounce": 0.9
+    },
+    "drops": [
+      {
+        "id": "board02-start",
+        "x": 33349.528039973346,
+        "y": 33109.09546312392,
+        "angleDeg": 90,
+        "speed": 0
+      }
+    ]
+  },
+  "projection": {
+    "checkedPoints": 157,
+    "maxRoundTrip": 1.0289757937229989e-11
+  },
+  "seeds": [
+    0,
+    1,
+    2
+  ],
+  "summaries": [
+    {
+      "seed": 0,
+      "ticks": 888,
+      "result": {
+        "kind": "IN_BUCKET",
+        "bucketId": "receiver-01"
+      },
+      "initialState": {
+        "tick": 0,
+        "rngU32": 0,
+        "ball": {
+          "pos": {
+            "x": 33349.528039973346,
+            "y": 33109.09546312392
+          },
+          "vel": {
+            "x": 0,
+            "y": 0
+          }
+        },
+        "nearMissBucketIds": [],
+        "done": false
+      },
+      "finalState": {
+        "tick": 888,
+        "rngU32": 3801544430,
+        "ball": {
+          "pos": {
+            "x": 32891.1407941,
+            "y": 34603.2922882
+          },
+          "vel": {
+            "x": 324.6611735,
+            "y": 1490.374971
+          }
+        },
+        "nearMissBucketIds": [],
+        "done": true,
+        "result": {
+          "kind": "IN_BUCKET",
+          "bucketId": "receiver-01"
+        }
+      },
+      "contactCount": 7,
+      "physicalTraceSha256": "9b216f6d2cb08db5b79dde30bf6216deb4dec8d7d64154055323288c04c91949",
+      "trajectorySha256": "4cd5f51de298b886cad899964bc522b6d8d13cf8eb189636de18e3c6a959b105",
+      "firstContact": {
+        "type": "object_hit",
+        "tick": 89,
+        "timeSec": 0.445,
+        "ballId": "board02-ball",
+        "objectKind": "pin",
+        "objectId": "bowl-base-01",
+        "x": 33348.92998633409,
+        "y": 33207.97531635677,
+        "seed": 0,
+        "postStateTick": 90,
+        "segment": null,
+        "contactClass": "pin"
+      }
+    },
+    {
+      "seed": 1,
+      "ticks": 884,
+      "result": {
+        "kind": "IN_BUCKET",
+        "bucketId": "receiver-01"
+      },
+      "initialState": {
+        "tick": 0,
+        "rngU32": 1,
+        "ball": {
+          "pos": {
+            "x": 33349.528039973346,
+            "y": 33109.09546312392
+          },
+          "vel": {
+            "x": 0,
+            "y": 0
+          }
+        },
+        "nearMissBucketIds": [],
+        "done": false
+      },
+      "finalState": {
+        "tick": 884,
+        "rngU32": 3594602695,
+        "ball": {
+          "pos": {
+            "x": 32881.1407307,
+            "y": 34599.6217414
+          },
+          "vel": {
+            "x": 292.9418425,
+            "y": 1491.0861662
+          }
+        },
+        "nearMissBucketIds": [],
+        "done": true,
+        "result": {
+          "kind": "IN_BUCKET",
+          "bucketId": "receiver-01"
+        }
+      },
+      "contactCount": 7,
+      "physicalTraceSha256": "dff007cd872b7b762b3109aee1e26b3710dc74e8f3021d2ef94d2cdf7dca4ddf",
+      "trajectorySha256": "a0f21157c1d30897350eb410351d17a9a835568e40c0ddb6ec5f267afb732894",
+      "firstContact": {
+        "type": "object_hit",
+        "tick": 89,
+        "timeSec": 0.445,
+        "ballId": "board02-ball",
+        "objectKind": "pin",
+        "objectId": "bowl-base-01",
+        "x": 33348.92998633409,
+        "y": 33207.97531635677,
+        "seed": 1,
+        "postStateTick": 90,
+        "segment": null,
+        "contactClass": "pin"
+      }
+    },
+    {
+      "seed": 2,
+      "ticks": 1812,
+      "result": {
+        "kind": "LOST",
+        "finalX": 32824.3930072,
+        "nearMissBucketIds": []
+      },
+      "initialState": {
+        "tick": 0,
+        "rngU32": 2,
+        "ball": {
+          "pos": {
+            "x": 33349.528039973346,
+            "y": 33109.09546312392
+          },
+          "vel": {
+            "x": 0,
+            "y": 0
+          }
+        },
+        "nearMissBucketIds": [],
+        "done": false
+      },
+      "finalState": {
+        "tick": 1812,
+        "rngU32": 2866302536,
+        "ball": {
+          "pos": {
+            "x": 32824.3930072,
+            "y": 35121.8074605
+          },
+          "vel": {
+            "x": -35.843787,
+            "y": 1462.4528772
+          }
+        },
+        "nearMissBucketIds": [],
+        "done": true,
+        "result": {
+          "kind": "LOST",
+          "finalX": 32824.3930072,
+          "nearMissBucketIds": []
+        }
+      },
+      "contactCount": 11,
+      "physicalTraceSha256": "5a9c6ae0150862058bb462c341b76dc50dc2d98332859fe887496eb695fa92d5",
+      "trajectorySha256": "29e28c75804d26122a9e5e18c85bf8a04338cdfb1f1a8ffbbe603b256cf3e8b3",
+      "firstContact": {
+        "type": "object_hit",
+        "tick": 89,
+        "timeSec": 0.445,
+        "ballId": "board02-ball",
+        "objectKind": "pin",
+        "objectId": "bowl-base-01",
+        "x": 33348.92998633409,
+        "y": 33207.97531635677,
+        "seed": 2,
+        "postStateTick": 90,
+        "segment": null,
+        "contactClass": "pin"
+      }
+    }
+  ],
+  "distinctPhysicalTraces": 3,
+  "seed0ExactReplay": true,
+  "seed0ObservedCheckpointRestoration": true,
+  "receiverApproaches": [
+    {
+      "seed": 0,
+      "tick": 888,
+      "distance": 35.97993122303924,
+      "bucket": "receiver-01",
+      "margin": -7.029798835643746,
+      "observedCapture": true
+    },
+    {
+      "seed": 0,
+      "tick": 888,
+      "distance": 302.0422301007249,
+      "bucket": "receiver-02",
+      "margin": 259.5260085603887,
+      "observedCapture": false
+    },
+    {
+      "seed": 0,
+      "tick": 888,
+      "distance": 602.7606414003222,
+      "bucket": "receiver-03",
+      "margin": 561.5064635225032,
+      "observedCapture": false
+    },
+    {
+      "seed": 0,
+      "tick": 888,
+      "distance": 900.2708528688361,
+      "bucket": "receiver-04",
+      "margin": 858.8256712957779,
+      "observedCapture": false
+    }
+  ],
+  "gates": [],
+  "cornerNearest": {
+    "seed": 2,
+    "tick": 368,
+    "edge": "pillar-02:edge-02",
+    "vertex": {
+      "x": 32958.43714453147,
+      "y": 33844.427583699246
+    },
+    "centerDistance": 16.000000018872093,
+    "marginToBallRadius": 1.8872093221489195e-8
+  },
+  "lintelOrHeightCollidersGenerated": null
+}

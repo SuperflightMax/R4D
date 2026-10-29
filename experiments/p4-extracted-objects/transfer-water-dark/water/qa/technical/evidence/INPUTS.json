@@ -1,0 +1,50 @@
+{
+  "schema": "r4d.p4.transfer.qa.inputs.v1",
+  "board": "water",
+  "boardId": "04",
+  "activeTrial": "trial-02",
+  "acceptedP1Revision": "4b47db04c7140ebf88f69b91faa0b790d46f22ec",
+  "canon": {
+    "commit": "b1382dd4c230815a019e52e2ec4617ef705661d5",
+    "path": "orders/perspective/P4-transfer-water-dark.md",
+    "blob": "0db67e8c3c841ede323a809789f5146ca4f77f11"
+  },
+  "coordinationDescriptorSha256": "497eb8cca3aa7413254a85b18d98a1e7dfde66d9779c39fc6b5932a21f2b4946",
+  "objects": [
+    {
+      "file": "config.json",
+      "gitPath": "experiments/p1-collider-mapping/clean-repeat-01/simulation/boards/04/trial-02/config.json",
+      "gitBlob": "a4574480d48aea3201ddce26009fef182afcddd8",
+      "bytes": 27231,
+      "sha256": "9048b28af2923c93d8be772367beeb828f1e4513a6298af1c803379f77d3e50c"
+    },
+    {
+      "file": "manifest.json",
+      "gitPath": "experiments/p1-collider-mapping/clean-repeat-01/simulation/boards/04/trial-02/manifest.json",
+      "gitBlob": "351ccf7e7812300053a6e61337dc66c1d4637e32",
+      "bytes": 15870,
+      "sha256": "48c4fef26fd8c94f06c278851222ef285edda54ac14e53da8908f4ee663dc420"
+    }
+  ],
+  "viewMath": {
+    "revision": "4b47db04c7140ebf88f69b91faa0b790d46f22ec",
+    "path": "experiments/p1-collider-mapping/clean-repeat-01/viewer/src/view-math.mjs",
+    "bytes": 3050,
+    "sha256": "96f01cc2093c353ff958cb906fe0c8ae93412425d0f7a5ec7cca0f2bf9f1aa5e"
+  },
+  "sourceImage": {
+    "name": "04-water-temple.jpg",
+    "bytes": 527016,
+    "sha256": "8da65c76c110b6ba7cefe113564fe12feed4428e84e84835f033e7da31d3b80d"
+  },
+  "native": {
+    "commit": "5a6fa03f1cdb3de88a2d9c7dbe795eb8e2a7f023",
+    "declaredPackageTree": "008d16a80a26bb77d562a45218b01da09b0d9ff0",
+    "verifiedOwnSourceFiles": 27,
+    "sourceHashesReference": "Jungle input-verification.json",
+    "packageTreeReconstructed": false,
+    "newCheckout": false,
+    "rebuild": false
+  },
+  "scope": "binding/startup preparation; not consumer/Art QA"
+}

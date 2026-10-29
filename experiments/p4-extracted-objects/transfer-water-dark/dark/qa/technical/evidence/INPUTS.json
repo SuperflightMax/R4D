@@ -1,0 +1,50 @@
+{
+  "schema": "r4d.p4.transfer.qa.inputs.v1",
+  "board": "dark",
+  "boardId": "02",
+  "activeTrial": "trial-01",
+  "acceptedP1Revision": "4b47db04c7140ebf88f69b91faa0b790d46f22ec",
+  "canon": {
+    "commit": "b1382dd4c230815a019e52e2ec4617ef705661d5",
+    "path": "orders/perspective/P4-transfer-water-dark.md",
+    "blob": "0db67e8c3c841ede323a809789f5146ca4f77f11"
+  },
+  "coordinationDescriptorSha256": "497eb8cca3aa7413254a85b18d98a1e7dfde66d9779c39fc6b5932a21f2b4946",
+  "objects": [
+    {
+      "file": "config.json",
+      "gitPath": "experiments/p1-collider-mapping/clean-repeat-01/simulation/boards/02/trial-01/config.json",
+      "gitBlob": "7cb6723a5dd0424ca88575d472d56dea8514f689",
+      "bytes": 19508,
+      "sha256": "14be2a023833d266d1e333bf582af5fd5885deb445698c10ebd846ef0cc080b2"
+    },
+    {
+      "file": "manifest.json",
+      "gitPath": "experiments/p1-collider-mapping/clean-repeat-01/simulation/boards/02/trial-01/manifest.json",
+      "gitBlob": "e04492ac7976e9bc6a7556177ef8b9472ed393f4",
+      "bytes": 13939,
+      "sha256": "3fab422bd1f74d477d1648620c97ad6d7b8b0a55a70a1102d6e6885def564d81"
+    }
+  ],
+  "viewMath": {
+    "revision": "4b47db04c7140ebf88f69b91faa0b790d46f22ec",
+    "path": "experiments/p1-collider-mapping/clean-repeat-01/viewer/src/view-math.mjs",
+    "bytes": 3050,
+    "sha256": "96f01cc2093c353ff958cb906fe0c8ae93412425d0f7a5ec7cca0f2bf9f1aa5e"
+  },
+  "sourceImage": {
+    "name": "02-dark-temple.jpg",
+    "bytes": 536988,
+    "sha256": "7ceff71bd0a871fecd725527dff5522450c8e75a74eb99c107b5d8624bf8fa3a"
+  },
+  "native": {
+    "commit": "5a6fa03f1cdb3de88a2d9c7dbe795eb8e2a7f023",
+    "declaredPackageTree": "008d16a80a26bb77d562a45218b01da09b0d9ff0",
+    "verifiedOwnSourceFiles": 27,
+    "sourceHashesReference": "Jungle input-verification.json",
+    "packageTreeReconstructed": false,
+    "newCheckout": false,
+    "rebuild": false
+  },
+  "scope": "binding/startup preparation; not consumer/Art QA"
+}

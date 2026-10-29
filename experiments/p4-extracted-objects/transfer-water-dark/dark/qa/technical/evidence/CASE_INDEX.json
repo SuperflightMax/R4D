@@ -1,0 +1,83 @@
+{
+  "board": "dark",
+  "activeTrial": "trial-01",
+  "configSha256": "14be2a023833d266d1e333bf582af5fd5885deb445698c10ebd846ef0cc080b2",
+  "manifestSha256": "3fab422bd1f74d477d1648620c97ad6d7b8b0a55a70a1102d6e6885def564d81",
+  "coreCommit": "5a6fa03f1cdb3de88a2d9c7dbe795eb8e2a7f023",
+  "criticalCases": {
+    "path": "E:\\R4D\\perspective\\p4-runtime\\technical-qa\\transfer-water-dark\\dark/CRITICAL_CASES.json",
+    "sha256": "2c8c6d6eb2529c5b0134b384aac8615640c9ce59101c53ab83e7b723d5125a0d"
+  },
+  "cases": [
+    {
+      "id": "pillar02-corner",
+      "seed": 2,
+      "ticks": [
+        366,
+        367,
+        368,
+        369
+      ],
+      "target": "pillar-02:edge-01",
+      "eventTick": 367
+    },
+    {
+      "id": "pillar02-front-face",
+      "seed": 2,
+      "ticks": [
+        971,
+        972,
+        973,
+        974
+      ],
+      "target": "pillar-02:edge-03",
+      "eventTick": 972
+    },
+    {
+      "id": "pillar04-side-face",
+      "seed": 0,
+      "ticks": [
+        839,
+        840,
+        841,
+        842
+      ],
+      "target": "pillar-04:edge-04",
+      "eventTick": 840
+    },
+    {
+      "id": "left-boundary",
+      "seed": 0,
+      "ticks": [
+        459,
+        460,
+        461,
+        462
+      ],
+      "target": "left-3",
+      "eventTick": 460
+    },
+    {
+      "id": "receiver01-capture",
+      "seed": 0,
+      "ticks": [
+        886,
+        887,
+        888
+      ],
+      "target": "receiver-01",
+      "eventTick": 888,
+      "scope": "Native IN_BUCKET only; front-rim silhouettes unverified"
+    },
+    {
+      "id": "ordinary-lost",
+      "seed": 2,
+      "ticks": [
+        1810,
+        1811,
+        1812
+      ],
+      "target": "bottom-open"
+    }
+  ]
+}

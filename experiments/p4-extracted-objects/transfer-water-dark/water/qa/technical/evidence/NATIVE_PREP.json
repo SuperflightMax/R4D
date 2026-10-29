@@ -1,0 +1,1131 @@
+{
+  "schema": "r4d.p4.transfer.qa.native-prep.v1",
+  "board": "water",
+  "activeTrial": "trial-02",
+  "scope": "native/input preparation only; no consumer or Art PASS",
+  "binding": {
+    "schema": "r4d.p4.transfer.qa.inputs.v1",
+    "board": "water",
+    "boardId": "04",
+    "activeTrial": "trial-02",
+    "acceptedP1Revision": "4b47db04c7140ebf88f69b91faa0b790d46f22ec",
+    "canon": {
+      "commit": "b1382dd4c230815a019e52e2ec4617ef705661d5",
+      "path": "orders/perspective/P4-transfer-water-dark.md",
+      "blob": "0db67e8c3c841ede323a809789f5146ca4f77f11"
+    },
+    "coordinationDescriptorSha256": "497eb8cca3aa7413254a85b18d98a1e7dfde66d9779c39fc6b5932a21f2b4946",
+    "objects": [
+      {
+        "file": "config.json",
+        "gitPath": "experiments/p1-collider-mapping/clean-repeat-01/simulation/boards/04/trial-02/config.json",
+        "gitBlob": "a4574480d48aea3201ddce26009fef182afcddd8",
+        "bytes": 27231,
+        "sha256": "9048b28af2923c93d8be772367beeb828f1e4513a6298af1c803379f77d3e50c"
+      },
+      {
+        "file": "manifest.json",
+        "gitPath": "experiments/p1-collider-mapping/clean-repeat-01/simulation/boards/04/trial-02/manifest.json",
+        "gitBlob": "351ccf7e7812300053a6e61337dc66c1d4637e32",
+        "bytes": 15870,
+        "sha256": "48c4fef26fd8c94f06c278851222ef285edda54ac14e53da8908f4ee663dc420"
+      }
+    ],
+    "viewMath": {
+      "revision": "4b47db04c7140ebf88f69b91faa0b790d46f22ec",
+      "path": "experiments/p1-collider-mapping/clean-repeat-01/viewer/src/view-math.mjs",
+      "bytes": 3050,
+      "sha256": "96f01cc2093c353ff958cb906fe0c8ae93412425d0f7a5ec7cca0f2bf9f1aa5e"
+    },
+    "sourceImage": {
+      "name": "04-water-temple.jpg",
+      "bytes": 527016,
+      "sha256": "8da65c76c110b6ba7cefe113564fe12feed4428e84e84835f033e7da31d3b80d"
+    },
+    "native": {
+      "commit": "5a6fa03f1cdb3de88a2d9c7dbe795eb8e2a7f023",
+      "declaredPackageTree": "008d16a80a26bb77d562a45218b01da09b0d9ff0",
+      "verifiedOwnSourceFiles": 27,
+      "sourceHashesReference": "Jungle input-verification.json",
+      "packageTreeReconstructed": false,
+      "newCheckout": false,
+      "rebuild": false
+    },
+    "scope": "binding/startup preparation; not consumer/Art QA"
+  },
+  "startup": {
+    "drop": {
+      "id": "board04-start",
+      "x": 33192.751665295094,
+      "y": 33184.49424667716,
+      "angleDeg": 90,
+      "speed": 0
+    },
+    "nearest": [
+      {
+        "id": "far",
+        "t": 0.4439630888936333,
+        "point": {
+          "x": 33192.751665295094,
+          "y": 33155.71491435254
+        },
+        "distance": 28.779332324622374,
+        "kind": "segment",
+        "margin": 12.779332324622374
+      },
+      {
+        "id": "frog-01",
+        "kind": "pin",
+        "distance": 172.08462497680136,
+        "margin": 102.92422774190777
+      },
+      {
+        "id": "arch-01-right-foot:edge-01",
+        "t": 1,
+        "point": {
+          "x": 33060.730503755054,
+          "y": 33464.26381231553
+        },
+        "distance": 309.35513079931496,
+        "kind": "segment",
+        "margin": 293.35513079931496
+      }
+    ],
+    "nativeSessionCreated": true
+  },
+  "settings": {
+    "defaults": {
+      "tickMs": 5,
+      "quantizeDigits": 7
+    },
+    "physics": {
+      "gravityY": 980,
+      "maxBallSpeed": 2000,
+      "angleDeviationDeg": 2,
+      "bounceDeviation": 0.02,
+      "wallBounce": 1
+    },
+    "ball": {
+      "id": "board04-ball",
+      "r": 16,
+      "bounce": 0.9
+    },
+    "drops": [
+      {
+        "id": "board04-start",
+        "x": 33192.751665295094,
+        "y": 33184.49424667716,
+        "angleDeg": 90,
+        "speed": 0
+      }
+    ]
+  },
+  "projection": {
+    "checkedPoints": 223,
+    "maxRoundTrip": 1.0289757937229989e-11
+  },
+  "seeds": [
+    0,
+    1,
+    2
+  ],
+  "summaries": [
+    {
+      "seed": 0,
+      "ticks": 1326,
+      "result": {
+        "kind": "LOST",
+        "finalX": 32866.4825074,
+        "nearMissBucketIds": []
+      },
+      "initialState": {
+        "tick": 0,
+        "rngU32": 0,
+        "ball": {
+          "pos": {
+            "x": 33192.751665295094,
+            "y": 33184.49424667716
+          },
+          "vel": {
+            "x": 0,
+            "y": 0
+          }
+        },
+        "nearMissBucketIds": [],
+        "done": false
+      },
+      "finalState": {
+        "tick": 1326,
+        "rngU32": 2768872580,
+        "ball": {
+          "pos": {
+            "x": 32866.4825074,
+            "y": 35770.4346925
+          },
+          "vel": {
+            "x": -658.8560406,
+            "y": 1530.1482165
+          }
+        },
+        "nearMissBucketIds": [],
+        "done": true,
+        "result": {
+          "kind": "LOST",
+          "finalX": 32866.4825074,
+          "nearMissBucketIds": []
+        }
+      },
+      "contactCount": 10,
+      "physicalTraceSha256": "a335933744bc4c8115dfbc4b3a6d0f4f5f1bd0a2f9fc60995c288b472380c6e3",
+      "trajectorySha256": "4499e3b34e9b5d819d7e8451761f9e7be9583e8b312588d7a1c220ddb91e977c",
+      "firstContact": {
+        "type": "object_hit",
+        "tick": 105,
+        "timeSec": 0.525,
+        "ballId": "board04-ball",
+        "objectKind": "pin",
+        "objectId": "frog-01",
+        "x": 33192.11967597988,
+        "y": 33323.23856279813,
+        "seed": 0,
+        "postStateTick": 106,
+        "segment": null,
+        "contactClass": "pin"
+      }
+    },
+    {
+      "seed": 1,
+      "ticks": 1196,
+      "result": {
+        "kind": "LOST",
+        "finalX": 33728.1429454,
+        "nearMissBucketIds": []
+      },
+      "initialState": {
+        "tick": 0,
+        "rngU32": 1,
+        "ball": {
+          "pos": {
+            "x": 33192.751665295094,
+            "y": 33184.49424667716
+          },
+          "vel": {
+            "x": 0,
+            "y": 0
+          }
+        },
+        "nearMissBucketIds": [],
+        "done": false
+      },
+      "finalState": {
+        "tick": 1196,
+        "rngU32": 1403919595,
+        "ball": {
+          "pos": {
+            "x": 33728.1429454,
+            "y": 35767.8604491
+          },
+          "vel": {
+            "x": 809.8844534,
+            "y": 1555.4618455
+          }
+        },
+        "nearMissBucketIds": [],
+        "done": true,
+        "result": {
+          "kind": "LOST",
+          "finalX": 33728.1429454,
+          "nearMissBucketIds": []
+        }
+      },
+      "contactCount": 9,
+      "physicalTraceSha256": "dc96cfd5ed4b7e1dd91177309c75c2e897538c54302102320ba35ba6b7915a49",
+      "trajectorySha256": "20f39071a10b59bf75106d00d3d181eb6530f1a4b4d903a73ae08636ea1ddd85",
+      "firstContact": {
+        "type": "object_hit",
+        "tick": 105,
+        "timeSec": 0.525,
+        "ballId": "board04-ball",
+        "objectKind": "pin",
+        "objectId": "frog-01",
+        "x": 33192.11967597988,
+        "y": 33323.23856279813,
+        "seed": 1,
+        "postStateTick": 106,
+        "segment": null,
+        "contactClass": "pin"
+      }
+    },
+    {
+      "seed": 2,
+      "ticks": 1275,
+      "result": {
+        "kind": "IN_BUCKET",
+        "bucketId": "receiver-02"
+      },
+      "initialState": {
+        "tick": 0,
+        "rngU32": 2,
+        "ball": {
+          "pos": {
+            "x": 33192.751665295094,
+            "y": 33184.49424667716
+          },
+          "vel": {
+            "x": 0,
+            "y": 0
+          }
+        },
+        "nearMissBucketIds": [],
+        "done": false
+      },
+      "finalState": {
+        "tick": 1275,
+        "rngU32": 1581479664,
+        "ball": {
+          "pos": {
+            "x": 33056.7943023,
+            "y": 35158.6773888
+          },
+          "vel": {
+            "x": 656.3655586,
+            "y": 871.6370838
+          }
+        },
+        "nearMissBucketIds": [],
+        "done": true,
+        "result": {
+          "kind": "IN_BUCKET",
+          "bucketId": "receiver-02"
+        }
+      },
+      "contactCount": 15,
+      "physicalTraceSha256": "414111d155ea84dc12d8ca10e792edcf675485d5a0a5ed5bbb6009f4b8891d5d",
+      "trajectorySha256": "3b0933fae30329d8fb3c6cb0ca76db5b3d75d865de65375a2ebf8e74724bf272",
+      "firstContact": {
+        "type": "object_hit",
+        "tick": 105,
+        "timeSec": 0.525,
+        "ballId": "board04-ball",
+        "objectKind": "pin",
+        "objectId": "frog-01",
+        "x": 33192.11967597988,
+        "y": 33323.23856279813,
+        "seed": 2,
+        "postStateTick": 106,
+        "segment": null,
+        "contactClass": "pin"
+      }
+    }
+  ],
+  "distinctPhysicalTraces": 3,
+  "seed0ExactReplay": true,
+  "seed0ObservedCheckpointRestoration": true,
+  "receiverApproaches": [
+    {
+      "seed": 2,
+      "tick": 1236,
+      "distance": 244.59066144068115,
+      "bucket": "receiver-01",
+      "margin": 213.29457550771153,
+      "observedCapture": false
+    },
+    {
+      "seed": 2,
+      "tick": 1275,
+      "distance": 29.76381494798731,
+      "bucket": "receiver-02",
+      "margin": -0.8734973285335847,
+      "observedCapture": true
+    },
+    {
+      "seed": 1,
+      "tick": 1115,
+      "distance": 60.90351915451554,
+      "bucket": "receiver-03",
+      "margin": 29.76694419893329,
+      "observedCapture": false
+    },
+    {
+      "seed": 1,
+      "tick": 1135,
+      "distance": 306.00555582505376,
+      "bucket": "receiver-04",
+      "margin": 273.0256072406408,
+      "observedCapture": false
+    }
+  ],
+  "gates": [
+    {
+      "id": "arch-01",
+      "footSegmentIds": [
+        "arch-01-left-foot:edge-01",
+        "arch-01-left-foot:edge-02",
+        "arch-01-left-foot:edge-03",
+        "arch-01-left-foot:edge-04",
+        "arch-01-right-foot:edge-01",
+        "arch-01-right-foot:edge-02",
+        "arch-01-right-foot:edge-03",
+        "arch-01-right-foot:edge-04"
+      ],
+      "band": [
+        33464.26381231553,
+        33517.41395539478
+      ],
+      "samples": [
+        {
+          "y": 33464.26381231553,
+          "leftInner": 32982.186348840885,
+          "rightInner": 33040.00357398603,
+          "width": 57.81722514514695,
+          "horizontalWidthMinusDiameter": 25.81722514514695,
+          "center": {
+            "x": 33011.09496141346,
+            "y": 33464.26381231553
+          },
+          "nearestAll": {
+            "id": "arch-01-left-foot:edge-02",
+            "t": 0.04075389560765089,
+            "point": {
+              "x": 32982.34957092566,
+              "y": 33466.42988769811
+            },
+            "distance": 28.826886006973684,
+            "kind": "segment",
+            "margin": 12.826886006973684
+          }
+        },
+        {
+          "y": 33490.838883855155,
+          "leftInner": 32984.18888236976,
+          "rightInner": 33039.64492590813,
+          "width": 55.45604353836825,
+          "horizontalWidthMinusDiameter": 23.45604353836825,
+          "center": {
+            "x": 33011.91690413894,
+            "y": 33490.838883855155
+          },
+          "nearestAll": {
+            "id": "arch-01-left-foot:edge-02",
+            "t": 0.5390895585788141,
+            "point": {
+              "x": 32984.345438673125,
+              "y": 33492.91649948652
+            },
+            "distance": 27.64963281210664,
+            "kind": "segment",
+            "margin": 11.649632812106638
+          }
+        },
+        {
+          "y": 33517.41395539478,
+          "leftInner": 32986.19141589863,
+          "rightInner": 33039.28627783022,
+          "width": 53.09486193158955,
+          "horizontalWidthMinusDiameter": 21.09486193158955,
+          "center": {
+            "x": 33012.73884686443,
+            "y": 33517.41395539478
+          },
+          "nearestAll": {
+            "id": "arch-01-left-foot:edge-02",
+            "t": 1,
+            "point": {
+              "x": 32986.19141589863,
+              "y": 33517.41395539478
+            },
+            "distance": 26.547430965794774,
+            "kind": "segment",
+            "margin": 10.547430965794774
+          }
+        }
+      ],
+      "supportGapClassification": "support-only horizontal gap wider than diameter",
+      "ordinaryPassages": [],
+      "ordinarySupportHits": []
+    },
+    {
+      "id": "arch-02",
+      "footSegmentIds": [
+        "arch-02-left-foot:edge-01",
+        "arch-02-left-foot:edge-02",
+        "arch-02-left-foot:edge-03",
+        "arch-02-left-foot:edge-04",
+        "arch-02-right-foot:edge-01",
+        "arch-02-right-foot:edge-02",
+        "arch-02-right-foot:edge-03",
+        "arch-02-right-foot:edge-04"
+      ],
+      "band": [
+        33464.26381231553,
+        33517.41395539478
+      ],
+      "samples": [
+        {
+          "y": 33464.26381231553,
+          "leftInner": 33476.359990175864,
+          "rightInner": 33533.08632428054,
+          "width": 56.726334104678244,
+          "horizontalWidthMinusDiameter": 24.726334104678244,
+          "center": {
+            "x": 33504.7231572282,
+            "y": 33464.26381231553
+          },
+          "nearestAll": {
+            "id": "arch-02-right-foot:edge-04",
+            "t": 0.9597982301713974,
+            "point": {
+              "x": 33532.924430372645,
+              "y": 33466.40054213395
+            },
+            "distance": 28.28210425842334,
+            "kind": "segment",
+            "margin": 12.282104258423342
+          }
+        },
+        {
+          "y": 33490.838883855155,
+          "leftInner": 33476.70399339452,
+          "rightInner": 33531.07280710723,
+          "width": 54.36881371271011,
+          "horizontalWidthMinusDiameter": 22.368813712710107,
+          "center": {
+            "x": 33503.88840025087,
+            "y": 33490.838883855155
+          },
+          "nearestAll": {
+            "id": "arch-02-right-foot:edge-04",
+            "t": 0.46146899726149276,
+            "point": {
+              "x": 33530.91764143579,
+              "y": 33492.88681216369
+            },
+            "distance": 27.106712994931826,
+            "kind": "segment",
+            "margin": 11.106712994931826
+          }
+        },
+        {
+          "y": 33517.41395539478,
+          "leftInner": 33477.04799661317,
+          "rightInner": 33529.05928993392,
+          "width": 52.011293320749246,
+          "horizontalWidthMinusDiameter": 20.011293320749246,
+          "center": {
+            "x": 33503.05364327354,
+            "y": 33517.41395539478
+          },
+          "nearestAll": {
+            "id": "arch-02-left-foot:edge-02",
+            "t": 1,
+            "point": {
+              "x": 33477.04799661317,
+              "y": 33517.41395539478
+            },
+            "distance": 26.005646660370985,
+            "kind": "segment",
+            "margin": 10.005646660370985
+          }
+        }
+      ],
+      "supportGapClassification": "support-only horizontal gap wider than diameter",
+      "ordinaryPassages": [],
+      "ordinarySupportHits": []
+    },
+    {
+      "id": "arch-03",
+      "footSegmentIds": [
+        "arch-03-left-foot:edge-01",
+        "arch-03-left-foot:edge-02",
+        "arch-03-left-foot:edge-03",
+        "arch-03-left-foot:edge-04",
+        "arch-03-right-foot:edge-01",
+        "arch-03-right-foot:edge-02",
+        "arch-03-right-foot:edge-03",
+        "arch-03-right-foot:edge-04"
+      ],
+      "band": [
+        34071.92018742736,
+        34121.75109459721
+      ],
+      "samples": [
+        {
+          "y": 34071.92018742736,
+          "leftInner": 32777.591888531526,
+          "rightInner": 32838.02238682228,
+          "width": 60.43049829075608,
+          "horizontalWidthMinusDiameter": 28.430498290756077,
+          "center": {
+            "x": 32807.80713767691,
+            "y": 34071.92018742736
+          },
+          "nearestAll": {
+            "id": "arch-03-left-foot:edge-02",
+            "t": 0.06331814818282998,
+            "point": {
+              "x": 32777.9250409185,
+              "y": 34075.075388191624
+            },
+            "distance": 30.048211236974655,
+            "kind": "segment",
+            "margin": 14.048211236974655
+          }
+        },
+        {
+          "y": 34096.83564101228,
+          "leftInner": 32780.222669725656,
+          "rightInner": 32838.44659408085,
+          "width": 58.22392435519578,
+          "horizontalWidthMinusDiameter": 26.223924355195777,
+          "center": {
+            "x": 32809.33463190326,
+            "y": 34096.83564101228
+          },
+          "nearestAll": {
+            "id": "arch-03-left-foot:edge-02",
+            "t": 0.5610061338956022,
+            "point": {
+              "x": 32780.543657305214,
+              "y": 34099.87563200723
+            },
+            "distance": 28.951023532071165,
+            "kind": "segment",
+            "margin": 12.951023532071165
+          }
+        },
+        {
+          "y": 34121.75109459721,
+          "leftInner": 32782.853450919785,
+          "rightInner": 32838.87080133943,
+          "width": 56.01735041964275,
+          "horizontalWidthMinusDiameter": 24.017350419642753,
+          "center": {
+            "x": 32810.86212612961,
+            "y": 34121.75109459721
+          },
+          "nearestAll": {
+            "id": "arch-03-right-foot:edge-04",
+            "t": 0.009567031332898025,
+            "point": {
+              "x": 32838.86268453116,
+              "y": 34121.27436074697
+            },
+            "distance": 28.004616511616838,
+            "kind": "segment",
+            "margin": 12.004616511616838
+          }
+        }
+      ],
+      "supportGapClassification": "support-only horizontal gap wider than diameter",
+      "ordinaryPassages": [],
+      "ordinarySupportHits": [
+        {
+          "seed": 2,
+          "tick": 350,
+          "objectId": "arch-03-right-foot:edge-02",
+          "postStateTick": 351
+        },
+        {
+          "seed": 2,
+          "tick": 685,
+          "objectId": "arch-03-right-foot:edge-01",
+          "postStateTick": 686
+        },
+        {
+          "seed": 2,
+          "tick": 893,
+          "objectId": "arch-03-left-foot:edge-04",
+          "postStateTick": 894
+        }
+      ]
+    },
+    {
+      "id": "arch-04",
+      "footSegmentIds": [
+        "arch-04-left-foot:edge-01",
+        "arch-04-left-foot:edge-02",
+        "arch-04-left-foot:edge-03",
+        "arch-04-left-foot:edge-04",
+        "arch-04-right-foot:edge-01",
+        "arch-04-right-foot:edge-02",
+        "arch-04-right-foot:edge-03",
+        "arch-04-right-foot:edge-04"
+      ],
+      "band": [
+        34067.35616738753,
+        34117.24910054381
+      ],
+      "samples": [
+        {
+          "y": 34067.35616738753,
+          "leftInner": 33226.77369122327,
+          "rightInner": 33285.22630877673,
+          "width": 58.45261755345564,
+          "horizontalWidthMinusDiameter": 26.45261755345564,
+          "center": {
+            "x": 33256,
+            "y": 34067.35616738753
+          },
+          "nearestAll": {
+            "id": "arch-04-left-foot:edge-02",
+            "t": 0.025793502443557572,
+            "point": {
+              "x": 33226.83046780536,
+              "y": 34068.643080880815
+            },
+            "distance": 29.197906685125226,
+            "kind": "segment",
+            "margin": 13.197906685125226
+          }
+        },
+        {
+          "y": 34092.30263396567,
+          "leftInner": 33227.87428975996,
+          "rightInner": 33284.12571024004,
+          "width": 56.25142048008274,
+          "horizontalWidthMinusDiameter": 24.251420480082743,
+          "center": {
+            "x": 33256,
+            "y": 34092.30263396567
+          },
+          "nearestAll": {
+            "id": "arch-04-left-foot:edge-02",
+            "t": 0.5248221758466147,
+            "point": {
+              "x": 33227.928928260786,
+              "y": 34093.54108512598
+            },
+            "distance": 28.09837770876756,
+            "kind": "segment",
+            "margin": 12.098377708767561
+          }
+        },
+        {
+          "y": 34117.24910054381,
+          "leftInner": 33228.97488829664,
+          "rightInner": 33283.02511170336,
+          "width": 54.0502234067244,
+          "horizontalWidthMinusDiameter": 22.0502234067244,
+          "center": {
+            "x": 33256,
+            "y": 34117.24910054381
+          },
+          "nearestAll": {
+            "id": "arch-04-left-foot:edge-02",
+            "t": 1,
+            "point": {
+              "x": 33228.97488829664,
+              "y": 34117.24910054381
+            },
+            "distance": 27.0251117033622,
+            "kind": "segment",
+            "margin": 11.0251117033622
+          }
+        }
+      ],
+      "supportGapClassification": "support-only horizontal gap wider than diameter",
+      "ordinaryPassages": [],
+      "ordinarySupportHits": [
+        {
+          "seed": 0,
+          "tick": 697,
+          "objectId": "arch-04-right-foot:edge-01",
+          "postStateTick": 698
+        }
+      ]
+    },
+    {
+      "id": "arch-05",
+      "footSegmentIds": [
+        "arch-05-left-foot:edge-01",
+        "arch-05-left-foot:edge-02",
+        "arch-05-left-foot:edge-03",
+        "arch-05-left-foot:edge-04",
+        "arch-05-right-foot:edge-01",
+        "arch-05-right-foot:edge-02",
+        "arch-05-right-foot:edge-03",
+        "arch-05-right-foot:edge-04"
+      ],
+      "band": [
+        34071.92018742736,
+        34121.75109459721
+      ],
+      "samples": [
+        {
+          "y": 34071.92018742736,
+          "leftInner": 33672.970438206205,
+          "rightInner": 33734.408111468474,
+          "width": 61.43767326226953,
+          "horizontalWidthMinusDiameter": 29.437673262269527,
+          "center": {
+            "x": 33703.689274837336,
+            "y": 34071.92018742736
+          },
+          "nearestAll": {
+            "id": "arch-05-right-foot:edge-04",
+            "t": 0.9356265493474554,
+            "point": {
+              "x": 33734.06940654172,
+              "y": 34075.12797487103
+            },
+            "distance": 30.54901475759036,
+            "kind": "segment",
+            "margin": 14.54901475759036
+          }
+        },
+        {
+          "y": 34096.83564101228,
+          "leftInner": 33672.54966351893,
+          "rightInner": 33731.777330274344,
+          "width": 59.227666755417886,
+          "horizontalWidthMinusDiameter": 27.227666755417886,
+          "center": {
+            "x": 33702.16349689664,
+            "y": 34096.83564101228
+          },
+          "nearestAll": {
+            "id": "arch-05-right-foot:edge-04",
+            "t": 0.4379421602301895,
+            "point": {
+              "x": 33731.45080907871,
+              "y": 34099.92803946501
+            },
+            "distance": 29.450120255114747,
+            "kind": "segment",
+            "margin": 13.450120255114747
+          }
+        },
+        {
+          "y": 34121.75109459721,
+          "leftInner": 33672.12888883165,
+          "rightInner": 33729.146549080215,
+          "width": 57.017660248566244,
+          "horizontalWidthMinusDiameter": 25.017660248566244,
+          "center": {
+            "x": 33700.63771895593,
+            "y": 34121.75109459721
+          },
+          "nearestAll": {
+            "id": "arch-05-left-foot:edge-02",
+            "t": 0.9903408799450741,
+            "point": {
+              "x": 33672.13701745809,
+              "y": 34121.26977188241
+            },
+            "distance": 28.504765521308222,
+            "kind": "segment",
+            "margin": 12.504765521308222
+          }
+        }
+      ],
+      "supportGapClassification": "support-only horizontal gap wider than diameter",
+      "ordinaryPassages": [],
+      "ordinarySupportHits": []
+    },
+    {
+      "id": "arch-06",
+      "footSegmentIds": [
+        "arch-06-left-foot:edge-01",
+        "arch-06-left-foot:edge-02",
+        "arch-06-left-foot:edge-03",
+        "arch-06-left-foot:edge-04",
+        "arch-06-right-foot:edge-01",
+        "arch-06-right-foot:edge-02",
+        "arch-06-right-foot:edge-03",
+        "arch-06-right-foot:edge-04"
+      ],
+      "band": [
+        34419.46694008559,
+        34466.72871427294
+      ],
+      "samples": [
+        {
+          "y": 34419.46694008559,
+          "leftInner": 33346.173625120944,
+          "rightInner": 33405.649845945394,
+          "width": 59.47622082445014,
+          "horizontalWidthMinusDiameter": 27.476220824450138,
+          "center": {
+            "x": 33375.91173553317,
+            "y": 34419.46694008559
+          },
+          "nearestAll": {
+            "id": "arch-06-right-foot:edge-04",
+            "t": 0.9612550459207814,
+            "point": {
+              "x": 33405.5366598461,
+              "y": 34421.298095356186
+            },
+            "distance": 29.681463410211393,
+            "kind": "segment",
+            "margin": 13.681463410211393
+          }
+        },
+        {
+          "y": 34443.09782717927,
+          "leftInner": 33346.82038158235,
+          "rightInner": 33404.18918994529,
+          "width": 57.36880836293858,
+          "horizontalWidthMinusDiameter": 25.36880836293858,
+          "center": {
+            "x": 33375.50478576382,
+            "y": 34443.09782717927
+          },
+          "nearestAll": {
+            "id": "arch-06-right-foot:edge-04",
+            "t": 0.4626278903603041,
+            "point": {
+              "x": 33404.08001435293,
+              "y": 34444.86409938596
+            },
+            "distance": 28.629764344608613,
+            "kind": "segment",
+            "margin": 12.629764344608613
+          }
+        },
+        {
+          "y": 34466.72871427294,
+          "leftInner": 33347.46713804375,
+          "rightInner": 33402.728533945185,
+          "width": 55.2613959014343,
+          "horizontalWidthMinusDiameter": 23.261395901434298,
+          "center": {
+            "x": 33375.09783599447,
+            "y": 34466.72871427294
+          },
+          "nearestAll": {
+            "id": "arch-06-right-foot:edge-03",
+            "t": 1,
+            "point": {
+              "x": 33402.728533945185,
+              "y": 34466.72871427294
+            },
+            "distance": 27.63069795071351,
+            "kind": "segment",
+            "margin": 11.630697950713511
+          }
+        }
+      ],
+      "supportGapClassification": "support-only horizontal gap wider than diameter",
+      "ordinaryPassages": [],
+      "ordinarySupportHits": []
+    },
+    {
+      "id": "arch-07",
+      "footSegmentIds": [
+        "arch-07-left-foot:edge-01",
+        "arch-07-left-foot:edge-02",
+        "arch-07-left-foot:edge-03",
+        "arch-07-left-foot:edge-04",
+        "arch-07-right-foot:edge-01",
+        "arch-07-right-foot:edge-02",
+        "arch-07-right-foot:edge-03",
+        "arch-07-right-foot:edge-04"
+      ],
+      "band": [
+        34731.69570870755,
+        34778.551276666556
+      ],
+      "samples": [
+        {
+          "y": 34731.69570870755,
+          "leftInner": 32992.11178851605,
+          "rightInner": 33050.75361329026,
+          "width": 58.64182477421127,
+          "horizontalWidthMinusDiameter": 26.641824774211273,
+          "center": {
+            "x": 33021.432700903155,
+            "y": 34731.69570870755
+          },
+          "nearestAll": {
+            "id": "arch-07-left-foot:edge-02",
+            "t": 0.04883002266141495,
+            "point": {
+              "x": 32992.29142215162,
+              "y": 34733.9836671528
+            },
+            "distance": 29.230957581337535,
+            "kind": "segment",
+            "margin": 13.230957581337535
+          }
+        },
+        {
+          "y": 34755.12349268705,
+          "leftInner": 32993.95116545851,
+          "rightInner": 33050.56677619516,
+          "width": 56.61561073665507,
+          "horizontalWidthMinusDiameter": 24.61561073665507,
+          "center": {
+            "x": 33022.258970826835,
+            "y": 34755.12349268705
+          },
+          "nearestAll": {
+            "id": "arch-07-left-foot:edge-02",
+            "t": 0.5471428296425747,
+            "point": {
+              "x": 32994.1245923262,
+              "y": 34757.33239674515
+            },
+            "distance": 28.2209587143085,
+            "kind": "segment",
+            "margin": 12.220958714308502
+          }
+        },
+        {
+          "y": 34778.551276666556,
+          "leftInner": 32995.79054240097,
+          "rightInner": 33050.37993910007,
+          "width": 54.58939669909887,
+          "horizontalWidthMinusDiameter": 22.58939669909887,
+          "center": {
+            "x": 33023.08524075052,
+            "y": 34778.551276666556
+          },
+          "nearestAll": {
+            "id": "arch-07-left-foot:edge-02",
+            "t": 1,
+            "point": {
+              "x": 32995.79054240097,
+              "y": 34778.551276666556
+            },
+            "distance": 27.294698349549435,
+            "kind": "segment",
+            "margin": 11.294698349549435
+          }
+        }
+      ],
+      "supportGapClassification": "support-only horizontal gap wider than diameter",
+      "ordinaryPassages": [
+        {
+          "seed": 1,
+          "firstTick": 1009,
+          "lastTick": 1020,
+          "crossesFullFootBand": true
+        }
+      ],
+      "ordinarySupportHits": [
+        {
+          "seed": 1,
+          "tick": 1006,
+          "objectId": "arch-07-left-foot:edge-01",
+          "postStateTick": 1007
+        },
+        {
+          "seed": 1,
+          "tick": 1012,
+          "objectId": "arch-07-right-foot:edge-04",
+          "postStateTick": 1013
+        },
+        {
+          "seed": 1,
+          "tick": 1018,
+          "objectId": "arch-07-left-foot:edge-02",
+          "postStateTick": 1019
+        },
+        {
+          "seed": 2,
+          "tick": 1105,
+          "objectId": "arch-07-left-foot:edge-03",
+          "postStateTick": 1106
+        }
+      ]
+    },
+    {
+      "id": "arch-08",
+      "footSegmentIds": [
+        "arch-08-left-foot:edge-01",
+        "arch-08-left-foot:edge-02",
+        "arch-08-left-foot:edge-03",
+        "arch-08-left-foot:edge-04",
+        "arch-08-right-foot:edge-01",
+        "arch-08-right-foot:edge-02",
+        "arch-08-right-foot:edge-03",
+        "arch-08-right-foot:edge-04"
+      ],
+      "band": [
+        34731.69570870755,
+        34778.551276666556
+      ],
+      "samples": [
+        {
+          "y": 34731.69570870755,
+          "leftInner": 33461.24638670974,
+          "rightInner": 33519.88821148395,
+          "width": 58.64182477421127,
+          "horizontalWidthMinusDiameter": 26.641824774211273,
+          "center": {
+            "x": 33490.567299096845,
+            "y": 34731.69570870755
+          },
+          "nearestAll": {
+            "id": "arch-08-right-foot:edge-04",
+            "t": 0.9511699773385851,
+            "point": {
+              "x": 33519.70857784838,
+              "y": 34733.9836671528
+            },
+            "distance": 29.230957581337535,
+            "kind": "segment",
+            "margin": 13.230957581337535
+          }
+        },
+        {
+          "y": 34755.12349268705,
+          "leftInner": 33461.43322380484,
+          "rightInner": 33518.04883454149,
+          "width": 56.61561073665507,
+          "horizontalWidthMinusDiameter": 24.61561073665507,
+          "center": {
+            "x": 33489.741029173165,
+            "y": 34755.12349268705
+          },
+          "nearestAll": {
+            "id": "arch-08-right-foot:edge-04",
+            "t": 0.4528571703574253,
+            "point": {
+              "x": 33517.8754076738,
+              "y": 34757.33239674515
+            },
+            "distance": 28.2209587143085,
+            "kind": "segment",
+            "margin": 12.220958714308502
+          }
+        },
+        {
+          "y": 34778.551276666556,
+          "leftInner": 33461.62006089993,
+          "rightInner": 33516.20945759903,
+          "width": 54.58939669909887,
+          "horizontalWidthMinusDiameter": 22.58939669909887,
+          "center": {
+            "x": 33488.91475924948,
+            "y": 34778.551276666556
+          },
+          "nearestAll": {
+            "id": "arch-08-left-foot:edge-02",
+            "t": 1,
+            "point": {
+              "x": 33461.62006089993,
+              "y": 34778.551276666556
+            },
+            "distance": 27.294698349549435,
+            "kind": "segment",
+            "margin": 11.294698349549435
+          }
+        }
+      ],
+      "supportGapClassification": "support-only horizontal gap wider than diameter",
+      "ordinaryPassages": [],
+      "ordinarySupportHits": [
+        {
+          "seed": 0,
+          "tick": 1147,
+          "objectId": "arch-08-left-foot:edge-03",
+          "postStateTick": 1148
+        }
+      ]
+    }
+  ],
+  "cornerNearest": null,
+  "lintelOrHeightCollidersGenerated": 0
+}
