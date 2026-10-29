@@ -1,0 +1,91 @@
+{
+  "schema": "r4d.p5.transfer-water-dark.dispatch.v1",
+  "status": "production-in-progress",
+  "leadThreadId": "01a1842d-adc3-7201-8c2f-7f9575838e0e",
+  "leadTurnId": "01a189e7-75b8-7481-801e-787acd1163aa",
+  "leadInitialHead": "df0d95f40e60991632c885f0bc53d32497a090e7",
+  "host": "WIN-36E9FF9EJM0",
+  "initialDispatchCompleteMeasuredUtc": "2026-10-29T23:14:43Z",
+  "canonicalRevision": "b1382dd4c230815a019e52e2ec4617ef705661d5",
+  "transferCardBlob": "09f33f99d771ab28b9575de1a358acc40b4d571c",
+  "commonInputs": {
+    "path": "E:/R4D/perspective/coordination/p4-p5-transfer-common-inputs-2026-10-29.json",
+    "bytes": 4265,
+    "sha256": "497eb8cca3aa7413254a85b18d98a1e7dfde66d9779c39fc6b5932a21f2b4946"
+  },
+  "roles": [
+    {
+      "role": "builder",
+      "threadId": "01a1842d-b417-7d60-a517-13b4007efc3b",
+      "turnId": "01a189f1-9632-77e0-9c15-d4415bac654d",
+      "initialDispatchSucceeded": true,
+      "modelOverrideOmitted": true,
+      "thinkingOverrideOmitted": true,
+      "firstCompletedCommandId": "exec-9f8ab927-5bbe-49c5-9acb-1cf9d42ce90c",
+      "ownInitialHead": "12e02702480ff84bf8ade352375bfb2797a6d0b0"
+    },
+    {
+      "role": "artist",
+      "threadId": "01a1842d-becc-7012-b425-bc311371f6f9",
+      "turnId": "01a189f1-a76a-7df0-b87a-930ef88b231c",
+      "initialDispatchSucceeded": true,
+      "modelOverrideOmitted": true,
+      "thinkingOverrideOmitted": true,
+      "firstCompletedCommandId": "exec-bdd024a3-5e2d-4b75-a0f4-ee25de718b6a",
+      "ownInitialHead": "a5ec68fb2ed6aeacd8c66bc575166567bd0c3966"
+    },
+    {
+      "role": "technical-qa",
+      "threadId": "01a1842d-c7b2-7842-a27f-a3b29c18673a",
+      "turnId": "01a189f1-b14c-7a61-8499-1400961c12e5",
+      "initialDispatchSucceeded": true,
+      "modelOverrideOmitted": true,
+      "thinkingOverrideOmitted": true,
+      "firstCompletedCommandId": "exec-69bdd0a0-c1c1-43f4-ac56-8c87d5c75e3e",
+      "ownInitialHead": "9b2eb998ea6aba6272097b955e0a53d97234dbd9"
+    },
+    {
+      "role": "visual-qa",
+      "threadId": "01a1842d-d2ce-76a0-ba58-d47073a5db7c",
+      "turnId": "01a189f1-bc54-7963-9b3a-b98d89a039b1",
+      "initialDispatchSucceeded": true,
+      "modelOverrideOmitted": true,
+      "thinkingOverrideOmitted": true,
+      "firstCompletedCommandId": "exec-df8d01dd-d499-4ab3-bf03-fa61a5f01279",
+      "ownInitialHead": "e227f3874c19539b7d38f0b8d318a911e7db2915"
+    }
+  ],
+  "release": {
+    "threadId": "01a1842d-ddd8-7b20-a27a-2ebc52ecea57",
+    "status": "idle",
+    "transferTaskSent": false
+  },
+  "firstMaterial": {
+    "utc": "2026-10-29T23:17:20.7351855Z",
+    "role": "artist",
+    "tool": "native-imagegen",
+    "path": "E:/R4D/perspective/p5-runtime/asset-artist/transfer-water-dark/water/raw/floor-v1.png",
+    "bytes": 2477216,
+    "sha256": "37e1603fe031b18e9ae8d325f65b2c138612d15f49d6948ce0b27c9b35c3456c",
+    "status": "first raw candidate; exact registration and scene motion unverified"
+  },
+  "resourceGuard": {
+    "utc": "2026-10-29T23:21:29.8534584Z",
+    "CFreeGiB": 14.702,
+    "DFreeGiB": 14.652,
+    "EFreeGiB": 9.768,
+    "ramFreeGiB": 11.037,
+    "cpuLoadPercent": 5,
+    "aggregateWorkingSetGiB": 26.041,
+    "ownPeakEstimateGiB": {
+      "ram": 0.25,
+      "E": 0.01
+    },
+    "parallelAllowanceGiB": {
+      "ram": 4,
+      "E": 2
+    }
+  },
+  "tokenGranted": false,
+  "transferServerWrites": 0
+}
