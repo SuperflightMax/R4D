@@ -1,0 +1,77 @@
+{
+  "schemaVersion": 1,
+  "status": "template",
+  "experiment": "p6-geometry-first-art",
+  "candidateId": null,
+  "sourceCommit": null,
+  "publicBasePath": "/review/r4d/p6-geometry-first-art/",
+  "entryPoint": "index.html",
+  "sourcePins": {
+    "r4dBaseCommit": "c6603f0f327350172df44687a4d4ead19e0e5e6b",
+    "orderBlob": "7fb0047e6f8326ec034e1439be746f18b86d1a8b",
+    "p6CardBlob": "d362af27a641957a0d9f8b9de6eb7d593f8d0d96",
+    "p1Commit": "4b47db04c7140ebf88f69b91faa0b790d46f22ec",
+    "p1Board": "01",
+    "p1Trial": "trial-01",
+    "p1ConfigPath": "experiments/p1-collider-mapping/clean-repeat-01/simulation/boards/01/trial-01/config.json",
+    "p1ConfigBytes": 9503,
+    "p1ConfigSha256": "dd5c519cd6d4b7295118e0a3a1063efed424a0ce739450bd5153c6a9941982db",
+    "p1ManifestPath": "experiments/p1-collider-mapping/clean-repeat-01/simulation/boards/01/trial-01/manifest.json",
+    "p1ManifestBytes": 11565,
+    "p1ManifestSha256": "7784dc0a215d0e472cf06a4eee03793592727cf0fa9a1fa0e0c78e5f1d17da18",
+    "p1ProjectionSha256": null,
+    "p1ViewMathSha256": null,
+    "p0RecipeCommit": "ee4d8e5c7dbb3b6618d58d6dacb0caf9b73dfb1b",
+    "p0RecipePath": "experiments/p0-perspective/research/CROSS_SERIES_CONCLUSION_AND_RECIPE.md",
+    "jungleSha256": "c8f9e4245c1de8c2086e615bc75dc10aea59b76b614d6e106593e07262e24f72",
+    "nativeCommit": "5a6fa03f1cdb3de88a2d9c7dbe795eb8e2a7f023",
+    "nativePackageTree": "008d16a80a26bb77d562a45218b01da09b0d9ff0"
+  },
+  "dynamics": {
+    "physicalRadius": 16,
+    "tickMs": 5,
+    "quantize": 7,
+    "gravity": 980,
+    "maxSpeed": 2000,
+    "angleDeviationDeg": 2,
+    "bounceDeviation": 0.02,
+    "prng": "lcg32",
+    "startConfigSha256": null,
+    "geometryConfigSha256": null,
+    "projectionSha256": null
+  },
+  "files": [],
+  "fileRecordFields": [
+    "path",
+    "bytes",
+    "sha256",
+    "mediaType",
+    "provenanceId",
+    "licenseId"
+  ],
+  "components": [],
+  "resourceProvenance": [],
+  "licenses": [],
+  "externalResources": [],
+  "privacyReview": {
+    "status": "not-performed",
+    "exactInventoryMatched": null,
+    "noRawPrivateSourcesOrMaps": null,
+    "noEmbeddedSourcesOrMaps": null,
+    "secretFindingsResolved": null,
+    "noInternalPathsOrRawLogs": null
+  },
+  "licenseReview": {
+    "status": "not-performed",
+    "allResourcesAccountedFor": null,
+    "noticesIncluded": null,
+    "compiledNativePublicationBasis": null
+  },
+  "qa": {
+    "status": "not-performed",
+    "sourceCommit": null,
+    "testedArtifactInventorySha256": null,
+    "publicReplayPaths": [],
+    "knownLimitations": []
+  }
+}
