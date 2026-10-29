@@ -1,0 +1,13 @@
+# Dark receiver-front-edge-04 — адресная VQA завершена
+
+**D-POP-01 локально CLOSED на NEW04**, seed3858699109. Старый 03 воспроизвёл скачок 2011→2012; новый 04 сохраняет частичное закрытие и постепенный выход 2012–2018. Normal Play и actual соседние 2010–2019/2044–2047 проверены в 100%/200%, полные native state/view/camera совпадают. На новом пороге шар уже вне JPG; старый/новый actual crop шара и тени одинаков на каждом из 2044–2047. Тень рассмотрена отдельно, её слабый край на тёмном фоне не сертифицирован универсально.
+
+**Ограниченный verdict: адресный retest пройден с пределами; общего Visual/art PASS нет.** Три прежних хороших входа 01/02/03 и выбранный right-side подход 04 сохранены без существенного нового визуального нарушения; good-entry JPEG имеют небольшие RGB-различия до 14/255, попиксельная эквивалентность не заявлена. Все направления/передние кромки 4receivers не покрыты. [REPORT.md](REPORT.md).
+
+Handoff86d35d7af73883d83fd976eb4c0d5ef281048024, SOURCE `d7eac5d7d76127e3138480f1f16eaf28aac0f15a`, ART `e5d3e1f44c112e483ff2a23fbd169cb119390865`; assets SHA `2b02dcde6c07266b67285700040e4ae0342f06fb760ae6ed0cf1fdcdc9b6cbad`. Manifest `d180e5a63bb1dec7c510507fc2ce990e7cb10927b337a19c4bb9effc67e4ed1b`,92payload/3494340 байт. Все 92 локальных/HTTP-файла совпали, конечный manifest тот же. ART assets дополнительно совпал с exact raw Git blob.
+
+Независимо подтверждены только 12depthLineNative четырёх receivers и их геометрическая деривация из старых front-полигонов. Остальные 48records/60rect/62PNG/ball/shadow/top-level metadata, renderer, core, P1 inputs, JPG и Pixi равны 03. Новая сортировка, физика или настройка радиуса не добавлялись. Source-предикаты 2044 обаON,2045shadowOFF/bodyON,2046 обаOFF отмечены как CPU-анализ, не GPU-измерение.
+
+Сейчас:43 парных полных state/control/camera;97paused и 60live JPEG;5actual UI downloads. OLD/NEW whole checkpoint2012 целиком совпали с прежним VQA03. Прежние full/native/controls/negative/import/ordinary проверки помечены «ранее выполнено», не повторены; native build не запускался. VQA03 `2d40b3f31341bbf57fd2df76aa6637a3f1a303e8` остаётся историческим FAIL D-POP, не унаследованным Visual PASS.
+
+157raw JPEG/21.143MiB сохранены в own E runtime `E:\R4D\perspective\p3-runtime\visual-qa\transfer-water-dark\dark\receiver-front-edge-04`. Архив содержит 105 полных JPEG,4 монтажа, inputs/checkpoints/журналы и hashes. Своя OLD tab6 закрыта, read-complete6869 прямо сообщён; своя NEW tab5 тоже закрыта. Серверы/пакеты не трогались, server_write=false. Water/Jungle не переоткрывались. После commit/push — точный handoff Lead и idle.

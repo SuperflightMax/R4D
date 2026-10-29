@@ -1,0 +1,2101 @@
+{
+  "schema": "r4d.p1.clean-repeat-01.board02.projection.candidate-01",
+  "status": "independent fresh-source research candidate; not sim-core config or QA PASS",
+  "source": {
+    "path": "K:\\Agents\\R4D\\Assets\\perspective\\02-dark-temple.jpg",
+    "sha256": "7ceff71bd0a871fecd725527dff5522450c8e75a74eb99c107b5d8624bf8fa3a",
+    "width": 1536,
+    "height": 1536,
+    "readOnly": true
+  },
+  "fit": {
+    "sideRowsPx": [
+      300,
+      400,
+      500,
+      600,
+      700,
+      800,
+      900,
+      1000,
+      1100
+    ],
+    "leftX": [
+      312,
+      285,
+      269,
+      256,
+      238,
+      220,
+      208,
+      193,
+      180
+    ],
+    "rightX": [
+      1228,
+      1251,
+      1267,
+      1290,
+      1305,
+      1322,
+      1343,
+      1362,
+      1380
+    ],
+    "leftLine": [
+      -0.16033333333333358,
+      352.34444444444455
+    ],
+    "rightLine": [
+      0.18749999999999936,
+      1174.0833333333342
+    ],
+    "leftRms": 3.6335202126591337,
+    "rightRms": 1.7078251276599552,
+    "vp": [
+      731.1239418623238,
+      -2362.450087845397
+    ],
+    "referenceRow": 700,
+    "bowlTopEllipses": [
+      [
+        316,
+        89,
+        49
+      ],
+      [
+        411,
+        90,
+        49
+      ],
+      [
+        435,
+        90,
+        53
+      ],
+      [
+        620,
+        94,
+        52
+      ],
+      [
+        731,
+        103,
+        57
+      ],
+      [
+        881,
+        109,
+        63
+      ]
+    ],
+    "qCandidates": [
+      0.6294939127459042,
+      0.6011768317096792,
+      0.6446738182549567,
+      0.5680300676598916,
+      0.5478523603039679,
+      0.5457275157903646
+    ],
+    "qMedian": 0.5846034496847854,
+    "forward": [
+      [
+        1,
+        -0.13956719825614036,
+        731.1239418623238
+      ],
+      [
+        0,
+        0.45097762622940285,
+        700
+      ],
+      [
+        0,
+        -0.00019089403350768935,
+        1
+      ]
+    ],
+    "inverse": [
+      [
+        1,
+        0,
+        -731.1239418623239
+      ],
+      [
+        0,
+        1.7105612369191354,
+        -1197.392865843395
+      ],
+      [
+        0,
+        0.000326535934077396,
+        0.7714248461458229
+      ]
+    ],
+    "method": "independent left/right wall-foot least-squares fit plus six approximately circular horizontal bowl tops",
+    "vanishingPointPx": [
+      731.1239418623238,
+      -2362.450087845397
+    ]
+  },
+  "transform": {
+    "mode": "projective",
+    "forward": [
+      [
+        1,
+        -0.13956719825614036,
+        731.1239418623238
+      ],
+      [
+        0,
+        0.45097762622940285,
+        700
+      ],
+      [
+        0,
+        -0.00019089403350768935,
+        1
+      ]
+    ],
+    "inverse": [
+      [
+        1,
+        0,
+        -731.1239418623239
+      ],
+      [
+        0,
+        1.7105612369191354,
+        -1197.392865843395
+      ],
+      [
+        0,
+        0.000326535934077396,
+        0.7714248461458229
+      ]
+    ],
+    "formula": "row-major matrix times homogeneous [x,y,1], divide by w",
+    "horizonSourceY": -2362.450087845397
+  },
+  "coordinates": {
+    "x": "right",
+    "y": "toward receivers",
+    "scale": "one x unit equals one image pixel at source row 700; y foreshortening 0.5846034496847854",
+    "metricRecovery": false
+  },
+  "domains": {
+    "sourceImageQuadPx": [
+      [
+        0,
+        0
+      ],
+      [
+        1536,
+        0
+      ],
+      [
+        1536,
+        1536
+      ],
+      [
+        0,
+        1536
+      ]
+    ],
+    "wholeSourceFlatPolygon": [
+      [
+        -947.757834758824,
+        -1552.183432807207
+      ],
+      [
+        1043.3628916141106,
+        -1552.183432807207
+      ],
+      [
+        632.2750578834996,
+        1123.3677313551054
+      ],
+      [
+        -574.3386549857352,
+        1123.3677313551054
+      ]
+    ],
+    "wholeSourceFlatBounds": {
+      "minX": -947.757834758824,
+      "maxX": 1043.3628916141106,
+      "minY": -1552.183432807207,
+      "maxY": 1123.3677313551054
+    },
+    "playableFloorSourcePolygon": [
+      [
+        323,
+        249
+      ],
+      [
+        312,
+        300
+      ],
+      [
+        285,
+        400
+      ],
+      [
+        269,
+        500
+      ],
+      [
+        256,
+        600
+      ],
+      [
+        238,
+        700
+      ],
+      [
+        220,
+        800
+      ],
+      [
+        208,
+        900
+      ],
+      [
+        193,
+        1000
+      ],
+      [
+        180,
+        1121
+      ],
+      [
+        1384,
+        1121
+      ],
+      [
+        1362,
+        1000
+      ],
+      [
+        1343,
+        900
+      ],
+      [
+        1322,
+        800
+      ],
+      [
+        1305,
+        700
+      ],
+      [
+        1290,
+        600
+      ],
+      [
+        1267,
+        500
+      ],
+      [
+        1251,
+        400
+      ],
+      [
+        1228,
+        300
+      ],
+      [
+        1221,
+        249
+      ]
+    ],
+    "playableFloorFlatPolygon": [
+      [
+        -478.60734824125717,
+        -904.695557470945
+      ],
+      [
+        -482.0920994665857,
+        -787.0207121151677
+      ],
+      [
+        -494.5726661117039,
+        -568.8980698674383
+      ],
+      [
+        -494.4126405421441,
+        -366.0157032964045
+      ],
+      [
+        -491.1621510396432,
+        -176.83026734394468
+      ],
+      [
+        -493.12394186232393,
+        -2.2737367544323206e-13
+      ],
+      [
+        -494.9616649041267,
+        165.6471490380729
+      ],
+      [
+        -491.05455059033,
+        321.1395282204962
+      ],
+      [
+        -490.1121711769356,
+        467.3831527674529
+      ],
+      [
+        -484.51664918612806,
+        633.111422614614
+      ],
+      [
+        573.971290294147,
+        633.111422614614
+      ],
+      [
+        574.5888828646657,
+        467.3831527674529
+      ],
+      [
+        574.3658408676994,
+        321.1395282204962
+      ],
+      [
+        572.1919353302155,
+        165.6471490380729
+      ],
+      [
+        573.8760581376761,
+        -2.2737367544323206e-13
+      ],
+      [
+        577.7413906011893,
+        -176.83026734394468
+      ],
+      [
+        573.3178329594014,
+        -366.0157032964045
+      ],
+      [
+        576.3342066948316,
+        -568.8980698674383
+      ],
+      [
+        571.5255038352329,
+        -787.0207121151677
+      ],
+      [
+        574.4781354465232,
+        -904.695557470945
+      ]
+    ],
+    "playableFloorFlatBounds": {
+      "minX": -494.9616649041267,
+      "maxX": 577.7413906011893,
+      "minY": -904.695557470945,
+      "maxY": 633.111422614614
+    },
+    "rule": "Entire source image and its inverse are valid transform domains; floor bounds never replace full-image framing."
+  },
+  "bounds": {
+    "segments": [
+      {
+        "id": "far",
+        "fromSourcePx": [
+          323,
+          249
+        ],
+        "toSourcePx": [
+          1221,
+          249
+        ],
+        "fromFlat": [
+          -478.60734824125717,
+          -904.695557470945
+        ],
+        "toFlat": [
+          574.4781354465232,
+          -904.695557470945
+        ]
+      },
+      {
+        "id": "left-1",
+        "fromSourcePx": [
+          323,
+          249
+        ],
+        "toSourcePx": [
+          312,
+          300
+        ],
+        "fromFlat": [
+          -478.60734824125717,
+          -904.695557470945
+        ],
+        "toFlat": [
+          -482.0920994665857,
+          -787.0207121151677
+        ]
+      },
+      {
+        "id": "left-2",
+        "fromSourcePx": [
+          312,
+          300
+        ],
+        "toSourcePx": [
+          285,
+          400
+        ],
+        "fromFlat": [
+          -482.0920994665857,
+          -787.0207121151677
+        ],
+        "toFlat": [
+          -494.5726661117039,
+          -568.8980698674383
+        ]
+      },
+      {
+        "id": "left-3",
+        "fromSourcePx": [
+          285,
+          400
+        ],
+        "toSourcePx": [
+          269,
+          500
+        ],
+        "fromFlat": [
+          -494.5726661117039,
+          -568.8980698674383
+        ],
+        "toFlat": [
+          -494.4126405421441,
+          -366.0157032964045
+        ]
+      },
+      {
+        "id": "left-4",
+        "fromSourcePx": [
+          269,
+          500
+        ],
+        "toSourcePx": [
+          256,
+          600
+        ],
+        "fromFlat": [
+          -494.4126405421441,
+          -366.0157032964045
+        ],
+        "toFlat": [
+          -491.1621510396432,
+          -176.83026734394468
+        ]
+      },
+      {
+        "id": "left-5",
+        "fromSourcePx": [
+          256,
+          600
+        ],
+        "toSourcePx": [
+          238,
+          700
+        ],
+        "fromFlat": [
+          -491.1621510396432,
+          -176.83026734394468
+        ],
+        "toFlat": [
+          -493.12394186232393,
+          -2.2737367544323206e-13
+        ]
+      },
+      {
+        "id": "left-6",
+        "fromSourcePx": [
+          238,
+          700
+        ],
+        "toSourcePx": [
+          220,
+          800
+        ],
+        "fromFlat": [
+          -493.12394186232393,
+          -2.2737367544323206e-13
+        ],
+        "toFlat": [
+          -494.9616649041267,
+          165.6471490380729
+        ]
+      },
+      {
+        "id": "left-7",
+        "fromSourcePx": [
+          220,
+          800
+        ],
+        "toSourcePx": [
+          208,
+          900
+        ],
+        "fromFlat": [
+          -494.9616649041267,
+          165.6471490380729
+        ],
+        "toFlat": [
+          -491.05455059033,
+          321.1395282204962
+        ]
+      },
+      {
+        "id": "left-8",
+        "fromSourcePx": [
+          208,
+          900
+        ],
+        "toSourcePx": [
+          193,
+          1000
+        ],
+        "fromFlat": [
+          -491.05455059033,
+          321.1395282204962
+        ],
+        "toFlat": [
+          -490.1121711769356,
+          467.3831527674529
+        ]
+      },
+      {
+        "id": "left-9",
+        "fromSourcePx": [
+          193,
+          1000
+        ],
+        "toSourcePx": [
+          180,
+          1121
+        ],
+        "fromFlat": [
+          -490.1121711769356,
+          467.3831527674529
+        ],
+        "toFlat": [
+          -484.51664918612806,
+          633.111422614614
+        ]
+      },
+      {
+        "id": "right-1",
+        "fromSourcePx": [
+          1221,
+          249
+        ],
+        "toSourcePx": [
+          1228,
+          300
+        ],
+        "fromFlat": [
+          574.4781354465232,
+          -904.695557470945
+        ],
+        "toFlat": [
+          571.5255038352329,
+          -787.0207121151677
+        ]
+      },
+      {
+        "id": "right-2",
+        "fromSourcePx": [
+          1228,
+          300
+        ],
+        "toSourcePx": [
+          1251,
+          400
+        ],
+        "fromFlat": [
+          571.5255038352329,
+          -787.0207121151677
+        ],
+        "toFlat": [
+          576.3342066948316,
+          -568.8980698674383
+        ]
+      },
+      {
+        "id": "right-3",
+        "fromSourcePx": [
+          1251,
+          400
+        ],
+        "toSourcePx": [
+          1267,
+          500
+        ],
+        "fromFlat": [
+          576.3342066948316,
+          -568.8980698674383
+        ],
+        "toFlat": [
+          573.3178329594014,
+          -366.0157032964045
+        ]
+      },
+      {
+        "id": "right-4",
+        "fromSourcePx": [
+          1267,
+          500
+        ],
+        "toSourcePx": [
+          1290,
+          600
+        ],
+        "fromFlat": [
+          573.3178329594014,
+          -366.0157032964045
+        ],
+        "toFlat": [
+          577.7413906011893,
+          -176.83026734394468
+        ]
+      },
+      {
+        "id": "right-5",
+        "fromSourcePx": [
+          1290,
+          600
+        ],
+        "toSourcePx": [
+          1305,
+          700
+        ],
+        "fromFlat": [
+          577.7413906011893,
+          -176.83026734394468
+        ],
+        "toFlat": [
+          573.8760581376761,
+          -2.2737367544323206e-13
+        ]
+      },
+      {
+        "id": "right-6",
+        "fromSourcePx": [
+          1305,
+          700
+        ],
+        "toSourcePx": [
+          1322,
+          800
+        ],
+        "fromFlat": [
+          573.8760581376761,
+          -2.2737367544323206e-13
+        ],
+        "toFlat": [
+          572.1919353302155,
+          165.6471490380729
+        ]
+      },
+      {
+        "id": "right-7",
+        "fromSourcePx": [
+          1322,
+          800
+        ],
+        "toSourcePx": [
+          1343,
+          900
+        ],
+        "fromFlat": [
+          572.1919353302155,
+          165.6471490380729
+        ],
+        "toFlat": [
+          574.3658408676994,
+          321.1395282204962
+        ]
+      },
+      {
+        "id": "right-8",
+        "fromSourcePx": [
+          1343,
+          900
+        ],
+        "toSourcePx": [
+          1362,
+          1000
+        ],
+        "fromFlat": [
+          574.3658408676994,
+          321.1395282204962
+        ],
+        "toFlat": [
+          574.5888828646657,
+          467.3831527674529
+        ]
+      },
+      {
+        "id": "right-9",
+        "fromSourcePx": [
+          1362,
+          1000
+        ],
+        "toSourcePx": [
+          1384,
+          1121
+        ],
+        "fromFlat": [
+          574.5888828646657,
+          467.3831527674529
+        ],
+        "toFlat": [
+          573.971290294147,
+          633.111422614614
+        ]
+      },
+      {
+        "id": "near-divider-1",
+        "fromSourcePx": [
+          366,
+          1121
+        ],
+        "toSourcePx": [
+          488,
+          1121
+        ],
+        "fromFlat": [
+          -320.99608710694935,
+          633.111422614614
+        ],
+        "toFlat": [
+          -213.74066466791817,
+          633.111422614614
+        ]
+      },
+      {
+        "id": "near-divider-2",
+        "fromSourcePx": [
+          709,
+          1121
+        ],
+        "toSourcePx": [
+          835,
+          1121
+        ],
+        "fromFlat": [
+          -19.450104348033772,
+          633.111422614614
+        ],
+        "toFlat": [
+          91.32188931850665,
+          633.111422614614
+        ]
+      },
+      {
+        "id": "near-divider-3",
+        "fromSourcePx": [
+          1067,
+          1121
+        ],
+        "toSourcePx": [
+          1171,
+          1121
+        ],
+        "fromFlat": [
+          295.2830205140414,
+          633.111422614614
+        ],
+        "toFlat": [
+          386.71387242928114,
+          633.111422614614
+        ]
+      }
+    ],
+    "receiverGapsAtSourceRowPx": 1121,
+    "receiverGapIntervalsXPx": [
+      [
+        180,
+        366
+      ],
+      [
+        488,
+        709
+      ],
+      [
+        835,
+        1067
+      ],
+      [
+        1171,
+        1384
+      ]
+    ],
+    "status": "proposed visible support-boundary polyline; requires contact/receiver QA"
+  },
+  "start": {
+    "sourcePx": [
+      768,
+      293
+    ],
+    "positionFlat": [
+      42.52803997334745,
+      -802.9045368760787
+    ],
+    "directionFlat": [
+      0,
+      1
+    ]
+  },
+  "obstacles": [
+    {
+      "id": "bowl-base-01",
+      "objectId": "bowl-base-01",
+      "family": "bowl-base",
+      "primitive": "circle",
+      "observedFrontContactPx": [
+        790,
+        385
+      ],
+      "supportHalfWidthPx": 41,
+      "observationUncertaintyPx": 12,
+      "centerFlat": [
+        65.62630208038297,
+        -646.6654594258035
+      ],
+      "radiusFlat": 46.06122769307567,
+      "sourceCenterPx": [
+        789.5391973831876,
+        363.49665500567556
+      ],
+      "hiddenSupport": "rear support is inferred, not observed"
+    },
+    {
+      "id": "bowl-base-02",
+      "objectId": "bowl-base-02",
+      "family": "bowl-base",
+      "primitive": "circle",
+      "observedFrontContactPx": [
+        378,
+        475
+      ],
+      "supportHalfWidthPx": 42,
+      "observationUncertaintyPx": 12,
+      "centerFlat": [
+        -381.1254518305063,
+        -461.0924706432787
+      ],
+      "radiusFlat": 45.69683166472709,
+      "sourceCenterPx": [
+        380.8311886507897,
+        452.25060372988656
+      ],
+      "hiddenSupport": "rear support is inferred, not observed"
+    },
+    {
+      "id": "bowl-base-03",
+      "objectId": "bowl-base-03",
+      "family": "bowl-base",
+      "primitive": "circle",
+      "observedFrontContactPx": [
+        1158,
+        495
+      ],
+      "supportHalfWidthPx": 44,
+      "observationUncertaintyPx": 12,
+      "centerFlat": [
+        457.5011221730757,
+        -423.37866625318117
+      ],
+      "radiusFlat": 47.55610029729572,
+      "sourceCenterPx": [
+        1154.4145239279862,
+        470.9993123961087
+      ],
+      "hiddenSupport": "rear support is inferred, not observed"
+    },
+    {
+      "id": "bowl-base-04",
+      "objectId": "bowl-base-04",
+      "family": "bowl-base",
+      "primitive": "circle",
+      "observedFrontContactPx": [
+        610,
+        689
+      ],
+      "supportHalfWidthPx": 45,
+      "observationUncertaintyPx": 12,
+      "centerFlat": [
+        -121.56057471625546,
+        -64.43753632193926
+      ],
+      "radiusFlat": 45.55353335480069,
+      "sourceCenterPx": [
+        611.0404827017403,
+        662.7873373107709
+      ],
+      "hiddenSupport": "rear support is inferred, not observed"
+    },
+    {
+      "id": "bowl-base-05",
+      "objectId": "bowl-base-05",
+      "family": "bowl-base",
+      "primitive": "circle",
+      "observedFrontContactPx": [
+        1056,
+        803
+      ],
+      "supportHalfWidthPx": 49,
+      "observationUncertaintyPx": 12,
+      "centerFlat": [
+        314.3049756503331,
+        122.60165695868399
+      ],
+      "radiusFlat": 47.85320768423311,
+      "sourceCenterPx": [
+        1052.9611718447288,
+        773.3909887783321
+      ],
+      "hiddenSupport": "rear support is inferred, not observed"
+    },
+    {
+      "id": "bowl-base-06",
+      "objectId": "bowl-base-06",
+      "family": "bowl-base",
+      "primitive": "circle",
+      "observedFrontContactPx": [
+        565,
+        965
+      ],
+      "supportHalfWidthPx": 50,
+      "observationUncertaintyPx": 12,
+      "centerFlat": [
+        -152.89373752227274,
+        370.73632933470606
+      ],
+      "radiusFlat": 46.46143233627314,
+      "sourceCenterPx": [
+        566.5856034662147,
+        933.2404815717837
+      ],
+      "hiddenSupport": "rear support is inferred, not observed"
+    },
+    {
+      "id": "skull-base-01",
+      "objectId": "skull-base-01",
+      "family": "skull-base",
+      "primitive": "circle",
+      "observedFrontContactPx": [
+        501,
+        375
+      ],
+      "supportHalfWidthPx": 33,
+      "observationUncertaintyPx": 12,
+      "centerFlat": [
+        -257.44509063407065,
+        -659.0866307664613
+      ],
+      "radiusFlat": 37.151918277474095,
+      "sourceCenterPx": [
+        502.44966648646994,
+        357.755424669772
+      ],
+      "hiddenSupport": "rear support is inferred, not observed"
+    },
+    {
+      "id": "skull-base-02",
+      "objectId": "skull-base-02",
+      "family": "skull-base",
+      "primitive": "circle",
+      "observedFrontContactPx": [
+        1062,
+        376
+      ],
+      "supportHalfWidthPx": 33,
+      "observationUncertaintyPx": 12,
+      "centerFlat": [
+        370.02369252854226,
+        -656.9330055946128
+      ],
+      "radiusFlat": 37.138351509015415,
+      "sourceCenterPx": [
+        1059.9156452441423,
+        358.7491251666663
+      ],
+      "hiddenSupport": "rear support is inferred, not observed"
+    },
+    {
+      "id": "skull-base-03",
+      "objectId": "skull-base-03",
+      "family": "skull-base",
+      "primitive": "circle",
+      "observedFrontContactPx": [
+        760,
+        563
+      ],
+      "supportHalfWidthPx": 34,
+      "observationUncertaintyPx": 12,
+      "centerFlat": [
+        30.228335512462948,
+        -281.146198690414
+      ],
+      "radiusFlat": 35.824750483694494,
+      "sourceCenterPx": [
+        759.8125829148701,
+        544.0126671187961
+      ],
+      "hiddenSupport": "rear support is inferred, not observed"
+    },
+    {
+      "id": "skull-base-04",
+      "objectId": "skull-base-04",
+      "family": "skull-base",
+      "primitive": "circle",
+      "observedFrontContactPx": [
+        1190,
+        697
+      ],
+      "supportHalfWidthPx": 36,
+      "observationUncertaintyPx": 12,
+      "centerFlat": [
+        459.3260174881757,
+        -41.421371010595706
+      ],
+      "radiusFlat": 36.284655333082725,
+      "sourceCenterPx": [
+        1186.8465187417514,
+        675.9748923669665
+      ],
+      "hiddenSupport": "rear support is inferred, not observed"
+    },
+    {
+      "id": "skull-base-05",
+      "objectId": "skull-base-05",
+      "family": "skull-base",
+      "primitive": "circle",
+      "observedFrontContactPx": [
+        466,
+        818
+      ],
+      "supportHalfWidthPx": 36,
+      "observationUncertaintyPx": 12,
+      "centerFlat": [
+        -255.2874016634026,
+        159.45318632839624
+      ],
+      "radiusFlat": 34.9042081718203,
+      "sourceCenterPx": [
+        467.8219808310959,
+        796.143357957007
+      ],
+      "hiddenSupport": "rear support is inferred, not observed"
+    },
+    {
+      "id": "skull-base-06",
+      "objectId": "skull-base-06",
+      "family": "skull-base",
+      "primitive": "circle",
+      "observedFrontContactPx": [
+        892,
+        960
+      ],
+      "supportHalfWidthPx": 38,
+      "observationUncertaintyPx": 12,
+      "centerFlat": [
+        148.28662142384388,
+        374.659878922377
+      ],
+      "radiusFlat": 35.28222725172218,
+      "sourceCenterPx": [
+        890.8330093739565,
+        935.899035860922
+      ],
+      "hiddenSupport": "rear support is inferred, not observed"
+    },
+    {
+      "id": "pillar-01",
+      "objectId": "pillar-01",
+      "family": "pillar-base",
+      "primitive": "segmentLoop",
+      "sourceVerticesPx": [
+        [
+          599,
+          444
+        ],
+        [
+          659,
+          443
+        ],
+        [
+          668,
+          475
+        ],
+        [
+          593,
+          475
+        ]
+      ],
+      "verticesFlat": [
+        [
+          -144.1760817750357,
+          -477.8485670693564
+        ],
+        [
+          -78.73102895288518,
+          -479.8861570454189
+        ],
+        [
+          -68.12945261293162,
+          -415.39563897855163
+        ],
+        [
+          -149.07669378989058,
+          -415.39563897855163
+        ]
+      ],
+      "observationUncertaintyPx": 12,
+      "hiddenSupport": "rear vertices partly inferred; lower front and side edges are pixel observations"
+    },
+    {
+      "id": "pillar-02",
+      "objectId": "pillar-02",
+      "family": "pillar-base",
+      "primitive": "segmentLoop",
+      "sourceVerticesPx": [
+        [
+          322,
+          661
+        ],
+        [
+          387,
+          661
+        ],
+        [
+          393,
+          697
+        ],
+        [
+          313,
+          697
+        ]
+      ],
+      "verticesFlat": [
+        [
+          -414.40130159013114,
+          -67.57241630075727
+        ],
+        [
+          -348.56285546853286,
+          -67.57241630075727
+        ],
+        [
+          -338.4554955064304,
+          -5.136715677512983
+        ],
+        [
+          -418.5339409764034,
+          -5.136715677512983
+        ]
+      ],
+      "observationUncertaintyPx": 12,
+      "hiddenSupport": "rear vertices partly inferred; lower front and side edges are pixel observations"
+    },
+    {
+      "id": "pillar-03",
+      "objectId": "pillar-03",
+      "family": "pillar-base",
+      "primitive": "segmentLoop",
+      "sourceVerticesPx": [
+        [
+          847,
+          661
+        ],
+        [
+          914,
+          662
+        ],
+        [
+          921,
+          698
+        ],
+        [
+          838,
+          698
+        ]
+      ],
+      "verticesFlat": [
+        [
+          117.37076323816272,
+          -67.57241630075727
+        ],
+        [
+          185.17376185484412,
+          -65.81802106444879
+        ],
+        [
+          190.00014188528675,
+          -3.4233581727555396
+        ],
+        [
+          106.94590149735845,
+          -3.4233581727555396
+        ]
+      ],
+      "observationUncertaintyPx": 12,
+      "hiddenSupport": "rear vertices partly inferred; lower front and side edges are pixel observations"
+    },
+    {
+      "id": "pillar-04",
+      "objectId": "pillar-04",
+      "family": "pillar-base",
+      "primitive": "segmentLoop",
+      "sourceVerticesPx": [
+        [
+          269,
+          916
+        ],
+        [
+          337,
+          915
+        ],
+        [
+          342,
+          952
+        ],
+        [
+          255,
+          952
+        ]
+      ],
+      "verticesFlat": [
+        [
+          -431.6770023733464,
+          345.1380336131668
+        ],
+        [
+          -368.26949855145546,
+          343.64499169170404
+        ],
+        [
+          -359.53857151419163,
+          398.2875241442152
+        ],
+        [
+          -439.9238995719594,
+          398.2875241442152
+        ]
+      ],
+      "observationUncertaintyPx": 12,
+      "hiddenSupport": "rear vertices partly inferred; lower front and side edges are pixel observations"
+    },
+    {
+      "id": "pillar-05",
+      "objectId": "pillar-05",
+      "family": "pillar-base",
+      "primitive": "segmentLoop",
+      "sourceVerticesPx": [
+        [
+          1198,
+          914
+        ],
+        [
+          1262,
+          914
+        ],
+        [
+          1276,
+          953
+        ],
+        [
+          1184,
+          953
+        ]
+      ],
+      "verticesFlat": [
+        [
+          436.3822389850197,
+          342.1510383924505
+        ],
+        [
+          496.2021051106146,
+          342.1510383924505
+        ],
+        [
+          503.296894206296,
+          399.7474227274779
+        ],
+        [
+          418.31735881390114,
+          399.7474227274779
+        ]
+      ],
+      "observationUncertaintyPx": 12,
+      "hiddenSupport": "rear vertices partly inferred; lower front and side edges are pixel observations"
+    },
+    {
+      "id": "pillar-06",
+      "objectId": "pillar-06",
+      "family": "pillar-base",
+      "primitive": "segmentLoop",
+      "sourceVerticesPx": [
+        [
+          681,
+          1068
+        ],
+        [
+          750,
+          1068
+        ],
+        [
+          760,
+          1101
+        ],
+        [
+          671,
+          1101
+        ]
+      ],
+      "verticesFlat": [
+        [
+          -44.74691840097383,
+          561.958648461024
+        ],
+        [
+          16.8511374372476,
+          561.958648461024
+        ],
+        [
+          25.53277354586272,
+          606.5171488653518
+        ],
+        [
+          -53.16276151461161,
+          606.5171488653518
+        ]
+      ],
+      "observationUncertaintyPx": 12,
+      "hiddenSupport": "rear vertices partly inferred; lower front and side edges are pixel observations"
+    },
+    {
+      "id": "block-01",
+      "objectId": "block-01",
+      "family": "rotated-square-pedestal",
+      "primitive": "segmentLoop",
+      "sourceVerticesPx": [
+        [
+          924,
+          424
+        ],
+        [
+          965,
+          445
+        ],
+        [
+          930,
+          475
+        ],
+        [
+          886,
+          453
+        ]
+      ],
+      "verticesFlat": [
+        [
+          211.98057835793998,
+          -518.8782413654959
+        ],
+        [
+          255.11896289431144,
+          -475.81242865247566
+        ],
+        [
+          214.6462432319117,
+          -415.39563897855163
+        ],
+        [
+          168.4633657319944,
+          -459.5753918430795
+        ]
+      ],
+      "observationUncertaintyPx": 12,
+      "hiddenSupport": "rear vertices partly inferred; lower front and side edges are pixel observations"
+    },
+    {
+      "id": "block-02",
+      "objectId": "block-02",
+      "family": "rotated-square-pedestal",
+      "primitive": "segmentLoop",
+      "sourceVerticesPx": [
+        [
+          502,
+          528
+        ],
+        [
+          544,
+          551
+        ],
+        [
+          505,
+          587
+        ],
+        [
+          462,
+          562
+        ]
+      ],
+      "verticesFlat": [
+        [
+          -242.75826067171607,
+          -311.72427102442293
+        ],
+        [
+          -196.69385605230946,
+          -267.90840055446404
+        ],
+        [
+          -234.78725355413445,
+          -200.69892106318156
+        ],
+        [
+          -281.82345898910216,
+          -247.19661437257975
+        ]
+      ],
+      "observationUncertaintyPx": 12,
+      "hiddenSupport": "rear vertices partly inferred; lower front and side edges are pixel observations"
+    },
+    {
+      "id": "block-03",
+      "objectId": "block-03",
+      "family": "rotated-square-pedestal",
+      "primitive": "segmentLoop",
+      "sourceVerticesPx": [
+        [
+          1020,
+          538
+        ],
+        [
+          1061,
+          560
+        ],
+        [
+          1026,
+          595
+        ],
+        [
+          983,
+          568
+        ]
+      ],
+      "verticesFlat": [
+        [
+          305.0107682691879,
+          -292.5885075629136
+        ],
+        [
+          345.6787739244573,
+          -250.95079655516406
+        ],
+        [
+          305.3452072981993,
+          -185.98568589161184
+        ],
+        [
+          263.2216325980889,
+          -235.96481408211892
+        ]
+      ],
+      "observationUncertaintyPx": 12,
+      "hiddenSupport": "rear vertices partly inferred; lower front and side edges are pixel observations"
+    },
+    {
+      "id": "block-04",
+      "objectId": "block-04",
+      "family": "rotated-square-pedestal",
+      "primitive": "segmentLoop",
+      "sourceVerticesPx": [
+        [
+          736,
+          766
+        ],
+        [
+          778,
+          790
+        ],
+        [
+          738,
+          832
+        ],
+        [
+          687,
+          800
+        ]
+      ],
+      "verticesFlat": [
+        [
+          4.773189359830787,
+          110.51528564286609
+        ],
+        [
+          45.53778310878439,
+          149.5553438710735
+        ],
+        [
+          6.591927959018173,
+          216.4638955500979
+        ],
+        [
+          -42.728696383765694,
+          165.6471490380729
+        ]
+      ],
+      "observationUncertaintyPx": 12,
+      "hiddenSupport": "rear vertices partly inferred; lower front and side edges are pixel observations"
+    },
+    {
+      "id": "block-05",
+      "objectId": "block-05",
+      "family": "rotated-square-pedestal",
+      "primitive": "segmentLoop",
+      "sourceVerticesPx": [
+        [
+          391,
+          1035
+        ],
+        [
+          442,
+          1062
+        ],
+        [
+          400,
+          1090
+        ],
+        [
+          346,
+          1061
+        ]
+      ],
+      "verticesFlat": [
+        [
+          -306.5865777869805,
+          516.5345397473329
+        ],
+        [
+          -258.5605333531307,
+          553.7648369435386
+        ],
+        [
+          -293.71910354736974,
+          591.7589619027628
+        ],
+        [
+          -344.51293850465566,
+          552.3964093476588
+        ]
+      ],
+      "observationUncertaintyPx": 12,
+      "hiddenSupport": "rear vertices partly inferred; lower front and side edges are pixel observations"
+    },
+    {
+      "id": "block-06",
+      "objectId": "block-06",
+      "family": "rotated-square-pedestal",
+      "primitive": "segmentLoop",
+      "sourceVerticesPx": [
+        [
+          1045,
+          1037
+        ],
+        [
+          1099,
+          1063
+        ],
+        [
+          1052,
+          1091
+        ],
+        [
+          995,
+          1063
+        ]
+      ],
+      "verticesFlat": [
+        [
+          282.76036917062936,
+          519.3126207595554
+        ],
+        [
+          328.89168946220883,
+          555.1324655626061
+        ],
+        [
+          284.5464354298212,
+          593.1045002282535
+        ],
+        [
+          235.91272291236956,
+          555.1324655626061
+        ]
+      ],
+      "observationUncertaintyPx": 12,
+      "hiddenSupport": "rear vertices partly inferred; lower front and side edges are pixel observations"
+    }
+  ],
+  "goals": [
+    {
+      "id": "receiver-01",
+      "primitive": "bucketCircle",
+      "sourceCenterPx": [
+        253.04758604758604,
+        1193.520559020559
+      ],
+      "centerFlat": [
+        -411.7258333254292,
+        727.0340100663902
+      ],
+      "radiusFlat": 43.00973005868298,
+      "radiusDerivation": "0.70 * minimum distance to inverse observed opening boundary (or certified water patch circle)",
+      "openingContourPx": [
+        [
+          149,
+          1242
+        ],
+        [
+          306,
+          1243
+        ],
+        [
+          313,
+          1234
+        ],
+        [
+          330,
+          1234
+        ],
+        [
+          335,
+          1226
+        ],
+        [
+          358,
+          1151
+        ],
+        [
+          360,
+          1137
+        ],
+        [
+          358,
+          1137
+        ],
+        [
+          358,
+          1144
+        ],
+        [
+          356,
+          1146
+        ],
+        [
+          343,
+          1147
+        ],
+        [
+          213,
+          1145
+        ],
+        [
+          202,
+          1147
+        ],
+        [
+          168,
+          1146
+        ],
+        [
+          166,
+          1136
+        ],
+        [
+          165,
+          1153
+        ],
+        [
+          167,
+          1150
+        ],
+        [
+          169,
+          1151
+        ],
+        [
+          168,
+          1156
+        ],
+        [
+          173,
+          1181
+        ],
+        [
+          161,
+          1208
+        ],
+        [
+          158,
+          1210
+        ],
+        [
+          159,
+          1212
+        ]
+      ],
+      "grayBelow": 40,
+      "measurementRoiPx": [
+        100,
+        1125,
+        1440,
+        1270
+      ],
+      "status": "conservative research trigger; simulator bucket semantics not verified"
+    },
+    {
+      "id": "receiver-02",
+      "primitive": "bucketCircle",
+      "sourceCenterPx": [
+        596.4116787531118,
+        1193.9362485117438
+      ],
+      "centerFlat": [
+        -116.00246513578712,
+        727.5613353681272
+      ],
+      "radiusFlat": 42.51622154033621,
+      "radiusDerivation": "0.70 * minimum distance to inverse observed opening boundary (or certified water patch circle)",
+      "openingContourPx": [
+        [
+          697,
+          1139
+        ],
+        [
+          695,
+          1147
+        ],
+        [
+          597,
+          1145
+        ],
+        [
+          502,
+          1148
+        ],
+        [
+          498,
+          1146
+        ],
+        [
+          497,
+          1154
+        ],
+        [
+          504,
+          1185
+        ],
+        [
+          509,
+          1231
+        ],
+        [
+          506,
+          1231
+        ],
+        [
+          506,
+          1226
+        ],
+        [
+          504,
+          1228
+        ],
+        [
+          501,
+          1221
+        ],
+        [
+          500,
+          1196
+        ],
+        [
+          494,
+          1226
+        ],
+        [
+          495,
+          1240
+        ],
+        [
+          493,
+          1241
+        ],
+        [
+          514,
+          1243
+        ],
+        [
+          668,
+          1242
+        ],
+        [
+          675,
+          1234
+        ],
+        [
+          689,
+          1234
+        ],
+        [
+          692,
+          1222
+        ]
+      ],
+      "grayBelow": 40,
+      "measurementRoiPx": [
+        100,
+        1125,
+        1440,
+        1270
+      ],
+      "status": "conservative research trigger; simulator bucket semantics not verified"
+    },
+    {
+      "id": "receiver-03",
+      "primitive": "bucketCircle",
+      "sourceCenterPx": [
+        946.8735767771053,
+        1194.8959380449278
+      ],
+      "centerFlat": [
+        185.73466949480138,
+        728.7782843691581
+      ],
+      "radiusFlat": 41.25417787781912,
+      "radiusDerivation": "0.70 * minimum distance to inverse observed opening boundary (or certified water patch circle)",
+      "openingContourPx": [
+        [
+          1041,
+          1137
+        ],
+        [
+          1038,
+          1146
+        ],
+        [
+          839,
+          1147
+        ],
+        [
+          844,
+          1233
+        ],
+        [
+          860,
+          1234
+        ],
+        [
+          865,
+          1239
+        ],
+        [
+          865,
+          1242
+        ],
+        [
+          1046,
+          1242
+        ],
+        [
+          1051,
+          1235
+        ],
+        [
+          1059,
+          1233
+        ],
+        [
+          1055,
+          1232
+        ],
+        [
+          1052,
+          1216
+        ],
+        [
+          1055,
+          1214
+        ],
+        [
+          1051,
+          1201
+        ],
+        [
+          1051,
+          1192
+        ],
+        [
+          1049,
+          1187
+        ],
+        [
+          1048,
+          1189
+        ],
+        [
+          1045,
+          1188
+        ],
+        [
+          1045,
+          1180
+        ],
+        [
+          1048,
+          1181
+        ],
+        [
+          1048,
+          1184
+        ],
+        [
+          1048,
+          1179
+        ],
+        [
+          1042,
+          1158
+        ]
+      ],
+      "grayBelow": 40,
+      "measurementRoiPx": [
+        100,
+        1125,
+        1440,
+        1270
+      ],
+      "status": "conservative research trigger; simulator bucket semantics not verified"
+    },
+    {
+      "id": "receiver-04",
+      "primitive": "bucketCircle",
+      "sourceCenterPx": [
+        1292.8502296930465,
+        1194.278920442681
+      ],
+      "centerFlat": [
+        483.66313978479303,
+        727.9959411367731
+      ],
+      "radiusFlat": 41.44518157305826,
+      "radiusDerivation": "0.70 * minimum distance to inverse observed opening boundary (or certified water patch circle)",
+      "openingContourPx": [
+        [
+          1411,
+          1229
+        ],
+        [
+          1371,
+          1150
+        ],
+        [
+          1370,
+          1133
+        ],
+        [
+          1366,
+          1143
+        ],
+        [
+          1357,
+          1146
+        ],
+        [
+          1238,
+          1147
+        ],
+        [
+          1243,
+          1148
+        ],
+        [
+          1233,
+          1151
+        ],
+        [
+          1219,
+          1149
+        ],
+        [
+          1235,
+          1146
+        ],
+        [
+          1178,
+          1148
+        ],
+        [
+          1203,
+          1232
+        ],
+        [
+          1205,
+          1234
+        ],
+        [
+          1222,
+          1235
+        ],
+        [
+          1228,
+          1242
+        ],
+        [
+          1404,
+          1241
+        ]
+      ],
+      "grayBelow": 40,
+      "measurementRoiPx": [
+        100,
+        1125,
+        1440,
+        1270
+      ],
+      "status": "conservative research trigger; simulator bucket semantics not verified"
+    }
+  ],
+  "uncertainty": [
+    "Wall fit is independent and off-center: u about 731; source image center was not imposed.",
+    "Circular horizontal bowl tops are elevated and artist q estimates vary about 0.546..0.645.",
+    "Skull rear support is hidden; approximate circle is smaller than vertical skull silhouette.",
+    "Pedestal and pillar loops retain per-instance orientation. Rear corners remain inferred.",
+    "Receiver circles are inscribed in dark connected components, not outer stone boxes."
+  ],
+  "presentation": {
+    "views": [
+      "source-perspective",
+      "inverse-floor"
+    ],
+    "framings": [
+      "whole-source",
+      "playable-floor"
+    ],
+    "fullImageRule": "Use inverse of all four source image corners for whole-source frame. Rendering source and inverse views uses one geometry and preserves run/tick.",
+    "recommendation": "See BOARD03_CHECKPOINT.md for whole-source versus floor readability; actual UI evidence still required."
+  },
+  "oldP1ArtifactsUsed": false
+}
