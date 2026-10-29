@@ -1,11 +1,29 @@
 # Dark — независимая Technical QA
 
 29 октября 2026, Europe/Kyiv. `technical-qa-r4d-p3-masks-01`.
-Статус: **DARK_FULL_METHOD_03_TECHNICAL_QA_COMPLETE**.
+Статус: **DARK_RECEIVER_FRONT_EDGE_04_TARGETED_TQA_COMPLETE**.
+Адресный Technical PASS:93 local/HTTP files/MIME/allowlist,14 copied CP
+provenance,12 lines/62PNG/48records и4front-полигона.25 selected native states
+и68 browser CP samples совпали. Full native/browser/controls/import matrix
+03 и native build **не повторялись**. Old03 D-POP воспроизведён; на04 прежний
+2011→2012 pop в выбранном A/B не найден. Formal visual closure — VQA/Lead.
+
+SOURCE `d7eac5d7d76127e3138480f1f16eaf28aac0f15a`, ART
+`e5d3e1f44c112e483ff2a23fbd169cb119390865`, manifest
+`d180e5a63bb1dec7c510507fc2ce990e7cb10927b337a19c4bb9effc67e4ed1b`.
+Новый Dark6870; старый6869 отдельно. Targeted report и пределы:
+[REPORT](targeted-receiver-front04/REPORT.md),
+[evidence index](targeted-receiver-front04/evidence/index.json).
+Own tabs3/4 закрыты, old6869 read-complete после A/B передан Lead; серверы
+не тронуты. Water c482/Jungle не менялись. server_write=false.
+
+## Ранее выполненная TQA03 — сохранённый результат
+
+Статус ранее: **DARK_FULL_METHOD_03_TECHNICAL_QA_COMPLETE**.
 Technical PASS для exact inputs/payload/native/PRNG/events/JSON/controls.
 Общий художественный/mapping PASS по всем masks и движению не выдан.
 
-Текущий кандидат: `dark-full-method-03`, CODE
+Кандидат ранее выполненной TQA03: `dark-full-method-03`, CODE
 `c73d6128970b2b022d5313b08c34cafdec9a1bc3`, ART
 `17dc9fcdc261562acb581dd8590096819734c807`, frozen manifest
 `b3923f4ccab57a8361a9dc8f64de73fcee9b70fb38c87aac5e9623fbc62d0307`.
