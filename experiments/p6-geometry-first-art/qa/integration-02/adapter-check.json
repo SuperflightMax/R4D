@@ -1,0 +1,188 @@
+{
+  "scope": "limited renderer adapter only; no final board, obstacle/receiver occlusion, or artistic PASS",
+  "sourceCommit": "38282825c2688e010612e35b6a807e027fb0b90a",
+  "url": "http://127.0.0.1:41767/",
+  "inventorySha256": "dacd666acd97e8767b6502ff60ec4b456d21c3a1b9b36d170f87b7123e9d787a",
+  "filesListSha256": "e3b47613b5b678d38d6da35bfac3af8ca567540f6270dc841ea5686eafd50850",
+  "files": 28,
+  "totalBytes": 5260713,
+  "packetProvenance": {
+    "sourceGit": {
+      "commit": "1adf57cfde5a20855c02a846baa045936e4d5a6d",
+      "bytes": 5302,
+      "sha256": "5ef0efec3633755935fa260a13f0e4e218da16e1479b54c4caee7d3b0d32bb6c",
+      "encoding": "UTF8 LF; independently read from exact Git object"
+    },
+    "usedInputCopy": {
+      "bytes": 5521,
+      "sha256": "d23452ebeaa45725175fbc5d915420df0f2c60f13205eeffd3599622069640cb",
+      "encoding": "working copy containing CRLF; identity declared in frozen adapter and verified by Lead",
+      "normalizationEquivalence": "CRLF->LF and parsed JSON equality independently confirmed by Lead; QA verified Git bytes and adapter semantics, did not regenerate the used copy"
+    }
+  },
+  "nativeBundleUnchanged": true,
+  "coreSha256": "8843446996582eaccbd9ff63d3147d74b7eca9a614d8e0df16851d1d89d46f50",
+  "consumerSha256": "119f1ad5e2989315ec095ba82b4d4d9f9263a982c4b3d2e7ecb64308853301e5",
+  "adapterManifestSha256": "1c30abd43cc96c09480c7f4c031eaef01e13c08344a98fbebc31816cc250e75c",
+  "results": [
+    {
+      "tick": 0,
+      "view": "source",
+      "ballCenter": [
+        769.9999999999995,
+        320.99999999999864
+      ],
+      "expectedRadius": 14.074217699642645,
+      "actualRadiusFromScale": 14.074217699642645,
+      "centerError": 0,
+      "radiusError": 0,
+      "shadowVertexFloat32Exact": true,
+      "shadowQuantizationError": 0.000014653021164062526,
+      "nativeStateEqual": true,
+      "visualLiftPx": 0
+    },
+    {
+      "tick": 94,
+      "view": "source",
+      "ballCenter": [
+        769.9854836389912,
+        366.5126612891623
+      ],
+      "expectedRadius": 14.278524174124755,
+      "actualRadiusFromScale": 14.278524174124755,
+      "centerError": 0,
+      "radiusError": 0,
+      "shadowVertexFloat32Exact": true,
+      "shadowQuantizationError": 0.00001283331552804492,
+      "nativeStateEqual": true,
+      "visualLiftPx": 0
+    },
+    {
+      "tick": 95,
+      "view": "source",
+      "ballCenter": [
+        769.9703127263558,
+        367.28908128124164
+      ],
+      "expectedRadius": 14.282009525822616,
+      "actualRadiusFromScale": 14.282009525822616,
+      "centerError": 0,
+      "radiusError": 0,
+      "shadowVertexFloat32Exact": true,
+      "shadowQuantizationError": 0.000022671246253549748,
+      "nativeStateEqual": true,
+      "visualLiftPx": 0
+    },
+    {
+      "tick": 96,
+      "view": "source",
+      "ballCenter": [
+        769.8172053542066,
+        366.5169474369971
+      ],
+      "expectedRadius": 14.27854341465536,
+      "actualRadiusFromScale": 14.27854341465536,
+      "centerError": 0,
+      "radiusError": 0,
+      "shadowVertexFloat32Exact": true,
+      "shadowQuantizationError": 0.000027704092333761057,
+      "nativeStateEqual": true,
+      "visualLiftPx": 0
+    },
+    {
+      "tick": 1916,
+      "view": "source",
+      "ballCenter": [
+        817.1193246163476,
+        1111.5987261758087
+      ],
+      "expectedRadius": 17.623217777858144,
+      "actualRadiusFromScale": 17.623217777858144,
+      "centerError": 0,
+      "radiusError": 0,
+      "shadowVertexFloat32Exact": true,
+      "shadowQuantizationError": 0.00004893202802848986,
+      "nativeStateEqual": true,
+      "visualLiftPx": 0
+    },
+    {
+      "tick": 1956,
+      "view": "source",
+      "ballCenter": [
+        925.8788657241207,
+        1251.2871789435733
+      ],
+      "expectedRadius": 18.250279665747314,
+      "actualRadiusFromScale": 18.250279665747314,
+      "centerError": 0,
+      "radiusError": 0,
+      "shadowVertexFloat32Exact": true,
+      "shadowQuantizationError": 0.00004241867336041216,
+      "nativeStateEqual": true,
+      "visualLiftPx": 0
+    }
+  ],
+  "toggleResults": [
+    {
+      "tick": 95,
+      "view": "source",
+      "ballCenter": [
+        769.9703127263558,
+        367.28908128124164
+      ],
+      "expectedRadius": 14.282009525822616,
+      "actualRadiusFromScale": 14.282009525822616,
+      "centerError": 0,
+      "radiusError": 0,
+      "shadowVertexFloat32Exact": true,
+      "shadowQuantizationError": 0.000022671246253549748,
+      "nativeStateEqual": true,
+      "visualLiftPx": 0,
+      "action": "art off",
+      "artVisible": false,
+      "geometryVisible": true,
+      "statePreserved": true
+    },
+    {
+      "tick": 95,
+      "view": "source",
+      "ballCenter": [
+        769.9703127263558,
+        367.28908128124164
+      ],
+      "expectedRadius": 14.282009525822616,
+      "actualRadiusFromScale": 14.282009525822616,
+      "centerError": 0,
+      "radiusError": 0,
+      "shadowVertexFloat32Exact": true,
+      "shadowQuantizationError": 0.000022671246253549748,
+      "nativeStateEqual": true,
+      "visualLiftPx": 0,
+      "action": "art on geometry off",
+      "artVisible": true,
+      "geometryVisible": false,
+      "statePreserved": true
+    },
+    {
+      "tick": 95,
+      "view": "flat",
+      "ballCenter": [
+        33254.8464511,
+        33263.0448323
+      ],
+      "expectedRadius": 16,
+      "actualRadiusFromScale": 15.999999999999998,
+      "centerError": 0,
+      "radiusError": 1.7763568394002505e-15,
+      "shadowVertexFloat32Exact": true,
+      "shadowQuantizationError": 0.0013248751477085929,
+      "nativeStateEqual": true,
+      "visualLiftPx": 0,
+      "action": "flat art only",
+      "artVisible": true,
+      "geometryVisible": false,
+      "statePreserved": true
+    }
+  ],
+  "limitation": "Only first actual mesh vertex is exposed by DOM metrics; its Float32 position and frozen source UV mapping were checked. No claim of artistic shadow readability/occlusion follows from numeric properties."
+}

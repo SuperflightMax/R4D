@@ -1,0 +1,79 @@
+{
+  "images": [
+    {
+      "texture": "raw/ball-v01.png",
+      "canvas": [
+        1254,
+        1254
+      ],
+      "alphaMax": 255,
+      "bounds": [
+        {
+          "threshold": 1,
+          "rectInclusive": [
+            0,
+            0,
+            1252,
+            1253
+          ]
+        },
+        {
+          "threshold": 16,
+          "rectInclusive": [
+            198,
+            208,
+            1054,
+            1064
+          ]
+        },
+        {
+          "threshold": 128,
+          "rectInclusive": [
+            199,
+            209,
+            1053,
+            1064
+          ]
+        }
+      ]
+    },
+    {
+      "texture": "raw/ball-shadow-v01.png",
+      "canvas": [
+        1774,
+        887
+      ],
+      "alphaMax": 231,
+      "bounds": [
+        {
+          "threshold": 1,
+          "rectInclusive": [
+            65,
+            8,
+            1715,
+            886
+          ]
+        },
+        {
+          "threshold": 16,
+          "rectInclusive": [
+            574,
+            137,
+            1197,
+            747
+          ]
+        },
+        {
+          "threshold": 128,
+          "rectInclusive": [
+            741,
+            289,
+            1030,
+            590
+          ]
+        }
+      ]
+    }
+  ],
+  "shadowMaxCompositeAlpha": 0.3804705882352941
+}
