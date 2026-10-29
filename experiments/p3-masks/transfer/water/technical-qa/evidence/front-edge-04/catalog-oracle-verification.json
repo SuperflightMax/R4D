@@ -1,0 +1,63 @@
+{
+  "candidate": "water-front-edge-04",
+  "manifestHash": "de1344afcb197115b76cb4006ead3d96e7b2581a1a299df1100d7a552d2ce2c6",
+  "utc": "2026-10-29T11:18:03.418Z",
+  "runs": [
+    {
+      "seed": 0,
+      "lastTick": 1326,
+      "result": {
+        "kind": "LOST",
+        "finalX": 32866.4825074,
+        "nearMissBucketIds": []
+      },
+      "ticksCompared": 1327,
+      "traceSha256": "eee49a0fd103b8850b5dd67ec5694f7424fc6642cef9b90253199bc31543b14d"
+    },
+    {
+      "seed": 1,
+      "lastTick": 1196,
+      "result": {
+        "kind": "LOST",
+        "finalX": 33728.1429454,
+        "nearMissBucketIds": []
+      },
+      "ticksCompared": 1197,
+      "traceSha256": "f8f2fd58b274782a25df82132a919e2bab5918665eff3dbb100d4ac27ef5ab81"
+    },
+    {
+      "seed": 2,
+      "lastTick": 1275,
+      "result": {
+        "kind": "IN_BUCKET",
+        "bucketId": "receiver-02"
+      },
+      "ticksCompared": 1276,
+      "traceSha256": "d198f3f2947bfb96c9d206fb8ed3c91553c1d873e89d775401fd721f4c3db328"
+    },
+    {
+      "seed": 3675989190,
+      "lastTick": 934,
+      "result": {
+        "kind": "LOST",
+        "finalX": 33320.1117522,
+        "nearMissBucketIds": []
+      },
+      "ticksCompared": 935,
+      "traceSha256": "36e64f575d12066400c9f348418a7d87f7a9b56a2c429e41b53d7852542d6f58"
+    },
+    {
+      "seed": 2939425288,
+      "lastTick": 984,
+      "result": {
+        "kind": "LOST",
+        "finalX": 32891.4204595,
+        "nearMissBucketIds": []
+      },
+      "ticksCompared": 985,
+      "traceSha256": "895424419e64903d2186f577d87e795eb7a28d46a6dca096ab36ec56f56526f6"
+    }
+  ],
+  "savedCheckpoints": 11,
+  "wrongBoardAndTamperedRngRejected": true
+}

@@ -1,0 +1,104 @@
+{
+  "utc": "2026-10-29T11:47:56.167Z",
+  "consoleWarnErrorEntries": [],
+  "resourceTiming": [
+    {
+      "name": "http://127.0.0.1:6868/review/r4d/p3-masks-water/style.css",
+      "initiatorType": "link",
+      "responseStatus": 200,
+      "transferSize": 2556,
+      "decodedBodySize": 2256
+    },
+    {
+      "name": "http://127.0.0.1:6868/review/r4d/p3-masks-water/app.js",
+      "initiatorType": "script",
+      "responseStatus": 200,
+      "transferSize": 15093,
+      "decodedBodySize": 14793
+    },
+    {
+      "name": "http://127.0.0.1:6868/review/r4d/p3-masks-water/vendor/pixi.js",
+      "initiatorType": "script",
+      "responseStatus": 200,
+      "transferSize": 841582,
+      "decodedBodySize": 841282
+    },
+    {
+      "name": "http://127.0.0.1:6868/review/r4d/p3-masks-water/view-math.js",
+      "initiatorType": "script",
+      "responseStatus": 200,
+      "transferSize": 3350,
+      "decodedBodySize": 3050
+    },
+    {
+      "name": "http://127.0.0.1:6868/review/r4d/p3-masks-water/run-model.js",
+      "initiatorType": "script",
+      "responseStatus": 200,
+      "transferSize": 2946,
+      "decodedBodySize": 2646
+    },
+    {
+      "name": "http://127.0.0.1:6868/review/r4d/p3-masks-water/native-core.js",
+      "initiatorType": "script",
+      "responseStatus": 200,
+      "transferSize": 21790,
+      "decodedBodySize": 21490
+    },
+    {
+      "name": "http://127.0.0.1:6868/review/r4d/p3-masks-water/data/config.json",
+      "initiatorType": "fetch",
+      "responseStatus": 200,
+      "transferSize": 27531,
+      "decodedBodySize": 27231
+    },
+    {
+      "name": "http://127.0.0.1:6868/review/r4d/p3-masks-water/data/manifest.json",
+      "initiatorType": "fetch",
+      "responseStatus": 200,
+      "transferSize": 16170,
+      "decodedBodySize": 15870
+    },
+    {
+      "name": "http://127.0.0.1:6868/review/r4d/p3-masks-water/data/projection.json",
+      "initiatorType": "fetch",
+      "responseStatus": 200,
+      "transferSize": 53809,
+      "decodedBodySize": 53509
+    },
+    {
+      "name": "http://127.0.0.1:6868/review/r4d/p3-masks-water/build.json",
+      "initiatorType": "fetch",
+      "responseStatus": 200,
+      "transferSize": 3045,
+      "decodedBodySize": 2745
+    },
+    {
+      "name": "http://127.0.0.1:6868/review/r4d/p3-masks-water/assets/artist/assets.json",
+      "initiatorType": "fetch",
+      "responseStatus": 200,
+      "transferSize": 20871,
+      "decodedBodySize": 20571
+    },
+    {
+      "name": "http://127.0.0.1:6868/review/r4d/p3-masks-water/replays/index.json",
+      "initiatorType": "fetch",
+      "responseStatus": 200,
+      "transferSize": 2774,
+      "decodedBodySize": 2474
+    }
+  ],
+  "cdpNetwork": {
+    "events": 0,
+    "truncated": false,
+    "hasMore": false
+  },
+  "completeBrowserNetworkCoverage": false,
+  "explanation": "IAB root exposed12 resource timing records, all200; no image records. CDP Network exposed no records for two fresh reloads. All101 payload bodies/MIME were separately checked over HTTP; browser loaded71 masks. Empty CDP is not complete browser-network proof.",
+  "tabCleanup": {
+    "utc": "2026-10-29T11:45:13.781Z",
+    "ownTabId": "2",
+    "closed": true,
+    "builderServerControl": "untouched",
+    "otherTabsControl": "untouched"
+  }
+}

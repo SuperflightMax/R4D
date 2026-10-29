@@ -1,8 +1,33 @@
-# Water — подготовка независимой Technical QA
+# Water — независимая Technical QA
 
 29 октября 2026, Europe/Kyiv. `technical-qa-r4d-p3-masks-01`.
-Статус: **INPUTS_VERIFIED_READY_FOR_FROZEN_CANDIDATE**.
-Это результат подготовки входов, не вердикт по переносу или будущей демке.
+Статус: **WATER_FRONT_EDGE_04_TECHNICAL_QA_COMPLETE**.
+Technical PASS для exact inputs/payload/native/PRNG/events/JSON/controls.
+Общий художественный/mapping/method PASS не выдан; W-EARLY-POP-01 этой ролью
+формально не закрывается. Подробные ограничения — в отчёте.
+
+Точный candidate `water-front-edge-04`: SOURCE
+`5196c0bd4981992c4e3d9678438aed1aa1c0d84c`, ART
+`5c9ba8c640b344094e0ada7c4ed6c9ec076550e5`, manifest
+`de1344afcb197115b76cb4006ead3d96e7b2581a1a299df1100d7a552d2ce2c6`.
+Water начата после полного Dark handoff/commit+push
+`b327ae601a4962dd5826abfbfdeefaf77c090a55` и закрытия own Dark tab.
+Все101 local/HTTP files/MIME проверены; 8 distinct runs/8491 native states,
+90 browser checkpoint samples совпали с direct oracle. Первые own UI seeds
+без отбора:2567603743→LOST1448,2664424314→LOST733,4133151857→LOST587.
+
+Строгий scope17dc full ART→5c9:24 arch-depth records,73 PNG и47 прочих regions
+неизменны; midpoint front edges16 accepted feet независимо подтверждены.
+Это не утверждение для раннего7-mask4eb→5c. Реальные frames arch07/1006–1022
+в100%/200%, frog105/pillar710/left2519/receiver021275 и neighbors сохранены.
+На receiver approach1250 видна граница2D/source-height mapping; не приписана
+24-depth варианту и не выдаётся за полный mapping PASS.
+
+[Полный Water отчёт](reports/water-front-edge-04.md),
+[evidence index](evidence/front-edge-04/index.json):43 screenshots/8 checkpoints,
+raw сохранён отдельно. Own Water tab2 закрыта, preview6868 и Dark6869 оставлены;
+source/ART/frozen не правились. server_write=false; после handoff idle.
+Ниже сохранена история подготовки и заранее объявленная матрица.
 
 ## Начало и границы
 
@@ -53,7 +78,8 @@ Git blobs, исходники не менялись и не публиковал
 
 Заранее объявленные input-probe seeds, без отбора:
 0→LOST/t1326; 1→LOST/t1196; 2→IN_BUCKET receiver-02/t1275.
-Это обычные native прогоны общего входа; UI/random и frozen P3 ещё не проверены.
+На этапе подготовки это были native input probes; текущее исполнение UI/frozen
+P3 описано в отдельном отчёте выше.
 
 ## Water gate: доступность при r16
 
@@ -83,8 +109,8 @@ colliders не добавлялись. `minimumFootGap` — минимально
 
 У того же seed1 есть actual native contacts arch-07-left-foot:edge-01/t1006,
 arch-07-right-foot:edge-04/t1012 и arch-07-left-foot:edge-02/t1018.
-Это готовый ориентир для будущей проверки обеих опор и проёма одним run;
-показанные masks/lintel пока отсутствуют. Короткое native свидетельство:
+Это был ориентир будущей rendered проверки обеих опор и проёма одним run;
+на этапе подготовки masks/lintel ещё не было. Короткое native свидетельство:
 [GATE_NATIVE_WITNESS.json](GATE_NATIVE_WITNESS.json).
 
 Входной blocker проёма при r16 не обнаружен. Lead получил адресно числа,
@@ -98,7 +124,7 @@ Runtime и raw witness:
 параметры — authorized `nativeRepo` и read-only cached oracle directory;
 приватный путь исходной native-копии публично не дублируется.
 
-## Отдельная матрица Water — ещё не исполнена на кандидате
+## Матрица Water, объявленная до frozen-кандидата
 
 | Проверка | Достаточное доказательство после выдачи freeze |
 | --- | --- |
@@ -110,11 +136,10 @@ Runtime и raw witness:
 | Просмотр | Art/Geometry независимо, diagnostic ball не скрыт mask, actual config geometry выше art; view/framing/zoom/pan сохраняют состояние и PRNG. |
 | Метод/качество | Цельный исходник сохранён, footprint/shadow не заменены новым collider; rendered проверка вместе с отдельной VQA. Изменение алгоритма/подготовки фиксируется отдельно от исходного переноса. |
 
-Нужна отдельная frozen выдача Water с exact source/art/build/hash/file-manifest,
-одинаковые bytes для TQA/VQA и подтверждённый preview/port. Сейчас кандидата,
-его browser теста и вердикта нет. `server_write=false`; старый Jungle token
-не используется. Браузеры/серверы не запускались; native probes завершены,
-активных процессов и ожидания нет.
+На этапе подготовки требовалась отдельная frozen выдача с exact source/art/
+build/hash/file-manifest, одинаковыми bytes для обеих QA и отдельным preview.
+Тогда browser-кандидат ещё не проверялся. Текущий bounded verdict — выше.
+`server_write=false`; старый Jungle token не используется.
 
 Ресурсы перед probe, 09:36:44UTC: RAM free16.737/31.907 GiB, CPU4%/24logical,
 C/D/E free16.288/16.280/11.941 GiB. Совокупная добавочная оценка двух лёгких
