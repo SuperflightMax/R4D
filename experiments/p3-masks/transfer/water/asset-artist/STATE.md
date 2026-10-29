@@ -31,6 +31,16 @@ generated ball/shadow из выбранного ART как exact copies в Water
 ticks1014/1015/1016 (LOST1196), без подбора seed. Всего ранних масок7.
 Source alpha hole/body probes проходят. Это не visual/native движения PASS.
 
+Текущий первый полный комплект71 masks описан в CONSUMER_CONTRACT.md.
+Исходный метод scalar/line сохранён. В частности, early наблюдение порядка
+1014/1015 не правилось незаметно. Нужна full QA и отдельная версия при коррекции.
+Тела восьми арок с открытыми hole probes, береговые/платформенные stone faces,
+rail и basin rims подготовлены. Ошибка широкой rail mask на воде исправлена
+как авторинг контура; rejected overlay сохранён runtime/mask-overlay-boundary-v1-rejected.png.
+Собственный source overlay просмотрен; package/schema/alpha и source probes
+проходят. Принимаемый visual PASS не заявляется. Следующий шаг — exact full
+handoff, затем смотреть названные реальные frames/дефекты через Lead.
+
 Server_write=false. Свои дополнительные peak <=0.5GiB RAM/0.2GiB E;
 свежий09:32:15Z snapshot: RAMfree16.557GiB, CPU2%, C16.338/D16.280/E11.942GiB.
 Тяжёлое только E runtime suffix asset-artist/transfer-water-dark/water.

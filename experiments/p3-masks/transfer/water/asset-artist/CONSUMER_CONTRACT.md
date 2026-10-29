@@ -35,3 +35,24 @@ arch-07 tick1015, соседние1014/1015/1016, source≈[518.076,957.456]. Ru
 
 Все JSON записаны UTF-8/LF, hashes относятся к точным байтам. Перед передачей
 они дополнительно сверяются по git show exact commit. Полные входы INPUTS.json.
+
+## Первый полный набор, прежний способ
+
+71 masks: 6 frogs, 7 pillars,24 части8 arches,6 rail areas,9 видимых platform
+faces,3 divider walls,16 передних strips четырёх приёмников. Runtime алгоритм
+не менялся. Source contours подготовлены вручную по исходнику. Верхняя и
+нижняя ограда разбиты по реальным каменным телам, чтобы не залить голубой
+поток; неудачный boundary overlay сохранён отдельно в собственном runtime.
+Восемь arch-hole probes, четыре basin holes/front probes и четыре явно
+водных source-point probes проверены. Зелёный пол/вода не стали масками тела.
+
+Ранний Pixi стык7 masks подтверждён Lead. Builder обнаружил наблюдение:
+seed1/t1014 маски закрывают около35% sphere-alpha; на1015 depth отключает
+их при ещё примерно23% projected overlap. VQA уточняет отнесение. Текущий
+полный набор сохраняет исходные scalar/line правила до такой коррекции;
+не выдаётся за PASS и не подменяет early4eb4001. При дальнейшей смене depth
+данных/метода нужен отдельный named version с сохранением этого результата.
+
+Повтор авторинга: python -B author_objects.py, затем python -B prepare_assets.py.
+Exact packet: python -B freeze_handoff.py <commit>. Manifest вне payload,
+включает все тексты/PNG/provenance/hashes по фактически извлечённым Git bytes.

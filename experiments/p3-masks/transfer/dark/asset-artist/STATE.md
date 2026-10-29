@@ -21,6 +21,15 @@ P1; их коллайдеры/проекция/состояния не меня�
 Текущий статус: inspect завершён, собственные контуры Dark ещё готовятся;
 Water получает первый полезный стык раньше полного Dark. PASS не заявлен.
 
+Теперь подготовлен первый полный комплект60 masks:12 pins,24 front/side
+loop-face areas,6walls,3ramps,12receiver areas,3platform dividers. Accepted
+sourceVertices не выпрямлены; native depth lines — прежний contract, новые
+данные. Свой overlay реально просмотрен. Basin-hole/front source probes,
+white RGB/alpha и exact inputs проходят. Shadow alpha0.93 отдельно от Water.
+Full movement/art PASS ещё отсутствует. Обычные input случаи TQA для раннего
+стыка: seed0 pillar02/t366, pillar04/t840, receiver01/t888. Затем все виды
+углов/боковых проходов. Дальнейшие изменения сохранять отдельной версией.
+
 Server_write=false. Никаких server upload/staging/service действий.
 Runtime только E:\R4D\perspective\p3-runtime\asset-artist\transfer-water-dark\dark.
 Свежая проверка ресурсов перед тяжёлым действием, E<=4 diagnosis/<=2 stop.

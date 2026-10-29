@@ -25,6 +25,7 @@ def main():
         assert hashlib.sha256(raw).hexdigest()==item['sha256'],name
         inputs[name]=json.loads(raw)
     config=inputs['config'];manifest=inputs['manifest'];profile=inputs['projection']
+    assert manifest['board']=={'water':'04','dark':'02'}[meta['board']]
     pins={p['id']:p for p in config['board']['pins']}
     obstacles={p['id']:p for p in profile['obstacles']}
     segments={p['id']:p for p in config['board']['segments']}
@@ -59,6 +60,7 @@ def main():
         else:
             s=segments[region['boundaryId']];item['depthNativeY']=max(s['y1'],s['y2'])
         assert im.size==(w,h) and im.getchannel('A').getextrema()==(0,255)
+        assert all(c.getextrema()==(255,255) for c in im.split()[:3])
         occluders.append(item)
     assets={'schema':'r4d-p3-assets-v1','sourceSize':[1536,1536],
             'ball':meta['ball'],'shadow':meta['shadow'],'occluders':occluders}
