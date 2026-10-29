@@ -1,0 +1,4 @@
+Use case: stylized-concept.
+Asset type: separate transparent ground-shadow texture for one small stone ball in a 2.5D jungle game.
+Create ONLY a simple soft dark olive-grey shadow patch, viewed straight down in its own flat ground plane. A near-circular radial shadow, darkest at the centre with translucent centre around 40 percent opacity, smoothly fading to fully transparent edges. The circular patch occupies about half the canvas width, centred, with generous completely transparent padding. It will be perspectively projected and offset under a separate moving ball by the renderer, so do not pre-flatten it into a thin perspective ellipse.
+Genuinely transparent background. No sphere, no object, no ground surface, no pedestal, no lighting beam, no highlights, no ring, no black outline, no texture, no text and no baked checkerboard. Soft natural contact-shadow falloff, useful at small game scale.
