@@ -1,0 +1,65 @@
+{
+  "status": "STOP_PREFLIGHT_PROTECTION_DIFFERS",
+  "checkpointUtc": "2026-10-29T14:55:37.510837+00:00",
+  "executionTurnId": "01a18825-089e-7d20-8bf2-2fd705358fb9",
+  "releaseId": "p3-water-dark-front-edge-04",
+  "sourceCommit": "5bc0a42f209eb19acebce3597979fc9b12cd2f7d",
+  "authorizationPath": "E:\\R4D\\perspective\\coordination\\p3-water-dark-front-edge-04-token-2026-10-29-v2.json",
+  "authorizationSha256": "5023100a4f8271594cb973db5feae97035677c8ccb467a0f41f9b86203b1c961",
+  "token": "CTO-P3-WD04-V2-20261029T144858Z-91df426327f8",
+  "serverWriteAuthorizedByExternalToken": true,
+  "serverWritesPerformed": false,
+  "firstWriteStarted": false,
+  "beginUtc": null,
+  "preflightStartUtc": "2026-10-29T14:52:25.7965330Z",
+  "preflightLocalReceiptWrittenUtc": "2026-10-29T14:52:50.841491+00:00",
+  "firstWriteMustStartByUtc": "2026-10-29T15:48:58Z",
+  "phaseResults": {
+    "preflight": "STOP",
+    "begin": "NOT_STARTED",
+    "upload": "NOT_STARTED",
+    "stage": "NOT_STARTED",
+    "switch": "NOT_STARTED",
+    "postcheck": "NOT_STARTED",
+    "document": "NOT_STARTED",
+    "rollback": "NOT_STARTED"
+  },
+  "failedOperation": {
+    "action": "v2 preflight protection status guard",
+    "paths": [
+      "/review/ (normal)",
+      "/review/ (Origin https://example.invalid)",
+      "/review/.p3-combined-probe"
+    ],
+    "expectedStatuses": [
+      303,
+      403,
+      404
+    ],
+    "observedStatuses": null,
+    "observedStatusesUnavailableReason": "Reviewed remote script returns only generic STOP and does not persist checks on guard failure.",
+    "reason": "STOP: prewrite protection differs",
+    "transport": "vps1-direct / sudo -n -- python3 -B",
+    "tool": "functions.exec / tools.exec_command then tools.write_stdin",
+    "execChunkId": "a67f53",
+    "sessionId": 49667,
+    "completionChunkId": "533fa5",
+    "exitCode": 1,
+    "policyToolDenial": false
+  },
+  "stopReadOnlyGuard": {
+    "execChunkId": "f4ac45",
+    "sessionId": 65435,
+    "completionChunkId": "a281f2",
+    "utc": "2026-10-29T14:54:02.179563+00:00",
+    "status": "STOP_CONFIRMED_NO_SERVER_WRITE"
+  },
+  "httpRequestsRepeated": false,
+  "phaseReplayed": false,
+  "scriptsAndPacketUnchanged": true,
+  "oldTokenClosedAndNotReused": true,
+  "oldJournalPreserved": true,
+  "windowReleasedByEngineer": false,
+  "postAuthJsMimeBodyUiVerified": false,
+  "nextAction": "STOP; exact HTTP mismatch undiagnosed. Requires Lead/CTO decision; no script/guard changes, automatic request/phase replay or token/window closure by engineer."
+}

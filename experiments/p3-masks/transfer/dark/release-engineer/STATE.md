@@ -1,3 +1,12 @@
+Current execution v2: **STOP_PREFLIGHT_PROTECTION_DIFFERS; server writes performed=false.**
+[Exact execution RESULT](../../water/release-engineer/EXECUTION_V2_RESULT.md). Preflight14:52:25Z exit1, begin not started.
+RO guard14:54:02Z confirms old baseline and all new targets absent.
+No phase/HTTP replay or script/guard edits. Token/window closure remains CTO.
+
+---
+
+Previous checkpoints preserved below:
+
 # Current release state — v2 local correction
 
 **WAIT_V2_REVIEW_EXACT_CTO_TOKEN; server_write=false; token=null.**
