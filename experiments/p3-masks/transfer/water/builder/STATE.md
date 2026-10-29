@@ -2,6 +2,44 @@
 
 ## Текущий checkpoint — WATER_FRONT_EDGE_04_FROZEN_FOR_BOTH_INDEPENDENT_QA
 
+### Временный read-only original FULL baseline для честного A/B
+
+По конкретному поручению Lead запущен дополнительный owned loopback preview
+УЖЕ СУЩЕСТВУЮЩЕГО immutable full-method-03, без rebuild или edits payload:
+http://127.0.0.1:6870/review/r4d/p3-masks-water/,
+PID17380 / exec session14523. Root:
+E:\R4D\perspective\p3-runtime\builder\transfer-water-dark\water\full-method-03.
+SOURCEc73d6128970b2b022d5313b08c34cafdec9a1bc3,
+ART17dc9fcdc261562acb581dd8590096819734c807, prefix
+experiments/p3-masks/transfer/water/asset-artist/.
+Manifest SHA256b3c697675ecd76af7848fa72367f943c1b9e4a27b325b098a9fef08135fe58d3,
+manifest16695 bytes;97 payload/3470168 bytes;98 total files/3486863 bytes.
+Actual board/source/ART identity, все97 local+HTTP hash/size и JS MIME совпали.
+6868 corrected и6869 Dark не переключались/не останавливались; их HTTP manifest
+SHA остались de1344af...ce2c6 иb3923f4c...d0307 соответственно.
+
+Artist установил отдельный confound: early4eb→full17dc не render-equivalent,
+суммарная opacity трёх arch07 masks отличается в466 source pixels из-за порядка
+масштабирования/отсечения частей. Early7 кадры сохраняются как первый symptom.
+Изолирующий A/B теперь именно original FULL17dc/6870 против corrected5c/6868.
+Builder независимо подтвердил: все73 PNG этих двух FULL версий, app renderer,
+run-model/view-math/native-core, accepted config/manifest/projection, source JPG
+и Pixi совпадают побайтно. Изменены только24 arch depth records и служебные
+provenance/replay-menu записи. Это identity-проверка, не новый полный QA old.
+
+VQA после текущего Dark смотрит соседние Water seed1/1014–1016 и1020–1022
+старого FULL и corrected внутри одного Water-прохода. W-EARLY-POP-01 остаётся
+открытым до независимого отнесения/закрытия. Все frozen bytes неизменны.
+Третий preview6870 держать ДО ЯВНОГО завершения чтения Lead/VQA; затем Builder
+безопасно остановит только свой PID после свежего command/root/port proof.
+Fresh system-wide перед стартом11:18:09Z: RAMfree16.645/31.907GiB, CPU0%,
+C17.035/D16.275/E11.763GiB. Port6870 был свободен; bind exclusive127.0.0.1.
+Дополнительный idle Node preview оценён <0.1GiB RAM и несколькими KiB evidence.
+Audit: собственный runtime water/evidence/ab-full-baseline-03/{identity.json,
+http-verification.json,preview-ownership.json}. server_write=false.
+
+### Полный corrected candidate и сохранённый selfcheck
+
 Lead прямо изменил порядок: оформить full frozen candidate сейчас; VQA начнёт
 полный Water-проход со сравнительного retest старых1014–1016 и новых1020–1022,
 затем остальная матрица на ТЕХ ЖЕ bytes. Dark QA не прерывается.
