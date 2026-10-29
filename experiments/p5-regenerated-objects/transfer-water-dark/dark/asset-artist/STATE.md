@@ -1,0 +1,3 @@
+# Dark Asset Artist
+
+Inputs and source reference fixed for later independent generation after Water priority. `INPUTS.json` records exact accepted board02/trial01 config/manifest/viewmath and read-only JPG SHA/bytes. Original Dark image inspected. Builder5d40b82ac6b2b69f7077bb9bfe58c7560fbf783e contracts/schema/example/targets/input-verification materialized and all five pins verified; CONTRACT_PINS.json retained. Dark consumer contract read. No Dark generation or runtime QA yet; no Jungle assets selected for Dark. Own source/runtime are separate from Water. Frozen Jungle, native physics and public/server delivery unchanged.
