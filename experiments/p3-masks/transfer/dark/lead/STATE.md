@@ -107,6 +107,11 @@ partial overlap. Это selfcheck/наблюдение Lead, не независ
 
 ## Следующий gate
 
+CURRENT: NEWV3token issued16:35:18Z/deadline17:35:18Z, authSHA1bbc9511eada2766f971c8ee7a16c3ddac5beda455786d4500e5f4c2218ce7b2.
+Послеfreshidleодинactualexecution01a18885-37e3-7290-a316-444d187b995e active,
+existingRelease6.1-sol/xhigh. RootUI-onlyпослеactualswitch, onlyReleasewrites.
+Exacthashes/guards вWaterSTATE; LIVEпокаожидаетфактreceipts.
+
 LATEST V3 source372344f fullyreviewed/mergedLead, independent13caseoffline
 PASS15:51:36Z,11pins/53priorfiles/197payloads unchangedproof. ExactNEWtoken
 requestedCTO; обаoldtokensCLOSED, noV3remote/HTTP/execution. Localactorпокаactive,

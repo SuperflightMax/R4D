@@ -63,7 +63,21 @@ OldDark6869 PID37660/session87426 сохраняется для коротког
 Dark [текущий STATE](../../dark/lead/STATE.md): targeted TQA/VQA идут;
 не повторяют автоматически прежнюю полную матрицу/native build.
 
-## Публикационный gate — STOP V2 PREFLIGHT PROTECTION MISMATCH; server writes=false
+## Публикационный gate — V3 AUTHORIZED EXECUTION IN PROGRESS
+
+CURRENT: CTO V3 token CTO-P3-WD04-V3-20261029T163518Z-d69a711f4777 issued16:35:18Z,
+firstwriteDeadline17:35:18Z. Authoritativefile
+E:\R4D\perspective\coordination\p3-water-dark-front-edge-04-token-2026-10-29-v3.json
+SHA1bbc9511eada2766f971c8ee7a16c3ddac5beda455786d4500e5f4c2218ce7b2 fullread/
+verifiedLead. Freshidle01a1887c completed/errornull подтверждён; ОДНА separate
+executionV3 отправлена existingRelease6.1-sol/xhigh, actualturn
+01a18885-37e3-7290-a316-444d187b995e active/errornull. Exact372/script6280/
+launcher3cf1/scope726c/indexd69a/canonicalb18a immutable послеtoken.
+Freshrealresources/currentUTC/euid0/fullbaseline/absentchecks доfirstwrite,
+serial7phases+guardedrollback, built-in docs-prefix proof. Root неserverwriter,
+берёт только короткийlawfulIABдвухURL ПОСЛЕactualswitch; поканеоткрыватьURL.
+ОбаoldtokensCLOSED, oldjournalsretained. Liveнеподтверждён доactualreceipts.
+Token/window/slotзакрываетCTO. Rootcheckpointfcabb иRolesource372pushedclean.
 
 LATEST V3 REVIEW: source372344f9f6198cd811daa4612256a2fd8b32597b clean/merged.
 Root полностью прочитал changed remote/launcher, canonical/test/index/proofs,
