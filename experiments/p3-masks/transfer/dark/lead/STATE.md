@@ -116,7 +116,9 @@ W-DIVIDER-01 оставлен OPEN как coverage+planeCollapse spatial ambigui
 полный combined local intent и fresh opaque RO baseline для отдельного token.
 Не делать server writes до нового exact CTO разрешения; сам Lead не пишет.
 
-Release idle, server_write=false, новых SSH-аудита/пакета/intent нет.
+Release active turn `01a187d1-ae46-74d1-8458-aba76b9514ff`: конкретный local
+combined packet/intent и fresh RO opaque audit после двух завершённых RESULT.
+Server_write=false, execution/token отсутствуют; детали в Water STATE.
 CTO закрыл P5 token/window10:55:12UTC и резервировал следующее окно P3.
 Предпочтение: один combined intent/одно окно, но два отдельных sibling
 prefixes `/review/r4d/p3-masks-water/` и `/review/r4d/p3-masks-dark/`, artifacts

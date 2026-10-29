@@ -68,8 +68,14 @@ Dark [текущий STATE](../../dark/lead/STATE.md): targeted TQA/VQA идут
 Оба bounded RESULT/QA теперь завершены: Dark targeted TQA18e880e иVQAbc34a864
 полностью прочитаны Lead, localD-POP закрыт, общий artPASS не выдан.
 Existing Release получает ОДИН combined local intent/fresh opaque RO audit.
-Пока Release idle и нового SSH-аудита/intent нет; writes/staging/upload/lock/
-service actions запрещены до нового exact CTO token. Сам Lead не пишет.
+Release реально возобновлён после fresh completed/notLoaded/errornull:
+actual turn `01a187d1-ae46-74d1-8458-aba76b9514ff`, selected6.1-sol/xhigh,
+send isError=false. Оба RESULT/STATE полностью прочитал,194files/7088324bytes
+подтвердил, первые prep commands завершены. Phase: LOCAL COMBINED INTENT +
+fresh READ-ONLY opaque baseline, не execution. Общесистемно RAMfree14.50GiB,
+CPU5%/E11.05GiB перед prep; extra≤1GiB RAM/128MiB E — оценка, не резерв.
+Writes/serverstaging/upload/lock/service actions запрещены до нового exact CTO
+token. Сам Lead не пишет. Старыеtokens не использовать; canonicalintent ещё ожидается.
 CTO явно закрыл P5 token/window2026-10-29T10:55:12Z, активных writers тогда нет;
 следующее окно зарезервировано P3. Предпочтение CTO: ОДИН combined local intent/
 одно окно для двух самостоятельных sibling pages/artifacts/verdicts:
