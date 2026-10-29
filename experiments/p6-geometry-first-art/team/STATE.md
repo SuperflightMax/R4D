@@ -31,7 +31,15 @@ Stage 2 выдан CTO 2026-10-29; производство начато. Lead t
 - Пишем только в своей P6 области, тяжёлое только process-local в own E runtime. При denial exact operation/target stop без обходов.
 - Снимок Lead 2026-10-29 12:35 UTC: RAM free 15.964 GiB, CPU 2%, C free 16.059 GiB, D 16.252 GiB, E 11.610 GiB. P6 ориентир peak 3 GiB RAM / 2 GiB E; E<=4 диагностика, <=2 safe WIP stop.
 
-## Следующий шаг
+## Первый реальный checkpoint
 
-Получить реальные первые действия всех пяти для CTO. Передать exact Builder draft Artist и обеим QA; после первого imagegen output организовать полезные corrections и раннюю стыковку арта с consumer. До появления результата никакого QA/PASS.
+- Builder draft frozen: `bdf470e5beb468266184cc2ea0c997191d9907b3`, `builder/DRAFT_HANDOFF.md`; PNG1536² SHA256 `bc13aa13e2b33b0e58cd0e87b90e684c3c4adbb3576d8d9b0379e3dee1bec532`. Передан Artist и обеим QA.
+- Artist preparation/контракт: `e8bf577d46b48b871f678f53f85a5cb0d250eeb0`, `asset-artist/LAYER_CONTRACT.md`; передан Builder для ранней стыковки.
+- Обязательная цельная проба фактически выполнена native imagegen call `exec-70009f94-ad4b-47e6-a8e6-ce7e37eea12e`. Raw1254² `asset-artist/raw/whole-board-v01.png` SHA256 `204e30e5b8d296afc916def97936c90c42b3524d68650e390297c8b18dd9b81e`. Lead независимо просмотрел и сверил hash; prompt записывает draft как единственную geometry authority, Jungle только STYLE. Artist сохранил raw и начал адресную correction ухода дальних оснований/верхнего края. Exact v01 передан обеим QA; разрешено только uniform full-frame1254→1536, без fitting/crop/localwarp.
+- Technical QA independent native preparation: `49719d407fe1a9408911d49ba819ac6a02022a0a`, `qa/state-contract.json`, запушен. Normal seeds0/1/2 сохранены полностью; receiver-03tick1956 и два LOST1735/1290. Контракт передан Builder/VQA, oracle не подменяется consumer.
+- Visual baseline: `a27d09763ed9c5f79de862a100de0ab832c234fb`, `qa/visual/baseline-01/BASELINE_AND_MATRIX.md`, запушен. Подсказки о свете, guide rings/grid и capture-area vs basket silhouette переданы Artist. Излом accepted P1 левой границы около source(425,700) отмечен отдельно от дефектов нового арта; config не меняется.
+- Release local plan: `ff0f755d9142cdb31f72b0217affad64148853d1`, `release/EXACT_DELIVERY_PLAN.md`; окончен и push собственной ветки подтверждён, remote HEAD совпал. Push turn `01a187ae-4f34-7d41-baf0-0f6ddbfe3265` completed/idle. Теперь idle до exact candidate/wrapping pin/CTO окна. Серверных действий нет.
+- Lead coordination commit `9538aa8` доставлен в existing origin, собственную ветку. Более свежий снимок: RAMfree15.545GiB, CPU0%, Cfree15.932GiB, D16.252GiB, E11.450GiB. Ресурсных порогов нет.
+
+Следующее: независимый draft/v01 registration+inverse-floor review и useful whole-image correction; затем выбранные Artist слои/ball/shadow и ранняя actual native/Pixi сборка. Никакого product/art/motion QA PASS пока нет.
 
