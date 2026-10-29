@@ -1,0 +1,794 @@
+{
+  "schema": "r4d.p6.qa.frozen-draft.v1",
+  "candidateCommit": "bdf470e5beb468266184cc2ea0c997191d9907b3",
+  "scope": "draft input registration only; no imagegen result, consumer or product PASS",
+  "artifacts": {
+    "geometry-draft.png": "bc13aa13e2b33b0e58cd0e87b90e684c3c4adbb3576d8d9b0379e3dee1bec532",
+    "registration.png": "426bec72faf21fe6ba654dca988ed1d74241b1372246d78741419b19a3d5cf4a",
+    "draft-overlay.png": "a8253ebdbf70bd45a29cd2c542a48d626481352c4dc6c977b9216dd4ea12de55",
+    "reference-overlay.png": "1d716e627dc5061b3544db00a5eac82125527c469cf65f22c05d9f5065e3fa7b",
+    "geometry.json": "0544de7b4fcebf211b194fc63566a94b34a5b21b57fb0c56207a8c866d332d71"
+  },
+  "independentInputBytesEqual": true,
+  "matrixValuesEqual": true,
+  "counts": {
+    "pins": 25,
+    "segments": 16,
+    "buckets": 4,
+    "drops": 1,
+    "floorVertices": 14
+  },
+  "checkedPoints": 3916,
+  "maxSourceErrorPx": 0.0,
+  "maxRoundTripNative": 1.626953582672133e-11,
+  "rasterProbeRule": "exact registration color within 4 px of independently projected sample; this tests diagnostic raster registration, not art quality",
+  "rasterProbes": [
+    {
+      "kind": "pin",
+      "id": "flower-01",
+      "probes": 128,
+      "foundWithin4px": 102,
+      "missingProbeIndices": [
+        17,
+        18,
+        19,
+        20,
+        21,
+        22,
+        28,
+        29,
+        30,
+        31,
+        32,
+        33,
+        34,
+        35,
+        36,
+        37,
+        38,
+        39,
+        40,
+        41,
+        42,
+        43,
+        44,
+        45,
+        46,
+        47
+      ]
+    },
+    {
+      "kind": "pin",
+      "id": "leaf-01",
+      "probes": 128,
+      "foundWithin4px": 112,
+      "missingProbeIndices": [
+        27,
+        28,
+        29,
+        30,
+        31,
+        32,
+        33,
+        34,
+        35,
+        36,
+        37,
+        38,
+        39,
+        40,
+        41,
+        42
+      ]
+    },
+    {
+      "kind": "pin",
+      "id": "frog-01",
+      "probes": 128,
+      "foundWithin4px": 111,
+      "missingProbeIndices": [
+        28,
+        29,
+        30,
+        31,
+        32,
+        33,
+        34,
+        35,
+        36,
+        37,
+        38,
+        39,
+        40,
+        41,
+        42,
+        43,
+        44
+      ]
+    },
+    {
+      "kind": "pin",
+      "id": "wood-01",
+      "probes": 128,
+      "foundWithin4px": 128,
+      "missingProbeIndices": []
+    },
+    {
+      "kind": "pin",
+      "id": "flower-02",
+      "probes": 128,
+      "foundWithin4px": 96,
+      "missingProbeIndices": [
+        17,
+        18,
+        19,
+        20,
+        21,
+        22,
+        23,
+        24,
+        25,
+        26,
+        27,
+        28,
+        29,
+        30,
+        31,
+        32,
+        33,
+        34,
+        35,
+        36,
+        37,
+        38,
+        39,
+        40,
+        41,
+        42,
+        43,
+        44,
+        45,
+        46,
+        47,
+        48
+      ]
+    },
+    {
+      "kind": "pin",
+      "id": "wood-02",
+      "probes": 128,
+      "foundWithin4px": 127,
+      "missingProbeIndices": [
+        30
+      ]
+    },
+    {
+      "kind": "pin",
+      "id": "frog-02",
+      "probes": 128,
+      "foundWithin4px": 113,
+      "missingProbeIndices": [
+        22,
+        23,
+        24,
+        25,
+        26,
+        32,
+        33,
+        34,
+        35,
+        36,
+        37,
+        38,
+        39,
+        40,
+        41
+      ]
+    },
+    {
+      "kind": "pin",
+      "id": "leaf-02",
+      "probes": 128,
+      "foundWithin4px": 114,
+      "missingProbeIndices": [
+        24,
+        25,
+        26,
+        27,
+        28,
+        34,
+        35,
+        36,
+        37,
+        38,
+        39,
+        40,
+        41,
+        42
+      ]
+    },
+    {
+      "kind": "pin",
+      "id": "leaf-03",
+      "probes": 128,
+      "foundWithin4px": 114,
+      "missingProbeIndices": [
+        24,
+        25,
+        26,
+        27,
+        28,
+        34,
+        35,
+        36,
+        37,
+        38,
+        39,
+        40,
+        41,
+        42
+      ]
+    },
+    {
+      "kind": "pin",
+      "id": "wood-03",
+      "probes": 128,
+      "foundWithin4px": 116,
+      "missingProbeIndices": [
+        20,
+        29,
+        30,
+        31,
+        32,
+        33,
+        34,
+        35,
+        36,
+        37,
+        38,
+        39
+      ]
+    },
+    {
+      "kind": "pin",
+      "id": "flower-03",
+      "probes": 128,
+      "foundWithin4px": 97,
+      "missingProbeIndices": [
+        17,
+        18,
+        19,
+        20,
+        21,
+        22,
+        23,
+        24,
+        25,
+        26,
+        27,
+        28,
+        29,
+        30,
+        31,
+        32,
+        33,
+        34,
+        35,
+        36,
+        37,
+        38,
+        39,
+        40,
+        41,
+        42,
+        43,
+        44,
+        45,
+        46,
+        47
+      ]
+    },
+    {
+      "kind": "pin",
+      "id": "frog-03",
+      "probes": 128,
+      "foundWithin4px": 113,
+      "missingProbeIndices": [
+        24,
+        25,
+        26,
+        27,
+        28,
+        34,
+        35,
+        36,
+        37,
+        38,
+        39,
+        40,
+        41,
+        42,
+        43
+      ]
+    },
+    {
+      "kind": "pin",
+      "id": "frog-04",
+      "probes": 128,
+      "foundWithin4px": 126,
+      "missingProbeIndices": [
+        33,
+        41
+      ]
+    },
+    {
+      "kind": "pin",
+      "id": "wood-04",
+      "probes": 128,
+      "foundWithin4px": 112,
+      "missingProbeIndices": [
+        21,
+        22,
+        23,
+        30,
+        31,
+        32,
+        33,
+        34,
+        35,
+        36,
+        37,
+        38,
+        39,
+        40,
+        41,
+        42
+      ]
+    },
+    {
+      "kind": "pin",
+      "id": "wood-05",
+      "probes": 128,
+      "foundWithin4px": 112,
+      "missingProbeIndices": [
+        19,
+        20,
+        21,
+        22,
+        23,
+        31,
+        32,
+        33,
+        34,
+        35,
+        36,
+        37,
+        38,
+        39,
+        40,
+        41
+      ]
+    },
+    {
+      "kind": "pin",
+      "id": "flower-04",
+      "probes": 128,
+      "foundWithin4px": 107,
+      "missingProbeIndices": [
+        17,
+        18,
+        19,
+        20,
+        21,
+        22,
+        29,
+        30,
+        31,
+        36,
+        37,
+        38,
+        39,
+        40,
+        41,
+        42,
+        43,
+        44,
+        45,
+        46,
+        47
+      ]
+    },
+    {
+      "kind": "pin",
+      "id": "flower-05",
+      "probes": 128,
+      "foundWithin4px": 111,
+      "missingProbeIndices": [
+        19,
+        20,
+        21,
+        22,
+        23,
+        30,
+        37,
+        38,
+        39,
+        40,
+        41,
+        42,
+        43,
+        44,
+        45,
+        46,
+        47
+      ]
+    },
+    {
+      "kind": "pin",
+      "id": "leaf-04",
+      "probes": 128,
+      "foundWithin4px": 127,
+      "missingProbeIndices": [
+        42
+      ]
+    },
+    {
+      "kind": "pin",
+      "id": "wood-06",
+      "probes": 128,
+      "foundWithin4px": 108,
+      "missingProbeIndices": [
+        17,
+        18,
+        19,
+        20,
+        21,
+        29,
+        30,
+        31,
+        32,
+        33,
+        34,
+        35,
+        36,
+        37,
+        38,
+        39,
+        40,
+        41,
+        42,
+        43
+      ]
+    },
+    {
+      "kind": "pin",
+      "id": "leaf-05",
+      "probes": 128,
+      "foundWithin4px": 128,
+      "missingProbeIndices": []
+    },
+    {
+      "kind": "pin",
+      "id": "frog-05",
+      "probes": 128,
+      "foundWithin4px": 128,
+      "missingProbeIndices": []
+    },
+    {
+      "kind": "pin",
+      "id": "flower-06",
+      "probes": 128,
+      "foundWithin4px": 122,
+      "missingProbeIndices": [
+        20,
+        43,
+        44,
+        45,
+        46,
+        47
+      ]
+    },
+    {
+      "kind": "pin",
+      "id": "flower-07",
+      "probes": 128,
+      "foundWithin4px": 125,
+      "missingProbeIndices": [
+        20,
+        21,
+        44
+      ]
+    },
+    {
+      "kind": "pin",
+      "id": "wood-07",
+      "probes": 128,
+      "foundWithin4px": 109,
+      "missingProbeIndices": [
+        21,
+        22,
+        23,
+        29,
+        30,
+        31,
+        32,
+        33,
+        34,
+        35,
+        36,
+        37,
+        38,
+        39,
+        40,
+        41,
+        42,
+        43,
+        44
+      ]
+    },
+    {
+      "kind": "pin",
+      "id": "wood-08",
+      "probes": 128,
+      "foundWithin4px": 99,
+      "missingProbeIndices": [
+        17,
+        18,
+        19,
+        20,
+        21,
+        22,
+        23,
+        24,
+        25,
+        26,
+        27,
+        28,
+        29,
+        30,
+        31,
+        32,
+        33,
+        34,
+        35,
+        36,
+        37,
+        38,
+        39,
+        40,
+        41,
+        42,
+        43,
+        44,
+        45
+      ]
+    },
+    {
+      "kind": "bucket",
+      "id": "receiver-01",
+      "probes": 128,
+      "foundWithin4px": 117,
+      "missingProbeIndices": [
+        0,
+        1,
+        2,
+        62,
+        63,
+        64,
+        65,
+        124,
+        125,
+        126,
+        127
+      ]
+    },
+    {
+      "kind": "bucket",
+      "id": "receiver-02",
+      "probes": 128,
+      "foundWithin4px": 116,
+      "missingProbeIndices": [
+        0,
+        1,
+        2,
+        3,
+        61,
+        62,
+        63,
+        64,
+        65,
+        125,
+        126,
+        127
+      ]
+    },
+    {
+      "kind": "bucket",
+      "id": "receiver-03",
+      "probes": 128,
+      "foundWithin4px": 117,
+      "missingProbeIndices": [
+        0,
+        1,
+        2,
+        61,
+        62,
+        63,
+        64,
+        65,
+        125,
+        126,
+        127
+      ]
+    },
+    {
+      "kind": "bucket",
+      "id": "receiver-04",
+      "probes": 128,
+      "foundWithin4px": 122,
+      "missingProbeIndices": [
+        0,
+        62,
+        63,
+        64,
+        65,
+        127
+      ]
+    },
+    {
+      "kind": "segment",
+      "id": "far",
+      "probes": 33,
+      "foundWithin4px": 33,
+      "missingProbeIndices": []
+    },
+    {
+      "kind": "segment",
+      "id": "left-1",
+      "probes": 33,
+      "foundWithin4px": 33,
+      "missingProbeIndices": []
+    },
+    {
+      "kind": "segment",
+      "id": "left-2",
+      "probes": 33,
+      "foundWithin4px": 33,
+      "missingProbeIndices": []
+    },
+    {
+      "kind": "segment",
+      "id": "left-3",
+      "probes": 33,
+      "foundWithin4px": 33,
+      "missingProbeIndices": []
+    },
+    {
+      "kind": "segment",
+      "id": "left-4",
+      "probes": 33,
+      "foundWithin4px": 33,
+      "missingProbeIndices": []
+    },
+    {
+      "kind": "segment",
+      "id": "left-5",
+      "probes": 33,
+      "foundWithin4px": 33,
+      "missingProbeIndices": []
+    },
+    {
+      "kind": "segment",
+      "id": "left-6",
+      "probes": 33,
+      "foundWithin4px": 33,
+      "missingProbeIndices": []
+    },
+    {
+      "kind": "segment",
+      "id": "right-1",
+      "probes": 33,
+      "foundWithin4px": 33,
+      "missingProbeIndices": []
+    },
+    {
+      "kind": "segment",
+      "id": "right-2",
+      "probes": 33,
+      "foundWithin4px": 33,
+      "missingProbeIndices": []
+    },
+    {
+      "kind": "segment",
+      "id": "right-3",
+      "probes": 33,
+      "foundWithin4px": 33,
+      "missingProbeIndices": []
+    },
+    {
+      "kind": "segment",
+      "id": "right-4",
+      "probes": 33,
+      "foundWithin4px": 33,
+      "missingProbeIndices": []
+    },
+    {
+      "kind": "segment",
+      "id": "right-5",
+      "probes": 33,
+      "foundWithin4px": 33,
+      "missingProbeIndices": []
+    },
+    {
+      "kind": "segment",
+      "id": "right-6",
+      "probes": 33,
+      "foundWithin4px": 33,
+      "missingProbeIndices": []
+    },
+    {
+      "kind": "segment",
+      "id": "near-divider-1",
+      "probes": 33,
+      "foundWithin4px": 33,
+      "missingProbeIndices": []
+    },
+    {
+      "kind": "segment",
+      "id": "near-divider-2",
+      "probes": 33,
+      "foundWithin4px": 33,
+      "missingProbeIndices": []
+    },
+    {
+      "kind": "segment",
+      "id": "near-divider-3",
+      "probes": 33,
+      "foundWithin4px": 33,
+      "missingProbeIndices": []
+    },
+    {
+      "kind": "drop",
+      "id": "board01-start",
+      "probes": 128,
+      "foundWithin4px": 128,
+      "missingProbeIndices": []
+    }
+  ],
+  "inverseFloor": {
+    "file": "draft-v01-inverse-floor.png",
+    "sha256": "8a287dce959a935d309cc3b447c8c07fd0011950eeaeac041535793827ec418b",
+    "dimensions": [
+      1024,
+      1536
+    ],
+    "scale": 0.7420689582753844,
+    "offset": [
+      -24195.484373706495,
+      -24471.31031008761
+    ],
+    "outputToSourceMatrix": [
+      [
+        1.3475836562737562,
+        -0.15449594764078822,
+        245.96157524496448
+      ],
+      [
+        0.0,
+        0.5639334142325214,
+        291.82483323112865
+      ],
+      [
+        0.0,
+        -0.00020038384908014034,
+        1.1628045105201474
+      ]
+    ],
+    "limitation": "inverse projection rectifies the floor; upright volumes distort and are not reconstructed top-down 3D"
+  },
+  "extraction": {
+    "files": 16,
+    "totalBytes": 5383460,
+    "manifestSha256": "9685f281ef57cd77694a6e33f9ac24567a80ad6601a9a7171bce7d176f2973e4"
+  }
+}
