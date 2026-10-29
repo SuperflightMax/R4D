@@ -1,0 +1,10 @@
+import { mkdirSync } from 'node:fs';
+import { resolve, dirname, basename } from 'node:path';
+import { fileURLToPath } from 'node:url';
+export const root = resolve(dirname(fileURLToPath(import.meta.url)), '..');
+export const board = basename(dirname(root));
+export const runtime = 'E:/R4D/perspective/p5-runtime/builder/transfer-water-dark/' + board;
+export const nativeRoot = 'E:/R4D/perspective/p5-runtime/builder/private-native';
+for(const name of ['temp','cache','output','site','evidence','handoffs']) mkdirSync(resolve(runtime,name),{recursive:true});
+process.env.TEMP=resolve(runtime,'temp');process.env.TMP=process.env.TEMP;process.env.npm_config_cache=resolve(runtime,'cache/npm');
+export const deps={pixi:'D:/dev/millionko/node_modules/.pnpm/pixi.js@8.17.1/node_modules/pixi.js',esbuild:'D:/dev/millionko/node_modules/.pnpm/esbuild@0.25.12/node_modules/esbuild',playwright:'D:/dev/millionko/node_modules/.pnpm/playwright-core@1.60.0/node_modules/playwright-core'};

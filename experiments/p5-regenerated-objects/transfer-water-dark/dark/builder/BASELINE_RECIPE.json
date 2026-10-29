@@ -1,0 +1,42 @@
+{
+  "schema": "r4d.p5.transfer-baseline/1",
+  "board": "dark",
+  "jungleResult": "df0d95f40e60991632c885f0bc53d32497a090e7",
+  "consumer": "af23e124cf5bd1d9de884082ffbc993448217112",
+  "artist": "a5ec68fb2ed6aeacd8c66bc575166567bd0c3966",
+  "method": "Regenerated raster floor/objects/ball/shadows, declared sprite parts and generated-floor clips; existing native ground-depth sorting baseline",
+  "parameterAdaptations": [
+    "Per-board exact P1 projection/translation/config and counts",
+    "Circle and accepted segment-loop footprint bindings; virtual arch art assembly over two existing feet, no collider",
+    "Own runtime/public root and deps/native cache reuse; no Jungle art fallback"
+  ],
+  "methodChanged": false,
+  "jungleLimitsPreserved": [
+    "receiver02/04 entry unverified",
+    "long rails/raised plants/rare contours partial or unverified"
+  ],
+  "sourceCodeFiles": [
+    {
+      "path": "src/controller.mjs",
+      "bytes": 2686,
+      "sha256": "66dc6aa62f66ec4879c5af93ddb8768dbbca45c4b4e3bbbc8220a452bc1fd857"
+    },
+    {
+      "path": "src/app.mjs",
+      "bytes": 12636,
+      "sha256": "bbeeb97827a31d65ff9dd8da00bd08ca50c6cfa1903b236d6705262c4c04368b"
+    },
+    {
+      "path": "src/framing.mjs",
+      "bytes": 1117,
+      "sha256": "b17164ee5fe2abf177149039391bbb0a1680974845328b0b624b365657ab29b6"
+    },
+    {
+      "path": "scripts/build.mjs",
+      "bytes": 6390,
+      "sha256": "38d3deea374f79203035b76a34c7625aae183c787476885d75a8c704aa291e4c"
+    }
+  ],
+  "tokenGranted": false,
+  "serverWrites": 0
+}

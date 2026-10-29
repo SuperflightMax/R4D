@@ -1,0 +1,135 @@
+{
+  "schema": "r4d.p5.dependency-lock/1",
+  "mode": "Read-only installed common native dependencies; no npm install or synthetic npm lockfile",
+  "nodeVersion": "v24.15.0",
+  "installedNativePnpmLockSha256": "471b2ec0c5900a87c2469490b31e9408e9a0ecf2d332366ab9006d8c34566518",
+  "actualBuildInputInventorySha256": "681c2ceb7cfac081782ada8f2035afb6af162f50c5e745291d687b11c5a4f498",
+  "packages": [
+    {
+      "name": "@pixi/colord",
+      "version": "2.9.6",
+      "license": "MIT",
+      "packageJsonSha256": "d92aec39b7b030ebb6419b8ca4da12fd1a9b7bbd12d2979ab019308b417507e8",
+      "licenseFiles": [
+        {
+          "file": "LICENSE.md",
+          "bytes": 1083,
+          "sha256": "7613d4594ee8b6163926af3435dae61c9e3d5a27cd137bd76a543ba40002d8fc",
+          "origin": "exact-repository-supplement",
+          "source": {
+            "repository": "pixijs/colord",
+            "commit": "5344fbf77b736f81cd33c21050021bc09bc9dd1d",
+            "url": "https://github.com/pixijs/colord/blob/5344fbf77b736f81cd33c21050021bc09bc9dd1d/LICENSE.md",
+            "gitBlob": "e437003733acd123c76c2a9df0c13a6f3b02b51e",
+            "publishedArchiveSha256": "53c41fe64870c917d08ccf06cf324c85b03a00b6c08371a06f7b29ff19dded20"
+          }
+        }
+      ]
+    },
+    {
+      "name": "@xmldom/xmldom",
+      "version": "0.8.11",
+      "license": "MIT",
+      "packageJsonSha256": "92dd6ece7aa0321dcb07ece67572c87b564d90aa8edcc1f47f0190701d36465c",
+      "licenseFiles": [
+        {
+          "file": "LICENSE",
+          "bytes": 1298,
+          "sha256": "4da724fc305d81606b245b324d4d2586916b9d248b23d82183df753ace0fdf71"
+        }
+      ]
+    },
+    {
+      "name": "earcut",
+      "version": "3.0.2",
+      "license": "ISC",
+      "packageJsonSha256": "5f529af5e7fae81c5b745fe9e00cedf52cd04ff83f03ad4e37bb5c75fee6c337",
+      "licenseFiles": [
+        {
+          "file": "LICENSE",
+          "bytes": 738,
+          "sha256": "324139c19d87af03fda38afea1590e00ca354c4159bdb2ae9e9cec070cfa46a8"
+        }
+      ]
+    },
+    {
+      "name": "esbuild",
+      "version": "0.25.12",
+      "license": "MIT",
+      "packageJsonSha256": "cb7d5b1fe478f8cbaae566a86031b6fdf5f7d444354f35d1cb3cba9adf6d2935",
+      "buildToolOnly": true,
+      "licenseFiles": [
+        {
+          "file": "LICENSE.md",
+          "bytes": 1069,
+          "sha256": "b40ec5baec7bb34fa5b1c09521fa3cd52d5fad7adafed74932a2010d3612a681"
+        }
+      ]
+    },
+    {
+      "name": "eventemitter3",
+      "version": "5.0.4",
+      "license": "MIT",
+      "packageJsonSha256": "0dd9bc32a77be8238fad41d58aa5b24ccdfee79d8bcf4cbee85f16e3d15c1658",
+      "licenseFiles": [
+        {
+          "file": "LICENSE",
+          "bytes": 1082,
+          "sha256": "3aecc12b1cb28832b5f65ab64291de96568c3f236a74d646281b4491f7bcadbf"
+        }
+      ]
+    },
+    {
+      "name": "ismobilejs",
+      "version": "1.1.1",
+      "license": "MIT",
+      "packageJsonSha256": "fa75a337970c3796eb19f60340a13f301a1a2ead018161753accf7c8de582afd",
+      "licenseFiles": [
+        {
+          "file": "LICENSE",
+          "bytes": 1067,
+          "sha256": "57c43c929cbc20653cb0e62620a413a8bc456888c1874ebc25d08e0122cd953e"
+        }
+      ]
+    },
+    {
+      "name": "parse-svg-path",
+      "version": "0.1.2",
+      "license": "MIT",
+      "packageJsonSha256": "b81ab6d3778b2aabfb84580f04250d72b366af4d7a2bb8041b72c2964b78e890",
+      "licenseFiles": [
+        {
+          "file": "License",
+          "bytes": 1093,
+          "sha256": "2d5ffdfe09268750ba687a149db8392038772e7f156db3a98b615a7de0cab76e"
+        }
+      ]
+    },
+    {
+      "name": "pixi.js",
+      "version": "8.17.1",
+      "license": "MIT",
+      "packageJsonSha256": "c15d57de6b7aaf8976d65e2e33a039b035bffc31a93898aaacdb36701723817a",
+      "licenseFiles": [
+        {
+          "file": "LICENSE",
+          "bytes": 1092,
+          "sha256": "5ce7447bc57f7349ffc48338782fbcabe613696e00712b20d66bc58e780f9473"
+        }
+      ]
+    },
+    {
+      "name": "tiny-lru",
+      "version": "11.4.7",
+      "license": "BSD-3-Clause",
+      "packageJsonSha256": "58a0d04d3958c8a4ce25b93ea1d48d5cd4eef2b0e7835c88a1baf7758575cce6",
+      "licenseFiles": [
+        {
+          "file": "LICENSE",
+          "bytes": 1480,
+          "sha256": "8106f20bacca3558946439afb5e4854333f0a9944eee1c60488aa7ac7fc8f52b"
+        }
+      ]
+    }
+  ]
+}
