@@ -1,0 +1,32 @@
+{
+  "status": "RO_BODY_IDENTITY_MATCH_ONLY",
+  "utc": "2026-10-29T15:13:00.040641+00:00",
+  "sourceHead": "85c6ba48a31712949c7f2df885f82f7edc7f6fd7",
+  "authority": "Separate direct CTO one-GET streamed body identification permission via Lead; closed execution tokens not used",
+  "action": "Exactly one GET /review/; streamed length and SHA256; body discarded",
+  "target": "https://superflight.space/review/",
+  "transport": "vps1-direct / sudo -n -- python3 -B -",
+  "userAgent": "R4D-P3-combined-delivery/1",
+  "execChunkId": "bf8ec6",
+  "sessionId": 55408,
+  "completionChunkId": "a1a2eb",
+  "exitCode": 0,
+  "requestCodeSha256": "bc0850c0f1725a87be87dfe77257b1e31dd2027a49cf9ce36508262cf7e52790",
+  "responseUtc": "2026-10-29T15:12:00.561904+00:00",
+  "knownOldCatalogProvenance": "Immutable combined v1 intent / WRITE_SCOPE before catalog binding; no catalog body read needed",
+  "comparison": "Both streamed size and SHA256 match known old catalog",
+  "limitations": [
+    "Identity of content only for this request context and response UTC.",
+    "Not a retroactive recovery of 14:52 preflight response.",
+    "Not universal security/auth acceptance or authenticated JS MIME/body/UI verification.",
+    "No guard weakening/code correction/source v3/new token/write attempt authorized or performed."
+  ],
+  "requestsPerformed": 1,
+  "bodyOutputOrSaved": false,
+  "redirectFollowed": false,
+  "cookiesOrAuthorizationSent": false,
+  "serverWrite": false,
+  "v1TokenClosedUtc": "2026-10-29T14:36:01Z",
+  "v2TokenClosedUtc": "2026-10-29T14:58:05Z",
+  "window": "RESERVED_P3"
+}
