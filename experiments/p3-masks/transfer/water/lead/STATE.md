@@ -5,7 +5,26 @@ Worktree `E:\R4D\perspective\p3-worktrees\lead`, прежняя branch
 `codex/r4d-p3-masks-lead-01`, исходный clean HEAD
 `b6226c4ed81493273d421001a2202c3a2bc4639e`.
 
-## WATER_FRONT_EDGE_04: TQA PASS, VQA матрица идёт; публикации нет
+## WATER_FRONT_EDGE_04: TQA PASS / VQA PARTIAL; W-DIVIDER-01 triage, публикации нет
+
+Полный Water VQA `42dacf338ba75071269cae1ecb6072e1dabf03be` прочитан и
+интегрирован Lead: [REPORT.md](../visual-qa/front-edge-04/REPORT.md).
+Lead лично посмотрел actual A/B монтаж arch07 и Art+Geometry seed2/t1250.
+W-EARLY-POP-01 локально закрыт для current exact candidate: FULL17dc↔FULL5c,
+одинаковые PNG/renderer/native state, 100%/200%, реальные соседние кадры.
+Исторический defect early frozen не отменяется. Общий visual verdict PARTIAL:
+покрытие экземпляров неполное, W-DIVIDER-01 остаётся OPEN как визуальный вопрос
+связки P3/floor-проекции/принятой 2D-модели. Приёмка всех 71 маски не заявлена.
+Сохранены 550 raw JPEG, 76 выбранных полных JPEG, 7 диагностических монтажей.
+Все семь controls-state совпали, actual UI import воспроизведён; own tabs закрыты.
+
+Для аргументированной классификации Lead после fresh idle адресно возобновил
+Artist на один READ-ONLY разбор W-DIVIDER-01: source/P1 planeCollapse/
+uncertainty, действующие contours/alpha/depth, exact1250 и соседние кадры.
+Результат — короткий W-DIVIDER-01_TRIAGE.md, без новой коррекции/варианта/
+PNG/JSON/native/renderer/browser/rebuild. Возможное правило только описать.
+Общий принятый вход не менять; ни исключительно новую physics ошибку,
+ни исключительно sorting ошибку по одному кадру не назначать. Release idle.
 
 Полный Water TQA `c48236803b18ff2f15e7bead312dc5c0f8966e18` прочитан и
 интегрирован Lead: [water-front-edge-04.md](../technical-qa/reports/water-front-edge-04.md).
