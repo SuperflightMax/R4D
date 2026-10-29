@@ -2,7 +2,21 @@
 
 ## Текущий checkpoint — WATER_FRONT_EDGE_04_FROZEN_FOR_BOTH_INDEPENDENT_QA
 
-### Временный read-only original FULL baseline для честного A/B
+### Временный original FULL A/B preview — ЗАКРЫТ ПОСЛЕ ЧТЕНИЯ
+
+Lead/VQA явно завершили OLD6870 чтение и сняли read-hold. 11:52:26Z остановлен
+ТОЛЬКО owned PID17380/session14523 после повторного exact command/root и
+127.0.0.1:6870 listener proof. Owned process exited; PID17380 и listener6870
+после stop отсутствуют. Old FULL bundle/raw/history сохранены, manifest b3c69767
+не изменился. Water6868/PID29572 и Dark6869/PID37660 остались на прежних roots;
+оба HTTP200 и local/HTTP manifest hashes de1344af...ce2c6/b3923f4c...d0307 совпали.
+Ownership evidence вне payload: water/evidence/ab-full-baseline-03/
+preview-stop-6870.json и current-previews-after-6870-stop.json.
+Fresh11:50:13Z: RAMfree16.136/31.907GiB, CPU0%, C16.099/D16.268/E11.690GiB.
+Никаких rebuild/payload edits/delete/cleanup/current-port изменений не было.
+Новый Dark variant не собирался. После commit/push — idle; server_write=false.
+
+История запуска и изолирующей привязки:
 
 По конкретному поручению Lead запущен дополнительный owned loopback preview
 УЖЕ СУЩЕСТВУЮЩЕГО immutable full-method-03, без rebuild или edits payload:
@@ -27,11 +41,10 @@ run-model/view-math/native-core, accepted config/manifest/projection, source JPG
 и Pixi совпадают побайтно. Изменены только24 arch depth records и служебные
 provenance/replay-menu записи. Это identity-проверка, не новый полный QA old.
 
-VQA после текущего Dark смотрит соседние Water seed1/1014–1016 и1020–1022
-старого FULL и corrected внутри одного Water-прохода. W-EARLY-POP-01 остаётся
-открытым до независимого отнесения/закрытия. Все frozen bytes неизменны.
-Третий preview6870 держать ДО ЯВНОГО завершения чтения Lead/VQA; затем Builder
-безопасно остановит только свой PID после свежего command/root/port proof.
+По явному сообщению Lead независимый VQA full17dc↔5c A/B подтвердил локальное
+исправление W-EARLY-POP-01 и равенство parstates/73PNG. Formal full Water QA
+ещё идёт; это не полный PASS. VQA закрыла свою old вкладку, сервер не трогала.
+Все frozen bytes неизменны. Read-hold6870 снят; stop выполнен с proof выше.
 Fresh system-wide перед стартом11:18:09Z: RAMfree16.645/31.907GiB, CPU0%,
 C17.035/D16.275/E11.763GiB. Port6870 был свободен; bind exclusive127.0.0.1.
 Дополнительный idle Node preview оценён <0.1GiB RAM и несколькими KiB evidence.
@@ -49,7 +62,8 @@ Lead прямо изменил порядок: оформить full frozen cand
 Freeze record вне payload:
 E:\R4D\perspective\p3-runtime\builder\transfer-water-dark\water\candidates\water-front-edge-04.freeze.json.
 
-W-EARLY-POP-01 ОТКРЫТ до независимого comparative retest, а не закрыт selfcheck.
+W-EARLY-POP-01: по сообщению Lead независимый full A/B VQA подтвердил локальное
+исправление; formal full Water QA продолжается. Selfcheck не выдаётся за QA PASS.
 Формальная исходная VQA:26295340cafa78ea8bffe09e8005badda220d731,
 experiments/p3-masks/transfer/water/visual-qa/early-art-02/REPORT.md.
 Нового установленного существенного selfcheck-дефекта для front-edge-04 нет.
