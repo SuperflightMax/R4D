@@ -1,0 +1,193 @@
+{
+  "schema": "r4d.p5.recovery-receipt/1",
+  "measuredUtc": "2026-10-29 08:55:30 UTC",
+  "trigger": "CTO requested continuation of interrupted existing P5 only after manual Codex restart",
+  "lead": {
+    "threadId": "01a1842d-adc3-7201-8c2f-7f9575838e0e",
+    "previousInterruptedTurn": "01a18495-a12e-7a02-b7b2-fa7d0f50a2e7",
+    "recoveryTurn": "01a186dc-2aea-72a2-b12f-c8ac7c0ac2e6",
+    "initialHead": "3c2105820d8dbefc971fe97fc7086f743b9b9721",
+    "branch": "codex/r4d-p5-regenerated-lead-01",
+    "status": "clean; no WIP to overwrite",
+    "completedAssignedActions": [
+      "Own HEAD/branch/status/diff/checkpoint inspected",
+      "Saved committed RESULT and QA/source pins read",
+      "Exact Git document bytes/SHA256 collected without rerunning product checks"
+    ]
+  },
+  "release": {
+    "threadId": "01a1842d-ddd8-7b20-a27a-2ebc52ecea57",
+    "previousInterruptedTurn": "01a18537-2eee-7c41-a032-ab2b84281223",
+    "freshPreSendStatus": "notLoaded; latest turn interrupted; no recovery present",
+    "continuationCount": 1,
+    "recoveryTurn": "01a186dd-d379-7011-ab7d-daa6796e2048",
+    "firstCompletedMarker": {
+      "id": "exec-903997fe-a80d-4a57-8199-e3c19e83dd80",
+      "type": "commandExecution",
+      "status": "completed",
+      "exitCode": 0
+    },
+    "firstCommentary": "Restore own HEAD/branch/status and local receipts, finish saved draft; no repeated SSH/HTTP/inventory/product QA"
+  },
+  "sendReceipt": {
+    "tool": "mcp__codex_app__send_message_to_thread",
+    "targetThreadId": "01a1842d-ddd8-7b20-a27a-2ebc52ecea57",
+    "hostId": "local",
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"threadId\":\"01a1842d-ddd8-7b20-a27a-2ebc52ecea57\"}"
+        }
+      ],
+      "isError": false
+    },
+    "measuredImmediatelyAfterSendUtc": "2026-10-29 08:54:07 UTC"
+  },
+  "completedDocumentPins": [
+    {
+      "id": "leadResult",
+      "commit": "3c2105820d8dbefc971fe97fc7086f743b9b9721",
+      "path": "experiments/p5-regenerated-objects/coordination/RESULT.md",
+      "blob": "a8a5a7211ca3ba131efa44ec8dc48233965f315c",
+      "bytes": 12409,
+      "sha256": "0b7cddfbfbe045e6744fd5029fee80b5bf92f4b0a7a8f8469048db73c3509af4"
+    },
+    {
+      "id": "tqa",
+      "commit": "9b2eb998ea6aba6272097b955e0a53d97234dbd9",
+      "path": "experiments/p5-regenerated-objects/qa/technical/REPORT_C03.md",
+      "blob": "a4627427c024f48b9dbd30df4061b70852085d1c",
+      "bytes": 14448,
+      "sha256": "47d8e27d4a68cf84c2fc73183e819fc8f5f994c92fddd5ca908c21f9e9173c0f"
+    },
+    {
+      "id": "vqa",
+      "commit": "e227f3874c19539b7d38f0b8d318a911e7db2915",
+      "path": "experiments/p5-regenerated-objects/qa/visual/REPORT_C03.md",
+      "blob": "5bf3afc5cde2d2a9fed8e6abb82a7e7f453bfb84",
+      "bytes": 11087,
+      "sha256": "e1d781390f21a0a77d1140d5279579dceb80f93b4c6672f60ff35b2519006214"
+    },
+    {
+      "id": "builderHandoff",
+      "commit": "12e02702480ff84bf8ade352375bfb2797a6d0b0",
+      "path": "experiments/p5-regenerated-objects/builder/HANDOFF_C03.md",
+      "blob": "bff41e1f70e84ab16cd96beaf8d127e0878577f2",
+      "bytes": 10211,
+      "sha256": "fafa6bdce387067d0abda21148e591a089961be4d3e2e2881ddf8083182fdb26"
+    },
+    {
+      "id": "artistHandoff",
+      "commit": "a5ec68fb2ed6aeacd8c66bc575166567bd0c3966",
+      "path": "experiments/p5-regenerated-objects/asset-artist/HANDOFF_MINI_03.md",
+      "blob": "eda33b90fbe5caaee83307f4cac56a9a14194fb4",
+      "bytes": 4796,
+      "sha256": "817c9566a6c2de2447e3b25ffba0ca16bd86d0d5dfe77cd8fa3f087cb6d92f89"
+    },
+    {
+      "id": "artistManifest",
+      "commit": "a5ec68fb2ed6aeacd8c66bc575166567bd0c3966",
+      "path": "experiments/p5-regenerated-objects/asset-artist/asset-manifest.mini-03.json",
+      "blob": "9f58fd420d92cb0d11e10ffcfc43907d83bdd3f9",
+      "bytes": 89838,
+      "sha256": "a083143b199f78cefe2725907b91385145cb9c29067ad319dd862974a13714a0"
+    },
+    {
+      "id": "localPreflight",
+      "commit": "6c08ddd4db346bc70b1e65925497e23072400d59",
+      "path": "experiments/p5-regenerated-objects/release/PREFLIGHT_C03.md",
+      "blob": "5568e1dccb905de89af3f6a5ea9b7e61ae947627",
+      "bytes": 7958,
+      "sha256": "0a951cda2dfc401734110b1de648a23d13a4591de6f23c777354c6eeb8752976"
+    }
+  ],
+  "releaseCompletion": {
+    "commit": "8236f5f5c563ebdd33849a60ef64dfee823674e4",
+    "status": "completed/pushed; clean; STOP/idle",
+    "initialHead": "6c08ddd4db346bc70b1e65925497e23072400d59",
+    "initialStatus": [],
+    "preservedPriorFiles": [
+      {
+        "name": "metadata-read.json",
+        "bytes": 302,
+        "sha256": "9847a9242fb02d5f57bd171b37a86fb7cbb92fb8803fdae36ea37823e21f2b10"
+      },
+      {
+        "name": "review.locations.conf",
+        "bytes": 955,
+        "sha256": "359de106d9291f1aa8d265f3cd8c7c9aefc7703de850e9cd7ef531458a271ac9"
+      },
+      {
+        "name": "review.locations.proposed.conf",
+        "bytes": 957,
+        "sha256": "e2a466db57830bddb9003361028f99c132504ed3e12a632918898cd6c2a51224"
+      },
+      {
+        "name": "server-metadata.json",
+        "bytes": 732,
+        "sha256": "c4a2d0cc6bd55fdeb1467c2d922519167a419048d6e46effdfb3eb7dbb7b29b4"
+      },
+      {
+        "name": "snippet-read.json",
+        "bytes": 304,
+        "sha256": "3a7dfb662db92205db786acb9617ec52c7859e11751bd0c5af56bb1e24ea44ee"
+      }
+    ],
+    "checkpoint": {
+      "path": "E:\\R4D\\perspective\\p5-runtime\\release-engineer\\output\\c03-cto-review-01\\recovery-checkpoint.json",
+      "bytes": 1566,
+      "sha256": "df033b148cd3c92cf9ce5e4a8725457fbd8acd67fa2910cb2551b4e0b183a73e",
+      "utc": "2026-10-29T08:54:38.1872271Z",
+      "head": "6c08ddd4db346bc70b1e65925497e23072400d59",
+      "branch": "codex/r4d-p5-regenerated-release-engineer-01",
+      "status": []
+    },
+    "completedActions": [
+      "Verified own HEAD/branch/status/WIP0 and preserved five existing evidence files",
+      "Recorded append-only local recovery checkpoint",
+      "Completed and pushed local CTO draft and nonsecret receipt index",
+      "No repeated server reads or product/build/QA checks"
+    ],
+    "documentPins": [
+      {
+        "id": "CTO_DELIVERY_REVIEW_C03.md",
+        "commit": "8236f5f5c563ebdd33849a60ef64dfee823674e4",
+        "path": "experiments/p5-regenerated-objects/release/CTO_DELIVERY_REVIEW_C03.md",
+        "bytes": 17414,
+        "sha256": "19b027edb526250bdf8a58ada245e8060fbab36788218657c878819402fd9f60",
+        "blob": "8423b3447b082df70c7a97ff591c24dd1b8a12c4"
+      },
+      {
+        "id": "CTO_DELIVERY_REVIEW_C03_RECEIPTS.json",
+        "commit": "8236f5f5c563ebdd33849a60ef64dfee823674e4",
+        "path": "experiments/p5-regenerated-objects/release/CTO_DELIVERY_REVIEW_C03_RECEIPTS.json",
+        "bytes": 3584,
+        "sha256": "f1ebf6d3ff58803c12e5b5d2d3113632a2c78c164a1b0542a842e86347d8fae7",
+        "blob": "db90ce07ee10b888c6a046252d8ce0b1317ac91b"
+      }
+    ],
+    "receiptNewlineIdentity": {
+      "canonicalGit": {
+        "bytes": 3584,
+        "sha256": "f1ebf6d3ff58803c12e5b5d2d3113632a2c78c164a1b0542a842e86347d8fae7"
+      },
+      "workingTree": {
+        "bytes": 3686,
+        "sha256": "f031286729f298ef44c79fe0305f7da61105410c1fff5e59f5b29956ebe25389"
+      },
+      "crlfToLfEqualsGit": true,
+      "jsonEqual": true
+    }
+  },
+  "constraints": {
+    "resultRewritten": false,
+    "productChecksRepeated": false,
+    "otherCompletedRolesWoken": false,
+    "newRolesWorktreesSubagents": false,
+    "serverWrites": 0,
+    "newServerReadsInRecovery": false,
+    "releaseToken": "absent",
+    "next": "CTO exact review; separate complete local-intent preparation and later single-use token if authorized; Lead/Release STOP/idle"
+  }
+}
