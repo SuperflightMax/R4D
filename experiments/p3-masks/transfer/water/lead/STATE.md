@@ -65,6 +65,18 @@ Dark [текущий STATE](../../dark/lead/STATE.md): targeted TQA/VQA идут
 
 ## Публикационный gate — STOP V2 PREFLIGHT PROTECTION MISMATCH; server writes=false
 
+LATEST: CTO закрыл V2 token 2026-10-29T14:58:05Z. Оба auth-файла исторические,
+все write-фазы запрещены, window RESERVED P3. Exact STOP result/guard1b3
+полностью прочитан и merged Lead. Один RO diagnosis turn
+01a1882c-beea-7050-8879-cbc7f80a7125 active/errornull, тот же Release6.1-sol/xhigh
+после fresh idle. Последнее CTO уточнение заменило logs-only часть: не искать
+logs/proc/configs, сперва own existing exact3ответа, иначе ОДИН набор3GET
+samevps1-direct/HTTPSsuperflight.space/UA R4D-P3-combined-delivery/1:
+/review/normal, /review/Originhttps://example.invalid, /review/.p3-combined-probe.
+UTC/status/теже7headers; noauth/cookies/newheaders/redirect/body保存; внешний
+отказSTOP безвторогоподхода. Это отдельное новое RO разрешение CTO,
+неclosedtoken/preflightreplay. ТолькоsteeringтогожеROtask, ниv3code, ниwrite.
+
 CURRENT14:54Z: actual V2 preflight14:52:25.7965330Z STOP:
 prewrite protection differs; failed exec-74a0bedb-1040-4f9c-b598-5bc0fe3db413 exit1.
 HTTPhelper выполнился, но guard[303,403,404] не совпал; concrete statuses
@@ -74,7 +86,7 @@ Release не повторяетфазу/HTTP, неменяетcode/guards, со�
 ROguard14:54:02Z/euid0: old674/88/allmetadata/manifest/snippet unchanged,
 newroot/backup/temp/archive absent. CTO уведомлён, v2revoke запрошен; до
 отдельногорешения никакогоexecution/correction/HTTPdiagnostic задания нет.
-Предложен только boundedRO三GETdiagnostic послеCTOсогласия/freshReleaseidle,
+Предложен только bounded RO diagnostic послеCTOсогласия/freshReleaseidle,
 безbodies/config/auth/cookies, неphase-replay. Frozen/archive неизменны.
 
 ### История v2 authorization и первого запуска

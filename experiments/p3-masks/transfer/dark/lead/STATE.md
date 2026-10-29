@@ -107,6 +107,11 @@ partial overlap. Это selfcheck/наблюдение Lead, не независ
 
 ## Следующий gate
 
+LATEST: CTO CLOSEDv2token14:58:05Z; обоиеhistoricalauth неиспользовать.
+Один ROdiagturn01a1882c-beea-7050-8879-cbc7f80a7125 active уexistingRelease,
+последнийCTOscope разрешилoneexact3GETsamecontext, безlogs/config/auth/body.
+ЭтоотдельнаяROдиагностика, neverwrite/replay. WaterSTATE содержитполныеусловия.
+
 CURRENT14:54Z: V2preflight STOPprewriteprotectiondiffers доfirstwrite,
 конкретныеHTTPstatuses неизвестны. Beginнебыло; ROguardoldbaselineunchanged,
 targetsabsent. CTOуведомлён, v2revokeзапрошен; furtherexecution неразрешать.
