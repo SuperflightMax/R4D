@@ -107,6 +107,11 @@ partial overlap. Это selfcheck/наблюдение Lead, не независ
 
 ## Следующий gate
 
+CURRENT14:52Z: новый exactV2token issued CTO14:48:58Z, firstwriteDeadline15:48:58Z.
+Freshidle подтверждён; один executionturn01a18825-089e-7d20-8bf2-2fd705358fb9 active,
+тотжеRelease6.1-sol/xhigh. Token/точныеhashes/guards в WaterSTATE. Публикация ещё
+неподтверждена; ждатьactualswitch/postchecks/document, затемhandoffCTO.
+
 V1publication preflight14:31:55Z остановился наhttp namespace error доfirstwrite.
 CTO закрылv1token14:36:01Z; использоватьнельзя, сервернеизменён. ТотжеRelease
 готовитединственнуюотдельнуюlocalv2 alias/runtime-smoke; старыеreceipts,

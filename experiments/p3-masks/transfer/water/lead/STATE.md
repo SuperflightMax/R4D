@@ -63,9 +63,25 @@ OldDark6869 PID37660/session87426 сохраняется для коротког
 Dark [текущий STATE](../../dark/lead/STATE.md): targeted TQA/VQA идут;
 не повторяют автоматически прежнюю полную матрицу/native build.
 
-## Публикационный gate — пока server_write=false
+## Публикационный gate — authorized V2 execution in progress
 
-### Текущий приоритет: v1 STOP до firstwrite; token CLOSED; local successor-v2
+CURRENT14:52Z: CTO выдал НОВЫЙ exact token
+CTO-P3-WD04-V2-20261029T144858Z-91df426327f8,
+authoritative E:\R4D\perspective\coordination\p3-water-dark-front-edge-04-token-2026-10-29-v2.json
+SHA5023100a4f8271594cb973db5feae97035677c8ccb467a0f41f9b86203b1c961.
+Root полностью прочитал/проверил file/hash/bindings; independent actualUTC
+14:52:21.351600Z < firstwriteDeadline15:48:58Z PASS. CTO fullread/review принял.
+Послеfreshidle/completed/errornull Root отправил РОВНО ОДНУ отдельную executionV2
+команду existingRelease6.1-sol/xhigh. Actualturn01a18825-089e-7d20-8bf2-2fd705358fb9
+active/errornull; firstcompleted exec-07bb68c4-6d18-4ae8-84ae-617ca034aa26 exit0
+(full auth read/git exact5bc). ТолькоRelease может выполнить authorizedserverwrite;
+Root неисполнитель. Freshresources/euid/fullbaseline/absent-target preflight и
+currentUTC guard передbegin обязательны; execution-v2 serial, docs-prefix before/
+after proof обязателен. Scripts/scope/archive/frozen неизменны. Фазовыхreceipts ещё
+нет, LIVE не заявлять доswitch/postchecks/document. Старыйv1token CLOSED остаётся.
+Token/window/slot закрывает CTO после полногоdelivery, неRelease/Root.
+
+### История: v1 STOP до firstwrite; v1 token CLOSED; local successor-v2
 
 CTO tokenCTO-P3-WD04-20261029T142713Z-ae0b1054d192 был выдан по reviewedv1,
 но ЗАКРЫТ CTO в2026-10-29T14:36:01Z. Исторический authorization-file не менять
