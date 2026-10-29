@@ -1,307 +1,115 @@
-# P3 Water — состояние Lead
+# P3 Water — текущее состояние Lead
 
-29 октября 2026. Actual Lead turn `01a186fa-2fef-7ff2-8083-4a9fa83f9883`.
-Worktree `E:\R4D\perspective\p3-worktrees\lead`, прежняя branch
-`codex/r4d-p3-masks-lead-01`, исходный clean HEAD
-`b6226c4ed81493273d421001a2202c3a2bc4639e`.
+29 октября2026. Lead staff_id: lead-r4d-p3-masks-01.
+Actual transfer start turn:01a186fa-2fef-7ff2-8083-4a9fa83f9883.
+Worktree E:\R4D\perspective\p3-worktrees\lead, branch codex/r4d-p3-masks-lead-01.
+Исходный clean HEAD b6226c4ed81493273d421001a2202c3a2bc4639e.
+C6603f0f327350172df44687a4d4ead19e0e5e6b transfer-order blob37be178… прочитан
+полностью всеми ролями. Прямой старт Max/Dot09:04/09:13 и Stage2 CTO действуют;
+устаревшая очередь переопределена только административно. Новых ролей/веток нет.
 
-## WATER_FRONT_EDGE_04: TQA PASS / VQA PARTIAL; W-DIVIDER-01 triage, публикации нет
+## BOUNDED WATER RESULT COMPLETE — Technical PASS / Visual PARTIAL
 
-Полный Water VQA `42dacf338ba75071269cae1ecb6072e1dabf03be` прочитан и
-интегрирован Lead: [REPORT.md](../visual-qa/front-edge-04/REPORT.md).
-Lead лично посмотрел actual A/B монтаж arch07 и Art+Geometry seed2/t1250.
-W-EARLY-POP-01 локально закрыт для current exact candidate: FULL17dc↔FULL5c,
-одинаковые PNG/renderer/native state, 100%/200%, реальные соседние кадры.
-Исторический defect early frozen не отменяется. Общий visual verdict PARTIAL:
-покрытие экземпляров неполное, W-DIVIDER-01 остаётся OPEN как визуальный вопрос
-связки P3/floor-проекции/принятой 2D-модели. Приёмка всех 71 маски не заявлена.
-Сохранены 550 raw JPEG, 76 выбранных полных JPEG, 7 диагностических монтажей.
-Все семь controls-state совпали, actual UI import воспроизведён; own tabs закрыты.
+[RESULT](RESULT.md) содержит применённый рецепт, доказательства и решение Lead.
+[BASELINE](BASELINE.md) сохраняет исходный метод и точный P1 до переноса.
+Water candidate water-front-edge-04:
+SOURCE5196c0bd4981992c4e3d9678438aed1aa1c0d84c,
+ART5c9ba8c640b344094e0ada7c4ed6c9ec076550e5, variant arch-front-edge-01.
+Bundle E:\R4D\perspective\p3-runtime\builder\transfer-water-dark\water\front-edge-04.
+Manifest SHA256 de1344afcb197115b76cb4006ead3d96e7b2581a1a299df1100d7a552d2ce2c6.
+100payload/3561039bytes+manifest17208;101total files/3578247bytes.
+Builder handoff017c6d7756aa99ef13ec941ff1b86aaa36ec4455 и actual freeze прочитаны
+полностью, manifest независимо совпал. SourceJPG/P1 board04 trial02 candidate02,
+native5a6fa03/compiledaf8 и app760c9bad неизменны; все полные SHA в QA/BASELINE.
 
-Для аргументированной классификации Lead после fresh idle адресно возобновил
-Artist на один READ-ONLY разбор W-DIVIDER-01: source/P1 planeCollapse/
-uncertainty, действующие contours/alpha/depth, exact1250 и соседние кадры.
-Результат — короткий W-DIVIDER-01_TRIAGE.md, без новой коррекции/варианта/
-PNG/JSON/native/renderer/browser/rebuild. Возможное правило только описать.
-Общий принятый вход не менять; ни исключительно новую physics ошибку,
-ни исключительно sorting ошибку по одному кадру не назначать. Release idle.
+Полный TQA c48236803b18ff2f15e7bead312dc5c0f8966e18 прочитан и интегрирован,
+CTO принял результат в проверенном объёме:101files local/HTTP/MIME,8runs/
+8491fullstates+orderedhits,90browser samples, actual JSON roundtrip/negative/
+replay/seek/controls.43screenshots/8checkpoints/172rawindex. Art PASS не выдан.
+Полный VQA42dacf338ba75071269cae1ecb6072e1dabf03be прочитан и интегрирован;
+Lead лично посмотрел actual FULL A/B и Art+Geometry1250. Verdict PARTIAL.
+W-EARLY-POP-01 локально закрыт для current04,1006–1022/100%/200%/same native.
+550rawJPEG/76selectedJPEG/7montages, первые3ordinary без отсева сохранены.
+Все own QA tabs закрыты. Water full QA повторно не выдавать.
 
-Полный Water TQA `c48236803b18ff2f15e7bead312dc5c0f8966e18` прочитан и
-интегрирован Lead: [water-front-edge-04.md](../technical-qa/reports/water-front-edge-04.md).
-TechnicalPASS в проверенном объёме:101local/HTTPbodies+MIME,82Git-linked files,
-8distinctruns/8491fullnative states+orderedhits,90browser samples(88snapshots+
-2actualdownloads),11shippedCP.43actual screenshots/8checkpoints/172rawindex.
-Первые3UIseed2567603743→LOST1448,2664424314→LOST733,4133151857→LOST587;
-никакойотсев не выполнялся. Ровно24archdepth/47otherregions/73PNG/renderer
-относительноFULL17dc проверены independently; все16frontedgesderived.
-Общегоart/mappingPASS нет. TQA own Watertab закрыта; preview сохранены.
+W-DIVIDER-01: seed2/t1250, sphere на светлой поверхности междуreceiver01/02.
+Полный Artist triage cb8e8691ead826af21a2a4de93fb8dbb5ef07345 прочитан Lead.
+Receiver-divider-1 активен, depth-off нет; у центра/floor-точки alpha всех71
+маски0, соседний корпус покрыт. PlaneCollapse не задаёт единственной семантики
+склона/корпуса. Решение Lead: OPEN как известное ограничение P3coverage+
+пространственной неоднозначности accepted2D, без единственной виныP1/physics/
+sorting. Одной depth-поправки недостаточно; нового data-цикла не поручать.
+Результат Water готов для bounded Review, общий художественный PASS не дан.
 
-VQA предварительно независимо подтвердила локальное исправление W-EARLY-POP-01
-на PNG-equalFULL A/B:1015partial,1020–1022 без сопоставимого резкого раскрытия,
-pairednative states exact. Полный formal Waterreport ещё не выдан; прочаяmatrix
-продолжается, эти слова не являются full artisticPASS/готовностьюRelease.
-VQA первые3ordinaryUI:1176389091→LOST990,756668326→LOST591,
-3361762279→LOST1476, все сохранены. Отдельно TQA/VQA подтвердили видимый
-конфликт seed2/t1250 поверх painteddivider передreceiver02; вопросP3/mapping
-остаётся незакрытым, не объявлен исправленным24archdepth. Lead лично посмотрел
-actualTQAframes1250/1275; на1275 шар виден внутриводы, nativeIN_BUCKET.
+## Сохранённая история и локальные процессы
 
-Builder завершил свою выдачу и сохранил candidate `water-front-edge-04`:
-handoff `017c6d7756aa99ef13ec941ff1b86aaa36ec4455` полностью прочитан Lead,
-включая STATE/RECIPE и actual freeze record. Bundle
-`E:\R4D\perspective\p3-runtime\builder\transfer-water-dark\water\front-edge-04`.
-100payload/3561039bytes, manifest17208bytes, всего101files/3578247bytes.
-ManifestSHA `de1344afcb197115b76cb4006ead3d96e7b2581a1a299df1100d7a552d2ce2c6`
-независимо совпал у Lead. SOURCE5196c0bd…/ART5c9ba8c…/variantprefix ниже.
-URL `http://127.0.0.1:6868/review/r4d/p3-masks-water/`, owner Builder
-PID29572/session61378. Dark6869/PID37660/session87426 сохранён.
-Freeze10:55:54.757UTC, finding W-EARLY-POP-01 открыт до independent retest.
+Baseline метода: Jungle frozen CODEf1aca21e7b9ba19001e7e8762fcaf2511bf9bf74 /
+ARTf899a308aed156a11e2a1013292ed68c6669959d /
+manifest e2e9f7d837b3d05f484f75a877af6992a70ee88363add783d80f3c6e206f431f.
+Jungle PARTIAL/MAP-01/post-auth не переоткрывались и не заменяются PASS.
+Water early ART4eb/f3b7 source, formal early VQA26295340 сохранены.
+FULL17dc/c73, manifestb3c697675ecd76af7848fa72367f943c1b9e4a27b325b098a9fef08135fe58d3
+сохранён в Builder water/full-method-03. Artist provenance731bad21509b9a8f7022a4df4a2961ced8b49275
+прочитан: early→FULL менялись alpha3arch07,466sourcepixels union; FULL17dc→5c
+PNG exact и24arch depth records. Весь early→current не объявлять24-only.
 
-Точный полный handoff последовательно отправлен обеим QA после fresh latest:
-TQA Dark была completed/idle, поэтому начат отдельный Water turn
-`01a1875a-1de3-7c30-8f8f-bf7deb4cc50c`, его полныйотчёт/handоff завершены.
-VQA Dark `01a18736-3abe-7692-b507-77fe05a87176` завершила отдельный report
-`2d40b3f31341bbf57fd2df76aa6637a3f1a303e8` (Dark D-POP-01, неWaterfinding),
-закрылаDarktab и перешла к Water. Оба handoff send isError=false,
-runtime6.1-sol/xhigh; без нового ACK и без параллельного дубля.
-W-EARLY-POP retest — первый раздел полного Water VQA, затем остальная matrix
-на тех же exactbytes. Формальный fullWater VQAreport/PASS пока не выдан;
-localretest предварительно подтверждён выше, с отдельной shadow оговоркой.
+Current Water6868 PID29572/session61378 держит Builder на de134 frozen.
+OldWaterFULL6870/PID17380/session14523 ЗАКРЫТ11:52:26Z после explicit VQA/Lead
+read-complete и fresh command/root/port proof. Handoffd9c17cf90a958600d5ad3b5ca9ec6cf3eaaba1fd
+прочитан/интегрирован; files/raw/history сохранены, процесс/listener отсутствуют.
+ТЕПЕРЬ6870 — НОВЫЙ DARK04, PID15752/session31501, rootdark/receiver-front-edge-04,
+manifestd180e5a6…ed1b. Не смешивать с закрытым Water процессом.
+OldDark6869 PID37660/session87426 сохраняется для короткого Dark A/B.
+Dark [текущий STATE](../../dark/lead/STATE.md): targeted TQA/VQA идут;
+не повторяют автоматически прежнюю полную матрицу/native build.
 
-Дополнительный provenance контроль Lead нашёл различие PNG blob между
-early4eb и firstfull17dc. Ball/shadow metadata и6из7region records совпали;
-arch07 lintel cropheight111→110. Artist адресно возобновлён read-only:
-turn `01a18757-8481-7040-a9ba-3a6ba269076b`, без edits текущих payload.
-Полный [PROVENANCE_COMPARE.md](../asset-artist/PROVENANCE_COMPARE.md), commit
-`731bad21509b9a8f7022a4df4a2961ced8b49275`, прочитан и интегрирован Lead.
-Unionalpha3arch07 masks отличается в466source pixels из-за порядка
-масштабирования/отсечения при full authoring; остальные4early masks идентичны.
-Cropheight111→110 не объясняет отличие: source-aligned alpha реально отличается.
-От17dc→5c9 PNG точные, ровно24depth меняются — это отдельный факт.
-Нельзя объявлять ВЕСЬ early4eb→current5c9 переход только depth-коррекцией.
+## Публикационный gate — пока server_write=false
 
-Для изолированного A/B Builder после fresh idle адресно вызван на ОДИН
-дополнительный временный read-only loopback preview существующего original
-full-method-03 (SOURCEc73/ART17dc/manifestb3c697…). Handoff
-`d4a99ac1586fbc0c026c6d6150a91f153003a68b` полностью прочитан и интегрирован.
-Actual URL `http://127.0.0.1:6870/review/r4d/p3-masks-water/`, owner Builder
-PID17380/session14523.97payload/3470168bytes, manifest16695bytes, всего98files/
-3486863bytes; все97local+HTTP/hash/MIME совпали. Builder независимо подтвердил
-73PNG, app/run-model/view-math/native/P1/JPG/Pixi byte-equal между обеими FULL.
-Rebuild/изменения bytes не было;6868current/6869Dark не переключались.
-Actual baseline URL и binding были адресно отправлены VQA: только несколько
-comparative frames, не второй полный QA old. VQA явно завершилачтение6870 и
-закрылаoldtab, Lead снялreadhold. Builder после fresh command/root/port proof
-остановил ТОЛЬКО PID17380/session14523 в11:52:26Z, PID/listener отсутствуют.
-Handoff `d9c17cf90a958600d5ad3b5ca9ec6cf3eaaba1fd` прочитан/интегрирован;
-oldFULLbundle/raw/history сохранены,6868/6869HTTP200+exactmanifests неизменны.
-Fresh Builder11:18:09Z RAMfree16.645/31.907GiB CPU0% C17.035/D16.275/E11.763;
-extra owned idle Node<0.1GiB RAM. Старые previews остаются на своих bytes.
-Текущие проверки нового stablecandidate и Dark эта provenance задача не блокирует.
+Release idle. До завершённого Dark bounded RESULT/QA нового SSH-аудита,
+пакета/intent/staging/upload/lock/service действий не начинать.
+CTO явно закрыл P5 token/window2026-10-29T10:55:12Z, активных writers тогда нет;
+следующее окно зарезервировано P3. Предпочтение CTO: ОДИН combined local intent/
+одно окно для двух самостоятельных sibling pages/artifacts/verdicts:
+/review/r4d/p3-masks-water/ и /review/r4d/p3-masks-dark/.
+Ранний Release plan1cf782e83c5e0aec0f80feeb9bc9693028a7fb5b — история шаблонов,
+не право на два отдельных writes. Новый exact CTO token обязателен.
 
-Операционное уточнение CTO: P5 writewindow/token явно закрыт
-**2026-10-29T10:55:12Z**, активных serverwriters нет. Следующее окно
-резервируется под P3 после двух bounded results/independent QA и нового token.
-CTO предпочитает ОДИН полный local intent/одно окно для двух отдельных sibling
-prefixes/артефактов/вердиктов. Предыдущие per-board release templates — история
-плана, не разрешение двух самостоятельных writes. Сейчас server_write=false;
-новый аудит/SSH/пакет до готовности обоихboundedresults/QA не нужен и не запущен.
+Expected opaque pointer, НЕ fresh guard:
+/srv/superflight-review/releases/p5-jungle-regenerated-candidate-03,
+674files/88dirs/122587862bytes; snippet957bytes, SHA256
+ e2a466db57830bddb9003361028f99c132504ed3e12a632918898cd6c2a51224.
+Release позже сам снимет fresh opaque baseline без semantic foreign reads.
+Existing vps1-direct; outeruid1003/gid27 лишь сообщённый контекст.
+Перед future writes проверить euid0 existing noninteractive
+sudo -n -- python3 -B stdin/-c; обычный SSHpython не считать root.
+Не читать sudoers/allowlists/keys/config policies. Auth/globalMIME/services/
+firewall/publicports не менять. Post-auth browser ранее не проверен; не обходить.
 
-Ожидаемый opaque pointer, НЕ fresh guard:
-root `/srv/superflight-review/releases/p5-jungle-regenerated-candidate-03`,
-674files/88dirs/122587862bytes; snippet957bytes/SHA256
-`e2a466db57830bddb9003361028f99c132504ed3e12a632918898cd6c2a51224`.
-Release сам снимет fresh opaque baseline без semantic foreign payload reads.
-Existing vps1-direct, outeruid1003/gid27 — только сообщённый контекст;
-перед future token writes euid0 проверяется через existing noninteractive
-`sudo -n -- python3 -B` stdin/-c. Не предполагать root у обычного SSHpython,
-не читать sudoers/allowlists/secrets; настоящий denial exact-operation STOP.
-Release пока idle, ACK/новый подготовительный цикл ему не выдавался.
+## Состав и операционные границы
 
-Новая named ordinary data-коррекция Artist:
-`5c9ba8c640b344094e0ada7c4ed6c9ec076550e5`, prefix
-`experiments/p3-masks/transfer/water/asset-artist/variants/arch-front-edge-01/`.
-assets.json20571bytes/SHA256
-`4a5bc16f69146fe26a3e3893fcf3c1c8e5b943400bc65d5215cb41d58efeece6`.
-Lead независимо сверил SHA и структурный diff: ровно24depth-записи8arches,
-остальные47regions/ball/shadow поля те же.73PNG сохранены по exact packet
-проверкам Artist/Builder; source/core/config/projection/renderer не меняются.
-Правило: midpoint accepted front edge2→3 каждой из16feet вместо centroid,
-без перестановкивершин/seed/tick/radiusзависимости. Прочитаны README/ANCHORS.csv,
-вариант интегрирован; оригинальные17dc/early02 сохранены.
-Внешний packet manifestSHA
-`7f260deb508977dd9a6d95cf981d26179516fbf41eaafad93af1255971963454`.
-Doc-only русский README `99bcc37011e48cb854cc77742b3dc34f8f6cb71d`
-прочитан и интегрирован. Consumer остаётся5c9 с тем же hash и внешним manifest;
-Actor Artist completed/idle/clean, новых проверок/генераций по переводу не было.
+| Роль | Существующий thread |
+|---|---|
+| CTO | 01a174b2-1b0d-79b1-866f-f40e23f6dfb2 |
+| Builder | 01a17fb0-0342-7083-8170-081fd7446d11 |
+| Artist | 01a17fb0-1134-7433-8f15-30a362b2af46 |
+| TQA | 01a17fb0-1ad2-70e3-823b-e26a5dbdceb8 |
+| VQA | 01a17fb0-2697-7b10-ad86-9b4bbe6548ae |
+| Release | 01a17fb0-3262-7d02-957e-29f4c9d649b6 |
 
-Builder собрал `front-edge-04`, SOURCE
-`5196c0bd4981992c4e3d9678438aed1aa1c0d84c`, manifestSHA
-`de1344afcb197115b76cb4006ead3d96e7b2581a1a299df1100d7a552d2ce2c6`.
-Сравнивает actual1006–1022 и новый threshold1021. Его numerical residual
-overlap≈0.002% — ориентир, не visual retest/PASS. Builder подтвердил byte-equal
-renderer/native/inputs/73PNG. Новый actual PID после перевода6868 ещё не
-выдан Lead; старый17640 нельзя считать актуальным владельцем.
-Full Water frozen handoff пока нет; обе QA сейчас заняты Dark exactfreeze,
-Water будет отдельно после selfcheck и явной выдачи. Новых QA ролей нет.
-Builder завершил selfcheck front-edge-04 на всех5predeclaredseeds:4LOST и
-receiver02/1275. Native/download большого uint32 совпал, cross-board Dark JSON
-отклонён с сохранением Water state. Lead реально просмотрел новые200% frames
-1015/1020/1021: на1015 шар остаётся частично скрыт, к1020–21 выходит;
-прежнего раскрытия на этих снимках не видно. Independent closure не заявлена.
-Builder поручено оформить immutable full QA candidate с открытым finding:
-после Dark comparative retest станет первым разделом полного Water VQA на
-тех же bytes, без дополнительного промежуточного gate и нового состава.
+Все существующие сотрудники продолжают selected gpt-6.1-sol/xhigh по фактическим
+выдачам; Root max не менять. Не создавать новых agents/threads/roles/branches/
+worktrees/checkouts. Все shell calls явно в E-worktree; пустой serviceC и dirty
+D:\dev\R4D не использовать. Все новые output/temp/cache только own E runtime,
+TEMP/TMP process-local. Перед heavy — fresh RAM/CPU/C/D/E +combined peak.
+Artist12:28:27Z RAMfree16.162GiB/CPU4%/E11.611GiB — история, не резерв.
+E≤4GiB diagnose,≤2 checkpoint/stop; прежний10GiB резерв недействителен.
+Никаких global env/settings/security/cleanup/watchdog, UGH/чужих процессов.
+Legacy denied call_7b166cdf46834d468b5f9c297aad6e9f и old filepreview/fileURL
+не повторять/не обходить. Новый denial — STOP только конкретной операции,
+action/target/toolcall/reason CTO, без чтения sensitive policy/config/output.
+P2/P4/P5/P6 implementation/art/masks/candidates/findings не читать; commonP0/P1
+и opaque publication wrapper разрешены. Raw/frozen/evidence/history сохранять.
 
-Оба первых полных ART комплекта получены и переданы Builder, commit
-`17dc9fcdc261562acb581dd8590096819734c807` (pushed/clean).
-Lead прочитал оба Artist STATE/CONSUMER_CONTRACT, независимо сверил Git
-assets.json hashes и scope145changes только transfer/{water,dark}/asset-artist.
-Water71masks/assets.json20574bytes/SHA256
-`e93e5cfb6fbfa3c4ca9e5c2eadbc46b628713e952fe033fa216e00598e2a849d`.
-Источник/71mask initial данные интегрированы в Lead; поздние поправки отдельно.
-Artist exact E handoff: `asset-artist\transfer-water-dark\water\handoff-17dc9fcdc261`.
-Water исходные depth правила пока сохранены; исправлен отдельный contour,
-который захватывал голубую воду, rejected overlay сохранён Artist в runtime.
-
-Ранняя VQA independently сверила manifest/local+HTTP и все30files early02,
-воспроизвела резкость1014→1015 на100%/200%. Непрерывный ball nativeY
-34752.6197802→34756.6559934 пересекает общий threshold34755.12349268705;
-три arch07 восстановительных meshes отключаются вместе. Builder оценивает
-alpha coverage35% на1014 и residual projected overlap23% на1015.
-Формальная ранняя VQA completed/idle: finding W-EARLY-POP-01 подтверждён.
-Report `26295340cafa78ea8bffe09e8005badda220d731` полностью прочитан Lead
-вместе с visible-states и интегрирован:
-[REPORT.md](../visual-qa/early-art-02/REPORT.md).
-29raw/12selectedfull/2comparison sheets сохранены; все30earlyfiles local+HTTP
-совпали. Cause — binary P3 ordering/стык depth/masks, не common mapping.
-Real-time FPS плавность/полнотаfeet/frog/shadow этой диагностикой не заявлены.
-Точный report адресно передан Builder/Artist и CTO; исходный вариант сохранён.
-VQA явно завершил чтение6868/закрыл свою вкладку; Lead адресно снял только
-local readhold у Builder (не server window/token). Immutable early02 сохранён.
-Artist получил конкретный проход ordinary depth-data correction по передним
-принятым рёбрам feet, геометрическим правилом без подбора под seed/tick.
-Новая named версия/таблицаanchors/commit/hash обязательны; source/config/
-projection/native/PNG сохраняются. Существенная новая сортировка не выдана.
-Builder сравнит тот же seed1/1006–1018 и продолжает fullDark независимо.
-
-Свежий Lead host10:09:15UTC: RAMfree16.709/31.907GiB,CPU0%,
-C/D/Efree16.235/16.279/11.907GiB. Дополнительных Root processes нет;
-fresh checks и E4/2GiB пороги сохраняются. Budget/качественный verdict не закрыты.
-
-Первый реальный видимый Water checkpoint: `early-art-02`, source
-`f3b7ce8d94b0a9173c48d7ca6defb3837a10ed03`, ART
-`4eb4001d8036048f716d9e7ab45bb560f3840cf6`, manifest
-`4221b9606f95304bde0862c74235e534573a7f1cfdada8c4b109320965f8ebcf`.
-Path `E:\R4D\perspective\p3-runtime\builder\transfer-water-dark\water\early-art-02`.
-Own Builder URL `http://127.0.0.1:6868/review/r4d/p3-masks-water/`,
-PID17640/session89871. Это именно ранний7mask стык; full candidate ещё нет.
-Lead реально открыл running seed1/t56 screenshot и paused1014/1015/1016
-из `water\evidence\browser-early02`; HUD ticks совпали. Первая видимая сцена
-получена около23 активных минут после передачи, CTO адресно уведомлён;
-полный2–3ч/4–6ч ориентир пока не пересматривается.
-
-Шар виден в arch07 opening. Доля видимого шара меняется1014→1015;
-проверяется корректность постепенного раскрытия/threshold transition,
-без преждевременного defect/PASS. Builder сохранил13frames1006–1018 и
-ordinary run LOST1196. VQA после fresh idle адресно возобновлён с прежними
-model/thinking только на раннюю независимую Water диагностику этой версии:
-actual turn `01a18718-4c71-7cb1-b9cd-b31bd20f16cf` теперь completed/idle/errornull.
-Builder получил hold этой версии6868 до окончания чтения VQA. Full build
-готовится отдельно, immutable bytes не переписываются.
-
-VQA fresh host: RAMfree16.08GiB,E11.92GiB,CPU0%,C16.25/D16.28GiB;
-его extra≤1GiB RAM/128MiB E. Даже консервативная совокупная верхняя
-≤5GiB/2.125GiB укладывается в фактические остатки; исходная4GiB оценка
-уже включала QA. TQA/Release idle, Root новых browsers/servers не запускает.
-Никакого резервирования или отмены свежих проверок/порогов E нет.
-
-VQA матрицы на русском `0ed5d4bae632e4fa3fd370ffeed193ab1d48c214`
-интегрированы: [PREPARATION.md](../visual-qa/PREPARATION.md).
-Все candidate cases ещё PENDING; ранняя диагностика не заменяет fullQA.
-
-Первый применимый ART checkpoint получен/адресно передан Builder:
-`4eb4001d8036048f716d9e7ab45bb560f3840cf6`, prefix
-`experiments/p3-masks/transfer/water/asset-artist/`.
-Lead прочитал contract/assets.json и независимо пересчитал exact Git bytes:
-assets.json2193bytes/SHA256
-`6bda5c72cacf24a32555b720f42b72c335c180fca88525d809614d8b5bec3d7d`.
-7masks: frog01, по3части arch01/arch07, separate reused ball/shadow.
-Это ранний стык, не полный candidate и не QA. Builder должен дать реальный
-Pixi/native seed1 gate checkpoint с manifest/evidence/ownedpreview; Artist
-продолжает fullWater/Dark. Jungle ни одной новой правки не получил.
-
-TQA input preparation completed/idle, commit
-`fe09f8e37cff8352dbe629e28bd3e4e2c0e019aa` прочитан (оба STATE +gate witness)
-и интегрирован. [Water input state](../technical-qa/STATE.md),
-[gate witness](../technical-qa/GATE_NATIVE_WITNESS.json).
-Native predeclared0→LOST1326,1→LOST1196,2→receiver02/1275, без отбора.
-Candidate verdict отсутствует. VQA отдельные матрицы подготовил;
-попросили привести только язык новых документов к проектному русскому,
-сохраняя hashes/cases/PENDING. Итоговой QA/preview этой роли ещё нет.
-
-Конкретный input checkpoint TQA: r16 не блокирует принятые Water gates.
-Min feet distances восьми arches52.011–57.010 при диаметре32; локальные
-corridor witnesses имеют положительный зазор ко всем colliders9.171–11.224.
-Заранее выбранный ordinary seed1 проходит arch-07 на tick1015, соседние
-states1014/1015/1016, source≈[518.076,957.456], clearance4.172.
-Run LOST/t1196 сохранён. Это native/2D input preparation, НЕ proof visible
-lintel/масок/собранного движения и не восстановление высоты. Witness адресно
-передан Artist/Builder/VQA и CTO. Builder независимо сохранил соседние states,
-подтвердил native replay/cross-board checkpoint rejection и contacts обеих
-feet около1006–1018; первый frog-01 contact105.
-
-Builder contracts опубликованы `f3b7ce8d94b0a9173c48d7ca6defb3837a10ed03`;
-Lead прочитал оба и передал Artist. Формат/алгоритм прежний. Artist применяет
-свои frozen ball/shadow PNG побайтно, настройки shadow выбирает по сцене;
-новой генерацией это не объявляется. Полного art/candidate пока нет.
-
-Release local plan completed/idle/server_write=false, commit
-`1cf782e83c5e0aec0f80feeb9bc9693028a7fb5b` полностью прочитан и интегрирован:
-[PLAN.md](../release-engineer/PLAN.md),
-[RELEASE_PLAN.json](../release-engineer/RELEASE_PLAN.json).
-Только четыре новых transfer-файла; SSH/live capture/staging/publish не было.
-Будущий live baseline намеренно null; Jungle hashes не подставляются.
-
-[Исходный рецепт/точные входы](BASELINE.md) зафиксированы до переноса.
-Все пять участников fresh completed/notLoaded/errornull проверены перед
-последовательными адресными handoff; каждый send isError=false. Runtime
-передачи model=gpt-6.1-sol/thinking=xhigh, новые роли/чаты/worktrees не созданы.
-
-| Роль | Existing chat | Фактический новый turn |
-| --- | --- | --- |
-| Builder | `01a17fb0-0342-7083-8170-081fd7446d11` | `01a186fc-2c6b-7f21-8c77-dadb83058f22` |
-| Artist | `01a17fb0-1134-7433-8f15-30a362b2af46` | `01a186fc-3554-7330-8c86-29166bcd6773` |
-| TQA | `01a17fb0-1ad2-70e3-823b-e26a5dbdceb8` | `01a186fc-3cd2-7173-b970-246428cca6de` |
-| VQA | `01a17fb0-2697-7b10-ad86-9b4bbe6548ae` | `01a186fc-4717-75e0-8725-5014d72cb42e` |
-| Release | `01a17fb0-3262-7d02-957e-29f4c9d649b6` | `01a186fc-4d21-7c02-955d-3731d997bef5` |
-
-Первое concrete Builder action `exec-979fdca8-4a9d-4341-ba62-97339a68c466`
-completed/exit0: HEAD/branch/status, exact cards, P1 inventory, source hashes.
-TQA/Release первые read-only commands тоже completed/exit0. Обязательный
-checkpoint с пятью send/turn IDs и action отправлен CTO, isError=false.
-Новые адресные уточнения Lead передали независимо проверенные Water/Dark pins
-и ресурсы, не дублировали выдачу или новый состав.
-
-Задачи: Builder consumer/config/provenance; Artist whole-art masks/ball/shadow;
-TQA exact inputs/native invariants и доступность gate; VQA independent matrix;
-Release только локальный план, затем idle. Первый видимый Water ориентир45–75
-активных минут, пересмотр по факту. Первый проход двух досок2–3ч; bounded
-цикл QA/доводки/публикации4–6 активных часов — оценка, не критерий PASS.
-
-Fresh host Lead09:28:16UTC: RAMfree16.659/31.907GiB,CPU2%,
-C/D/Efree16.347/16.280/11.942GiB. Предварительная добавочная совокупная
-оценка initial peak≤4GiB RAM/≤2GiB E, не резерв/гарантия. Собственные свежие
-snapshots перед тяжёлыми шагами обязательны. E≤4 diagnosis,≤2 checkpoint/stop.
-Ролевые temp/cache/output только E runtime transfer-water-dark/water.
-
-Следующий участок Lead: свести Artist/Builder контракт; получить первый
-применимый Water handoff и реальный native/Pixi checkpoint, затем immutable
-candidate обеим независимым QA. Water gate подтверждать actual movement/
-overlap; input blocker отдельным воспроизведением CTO. Dark идёт отдельно.
-Не останавливать производство на одном STATE/ACK. Jungle не менять.
-
-Server_write=false, токена нет, следующее окно зарезервировано CTO под P3. Published результата
-Water нет; будущий route `/review/r4d/p3-masks-water/`. Никакого remote
-staging/upload/lock/nginx/service-doc writes/cleanup до нового exact token.
-Legacy denial не повторять/не обходить; UGH/чужие методы не трогать.
+Следующее: завершить адресные Dark QA/RESULT; затем один Release intent,
+fresh guard+новый token, serial publication/postchecks двух Review, явная
+передача и закрытие окна. Не останавливаться на ACK/STATE/локальных previews.
