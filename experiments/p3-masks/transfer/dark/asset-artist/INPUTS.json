@@ -1,0 +1,59 @@
+{
+  "board": "dark",
+  "source": {
+    "path": "K:\\Agents\\R4D\\Assets\\perspective\\02-dark-temple.jpg",
+    "sha256": "7ceff71bd0a871fecd725527dff5522450c8e75a74eb99c107b5d8624bf8fa3a",
+    "size": [
+      1536,
+      1536
+    ]
+  },
+  "p1": {
+    "commit": "4b47db04c7140ebf88f69b91faa0b790d46f22ec",
+    "files": {
+      "config": {
+        "path": "experiments/p1-collider-mapping/clean-repeat-01/simulation/boards/02/trial-01/config.json",
+        "sha256": "14be2a023833d266d1e333bf582af5fd5885deb445698c10ebd846ef0cc080b2"
+      },
+      "manifest": {
+        "path": "experiments/p1-collider-mapping/clean-repeat-01/simulation/boards/02/trial-01/manifest.json",
+        "sha256": "3fab422bd1f74d477d1648620c97ad6d7b8b0a55a70a1102d6e6885def564d81"
+      },
+      "projection": {
+        "path": "experiments/p1-collider-mapping/clean-repeat-01/research/board02-projection.candidate-01.json",
+        "sha256": "4dfa46589bb3fdfc8e2ad8ff2554737697e3ce9172c5b8d5c5583577df0c8c48"
+      }
+    }
+  },
+  "baseline": {
+    "art": "f899a308aed156a11e2a1013292ed68c6669959d",
+    "code": "f1aca21e7b9ba19001e7e8762fcaf2511bf9bf74",
+    "recipe": "experiments/p3-masks/asset-artist/CONSUMER_CONTRACT.md"
+  },
+  "ball": {
+    "path": "assets/ball.png",
+    "anchorPx": [
+      626.5,
+      624.5
+    ],
+    "radiusPx": 487.5
+  },
+  "shadow": {
+    "path": "assets/shadow.png",
+    "anchorPx": [
+      625.5,
+      627.5
+    ],
+    "radiusPx": 554.5,
+    "offsetRadius": [
+      -0.45,
+      0.5
+    ],
+    "scaleRadius": [
+      1.15,
+      2.6
+    ],
+    "alpha": 0.93
+  },
+  "runtime": "E:\\R4D\\perspective\\p3-runtime\\asset-artist\\transfer-water-dark\\dark"
+}

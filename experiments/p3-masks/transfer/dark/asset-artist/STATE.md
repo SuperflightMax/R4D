@@ -1,0 +1,28 @@
+# P3 Dark — Asset Artist
+
+29 октября 2026. staff_id asset-artist-r4d-p3-masks-01.
+Actual turn: 01a186fc-3554-7330-8c86-29166bcd6773.
+Новый прямой старт Max через CTO/Lead09:04:16Z/09:13:39Z; все4 карточки
+exact c6603f0 прочитаны. Исходная чистая своя branch на545bf170.
+Jungle baseline CODE f1aca21e7b9ba19001e7e8762fcaf2511bf9bf74 /
+ART f899a308aed156a11e2a1013292ed68c6669959d;
+manifest e2e9f7d837b3d05f484f75a877af6992a70ee88363add783d80f3c6e206f431f.
+Сохранены ссылки на прежний alpha/depth recipe; Jungle не изменяется.
+
+Exact P1 4b47db04: boards/02/trial-01 и
+research/board02-projection.candidate-01.json. Все3 SHA независимо совпали.
+JPG02-dark-temple SHA7ceff71b...8fa3a совпал; исходник просмотрен.
+Полные пути и SHA — INPUTS.json. Данные/лог/артефакты отделены от Water.
+
+Начальный способ тот же: цельная иллюстрация, source-aligned alpha crops,
+scalar/line native depths; собственный ранее generated ball/shadow из
+выбранного ART. Прямоугольные/многогранные основания читаются из принятого
+P1; их коллайдеры/проекция/состояния не меняются. Новая сортировка не выдана.
+Текущий статус: inspect завершён, собственные контуры Dark ещё готовятся;
+Water получает первый полезный стык раньше полного Dark. PASS не заявлен.
+
+Server_write=false. Никаких server upload/staging/service действий.
+Runtime только E:\R4D\perspective\p3-runtime\asset-artist\transfer-water-dark\dark.
+Свежая проверка ресурсов перед тяжёлым действием, E<=4 diagnosis/<=2 stop.
+Следующий шаг: свои silhouette masks для12pins,12loop objects, rail/platform/
+baskets, затем exact handoff и конкретные угловые/боковые QA случаи.

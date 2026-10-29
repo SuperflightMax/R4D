@@ -1,0 +1,129 @@
+{
+  "schema": "r4d-p3-assets-v1",
+  "sourceSize": [
+    1536,
+    1536
+  ],
+  "ball": {
+    "path": "assets/ball.png",
+    "anchorPx": [
+      626.5,
+      624.5
+    ],
+    "radiusPx": 487.5
+  },
+  "shadow": {
+    "path": "assets/shadow.png",
+    "anchorPx": [
+      625.5,
+      627.5
+    ],
+    "radiusPx": 554.5,
+    "offsetRadius": [
+      -0.45,
+      0.5
+    ],
+    "scaleRadius": [
+      1.15,
+      2.6
+    ],
+    "alpha": 0.72
+  },
+  "occluders": [
+    {
+      "id": "frog-01",
+      "path": "masks/frog-01.png",
+      "rectPx": [
+        719,
+        262,
+        103,
+        101
+      ],
+      "depthNativeY": 33343.64695747465
+    },
+    {
+      "id": "arch-01-left-body",
+      "path": "masks/arch-01-left-body.png",
+      "rectPx": [
+        492,
+        312,
+        35,
+        92
+      ],
+      "depthNativeY": 33490.838883855155
+    },
+    {
+      "id": "arch-01-lintel",
+      "path": "masks/arch-01-lintel.png",
+      "rectPx": [
+        520,
+        312,
+        49,
+        83
+      ],
+      "depthLineNative": [
+        [
+          32972.77663041512,
+          33490.838883855155
+        ],
+        [
+          33051.05717786276,
+          33490.838883855155
+        ]
+      ]
+    },
+    {
+      "id": "arch-01-right-body",
+      "path": "masks/arch-01-right-body.png",
+      "rectPx": [
+        562,
+        312,
+        34,
+        93
+      ],
+      "depthNativeY": 33490.838883855155
+    },
+    {
+      "id": "arch-07-left-body",
+      "path": "masks/arch-07-left-body.png",
+      "rectPx": [
+        448,
+        852,
+        43,
+        124
+      ],
+      "depthNativeY": 34755.12349268705
+    },
+    {
+      "id": "arch-07-lintel",
+      "path": "masks/arch-07-lintel.png",
+      "rectPx": [
+        483,
+        852,
+        61,
+        111
+      ],
+      "depthLineNative": [
+        [
+          32980.71515509489,
+          34755.12349268705
+        ],
+        [
+          33064.25931200639,
+          34755.12349268705
+        ]
+      ]
+    },
+    {
+      "id": "arch-07-right-body",
+      "path": "masks/arch-07-right-body.png",
+      "rectPx": [
+        536,
+        852,
+        42,
+        125
+      ],
+      "depthNativeY": 34755.12349268705
+    }
+  ]
+}
