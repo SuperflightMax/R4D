@@ -1,0 +1,63 @@
+{
+  "base": "c6603f0f327350172df44687a4d4ead19e0e5e6b",
+  "document_blobs": {
+    "orders/perspective/ORDER.md": "7fb0047e6f8326ec034e1439be746f18b86d1a8b",
+    "orders/perspective/P6-geometry-first-art.md": "d362af27a641957a0d9f8b9de6eb7d593f8d0d96"
+  },
+  "reference": {
+    "path": "K:\\Agents\\R4D\\Assets\\perspective\\01-jungle.jpg",
+    "bytes": 671136,
+    "sha256": "c8f9e4245c1de8c2086e615bc75dc10aea59b76b614d6e106593e07262e24f72"
+  },
+  "common_inputs": [
+    {
+      "name": "config.json",
+      "commit": "4b47db04c7140ebf88f69b91faa0b790d46f22ec",
+      "source": "experiments/p1-collider-mapping/clean-repeat-01/simulation/boards/01/trial-01/config.json",
+      "bytes": 9503,
+      "sha256": "dd5c519cd6d4b7295118e0a3a1063efed424a0ce739450bd5153c6a9941982db",
+      "git_blob": "81b876017c0ddf2ce83419e38aa45846f7765869"
+    },
+    {
+      "name": "manifest.json",
+      "commit": "4b47db04c7140ebf88f69b91faa0b790d46f22ec",
+      "source": "experiments/p1-collider-mapping/clean-repeat-01/simulation/boards/01/trial-01/manifest.json",
+      "bytes": 11565,
+      "sha256": "7784dc0a215d0e472cf06a4eee03793592727cf0fa9a1fa0e0c78e5f1d17da18",
+      "git_blob": "3d29c3ce3d45bcc2d62716f2c82b7266157e2a3a"
+    },
+    {
+      "name": "projection.mjs",
+      "commit": "4b47db04c7140ebf88f69b91faa0b790d46f22ec",
+      "source": "experiments/p1-collider-mapping/clean-repeat-01/simulation/projection.mjs",
+      "bytes": 614,
+      "sha256": "b59a0c1e6c34b417d253178457ef3580b8bea0aa89c989d1342f9376e19b9431",
+      "git_blob": "bf04115fbaf897a46f1c6165f1b225969bd6c145"
+    },
+    {
+      "name": "view-math.mjs",
+      "commit": "4b47db04c7140ebf88f69b91faa0b790d46f22ec",
+      "source": "experiments/p1-collider-mapping/clean-repeat-01/viewer/src/view-math.mjs",
+      "bytes": 3050,
+      "sha256": "96f01cc2093c353ff958cb906fe0c8ae93412425d0f7a5ec7cca0f2bf9f1aa5e",
+      "git_blob": "ce3ae207f7690efa942bfa04ac5cdbafc7b96db4"
+    },
+    {
+      "name": "CROSS_SERIES_CONCLUSION_AND_RECIPE.md",
+      "commit": "ee4d8e5c7dbb3b6618d58d6dacb0caf9b73dfb1b",
+      "source": "experiments/p0-perspective/research/CROSS_SERIES_CONCLUSION_AND_RECIPE.md",
+      "bytes": 17325,
+      "sha256": "9ffe076b1746d5c4ef78da2f7d9a95bedcadf5e7f49f07f6d5899c0cc8373619",
+      "git_blob": "5418f429f1987ca3e29ab1beac3b6eeb90ee7b3f"
+    }
+  ],
+  "native": {
+    "commit": "5a6fa03f1cdb3de88a2d9c7dbe795eb8e2a7f023",
+    "package_tree": "008d16a80a26bb77d562a45218b01da09b0d9ff0",
+    "files": 37,
+    "source_bytes": 112891,
+    "source_manifest_sha256": "f0e524c677408033b4bf36b04b9d59188a711b6797f7e26ca3ecb981ef9e6b57",
+    "source_location": "private QA runtime only"
+  },
+  "scope": "pins and independent preparation only; no product acceptance"
+}

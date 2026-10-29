@@ -1,0 +1,168 @@
+{
+  "scope": "independent native oracle preparation; candidate and visual behavior not checked",
+  "coreCommit": "5a6fa03f1cdb3de88a2d9c7dbe795eb8e2a7f023",
+  "packageTree": "008d16a80a26bb77d562a45218b01da09b0d9ff0",
+  "node": "v24.15.0",
+  "transformedModules": 26,
+  "buildManifestSha256": "1a5fad4f9e641fc7c2ce7e6c3ef57042a4f38ea88b2c28727878fa7a2d3c4fdf",
+  "sourceManifestSha256": "f0e524c677408033b4bf36b04b9d59188a711b6797f7e26ca3ecb981ef9e6b57",
+  "inputConfigSha256": "dd5c519cd6d4b7295118e0a3a1063efed424a0ce739450bd5153c6a9941982db",
+  "seedsDeclaredBeforeRun": [
+    0,
+    1,
+    2
+  ],
+  "allOutcomesRetained": true,
+  "runs": [
+    {
+      "seed": 0,
+      "file": "private-runtime/oracle/seed-0.json",
+      "artifactSha256": "4afee2561b14a09d26f6fdfdaa75fa475ed9a2d25635caf2a11343f10583531e",
+      "stateDigest": "ecdcab689bdc414018344afcf0e9aa8f05a29b957de4aa62bf6e9d616cf0b70c",
+      "eventDigest": "832cc4a6071b77721e55836352173cf457ac12a99df55a9a8b8bd059e5b7a58e",
+      "states": 1957,
+      "terminal": {
+        "tick": 1956,
+        "rngU32": 3503432700,
+        "ball": {
+          "pos": {
+            "x": 33391.7821303,
+            "y": 34901.2013347
+          },
+          "vel": {
+            "x": 469.5535445,
+            "y": 1144.4611046
+          }
+        },
+        "nearMissBucketIds": [],
+        "done": true,
+        "result": {
+          "kind": "IN_BUCKET",
+          "bucketId": "receiver-03"
+        }
+      },
+      "collisionCount": 22,
+      "prngDraws": 44,
+      "firstContact": {
+        "event": {
+          "type": "object_hit",
+          "tick": 94,
+          "timeSec": 0.47000000000000003,
+          "ballId": "board01-ball",
+          "objectKind": "pin",
+          "objectId": "leaf-01",
+          "x": 33254.8464510643,
+          "y": 33263.0448322622
+        },
+        "stateTicks": [
+          94,
+          95,
+          96
+        ]
+      },
+      "replayIdentical": true,
+      "headlessTerminalIdentical": true
+    },
+    {
+      "seed": 1,
+      "file": "private-runtime/oracle/seed-1.json",
+      "artifactSha256": "8cbd2d1f37c0c63b4ec42ef8c7e1cbab58f98ee1805536c4f585ba4872d0f5e6",
+      "stateDigest": "6c5f7ffe0a41f817a71cc011c9f23322cc2defa9c4111236d1bf8096b4fa23c8",
+      "eventDigest": "eabf2d62a2d1f307a472014417768d35adde6cd3d7c8d0601a6e7dacba40f7ab",
+      "states": 1736,
+      "terminal": {
+        "tick": 1735,
+        "rngU32": 1629134493,
+        "ball": {
+          "pos": {
+            "x": 33780.1301239,
+            "y": 35375.7259347
+          },
+          "vel": {
+            "x": 764.3470855,
+            "y": 1699.2982232
+          }
+        },
+        "nearMissBucketIds": [],
+        "done": true,
+        "result": {
+          "kind": "LOST",
+          "finalX": 33780.1301239,
+          "nearMissBucketIds": []
+        }
+      },
+      "collisionCount": 14,
+      "prngDraws": 28,
+      "firstContact": {
+        "event": {
+          "type": "object_hit",
+          "tick": 94,
+          "timeSec": 0.47000000000000003,
+          "ballId": "board01-ball",
+          "objectKind": "pin",
+          "objectId": "leaf-01",
+          "x": 33254.8464510643,
+          "y": 33263.0448322622
+        },
+        "stateTicks": [
+          94,
+          95,
+          96
+        ]
+      },
+      "replayIdentical": true,
+      "headlessTerminalIdentical": true
+    },
+    {
+      "seed": 2,
+      "file": "private-runtime/oracle/seed-2.json",
+      "artifactSha256": "5154cbe773505666932d6d0817665be6b6478dd417f6da197f19c69cb096e3c4",
+      "stateDigest": "6405472e16a2383e38a0cc350b352c128873b73222bcb279218e992add67920e",
+      "eventDigest": "fa69fe7a999cdb28fe737d0eb6b6a76b5002762bbfc3739accff1a2391cdcca7",
+      "states": 1291,
+      "terminal": {
+        "tick": 1290,
+        "rngU32": 2866302536,
+        "ball": {
+          "pos": {
+            "x": 33244.7794791,
+            "y": 35372.5005251
+          },
+          "vel": {
+            "x": 169.028896,
+            "y": 1511.6364702
+          }
+        },
+        "nearMissBucketIds": [],
+        "done": true,
+        "result": {
+          "kind": "LOST",
+          "finalX": 33244.7794791,
+          "nearMissBucketIds": []
+        }
+      },
+      "collisionCount": 11,
+      "prngDraws": 22,
+      "firstContact": {
+        "event": {
+          "type": "object_hit",
+          "tick": 94,
+          "timeSec": 0.47000000000000003,
+          "ballId": "board01-ball",
+          "objectKind": "pin",
+          "objectId": "leaf-01",
+          "x": 33254.8464510643,
+          "y": 33263.0448322622
+        },
+        "stateTicks": [
+          94,
+          95,
+          96
+        ]
+      },
+      "replayIdentical": true,
+      "headlessTerminalIdentical": true
+    }
+  ],
+  "contactTickRule": "pin/segment/wall hit tick N is emitted inside transition state N -> state N+1; inspect N,N+1,N+2. Bucket entry uses resulting state tick."
+}

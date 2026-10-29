@@ -1,0 +1,585 @@
+{
+  "scope": "numerical common-input registration only; no art or frozen consumer evaluated",
+  "configSha256": "dd5c519cd6d4b7295118e0a3a1063efed424a0ce739450bd5153c6a9941982db",
+  "manifestSha256": "7784dc0a215d0e472cf06a4eee03793592727cf0fa9a1fa0e0c78e5f1d17da18",
+  "counts": {
+    "pins": 25,
+    "segments": 16,
+    "buckets": 4,
+    "drops": 1,
+    "floorVertices": 14
+  },
+  "determinant": 0.5300014568427915,
+  "maxRoundTripNative": 1.626953582672133e-11,
+  "maxRoundTripSource": 1.160497063681291e-11,
+  "maxFunctionDisagreement": 0,
+  "maxDeclaredInverseDifference": 1.626953582672133e-11,
+  "maxMeshCornerNativeError": 0.0009273700612356525,
+  "overlaySha256": "d0233cdecb61c987629269aa14be05388fb104a021bff7b99da90162621c2d3c",
+  "landmarksSha256": "393f2bd1cffda601440d00fa4acfc3763137b4d96bae14af22c9f1c3525846cc",
+  "controlPoints": [
+    {
+      "id": "board01-start",
+      "native": [
+        33254.863169496064,
+        33151.81331014809
+      ],
+      "source": [
+        769.9999999999995,
+        320.99999999999864
+      ],
+      "angleDeg": 90,
+      "speed": 0
+    },
+    {
+      "id": "flower-01",
+      "sourceCenter": [
+        525.4691425053203,
+        380.881722604278
+      ],
+      "sourceBounds": {
+        "minX": 485.4339812873661,
+        "maxX": 565.4809418700557,
+        "minY": 361.9895294109438,
+        "maxY": 399.9999999999986
+      }
+    },
+    {
+      "id": "leaf-01",
+      "sourceCenter": [
+        771.9933085614629,
+        395.3781834746942
+      ],
+      "sourceBounds": {
+        "minX": 726.9933085614626,
+        "maxX": 816.9933085614632,
+        "minY": 374.04380568341475,
+        "maxY": 417.0000000000002
+      }
+    },
+    {
+      "id": "frog-01",
+      "sourceCenter": [
+        1011.4166569436551,
+        385.9240956853891
+      ],
+      "sourceBounds": {
+        "minX": 967.4066030779603,
+        "maxX": 1055.45497759807,
+        "minY": 365.1221870088537,
+        "maxY": 407.0000000000008
+      }
+    },
+    {
+      "id": "frog-04",
+      "sourceCenter": [
+        698.531895014324,
+        731.9716387501211
+      ],
+      "sourceBounds": {
+        "minX": 649.531895014321,
+        "maxX": 747.5318950143272,
+        "minY": 706.3198312549653,
+        "maxY": 758.0000000000016
+      }
+    },
+    {
+      "id": "flower-07",
+      "sourceCenter": [
+        498.00371409506613,
+        1054.603613001406
+      ],
+      "sourceBounds": {
+        "minX": 448.94759704528514,
+        "maxX": 547.0247667411259,
+        "minY": 1026.6180381181953,
+        "maxY": 1082.9999999999998
+      }
+    },
+    {
+      "id": "wood-08",
+      "sourceCenter": [
+        983.8862472302754,
+        1052.7689109515238
+      ],
+      "sourceBounds": {
+        "minX": 948.8829802214412,
+        "maxX": 1018.907396399849,
+        "minY": 1032.7473150774501,
+        "maxY": 1072.9999999999973
+      }
+    },
+    {
+      "id": "receiver-01",
+      "sourceCenter": [
+        358.55946155335715,
+        1238.2098586093362
+      ]
+    },
+    {
+      "id": "receiver-02",
+      "sourceCenter": [
+        646.3101699213796,
+        1264.1927466396157
+      ]
+    },
+    {
+      "id": "receiver-03",
+      "sourceCenter": [
+        914.7204931038729,
+        1267.0024411082616
+      ]
+    },
+    {
+      "id": "receiver-04",
+      "sourceCenter": [
+        1193.5527369826405,
+        1243.8955530450871
+      ]
+    }
+  ],
+  "contactChecks": [
+    {
+      "seed": 0,
+      "contacts": [
+        {
+          "event": {
+            "type": "object_hit",
+            "tick": 94,
+            "timeSec": 0.47000000000000003,
+            "ballId": "board01-ball",
+            "objectKind": "pin",
+            "objectId": "leaf-01",
+            "x": 33254.8464510643,
+            "y": 33263.0448322622
+          },
+          "stateTicks": [
+            94,
+            95,
+            96
+          ],
+          "projectedStates": [
+            {
+              "tick": 94,
+              "sourceCenter": [
+                769.9854836389912,
+                366.5126612891623
+              ],
+              "rngU32": 0
+            },
+            {
+              "tick": 95,
+              "sourceCenter": [
+                769.9703127263558,
+                367.28908128124164
+              ],
+              "rngU32": 1196435762
+            },
+            {
+              "tick": 96,
+              "sourceCenter": [
+                769.8172053542066,
+                366.5169474369971
+              ],
+              "rngU32": 1196435762
+            }
+          ]
+        },
+        {
+          "event": {
+            "type": "object_hit",
+            "tick": 1328,
+            "timeSec": 6.640000000000001,
+            "ballId": "board01-ball",
+            "objectKind": "pin",
+            "objectId": "flower-03",
+            "x": 33381.138772213584,
+            "y": 33829.15973108234
+          },
+          "stateTicks": [
+            1328,
+            1329,
+            1330
+          ],
+          "projectedStates": [
+            {
+              "tick": 1328,
+              "sourceCenter": [
+                893.540123743979,
+                625.5632714434565
+              ],
+              "rngU32": 1061592568
+            },
+            {
+              "tick": 1329,
+              "sourceCenter": [
+                891.7774948908045,
+                625.7798937638948
+              ],
+              "rngU32": 1140036074
+            },
+            {
+              "tick": 1330,
+              "sourceCenter": [
+                893.8789468783834,
+                624.9276342001981
+              ],
+              "rngU32": 1140036074
+            }
+          ]
+        },
+        {
+          "event": {
+            "type": "object_hit",
+            "tick": 1915,
+            "timeSec": 9.575000000000001,
+            "ballId": "board01-ball",
+            "objectKind": "segment",
+            "objectId": "near-divider-2",
+            "x": 33297.87142234633,
+            "y": 34691.41911467493
+          },
+          "stateTicks": [
+            1915,
+            1916,
+            1917
+          ],
+          "projectedStates": [
+            {
+              "tick": 1915,
+              "sourceCenter": [
+                817.3555477332907,
+                1108.1695421479571
+              ],
+              "rngU32": 366635194
+            },
+            {
+              "tick": 1916,
+              "sourceCenter": [
+                817.1193246163476,
+                1111.5987261758087
+              ],
+              "rngU32": 3503432700
+            },
+            {
+              "tick": 1917,
+              "sourceCenter": [
+                819.7433312312684,
+                1114.6661525266168
+              ],
+              "rngU32": 3503432700
+            }
+          ]
+        }
+      ],
+      "terminal": {
+        "tick": 1956,
+        "result": {
+          "kind": "IN_BUCKET",
+          "bucketId": "receiver-03"
+        }
+      },
+      "bucketEntry": {
+        "event": {
+          "type": "bucket_entered",
+          "tick": 1956,
+          "timeSec": 9.78,
+          "ballId": "board01-ball",
+          "bucketId": "receiver-03",
+          "x": 33391.7821303,
+          "y": 34901.2013347
+        },
+        "stateTicks": [
+          1955,
+          1956
+        ]
+      }
+    },
+    {
+      "seed": 1,
+      "contacts": [
+        {
+          "event": {
+            "type": "object_hit",
+            "tick": 94,
+            "timeSec": 0.47000000000000003,
+            "ballId": "board01-ball",
+            "objectKind": "pin",
+            "objectId": "leaf-01",
+            "x": 33254.8464510643,
+            "y": 33263.0448322622
+          },
+          "stateTicks": [
+            94,
+            95,
+            96
+          ],
+          "projectedStates": [
+            {
+              "tick": 94,
+              "sourceCenter": [
+                769.9854836389912,
+                366.5126612891623
+              ],
+              "rngU32": 1
+            },
+            {
+              "tick": 95,
+              "sourceCenter": [
+                769.9703127263558,
+                367.28908128124164
+              ],
+              "rngU32": 1586005467
+            },
+            {
+              "tick": 96,
+              "sourceCenter": [
+                769.8276805304954,
+                366.51648858318623
+              ],
+              "rngU32": 1586005467
+            }
+          ]
+        },
+        {
+          "event": {
+            "type": "object_hit",
+            "tick": 1017,
+            "timeSec": 5.085,
+            "ballId": "board01-ball",
+            "objectKind": "pin",
+            "objectId": "wood-01",
+            "x": 33138.13065464536,
+            "y": 33484.74578520485
+          },
+          "stateTicks": [
+            1017,
+            1018,
+            1019
+          ],
+          "projectedStates": [
+            {
+              "tick": 1017,
+              "sourceCenter": [
+                662.0943353544836,
+                463.4403535655106
+              ],
+              "rngU32": 4212701329
+            },
+            {
+              "tick": 1018,
+              "sourceCenter": [
+                662.596841162439,
+                463.75080646570564
+              ],
+              "rngU32": 1403919595
+            },
+            {
+              "tick": 1019,
+              "sourceCenter": [
+                663.2886527709819,
+                463.9897567490212
+              ],
+              "rngU32": 1403919595
+            }
+          ]
+        },
+        {
+          "event": {
+            "type": "object_hit",
+            "tick": 1574,
+            "timeSec": 7.87,
+            "ballId": "board01-ball",
+            "objectKind": "pin",
+            "objectId": "leaf-05",
+            "x": 33168.65245989911,
+            "y": 34327.92735872343
+          },
+          "stateTicks": [
+            1574,
+            1575,
+            1576
+          ],
+          "projectedStates": [
+            {
+              "tick": 1574,
+              "sourceCenter": [
+                677.4428319650394,
+                887.9711890213396
+              ],
+              "rngU32": 3037600243
+            },
+            {
+              "tick": 1575,
+              "sourceCenter": [
+                680.1968508352381,
+                891.0080834445242
+              ],
+              "rngU32": 1629134493
+            },
+            {
+              "tick": 1576,
+              "sourceCenter": [
+                684.1079802265857,
+                893.6452521434294
+              ],
+              "rngU32": 1629134493
+            }
+          ]
+        }
+      ],
+      "terminal": {
+        "tick": 1735,
+        "result": {
+          "kind": "LOST",
+          "finalX": 33780.1301239,
+          "nearMissBucketIds": []
+        }
+      },
+      "bucketEntry": null
+    },
+    {
+      "seed": 2,
+      "contacts": [
+        {
+          "event": {
+            "type": "object_hit",
+            "tick": 94,
+            "timeSec": 0.47000000000000003,
+            "ballId": "board01-ball",
+            "objectKind": "pin",
+            "objectId": "leaf-01",
+            "x": 33254.8464510643,
+            "y": 33263.0448322622
+          },
+          "stateTicks": [
+            94,
+            95,
+            96
+          ],
+          "projectedStates": [
+            {
+              "tick": 94,
+              "sourceCenter": [
+                769.9854836389912,
+                366.5126612891623
+              ],
+              "rngU32": 2
+            },
+            {
+              "tick": 95,
+              "sourceCenter": [
+                769.9703127263558,
+                367.28908128124164
+              ],
+              "rngU32": 1975575172
+            },
+            {
+              "tick": 96,
+              "sourceCenter": [
+                769.8381618499155,
+                366.5160611329717
+              ],
+              "rngU32": 1975575172
+            }
+          ]
+        },
+        {
+          "event": {
+            "type": "object_hit",
+            "tick": 778,
+            "timeSec": 3.89,
+            "ballId": "board01-ball",
+            "objectKind": "pin",
+            "objectId": "flower-02",
+            "x": 33321.0983028673,
+            "y": 33515.002093790135
+          },
+          "stateTicks": [
+            778,
+            779,
+            780
+          ],
+          "projectedStates": [
+            {
+              "tick": 778,
+              "sourceCenter": [
+                831.3196407898198,
+                476.9500689844791
+              ],
+              "rngU32": 2028691434
+            },
+            {
+              "tick": 779,
+              "sourceCenter": [
+                831.1189603566188,
+                477.3707675095051
+              ],
+              "rngU32": 2992280236
+            },
+            {
+              "tick": 780,
+              "sourceCenter": [
+                829.054528870171,
+                477.55625683637777
+              ],
+              "rngU32": 2992280236
+            }
+          ]
+        },
+        {
+          "event": {
+            "type": "object_hit",
+            "tick": 1115,
+            "timeSec": 5.575,
+            "ballId": "board01-ball",
+            "objectKind": "pin",
+            "objectId": "leaf-05",
+            "x": 33097.724336095576,
+            "y": 34426.126287452644
+          },
+          "stateTicks": [
+            1115,
+            1116,
+            1117
+          ],
+          "projectedStates": [
+            {
+              "tick": 1115,
+              "sourceCenter": [
+                601.4844188238916,
+                949.2193234383734
+              ],
+              "rngU32": 1796326438
+            },
+            {
+              "tick": 1116,
+              "sourceCenter": [
+                603.9265673682145,
+                948.1200740126081
+              ],
+              "rngU32": 2866302536
+            },
+            {
+              "tick": 1117,
+              "sourceCenter": [
+                604.7320519316712,
+                950.0815656452819
+              ],
+              "rngU32": 2866302536
+            }
+          ]
+        }
+      ],
+      "terminal": {
+        "tick": 1290,
+        "result": {
+          "kind": "LOST",
+          "finalX": 33244.7794791,
+          "nearMissBucketIds": []
+        }
+      },
+      "bucketEntry": null
+    }
+  ]
+}

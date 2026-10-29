@@ -1,0 +1,112 @@
+{
+  "schema": "r4d.p6.qa.consumer-neutral-state.v1",
+  "scope": "handoff contract for independent comparison; no consumer/art acceptance",
+  "coreCommit": "5a6fa03f1cdb3de88a2d9c7dbe795eb8e2a7f023",
+  "packageTree": "008d16a80a26bb77d562a45218b01da09b0d9ff0",
+  "configSha256": "dd5c519cd6d4b7295118e0a3a1063efed424a0ce739450bd5153c6a9941982db",
+  "nativeOraclePreparationSha256": "09c068838431d3d10505699e7695d976bb472cdce1dd9fdc8006c4e1c4cbf0f6",
+  "normalSeeds": [
+    0,
+    1,
+    2
+  ],
+  "dropId": "board01-start",
+  "state": {
+    "tick": "integer physical ticks completed; tick0 before any physical step",
+    "rngU32": "unsigned integer from native state; renderer never consumes it",
+    "ball": {
+      "pos": {
+        "x": "native number",
+        "y": "native number"
+      },
+      "vel": {
+        "x": "native number",
+        "y": "native number"
+      }
+    },
+    "nearMissBucketIds": "ordered native array",
+    "done": "native boolean",
+    "result": "optional native discriminated result; preserve absent vs present"
+  },
+  "comparison": "compare exact native values and ordered arrays; JSON object key order immaterial. State0 uses original unquantized start; later values use native quantize7. No visual interpolation in paused snapshot.",
+  "events": "preserve complete native event sequence, tick fields and values. Do not sort events or renumber ticks.",
+  "tickRules": {
+    "pinSegmentWallHit": "event tick N occurs in state N -> state N+1; inspect N,N+1,N+2",
+    "bucketEntry": "event tick is the resulting state tick",
+    "firstContact": {
+      "id": "leaf-01",
+      "eventTick": 94,
+      "beforeStateTick": 94,
+      "afterStateTick": 95,
+      "nextStateTick": 96
+    }
+  },
+  "runs": [
+    {
+      "seed": 0,
+      "states": 1957,
+      "stateDigest": "ecdcab689bdc414018344afcf0e9aa8f05a29b957de4aa62bf6e9d616cf0b70c",
+      "eventDigest": "832cc4a6071b77721e55836352173cf457ac12a99df55a9a8b8bd059e5b7a58e",
+      "terminal": {
+        "tick": 1956,
+        "result": {
+          "kind": "IN_BUCKET",
+          "bucketId": "receiver-03"
+        }
+      }
+    },
+    {
+      "seed": 1,
+      "states": 1736,
+      "stateDigest": "6c5f7ffe0a41f817a71cc011c9f23322cc2defa9c4111236d1bf8096b4fa23c8",
+      "eventDigest": "eabf2d62a2d1f307a472014417768d35adde6cd3d7c8d0601a6e7dacba40f7ab",
+      "terminal": {
+        "tick": 1735,
+        "result": {
+          "kind": "LOST",
+          "finalX": 33780.1301239,
+          "nearMissBucketIds": []
+        }
+      }
+    },
+    {
+      "seed": 2,
+      "states": 1291,
+      "stateDigest": "6405472e16a2383e38a0cc350b352c128873b73222bcb279218e992add67920e",
+      "eventDigest": "fa69fe7a999cdb28fe737d0eb6b6a76b5002762bbfc3739accff1a2391cdcca7",
+      "terminal": {
+        "tick": 1290,
+        "result": {
+          "kind": "LOST",
+          "finalX": 33244.7794791,
+          "nearMissBucketIds": []
+        }
+      }
+    }
+  ],
+  "digestEncoding": "SHA-256 of UTF-8 JSON.stringify after recursively sorting object keys lexicographically, preserving array order; no whitespace/newline",
+  "replayPayload": [
+    "seed",
+    "original start/dropId",
+    "exact config bytes/hash",
+    "geometry/projection version and hash",
+    "native core commit/package tree"
+  ],
+  "controls": [
+    "normal new drop changes seed",
+    "replay restores saved payload",
+    "pause holds native state",
+    "single/multiple tick step advances exact integer ticks",
+    "art and geometry independent",
+    "view/resize/art toggles preserve state and PRNG"
+  ],
+  "requiresVisualInspection": [
+    "assembled source and flat states",
+    "before/during/after contact",
+    "partial occlusion/front-behind transitions",
+    "side bounce",
+    "no empty-space bounce",
+    "seed0 receiver-03 entry tick1956",
+    "readable obstacle and ball shadows at ordinary viewing scale"
+  ]
+}
