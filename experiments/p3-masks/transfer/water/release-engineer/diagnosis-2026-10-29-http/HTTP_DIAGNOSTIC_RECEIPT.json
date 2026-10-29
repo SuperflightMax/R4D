@@ -1,0 +1,75 @@
+{
+  "status": "RO_DIAGNOSTIC_COMPLETED",
+  "utc": "2026-10-29T15:03:07.658318+00:00",
+  "euid": 0,
+  "host": "superflight.space",
+  "userAgent": "R4D-P3-combined-delivery/1",
+  "responses": [
+    {
+      "requestNumber": 1,
+      "requestStartedUtc": "2026-10-29T15:03:07.469786+00:00",
+      "responseUtc": "2026-10-29T15:03:07.556435+00:00",
+      "path": "/review/",
+      "foreignOrigin": false,
+      "status": 200,
+      "headers": {
+        "Location": null,
+        "X-Frame-Options": "DENY",
+        "Cache-Control": "no-store",
+        "X-Robots-Tag": "noindex, nofollow, noarchive",
+        "X-Content-Type-Options": "nosniff",
+        "Referrer-Policy": "same-origin",
+        "Content-Type": "text/html"
+      },
+      "bodyDiscarded": true,
+      "redirectFollowed": false
+    },
+    {
+      "requestNumber": 2,
+      "requestStartedUtc": "2026-10-29T15:03:07.556887+00:00",
+      "responseUtc": "2026-10-29T15:03:07.606565+00:00",
+      "path": "/review/",
+      "foreignOrigin": true,
+      "status": 403,
+      "headers": {
+        "Location": null,
+        "X-Frame-Options": "DENY",
+        "Cache-Control": "no-store",
+        "X-Robots-Tag": "noindex, nofollow, noarchive",
+        "X-Content-Type-Options": "nosniff",
+        "Referrer-Policy": "same-origin",
+        "Content-Type": "text/html"
+      },
+      "bodyDiscarded": true,
+      "redirectFollowed": false
+    },
+    {
+      "requestNumber": 3,
+      "requestStartedUtc": "2026-10-29T15:03:07.606805+00:00",
+      "responseUtc": "2026-10-29T15:03:07.658040+00:00",
+      "path": "/review/.p3-combined-probe",
+      "foreignOrigin": false,
+      "status": 404,
+      "headers": {
+        "Location": null,
+        "X-Frame-Options": "DENY",
+        "Cache-Control": "no-store",
+        "X-Robots-Tag": "noindex, nofollow, noarchive",
+        "X-Content-Type-Options": "nosniff",
+        "Referrer-Policy": "same-origin",
+        "Content-Type": "text/html"
+      },
+      "bodyDiscarded": true,
+      "redirectFollowed": false
+    }
+  ],
+  "requestsPerformed": 3,
+  "redirectsFollowed": false,
+  "bodiesOutputOrSaved": false,
+  "cookiesOrAuthorizationSent": false,
+  "phaseRun": false,
+  "closedTokenUsed": false,
+  "serverWritesPerformed": false,
+  "sshExitCode": 0,
+  "requestCodeSha256": "519ffd396ef78788919a738cccc1935a6de98b93b7e77c8ec16b9adbdd643442"
+}

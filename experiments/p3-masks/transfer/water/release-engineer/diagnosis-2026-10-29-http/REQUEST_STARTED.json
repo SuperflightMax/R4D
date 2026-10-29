@@ -1,0 +1,15 @@
+{
+  "status": "ONE_RO_DIAGNOSTIC_STARTED",
+  "utc": "2026-10-29T15:02:49.235599+00:00",
+  "authority": "Separate direct CTO RO permission conveyed by Lead; replaces logs-only task; no closed token used",
+  "transport": "vps1-direct / sudo -n -- python3 -B -",
+  "requestCodeSha256": "519ffd396ef78788919a738cccc1935a6de98b93b7e77c8ec16b9adbdd643442",
+  "paths": [
+    "/review/ normal",
+    "/review/ Origin=https://example.invalid",
+    "/review/.p3-combined-probe normal"
+  ],
+  "requestsAllowed": 3,
+  "noRetry": true,
+  "preExistingCombinedExactResponsesAvailable": false
+}
