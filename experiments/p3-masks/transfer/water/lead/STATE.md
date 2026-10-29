@@ -65,8 +65,11 @@ Dark [текущий STATE](../../dark/lead/STATE.md): targeted TQA/VQA идут
 
 ## Публикационный gate — пока server_write=false
 
-Release idle. До завершённого Dark bounded RESULT/QA нового SSH-аудита,
-пакета/intent/staging/upload/lock/service действий не начинать.
+Оба bounded RESULT/QA теперь завершены: Dark targeted TQA18e880e иVQAbc34a864
+полностью прочитаны Lead, localD-POP закрыт, общий artPASS не выдан.
+Existing Release получает ОДИН combined local intent/fresh opaque RO audit.
+Пока Release idle и нового SSH-аудита/intent нет; writes/staging/upload/lock/
+service actions запрещены до нового exact CTO token. Сам Lead не пишет.
 CTO явно закрыл P5 token/window2026-10-29T10:55:12Z, активных writers тогда нет;
 следующее окно зарезервировано P3. Предпочтение CTO: ОДИН combined local intent/
 одно окно для двух самостоятельных sibling pages/artifacts/verdicts:
@@ -110,6 +113,6 @@ action/target/toolcall/reason CTO, без чтения sensitive policy/config/o
 P2/P4/P5/P6 implementation/art/masks/candidates/findings не читать; commonP0/P1
 и opaque publication wrapper разрешены. Raw/frozen/evidence/history сохранять.
 
-Следующее: завершить адресные Dark QA/RESULT; затем один Release intent,
+Следующее: один Release intent по двум завершённым RESULT,
 fresh guard+новый token, serial publication/postchecks двух Review, явная
 передача и закрытие окна. Не останавливаться на ACK/STATE/локальных previews.

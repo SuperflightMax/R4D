@@ -5,7 +5,22 @@ Worktree: `E:\R4D\perspective\p3-worktrees\lead`.
 Branch: `codex/r4d-p3-masks-lead-01`. Новых ролей/веток/worktrees нет.
 [Метод и исходные входы](BASELINE.md) зафиксированы до переноса.
 
-## Сейчас: новый frozen04 на адресной независимой QA, публикации нет
+## BOUNDED DARK RESULT COMPLETE — targeted Technical PASS / overall Visual PARTIAL
+
+[RESULT](RESULT.md) содержит точный кандидат, применённый рецепт, независимые
+доказательства и решение Lead. Targeted Technical report
+`18e880e117f30747c4d938b1f94cf3622f20fdc0` полностью прочитан и интегрирован:
+[REPORT](../technical-qa/targeted-receiver-front04/REPORT.md).93files/MIME/
+14CP provenance/12lines scope,25selected states/68browser samples совпали.
+Targeted Visual report `bc34a864bc44cba231d466daa46bdc7b02651845` полностью
+прочитан и интегрирован: [REPORT](../visual-qa/receiver-front-edge-04/REPORT.md).
+Lead лично посмотрел независимый actual D-POP A/B монтаж. D-POP-01 локально
+закрыт на04,43paired states/camera exact,normalPlay/neighboring100%/200%,
+существенной новой регрессии в трёх good entries и side-подходе не найдено.
+Общий Visual PASS не дан: тени/все направления/остальные48 records имеют
+пределы покрытия. Малые RGB-различия entry до14/255 не выданы за pixel identity.
+Исторический FAIL03 сохранён. Оба own QA old/new tabs закрыты, read-complete
+6869 и6870 явные. Публикации нет; write token пока отсутствует.
 
 Builder handoff `86d35d7af73883d83fd976eb4c0d5ef281048024` полностью прочитан
 Lead: [STATE](../builder/STATE.md), [RECIPE](../builder/RECIPE.md), actual freeze.
@@ -80,8 +95,8 @@ Visual PASS не наследуется.
 оба send isError=false, selected gpt-6.1-sol/xhigh, Root max не менялся.
 TQA turn: `01a187a5-57eb-7e90-a0c5-3d79fdbc24c5`.
 VQA turn: `01a187a5-5a8c-7ef2-971c-4876a38daa11`.
-Обе active, новых вердиктов пока нет. Dispatch повторно не выдавать.
-D-POP-01 остаётся OPEN до независимого visible retest.
+Обе завершены/idle/errornull. Отчёты/решение наверху. Dispatch повторно не выдавать.
+D-POP-01 CLOSED locally on04/seed3858699109/2010–2019,2044–2047.
 
 Builder selfcheck сохранил40actualJPEG и4actualCP.2012 fullCP совпал сVQA03.
 2011–2018 раскрытие постепенное; новый порог shadow2045/ball2046 без видимого
@@ -92,11 +107,14 @@ partial overlap. Это selfcheck/наблюдение Lead, не независ
 
 ## Следующий gate
 
-Дождаться двух отдельных адресных Dark reports, прочитать их полностью,
-разрешить фактические новые дефекты в bounded объёме. Water имеет Technical
-PASS c482 и Visual PARTIAL42dacf; W-EARLY-POP локально закрыт, W-DIVIDER-01
-классифицирует Artist read-only turn01a187a1-bc02-7b22-8141-c085fb774d39.
-Затем отдельные обоснованные board RESULT/рецепты, только после этого Release.
+Оба Dark reports прочитаны полностью, [Dark RESULT](RESULT.md) завершён.
+Water имеет Technical PASS c482/Visual PARTIAL42dacf и отдельный
+[Water RESULT](../../water/lead/RESULT.md). Artist triagecb8e869 прочитан:
+W-DIVIDER-01 оставлен OPEN как coverage+planeCollapse spatial ambiguity,
+не depth-off и не доказанная единственная physics/mapping вина.
+Два bounded результата завершены. Теперь existing Release получает ОДИН
+полный combined local intent и fresh opaque RO baseline для отдельного token.
+Не делать server writes до нового exact CTO разрешения; сам Lead не пишет.
 
 Release idle, server_write=false, новых SSH-аудита/пакета/intent нет.
 CTO закрыл P5 token/window10:55:12UTC и резервировал следующее окно P3.
@@ -110,6 +128,6 @@ prefixes `/review/r4d/p3-masks-water/` и `/review/r4d/p3-masks-dark/`, artifact
 Builder postflight12:21:57Z RAMfree15.024GiB/E11.624GiB/CPU1%; не резерв.
 E≤4GiB diagnose,≤2 safe checkpoint/stop. Только собственные E outputs и
 process-local TEMP/TMP. Никаких global settings/credentials/policies/cleanup.
-Legacy denied call7b166cdf46834d468b5f9c297aad6e9f не повторять/не обходить;
+Legacy denied call_7b166cdf46834d468b5f9c297aad6e9f не повторять/не обходить;
 новый denial — exact-operation STOP с action/target/toolcall/reason.
 Jungle, P2/P4/P5/P6 implementation/art/findings и чужие процессы не трогать.
