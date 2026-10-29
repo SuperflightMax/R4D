@@ -50,6 +50,129 @@
     "manifestBytes": 66026,
     "manifestSha256": "13f443587180095cb701564ee7cdd24a3e1e062932cc075a3cb1de37e056ef91"
   },
+  "completion": {
+    "releaseCommit": "33654aaed2558c99e44a12f3f6e0e5f5deffe993",
+    "releaseReport": {
+      "path": "experiments/p5-regenerated-objects/release/SEALED_INTENT_C03_FINAL_01.md",
+      "bytes": 8521,
+      "sha256": "51f95da71afe248e46a3982cc1b9ad9b17768191d6f9d45b1cfbf898f993e300"
+    },
+    "releaseState": "completed/pushed; worktree clean; STOP/idle",
+    "sealedLocalRoot": "E:\\R4D\\perspective\\p5-runtime\\release-engineer\\p5-review-release-intent-03-final-01",
+    "seal": {
+      "path": "SEAL.json",
+      "bytes": 19587,
+      "sha256": "623ecdd42aef0fa8c8eaabf73e47543dd167407f27a696e74a2bde79de32d523",
+      "createdUtc": "2026-10-29T09:35:43.945749+00:00",
+      "artifactCount": 84,
+      "artifactBytes": 45839805,
+      "excludes": "SEAL.json and SEAL.sha256 only",
+      "nonce": "df5a2a1da52e4048b8ef1c8d3e5a8ef9"
+    },
+    "keyArtifacts": [
+      {
+        "bytes": 541,
+        "mime": "application/json",
+        "path": "baseline-comparison.json",
+        "provenance": "local-audit/state",
+        "sha256": "b2ef11871de328faf9fdec0907988014f5deaf6509d63021662d1254186871d9"
+      },
+      {
+        "bytes": 13351,
+        "mime": "application/json",
+        "path": "execution-plan.json",
+        "provenance": "local-audit/state",
+        "sha256": "77e4092f737b4e119b97da269ee2aa8b0b4289122ae5f3425704ec416c84a6bb"
+      },
+      {
+        "bytes": 4916,
+        "mime": "text/plain; charset=utf-8",
+        "path": "HANDOFF.md",
+        "provenance": "local-audit/state",
+        "sha256": "0fa89f3bd5edcfe43b79e7c6f3d5375329a981a2c537813451246db2c71aee47"
+      },
+      {
+        "bytes": 6425,
+        "mime": "application/json",
+        "path": "intent.json",
+        "provenance": "local-audit/state",
+        "sha256": "503909019a72e512f93fc98ca83dc7a034f010a0e0b1b366e99a9c1067d02128"
+      },
+      {
+        "bytes": 21862400,
+        "mime": "application/x-tar",
+        "path": "payload.tar",
+        "provenance": "exact-frozen-c03/common-wrapper-delta",
+        "sha256": "b32b08fd1d0f052ab3ed84b6810fb11203b85cad360c8fae408992635273849d"
+      },
+      {
+        "bytes": 229197,
+        "mime": "application/json",
+        "path": "planned-root-inventory.json",
+        "provenance": "local-audit/state",
+        "sha256": "24961a5a9036d54dcac5e23d75f24c19998dd07920a0839b82c5a62c4e9bca49"
+      },
+      {
+        "bytes": 797,
+        "mime": "text/plain; charset=utf-8",
+        "path": "templates/changelog-append.txt",
+        "provenance": "local-plan/helper",
+        "sha256": "ccf94768db1125f1388fd7fb4ecdb47d59160254f82aa3cb5b3f64cc306362a4"
+      },
+      {
+        "bytes": 434,
+        "mime": "text/plain; charset=utf-8",
+        "path": "templates/rollback-append.txt",
+        "provenance": "local-plan/helper",
+        "sha256": "247553ad380357975ec64619cb1682a117ae49383cdc3ac59cba334d63985e17"
+      },
+      {
+        "bytes": 797,
+        "mime": "text/plain; charset=utf-8",
+        "path": "templates/service-append.txt",
+        "provenance": "local-plan/helper",
+        "sha256": "ccf94768db1125f1388fd7fb4ecdb47d59160254f82aa3cb5b3f64cc306362a4"
+      },
+      {
+        "bytes": 342507,
+        "mime": "application/json",
+        "path": "write-ledger.json",
+        "provenance": "local-audit/state",
+        "sha256": "956f245de6ed6a3a6ae5bb85035921bee7e2317b1431402891a4ceca2ac953f3"
+      }
+    ],
+    "baseline": {
+      "files": 645,
+      "dirs": 85,
+      "bytes": 100931804,
+      "protectedRawSha256": "e663e484d378f3f66ffd6783bbf0805e3192ecbcc11df03e221d7afea8b65522",
+      "twoProtectedInventoriesEqual": true,
+      "noThirdInventory": true,
+      "nonCoreObservation": "/run ancestor mtime/ctime changed outside protected PUBLIC; absence/no-symlink/identity/permissions guards equal; raw observations and checker failures retained"
+    },
+    "plannedRoot": {
+      "files": 674,
+      "dirs": 88,
+      "bytes": 122587862,
+      "treeSha256": "d1176676435780637616da40a05c6dc9ff0a58e4a6678e3daa4c1a73755a50b6",
+      "publishedFilesExcludingOuterManifest": 673,
+      "p5OnlyNestedTarget": true,
+      "opaqueSeparateInodeNeighbors": true
+    },
+    "payload": {
+      "safeRegularLeaves": 31,
+      "bytes": 21862400,
+      "sha256": "b32b08fd1d0f052ab3ed84b6810fb11203b85cad360c8fae408992635273849d",
+      "noLinksSpecialPaxUnsafePaths": true
+    },
+    "catalogDeclaredChanges": 2,
+    "writeLedgerRecords": 803,
+    "serverWrites": 0,
+    "token": null,
+    "actualPublishedHttpUi": "UNVERIFIED",
+    "quality": "CTO accepted bounded C03; no general P5/FullArt PASS; receiver02/04 and other unverified areas retained",
+    "next": "CTO full sealed-package review and separate new exact single-use token; Lead/Release STOP/idle"
+  },
   "scope": {
     "localSealedIntent": true,
     "permittedServerReads": "fresh raw snippet, fixed guard metadata, two opaque full PUBLIC inventories, exact shared catalog/rootmanifest metadata, eight absence/no-symlink ancestor checks",
