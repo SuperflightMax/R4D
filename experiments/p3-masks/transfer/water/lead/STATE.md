@@ -65,6 +65,22 @@ Dark [текущий STATE](../../dark/lead/STATE.md): targeted TQA/VQA идут
 
 ## Публикационный gate — STOP V2 PREFLIGHT PROTECTION MISMATCH; server writes=false
 
+LATEST V3 REVIEW: source372344f9f6198cd811daa4612256a2fd8b32597b clean/merged.
+Root полностью прочитал changed remote/launcher, canonical/test/index/proofs,
+проверил11pins/53priorimmutablefiles, originalscopekeys,197derivedpayloads и
+archive0cee exact. Independent actual-function offline13case regression PASS
+15:51:36.964475Z, docprefix/inode/duplicateguard AST/order PASS, no network/phase.
+Receipt E:\R4D\perspective\p3-runtime\lead\transfer-water-dark\combined\wrapper-v3-independent-review-01\sealed-372344f\HTTP_RUNTIME_REGRESSION_LEAD.json.
+Remote6280d062adc4b4cf561980c8ecfd3439e1542561747219ddcd6833d8aa40add9;
+launcher3cf1852fcea0b83fa43a1a394d549cd2c263a49599319662201b5593d17bfd12;
+scope726cb8e2e568bb4ba4a5e89ee637f323acbfc03fb093cf626c03d9efc229a564;
+canonicalb18a92789cdf55ab58ae9f1c7eece266fe14a2d4dd740fb4f981bda2bda1e0a5;
+indexd69a711f47770deb823e92b3a7d4979556cbaa8767bf61762fc0273bc64644a8.
+Exactnewtokenrequest отправленCTO. ОбаoldtokensCLOSED, noV3remote/execution/HTTP.
+Localturn01a1883c ещёactive/errornull; Root далТОЛЬКОfinalizationsteering
+«еслиpushverified—короткийfinal/idle, никакихновыхпроверок»; неduplicateTask.
+БудущийexecutionтолькопослеNEWCTOtoken иfreshcompleted/idle/errornull.
+
 CURRENT: CTO принял prospective baseline ТОЛЬКО измеренного контекста и разрешил
 ОДНУ LOCAL V3 preparation, неexecution. A42ebe2696909ae6491d233c5b40c1656dc371ab
 полностью прочитан/merged:15:12:00.561904Z normalcatalog200 exact14511/
