@@ -1,3 +1,11 @@
+Current RO body identification: **old catalog size/SHA MATCH; server_write=false.**
+[Exact one-GET receipt and limits](../../water/release-engineer/REVIEW_BODY_IDENTITY_2026-10-29.md). Response15:12:00Z HTTP200,14511bytes,
+SHA eb57e35b…a6885. Only current content identity in this context; not14:52
+recovery or universal auth acceptance. Both execution tokens CLOSED, no phase/
+code/guard changes. Window RESERVED P3; idle for CTO decision.
+
+---
+
 Current RO diagnosis complete: **server_write=false; both execution tokens CLOSED.**
 [Bounded HTTP diagnosis](../../water/release-engineer/HTTP_DIAGNOSIS_2026-10-29.md): one separately authorized3GET at15:03:07Z
 returned200/403/404; exact14:52 preflight responses remain unknown.
