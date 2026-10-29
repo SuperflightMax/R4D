@@ -1,0 +1,71 @@
+{
+  "schema": "r4d.p5.publication-dispatch/1",
+  "measuredUtc": "2026-10-29 10:03:52 UTC",
+  "sourceCtoThread": "01a174b2-1b0d-79b1-866f-f40e23f6dfb2",
+  "lead": {
+    "turn": "01a18719-39d4-7c30-a075-32d61331fe93",
+    "headBefore": "70791a88e62f2abd2a348ddabd68defaa9556f94",
+    "cleanBefore": true
+  },
+  "release": {
+    "thread": "01a1842d-ddd8-7b20-a27a-2ebc52ecea57",
+    "preSendTurn": "01a186eb-770c-7fa0-8fda-a19c72dcdbea",
+    "preSendStatus": "completed/idle; no duplicate",
+    "newTurn": "01a1871b-68a5-7e30-98a8-4db75920f4a7",
+    "continuationCount": 1,
+    "requestedModel": "gpt-6.1-sol",
+    "requestedThinking": "xhigh",
+    "firstCompletedTool": {
+      "id": "exec-485f54d7-b53e-41cf-9352-032cf987312f",
+      "exitCode": 0,
+      "utc": "2026-10-29T10:01:39.3240761Z",
+      "head": "33654aaed2558c99e44a12f3f6e0e5f5deffe993",
+      "executionEvidenceRootAbsent": true,
+      "tokenBytesVerified": 6878,
+      "tokenSha256Verified": "8e6c24bc70b84c231ade62b6d507363a490201347ebbecb3ccae50313c062f1d"
+    }
+  },
+  "actualSendReceipt": {
+    "tool": "mcp__codex_app__send_message_to_thread",
+    "target": "01a1842d-ddd8-7b20-a27a-2ebc52ecea57",
+    "host": "local",
+    "model": "gpt-6.1-sol",
+    "thinking": "xhigh",
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"threadId\":\"01a1842d-ddd8-7b20-a27a-2ebc52ecea57\"}"
+        }
+      ],
+      "isError": false
+    },
+    "measuredImmediatelyAfterSendUtc": "2026-10-29 10:01:23 UTC"
+  },
+  "token": {
+    "path": "E:/R4D/perspective/coordination/p5-c03-release-token-2026-10-29-final-01.json",
+    "bytes": 6878,
+    "sha256": "8e6c24bc70b84c231ade62b6d507363a490201347ebbecb3ccae50313c062f1d",
+    "id": "CTO-P5-C03-PUBLIC-20261029T095644Z-623ecdd42aef",
+    "nonce": "df5a2a1da52e4048b8ef1c8d3e5a8ef9",
+    "issuedAtUtc": "2026-10-29T09:56:44Z",
+    "firstServerWriteBeforeUtc": "2026-10-29T10:56:44.000Z",
+    "immutable": true
+  },
+  "sealedPacketRoot": "E:/R4D/perspective/p5-runtime/release-engineer/p5-review-release-intent-03-final-01",
+  "executionEvidenceRoot": "E:/R4D/perspective/p5-runtime/release-engineer/p5-review-release-execution-03-final-01",
+  "sealSha256": "623ecdd42aef0fa8c8eaabf73e47543dd167407f27a696e74a2bde79de32d523",
+  "publicUrl": "https://superflight.space/review/r4d/p5-regenerated-objects/",
+  "scope": {
+    "phases": "P0 through P8 plus guarded R/A exactly as token/plan/ledger",
+    "phase0": "pending executor checkpoint at this dispatch record",
+    "firstServerWrite": "not yet observed by Lead at initial checkpoint",
+    "globalWindow": "CTO allocated P5 only; P3 transfer server_write=false",
+    "windowClosure": "CTO only",
+    "productionQaRepeated": false,
+    "newRolesWorktreesBranches": false,
+    "generalFullArtP5Pass": false,
+    "residuals": "receiver02/04 and unverified rails/contours retained",
+    "next": "owned execution to Delivery handoff/final result or exact guarded STOP/rollback"
+  }
+}
