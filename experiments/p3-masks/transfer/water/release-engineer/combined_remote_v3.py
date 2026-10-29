@@ -318,6 +318,7 @@ def run(s,auth,phase,actual_source_hash):
           'Rollback '+str(backup)+'/review.locations.conf.before ; refreshed '+st['beforeSwitchUtc']+'; old root '+str(old)+' / old snippet '+s['oldSnippetSha256']+'. Guard current own P3 root/snippet before restore; never overwrite later edits or delete old releases/DB/sessions.\n'
           'Neither board is full visual/art PASS. Window/slot release remains CTO responsibility after handoff.\n')
         docs=[Path(s['serviceDoc']),Path(s['changelog'])]
+        for p in docs:require(auth['token'].encode() not in p.read_bytes(),'token already documented; do not repeat append')
         before=[opaque_doc_snapshot(p) for p in docs]
         st.update(documentStartedUtc=now(),docsBefore=before);persist(st,True)
         proofs=[append_document(p,block.encode(),snapshot) for p,snapshot in zip(docs,before)]

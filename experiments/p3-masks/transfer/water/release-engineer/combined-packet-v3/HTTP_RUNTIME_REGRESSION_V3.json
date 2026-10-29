@@ -1,8 +1,8 @@
 {
   "status": "PASS",
-  "utc": "2026-10-29T15:25:21.704059+00:00",
+  "utc": "2026-10-29T15:33:57.133559+00:00",
   "test": "Actual imported V3 helpers with offline connection stub and opaque existing local catalog/module fixtures",
-  "remoteSha256": "c3073751235a8ff066dae4a383ba7008e6381455ea4416edd4f6559ffe5208d2",
+  "remoteSha256": "6280d062adc4b4cf561980c8ecfd3439e1542561747219ddcd6833d8aa40add9",
   "launcherSha256": "3cf1852fcea0b83fa43a1a394d549cd2c263a49599319662201b5593d17bfd12",
   "scopeSha256": "726cb8e2e568bb4ba4a5e89ee637f323acbfc03fb093cf626c03d9efc229a564",
   "networkUsed": false,
@@ -138,8 +138,9 @@
   "stageSwitchRollbackTreeAndForeignMetadataGuardsUnchanged": true,
   "uploadWriteLogicUnchanged": true,
   "originalScopeKeysUnchanged": true,
+  "duplicateAppendGuardAstPreservedBeforeSnapshots": true,
   "publicChecksPlanned": 217,
   "modulesPlanned": 10,
   "syntaxPass": true,
-  "testSourceSha256": "911875701186309fed5fb42109fe19ee8dcd9a8cef3ae1b1f0b795e9a794f8f8"
+  "testSourceSha256": "efe2f22c4d39d894aeb117933db09e77d66ff91ec14f9d040c50022be3a803bc"
 }

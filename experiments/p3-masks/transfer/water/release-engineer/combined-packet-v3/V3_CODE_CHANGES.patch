@@ -190,8 +190,7 @@
 @@ -182 +317 @@
 -          +str(st['publicChecks'])+' HTTPS checks; normal auth303/Origin403/dotfile404 protections unchanged. Public post-auth JS MIME/body/UI not verified; no login/cookies/auth/globalMIME/services/ports changes.\n'
 +          +str(st['publicChecks'])+' HTTPS checks; exact prospective context normal catalog200/bound new hash, Origin403 and dotfile404 with seven bound headers. Status counts '+json.dumps(st['httpStatusCounts'],sort_keys=True)+'. Approved payloads verified '+str(st['approvedPayloadsVerified'])+'; all10 public JS MIME/body verified='+str(st['publicModuleMimeBodyVerified'])+'; limited responses '+str(st['limitedResources'])+'. HTML/login/denial never counted as scene/module success. Public UI requires separate lawful IAB receipt; SSH does not verify UI. No auth/cookies/globalMIME/services/ports changes.\n'
-@@ -186,6 +321,4 @@
--        for p in docs:require(auth['token'].encode() not in p.read_bytes(),'token already documented; do not repeat append')
+@@ -187,5 +322,4 @@
 -        hashes=[]
 -        for p in docs:
 -            with p.open('ab') as f:f.write(block.encode());f.flush();os.fsync(f.fileno())
@@ -201,7 +200,7 @@
 +        st.update(documentStartedUtc=now(),docsBefore=before);persist(st,True)
 +        proofs=[append_document(p,block.encode(),snapshot) for p,snapshot in zip(docs,before)]
 +        st.update(status='PUBLISHED_COMBINED_PARTIAL_WITH_ACCESS_LIMITATIONS',documentedUtc=now(),docs=proofs);persist(st,True)
-@@ -193 +326 @@
+@@ -193 +327 @@
 -        return {'status':st['status'],'utc':now(),'docs':hashes,'publishedRecordSha256':sha((backup/'PUBLISHED.json').read_bytes()),'windowReleasedByEngineer':False}
 +        return {'status':st['status'],'utc':now(),'docs':proofs,'publishedRecordSha256':sha((backup/'PUBLISHED.json').read_bytes()),'windowReleasedByEngineer':False}
 --- combined_execute_v2.py

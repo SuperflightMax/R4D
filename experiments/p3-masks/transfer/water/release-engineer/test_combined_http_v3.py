@@ -48,6 +48,18 @@ def core_write_logic_unchanged(old,new):
                         and len(n.test.comparators)==1 and isinstance(n.test.comparators[0],ast.Constant)
                         and n.test.comparators[0].value==phase)
         assert dump_without_location(get(old_run))==dump_without_location(get(new_run)),phase
+    def document(run):
+        return next(n for n in run.body if isinstance(n,ast.If) and isinstance(n.test,ast.Compare)
+                    and isinstance(n.test.left,ast.Name) and n.test.left.id=='phase'
+                    and len(n.test.comparators)==1 and isinstance(n.test.comparators[0],ast.Constant)
+                    and n.test.comparators[0].value=='document')
+    old_document=document(old_run);new_document=document(new_run)
+    old_guard=next(n for n in old_document.body if isinstance(n,ast.For))
+    new_guard=next(n for n in new_document.body if isinstance(n,ast.For))
+    assert dump_without_location(old_guard)==dump_without_location(new_guard),'duplicate append guard changed'
+    snapshot=next(n for n in new_document.body if isinstance(n,ast.Assign) and
+                  any(isinstance(t,ast.Name) and t.id=='before' for t in n.targets))
+    assert new_document.body.index(new_guard)<new_document.body.index(snapshot),'duplicate guard must precede both snapshots'
     get_tree=lambda source:next(n for n in ast.parse(source).body if isinstance(n,ast.FunctionDef) and n.name=='tree')
     assert dump_without_location(get_tree(old))==dump_without_location(get_tree(new))
 
@@ -136,7 +148,7 @@ def main():
              'networkUsed':False,'sshUsed':False,'phaseRun':False,'bodyOutputOrSaved':False,
              'cases':results,'docPrefixProofPass':True,'changedDocPrefixAndInodeRejected':True,
              'stageSwitchRollbackTreeAndForeignMetadataGuardsUnchanged':True,'uploadWriteLogicUnchanged':True,
-             'originalScopeKeysUnchanged':True,'publicChecksPlanned':217,'modulesPlanned':10,
+             'originalScopeKeysUnchanged':True,'duplicateAppendGuardAstPreservedBeforeSnapshots':True,'publicChecksPlanned':217,'modulesPlanned':10,
              'syntaxPass':True,'testSourceSha256':sha(Path(__file__).read_bytes())}
     receipt_path.write_bytes((json.dumps(receipt,ensure_ascii=False,indent=2)+'\n').encode())
     print(json.dumps(receipt,ensure_ascii=False))

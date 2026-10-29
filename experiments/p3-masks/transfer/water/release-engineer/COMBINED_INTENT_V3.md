@@ -47,12 +47,12 @@ Original WRITE_SCOPE SHA aff5355d…959 не редактировался.
 
 | Binding | Bytes | SHA256 |
 |---|---:|---|
-| Remote v3 | 24334 | `c3073751235a8ff066dae4a383ba7008e6381455ea4416edd4f6559ffe5208d2` |
+| Remote v3 | 24459 | `6280d062adc4b4cf561980c8ecfd3439e1542561747219ddcd6833d8aa40add9` |
 | Launcher v3 | 5694 | `3cf1852fcea0b83fa43a1a394d549cd2c263a49599319662201b5593d17bfd12` |
 | WRITE_SCOPE_V3 | 131765 | `726cb8e2e568bb4ba4a5e89ee637f323acbfc03fb093cf626c03d9efc229a564` |
-| Actual-function regression source | 10589 | `911875701186309fed5fb42109fe19ee8dcd9a8cef3ae1b1f0b795e9a794f8f8` |
-| Offline runtime-smoke receipt | 3934 | `da2601a1cf2b387e3807339d08d9905850a283301ee4057fa6144d45ee888434` |
-| Exact code diff | 16162 | `5ecedc8f590913b05b747ed95a0527506feb951e7e5cd6f04139998256766256` |
+| Actual-function regression source | 11633 | `efe2f22c4d39d894aeb117933db09e77d66ff91ec14f9d040c50022be3a803bc` |
+| Offline runtime-smoke receipt | 3993 | `c0a9775bd99e565f4bac6b0d74379e34363238ccbea428d5088558327be0fb30` |
+| Exact code diff | 16036 | `876e4c7ac2085a6257afec185e9b38f7dffa8794633527181141063a3e4607c9` |
 | Scope delta | 62146 | `5885cd92bde6a2caf2d13a0865673f9ceb5f3a4eb3a886deec43463d5cdffc9f` |
 
 V3 launcher читает только scope-v3/remote-v3 и пишет local receipts только
@@ -99,6 +99,8 @@ Outcome/doc append записывает actual status counts/payload/module resu
 Перед document append opaque snapshots ровно двух прежних targets:
 `/home/sf/assistant-context/vps/services/superflight-studio.md`,
 `/home/sf/assistant-context/vps/CHANGELOG.md`: inode/uid/gid/mode/bytes/SHA.
+Original duplicate-token guard `auth['token'].encode() not in p.read_bytes()`
+сохранён для обоих targets **до обоих snapshots**; prefix proof его не заменяет.
 Before receipts сохраняются в own declared STATE/PUBLISHED до append.
 После каждого append — SHA первых oldNbytes и прежние inode/uid/gid/mode;
 любое расхождение STOP с opaque metadata evidence. Тела docs не выводятся.
@@ -138,8 +140,8 @@ QA/recipe refs — unchanged [BOARD_PUBLICATIONS](combined-packet/BOARD_PUBLICAT
 
 [Reproducible actual-function test](test_combined_http_v3.py),
 [offline runtime-smoke receipt](combined-packet-v3/HTTP_RUNTIME_REGRESSION_V3.json):
-**PASS2026-10-29T15:25:21.704059+00:00**,13focused HTTP cases, плюс local opaque
-append/prefix proof. Реальные imported functions и реальные opaque local catalog/
+**PASS2026-10-29T15:33:57.133559+00:00**,13focused HTTP cases, плюс local opaque
+append/prefix proof и AST-identity/order original duplicate-token guard. Реальные imported functions и реальные opaque local catalog/
 module fixtures; connection полностью offline stub. Приняты exactold/new200/hash/
 headers; отвергнуты303/wrongbody/Origin/dot/header/Location. HTML/denial не
 засчитаны JS; altered prefix/inode rejected. Нет сети/SSH/phase run.
