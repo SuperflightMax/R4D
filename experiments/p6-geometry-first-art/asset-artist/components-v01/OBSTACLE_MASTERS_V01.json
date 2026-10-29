@@ -1,0 +1,326 @@
+{
+  "schema": "r4d.p6.obstacle-masters.v1",
+  "method": "Separate component follow-up after preserved whole-image failure; no claim that whole-image retained geometry",
+  "status": "4 actual native RGBA family masters for25 fixed pins; actual assembly/masks and artistic acceptance pending",
+  "acceptedP1": "4b47db04c7140ebf88f69b91faa0b790d46f22ec",
+  "configSha256": "dd5c519cd6d4b7295118e0a3a1063efed424a0ce739450bd5153c6a9941982db",
+  "manifestSha256": "7784dc0a215d0e472cf06a4eee03793592727cf0fa9a1fa0e0c78e5f1d17da18",
+  "styleSource": {
+    "file": "../raw/whole-board-v02.png",
+    "sha256": "539e4b1cbbcca9931dcc5c1bfaedc680de03720a21d9c82148cfb74b1198680f",
+    "role": "P6 own generated art quality/material/light only; its geometry is not inherited"
+  },
+  "masters": [
+    {
+      "family": "wood",
+      "instanceIds": [
+        "wood-01",
+        "wood-02",
+        "wood-03",
+        "wood-04",
+        "wood-05",
+        "wood-06",
+        "wood-07",
+        "wood-08"
+      ],
+      "texture": "raw/wood-master-v01.png",
+      "sha256": "802f339d693d4dfc175a1e0f9013c78a6e9062bd6532a3db228bd98cd307e161",
+      "canvas": [
+        1254,
+        1254
+      ],
+      "alphaBounds": [
+        {
+          "threshold": 1,
+          "rectInclusive": [
+            0,
+            30,
+            1229,
+            1229
+          ]
+        },
+        {
+          "threshold": 16,
+          "rectInclusive": [
+            357,
+            82,
+            895,
+            1171
+          ]
+        },
+        {
+          "threshold": 128,
+          "rectInclusive": [
+            358,
+            83,
+            894,
+            1170
+          ]
+        }
+      ],
+      "groundAnchorPx": [
+        625,
+        1032
+      ],
+      "groundEllipseRadiusPx": [
+        255,
+        138
+      ],
+      "visibleHeightAboveGroundPx": 949,
+      "groundEllipseBasis": "First delivered artist rim fit; keep stable for comparison with WOOD_PACKET_V01.json",
+      "lowerRimFitRmsPx": null,
+      "normalizationRule": "Place groundAnchor at P(pin.x,pin.y); initial uniform texture scale=projected horizontal pin radius/groundEllipseRadiusPx[0]. Native r, centre and projection remain fixed; lower ellipse and all25 depths need actual assembled overlay.",
+      "bakedGroundShadow": false,
+      "groundShadow": {
+        "texture": "../raw/ball-shadow-v01.png",
+        "sha256": "3a4e58a4d3b9b707e6ec10ffe80e26c561605a4f99d5498c04ae5c684cf5606a",
+        "contentCenterPx": [
+          885.5,
+          442
+        ],
+        "contentRadiusPx": 312,
+        "radiusFactorNative": 1.15,
+        "offsetRadiusFactorsNative": [
+          -0.45,
+          0.65
+        ],
+        "opacity": 0.42,
+        "rule": "One static own P6 floor shadow per obstacle, projected exactly once with accepted matrix, below body; no baked floor duplicate. These are initial art parameters pending actual normal-scale scene inspection."
+      },
+      "alphaNote": "Raw low-alpha fringe is preserved; whole-canvas extent does not define physical footprint. Optional renderer alpha cutoff16/255 can suppress very faint specks."
+    },
+    {
+      "family": "flower",
+      "instanceIds": [
+        "flower-01",
+        "flower-02",
+        "flower-03",
+        "flower-04",
+        "flower-05",
+        "flower-06",
+        "flower-07"
+      ],
+      "texture": "raw/flower-master-v01.png",
+      "sha256": "42fc1808e7049d9dd6028770d476b4506722fdda70e83a13aaf33f2554a00a05",
+      "canvas": [
+        1254,
+        1254
+      ],
+      "alphaBounds": [
+        {
+          "threshold": 1,
+          "rectInclusive": [
+            0,
+            21,
+            1243,
+            1253
+          ]
+        },
+        {
+          "threshold": 16,
+          "rectInclusive": [
+            178,
+            256,
+            1078,
+            988
+          ]
+        },
+        {
+          "threshold": 128,
+          "rectInclusive": [
+            179,
+            257,
+            1077,
+            988
+          ]
+        }
+      ],
+      "groundAnchorPx": [
+        626.0,
+        738.4310041135094
+      ],
+      "groundEllipseRadiusPx": [
+        449.5,
+        246.74386512646635
+      ],
+      "visibleHeightAboveGroundPx": 481.4310041135094,
+      "groundEllipseBasis": "Artist approximate ground ellipse from actual alpha>=128 lower-rim samples, not a physical collider or proved geometry match",
+      "lowerRimFitRmsPx": 2.5989885522917904,
+      "normalizationRule": "Place groundAnchor at P(pin.x,pin.y); initial uniform texture scale=projected horizontal pin radius/groundEllipseRadiusPx[0]. Native r, centre and projection remain fixed; lower ellipse and all25 depths need actual assembled overlay.",
+      "bakedGroundShadow": false,
+      "groundShadow": {
+        "texture": "../raw/ball-shadow-v01.png",
+        "sha256": "3a4e58a4d3b9b707e6ec10ffe80e26c561605a4f99d5498c04ae5c684cf5606a",
+        "contentCenterPx": [
+          885.5,
+          442
+        ],
+        "contentRadiusPx": 312,
+        "radiusFactorNative": 1.15,
+        "offsetRadiusFactorsNative": [
+          -0.22,
+          0.35
+        ],
+        "opacity": 0.42,
+        "rule": "One static own P6 floor shadow per obstacle, projected exactly once with accepted matrix, below body; no baked floor duplicate. These are initial art parameters pending actual normal-scale scene inspection."
+      },
+      "alphaNote": "Raw low-alpha fringe is preserved; whole-canvas extent does not define physical footprint. Optional renderer alpha cutoff16/255 can suppress very faint specks."
+    },
+    {
+      "family": "leaf",
+      "instanceIds": [
+        "leaf-01",
+        "leaf-02",
+        "leaf-03",
+        "leaf-04",
+        "leaf-05"
+      ],
+      "texture": "raw/leaf-master-v01.png",
+      "sha256": "bb382102d57762b25e3cd9e35bf7b50497cb668014f4fae6349d3baf5550e189",
+      "canvas": [
+        1470,
+        1070
+      ],
+      "alphaBounds": [
+        {
+          "threshold": 1,
+          "rectInclusive": [
+            0,
+            15,
+            1441,
+            1069
+          ]
+        },
+        {
+          "threshold": 16,
+          "rectInclusive": [
+            282,
+            110,
+            1187,
+            947
+          ]
+        },
+        {
+          "threshold": 128,
+          "rectInclusive": [
+            283,
+            110,
+            1186,
+            946
+          ]
+        }
+      ],
+      "groundAnchorPx": [
+        736.5,
+        699.5731166441365
+      ],
+      "groundEllipseRadiusPx": [
+        438.44,
+        246.36967664945587
+      ],
+      "visibleHeightAboveGroundPx": 589.5731166441365,
+      "groundEllipseBasis": "Artist approximate ground ellipse from actual alpha>=128 lower-rim samples, not a physical collider or proved geometry match",
+      "lowerRimFitRmsPx": 1.7300482223554763,
+      "normalizationRule": "Place groundAnchor at P(pin.x,pin.y); initial uniform texture scale=projected horizontal pin radius/groundEllipseRadiusPx[0]. Native r, centre and projection remain fixed; lower ellipse and all25 depths need actual assembled overlay.",
+      "bakedGroundShadow": false,
+      "groundShadow": {
+        "texture": "../raw/ball-shadow-v01.png",
+        "sha256": "3a4e58a4d3b9b707e6ec10ffe80e26c561605a4f99d5498c04ae5c684cf5606a",
+        "contentCenterPx": [
+          885.5,
+          442
+        ],
+        "contentRadiusPx": 312,
+        "radiusFactorNative": 1.15,
+        "offsetRadiusFactorsNative": [
+          -0.22,
+          0.35
+        ],
+        "opacity": 0.42,
+        "rule": "One static own P6 floor shadow per obstacle, projected exactly once with accepted matrix, below body; no baked floor duplicate. These are initial art parameters pending actual normal-scale scene inspection."
+      },
+      "alphaNote": "Raw low-alpha fringe is preserved; whole-canvas extent does not define physical footprint. Optional renderer alpha cutoff16/255 can suppress very faint specks."
+    },
+    {
+      "family": "frog",
+      "instanceIds": [
+        "frog-01",
+        "frog-02",
+        "frog-03",
+        "frog-04",
+        "frog-05"
+      ],
+      "texture": "raw/frog-master-v01.png",
+      "sha256": "2b052f5668c078968e6e70c8094c9e04c15774616c9b0e2358801c1302467229",
+      "canvas": [
+        1363,
+        1154
+      ],
+      "alphaBounds": [
+        {
+          "threshold": 1,
+          "rectInclusive": [
+            0,
+            0,
+            1361,
+            1153
+          ]
+        },
+        {
+          "threshold": 16,
+          "rectInclusive": [
+            171,
+            202,
+            1191,
+            1009
+          ]
+        },
+        {
+          "threshold": 128,
+          "rectInclusive": [
+            172,
+            203,
+            1190,
+            1009
+          ]
+        }
+      ],
+      "groundAnchorPx": [
+        681.0,
+        794.8041148764053
+      ],
+      "groundEllipseRadiusPx": [
+        509.5,
+        214.04843411497734
+      ],
+      "visibleHeightAboveGroundPx": 591.8041148764053,
+      "groundEllipseBasis": "Artist approximate ground ellipse from actual alpha>=128 lower-rim samples, not a physical collider or proved geometry match",
+      "lowerRimFitRmsPx": 1.766974410108257,
+      "normalizationRule": "Place groundAnchor at P(pin.x,pin.y); initial uniform texture scale=projected horizontal pin radius/groundEllipseRadiusPx[0]. Native r, centre and projection remain fixed; lower ellipse and all25 depths need actual assembled overlay.",
+      "bakedGroundShadow": false,
+      "groundShadow": {
+        "texture": "../raw/ball-shadow-v01.png",
+        "sha256": "3a4e58a4d3b9b707e6ec10ffe80e26c561605a4f99d5498c04ae5c684cf5606a",
+        "contentCenterPx": [
+          885.5,
+          442
+        ],
+        "contentRadiusPx": 312,
+        "radiusFactorNative": 1.15,
+        "offsetRadiusFactorsNative": [
+          -0.22,
+          0.35
+        ],
+        "opacity": 0.42,
+        "rule": "One static own P6 floor shadow per obstacle, projected exactly once with accepted matrix, below body; no baked floor duplicate. These are initial art parameters pending actual normal-scale scene inspection."
+      },
+      "alphaNote": "Raw low-alpha fringe is preserved; whole-canvas extent does not define physical footprint. Optional renderer alpha cutoff16/255 can suppress very faint specks."
+    }
+  ],
+  "limits": [
+    "Base ellipses are fits to real art, not a replacement for accepted geometry.",
+    "Consumer must show real lower-rim overlay/contact before final acceptance; one centre depth sort is not assumed sufficient.",
+    "Full-frame floor/boundaries/receivers and their occlusion masks are not yet delivered in this packet.",
+    "No imagegen raw was cropped, distorted or overwritten; native canvases differ and are named explicitly."
+  ]
+}
