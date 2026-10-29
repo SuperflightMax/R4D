@@ -26,6 +26,8 @@ native5ms/replay/checkpoint/ticks, independent Art/Geometry, source/flat/pan.
    рассматриваются в native/Pixi. Numeric hit не доказывает painted overlap.
 
 Исходные попытки/ограничения и любые будущие substantive method changes
-фиксируются раздельно до смены метода. Пока подключена только native диагностика:
-Art/Masks не проверены, вердикт переноса не объявляется. Серверная публикация
+фиксируются раздельно до смены метода. Первое полное применение60 masks17dc
+сохранено как full-method-03 на source c73d612; native/HTTP/ordinary browser
+selfcheck завершён, candidate frozen для независимых TQA/VQA. Это не их PASS.
+Exact bundle/manifest/evidence/freeze record указаны в STATE.md. Серверная публикация
 только отдельным Release по новому exact token CTO; server_write=false.

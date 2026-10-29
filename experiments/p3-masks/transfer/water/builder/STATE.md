@@ -1,6 +1,34 @@
 # Water P3 — Builder
 
-## Текущий checkpoint — EARLY_7_MASKS_HOLD_FOR_VQA
+## Текущий checkpoint — FULL_FIRST_METHOD_PRESERVED / TARGETED_DATA_REPAIR_PENDING
+
+Первое полное применение исходного метода сохранено отдельно:
+E:\R4D\perspective\p3-runtime\builder\transfer-water-dark\water\full-method-03.
+Source c73d6128970b2b022d5313b08c34cafdec9a1bc3,
+ART17dc9fcdc261562acb581dd8590096819734c807,71 masks.
+Все74 потребляемых raw files/PNG независимо сверены с hashes.json Artist.
+assets.json SHA256e93e5cfb6fbfa3c4ca9e5c2eadbc46b628713e952fe033fa216e00598e2a849d.
+97 payload files/3470168 bytes; file-manifest.json SHA256
+b3c697675ecd76af7848fa72367f943c1b9e4a27b325b098a9fef08135fe58d3.
+Offline hash/native exact replay/cross-board rejection проходят. Этот полный
+original-method набор пока не публиковался в preview и не заявлен QA/PASS.
+
+Lead сообщил: независимая VQA завершила чтение early02 и закрыла свою вкладку;
+read hold6868 снят. Immutable early02/manifest/evidence сохраняются.
+6868 пока по-прежнему early02, owned PID17640/session89871. Переключать только
+с явным named/hash handoff следующей версии. VQA независимо воспроизвела
+скачок1014/1015 при пересечении34755.12349268705 сразу тремя arch07 meshes.
+Следующий шаг Artist через Lead — обычная целевая коррекция depth/anchor данных,
+отдельный новый вариант. Новую сортировку/физику Builder не внедряет.
+Исходный полный71-mask результат17dc уже сохранён до такой коррекции.
+Не тратить полный QA цикл на заведомо прежний скачок до targeted доводки.
+
+Actual own browser Water checkpoint seed1/t106 успешно импортирован обратно
+с точным воспроизведением core. Dark продолжен независимо и уже frozen для QA.
+Свежий snapshot10:22:53Z: RAMfree16.742/31.907GiB, CPU7%,
+C16.229/D16.278/E11.880GiB. server_write=false. Jungle не менялся.
+
+## История — EARLY_7_MASKS_HOLD_FOR_VQA (hold позднее снят)
 
 Code f3b7ce8d94b0a9173c48d7ca6defb3837a10ed03.
 Artist4eb4001d8036048f716d9e7ab45bb560f3840cf6, exact assets.json SHA256

@@ -26,6 +26,9 @@ native5ms/replay/checkpoint/ticks, independent Art/Geometry, source/flat/pan.
    actual native/Pixi. Численные crossings сами по себе не дают visual PASS.
 
 Исходные попытки/ограничения и любые будущие substantive method changes
-фиксируются раздельно до смены метода. Текущий ранний артефакт —7 masks,
-не full candidate и не вердикт переноса. Серверная публикация только отдельным
+фиксируются раздельно до смены метода. Первый полный71-mask ART17dc сохранён
+как full-method-03/source c73d612 до targeted data-коррекции. VQA ранних7 masks
+подтвердила binary depth скачок arch07/1014–1015; old full не выдан за PASS.
+Следующая обычная anchor-коррекция — отдельный named вариант, без нового sort.
+Exact bundle/manifest/evidence в STATE.md. Серверная публикация только отдельным
 Release по новому exact token CTO; текущий server_write=false.
