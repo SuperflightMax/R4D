@@ -63,7 +63,21 @@ OldDark6869 PID37660/session87426 сохраняется для коротког
 Dark [текущий STATE](../../dark/lead/STATE.md): targeted TQA/VQA идут;
 не повторяют автоматически прежнюю полную матрицу/native build.
 
-## Публикационный gate — authorized V2 execution in progress
+## Публикационный gate — STOP V2 PREFLIGHT PROTECTION MISMATCH; server writes=false
+
+CURRENT14:54Z: actual V2 preflight14:52:25.7965330Z STOP:
+prewrite protection differs; failed exec-74a0bedb-1040-4f9c-b598-5bc0fe3db413 exit1.
+HTTPhelper выполнился, но guard[303,403,404] не совпал; concrete statuses
+скриптом приSTOP не сохранены, причина НЕИЗВЕСТНА. Этоordinaryguarderror,
+неpolicydenial. BeginUTC=null; serverwrites=false; всеlaterphasesNOT_STARTED.
+Release не повторяетфазу/HTTP, неменяетcode/guards, сохраняетSTOPevidence.
+ROguard14:54:02Z/euid0: old674/88/allmetadata/manifest/snippet unchanged,
+newroot/backup/temp/archive absent. CTO уведомлён, v2revoke запрошен; до
+отдельногорешения никакогоexecution/correction/HTTPdiagnostic задания нет.
+Предложен только boundedRO三GETdiagnostic послеCTOсогласия/freshReleaseidle,
+безbodies/config/auth/cookies, неphase-replay. Frozen/archive неизменны.
+
+### История v2 authorization и первого запуска
 
 CURRENT14:52Z: CTO выдал НОВЫЙ exact token
 CTO-P3-WD04-V2-20261029T144858Z-91df426327f8,
