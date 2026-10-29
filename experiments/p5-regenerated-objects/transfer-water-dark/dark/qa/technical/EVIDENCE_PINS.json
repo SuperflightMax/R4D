@@ -1,0 +1,1241 @@
+{
+  "schema": "r4d.p5.transfer.technical-input-oracle.v1",
+  "createdUtc": "2026-10-29T23:18:36.684Z",
+  "board": "dark",
+  "trial": "trial-01",
+  "scope": "input + genuine native runs + numeric mapping only; visual/browser/art unverified",
+  "canonicalRevision": "b1382dd4c230815a019e52e2ec4617ef705661d5",
+  "acceptedP1Revision": "4b47db04c7140ebf88f69b91faa0b790d46f22ec",
+  "commonInputs": {
+    "path": "E:/R4D/perspective/coordination/p4-p5-transfer-common-inputs-2026-10-29.json",
+    "bytes": 4265,
+    "sha256": "497eb8cca3aa7413254a85b18d98a1e7dfde66d9779c39fc6b5932a21f2b4946"
+  },
+  "pins": [
+    {
+      "source": "experiments/p1-collider-mapping/clean-repeat-01/simulation/boards/02/trial-01/config.json",
+      "path": "common/config.json",
+      "bytes": 19508,
+      "sha256": "14be2a023833d266d1e333bf582af5fd5885deb445698c10ebd846ef0cc080b2"
+    },
+    {
+      "source": "experiments/p1-collider-mapping/clean-repeat-01/simulation/boards/02/trial-01/manifest.json",
+      "path": "common/manifest.json",
+      "bytes": 13939,
+      "sha256": "3fab422bd1f74d477d1648620c97ad6d7b8b0a55a70a1102d6e6885def564d81"
+    },
+    {
+      "source": "experiments/p1-collider-mapping/clean-repeat-01/viewer/src/view-math.mjs",
+      "path": "common/view-math.mjs",
+      "bytes": 3050,
+      "sha256": "96f01cc2093c353ff958cb906fe0c8ae93412425d0f7a5ec7cca0f2bf9f1aa5e"
+    }
+  ],
+  "sourceImage": {
+    "path": "K:\\Agents\\R4D\\Assets\\perspective\\02-dark-temple.jpg",
+    "bytes": 536988,
+    "sha256": "7ceff71bd0a871fecd725527dff5522450c8e75a74eb99c107b5d8624bf8fa3a",
+    "width": 1536,
+    "height": 1536
+  },
+  "native": {
+    "sourceCommit": "5a6fa03f1cdb3de88a2d9c7dbe795eb8e2a7f023",
+    "packageTree": "008d16a80a26bb77d562a45218b01da09b0d9ff0",
+    "useExistingAuthorizedOwnPrivateRuntime": true,
+    "rawSourcesOrMapsPublic": false,
+    "physics": "r16;tick5ms;quantize7;g980;maxspeed2000;angleDeviation2deg;bounceDeviation0.02;lcg32. Обычный новый бросок меняет seed, без отбора траекторий.",
+    "cachedEntry": "E:\\R4D\\perspective\\p5-runtime\\technical-qa\\source-oracle-001\\private\\native-js\\src\\index.js",
+    "inventorySha256": "985e89c8ac4212a2c05934d8ff4bb20b040b00b8ec814abbf628cded8924ff09",
+    "verifiedCachedRuntimeFiles": 26,
+    "compiler": {
+      "version": "5.9.3",
+      "path": "D:/dev/millionko/node_modules/typescript/lib/typescript.js",
+      "sha256": "3ae902c92cc44dace175c0e69e13a4b0899f6983c6121d76b9ab8dd5795e7675",
+      "node": "v24.15.0"
+    }
+  },
+  "settings": {
+    "defaults": {
+      "tickMs": 5,
+      "quantizeDigits": 7
+    },
+    "physics": {
+      "gravityY": 980,
+      "maxBallSpeed": 2000,
+      "angleDeviationDeg": 2,
+      "bounceDeviation": 0.02,
+      "wallBounce": 1
+    },
+    "ball": {
+      "id": "board02-ball",
+      "r": 16,
+      "bounce": 0.9
+    },
+    "rng": {
+      "algo": "lcg32",
+      "seed": 0
+    },
+    "drops": [
+      {
+        "id": "board02-start",
+        "x": 33349.528039973346,
+        "y": 33109.09546312392,
+        "angleDeg": 90,
+        "speed": 0
+      }
+    ],
+    "timeSecMax": 16
+  },
+  "counts": {
+    "researchObjects": 24,
+    "researchPrimitives": 24,
+    "circleFootprints": 12,
+    "loopFootprints": 12,
+    "obstacleSegments": 48,
+    "explicitBounds": 22,
+    "pins": 12,
+    "segments": 70,
+    "buckets": 4,
+    "drops": 1
+  },
+  "projection": {
+    "sampleCount": 161,
+    "maxRoundTripNative": 1.0289757937229989e-11,
+    "maxViewDifferencePx": 0,
+    "cornerErrors": [
+      0,
+      4.547473508864641e-13,
+      5.048514892945267e-12,
+      4.092726157978177e-12
+    ],
+    "mappedNativePrimitives": 87,
+    "ballFootprints": [
+      {
+        "id": "board02-start",
+        "sourceCenter": [
+          768.0000000000003,
+          293.0000000000002
+        ],
+        "widthPx": 27.747195994575918,
+        "heightPx": 14.065418067798248
+      },
+      {
+        "id": "receiver-01",
+        "sourceCenter": [
+          253.047586047588,
+          1193.5205590205587
+        ],
+        "widthPx": 37.15687029523764,
+        "heightPx": 25.222905387244737
+      },
+      {
+        "id": "receiver-02",
+        "sourceCenter": [
+          596.4116787531084,
+          1193.9362485117426
+        ],
+        "widthPx": 37.16121389703892,
+        "heightPx": 25.228802872067718
+      },
+      {
+        "id": "receiver-03",
+        "sourceCenter": [
+          946.873576777102,
+          1194.8959380449294
+        ],
+        "widthPx": 37.171241836819604,
+        "heightPx": 25.242420846802133
+      },
+      {
+        "id": "receiver-04",
+        "sourceCenter": [
+          1292.8502296930496,
+          1194.2789204426838
+        ],
+        "widthPx": 37.16479452740873,
+        "heightPx": 25.23366495794312
+      }
+    ],
+    "scope": "numeric ground projection and sampled ground-circle target footprints; not a visible sphere or mask check"
+  },
+  "seeds": [
+    {
+      "seed": 0,
+      "ticks": 888,
+      "result": {
+        "kind": "IN_BUCKET",
+        "bucketId": "receiver-01"
+      },
+      "traceSha256": "cd1db71fb73378ef9aeb3d01c9f5ca83876d7ce710537fc25b821b47da2664ff",
+      "positionTraceSha256": "92a6f2209324767d7003058383a0bcc0f2c0f56a8db786ed5fe78ba681260e47",
+      "replayIdentical": true,
+      "initialState": {
+        "tick": 0,
+        "rngU32": 0,
+        "ball": {
+          "pos": {
+            "x": 33349.528039973346,
+            "y": 33109.09546312392
+          },
+          "vel": {
+            "x": 0,
+            "y": 0
+          }
+        },
+        "nearMissBucketIds": [],
+        "done": false
+      },
+      "firstRngChangeTick": 90,
+      "contacts": [
+        {
+          "id": "bowl-base-01",
+          "kind": "pin",
+          "eventTick": 89,
+          "postStepStateTick": 90
+        },
+        {
+          "id": "pillar-02:edge-01",
+          "kind": "segment",
+          "eventTick": 366,
+          "postStepStateTick": 367
+        },
+        {
+          "id": "left-3",
+          "kind": "segment",
+          "eventTick": 460,
+          "postStepStateTick": 461
+        },
+        {
+          "id": "bowl-base-02",
+          "kind": "pin",
+          "eventTick": 494,
+          "postStepStateTick": 495
+        },
+        {
+          "id": "left-4",
+          "kind": "segment",
+          "eventTick": 727,
+          "postStepStateTick": 728
+        },
+        {
+          "id": "pillar-04:edge-04",
+          "kind": "segment",
+          "eventTick": 840,
+          "postStepStateTick": 841
+        },
+        {
+          "id": "left-8",
+          "kind": "segment",
+          "eventTick": 851,
+          "postStepStateTick": 852
+        }
+      ],
+      "receiverApproaches": [
+        {
+          "id": "receiver-01",
+          "r": 43.00973005868298,
+          "minCenterDistance": 35.97993122303924,
+          "stateTick": 888,
+          "sourceCenter": [
+            252.04357947924203,
+            1165.570158068968
+          ],
+          "stateTicks": [
+            887,
+            888,
+            888
+          ],
+          "triggerReached": true
+        },
+        {
+          "id": "receiver-02",
+          "r": 42.51622154033621,
+          "minCenterDistance": 302.0422301007249,
+          "stateTick": 888,
+          "sourceCenter": [
+            252.04357947924203,
+            1165.570158068968
+          ],
+          "stateTicks": [
+            887,
+            888,
+            888
+          ],
+          "triggerReached": false
+        },
+        {
+          "id": "receiver-03",
+          "r": 41.25417787781912,
+          "minCenterDistance": 602.7606414003222,
+          "stateTick": 888,
+          "sourceCenter": [
+            252.04357947924203,
+            1165.570158068968
+          ],
+          "stateTicks": [
+            887,
+            888,
+            888
+          ],
+          "triggerReached": false
+        },
+        {
+          "id": "receiver-04",
+          "r": 41.44518157305826,
+          "minCenterDistance": 900.2708528688361,
+          "stateTick": 888,
+          "sourceCenter": [
+            252.04357947924203,
+            1165.570158068968
+          ],
+          "stateTicks": [
+            887,
+            888,
+            888
+          ],
+          "triggerReached": false
+        }
+      ]
+    },
+    {
+      "seed": 1,
+      "ticks": 884,
+      "result": {
+        "kind": "IN_BUCKET",
+        "bucketId": "receiver-01"
+      },
+      "traceSha256": "e7312d551b2e180966294d005a3d8fe36d247777c5c4c32542295167aac7bc83",
+      "positionTraceSha256": "9b9d6d49ca12dc008b3f381bd5266c8c89234c1680e40c77116b2333b354fabe",
+      "replayIdentical": true,
+      "initialState": {
+        "tick": 0,
+        "rngU32": 1,
+        "ball": {
+          "pos": {
+            "x": 33349.528039973346,
+            "y": 33109.09546312392
+          },
+          "vel": {
+            "x": 0,
+            "y": 0
+          }
+        },
+        "nearMissBucketIds": [],
+        "done": false
+      },
+      "firstRngChangeTick": 90,
+      "contacts": [
+        {
+          "id": "bowl-base-01",
+          "kind": "pin",
+          "eventTick": 89,
+          "postStepStateTick": 90
+        },
+        {
+          "id": "pillar-02:edge-01",
+          "kind": "segment",
+          "eventTick": 367,
+          "postStepStateTick": 368
+        },
+        {
+          "id": "left-3",
+          "kind": "segment",
+          "eventTick": 463,
+          "postStepStateTick": 464
+        },
+        {
+          "id": "bowl-base-02",
+          "kind": "pin",
+          "eventTick": 499,
+          "postStepStateTick": 500
+        },
+        {
+          "id": "left-3",
+          "kind": "segment",
+          "eventTick": 668,
+          "postStepStateTick": 669
+        },
+        {
+          "id": "pillar-04:edge-04",
+          "kind": "segment",
+          "eventTick": 838,
+          "postStepStateTick": 839
+        },
+        {
+          "id": "left-8",
+          "kind": "segment",
+          "eventTick": 850,
+          "postStepStateTick": 851
+        }
+      ],
+      "receiverApproaches": [
+        {
+          "id": "receiver-01",
+          "r": 43.00973005868298,
+          "minCenterDistance": 41.86980933655097,
+          "stateTick": 884,
+          "sourceCenter": [
+            240.91894970558127,
+            1162.7246107358396
+          ],
+          "stateTicks": [
+            883,
+            884,
+            884
+          ],
+          "triggerReached": true
+        },
+        {
+          "id": "receiver-02",
+          "r": 42.51622154033621,
+          "minCenterDistance": 312.42024622805553,
+          "stateTick": 884,
+          "sourceCenter": [
+            240.91894970558127,
+            1162.7246107358396
+          ],
+          "stateTicks": [
+            883,
+            884,
+            884
+          ],
+          "triggerReached": false
+        },
+        {
+          "id": "receiver-03",
+          "r": 41.25417787781912,
+          "minCenterDistance": 612.9771667849565,
+          "stateTick": 884,
+          "sourceCenter": [
+            240.91894970558127,
+            1162.7246107358396
+          ],
+          "stateTicks": [
+            883,
+            884,
+            884
+          ],
+          "triggerReached": false
+        },
+        {
+          "id": "receiver-04",
+          "r": 41.44518157305826,
+          "minCenterDistance": 910.4180845258958,
+          "stateTick": 884,
+          "sourceCenter": [
+            240.91894970558127,
+            1162.7246107358396
+          ],
+          "stateTicks": [
+            883,
+            884,
+            884
+          ],
+          "triggerReached": false
+        }
+      ]
+    },
+    {
+      "seed": 2,
+      "ticks": 1812,
+      "result": {
+        "kind": "LOST",
+        "finalX": 32824.3930072,
+        "nearMissBucketIds": []
+      },
+      "traceSha256": "c638561dddd07036e6478ba106fa667bc59f1a57c7d89f66eb4b9c1aaf877a58",
+      "positionTraceSha256": "f936d12e1f4cb7df735be68cfae6b78e408b28d1aec9667bd0b1559fc7611c31",
+      "replayIdentical": true,
+      "initialState": {
+        "tick": 0,
+        "rngU32": 2,
+        "ball": {
+          "pos": {
+            "x": 33349.528039973346,
+            "y": 33109.09546312392
+          },
+          "vel": {
+            "x": 0,
+            "y": 0
+          }
+        },
+        "nearMissBucketIds": [],
+        "done": false
+      },
+      "firstRngChangeTick": 90,
+      "contacts": [
+        {
+          "id": "bowl-base-01",
+          "kind": "pin",
+          "eventTick": 89,
+          "postStepStateTick": 90
+        },
+        {
+          "id": "pillar-02:edge-01",
+          "kind": "segment",
+          "eventTick": 367,
+          "postStepStateTick": 368
+        },
+        {
+          "id": "left-3",
+          "kind": "segment",
+          "eventTick": 485,
+          "postStepStateTick": 486
+        },
+        {
+          "id": "bowl-base-02",
+          "kind": "pin",
+          "eventTick": 551,
+          "postStepStateTick": 552
+        },
+        {
+          "id": "bowl-base-02",
+          "kind": "pin",
+          "eventTick": 599,
+          "postStepStateTick": 600
+        },
+        {
+          "id": "bowl-base-02",
+          "kind": "pin",
+          "eventTick": 635,
+          "postStepStateTick": 636
+        },
+        {
+          "id": "left-4",
+          "kind": "segment",
+          "eventTick": 759,
+          "postStepStateTick": 760
+        },
+        {
+          "id": "pillar-04:edge-01",
+          "kind": "segment",
+          "eventTick": 897,
+          "postStepStateTick": 898
+        },
+        {
+          "id": "pillar-02:edge-03",
+          "kind": "segment",
+          "eventTick": 972,
+          "postStepStateTick": 973
+        },
+        {
+          "id": "pillar-04:edge-01",
+          "kind": "segment",
+          "eventTick": 1058,
+          "postStepStateTick": 1059
+        },
+        {
+          "id": "pillar-04:edge-01",
+          "kind": "segment",
+          "eventTick": 1380,
+          "postStepStateTick": 1381
+        }
+      ],
+      "receiverApproaches": [
+        {
+          "id": "receiver-01",
+          "r": 43.00973005868298,
+          "minCenterDistance": 57.34620499458757,
+          "stateTick": 1736,
+          "sourceCenter": [
+            186.9373927163739,
+            1191.0523168491063
+          ],
+          "stateTicks": [
+            1735,
+            1736,
+            1737
+          ],
+          "triggerReached": false
+        },
+        {
+          "id": "receiver-02",
+          "r": 42.51622154033621,
+          "minCenterDistance": 352.92230224367154,
+          "stateTick": 1735,
+          "sourceCenter": [
+            187.80127544179987,
+            1186.7675208731516
+          ],
+          "stateTicks": [
+            1734,
+            1735,
+            1736
+          ],
+          "triggerReached": false
+        },
+        {
+          "id": "receiver-03",
+          "r": 41.25417787781912,
+          "minCenterDistance": 654.5253421399066,
+          "stateTick": 1733,
+          "sourceCenter": [
+            189.51402008419657,
+            1178.2862907369274
+          ],
+          "stateTicks": [
+            1732,
+            1733,
+            1734
+          ],
+          "triggerReached": false
+        },
+        {
+          "id": "receiver-04",
+          "r": 41.44518157305826,
+          "minCenterDistance": 952.2614481421901,
+          "stateTick": 1731,
+          "sourceCenter": [
+            191.20694847024768,
+            1169.9217182487819
+          ],
+          "stateTicks": [
+            1730,
+            1731,
+            1732
+          ],
+          "triggerReached": false
+        }
+      ]
+    },
+    {
+      "seed": 3,
+      "ticks": 1269,
+      "result": {
+        "kind": "IN_BUCKET",
+        "bucketId": "receiver-02"
+      },
+      "traceSha256": "30af45e9dae0c4362484ab07a3f32d2e0184a535d1f1d9c78b1bd4300faedebe",
+      "positionTraceSha256": "296fbab0f9e6d8da4f7697148914ae9428453a761244abf39c3bcd4de07972a4",
+      "replayIdentical": true,
+      "initialState": {
+        "tick": 0,
+        "rngU32": 3,
+        "ball": {
+          "pos": {
+            "x": 33349.528039973346,
+            "y": 33109.09546312392
+          },
+          "vel": {
+            "x": 0,
+            "y": 0
+          }
+        },
+        "nearMissBucketIds": [],
+        "done": false
+      },
+      "firstRngChangeTick": 90,
+      "contacts": [
+        {
+          "id": "bowl-base-01",
+          "kind": "pin",
+          "eventTick": 89,
+          "postStepStateTick": 90
+        },
+        {
+          "id": "pillar-02:edge-01",
+          "kind": "segment",
+          "eventTick": 368,
+          "postStepStateTick": 369
+        },
+        {
+          "id": "bowl-base-02",
+          "kind": "pin",
+          "eventTick": 452,
+          "postStepStateTick": 453
+        },
+        {
+          "id": "pillar-02:edge-01",
+          "kind": "segment",
+          "eventTick": 546,
+          "postStepStateTick": 547
+        },
+        {
+          "id": "left-4",
+          "kind": "segment",
+          "eventTick": 787,
+          "postStepStateTick": 788
+        },
+        {
+          "id": "pillar-04:edge-01",
+          "kind": "segment",
+          "eventTick": 934,
+          "postStepStateTick": 935
+        },
+        {
+          "id": "left-7",
+          "kind": "segment",
+          "eventTick": 945,
+          "postStepStateTick": 946
+        },
+        {
+          "id": "skull-base-05",
+          "kind": "pin",
+          "eventTick": 1005,
+          "postStepStateTick": 1006
+        },
+        {
+          "id": "left-6",
+          "kind": "segment",
+          "eventTick": 1076,
+          "postStepStateTick": 1077
+        }
+      ],
+      "receiverApproaches": [
+        {
+          "id": "receiver-01",
+          "r": 43.00973005868298,
+          "minCenterDistance": 301.54857663105565,
+          "stateTick": 1255,
+          "sourceCenter": [
+            582.3943606676647,
+            1108.3572258634192
+          ],
+          "stateTicks": [
+            1254,
+            1255,
+            1256
+          ],
+          "triggerReached": false
+        },
+        {
+          "id": "receiver-02",
+          "r": 42.51622154033621,
+          "minCenterDistance": 42.263310845527904,
+          "stateTick": 1269,
+          "sourceCenter": [
+            611.5311274388088,
+            1162.2939407291017
+          ],
+          "stateTicks": [
+            1268,
+            1269,
+            1269
+          ],
+          "triggerReached": true
+        },
+        {
+          "id": "receiver-03",
+          "r": 41.25417787781912,
+          "minCenterDistance": 292.63026994900247,
+          "stateTick": 1269,
+          "sourceCenter": [
+            611.5311274388088,
+            1162.2939407291017
+          ],
+          "stateTicks": [
+            1268,
+            1269,
+            1269
+          ],
+          "triggerReached": false
+        },
+        {
+          "id": "receiver-04",
+          "r": 41.44518157305826,
+          "minCenterDistance": 588.9944286163859,
+          "stateTick": 1269,
+          "sourceCenter": [
+            611.5311274388088,
+            1162.2939407291017
+          ],
+          "stateTicks": [
+            1268,
+            1269,
+            1269
+          ],
+          "triggerReached": false
+        }
+      ]
+    }
+  ],
+  "semantics": {
+    "collisionTicks": "preincrement event t -> poststep state t+1",
+    "bucketTrigger": "strict center distance < bucket.r; no radius erosion, height or sink",
+    "timeout": "explicit bounded stepping + native timeoutSimRunSession at timeSecMax",
+    "water": null
+  },
+  "serverWrites": 0,
+  "tokenGranted": false,
+  "artifacts": [
+    {
+      "path": "E:/R4D/perspective/p5-runtime/technical-qa/transfer-water-dark/dark/input-oracle-001/summary.json",
+      "bytes": 19602,
+      "sha256": "2d1394abf032af1b9491ad4ccfb0f02b716ccc631a99cbc9862e5df27bd80911"
+    },
+    {
+      "path": "E:/R4D/perspective/p5-runtime/technical-qa/transfer-water-dark/dark/input-oracle-001/projection.json",
+      "bytes": 1392,
+      "sha256": "c03d3da6687559dc0df7b6b2e480a268388d1971960cc1cb9620637783496204"
+    },
+    {
+      "path": "E:/R4D/perspective/p5-runtime/technical-qa/transfer-water-dark/dark/input-oracle-001/evidence-index.json",
+      "bytes": 3298,
+      "sha256": "05acd0c5db05b445e517403977c91c5223318ad68f17c393ce9b643d954e0db0"
+    },
+    {
+      "path": "E:/R4D/perspective/p5-runtime/technical-qa/transfer-water-dark/dark/input-oracle-001/resource-before.json",
+      "bytes": 568,
+      "sha256": "dec7840d87df0518d0e5f236c1f03000386b0eb32455a1c4cb7c50f5dd2b5ccf"
+    },
+    {
+      "path": "E:/R4D/perspective/p5-runtime/technical-qa/transfer-water-dark/dark/input-oracle-001/resource-after.json",
+      "bytes": 487,
+      "sha256": "ccbaf8bf3d110b1d3b462e1ebf54d816fbfd7afe1aea797b1a08e6da1f7090c4"
+    },
+    {
+      "path": "E:/R4D/perspective/p5-runtime/technical-qa/transfer-water-dark/dark/case-windows-001/windows.json",
+      "bytes": 86572,
+      "sha256": "30ba177a71f07d4eb873550cf14f80be6f95a0f17f3a8ac0438e7655d276a976"
+    },
+    {
+      "path": "E:/R4D/perspective/p5-runtime/technical-qa/transfer-water-dark/dark/case-windows-001/evidence-index.json",
+      "bytes": 141,
+      "sha256": "1ed1c500f32290d69a23fc0578b400a2f89549bb709e06c0598fa9d07492afbb"
+    }
+  ],
+  "caseWindows": {
+    "count": 28,
+    "archGaps": [],
+    "seeds": [
+      {
+        "seed": 0,
+        "passages": [],
+        "rectangularContacts": [
+          {
+            "event": {
+              "type": "object_hit",
+              "tick": 366,
+              "timeSec": 1.83,
+              "ballId": "board02-ball",
+              "objectKind": "segment",
+              "objectId": "pillar-02:edge-01",
+              "x": 32956.049806275005,
+              "y": 33828.427583699246
+            },
+            "feature": "back-face",
+            "closestSegment": {
+              "tRaw": 0.9637394501678515,
+              "t": 0.9637394501678515,
+              "distance": 16
+            }
+          },
+          {
+            "event": {
+              "type": "object_hit",
+              "tick": 840,
+              "timeSec": 4.2,
+              "ballId": "board02-ball",
+              "objectKind": "segment",
+              "objectId": "pillar-04:edge-04",
+              "x": 32855.61992820496,
+              "y": 34279.76959427062
+            },
+            "feature": "side-face",
+            "closestSegment": {
+              "tRaw": 0.5280325251256011,
+              "t": 0.5280325251256011,
+              "distance": 15.99999999999884
+            }
+          }
+        ],
+        "receiverWindows": [
+          {
+            "id": "receiver-01",
+            "triggerReached": true,
+            "stateTicks": [
+              887,
+              888,
+              888
+            ],
+            "minCenterDistance": 35.97993122303924,
+            "r": 43.00973005868298
+          },
+          {
+            "id": "receiver-02",
+            "triggerReached": false,
+            "stateTicks": [
+              887,
+              888,
+              888
+            ],
+            "minCenterDistance": 302.0422301007249,
+            "r": 42.51622154033621
+          },
+          {
+            "id": "receiver-03",
+            "triggerReached": false,
+            "stateTicks": [
+              887,
+              888,
+              888
+            ],
+            "minCenterDistance": 602.7606414003222,
+            "r": 41.25417787781912
+          },
+          {
+            "id": "receiver-04",
+            "triggerReached": false,
+            "stateTicks": [
+              887,
+              888,
+              888
+            ],
+            "minCenterDistance": 900.2708528688361,
+            "r": 41.44518157305826
+          }
+        ]
+      },
+      {
+        "seed": 1,
+        "passages": [],
+        "rectangularContacts": [
+          {
+            "event": {
+              "type": "object_hit",
+              "tick": 367,
+              "timeSec": 1.835,
+              "ballId": "board02-ball",
+              "objectKind": "segment",
+              "objectId": "pillar-02:edge-01",
+              "x": 32956.682439059005,
+              "y": 33828.427583699246
+            },
+            "feature": "back-face",
+            "closestSegment": {
+              "tRaw": 0.973348315827155,
+              "t": 0.973348315827155,
+              "distance": 16
+            }
+          },
+          {
+            "event": {
+              "type": "object_hit",
+              "tick": 838,
+              "timeSec": 4.19,
+              "ballId": "board02-ball",
+              "objectKind": "segment",
+              "objectId": "pillar-04:edge-04",
+              "x": 32854.25686064283,
+              "y": 34288.554273494985
+            },
+            "feature": "side-face",
+            "closestSegment": {
+              "tRaw": 0.36275005230049395,
+              "t": 0.36275005230049395,
+              "distance": 16.00000000000267
+            }
+          }
+        ],
+        "receiverWindows": [
+          {
+            "id": "receiver-01",
+            "triggerReached": true,
+            "stateTicks": [
+              883,
+              884,
+              884
+            ],
+            "minCenterDistance": 41.86980933655097,
+            "r": 43.00973005868298
+          },
+          {
+            "id": "receiver-02",
+            "triggerReached": false,
+            "stateTicks": [
+              883,
+              884,
+              884
+            ],
+            "minCenterDistance": 312.42024622805553,
+            "r": 42.51622154033621
+          },
+          {
+            "id": "receiver-03",
+            "triggerReached": false,
+            "stateTicks": [
+              883,
+              884,
+              884
+            ],
+            "minCenterDistance": 612.9771667849565,
+            "r": 41.25417787781912
+          },
+          {
+            "id": "receiver-04",
+            "triggerReached": false,
+            "stateTicks": [
+              883,
+              884,
+              884
+            ],
+            "minCenterDistance": 910.4180845258958,
+            "r": 41.44518157305826
+          }
+        ]
+      },
+      {
+        "seed": 2,
+        "passages": [],
+        "rectangularContacts": [
+          {
+            "event": {
+              "type": "object_hit",
+              "tick": 367,
+              "timeSec": 1.835,
+              "ballId": "board02-ball",
+              "objectKind": "segment",
+              "objectId": "pillar-02:edge-01",
+              "x": 32958.78177603716,
+              "y": 33828.431295719674
+            },
+            "feature": "endpoint-corner",
+            "closestSegment": {
+              "tRaw": 1.0052345024221414,
+              "t": 1,
+              "distance": 16.00000000000284
+            }
+          },
+          {
+            "event": {
+              "type": "object_hit",
+              "tick": 897,
+              "timeSec": 4.485,
+              "ballId": "board02-ball",
+              "objectKind": "segment",
+              "objectId": "pillar-04:edge-01",
+              "x": 32890.451430222034,
+              "y": 34240.77737289892
+            },
+            "feature": "back-face",
+            "closestSegment": {
+              "tRaw": 0.24453062466270936,
+              "t": 0.24453062466270936,
+              "distance": 16.000000000001958
+            }
+          },
+          {
+            "event": {
+              "type": "object_hit",
+              "tick": 972,
+              "timeSec": 4.86,
+              "ballId": "board02-ball",
+              "objectKind": "segment",
+              "objectId": "pillar-02:edge-03",
+              "x": 32901.738255204495,
+              "y": 33922.863284322484
+            },
+            "feature": "front-face",
+            "closestSegment": {
+              "tRaw": 0.8342600670753965,
+              "t": 0.8342600670753965,
+              "distance": 16
+            }
+          },
+          {
+            "event": {
+              "type": "object_hit",
+              "tick": 1058,
+              "timeSec": 5.29,
+              "ballId": "board02-ball",
+              "objectKind": "segment",
+              "objectId": "pillar-04:edge-01",
+              "x": 32917.131353768506,
+              "y": 34240.14914687021
+            },
+            "feature": "back-face",
+            "closestSegment": {
+              "tRaw": 0.6652998071464236,
+              "t": 0.6652998071464236,
+              "distance": 16.000000000004786
+            }
+          },
+          {
+            "event": {
+              "type": "object_hit",
+              "tick": 1380,
+              "timeSec": 6.9,
+              "ballId": "board02-ball",
+              "objectKind": "segment",
+              "objectId": "pillar-04:edge-01",
+              "x": 32901.63635314664,
+              "y": 34240.514004089106
+            },
+            "feature": "back-face",
+            "closestSegment": {
+              "tRaw": 0.42092808948051136,
+              "t": 0.42092808948051136,
+              "distance": 16.00000000000278
+            }
+          }
+        ],
+        "receiverWindows": [
+          {
+            "id": "receiver-01",
+            "triggerReached": false,
+            "stateTicks": [
+              1735,
+              1736,
+              1737
+            ],
+            "minCenterDistance": 57.34620499458757,
+            "r": 43.00973005868298
+          },
+          {
+            "id": "receiver-02",
+            "triggerReached": false,
+            "stateTicks": [
+              1734,
+              1735,
+              1736
+            ],
+            "minCenterDistance": 352.92230224367154,
+            "r": 42.51622154033621
+          },
+          {
+            "id": "receiver-03",
+            "triggerReached": false,
+            "stateTicks": [
+              1732,
+              1733,
+              1734
+            ],
+            "minCenterDistance": 654.5253421399066,
+            "r": 41.25417787781912
+          },
+          {
+            "id": "receiver-04",
+            "triggerReached": false,
+            "stateTicks": [
+              1730,
+              1731,
+              1732
+            ],
+            "minCenterDistance": 952.2614481421901,
+            "r": 41.44518157305826
+          }
+        ]
+      },
+      {
+        "seed": 3,
+        "passages": [],
+        "rectangularContacts": [
+          {
+            "event": {
+              "type": "object_hit",
+              "tick": 368,
+              "timeSec": 1.84,
+              "ballId": "board02-ball",
+              "objectKind": "segment",
+              "objectId": "pillar-02:edge-01",
+              "x": 32959.844150137826,
+              "y": 33828.489568288795
+            },
+            "feature": "endpoint-corner",
+            "closestSegment": {
+              "tRaw": 1.0213705773638522,
+              "t": 1,
+              "distance": 16.000000000003006
+            }
+          },
+          {
+            "event": {
+              "type": "object_hit",
+              "tick": 546,
+              "timeSec": 2.73,
+              "ballId": "board02-ball",
+              "objectKind": "segment",
+              "objectId": "pillar-02:edge-01",
+              "x": 32902.4788007715,
+              "y": 33828.427583699246
+            },
+            "feature": "back-face",
+            "closestSegment": {
+              "tRaw": 0.15006584972228595,
+              "t": 0.15006584972228595,
+              "distance": 16
+            }
+          },
+          {
+            "event": {
+              "type": "object_hit",
+              "tick": 934,
+              "timeSec": 4.67,
+              "ballId": "board02-ball",
+              "objectKind": "segment",
+              "objectId": "pillar-04:edge-01",
+              "x": 32868.81453940156,
+              "y": 34242.521605474525
+            },
+            "feature": "endpoint-corner",
+            "closestSegment": {
+              "tRaw": -0.09716314759280982,
+              "t": 0,
+              "distance": 15.999999999998115
+            }
+          }
+        ],
+        "receiverWindows": [
+          {
+            "id": "receiver-01",
+            "triggerReached": false,
+            "stateTicks": [
+              1254,
+              1255,
+              1256
+            ],
+            "minCenterDistance": 301.54857663105565,
+            "r": 43.00973005868298
+          },
+          {
+            "id": "receiver-02",
+            "triggerReached": true,
+            "stateTicks": [
+              1268,
+              1269,
+              1269
+            ],
+            "minCenterDistance": 42.263310845527904,
+            "r": 42.51622154033621
+          },
+          {
+            "id": "receiver-03",
+            "triggerReached": false,
+            "stateTicks": [
+              1268,
+              1269,
+              1269
+            ],
+            "minCenterDistance": 292.63026994900247,
+            "r": 41.25417787781912
+          },
+          {
+            "id": "receiver-04",
+            "triggerReached": false,
+            "stateTicks": [
+              1268,
+              1269,
+              1269
+            ],
+            "minCenterDistance": 588.9944286163859,
+            "r": 41.44518157305826
+          }
+        ]
+      }
+    ]
+  },
+  "frozenJungle": {
+    "result": "df0d95f40e60991632c885f0bc53d32497a090e7",
+    "consumerRecipe": "af23e124cf5bd1d9de884082ffbc993448217112",
+    "artist": "a5ec68fb2ed6aeacd8c66bc575166567bd0c3966",
+    "knownLimitationsPreserved": true
+  },
+  "unverified": [
+    "generated assets and silhouette masks",
+    "independent frozen consumer state comparison",
+    "actual browser pause Art Geometry and framing invariants",
+    "visible contacts and opening/lintel occlusion",
+    "motion and receiver front rims",
+    "release/privacy/publication"
+  ]
+}
