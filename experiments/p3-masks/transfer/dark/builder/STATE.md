@@ -1,6 +1,23 @@
 # Dark P3 — Builder
 
-## Текущий checkpoint — DARK_RECEIVER_FRONT_EDGE_04_FROZEN_FOR_TARGETED_QA
+## Текущий checkpoint — DELIVERED / PREVIEWS_ALREADY_ABSENT / IDLE
+
+Lead сообщил завершение обеих QA, LIVE обеих страниц16:40:46Z, свой IAB smoke
++10ticks PASS и освобождение всех read holds. Это результат Lead, не новая
+проверка/публикация Builder. Текущая операция только own-preview retirement.
+Fresh audit16:49:16–17Z: PID37660/6869 oldDark03 и PID15752/6870 currentDark04
+уже отсутствуют; Water PID29572/6868 также отсутствует, listeners трёх портов нет.
+Starttime/commandline недоступны вследствие отсутствия процессов; ownership
+для нового stop не заявляется. StopIssued=false, процессы не затрагивались;
+причина их прежнего завершения не установлена. PID17380 не проверялся/не трогался.
+Receipt: E:\R4D\perspective\p3-runtime\builder\transfer-water-dark\
+preview-stop-receipt-20261029-final.json и .manifests.json, вне frozen payload.
+Все три local manifest SHA прежние: Dark03 b3923f4c...d0307, Dark04 d180e5a6...4ed1b,
+Water04 de1344af...ce2c6. Все frozen/raw/source/evidence/папки сохранены.
+Новых product/QA/build/candidate действий нет. После commit/push — idle;
+server_write=false. Model/thread settings не изменялись.
+
+## История — DARK_RECEIVER_FRONT_EDGE_04_FROZEN_FOR_TARGETED_QA
 
 29 октября2026. Один immutable candidate dark-receiver-front-edge-04:
 E:\R4D\perspective\p3-runtime\builder\transfer-water-dark\dark\receiver-front-edge-04.

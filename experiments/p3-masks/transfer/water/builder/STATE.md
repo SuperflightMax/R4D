@@ -1,6 +1,22 @@
 # Water P3 — Builder
 
-## Текущий checkpoint — WATER_FRONT_EDGE_04_FROZEN_FOR_BOTH_INDEPENDENT_QA
+## Текущий checkpoint — DELIVERED / PREVIEWS_ALREADY_ABSENT / IDLE
+
+По завершающему сообщению Lead оба результата прошли QA, обе публичные страницы
+LIVE16:40:46Z и Lead IAB smoke +10ticks PASS; все QA/read holds сняты.
+Это итог Lead, новая QA/публикация Builder здесь не выполнялась.
+Fresh cleanup audit16:49:16–17Z: Water PID29572/6868, oldDark PID37660/6869,
+currentDark PID15752/6870 уже отсутствуют; listeners на всех трёх портах нет.
+Starttime/commandline отсутствующих процессов получить нельзя. StopIssued=false:
+никакой процесс не останавливался и не затрагивался; причина прежнего выхода
+не установлена. Старый PID17380 не запрашивался/не трогался.
+Receipt вне payload: E:\R4D\perspective\p3-runtime\builder\transfer-water-dark\
+preview-stop-receipt-20261029-final.json и .manifests.json.
+Локальные manifests Water04 de1344af...ce2c6, Dark03 b3923f4c...d0307 и Dark04
+d180e5a6...4ed1b неизменны. Все frozen/raw/source/evidence/папки сохранены.
+Собственная ветка та же, после commit/push — idle. server_write=false.
+
+## История — WATER_FRONT_EDGE_04_FROZEN_FOR_BOTH_INDEPENDENT_QA
 
 ### Временный original FULL A/B preview — ЗАКРЫТ ПОСЛЕ ЧТЕНИЯ
 
