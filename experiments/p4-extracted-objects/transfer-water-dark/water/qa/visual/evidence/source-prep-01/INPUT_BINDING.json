@@ -1,0 +1,50 @@
+{
+  "scope": "P4 transfer visual prep; no native/consumer/Art PASS",
+  "board": "04",
+  "name": "Water",
+  "activeTrial": "trial-02",
+  "canonicalCommit": "b1382dd4c230815a019e52e2ec4617ef705661d5",
+  "transferCardBlob": "0db67e8c3c841ede323a809789f5146ca4f77f11",
+  "acceptedP1Commit": "4b47db04c7140ebf88f69b91faa0b790d46f22ec",
+  "commonInputSpecSha256": "497eb8cca3aa7413254a85b18d98a1e7dfde66d9779c39fc6b5932a21f2b4946",
+  "image": {
+    "fileName": "04-water-temple.jpg",
+    "readOnlySourcePath": "K:\\Agents\\R4D\\Assets\\perspective\\04-water-temple.jpg",
+    "bytes": 527016,
+    "sha256": "8da65c76c110b6ba7cefe113564fe12feed4428e84e84835f033e7da31d3b80d",
+    "sizePx": [
+      1536,
+      1536
+    ]
+  },
+  "gitInputs": [
+    {
+      "file": "config.json",
+      "gitCommit": "4b47db04c7140ebf88f69b91faa0b790d46f22ec",
+      "gitPath": "experiments/p1-collider-mapping/clean-repeat-01/simulation/boards/04/trial-02/config.json",
+      "bytes": 27231,
+      "sha256": "9048b28af2923c93d8be772367beeb828f1e4513a6298af1c803379f77d3e50c"
+    },
+    {
+      "file": "manifest.json",
+      "gitCommit": "4b47db04c7140ebf88f69b91faa0b790d46f22ec",
+      "gitPath": "experiments/p1-collider-mapping/clean-repeat-01/simulation/boards/04/trial-02/manifest.json",
+      "bytes": 15870,
+      "sha256": "48c4fef26fd8c94f06c278851222ef285edda54ac14e53da8908f4ee663dc420"
+    }
+  ],
+  "viewMath": {
+    "revision": "4b47db04c7140ebf88f69b91faa0b790d46f22ec",
+    "path": "experiments/p1-collider-mapping/clean-repeat-01/viewer/src/view-math.mjs",
+    "bytes": 3050,
+    "sha256": "96f01cc2093c353ff958cb906fe0c8ae93412425d0f7a5ec7cca0f2bf9f1aa5e"
+  },
+  "native": {
+    "sourceCommit": "5a6fa03f1cdb3de88a2d9c7dbe795eb8e2a7f023",
+    "packageTree": "008d16a80a26bb77d562a45218b01da09b0d9ff0",
+    "useExistingAuthorizedOwnPrivateRuntime": true,
+    "rawSourcesOrMapsPublic": false,
+    "physics": "r16;tick5ms;quantize7;g980;maxspeed2000;angleDeviation2deg;bounceDeviation0.02;lcg32. Обычный новый бросок меняет seed, без отбора траекторий."
+  },
+  "preservedJungleResult": "dac27ef9e25b8576094252e5e5a156120e9750dd"
+}
