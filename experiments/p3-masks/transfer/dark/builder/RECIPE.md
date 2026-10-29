@@ -31,3 +31,16 @@ native5ms/replay/checkpoint/ticks, independent Art/Geometry, source/flat/pan.
 selfcheck завершён, candidate frozen для независимых TQA/VQA. Это не их PASS.
 Exact bundle/manifest/evidence/freeze record указаны в STATE.md. Серверная публикация
 только отдельным Release по новому exact token CTO; server_write=false.
+
+receiver-front-edge-01 ART e5d3e1f4 — отдельный receiver-front-edge-04, без
+изменения app/run-model/view-math/core/PNG. Import принимает [variantName] и
+фиксирует реальный Git prefix. Изменены только12 receiver depthLineNative.
+По уточнённому bounded scope прежние TQA03/полные native/controls/import проверки
+отмечаются «ранее выполнено»; VQA03 2d40b3f3 содержит D-POP-01, а не Visual PASS.
+Packaging копирует14 exact checkpoints из03/VQA Git по replay-sources.json:
+5 predeclared +3 ordinary VQA terminal и6 frames. Native при build не гоняется
+и не компилируется. verify-static.mjs проверяет curated allowlist/local/HTTP
+bytes/MIME и изоляцию12 fields; прежний verify.mjs с полным native replay здесь
+автоматически не запускается. Новый browser scope: D-POP3858699109/2010–2019,
+2044–2047, отдельная shadow и близкие входы01/02/03. Это адресный selfcheck,
+не общий Visual PASS. Старые03/6869 и Water04/6868 сохраняются неизменными.

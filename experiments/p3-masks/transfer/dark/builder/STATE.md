@@ -1,6 +1,75 @@
 # Dark P3 — Builder
 
-## Текущий checkpoint — FULL_METHOD_03_FROZEN_FOR_INDEPENDENT_QA
+## Текущий checkpoint — DARK_RECEIVER_FRONT_EDGE_04_FROZEN_FOR_TARGETED_QA
+
+29 октября2026. Один immutable candidate dark-receiver-front-edge-04:
+E:\R4D\perspective\p3-runtime\builder\transfer-water-dark\dark\receiver-front-edge-04.
+SOURCE d7eac5d7d76127e3138480f1f16eaf28aac0f15a,
+ART e5d3e1f44c112e483ff2a23fbd169cb119390865, exact prefix
+experiments/p3-masks/transfer/dark/asset-artist/variants/receiver-front-edge-01/.
+assets.json18591 bytes/SHA256
+2b02dcde6c07266b67285700040e4ae0342f06fb760ae6ed0cf1fdcdc9b6cbad.
+Полностью прочитаны README/ANCHOR_CHANGES/DERIVATION/contract/provenance,
+VQA03 REPORT2d40b3f31341bbf57fd2df76aa6637a3f1a303e8. Все76 Artist packet files
+независимо совпали с exact Git/extracted bytes/внешним manifest
+f5036ba0863766eb0ba00d47f383a910355b526d51d7ec20bc77ecfbd042c5f7.
+
+Freeze manifest SHA256
+d180e5a63bb1dec7c510507fc2ce990e7cb10927b337a19c4bb9effc67e4ed1b,
+15737 bytes;92 payload files/3494340 bytes;93 total files/3510077 bytes.
+Все92 local/HTTP hash/size и JS MIME совпали; curated public allowlist проходит.
+Authoring Python/diagnostic packet/private TS/maps/keys/source paths не включены.
+Full freeze record вне payload:
+E:\R4D\perspective\p3-runtime\builder\transfer-water-dark\dark\candidates\dark-receiver-front-edge-04.freeze.json.
+New URL http://127.0.0.1:6870/review/r4d/p3-masks-dark/,
+owned PID15752 / exec session31501. Это НОВЫЙ Dark процесс/root, не прежний
+закрытый OLD Water6870/PID17380. Держать bytes/server до явного read-complete.
+
+Ровно12 depthLineNative четырёх receivers изменены. Все62 PNG,60 rect/alpha,
+48 nonreceiver records, ball/shadow/top-level metadata и renderer неизменны.
+App SHA760c9bada40cb3ecb944f332f6efa91bb3c1340ce7f1ad9c2cabeda4dca0a3e6.
+Core/config/manifest/projection/source/Pixi совпадают с03 побайтно; compiled
+af8e6dea9ee5c46759f99ba3b68f4afa91c740b4fd2aba2d2d3f65bfa66753fa переиспользован,
+native не компилировался. Независимая деривация12 lines из4 существующих P3
+front-полигонов и accepted sourceToNative совпала, без seed/tick/radius inputs.
+Это data-only correction в прежнем depthAt/clamp, без новой сортировки/физики.
+
+По уточнению CTO scope АДРЕСНЫЙ. Ранее выполнены: bounded TechnicalPASS03
+b327ae601a4962dd5826abfbfdeefaf77c090a55, native/controls/negative/import03.
+VQA03 2d40b3f3 дала D-POP-01 FAIL, а не Visual PASS. Эти матрицы автоматически
+не повторялись. Build копирует exact14 pinned checkpoints по replay-sources.json:
+5 predeclared +3 ordinary VQA outcomes и6 frames. Ни одного native replay при
+packaging. Все исходы/плохие runs сохранены в новом replay menu, не отбирались.
+verify-static.mjs применяется вместо прежнего полного native verify.mjs.
+
+Новый actual browser selfcheck: seed3858699109, contiguous2010–2019 и2044–2047
+при100%/200%,28 full raw JPEG; соседние входы receiver01 seed0/880,884,887,888,
+receiver02 seed1551806092/965,968,970,971 и receiver03 seed3238915631/1430,1434,1435.
+Терминал target LOST2083 подтверждён в UI. Всего40 адресных raw JPEG, не полный
+повтор живых серий. Четыре actual downloaded checkpoints2012/2044/2045/2046
+совпали с сохранёнными native states; весь checkpoint2012 совпал с VQA03.
+Отдельный shadow offset/ordering подтверждён:2044 оба ON,2045 shadow OFF/ball ON,
+2046 оба OFF. На новых threshold шар виден за границей JPG; тень там на тёмном
+фоне малоконтрастна, её универсальное качество не сертифицировано.
+На просмотренных ключевых100%/200% кадрах прежний2011→2012 скачок и заметный
+новый threshold скачок selfcheck не воспроизвёл. D-POP-01 ОТКРЫТ до независимого
+retest. Нового установленного существенного дефекта нет; общий Visual PASS нет.
+
+Evidence: own runtime dark/evidence/receiver-front04/, включая packet-byte-
+verification.json,independent-derivation.json,selected-checkpoints-and-shadow.json,
+preview-ownership.json и browser/{D-POP-capture-log,near-entry-capture-log}.json.
+Собственная IAB tab3 закрыта. Old Dark03/6869 PID37660/session87426 и Water04/6868
+PID29572/session61378 сохранены; оба HTTP200 с прежними manifests b3923f4c...d0307
+иde1344af...ce2c6. Old bundle/raw/report и вся история не менялись.
+
+Перед build12:13:22Z system RAMfree16.319GiB/CPU1%, C16.096/D16.263/E11.653GiB.
+После адресной работы12:21:57Z RAMfree15.024GiB/CPU1%, C16.075/D16.252/E11.624GiB;
+это system-wide, не измеренный собственный peak. Third Node RSS51.59MiB;
+новые собственные bundle+snapshot+evidence9.508MiB, ниже64MiB ориентира.
+Дальше обе независимые targeted QA на тех же bytes; никаких дополнительных
+вариантов/серверных действий без поручения. server_write=false. Jungle неизменён.
+
+## История — FULL_METHOD_03_FROZEN_FOR_INDEPENDENT_QA
 
 Именованный кандидат dark-full-method-03, source
 c73d6128970b2b022d5313b08c34cafdec9a1bc3, ART

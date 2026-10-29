@@ -19,12 +19,50 @@
     {
       "seed": 1551806092,
       "label": "Обычный случайный запуск 2"
+    },
+    {
+      "seed": 3858699109,
+      "label": "Обычный VQA UI1 — D-POP witness"
+    },
+    {
+      "seed": 3238915631,
+      "label": "Обычный VQA UI2"
+    },
+    {
+      "seed": 1771307888,
+      "label": "Обычный VQA UI3"
     }
   ],
   "frames": [
-    {"seed":0,"tick":365,"label":"pillar-02: перед боковым контактом"},
-    {"seed":0,"tick":839,"label":"pillar-04: перед контактом угла"},
-    {"seed":0,"tick":880,"label":"receiver-01: приближение"},
-    {"seed":2,"tick":896,"label":"pillar-04: случай из LOST запуска"}
+    {
+      "seed": 0,
+      "tick": 365,
+      "label": "pillar-02: перед боковым контактом"
+    },
+    {
+      "seed": 0,
+      "tick": 839,
+      "label": "pillar-04: перед контактом угла"
+    },
+    {
+      "seed": 0,
+      "tick": 880,
+      "label": "receiver-01: приближение"
+    },
+    {
+      "seed": 2,
+      "tick": 896,
+      "label": "pillar-04: случай из LOST запуска"
+    },
+    {
+      "seed": 3858699109,
+      "tick": 2011,
+      "label": "receiver04 D-POP old threshold / 2011"
+    },
+    {
+      "seed": 3858699109,
+      "tick": 2012,
+      "label": "receiver04 D-POP old threshold / 2012"
+    }
   ]
 }
