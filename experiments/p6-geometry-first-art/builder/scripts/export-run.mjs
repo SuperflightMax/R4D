@@ -1,0 +1,16 @@
+import fs from 'node:fs';
+import path from 'node:path';
+import { pathToFileURL } from 'node:url';
+import { RunController } from '../viewer/controller.mjs';
+import { root,runtime,site } from './paths.mjs';
+const core=await import(pathToFileURL(path.join(site,'native/core.mjs')));
+const text=fs.readFileSync(path.join(root,'inputs/config.json'),'utf8');
+const meta=JSON.parse(fs.readFileSync(path.join(site,'build-meta.json')));
+const run=new RunController(core,JSON.parse(text),meta,text);
+run.reset(Number(process.argv[2]));
+if(process.argv[3]!==undefined)run.advance(Number(process.argv[3]));
+else while(!run.session.state.done)run.advance(100);
+const dir=path.join(runtime,'verification');fs.mkdirSync(dir,{recursive:true});
+const file=path.join(dir,`replay-seed-${run.seed}-tick-${run.session.state.tick}.json`);
+fs.writeFileSync(file,JSON.stringify(run.exportReplay(),null,2)+'\n');
+console.log(JSON.stringify({file,state:run.snapshot()},null,2));

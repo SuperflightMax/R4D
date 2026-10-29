@@ -1,0 +1,15 @@
+{
+  "name": "r4d-p6-geometry-first-consumer",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "draft": "node scripts/geometry-draft.mjs",
+    "build": "node scripts/build.mjs",
+    "verify:native": "node scripts/verify-native.mjs",
+    "serve": "node scripts/serve.mjs"
+  },
+  "runtimeDependencies": {
+    "esbuild": "0.25.5",
+    "pixi.js": "8.6.6"
+  }
+}

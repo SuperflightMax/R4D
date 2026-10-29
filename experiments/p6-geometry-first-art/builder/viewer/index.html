@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="ru">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>R4D · P6 Geometry First</title>
+<link rel="stylesheet" href="style.css">
+<body>
+<main>
+  <header><div><p class="eyebrow">R4D / P6</p><h1>Геометрия → арт</h1></div><span id="candidate">Загрузка…</span></header>
+  <section class="controls" aria-label="Управление броском">
+    <button id="new">Новый бросок</button>
+    <label>Seed <input id="seed" type="number" min="0" max="4294967295" value="0"></label>
+    <button id="replay">Повторить seed</button>
+    <button id="play">Продолжить</button>
+    <button id="step">+1 тик</button>
+    <button id="step10">+10 тиков</button>
+    <label>Тик <input id="tick" type="number" min="0" max="3200" value="0"></label><button id="seek">Перейти</button>
+  </section>
+  <section class="controls secondary" aria-label="Вид и сохранение">
+    <label><input id="art" type="checkbox" checked> Арт</label>
+    <label><input id="geometry" type="checkbox" checked> Геометрия</label>
+    <label><input id="flat" type="checkbox"> Плоский вид</label>
+    <button id="save">Сохранить повтор</button>
+    <label class="file-button">Открыть повтор<input id="load" type="file" accept="application/json"></label>
+    <button id="contact">Следующий контакт</button>
+  </section>
+  <div class="workspace"><div id="stage" aria-label="Доска PixiJS"></div><aside>
+    <p id="mode"></p><output id="status" aria-live="polite"></output>
+    <p class="caption">На паузе показано точное состояние тика. Вид и слои не меняют физику.</p>
+    <h2>События native</h2><div id="events"></div>
+  </aside></div>
+  <details><summary>Версии и условия</summary><pre id="pins"></pre></details>
+  <details><summary>Точный снимок native</summary><pre id="snapshot"></pre></details>
+  <p id="error" role="alert"></p>
+</main><script type="module" src="app.mjs"></script>
+</body></html>

@@ -1,0 +1,44 @@
+import fs from 'node:fs';
+import path from 'node:path';
+import crypto from 'node:crypto';
+import assert from 'node:assert/strict';
+import { execFileSync } from 'node:child_process';
+import { pathToFileURL } from 'node:url';
+import { root,runtime,site } from './paths.mjs';
+import { RunController } from '../viewer/controller.mjs';
+const core=await import(pathToFileURL(path.join(site,'native/core.mjs')));
+const configSourceText=fs.readFileSync(path.join(root,'inputs/config.json'),'utf8');
+const config=JSON.parse(configSourceText);
+const meta=JSON.parse(fs.readFileSync(path.join(site,'build-meta.json')));
+const hash=v=>crypto.createHash('sha256').update(JSON.stringify(v)).digest('hex');
+const ordered=v=>Array.isArray(v)?v.map(ordered):v&&typeof v==='object'?Object.fromEntries(Object.keys(v).sort().map(k=>[k,ordered(v[k])])):v;
+const canonicalHash=v=>hash(ordered(v));
+const qaCommit='49719d407fe1a9408911d49ba819ac6a02022a0a';
+const qa=JSON.parse(execFileSync('git',['-C',root,'show',`${qaCommit}:experiments/p6-geometry-first-art/qa/state-contract.json`],{encoding:'utf8'}));
+const out=path.join(runtime,'verification');fs.mkdirSync(out,{recursive:true});
+const report={schema:'r4d.p6.native-selfcheck.v1',meta,qaContractCommit:qaCommit,seeds:[],checks:[]};
+for(const seed of [0,1,2]){
+  const single=new RunController(core,config,meta,configSourceText),batch=new RunController(core,config,meta,configSourceText);
+  single.reset(seed);batch.reset(seed);
+  while(!single.session.state.done)single.advance(1);
+  while(!batch.session.state.done)batch.advance(10);
+  assert.deepEqual(batch.snapshot(),single.snapshot());
+  assert.deepEqual(batch.events,single.events);
+  const cfg=structuredClone(config);cfg.rng.seed=seed;
+  const native=core.runUntilDone(cfg);
+  assert.equal(single.snapshot().tick,native.ticks);
+  assert.deepEqual(single.snapshot().result,native.result);
+  const replay=single.exportReplay(),replayed=new RunController(core,config,meta,configSourceText);
+  replayed.importReplay(replay);assert.deepEqual(replayed.snapshot(),single.snapshot());
+  for(const tick of [94,95,96]){replayed.seek(tick);assert.deepEqual(replayed.snapshot(),single.states[tick]);}
+  const stateHash=canonicalHash(single.states),eventHash=canonicalHash(single.events);
+  const oracle=qa.runs.find(r=>r.seed===seed);
+  assert.equal(stateHash,oracle.stateDigest);assert.equal(eventHash,oracle.eventDigest);
+  const records={seed,stateHash,eventHash,states:single.states,events:single.events,replay};
+  fs.writeFileSync(path.join(out,`seed-${seed}.json`),JSON.stringify(records,null,2)+'\n');
+  report.seeds.push({seed,ticks:single.snapshot().tick,result:single.snapshot().result,stateHash,eventHash,firstHit:single.events.find(e=>e.type==='object_hit'),contactWindow:[94,95,96].map(t=>single.states[t])});
+}
+assert.equal(new Set(report.seeds.map(s=>s.stateHash)).size,3);
+report.checks=['native runUntilDone agrees with consumer session result/ticks','single ticks and batches produce identical states/events','saved replay recalculates exact state from fixed config and seed','seeking states94/95/96 reproduces retained native snapshots','ordinary predeclared seeds0/1/2 differ; all retained without selection','all independently calculated state/event canonical digests match QA contract'];
+const reportPath=path.join(root,'verification/native-selfcheck.json');fs.mkdirSync(path.dirname(reportPath),{recursive:true});fs.writeFileSync(reportPath,JSON.stringify(report,null,2)+'\n');
+console.log(JSON.stringify(report,null,2));
