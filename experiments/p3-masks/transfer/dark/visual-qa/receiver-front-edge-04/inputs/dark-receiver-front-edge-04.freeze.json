@@ -1,0 +1,240 @@
+{
+  "schema": "r4d-p3-builder-candidate-v1",
+  "candidate": "dark-receiver-front-edge-04",
+  "board": "dark",
+  "status": "FROZEN_FOR_INDEPENDENT_TARGETED_QA",
+  "frozenAt": "2026-10-29T12:23:43.716Z",
+  "bundle": "E:/R4D/perspective/p3-runtime/builder/transfer-water-dark/dark/receiver-front-edge-04",
+  "sourceCommit": "d7eac5d7d76127e3138480f1f16eaf28aac0f15a",
+  "artistSource": {
+    "commit": "e5d3e1f44c112e483ff2a23fbd169cb119390865",
+    "prefix": "experiments/p3-masks/transfer/dark/asset-artist/variants/receiver-front-edge-01/",
+    "variant": "receiver-front-edge-01",
+    "assetsSha256": "2b02dcde6c07266b67285700040e4ae0342f06fb760ae6ed0cf1fdcdc9b6cbad"
+  },
+  "manifestSha256": "d180e5a63bb1dec7c510507fc2ce990e7cb10927b337a19c4bb9effc67e4ed1b",
+  "manifestBytes": 15737,
+  "payloadFiles": 92,
+  "payloadBytes": 3494340,
+  "totalFiles": 93,
+  "totalBytes": 3510077,
+  "url": "http://127.0.0.1:6870/review/r4d/p3-masks-dark/",
+  "ownedPid": 15752,
+  "execSession": 31501,
+  "p1Commit": "4b47db04c7140ebf88f69b91faa0b790d46f22ec",
+  "configSha256": "14be2a023833d266d1e333bf582af5fd5885deb445698c10ebd846ef0cc080b2",
+  "p1ManifestSha256": "3fab422bd1f74d477d1648620c97ad6d7b8b0a55a70a1102d6e6885def564d81",
+  "projectionSha256": "4dfa46589bb3fdfc8e2ad8ff2554737697e3ce9172c5b8d5c5583577df0c8c48",
+  "sourceSha256": "7ceff71bd0a871fecd725527dff5522450c8e75a74eb99c107b5d8624bf8fa3a",
+  "coreCommit": "5a6fa03f1cdb3de88a2d9c7dbe795eb8e2a7f023",
+  "nativeSha256": "af8e6dea9ee5c46759f99ba3b68f4afa91c740b4fd2aba2d2d3f65bfa66753fa",
+  "corePackageTree": "008d16a80a26bb77d562a45218b01da09b0d9ff0",
+  "rendererSha256": "760c9bada40cb3ecb944f332f6efa91bb3c1340ce7f1ad9c2cabeda4dca0a3e6",
+  "methodBaseline": {
+    "code": "f1aca21e7b9ba19001e7e8762fcaf2511bf9bf74",
+    "art": "f899a308aed156a11e2a1013292ed68c6669959d",
+    "manifestSha256": "e2e9f7d837b3d05f484f75a877af6992a70ee88363add783d80f3c6e206f431f",
+    "depth": "unchanged scalar/line; same alpha restoration passes"
+  },
+  "priorDark03": {
+    "bundle": "E:/R4D/perspective/p3-runtime/builder/transfer-water-dark/dark/full-method-03",
+    "source": "c73d6128970b2b022d5313b08c34cafdec9a1bc3",
+    "art": "17dc9fcdc261562acb581dd8590096819734c807",
+    "manifestSha256": "b3923f4ccab57a8361a9dc8f64de73fcee9b70fb38c87aac5e9623fbc62d0307",
+    "technicalQaCommit": "b327ae601a4962dd5826abfbfdeefaf77c090a55",
+    "technicalResult": "Previously performed bounded Technical PASS03, not rerun",
+    "visualQaCommit": "2d40b3f31341bbf57fd2df76aa6637a3f1a303e8",
+    "visualResult": "Previously performed full matrix with partial instance coverage; D-POP-01 failure; no Visual PASS"
+  },
+  "newScope": "Only12 receiver depthLineNative;48 other records and62PNG/rect/alpha/ball/shadow/app/core/P1/source unchanged",
+  "localAndHttpStaticChecks": "All92 payload bytes/size and JS MIME, manifest, curated public allowlist; no authoring scripts/diagnostic packet/private TS/maps/keys",
+  "nativeReplayDuringPackaging": false,
+  "reusedCheckpoints": {
+    "runs": 8,
+    "frames": 6,
+    "provenance": {
+      "mode": "exact existing checkpoints; no native replay during packaging",
+      "baselineManifestSha256": "b3923f4ccab57a8361a9dc8f64de73fcee9b70fb38c87aac5e9623fbc62d0307",
+      "vqaCommit": "2d40b3f31341bbf57fd2df76aa6637a3f1a303e8"
+    },
+    "ordinaryOutcomes": [
+      {
+        "seed": 0,
+        "lastTick": 888,
+        "result": {
+          "kind": "IN_BUCKET",
+          "bucketId": "receiver-01"
+        }
+      },
+      {
+        "seed": 1,
+        "lastTick": 884,
+        "result": {
+          "kind": "IN_BUCKET",
+          "bucketId": "receiver-01"
+        }
+      },
+      {
+        "seed": 2,
+        "lastTick": 1812,
+        "result": {
+          "kind": "LOST",
+          "finalX": 32824.3930072,
+          "nearMissBucketIds": []
+        }
+      },
+      {
+        "seed": 1189667321,
+        "lastTick": 1470,
+        "result": {
+          "kind": "LOST",
+          "finalX": 34262.9555904,
+          "nearMissBucketIds": []
+        }
+      },
+      {
+        "seed": 1551806092,
+        "lastTick": 971,
+        "result": {
+          "kind": "IN_BUCKET",
+          "bucketId": "receiver-02"
+        }
+      },
+      {
+        "seed": 3858699109,
+        "lastTick": 2083,
+        "result": {
+          "kind": "LOST",
+          "finalX": 34123.8019097,
+          "nearMissBucketIds": []
+        }
+      },
+      {
+        "seed": 3238915631,
+        "lastTick": 1435,
+        "result": {
+          "kind": "IN_BUCKET",
+          "bucketId": "receiver-03"
+        }
+      },
+      {
+        "seed": 1771307888,
+        "lastTick": 1692,
+        "result": {
+          "kind": "IN_BUCKET",
+          "bucketId": "receiver-01"
+        }
+      }
+    ]
+  },
+  "newActualBrowserScope": {
+    "seed": 3858699109,
+    "frames": [
+      2010,
+      2011,
+      2012,
+      2013,
+      2014,
+      2015,
+      2016,
+      2017,
+      2018,
+      2019,
+      2044,
+      2045,
+      2046,
+      2047
+    ],
+    "scales": [
+      100,
+      200
+    ],
+    "rawComparativeFrames": 28,
+    "selectedActualCheckpoints": [
+      2012,
+      2044,
+      2045,
+      2046
+    ],
+    "all4StatesMatchExistingTrace": true,
+    "wholeCheckpoint2012MatchesVqa03": true,
+    "targetTerminal": "LOST2083",
+    "nearEntries": [
+      {
+        "seed": 0,
+        "receiver": "01",
+        "ticks": [
+          880,
+          884,
+          887,
+          888
+        ]
+      },
+      {
+        "seed": 1551806092,
+        "receiver": "02",
+        "ticks": [
+          965,
+          968,
+          970,
+          971
+        ]
+      },
+      {
+        "seed": 3238915631,
+        "receiver": "03",
+        "ticks": [
+          1430,
+          1434,
+          1435
+        ]
+      }
+    ],
+    "priorControlsNegativeImportFullNativeMatrix": "Previously performed on03; unchanged code/identity; deliberately not repeated"
+  },
+  "shadow": {
+    "separateOffsetUnchanged": true,
+    "shadowSwitch": 2045,
+    "ballSwitch": 2046,
+    "actualSelectedStatesConfirmed": true,
+    "visualLimit": "Outside JPG at new thresholds on dark background: shadow contrast low; no universal shadow-quality PASS"
+  },
+  "finding": {
+    "id": "D-POP-01",
+    "status": "OPEN_PENDING_INDEPENDENT_RETEST",
+    "boundedSelfcheck": "No former abrupt2011-to2012 unmask or noticeable new-threshold jump observed; not QA closure"
+  },
+  "evidenceRoot": "E:/R4D/perspective/p3-runtime/builder/transfer-water-dark/dark/evidence/receiver-front04",
+  "keptPreviews": [
+    {
+      "board": "water",
+      "port": 6868,
+      "pid": 29572,
+      "http": 200,
+      "manifestSha256": "de1344afcb197115b76cb4006ead3d96e7b2581a1a299df1100d7a552d2ce2c6"
+    },
+    {
+      "board": "dark",
+      "port": 6869,
+      "pid": 37660,
+      "http": 200,
+      "manifestSha256": "b3923f4ccab57a8361a9dc8f64de73fcee9b70fb38c87aac5e9623fbc62d0307"
+    }
+  ],
+  "resourceEvidence": {
+    "beforeBuildUtc": "2026-10-29T12:13:22Z",
+    "ramFreeGiB": 16.319,
+    "cpuPercent": 1,
+    "EFreeGiB": 11.653,
+    "previewMeasuredRssMiB": 51.59,
+    "newOwnedDiskAreasMiB": 9.508,
+    "peakNotMeasured": true,
+    "ownBrowserTabClosed": true
+  },
+  "remainingRisks": [
+    "Independent targeted TQA/VQA pending; no general Visual PASS",
+    "All four receiver side-rim orderings changed; three successful entries and one LOST corner do not certify all approaches",
+    "Inherited scalar/line and accepted2D/source-height limitations unchanged"
+  ],
+  "server_write": false
+}
