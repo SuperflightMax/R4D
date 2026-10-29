@@ -1,0 +1,1001 @@
+{
+  "candidate": "dark-full-method-03",
+  "manifestHash": "b3923f4ccab57a8361a9dc8f64de73fcee9b70fb38c87aac5e9623fbc62d0307",
+  "utc": "2026-10-29T10:53:45.682Z",
+  "ordinary": [
+    {
+      "seed": 2190736337,
+      "lastTick": 1357,
+      "result": {
+        "kind": "IN_BUCKET",
+        "bucketId": "receiver-02"
+      },
+      "ticksCompared": 1358,
+      "traceSha256": "00fa1782b7d6edecddc82f74333d8f59f31cdad29183947b9050f4997fb82f38"
+    },
+    {
+      "seed": 277429092,
+      "lastTick": 1962,
+      "result": {
+        "kind": "LOST",
+        "finalX": 33149.1671343,
+        "nearMissBucketIds": []
+      },
+      "ticksCompared": 1963,
+      "traceSha256": "ec033de24a42a9a1aa4b1c28786dfa33e3eb40af15ac23ac2b8a29c37480ef20"
+    },
+    {
+      "seed": 3061636154,
+      "lastTick": 2441,
+      "result": {
+        "kind": "LOST",
+        "finalX": 33975.8583577,
+        "nearMissBucketIds": []
+      },
+      "ticksCompared": 2442,
+      "traceSha256": "71d3155aaa2b421cf3ed57f66962f7576f9dec34f1b4b22782e29f63c626ae90"
+    }
+  ],
+  "uiChecks": {
+    "firstThreeOrdinaryNoDiscard": true,
+    "pausePlus1Plus10": true,
+    "fullCheckpointInvariantAcrossFourArtGeometryAndFlatFloorZoomPan": true,
+    "visibleReceiverPanFullCheckpointUnchanged": true,
+    "actualDownloadFreshReloadImport": true,
+    "importNextTickNative": true,
+    "boardOnlyNegativeNoStateMutation": true,
+    "replaySameTerminal": true,
+    "seekHomeEndAndBack": true,
+    "browserRunInfoIncludingCompleteHitsMatchesOracle": true
+  },
+  "samples": [
+    {
+      "file": "controls-art-off-geometry-off.json",
+      "seed": 3061636154,
+      "tick": 87,
+      "stateSha256": "37a2268fe8211aec2cbe8c039442d8656d550d3e6fa86e94a3f95d2839b502d6",
+      "result": null,
+      "controls": {
+        "art": false,
+        "geometry": false,
+        "view": "source",
+        "framing": "whole",
+        "zoom": "1"
+      }
+    },
+    {
+      "file": "controls-art-off-geometry-on.json",
+      "seed": 3061636154,
+      "tick": 87,
+      "stateSha256": "37a2268fe8211aec2cbe8c039442d8656d550d3e6fa86e94a3f95d2839b502d6",
+      "result": null,
+      "controls": {
+        "art": false,
+        "geometry": true,
+        "view": "source",
+        "framing": "whole",
+        "zoom": "1"
+      }
+    },
+    {
+      "file": "controls-art-on-geometry-on.json",
+      "seed": 3061636154,
+      "tick": 87,
+      "stateSha256": "37a2268fe8211aec2cbe8c039442d8656d550d3e6fa86e94a3f95d2839b502d6",
+      "result": null,
+      "controls": {
+        "art": true,
+        "geometry": true,
+        "view": "source",
+        "framing": "whole",
+        "zoom": "1"
+      }
+    },
+    {
+      "file": "controls-flat-floor-200-after-pan.json",
+      "seed": 3061636154,
+      "tick": 87,
+      "stateSha256": "37a2268fe8211aec2cbe8c039442d8656d550d3e6fa86e94a3f95d2839b502d6",
+      "result": null,
+      "controls": {
+        "art": true,
+        "geometry": false,
+        "view": "flat",
+        "framing": "floor",
+        "zoom": "2"
+      }
+    },
+    {
+      "file": "controls-flat-floor-200-before-pan.json",
+      "seed": 3061636154,
+      "tick": 87,
+      "stateSha256": "37a2268fe8211aec2cbe8c039442d8656d550d3e6fa86e94a3f95d2839b502d6",
+      "result": null,
+      "controls": {
+        "art": true,
+        "geometry": false,
+        "view": "flat",
+        "framing": "floor",
+        "zoom": "2"
+      }
+    },
+    {
+      "file": "corner04-t832.json",
+      "seed": 0,
+      "tick": 832,
+      "stateSha256": "560f9964c96e6c56019c92d014b1a34138187df4e814dc4925f717b2cf9c8237",
+      "result": null,
+      "controls": {
+        "art": true,
+        "geometry": false,
+        "view": "source",
+        "framing": "whole",
+        "zoom": "2"
+      }
+    },
+    {
+      "file": "corner04-t836.json",
+      "seed": 0,
+      "tick": 836,
+      "stateSha256": "84df1f0a2f4e0e9a2176640e13ea2150631a165e72f63c267ebaffe1128323ff",
+      "result": null,
+      "controls": {
+        "art": true,
+        "geometry": false,
+        "view": "source",
+        "framing": "whole",
+        "zoom": "2"
+      }
+    },
+    {
+      "file": "corner04-t838.json",
+      "seed": 0,
+      "tick": 838,
+      "stateSha256": "7f37ea9dc6f326ed19556683c8e1ecd6eb1fc93b7c5426d28ed2e2008b8a2955",
+      "result": null,
+      "controls": {
+        "art": true,
+        "geometry": false,
+        "view": "source",
+        "framing": "whole",
+        "zoom": "2"
+      }
+    },
+    {
+      "file": "corner04-t839-before-adjacent.json",
+      "seed": 0,
+      "tick": 839,
+      "stateSha256": "3b6f50803a12f75c346f1e146bafd767ebdb5b196e1356d567c72b7bcaa01cca",
+      "result": null,
+      "controls": {
+        "art": true,
+        "geometry": false,
+        "view": "source",
+        "framing": "whole",
+        "zoom": "2"
+      }
+    },
+    {
+      "file": "corner04-t839.json",
+      "seed": 0,
+      "tick": 839,
+      "stateSha256": "3b6f50803a12f75c346f1e146bafd767ebdb5b196e1356d567c72b7bcaa01cca",
+      "result": null,
+      "controls": {
+        "art": true,
+        "geometry": false,
+        "view": "source",
+        "framing": "whole",
+        "zoom": "2"
+      }
+    },
+    {
+      "file": "corner04-t840-adjacent.json",
+      "seed": 0,
+      "tick": 840,
+      "stateSha256": "eece16309d2be5ef50591b7f918ee4db79a38033e8493ce71d63dae1d8abf02f",
+      "result": null,
+      "controls": {
+        "art": true,
+        "geometry": false,
+        "view": "source",
+        "framing": "whole",
+        "zoom": "2"
+      }
+    },
+    {
+      "file": "corner04-t841-adjacent.json",
+      "seed": 0,
+      "tick": 841,
+      "stateSha256": "0b6aa5f1f3144eb2c4e011b1276a0826c09881c4dc9992e4f52110dd4015a0a8",
+      "result": null,
+      "controls": {
+        "art": true,
+        "geometry": false,
+        "view": "source",
+        "framing": "whole",
+        "zoom": "2"
+      }
+    },
+    {
+      "file": "corner04-t844.json",
+      "seed": 0,
+      "tick": 844,
+      "stateSha256": "c4dc46fe910e5b81a5ff8da9a299c82498f13a079e335fa2ba7967eb509b7b92",
+      "result": null,
+      "controls": {
+        "art": true,
+        "geometry": false,
+        "view": "source",
+        "framing": "whole",
+        "zoom": "2"
+      }
+    },
+    {
+      "file": "corner04-t848.json",
+      "seed": 0,
+      "tick": 848,
+      "stateSha256": "64a951b0ea232b656318315ad9cfd4c29fa82c6951f6c145d33f3df16870c204",
+      "result": null,
+      "controls": {
+        "art": true,
+        "geometry": false,
+        "view": "source",
+        "framing": "whole",
+        "zoom": "2"
+      }
+    },
+    {
+      "file": "exported-dark.json",
+      "seed": 3061636154,
+      "tick": 87,
+      "stateSha256": "37a2268fe8211aec2cbe8c039442d8656d550d3e6fa86e94a3f95d2839b502d6",
+      "result": null
+    },
+    {
+      "file": "final-side02-t366.json",
+      "seed": 0,
+      "tick": 366,
+      "stateSha256": "66165733b509bd3b5188b7b8d77f006af9459fae978f191e9e0ff1af80ce1f9e",
+      "result": null,
+      "controls": {
+        "art": true,
+        "geometry": false,
+        "view": "source",
+        "framing": "whole",
+        "zoom": "2"
+      }
+    },
+    {
+      "file": "import-next1.json",
+      "seed": 3061636154,
+      "tick": 88,
+      "stateSha256": "5889cb7549b6c3dbd4489c71413c5a8dbc1742495eaacdb913928ded176a21ec",
+      "result": null,
+      "controls": {
+        "art": true,
+        "geometry": false,
+        "view": "source",
+        "framing": "whole",
+        "zoom": "1"
+      }
+    },
+    {
+      "file": "imported-own-dark.json",
+      "seed": 3061636154,
+      "tick": 87,
+      "stateSha256": "37a2268fe8211aec2cbe8c039442d8656d550d3e6fa86e94a3f95d2839b502d6",
+      "result": null,
+      "controls": {
+        "art": true,
+        "geometry": false,
+        "view": "source",
+        "framing": "whole",
+        "zoom": "1"
+      }
+    },
+    {
+      "file": "lost-corner04-t895.json",
+      "seed": 2,
+      "tick": 895,
+      "stateSha256": "82f3c5b8a5736f841ea009e0d712889ca5e5a1916bf4b7844b1ad5afdb1733fe",
+      "result": null,
+      "controls": {
+        "art": true,
+        "geometry": false,
+        "view": "source",
+        "framing": "whole",
+        "zoom": "2"
+      }
+    },
+    {
+      "file": "lost-corner04-t896-adjacent.json",
+      "seed": 2,
+      "tick": 896,
+      "stateSha256": "cc1cd74a50655dec2d2607dd64d8a94ec6ea7397fadb788d99867f06ac34cf9b",
+      "result": null,
+      "controls": {
+        "art": true,
+        "geometry": false,
+        "view": "source",
+        "framing": "whole",
+        "zoom": "2"
+      }
+    },
+    {
+      "file": "lost-corner04-t896-before-geometry.json",
+      "seed": 2,
+      "tick": 896,
+      "stateSha256": "cc1cd74a50655dec2d2607dd64d8a94ec6ea7397fadb788d99867f06ac34cf9b",
+      "result": null,
+      "controls": {
+        "art": true,
+        "geometry": false,
+        "view": "source",
+        "framing": "whole",
+        "zoom": "2"
+      }
+    },
+    {
+      "file": "lost-corner04-t896-geometry.json",
+      "seed": 2,
+      "tick": 896,
+      "stateSha256": "cc1cd74a50655dec2d2607dd64d8a94ec6ea7397fadb788d99867f06ac34cf9b",
+      "result": null,
+      "controls": {
+        "art": true,
+        "geometry": true,
+        "view": "source",
+        "framing": "whole",
+        "zoom": "2"
+      }
+    },
+    {
+      "file": "lost-corner04-t896.json",
+      "seed": 2,
+      "tick": 896,
+      "stateSha256": "cc1cd74a50655dec2d2607dd64d8a94ec6ea7397fadb788d99867f06ac34cf9b",
+      "result": null,
+      "controls": {
+        "art": true,
+        "geometry": false,
+        "view": "source",
+        "framing": "whole",
+        "zoom": "2"
+      }
+    },
+    {
+      "file": "lost-corner04-t897-adjacent.json",
+      "seed": 2,
+      "tick": 897,
+      "stateSha256": "5c1db26bc79182492455478b33ccac6f650679760667d27daa9c2922e64ae097",
+      "result": null,
+      "controls": {
+        "art": true,
+        "geometry": false,
+        "view": "source",
+        "framing": "whole",
+        "zoom": "2"
+      }
+    },
+    {
+      "file": "lost-corner04-t900.json",
+      "seed": 2,
+      "tick": 900,
+      "stateSha256": "631c5b26b973ca23db66fba9795b497ad203fdccc490e3d4cbf3ec0a4804bd9b",
+      "result": null,
+      "controls": {
+        "art": true,
+        "geometry": false,
+        "view": "source",
+        "framing": "whole",
+        "zoom": "2"
+      }
+    },
+    {
+      "file": "negative-board-rejected.json",
+      "seed": 3061636154,
+      "tick": 88,
+      "stateSha256": "5889cb7549b6c3dbd4489c71413c5a8dbc1742495eaacdb913928ded176a21ec",
+      "result": null,
+      "controls": {
+        "art": true,
+        "geometry": false,
+        "view": "source",
+        "framing": "whole",
+        "zoom": "1"
+      }
+    },
+    {
+      "file": "ordinary-01-start.json",
+      "seed": 2190736337,
+      "tick": 120,
+      "stateSha256": "a18afea9ab4fa7791cae8b306768c0620ddce55ae480ab51ed3931b4638c8416",
+      "result": null,
+      "controls": {
+        "art": true,
+        "geometry": false,
+        "view": "source",
+        "framing": "whole",
+        "zoom": "1"
+      }
+    },
+    {
+      "file": "ordinary-01-terminal.json",
+      "seed": 2190736337,
+      "tick": 1357,
+      "stateSha256": "d52da9aefb4661c3348ba814edceaefe22001edb141e974890a908d15791e4f3",
+      "result": {
+        "kind": "IN_BUCKET",
+        "bucketId": "receiver-02"
+      },
+      "controls": {
+        "art": true,
+        "geometry": false,
+        "view": "source",
+        "framing": "whole",
+        "zoom": "1"
+      }
+    },
+    {
+      "file": "ordinary-02-start.json",
+      "seed": 277429092,
+      "tick": 120,
+      "stateSha256": "68409d5052107573a89ae2ccf28fa7a49aac2aa7bf8f966bb4b3d516afd89483",
+      "result": null,
+      "controls": {
+        "art": true,
+        "geometry": false,
+        "view": "source",
+        "framing": "whole",
+        "zoom": "1"
+      }
+    },
+    {
+      "file": "ordinary-02-terminal.json",
+      "seed": 277429092,
+      "tick": 1962,
+      "stateSha256": "7709b33d076f4b929e0332cc6d178f6552a52568e73abbc56a045bba19915710",
+      "result": {
+        "kind": "LOST",
+        "finalX": 33149.1671343,
+        "nearMissBucketIds": []
+      },
+      "controls": {
+        "art": true,
+        "geometry": false,
+        "view": "source",
+        "framing": "whole",
+        "zoom": "1"
+      }
+    },
+    {
+      "file": "ordinary-03-paused.json",
+      "seed": 3061636154,
+      "tick": 76,
+      "stateSha256": "cf2d42695e798a648e8a6c9c0059a8413e05a3155257af71fcb49d1cdb9833fe",
+      "result": null,
+      "controls": {
+        "art": true,
+        "geometry": false,
+        "view": "source",
+        "framing": "whole",
+        "zoom": "1"
+      }
+    },
+    {
+      "file": "ordinary-03-plus1.json",
+      "seed": 3061636154,
+      "tick": 77,
+      "stateSha256": "973d9afacc9007c95f7d7dba3fa8e280b5226001ff3c2a01692bdc07b89f3df4",
+      "result": null,
+      "controls": {
+        "art": true,
+        "geometry": false,
+        "view": "source",
+        "framing": "whole",
+        "zoom": "1"
+      }
+    },
+    {
+      "file": "ordinary-03-plus10.json",
+      "seed": 3061636154,
+      "tick": 87,
+      "stateSha256": "37a2268fe8211aec2cbe8c039442d8656d550d3e6fa86e94a3f95d2839b502d6",
+      "result": null,
+      "controls": {
+        "art": true,
+        "geometry": false,
+        "view": "source",
+        "framing": "whole",
+        "zoom": "1"
+      }
+    },
+    {
+      "file": "ordinary-03-replay-controls.json",
+      "seed": 3061636154,
+      "tick": 203,
+      "stateSha256": "6af20a6d6046f52ec7369916244cdffac7d1a6b737bc646ccead2923074f49a4",
+      "result": null,
+      "controls": {
+        "art": false,
+        "geometry": true,
+        "view": "flat",
+        "framing": "whole",
+        "zoom": "1"
+      }
+    },
+    {
+      "file": "ordinary-03-replay-start.json",
+      "seed": 3061636154,
+      "tick": 60,
+      "stateSha256": "895e351ea8344898d62c31f2f52e88aaa876bcfe1b1fd9410aa4e2c555b72eed",
+      "result": null,
+      "controls": {
+        "art": true,
+        "geometry": false,
+        "view": "source",
+        "framing": "whole",
+        "zoom": "1"
+      }
+    },
+    {
+      "file": "ordinary-03-replay-terminal.json",
+      "seed": 3061636154,
+      "tick": 2441,
+      "stateSha256": "81fedb0e6930d5fe7394e4d6d0c2e0db44bd53f236ed60e15a30a940bff8665f",
+      "result": {
+        "kind": "LOST",
+        "finalX": 33975.8583577,
+        "nearMissBucketIds": []
+      },
+      "controls": {
+        "art": false,
+        "geometry": true,
+        "view": "flat",
+        "framing": "whole",
+        "zoom": "1"
+      }
+    },
+    {
+      "file": "ordinary-03-resumed.json",
+      "seed": 3061636154,
+      "tick": 148,
+      "stateSha256": "2da81bf44fc7a024ce7dfc4ccd01f515d4a5e00123d5d8d0cb07b37a94692f56",
+      "result": null,
+      "controls": {
+        "art": true,
+        "geometry": false,
+        "view": "source",
+        "framing": "whole",
+        "zoom": "1"
+      }
+    },
+    {
+      "file": "ordinary-03-start.json",
+      "seed": 3061636154,
+      "tick": 63,
+      "stateSha256": "4bb685c9c7e6adf71966ae39728f0bd20605028bc49dc3287e2c321292537f9e",
+      "result": null,
+      "controls": {
+        "art": true,
+        "geometry": false,
+        "view": "source",
+        "framing": "whole",
+        "zoom": "1"
+      }
+    },
+    {
+      "file": "ordinary-03-terminal.json",
+      "seed": 3061636154,
+      "tick": 2441,
+      "stateSha256": "81fedb0e6930d5fe7394e4d6d0c2e0db44bd53f236ed60e15a30a940bff8665f",
+      "result": {
+        "kind": "LOST",
+        "finalX": 33975.8583577,
+        "nearMissBucketIds": []
+      },
+      "controls": {
+        "art": true,
+        "geometry": false,
+        "view": "source",
+        "framing": "whole",
+        "zoom": "1"
+      }
+    },
+    {
+      "file": "receiver01-t860-before-pan.json",
+      "seed": 0,
+      "tick": 860,
+      "stateSha256": "0e9eca6f7f0012094f52f02867ce152c6d40384ca785ebc5ed0ddcf5802eab6d",
+      "result": null,
+      "controls": {
+        "art": true,
+        "geometry": false,
+        "view": "source",
+        "framing": "whole",
+        "zoom": "2"
+      }
+    },
+    {
+      "file": "receiver01-t860-panned.json",
+      "seed": 0,
+      "tick": 860,
+      "stateSha256": "0e9eca6f7f0012094f52f02867ce152c6d40384ca785ebc5ed0ddcf5802eab6d",
+      "result": null,
+      "controls": {
+        "art": true,
+        "geometry": false,
+        "view": "source",
+        "framing": "whole",
+        "zoom": "2"
+      }
+    },
+    {
+      "file": "receiver01-t880.json",
+      "seed": 0,
+      "tick": 880,
+      "stateSha256": "e7a8afd45178e97d0b8e1c56135111877fe2fb37b039456c39fb7151f6c5c685",
+      "result": null,
+      "controls": {
+        "art": true,
+        "geometry": false,
+        "view": "source",
+        "framing": "whole",
+        "zoom": "2"
+      }
+    },
+    {
+      "file": "receiver01-t887.json",
+      "seed": 0,
+      "tick": 887,
+      "stateSha256": "e810433a4265820b96cc1f880cd387daf75d291db8c9e991954c934cab9028df",
+      "result": null,
+      "controls": {
+        "art": true,
+        "geometry": false,
+        "view": "source",
+        "framing": "whole",
+        "zoom": "2"
+      }
+    },
+    {
+      "file": "receiver01-t888-pan-immediate.json",
+      "seed": 0,
+      "tick": 888,
+      "stateSha256": "7956e69bf8c6d4a91e1b3cd9a2dbbd47b0f864d31dec30b336acddee83be0f2c",
+      "result": {
+        "kind": "IN_BUCKET",
+        "bucketId": "receiver-01"
+      },
+      "controls": {
+        "art": true,
+        "geometry": false,
+        "view": "source",
+        "framing": "whole",
+        "zoom": "2"
+      }
+    },
+    {
+      "file": "receiver01-t888-terminal.json",
+      "seed": 0,
+      "tick": 888,
+      "stateSha256": "7956e69bf8c6d4a91e1b3cd9a2dbbd47b0f864d31dec30b336acddee83be0f2c",
+      "result": {
+        "kind": "IN_BUCKET",
+        "bucketId": "receiver-01"
+      },
+      "controls": {
+        "art": true,
+        "geometry": false,
+        "view": "source",
+        "framing": "whole",
+        "zoom": "2"
+      }
+    },
+    {
+      "file": "receiver01-visible-t860-before-display.json",
+      "seed": 0,
+      "tick": 860,
+      "stateSha256": "0e9eca6f7f0012094f52f02867ce152c6d40384ca785ebc5ed0ddcf5802eab6d",
+      "result": null,
+      "controls": {
+        "art": true,
+        "geometry": false,
+        "view": "source",
+        "framing": "whole",
+        "zoom": "2"
+      }
+    },
+    {
+      "file": "receiver01-visible-t860.json",
+      "seed": 0,
+      "tick": 860,
+      "stateSha256": "0e9eca6f7f0012094f52f02867ce152c6d40384ca785ebc5ed0ddcf5802eab6d",
+      "result": null,
+      "controls": {
+        "art": true,
+        "geometry": false,
+        "view": "source",
+        "framing": "whole",
+        "zoom": "2"
+      }
+    },
+    {
+      "file": "receiver01-visible-t880-before-display.json",
+      "seed": 0,
+      "tick": 880,
+      "stateSha256": "e7a8afd45178e97d0b8e1c56135111877fe2fb37b039456c39fb7151f6c5c685",
+      "result": null,
+      "controls": {
+        "art": true,
+        "geometry": false,
+        "view": "source",
+        "framing": "whole",
+        "zoom": "2"
+      }
+    },
+    {
+      "file": "receiver01-visible-t880.json",
+      "seed": 0,
+      "tick": 880,
+      "stateSha256": "e7a8afd45178e97d0b8e1c56135111877fe2fb37b039456c39fb7151f6c5c685",
+      "result": null,
+      "controls": {
+        "art": true,
+        "geometry": false,
+        "view": "source",
+        "framing": "whole",
+        "zoom": "2"
+      }
+    },
+    {
+      "file": "receiver01-visible-t887-before-display.json",
+      "seed": 0,
+      "tick": 887,
+      "stateSha256": "e810433a4265820b96cc1f880cd387daf75d291db8c9e991954c934cab9028df",
+      "result": null,
+      "controls": {
+        "art": true,
+        "geometry": false,
+        "view": "source",
+        "framing": "whole",
+        "zoom": "2"
+      }
+    },
+    {
+      "file": "receiver01-visible-t887.json",
+      "seed": 0,
+      "tick": 887,
+      "stateSha256": "e810433a4265820b96cc1f880cd387daf75d291db8c9e991954c934cab9028df",
+      "result": null,
+      "controls": {
+        "art": true,
+        "geometry": false,
+        "view": "source",
+        "framing": "whole",
+        "zoom": "2"
+      }
+    },
+    {
+      "file": "receiver01-visible-t888-before-display.json",
+      "seed": 0,
+      "tick": 888,
+      "stateSha256": "7956e69bf8c6d4a91e1b3cd9a2dbbd47b0f864d31dec30b336acddee83be0f2c",
+      "result": {
+        "kind": "IN_BUCKET",
+        "bucketId": "receiver-01"
+      },
+      "controls": {
+        "art": true,
+        "geometry": false,
+        "view": "source",
+        "framing": "whole",
+        "zoom": "2"
+      }
+    },
+    {
+      "file": "receiver01-visible-t888.json",
+      "seed": 0,
+      "tick": 888,
+      "stateSha256": "7956e69bf8c6d4a91e1b3cd9a2dbbd47b0f864d31dec30b336acddee83be0f2c",
+      "result": {
+        "kind": "IN_BUCKET",
+        "bucketId": "receiver-01"
+      },
+      "controls": {
+        "art": true,
+        "geometry": false,
+        "view": "source",
+        "framing": "whole",
+        "zoom": "2"
+      }
+    },
+    {
+      "file": "seek-back-third.json",
+      "seed": 3061636154,
+      "tick": 87,
+      "stateSha256": "37a2268fe8211aec2cbe8c039442d8656d550d3e6fa86e94a3f95d2839b502d6",
+      "result": null,
+      "controls": {
+        "art": false,
+        "geometry": true,
+        "view": "flat",
+        "framing": "whole",
+        "zoom": "1"
+      }
+    },
+    {
+      "file": "seek-end-third.json",
+      "seed": 3061636154,
+      "tick": 2441,
+      "stateSha256": "81fedb0e6930d5fe7394e4d6d0c2e0db44bd53f236ed60e15a30a940bff8665f",
+      "result": {
+        "kind": "LOST",
+        "finalX": 33975.8583577,
+        "nearMissBucketIds": []
+      },
+      "controls": {
+        "art": false,
+        "geometry": true,
+        "view": "flat",
+        "framing": "whole",
+        "zoom": "1"
+      }
+    },
+    {
+      "file": "seek-home-third.json",
+      "seed": 3061636154,
+      "tick": 0,
+      "stateSha256": "04180c83c50b767c86e88f8ce0c3f3797c0b0db86a5c1de25ed687771565d28c",
+      "result": null,
+      "controls": {
+        "art": false,
+        "geometry": true,
+        "view": "flat",
+        "framing": "whole",
+        "zoom": "1"
+      }
+    },
+    {
+      "file": "side02-t360.json",
+      "seed": 0,
+      "tick": 360,
+      "stateSha256": "3d261324b1a7a3ec4db234742a9da3641e42a2850af5be822eba292dcd56b92f",
+      "result": null,
+      "controls": {
+        "art": true,
+        "geometry": false,
+        "view": "source",
+        "framing": "whole",
+        "zoom": "2"
+      }
+    },
+    {
+      "file": "side02-t364.json",
+      "seed": 0,
+      "tick": 364,
+      "stateSha256": "6f94f77fa9e14102f41e03f1433e918a0bcf29ef3138f14cbe2c0ba363f4c7d3",
+      "result": null,
+      "controls": {
+        "art": true,
+        "geometry": false,
+        "view": "source",
+        "framing": "whole",
+        "zoom": "2"
+      }
+    },
+    {
+      "file": "side02-t365-adjacent.json",
+      "seed": 0,
+      "tick": 365,
+      "stateSha256": "012686f4a84d163b041bffad011e818401d03b351310cfc1b1ac0804cfa2d39d",
+      "result": null,
+      "controls": {
+        "art": true,
+        "geometry": false,
+        "view": "source",
+        "framing": "whole",
+        "zoom": "2"
+      }
+    },
+    {
+      "file": "side02-t365.json",
+      "seed": 0,
+      "tick": 365,
+      "stateSha256": "012686f4a84d163b041bffad011e818401d03b351310cfc1b1ac0804cfa2d39d",
+      "result": null,
+      "controls": {
+        "art": true,
+        "geometry": false,
+        "view": "source",
+        "framing": "whole",
+        "zoom": "2"
+      }
+    },
+    {
+      "file": "side02-t366-adjacent.json",
+      "seed": 0,
+      "tick": 366,
+      "stateSha256": "66165733b509bd3b5188b7b8d77f006af9459fae978f191e9e0ff1af80ce1f9e",
+      "result": null,
+      "controls": {
+        "art": true,
+        "geometry": false,
+        "view": "source",
+        "framing": "whole",
+        "zoom": "2"
+      }
+    },
+    {
+      "file": "side02-t366-control-base.json",
+      "seed": 0,
+      "tick": 366,
+      "stateSha256": "66165733b509bd3b5188b7b8d77f006af9459fae978f191e9e0ff1af80ce1f9e",
+      "result": null,
+      "controls": {
+        "art": true,
+        "geometry": false,
+        "view": "source",
+        "framing": "whole",
+        "zoom": "2"
+      }
+    },
+    {
+      "file": "side02-t366-geometry.json",
+      "seed": 0,
+      "tick": 366,
+      "stateSha256": "66165733b509bd3b5188b7b8d77f006af9459fae978f191e9e0ff1af80ce1f9e",
+      "result": null,
+      "controls": {
+        "art": true,
+        "geometry": true,
+        "view": "source",
+        "framing": "whole",
+        "zoom": "2"
+      }
+    },
+    {
+      "file": "side02-t367-adjacent.json",
+      "seed": 0,
+      "tick": 367,
+      "stateSha256": "faf78bd55737734b1dfa41290131faa5f79798f28ce439b9732cea80338c8a50",
+      "result": null,
+      "controls": {
+        "art": true,
+        "geometry": false,
+        "view": "source",
+        "framing": "whole",
+        "zoom": "2"
+      }
+    },
+    {
+      "file": "side02-t368-adjacent.json",
+      "seed": 0,
+      "tick": 368,
+      "stateSha256": "bcbeb41610487519aa6cdbaff9a840c9818f93b5d2c48270c128b22813d6dc0f",
+      "result": null,
+      "controls": {
+        "art": true,
+        "geometry": false,
+        "view": "source",
+        "framing": "whole",
+        "zoom": "2"
+      }
+    },
+    {
+      "file": "side02-t372.json",
+      "seed": 0,
+      "tick": 372,
+      "stateSha256": "45efd80a55f8519c2e3f321d53cb2c43379f7e055e095d67f8bf41b20e28282f",
+      "result": null,
+      "controls": {
+        "art": true,
+        "geometry": false,
+        "view": "source",
+        "framing": "whole",
+        "zoom": "2"
+      }
+    }
+  ]
+}

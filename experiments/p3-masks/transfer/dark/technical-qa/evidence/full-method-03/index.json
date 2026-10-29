@@ -1,0 +1,559 @@
+{
+  "candidate": "dark-full-method-03",
+  "qaBaselineHead": "fe09f8e37cff8352dbe629e28bd3e4e2c0e019aa",
+  "sourceCommit": "c73d6128970b2b022d5313b08c34cafdec9a1bc3",
+  "artistCommit": "17dc9fcdc261562acb581dd8590096819734c807",
+  "frozenManifestSha256": "b3923f4ccab57a8361a9dc8f64de73fcee9b70fb38c87aac5e9623fbc62d0307",
+  "utc": "2026-10-29T11:06:46.912Z",
+  "nativeRuns": 8,
+  "nativeStates": 11793,
+  "browserCheckpointSamples": 66,
+  "publicSnapshotRows": 65,
+  "actualDownloadedCheckpoints": 1,
+  "frames": [
+    {
+      "path": "frames/final-side02-t366.jpg",
+      "raw": "browser/final-side02-t366.json",
+      "seed": 0,
+      "tick": 366,
+      "controls": {
+        "art": true,
+        "geometry": false,
+        "view": "source",
+        "framing": "whole",
+        "zoom": "2"
+      }
+    },
+    {
+      "path": "frames/side02-t364.jpg",
+      "raw": "browser/side02-t364.json",
+      "seed": 0,
+      "tick": 364,
+      "controls": {
+        "art": true,
+        "geometry": false,
+        "view": "source",
+        "framing": "whole",
+        "zoom": "2"
+      }
+    },
+    {
+      "path": "frames/side02-t368-adjacent.jpg",
+      "raw": "browser/side02-t368-adjacent.json",
+      "seed": 0,
+      "tick": 368,
+      "controls": {
+        "art": true,
+        "geometry": false,
+        "view": "source",
+        "framing": "whole",
+        "zoom": "2"
+      }
+    },
+    {
+      "path": "frames/side02-t366-geometry.jpg",
+      "raw": "browser/side02-t366-geometry.json",
+      "seed": 0,
+      "tick": 366,
+      "controls": {
+        "art": true,
+        "geometry": true,
+        "view": "source",
+        "framing": "whole",
+        "zoom": "2"
+      }
+    },
+    {
+      "path": "frames/corner04-t839.jpg",
+      "raw": "browser/corner04-t839.json",
+      "seed": 0,
+      "tick": 839,
+      "controls": {
+        "art": true,
+        "geometry": false,
+        "view": "source",
+        "framing": "whole",
+        "zoom": "2"
+      }
+    },
+    {
+      "path": "frames/corner04-t840-adjacent.jpg",
+      "raw": "browser/corner04-t840-adjacent.json",
+      "seed": 0,
+      "tick": 840,
+      "controls": {
+        "art": true,
+        "geometry": false,
+        "view": "source",
+        "framing": "whole",
+        "zoom": "2"
+      }
+    },
+    {
+      "path": "frames/corner04-t841-adjacent.jpg",
+      "raw": "browser/corner04-t841-adjacent.json",
+      "seed": 0,
+      "tick": 841,
+      "controls": {
+        "art": true,
+        "geometry": false,
+        "view": "source",
+        "framing": "whole",
+        "zoom": "2"
+      }
+    },
+    {
+      "path": "frames/corner04-t844.jpg",
+      "raw": "browser/corner04-t844.json",
+      "seed": 0,
+      "tick": 844,
+      "controls": {
+        "art": true,
+        "geometry": false,
+        "view": "source",
+        "framing": "whole",
+        "zoom": "2"
+      }
+    },
+    {
+      "path": "frames/receiver01-visible-t860.jpg",
+      "raw": "browser/receiver01-visible-t860.json",
+      "seed": 0,
+      "tick": 860,
+      "controls": {
+        "art": true,
+        "geometry": false,
+        "view": "source",
+        "framing": "whole",
+        "zoom": "2"
+      }
+    },
+    {
+      "path": "frames/receiver01-visible-t880.jpg",
+      "raw": "browser/receiver01-visible-t880.json",
+      "seed": 0,
+      "tick": 880,
+      "controls": {
+        "art": true,
+        "geometry": false,
+        "view": "source",
+        "framing": "whole",
+        "zoom": "2"
+      }
+    },
+    {
+      "path": "frames/receiver01-visible-t887.jpg",
+      "raw": "browser/receiver01-visible-t887.json",
+      "seed": 0,
+      "tick": 887,
+      "controls": {
+        "art": true,
+        "geometry": false,
+        "view": "source",
+        "framing": "whole",
+        "zoom": "2"
+      }
+    },
+    {
+      "path": "frames/receiver01-visible-t888.jpg",
+      "raw": "browser/receiver01-visible-t888.json",
+      "seed": 0,
+      "tick": 888,
+      "controls": {
+        "art": true,
+        "geometry": false,
+        "view": "source",
+        "framing": "whole",
+        "zoom": "2"
+      }
+    },
+    {
+      "path": "frames/lost-corner04-t896-geometry.jpg",
+      "raw": "browser/lost-corner04-t896-geometry.json",
+      "seed": 2,
+      "tick": 896,
+      "controls": {
+        "art": true,
+        "geometry": true,
+        "view": "source",
+        "framing": "whole",
+        "zoom": "2"
+      }
+    },
+    {
+      "path": "frames/ordinary-01-terminal.jpg",
+      "raw": "browser/ordinary-01-terminal.json",
+      "seed": 2190736337,
+      "tick": 1357,
+      "controls": {
+        "art": true,
+        "geometry": false,
+        "view": "source",
+        "framing": "whole",
+        "zoom": "1"
+      }
+    },
+    {
+      "path": "frames/ordinary-02-terminal.jpg",
+      "raw": "browser/ordinary-02-terminal.json",
+      "seed": 277429092,
+      "tick": 1962,
+      "controls": {
+        "art": true,
+        "geometry": false,
+        "view": "source",
+        "framing": "whole",
+        "zoom": "1"
+      }
+    },
+    {
+      "path": "frames/ordinary-03-terminal.jpg",
+      "raw": "browser/ordinary-03-terminal.json",
+      "seed": 3061636154,
+      "tick": 2441,
+      "controls": {
+        "art": true,
+        "geometry": false,
+        "view": "source",
+        "framing": "whole",
+        "zoom": "1"
+      }
+    },
+    {
+      "path": "frames/controls-art-off-geometry-off.jpg",
+      "raw": "browser/controls-art-off-geometry-off.json",
+      "seed": 3061636154,
+      "tick": 87,
+      "controls": {
+        "art": false,
+        "geometry": false,
+        "view": "source",
+        "framing": "whole",
+        "zoom": "1"
+      }
+    },
+    {
+      "path": "frames/controls-art-off-geometry-on.jpg",
+      "raw": "browser/controls-art-off-geometry-on.json",
+      "seed": 3061636154,
+      "tick": 87,
+      "controls": {
+        "art": false,
+        "geometry": true,
+        "view": "source",
+        "framing": "whole",
+        "zoom": "1"
+      }
+    },
+    {
+      "path": "frames/controls-art-on-geometry-on.jpg",
+      "raw": "browser/controls-art-on-geometry-on.json",
+      "seed": 3061636154,
+      "tick": 87,
+      "controls": {
+        "art": true,
+        "geometry": true,
+        "view": "source",
+        "framing": "whole",
+        "zoom": "1"
+      }
+    },
+    {
+      "path": "frames/controls-flat-floor-200-before-pan.jpg",
+      "raw": "browser/controls-flat-floor-200-before-pan.json",
+      "seed": 3061636154,
+      "tick": 87,
+      "controls": {
+        "art": true,
+        "geometry": false,
+        "view": "flat",
+        "framing": "floor",
+        "zoom": "2"
+      }
+    },
+    {
+      "path": "frames/negative-board-rejected.jpg",
+      "raw": "browser/negative-board-rejected.json",
+      "seed": 3061636154,
+      "tick": 88,
+      "controls": {
+        "art": true,
+        "geometry": false,
+        "view": "source",
+        "framing": "whole",
+        "zoom": "1"
+      }
+    },
+    {
+      "path": "frames/imported-own-dark.jpg",
+      "raw": "browser/imported-own-dark.json",
+      "seed": 3061636154,
+      "tick": 87,
+      "controls": {
+        "art": true,
+        "geometry": false,
+        "view": "source",
+        "framing": "whole",
+        "zoom": "1"
+      }
+    },
+    {
+      "path": "frames/ordinary-03-replay-terminal.jpg",
+      "raw": "browser/ordinary-03-replay-terminal.json",
+      "seed": 3061636154,
+      "tick": 2441,
+      "controls": {
+        "art": false,
+        "geometry": true,
+        "view": "flat",
+        "framing": "whole",
+        "zoom": "1"
+      }
+    }
+  ],
+  "checkpoints": [
+    {
+      "path": "checkpoints/ordinary-01-terminal.json",
+      "source": "browser/ordinary-01-terminal.json",
+      "kind": "exact public browser snapshot checkpoint",
+      "seed": 2190736337,
+      "tick": 1357
+    },
+    {
+      "path": "checkpoints/ordinary-02-terminal.json",
+      "source": "browser/ordinary-02-terminal.json",
+      "kind": "exact public browser snapshot checkpoint",
+      "seed": 277429092,
+      "tick": 1962
+    },
+    {
+      "path": "checkpoints/ordinary-03-terminal.json",
+      "source": "browser/ordinary-03-terminal.json",
+      "kind": "exact public browser snapshot checkpoint",
+      "seed": 3061636154,
+      "tick": 2441
+    },
+    {
+      "path": "checkpoints/seed0-pillar02-t366.json",
+      "source": "browser/final-side02-t366.json",
+      "kind": "exact public browser snapshot checkpoint",
+      "seed": 0,
+      "tick": 366
+    },
+    {
+      "path": "checkpoints/seed0-pillar04-t840.json",
+      "source": "browser/corner04-t840-adjacent.json",
+      "kind": "exact public browser snapshot checkpoint",
+      "seed": 0,
+      "tick": 840
+    },
+    {
+      "path": "checkpoints/seed0-receiver01-t888.json",
+      "source": "browser/receiver01-visible-t888.json",
+      "kind": "exact public browser snapshot checkpoint",
+      "seed": 0,
+      "tick": 888
+    },
+    {
+      "path": "checkpoints/seed2-pillar04-t896.json",
+      "source": "browser/lost-corner04-t896-geometry.json",
+      "kind": "exact public browser snapshot checkpoint",
+      "seed": 2,
+      "tick": 896
+    },
+    {
+      "path": "checkpoints/ordinary-03-downloaded.json",
+      "source": "browser/exported-dark.json",
+      "kind": "actual browser download, bytes unchanged",
+      "seed": 3061636154,
+      "tick": 87
+    }
+  ],
+  "files": [
+    {
+      "path": "package-verification.json",
+      "bytes": 21093,
+      "sha256": "74610e4d0cd8fbf1995f6a12826c6b9e4168a883d272ac585b2df20f4590a56b"
+    },
+    {
+      "path": "catalog-oracle-verification.json",
+      "bytes": 1618,
+      "sha256": "944259ae709caca6b75cb01e29a63f5e4a99811799ed2dc54688604aaec4d9d2"
+    },
+    {
+      "path": "browser-oracle-verification.json",
+      "bytes": 25677,
+      "sha256": "4a740b6d03fe1da3ac0dbeeb619467bcf3b45fd078747bc59a15eac246f7f43c"
+    },
+    {
+      "path": "resource-postflight.json",
+      "bytes": 321,
+      "sha256": "2c97cfefcb2935b9fbb2d5c43d61990426c147d9037a8b0ec0ee2a312246bf1e"
+    },
+    {
+      "path": "frames/final-side02-t366.jpg",
+      "bytes": 137839,
+      "sha256": "5f74fc0fad48676f11f6ae38855b4878a5c4ac78b32b7d3e745d42ac4201d706"
+    },
+    {
+      "path": "frames/side02-t364.jpg",
+      "bytes": 137986,
+      "sha256": "3373adb1627d9f766a7f2444cab00989b799db372116ead7393c322b1bb169bf"
+    },
+    {
+      "path": "frames/side02-t368-adjacent.jpg",
+      "bytes": 137950,
+      "sha256": "ca738686b4aafb14e523d715bb0db9bbb7342de406849a294f7bee05b22cb734"
+    },
+    {
+      "path": "frames/side02-t366-geometry.jpg",
+      "bytes": 147774,
+      "sha256": "21933e6fc467327eb6119e801de3982adb6916a95acd325e2cf2ab2ac83f441a"
+    },
+    {
+      "path": "frames/corner04-t839.jpg",
+      "bytes": 138044,
+      "sha256": "8a1db57e705374ee75dc110d8c47dd96f6c9994263928d976b43c64e85f1b0b8"
+    },
+    {
+      "path": "frames/corner04-t840-adjacent.jpg",
+      "bytes": 138067,
+      "sha256": "61cdc971b3a273e366c7d718b1f2ef6cfa34cd86e050b497e6be700b8e1ca4bf"
+    },
+    {
+      "path": "frames/corner04-t841-adjacent.jpg",
+      "bytes": 138071,
+      "sha256": "a0ab44cd23bf193160cff2510999eb7dd1ee23082f0d62e1269d32722f1b8ac9"
+    },
+    {
+      "path": "frames/corner04-t844.jpg",
+      "bytes": 138082,
+      "sha256": "16d47d185d44e777a32083a3e545fb0724942db634d5893da3bb4bf5c5c539c8"
+    },
+    {
+      "path": "frames/receiver01-visible-t860.jpg",
+      "bytes": 122797,
+      "sha256": "1514345adeb0198327f86367c0acb3196122eaf4b8f921784885797570369247"
+    },
+    {
+      "path": "frames/receiver01-visible-t880.jpg",
+      "bytes": 122679,
+      "sha256": "b6fc232e1b846c07218a79cde436c97acfd55680a53bd72360b89de20213f26a"
+    },
+    {
+      "path": "frames/receiver01-visible-t887.jpg",
+      "bytes": 122856,
+      "sha256": "3120ea3b4ef0ab9a14008818a122f5d1912b1ef079cfd109afa6cf5bd331e6b8"
+    },
+    {
+      "path": "frames/receiver01-visible-t888.jpg",
+      "bytes": 123644,
+      "sha256": "7b7909716fdd87a2ab2c379cab6e3ad001744e82f6e477b887b96bf945cf114e"
+    },
+    {
+      "path": "frames/lost-corner04-t896-geometry.jpg",
+      "bytes": 147777,
+      "sha256": "25b644feab1ccf816b495dc034e34d241b2247696cd61b473c40f0e1780666f8"
+    },
+    {
+      "path": "frames/ordinary-01-terminal.jpg",
+      "bytes": 111267,
+      "sha256": "05e6edc0b8fdb020210b8b8b938fbc4065c3b3f744d0d00a9362787c5281cb35"
+    },
+    {
+      "path": "frames/ordinary-02-terminal.jpg",
+      "bytes": 110528,
+      "sha256": "fdfc56f2cb2df1b5453a647dd609e46359089fc4776b0691499b5777be7b3af8"
+    },
+    {
+      "path": "frames/ordinary-03-terminal.jpg",
+      "bytes": 110626,
+      "sha256": "9c6322810d05e918304b29b654e1fa8060f1980b440f573ee139af4a29aaa9f1"
+    },
+    {
+      "path": "frames/controls-art-off-geometry-off.jpg",
+      "bytes": 53002,
+      "sha256": "6c01c82c2d7a37a7942b6c445a877dadbd72482bde78e5a0204875fd255fc0d3"
+    },
+    {
+      "path": "frames/controls-art-off-geometry-on.jpg",
+      "bytes": 67139,
+      "sha256": "fdad3e8df62194b8a5ec4df23e6fd2744cc87e110a853088d94b39e9320adc21"
+    },
+    {
+      "path": "frames/controls-art-on-geometry-on.jpg",
+      "bytes": 116537,
+      "sha256": "1d3f027af8921fa8f1188df5614efab0c7c4e708e6d84b337d678c6eaf1d7290"
+    },
+    {
+      "path": "frames/controls-flat-floor-200-before-pan.jpg",
+      "bytes": 129451,
+      "sha256": "5d91e003bac0c43ca86927560214e04861202a50c1035f0b33c90390462722b4"
+    },
+    {
+      "path": "frames/negative-board-rejected.jpg",
+      "bytes": 110578,
+      "sha256": "58407bddf798943afeff1fea7207b539514345bf4b2cbbb06be502bf60550fa5"
+    },
+    {
+      "path": "frames/imported-own-dark.jpg",
+      "bytes": 111017,
+      "sha256": "d3c78b49a16346672bee27bb2dcf17292113c86ef54cd80b876bd3a70bb62e13"
+    },
+    {
+      "path": "frames/ordinary-03-replay-terminal.jpg",
+      "bytes": 62038,
+      "sha256": "0a51685c4a628b458d6fef0bbd1de6b126d6409ddf52fcf139c465dc0bc4c5f0"
+    },
+    {
+      "path": "checkpoints/ordinary-01-terminal.json",
+      "bytes": 21904,
+      "sha256": "e1584b4e4a695e86fcf1d0f8dfd1fefa0dde2d10a74dc25ca06f77b1eb1f02d1"
+    },
+    {
+      "path": "checkpoints/ordinary-02-terminal.json",
+      "bytes": 21928,
+      "sha256": "b9e541be2ac9d6a11634a25ea78e4a0bc90ede6ba5cde629bf8729c13c47a13b"
+    },
+    {
+      "path": "checkpoints/ordinary-03-terminal.json",
+      "bytes": 21932,
+      "sha256": "adda30272da6c51c5eb957d3b472088a6b50fd761daa0be5d3f51b7bec03c0b1"
+    },
+    {
+      "path": "checkpoints/seed0-pillar02-t366.json",
+      "bytes": 21807,
+      "sha256": "5d1ff7cdc6f4b2e7586b9c84b6a5021c008124f437829572351f1468fffcb9b5"
+    },
+    {
+      "path": "checkpoints/seed0-pillar04-t840.json",
+      "bytes": 21806,
+      "sha256": "7ece0db0cd20d3b351fd6680b32ecdd57e06352d93594cb1d91f5563718b51bb"
+    },
+    {
+      "path": "checkpoints/seed0-receiver01-t888.json",
+      "bytes": 21887,
+      "sha256": "18ac511d13fd3cb8f7b83fabc78905113f49aab932805185c5566155329ffbc5"
+    },
+    {
+      "path": "checkpoints/seed2-pillar04-t896.json",
+      "bytes": 21805,
+      "sha256": "0388a9deba665e2016c0cc663ec01ac3afcf855e2c4cd8252e94cc39db24e126"
+    },
+    {
+      "path": "checkpoints/ordinary-03-downloaded.json",
+      "bytes": 21804,
+      "sha256": "5e3ee5d8c417907aff8044e93d14791abc30e276d58494c17cfc1397e4374f4f"
+    },
+    {
+      "path": "browser-observability.json",
+      "bytes": 3296,
+      "sha256": "7e6a1b9022aeec08f5c48f1cf3296979bcf041550ee0b40fd8ac9e55e3828652"
+    },
+    {
+      "path": "raw-index.json",
+      "bytes": 20765,
+      "sha256": "f41edea4498a7ff0e0f520a0c1e5deee42452f4cbbbe2eedf8b5157ff7816695"
+    }
+  ]
+}

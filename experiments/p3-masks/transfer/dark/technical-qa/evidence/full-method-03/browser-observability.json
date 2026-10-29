@@ -1,0 +1,104 @@
+{
+  "utc": "2026-10-29T11:06:46.850Z",
+  "consoleWarnErrorEntries": [],
+  "resourceTiming": [
+    {
+      "name": "http://127.0.0.1:6869/review/r4d/p3-masks-dark/style.css",
+      "initiatorType": "link",
+      "responseStatus": 200,
+      "transferSize": 2556,
+      "decodedBodySize": 2256
+    },
+    {
+      "name": "http://127.0.0.1:6869/review/r4d/p3-masks-dark/app.js",
+      "initiatorType": "script",
+      "responseStatus": 200,
+      "transferSize": 15093,
+      "decodedBodySize": 14793
+    },
+    {
+      "name": "http://127.0.0.1:6869/review/r4d/p3-masks-dark/vendor/pixi.js",
+      "initiatorType": "script",
+      "responseStatus": 200,
+      "transferSize": 841582,
+      "decodedBodySize": 841282
+    },
+    {
+      "name": "http://127.0.0.1:6869/review/r4d/p3-masks-dark/view-math.js",
+      "initiatorType": "script",
+      "responseStatus": 200,
+      "transferSize": 3350,
+      "decodedBodySize": 3050
+    },
+    {
+      "name": "http://127.0.0.1:6869/review/r4d/p3-masks-dark/run-model.js",
+      "initiatorType": "script",
+      "responseStatus": 200,
+      "transferSize": 2946,
+      "decodedBodySize": 2646
+    },
+    {
+      "name": "http://127.0.0.1:6869/review/r4d/p3-masks-dark/native-core.js",
+      "initiatorType": "script",
+      "responseStatus": 200,
+      "transferSize": 21790,
+      "decodedBodySize": 21490
+    },
+    {
+      "name": "http://127.0.0.1:6869/review/r4d/p3-masks-dark/data/config.json",
+      "initiatorType": "fetch",
+      "responseStatus": 200,
+      "transferSize": 19808,
+      "decodedBodySize": 19508
+    },
+    {
+      "name": "http://127.0.0.1:6869/review/r4d/p3-masks-dark/data/manifest.json",
+      "initiatorType": "fetch",
+      "responseStatus": 200,
+      "transferSize": 14239,
+      "decodedBodySize": 13939
+    },
+    {
+      "name": "http://127.0.0.1:6869/review/r4d/p3-masks-dark/data/projection.json",
+      "initiatorType": "fetch",
+      "responseStatus": 200,
+      "transferSize": 40256,
+      "decodedBodySize": 39956
+    },
+    {
+      "name": "http://127.0.0.1:6869/review/r4d/p3-masks-dark/build.json",
+      "initiatorType": "fetch",
+      "responseStatus": 200,
+      "transferSize": 2977,
+      "decodedBodySize": 2677
+    },
+    {
+      "name": "http://127.0.0.1:6869/review/r4d/p3-masks-dark/assets/artist/assets.json",
+      "initiatorType": "fetch",
+      "responseStatus": 200,
+      "transferSize": 18888,
+      "decodedBodySize": 18588
+    },
+    {
+      "name": "http://127.0.0.1:6869/review/r4d/p3-masks-dark/replays/index.json",
+      "initiatorType": "fetch",
+      "responseStatus": 200,
+      "transferSize": 2382,
+      "decodedBodySize": 2082
+    }
+  ],
+  "cdpNetwork": {
+    "events": 0,
+    "truncated": false,
+    "hasMore": false
+  },
+  "completeBrowserNetworkCoverage": false,
+  "explanation": "The IAB root exposed 12 resource timing records with status 200 and no image records; CDP Network exposed no records for two fresh reloads. All 88 payload bodies and MIME types were separately checked over HTTP; browser loaded 60 masks. Do not infer complete browser network coverage from the empty CDP stream.",
+  "tabCleanup": {
+    "utc": "2026-10-29T11:04:33.099Z",
+    "ownTabId": "1",
+    "closed": true,
+    "builderServerControl": "untouched",
+    "otherTabsControl": "untouched"
+  }
+}
