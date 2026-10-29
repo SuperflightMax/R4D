@@ -1,0 +1,275 @@
+{
+  "schema": "r4d.p6.sprite-packet.v3",
+  "status": "trial ball-shadow readability correction after independent actual lift1 review; next full scene check required",
+  "acceptedP1": "4b47db04c7140ebf88f69b91faa0b790d46f22ec",
+  "configSha256": "dd5c519cd6d4b7295118e0a3a1063efed424a0ce739450bd5153c6a9941982db",
+  "manifestSha256": "7784dc0a215d0e472cf06a4eee03793592727cf0fa9a1fa0e0c78e5f1d17da18",
+  "physicalRadiusNative": 16,
+  "coordinateRule": "ball native center projects by the exact accepted nativeToSource matrix; no config or projection change",
+  "ball": {
+    "texture": "raw/ball-v01.png",
+    "sha256": "378cc5abe32dc2086bf87c580c31675d06b91b41bbef81065bc5fe786b88542c",
+    "toolOutputId": "exec-a540156d-f7ed-4fcd-bf37-4a1b6e6b6604",
+    "canvas": [
+      1254,
+      1254
+    ],
+    "alphaBounds": [
+      {
+        "threshold": 1,
+        "rectInclusive": [
+          0,
+          0,
+          1252,
+          1253
+        ]
+      },
+      {
+        "threshold": 16,
+        "rectInclusive": [
+          198,
+          208,
+          1054,
+          1064
+        ]
+      },
+      {
+        "threshold": 128,
+        "rectInclusive": [
+          199,
+          209,
+          1053,
+          1064
+        ]
+      }
+    ],
+    "centerPx": [
+      626,
+      636.5
+    ],
+    "visibleRadiusPx": 428,
+    "radiusThresholdAlpha": 128,
+    "anchorUv": [
+      0.49920255183413076,
+      0.5075757575757576
+    ],
+    "opacity": 1.0,
+    "scaleRule": "screenRadius = distance(P(x+r,y),P(x-r,y))/2; spriteUniformScale=screenRadius/428; sprite center is lifted by one screenRadius above P(x,y)",
+    "bakedGroundShadow": false,
+    "nativeAlphaDiagnostics": {
+      "canvas": [
+        1254,
+        1254
+      ],
+      "alphaMax": 255,
+      "alphaWeightedCenter": [
+        625.5817862287066,
+        636.5782413242567
+      ],
+      "boundaryNonzero": 217,
+      "bounds": [
+        {
+          "threshold": 1,
+          "rectInclusive": [
+            0,
+            0,
+            1252,
+            1253
+          ]
+        },
+        {
+          "threshold": 16,
+          "rectInclusive": [
+            198,
+            208,
+            1054,
+            1064
+          ]
+        },
+        {
+          "threshold": 128,
+          "rectInclusive": [
+            199,
+            209,
+            1053,
+            1064
+          ]
+        }
+      ],
+      "centreRgba": [
+        25,
+        181,
+        164,
+        252
+      ]
+    },
+    "note": "Alpha below16 contains very faint generated specks extending to the canvas boundary. Keep raw unchanged; alpha>=128 silhouette controls radius, not the whole canvas.",
+    "liftRadiusFactor": 1,
+    "visualLiftRule": "screenCenter=P(nativeBallCentre)+(0,-screenRadius); lower visible sphere point meets P(nativeBallCentre). This is illustrative2.5D lift, not native z.",
+    "groundAnchor": "P(current native ball centre), unchanged"
+  },
+  "shadow": {
+    "texture": "raw/ball-shadow-v01.png",
+    "sha256": "3a4e58a4d3b9b707e6ec10ffe80e26c561605a4f99d5498c04ae5c684cf5606a",
+    "toolOutputId": "exec-7f860280-2124-4976-8ddc-8271319b5650",
+    "canvas": [
+      1774,
+      887
+    ],
+    "alphaBounds": [
+      {
+        "threshold": 1,
+        "rectInclusive": [
+          65,
+          8,
+          1715,
+          886
+        ]
+      },
+      {
+        "threshold": 16,
+        "rectInclusive": [
+          574,
+          137,
+          1197,
+          747
+        ]
+      },
+      {
+        "threshold": 128,
+        "rectInclusive": [
+          741,
+          289,
+          1030,
+          590
+        ]
+      }
+    ],
+    "centerPx": [
+      885.5,
+      442
+    ],
+    "visibleRadiusPx": 312,
+    "radiusThresholdAlpha": 16,
+    "anchorUv": [
+      0.4991544532130778,
+      0.4983089064261556
+    ],
+    "groundAnchor": "current native ball centre",
+    "groundOffsetNative": [
+      -6,
+      10
+    ],
+    "groundVisibleRadiusNative": 22,
+    "opacity": 0.6,
+    "maximumResultAlpha": 0.5435294117647058,
+    "projectionRule": "For each texture pixel (u,v), ground=(ballX-6+(u-885.5)*22/312, ballY+10+(v-442)*22/312); project ground by exact accepted nativeToSource. Render as one alpha ground layer before ball and correct obstacle occluders.",
+    "nativeAlphaDiagnostics": {
+      "canvas": [
+        1774,
+        887
+      ],
+      "alphaMax": 231,
+      "alphaWeightedCenter": [
+        884.4669363279678,
+        443.1511658103603
+      ],
+      "boundaryNonzero": 11,
+      "bounds": [
+        {
+          "threshold": 1,
+          "rectInclusive": [
+            65,
+            8,
+            1715,
+            886
+          ]
+        },
+        {
+          "threshold": 16,
+          "rectInclusive": [
+            574,
+            137,
+            1197,
+            747
+          ]
+        },
+        {
+          "threshold": 128,
+          "rectInclusive": [
+            741,
+            289,
+            1030,
+            590
+          ]
+        }
+      ],
+      "centreRgba": [
+        46,
+        45,
+        27,
+        231
+      ]
+    },
+    "note": "Native output is1774x887; do not force square or add a second perspective flatten. The content is nearly circular in its own ground plane. Opacity0.42 reduces measured native alphaMax231 to about0.38.",
+    "floorClip": {
+      "mask": "components-v01/prepared/floor-mask-v01.png",
+      "sha256": "ec7e2202d5817bace18d69c0c87745c796c904bd267c8446d2c306b86686d4b9",
+      "canvas": [
+        1536,
+        1536
+      ],
+      "coordinateSpace": "accepted source art frame",
+      "appliesTo": "dynamic ground shadow only, never sphere body",
+      "reason": "actual state1916 showed offset shadow on vertical front slab beyond the floor; no shadow surface exists in the floor-to-receiver gap",
+      "disableWithArt": true
+    }
+  },
+  "limits": [
+    "Light/shape/opacity must be checked in actual assembled motion at ordinary scale.",
+    "No final board occlusion layers are included in this packet.",
+    "No winning seeds or altered physics are supplied.",
+    "Rendering alpha cutoff16/255 may suppress faint generated specks if the consumer supports it; metadata includes raw alpha extents honestly."
+  ],
+  "previousPacket": {
+    "commit": "1adf57cfde5a20855c02a846baa045936e4d5a6d",
+    "file": "SPRITE_PACKET_V01.json",
+    "gitLfBytes": 5302,
+    "gitLfSha256": "5ef0efec3633755935fa260a13f0e4e218da16e1479b54c4caee7d3b0d32bb6c",
+    "usedWorkingCrlfBytes": 5521,
+    "usedWorkingCrlfSha256": "d23452ebeaa45725175fbc5d915420df0f2c60f13205eeffd3599622069640cb",
+    "equivalence": "exact CRLF->LF text equivalence and parsed JSON equality established by Lead/Builder",
+    "frozenIntegration02Changed": false
+  },
+  "decisionEvidence": {
+    "integrationSource": "38282825c2688e010612e35b6a807e027fb0b90a",
+    "sheetSha256": "da3794da984e6af3c93b0daaeeeb8d1e3f27e726c5e8b5bffb8a03a6105dd5cb4",
+    "nearFrameState": 1916,
+    "nearFrameSha256": "c2e36210ce509d6774339455587c359aa4f6e236c9467387d3796c74e4cb0e61",
+    "observation": "At lift0 the sphere lower silhouette overlaps the vertical near-edge face and its own projected shadow is mostly hidden underneath. Contact frames have no art occluders, so their cap overlap is not judged correct.",
+    "proposedNearFrameCenter": [
+      817.1193246163476,
+      1093.975508397951
+    ],
+    "newActualFramesRequired": true
+  },
+  "v03RevisionBasis": {
+    "previousCommit": "3899da2bc3fbaa9973bbc88dd823d58f958e7d60",
+    "previousPacket": "SPRITE_PACKET_V02.json",
+    "previousGitLfSha256": "49766ad720b73ce4d92276917e7b394d6b552e078cdd0c0afe0b924c2650a680",
+    "previousBytes": 6798,
+    "source": "Lead relayed independent Visual QA of actual lift1 at normal scale",
+    "change": "ball shadow opacity0.42->0.60; exact floor mask clips only shadow",
+    "unchanged": [
+      "ball raw",
+      "shadow raw",
+      "r16",
+      "shadow radius22",
+      "shadow offset[-6,10]",
+      "liftRadiusFactor1",
+      "native states",
+      "projection",
+      "RNG"
+    ]
+  }
+}
