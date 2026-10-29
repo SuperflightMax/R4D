@@ -1,0 +1,71 @@
+{
+  "schema": "r4d-p3-builder-candidate-v1",
+  "candidate": "dark-full-method-03",
+  "board": "dark",
+  "status": "FROZEN_FOR_INDEPENDENT_QA",
+  "frozenAt": "2026-10-29T10:24:30.242Z",
+  "bundle": "E:/R4D/perspective/p3-runtime/builder/transfer-water-dark/dark/full-method-03",
+  "sourceCommit": "c73d6128970b2b022d5313b08c34cafdec9a1bc3",
+  "artistSource": {
+    "commit": "17dc9fcdc261562acb581dd8590096819734c807",
+    "prefix": "experiments/p3-masks/transfer/dark/asset-artist/",
+    "assetsSha256": "ef5eb34be622f5ce6356d6fa51d7902c334a1f1f3c95acce225d7340928bbc29"
+  },
+  "manifestSha256": "b3923f4ccab57a8361a9dc8f64de73fcee9b70fb38c87aac5e9623fbc62d0307",
+  "manifestBytes": 14842,
+  "payloadFiles": 87,
+  "payloadBytes": 3383383,
+  "totalFilesIncludingManifest": 88,
+  "totalBytesIncludingManifest": 3398225,
+  "url": "http://127.0.0.1:6869/review/r4d/p3-masks-dark/",
+  "ownedPid": 37660,
+  "execSession": 87426,
+  "p1Commit": "4b47db04c7140ebf88f69b91faa0b790d46f22ec",
+  "coreCommit": "5a6fa03f1cdb3de88a2d9c7dbe795eb8e2a7f023",
+  "corePackageTree": "008d16a80a26bb77d562a45218b01da09b0d9ff0",
+  "nativeSha256": "af8e6dea9ee5c46759f99ba3b68f4afa91c740b4fd2aba2d2d3f65bfa66753fa",
+  "configSha256": "14be2a023833d266d1e333bf582af5fd5885deb445698c10ebd846ef0cc080b2",
+  "p1ManifestSha256": "3fab422bd1f74d477d1648620c97ad6d7b8b0a55a70a1102d6e6885def564d81",
+  "projectionSha256": "4dfa46589bb3fdfc8e2ad8ff2554737697e3ce9172c5b8d5c5583577df0c8c48",
+  "sourceSha256": "7ceff71bd0a871fecd725527dff5522450c8e75a74eb99c107b5d8624bf8fa3a",
+  "methodBaseline": {
+    "code": "f1aca21e7b9ba19001e7e8762fcaf2511bf9bf74",
+    "art": "f899a308aed156a11e2a1013292ed68c6669959d",
+    "manifestSha256": "e2e9f7d837b3d05f484f75a877af6992a70ee88363add783d80f3c6e206f431f",
+    "depth": "unchanged scalar/line; same alpha restoration passes"
+  },
+  "predeclaredSeeds": [
+    0,
+    1,
+    2,
+    1189667321,
+    1551806092
+  ],
+  "browserOrdinaryRuns": [
+    {
+      "seed": 0,
+      "lastTick": 888,
+      "result": "IN_BUCKET receiver-01"
+    },
+    {
+      "seed": 2,
+      "lastTick": 1812,
+      "result": "LOST"
+    }
+  ],
+  "selfcheck": [
+    "all87 payload hashes/bytes and HTTP/MIME",
+    "exact native replay and own/cross-board import assertions",
+    "actual browser seed0 and seed2 complete ordinary motion",
+    "actual pillar02 neighbors360,364-368,372; pillar04 neighbors832,836,839-841,844,848 and entry860,880,888",
+    "same seed2/t896 across source/flat, Art-off/geometry and browser export/import",
+    "own browser earlier rejected Water checkpoint without changing Dark state"
+  ],
+  "evidenceRoot": "E:/R4D/perspective/p3-runtime/builder/transfer-water-dark/dark/evidence/browser-full03",
+  "remainingRisks": [
+    "manual silhouette boundaries and scene lighting remain for VQA",
+    "inherited binary scalar/line ordering, including all untested face/corner transitions",
+    "no independent TQA/VQA verdict yet; no full-art PASS"
+  ],
+  "server_write": false
+}

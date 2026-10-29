@@ -1,0 +1,558 @@
+{
+  "Candidate": "dark-full-method-03",
+  "Scope": "независимая визуальная QA, существенный D-POP-01, покрытие частичное",
+  "Files": [
+    {
+      "Path": "browser-closed.json",
+      "DigestRule": "UTF-8; CRLF→LF; прочие символы и конечный перевод строки сохраняются",
+      "DigestBytes": 147,
+      "SHA256": "3156e82ec4df5cf3b65b6791addc046cfb0e599a339c5db5043cbcf803dd3c6b"
+    },
+    {
+      "Path": "controls.json",
+      "DigestRule": "UTF-8; CRLF→LF; прочие символы и конечный перевод строки сохраняются",
+      "DigestBytes": 3683,
+      "SHA256": "44f5f25be84380d2dab0f08dd47857f271bbbaa944278a37bbaf40fa5381b845"
+    },
+    {
+      "Path": "D-POP-01-states.json",
+      "DigestRule": "UTF-8; CRLF→LF; прочие символы и конечный перевод строки сохраняются",
+      "DigestBytes": 5705,
+      "SHA256": "b3ec665e19dd194cbcc984c35d555a25d2324e5dafa05a8c43b8ac7f5bcdcacd"
+    },
+    {
+      "Path": "evidence/block04-front-contact.png",
+      "DigestRule": "точные бинарные байты",
+      "DigestBytes": 97167,
+      "SHA256": "b8c84fb593f22dbb59c4da0358e64e00c5a143d5683504926a020e15798021f6"
+    },
+    {
+      "Path": "evidence/controls-art-off-geometry-off-source-t896.jpg",
+      "DigestRule": "точные бинарные байты",
+      "DigestBytes": 48996,
+      "SHA256": "be3e54d8ec141b0b86ab958b19ebac77cbc1951e33490d2a8d94ea98e3f15002"
+    },
+    {
+      "Path": "evidence/controls-art-off-geometry-on-source-t896.jpg",
+      "DigestRule": "точные бинарные байты",
+      "DigestBytes": 63138,
+      "SHA256": "01018b41b74d637328d40d4f91fb4b68b34bf4889fc1cc16453503d0dff8efcd"
+    },
+    {
+      "Path": "evidence/controls-art-on-geometry-off-flat-t896.jpg",
+      "DigestRule": "точные бинарные байты",
+      "DigestBytes": 87483,
+      "SHA256": "c6e031b9feb29a19205397467dda67f01db6a1bd2ef444cd082b9852f13b7114"
+    },
+    {
+      "Path": "evidence/controls-art-on-geometry-off-source-t896.jpg",
+      "DigestRule": "точные бинарные байты",
+      "DigestBytes": 107021,
+      "SHA256": "d468ac47b2cbf5f19fd7bfd8c24b6ee5158b66149691e158cef2ae7a4806424a"
+    },
+    {
+      "Path": "evidence/controls-art-on-geometry-on-source-t896.jpg",
+      "DigestRule": "точные бинарные байты",
+      "DigestBytes": 112873,
+      "SHA256": "6997cec9081364fd96173125704c0f0bb91b4c22a765466c7440a790c6363c10"
+    },
+    {
+      "Path": "evidence/D-POP-01-2011-2013.png",
+      "DigestRule": "точные бинарные байты",
+      "DigestBytes": 150699,
+      "SHA256": "ae02e05431eb3d1b31c13458078cada6f1629e24d9981c094f24ca75f72ac015"
+    },
+    {
+      "Path": "evidence/fixed-seed0-final.jpg",
+      "DigestRule": "точные бинарные байты",
+      "DigestBytes": 108895,
+      "SHA256": "6f7aefd6decbda2901e6ecd791fab282292e5f980802fdaba2bd4d35ee5cf370"
+    },
+    {
+      "Path": "evidence/fixed-seed2-final.jpg",
+      "DigestRule": "точные бинарные байты",
+      "DigestBytes": 108024,
+      "SHA256": "d8d93cbc83b03ad13629332615d16bebe5840535a133429e0460d97fa10a9d99"
+    },
+    {
+      "Path": "evidence/predeclared1551806092-entry02-z200-pan-up220-t968.jpg",
+      "DigestRule": "точные бинарные байты",
+      "DigestBytes": 129686,
+      "SHA256": "029f7c73f4c1e036618e5562377f519a1859d1e3b6023d7ad23cc34d715f44e5"
+    },
+    {
+      "Path": "evidence/predeclared1551806092-entry02-z200-pan-up220-t971.jpg",
+      "DigestRule": "точные бинарные байты",
+      "DigestBytes": 131572,
+      "SHA256": "0a6d68f9972a74ed940ac888eee093bbb41159e43247a00de205da23fb00eb96"
+    },
+    {
+      "Path": "evidence/random01-block04-z200-t1700.jpg",
+      "DigestRule": "точные бинарные байты",
+      "DigestBytes": 136268,
+      "SHA256": "693a9b3b3ac3e3c67d4f70b75f4b73dedfe60282fc784b48adee8f3906bc9f28"
+    },
+    {
+      "Path": "evidence/random01-block04-z200-t1710.jpg",
+      "DigestRule": "точные бинарные байты",
+      "DigestBytes": 136283,
+      "SHA256": "4fbd68436fed81523d832be97bb79fda048592cde761c2b3c5e260de337324a5"
+    },
+    {
+      "Path": "evidence/random01-block04-z200-t1711.jpg",
+      "DigestRule": "точные бинарные байты",
+      "DigestBytes": 136190,
+      "SHA256": "0a3a25bd02ad58bbdf49ce016de22d4b436de31e91d695285cd2765805f5a1f8"
+    },
+    {
+      "Path": "evidence/random01-block04-z200-t1712.jpg",
+      "DigestRule": "точные бинарные байты",
+      "DigestBytes": 136277,
+      "SHA256": "299387346f4a4978425e4d4af42ad5f2b97d72dcb82bc79cc322c2b39aea2809"
+    },
+    {
+      "Path": "evidence/random01-block04-z200-t1720.jpg",
+      "DigestRule": "точные бинарные байты",
+      "DigestBytes": 136314,
+      "SHA256": "aca675c3acbffea5cbcc30e5f22764597f9c4ebaee8d768aca2e2e7d06f59ca9"
+    },
+    {
+      "Path": "evidence/random01-receiver04-neighbors-z100-t2010.jpg",
+      "DigestRule": "точные бинарные байты",
+      "DigestBytes": 108287,
+      "SHA256": "957e9ad9b1774173d1aa026221a16d381d4f0c211bce5f78fb1953d0a07aa1ac"
+    },
+    {
+      "Path": "evidence/random01-receiver04-neighbors-z100-t2011.jpg",
+      "DigestRule": "точные бинарные байты",
+      "DigestBytes": 108205,
+      "SHA256": "7e3855ae3e46ac03cb78b7287176a01748895ab679225ebffd6034ad90783bf9"
+    },
+    {
+      "Path": "evidence/random01-receiver04-neighbors-z100-t2012.jpg",
+      "DigestRule": "точные бинарные байты",
+      "DigestBytes": 108306,
+      "SHA256": "191ef828100ec658d736aaf12868bde2c24c351ba916f32287d79d484365b0e8"
+    },
+    {
+      "Path": "evidence/random01-receiver04-neighbors-z100-t2013.jpg",
+      "DigestRule": "точные бинарные байты",
+      "DigestBytes": 108263,
+      "SHA256": "c0cef8dd3427b33c3722849f7b4d41f7cd849a0a908256ea6ea324874cf963bb"
+    },
+    {
+      "Path": "evidence/random01-receiver04-neighbors-z100-t2014.jpg",
+      "DigestRule": "точные бинарные байты",
+      "DigestBytes": 108289,
+      "SHA256": "ccaba4ad9aa35f1458a89b27012d79eb23d70f549dda8e5ef2d986339b065eef"
+    },
+    {
+      "Path": "evidence/random01-receiver04-neighbors-z200-pan-up220-left80-t2010.jpg",
+      "DigestRule": "точные бинарные байты",
+      "DigestBytes": 127262,
+      "SHA256": "720569a6f0a38c7471e443fd459d6250ef94696ae5fd60b784c25d29c29e8320"
+    },
+    {
+      "Path": "evidence/random01-receiver04-neighbors-z200-pan-up220-left80-t2011.jpg",
+      "DigestRule": "точные бинарные байты",
+      "DigestBytes": 127179,
+      "SHA256": "430bf9134634b88448d942505c6c96aeb9136bd12c284bc088e299f6eb07eea5"
+    },
+    {
+      "Path": "evidence/random01-receiver04-neighbors-z200-pan-up220-left80-t2012.jpg",
+      "DigestRule": "точные бинарные байты",
+      "DigestBytes": 127253,
+      "SHA256": "758753465e0ce843375c6879d31c7a4396e3e8125f4aca2f8ab44a208f25748c"
+    },
+    {
+      "Path": "evidence/random01-receiver04-neighbors-z200-pan-up220-left80-t2013.jpg",
+      "DigestRule": "точные бинарные байты",
+      "DigestBytes": 127221,
+      "SHA256": "0938e2847ff77d7627a2988fd61f5235683fec9358900381be461f2f8bf4fb40"
+    },
+    {
+      "Path": "evidence/random01-skull06-z200-t1855.jpg",
+      "DigestRule": "точные бинарные байты",
+      "DigestBytes": 135939,
+      "SHA256": "4a3c64b150815d5234adbc8880657291c1ef65e5d41261ffd899a0b38913dd3a"
+    },
+    {
+      "Path": "evidence/random01-skull06-z200-t1865.jpg",
+      "DigestRule": "точные бинарные байты",
+      "DigestBytes": 136075,
+      "SHA256": "2ea8c2f1709a2841e38b10be7073356ee736cba985e2e2b2c382599383b95324"
+    },
+    {
+      "Path": "evidence/random01-skull06-z200-t1868.jpg",
+      "DigestRule": "точные бинарные байты",
+      "DigestBytes": 136149,
+      "SHA256": "ea1ba721a9fb152838faeb377a40d79ce77f71e025ffb2f1e7ba40bbdd77dcca"
+    },
+    {
+      "Path": "evidence/random01-skull06-z200-t1875.jpg",
+      "DigestRule": "точные бинарные байты",
+      "DigestBytes": 136169,
+      "SHA256": "b516d6533bce484adb3b4a723e86b188599795eaa41c86e4db3d23271ad77eee"
+    },
+    {
+      "Path": "evidence/random02-skull06-front-z200-t980.jpg",
+      "DigestRule": "точные бинарные байты",
+      "DigestBytes": 136036,
+      "SHA256": "d1e0e2797c32c4a2f7dd750211d5f590874a03cec176b92c4c2c8da2099d9aaf"
+    },
+    {
+      "Path": "evidence/random02-skull06-front-z200-t981.jpg",
+      "DigestRule": "точные бинарные байты",
+      "DigestBytes": 136043,
+      "SHA256": "0e3598b303ff4915d2284816e24c7d7641b911879da1a0aee72487553a28cc1e"
+    },
+    {
+      "Path": "evidence/random02-skull06-front-z200-t982.jpg",
+      "DigestRule": "точные бинарные байты",
+      "DigestBytes": 136064,
+      "SHA256": "eed066659cece152ccea805727856ca9a8cde87d209840fdceb0a7fab7d4415c"
+    },
+    {
+      "Path": "evidence/random03-block02-z200-t765.jpg",
+      "DigestRule": "точные бинарные байты",
+      "DigestBytes": 135798,
+      "SHA256": "cdcce6ed5ea3141a3e1ad05ebb2f291596ac9469e535af1a91da5caa9cb366c8"
+    },
+    {
+      "Path": "evidence/random03-block02-z200-t771.jpg",
+      "DigestRule": "точные бинарные байты",
+      "DigestBytes": 135772,
+      "SHA256": "12bd159e640d49109e8e31bacdb591e525bcb89eb1706b5d5efb99f88b296323"
+    },
+    {
+      "Path": "evidence/random03-block02-z200-t780.jpg",
+      "DigestRule": "точные бинарные байты",
+      "DigestBytes": 135876,
+      "SHA256": "a21bf755c5eea34a13b2b697999d198e09a74d9e13029d8d2e4ef425909f2b0f"
+    },
+    {
+      "Path": "evidence/receiver01-entry.png",
+      "DigestRule": "точные бинарные байты",
+      "DigestBytes": 218494,
+      "SHA256": "ca5b58a367b4ae5d346f4f20c9711a02885743f6d7dd03e5fbe669fe011a5b08"
+    },
+    {
+      "Path": "evidence/repeat-defect-random01-z100-t2011.jpg",
+      "DigestRule": "точные бинарные байты",
+      "DigestBytes": 108205,
+      "SHA256": "7e3855ae3e46ac03cb78b7287176a01748895ab679225ebffd6034ad90783bf9"
+    },
+    {
+      "Path": "evidence/repeat-defect-random01-z100-t2012.jpg",
+      "DigestRule": "точные бинарные байты",
+      "DigestBytes": 108201,
+      "SHA256": "71af403d6d5741f77eb8f5c3b2ef1423996e3911baedafc28ee3c327dc953ce1"
+    },
+    {
+      "Path": "evidence/repeat-defect-random01-z200-pan-up220-left80-t2011.jpg",
+      "DigestRule": "точные бинарные байты",
+      "DigestBytes": 127033,
+      "SHA256": "7e9adffef6718a444ef77e84aad3de076df93f559185fab136d30cc22428020e"
+    },
+    {
+      "Path": "evidence/repeat-defect-random01-z200-pan-up220-left80-t2012.jpg",
+      "DigestRule": "точные бинарные байты",
+      "DigestBytes": 127145,
+      "SHA256": "eb87fa467d708aeec3ba06d17c0d1576d09af78371b98ad91e9370e61da1641d"
+    },
+    {
+      "Path": "evidence/seed0-bowl01-z200-pan-down180-t105.jpg",
+      "DigestRule": "точные бинарные байты",
+      "DigestBytes": 134461,
+      "SHA256": "fa827460ac1b2780ab21f56a14a6a948669f47fd1120801623f67148f528da08"
+    },
+    {
+      "Path": "evidence/seed0-bowl01-z200-pan-down180-t120.jpg",
+      "DigestRule": "точные бинарные байты",
+      "DigestBytes": 134553,
+      "SHA256": "41fef9c145ef15435091c101dd9069384d2c7bcec1f136bb33ae05fc569c6762"
+    },
+    {
+      "Path": "evidence/seed0-bowl01-z200-pan-down180-t75.jpg",
+      "DigestRule": "точные бинарные байты",
+      "DigestBytes": 133445,
+      "SHA256": "2aa6b0ec57d1a0b6fdf19da6ad1625bda8e0569e0bb34a58b8f1603a0ff8cc87"
+    },
+    {
+      "Path": "evidence/seed0-bowl01-z200-pan-down180-t89.jpg",
+      "DigestRule": "точные бинарные байты",
+      "DigestBytes": 133477,
+      "SHA256": "139acf9279841013930406bda0e517262dad5d702bc3dcb403a470b9ec0dc6e3"
+    },
+    {
+      "Path": "evidence/seed0-entry-z200-pan-up220-right80-t880.jpg",
+      "DigestRule": "точные бинарные байты",
+      "DigestBytes": 125326,
+      "SHA256": "6aea0f489cb1312e907909e5fabc78e5cbec9a370b22199ae74c76f722f839c4"
+    },
+    {
+      "Path": "evidence/seed0-entry-z200-pan-up220-right80-t887.jpg",
+      "DigestRule": "точные бинарные байты",
+      "DigestBytes": 125484,
+      "SHA256": "0e2e81fedcb55271bd47050fcb41116659571c7c5dd95b1cc1c645a1b4908a5d"
+    },
+    {
+      "Path": "evidence/seed0-entry-z200-pan-up220-right80-t888.jpg",
+      "DigestRule": "точные бинарные байты",
+      "DigestBytes": 127203,
+      "SHA256": "125ecc86294577ccab5fd6ccc59b27823c94497d2f080ec6b457d56ef737ba08"
+    },
+    {
+      "Path": "evidence/seed0-left-bowl02-z200-t460.jpg",
+      "DigestRule": "точные бинарные байты",
+      "DigestBytes": 134771,
+      "SHA256": "d491acb19531e76ca4ac9b0744534173ea3312ed1e2f7c14c3c3e87e5e39ed1c"
+    },
+    {
+      "Path": "evidence/seed0-left-bowl02-z200-t494.jpg",
+      "DigestRule": "точные бинарные байты",
+      "DigestBytes": 134934,
+      "SHA256": "7c425d92ab1c11629685689b1857ade1944e122909030b099897b1cab21010a9"
+    },
+    {
+      "Path": "evidence/seed0-left-bowl02-z200-t496.jpg",
+      "DigestRule": "точные бинарные байты",
+      "DigestBytes": 134809,
+      "SHA256": "3c8040ecedac18eed0f5af6636ad0da902c07f9260d71f68d4c95991164801bf"
+    },
+    {
+      "Path": "evidence/seed0-left-bowl02-z200-t504.jpg",
+      "DigestRule": "точные бинарные байты",
+      "DigestBytes": 134846,
+      "SHA256": "f45128b1e69990ebfc459bbf800328b796e650e390af0ff9c4e2d026faafa3cb"
+    },
+    {
+      "Path": "evidence/seed0-z100-t880.jpg",
+      "DigestRule": "точные бинарные байты",
+      "DigestBytes": 107049,
+      "SHA256": "dde3d2aa54076fc960511da16c0a1696618c940a7dfe835f670a8734e8803e76"
+    },
+    {
+      "Path": "evidence/seed0-z100-t888.jpg",
+      "DigestRule": "точные бинарные байты",
+      "DigestBytes": 108868,
+      "SHA256": "eb0d2ee0ac98452c27568d2215bc788245eea5cf5ac326c10821eb89f829cd29"
+    },
+    {
+      "Path": "evidence/seed0-z200-t364.jpg",
+      "DigestRule": "точные бинарные байты",
+      "DigestBytes": 134844,
+      "SHA256": "e8b5016829f2ed745098499148d897e1efd80bc377b7f55316fde0a094858466"
+    },
+    {
+      "Path": "evidence/seed0-z200-t366.jpg",
+      "DigestRule": "точные бинарные байты",
+      "DigestBytes": 134971,
+      "SHA256": "69371892b0a22b80a949e12996416e925e5ff25f63f3aa121fcdab654aae5158"
+    },
+    {
+      "Path": "evidence/seed0-z200-t368.jpg",
+      "DigestRule": "точные бинарные байты",
+      "DigestBytes": 134842,
+      "SHA256": "daaf2066d3fb0ceba8d4a8af06eafa9b470dba26135c0f118e17f33a3df761e1"
+    },
+    {
+      "Path": "evidence/seed0-z200-t840.jpg",
+      "DigestRule": "точные бинарные байты",
+      "DigestBytes": 134995,
+      "SHA256": "dbd465bf6bcfcf89cf56654e95d0565b71ca001856e62cf13c50081306a4a375"
+    },
+    {
+      "Path": "evidence/skull06-alpha-sequence.png",
+      "DigestRule": "точные бинарные байты",
+      "DigestBytes": 95526,
+      "SHA256": "71fd855da2b5b33c41ed261fbe225e08581e2f24eadc5593375cece9f903c4f0"
+    },
+    {
+      "Path": "evidence/ui-random-01-f012.jpg",
+      "DigestRule": "точные бинарные байты",
+      "DigestBytes": 110998,
+      "SHA256": "5db340ff95d3f36b65579473f919424fee134fc2cc490ef5d4ee24c6cf431f4e"
+    },
+    {
+      "Path": "evidence/ui-random-01-final.jpg",
+      "DigestRule": "точные бинарные байты",
+      "DigestBytes": 109171,
+      "SHA256": "daba1fd9714a77d3b0a3b9ac80c0f6d4f8860473cabfeabb52c7954ef36fda46"
+    },
+    {
+      "Path": "evidence/ui-random-02-final.jpg",
+      "DigestRule": "точные бинарные байты",
+      "DigestBytes": 109748,
+      "SHA256": "3c90fa13f357ad255c724f7df8aaf7456c156e7539cf1931527eb51228a2f5fd"
+    },
+    {
+      "Path": "evidence/ui-random-03-final.jpg",
+      "DigestRule": "точные бинарные байты",
+      "DigestBytes": 109711,
+      "SHA256": "97179d6411338d9d2e64a2bc9b8de6a14e092e7406defb793fced8716c3755c3"
+    },
+    {
+      "Path": "fixed-motion.json",
+      "DigestRule": "UTF-8; CRLF→LF; прочие символы и конечный перевод строки сохраняются",
+      "DigestBytes": 32093,
+      "SHA256": "9adf472a797f33f848189b619e119538c8e7b4ce0c2cd3d22f91a1646e06ab9a"
+    },
+    {
+      "Path": "inputs/artist-assets.json",
+      "DigestRule": "UTF-8; CRLF→LF; прочие символы и конечный перевод строки сохраняются",
+      "DigestBytes": 18588,
+      "SHA256": "ef5eb34be622f5ce6356d6fa51d7902c334a1f1f3c95acce225d7340928bbc29"
+    },
+    {
+      "Path": "inputs/build.json",
+      "DigestRule": "UTF-8; CRLF→LF; прочие символы и конечный перевод строки сохраняются",
+      "DigestBytes": 2677,
+      "SHA256": "0c4f163b88c2fb9a34755245d76e337102974a5a9a5cba75b41c3e6dbb20fe75"
+    },
+    {
+      "Path": "inputs/config.json",
+      "DigestRule": "UTF-8; CRLF→LF; прочие символы и конечный перевод строки сохраняются",
+      "DigestBytes": 19508,
+      "SHA256": "14be2a023833d266d1e333bf582af5fd5885deb445698c10ebd846ef0cc080b2"
+    },
+    {
+      "Path": "inputs/dark-full-method-03.freeze.json",
+      "DigestRule": "UTF-8; CRLF→LF; прочие символы и конечный перевод строки сохраняются",
+      "DigestBytes": 2981,
+      "SHA256": "9c2904b0499b90a98e9f5b68abe6c6d9ab98955199643e1ef473aaac1496585b"
+    },
+    {
+      "Path": "inputs/file-manifest.json",
+      "DigestRule": "UTF-8; CRLF→LF; прочие символы и конечный перевод строки сохраняются",
+      "DigestBytes": 14842,
+      "SHA256": "b3923f4ccab57a8361a9dc8f64de73fcee9b70fb38c87aac5e9623fbc62d0307"
+    },
+    {
+      "Path": "inputs/manifest.json",
+      "DigestRule": "UTF-8; CRLF→LF; прочие символы и конечный перевод строки сохраняются",
+      "DigestBytes": 13939,
+      "SHA256": "3fab422bd1f74d477d1648620c97ad6d7b8b0a55a70a1102d6e6885def564d81"
+    },
+    {
+      "Path": "inputs/projection.json",
+      "DigestRule": "UTF-8; CRLF→LF; прочие символы и конечный перевод строки сохраняются",
+      "DigestBytes": 39956,
+      "SHA256": "4dfa46589bb3fdfc8e2ad8ff2554737697e3ce9172c5b8d5c5583577df0c8c48"
+    },
+    {
+      "Path": "inputs/replay-index.json",
+      "DigestRule": "UTF-8; CRLF→LF; прочие символы и конечный перевод строки сохраняются",
+      "DigestBytes": 2082,
+      "SHA256": "a4f5a042d809579de5a0969d728d5d8387276ed92f437d978dbfe12b1fd244aa"
+    },
+    {
+      "Path": "ordinary-runs.json",
+      "DigestRule": "UTF-8; CRLF→LF; прочие символы и конечный перевод строки сохраняются",
+      "DigestBytes": 68463,
+      "SHA256": "6c06fa466c56f69fcaf114a8498ba97ba7ec1416883db60375d025b2abf95544"
+    },
+    {
+      "Path": "paused-captures.json",
+      "DigestRule": "UTF-8; CRLF→LF; прочие символы и конечный перевод строки сохраняются",
+      "DigestBytes": 93307,
+      "SHA256": "a29139e63423393e1cad40a37098a729e59f9d02833a96849be7969e2655f3f5"
+    },
+    {
+      "Path": "predeclared-ends.json",
+      "DigestRule": "UTF-8; CRLF→LF; прочие символы и конечный перевод строки сохраняются",
+      "DigestBytes": 870,
+      "SHA256": "a107447bb780133186f34c86506ee0b918654cd523a37c237a171b7655a7eaab"
+    },
+    {
+      "Path": "raw-manifest.json",
+      "DigestRule": "UTF-8; CRLF→LF; прочие символы и конечный перевод строки сохраняются",
+      "DigestBytes": 108096,
+      "SHA256": "fbd06904ee6aad81b3ed116448ae46d019c2b5ec78354c7170d0dadba283837e"
+    },
+    {
+      "Path": "replays/D-POP-01-seed3858699109-t2011.json",
+      "DigestRule": "UTF-8; CRLF→LF; прочие символы и конечный перевод строки сохраняются",
+      "DigestBytes": 21823,
+      "SHA256": "9398d6b8456771fcf061fcee3442c9be680e38fcd91a93c751fe995e9193710f"
+    },
+    {
+      "Path": "replays/D-POP-01-seed3858699109-t2012.json",
+      "DigestRule": "UTF-8; CRLF→LF; прочие символы и конечный перевод строки сохраняются",
+      "DigestBytes": 21824,
+      "SHA256": "8918878a7ba91d6de78fc37159d53b723b6aacb04a3fd7416759c1a38ec088f5"
+    },
+    {
+      "Path": "replays/fixed-seed0.json",
+      "DigestRule": "UTF-8; CRLF→LF; прочие символы и конечный перевод строки сохраняются",
+      "DigestBytes": 21887,
+      "SHA256": "18ac511d13fd3cb8f7b83fabc78905113f49aab932805185c5566155329ffbc5"
+    },
+    {
+      "Path": "replays/fixed-seed2.json",
+      "DigestRule": "UTF-8; CRLF→LF; прочие символы и конечный перевод строки сохраняются",
+      "DigestBytes": 21913,
+      "SHA256": "6d5a273d954c0fed465b7e91aae32ae643147dbebf52569e6eb3ce4bf8d81a97"
+    },
+    {
+      "Path": "replays/predeclared-seed1-terminal.json",
+      "DigestRule": "UTF-8; CRLF→LF; прочие символы и конечный перевод строки сохраняются",
+      "DigestBytes": 21888,
+      "SHA256": "b29a5f92562a634edd4ef3575254c5a3955b3ef14d8bcf8de6d59daf56da9ebb"
+    },
+    {
+      "Path": "replays/predeclared-seed1189667321-terminal.json",
+      "DigestRule": "UTF-8; CRLF→LF; прочие символы и конечный перевод строки сохраняются",
+      "DigestBytes": 21931,
+      "SHA256": "33f0bedbc2ff293898ffbf82fe95140b0c706a977f7c43c6c4f3c7015aeb7d0a"
+    },
+    {
+      "Path": "replays/predeclared-seed1551806092-terminal.json",
+      "DigestRule": "UTF-8; CRLF→LF; прочие символы и конечный перевод строки сохраняются",
+      "DigestBytes": 21904,
+      "SHA256": "f2614a50f2d72d86b50da360175a87b4f88a36186588a175de9b9c35fbc2f9a0"
+    },
+    {
+      "Path": "replays/ui-random-01-seed3858699109.json",
+      "DigestRule": "UTF-8; CRLF→LF; прочие символы и конечный перевод строки сохраняются",
+      "DigestBytes": 21929,
+      "SHA256": "df37893b0b0961da64eb311b2190a99f813c67850d84fbe1ed14443b76c59d9b"
+    },
+    {
+      "Path": "replays/ui-random-02-seed3238915631.json",
+      "DigestRule": "UTF-8; CRLF→LF; прочие символы и конечный перевод строки сохраняются",
+      "DigestBytes": 21907,
+      "SHA256": "f4261b74d0ad844b788b665089b7c1e4514da1558ead65712880d826bdac12e6"
+    },
+    {
+      "Path": "replays/ui-random-03-seed1771307888.json",
+      "DigestRule": "UTF-8; CRLF→LF; прочие символы и конечный перевод строки сохраняются",
+      "DigestBytes": 21907,
+      "SHA256": "274ce0b65e435f61f1fae76d2fa0db10ce5e950a0c065494fd324bead2cf65f9"
+    },
+    {
+      "Path": "REPORT.md",
+      "DigestRule": "UTF-8; CRLF→LF; прочие символы и конечный перевод строки сохраняются",
+      "DigestBytes": 19883,
+      "SHA256": "154733488f8c1e697aafb82fb7a217090ac0958a836e3eabc465eaa1590fe9b4"
+    },
+    {
+      "Path": "resources-end.json",
+      "DigestRule": "UTF-8; CRLF→LF; прочие символы и конечный перевод строки сохраняются",
+      "DigestBytes": 437,
+      "SHA256": "1d624b1115540e7243ac8b83c8bc992ac3daf9734cec3f1d35c949f393ca8f02"
+    },
+    {
+      "Path": "STATE.md",
+      "DigestRule": "UTF-8; CRLF→LF; прочие символы и конечный перевод строки сохраняются",
+      "DigestBytes": 4481,
+      "SHA256": "f9f58ab7d3c4754576952f83a1d3a94cc1d5f2392fdbe88e6255009f42c3f6ae"
+    },
+    {
+      "Path": "version-verification.json",
+      "DigestRule": "UTF-8; CRLF→LF; прочие символы и конечный перевод строки сохраняются",
+      "DigestBytes": 24777,
+      "SHA256": "1848d2d8d5d7df59e9ab96d563f1d26161898501f23a1d8a0fef3f780d0fb765"
+    }
+  ]
+}
