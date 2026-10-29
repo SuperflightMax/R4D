@@ -5,7 +5,27 @@ Worktree `E:\R4D\perspective\p3-worktrees\lead`, прежняя branch
 `codex/r4d-p3-masks-lead-01`, исходный clean HEAD
 `b6226c4ed81493273d421001a2202c3a2bc4639e`.
 
-## WATER_FRONT_EDGE_04_FROZEN — TQA идёт, полный VQA после Dark; публикации нет
+## WATER_FRONT_EDGE_04: TQA PASS, VQA матрица идёт; публикации нет
+
+Полный Water TQA `c48236803b18ff2f15e7bead312dc5c0f8966e18` прочитан и
+интегрирован Lead: [water-front-edge-04.md](../technical-qa/reports/water-front-edge-04.md).
+TechnicalPASS в проверенном объёме:101local/HTTPbodies+MIME,82Git-linked files,
+8distinctruns/8491fullnative states+orderedhits,90browser samples(88snapshots+
+2actualdownloads),11shippedCP.43actual screenshots/8checkpoints/172rawindex.
+Первые3UIseed2567603743→LOST1448,2664424314→LOST733,4133151857→LOST587;
+никакойотсев не выполнялся. Ровно24archdepth/47otherregions/73PNG/renderer
+относительноFULL17dc проверены independently; все16frontedgesderived.
+Общегоart/mappingPASS нет. TQA own Watertab закрыта; preview сохранены.
+
+VQA предварительно независимо подтвердила локальное исправление W-EARLY-POP-01
+на PNG-equalFULL A/B:1015partial,1020–1022 без сопоставимого резкого раскрытия,
+pairednative states exact. Полный formal Waterreport ещё не выдан; прочаяmatrix
+продолжается, эти слова не являются full artisticPASS/готовностьюRelease.
+VQA первые3ordinaryUI:1176389091→LOST990,756668326→LOST591,
+3361762279→LOST1476, все сохранены. Отдельно TQA/VQA подтвердили видимый
+конфликт seed2/t1250 поверх painteddivider передreceiver02; вопросP3/mapping
+остаётся незакрытым, не объявлен исправленным24archdepth. Lead лично посмотрел
+actualTQAframes1250/1275; на1275 шар виден внутриводы, nativeIN_BUCKET.
 
 Builder завершил свою выдачу и сохранил candidate `water-front-edge-04`:
 handoff `017c6d7756aa99ef13ec941ff1b86aaa36ec4455` полностью прочитан Lead,
@@ -19,14 +39,15 @@ PID29572/session61378. Dark6869/PID37660/session87426 сохранён.
 Freeze10:55:54.757UTC, finding W-EARLY-POP-01 открыт до independent retest.
 
 Точный полный handoff последовательно отправлен обеим QA после fresh latest:
-TQA Dark уже completed/idle, поэтому начат новый Water turn
-`01a1875a-1de3-7c30-8f8f-bf7deb4cc50c`, active/errornull.
+TQA Dark была completed/idle, поэтому начат отдельный Water turn
+`01a1875a-1de3-7c30-8f8f-bf7deb4cc50c`, его полныйотчёт/handоff завершены.
 VQA Dark `01a18736-3abe-7692-b507-77fe05a87176` завершила отдельный report
 `2d40b3f31341bbf57fd2df76aa6637a3f1a303e8` (Dark D-POP-01, неWaterfinding),
 закрылаDarktab и перешла к Water. Оба handoff send isError=false,
 runtime6.1-sol/xhigh; без нового ACK и без параллельного дубля.
 W-EARLY-POP retest — первый раздел полного Water VQA, затем остальная matrix
-на тех же exactbytes. Никакого независимого closure/PASS пока нет.
+на тех же exactbytes. Формальный fullWater VQAreport/PASS пока не выдан;
+localretest предварительно подтверждён выше, с отдельной shadow оговоркой.
 
 Дополнительный provenance контроль Lead нашёл различие PNG blob между
 early4eb и firstfull17dc. Ball/shadow metadata и6из7region records совпали;
@@ -49,9 +70,12 @@ PID17380/session14523.97payload/3470168bytes, manifest16695bytes, всего98fi
 3486863bytes; все97local+HTTP/hash/MIME совпали. Builder независимо подтвердил
 73PNG, app/run-model/view-math/native/P1/JPG/Pixi byte-equal между обеими FULL.
 Rebuild/изменения bytes не было;6868current/6869Dark не переключались.
-Actual baseline URL и binding уже адресно отправлены VQA: только несколько
-comparative frames, не второй полный QA old. После A/B VQA явно освобождает
-чтение6870; только Builder после fresh ownership proof остановит этот PID.
+Actual baseline URL и binding были адресно отправлены VQA: только несколько
+comparative frames, не второй полный QA old. VQA явно завершилачтение6870 и
+закрылаoldtab, Lead снялreadhold. Builder после fresh command/root/port proof
+остановил ТОЛЬКО PID17380/session14523 в11:52:26Z, PID/listener отсутствуют.
+Handoff `d9c17cf90a958600d5ad3b5ca9ec6cf3eaaba1fd` прочитан/интегрирован;
+oldFULLbundle/raw/history сохранены,6868/6869HTTP200+exactmanifests неизменны.
 Fresh Builder11:18:09Z RAMfree16.645/31.907GiB CPU0% C17.035/D16.275/E11.763;
 extra owned idle Node<0.1GiB RAM. Старые previews остаются на своих bytes.
 Текущие проверки нового stablecandidate и Dark эта provenance задача не блокирует.

@@ -17,14 +17,20 @@ Lead лично посмотрел actual D-POP-01 comparison PNG и полны�
 Тень отдельно, одновременный switch не заявлен. Это localP3order/depthfinding,
 не повод менятьacceptedP1/native/траекторию. Полного artisticPASS нет.
 
-Artist после fresh completed/idle/errornull адресно возобновлён6.1-sol/xhigh:
+Artist после fresh completed/idle/errornull адресно возобновлён6.1-sol/xhigh,
+actualturn `01a1876f-9231-70f3-9157-c908a360cc36`:
 одна bounded ordinarydata correction receiver front/rims, если она обоснована
 общей acceptedgeometry/source anchor логикой, отдельный named variant. Все62PNG,
 rect/alpha/ball/shadow/renderercode/P1/native/JPG сохранить. Нетseed/tickподгона.
 Если без существенного нового метода data-only решение не обосновано — вернуть
 численный/source разбор и честноеограничение; сериювариантов/renderer не начинать.
 Исходный frozen03/всеreports/rawbytes сохранены;6869 пока на03 для возможного A/B.
-Новый candidate ещё не выдан; TQA/VQA03 не объявляются проверкой futurevariant.
+Artist выводит общую front support depthline из уже сохранённого нижнего
+ребра фасада вместо верхнейinnerкромки;12receiverdepth records,62PNG exact
+по его проверке. ЕгоPNG/source calculation даёт69.69%overlap2011→58.15%2012→
+0%с2018, newballthreshold2046/shadow2045 при уже нулевомпересечении. Это
+численное обоснование, НЕ actualbrowser/visualPASS. Commit/handoff ожидаются.
+Новый frozen candidate ещё не выдан; TQA/VQA03 не проверяют futurevariant.
 
 Dark TQA report `b327ae601a4962dd5826abfbfdeefaf77c090a55` полностью прочитан
 Lead и интегрирован: [dark-full-method-03.md](../technical-qa/reports/dark-full-method-03.md).
