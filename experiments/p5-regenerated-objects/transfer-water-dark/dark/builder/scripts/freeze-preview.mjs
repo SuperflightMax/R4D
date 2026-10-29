@@ -44,4 +44,14 @@ const index = { schema: 'r4d.p5.preview-index/1', id, createdUtc: new Date().toI
   serverWrites: 0, releaseGate: 'closed' };
 const bytes = Buffer.from(JSON.stringify(index, null, 2) + '\n');
 writeFileSync(resolve(base, 'index.json'), bytes);
-console.log(JSON.stringify({ index: resolve(base, 'index.json'), indexSha256: createHash('sha256').update(bytes).digest('hex'), indexBytes: bytes.length, publicRoot, consumerCommit: index.consumerCommit, files: inventory.length, bytes: index.inventoryBytes, status: index.status }));
+const indexSha256 = createHash('sha256').update(bytes).digest('hex');
+const fileIndex = { schema: 'r4d.p5.transfer.file-index/1', id, board, publicRoot,
+  consumerCommit: index.consumerCommit, artistManifest: index.artistManifest,
+  previewIndex: { path: 'index.json', bytes: bytes.length, sha256: indexSha256 },
+  files: inventory, inventoryBytes: index.inventoryBytes, tokenGranted: false, serverWrites: 0 };
+const fileIndexBytes = Buffer.from(JSON.stringify(fileIndex, null, 2) + '\n');
+writeFileSync(resolve(base, 'FILE_INDEX.json'), fileIndexBytes);
+console.log(JSON.stringify({ index: resolve(base, 'index.json'), indexSha256, indexBytes: bytes.length,
+  fileIndex: resolve(base, 'FILE_INDEX.json'), fileIndexBytes: fileIndexBytes.length,
+  fileIndexSha256: createHash('sha256').update(fileIndexBytes).digest('hex'),
+  publicRoot, consumerCommit: index.consumerCommit, files: inventory.length, bytes: index.inventoryBytes, status: index.status }));

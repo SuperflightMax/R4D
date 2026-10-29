@@ -16,7 +16,9 @@ $taskRecord = [pscustomobject]@{
   RAMTotalGiB = [math]::Round($taskOs.TotalVisibleMemorySize / 1MB, 3)
   RAMFreeGiB = [math]::Round($taskFreeRAM, 3)
   CPUPercentSystem = $taskCpu.PercentProcessorTime
-  CPUPercentAggregateNormalized = [math]::Round($taskAggregateCPU / [Environment]::ProcessorCount, 2)
+  CPUPercentAggregateRawNormalized = [math]::Round($taskAggregateCPU / [Environment]::ProcessorCount, 2)
+  CPUPercentAggregateNormalized = [math]::Max([double]0, [math]::Min([double]100, [double]([math]::Round($taskAggregateCPU / [Environment]::ProcessorCount, 2))))
+  AggregateCounterNote = 'Independent performance counters can give a transient negative difference; raw value retained, display clamped to 0..100'
   AggregateWorkingSetGiB = [math]::Round(($taskProcesses | Measure-Object WorkingSet64 -Sum).Sum / 1GB, 3)
   ProcessCount = $taskProcesses.Count; Drives = $taskDrives
   OwnPeakRAMGiB = $OwnPeakRAMGiB; OwnPeakEGiB = $OwnPeakEGiB
