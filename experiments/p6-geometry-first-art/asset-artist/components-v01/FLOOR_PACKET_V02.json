@@ -1,0 +1,68 @@
+{
+  "schema": "r4d.p6.ground-layers.v2",
+  "acceptedP1": "4b47db04c7140ebf88f69b91faa0b790d46f22ec",
+  "canvas": [
+    1536,
+    1536
+  ],
+  "materialRaw": "raw/floor-material-v02.png",
+  "materialRawCanvas": [
+    992,
+    1586
+  ],
+  "materialRawSha256": "a6a9310e72b9ec50a7201ebdac0f294557d337a0f32002df840eefded7a7dfa1",
+  "method": "Single generated portrait material, uniform native units per texel covering accepted floor AABB, sampled once through exact inverse homography; no repetition or mirror. Existing accepted floor alpha verified pixel by pixel.",
+  "sourceToNative": [
+    [
+      1,
+      9.330392800216167,
+      25487.205399837876
+    ],
+    [
+      0,
+      11.446119221308955,
+      25487.410584018282
+    ],
+    [
+      0,
+      0.00028056268944599974,
+      0.7895779829155002
+    ]
+  ],
+  "nativeOrigin": [
+    32796.30848746218,
+    33100.26049847829
+  ],
+  "nativeSpan": [
+    998.1872843678357,
+    1594.8908480786995
+  ],
+  "geometryMaskUnchanged": true,
+  "staticShadowsUnchanged": true,
+  "staticShadowCount": 25,
+  "floorContainsBakedShadows": false,
+  "files": [
+    {
+      "path": "prepared/floor-layer-v02.png",
+      "sha256": "e8964a4a7c8895d4cb6a186eaded419ae277bc6c408292ca841cb7bcdf6f537f",
+      "bytes": 2047520
+    },
+    {
+      "path": "prepared/floor-shadow-preview-v02.png",
+      "sha256": "f64b13726e1d40a8693ac63c82f4d9209ed291e3d92259d306db29b2c7c41206",
+      "bytes": 2063259
+    },
+    {
+      "path": "prepared/floor-mask-v01.png",
+      "sha256": "ec7e2202d5817bace18d69c0c87745c796c904bd267c8446d2c306b86686d4b9",
+      "bytes": 18178
+    },
+    {
+      "path": "prepared/ground-shadows-v01.png",
+      "sha256": "53a655743b838308a91e9d9ab0ce52bfb85478250f0a0876f5ef532262d2e2c3",
+      "bytes": 235110
+    }
+  ],
+  "dynamicShadowClip": "Use unchanged floor-mask-v01 for dynamic shadow only; sphere body is never clipped by this floor mask",
+  "status": "actual floor correction removes mirrored stone motifs; assembled scene QA pending"
+}
