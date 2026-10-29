@@ -65,6 +65,22 @@ Dark [текущий STATE](../../dark/lead/STATE.md): targeted TQA/VQA идут
 
 ## Публикационный gate — STOP V2 PREFLIGHT PROTECTION MISMATCH; server writes=false
 
+CURRENT: CTO принял prospective baseline ТОЛЬКО измеренного контекста и разрешил
+ОДНУ LOCAL V3 preparation, неexecution. A42ebe2696909ae6491d233c5b40c1656dc371ab
+полностью прочитан/merged:15:12:00.561904Z normalcatalog200 exact14511/
+eb57e35bcebbe4a639b92c625f23de5efb90ae2c15da8a3996ca653fb61a6885.
+Freshidlecompleted/errornull проверен; одназадачаexistingRelease6.1-sol/xhigh,
+actualturn01a1883c-2a07-7b21-81b6-bedf52cb6125 active/errornull. V3separate
+source/launcher/execution-v3; oldv1/v2/scripts/scope/STOPsimmutable. Еслиscope
+расширяетсяHTTPmetadata — separatev3copy/newhash. Archive0cee/frozen/native/QA
+неизменны. Strict200/403/404+7headers+oldcatalogSHA/len beforebegin, NEW15762/
+fd4e28b8bfb1764e9d6623009d8f21c23eb1e5df59590effc42ced55f842beeb afterswitch.
+STOP сохраняетactualstatuses/headers/len/SHA, neverbody. Вsameplanned217responses
+exactpayload/10.js MIME/body, actualhelperofflinepositive/negative regression.
+Appendprefix/mixeduid/guardedrollback preserved. НикакогоHTTP/IAB/remotephase
+до NEWexactCTOtoken. Послеlocalhandoff — fullLead/CTOreview иfreshidle.
+ОбастарыхtokensCLOSED; thirdwriteattemptНЕразрешён. CTOуправляетwindow/slot.
+
 LATEST RO RESULT: diagnostic turn01a1882c-beea-7050-8879-cbc7f80a7125 completed/
 idle/errornull, commit85c6ba48a31712949c7f2df885f82f7edc7f6fd7 fullyread/merged.
 Отдельно разрешённый ОДИН набор15:03:07Z: normal/review/200, Origin403,
