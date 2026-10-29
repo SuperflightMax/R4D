@@ -1,0 +1,483 @@
+{
+  "scope": "IAB early physical baseline only; no final art or motion/occlusion acceptance",
+  "runs": [
+    {
+      "seed": 0,
+      "states": 1957,
+      "events": 27,
+      "allStatesEqual": true,
+      "allEventsEqual": true,
+      "eventStateTicksEqual": true,
+      "stateDigest": "ecdcab689bdc414018344afcf0e9aa8f05a29b957de4aa62bf6e9d616cf0b70c",
+      "eventDigest": "832cc4a6071b77721e55836352173cf457ac12a99df55a9a8b8bd059e5b7a58e"
+    },
+    {
+      "seed": 1,
+      "states": 1736,
+      "events": 18,
+      "allStatesEqual": true,
+      "allEventsEqual": true,
+      "eventStateTicksEqual": true,
+      "stateDigest": "6c5f7ffe0a41f817a71cc011c9f23322cc2defa9c4111236d1bf8096b4fa23c8",
+      "eventDigest": "eabf2d62a2d1f307a472014417768d35adde6cd3d7c8d0601a6e7dacba40f7ab"
+    },
+    {
+      "seed": 2,
+      "states": 1291,
+      "events": 15,
+      "allStatesEqual": true,
+      "allEventsEqual": true,
+      "eventStateTicksEqual": true,
+      "stateDigest": "6405472e16a2383e38a0cc350b352c128873b73222bcb279218e992add67920e",
+      "eventDigest": "fa69fe7a999cdb28fe737d0eb6b6a76b5002762bbfc3739accff1a2391cdcca7"
+    }
+  ],
+  "random": [
+    {
+      "file": "random-actual.json",
+      "seed": 1554059940,
+      "tick": 110,
+      "states": 111,
+      "allStatesEqual": true,
+      "allEventsEqual": true
+    },
+    {
+      "file": "random-actual.json",
+      "seed": 2252766342,
+      "tick": 86,
+      "states": 87,
+      "allStatesEqual": true,
+      "allEventsEqual": true
+    },
+    {
+      "file": "random-paused-replay95.json",
+      "seed": 1554059940,
+      "tick": 95,
+      "states": 96,
+      "allStatesEqual": true,
+      "allEventsEqual": true
+    },
+    {
+      "file": "random-paused-replay95.json",
+      "seed": 2252766342,
+      "tick": 95,
+      "states": 96,
+      "allStatesEqual": true,
+      "allEventsEqual": true
+    }
+  ],
+  "actions": [
+    {
+      "action": "UI seek94",
+      "state": {
+        "tick": 94,
+        "rngU32": 0,
+        "ball": {
+          "pos": {
+            "x": 33254.8631695,
+            "y": 33261.2058101
+          },
+          "vel": {
+            "x": 0,
+            "y": 460.6
+          }
+        },
+        "nearMissBucketIds": [],
+        "done": false
+      },
+      "oracleEqual": true
+    },
+    {
+      "action": "UI +1",
+      "state": {
+        "tick": 95,
+        "rngU32": 1196435762,
+        "ball": {
+          "pos": {
+            "x": 33254.8464511,
+            "y": 33263.0448323
+          },
+          "vel": {
+            "x": -34.3692897,
+            "y": -370.6735287
+          }
+        },
+        "nearMissBucketIds": [],
+        "done": false
+      },
+      "oracleEqual": true
+    },
+    {
+      "action": "UI +10",
+      "state": {
+        "tick": 105,
+        "rngU32": 1196435762,
+        "ball": {
+          "pos": {
+            "x": 33253.1279871,
+            "y": 33245.8586563
+          },
+          "vel": {
+            "x": -34.3692897,
+            "y": -321.6735287
+          }
+        },
+        "nearMissBucketIds": [],
+        "done": false
+      },
+      "oracleEqual": true
+    },
+    {
+      "action": "UI seek96",
+      "state": {
+        "tick": 96,
+        "rngU32": 1196435762,
+        "ball": {
+          "pos": {
+            "x": 33254.6746047,
+            "y": 33261.2159647
+          },
+          "vel": {
+            "x": -34.3692897,
+            "y": -365.7735287
+          }
+        },
+        "nearMissBucketIds": [],
+        "done": false
+      },
+      "oracleEqual": true
+    },
+    {
+      "action": "art off",
+      "state": {
+        "tick": 96,
+        "rngU32": 1196435762,
+        "ball": {
+          "pos": {
+            "x": 33254.6746047,
+            "y": 33261.2159647
+          },
+          "vel": {
+            "x": -34.3692897,
+            "y": -365.7735287
+          }
+        },
+        "nearMissBucketIds": [],
+        "done": false
+      },
+      "statePreserved": true
+    },
+    {
+      "action": "flat on",
+      "state": {
+        "tick": 96,
+        "rngU32": 1196435762,
+        "ball": {
+          "pos": {
+            "x": 33254.6746047,
+            "y": 33261.2159647
+          },
+          "vel": {
+            "x": -34.3692897,
+            "y": -365.7735287
+          }
+        },
+        "nearMissBucketIds": [],
+        "done": false
+      },
+      "statePreserved": true
+    },
+    {
+      "action": "geometry off, art on",
+      "state": {
+        "tick": 96,
+        "rngU32": 1196435762,
+        "ball": {
+          "pos": {
+            "x": 33254.6746047,
+            "y": 33261.2159647
+          },
+          "vel": {
+            "x": -34.3692897,
+            "y": -365.7735287
+          }
+        },
+        "nearMissBucketIds": [],
+        "done": false
+      },
+      "statePreserved": true
+    },
+    {
+      "action": "UI import browser-exported seed0 tick1956 from own E runtime",
+      "state": {
+        "tick": 1956,
+        "rngU32": 3503432700,
+        "ball": {
+          "pos": {
+            "x": 33391.7821303,
+            "y": 34901.2013347
+          },
+          "vel": {
+            "x": 469.5535445,
+            "y": 1144.4611046
+          }
+        },
+        "nearMissBucketIds": [],
+        "done": true,
+        "result": {
+          "kind": "IN_BUCKET",
+          "bucketId": "receiver-03"
+        }
+      },
+      "oracleEqual": true,
+      "eventsEqual": true
+    },
+    {
+      "action": "UI click first contact event",
+      "state": {
+        "tick": 95,
+        "rngU32": 1196435762,
+        "ball": {
+          "pos": {
+            "x": 33254.8464511,
+            "y": 33263.0448323
+          },
+          "vel": {
+            "x": -34.3692897,
+            "y": -370.6735287
+          }
+        },
+        "nearMissBucketIds": [],
+        "done": false
+      },
+      "oracleEqual": true
+    },
+    {
+      "action": "UI next contact from reset",
+      "state": {
+        "tick": 95,
+        "rngU32": 1196435762,
+        "ball": {
+          "pos": {
+            "x": 33254.8464511,
+            "y": 33263.0448323
+          },
+          "vel": {
+            "x": -34.3692897,
+            "y": -370.6735287
+          }
+        },
+        "nearMissBucketIds": [],
+        "done": false
+      },
+      "oracleEqual": true
+    },
+    {
+      "action": "UI real-time then pause",
+      "during": {
+        "state": {
+          "tick": 63,
+          "rngU32": 0,
+          "ball": {
+            "pos": {
+              "x": 33254.8631695,
+              "y": 33201.2053101
+            },
+            "vel": {
+              "x": 0,
+              "y": 308.7
+            }
+          },
+          "nearMissBucketIds": [],
+          "done": false
+        },
+        "paused": false
+      },
+      "state": {
+        "tick": 80,
+        "rngU32": 0,
+        "ball": {
+          "pos": {
+            "x": 33254.8631695,
+            "y": 33231.1933101
+          },
+          "vel": {
+            "x": 0,
+            "y": 392
+          }
+        },
+        "nearMissBucketIds": [],
+        "done": false
+      },
+      "paused": true,
+      "oracleEqual": true
+    },
+    {
+      "action": "viewport resize1000x800 then reset while paused",
+      "state": {
+        "tick": 80,
+        "rngU32": 0,
+        "ball": {
+          "pos": {
+            "x": 33254.8631695,
+            "y": 33231.1933101
+          },
+          "vel": {
+            "x": 0,
+            "y": 392
+          }
+        },
+        "nearMissBucketIds": [],
+        "done": false
+      },
+      "statePreserved": true
+    },
+    {
+      "action": "UI normal new drop 1",
+      "seed": 1554059940,
+      "initialTick": 83,
+      "state": {
+        "tick": 110,
+        "rngU32": 540567414,
+        "ball": {
+          "pos": {
+            "x": 33251.9134816,
+            "y": 33237.2358788
+          },
+          "vel": {
+            "x": -39.1062599,
+            "y": -309.8193724
+          }
+        },
+        "nearMissBucketIds": [],
+        "done": false
+      }
+    },
+    {
+      "action": "UI normal new drop 2",
+      "seed": 2252766342,
+      "initialTick": 66,
+      "state": {
+        "tick": 86,
+        "rngU32": 2252766342,
+        "ball": {
+          "pos": {
+            "x": 33254.8631695,
+            "y": 33243.4678101
+          },
+          "vel": {
+            "x": 0,
+            "y": 421.4
+          }
+        },
+        "nearMissBucketIds": [],
+        "done": false
+      }
+    },
+    {
+      "action": "reproduce live tick input overwritten",
+      "seed": 0,
+      "requestedTick": 95,
+      "inputValueAfterFillAndUIObservation": "83",
+      "actualState": {
+        "tick": 99,
+        "rngU32": 1196435762,
+        "ball": {
+          "pos": {
+            "x": 33254.1590655,
+            "y": 33255.8763619
+          },
+          "vel": {
+            "x": -34.3692897,
+            "y": -351.0735287
+          }
+        },
+        "nearMissBucketIds": [],
+        "done": false
+      },
+      "paused": true,
+      "oracleEqual": true,
+      "state": {
+        "tick": 99,
+        "rngU32": 1196435762,
+        "ball": {
+          "pos": {
+            "x": 33254.1590655,
+            "y": 33255.8763619
+          },
+          "vel": {
+            "x": -34.3692897,
+            "y": -351.0735287
+          }
+        },
+        "nearMissBucketIds": [],
+        "done": false
+      }
+    }
+  ],
+  "viewportReset": true,
+  "console": [],
+  "finding": {
+    "priority": "P2",
+    "title": "Live redraw overwrites editable tick field",
+    "sourceCommit": "b1bb84d06fea0389f8cecd3ae7e5a0103aad0e96",
+    "source": "experiments/p6-geometry-first-art/builder/viewer/app.mjs",
+    "line": 120,
+    "requestedTick": 95,
+    "observedRandomTicks": [
+      110,
+      86
+    ],
+    "controlledReproduction": {
+      "action": "reproduce live tick input overwritten",
+      "seed": 0,
+      "requestedTick": 95,
+      "inputValueAfterFillAndUIObservation": "83",
+      "actualState": {
+        "tick": 99,
+        "rngU32": 1196435762,
+        "ball": {
+          "pos": {
+            "x": 33254.1590655,
+            "y": 33255.8763619
+          },
+          "vel": {
+            "x": -34.3692897,
+            "y": -351.0735287
+          }
+        },
+        "nearMissBucketIds": [],
+        "done": false
+      },
+      "paused": true,
+      "oracleEqual": true
+    },
+    "impact": "Seek while moving may select a tick different from the entered value. Pausing before entry gives exact95. Native calculation remains correct.",
+    "candidateModified": false
+  },
+  "downloadLimitation": {
+    "callId": "call_dfb293d358174d6b8a83b1b0686463ad",
+    "action": "Page.setDownloadBehavior",
+    "target": "IAB tab1 http://127.0.0.1:41766/; downloadPath E:/R4D/perspective/p6-runtime/technical-qa/browser/downloads",
+    "reason": "This method is not supported through raw CDP. Use tab.playwright.waitForEvent(\"download\") before triggering a download instead.",
+    "retried": false,
+    "saveButtonVerified": false
+  },
+  "exportScope": "Browser exportReplay API tested independently; no claim that Save replay download button was tested",
+  "finalState": {
+    "tick": 95,
+    "rngU32": 1196435762,
+    "ball": {
+      "pos": {
+        "x": 33254.8464511,
+        "y": 33263.0448323
+      },
+      "vel": {
+        "x": -34.3692897,
+        "y": -370.6735287
+      }
+    },
+    "nearMissBucketIds": [],
+    "done": false
+  }
+}

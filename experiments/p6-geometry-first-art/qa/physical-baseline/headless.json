@@ -1,0 +1,207 @@
+{
+  "scope": "early physical consumer only; no final art, sphere/shadow or occlusion acceptance",
+  "sourceCommit": "b1bb84d06fea0389f8cecd3ae7e5a0103aad0e96",
+  "inventoryFileSha256": "dc98e5271aac9e4a173a3902b13c62741630c4eacedc854a4326511b0c8bdef9",
+  "frozenSiteFiles": 9,
+  "frozenSiteBytes": 2397043,
+  "coreCommit": "5a6fa03f1cdb3de88a2d9c7dbe795eb8e2a7f023",
+  "coreTree": "008d16a80a26bb77d562a45218b01da09b0d9ff0",
+  "servedCoreSha256": "8843446996582eaccbd9ff63d3147d74b7eca9a614d8e0df16851d1d89d46f50",
+  "independentlyReproducedNativeSha256": "8843446996582eaccbd9ff63d3147d74b7eca9a614d8e0df16851d1d89d46f50",
+  "nativeBuildByteIdentical": true,
+  "esbuild": "0.25.5",
+  "node": "v24.15.0",
+  "consumerSha256": "4fca4cdbeff694e7e49d15bccc5ee4b7ee20ef6fcfaac917c77795c7a06c0d4a",
+  "actualNativeImport": "./native/core.mjs",
+  "sourcePinsMatch": true,
+  "runs": [
+    {
+      "seed": 0,
+      "stateCount": 1957,
+      "eventCount": 27,
+      "stateDigest": "ecdcab689bdc414018344afcf0e9aa8f05a29b957de4aa62bf6e9d616cf0b70c",
+      "eventDigest": "832cc4a6071b77721e55836352173cf457ac12a99df55a9a8b8bd059e5b7a58e",
+      "allStatesEqual": true,
+      "allEventsEqual": true,
+      "batch10Equal": true,
+      "seekChecks": [
+        {
+          "requestedTick": 0,
+          "actualTick": 0,
+          "stateDigest": "7bc094f74196ebf0bd67dfa590e5d49bedefd0b4a56a7a8168e95a9af2bdafad"
+        },
+        {
+          "requestedTick": 94,
+          "actualTick": 94,
+          "stateDigest": "9697d67ca5a1e0e7f4b6c609b48c72bc06908ed845f4e833d6491076210779e4"
+        },
+        {
+          "requestedTick": 95,
+          "actualTick": 95,
+          "stateDigest": "250a598f0e29934bc3ba199e17c859fece40b08284da9b5bb06b920e8d99a241"
+        },
+        {
+          "requestedTick": 96,
+          "actualTick": 96,
+          "stateDigest": "7162324318949846532afa96869f659f1e480d2def1afa672f77ea36676ac29c"
+        },
+        {
+          "requestedTick": 1956,
+          "actualTick": 1956,
+          "stateDigest": "e5cc9b4bdef701293c8dc7d2f4ed39ed18ecef99e42ed2697c14262585152714"
+        }
+      ],
+      "replayImportEqual": true,
+      "firstContact": {
+        "eventTick": 94,
+        "resultingStateTick": 95
+      },
+      "terminal": {
+        "tick": 1956,
+        "rngU32": 3503432700,
+        "ball": {
+          "pos": {
+            "x": 33391.7821303,
+            "y": 34901.2013347
+          },
+          "vel": {
+            "x": 469.5535445,
+            "y": 1144.4611046
+          }
+        },
+        "nearMissBucketIds": [],
+        "done": true,
+        "result": {
+          "kind": "IN_BUCKET",
+          "bucketId": "receiver-03"
+        }
+      }
+    },
+    {
+      "seed": 1,
+      "stateCount": 1736,
+      "eventCount": 18,
+      "stateDigest": "6c5f7ffe0a41f817a71cc011c9f23322cc2defa9c4111236d1bf8096b4fa23c8",
+      "eventDigest": "eabf2d62a2d1f307a472014417768d35adde6cd3d7c8d0601a6e7dacba40f7ab",
+      "allStatesEqual": true,
+      "allEventsEqual": true,
+      "batch10Equal": true,
+      "seekChecks": [
+        {
+          "requestedTick": 0,
+          "actualTick": 0,
+          "stateDigest": "7aeed742b206b3b044759d03c3ad0666b6103f148d4593eb3a010a6521937d2e"
+        },
+        {
+          "requestedTick": 94,
+          "actualTick": 94,
+          "stateDigest": "ca717594aa1617d241974ddf69f81e887ad0e68e46bfde67d1d8bfb1f8fdf039"
+        },
+        {
+          "requestedTick": 95,
+          "actualTick": 95,
+          "stateDigest": "bb210b847aa4d140a09510531212288cf3afc7b6a17b8d26d86ed05ea86a3576"
+        },
+        {
+          "requestedTick": 96,
+          "actualTick": 96,
+          "stateDigest": "1c3e311f37d562236e9422c6081b8f5554b4c7c625f6d7b4bf9a820a594906dd"
+        },
+        {
+          "requestedTick": 1956,
+          "actualTick": 1735,
+          "stateDigest": "2e7d0ee078be74c3d60cf0fef3ba8b1d9ea3e744b95276406f494f95b9d07b8d"
+        }
+      ],
+      "replayImportEqual": true,
+      "firstContact": {
+        "eventTick": 94,
+        "resultingStateTick": 95
+      },
+      "terminal": {
+        "tick": 1735,
+        "rngU32": 1629134493,
+        "ball": {
+          "pos": {
+            "x": 33780.1301239,
+            "y": 35375.7259347
+          },
+          "vel": {
+            "x": 764.3470855,
+            "y": 1699.2982232
+          }
+        },
+        "nearMissBucketIds": [],
+        "done": true,
+        "result": {
+          "kind": "LOST",
+          "finalX": 33780.1301239,
+          "nearMissBucketIds": []
+        }
+      }
+    },
+    {
+      "seed": 2,
+      "stateCount": 1291,
+      "eventCount": 15,
+      "stateDigest": "6405472e16a2383e38a0cc350b352c128873b73222bcb279218e992add67920e",
+      "eventDigest": "fa69fe7a999cdb28fe737d0eb6b6a76b5002762bbfc3739accff1a2391cdcca7",
+      "allStatesEqual": true,
+      "allEventsEqual": true,
+      "batch10Equal": true,
+      "seekChecks": [
+        {
+          "requestedTick": 0,
+          "actualTick": 0,
+          "stateDigest": "acda4448359debc862a99cfd3d47df35fa6761cc41b23ad54c01d458745a6ab3"
+        },
+        {
+          "requestedTick": 94,
+          "actualTick": 94,
+          "stateDigest": "eeae84332be4578f5d826d9683ef51ec522c313e9dec63cd17e3fc6bce97fe24"
+        },
+        {
+          "requestedTick": 95,
+          "actualTick": 95,
+          "stateDigest": "1f5199582314e25314a912cfa52d2e74438576dc62b6c9875de6bf072629d170"
+        },
+        {
+          "requestedTick": 96,
+          "actualTick": 96,
+          "stateDigest": "a900d8441069dcd0a4b04b6d152dc1165c58557b87adb2bbebac8bfec86aa2f9"
+        },
+        {
+          "requestedTick": 1956,
+          "actualTick": 1290,
+          "stateDigest": "0ccf242a0576a44b4adbe9da2884fa7cacc5a22c33f3edc4f6be451b6d9f3688"
+        }
+      ],
+      "replayImportEqual": true,
+      "firstContact": {
+        "eventTick": 94,
+        "resultingStateTick": 95
+      },
+      "terminal": {
+        "tick": 1290,
+        "rngU32": 2866302536,
+        "ball": {
+          "pos": {
+            "x": 33244.7794791,
+            "y": 35372.5005251
+          },
+          "vel": {
+            "x": 169.028896,
+            "y": 1511.6364702
+          }
+        },
+        "nearMissBucketIds": [],
+        "done": true,
+        "result": {
+          "kind": "LOST",
+          "finalX": 33244.7794791,
+          "nearMissBucketIds": []
+        }
+      }
+    }
+  ]
+}
