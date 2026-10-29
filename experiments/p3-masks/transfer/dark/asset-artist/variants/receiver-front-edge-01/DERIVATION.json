@@ -1,0 +1,113 @@
+{
+  "baselineArt": "17dc9fcdc261562acb581dd8590096819734c807",
+  "baselineAssetsSha256": "ef5eb34be622f5ce6356d6fa51d7902c334a1f1f3c95acce225d7340928bbc29",
+  "baselineRegionsSha256": "51be813f47918140047720f08000f5afbbea48a9c612da4bda597897908401d0",
+  "p1Commit": "4b47db04c7140ebf88f69b91faa0b790d46f22ec",
+  "p1ManifestSha256": "3fab422bd1f74d477d1648620c97ad6d7b8b0a55a70a1102d6e6885def564d81",
+  "rule": "Consecutive front-facade polygon edge with maximum mean native Y; sourceToNative unchanged. All three receiver components share this front support line.",
+  "receiverEdges": [
+    {
+      "receiverId": "receiver-01",
+      "frontPolygonIndex": 0,
+      "edgeIndex": 11,
+      "sourcePx": [
+        [
+          88,
+          1399
+        ],
+        [
+          314,
+          1394
+        ]
+      ],
+      "native": [
+        [
+          32783.389443896645,
+          34885.485568932476
+        ],
+        [
+          32966.93924515808,
+          34879.808636267866
+        ]
+      ]
+    },
+    {
+      "receiverId": "receiver-02",
+      "frontPolygonIndex": 0,
+      "edgeIndex": 11,
+      "sourcePx": [
+        [
+          438,
+          1397
+        ],
+        [
+          681,
+          1396
+        ]
+      ],
+      "native": [
+        [
+          33068.221077410206,
+          34883.21660791867
+        ],
+        [
+          33266.15814589215,
+          34882.08122186788
+        ]
+      ]
+    },
+    {
+      "receiverId": "receiver-03",
+      "frontPolygonIndex": 0,
+      "edgeIndex": 11,
+      "sourcePx": [
+        [
+          815,
+          1398
+        ],
+        [
+          1052,
+          1396
+        ]
+      ],
+      "native": [
+        [
+          33375.30731311715,
+          34884.351390113006
+        ],
+        [
+          33568.45535778408,
+          34882.08122186788
+        ]
+      ]
+    },
+    {
+      "receiverId": "receiver-04",
+      "frontPolygonIndex": 0,
+      "edgeIndex": 11,
+      "sourcePx": [
+        [
+          1175,
+          1398
+        ],
+        [
+          1414,
+          1398
+        ]
+      ],
+      "native": [
+        [
+          33668.48552473278,
+          34884.351390113006
+        ],
+        [
+          33863.12328188871,
+          34884.351390113006
+        ]
+      ]
+    }
+  ],
+  "pngOperation": "exact Git blob copy; no decode/resave",
+  "scope": "12 depthLineNative values only; 48 other occluder records unchanged",
+  "selectionInputs": "existing source contours and pinned homography; no seed, tick or ball radius"
+}
