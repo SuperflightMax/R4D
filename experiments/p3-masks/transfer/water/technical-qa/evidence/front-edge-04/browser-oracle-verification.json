@@ -1,0 +1,1343 @@
+{
+  "candidate": "water-front-edge-04",
+  "manifestHash": "de1344afcb197115b76cb4006ead3d96e7b2581a1a299df1100d7a552d2ce2c6",
+  "utc": "2026-10-29T11:40:26.641Z",
+  "ordinary": [
+    {
+      "seed": 2567603743,
+      "lastTick": 1448,
+      "result": {
+        "kind": "LOST",
+        "finalX": 33758.3601411,
+        "nearMissBucketIds": []
+      },
+      "ticksCompared": 1449,
+      "traceSha256": "cd6975f08261fb5e5c1ca2948978d64682599b56748b70d663735a3d9670791e"
+    },
+    {
+      "seed": 2664424314,
+      "lastTick": 733,
+      "result": {
+        "kind": "LOST",
+        "finalX": 32973.4150751,
+        "nearMissBucketIds": []
+      },
+      "ticksCompared": 734,
+      "traceSha256": "ee4b1a45267086fda15fa5f7b078140ed6c6b0e21b444c30170c31da900dc83f"
+    },
+    {
+      "seed": 4133151857,
+      "lastTick": 587,
+      "result": {
+        "kind": "LOST",
+        "finalX": 32924.6257611,
+        "nearMissBucketIds": []
+      },
+      "ticksCompared": 588,
+      "traceSha256": "b7b712504016c0a7c7bad458bdd02b70a2e75782d7f95466887a4270c1faf87b"
+    }
+  ],
+  "uiChecks": {
+    "firstThreeOrdinaryNoDiscard": true,
+    "pausePlus1Plus10": true,
+    "fullCheckpointInvariantAcrossFourArtGeometryAndFlatFloorZoomPan": true,
+    "visiblePanFullCheckpointUnchanged": true,
+    "actualDownloadFreshReloadImport": true,
+    "actualTwoLargeUint32Downloads": true,
+    "importNextTickNative": true,
+    "boardOnlyNegativeNoStateMutation": true,
+    "replaySameTerminal": true,
+    "seekHomeEndAndBack": true,
+    "browserRunInfoIncludingCompleteHitsMatchesOracle": true,
+    "all17GateTicksIdenticalAcrossBothZooms": true,
+    "providedSeed1And2RealtimeTerminals": true
+  },
+  "samples": [
+    {
+      "file": "controls-art-off-geometry-off.json",
+      "seed": 4133151857,
+      "tick": 81,
+      "stateSha256": "13b9ced461f2d5a0a801bbe3c633a61b1bc63ca457c45f65c272b4df8754e5ed",
+      "result": null,
+      "controls": {
+        "art": false,
+        "geometry": false,
+        "view": "source",
+        "framing": "whole",
+        "zoom": "1"
+      }
+    },
+    {
+      "file": "controls-art-off-geometry-on.json",
+      "seed": 4133151857,
+      "tick": 81,
+      "stateSha256": "13b9ced461f2d5a0a801bbe3c633a61b1bc63ca457c45f65c272b4df8754e5ed",
+      "result": null,
+      "controls": {
+        "art": false,
+        "geometry": true,
+        "view": "source",
+        "framing": "whole",
+        "zoom": "1"
+      }
+    },
+    {
+      "file": "controls-art-on-geometry-on.json",
+      "seed": 4133151857,
+      "tick": 81,
+      "stateSha256": "13b9ced461f2d5a0a801bbe3c633a61b1bc63ca457c45f65c272b4df8754e5ed",
+      "result": null,
+      "controls": {
+        "art": true,
+        "geometry": true,
+        "view": "source",
+        "framing": "whole",
+        "zoom": "1"
+      }
+    },
+    {
+      "file": "controls-flat-floor-200-after-pan.json",
+      "seed": 4133151857,
+      "tick": 81,
+      "stateSha256": "13b9ced461f2d5a0a801bbe3c633a61b1bc63ca457c45f65c272b4df8754e5ed",
+      "result": null,
+      "controls": {
+        "art": true,
+        "geometry": false,
+        "view": "flat",
+        "framing": "floor",
+        "zoom": "2"
+      }
+    },
+    {
+      "file": "controls-flat-floor-200-before-pan.json",
+      "seed": 4133151857,
+      "tick": 81,
+      "stateSha256": "13b9ced461f2d5a0a801bbe3c633a61b1bc63ca457c45f65c272b4df8754e5ed",
+      "result": null,
+      "controls": {
+        "art": true,
+        "geometry": false,
+        "view": "flat",
+        "framing": "floor",
+        "zoom": "2"
+      }
+    },
+    {
+      "file": "exported-large-ordinary02.json",
+      "seed": 2664424314,
+      "tick": 733,
+      "stateSha256": "24fac2921ea4e36bce117cb6dd0c1079b014120670883f2891146c460bf4bf42",
+      "result": {
+        "kind": "LOST",
+        "finalX": 32973.4150751,
+        "nearMissBucketIds": []
+      }
+    },
+    {
+      "file": "exported-water.json",
+      "seed": 4133151857,
+      "tick": 81,
+      "stateSha256": "13b9ced461f2d5a0a801bbe3c633a61b1bc63ca457c45f65c272b4df8754e5ed",
+      "result": null
+    },
+    {
+      "file": "final-gate07-t1015.json",
+      "seed": 1,
+      "tick": 1015,
+      "stateSha256": "a3462c3a92623bff53a3bd83cf72482cd7611722867fdb0a9bf03dc71911a0e7",
+      "result": null,
+      "controls": {
+        "art": true,
+        "geometry": false,
+        "view": "source",
+        "framing": "whole",
+        "zoom": "2"
+      }
+    },
+    {
+      "file": "frog01-t104-before-display.json",
+      "seed": 1,
+      "tick": 104,
+      "stateSha256": "6a85d83e9f9e103ae8f8ef8018eed023305d43aac1205324b6ff99f3152eec52",
+      "result": null,
+      "controls": {
+        "art": true,
+        "geometry": false,
+        "view": "source",
+        "framing": "whole",
+        "zoom": "2"
+      }
+    },
+    {
+      "file": "frog01-t104.json",
+      "seed": 1,
+      "tick": 104,
+      "stateSha256": "6a85d83e9f9e103ae8f8ef8018eed023305d43aac1205324b6ff99f3152eec52",
+      "result": null,
+      "controls": {
+        "art": true,
+        "geometry": false,
+        "view": "source",
+        "framing": "whole",
+        "zoom": "2"
+      }
+    },
+    {
+      "file": "frog01-t105-before-display.json",
+      "seed": 1,
+      "tick": 105,
+      "stateSha256": "a975d6f6f7b0df35dabcbfe50ffb8df2f817b6c2eb02b9e10988c2bf9f3a0092",
+      "result": null,
+      "controls": {
+        "art": true,
+        "geometry": false,
+        "view": "source",
+        "framing": "whole",
+        "zoom": "2"
+      }
+    },
+    {
+      "file": "frog01-t105.json",
+      "seed": 1,
+      "tick": 105,
+      "stateSha256": "a975d6f6f7b0df35dabcbfe50ffb8df2f817b6c2eb02b9e10988c2bf9f3a0092",
+      "result": null,
+      "controls": {
+        "art": true,
+        "geometry": false,
+        "view": "source",
+        "framing": "whole",
+        "zoom": "2"
+      }
+    },
+    {
+      "file": "frog01-t106-before-display.json",
+      "seed": 1,
+      "tick": 106,
+      "stateSha256": "713bae6943e52000e92b758f68b130b8c014e5b10947cc53573923df51dbf9c7",
+      "result": null,
+      "controls": {
+        "art": true,
+        "geometry": false,
+        "view": "source",
+        "framing": "whole",
+        "zoom": "2"
+      }
+    },
+    {
+      "file": "frog01-t106.json",
+      "seed": 1,
+      "tick": 106,
+      "stateSha256": "713bae6943e52000e92b758f68b130b8c014e5b10947cc53573923df51dbf9c7",
+      "result": null,
+      "controls": {
+        "art": true,
+        "geometry": false,
+        "view": "source",
+        "framing": "whole",
+        "zoom": "2"
+      }
+    },
+    {
+      "file": "gate07-z100-t1006.json",
+      "seed": 1,
+      "tick": 1006,
+      "stateSha256": "9b5e76e3e3c7461249c3a8817cc077e812ae78384ff33fb44ea272323ae5206b",
+      "result": null,
+      "controls": {
+        "art": true,
+        "geometry": false,
+        "view": "source",
+        "framing": "whole",
+        "zoom": "1"
+      }
+    },
+    {
+      "file": "gate07-z100-t1007.json",
+      "seed": 1,
+      "tick": 1007,
+      "stateSha256": "b0aa9427b33cbc25215430a7fc91079d4bfa841eac70b41059219a2cddbc78e4",
+      "result": null,
+      "controls": {
+        "art": true,
+        "geometry": false,
+        "view": "source",
+        "framing": "whole",
+        "zoom": "1"
+      }
+    },
+    {
+      "file": "gate07-z100-t1008.json",
+      "seed": 1,
+      "tick": 1008,
+      "stateSha256": "aacf4b758b51c62a9704a7828609639cd6a1d12ea02187cdf94f532e91098424",
+      "result": null,
+      "controls": {
+        "art": true,
+        "geometry": false,
+        "view": "source",
+        "framing": "whole",
+        "zoom": "1"
+      }
+    },
+    {
+      "file": "gate07-z100-t1009.json",
+      "seed": 1,
+      "tick": 1009,
+      "stateSha256": "6a7031f722a815094bf5bc84e61739a38cc8b0f4d54f821c766f67b475af6082",
+      "result": null,
+      "controls": {
+        "art": true,
+        "geometry": false,
+        "view": "source",
+        "framing": "whole",
+        "zoom": "1"
+      }
+    },
+    {
+      "file": "gate07-z100-t1010.json",
+      "seed": 1,
+      "tick": 1010,
+      "stateSha256": "b3e65a3f33baa9ed4b881d7267566f314a99d323ea0d6dd547a1b9c89ba81bbb",
+      "result": null,
+      "controls": {
+        "art": true,
+        "geometry": false,
+        "view": "source",
+        "framing": "whole",
+        "zoom": "1"
+      }
+    },
+    {
+      "file": "gate07-z100-t1011.json",
+      "seed": 1,
+      "tick": 1011,
+      "stateSha256": "599601e5abbdc0a459dbd1d54a447feabddcfed5b7edb94bf7f217e1419605af",
+      "result": null,
+      "controls": {
+        "art": true,
+        "geometry": false,
+        "view": "source",
+        "framing": "whole",
+        "zoom": "1"
+      }
+    },
+    {
+      "file": "gate07-z100-t1012.json",
+      "seed": 1,
+      "tick": 1012,
+      "stateSha256": "49fbfeb0341fe0cea242fc4429f6cece4e3d7bdb79fe40a687455eec935abf48",
+      "result": null,
+      "controls": {
+        "art": true,
+        "geometry": false,
+        "view": "source",
+        "framing": "whole",
+        "zoom": "1"
+      }
+    },
+    {
+      "file": "gate07-z100-t1013.json",
+      "seed": 1,
+      "tick": 1013,
+      "stateSha256": "e77ce6c08ec77afee95e48426d6fd4221f6f4523a7bc47256d93f4993387a7f2",
+      "result": null,
+      "controls": {
+        "art": true,
+        "geometry": false,
+        "view": "source",
+        "framing": "whole",
+        "zoom": "1"
+      }
+    },
+    {
+      "file": "gate07-z100-t1014.json",
+      "seed": 1,
+      "tick": 1014,
+      "stateSha256": "937235c414028e800d9208f0c2d00f9b2e67640e7fdb0a0ac7fa20b3a2479d81",
+      "result": null,
+      "controls": {
+        "art": true,
+        "geometry": false,
+        "view": "source",
+        "framing": "whole",
+        "zoom": "1"
+      }
+    },
+    {
+      "file": "gate07-z100-t1015.json",
+      "seed": 1,
+      "tick": 1015,
+      "stateSha256": "a3462c3a92623bff53a3bd83cf72482cd7611722867fdb0a9bf03dc71911a0e7",
+      "result": null,
+      "controls": {
+        "art": true,
+        "geometry": false,
+        "view": "source",
+        "framing": "whole",
+        "zoom": "1"
+      }
+    },
+    {
+      "file": "gate07-z100-t1016.json",
+      "seed": 1,
+      "tick": 1016,
+      "stateSha256": "263e57e3336ada50469fe26b92042095e858e77e31710171d26bb59a777bc9c3",
+      "result": null,
+      "controls": {
+        "art": true,
+        "geometry": false,
+        "view": "source",
+        "framing": "whole",
+        "zoom": "1"
+      }
+    },
+    {
+      "file": "gate07-z100-t1017.json",
+      "seed": 1,
+      "tick": 1017,
+      "stateSha256": "b56d78d79a752b6555b73ab568a82c6625728b8ef3027311c060d9c1f7d7920c",
+      "result": null,
+      "controls": {
+        "art": true,
+        "geometry": false,
+        "view": "source",
+        "framing": "whole",
+        "zoom": "1"
+      }
+    },
+    {
+      "file": "gate07-z100-t1018.json",
+      "seed": 1,
+      "tick": 1018,
+      "stateSha256": "a11b2c4fa7e5e220a58e42f43f424b00accacb02208104106efec7cdab8e2cbd",
+      "result": null,
+      "controls": {
+        "art": true,
+        "geometry": false,
+        "view": "source",
+        "framing": "whole",
+        "zoom": "1"
+      }
+    },
+    {
+      "file": "gate07-z100-t1019.json",
+      "seed": 1,
+      "tick": 1019,
+      "stateSha256": "e996b4e098ee477dc34401339fc71dfd65be4e4f72c7e791f582c23284eb5c96",
+      "result": null,
+      "controls": {
+        "art": true,
+        "geometry": false,
+        "view": "source",
+        "framing": "whole",
+        "zoom": "1"
+      }
+    },
+    {
+      "file": "gate07-z100-t1020.json",
+      "seed": 1,
+      "tick": 1020,
+      "stateSha256": "8bf8033a7a1fb22b79cdb981d78b7ec1d97f568c7398cbc74373488affae4066",
+      "result": null,
+      "controls": {
+        "art": true,
+        "geometry": false,
+        "view": "source",
+        "framing": "whole",
+        "zoom": "1"
+      }
+    },
+    {
+      "file": "gate07-z100-t1021.json",
+      "seed": 1,
+      "tick": 1021,
+      "stateSha256": "b9039e37cbc7686863d73833df58c523beac4baee307ab1d4aeb9a7498ffa044",
+      "result": null,
+      "controls": {
+        "art": true,
+        "geometry": false,
+        "view": "source",
+        "framing": "whole",
+        "zoom": "1"
+      }
+    },
+    {
+      "file": "gate07-z100-t1022.json",
+      "seed": 1,
+      "tick": 1022,
+      "stateSha256": "8e281e78116fec0e16e3f6eb43a4c7fe05836c7e7f42192563f366b673af32df",
+      "result": null,
+      "controls": {
+        "art": true,
+        "geometry": false,
+        "view": "source",
+        "framing": "whole",
+        "zoom": "1"
+      }
+    },
+    {
+      "file": "gate07-z200-t1006.json",
+      "seed": 1,
+      "tick": 1006,
+      "stateSha256": "9b5e76e3e3c7461249c3a8817cc077e812ae78384ff33fb44ea272323ae5206b",
+      "result": null,
+      "controls": {
+        "art": true,
+        "geometry": false,
+        "view": "source",
+        "framing": "whole",
+        "zoom": "2"
+      }
+    },
+    {
+      "file": "gate07-z200-t1007.json",
+      "seed": 1,
+      "tick": 1007,
+      "stateSha256": "b0aa9427b33cbc25215430a7fc91079d4bfa841eac70b41059219a2cddbc78e4",
+      "result": null,
+      "controls": {
+        "art": true,
+        "geometry": false,
+        "view": "source",
+        "framing": "whole",
+        "zoom": "2"
+      }
+    },
+    {
+      "file": "gate07-z200-t1008.json",
+      "seed": 1,
+      "tick": 1008,
+      "stateSha256": "aacf4b758b51c62a9704a7828609639cd6a1d12ea02187cdf94f532e91098424",
+      "result": null,
+      "controls": {
+        "art": true,
+        "geometry": false,
+        "view": "source",
+        "framing": "whole",
+        "zoom": "2"
+      }
+    },
+    {
+      "file": "gate07-z200-t1009.json",
+      "seed": 1,
+      "tick": 1009,
+      "stateSha256": "6a7031f722a815094bf5bc84e61739a38cc8b0f4d54f821c766f67b475af6082",
+      "result": null,
+      "controls": {
+        "art": true,
+        "geometry": false,
+        "view": "source",
+        "framing": "whole",
+        "zoom": "2"
+      }
+    },
+    {
+      "file": "gate07-z200-t1010.json",
+      "seed": 1,
+      "tick": 1010,
+      "stateSha256": "b3e65a3f33baa9ed4b881d7267566f314a99d323ea0d6dd547a1b9c89ba81bbb",
+      "result": null,
+      "controls": {
+        "art": true,
+        "geometry": false,
+        "view": "source",
+        "framing": "whole",
+        "zoom": "2"
+      }
+    },
+    {
+      "file": "gate07-z200-t1011.json",
+      "seed": 1,
+      "tick": 1011,
+      "stateSha256": "599601e5abbdc0a459dbd1d54a447feabddcfed5b7edb94bf7f217e1419605af",
+      "result": null,
+      "controls": {
+        "art": true,
+        "geometry": false,
+        "view": "source",
+        "framing": "whole",
+        "zoom": "2"
+      }
+    },
+    {
+      "file": "gate07-z200-t1012.json",
+      "seed": 1,
+      "tick": 1012,
+      "stateSha256": "49fbfeb0341fe0cea242fc4429f6cece4e3d7bdb79fe40a687455eec935abf48",
+      "result": null,
+      "controls": {
+        "art": true,
+        "geometry": false,
+        "view": "source",
+        "framing": "whole",
+        "zoom": "2"
+      }
+    },
+    {
+      "file": "gate07-z200-t1013.json",
+      "seed": 1,
+      "tick": 1013,
+      "stateSha256": "e77ce6c08ec77afee95e48426d6fd4221f6f4523a7bc47256d93f4993387a7f2",
+      "result": null,
+      "controls": {
+        "art": true,
+        "geometry": false,
+        "view": "source",
+        "framing": "whole",
+        "zoom": "2"
+      }
+    },
+    {
+      "file": "gate07-z200-t1014.json",
+      "seed": 1,
+      "tick": 1014,
+      "stateSha256": "937235c414028e800d9208f0c2d00f9b2e67640e7fdb0a0ac7fa20b3a2479d81",
+      "result": null,
+      "controls": {
+        "art": true,
+        "geometry": false,
+        "view": "source",
+        "framing": "whole",
+        "zoom": "2"
+      }
+    },
+    {
+      "file": "gate07-z200-t1015-geometry-panned.json",
+      "seed": 1,
+      "tick": 1015,
+      "stateSha256": "a3462c3a92623bff53a3bd83cf72482cd7611722867fdb0a9bf03dc71911a0e7",
+      "result": null,
+      "controls": {
+        "art": true,
+        "geometry": true,
+        "view": "source",
+        "framing": "whole",
+        "zoom": "2"
+      }
+    },
+    {
+      "file": "gate07-z200-t1015.json",
+      "seed": 1,
+      "tick": 1015,
+      "stateSha256": "a3462c3a92623bff53a3bd83cf72482cd7611722867fdb0a9bf03dc71911a0e7",
+      "result": null,
+      "controls": {
+        "art": true,
+        "geometry": false,
+        "view": "source",
+        "framing": "whole",
+        "zoom": "2"
+      }
+    },
+    {
+      "file": "gate07-z200-t1016.json",
+      "seed": 1,
+      "tick": 1016,
+      "stateSha256": "263e57e3336ada50469fe26b92042095e858e77e31710171d26bb59a777bc9c3",
+      "result": null,
+      "controls": {
+        "art": true,
+        "geometry": false,
+        "view": "source",
+        "framing": "whole",
+        "zoom": "2"
+      }
+    },
+    {
+      "file": "gate07-z200-t1017.json",
+      "seed": 1,
+      "tick": 1017,
+      "stateSha256": "b56d78d79a752b6555b73ab568a82c6625728b8ef3027311c060d9c1f7d7920c",
+      "result": null,
+      "controls": {
+        "art": true,
+        "geometry": false,
+        "view": "source",
+        "framing": "whole",
+        "zoom": "2"
+      }
+    },
+    {
+      "file": "gate07-z200-t1018.json",
+      "seed": 1,
+      "tick": 1018,
+      "stateSha256": "a11b2c4fa7e5e220a58e42f43f424b00accacb02208104106efec7cdab8e2cbd",
+      "result": null,
+      "controls": {
+        "art": true,
+        "geometry": false,
+        "view": "source",
+        "framing": "whole",
+        "zoom": "2"
+      }
+    },
+    {
+      "file": "gate07-z200-t1019.json",
+      "seed": 1,
+      "tick": 1019,
+      "stateSha256": "e996b4e098ee477dc34401339fc71dfd65be4e4f72c7e791f582c23284eb5c96",
+      "result": null,
+      "controls": {
+        "art": true,
+        "geometry": false,
+        "view": "source",
+        "framing": "whole",
+        "zoom": "2"
+      }
+    },
+    {
+      "file": "gate07-z200-t1020.json",
+      "seed": 1,
+      "tick": 1020,
+      "stateSha256": "8bf8033a7a1fb22b79cdb981d78b7ec1d97f568c7398cbc74373488affae4066",
+      "result": null,
+      "controls": {
+        "art": true,
+        "geometry": false,
+        "view": "source",
+        "framing": "whole",
+        "zoom": "2"
+      }
+    },
+    {
+      "file": "gate07-z200-t1021.json",
+      "seed": 1,
+      "tick": 1021,
+      "stateSha256": "b9039e37cbc7686863d73833df58c523beac4baee307ab1d4aeb9a7498ffa044",
+      "result": null,
+      "controls": {
+        "art": true,
+        "geometry": false,
+        "view": "source",
+        "framing": "whole",
+        "zoom": "2"
+      }
+    },
+    {
+      "file": "gate07-z200-t1022.json",
+      "seed": 1,
+      "tick": 1022,
+      "stateSha256": "8e281e78116fec0e16e3f6eb43a4c7fe05836c7e7f42192563f366b673af32df",
+      "result": null,
+      "controls": {
+        "art": true,
+        "geometry": false,
+        "view": "source",
+        "framing": "whole",
+        "zoom": "2"
+      }
+    },
+    {
+      "file": "import-next1.json",
+      "seed": 4133151857,
+      "tick": 82,
+      "stateSha256": "da87d1691f82894b71953d85e967fd1b7c05d07139e6e1162ab95eba1a74c7bd",
+      "result": null,
+      "controls": {
+        "art": true,
+        "geometry": false,
+        "view": "source",
+        "framing": "whole",
+        "zoom": "1"
+      }
+    },
+    {
+      "file": "imported-own-water.json",
+      "seed": 4133151857,
+      "tick": 81,
+      "stateSha256": "13b9ced461f2d5a0a801bbe3c633a61b1bc63ca457c45f65c272b4df8754e5ed",
+      "result": null,
+      "controls": {
+        "art": true,
+        "geometry": false,
+        "view": "source",
+        "framing": "whole",
+        "zoom": "1"
+      }
+    },
+    {
+      "file": "left2-t518.json",
+      "seed": 1,
+      "tick": 518,
+      "stateSha256": "1026307d2439f96b116479da77f19b8a68872b197ebab23727be23a1abc837f0",
+      "result": null,
+      "controls": {
+        "art": true,
+        "geometry": false,
+        "view": "source",
+        "framing": "whole",
+        "zoom": "2"
+      }
+    },
+    {
+      "file": "left2-t519-geometry.json",
+      "seed": 1,
+      "tick": 519,
+      "stateSha256": "1bad1a4e851901941bd6e8452098d3cc7e7c8fde71b929f5f944919ef06cb4ad",
+      "result": null,
+      "controls": {
+        "art": true,
+        "geometry": true,
+        "view": "source",
+        "framing": "whole",
+        "zoom": "2"
+      }
+    },
+    {
+      "file": "left2-t519.json",
+      "seed": 1,
+      "tick": 519,
+      "stateSha256": "1bad1a4e851901941bd6e8452098d3cc7e7c8fde71b929f5f944919ef06cb4ad",
+      "result": null,
+      "controls": {
+        "art": true,
+        "geometry": false,
+        "view": "source",
+        "framing": "whole",
+        "zoom": "2"
+      }
+    },
+    {
+      "file": "left2-t520.json",
+      "seed": 1,
+      "tick": 520,
+      "stateSha256": "1aeaddc7236444ad8188202bf82c9672e8a6bd6672c37bec106ee48c63f9d1dd",
+      "result": null,
+      "controls": {
+        "art": true,
+        "geometry": false,
+        "view": "source",
+        "framing": "whole",
+        "zoom": "2"
+      }
+    },
+    {
+      "file": "negative-board-rejected.json",
+      "seed": 4133151857,
+      "tick": 82,
+      "stateSha256": "da87d1691f82894b71953d85e967fd1b7c05d07139e6e1162ab95eba1a74c7bd",
+      "result": null,
+      "controls": {
+        "art": true,
+        "geometry": false,
+        "view": "source",
+        "framing": "whole",
+        "zoom": "1"
+      }
+    },
+    {
+      "file": "ordinary-01-start.json",
+      "seed": 2567603743,
+      "tick": 116,
+      "stateSha256": "fc7a8db6ec9faf7cc002d52402efab76000ac26d8a2d13203fd235dd4b48ecd9",
+      "result": null,
+      "controls": {
+        "art": true,
+        "geometry": false,
+        "view": "source",
+        "framing": "whole",
+        "zoom": "1"
+      }
+    },
+    {
+      "file": "ordinary-01-terminal.json",
+      "seed": 2567603743,
+      "tick": 1448,
+      "stateSha256": "315dbc6cdd3b357cea30b07960c364a4d4ce2daaf46c6ddbe6f42e2809af7310",
+      "result": {
+        "kind": "LOST",
+        "finalX": 33758.3601411,
+        "nearMissBucketIds": []
+      },
+      "controls": {
+        "art": true,
+        "geometry": false,
+        "view": "source",
+        "framing": "whole",
+        "zoom": "1"
+      }
+    },
+    {
+      "file": "ordinary-02-start.json",
+      "seed": 2664424314,
+      "tick": 116,
+      "stateSha256": "38e7109410afb2a39db3719219c29944a6cc4bd2481cf159126a9095c3a78ad7",
+      "result": null,
+      "controls": {
+        "art": true,
+        "geometry": false,
+        "view": "source",
+        "framing": "whole",
+        "zoom": "1"
+      }
+    },
+    {
+      "file": "ordinary-02-terminal.json",
+      "seed": 2664424314,
+      "tick": 733,
+      "stateSha256": "24fac2921ea4e36bce117cb6dd0c1079b014120670883f2891146c460bf4bf42",
+      "result": {
+        "kind": "LOST",
+        "finalX": 32973.4150751,
+        "nearMissBucketIds": []
+      },
+      "controls": {
+        "art": true,
+        "geometry": false,
+        "view": "source",
+        "framing": "whole",
+        "zoom": "1"
+      }
+    },
+    {
+      "file": "ordinary-03-paused.json",
+      "seed": 4133151857,
+      "tick": 70,
+      "stateSha256": "ed53c80415dcdac867bc09f315dc06330d93f5a89c964b25619eb145a1bf67b3",
+      "result": null,
+      "controls": {
+        "art": true,
+        "geometry": false,
+        "view": "source",
+        "framing": "whole",
+        "zoom": "1"
+      }
+    },
+    {
+      "file": "ordinary-03-plus1.json",
+      "seed": 4133151857,
+      "tick": 71,
+      "stateSha256": "ad39de3bed0a851d639f22b16a768248dfbaed8e42d651eb5ae35d0c229dffff",
+      "result": null,
+      "controls": {
+        "art": true,
+        "geometry": false,
+        "view": "source",
+        "framing": "whole",
+        "zoom": "1"
+      }
+    },
+    {
+      "file": "ordinary-03-plus10.json",
+      "seed": 4133151857,
+      "tick": 81,
+      "stateSha256": "13b9ced461f2d5a0a801bbe3c633a61b1bc63ca457c45f65c272b4df8754e5ed",
+      "result": null,
+      "controls": {
+        "art": true,
+        "geometry": false,
+        "view": "source",
+        "framing": "whole",
+        "zoom": "1"
+      }
+    },
+    {
+      "file": "ordinary-03-replay-controls.json",
+      "seed": 4133151857,
+      "tick": 196,
+      "stateSha256": "e072e77a7cc16afa86258a9c1e2fc7c57dc21eb91bd54b2514d038dd3b1667fb",
+      "result": null,
+      "controls": {
+        "art": false,
+        "geometry": true,
+        "view": "flat",
+        "framing": "whole",
+        "zoom": "1"
+      }
+    },
+    {
+      "file": "ordinary-03-replay-start.json",
+      "seed": 4133151857,
+      "tick": 56,
+      "stateSha256": "f2667c7f51862c29c8a3c34f4b3dafb3d92a8bba2d9a00292b76426b0de79a31",
+      "result": null,
+      "controls": {
+        "art": true,
+        "geometry": false,
+        "view": "source",
+        "framing": "whole",
+        "zoom": "1"
+      }
+    },
+    {
+      "file": "ordinary-03-replay-terminal.json",
+      "seed": 4133151857,
+      "tick": 587,
+      "stateSha256": "07e501cf54e8d18a86aff7358b08f91de59a3754f87fd5df18832b4fa45fbd5f",
+      "result": {
+        "kind": "LOST",
+        "finalX": 32924.6257611,
+        "nearMissBucketIds": []
+      },
+      "controls": {
+        "art": false,
+        "geometry": true,
+        "view": "flat",
+        "framing": "whole",
+        "zoom": "1"
+      }
+    },
+    {
+      "file": "ordinary-03-resumed.json",
+      "seed": 4133151857,
+      "tick": 142,
+      "stateSha256": "863720bc7b06c1635fe24398a9875c55ce0468046526d777b811a456cf64919d",
+      "result": null,
+      "controls": {
+        "art": true,
+        "geometry": false,
+        "view": "source",
+        "framing": "whole",
+        "zoom": "1"
+      }
+    },
+    {
+      "file": "ordinary-03-start.json",
+      "seed": 4133151857,
+      "tick": 56,
+      "stateSha256": "f2667c7f51862c29c8a3c34f4b3dafb3d92a8bba2d9a00292b76426b0de79a31",
+      "result": null,
+      "controls": {
+        "art": true,
+        "geometry": false,
+        "view": "source",
+        "framing": "whole",
+        "zoom": "1"
+      }
+    },
+    {
+      "file": "ordinary-03-terminal.json",
+      "seed": 4133151857,
+      "tick": 587,
+      "stateSha256": "07e501cf54e8d18a86aff7358b08f91de59a3754f87fd5df18832b4fa45fbd5f",
+      "result": {
+        "kind": "LOST",
+        "finalX": 32924.6257611,
+        "nearMissBucketIds": []
+      },
+      "controls": {
+        "art": true,
+        "geometry": false,
+        "view": "source",
+        "framing": "whole",
+        "zoom": "1"
+      }
+    },
+    {
+      "file": "pan-native-after.json",
+      "seed": 1,
+      "tick": 1015,
+      "stateSha256": "a3462c3a92623bff53a3bd83cf72482cd7611722867fdb0a9bf03dc71911a0e7",
+      "result": null,
+      "controls": {
+        "art": true,
+        "geometry": false,
+        "view": "source",
+        "framing": "whole",
+        "zoom": "2"
+      }
+    },
+    {
+      "file": "pan-native-before.json",
+      "seed": 1,
+      "tick": 1015,
+      "stateSha256": "a3462c3a92623bff53a3bd83cf72482cd7611722867fdb0a9bf03dc71911a0e7",
+      "result": null,
+      "controls": {
+        "art": true,
+        "geometry": false,
+        "view": "source",
+        "framing": "whole",
+        "zoom": "2"
+      }
+    },
+    {
+      "file": "pillar05-t709.json",
+      "seed": 1,
+      "tick": 709,
+      "stateSha256": "4d44a34f74eb3964aaf854b522ca96410e7e9c03e6c50948a32753f455a9266e",
+      "result": null,
+      "controls": {
+        "art": true,
+        "geometry": false,
+        "view": "source",
+        "framing": "whole",
+        "zoom": "2"
+      }
+    },
+    {
+      "file": "pillar05-t710.json",
+      "seed": 1,
+      "tick": 710,
+      "stateSha256": "357c1af092984e3cfe885d9b97b7ecd6ba0b8685fae3fa614f360ac3f8ab047e",
+      "result": null,
+      "controls": {
+        "art": true,
+        "geometry": false,
+        "view": "source",
+        "framing": "whole",
+        "zoom": "2"
+      }
+    },
+    {
+      "file": "pillar05-t711.json",
+      "seed": 1,
+      "tick": 711,
+      "stateSha256": "53e496135f27709f7a6800efa2a42e1efbcb43a8b4f6f1eae6f9bada5a673d41",
+      "result": null,
+      "controls": {
+        "art": true,
+        "geometry": false,
+        "view": "source",
+        "framing": "whole",
+        "zoom": "2"
+      }
+    },
+    {
+      "file": "provided-seed1-realtime-start.json",
+      "seed": 1,
+      "tick": 63,
+      "stateSha256": "180ecd531da0f43b83ba8d9751bd6647d6bb8789d0a79d790674376ec33292c9",
+      "result": null,
+      "controls": {
+        "art": true,
+        "geometry": false,
+        "view": "source",
+        "framing": "whole",
+        "zoom": "1"
+      }
+    },
+    {
+      "file": "provided-seed1-realtime-terminal.json",
+      "seed": 1,
+      "tick": 1196,
+      "stateSha256": "d3a2d814d8d770ca4245948fcc83ed7103b717b6b7805aa981c92c57d9d7802e",
+      "result": {
+        "kind": "LOST",
+        "finalX": 33728.1429454,
+        "nearMissBucketIds": []
+      },
+      "controls": {
+        "art": true,
+        "geometry": false,
+        "view": "source",
+        "framing": "whole",
+        "zoom": "1"
+      }
+    },
+    {
+      "file": "provided-seed2-realtime-start.json",
+      "seed": 2,
+      "tick": 63,
+      "stateSha256": "82d6143c47588e45448b928c13d565312010844f25e63ed5c3f305c80e1be130",
+      "result": null,
+      "controls": {
+        "art": true,
+        "geometry": false,
+        "view": "source",
+        "framing": "whole",
+        "zoom": "2"
+      }
+    },
+    {
+      "file": "provided-seed2-realtime-terminal.json",
+      "seed": 2,
+      "tick": 1275,
+      "stateSha256": "2a72aff6da4f7ec38f7e3ad6631d4ffaece1394069a1e34369c45e7fcf9a232a",
+      "result": {
+        "kind": "IN_BUCKET",
+        "bucketId": "receiver-02"
+      },
+      "controls": {
+        "art": true,
+        "geometry": false,
+        "view": "source",
+        "framing": "whole",
+        "zoom": "2"
+      }
+    },
+    {
+      "file": "receiver02-t1275-geometry.json",
+      "seed": 2,
+      "tick": 1275,
+      "stateSha256": "2a72aff6da4f7ec38f7e3ad6631d4ffaece1394069a1e34369c45e7fcf9a232a",
+      "result": {
+        "kind": "IN_BUCKET",
+        "bucketId": "receiver-02"
+      },
+      "controls": {
+        "art": true,
+        "geometry": true,
+        "view": "source",
+        "framing": "whole",
+        "zoom": "2"
+      }
+    },
+    {
+      "file": "receiver02-visible-t1250-before-display.json",
+      "seed": 2,
+      "tick": 1250,
+      "stateSha256": "b6cb2208f6039869a0642b67aa4f47f8c32ce77368b0682185cc0882a0ec44ec",
+      "result": null,
+      "controls": {
+        "art": true,
+        "geometry": false,
+        "view": "source",
+        "framing": "whole",
+        "zoom": "2"
+      }
+    },
+    {
+      "file": "receiver02-visible-t1250.json",
+      "seed": 2,
+      "tick": 1250,
+      "stateSha256": "b6cb2208f6039869a0642b67aa4f47f8c32ce77368b0682185cc0882a0ec44ec",
+      "result": null,
+      "controls": {
+        "art": true,
+        "geometry": false,
+        "view": "source",
+        "framing": "whole",
+        "zoom": "2"
+      }
+    },
+    {
+      "file": "receiver02-visible-t1265-before-display.json",
+      "seed": 2,
+      "tick": 1265,
+      "stateSha256": "7ffb31db9a293e6d678b65559216a2d2ae839ae8a9c3915d6008f07771800dcc",
+      "result": null,
+      "controls": {
+        "art": true,
+        "geometry": false,
+        "view": "source",
+        "framing": "whole",
+        "zoom": "2"
+      }
+    },
+    {
+      "file": "receiver02-visible-t1265.json",
+      "seed": 2,
+      "tick": 1265,
+      "stateSha256": "7ffb31db9a293e6d678b65559216a2d2ae839ae8a9c3915d6008f07771800dcc",
+      "result": null,
+      "controls": {
+        "art": true,
+        "geometry": false,
+        "view": "source",
+        "framing": "whole",
+        "zoom": "2"
+      }
+    },
+    {
+      "file": "receiver02-visible-t1274-before-display.json",
+      "seed": 2,
+      "tick": 1274,
+      "stateSha256": "d4b1e6ce0f6fd8180fa547986726e0506a39fd118d0f55c9b070d805132b1888",
+      "result": null,
+      "controls": {
+        "art": true,
+        "geometry": false,
+        "view": "source",
+        "framing": "whole",
+        "zoom": "2"
+      }
+    },
+    {
+      "file": "receiver02-visible-t1274.json",
+      "seed": 2,
+      "tick": 1274,
+      "stateSha256": "d4b1e6ce0f6fd8180fa547986726e0506a39fd118d0f55c9b070d805132b1888",
+      "result": null,
+      "controls": {
+        "art": true,
+        "geometry": false,
+        "view": "source",
+        "framing": "whole",
+        "zoom": "2"
+      }
+    },
+    {
+      "file": "receiver02-visible-t1275-before-display.json",
+      "seed": 2,
+      "tick": 1275,
+      "stateSha256": "2a72aff6da4f7ec38f7e3ad6631d4ffaece1394069a1e34369c45e7fcf9a232a",
+      "result": {
+        "kind": "IN_BUCKET",
+        "bucketId": "receiver-02"
+      },
+      "controls": {
+        "art": true,
+        "geometry": false,
+        "view": "source",
+        "framing": "whole",
+        "zoom": "2"
+      }
+    },
+    {
+      "file": "receiver02-visible-t1275.json",
+      "seed": 2,
+      "tick": 1275,
+      "stateSha256": "2a72aff6da4f7ec38f7e3ad6631d4ffaece1394069a1e34369c45e7fcf9a232a",
+      "result": {
+        "kind": "IN_BUCKET",
+        "bucketId": "receiver-02"
+      },
+      "controls": {
+        "art": true,
+        "geometry": false,
+        "view": "source",
+        "framing": "whole",
+        "zoom": "2"
+      }
+    },
+    {
+      "file": "seek-back-third.json",
+      "seed": 4133151857,
+      "tick": 87,
+      "stateSha256": "6873e70cb3d2203359a98e562268c67377c6e011f59c244340ca1f86a4a4f904",
+      "result": null,
+      "controls": {
+        "art": false,
+        "geometry": true,
+        "view": "flat",
+        "framing": "whole",
+        "zoom": "1"
+      }
+    },
+    {
+      "file": "seek-end-third.json",
+      "seed": 4133151857,
+      "tick": 587,
+      "stateSha256": "07e501cf54e8d18a86aff7358b08f91de59a3754f87fd5df18832b4fa45fbd5f",
+      "result": {
+        "kind": "LOST",
+        "finalX": 32924.6257611,
+        "nearMissBucketIds": []
+      },
+      "controls": {
+        "art": false,
+        "geometry": true,
+        "view": "flat",
+        "framing": "whole",
+        "zoom": "1"
+      }
+    },
+    {
+      "file": "seek-home-third.json",
+      "seed": 4133151857,
+      "tick": 0,
+      "stateSha256": "ed9386a5e8b70a32d4aa1180439c5c0440b610ac190ff3583233de033677f38f",
+      "result": null,
+      "controls": {
+        "art": false,
+        "geometry": true,
+        "view": "flat",
+        "framing": "whole",
+        "zoom": "1"
+      }
+    }
+  ]
+}
