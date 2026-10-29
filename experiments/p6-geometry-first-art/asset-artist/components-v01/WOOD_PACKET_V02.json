@@ -1,0 +1,119 @@
+{
+  "schema": "r4d.p6.component-master.v2",
+  "status": "wood proportion correction after exact integration-03 frames; next actual candidate verification required",
+  "family": "wood",
+  "supersedes": "WOOD_PACKET_V01.json for wood family only; other3 masters unchanged",
+  "instances": [
+    "wood-01",
+    "wood-02",
+    "wood-03",
+    "wood-04",
+    "wood-05",
+    "wood-06",
+    "wood-07",
+    "wood-08"
+  ],
+  "acceptedP1": "4b47db04c7140ebf88f69b91faa0b790d46f22ec",
+  "texture": "raw/wood-master-v02.png",
+  "sha256": "f829632e48595a301bd5c3b1d4a87316eb7eee0053965343ae0dac263ba45cb0",
+  "toolOutputId": "exec-953aad0b-ea44-4bd0-8f8e-a5bc8ce239f3",
+  "prompt": "prompts/wood-master-v02.txt",
+  "promptSha256": "49944d22efd97f3ac459e03aeb37304352babf3b4764eb7dbde83cfcf5603b41",
+  "canvas": [
+    1254,
+    1254
+  ],
+  "alphaDiagnostics": {
+    "canvas": [
+      1254,
+      1254
+    ],
+    "alphaMax": 255,
+    "alphaWeightedCenter": [
+      633.5362644899027,
+      696.937206198933
+    ],
+    "boundaryNonzero": 1,
+    "bounds": [
+      {
+        "threshold": 1,
+        "rectInclusive": [
+          0,
+          0,
+          1203,
+          1221
+        ]
+      },
+      {
+        "threshold": 16,
+        "rectInclusive": [
+          353,
+          218,
+          913,
+          1174
+        ]
+      },
+      {
+        "threshold": 128,
+        "rectInclusive": [
+          354,
+          219,
+          912,
+          1173
+        ]
+      }
+    ],
+    "centreRgba": [
+      209,
+      119,
+      4,
+      253
+    ]
+  },
+  "groundAnchorPx": [
+    633,
+    1050
+  ],
+  "baseEllipse": {
+    "centerPx": [
+      633,
+      1050
+    ],
+    "radiusXPx": 262,
+    "radiusYPx": 123,
+    "derivation": "Artist fit to actual lower opaque rim after native height edit; x375->1071,400->1103,450->1135,500->1155,626->1173,750->1156,850->1117,875->1096; separate from overhanging rope/trim."
+  },
+  "visibleTopY": 219,
+  "visibleHeightAboveGroundPx": 831,
+  "normalizationRule": "Place new raw base centre633/1050 at same P(config pin centre); uniform scale=projected horizontal radius/262. Never reuse old625/1032 anchor for new raw. No native radius/position/projection change.",
+  "wood01Predicted": {
+    "uniformScale": 0.11450381679389313,
+    "heightAboveGroundPx": 95.1526717557252,
+    "ellipseRadiiPx": [
+      30,
+      14.083969465648854
+    ],
+    "groundSource": [
+      628.6379171404694,
+      478.2464227639511
+    ],
+    "meaning": "Arithmetic prediction only; next real frame needed, not a fabricated screenshot"
+  },
+  "bakedGroundShadow": false,
+  "shadow": "Use separate own P6 lower-left ground shadow after new floor; remove old draft wood shadow once, do not double it",
+  "inspectionBasis": {
+    "source": "2df0a0e9d2a729c44d05a0f24f099475ba043b0e",
+    "states": [
+      571,
+      572,
+      573
+    ],
+    "sheetSha256": "54be3f096c9f33f59e297e3e90bc8aad7d6fd302154a99915b8a1ad4e5fd3dcc",
+    "decision": "Old rim registration looks anchored; old111.65px height is visually too elongated vs illustrative draft70.2px. Keep material/light, use shortened master. Actual native edit reduces predicted placed height to95.15px, about15percent, not the requested25percent."
+  },
+  "limits": [
+    "New native edit slightly changed raw base ellipse dimensions/location; actual updated anchors are explicit.",
+    "v01 raw, old packet and frozen integration03 remain untouched.",
+    "Boundary/floor/receiver masks are separate pending components; no artistic PASS."
+  ]
+}
