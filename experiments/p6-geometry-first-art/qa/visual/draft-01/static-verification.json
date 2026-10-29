@@ -1,0 +1,66 @@
+{
+  "schema": "r4d.p6.visual-qa.draft-01.static-verification.v1",
+  "frozenCommit": "bdf470e5beb468266184cc2ea0c997191d9907b3",
+  "acceptedP1": "4b47db04c7140ebf88f69b91faa0b790d46f22ec",
+  "scope": "Frozen bytes, dimensions and exact static geometry only; actual images viewed separately. No artistic PASS or assembled motion verification.",
+  "files": [
+    {
+      "name": "geometry-draft.png",
+      "bytes": 338547,
+      "sha256": "bc13aa13e2b33b0e58cd0e87b90e684c3c4adbb3576d8d9b0379e3dee1bec532",
+      "dimensions": [
+        1536,
+        1536
+      ]
+    },
+    {
+      "name": "registration.png",
+      "bytes": 84015,
+      "sha256": "426bec72faf21fe6ba654dca988ed1d74241b1372246d78741419b19a3d5cf4a",
+      "dimensions": [
+        1536,
+        1536
+      ]
+    },
+    {
+      "name": "draft-overlay.png",
+      "bytes": 369900,
+      "sha256": "a8253ebdbf70bd45a29cd2c542a48d626481352c4dc6c977b9216dd4ea12de55",
+      "dimensions": [
+        1536,
+        1536
+      ]
+    },
+    {
+      "name": "reference-overlay.png",
+      "bytes": 3953792,
+      "sha256": "1d716e627dc5061b3544db00a5eac82125527c469cf65f22c05d9f5065e3fa7b",
+      "dimensions": [
+        1536,
+        1536
+      ]
+    },
+    {
+      "name": "geometry.json",
+      "bytes": 575401,
+      "sha256": "0544de7b4fcebf211b194fc63566a94b34a5b21b57fb0c56207a8c866d332d71",
+      "dimensions": null
+    }
+  ],
+  "counts": {
+    "pins": 25,
+    "segments": 16,
+    "buckets": 4,
+    "starts": 1,
+    "floorVertices": 14
+  },
+  "metrics": {
+    "maxNativeFieldError": 0.0,
+    "maxMatrixFieldError": 0.0,
+    "maxProjectedPointErrorPx": 0.0,
+    "maxInverseCircleRadiusErrorNative": 1.4985346297180513E-11,
+    "sampledCirclePoints": 3840
+  },
+  "numericEpsilonNote": "1e-8 source px / 1e-7 native units are floating point calculation checks, not visual fit tolerances",
+  "violations": []
+}
