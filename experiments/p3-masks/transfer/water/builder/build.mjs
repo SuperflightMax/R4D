@@ -42,10 +42,12 @@ if(process.env.P3_ARTIST_ASSETS){
  const artistDir=path.resolve(process.env.P3_ARTIST_ASSETS);
  if(!artistDir.startsWith(path.resolve(spec.runtime)+path.sep))throw Error('Artist snapshot belongs to another board runtime');
  const handoff=JSON.parse(fs.readFileSync(path.join(artistDir,'handoff.json')));
- if(handoff.board!==spec.board||handoff.prefix!==spec.artistPrefix)throw Error('Artist packet board identity differs');
+ if(handoff.variant&&!/^[a-z][a-z0-9-]{0,63}$/.test(handoff.variant))throw Error('Named Artist variant differs');
+ const expectedArtistPrefix=spec.artistPrefix+(handoff.variant?`variants/${handoff.variant}/`:'');
+ if(handoff.board!==spec.board||handoff.prefix!==expectedArtistPrefix)throw Error('Artist packet board identity differs');
  for(const item of handoff.files){const bytes=fs.readFileSync(path.join(artistDir,item.path));if(bytes.length!==item.bytes||sha(bytes)!==item.sha256)throw Error('Artist frozen bytes differ: '+item.path);fs.mkdirSync(path.dirname(path.join(output,'assets/artist',item.path)),{recursive:true});fs.writeFileSync(path.join(output,'assets/artist',item.path),bytes);}
  fs.copyFileSync(path.join(artistDir,'handoff.json'),path.join(output,'assets/artist/handoff.json'));
- artistSource={commit:handoff.commit,prefix:handoff.prefix,assetsSha256:sha(fs.readFileSync(path.join(artistDir,'assets.json')))};
+ artistSource={commit:handoff.commit,prefix:handoff.prefix,variant:handoff.variant??null,assetsSha256:sha(fs.readFileSync(path.join(artistDir,'assets.json')))};
 }else fs.writeFileSync(path.join(output,'assets/artist/assets.json'),JSON.stringify({schema:'r4d-p3-assets-v1',sourceSize:[1536,1536],occluders:[],status:'diagnostic; own Artist handoff pending'},null,2)+'\n');
 const nativeProvenance={...baselineBuild.nativeProvenance,corePackageTree:packageTree,reusedExactCompiledModule:true,baselineManifestSha256:spec.baselineManifestSha256};
 const meta={schema:'r4d-p3-transfer-build-v1',board:spec.board,label:spec.label,sourceCommit,coreCommit:spec.coreCommit,nativeProvenance,p1Commit:spec.p1Commit,orderCommit:spec.orderCommit,pixi:baselineBuild.pixi,artistSource,methodBaseline:{code:spec.baselineCode,art:spec.baselineArt,manifestSha256:spec.baselineManifestSha256,depth:'unchanged scalar/line; same alpha restoration passes'},configSha256:spec.configSha256,manifestSha256:spec.manifestSha256,projectionSha256:spec.projectionSha256,sourceSha256:spec.sourceSha256,builtAt:new Date().toISOString()};

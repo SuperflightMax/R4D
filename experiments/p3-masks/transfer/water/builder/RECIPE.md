@@ -12,8 +12,10 @@ native5ms/replay/checkpoint/ticks, independent Art/Geometry, source/flat/pan.
 
 1. Exact inputs извлечены prepare.mjs, их SHA совпали с accepted P1.
 2. Artist публикует board-specific assets.json + PNG с прежним v1 contract.
-3. `node import-artist.mjs <exact-commit>` создаёт отдельный own E snapshot;
-   перед build проверяются raw hashes Artist. Source commit закрепляется.
+3. `node import-artist.mjs <exact-commit> [variantName]` создаёт отдельный own E snapshot;
+   перед build проверяются raw hashes Artist. Source commit и фактический variant
+   prefix закрепляются. arch-front-edge-01 выбирает self-contained variant,
+   не подменяя original assets.json. Меняются только24 depth records арок.
 4. Process-local TEMP/TMP — own runtime water/temp; P3_ARTIST_ASSETS —
    путь exact Water snapshot. После fresh RAM/CPU/C/D/E выполнить
    `node build.mjs <new-absolute-water-runtime-directory>`.
