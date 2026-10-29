@@ -1,0 +1,103 @@
+{
+  "scope": "Nonsecret saved operational receipts; dated observations, not fresh live baseline or executable release intent",
+  "candidate": "C03",
+  "candidateIndexSha256": "17838d163e6c710cad513a68b5cd5ba5c6543a708761b96e7ee62fa362c2ef2d",
+  "runtimeEvidenceRoot": "E:/R4D/perspective/p5-runtime/release-engineer/output/c03-cto-review-01",
+  "observedRootAtSnippetRead": "/srv/superflight-review/releases/p4-jungle-extracted-candidate-03",
+  "snippetObservationUtc": "2026-10-29T01:13:36.4795919Z",
+  "metadataObservationUtc": "2026-10-29T01:14:30.8106399Z",
+  "remoteReadsBeforeInterruption": 2,
+  "remoteReadTargets": [
+    "/etc/nginx/snippets/review.locations.conf",
+    "/etc/nginx/conf.d/superflight-studio.conf",
+    "/etc/nginx/mime.types",
+    "/home/sf/assistant-context/vps/services/superflight-studio.md",
+    "/home/sf/assistant-context/vps/CHANGELOG.md"
+  ],
+  "rawBodiesRead": [
+    "/etc/nginx/snippets/review.locations.conf"
+  ],
+  "serverMetadata": [
+    {
+      "path": "/etc/nginx/conf.d/superflight-studio.conf",
+      "sha256": "35c0db6029d246dac31a53d1151e89fedba9dbba0ceeeb1921e779ef0307e4e8",
+      "size": 17255,
+      "uid": 0,
+      "gid": 0,
+      "mode": "0644"
+    },
+    {
+      "path": "/etc/nginx/mime.types",
+      "sha256": "6f95d1d7d75e3c072907d845622a69d23110d1266c16ff122b3109b8b21f3ae9",
+      "size": 5349,
+      "uid": 0,
+      "gid": 0,
+      "mode": "0644"
+    },
+    {
+      "path": "/home/sf/assistant-context/vps/services/superflight-studio.md",
+      "sha256": "ea0539d3fa86d28c0064ad41796ec4d3a5f6b4bef93c00083a8cbd28668788ae",
+      "size": 84121,
+      "uid": 1003,
+      "gid": 27,
+      "mode": "0640",
+      "inode": 2922368
+    },
+    {
+      "path": "/home/sf/assistant-context/vps/CHANGELOG.md",
+      "sha256": "4ffeac09b8c4d628b275bd8cfc14572fe9e7a91a9e539bc79ee0a9037f9355a7",
+      "size": 299008,
+      "uid": 1003,
+      "gid": 27,
+      "mode": "0640",
+      "inode": 2884515
+    }
+  ],
+  "savedFiles": [
+    {
+      "name": "metadata-read.json",
+      "bytes": 302,
+      "sha256": "9847a9242fb02d5f57bd171b37a86fb7cbb92fb8803fdae36ea37823e21f2b10"
+    },
+    {
+      "name": "review.locations.conf",
+      "bytes": 955,
+      "sha256": "359de106d9291f1aa8d265f3cd8c7c9aefc7703de850e9cd7ef531458a271ac9"
+    },
+    {
+      "name": "review.locations.proposed.conf",
+      "bytes": 957,
+      "sha256": "e2a466db57830bddb9003361028f99c132504ed3e12a632918898cd6c2a51224"
+    },
+    {
+      "name": "server-metadata.json",
+      "bytes": 732,
+      "sha256": "c4a2d0cc6bd55fdeb1467c2d922519167a419048d6e46effdfb3eb7dbb7b29b4"
+    },
+    {
+      "name": "snippet-read.json",
+      "bytes": 304,
+      "sha256": "3a7dfb662db92205db786acb9617ec52c7859e11751bd0c5af56bb1e24ea44ee"
+    }
+  ],
+  "recoveryCheckpoint": {
+    "path": "E:\\R4D\\perspective\\p5-runtime\\release-engineer\\output\\c03-cto-review-01\\recovery-checkpoint.json",
+    "bytes": 1566,
+    "sha256": "df033b148cd3c92cf9ce5e4a8725457fbd8acd67fa2910cb2551b4e0b183a73e",
+    "utc": "2026-10-29T08:54:38.1872271Z",
+    "head": "6c08ddd4db346bc70b1e65925497e23072400d59",
+    "branch": "codex/r4d-p5-regenerated-release-engineer-01",
+    "status": []
+  },
+  "serverReadsDuringRecovery": 0,
+  "serverWrites": 0,
+  "token": "absent",
+  "completeLiveSeal": false,
+  "proposedSnippetOnly": {
+    "name": "review.locations.proposed.conf",
+    "bytes": 957,
+    "sha256": "e2a466db57830bddb9003361028f99c132504ed3e12a632918898cd6c2a51224",
+    "serverPathExistence": "unresolved",
+    "opaqueBaselinePreservation": "unresolved; required before a full intent"
+  }
+}
