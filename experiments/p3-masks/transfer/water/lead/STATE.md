@@ -65,6 +65,34 @@ Dark [текущий STATE](../../dark/lead/STATE.md): targeted TQA/VQA идут
 
 ## Публикационный gate — пока server_write=false
 
+### Текущий приоритет: v1 STOP до firstwrite; token CLOSED; local successor-v2
+
+CTO tokenCTO-P3-WD04-20261029T142713Z-ae0b1054d192 был выдан по reviewedv1,
+но ЗАКРЫТ CTO в2026-10-29T14:36:01Z. Исторический authorization-file не менять
+и НЕ использовать, хотя его сохранённыйJSON всё ещё statusISSUED/serverWriteTrue.
+Фактическое разрешение отозвано. Окно RESERVED P3, P6 не получает; публикации нет.
+
+Execution turn01a18812-15ad-7e82-8abc-58f0ee0a03ea completed/errornull,
+STOP handoff0efbba7f4e1d71c04dead81d205fcbc19967d2fd полностью прочитан/
+интегрирован Lead. Preflight14:31:55.7726602Z, exec-bc0419dd-d4a8-4803-8846-ccebf9f41cea
+exit1: nesteddefhttp() заслонил importedhttpmodule, 'function' object has no
+attributeclient. Это пропущенная implementation ошибка review/AST-only,
+неpolicydenial. ПервыйHTTPS и перваяserverwrite ещё не случились. BeginUTC=null;
+backup/upload/stage/switch/docs NOT_STARTED. Failedreceipt/journal сохранены.
+RO checkpoint14:33:29.493371Z/euid0 подтвердил oldroot674/88/122587862,
+oldsnippet/manifest/metadata exact и absentnewroot/backup/temp/siblings.
+
+Одна localcorrection задача доставлена после завершенияfailedexecution:
+actualturn01a18817-f451-7952-a448-bf04e5d4d1ab active/errornull, тотжеRelease/
+6.1-sol/xhigh. V1fdac/scripts/scope/archive/receipts неизменны. Создаются
+separatecombined_remote_v2.py/combined_execute_v2.py: толькоhttp_client alias/
+HTTPSConnection иversionedLOCALexecution-v2 journal. Meaningfullocalstub helper
+smoke обязан reproducerV1failure ипройтиV2 безSSH/network. Windowsmovesне нужны.
+CTO эту boundedlocal/ROкоррекцию прямо подтвердил; product/native/QA/frozen
+не переделывать. Новыйcanonicalv2/diff/smoke/sealedhashes затем полностью
+прочитаютLead/CTO, нужен НОВЫЙtoken и freshidle перед отдельнымexecution.
+Текущийserver_write=false. Не дублироватьlocaltask/неповторятьfailedphase.
+
 CTO полностью прочитал оба RESULT71a4f50, обе QA-пары/triage и actual A/B,
 принял exact Water/Dark как завершённые bounded результаты. Публично оба
 PARTIAL, local W-EARLY-POP/D-POP CLOSED, W-DIVIDER OPEN. Нового product-цикла нет.

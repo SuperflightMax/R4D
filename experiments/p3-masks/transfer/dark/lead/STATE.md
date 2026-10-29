@@ -107,6 +107,12 @@ partial overlap. Это selfcheck/наблюдение Lead, не независ
 
 ## Следующий gate
 
+V1publication preflight14:31:55Z остановился наhttp namespace error доfirstwrite.
+CTO закрылv1token14:36:01Z; использоватьнельзя, сервернеизменён. ТотжеRelease
+готовитединственнуюотдельнуюlocalv2 alias/runtime-smoke; старыеreceipts,
+scope/archive/frozen сохраняются. Currentstatus/точныеrefs в WaterSTATE.
+Новогоexecutionдоновоготокена/freshidleнет. Product-cycle неоткрывается.
+
 CTO принял exact оба результата71a4f50 для Review с публичным PARTIAL.
 Sealed combined intentfdac2e9ba909a034a4ad176d11a438a04dc78ccc полностью
 прочитан Lead, все архивные entries/code hashes/guard проверены.
