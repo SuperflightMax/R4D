@@ -1,0 +1,146 @@
+{
+  "status": "PASS",
+  "utc": "2026-10-29T15:33:57.133559+00:00",
+  "test": "Actual imported V3 helpers with offline connection stub and opaque existing local catalog/module fixtures",
+  "remoteSha256": "6280d062adc4b4cf561980c8ecfd3439e1542561747219ddcd6833d8aa40add9",
+  "launcherSha256": "3cf1852fcea0b83fa43a1a394d549cd2c263a49599319662201b5593d17bfd12",
+  "scopeSha256": "726cb8e2e568bb4ba4a5e89ee637f323acbfc03fb093cf626c03d9efc229a564",
+  "networkUsed": false,
+  "sshUsed": false,
+  "phaseRun": false,
+  "bodyOutputOrSaved": false,
+  "cases": [
+    {
+      "case": "old_catalog200_exact_hash_and_seven_headers",
+      "expected": "PASS",
+      "actual": "PASS",
+      "observedStatuses": [
+        200,
+        403,
+        404
+      ]
+    },
+    {
+      "case": "new_catalog200_exact_hash_and_seven_headers",
+      "expected": "PASS",
+      "actual": "PASS",
+      "observedStatuses": [
+        200,
+        403,
+        404
+      ]
+    },
+    {
+      "case": "normal303_rejected",
+      "expected": "REJECT",
+      "actual": "REJECT",
+      "reason": "STOP: strict protection statuses differ",
+      "observedStatuses": [
+        303,
+        403,
+        404
+      ],
+      "actualFactsRetained": true
+    },
+    {
+      "case": "wrong_body200_rejected",
+      "expected": "REJECT",
+      "actual": "REJECT",
+      "reason": "STOP: normal catalog body identity differs",
+      "observedStatuses": [
+        200,
+        403,
+        404
+      ],
+      "actualFactsRetained": true
+    },
+    {
+      "case": "wrong_origin_status_rejected",
+      "expected": "REJECT",
+      "actual": "REJECT",
+      "reason": "STOP: strict protection statuses differ",
+      "observedStatuses": [
+        200,
+        200,
+        404
+      ],
+      "actualFactsRetained": true
+    },
+    {
+      "case": "wrong_dot_status_rejected",
+      "expected": "REJECT",
+      "actual": "REJECT",
+      "reason": "STOP: strict protection statuses differ",
+      "observedStatuses": [
+        200,
+        403,
+        200
+      ],
+      "actualFactsRetained": true
+    },
+    {
+      "case": "wrong_security_header_rejected",
+      "expected": "REJECT",
+      "actual": "REJECT",
+      "reason": "STOP: strict seven protection headers/completeness differ",
+      "observedStatuses": [
+        200,
+        403,
+        404
+      ],
+      "actualFactsRetained": true
+    },
+    {
+      "case": "non_null_location_rejected",
+      "expected": "REJECT",
+      "actual": "REJECT",
+      "reason": "STOP: strict seven protection headers/completeness differ",
+      "observedStatuses": [
+        200,
+        403,
+        404
+      ],
+      "actualFactsRetained": true
+    },
+    {
+      "case": "exact_js_payload_and_actual_js_mime",
+      "expected": "VERIFIED",
+      "actual": "VERIFIED",
+      "moduleMimeBodyVerified": true
+    },
+    {
+      "case": "html200_never_counts_as_module",
+      "expected": "UNVERIFIED_HTML_RESPONSE",
+      "actual": "UNVERIFIED_HTML_RESPONSE",
+      "moduleMimeBodyVerified": false
+    },
+    {
+      "case": "denial_never_counts_as_module",
+      "expected": "UNVERIFIED_ACCESS_RESPONSE",
+      "actual": "UNVERIFIED_ACCESS_RESPONSE",
+      "moduleMimeBodyVerified": false
+    },
+    {
+      "case": "exact_js_bytes_wrong_mime_remains_unverified",
+      "expected": "UNVERIFIED_MODULE_MIME",
+      "actual": "UNVERIFIED_MODULE_MIME",
+      "moduleMimeBodyVerified": false
+    },
+    {
+      "case": "non_html_wrong_payload_rejected",
+      "expected": "REJECT",
+      "actual": "REJECT",
+      "actualFactsRetained": true
+    }
+  ],
+  "docPrefixProofPass": true,
+  "changedDocPrefixAndInodeRejected": true,
+  "stageSwitchRollbackTreeAndForeignMetadataGuardsUnchanged": true,
+  "uploadWriteLogicUnchanged": true,
+  "originalScopeKeysUnchanged": true,
+  "duplicateAppendGuardAstPreservedBeforeSnapshots": true,
+  "publicChecksPlanned": 217,
+  "modulesPlanned": 10,
+  "syntaxPass": true,
+  "testSourceSha256": "efe2f22c4d39d894aeb117933db09e77d66ff91ec14f9d040c50022be3a803bc"
+}

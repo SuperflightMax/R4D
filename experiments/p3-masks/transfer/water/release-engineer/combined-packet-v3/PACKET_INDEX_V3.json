@@ -1,0 +1,87 @@
+{
+  "status": "WAIT_V3_FULL_REVIEW_AND_EXACT_CTO_TOKEN",
+  "serverWrite": false,
+  "token": null,
+  "releaseId": "p3-water-dark-front-edge-04",
+  "predecessorSourceCommit": "a42ebe2696909ae6491d233c5b40c1656dc371ab",
+  "canonicalIntent": "COMBINED_INTENT_V3.md",
+  "writeScriptSha256": "6280d062adc4b4cf561980c8ecfd3439e1542561747219ddcd6833d8aa40add9",
+  "launcherSha256": "3cf1852fcea0b83fa43a1a394d549cd2c263a49599319662201b5593d17bfd12",
+  "scopeSha256": "726cb8e2e568bb4ba4a5e89ee637f323acbfc03fb093cf626c03d9efc229a564",
+  "scopeRelativePath": "combined-packet-v3/WRITE_SCOPE_V3.json",
+  "archiveSha256": "0cee1516db37cb2ac8a38fec54214c47483f8bea755a71dbd0d04a244b3c9fbb",
+  "releaseManifestSha256": "e8a801faf58b670fd2b2cb7ba1c327d20c025593c75881915ae7d211f2fcf3f3",
+  "prospectiveStatusBaseline": [
+    200,
+    403,
+    404
+  ],
+  "normalCatalogBefore": {
+    "bytes": 14511,
+    "sha256": "eb57e35bcebbe4a639b92c625f23de5efb90ae2c15da8a3996ca653fb61a6885"
+  },
+  "normalCatalogAfter": {
+    "bytes": 15762,
+    "sha256": "fd4e28b8bfb1764e9d6623009d8f21c23eb1e5df59590effc42ced55f842beeb"
+  },
+  "publicChecksPlanned": 217,
+  "payloadExpectations": 197,
+  "browserModules": 10,
+  "executionV3Directory": "E:\\R4D\\perspective\\p3-runtime\\release-engineer\\transfer-water-dark\\combined\\water-dark-front-edge-04\\execution-v3",
+  "executionV3Empty": true,
+  "remoteCallsRun": 0,
+  "phasesRun": [],
+  "newAuthorizationFileCreated": false,
+  "offlineRuntimeSmoke": "PASS",
+  "httpCases": 13,
+  "windowOwner": "cto-r4d-perspective-01",
+  "windowState": "RESERVED_P3",
+  "files": {
+    "COMBINED_INTENT_V3.md": {
+      "bytes": 11159,
+      "sha256": "b18a92789cdf55ab58ae9f1c7eece266fe14a2d4dd740fb4f981bda2bda1e0a5"
+    },
+    "combined_remote_v3.py": {
+      "bytes": 24459,
+      "sha256": "6280d062adc4b4cf561980c8ecfd3439e1542561747219ddcd6833d8aa40add9"
+    },
+    "combined_execute_v3.py": {
+      "bytes": 5694,
+      "sha256": "3cf1852fcea0b83fa43a1a394d549cd2c263a49599319662201b5593d17bfd12"
+    },
+    "test_combined_http_v3.py": {
+      "bytes": 11633,
+      "sha256": "efe2f22c4d39d894aeb117933db09e77d66ff91ec14f9d040c50022be3a803bc"
+    },
+    "combined-packet-v3/HOST_RESOURCES.json": {
+      "bytes": 433,
+      "sha256": "ba70b8e48ec358db98cc97a53521067fb6691647c6c5bff1c30692bc1ff09511"
+    },
+    "combined-packet-v3/HTTP_RUNTIME_REGRESSION_V3.json": {
+      "bytes": 3993,
+      "sha256": "c0a9775bd99e565f4bac6b0d74379e34363238ccbea428d5088558327be0fb30"
+    },
+    "combined-packet-v3/LAUNCHER_WRAPPER_SYNTAX.json": {
+      "bytes": 624,
+      "sha256": "d38a17f2cc8c75950d2c41728ae03680db26a41e7a86381e80282bd80c4195b1"
+    },
+    "combined-packet-v3/PREPARATION_PROOF.json": {
+      "bytes": 3203,
+      "sha256": "9b72e16242514c0e324c1f59bb19aefa99c39e53821cc7cd259844ba45da2243"
+    },
+    "combined-packet-v3/SCOPE_V3_DELTA.json": {
+      "bytes": 62146,
+      "sha256": "5885cd92bde6a2caf2d13a0865673f9ceb5f3a4eb3a886deec43463d5cdffc9f"
+    },
+    "combined-packet-v3/V3_CODE_CHANGES.patch": {
+      "bytes": 16036,
+      "sha256": "876e4c7ac2085a6257afec185e9b38f7dffa8794633527181141063a3e4607c9"
+    },
+    "combined-packet-v3/WRITE_SCOPE_V3.json": {
+      "bytes": 131765,
+      "sha256": "726cb8e2e568bb4ba4a5e89ee637f323acbfc03fb093cf626c03d9efc229a564"
+    }
+  },
+  "selfExcluded": true,
+  "duplicateAppendGuardPreservedBeforeSnapshots": true
+}
