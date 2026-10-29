@@ -1,0 +1,710 @@
+{
+  "schema": "r4d.p1.clean-repeat-01.board02.simulation.trial-01",
+  "board": "02",
+  "trial": "01",
+  "status": "actual core trial; supports, radius and registration provisional; no QA PASS or Max acceptance",
+  "coreCommit": "5a6fa03f1cdb3de88a2d9c7dbe795eb8e2a7f023",
+  "textDigestRule": "UTF-8 text; replace CRLF with LF; preserve other characters and final newline",
+  "research": {
+    "commit": "337f89aaed8298d63f1d96cbe4868dfd71fabee3",
+    "file": "experiments/p1-collider-mapping/clean-repeat-01/research/board02-projection.candidate-01.json",
+    "canonicalLfUtf8Sha256": "4dfa46589bb3fdfc8e2ad8ff2554737697e3ce9172c5b8d5c5583577df0c8c48"
+  },
+  "source": {
+    "path": "K:\\Agents\\R4D\\Assets\\perspective\\02-dark-temple.jpg",
+    "sha256": "7ceff71bd0a871fecd725527dff5522450c8e75a74eb99c107b5d8624bf8fa3a",
+    "width": 1536,
+    "height": 1536,
+    "readOnly": true
+  },
+  "config": {
+    "file": "config.json",
+    "canonicalLfUtf8Sha256": "14be2a023833d266d1e333bf582af5fd5885deb445698c10ebd846ef0cc080b2",
+    "counts": {
+      "researchObjects": 24,
+      "researchPrimitives": 24,
+      "circleFootprints": 12,
+      "loopFootprints": 12,
+      "obstacleSegments": 48,
+      "explicitBounds": 22,
+      "pins": 12,
+      "segments": 70,
+      "buckets": 4,
+      "drops": 1
+    }
+  },
+  "translation": {
+    "offset": [
+      33307,
+      33912
+    ],
+    "researchToNative": [
+      [
+        1,
+        0,
+        33307
+      ],
+      [
+        0,
+        1,
+        33912
+      ],
+      [
+        0,
+        0,
+        1
+      ]
+    ],
+    "nativeToResearch": [
+      [
+        1,
+        0,
+        -33307
+      ],
+      [
+        0,
+        1,
+        -33912
+      ],
+      [
+        0,
+        0,
+        1
+      ]
+    ],
+    "padding": 32359,
+    "rule": "native = research + translation; no scale/rotation, clipping, axis alignment or vertex reordering"
+  },
+  "projection": {
+    "nativeToSource": [
+      [
+        1,
+        -0.13956719825614036,
+        -27842.873230875444
+      ],
+      [
+        0,
+        0.45097762622940285,
+        -14593.55326069151
+      ],
+      [
+        0,
+        -0.00019089403350768935,
+        7.473598464312761
+      ]
+    ],
+    "sourceToNative": [
+      [
+        1,
+        10.875932356315827,
+        24962.7234087166
+      ],
+      [
+        0,
+        12.784047833351787,
+        24963.16651665375
+      ],
+      [
+        0,
+        0.000326535934077396,
+        0.7714248461458229
+      ]
+    ],
+    "sourceImageQuadPx": [
+      [
+        0,
+        0
+      ],
+      [
+        1536,
+        0
+      ],
+      [
+        1536,
+        1536
+      ],
+      [
+        0,
+        1536
+      ]
+    ],
+    "wholeSourceNativePolygon": [
+      [
+        32359.242165241176,
+        32359.816567192793
+      ],
+      [
+        34350.36289161411,
+        32359.816567192793
+      ],
+      [
+        33939.2750578835,
+        35035.36773135511
+      ],
+      [
+        32732.661345014265,
+        35035.36773135511
+      ]
+    ],
+    "wholeSourceNativeBounds": {
+      "minX": 32359.242165241176,
+      "maxX": 34350.36289161411,
+      "minY": 32359.816567192793,
+      "maxY": 35035.36773135511
+    },
+    "playableFloorNativePolygon": [
+      [
+        32828.392651758746,
+        33007.30444252906
+      ],
+      [
+        32824.90790053341,
+        33124.97928788483
+      ],
+      [
+        32812.4273338883,
+        33343.101930132565
+      ],
+      [
+        32812.58735945786,
+        33545.984296703595
+      ],
+      [
+        32815.83784896036,
+        33735.16973265605
+      ],
+      [
+        32813.87605813768,
+        33912
+      ],
+      [
+        32812.03833509587,
+        34077.64714903807
+      ],
+      [
+        32815.94544940967,
+        34233.1395282205
+      ],
+      [
+        32816.88782882306,
+        34379.383152767456
+      ],
+      [
+        32822.48335081387,
+        34545.11142261462
+      ],
+      [
+        33880.97129029415,
+        34545.11142261462
+      ],
+      [
+        33881.588882864664,
+        34379.383152767456
+      ],
+      [
+        33881.3658408677,
+        34233.1395282205
+      ],
+      [
+        33879.191935330215,
+        34077.64714903807
+      ],
+      [
+        33880.87605813768,
+        33912
+      ],
+      [
+        33884.741390601186,
+        33735.16973265605
+      ],
+      [
+        33880.3178329594,
+        33545.984296703595
+      ],
+      [
+        33883.33420669483,
+        33343.101930132565
+      ],
+      [
+        33878.52550383523,
+        33124.97928788483
+      ],
+      [
+        33881.47813544652,
+        33007.30444252906
+      ]
+    ]
+  },
+  "implicitBounds": [
+    {
+      "id": "wall_top",
+      "kind": "wall",
+      "from": [
+        0,
+        0
+      ],
+      "to": [
+        66710,
+        0
+      ]
+    },
+    {
+      "id": "wall_left",
+      "kind": "wall",
+      "from": [
+        0,
+        0
+      ],
+      "to": [
+        0,
+        35100
+      ]
+    },
+    {
+      "id": "wall_right",
+      "kind": "wall",
+      "from": [
+        66710,
+        0
+      ],
+      "to": [
+        66710,
+        35100
+      ]
+    },
+    {
+      "id": "bottom_open",
+      "kind": "exit",
+      "from": [
+        0,
+        35100
+      ],
+      "to": [
+        66710,
+        35100
+      ],
+      "rule": "LOST when ball.pos.y - ball.r > board.height"
+    }
+  ],
+  "settingsBasis": "reference-demo at pinned core: tick5ms, quantize7, gravity980, speed2000, noise2deg/0.02, wallBounce1; r16 working trial; min0/max16sec; seeds1/2 upfront",
+  "bucketSemantics": "strict center distance < bucket.r; no ball-radius erosion, z, sinking or whole-silhouette containment",
+  "idMapping": [
+    {
+      "researchId": "(start)",
+      "nativeKind": "drop",
+      "nativeIds": [
+        "board02-start"
+      ]
+    },
+    {
+      "researchId": "bowl-base-01",
+      "objectId": "bowl-base-01",
+      "nativeKind": "pin",
+      "nativeIds": [
+        "bowl-base-01"
+      ]
+    },
+    {
+      "researchId": "bowl-base-02",
+      "objectId": "bowl-base-02",
+      "nativeKind": "pin",
+      "nativeIds": [
+        "bowl-base-02"
+      ]
+    },
+    {
+      "researchId": "bowl-base-03",
+      "objectId": "bowl-base-03",
+      "nativeKind": "pin",
+      "nativeIds": [
+        "bowl-base-03"
+      ]
+    },
+    {
+      "researchId": "bowl-base-04",
+      "objectId": "bowl-base-04",
+      "nativeKind": "pin",
+      "nativeIds": [
+        "bowl-base-04"
+      ]
+    },
+    {
+      "researchId": "bowl-base-05",
+      "objectId": "bowl-base-05",
+      "nativeKind": "pin",
+      "nativeIds": [
+        "bowl-base-05"
+      ]
+    },
+    {
+      "researchId": "bowl-base-06",
+      "objectId": "bowl-base-06",
+      "nativeKind": "pin",
+      "nativeIds": [
+        "bowl-base-06"
+      ]
+    },
+    {
+      "researchId": "skull-base-01",
+      "objectId": "skull-base-01",
+      "nativeKind": "pin",
+      "nativeIds": [
+        "skull-base-01"
+      ]
+    },
+    {
+      "researchId": "skull-base-02",
+      "objectId": "skull-base-02",
+      "nativeKind": "pin",
+      "nativeIds": [
+        "skull-base-02"
+      ]
+    },
+    {
+      "researchId": "skull-base-03",
+      "objectId": "skull-base-03",
+      "nativeKind": "pin",
+      "nativeIds": [
+        "skull-base-03"
+      ]
+    },
+    {
+      "researchId": "skull-base-04",
+      "objectId": "skull-base-04",
+      "nativeKind": "pin",
+      "nativeIds": [
+        "skull-base-04"
+      ]
+    },
+    {
+      "researchId": "skull-base-05",
+      "objectId": "skull-base-05",
+      "nativeKind": "pin",
+      "nativeIds": [
+        "skull-base-05"
+      ]
+    },
+    {
+      "researchId": "skull-base-06",
+      "objectId": "skull-base-06",
+      "nativeKind": "pin",
+      "nativeIds": [
+        "skull-base-06"
+      ]
+    },
+    {
+      "researchId": "pillar-01",
+      "objectId": "pillar-01",
+      "nativeKind": "segments",
+      "nativeIds": [
+        "pillar-01:edge-01",
+        "pillar-01:edge-02",
+        "pillar-01:edge-03",
+        "pillar-01:edge-04"
+      ]
+    },
+    {
+      "researchId": "pillar-02",
+      "objectId": "pillar-02",
+      "nativeKind": "segments",
+      "nativeIds": [
+        "pillar-02:edge-01",
+        "pillar-02:edge-02",
+        "pillar-02:edge-03",
+        "pillar-02:edge-04"
+      ]
+    },
+    {
+      "researchId": "pillar-03",
+      "objectId": "pillar-03",
+      "nativeKind": "segments",
+      "nativeIds": [
+        "pillar-03:edge-01",
+        "pillar-03:edge-02",
+        "pillar-03:edge-03",
+        "pillar-03:edge-04"
+      ]
+    },
+    {
+      "researchId": "pillar-04",
+      "objectId": "pillar-04",
+      "nativeKind": "segments",
+      "nativeIds": [
+        "pillar-04:edge-01",
+        "pillar-04:edge-02",
+        "pillar-04:edge-03",
+        "pillar-04:edge-04"
+      ]
+    },
+    {
+      "researchId": "pillar-05",
+      "objectId": "pillar-05",
+      "nativeKind": "segments",
+      "nativeIds": [
+        "pillar-05:edge-01",
+        "pillar-05:edge-02",
+        "pillar-05:edge-03",
+        "pillar-05:edge-04"
+      ]
+    },
+    {
+      "researchId": "pillar-06",
+      "objectId": "pillar-06",
+      "nativeKind": "segments",
+      "nativeIds": [
+        "pillar-06:edge-01",
+        "pillar-06:edge-02",
+        "pillar-06:edge-03",
+        "pillar-06:edge-04"
+      ]
+    },
+    {
+      "researchId": "block-01",
+      "objectId": "block-01",
+      "nativeKind": "segments",
+      "nativeIds": [
+        "block-01:edge-01",
+        "block-01:edge-02",
+        "block-01:edge-03",
+        "block-01:edge-04"
+      ]
+    },
+    {
+      "researchId": "block-02",
+      "objectId": "block-02",
+      "nativeKind": "segments",
+      "nativeIds": [
+        "block-02:edge-01",
+        "block-02:edge-02",
+        "block-02:edge-03",
+        "block-02:edge-04"
+      ]
+    },
+    {
+      "researchId": "block-03",
+      "objectId": "block-03",
+      "nativeKind": "segments",
+      "nativeIds": [
+        "block-03:edge-01",
+        "block-03:edge-02",
+        "block-03:edge-03",
+        "block-03:edge-04"
+      ]
+    },
+    {
+      "researchId": "block-04",
+      "objectId": "block-04",
+      "nativeKind": "segments",
+      "nativeIds": [
+        "block-04:edge-01",
+        "block-04:edge-02",
+        "block-04:edge-03",
+        "block-04:edge-04"
+      ]
+    },
+    {
+      "researchId": "block-05",
+      "objectId": "block-05",
+      "nativeKind": "segments",
+      "nativeIds": [
+        "block-05:edge-01",
+        "block-05:edge-02",
+        "block-05:edge-03",
+        "block-05:edge-04"
+      ]
+    },
+    {
+      "researchId": "block-06",
+      "objectId": "block-06",
+      "nativeKind": "segments",
+      "nativeIds": [
+        "block-06:edge-01",
+        "block-06:edge-02",
+        "block-06:edge-03",
+        "block-06:edge-04"
+      ]
+    },
+    {
+      "researchId": "far",
+      "nativeKind": "segment",
+      "nativeIds": [
+        "far"
+      ]
+    },
+    {
+      "researchId": "left-1",
+      "nativeKind": "segment",
+      "nativeIds": [
+        "left-1"
+      ]
+    },
+    {
+      "researchId": "left-2",
+      "nativeKind": "segment",
+      "nativeIds": [
+        "left-2"
+      ]
+    },
+    {
+      "researchId": "left-3",
+      "nativeKind": "segment",
+      "nativeIds": [
+        "left-3"
+      ]
+    },
+    {
+      "researchId": "left-4",
+      "nativeKind": "segment",
+      "nativeIds": [
+        "left-4"
+      ]
+    },
+    {
+      "researchId": "left-5",
+      "nativeKind": "segment",
+      "nativeIds": [
+        "left-5"
+      ]
+    },
+    {
+      "researchId": "left-6",
+      "nativeKind": "segment",
+      "nativeIds": [
+        "left-6"
+      ]
+    },
+    {
+      "researchId": "left-7",
+      "nativeKind": "segment",
+      "nativeIds": [
+        "left-7"
+      ]
+    },
+    {
+      "researchId": "left-8",
+      "nativeKind": "segment",
+      "nativeIds": [
+        "left-8"
+      ]
+    },
+    {
+      "researchId": "left-9",
+      "nativeKind": "segment",
+      "nativeIds": [
+        "left-9"
+      ]
+    },
+    {
+      "researchId": "right-1",
+      "nativeKind": "segment",
+      "nativeIds": [
+        "right-1"
+      ]
+    },
+    {
+      "researchId": "right-2",
+      "nativeKind": "segment",
+      "nativeIds": [
+        "right-2"
+      ]
+    },
+    {
+      "researchId": "right-3",
+      "nativeKind": "segment",
+      "nativeIds": [
+        "right-3"
+      ]
+    },
+    {
+      "researchId": "right-4",
+      "nativeKind": "segment",
+      "nativeIds": [
+        "right-4"
+      ]
+    },
+    {
+      "researchId": "right-5",
+      "nativeKind": "segment",
+      "nativeIds": [
+        "right-5"
+      ]
+    },
+    {
+      "researchId": "right-6",
+      "nativeKind": "segment",
+      "nativeIds": [
+        "right-6"
+      ]
+    },
+    {
+      "researchId": "right-7",
+      "nativeKind": "segment",
+      "nativeIds": [
+        "right-7"
+      ]
+    },
+    {
+      "researchId": "right-8",
+      "nativeKind": "segment",
+      "nativeIds": [
+        "right-8"
+      ]
+    },
+    {
+      "researchId": "right-9",
+      "nativeKind": "segment",
+      "nativeIds": [
+        "right-9"
+      ]
+    },
+    {
+      "researchId": "near-divider-1",
+      "nativeKind": "segment",
+      "nativeIds": [
+        "near-divider-1"
+      ]
+    },
+    {
+      "researchId": "near-divider-2",
+      "nativeKind": "segment",
+      "nativeIds": [
+        "near-divider-2"
+      ]
+    },
+    {
+      "researchId": "near-divider-3",
+      "nativeKind": "segment",
+      "nativeIds": [
+        "near-divider-3"
+      ]
+    },
+    {
+      "researchId": "receiver-01",
+      "nativeKind": "bucket",
+      "nativeIds": [
+        "receiver-01"
+      ]
+    },
+    {
+      "researchId": "receiver-02",
+      "nativeKind": "bucket",
+      "nativeIds": [
+        "receiver-02"
+      ]
+    },
+    {
+      "researchId": "receiver-03",
+      "nativeKind": "bucket",
+      "nativeIds": [
+        "receiver-03"
+      ]
+    },
+    {
+      "researchId": "receiver-04",
+      "nativeKind": "bucket",
+      "nativeIds": [
+        "receiver-04"
+      ]
+    }
+  ]
+}
