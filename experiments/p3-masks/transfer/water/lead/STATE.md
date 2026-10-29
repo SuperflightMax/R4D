@@ -7,6 +7,31 @@ Worktree `E:\R4D\perspective\p3-worktrees\lead`, прежняя branch
 
 ## FULL_ART_READY / EARLY_WATER_QA — итогового freeze/QA/publish ещё нет
 
+Новая named ordinary data-коррекция Artist:
+`5c9ba8c640b344094e0ada7c4ed6c9ec076550e5`, prefix
+`experiments/p3-masks/transfer/water/asset-artist/variants/arch-front-edge-01/`.
+assets.json20571bytes/SHA256
+`4a5bc16f69146fe26a3e3893fcf3c1c8e5b943400bc65d5215cb41d58efeece6`.
+Lead независимо сверил SHA и структурный diff: ровно24depth-записи8arches,
+остальные47regions/ball/shadow поля те же.73PNG сохранены по exact packet
+проверкам Artist/Builder; source/core/config/projection/renderer не меняются.
+Правило: midpoint accepted front edge2→3 каждой из16feet вместо centroid,
+без перестановкивершин/seed/tick/radiusзависимости. Прочитаны README/ANCHORS.csv,
+вариант интегрирован; оригинальные17dc/early02 сохранены.
+Внешний packet manifestSHA
+`7f260deb508977dd9a6d95cf981d26179516fbf41eaafad93af1255971963454`.
+Artist делает отдельную doc-only русскую версию README, не подменяя выдачу5c9.
+
+Builder собрал `front-edge-04`, SOURCE
+`5196c0bd4981992c4e3d9678438aed1aa1c0d84c`, manifestSHA
+`de1344afcb197115b76cb4006ead3d96e7b2581a1a299df1100d7a552d2ce2c6`.
+Сравнивает actual1006–1022 и новый threshold1021. Его numerical residual
+overlap≈0.002% — ориентир, не visual retest/PASS. Builder подтвердил byte-equal
+renderer/native/inputs/73PNG. Новый actual PID после перевода6868 ещё не
+выдан Lead; старый17640 нельзя считать актуальным владельцем.
+Full Water frozen handoff пока нет; обе QA сейчас заняты Dark exactfreeze,
+Water будет отдельно после selfcheck и явной выдачи. Новых QA ролей нет.
+
 Оба первых полных ART комплекта получены и переданы Builder, commit
 `17dc9fcdc261562acb581dd8590096819734c807` (pushed/clean).
 Lead прочитал оба Artist STATE/CONSUMER_CONTRACT, независимо сверил Git

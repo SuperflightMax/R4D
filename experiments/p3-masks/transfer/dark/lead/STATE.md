@@ -4,7 +4,35 @@
 [Исходный способ и точный Dark P1](BASELINE.md) сохранены до переноса.
 Dark принимает board02 trial01 и собственный source; Water inputs не заменяют его.
 
-## FULL_ART_READY — итогового freeze/QA/publish ещё нет
+## DARK_FULL_METHOD_03_FROZEN — независимая QA идёт, публикации нет
+
+Handoff `cd1f7ada0c4789b0d512d0a9c47d513c036ee31f` прочитан Lead и интегрирован.
+SOURCE `c73d6128970b2b022d5313b08c34cafdec9a1bc3`, ART17dc9fcdc261…,
+candidate `dark-full-method-03`. Immutable bundle:
+`E:\R4D\perspective\p3-runtime\builder\transfer-water-dark\dark\full-method-03`.
+Manifest14842bytes/SHA256
+`b3923f4ccab57a8361a9dc8f64de73fcee9b70fb38c87aac5e9623fbc62d0307`
+независимо совпал у Lead.87payload/3383383bytes, сmanifest88/3398225.
+[Builder STATE](../builder/STATE.md), [RECIPE](../builder/RECIPE.md).
+Actual freeze record `dark\candidates\dark-full-method-03.freeze.json` прочитан.
+URL `http://127.0.0.1:6869/review/r4d/p3-masks-dark/`, own Builder
+PID37660/session87426, bytes held для обеих QA. Это не server release.
+
+После fresh completed/idle обеим существующим QA адресно выдан этот exact
+candidate с model=gpt-6.1-sol/thinking=xhigh, оба sends isError=false.
+Actual TQA turn `01a18736-392a-7db2-91a2-611c2f5153ad`,
+VQA turn `01a18736-3abe-7692-b507-77fe05a87176`, active/errornull.
+Первые конкретные действия — чтение handoff/matrix, fresh resources,
+проверка именованного bundle/manifest в своих worktrees. VQA поручено actual
+continuous ordinary motion перед соседними ticks; Water early step-only
+diagnosis не наследуется как realtime или Dark PASS.
+
+Builder selfcheck: все87files local+HTTP/MIME, exact replay5predeclaredseeds;
+actual browser0→receiver01/888 и2→LOST1812, реальные import/download896 и
+cross-board rejection, controls/view invariants. Это не independent verdict.
+Scope/остаточные риски исходных binary scalar/line transitions и ручных
+contours переданы QA. Найденные concrete defects идут Lead сразу, frozen
+пакет QA не меняют. Полных verdict/report пока нет. CTO уведомлён exactIDs/hash.
 
 Полный первый ART Dark получен и немедленно передан Builder:
 `17dc9fcdc261562acb581dd8590096819734c807`,60masks,
