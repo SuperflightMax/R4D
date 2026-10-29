@@ -10,8 +10,7 @@ bc13aa13e2b33b0e58cd0e87b90e684c3c4adbb3576d8d9b0379e3dee1bec532; accepted P1 un
    границы и расстановку. White rings/grid исчезли. First сохранён независимо.
 2. v02, draft+first-art-quality+Jungle с normalized25 anchors/far/near bounds: нижние
    основания и нижний край ближе к принятой геометрии, но дальние основания/границы
-   по-прежнему систематически уходят вверх; совпадения footprints нет. Все receiver
-   capture centres находятся у front rim, а не внутри нужного тёмного рта. Текущее best
+   по-прежнему систематически уходят вверх; совпадения footprints нет. По независимому VQA улучшены все4 receiver capture mouths (в отличие от v01). Текущее best
    только в относительном смысле, geometry/art-method PASS не заявлен.
 3. v03, surface-only finishing исходных экранных envelope, без крупного нового портала:
    крупный portal исчез, но footprint/boundary drift сохранился и появились лишние floor
@@ -29,3 +28,25 @@ pixel-exact координат от генеративного whole-image redra
 исходный отрицательный результат цельной пробы и хранится в components-v01.
 Sphere/shadow packet уже передан для ранней настоящей интеграции. Полная сцена,
 перекрытия, движение и независимая assembled QA ещё не готовы и PASS не объявляются.
+
+## Дополнение после сообщения Lead: новая проверяемая гипотеза v04
+
+После первого wood packet Lead выдал полезный новый diagnostic: только draft как
+единственный visual input, стиль Jungle — исключительно текстом. Предыдущая запись
+об отсутствии новой найденной whole-image гипотезы описывала состояние до этого
+поручения. Выполняем v04 отдельно, не объявляя метод исчерпанным по счёту попыток.
+
+Проверка сохранённого prompt v02 подтвердила locale decimal commas в текстовой таблице
+центров. Это ограничивает интерпретацию проверки числовых anchors в v02. В v04 реальные
+source coordinates из frozen geometry.json сериализованы как JSON numeric x/y, без
+locale formatting и без изменения accepted coordinates/projection. Jungle и прежние
+whole-board результаты НЕ передаются визуальными reference в этой конкретной пробе.
+
+## Результат новой гипотезы v04
+
+Единственный visual input действительно draft; Jungle представлен только текстом.
+Цифры — named JSON x/y с десятичной точкой. В v04 по actual overlay всё ещё расходятся
+far edge,25 footprints и physical-facing boundaries;4 небольших mouth теперь стоят
+ближе к capture centres. Результат сохранён отдельно, PASS не заявлен. Для этой новой
+гипотезы также получен конкретный отрицательный ответ, без изменения registration.
+Отдельный components-v01 уже имеет actual wood master и sphere/shadow packet.
