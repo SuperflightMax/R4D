@@ -1,0 +1,272 @@
+{
+  "candidate": "w01",
+  "consumerCommit": "41349b8d8ae61ceb69e288301af7c080e2b006b5",
+  "artistCommit": "094301dda9a43e7b4970af9d9af20982a38fb221",
+  "oracleCommit": "761e6087c902fe5ea941b90b5ce4d72383a0d755",
+  "url": "http://localhost:55188/",
+  "sourceRuntime": "E:/R4D/perspective/p5-runtime/technical-qa/transfer-water-dark/water/w01",
+  "fileIndex": {
+    "bytes": 4851,
+    "sha256": "b65666c1c942d71763115f05744358ef45463f0fa528a4da0e9f0b8b3d912c4e"
+  },
+  "previewIndex": {
+    "physicalPath": "E:\\R4D\\perspective\\p5-runtime\\builder\\transfer-water-dark\\water\\output\\previews\\w01\\index.json",
+    "bytes": 12125,
+    "sha256": "6b30fdf4f76d665c8d9aeb2c9d9b6d9e0398da3caa2326fa462a8ca37e7d4ce1",
+    "httpStatus": 404,
+    "httpSha256": "e3ebaa16dd9d9b9fc107c42183fb6cf9d22927e1af03dbbdfa0ccc38e4e4ac31",
+    "servedExact": false,
+    "classification": "Lead handoff correction: sidecar is outside public; HTTP delivery not required; 404 is not a product defect"
+  },
+  "publicFiles": 17,
+  "publicFilesDiskAndHttpExact": true,
+  "sourceManifest": {
+    "commit": "094301dda9a43e7b4970af9d9af20982a38fb221",
+    "path": "experiments/p5-regenerated-objects/transfer-water-dark/water/asset-artist/asset-manifest.mini-01.json",
+    "sourceSha256": "7d551ff2eebfeef6f23674c140836f010ed16b6da11b42822af708f92c292981",
+    "sourceBytes": 13990,
+    "stagedSha256": "bf468e44bf8bacbab8d810a1a86a57228515abc2c665397b45e8b2ea80313fe2",
+    "stagedBytes": 10228,
+    "supporting": [
+      {
+        "path": "experiments/p5-regenerated-objects/transfer-water-dark/water/asset-artist/SELECTED.mini-01.json",
+        "materialized": "SELECTED.json",
+        "bytes": 2565,
+        "sha256": "2f6d9879e84fb21761366b8cb1fb72cefc712faee1fefc2ac13caabc97d2341f"
+      },
+      {
+        "path": "experiments/p5-regenerated-objects/transfer-water-dark/water/asset-artist/BINDINGS.mini-01.json",
+        "materialized": "BINDINGS.json",
+        "bytes": 2903,
+        "sha256": "b9f85dbbd3b3ae8ce89e612a6f2eed8c1d2aad6e9fbace13915cbfe1f3def0e1"
+      },
+      {
+        "path": "experiments/p5-regenerated-objects/transfer-water-dark/water/asset-artist/HANDOFF_MINI_01.md",
+        "materialized": "HANDOFF.md",
+        "bytes": 4097,
+        "sha256": "b22e88da98d2676dd163ca7d98f5cdf4c8a1322ca9af9a8912e53d9a8284fa4d"
+      }
+    ],
+    "transformation": "Exact final texture bytes; file URLs normalized; full provenance kept outside web root with per-texture digest"
+  },
+  "actualSnapshots": 40,
+  "stateConfigRngEventsExact": true,
+  "derivedStatePairs": [
+    [
+      "s0-t180-pillar03-behind",
+      "s0-t180-art-field"
+    ],
+    [
+      "s0-t585-front-art",
+      "s0-t585-front-geometry"
+    ],
+    [
+      "s0-t585-front-geometry",
+      "s0-t585-art-off"
+    ],
+    [
+      "s2-t459-side-after",
+      "s2-t459-side-geometry"
+    ],
+    [
+      "s2-t459-side-geometry",
+      "s2-t459-both-off"
+    ],
+    [
+      "s2-t459-both-off",
+      "s2-t459-whole-both-off"
+    ],
+    [
+      "s2-t459-whole-both-off",
+      "s2-t459-whole-restored"
+    ],
+    [
+      "s0-motion-front-pause",
+      "s0-motion-front-pause-stable"
+    ],
+    [
+      "s0-t586-front-at",
+      "s0-replay-t586"
+    ],
+    [
+      "s2-t1275-terminal",
+      "s2-terminal-step-stable"
+    ]
+  ],
+  "artScope": {
+    "textures": 5,
+    "instances": 7,
+    "pillars": [
+      "pillar-03",
+      "pillar-04"
+    ],
+    "missingObjectGroups": 19,
+    "receivers": 0,
+    "sourceClips": 0
+  },
+  "contactCases": [
+    {
+      "seed": 0,
+      "target": "pillar-03:edge-03",
+      "eventTick": 585,
+      "stateTicks": [
+        585,
+        586,
+        587
+      ],
+      "realTimeRange": [
+        575,
+        644
+      ]
+    },
+    {
+      "seed": 2,
+      "target": "pillar-03:edge-04",
+      "eventTick": 457,
+      "stateTicks": [
+        457,
+        458,
+        459
+      ],
+      "realTimeRange": [
+        445,
+        515
+      ]
+    }
+  ],
+  "unverified": [
+    "behind-pillar partial hiding/draw-order transition: no substantial ordinary-trace silhouette overlap found",
+    "pillar-04 contacts: no ordinary seed0-3 contact or sampled silhouette overlap",
+    "mask-specific ArtOff bypass: no sourceClip parts in w01",
+    "19 remaining object groups, arch/lintel/opening art, all receivers/front rims, environment/rails",
+    "full artistic transfer and release"
+  ],
+  "screenshots": [
+    {
+      "path": "screenshots/s0-motion-behind-a.png",
+      "bytes": 118719,
+      "sha256": "a26969c0813a5cf771ca4951bc3c0938fcfdb1e727be6da7d78c0a4f7c6cd83c"
+    },
+    {
+      "path": "screenshots/s0-motion-front-pause.png",
+      "bytes": 118924,
+      "sha256": "0ad2f766137755e4f8bc066103da3a0ee60b33fa43eda0589ea6ffc5d8acc49b"
+    },
+    {
+      "path": "screenshots/s0-motion-front-running.png",
+      "bytes": 118881,
+      "sha256": "00c7caab8b6790969eb10056f487b68972b4b0f2d3721291e4f9002fc48529b9"
+    },
+    {
+      "path": "screenshots/s0-t000-initial.png",
+      "bytes": 110736,
+      "sha256": "41fa1afea99eada97b6fb837aef303d32a761ae5f54436ed5249dd2385c4cd1a"
+    },
+    {
+      "path": "screenshots/s0-t165-behind-before.png",
+      "bytes": 118815,
+      "sha256": "c4367eef28a13d8609c014a0e2fb612f67a02d7871208e47d7e55047548d5b56"
+    },
+    {
+      "path": "screenshots/s0-t180-art-field.png",
+      "bytes": 129353,
+      "sha256": "06ce5da1dfb8aca2aaea690176c2afbee4cf3605b4b74ba672a2548e0c6c5301"
+    },
+    {
+      "path": "screenshots/s0-t180-pillar03-behind.png",
+      "bytes": 97460,
+      "sha256": "9d883eb13eba816e792f9e8068b64b78242a79cc8260728c6e2875b1894a7841"
+    },
+    {
+      "path": "screenshots/s0-t583-front-silhouette.png",
+      "bytes": 118864,
+      "sha256": "5166f23cc9c67cefa19a981731ab9d6f0e715dc1c1b5839a76a3ec4b471fb491"
+    },
+    {
+      "path": "screenshots/s0-t583-registered.png",
+      "bytes": 139936,
+      "sha256": "64740d65edd4c29908ee118eda4afc3eebf306871c51b1e93f52fb5e2b1e40f0"
+    },
+    {
+      "path": "screenshots/s0-t585-art-off.png",
+      "bytes": 56499,
+      "sha256": "ec64080cae359e8dd09985b09fd9926f4529ffb765d40f6e4f3837b43dd0583f"
+    },
+    {
+      "path": "screenshots/s0-t585-front-art.png",
+      "bytes": 118863,
+      "sha256": "33d1d0d672c129223d90ceac1fbed51ac21cf08e54109a5a4e4a8efb2c04845d"
+    },
+    {
+      "path": "screenshots/s0-t585-front-geometry.png",
+      "bytes": 139911,
+      "sha256": "368b0673b368af3f3e67870727b789ce9169b889cb23302bd6aa8705ffd76938"
+    },
+    {
+      "path": "screenshots/s0-t586-front-at.png",
+      "bytes": 118843,
+      "sha256": "dd467d130af6ccb75b8dc8e828b2065efbbf958dff9be696d568b9c8349b834f"
+    },
+    {
+      "path": "screenshots/s0-t587-front-after.png",
+      "bytes": 118837,
+      "sha256": "9a3074b37d3ba764d96a8bd0313b2f68ed293a77baa01b2de9ccd0b9965e834a"
+    },
+    {
+      "path": "screenshots/s2-motion-side-paused.png",
+      "bytes": 118834,
+      "sha256": "936b38ede9710193439695b3726e1810d853b274c1acbf93f1c100f3e3ff6dee"
+    },
+    {
+      "path": "screenshots/s2-motion-side-running.png",
+      "bytes": 118799,
+      "sha256": "01ade3e880a0ac83278c6d66c6acb5ec791ef9aead6b614f56bf98f18db7026f"
+    },
+    {
+      "path": "screenshots/s2-t1275-terminal.png",
+      "bytes": 98305,
+      "sha256": "d11f91d50785eb44da79fa8079d0d0f18c67562eb34983bb52e0f3b6d9406682"
+    },
+    {
+      "path": "screenshots/s2-t457-side-before.png",
+      "bytes": 118831,
+      "sha256": "5e822debf2ba358f26c794964d7c95481b01dc09696bb5db964769056257f867"
+    },
+    {
+      "path": "screenshots/s2-t458-side-at.png",
+      "bytes": 118866,
+      "sha256": "6537bf130c0219f0503ffe7131457558d3a3b9c898cf41545b0b2dc835094adb"
+    },
+    {
+      "path": "screenshots/s2-t459-both-off.png",
+      "bytes": 39135,
+      "sha256": "4c25fc6155bb7a2aafdb0d06edab25eef624455e67d9f483703edce03ecab79a"
+    },
+    {
+      "path": "screenshots/s2-t459-side-after.png",
+      "bytes": 118852,
+      "sha256": "7015eb3e34fe78c5358a1a6e5d85e0c5b195991165e306804e5df11817d31780"
+    },
+    {
+      "path": "screenshots/s2-t459-side-geometry.png",
+      "bytes": 139858,
+      "sha256": "616af9e00c91d432932a673c7fcd4879899293327a546f78c553d5c8ed8275eb"
+    },
+    {
+      "path": "screenshots/w01-scoped-overview.png",
+      "bytes": 206827,
+      "sha256": "6e95ffbd6c6c00496e72efe3d0e9a3dd9bb128e9d6e963f33484942b5c7dc423"
+    }
+  ],
+  "runtimeIndex": {
+    "path": "E:/R4D/perspective/p5-runtime/technical-qa/transfer-water-dark/water/w01/evidence-index.json",
+    "bytes": 11580,
+    "sha256": "44073053d4967fd3c35d15ee258b6d5b1a7c05995fa1a852bc5e439610c87a9d",
+    "indexedFiles": 73,
+    "totalIndexedBytes": 6782483
+  },
+  "serverWrites": 0,
+  "tokenGranted": false,
+  "browserClosed": true,
+  "producerServerUntouched": true
+}
