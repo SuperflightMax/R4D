@@ -1,0 +1,292 @@
+{
+  "schema": "r4d.p6.native-selfcheck.v1",
+  "meta": {
+    "schema": "r4d.p6.consumer-build.v1",
+    "coreCommit": "5a6fa03f1cdb3de88a2d9c7dbe795eb8e2a7f023",
+    "coreTree": "008d16a80a26bb77d562a45218b01da09b0d9ff0",
+    "coreSha256": "8843446996582eaccbd9ff63d3147d74b7eca9a614d8e0df16851d1d89d46f50",
+    "configSha256": "dd5c519cd6d4b7295118e0a3a1063efed424a0ce739450bd5153c6a9941982db",
+    "manifestSha256": "7784dc0a215d0e472cf06a4eee03793592727cf0fa9a1fa0e0c78e5f1d17da18",
+    "p1Commit": "4b47db04c7140ebf88f69b91faa0b790d46f22ec",
+    "pixiVersion": "8.6.6",
+    "esbuildVersion": "0.25.5",
+    "artStatus": "actual sphere/shadow; frozen geometry draft background; obstacle occlusion absent; visual QA pending",
+    "artCandidate": {
+      "id": "p6-integration-02-sprite-v01",
+      "stage": "sphere-shadow-only",
+      "manifestSha256": "1c30abd43cc96c09480c7f4c031eaef01e13c08344a98fbebc31816cc250e75c"
+    },
+    "consumerSha256": "119f1ad5e2989315ec095ba82b4d4d9f9263a982c4b3d2e7ecb64308853301e5",
+    "runtimeDependencyLockSha256": "4a9f65a566d6ee4239f88fd5dad8e8e309d285c2fd1fc9d59a62986839d86806",
+    "consumerSources": {
+      "viewer/app.mjs": "d616917ae55eb3962512e0edeac6726723673b79b67fb34352bfd42d8ad0f1f4",
+      "viewer/controller.mjs": "355591297e3a7ba7a1e775101785338956547261b5430de1d29b43f9357d108b",
+      "viewer/index.html": "918cb0078e42a807356f438ef541a6dd666cc7890169960480bb70e9b5ae8cc6",
+      "viewer/style.css": "d743f1a51e6c03c6b79301cdf5ecfd8ee5e1806f94438178e39a357f6ca28d4f",
+      "scripts/build.mjs": "df94f471e001247be666b946b79d661117b933c46a08c6bd550f437b35910416",
+      "scripts/prepare-sprite-v01.mjs": "8407c9efea17c6873ace6ca5219a30735a5ad57c07bbea87f9ac3694d7d7efa6",
+      "scripts/paths.mjs": "a337627bbef358564f4f7e41896e8b0e74c2be13107ccb24135b56560cfd6f6d",
+      "inputs/projection.mjs": "b59a0c1e6c34b417d253178457ef3580b8bea0aa89c989d1342f9376e19b9431"
+    },
+    "spriteSource": {
+      "commit": "1adf57cfde5a20855c02a846baa045936e4d5a6d",
+      "packet": "experiments/p6-geometry-first-art/asset-artist/SPRITE_PACKET_V01.json",
+      "packetSha256": "d23452ebeaa45725175fbc5d915420df0f2c60f13205eeffd3599622069640cb",
+      "files": [
+        {
+          "file": "SPRITE_PACKET_V01.json",
+          "source": "authorized local P6 bytes; exact CRLF packet hash; Git LF equivalence checked",
+          "bytes": 5521,
+          "sha256": "d23452ebeaa45725175fbc5d915420df0f2c60f13205eeffd3599622069640cb",
+          "gitSha256": "5ef0efec3633755935fa260a13f0e4e218da16e1479b54c4caee7d3b0d32bb6c"
+        },
+        {
+          "file": "raw/ball-v01.png",
+          "source": "exact Git blob",
+          "bytes": 1261875,
+          "sha256": "378cc5abe32dc2086bf87c580c31675d06b91b41bbef81065bc5fe786b88542c",
+          "gitSha256": "378cc5abe32dc2086bf87c580c31675d06b91b41bbef81065bc5fe786b88542c",
+          "canvas": [
+            1254,
+            1254
+          ]
+        },
+        {
+          "file": "raw/ball-shadow-v01.png",
+          "source": "exact Git blob",
+          "bytes": 458704,
+          "sha256": "3a4e58a4d3b9b707e6ec10ffe80e26c561605a4f99d5498c04ae5c684cf5606a",
+          "gitSha256": "3a4e58a4d3b9b707e6ec10ffe80e26c561605a4f99d5498c04ae5c684cf5606a",
+          "canvas": [
+            1774,
+            887
+          ]
+        }
+      ]
+    },
+    "spriteAdapterSha256": "1c30abd43cc96c09480c7f4c031eaef01e13c08344a98fbebc31816cc250e75c"
+  },
+  "qaContractCommit": "49719d407fe1a9408911d49ba819ac6a02022a0a",
+  "seeds": [
+    {
+      "seed": 0,
+      "ticks": 1956,
+      "result": {
+        "kind": "IN_BUCKET",
+        "bucketId": "receiver-03"
+      },
+      "stateHash": "ecdcab689bdc414018344afcf0e9aa8f05a29b957de4aa62bf6e9d616cf0b70c",
+      "eventHash": "832cc4a6071b77721e55836352173cf457ac12a99df55a9a8b8bd059e5b7a58e",
+      "firstHit": {
+        "type": "object_hit",
+        "tick": 94,
+        "timeSec": 0.47000000000000003,
+        "ballId": "board01-ball",
+        "objectKind": "pin",
+        "objectId": "leaf-01",
+        "x": 33254.8464510643,
+        "y": 33263.0448322622
+      },
+      "contactWindow": [
+        {
+          "tick": 94,
+          "rngU32": 0,
+          "ball": {
+            "pos": {
+              "x": 33254.8631695,
+              "y": 33261.2058101
+            },
+            "vel": {
+              "x": 0,
+              "y": 460.6
+            }
+          },
+          "nearMissBucketIds": [],
+          "done": false
+        },
+        {
+          "tick": 95,
+          "rngU32": 1196435762,
+          "ball": {
+            "pos": {
+              "x": 33254.8464511,
+              "y": 33263.0448323
+            },
+            "vel": {
+              "x": -34.3692897,
+              "y": -370.6735287
+            }
+          },
+          "nearMissBucketIds": [],
+          "done": false
+        },
+        {
+          "tick": 96,
+          "rngU32": 1196435762,
+          "ball": {
+            "pos": {
+              "x": 33254.6746047,
+              "y": 33261.2159647
+            },
+            "vel": {
+              "x": -34.3692897,
+              "y": -365.7735287
+            }
+          },
+          "nearMissBucketIds": [],
+          "done": false
+        }
+      ]
+    },
+    {
+      "seed": 1,
+      "ticks": 1735,
+      "result": {
+        "kind": "LOST",
+        "finalX": 33780.1301239,
+        "nearMissBucketIds": []
+      },
+      "stateHash": "6c5f7ffe0a41f817a71cc011c9f23322cc2defa9c4111236d1bf8096b4fa23c8",
+      "eventHash": "eabf2d62a2d1f307a472014417768d35adde6cd3d7c8d0601a6e7dacba40f7ab",
+      "firstHit": {
+        "type": "object_hit",
+        "tick": 94,
+        "timeSec": 0.47000000000000003,
+        "ballId": "board01-ball",
+        "objectKind": "pin",
+        "objectId": "leaf-01",
+        "x": 33254.8464510643,
+        "y": 33263.0448322622
+      },
+      "contactWindow": [
+        {
+          "tick": 94,
+          "rngU32": 1,
+          "ball": {
+            "pos": {
+              "x": 33254.8631695,
+              "y": 33261.2058101
+            },
+            "vel": {
+              "x": 0,
+              "y": 460.6
+            }
+          },
+          "nearMissBucketIds": [],
+          "done": false
+        },
+        {
+          "tick": 95,
+          "rngU32": 1586005467,
+          "ball": {
+            "pos": {
+              "x": 33254.8464511,
+              "y": 33263.0448323
+            },
+            "vel": {
+              "x": -32.0217063,
+              "y": -370.890938
+            }
+          },
+          "nearMissBucketIds": [],
+          "done": false
+        },
+        {
+          "tick": 96,
+          "rngU32": 1586005467,
+          "ball": {
+            "pos": {
+              "x": 33254.6863426,
+              "y": 33261.2148776
+            },
+            "vel": {
+              "x": -32.0217063,
+              "y": -365.990938
+            }
+          },
+          "nearMissBucketIds": [],
+          "done": false
+        }
+      ]
+    },
+    {
+      "seed": 2,
+      "ticks": 1290,
+      "result": {
+        "kind": "LOST",
+        "finalX": 33244.7794791,
+        "nearMissBucketIds": []
+      },
+      "stateHash": "6405472e16a2383e38a0cc350b352c128873b73222bcb279218e992add67920e",
+      "eventHash": "fa69fe7a999cdb28fe737d0eb6b6a76b5002762bbfc3739accff1a2391cdcca7",
+      "firstHit": {
+        "type": "object_hit",
+        "tick": 94,
+        "timeSec": 0.47000000000000003,
+        "ballId": "board01-ball",
+        "objectKind": "pin",
+        "objectId": "leaf-01",
+        "x": 33254.8464510643,
+        "y": 33263.0448322622
+      },
+      "contactWindow": [
+        {
+          "tick": 94,
+          "rngU32": 2,
+          "ball": {
+            "pos": {
+              "x": 33254.8631695,
+              "y": 33261.2058101
+            },
+            "vel": {
+              "x": 0,
+              "y": 460.6
+            }
+          },
+          "nearMissBucketIds": [],
+          "done": false
+        },
+        {
+          "tick": 95,
+          "rngU32": 1975575172,
+          "ball": {
+            "pos": {
+              "x": 33254.8464511,
+              "y": 33263.0448323
+            },
+            "vel": {
+              "x": -29.6727477,
+              "y": -371.0934794
+            }
+          },
+          "nearMissBucketIds": [],
+          "done": false
+        },
+        {
+          "tick": 96,
+          "rngU32": 1975575172,
+          "ball": {
+            "pos": {
+              "x": 33254.6980874,
+              "y": 33261.2138649
+            },
+            "vel": {
+              "x": -29.6727477,
+              "y": -366.1934794
+            }
+          },
+          "nearMissBucketIds": [],
+          "done": false
+        }
+      ]
+    }
+  ],
+  "checks": [
+    "native runUntilDone agrees with consumer session result/ticks",
+    "single ticks and batches produce identical states/events",
+    "saved replay recalculates exact state from fixed config and seed",
+    "seeking states94/95/96 reproduces retained native snapshots",
+    "ordinary predeclared seeds0/1/2 differ; all retained without selection",
+    "all independently calculated state/event canonical digests match QA contract"
+  ]
+}

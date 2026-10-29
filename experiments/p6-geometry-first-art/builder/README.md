@@ -37,3 +37,5 @@ Selfcheck самостоятельно рассчитывает normal seeds0/1/
 Для отдельного сохраняемого native replay: `node experiments/p6-geometry-first-art/builder/scripts/export-run.mjs SEED [TICKS]`. Без TICKS рассчитывается весь обычный запуск до native terminal. Файлы сохраняются в own runtime/verification.
 
 Стыковка frozen слоёв Artist описана в [CONSUMER_CONTRACT.md](CONSUMER_CONTRACT.md). Реальный художественный кандидат ещё требуется подключить и просмотреть на контактах, боковых отскоках и корзинах. Предусмотренный depth contract не объявляется доказанным качеством перекрытий.
+
+Actual ранний sphere/shadow candidate integration-02: [handoff и реальные кадры](integration-02/HANDOFF.md). Его сборка использует `build.mjs --sprites-v01`, explicit lift0, исходный прямоугольный shadow canvas. Это геометрический фон с настоящими sphere/shadow, без готовых obstacle occlusion layers. Полный board art пока не подключён. Его самостоятельная проверка находится в `integration-02/native-selfcheck.json`, traces — `runtime/candidates/integration-02/verification`; прежний baseline report сохранён.

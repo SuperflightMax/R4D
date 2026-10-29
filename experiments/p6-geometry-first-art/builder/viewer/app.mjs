@@ -39,7 +39,7 @@ function fitScene(){
   const minX=Math.min(...poly.map(p=>p[0])),maxX=Math.max(...poly.map(p=>p[0])),minY=Math.min(...poly.map(p=>p[1])),maxY=Math.max(...poly.map(p=>p[1]));
   const s=Math.min(1500/(maxX-minX),1500/(maxY-minY));scene.scale.set(s);scene.position.set((1536-(maxX-minX)*s)/2-minX*s,(1536-(maxY-minY)*s)/2-minY*s);
 }
-function uniformRadius(p,r){const c=map(p),e=map([p[0]+r,p[1]]);return Math.hypot(e[0]-c[0],e[1]-c[1]);}
+function uniformRadius(p,r){const a=map([p[0]-r,p[1]]),b=map([p[0]+r,p[1]]);return Math.hypot(b[0]-a[0],b[1]-a[1])/2;}
 async function makeLayer(layer){
   const tex=await Assets.load('artist/'+layer.texture);let sp;
   if(!layer.rect&&(!layer.anchor||layer.fullFrame)){sp=fullImage(tex);}
@@ -66,6 +66,7 @@ async function rebuildArt(){
   }
   if(artist.ball){
     ballSprite=new Sprite(await Assets.load('artist/'+artist.ball.texture));ballLayer.addChild(ballSprite);
+    ballSprite.alpha=artist.ball.opacity??1;
     if(artist.ball.shadow){
       const tex=await Assets.load('artist/'+artist.ball.shadow.texture),cells=8,uvs=[],indices=[];
       for(let row=0;row<=cells;row++)for(let col=0;col<=cells;col++){
@@ -104,7 +105,8 @@ function draw(){
   if(ballSprite){
     const b=artist.ball,rad=flat?config.board.ball.r:uniformRadius([p.x,p.y],config.board.ball.r);
     ballSprite.anchor.set(b.center[0]/ballSprite.texture.width,b.center[1]/ballSprite.texture.height);
-    ballSprite.scale.set(rad/b.visibleRadius);ballSprite.position.set(center[0],center[1]-(flat?0:rad*(b.liftRadiusFactor??1)));
+    const visualLift=Object.hasOwn(b,'visualLiftPx')?b.visualLiftPx:rad*(b.liftRadiusFactor??1);
+    ballSprite.scale.set(rad/b.visibleRadius);ballSprite.position.set(center[0],center[1]-(flat?0:visualLift));
     if(shadowSprite){
       const sh=b.shadow,offset=sh.offsetNative??[-8,8],positions=shadowSprite.geometry.positions,uvs=shadowSprite.geometry.uvs,tex=shadowSprite.texture;
       for(let i=0;i<positions.length;i+=2){
@@ -114,6 +116,12 @@ function draw(){
       shadowSprite.geometry.getBuffer('aPosition').update();shadowSprite.alpha=sh.opacity??1;
     }
   }
+  $('render-metrics').textContent=JSON.stringify({
+    seed:run.seed,tick:st.tick,view:flat?'flat':'source',artVisible:artistic.visible,geometryVisible:geometry.visible,
+    nativeCenter:[p.x,p.y],projectedNativeCenter:map([p.x,p.y]),
+    ball:ballSprite?{center:[ballSprite.x,ballSprite.y],scale:[ballSprite.scale.x,ballSprite.scale.y],anchor:[ballSprite.anchor.x,ballSprite.anchor.y],textureCanvas:[ballSprite.texture.width,ballSprite.texture.height],visualLiftPx:artist.ball.visualLiftPx,visibleRadius:uniformRadius([p.x,p.y],config.board.ball.r),opacity:ballSprite.alpha}:null,
+    shadow:shadowSprite?{textureCanvas:[shadowSprite.texture.width,shadowSprite.texture.height],meshScale:[shadowSprite.scale.x,shadowSprite.scale.y],opacity:shadowSprite.alpha,firstGroundVertexSource:[shadowSprite.geometry.positions[0],shadowSprite.geometry.positions[1]],radiusNative:artist.ball.shadow.radiusNative,offsetNative:artist.ball.shadow.offsetNative}:null,
+  },null,2);
   const outcome=st.done?JSON.stringify(st.result):run.paused?'пауза':'движение';
   $('status').textContent=`Seed ${run.seed}\nТик ${st.tick} · ${(st.tick*.005).toFixed(3)} с\n${outcome}\nx ${p.x.toFixed(7)}\ny ${p.y.toFixed(7)}\nPRNG ${st.rngU32}`;
   $('snapshot').textContent=JSON.stringify(run.snapshot(),null,2);
@@ -136,10 +144,17 @@ $('contact').onclick=guard(()=>{run.paused=true;const before=run.events.filter(e
 $('save').onclick=()=>{const blob=new Blob([JSON.stringify(run.exportReplay(),null,2)],{type:'application/json'}),url=URL.createObjectURL(blob),a=document.createElement('a');a.href=url;a.download=`p6-seed-${run.seed}-tick-${run.session.state.tick}.json`;a.click();setTimeout(()=>URL.revokeObjectURL(url),1000);};
 $('load').onchange=guard(async()=>{const file=$('load').files[0];if(file)run.importReplay(JSON.parse(await file.text()));frameAccumulator=0;});
 if(meta.artCandidate){artist=await fetch('artist.json').then(r=>r.json());}
-$('candidate').textContent=artist?`${artist.id} · визуальная проверка ожидается`:'Геометрический черновик v01 · арт ещё не подключён';
-$('mode').textContent=artist?'Художественный кандидат':'Техническая сборка: круг — диагностический контур шарика';
+$('candidate').textContent=artist?.stage==='sphere-shadow-only'?`${artist.id} · sphere/shadow · геометрический фон`:artist?`${artist.id} · визуальная проверка ожидается`:'Геометрический черновик v01 · арт ещё не подключён';
+$('mode').textContent=artist?.stage==='sphere-shadow-only'?'Sphere/shadow v01: visualLiftPx=0. Слои перекрытий препятствий ещё не подключены.':artist?'Художественный кандидат':'Техническая сборка: круг — диагностический контур шарика';
 $('pins').textContent=JSON.stringify(meta,null,2);
-await rebuildArt();fitScene();draw();
+await rebuildArt();fitScene();
+const frameParams=new URLSearchParams(location.search);
+if(frameParams.get('frame')==='1'){
+  document.body.classList.add('frame');
+  run.reset(Number(frameParams.get('seed')??0));run.seek(Number(frameParams.get('tick')??0));
+  $('geometry').checked=false;$('art').checked=true;
+}
+draw();
 app.ticker.add(ticker=>{
   if(!run.paused){frameAccumulator+=Math.min(ticker.deltaMS,250);const ticks=Math.floor(frameAccumulator/config.defaults.tickMs);if(ticks){run.advance(ticks);frameAccumulator-=ticks*config.defaults.tickMs;draw();}}
 });

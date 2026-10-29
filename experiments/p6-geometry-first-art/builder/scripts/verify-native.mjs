@@ -15,7 +15,7 @@ const ordered=v=>Array.isArray(v)?v.map(ordered):v&&typeof v==='object'?Object.f
 const canonicalHash=v=>hash(ordered(v));
 const qaCommit='49719d407fe1a9408911d49ba819ac6a02022a0a';
 const qa=JSON.parse(execFileSync('git',['-C',root,'show',`${qaCommit}:experiments/p6-geometry-first-art/qa/state-contract.json`],{encoding:'utf8'}));
-const out=path.join(runtime,'verification');fs.mkdirSync(out,{recursive:true});
+const out=path.join(site,'..','verification');fs.mkdirSync(out,{recursive:true});
 const report={schema:'r4d.p6.native-selfcheck.v1',meta,qaContractCommit:qaCommit,seeds:[],checks:[]};
 for(const seed of [0,1,2]){
   const single=new RunController(core,config,meta,configSourceText),batch=new RunController(core,config,meta,configSourceText);
@@ -40,5 +40,5 @@ for(const seed of [0,1,2]){
 }
 assert.equal(new Set(report.seeds.map(s=>s.stateHash)).size,3);
 report.checks=['native runUntilDone agrees with consumer session result/ticks','single ticks and batches produce identical states/events','saved replay recalculates exact state from fixed config and seed','seeking states94/95/96 reproduces retained native snapshots','ordinary predeclared seeds0/1/2 differ; all retained without selection','all independently calculated state/event canonical digests match QA contract'];
-const reportPath=path.join(root,'verification/native-selfcheck.json');fs.mkdirSync(path.dirname(reportPath),{recursive:true});fs.writeFileSync(reportPath,JSON.stringify(report,null,2)+'\n');
+const reportPath=path.join(root,'integration-02/native-selfcheck.json');fs.mkdirSync(path.dirname(reportPath),{recursive:true});fs.writeFileSync(reportPath,JSON.stringify(report,null,2)+'\n');
 console.log(JSON.stringify(report,null,2));
