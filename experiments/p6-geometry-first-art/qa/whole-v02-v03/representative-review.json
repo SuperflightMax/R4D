@@ -1,0 +1,252 @@
+{
+  "scope": "limited representative review, not a repeated full25 audit or consumer/art PASS",
+  "sourceCommit": "da4cae189c3a103bc84909de8cbc4f4b6daed86a",
+  "registration": "uniform full-frame 1536/1254 only; original config and projection fixed",
+  "measurementMethod": "manual estimates on independently registered raster; 10-20 source-pixel uncertainty, no invented numerical gate",
+  "representativePins": [
+    {
+      "version": "v02",
+      "id": "leaf-01",
+      "expectedFrontSupport": [
+        771.9999999999992,
+        417.0000000000002
+      ],
+      "observedFrontSupportEstimate": [
+        771,
+        335
+      ],
+      "deltaEstimate": [
+        -0.9999999999992042,
+        -82.00000000000023
+      ],
+      "manualUncertaintyPx": 12
+    },
+    {
+      "version": "v02",
+      "id": "frog-04",
+      "expectedFrontSupport": [
+        697.9999999999976,
+        758.0000000000016
+      ],
+      "observedFrontSupportEstimate": [
+        696,
+        716
+      ],
+      "deltaEstimate": [
+        -1.9999999999976126,
+        -42.00000000000159
+      ],
+      "manualUncertaintyPx": 20
+    },
+    {
+      "version": "v02",
+      "id": "wood-05",
+      "expectedFrontSupport": [
+        1199.999999999996,
+        771.9999999999983
+      ],
+      "observedFrontSupportEstimate": [
+        1217,
+        739
+      ],
+      "deltaEstimate": [
+        17.000000000004093,
+        -32.999999999998295
+      ],
+      "manualUncertaintyPx": 20
+    },
+    {
+      "version": "v02",
+      "id": "wood-06",
+      "expectedFrontSupport": [
+        424.00000000000085,
+        972.0000000000039
+      ],
+      "observedFrontSupportEstimate": [
+        425,
+        965
+      ],
+      "deltaEstimate": [
+        0.9999999999991473,
+        -7.000000000003865
+      ],
+      "manualUncertaintyPx": 20
+    },
+    {
+      "version": "v02",
+      "id": "flower-07",
+      "expectedFrontSupport": [
+        496.00000000000233,
+        1082.9999999999998
+      ],
+      "observedFrontSupportEstimate": [
+        507,
+        1089
+      ],
+      "deltaEstimate": [
+        10.99999999999767,
+        6.000000000000227
+      ],
+      "manualUncertaintyPx": 10
+    },
+    {
+      "version": "v02",
+      "id": "wood-08",
+      "expectedFrontSupport": [
+        984.9999999999998,
+        1072.9999999999973
+      ],
+      "observedFrontSupportEstimate": [
+        1003,
+        1084
+      ],
+      "deltaEstimate": [
+        18.000000000000227,
+        11.000000000002728
+      ],
+      "manualUncertaintyPx": 20
+    },
+    {
+      "version": "v03",
+      "id": "leaf-01",
+      "expectedFrontSupport": [
+        771.9999999999992,
+        417.0000000000002
+      ],
+      "observedFrontSupportEstimate": [
+        773,
+        315
+      ],
+      "deltaEstimate": [
+        1.0000000000007958,
+        -102.00000000000023
+      ],
+      "manualUncertaintyPx": 12
+    },
+    {
+      "version": "v03",
+      "id": "frog-04",
+      "expectedFrontSupport": [
+        697.9999999999976,
+        758.0000000000016
+      ],
+      "observedFrontSupportEstimate": [
+        687,
+        686
+      ],
+      "deltaEstimate": [
+        -10.999999999997613,
+        -72.00000000000159
+      ],
+      "manualUncertaintyPx": 20
+    },
+    {
+      "version": "v03",
+      "id": "wood-05",
+      "expectedFrontSupport": [
+        1199.999999999996,
+        771.9999999999983
+      ],
+      "observedFrontSupportEstimate": [
+        1209,
+        702
+      ],
+      "deltaEstimate": [
+        9.000000000004093,
+        -69.9999999999983
+      ],
+      "manualUncertaintyPx": 20
+    },
+    {
+      "version": "v03",
+      "id": "wood-06",
+      "expectedFrontSupport": [
+        424.00000000000085,
+        972.0000000000039
+      ],
+      "observedFrontSupportEstimate": [
+        421,
+        914
+      ],
+      "deltaEstimate": [
+        -3.0000000000008527,
+        -58.000000000003865
+      ],
+      "manualUncertaintyPx": 20
+    },
+    {
+      "version": "v03",
+      "id": "flower-07",
+      "expectedFrontSupport": [
+        496.00000000000233,
+        1082.9999999999998
+      ],
+      "observedFrontSupportEstimate": [
+        493,
+        1031
+      ],
+      "deltaEstimate": [
+        -3.0000000000023306,
+        -51.99999999999977
+      ],
+      "manualUncertaintyPx": 10
+    },
+    {
+      "version": "v03",
+      "id": "wood-08",
+      "expectedFrontSupport": [
+        984.9999999999998,
+        1072.9999999999973
+      ],
+      "observedFrontSupportEstimate": [
+        993,
+        1031
+      ],
+      "deltaEstimate": [
+        8.000000000000227,
+        -41.99999999999727
+      ],
+      "manualUncertaintyPx": 20
+    }
+  ],
+  "floor": [
+    {
+      "version": "v02",
+      "farEdgeYEstimate": [
+        220,
+        240
+      ],
+      "nearEdgeYEstimate": [
+        1100,
+        1120
+      ]
+    },
+    {
+      "version": "v03",
+      "farEdgeYEstimate": [
+        200,
+        220
+      ],
+      "nearEdgeYEstimate": [
+        1040,
+        1060
+      ]
+    }
+  ],
+  "mouths": {
+    "v02": {
+      "receiver-01": "opening shifted right about50 source px; capture left side overlaps rim/rope",
+      "receiver-02": "center lies inside dark opening; front capture edge close to near rim, exact containment unresolved",
+      "receiver-03": "center lies inside dark opening; front capture edge close to near rim, exact containment unresolved",
+      "receiver-04": "capture ellipse appears inside opening in static overlay; dynamic entry not tested"
+    },
+    "v03": {
+      "receiver-01": "front capture arc lies on near rim",
+      "receiver-02": "center/front capture lies on rim/emblem instead of dark opening",
+      "receiver-03": "center/front capture lies on rim/emblem instead of dark opening",
+      "receiver-04": "front capture arc lies on near rim"
+    }
+  },
+  "additionalV03Observation": "two circular floor inlays appeared, near source(475,630) and (1270,950); decorative graphics do not add native colliders and this alone is not a new formal failure gate",
+  "conclusion": "v02 improves the near field relative to v01/v03, but far and middle registration and receiver-01 remain materially displaced. v03 retains broad displacement. No whole-image result is independently confirmed suitable for the fixed geometry."
+}
