@@ -4,7 +4,27 @@
 [Исходный способ и точный Dark P1](BASELINE.md) сохранены до переноса.
 Dark принимает board02 trial01 и собственный source; Water inputs не заменяют его.
 
-## DARK_TECHNICAL_PASS — визуальный вердикт ещё ожидается; публикации нет
+## DARK_FULL03: TQA PASS / VQA FAIL D-POP-01 — bounded data-коррекция; публикации нет
+
+Полный independent VQA report `2d40b3f31341bbf57fd2df76aa6637a3f1a303e8`
+прочитан и интегрирован Lead: [REPORT.md](../visual-qa/full-method-03/REPORT.md).
+Lead лично посмотрел actual D-POP-01 comparison PNG и полный100%2012 JPEG.
+Первые3обычныхUIruns:3858699109→LOST2083,3238915631→receiver03/1435,
+1771307888→receiver01/1692; все сохранены.613rawJPEG/58selectedJPEG/4sheets.
+Подтверждён реальный скачок перекрытия у receiver04front/right-rim seed3858699109
+2011→2012: nativey34699.484191→34704.4149515 пересекаетdepth34702.18106608216
+и34700.947287431554, целые meshes снимаются, шар резко раскрывается поверхкамня.
+Тень отдельно, одновременный switch не заявлен. Это localP3order/depthfinding,
+не повод менятьacceptedP1/native/траекторию. Полного artisticPASS нет.
+
+Artist после fresh completed/idle/errornull адресно возобновлён6.1-sol/xhigh:
+одна bounded ordinarydata correction receiver front/rims, если она обоснована
+общей acceptedgeometry/source anchor логикой, отдельный named variant. Все62PNG,
+rect/alpha/ball/shadow/renderercode/P1/native/JPG сохранить. Нетseed/tickподгона.
+Если без существенного нового метода data-only решение не обосновано — вернуть
+численный/source разбор и честноеограничение; сериювариантов/renderer не начинать.
+Исходный frozen03/всеreports/rawbytes сохранены;6869 пока на03 для возможного A/B.
+Новый candidate ещё не выдан; TQA/VQA03 не объявляются проверкой futurevariant.
 
 Dark TQA report `b327ae601a4962dd5826abfbfdeefaf77c090a55` полностью прочитан
 Lead и интегрирован: [dark-full-method-03.md](../technical-qa/reports/dark-full-method-03.md).
@@ -16,8 +36,9 @@ CDP network неэкзостивен:12ResourceTiming200 безPNG/JPG;88HTTPbod
 exact. В payload только два declaredKsource paths в P1inputs, privateTS/maps/
 неожиданныхsourcepaths/keys не найдено. Нет общей art/mapping приёмки.
 TQA Dark tab закрыта, preview не тронут; TQA уже на отдельном Water.
-VQA Dark `01a18736-3abe-7692-b507-77fe05a87176` ещё завершает собственный
-report/evidence/commit, после него продолжит Water по отдельному handoff.
+VQA Dark `01a18736-3abe-7692-b507-77fe05a87176` завершила отчёт/commit/handoff,
+своюDarktab закрыла и перешла к уже выданному Water full QA. Новый Dark retest
+не дублируется параллельно; отдельный точный handoff будет после результатаArtist.
 
 CTO10:55:12UTC явно закрыл P5 token/window, serverwriters нет; следующее
 окно зарезервировано P3. После обоих результатов/QA — один полный local

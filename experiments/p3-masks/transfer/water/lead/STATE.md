@@ -21,9 +21,10 @@ Freeze10:55:54.757UTC, finding W-EARLY-POP-01 открыт до independent rete
 Точный полный handoff последовательно отправлен обеим QA после fresh latest:
 TQA Dark уже completed/idle, поэтому начат новый Water turn
 `01a1875a-1de3-7c30-8f8f-bf7deb4cc50c`, active/errornull.
-VQA Dark ещё active `01a18736-3abe-7692-b507-77fe05a87176`; Water поставлен
-последующим участком после отдельного Dark report/commit/handoff, без нового
-ACK и без параллельного дубля. Оба send isError=false, runtime6.1-sol/xhigh.
+VQA Dark `01a18736-3abe-7692-b507-77fe05a87176` завершила отдельный report
+`2d40b3f31341bbf57fd2df76aa6637a3f1a303e8` (Dark D-POP-01, неWaterfinding),
+закрылаDarktab и перешла к Water. Оба handoff send isError=false,
+runtime6.1-sol/xhigh; без нового ACK и без параллельного дубля.
 W-EARLY-POP retest — первый раздел полного Water VQA, затем остальная matrix
 на тех же exactbytes. Никакого независимого closure/PASS пока нет.
 
@@ -61,7 +62,7 @@ extra owned idle Node<0.1GiB RAM. Старые previews остаются на с
 CTO предпочитает ОДИН полный local intent/одно окно для двух отдельных sibling
 prefixes/артефактов/вердиктов. Предыдущие per-board release templates — история
 плана, не разрешение двух самостоятельных writes. Сейчас server_write=false;
-новый аудит/SSH/пакет до готовности незамороженного Water не нужен и не запущен.
+новый аудит/SSH/пакет до готовности обоихboundedresults/QA не нужен и не запущен.
 
 Ожидаемый opaque pointer, НЕ fresh guard:
 root `/srv/superflight-review/releases/p5-jungle-regenerated-candidate-03`,
