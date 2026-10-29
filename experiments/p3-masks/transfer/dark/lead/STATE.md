@@ -107,6 +107,11 @@ partial overlap. Это selfcheck/наблюдение Lead, не независ
 
 ## Следующий gate
 
+LATEST RO RESULT85c6ba48: одинразрешённыйнабор15:03:07Z [200,403,404],
+bodyнеидентифицировано, guards/codeнеизменны. ROturncompleted/idle, Root
+fullyread/merged/CTOnotified. Неутверждаемauthcorrect/securitydrift, неразрешаем
+thirdwriteattempt. ОбаtokensCLOSED/windowRESERVEDP3, ждёмрешенияCTO.
+
 LATEST: CTO CLOSEDv2token14:58:05Z; обоиеhistoricalauth неиспользовать.
 Один ROdiagturn01a1882c-beea-7050-8879-cbc7f80a7125 active уexistingRelease,
 последнийCTOscope разрешилoneexact3GETsamecontext, безlogs/config/auth/body.

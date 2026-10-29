@@ -65,6 +65,19 @@ Dark [текущий STATE](../../dark/lead/STATE.md): targeted TQA/VQA идут
 
 ## Публикационный gate — STOP V2 PREFLIGHT PROTECTION MISMATCH; server writes=false
 
+LATEST RO RESULT: diagnostic turn01a1882c-beea-7050-8879-cbc7f80a7125 completed/
+idle/errornull, commit85c6ba48a31712949c7f2df885f82f7edc7f6fd7 fullyread/merged.
+Отдельно разрешённый ОДИН набор15:03:07Z: normal/review/200, Origin403,
+dotprobe404. Location=null; DENY/no-store/noindex-nofollow-noarchive/nosniff/
+same-origin/text-html. Bodies отброшены, redirects/auth/cookies не применялись.
+Actual14:52responses остаютсяunknown. 200body неидентифицировано, ниcatalog,
+ниlogin, ниauthcorrect/securitydrift невыведены; неоснованиеослаблятьguard.
+Own historical28oct303/403/404реальный, ноUA/dotpathдругие, freshcombinedHTTP
+baseline доv2 неимелось. Full HTTP_DIAGNOSIS_2026-10-29.md/receipt/PROVENANCE
+прочитаныLead, переданыCTO. Никакихlogs/proc/privateconfigread/newGETafterset.
+Обаtokens CLOSED; no newsource/thirdwriteattempt. Предложен CTО только
+ещёнеразрешённый opaquebodySHA/len vsoldcatalog; никакихdependentactions.
+
 LATEST: CTO закрыл V2 token 2026-10-29T14:58:05Z. Оба auth-файла исторические,
 все write-фазы запрещены, window RESERVED P3. Exact STOP result/guard1b3
 полностью прочитан и merged Lead. Один RO diagnosis turn
@@ -73,7 +86,7 @@ LATEST: CTO закрыл V2 token 2026-10-29T14:58:05Z. Оба auth-файла �
 logs/proc/configs, сперва own existing exact3ответа, иначе ОДИН набор3GET
 samevps1-direct/HTTPSsuperflight.space/UA R4D-P3-combined-delivery/1:
 /review/normal, /review/Originhttps://example.invalid, /review/.p3-combined-probe.
-UTC/status/теже7headers; noauth/cookies/newheaders/redirect/body保存; внешний
+UTC/status/теже7headers; noauth/cookies/newheaders/redirect/body-сохранения; внешний
 отказSTOP безвторогоподхода. Это отдельное новое RO разрешение CTO,
 неclosedtoken/preflightreplay. ТолькоsteeringтогожеROtask, ниv3code, ниwrite.
 
