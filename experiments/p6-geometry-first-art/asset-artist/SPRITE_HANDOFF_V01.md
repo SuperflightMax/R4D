@@ -22,3 +22,14 @@ not scene PASS or finished obstacle occlusions.
 
 Native C source files remain active and are not deleted. Copy manifests preserve exact
 SHA256/bytes/timestamps. Whole-board trials and failures are separate evidence.
+
+## Уточнение visualLiftPx=0 перед actual integration-02
+
+0 выбран явно как первая проверяемая baseline-регистрация: центр видимой сферы
+совпадает с P(native ball centre), а ground anchor тени — тот же native centre,
+со своим отдельным offset(-6,+10). Это НЕ утверждение о восстановленной3D-высоте
+центра сферы и не требование навсегда оставить lift0. P1 не задаёт вертикальную
+камеру. Отличие Consumer default liftRadiusFactor=1 теперь известно и не скрывается.
+Сравнивать опору/контакт нужно по actual сохранённым frames; до их просмотра metadata
+не переключается. Если после просмотра будет нужен lift, появится новая версия packet
+с явным визуальным смещением, при неизменных native состояниях/физике/радиусе/проекции.

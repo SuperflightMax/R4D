@@ -1,0 +1,96 @@
+{
+  "schema": "r4d.p6.component-master.v1",
+  "status": "actual first component packet; assembly and footprint QA pending",
+  "family": "wood",
+  "instances": [
+    "wood-01",
+    "wood-02",
+    "wood-03",
+    "wood-04",
+    "wood-05",
+    "wood-06",
+    "wood-07",
+    "wood-08"
+  ],
+  "acceptedP1": "4b47db04c7140ebf88f69b91faa0b790d46f22ec",
+  "texture": "raw/wood-master-v01.png",
+  "sha256": "802f339d693d4dfc175a1e0f9013c78a6e9062bd6532a3db228bd98cd307e161",
+  "toolOutputId": "exec-f8e0f049-95f2-4fa4-bf9e-024239038eee",
+  "prompt": "prompts/wood-master-v01.txt",
+  "promptSha256": "64397f68ca02231cb77b237ae9ab5855715afd35f2a551289fe26ee57f7cb042",
+  "canvas": [
+    1254,
+    1254
+  ],
+  "alphaDiagnostics": {
+    "canvas": [
+      1254,
+      1254
+    ],
+    "alphaMax": 255,
+    "alphaWeightedCenter": [
+      625.9212553800259,
+      626.262645852501
+    ],
+    "boundaryNonzero": 1,
+    "bounds": [
+      {
+        "threshold": 1,
+        "rectInclusive": [
+          0,
+          30,
+          1229,
+          1229
+        ]
+      },
+      {
+        "threshold": 16,
+        "rectInclusive": [
+          357,
+          82,
+          895,
+          1171
+        ]
+      },
+      {
+        "threshold": 128,
+        "rectInclusive": [
+          358,
+          83,
+          894,
+          1170
+        ]
+      }
+    ],
+    "centreRgba": [
+      163,
+      81,
+      18,
+      253
+    ]
+  },
+  "groundAnchorPx": [
+    625,
+    1032
+  ],
+  "baseEllipse": {
+    "centerPx": [
+      625,
+      1032
+    ],
+    "radiusXPx": 255,
+    "radiusYPx": 138,
+    "derivation": "Approximate fit to actual alpha>=128 lower wood contact rim, separate from upper ropes/trim silhouette. Centre-column bottom1170, near-edge x375 y1058 and x875 y1062; fit requires assembled overlay confirmation."
+  },
+  "visibleTopY": 83,
+  "visibleHeightAboveGroundPx": 949,
+  "normalizationRule": "Place groundAnchor at P(actual config pin centre); use projected footprint horizontal radius /255 as initial uniform texture scale. Do not place the bottommost silhouette point at the pin centre. Compare lower rim with exact projected circle at each depth; no collider movement.",
+  "bakedGroundShadow": false,
+  "shadow": "separate own P6 ground shadow; no shadow included in RGBA master",
+  "limits": [
+    "Base ellipse is an artist fit to actual pixels, not a regenerated collider or proved exact match.",
+    "Relative visual height is higher than the illustrative draft; evaluate one real placed instance before multiplying all8.",
+    "Upper ropes and trim may overhang the physical base; full alpha width does not define native radius.",
+    "No flat-floor image, receiver parts or finished scene occlusion mask are included in this first packet."
+  ]
+}
