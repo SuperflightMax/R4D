@@ -6,6 +6,15 @@ Dark принимает board02 trial01 и собственный source; Water 
 
 ## PRODUCTION_STARTED — candidate/QA/publish ещё нет
 
+TQA input preparation completed/idle, commit
+`fe09f8e37cff8352dbe629e28bd3e4e2c0e019aa` прочитан и интегрирован:
+[Dark input state](../technical-qa/STATE.md). Predeclared native seeds:
+0→receiver01/t888,1→receiver01/t884,2→LOST/t1812. Переданы Artist/Builder/VQA
+обычные ориентиры seed0/pillar02:edge01/t366 иpillar04:edge04/t840,
+с соседними365–367/839–841; это ещё не факты painted silhouette overlap.
+VQA две отдельные матрицы подготовил; правит только язык новых документов
+на русский с сохранением входов/cases/PENDING. Candidate verdict ещё нет.
+
 Builder native preparation: replay точный, cross-board checkpoint отклоняется;
 заранее выбранные native seeds1/2 совпали с точными исходами/тиками P1.
 Первый contact Dark bowl-base-01/89. Consumer contract опубликован на

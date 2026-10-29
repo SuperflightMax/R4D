@@ -7,6 +7,26 @@ Worktree `E:\R4D\perspective\p3-worktrees\lead`, прежняя branch
 
 ## PRODUCTION_STARTED — candidate/QA/publish ещё нет
 
+Первый применимый ART checkpoint получен/адресно передан Builder:
+`4eb4001d8036048f716d9e7ab45bb560f3840cf6`, prefix
+`experiments/p3-masks/transfer/water/asset-artist/`.
+Lead прочитал contract/assets.json и независимо пересчитал exact Git bytes:
+assets.json2193bytes/SHA256
+`6bda5c72cacf24a32555b720f42b72c335c180fca88525d809614d8b5bec3d7d`.
+7masks: frog01, по3части arch01/arch07, separate reused ball/shadow.
+Это ранний стык, не полный candidate и не QA. Builder должен дать реальный
+Pixi/native seed1 gate checkpoint с manifest/evidence/ownedpreview; Artist
+продолжает fullWater/Dark. Jungle ни одной новой правки не получил.
+
+TQA input preparation completed/idle, commit
+`fe09f8e37cff8352dbe629e28bd3e4e2c0e019aa` прочитан (оба STATE +gate witness)
+и интегрирован. [Water input state](../technical-qa/STATE.md),
+[gate witness](../technical-qa/GATE_NATIVE_WITNESS.json).
+Native predeclared0→LOST1326,1→LOST1196,2→receiver02/1275, без отбора.
+Candidate verdict отсутствует. VQA отдельные матрицы подготовил;
+попросили привести только язык новых документов к проектному русскому,
+сохраняя hashes/cases/PENDING. Итоговой QA/preview этой роли ещё нет.
+
 Конкретный input checkpoint TQA: r16 не блокирует принятые Water gates.
 Min feet distances восьми arches52.011–57.010 при диаметре32; локальные
 corridor witnesses имеют положительный зазор ко всем colliders9.171–11.224.
