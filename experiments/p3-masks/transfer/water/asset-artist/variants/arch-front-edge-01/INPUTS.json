@@ -1,0 +1,59 @@
+{
+  "board": "water",
+  "source": {
+    "path": "K:\\Agents\\R4D\\Assets\\perspective\\04-water-temple.jpg",
+    "sha256": "8da65c76c110b6ba7cefe113564fe12feed4428e84e84835f033e7da31d3b80d",
+    "size": [
+      1536,
+      1536
+    ]
+  },
+  "p1": {
+    "commit": "4b47db04c7140ebf88f69b91faa0b790d46f22ec",
+    "files": {
+      "config": {
+        "path": "experiments/p1-collider-mapping/clean-repeat-01/simulation/boards/04/trial-02/config.json",
+        "sha256": "9048b28af2923c93d8be772367beeb828f1e4513a6298af1c803379f77d3e50c"
+      },
+      "manifest": {
+        "path": "experiments/p1-collider-mapping/clean-repeat-01/simulation/boards/04/trial-02/manifest.json",
+        "sha256": "48c4fef26fd8c94f06c278851222ef285edda54ac14e53da8908f4ee663dc420"
+      },
+      "projection": {
+        "path": "experiments/p1-collider-mapping/clean-repeat-01/research/board04-projection.candidate-02.json",
+        "sha256": "ee0c6e429d4e0b1da6c342174d22369cd293c3fc4b18ccd7d09a4690f71da54f"
+      }
+    }
+  },
+  "baseline": {
+    "art": "f899a308aed156a11e2a1013292ed68c6669959d",
+    "code": "f1aca21e7b9ba19001e7e8762fcaf2511bf9bf74",
+    "recipe": "experiments/p3-masks/asset-artist/CONSUMER_CONTRACT.md"
+  },
+  "ball": {
+    "path": "assets/ball.png",
+    "anchorPx": [
+      626.5,
+      624.5
+    ],
+    "radiusPx": 487.5
+  },
+  "shadow": {
+    "path": "assets/shadow.png",
+    "anchorPx": [
+      625.5,
+      627.5
+    ],
+    "radiusPx": 554.5,
+    "offsetRadius": [
+      -0.45,
+      0.5
+    ],
+    "scaleRadius": [
+      1.15,
+      2.6
+    ],
+    "alpha": 0.72
+  },
+  "runtime": "E:\\R4D\\perspective\\p3-runtime\\asset-artist\\transfer-water-dark\\water"
+}
