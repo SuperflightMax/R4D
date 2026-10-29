@@ -5,7 +5,37 @@ Worktree `E:\R4D\perspective\p3-worktrees\lead`, прежняя branch
 `codex/r4d-p3-masks-lead-01`, исходный clean HEAD
 `b6226c4ed81493273d421001a2202c3a2bc4639e`.
 
-## PRODUCTION_STARTED — candidate/QA/publish ещё нет
+## FULL_ART_READY / EARLY_WATER_QA — итогового freeze/QA/publish ещё нет
+
+Оба первых полных ART комплекта получены и переданы Builder, commit
+`17dc9fcdc261562acb581dd8590096819734c807` (pushed/clean).
+Lead прочитал оба Artist STATE/CONSUMER_CONTRACT, независимо сверил Git
+assets.json hashes и scope145changes только transfer/{water,dark}/asset-artist.
+Water71masks/assets.json20574bytes/SHA256
+`e93e5cfb6fbfa3c4ca9e5c2eadbc46b628713e952fe033fa216e00598e2a849d`.
+Источник/71mask initial данные интегрированы в Lead; поздние поправки отдельно.
+Artist exact E handoff: `asset-artist\transfer-water-dark\water\handoff-17dc9fcdc261`.
+Water исходные depth правила пока сохранены; исправлен отдельный contour,
+который захватывал голубую воду, rejected overlay сохранён Artist в runtime.
+
+Ранняя VQA independently сверила manifest/local+HTTP и все30files early02,
+воспроизвела резкость1014→1015 на100%/200%. Непрерывный ball nativeY
+34752.6197802→34756.6559934 пересекает общий threshold34755.12349268705;
+три arch07 восстановительных meshes отключаются вместе. Builder оценивает
+alpha coverage35% на1014 и residual projected overlap23% на1015.
+Причина обоснованно указывает на binary P3 ordering; bounded VQA report
+с доказательствами ещё сохраняется. Это не изменение common mapping.
+VQA явно завершил чтение6868/закрыл свою вкладку; Lead адресно снял только
+local readhold у Builder (не server window/token). Immutable early02 сохранён.
+Artist получил конкретный проход ordinary depth-data correction по передним
+принятым рёбрам feet, геометрическим правилом без подбора под seed/tick.
+Новая named версия/таблицаanchors/commit/hash обязательны; source/config/
+projection/native/PNG сохраняются. Существенная новая сортировка не выдана.
+Builder сравнит тот же seed1/1006–1018 и продолжает fullDark независимо.
+
+Свежий Lead host10:09:15UTC: RAMfree16.709/31.907GiB,CPU0%,
+C/D/Efree16.235/16.279/11.907GiB. Дополнительных Root processes нет;
+fresh checks и E4/2GiB пороги сохраняются. Budget/качественный verdict не закрыты.
 
 Первый реальный видимый Water checkpoint: `early-art-02`, source
 `f3b7ce8d94b0a9173c48d7ca6defb3837a10ed03`, ART

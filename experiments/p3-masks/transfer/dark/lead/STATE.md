@@ -4,7 +4,20 @@
 [Исходный способ и точный Dark P1](BASELINE.md) сохранены до переноса.
 Dark принимает board02 trial01 и собственный source; Water inputs не заменяют его.
 
-## PRODUCTION_STARTED — candidate/QA/publish ещё нет
+## FULL_ART_READY — итогового freeze/QA/publish ещё нет
+
+Полный первый ART Dark получен и немедленно передан Builder:
+`17dc9fcdc261562acb581dd8590096819734c807`,60masks,
+assets.json18588bytes/SHA256
+`ef5eb34be622f5ce6356d6fa51d7902c334a1f1f3c95acce225d7340928bbc29`.
+Lead независимо сверил exact Git hash, прочитал STATE/CONSUMER_CONTRACT
+и интегрировал этот сохранённый первый вариант в свою ветку.
+Artist handoff `E:\R4D\perspective\p3-runtime\asset-artist\transfer-water-dark\dark\handoff-17dc9fcdc261`.
+12pins,24front/side loop faces,6walls,3ramps,12receiver rims,3dividers.
+Shadow alpha0.93, source/body PNG/r16/projection/PRNG без изменений;
+это reuse собственного frozen goldball/shadow, не новая генерация.
+Builder делает самостоятельный fullDark build/actual selfchecks; Water ранняя
+VQA не удерживает Dark. Конкретных Dark visual findings/PASS ещё нет.
 
 VQA matrices на русском `0ed5d4bae632e4fa3fd370ffeed193ab1d48c214`
 интегрированы: [PREPARATION.md](../visual-qa/PREPARATION.md).
