@@ -1,3 +1,16 @@
+# Current release state — v2 local correction
+
+**WAIT_V2_REVIEW_EXACT_CTO_TOKEN; server_write=false; token=null.**
+V1 token закрыт CTO 2026-10-29T14:36:01Z; больше не применять.
+V2 подготовлен и offline regression PASS; remote/launcher phases не исполнялись.
+Canonical successor: [COMBINED_INTENT_V2.md](COMBINED_INTENT_V2.md).
+Старые receipts/code/packet сохранены. Нужен новый exact CTO token и отдельная
+execution-команда; сейчас idle. Window RESERVED P3, закрывает CTO.
+
+---
+
+Исторический v1 stop checkpoint:
+
 # P3 Water — Release state
 
 29 октября 2026. **STOP_PREFLIGHT_SCRIPT_ERROR; server writes performed=false.**
