@@ -1,6 +1,29 @@
 # Water P3 — Builder
 
-## Текущий checkpoint — FRONT_EDGE_04_BOUNDED_VQA_RETEST_READY
+## Текущий checkpoint — WATER_FRONT_EDGE_04_FROZEN_FOR_BOTH_INDEPENDENT_QA
+
+Lead прямо изменил порядок: оформить full frozen candidate сейчас; VQA начнёт
+полный Water-проход со сравнительного retest старых1014–1016 и новых1020–1022,
+затем остальная матрица на ТЕХ ЖЕ bytes. Dark QA не прерывается.
+Имя water-front-edge-04, immutable bundle front-edge-04 ниже. Никакой новой
+сборки/перепаковки после freeze не было. При seal все100 файлов ещё раз
+побайтно сверены с существующим manifest; hash/size/counts ниже неизменны.
+Freeze record вне payload:
+E:\R4D\perspective\p3-runtime\builder\transfer-water-dark\water\candidates\water-front-edge-04.freeze.json.
+
+W-EARLY-POP-01 ОТКРЫТ до независимого comparative retest, а не закрыт selfcheck.
+Формальная исходная VQA:26295340cafa78ea8bffe09e8005badda220d731,
+experiments/p3-masks/transfer/water/visual-qa/early-art-02/REPORT.md.
+Нового установленного существенного selfcheck-дефекта для front-edge-04 нет.
+Это кандидат для TQA/VQA, не full artistic/method PASS. Все first-method/early
+результаты и плохие runs сохранены. Source/ART/native/P1/provenance ниже.
+
+Оба preview держать на named frozen bytes до явного завершения QA чтения:
+Water6868 PID29572/session61378; Dark6869 PID37660/session87426.
+Собственные браузерные вкладки после handoff закрываются; серверы остаются.
+Новых продуктовых задач и server/release действий не начинать. server_write=false.
+
+## Проверенная сборка и selfcheck — FRONT_EDGE_04
 
 Source5196c0bd4981992c4e3d9678438aed1aa1c0d84c,
 ART5c9ba8c640b344094e0ada7c4ed6c9ec076550e5, exact selected prefix
@@ -56,9 +79,9 @@ Owner command/root/listener logs — evidence/browser-front04/preview-ownership.
 10:48:42Z PID29572/127.0.0.1:6868. Совокупный собственный transfer runtime тогда
 Water31.18MiB/Dark12.04MiB. Renderer/native/source/inputs всё ещё прежние.
 
-Следующее: короткий независимый VQA retest того же диапазона, включая отдельную
-тень и новый threshold; затем полный Water freeze и full TQA/VQA. Selfcheck
-не подменяет независимый вердикт. Preview/immutable bytes удерживать для QA.
+Следующее по актуальному решению Lead: обе independent full QA, с comparative
+retest первым шагом VQA Water; отдельная тень/новый threshold остаются в scope.
+Selfcheck не подменяет независимый вердикт. Frozen bytes/preview удерживать.
 Первый полный original17dc и early02 сохранены. Новый sort/physics отсутствует.
 Snapshot перед сборкой10:33:44Z: RAMfree16.087GiB, CPU12%,
 C16.209/D16.277/E11.871GiB. server_write=false.
