@@ -6,6 +6,20 @@ Dark принимает board02 trial01 и собственный source; Water 
 
 ## PRODUCTION_STARTED — candidate/QA/publish ещё нет
 
+Builder native preparation: replay точный, cross-board checkpoint отклоняется;
+заранее выбранные native seeds1/2 совпали с точными исходами/тиками P1.
+Первый contact Dark bowl-base-01/89. Consumer contract опубликован на
+`f3b7ce8d94b0a9173c48d7ca6defb3837a10ed03`, Lead прочитал и передал Artist.
+Реального художественного candidate пока нет. Native package/src tree pins
+TQA согласовал отдельно, исходный ядро commit не менялся.
+
+Release completed/idle/server_write=false. Локальные планы обеих досок
+`1cf782e83c5e0aec0f80feeb9bc9693028a7fb5b` полностью прочитаны/интегрированы:
+[PLAN.md](../release-engineer/PLAN.md),
+[RELEASE_PLAN.json](../release-engineer/RELEASE_PLAN.json).
+Никаких SSH/live capture/upload/staging/serverdocs; future live hashes null.
+Новый exact token только после frozen bytes и независимых QA, P5 first.
+
 Пять реальных адресных handoff и turn IDs закреплены в
 [Water Lead state](../../water/lead/STATE.md); это общая команда, не вторая
 параллельная выдача тех же ролей. Все actual turns inProgress/errornull на

@@ -7,6 +7,29 @@ Worktree `E:\R4D\perspective\p3-worktrees\lead`, прежняя branch
 
 ## PRODUCTION_STARTED — candidate/QA/publish ещё нет
 
+Конкретный input checkpoint TQA: r16 не блокирует принятые Water gates.
+Min feet distances восьми arches52.011–57.010 при диаметре32; локальные
+corridor witnesses имеют положительный зазор ко всем colliders9.171–11.224.
+Заранее выбранный ordinary seed1 проходит arch-07 на tick1015, соседние
+states1014/1015/1016, source≈[518.076,957.456], clearance4.172.
+Run LOST/t1196 сохранён. Это native/2D input preparation, НЕ proof visible
+lintel/масок/собранного движения и не восстановление высоты. Witness адресно
+передан Artist/Builder/VQA и CTO. Builder независимо сохранил соседние states,
+подтвердил native replay/cross-board checkpoint rejection и contacts обеих
+feet около1006–1018; первый frog-01 contact105.
+
+Builder contracts опубликованы `f3b7ce8d94b0a9173c48d7ca6defb3837a10ed03`;
+Lead прочитал оба и передал Artist. Формат/алгоритм прежний. Artist применяет
+свои frozen ball/shadow PNG побайтно, настройки shadow выбирает по сцене;
+новой генерацией это не объявляется. Полного art/candidate пока нет.
+
+Release local plan completed/idle/server_write=false, commit
+`1cf782e83c5e0aec0f80feeb9bc9693028a7fb5b` полностью прочитан и интегрирован:
+[PLAN.md](../release-engineer/PLAN.md),
+[RELEASE_PLAN.json](../release-engineer/RELEASE_PLAN.json).
+Только четыре новых transfer-файла; SSH/live capture/staging/publish не было.
+Будущий live baseline намеренно null; Jungle hashes не подставляются.
+
 [Исходный рецепт/точные входы](BASELINE.md) зафиксированы до переноса.
 Все пять участников fresh completed/notLoaded/errornull проверены перед
 последовательными адресными handoff; каждый send isError=false. Runtime
