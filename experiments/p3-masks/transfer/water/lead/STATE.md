@@ -5,7 +5,44 @@ Worktree `E:\R4D\perspective\p3-worktrees\lead`, прежняя branch
 `codex/r4d-p3-masks-lead-01`, исходный clean HEAD
 `b6226c4ed81493273d421001a2202c3a2bc4639e`.
 
-## FULL_ART_READY / EARLY_WATER_QA — итогового freeze/QA/publish ещё нет
+## WATER_FRONT_EDGE_04_FROZEN — TQA идёт, полный VQA после Dark; публикации нет
+
+Builder завершил свою выдачу и сохранил candidate `water-front-edge-04`:
+handoff `017c6d7756aa99ef13ec941ff1b86aaa36ec4455` полностью прочитан Lead,
+включая STATE/RECIPE и actual freeze record. Bundle
+`E:\R4D\perspective\p3-runtime\builder\transfer-water-dark\water\front-edge-04`.
+100payload/3561039bytes, manifest17208bytes, всего101files/3578247bytes.
+ManifestSHA `de1344afcb197115b76cb4006ead3d96e7b2581a1a299df1100d7a552d2ce2c6`
+независимо совпал у Lead. SOURCE5196c0bd…/ART5c9ba8c…/variantprefix ниже.
+URL `http://127.0.0.1:6868/review/r4d/p3-masks-water/`, owner Builder
+PID29572/session61378. Dark6869/PID37660/session87426 сохранён.
+Freeze10:55:54.757UTC, finding W-EARLY-POP-01 открыт до independent retest.
+
+Точный полный handoff последовательно отправлен обеим QA после fresh latest:
+TQA Dark уже completed/idle, поэтому начат новый Water turn
+`01a1875a-1de3-7c30-8f8f-bf7deb4cc50c`, active/errornull.
+VQA Dark ещё active `01a18736-3abe-7692-b507-77fe05a87176`; Water поставлен
+последующим участком после отдельного Dark report/commit/handoff, без нового
+ACK и без параллельного дубля. Оба send isError=false, runtime6.1-sol/xhigh.
+W-EARLY-POP retest — первый раздел полного Water VQA, затем остальная matrix
+на тех же exactbytes. Никакого независимого closure/PASS пока нет.
+
+Дополнительный provenance контроль Lead нашёл различие PNG blob между
+early4eb и firstfull17dc. Ball/shadow metadata и6из7region records совпали;
+arch07 lintel cropheight111→110. Artist адресно возобновлён read-only:
+turn `01a18757-8481-7040-a9ba-3a6ba269076b`, без edits текущих payload.
+Он установил unionalpha3arch07 masks отличается в466source pixels из-за
+масштабирования/отсечения при full authoring; formal provenance report готовит.
+От17dc→5c9 PNG точные, ровно24depth меняются — это отдельный факт.
+Нельзя объявлять ВЕСЬ early4eb→current5c9 переход только depth-коррекцией.
+
+Для изолированного A/B Builder после fresh idle адресно вызван на ОДИН
+дополнительный временный read-only loopback preview существующего original
+full-method-03 (SOURCEc73/ART17dc/manifestb3c697…). Rebuild/изменение bytes
+не поручены.6868current/6869Dark QA не переключать. Новый freeownedURL/PID
+ещё ожидаются; VQA сделает лишь несколько baseline comparative frames,
+не второй полный QA старой версии. Уточнение отправлено VQA до Water начала.
+Текущие проверки нового stablecandidate и Dark эта provenance задача не блокирует.
 
 Операционное уточнение CTO: P5 writewindow/token явно закрыт
 **2026-10-29T10:55:12Z**, активных serverwriters нет. Следующее окно

@@ -4,7 +4,20 @@
 [Исходный способ и точный Dark P1](BASELINE.md) сохранены до переноса.
 Dark принимает board02 trial01 и собственный source; Water inputs не заменяют его.
 
-## DARK_FULL_METHOD_03_FROZEN — независимая QA идёт, публикации нет
+## DARK_TECHNICAL_PASS — визуальный вердикт ещё ожидается; публикации нет
+
+Dark TQA report `b327ae601a4962dd5826abfbfdeefaf77c090a55` полностью прочитан
+Lead и интегрирован: [dark-full-method-03.md](../technical-qa/reports/dark-full-method-03.md).
+Technical PASS в проверенном объёме, подтверждённых technical defects нет.
+88local/HTTPfiles+MIME,8runs/11793native states+orderedhits,66browser checkpoints,
+actual JSONroundtrip/controls/replay/seek/board-negative.23selected screenshots,
+8checkpoints,122raw-index entries сохранены. Source/art/manifest ровно frozen.
+CDP network неэкзостивен:12ResourceTiming200 безPNG/JPG;88HTTPbodies отдельно
+exact. В payload только два declaredKsource paths в P1inputs, privateTS/maps/
+неожиданныхsourcepaths/keys не найдено. Нет общей art/mapping приёмки.
+TQA Dark tab закрыта, preview не тронут; TQA уже на отдельном Water.
+VQA Dark `01a18736-3abe-7692-b507-77fe05a87176` ещё завершает собственный
+report/evidence/commit, после него продолжит Water по отдельному handoff.
 
 CTO10:55:12UTC явно закрыл P5 token/window, serverwriters нет; следующее
 окно зарезервировано P3. После обоих результатов/QA — один полный local
