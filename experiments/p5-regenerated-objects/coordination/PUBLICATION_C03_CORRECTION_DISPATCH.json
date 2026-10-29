@@ -80,9 +80,346 @@
     "expectedSha256": "b32b08fd1d0f052ab3ed84b6810fb11203b85cad360c8fae408992635273849d",
     "executorReportedExactUpload": true
   },
-  "state": "Owned workflow active; retained flock, separate-inode clone/tree verification then remaining sealed phases; full Delivery handoff pending",
-  "window": "Same P5 owned token/window begun before deadline; CTO closes. P3 transfer server_write=false.",
+  "deliveryCompletion": {
+    "state": "COMPLETED_PUBLIC_DELIVERY",
+    "releaseReport": {
+      "commit": "680468cc0680710c8510315d4effa9e32fa18c6f",
+      "path": "experiments/p5-regenerated-objects/release/DELIVERY_C03_TOKEN_FINAL_01_COMPLETED.md",
+      "bytes": 8359,
+      "sha256": "676f2591204f4214eebd3b0cf3fd723d0aac7663977b3d37b9a34ffa92da1f1d"
+    },
+    "completionPin": {
+      "path": "DELIVERY_COMPLETION.json",
+      "bytes": 6118,
+      "sha256": "f640efb88d271c9e00cd618645949d874cf00b959053e0ffce3c094008b459ba"
+    },
+    "evidenceIndexPin": {
+      "path": "DELIVERY_EVIDENCE_PINS.json",
+      "bytes": 8276,
+      "sha256": "86f19e8709117b965683b0c4b11d43902a75fe7fe7271aa83b1585a0fb37ce8b"
+    },
+    "completedUtc": "2026-10-29T10:38:14.602775+00:00",
+    "publicUrl": "https://superflight.space/review/r4d/p5-regenerated-objects/",
+    "executorTurn": "01a1872f-983f-7372-835c-c9b161f16f97",
+    "dataSource": "Role actual receipts read using Python; >2^53 metadata integers preserved as decimal strings, exact raw files remain authoritative",
+    "completion": {
+      "actualTurnId": "not exposed; authoritative Lead snapshot",
+      "afterRoot": "/srv/superflight-review/releases/p5-jungle-regenerated-candidate-03",
+      "beforeRoot": "/srv/superflight-review/releases/p4-jungle-extracted-candidate-03",
+      "browserOwnTabClosed": true,
+      "cleanup": {
+        "archiveAndRootsRetained": true,
+        "lock": {
+          "dev": 29,
+          "inode": 14,
+          "nonce": "df5a2a1da52e4048b8ef1c8d3e5a8ef9",
+          "path": "/run/lock/review-p5-regenerated-candidate-03.lock",
+          "unlinked": true
+        },
+        "reservedUnusedTempsAbsent": true,
+        "utc": "2026-10-29T10:38:14.610599+00:00"
+      },
+      "completedUtc": "2026-10-29T10:38:14.602775+00:00",
+      "delivery": {
+        "actualUiSmoke": true,
+        "allRequiredMimeCacheSecurityHeaders": true,
+        "artGeometryControls": true,
+        "checksSha256": "e647c8cc857dab40c418eef9a5822892ae74f3d7a514c2ce4a4161326f56849f",
+        "consoleWarningsErrors": 0,
+        "http29Bytes": 21675411,
+        "http29Exact": true,
+        "seed": 0,
+        "tick": 1,
+        "trailingSlash200": true
+      },
+      "docs": {
+        "changelog": {
+          "afterFullSha256": "415a20f3971826d3e623735035a157f47dce5672be9fa8b9312c15ffc8e39428",
+          "appendBytes": 908,
+          "appendSha256": "66c6f2bf09d9e3762e67bf6854fa1f9d0a5948bdb25aa11f0aa50c2ba8d61ed6",
+          "bytes": 299916,
+          "dev": 2049,
+          "gid": 27,
+          "inode": 2884515,
+          "mode": "0640",
+          "nonce": "df5a2a1da52e4048b8ef1c8d3e5a8ef9",
+          "oldPrefixBytes": 299008,
+          "oldPrefixSha256": "4ffeac09b8c4d628b275bd8cfc14572fe9e7a91a9e539bc79ee0a9037f9355a7",
+          "path": "/home/sf/assistant-context/vps/CHANGELOG.md",
+          "uid": 1003
+        },
+        "service": {
+          "afterFullSha256": "052f8d7cc660cf21eee0613e1006f83eb306880fc40c3b0fb86e3429b2357b27",
+          "appendBytes": 908,
+          "appendSha256": "83e3bc1186078f188ac9b02a91b4a19a021e88e0e9e746bbd221771c69d92ee4",
+          "bytes": 85029,
+          "dev": 2049,
+          "gid": 27,
+          "inode": 2922368,
+          "mode": "0640",
+          "nonce": "df5a2a1da52e4048b8ef1c8d3e5a8ef9",
+          "oldPrefixBytes": 84121,
+          "oldPrefixSha256": "ea0539d3fa86d28c0064ad41796ec4d3a5f6b4bef93c00083a8cbd28668788ae",
+          "path": "/home/sf/assistant-context/vps/services/superflight-studio.md",
+          "uid": 1003
+        }
+      },
+      "firstCorrectiveTool": "71a6e4",
+      "firstServerWrite": {
+        "dev": 2049,
+        "gid": 0,
+        "inode": 1104649,
+        "mode": "0700",
+        "nonce": "df5a2a1da52e4048b8ef1c8d3e5a8ef9",
+        "path": "/opt/superflight-studio/backups/review-p5-regenerated-candidate-03",
+        "phase": "P1-bootstrap",
+        "uid": 0,
+        "utc": "2026-10-29T10:26:15.613347+00:00"
+      },
+      "limitations": [
+        "No universal FullArt/P5 PASS",
+        "receiver02/04 visible entry remains unverified",
+        "rails/head/contour/rare crossing coverage unchanged",
+        "short delivery smoke does not repeat native/product QA"
+      ],
+      "newRoot": {
+        "bytes": 122587862,
+        "dirs": 88,
+        "files": 674,
+        "treeSha256": "d1176676435780637616da40a05c6dc9ff0a58e4a6678e3daa4c1a73755a50b6"
+      },
+      "ordinaryTooling": [
+        "Initial executor UID0 assumption stopped before server writes; CTO clarified existing sudo -n mode, same alias/rights/token. Historical STOP preserved.",
+        "Local correction stderr xb protected old receipt before SSH; new correction filenames used.",
+        "IAB create navigation timeout, existing created tab observed loaded without reload.",
+        "Optional diagnostic disclosure role locator no_matches; disclosure not opened, no product change."
+      ],
+      "protectedGuards": {
+        "allNeighborsPreserved": true,
+        "configAndDocsBefore": [
+          {
+            "bytes": 17255,
+            "ctime_ns": "1793187845656607499",
+            "dev": 2049,
+            "gid": 0,
+            "inode": 264387,
+            "mode": "0644",
+            "mtime_ns": "1793187845656607499",
+            "nlink": 1,
+            "path": "/etc/nginx/conf.d/superflight-studio.conf",
+            "sha256": "35c0db6029d246dac31a53d1151e89fedba9dbba0ceeeb1921e779ef0307e4e8",
+            "type": "file",
+            "uid": 0
+          },
+          {
+            "bytes": 5349,
+            "ctime_ns": "1790274970623141811",
+            "dev": 2049,
+            "gid": 0,
+            "inode": 272572,
+            "mode": "0644",
+            "mtime_ns": "1723472461000000000",
+            "nlink": 1,
+            "path": "/etc/nginx/mime.types",
+            "sha256": "6f95d1d7d75e3c072907d845622a69d23110d1266c16ff122b3109b8b21f3ae9",
+            "type": "file",
+            "uid": 0
+          },
+          {
+            "bytes": 84121,
+            "ctime_ns": "1793223948267138329",
+            "dev": 2049,
+            "gid": 27,
+            "inode": 2922368,
+            "mode": "0640",
+            "mtime_ns": "1793223948267138329",
+            "nlink": 1,
+            "path": "/home/sf/assistant-context/vps/services/superflight-studio.md",
+            "sha256": "ea0539d3fa86d28c0064ad41796ec4d3a5f6b4bef93c00083a8cbd28668788ae",
+            "type": "file",
+            "uid": 1003
+          },
+          {
+            "bytes": 299008,
+            "ctime_ns": "1793223948275138618",
+            "dev": 2049,
+            "gid": 27,
+            "inode": 2884515,
+            "mode": "0640",
+            "mtime_ns": "1793223948275138618",
+            "nlink": 1,
+            "path": "/home/sf/assistant-context/vps/CHANGELOG.md",
+            "sha256": "4ffeac09b8c4d628b275bd8cfc14572fe9e7a91a9e539bc79ee0a9037f9355a7",
+            "type": "file",
+            "uid": 1003
+          }
+        ],
+        "oldRootImmutable": true,
+        "rawCoreBeforeAndFinal": "e663e484d378f3f66ffd6783bbf0805e3192ecbcc11df03e221d7afea8b65522",
+        "separateInodeClone": true
+      },
+      "publicUrl": "https://superflight.space/review/r4d/p5-regenerated-objects/",
+      "retained": [
+        {
+          "bytes": 21862400,
+          "dev": 2049,
+          "gid": 0,
+          "inode": 1104664,
+          "mode": "0600",
+          "path": "/srv/superflight-review/releases/.p5-regenerated-candidate-03.payload.tar",
+          "sha256": "b32b08fd1d0f052ab3ed84b6810fb11203b85cad360c8fae408992635273849d",
+          "type": "file",
+          "uid": 0
+        },
+        {
+          "bytes": 0,
+          "dev": 2049,
+          "gid": 0,
+          "inode": 1104649,
+          "mode": "0700",
+          "path": "/opt/superflight-studio/backups/review-p5-regenerated-candidate-03",
+          "type": "dir",
+          "uid": 0
+        },
+        {
+          "bytes": 0,
+          "dev": 2049,
+          "gid": 0,
+          "inode": 1103895,
+          "mode": "0755",
+          "path": "/srv/superflight-review/releases/p4-jungle-extracted-candidate-03",
+          "type": "dir",
+          "uid": 0
+        },
+        {
+          "bytes": 0,
+          "dev": 2049,
+          "gid": 0,
+          "inode": 1104760,
+          "mode": "0755",
+          "path": "/srv/superflight-review/releases/p5-jungle-regenerated-candidate-03",
+          "type": "dir",
+          "uid": 0
+        }
+      ],
+      "rootSwitch": {
+        "after": {
+          "bytes": 957,
+          "dev": 2049,
+          "gid": 0,
+          "inode": 526591,
+          "mode": "0644",
+          "sha256": "e2a466db57830bddb9003361028f99c132504ed3e12a632918898cd6c2a51224",
+          "uid": 0
+        },
+        "before": {
+          "bytes": 955,
+          "dev": 2049,
+          "gid": 0,
+          "inode": 526593,
+          "mode": "0644",
+          "sha256": "359de106d9291f1aa8d265f3cd8c7c9aefc7703de850e9cd7ef531458a271ac9",
+          "uid": 0
+        },
+        "nonce": "df5a2a1da52e4048b8ef1c8d3e5a8ef9",
+        "root": "/srv/superflight-review/releases/p5-jungle-regenerated-candidate-03",
+        "rootIdentity": {
+          "dev": 2049,
+          "gid": 0,
+          "inode": 1104760,
+          "mode": "0755",
+          "type": "dir",
+          "uid": 0
+        },
+        "utc": "2026-10-29T10:28:18.361842+00:00"
+      },
+      "serverAbortOrRollback": false,
+      "sshLockHoldingProcessExited": true,
+      "status": "COMPLETED_PUBLIC_DELIVERY",
+      "token": {
+        "coordinatorWindow": "CTO decides closure; executor did not close it",
+        "execution": "used once; P0-P8 complete, no rollback/abort",
+        "id": "CTO-P5-C03-PUBLIC-20261029T095644Z-623ecdd42aef",
+        "nonce": "df5a2a1da52e4048b8ef1c8d3e5a8ef9",
+        "sha256": "8e6c24bc70b84c231ade62b6d507363a490201347ebbecb3ccae50313c062f1d",
+        "sourceFileUnchanged": true
+      }
+    },
+    "selectedPins": [
+      {
+        "bytes": 17309,
+        "path": "delivery-checks.json",
+        "sha256": "1f8578f5880511e4e6236a28e77beaf895b6ad8677893924926732105d3c6e4f"
+      },
+      {
+        "bytes": 6118,
+        "path": "DELIVERY_COMPLETION.json",
+        "sha256": "f640efb88d271c9e00cd618645949d874cf00b959053e0ffce3c094008b459ba"
+      },
+      {
+        "bytes": 125838,
+        "path": "published-prefix-smoke.png",
+        "sha256": "c0c3957649ea602a11221eaa72c54c9bfed4bdc0909d5641f3aa201d5445f901"
+      },
+      {
+        "bytes": 4720,
+        "path": "server-receipt-index.json",
+        "sha256": "9cb5a8ff80bad9a07f9de5a8ec5107f10d44036ec6e93a2fcc54db23f9dea683"
+      },
+      {
+        "bytes": 468,
+        "path": "server-receipts/changelog-append.receipt.json",
+        "sha256": "8e6923f244930b169b8cdc5ca58839e37c7fc7d8ce67e70d2c411869a8b42516"
+      },
+      {
+        "bytes": 254,
+        "path": "server-receipts/cleanup.json",
+        "sha256": "63838f2f9451ad069ee9d2fa498dbe803fd78d87cb35797f0a0f4d7d928d8b43"
+      },
+      {
+        "bytes": 2770,
+        "path": "server-receipts/completion.json",
+        "sha256": "2523aed43c4417a215975401aba88aa2cfe504e1c2c82d28a08f6674551bd130"
+      },
+      {
+        "bytes": 15847,
+        "path": "server-receipts/http-verification.json",
+        "sha256": "99ed2b2f7593d8589d2a22ff0c5e2d9807283a644db9674d9f1aa986d5fd8dbf"
+      },
+      {
+        "bytes": 559,
+        "path": "server-receipts/root-switch.json",
+        "sha256": "b22586c6c98d603d1fc6578a7f564ed5f911a56c43adba718fbbd8c173d68e4b"
+      },
+      {
+        "bytes": 484,
+        "path": "server-receipts/service-append.receipt.json",
+        "sha256": "da1abf6983c9c36da764bea30c21f9285f351d53b238ed7de5925fb652e01492"
+      },
+      {
+        "bytes": 1366,
+        "path": "server-receipts/ui-smoke.json",
+        "sha256": "3fc2e5ac002b2f214ce0be5a74ab7841354a0b7efd904be5089087cbb4cd4622"
+      }
+    ],
+    "window": "Executor did not close coordinator window/slot; CTO decides",
+    "sourceResultUnchanged": "3c2105820d8dbefc971fe97fc7086f743b9b9721",
+    "initialStopCheckpointRetained": "35d2ba607bd4d5a215f8916774077bfc389131dd"
+  },
+  "state": "COMPLETED_PUBLIC_DELIVERY_ACCEPTED_BY_CTO_BOUNDED_SCOPE; token/writewindow CLOSED; Lead/Release STOP/idle",
+  "window": "CTO explicitly closed token/writewindow2026-10-29T10:55:12Z; tokenGranted=false; P5slot closure pending CTO after final RESULT",
   "generalFullArtP5Pass": false,
   "productionQaRepeated": false,
-  "P6ExperimentClosed": true
+  "P6ExperimentClosed": true,
+  "ctoFinalAcceptance": {
+    "source": "Direct CTO decision after complete delivery review",
+    "deliveryAccepted": "bounded scope only",
+    "independentChecks": "63 local pins,13 server receipt pins,HTTP29,actualUI,docs908 oldprefix/attrs/inodes,cleanup,oldroot/neighbors retained",
+    "tokenAndWriteWindowClosedUtc": "2026-10-29T10:55:12Z",
+    "coordinatorTokenGranted": false,
+    "slotP5": "CTO closes after reading final RESULT",
+    "generalFullArtP5Pass": false,
+    "P6ExperimentClosed": true,
+    "noFurtherServerWritesOrChecks": true
+  }
 }

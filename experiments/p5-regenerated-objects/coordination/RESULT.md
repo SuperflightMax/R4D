@@ -1,5 +1,21 @@
 # P5 — результат регенерации элементов Jungle
 
+## Итог фактической публикации
+
+[Jungle · сгенерированные элементы — P5 C03](https://superflight.space/review/r4d/p5-regenerated-objects/) опубликован2026-10-29T10:38:14.602775Z. CTO принял фактическую доставку в заявленном bounded scope. Token `CTO-P5-C03-PUBLIC-20261029T095644Z-623ecdd42aef` и writewindow явно закрыты CTO2026-10-29T10:55:12Z; coordinator `tokenGranted=false`. СлотP5 закрывает CTO после чтения этого итога. Lead/Release idle, P6 закрыт.
+
+Метод дал согласованный generated Jungle на общей принятой P1/native геометрии:25предметов,4приёмника, свой floor/ball/shadow и нужные части перекрытия. В независимых просмотренных случаях подтвердились содержательные материалы, свет, объём и читаемые тени. Полезная коррекция C02→C03 — near-ledge contour перетрассирован по всей каменной кромке: шар больше не исчезает над открытым полом. Обе QA закрыли C02-V01; native/геометрия/траектория не подгонялись. Остановка доводки обоснована исправлением наблюдавшихся значимых ошибок и адресной регрессией без нового значимого дефекта в этих cases.
+
+Остатки: actualentry receiver02/04, всеиндивидуальныеcontacts/rail/head/rarecontour crossings и прежние coveragegaps не проверены. Общий FullArt/P5 PASS не присвоен. Delivery smoke ограничен опубликованным prefix, existingseed0 replay,+1tick иArt/Geometry; полные production/native/QAматрицы не повторялись.
+
+Доставка:29/29HTTPfiles,21675411bytes,exactSHA/MIME/cache/securityheaders; actualUIrendered,consolewarn/error0. Обаdocs получили по908bytes через guardedO_APPEND с сохранением каждогоoldprefixbyte/uidgidmode/dev/inode. Oldroot исоседи сохранены opaque отдельнымиinode; archive/backup/old+newroots retained, ownlocknonce/dev/inodecleanup завершён. Подробные before/after/protectedguards/docprefixreceipts и retainedpaths — [FINAL_RESULT_C03.md](FINAL_RESULT_C03.md).
+
+Exactdelivery: `680468cc0680710c8510315d4effa9e32fa18c6f:experiments/p5-regenerated-objects/release/DELIVERY_C03_TOKEN_FINAL_01_COMPLETED.md`,8359bytes/SHA256 `676f2591204f4214eebd3b0cf3fd723d0aac7663977b3d37b9a34ffa92da1f1d`. `DELIVERY_COMPLETION.json`:6118bytes/SHA256 `f640efb88d271c9e00cd618645949d874cf00b959053e0ffce3c094008b459ba`. ExactlocalC03 source остаётся `3c2105820d8dbefc971fe97fc7086f743b9b9721`; finalTQA `9b2eb998ea6aba6272097b955e0a53d97234dbd9`, finalVQA `e227f3874c19539b7d38f0b8d318a911e7db2915`.
+
+## Сохранённый локальный итог и история
+
+Ниже сохранён текст локального checkpoint3c210582 без изменения рецепта, попыток, источников и тогдашних ограничений; текущий delivery/token/window статус приведён выше.
+
 Лучший локальный результат — frozen **c03**: собранный PixiJS/native стенд с заново сгенерированными препятствиями, полом, шариком, тенями и частями корзин. Доступные значимые дефекты c01/c02 исправлены и проверены в движении. Это результат ограниченной исследовательской попытки; опубликованной демкой он станет только после отдельного exact CTO review/single-use release token и проверки доставки. Server writes сейчас 0. Переход P6 этой команде не поручен.
 
 ## Что получилось
