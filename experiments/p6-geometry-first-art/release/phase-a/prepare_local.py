@@ -387,7 +387,7 @@ def main():
                'comparison': record(extra / 'comparison.html', 'publication/comparison.html'),
                'comparisonUrl': COMPARISON_URL,
                'licenseTextPending': [x['name'] for x in license_rows if x['licenseTextStatus'] == 'PENDING_OWNER_PROVENANCE'],
-               'pending': ['Exact operational pointers', 'Fresh complete read-only root/writer/opaque-config/docs guards',
+               'pending': ['Final fresh read-only root/writer/opaque-snippet/docs guards',
                            'Exact preserved catalog replacement bytes', 'Final frozen intent', 'Separate CTO execution command/token']}
     write(output / 'LOCAL_PREPARATION_RECEIPT.json', js(receipt))
     print(json.dumps(receipt, ensure_ascii=False, indent=2))
