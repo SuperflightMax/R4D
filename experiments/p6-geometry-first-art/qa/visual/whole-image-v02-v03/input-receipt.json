@@ -1,0 +1,96 @@
+{
+  "schema": "r4d.p6.visual-qa.whole-image-v02-v03.input-receipt.v1",
+  "turnId": "01a187ba-1f1c-70b1-949b-8e5b3391dc3f",
+  "frozenArtistCommit": "da4cae189c3a103bc84909de8cbc4f4b6daed86a",
+  "acceptedP1": "4b47db04c7140ebf88f69b91faa0b790d46f22ec",
+  "draftCommit": "bdf470e5beb468266184cc2ea0c997191d9907b3",
+  "registrationSha256": "426bec72faf21fe6ba654dca988ed1d74241b1372246d78741419b19a3d5cf4a",
+  "files": [
+    {
+      "version": "v02",
+      "role": "raw",
+      "gitObject": "da4cae189c3a103bc84909de8cbc4f4b6daed86a:experiments/p6-geometry-first-art/asset-artist/raw/whole-board-v02.png",
+      "gitBlob": "b29bb6084b31785b99e59fc5bdb12c8b494f05e3",
+      "sha256": "539e4b1cbbcca9931dcc5c1bfaedc680de03720a21d9c82148cfb74b1198680f",
+      "bytes": 3192980,
+      "dimensions": [
+        1254,
+        1254
+      ],
+      "source": "E:\\R4D\\perspective\\p6-worktrees\\asset-artist\\experiments\\p6-geometry-first-art\\asset-artist\\raw\\whole-board-v02.png",
+      "ownRuntimeCopy": "E:\\R4D\\perspective\\p6-runtime\\visual-qa\\whole-image-v02-v03\\whole-board-v02.raw.png"
+    },
+    {
+      "version": "v02",
+      "role": "prepared",
+      "gitObject": "da4cae189c3a103bc84909de8cbc4f4b6daed86a:experiments/p6-geometry-first-art/asset-artist/prepared/whole-board-v02-1536.png",
+      "gitBlob": "672dc6ce85155c5afb3dcc19ec73d634d953080d",
+      "sha256": "9b201f4ed3a10fcc7d09a87c6b93d249257e619a065c0b4c541b022059e2a547",
+      "bytes": 7504194,
+      "dimensions": [
+        1536,
+        1536
+      ],
+      "source": "E:\\R4D\\perspective\\p6-worktrees\\asset-artist\\experiments\\p6-geometry-first-art\\asset-artist\\prepared\\whole-board-v02-1536.png",
+      "ownRuntimeCopy": null
+    },
+    {
+      "version": "v02",
+      "role": "overlay",
+      "gitObject": "da4cae189c3a103bc84909de8cbc4f4b6daed86a:experiments/p6-geometry-first-art/asset-artist/evidence/whole-board-v02-registration.png",
+      "gitBlob": "7c0e819f690dddf498e52392be64832db187fdda",
+      "sha256": "731f8532bf828a179f69dad1c04b5eb99ebfef2388bf3a9e63ba34026edff283",
+      "bytes": 7415598,
+      "dimensions": [
+        1536,
+        1536
+      ],
+      "source": "E:\\R4D\\perspective\\p6-worktrees\\asset-artist\\experiments\\p6-geometry-first-art\\asset-artist\\evidence\\whole-board-v02-registration.png",
+      "ownRuntimeCopy": "E:\\R4D\\perspective\\p6-runtime\\visual-qa\\whole-image-v02-v03\\whole-board-v02.registration.png"
+    },
+    {
+      "version": "v03",
+      "role": "raw",
+      "gitObject": "da4cae189c3a103bc84909de8cbc4f4b6daed86a:experiments/p6-geometry-first-art/asset-artist/raw/whole-board-v03.png",
+      "gitBlob": "ae681f05ca7e258be2d47d99d387658f69b3b540",
+      "sha256": "86a781198ba09b92ebbf16ce033784805cfcdd29d75ec28b2214521fbd79b501",
+      "bytes": 3162714,
+      "dimensions": [
+        1254,
+        1254
+      ],
+      "source": "E:\\R4D\\perspective\\p6-worktrees\\asset-artist\\experiments\\p6-geometry-first-art\\asset-artist\\raw\\whole-board-v03.png",
+      "ownRuntimeCopy": "E:\\R4D\\perspective\\p6-runtime\\visual-qa\\whole-image-v02-v03\\whole-board-v03.raw.png"
+    },
+    {
+      "version": "v03",
+      "role": "prepared",
+      "gitObject": "da4cae189c3a103bc84909de8cbc4f4b6daed86a:experiments/p6-geometry-first-art/asset-artist/prepared/whole-board-v03-1536.png",
+      "gitBlob": "acdf89ec6c1b1ce77feb30e83c4978982ddfbc68",
+      "sha256": "a0c8f77d3a232543cf12468500cf1db9911d4d01f720b2154d16213a43a5ca4d",
+      "bytes": 7468907,
+      "dimensions": [
+        1536,
+        1536
+      ],
+      "source": "E:\\R4D\\perspective\\p6-worktrees\\asset-artist\\experiments\\p6-geometry-first-art\\asset-artist\\prepared\\whole-board-v03-1536.png",
+      "ownRuntimeCopy": null
+    },
+    {
+      "version": "v03",
+      "role": "overlay",
+      "gitObject": "da4cae189c3a103bc84909de8cbc4f4b6daed86a:experiments/p6-geometry-first-art/asset-artist/evidence/whole-board-v03-registration.png",
+      "gitBlob": "ef3af99caa49dbfcf163bee843e0b1195fe953d3",
+      "sha256": "7f20f9f8b8e2b858df373c734bffd118d37de394adc8685395fe6ad3918efbc8",
+      "bytes": 7375847,
+      "dimensions": [
+        1536,
+        1536
+      ],
+      "source": "E:\\R4D\\perspective\\p6-worktrees\\asset-artist\\experiments\\p6-geometry-first-art\\asset-artist\\evidence\\whole-board-v03-registration.png",
+      "ownRuntimeCopy": "E:\\R4D\\perspective\\p6-runtime\\visual-qa\\whole-image-v02-v03\\whole-board-v03.registration.png"
+    }
+  ],
+  "normalization": "Existing frozen Artist outputs; verified preparation records and compare-whole-image.ps1 at exact Artist commit. 1254 square -> 1536 square, uniform full-frame; exact registration unscaled at 0,0. No image changed or new fit performed by Visual QA.",
+  "scope": "Representative original/overlay comparison only; not complete candidate registration or motion QA"
+}
