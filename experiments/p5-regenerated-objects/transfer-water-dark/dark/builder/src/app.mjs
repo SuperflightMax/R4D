@@ -79,7 +79,7 @@ function positionSprite(item, state) {
   const scale = width / texture.footprintPx.width;
   sprite.scale.set(scale);
   sprite.position.set(sourceAnchor[0] - texture.groundAnchorPx[0] * scale, sourceAnchor[1] - texture.groundAnchorPx[1] * scale);
-  layer.zIndex = spec.role === 'shadow' ? -1e7 + depthY : depthY + depthRadius * spec.depthOffsetRadii;
+  layer.zIndex = spec.role === 'floor' ? -1e8 : spec.role === 'shadow' ? -1e7 + depthY : depthY + depthRadius * spec.depthOffsetRadii;
 }
 
 if (preview.manifestUrl) {
@@ -90,6 +90,8 @@ if (preview.manifestUrl) {
     const texture = await Assets.load(new URL(info.file, assetBase).href);
     textureMap.set(info.id, { info, texture });
   }
+  // Equal static floor ranks retain this explicit ID order in Pixi's stable
+  // sort. The verifier requires scene floor IDs before receiver base IDs.
   for (const spec of [...manifest.instances].sort((a, b) => a.id.localeCompare(b.id))) {
     const resource = textureMap.get(spec.textureId);
     const sprite = new Sprite(resource.texture);

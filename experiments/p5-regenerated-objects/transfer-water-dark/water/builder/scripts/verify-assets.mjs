@@ -85,4 +85,10 @@ for (const instance of manifest.instances) {
       depthRatio: renderedDepth / target.sourcePx.footprintDepth, note: instance.targetId === '$ball' ? 'Reference at drop only; dynamic projected width, sphere silhouette is not its footprint' : 'No axis warp or target change applied' });
   }
 }
+// Existing equal-rank tie-break is explicit instance ID order. Do not allow
+// a global opaque floor to cover a target-bound base at the same floor rank.
+const sceneFloors = manifest.instances.filter(i => i.role === 'floor' && i.targetId === '$source');
+for (const base of manifest.instances.filter(i => i.role === 'floor' && i.targetId !== '$source')) {
+  assert(sceneFloors.every(floor => floor.id.localeCompare(base.id) < 0), `Target-bound floor ID must sort after every scene floor: ${base.id}`);
+}
 console.log(JSON.stringify({ status: example ? 'example-shape-checked-no-assets' : 'verified', textures: textures.size, instances: ids.size, measurements, footprintFits, clippedForegroundParts }));
