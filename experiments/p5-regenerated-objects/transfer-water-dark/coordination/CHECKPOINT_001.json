@@ -1,0 +1,198 @@
+{
+  "schema": "r4d.p5.transfer-water-dark.checkpoint.v1",
+  "checkpoint": "001",
+  "recordedUtc": "2026-10-30 00:08:48 UTC",
+  "leadTurn": "01a189e7-75b8-7481-801e-787acd1163aa",
+  "status": "production-continues",
+  "dispatchRecord": "DISPATCH.json",
+  "commonInputs": {
+    "path": "E:/R4D/perspective/coordination/p4-p5-transfer-common-inputs-2026-10-29.json",
+    "bytes": 4265,
+    "sha256": "497eb8cca3aa7413254a85b18d98a1e7dfde66d9779c39fc6b5932a21f2b4946"
+  },
+  "water": {
+    "w01": {
+      "source": "41349b8d8ae61ceb69e288301af7c080e2b006b5",
+      "artist": "094301dda9a43e7b4970af9d9af20982a38fb221",
+      "indexPath": "E:/R4D/perspective/p5-runtime/builder/transfer-water-dark/water/output/previews/w01/FILE_INDEX.json",
+      "indexBytes": 4851,
+      "indexSha256": "b65666c1c942d71763115f05744358ef45463f0fa528a4da0e9f0b8b3d912c4e",
+      "root": "E:/R4D/perspective/p5-runtime/builder/transfer-water-dark/water/output/previews/w01/public",
+      "url": "http://localhost:55188/",
+      "pid": 38664,
+      "session": 80589,
+      "stagedManifestSha256": "bf468e44bf8bacbab8d810a1a86a57228515abc2c665397b45e8b2ea80313fe2",
+      "leadVerifiedFileIndex": true,
+      "technicalQaSent": true,
+      "visualQaSent": true,
+      "scope": "5 PNG/7 instances; floor/ball/shadows/pillar03/04 only; missing19groups/4cups/environment",
+      "previewIndexPath": "E:/R4D/perspective/p5-runtime/builder/transfer-water-dark/water/output/previews/w01/index.json",
+      "previewIndexBytes": 12125,
+      "previewIndexSha256": "6b30fdf4f76d665c8d9aeb2c9d9b6d9e0398da3caa2326fa462a8ca37e7d4ce1",
+      "previewIndexIsSidecarOutsidePublic": true,
+      "handoffPublicIndexPathCorrected": true,
+      "tqaTurn": "01a18a0b-2eff-78f2-a367-b0a77beb8bd5",
+      "vqaTurn": "01a18a0b-309b-7e50-a8b7-fd527cb9b359"
+    },
+    "tqa": {
+      "commit": "b16653cfecc5ecd8f94cf41fbe2d5c0f353dba76",
+      "report": "experiments/p5-regenerated-objects/transfer-water-dark/water/qa/technical/REPORT_W01.md",
+      "snapshotCount": 40,
+      "screenshots": 23,
+      "indexBytes": 11580,
+      "indexSha256": "44073053d4967fd3c35d15ee258b6d5b1a7c05995fa1a852bc5e439610c87a9d",
+      "representative": "E:/R4D/perspective/p5-runtime/technical-qa/transfer-water-dark/water/w01/screenshots/s0-t583-front-silhouette.png",
+      "technicalScope": "PASS scoped; full Water/P5 false",
+      "supportedCases": [
+        "pillar-03 front seed0 585/586/587",
+        "pillar-03 side seed2 457/458/459"
+      ],
+      "unverified": [
+        "behind hiding",
+        "pillar-04 contacts",
+        "19groups",
+        "all4receiver art",
+        "arches",
+        "environment masks"
+      ],
+      "newProductDefects": 0
+    },
+    "vqa": {
+      "commit": "a67aec7bfe2a3a95c127b6ede7a2f4a3c9637589",
+      "turn": "01a18a0b-309b-7e50-a8b7-fd527cb9b359",
+      "defects": [
+        "W01-V01"
+      ],
+      "freshOrdinaryThrows": [
+        {
+          "seed": 2190599127,
+          "status": "LOST",
+          "terminal": 1496
+        },
+        {
+          "seed": 1370738139,
+          "status": "LOST",
+          "terminal": 1139
+        }
+      ],
+      "screenshots": 24,
+      "scope": "partial artistic review; fullWaterPASSfalse",
+      "report": "experiments/p5-regenerated-objects/transfer-water-dark/water/qa/visual/REPORT_W01.md",
+      "evidenceBytes": 53380,
+      "evidenceSha256": "eda3ef1a182bdd364c974c7c72ecc6e6a05ebe046ffda5571cc178387e20909b"
+    },
+    "finding": {
+      "id": "W01-V01",
+      "candidate": "w01",
+      "observer": "visual-qa",
+      "observed": "Field seed0 state0 clips upper starting ball; Whole0 full; Field100 full",
+      "cause": "hypothesis: geometry-only Field bounds omit authored ball silhouette",
+      "sentToBuilder": true,
+      "status": "OPEN",
+      "source": "41349b8d8ae61ceb69e288301af7c080e2b006b5"
+    },
+    "w02": {
+      "source": "f06ed5d7f87dc3e51323881d3ce8380ead65ea18",
+      "root": "E:/R4D/perspective/p5-runtime/builder/transfer-water-dark/water/output/previews/w02/public",
+      "indexPath": "E:/R4D/perspective/p5-runtime/builder/transfer-water-dark/water/output/previews/w02/FILE_INDEX.json",
+      "indexBytes": 4851,
+      "indexSha256": "1a8945190e064be5fedfaa80c30a1aa9f24db048d2bef407546c53246697cdcb",
+      "url": "http://localhost:55190/",
+      "pid": 17036,
+      "session": 64255,
+      "appBytes": 570867,
+      "appSha256": "0571bbdaa541fa8d5ad617c686118d69b4ba7dacca746652dc99f8489cc248c2",
+      "scope": "framing-only; same5PNGs/7instances",
+      "vqaClosureSent": true
+    },
+    "nextArt": {
+      "commit": "4395f6f2c7eff096e6da283f5f78fd45a4346aad",
+      "path": "experiments/p5-regenerated-objects/transfer-water-dark/water/asset-artist/asset-manifest.mini-02.json",
+      "bytes": 40316,
+      "sha256": "6948fdd7fccc60612183a2a8f9d6ce88f78ecd137931297c8fca556b3c19169a",
+      "uniquePng": 8,
+      "textureIds": 14,
+      "instances": 27,
+      "leadVerified": true,
+      "sentToBuilder": true
+    }
+  },
+  "dark": {
+    "inputOracleCommit": "761e6087c902fe5ea941b90b5ce4d72383a0d755",
+    "visualPrepCommit": "0b46ef5d8efd34b224cf0ad42e17bf50a800e442",
+    "scaffold": {
+      "id": "d00",
+      "url": "http://localhost:55187/",
+      "pid": 37032,
+      "session": 18796,
+      "indexSha256": "32f9c97254c12f7847c1ebb6fdae023ec4091c782584e2c68c983970ad8e3f2b"
+    },
+    "firstNewFloor": {
+      "bytes": 2983206,
+      "sha256": "192c158305df1144af52df75fd150e832cfe5eeac70505380c2f2c320ee73908",
+      "selected": false,
+      "reason": "receiver front panels retained and lower zone filled; correction in progress"
+    },
+    "actualGeneratedArtQa": "NOT_STARTED"
+  },
+  "resources": {
+    "utc": "2026-10-30T00:00:36.0228828Z",
+    "ramFreeGiB": 10.083,
+    "cpuLoadPercent": 5,
+    "aggregateWorkingSetGiB": 27.377,
+    "driveFreeGiB": [
+      {
+        "drive": "C:",
+        "freeGiB": 13.981
+      },
+      {
+        "drive": "D:",
+        "freeGiB": 14.64
+      },
+      {
+        "drive": "E:",
+        "freeGiB": 9.649
+      }
+    ],
+    "ownEstimate": "coordination checkpoint/docs: RAM0.25GiB/E0.01GiB",
+    "allowance": "RAM4GiB/E2GiB"
+  },
+  "method": {
+    "baseline": "own Jungle sprite/parts/generated-floor-clip recipe",
+    "substantialVariantPublished": false,
+    "ordinaryCorrections": [
+      "shadow stripes rejected",
+      "frog viewpoint/proportions",
+      "gate post width and part registration",
+      "measured ball/cup policy",
+      "Field visible ball envelope"
+    ],
+    "nativeChanged": false
+  },
+  "budget": {
+    "bothBoardsGuideActiveHours": [
+      8,
+      12
+    ],
+    "elapsedApproxActiveHours": 1,
+    "remainingApproxGuideActiveHours": [
+      7,
+      11
+    ],
+    "status": "range retained after checkpoint; native/input risks reduced, gate/foreground and Dark art registration still open; not a hard cutoff"
+  },
+  "release": {
+    "status": "idle",
+    "taskSent": false,
+    "tokenGranted": false,
+    "reviewVpsServerWrites": 0
+  },
+  "nextPriorities": [
+    "independent W01-V01 closure on w02",
+    "w03 integration of mini02 and actual receiver-02 approach/entry/front rim QA",
+    "limited whole-gate arch-07 baseline then registered parts and exact before/at/after motion",
+    "foreground/long rails/raised plants",
+    "new Dark art and own independent actual QA",
+    "local package then separate concrete CTO publication token"
+  ]
+}
