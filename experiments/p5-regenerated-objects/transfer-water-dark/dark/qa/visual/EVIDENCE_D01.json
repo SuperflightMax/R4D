@@ -1,0 +1,2577 @@
+{
+  "schema": "r4d.p5.transfer.visual-evidence.v1",
+  "board": "dark",
+  "candidate": "d01",
+  "preparedAtUTC": "2026-10-30T01:13:05.784359+00:00",
+  "runtimeRoot": "E:\\R4D\\perspective\\p5-runtime\\visual-qa\\transfer-water-dark\\dark\\d01",
+  "consumerCommit": "aae514ed31720ab6d913f4bc6d63286c26992e0a",
+  "artistCommit": "0f70d00db096ee30f057dd65ca36a53df3f78899",
+  "fileIndexSha256": "d810ae08b53a0eaf44636df0adcb2c15eb4a0195b31db383534b4ea70af2116b",
+  "stagedManifestSha256": "18b7769115ac7d2dcba3a89869b50cc9c7824de01421201a886210a17ad3f900",
+  "scope": "Original Dark P5 baseline: pillar04 side/corner, pillar02 corner/front, receiver01/02 actual entries, independent art/shadow and lower-zone review.",
+  "captureRule": "Original JPEG no edit/crop/reencode; exact paused AX before/after equal. Realtime images bracketed by AX states, not exact native-frame or framerate verification. No zoom/viewport override; CSS/DPR not separately measured.",
+  "captures": [
+    {
+      "name": "01-seed0-t840-whole",
+      "mode": "paused",
+      "UTC": "2026-10-30T01:03:37.485Z",
+      "before": "01-seed0-t840-whole.before.ax.txt",
+      "image": "01-seed0-t840-whole.jpg",
+      "after": "01-seed0-t840-whole.after.ax.txt",
+      "beforeUI": {
+        "seed": 0,
+        "state": {
+          "tick": 840,
+          "rngU32": 2498801434,
+          "ball": {
+            "pos": {
+              "x": 32855.6972506,
+              "y": 34273.1557958
+            },
+            "vel": {
+              "x": 44.2252057,
+              "y": 1327.1213952
+            }
+          },
+          "nearMissBucketIds": [],
+          "done": false
+        },
+        "statusText": "840 × 5 ms · в движении",
+        "art": 1,
+        "geometry": 0,
+        "framing": "Вся сцена"
+      },
+      "afterUI": {
+        "seed": 0,
+        "state": {
+          "tick": 840,
+          "rngU32": 2498801434,
+          "ball": {
+            "pos": {
+              "x": 32855.6972506,
+              "y": 34273.1557958
+            },
+            "vel": {
+              "x": 44.2252057,
+              "y": 1327.1213952
+            }
+          },
+          "nearMissBucketIds": [],
+          "done": false
+        },
+        "statusText": "840 × 5 ms · в движении",
+        "art": 1,
+        "geometry": 0,
+        "framing": "Вся сцена"
+      },
+      "imageDimensionsPx": [
+        1265,
+        712
+      ],
+      "nativeStateExactForImage": true
+    },
+    {
+      "name": "02-seed0-t840-pillar04-side-field",
+      "mode": "paused",
+      "UTC": "2026-10-30T01:04:27.781Z",
+      "before": "02-seed0-t840-pillar04-side-field.before.ax.txt",
+      "image": "02-seed0-t840-pillar04-side-field.jpg",
+      "after": "02-seed0-t840-pillar04-side-field.after.ax.txt",
+      "beforeUI": {
+        "seed": 0,
+        "state": {
+          "tick": 840,
+          "rngU32": 2498801434,
+          "ball": {
+            "pos": {
+              "x": 32855.6972506,
+              "y": 34273.1557958
+            },
+            "vel": {
+              "x": 44.2252057,
+              "y": 1327.1213952
+            }
+          },
+          "nearMissBucketIds": [],
+          "done": false
+        },
+        "statusText": "840 × 5 ms · в движении",
+        "art": 1,
+        "geometry": 0,
+        "framing": "Игровое поле"
+      },
+      "afterUI": {
+        "seed": 0,
+        "state": {
+          "tick": 840,
+          "rngU32": 2498801434,
+          "ball": {
+            "pos": {
+              "x": 32855.6972506,
+              "y": 34273.1557958
+            },
+            "vel": {
+              "x": 44.2252057,
+              "y": 1327.1213952
+            }
+          },
+          "nearMissBucketIds": [],
+          "done": false
+        },
+        "statusText": "840 × 5 ms · в движении",
+        "art": 1,
+        "geometry": 0,
+        "framing": "Игровое поле"
+      },
+      "imageDimensionsPx": [
+        1265,
+        712
+      ],
+      "nativeStateExactForImage": true
+    },
+    {
+      "name": "03-seed0-t841-pillar04-side-field",
+      "mode": "paused",
+      "UTC": "2026-10-30T01:04:28.627Z",
+      "before": "03-seed0-t841-pillar04-side-field.before.ax.txt",
+      "image": "03-seed0-t841-pillar04-side-field.jpg",
+      "after": "03-seed0-t841-pillar04-side-field.after.ax.txt",
+      "beforeUI": {
+        "seed": 0,
+        "state": {
+          "tick": 841,
+          "rngU32": 3167820124,
+          "ball": {
+            "pos": {
+              "x": 32855.6199282,
+              "y": 34279.7695943
+            },
+            "vel": {
+              "x": -423.0349018,
+              "y": 1255.9171856
+            }
+          },
+          "nearMissBucketIds": [],
+          "done": false
+        },
+        "statusText": "841 × 5 ms · в движении",
+        "art": 1,
+        "geometry": 0,
+        "framing": "Игровое поле"
+      },
+      "afterUI": {
+        "seed": 0,
+        "state": {
+          "tick": 841,
+          "rngU32": 3167820124,
+          "ball": {
+            "pos": {
+              "x": 32855.6199282,
+              "y": 34279.7695943
+            },
+            "vel": {
+              "x": -423.0349018,
+              "y": 1255.9171856
+            }
+          },
+          "nearMissBucketIds": [],
+          "done": false
+        },
+        "statusText": "841 × 5 ms · в движении",
+        "art": 1,
+        "geometry": 0,
+        "framing": "Игровое поле"
+      },
+      "imageDimensionsPx": [
+        1265,
+        712
+      ],
+      "nativeStateExactForImage": true
+    },
+    {
+      "name": "04-seed0-t842-pillar04-side-field",
+      "mode": "paused",
+      "UTC": "2026-10-30T01:04:29.473Z",
+      "before": "04-seed0-t842-pillar04-side-field.before.ax.txt",
+      "image": "04-seed0-t842-pillar04-side-field.jpg",
+      "after": "04-seed0-t842-pillar04-side-field.after.ax.txt",
+      "beforeUI": {
+        "seed": 0,
+        "state": {
+          "tick": 842,
+          "rngU32": 3167820124,
+          "ball": {
+            "pos": {
+              "x": 32853.5047537,
+              "y": 34286.0736802
+            },
+            "vel": {
+              "x": -423.0349018,
+              "y": 1260.8171856
+            }
+          },
+          "nearMissBucketIds": [],
+          "done": false
+        },
+        "statusText": "842 × 5 ms · в движении",
+        "art": 1,
+        "geometry": 0,
+        "framing": "Игровое поле"
+      },
+      "afterUI": {
+        "seed": 0,
+        "state": {
+          "tick": 842,
+          "rngU32": 3167820124,
+          "ball": {
+            "pos": {
+              "x": 32853.5047537,
+              "y": 34286.0736802
+            },
+            "vel": {
+              "x": -423.0349018,
+              "y": 1260.8171856
+            }
+          },
+          "nearMissBucketIds": [],
+          "done": false
+        },
+        "statusText": "842 × 5 ms · в движении",
+        "art": 1,
+        "geometry": 0,
+        "framing": "Игровое поле"
+      },
+      "imageDimensionsPx": [
+        1265,
+        712
+      ],
+      "nativeStateExactForImage": true
+    },
+    {
+      "name": "05-seed0-t886-receiver01-field",
+      "mode": "paused",
+      "UTC": "2026-10-30T01:04:56.911Z",
+      "before": "05-seed0-t886-receiver01-field.before.ax.txt",
+      "image": "05-seed0-t886-receiver01-field.jpg",
+      "after": "05-seed0-t886-receiver01-field.after.ax.txt",
+      "beforeUI": {
+        "seed": 0,
+        "state": {
+          "tick": 886,
+          "rngU32": 3801544430,
+          "ball": {
+            "pos": {
+              "x": 32887.8941823,
+              "y": 34588.4130384
+            },
+            "vel": {
+              "x": 324.6611735,
+              "y": 1480.574971
+            }
+          },
+          "nearMissBucketIds": [],
+          "done": false
+        },
+        "statusText": "886 × 5 ms · в движении",
+        "art": 1,
+        "geometry": 0,
+        "framing": "Игровое поле"
+      },
+      "afterUI": {
+        "seed": 0,
+        "state": {
+          "tick": 886,
+          "rngU32": 3801544430,
+          "ball": {
+            "pos": {
+              "x": 32887.8941823,
+              "y": 34588.4130384
+            },
+            "vel": {
+              "x": 324.6611735,
+              "y": 1480.574971
+            }
+          },
+          "nearMissBucketIds": [],
+          "done": false
+        },
+        "statusText": "886 × 5 ms · в движении",
+        "art": 1,
+        "geometry": 0,
+        "framing": "Игровое поле"
+      },
+      "imageDimensionsPx": [
+        1265,
+        712
+      ],
+      "nativeStateExactForImage": true
+    },
+    {
+      "name": "06-seed0-t887-receiver01-field",
+      "mode": "paused",
+      "UTC": "2026-10-30T01:04:57.758Z",
+      "before": "06-seed0-t887-receiver01-field.before.ax.txt",
+      "image": "06-seed0-t887-receiver01-field.jpg",
+      "after": "06-seed0-t887-receiver01-field.after.ax.txt",
+      "beforeUI": {
+        "seed": 0,
+        "state": {
+          "tick": 887,
+          "rngU32": 3801544430,
+          "ball": {
+            "pos": {
+              "x": 32889.5174882,
+              "y": 34595.8404133
+            },
+            "vel": {
+              "x": 324.6611735,
+              "y": 1485.474971
+            }
+          },
+          "nearMissBucketIds": [],
+          "done": false
+        },
+        "statusText": "887 × 5 ms · в движении",
+        "art": 1,
+        "geometry": 0,
+        "framing": "Игровое поле"
+      },
+      "afterUI": {
+        "seed": 0,
+        "state": {
+          "tick": 887,
+          "rngU32": 3801544430,
+          "ball": {
+            "pos": {
+              "x": 32889.5174882,
+              "y": 34595.8404133
+            },
+            "vel": {
+              "x": 324.6611735,
+              "y": 1485.474971
+            }
+          },
+          "nearMissBucketIds": [],
+          "done": false
+        },
+        "statusText": "887 × 5 ms · в движении",
+        "art": 1,
+        "geometry": 0,
+        "framing": "Игровое поле"
+      },
+      "imageDimensionsPx": [
+        1265,
+        712
+      ],
+      "nativeStateExactForImage": true
+    },
+    {
+      "name": "07-seed0-t888-receiver01-field",
+      "mode": "paused",
+      "UTC": "2026-10-30T01:04:58.603Z",
+      "before": "07-seed0-t888-receiver01-field.before.ax.txt",
+      "image": "07-seed0-t888-receiver01-field.jpg",
+      "after": "07-seed0-t888-receiver01-field.after.ax.txt",
+      "beforeUI": {
+        "seed": 0,
+        "state": {
+          "tick": 888,
+          "rngU32": 3801544430,
+          "ball": {
+            "pos": {
+              "x": 32891.1407941,
+              "y": 34603.2922882
+            },
+            "vel": {
+              "x": 324.6611735,
+              "y": 1490.374971
+            }
+          },
+          "nearMissBucketIds": [],
+          "done": true,
+          "result": {
+            "kind": "IN_BUCKET",
+            "bucketId": "receiver-01"
+          }
+        },
+        "statusText": "888 × 5 ms · IN_BUCKET / receiver-01",
+        "art": 1,
+        "geometry": 0,
+        "framing": "Игровое поле"
+      },
+      "afterUI": {
+        "seed": 0,
+        "state": {
+          "tick": 888,
+          "rngU32": 3801544430,
+          "ball": {
+            "pos": {
+              "x": 32891.1407941,
+              "y": 34603.2922882
+            },
+            "vel": {
+              "x": 324.6611735,
+              "y": 1490.374971
+            }
+          },
+          "nearMissBucketIds": [],
+          "done": true,
+          "result": {
+            "kind": "IN_BUCKET",
+            "bucketId": "receiver-01"
+          }
+        },
+        "statusText": "888 × 5 ms · IN_BUCKET / receiver-01",
+        "art": 1,
+        "geometry": 0,
+        "framing": "Игровое поле"
+      },
+      "imageDimensionsPx": [
+        1265,
+        712
+      ],
+      "nativeStateExactForImage": true
+    },
+    {
+      "name": "08-seed0-t888-hold-field",
+      "mode": "paused",
+      "UTC": "2026-10-30T01:04:59.416Z",
+      "before": "08-seed0-t888-hold-field.before.ax.txt",
+      "image": "08-seed0-t888-hold-field.jpg",
+      "after": "08-seed0-t888-hold-field.after.ax.txt",
+      "beforeUI": {
+        "seed": 0,
+        "state": {
+          "tick": 888,
+          "rngU32": 3801544430,
+          "ball": {
+            "pos": {
+              "x": 32891.1407941,
+              "y": 34603.2922882
+            },
+            "vel": {
+              "x": 324.6611735,
+              "y": 1490.374971
+            }
+          },
+          "nearMissBucketIds": [],
+          "done": true,
+          "result": {
+            "kind": "IN_BUCKET",
+            "bucketId": "receiver-01"
+          }
+        },
+        "statusText": "888 × 5 ms · IN_BUCKET / receiver-01",
+        "art": 1,
+        "geometry": 0,
+        "framing": "Игровое поле"
+      },
+      "afterUI": {
+        "seed": 0,
+        "state": {
+          "tick": 888,
+          "rngU32": 3801544430,
+          "ball": {
+            "pos": {
+              "x": 32891.1407941,
+              "y": 34603.2922882
+            },
+            "vel": {
+              "x": 324.6611735,
+              "y": 1490.374971
+            }
+          },
+          "nearMissBucketIds": [],
+          "done": true,
+          "result": {
+            "kind": "IN_BUCKET",
+            "bucketId": "receiver-01"
+          }
+        },
+        "statusText": "888 × 5 ms · IN_BUCKET / receiver-01",
+        "art": 1,
+        "geometry": 0,
+        "framing": "Игровое поле"
+      },
+      "imageDimensionsPx": [
+        1265,
+        712
+      ],
+      "nativeStateExactForImage": true
+    },
+    {
+      "name": "09-seed0-t888-receiver01-whole",
+      "mode": "paused",
+      "UTC": "2026-10-30T01:06:01.425Z",
+      "before": "09-seed0-t888-receiver01-whole.before.ax.txt",
+      "image": "09-seed0-t888-receiver01-whole.jpg",
+      "after": "09-seed0-t888-receiver01-whole.after.ax.txt",
+      "beforeUI": {
+        "seed": 0,
+        "state": {
+          "tick": 888,
+          "rngU32": 3801544430,
+          "ball": {
+            "pos": {
+              "x": 32891.1407941,
+              "y": 34603.2922882
+            },
+            "vel": {
+              "x": 324.6611735,
+              "y": 1490.374971
+            }
+          },
+          "nearMissBucketIds": [],
+          "done": true,
+          "result": {
+            "kind": "IN_BUCKET",
+            "bucketId": "receiver-01"
+          }
+        },
+        "statusText": "888 × 5 ms · IN_BUCKET / receiver-01",
+        "art": 1,
+        "geometry": 0,
+        "framing": "Вся сцена"
+      },
+      "afterUI": {
+        "seed": 0,
+        "state": {
+          "tick": 888,
+          "rngU32": 3801544430,
+          "ball": {
+            "pos": {
+              "x": 32891.1407941,
+              "y": 34603.2922882
+            },
+            "vel": {
+              "x": 324.6611735,
+              "y": 1490.374971
+            }
+          },
+          "nearMissBucketIds": [],
+          "done": true,
+          "result": {
+            "kind": "IN_BUCKET",
+            "bucketId": "receiver-01"
+          }
+        },
+        "statusText": "888 × 5 ms · IN_BUCKET / receiver-01",
+        "art": 1,
+        "geometry": 0,
+        "framing": "Вся сцена"
+      },
+      "imageDimensionsPx": [
+        1265,
+        712
+      ],
+      "nativeStateExactForImage": true
+    },
+    {
+      "name": "10-seed0-t887-receiver01-whole",
+      "mode": "paused",
+      "UTC": "2026-10-30T01:06:02.212Z",
+      "before": "10-seed0-t887-receiver01-whole.before.ax.txt",
+      "image": "10-seed0-t887-receiver01-whole.jpg",
+      "after": "10-seed0-t887-receiver01-whole.after.ax.txt",
+      "beforeUI": {
+        "seed": 0,
+        "state": {
+          "tick": 887,
+          "rngU32": 3801544430,
+          "ball": {
+            "pos": {
+              "x": 32889.5174882,
+              "y": 34595.8404133
+            },
+            "vel": {
+              "x": 324.6611735,
+              "y": 1485.474971
+            }
+          },
+          "nearMissBucketIds": [],
+          "done": false
+        },
+        "statusText": "887 × 5 ms · в движении",
+        "art": 1,
+        "geometry": 0,
+        "framing": "Вся сцена"
+      },
+      "afterUI": {
+        "seed": 0,
+        "state": {
+          "tick": 887,
+          "rngU32": 3801544430,
+          "ball": {
+            "pos": {
+              "x": 32889.5174882,
+              "y": 34595.8404133
+            },
+            "vel": {
+              "x": 324.6611735,
+              "y": 1485.474971
+            }
+          },
+          "nearMissBucketIds": [],
+          "done": false
+        },
+        "statusText": "887 × 5 ms · в движении",
+        "art": 1,
+        "geometry": 0,
+        "framing": "Вся сцена"
+      },
+      "imageDimensionsPx": [
+        1265,
+        712
+      ],
+      "nativeStateExactForImage": true
+    },
+    {
+      "name": "11-seed0-approach-realtime",
+      "mode": "realtime",
+      "UTC": "2026-10-30T01:06:20.932Z",
+      "before": "11-seed0-approach-realtime.before.ax.txt",
+      "image": "11-seed0-approach-realtime.jpg",
+      "after": "11-seed0-approach-realtime.after.ax.txt",
+      "beforeUI": {
+        "seed": 0,
+        "state": {
+          "tick": 857,
+          "rngU32": 3801544430,
+          "ball": {
+            "pos": {
+              "x": 32840.8183112,
+              "y": 34383.6766663
+            },
+            "vel": {
+              "x": 324.6611735,
+              "y": 1338.474971
+            }
+          },
+          "nearMissBucketIds": [],
+          "done": false
+        },
+        "statusText": "857 × 5 ms · в движении",
+        "art": 1,
+        "geometry": 0,
+        "framing": "Игровое поле"
+      },
+      "afterUI": {
+        "seed": 0,
+        "state": {
+          "tick": 888,
+          "rngU32": 3801544430,
+          "ball": {
+            "pos": {
+              "x": 32891.1407941,
+              "y": 34603.2922882
+            },
+            "vel": {
+              "x": 324.6611735,
+              "y": 1490.374971
+            }
+          },
+          "nearMissBucketIds": [],
+          "done": true,
+          "result": {
+            "kind": "IN_BUCKET",
+            "bucketId": "receiver-01"
+          }
+        },
+        "statusText": "888 × 5 ms · IN_BUCKET / receiver-01",
+        "art": 1,
+        "geometry": 0,
+        "framing": "Игровое поле"
+      },
+      "imageDimensionsPx": [
+        1265,
+        712
+      ],
+      "nativeStateExactForImage": false,
+      "visibleTickReadout": 888
+    },
+    {
+      "name": "12-seed0-floor-realtime",
+      "mode": "realtime",
+      "UTC": "2026-10-30T01:06:42.839Z",
+      "before": "12-seed0-floor-realtime.before.ax.txt",
+      "image": "12-seed0-floor-realtime.jpg",
+      "after": "12-seed0-floor-realtime.after.ax.txt",
+      "beforeUI": {
+        "seed": 0,
+        "state": {
+          "tick": 773,
+          "rngU32": 2498801434,
+          "ball": {
+            "pos": {
+              "x": 32840.8818086,
+              "y": 33882.7396268
+            },
+            "vel": {
+              "x": 44.2252057,
+              "y": 998.8213952
+            }
+          },
+          "nearMissBucketIds": [],
+          "done": false
+        },
+        "statusText": "773 × 5 ms · в движении",
+        "art": 1,
+        "geometry": 0,
+        "framing": "Игровое поле"
+      },
+      "afterUI": {
+        "seed": 0,
+        "state": {
+          "tick": 830,
+          "rngU32": 2498801434,
+          "ball": {
+            "pos": {
+              "x": 32853.4859906,
+              "y": 34207.9022258
+            },
+            "vel": {
+              "x": 44.2252057,
+              "y": 1278.1213952
+            }
+          },
+          "nearMissBucketIds": [],
+          "done": false
+        },
+        "statusText": "830 × 5 ms · в движении",
+        "art": 1,
+        "geometry": 0,
+        "framing": "Игровое поле"
+      },
+      "imageDimensionsPx": [
+        1265,
+        712
+      ],
+      "nativeStateExactForImage": false,
+      "visibleTickReadout": 810
+    },
+    {
+      "name": "13-seed2-t367-pillar02-corner-field",
+      "mode": "paused",
+      "UTC": "2026-10-30T01:07:20.759Z",
+      "before": "13-seed2-t367-pillar02-corner-field.before.ax.txt",
+      "image": "13-seed2-t367-pillar02-corner-field.jpg",
+      "after": "13-seed2-t367-pillar02-corner-field.after.ax.txt",
+      "beforeUI": {
+        "seed": 2,
+        "state": {
+          "tick": 367,
+          "rngU32": 1975575172,
+          "ball": {
+            "pos": {
+              "x": 32960.152758,
+              "y": 33824.3113964
+            },
+            "vel": {
+              "x": -280.7055823,
+              "y": 1121.2079972
+            }
+          },
+          "nearMissBucketIds": [],
+          "done": false
+        },
+        "statusText": "367 × 5 ms · в движении",
+        "art": 1,
+        "geometry": 0,
+        "framing": "Игровое поле"
+      },
+      "afterUI": {
+        "seed": 2,
+        "state": {
+          "tick": 367,
+          "rngU32": 1975575172,
+          "ball": {
+            "pos": {
+              "x": 32960.152758,
+              "y": 33824.3113964
+            },
+            "vel": {
+              "x": -280.7055823,
+              "y": 1121.2079972
+            }
+          },
+          "nearMissBucketIds": [],
+          "done": false
+        },
+        "statusText": "367 × 5 ms · в движении",
+        "art": 1,
+        "geometry": 0,
+        "framing": "Игровое поле"
+      },
+      "imageDimensionsPx": [
+        1265,
+        712
+      ],
+      "nativeStateExactForImage": true
+    },
+    {
+      "name": "14-seed2-t368-pillar02-corner-field",
+      "mode": "paused",
+      "UTC": "2026-10-30T01:07:21.614Z",
+      "before": "14-seed2-t368-pillar02-corner-field.before.ax.txt",
+      "image": "14-seed2-t368-pillar02-corner-field.jpg",
+      "after": "14-seed2-t368-pillar02-corner-field.after.ax.txt",
+      "beforeUI": {
+        "seed": 2,
+        "state": {
+          "tick": 368,
+          "rngU32": 3186434646,
+          "ball": {
+            "pos": {
+              "x": 32958.781776,
+              "y": 33828.4312957
+            },
+            "vel": {
+              "x": -221.5122237,
+              "y": -911.9339816
+            }
+          },
+          "nearMissBucketIds": [],
+          "done": false
+        },
+        "statusText": "368 × 5 ms · в движении",
+        "art": 1,
+        "geometry": 0,
+        "framing": "Игровое поле"
+      },
+      "afterUI": {
+        "seed": 2,
+        "state": {
+          "tick": 368,
+          "rngU32": 3186434646,
+          "ball": {
+            "pos": {
+              "x": 32958.781776,
+              "y": 33828.4312957
+            },
+            "vel": {
+              "x": -221.5122237,
+              "y": -911.9339816
+            }
+          },
+          "nearMissBucketIds": [],
+          "done": false
+        },
+        "statusText": "368 × 5 ms · в движении",
+        "art": 1,
+        "geometry": 0,
+        "framing": "Игровое поле"
+      },
+      "imageDimensionsPx": [
+        1265,
+        712
+      ],
+      "nativeStateExactForImage": true
+    },
+    {
+      "name": "15-seed2-t369-pillar02-corner-field",
+      "mode": "paused",
+      "UTC": "2026-10-30T01:07:22.460Z",
+      "before": "15-seed2-t369-pillar02-corner-field.before.ax.txt",
+      "image": "15-seed2-t369-pillar02-corner-field.jpg",
+      "after": "15-seed2-t369-pillar02-corner-field.after.ax.txt",
+      "beforeUI": {
+        "seed": 2,
+        "state": {
+          "tick": 369,
+          "rngU32": 3186434646,
+          "ball": {
+            "pos": {
+              "x": 32957.6742149,
+              "y": 33823.8961258
+            },
+            "vel": {
+              "x": -221.5122237,
+              "y": -907.0339816
+            }
+          },
+          "nearMissBucketIds": [],
+          "done": false
+        },
+        "statusText": "369 × 5 ms · в движении",
+        "art": 1,
+        "geometry": 0,
+        "framing": "Игровое поле"
+      },
+      "afterUI": {
+        "seed": 2,
+        "state": {
+          "tick": 369,
+          "rngU32": 3186434646,
+          "ball": {
+            "pos": {
+              "x": 32957.6742149,
+              "y": 33823.8961258
+            },
+            "vel": {
+              "x": -221.5122237,
+              "y": -907.0339816
+            }
+          },
+          "nearMissBucketIds": [],
+          "done": false
+        },
+        "statusText": "369 × 5 ms · в движении",
+        "art": 1,
+        "geometry": 0,
+        "framing": "Игровое поле"
+      },
+      "imageDimensionsPx": [
+        1265,
+        712
+      ],
+      "nativeStateExactForImage": true
+    },
+    {
+      "name": "16-seed2-t972-pillar02-front-field",
+      "mode": "paused",
+      "UTC": "2026-10-30T01:07:45.971Z",
+      "before": "16-seed2-t972-pillar02-front-field.before.ax.txt",
+      "image": "16-seed2-t972-pillar02-front-field.jpg",
+      "after": "16-seed2-t972-pillar02-front-field.after.ax.txt",
+      "beforeUI": {
+        "seed": 2,
+        "state": {
+          "tick": 972,
+          "rngU32": 1919597778,
+          "ball": {
+            "pos": {
+              "x": 32901.5877642,
+              "y": 33923.7652135
+            },
+            "vel": {
+              "x": 30.0982009,
+              "y": -677.9396153
+            }
+          },
+          "nearMissBucketIds": [],
+          "done": false
+        },
+        "statusText": "972 × 5 ms · в движении",
+        "art": 1,
+        "geometry": 0,
+        "framing": "Игровое поле"
+      },
+      "afterUI": {
+        "seed": 2,
+        "state": {
+          "tick": 972,
+          "rngU32": 1919597778,
+          "ball": {
+            "pos": {
+              "x": 32901.5877642,
+              "y": 33923.7652135
+            },
+            "vel": {
+              "x": 30.0982009,
+              "y": -677.9396153
+            }
+          },
+          "nearMissBucketIds": [],
+          "done": false
+        },
+        "statusText": "972 × 5 ms · в движении",
+        "art": 1,
+        "geometry": 0,
+        "framing": "Игровое поле"
+      },
+      "imageDimensionsPx": [
+        1265,
+        712
+      ],
+      "nativeStateExactForImage": true
+    },
+    {
+      "name": "17-seed2-t973-pillar02-front-field",
+      "mode": "paused",
+      "UTC": "2026-10-30T01:07:46.834Z",
+      "before": "17-seed2-t973-pillar02-front-field.before.ax.txt",
+      "image": "17-seed2-t973-pillar02-front-field.jpg",
+      "after": "17-seed2-t973-pillar02-front-field.after.ax.txt",
+      "beforeUI": {
+        "seed": 2,
+        "state": {
+          "tick": 973,
+          "rngU32": 1469204436,
+          "ball": {
+            "pos": {
+              "x": 32901.7382552,
+              "y": 33922.8632843
+            },
+            "vel": {
+              "x": 35.9625272,
+              "y": 531.7151406
+            }
+          },
+          "nearMissBucketIds": [],
+          "done": false
+        },
+        "statusText": "973 × 5 ms · в движении",
+        "art": 1,
+        "geometry": 0,
+        "framing": "Игровое поле"
+      },
+      "afterUI": {
+        "seed": 2,
+        "state": {
+          "tick": 973,
+          "rngU32": 1469204436,
+          "ball": {
+            "pos": {
+              "x": 32901.7382552,
+              "y": 33922.8632843
+            },
+            "vel": {
+              "x": 35.9625272,
+              "y": 531.7151406
+            }
+          },
+          "nearMissBucketIds": [],
+          "done": false
+        },
+        "statusText": "973 × 5 ms · в движении",
+        "art": 1,
+        "geometry": 0,
+        "framing": "Игровое поле"
+      },
+      "imageDimensionsPx": [
+        1265,
+        712
+      ],
+      "nativeStateExactForImage": true
+    },
+    {
+      "name": "18-seed2-t974-pillar02-front-field",
+      "mode": "paused",
+      "UTC": "2026-10-30T01:07:47.663Z",
+      "before": "18-seed2-t974-pillar02-front-field.before.ax.txt",
+      "image": "18-seed2-t974-pillar02-front-field.jpg",
+      "after": "18-seed2-t974-pillar02-front-field.after.ax.txt",
+      "beforeUI": {
+        "seed": 2,
+        "state": {
+          "tick": 974,
+          "rngU32": 1469204436,
+          "ball": {
+            "pos": {
+              "x": 32901.9180678,
+              "y": 33925.54636
+            },
+            "vel": {
+              "x": 35.9625272,
+              "y": 536.6151406
+            }
+          },
+          "nearMissBucketIds": [],
+          "done": false
+        },
+        "statusText": "974 × 5 ms · в движении",
+        "art": 1,
+        "geometry": 0,
+        "framing": "Игровое поле"
+      },
+      "afterUI": {
+        "seed": 2,
+        "state": {
+          "tick": 974,
+          "rngU32": 1469204436,
+          "ball": {
+            "pos": {
+              "x": 32901.9180678,
+              "y": 33925.54636
+            },
+            "vel": {
+              "x": 35.9625272,
+              "y": 536.6151406
+            }
+          },
+          "nearMissBucketIds": [],
+          "done": false
+        },
+        "statusText": "974 × 5 ms · в движении",
+        "art": 1,
+        "geometry": 0,
+        "framing": "Игровое поле"
+      },
+      "imageDimensionsPx": [
+        1265,
+        712
+      ],
+      "nativeStateExactForImage": true
+    },
+    {
+      "name": "19-seed2-front-realtime",
+      "mode": "realtime",
+      "UTC": "2026-10-30T01:07:48.657Z",
+      "before": "19-seed2-front-realtime.before.ax.txt",
+      "image": "19-seed2-front-realtime.jpg",
+      "after": "19-seed2-front-realtime.after.ax.txt",
+      "beforeUI": {
+        "seed": 2,
+        "state": {
+          "tick": 981,
+          "rngU32": 1469204436,
+          "ball": {
+            "pos": {
+              "x": 32903.176756,
+              "y": 33945.0138899
+            },
+            "vel": {
+              "x": 35.9625272,
+              "y": 570.9151406
+            }
+          },
+          "nearMissBucketIds": [],
+          "done": false
+        },
+        "statusText": "981 × 5 ms · в движении",
+        "art": 1,
+        "geometry": 0,
+        "framing": "Игровое поле"
+      },
+      "afterUI": {
+        "seed": 2,
+        "state": {
+          "tick": 1038,
+          "rngU32": 1469204436,
+          "ball": {
+            "pos": {
+              "x": 32913.4260742,
+              "y": 34148.2232048
+            },
+            "vel": {
+              "x": 35.9625272,
+              "y": 850.2151406
+            }
+          },
+          "nearMissBucketIds": [],
+          "done": false
+        },
+        "statusText": "1038 × 5 ms · в движении",
+        "art": 1,
+        "geometry": 0,
+        "framing": "Игровое поле"
+      },
+      "imageDimensionsPx": [
+        1265,
+        712
+      ],
+      "nativeStateExactForImage": false,
+      "visibleTickReadout": 1021
+    },
+    {
+      "name": "20-seed2-t972-geometry-floor-registration",
+      "mode": "paused",
+      "UTC": "2026-10-30T01:08:30.499Z",
+      "before": "20-seed2-t972-geometry-floor-registration.before.ax.txt",
+      "image": "20-seed2-t972-geometry-floor-registration.jpg",
+      "after": "20-seed2-t972-geometry-floor-registration.after.ax.txt",
+      "beforeUI": {
+        "seed": 2,
+        "state": {
+          "tick": 972,
+          "rngU32": 1919597778,
+          "ball": {
+            "pos": {
+              "x": 32901.5877642,
+              "y": 33923.7652135
+            },
+            "vel": {
+              "x": 30.0982009,
+              "y": -677.9396153
+            }
+          },
+          "nearMissBucketIds": [],
+          "done": false
+        },
+        "statusText": "972 × 5 ms · в движении",
+        "art": 1,
+        "geometry": 1,
+        "framing": "Игровое поле"
+      },
+      "afterUI": {
+        "seed": 2,
+        "state": {
+          "tick": 972,
+          "rngU32": 1919597778,
+          "ball": {
+            "pos": {
+              "x": 32901.5877642,
+              "y": 33923.7652135
+            },
+            "vel": {
+              "x": 30.0982009,
+              "y": -677.9396153
+            }
+          },
+          "nearMissBucketIds": [],
+          "done": false
+        },
+        "statusText": "972 × 5 ms · в движении",
+        "art": 1,
+        "geometry": 1,
+        "framing": "Игровое поле"
+      },
+      "imageDimensionsPx": [
+        1265,
+        712
+      ],
+      "nativeStateExactForImage": true
+    },
+    {
+      "name": "21-seed3-t934-pillar04-corner-field",
+      "mode": "paused",
+      "UTC": "2026-10-30T01:08:31.425Z",
+      "before": "21-seed3-t934-pillar04-corner-field.before.ax.txt",
+      "image": "21-seed3-t934-pillar04-corner-field.jpg",
+      "after": "21-seed3-t934-pillar04-corner-field.after.ax.txt",
+      "beforeUI": {
+        "seed": 3,
+        "state": {
+          "tick": 934,
+          "rngU32": 3239019637,
+          "ball": {
+            "pos": {
+              "x": 32869.2406053,
+              "y": 34238.2667171
+            },
+            "vel": {
+              "x": 53.1649203,
+              "y": 1156.8415278
+            }
+          },
+          "nearMissBucketIds": [],
+          "done": false
+        },
+        "statusText": "934 × 5 ms · в движении",
+        "art": 1,
+        "geometry": 0,
+        "framing": "Игровое поле"
+      },
+      "afterUI": {
+        "seed": 3,
+        "state": {
+          "tick": 934,
+          "rngU32": 3239019637,
+          "ball": {
+            "pos": {
+              "x": 32869.2406053,
+              "y": 34238.2667171
+            },
+            "vel": {
+              "x": 53.1649203,
+              "y": 1156.8415278
+            }
+          },
+          "nearMissBucketIds": [],
+          "done": false
+        },
+        "statusText": "934 × 5 ms · в движении",
+        "art": 1,
+        "geometry": 0,
+        "framing": "Игровое поле"
+      },
+      "imageDimensionsPx": [
+        1265,
+        712
+      ],
+      "nativeStateExactForImage": true
+    },
+    {
+      "name": "22-seed3-t935-pillar04-corner-field",
+      "mode": "paused",
+      "UTC": "2026-10-30T01:08:32.254Z",
+      "before": "22-seed3-t935-pillar04-corner-field.before.ax.txt",
+      "image": "22-seed3-t935-pillar04-corner-field.jpg",
+      "after": "22-seed3-t935-pillar04-corner-field.after.ax.txt",
+      "beforeUI": {
+        "seed": 3,
+        "state": {
+          "tick": 935,
+          "rngU32": 3401623151,
+          "ball": {
+            "pos": {
+              "x": 32868.8145394,
+              "y": 34242.5216055
+            },
+            "vel": {
+              "x": -725.4238633,
+              "y": -630.2105492
+            }
+          },
+          "nearMissBucketIds": [],
+          "done": false
+        },
+        "statusText": "935 × 5 ms · в движении",
+        "art": 1,
+        "geometry": 0,
+        "framing": "Игровое поле"
+      },
+      "afterUI": {
+        "seed": 3,
+        "state": {
+          "tick": 935,
+          "rngU32": 3401623151,
+          "ball": {
+            "pos": {
+              "x": 32868.8145394,
+              "y": 34242.5216055
+            },
+            "vel": {
+              "x": -725.4238633,
+              "y": -630.2105492
+            }
+          },
+          "nearMissBucketIds": [],
+          "done": false
+        },
+        "statusText": "935 × 5 ms · в движении",
+        "art": 1,
+        "geometry": 0,
+        "framing": "Игровое поле"
+      },
+      "imageDimensionsPx": [
+        1265,
+        712
+      ],
+      "nativeStateExactForImage": true
+    },
+    {
+      "name": "23-seed3-t936-pillar04-corner-field",
+      "mode": "paused",
+      "UTC": "2026-10-30T01:08:33.112Z",
+      "before": "23-seed3-t936-pillar04-corner-field.before.ax.txt",
+      "image": "23-seed3-t936-pillar04-corner-field.jpg",
+      "after": "23-seed3-t936-pillar04-corner-field.after.ax.txt",
+      "beforeUI": {
+        "seed": 3,
+        "state": {
+          "tick": 936,
+          "rngU32": 3401623151,
+          "ball": {
+            "pos": {
+              "x": 32865.1874201,
+              "y": 34239.3950528
+            },
+            "vel": {
+              "x": -725.4238633,
+              "y": -625.3105492
+            }
+          },
+          "nearMissBucketIds": [],
+          "done": false
+        },
+        "statusText": "936 × 5 ms · в движении",
+        "art": 1,
+        "geometry": 0,
+        "framing": "Игровое поле"
+      },
+      "afterUI": {
+        "seed": 3,
+        "state": {
+          "tick": 936,
+          "rngU32": 3401623151,
+          "ball": {
+            "pos": {
+              "x": 32865.1874201,
+              "y": 34239.3950528
+            },
+            "vel": {
+              "x": -725.4238633,
+              "y": -625.3105492
+            }
+          },
+          "nearMissBucketIds": [],
+          "done": false
+        },
+        "statusText": "936 × 5 ms · в движении",
+        "art": 1,
+        "geometry": 0,
+        "framing": "Игровое поле"
+      },
+      "imageDimensionsPx": [
+        1265,
+        712
+      ],
+      "nativeStateExactForImage": true
+    },
+    {
+      "name": "24-seed3-t1267-receiver02-field",
+      "mode": "paused",
+      "UTC": "2026-10-30T01:09:23.943Z",
+      "before": "24-seed3-t1267-receiver02-field.before.ax.txt",
+      "image": "24-seed3-t1267-receiver02-field.jpg",
+      "after": "24-seed3-t1267-receiver02-field.after.ax.txt",
+      "beforeUI": {
+        "seed": 3,
+        "state": {
+          "tick": 1267,
+          "rngU32": 1534489277,
+          "ball": {
+            "pos": {
+              "x": 33199.189244,
+              "y": 34588.6674204
+            },
+            "vel": {
+              "x": 390.3345314,
+              "y": 1032.4772047
+            }
+          },
+          "nearMissBucketIds": [],
+          "done": false
+        },
+        "statusText": "1267 × 5 ms · в движении",
+        "art": 1,
+        "geometry": 0,
+        "framing": "Игровое поле"
+      },
+      "afterUI": {
+        "seed": 3,
+        "state": {
+          "tick": 1267,
+          "rngU32": 1534489277,
+          "ball": {
+            "pos": {
+              "x": 33199.189244,
+              "y": 34588.6674204
+            },
+            "vel": {
+              "x": 390.3345314,
+              "y": 1032.4772047
+            }
+          },
+          "nearMissBucketIds": [],
+          "done": false
+        },
+        "statusText": "1267 × 5 ms · в движении",
+        "art": 1,
+        "geometry": 0,
+        "framing": "Игровое поле"
+      },
+      "imageDimensionsPx": [
+        1265,
+        712
+      ],
+      "nativeStateExactForImage": true
+    },
+    {
+      "name": "25-seed3-t1268-receiver02-field",
+      "mode": "paused",
+      "UTC": "2026-10-30T01:09:24.781Z",
+      "before": "25-seed3-t1268-receiver02-field.before.ax.txt",
+      "image": "25-seed3-t1268-receiver02-field.jpg",
+      "after": "25-seed3-t1268-receiver02-field.after.ax.txt",
+      "beforeUI": {
+        "seed": 3,
+        "state": {
+          "tick": 1268,
+          "rngU32": 1534489277,
+          "ball": {
+            "pos": {
+              "x": 33201.1409167,
+              "y": 34593.8543064
+            },
+            "vel": {
+              "x": 390.3345314,
+              "y": 1037.3772047
+            }
+          },
+          "nearMissBucketIds": [],
+          "done": false
+        },
+        "statusText": "1268 × 5 ms · в движении",
+        "art": 1,
+        "geometry": 0,
+        "framing": "Игровое поле"
+      },
+      "afterUI": {
+        "seed": 3,
+        "state": {
+          "tick": 1268,
+          "rngU32": 1534489277,
+          "ball": {
+            "pos": {
+              "x": 33201.1409167,
+              "y": 34593.8543064
+            },
+            "vel": {
+              "x": 390.3345314,
+              "y": 1037.3772047
+            }
+          },
+          "nearMissBucketIds": [],
+          "done": false
+        },
+        "statusText": "1268 × 5 ms · в движении",
+        "art": 1,
+        "geometry": 0,
+        "framing": "Игровое поле"
+      },
+      "imageDimensionsPx": [
+        1265,
+        712
+      ],
+      "nativeStateExactForImage": true
+    },
+    {
+      "name": "26-seed3-t1269-receiver02-field",
+      "mode": "paused",
+      "UTC": "2026-10-30T01:09:25.604Z",
+      "before": "26-seed3-t1269-receiver02-field.before.ax.txt",
+      "image": "26-seed3-t1269-receiver02-field.jpg",
+      "after": "26-seed3-t1269-receiver02-field.after.ax.txt",
+      "beforeUI": {
+        "seed": 3,
+        "state": {
+          "tick": 1269,
+          "rngU32": 1534489277,
+          "ball": {
+            "pos": {
+              "x": 33203.0925894,
+              "y": 34599.0656924
+            },
+            "vel": {
+              "x": 390.3345314,
+              "y": 1042.2772047
+            }
+          },
+          "nearMissBucketIds": [],
+          "done": true,
+          "result": {
+            "kind": "IN_BUCKET",
+            "bucketId": "receiver-02"
+          }
+        },
+        "statusText": "1269 × 5 ms · IN_BUCKET / receiver-02",
+        "art": 1,
+        "geometry": 0,
+        "framing": "Игровое поле"
+      },
+      "afterUI": {
+        "seed": 3,
+        "state": {
+          "tick": 1269,
+          "rngU32": 1534489277,
+          "ball": {
+            "pos": {
+              "x": 33203.0925894,
+              "y": 34599.0656924
+            },
+            "vel": {
+              "x": 390.3345314,
+              "y": 1042.2772047
+            }
+          },
+          "nearMissBucketIds": [],
+          "done": true,
+          "result": {
+            "kind": "IN_BUCKET",
+            "bucketId": "receiver-02"
+          }
+        },
+        "statusText": "1269 × 5 ms · IN_BUCKET / receiver-02",
+        "art": 1,
+        "geometry": 0,
+        "framing": "Игровое поле"
+      },
+      "imageDimensionsPx": [
+        1265,
+        712
+      ],
+      "nativeStateExactForImage": true
+    },
+    {
+      "name": "27-seed3-t1269-hold-field",
+      "mode": "paused",
+      "UTC": "2026-10-30T01:09:26.464Z",
+      "before": "27-seed3-t1269-hold-field.before.ax.txt",
+      "image": "27-seed3-t1269-hold-field.jpg",
+      "after": "27-seed3-t1269-hold-field.after.ax.txt",
+      "beforeUI": {
+        "seed": 3,
+        "state": {
+          "tick": 1269,
+          "rngU32": 1534489277,
+          "ball": {
+            "pos": {
+              "x": 33203.0925894,
+              "y": 34599.0656924
+            },
+            "vel": {
+              "x": 390.3345314,
+              "y": 1042.2772047
+            }
+          },
+          "nearMissBucketIds": [],
+          "done": true,
+          "result": {
+            "kind": "IN_BUCKET",
+            "bucketId": "receiver-02"
+          }
+        },
+        "statusText": "1269 × 5 ms · IN_BUCKET / receiver-02",
+        "art": 1,
+        "geometry": 0,
+        "framing": "Игровое поле"
+      },
+      "afterUI": {
+        "seed": 3,
+        "state": {
+          "tick": 1269,
+          "rngU32": 1534489277,
+          "ball": {
+            "pos": {
+              "x": 33203.0925894,
+              "y": 34599.0656924
+            },
+            "vel": {
+              "x": 390.3345314,
+              "y": 1042.2772047
+            }
+          },
+          "nearMissBucketIds": [],
+          "done": true,
+          "result": {
+            "kind": "IN_BUCKET",
+            "bucketId": "receiver-02"
+          }
+        },
+        "statusText": "1269 × 5 ms · IN_BUCKET / receiver-02",
+        "art": 1,
+        "geometry": 0,
+        "framing": "Игровое поле"
+      },
+      "imageDimensionsPx": [
+        1265,
+        712
+      ],
+      "nativeStateExactForImage": true
+    },
+    {
+      "name": "28-seed3-t1269-receiver02-whole",
+      "mode": "paused",
+      "UTC": "2026-10-30T01:10:04.321Z",
+      "before": "28-seed3-t1269-receiver02-whole.before.ax.txt",
+      "image": "28-seed3-t1269-receiver02-whole.jpg",
+      "after": "28-seed3-t1269-receiver02-whole.after.ax.txt",
+      "beforeUI": {
+        "seed": 3,
+        "state": {
+          "tick": 1269,
+          "rngU32": 1534489277,
+          "ball": {
+            "pos": {
+              "x": 33203.0925894,
+              "y": 34599.0656924
+            },
+            "vel": {
+              "x": 390.3345314,
+              "y": 1042.2772047
+            }
+          },
+          "nearMissBucketIds": [],
+          "done": true,
+          "result": {
+            "kind": "IN_BUCKET",
+            "bucketId": "receiver-02"
+          }
+        },
+        "statusText": "1269 × 5 ms · IN_BUCKET / receiver-02",
+        "art": 1,
+        "geometry": 0,
+        "framing": "Вся сцена"
+      },
+      "afterUI": {
+        "seed": 3,
+        "state": {
+          "tick": 1269,
+          "rngU32": 1534489277,
+          "ball": {
+            "pos": {
+              "x": 33203.0925894,
+              "y": 34599.0656924
+            },
+            "vel": {
+              "x": 390.3345314,
+              "y": 1042.2772047
+            }
+          },
+          "nearMissBucketIds": [],
+          "done": true,
+          "result": {
+            "kind": "IN_BUCKET",
+            "bucketId": "receiver-02"
+          }
+        },
+        "statusText": "1269 × 5 ms · IN_BUCKET / receiver-02",
+        "art": 1,
+        "geometry": 0,
+        "framing": "Вся сцена"
+      },
+      "imageDimensionsPx": [
+        1265,
+        712
+      ],
+      "nativeStateExactForImage": true
+    },
+    {
+      "name": "29-seed3-t1268-receiver02-whole",
+      "mode": "paused",
+      "UTC": "2026-10-30T01:10:05.145Z",
+      "before": "29-seed3-t1268-receiver02-whole.before.ax.txt",
+      "image": "29-seed3-t1268-receiver02-whole.jpg",
+      "after": "29-seed3-t1268-receiver02-whole.after.ax.txt",
+      "beforeUI": {
+        "seed": 3,
+        "state": {
+          "tick": 1268,
+          "rngU32": 1534489277,
+          "ball": {
+            "pos": {
+              "x": 33201.1409167,
+              "y": 34593.8543064
+            },
+            "vel": {
+              "x": 390.3345314,
+              "y": 1037.3772047
+            }
+          },
+          "nearMissBucketIds": [],
+          "done": false
+        },
+        "statusText": "1268 × 5 ms · в движении",
+        "art": 1,
+        "geometry": 0,
+        "framing": "Вся сцена"
+      },
+      "afterUI": {
+        "seed": 3,
+        "state": {
+          "tick": 1268,
+          "rngU32": 1534489277,
+          "ball": {
+            "pos": {
+              "x": 33201.1409167,
+              "y": 34593.8543064
+            },
+            "vel": {
+              "x": 390.3345314,
+              "y": 1037.3772047
+            }
+          },
+          "nearMissBucketIds": [],
+          "done": false
+        },
+        "statusText": "1268 × 5 ms · в движении",
+        "art": 1,
+        "geometry": 0,
+        "framing": "Вся сцена"
+      },
+      "imageDimensionsPx": [
+        1265,
+        712
+      ],
+      "nativeStateExactForImage": true
+    },
+    {
+      "name": "30-seed3-receiver02-realtime",
+      "mode": "realtime",
+      "UTC": "2026-10-30T01:10:43.240Z",
+      "before": "30-seed3-receiver02-realtime.before.ax.txt",
+      "image": "30-seed3-receiver02-realtime.jpg",
+      "after": "30-seed3-receiver02-realtime.after.ax.txt",
+      "beforeUI": {
+        "seed": 3,
+        "state": {
+          "tick": 1234,
+          "rngU32": 1534489277,
+          "ball": {
+            "pos": {
+              "x": 33134.7840449,
+              "y": 34431.2446824
+            },
+            "vel": {
+              "x": 390.3345314,
+              "y": 870.7772047
+            }
+          },
+          "nearMissBucketIds": [],
+          "done": false
+        },
+        "statusText": "1234 × 5 ms · в движении",
+        "art": 1,
+        "geometry": 0,
+        "framing": "Игровое поле"
+      },
+      "afterUI": {
+        "seed": 3,
+        "state": {
+          "tick": 1269,
+          "rngU32": 1534489277,
+          "ball": {
+            "pos": {
+              "x": 33203.0925894,
+              "y": 34599.0656924
+            },
+            "vel": {
+              "x": 390.3345314,
+              "y": 1042.2772047
+            }
+          },
+          "nearMissBucketIds": [],
+          "done": true,
+          "result": {
+            "kind": "IN_BUCKET",
+            "bucketId": "receiver-02"
+          }
+        },
+        "statusText": "1269 × 5 ms · IN_BUCKET / receiver-02",
+        "art": 1,
+        "geometry": 0,
+        "framing": "Игровое поле"
+      },
+      "imageDimensionsPx": [
+        1265,
+        712
+      ],
+      "nativeStateExactForImage": false,
+      "visibleTickReadout": 1264
+    },
+    {
+      "name": "31-seed1-t884-terminal-field",
+      "mode": "paused",
+      "UTC": "2026-10-30T01:11:15.085Z",
+      "before": "31-seed1-t884-terminal-field.before.ax.txt",
+      "image": "31-seed1-t884-terminal-field.jpg",
+      "after": "31-seed1-t884-terminal-field.after.ax.txt",
+      "beforeUI": {
+        "seed": 1,
+        "state": {
+          "tick": 884,
+          "rngU32": 3594602695,
+          "ball": {
+            "pos": {
+              "x": 32881.1407307,
+              "y": 34599.6217414
+            },
+            "vel": {
+              "x": 292.9418425,
+              "y": 1491.0861662
+            }
+          },
+          "nearMissBucketIds": [],
+          "done": true,
+          "result": {
+            "kind": "IN_BUCKET",
+            "bucketId": "receiver-01"
+          }
+        },
+        "statusText": "884 × 5 ms · IN_BUCKET / receiver-01",
+        "art": 1,
+        "geometry": 0,
+        "framing": "Игровое поле"
+      },
+      "afterUI": {
+        "seed": 1,
+        "state": {
+          "tick": 884,
+          "rngU32": 3594602695,
+          "ball": {
+            "pos": {
+              "x": 32881.1407307,
+              "y": 34599.6217414
+            },
+            "vel": {
+              "x": 292.9418425,
+              "y": 1491.0861662
+            }
+          },
+          "nearMissBucketIds": [],
+          "done": true,
+          "result": {
+            "kind": "IN_BUCKET",
+            "bucketId": "receiver-01"
+          }
+        },
+        "statusText": "884 × 5 ms · IN_BUCKET / receiver-01",
+        "art": 1,
+        "geometry": 0,
+        "framing": "Игровое поле"
+      },
+      "imageDimensionsPx": [
+        1265,
+        712
+      ],
+      "nativeStateExactForImage": true
+    }
+  ],
+  "replayOutcomes": [
+    {
+      "seed": 0,
+      "state": {
+        "tick": 888,
+        "rngU32": 3801544430,
+        "ball": {
+          "pos": {
+            "x": 32891.1407941,
+            "y": 34603.2922882
+          },
+          "vel": {
+            "x": 324.6611735,
+            "y": 1490.374971
+          }
+        },
+        "nearMissBucketIds": [],
+        "done": true,
+        "result": {
+          "kind": "IN_BUCKET",
+          "bucketId": "receiver-01"
+        }
+      },
+      "statusText": "888 × 5 ms · IN_BUCKET / receiver-01",
+      "art": 1,
+      "geometry": 0,
+      "framing": "Игровое поле"
+    },
+    {
+      "seed": 1,
+      "state": {
+        "tick": 884,
+        "rngU32": 3594602695,
+        "ball": {
+          "pos": {
+            "x": 32881.1407307,
+            "y": 34599.6217414
+          },
+          "vel": {
+            "x": 292.9418425,
+            "y": 1491.0861662
+          }
+        },
+        "nearMissBucketIds": [],
+        "done": true,
+        "result": {
+          "kind": "IN_BUCKET",
+          "bucketId": "receiver-01"
+        }
+      },
+      "statusText": "884 × 5 ms · IN_BUCKET / receiver-01",
+      "art": 1,
+      "geometry": 0,
+      "framing": "Игровое поле"
+    },
+    {
+      "seed": 2,
+      "state": {
+        "tick": 1812,
+        "rngU32": 2866302536,
+        "ball": {
+          "pos": {
+            "x": 32824.3930072,
+            "y": 35121.8074605
+          },
+          "vel": {
+            "x": -35.843787,
+            "y": 1462.4528772
+          }
+        },
+        "nearMissBucketIds": [],
+        "done": true,
+        "result": {
+          "kind": "LOST",
+          "finalX": 32824.3930072,
+          "nearMissBucketIds": []
+        }
+      },
+      "statusText": "1812 × 5 ms · LOST",
+      "art": 1,
+      "geometry": 0,
+      "framing": "Игровое поле"
+    },
+    {
+      "seed": 3,
+      "state": {
+        "tick": 1269,
+        "rngU32": 1534489277,
+        "ball": {
+          "pos": {
+            "x": 33203.0925894,
+            "y": 34599.0656924
+          },
+          "vel": {
+            "x": 390.3345314,
+            "y": 1042.2772047
+          }
+        },
+        "nearMissBucketIds": [],
+        "done": true,
+        "result": {
+          "kind": "IN_BUCKET",
+          "bucketId": "receiver-02"
+        }
+      },
+      "statusText": "1269 × 5 ms · IN_BUCKET / receiver-02",
+      "art": 1,
+      "geometry": 0,
+      "framing": "Игровое поле"
+    }
+  ],
+  "files": [
+    {
+      "path": "01-seed0-t840-whole.after.ax.txt",
+      "bytes": 17205,
+      "sha256": "980dd97933d6f7135a9aff1c7d4166a59ec4fd6e57150f9ef215972816bf1fa2"
+    },
+    {
+      "path": "01-seed0-t840-whole.before.ax.txt",
+      "bytes": 17205,
+      "sha256": "980dd97933d6f7135a9aff1c7d4166a59ec4fd6e57150f9ef215972816bf1fa2"
+    },
+    {
+      "path": "01-seed0-t840-whole.jpg",
+      "bytes": 89358,
+      "sha256": "aece97c5f8e98d3edd635f58f19b91459e82fc6692cda1fb9c1b88ae067a2d3c"
+    },
+    {
+      "path": "02-seed0-t840-pillar04-side-field.after.ax.txt",
+      "bytes": 17219,
+      "sha256": "ec1c4631718557d758addb96bf5eb13ca697601ad8ae8c992aef7712e343e85d"
+    },
+    {
+      "path": "02-seed0-t840-pillar04-side-field.before.ax.txt",
+      "bytes": 17219,
+      "sha256": "ec1c4631718557d758addb96bf5eb13ca697601ad8ae8c992aef7712e343e85d"
+    },
+    {
+      "path": "02-seed0-t840-pillar04-side-field.jpg",
+      "bytes": 113231,
+      "sha256": "cbc5a3c35949b473e73a97ae43a8ccefd0dfce6d0e1b31d5d288cbe295ce299e"
+    },
+    {
+      "path": "03-seed0-t841-pillar04-side-field.after.ax.txt",
+      "bytes": 17188,
+      "sha256": "528b44f27fc4673505e20269917c0074a8c643daf61fa53e621ec91f39597947"
+    },
+    {
+      "path": "03-seed0-t841-pillar04-side-field.before.ax.txt",
+      "bytes": 17188,
+      "sha256": "528b44f27fc4673505e20269917c0074a8c643daf61fa53e621ec91f39597947"
+    },
+    {
+      "path": "03-seed0-t841-pillar04-side-field.jpg",
+      "bytes": 113205,
+      "sha256": "2a0cad7d78b1f0783ca7ada026b52c450111a3ff31fe81154de7a8cbb658fb75"
+    },
+    {
+      "path": "04-seed0-t842-pillar04-side-field.after.ax.txt",
+      "bytes": 17188,
+      "sha256": "a50f525b00863a8cc5a9a3a4583103124c7b99bc60a5acfc336101583572da26"
+    },
+    {
+      "path": "04-seed0-t842-pillar04-side-field.before.ax.txt",
+      "bytes": 17188,
+      "sha256": "a50f525b00863a8cc5a9a3a4583103124c7b99bc60a5acfc336101583572da26"
+    },
+    {
+      "path": "04-seed0-t842-pillar04-side-field.jpg",
+      "bytes": 113248,
+      "sha256": "7284915e525ad4c951cdc43e166f95a6773160a03a5a4d2cf3131cb6fa198470"
+    },
+    {
+      "path": "05-seed0-t886-receiver01-field.after.ax.txt",
+      "bytes": 17211,
+      "sha256": "33dfe2a8c7cf1d49d57f5b818f58df03e7faacd42585cc791b12dc963253b901"
+    },
+    {
+      "path": "05-seed0-t886-receiver01-field.before.ax.txt",
+      "bytes": 17211,
+      "sha256": "33dfe2a8c7cf1d49d57f5b818f58df03e7faacd42585cc791b12dc963253b901"
+    },
+    {
+      "path": "05-seed0-t886-receiver01-field.jpg",
+      "bytes": 113246,
+      "sha256": "25bf61d4ff2029ecec5be0974238cbffe589efea0661d06d530dc88ea4e14dfd"
+    },
+    {
+      "path": "06-seed0-t887-receiver01-field.after.ax.txt",
+      "bytes": 17186,
+      "sha256": "d885490cea51276f82ab53282488a5c50e95e5a6e160f6cfa3e77da21b6000d6"
+    },
+    {
+      "path": "06-seed0-t887-receiver01-field.before.ax.txt",
+      "bytes": 17186,
+      "sha256": "d885490cea51276f82ab53282488a5c50e95e5a6e160f6cfa3e77da21b6000d6"
+    },
+    {
+      "path": "06-seed0-t887-receiver01-field.jpg",
+      "bytes": 113200,
+      "sha256": "fc9cf9090c39533bdfae6e1f52f5e5c0772deda0f27a0ecc20822cb26ad9fce6"
+    },
+    {
+      "path": "07-seed0-t888-receiver01-field.after.ax.txt",
+      "bytes": 17263,
+      "sha256": "9caa13bbd3254572aa5d651863bcb4363f7ae0962766c9ff6d98b3532a4a84c0"
+    },
+    {
+      "path": "07-seed0-t888-receiver01-field.before.ax.txt",
+      "bytes": 17263,
+      "sha256": "9caa13bbd3254572aa5d651863bcb4363f7ae0962766c9ff6d98b3532a4a84c0"
+    },
+    {
+      "path": "07-seed0-t888-receiver01-field.jpg",
+      "bytes": 113898,
+      "sha256": "fde34a85a3738af4cd99735e4b8fd38a7fd8e93286df9cb2ef50fb8b9f4660f5"
+    },
+    {
+      "path": "08-seed0-t888-hold-field.after.ax.txt",
+      "bytes": 17263,
+      "sha256": "9caa13bbd3254572aa5d651863bcb4363f7ae0962766c9ff6d98b3532a4a84c0"
+    },
+    {
+      "path": "08-seed0-t888-hold-field.before.ax.txt",
+      "bytes": 17263,
+      "sha256": "9caa13bbd3254572aa5d651863bcb4363f7ae0962766c9ff6d98b3532a4a84c0"
+    },
+    {
+      "path": "08-seed0-t888-hold-field.jpg",
+      "bytes": 113898,
+      "sha256": "fde34a85a3738af4cd99735e4b8fd38a7fd8e93286df9cb2ef50fb8b9f4660f5"
+    },
+    {
+      "path": "09-seed0-t888-receiver01-whole.after.ax.txt",
+      "bytes": 17290,
+      "sha256": "b13cba3782b9f007c2f938f3ae22003ad9734aa3be9bf31646c17c4330914b6b"
+    },
+    {
+      "path": "09-seed0-t888-receiver01-whole.before.ax.txt",
+      "bytes": 17290,
+      "sha256": "b13cba3782b9f007c2f938f3ae22003ad9734aa3be9bf31646c17c4330914b6b"
+    },
+    {
+      "path": "09-seed0-t888-receiver01-whole.jpg",
+      "bytes": 90024,
+      "sha256": "6f972e0ab8930ae290867144f3fb41f604a5b4473d907c5074122cea6b75c183"
+    },
+    {
+      "path": "10-seed0-t887-receiver01-whole.after.ax.txt",
+      "bytes": 17205,
+      "sha256": "58c9d3e7e044445c82e9bb6b41d2c6c6e2d0f83b538909340824c4b4b7fabf09"
+    },
+    {
+      "path": "10-seed0-t887-receiver01-whole.before.ax.txt",
+      "bytes": 17205,
+      "sha256": "58c9d3e7e044445c82e9bb6b41d2c6c6e2d0f83b538909340824c4b4b7fabf09"
+    },
+    {
+      "path": "10-seed0-t887-receiver01-whole.jpg",
+      "bytes": 89335,
+      "sha256": "241f17a22fcfe65636229987b544bb467275e7b48757813f862757e6770f9f90"
+    },
+    {
+      "path": "11-seed0-approach-realtime.after.ax.txt",
+      "bytes": 17271,
+      "sha256": "8f3ed56628de3ba04f63892a3cfdb5e61852fa00a442df0a8bec38b27c413aea"
+    },
+    {
+      "path": "11-seed0-approach-realtime.before.ax.txt",
+      "bytes": 17174,
+      "sha256": "c1a8dfcf931b914e8caeda6c9667b2eae010d412b37f14f75df8200e2238d8ac"
+    },
+    {
+      "path": "11-seed0-approach-realtime.jpg",
+      "bytes": 113979,
+      "sha256": "f1ec12cd588ed2d105e877de6323053696bbeb7f78210b703fdabcd56db284dc"
+    },
+    {
+      "path": "12-seed0-floor-realtime.after.ax.txt",
+      "bytes": 17174,
+      "sha256": "664fdbc0eba55a8b3d018ca37b09ed26e2fcd0535cef9b28728c1101b3c02ae7"
+    },
+    {
+      "path": "12-seed0-floor-realtime.before.ax.txt",
+      "bytes": 17173,
+      "sha256": "bb814b3f5d28813a44e0f0026c82e1b2025664339577fef8888f5345f591bf84"
+    },
+    {
+      "path": "12-seed0-floor-realtime.jpg",
+      "bytes": 113259,
+      "sha256": "777c1da357457cc5a3824960b59006d7ea1373d153f0b3774d9361335428db73"
+    },
+    {
+      "path": "13-seed2-t367-pillar02-corner-field.after.ax.txt",
+      "bytes": 17212,
+      "sha256": "e4cf91c8cf835cc092f41da4f0ddad6606142c6ed99df18ffadba323eedc428d"
+    },
+    {
+      "path": "13-seed2-t367-pillar02-corner-field.before.ax.txt",
+      "bytes": 17212,
+      "sha256": "e4cf91c8cf835cc092f41da4f0ddad6606142c6ed99df18ffadba323eedc428d"
+    },
+    {
+      "path": "13-seed2-t367-pillar02-corner-field.jpg",
+      "bytes": 119342,
+      "sha256": "214abe2b73e8fa5b39b00a2e33a2d499d0e16e81da0060f8001875c9d8710693"
+    },
+    {
+      "path": "14-seed2-t368-pillar02-corner-field.after.ax.txt",
+      "bytes": 17187,
+      "sha256": "682b722c1445f1f82d8d738f5906d44ed72250a16996afc30fa6c1c6f0ca2c5b"
+    },
+    {
+      "path": "14-seed2-t368-pillar02-corner-field.before.ax.txt",
+      "bytes": 17187,
+      "sha256": "682b722c1445f1f82d8d738f5906d44ed72250a16996afc30fa6c1c6f0ca2c5b"
+    },
+    {
+      "path": "14-seed2-t368-pillar02-corner-field.jpg",
+      "bytes": 119351,
+      "sha256": "241bf1d1398267123f79ae1d49ccde9f3c4465823d13baaa3cdd60dcad6370b5"
+    },
+    {
+      "path": "15-seed2-t369-pillar02-corner-field.after.ax.txt",
+      "bytes": 17188,
+      "sha256": "c8736ada86f765a2549f40bd1c688e6d7b2c35657f1f4e5e5357ba7d0da3cb05"
+    },
+    {
+      "path": "15-seed2-t369-pillar02-corner-field.before.ax.txt",
+      "bytes": 17188,
+      "sha256": "c8736ada86f765a2549f40bd1c688e6d7b2c35657f1f4e5e5357ba7d0da3cb05"
+    },
+    {
+      "path": "15-seed2-t369-pillar02-corner-field.jpg",
+      "bytes": 119320,
+      "sha256": "98d548b18551dfed298fbd0fc46602e7053d268d08a45ae93a05307d2ef397ea"
+    },
+    {
+      "path": "16-seed2-t972-pillar02-front-field.after.ax.txt",
+      "bytes": 17211,
+      "sha256": "5503b8ce9aeb348e1510a1a007f918d2cae46261a4349c3ad6b3a6736e8dd574"
+    },
+    {
+      "path": "16-seed2-t972-pillar02-front-field.before.ax.txt",
+      "bytes": 17211,
+      "sha256": "5503b8ce9aeb348e1510a1a007f918d2cae46261a4349c3ad6b3a6736e8dd574"
+    },
+    {
+      "path": "16-seed2-t972-pillar02-front-field.jpg",
+      "bytes": 119394,
+      "sha256": "babc0d95dbf920336ae61c6647e93baf722f9b9c9f0ae34d8833023754f8bc4c"
+    },
+    {
+      "path": "17-seed2-t973-pillar02-front-field.after.ax.txt",
+      "bytes": 17185,
+      "sha256": "82ac3d9217a282d6577461810ce7bc0c16f8007f9019219af95c2f494e8b797a"
+    },
+    {
+      "path": "17-seed2-t973-pillar02-front-field.before.ax.txt",
+      "bytes": 17185,
+      "sha256": "82ac3d9217a282d6577461810ce7bc0c16f8007f9019219af95c2f494e8b797a"
+    },
+    {
+      "path": "17-seed2-t973-pillar02-front-field.jpg",
+      "bytes": 119418,
+      "sha256": "15e79aa34ed06f62610e10d33561c99ca51ccbf1d5c154f97f2cb32a4f440761"
+    },
+    {
+      "path": "18-seed2-t974-pillar02-front-field.after.ax.txt",
+      "bytes": 17183,
+      "sha256": "8df24ffea0ca14c7f70a879c5600edcdfa2c1bc9a9aba6eb55c4d9bbb54ca462"
+    },
+    {
+      "path": "18-seed2-t974-pillar02-front-field.before.ax.txt",
+      "bytes": 17183,
+      "sha256": "8df24ffea0ca14c7f70a879c5600edcdfa2c1bc9a9aba6eb55c4d9bbb54ca462"
+    },
+    {
+      "path": "18-seed2-t974-pillar02-front-field.jpg",
+      "bytes": 119374,
+      "sha256": "1f16b7419f1ebe7d4c6f53a04fe5a32ecda6e8372384dede4bf2fcdb89cdf0aa"
+    },
+    {
+      "path": "19-seed2-front-realtime.after.ax.txt",
+      "bytes": 17177,
+      "sha256": "5e1bba78be4c8224751a2852363efe2c2b2b452c31f2bb2fcdfc360186239d57"
+    },
+    {
+      "path": "19-seed2-front-realtime.before.ax.txt",
+      "bytes": 17172,
+      "sha256": "7ac9f4f245610fa40c5602ea04330010b0ae26e513064eeb29a0f3cdcde1230e"
+    },
+    {
+      "path": "19-seed2-front-realtime.jpg",
+      "bytes": 119197,
+      "sha256": "34f194dbf46d4c4060fa56de062e1aae13544ffaa66dd6d71b42cef1b77621da"
+    },
+    {
+      "path": "20-seed2-t972-geometry-floor-registration.after.ax.txt",
+      "bytes": 17240,
+      "sha256": "c138873f301d61e7ecfa9d9363ec02d699994ffe1d7fb832edc3d7e4bf5930b2"
+    },
+    {
+      "path": "20-seed2-t972-geometry-floor-registration.before.ax.txt",
+      "bytes": 17240,
+      "sha256": "c138873f301d61e7ecfa9d9363ec02d699994ffe1d7fb832edc3d7e4bf5930b2"
+    },
+    {
+      "path": "20-seed2-t972-geometry-floor-registration.jpg",
+      "bytes": 127549,
+      "sha256": "b8cef0adb25f6ae069703941cb64a2cdccfc2daa734223593fe764f738369711"
+    },
+    {
+      "path": "21-seed3-t934-pillar04-corner-field.after.ax.txt",
+      "bytes": 17211,
+      "sha256": "ea3a14d7240e4f39ff2a641f1226686916cf37056046e13fcf1d2858ae020141"
+    },
+    {
+      "path": "21-seed3-t934-pillar04-corner-field.before.ax.txt",
+      "bytes": 17211,
+      "sha256": "ea3a14d7240e4f39ff2a641f1226686916cf37056046e13fcf1d2858ae020141"
+    },
+    {
+      "path": "21-seed3-t934-pillar04-corner-field.jpg",
+      "bytes": 119398,
+      "sha256": "4679e6e581cd572796b53611634ab685bf683628753acdfe12b2ff7c56f34170"
+    },
+    {
+      "path": "22-seed3-t935-pillar04-corner-field.after.ax.txt",
+      "bytes": 17188,
+      "sha256": "5bf9a56bf247c98d26306fdef7fa13dc274331d5123fce3e401550b8f202e155"
+    },
+    {
+      "path": "22-seed3-t935-pillar04-corner-field.before.ax.txt",
+      "bytes": 17188,
+      "sha256": "5bf9a56bf247c98d26306fdef7fa13dc274331d5123fce3e401550b8f202e155"
+    },
+    {
+      "path": "22-seed3-t935-pillar04-corner-field.jpg",
+      "bytes": 119397,
+      "sha256": "b37d5447350f5aebb0709c3338ece1fbdaea6c36899878dcb035b4231444ac49"
+    },
+    {
+      "path": "23-seed3-t936-pillar04-corner-field.after.ax.txt",
+      "bytes": 17188,
+      "sha256": "1ecbb3f075d2882b5f6ab1ed51aaf0b733511e19585bffadf724b064c1eee2ce"
+    },
+    {
+      "path": "23-seed3-t936-pillar04-corner-field.before.ax.txt",
+      "bytes": 17188,
+      "sha256": "1ecbb3f075d2882b5f6ab1ed51aaf0b733511e19585bffadf724b064c1eee2ce"
+    },
+    {
+      "path": "23-seed3-t936-pillar04-corner-field.jpg",
+      "bytes": 119417,
+      "sha256": "4a985e1c8d3f91a83019ca608e120f9f3832b3571be7cc4d3ef39c71cfb519af"
+    },
+    {
+      "path": "24-seed3-t1267-receiver02-field.after.ax.txt",
+      "bytes": 17216,
+      "sha256": "0ec7c99c62714683372274127262e5533e961ba40a16fd0c5d3774242d3c4968"
+    },
+    {
+      "path": "24-seed3-t1267-receiver02-field.before.ax.txt",
+      "bytes": 17216,
+      "sha256": "0ec7c99c62714683372274127262e5533e961ba40a16fd0c5d3774242d3c4968"
+    },
+    {
+      "path": "24-seed3-t1267-receiver02-field.jpg",
+      "bytes": 119529,
+      "sha256": "7806e16c6d0279c69bf2f432f828687779c6caf3c5a8f25b915f20db0196ddff"
+    },
+    {
+      "path": "25-seed3-t1268-receiver02-field.after.ax.txt",
+      "bytes": 17191,
+      "sha256": "cbb31aff5af0626259f7a7ec7d123b962082d94f505f1923784c52a3ec5ce3fc"
+    },
+    {
+      "path": "25-seed3-t1268-receiver02-field.before.ax.txt",
+      "bytes": 17191,
+      "sha256": "cbb31aff5af0626259f7a7ec7d123b962082d94f505f1923784c52a3ec5ce3fc"
+    },
+    {
+      "path": "25-seed3-t1268-receiver02-field.jpg",
+      "bytes": 119538,
+      "sha256": "23fd0b374e75426900b187e0c318b180064fc5233e9e0369d8071a8b21d728fe"
+    },
+    {
+      "path": "26-seed3-t1269-receiver02-field.after.ax.txt",
+      "bytes": 17268,
+      "sha256": "05237e2782dda9460b8e809adefdf2b692c406c29ba071e4dc359302a82d5f80"
+    },
+    {
+      "path": "26-seed3-t1269-receiver02-field.before.ax.txt",
+      "bytes": 17268,
+      "sha256": "05237e2782dda9460b8e809adefdf2b692c406c29ba071e4dc359302a82d5f80"
+    },
+    {
+      "path": "26-seed3-t1269-receiver02-field.jpg",
+      "bytes": 120277,
+      "sha256": "56acc1e40b065f4e0784cfe507f54f9421677b87e620684370d0c7145e86bcad"
+    },
+    {
+      "path": "27-seed3-t1269-hold-field.after.ax.txt",
+      "bytes": 17268,
+      "sha256": "05237e2782dda9460b8e809adefdf2b692c406c29ba071e4dc359302a82d5f80"
+    },
+    {
+      "path": "27-seed3-t1269-hold-field.before.ax.txt",
+      "bytes": 17268,
+      "sha256": "05237e2782dda9460b8e809adefdf2b692c406c29ba071e4dc359302a82d5f80"
+    },
+    {
+      "path": "27-seed3-t1269-hold-field.jpg",
+      "bytes": 120277,
+      "sha256": "56acc1e40b065f4e0784cfe507f54f9421677b87e620684370d0c7145e86bcad"
+    },
+    {
+      "path": "28-seed3-t1269-receiver02-whole.after.ax.txt",
+      "bytes": 17295,
+      "sha256": "6898a07782070779c6dc23174d83a8e1efc342fdf396f94f966de8881b9965db"
+    },
+    {
+      "path": "28-seed3-t1269-receiver02-whole.before.ax.txt",
+      "bytes": 17295,
+      "sha256": "6898a07782070779c6dc23174d83a8e1efc342fdf396f94f966de8881b9965db"
+    },
+    {
+      "path": "28-seed3-t1269-receiver02-whole.jpg",
+      "bytes": 95578,
+      "sha256": "4f55dd6bfe1de6b4b5ef773d33dc5cc1a55ffed0007a230760a988545e5737b2"
+    },
+    {
+      "path": "29-seed3-t1268-receiver02-whole.after.ax.txt",
+      "bytes": 17211,
+      "sha256": "683c92b88ed735ee492e764b1f6650ce0bc97f203a0dadddd5f9efabf0515605"
+    },
+    {
+      "path": "29-seed3-t1268-receiver02-whole.before.ax.txt",
+      "bytes": 17211,
+      "sha256": "683c92b88ed735ee492e764b1f6650ce0bc97f203a0dadddd5f9efabf0515605"
+    },
+    {
+      "path": "29-seed3-t1268-receiver02-whole.jpg",
+      "bytes": 94859,
+      "sha256": "51c860ad32f33afffbc1d6cd90ae45e8607d627e0c37b02c32a093e1b14638b4"
+    },
+    {
+      "path": "30-seed3-receiver02-realtime.after.ax.txt",
+      "bytes": 17276,
+      "sha256": "961e811bc2c1be19541aac8b08baf09dbde24bd0800560a3ddae970cc4573903"
+    },
+    {
+      "path": "30-seed3-receiver02-realtime.before.ax.txt",
+      "bytes": 17178,
+      "sha256": "334e6e6459af25263361e2a433fbca84a8a8bcf4c2295219bb655d0b0b99471d"
+    },
+    {
+      "path": "30-seed3-receiver02-realtime.jpg",
+      "bytes": 119155,
+      "sha256": "b2a4096dd70e6d0fa0e3d6fc127fd0076ad715552512e7f76f3d03cddefdfe2f"
+    },
+    {
+      "path": "31-seed1-t884-terminal-field.after.ax.txt",
+      "bytes": 17289,
+      "sha256": "d974ad6f6088e4b824c1bdf4a6c051f1feb54ddc3d25d5d6cfac91d3db62c566"
+    },
+    {
+      "path": "31-seed1-t884-terminal-field.before.ax.txt",
+      "bytes": 17289,
+      "sha256": "d974ad6f6088e4b824c1bdf4a6c051f1feb54ddc3d25d5d6cfac91d3db62c566"
+    },
+    {
+      "path": "31-seed1-t884-terminal-field.jpg",
+      "bytes": 120107,
+      "sha256": "36f8b9120cdcc4548ae0b6b853a300e091cdc4d7e54ca99d706dcd93f2981d1c"
+    },
+    {
+      "path": "browser-session.json",
+      "bytes": 380,
+      "sha256": "370db6cb6d01ea85feeb44715f5f6aef4581f59dc97a08594dc9660aebb0bc14"
+    },
+    {
+      "path": "capture-events.jsonl",
+      "bytes": 7726,
+      "sha256": "f2f75e14ce7dc825c6254f83c24e7b225372d817a9d11968fbf6568ad7513dd4"
+    },
+    {
+      "path": "end-guard.json",
+      "bytes": 264,
+      "sha256": "05e825ec81924fd1253a03b45674b31d45437378a61e6321fb41afea68cbfc03"
+    },
+    {
+      "path": "FILE_INDEX.json",
+      "bytes": 6109,
+      "sha256": "d810ae08b53a0eaf44636df0adcb2c15eb4a0195b31db383534b4ea70af2116b"
+    },
+    {
+      "path": "identity-verification.json",
+      "bytes": 361,
+      "sha256": "1530e9a877c39d6af8077026fedb1e7c44630469b1a97979a750eae9cd0219e0"
+    },
+    {
+      "path": "preview-index.json",
+      "bytes": 14632,
+      "sha256": "49dd9d561a4cb53bca98c2dc97658b4262be4d1e10f54479c070d359d53f52b5"
+    },
+    {
+      "path": "producer-owner.json",
+      "bytes": 519,
+      "sha256": "ce53db124a0e6434affa6e4d59695d18be9d0a598fa1e3e1f23cabb7cd721413"
+    },
+    {
+      "path": "seed0-end-of-replay.ax.txt",
+      "bytes": 17271,
+      "sha256": "8f3ed56628de3ba04f63892a3cfdb5e61852fa00a442df0a8bec38b27c413aea"
+    },
+    {
+      "path": "seed1-end-of-replay.ax.txt",
+      "bytes": 17289,
+      "sha256": "d974ad6f6088e4b824c1bdf4a6c051f1feb54ddc3d25d5d6cfac91d3db62c566"
+    },
+    {
+      "path": "seed2-end-of-replay.ax.txt",
+      "bytes": 17278,
+      "sha256": "8a621abe5466440117401349971ebe34ba5918574ee365c25c4a2bfbe6c6b678"
+    },
+    {
+      "path": "seed3-end-of-replay.ax.txt",
+      "bytes": 17276,
+      "sha256": "961e811bc2c1be19541aac8b08baf09dbde24bd0800560a3ddae970cc4573903"
+    },
+    {
+      "path": "staged-manifest.json",
+      "bytes": 33628,
+      "sha256": "18b7769115ac7d2dcba3a89869b50cc9c7824de01421201a886210a17ad3f900"
+    },
+    {
+      "path": "start-guard.txt",
+      "bytes": 1347,
+      "sha256": "0b8d6876acb9a90d653a8de8beb24b037e766389ba3158c4b862807f0dcd3f77"
+    }
+  ],
+  "evidenceFileCount": 106,
+  "evidenceBytes": 4721931,
+  "jpegCount": 31,
+  "findings": [
+    {
+      "id": "D01-V01",
+      "status": "OPEN",
+      "observation": "Receiver01 seed0: invisible886/887 -> full sphere888; receiver02 seed3: invisible1267/1268 -> full sphere1269. Seen independently in Field and Whole. Holds stable.",
+      "rootCause": "Hypothesis: back/aperture alpha coverage or full-part depth switch; not independently isolated."
+    }
+  ],
+  "knownUnresolved": [
+    "Lower floor registration: Artist/Lead declared near edge aboutsourceY1260 vs accepted1121. Partly covered by receiver row in assembled art; no full floor registration PASS."
+  ],
+  "fullDarkArtPass": false,
+  "limitations": [
+    "Only stated four pillar contact windows; no universal corner/whole-center-sort PASS.",
+    "Remaining body groups/environment absent; no mask-specific bypass PASS.",
+    "Other skull/block/bowl contacts and receiver03/04 entries unverified.",
+    "Seed1 terminal only; no detailed entry transition QA for seed1.",
+    "No new throws, native oracle/export, compilation or Jungle matrix."
+  ]
+}
