@@ -1,0 +1,80 @@
+{
+  "schema": "r4d.p5.transfer-water-dark.checkpoint.v1",
+  "checkpoint": "004",
+  "utc": "2026-10-30T03:32:05.6838734Z",
+  "status": "production-continues; Water scoped QA complete; Dark corrections and full art active",
+  "water": {
+    "candidate": "w06",
+    "consumer": "b8a070ab60e97aee3f71018ff614c2cf21c8f10f",
+    "artist": "189fe2e7f4264270f60b4a2ebe247d0d49b3c72e",
+    "builderSanity": "9d741f4d718a8d623ae4d1d51caa938ca4e96a66",
+    "fileIndexPath": "E:/R4D/perspective/p5-runtime/builder/transfer-water-dark/water/output/previews/w06/FILE_INDEX.json",
+    "fileIndexBytes": 8432,
+    "fileIndexSha256": "9ba0caf153b7528d551cd6da9ed8b6ccb90ab2ad4e96aba558eeb6b5c0ef5108",
+    "publicFiles": 25,
+    "publicBytes": 15318372,
+    "inventory": {"uniquePng": 13, "textureIds": 22, "instances": 84, "bodyGroups": 21, "physicalTargets": 29, "receivers": 4, "foregroundClips": 11},
+    "technicalQa": {"commit": "c23361cfd4a5591b4bc209190b3338ab5e4e276b", "path": "experiments/p5-regenerated-objects/transfer-water-dark/water/qa/technical/REPORT_W06.md", "actualSnapshots": 101, "captures": 96},
+    "visualQa": {"commit": "15d94c6363c0cd889c34aa07554f6f55bfa7c70b", "path": "experiments/p5-regenerated-objects/transfer-water-dark/water/qa/visual/REPORT_W06.md", "captures": 89, "adjacentAxStateRngMatches": 178, "shortMotionIntervals": 22, "foregroundRegionsObserved": 6},
+    "verdict": "scoped COMPLETE/visual PARTIAL; no new significant or confirmed technical defect in checked cases",
+    "oldPopClosureRetained": true,
+    "limits": ["frog03/06 and arch01/02/05/06 contacts unavailable", "frog04/arch04 visible contact hidden", "full light/support/contours partial", "five foreground regions dynamically unavailable", "front-hide NOTE/UNVERIFIED"],
+    "outcomes": ["seed0 LOST1326", "seed1 LOST1196", "seed2 receiver02/1275", "seed3 LOST589"],
+    "url": "http://127.0.0.1:55196/",
+    "pid": 33028,
+    "execSessionId": 30547
+  },
+  "dark": {
+    "receiverOnly": {
+      "candidate": "d03",
+      "consumer": "9d741f4d718a8d623ae4d1d51caa938ca4e96a66",
+      "artist": "79da6c7616de630102994d4e087e312a12892e0f",
+      "handoff": "b61b619705ccfba9bfc30c681654d3b7b395e08e",
+      "builderSanity": "d190ef3f0d4a0f997048ca511d7d70c9fc07181d",
+      "fileIndexPath": "E:/R4D/perspective/p5-runtime/builder/transfer-water-dark/dark/output/previews/d03/FILE_INDEX.json",
+      "fileIndexBytes": 6675,
+      "fileIndexSha256": "b9817e590c8db60e46a0f75b9182faea444a454706a4763227a81d7a314742ce",
+      "inventory": {"uniquePng": 9, "textureIds": 19, "instances": 39, "bodyGroups": 12, "totalBodyGroups": 24},
+      "url": "http://127.0.0.1:55197/", "pid": 45612, "execSessionId": 52860,
+      "status": "independent actual receiver review active; early gradual reveal positive; formal D01 closures pending",
+      "floorFinding": "D02-V01 OPEN unchanged floor-v3"
+    },
+    "floorOnly": {
+      "candidate": "d04",
+      "basis": "d02 old receiver; isolated from d03",
+      "consumer": "d190ef3f0d4a0f997048ca511d7d70c9fc07181d",
+      "artist": "3de95fb4ca886202c9a21823a9dc843952181060",
+      "handoff": "c6f68a4774e3a4a7c0c4dafa46512d625bab9b96",
+      "fileIndexPath": "E:/R4D/perspective/p5-runtime/builder/transfer-water-dark/dark/output/previews/d04/FILE_INDEX.json",
+      "fileIndexBytes": 7000,
+      "fileIndexSha256": "c514e5cf9e0bda619cad89a166e115ab8b88ed3379b5380bbc54ed8f03e06b25",
+      "floorPngSha256": "c0367aea62de74f187c37a3cf8fb10067b9cbe5b2177939c86ae3f76a0e0421d",
+      "inventory": {"uniquePng": 8, "textureIds": 15, "instances": 35, "bodyGroups": 12, "totalBodyGroups": 24},
+      "url": "http://127.0.0.1:55198/", "pid": 30392, "execSessionId": 49309,
+      "status": "D02-V01 OPEN pending scoped actual review after d03; original D01 receiver remains OPEN by design"
+    },
+    "combinedFinalSelected": false,
+    "remainingProduction": ["bowl04-06 deeper pose", "skull06 deeper pose", "near block measured support", "remaining family bindings", "foreground", "full stage actual QA"],
+    "combineOnlyAfterScopedReview": true
+  },
+  "release": {
+    "baselineWrapperSmokeCommit": "c5d380979cbf0eebe5b883b8285f614d78f28921",
+    "waterW06ImportAndBothQaRegistrationDispatched": true,
+    "newCombinedPackageAuthorized": false,
+    "boundFinalLeadHandoffIssued": false
+  },
+  "resource": {
+    "utc": "2026-10-30T03:32:05.6838734Z",
+    "freeGiB": {"C": 13.498, "D": 14.596, "E": 8.830, "RAM": 8.203},
+    "cpuPercent": 20,
+    "aggregateWorkingSetGiB": 29.013,
+    "ownPeakGiB": {"RAM": 0.25, "E": 0.01},
+    "neighborReserveGiB": {"RAM": 4, "E": 2}
+  },
+  "remainingActiveHoursEstimate": [3, 6],
+  "fullPass": false,
+  "tokenGranted": false,
+  "reviewVpsWrites": 0,
+  "newRolesChatsWorktreesBranches": 0,
+  "next": "finish Dark scoped corrections/full art/foreground and both independent actual QA; concrete current local package; continue after checkpoint"
+}

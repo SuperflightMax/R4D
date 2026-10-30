@@ -40,6 +40,10 @@ Lead читает результаты в существующих чатах и
 
 TokenGranted=false; transfer Review/VPS writes=0. Отдельный конкретный CTO token требуется до будущих Review/VPS writes; Jungle token CLOSED и не переиспользуется. SSH/Review/VPS операции сейчас не выполняются. Для local wrapper QA отдельно разрешён свой loopback HTTP preview и свой hidden browser/tab, с ownership и штатной остановкой; это не remote permission. Исторические HOLD/STOP/denial сохраняются: composite call_7b166cdf46834d468b5f9c297aad6e9f не повторять/делить/переносить, denied parent Review GET /review/r4d/403 не вызывать, file:// fallback не использовать. Новый denial: STOP exact action/target без обхода actor/ref/path/transport; unknown outcome сначала read-only evidence.
 
-## Текущий checkpoint 003
+## Checkpoint 003
 
 2026-10-30 02:26 UTC: [CHECKPOINT_003.md](CHECKPOINT_003.md) и [CHECKPOINT_003.json](CHECKPOINT_003.json). Обе independent QA закрыли прежний Water receiver pop на w05 для сохранённого repro. Front-hide остаётся NOTE/UNVERIFIED, нового sorting defect не установлено. Dark d02: положение края улучшено, но VQA D02-V01 о щелях под cap между чашами остаётся OPEN; distinct receiver D01-V01 также OPEN. Water mini05 уже содержит все21 body groups/29 physical targets и11 foreground clips; Builder собирает отдельный w06, actual расширенный QA ещё впереди. Artist продолжает Dark. Task не завершён; final handoff и публикация не разрешены.
+
+## Текущий checkpoint 004
+
+2026-10-30 03:32 UTC: [CHECKPOINT_004.md](CHECKPOINT_004.md) и [CHECKPOINT_004.json](CHECKPOINT_004.json). Water w06 прошёл обе independent actual QA в доступном scope без нового установленного значимого дефекта: TQA101 snapshots, VQA89 captures/22 motion intervals, шесть foreground regions. Полные light/contour/contact гарантии не присвоены. Release импортирует w06 с exact QA refs. Dark d03 receiver-only и d04 floor-only заморожены отдельно и проходят последовательный scoped review; объединённого final Dark ещё нет. Artist продолжает недостающие семейства и foreground. Полный task после checkpoint продолжается, Review/VPS writes0/tokenfalse.
