@@ -4,7 +4,9 @@
 
 ## Текущий материал
 
-`candidate-water-w04.json` pin-ит original Water whole-gate w04. `package-draft-w04.json` включает только эту версию; Dark отсутствует. В UI нет фиктивной Dark демки или художественного PASS. Видимые ограничения сформулированы по-человечески; source commits, hashes и точные residuals спрятаны в отдельный metadata-раздел. Все public href/src относительные, без внешних сервисов/fonts/scripts обвязки.
+`candidate-water-w04.json` pin-ит original Water whole-gate w04. Первый сохранённый `package-draft-w04.json` включает только эту версию; в нём Dark отсутствует. В UI нет фиктивной Dark демки или художественного PASS. Видимые ограничения сформулированы по-человечески; source commits, hashes и точные residuals спрятаны в отдельный metadata-раздел. Все public href/src относительные, без внешних сервисов/fonts/scripts обвязки.
+
+`candidate-dark-d01.json` pin-ит второй original baseline: реальный частичный Dark d01. Новый `package-baselines-w04-d01.json` (`purpose=baseline-archive`, `final=false`) хранит оба исходных варианта для сравнения; Water w04 снабжён exact историческими TQA/VQA с открытыми W04-V01/W04-TQA-V01, Dark handoff pending. Архив не подменяет текущие исправляемые результаты. Original material receipts и первый draft не менялись. См. HANDOFF_002.md.
 
 Own runtime: `E:/R4D/perspective/p5-runtime/release-engineer/transfer-water-dark/`.
 
@@ -33,14 +35,14 @@ Lead передаёт exact FILE_INDEX path/bytes/SHA, board/id, consumer/artist
 
 `import` проверяет exact index, безопасные уникальные relative paths, все file bytes/SHA, отсутствие extra/link/reparse/private TS/maps/key files, active P1 config/manifest и все явные source/provenance sidecars. Common input SHA497eb8... задаёт Water04/trial02 и Dark02/trial01. Git source/support refs читаются только в собственном P5 transfer prefix; remote autofetch/checkout не выполняются. При ordinary failure WIP сохраняется; occupied material не очищается.
 
-Новый package descriptor явно перечисляет `versions` и `selected.water`/`selected.dark`. Для successors надо оставить original baseline в `versions`. `stageLabel` можно передать в version entry как annotation, не изменяя material. Все указанные варианты сохраняют собственные ссылки; явного выбора «самой новой папки» нет.
+Новый package descriptor явно перечисляет `versions` и `selected.water`/`selected.dark`. Для successors надо оставить original baseline в `versions`. `stageLabel` и дополнительные `technicalNotes` можно передать в version entry как annotation, не изменяя material. Все указанные варианты сохраняют собственные ссылки; явного выбора «самой новой папки» нет.
 
 Для каждой версии `qa.technical` и `qa.visual` принимают exact `commit`, `path` и `fileIndexSha256`. SHA должен совпасть с этим material, отчёт физически читается из указанного собственного Git commit и копируется только в private package sidecars. Это проверка handoff identity, а не присвоение QA PASS по тексту.
 
-`final=true` разрешает только LOCAL_ASSEMBLED пакет при обоих действительных generated board inputs и обеих независимых QA handoff на выбранные точные версии. Нет Dark/QA либо выбран D00/scaffold — final build блокируется до создания output. Полный художественный PASS не выводится из наличия отчётов. Любая публикация требует отдельного конкретного CTO token; local final не выдаёт это разрешение.
+`final=true` разрешает только LOCAL_ASSEMBLED пакет при обоих действительных текущих generated board inputs, обеих независимых QA handoff на выбранные точные версии и отдельном exact Lead handoff. `purpose=baseline-archive` всегда исключает final. `leadHandoff` задаёт физически читаемые `commit`/`path` в own P5 transfer prefix и `fileIndexSha256s: {water: <selected SHA>, dark: <selected SHA>}`; report копируется в private. Это привязка к явно выбранным текущим inputs, не автоматический вывод разрешения из QA или наличия двух исходных вариантов. Нет Dark/QA либо выбран D00/scaffold — final build блокируется до создания output. Полный художественный PASS не выводится из наличия отчётов. Любая публикация требует отдельного конкретного CTO token; local final не выдаёт это разрешение.
 
 ## Границы проверки
 
-Сейчас выполнены real w04 import/build/hash verification и static relative href/src checks. Product/native/seed/visual QA не повторялись; browser/runtime этой local обвязки UNVERIFIED. Никаких server/browser/file:// запусков для этой подготовки не было. Исходный Builder PID37932/session37240/root не менялся.
+Выполнены real w04 и d01 import/build/hash verification. Новый архив:43 public files/27415220 bytes,7 static relative href/src. Первый draft сохранён неизменным. Product/native/seed/visual QA не повторялись; browser/runtime этой local обвязки UNVERIFIED. Никаких server/browser/file:// запусков для этой подготовки не было. Исходные Builder PID37932/session37240 и PID40328/session83117/roots не менялись.
 
 TEMP/TMP/cache/output — own E process-local. Перед тяжёлым шагом fresh C/D/E/RAM/CPU/aggregate, own peak+4GiBRAM/2GiBE allowance. E<=4GiB предупреждение/диагностика, <=2GiB safe checkpoint/STOP; чужое не чистить. Не запускать прежние Jungle publish/preflight/rollback scripts.

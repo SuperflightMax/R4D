@@ -143,6 +143,13 @@ def final_eligibility(d,loaded):
   if entry is None:reasons.append(board+': no actual frozen input');continue
   if entry[1]['kind']!='generated-board' or entry[1]['id']=='d00':reasons.append(board+': diagnostic/scaffold is not a board result')
   if set(entry[3])!={'technical','visual'}:reasons.append(board+': independent exact QA handoff pending')
+ if d.get('purpose')=='baseline-archive':reasons.append('historical baseline archive is not the current final result')
+ handoff=d.get('leadHandoff')
+ if not handoff:reasons.append('separate Lead handoff for current selected inputs pending')
+ else:
+  selected_hashes={board:next((x[1]['indexSha256'] for x in loaded if x[0]['board']==board and x[0]['id']==d['selected'].get(board)),None) for board in ('water','dark')}
+  if handoff.get('fileIndexSha256s')!=selected_hashes:raise ValueError('Lead handoff not bound to the selected current inputs')
+  git_bytes(handoff['commit'],handoff['path'])
  return dict(eligible=not reasons,reasons=reasons)
 
 def render(d,loaded,eligibility):
@@ -152,14 +159,15 @@ def render(d,loaded,eligibility):
   for v,r,root,q in items:
    href='boards/'+board+'/'+r['id']+'/'
    tag='Исходный вариант' if r['baseline'] else 'Следующий вариант'
-   selected=d['selected'].get(board)==r['id'];tag+=' · текущий показ' if selected else ''
+   selected=d['selected'].get(board)==r['id'];tag+=(' · показан в этом архиве' if d.get('purpose')=='baseline-archive' else ' · текущий показ') if selected else ''
    lim=''.join('<li>'+e(x)+'</li>' for x in r['limitations'])
-   cards.append('<article class="version"><p class="eyebrow">'+e(tag)+'</p><h3>'+e(r['label'])+'</h3><p class="status">'+e(v.get('stageLabel',r['stageLabel']))+'</p><p>'+e(r['summary'])+'</p><ul>'+lim+'</ul><a class="open" href="'+href+'">Открыть вариант '+e(r['id'])+' →</a><details><summary>Данные и версии</summary><dl><dt>Вариант</dt><dd>'+e(r['id'])+'</dd><dt>Независимые отчёты</dt><dd>'+('Получены обе ссылки; ограничения сохраняются' if set(q)=={'technical','visual'} else 'Ожидаются')+'</dd><dt>Consumer commit</dt><dd><code>'+e(r['consumerCommit'])+'</code></dd><dt>Artist commit</dt><dd><code>'+e(r['artistCommit'])+'</code></dd><dt>FILE_INDEX SHA256</dt><dd><code>'+e(r['indexSha256'])+'</code></dd></dl><ul>'+''.join('<li>'+e(x)+'</li>' for x in r['technicalNotes'])+'</ul></details></article>')
+   cards.append('<article class="version"><p class="eyebrow">'+e(tag)+'</p><h3>'+e(r['label'])+'</h3><p class="status">'+e(v.get('stageLabel',r['stageLabel']))+'</p><p>'+e(r['summary'])+'</p><ul>'+lim+'</ul><a class="open" href="'+href+'">Открыть вариант '+e(r['id'])+' →</a><details><summary>Данные и версии</summary><dl><dt>Вариант</dt><dd>'+e(r['id'])+'</dd><dt>Независимые отчёты</dt><dd>'+('Получены обе ссылки; ограничения сохраняются' if set(q)=={'technical','visual'} else 'Ожидаются')+'</dd><dt>Consumer commit</dt><dd><code>'+e(r['consumerCommit'])+'</code></dd><dt>Artist commit</dt><dd><code>'+e(r['artistCommit'])+'</code></dd><dt>FILE_INDEX SHA256</dt><dd><code>'+e(r['indexSha256'])+'</code></dd></dl><ul>'+''.join('<li>'+e(x)+'</li>' for x in r['technicalNotes']+v.get('technicalNotes',[]))+'</ul></details></article>')
   content=''.join(cards) if cards else '<p class="pending">Готового набора для просмотра пока нет. Доска появится после передачи её замороженного набора.</p>'
   boards.append('<section class="board '+board+'"><header><p class="eyebrow">'+e(desc)+'</p><h2>'+title+'</h2></header>'+content+'</section>')
- title='Комплект двух досок' if d.get('final') else 'Локальный черновик переноса'
+ title='Архив исходных вариантов' if d.get('purpose')=='baseline-archive' else 'Комплект двух досок' if d.get('final') else 'Локальный черновик переноса'
  available={v['board'] for v,r,root,q in loaded}
- if d.get('final'):notice='Обе доски включены в локальный комплект. Ограничения указаны по каждому варианту; публикация требует отдельного разрешения.'
+ if d.get('purpose')=='baseline-archive':notice='Здесь сохранены первые наборы для сравнения с последующими исправлениями. Текущие исправленные варианты ещё готовятся. Этот архив не является финальным результатом переноса и не опубликован.'
+ elif d.get('final'):notice='Обе доски включены в локальный комплект. Ограничения указаны по каждому варианту; публикация требует отдельного разрешения.'
  elif available=={'water'}:notice='Комплект ещё не завершён. Сейчас доступен частичный водный вариант; тёмная доска ожидается. Это не итог переноса и не опубликованный результат.'
  elif available=={'dark'}:notice='Комплект ещё не завершён. Доступна тёмная доска; водная ожидается. Это не итог переноса и не опубликованный результат.'
  else:notice='Обе доски добавлены в черновик. До итогового локального комплекта нужны их точные независимые отчёты и явный выбор версий. Публикация не разрешена.'
@@ -175,8 +183,9 @@ def build(descriptor):
   for rel,p in r['publicFiles'].items():write(public/'boards'/r['board']/r['id']/rel,checked((root/'public'/rel).read_bytes(),p,rel))
   for kind,data in q.items():write(out/'private'/'qa'/r['board']/r['id']/(kind+'.md'),data['raw'])
  write(public/'index.html',render(d,loaded,eligibility));write(public/'wrapper.css',(HERE/'wrapper.css').read_bytes());write(out/'private/package-descriptor.json',jsonbytes(d))
+ if d.get('leadHandoff'):write(out/'private/lead-handoff.md',git_bytes(d['leadHandoff']['commit'],d['leadHandoff']['path']))
  files=plain_tree(public);refs=verify_public(public,files)
- index=dict(schema='r4d.p5.local-package/1',id=d['id'],createdUtc=datetime.datetime.now(datetime.timezone.utc).isoformat(),state='FINAL_LOCAL_ASSEMBLED' if d.get('final') else 'DRAFT_INCOMPLETE',finalAssembled=bool(d.get('final')),finalEligibility=eligibility,TokenGranted=False,serverWrites=0,FullArtPass=False,BoardPass=False,files=files,fileCount=len(files),publicBytes=sum(p['bytes'] for p in files.values()),versions=[dict(board=r['board'],id=r['id'],baseline=r['baseline'],materialReceipt=pin(root/'RECEIPT.json'),fileIndexSha256=r['indexSha256'],qa={k:x['reference'] for k,x in q.items()}) for v,r,root,q in loaded],staticRelativeReferences=refs,actualBrowserRuntime='UNVERIFIED in this local packaging task')
+ index=dict(schema='r4d.p5.local-package/1',id=d['id'],createdUtc=datetime.datetime.now(datetime.timezone.utc).isoformat(),state='FINAL_LOCAL_ASSEMBLED' if d.get('final') else 'DRAFT_INCOMPLETE',purpose=d.get('purpose','current-result'),finalAssembled=bool(d.get('final')),finalEligibility=eligibility,TokenGranted=False,serverWrites=0,FullArtPass=False,BoardPass=False,files=files,fileCount=len(files),publicBytes=sum(p['bytes'] for p in files.values()),versions=[dict(board=r['board'],id=r['id'],baseline=r['baseline'],materialReceipt=pin(root/'RECEIPT.json'),fileIndexSha256=r['indexSha256'],qa={k:x['reference'] for k,x in q.items()}) for v,r,root,q in loaded],staticRelativeReferences=refs,actualBrowserRuntime='UNVERIFIED in this local packaging task')
  write(out/'PACKAGE_INDEX.json',jsonbytes(index));freeze_files(out)
  print(json.dumps(dict(package=str(out),index=pin(out/'PACKAGE_INDEX.json'),publicFiles=index['fileCount'],publicBytes=index['publicBytes'],state=index['state'],finalEligibility=eligibility,serverWrites=0),ensure_ascii=False))
  return index

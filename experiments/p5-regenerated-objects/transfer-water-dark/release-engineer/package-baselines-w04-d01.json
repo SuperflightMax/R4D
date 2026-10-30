@@ -1,0 +1,32 @@
+{
+  "id": "baselines-water-w04-dark-d01",
+  "purpose": "baseline-archive",
+  "final": false,
+  "selected": {"water": "w04", "dark": "d01"},
+  "versions": [
+    {
+      "board": "water",
+      "id": "w04",
+      "stageLabel": "Исходный вариант проверен · дефект входа в корзину открыт",
+      "technicalNotes": [
+        "Historical baseline QA handed off: TQA b4940d77a563f2d56df659a23d11385179562b92; VQA aeacc4184b8dc977a3f3e3c4b3683813ded040f4.",
+        "OPEN W04-V01 / W04-TQA-V01: receiver02 hidden1273/1274 -> pop1275. TQA isolated opaque painted water in full/back raster; offsets -1/+1 are present and correct.",
+        "37 actual snapshots matched cached state/RNG/config/events. Arch07 positive only for the viewed passage with two contacts; not universal gate/Water PASS.",
+        "Full Water PASS=false. Corrected Water parts and current exact successor+QA remain pending. Original baseline material is unchanged."
+      ],
+      "qa": {
+        "technical": {
+          "commit": "b4940d77a563f2d56df659a23d11385179562b92",
+          "path": "experiments/p5-regenerated-objects/transfer-water-dark/water/qa/technical/REPORT_W04.md",
+          "fileIndexSha256": "c1c983dbddaaf556c5000dc9463df262fdc38444b2826a5883a2800b78b70554"
+        },
+        "visual": {
+          "commit": "aeacc4184b8dc977a3f3e3c4b3683813ded040f4",
+          "path": "experiments/p5-regenerated-objects/transfer-water-dark/water/qa/visual/REPORT_W04.md",
+          "fileIndexSha256": "c1c983dbddaaf556c5000dc9463df262fdc38444b2826a5883a2800b78b70554"
+        }
+      }
+    },
+    {"board": "dark", "id": "d01", "qa": {}}
+  ]
+}
