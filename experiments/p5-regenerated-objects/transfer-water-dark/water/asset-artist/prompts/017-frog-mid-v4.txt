@@ -1,0 +1,6 @@
+Use case: precise-object-edit
+Asset type: Water frog support-depth correction, native edit of frog-mid-v2.
+Input image1: EDIT TARGET frog-mid-v2.png. Keep the existing frog head, body, eyes, face, limbs, brass medallion, stone materials, lighting, position and size unchanged.
+Primary request: change ONLY the low round integral plinth/support beneath the frog. Its current visible circular ground support is too deep in this projection. Make the support a shallower horizontal oval, approximately1060px wide by480px deep instead of the current620px depth. Keep its frontmost lower contact edge at the current same bottomY around1170 and the whole object centered at the sameX. The ground ellipse center will therefore be about[627,930], with side extremes lower than in the current picture. Reconstruct the small changed side/rim areas naturally in the same green stone.
+Do not squash or rescale the frog itself. Do not enlarge the pedestal, add a box or change any other feature. Keep full1254-square canvas and original framing, transparent margins, no crop or recenter. The intended correction is the drawn ground support angle, not an image-wide affine warp.
+Constraints: actual RGBA transparency outside the idol. No floor, water, new scenery, shadow, guide, text, logo or watermark.

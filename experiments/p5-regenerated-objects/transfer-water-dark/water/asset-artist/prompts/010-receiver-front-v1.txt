@@ -1,0 +1,7 @@
+Use case: precise-object-edit
+Asset type: registered transparent near/front rim and hull part of the generated Water receiver.
+Input image 1: EDIT TARGET, generated receiver-v1.png. This is a part extraction by native image generation; preserve the full square canvas and the receiver's exact position, size, silhouette, material, lighting and near-side details.
+Primary request: retain ONLY the near/front curved cream-and-jade rim and the entire near hull below it, including the pointed bow and front brass medallion. Remove the turquoise water surface inside the opening, the far/rear wall, both tall far corners and the rear halves of the side rims. Every removed area becomes genuinely transparent.
+The retained near rim follows the existing exact curved inner water boundary across the near side (around the lower edge of the visible water), and includes the front-facing shell below it. Its side tips should end at the same near-side corners already in this asset.
+Invariants: do not repaint or redesign the surviving front rim/hull; do not move, crop, zoom, rotate, rescale or recenter anything. Canvas remains the same1254-square framing and registration, with empty transparent pixels in removed areas.
+Constraints: one native RGBA front part only. No water, rear wall, backdrop, separate shadow, new decoration, text, logo or watermark.

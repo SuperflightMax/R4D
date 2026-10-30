@@ -1,0 +1,249 @@
+{
+  "contractCommit": "5d40b82ac6b2b69f7077bb9bfe58c7560fbf783e",
+  "ball": {
+    "measurement": "New ball visible half-open alpha>=16 bbox center and lower edge, approximate3texturepx",
+    "visualCenterPx": [
+      625,
+      624
+    ],
+    "groundAnchorPx": [
+      625,
+      1147
+    ],
+    "sha256": "2cfee97a7bf2542a0a4226ee893ecfa7a7a1f7352505ce74d8b8c48bae1bb301",
+    "footprintWidthPx": 1052,
+    "liftPx": 523
+  },
+  "receiver": {
+    "frontBackContourRows": [
+      {
+        "front": [
+          77,
+          1176
+        ],
+        "y": 700,
+        "back": [
+          78,
+          1174
+        ]
+      },
+      {
+        "front": [
+          131,
+          1122
+        ],
+        "y": 800,
+        "back": [
+          131,
+          1122
+        ]
+      },
+      {
+        "front": [
+          194,
+          1059
+        ],
+        "y": 900,
+        "back": [
+          193,
+          1058
+        ]
+      },
+      {
+        "front": [
+          321,
+          931
+        ],
+        "y": 1000,
+        "back": [
+          319,
+          932
+        ]
+      },
+      {
+        "front": [
+          538,
+          715
+        ],
+        "y": 1100,
+        "back": [
+          539,
+          712
+        ]
+      }
+    ],
+    "captureFootprintWidthPx": 230,
+    "pixelIdentical": false,
+    "frontSha256": "aaaac1a65b694873281326fcfb71fef13b1bdf3f6cea4ac06d3315f93a7bf098",
+    "opticalUncertaintyTexturePx": 5,
+    "captureFootprintDepthPx": 120,
+    "measurement": "Manual clear-water optical point;230x120 subregion inside opening, not full aperture. Raw silhouette width1190 and target-projected trigger imply about380sourcepx hull at receiver01.",
+    "maxSampledContourDeltaTexturePx": 3,
+    "backSha256": "4bf235f8981fcb7c3ca3029c2e59a8594e9af28d7de534a56e1ab841a9549843",
+    "opticalOpeningPointPx": [
+      627,
+      500
+    ]
+  },
+  "formula": "sB=projected r16 diameter/1052; sR=projected bucket diameter/230; hR=523*sB/sR; logicalA=[627,500+hR]; groundAnchor=footprint.center=logicalA; opticalO=[627,500]",
+  "entries": [
+    {
+      "targetId": "receiver-01",
+      "native": {
+        "anchor": [
+          32753.321467603175,
+          35177.24697995297
+        ],
+        "radius": 31.296085932969625,
+        "depthRadius": 31.296085932969625,
+        "geometryRefs": [
+          "receiver-01"
+        ]
+      },
+      "sourceAnchor": [
+        180.00000000000475,
+        1197.9999999999986
+      ],
+      "ballProjectedWidthSourcePx": 37.548449268309724,
+      "receiverProjectedWidthSourcePx": 73.4449816914854,
+      "receiverWidthIndependentDelta": 0.0,
+      "sB": 0.03569244227025639,
+      "sR": 0.31932600735428435,
+      "ballLiftTexturePx": 523,
+      "opticalOpeningPointTexturePx": [
+        627,
+        500
+      ],
+      "logicalGroundAnchorTexturePx": [
+        627,
+        558.4579610724702
+      ],
+      "hRTexturePx": 58.45796107247021,
+      "visualCupShiftSourcePx": [
+        0,
+        -18.66714730734409
+      ],
+      "geometryChanged": false
+    },
+    {
+      "targetId": "receiver-02",
+      "native": {
+        "anchor": [
+          33065.660710537064,
+          35187.089912187264
+        ],
+        "radius": 30.637312276520895,
+        "depthRadius": 30.637312276520895,
+        "geometryRefs": [
+          "receiver-02"
+        ]
+      },
+      "sourceAnchor": [
+        545.0000000000007,
+        1203.9999999999995
+      ],
+      "ballProjectedWidthSourcePx": 37.50230378759818,
+      "receiverProjectedWidthSourcePx": 71.81061508922727,
+      "receiverWidthIndependentDelta": 0.0,
+      "sB": 0.03564857774486519,
+      "sR": 0.31222006560533594,
+      "ballLiftTexturePx": 523,
+      "opticalOpeningPointTexturePx": [
+        627,
+        500
+      ],
+      "logicalGroundAnchorTexturePx": [
+        627,
+        559.7149517742138
+      ],
+      "hRTexturePx": 59.714951774213766,
+      "visualCupShiftSourcePx": [
+        0,
+        -18.644206160564494
+      ],
+      "geometryChanged": false
+    },
+    {
+      "targetId": "receiver-03",
+      "native": {
+        "anchor": [
+          33449.9072364754,
+          35182.17235242175
+        ],
+        "radius": 31.13657495558225,
+        "depthRadius": 31.13657495558225,
+        "geometryRefs": [
+          "receiver-03"
+        ]
+      },
+      "sourceAnchor": [
+        994.9999999999986,
+        1201.0000000000007
+      ],
+      "ballProjectedWidthSourcePx": 37.4735733647459,
+      "receiverProjectedWidthSourcePx": 72.92492362880512,
+      "receiverWidthIndependentDelta": 0.0,
+      "sB": 0.0356212674569828,
+      "sR": 0.31706488534263094,
+      "ballLiftTexturePx": 523,
+      "opticalOpeningPointTexturePx": [
+        627,
+        500
+      ],
+      "logicalGroundAnchorTexturePx": [
+        627,
+        558.7574460031103
+      ],
+      "hRTexturePx": 58.75744600311032,
+      "visualCupShiftSourcePx": [
+        0,
+        -18.629922880002002
+      ],
+      "geometryChanged": false
+    },
+    {
+      "targetId": "receiver-04",
+      "native": {
+        "anchor": [
+          33739.27186718129,
+          35173.95904871723
+        ],
+        "radius": 32.979948584412966,
+        "depthRadius": 32.979948584412966,
+        "geometryRefs": [
+          "receiver-04"
+        ]
+      },
+      "sourceAnchor": [
+        1333.0000000000023,
+        1196
+      ],
+      "ballProjectedWidthSourcePx": 37.51694490700038,
+      "receiverProjectedWidthSourcePx": 77.33405533329392,
+      "receiverWidthIndependentDelta": 0.0,
+      "sB": 0.03566249515874561,
+      "sR": 0.33623502318823445,
+      "ballLiftTexturePx": 523,
+      "opticalOpeningPointTexturePx": [
+        627,
+        500
+      ],
+      "logicalGroundAnchorTexturePx": [
+        627,
+        555.4715710194839
+      ],
+      "hRTexturePx": 55.471571019483875,
+      "visualCupShiftSourcePx": [
+        0,
+        -18.651484968023954
+      ],
+      "geometryChanged": false
+    }
+  ],
+  "limits": [
+    "New optical/capture region is a hand-authored art proxy, not recovered3D water physics",
+    "Pixel-identical native edit not claimed; sampled contour differences up to3texturepx require actual assembly inspection",
+    "All four trigger approaches/front-rim overlaps remain UNVERIFIED until actual native/Pixi QA",
+    "No Jungle17.8px constant, changed native trigger or post-IN_BUCKET sinking"
+  ]
+}

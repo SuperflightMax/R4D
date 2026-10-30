@@ -1,5 +1,7 @@
 # Water Asset Artist
 
+Current handoff mini02:40316bytes/SHA6948fdd7fccc60612183a2a8f9d6ce88f78ecd137931297c8fca556b3c19169a;8PNG/14textureIDs/27instances,sevenpillars+farfrog01+all4receivers. Schema/PNG/target/anchor checks passed; new cup policy calculated from Water/new ball, independent width delta0. Partial, actualmini02QA pending. See HANDOFF_MINI_02.md. Eighteen native Water outputs retained, including correction failures. Lead priority: arch07 whole-sprite limited baseline for seed1states998–1031, then registered parts; current left/lintel edits changed canvas and are not selected. Long walls/near edges and other frogs remain work. Mini01 frozen.
+
 Production active on existing branch/host. Start HEAD a5ec68fb2ed6aeacd8c66bc575166567bd0c3966, clean. Canon b1382dd4c230815a019e52e2ec4617ef705661d5 read with P5 transfer blob09f33f99d771ab28b9575de1a358acc40b4d571c, ORDER rev5, transfer card, P5 card, COMMON and own role. Previous Staff/Playbook onboarding retained. Imagegen skill and references read; native tool used.
 
 Water trial02 input/source/viewmath exact pins verified. Dark trial01 input/source/viewmath and both Builder contract sets fixed now. New source/runtime only respective own transfer directories. Jungle frozen unchanged; no other method product/art/masks/findings read. No new chats/agents/worktrees/branches/settings, native/core or server changes.

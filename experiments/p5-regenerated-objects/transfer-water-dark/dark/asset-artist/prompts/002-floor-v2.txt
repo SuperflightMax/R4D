@@ -1,0 +1,8 @@
+Use case: precise-object-edit
+Asset type: corrected generated Dark environment plate for separate receivers.
+Input image1: EDIT TARGET, generated Dark floor-v1. Keep upper architecture, long side walls, art, illumination, camera and open floor above the near edge unchanged.
+Input image2: ORIGINAL Dark board, read-only camera/layout reference. Original small obstacles and receivers must not return.
+Primary request: correct ONLY the lower receiver zone. The accepted playable floor ends at source1536 Y1121, equivalent to aboutY915 on the1254-square generated plate. Restore that near playable-floor boundary at the same place as image2. Remove the four cream/red front receiver-box panels and all substituted flat paving behind/between them that incorrectly extends the playable floor into the receiver zone. Show unobtrusive dark shadowed stone/background below that true near floor edge, ready to sit behind later separate open receiver sprites.
+Keep the long side walls and their existing decoration; the four receiver boxes, their red medallion facades and their pits will be separate generated sprites, so they must not remain painted in this background. No new receiver shapes, holes, box outlines or replacement front row. Do not move the upper floor islands, far chutes, side walls, perspective or source framing.
+Style: same finished charcoal slate, warm cream stone, red insets and warm upper-left light. No ghost shadows of removed small objects. This is a native painted environment correction, not a crop or original cutout.
+Constraints: full opaque square frame, no balls, small gameplay obstacles, receiver boxes, placeholders, grids, labels, text, logo or watermark.

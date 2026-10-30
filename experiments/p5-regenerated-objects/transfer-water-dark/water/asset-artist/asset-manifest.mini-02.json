@@ -1,0 +1,1137 @@
+{
+  "schema": "r4d.p5.assets/1",
+  "status": "partial",
+  "board": "water",
+  "activeTrial": "trial-02",
+  "sourceSha256": "8da65c76c110b6ba7cefe113564fe12feed4428e84e84835f033e7da31d3b80d",
+  "p1Commit": "4b47db04c7140ebf88f69b91faa0b790d46f22ec",
+  "consumerSchemaCommit": "5d40b82ac6b2b69f7077bb9bfe58c7560fbf783e",
+  "targetsSha256": "8e6976b9e40aa202a8dc34da9bad49b96d5fa6135aa1e1d6be22d567b8cf7559",
+  "sourceRecipeConsumer": "af23e124cf5bd1d9de884082ffbc993448217112",
+  "sourceRecipeArt": "a5ec68fb2ed6aeacd8c66bc575166567bd0c3966",
+  "lighting": {
+    "ballShadowAnchorPx": [
+      700,
+      630
+    ],
+    "obstacleShadowAnchorPx": [
+      700,
+      605
+    ],
+    "description": "Warm soft scene light requested from upper left; authored shadow lobes extend lower-left. Source-angle reconstruction not claimed; consistency requires normal-scale assembled QA.",
+    "shadowDirectionSourcePx": [
+      -1,
+      1
+    ]
+  },
+  "textures": [
+    {
+      "id": "floor-v1",
+      "family": "floor",
+      "file": "E:/R4D/perspective/p5-runtime/asset-artist/transfer-water-dark/water/selected/mini-set-01/floor-v1.png",
+      "sha256": "37e1603fe031b18e9ae8d325f65b2c138612d15f49d6948ce0b27c9b35c3456c",
+      "bytes": 2477216,
+      "sizePx": [
+        1254,
+        1254
+      ],
+      "alpha": {
+        "note": "Exact alpha>0 and alpha>=16 half-open bounds. Native alpha retained; no trim/threshold/color correction.",
+        "bounds": [
+          0,
+          0,
+          1254,
+          1254
+        ],
+        "visibleBounds": [
+          0,
+          0,
+          1254,
+          1254
+        ],
+        "maxAlpha": 255,
+        "opaquePixels": 1572516,
+        "policy": "opaque"
+      },
+      "groundAnchorPx": [
+        0,
+        0
+      ],
+      "footprintPx": {
+        "width": 1254,
+        "measurement": "Opaque new generated square plate; exact registration remains unverified",
+        "center": [
+          0,
+          0
+        ],
+        "depth": 1254
+      },
+      "provenance": {
+        "rawSha256": "37e1603fe031b18e9ae8d325f65b2c138612d15f49d6948ce0b27c9b35c3456c",
+        "promptPath": "prompts/001-floor-v1.txt",
+        "references": null,
+        "rawFile": "E:/R4D/perspective/p5-runtime/asset-artist/transfer-water-dark/water/raw/floor-v1.png",
+        "toolOutputId": "exec-758160d8-91b9-4299-84d5-ecc5bb32a9d3",
+        "corrections": [],
+        "promptSha256": "1f0057fc7f7e1229a561bbbd2dfd753bd740a10fb8f54ab847911b29695dc4ad",
+        "selection": "Unchanged native pixels; partial integration candidate, no runtime/artistic PASS",
+        "method": "generated",
+        "nativeOutputPath": "C:/Users/user/.codex/generated_images/01a1842d-becc-7012-b425-bc311371f6f9/exec-758160d8-91b9-4299-84d5-ecc5bb32a9d3.png"
+      }
+    },
+    {
+      "id": "ball-v1",
+      "family": "ball",
+      "file": "E:/R4D/perspective/p5-runtime/asset-artist/transfer-water-dark/water/selected/mini-set-01/ball-v1.png",
+      "sha256": "2cfee97a7bf2542a0a4226ee893ecfa7a7a1f7352505ce74d8b8c48bae1bb301",
+      "bytes": 1370021,
+      "sizePx": [
+        1254,
+        1254
+      ],
+      "alpha": {
+        "note": "Exact alpha>0 and alpha>=16 half-open bounds. Native alpha retained; no trim/threshold/color correction.",
+        "bounds": [
+          0,
+          23,
+          1168,
+          1193
+        ],
+        "visibleBounds": [
+          99,
+          101,
+          1052,
+          1046
+        ],
+        "maxAlpha": 255,
+        "opaquePixels": 895,
+        "policy": "straight-rgba"
+      },
+      "groundAnchorPx": [
+        625,
+        1147
+      ],
+      "footprintPx": {
+        "width": 1052,
+        "measurement": "Sphere visible bbox center[625,624], diameter1052; contact at lower half-open bbox edge. Manual optical estimate about3px; no baked shadow",
+        "center": [
+          625,
+          1147
+        ],
+        "depth": 1052
+      },
+      "provenance": {
+        "rawSha256": "2cfee97a7bf2542a0a4226ee893ecfa7a7a1f7352505ce74d8b8c48bae1bb301",
+        "promptPath": "prompts/002-ball-v1.txt",
+        "references": [],
+        "rawFile": "E:/R4D/perspective/p5-runtime/asset-artist/transfer-water-dark/water/raw/ball-v1.png",
+        "toolOutputId": "exec-78802b33-1a0a-4414-b6bf-cc7810164b64",
+        "corrections": [],
+        "promptSha256": "382072b49c185f39b45d08934203e01d286e653b70b1a997d3040510d034ffcf",
+        "selection": "Unchanged native pixels; partial integration candidate, no runtime/artistic PASS",
+        "method": "generated",
+        "nativeOutputPath": "C:\\Users\\user\\.codex\\generated_images\\01a1842d-becc-7012-b425-bc311371f6f9\\exec-78802b33-1a0a-4414-b6bf-cc7810164b64.png"
+      },
+      "sphereVisualCenterPx": [
+        625,
+        624
+      ],
+      "contactLiftTexturePx": 523
+    },
+    {
+      "id": "ball-shadow-v1",
+      "family": "ball-shadow",
+      "file": "E:/R4D/perspective/p5-runtime/asset-artist/transfer-water-dark/water/selected/mini-set-01/ball-shadow-v1.png",
+      "sha256": "0d9fc682e32a2ce5255682e489a6b17c9c451f95a0b16c23325e19239fed251c",
+      "bytes": 546326,
+      "sizePx": [
+        1254,
+        1254
+      ],
+      "alpha": {
+        "note": "Exact alpha>0 and alpha>=16 half-open bounds. Native alpha retained; no trim/threshold/color correction.",
+        "bounds": [
+          0,
+          19,
+          1253,
+          1235
+        ],
+        "visibleBounds": [
+          68,
+          499,
+          1120,
+          330
+        ],
+        "maxAlpha": 198,
+        "opaquePixels": 0,
+        "policy": "straight-rgba"
+      },
+      "groundAnchorPx": [
+        700,
+        630
+      ],
+      "footprintPx": {
+        "width": 1052,
+        "measurement": "Authored contact reference[700,630], visible bbox center[628,664]; binding footprint width uses sphere diameter, not shadow extent",
+        "center": [
+          700,
+          630
+        ],
+        "depth": 400
+      },
+      "provenance": {
+        "rawSha256": "0d9fc682e32a2ce5255682e489a6b17c9c451f95a0b16c23325e19239fed251c",
+        "promptPath": "prompts/003-ball-shadow-v1.txt",
+        "references": [],
+        "rawFile": "E:/R4D/perspective/p5-runtime/asset-artist/transfer-water-dark/water/raw/ball-shadow-v1.png",
+        "toolOutputId": "exec-3d1781c0-2afe-4e03-8170-0d9e88203c31",
+        "corrections": [],
+        "promptSha256": "bc065c7202dfddadc3b55d8761337125e9b5bf15ce084a92d2a2f9a6c2fa39e1",
+        "selection": "Unchanged native pixels; partial integration candidate, no runtime/artistic PASS",
+        "method": "generated",
+        "nativeOutputPath": "C:\\Users\\user\\.codex\\generated_images\\01a1842d-becc-7012-b425-bc311371f6f9\\exec-3d1781c0-2afe-4e03-8170-0d9e88203c31.png"
+      }
+    },
+    {
+      "id": "obstacle-shadow-v2",
+      "family": "obstacle-shadow",
+      "file": "E:/R4D/perspective/p5-runtime/asset-artist/transfer-water-dark/water/selected/mini-set-01/obstacle-shadow-v2.png",
+      "sha256": "8d7171a661c095dc4b9cef5297ff07fdc9f2b2cf14f072886d02e8944cc85bc2",
+      "bytes": 343656,
+      "sizePx": [
+        1254,
+        1254
+      ],
+      "alpha": {
+        "note": "Exact alpha>0 and alpha>=16 half-open bounds. Native alpha retained; no trim/threshold/color correction.",
+        "bounds": [
+          31,
+          19,
+          1191,
+          1211
+        ],
+        "visibleBounds": [
+          192,
+          518,
+          895,
+          232
+        ],
+        "maxAlpha": 231,
+        "opaquePixels": 0,
+        "policy": "straight-rgba"
+      },
+      "groundAnchorPx": [
+        700,
+        605
+      ],
+      "footprintPx": {
+        "width": 710,
+        "measurement": "Shared separate shadow; binding reference uses pillar support size. Visible shadow extent is larger, not a physical collider",
+        "center": [
+          700,
+          605
+        ],
+        "depth": 250.8075881350121
+      },
+      "provenance": {
+        "rawSha256": "8d7171a661c095dc4b9cef5297ff07fdc9f2b2cf14f072886d02e8944cc85bc2",
+        "promptPath": "prompts/006-obstacle-shadow-v2.txt",
+        "references": [],
+        "rawFile": "E:/R4D/perspective/p5-runtime/asset-artist/transfer-water-dark/water/raw/obstacle-shadow-v2.png",
+        "toolOutputId": "exec-8263f5cb-4de2-4e6e-b3fe-0d95013c21cd",
+        "corrections": [],
+        "promptSha256": "1c9c07833d8b07441bc858ba9e2ce27c3e884e6f9fec2ef1d6e0367df286282b",
+        "selection": "Unchanged native pixels; partial integration candidate, no runtime/artistic PASS",
+        "method": "generated",
+        "nativeOutputPath": "C:\\Users\\user\\.codex\\generated_images\\01a1842d-becc-7012-b425-bc311371f6f9\\exec-8263f5cb-4de2-4e6e-b3fe-0d95013c21cd.png"
+      }
+    },
+    {
+      "id": "pillar-mid-v1",
+      "family": "pillar",
+      "file": "E:/R4D/perspective/p5-runtime/asset-artist/transfer-water-dark/water/selected/mini-set-01/pillar-mid-v1.png",
+      "sha256": "0265ff9669166fbe216da0393c6552e054d66ef0587feb206a56c06e4cbcde92",
+      "bytes": 1040337,
+      "sizePx": [
+        1254,
+        1254
+      ],
+      "alpha": {
+        "note": "Exact alpha>0 and alpha>=16 half-open bounds. Native alpha retained; no trim/threshold/color correction.",
+        "bounds": [
+          0,
+          0,
+          1240,
+          1254
+        ],
+        "visibleBounds": [
+          271,
+          172,
+          711,
+          930
+        ],
+        "maxAlpha": 255,
+        "opaquePixels": 592,
+        "policy": "straight-rgba"
+      },
+      "groundAnchorPx": [
+        627,
+        982.1392629208134
+      ],
+      "footprintPx": {
+        "width": 710,
+        "measurement": "Measured lower alpha>=128 contour ellipse proxy on a faceted base; not reconstructed camera or exact polygon. Matching source width/depth without XY warp",
+        "center": [
+          627,
+          982.1392629208134
+        ],
+        "depth": 250.8075881350121
+      },
+      "provenance": {
+        "rawSha256": "0265ff9669166fbe216da0393c6552e054d66ef0587feb206a56c06e4cbcde92",
+        "promptPath": "prompts/007-pillar-mid-v1.txt",
+        "references": [
+          "K:/Agents/R4D/Assets/perspective/04-water-temple.jpg"
+        ],
+        "rawFile": "E:/R4D/perspective/p5-runtime/asset-artist/transfer-water-dark/water/raw/pillar-mid-v1.png",
+        "toolOutputId": "exec-23186cb4-9afe-4081-b179-d37868d8cd87",
+        "corrections": [],
+        "promptSha256": "f4c2628cb9cd6f7f895832f320dab2103ba06a8be55699796d8fea970c44cd17",
+        "selection": "Unchanged native pixels; partial integration candidate, no runtime/artistic PASS",
+        "method": "generated",
+        "nativeOutputPath": "C:\\Users\\user\\.codex\\generated_images\\01a1842d-becc-7012-b425-bc311371f6f9\\exec-23186cb4-9afe-4081-b179-d37868d8cd87.png"
+      }
+    },
+    {
+      "id": "frog-mid-v4",
+      "family": "frog",
+      "file": "E:/R4D/perspective/p5-runtime/asset-artist/transfer-water-dark/water/selected/mini-set-02/frog-mid-v4.png",
+      "sha256": "f718f84fb020356c13a2753aa9449d5713f90366559dc6c4d1bb24f97fd07ddb",
+      "bytes": 1382638,
+      "sizePx": [
+        1254,
+        1254
+      ],
+      "alpha": {
+        "policy": "straight-rgba",
+        "note": "Exact alpha>0/alpha>=16; native bytes unchanged, no trim/threshold/matte",
+        "maxAlpha": 255,
+        "bounds": [
+          0,
+          17,
+          1234,
+          1237
+        ],
+        "visibleBounds": [
+          51,
+          148,
+          1154,
+          940
+        ]
+      },
+      "groundAnchorPx": [
+        627,
+        878.901468406152
+      ],
+      "footprintPx": {
+        "depth": 414.93394958969446,
+        "width": 1150.0,
+        "measurement": "Lower alpha>=128 ellipse contour fit of the new rounded support; proxy, not recovered camera. Selected only for far frog01; other frog depth variants pending.",
+        "center": [
+          627,
+          878.901468406152
+        ]
+      },
+      "provenance": {
+        "promptPath": "prompts/017-frog-mid-v4.txt",
+        "promptSha256": "3573e5bdc6f352e3f6fb9d8395090a418e79282ac280fcd1ba3cb533ae1f79c7",
+        "nativeOutputPath": "C:\\Users\\user\\.codex\\generated_images\\01a1842d-becc-7012-b425-bc311371f6f9\\exec-1ed66559-dcf1-4c23-bee2-8decbf9d6989.png",
+        "toolOutputId": "exec-1ed66559-dcf1-4c23-bee2-8decbf9d6989",
+        "corrections": [],
+        "method": "generated",
+        "selection": "Unchanged native raster; partial candidate for real assembly QA",
+        "references": [
+          "E:/R4D/perspective/p5-runtime/asset-artist/transfer-water-dark/water/raw/frog-mid-v2.png"
+        ],
+        "rawSha256": "f718f84fb020356c13a2753aa9449d5713f90366559dc6c4d1bb24f97fd07ddb",
+        "rawFile": "E:/R4D/perspective/p5-runtime/asset-artist/transfer-water-dark/water/raw/frog-mid-v4.png"
+      }
+    },
+    {
+      "id": "receiver-01-back-v1",
+      "family": "receiver",
+      "file": "E:/R4D/perspective/p5-runtime/asset-artist/transfer-water-dark/water/selected/mini-set-02/receiver-v1.png",
+      "sha256": "4bf235f8981fcb7c3ca3029c2e59a8594e9af28d7de534a56e1ab841a9549843",
+      "bytes": 1547434,
+      "sizePx": [
+        1254,
+        1254
+      ],
+      "alpha": {
+        "policy": "straight-rgba",
+        "note": "Exact alpha>0/alpha>=16; native bytes unchanged, no trim/threshold/matte",
+        "maxAlpha": 255,
+        "bounds": [
+          0,
+          0,
+          1228,
+          1254
+        ],
+        "visibleBounds": [
+          32,
+          154,
+          1190,
+          1017
+        ]
+      },
+      "groundAnchorPx": [
+        627,
+        558.4579610724702
+      ],
+      "footprintPx": {
+        "depth": 120.0,
+        "width": 230.0,
+        "center": [
+          627,
+          558.4579610724702
+        ],
+        "measurement": "Authored230x120 capture proxy inside measured new water opening, not full hull/aperture size. Scale selected from new receiver silhouette, not copied Jungle value."
+      },
+      "provenance": {
+        "promptPath": "prompts/009-receiver-v1.txt",
+        "promptSha256": "8dfc824eaf8f0f39454e0412b61f122d719f5af6f59eb08749e5b3a6d92a1db1",
+        "nativeOutputPath": "C:\\Users\\user\\.codex\\generated_images\\01a1842d-becc-7012-b425-bc311371f6f9\\exec-5e3d65a9-f3a9-4a02-a11a-307f42c455dd.png",
+        "toolOutputId": "exec-5e3d65a9-f3a9-4a02-a11a-307f42c455dd",
+        "corrections": [
+          "New ball/cup optical-logical anchor policy; no bitmap change"
+        ],
+        "method": "generated",
+        "selection": "Unchanged native raster; partial candidate for real assembly QA",
+        "references": [
+          "K:/Agents/R4D/Assets/perspective/04-water-temple.jpg"
+        ],
+        "rawSha256": "4bf235f8981fcb7c3ca3029c2e59a8594e9af28d7de534a56e1ab841a9549843",
+        "rawFile": "E:/R4D/perspective/p5-runtime/asset-artist/transfer-water-dark/water/raw/receiver-v1.png",
+        "aliasOf": "receiver-v1",
+        "aliasIsNewGeneration": false
+      },
+      "opticalOpeningPointPx": [
+        627,
+        500
+      ]
+    },
+    {
+      "id": "receiver-01-front-v1",
+      "family": "receiver-front",
+      "file": "E:/R4D/perspective/p5-runtime/asset-artist/transfer-water-dark/water/selected/mini-set-02/receiver-front-v1.png",
+      "sha256": "aaaac1a65b694873281326fcfb71fef13b1bdf3f6cea4ac06d3315f93a7bf098",
+      "bytes": 923732,
+      "sizePx": [
+        1254,
+        1254
+      ],
+      "alpha": {
+        "policy": "straight-rgba",
+        "note": "Exact alpha>0/alpha>=16; native bytes unchanged, no trim/threshold/matte",
+        "maxAlpha": 255,
+        "bounds": [
+          0,
+          57,
+          1248,
+          1141
+        ],
+        "visibleBounds": [
+          31,
+          436,
+          1192,
+          736
+        ]
+      },
+      "groundAnchorPx": [
+        627,
+        558.4579610724702
+      ],
+      "footprintPx": {
+        "depth": 120.0,
+        "width": 230.0,
+        "center": [
+          627,
+          558.4579610724702
+        ],
+        "measurement": "Authored230x120 capture proxy inside measured new water opening, not full hull/aperture size. Scale selected from new receiver silhouette, not copied Jungle value."
+      },
+      "provenance": {
+        "promptPath": "prompts/010-receiver-front-v1.txt",
+        "promptSha256": "6bafe0caa8f10e249a4cdb06412614b5be7fa151d5d75c0fe3ebbf718c1e32e3",
+        "nativeOutputPath": "C:\\Users\\user\\.codex\\generated_images\\01a1842d-becc-7012-b425-bc311371f6f9\\exec-5fa36d9c-3ff2-47a8-ac39-19e94b47611e.png",
+        "toolOutputId": "exec-5fa36d9c-3ff2-47a8-ac39-19e94b47611e",
+        "corrections": [
+          "New ball/cup optical-logical anchor policy; no bitmap change"
+        ],
+        "method": "generated",
+        "selection": "Unchanged native raster; partial candidate for real assembly QA",
+        "references": [
+          "E:/R4D/perspective/p5-runtime/asset-artist/transfer-water-dark/water/raw/receiver-v1.png"
+        ],
+        "rawSha256": "aaaac1a65b694873281326fcfb71fef13b1bdf3f6cea4ac06d3315f93a7bf098",
+        "rawFile": "E:/R4D/perspective/p5-runtime/asset-artist/transfer-water-dark/water/raw/receiver-front-v1.png",
+        "aliasOf": "receiver-front-v1",
+        "aliasIsNewGeneration": false
+      },
+      "opticalOpeningPointPx": [
+        627,
+        500
+      ]
+    },
+    {
+      "id": "receiver-02-back-v1",
+      "family": "receiver",
+      "file": "E:/R4D/perspective/p5-runtime/asset-artist/transfer-water-dark/water/selected/mini-set-02/receiver-v1.png",
+      "sha256": "4bf235f8981fcb7c3ca3029c2e59a8594e9af28d7de534a56e1ab841a9549843",
+      "bytes": 1547434,
+      "sizePx": [
+        1254,
+        1254
+      ],
+      "alpha": {
+        "policy": "straight-rgba",
+        "note": "Exact alpha>0/alpha>=16; native bytes unchanged, no trim/threshold/matte",
+        "maxAlpha": 255,
+        "bounds": [
+          0,
+          0,
+          1228,
+          1254
+        ],
+        "visibleBounds": [
+          32,
+          154,
+          1190,
+          1017
+        ]
+      },
+      "groundAnchorPx": [
+        627,
+        559.7149517742138
+      ],
+      "footprintPx": {
+        "depth": 120.0,
+        "width": 230.0,
+        "center": [
+          627,
+          559.7149517742138
+        ],
+        "measurement": "Authored230x120 capture proxy inside measured new water opening, not full hull/aperture size. Scale selected from new receiver silhouette, not copied Jungle value."
+      },
+      "provenance": {
+        "promptPath": "prompts/009-receiver-v1.txt",
+        "promptSha256": "8dfc824eaf8f0f39454e0412b61f122d719f5af6f59eb08749e5b3a6d92a1db1",
+        "nativeOutputPath": "C:\\Users\\user\\.codex\\generated_images\\01a1842d-becc-7012-b425-bc311371f6f9\\exec-5e3d65a9-f3a9-4a02-a11a-307f42c455dd.png",
+        "toolOutputId": "exec-5e3d65a9-f3a9-4a02-a11a-307f42c455dd",
+        "corrections": [
+          "New ball/cup optical-logical anchor policy; no bitmap change"
+        ],
+        "method": "generated",
+        "selection": "Unchanged native raster; partial candidate for real assembly QA",
+        "references": [
+          "K:/Agents/R4D/Assets/perspective/04-water-temple.jpg"
+        ],
+        "rawSha256": "4bf235f8981fcb7c3ca3029c2e59a8594e9af28d7de534a56e1ab841a9549843",
+        "rawFile": "E:/R4D/perspective/p5-runtime/asset-artist/transfer-water-dark/water/raw/receiver-v1.png",
+        "aliasOf": "receiver-v1",
+        "aliasIsNewGeneration": false
+      },
+      "opticalOpeningPointPx": [
+        627,
+        500
+      ]
+    },
+    {
+      "id": "receiver-02-front-v1",
+      "family": "receiver-front",
+      "file": "E:/R4D/perspective/p5-runtime/asset-artist/transfer-water-dark/water/selected/mini-set-02/receiver-front-v1.png",
+      "sha256": "aaaac1a65b694873281326fcfb71fef13b1bdf3f6cea4ac06d3315f93a7bf098",
+      "bytes": 923732,
+      "sizePx": [
+        1254,
+        1254
+      ],
+      "alpha": {
+        "policy": "straight-rgba",
+        "note": "Exact alpha>0/alpha>=16; native bytes unchanged, no trim/threshold/matte",
+        "maxAlpha": 255,
+        "bounds": [
+          0,
+          57,
+          1248,
+          1141
+        ],
+        "visibleBounds": [
+          31,
+          436,
+          1192,
+          736
+        ]
+      },
+      "groundAnchorPx": [
+        627,
+        559.7149517742138
+      ],
+      "footprintPx": {
+        "depth": 120.0,
+        "width": 230.0,
+        "center": [
+          627,
+          559.7149517742138
+        ],
+        "measurement": "Authored230x120 capture proxy inside measured new water opening, not full hull/aperture size. Scale selected from new receiver silhouette, not copied Jungle value."
+      },
+      "provenance": {
+        "promptPath": "prompts/010-receiver-front-v1.txt",
+        "promptSha256": "6bafe0caa8f10e249a4cdb06412614b5be7fa151d5d75c0fe3ebbf718c1e32e3",
+        "nativeOutputPath": "C:\\Users\\user\\.codex\\generated_images\\01a1842d-becc-7012-b425-bc311371f6f9\\exec-5fa36d9c-3ff2-47a8-ac39-19e94b47611e.png",
+        "toolOutputId": "exec-5fa36d9c-3ff2-47a8-ac39-19e94b47611e",
+        "corrections": [
+          "New ball/cup optical-logical anchor policy; no bitmap change"
+        ],
+        "method": "generated",
+        "selection": "Unchanged native raster; partial candidate for real assembly QA",
+        "references": [
+          "E:/R4D/perspective/p5-runtime/asset-artist/transfer-water-dark/water/raw/receiver-v1.png"
+        ],
+        "rawSha256": "aaaac1a65b694873281326fcfb71fef13b1bdf3f6cea4ac06d3315f93a7bf098",
+        "rawFile": "E:/R4D/perspective/p5-runtime/asset-artist/transfer-water-dark/water/raw/receiver-front-v1.png",
+        "aliasOf": "receiver-front-v1",
+        "aliasIsNewGeneration": false
+      },
+      "opticalOpeningPointPx": [
+        627,
+        500
+      ]
+    },
+    {
+      "id": "receiver-03-back-v1",
+      "family": "receiver",
+      "file": "E:/R4D/perspective/p5-runtime/asset-artist/transfer-water-dark/water/selected/mini-set-02/receiver-v1.png",
+      "sha256": "4bf235f8981fcb7c3ca3029c2e59a8594e9af28d7de534a56e1ab841a9549843",
+      "bytes": 1547434,
+      "sizePx": [
+        1254,
+        1254
+      ],
+      "alpha": {
+        "policy": "straight-rgba",
+        "note": "Exact alpha>0/alpha>=16; native bytes unchanged, no trim/threshold/matte",
+        "maxAlpha": 255,
+        "bounds": [
+          0,
+          0,
+          1228,
+          1254
+        ],
+        "visibleBounds": [
+          32,
+          154,
+          1190,
+          1017
+        ]
+      },
+      "groundAnchorPx": [
+        627,
+        558.7574460031103
+      ],
+      "footprintPx": {
+        "depth": 120.0,
+        "width": 230.0,
+        "center": [
+          627,
+          558.7574460031103
+        ],
+        "measurement": "Authored230x120 capture proxy inside measured new water opening, not full hull/aperture size. Scale selected from new receiver silhouette, not copied Jungle value."
+      },
+      "provenance": {
+        "promptPath": "prompts/009-receiver-v1.txt",
+        "promptSha256": "8dfc824eaf8f0f39454e0412b61f122d719f5af6f59eb08749e5b3a6d92a1db1",
+        "nativeOutputPath": "C:\\Users\\user\\.codex\\generated_images\\01a1842d-becc-7012-b425-bc311371f6f9\\exec-5e3d65a9-f3a9-4a02-a11a-307f42c455dd.png",
+        "toolOutputId": "exec-5e3d65a9-f3a9-4a02-a11a-307f42c455dd",
+        "corrections": [
+          "New ball/cup optical-logical anchor policy; no bitmap change"
+        ],
+        "method": "generated",
+        "selection": "Unchanged native raster; partial candidate for real assembly QA",
+        "references": [
+          "K:/Agents/R4D/Assets/perspective/04-water-temple.jpg"
+        ],
+        "rawSha256": "4bf235f8981fcb7c3ca3029c2e59a8594e9af28d7de534a56e1ab841a9549843",
+        "rawFile": "E:/R4D/perspective/p5-runtime/asset-artist/transfer-water-dark/water/raw/receiver-v1.png",
+        "aliasOf": "receiver-v1",
+        "aliasIsNewGeneration": false
+      },
+      "opticalOpeningPointPx": [
+        627,
+        500
+      ]
+    },
+    {
+      "id": "receiver-03-front-v1",
+      "family": "receiver-front",
+      "file": "E:/R4D/perspective/p5-runtime/asset-artist/transfer-water-dark/water/selected/mini-set-02/receiver-front-v1.png",
+      "sha256": "aaaac1a65b694873281326fcfb71fef13b1bdf3f6cea4ac06d3315f93a7bf098",
+      "bytes": 923732,
+      "sizePx": [
+        1254,
+        1254
+      ],
+      "alpha": {
+        "policy": "straight-rgba",
+        "note": "Exact alpha>0/alpha>=16; native bytes unchanged, no trim/threshold/matte",
+        "maxAlpha": 255,
+        "bounds": [
+          0,
+          57,
+          1248,
+          1141
+        ],
+        "visibleBounds": [
+          31,
+          436,
+          1192,
+          736
+        ]
+      },
+      "groundAnchorPx": [
+        627,
+        558.7574460031103
+      ],
+      "footprintPx": {
+        "depth": 120.0,
+        "width": 230.0,
+        "center": [
+          627,
+          558.7574460031103
+        ],
+        "measurement": "Authored230x120 capture proxy inside measured new water opening, not full hull/aperture size. Scale selected from new receiver silhouette, not copied Jungle value."
+      },
+      "provenance": {
+        "promptPath": "prompts/010-receiver-front-v1.txt",
+        "promptSha256": "6bafe0caa8f10e249a4cdb06412614b5be7fa151d5d75c0fe3ebbf718c1e32e3",
+        "nativeOutputPath": "C:\\Users\\user\\.codex\\generated_images\\01a1842d-becc-7012-b425-bc311371f6f9\\exec-5fa36d9c-3ff2-47a8-ac39-19e94b47611e.png",
+        "toolOutputId": "exec-5fa36d9c-3ff2-47a8-ac39-19e94b47611e",
+        "corrections": [
+          "New ball/cup optical-logical anchor policy; no bitmap change"
+        ],
+        "method": "generated",
+        "selection": "Unchanged native raster; partial candidate for real assembly QA",
+        "references": [
+          "E:/R4D/perspective/p5-runtime/asset-artist/transfer-water-dark/water/raw/receiver-v1.png"
+        ],
+        "rawSha256": "aaaac1a65b694873281326fcfb71fef13b1bdf3f6cea4ac06d3315f93a7bf098",
+        "rawFile": "E:/R4D/perspective/p5-runtime/asset-artist/transfer-water-dark/water/raw/receiver-front-v1.png",
+        "aliasOf": "receiver-front-v1",
+        "aliasIsNewGeneration": false
+      },
+      "opticalOpeningPointPx": [
+        627,
+        500
+      ]
+    },
+    {
+      "id": "receiver-04-back-v1",
+      "family": "receiver",
+      "file": "E:/R4D/perspective/p5-runtime/asset-artist/transfer-water-dark/water/selected/mini-set-02/receiver-v1.png",
+      "sha256": "4bf235f8981fcb7c3ca3029c2e59a8594e9af28d7de534a56e1ab841a9549843",
+      "bytes": 1547434,
+      "sizePx": [
+        1254,
+        1254
+      ],
+      "alpha": {
+        "policy": "straight-rgba",
+        "note": "Exact alpha>0/alpha>=16; native bytes unchanged, no trim/threshold/matte",
+        "maxAlpha": 255,
+        "bounds": [
+          0,
+          0,
+          1228,
+          1254
+        ],
+        "visibleBounds": [
+          32,
+          154,
+          1190,
+          1017
+        ]
+      },
+      "groundAnchorPx": [
+        627,
+        555.4715710194839
+      ],
+      "footprintPx": {
+        "depth": 120.0,
+        "width": 230.0,
+        "center": [
+          627,
+          555.4715710194839
+        ],
+        "measurement": "Authored230x120 capture proxy inside measured new water opening, not full hull/aperture size. Scale selected from new receiver silhouette, not copied Jungle value."
+      },
+      "provenance": {
+        "promptPath": "prompts/009-receiver-v1.txt",
+        "promptSha256": "8dfc824eaf8f0f39454e0412b61f122d719f5af6f59eb08749e5b3a6d92a1db1",
+        "nativeOutputPath": "C:\\Users\\user\\.codex\\generated_images\\01a1842d-becc-7012-b425-bc311371f6f9\\exec-5e3d65a9-f3a9-4a02-a11a-307f42c455dd.png",
+        "toolOutputId": "exec-5e3d65a9-f3a9-4a02-a11a-307f42c455dd",
+        "corrections": [
+          "New ball/cup optical-logical anchor policy; no bitmap change"
+        ],
+        "method": "generated",
+        "selection": "Unchanged native raster; partial candidate for real assembly QA",
+        "references": [
+          "K:/Agents/R4D/Assets/perspective/04-water-temple.jpg"
+        ],
+        "rawSha256": "4bf235f8981fcb7c3ca3029c2e59a8594e9af28d7de534a56e1ab841a9549843",
+        "rawFile": "E:/R4D/perspective/p5-runtime/asset-artist/transfer-water-dark/water/raw/receiver-v1.png",
+        "aliasOf": "receiver-v1",
+        "aliasIsNewGeneration": false
+      },
+      "opticalOpeningPointPx": [
+        627,
+        500
+      ]
+    },
+    {
+      "id": "receiver-04-front-v1",
+      "family": "receiver-front",
+      "file": "E:/R4D/perspective/p5-runtime/asset-artist/transfer-water-dark/water/selected/mini-set-02/receiver-front-v1.png",
+      "sha256": "aaaac1a65b694873281326fcfb71fef13b1bdf3f6cea4ac06d3315f93a7bf098",
+      "bytes": 923732,
+      "sizePx": [
+        1254,
+        1254
+      ],
+      "alpha": {
+        "policy": "straight-rgba",
+        "note": "Exact alpha>0/alpha>=16; native bytes unchanged, no trim/threshold/matte",
+        "maxAlpha": 255,
+        "bounds": [
+          0,
+          57,
+          1248,
+          1141
+        ],
+        "visibleBounds": [
+          31,
+          436,
+          1192,
+          736
+        ]
+      },
+      "groundAnchorPx": [
+        627,
+        555.4715710194839
+      ],
+      "footprintPx": {
+        "depth": 120.0,
+        "width": 230.0,
+        "center": [
+          627,
+          555.4715710194839
+        ],
+        "measurement": "Authored230x120 capture proxy inside measured new water opening, not full hull/aperture size. Scale selected from new receiver silhouette, not copied Jungle value."
+      },
+      "provenance": {
+        "promptPath": "prompts/010-receiver-front-v1.txt",
+        "promptSha256": "6bafe0caa8f10e249a4cdb06412614b5be7fa151d5d75c0fe3ebbf718c1e32e3",
+        "nativeOutputPath": "C:\\Users\\user\\.codex\\generated_images\\01a1842d-becc-7012-b425-bc311371f6f9\\exec-5fa36d9c-3ff2-47a8-ac39-19e94b47611e.png",
+        "toolOutputId": "exec-5fa36d9c-3ff2-47a8-ac39-19e94b47611e",
+        "corrections": [
+          "New ball/cup optical-logical anchor policy; no bitmap change"
+        ],
+        "method": "generated",
+        "selection": "Unchanged native raster; partial candidate for real assembly QA",
+        "references": [
+          "E:/R4D/perspective/p5-runtime/asset-artist/transfer-water-dark/water/raw/receiver-v1.png"
+        ],
+        "rawSha256": "aaaac1a65b694873281326fcfb71fef13b1bdf3f6cea4ac06d3315f93a7bf098",
+        "rawFile": "E:/R4D/perspective/p5-runtime/asset-artist/transfer-water-dark/water/raw/receiver-front-v1.png",
+        "aliasOf": "receiver-front-v1",
+        "aliasIsNewGeneration": false
+      },
+      "opticalOpeningPointPx": [
+        627,
+        500
+      ]
+    }
+  ],
+  "instances": [
+    {
+      "id": "floor",
+      "textureId": "floor-v1",
+      "targetId": "$source",
+      "parentId": "board",
+      "role": "floor",
+      "depthOffsetRadii": 0.0,
+      "depthReason": "New full-frame square floor uniformly1254->1536; no crop or original pixel cutout"
+    },
+    {
+      "id": "pillar-03-body",
+      "textureId": "pillar-mid-v1",
+      "targetId": "pillar-03",
+      "parentId": "pillar-03",
+      "role": "body",
+      "depthOffsetRadii": 0.0,
+      "depthReason": "Same source consumer baseline part sorting at unchanged native loop centroid; sides/corners require actual QA"
+    },
+    {
+      "id": "pillar-03-shadow",
+      "textureId": "obstacle-shadow-v2",
+      "targetId": "pillar-03",
+      "parentId": "pillar-03",
+      "role": "shadow",
+      "depthOffsetRadii": 0.0,
+      "depthReason": "Separate generated translucent contact/cast shadow, source offset authored in pixels only"
+    },
+    {
+      "id": "pillar-04-body",
+      "textureId": "pillar-mid-v1",
+      "targetId": "pillar-04",
+      "parentId": "pillar-04",
+      "role": "body",
+      "depthOffsetRadii": 0.0,
+      "depthReason": "Same source consumer baseline part sorting at unchanged native loop centroid; sides/corners require actual QA"
+    },
+    {
+      "id": "pillar-04-shadow",
+      "textureId": "obstacle-shadow-v2",
+      "targetId": "pillar-04",
+      "parentId": "pillar-04",
+      "role": "shadow",
+      "depthOffsetRadii": 0.0,
+      "depthReason": "Separate generated translucent contact/cast shadow, source offset authored in pixels only"
+    },
+    {
+      "id": "ball",
+      "textureId": "ball-v1",
+      "targetId": "$ball",
+      "parentId": "ball",
+      "role": "ball",
+      "depthOffsetRadii": 0.0,
+      "depthReason": "New sphere, scale from live projected r16 diameter; contact and visual center measured on new art"
+    },
+    {
+      "id": "ball-shadow",
+      "textureId": "ball-shadow-v1",
+      "targetId": "$ball",
+      "parentId": "ball",
+      "role": "shadow",
+      "depthOffsetRadii": 0.0,
+      "depthReason": "Separate new translucent ground shadow; no state/seed/tick offset"
+    },
+    {
+      "id": "pillar-01-body",
+      "textureId": "pillar-mid-v1",
+      "targetId": "pillar-01",
+      "parentId": "pillar-01",
+      "role": "body",
+      "depthOffsetRadii": 0.0,
+      "depthReason": "Same measured pillar support family; uniform scale from exact unchanged segment-loop target"
+    },
+    {
+      "id": "pillar-01-shadow",
+      "textureId": "obstacle-shadow-v2",
+      "targetId": "pillar-01",
+      "parentId": "pillar-01",
+      "role": "shadow",
+      "depthOffsetRadii": 0.0,
+      "depthReason": "Separate new readable shadow; no native offset"
+    },
+    {
+      "id": "pillar-02-body",
+      "textureId": "pillar-mid-v1",
+      "targetId": "pillar-02",
+      "parentId": "pillar-02",
+      "role": "body",
+      "depthOffsetRadii": 0.0,
+      "depthReason": "Same measured pillar support family; uniform scale from exact unchanged segment-loop target"
+    },
+    {
+      "id": "pillar-02-shadow",
+      "textureId": "obstacle-shadow-v2",
+      "targetId": "pillar-02",
+      "parentId": "pillar-02",
+      "role": "shadow",
+      "depthOffsetRadii": 0.0,
+      "depthReason": "Separate new readable shadow; no native offset"
+    },
+    {
+      "id": "pillar-05-body",
+      "textureId": "pillar-mid-v1",
+      "targetId": "pillar-05",
+      "parentId": "pillar-05",
+      "role": "body",
+      "depthOffsetRadii": 0.0,
+      "depthReason": "Same measured pillar support family; uniform scale from exact unchanged segment-loop target"
+    },
+    {
+      "id": "pillar-05-shadow",
+      "textureId": "obstacle-shadow-v2",
+      "targetId": "pillar-05",
+      "parentId": "pillar-05",
+      "role": "shadow",
+      "depthOffsetRadii": 0.0,
+      "depthReason": "Separate new readable shadow; no native offset"
+    },
+    {
+      "id": "pillar-06-body",
+      "textureId": "pillar-mid-v1",
+      "targetId": "pillar-06",
+      "parentId": "pillar-06",
+      "role": "body",
+      "depthOffsetRadii": 0.0,
+      "depthReason": "Same measured pillar support family; uniform scale from exact unchanged segment-loop target"
+    },
+    {
+      "id": "pillar-06-shadow",
+      "textureId": "obstacle-shadow-v2",
+      "targetId": "pillar-06",
+      "parentId": "pillar-06",
+      "role": "shadow",
+      "depthOffsetRadii": 0.0,
+      "depthReason": "Separate new readable shadow; no native offset"
+    },
+    {
+      "id": "pillar-07-body",
+      "textureId": "pillar-mid-v1",
+      "targetId": "pillar-07",
+      "parentId": "pillar-07",
+      "role": "body",
+      "depthOffsetRadii": 0.0,
+      "depthReason": "Same measured pillar support family; uniform scale from exact unchanged segment-loop target"
+    },
+    {
+      "id": "pillar-07-shadow",
+      "textureId": "obstacle-shadow-v2",
+      "targetId": "pillar-07",
+      "parentId": "pillar-07",
+      "role": "shadow",
+      "depthOffsetRadii": 0.0,
+      "depthReason": "Separate new readable shadow; no native offset"
+    },
+    {
+      "id": "frog-01-body",
+      "textureId": "frog-mid-v4",
+      "targetId": "frog-01",
+      "parentId": "frog-01",
+      "role": "body",
+      "depthOffsetRadii": 0.0,
+      "depthReason": "Farthest frog target selected by measured support ratio; residual retained, no XY warp or geometry change"
+    },
+    {
+      "id": "frog-01-shadow",
+      "textureId": "obstacle-shadow-v2",
+      "targetId": "frog-01",
+      "parentId": "frog-01",
+      "role": "shadow",
+      "depthOffsetRadii": 0.0,
+      "depthReason": "Separate generated shadow scaled by unchanged target footprint"
+    },
+    {
+      "id": "receiver-01-back",
+      "textureId": "receiver-01-back-v1",
+      "targetId": "receiver-01",
+      "parentId": "receiver-01",
+      "role": "receiver-back",
+      "depthOffsetRadii": -1.0,
+      "depthReason": "Existing receiver part-depth baseline; same new optical/logical registration, no sink/fade/seed condition"
+    },
+    {
+      "id": "receiver-01-front",
+      "textureId": "receiver-01-front-v1",
+      "targetId": "receiver-01",
+      "parentId": "receiver-01",
+      "role": "receiver-front",
+      "depthOffsetRadii": 1.0,
+      "depthReason": "Existing receiver part-depth baseline; same new optical/logical registration, no sink/fade/seed condition"
+    },
+    {
+      "id": "receiver-02-back",
+      "textureId": "receiver-02-back-v1",
+      "targetId": "receiver-02",
+      "parentId": "receiver-02",
+      "role": "receiver-back",
+      "depthOffsetRadii": -1.0,
+      "depthReason": "Existing receiver part-depth baseline; same new optical/logical registration, no sink/fade/seed condition"
+    },
+    {
+      "id": "receiver-02-front",
+      "textureId": "receiver-02-front-v1",
+      "targetId": "receiver-02",
+      "parentId": "receiver-02",
+      "role": "receiver-front",
+      "depthOffsetRadii": 1.0,
+      "depthReason": "Existing receiver part-depth baseline; same new optical/logical registration, no sink/fade/seed condition"
+    },
+    {
+      "id": "receiver-03-back",
+      "textureId": "receiver-03-back-v1",
+      "targetId": "receiver-03",
+      "parentId": "receiver-03",
+      "role": "receiver-back",
+      "depthOffsetRadii": -1.0,
+      "depthReason": "Existing receiver part-depth baseline; same new optical/logical registration, no sink/fade/seed condition"
+    },
+    {
+      "id": "receiver-03-front",
+      "textureId": "receiver-03-front-v1",
+      "targetId": "receiver-03",
+      "parentId": "receiver-03",
+      "role": "receiver-front",
+      "depthOffsetRadii": 1.0,
+      "depthReason": "Existing receiver part-depth baseline; same new optical/logical registration, no sink/fade/seed condition"
+    },
+    {
+      "id": "receiver-04-back",
+      "textureId": "receiver-04-back-v1",
+      "targetId": "receiver-04",
+      "parentId": "receiver-04",
+      "role": "receiver-back",
+      "depthOffsetRadii": -1.0,
+      "depthReason": "Existing receiver part-depth baseline; same new optical/logical registration, no sink/fade/seed condition"
+    },
+    {
+      "id": "receiver-04-front",
+      "textureId": "receiver-04-front-v1",
+      "targetId": "receiver-04",
+      "parentId": "receiver-04",
+      "role": "receiver-front",
+      "depthOffsetRadii": 1.0,
+      "depthReason": "Existing receiver part-depth baseline; same new optical/logical registration, no sink/fade/seed condition"
+    }
+  ],
+  "coverage": {
+    "physicalObstacleTargetsTotal": 29,
+    "selectedObstacleTargets": [
+      "pillar-01",
+      "pillar-02",
+      "pillar-03",
+      "pillar-04",
+      "pillar-05",
+      "pillar-06",
+      "pillar-07",
+      "frog-01"
+    ],
+    "receiverCountSelected": 4,
+    "obstacleArtGroupsTotal": 21,
+    "sourceClipCount": 0
+  },
+  "limitations": [
+    "Partial8of21 art groups: seven pillars and only farfrog01; other frogs and all arches not yet selected",
+    "Arch full/left/right/lintel native candidates retained; left/lintel edits changed canvas; registration/remaining support depth correction pending, no fake3D lintel collider",
+    "No generated-floor environment sourceClip yet; long side walls and near/island edges remain required work",
+    "New receiver/front registration/policy and normal-scale shadows require real motion/independent QA",
+    "Native faint alpha residue retained; no trim/threshold/color correction",
+    "No native/core/geometry/PRNG or sorting-method change, no seed offsets/sink/fade, no public delivery token"
+  ],
+  "serverWrites": 0,
+  "tokenGranted": false,
+  "receiverPolicy": "RECEIVER_ANCHOR_POLICY.mini-02.json"
+}

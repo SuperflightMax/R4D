@@ -1,0 +1,7 @@
+$ErrorActionPreference='Stop'
+Add-Type -AssemblyName System.Drawing
+$taskOut='E:/R4D/perspective/p5-runtime/asset-artist/transfer-water-dark/water/refs/frog-support-guide-v3.png'
+if(Test-Path -LiteralPath $taskOut){throw 'Reference already exists; preserve it'}
+$taskImage=[Drawing.Bitmap]::new(1254,1254);$taskG=[Drawing.Graphics]::FromImage($taskImage);$taskLight=[Drawing.SolidBrush]::new([Drawing.Color]::FromArgb(224,224,224));$taskMid=[Drawing.SolidBrush]::new([Drawing.Color]::FromArgb(165,165,165));$taskDark=[Drawing.SolidBrush]::new([Drawing.Color]::FromArgb(115,115,115))
+try{$taskG.SmoothingMode=[Drawing.Drawing2D.SmoothingMode]::AntiAlias;$taskG.Clear([Drawing.Color]::White);$taskG.FillEllipse($taskDark,177,805,900,310);$taskG.FillRectangle($taskMid,177,890,900,70);$taskG.FillEllipse($taskLight,177,735,900,310);$taskG.FillEllipse($taskMid,202,300,850,660);$taskG.FillEllipse($taskLight,202,279,850,292);$taskImage.Save($taskOut,[Drawing.Imaging.ImageFormat]::Png)}finally{$taskG.Dispose();$taskImage.Dispose();$taskLight.Dispose();$taskMid.Dispose();$taskDark.Dispose()}
+[ordered]@{file=$taskOut;sha256=(Get-FileHash -LiteralPath $taskOut -Algorithm SHA256).Hash.ToLowerInvariant();role='Reference-only geometry scaffold, not final art';groundWidth=900;groundDepth=310;reason='Previous guide ratio.451 generated contour ratio.5848; reduce guide ratio to.3444, preserve versioned previous outcome; no bitmap warp'}|ConvertTo-Json
