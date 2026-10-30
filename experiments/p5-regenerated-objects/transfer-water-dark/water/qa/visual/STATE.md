@@ -1,6 +1,6 @@
 # Water Visual QA
 
-2026-10-30, Europe/Kyiv. **W01-V01_CLOSED_ON_W02; FULL_WATER_ART_AND_TRANSFER_UNVERIFIED.**
+2026-10-30, Europe/Kyiv. **W04_BASELINE_QA_COMPLETE; W04-V01_OPEN; W01-V01_CLOSED_ON_W02; FULL_WATER_ART_AND_TRANSFER_UNVERIFIED.**
 
 Exact canon/P1/JPG проверены; [PREPARATION.md](PREPARATION.md) и [SOURCE_FACTS.json](SOURCE_FACTS.json) готовы. Floor v1 SHA256 `37e1603fe031b18e9ae8d325f65b2c138612d15f49d6948ce0b27c9b35c3456c` просмотрен отдельно: [EARLY_FLOOR_V1.md](EARLY_FLOOR_V1.md).
 
@@ -12,4 +12,6 @@ Actual w01 consumer `41349b8d…` / Artist `094301dd…` просмотрен в
 
 Обычные новые seeds сохранены:2190599127→LOST1496,1370738139→LOST1139. Replay seed0→LOST1326,seed2→receiver02/1275. Receiver/gate/environment art отсутствует, его художественные взаимодействия UNVERIFIED; pillar04 contact и partial hide/reveal также не подтверждены.
 
-Собственная вкладка закрыта, producer server/product не менялись; server writes0/tokenfalse. Следующее действие — отдельная actual art QA следующего выданного mini. Dark ведётся отдельно. Frozen Jungle и его PARTIAL/UNVERIFIED сохранены.
+Actual w04 consumer `48763f47…` / Artist `54108560…` просмотрен: [REPORT_W04.md](REPORT_W04.md), [EVIDENCE_W04.json](EVIDENCE_W04.json),22 own JPEG+AX. Arch07: оба contact windows и partial reveal просмотрены, значимого провала в данном проходе не увидел; shadow/support PARTIAL, общего gate PASS нет. W04-V01: receiver02 невидим на1273/1274 и резко появляется на1275, подтверждено Field/Whole. Terminal +1 остаётся1275, без наблюдавшегося sink/fade. Root cause лишь гипотеза; исправление не проверено.
+
+Новых throws/oracle не было: replay1→LOST1196,2→receiver02/1275. Другие контакты/чаши/environment остаются UNVERIFIED. Собственная вкладка закрыта, producer server/product не менялись; server writes0/tokenfalse. Следующее действие — scoped QA отдельного frozen исправления W04-V01/следующих parts после выдачи. Dark ведётся отдельно. Frozen Jungle и все прежние evidence сохранены.
