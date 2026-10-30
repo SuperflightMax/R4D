@@ -27,3 +27,5 @@ Browser evidence в own `dark/evidence/d00-browser/`; общие pins этого
 Fresh Dark browser guard23:30UTC: RAMfree10.702/31.907GiB,systemCPU5%,aggregate raw7.79%,WS26.805GiB/555procs; C14.668/D14.648/E9.734GiB. Own peak1.5GiB RAM/.1GiB E + concurrent allowance4/2 соблюдён. All outputs/cache/TEMP own E/process-local. Global/model/effort/host/foreign processes не менялись; P4/P6 product/art/findings не использовались. Jungle frozen/public не затронуты. Raw private TS/maps не вошли в public whitelist.
 
 Следующий Dark product — d01 после нового Artist mini, отдельный frozen root/FILE_INDEX и actual art/motion. Неизвестное/недоступное будет отмечено прямо. Публичная доставка только с новым CTO token; старый Jungle token закрыт.
+
+Successor: [HANDOFF_D01.md](HANDOFF_D01.md), original generated Dark baseline. D00 remains immutable/live; its owner is archived at E:/R4D/perspective/p5-runtime/builder/transfer-water-dark/dark/preview-owners/d00-pid37032.json. Current dark/preview-owner.json belongs to d01.
