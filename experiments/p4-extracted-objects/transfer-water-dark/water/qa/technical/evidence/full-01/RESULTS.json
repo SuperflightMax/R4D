@@ -1,0 +1,3654 @@
+{
+  "schema": "r4d.p4.technical-qa.full-review.v1",
+  "date": "2026-10-30",
+  "disposition": "PASS in observed full-pack technical scope; Art not passed; receiver01/04 dynamic cases and worker response-body SHA unverified",
+  "candidate": "water-full-original-p4-candidate-01",
+  "builderCommit": "b6226979df39662e745e8636553019fae14fa19e",
+  "artifactSha256": "12c5f6a96a1c2c7571b13c303ffca0da4e84676916edd21fd1ddd87c39758a6c",
+  "payloadRootSha256": "be302ce69e86ca2f0ca73b2ee7143440013ee0c6dd077bef0d78e5e18d72d59c",
+  "artworkRootSha256": "51b0ee67d078ad7d6da71077f624b8e9de758af78400c6718fdf271789d63332",
+  "records": [
+    {
+      "file": "00-load-normal.dom.json",
+      "seed": 0,
+      "tick": 0,
+      "eventCount": 2,
+      "state": "PASS",
+      "events": "PASS",
+      "rawSha256": "6a6955873cc57a6cfc642bfcc76bd0f5fbdc82f5871e671dfe5b937f0f252b25",
+      "stateTextSha256": "56898ad1a842f5ca680dc80344b9e58fa1860c1d3fcc817129d75780aa9500e9",
+      "eventsTextSha256": "34f1c39a57aff44c1e65c862608905c59af1ddfb11f64dfbd447ba59b4c1a5ac"
+    },
+    {
+      "file": "01-full-parts-off-normal.dom.json",
+      "seed": 0,
+      "tick": 0,
+      "eventCount": 2,
+      "state": "PASS",
+      "events": "PASS",
+      "rawSha256": "8ec52af7150e6b667b6c8daf41785628fec37ccb848451c82d90f1c15bc87303",
+      "stateTextSha256": "56898ad1a842f5ca680dc80344b9e58fa1860c1d3fcc817129d75780aa9500e9",
+      "eventsTextSha256": "34f1c39a57aff44c1e65c862608905c59af1ddfb11f64dfbd447ba59b4c1a5ac"
+    },
+    {
+      "file": "02-frog-104.dom.json",
+      "seed": 0,
+      "tick": 104,
+      "eventCount": 2,
+      "state": "PASS",
+      "events": "PASS",
+      "rawSha256": "aa0275f7774b038c3001f0cc11fbfb2049dbd301adedc18f5b5706ce0678a13d",
+      "stateTextSha256": "b856429ba468c03694d7012bcdad7804fad94c084307e2d5ab05e95ca8d2824a",
+      "eventsTextSha256": "34f1c39a57aff44c1e65c862608905c59af1ddfb11f64dfbd447ba59b4c1a5ac"
+    },
+    {
+      "file": "03-frog-105.dom.json",
+      "seed": 0,
+      "tick": 105,
+      "eventCount": 2,
+      "state": "PASS",
+      "events": "PASS",
+      "rawSha256": "adc8e6e0a4224741fea5912dd6f16d045805fe96dfab17e8c51b7019565c8b0f",
+      "stateTextSha256": "cd732e4f22c29453efdff5b47cf6f356fb82e0cff5b2c6bb73598dd51493d00c",
+      "eventsTextSha256": "34f1c39a57aff44c1e65c862608905c59af1ddfb11f64dfbd447ba59b4c1a5ac"
+    },
+    {
+      "file": "03-frog-106.dom.json",
+      "seed": 0,
+      "tick": 106,
+      "eventCount": 3,
+      "state": "PASS",
+      "events": "PASS",
+      "rawSha256": "314df57b918cbb724199f2a6834a35199414a9dbecddca249a80943a3cde69de",
+      "stateTextSha256": "ed9831c69a3343dc27e1c3b94c4396042151c5e123a4de186d2ce74c13b77659",
+      "eventsTextSha256": "6debd1a86c48034c9888bfa0a1faaeb8a10bd241ffc7f81e677225d76124f12a"
+    },
+    {
+      "file": "03-frog-107.dom.json",
+      "seed": 0,
+      "tick": 107,
+      "eventCount": 3,
+      "state": "PASS",
+      "events": "PASS",
+      "rawSha256": "5ac117cdf0a4b4f032c43724fe34cf3f494fcbbb4a90eea0d3c01110a1337d36",
+      "stateTextSha256": "fdb3a524ff69eec3bf2f6b23dc2e42505de67930e2877b0a9c2a1c6e1ad6bf40",
+      "eventsTextSha256": "6debd1a86c48034c9888bfa0a1faaeb8a10bd241ffc7f81e677225d76124f12a"
+    },
+    {
+      "file": "03-frog-108.dom.json",
+      "seed": 0,
+      "tick": 108,
+      "eventCount": 3,
+      "state": "PASS",
+      "events": "PASS",
+      "rawSha256": "d93cc58513a49c6033a00e2373a6c59cd1c0be28187f9f026da1f1993b5327ea",
+      "stateTextSha256": "b509bf245f14483db3275f269549981d5a20bdc0023974dfc33bbda69f610022",
+      "eventsTextSha256": "6debd1a86c48034c9888bfa0a1faaeb8a10bd241ffc7f81e677225d76124f12a"
+    },
+    {
+      "file": "03-frog-109.dom.json",
+      "seed": 0,
+      "tick": 109,
+      "eventCount": 3,
+      "state": "PASS",
+      "events": "PASS",
+      "rawSha256": "16711ffc5c65ed8c993da802d69a08b8103ffe817fa2cdf15a880d987ce31cdd",
+      "stateTextSha256": "568c5d100b7e2d6a62330a2767f8acf7b257a9087ccc9b6255512a0581682247",
+      "eventsTextSha256": "6debd1a86c48034c9888bfa0a1faaeb8a10bd241ffc7f81e677225d76124f12a"
+    },
+    {
+      "file": "03-frog-110.dom.json",
+      "seed": 0,
+      "tick": 110,
+      "eventCount": 3,
+      "state": "PASS",
+      "events": "PASS",
+      "rawSha256": "a32e64af556adc062e102f28f2e91191268e60165bd8641a21170a53a68ec392",
+      "stateTextSha256": "a0cd2b94aaad9fdadfd937879b72fa4ae683e24e18cc685a099751e573c66972",
+      "eventsTextSha256": "6debd1a86c48034c9888bfa0a1faaeb8a10bd241ffc7f81e677225d76124f12a"
+    },
+    {
+      "file": "04-arch04-696.dom.json",
+      "seed": 0,
+      "tick": 696,
+      "eventCount": 7,
+      "state": "PASS",
+      "events": "PASS",
+      "rawSha256": "75d0f2d4e2e713eb8a1ac4e30dbdf5506fae22d8e201bc1f2f3eb752ed7ed81d",
+      "stateTextSha256": "ca32d407aa02f7d34e9232413a790bae52f2e4818aa1473dc8006d8b4304b4d3",
+      "eventsTextSha256": "9aa241766cf16c39fcfa6c7b04a5ea829f777aa176dc62091f662a7ae00cf866"
+    },
+    {
+      "file": "05-arch04-697.dom.json",
+      "seed": 0,
+      "tick": 697,
+      "eventCount": 7,
+      "state": "PASS",
+      "events": "PASS",
+      "rawSha256": "c66c32f27b78ba5236cc8fff9015e7f48194628c0757ba84c285a202f12b1808",
+      "stateTextSha256": "2c358cdcb6802c4ca78889b196c9c203aa9abcdd397f1882dd9d3ef5a506d35f",
+      "eventsTextSha256": "9aa241766cf16c39fcfa6c7b04a5ea829f777aa176dc62091f662a7ae00cf866"
+    },
+    {
+      "file": "05-arch04-698.dom.json",
+      "seed": 0,
+      "tick": 698,
+      "eventCount": 8,
+      "state": "PASS",
+      "events": "PASS",
+      "rawSha256": "ade2ff6a2b715ffc63f7e4e23b8d55accbf706864b16579d015a2acabaaeabf3",
+      "stateTextSha256": "6ae84e39db4833a1fb3625bbfc6f81d8652caa5b1ba8bd06969ceb9a4d0dd375",
+      "eventsTextSha256": "cb6527a2a73baec156f528acad94c227e47c50770602e1f5de02cfb1b475ccce"
+    },
+    {
+      "file": "05-arch04-699.dom.json",
+      "seed": 0,
+      "tick": 699,
+      "eventCount": 8,
+      "state": "PASS",
+      "events": "PASS",
+      "rawSha256": "3e80b1955d4959cc06ea3d2ca243c714a95249fe892db2d94dd9c8756e0b5a0e",
+      "stateTextSha256": "40b4c5b593396dfd90ea50d164c2feeed100f0754d54a6beee64eaf489bd6357",
+      "eventsTextSha256": "cb6527a2a73baec156f528acad94c227e47c50770602e1f5de02cfb1b475ccce"
+    },
+    {
+      "file": "05-arch04-700.dom.json",
+      "seed": 0,
+      "tick": 700,
+      "eventCount": 8,
+      "state": "PASS",
+      "events": "PASS",
+      "rawSha256": "7f7d0b223ab56b5098a11bc7a2f990257fe3c9ce60bc1011d4fefaeec788d964",
+      "stateTextSha256": "4b28f232bd4cbf4c33110a86d59e1d52c3ad0b5612bec82b95ed4f9da8d161cd",
+      "eventsTextSha256": "cb6527a2a73baec156f528acad94c227e47c50770602e1f5de02cfb1b475ccce"
+    },
+    {
+      "file": "06-seed0-LOST.dom.json",
+      "seed": 0,
+      "tick": 1326,
+      "eventCount": 14,
+      "state": "PASS",
+      "events": "PASS",
+      "rawSha256": "45c1c18e1871a539d77dd3cc7599858e90be895426e6faaec15cb1c6bf9edcf4",
+      "stateTextSha256": "f60b414daa5d68c1634876074b7ae175e8ccfa70b1ef4e3378e592396c29315b",
+      "eventsTextSha256": "1747722349bd195b5047202e91a0224fe1a0727b8ce25103054030d1824686ab"
+    },
+    {
+      "file": "07-draft-1-blur.dom.json",
+      "seed": 1,
+      "tick": 306,
+      "eventCount": 3,
+      "state": "PASS",
+      "events": "PASS",
+      "rawSha256": "dc7e9528782539a73e9adb135cd424084fe5d6822503ed9bddbd2133fed6e97e",
+      "stateTextSha256": "6562f2b12fe917a57eb47b226903704d234227fa795107fff33a0a9a5ffe867f",
+      "eventsTextSha256": "6debd1a86c48034c9888bfa0a1faaeb8a10bd241ffc7f81e677225d76124f12a"
+    },
+    {
+      "file": "07-draft-1-go.dom.json",
+      "seed": 1,
+      "tick": 1009,
+      "eventCount": 9,
+      "state": "PASS",
+      "events": "PASS",
+      "rawSha256": "79d50cd902a5b99af61e6c6e8a5e9ed16c5dfc214926b2c77437071e44dacf80",
+      "stateTextSha256": "91fabeeec1c53f0396e09eb1c2bc2046a9b1f4ccb95ee388386097158877750d",
+      "eventsTextSha256": "d8c90f70d663398a1caf951a1d308367761b485362224c238b2fc8746b1ff99d"
+    },
+    {
+      "file": "07-draft-1-playing.dom.json",
+      "seed": 1,
+      "tick": 60,
+      "eventCount": 2,
+      "state": "PASS",
+      "events": "PASS",
+      "rawSha256": "34cd3667db572b38b2a69c0cc3123528488891dcf6143cdb35460fb7ee820cab",
+      "stateTextSha256": "ec93f893e23597c3658bf3ff008d56ea52addef7c1ba938e3d5f32d48942d132",
+      "eventsTextSha256": "34f1c39a57aff44c1e65c862608905c59af1ddfb11f64dfbd447ba59b4c1a5ac"
+    },
+    {
+      "file": "07-draft-1-typed-1.dom.json",
+      "seed": 1,
+      "tick": 93,
+      "eventCount": 2,
+      "state": "PASS",
+      "events": "PASS",
+      "rawSha256": "d34a7ef3d3cb94274e7aa832a15069a32fbef4106bdb03893ad8ebc8abda803b",
+      "stateTextSha256": "045467385d2bce149ec90892073ce247841c862d3c0aeb7b5bff250c2a8e437f",
+      "eventsTextSha256": "34f1c39a57aff44c1e65c862608905c59af1ddfb11f64dfbd447ba59b4c1a5ac"
+    },
+    {
+      "file": "07-draft-1-typed-10.dom.json",
+      "seed": 1,
+      "tick": 146,
+      "eventCount": 3,
+      "state": "PASS",
+      "events": "PASS",
+      "rawSha256": "2c06cd3ae6d120552f8cecfc42996a355cd1a8611f67ee3d6f8b34a1221aa5f0",
+      "stateTextSha256": "64ae302b512448c070be25cbff2a4eb5ab223fb77542c4522b0dfb230460aaaf",
+      "eventsTextSha256": "6debd1a86c48034c9888bfa0a1faaeb8a10bd241ffc7f81e677225d76124f12a"
+    },
+    {
+      "file": "07-draft-1-typed-100.dom.json",
+      "seed": 1,
+      "tick": 186,
+      "eventCount": 3,
+      "state": "PASS",
+      "events": "PASS",
+      "rawSha256": "c03594f6578ddbae209e5911c3ad59bca1c45258c16bcb4075bc4e9a19a0fccb",
+      "stateTextSha256": "00c46830ba4d9617f93fbd4f6dfe43b7845714ec8db74ab9e6909ded1ec2053a",
+      "eventsTextSha256": "6debd1a86c48034c9888bfa0a1faaeb8a10bd241ffc7f81e677225d76124f12a"
+    },
+    {
+      "file": "07-draft-1-typed-1009.dom.json",
+      "seed": 1,
+      "tick": 223,
+      "eventCount": 3,
+      "state": "PASS",
+      "events": "PASS",
+      "rawSha256": "89c39e9d8eeb6af3f4dad60f4169987277b731b0955348de7498cd65e148d35e",
+      "stateTextSha256": "e4e1dac7f5920e3f2a08953aa5fd6f6aad5dc280e4552c865212ddb56ac11682",
+      "eventsTextSha256": "6debd1a86c48034c9888bfa0a1faaeb8a10bd241ffc7f81e677225d76124f12a"
+    },
+    {
+      "file": "07-draft-2-blur.dom.json",
+      "seed": 1,
+      "tick": 253,
+      "eventCount": 3,
+      "state": "PASS",
+      "events": "PASS",
+      "rawSha256": "12d4435fd98fe13de9899054397cf41bee910d5a618db62e9b3ec49d37eb46af",
+      "stateTextSha256": "409ab8b23118fd35d1ccc50977497242bd78d0d84a7ec2055a9a81719f36589f",
+      "eventsTextSha256": "6debd1a86c48034c9888bfa0a1faaeb8a10bd241ffc7f81e677225d76124f12a"
+    },
+    {
+      "file": "07-draft-2-go.dom.json",
+      "seed": 1,
+      "tick": 1009,
+      "eventCount": 9,
+      "state": "PASS",
+      "events": "PASS",
+      "rawSha256": "813c8cd4c910960016e6a25add3eba3bf036785bf9d36aa6a8547c47ed6c25e0",
+      "stateTextSha256": "91fabeeec1c53f0396e09eb1c2bc2046a9b1f4ccb95ee388386097158877750d",
+      "eventsTextSha256": "d8c90f70d663398a1caf951a1d308367761b485362224c238b2fc8746b1ff99d"
+    },
+    {
+      "file": "07-draft-2-playing.dom.json",
+      "seed": 1,
+      "tick": 56,
+      "eventCount": 2,
+      "state": "PASS",
+      "events": "PASS",
+      "rawSha256": "ed16d9a27471a36516650c6888df5e7d8e84c4975e9ab8cac13a15dbe2081413",
+      "stateTextSha256": "211df550942b7bdd1ed34a24bda1f6cc695cee06e8a3c0bb72e90a6f12eb1fb0",
+      "eventsTextSha256": "34f1c39a57aff44c1e65c862608905c59af1ddfb11f64dfbd447ba59b4c1a5ac"
+    },
+    {
+      "file": "07-draft-2-typed-1.dom.json",
+      "seed": 1,
+      "tick": 86,
+      "eventCount": 2,
+      "state": "PASS",
+      "events": "PASS",
+      "rawSha256": "72414170d71bcc2e4459ad5d632172797c94cf7e59523d6c198a6f4ca0f25c39",
+      "stateTextSha256": "88ddca529345bd7d452680dc22960051948a71004760c5808a50bce8d046959a",
+      "eventsTextSha256": "34f1c39a57aff44c1e65c862608905c59af1ddfb11f64dfbd447ba59b4c1a5ac"
+    },
+    {
+      "file": "07-draft-2-typed-10.dom.json",
+      "seed": 1,
+      "tick": 113,
+      "eventCount": 3,
+      "state": "PASS",
+      "events": "PASS",
+      "rawSha256": "f99c38f056788c13e1ba1b63957046925eecd92bad4f8bec2c7503222aad13cc",
+      "stateTextSha256": "fd834edd4c34bee3f55299c0d941cc91aa05d9aa9796f949b226c57e493068f6",
+      "eventsTextSha256": "6debd1a86c48034c9888bfa0a1faaeb8a10bd241ffc7f81e677225d76124f12a"
+    },
+    {
+      "file": "07-draft-2-typed-100.dom.json",
+      "seed": 1,
+      "tick": 143,
+      "eventCount": 3,
+      "state": "PASS",
+      "events": "PASS",
+      "rawSha256": "d77f13f84671bd256c457b3524130c15318aa47c85965373693509c9ebf676c2",
+      "stateTextSha256": "11d6deaa7e27d6af3d57f7a931b3043cafd10c510e69eeeb1e37455157a5bd02",
+      "eventsTextSha256": "6debd1a86c48034c9888bfa0a1faaeb8a10bd241ffc7f81e677225d76124f12a"
+    },
+    {
+      "file": "07-draft-2-typed-1009.dom.json",
+      "seed": 1,
+      "tick": 173,
+      "eventCount": 3,
+      "state": "PASS",
+      "events": "PASS",
+      "rawSha256": "993e29f97fbccad3d9b1e20eed007334bb4caf804d73ad666f6904ea64792933",
+      "stateTextSha256": "4b7b6179b9845b78e18295856a33da0c32b71ad034caecc3b8251fe8e31c4a9b",
+      "eventsTextSha256": "6debd1a86c48034c9888bfa0a1faaeb8a10bd241ffc7f81e677225d76124f12a"
+    },
+    {
+      "file": "07-draft-3-blur.dom.json",
+      "seed": 1,
+      "tick": 253,
+      "eventCount": 3,
+      "state": "PASS",
+      "events": "PASS",
+      "rawSha256": "c30ddf489f03bc95779c09555efdb8d97f3354a9ff34a2f2aac9b87d9a55896d",
+      "stateTextSha256": "409ab8b23118fd35d1ccc50977497242bd78d0d84a7ec2055a9a81719f36589f",
+      "eventsTextSha256": "6debd1a86c48034c9888bfa0a1faaeb8a10bd241ffc7f81e677225d76124f12a"
+    },
+    {
+      "file": "07-draft-3-go.dom.json",
+      "seed": 1,
+      "tick": 1009,
+      "eventCount": 9,
+      "state": "PASS",
+      "events": "PASS",
+      "rawSha256": "79d50cd902a5b99af61e6c6e8a5e9ed16c5dfc214926b2c77437071e44dacf80",
+      "stateTextSha256": "91fabeeec1c53f0396e09eb1c2bc2046a9b1f4ccb95ee388386097158877750d",
+      "eventsTextSha256": "d8c90f70d663398a1caf951a1d308367761b485362224c238b2fc8746b1ff99d"
+    },
+    {
+      "file": "07-draft-3-playing.dom.json",
+      "seed": 1,
+      "tick": 60,
+      "eventCount": 2,
+      "state": "PASS",
+      "events": "PASS",
+      "rawSha256": "34cd3667db572b38b2a69c0cc3123528488891dcf6143cdb35460fb7ee820cab",
+      "stateTextSha256": "ec93f893e23597c3658bf3ff008d56ea52addef7c1ba938e3d5f32d48942d132",
+      "eventsTextSha256": "34f1c39a57aff44c1e65c862608905c59af1ddfb11f64dfbd447ba59b4c1a5ac"
+    },
+    {
+      "file": "07-draft-3-typed-1.dom.json",
+      "seed": 1,
+      "tick": 93,
+      "eventCount": 2,
+      "state": "PASS",
+      "events": "PASS",
+      "rawSha256": "d34a7ef3d3cb94274e7aa832a15069a32fbef4106bdb03893ad8ebc8abda803b",
+      "stateTextSha256": "045467385d2bce149ec90892073ce247841c862d3c0aeb7b5bff250c2a8e437f",
+      "eventsTextSha256": "34f1c39a57aff44c1e65c862608905c59af1ddfb11f64dfbd447ba59b4c1a5ac"
+    },
+    {
+      "file": "07-draft-3-typed-10.dom.json",
+      "seed": 1,
+      "tick": 119,
+      "eventCount": 3,
+      "state": "PASS",
+      "events": "PASS",
+      "rawSha256": "e226877f6bbcee8722177892eef6e02d30201d1bcf4fea8eb4cb38339998c3f5",
+      "stateTextSha256": "d79e4b8c941d9d7e50da973a0e49936f4c2af8a65af2a62a04daa2287c542c16",
+      "eventsTextSha256": "6debd1a86c48034c9888bfa0a1faaeb8a10bd241ffc7f81e677225d76124f12a"
+    },
+    {
+      "file": "07-draft-3-typed-100.dom.json",
+      "seed": 1,
+      "tick": 146,
+      "eventCount": 3,
+      "state": "PASS",
+      "events": "PASS",
+      "rawSha256": "bdad7bd608f44f64222d2e8284e6bef0292242d612f5b01ea53c27fa9ebf347d",
+      "stateTextSha256": "64ae302b512448c070be25cbff2a4eb5ab223fb77542c4522b0dfb230460aaaf",
+      "eventsTextSha256": "6debd1a86c48034c9888bfa0a1faaeb8a10bd241ffc7f81e677225d76124f12a"
+    },
+    {
+      "file": "07-draft-3-typed-1009.dom.json",
+      "seed": 1,
+      "tick": 173,
+      "eventCount": 3,
+      "state": "PASS",
+      "events": "PASS",
+      "rawSha256": "4eaeee17d5298e75fa11bcbe8ea72f7e96f4cda8d028c1330d7a286ba9b211b8",
+      "stateTextSha256": "4b7b6179b9845b78e18295856a33da0c32b71ad034caecc3b8251fe8e31c4a9b",
+      "eventsTextSha256": "6debd1a86c48034c9888bfa0a1faaeb8a10bd241ffc7f81e677225d76124f12a"
+    },
+    {
+      "file": "08-arch07-1005.dom.json",
+      "seed": 1,
+      "tick": 1005,
+      "eventCount": 8,
+      "state": "PASS",
+      "events": "PASS",
+      "rawSha256": "02b2c9f24523f0a838219d49e305dc6c33ec61b435f4ff37a160093e1a6a1b57",
+      "stateTextSha256": "3651eca67adf94b41b4e2d6cc22cd48db764443f623c2efb4263504399f833f8",
+      "eventsTextSha256": "f4b6b0e56e7f93a50cc740e9f570f2ad56b02766026197651e92af1777cef5b3"
+    },
+    {
+      "file": "09-arch07-1006.dom.json",
+      "seed": 1,
+      "tick": 1006,
+      "eventCount": 8,
+      "state": "PASS",
+      "events": "PASS",
+      "rawSha256": "9c57e9f95c152e9dd511d283cdb53d16c5c44b8a661eeb3018dc5176727882d7",
+      "stateTextSha256": "67a806f6d09ada48dda6068a948eb437f0b3247aa14c34b3f6b8836bfd795119",
+      "eventsTextSha256": "f4b6b0e56e7f93a50cc740e9f570f2ad56b02766026197651e92af1777cef5b3"
+    },
+    {
+      "file": "09-arch07-1007.dom.json",
+      "seed": 1,
+      "tick": 1007,
+      "eventCount": 9,
+      "state": "PASS",
+      "events": "PASS",
+      "rawSha256": "9d28972df935f3b6cfb9069b81233b0279e555d98518c12494741122579f2692",
+      "stateTextSha256": "a9e6913060d51b7dfbb95060fcbeb972a200882e03075e774d2ebbcf775c7d49",
+      "eventsTextSha256": "d8c90f70d663398a1caf951a1d308367761b485362224c238b2fc8746b1ff99d"
+    },
+    {
+      "file": "09-arch07-1008.dom.json",
+      "seed": 1,
+      "tick": 1008,
+      "eventCount": 9,
+      "state": "PASS",
+      "events": "PASS",
+      "rawSha256": "0da7431534094aab7ed94b3adc3caaab327288733c4b947e7d599cd785603829",
+      "stateTextSha256": "158262213ab6c9f9a8fd90c703d306c2606b11b563aa99b7744729e25c0f649d",
+      "eventsTextSha256": "d8c90f70d663398a1caf951a1d308367761b485362224c238b2fc8746b1ff99d"
+    },
+    {
+      "file": "09-arch07-1009.dom.json",
+      "seed": 1,
+      "tick": 1009,
+      "eventCount": 9,
+      "state": "PASS",
+      "events": "PASS",
+      "rawSha256": "813c8cd4c910960016e6a25add3eba3bf036785bf9d36aa6a8547c47ed6c25e0",
+      "stateTextSha256": "91fabeeec1c53f0396e09eb1c2bc2046a9b1f4ccb95ee388386097158877750d",
+      "eventsTextSha256": "d8c90f70d663398a1caf951a1d308367761b485362224c238b2fc8746b1ff99d"
+    },
+    {
+      "file": "09-arch07-1010.dom.json",
+      "seed": 1,
+      "tick": 1010,
+      "eventCount": 9,
+      "state": "PASS",
+      "events": "PASS",
+      "rawSha256": "8947d9ba7b2297dabad900876e032ea9fe309ab03e4922d5d9678a20b688e6e8",
+      "stateTextSha256": "0d70c9183503057e65bdeceac1ea95c13eceb627fa2472ff30362f5acd1c4057",
+      "eventsTextSha256": "d8c90f70d663398a1caf951a1d308367761b485362224c238b2fc8746b1ff99d"
+    },
+    {
+      "file": "09-arch07-1011.dom.json",
+      "seed": 1,
+      "tick": 1011,
+      "eventCount": 9,
+      "state": "PASS",
+      "events": "PASS",
+      "rawSha256": "3e23deeaf81e3c55e0badce127f3bc21392ccf927609cd08e507452bf5294919",
+      "stateTextSha256": "26e96082c52d381c7fa1fbe0b50ca3cd67fbed724f9c2fb966957c013db9b9ff",
+      "eventsTextSha256": "d8c90f70d663398a1caf951a1d308367761b485362224c238b2fc8746b1ff99d"
+    },
+    {
+      "file": "09-arch07-1012.dom.json",
+      "seed": 1,
+      "tick": 1012,
+      "eventCount": 9,
+      "state": "PASS",
+      "events": "PASS",
+      "rawSha256": "7ffdd86c5c0d81a734e7c067272821b1f100c97998380c44c7783a254b568ea4",
+      "stateTextSha256": "afcb19976b9d66f7f03b810f78da642f944a0d02009593c0187ac4edc83b1280",
+      "eventsTextSha256": "d8c90f70d663398a1caf951a1d308367761b485362224c238b2fc8746b1ff99d"
+    },
+    {
+      "file": "09-arch07-1013.dom.json",
+      "seed": 1,
+      "tick": 1013,
+      "eventCount": 10,
+      "state": "PASS",
+      "events": "PASS",
+      "rawSha256": "46fe157b3a7be911182eb34d4957c5a3f67f60a9578c99cf9b46a6c3034f9344",
+      "stateTextSha256": "894efb24c3383c9e4a3fa68de87f87103fec2f53e942380d971b076e2d5e8fc4",
+      "eventsTextSha256": "11a52cbc83b8d7871ff4f3c1a7dab6d62424baba73ed539b0cdc40f1001c30c8"
+    },
+    {
+      "file": "09-arch07-1014.dom.json",
+      "seed": 1,
+      "tick": 1014,
+      "eventCount": 10,
+      "state": "PASS",
+      "events": "PASS",
+      "rawSha256": "a046943b4baea445156ab7409e9f8b88b727f5537d5a6419786ab34d9db0075a",
+      "stateTextSha256": "9231b3eeb89bdd2571e2c5606dc206bed40b69a3f2fe2f8414578a091f06c022",
+      "eventsTextSha256": "11a52cbc83b8d7871ff4f3c1a7dab6d62424baba73ed539b0cdc40f1001c30c8"
+    },
+    {
+      "file": "09-arch07-1015.dom.json",
+      "seed": 1,
+      "tick": 1015,
+      "eventCount": 10,
+      "state": "PASS",
+      "events": "PASS",
+      "rawSha256": "c20362d2f50e9fe0309b8197925bc67752706bbcc41da134c034c8ca88fdde37",
+      "stateTextSha256": "c6c0bd72a3ac6402f4386438028d2b5d5160bb2c1ef3bb25118e9daa69b5a3fe",
+      "eventsTextSha256": "11a52cbc83b8d7871ff4f3c1a7dab6d62424baba73ed539b0cdc40f1001c30c8"
+    },
+    {
+      "file": "09-arch07-1016.dom.json",
+      "seed": 1,
+      "tick": 1016,
+      "eventCount": 10,
+      "state": "PASS",
+      "events": "PASS",
+      "rawSha256": "0ed344143cec76aa9048f2880b142c8f01bfe23600fd603136edd8943d469c00",
+      "stateTextSha256": "4e4d486bb8d317687ee9e5e2eb7e7e0e0329c1d823866b7ed694ca958c2cde28",
+      "eventsTextSha256": "11a52cbc83b8d7871ff4f3c1a7dab6d62424baba73ed539b0cdc40f1001c30c8"
+    },
+    {
+      "file": "09-arch07-1017.dom.json",
+      "seed": 1,
+      "tick": 1017,
+      "eventCount": 10,
+      "state": "PASS",
+      "events": "PASS",
+      "rawSha256": "a7cafaa787de2f8fbe324cb7f105162afc0bc40ab67d58c5f017e34ddd67f080",
+      "stateTextSha256": "0bf05c6a7bcc139d7887deebd43cb57fcf8d70a61eb4d938ee4cb1faac4728e6",
+      "eventsTextSha256": "11a52cbc83b8d7871ff4f3c1a7dab6d62424baba73ed539b0cdc40f1001c30c8"
+    },
+    {
+      "file": "09-arch07-1018.dom.json",
+      "seed": 1,
+      "tick": 1018,
+      "eventCount": 10,
+      "state": "PASS",
+      "events": "PASS",
+      "rawSha256": "4866f7725050486e3b0287fc2e2e59c4138ac1deb01b483b77efdb8591793638",
+      "stateTextSha256": "d8fdc44899686f125ec664ced0da56cbea1676a9670f9da435c15e9c283ad2b5",
+      "eventsTextSha256": "11a52cbc83b8d7871ff4f3c1a7dab6d62424baba73ed539b0cdc40f1001c30c8"
+    },
+    {
+      "file": "09-arch07-1019.dom.json",
+      "seed": 1,
+      "tick": 1019,
+      "eventCount": 11,
+      "state": "PASS",
+      "events": "PASS",
+      "rawSha256": "30b897faa05a4a317d77cfd35540bce88a26909cdb597de7c534133fb99b3d75",
+      "stateTextSha256": "c11b35acad13df682f517f1957a595d25b38cf7d08af8266d13786fce112fdac",
+      "eventsTextSha256": "068c18af1ddc8c79d51b7afff844a7b2821bdcfaa469eff67bacf72d73afc37a"
+    },
+    {
+      "file": "09-arch07-1020.dom.json",
+      "seed": 1,
+      "tick": 1020,
+      "eventCount": 11,
+      "state": "PASS",
+      "events": "PASS",
+      "rawSha256": "e1d6429c02dc4b5900289716eefb104b9349d2e07f3fa29f89b25271a40eac11",
+      "stateTextSha256": "331ed64beff9cde2619673f71068db8b04dbe8cdb0dfee6b8a0abc8ef46f646b",
+      "eventsTextSha256": "068c18af1ddc8c79d51b7afff844a7b2821bdcfaa469eff67bacf72d73afc37a"
+    },
+    {
+      "file": "09-arch07-1021.dom.json",
+      "seed": 1,
+      "tick": 1021,
+      "eventCount": 11,
+      "state": "PASS",
+      "events": "PASS",
+      "rawSha256": "b846b07335f5852e8f62de951e33525bf0a9f10b186af907e92462773b0d7e23",
+      "stateTextSha256": "8edc6da5ff37fe7f1727121218c754b2903efe3ba159eb5a02e2aec235ad50f5",
+      "eventsTextSha256": "068c18af1ddc8c79d51b7afff844a7b2821bdcfaa469eff67bacf72d73afc37a"
+    },
+    {
+      "file": "10-rim03-1118.dom.json",
+      "seed": 1,
+      "tick": 1118,
+      "eventCount": 11,
+      "state": "PASS",
+      "events": "PASS",
+      "rawSha256": "eadb36d767fb56e60ae11695a2726f694d7e3c103121da47863777cc05a6ffcf",
+      "stateTextSha256": "ace9bea0faa67526d8a2a50d578c0fde293d15df428490e2ce54deef4fc60c06",
+      "eventsTextSha256": "068c18af1ddc8c79d51b7afff844a7b2821bdcfaa469eff67bacf72d73afc37a"
+    },
+    {
+      "file": "11-rim03-1119.dom.json",
+      "seed": 1,
+      "tick": 1119,
+      "eventCount": 11,
+      "state": "PASS",
+      "events": "PASS",
+      "rawSha256": "65a08b1b6bb4413c88db69b7c279795ebc5d55561e6ddec18c6d1829a357125a",
+      "stateTextSha256": "6dc1ca47532c3a5673f57f4028b27d2c4bca33ca013c0c0aa2183d40616087dd",
+      "eventsTextSha256": "068c18af1ddc8c79d51b7afff844a7b2821bdcfaa469eff67bacf72d73afc37a"
+    },
+    {
+      "file": "11-rim03-1120.dom.json",
+      "seed": 1,
+      "tick": 1120,
+      "eventCount": 11,
+      "state": "PASS",
+      "events": "PASS",
+      "rawSha256": "35a566b556fdc487730485f2fadec061a866fde2eb3c9bd8e7e68fbdf085336c",
+      "stateTextSha256": "30c85ba53432b3c0ff4f4342253ab4f7ca699249a8292b8d74629e3013566c77",
+      "eventsTextSha256": "068c18af1ddc8c79d51b7afff844a7b2821bdcfaa469eff67bacf72d73afc37a"
+    },
+    {
+      "file": "11-rim03-1121.dom.json",
+      "seed": 1,
+      "tick": 1121,
+      "eventCount": 11,
+      "state": "PASS",
+      "events": "PASS",
+      "rawSha256": "fbff3cb2f6a56fff4c73a6bb7248dd51578b4785fef526edeebfcd9f60d5d6ae",
+      "stateTextSha256": "aa6500ea0bb5ea3c15343045e40d3f0d416de2ba851c8237b311ab302004695b",
+      "eventsTextSha256": "068c18af1ddc8c79d51b7afff844a7b2821bdcfaa469eff67bacf72d73afc37a"
+    },
+    {
+      "file": "11-rim03-1122.dom.json",
+      "seed": 1,
+      "tick": 1122,
+      "eventCount": 11,
+      "state": "PASS",
+      "events": "PASS",
+      "rawSha256": "e22a26cd9ba92890c4b7519ec52e7ca89167da6f4c2ab43b94d2e3659eb1e174",
+      "stateTextSha256": "2b392292e474d24128ea42a1b6966b36908200a7b3d75221b65bc2f76af5cfa7",
+      "eventsTextSha256": "068c18af1ddc8c79d51b7afff844a7b2821bdcfaa469eff67bacf72d73afc37a"
+    },
+    {
+      "file": "11-rim03-1123.dom.json",
+      "seed": 1,
+      "tick": 1123,
+      "eventCount": 11,
+      "state": "PASS",
+      "events": "PASS",
+      "rawSha256": "edfe140ae0379997661bfefd4c2e958aa61e913a14fabb5a8177bfa09e16d422",
+      "stateTextSha256": "5d4e9de000ae92b9555a25e3c83c3e7877b9e308e6043b156a34ef1693abc2b8",
+      "eventsTextSha256": "068c18af1ddc8c79d51b7afff844a7b2821bdcfaa469eff67bacf72d73afc37a"
+    },
+    {
+      "file": "11-rim03-1124.dom.json",
+      "seed": 1,
+      "tick": 1124,
+      "eventCount": 11,
+      "state": "PASS",
+      "events": "PASS",
+      "rawSha256": "928533f83b05c25607e6d063d692d087c7c77be3bae0c8c192f8d8188086e47c",
+      "stateTextSha256": "77077863fa59d7153e0ea9fa285a681fccac6ff680dcb6494a5e412c07fa170f",
+      "eventsTextSha256": "068c18af1ddc8c79d51b7afff844a7b2821bdcfaa469eff67bacf72d73afc37a"
+    },
+    {
+      "file": "11-rim03-1125.dom.json",
+      "seed": 1,
+      "tick": 1125,
+      "eventCount": 11,
+      "state": "PASS",
+      "events": "PASS",
+      "rawSha256": "265eb4e9e6a44c756e0b93f777959378903fe7d926cc40f23757b6fda487ebe9",
+      "stateTextSha256": "6feb60b1e37945e13e15559b9e9ca9c844a374972c04cb005e24a2acc17c52f8",
+      "eventsTextSha256": "068c18af1ddc8c79d51b7afff844a7b2821bdcfaa469eff67bacf72d73afc37a"
+    },
+    {
+      "file": "11-rim03-1126.dom.json",
+      "seed": 1,
+      "tick": 1126,
+      "eventCount": 11,
+      "state": "PASS",
+      "events": "PASS",
+      "rawSha256": "5fb1fe80c15b6742095e6fd26dcb7be6a4c9ed861bef52ab4f005b85d26f41ad",
+      "stateTextSha256": "3d8fc202cc4b23c9c28789be9404d6eab9d1bac0bcf13a9011fa06c3c959d220",
+      "eventsTextSha256": "068c18af1ddc8c79d51b7afff844a7b2821bdcfaa469eff67bacf72d73afc37a"
+    },
+    {
+      "file": "11-rim03-1127.dom.json",
+      "seed": 1,
+      "tick": 1127,
+      "eventCount": 11,
+      "state": "PASS",
+      "events": "PASS",
+      "rawSha256": "d84b9741714779fb9b9993cd6e6eebba71e396a6d0126306b9a66a34a9557fe2",
+      "stateTextSha256": "5501f9d1bfab45bd6fd14a875000610f5a2e8ca4d55028c36b6d9e14e9ddec48",
+      "eventsTextSha256": "068c18af1ddc8c79d51b7afff844a7b2821bdcfaa469eff67bacf72d73afc37a"
+    },
+    {
+      "file": "11-rim03-1128.dom.json",
+      "seed": 1,
+      "tick": 1128,
+      "eventCount": 11,
+      "state": "PASS",
+      "events": "PASS",
+      "rawSha256": "551b75359c9589daba1bfec85b2c4fd4cfe36e643155712925514e9f752303f2",
+      "stateTextSha256": "1e1c900d674731aa376527a3f2bf1bc2143c9cab30f43181fd1e1383e792d74d",
+      "eventsTextSha256": "068c18af1ddc8c79d51b7afff844a7b2821bdcfaa469eff67bacf72d73afc37a"
+    },
+    {
+      "file": "11-rim03-1129.dom.json",
+      "seed": 1,
+      "tick": 1129,
+      "eventCount": 11,
+      "state": "PASS",
+      "events": "PASS",
+      "rawSha256": "d09965d2db5eea1956b8a54e5161cc8079641be26ebe58e0759bd3ee143ccd5a",
+      "stateTextSha256": "96c02ac157a85064484a2f48a51a2112d59d3123425c1762ad9e73982eddfc04",
+      "eventsTextSha256": "068c18af1ddc8c79d51b7afff844a7b2821bdcfaa469eff67bacf72d73afc37a"
+    },
+    {
+      "file": "11-rim03-1130.dom.json",
+      "seed": 1,
+      "tick": 1130,
+      "eventCount": 11,
+      "state": "PASS",
+      "events": "PASS",
+      "rawSha256": "9681700bca3131905f78b38902b94efae0da943f76551175f5810878e54e567e",
+      "stateTextSha256": "8fadff305107bc1e6ebaf3a11421ce443eba16373b448d05f2a31ab4542297e3",
+      "eventsTextSha256": "068c18af1ddc8c79d51b7afff844a7b2821bdcfaa469eff67bacf72d73afc37a"
+    },
+    {
+      "file": "11-rim03-1131.dom.json",
+      "seed": 1,
+      "tick": 1131,
+      "eventCount": 11,
+      "state": "PASS",
+      "events": "PASS",
+      "rawSha256": "1e4ff0fe694be5b79b459bcbb0de2835e852df9f54111e527027eeeb376955c8",
+      "stateTextSha256": "8f981743f1b060c56bd27e1fcd21c4b421e33e37b4d8a3e03098ee81b723434c",
+      "eventsTextSha256": "068c18af1ddc8c79d51b7afff844a7b2821bdcfaa469eff67bacf72d73afc37a"
+    },
+    {
+      "file": "11-rim03-1132.dom.json",
+      "seed": 1,
+      "tick": 1132,
+      "eventCount": 11,
+      "state": "PASS",
+      "events": "PASS",
+      "rawSha256": "70a135eaf9246487ae2404a963b507fd2c1216c15ae771cc87d503a650f5046a",
+      "stateTextSha256": "303f64ae7303174a2835d323b8eb837c264a8ae1cd9049a3e85a993844d4725d",
+      "eventsTextSha256": "068c18af1ddc8c79d51b7afff844a7b2821bdcfaa469eff67bacf72d73afc37a"
+    },
+    {
+      "file": "11-rim03-1133.dom.json",
+      "seed": 1,
+      "tick": 1133,
+      "eventCount": 11,
+      "state": "PASS",
+      "events": "PASS",
+      "rawSha256": "0b2ac187c9c18378b5ad20ad34cbb6d6d416fe1717c485e1d2dbd13a61b1ee72",
+      "stateTextSha256": "2fbd9c64f07ff79e2fe629cb0f3c1b4f14580086bde6753a2f6d34863f0839b3",
+      "eventsTextSha256": "068c18af1ddc8c79d51b7afff844a7b2821bdcfaa469eff67bacf72d73afc37a"
+    },
+    {
+      "file": "11-rim03-1134.dom.json",
+      "seed": 1,
+      "tick": 1134,
+      "eventCount": 11,
+      "state": "PASS",
+      "events": "PASS",
+      "rawSha256": "446e4c125ae832cd19bf77ad3c35f8272ff2040cba36862872f247dae7ce692a",
+      "stateTextSha256": "e8fc2abc7cf952e8f9badec9253a0f0af919335cd65ca1bd307bbc907b5d0165",
+      "eventsTextSha256": "068c18af1ddc8c79d51b7afff844a7b2821bdcfaa469eff67bacf72d73afc37a"
+    },
+    {
+      "file": "11-rim03-1135.dom.json",
+      "seed": 1,
+      "tick": 1135,
+      "eventCount": 11,
+      "state": "PASS",
+      "events": "PASS",
+      "rawSha256": "cfc567eb7a4f2b0a48716f42afd02a91be878564d1378d20d508b33cce1d1aec",
+      "stateTextSha256": "367decdf25bc03d0bd595fd5ae1bc8df7eec909776a1f40598a17480f868395f",
+      "eventsTextSha256": "068c18af1ddc8c79d51b7afff844a7b2821bdcfaa469eff67bacf72d73afc37a"
+    },
+    {
+      "file": "11-rim03-1136.dom.json",
+      "seed": 1,
+      "tick": 1136,
+      "eventCount": 11,
+      "state": "PASS",
+      "events": "PASS",
+      "rawSha256": "c980fbf2331c6a0418d1be569e1fb484757a367d6de70d3bb281aa1cca79bf6a",
+      "stateTextSha256": "5b28aafd1328bf88d06aa67d3b9b5132d03e80c03cf9dba767accfa8ab0ee3ca",
+      "eventsTextSha256": "068c18af1ddc8c79d51b7afff844a7b2821bdcfaa469eff67bacf72d73afc37a"
+    },
+    {
+      "file": "11-rim03-1137.dom.json",
+      "seed": 1,
+      "tick": 1137,
+      "eventCount": 11,
+      "state": "PASS",
+      "events": "PASS",
+      "rawSha256": "4625861288898032a8a33c962e023f5f4c9d75989dec740d8745cf5751fa2ff9",
+      "stateTextSha256": "b453f2873333be88dcb5a9a77f2d9efb6f940c31d0b8d2b0322c2aac143e70f1",
+      "eventsTextSha256": "068c18af1ddc8c79d51b7afff844a7b2821bdcfaa469eff67bacf72d73afc37a"
+    },
+    {
+      "file": "11-rim03-1138.dom.json",
+      "seed": 1,
+      "tick": 1138,
+      "eventCount": 11,
+      "state": "PASS",
+      "events": "PASS",
+      "rawSha256": "ca8480f08edbf2fabb891ec191e2df8a0df956e6e4a9938a05236e6157df3e98",
+      "stateTextSha256": "bff242bf90d80ca41cc90f5657caead5e3de15e97d2f680c9009697989d3f3fa",
+      "eventsTextSha256": "068c18af1ddc8c79d51b7afff844a7b2821bdcfaa469eff67bacf72d73afc37a"
+    },
+    {
+      "file": "11-rim03-1139.dom.json",
+      "seed": 1,
+      "tick": 1139,
+      "eventCount": 11,
+      "state": "PASS",
+      "events": "PASS",
+      "rawSha256": "e27e026accf5068ee4515f1555d63920d38a5e1a7ff65731ab58906509acdca0",
+      "stateTextSha256": "b91ae01ee9258e227e1cb06508d9d25f58bff53f6a97e4fe2983d58e90592da4",
+      "eventsTextSha256": "068c18af1ddc8c79d51b7afff844a7b2821bdcfaa469eff67bacf72d73afc37a"
+    },
+    {
+      "file": "11-rim03-1140.dom.json",
+      "seed": 1,
+      "tick": 1140,
+      "eventCount": 11,
+      "state": "PASS",
+      "events": "PASS",
+      "rawSha256": "024f2ed8352f74c44ede73853cd1f0245203f9bd8ebfd3f8cdf343dea4040eb7",
+      "stateTextSha256": "aeb00678e2d15165a4cbf7968af2ed8c1077b5252c17cee10fbf6ef337ab83cf",
+      "eventsTextSha256": "068c18af1ddc8c79d51b7afff844a7b2821bdcfaa469eff67bacf72d73afc37a"
+    },
+    {
+      "file": "11-rim03-1141.dom.json",
+      "seed": 1,
+      "tick": 1141,
+      "eventCount": 11,
+      "state": "PASS",
+      "events": "PASS",
+      "rawSha256": "0bf4f99f4599d11cbd183ab3b02470d72a857ff331bd1eb0af9e66bbc10763a5",
+      "stateTextSha256": "67bcb19d47414870338b83331b74d254d7c9bdbbb293948b0fbf84fbca5b8304",
+      "eventsTextSha256": "068c18af1ddc8c79d51b7afff844a7b2821bdcfaa469eff67bacf72d73afc37a"
+    },
+    {
+      "file": "11-rim03-1142.dom.json",
+      "seed": 1,
+      "tick": 1142,
+      "eventCount": 11,
+      "state": "PASS",
+      "events": "PASS",
+      "rawSha256": "2ad929d1614c31cf2192cc21b51f5f1ff94b85e549195821e8244db30078e498",
+      "stateTextSha256": "7a687d2aa0a2675258484ac26e71e42e1b0a50960cc800139b50572fc9d6d491",
+      "eventsTextSha256": "068c18af1ddc8c79d51b7afff844a7b2821bdcfaa469eff67bacf72d73afc37a"
+    },
+    {
+      "file": "11-rim03-1143.dom.json",
+      "seed": 1,
+      "tick": 1143,
+      "eventCount": 11,
+      "state": "PASS",
+      "events": "PASS",
+      "rawSha256": "3beafa1bed6c29b972d285bc7badec212c6803d8ebc2223f1d04511ce7e92a5b",
+      "stateTextSha256": "b34285a1ed62b702eb627f85dca0b79bb9a2f2a495d4ad95ffe03d89d523a0db",
+      "eventsTextSha256": "068c18af1ddc8c79d51b7afff844a7b2821bdcfaa469eff67bacf72d73afc37a"
+    },
+    {
+      "file": "11-rim03-1144.dom.json",
+      "seed": 1,
+      "tick": 1144,
+      "eventCount": 11,
+      "state": "PASS",
+      "events": "PASS",
+      "rawSha256": "c335c15eed12caceec6469f3b6100bd813ca1940ce538c20c36ddd95f85aa4e6",
+      "stateTextSha256": "65677f13de6afde58ff0b7994e4b8f4b7d9472a51b892625490a9560eddde827",
+      "eventsTextSha256": "068c18af1ddc8c79d51b7afff844a7b2821bdcfaa469eff67bacf72d73afc37a"
+    },
+    {
+      "file": "11-rim03-1145.dom.json",
+      "seed": 1,
+      "tick": 1145,
+      "eventCount": 11,
+      "state": "PASS",
+      "events": "PASS",
+      "rawSha256": "6ec1102d89a89183e9223952004356bdea25d23581f3be0792561d6423738862",
+      "stateTextSha256": "60a85dab7781138d015a203c67fe9746ab9dacf35d1df7b0ddd51af493a79d94",
+      "eventsTextSha256": "068c18af1ddc8c79d51b7afff844a7b2821bdcfaa469eff67bacf72d73afc37a"
+    },
+    {
+      "file": "11-rim03-1146.dom.json",
+      "seed": 1,
+      "tick": 1146,
+      "eventCount": 11,
+      "state": "PASS",
+      "events": "PASS",
+      "rawSha256": "425adb3ca65b95a3290ef1bb8d0b1a6c8c0a4c9c965a89112e0041f22a95e739",
+      "stateTextSha256": "4428d0b5adea11a1223f789078a869a35e6aedc24068109183a31e1ed93e3b6a",
+      "eventsTextSha256": "068c18af1ddc8c79d51b7afff844a7b2821bdcfaa469eff67bacf72d73afc37a"
+    },
+    {
+      "file": "12-rim03-on-normal.dom.json",
+      "seed": 1,
+      "tick": 1125,
+      "eventCount": 11,
+      "state": "PASS",
+      "events": "PASS",
+      "rawSha256": "265eb4e9e6a44c756e0b93f777959378903fe7d926cc40f23757b6fda487ebe9",
+      "stateTextSha256": "6feb60b1e37945e13e15559b9e9ca9c844a374972c04cb005e24a2acc17c52f8",
+      "eventsTextSha256": "068c18af1ddc8c79d51b7afff844a7b2821bdcfaa469eff67bacf72d73afc37a"
+    },
+    {
+      "file": "13-rim03-off-normal.dom.json",
+      "seed": 1,
+      "tick": 1125,
+      "eventCount": 11,
+      "state": "PASS",
+      "events": "PASS",
+      "rawSha256": "d0b7f47eecf67bea4a52fabfdb23203d33bcdc987fe43aef3910ed8d033044ce",
+      "stateTextSha256": "6feb60b1e37945e13e15559b9e9ca9c844a374972c04cb005e24a2acc17c52f8",
+      "eventsTextSha256": "068c18af1ddc8c79d51b7afff844a7b2821bdcfaa469eff67bacf72d73afc37a"
+    },
+    {
+      "file": "14-rim03-on-zoom.dom.json",
+      "seed": 1,
+      "tick": 1125,
+      "eventCount": 11,
+      "state": "PASS",
+      "events": "PASS",
+      "rawSha256": "a6f6fb09f758f5d5472bce9c5c47f19107293002b33729fa8ccadfb874636894",
+      "stateTextSha256": "6feb60b1e37945e13e15559b9e9ca9c844a374972c04cb005e24a2acc17c52f8",
+      "eventsTextSha256": "068c18af1ddc8c79d51b7afff844a7b2821bdcfaa469eff67bacf72d73afc37a"
+    },
+    {
+      "file": "15-rim03-off-zoom.dom.json",
+      "seed": 1,
+      "tick": 1125,
+      "eventCount": 11,
+      "state": "PASS",
+      "events": "PASS",
+      "rawSha256": "eac634839ad5c13c4b0806d841d7cac01fafa13c2f71c5f4f386d550a5fdeecc",
+      "stateTextSha256": "6feb60b1e37945e13e15559b9e9ca9c844a374972c04cb005e24a2acc17c52f8",
+      "eventsTextSha256": "068c18af1ddc8c79d51b7afff844a7b2821bdcfaa469eff67bacf72d73afc37a"
+    },
+    {
+      "file": "16-export-base.dom.json",
+      "seed": 1,
+      "tick": 1009,
+      "eventCount": 9,
+      "state": "PASS",
+      "events": "PASS",
+      "rawSha256": "21f559203f1277e09551ed79264901e4422555dff1927c0178f2bb4dc9958f2d",
+      "stateTextSha256": "91fabeeec1c53f0396e09eb1c2bc2046a9b1f4ccb95ee388386097158877750d",
+      "eventsTextSha256": "d8c90f70d663398a1caf951a1d308367761b485362224c238b2fc8746b1ff99d"
+    },
+    {
+      "file": "17-manual-1010.dom.json",
+      "seed": 1,
+      "tick": 1010,
+      "eventCount": 9,
+      "state": "PASS",
+      "events": "PASS",
+      "rawSha256": "392b9bce10a92b3cbffa66153a95917b110d8ca6161e33f88bbbae21ab212174",
+      "stateTextSha256": "0d70c9183503057e65bdeceac1ea95c13eceb627fa2472ff30362f5acd1c4057",
+      "eventsTextSha256": "d8c90f70d663398a1caf951a1d308367761b485362224c238b2fc8746b1ff99d"
+    },
+    {
+      "file": "18-same-file-import.dom.json",
+      "seed": 1,
+      "tick": 1009,
+      "eventCount": 9,
+      "state": "PASS",
+      "events": "PASS",
+      "rawSha256": "608b13c86d9c65c3f1bc77c4a57a64c1244df3f212259b6265437b4fdc93293e",
+      "stateTextSha256": "91fabeeec1c53f0396e09eb1c2bc2046a9b1f4ccb95ee388386097158877750d",
+      "eventsTextSha256": "d8c90f70d663398a1caf951a1d308367761b485362224c238b2fc8746b1ff99d"
+    },
+    {
+      "file": "19-native-art-geometry-1009.dom.json",
+      "seed": 1,
+      "tick": 1009,
+      "eventCount": 9,
+      "state": "PASS",
+      "events": "PASS",
+      "rawSha256": "22d0fa4e21869017d3574c04f35166d0a875f7086876c88e96d09b64c59d6c3a",
+      "stateTextSha256": "91fabeeec1c53f0396e09eb1c2bc2046a9b1f4ccb95ee388386097158877750d",
+      "eventsTextSha256": "d8c90f70d663398a1caf951a1d308367761b485362224c238b2fc8746b1ff99d"
+    },
+    {
+      "file": "20-native-geometry-only-1009.dom.json",
+      "seed": 1,
+      "tick": 1009,
+      "eventCount": 9,
+      "state": "PASS",
+      "events": "PASS",
+      "rawSha256": "3893e3cbf02bbdb1e71992b9f1053ab3859ffa8fbe0bfcc5fef9e6ba442e81ad",
+      "stateTextSha256": "91fabeeec1c53f0396e09eb1c2bc2046a9b1f4ccb95ee388386097158877750d",
+      "eventsTextSha256": "d8c90f70d663398a1caf951a1d308367761b485362224c238b2fc8746b1ff99d"
+    },
+    {
+      "file": "21-native-all-art-off-1009.dom.json",
+      "seed": 1,
+      "tick": 1009,
+      "eventCount": 9,
+      "state": "PASS",
+      "events": "PASS",
+      "rawSha256": "ba75289cf37ef4e02c04a631c9da1e3e593b6eb29700b09a1e2fc77e2de8407e",
+      "stateTextSha256": "91fabeeec1c53f0396e09eb1c2bc2046a9b1f4ccb95ee388386097158877750d",
+      "eventsTextSha256": "d8c90f70d663398a1caf951a1d308367761b485362224c238b2fc8746b1ff99d"
+    },
+    {
+      "file": "22-native-parts-off-1009.dom.json",
+      "seed": 1,
+      "tick": 1009,
+      "eventCount": 9,
+      "state": "PASS",
+      "events": "PASS",
+      "rawSha256": "ccb766ecf4895cde0895e289b7a8830f7c480236802f2a673e0ada5d3c3c3c4c",
+      "stateTextSha256": "91fabeeec1c53f0396e09eb1c2bc2046a9b1f4ccb95ee388386097158877750d",
+      "eventsTextSha256": "d8c90f70d663398a1caf951a1d308367761b485362224c238b2fc8746b1ff99d"
+    },
+    {
+      "file": "23-native-diagnostic-1009.dom.json",
+      "seed": 1,
+      "tick": 1009,
+      "eventCount": 9,
+      "state": "PASS",
+      "events": "PASS",
+      "rawSha256": "36dfa8610ec37747b44f88c4e4afc381a10dcac287f691c9458c01827b5c832a",
+      "stateTextSha256": "91fabeeec1c53f0396e09eb1c2bc2046a9b1f4ccb95ee388386097158877750d",
+      "eventsTextSha256": "d8c90f70d663398a1caf951a1d308367761b485362224c238b2fc8746b1ff99d"
+    },
+    {
+      "file": "24-native-manual-1010.dom.json",
+      "seed": 1,
+      "tick": 1010,
+      "eventCount": 9,
+      "state": "PASS",
+      "events": "PASS",
+      "rawSha256": "dc1eabeafe9c023b8a8af8eb9a4f5a98852a6435b2a873c6a55db96e420a262d",
+      "stateTextSha256": "0d70c9183503057e65bdeceac1ea95c13eceb627fa2472ff30362f5acd1c4057",
+      "eventsTextSha256": "d8c90f70d663398a1caf951a1d308367761b485362224c238b2fc8746b1ff99d"
+    },
+    {
+      "file": "25-same-file-reimport.dom.json",
+      "seed": 1,
+      "tick": 1009,
+      "eventCount": 9,
+      "state": "PASS",
+      "events": "PASS",
+      "rawSha256": "36dfa8610ec37747b44f88c4e4afc381a10dcac287f691c9458c01827b5c832a",
+      "stateTextSha256": "91fabeeec1c53f0396e09eb1c2bc2046a9b1f4ccb95ee388386097158877750d",
+      "eventsTextSha256": "d8c90f70d663398a1caf951a1d308367761b485362224c238b2fc8746b1ff99d"
+    },
+    {
+      "file": "26-native-play-start.dom.json",
+      "seed": 1,
+      "tick": 1000,
+      "eventCount": 8,
+      "state": "PASS",
+      "events": "PASS",
+      "rawSha256": "e8a662cbf44e268231f9f2da799bd85cbe6724e0b19cb35536f0dace3fd6b2f8",
+      "stateTextSha256": "9508b687775fdb66232ee299d9824dbca525cebaf8d69c06f3848c5cfaefce01",
+      "eventsTextSha256": "f4b6b0e56e7f93a50cc740e9f570f2ad56b02766026197651e92af1777cef5b3"
+    },
+    {
+      "file": "27-native-playing.dom.json",
+      "seed": 1,
+      "tick": 1060,
+      "eventCount": 11,
+      "state": "PASS",
+      "events": "PASS",
+      "rawSha256": "33dac813a642112a7f172dc1af11fa0d25822bd0367b2eb0ec4ebf670ac83b37",
+      "stateTextSha256": "25431bd67b7dfce3715b036c4db784b72d6778e5c96ff7c2bb6ede1825dd585c",
+      "eventsTextSha256": "068c18af1ddc8c79d51b7afff844a7b2821bdcfaa469eff67bacf72d73afc37a"
+    },
+    {
+      "file": "28-native-paused.dom.json",
+      "seed": 1,
+      "tick": 1073,
+      "eventCount": 11,
+      "state": "PASS",
+      "events": "PASS",
+      "rawSha256": "6f9e449a68e1ab0355bdbd7e2bab6e6239520c4685868f87ff85b575396c22f3",
+      "stateTextSha256": "e625a92fb447ecb64d52de82aa8004d204c27ca693e357ce490f70f96dbbb2e1",
+      "eventsTextSha256": "068c18af1ddc8c79d51b7afff844a7b2821bdcfaa469eff67bacf72d73afc37a"
+    },
+    {
+      "file": "29-native-resumed.dom.json",
+      "seed": 1,
+      "tick": 1133,
+      "eventCount": 11,
+      "state": "PASS",
+      "events": "PASS",
+      "rawSha256": "5da124604a85125c97efd9330de3f3dcf9dbf9a885762fb9e3581907aae4b734",
+      "stateTextSha256": "2fbd9c64f07ff79e2fe629cb0f3c1b4f14580086bde6753a2f6d34863f0839b3",
+      "eventsTextSha256": "068c18af1ddc8c79d51b7afff844a7b2821bdcfaa469eff67bacf72d73afc37a"
+    },
+    {
+      "file": "30-native-paused-again.dom.json",
+      "seed": 1,
+      "tick": 1153,
+      "eventCount": 11,
+      "state": "PASS",
+      "events": "PASS",
+      "rawSha256": "ae9500bfa80e8304985d161337f788247b9983e12b2fb68ba884108d50a53b2c",
+      "stateTextSha256": "79866ae4087de70a2208c983b47637d95f907e76eafe4bfe0f5a143c63657bfe",
+      "eventsTextSha256": "068c18af1ddc8c79d51b7afff844a7b2821bdcfaa469eff67bacf72d73afc37a"
+    },
+    {
+      "file": "31-before-rejected-imports.dom.json",
+      "seed": 1,
+      "tick": 1153,
+      "eventCount": 11,
+      "state": "PASS",
+      "events": "PASS",
+      "rawSha256": "ae9500bfa80e8304985d161337f788247b9983e12b2fb68ba884108d50a53b2c",
+      "stateTextSha256": "79866ae4087de70a2208c983b47637d95f907e76eafe4bfe0f5a143c63657bfe",
+      "eventsTextSha256": "068c18af1ddc8c79d51b7afff844a7b2821bdcfaa469eff67bacf72d73afc37a"
+    },
+    {
+      "file": "32-wrong-board-rejected.dom.json",
+      "seed": 1,
+      "tick": 1153,
+      "eventCount": 11,
+      "state": "PASS",
+      "events": "PASS",
+      "rawSha256": "627d1c9b5f2025ceea67c30278ac1537af572a04f0c29d8e83615461aa6012f1",
+      "stateTextSha256": "79866ae4087de70a2208c983b47637d95f907e76eafe4bfe0f5a143c63657bfe",
+      "eventsTextSha256": "068c18af1ddc8c79d51b7afff844a7b2821bdcfaa469eff67bacf72d73afc37a"
+    },
+    {
+      "file": "33-physics-rejected.dom.json",
+      "seed": 1,
+      "tick": 1153,
+      "eventCount": 11,
+      "state": "PASS",
+      "events": "PASS",
+      "rawSha256": "fb6c8be739d574d06a1ef41eeb214aa152b37cfbc56adbc50bd7b6967e629470",
+      "stateTextSha256": "79866ae4087de70a2208c983b47637d95f907e76eafe4bfe0f5a143c63657bfe",
+      "eventsTextSha256": "068c18af1ddc8c79d51b7afff844a7b2821bdcfaa469eff67bacf72d73afc37a"
+    },
+    {
+      "file": "34-seed1-source-LOST.dom.json",
+      "seed": 1,
+      "tick": 1196,
+      "eventCount": 13,
+      "state": "PASS",
+      "events": "PASS",
+      "rawSha256": "938945209e931cef812d08a8e56a988bb890bb4b9621bb88fd0a7984c5c1df70",
+      "stateTextSha256": "577ad66fa3aaa2e4a6331238401559a6cb7df4a25f202e4a1a18ce8e9ed83a91",
+      "eventsTextSha256": "060bcae2ff99c46f38a74956e9262d9b3d3cdd9a769db85d834fcaa4d0bf6390"
+    },
+    {
+      "file": "35-post-LOST-step.dom.json",
+      "seed": 1,
+      "tick": 1196,
+      "eventCount": 13,
+      "state": "PASS",
+      "events": "PASS",
+      "rawSha256": "938945209e931cef812d08a8e56a988bb890bb4b9621bb88fd0a7984c5c1df70",
+      "stateTextSha256": "577ad66fa3aaa2e4a6331238401559a6cb7df4a25f202e4a1a18ce8e9ed83a91",
+      "eventsTextSha256": "060bcae2ff99c46f38a74956e9262d9b3d3cdd9a769db85d834fcaa4d0bf6390"
+    },
+    {
+      "file": "36-receiver02-import.dom.json",
+      "seed": 2,
+      "tick": 1273,
+      "eventCount": 17,
+      "state": "PASS",
+      "events": "PASS",
+      "rawSha256": "77350931870dcb4dea1cc80573076537b2652091ce25a2f3c77b8238073e776b",
+      "stateTextSha256": "94c8f9b910529c9e2e3f5549de8b5f73cea8d94e376321f35704804bdded164d",
+      "eventsTextSha256": "73a5572b0500f1f4bca8e75f72f5faa86e97a34ace30bbe38b14c1b08b2f64fc"
+    },
+    {
+      "file": "37-receiver02-1273.dom.json",
+      "seed": 2,
+      "tick": 1273,
+      "eventCount": 17,
+      "state": "PASS",
+      "events": "PASS",
+      "rawSha256": "77350931870dcb4dea1cc80573076537b2652091ce25a2f3c77b8238073e776b",
+      "stateTextSha256": "94c8f9b910529c9e2e3f5549de8b5f73cea8d94e376321f35704804bdded164d",
+      "eventsTextSha256": "73a5572b0500f1f4bca8e75f72f5faa86e97a34ace30bbe38b14c1b08b2f64fc"
+    },
+    {
+      "file": "38-receiver02-1274.dom.json",
+      "seed": 2,
+      "tick": 1274,
+      "eventCount": 17,
+      "state": "PASS",
+      "events": "PASS",
+      "rawSha256": "efc76f4ca5aba7e7b0c8d32f5bfa665e75407afc1afb5a93ac2a4fd528ef77a1",
+      "stateTextSha256": "23875ced9c6274881ec49c1b6029e0e8b2a6e7aba721996ae94ea494876999af",
+      "eventsTextSha256": "73a5572b0500f1f4bca8e75f72f5faa86e97a34ace30bbe38b14c1b08b2f64fc"
+    },
+    {
+      "file": "39-receiver02-1275.dom.json",
+      "seed": 2,
+      "tick": 1275,
+      "eventCount": 20,
+      "state": "PASS",
+      "events": "PASS",
+      "rawSha256": "471b2bc95d9aa5a5eeb8461482833267057518df1f8f7ad5914103d32198d579",
+      "stateTextSha256": "4e58a8b6b557cf0cef97a11adccd812fd009a1e89c624235c14ec3b29d03a5c0",
+      "eventsTextSha256": "c39e49f1717e5c7cde0020cecdcea841b9a180416a296961827ce2abaaf8a6c4"
+    },
+    {
+      "file": "40-post-capture-plus100.dom.json",
+      "seed": 2,
+      "tick": 1275,
+      "eventCount": 20,
+      "state": "PASS",
+      "events": "PASS",
+      "rawSha256": "523bfd5f0fb43cdce27b44196a5b9f26b9ff1c9586c0d3b282a071c265951546",
+      "stateTextSha256": "4e58a8b6b557cf0cef97a11adccd812fd009a1e89c624235c14ec3b29d03a5c0",
+      "eventsTextSha256": "c39e49f1717e5c7cde0020cecdcea841b9a180416a296961827ce2abaaf8a6c4"
+    },
+    {
+      "file": "41-rim02-before-1247.dom.json",
+      "seed": 0,
+      "tick": 1247,
+      "eventCount": 12,
+      "state": "PASS",
+      "events": "PASS",
+      "rawSha256": "3035125f2289dd459453bdc2fd8beff5e6564dd58be7534c4b969ecadb17866c",
+      "stateTextSha256": "90ae25b3e5ee01943211f7b809bbac94b476caf184dbd3cc01474b321057d80c",
+      "eventsTextSha256": "c28722295c3f43c4e404f900d16fe622ff3b13d8edbb1d4857217def373c4603"
+    },
+    {
+      "file": "42-rim02-1248.dom.json",
+      "seed": 0,
+      "tick": 1248,
+      "eventCount": 12,
+      "state": "PASS",
+      "events": "PASS",
+      "rawSha256": "f68ab3a0341036b8c415a923b3c2b2d431c4d35ce8e515130a4d90d5846e3331",
+      "stateTextSha256": "80ec7f6edb3a1cd8abd47eb616cdce12796764947f6ca05cc2218349a135bff4",
+      "eventsTextSha256": "c28722295c3f43c4e404f900d16fe622ff3b13d8edbb1d4857217def373c4603"
+    },
+    {
+      "file": "42-rim02-1249.dom.json",
+      "seed": 0,
+      "tick": 1249,
+      "eventCount": 12,
+      "state": "PASS",
+      "events": "PASS",
+      "rawSha256": "dfcfe3bee6a2249916d5abc71e26babd97d54b895e41ad5989705ddb9945bb2e",
+      "stateTextSha256": "7a773aefcf4698e946807bcf8969b3b791305e39859a8f0d047095e2dec1df83",
+      "eventsTextSha256": "c28722295c3f43c4e404f900d16fe622ff3b13d8edbb1d4857217def373c4603"
+    },
+    {
+      "file": "42-rim02-1250.dom.json",
+      "seed": 0,
+      "tick": 1250,
+      "eventCount": 12,
+      "state": "PASS",
+      "events": "PASS",
+      "rawSha256": "1d6e8337bf7a1b43099622597dc83b5ef4029abac17def9f8f002d205532b0e2",
+      "stateTextSha256": "019adea128cfdb329dddb27dacc36ce84e337ae3dbef2a21580baeac8d45f711",
+      "eventsTextSha256": "c28722295c3f43c4e404f900d16fe622ff3b13d8edbb1d4857217def373c4603"
+    },
+    {
+      "file": "42-rim02-1251.dom.json",
+      "seed": 0,
+      "tick": 1251,
+      "eventCount": 12,
+      "state": "PASS",
+      "events": "PASS",
+      "rawSha256": "0b4c8ef4dec70fada0d5d8f65b4e8e6c3807122f3ec6ff87db516866cf0d5a0f",
+      "stateTextSha256": "c8e1004de6402198e39e66d05fc2d0465555b97c6a1146e1bb598094648e7988",
+      "eventsTextSha256": "c28722295c3f43c4e404f900d16fe622ff3b13d8edbb1d4857217def373c4603"
+    },
+    {
+      "file": "42-rim02-1252.dom.json",
+      "seed": 0,
+      "tick": 1252,
+      "eventCount": 12,
+      "state": "PASS",
+      "events": "PASS",
+      "rawSha256": "349231481697e735f66513e4b5f72301673337e9d7474cca70079abfa7ae383d",
+      "stateTextSha256": "f939e6f417226c61244158498624c7b412572f5e88f704d6895d9c4e7b9b2fbc",
+      "eventsTextSha256": "c28722295c3f43c4e404f900d16fe622ff3b13d8edbb1d4857217def373c4603"
+    },
+    {
+      "file": "42-rim02-1253.dom.json",
+      "seed": 0,
+      "tick": 1253,
+      "eventCount": 12,
+      "state": "PASS",
+      "events": "PASS",
+      "rawSha256": "53159bdf6aaf62d4a67b9d721c7748fc6f2e3a048b1c1cba3c33dd16c599ae0d",
+      "stateTextSha256": "7c8070fc98e91e6cf4340e51606174ec04636d388f82738b87719934c136d896",
+      "eventsTextSha256": "c28722295c3f43c4e404f900d16fe622ff3b13d8edbb1d4857217def373c4603"
+    },
+    {
+      "file": "42-rim02-1254.dom.json",
+      "seed": 0,
+      "tick": 1254,
+      "eventCount": 12,
+      "state": "PASS",
+      "events": "PASS",
+      "rawSha256": "761a64d6a8906523d9eb6f571e8e447cc4421ec916ab29443a625b52dd008d47",
+      "stateTextSha256": "40a0f1b29999d7842e5bf9d18a961bf1d4763219d7af080c345245566e9abc8c",
+      "eventsTextSha256": "c28722295c3f43c4e404f900d16fe622ff3b13d8edbb1d4857217def373c4603"
+    },
+    {
+      "file": "42-rim02-1255.dom.json",
+      "seed": 0,
+      "tick": 1255,
+      "eventCount": 12,
+      "state": "PASS",
+      "events": "PASS",
+      "rawSha256": "90f6ce5b41e3904f999884a89d68190d51493760d1d0bd551c39f9e9ef3356a7",
+      "stateTextSha256": "e67710902550cd1b0a7758aff12723f94006943e959cc2c94a74335c6f8ebea0",
+      "eventsTextSha256": "c28722295c3f43c4e404f900d16fe622ff3b13d8edbb1d4857217def373c4603"
+    },
+    {
+      "file": "42-rim02-1256.dom.json",
+      "seed": 0,
+      "tick": 1256,
+      "eventCount": 12,
+      "state": "PASS",
+      "events": "PASS",
+      "rawSha256": "0e9f14678b2015e59b4ace52f9052424ee028ae04af94e82aeeea6b50dc1ad9b",
+      "stateTextSha256": "79ff47137b0f12d881930e6e35c7b08273c357f3e65d5598f9c343b0ceb0c313",
+      "eventsTextSha256": "c28722295c3f43c4e404f900d16fe622ff3b13d8edbb1d4857217def373c4603"
+    },
+    {
+      "file": "42-rim02-1257.dom.json",
+      "seed": 0,
+      "tick": 1257,
+      "eventCount": 12,
+      "state": "PASS",
+      "events": "PASS",
+      "rawSha256": "29e293c9b4810a4653cbea9e15d253c2aa19050d20d1873ee44120c7d2e2bf34",
+      "stateTextSha256": "bd93909aea85ae93af04f7d52139efe4f8b2fd327db523f75e451c432fae1620",
+      "eventsTextSha256": "c28722295c3f43c4e404f900d16fe622ff3b13d8edbb1d4857217def373c4603"
+    },
+    {
+      "file": "42-rim02-1258.dom.json",
+      "seed": 0,
+      "tick": 1258,
+      "eventCount": 12,
+      "state": "PASS",
+      "events": "PASS",
+      "rawSha256": "ed735993da84fadc8ca11d9036188df0616308fd0a01fdac3b053fb7ddb06e55",
+      "stateTextSha256": "f85599c92f40b0ae60f90a4b3133a3dfb079e3fe49a8c061c9c8c29b26d480ad",
+      "eventsTextSha256": "c28722295c3f43c4e404f900d16fe622ff3b13d8edbb1d4857217def373c4603"
+    },
+    {
+      "file": "42-rim02-1259.dom.json",
+      "seed": 0,
+      "tick": 1259,
+      "eventCount": 12,
+      "state": "PASS",
+      "events": "PASS",
+      "rawSha256": "a39e94cfe153f2b146b15db5b56a153a99f5be70e9fa3b5e92e659b6fd161b80",
+      "stateTextSha256": "cb27b49776a03c124e987aaba50902763fea33b52f4c8ee87e730b9125cbcd89",
+      "eventsTextSha256": "c28722295c3f43c4e404f900d16fe622ff3b13d8edbb1d4857217def373c4603"
+    },
+    {
+      "file": "42-rim02-1260.dom.json",
+      "seed": 0,
+      "tick": 1260,
+      "eventCount": 12,
+      "state": "PASS",
+      "events": "PASS",
+      "rawSha256": "f25e3aa07fc180b009bcdad39fed8ceaf873a319719cfa97c510aa09765693de",
+      "stateTextSha256": "767e287d8297d51c7844599c7a117021c6ce39147c3f85ba2218c3bb9764ba14",
+      "eventsTextSha256": "c28722295c3f43c4e404f900d16fe622ff3b13d8edbb1d4857217def373c4603"
+    },
+    {
+      "file": "42-rim02-1261.dom.json",
+      "seed": 0,
+      "tick": 1261,
+      "eventCount": 12,
+      "state": "PASS",
+      "events": "PASS",
+      "rawSha256": "ff08beb2dfc93e1e72951070ad56b969e18f979d69ec75f147feb5a445d3b6e3",
+      "stateTextSha256": "c8af7ef6b801c67da350a723d728443463c1011fd92608551b41b7e14e6d388d",
+      "eventsTextSha256": "c28722295c3f43c4e404f900d16fe622ff3b13d8edbb1d4857217def373c4603"
+    },
+    {
+      "file": "42-rim02-1262.dom.json",
+      "seed": 0,
+      "tick": 1262,
+      "eventCount": 12,
+      "state": "PASS",
+      "events": "PASS",
+      "rawSha256": "ca8b0c0df0a529c9718296cad0da8938ee961cf9322fb7087ca094ac582f8bd6",
+      "stateTextSha256": "9f0593ee363f8fd218dc05c5b0634899aac2f0b9c7ef5c821cb096581074791a",
+      "eventsTextSha256": "c28722295c3f43c4e404f900d16fe622ff3b13d8edbb1d4857217def373c4603"
+    },
+    {
+      "file": "42-rim02-1263.dom.json",
+      "seed": 0,
+      "tick": 1263,
+      "eventCount": 12,
+      "state": "PASS",
+      "events": "PASS",
+      "rawSha256": "e89e994378a73d973cb0d1a5ef855ad8e3713ed379b3104d295dafa402f7135e",
+      "stateTextSha256": "9b22e9f347cf2302b0ae53fc531a5f267c53c770660c4d94df73434f5039988f",
+      "eventsTextSha256": "c28722295c3f43c4e404f900d16fe622ff3b13d8edbb1d4857217def373c4603"
+    },
+    {
+      "file": "42-rim02-1264.dom.json",
+      "seed": 0,
+      "tick": 1264,
+      "eventCount": 12,
+      "state": "PASS",
+      "events": "PASS",
+      "rawSha256": "5a1bcd915aa06f5e470f63cc10f1d4c8ed6cb2da50eb326583e9e24e45f8f76f",
+      "stateTextSha256": "0ed3e38deb8fcdc01f5ef9f25143c6b1087f4e1710726bdc5da78483cbb53d4b",
+      "eventsTextSha256": "c28722295c3f43c4e404f900d16fe622ff3b13d8edbb1d4857217def373c4603"
+    },
+    {
+      "file": "42-rim02-1265.dom.json",
+      "seed": 0,
+      "tick": 1265,
+      "eventCount": 12,
+      "state": "PASS",
+      "events": "PASS",
+      "rawSha256": "ff22956ef9d0b9e0a5d5948b1f4018b82948fa7daf185924f8b46daf3c12fc48",
+      "stateTextSha256": "5b441f391598366879f9f623159fad6c0b72a4c758c6071227f3c9e6778d40c8",
+      "eventsTextSha256": "c28722295c3f43c4e404f900d16fe622ff3b13d8edbb1d4857217def373c4603"
+    },
+    {
+      "file": "42-rim02-1266.dom.json",
+      "seed": 0,
+      "tick": 1266,
+      "eventCount": 12,
+      "state": "PASS",
+      "events": "PASS",
+      "rawSha256": "8d8b92790869d8ab3792f9669b7acdf55ae5fc8a68d98acf15655284b14a5c8b",
+      "stateTextSha256": "df6eb0780b8f9a45cb8093d1971afc5758fa2d69a3475593851b8636fc491457",
+      "eventsTextSha256": "c28722295c3f43c4e404f900d16fe622ff3b13d8edbb1d4857217def373c4603"
+    },
+    {
+      "file": "42-rim02-1267.dom.json",
+      "seed": 0,
+      "tick": 1267,
+      "eventCount": 12,
+      "state": "PASS",
+      "events": "PASS",
+      "rawSha256": "fa86f4791781cc819e8e0187714aee0784f1977758a1132b98a4dc81b337e13b",
+      "stateTextSha256": "c1dfd01abb6decf0e3be52ca7041b655869d2d8b60aafa80053be2949eb7616b",
+      "eventsTextSha256": "c28722295c3f43c4e404f900d16fe622ff3b13d8edbb1d4857217def373c4603"
+    },
+    {
+      "file": "42-rim02-1268.dom.json",
+      "seed": 0,
+      "tick": 1268,
+      "eventCount": 12,
+      "state": "PASS",
+      "events": "PASS",
+      "rawSha256": "75152084be77faba64d32c5bf7d6e9ade4474a37ce9352e1ee8f3dc99459de7c",
+      "stateTextSha256": "3230f3dd2179d08bbc140866119ee2691c8221f0c3262f0bfb0ec07b2aa999dc",
+      "eventsTextSha256": "c28722295c3f43c4e404f900d16fe622ff3b13d8edbb1d4857217def373c4603"
+    },
+    {
+      "file": "42-rim02-1269.dom.json",
+      "seed": 0,
+      "tick": 1269,
+      "eventCount": 12,
+      "state": "PASS",
+      "events": "PASS",
+      "rawSha256": "204a5deb5e483d7c8e6f1be9d1c18a78a9cdc94b4d2c364f0c3294325f713cde",
+      "stateTextSha256": "90cf43d4e79b2aa4f42d03a602bf3f36b20c5307b0baeda7a3910223e81a03cb",
+      "eventsTextSha256": "c28722295c3f43c4e404f900d16fe622ff3b13d8edbb1d4857217def373c4603"
+    },
+    {
+      "file": "42-rim02-1270.dom.json",
+      "seed": 0,
+      "tick": 1270,
+      "eventCount": 12,
+      "state": "PASS",
+      "events": "PASS",
+      "rawSha256": "06170aca81ccecf5d3c4cd33a19d7b29ce39ef299073f67f312dc4a3fbeb53be",
+      "stateTextSha256": "6a680762ed88ac25328a2383818a98d11a6d6a0b6a8d6f1a10756a702224ae27",
+      "eventsTextSha256": "c28722295c3f43c4e404f900d16fe622ff3b13d8edbb1d4857217def373c4603"
+    },
+    {
+      "file": "42-rim02-1271.dom.json",
+      "seed": 0,
+      "tick": 1271,
+      "eventCount": 12,
+      "state": "PASS",
+      "events": "PASS",
+      "rawSha256": "04f520c93acf5f846993d8a91557722f4be829946f9d3aedb5d51d2f96c2ba4d",
+      "stateTextSha256": "0fdf2090f888319f075623c9d7a7c8dc9189263c4ae034aca06029a6662883a6",
+      "eventsTextSha256": "c28722295c3f43c4e404f900d16fe622ff3b13d8edbb1d4857217def373c4603"
+    },
+    {
+      "file": "42-rim02-1272.dom.json",
+      "seed": 0,
+      "tick": 1272,
+      "eventCount": 12,
+      "state": "PASS",
+      "events": "PASS",
+      "rawSha256": "0b97bf52f708fa98dad15b21af10e2f12ee8bb1ded1e60fab41f84362d9f1390",
+      "stateTextSha256": "1d521344dbf1a28834ea328876a6da07ed5eb0d3c683c4a403b5ce915a05d60d",
+      "eventsTextSha256": "c28722295c3f43c4e404f900d16fe622ff3b13d8edbb1d4857217def373c4603"
+    },
+    {
+      "file": "42-rim02-1273.dom.json",
+      "seed": 0,
+      "tick": 1273,
+      "eventCount": 12,
+      "state": "PASS",
+      "events": "PASS",
+      "rawSha256": "8be2389cbee1eb8e7309b0b0fab9c5959512bc4ce3b09c11a89e84ce3fe804ff",
+      "stateTextSha256": "fa539d8432f7c20dbe9fdfe24079ee38317de245f1beb8dc59b4e9a92c68bed6",
+      "eventsTextSha256": "c28722295c3f43c4e404f900d16fe622ff3b13d8edbb1d4857217def373c4603"
+    },
+    {
+      "file": "42-rim02-1274.dom.json",
+      "seed": 0,
+      "tick": 1274,
+      "eventCount": 12,
+      "state": "PASS",
+      "events": "PASS",
+      "rawSha256": "1cce451820718befcad9015398743b0c1521ac7859810ecee2ae8362fc06a6ff",
+      "stateTextSha256": "d498355edf42fee91a9dcc474def7a4808d4b55cb29844127226626db1c88d60",
+      "eventsTextSha256": "c28722295c3f43c4e404f900d16fe622ff3b13d8edbb1d4857217def373c4603"
+    },
+    {
+      "file": "42-rim02-1275.dom.json",
+      "seed": 0,
+      "tick": 1275,
+      "eventCount": 12,
+      "state": "PASS",
+      "events": "PASS",
+      "rawSha256": "2ee3d740020f230405707d2f471608bcaaefc5a01cf0e2f54a4f0d2b39a4d03a",
+      "stateTextSha256": "d45046d8a1d99dd93dbd77f6576067c0b964c7c354b7477ffecc35332c92e67b",
+      "eventsTextSha256": "c28722295c3f43c4e404f900d16fe622ff3b13d8edbb1d4857217def373c4603"
+    },
+    {
+      "file": "42-rim02-1276.dom.json",
+      "seed": 0,
+      "tick": 1276,
+      "eventCount": 12,
+      "state": "PASS",
+      "events": "PASS",
+      "rawSha256": "3801275a2f11d145cd435e5cadbf796164f02ee002db470723e4e7fbe75df1f1",
+      "stateTextSha256": "c07f9500a8935fd8b1970880b77ee61f5fb406906a83066dd5e6b36b124f188f",
+      "eventsTextSha256": "c28722295c3f43c4e404f900d16fe622ff3b13d8edbb1d4857217def373c4603"
+    },
+    {
+      "file": "42-rim02-1277.dom.json",
+      "seed": 0,
+      "tick": 1277,
+      "eventCount": 12,
+      "state": "PASS",
+      "events": "PASS",
+      "rawSha256": "882daecfca1d4d21bf31ccf867b4bd0bfe9a154b1f87f46c70f74ac4aaf33409",
+      "stateTextSha256": "083be8c8df82d4894a26199838ceb0b79b6d4b6cd3e1166bc9a75656b6b10b36",
+      "eventsTextSha256": "c28722295c3f43c4e404f900d16fe622ff3b13d8edbb1d4857217def373c4603"
+    },
+    {
+      "file": "42-rim02-1278.dom.json",
+      "seed": 0,
+      "tick": 1278,
+      "eventCount": 12,
+      "state": "PASS",
+      "events": "PASS",
+      "rawSha256": "9956ec71b4fd69b16af82b64967d9b8b38abdd74065aec29533e35c60d7914e7",
+      "stateTextSha256": "ad7abe4354b23e11cdfc698fd6cff514ad6b25dd3f47cf9e75f9d18ce738952e",
+      "eventsTextSha256": "c28722295c3f43c4e404f900d16fe622ff3b13d8edbb1d4857217def373c4603"
+    },
+    {
+      "file": "42-rim02-1279.dom.json",
+      "seed": 0,
+      "tick": 1279,
+      "eventCount": 12,
+      "state": "PASS",
+      "events": "PASS",
+      "rawSha256": "83d70e43883364a0e558146b871c094febf74af1aef3e558a6b9d0cc9b7ccdff",
+      "stateTextSha256": "530c1396467540dbf2a3efee8ea31ce48435071cde5c283dde7b0c8304c6afcb",
+      "eventsTextSha256": "c28722295c3f43c4e404f900d16fe622ff3b13d8edbb1d4857217def373c4603"
+    },
+    {
+      "file": "42-rim02-1280.dom.json",
+      "seed": 0,
+      "tick": 1280,
+      "eventCount": 12,
+      "state": "PASS",
+      "events": "PASS",
+      "rawSha256": "e3be09ad8b47a9a3185e59d11621723c43d97ea1247464ab7b46e8fd014a3007",
+      "stateTextSha256": "fb2b89a1240042f46107541a9a834208181f78ada245ea31d59d388974f1f1fe",
+      "eventsTextSha256": "c28722295c3f43c4e404f900d16fe622ff3b13d8edbb1d4857217def373c4603"
+    },
+    {
+      "file": "42-rim02-1281.dom.json",
+      "seed": 0,
+      "tick": 1281,
+      "eventCount": 12,
+      "state": "PASS",
+      "events": "PASS",
+      "rawSha256": "6c80484e21b83c392ccc6520459381d10b190494231b60ce313c0579efa47ec3",
+      "stateTextSha256": "22fa1aa5b7f580e56b38e1f4c1f9f10041a45b24facd85420956c27f157d1431",
+      "eventsTextSha256": "c28722295c3f43c4e404f900d16fe622ff3b13d8edbb1d4857217def373c4603"
+    },
+    {
+      "file": "42-rim02-1282.dom.json",
+      "seed": 0,
+      "tick": 1282,
+      "eventCount": 12,
+      "state": "PASS",
+      "events": "PASS",
+      "rawSha256": "8e6b340d8c81a83d413519ca4ba85173d2f815728c77a74a32f136a959d5141b",
+      "stateTextSha256": "e0fc45f196cac87b126a763828509d5bbb11b564d59d5e80e3e06da6e601d95b",
+      "eventsTextSha256": "c28722295c3f43c4e404f900d16fe622ff3b13d8edbb1d4857217def373c4603"
+    },
+    {
+      "file": "43-rim02-normal-1277.dom.json",
+      "seed": 0,
+      "tick": 1277,
+      "eventCount": 12,
+      "state": "PASS",
+      "events": "PASS",
+      "rawSha256": "882daecfca1d4d21bf31ccf867b4bd0bfe9a154b1f87f46c70f74ac4aaf33409",
+      "stateTextSha256": "083be8c8df82d4894a26199838ceb0b79b6d4b6cd3e1166bc9a75656b6b10b36",
+      "eventsTextSha256": "c28722295c3f43c4e404f900d16fe622ff3b13d8edbb1d4857217def373c4603"
+    },
+    {
+      "file": "44-rim02-zoom-on-1277.dom.json",
+      "seed": 0,
+      "tick": 1277,
+      "eventCount": 12,
+      "state": "PASS",
+      "events": "PASS",
+      "rawSha256": "abf08fdfdea061d7bff98c350b6514f7e306b15493686ca6e07022a5e0b8994d",
+      "stateTextSha256": "083be8c8df82d4894a26199838ceb0b79b6d4b6cd3e1166bc9a75656b6b10b36",
+      "eventsTextSha256": "c28722295c3f43c4e404f900d16fe622ff3b13d8edbb1d4857217def373c4603"
+    },
+    {
+      "file": "45-rim02-zoom-off-1277.dom.json",
+      "seed": 0,
+      "tick": 1277,
+      "eventCount": 12,
+      "state": "PASS",
+      "events": "PASS",
+      "rawSha256": "46cf3eaeec5971b3580d20bab25b5277e3fc31e297addc8f1501a8528dd35d2c",
+      "stateTextSha256": "083be8c8df82d4894a26199838ceb0b79b6d4b6cd3e1166bc9a75656b6b10b36",
+      "eventsTextSha256": "c28722295c3f43c4e404f900d16fe622ff3b13d8edbb1d4857217def373c4603"
+    },
+    {
+      "file": "46-rim02-native-1277.dom.json",
+      "seed": 0,
+      "tick": 1277,
+      "eventCount": 12,
+      "state": "PASS",
+      "events": "PASS",
+      "rawSha256": "1d10db5a5c77c455e30e305d8657fd9aae22a7c9b92f79c32442880f26cc1778",
+      "stateTextSha256": "083be8c8df82d4894a26199838ceb0b79b6d4b6cd3e1166bc9a75656b6b10b36",
+      "eventsTextSha256": "c28722295c3f43c4e404f900d16fe622ff3b13d8edbb1d4857217def373c4603"
+    },
+    {
+      "file": "47-seed0-rim-continued-LOST.dom.json",
+      "seed": 0,
+      "tick": 1326,
+      "eventCount": 14,
+      "state": "PASS",
+      "events": "PASS",
+      "rawSha256": "8971855be6d9c27201e27b242429905d75385e3e49b6d8309fd7ed7627df9654",
+      "stateTextSha256": "f60b414daa5d68c1634876074b7ae175e8ccfa70b1ef4e3378e592396c29315b",
+      "eventsTextSha256": "1747722349bd195b5047202e91a0224fe1a0727b8ce25103054030d1824686ab"
+    },
+    {
+      "file": "48-rim02-enter-side-zoom.dom.json",
+      "seed": 0,
+      "tick": 1253,
+      "eventCount": 12,
+      "state": "PASS",
+      "events": "PASS",
+      "rawSha256": "c00f50ee2248f6a580a405f70dec89634ff400fe5b4e82bf238afa2e2aecb380",
+      "stateTextSha256": "7c8070fc98e91e6cf4340e51606174ec04636d388f82738b87719934c136d896",
+      "eventsTextSha256": "c28722295c3f43c4e404f900d16fe622ff3b13d8edbb1d4857217def373c4603"
+    },
+    {
+      "file": "49-rim03-before-approach-import.dom.json",
+      "seed": 1,
+      "tick": 1009,
+      "eventCount": 9,
+      "state": "PASS",
+      "events": "PASS",
+      "rawSha256": "608b13c86d9c65c3f1bc77c4a57a64c1244df3f212259b6265437b4fdc93293e",
+      "stateTextSha256": "91fabeeec1c53f0396e09eb1c2bc2046a9b1f4ccb95ee388386097158877750d",
+      "eventsTextSha256": "d8c90f70d663398a1caf951a1d308367761b485362224c238b2fc8746b1ff99d"
+    },
+    {
+      "file": "50-rim03-approach-1113.dom.json",
+      "seed": 1,
+      "tick": 1113,
+      "eventCount": 11,
+      "state": "PASS",
+      "events": "PASS",
+      "rawSha256": "01f783d3c60d74bea414524646c9c64f5e62c16b76da90d3b6c1f82acfcc2a02",
+      "stateTextSha256": "5e0b0cdb8966caccf7343441814e0fc8c681af7ce5853802eafa8295952db8a6",
+      "eventsTextSha256": "068c18af1ddc8c79d51b7afff844a7b2821bdcfaa469eff67bacf72d73afc37a"
+    },
+    {
+      "file": "51-rim03-approach-1114.dom.json",
+      "seed": 1,
+      "tick": 1114,
+      "eventCount": 11,
+      "state": "PASS",
+      "events": "PASS",
+      "rawSha256": "169fd70757b5773ba458ced28d1a25e30b5e5819e8c30bd33c4dc39c273e73e4",
+      "stateTextSha256": "4fb5ea9a69d40be63c77ff3594242714870da302224b4fabced7017624f719a9",
+      "eventsTextSha256": "068c18af1ddc8c79d51b7afff844a7b2821bdcfaa469eff67bacf72d73afc37a"
+    },
+    {
+      "file": "51-rim03-approach-1115.dom.json",
+      "seed": 1,
+      "tick": 1115,
+      "eventCount": 11,
+      "state": "PASS",
+      "events": "PASS",
+      "rawSha256": "d9ce80a3a28a98fd816e92c94c29aa1792bacad6bd3a9cc9e11ee1591aceee4e",
+      "stateTextSha256": "0e774ac7eb99fa173248c08c1d37c3d784f02f25fe416224864f3dfa2ef3b62f",
+      "eventsTextSha256": "068c18af1ddc8c79d51b7afff844a7b2821bdcfaa469eff67bacf72d73afc37a"
+    },
+    {
+      "file": "51-rim03-approach-1116.dom.json",
+      "seed": 1,
+      "tick": 1116,
+      "eventCount": 11,
+      "state": "PASS",
+      "events": "PASS",
+      "rawSha256": "c3ca6d55be7f2ea827170d0c52af8325ac6f2829cf84f1a81d5ee22c094c1c6f",
+      "stateTextSha256": "39ad2db3e8a26ea4ae2846b039f6fd588bc9265dfe88fa370323f6f96417afee",
+      "eventsTextSha256": "068c18af1ddc8c79d51b7afff844a7b2821bdcfaa469eff67bacf72d73afc37a"
+    },
+    {
+      "file": "51-rim03-approach-1117.dom.json",
+      "seed": 1,
+      "tick": 1117,
+      "eventCount": 11,
+      "state": "PASS",
+      "events": "PASS",
+      "rawSha256": "3cb17a8547332533e9f603de6c8457ee3bb10f42e7becb4e21d5bed2996df3b5",
+      "stateTextSha256": "3e5c6781483066b5a81be7583146f3797cece9c19ce1d91daee3877e29bf0516",
+      "eventsTextSha256": "068c18af1ddc8c79d51b7afff844a7b2821bdcfaa469eff67bacf72d73afc37a"
+    },
+    {
+      "file": "52-final-rim03-normal.dom.json",
+      "seed": 1,
+      "tick": 1125,
+      "eventCount": 11,
+      "state": "PASS",
+      "events": "PASS",
+      "rawSha256": "372526e50d72d114ed79f540cd8e7fe4a4ad610fb4c61c1dfde80ac19b807990",
+      "stateTextSha256": "6feb60b1e37945e13e15559b9e9ca9c844a374972c04cb005e24a2acc17c52f8",
+      "eventsTextSha256": "068c18af1ddc8c79d51b7afff844a7b2821bdcfaa469eff67bacf72d73afc37a"
+    }
+  ],
+  "recordCount": 160,
+  "maxActorPlacementDelta": 0,
+  "anchors": [
+    {
+      "id": "arch-01",
+      "nativeKind": "segments",
+      "expected": [
+        33011.91690413894,
+        33490.838883855155
+      ],
+      "anchorMaxDelta": 0
+    },
+    {
+      "id": "arch-02",
+      "nativeKind": "segments",
+      "expected": [
+        33504.16020770729,
+        33490.838883855155
+      ],
+      "anchorMaxDelta": 0
+    },
+    {
+      "id": "arch-03",
+      "nativeKind": "segments",
+      "expected": [
+        32809.585567503316,
+        34096.83564101229
+      ],
+      "anchorMaxDelta": 7.275957614183426e-12
+    },
+    {
+      "id": "arch-04",
+      "nativeKind": "segments",
+      "expected": [
+        33256.25109172676,
+        34092.30263396567
+      ],
+      "anchorMaxDelta": 7.275957614183426e-12
+    },
+    {
+      "id": "arch-05",
+      "nativeKind": "segments",
+      "expected": [
+        33702.16349689664,
+        34096.83564101229
+      ],
+      "anchorMaxDelta": 7.275957614183426e-12
+    },
+    {
+      "id": "arch-06",
+      "nativeKind": "segments",
+      "expected": [
+        33375.50478576382,
+        34443.09782717926
+      ],
+      "anchorMaxDelta": 7.275957614183426e-12
+    },
+    {
+      "id": "arch-07",
+      "nativeKind": "segments",
+      "expected": [
+        33022.48723355064,
+        34755.12349268705
+      ],
+      "anchorMaxDelta": 0
+    },
+    {
+      "id": "arch-08",
+      "nativeKind": "segments",
+      "expected": [
+        33489.741029173165,
+        34755.12349268705
+      ],
+      "anchorMaxDelta": 0
+    },
+    {
+      "id": "frog-01",
+      "nativeKind": "pin",
+      "expected": [
+        33258.2003688668,
+        33343.64695747465
+      ],
+      "anchorMaxDelta": 0
+    },
+    {
+      "id": "frog-02",
+      "nativeKind": "pin",
+      "expected": [
+        32931.74732780542,
+        33787.67670012167
+      ],
+      "anchorMaxDelta": 0
+    },
+    {
+      "id": "frog-03",
+      "nativeKind": "pin",
+      "expected": [
+        33580.25267219458,
+        33787.67670012167
+      ],
+      "anchorMaxDelta": 0
+    },
+    {
+      "id": "frog-04",
+      "nativeKind": "pin",
+      "expected": [
+        32917.31564905389,
+        34385.98645367272
+      ],
+      "anchorMaxDelta": 0
+    },
+    {
+      "id": "frog-05",
+      "nativeKind": "pin",
+      "expected": [
+        33599.46802821936,
+        34385.0151876666
+      ],
+      "anchorMaxDelta": 0
+    },
+    {
+      "id": "frog-06",
+      "nativeKind": "pin",
+      "expected": [
+        33256,
+        34718.769418297525
+      ],
+      "anchorMaxDelta": 0
+    },
+    {
+      "id": "pillar-01",
+      "nativeKind": "segments",
+      "expected": [
+        32830.98957142964,
+        33452.06398368454
+      ],
+      "anchorMaxDelta": 0
+    },
+    {
+      "id": "pillar-02",
+      "nativeKind": "segments",
+      "expected": [
+        33682.10300036617,
+        33452.06398368454
+      ],
+      "anchorMaxDelta": 0
+    },
+    {
+      "id": "pillar-03",
+      "nativeKind": "segments",
+      "expected": [
+        33132.488777724,
+        33784.98793743003
+      ],
+      "anchorMaxDelta": 0
+    },
+    {
+      "id": "pillar-04",
+      "nativeKind": "segments",
+      "expected": [
+        33382.65133809658,
+        33784.98793743003
+      ],
+      "anchorMaxDelta": 0
+    },
+    {
+      "id": "pillar-05",
+      "nativeKind": "segments",
+      "expected": [
+        33036.02962987082,
+        34124.97758900579
+      ],
+      "anchorMaxDelta": 7.275957614183426e-12
+    },
+    {
+      "id": "pillar-06",
+      "nativeKind": "segments",
+      "expected": [
+        33476.970235447945,
+        34124.97758900579
+      ],
+      "anchorMaxDelta": 7.275957614183426e-12
+    },
+    {
+      "id": "pillar-07",
+      "nativeKind": "segments",
+      "expected": [
+        33134.77925182909,
+        34454.306507268906
+      ],
+      "anchorMaxDelta": 0
+    },
+    {
+      "id": "receiver-01",
+      "nativeKind": "bucket",
+      "expected": [
+        32753.321467603175,
+        35177.24697995297
+      ],
+      "anchorMaxDelta": 0
+    },
+    {
+      "id": "receiver-02",
+      "nativeKind": "bucket",
+      "expected": [
+        33065.660710537064,
+        35187.089912187264
+      ],
+      "anchorMaxDelta": 0
+    },
+    {
+      "id": "receiver-03",
+      "nativeKind": "bucket",
+      "expected": [
+        33449.9072364754,
+        35182.17235242175
+      ],
+      "anchorMaxDelta": 0
+    },
+    {
+      "id": "receiver-04",
+      "nativeKind": "bucket",
+      "expected": [
+        33739.27186718129,
+        35173.95904871723
+      ],
+      "anchorMaxDelta": 0
+    }
+  ],
+  "layout": {
+    "dpr": 1,
+    "width": 1280,
+    "height": 720,
+    "canvas": [
+      {
+        "width": 840,
+        "height": 590,
+        "clientWidth": 840,
+        "clientHeight": 590
+      }
+    ]
+  },
+  "fitScale": 0.3736979166666667,
+  "textureCount": 78,
+  "partCount": 75,
+  "decodedTextureRgbaBytes": 29477460,
+  "drafts": [
+    {
+      "trial": 1,
+      "startTick": 60,
+      "blurTick": 306,
+      "draftAtBlur": "1009",
+      "playAtBlur": "Пауза",
+      "resultTick": 1009
+    },
+    {
+      "trial": 2,
+      "startTick": 56,
+      "blurTick": 253,
+      "draftAtBlur": "1009",
+      "playAtBlur": "Пауза",
+      "resultTick": 1009
+    },
+    {
+      "trial": 3,
+      "startTick": 60,
+      "blurTick": 253,
+      "draftAtBlur": "1009",
+      "playAtBlur": "Пауза",
+      "resultTick": 1009
+    }
+  ],
+  "guardMessages": [
+    {
+      "file": "32-wrong-board-rejected.dom.json",
+      "message": "Несовместимая версия входа"
+    },
+    {
+      "file": "33-physics-rejected.dom.json",
+      "message": "Config изменён"
+    }
+  ],
+  "endIntegrity": {
+    "files": 206,
+    "diskAndHttp": "PASS",
+    "bothRoots": "PASS",
+    "artifact": "PASS"
+  },
+  "consumerAudit": {
+    "appSha256": "96ddc0443f311dd46f7f07b287171118608a583f0fd26416dbaa18ad8c8e84d0",
+    "span": [
+      601784,
+      611656
+    ],
+    "maskAssignments": 0,
+    "restorationRegionMaskReferenced": false
+  },
+  "consoleWarnErrors": [],
+  "pageHeapSamplePeak": {
+    "usedBytes": 14236412,
+    "allocatedBytes": 21987328,
+    "scope": "sampled page JS heap, not whole browser/GPU process peak"
+  },
+  "closedIssues": [
+    {
+      "id": "TQA-WATER-01-01",
+      "status": "CLOSED for this new full candidate; historical C1 preserved",
+      "trials": 3
+    }
+  ],
+  "heldCommitsAbsentFromQaAncestry": [
+    "b6226979df39662e745e8636553019fae14fa19e",
+    "f973db5b20a99eb241a88c677b1b83ed307e1eaf",
+    "b646d3fe948d2c7e80f0a4a90fed4d318f56f654",
+    "7d2344c1a8959f73ff26af5d3aba7dd02eb0e971"
+  ],
+  "browserPngEvidence": {
+    "diskAndHttpHashes": "PASS all 78",
+    "decodedDimensionsAndDeclaredHashes": "PASS",
+    "workerResponseHash": "UNVERIFIED; no retry of unsupported Target.setAutoAttach"
+  },
+  "resources": {
+    "beforeBrowser": {
+      "freeRamGiB": 10.12,
+      "totalRamGiB": 31.91,
+      "cpuPercent": 11,
+      "logicalCpu": 24,
+      "CFreeGiB": 13.83,
+      "DFreeGiB": 14.62,
+      "EFreeGiB": 9.26
+    },
+    "afterClose": {
+      "freeRamGiB": 9.13,
+      "cpuPercent": 8,
+      "CFreeGiB": 13.79,
+      "DFreeGiB": 14.62,
+      "EFreeGiB": 9.17
+    },
+    "pythonObservedPeakWorkingSetMiB": [
+      82.0703125,
+      81.68359375
+    ],
+    "maxObservedPythonMiB": 82.0703125,
+    "pageHeap": {
+      "usedBytes": 14236412,
+      "allocatedBytes": 21987328,
+      "scope": "sampled page JS heap, not whole browser/GPU process peak"
+    },
+    "decodedTextureRgbaBytes": 29477460,
+    "notes": "Aggregate includes other slots; page heap is not total browser/GPU peak; own IAB tab closed; server unchanged"
+  },
+  "alpha": {
+    "method": ".25 source px observed poses; .5 px existing full-run scan; alpha16 overlap threshold; estimates, not GPU readback",
+    "actorBounds": [
+      {
+        "actor": "body",
+        "contentBoundsPxAlpha16": [
+          28,
+          28,
+          228,
+          229
+        ],
+        "contentRadiusPx": [
+          100,
+          100.5
+        ],
+        "centerLocalPx": [
+          128,
+          128.5
+        ]
+      },
+      {
+        "actor": "shadow",
+        "contentBoundsPxAlpha16": [
+          28,
+          102,
+          228,
+          154
+        ],
+        "contentRadiusPx": [
+          100,
+          26
+        ],
+        "centerLocalPx": [
+          128,
+          128
+        ]
+      }
+    ],
+    "rgbaPartCount": 75,
+    "originalRgb": [
+      {
+        "file": "arch-01-left-support.png",
+        "nonzeroAlphaPixels": 1662,
+        "partialAlphaPixels": 225,
+        "rgbMismatches": 0
+      },
+      {
+        "file": "arch-01-right-support.png",
+        "nonzeroAlphaPixels": 1509,
+        "partialAlphaPixels": 220,
+        "rgbMismatches": 0
+      },
+      {
+        "file": "arch-01-lintel.png",
+        "nonzeroAlphaPixels": 4206,
+        "partialAlphaPixels": 431,
+        "rgbMismatches": 0
+      },
+      {
+        "file": "arch-02-left-support.png",
+        "nonzeroAlphaPixels": 1676,
+        "partialAlphaPixels": 154,
+        "rgbMismatches": 0
+      },
+      {
+        "file": "arch-02-right-support.png",
+        "nonzeroAlphaPixels": 1474,
+        "partialAlphaPixels": 219,
+        "rgbMismatches": 0
+      },
+      {
+        "file": "arch-02-lintel.png",
+        "nonzeroAlphaPixels": 4309,
+        "partialAlphaPixels": 428,
+        "rgbMismatches": 0
+      },
+      {
+        "file": "arch-03-left-support.png",
+        "nonzeroAlphaPixels": 1830,
+        "partialAlphaPixels": 151,
+        "rgbMismatches": 0
+      },
+      {
+        "file": "arch-03-right-support.png",
+        "nonzeroAlphaPixels": 1860,
+        "partialAlphaPixels": 226,
+        "rgbMismatches": 0
+      },
+      {
+        "file": "arch-03-lintel.png",
+        "nonzeroAlphaPixels": 5330,
+        "partialAlphaPixels": 477,
+        "rgbMismatches": 0
+      },
+      {
+        "file": "arch-04-left-support.png",
+        "nonzeroAlphaPixels": 2185,
+        "partialAlphaPixels": 240,
+        "rgbMismatches": 0
+      },
+      {
+        "file": "arch-04-right-support.png",
+        "nonzeroAlphaPixels": 2203,
+        "partialAlphaPixels": 250,
+        "rgbMismatches": 0
+      },
+      {
+        "file": "arch-04-lintel.png",
+        "nonzeroAlphaPixels": 5832,
+        "partialAlphaPixels": 507,
+        "rgbMismatches": 0
+      },
+      {
+        "file": "arch-05-left-support.png",
+        "nonzeroAlphaPixels": 2049,
+        "partialAlphaPixels": 159,
+        "rgbMismatches": 0
+      },
+      {
+        "file": "arch-05-right-support.png",
+        "nonzeroAlphaPixels": 1999,
+        "partialAlphaPixels": 220,
+        "rgbMismatches": 0
+      },
+      {
+        "file": "arch-05-lintel.png",
+        "nonzeroAlphaPixels": 5465,
+        "partialAlphaPixels": 423,
+        "rgbMismatches": 0
+      },
+      {
+        "file": "arch-06-left-support.png",
+        "nonzeroAlphaPixels": 2374,
+        "partialAlphaPixels": 249,
+        "rgbMismatches": 0
+      },
+      {
+        "file": "arch-06-right-support.png",
+        "nonzeroAlphaPixels": 2204,
+        "partialAlphaPixels": 276,
+        "rgbMismatches": 0
+      },
+      {
+        "file": "arch-06-lintel.png",
+        "nonzeroAlphaPixels": 5747,
+        "partialAlphaPixels": 452,
+        "rgbMismatches": 0
+      },
+      {
+        "file": "arch-07-left-support.png",
+        "nonzeroAlphaPixels": 2740,
+        "partialAlphaPixels": 283,
+        "rgbMismatches": 0
+      },
+      {
+        "file": "arch-07-right-support.png",
+        "nonzeroAlphaPixels": 2476,
+        "partialAlphaPixels": 280,
+        "rgbMismatches": 0
+      },
+      {
+        "file": "arch-07-lintel.png",
+        "nonzeroAlphaPixels": 6983,
+        "partialAlphaPixels": 557,
+        "rgbMismatches": 0
+      },
+      {
+        "file": "arch-08-left-support.png",
+        "nonzeroAlphaPixels": 2744,
+        "partialAlphaPixels": 283,
+        "rgbMismatches": 0
+      },
+      {
+        "file": "arch-08-right-support.png",
+        "nonzeroAlphaPixels": 2465,
+        "partialAlphaPixels": 253,
+        "rgbMismatches": 0
+      },
+      {
+        "file": "arch-08-lintel.png",
+        "nonzeroAlphaPixels": 6984,
+        "partialAlphaPixels": 555,
+        "rgbMismatches": 0
+      },
+      {
+        "file": "frog-01-body.png",
+        "nonzeroAlphaPixels": 8579,
+        "partialAlphaPixels": 656,
+        "rgbMismatches": 0
+      },
+      {
+        "file": "frog-02-body.png",
+        "nonzeroAlphaPixels": 7503,
+        "partialAlphaPixels": 650,
+        "rgbMismatches": 0
+      },
+      {
+        "file": "frog-03-body.png",
+        "nonzeroAlphaPixels": 7514,
+        "partialAlphaPixels": 658,
+        "rgbMismatches": 0
+      },
+      {
+        "file": "frog-04-body.png",
+        "nonzeroAlphaPixels": 9904,
+        "partialAlphaPixels": 718,
+        "rgbMismatches": 0
+      },
+      {
+        "file": "frog-05-body.png",
+        "nonzeroAlphaPixels": 10411,
+        "partialAlphaPixels": 778,
+        "rgbMismatches": 0
+      },
+      {
+        "file": "frog-06-body.png",
+        "nonzeroAlphaPixels": 11906,
+        "partialAlphaPixels": 788,
+        "rgbMismatches": 0
+      },
+      {
+        "file": "pillar-01-body.png",
+        "nonzeroAlphaPixels": 6787,
+        "partialAlphaPixels": 624,
+        "rgbMismatches": 0
+      },
+      {
+        "file": "pillar-02-body.png",
+        "nonzeroAlphaPixels": 6641,
+        "partialAlphaPixels": 618,
+        "rgbMismatches": 0
+      },
+      {
+        "file": "pillar-03-body.png",
+        "nonzeroAlphaPixels": 7869,
+        "partialAlphaPixels": 684,
+        "rgbMismatches": 0
+      },
+      {
+        "file": "pillar-04-body.png",
+        "nonzeroAlphaPixels": 7932,
+        "partialAlphaPixels": 670,
+        "rgbMismatches": 0
+      },
+      {
+        "file": "pillar-05-body.png",
+        "nonzeroAlphaPixels": 8736,
+        "partialAlphaPixels": 712,
+        "rgbMismatches": 0
+      },
+      {
+        "file": "pillar-06-body.png",
+        "nonzeroAlphaPixels": 8710,
+        "partialAlphaPixels": 728,
+        "rgbMismatches": 0
+      },
+      {
+        "file": "pillar-07-body.png",
+        "nonzeroAlphaPixels": 10304,
+        "partialAlphaPixels": 762,
+        "rgbMismatches": 0
+      },
+      {
+        "file": "receiver-01-rear.png",
+        "nonzeroAlphaPixels": 20861,
+        "partialAlphaPixels": 813,
+        "rgbMismatches": 0
+      },
+      {
+        "file": "receiver-01-front.png",
+        "nonzeroAlphaPixels": 40295,
+        "partialAlphaPixels": 345,
+        "rgbMismatches": 0
+      },
+      {
+        "file": "receiver-02-rear.png",
+        "nonzeroAlphaPixels": 14356,
+        "partialAlphaPixels": 877,
+        "rgbMismatches": 0
+      },
+      {
+        "file": "receiver-02-front.png",
+        "nonzeroAlphaPixels": 36459,
+        "partialAlphaPixels": 345,
+        "rgbMismatches": 0
+      },
+      {
+        "file": "receiver-03-rear.png",
+        "nonzeroAlphaPixels": 9530,
+        "partialAlphaPixels": 781,
+        "rgbMismatches": 0
+      },
+      {
+        "file": "receiver-03-front.png",
+        "nonzeroAlphaPixels": 36278,
+        "partialAlphaPixels": 424,
+        "rgbMismatches": 0
+      },
+      {
+        "file": "receiver-04-rear.png",
+        "nonzeroAlphaPixels": 7948,
+        "partialAlphaPixels": 609,
+        "rgbMismatches": 0
+      },
+      {
+        "file": "receiver-04-front.png",
+        "nonzeroAlphaPixels": 35942,
+        "partialAlphaPixels": 618,
+        "rgbMismatches": 0
+      },
+      {
+        "file": "outer-left-foreground.png",
+        "nonzeroAlphaPixels": 222296,
+        "partialAlphaPixels": 4691,
+        "rgbMismatches": 0
+      },
+      {
+        "file": "outer-right-foreground.png",
+        "nonzeroAlphaPixels": 228021,
+        "partialAlphaPixels": 4928,
+        "rgbMismatches": 0
+      },
+      {
+        "file": "divider-01-foreground.png",
+        "nonzeroAlphaPixels": 9219,
+        "partialAlphaPixels": 1057,
+        "rgbMismatches": 0
+      },
+      {
+        "file": "divider-02-foreground.png",
+        "nonzeroAlphaPixels": 13206,
+        "partialAlphaPixels": 1735,
+        "rgbMismatches": 0
+      },
+      {
+        "file": "divider-03-foreground.png",
+        "nonzeroAlphaPixels": 14200,
+        "partialAlphaPixels": 1852,
+        "rgbMismatches": 0
+      }
+    ],
+    "receiverRearFront": [
+      {
+        "id": "receiver-01",
+        "bothNonzeroPixels": 0,
+        "rearTransparentPixels": 181278,
+        "rearAlphaAtAcceptedCenter": 0
+      },
+      {
+        "id": "receiver-02",
+        "bothNonzeroPixels": 0,
+        "rearTransparentPixels": 169023,
+        "rearAlphaAtAcceptedCenter": 0
+      },
+      {
+        "id": "receiver-03",
+        "bothNonzeroPixels": 0,
+        "rearTransparentPixels": 166790,
+        "rearAlphaAtAcceptedCenter": 0
+      },
+      {
+        "id": "receiver-04",
+        "bothNonzeroPixels": 0,
+        "rearTransparentPixels": 175742,
+        "rearAlphaAtAcceptedCenter": 0
+      }
+    ],
+    "observedPoses": [
+      {
+        "file": "02-frog-104.dom.json",
+        "seed": 0,
+        "tick": 104,
+        "alphaWeightedOverlapFraction": 0.08924736237609135,
+        "overlapSamples": 1152,
+        "perPart": {
+          "frog-01:body": 0.08924736237609135
+        }
+      },
+      {
+        "file": "03-frog-105.dom.json",
+        "seed": 0,
+        "tick": 105,
+        "alphaWeightedOverlapFraction": 0.09309210833440247,
+        "overlapSamples": 1201,
+        "perPart": {
+          "frog-01:body": 0.09309210833440246
+        }
+      },
+      {
+        "file": "03-frog-106.dom.json",
+        "seed": 0,
+        "tick": 106,
+        "alphaWeightedOverlapFraction": 0.07874642895364378,
+        "overlapSamples": 1059,
+        "perPart": {
+          "frog-01:body": 0.07874642895364378
+        }
+      },
+      {
+        "file": "03-frog-107.dom.json",
+        "seed": 0,
+        "tick": 107,
+        "alphaWeightedOverlapFraction": 0.04932503669436826,
+        "overlapSamples": 712,
+        "perPart": {
+          "frog-01:body": 0.04932503669436826
+        }
+      },
+      {
+        "file": "03-frog-108.dom.json",
+        "seed": 0,
+        "tick": 108,
+        "alphaWeightedOverlapFraction": 0.02634827592230425,
+        "overlapSamples": 419,
+        "perPart": {
+          "frog-01:body": 0.02634827592230425
+        }
+      },
+      {
+        "file": "03-frog-109.dom.json",
+        "seed": 0,
+        "tick": 109,
+        "alphaWeightedOverlapFraction": 0.012083711632335733,
+        "overlapSamples": 214,
+        "perPart": {
+          "frog-01:body": 0.012083711632335733
+        }
+      },
+      {
+        "file": "03-frog-110.dom.json",
+        "seed": 0,
+        "tick": 110,
+        "alphaWeightedOverlapFraction": 0.002620081739327625,
+        "overlapSamples": 95,
+        "perPart": {
+          "frog-01:body": 0.002620081739327625
+        }
+      },
+      {
+        "file": "04-arch04-696.dom.json",
+        "seed": 0,
+        "tick": 696,
+        "alphaWeightedOverlapFraction": 0.8469441661576698,
+        "overlapSamples": 11064,
+        "perPart": {
+          "arch-04:right-support": 0.574616581544878,
+          "arch-04:lintel": 0.27775844991662024
+        }
+      },
+      {
+        "file": "05-arch04-697.dom.json",
+        "seed": 0,
+        "tick": 697,
+        "alphaWeightedOverlapFraction": 0.8450467456317581,
+        "overlapSamples": 11057,
+        "perPart": {
+          "arch-04:right-support": 0.6179534683898207,
+          "arch-04:lintel": 0.23245186780848368
+        }
+      },
+      {
+        "file": "05-arch04-698.dom.json",
+        "seed": 0,
+        "tick": 698,
+        "alphaWeightedOverlapFraction": 0.8514608049823469,
+        "overlapSamples": 11136,
+        "perPart": {
+          "arch-04:right-support": 0.6612392329053665,
+          "arch-04:lintel": 0.19542228500899322
+        }
+      },
+      {
+        "file": "05-arch04-699.dom.json",
+        "seed": 0,
+        "tick": 699,
+        "alphaWeightedOverlapFraction": 0.8980135112441591,
+        "overlapSamples": 11684,
+        "perPart": {
+          "arch-04:right-support": 0.7134739869859813,
+          "arch-04:lintel": 0.18989878396093504
+        }
+      },
+      {
+        "file": "05-arch04-700.dom.json",
+        "seed": 0,
+        "tick": 700,
+        "alphaWeightedOverlapFraction": 0.9382855412403394,
+        "overlapSamples": 12139,
+        "perPart": {
+          "arch-04:right-support": 0.763637388302898,
+          "arch-04:lintel": 0.18009387431626972
+        }
+      },
+      {
+        "file": "08-arch07-1005.dom.json",
+        "seed": 1,
+        "tick": 1005,
+        "alphaWeightedOverlapFraction": 0.7426895688800822,
+        "overlapSamples": 11828,
+        "perPart": {
+          "arch-07:left-support": 0.2768599781798069,
+          "arch-07:lintel": 0.47145341085456893
+        }
+      },
+      {
+        "file": "09-arch07-1006.dom.json",
+        "seed": 1,
+        "tick": 1006,
+        "alphaWeightedOverlapFraction": 0.653812526483864,
+        "overlapSamples": 10519,
+        "perPart": {
+          "arch-07:left-support": 0.2733799952173509,
+          "arch-07:lintel": 0.3854673673621959
+        }
+      },
+      {
+        "file": "09-arch07-1007.dom.json",
+        "seed": 1,
+        "tick": 1007,
+        "alphaWeightedOverlapFraction": 0.5247993008578502,
+        "overlapSamples": 8591,
+        "perPart": {
+          "arch-07:left-support": 0.19406166572654546,
+          "arch-07:lintel": 0.33500995081478047
+        }
+      },
+      {
+        "file": "09-arch07-1008.dom.json",
+        "seed": 1,
+        "tick": 1008,
+        "alphaWeightedOverlapFraction": 0.3438196197230836,
+        "overlapSamples": 5832,
+        "perPart": {
+          "arch-07:left-support": 0.05258676513414438,
+          "arch-07:lintel": 0.2941701510029247
+        }
+      },
+      {
+        "file": "09-arch07-1009.dom.json",
+        "seed": 1,
+        "tick": 1009,
+        "alphaWeightedOverlapFraction": 0.17797570124749387,
+        "overlapSamples": 3231,
+        "perPart": {
+          "arch-07:lintel": 0.17797570124749387
+        }
+      },
+      {
+        "file": "09-arch07-1010.dom.json",
+        "seed": 1,
+        "tick": 1010,
+        "alphaWeightedOverlapFraction": 0.04999400364594956,
+        "overlapSamples": 1186,
+        "perPart": {
+          "arch-07:lintel": 0.04999400364594956
+        }
+      },
+      {
+        "file": "09-arch07-1011.dom.json",
+        "seed": 1,
+        "tick": 1011,
+        "alphaWeightedOverlapFraction": 0.0010570926578817995,
+        "overlapSamples": 95,
+        "perPart": {
+          "arch-07:lintel": 0.0010570926578817995
+        }
+      },
+      {
+        "file": "09-arch07-1012.dom.json",
+        "seed": 1,
+        "tick": 1012,
+        "alphaWeightedOverlapFraction": 0.0044029570326088036,
+        "overlapSamples": 248,
+        "perPart": {
+          "arch-07:right-support": 5.067162662296381e-7,
+          "arch-07:lintel": 0.004402450421547099
+        }
+      },
+      {
+        "file": "09-arch07-1013.dom.json",
+        "seed": 1,
+        "tick": 1013,
+        "alphaWeightedOverlapFraction": 0.02410353122519107,
+        "overlapSamples": 711,
+        "perPart": {
+          "arch-07:right-support": 0.010448771483203516,
+          "arch-07:lintel": 0.014110142949623249
+        }
+      },
+      {
+        "file": "09-arch07-1014.dom.json",
+        "seed": 1,
+        "tick": 1014,
+        "alphaWeightedOverlapFraction": 4.031638837949304e-7,
+        "overlapSamples": 0,
+        "perPart": {
+          "arch-07:right-support": 4.0125924456852263e-7,
+          "arch-07:lintel": 1.904639226407067e-9
+        }
+      },
+      {
+        "file": "09-arch07-1015.dom.json",
+        "seed": 1,
+        "tick": 1015,
+        "alphaWeightedOverlapFraction": 0,
+        "overlapSamples": 0,
+        "perPart": {}
+      },
+      {
+        "file": "09-arch07-1016.dom.json",
+        "seed": 1,
+        "tick": 1016,
+        "alphaWeightedOverlapFraction": 0,
+        "overlapSamples": 0,
+        "perPart": {}
+      },
+      {
+        "file": "09-arch07-1017.dom.json",
+        "seed": 1,
+        "tick": 1017,
+        "alphaWeightedOverlapFraction": 0,
+        "overlapSamples": 0,
+        "perPart": {}
+      },
+      {
+        "file": "09-arch07-1018.dom.json",
+        "seed": 1,
+        "tick": 1018,
+        "alphaWeightedOverlapFraction": 0,
+        "overlapSamples": 0,
+        "perPart": {}
+      },
+      {
+        "file": "09-arch07-1019.dom.json",
+        "seed": 1,
+        "tick": 1019,
+        "alphaWeightedOverlapFraction": 0,
+        "overlapSamples": 0,
+        "perPart": {}
+      },
+      {
+        "file": "09-arch07-1020.dom.json",
+        "seed": 1,
+        "tick": 1020,
+        "alphaWeightedOverlapFraction": 0,
+        "overlapSamples": 0,
+        "perPart": {}
+      },
+      {
+        "file": "09-arch07-1021.dom.json",
+        "seed": 1,
+        "tick": 1021,
+        "alphaWeightedOverlapFraction": 0,
+        "overlapSamples": 0,
+        "perPart": {}
+      },
+      {
+        "file": "10-rim03-1118.dom.json",
+        "seed": 1,
+        "tick": 1118,
+        "alphaWeightedOverlapFraction": 0,
+        "overlapSamples": 0,
+        "perPart": {}
+      },
+      {
+        "file": "11-rim03-1119.dom.json",
+        "seed": 1,
+        "tick": 1119,
+        "alphaWeightedOverlapFraction": 0,
+        "overlapSamples": 0,
+        "perPart": {}
+      },
+      {
+        "file": "11-rim03-1120.dom.json",
+        "seed": 1,
+        "tick": 1120,
+        "alphaWeightedOverlapFraction": 0.011005330875555693,
+        "overlapSamples": 429,
+        "perPart": {
+          "receiver-03:front": 0.011005330875555693
+        }
+      },
+      {
+        "file": "11-rim03-1121.dom.json",
+        "seed": 1,
+        "tick": 1121,
+        "alphaWeightedOverlapFraction": 0.06496403311874233,
+        "overlapSamples": 1640,
+        "perPart": {
+          "receiver-03:front": 0.06496403311874233
+        }
+      },
+      {
+        "file": "11-rim03-1122.dom.json",
+        "seed": 1,
+        "tick": 1122,
+        "alphaWeightedOverlapFraction": 0.1525983675421184,
+        "overlapSamples": 3337,
+        "perPart": {
+          "receiver-03:front": 0.1525983675421184
+        }
+      },
+      {
+        "file": "11-rim03-1123.dom.json",
+        "seed": 1,
+        "tick": 1123,
+        "alphaWeightedOverlapFraction": 0.256802136955475,
+        "overlapSamples": 5238,
+        "perPart": {
+          "receiver-03:front": 0.256802136955475
+        }
+      },
+      {
+        "file": "11-rim03-1124.dom.json",
+        "seed": 1,
+        "tick": 1124,
+        "alphaWeightedOverlapFraction": 0.37490325300930977,
+        "overlapSamples": 7374,
+        "perPart": {
+          "receiver-03:front": 0.37490325300930977
+        }
+      },
+      {
+        "file": "11-rim03-1125.dom.json",
+        "seed": 1,
+        "tick": 1125,
+        "alphaWeightedOverlapFraction": 0.5019116401281658,
+        "overlapSamples": 9621,
+        "perPart": {
+          "receiver-03:front": 0.5019116401281658
+        }
+      },
+      {
+        "file": "11-rim03-1126.dom.json",
+        "seed": 1,
+        "tick": 1126,
+        "alphaWeightedOverlapFraction": 0.6319439161100787,
+        "overlapSamples": 11914,
+        "perPart": {
+          "receiver-03:front": 0.6319439161100787
+        }
+      },
+      {
+        "file": "11-rim03-1127.dom.json",
+        "seed": 1,
+        "tick": 1127,
+        "alphaWeightedOverlapFraction": 0.7560436711418435,
+        "overlapSamples": 14218,
+        "perPart": {
+          "receiver-03:front": 0.7560436711418435
+        }
+      },
+      {
+        "file": "11-rim03-1128.dom.json",
+        "seed": 1,
+        "tick": 1128,
+        "alphaWeightedOverlapFraction": 0.8720461333431877,
+        "overlapSamples": 16228,
+        "perPart": {
+          "receiver-03:front": 0.8720461333431877
+        }
+      },
+      {
+        "file": "11-rim03-1129.dom.json",
+        "seed": 1,
+        "tick": 1129,
+        "alphaWeightedOverlapFraction": 0.9672905365295269,
+        "overlapSamples": 17912,
+        "perPart": {
+          "receiver-03:front": 0.9672905365295269
+        }
+      },
+      {
+        "file": "11-rim03-1130.dom.json",
+        "seed": 1,
+        "tick": 1130,
+        "alphaWeightedOverlapFraction": 1,
+        "overlapSamples": 18470,
+        "perPart": {
+          "receiver-03:front": 1
+        }
+      },
+      {
+        "file": "11-rim03-1131.dom.json",
+        "seed": 1,
+        "tick": 1131,
+        "alphaWeightedOverlapFraction": 1,
+        "overlapSamples": 18514,
+        "perPart": {
+          "receiver-03:front": 1
+        }
+      },
+      {
+        "file": "11-rim03-1132.dom.json",
+        "seed": 1,
+        "tick": 1132,
+        "alphaWeightedOverlapFraction": 1,
+        "overlapSamples": 18549,
+        "perPart": {
+          "receiver-03:front": 1
+        }
+      },
+      {
+        "file": "11-rim03-1133.dom.json",
+        "seed": 1,
+        "tick": 1133,
+        "alphaWeightedOverlapFraction": 1,
+        "overlapSamples": 18598,
+        "perPart": {
+          "receiver-03:front": 1
+        }
+      },
+      {
+        "file": "11-rim03-1134.dom.json",
+        "seed": 1,
+        "tick": 1134,
+        "alphaWeightedOverlapFraction": 1,
+        "overlapSamples": 18626,
+        "perPart": {
+          "receiver-03:front": 1
+        }
+      },
+      {
+        "file": "11-rim03-1135.dom.json",
+        "seed": 1,
+        "tick": 1135,
+        "alphaWeightedOverlapFraction": 1,
+        "overlapSamples": 18661,
+        "perPart": {
+          "receiver-03:front": 1
+        }
+      },
+      {
+        "file": "11-rim03-1136.dom.json",
+        "seed": 1,
+        "tick": 1136,
+        "alphaWeightedOverlapFraction": 1,
+        "overlapSamples": 18690,
+        "perPart": {
+          "receiver-03:front": 1
+        }
+      },
+      {
+        "file": "11-rim03-1137.dom.json",
+        "seed": 1,
+        "tick": 1137,
+        "alphaWeightedOverlapFraction": 1,
+        "overlapSamples": 18733,
+        "perPart": {
+          "receiver-03:front": 1
+        }
+      },
+      {
+        "file": "11-rim03-1138.dom.json",
+        "seed": 1,
+        "tick": 1138,
+        "alphaWeightedOverlapFraction": 1,
+        "overlapSamples": 18772,
+        "perPart": {
+          "receiver-03:front": 1
+        }
+      },
+      {
+        "file": "11-rim03-1139.dom.json",
+        "seed": 1,
+        "tick": 1139,
+        "alphaWeightedOverlapFraction": 0.9999996406327026,
+        "overlapSamples": 18817,
+        "perPart": {
+          "receiver-03:front": 0.9999996406327026
+        }
+      },
+      {
+        "file": "11-rim03-1140.dom.json",
+        "seed": 1,
+        "tick": 1140,
+        "alphaWeightedOverlapFraction": 0.9544340545573546,
+        "overlapSamples": 18194,
+        "perPart": {
+          "receiver-03:front": 0.9544340545573546
+        }
+      },
+      {
+        "file": "11-rim03-1141.dom.json",
+        "seed": 1,
+        "tick": 1141,
+        "alphaWeightedOverlapFraction": 0.7866606588207474,
+        "overlapSamples": 15161,
+        "perPart": {
+          "receiver-03:front": 0.7866606588207474
+        }
+      },
+      {
+        "file": "11-rim03-1142.dom.json",
+        "seed": 1,
+        "tick": 1142,
+        "alphaWeightedOverlapFraction": 0.5747207141379139,
+        "overlapSamples": 11284,
+        "perPart": {
+          "receiver-03:front": 0.5747207141379139
+        }
+      },
+      {
+        "file": "11-rim03-1143.dom.json",
+        "seed": 1,
+        "tick": 1143,
+        "alphaWeightedOverlapFraction": 0.3543124329831144,
+        "overlapSamples": 7158,
+        "perPart": {
+          "receiver-03:front": 0.3543124329831144
+        }
+      },
+      {
+        "file": "11-rim03-1144.dom.json",
+        "seed": 1,
+        "tick": 1144,
+        "alphaWeightedOverlapFraction": 0.15352742135510614,
+        "overlapSamples": 3307,
+        "perPart": {
+          "receiver-03:front": 0.15352742135510614
+        }
+      },
+      {
+        "file": "11-rim03-1145.dom.json",
+        "seed": 1,
+        "tick": 1145,
+        "alphaWeightedOverlapFraction": 0.011340879909428241,
+        "overlapSamples": 418,
+        "perPart": {
+          "receiver-03:front": 0.011340879909428241
+        }
+      },
+      {
+        "file": "11-rim03-1146.dom.json",
+        "seed": 1,
+        "tick": 1146,
+        "alphaWeightedOverlapFraction": 0,
+        "overlapSamples": 0,
+        "perPart": {}
+      },
+      {
+        "file": "12-rim03-on-normal.dom.json",
+        "seed": 1,
+        "tick": 1125,
+        "alphaWeightedOverlapFraction": 0.5019116401281658,
+        "overlapSamples": 9621,
+        "perPart": {
+          "receiver-03:front": 0.5019116401281658
+        }
+      },
+      {
+        "file": "14-rim03-on-zoom.dom.json",
+        "seed": 1,
+        "tick": 1125,
+        "alphaWeightedOverlapFraction": 0.5019116401281658,
+        "overlapSamples": 9621,
+        "perPart": {
+          "receiver-03:front": 0.5019116401281658
+        }
+      },
+      {
+        "file": "37-receiver02-1273.dom.json",
+        "seed": 2,
+        "tick": 1273,
+        "alphaWeightedOverlapFraction": 0,
+        "overlapSamples": 0,
+        "perPart": {}
+      },
+      {
+        "file": "38-receiver02-1274.dom.json",
+        "seed": 2,
+        "tick": 1274,
+        "alphaWeightedOverlapFraction": 0,
+        "overlapSamples": 0,
+        "perPart": {}
+      },
+      {
+        "file": "39-receiver02-1275.dom.json",
+        "seed": 2,
+        "tick": 1275,
+        "alphaWeightedOverlapFraction": 0,
+        "overlapSamples": 0,
+        "perPart": {}
+      },
+      {
+        "file": "41-rim02-before-1247.dom.json",
+        "seed": 0,
+        "tick": 1247,
+        "alphaWeightedOverlapFraction": 0,
+        "overlapSamples": 0,
+        "perPart": {}
+      },
+      {
+        "file": "42-rim02-1248.dom.json",
+        "seed": 0,
+        "tick": 1248,
+        "alphaWeightedOverlapFraction": 0.0021018863904496434,
+        "overlapSamples": 126,
+        "perPart": {
+          "receiver-02:front": 0.0021018863904496434
+        }
+      },
+      {
+        "file": "42-rim02-1249.dom.json",
+        "seed": 0,
+        "tick": 1249,
+        "alphaWeightedOverlapFraction": 0.03718399932156796,
+        "overlapSamples": 1284,
+        "perPart": {
+          "receiver-02:front": 0.03718399932156796
+        }
+      },
+      {
+        "file": "42-rim02-1250.dom.json",
+        "seed": 0,
+        "tick": 1250,
+        "alphaWeightedOverlapFraction": 0.11877829427390038,
+        "overlapSamples": 2924,
+        "perPart": {
+          "receiver-02:front": 0.11877829427390038
+        }
+      },
+      {
+        "file": "42-rim02-1251.dom.json",
+        "seed": 0,
+        "tick": 1251,
+        "alphaWeightedOverlapFraction": 0.22207879721467277,
+        "overlapSamples": 4701,
+        "perPart": {
+          "receiver-02:front": 0.22207879721467277
+        }
+      },
+      {
+        "file": "42-rim02-1252.dom.json",
+        "seed": 0,
+        "tick": 1252,
+        "alphaWeightedOverlapFraction": 0.33899922098320995,
+        "overlapSamples": 7075,
+        "perPart": {
+          "receiver-02:front": 0.33899922098320995
+        }
+      },
+      {
+        "file": "42-rim02-1253.dom.json",
+        "seed": 0,
+        "tick": 1253,
+        "alphaWeightedOverlapFraction": 0.4645014569891302,
+        "overlapSamples": 9437,
+        "perPart": {
+          "receiver-02:front": 0.4645014569891302
+        }
+      },
+      {
+        "file": "42-rim02-1254.dom.json",
+        "seed": 0,
+        "tick": 1254,
+        "alphaWeightedOverlapFraction": 0.5919413750761381,
+        "overlapSamples": 11509,
+        "perPart": {
+          "receiver-02:front": 0.5919413750761381
+        }
+      },
+      {
+        "file": "42-rim02-1255.dom.json",
+        "seed": 0,
+        "tick": 1255,
+        "alphaWeightedOverlapFraction": 0.7164320067424762,
+        "overlapSamples": 13799,
+        "perPart": {
+          "receiver-02:front": 0.7164320067424762
+        }
+      },
+      {
+        "file": "42-rim02-1256.dom.json",
+        "seed": 0,
+        "tick": 1256,
+        "alphaWeightedOverlapFraction": 0.8308375035431012,
+        "overlapSamples": 15841,
+        "perPart": {
+          "receiver-02:front": 0.8308375035431012
+        }
+      },
+      {
+        "file": "42-rim02-1257.dom.json",
+        "seed": 0,
+        "tick": 1257,
+        "alphaWeightedOverlapFraction": 0.9244864015252123,
+        "overlapSamples": 17466,
+        "perPart": {
+          "receiver-02:front": 0.9244864015252123
+        }
+      },
+      {
+        "file": "42-rim02-1258.dom.json",
+        "seed": 0,
+        "tick": 1258,
+        "alphaWeightedOverlapFraction": 0.9861614189508127,
+        "overlapSamples": 18403,
+        "perPart": {
+          "receiver-02:front": 0.9861614189508127
+        }
+      },
+      {
+        "file": "42-rim02-1259.dom.json",
+        "seed": 0,
+        "tick": 1259,
+        "alphaWeightedOverlapFraction": 1,
+        "overlapSamples": 18509,
+        "perPart": {
+          "receiver-02:front": 1
+        }
+      },
+      {
+        "file": "42-rim02-1260.dom.json",
+        "seed": 0,
+        "tick": 1260,
+        "alphaWeightedOverlapFraction": 1,
+        "overlapSamples": 18536,
+        "perPart": {
+          "receiver-02:front": 1
+        }
+      },
+      {
+        "file": "42-rim02-1261.dom.json",
+        "seed": 0,
+        "tick": 1261,
+        "alphaWeightedOverlapFraction": 1,
+        "overlapSamples": 18588,
+        "perPart": {
+          "receiver-02:front": 1
+        }
+      },
+      {
+        "file": "42-rim02-1262.dom.json",
+        "seed": 0,
+        "tick": 1262,
+        "alphaWeightedOverlapFraction": 1,
+        "overlapSamples": 18617,
+        "perPart": {
+          "receiver-02:front": 1
+        }
+      },
+      {
+        "file": "42-rim02-1263.dom.json",
+        "seed": 0,
+        "tick": 1263,
+        "alphaWeightedOverlapFraction": 1,
+        "overlapSamples": 18655,
+        "perPart": {
+          "receiver-02:front": 1
+        }
+      },
+      {
+        "file": "42-rim02-1264.dom.json",
+        "seed": 0,
+        "tick": 1264,
+        "alphaWeightedOverlapFraction": 1,
+        "overlapSamples": 18685,
+        "perPart": {
+          "receiver-02:front": 1
+        }
+      },
+      {
+        "file": "42-rim02-1265.dom.json",
+        "seed": 0,
+        "tick": 1265,
+        "alphaWeightedOverlapFraction": 1,
+        "overlapSamples": 18723,
+        "perPart": {
+          "receiver-02:front": 1
+        }
+      },
+      {
+        "file": "42-rim02-1266.dom.json",
+        "seed": 0,
+        "tick": 1266,
+        "alphaWeightedOverlapFraction": 1,
+        "overlapSamples": 18755,
+        "perPart": {
+          "receiver-02:front": 1
+        }
+      },
+      {
+        "file": "42-rim02-1267.dom.json",
+        "seed": 0,
+        "tick": 1267,
+        "alphaWeightedOverlapFraction": 1,
+        "overlapSamples": 18801,
+        "perPart": {
+          "receiver-02:front": 1
+        }
+      },
+      {
+        "file": "42-rim02-1268.dom.json",
+        "seed": 0,
+        "tick": 1268,
+        "alphaWeightedOverlapFraction": 1,
+        "overlapSamples": 18839,
+        "perPart": {
+          "receiver-02:front": 1
+        }
+      },
+      {
+        "file": "42-rim02-1269.dom.json",
+        "seed": 0,
+        "tick": 1269,
+        "alphaWeightedOverlapFraction": 1,
+        "overlapSamples": 18889,
+        "perPart": {
+          "receiver-02:front": 1
+        }
+      },
+      {
+        "file": "42-rim02-1270.dom.json",
+        "seed": 0,
+        "tick": 1270,
+        "alphaWeightedOverlapFraction": 1,
+        "overlapSamples": 18917,
+        "perPart": {
+          "receiver-02:front": 1
+        }
+      },
+      {
+        "file": "42-rim02-1271.dom.json",
+        "seed": 0,
+        "tick": 1271,
+        "alphaWeightedOverlapFraction": 1,
+        "overlapSamples": 18949,
+        "perPart": {
+          "receiver-02:front": 1
+        }
+      },
+      {
+        "file": "42-rim02-1272.dom.json",
+        "seed": 0,
+        "tick": 1272,
+        "alphaWeightedOverlapFraction": 1,
+        "overlapSamples": 19011,
+        "perPart": {
+          "receiver-02:front": 1
+        }
+      },
+      {
+        "file": "42-rim02-1273.dom.json",
+        "seed": 0,
+        "tick": 1273,
+        "alphaWeightedOverlapFraction": 0.9793170903732541,
+        "overlapSamples": 18774,
+        "perPart": {
+          "receiver-02:front": 0.9793170903732541
+        }
+      },
+      {
+        "file": "42-rim02-1274.dom.json",
+        "seed": 0,
+        "tick": 1274,
+        "alphaWeightedOverlapFraction": 0.9270732910559677,
+        "overlapSamples": 17924,
+        "perPart": {
+          "receiver-02:front": 0.9270732910559677
+        }
+      },
+      {
+        "file": "42-rim02-1275.dom.json",
+        "seed": 0,
+        "tick": 1275,
+        "alphaWeightedOverlapFraction": 0.8366582945690585,
+        "overlapSamples": 16391,
+        "perPart": {
+          "receiver-02:front": 0.8366582945690585
+        }
+      },
+      {
+        "file": "42-rim02-1276.dom.json",
+        "seed": 0,
+        "tick": 1276,
+        "alphaWeightedOverlapFraction": 0.6786209639166564,
+        "overlapSamples": 13469,
+        "perPart": {
+          "receiver-02:front": 0.6786209639166564
+        }
+      },
+      {
+        "file": "42-rim02-1277.dom.json",
+        "seed": 0,
+        "tick": 1277,
+        "alphaWeightedOverlapFraction": 0.4958500389268431,
+        "overlapSamples": 10073,
+        "perPart": {
+          "receiver-02:front": 0.4958500389268431
+        }
+      },
+      {
+        "file": "42-rim02-1278.dom.json",
+        "seed": 0,
+        "tick": 1278,
+        "alphaWeightedOverlapFraction": 0.31104804700515454,
+        "overlapSamples": 6526,
+        "perPart": {
+          "receiver-02:front": 0.31104804700515454
+        }
+      },
+      {
+        "file": "42-rim02-1279.dom.json",
+        "seed": 0,
+        "tick": 1279,
+        "alphaWeightedOverlapFraction": 0.16467670832066852,
+        "overlapSamples": 3545,
+        "perPart": {
+          "receiver-02:front": 0.16467670832066852
+        }
+      },
+      {
+        "file": "42-rim02-1280.dom.json",
+        "seed": 0,
+        "tick": 1280,
+        "alphaWeightedOverlapFraction": 0.06826307909360502,
+        "overlapSamples": 1601,
+        "perPart": {
+          "receiver-02:front": 0.06826307909360502
+        }
+      },
+      {
+        "file": "42-rim02-1281.dom.json",
+        "seed": 0,
+        "tick": 1281,
+        "alphaWeightedOverlapFraction": 0.009543125390638072,
+        "overlapSamples": 259,
+        "perPart": {
+          "receiver-02:front": 0.009543125390638072
+        }
+      },
+      {
+        "file": "42-rim02-1282.dom.json",
+        "seed": 0,
+        "tick": 1282,
+        "alphaWeightedOverlapFraction": 0,
+        "overlapSamples": 0,
+        "perPart": {}
+      },
+      {
+        "file": "43-rim02-normal-1277.dom.json",
+        "seed": 0,
+        "tick": 1277,
+        "alphaWeightedOverlapFraction": 0.4958500389268431,
+        "overlapSamples": 10073,
+        "perPart": {
+          "receiver-02:front": 0.4958500389268431
+        }
+      },
+      {
+        "file": "44-rim02-zoom-on-1277.dom.json",
+        "seed": 0,
+        "tick": 1277,
+        "alphaWeightedOverlapFraction": 0.4958500389268431,
+        "overlapSamples": 10073,
+        "perPart": {
+          "receiver-02:front": 0.4958500389268431
+        }
+      },
+      {
+        "file": "48-rim02-enter-side-zoom.dom.json",
+        "seed": 0,
+        "tick": 1253,
+        "alphaWeightedOverlapFraction": 0.4645014569891302,
+        "overlapSamples": 9437,
+        "perPart": {
+          "receiver-02:front": 0.4645014569891302
+        }
+      },
+      {
+        "file": "50-rim03-approach-1113.dom.json",
+        "seed": 1,
+        "tick": 1113,
+        "alphaWeightedOverlapFraction": 0,
+        "overlapSamples": 0,
+        "perPart": {}
+      },
+      {
+        "file": "51-rim03-approach-1114.dom.json",
+        "seed": 1,
+        "tick": 1114,
+        "alphaWeightedOverlapFraction": 0,
+        "overlapSamples": 0,
+        "perPart": {}
+      },
+      {
+        "file": "51-rim03-approach-1115.dom.json",
+        "seed": 1,
+        "tick": 1115,
+        "alphaWeightedOverlapFraction": 0,
+        "overlapSamples": 0,
+        "perPart": {}
+      },
+      {
+        "file": "51-rim03-approach-1116.dom.json",
+        "seed": 1,
+        "tick": 1116,
+        "alphaWeightedOverlapFraction": 0,
+        "overlapSamples": 0,
+        "perPart": {}
+      },
+      {
+        "file": "51-rim03-approach-1117.dom.json",
+        "seed": 1,
+        "tick": 1117,
+        "alphaWeightedOverlapFraction": 0,
+        "overlapSamples": 0,
+        "perPart": {}
+      },
+      {
+        "file": "52-final-rim03-normal.dom.json",
+        "seed": 1,
+        "tick": 1125,
+        "alphaWeightedOverlapFraction": 0.5019116401281658,
+        "overlapSamples": 9621,
+        "perPart": {
+          "receiver-03:front": 0.5019116401281658
+        }
+      }
+    ],
+    "existingTrajectoryScan": [
+      {
+        "seed": 0,
+        "receiver": "receiver-01",
+        "nearestNativeCenterDistance": 357.79819115011344,
+        "nearestTick": 1265,
+        "nativeCaptureRadius": 31.296085932969625,
+        "overlapTicks": null
+      },
+      {
+        "seed": 0,
+        "receiver": "receiver-02",
+        "nearestNativeCenterDistance": 80.1744379801974,
+        "nearestTick": 1245,
+        "nativeCaptureRadius": 30.637312276520895,
+        "overlapTicks": {
+          "first": 1248,
+          "last": 1281,
+          "count": 34,
+          "maxFraction": 1
+        }
+      },
+      {
+        "seed": 0,
+        "receiver": "receiver-03",
+        "nearestNativeCenterDistance": 242.81872494807502,
+        "nearestTick": 1210,
+        "nativeCaptureRadius": 31.13657495558225,
+        "overlapTicks": null
+      },
+      {
+        "seed": 0,
+        "receiver": "receiver-04",
+        "nearestNativeCenterDistance": 339.30295680060084,
+        "nearestTick": 1122,
+        "nativeCaptureRadius": 32.979948584412966,
+        "overlapTicks": null
+      },
+      {
+        "seed": 1,
+        "receiver": "receiver-01",
+        "nearestNativeCenterDistance": 473.19770057211866,
+        "nearestTick": 1036,
+        "nativeCaptureRadius": 31.296085932969625,
+        "overlapTicks": null
+      },
+      {
+        "seed": 1,
+        "receiver": "receiver-02",
+        "nearestNativeCenterDistance": 249.22016233005886,
+        "nearestTick": 1080,
+        "nativeCaptureRadius": 30.637312276520895,
+        "overlapTicks": null
+      },
+      {
+        "seed": 1,
+        "receiver": "receiver-03",
+        "nearestNativeCenterDistance": 60.90351915451554,
+        "nearestTick": 1115,
+        "nativeCaptureRadius": 31.13657495558225,
+        "overlapTicks": {
+          "first": 1120,
+          "last": 1145,
+          "count": 26,
+          "maxFraction": 1
+        }
+      },
+      {
+        "seed": 1,
+        "receiver": "receiver-04",
+        "nearestNativeCenterDistance": 306.00555582505376,
+        "nearestTick": 1135,
+        "nativeCaptureRadius": 32.979948584412966,
+        "overlapTicks": null
+      },
+      {
+        "seed": 2,
+        "receiver": "receiver-01",
+        "nearestNativeCenterDistance": 244.59066144068115,
+        "nearestTick": 1236,
+        "nativeCaptureRadius": 31.296085932969625,
+        "overlapTicks": null
+      },
+      {
+        "seed": 2,
+        "receiver": "receiver-02",
+        "nearestNativeCenterDistance": 29.76381494798731,
+        "nearestTick": 1275,
+        "nativeCaptureRadius": 30.637312276520895,
+        "overlapTicks": null
+      },
+      {
+        "seed": 2,
+        "receiver": "receiver-03",
+        "nearestNativeCenterDistance": 393.8144135650501,
+        "nearestTick": 1275,
+        "nativeCaptureRadius": 31.13657495558225,
+        "overlapTicks": null
+      },
+      {
+        "seed": 2,
+        "receiver": "receiver-04",
+        "nearestNativeCenterDistance": 682.6486326772555,
+        "nearestTick": 1275,
+        "nativeCaptureRadius": 32.979948584412966,
+        "overlapTicks": null
+      }
+    ],
+    "ownAnalysisPeakWorkingSetBytes": 85651456
+  }
+}
