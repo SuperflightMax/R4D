@@ -1,5 +1,10 @@
 # Dark Asset Artist
 
+Текущий mini03 receiver-parts:65548bytes/SHA709253ed3dd162c6b305bbb4f7be1925dace48d82ec0d7c14fc6e7c3449e812a;9PNG/19IDs/39instances. Registered native rimv1: one uniform k1.032/t[-19.048,-2],RMS2.864/max5.296texturepx; new part O/footprint/anchor по прежней общей policy,sourceOdelta≈0. Static composite inspected,actual QA pending,D01V01 не закрыт. Floorv3 прежний,D02V01 join OPEN; отдельный floorv4 repaint и skullnear native calls запущены,unknown outcome сначала по saved outputs,без повторов. Bowls v2/v3 иrimv2 nonselected raw сохранены,missingnearblock/skull/bowl/environment продолжаются. См.HANDOFF_MINI_03_RECEIVER_PARTS.md.
+
+История:
+# Dark Asset Artist
+
 Текущий отдельный mini02 floor-only:49103bytes/SHA5bad898c270432928a403def12ffbca826a94d76cb83b395708bdf12588e8545,8PNG/15IDs/35instances. Ближняя кромка nominal1120.766±3.675sourcepx при accepted1121. Все actors/receiver policy прежние, original d01 сохранён. Actual floor QA pending. Receiver dark rear-wall nuance готовится отдельно; bowls/near profiles/wall clips продолжаются. См. HANDOFF_MINI_02_FLOOR.md.
 
 История:

@@ -1,0 +1,252 @@
+{
+  "method": "Равномерная регистрация НОВОГО native rim в frame исходного full по внешним alpha>=128 contours и warm masonry landmarks; один k и2D translation, rotation0. Только metadata, PNG bytes не изменены. Никаких source/native/seed/tick fitting.",
+  "fullSha256": "bf3f2fa5143bf6180dcf44f80e711bb97094e2eefdf24c1b0dab6f6d5bd13a6b",
+  "rimSha256": "5f00b57501ec52eb879ba6219d77034bee172c3ff580d2487581cd7406b573c1",
+  "mapping": "p_rim=k*p_full+t; rimW=k*330,rimD=k*223,O_rim=k*O_full+t,hR_rim=k*hR_full,A_rim=O_rim+[0,hR_rim]. Поэтому source optical O всех3parts совпадает при обычном target-bound uniform mapping.",
+  "fit": {
+    "uniformScale": 1.032,
+    "translationTexturePx": [
+      -19.048000000000016,
+      -2.0
+    ],
+    "weightedRmsTexturePx": 2.863518336445219,
+    "maxSampledResidualTexturePx": 5.296000000000049,
+    "outerContourSamples": [
+      {
+        "fullY": 180,
+        "rimY": 184,
+        "fullEdges": [
+          169,
+          1084
+        ],
+        "rimEdges": [
+          158,
+          1096
+        ],
+        "deltaLeft": 2.6399999999999864,
+        "deltaRight": -3.6400000000001
+      },
+      {
+        "fullY": 200,
+        "rimY": 204,
+        "fullEdges": [
+          164,
+          1089
+        ],
+        "rimEdges": [
+          152,
+          1102
+        ],
+        "deltaLeft": 1.8000000000000114,
+        "deltaRight": -2.7999999999999545
+      },
+      {
+        "fullY": 225,
+        "rimY": 230,
+        "fullEdges": [
+          157,
+          1096
+        ],
+        "rimEdges": [
+          145,
+          1109
+        ],
+        "deltaLeft": 2.024000000000001,
+        "deltaRight": -3.0240000000001146
+      },
+      {
+        "fullY": 250,
+        "rimY": 256,
+        "fullEdges": [
+          151,
+          1102
+        ],
+        "rimEdges": [
+          139,
+          1116
+        ],
+        "deltaLeft": 2.216000000000008,
+        "deltaRight": -2.216000000000122
+      },
+      {
+        "fullY": 300,
+        "rimY": 308,
+        "fullEdges": [
+          154,
+          1099
+        ],
+        "rimEdges": [
+          143,
+          1111
+        ],
+        "deltaLeft": 3.1200000000000045,
+        "deltaRight": -4.120000000000118
+      },
+      {
+        "fullY": 350,
+        "rimY": 359,
+        "fullEdges": [
+          145,
+          1108
+        ],
+        "rimEdges": [
+          133,
+          1122
+        ],
+        "deltaLeft": 2.4080000000000155,
+        "deltaRight": -2.408000000000129
+      },
+      {
+        "fullY": 400,
+        "rimY": 411,
+        "fullEdges": [
+          132,
+          1121
+        ],
+        "rimEdges": [
+          118,
+          1137
+        ],
+        "deltaLeft": 0.8240000000000265,
+        "deltaRight": -0.8240000000000691
+      },
+      {
+        "fullY": 450,
+        "rimY": 462,
+        "fullEdges": [
+          118,
+          1135
+        ],
+        "rimEdges": [
+          104,
+          1152
+        ],
+        "deltaLeft": 1.2720000000000056,
+        "deltaRight": -0.2719999999999345
+      },
+      {
+        "fullY": 500,
+        "rimY": 514,
+        "fullEdges": [
+          104,
+          1150
+        ],
+        "rimEdges": [
+          90,
+          1167
+        ],
+        "deltaLeft": 1.720000000000013,
+        "deltaRight": -0.7519999999999527
+      },
+      {
+        "fullY": 550,
+        "rimY": 566,
+        "fullEdges": [
+          65,
+          1188
+        ],
+        "rimEdges": [
+          51,
+          1205
+        ],
+        "deltaLeft": 2.9680000000000177,
+        "deltaRight": -1.9680000000000746
+      },
+      {
+        "fullY": 575,
+        "rimY": 591,
+        "fullEdges": [
+          57,
+          1196
+        ],
+        "rimEdges": [
+          40,
+          1216
+        ],
+        "deltaLeft": 0.22400000000001796,
+        "deltaRight": 0.7760000000000673
+      },
+      {
+        "fullY": 600,
+        "rimY": 617,
+        "fullEdges": [
+          50,
+          1202
+        ],
+        "rimEdges": [
+          32,
+          1223
+        ],
+        "deltaLeft": -0.5519999999999854,
+        "deltaRight": 1.58400000000006
+      },
+      {
+        "fullY": 650,
+        "rimY": 669,
+        "fullEdges": [
+          40,
+          1213
+        ],
+        "rimEdges": [
+          18,
+          1237
+        ],
+        "deltaLeft": -4.231999999999985,
+        "deltaRight": 4.231999999999971
+      },
+      {
+        "fullY": 700,
+        "rimY": 720,
+        "fullEdges": [
+          40,
+          1213
+        ],
+        "rimEdges": [
+          18,
+          1236
+        ],
+        "deltaLeft": -4.231999999999985,
+        "deltaRight": 3.231999999999971
+      },
+      {
+        "fullY": 750,
+        "rimY": 772,
+        "fullEdges": [
+          42,
+          1211
+        ],
+        "rimEdges": [
+          19,
+          1236
+        ],
+        "deltaLeft": -5.295999999999985,
+        "deltaRight": 5.296000000000049
+      }
+    ],
+    "verticalLandmarks": [
+      {
+        "fullY": 164,
+        "rimY": 163,
+        "residual": -4.2479999999999905
+      },
+      {
+        "fullY": 251,
+        "rimY": 258,
+        "residual": 0.9680000000000177
+      }
+    ],
+    "opticalOpeningPointPx": [
+      628.532,
+      452.08000000000004
+    ],
+    "captureProxyWidthPx": 340.56,
+    "captureProxyDepthPx": 230.136
+  },
+  "limitations": [
+    "Новый рисунок не точная uniform copy: residual/uncertainty сохраняются; нет pixel identity или recovered3D.",
+    "Нативный rimv2 изменил composition ещё сильнее, сохранён как nonselected, не подменяет v1.",
+    "Source registration/pixel/legitimate wall partial occlusion требуют actual QA."
+  ],
+  "actualQa": false,
+  "pngMutation": false
+}

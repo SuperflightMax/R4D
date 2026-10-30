@@ -1,0 +1,9 @@
+param([double]$Ratio=.57,[string]$Name='bowl-guide-mid-v2')
+$ErrorActionPreference='Stop';$taskRuntime='E:/R4D/perspective/p5-runtime/asset-artist/transfer-water-dark/dark';$env:TEMP=Join-Path $taskRuntime 'temp';$env:TMP=$env:TEMP
+Add-Type -AssemblyName System.Drawing
+$taskOut=Join-Path $taskRuntime ('refs/'+$Name+'.png');if(Test-Path $taskOut){throw 'Preserve previous guide'}
+$taskBmp=[Drawing.Bitmap]::new(1254,1254);$taskG=[Drawing.Graphics]::FromImage($taskBmp);$taskPen=[Drawing.Pen]::new([Drawing.Color]::DimGray,4);$taskBlue=[Drawing.Pen]::new([Drawing.Color]::RoyalBlue,4)
+try{$taskG.Clear([Drawing.Color]::White);$taskG.SmoothingMode='AntiAlias';$taskW=650;$taskD=650*$Ratio;$taskX=302;$taskY=950;$taskH=80
+ $taskP=[Drawing.Drawing2D.GraphicsPath]::new();$taskP.AddArc($taskX,($taskY-$taskH-$taskD/2),$taskW,$taskD,0,180);$taskP.AddLine($taskX,($taskY-$taskH),$taskX,$taskY);$taskP.AddArc($taskX,($taskY-$taskD/2),$taskW,$taskD,180,-180);$taskP.CloseFigure();$taskG.FillPath([Drawing.Brushes]::DarkGray,$taskP);$taskG.FillEllipse([Drawing.Brushes]::LightGray,$taskX,($taskY-$taskH-$taskD/2),$taskW,$taskD);$taskG.DrawEllipse($taskPen,$taskX,($taskY-$taskH-$taskD/2),$taskW,$taskD);$taskG.DrawArc($taskPen,$taskX,($taskY-$taskD/2),$taskW,$taskD,0,180);$taskG.DrawEllipse($taskBlue,$taskX,($taskY-$taskD/2),$taskW,$taskD);$taskP.Dispose();$taskBmp.Save($taskOut,[Drawing.Imaging.ImageFormat]::Png)
+ [ordered]@{usage='Diagnostic cylinder geometry only, never final/selected bitmap';file=$taskOut;sizePx=@(1254,1254);groundAnchorPx=@(627,950);footprintWidthPx=650;footprintDepthPx=$taskD;ratio=$Ratio;baseHeightPx=80;sha256=(Get-FileHash $taskOut -Algorithm SHA256).Hash.ToLowerInvariant();bytes=(Get-Item $taskOut).Length}|ConvertTo-Json
+}finally{$taskBlue.Dispose();$taskPen.Dispose();$taskG.Dispose();$taskBmp.Dispose()}
