@@ -1,0 +1,23 @@
+{
+  "board": "water",
+  "id": "w04",
+  "kind": "generated-board",
+  "baseline": true,
+  "label": "Вода · исходный вариант w04",
+  "stageLabel": "Частичный набор · независимая проверка идёт",
+  "summary": "Собраны 9 из 21 групп препятствий и четыре корзины. Это исходный вариант для сравнения с последующими исправлениями.",
+  "limitations": [
+    "Пока отсутствуют пять лягушек, семь ворот и необходимые части окружения.",
+    "При входе в корзину 2 шар на короткое время скрывается раньше нужного.",
+    "У отдельных ворот ещё уточняются основание и перекрытие. Итог переноса не подведён."
+  ],
+  "technicalNotes": [
+    "Original whole-gate arch07 baseline. Depth residual −6.408 source px; anchor uncertainty ±2.936 px.",
+    "W04-B01: receiver02 hidden at1273/1274, visible at1275. Independent TQA/VQA of exactw04 pending at capture.",
+    "W01-V01 framing CLOSED onw02 per VQA9cd09281e27404a526fe25b387a23d34467024d5 (Lead-provided status).",
+    "9 uniquePNG /15textureIDs /30instances; FullArt/Water/P5PASS=false. ActiveWater04/trial02 only."
+  ],
+  "fileIndex": "E:/R4D/perspective/p5-runtime/builder/transfer-water-dark/water/output/previews/w04/FILE_INDEX.json",
+  "indexBytes": 6632,
+  "indexSha256": "c1c983dbddaaf556c5000dc9463df262fdc38444b2826a5883a2800b78b70554"
+}
