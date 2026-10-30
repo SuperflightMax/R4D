@@ -1,0 +1,151 @@
+{
+  "url": "http://127.0.0.1:4398/",
+  "viewport": {
+    "dpr": 1,
+    "height": 720,
+    "width": 1280
+  },
+  "canvas": {
+    "height": 590,
+    "width": 840,
+    "x": 17,
+    "y": 103.5
+  },
+  "controls": [
+    {
+      "checked": false,
+      "id": "seed",
+      "value": "0"
+    },
+    {
+      "checked": false,
+      "id": "count",
+      "value": "10"
+    },
+    {
+      "checked": false,
+      "id": "seek",
+      "value": "699"
+    },
+    {
+      "checked": false,
+      "id": "tick-input",
+      "value": "699"
+    },
+    {
+      "checked": true,
+      "id": "art",
+      "value": "on"
+    },
+    {
+      "checked": false,
+      "id": "geometry",
+      "value": "on"
+    },
+    {
+      "checked": true,
+      "id": "showParts",
+      "value": "on"
+    },
+    {
+      "checked": false,
+      "id": "diagnosticBall",
+      "value": "on"
+    },
+    {
+      "checked": false,
+      "id": "view",
+      "value": "source"
+    },
+    {
+      "checked": false,
+      "id": "zoom",
+      "value": "2"
+    },
+    {
+      "checked": true,
+      "id": "followBall",
+      "value": "on"
+    },
+    {
+      "checked": false,
+      "id": "import",
+      "value": ""
+    }
+  ],
+  "rawJsonSha256": {
+    "state": "40b4c5b593396dfd90ea50d164c2feeed100f0754d54a6beee64eaf489bd6357",
+    "events": "cb6527a2a73baec156f528acad94c227e47c50770602e1f5de02cfb1b475ccce",
+    "depth": "9216f0f66c0589c1cc06965dadc0300006af1e8e2029473ae756925f1747a254",
+    "versions": "6909068971c610fb5284ed40b58557a3b1aab0eb71b4084c75ddb8c6966f19a3"
+  },
+  "seed": 0,
+  "tick": 699,
+  "actor": {
+    "center": {
+      "x": 798.6269933422238,
+      "y": 616.8477850381893
+    },
+    "radius": 15.835706662327338,
+    "bodyScale": 0.15835706662327337,
+    "shadowCenter": {
+      "x": 783.5830720130128,
+      "y": 630.4664927677908
+    },
+    "shadowScale": [
+      0.24545345326607376,
+      0.3532580716980714
+    ],
+    "shadowOpacity": 0.65,
+    "rendered": {
+      "body": {
+        "position": {
+          "x": 798.6269933422238,
+          "y": 616.8477850381893
+        },
+        "pivot": {
+          "x": 128,
+          "y": 128.5
+        },
+        "scale": {
+          "x": 0.15835706662327337,
+          "y": 0.15835706662327337
+        },
+        "sourceVisible": true,
+        "flatVisible": false,
+        "sourceAlpha": 1,
+        "flatAlpha": 1,
+        "textureAlphaMode": "premultiply-alpha-on-upload"
+      },
+      "shadow": {
+        "position": {
+          "x": 783.5830720130128,
+          "y": 630.4664927677908
+        },
+        "pivot": {
+          "x": 128,
+          "y": 128
+        },
+        "scale": {
+          "x": 0.24545345326607376,
+          "y": 0.3532580716980714
+        },
+        "sourceVisible": true,
+        "flatVisible": false,
+        "sourceAlpha": 0.65,
+        "flatAlpha": 0.65,
+        "textureAlphaMode": "premultiply-alpha-on-upload"
+      },
+      "groundAlpha": 1,
+      "artRootAlpha": 1,
+      "worldAlpha": 1,
+      "stageAlpha": 1,
+      "artVisible": true,
+      "fitScale": 0.7473958333333334,
+      "viewport": {
+        "width": 840,
+        "height": 590
+      }
+    }
+  }
+}

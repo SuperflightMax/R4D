@@ -1,0 +1,143 @@
+[
+  {
+    "type": "run_started",
+    "tick": 0,
+    "timeSec": 0,
+    "dropId": "board04-start",
+    "ballId": "board04-ball"
+  },
+  {
+    "type": "ball_spawned",
+    "tick": 0,
+    "timeSec": 0,
+    "dropId": "board04-start",
+    "ballId": "board04-ball",
+    "x": 33192.751665295094,
+    "y": 33184.49424667716,
+    "vx": 0,
+    "vy": 0
+  },
+  {
+    "type": "object_hit",
+    "tick": 105,
+    "timeSec": 0.525,
+    "ballId": "board04-ball",
+    "objectKind": "pin",
+    "objectId": "frog-01",
+    "x": 33192.11967597988,
+    "y": 33323.23856279813
+  },
+  {
+    "type": "object_hit",
+    "tick": 316,
+    "timeSec": 1.58,
+    "ballId": "board04-ball",
+    "objectKind": "pin",
+    "objectId": "frog-04",
+    "x": 32897.54213693357,
+    "y": 34320.8716337025
+  },
+  {
+    "type": "object_hit",
+    "tick": 358,
+    "timeSec": 1.79,
+    "ballId": "board04-ball",
+    "objectKind": "segment",
+    "objectId": "left-4",
+    "x": 32689.28700116048,
+    "y": 34177.65152657994
+  },
+  {
+    "type": "object_hit",
+    "tick": 373,
+    "timeSec": 1.865,
+    "ballId": "board04-ball",
+    "objectKind": "segment",
+    "objectId": "arch-03-left-foot:edge-03",
+    "x": 32745.811391857766,
+    "y": 34132.29506455448
+  },
+  {
+    "type": "object_hit",
+    "tick": 394,
+    "timeSec": 1.97,
+    "ballId": "board04-ball",
+    "objectKind": "segment",
+    "objectId": "left-4",
+    "x": 32690.41076019458,
+    "y": 34196.15980475339
+  },
+  {
+    "type": "object_hit",
+    "tick": 511,
+    "timeSec": 2.555,
+    "ballId": "board04-ball",
+    "objectKind": "segment",
+    "objectId": "arch-07-left-foot:edge-01",
+    "x": 32978.808260497,
+    "y": 34715.69570870755
+  },
+  {
+    "type": "object_hit",
+    "tick": 563,
+    "timeSec": 2.815,
+    "ballId": "board04-ball",
+    "objectKind": "segment",
+    "objectId": "pillar-07:edge-03",
+    "x": 33103.2717424765,
+    "y": 34503.07778659338
+  },
+  {
+    "type": "object_hit",
+    "tick": 611,
+    "timeSec": 3.055,
+    "ballId": "board04-ball",
+    "objectKind": "pin",
+    "objectId": "frog-06",
+    "x": 33215.59175884662,
+    "y": 34663.66879552084
+  },
+  {
+    "type": "object_hit",
+    "tick": 807,
+    "timeSec": 4.035,
+    "ballId": "board04-ball",
+    "objectKind": "segment",
+    "objectId": "left-5",
+    "x": 32709.542509588697,
+    "y": 34595.78492920822
+  },
+  {
+    "type": "object_hit",
+    "tick": 901,
+    "timeSec": 4.505,
+    "ballId": "board04-ball",
+    "objectKind": "segment",
+    "objectId": "near-divider-1",
+    "x": 32891.43928694917,
+    "y": 34912.24778843594
+  },
+  {
+    "type": "ball_finished",
+    "tick": 1100,
+    "timeSec": 5.5,
+    "ballId": "board04-ball",
+    "result": {
+      "kind": "LOST",
+      "finalX": 32096.5552585,
+      "nearMissBucketIds": []
+    }
+  },
+  {
+    "type": "run_finished",
+    "tick": 1100,
+    "timeSec": 5.5,
+    "dropId": "board04-start",
+    "ballId": "board04-ball",
+    "result": {
+      "kind": "LOST",
+      "finalX": 32096.5552585,
+      "nearMissBucketIds": []
+    }
+  }
+]

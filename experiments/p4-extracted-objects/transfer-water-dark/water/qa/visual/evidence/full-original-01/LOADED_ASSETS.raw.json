@@ -1,0 +1,719 @@
+[
+  {
+    "file": "background.png",
+    "width": 1536,
+    "height": 1536,
+    "role": "background"
+  },
+  {
+    "id": "arch-01:ground-shadow",
+    "file": "arch-01-ground-shadow.png",
+    "sha256": "8596013e06bb512cd5bee060d4915ea259864828cd3079b0ca72bf419b01d4df",
+    "width": 171,
+    "height": 159,
+    "role": "ground-shadow",
+    "alpha": "straight, Pixi upload once"
+  },
+  {
+    "id": "arch-01:left-support",
+    "file": "arch-01-left-support.png",
+    "sha256": "d491b1b7db0157913ac2ff942e88debdfa8fe3c099bc0d94ed11a71676489950",
+    "width": 171,
+    "height": 159,
+    "role": "body",
+    "alpha": "straight, Pixi upload once"
+  },
+  {
+    "id": "arch-01:right-support",
+    "file": "arch-01-right-support.png",
+    "sha256": "fe1d92564543159add423b06bae43b657f5bd82a8305abc32c8847335f18452a",
+    "width": 171,
+    "height": 159,
+    "role": "body",
+    "alpha": "straight, Pixi upload once"
+  },
+  {
+    "id": "arch-01:lintel",
+    "file": "arch-01-lintel.png",
+    "sha256": "d0b686cd4548677f18d3aff706ded326f1b1fc814513545b5b0cd532ed85a765",
+    "width": 171,
+    "height": 159,
+    "role": "body",
+    "alpha": "straight, Pixi upload once"
+  },
+  {
+    "id": "arch-02:ground-shadow",
+    "file": "arch-02-ground-shadow.png",
+    "sha256": "65a7a62b4ae90d79b76e353d9ef34675820ecbe1387db6befa62a9f051beacab",
+    "width": 175,
+    "height": 161,
+    "role": "ground-shadow",
+    "alpha": "straight, Pixi upload once"
+  },
+  {
+    "id": "arch-02:left-support",
+    "file": "arch-02-left-support.png",
+    "sha256": "5f9a4d760171169a19a9e918516c756535baa3e8bc06df0a50c4b81dd5011c3e",
+    "width": 175,
+    "height": 161,
+    "role": "body",
+    "alpha": "straight, Pixi upload once"
+  },
+  {
+    "id": "arch-02:right-support",
+    "file": "arch-02-right-support.png",
+    "sha256": "90bbfcd26ab20c15cacc2390d6e0cd67d633d8cf6586a934af3a0e904c347efa",
+    "width": 175,
+    "height": 161,
+    "role": "body",
+    "alpha": "straight, Pixi upload once"
+  },
+  {
+    "id": "arch-02:lintel",
+    "file": "arch-02-lintel.png",
+    "sha256": "338ce08f31e42782b4e1977acced8181852d3a7063d0ac4139284c262efdc0a0",
+    "width": 175,
+    "height": 161,
+    "role": "body",
+    "alpha": "straight, Pixi upload once"
+  },
+  {
+    "id": "arch-03:ground-shadow",
+    "file": "arch-03-ground-shadow.png",
+    "sha256": "a4cebb786527f0c116a673b8b7acbbdb80f246ea64a180a3cb6047887987373c",
+    "width": 193,
+    "height": 176,
+    "role": "ground-shadow",
+    "alpha": "straight, Pixi upload once"
+  },
+  {
+    "id": "arch-03:left-support",
+    "file": "arch-03-left-support.png",
+    "sha256": "f31237ee8003d8913a3208718e43889eb9ad997a4d788c39d5cb1566f92434bf",
+    "width": 193,
+    "height": 176,
+    "role": "body",
+    "alpha": "straight, Pixi upload once"
+  },
+  {
+    "id": "arch-03:right-support",
+    "file": "arch-03-right-support.png",
+    "sha256": "b3779e7002c8325d23204219fc8e7fd1417c2d31f13de0d21e9fa4a6f5293274",
+    "width": 193,
+    "height": 176,
+    "role": "body",
+    "alpha": "straight, Pixi upload once"
+  },
+  {
+    "id": "arch-03:lintel",
+    "file": "arch-03-lintel.png",
+    "sha256": "496225968a7ce26844af05667282d6b414e38e479576f137abe26ac67d8d925e",
+    "width": 193,
+    "height": 176,
+    "role": "body",
+    "alpha": "straight, Pixi upload once"
+  },
+  {
+    "id": "arch-04:ground-shadow",
+    "file": "arch-04-ground-shadow.png",
+    "sha256": "d9902dfd9aacce89ab01831e03d2acd7b23322d70e642fb127280f0376b4c571",
+    "width": 197,
+    "height": 185,
+    "role": "ground-shadow",
+    "alpha": "straight, Pixi upload once"
+  },
+  {
+    "id": "arch-04:left-support",
+    "file": "arch-04-left-support.png",
+    "sha256": "173652073ffda979034a2ba08ea355dd5e2252b3168aecab692b7e2df897831c",
+    "width": 197,
+    "height": 185,
+    "role": "body",
+    "alpha": "straight, Pixi upload once"
+  },
+  {
+    "id": "arch-04:right-support",
+    "file": "arch-04-right-support.png",
+    "sha256": "1bd0bccaf07d13eb9d95403ee94383a403981ebb9b0677867dcd6e6f0209ec7a",
+    "width": 197,
+    "height": 185,
+    "role": "body",
+    "alpha": "straight, Pixi upload once"
+  },
+  {
+    "id": "arch-04:lintel",
+    "file": "arch-04-lintel.png",
+    "sha256": "c32c3881fd5919d06aed94ae34bc42dfb82480dcdc91d7b6b7ae64ae08807494",
+    "width": 197,
+    "height": 185,
+    "role": "body",
+    "alpha": "straight, Pixi upload once"
+  },
+  {
+    "id": "arch-05:ground-shadow",
+    "file": "arch-05-ground-shadow.png",
+    "sha256": "bede35cd569fdb2987a313d9f642c2542de10c517c1a21d70cac7515a6c73146",
+    "width": 199,
+    "height": 189,
+    "role": "ground-shadow",
+    "alpha": "straight, Pixi upload once"
+  },
+  {
+    "id": "arch-05:left-support",
+    "file": "arch-05-left-support.png",
+    "sha256": "e505e384cf7cc82c5750dc3fe3c5c20cc5ad8536fa1329fcd1aaba223aef9d39",
+    "width": 199,
+    "height": 189,
+    "role": "body",
+    "alpha": "straight, Pixi upload once"
+  },
+  {
+    "id": "arch-05:right-support",
+    "file": "arch-05-right-support.png",
+    "sha256": "0471c264298a28c378a24b4e1349c245e5cb5778fb98b625dc6f7158bff45f59",
+    "width": 199,
+    "height": 189,
+    "role": "body",
+    "alpha": "straight, Pixi upload once"
+  },
+  {
+    "id": "arch-05:lintel",
+    "file": "arch-05-lintel.png",
+    "sha256": "2de972f52c79011a15db07521bf362299d51d89d1e0fe76a6a760bc2c3d366c6",
+    "width": 199,
+    "height": 189,
+    "role": "body",
+    "alpha": "straight, Pixi upload once"
+  },
+  {
+    "id": "arch-06:ground-shadow",
+    "file": "arch-06-ground-shadow.png",
+    "sha256": "8f9c4f1273f989591caf668064ba824c0865e5316f89318c3054ef3faf996be2",
+    "width": 203,
+    "height": 185,
+    "role": "ground-shadow",
+    "alpha": "straight, Pixi upload once"
+  },
+  {
+    "id": "arch-06:left-support",
+    "file": "arch-06-left-support.png",
+    "sha256": "f1cb9f19b4630c55a017016fa040ce81f6371e0b950b775e0077049bdf73ab34",
+    "width": 203,
+    "height": 185,
+    "role": "body",
+    "alpha": "straight, Pixi upload once"
+  },
+  {
+    "id": "arch-06:right-support",
+    "file": "arch-06-right-support.png",
+    "sha256": "934c46b81c1b11517d6e3a8562b1e31a9c2234d0ce3a30c033dcf9200da3e4ff",
+    "width": 203,
+    "height": 185,
+    "role": "body",
+    "alpha": "straight, Pixi upload once"
+  },
+  {
+    "id": "arch-06:lintel",
+    "file": "arch-06-lintel.png",
+    "sha256": "cc21f70e436ac7149c09e535d59c983870bc7be19f36ec8ea8f526b5762997a8",
+    "width": 203,
+    "height": 185,
+    "role": "body",
+    "alpha": "straight, Pixi upload once"
+  },
+  {
+    "id": "arch-07:ground-shadow",
+    "file": "arch-07-ground-shadow.png",
+    "sha256": "7b126189f884b4491acb5f07c46a69af44761272b5e2463ce58e7fcc9cd5d2db",
+    "width": 219,
+    "height": 201,
+    "role": "ground-shadow",
+    "alpha": "straight, Pixi upload once"
+  },
+  {
+    "id": "arch-07:left-support",
+    "file": "arch-07-left-support.png",
+    "sha256": "c48195e14720005f831bb30da587354bdb5f34c96c9d2fc830bfd47d428c45a4",
+    "width": 219,
+    "height": 201,
+    "role": "body",
+    "alpha": "straight, Pixi upload once"
+  },
+  {
+    "id": "arch-07:right-support",
+    "file": "arch-07-right-support.png",
+    "sha256": "61d87fefaddd00fc000e4f9d10ab959067457ac2f8bebd3e0fca2836b272c9b2",
+    "width": 219,
+    "height": 201,
+    "role": "body",
+    "alpha": "straight, Pixi upload once"
+  },
+  {
+    "id": "arch-07:lintel",
+    "file": "arch-07-lintel.png",
+    "sha256": "a133acbadede2c1b90073fde3c516beb6dbf2d63cf520a4bba62fe237cae08f7",
+    "width": 219,
+    "height": 201,
+    "role": "body",
+    "alpha": "straight, Pixi upload once"
+  },
+  {
+    "id": "arch-08:ground-shadow",
+    "file": "arch-08-ground-shadow.png",
+    "sha256": "23084a53d1c8a0b748e938dae46bd827a6bb07cb3a57eee249e96dff04c9d21d",
+    "width": 219,
+    "height": 200,
+    "role": "ground-shadow",
+    "alpha": "straight, Pixi upload once"
+  },
+  {
+    "id": "arch-08:left-support",
+    "file": "arch-08-left-support.png",
+    "sha256": "aaf17dcc13b7eb6de47e3db52aeefe8fce8daf1ff4142bf33b6d78cade7e9207",
+    "width": 219,
+    "height": 200,
+    "role": "body",
+    "alpha": "straight, Pixi upload once"
+  },
+  {
+    "id": "arch-08:right-support",
+    "file": "arch-08-right-support.png",
+    "sha256": "af070b5ffa239fe3e6f1e9dbcc8cd381e5038fa4982508f0944e7ccea3fd91f5",
+    "width": 219,
+    "height": 200,
+    "role": "body",
+    "alpha": "straight, Pixi upload once"
+  },
+  {
+    "id": "arch-08:lintel",
+    "file": "arch-08-lintel.png",
+    "sha256": "519fac3a54cf2e1b21c8006618d21e605d39efee2b0ff0c85415907f782dfc6a",
+    "width": 219,
+    "height": 200,
+    "role": "body",
+    "alpha": "straight, Pixi upload once"
+  },
+  {
+    "id": "frog-01:ground-shadow",
+    "file": "frog-01-ground-shadow.png",
+    "sha256": "17c73133f9de54dd5f74d9474f2d748e5a657886475d3ab8694e318e0d08324a",
+    "width": 175,
+    "height": 163,
+    "role": "ground-shadow",
+    "alpha": "straight, Pixi upload once"
+  },
+  {
+    "id": "frog-01:body",
+    "file": "frog-01-body.png",
+    "sha256": "97b1c7449f7d5224413826dca0a1b5afccb28b1ccab54283c18a01c9f8276bb4",
+    "width": 175,
+    "height": 163,
+    "role": "body",
+    "alpha": "straight, Pixi upload once"
+  },
+  {
+    "id": "frog-02:ground-shadow",
+    "file": "frog-02-ground-shadow.png",
+    "sha256": "094fcb262ba922f7e92adbbac1b9cf5e98e7f778379261d1467072ffebeba6f7",
+    "width": 178,
+    "height": 158,
+    "role": "ground-shadow",
+    "alpha": "straight, Pixi upload once"
+  },
+  {
+    "id": "frog-02:body",
+    "file": "frog-02-body.png",
+    "sha256": "aeac1d62e0d3a3c85fb8e6b0690019cad300212ff49ee7d536621eb9d005ad58",
+    "width": 178,
+    "height": 158,
+    "role": "body",
+    "alpha": "straight, Pixi upload once"
+  },
+  {
+    "id": "frog-03:ground-shadow",
+    "file": "frog-03-ground-shadow.png",
+    "sha256": "558bebd5c6bebdcfe94049bf6af9281c72ed6040d9b4359cd885326326d31304",
+    "width": 175,
+    "height": 161,
+    "role": "ground-shadow",
+    "alpha": "straight, Pixi upload once"
+  },
+  {
+    "id": "frog-03:body",
+    "file": "frog-03-body.png",
+    "sha256": "eaf30fb051bfe418f2d854b0a4d6b9bcf53e341104630a7f00e0557160b63b94",
+    "width": 175,
+    "height": 161,
+    "role": "body",
+    "alpha": "straight, Pixi upload once"
+  },
+  {
+    "id": "frog-04:ground-shadow",
+    "file": "frog-04-ground-shadow.png",
+    "sha256": "9965dde08acbb023dcf21587f2f73da5c6aeb9e916f87dc5d57ec25fb377c029",
+    "width": 191,
+    "height": 178,
+    "role": "ground-shadow",
+    "alpha": "straight, Pixi upload once"
+  },
+  {
+    "id": "frog-04:body",
+    "file": "frog-04-body.png",
+    "sha256": "5d49a9be2263c0ef82106cfa288bcbbb9f420a429ecc461b823f5e5e2888d086",
+    "width": 191,
+    "height": 178,
+    "role": "body",
+    "alpha": "straight, Pixi upload once"
+  },
+  {
+    "id": "frog-05:ground-shadow",
+    "file": "frog-05-ground-shadow.png",
+    "sha256": "cc2dfe571056a367eddaa3c64a364e18aa1054d70f722c1711f084df1ccb4c3d",
+    "width": 191,
+    "height": 183,
+    "role": "ground-shadow",
+    "alpha": "straight, Pixi upload once"
+  },
+  {
+    "id": "frog-05:body",
+    "file": "frog-05-body.png",
+    "sha256": "2aafa9e53ca4f0d0a182308a728c3632d28d44c7eeeca9c4519c63aae42d7a8b",
+    "width": 191,
+    "height": 183,
+    "role": "body",
+    "alpha": "straight, Pixi upload once"
+  },
+  {
+    "id": "frog-06:ground-shadow",
+    "file": "frog-06-ground-shadow.png",
+    "sha256": "0d2f4db990df660fa3e87d8f3bd41e6907c449b78f4e8dd4db4964c41b6e2dd4",
+    "width": 203,
+    "height": 192,
+    "role": "ground-shadow",
+    "alpha": "straight, Pixi upload once"
+  },
+  {
+    "id": "frog-06:body",
+    "file": "frog-06-body.png",
+    "sha256": "ee3e39230f14f861463db6585ed892cf7491313fd3b93083bf6886e068faa1c9",
+    "width": 203,
+    "height": 192,
+    "role": "body",
+    "alpha": "straight, Pixi upload once"
+  },
+  {
+    "id": "pillar-01:ground-shadow",
+    "file": "pillar-01-ground-shadow.png",
+    "sha256": "121d5ad5ee645147def00332398d4931b7b31404b13b7734c4ceacdf9f316efc",
+    "width": 143,
+    "height": 168,
+    "role": "ground-shadow",
+    "alpha": "straight, Pixi upload once"
+  },
+  {
+    "id": "pillar-01:body",
+    "file": "pillar-01-body.png",
+    "sha256": "3d5298f8442c5a7ee1dd6c3ad41b324a6e6a9968891dba0db84e9f8801fd1e21",
+    "width": 143,
+    "height": 168,
+    "role": "body",
+    "alpha": "straight, Pixi upload once"
+  },
+  {
+    "id": "pillar-02:ground-shadow",
+    "file": "pillar-02-ground-shadow.png",
+    "sha256": "b829d66c68c31f8ad387cbaa8c76a819663d70f12f4a51576f9aa478a458cd83",
+    "width": 140,
+    "height": 168,
+    "role": "ground-shadow",
+    "alpha": "straight, Pixi upload once"
+  },
+  {
+    "id": "pillar-02:body",
+    "file": "pillar-02-body.png",
+    "sha256": "7940491253726c0149c370f9496fa362b3bec11d26813e41c1484aca43f5bd56",
+    "width": 140,
+    "height": 168,
+    "role": "body",
+    "alpha": "straight, Pixi upload once"
+  },
+  {
+    "id": "pillar-03:ground-shadow",
+    "file": "pillar-03-ground-shadow.png",
+    "sha256": "4a19bfa9a018a120bad285381cdee4fd107ee93fbba5205f4f8f70830afefc9c",
+    "width": 144,
+    "height": 181,
+    "role": "ground-shadow",
+    "alpha": "straight, Pixi upload once"
+  },
+  {
+    "id": "pillar-03:body",
+    "file": "pillar-03-body.png",
+    "sha256": "1ea4616c7ab72db1696d8ccabdf5249a8a91cafeef9ea827b21e5ce03958aa1e",
+    "width": 144,
+    "height": 181,
+    "role": "body",
+    "alpha": "straight, Pixi upload once"
+  },
+  {
+    "id": "pillar-04:ground-shadow",
+    "file": "pillar-04-ground-shadow.png",
+    "sha256": "0875fce57ab8f307eb16239cdeb6eba48ac77ae5367e238fbddaeafeb9d56a3b",
+    "width": 143,
+    "height": 182,
+    "role": "ground-shadow",
+    "alpha": "straight, Pixi upload once"
+  },
+  {
+    "id": "pillar-04:body",
+    "file": "pillar-04-body.png",
+    "sha256": "0d34a77705b24c8ce1491771a2b74863d7989000a64f63a4b44d2624aaa43acb",
+    "width": 143,
+    "height": 182,
+    "role": "body",
+    "alpha": "straight, Pixi upload once"
+  },
+  {
+    "id": "pillar-05:ground-shadow",
+    "file": "pillar-05-ground-shadow.png",
+    "sha256": "21f62136dddae26e7ea98f41fb0db04839ee3d0fe3f0c530bad2d08e18e9bbc1",
+    "width": 151,
+    "height": 192,
+    "role": "ground-shadow",
+    "alpha": "straight, Pixi upload once"
+  },
+  {
+    "id": "pillar-05:body",
+    "file": "pillar-05-body.png",
+    "sha256": "781e845384175b22023e43b5a5f2772db7245003e608af1c80a4c80f3ed60c87",
+    "width": 151,
+    "height": 192,
+    "role": "body",
+    "alpha": "straight, Pixi upload once"
+  },
+  {
+    "id": "pillar-06:ground-shadow",
+    "file": "pillar-06-ground-shadow.png",
+    "sha256": "b9469ef307031647749107b86ccdeb5e038c8c7035dcd8ed6debf7f532e1c87d",
+    "width": 152,
+    "height": 192,
+    "role": "ground-shadow",
+    "alpha": "straight, Pixi upload once"
+  },
+  {
+    "id": "pillar-06:body",
+    "file": "pillar-06-body.png",
+    "sha256": "9ab5cec6ce0b6b7fe0d2414feaa14d859d93b038fa98e03435f0bc1b7478866a",
+    "width": 152,
+    "height": 192,
+    "role": "body",
+    "alpha": "straight, Pixi upload once"
+  },
+  {
+    "id": "pillar-07:ground-shadow",
+    "file": "pillar-07-ground-shadow.png",
+    "sha256": "303b41b69309814016e38a311e13ff7523609481daba439c6bfbb8dc5d3a6375",
+    "width": 162,
+    "height": 200,
+    "role": "ground-shadow",
+    "alpha": "straight, Pixi upload once"
+  },
+  {
+    "id": "pillar-07:body",
+    "file": "pillar-07-body.png",
+    "sha256": "6545d305e641c4119b656e99835157e1f2cf8057038e071b80ed3eee74770c17",
+    "width": 162,
+    "height": 200,
+    "role": "body",
+    "alpha": "straight, Pixi upload once"
+  },
+  {
+    "id": "receiver-01:ground-shadow",
+    "file": "receiver-01-ground-shadow.png",
+    "sha256": "59943069b8ec626db84a79e6700ecdd07bf79d523529f4837930f536ac49668f",
+    "width": 431,
+    "height": 469,
+    "role": "ground-shadow",
+    "alpha": "straight, Pixi upload once"
+  },
+  {
+    "id": "receiver-01:rear",
+    "file": "receiver-01-rear.png",
+    "sha256": "db74d735057fb89864a54e2ba50316a456ba6235f50f59e5f69e78309bc4339a",
+    "width": 431,
+    "height": 469,
+    "role": "body",
+    "alpha": "straight, Pixi upload once"
+  },
+  {
+    "id": "receiver-01:front",
+    "file": "receiver-01-front.png",
+    "sha256": "179a1c190f8e9777eac87420df362afaddd8deab107748c09d5ce74485b01494",
+    "width": 431,
+    "height": 469,
+    "role": "foreground",
+    "alpha": "straight, Pixi upload once"
+  },
+  {
+    "id": "receiver-02:ground-shadow",
+    "file": "receiver-02-ground-shadow.png",
+    "sha256": "f1525d350f82569f0d33448adf3159515f5bfb4c6c53ad55b424d760105961be",
+    "width": 391,
+    "height": 469,
+    "role": "ground-shadow",
+    "alpha": "straight, Pixi upload once"
+  },
+  {
+    "id": "receiver-02:rear",
+    "file": "receiver-02-rear.png",
+    "sha256": "af47d6f04922d30c0209913ede42cd3e966ddf82a4aa0757a221784119108ef7",
+    "width": 391,
+    "height": 469,
+    "role": "body",
+    "alpha": "straight, Pixi upload once"
+  },
+  {
+    "id": "receiver-02:front",
+    "file": "receiver-02-front.png",
+    "sha256": "1e491d7e20442e18d4ec662502c557d78aa72bb563d77ff8e01710e1c019f41c",
+    "width": 391,
+    "height": 469,
+    "role": "foreground",
+    "alpha": "straight, Pixi upload once"
+  },
+  {
+    "id": "receiver-03:ground-shadow",
+    "file": "receiver-03-ground-shadow.png",
+    "sha256": "6603cc3e67e3a1a52467340eb42b6573030bc12153da57c294af7dcdcef6dc85",
+    "width": 380,
+    "height": 464,
+    "role": "ground-shadow",
+    "alpha": "straight, Pixi upload once"
+  },
+  {
+    "id": "receiver-03:rear",
+    "file": "receiver-03-rear.png",
+    "sha256": "fab86c8a984296196af07c433413a524cfd9940ae3c3d7d7ba994258b4863574",
+    "width": 380,
+    "height": 464,
+    "role": "body",
+    "alpha": "straight, Pixi upload once"
+  },
+  {
+    "id": "receiver-03:front",
+    "file": "receiver-03-front.png",
+    "sha256": "e1b8bf8910a6f86a132cfa633133483b19c10d1ba4ae78a898c31c53d8320cf2",
+    "width": 380,
+    "height": 464,
+    "role": "foreground",
+    "alpha": "straight, Pixi upload once"
+  },
+  {
+    "id": "receiver-04:ground-shadow",
+    "file": "receiver-04-ground-shadow.png",
+    "sha256": "43eef3a9a5759c8b33f8a8eabcfacfe4bf440b94672d5b18d5a0d9f16ace387b",
+    "width": 390,
+    "height": 471,
+    "role": "ground-shadow",
+    "alpha": "straight, Pixi upload once"
+  },
+  {
+    "id": "receiver-04:rear",
+    "file": "receiver-04-rear.png",
+    "sha256": "8f3380605597da7ff9d4cccd82c260e935f35c6386ecb7bda11b15d82061902e",
+    "width": 390,
+    "height": 471,
+    "role": "body",
+    "alpha": "straight, Pixi upload once"
+  },
+  {
+    "id": "receiver-04:front",
+    "file": "receiver-04-front.png",
+    "sha256": "795ccf53cf792f8f8c7b8c330dff2119584ef64f6a536887c0e6a47bca397b57",
+    "width": 390,
+    "height": 471,
+    "role": "foreground",
+    "alpha": "straight, Pixi upload once"
+  },
+  {
+    "id": "outer-left:foreground",
+    "file": "outer-left-foreground.png",
+    "sha256": "61f679fafc53e8b70f99b11039c7524dda2d653359f6bdf45570a33f384deac6",
+    "width": 350,
+    "height": 938,
+    "role": "foreground",
+    "alpha": "straight, Pixi upload once"
+  },
+  {
+    "id": "outer-right:foreground",
+    "file": "outer-right-foreground.png",
+    "sha256": "01d62b3cf1b962963268ed631f5dc73ae4ba3dfaf4be0b271f153a13317312a0",
+    "width": 349,
+    "height": 938,
+    "role": "foreground",
+    "alpha": "straight, Pixi upload once"
+  },
+  {
+    "id": "divider-01:foreground",
+    "file": "divider-01-foreground.png",
+    "sha256": "cede1e4f7fa2a0157517420cc0e0ef3287fa91a7d92d1b062d0447178b95c30e",
+    "width": 90,
+    "height": 269,
+    "role": "foreground",
+    "alpha": "straight, Pixi upload once"
+  },
+  {
+    "id": "divider-02:foreground",
+    "file": "divider-02-foreground.png",
+    "sha256": "1c9d98f1f484f9a5f202794e8974eaf5a6c6922ef1647cc21147e031946fcce7",
+    "width": 69,
+    "height": 275,
+    "role": "foreground",
+    "alpha": "straight, Pixi upload once"
+  },
+  {
+    "id": "divider-03:foreground",
+    "file": "divider-03-foreground.png",
+    "sha256": "00348030c63756a1a15e3258725190c307312a32bc3c7f82d0b31fcf59309b63",
+    "width": 84,
+    "height": 269,
+    "role": "foreground",
+    "alpha": "straight, Pixi upload once"
+  },
+  {
+    "file": "ball-body.png",
+    "sha256": "bf510895011a6a0a69896003517d242cd5a104e9c1ea37431895ca5bdf196b89",
+    "width": 256,
+    "height": 256,
+    "role": "body",
+    "centerLocalPx": [
+      128,
+      128.5
+    ],
+    "contentRadiusPx": [
+      100,
+      100.5
+    ],
+    "opacityMultiplier": 1,
+    "textureAlphaMode": "premultiply-alpha-on-upload",
+    "textureResource": "ImageBitmap"
+  },
+  {
+    "file": "ball-shadow.png",
+    "sha256": "e172a8aee8446d8083680e20fd484f95c48daa823174415d60e3a99b6799b516",
+    "width": 256,
+    "height": 256,
+    "role": "ground-shadow",
+    "centerLocalPx": [
+      128,
+      128
+    ],
+    "contentRadiusPx": [
+      100,
+      26
+    ],
+    "opacityMultiplier": 0.65,
+    "textureAlphaMode": "premultiply-alpha-on-upload",
+    "textureResource": "ImageBitmap"
+  }
+]

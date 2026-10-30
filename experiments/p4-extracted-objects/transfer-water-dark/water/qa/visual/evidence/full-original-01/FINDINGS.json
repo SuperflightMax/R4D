@@ -1,0 +1,101 @@
+{
+  "candidate": "water-full-original-p4-candidate-01",
+  "artifactSha256": "12c5f6a96a1c2c7571b13c303ffca0da4e84676916edd21fd1ddd87c39758a6c",
+  "overallArtStatus": "FAIL",
+  "findings": [
+    {
+      "id": "VQA-WF-01",
+      "status": "FAIL",
+      "partIds": [
+        "background.png"
+      ],
+      "sourceROI": [
+        0,
+        1188,
+        1536,
+        1536
+      ],
+      "seed": 0,
+      "tick": 0,
+      "normal": [
+        "01-full-parts-on-seed0-t0-normal",
+        "02-full-parts-off-seed0-t0-normal"
+      ],
+      "detail": [
+        "21-receiver02-seed2-t1275-detail",
+        "15-receiver03-seed1-t1125-detail"
+      ],
+      "observation": "Restored near-water is too bright and has much sharper/higher-contrast caustics than the source; conspicuous in normal whole view.",
+      "correctionScope": "Match low-frequency water tone, saturation and caustics texture to surrounding original environment; feather patch transitions; keep object extraction and native inputs."
+    },
+    {
+      "id": "VQA-WF-02",
+      "status": "FAIL",
+      "partIds": [
+        "receiver-01:ground-shadow",
+        "receiver-02:ground-shadow",
+        "receiver-03:ground-shadow",
+        "receiver-04:ground-shadow"
+      ],
+      "sourceROIs": {
+        "receiver-02": [
+          505,
+          1480,
+          665,
+          1503
+        ],
+        "receiver-03": [
+          880,
+          1480,
+          1030,
+          1503
+        ]
+      },
+      "seed": 0,
+      "tick": 0,
+      "normal": [
+        "01-full-parts-on-seed0-t0-normal"
+      ],
+      "detail": [
+        "21-receiver02-seed2-t1275-detail",
+        "15-receiver03-seed1-t1125-detail"
+      ],
+      "observation": "Dirty grey cast-shadow patches have hard/angular lower edges and flat cuts; strongly separated from the bright restored water.",
+      "correctionScope": "Rework shadow silhouette, softness, falloff and colour against the repaired water, retaining separate ground-shadow ownership."
+    },
+    {
+      "id": "VQA-WF-03",
+      "status": "FAIL",
+      "partIds": [
+        "receiver-02:rear",
+        "receiver-03:rear"
+      ],
+      "sourceROI": [
+        690,
+        1080,
+        740,
+        1210
+      ],
+      "diagnosticSourcePoint": [
+        720,
+        1115
+      ],
+      "diagnosticSourceRGB": [
+        144,
+        165,
+        109
+      ],
+      "diagnosticAllBodyAndForegroundAlphaMax": 0,
+      "seed": 2,
+      "tick": 1275,
+      "normal": [
+        "20-receiver02-seed2-t1275-normal"
+      ],
+      "detail": [
+        "21-receiver02-seed2-t1275-detail"
+      ],
+      "observation": "Cyan water wedges show through inner structural side walls; minimal repro on receiver02 right inner wall. Original wall RGB is retained but no body/front owner covers the diagnostic point.",
+      "correctionScope": "Repair source alpha ownership of structural rear/inner walls while keeping real basin water transparent and rear/front exclusive. Review thin green relief edges as part of the silhouette correction."
+    }
+  ]
+}

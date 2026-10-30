@@ -1,0 +1,103 @@
+[
+  {
+    "type": "run_started",
+    "tick": 0,
+    "timeSec": 0,
+    "dropId": "board04-start",
+    "ballId": "board04-ball"
+  },
+  {
+    "type": "ball_spawned",
+    "tick": 0,
+    "timeSec": 0,
+    "dropId": "board04-start",
+    "ballId": "board04-ball",
+    "x": 33192.751665295094,
+    "y": 33184.49424667716,
+    "vx": 0,
+    "vy": 0
+  },
+  {
+    "type": "object_hit",
+    "tick": 105,
+    "timeSec": 0.525,
+    "ballId": "board04-ball",
+    "objectKind": "pin",
+    "objectId": "frog-01",
+    "x": 33192.11967597988,
+    "y": 33323.23856279813
+  },
+  {
+    "type": "object_hit",
+    "tick": 314,
+    "timeSec": 1.57,
+    "ballId": "board04-ball",
+    "objectKind": "pin",
+    "objectId": "frog-04",
+    "x": 32927.82088601598,
+    "y": 34318.751257847194
+  },
+  {
+    "type": "object_hit",
+    "tick": 738,
+    "timeSec": 3.69,
+    "ballId": "board04-ball",
+    "objectKind": "segment",
+    "objectId": "arch-04-right-foot:edge-01",
+    "x": 33292.6425275795,
+    "y": 34051.35616738753
+  },
+  {
+    "type": "object_hit",
+    "tick": 820,
+    "timeSec": 4.1,
+    "ballId": "board04-ball",
+    "objectKind": "segment",
+    "objectId": "pillar-04:edge-03",
+    "x": 33370.425144635505,
+    "y": 33835.470899573185
+  },
+  {
+    "type": "object_hit",
+    "tick": 916,
+    "timeSec": 4.58,
+    "ballId": "board04-ball",
+    "objectKind": "segment",
+    "objectId": "pillar-06:edge-01",
+    "x": 33457.270719033004,
+    "y": 34076.38799829948
+  },
+  {
+    "type": "object_hit",
+    "tick": 1260,
+    "timeSec": 6.3,
+    "ballId": "board04-ball",
+    "objectKind": "segment",
+    "objectId": "right-4",
+    "x": 33801.77720368319,
+    "y": 34522.463455808465
+  },
+  {
+    "type": "ball_finished",
+    "tick": 1429,
+    "timeSec": 7.1450000000000005,
+    "ballId": "board04-ball",
+    "result": {
+      "kind": "LOST",
+      "finalX": 33592.6385901,
+      "nearMissBucketIds": []
+    }
+  },
+  {
+    "type": "run_finished",
+    "tick": 1429,
+    "timeSec": 7.1450000000000005,
+    "dropId": "board04-start",
+    "ballId": "board04-ball",
+    "result": {
+      "kind": "LOST",
+      "finalX": 33592.6385901,
+      "nearMissBucketIds": []
+    }
+  }
+]

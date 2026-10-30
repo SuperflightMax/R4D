@@ -1,0 +1,18 @@
+{
+  "beforeBrowser": {
+    "ramFreeGiB": 10.08,
+    "ramTotalGiB": 31.91,
+    "cpuPercent": 11,
+    "logicalCPUs": 24,
+    "diskFreeGiB": {
+      "C": 13.83,
+      "D": 14.62,
+      "E": 9.26
+    }
+  },
+  "plannedOwnWork": "one hidden IAB tab, light Pillow, no native build, no seed matrix; own working-set estimate <=0.8GiB; per-tab RSS not separately exposed",
+  "guardThresholdsEGiB": {
+    "warn": 4,
+    "stop": 2
+  }
+}
