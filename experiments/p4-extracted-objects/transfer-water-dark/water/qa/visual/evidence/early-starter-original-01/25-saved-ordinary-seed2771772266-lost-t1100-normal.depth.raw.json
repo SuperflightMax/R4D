@@ -1,0 +1,129 @@
+{
+  "ballNativeY": 35769.7669982,
+  "actor": {
+    "center": {
+      "x": -731.4150440967571,
+      "y": 1596.6806633694002
+    },
+    "radius": 20.691491234425666,
+    "bodyScale": 0.20691491234425666,
+    "shadowCenter": {
+      "x": -751.0719607694615,
+      "y": 1614.4753458310063
+    },
+    "shadowScale": [
+      0.3207181141335978,
+      0.4615794198448802
+    ],
+    "shadowOpacity": 0.65,
+    "rendered": {
+      "body": {
+        "position": {
+          "x": -731.4150440967571,
+          "y": 1596.6806633694002
+        },
+        "pivot": {
+          "x": 128,
+          "y": 128.5
+        },
+        "scale": {
+          "x": 0.20691491234425666,
+          "y": 0.20691491234425666
+        },
+        "sourceVisible": false,
+        "flatVisible": false,
+        "sourceAlpha": 1,
+        "flatAlpha": 1,
+        "textureAlphaMode": "premultiply-alpha-on-upload"
+      },
+      "shadow": {
+        "position": {
+          "x": -751.0719607694615,
+          "y": 1614.4753458310063
+        },
+        "pivot": {
+          "x": 128,
+          "y": 128
+        },
+        "scale": {
+          "x": 0.3207181141335978,
+          "y": 0.4615794198448802
+        },
+        "sourceVisible": false,
+        "flatVisible": false,
+        "sourceAlpha": 0.65,
+        "flatAlpha": 0.65,
+        "textureAlphaMode": "premultiply-alpha-on-upload"
+      },
+      "groundAlpha": 1,
+      "artRootAlpha": 1,
+      "worldAlpha": 1,
+      "stageAlpha": 1,
+      "artVisible": true,
+      "fitScale": 0.3736979166666667,
+      "viewport": {
+        "width": 840,
+        "height": 590
+      }
+    }
+  },
+  "layerOrder": [
+    "background",
+    "ground",
+    "depth-sorted bodies/ball",
+    "scene-front",
+    "receiver-front",
+    "geometry"
+  ],
+  "parts": [
+    {
+      "id": "arch-07:ground-shadow",
+      "mode": "native-y",
+      "container": "ground",
+      "sourceCropOverlapsBall": false,
+      "zIndex": 34755.12349268705
+    },
+    {
+      "id": "arch-07:left-support",
+      "mode": "native-y",
+      "container": "bodies",
+      "sourceCropOverlapsBall": false,
+      "zIndex": 34755.12349268705
+    },
+    {
+      "id": "arch-07:right-support",
+      "mode": "native-y",
+      "container": "bodies",
+      "sourceCropOverlapsBall": false,
+      "zIndex": 34755.12349268705
+    },
+    {
+      "id": "arch-07:lintel",
+      "mode": "native-y",
+      "container": "bodies",
+      "sourceCropOverlapsBall": false,
+      "zIndex": 34755.12349268705
+    },
+    {
+      "id": "frog-01:ground-shadow",
+      "mode": "native-y",
+      "container": "ground",
+      "sourceCropOverlapsBall": false,
+      "zIndex": 33343.64695747465
+    },
+    {
+      "id": "frog-01:body",
+      "mode": "native-y",
+      "container": "bodies",
+      "sourceCropOverlapsBall": false,
+      "zIndex": 33343.64695747465
+    },
+    {
+      "id": "receiver-02:front",
+      "mode": "receiver-front",
+      "container": "receiver-front",
+      "sourceCropOverlapsBall": false,
+      "zIndex": 35187.08992218727
+    }
+  ]
+}

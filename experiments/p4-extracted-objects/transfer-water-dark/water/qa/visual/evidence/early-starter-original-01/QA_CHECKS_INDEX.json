@@ -1,0 +1,3519 @@
+{
+  "schema": "r4d.p4.visual-qa.early-water.v1",
+  "candidate": "water-starter-original-p4-candidate-01",
+  "scope": "PARTIAL",
+  "rawObservationMethod": "DOM pre text transported as strings; JSON.parse only in own CUA REPL; raw UTF-8 preserved. Full native events never transported as numeric page objects.",
+  "captureCount": 39,
+  "pausedCaptureCount": 38,
+  "exactRawChecks": [
+    {
+      "captures": [
+        "02-arch-entry-seed1-t1008-normal",
+        "03-parts-off-seed1-t1008-normal"
+      ],
+      "stateAndOrderedEventsRawBytesEqual": true,
+      "sha256": {
+        "state": "158262213ab6c9f9a8fd90c703d306c2606b11b563aa99b7744729e25c0f649d",
+        "events": "d8c90f70d663398a1caf951a1d308367761b485362224c238b2fc8746b1ff99d"
+      }
+    },
+    {
+      "captures": [
+        "06-arch-inside-seed1-t1009-detail",
+        "13-reseek-seed1-t1009-normal",
+        "14-native-view-seed1-t1009",
+        "15-native-art-off-seed1-t1009"
+      ],
+      "stateAndOrderedEventsRawBytesEqual": true,
+      "sha256": {
+        "state": "91fabeeec1c53f0396e09eb1c2bc2046a9b1f4ccb95ee388386097158877750d",
+        "events": "d8c90f70d663398a1caf951a1d308367761b485362224c238b2fc8746b1ff99d"
+      }
+    },
+    {
+      "captures": [
+        "17-live-paused-seed1",
+        "26-live-pause-reseek-seed1-t1098-normal"
+      ],
+      "stateAndOrderedEventsRawBytesEqual": true,
+      "sha256": {
+        "state": "533baa051e28d9da6cce72206a506491c4cd28621b55dbd27abf2d9dc103c05e",
+        "events": "068c18af1ddc8c79d51b7afff844a7b2821bdcfaa469eff67bacf72d73afc37a"
+      }
+    },
+    {
+      "captures": [
+        "22-receiver02-seed2-t1275-detail",
+        "23-receiver02-parts-off-seed2-t1275-detail",
+        "24-receiver02-seed2-t1275-normal"
+      ],
+      "stateAndOrderedEventsRawBytesEqual": true,
+      "sha256": {
+        "state": "4e58a8b6b557cf0cef97a11adccd812fd009a1e89c624235c14ec3b29d03a5c0",
+        "events": "c39e49f1717e5c7cde0020cecdcea841b9a180416a296961827ce2abaaf8a6c4"
+      }
+    },
+    {
+      "captures": [
+        "29-frog01-after-hit-seed1-t106-detail",
+        "30-frog01-parts-off-seed1-t106-detail"
+      ],
+      "stateAndOrderedEventsRawBytesEqual": true,
+      "sha256": {
+        "state": "0536798b73ff8583e0d74c608db0068e47359573ce3c44e5d3b1f70356bbedea",
+        "events": "6debd1a86c48034c9888bfa0a1faaeb8a10bd241ffc7f81e677225d76124f12a"
+      }
+    }
+  ],
+  "captures": [
+    {
+      "capture": "01-initial-seed0-t0-normal",
+      "seed": 0,
+      "tick": 0,
+      "rngU32": 0,
+      "result": null,
+      "eventCount": 2,
+      "screenshotStateBinding": "paused",
+      "controls": [
+        {
+          "checked": false,
+          "id": "seed",
+          "value": "0"
+        },
+        {
+          "checked": false,
+          "id": "count",
+          "value": "10"
+        },
+        {
+          "checked": false,
+          "id": "seek",
+          "value": "0"
+        },
+        {
+          "checked": false,
+          "id": "tick-input",
+          "value": "0"
+        },
+        {
+          "checked": true,
+          "id": "art",
+          "value": "on"
+        },
+        {
+          "checked": false,
+          "id": "geometry",
+          "value": "on"
+        },
+        {
+          "checked": true,
+          "id": "showParts",
+          "value": "on"
+        },
+        {
+          "checked": false,
+          "id": "diagnosticBall",
+          "value": "on"
+        },
+        {
+          "checked": false,
+          "id": "view",
+          "value": "source"
+        },
+        {
+          "checked": false,
+          "id": "zoom",
+          "value": "1"
+        },
+        {
+          "checked": false,
+          "id": "followBall",
+          "value": "on"
+        },
+        {
+          "checked": false,
+          "id": "import",
+          "value": ""
+        }
+      ],
+      "viewport": {
+        "dpr": 1,
+        "height": 720,
+        "width": 1280
+      },
+      "canvas": {
+        "height": 590,
+        "width": 840,
+        "x": 17,
+        "y": 103.5
+      },
+      "rawJsonSha256": {
+        "state": "56898ad1a842f5ca680dc80344b9e58fa1860c1d3fcc817129d75780aa9500e9",
+        "events": "34f1c39a57aff44c1e65c862608905c59af1ddfb11f64dfbd447ba59b4c1a5ac",
+        "depth": "f2954feb553c822ecaf27d9d1de284615d7bebed54dc76169ae902cd94568ca7",
+        "versions": "ee55f3d1a310b04ba990a1c25d7317da2ca671c1165688df1138f168651be009"
+      }
+    },
+    {
+      "capture": "02-arch-entry-seed1-t1008-normal",
+      "seed": 1,
+      "tick": 1008,
+      "rngU32": 3594602695,
+      "result": null,
+      "eventCount": 9,
+      "screenshotStateBinding": "paused",
+      "controls": [
+        {
+          "checked": false,
+          "id": "seed",
+          "value": "1"
+        },
+        {
+          "checked": false,
+          "id": "count",
+          "value": "10"
+        },
+        {
+          "checked": false,
+          "id": "seek",
+          "value": "1008"
+        },
+        {
+          "checked": false,
+          "id": "tick-input",
+          "value": "1008"
+        },
+        {
+          "checked": true,
+          "id": "art",
+          "value": "on"
+        },
+        {
+          "checked": false,
+          "id": "geometry",
+          "value": "on"
+        },
+        {
+          "checked": true,
+          "id": "showParts",
+          "value": "on"
+        },
+        {
+          "checked": false,
+          "id": "diagnosticBall",
+          "value": "on"
+        },
+        {
+          "checked": false,
+          "id": "view",
+          "value": "source"
+        },
+        {
+          "checked": false,
+          "id": "zoom",
+          "value": "1"
+        },
+        {
+          "checked": false,
+          "id": "followBall",
+          "value": "on"
+        },
+        {
+          "checked": false,
+          "id": "import",
+          "value": ""
+        }
+      ],
+      "viewport": {
+        "dpr": 1,
+        "height": 720,
+        "width": 1280
+      },
+      "canvas": {
+        "height": 590,
+        "width": 840,
+        "x": 17,
+        "y": 103.5
+      },
+      "rawJsonSha256": {
+        "state": "158262213ab6c9f9a8fd90c703d306c2606b11b563aa99b7744729e25c0f649d",
+        "events": "d8c90f70d663398a1caf951a1d308367761b485362224c238b2fc8746b1ff99d",
+        "depth": "b80996f7be329334b8c51864896dd015d6e8aace04edcb4d27006db99ca21280",
+        "versions": "ee55f3d1a310b04ba990a1c25d7317da2ca671c1165688df1138f168651be009"
+      }
+    },
+    {
+      "capture": "03-parts-off-seed1-t1008-normal",
+      "seed": 1,
+      "tick": 1008,
+      "rngU32": 3594602695,
+      "result": null,
+      "eventCount": 9,
+      "screenshotStateBinding": "paused",
+      "controls": [
+        {
+          "checked": false,
+          "id": "seed",
+          "value": "1"
+        },
+        {
+          "checked": false,
+          "id": "count",
+          "value": "10"
+        },
+        {
+          "checked": false,
+          "id": "seek",
+          "value": "1008"
+        },
+        {
+          "checked": false,
+          "id": "tick-input",
+          "value": "1008"
+        },
+        {
+          "checked": true,
+          "id": "art",
+          "value": "on"
+        },
+        {
+          "checked": false,
+          "id": "geometry",
+          "value": "on"
+        },
+        {
+          "checked": false,
+          "id": "showParts",
+          "value": "on"
+        },
+        {
+          "checked": false,
+          "id": "diagnosticBall",
+          "value": "on"
+        },
+        {
+          "checked": false,
+          "id": "view",
+          "value": "source"
+        },
+        {
+          "checked": false,
+          "id": "zoom",
+          "value": "1"
+        },
+        {
+          "checked": false,
+          "id": "followBall",
+          "value": "on"
+        },
+        {
+          "checked": false,
+          "id": "import",
+          "value": ""
+        }
+      ],
+      "viewport": {
+        "dpr": 1,
+        "height": 720,
+        "width": 1280
+      },
+      "canvas": {
+        "height": 590,
+        "width": 840,
+        "x": 17,
+        "y": 103.5
+      },
+      "rawJsonSha256": {
+        "state": "158262213ab6c9f9a8fd90c703d306c2606b11b563aa99b7744729e25c0f649d",
+        "events": "d8c90f70d663398a1caf951a1d308367761b485362224c238b2fc8746b1ff99d",
+        "depth": "b80996f7be329334b8c51864896dd015d6e8aace04edcb4d27006db99ca21280",
+        "versions": "ee55f3d1a310b04ba990a1c25d7317da2ca671c1165688df1138f168651be009"
+      }
+    },
+    {
+      "capture": "04-arch-before-seed1-t1005-detail",
+      "seed": 1,
+      "tick": 1005,
+      "rngU32": 1814098701,
+      "result": null,
+      "eventCount": 8,
+      "screenshotStateBinding": "paused",
+      "controls": [
+        {
+          "checked": false,
+          "id": "seed",
+          "value": "1"
+        },
+        {
+          "checked": false,
+          "id": "count",
+          "value": "10"
+        },
+        {
+          "checked": false,
+          "id": "seek",
+          "value": "1005"
+        },
+        {
+          "checked": false,
+          "id": "tick-input",
+          "value": "1005"
+        },
+        {
+          "checked": true,
+          "id": "art",
+          "value": "on"
+        },
+        {
+          "checked": false,
+          "id": "geometry",
+          "value": "on"
+        },
+        {
+          "checked": true,
+          "id": "showParts",
+          "value": "on"
+        },
+        {
+          "checked": false,
+          "id": "diagnosticBall",
+          "value": "on"
+        },
+        {
+          "checked": false,
+          "id": "view",
+          "value": "source"
+        },
+        {
+          "checked": false,
+          "id": "zoom",
+          "value": "2"
+        },
+        {
+          "checked": true,
+          "id": "followBall",
+          "value": "on"
+        },
+        {
+          "checked": false,
+          "id": "import",
+          "value": ""
+        }
+      ],
+      "viewport": {
+        "dpr": 1,
+        "height": 720,
+        "width": 1280
+      },
+      "canvas": {
+        "height": 590,
+        "width": 840,
+        "x": 17,
+        "y": 103.5
+      },
+      "rawJsonSha256": {
+        "state": "3651eca67adf94b41b4e2d6cc22cd48db764443f623c2efb4263504399f833f8",
+        "events": "f4b6b0e56e7f93a50cc740e9f570f2ad56b02766026197651e92af1777cef5b3",
+        "depth": "b428a754492ad10c1ecd15a627f74312d52af3e40df44cc7f08d39da9614fb83",
+        "versions": "ee55f3d1a310b04ba990a1c25d7317da2ca671c1165688df1138f168651be009"
+      }
+    },
+    {
+      "capture": "05-arch-entry-seed1-t1008-detail",
+      "seed": 1,
+      "tick": 1008,
+      "rngU32": 3594602695,
+      "result": null,
+      "eventCount": 9,
+      "screenshotStateBinding": "paused",
+      "controls": [
+        {
+          "checked": false,
+          "id": "seed",
+          "value": "1"
+        },
+        {
+          "checked": false,
+          "id": "count",
+          "value": "10"
+        },
+        {
+          "checked": false,
+          "id": "seek",
+          "value": "1008"
+        },
+        {
+          "checked": false,
+          "id": "tick-input",
+          "value": "1008"
+        },
+        {
+          "checked": true,
+          "id": "art",
+          "value": "on"
+        },
+        {
+          "checked": false,
+          "id": "geometry",
+          "value": "on"
+        },
+        {
+          "checked": true,
+          "id": "showParts",
+          "value": "on"
+        },
+        {
+          "checked": false,
+          "id": "diagnosticBall",
+          "value": "on"
+        },
+        {
+          "checked": false,
+          "id": "view",
+          "value": "source"
+        },
+        {
+          "checked": false,
+          "id": "zoom",
+          "value": "2"
+        },
+        {
+          "checked": true,
+          "id": "followBall",
+          "value": "on"
+        },
+        {
+          "checked": false,
+          "id": "import",
+          "value": ""
+        }
+      ],
+      "viewport": {
+        "dpr": 1,
+        "height": 720,
+        "width": 1280
+      },
+      "canvas": {
+        "height": 590,
+        "width": 840,
+        "x": 17,
+        "y": 103.5
+      },
+      "rawJsonSha256": {
+        "state": "158262213ab6c9f9a8fd90c703d306c2606b11b563aa99b7744729e25c0f649d",
+        "events": "d8c90f70d663398a1caf951a1d308367761b485362224c238b2fc8746b1ff99d",
+        "depth": "12d7cd1ed4a8711fef97e8f286e530feb202c5ae6f363277a03e8c05a65cdda0",
+        "versions": "ee55f3d1a310b04ba990a1c25d7317da2ca671c1165688df1138f168651be009"
+      }
+    },
+    {
+      "capture": "06-arch-inside-seed1-t1009-detail",
+      "seed": 1,
+      "tick": 1009,
+      "rngU32": 3594602695,
+      "result": null,
+      "eventCount": 9,
+      "screenshotStateBinding": "paused",
+      "controls": [
+        {
+          "checked": false,
+          "id": "seed",
+          "value": "1"
+        },
+        {
+          "checked": false,
+          "id": "count",
+          "value": "10"
+        },
+        {
+          "checked": false,
+          "id": "seek",
+          "value": "1009"
+        },
+        {
+          "checked": false,
+          "id": "tick-input",
+          "value": "1009"
+        },
+        {
+          "checked": true,
+          "id": "art",
+          "value": "on"
+        },
+        {
+          "checked": false,
+          "id": "geometry",
+          "value": "on"
+        },
+        {
+          "checked": true,
+          "id": "showParts",
+          "value": "on"
+        },
+        {
+          "checked": false,
+          "id": "diagnosticBall",
+          "value": "on"
+        },
+        {
+          "checked": false,
+          "id": "view",
+          "value": "source"
+        },
+        {
+          "checked": false,
+          "id": "zoom",
+          "value": "2"
+        },
+        {
+          "checked": true,
+          "id": "followBall",
+          "value": "on"
+        },
+        {
+          "checked": false,
+          "id": "import",
+          "value": ""
+        }
+      ],
+      "viewport": {
+        "dpr": 1,
+        "height": 720,
+        "width": 1280
+      },
+      "canvas": {
+        "height": 590,
+        "width": 840,
+        "x": 17,
+        "y": 103.5
+      },
+      "rawJsonSha256": {
+        "state": "91fabeeec1c53f0396e09eb1c2bc2046a9b1f4ccb95ee388386097158877750d",
+        "events": "d8c90f70d663398a1caf951a1d308367761b485362224c238b2fc8746b1ff99d",
+        "depth": "afde41cf3ae610864b2605dad86d6dd14baf1b34481b89460e53750f293a09a1",
+        "versions": "ee55f3d1a310b04ba990a1c25d7317da2ca671c1165688df1138f168651be009"
+      }
+    },
+    {
+      "capture": "07-arch-foot-seed1-t1013-detail",
+      "seed": 1,
+      "tick": 1013,
+      "rngU32": 4212701329,
+      "result": null,
+      "eventCount": 10,
+      "screenshotStateBinding": "paused",
+      "controls": [
+        {
+          "checked": false,
+          "id": "seed",
+          "value": "1"
+        },
+        {
+          "checked": false,
+          "id": "count",
+          "value": "10"
+        },
+        {
+          "checked": false,
+          "id": "seek",
+          "value": "1013"
+        },
+        {
+          "checked": false,
+          "id": "tick-input",
+          "value": "1013"
+        },
+        {
+          "checked": true,
+          "id": "art",
+          "value": "on"
+        },
+        {
+          "checked": false,
+          "id": "geometry",
+          "value": "on"
+        },
+        {
+          "checked": true,
+          "id": "showParts",
+          "value": "on"
+        },
+        {
+          "checked": false,
+          "id": "diagnosticBall",
+          "value": "on"
+        },
+        {
+          "checked": false,
+          "id": "view",
+          "value": "source"
+        },
+        {
+          "checked": false,
+          "id": "zoom",
+          "value": "2"
+        },
+        {
+          "checked": true,
+          "id": "followBall",
+          "value": "on"
+        },
+        {
+          "checked": false,
+          "id": "import",
+          "value": ""
+        }
+      ],
+      "viewport": {
+        "dpr": 1,
+        "height": 720,
+        "width": 1280
+      },
+      "canvas": {
+        "height": 590,
+        "width": 840,
+        "x": 17,
+        "y": 103.5
+      },
+      "rawJsonSha256": {
+        "state": "894efb24c3383c9e4a3fa68de87f87103fec2f53e942380d971b076e2d5e8fc4",
+        "events": "11a52cbc83b8d7871ff4f3c1a7dab6d62424baba73ed539b0cdc40f1001c30c8",
+        "depth": "2387fd9d6dd13a3204c1d58c132f56e844f60e6d3570dc4824be8c3fa7bb805c",
+        "versions": "ee55f3d1a310b04ba990a1c25d7317da2ca671c1165688df1138f168651be009"
+      }
+    },
+    {
+      "capture": "08-arch-sorted-front-seed1-t1015-detail",
+      "seed": 1,
+      "tick": 1015,
+      "rngU32": 4212701329,
+      "result": null,
+      "eventCount": 10,
+      "screenshotStateBinding": "paused",
+      "controls": [
+        {
+          "checked": false,
+          "id": "seed",
+          "value": "1"
+        },
+        {
+          "checked": false,
+          "id": "count",
+          "value": "10"
+        },
+        {
+          "checked": false,
+          "id": "seek",
+          "value": "1015"
+        },
+        {
+          "checked": false,
+          "id": "tick-input",
+          "value": "1015"
+        },
+        {
+          "checked": true,
+          "id": "art",
+          "value": "on"
+        },
+        {
+          "checked": false,
+          "id": "geometry",
+          "value": "on"
+        },
+        {
+          "checked": true,
+          "id": "showParts",
+          "value": "on"
+        },
+        {
+          "checked": false,
+          "id": "diagnosticBall",
+          "value": "on"
+        },
+        {
+          "checked": false,
+          "id": "view",
+          "value": "source"
+        },
+        {
+          "checked": false,
+          "id": "zoom",
+          "value": "2"
+        },
+        {
+          "checked": true,
+          "id": "followBall",
+          "value": "on"
+        },
+        {
+          "checked": false,
+          "id": "import",
+          "value": ""
+        }
+      ],
+      "viewport": {
+        "dpr": 1,
+        "height": 720,
+        "width": 1280
+      },
+      "canvas": {
+        "height": 590,
+        "width": 840,
+        "x": 17,
+        "y": 103.5
+      },
+      "rawJsonSha256": {
+        "state": "c6c0bd72a3ac6402f4386438028d2b5d5160bb2c1ef3bb25118e9daa69b5a3fe",
+        "events": "11a52cbc83b8d7871ff4f3c1a7dab6d62424baba73ed539b0cdc40f1001c30c8",
+        "depth": "f42fa39a5bb21ac7cfc8a6df93770c57e067949be340786764ec5405b334b731",
+        "versions": "ee55f3d1a310b04ba990a1c25d7317da2ca671c1165688df1138f168651be009"
+      }
+    },
+    {
+      "capture": "09-arch-inside-end-seed1-t1020-detail",
+      "seed": 1,
+      "tick": 1020,
+      "rngU32": 1403919595,
+      "result": null,
+      "eventCount": 11,
+      "screenshotStateBinding": "paused",
+      "controls": [
+        {
+          "checked": false,
+          "id": "seed",
+          "value": "1"
+        },
+        {
+          "checked": false,
+          "id": "count",
+          "value": "10"
+        },
+        {
+          "checked": false,
+          "id": "seek",
+          "value": "1020"
+        },
+        {
+          "checked": false,
+          "id": "tick-input",
+          "value": "1020"
+        },
+        {
+          "checked": true,
+          "id": "art",
+          "value": "on"
+        },
+        {
+          "checked": false,
+          "id": "geometry",
+          "value": "on"
+        },
+        {
+          "checked": true,
+          "id": "showParts",
+          "value": "on"
+        },
+        {
+          "checked": false,
+          "id": "diagnosticBall",
+          "value": "on"
+        },
+        {
+          "checked": false,
+          "id": "view",
+          "value": "source"
+        },
+        {
+          "checked": false,
+          "id": "zoom",
+          "value": "2"
+        },
+        {
+          "checked": true,
+          "id": "followBall",
+          "value": "on"
+        },
+        {
+          "checked": false,
+          "id": "import",
+          "value": ""
+        }
+      ],
+      "viewport": {
+        "dpr": 1,
+        "height": 720,
+        "width": 1280
+      },
+      "canvas": {
+        "height": 590,
+        "width": 840,
+        "x": 17,
+        "y": 103.5
+      },
+      "rawJsonSha256": {
+        "state": "331ed64beff9cde2619673f71068db8b04dbe8cdb0dfee6b8a0abc8ef46f646b",
+        "events": "068c18af1ddc8c79d51b7afff844a7b2821bdcfaa469eff67bacf72d73afc37a",
+        "depth": "6361964f98adc835582791154e414d8f571ed47ce2a3e2b25429b40ab1a56f6d",
+        "versions": "ee55f3d1a310b04ba990a1c25d7317da2ca671c1165688df1138f168651be009"
+      }
+    },
+    {
+      "capture": "10-arch-exit-seed1-t1021-detail",
+      "seed": 1,
+      "tick": 1021,
+      "rngU32": 1403919595,
+      "result": null,
+      "eventCount": 11,
+      "screenshotStateBinding": "paused",
+      "controls": [
+        {
+          "checked": false,
+          "id": "seed",
+          "value": "1"
+        },
+        {
+          "checked": false,
+          "id": "count",
+          "value": "10"
+        },
+        {
+          "checked": false,
+          "id": "seek",
+          "value": "1021"
+        },
+        {
+          "checked": false,
+          "id": "tick-input",
+          "value": "1021"
+        },
+        {
+          "checked": true,
+          "id": "art",
+          "value": "on"
+        },
+        {
+          "checked": false,
+          "id": "geometry",
+          "value": "on"
+        },
+        {
+          "checked": true,
+          "id": "showParts",
+          "value": "on"
+        },
+        {
+          "checked": false,
+          "id": "diagnosticBall",
+          "value": "on"
+        },
+        {
+          "checked": false,
+          "id": "view",
+          "value": "source"
+        },
+        {
+          "checked": false,
+          "id": "zoom",
+          "value": "2"
+        },
+        {
+          "checked": true,
+          "id": "followBall",
+          "value": "on"
+        },
+        {
+          "checked": false,
+          "id": "import",
+          "value": ""
+        }
+      ],
+      "viewport": {
+        "dpr": 1,
+        "height": 720,
+        "width": 1280
+      },
+      "canvas": {
+        "height": 590,
+        "width": 840,
+        "x": 17,
+        "y": 103.5
+      },
+      "rawJsonSha256": {
+        "state": "8edc6da5ff37fe7f1727121218c754b2903efe3ba159eb5a02e2aec235ad50f5",
+        "events": "068c18af1ddc8c79d51b7afff844a7b2821bdcfaa469eff67bacf72d73afc37a",
+        "depth": "60e1e1a53ff0797ee6fa2d85679bae3fd8054a39abf1c5f59217cf5c59937184",
+        "versions": "ee55f3d1a310b04ba990a1c25d7317da2ca671c1165688df1138f168651be009"
+      }
+    },
+    {
+      "capture": "11-normal-seed1-t1005",
+      "seed": 1,
+      "tick": 1005,
+      "rngU32": 1814098701,
+      "result": null,
+      "eventCount": 8,
+      "screenshotStateBinding": "paused",
+      "controls": [
+        {
+          "checked": false,
+          "id": "seed",
+          "value": "1"
+        },
+        {
+          "checked": false,
+          "id": "count",
+          "value": "10"
+        },
+        {
+          "checked": false,
+          "id": "seek",
+          "value": "1005"
+        },
+        {
+          "checked": false,
+          "id": "tick-input",
+          "value": "1005"
+        },
+        {
+          "checked": true,
+          "id": "art",
+          "value": "on"
+        },
+        {
+          "checked": false,
+          "id": "geometry",
+          "value": "on"
+        },
+        {
+          "checked": true,
+          "id": "showParts",
+          "value": "on"
+        },
+        {
+          "checked": false,
+          "id": "diagnosticBall",
+          "value": "on"
+        },
+        {
+          "checked": false,
+          "id": "view",
+          "value": "source"
+        },
+        {
+          "checked": false,
+          "id": "zoom",
+          "value": "1"
+        },
+        {
+          "checked": false,
+          "id": "followBall",
+          "value": "on"
+        },
+        {
+          "checked": false,
+          "id": "import",
+          "value": ""
+        }
+      ],
+      "viewport": {
+        "dpr": 1,
+        "height": 720,
+        "width": 1280
+      },
+      "canvas": {
+        "height": 590,
+        "width": 840,
+        "x": 17,
+        "y": 103.5
+      },
+      "rawJsonSha256": {
+        "state": "3651eca67adf94b41b4e2d6cc22cd48db764443f623c2efb4263504399f833f8",
+        "events": "f4b6b0e56e7f93a50cc740e9f570f2ad56b02766026197651e92af1777cef5b3",
+        "depth": "48e80a1e20c2cd910368f42bdead316b48b03353840a35a5b4e1dda45a63b681",
+        "versions": "ee55f3d1a310b04ba990a1c25d7317da2ca671c1165688df1138f168651be009"
+      }
+    },
+    {
+      "capture": "11-normal-seed1-t1009",
+      "seed": 1,
+      "tick": 1009,
+      "rngU32": 3594602695,
+      "result": null,
+      "eventCount": 9,
+      "screenshotStateBinding": "paused",
+      "controls": [
+        {
+          "checked": false,
+          "id": "seed",
+          "value": "1"
+        },
+        {
+          "checked": false,
+          "id": "count",
+          "value": "10"
+        },
+        {
+          "checked": false,
+          "id": "seek",
+          "value": "1009"
+        },
+        {
+          "checked": false,
+          "id": "tick-input",
+          "value": "1009"
+        },
+        {
+          "checked": true,
+          "id": "art",
+          "value": "on"
+        },
+        {
+          "checked": false,
+          "id": "geometry",
+          "value": "on"
+        },
+        {
+          "checked": true,
+          "id": "showParts",
+          "value": "on"
+        },
+        {
+          "checked": false,
+          "id": "diagnosticBall",
+          "value": "on"
+        },
+        {
+          "checked": false,
+          "id": "view",
+          "value": "source"
+        },
+        {
+          "checked": false,
+          "id": "zoom",
+          "value": "1"
+        },
+        {
+          "checked": false,
+          "id": "followBall",
+          "value": "on"
+        },
+        {
+          "checked": false,
+          "id": "import",
+          "value": ""
+        }
+      ],
+      "viewport": {
+        "dpr": 1,
+        "height": 720,
+        "width": 1280
+      },
+      "canvas": {
+        "height": 590,
+        "width": 840,
+        "x": 17,
+        "y": 103.5
+      },
+      "rawJsonSha256": {
+        "state": "91fabeeec1c53f0396e09eb1c2bc2046a9b1f4ccb95ee388386097158877750d",
+        "events": "d8c90f70d663398a1caf951a1d308367761b485362224c238b2fc8746b1ff99d",
+        "depth": "1587d9a10759b7995259f667898412b66b3aad5ceedb61f6de9c7a094e81a0f5",
+        "versions": "ee55f3d1a310b04ba990a1c25d7317da2ca671c1165688df1138f168651be009"
+      }
+    },
+    {
+      "capture": "11-normal-seed1-t1013",
+      "seed": 1,
+      "tick": 1013,
+      "rngU32": 4212701329,
+      "result": null,
+      "eventCount": 10,
+      "screenshotStateBinding": "paused",
+      "controls": [
+        {
+          "checked": false,
+          "id": "seed",
+          "value": "1"
+        },
+        {
+          "checked": false,
+          "id": "count",
+          "value": "10"
+        },
+        {
+          "checked": false,
+          "id": "seek",
+          "value": "1013"
+        },
+        {
+          "checked": false,
+          "id": "tick-input",
+          "value": "1013"
+        },
+        {
+          "checked": true,
+          "id": "art",
+          "value": "on"
+        },
+        {
+          "checked": false,
+          "id": "geometry",
+          "value": "on"
+        },
+        {
+          "checked": true,
+          "id": "showParts",
+          "value": "on"
+        },
+        {
+          "checked": false,
+          "id": "diagnosticBall",
+          "value": "on"
+        },
+        {
+          "checked": false,
+          "id": "view",
+          "value": "source"
+        },
+        {
+          "checked": false,
+          "id": "zoom",
+          "value": "1"
+        },
+        {
+          "checked": false,
+          "id": "followBall",
+          "value": "on"
+        },
+        {
+          "checked": false,
+          "id": "import",
+          "value": ""
+        }
+      ],
+      "viewport": {
+        "dpr": 1,
+        "height": 720,
+        "width": 1280
+      },
+      "canvas": {
+        "height": 590,
+        "width": 840,
+        "x": 17,
+        "y": 103.5
+      },
+      "rawJsonSha256": {
+        "state": "894efb24c3383c9e4a3fa68de87f87103fec2f53e942380d971b076e2d5e8fc4",
+        "events": "11a52cbc83b8d7871ff4f3c1a7dab6d62424baba73ed539b0cdc40f1001c30c8",
+        "depth": "5835579f9decc6d36f96137c6e6045cf9c1af8438967fdf253d8093e96f64ff8",
+        "versions": "ee55f3d1a310b04ba990a1c25d7317da2ca671c1165688df1138f168651be009"
+      }
+    },
+    {
+      "capture": "11-normal-seed1-t1015",
+      "seed": 1,
+      "tick": 1015,
+      "rngU32": 4212701329,
+      "result": null,
+      "eventCount": 10,
+      "screenshotStateBinding": "paused",
+      "controls": [
+        {
+          "checked": false,
+          "id": "seed",
+          "value": "1"
+        },
+        {
+          "checked": false,
+          "id": "count",
+          "value": "10"
+        },
+        {
+          "checked": false,
+          "id": "seek",
+          "value": "1015"
+        },
+        {
+          "checked": false,
+          "id": "tick-input",
+          "value": "1015"
+        },
+        {
+          "checked": true,
+          "id": "art",
+          "value": "on"
+        },
+        {
+          "checked": false,
+          "id": "geometry",
+          "value": "on"
+        },
+        {
+          "checked": true,
+          "id": "showParts",
+          "value": "on"
+        },
+        {
+          "checked": false,
+          "id": "diagnosticBall",
+          "value": "on"
+        },
+        {
+          "checked": false,
+          "id": "view",
+          "value": "source"
+        },
+        {
+          "checked": false,
+          "id": "zoom",
+          "value": "1"
+        },
+        {
+          "checked": false,
+          "id": "followBall",
+          "value": "on"
+        },
+        {
+          "checked": false,
+          "id": "import",
+          "value": ""
+        }
+      ],
+      "viewport": {
+        "dpr": 1,
+        "height": 720,
+        "width": 1280
+      },
+      "canvas": {
+        "height": 590,
+        "width": 840,
+        "x": 17,
+        "y": 103.5
+      },
+      "rawJsonSha256": {
+        "state": "c6c0bd72a3ac6402f4386438028d2b5d5160bb2c1ef3bb25118e9daa69b5a3fe",
+        "events": "11a52cbc83b8d7871ff4f3c1a7dab6d62424baba73ed539b0cdc40f1001c30c8",
+        "depth": "4c5b845a6a4c320f03fe1476ef95598ec1ad1a424eb606abfeaa2f6bfe97bd5b",
+        "versions": "ee55f3d1a310b04ba990a1c25d7317da2ca671c1165688df1138f168651be009"
+      }
+    },
+    {
+      "capture": "11-normal-seed1-t1020",
+      "seed": 1,
+      "tick": 1020,
+      "rngU32": 1403919595,
+      "result": null,
+      "eventCount": 11,
+      "screenshotStateBinding": "paused",
+      "controls": [
+        {
+          "checked": false,
+          "id": "seed",
+          "value": "1"
+        },
+        {
+          "checked": false,
+          "id": "count",
+          "value": "10"
+        },
+        {
+          "checked": false,
+          "id": "seek",
+          "value": "1020"
+        },
+        {
+          "checked": false,
+          "id": "tick-input",
+          "value": "1020"
+        },
+        {
+          "checked": true,
+          "id": "art",
+          "value": "on"
+        },
+        {
+          "checked": false,
+          "id": "geometry",
+          "value": "on"
+        },
+        {
+          "checked": true,
+          "id": "showParts",
+          "value": "on"
+        },
+        {
+          "checked": false,
+          "id": "diagnosticBall",
+          "value": "on"
+        },
+        {
+          "checked": false,
+          "id": "view",
+          "value": "source"
+        },
+        {
+          "checked": false,
+          "id": "zoom",
+          "value": "1"
+        },
+        {
+          "checked": false,
+          "id": "followBall",
+          "value": "on"
+        },
+        {
+          "checked": false,
+          "id": "import",
+          "value": ""
+        }
+      ],
+      "viewport": {
+        "dpr": 1,
+        "height": 720,
+        "width": 1280
+      },
+      "canvas": {
+        "height": 590,
+        "width": 840,
+        "x": 17,
+        "y": 103.5
+      },
+      "rawJsonSha256": {
+        "state": "331ed64beff9cde2619673f71068db8b04dbe8cdb0dfee6b8a0abc8ef46f646b",
+        "events": "068c18af1ddc8c79d51b7afff844a7b2821bdcfaa469eff67bacf72d73afc37a",
+        "depth": "4bb72ca90d5f66820097c8e3b2c58b2293afa29fa2ed9e72f28ad7f4b925aede",
+        "versions": "ee55f3d1a310b04ba990a1c25d7317da2ca671c1165688df1138f168651be009"
+      }
+    },
+    {
+      "capture": "11-normal-seed1-t1021",
+      "seed": 1,
+      "tick": 1021,
+      "rngU32": 1403919595,
+      "result": null,
+      "eventCount": 11,
+      "screenshotStateBinding": "paused",
+      "controls": [
+        {
+          "checked": false,
+          "id": "seed",
+          "value": "1"
+        },
+        {
+          "checked": false,
+          "id": "count",
+          "value": "10"
+        },
+        {
+          "checked": false,
+          "id": "seek",
+          "value": "1021"
+        },
+        {
+          "checked": false,
+          "id": "tick-input",
+          "value": "1021"
+        },
+        {
+          "checked": true,
+          "id": "art",
+          "value": "on"
+        },
+        {
+          "checked": false,
+          "id": "geometry",
+          "value": "on"
+        },
+        {
+          "checked": true,
+          "id": "showParts",
+          "value": "on"
+        },
+        {
+          "checked": false,
+          "id": "diagnosticBall",
+          "value": "on"
+        },
+        {
+          "checked": false,
+          "id": "view",
+          "value": "source"
+        },
+        {
+          "checked": false,
+          "id": "zoom",
+          "value": "1"
+        },
+        {
+          "checked": false,
+          "id": "followBall",
+          "value": "on"
+        },
+        {
+          "checked": false,
+          "id": "import",
+          "value": ""
+        }
+      ],
+      "viewport": {
+        "dpr": 1,
+        "height": 720,
+        "width": 1280
+      },
+      "canvas": {
+        "height": 590,
+        "width": 840,
+        "x": 17,
+        "y": 103.5
+      },
+      "rawJsonSha256": {
+        "state": "8edc6da5ff37fe7f1727121218c754b2903efe3ba159eb5a02e2aec235ad50f5",
+        "events": "068c18af1ddc8c79d51b7afff844a7b2821bdcfaa469eff67bacf72d73afc37a",
+        "depth": "bca151487f9c5a5a287d2e9f1de85783eadba2ac439152b8965d2845c717e796",
+        "versions": "ee55f3d1a310b04ba990a1c25d7317da2ca671c1165688df1138f168651be009"
+      }
+    },
+    {
+      "capture": "12-plus1-seed1-t1010-normal",
+      "seed": 1,
+      "tick": 1010,
+      "rngU32": 3594602695,
+      "result": null,
+      "eventCount": 9,
+      "screenshotStateBinding": "paused",
+      "controls": [
+        {
+          "checked": false,
+          "id": "seed",
+          "value": "1"
+        },
+        {
+          "checked": false,
+          "id": "count",
+          "value": "10"
+        },
+        {
+          "checked": false,
+          "id": "seek",
+          "value": "1010"
+        },
+        {
+          "checked": false,
+          "id": "tick-input",
+          "value": "1010"
+        },
+        {
+          "checked": true,
+          "id": "art",
+          "value": "on"
+        },
+        {
+          "checked": false,
+          "id": "geometry",
+          "value": "on"
+        },
+        {
+          "checked": true,
+          "id": "showParts",
+          "value": "on"
+        },
+        {
+          "checked": false,
+          "id": "diagnosticBall",
+          "value": "on"
+        },
+        {
+          "checked": false,
+          "id": "view",
+          "value": "source"
+        },
+        {
+          "checked": false,
+          "id": "zoom",
+          "value": "1"
+        },
+        {
+          "checked": false,
+          "id": "followBall",
+          "value": "on"
+        },
+        {
+          "checked": false,
+          "id": "import",
+          "value": ""
+        }
+      ],
+      "viewport": {
+        "dpr": 1,
+        "height": 720,
+        "width": 1280
+      },
+      "canvas": {
+        "height": 590,
+        "width": 840,
+        "x": 17,
+        "y": 103.5
+      },
+      "rawJsonSha256": {
+        "state": "0d70c9183503057e65bdeceac1ea95c13eceb627fa2472ff30362f5acd1c4057",
+        "events": "d8c90f70d663398a1caf951a1d308367761b485362224c238b2fc8746b1ff99d",
+        "depth": "dc6a138989dbc6d36367dd99eb477a64370cd03dc429983b36b218569b5d6a19",
+        "versions": "ee55f3d1a310b04ba990a1c25d7317da2ca671c1165688df1138f168651be009"
+      }
+    },
+    {
+      "capture": "13-reseek-seed1-t1009-normal",
+      "seed": 1,
+      "tick": 1009,
+      "rngU32": 3594602695,
+      "result": null,
+      "eventCount": 9,
+      "screenshotStateBinding": "paused",
+      "controls": [
+        {
+          "checked": false,
+          "id": "seed",
+          "value": "1"
+        },
+        {
+          "checked": false,
+          "id": "count",
+          "value": "10"
+        },
+        {
+          "checked": false,
+          "id": "seek",
+          "value": "1009"
+        },
+        {
+          "checked": false,
+          "id": "tick-input",
+          "value": "1009"
+        },
+        {
+          "checked": true,
+          "id": "art",
+          "value": "on"
+        },
+        {
+          "checked": false,
+          "id": "geometry",
+          "value": "on"
+        },
+        {
+          "checked": true,
+          "id": "showParts",
+          "value": "on"
+        },
+        {
+          "checked": false,
+          "id": "diagnosticBall",
+          "value": "on"
+        },
+        {
+          "checked": false,
+          "id": "view",
+          "value": "source"
+        },
+        {
+          "checked": false,
+          "id": "zoom",
+          "value": "1"
+        },
+        {
+          "checked": false,
+          "id": "followBall",
+          "value": "on"
+        },
+        {
+          "checked": false,
+          "id": "import",
+          "value": ""
+        }
+      ],
+      "viewport": {
+        "dpr": 1,
+        "height": 720,
+        "width": 1280
+      },
+      "canvas": {
+        "height": 590,
+        "width": 840,
+        "x": 17,
+        "y": 103.5
+      },
+      "rawJsonSha256": {
+        "state": "91fabeeec1c53f0396e09eb1c2bc2046a9b1f4ccb95ee388386097158877750d",
+        "events": "d8c90f70d663398a1caf951a1d308367761b485362224c238b2fc8746b1ff99d",
+        "depth": "1587d9a10759b7995259f667898412b66b3aad5ceedb61f6de9c7a094e81a0f5",
+        "versions": "ee55f3d1a310b04ba990a1c25d7317da2ca671c1165688df1138f168651be009"
+      }
+    },
+    {
+      "capture": "14-native-view-seed1-t1009",
+      "seed": 1,
+      "tick": 1009,
+      "rngU32": 3594602695,
+      "result": null,
+      "eventCount": 9,
+      "screenshotStateBinding": "paused",
+      "controls": [
+        {
+          "checked": false,
+          "id": "seed",
+          "value": "1"
+        },
+        {
+          "checked": false,
+          "id": "count",
+          "value": "10"
+        },
+        {
+          "checked": false,
+          "id": "seek",
+          "value": "1009"
+        },
+        {
+          "checked": false,
+          "id": "tick-input",
+          "value": "1009"
+        },
+        {
+          "checked": true,
+          "id": "art",
+          "value": "on"
+        },
+        {
+          "checked": true,
+          "id": "geometry",
+          "value": "on"
+        },
+        {
+          "checked": true,
+          "id": "showParts",
+          "value": "on"
+        },
+        {
+          "checked": false,
+          "id": "diagnosticBall",
+          "value": "on"
+        },
+        {
+          "checked": false,
+          "id": "view",
+          "value": "flat"
+        },
+        {
+          "checked": false,
+          "id": "zoom",
+          "value": "1"
+        },
+        {
+          "checked": false,
+          "id": "followBall",
+          "value": "on"
+        },
+        {
+          "checked": false,
+          "id": "import",
+          "value": ""
+        }
+      ],
+      "viewport": {
+        "dpr": 1,
+        "height": 720,
+        "width": 1280
+      },
+      "canvas": {
+        "height": 590,
+        "width": 840,
+        "x": 17,
+        "y": 103.5
+      },
+      "rawJsonSha256": {
+        "state": "91fabeeec1c53f0396e09eb1c2bc2046a9b1f4ccb95ee388386097158877750d",
+        "events": "d8c90f70d663398a1caf951a1d308367761b485362224c238b2fc8746b1ff99d",
+        "depth": "b387ba80cc33ccb039ce24c462f77464194bd43b544ab00e166dbefca6482da2",
+        "versions": "ee55f3d1a310b04ba990a1c25d7317da2ca671c1165688df1138f168651be009"
+      }
+    },
+    {
+      "capture": "15-native-art-off-seed1-t1009",
+      "seed": 1,
+      "tick": 1009,
+      "rngU32": 3594602695,
+      "result": null,
+      "eventCount": 9,
+      "screenshotStateBinding": "paused",
+      "controls": [
+        {
+          "checked": false,
+          "id": "seed",
+          "value": "1"
+        },
+        {
+          "checked": false,
+          "id": "count",
+          "value": "10"
+        },
+        {
+          "checked": false,
+          "id": "seek",
+          "value": "1009"
+        },
+        {
+          "checked": false,
+          "id": "tick-input",
+          "value": "1009"
+        },
+        {
+          "checked": false,
+          "id": "art",
+          "value": "on"
+        },
+        {
+          "checked": true,
+          "id": "geometry",
+          "value": "on"
+        },
+        {
+          "checked": true,
+          "id": "showParts",
+          "value": "on"
+        },
+        {
+          "checked": false,
+          "id": "diagnosticBall",
+          "value": "on"
+        },
+        {
+          "checked": false,
+          "id": "view",
+          "value": "flat"
+        },
+        {
+          "checked": false,
+          "id": "zoom",
+          "value": "1"
+        },
+        {
+          "checked": false,
+          "id": "followBall",
+          "value": "on"
+        },
+        {
+          "checked": false,
+          "id": "import",
+          "value": ""
+        }
+      ],
+      "viewport": {
+        "dpr": 1,
+        "height": 720,
+        "width": 1280
+      },
+      "canvas": {
+        "height": 590,
+        "width": 840,
+        "x": 17,
+        "y": 103.5
+      },
+      "rawJsonSha256": {
+        "state": "91fabeeec1c53f0396e09eb1c2bc2046a9b1f4ccb95ee388386097158877750d",
+        "events": "d8c90f70d663398a1caf951a1d308367761b485362224c238b2fc8746b1ff99d",
+        "depth": "bd04d5c6ba5930ba9b49b9910138d4612cef8b4f54d312d956f2e2c5f5da0577",
+        "versions": "ee55f3d1a310b04ba990a1c25d7317da2ca671c1165688df1138f168651be009"
+      }
+    },
+    {
+      "capture": "16-live-play-seed1-after-t1005",
+      "seed": 1,
+      "tick": 1061,
+      "rngU32": 1403919595,
+      "result": null,
+      "eventCount": 11,
+      "screenshotStateBinding": "live-transient-not-a-paused-checkpoint",
+      "controls": [
+        {
+          "checked": false,
+          "id": "seed",
+          "value": "1"
+        },
+        {
+          "checked": false,
+          "id": "count",
+          "value": "10"
+        },
+        {
+          "checked": false,
+          "id": "seek",
+          "value": "1061"
+        },
+        {
+          "checked": false,
+          "id": "tick-input",
+          "value": "1061"
+        },
+        {
+          "checked": true,
+          "id": "art",
+          "value": "on"
+        },
+        {
+          "checked": false,
+          "id": "geometry",
+          "value": "on"
+        },
+        {
+          "checked": true,
+          "id": "showParts",
+          "value": "on"
+        },
+        {
+          "checked": false,
+          "id": "diagnosticBall",
+          "value": "on"
+        },
+        {
+          "checked": false,
+          "id": "view",
+          "value": "source"
+        },
+        {
+          "checked": false,
+          "id": "zoom",
+          "value": "1"
+        },
+        {
+          "checked": false,
+          "id": "followBall",
+          "value": "on"
+        },
+        {
+          "checked": false,
+          "id": "import",
+          "value": ""
+        }
+      ],
+      "viewport": {
+        "dpr": 1,
+        "height": 720,
+        "width": 1280
+      },
+      "canvas": {
+        "height": 590,
+        "width": 840,
+        "x": 17,
+        "y": 103.5
+      },
+      "rawJsonSha256": {
+        "state": "59e7fa0382101e3ad760da9e7276b14f8b7387959a7462244b7f1aa965a0d4b6",
+        "events": "068c18af1ddc8c79d51b7afff844a7b2821bdcfaa469eff67bacf72d73afc37a",
+        "depth": "926e5905fe51a2c0734c59d281b0de05c25a6444ee22dc157de8bb42a57b8350",
+        "versions": "ee55f3d1a310b04ba990a1c25d7317da2ca671c1165688df1138f168651be009"
+      }
+    },
+    {
+      "capture": "17-live-paused-seed1",
+      "seed": 1,
+      "tick": 1098,
+      "rngU32": 1403919595,
+      "result": null,
+      "eventCount": 11,
+      "screenshotStateBinding": "paused",
+      "controls": [
+        {
+          "checked": false,
+          "id": "seed",
+          "value": "1"
+        },
+        {
+          "checked": false,
+          "id": "count",
+          "value": "10"
+        },
+        {
+          "checked": false,
+          "id": "seek",
+          "value": "1098"
+        },
+        {
+          "checked": false,
+          "id": "tick-input",
+          "value": "1098"
+        },
+        {
+          "checked": true,
+          "id": "art",
+          "value": "on"
+        },
+        {
+          "checked": false,
+          "id": "geometry",
+          "value": "on"
+        },
+        {
+          "checked": true,
+          "id": "showParts",
+          "value": "on"
+        },
+        {
+          "checked": false,
+          "id": "diagnosticBall",
+          "value": "on"
+        },
+        {
+          "checked": false,
+          "id": "view",
+          "value": "source"
+        },
+        {
+          "checked": false,
+          "id": "zoom",
+          "value": "1"
+        },
+        {
+          "checked": false,
+          "id": "followBall",
+          "value": "on"
+        },
+        {
+          "checked": false,
+          "id": "import",
+          "value": ""
+        }
+      ],
+      "viewport": {
+        "dpr": 1,
+        "height": 720,
+        "width": 1280
+      },
+      "canvas": {
+        "height": 590,
+        "width": 840,
+        "x": 17,
+        "y": 103.5
+      },
+      "rawJsonSha256": {
+        "state": "533baa051e28d9da6cce72206a506491c4cd28621b55dbd27abf2d9dc103c05e",
+        "events": "068c18af1ddc8c79d51b7afff844a7b2821bdcfaa469eff67bacf72d73afc37a",
+        "depth": "b4c3310e3d2e33ff453cb50896431f47bc94545bd17e1e37a9859bc90c022d2b",
+        "versions": "ee55f3d1a310b04ba990a1c25d7317da2ca671c1165688df1138f168651be009"
+      }
+    },
+    {
+      "capture": "18-seed1-lost-t1196-normal",
+      "seed": 1,
+      "tick": 1196,
+      "rngU32": 1403919595,
+      "result": {
+        "kind": "LOST",
+        "finalX": 33728.1429454,
+        "nearMissBucketIds": []
+      },
+      "eventCount": 13,
+      "screenshotStateBinding": "paused",
+      "controls": [
+        {
+          "checked": false,
+          "id": "seed",
+          "value": "1"
+        },
+        {
+          "checked": false,
+          "id": "count",
+          "value": "10"
+        },
+        {
+          "checked": false,
+          "id": "seek",
+          "value": "1196"
+        },
+        {
+          "checked": false,
+          "id": "tick-input",
+          "value": "1196"
+        },
+        {
+          "checked": true,
+          "id": "art",
+          "value": "on"
+        },
+        {
+          "checked": false,
+          "id": "geometry",
+          "value": "on"
+        },
+        {
+          "checked": true,
+          "id": "showParts",
+          "value": "on"
+        },
+        {
+          "checked": false,
+          "id": "diagnosticBall",
+          "value": "on"
+        },
+        {
+          "checked": false,
+          "id": "view",
+          "value": "source"
+        },
+        {
+          "checked": false,
+          "id": "zoom",
+          "value": "1"
+        },
+        {
+          "checked": false,
+          "id": "followBall",
+          "value": "on"
+        },
+        {
+          "checked": false,
+          "id": "import",
+          "value": ""
+        }
+      ],
+      "viewport": {
+        "dpr": 1,
+        "height": 720,
+        "width": 1280
+      },
+      "canvas": {
+        "height": 590,
+        "width": 840,
+        "x": 17,
+        "y": 103.5
+      },
+      "rawJsonSha256": {
+        "state": "577ad66fa3aaa2e4a6331238401559a6cb7df4a25f202e4a1a18ce8e9ed83a91",
+        "events": "060bcae2ff99c46f38a74956e9262d9b3d3cdd9a769db85d834fcaa4d0bf6390",
+        "depth": "6ee53e342e025ff56faaca143a1cbcef1e79f1e08e1d1402ead62915909a0ac7",
+        "versions": "ee55f3d1a310b04ba990a1c25d7317da2ca671c1165688df1138f168651be009"
+      }
+    },
+    {
+      "capture": "19-receiver02-seed2-t1273-normal",
+      "seed": 2,
+      "tick": 1273,
+      "rngU32": 1581479664,
+      "result": null,
+      "eventCount": 17,
+      "screenshotStateBinding": "paused",
+      "controls": [
+        {
+          "checked": false,
+          "id": "seed",
+          "value": "2"
+        },
+        {
+          "checked": false,
+          "id": "count",
+          "value": "10"
+        },
+        {
+          "checked": false,
+          "id": "seek",
+          "value": "1273"
+        },
+        {
+          "checked": false,
+          "id": "tick-input",
+          "value": "1273"
+        },
+        {
+          "checked": true,
+          "id": "art",
+          "value": "on"
+        },
+        {
+          "checked": false,
+          "id": "geometry",
+          "value": "on"
+        },
+        {
+          "checked": true,
+          "id": "showParts",
+          "value": "on"
+        },
+        {
+          "checked": false,
+          "id": "diagnosticBall",
+          "value": "on"
+        },
+        {
+          "checked": false,
+          "id": "view",
+          "value": "source"
+        },
+        {
+          "checked": false,
+          "id": "zoom",
+          "value": "1"
+        },
+        {
+          "checked": false,
+          "id": "followBall",
+          "value": "on"
+        },
+        {
+          "checked": false,
+          "id": "import",
+          "value": ""
+        }
+      ],
+      "viewport": {
+        "dpr": 1,
+        "height": 720,
+        "width": 1280
+      },
+      "canvas": {
+        "height": 590,
+        "width": 840,
+        "x": 17,
+        "y": 103.5
+      },
+      "rawJsonSha256": {
+        "state": "94c8f9b910529c9e2e3f5549de8b5f73cea8d94e376321f35704804bdded164d",
+        "events": "73a5572b0500f1f4bca8e75f72f5faa86e97a34ace30bbe38b14c1b08b2f64fc",
+        "depth": "f0af12795ed2638f0e10e067c8f26d8788a3484834f326741b1a46bb658cb3c3",
+        "versions": "ee55f3d1a310b04ba990a1c25d7317da2ca671c1165688df1138f168651be009"
+      }
+    },
+    {
+      "capture": "20-receiver02-seed2-t1273-detail",
+      "seed": 2,
+      "tick": 1273,
+      "rngU32": 1581479664,
+      "result": null,
+      "eventCount": 17,
+      "screenshotStateBinding": "paused",
+      "controls": [
+        {
+          "checked": false,
+          "id": "seed",
+          "value": "2"
+        },
+        {
+          "checked": false,
+          "id": "count",
+          "value": "10"
+        },
+        {
+          "checked": false,
+          "id": "seek",
+          "value": "1273"
+        },
+        {
+          "checked": false,
+          "id": "tick-input",
+          "value": "1273"
+        },
+        {
+          "checked": true,
+          "id": "art",
+          "value": "on"
+        },
+        {
+          "checked": false,
+          "id": "geometry",
+          "value": "on"
+        },
+        {
+          "checked": true,
+          "id": "showParts",
+          "value": "on"
+        },
+        {
+          "checked": false,
+          "id": "diagnosticBall",
+          "value": "on"
+        },
+        {
+          "checked": false,
+          "id": "view",
+          "value": "source"
+        },
+        {
+          "checked": false,
+          "id": "zoom",
+          "value": "2"
+        },
+        {
+          "checked": true,
+          "id": "followBall",
+          "value": "on"
+        },
+        {
+          "checked": false,
+          "id": "import",
+          "value": ""
+        }
+      ],
+      "viewport": {
+        "dpr": 1,
+        "height": 720,
+        "width": 1280
+      },
+      "canvas": {
+        "height": 590,
+        "width": 840,
+        "x": 17,
+        "y": 103.5
+      },
+      "rawJsonSha256": {
+        "state": "94c8f9b910529c9e2e3f5549de8b5f73cea8d94e376321f35704804bdded164d",
+        "events": "73a5572b0500f1f4bca8e75f72f5faa86e97a34ace30bbe38b14c1b08b2f64fc",
+        "depth": "1a669298a00a4dd3be4eddd3eef2dd46b4f0421602acf4ab424b93ef8c8f894a",
+        "versions": "ee55f3d1a310b04ba990a1c25d7317da2ca671c1165688df1138f168651be009"
+      }
+    },
+    {
+      "capture": "21-receiver02-seed2-t1274-detail",
+      "seed": 2,
+      "tick": 1274,
+      "rngU32": 1581479664,
+      "result": null,
+      "eventCount": 17,
+      "screenshotStateBinding": "paused",
+      "controls": [
+        {
+          "checked": false,
+          "id": "seed",
+          "value": "2"
+        },
+        {
+          "checked": false,
+          "id": "count",
+          "value": "10"
+        },
+        {
+          "checked": false,
+          "id": "seek",
+          "value": "1274"
+        },
+        {
+          "checked": false,
+          "id": "tick-input",
+          "value": "1274"
+        },
+        {
+          "checked": true,
+          "id": "art",
+          "value": "on"
+        },
+        {
+          "checked": false,
+          "id": "geometry",
+          "value": "on"
+        },
+        {
+          "checked": true,
+          "id": "showParts",
+          "value": "on"
+        },
+        {
+          "checked": false,
+          "id": "diagnosticBall",
+          "value": "on"
+        },
+        {
+          "checked": false,
+          "id": "view",
+          "value": "source"
+        },
+        {
+          "checked": false,
+          "id": "zoom",
+          "value": "2"
+        },
+        {
+          "checked": true,
+          "id": "followBall",
+          "value": "on"
+        },
+        {
+          "checked": false,
+          "id": "import",
+          "value": ""
+        }
+      ],
+      "viewport": {
+        "dpr": 1,
+        "height": 720,
+        "width": 1280
+      },
+      "canvas": {
+        "height": 590,
+        "width": 840,
+        "x": 17,
+        "y": 103.5
+      },
+      "rawJsonSha256": {
+        "state": "23875ced9c6274881ec49c1b6029e0e8b2a6e7aba721996ae94ea494876999af",
+        "events": "73a5572b0500f1f4bca8e75f72f5faa86e97a34ace30bbe38b14c1b08b2f64fc",
+        "depth": "11300a2b4f16e41a6aaef564bb14d10b3824b28a90ae75645375cba6c1216834",
+        "versions": "ee55f3d1a310b04ba990a1c25d7317da2ca671c1165688df1138f168651be009"
+      }
+    },
+    {
+      "capture": "22-receiver02-seed2-t1275-detail",
+      "seed": 2,
+      "tick": 1275,
+      "rngU32": 1581479664,
+      "result": {
+        "kind": "IN_BUCKET",
+        "bucketId": "receiver-02"
+      },
+      "eventCount": 20,
+      "screenshotStateBinding": "paused",
+      "controls": [
+        {
+          "checked": false,
+          "id": "seed",
+          "value": "2"
+        },
+        {
+          "checked": false,
+          "id": "count",
+          "value": "10"
+        },
+        {
+          "checked": false,
+          "id": "seek",
+          "value": "1275"
+        },
+        {
+          "checked": false,
+          "id": "tick-input",
+          "value": "1275"
+        },
+        {
+          "checked": true,
+          "id": "art",
+          "value": "on"
+        },
+        {
+          "checked": false,
+          "id": "geometry",
+          "value": "on"
+        },
+        {
+          "checked": true,
+          "id": "showParts",
+          "value": "on"
+        },
+        {
+          "checked": false,
+          "id": "diagnosticBall",
+          "value": "on"
+        },
+        {
+          "checked": false,
+          "id": "view",
+          "value": "source"
+        },
+        {
+          "checked": false,
+          "id": "zoom",
+          "value": "2"
+        },
+        {
+          "checked": true,
+          "id": "followBall",
+          "value": "on"
+        },
+        {
+          "checked": false,
+          "id": "import",
+          "value": ""
+        }
+      ],
+      "viewport": {
+        "dpr": 1,
+        "height": 720,
+        "width": 1280
+      },
+      "canvas": {
+        "height": 590,
+        "width": 840,
+        "x": 17,
+        "y": 103.5
+      },
+      "rawJsonSha256": {
+        "state": "4e58a8b6b557cf0cef97a11adccd812fd009a1e89c624235c14ec3b29d03a5c0",
+        "events": "c39e49f1717e5c7cde0020cecdcea841b9a180416a296961827ce2abaaf8a6c4",
+        "depth": "b7051bc99303f5f842b2e4441e2fb0f29912cc99372c440d7ad523c84d0c6a9b",
+        "versions": "ee55f3d1a310b04ba990a1c25d7317da2ca671c1165688df1138f168651be009"
+      }
+    },
+    {
+      "capture": "23-receiver02-parts-off-seed2-t1275-detail",
+      "seed": 2,
+      "tick": 1275,
+      "rngU32": 1581479664,
+      "result": {
+        "kind": "IN_BUCKET",
+        "bucketId": "receiver-02"
+      },
+      "eventCount": 20,
+      "screenshotStateBinding": "paused",
+      "controls": [
+        {
+          "checked": false,
+          "id": "seed",
+          "value": "2"
+        },
+        {
+          "checked": false,
+          "id": "count",
+          "value": "10"
+        },
+        {
+          "checked": false,
+          "id": "seek",
+          "value": "1275"
+        },
+        {
+          "checked": false,
+          "id": "tick-input",
+          "value": "1275"
+        },
+        {
+          "checked": true,
+          "id": "art",
+          "value": "on"
+        },
+        {
+          "checked": false,
+          "id": "geometry",
+          "value": "on"
+        },
+        {
+          "checked": false,
+          "id": "showParts",
+          "value": "on"
+        },
+        {
+          "checked": false,
+          "id": "diagnosticBall",
+          "value": "on"
+        },
+        {
+          "checked": false,
+          "id": "view",
+          "value": "source"
+        },
+        {
+          "checked": false,
+          "id": "zoom",
+          "value": "2"
+        },
+        {
+          "checked": true,
+          "id": "followBall",
+          "value": "on"
+        },
+        {
+          "checked": false,
+          "id": "import",
+          "value": ""
+        }
+      ],
+      "viewport": {
+        "dpr": 1,
+        "height": 720,
+        "width": 1280
+      },
+      "canvas": {
+        "height": 590,
+        "width": 840,
+        "x": 17,
+        "y": 103.5
+      },
+      "rawJsonSha256": {
+        "state": "4e58a8b6b557cf0cef97a11adccd812fd009a1e89c624235c14ec3b29d03a5c0",
+        "events": "c39e49f1717e5c7cde0020cecdcea841b9a180416a296961827ce2abaaf8a6c4",
+        "depth": "b7051bc99303f5f842b2e4441e2fb0f29912cc99372c440d7ad523c84d0c6a9b",
+        "versions": "ee55f3d1a310b04ba990a1c25d7317da2ca671c1165688df1138f168651be009"
+      }
+    },
+    {
+      "capture": "24-receiver02-seed2-t1275-normal",
+      "seed": 2,
+      "tick": 1275,
+      "rngU32": 1581479664,
+      "result": {
+        "kind": "IN_BUCKET",
+        "bucketId": "receiver-02"
+      },
+      "eventCount": 20,
+      "screenshotStateBinding": "paused",
+      "controls": [
+        {
+          "checked": false,
+          "id": "seed",
+          "value": "2"
+        },
+        {
+          "checked": false,
+          "id": "count",
+          "value": "10"
+        },
+        {
+          "checked": false,
+          "id": "seek",
+          "value": "1275"
+        },
+        {
+          "checked": false,
+          "id": "tick-input",
+          "value": "1275"
+        },
+        {
+          "checked": true,
+          "id": "art",
+          "value": "on"
+        },
+        {
+          "checked": false,
+          "id": "geometry",
+          "value": "on"
+        },
+        {
+          "checked": true,
+          "id": "showParts",
+          "value": "on"
+        },
+        {
+          "checked": false,
+          "id": "diagnosticBall",
+          "value": "on"
+        },
+        {
+          "checked": false,
+          "id": "view",
+          "value": "source"
+        },
+        {
+          "checked": false,
+          "id": "zoom",
+          "value": "1"
+        },
+        {
+          "checked": false,
+          "id": "followBall",
+          "value": "on"
+        },
+        {
+          "checked": false,
+          "id": "import",
+          "value": ""
+        }
+      ],
+      "viewport": {
+        "dpr": 1,
+        "height": 720,
+        "width": 1280
+      },
+      "canvas": {
+        "height": 590,
+        "width": 840,
+        "x": 17,
+        "y": 103.5
+      },
+      "rawJsonSha256": {
+        "state": "4e58a8b6b557cf0cef97a11adccd812fd009a1e89c624235c14ec3b29d03a5c0",
+        "events": "c39e49f1717e5c7cde0020cecdcea841b9a180416a296961827ce2abaaf8a6c4",
+        "depth": "bb9f9c32114dd432e0fdb1909700dcb2dc6a7e1e653dd8abebe9707c0eb7a477",
+        "versions": "ee55f3d1a310b04ba990a1c25d7317da2ca671c1165688df1138f168651be009"
+      }
+    },
+    {
+      "capture": "25-saved-ordinary-seed2771772266-lost-t1100-normal",
+      "seed": 2771772266,
+      "tick": 1100,
+      "rngU32": 973308942,
+      "result": {
+        "kind": "LOST",
+        "finalX": 32096.5552585,
+        "nearMissBucketIds": []
+      },
+      "eventCount": 14,
+      "screenshotStateBinding": "paused",
+      "controls": [
+        {
+          "checked": false,
+          "id": "seed",
+          "value": "2771772266"
+        },
+        {
+          "checked": false,
+          "id": "count",
+          "value": "10"
+        },
+        {
+          "checked": false,
+          "id": "seek",
+          "value": "1100"
+        },
+        {
+          "checked": false,
+          "id": "tick-input",
+          "value": "1100"
+        },
+        {
+          "checked": true,
+          "id": "art",
+          "value": "on"
+        },
+        {
+          "checked": false,
+          "id": "geometry",
+          "value": "on"
+        },
+        {
+          "checked": true,
+          "id": "showParts",
+          "value": "on"
+        },
+        {
+          "checked": false,
+          "id": "diagnosticBall",
+          "value": "on"
+        },
+        {
+          "checked": false,
+          "id": "view",
+          "value": "source"
+        },
+        {
+          "checked": false,
+          "id": "zoom",
+          "value": "1"
+        },
+        {
+          "checked": false,
+          "id": "followBall",
+          "value": "on"
+        },
+        {
+          "checked": false,
+          "id": "import",
+          "value": ""
+        }
+      ],
+      "viewport": {
+        "dpr": 1,
+        "height": 720,
+        "width": 1280
+      },
+      "canvas": {
+        "height": 590,
+        "width": 840,
+        "x": 17,
+        "y": 103.5
+      },
+      "rawJsonSha256": {
+        "state": "6cf173311fa8082e7e2b36ea754c9333afd49864108af604c296e17492e75dc8",
+        "events": "d6fcb96bf923d6855a426e90401c43d00e98847dc3eb9cf5ba1a5f02654e5e89",
+        "depth": "2b9c93782676fa2e6544f6f3972c963c6915e70c1970d30e8ddd77325eb4bfe3",
+        "versions": "ee55f3d1a310b04ba990a1c25d7317da2ca671c1165688df1138f168651be009"
+      }
+    },
+    {
+      "capture": "26-live-pause-reseek-seed1-t1098-normal",
+      "seed": 1,
+      "tick": 1098,
+      "rngU32": 1403919595,
+      "result": null,
+      "eventCount": 11,
+      "screenshotStateBinding": "paused",
+      "controls": [
+        {
+          "checked": false,
+          "id": "seed",
+          "value": "1"
+        },
+        {
+          "checked": false,
+          "id": "count",
+          "value": "10"
+        },
+        {
+          "checked": false,
+          "id": "seek",
+          "value": "1098"
+        },
+        {
+          "checked": false,
+          "id": "tick-input",
+          "value": "1098"
+        },
+        {
+          "checked": true,
+          "id": "art",
+          "value": "on"
+        },
+        {
+          "checked": false,
+          "id": "geometry",
+          "value": "on"
+        },
+        {
+          "checked": true,
+          "id": "showParts",
+          "value": "on"
+        },
+        {
+          "checked": false,
+          "id": "diagnosticBall",
+          "value": "on"
+        },
+        {
+          "checked": false,
+          "id": "view",
+          "value": "source"
+        },
+        {
+          "checked": false,
+          "id": "zoom",
+          "value": "1"
+        },
+        {
+          "checked": false,
+          "id": "followBall",
+          "value": "on"
+        },
+        {
+          "checked": false,
+          "id": "import",
+          "value": ""
+        }
+      ],
+      "viewport": {
+        "dpr": 1,
+        "height": 720,
+        "width": 1280
+      },
+      "canvas": {
+        "height": 590,
+        "width": 840,
+        "x": 17,
+        "y": 103.5
+      },
+      "rawJsonSha256": {
+        "state": "533baa051e28d9da6cce72206a506491c4cd28621b55dbd27abf2d9dc103c05e",
+        "events": "068c18af1ddc8c79d51b7afff844a7b2821bdcfaa469eff67bacf72d73afc37a",
+        "depth": "b4c3310e3d2e33ff453cb50896431f47bc94545bd17e1e37a9859bc90c022d2b",
+        "versions": "ee55f3d1a310b04ba990a1c25d7317da2ca671c1165688df1138f168651be009"
+      }
+    },
+    {
+      "capture": "27-frog01-at-drop-seed1-t0-detail",
+      "seed": 1,
+      "tick": 0,
+      "rngU32": 1,
+      "result": null,
+      "eventCount": 2,
+      "screenshotStateBinding": "paused",
+      "controls": [
+        {
+          "checked": false,
+          "id": "seed",
+          "value": "1"
+        },
+        {
+          "checked": false,
+          "id": "count",
+          "value": "10"
+        },
+        {
+          "checked": false,
+          "id": "seek",
+          "value": "0"
+        },
+        {
+          "checked": false,
+          "id": "tick-input",
+          "value": "0"
+        },
+        {
+          "checked": true,
+          "id": "art",
+          "value": "on"
+        },
+        {
+          "checked": false,
+          "id": "geometry",
+          "value": "on"
+        },
+        {
+          "checked": true,
+          "id": "showParts",
+          "value": "on"
+        },
+        {
+          "checked": false,
+          "id": "diagnosticBall",
+          "value": "on"
+        },
+        {
+          "checked": false,
+          "id": "view",
+          "value": "source"
+        },
+        {
+          "checked": false,
+          "id": "zoom",
+          "value": "2"
+        },
+        {
+          "checked": true,
+          "id": "followBall",
+          "value": "on"
+        },
+        {
+          "checked": false,
+          "id": "import",
+          "value": ""
+        }
+      ],
+      "viewport": {
+        "dpr": 1,
+        "height": 720,
+        "width": 1280
+      },
+      "canvas": {
+        "height": 590,
+        "width": 840,
+        "x": 17,
+        "y": 103.5
+      },
+      "rawJsonSha256": {
+        "state": "6ba1581224f0b44f0026d9477d576ccde49d4f094a51910f72a1f173b7fadc27",
+        "events": "34f1c39a57aff44c1e65c862608905c59af1ddfb11f64dfbd447ba59b4c1a5ac",
+        "depth": "4baba1077903c8cc578fa0aa25728b5bb3656a0ec2324e12f310b170f0ffe50b",
+        "versions": "ee55f3d1a310b04ba990a1c25d7317da2ca671c1165688df1138f168651be009"
+      }
+    },
+    {
+      "capture": "28-frog01-before-hit-seed1-t104-detail",
+      "seed": 1,
+      "tick": 104,
+      "rngU32": 1,
+      "result": null,
+      "eventCount": 2,
+      "screenshotStateBinding": "paused",
+      "controls": [
+        {
+          "checked": false,
+          "id": "seed",
+          "value": "1"
+        },
+        {
+          "checked": false,
+          "id": "count",
+          "value": "10"
+        },
+        {
+          "checked": false,
+          "id": "seek",
+          "value": "104"
+        },
+        {
+          "checked": false,
+          "id": "tick-input",
+          "value": "104"
+        },
+        {
+          "checked": true,
+          "id": "art",
+          "value": "on"
+        },
+        {
+          "checked": false,
+          "id": "geometry",
+          "value": "on"
+        },
+        {
+          "checked": true,
+          "id": "showParts",
+          "value": "on"
+        },
+        {
+          "checked": false,
+          "id": "diagnosticBall",
+          "value": "on"
+        },
+        {
+          "checked": false,
+          "id": "view",
+          "value": "source"
+        },
+        {
+          "checked": false,
+          "id": "zoom",
+          "value": "2"
+        },
+        {
+          "checked": true,
+          "id": "followBall",
+          "value": "on"
+        },
+        {
+          "checked": false,
+          "id": "import",
+          "value": ""
+        }
+      ],
+      "viewport": {
+        "dpr": 1,
+        "height": 720,
+        "width": 1280
+      },
+      "canvas": {
+        "height": 590,
+        "width": 840,
+        "x": 17,
+        "y": 103.5
+      },
+      "rawJsonSha256": {
+        "state": "3a0be3ef500f53d61c6f0656426c24d26cdda59c470707bb45a764108ca9d171",
+        "events": "34f1c39a57aff44c1e65c862608905c59af1ddfb11f64dfbd447ba59b4c1a5ac",
+        "depth": "106e7dd37e4cdda75f72d47223e6d5a30a45db5382e206bcd9587a54e9d03098",
+        "versions": "ee55f3d1a310b04ba990a1c25d7317da2ca671c1165688df1138f168651be009"
+      }
+    },
+    {
+      "capture": "29-frog01-after-hit-seed1-t106-detail",
+      "seed": 1,
+      "tick": 106,
+      "rngU32": 1586005467,
+      "result": null,
+      "eventCount": 3,
+      "screenshotStateBinding": "paused",
+      "controls": [
+        {
+          "checked": false,
+          "id": "seed",
+          "value": "1"
+        },
+        {
+          "checked": false,
+          "id": "count",
+          "value": "10"
+        },
+        {
+          "checked": false,
+          "id": "seek",
+          "value": "106"
+        },
+        {
+          "checked": false,
+          "id": "tick-input",
+          "value": "106"
+        },
+        {
+          "checked": true,
+          "id": "art",
+          "value": "on"
+        },
+        {
+          "checked": false,
+          "id": "geometry",
+          "value": "on"
+        },
+        {
+          "checked": true,
+          "id": "showParts",
+          "value": "on"
+        },
+        {
+          "checked": false,
+          "id": "diagnosticBall",
+          "value": "on"
+        },
+        {
+          "checked": false,
+          "id": "view",
+          "value": "source"
+        },
+        {
+          "checked": false,
+          "id": "zoom",
+          "value": "2"
+        },
+        {
+          "checked": true,
+          "id": "followBall",
+          "value": "on"
+        },
+        {
+          "checked": false,
+          "id": "import",
+          "value": ""
+        }
+      ],
+      "viewport": {
+        "dpr": 1,
+        "height": 720,
+        "width": 1280
+      },
+      "canvas": {
+        "height": 590,
+        "width": 840,
+        "x": 17,
+        "y": 103.5
+      },
+      "rawJsonSha256": {
+        "state": "0536798b73ff8583e0d74c608db0068e47359573ce3c44e5d3b1f70356bbedea",
+        "events": "6debd1a86c48034c9888bfa0a1faaeb8a10bd241ffc7f81e677225d76124f12a",
+        "depth": "04602de798f9301b263d493634338405065a5b4c2429a95ea67bbf813ff83968",
+        "versions": "ee55f3d1a310b04ba990a1c25d7317da2ca671c1165688df1138f168651be009"
+      }
+    },
+    {
+      "capture": "30-frog01-parts-off-seed1-t106-detail",
+      "seed": 1,
+      "tick": 106,
+      "rngU32": 1586005467,
+      "result": null,
+      "eventCount": 3,
+      "screenshotStateBinding": "paused",
+      "controls": [
+        {
+          "checked": false,
+          "id": "seed",
+          "value": "1"
+        },
+        {
+          "checked": false,
+          "id": "count",
+          "value": "10"
+        },
+        {
+          "checked": false,
+          "id": "seek",
+          "value": "106"
+        },
+        {
+          "checked": false,
+          "id": "tick-input",
+          "value": "106"
+        },
+        {
+          "checked": true,
+          "id": "art",
+          "value": "on"
+        },
+        {
+          "checked": false,
+          "id": "geometry",
+          "value": "on"
+        },
+        {
+          "checked": false,
+          "id": "showParts",
+          "value": "on"
+        },
+        {
+          "checked": false,
+          "id": "diagnosticBall",
+          "value": "on"
+        },
+        {
+          "checked": false,
+          "id": "view",
+          "value": "source"
+        },
+        {
+          "checked": false,
+          "id": "zoom",
+          "value": "2"
+        },
+        {
+          "checked": true,
+          "id": "followBall",
+          "value": "on"
+        },
+        {
+          "checked": false,
+          "id": "import",
+          "value": ""
+        }
+      ],
+      "viewport": {
+        "dpr": 1,
+        "height": 720,
+        "width": 1280
+      },
+      "canvas": {
+        "height": 590,
+        "width": 840,
+        "x": 17,
+        "y": 103.5
+      },
+      "rawJsonSha256": {
+        "state": "0536798b73ff8583e0d74c608db0068e47359573ce3c44e5d3b1f70356bbedea",
+        "events": "6debd1a86c48034c9888bfa0a1faaeb8a10bd241ffc7f81e677225d76124f12a",
+        "depth": "04602de798f9301b263d493634338405065a5b4c2429a95ea67bbf813ff83968",
+        "versions": "ee55f3d1a310b04ba990a1c25d7317da2ca671c1165688df1138f168651be009"
+      }
+    },
+    {
+      "capture": "31-frog01-after-seed1-t110-detail",
+      "seed": 1,
+      "tick": 110,
+      "rngU32": 1586005467,
+      "result": null,
+      "eventCount": 3,
+      "screenshotStateBinding": "paused",
+      "controls": [
+        {
+          "checked": false,
+          "id": "seed",
+          "value": "1"
+        },
+        {
+          "checked": false,
+          "id": "count",
+          "value": "10"
+        },
+        {
+          "checked": false,
+          "id": "seek",
+          "value": "110"
+        },
+        {
+          "checked": false,
+          "id": "tick-input",
+          "value": "110"
+        },
+        {
+          "checked": true,
+          "id": "art",
+          "value": "on"
+        },
+        {
+          "checked": false,
+          "id": "geometry",
+          "value": "on"
+        },
+        {
+          "checked": true,
+          "id": "showParts",
+          "value": "on"
+        },
+        {
+          "checked": false,
+          "id": "diagnosticBall",
+          "value": "on"
+        },
+        {
+          "checked": false,
+          "id": "view",
+          "value": "source"
+        },
+        {
+          "checked": false,
+          "id": "zoom",
+          "value": "2"
+        },
+        {
+          "checked": true,
+          "id": "followBall",
+          "value": "on"
+        },
+        {
+          "checked": false,
+          "id": "import",
+          "value": ""
+        }
+      ],
+      "viewport": {
+        "dpr": 1,
+        "height": 720,
+        "width": 1280
+      },
+      "canvas": {
+        "height": 590,
+        "width": 840,
+        "x": 17,
+        "y": 103.5
+      },
+      "rawJsonSha256": {
+        "state": "d60c9752a431ef913c93a2a7784fa8e1a6fe88fd5211dc6cddc6576a59feabdf",
+        "events": "6debd1a86c48034c9888bfa0a1faaeb8a10bd241ffc7f81e677225d76124f12a",
+        "depth": "400364bb6e4bcb5ffb3f896c1d3f8dafa3f31a4361e8c60eb69fec5715269bab",
+        "versions": "ee55f3d1a310b04ba990a1c25d7317da2ca671c1165688df1138f168651be009"
+      }
+    },
+    {
+      "capture": "32-frog01-after-hit-seed1-t106-normal",
+      "seed": 1,
+      "tick": 106,
+      "rngU32": 1586005467,
+      "result": null,
+      "eventCount": 3,
+      "screenshotStateBinding": "paused",
+      "controls": [
+        {
+          "checked": false,
+          "id": "seed",
+          "value": "1"
+        },
+        {
+          "checked": false,
+          "id": "count",
+          "value": "10"
+        },
+        {
+          "checked": false,
+          "id": "seek",
+          "value": "106"
+        },
+        {
+          "checked": false,
+          "id": "tick-input",
+          "value": "106"
+        },
+        {
+          "checked": true,
+          "id": "art",
+          "value": "on"
+        },
+        {
+          "checked": false,
+          "id": "geometry",
+          "value": "on"
+        },
+        {
+          "checked": true,
+          "id": "showParts",
+          "value": "on"
+        },
+        {
+          "checked": false,
+          "id": "diagnosticBall",
+          "value": "on"
+        },
+        {
+          "checked": false,
+          "id": "view",
+          "value": "source"
+        },
+        {
+          "checked": false,
+          "id": "zoom",
+          "value": "1"
+        },
+        {
+          "checked": false,
+          "id": "followBall",
+          "value": "on"
+        },
+        {
+          "checked": false,
+          "id": "import",
+          "value": ""
+        }
+      ],
+      "viewport": {
+        "dpr": 1,
+        "height": 720,
+        "width": 1280
+      },
+      "canvas": {
+        "height": 590,
+        "width": 840,
+        "x": 17,
+        "y": 103.5
+      },
+      "rawJsonSha256": {
+        "state": "0536798b73ff8583e0d74c608db0068e47359573ce3c44e5d3b1f70356bbedea",
+        "events": "6debd1a86c48034c9888bfa0a1faaeb8a10bd241ffc7f81e677225d76124f12a",
+        "depth": "00f41a3dad5ce0d21b54ca29ed3222454a023055625b32f88e2754fe97f37c4b",
+        "versions": "ee55f3d1a310b04ba990a1c25d7317da2ca671c1165688df1138f168651be009"
+      }
+    },
+    {
+      "capture": "33-arch-first-foot-seed1-t1007-normal",
+      "seed": 1,
+      "tick": 1007,
+      "rngU32": 3594602695,
+      "result": null,
+      "eventCount": 9,
+      "screenshotStateBinding": "paused",
+      "controls": [
+        {
+          "checked": false,
+          "id": "seed",
+          "value": "1"
+        },
+        {
+          "checked": false,
+          "id": "count",
+          "value": "10"
+        },
+        {
+          "checked": false,
+          "id": "seek",
+          "value": "1007"
+        },
+        {
+          "checked": false,
+          "id": "tick-input",
+          "value": "1007"
+        },
+        {
+          "checked": true,
+          "id": "art",
+          "value": "on"
+        },
+        {
+          "checked": false,
+          "id": "geometry",
+          "value": "on"
+        },
+        {
+          "checked": true,
+          "id": "showParts",
+          "value": "on"
+        },
+        {
+          "checked": false,
+          "id": "diagnosticBall",
+          "value": "on"
+        },
+        {
+          "checked": false,
+          "id": "view",
+          "value": "source"
+        },
+        {
+          "checked": false,
+          "id": "zoom",
+          "value": "1"
+        },
+        {
+          "checked": false,
+          "id": "followBall",
+          "value": "on"
+        },
+        {
+          "checked": false,
+          "id": "import",
+          "value": ""
+        }
+      ],
+      "viewport": {
+        "dpr": 1,
+        "height": 720,
+        "width": 1280
+      },
+      "canvas": {
+        "height": 590,
+        "width": 840,
+        "x": 17,
+        "y": 103.5
+      },
+      "rawJsonSha256": {
+        "state": "a9e6913060d51b7dfbb95060fcbeb972a200882e03075e774d2ebbcf775c7d49",
+        "events": "d8c90f70d663398a1caf951a1d308367761b485362224c238b2fc8746b1ff99d",
+        "depth": "875e1a39c5d49120e1dab796ce62ca22a7a6eefacda62afb7320c387053b60a9",
+        "versions": "ee55f3d1a310b04ba990a1c25d7317da2ca671c1165688df1138f168651be009"
+      }
+    },
+    {
+      "capture": "34-arch-third-foot-seed1-t1019-normal",
+      "seed": 1,
+      "tick": 1019,
+      "rngU32": 1403919595,
+      "result": null,
+      "eventCount": 11,
+      "screenshotStateBinding": "paused",
+      "controls": [
+        {
+          "checked": false,
+          "id": "seed",
+          "value": "1"
+        },
+        {
+          "checked": false,
+          "id": "count",
+          "value": "10"
+        },
+        {
+          "checked": false,
+          "id": "seek",
+          "value": "1019"
+        },
+        {
+          "checked": false,
+          "id": "tick-input",
+          "value": "1019"
+        },
+        {
+          "checked": true,
+          "id": "art",
+          "value": "on"
+        },
+        {
+          "checked": false,
+          "id": "geometry",
+          "value": "on"
+        },
+        {
+          "checked": true,
+          "id": "showParts",
+          "value": "on"
+        },
+        {
+          "checked": false,
+          "id": "diagnosticBall",
+          "value": "on"
+        },
+        {
+          "checked": false,
+          "id": "view",
+          "value": "source"
+        },
+        {
+          "checked": false,
+          "id": "zoom",
+          "value": "1"
+        },
+        {
+          "checked": false,
+          "id": "followBall",
+          "value": "on"
+        },
+        {
+          "checked": false,
+          "id": "import",
+          "value": ""
+        }
+      ],
+      "viewport": {
+        "dpr": 1,
+        "height": 720,
+        "width": 1280
+      },
+      "canvas": {
+        "height": 590,
+        "width": 840,
+        "x": 17,
+        "y": 103.5
+      },
+      "rawJsonSha256": {
+        "state": "c11b35acad13df682f517f1957a595d25b38cf7d08af8266d13786fce112fdac",
+        "events": "068c18af1ddc8c79d51b7afff844a7b2821bdcfaa469eff67bacf72d73afc37a",
+        "depth": "8c98efe2a446f52ced64de0489ad73b5be07c554132b2135056448c90d143a85",
+        "versions": "ee55f3d1a310b04ba990a1c25d7317da2ca671c1165688df1138f168651be009"
+      }
+    }
+  ]
+}

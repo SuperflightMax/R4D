@@ -1,0 +1,60 @@
+{
+  "binding": {
+    "schema": "r4d.p4.transfer-input-binding.v1",
+    "board": "04",
+    "name": "Water",
+    "trial": "trial-02",
+    "canonicalRevision": "b1382dd4c230815a019e52e2ec4617ef705661d5",
+    "p1Commit": "4b47db04c7140ebf88f69b91faa0b790d46f22ec",
+    "coreCommit": "5a6fa03f1cdb3de88a2d9c7dbe795eb8e2a7f023",
+    "corePackageTree": "008d16a80a26bb77d562a45218b01da09b0d9ff0",
+    "nativeBundleSha256": "8843446996582eaccbd9ff63d3147d74b7eca9a614d8e0df16851d1d89d46f50",
+    "viewMathSha256": "96f01cc2093c353ff958cb906fe0c8ae93412425d0f7a5ec7cca0f2bf9f1aa5e",
+    "sourceSha256": "8da65c76c110b6ba7cefe113564fe12feed4428e84e84835f033e7da31d3b80d",
+    "config.json": "9048b28af2923c93d8be772367beeb828f1e4513a6298af1c803379f77d3e50c",
+    "p1-manifest.json": "48c4fef26fd8c94f06c278851222ef285edda54ac14e53da8908f4ee663dc420",
+    "files": {
+      "config.json": {
+        "bytes": 27231,
+        "sha256": "9048b28af2923c93d8be772367beeb828f1e4513a6298af1c803379f77d3e50c",
+        "origin": "experiments/p1-collider-mapping/clean-repeat-01/simulation/boards/04/trial-02/config.json"
+      },
+      "p1-manifest.json": {
+        "bytes": 15870,
+        "sha256": "48c4fef26fd8c94f06c278851222ef285edda54ac14e53da8908f4ee663dc420",
+        "origin": "experiments/p1-collider-mapping/clean-repeat-01/simulation/boards/04/trial-02/manifest.json"
+      },
+      "original.jpg": {
+        "bytes": 527016,
+        "sha256": "8da65c76c110b6ba7cefe113564fe12feed4428e84e84835f033e7da31d3b80d",
+        "origin": "K:\\Agents\\R4D\\Assets\\perspective\\04-water-temple.jpg"
+      }
+    },
+    "baselineConsumer": "7d2344c1a8959f73ff26af5d3aba7dd02eb0e971",
+    "delivery": "LOCAL_HELD; no remote write",
+    "artStatus": "Original read-only JPG is temporary background, not extracted art"
+  },
+  "artBinding": {
+    "commit": "0d7ac6e6934d30a8f149124b1129036287d8baa4",
+    "manifestPath": "experiments/p4-extracted-objects/transfer-water-dark/water/artwork/starter-v01/manifest.json",
+    "manifestSha256": "9b67bdec90fe37f24e5bc182064331d96e847316a19b832e581a740dcd4095f6",
+    "version": "p4-water-starter-v01",
+    "scope": "PARTIAL"
+  },
+  "artCoverage": {
+    "status": "small original-method transfer packet, actual Pixi seam pending; not full extraction or Art PASS",
+    "remaining": [
+      "19 other floor objects remain baked; receiver02 rear/water/sides and three other basins remain baked",
+      "actual arch07 gap motion/alpha/depth not checked by Artist; use existing ordinary seed1 ticks1009-1020",
+      "receiver02 approach/capture/front-rim only when actual silhouette overlaps; native seed2/t1275 is supplied by TQA, not Artist QA",
+      "same native/source view and art toggles must retain common config/state/PRNG",
+      "no full Water/Dark extraction, final Art or dynamic QA PASS yet"
+    ]
+  },
+  "configCounts": {
+    "pins": 6,
+    "segments": 106,
+    "buckets": 4,
+    "drops": 1
+  }
+}
