@@ -118,6 +118,8 @@ if (preview.manifestUrl) {
 
 const fieldGroundPoints = [...targets.objects.flatMap(o => o.sourcePx.groundPolygon),
   ...actual.board.segments.flatMap(s => [point(s.x1, s.y1), point(s.x2, s.y2)])];
+// Scene construction is still at the accepted initial drop here. These bounds
+// are frozen once; replay, ticks and view toggles never recenter the camera.
 const fieldImportantParts = sprites.map(item => importantPartBounds(item.spec, item.texture,
   { x: item.sprite.x, y: item.sprite.y, scale: item.sprite.scale.x })).filter(Boolean);
 const fieldDomain = fieldFramingBounds(fieldGroundPoints, fieldImportantParts);
@@ -199,7 +201,7 @@ el('coverage').textContent = `${pinBodies.size}/${expectedBodies} объекто
 el('notice').textContent = preview.warnings.join(' ') + (!manifest ? ' Шарик — диагностический контур; финальный арт ещё не подключён.' : ' Подключён ранний generated набор; actual качество/parts coverage проверяется.');
 const clippedForegroundParts = (manifest?.instances ?? []).filter(i => i.sourceClipPx).map(i => ({ instanceId: i.id, parentId: i.parentId, textureId: i.textureId, role: i.role, ...i.sourceClipPx }));
 el('diagnostics').textContent = JSON.stringify({ pins, earlyFloor: preview.earlyFloor, nativeCounts: inputs.counts, footprintFits, clippedForegroundParts,
-  fieldFraming: { domainSourcePx: fieldDomain, importantPartsSourcePx: fieldImportantParts, rule: 'Actual geometry plus receiver/foreground alpha>=16 visible bounds; fixed across Art/Geometry toggles' },
+  fieldFraming: { domainSourcePx: fieldDomain, importantPartsSourcePx: fieldImportantParts, rule: 'Actual geometry plus receiver/foreground alpha>=16 and ball alpha>0 at accepted initial drop; initialized once, fixed across ticks and view toggles' },
   eventFrameRule: 'collision event tick t → state t+1; lifecycle events retain state tick', manifestStatus: manifest?.status ?? null }, null, 2);
 new ResizeObserver(layout).observe(host);
 app.ticker.add(() => {

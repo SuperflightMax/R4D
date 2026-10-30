@@ -53,6 +53,24 @@
           "sha256": "b35049193df8f8381332f4eacdd8c932945a8bf77957828e8a37199281e22cf6"
         }
       ]
+    },
+    {
+      "finding": "D01-start-framing",
+      "kind": "framing",
+      "description": "Apply same authored alpha>0 ball-envelope policy once at accepted Dark drop; measured Dark art/projection, no Water bound constant",
+      "methodChanged": false,
+      "sourceFiles": [
+        {
+          "path": "src/app.mjs",
+          "bytes": 12840,
+          "sha256": "dcc391a0aa65d09cc27dcefff62f92cad28ffea0269f7dc2842c1d898deeef34"
+        },
+        {
+          "path": "src/framing.mjs",
+          "bytes": 1331,
+          "sha256": "34eacade52288aa5def0504271ad2573f6b55dc0bdec267c19d43a18981bcad5"
+        }
+      ]
     }
   ]
 }
