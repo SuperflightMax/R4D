@@ -1,0 +1,106 @@
+{
+  "image": "arch-mid-v2",
+  "sha256": "b8de40ba0fc1a0dfa7d47a7840042c482416667705cfd5ddbcbc2942c63af2c3",
+  "sizePx": [
+    1388,
+    1133
+  ],
+  "visibleBoundsAlpha16": [
+    65,
+    139,
+    1257,
+    882
+  ],
+  "contactContourAlpha128Rows": [
+    {
+      "y": 950,
+      "left": [
+        71.0,
+        373.0
+      ],
+      "right": [
+        1013.0,
+        1318.0
+      ]
+    },
+    {
+      "y": 970,
+      "left": [
+        66.0,
+        368.0
+      ],
+      "right": [
+        1019.0,
+        1320.0
+      ]
+    },
+    {
+      "y": 990,
+      "left": [
+        74.0,
+        363.0
+      ],
+      "right": [
+        1025.0,
+        1310.0
+      ]
+    },
+    {
+      "y": 1000,
+      "left": [
+        83.0,
+        358.0
+      ],
+      "right": [
+        1028.0,
+        1301.0
+      ]
+    },
+    {
+      "y": 1010,
+      "left": [
+        94.0,
+        348.0
+      ],
+      "right": [
+        1035.0,
+        1289.0
+      ]
+    },
+    {
+      "y": 1018,
+      "left": [
+        106.0,
+        336.0
+      ],
+      "right": [
+        1049.0,
+        1274.0
+      ]
+    },
+    {
+      "y": 1020,
+      "left": [
+        -1,
+        -1
+      ],
+      "right": [
+        -1,
+        -1
+      ]
+    }
+  ],
+  "provisionalGroundAnchorPx": [
+    693,
+    925
+  ],
+  "provisionalFootprintWidthPx": 1257,
+  "provisionalFootprintDepthPx": 190,
+  "basis": "Outer foot span and lowest visible front contact measured from generated alpha. Rear ground edge is occluded by supports; ground center/depth inferred from visible cap plane compression, not independent3D recovery.",
+  "uncertaintyTexturePx": 30,
+  "limits": [
+    "Ground depth/anchor provisional; compare actual native contact frames before artistic PASS",
+    "Full transparent void and revised foot/gap proportions are usable for a limited whole-sprite baseline",
+    "Separate native left/lintel edits changed canvas and are not silently substituted"
+  ]
+}

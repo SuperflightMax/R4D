@@ -1,0 +1,15 @@
+# Water mini03 — limited whole arch07 baseline
+
+Requested by Lead for ordinary seed1,states998–1031. Consume `asset-manifest.mini-03.json`: **44339bytes**, SHA256 **`50dceb14be6f71a429231a89c44c67d75198e1c9dd9d425c6e8c1747f251803f`**. It extends frozen mini02 with one whole gate and two support-shadow instances;9uniquePNG/15textureIDs/30instances. Schema, target IDs and all PNG pins pass. Mini01/02 and their selected pixels remain unchanged.
+
+New selected file: `E:/R4D/perspective/p5-runtime/asset-artist/transfer-water-dark/water/selected/mini-set-03/arch-mid-v2.png`,1388x1133,1176242bytes,SHA256`b8de40ba0fc1a0dfa7d47a7840042c482416667705cfd5ddbcbc2942c63af2c3`. This is an unchanged native generated corrected gate, not an original cutout. The whole gate is the only selected gate raster. Left/right/lintel native edits remain preserved candidates; changed canvas in left/lintel means no registration guarantee or silent substitution.
+
+`ARCH_BASELINE.mini-03.json`:1404bytes,SHA256`2ff4fc0cd92d391407f23b2e6604c1df16b85595c342a67b6d2fe628f9140192`. Exact native/source assembly and derived uniform scale are recorded there and in `BINDINGS.mini-03.json`.
+
+Texture-local ground anchor[693,925],support span1257x190. Outer foot width and front lower contact are measured from the generated alpha contour; front contact samples end byY1019. The rear ground edge is hidden by the opaque posts. Therefore rear-plane depth and anchor are a **provisional inference** from the visible cap-plane compression, with approximately±30texturepx uncertainty, not a recovered3D support plane. All actual alpha rows and basis are retained in `records/arch-mid-v2-ground-proxy.json`.
+
+At exact arch07 source footprint123x25 the uniform scale is0.09785202863961855,rendered depth18.5918854415275sourcepx,residual **-6.4081145584735sourcepx**,anchor uncertainty approximately **±2.9355608591885565sourcepx**. This known limitation must remain visible in the baseline assessment. No XYwarp, rotation, target displacement or per-state offset conceals it. The generated void is genuinely alpha0 at[693,850]and[693,990]; samples do not prove all opening contacts.
+
+The whole body uses the existing center-depth sprite baseline. Shadows are independently bound to exact `arch-07-left-foot` and `arch-07-right-foot`. Arch assembly is registration only; the accepted two supports,2Dcollapse and absence of a lintel/height collider remain unchanged. No new sorting principle is introduced or declared sufficient. Capture the actual original baseline before assessing improved parts or any substantial preparation/sorting variant.
+
+Builder/QA next: native motion at the specified ordinary seed/window, front/side approaches to both supports, partial occlusion and the visible void/lintel. Keep exact adjacent states,ArtOff/Geometry above art and unchanged RNG/state. Whole-sprite sorting and ground-depth approximation may fail; no artistic or contact PASS is claimed. No actual rebuilt mini03 inspection by Artist. Other missing arches/frogs,environment walls/near edges and receiver checks remain continuing work. Serverwrites0,tokenGranted=false.
