@@ -1,6 +1,6 @@
 # Water w05 — separate post-w04 receiver-parts correction
 
-30 октября 2026, Europe/Kyiv. Frozen candidate ready for independent QA. **Producer narrow approach inspection complete; independent W04-B01/W04-V01 closure pending.** No FullArt/contact/all-receiver/occlusion/order PASS. Success in this successor is not credited to the original w04 method/baseline. W04 and its failure evidence remain immutable. ServerWrites0/tokenGranted=false.
+30 октября 2026, Europe/Kyiv. Frozen candidate ready for independent QA. **Producer narrow approach inspection complete; independent saved receiver-pop repro CLOSED scoped on w05 by TQA17bbf8ae/VQA8a65d131; front-hide remains NOTE/UNVERIFIED.** No FullArt/contact/all-receiver/occlusion/order PASS. Success in this successor is not credited to the original w04 method/baseline. W04 and its failure evidence remain immutable. ServerWrites0/tokenGranted=false.
 
 ## Exact pins and ownership
 
@@ -47,3 +47,5 @@ W04 remains URL55192/PID37932/session37240, owner archive `water/preview-owners/
 Build guard01:36:39UTC RAM9.455/31.907GiB,CPU23%/aggregate14.33%,WS28.254/499processes,C13.790/D14.618/E9.217GiB; own2RAM/.4E+4/2concurrent allowance. Browser guard01:38:07 RAM9.234,CPU3%/aggregate6.83%,WS28.585/505,E9.184; own1.5/.15+4/2 passed. All new source/runtime/TEMP/output own E; unchanged host/model/effort/settings/worktree/branch/native cache. Denial0/serverWrites0/tokenfalse.
 
 Next: independent exact w05 TQA/VQA, actual seams/corners/other accessible receiver approaches, remaining families/gates/environment. [Original w04](HANDOFF_W04.md) remains separate; no full transfer completion claim.
+
+Independent scoped closure confirmed from REPORT_W05.md commits17bbf8ae6e2d9e8a49e42933cfe2b4c089b8a3f3 and8a65d1316f50a843061a27e6b09224f3659be744. Original Producer evidence predates closure; only old receiver02poprepro/approach closed, no fullart/front-volumePASS. Current [w06](HANDOFF_W06.md) separately expands families/foreground; w05 remains immutable/live, exact owner snapshot water/preview-owners/w05-pid38924.json.
