@@ -16,3 +16,5 @@ This needs a small renderer implementation addition for the already declared tar
 Dark d01 was frozen and actual-checked with the **original** receiver parts/rules first; no correction above is integrated in it. Source/runtime implementation is not changed by this plan. Actor rim delivery through Lead is the next input; no native trigger/geometry/RNG adjustment or depth tuned to individual ticks/seeds.
 
 Plan accepted by Lead; minimal source implementation is now committed in eedd183a2652a8b9a2dce60118c0f32c8755d3b7. [RECEIVER_FLOOR_CHECKPOINT.md](RECEIVER_FLOOR_CHECKPOINT.md) records actual Pixi ordering, unchanged placement and exact source/evidence pins. W04/d01 remain original; no improved frozen candidate until registered rim-only delivery. Earlier statements above describe the original review/plan state.
+
+Rim input subsequently received at Artist9647869d6dbf672ee5922b0fc57df254b9fdbb93. Separate [w05 handoff](HANDOFF_W05.md) now records the assembled correction and actual narrow approach; earlier rim-pending flags are historical checkpoint status. Independent closure remains separate.

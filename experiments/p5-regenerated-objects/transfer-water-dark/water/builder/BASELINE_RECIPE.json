@@ -110,5 +110,19 @@
     "improvedPartsIntegrated": false,
     "sortingMethodChanged": false,
     "status": "Partial baseline; provisional ground-depth residual; W04-B01 and independent QA open"
-  }
+  },
+  "postBaselineCandidates": [
+    {
+      "id": "w05",
+      "baseline": "w04",
+      "consumerCommit": "ce110a387919bbb10c467c70afce678f8b4ee4a7",
+      "artistCommit": "9647869d6dbf672ee5922b0fc57df254b9fdbb93",
+      "fileIndexSha256": "dd5a85b7187b90197527fef5763fd31a64b16ae7e84f53a092a33674dd0031b8",
+      "kind": "receiver-base-rim-front-correction",
+      "originalBaselineSuccessCredit": false,
+      "newRoleSchemaRank": false,
+      "sortingPrincipleChanged": false,
+      "independentClosure": false
+    }
+  ]
 }

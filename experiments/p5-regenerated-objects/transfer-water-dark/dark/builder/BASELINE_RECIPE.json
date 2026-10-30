@@ -104,5 +104,19 @@
     "knownFloorRegistrationIncomplete": true,
     "predecessor": "d00",
     "status": "Partial baseline;D01-L01/D01-B01 OPEN;independentQA pending"
-  }
+  },
+  "postBaselineCandidates": [
+    {
+      "id": "d02",
+      "baseline": "d01",
+      "consumerCommit": "ce110a387919bbb10c467c70afce678f8b4ee4a7",
+      "artistCommit": "9647869d6dbf672ee5922b0fc57df254b9fdbb93",
+      "fileIndexSha256": "0fcf214387311490744ff1630052eda287b48841b6404c5896eec071359a6c0c",
+      "kind": "floor-art-only-correction",
+      "originalBaselineSuccessCredit": false,
+      "newRoleSchemaRank": false,
+      "sortingPrincipleChanged": false,
+      "independentClosure": false
+    }
+  ]
 }
