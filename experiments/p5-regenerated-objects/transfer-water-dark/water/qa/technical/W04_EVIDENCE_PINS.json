@@ -1,0 +1,577 @@
+{
+  "candidate": "w04",
+  "consumerCommit": "48763f47d1e21e32334df3427209181a5a6114de",
+  "artist": {
+    "commit": "541085603e01e23b076fe33ff3c9991822c0bce2",
+    "path": "experiments/p5-regenerated-objects/transfer-water-dark/water/asset-artist/asset-manifest.mini-03.json",
+    "sourceSha256": "50dceb14be6f71a429231a89c44c67d75198e1c9dd9d425c6e8c1747f251803f",
+    "sourceBytes": 44339,
+    "stagedSha256": "e982264b077f4b55ebc0b3f53f4bceffbdb96cc1cd383eefd5831dfab1baf6d5",
+    "stagedBytes": 30754,
+    "supporting": [
+      {
+        "path": "experiments/p5-regenerated-objects/transfer-water-dark/water/asset-artist/ARCH_BASELINE.mini-03.json",
+        "materialized": "ARCH_BASELINE.json",
+        "bytes": 1404,
+        "sha256": "2ff4fc0cd92d391407f23b2e6604c1df16b85595c342a67b6d2fe628f9140192"
+      },
+      {
+        "path": "experiments/p5-regenerated-objects/transfer-water-dark/water/asset-artist/BINDINGS.mini-03.json",
+        "materialized": "BINDINGS.json",
+        "bytes": 13162,
+        "sha256": "e973a416e6b30c7f194324ba89a25978417d20106a990c74b4e532a2825704a7"
+      },
+      {
+        "path": "experiments/p5-regenerated-objects/transfer-water-dark/water/asset-artist/records/arch-mid-v2-ground-proxy.json",
+        "materialized": "arch-ground-proxy.json",
+        "bytes": 1916,
+        "sha256": "94dd665f10546b42690990d4f77344effdf307bf1b30a24579761dcf8a6d918c"
+      },
+      {
+        "path": "experiments/p5-regenerated-objects/transfer-water-dark/water/asset-artist/HANDOFF_MINI_03_GATE_BASELINE.md",
+        "materialized": "HANDOFF.md",
+        "bytes": 3136,
+        "sha256": "20b6479a7fbc28718c140b2abb2ebd10f53690c08256ff8b46c1d0cfb4bfb9a1"
+      },
+      {
+        "path": "experiments/p5-regenerated-objects/transfer-water-dark/water/asset-artist/RECEIVER_ANCHOR_POLICY.mini-02.json",
+        "materialized": "RECEIVER_ANCHOR_POLICY.json",
+        "bytes": 6308,
+        "sha256": "a9756c0bc381ed4aefe19bdde2c335a746e2d5467a21557f73c75ab8e2f08312"
+      },
+      {
+        "path": "experiments/p5-regenerated-objects/transfer-water-dark/water/asset-artist/SELECTED.mini-02.json",
+        "materialized": "SELECTED.mini-02.json",
+        "bytes": 4101,
+        "sha256": "ce01115f88b57fbcb5e26042ab61114dbb723feeaa50b4a01c226e9fb60c48b6"
+      }
+    ],
+    "transformation": "Exact final texture bytes; file URLs normalized; full provenance kept outside web root with per-texture digest"
+  },
+  "oracleCommit": "761e6087c902fe5ea941b90b5ce4d72383a0d755",
+  "priorActualQa": "b16653cfecc5ecd8f94cf41fbe2d5c0f353dba76",
+  "url": "http://127.0.0.1:55192/",
+  "fileIndex": {
+    "bytes": 6632,
+    "sha256": "c1c983dbddaaf556c5000dc9463df262fdc38444b2826a5883a2800b78b70554"
+  },
+  "previewSidecar": {
+    "bytes": 14353,
+    "sha256": "e6cc30c5cc6a6489dbbda931a63e3849448acb4697e7123631c8e47eb5db95b2",
+    "servedFromPublic": false
+  },
+  "publicFiles": 21,
+  "unchangedFromW01": 14,
+  "counts": {
+    "textures": 15,
+    "png": 9,
+    "instances": 30
+  },
+  "snapshots": 37,
+  "allSampledStateConfigRngEventsExact": true,
+  "loadedArtistManifestExact": true,
+  "controllerBlobUnchangedFromW01": "5f2e1ea73ee3bfda9319fcb7d3489633585fc584",
+  "newOracleRuns": 0,
+  "invariantPairs": 10,
+  "findings": [
+    {
+      "id": "W04-TQA-V01",
+      "status": "OPEN",
+      "target": "receiver-02",
+      "repro": {
+        "seed": 2,
+        "ticks": [
+          1272,
+          1273,
+          1274,
+          1275
+        ]
+      },
+      "observed": "Sphere effectively hidden over painted water in1272-1274, visible at1275",
+      "classification": "baseline part preparation / whole back raster at one part depth; not native/trigger failure or lost -1/+1 offset",
+      "depths": {
+        "center": 35187.089912187264,
+        "radius": 30.637312276520895,
+        "back": 35156.45259991074,
+        "front": 35217.727224463786
+      },
+      "pixelChecks": [
+        {
+          "tick": 1272,
+          "nativeY": 35145.6763326,
+          "parts": [
+            {
+              "id": "receiver-02-back",
+              "offset": -1,
+              "calculatedDepth": 35156.45259991074,
+              "aboveBallByDepth": true,
+              "ballVisualCenterTexturePx": [
+                561.9933353542593,
+                419.94232261156685
+              ],
+              "centerRGBA": [
+                2,
+                108,
+                116,
+                253
+              ],
+              "coreSamplesAlpha255": 0,
+              "coreSamplesAlpha16OrMore": 535,
+              "sampleAlphaMin": 252,
+              "sampleAlphaMax": 253,
+              "sampleAlphaMean": 252.6785046728972,
+              "coreSamplesTotal": 535
+            },
+            {
+              "id": "receiver-02-front",
+              "offset": 1,
+              "calculatedDepth": 35217.727224463786,
+              "aboveBallByDepth": true,
+              "ballVisualCenterTexturePx": [
+                561.9933353542593,
+                419.94232261156685
+              ],
+              "centerRGBA": [
+                0,
+                0,
+                0,
+                0
+              ],
+              "coreSamplesAlpha255": 0,
+              "coreSamplesAlpha16OrMore": 0,
+              "sampleAlphaMin": 0,
+              "sampleAlphaMax": 0,
+              "sampleAlphaMean": 0,
+              "coreSamplesTotal": 535
+            }
+          ]
+        },
+        {
+          "tick": 1273,
+          "nativeY": 35149.985518,
+          "parts": [
+            {
+              "id": "receiver-02-back",
+              "offset": -1,
+              "calculatedDepth": 35156.45259991074,
+              "aboveBallByDepth": true,
+              "ballVisualCenterTexturePx": [
+                573.6961644075571,
+                428.2235481864552
+              ],
+              "centerRGBA": [
+                0,
+                123,
+                132,
+                253
+              ],
+              "coreSamplesAlpha255": 0,
+              "coreSamplesAlpha16OrMore": 535,
+              "sampleAlphaMin": 252,
+              "sampleAlphaMax": 253,
+              "sampleAlphaMean": 252.603738317757,
+              "coreSamplesTotal": 535
+            },
+            {
+              "id": "receiver-02-front",
+              "offset": 1,
+              "calculatedDepth": 35217.727224463786,
+              "aboveBallByDepth": true,
+              "ballVisualCenterTexturePx": [
+                573.6961644075571,
+                428.2235481864552
+              ],
+              "centerRGBA": [
+                0,
+                0,
+                0,
+                0
+              ],
+              "coreSamplesAlpha255": 0,
+              "coreSamplesAlpha16OrMore": 0,
+              "sampleAlphaMin": 0,
+              "sampleAlphaMax": 0,
+              "sampleAlphaMean": 0,
+              "coreSamplesTotal": 535
+            }
+          ]
+        },
+        {
+          "tick": 1274,
+          "nativeY": 35154.3192034,
+          "parts": [
+            {
+              "id": "receiver-02-back",
+              "offset": -1,
+              "calculatedDepth": 35156.45259991074,
+              "aboveBallByDepth": true,
+              "ballVisualCenterTexturePx": [
+                585.4122141272617,
+                436.56340738361354
+              ],
+              "centerRGBA": [
+                2,
+                130,
+                138,
+                253
+              ],
+              "coreSamplesAlpha255": 0,
+              "coreSamplesAlpha16OrMore": 535,
+              "sampleAlphaMin": 252,
+              "sampleAlphaMax": 253,
+              "sampleAlphaMean": 252.54392523364487,
+              "coreSamplesTotal": 535
+            },
+            {
+              "id": "receiver-02-front",
+              "offset": 1,
+              "calculatedDepth": 35217.727224463786,
+              "aboveBallByDepth": true,
+              "ballVisualCenterTexturePx": [
+                585.4122141272617,
+                436.56340738361354
+              ],
+              "centerRGBA": [
+                0,
+                0,
+                0,
+                0
+              ],
+              "coreSamplesAlpha255": 0,
+              "coreSamplesAlpha16OrMore": 0,
+              "sampleAlphaMin": 0,
+              "sampleAlphaMax": 0,
+              "sampleAlphaMean": 0,
+              "coreSamplesTotal": 535
+            }
+          ]
+        },
+        {
+          "tick": 1275,
+          "nativeY": 35158.6773888,
+          "parts": [
+            {
+              "id": "receiver-02-back",
+              "offset": -1,
+              "calculatedDepth": 35156.45259991074,
+              "aboveBallByDepth": false,
+              "ballVisualCenterTexturePx": [
+                597.1416504894967,
+                444.96212119253545
+              ],
+              "centerRGBA": [
+                2,
+                125,
+                133,
+                253
+              ],
+              "coreSamplesAlpha255": 0,
+              "coreSamplesAlpha16OrMore": 535,
+              "sampleAlphaMin": 252,
+              "sampleAlphaMax": 253,
+              "sampleAlphaMean": 252.45607476635513,
+              "coreSamplesTotal": 535
+            },
+            {
+              "id": "receiver-02-front",
+              "offset": 1,
+              "calculatedDepth": 35217.727224463786,
+              "aboveBallByDepth": true,
+              "ballVisualCenterTexturePx": [
+                597.1416504894967,
+                444.96212119253545
+              ],
+              "centerRGBA": [
+                0,
+                0,
+                0,
+                0
+              ],
+              "coreSamplesAlpha255": 0,
+              "coreSamplesAlpha16OrMore": 0,
+              "sampleAlphaMin": 0,
+              "sampleAlphaMax": 0,
+              "sampleAlphaMean": 0,
+              "coreSamplesTotal": 535
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "gate": {
+    "seed": 1,
+    "contactStateTriplets": [
+      [
+        1012,
+        1013,
+        1014
+      ],
+      [
+        1018,
+        1019,
+        1020
+      ]
+    ],
+    "motion": [
+      998,
+      1031
+    ],
+    "scope": "Partial hide/reveal and supported pass observed, no whole-sphere loss over open floor in selected frames; no full gate/height/art PASS",
+    "wholeSpriteBaseline": true,
+    "targetDepthSourcePx": 25,
+    "authoredDepthSourcePx": 18.591885441527523,
+    "depthResidualSourcePx": -6.4081145584735,
+    "provisionalAnchorUncertaintySourcePx": 2.936
+  },
+  "unverified": [
+    "receiver01/03/04 entries and all front-rim silhouette contacts",
+    "5 frogs,7 arches,environment/foreground clips",
+    "mask-specific bypass: no sourceClip parts",
+    "rare contours,all pillar faces/full artistic transfer/release",
+    "direct Pixi zIndex measurement failed; depth values independently calculated from frozen inputs/code and observed threshold"
+  ],
+  "toolingNote": "E:/R4D/perspective/p5-runtime/technical-qa/transfer-water-dark/water/w04/qa-tooling-note.json",
+  "artifacts": [
+    {
+      "path": "alpha-analysis-console.txt",
+      "bytes": 18781,
+      "sha256": "71c1f1681f696f8919dfb38cf38201ccbc089a6f4f20d381bd9ee8caa5583393"
+    },
+    {
+      "path": "arch-ground-proxy.json",
+      "bytes": 1916,
+      "sha256": "94dd665f10546b42690990d4f77344effdf307bf1b30a24579761dcf8a6d918c"
+    },
+    {
+      "path": "ARCH_BASELINE.json",
+      "bytes": 1404,
+      "sha256": "2ff4fc0cd92d391407f23b2e6604c1df16b85595c342a67b6d2fe628f9140192"
+    },
+    {
+      "path": "BINDINGS.json",
+      "bytes": 13162,
+      "sha256": "e973a416e6b30c7f194324ba89a25978417d20106a990c74b4e532a2825704a7"
+    },
+    {
+      "path": "browser-comparison.json",
+      "bytes": 324817,
+      "sha256": "86d6c665db43854faed0e83febb9fc34c5c3811558c0073f5b7e6b46dd79cb10"
+    },
+    {
+      "path": "browser-errors.json",
+      "bytes": 2,
+      "sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+    },
+    {
+      "path": "browser-session.json",
+      "bytes": 20911,
+      "sha256": "7476177059d9c9a5f436991ad6d17d29ee01fa6d9b836ed10983a10aff69474c"
+    },
+    {
+      "path": "FILE_INDEX.producer.json",
+      "bytes": 6632,
+      "sha256": "c1c983dbddaaf556c5000dc9463df262fdc38444b2826a5883a2800b78b70554"
+    },
+    {
+      "path": "frozen-verification.json",
+      "bytes": 10248,
+      "sha256": "ab0838f906e019f5e91b53f53fae1c8ffa94c8f9e18f6f7315b6116857a25536"
+    },
+    {
+      "path": "HANDOFF.md",
+      "bytes": 3136,
+      "sha256": "20b6479a7fbc28718c140b2abb2ebd10f53690c08256ff8b46c1d0cfb4bfb9a1"
+    },
+    {
+      "path": "invariant-comparison.json",
+      "bytes": 1334,
+      "sha256": "df1739e1c56634a068c33f0822f413c083ed91cb4ff0337988dc28a7b9d98f60"
+    },
+    {
+      "path": "optical-policy-check.json",
+      "bytes": 1308,
+      "sha256": "d95c3dd6ca1e73a3adc207b09711798b1ad7f2db5c77d1b9f6230902fb11337d"
+    },
+    {
+      "path": "part-alpha-depth-analysis.json",
+      "bytes": 33658,
+      "sha256": "24d7541b2eb5111229e18d1710e431b8401311c1b63a52ed6cf01d13e038ae18"
+    },
+    {
+      "path": "producer-owner-reference.json",
+      "bytes": 689,
+      "sha256": "2425f916e98e3777c057f521fbe30e350e2f5893a55b39bae099c16a5e619a15"
+    },
+    {
+      "path": "qa-tooling-note.json",
+      "bytes": 465,
+      "sha256": "40353ecf75aba1ca7523df9098afa7015474764c4516b1910e2432ffe3cbfecf"
+    },
+    {
+      "path": "RECEIVER_ANCHOR_POLICY.json",
+      "bytes": 6308,
+      "sha256": "a9756c0bc381ed4aefe19bdde2c335a746e2d5467a21557f73c75ab8e2f08312"
+    },
+    {
+      "path": "resource-after.json",
+      "bytes": 387,
+      "sha256": "e27fd2b5f36279c9719d2ff9d6fe6a289585bb7e56d2892077695a1ea065979a"
+    },
+    {
+      "path": "resource-before.json",
+      "bytes": 518,
+      "sha256": "fa100a7cd46b4b45fe753fc14ad97969c8e6d62b9b90ef0456e3bfe555fd5119"
+    },
+    {
+      "path": "screenshots/s0-initial.png",
+      "bytes": 116715,
+      "sha256": "0b91095167215a7d9512bb9333c8b0c62458f1abaa362ac2976d9659bf0c5a36"
+    },
+    {
+      "path": "screenshots/s0-t105-frog-before.png",
+      "bytes": 119307,
+      "sha256": "a4cdbe743c74e4bb91d9c466f075ca5e511ea85149b65883353d698abf028f0e"
+    },
+    {
+      "path": "screenshots/s0-t106-frog-contact.png",
+      "bytes": 119537,
+      "sha256": "6de96efe4e3c5779ca1ee94edd95665e5eb3ece7eba519cd19c45e0ab3b36e7e"
+    },
+    {
+      "path": "screenshots/s0-t470-pillar05-contact.png",
+      "bytes": 119387,
+      "sha256": "214b0e021ebb5f9abaea4fa6710064c8895384b6b95d25e64134196bc5ddb089"
+    },
+    {
+      "path": "screenshots/s1-motion-gate-running.png",
+      "bytes": 119531,
+      "sha256": "fbd2970dbd86c30e2d9f7c587914e7be58dc5c91e15b69f24a9466b557aa6e86"
+    },
+    {
+      "path": "screenshots/s1-t1008-gate-partial-reveal.png",
+      "bytes": 119606,
+      "sha256": "694974d9a5148e6229684c46f37a48fa5288eebfe08e14b94f26c65984b525b9"
+    },
+    {
+      "path": "screenshots/s1-t1012-gate-before.png",
+      "bytes": 119560,
+      "sha256": "fa8bcef6c8f166a6d08e5ef4b420868692b79f6ea12fc0628c2b441fed52266b"
+    },
+    {
+      "path": "screenshots/s1-t1013-art-off.png",
+      "bytes": 54412,
+      "sha256": "1889151a991c7c08ab0fd4b71a8fa0ac3b462c1b63dd270ddd22c3411be9a948"
+    },
+    {
+      "path": "screenshots/s1-t1013-gate-geometry.png",
+      "bytes": 136720,
+      "sha256": "38810a771ccc06c9f7c8b1f9f7046194503738df36aaf24675d1668069ae3635"
+    },
+    {
+      "path": "screenshots/s1-t1013-gate-right-contact.png",
+      "bytes": 119594,
+      "sha256": "70386c0ffaca856b0b2c8843d98663d2354ffa99e26d6947d53f4b6d7762192a"
+    },
+    {
+      "path": "screenshots/s1-t1014-gate-after.png",
+      "bytes": 119593,
+      "sha256": "595d0f3f251378a928fbf0cd82a4165fabb4947b7bbed9bfa870f53aa27ea6a6"
+    },
+    {
+      "path": "screenshots/s1-t1015-gate-depth-cross.png",
+      "bytes": 119612,
+      "sha256": "90efa1f0de260b96195e675bde860b8906cafb3930a1581ccd8b01926efa0edc"
+    },
+    {
+      "path": "screenshots/s1-t1018-gate-left-before.png",
+      "bytes": 119664,
+      "sha256": "05fa3ce8ba6da882ce203beb6811b1f075f1a9f982aa9606c2062faab4a84e04"
+    },
+    {
+      "path": "screenshots/s1-t1019-gate-left-contact.png",
+      "bytes": 119638,
+      "sha256": "85f4f819edba0e12b67e0d66694fcd08f340a67fbb961e5f2c8efbb83811fae8"
+    },
+    {
+      "path": "screenshots/s1-t1020-gate-left-after.png",
+      "bytes": 119612,
+      "sha256": "9ae7830173e4cdbbf146db4e1d6f446a1348b839f9f3d514574d1caa22f8a16f"
+    },
+    {
+      "path": "screenshots/s1-t1031-gate-open-floor.png",
+      "bytes": 119553,
+      "sha256": "c181d966a5a98a94ae8dfd5f0880ce963661edba3ee509ba013a996bc274f7ef"
+    },
+    {
+      "path": "screenshots/s1-t998-gate-lintel-hide.png",
+      "bytes": 119442,
+      "sha256": "716d6f03f8cb1da8c115eb3d04bc6d2f1dfe0074e4bd44dfc4b7090b90cdab0a"
+    },
+    {
+      "path": "screenshots/s2-motion-cup-paused.png",
+      "bytes": 119624,
+      "sha256": "1a1874d6daa59879300bc62528eb8bccacf779ac1942409220536396990422a5"
+    },
+    {
+      "path": "screenshots/s2-motion-cup-running.png",
+      "bytes": 119497,
+      "sha256": "19c249c4692beee1f2fd3852053ecf28e4025453cda38df0127b36abd3248bc9"
+    },
+    {
+      "path": "screenshots/s2-t1250-approach.png",
+      "bytes": 119643,
+      "sha256": "2c6382ca051817e7b7b7aca10fc036defc76efcedd8c7e63c84d12d7face69d3"
+    },
+    {
+      "path": "screenshots/s2-t1272-cup-before.png",
+      "bytes": 119597,
+      "sha256": "14327fc1d7b077543374128480aee84a8b51859a6259371bc3e972dfcb80f757"
+    },
+    {
+      "path": "screenshots/s2-t1273-cup.png",
+      "bytes": 119586,
+      "sha256": "1574d8ce4848c737bd332c05955109be014edcc2b48b1099b4603c256f5d23ff"
+    },
+    {
+      "path": "screenshots/s2-t1274-art-off-proof.png",
+      "bytes": 54326,
+      "sha256": "f9dfeb0eba5c0e175a8fa7a5510d64822a346f2c7773ce0bb91ae5e091929029"
+    },
+    {
+      "path": "screenshots/s2-t1274-cup.png",
+      "bytes": 119579,
+      "sha256": "716622c4c86fbff86e25e91c38ced1302dc8d5f6632ac317267e6a9cbaa0556d"
+    },
+    {
+      "path": "screenshots/s2-t1274-geometry-proof.png",
+      "bytes": 136624,
+      "sha256": "f495fbd3fdd13cd0a3a8fdb2ee14e62757b68e92d38609d9c7a68f75583cd6d0"
+    },
+    {
+      "path": "screenshots/s2-t1275-entry.png",
+      "bytes": 120256,
+      "sha256": "e98d9711f57ee4337f61ce4ae66d2a364959c702562467a03ae7b884eb2117b8"
+    },
+    {
+      "path": "screenshots/s2-terminal-after-motion.png",
+      "bytes": 129482,
+      "sha256": "15286fab3dfa10d62fa054f22e3dc6254cc10ad2d9f27fd1281406ad34fab876"
+    },
+    {
+      "path": "SELECTED.mini-02.json",
+      "bytes": 4101,
+      "sha256": "ce01115f88b57fbcb5e26042ab61114dbb723feeaa50b4a01c226e9fb60c48b6"
+    }
+  ],
+  "runtimeIndex": {
+    "path": "E:/R4D/perspective/p5-runtime/technical-qa/transfer-water-dark/water/w04/evidence-index.json",
+    "bytes": 13215,
+    "sha256": "6911d40f5efefe8da99e6f1e47c7438c15ce783e4d46506f1e25a4f07190bdfe",
+    "files": 83,
+    "bytesTotal": 8928707
+  },
+  "browserClosed": true,
+  "serverWrites": 0,
+  "tokenGranted": false
+}
