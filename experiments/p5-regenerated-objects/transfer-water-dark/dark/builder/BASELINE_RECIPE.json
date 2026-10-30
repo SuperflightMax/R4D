@@ -71,6 +71,27 @@
           "sha256": "34eacade52288aa5def0504271ad2573f6b55dc0bdec267c19d43a18981bcad5"
         }
       ]
+    },
+    {
+      "finding": "post-baseline-target-floor",
+      "kind": "receiver-parts-implementation",
+      "sourceCommit": "eedd183a2652a8b9a2dce60118c0f32c8755d3b7",
+      "description": "Honor existing floor rank for target-bound floor; enforce existing deterministic instance-ID floor/base order. Rim pending; no improved frozen candidate or visual success claim.",
+      "methodChanged": false,
+      "newRoleSchemaRank": false,
+      "sourceFiles": [
+        {
+          "path": "src/app.mjs",
+          "bytes": 13023,
+          "sha256": "24a2f4558627f51782834219c03135720118af37b725441d369046a82b510752"
+        },
+        {
+          "path": "scripts/verify-assets.mjs",
+          "bytes": 8562,
+          "sha256": "4adbd4567eb2124cadd9ef5e2356b33d1c4c6f4f84d5d7cc05057805e362a386"
+        }
+      ],
+      "originalBaselineSuccessCredit": false
     }
   ],
   "firstGeneratedFrozenBaseline": {
