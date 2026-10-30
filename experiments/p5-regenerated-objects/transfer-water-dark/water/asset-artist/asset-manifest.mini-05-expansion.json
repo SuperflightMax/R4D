@@ -1,0 +1,3669 @@
+{
+  "schema": "r4d.p5.assets/1",
+  "status": "partial",
+  "board": "water",
+  "activeTrial": "trial-02",
+  "sourceSha256": "8da65c76c110b6ba7cefe113564fe12feed4428e84e84835f033e7da31d3b80d",
+  "p1Commit": "4b47db04c7140ebf88f69b91faa0b790d46f22ec",
+  "consumerSchemaCommit": "5d40b82ac6b2b69f7077bb9bfe58c7560fbf783e",
+  "targetsSha256": "8e6976b9e40aa202a8dc34da9bad49b96d5fa6135aa1e1d6be22d567b8cf7559",
+  "sourceRecipeConsumer": "af23e124cf5bd1d9de884082ffbc993448217112",
+  "sourceRecipeArt": "a5ec68fb2ed6aeacd8c66bc575166567bd0c3966",
+  "lighting": {
+    "ballShadowAnchorPx": [
+      700,
+      630
+    ],
+    "obstacleShadowAnchorPx": [
+      700,
+      605
+    ],
+    "description": "Warm soft scene light requested from upper left; authored shadow lobes extend lower-left. Source-angle reconstruction not claimed; consistency requires normal-scale assembled QA.",
+    "shadowDirectionSourcePx": [
+      -1,
+      1
+    ]
+  },
+  "textures": [
+    {
+      "id": "floor-v1",
+      "family": "floor",
+      "file": "E:/R4D/perspective/p5-runtime/asset-artist/transfer-water-dark/water/selected/mini-set-01/floor-v1.png",
+      "sha256": "37e1603fe031b18e9ae8d325f65b2c138612d15f49d6948ce0b27c9b35c3456c",
+      "bytes": 2477216,
+      "sizePx": [
+        1254,
+        1254
+      ],
+      "alpha": {
+        "note": "Exact alpha>0 and alpha>=16 half-open bounds. Native alpha retained; no trim/threshold/color correction.",
+        "bounds": [
+          0,
+          0,
+          1254,
+          1254
+        ],
+        "visibleBounds": [
+          0,
+          0,
+          1254,
+          1254
+        ],
+        "maxAlpha": 255,
+        "opaquePixels": 1572516,
+        "policy": "opaque"
+      },
+      "groundAnchorPx": [
+        0,
+        0
+      ],
+      "footprintPx": {
+        "width": 1254,
+        "measurement": "Opaque new generated square plate; exact registration remains unverified",
+        "center": [
+          0,
+          0
+        ],
+        "depth": 1254
+      },
+      "provenance": {
+        "rawSha256": "37e1603fe031b18e9ae8d325f65b2c138612d15f49d6948ce0b27c9b35c3456c",
+        "promptPath": "prompts/001-floor-v1.txt",
+        "references": null,
+        "rawFile": "E:/R4D/perspective/p5-runtime/asset-artist/transfer-water-dark/water/raw/floor-v1.png",
+        "toolOutputId": "exec-758160d8-91b9-4299-84d5-ecc5bb32a9d3",
+        "corrections": [],
+        "promptSha256": "1f0057fc7f7e1229a561bbbd2dfd753bd740a10fb8f54ab847911b29695dc4ad",
+        "selection": "Unchanged native pixels; partial integration candidate, no runtime/artistic PASS",
+        "method": "generated",
+        "nativeOutputPath": "C:/Users/user/.codex/generated_images/01a1842d-becc-7012-b425-bc311371f6f9/exec-758160d8-91b9-4299-84d5-ecc5bb32a9d3.png"
+      }
+    },
+    {
+      "id": "ball-v1",
+      "family": "ball",
+      "file": "E:/R4D/perspective/p5-runtime/asset-artist/transfer-water-dark/water/selected/mini-set-01/ball-v1.png",
+      "sha256": "2cfee97a7bf2542a0a4226ee893ecfa7a7a1f7352505ce74d8b8c48bae1bb301",
+      "bytes": 1370021,
+      "sizePx": [
+        1254,
+        1254
+      ],
+      "alpha": {
+        "note": "Exact alpha>0 and alpha>=16 half-open bounds. Native alpha retained; no trim/threshold/color correction.",
+        "bounds": [
+          0,
+          23,
+          1168,
+          1193
+        ],
+        "visibleBounds": [
+          99,
+          101,
+          1052,
+          1046
+        ],
+        "maxAlpha": 255,
+        "opaquePixels": 895,
+        "policy": "straight-rgba"
+      },
+      "groundAnchorPx": [
+        625,
+        1147
+      ],
+      "footprintPx": {
+        "width": 1052,
+        "measurement": "Sphere visible bbox center[625,624], diameter1052; contact at lower half-open bbox edge. Manual optical estimate about3px; no baked shadow",
+        "center": [
+          625,
+          1147
+        ],
+        "depth": 1052
+      },
+      "provenance": {
+        "rawSha256": "2cfee97a7bf2542a0a4226ee893ecfa7a7a1f7352505ce74d8b8c48bae1bb301",
+        "promptPath": "prompts/002-ball-v1.txt",
+        "references": [],
+        "rawFile": "E:/R4D/perspective/p5-runtime/asset-artist/transfer-water-dark/water/raw/ball-v1.png",
+        "toolOutputId": "exec-78802b33-1a0a-4414-b6bf-cc7810164b64",
+        "corrections": [],
+        "promptSha256": "382072b49c185f39b45d08934203e01d286e653b70b1a997d3040510d034ffcf",
+        "selection": "Unchanged native pixels; partial integration candidate, no runtime/artistic PASS",
+        "method": "generated",
+        "nativeOutputPath": "C:\\Users\\user\\.codex\\generated_images\\01a1842d-becc-7012-b425-bc311371f6f9\\exec-78802b33-1a0a-4414-b6bf-cc7810164b64.png"
+      },
+      "sphereVisualCenterPx": [
+        625,
+        624
+      ],
+      "contactLiftTexturePx": 523
+    },
+    {
+      "id": "ball-shadow-v1",
+      "family": "ball-shadow",
+      "file": "E:/R4D/perspective/p5-runtime/asset-artist/transfer-water-dark/water/selected/mini-set-01/ball-shadow-v1.png",
+      "sha256": "0d9fc682e32a2ce5255682e489a6b17c9c451f95a0b16c23325e19239fed251c",
+      "bytes": 546326,
+      "sizePx": [
+        1254,
+        1254
+      ],
+      "alpha": {
+        "note": "Exact alpha>0 and alpha>=16 half-open bounds. Native alpha retained; no trim/threshold/color correction.",
+        "bounds": [
+          0,
+          19,
+          1253,
+          1235
+        ],
+        "visibleBounds": [
+          68,
+          499,
+          1120,
+          330
+        ],
+        "maxAlpha": 198,
+        "opaquePixels": 0,
+        "policy": "straight-rgba"
+      },
+      "groundAnchorPx": [
+        700,
+        630
+      ],
+      "footprintPx": {
+        "width": 1052,
+        "measurement": "Authored contact reference[700,630], visible bbox center[628,664]; binding footprint width uses sphere diameter, not shadow extent",
+        "center": [
+          700,
+          630
+        ],
+        "depth": 400
+      },
+      "provenance": {
+        "rawSha256": "0d9fc682e32a2ce5255682e489a6b17c9c451f95a0b16c23325e19239fed251c",
+        "promptPath": "prompts/003-ball-shadow-v1.txt",
+        "references": [],
+        "rawFile": "E:/R4D/perspective/p5-runtime/asset-artist/transfer-water-dark/water/raw/ball-shadow-v1.png",
+        "toolOutputId": "exec-3d1781c0-2afe-4e03-8170-0d9e88203c31",
+        "corrections": [],
+        "promptSha256": "bc065c7202dfddadc3b55d8761337125e9b5bf15ce084a92d2a2f9a6c2fa39e1",
+        "selection": "Unchanged native pixels; partial integration candidate, no runtime/artistic PASS",
+        "method": "generated",
+        "nativeOutputPath": "C:\\Users\\user\\.codex\\generated_images\\01a1842d-becc-7012-b425-bc311371f6f9\\exec-3d1781c0-2afe-4e03-8170-0d9e88203c31.png"
+      }
+    },
+    {
+      "id": "obstacle-shadow-v2",
+      "family": "obstacle-shadow",
+      "file": "E:/R4D/perspective/p5-runtime/asset-artist/transfer-water-dark/water/selected/mini-set-01/obstacle-shadow-v2.png",
+      "sha256": "8d7171a661c095dc4b9cef5297ff07fdc9f2b2cf14f072886d02e8944cc85bc2",
+      "bytes": 343656,
+      "sizePx": [
+        1254,
+        1254
+      ],
+      "alpha": {
+        "note": "Exact alpha>0 and alpha>=16 half-open bounds. Native alpha retained; no trim/threshold/color correction.",
+        "bounds": [
+          31,
+          19,
+          1191,
+          1211
+        ],
+        "visibleBounds": [
+          192,
+          518,
+          895,
+          232
+        ],
+        "maxAlpha": 231,
+        "opaquePixels": 0,
+        "policy": "straight-rgba"
+      },
+      "groundAnchorPx": [
+        700,
+        605
+      ],
+      "footprintPx": {
+        "width": 710,
+        "measurement": "Shared separate shadow; binding reference uses pillar support size. Visible shadow extent is larger, not a physical collider",
+        "center": [
+          700,
+          605
+        ],
+        "depth": 250.8075881350121
+      },
+      "provenance": {
+        "rawSha256": "8d7171a661c095dc4b9cef5297ff07fdc9f2b2cf14f072886d02e8944cc85bc2",
+        "promptPath": "prompts/006-obstacle-shadow-v2.txt",
+        "references": [],
+        "rawFile": "E:/R4D/perspective/p5-runtime/asset-artist/transfer-water-dark/water/raw/obstacle-shadow-v2.png",
+        "toolOutputId": "exec-8263f5cb-4de2-4e6e-b3fe-0d95013c21cd",
+        "corrections": [],
+        "promptSha256": "1c9c07833d8b07441bc858ba9e2ce27c3e884e6f9fec2ef1d6e0367df286282b",
+        "selection": "Unchanged native pixels; partial integration candidate, no runtime/artistic PASS",
+        "method": "generated",
+        "nativeOutputPath": "C:\\Users\\user\\.codex\\generated_images\\01a1842d-becc-7012-b425-bc311371f6f9\\exec-8263f5cb-4de2-4e6e-b3fe-0d95013c21cd.png"
+      }
+    },
+    {
+      "id": "pillar-mid-v1",
+      "family": "pillar",
+      "file": "E:/R4D/perspective/p5-runtime/asset-artist/transfer-water-dark/water/selected/mini-set-01/pillar-mid-v1.png",
+      "sha256": "0265ff9669166fbe216da0393c6552e054d66ef0587feb206a56c06e4cbcde92",
+      "bytes": 1040337,
+      "sizePx": [
+        1254,
+        1254
+      ],
+      "alpha": {
+        "note": "Exact alpha>0 and alpha>=16 half-open bounds. Native alpha retained; no trim/threshold/color correction.",
+        "bounds": [
+          0,
+          0,
+          1240,
+          1254
+        ],
+        "visibleBounds": [
+          271,
+          172,
+          711,
+          930
+        ],
+        "maxAlpha": 255,
+        "opaquePixels": 592,
+        "policy": "straight-rgba"
+      },
+      "groundAnchorPx": [
+        627,
+        982.1392629208134
+      ],
+      "footprintPx": {
+        "width": 710,
+        "measurement": "Measured lower alpha>=128 contour ellipse proxy on a faceted base; not reconstructed camera or exact polygon. Matching source width/depth without XY warp",
+        "center": [
+          627,
+          982.1392629208134
+        ],
+        "depth": 250.8075881350121
+      },
+      "provenance": {
+        "rawSha256": "0265ff9669166fbe216da0393c6552e054d66ef0587feb206a56c06e4cbcde92",
+        "promptPath": "prompts/007-pillar-mid-v1.txt",
+        "references": [
+          "K:/Agents/R4D/Assets/perspective/04-water-temple.jpg"
+        ],
+        "rawFile": "E:/R4D/perspective/p5-runtime/asset-artist/transfer-water-dark/water/raw/pillar-mid-v1.png",
+        "toolOutputId": "exec-23186cb4-9afe-4081-b179-d37868d8cd87",
+        "corrections": [],
+        "promptSha256": "f4c2628cb9cd6f7f895832f320dab2103ba06a8be55699796d8fea970c44cd17",
+        "selection": "Unchanged native pixels; partial integration candidate, no runtime/artistic PASS",
+        "method": "generated",
+        "nativeOutputPath": "C:\\Users\\user\\.codex\\generated_images\\01a1842d-becc-7012-b425-bc311371f6f9\\exec-23186cb4-9afe-4081-b179-d37868d8cd87.png"
+      }
+    },
+    {
+      "id": "frog-mid-v4",
+      "family": "frog",
+      "file": "E:/R4D/perspective/p5-runtime/asset-artist/transfer-water-dark/water/selected/mini-set-02/frog-mid-v4.png",
+      "sha256": "f718f84fb020356c13a2753aa9449d5713f90366559dc6c4d1bb24f97fd07ddb",
+      "bytes": 1382638,
+      "sizePx": [
+        1254,
+        1254
+      ],
+      "alpha": {
+        "policy": "straight-rgba",
+        "note": "Exact alpha>0/alpha>=16; native bytes unchanged, no trim/threshold/matte",
+        "maxAlpha": 255,
+        "bounds": [
+          0,
+          17,
+          1234,
+          1237
+        ],
+        "visibleBounds": [
+          51,
+          148,
+          1154,
+          940
+        ]
+      },
+      "groundAnchorPx": [
+        627,
+        878.901468406152
+      ],
+      "footprintPx": {
+        "depth": 414.93394958969446,
+        "width": 1150.0,
+        "measurement": "Lower alpha>=128 ellipse contour fit of the new rounded support; proxy, not recovered camera. Selected only for far frog01; other frog depth variants pending.",
+        "center": [
+          627,
+          878.901468406152
+        ]
+      },
+      "provenance": {
+        "promptPath": "prompts/017-frog-mid-v4.txt",
+        "promptSha256": "3573e5bdc6f352e3f6fb9d8395090a418e79282ac280fcd1ba3cb533ae1f79c7",
+        "nativeOutputPath": "C:\\Users\\user\\.codex\\generated_images\\01a1842d-becc-7012-b425-bc311371f6f9\\exec-1ed66559-dcf1-4c23-bee2-8decbf9d6989.png",
+        "toolOutputId": "exec-1ed66559-dcf1-4c23-bee2-8decbf9d6989",
+        "corrections": [],
+        "method": "generated",
+        "selection": "Unchanged native raster; partial candidate for real assembly QA",
+        "references": [
+          "E:/R4D/perspective/p5-runtime/asset-artist/transfer-water-dark/water/raw/frog-mid-v2.png"
+        ],
+        "rawSha256": "f718f84fb020356c13a2753aa9449d5713f90366559dc6c4d1bb24f97fd07ddb",
+        "rawFile": "E:/R4D/perspective/p5-runtime/asset-artist/transfer-water-dark/water/raw/frog-mid-v4.png"
+      }
+    },
+    {
+      "id": "receiver-01-front-v1",
+      "family": "receiver-front",
+      "file": "E:/R4D/perspective/p5-runtime/asset-artist/transfer-water-dark/water/selected/mini-set-02/receiver-front-v1.png",
+      "sha256": "aaaac1a65b694873281326fcfb71fef13b1bdf3f6cea4ac06d3315f93a7bf098",
+      "bytes": 923732,
+      "sizePx": [
+        1254,
+        1254
+      ],
+      "alpha": {
+        "policy": "straight-rgba",
+        "note": "Exact alpha>0/alpha>=16; native bytes unchanged, no trim/threshold/matte",
+        "maxAlpha": 255,
+        "bounds": [
+          0,
+          57,
+          1248,
+          1141
+        ],
+        "visibleBounds": [
+          31,
+          436,
+          1192,
+          736
+        ]
+      },
+      "groundAnchorPx": [
+        627,
+        558.4579610724702
+      ],
+      "footprintPx": {
+        "depth": 120.0,
+        "width": 230.0,
+        "center": [
+          627,
+          558.4579610724702
+        ],
+        "measurement": "Authored230x120 capture proxy inside measured new water opening, not full hull/aperture size. Scale selected from new receiver silhouette, not copied Jungle value."
+      },
+      "provenance": {
+        "promptPath": "prompts/010-receiver-front-v1.txt",
+        "promptSha256": "6bafe0caa8f10e249a4cdb06412614b5be7fa151d5d75c0fe3ebbf718c1e32e3",
+        "nativeOutputPath": "C:\\Users\\user\\.codex\\generated_images\\01a1842d-becc-7012-b425-bc311371f6f9\\exec-5fa36d9c-3ff2-47a8-ac39-19e94b47611e.png",
+        "toolOutputId": "exec-5fa36d9c-3ff2-47a8-ac39-19e94b47611e",
+        "corrections": [
+          "New ball/cup optical-logical anchor policy; no bitmap change"
+        ],
+        "method": "generated",
+        "selection": "Unchanged native raster; partial candidate for real assembly QA",
+        "references": [
+          "E:/R4D/perspective/p5-runtime/asset-artist/transfer-water-dark/water/raw/receiver-v1.png"
+        ],
+        "rawSha256": "aaaac1a65b694873281326fcfb71fef13b1bdf3f6cea4ac06d3315f93a7bf098",
+        "rawFile": "E:/R4D/perspective/p5-runtime/asset-artist/transfer-water-dark/water/raw/receiver-front-v1.png",
+        "aliasOf": "receiver-front-v1",
+        "aliasIsNewGeneration": false
+      },
+      "opticalOpeningPointPx": [
+        627,
+        500
+      ]
+    },
+    {
+      "id": "receiver-02-front-v1",
+      "family": "receiver-front",
+      "file": "E:/R4D/perspective/p5-runtime/asset-artist/transfer-water-dark/water/selected/mini-set-02/receiver-front-v1.png",
+      "sha256": "aaaac1a65b694873281326fcfb71fef13b1bdf3f6cea4ac06d3315f93a7bf098",
+      "bytes": 923732,
+      "sizePx": [
+        1254,
+        1254
+      ],
+      "alpha": {
+        "policy": "straight-rgba",
+        "note": "Exact alpha>0/alpha>=16; native bytes unchanged, no trim/threshold/matte",
+        "maxAlpha": 255,
+        "bounds": [
+          0,
+          57,
+          1248,
+          1141
+        ],
+        "visibleBounds": [
+          31,
+          436,
+          1192,
+          736
+        ]
+      },
+      "groundAnchorPx": [
+        627,
+        559.7149517742138
+      ],
+      "footprintPx": {
+        "depth": 120.0,
+        "width": 230.0,
+        "center": [
+          627,
+          559.7149517742138
+        ],
+        "measurement": "Authored230x120 capture proxy inside measured new water opening, not full hull/aperture size. Scale selected from new receiver silhouette, not copied Jungle value."
+      },
+      "provenance": {
+        "promptPath": "prompts/010-receiver-front-v1.txt",
+        "promptSha256": "6bafe0caa8f10e249a4cdb06412614b5be7fa151d5d75c0fe3ebbf718c1e32e3",
+        "nativeOutputPath": "C:\\Users\\user\\.codex\\generated_images\\01a1842d-becc-7012-b425-bc311371f6f9\\exec-5fa36d9c-3ff2-47a8-ac39-19e94b47611e.png",
+        "toolOutputId": "exec-5fa36d9c-3ff2-47a8-ac39-19e94b47611e",
+        "corrections": [
+          "New ball/cup optical-logical anchor policy; no bitmap change"
+        ],
+        "method": "generated",
+        "selection": "Unchanged native raster; partial candidate for real assembly QA",
+        "references": [
+          "E:/R4D/perspective/p5-runtime/asset-artist/transfer-water-dark/water/raw/receiver-v1.png"
+        ],
+        "rawSha256": "aaaac1a65b694873281326fcfb71fef13b1bdf3f6cea4ac06d3315f93a7bf098",
+        "rawFile": "E:/R4D/perspective/p5-runtime/asset-artist/transfer-water-dark/water/raw/receiver-front-v1.png",
+        "aliasOf": "receiver-front-v1",
+        "aliasIsNewGeneration": false
+      },
+      "opticalOpeningPointPx": [
+        627,
+        500
+      ]
+    },
+    {
+      "id": "receiver-03-front-v1",
+      "family": "receiver-front",
+      "file": "E:/R4D/perspective/p5-runtime/asset-artist/transfer-water-dark/water/selected/mini-set-02/receiver-front-v1.png",
+      "sha256": "aaaac1a65b694873281326fcfb71fef13b1bdf3f6cea4ac06d3315f93a7bf098",
+      "bytes": 923732,
+      "sizePx": [
+        1254,
+        1254
+      ],
+      "alpha": {
+        "policy": "straight-rgba",
+        "note": "Exact alpha>0/alpha>=16; native bytes unchanged, no trim/threshold/matte",
+        "maxAlpha": 255,
+        "bounds": [
+          0,
+          57,
+          1248,
+          1141
+        ],
+        "visibleBounds": [
+          31,
+          436,
+          1192,
+          736
+        ]
+      },
+      "groundAnchorPx": [
+        627,
+        558.7574460031103
+      ],
+      "footprintPx": {
+        "depth": 120.0,
+        "width": 230.0,
+        "center": [
+          627,
+          558.7574460031103
+        ],
+        "measurement": "Authored230x120 capture proxy inside measured new water opening, not full hull/aperture size. Scale selected from new receiver silhouette, not copied Jungle value."
+      },
+      "provenance": {
+        "promptPath": "prompts/010-receiver-front-v1.txt",
+        "promptSha256": "6bafe0caa8f10e249a4cdb06412614b5be7fa151d5d75c0fe3ebbf718c1e32e3",
+        "nativeOutputPath": "C:\\Users\\user\\.codex\\generated_images\\01a1842d-becc-7012-b425-bc311371f6f9\\exec-5fa36d9c-3ff2-47a8-ac39-19e94b47611e.png",
+        "toolOutputId": "exec-5fa36d9c-3ff2-47a8-ac39-19e94b47611e",
+        "corrections": [
+          "New ball/cup optical-logical anchor policy; no bitmap change"
+        ],
+        "method": "generated",
+        "selection": "Unchanged native raster; partial candidate for real assembly QA",
+        "references": [
+          "E:/R4D/perspective/p5-runtime/asset-artist/transfer-water-dark/water/raw/receiver-v1.png"
+        ],
+        "rawSha256": "aaaac1a65b694873281326fcfb71fef13b1bdf3f6cea4ac06d3315f93a7bf098",
+        "rawFile": "E:/R4D/perspective/p5-runtime/asset-artist/transfer-water-dark/water/raw/receiver-front-v1.png",
+        "aliasOf": "receiver-front-v1",
+        "aliasIsNewGeneration": false
+      },
+      "opticalOpeningPointPx": [
+        627,
+        500
+      ]
+    },
+    {
+      "id": "receiver-04-front-v1",
+      "family": "receiver-front",
+      "file": "E:/R4D/perspective/p5-runtime/asset-artist/transfer-water-dark/water/selected/mini-set-02/receiver-front-v1.png",
+      "sha256": "aaaac1a65b694873281326fcfb71fef13b1bdf3f6cea4ac06d3315f93a7bf098",
+      "bytes": 923732,
+      "sizePx": [
+        1254,
+        1254
+      ],
+      "alpha": {
+        "policy": "straight-rgba",
+        "note": "Exact alpha>0/alpha>=16; native bytes unchanged, no trim/threshold/matte",
+        "maxAlpha": 255,
+        "bounds": [
+          0,
+          57,
+          1248,
+          1141
+        ],
+        "visibleBounds": [
+          31,
+          436,
+          1192,
+          736
+        ]
+      },
+      "groundAnchorPx": [
+        627,
+        555.4715710194839
+      ],
+      "footprintPx": {
+        "depth": 120.0,
+        "width": 230.0,
+        "center": [
+          627,
+          555.4715710194839
+        ],
+        "measurement": "Authored230x120 capture proxy inside measured new water opening, not full hull/aperture size. Scale selected from new receiver silhouette, not copied Jungle value."
+      },
+      "provenance": {
+        "promptPath": "prompts/010-receiver-front-v1.txt",
+        "promptSha256": "6bafe0caa8f10e249a4cdb06412614b5be7fa151d5d75c0fe3ebbf718c1e32e3",
+        "nativeOutputPath": "C:\\Users\\user\\.codex\\generated_images\\01a1842d-becc-7012-b425-bc311371f6f9\\exec-5fa36d9c-3ff2-47a8-ac39-19e94b47611e.png",
+        "toolOutputId": "exec-5fa36d9c-3ff2-47a8-ac39-19e94b47611e",
+        "corrections": [
+          "New ball/cup optical-logical anchor policy; no bitmap change"
+        ],
+        "method": "generated",
+        "selection": "Unchanged native raster; partial candidate for real assembly QA",
+        "references": [
+          "E:/R4D/perspective/p5-runtime/asset-artist/transfer-water-dark/water/raw/receiver-v1.png"
+        ],
+        "rawSha256": "aaaac1a65b694873281326fcfb71fef13b1bdf3f6cea4ac06d3315f93a7bf098",
+        "rawFile": "E:/R4D/perspective/p5-runtime/asset-artist/transfer-water-dark/water/raw/receiver-front-v1.png",
+        "aliasOf": "receiver-front-v1",
+        "aliasIsNewGeneration": false
+      },
+      "opticalOpeningPointPx": [
+        627,
+        500
+      ]
+    },
+    {
+      "id": "arch-mid-v2",
+      "family": "arch",
+      "file": "E:/R4D/perspective/p5-runtime/asset-artist/transfer-water-dark/water/selected/mini-set-03/arch-mid-v2.png",
+      "sha256": "b8de40ba0fc1a0dfa7d47a7840042c482416667705cfd5ddbcbc2942c63af2c3",
+      "bytes": 1176242,
+      "sizePx": [
+        1388,
+        1133
+      ],
+      "alpha": {
+        "policy": "straight-rgba",
+        "visibleBounds": [
+          65,
+          139,
+          1257,
+          882
+        ],
+        "note": "Native alpha retained, including genuinely transparent opening; no trim/matte",
+        "bounds": [
+          0,
+          0,
+          1374,
+          1133
+        ]
+      },
+      "groundAnchorPx": [
+        693,
+        925
+      ],
+      "footprintPx": {
+        "depth": 190,
+        "measurement": "Visible outer foot span/front contact measured; rear ground edge hidden. Anchor/depth are provisional cap-plane compression inference, uncertainty about30texturepx. Not recovered3D geometry.",
+        "width": 1257,
+        "center": [
+          693,
+          925
+        ]
+      },
+      "provenance": {
+        "promptPath": "prompts/012-arch-mid-v2.txt",
+        "corrections": [
+          "New proportion-corrected generation; full whole-sprite baseline preserved before improved part integration"
+        ],
+        "references": [
+          "E:/R4D/perspective/p5-runtime/asset-artist/transfer-water-dark/water/refs/arch-source-reference.png",
+          "E:/R4D/perspective/p5-runtime/asset-artist/transfer-water-dark/water/refs/arch-01-proportions-guide.png"
+        ],
+        "rawSha256": "b8de40ba0fc1a0dfa7d47a7840042c482416667705cfd5ddbcbc2942c63af2c3",
+        "toolOutputId": "exec-bad2f4d6-4bc1-4aba-a88f-27af7f0cc248",
+        "promptSha256": "d6062ef658777cb944e7b503103661568434a7da4ecaeb70a79bd2eb3f591f4c",
+        "selection": "Limited arch07 baseline for requested actual-case review, not confirmed contact/occlusion PASS",
+        "nativeOutputPath": "C:\\Users\\user\\.codex\\generated_images\\01a1842d-becc-7012-b425-bc311371f6f9\\exec-bad2f4d6-4bc1-4aba-a88f-27af7f0cc248.png",
+        "method": "generated",
+        "rawFile": "E:/R4D/perspective/p5-runtime/asset-artist/transfer-water-dark/water/raw/arch-mid-v2.png"
+      }
+    },
+    {
+      "id": "receiver-01-base-v1",
+      "family": "receiver",
+      "file": "E:/R4D/perspective/p5-runtime/asset-artist/transfer-water-dark/water/selected/mini-set-02/receiver-v1.png",
+      "sha256": "4bf235f8981fcb7c3ca3029c2e59a8594e9af28d7de534a56e1ab841a9549843",
+      "bytes": 1547434,
+      "sizePx": [
+        1254,
+        1254
+      ],
+      "alpha": {
+        "policy": "straight-rgba",
+        "note": "Exact alpha>0/alpha>=16; native bytes unchanged, no trim/threshold/matte",
+        "maxAlpha": 255,
+        "bounds": [
+          0,
+          0,
+          1228,
+          1254
+        ],
+        "visibleBounds": [
+          32,
+          154,
+          1190,
+          1017
+        ]
+      },
+      "groundAnchorPx": [
+        627,
+        558.4579610724702
+      ],
+      "footprintPx": {
+        "depth": 120.0,
+        "width": 230.0,
+        "center": [
+          627,
+          558.4579610724702
+        ],
+        "measurement": "Authored230x120 capture proxy inside measured new water opening, not full hull/aperture size. Scale selected from new receiver silhouette, not copied Jungle value."
+      },
+      "provenance": {
+        "promptPath": "prompts/009-receiver-v1.txt",
+        "promptSha256": "8dfc824eaf8f0f39454e0412b61f122d719f5af6f59eb08749e5b3a6d92a1db1",
+        "nativeOutputPath": "C:\\Users\\user\\.codex\\generated_images\\01a1842d-becc-7012-b425-bc311371f6f9\\exec-5e3d65a9-f3a9-4a02-a11a-307f42c455dd.png",
+        "toolOutputId": "exec-5e3d65a9-f3a9-4a02-a11a-307f42c455dd",
+        "corrections": [
+          "New ball/cup optical-logical anchor policy; no bitmap change",
+          "Post-w04: тот же full PNG как target-bound floor base/interior; это alias, не новая генерация"
+        ],
+        "method": "generated",
+        "selection": "Unchanged native raster; partial candidate for real assembly QA",
+        "references": [
+          "K:/Agents/R4D/Assets/perspective/04-water-temple.jpg"
+        ],
+        "rawSha256": "4bf235f8981fcb7c3ca3029c2e59a8594e9af28d7de534a56e1ab841a9549843",
+        "rawFile": "E:/R4D/perspective/p5-runtime/asset-artist/transfer-water-dark/water/raw/receiver-v1.png",
+        "aliasOf": "receiver-v1",
+        "aliasIsNewGeneration": false
+      },
+      "opticalOpeningPointPx": [
+        627,
+        500
+      ]
+    },
+    {
+      "id": "receiver-01-rim-back-v1",
+      "family": "receiver",
+      "file": "E:/R4D/perspective/p5-runtime/asset-artist/transfer-water-dark/water/selected/mini-set-04/receiver-back-rim-v1.png",
+      "sha256": "2f58c03e3ae6a7a4a4460f94976c3c5a4b93ca6045674df8140b9221741a3c0a",
+      "bytes": 433727,
+      "sizePx": [
+        1254,
+        1254
+      ],
+      "alpha": {
+        "policy": "straight-rgba",
+        "bounds": [
+          17,
+          23,
+          1211,
+          1189
+        ],
+        "visibleBounds": [
+          30,
+          153,
+          1194,
+          434
+        ],
+        "maxAlpha": 255,
+        "note": "Native alpha сохранена: O/оба TQA center alpha0; clear rectangle99629/99671 alpha0,42 samples alpha1. Порог/trim/matte не применялись."
+      },
+      "groundAnchorPx": [
+        627,
+        558.4579610724702
+      ],
+      "footprintPx": {
+        "depth": 120.0,
+        "width": 230.0,
+        "center": [
+          627,
+          558.4579610724702
+        ],
+        "measurement": "Authored230x120 capture proxy inside measured new water opening, not full hull/aperture size. Scale selected from new receiver silhouette, not copied Jungle value."
+      },
+      "provenance": {
+        "method": "generated",
+        "promptPath": "prompts/019-receiver-back-rim-v1.txt",
+        "promptSha256": "154ac60505525e5f46baa2ba57196c1cbc01a84b6c960c390cdcdf63dafd846c",
+        "toolOutputId": "exec-226eaeea-c604-4278-86a1-9ee1914b4bd4",
+        "nativeOutputPath": "C:\\Users\\user\\.codex\\generated_images\\01a1842d-becc-7012-b425-bc311371f6f9\\exec-226eaeea-c604-4278-86a1-9ee1914b4bd4.png",
+        "rawFile": "E:/R4D/perspective/p5-runtime/asset-artist/transfer-water-dark/water/raw/receiver-back-rim-v1.png",
+        "rawSha256": "2f58c03e3ae6a7a4a4460f94976c3c5a4b93ca6045674df8140b9221741a3c0a",
+        "references": [
+          "E:/R4D/perspective/p5-runtime/asset-artist/transfer-water-dark/water/raw/receiver-v1.png"
+        ],
+        "aliasOf": "receiver-back-rim-v1",
+        "aliasIsNewGeneration": false,
+        "corrections": [
+          "Native edit исходного Water full: удалены вода/interior и передний корпус; сохранён поднятый задний U-борт/боковины"
+        ],
+        "selection": "Отдельный post-w04 candidate; actual consumer/QA не проверены"
+      },
+      "opticalOpeningPointPx": [
+        627,
+        500
+      ],
+      "registration": {
+        "templateTextureSha256": "4bf235f8981fcb7c3ca3029c2e59a8594e9af28d7de534a56e1ab841a9549843",
+        "sameCanvas": true,
+        "opticalPointBasis": "Optical O[627,500] и capture proxy230x120 перенесены по неизменному template frame; O находится в прозрачном interior",
+        "sampledOuterContourMaxDeltaTexturePx": 1,
+        "registrationUncertaintyTexturePx": 3,
+        "nativePixelsNotIdentical": true,
+        "measurements": "records/receiver-rim-registration.mini-04.json"
+      }
+    },
+    {
+      "id": "receiver-02-base-v1",
+      "family": "receiver",
+      "file": "E:/R4D/perspective/p5-runtime/asset-artist/transfer-water-dark/water/selected/mini-set-02/receiver-v1.png",
+      "sha256": "4bf235f8981fcb7c3ca3029c2e59a8594e9af28d7de534a56e1ab841a9549843",
+      "bytes": 1547434,
+      "sizePx": [
+        1254,
+        1254
+      ],
+      "alpha": {
+        "policy": "straight-rgba",
+        "note": "Exact alpha>0/alpha>=16; native bytes unchanged, no trim/threshold/matte",
+        "maxAlpha": 255,
+        "bounds": [
+          0,
+          0,
+          1228,
+          1254
+        ],
+        "visibleBounds": [
+          32,
+          154,
+          1190,
+          1017
+        ]
+      },
+      "groundAnchorPx": [
+        627,
+        559.7149517742138
+      ],
+      "footprintPx": {
+        "depth": 120.0,
+        "width": 230.0,
+        "center": [
+          627,
+          559.7149517742138
+        ],
+        "measurement": "Authored230x120 capture proxy inside measured new water opening, not full hull/aperture size. Scale selected from new receiver silhouette, not copied Jungle value."
+      },
+      "provenance": {
+        "promptPath": "prompts/009-receiver-v1.txt",
+        "promptSha256": "8dfc824eaf8f0f39454e0412b61f122d719f5af6f59eb08749e5b3a6d92a1db1",
+        "nativeOutputPath": "C:\\Users\\user\\.codex\\generated_images\\01a1842d-becc-7012-b425-bc311371f6f9\\exec-5e3d65a9-f3a9-4a02-a11a-307f42c455dd.png",
+        "toolOutputId": "exec-5e3d65a9-f3a9-4a02-a11a-307f42c455dd",
+        "corrections": [
+          "New ball/cup optical-logical anchor policy; no bitmap change",
+          "Post-w04: тот же full PNG как target-bound floor base/interior; это alias, не новая генерация"
+        ],
+        "method": "generated",
+        "selection": "Unchanged native raster; partial candidate for real assembly QA",
+        "references": [
+          "K:/Agents/R4D/Assets/perspective/04-water-temple.jpg"
+        ],
+        "rawSha256": "4bf235f8981fcb7c3ca3029c2e59a8594e9af28d7de534a56e1ab841a9549843",
+        "rawFile": "E:/R4D/perspective/p5-runtime/asset-artist/transfer-water-dark/water/raw/receiver-v1.png",
+        "aliasOf": "receiver-v1",
+        "aliasIsNewGeneration": false
+      },
+      "opticalOpeningPointPx": [
+        627,
+        500
+      ]
+    },
+    {
+      "id": "receiver-02-rim-back-v1",
+      "family": "receiver",
+      "file": "E:/R4D/perspective/p5-runtime/asset-artist/transfer-water-dark/water/selected/mini-set-04/receiver-back-rim-v1.png",
+      "sha256": "2f58c03e3ae6a7a4a4460f94976c3c5a4b93ca6045674df8140b9221741a3c0a",
+      "bytes": 433727,
+      "sizePx": [
+        1254,
+        1254
+      ],
+      "alpha": {
+        "policy": "straight-rgba",
+        "bounds": [
+          17,
+          23,
+          1211,
+          1189
+        ],
+        "visibleBounds": [
+          30,
+          153,
+          1194,
+          434
+        ],
+        "maxAlpha": 255,
+        "note": "Native alpha сохранена: O/оба TQA center alpha0; clear rectangle99629/99671 alpha0,42 samples alpha1. Порог/trim/matte не применялись."
+      },
+      "groundAnchorPx": [
+        627,
+        559.7149517742138
+      ],
+      "footprintPx": {
+        "depth": 120.0,
+        "width": 230.0,
+        "center": [
+          627,
+          559.7149517742138
+        ],
+        "measurement": "Authored230x120 capture proxy inside measured new water opening, not full hull/aperture size. Scale selected from new receiver silhouette, not copied Jungle value."
+      },
+      "provenance": {
+        "method": "generated",
+        "promptPath": "prompts/019-receiver-back-rim-v1.txt",
+        "promptSha256": "154ac60505525e5f46baa2ba57196c1cbc01a84b6c960c390cdcdf63dafd846c",
+        "toolOutputId": "exec-226eaeea-c604-4278-86a1-9ee1914b4bd4",
+        "nativeOutputPath": "C:\\Users\\user\\.codex\\generated_images\\01a1842d-becc-7012-b425-bc311371f6f9\\exec-226eaeea-c604-4278-86a1-9ee1914b4bd4.png",
+        "rawFile": "E:/R4D/perspective/p5-runtime/asset-artist/transfer-water-dark/water/raw/receiver-back-rim-v1.png",
+        "rawSha256": "2f58c03e3ae6a7a4a4460f94976c3c5a4b93ca6045674df8140b9221741a3c0a",
+        "references": [
+          "E:/R4D/perspective/p5-runtime/asset-artist/transfer-water-dark/water/raw/receiver-v1.png"
+        ],
+        "aliasOf": "receiver-back-rim-v1",
+        "aliasIsNewGeneration": false,
+        "corrections": [
+          "Native edit исходного Water full: удалены вода/interior и передний корпус; сохранён поднятый задний U-борт/боковины"
+        ],
+        "selection": "Отдельный post-w04 candidate; actual consumer/QA не проверены"
+      },
+      "opticalOpeningPointPx": [
+        627,
+        500
+      ],
+      "registration": {
+        "templateTextureSha256": "4bf235f8981fcb7c3ca3029c2e59a8594e9af28d7de534a56e1ab841a9549843",
+        "sameCanvas": true,
+        "opticalPointBasis": "Optical O[627,500] и capture proxy230x120 перенесены по неизменному template frame; O находится в прозрачном interior",
+        "sampledOuterContourMaxDeltaTexturePx": 1,
+        "registrationUncertaintyTexturePx": 3,
+        "nativePixelsNotIdentical": true,
+        "measurements": "records/receiver-rim-registration.mini-04.json"
+      }
+    },
+    {
+      "id": "receiver-03-base-v1",
+      "family": "receiver",
+      "file": "E:/R4D/perspective/p5-runtime/asset-artist/transfer-water-dark/water/selected/mini-set-02/receiver-v1.png",
+      "sha256": "4bf235f8981fcb7c3ca3029c2e59a8594e9af28d7de534a56e1ab841a9549843",
+      "bytes": 1547434,
+      "sizePx": [
+        1254,
+        1254
+      ],
+      "alpha": {
+        "policy": "straight-rgba",
+        "note": "Exact alpha>0/alpha>=16; native bytes unchanged, no trim/threshold/matte",
+        "maxAlpha": 255,
+        "bounds": [
+          0,
+          0,
+          1228,
+          1254
+        ],
+        "visibleBounds": [
+          32,
+          154,
+          1190,
+          1017
+        ]
+      },
+      "groundAnchorPx": [
+        627,
+        558.7574460031103
+      ],
+      "footprintPx": {
+        "depth": 120.0,
+        "width": 230.0,
+        "center": [
+          627,
+          558.7574460031103
+        ],
+        "measurement": "Authored230x120 capture proxy inside measured new water opening, not full hull/aperture size. Scale selected from new receiver silhouette, not copied Jungle value."
+      },
+      "provenance": {
+        "promptPath": "prompts/009-receiver-v1.txt",
+        "promptSha256": "8dfc824eaf8f0f39454e0412b61f122d719f5af6f59eb08749e5b3a6d92a1db1",
+        "nativeOutputPath": "C:\\Users\\user\\.codex\\generated_images\\01a1842d-becc-7012-b425-bc311371f6f9\\exec-5e3d65a9-f3a9-4a02-a11a-307f42c455dd.png",
+        "toolOutputId": "exec-5e3d65a9-f3a9-4a02-a11a-307f42c455dd",
+        "corrections": [
+          "New ball/cup optical-logical anchor policy; no bitmap change",
+          "Post-w04: тот же full PNG как target-bound floor base/interior; это alias, не новая генерация"
+        ],
+        "method": "generated",
+        "selection": "Unchanged native raster; partial candidate for real assembly QA",
+        "references": [
+          "K:/Agents/R4D/Assets/perspective/04-water-temple.jpg"
+        ],
+        "rawSha256": "4bf235f8981fcb7c3ca3029c2e59a8594e9af28d7de534a56e1ab841a9549843",
+        "rawFile": "E:/R4D/perspective/p5-runtime/asset-artist/transfer-water-dark/water/raw/receiver-v1.png",
+        "aliasOf": "receiver-v1",
+        "aliasIsNewGeneration": false
+      },
+      "opticalOpeningPointPx": [
+        627,
+        500
+      ]
+    },
+    {
+      "id": "receiver-03-rim-back-v1",
+      "family": "receiver",
+      "file": "E:/R4D/perspective/p5-runtime/asset-artist/transfer-water-dark/water/selected/mini-set-04/receiver-back-rim-v1.png",
+      "sha256": "2f58c03e3ae6a7a4a4460f94976c3c5a4b93ca6045674df8140b9221741a3c0a",
+      "bytes": 433727,
+      "sizePx": [
+        1254,
+        1254
+      ],
+      "alpha": {
+        "policy": "straight-rgba",
+        "bounds": [
+          17,
+          23,
+          1211,
+          1189
+        ],
+        "visibleBounds": [
+          30,
+          153,
+          1194,
+          434
+        ],
+        "maxAlpha": 255,
+        "note": "Native alpha сохранена: O/оба TQA center alpha0; clear rectangle99629/99671 alpha0,42 samples alpha1. Порог/trim/matte не применялись."
+      },
+      "groundAnchorPx": [
+        627,
+        558.7574460031103
+      ],
+      "footprintPx": {
+        "depth": 120.0,
+        "width": 230.0,
+        "center": [
+          627,
+          558.7574460031103
+        ],
+        "measurement": "Authored230x120 capture proxy inside measured new water opening, not full hull/aperture size. Scale selected from new receiver silhouette, not copied Jungle value."
+      },
+      "provenance": {
+        "method": "generated",
+        "promptPath": "prompts/019-receiver-back-rim-v1.txt",
+        "promptSha256": "154ac60505525e5f46baa2ba57196c1cbc01a84b6c960c390cdcdf63dafd846c",
+        "toolOutputId": "exec-226eaeea-c604-4278-86a1-9ee1914b4bd4",
+        "nativeOutputPath": "C:\\Users\\user\\.codex\\generated_images\\01a1842d-becc-7012-b425-bc311371f6f9\\exec-226eaeea-c604-4278-86a1-9ee1914b4bd4.png",
+        "rawFile": "E:/R4D/perspective/p5-runtime/asset-artist/transfer-water-dark/water/raw/receiver-back-rim-v1.png",
+        "rawSha256": "2f58c03e3ae6a7a4a4460f94976c3c5a4b93ca6045674df8140b9221741a3c0a",
+        "references": [
+          "E:/R4D/perspective/p5-runtime/asset-artist/transfer-water-dark/water/raw/receiver-v1.png"
+        ],
+        "aliasOf": "receiver-back-rim-v1",
+        "aliasIsNewGeneration": false,
+        "corrections": [
+          "Native edit исходного Water full: удалены вода/interior и передний корпус; сохранён поднятый задний U-борт/боковины"
+        ],
+        "selection": "Отдельный post-w04 candidate; actual consumer/QA не проверены"
+      },
+      "opticalOpeningPointPx": [
+        627,
+        500
+      ],
+      "registration": {
+        "templateTextureSha256": "4bf235f8981fcb7c3ca3029c2e59a8594e9af28d7de534a56e1ab841a9549843",
+        "sameCanvas": true,
+        "opticalPointBasis": "Optical O[627,500] и capture proxy230x120 перенесены по неизменному template frame; O находится в прозрачном interior",
+        "sampledOuterContourMaxDeltaTexturePx": 1,
+        "registrationUncertaintyTexturePx": 3,
+        "nativePixelsNotIdentical": true,
+        "measurements": "records/receiver-rim-registration.mini-04.json"
+      }
+    },
+    {
+      "id": "receiver-04-base-v1",
+      "family": "receiver",
+      "file": "E:/R4D/perspective/p5-runtime/asset-artist/transfer-water-dark/water/selected/mini-set-02/receiver-v1.png",
+      "sha256": "4bf235f8981fcb7c3ca3029c2e59a8594e9af28d7de534a56e1ab841a9549843",
+      "bytes": 1547434,
+      "sizePx": [
+        1254,
+        1254
+      ],
+      "alpha": {
+        "policy": "straight-rgba",
+        "note": "Exact alpha>0/alpha>=16; native bytes unchanged, no trim/threshold/matte",
+        "maxAlpha": 255,
+        "bounds": [
+          0,
+          0,
+          1228,
+          1254
+        ],
+        "visibleBounds": [
+          32,
+          154,
+          1190,
+          1017
+        ]
+      },
+      "groundAnchorPx": [
+        627,
+        555.4715710194839
+      ],
+      "footprintPx": {
+        "depth": 120.0,
+        "width": 230.0,
+        "center": [
+          627,
+          555.4715710194839
+        ],
+        "measurement": "Authored230x120 capture proxy inside measured new water opening, not full hull/aperture size. Scale selected from new receiver silhouette, not copied Jungle value."
+      },
+      "provenance": {
+        "promptPath": "prompts/009-receiver-v1.txt",
+        "promptSha256": "8dfc824eaf8f0f39454e0412b61f122d719f5af6f59eb08749e5b3a6d92a1db1",
+        "nativeOutputPath": "C:\\Users\\user\\.codex\\generated_images\\01a1842d-becc-7012-b425-bc311371f6f9\\exec-5e3d65a9-f3a9-4a02-a11a-307f42c455dd.png",
+        "toolOutputId": "exec-5e3d65a9-f3a9-4a02-a11a-307f42c455dd",
+        "corrections": [
+          "New ball/cup optical-logical anchor policy; no bitmap change",
+          "Post-w04: тот же full PNG как target-bound floor base/interior; это alias, не новая генерация"
+        ],
+        "method": "generated",
+        "selection": "Unchanged native raster; partial candidate for real assembly QA",
+        "references": [
+          "K:/Agents/R4D/Assets/perspective/04-water-temple.jpg"
+        ],
+        "rawSha256": "4bf235f8981fcb7c3ca3029c2e59a8594e9af28d7de534a56e1ab841a9549843",
+        "rawFile": "E:/R4D/perspective/p5-runtime/asset-artist/transfer-water-dark/water/raw/receiver-v1.png",
+        "aliasOf": "receiver-v1",
+        "aliasIsNewGeneration": false
+      },
+      "opticalOpeningPointPx": [
+        627,
+        500
+      ]
+    },
+    {
+      "id": "receiver-04-rim-back-v1",
+      "family": "receiver",
+      "file": "E:/R4D/perspective/p5-runtime/asset-artist/transfer-water-dark/water/selected/mini-set-04/receiver-back-rim-v1.png",
+      "sha256": "2f58c03e3ae6a7a4a4460f94976c3c5a4b93ca6045674df8140b9221741a3c0a",
+      "bytes": 433727,
+      "sizePx": [
+        1254,
+        1254
+      ],
+      "alpha": {
+        "policy": "straight-rgba",
+        "bounds": [
+          17,
+          23,
+          1211,
+          1189
+        ],
+        "visibleBounds": [
+          30,
+          153,
+          1194,
+          434
+        ],
+        "maxAlpha": 255,
+        "note": "Native alpha сохранена: O/оба TQA center alpha0; clear rectangle99629/99671 alpha0,42 samples alpha1. Порог/trim/matte не применялись."
+      },
+      "groundAnchorPx": [
+        627,
+        555.4715710194839
+      ],
+      "footprintPx": {
+        "depth": 120.0,
+        "width": 230.0,
+        "center": [
+          627,
+          555.4715710194839
+        ],
+        "measurement": "Authored230x120 capture proxy inside measured new water opening, not full hull/aperture size. Scale selected from new receiver silhouette, not copied Jungle value."
+      },
+      "provenance": {
+        "method": "generated",
+        "promptPath": "prompts/019-receiver-back-rim-v1.txt",
+        "promptSha256": "154ac60505525e5f46baa2ba57196c1cbc01a84b6c960c390cdcdf63dafd846c",
+        "toolOutputId": "exec-226eaeea-c604-4278-86a1-9ee1914b4bd4",
+        "nativeOutputPath": "C:\\Users\\user\\.codex\\generated_images\\01a1842d-becc-7012-b425-bc311371f6f9\\exec-226eaeea-c604-4278-86a1-9ee1914b4bd4.png",
+        "rawFile": "E:/R4D/perspective/p5-runtime/asset-artist/transfer-water-dark/water/raw/receiver-back-rim-v1.png",
+        "rawSha256": "2f58c03e3ae6a7a4a4460f94976c3c5a4b93ca6045674df8140b9221741a3c0a",
+        "references": [
+          "E:/R4D/perspective/p5-runtime/asset-artist/transfer-water-dark/water/raw/receiver-v1.png"
+        ],
+        "aliasOf": "receiver-back-rim-v1",
+        "aliasIsNewGeneration": false,
+        "corrections": [
+          "Native edit исходного Water full: удалены вода/interior и передний корпус; сохранён поднятый задний U-борт/боковины"
+        ],
+        "selection": "Отдельный post-w04 candidate; actual consumer/QA не проверены"
+      },
+      "opticalOpeningPointPx": [
+        627,
+        500
+      ],
+      "registration": {
+        "templateTextureSha256": "4bf235f8981fcb7c3ca3029c2e59a8594e9af28d7de534a56e1ab841a9549843",
+        "sameCanvas": true,
+        "opticalPointBasis": "Optical O[627,500] и capture proxy230x120 перенесены по неизменному template frame; O находится в прозрачном interior",
+        "sampledOuterContourMaxDeltaTexturePx": 1,
+        "registrationUncertaintyTexturePx": 3,
+        "nativePixelsNotIdentical": true,
+        "measurements": "records/receiver-rim-registration.mini-04.json"
+      }
+    },
+    {
+      "id": "frog-mid-v6",
+      "family": "frog",
+      "file": "E:/R4D/perspective/p5-runtime/asset-artist/transfer-water-dark/water/selected/mini-set-05/frog-mid-v6.png",
+      "sha256": "a0d0d4a7ae0d79719b94120834249a7161509f4bfa14d097b649022bf42ba34a",
+      "bytes": 1194673,
+      "sizePx": [
+        1254,
+        1254
+      ],
+      "alpha": {
+        "policy": "straight-rgba",
+        "bounds": [
+          0,
+          9,
+          1253,
+          1245
+        ],
+        "visibleBounds": [
+          136,
+          233,
+          980,
+          838
+        ],
+        "maxAlpha": 255,
+        "opaquePixels": 147,
+        "note": "Native bytes/alpha без trim/threshold/matte"
+      },
+      "groundAnchorPx": [
+        626.0,
+        867.9212559135569
+      ],
+      "footprintPx": {
+        "center": [
+          626.0,
+          867.9212559135569
+        ],
+        "width": 978.0,
+        "depth": 399.99664778852366,
+        "measurement": "Ширина нижнего круглого основания по alpha>=128, lower contour ellipse fit; задняя половина опоры inferred, не восстановленная камера. Uncertainty±6texturepx.",
+        "uncertaintyTexturePx": 6
+      },
+      "provenance": {
+        "method": "generated",
+        "promptPath": "prompts/020-frog-mid-v6.txt",
+        "promptSha256": "1bbdd51f9865cd374bac952641ec5aec62906206ae7b2563a27807029aa0fc8e",
+        "toolOutputId": "exec-5b2f427f-5367-4bd8-9fd4-401cb6eaf697",
+        "nativeOutputPath": "C:\\Users\\user\\.codex\\generated_images\\01a1842d-becc-7012-b425-bc311371f6f9\\exec-5b2f427f-5367-4bd8-9fd4-401cb6eaf697.png",
+        "rawFile": "E:/R4D/perspective/p5-runtime/asset-artist/transfer-water-dark/water/raw/frog-mid-v6.png",
+        "rawSha256": "a0d0d4a7ae0d79719b94120834249a7161509f4bfa14d097b649022bf42ba34a",
+        "references": [
+          "E:/R4D/perspective/p5-runtime/asset-artist/transfer-water-dark/water/refs/frog-cylinder-guide-v6.png",
+          "E:/R4D/perspective/p5-runtime/asset-artist/transfer-water-dark/water/refs/frog-source-reference.png"
+        ],
+        "corrections": [],
+        "selection": "Новый native raster; actual assembled QA ожидается"
+      }
+    },
+    {
+      "id": "frog-near-v7",
+      "family": "frog",
+      "file": "E:/R4D/perspective/p5-runtime/asset-artist/transfer-water-dark/water/selected/mini-set-05/frog-near-v7.png",
+      "sha256": "81954b3b33a69cbc24c9cc259a59881100d66b38d685a9d1b96df7f5107d2aac",
+      "bytes": 1497691,
+      "sizePx": [
+        1254,
+        1254
+      ],
+      "alpha": {
+        "policy": "straight-rgba",
+        "bounds": [
+          0,
+          0,
+          1216,
+          1172
+        ],
+        "visibleBounds": [
+          90,
+          204,
+          1075,
+          926
+        ],
+        "maxAlpha": 255,
+        "opaquePixels": 321,
+        "note": "Native bytes/alpha без trim/threshold/matte"
+      },
+      "groundAnchorPx": [
+        627.0,
+        889.9655966469904
+      ],
+      "footprintPx": {
+        "center": [
+          627.0,
+          889.9655966469904
+        ],
+        "width": 1074.0,
+        "depth": 472.42048989070514,
+        "measurement": "Ширина нижнего круглого основания по alpha>=128, lower contour ellipse fit; задняя половина опоры inferred, не восстановленная камера. Uncertainty±6texturepx.",
+        "uncertaintyTexturePx": 6
+      },
+      "provenance": {
+        "method": "generated",
+        "promptPath": "prompts/022-frog-near-v7.txt",
+        "promptSha256": "d953117c1cd972086e5837705d1c3445097c42d9ef14b207d99a15fe2b59dfc0",
+        "toolOutputId": "exec-8e46fa7d-7f5b-474f-8ae0-ba1279605ec4",
+        "nativeOutputPath": "C:\\Users\\user\\.codex\\generated_images\\01a1842d-becc-7012-b425-bc311371f6f9\\exec-8e46fa7d-7f5b-474f-8ae0-ba1279605ec4.png",
+        "rawFile": "E:/R4D/perspective/p5-runtime/asset-artist/transfer-water-dark/water/raw/frog-near-v7.png",
+        "rawSha256": "81954b3b33a69cbc24c9cc259a59881100d66b38d685a9d1b96df7f5107d2aac",
+        "references": [
+          "E:/R4D/perspective/p5-runtime/asset-artist/transfer-water-dark/water/refs/frog-cylinder-guide-v7.png",
+          "E:/R4D/perspective/p5-runtime/asset-artist/transfer-water-dark/water/raw/frog-mid-v6.png"
+        ],
+        "corrections": [],
+        "selection": "Новый native raster; actual assembled QA ожидается"
+      }
+    },
+    {
+      "id": "lintel-shadow-v1",
+      "family": "shadow",
+      "file": "E:/R4D/perspective/p5-runtime/asset-artist/transfer-water-dark/water/selected/mini-set-05/lintel-shadow-v1.png",
+      "sha256": "9773b722949601b438a85076aca750bc703e4bf99dc5750e7ea0f55df96d3a96",
+      "bytes": 294672,
+      "sizePx": [
+        1254,
+        1254
+      ],
+      "alpha": {
+        "policy": "straight-rgba",
+        "bounds": [
+          19,
+          99,
+          1173,
+          1115
+        ],
+        "visibleBounds": [
+          89,
+          652,
+          1015,
+          164
+        ],
+        "maxAlpha": 172,
+        "opaquePixels": 0,
+        "note": "Native bytes/alpha без trim/threshold/matte"
+      },
+      "groundAnchorPx": [
+        627,
+        580
+      ],
+      "footprintPx": {
+        "center": [
+          627,
+          580
+        ],
+        "width": 950.0,
+        "depth": 190.0,
+        "measurement": "Авторский caster-plane proxy950x190 из generation brief; anchor[627,580]. Это опора caster, не alpha bbox тени и не collider. Измеренная painted lobe отдельно[89,652,1015,164].",
+        "registrationUncertaintyTexturePx": 20
+      },
+      "provenance": {
+        "method": "generated",
+        "promptPath": "prompts/021-lintel-shadow-v1.txt",
+        "promptSha256": "036277d1e1f87d1a0e5ddb45606f1f2ec4cd07f3500a7282ccb358ef6c2760ff",
+        "toolOutputId": "exec-ba7eaf89-86c6-4011-b57f-90402f692162",
+        "nativeOutputPath": "C:\\Users\\user\\.codex\\generated_images\\01a1842d-becc-7012-b425-bc311371f6f9\\exec-ba7eaf89-86c6-4011-b57f-90402f692162.png",
+        "rawFile": "E:/R4D/perspective/p5-runtime/asset-artist/transfer-water-dark/water/raw/lintel-shadow-v1.png",
+        "rawSha256": "9773b722949601b438a85076aca750bc703e4bf99dc5750e7ea0f55df96d3a96",
+        "references": [
+          "E:/R4D/perspective/p5-runtime/asset-artist/transfer-water-dark/water/raw/arch-mid-v2.png",
+          "E:/R4D/perspective/p5-runtime/asset-artist/transfer-water-dark/water/raw/obstacle-shadow-v2.png"
+        ],
+        "corrections": [
+          "Новая отдельная lintel cast lobe; две foot-contact shadows остаются отдельно. Native maxAlpha172 выше brief90..130; opaquePixels0, tint/opacity/readability ещё actual QA."
+        ],
+        "selection": "Новый native raster; actual assembled QA ожидается"
+      }
+    }
+  ],
+  "instances": [
+    {
+      "id": "floor",
+      "textureId": "floor-v1",
+      "targetId": "$source",
+      "parentId": "board",
+      "role": "floor",
+      "depthOffsetRadii": 0.0,
+      "depthReason": "New full-frame square floor uniformly1254->1536; no crop or original pixel cutout"
+    },
+    {
+      "id": "receiver-01-base",
+      "textureId": "receiver-01-base-v1",
+      "targetId": "receiver-01",
+      "parentId": "receiver-01",
+      "role": "floor",
+      "depthOffsetRadii": 0.0,
+      "depthReason": "Неизменный full PNG ниже shadows/ball, существующий floor rank. Scene floor id floor идёт до receiver-01-base..04-base и в массиве, и лексикографически."
+    },
+    {
+      "id": "receiver-02-base",
+      "textureId": "receiver-02-base-v1",
+      "targetId": "receiver-02",
+      "parentId": "receiver-02",
+      "role": "floor",
+      "depthOffsetRadii": 0.0,
+      "depthReason": "Неизменный full PNG ниже shadows/ball, существующий floor rank. Scene floor id floor идёт до receiver-01-base..04-base и в массиве, и лексикографически."
+    },
+    {
+      "id": "receiver-03-base",
+      "textureId": "receiver-03-base-v1",
+      "targetId": "receiver-03",
+      "parentId": "receiver-03",
+      "role": "floor",
+      "depthOffsetRadii": 0.0,
+      "depthReason": "Неизменный full PNG ниже shadows/ball, существующий floor rank. Scene floor id floor идёт до receiver-01-base..04-base и в массиве, и лексикографически."
+    },
+    {
+      "id": "receiver-04-base",
+      "textureId": "receiver-04-base-v1",
+      "targetId": "receiver-04",
+      "parentId": "receiver-04",
+      "role": "floor",
+      "depthOffsetRadii": 0.0,
+      "depthReason": "Неизменный full PNG ниже shadows/ball, существующий floor rank. Scene floor id floor идёт до receiver-01-base..04-base и в массиве, и лексикографически."
+    },
+    {
+      "id": "pillar-03-body",
+      "textureId": "pillar-mid-v1",
+      "targetId": "pillar-03",
+      "parentId": "pillar-03",
+      "role": "body",
+      "depthOffsetRadii": 0.0,
+      "depthReason": "Same source consumer baseline part sorting at unchanged native loop centroid; sides/corners require actual QA"
+    },
+    {
+      "id": "pillar-03-shadow",
+      "textureId": "obstacle-shadow-v2",
+      "targetId": "pillar-03",
+      "parentId": "pillar-03",
+      "role": "shadow",
+      "depthOffsetRadii": 0.0,
+      "depthReason": "Separate generated translucent contact/cast shadow, source offset authored in pixels only"
+    },
+    {
+      "id": "pillar-04-body",
+      "textureId": "pillar-mid-v1",
+      "targetId": "pillar-04",
+      "parentId": "pillar-04",
+      "role": "body",
+      "depthOffsetRadii": 0.0,
+      "depthReason": "Same source consumer baseline part sorting at unchanged native loop centroid; sides/corners require actual QA"
+    },
+    {
+      "id": "pillar-04-shadow",
+      "textureId": "obstacle-shadow-v2",
+      "targetId": "pillar-04",
+      "parentId": "pillar-04",
+      "role": "shadow",
+      "depthOffsetRadii": 0.0,
+      "depthReason": "Separate generated translucent contact/cast shadow, source offset authored in pixels only"
+    },
+    {
+      "id": "ball",
+      "textureId": "ball-v1",
+      "targetId": "$ball",
+      "parentId": "ball",
+      "role": "ball",
+      "depthOffsetRadii": 0.0,
+      "depthReason": "New sphere, scale from live projected r16 diameter; contact and visual center measured on new art"
+    },
+    {
+      "id": "ball-shadow",
+      "textureId": "ball-shadow-v1",
+      "targetId": "$ball",
+      "parentId": "ball",
+      "role": "shadow",
+      "depthOffsetRadii": 0.0,
+      "depthReason": "Separate new translucent ground shadow; no state/seed/tick offset"
+    },
+    {
+      "id": "pillar-01-body",
+      "textureId": "pillar-mid-v1",
+      "targetId": "pillar-01",
+      "parentId": "pillar-01",
+      "role": "body",
+      "depthOffsetRadii": 0.0,
+      "depthReason": "Same measured pillar support family; uniform scale from exact unchanged segment-loop target"
+    },
+    {
+      "id": "pillar-01-shadow",
+      "textureId": "obstacle-shadow-v2",
+      "targetId": "pillar-01",
+      "parentId": "pillar-01",
+      "role": "shadow",
+      "depthOffsetRadii": 0.0,
+      "depthReason": "Separate new readable shadow; no native offset"
+    },
+    {
+      "id": "pillar-02-body",
+      "textureId": "pillar-mid-v1",
+      "targetId": "pillar-02",
+      "parentId": "pillar-02",
+      "role": "body",
+      "depthOffsetRadii": 0.0,
+      "depthReason": "Same measured pillar support family; uniform scale from exact unchanged segment-loop target"
+    },
+    {
+      "id": "pillar-02-shadow",
+      "textureId": "obstacle-shadow-v2",
+      "targetId": "pillar-02",
+      "parentId": "pillar-02",
+      "role": "shadow",
+      "depthOffsetRadii": 0.0,
+      "depthReason": "Separate new readable shadow; no native offset"
+    },
+    {
+      "id": "pillar-05-body",
+      "textureId": "pillar-mid-v1",
+      "targetId": "pillar-05",
+      "parentId": "pillar-05",
+      "role": "body",
+      "depthOffsetRadii": 0.0,
+      "depthReason": "Same measured pillar support family; uniform scale from exact unchanged segment-loop target"
+    },
+    {
+      "id": "pillar-05-shadow",
+      "textureId": "obstacle-shadow-v2",
+      "targetId": "pillar-05",
+      "parentId": "pillar-05",
+      "role": "shadow",
+      "depthOffsetRadii": 0.0,
+      "depthReason": "Separate new readable shadow; no native offset"
+    },
+    {
+      "id": "pillar-06-body",
+      "textureId": "pillar-mid-v1",
+      "targetId": "pillar-06",
+      "parentId": "pillar-06",
+      "role": "body",
+      "depthOffsetRadii": 0.0,
+      "depthReason": "Same measured pillar support family; uniform scale from exact unchanged segment-loop target"
+    },
+    {
+      "id": "pillar-06-shadow",
+      "textureId": "obstacle-shadow-v2",
+      "targetId": "pillar-06",
+      "parentId": "pillar-06",
+      "role": "shadow",
+      "depthOffsetRadii": 0.0,
+      "depthReason": "Separate new readable shadow; no native offset"
+    },
+    {
+      "id": "pillar-07-body",
+      "textureId": "pillar-mid-v1",
+      "targetId": "pillar-07",
+      "parentId": "pillar-07",
+      "role": "body",
+      "depthOffsetRadii": 0.0,
+      "depthReason": "Same measured pillar support family; uniform scale from exact unchanged segment-loop target"
+    },
+    {
+      "id": "pillar-07-shadow",
+      "textureId": "obstacle-shadow-v2",
+      "targetId": "pillar-07",
+      "parentId": "pillar-07",
+      "role": "shadow",
+      "depthOffsetRadii": 0.0,
+      "depthReason": "Separate new readable shadow; no native offset"
+    },
+    {
+      "id": "frog-01-body",
+      "textureId": "frog-mid-v4",
+      "targetId": "frog-01",
+      "parentId": "frog-01",
+      "role": "body",
+      "depthOffsetRadii": 0.0,
+      "depthReason": "Farthest frog target selected by measured support ratio; residual retained, no XY warp or geometry change"
+    },
+    {
+      "id": "frog-01-shadow",
+      "textureId": "obstacle-shadow-v2",
+      "targetId": "frog-01",
+      "parentId": "frog-01",
+      "role": "shadow",
+      "depthOffsetRadii": 0.0,
+      "depthReason": "Separate generated shadow scaled by unchanged target footprint"
+    },
+    {
+      "id": "receiver-01-back",
+      "textureId": "receiver-01-rim-back-v1",
+      "targetId": "receiver-01",
+      "parentId": "receiver-01",
+      "role": "receiver-back",
+      "depthOffsetRadii": -1.0,
+      "depthReason": "Прежний receiver-back offset-1, только solid rim/side wall; interior находится в отдельном floor base. Без условий tick/seed."
+    },
+    {
+      "id": "receiver-01-front",
+      "textureId": "receiver-01-front-v1",
+      "targetId": "receiver-01",
+      "parentId": "receiver-01",
+      "role": "receiver-front",
+      "depthOffsetRadii": 1.0,
+      "depthReason": "Existing receiver part-depth baseline; same new optical/logical registration, no sink/fade/seed condition"
+    },
+    {
+      "id": "receiver-02-back",
+      "textureId": "receiver-02-rim-back-v1",
+      "targetId": "receiver-02",
+      "parentId": "receiver-02",
+      "role": "receiver-back",
+      "depthOffsetRadii": -1.0,
+      "depthReason": "Прежний receiver-back offset-1, только solid rim/side wall; interior находится в отдельном floor base. Без условий tick/seed."
+    },
+    {
+      "id": "receiver-02-front",
+      "textureId": "receiver-02-front-v1",
+      "targetId": "receiver-02",
+      "parentId": "receiver-02",
+      "role": "receiver-front",
+      "depthOffsetRadii": 1.0,
+      "depthReason": "Existing receiver part-depth baseline; same new optical/logical registration, no sink/fade/seed condition"
+    },
+    {
+      "id": "receiver-03-back",
+      "textureId": "receiver-03-rim-back-v1",
+      "targetId": "receiver-03",
+      "parentId": "receiver-03",
+      "role": "receiver-back",
+      "depthOffsetRadii": -1.0,
+      "depthReason": "Прежний receiver-back offset-1, только solid rim/side wall; interior находится в отдельном floor base. Без условий tick/seed."
+    },
+    {
+      "id": "receiver-03-front",
+      "textureId": "receiver-03-front-v1",
+      "targetId": "receiver-03",
+      "parentId": "receiver-03",
+      "role": "receiver-front",
+      "depthOffsetRadii": 1.0,
+      "depthReason": "Existing receiver part-depth baseline; same new optical/logical registration, no sink/fade/seed condition"
+    },
+    {
+      "id": "receiver-04-back",
+      "textureId": "receiver-04-rim-back-v1",
+      "targetId": "receiver-04",
+      "parentId": "receiver-04",
+      "role": "receiver-back",
+      "depthOffsetRadii": -1.0,
+      "depthReason": "Прежний receiver-back offset-1, только solid rim/side wall; interior находится в отдельном floor base. Без условий tick/seed."
+    },
+    {
+      "id": "receiver-04-front",
+      "textureId": "receiver-04-front-v1",
+      "targetId": "receiver-04",
+      "parentId": "receiver-04",
+      "role": "receiver-front",
+      "depthOffsetRadii": 1.0,
+      "depthReason": "Existing receiver part-depth baseline; same new optical/logical registration, no sink/fade/seed condition"
+    },
+    {
+      "id": "arch-07-whole-baseline",
+      "textureId": "arch-mid-v2",
+      "targetId": "arch-07",
+      "parentId": "arch-07",
+      "role": "body",
+      "depthOffsetRadii": 0,
+      "depthReason": "Original whole-sprite center-depth baseline; arch assembly only registers existing feet, no new collider. Must inspect support/lintel/opening states before accepting sufficient occlusion."
+    },
+    {
+      "id": "arch-07-left-foot-shadow",
+      "textureId": "obstacle-shadow-v2",
+      "targetId": "arch-07-left-foot",
+      "parentId": "arch-07",
+      "role": "shadow",
+      "depthOffsetRadii": 0,
+      "depthReason": "Separate new ground shadow under the actual unchanged physical foot; no solid collider for lintel/height"
+    },
+    {
+      "id": "arch-07-right-foot-shadow",
+      "textureId": "obstacle-shadow-v2",
+      "targetId": "arch-07-right-foot",
+      "parentId": "arch-07",
+      "role": "shadow",
+      "depthOffsetRadii": 0,
+      "depthReason": "Separate new ground shadow under the actual unchanged physical foot; no solid collider for lintel/height"
+    },
+    {
+      "id": "frog-02-body",
+      "textureId": "frog-mid-v6",
+      "targetId": "frog-02",
+      "parentId": "frog-02",
+      "role": "body",
+      "depthOffsetRadii": 0.0,
+      "depthReason": "Новая подходящая depth-поза по accepted target; uniform scale, без XY warp/instance translation. Residual сохранён."
+    },
+    {
+      "id": "frog-02-shadow",
+      "textureId": "obstacle-shadow-v2",
+      "targetId": "frog-02",
+      "parentId": "frog-02",
+      "role": "shadow",
+      "depthOffsetRadii": 0.0,
+      "depthReason": "Прежняя отдельная Water shadow; exact target footprint."
+    },
+    {
+      "id": "frog-03-body",
+      "textureId": "frog-mid-v6",
+      "targetId": "frog-03",
+      "parentId": "frog-03",
+      "role": "body",
+      "depthOffsetRadii": 0.0,
+      "depthReason": "Новая подходящая depth-поза по accepted target; uniform scale, без XY warp/instance translation. Residual сохранён."
+    },
+    {
+      "id": "frog-03-shadow",
+      "textureId": "obstacle-shadow-v2",
+      "targetId": "frog-03",
+      "parentId": "frog-03",
+      "role": "shadow",
+      "depthOffsetRadii": 0.0,
+      "depthReason": "Прежняя отдельная Water shadow; exact target footprint."
+    },
+    {
+      "id": "frog-04-body",
+      "textureId": "frog-near-v7",
+      "targetId": "frog-04",
+      "parentId": "frog-04",
+      "role": "body",
+      "depthOffsetRadii": 0.0,
+      "depthReason": "Новая подходящая depth-поза по accepted target; uniform scale, без XY warp/instance translation. Residual сохранён."
+    },
+    {
+      "id": "frog-04-shadow",
+      "textureId": "obstacle-shadow-v2",
+      "targetId": "frog-04",
+      "parentId": "frog-04",
+      "role": "shadow",
+      "depthOffsetRadii": 0.0,
+      "depthReason": "Прежняя отдельная Water shadow; exact target footprint."
+    },
+    {
+      "id": "frog-05-body",
+      "textureId": "frog-near-v7",
+      "targetId": "frog-05",
+      "parentId": "frog-05",
+      "role": "body",
+      "depthOffsetRadii": 0.0,
+      "depthReason": "Новая подходящая depth-поза по accepted target; uniform scale, без XY warp/instance translation. Residual сохранён."
+    },
+    {
+      "id": "frog-05-shadow",
+      "textureId": "obstacle-shadow-v2",
+      "targetId": "frog-05",
+      "parentId": "frog-05",
+      "role": "shadow",
+      "depthOffsetRadii": 0.0,
+      "depthReason": "Прежняя отдельная Water shadow; exact target footprint."
+    },
+    {
+      "id": "frog-06-body",
+      "textureId": "frog-near-v7",
+      "targetId": "frog-06",
+      "parentId": "frog-06",
+      "role": "body",
+      "depthOffsetRadii": 0.0,
+      "depthReason": "Новая подходящая depth-поза по accepted target; uniform scale, без XY warp/instance translation. Residual сохранён."
+    },
+    {
+      "id": "frog-06-shadow",
+      "textureId": "obstacle-shadow-v2",
+      "targetId": "frog-06",
+      "parentId": "frog-06",
+      "role": "shadow",
+      "depthOffsetRadii": 0.0,
+      "depthReason": "Прежняя отдельная Water shadow; exact target footprint."
+    },
+    {
+      "id": "arch-01-whole-baseline",
+      "textureId": "arch-mid-v2",
+      "targetId": "arch-01",
+      "parentId": "arch-01",
+      "role": "body",
+      "depthOffsetRadii": 0.0,
+      "depthReason": "Тот же whole-gate рецепт, сохранённый и actual-просмотренный только для arch07 в w04 subset. Aggregate feet для регистрации, без lintel/height collider."
+    },
+    {
+      "id": "arch-01-left-foot-shadow",
+      "textureId": "obstacle-shadow-v2",
+      "targetId": "arch-01-left-foot",
+      "parentId": "arch-01",
+      "role": "shadow",
+      "depthOffsetRadii": 0.0,
+      "depthReason": "Отдельная contact shadow на exact unchanged native foot target."
+    },
+    {
+      "id": "arch-01-right-foot-shadow",
+      "textureId": "obstacle-shadow-v2",
+      "targetId": "arch-01-right-foot",
+      "parentId": "arch-01",
+      "role": "shadow",
+      "depthOffsetRadii": 0.0,
+      "depthReason": "Отдельная contact shadow на exact unchanged native foot target."
+    },
+    {
+      "id": "arch-01-lintel-cast-shadow",
+      "textureId": "lintel-shadow-v1",
+      "targetId": "arch-01",
+      "parentId": "arch-01",
+      "role": "shadow",
+      "depthOffsetRadii": 0.0,
+      "depthReason": "Отдельная новая soft lintel cast lobe, uniform caster-plane registration; не foot contact и не новая физика."
+    },
+    {
+      "id": "arch-02-whole-baseline",
+      "textureId": "arch-mid-v2",
+      "targetId": "arch-02",
+      "parentId": "arch-02",
+      "role": "body",
+      "depthOffsetRadii": 0.0,
+      "depthReason": "Тот же whole-gate рецепт, сохранённый и actual-просмотренный только для arch07 в w04 subset. Aggregate feet для регистрации, без lintel/height collider."
+    },
+    {
+      "id": "arch-02-left-foot-shadow",
+      "textureId": "obstacle-shadow-v2",
+      "targetId": "arch-02-left-foot",
+      "parentId": "arch-02",
+      "role": "shadow",
+      "depthOffsetRadii": 0.0,
+      "depthReason": "Отдельная contact shadow на exact unchanged native foot target."
+    },
+    {
+      "id": "arch-02-right-foot-shadow",
+      "textureId": "obstacle-shadow-v2",
+      "targetId": "arch-02-right-foot",
+      "parentId": "arch-02",
+      "role": "shadow",
+      "depthOffsetRadii": 0.0,
+      "depthReason": "Отдельная contact shadow на exact unchanged native foot target."
+    },
+    {
+      "id": "arch-02-lintel-cast-shadow",
+      "textureId": "lintel-shadow-v1",
+      "targetId": "arch-02",
+      "parentId": "arch-02",
+      "role": "shadow",
+      "depthOffsetRadii": 0.0,
+      "depthReason": "Отдельная новая soft lintel cast lobe, uniform caster-plane registration; не foot contact и не новая физика."
+    },
+    {
+      "id": "arch-03-whole-baseline",
+      "textureId": "arch-mid-v2",
+      "targetId": "arch-03",
+      "parentId": "arch-03",
+      "role": "body",
+      "depthOffsetRadii": 0.0,
+      "depthReason": "Тот же whole-gate рецепт, сохранённый и actual-просмотренный только для arch07 в w04 subset. Aggregate feet для регистрации, без lintel/height collider."
+    },
+    {
+      "id": "arch-03-left-foot-shadow",
+      "textureId": "obstacle-shadow-v2",
+      "targetId": "arch-03-left-foot",
+      "parentId": "arch-03",
+      "role": "shadow",
+      "depthOffsetRadii": 0.0,
+      "depthReason": "Отдельная contact shadow на exact unchanged native foot target."
+    },
+    {
+      "id": "arch-03-right-foot-shadow",
+      "textureId": "obstacle-shadow-v2",
+      "targetId": "arch-03-right-foot",
+      "parentId": "arch-03",
+      "role": "shadow",
+      "depthOffsetRadii": 0.0,
+      "depthReason": "Отдельная contact shadow на exact unchanged native foot target."
+    },
+    {
+      "id": "arch-03-lintel-cast-shadow",
+      "textureId": "lintel-shadow-v1",
+      "targetId": "arch-03",
+      "parentId": "arch-03",
+      "role": "shadow",
+      "depthOffsetRadii": 0.0,
+      "depthReason": "Отдельная новая soft lintel cast lobe, uniform caster-plane registration; не foot contact и не новая физика."
+    },
+    {
+      "id": "arch-04-whole-baseline",
+      "textureId": "arch-mid-v2",
+      "targetId": "arch-04",
+      "parentId": "arch-04",
+      "role": "body",
+      "depthOffsetRadii": 0.0,
+      "depthReason": "Тот же whole-gate рецепт, сохранённый и actual-просмотренный только для arch07 в w04 subset. Aggregate feet для регистрации, без lintel/height collider."
+    },
+    {
+      "id": "arch-04-left-foot-shadow",
+      "textureId": "obstacle-shadow-v2",
+      "targetId": "arch-04-left-foot",
+      "parentId": "arch-04",
+      "role": "shadow",
+      "depthOffsetRadii": 0.0,
+      "depthReason": "Отдельная contact shadow на exact unchanged native foot target."
+    },
+    {
+      "id": "arch-04-right-foot-shadow",
+      "textureId": "obstacle-shadow-v2",
+      "targetId": "arch-04-right-foot",
+      "parentId": "arch-04",
+      "role": "shadow",
+      "depthOffsetRadii": 0.0,
+      "depthReason": "Отдельная contact shadow на exact unchanged native foot target."
+    },
+    {
+      "id": "arch-04-lintel-cast-shadow",
+      "textureId": "lintel-shadow-v1",
+      "targetId": "arch-04",
+      "parentId": "arch-04",
+      "role": "shadow",
+      "depthOffsetRadii": 0.0,
+      "depthReason": "Отдельная новая soft lintel cast lobe, uniform caster-plane registration; не foot contact и не новая физика."
+    },
+    {
+      "id": "arch-05-whole-baseline",
+      "textureId": "arch-mid-v2",
+      "targetId": "arch-05",
+      "parentId": "arch-05",
+      "role": "body",
+      "depthOffsetRadii": 0.0,
+      "depthReason": "Тот же whole-gate рецепт, сохранённый и actual-просмотренный только для arch07 в w04 subset. Aggregate feet для регистрации, без lintel/height collider."
+    },
+    {
+      "id": "arch-05-left-foot-shadow",
+      "textureId": "obstacle-shadow-v2",
+      "targetId": "arch-05-left-foot",
+      "parentId": "arch-05",
+      "role": "shadow",
+      "depthOffsetRadii": 0.0,
+      "depthReason": "Отдельная contact shadow на exact unchanged native foot target."
+    },
+    {
+      "id": "arch-05-right-foot-shadow",
+      "textureId": "obstacle-shadow-v2",
+      "targetId": "arch-05-right-foot",
+      "parentId": "arch-05",
+      "role": "shadow",
+      "depthOffsetRadii": 0.0,
+      "depthReason": "Отдельная contact shadow на exact unchanged native foot target."
+    },
+    {
+      "id": "arch-05-lintel-cast-shadow",
+      "textureId": "lintel-shadow-v1",
+      "targetId": "arch-05",
+      "parentId": "arch-05",
+      "role": "shadow",
+      "depthOffsetRadii": 0.0,
+      "depthReason": "Отдельная новая soft lintel cast lobe, uniform caster-plane registration; не foot contact и не новая физика."
+    },
+    {
+      "id": "arch-06-whole-baseline",
+      "textureId": "arch-mid-v2",
+      "targetId": "arch-06",
+      "parentId": "arch-06",
+      "role": "body",
+      "depthOffsetRadii": 0.0,
+      "depthReason": "Тот же whole-gate рецепт, сохранённый и actual-просмотренный только для arch07 в w04 subset. Aggregate feet для регистрации, без lintel/height collider."
+    },
+    {
+      "id": "arch-06-left-foot-shadow",
+      "textureId": "obstacle-shadow-v2",
+      "targetId": "arch-06-left-foot",
+      "parentId": "arch-06",
+      "role": "shadow",
+      "depthOffsetRadii": 0.0,
+      "depthReason": "Отдельная contact shadow на exact unchanged native foot target."
+    },
+    {
+      "id": "arch-06-right-foot-shadow",
+      "textureId": "obstacle-shadow-v2",
+      "targetId": "arch-06-right-foot",
+      "parentId": "arch-06",
+      "role": "shadow",
+      "depthOffsetRadii": 0.0,
+      "depthReason": "Отдельная contact shadow на exact unchanged native foot target."
+    },
+    {
+      "id": "arch-06-lintel-cast-shadow",
+      "textureId": "lintel-shadow-v1",
+      "targetId": "arch-06",
+      "parentId": "arch-06",
+      "role": "shadow",
+      "depthOffsetRadii": 0.0,
+      "depthReason": "Отдельная новая soft lintel cast lobe, uniform caster-plane registration; не foot contact и не новая физика."
+    },
+    {
+      "id": "arch-07-lintel-cast-shadow",
+      "textureId": "lintel-shadow-v1",
+      "targetId": "arch-07",
+      "parentId": "arch-07",
+      "role": "shadow",
+      "depthOffsetRadii": 0.0,
+      "depthReason": "Отдельная новая soft lintel cast lobe, uniform caster-plane registration; не foot contact и не новая физика."
+    },
+    {
+      "id": "arch-08-whole-baseline",
+      "textureId": "arch-mid-v2",
+      "targetId": "arch-08",
+      "parentId": "arch-08",
+      "role": "body",
+      "depthOffsetRadii": 0.0,
+      "depthReason": "Тот же whole-gate рецепт, сохранённый и actual-просмотренный только для arch07 в w04 subset. Aggregate feet для регистрации, без lintel/height collider."
+    },
+    {
+      "id": "arch-08-left-foot-shadow",
+      "textureId": "obstacle-shadow-v2",
+      "targetId": "arch-08-left-foot",
+      "parentId": "arch-08",
+      "role": "shadow",
+      "depthOffsetRadii": 0.0,
+      "depthReason": "Отдельная contact shadow на exact unchanged native foot target."
+    },
+    {
+      "id": "arch-08-right-foot-shadow",
+      "textureId": "obstacle-shadow-v2",
+      "targetId": "arch-08-right-foot",
+      "parentId": "arch-08",
+      "role": "shadow",
+      "depthOffsetRadii": 0.0,
+      "depthReason": "Отдельная contact shadow на exact unchanged native foot target."
+    },
+    {
+      "id": "arch-08-lintel-cast-shadow",
+      "textureId": "lintel-shadow-v1",
+      "targetId": "arch-08",
+      "parentId": "arch-08",
+      "role": "shadow",
+      "depthOffsetRadii": 0.0,
+      "depthReason": "Отдельная новая soft lintel cast lobe, uniform caster-plane registration; не foot contact и не новая физика."
+    },
+    {
+      "id": "fg-wall-left-far-cap",
+      "textureId": "floor-v1",
+      "targetId": "$source",
+      "parentId": "floor",
+      "role": "foreground",
+      "depthOffsetRadii": 0.0,
+      "depthReason": "Только объявленный каменный cap/face нового generated floor; без open paving/water и без seed/tick условий.",
+      "sourceClipPx": {
+        "coordinateSpace": "source1536",
+        "polygon": [
+          [
+            319.6937799043062,
+            209.45454545454547
+          ],
+          [
+            327.0430622009569,
+            215.57894736842104
+          ],
+          [
+            298.8708133971292,
+            233.95215311004785
+          ],
+          [
+            280.4976076555024,
+            254.77511961722487
+          ],
+          [
+            273.14832535885165,
+            275.5980861244019
+          ],
+          [
+            269.4736842105263,
+            300.0956937799043
+          ],
+          [
+            260.8995215311005,
+            328.26794258373207
+          ],
+          [
+            248.65071770334927,
+            341.74162679425837
+          ],
+          [
+            215.57894736842104,
+            340.51674641148327
+          ],
+          [
+            215.57894736842104,
+            316.01913875598086
+          ],
+          [
+            225.37799043062202,
+            301.3205741626794
+          ],
+          [
+            232.72727272727272,
+            280.4976076555024
+          ],
+          [
+            244.97607655502392,
+            258.44976076555025
+          ],
+          [
+            264.57416267942585,
+            240.07655502392345
+          ],
+          [
+            291.52153110047846,
+            222.92822966507177
+          ]
+        ],
+        "provenance": {
+          "method": "scene-region-from-generated-floor",
+          "sourceTextureId": "floor-v1",
+          "sourceSha256": "37e1603fe031b18e9ae8d325f65b2c138612d15f49d6948ce0b27c9b35c3456c",
+          "note": "Новая Water floor region long-wall-cap; raw trace из собственного native1254 floor, единый scale1536/1254; это reuse0 новых PNG.",
+          "traceRecord": "records/foreground-trace.mini-05.json",
+          "seedConditional": false,
+          "uncertaintyTexturePx": 3
+        },
+        "limitations": [
+          "Ручная граница±3rawpx, мелкие bevel/foam края и dynamic crossings ожидают actual QA.",
+          "Первый inside-facing wall/near-face pass; внешние дальние колонны/ноги не получают blanket coverage PASS."
+        ]
+      }
+    },
+    {
+      "id": "fg-wall-right-far-cap",
+      "textureId": "floor-v1",
+      "targetId": "$source",
+      "parentId": "floor",
+      "role": "foreground",
+      "depthOffsetRadii": 0.0,
+      "depthReason": "Только объявленный каменный cap/face нового generated floor; без open paving/water и без seed/tick условий.",
+      "sourceClipPx": {
+        "coordinateSpace": "source1536",
+        "polygon": [
+          [
+            1211.4066985645934,
+            208.22966507177034
+          ],
+          [
+            1204.0574162679425,
+            216.80382775119617
+          ],
+          [
+            1233.4545454545455,
+            235.17703349282297
+          ],
+          [
+            1253.0526315789473,
+            253.55023923444975
+          ],
+          [
+            1262.8516746411483,
+            275.5980861244019
+          ],
+          [
+            1272.6507177033493,
+            302.54545454545456
+          ],
+          [
+            1282.4497607655503,
+            330.7177033492823
+          ],
+          [
+            1292.248803827751,
+            342.9665071770335
+          ],
+          [
+            1324.0956937799042,
+            341.74162679425837
+          ],
+          [
+            1324.0956937799042,
+            317.24401913875596
+          ],
+          [
+            1311.846889952153,
+            300.0956937799043
+          ],
+          [
+            1303.2727272727273,
+            276.82296650717706
+          ],
+          [
+            1288.5741626794259,
+            254.77511961722487
+          ],
+          [
+            1267.751196172249,
+            237.6267942583732
+          ],
+          [
+            1239.578947368421,
+            221.70334928229664
+          ]
+        ],
+        "provenance": {
+          "method": "scene-region-from-generated-floor",
+          "sourceTextureId": "floor-v1",
+          "sourceSha256": "37e1603fe031b18e9ae8d325f65b2c138612d15f49d6948ce0b27c9b35c3456c",
+          "note": "Новая Water floor region long-wall-cap; raw trace из собственного native1254 floor, единый scale1536/1254; это reuse0 новых PNG.",
+          "traceRecord": "records/foreground-trace.mini-05.json",
+          "seedConditional": false,
+          "uncertaintyTexturePx": 3
+        },
+        "limitations": [
+          "Ручная граница±3rawpx, мелкие bevel/foam края и dynamic crossings ожидают actual QA.",
+          "Первый inside-facing wall/near-face pass; внешние дальние колонны/ноги не получают blanket coverage PASS."
+        ]
+      }
+    },
+    {
+      "id": "fg-wall-left-upper-cap",
+      "textureId": "floor-v1",
+      "targetId": "$source",
+      "parentId": "floor",
+      "role": "foreground",
+      "depthOffsetRadii": 0.0,
+      "depthReason": "Только объявленный каменный cap/face нового generated floor; без open paving/water и без seed/tick условий.",
+      "sourceClipPx": {
+        "coordinateSpace": "source1536",
+        "polygon": [
+          [
+            161.68421052631578,
+            377.2631578947368
+          ],
+          [
+            219.25358851674642,
+            376.0382775119617
+          ],
+          [
+            224.1531100478469,
+            384.6124401913876
+          ],
+          [
+            218.0287081339713,
+            410.3349282296651
+          ],
+          [
+            211.9043062200957,
+            439.73205741626793
+          ],
+          [
+            207.00478468899522,
+            476.47846889952154
+          ],
+          [
+            198.4306220095694,
+            502.20095693779905
+          ],
+          [
+            187.4066985645933,
+            510.7751196172249
+          ],
+          [
+            184.95693779904306,
+            536.4976076555024
+          ],
+          [
+            182.5071770334928,
+            565.8947368421053
+          ],
+          [
+            172.70813397129186,
+            569.5693779904307
+          ],
+          [
+            140.86124401913875,
+            567.1196172248804
+          ],
+          [
+            138.41148325358853,
+            516.8995215311005
+          ],
+          [
+            148.21052631578948,
+            505.8755980861244
+          ],
+          [
+            161.68421052631578,
+            492.4019138755981
+          ],
+          [
+            166.58373205741626,
+            455.6555023923445
+          ],
+          [
+            176.38277511961724,
+            422.5837320574163
+          ],
+          [
+            172.70813397129186,
+            402.9856459330144
+          ]
+        ],
+        "provenance": {
+          "method": "scene-region-from-generated-floor",
+          "sourceTextureId": "floor-v1",
+          "sourceSha256": "37e1603fe031b18e9ae8d325f65b2c138612d15f49d6948ce0b27c9b35c3456c",
+          "note": "Новая Water floor region long-wall-cap; raw trace из собственного native1254 floor, единый scale1536/1254; это reuse0 новых PNG.",
+          "traceRecord": "records/foreground-trace.mini-05.json",
+          "seedConditional": false,
+          "uncertaintyTexturePx": 3
+        },
+        "limitations": [
+          "Ручная граница±3rawpx, мелкие bevel/foam края и dynamic crossings ожидают actual QA.",
+          "Первый inside-facing wall/near-face pass; внешние дальние колонны/ноги не получают blanket coverage PASS."
+        ]
+      }
+    },
+    {
+      "id": "fg-wall-right-upper-cap",
+      "textureId": "floor-v1",
+      "targetId": "$source",
+      "parentId": "floor",
+      "role": "foreground",
+      "depthOffsetRadii": 0.0,
+      "depthReason": "Только объявленный каменный cap/face нового generated floor; без open paving/water и без seed/tick условий.",
+      "sourceClipPx": {
+        "coordinateSpace": "source1536",
+        "polygon": [
+          [
+            1319.1961722488038,
+            377.2631578947368
+          ],
+          [
+            1381.6650717703349,
+            377.2631578947368
+          ],
+          [
+            1386.5645933014355,
+            389.511961722488
+          ],
+          [
+            1381.6650717703349,
+            412.78468899521533
+          ],
+          [
+            1374.3157894736842,
+            434.8325358851675
+          ],
+          [
+            1371.866028708134,
+            464.22966507177034
+          ],
+          [
+            1373.090909090909,
+            488.72727272727275
+          ],
+          [
+            1389.0143540669856,
+            507.1004784688995
+          ],
+          [
+            1393.9138755980862,
+            515.6746411483253
+          ],
+          [
+            1393.9138755980862,
+            562.2200956937799
+          ],
+          [
+            1385.3397129186603,
+            570.7942583732057
+          ],
+          [
+            1352.267942583732,
+            568.3444976076555
+          ],
+          [
+            1348.5933014354066,
+            542.622009569378
+          ],
+          [
+            1343.6937799043062,
+            513.2248803827752
+          ],
+          [
+            1338.7942583732058,
+            499.7511961722488
+          ],
+          [
+            1336.3444976076555,
+            476.47846889952154
+          ],
+          [
+            1332.66985645933,
+            454.4306220095694
+          ],
+          [
+            1328.9952153110048,
+            432.38277511961724
+          ],
+          [
+            1322.8708133971293,
+            405.4354066985646
+          ]
+        ],
+        "provenance": {
+          "method": "scene-region-from-generated-floor",
+          "sourceTextureId": "floor-v1",
+          "sourceSha256": "37e1603fe031b18e9ae8d325f65b2c138612d15f49d6948ce0b27c9b35c3456c",
+          "note": "Новая Water floor region long-wall-cap; raw trace из собственного native1254 floor, единый scale1536/1254; это reuse0 новых PNG.",
+          "traceRecord": "records/foreground-trace.mini-05.json",
+          "seedConditional": false,
+          "uncertaintyTexturePx": 3
+        },
+        "limitations": [
+          "Ручная граница±3rawpx, мелкие bevel/foam края и dynamic crossings ожидают actual QA.",
+          "Первый inside-facing wall/near-face pass; внешние дальние колонны/ноги не получают blanket coverage PASS."
+        ]
+      }
+    },
+    {
+      "id": "fg-wall-left-middle-cap",
+      "textureId": "floor-v1",
+      "targetId": "$source",
+      "parentId": "floor",
+      "role": "foreground",
+      "depthOffsetRadii": 0.0,
+      "depthReason": "Только объявленный каменный cap/face нового generated floor; без open paving/water и без seed/tick условий.",
+      "sourceClipPx": {
+        "coordinateSpace": "source1536",
+        "polygon": [
+          [
+            126.16267942583733,
+            575.6937799043062
+          ],
+          [
+            150.6602870813397,
+            579.3684210526316
+          ],
+          [
+            145.76076555023923,
+            603.866028708134
+          ],
+          [
+            132.28708133971293,
+            633.2631578947369
+          ],
+          [
+            117.58851674641149,
+            660.2105263157895
+          ],
+          [
+            113.91387559808612,
+            683.4832535885167
+          ],
+          [
+            134.73684210526315,
+            698.1818181818181
+          ],
+          [
+            161.68421052631578,
+            725.1291866028708
+          ],
+          [
+            182.5071770334928,
+            756.976076555024
+          ],
+          [
+            202.10526315789474,
+            796.1722488038278
+          ],
+          [
+            211.9043062200957,
+            839.0430622009569
+          ],
+          [
+            213.12918660287082,
+            881.9138755980862
+          ],
+          [
+            204.55502392344496,
+            906.4114832535885
+          ],
+          [
+            191.08133971291866,
+            918.6602870813397
+          ],
+          [
+            175.1578947368421,
+            911.311004784689
+          ],
+          [
+            176.38277511961724,
+            888.0382775119617
+          ],
+          [
+            183.73205741626793,
+            862.3157894736842
+          ],
+          [
+            181.2822966507177,
+            831.6937799043062
+          ],
+          [
+            169.0334928229665,
+            798.622009569378
+          ],
+          [
+            151.88516746411483,
+            769.2248803827752
+          ],
+          [
+            131.0622009569378,
+            743.5023923444976
+          ],
+          [
+            105.33971291866028,
+            725.1291866028708
+          ],
+          [
+            83.29186602870813,
+            715.3301435406698
+          ],
+          [
+            69.81818181818181,
+            711.6555023923445
+          ],
+          [
+            64.91866028708134,
+            703.0813397129186
+          ],
+          [
+            72.26794258373205,
+            692.0574162679426
+          ],
+          [
+            82.06698564593302,
+            674.9090909090909
+          ],
+          [
+            90.64114832535886,
+            650.4114832535885
+          ],
+          [
+            105.33971291866028,
+            623.4641148325359
+          ],
+          [
+            116.36363636363636,
+            600.1913875598086
+          ]
+        ],
+        "provenance": {
+          "method": "scene-region-from-generated-floor",
+          "sourceTextureId": "floor-v1",
+          "sourceSha256": "37e1603fe031b18e9ae8d325f65b2c138612d15f49d6948ce0b27c9b35c3456c",
+          "note": "Новая Water floor region long-wall-cap; raw trace из собственного native1254 floor, единый scale1536/1254; это reuse0 новых PNG.",
+          "traceRecord": "records/foreground-trace.mini-05.json",
+          "seedConditional": false,
+          "uncertaintyTexturePx": 3
+        },
+        "limitations": [
+          "Ручная граница±3rawpx, мелкие bevel/foam края и dynamic crossings ожидают actual QA.",
+          "Первый inside-facing wall/near-face pass; внешние дальние колонны/ноги не получают blanket coverage PASS."
+        ]
+      }
+    },
+    {
+      "id": "fg-wall-right-middle-cap",
+      "textureId": "floor-v1",
+      "targetId": "$source",
+      "parentId": "floor",
+      "role": "foreground",
+      "depthOffsetRadii": 0.0,
+      "depthReason": "Только объявленный каменный cap/face нового generated floor; без open paving/water и без seed/tick условий.",
+      "sourceClipPx": {
+        "coordinateSpace": "source1536",
+        "polygon": [
+          [
+            1386.5645933014355,
+            580.5933014354067
+          ],
+          [
+            1413.511961722488,
+            581.8181818181819
+          ],
+          [
+            1424.5358851674641,
+            607.5406698564593
+          ],
+          [
+            1438.0095693779904,
+            634.4880382775119
+          ],
+          [
+            1447.8086124401914,
+            663.8851674641148
+          ],
+          [
+            1449.0334928229665,
+            683.4832535885167
+          ],
+          [
+            1471.0813397129186,
+            692.0574162679426
+          ],
+          [
+            1477.2057416267942,
+            700.6315789473684
+          ],
+          [
+            1475.9808612440193,
+            710.4306220095693
+          ],
+          [
+            1451.4832535885168,
+            720.2296650717703
+          ],
+          [
+            1425.7607655502393,
+            741.0526315789474
+          ],
+          [
+            1403.7129186602872,
+            770.4497607655502
+          ],
+          [
+            1387.7894736842106,
+            805.9712918660288
+          ],
+          [
+            1376.7655502392345,
+            841.4928229665072
+          ],
+          [
+            1375.5406698564593,
+            872.1148325358852
+          ],
+          [
+            1382.88995215311,
+            897.8373205741627
+          ],
+          [
+            1368.1913875598086,
+            914.9856459330143
+          ],
+          [
+            1351.043062200957,
+            906.4114832535885
+          ],
+          [
+            1340.0191387559807,
+            881.9138755980862
+          ],
+          [
+            1338.7942583732058,
+            842.7177033492823
+          ],
+          [
+            1346.1435406698565,
+            803.5215311004785
+          ],
+          [
+            1360.842105263158,
+            765.5502392344498
+          ],
+          [
+            1380.4401913875597,
+            733.7033492822967
+          ],
+          [
+            1408.6124401913876,
+            706.755980861244
+          ],
+          [
+            1424.5358851674641,
+            693.2822966507177
+          ],
+          [
+            1418.4114832535886,
+            671.2344497607655
+          ],
+          [
+            1408.6124401913876,
+            646.7368421052631
+          ],
+          [
+            1395.1387559808613,
+            622.2392344497607
+          ]
+        ],
+        "provenance": {
+          "method": "scene-region-from-generated-floor",
+          "sourceTextureId": "floor-v1",
+          "sourceSha256": "37e1603fe031b18e9ae8d325f65b2c138612d15f49d6948ce0b27c9b35c3456c",
+          "note": "Новая Water floor region long-wall-cap; raw trace из собственного native1254 floor, единый scale1536/1254; это reuse0 новых PNG.",
+          "traceRecord": "records/foreground-trace.mini-05.json",
+          "seedConditional": false,
+          "uncertaintyTexturePx": 3
+        },
+        "limitations": [
+          "Ручная граница±3rawpx, мелкие bevel/foam края и dynamic crossings ожидают actual QA.",
+          "Первый inside-facing wall/near-face pass; внешние дальние колонны/ноги не получают blanket coverage PASS."
+        ]
+      }
+    },
+    {
+      "id": "fg-wall-left-near-face",
+      "textureId": "floor-v1",
+      "targetId": "$source",
+      "parentId": "floor",
+      "role": "foreground",
+      "depthOffsetRadii": 0.0,
+      "depthReason": "Только объявленный каменный cap/face нового generated floor; без open paving/water и без seed/tick условий.",
+      "sourceClipPx": {
+        "coordinateSpace": "source1536",
+        "polygon": [
+          [
+            175.1578947368421,
+            897.8373205741627
+          ],
+          [
+            194.755980861244,
+            901.5119617224881
+          ],
+          [
+            197.20574162679426,
+            922.334928229665
+          ],
+          [
+            189.85645933014354,
+            948.0574162679426
+          ],
+          [
+            175.1578947368421,
+            972.555023923445
+          ],
+          [
+            154.33492822966508,
+            995.8277511961722
+          ],
+          [
+            135.96172248803828,
+            1016.6507177033493
+          ],
+          [
+            150.6602870813397,
+            1022.7751196172248
+          ],
+          [
+            180.05741626794259,
+            1031.3492822966507
+          ],
+          [
+            195.98086124401914,
+            1043.598086124402
+          ],
+          [
+            194.755980861244,
+            1084.0191387559807
+          ],
+          [
+            191.08133971291866,
+            1106.066985645933
+          ],
+          [
+            182.5071770334928,
+            1120.7655502392345
+          ],
+          [
+            166.58373205741626,
+            1130.5645933014355
+          ],
+          [
+            145.76076555023923,
+            1136.688995215311
+          ],
+          [
+            124.9377990430622,
+            1131.7894736842106
+          ],
+          [
+            115.13875598086125,
+            1131.7894736842106
+          ],
+          [
+            115.13875598086125,
+            1156.2870813397128
+          ],
+          [
+            102.88995215311004,
+            1161.1866028708134
+          ],
+          [
+            57.569377990430624,
+            1158.7368421052631
+          ],
+          [
+            45.32057416267943,
+            1144.0382775119617
+          ],
+          [
+            42.87081339712919,
+            1121.9904306220096
+          ],
+          [
+            42.87081339712919,
+            1081.5693779904307
+          ],
+          [
+            48.995215311004785,
+            1050.9473684210527
+          ],
+          [
+            58.79425837320574,
+            1030.1244019138755
+          ],
+          [
+            75.94258373205741,
+            1011.7511961722488
+          ],
+          [
+            101.66507177033493,
+            989.7033492822967
+          ],
+          [
+            127.38755980861244,
+            967.6555023923445
+          ],
+          [
+            148.21052631578948,
+            943.1578947368421
+          ],
+          [
+            164.13397129186603,
+            918.6602870813397
+          ]
+        ],
+        "provenance": {
+          "method": "scene-region-from-generated-floor",
+          "sourceTextureId": "floor-v1",
+          "sourceSha256": "37e1603fe031b18e9ae8d325f65b2c138612d15f49d6948ce0b27c9b35c3456c",
+          "note": "Новая Water floor region long-wall-cap-and-near-face; raw trace из собственного native1254 floor, единый scale1536/1254; это reuse0 новых PNG.",
+          "traceRecord": "records/foreground-trace.mini-05.json",
+          "seedConditional": false,
+          "uncertaintyTexturePx": 3
+        },
+        "limitations": [
+          "Ручная граница±3rawpx, мелкие bevel/foam края и dynamic crossings ожидают actual QA.",
+          "Первый inside-facing wall/near-face pass; внешние дальние колонны/ноги не получают blanket coverage PASS."
+        ]
+      }
+    },
+    {
+      "id": "fg-wall-right-near-face",
+      "textureId": "floor-v1",
+      "targetId": "$source",
+      "parentId": "floor",
+      "role": "foreground",
+      "depthOffsetRadii": 0.0,
+      "depthReason": "Только объявленный каменный cap/face нового generated floor; без open paving/water и без seed/tick условий.",
+      "sourceClipPx": {
+        "coordinateSpace": "source1536",
+        "polygon": [
+          [
+            1352.267942583732,
+            897.8373205741627
+          ],
+          [
+            1371.866028708134,
+            902.7368421052631
+          ],
+          [
+            1389.0143540669856,
+            928.4593301435407
+          ],
+          [
+            1408.6124401913876,
+            955.4066985645933
+          ],
+          [
+            1434.3349282296651,
+            981.1291866028708
+          ],
+          [
+            1457.6076555023924,
+            1004.4019138755981
+          ],
+          [
+            1471.0813397129186,
+            1025.2248803827752
+          ],
+          [
+            1479.6555023923445,
+            1053.3971291866028
+          ],
+          [
+            1479.6555023923445,
+            1080.3444976076555
+          ],
+          [
+            1475.9808612440193,
+            1139.1387559808613
+          ],
+          [
+            1472.3062200956938,
+            1158.7368421052631
+          ],
+          [
+            1434.3349282296651,
+            1161.1866028708134
+          ],
+          [
+            1420.8612440191387,
+            1155.0622009569379
+          ],
+          [
+            1420.8612440191387,
+            1131.7894736842106
+          ],
+          [
+            1397.5885167464114,
+            1137.9138755980862
+          ],
+          [
+            1377.9904306220096,
+            1135.4641148325359
+          ],
+          [
+            1357.1674641148325,
+            1125.6650717703349
+          ],
+          [
+            1346.1435406698565,
+            1109.7416267942583
+          ],
+          [
+            1341.244019138756,
+            1085.244019138756
+          ],
+          [
+            1341.244019138756,
+            1046.047846889952
+          ],
+          [
+            1358.3923444976076,
+            1032.5741626794259
+          ],
+          [
+            1386.5645933014355,
+            1022.7751196172248
+          ],
+          [
+            1400.0382775119617,
+            1017.8755980861245
+          ],
+          [
+            1379.2153110047848,
+            998.2775119617224
+          ],
+          [
+            1360.842105263158,
+            973.7799043062201
+          ],
+          [
+            1347.3684210526317,
+            949.2822966507177
+          ],
+          [
+            1341.244019138756,
+            921.11004784689
+          ]
+        ],
+        "provenance": {
+          "method": "scene-region-from-generated-floor",
+          "sourceTextureId": "floor-v1",
+          "sourceSha256": "37e1603fe031b18e9ae8d325f65b2c138612d15f49d6948ce0b27c9b35c3456c",
+          "note": "Новая Water floor region long-wall-cap-and-near-face; raw trace из собственного native1254 floor, единый scale1536/1254; это reuse0 новых PNG.",
+          "traceRecord": "records/foreground-trace.mini-05.json",
+          "seedConditional": false,
+          "uncertaintyTexturePx": 3
+        },
+        "limitations": [
+          "Ручная граница±3rawpx, мелкие bevel/foam края и dynamic crossings ожидают actual QA.",
+          "Первый inside-facing wall/near-face pass; внешние дальние колонны/ноги не получают blanket coverage PASS."
+        ]
+      }
+    },
+    {
+      "id": "fg-island-left-front-face",
+      "textureId": "floor-v1",
+      "targetId": "$source",
+      "parentId": "floor",
+      "role": "foreground",
+      "depthOffsetRadii": 0.0,
+      "depthReason": "Только объявленный каменный cap/face нового generated floor; без open paving/water и без seed/tick условий.",
+      "sourceClipPx": {
+        "coordinateSpace": "source1536",
+        "polygon": [
+          [
+            338.066985645933,
+            1022.7751196172248
+          ],
+          [
+            350.3157894736842,
+            1021.5502392344498
+          ],
+          [
+            374.8133971291866,
+            1038.6985645933014
+          ],
+          [
+            406.66028708133973,
+            1055.846889952153
+          ],
+          [
+            414.00956937799043,
+            1050.9473684210527
+          ],
+          [
+            447.08133971291863,
+            1050.9473684210527
+          ],
+          [
+            456.88038277511964,
+            1058.2966507177034
+          ],
+          [
+            485.05263157894734,
+            1048.4976076555024
+          ],
+          [
+            514.4497607655502,
+            1033.799043062201
+          ],
+          [
+            538.9473684210526,
+            1020.3253588516747
+          ],
+          [
+            551.1961722488038,
+            1020.3253588516747
+          ],
+          [
+            553.6459330143541,
+            1028.8995215311004
+          ],
+          [
+            552.421052631579,
+            1065.6459330143541
+          ],
+          [
+            552.421052631579,
+            1112.1913875598086
+          ],
+          [
+            547.5215311004785,
+            1124.4401913875597
+          ],
+          [
+            532.8229665071771,
+            1135.4641148325359
+          ],
+          [
+            509.55023923444975,
+            1147.7129186602872
+          ],
+          [
+            482.60287081339715,
+            1156.2870813397128
+          ],
+          [
+            454.4306220095694,
+            1161.1866028708134
+          ],
+          [
+            449.5311004784689,
+            1170.9856459330144
+          ],
+          [
+            414.00956937799043,
+            1172.2105263157894
+          ],
+          [
+            409.1100478468899,
+            1159.9617224880383
+          ],
+          [
+            383.3875598086124,
+            1153.8373205741627
+          ],
+          [
+            360.11483253588517,
+            1144.0382775119617
+          ],
+          [
+            340.51674641148327,
+            1131.7894736842106
+          ],
+          [
+            327.0430622009569,
+            1120.7655502392345
+          ],
+          [
+            328.26794258373207,
+            1079.1196172248804
+          ],
+          [
+            334.39234449760767,
+            1038.6985645933014
+          ]
+        ],
+        "provenance": {
+          "method": "scene-region-from-generated-floor",
+          "sourceTextureId": "floor-v1",
+          "sourceSha256": "37e1603fe031b18e9ae8d325f65b2c138612d15f49d6948ce0b27c9b35c3456c",
+          "note": "Новая Water floor region near-island-front-face; raw trace из собственного native1254 floor, единый scale1536/1254; это reuse0 новых PNG.",
+          "traceRecord": "records/foreground-trace.mini-05.json",
+          "seedConditional": false,
+          "uncertaintyTexturePx": 3
+        },
+        "limitations": [
+          "Ручная граница±3rawpx, мелкие bevel/foam края и dynamic crossings ожидают actual QA.",
+          "Первый inside-facing wall/near-face pass; внешние дальние колонны/ноги не получают blanket coverage PASS."
+        ]
+      }
+    },
+    {
+      "id": "fg-island-middle-front-face",
+      "textureId": "floor-v1",
+      "targetId": "$source",
+      "parentId": "floor",
+      "role": "foreground",
+      "depthOffsetRadii": 0.0,
+      "depthReason": "Только объявленный каменный cap/face нового generated floor; без open paving/water и без seed/tick условий.",
+      "sourceClipPx": {
+        "coordinateSpace": "source1536",
+        "polygon": [
+          [
+            661.4354066985646,
+            1025.2248803827752
+          ],
+          [
+            673.6842105263158,
+            1020.3253588516747
+          ],
+          [
+            695.7320574162679,
+            1033.799043062201
+          ],
+          [
+            722.6794258373205,
+            1048.4976076555024
+          ],
+          [
+            742.2775119617224,
+            1055.846889952153
+          ],
+          [
+            748.4019138755981,
+            1052.1722488038276
+          ],
+          [
+            785.1483253588517,
+            1052.1722488038276
+          ],
+          [
+            793.7224880382776,
+            1058.2966507177034
+          ],
+          [
+            815.7703349282297,
+            1052.1722488038276
+          ],
+          [
+            842.7177033492823,
+            1039.9234449760766
+          ],
+          [
+            869.665071770335,
+            1021.5502392344498
+          ],
+          [
+            884.3636363636364,
+            1024.0
+          ],
+          [
+            889.2631578947369,
+            1037.4736842105262
+          ],
+          [
+            889.2631578947369,
+            1069.3205741626793
+          ],
+          [
+            889.2631578947369,
+            1117.090909090909
+          ],
+          [
+            877.0143540669857,
+            1129.3397129186603
+          ],
+          [
+            857.4162679425838,
+            1142.8133971291866
+          ],
+          [
+            830.4688995215311,
+            1155.0622009569379
+          ],
+          [
+            796.1722488038278,
+            1161.1866028708134
+          ],
+          [
+            790.0478468899521,
+            1170.9856459330144
+          ],
+          [
+            749.6267942583733,
+            1170.9856459330144
+          ],
+          [
+            744.7272727272727,
+            1161.1866028708134
+          ],
+          [
+            714.1052631578947,
+            1156.2870813397128
+          ],
+          [
+            685.933014354067,
+            1145.2631578947369
+          ],
+          [
+            663.8851674641148,
+            1131.7894736842106
+          ],
+          [
+            652.8612440191388,
+            1121.9904306220096
+          ],
+          [
+            652.8612440191388,
+            1084.0191387559807
+          ],
+          [
+            656.5358851674641,
+            1042.3732057416269
+          ]
+        ],
+        "provenance": {
+          "method": "scene-region-from-generated-floor",
+          "sourceTextureId": "floor-v1",
+          "sourceSha256": "37e1603fe031b18e9ae8d325f65b2c138612d15f49d6948ce0b27c9b35c3456c",
+          "note": "Новая Water floor region near-island-front-face; raw trace из собственного native1254 floor, единый scale1536/1254; это reuse0 новых PNG.",
+          "traceRecord": "records/foreground-trace.mini-05.json",
+          "seedConditional": false,
+          "uncertaintyTexturePx": 3
+        },
+        "limitations": [
+          "Ручная граница±3rawpx, мелкие bevel/foam края и dynamic crossings ожидают actual QA.",
+          "Первый inside-facing wall/near-face pass; внешние дальние колонны/ноги не получают blanket coverage PASS."
+        ]
+      }
+    },
+    {
+      "id": "fg-island-right-front-face",
+      "textureId": "floor-v1",
+      "targetId": "$source",
+      "parentId": "floor",
+      "role": "foreground",
+      "depthOffsetRadii": 0.0,
+      "depthReason": "Только объявленный каменный cap/face нового generated floor; без open paving/water и без seed/tick условий.",
+      "sourceClipPx": {
+        "coordinateSpace": "source1536",
+        "polygon": [
+          [
+            986.0287081339712,
+            1025.2248803827752
+          ],
+          [
+            995.8277511961722,
+            1020.3253588516747
+          ],
+          [
+            1024.0,
+            1036.248803827751
+          ],
+          [
+            1057.0717703349283,
+            1052.1722488038276
+          ],
+          [
+            1076.66985645933,
+            1058.2966507177034
+          ],
+          [
+            1082.7942583732058,
+            1052.1722488038276
+          ],
+          [
+            1119.5406698564593,
+            1052.1722488038276
+          ],
+          [
+            1128.1148325358852,
+            1059.5215311004786
+          ],
+          [
+            1152.6124401913876,
+            1049.7224880382776
+          ],
+          [
+            1175.8851674641148,
+            1037.4736842105262
+          ],
+          [
+            1196.7081339712918,
+            1020.3253588516747
+          ],
+          [
+            1207.732057416268,
+            1025.2248803827752
+          ],
+          [
+            1212.6315789473683,
+            1049.7224880382776
+          ],
+          [
+            1213.8564593301435,
+            1088.9186602870814
+          ],
+          [
+            1212.6315789473683,
+            1118.3157894736842
+          ],
+          [
+            1200.3827751196172,
+            1131.7894736842106
+          ],
+          [
+            1180.7846889952152,
+            1142.8133971291866
+          ],
+          [
+            1151.3875598086124,
+            1156.2870813397128
+          ],
+          [
+            1128.1148325358852,
+            1162.4114832535886
+          ],
+          [
+            1124.4401913875597,
+            1170.9856459330144
+          ],
+          [
+            1082.7942583732058,
+            1172.2105263157894
+          ],
+          [
+            1076.66985645933,
+            1159.9617224880383
+          ],
+          [
+            1047.2727272727273,
+            1155.0622009569379
+          ],
+          [
+            1017.8755980861245,
+            1145.2631578947369
+          ],
+          [
+            993.377990430622,
+            1133.0143540669856
+          ],
+          [
+            978.6794258373205,
+            1121.9904306220096
+          ],
+          [
+            977.4545454545455,
+            1090.1435406698565
+          ],
+          [
+            981.1291866028708,
+            1043.598086124402
+          ]
+        ],
+        "provenance": {
+          "method": "scene-region-from-generated-floor",
+          "sourceTextureId": "floor-v1",
+          "sourceSha256": "37e1603fe031b18e9ae8d325f65b2c138612d15f49d6948ce0b27c9b35c3456c",
+          "note": "Новая Water floor region near-island-front-face; raw trace из собственного native1254 floor, единый scale1536/1254; это reuse0 новых PNG.",
+          "traceRecord": "records/foreground-trace.mini-05.json",
+          "seedConditional": false,
+          "uncertaintyTexturePx": 3
+        },
+        "limitations": [
+          "Ручная граница±3rawpx, мелкие bevel/foam края и dynamic crossings ожидают actual QA.",
+          "Первый inside-facing wall/near-face pass; внешние дальние колонны/ноги не получают blanket coverage PASS."
+        ]
+      }
+    }
+  ],
+  "coverage": {
+    "physicalObstacleTargetsTotal": 29,
+    "selectedPhysicalObstacleTargets": [
+      "frog-01",
+      "frog-02",
+      "frog-03",
+      "frog-04",
+      "frog-05",
+      "frog-06",
+      "pillar-01",
+      "pillar-02",
+      "pillar-03",
+      "pillar-04",
+      "pillar-05",
+      "pillar-06",
+      "pillar-07",
+      "arch-01-left-foot",
+      "arch-01-right-foot",
+      "arch-02-left-foot",
+      "arch-02-right-foot",
+      "arch-03-left-foot",
+      "arch-03-right-foot",
+      "arch-04-left-foot",
+      "arch-04-right-foot",
+      "arch-05-left-foot",
+      "arch-05-right-foot",
+      "arch-06-left-foot",
+      "arch-06-right-foot",
+      "arch-07-left-foot",
+      "arch-07-right-foot",
+      "arch-08-left-foot",
+      "arch-08-right-foot"
+    ],
+    "obstacleArtGroupsTotal": 21,
+    "selectedObstacleArtGroups": [
+      "frog-01",
+      "frog-02",
+      "frog-03",
+      "frog-04",
+      "frog-05",
+      "frog-06",
+      "pillar-01",
+      "pillar-02",
+      "pillar-03",
+      "pillar-04",
+      "pillar-05",
+      "pillar-06",
+      "pillar-07",
+      "arch-01",
+      "arch-02",
+      "arch-03",
+      "arch-04",
+      "arch-05",
+      "arch-06",
+      "arch-07",
+      "arch-08"
+    ],
+    "receiverCountSelected": 4,
+    "sourceClipCount": 11,
+    "archAssembliesSelected": [
+      "arch-01",
+      "arch-02",
+      "arch-03",
+      "arch-04",
+      "arch-05",
+      "arch-06",
+      "arch-07",
+      "arch-08"
+    ]
+  },
+  "limitations": [
+    "Все21 body art groups представлены, но полный visual/motion PASS не заявлен. Новые gates03/04 и новые frog poses требуют реальных доступных случаев.",
+    "Whole-gate07 ранее содержательно просмотрен только в w04 seed1 subset; этот вывод не переносится автоматически на все8/редкие контуры. Foot ground rear inferred±30texturepx, per-target residual в BINDINGS.",
+    "Frog supports fitted по painted lower alpha>=128; rear half inferred±6texturepx. Ближний frog06 имеет residual около−5.09sourcepx: сохранён явно, native circle/PRNG не подгонялись.",
+    "Новая lintel cast shadow candidate: maxAlpha172, opaque0; caster proxy авторский. Читаемость, свет, extent и сочетание с foot shadows пока PARTIAL.",
+    "Foreground11 regions:18 clear и9 solid static probes и diagnostic overlay просмотрены. Все границы/внешние колонны-ноги/динамические пересечения ещё не проверены. Open paving/water не объявлялись foreground целиком.",
+    "Receiver parts полностью прежние mini04; Lead сообщает положительный w05 subset, formal closure ещё ожидается. В этом расширенном stage actual QA не запускалась.",
+    "Native alpha residue сохранён; threshold/trim/matte/XY warp/seed offsets/sinking не применялись.",
+    "P1 planeCollapse/native/core/projection/PRNG/trigger/radii не менялись; aggregate arch outline не новый solid collider.",
+    "serverWrites=0/tokenGranted=false. Frozen w04/d01/Jungle и прежние minis immutable."
+  ],
+  "serverWrites": 0,
+  "tokenGranted": false,
+  "receiverPolicy": "RECEIVER_ANCHOR_POLICY.mini-02.json",
+  "baselineGate": {
+    "type": "whole-sprite-before-part-improvement",
+    "actualArtistQa": false,
+    "requestedSeed": 1,
+    "targetId": "arch-07",
+    "requestedStates": [
+      998,
+      1031
+    ],
+    "noNewCollider": true
+  },
+  "receiverParts": {
+    "variant": "post-w04-receiver-base-rim-front-v1",
+    "baselineArtistCommit": "541085603e01e23b076fe33ff3c9991822c0bce2",
+    "baselineManifest": "asset-manifest.mini-03.json",
+    "baselineManifestSha256": "50dceb14be6f71a429231a89c44c67d75198e1c9dd9d425c6e8c1747f251803f",
+    "builderPlanCommit": "aa64d27ab5dc6b88982fd5aa2f564d461a935dee",
+    "preparation": "Неизменный full как base + native rim-only back + прежний front",
+    "floorOrder": [
+      "floor",
+      "receiver-01-base",
+      "receiver-02-base",
+      "receiver-03-base",
+      "receiver-04-base"
+    ],
+    "newRole": false,
+    "newSchema": false,
+    "newRank": false,
+    "rendererPrerequisite": "Согласованное Builder расширение существующего floor rank на target-bound floor; exact code pin передаёт Builder",
+    "newUniquePng": 1,
+    "uniquePng": 10,
+    "textureIds": 19,
+    "instances": 34,
+    "parts": [
+      {
+        "targetId": "receiver-01",
+        "baseInstanceId": "receiver-01-base",
+        "backInstanceId": "receiver-01-back",
+        "frontInstanceId": "receiver-01-front",
+        "baseTextureId": "receiver-01-base-v1",
+        "backTextureId": "receiver-01-rim-back-v1",
+        "frontTextureId": "receiver-01-front-v1",
+        "groundAnchorPx": [
+          627,
+          558.4579610724702
+        ],
+        "opticalOpeningPointPx": [
+          627,
+          500
+        ],
+        "captureFootprintPx": {
+          "depth": 120.0,
+          "width": 230.0,
+          "center": [
+            627,
+            558.4579610724702
+          ],
+          "measurement": "Authored230x120 capture proxy inside measured new water opening, not full hull/aperture size. Scale selected from new receiver silhouette, not copied Jungle value."
+        },
+        "uniformScale": 0.31932600735428435,
+        "logicalRegistrationResidualSourcePx": 0.0,
+        "sampledContourDeltaSourcePx": 0.31932600735428435,
+        "registrationUncertaintySourcePx": 0.9579780220628531,
+        "actualQa": false
+      },
+      {
+        "targetId": "receiver-02",
+        "baseInstanceId": "receiver-02-base",
+        "backInstanceId": "receiver-02-back",
+        "frontInstanceId": "receiver-02-front",
+        "baseTextureId": "receiver-02-base-v1",
+        "backTextureId": "receiver-02-rim-back-v1",
+        "frontTextureId": "receiver-02-front-v1",
+        "groundAnchorPx": [
+          627,
+          559.7149517742138
+        ],
+        "opticalOpeningPointPx": [
+          627,
+          500
+        ],
+        "captureFootprintPx": {
+          "depth": 120.0,
+          "width": 230.0,
+          "center": [
+            627,
+            559.7149517742138
+          ],
+          "measurement": "Authored230x120 capture proxy inside measured new water opening, not full hull/aperture size. Scale selected from new receiver silhouette, not copied Jungle value."
+        },
+        "uniformScale": 0.31222006560533594,
+        "logicalRegistrationResidualSourcePx": 0.0,
+        "sampledContourDeltaSourcePx": 0.31222006560533594,
+        "registrationUncertaintySourcePx": 0.9366601968160078,
+        "actualQa": false
+      },
+      {
+        "targetId": "receiver-03",
+        "baseInstanceId": "receiver-03-base",
+        "backInstanceId": "receiver-03-back",
+        "frontInstanceId": "receiver-03-front",
+        "baseTextureId": "receiver-03-base-v1",
+        "backTextureId": "receiver-03-rim-back-v1",
+        "frontTextureId": "receiver-03-front-v1",
+        "groundAnchorPx": [
+          627,
+          558.7574460031103
+        ],
+        "opticalOpeningPointPx": [
+          627,
+          500
+        ],
+        "captureFootprintPx": {
+          "depth": 120.0,
+          "width": 230.0,
+          "center": [
+            627,
+            558.7574460031103
+          ],
+          "measurement": "Authored230x120 capture proxy inside measured new water opening, not full hull/aperture size. Scale selected from new receiver silhouette, not copied Jungle value."
+        },
+        "uniformScale": 0.31706488534263094,
+        "logicalRegistrationResidualSourcePx": 0.0,
+        "sampledContourDeltaSourcePx": 0.31706488534263094,
+        "registrationUncertaintySourcePx": 0.9511946560278928,
+        "actualQa": false
+      },
+      {
+        "targetId": "receiver-04",
+        "baseInstanceId": "receiver-04-base",
+        "backInstanceId": "receiver-04-back",
+        "frontInstanceId": "receiver-04-front",
+        "baseTextureId": "receiver-04-base-v1",
+        "backTextureId": "receiver-04-rim-back-v1",
+        "frontTextureId": "receiver-04-front-v1",
+        "groundAnchorPx": [
+          627,
+          555.4715710194839
+        ],
+        "opticalOpeningPointPx": [
+          627,
+          500
+        ],
+        "captureFootprintPx": {
+          "depth": 120.0,
+          "width": 230.0,
+          "center": [
+            627,
+            555.4715710194839
+          ],
+          "measurement": "Authored230x120 capture proxy inside measured new water opening, not full hull/aperture size. Scale selected from new receiver silhouette, not copied Jungle value."
+        },
+        "uniformScale": 0.33623502318823445,
+        "logicalRegistrationResidualSourcePx": 0.0,
+        "sampledContourDeltaSourcePx": 0.33623502318823445,
+        "registrationUncertaintySourcePx": 1.0087050695647033,
+        "actualQa": false
+      }
+    ],
+    "nativeChanged": false,
+    "policyChanged": false,
+    "actualQa": false
+  },
+  "expansion": {
+    "variant": "mini05-family-expansion-first-foreground-pass",
+    "baselineArtistCommit": "9647869d6dbf672ee5922b0fc57df254b9fdbb93",
+    "baselineManifestSha256": "83961fd80bfc027e77300805bd02ecdd6e961c22e770de9bf18675a670057521",
+    "builderCodeCommit": "eedd183a2652a8b9a2dce60118c0f32c8755d3b7",
+    "newUniquePng": 3,
+    "uniquePng": 13,
+    "textureIds": 22,
+    "instances": 84,
+    "newSourceClips": 11,
+    "actualQa": false
+  }
+}

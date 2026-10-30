@@ -1,5 +1,10 @@
 # Water Asset Artist
 
+Текущий mini05 expansion:125833bytes/SHA b533e4d2a2f6f2094fed132913fe9dadb9b6eaa370f5a447ff3afc627f7cda27;13PNG/22IDs/84instances,21/21artgroups,29physicaltargets,11foregroundclips. Actual QA pending. Старые textures/instances/receiver policy exact unchanged. Shadowmax172/nearFrog06residual−5.09/внешние columns-legs и crossings явно PARTIAL. Recovery completed без повторных native generations. См.HANDOFF_MINI_05_EXPANSION.md. Далее Dark rim с собственной границей и missingbowl/skull/block profiles.
+
+История:
+# Water Asset Artist
+
 Текущий отдельный post-w04 mini04 receiver-parts:65234bytes/SHA83961fd80bfc027e77300805bd02ecdd6e961c22e770de9bf18675a670057521,10PNG/19IDs/34instances. Native rim selected, общая optical policy и все unrelated actors прежние. Actual successor/QA pending;42 alpha1 residue samples честно сохранены. См. HANDOFF_MINI_04_RECEIVER_PARTS.md. Original w04/mini03 immutable. Следом остальные gates + отдельная lintel cast shadow, foreground и missing frogs.
 
 История:

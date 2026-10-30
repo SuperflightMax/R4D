@@ -1,0 +1,270 @@
+{
+  "diagnosticOnly": true,
+  "sourceTextureSha256": "37e1603fe031b18e9ae8d325f65b2c138612d15f49d6948ce0b27c9b35c3456c",
+  "regionCount": 11,
+  "checks": [
+    {
+      "raw": [
+        190,
+        290
+      ],
+      "kind": "waterfall",
+      "insideIds": [],
+      "passed": true
+    },
+    {
+      "raw": [
+        170,
+        440
+      ],
+      "kind": "waterfall",
+      "insideIds": [],
+      "passed": true
+    },
+    {
+      "raw": [
+        1090,
+        440
+      ],
+      "kind": "waterfall",
+      "insideIds": [],
+      "passed": true
+    },
+    {
+      "raw": [
+        110,
+        670
+      ],
+      "kind": "arch-void",
+      "insideIds": [],
+      "passed": true
+    },
+    {
+      "raw": [
+        1165,
+        670
+      ],
+      "kind": "arch-void",
+      "insideIds": [],
+      "passed": true
+    },
+    {
+      "raw": [
+        350,
+        835
+      ],
+      "kind": "open-paving",
+      "insideIds": [],
+      "passed": true
+    },
+    {
+      "raw": [
+        627,
+        835
+      ],
+      "kind": "open-paving",
+      "insideIds": [],
+      "passed": true
+    },
+    {
+      "raw": [
+        900,
+        835
+      ],
+      "kind": "open-paving",
+      "insideIds": [],
+      "passed": true
+    },
+    {
+      "raw": [
+        350,
+        850
+      ],
+      "kind": "open-paving",
+      "insideIds": [],
+      "passed": true
+    },
+    {
+      "raw": [
+        627,
+        850
+      ],
+      "kind": "open-paving",
+      "insideIds": [],
+      "passed": true
+    },
+    {
+      "raw": [
+        900,
+        850
+      ],
+      "kind": "open-paving",
+      "insideIds": [],
+      "passed": true
+    },
+    {
+      "raw": [
+        250,
+        895
+      ],
+      "kind": "open-water",
+      "insideIds": [],
+      "passed": true
+    },
+    {
+      "raw": [
+        490,
+        895
+      ],
+      "kind": "open-water",
+      "insideIds": [],
+      "passed": true
+    },
+    {
+      "raw": [
+        760,
+        895
+      ],
+      "kind": "open-water",
+      "insideIds": [],
+      "passed": true
+    },
+    {
+      "raw": [
+        1030,
+        895
+      ],
+      "kind": "open-water",
+      "insideIds": [],
+      "passed": true
+    },
+    {
+      "raw": [
+        350,
+        970
+      ],
+      "kind": "open-water",
+      "insideIds": [],
+      "passed": true
+    },
+    {
+      "raw": [
+        627,
+        970
+      ],
+      "kind": "open-water",
+      "insideIds": [],
+      "passed": true
+    },
+    {
+      "raw": [
+        900,
+        970
+      ],
+      "kind": "open-water",
+      "insideIds": [],
+      "passed": true
+    },
+    {
+      "raw": [
+        155,
+        350
+      ],
+      "kind": "left-cap",
+      "insideIds": [
+        "fg-wall-left-upper-cap"
+      ],
+      "passed": true
+    },
+    {
+      "raw": [
+        1100,
+        350
+      ],
+      "kind": "right-cap",
+      "insideIds": [
+        "fg-wall-right-upper-cap"
+      ],
+      "passed": true
+    },
+    {
+      "raw": [
+        155,
+        680
+      ],
+      "kind": "left-middle-cap",
+      "insideIds": [
+        "fg-wall-left-middle-cap"
+      ],
+      "passed": true
+    },
+    {
+      "raw": [
+        1110,
+        680
+      ],
+      "kind": "right-middle-cap",
+      "insideIds": [
+        "fg-wall-right-middle-cap"
+      ],
+      "passed": true
+    },
+    {
+      "raw": [
+        65,
+        900
+      ],
+      "kind": "left-near-face",
+      "insideIds": [
+        "fg-wall-left-near-face"
+      ],
+      "passed": true
+    },
+    {
+      "raw": [
+        1185,
+        900
+      ],
+      "kind": "right-near-face",
+      "insideIds": [
+        "fg-wall-right-near-face"
+      ],
+      "passed": true
+    },
+    {
+      "raw": [
+        350,
+        915
+      ],
+      "kind": "left-front-stone",
+      "insideIds": [
+        "fg-island-left-front-face"
+      ],
+      "passed": true
+    },
+    {
+      "raw": [
+        627,
+        915
+      ],
+      "kind": "middle-front-stone",
+      "insideIds": [
+        "fg-island-middle-front-face"
+      ],
+      "passed": true
+    },
+    {
+      "raw": [
+        900,
+        915
+      ],
+      "kind": "right-front-stone",
+      "insideIds": [
+        "fg-island-right-front-face"
+      ],
+      "passed": true
+    }
+  ],
+  "actualQa": false,
+  "note": "Статические выбранные probes не доказывают весь контур/динамику. Diagnostic overlay никогда не selected bitmap."
+}
