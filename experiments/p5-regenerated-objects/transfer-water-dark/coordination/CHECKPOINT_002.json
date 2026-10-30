@@ -1,0 +1,178 @@
+{
+  "schema": "r4d.p5.transfer-water-dark.checkpoint.v1",
+  "checkpoint": "002",
+  "utc": "2026-10-30T01:24:57.2802491Z",
+  "status": "production-continues; original baselines reviewed on both boards",
+  "water": {
+    "candidate": "w04",
+    "source": "48763f47d1e21e32334df3427209181a5a6114de",
+    "artist": "541085603e01e23b076fe33ff3c9991822c0bce2",
+    "indexPath": "E:/R4D/perspective/p5-runtime/builder/transfer-water-dark/water/output/previews/w04/FILE_INDEX.json",
+    "indexBytes": 6632,
+    "indexSha256": "c1c983dbddaaf556c5000dc9463df262fdc38444b2826a5883a2800b78b70554",
+    "scope": "9PNG/15IDs/30instances,9of21groups,4cups; wholeGate07baseline; missing5frogs/7gates/environment",
+    "tqa": {
+      "commitPrefix": "b4940d7",
+      "finding": "W04-TQA-V01",
+      "status": "OPEN",
+      "snapshots": 37,
+      "cause": "opaque water back full raster; correct offsets/native trigger",
+      "gate": "positive observed arch07 passage",
+      "fullPass": false,
+      "commit": "b4940d77a563f2d56df659a23d11385179562b92",
+      "report": "experiments/p5-regenerated-objects/transfer-water-dark/water/qa/technical/REPORT_W04.md"
+    },
+    "vqa": {
+      "commit": "aeacc4184b8dc977a3f3e3c4b3683813ded040f4",
+      "finding": "W04-V01",
+      "status": "OPEN",
+      "frames": 22,
+      "gate": "positive only observed arch07 both-contact/partial-reveal passage",
+      "fullPass": false,
+      "report": "experiments/p5-regenerated-objects/transfer-water-dark/water/qa/visual/REPORT_W04.md",
+      "evidenceBytes": 49966,
+      "evidenceSha256": "018abcae1ff69b365700009973b52e6c4c1c0b754a153094f7dfb217fbc53078",
+      "representativeGate": "E:/R4D/perspective/p5-runtime/visual-qa/transfer-water-dark/water/w04/08-seed1-t1019-field.jpg"
+    },
+    "framingFinding": {
+      "id": "W01-V01",
+      "candidate": "w01",
+      "observer": "visual-qa",
+      "observed": "Field seed0 state0 clips upper starting ball; Whole0 full; Field100 full",
+      "cause": "hypothesis: geometry-only Field bounds omit authored ball silhouette",
+      "sentToBuilder": true,
+      "status": "CLOSED",
+      "source": "41349b8d8ae61ceb69e288301af7c080e2b006b5",
+      "closedOn": "w02",
+      "vqaCommit": "9cd09281e27404a526fe25b387a23d34467024d5"
+    }
+  },
+  "dark": {
+    "candidate": "d01",
+    "source": "aae514ed31720ab6d913f4bc6d63286c26992e0a",
+    "artist": "0f70d00db096ee30f057dd65ca36a53df3f78899",
+    "indexPath": "E:/R4D/perspective/p5-runtime/builder/transfer-water-dark/dark/output/previews/d01/FILE_INDEX.json",
+    "indexBytes": 6109,
+    "indexSha256": "d810ae08b53a0eaf44636df0adcb2c15eb4a0195b31db383534b4ea70af2116b",
+    "scope": "8PNG/15IDs/35instances;12of24groups/4cupPairs; lowerfloor1260vs1121",
+    "tqa": {
+      "turn": "01a18a53-96d9-7420-9c81-55a8008da7b9",
+      "commit": "f40bd7fd0349fdf1a0cd7790e0ee2340e6554bd3",
+      "report": "experiments/p5-regenerated-objects/transfer-water-dark/dark/qa/technical/REPORT_D01.md",
+      "snapshots": 44,
+      "evidenceIndexBytes": 15044,
+      "evidenceIndexSha256": "4c50946bc2bae0efdf9c03ee9679c9920ba5f92354f96eaeec0a574d5b3405ab",
+      "finding": "D01-TQA-V01",
+      "findingStatus": "OPEN",
+      "cause": "opaque dark inner rear wall, not water; legitimate wall occlusion must be retained, binary reveal needs correction",
+      "cornerScope": "positive 4 examined cases, partial hide sourceCorner368/935; not universal",
+      "fullPass": false
+    },
+    "vqa": {
+      "turn": "01a18a53-98e3-7443-bb78-4bf8a5326055",
+      "commit": "dc422c6e1a186080df0956e53750335f2e383c18",
+      "frames": 31,
+      "finding": "D01-V01",
+      "status": "OPEN",
+      "scope": "4 pillar windows no evident defect, 2 entries abrupt reveal, holds stable, floor lower registration open",
+      "fullPass": false,
+      "report": "experiments/p5-regenerated-objects/transfer-water-dark/dark/qa/visual/REPORT_D01.md",
+      "evidenceBytes": 73188,
+      "evidenceSha256": "092839ba887342966bef5df099d0292a347d14dc3a9dd81c87401994e4c319e7",
+      "representative": "E:/R4D/perspective/p5-runtime/visual-qa/transfer-water-dark/dark/d01/17-seed2-t973-pillar02-front-field.jpg"
+    }
+  },
+  "receiverCorrection": {
+    "builderPlanCommit": "aa64d27ab5dc6b88982fd5aa2f564d461a935dee",
+    "planPath": "experiments/p5-regenerated-objects/transfer-water-dark/water/builder/WATER_RECEIVER_PLAN.md",
+    "implementation": "existing floor rank -1e8 applied to target-bound floor role; base after scene floor below shadows/ball; no new role/schema/rank",
+    "art": "unchanged full base + native generated registered transparent-interior back rim/walls + existing front",
+    "separateStage": true,
+    "baselineWater": "w04",
+    "baselineDark": "d01",
+    "builderTaskSent": true,
+    "artistInterfaceSent": true,
+    "nativeChanged": false,
+    "tokenGranted": false,
+    "builderImplementationTurn": "01a18a5c-95f5-7920-b75e-273702375e97",
+    "localImplementationChecks": {
+      "count": 27,
+      "container": "real Pixi",
+      "manifestPermutationsPerBoard": 3,
+      "ordering": "global floor -> receiver bases -> shadows/ball",
+      "placementSameAsBack": true,
+      "invalidFloorIdRejected": true,
+      "frozenW04D01Rehash": true,
+      "pixelCorrectionVerified": false
+    },
+    "rimCandidate": {
+      "name": "receiver-back-rim-v1.png",
+      "size": [
+        1254,
+        1254
+      ],
+      "bytes": 433727,
+      "sha256": "2f58c03e3ae6a7a4a4460f94976c3c5a4b93ca6045674df8140b9221741a3c0a",
+      "alphaAtOAndTqaCenters": 0,
+      "manifestPending": true
+    }
+  },
+  "baselineArchive": {
+    "commit": "06c45e0273bf8c5f0d447e79aaeb86ba6429e2d4",
+    "turn": "01a18a56-7242-7271-8f52-9ce2e89d74b0",
+    "runtime": "E:/R4D/perspective/p5-runtime/release-engineer/transfer-water-dark",
+    "packageIndex": "E:/R4D/perspective/p5-runtime/release-engineer/transfer-water-dark/builds/baselines-water-w04-dark-d01/PACKAGE_INDEX.json",
+    "packageIndexBytes": 10627,
+    "packageIndexSha256": "ff6e0284bf1217a02f6fcb0a184e7026cd07d1de0eac3b0167c1d3e2b20fbfe5",
+    "files": 43,
+    "bytes": 27415220,
+    "publicRoot": "E:/R4D/perspective/p5-runtime/release-engineer/transfer-water-dark/builds/baselines-water-w04-dark-d01/public",
+    "purpose": "baseline-archive",
+    "final": false,
+    "tokenGranted": false,
+    "serverWrites": 0,
+    "qaDarkPendingAtArchive": true
+  },
+  "remaining": [
+    "Water5frogs/7gates, foreground/long walls, arch shadow/support review",
+    "Dark6bowls/4skulls/2nearblocks, floor1260->1121 correction, foreground",
+    "registered rim/base/front correction actual QA on both boards",
+    "new full-art reachable contacts/masks/normal-scale shadows and scoped regressions",
+    "explicit current-input Lead handoff and current local final package"
+  ],
+  "planning": {
+    "originalGuideBothActiveHours": [
+      8,
+      12
+    ],
+    "elapsedApproxActiveHours": 2.3,
+    "remainingPreliminaryActiveHours": [
+      4,
+      7
+    ],
+    "revisedTotalPreliminaryActiveHours": [
+      6,
+      9
+    ],
+    "basis": "native/control and first complex cases now verified on both boards; residual uncertainty is art preparation, interior/rim boundaries and foreground; estimate not cutoff"
+  },
+  "resources": {
+    "utc": "2026-10-30T01:24:57.2802491Z",
+    "CFreeGiB": 13.833,
+    "DFreeGiB": 14.619,
+    "EFreeGiB": 9.261,
+    "ramFreeGiB": 10.045,
+    "cpuLoadPercent": 4,
+    "aggregateWorkingSetGiB": 27.41,
+    "ownEstimateGiB": {
+      "RAM": 0.25,
+      "E": 0.01
+    },
+    "allowanceGiB": {
+      "RAM": 4,
+      "E": 2
+    }
+  },
+  "tokenGranted": false,
+  "reviewVpsServerWrites": 0
+}
