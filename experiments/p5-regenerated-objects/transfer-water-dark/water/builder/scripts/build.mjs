@@ -29,15 +29,19 @@ const preview = { schema: 'r4d.p5.preview-input/1', manifestUrl: null, earlyFloo
 const manifestFlag = process.argv.indexOf('--manifest');
 if (manifestFlag >= 0) {
   const path = resolve(process.argv[manifestFlag + 1]);
+  const sourceBytes = readFileSync(path);
+  const handoffPinPath = resolve(dirname(path), 'handoff-pin.json');
+  const handoffPin = existsSync(handoffPinPath) ? JSON.parse(readFileSync(handoffPinPath)) : {};
+  if (!/^[a-f0-9]{40}$/.test(handoffPin.commit ?? '') || typeof handoffPin.path !== 'string' || !handoffPin.path ||
+      !/^[a-f0-9]{64}$/.test(handoffPin.sha256 ?? '') || !Number.isSafeInteger(handoffPin.bytes) || handoffPin.bytes <= 0) {
+    throw new Error('Complete Artist handoff-pin.json commit/path/bytes/sha256 required before asset staging');
+  }
+  if (handoffPin.sha256 !== sha(sourceBytes) || handoffPin.bytes !== sourceBytes.length) throw new Error('Artist handoff pin mismatch');
   const verification = execFileSync(process.execPath, [resolve(root, 'scripts/verify-assets.mjs'), path], { encoding: 'utf8' });
   writeFileSync(resolve(runtime, 'output/asset-verification.json'), verification);
   const verified = JSON.parse(verification);
   console.log(JSON.stringify({ assetVerification: verified.status, textures: verified.textures, instances: verified.instances,
     bodyFootprints: verified.footprintFits.filter(f => f.instanceId.endsWith('-body')) }));
-  const sourceBytes = readFileSync(path);
-  const handoffPinPath = resolve(dirname(path), 'handoff-pin.json');
-  const handoffPin = existsSync(handoffPinPath) ? JSON.parse(readFileSync(handoffPinPath)) : {};
-  if (handoffPin.sha256 && (handoffPin.sha256 !== sha(sourceBytes) || handoffPin.bytes !== sourceBytes.length)) throw new Error('Artist handoff pin mismatch');
   const manifest = JSON.parse(sourceBytes);
   writeFileSync(resolve(runtime, 'output/artist-manifest.original.json'), sourceBytes);
   for (const texture of manifest.textures) {
@@ -54,7 +58,7 @@ if (manifestFlag >= 0) {
   manifest.schema = 'r4d.p5.render-assets/1';
   const stagedBytes = Buffer.from(JSON.stringify(manifest, null, 2) + '\n');
   writeFileSync(resolve(site, 'assets/manifest.json'), stagedBytes);
-  preview.artistManifest = { commit: handoffPin.commit ?? null, path: handoffPin.path ?? null, sourceSha256: sha(sourceBytes), sourceBytes: sourceBytes.length, stagedSha256: sha(stagedBytes), stagedBytes: stagedBytes.length,
+  preview.artistManifest = { commit: handoffPin.commit, path: handoffPin.path, sourceSha256: sha(sourceBytes), sourceBytes: sourceBytes.length, stagedSha256: sha(stagedBytes), stagedBytes: stagedBytes.length,
     supporting: handoffPin.supporting ?? [],
     transformation: 'Exact final texture bytes; file URLs normalized; full provenance kept outside web root with per-texture digest' };
   preview.manifestUrl = 'assets/manifest.json';
