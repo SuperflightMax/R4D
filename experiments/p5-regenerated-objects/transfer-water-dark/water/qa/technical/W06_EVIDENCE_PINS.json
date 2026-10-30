@@ -1,0 +1,407 @@
+{
+  "candidate": "w06",
+  "board": "water",
+  "qaParentCommit": "2f983b8823defaa7bd62fdbd89e76ffca4083692",
+  "qaBranch": "codex/r4d-p5-regenerated-technical-qa-01",
+  "report": "REPORT_W06.md",
+  "casePlanCommit": "2f983b8823defaa7bd62fdbd89e76ffca4083692",
+  "casePlanIndex": {
+    "path": "E:/R4D/perspective/p5-runtime/technical-qa/transfer-water-dark/water/w06-plan-001/FILE_INDEX.qa.json",
+    "bytes": 1515,
+    "sha256": "2292b7fa111349f920f4bb13df3ac95ce172c2c1fbeddd6ec26075859c2b54bc"
+  },
+  "frozen": {
+    "candidate": "w06",
+    "board": "water",
+    "producer": "E:/R4D/perspective/p5-runtime/builder/transfer-water-dark/water/output/previews/w06",
+    "url": "http://127.0.0.1:55196/",
+    "sourceCommit": "b8a070ab60e97aee3f71018ff614c2cf21c8f10f",
+    "artist": {
+      "commit": "189fe2e7f4264270f60b4a2ebe247d0d49b3c72e",
+      "path": "experiments/p5-regenerated-objects/transfer-water-dark/water/asset-artist/asset-manifest.mini-05-expansion.json",
+      "sourceSha256": "b533e4d2a2f6f2094fed132913fe9dadb9b6eaa370f5a447ff3afc627f7cda27",
+      "sourceBytes": 125833,
+      "stagedSha256": "44fa6b45ac8f513b9231e16eb2db0dbece54c9255d549b0d8a7d24ad99f39a0c",
+      "stagedBytes": 103822,
+      "supporting": [
+        {
+          "path": "experiments/p5-regenerated-objects/transfer-water-dark/water/asset-artist/HANDOFF_MINI_05_EXPANSION.md",
+          "materialized": "HANDOFF.md",
+          "bytes": 4588,
+          "sha256": "34c4e685aaba21e8e5da7c0e4d48ecd4e8b0f60c02288bed7da589607171d5bc"
+        },
+        {
+          "path": "experiments/p5-regenerated-objects/transfer-water-dark/water/asset-artist/BINDINGS.mini-05.json",
+          "materialized": "BINDINGS.json",
+          "bytes": 12744,
+          "sha256": "75931bb5c8cdde3eb5f8f5e6b9009bb1a22c45add39518227abe28e3c80a9cb8"
+        },
+        {
+          "path": "experiments/p5-regenerated-objects/transfer-water-dark/water/asset-artist/SELECTED.mini-05.json",
+          "materialized": "SELECTED.json",
+          "bytes": 3685,
+          "sha256": "1db9501738516a9001e99c6bd743952664adddba0fc30884f8bf7e16aa63ee75"
+        },
+        {
+          "path": "experiments/p5-regenerated-objects/transfer-water-dark/water/asset-artist/records/contact-contours.mini-05.json",
+          "materialized": "contact-contours.json",
+          "bytes": 2662,
+          "sha256": "1e689babb66e968b9e9941c22ed6c5eacedea54c39d2fc957415d95035c405f0"
+        },
+        {
+          "path": "experiments/p5-regenerated-objects/transfer-water-dark/water/asset-artist/records/foreground-polygon-check.mini-05.json",
+          "materialized": "foreground-polygon-check.json",
+          "bytes": 190,
+          "sha256": "33355e372f203386abe04fb89fd880280278938a89843d039f1017d2d995fc9f"
+        },
+        {
+          "path": "experiments/p5-regenerated-objects/transfer-water-dark/water/asset-artist/records/foreground-probes.mini-05.json",
+          "materialized": "foreground-probes.json",
+          "bytes": 4405,
+          "sha256": "db10ce3279610d7588451ef6f3e03294cab7d08eb61a724457d238ae3985423d"
+        },
+        {
+          "path": "experiments/p5-regenerated-objects/transfer-water-dark/water/asset-artist/records/foreground-trace.mini-05.json",
+          "materialized": "foreground-trace.json",
+          "bytes": 5828,
+          "sha256": "b7aa68c82394a53137ee1b2f12456a9546b990792c35c517f85da77bf892f10f"
+        },
+        {
+          "path": "experiments/p5-regenerated-objects/transfer-water-dark/water/asset-artist/records/image-measurements.mini-05.json",
+          "materialized": "image-measurements.json",
+          "bytes": 2068,
+          "sha256": "6b851ef470649fb323c35637fcea9359df4565da39779eca62da7a876ea55d08"
+        },
+        {
+          "path": "experiments/p5-regenerated-objects/transfer-water-dark/water/asset-artist/RECEIVER_ANCHOR_POLICY.mini-02.json",
+          "materialized": "RECEIVER_ANCHOR_POLICY.json",
+          "bytes": 6308,
+          "sha256": "a9756c0bc381ed4aefe19bdde2c335a746e2d5467a21557f73c75ab8e2f08312"
+        }
+      ],
+      "transformation": "Exact final texture bytes; file URLs normalized; full provenance kept outside web root with per-texture digest"
+    },
+    "fileIndex": {
+      "bytes": 8432,
+      "sha256": "9ba0caf153b7528d551cd6da9ed8b6ccb90ab2ad4e96aba558eeb6b5c0ef5108"
+    },
+    "sidecar": {
+      "path": "index.json",
+      "bytes": 18054,
+      "sha256": "19c47de8c085fa093d0e6a9c360bb7c5c73493057ab0a5408ded06805d7f0246",
+      "outsidePublic": true
+    },
+    "counts": {
+      "files": 25,
+      "textures": 22,
+      "png": 13,
+      "instances": 84
+    },
+    "checked": [
+      {
+        "path": "THIRD_PARTY_LICENSES.txt",
+        "bytes": 9330,
+        "sha256": "583c1487aefadfa1b72c181ab73a5f7a2030afb0545cf49b90ff66973faef82f",
+        "diskAndHttpExact": true
+      },
+      {
+        "path": "app.js",
+        "bytes": 570889,
+        "sha256": "ba21d2d6a308acbbb4658d937f4ba942ebc6f473d7d934f3eb267c4f6c16afd8",
+        "diskAndHttpExact": true
+      },
+      {
+        "path": "assets/0265ff9669166fbe216da0393c6552e054d66ef0587feb206a56c06e4cbcde92.png",
+        "bytes": 1040337,
+        "sha256": "0265ff9669166fbe216da0393c6552e054d66ef0587feb206a56c06e4cbcde92",
+        "diskAndHttpExact": true
+      },
+      {
+        "path": "assets/0d9fc682e32a2ce5255682e489a6b17c9c451f95a0b16c23325e19239fed251c.png",
+        "bytes": 546326,
+        "sha256": "0d9fc682e32a2ce5255682e489a6b17c9c451f95a0b16c23325e19239fed251c",
+        "diskAndHttpExact": true
+      },
+      {
+        "path": "assets/2cfee97a7bf2542a0a4226ee893ecfa7a7a1f7352505ce74d8b8c48bae1bb301.png",
+        "bytes": 1370021,
+        "sha256": "2cfee97a7bf2542a0a4226ee893ecfa7a7a1f7352505ce74d8b8c48bae1bb301",
+        "diskAndHttpExact": true
+      },
+      {
+        "path": "assets/2f58c03e3ae6a7a4a4460f94976c3c5a4b93ca6045674df8140b9221741a3c0a.png",
+        "bytes": 433727,
+        "sha256": "2f58c03e3ae6a7a4a4460f94976c3c5a4b93ca6045674df8140b9221741a3c0a",
+        "diskAndHttpExact": true
+      },
+      {
+        "path": "assets/37e1603fe031b18e9ae8d325f65b2c138612d15f49d6948ce0b27c9b35c3456c.png",
+        "bytes": 2477216,
+        "sha256": "37e1603fe031b18e9ae8d325f65b2c138612d15f49d6948ce0b27c9b35c3456c",
+        "diskAndHttpExact": true
+      },
+      {
+        "path": "assets/4bf235f8981fcb7c3ca3029c2e59a8594e9af28d7de534a56e1ab841a9549843.png",
+        "bytes": 1547434,
+        "sha256": "4bf235f8981fcb7c3ca3029c2e59a8594e9af28d7de534a56e1ab841a9549843",
+        "diskAndHttpExact": true
+      },
+      {
+        "path": "assets/81954b3b33a69cbc24c9cc259a59881100d66b38d685a9d1b96df7f5107d2aac.png",
+        "bytes": 1497691,
+        "sha256": "81954b3b33a69cbc24c9cc259a59881100d66b38d685a9d1b96df7f5107d2aac",
+        "diskAndHttpExact": true
+      },
+      {
+        "path": "assets/8d7171a661c095dc4b9cef5297ff07fdc9f2b2cf14f072886d02e8944cc85bc2.png",
+        "bytes": 343656,
+        "sha256": "8d7171a661c095dc4b9cef5297ff07fdc9f2b2cf14f072886d02e8944cc85bc2",
+        "diskAndHttpExact": true
+      },
+      {
+        "path": "assets/9773b722949601b438a85076aca750bc703e4bf99dc5750e7ea0f55df96d3a96.png",
+        "bytes": 294672,
+        "sha256": "9773b722949601b438a85076aca750bc703e4bf99dc5750e7ea0f55df96d3a96",
+        "diskAndHttpExact": true
+      },
+      {
+        "path": "assets/a0d0d4a7ae0d79719b94120834249a7161509f4bfa14d097b649022bf42ba34a.png",
+        "bytes": 1194673,
+        "sha256": "a0d0d4a7ae0d79719b94120834249a7161509f4bfa14d097b649022bf42ba34a",
+        "diskAndHttpExact": true
+      },
+      {
+        "path": "assets/aaaac1a65b694873281326fcfb71fef13b1bdf3f6cea4ac06d3315f93a7bf098.png",
+        "bytes": 923732,
+        "sha256": "aaaac1a65b694873281326fcfb71fef13b1bdf3f6cea4ac06d3315f93a7bf098",
+        "diskAndHttpExact": true
+      },
+      {
+        "path": "assets/b8de40ba0fc1a0dfa7d47a7840042c482416667705cfd5ddbcbc2942c63af2c3.png",
+        "bytes": 1176242,
+        "sha256": "b8de40ba0fc1a0dfa7d47a7840042c482416667705cfd5ddbcbc2942c63af2c3",
+        "diskAndHttpExact": true
+      },
+      {
+        "path": "assets/f718f84fb020356c13a2753aa9449d5713f90366559dc6c4d1bb24f97fd07ddb.png",
+        "bytes": 1382638,
+        "sha256": "f718f84fb020356c13a2753aa9449d5713f90366559dc6c4d1bb24f97fd07ddb",
+        "diskAndHttpExact": true
+      },
+      {
+        "path": "assets/manifest.json",
+        "bytes": 103822,
+        "sha256": "44fa6b45ac8f513b9231e16eb2db0dbece54c9255d549b0d8a7d24ad99f39a0c",
+        "diskAndHttpExact": true
+      },
+      {
+        "path": "data/config.json",
+        "bytes": 27231,
+        "sha256": "9048b28af2923c93d8be772367beeb828f1e4513a6298af1c803379f77d3e50c",
+        "diskAndHttpExact": true
+      },
+      {
+        "path": "data/dependency-lock.json",
+        "bytes": 4341,
+        "sha256": "b1bdcd0eb94d0d5c7bb11195eae7d90c16ac9e006484d2a9a192c851559e7678",
+        "diskAndHttpExact": true
+      },
+      {
+        "path": "data/dependency-pins.json",
+        "bytes": 565,
+        "sha256": "e17c48a268e9fd3dce19666877fd043db6b6f98afc0b383024b98d18015877f1",
+        "diskAndHttpExact": true
+      },
+      {
+        "path": "data/input-verification.json",
+        "bytes": 5479,
+        "sha256": "5af8241ac05fa67ad46ff8b5a560a97cc9a7b0c4df405f15e6e0cd53e2d00827",
+        "diskAndHttpExact": true
+      },
+      {
+        "path": "data/p1-manifest.json",
+        "bytes": 15870,
+        "sha256": "48c4fef26fd8c94f06c278851222ef285edda54ac14e53da8908f4ee663dc420",
+        "diskAndHttpExact": true
+      },
+      {
+        "path": "data/preview-input.json",
+        "bytes": 3534,
+        "sha256": "a6277d468cea7924cf652fb9c8eaae418f6803601efb77702a27dea881dd1bcc",
+        "diskAndHttpExact": true
+      },
+      {
+        "path": "data/targets.json",
+        "bytes": 345191,
+        "sha256": "8e6976b9e40aa202a8dc34da9bad49b96d5fa6135aa1e1d6be22d567b8cf7559",
+        "diskAndHttpExact": true
+      },
+      {
+        "path": "index.html",
+        "bytes": 1975,
+        "sha256": "9ba537ccd9a79c97662f10ef2e49653f5332219462da590f336a31b5a71275eb",
+        "diskAndHttpExact": true
+      },
+      {
+        "path": "style.css",
+        "bytes": 1780,
+        "sha256": "f13b2632000019ade68e8ea7109d616cec7f079183c93ea81796fe619170dd9f",
+        "diskAndHttpExact": true
+      }
+    ],
+    "supporting": [
+      {
+        "path": "experiments/p5-regenerated-objects/transfer-water-dark/water/asset-artist/HANDOFF_MINI_05_EXPANSION.md",
+        "materialized": "HANDOFF.md",
+        "bytes": 4588,
+        "sha256": "34c4e685aaba21e8e5da7c0e4d48ecd4e8b0f60c02288bed7da589607171d5bc"
+      },
+      {
+        "path": "experiments/p5-regenerated-objects/transfer-water-dark/water/asset-artist/BINDINGS.mini-05.json",
+        "materialized": "BINDINGS.json",
+        "bytes": 12744,
+        "sha256": "75931bb5c8cdde3eb5f8f5e6b9009bb1a22c45add39518227abe28e3c80a9cb8"
+      },
+      {
+        "path": "experiments/p5-regenerated-objects/transfer-water-dark/water/asset-artist/SELECTED.mini-05.json",
+        "materialized": "SELECTED.json",
+        "bytes": 3685,
+        "sha256": "1db9501738516a9001e99c6bd743952664adddba0fc30884f8bf7e16aa63ee75"
+      },
+      {
+        "path": "experiments/p5-regenerated-objects/transfer-water-dark/water/asset-artist/records/contact-contours.mini-05.json",
+        "materialized": "contact-contours.json",
+        "bytes": 2662,
+        "sha256": "1e689babb66e968b9e9941c22ed6c5eacedea54c39d2fc957415d95035c405f0"
+      },
+      {
+        "path": "experiments/p5-regenerated-objects/transfer-water-dark/water/asset-artist/records/foreground-polygon-check.mini-05.json",
+        "materialized": "foreground-polygon-check.json",
+        "bytes": 190,
+        "sha256": "33355e372f203386abe04fb89fd880280278938a89843d039f1017d2d995fc9f"
+      },
+      {
+        "path": "experiments/p5-regenerated-objects/transfer-water-dark/water/asset-artist/records/foreground-probes.mini-05.json",
+        "materialized": "foreground-probes.json",
+        "bytes": 4405,
+        "sha256": "db10ce3279610d7588451ef6f3e03294cab7d08eb61a724457d238ae3985423d"
+      },
+      {
+        "path": "experiments/p5-regenerated-objects/transfer-water-dark/water/asset-artist/records/foreground-trace.mini-05.json",
+        "materialized": "foreground-trace.json",
+        "bytes": 5828,
+        "sha256": "b7aa68c82394a53137ee1b2f12456a9546b990792c35c517f85da77bf892f10f"
+      },
+      {
+        "path": "experiments/p5-regenerated-objects/transfer-water-dark/water/asset-artist/records/image-measurements.mini-05.json",
+        "materialized": "image-measurements.json",
+        "bytes": 2068,
+        "sha256": "6b851ef470649fb323c35637fcea9359df4565da39779eca62da7a876ea55d08"
+      },
+      {
+        "path": "experiments/p5-regenerated-objects/transfer-water-dark/water/asset-artist/RECEIVER_ANCHOR_POLICY.mini-02.json",
+        "materialized": "RECEIVER_ANCHOR_POLICY.json",
+        "bytes": 6308,
+        "sha256": "a9756c0bc381ed4aefe19bdde2c335a746e2d5467a21557f73c75ab8e2f08312"
+      }
+    ],
+    "delta": {
+      "oldInstancesExact": 34,
+      "oldTexturesExact": 19,
+      "newUniquePng": 3,
+      "sourceClipCount": 11,
+      "appAndNativeInputDataBytesIdenticalW05": true,
+      "previewInputMetadataChanged": true,
+      "sourceClipFrame": "source1536, uniform floor1536/1254"
+    },
+    "owner": {
+      "pid": 33028,
+      "host": "WIN-36E9FF9EJM0",
+      "url": "http://127.0.0.1:55196/",
+      "root": "E:\\R4D\\perspective\\p5-runtime\\builder\\transfer-water-dark\\water\\output\\previews\\w06\\public",
+      "startedUtc": "2026-10-30T02:28:39.431Z",
+      "command": "node own transfer scripts/preview.mjs <own-root> <own-port>",
+      "scope": "own localhost; no release server writes",
+      "execSessionId": 30547,
+      "candidate": "w06",
+      "fileIndexSha256": "9ba0caf153b7528d551cd6da9ed8b6ccb90ab2ad4e96aba558eeb6b5c0ef5108"
+    },
+    "initialTcpOwnerMatched": true,
+    "serverWrites": 0,
+    "tokenGranted": false
+  },
+  "actual": {
+    "snapshots": 101,
+    "captures": 96,
+    "comparison": {
+      "path": "E:/R4D/perspective/p5-runtime/technical-qa/transfer-water-dark/water/w06/browser-comparison.json",
+      "bytes": 43812,
+      "sha256": "926c66788d53cde7c3a8b0fc83245e76d5f528ed33e42866fdd818d60e57900d"
+    },
+    "bindings": {
+      "path": "E:/R4D/perspective/p5-runtime/technical-qa/transfer-water-dark/water/w06/binding-comparison.json",
+      "bytes": 5159,
+      "sha256": "f555947e0d8e856e4e0c48b1b81182a24bffff10f2b5613169274f361ace16de"
+    },
+    "format": {
+      "count": 96,
+      "formats": [
+        "JPEG"
+      ],
+      "sizes": [
+        [
+          1265,
+          712
+        ]
+      ],
+      "rawProviderBytesPreserved": true,
+      "noTranscodingCropOrViewportOverride": true,
+      "note": "Historical .png filename convention retained; actual native provider output detected from bytes."
+    },
+    "fieldDomain": {
+      "minX": -10.637626390503007,
+      "maxX": 1533.7323088433782,
+      "minY": 208.22966507177034,
+      "maxY": 1403.2984506144696
+    },
+    "fieldDeltaFromW05": {
+      "minX": 0,
+      "maxX": 0,
+      "minY": -41.49844877081924,
+      "maxY": 0
+    },
+    "fieldFixedAcrossStates": true,
+    "consoleErrors": 0,
+    "ownTabsClosed": true,
+    "producerPreserved": true
+  },
+  "verdict": {
+    "status": "Scoped actual COMPLETE / visual PARTIAL",
+    "newEstablishedTechnicalDefect": false,
+    "receiver02SavedPopRegression": "preserved1273–1275+hold",
+    "gate07Regression": "preserved",
+    "foregroundActualRegions": 6,
+    "foregroundTotalRegions": 11,
+    "fullPass": false,
+    "limitations": [
+      "Frog03/06 contacts unavailable in cached seeds0–3",
+      "Frog04 rear contact and arch04 selected contact hidden by body/beam",
+      "Gates01/02/05/06 dynamic cases unavailable",
+      "Five foreground regions dynamic unavailable; rare bevel/foam/contours unverified",
+      "Lintel shadow strength/extent/combined support PARTIAL",
+      "W05 front-hide NOTE/UNVERIFIED retained"
+    ]
+  },
+  "runtimeIndex": {
+    "path": "E:/R4D/perspective/p5-runtime/technical-qa/transfer-water-dark/water/w06/FILE_INDEX.qa.json",
+    "bytes": 38394,
+    "sha256": "b307e7219bf1e1e22e8a5160c8dab1848e79de5a662bcac46ab3917a01ea4791",
+    "entries": 216,
+    "totalBytes": 39866822
+  },
+  "newStandaloneOracleRuns": 0,
+  "newSeeds": 0,
+  "debuggerProbe": false,
+  "serverWrites": 0,
+  "tokenGranted": false
+}
