@@ -1,0 +1,2104 @@
+{
+  "status": "ANALYTICAL PLAN, no actual verdict",
+  "artistCommit": "189fe2e7f4264270f60b4a2ebe247d0d49b3c72e",
+  "artistManifest": {
+    "path": "E:/R4D/perspective/p5-runtime/technical-qa/transfer-water-dark/water/w06-plan-001/artist-manifest.source.json",
+    "bytes": 125833,
+    "sha256": "b533e4d2a2f6f2094fed132913fe9dadb9b6eaa370f5a447ff3afc627f7cda27"
+  },
+  "sourceInputs": {
+    "config": {
+      "path": "E:/R4D/perspective/p5-runtime/technical-qa/transfer-water-dark/water/input-oracle-001/common/config.json",
+      "bytes": 27231,
+      "sha256": "9048b28af2923c93d8be772367beeb828f1e4513a6298af1c803379f77d3e50c"
+    },
+    "p1Manifest": {
+      "path": "E:/R4D/perspective/p5-runtime/technical-qa/transfer-water-dark/water/input-oracle-001/common/manifest.json",
+      "bytes": 15870,
+      "sha256": "48c4fef26fd8c94f06c278851222ef285edda54ac14e53da8908f4ee663dc420"
+    }
+  },
+  "oracleRefs": [
+    {
+      "seed": 0,
+      "states": 1327,
+      "events": {
+        "path": "E:/R4D/perspective/p5-runtime/technical-qa/transfer-water-dark/water/input-oracle-001/private/seed-0/events.json",
+        "bytes": 3005,
+        "sha256": "493da4c15b855cb41178b4cbb76dc830bf647ddc4749590511061082fec760c7"
+      },
+      "terminalTick": 1326,
+      "result": {
+        "kind": "LOST",
+        "finalX": 32866.4825074,
+        "nearMissBucketIds": []
+      }
+    },
+    {
+      "seed": 1,
+      "states": 1197,
+      "events": {
+        "path": "E:/R4D/perspective/p5-runtime/technical-qa/transfer-water-dark/water/input-oracle-001/private/seed-1/events.json",
+        "bytes": 2809,
+        "sha256": "796dcc614cc845456465c6f9a45562395657b5793c0f497d0de02ab5aa0d0a51"
+      },
+      "terminalTick": 1196,
+      "result": {
+        "kind": "LOST",
+        "finalX": 33728.1429454,
+        "nearMissBucketIds": []
+      }
+    },
+    {
+      "seed": 2,
+      "states": 1276,
+      "events": {
+        "path": "E:/R4D/perspective/p5-runtime/technical-qa/transfer-water-dark/water/input-oracle-001/private/seed-2/events.json",
+        "bytes": 4291,
+        "sha256": "8e76f247745a76b99eda2ee1ef0f2bfaefe544570ed27bba11f7816b61ae181b"
+      },
+      "terminalTick": 1275,
+      "result": {
+        "kind": "IN_BUCKET",
+        "bucketId": "receiver-02"
+      }
+    },
+    {
+      "seed": 3,
+      "states": 590,
+      "events": {
+        "path": "E:/R4D/perspective/p5-runtime/technical-qa/transfer-water-dark/water/input-oracle-001/private/seed-3/events.json",
+        "bytes": 1666,
+        "sha256": "0d3478787e33537136df91098ec8cd8c9adcf5244e06d3328d56b00f1734659e"
+      },
+      "terminalTick": 589,
+      "result": {
+        "kind": "LOST",
+        "finalX": 33109.6649959,
+        "nearMissBucketIds": []
+      }
+    }
+  ],
+  "method": {
+    "coordinates": "Native Ground -> P1 source1536 homography; ball sprite uniform width fit and [625,624]-[625,1147] visual lift. Foreground polygons remain source1536; raw1254=source*1254/1536.",
+    "sphereProxy": "Projected sprite bounding-width circle; 317 equal grid probes for ranking only, not PNG alpha or exact Pixi visibility.",
+    "collisionTiming": "object_hit event tick t -> post-step state t+1. Terminal lifecycle already post-step.",
+    "scope": "Read existing complete seeds0–3 only. No re-simulation, core export/compile, browser, product writes, or invented/extrapolated trajectory."
+  },
+  "oldMini04Delta": {
+    "instances": 34,
+    "textures": 19,
+    "changedInstances": [],
+    "changedTextures": []
+  },
+  "frogs": [
+    {
+      "id": "frog-02",
+      "textureId": "frog-mid-v6",
+      "contactAvailable": true,
+      "contacts": [
+        {
+          "seed": 0,
+          "eventTick": 408,
+          "stateTick": 409
+        },
+        {
+          "seed": 1,
+          "eventTick": 421,
+          "stateTick": 422
+        },
+        {
+          "seed": 1,
+          "eventTick": 792,
+          "stateTick": 793
+        },
+        {
+          "seed": 2,
+          "eventTick": 423,
+          "stateTick": 424
+        },
+        {
+          "seed": 2,
+          "eventTick": 492,
+          "stateTick": 493
+        }
+      ],
+      "closest": {
+        "seed": 1,
+        "tick": 422,
+        "ndjsonLine": 423,
+        "tracePath": "E:/R4D/perspective/p5-runtime/technical-qa/transfer-water-dark/water/input-oracle-001/private/seed-1/states.ndjson",
+        "nativeGround": {
+          "x": 32870.2089386,
+          "y": 33814.849009
+        },
+        "sourceGround": [
+          397.9690562376356,
+          518.107568823808
+        ],
+        "sourceSphereCenter": [
+          397.9690562376356,
+          502.8289298155579
+        ],
+        "raw1254SphereCenter": [
+          324.90442481900715,
+          410.5126809822328
+        ],
+        "sphereDiscRadiusSourcePx": 15.366279384970511,
+        "rngU32": 1587069247,
+        "done": false,
+        "clearanceNativePx": -2.4518314489796467e-8,
+        "targetRadiusNative": 51.270407454356246,
+        "ballRadiusNative": 16
+      },
+      "binding": {
+        "targetId": "frog-02",
+        "textureId": "frog-mid-v6",
+        "uniformScale": 0.10029372565914808,
+        "sourceAnchor": [
+          458.1062088948813,
+          507.028453459407
+        ],
+        "targetSourceFootprint": [
+          98.08726369464682,
+          41.66184771505027
+        ],
+        "textureGroundAnchorPx": [
+          626,
+          867.9212559135569
+        ],
+        "textureFootprintPx": {
+          "center": [
+            626,
+            867.9212559135569
+          ],
+          "width": 978,
+          "depth": 399.99664778852366,
+          "measurement": "Ширина нижнего круглого основания по alpha>=128, lower contour ellipse fit; задняя половина опоры inferred, не восстановленная камера. Uncertainty±6texturepx.",
+          "uncertaintyTexturePx": 6
+        },
+        "renderedDepthSourcePx": 40.11715405788107,
+        "depthResidualSourcePx": -1.5446936571691978,
+        "anchorUncertaintySourcePx": 0.6017623539548885,
+        "nativeChanged": false,
+        "actualQa": false
+      }
+    },
+    {
+      "id": "frog-03",
+      "textureId": "frog-mid-v6",
+      "contactAvailable": false,
+      "contacts": [],
+      "closest": {
+        "seed": 0,
+        "tick": 847,
+        "ndjsonLine": 848,
+        "tracePath": "E:/R4D/perspective/p5-runtime/technical-qa/transfer-water-dark/water/input-oracle-001/private/seed-0/states.ndjson",
+        "nativeGround": {
+          "x": 33470.5029135,
+          "y": 33924.7745286
+        },
+        "sourceGround": [
+          976.7727188008317,
+          563.7520536191321
+        ],
+        "sourceSphereCenter": [
+          976.7727188008317,
+          548.2650903447137
+        ],
+        "raw1254SphereCenter": [
+          797.4433524584915,
+          447.60704641423894
+        ],
+        "sphereDiscRadiusSourcePx": 15.575798627808922,
+        "rngU32": 3167820124,
+        "done": false,
+        "clearanceNativePx": 108.34515024766483,
+        "targetRadiusNative": 51.270407454356246,
+        "ballRadiusNative": 16
+      },
+      "binding": {
+        "targetId": "frog-03",
+        "textureId": "frog-mid-v6",
+        "uniformScale": 0.10029372565914564,
+        "sourceAnchor": [
+          1077.8937911051187,
+          507.028453459407
+        ],
+        "targetSourceFootprint": [
+          98.08726369464443,
+          41.66184771505027
+        ],
+        "textureGroundAnchorPx": [
+          626,
+          867.9212559135569
+        ],
+        "textureFootprintPx": {
+          "center": [
+            626,
+            867.9212559135569
+          ],
+          "width": 978,
+          "depth": 399.99664778852366,
+          "measurement": "Ширина нижнего круглого основания по alpha>=128, lower contour ellipse fit; задняя половина опоры inferred, не восстановленная камера. Uncertainty±6texturepx.",
+          "uncertaintyTexturePx": 6
+        },
+        "renderedDepthSourcePx": 40.1171540578801,
+        "depthResidualSourcePx": -1.5446936571701713,
+        "anchorUncertaintySourcePx": 0.6017623539548739,
+        "nativeChanged": false,
+        "actualQa": false
+      }
+    },
+    {
+      "id": "frog-04",
+      "textureId": "frog-near-v7",
+      "contactAvailable": true,
+      "contacts": [
+        {
+          "seed": 0,
+          "eventTick": 314,
+          "stateTick": 315
+        },
+        {
+          "seed": 1,
+          "eventTick": 314,
+          "stateTick": 315
+        },
+        {
+          "seed": 2,
+          "eventTick": 314,
+          "stateTick": 315
+        },
+        {
+          "seed": 3,
+          "eventTick": 315,
+          "stateTick": 316
+        }
+      ],
+      "closest": {
+        "seed": 0,
+        "tick": 315,
+        "ndjsonLine": 316,
+        "tracePath": "E:/R4D/perspective/p5-runtime/technical-qa/transfer-water-dark/water/input-oracle-001/private/seed-0/states.ndjson",
+        "nativeGround": {
+          "x": 32924.3211246,
+          "y": 34318.2970537
+        },
+        "sourceGround": [
+          427.1985285479026,
+          738.8000504267113
+        ],
+        "sourceSphereCenter": [
+          427.1985285479026,
+          722.4357770087566
+        ],
+        "raw1254SphereCenter": [
+          348.76754869731104,
+          589.8010835735553
+        ],
+        "sphereDiscRadiusSourcePx": 16.45814114310545,
+        "rngU32": 2868466484,
+        "done": false,
+        "clearanceNativePx": -3.6973084149849456e-8,
+        "targetRadiusNative": 52.050948276463096,
+        "ballRadiusNative": 16
+      },
+      "binding": {
+        "targetId": "frog-04",
+        "textureId": "frog-near-v7",
+        "uniformScale": 0.1006763957178019,
+        "sourceAnchor": [
+          416.6335877311984,
+          770.8947101489662
+        ],
+        "targetSourceFootprint": [
+          108.12644900091925,
+          49.839795874550646
+        ],
+        "textureGroundAnchorPx": [
+          627,
+          889.9655966469904
+        ],
+        "textureFootprintPx": {
+          "center": [
+            627,
+            889.9655966469904
+          ],
+          "width": 1074,
+          "depth": 472.42048989070514,
+          "measurement": "Ширина нижнего круглого основания по alpha>=128, lower contour ellipse fit; задняя половина опоры inferred, не восстановленная камера. Uncertainty±6texturepx.",
+          "uncertaintyTexturePx": 6
+        },
+        "renderedDepthSourcePx": 47.56159218543446,
+        "depthResidualSourcePx": -2.2782036891161823,
+        "anchorUncertaintySourcePx": 0.6040583743068114,
+        "nativeChanged": false,
+        "actualQa": false
+      }
+    },
+    {
+      "id": "frog-05",
+      "textureId": "frog-near-v7",
+      "contactAvailable": true,
+      "contacts": [
+        {
+          "seed": 0,
+          "eventTick": 996,
+          "stateTick": 997
+        }
+      ],
+      "closest": {
+        "seed": 0,
+        "tick": 997,
+        "ndjsonLine": 998,
+        "tracePath": "E:/R4D/perspective/p5-runtime/technical-qa/transfer-water-dark/water/input-oracle-001/private/seed-0/states.ndjson",
+        "nativeGround": {
+          "x": 33656.8002978,
+          "y": 34346.5824292
+        },
+        "sourceGround": [
+          1181.4796114700994,
+          752.1363397859241
+        ],
+        "sourceSphereCenter": [
+          1181.4796114700994,
+          735.6982167735966
+        ],
+        "raw1254SphereCenter": [
+          964.5673390517609,
+          600.6286222878191
+        ],
+        "sphereDiscRadiusSourcePx": 16.532414348918223,
+        "rngU32": 3801544430,
+        "done": false,
+        "clearanceNativePx": -4.2387220844375406e-8,
+        "targetRadiusNative": 53.0222142825798,
+        "ballRadiusNative": 16
+      },
+      "binding": {
+        "targetId": "frog-05",
+        "textureId": "frog-near-v7",
+        "uniformScale": 0.10254417575095738,
+        "sourceAnchor": [
+          1124.2797557149802,
+          770.4297973739444
+        ],
+        "targetSourceFootprint": [
+          110.13244475652823,
+          50.75581412866666
+        ],
+        "textureGroundAnchorPx": [
+          627,
+          889.9655966469904
+        ],
+        "textureFootprintPx": {
+          "center": [
+            627,
+            889.9655966469904
+          ],
+          "width": 1074,
+          "depth": 472.42048989070514,
+          "measurement": "Ширина нижнего круглого основания по alpha>=128, lower contour ellipse fit; задняя половина опоры inferred, не восстановленная камера. Uncertainty±6texturepx.",
+          "uncertaintyTexturePx": 6
+        },
+        "renderedDepthSourcePx": 48.44396974370585,
+        "depthResidualSourcePx": -2.311844384960807,
+        "anchorUncertaintySourcePx": 0.6152650545057443,
+        "nativeChanged": false,
+        "actualQa": false
+      }
+    },
+    {
+      "id": "frog-06",
+      "textureId": "frog-near-v7",
+      "contactAvailable": false,
+      "contacts": [],
+      "closest": {
+        "seed": 0,
+        "tick": 1164,
+        "ndjsonLine": 1165,
+        "tracePath": "E:/R4D/perspective/p5-runtime/technical-qa/transfer-water-dark/water/input-oracle-001/private/seed-0/states.ndjson",
+        "nativeGround": {
+          "x": 33400.1558998,
+          "y": 34850.5191343
+        },
+        "sourceGround": [
+          928.1895336767456,
+          1009.0972845019603
+        ],
+        "sourceSphereCenter": [
+          928.1895336767456,
+          991.4191007713011
+        ],
+        "raw1254SphereCenter": [
+          757.7797364782805,
+          809.40075023907
+        ],
+        "sphereDiscRadiusSourcePx": 17.779588226246062,
+        "rngU32": 2768872580,
+        "done": false,
+        "clearanceNativePx": 126.96247834405511,
+        "targetRadiusNative": 52.329383017033614,
+        "ballRadiusNative": 16
+      },
+      "binding": {
+        "targetId": "frog-06",
+        "textureId": "frog-near-v7",
+        "uniformScale": 0.10614525139665482,
+        "sourceAnchor": [
+          768.0000000000032,
+          938.1649924811977
+        ],
+        "targetSourceFootprint": [
+          114.00000000000728,
+          55.236254690665874
+        ],
+        "textureGroundAnchorPx": [
+          627,
+          889.9655966469904
+        ],
+        "textureFootprintPx": {
+          "center": [
+            627,
+            889.9655966469904
+          ],
+          "width": 1074,
+          "depth": 472.42048989070514,
+          "measurement": "Ширина нижнего круглого основания по alpha>=128, lower contour ellipse fit; задняя половина опоры inferred, не восстановленная камера. Uncertainty±6texturepx.",
+          "uncertaintyTexturePx": 6
+        },
+        "renderedDepthSourcePx": 50.14519166437972,
+        "depthResidualSourcePx": -5.09106302628615,
+        "anchorUncertaintySourcePx": 0.6368715083799289,
+        "nativeChanged": false,
+        "actualQa": false
+      }
+    }
+  ],
+  "gates": [
+    {
+      "id": "arch-01",
+      "contacts": [],
+      "groundOpeningPasses": [],
+      "paintedBodyBboxCandidates": []
+    },
+    {
+      "id": "arch-02",
+      "contacts": [],
+      "groundOpeningPasses": [],
+      "paintedBodyBboxCandidates": []
+    },
+    {
+      "id": "arch-03",
+      "contacts": [
+        {
+          "seed": 2,
+          "id": "arch-03-right-foot:edge-02",
+          "eventTick": 350,
+          "stateTick": 351
+        },
+        {
+          "seed": 2,
+          "id": "arch-03-right-foot:edge-01",
+          "eventTick": 685,
+          "stateTick": 686
+        },
+        {
+          "seed": 2,
+          "id": "arch-03-left-foot:edge-04",
+          "eventTick": 893,
+          "stateTick": 894
+        },
+        {
+          "seed": 3,
+          "id": "arch-03-right-foot:edge-03",
+          "eventTick": 348,
+          "stateTick": 349
+        }
+      ],
+      "groundOpeningPasses": [],
+      "paintedBodyBboxCandidates": [
+        {
+          "seed": 2,
+          "range": [
+            348,
+            351
+          ],
+          "mid": {
+            "seed": 2,
+            "tick": 349,
+            "ndjsonLine": 350,
+            "tracePath": "E:/R4D/perspective/p5-runtime/technical-qa/transfer-water-dark/water/input-oracle-001/private/seed-2/states.ndjson",
+            "nativeGround": {
+              "x": 32881.5484523,
+              "y": 34132.7345909
+            },
+            "sourceGround": [
+              393.09731172169484,
+              653.8898140602906
+            ],
+            "sourceSphereCenter": [
+              393.09731172169484,
+              637.9407208427081
+            ],
+            "raw1254SphereCenter": [
+              320.9271021477899,
+              520.818791625492
+            ],
+            "sphereDiscRadiusSourcePx": 16.040579411947306,
+            "rngU32": 3186434646,
+            "done": false
+          },
+          "classification": "Bounding-box candidate only: includes transparent arch opening. No pixel-alpha, anatomical surface or actual visibility proof."
+        },
+        {
+          "seed": 2,
+          "range": [
+            683,
+            687
+          ],
+          "mid": {
+            "seed": 2,
+            "tick": 685,
+            "ndjsonLine": 686,
+            "tracePath": "E:/R4D/perspective/p5-runtime/technical-qa/transfer-water-dark/water/input-oracle-001/private/seed-2/states.ndjson",
+            "nativeGround": {
+              "x": 32874.2651586,
+              "y": 34059.2110478
+            },
+            "sourceGround": [
+              389.642338974954,
+              621.4369199899331
+            ],
+            "sourceSphereCenter": [
+              389.642338974954,
+              605.6475815809224
+            ],
+            "raw1254SphereCenter": [
+              318.106440803771,
+              494.45447090004996
+            ],
+            "sphereDiscRadiusSourcePx": 15.879908227800513,
+            "rngU32": 3387660960,
+            "done": false
+          },
+          "classification": "Bounding-box candidate only: includes transparent arch opening. No pixel-alpha, anatomical surface or actual visibility proof."
+        },
+        {
+          "seed": 2,
+          "range": [
+            770,
+            836
+          ],
+          "mid": {
+            "seed": 2,
+            "tick": 803,
+            "ndjsonLine": 804,
+            "tracePath": "E:/R4D/perspective/p5-runtime/technical-qa/transfer-water-dark/water/input-oracle-001/private/seed-2/states.ndjson",
+            "nativeGround": {
+              "x": 32805.1643756,
+              "y": 33996.3769183
+            },
+            "sourceGround": [
+              324.9542167775089,
+              594.214291009354
+            ],
+            "sourceSphereCenter": [
+              324.9542167775089,
+              578.5524360524786
+            ],
+            "raw1254SphereCenter": [
+              265.29465354101313,
+              472.3338247459688
+            ],
+            "sphereDiscRadiusSourcePx": 15.751693513033445,
+            "rngU32": 1469204436,
+            "done": false
+          },
+          "classification": "Bounding-box candidate only: includes transparent arch opening. No pixel-alpha, anatomical surface or actual visibility proof."
+        },
+        {
+          "seed": 2,
+          "range": [
+            894,
+            894
+          ],
+          "mid": {
+            "seed": 2,
+            "tick": 894,
+            "ndjsonLine": 895,
+            "tracePath": "E:/R4D/perspective/p5-runtime/technical-qa/transfer-water-dark/water/input-oracle-001/private/seed-2/states.ndjson",
+            "nativeGround": {
+              "x": 32741.0206939,
+              "y": 34092.7053862
+            },
+            "sourceGround": [
+              255.2314546291669,
+              636.139958089137
+            ],
+            "sourceSphereCenter": [
+              255.2314546291669,
+              620.2636800746112
+            ],
+            "raw1254SphereCenter": [
+              208.3725547558433,
+              506.3871450609131
+            ],
+            "sphereDiscRadiusSourcePx": 15.967346530861576,
+            "rngU32": 2866302536,
+            "done": false
+          },
+          "classification": "Bounding-box candidate only: includes transparent arch opening. No pixel-alpha, anatomical surface or actual visibility proof."
+        },
+        {
+          "seed": 3,
+          "range": [
+            340,
+            360
+          ],
+          "mid": {
+            "seed": 3,
+            "tick": 350,
+            "ndjsonLine": 351,
+            "tracePath": "E:/R4D/perspective/p5-runtime/technical-qa/transfer-water-dark/water/input-oracle-001/private/seed-3/states.ndjson",
+            "nativeGround": {
+              "x": 32846.2361268,
+              "y": 34141.8269638
+            },
+            "sourceGround": [
+              357.2272694648591,
+              657.9489299474051
+            ],
+            "sourceSphereCenter": [
+              357.2272694648591,
+              641.9759419197395
+            ],
+            "raw1254SphereCenter": [
+              291.6425754615451,
+              524.1131713329123
+            ],
+            "sphereDiscRadiusSourcePx": 16.064611285950434,
+            "rngU32": 3714889393,
+            "done": false
+          },
+          "classification": "Bounding-box candidate only: includes transparent arch opening. No pixel-alpha, anatomical surface or actual visibility proof."
+        }
+      ]
+    },
+    {
+      "id": "arch-04",
+      "contacts": [
+        {
+          "seed": 0,
+          "id": "arch-04-right-foot:edge-01",
+          "eventTick": 697,
+          "stateTick": 698
+        }
+      ],
+      "groundOpeningPasses": [],
+      "paintedBodyBboxCandidates": [
+        {
+          "seed": 0,
+          "range": [
+            656,
+            732
+          ],
+          "mid": {
+            "seed": 0,
+            "tick": 694,
+            "ndjsonLine": 695,
+            "tracePath": "E:/R4D/perspective/p5-runtime/technical-qa/transfer-water-dark/water/input-oracle-001/private/seed-0/states.ndjson",
+            "nativeGround": {
+              "x": 33280.9223896,
+              "y": 34039.0784396
+            },
+            "sourceGround": [
+              792.6341810483246,
+              612.6638302869926
+            ],
+            "sourceSphereCenter": [
+              792.6341810483246,
+              596.9390576243452
+            ],
+            "raw1254SphereCenter": [
+              647.1114993714838,
+              487.34477751362556
+            ],
+            "sphereDiscRadiusSourcePx": 15.814972123427367,
+            "rngU32": 2498801434,
+            "done": false
+          },
+          "classification": "Bounding-box candidate only: includes transparent arch opening. No pixel-alpha, anatomical surface or actual visibility proof."
+        }
+      ]
+    },
+    {
+      "id": "arch-05",
+      "contacts": [],
+      "groundOpeningPasses": [],
+      "paintedBodyBboxCandidates": []
+    },
+    {
+      "id": "arch-06",
+      "contacts": [],
+      "groundOpeningPasses": [],
+      "paintedBodyBboxCandidates": []
+    },
+    {
+      "id": "arch-07",
+      "contacts": [
+        {
+          "seed": 1,
+          "id": "arch-07-left-foot:edge-01",
+          "eventTick": 1006,
+          "stateTick": 1007
+        },
+        {
+          "seed": 1,
+          "id": "arch-07-right-foot:edge-04",
+          "eventTick": 1012,
+          "stateTick": 1013
+        },
+        {
+          "seed": 1,
+          "id": "arch-07-left-foot:edge-02",
+          "eventTick": 1018,
+          "stateTick": 1019
+        },
+        {
+          "seed": 2,
+          "id": "arch-07-left-foot:edge-03",
+          "eventTick": 1105,
+          "stateTick": 1106
+        }
+      ],
+      "groundOpeningPasses": [
+        {
+          "seed": 1,
+          "range": [
+            1009,
+            1012
+          ],
+          "frames": [
+            {
+              "seed": 1,
+              "tick": 1008,
+              "ndjsonLine": 1009,
+              "tracePath": "E:/R4D/perspective/p5-runtime/technical-qa/transfer-water-dark/water/input-oracle-001/private/seed-1/states.ndjson",
+              "nativeGround": {
+                "x": 33011.0398694,
+                "y": 34727.872484
+              },
+              "sourceGround": [
+                500.81115577208186,
+                942.9756360860682
+              ],
+              "sourceSphereCenter": [
+                500.81115577208186,
+                925.612824001331
+              ],
+              "raw1254SphereCenter": [
+                408.86535764205115,
+                755.6760945948366
+              ],
+              "sphereDiscRadiusSourcePx": 17.462407565146805,
+              "rngU32": 3594602695,
+              "done": false
+            },
+            {
+              "seed": 1,
+              "tick": 1010,
+              "ndjsonLine": 1011,
+              "tracePath": "E:/R4D/perspective/p5-runtime/technical-qa/transfer-water-dark/water/input-oracle-001/private/seed-1/states.ndjson",
+              "nativeGround": {
+                "x": 33021.0678212,
+                "y": 34736.0979752
+              },
+              "sourceGround": [
+                511.4319555824975,
+                947.3338462021231
+              ],
+              "sourceSphereCenter": [
+                511.4319555824975,
+                929.9507936601467
+              ],
+              "raw1254SphereCenter": [
+                417.5362449872734,
+                759.2176401366041
+              ],
+              "sphereDiscRadiusSourcePx": 17.48276412443522,
+              "rngU32": 3594602695,
+              "done": false
+            },
+            {
+              "seed": 1,
+              "tick": 1013,
+              "ndjsonLine": 1014,
+              "tracePath": "E:/R4D/perspective/p5-runtime/technical-qa/transfer-water-dark/water/input-oracle-001/private/seed-1/states.ndjson",
+              "nativeGround": {
+                "x": 33034.6182281,
+                "y": 34748.608067
+              },
+              "sourceGround": [
+                525.7743519532706,
+                953.982935564755
+              ],
+              "sourceSphereCenter": [
+                525.7743519532706,
+                936.5687901708772
+              ],
+              "raw1254SphereCenter": [
+                429.24546702434986,
+                764.6206138504426
+              ],
+              "sphereDiscRadiusSourcePx": 17.514035329215687,
+              "rngU32": 4212701329,
+              "done": false
+            }
+          ],
+          "classification": "radius-clear of inner AABB X bounds at sampled Ground points; no height/lintel or source-silhouette proof"
+        },
+        {
+          "seed": 1,
+          "range": [
+            1014,
+            1018
+          ],
+          "frames": [
+            {
+              "seed": 1,
+              "tick": 1013,
+              "ndjsonLine": 1014,
+              "tracePath": "E:/R4D/perspective/p5-runtime/technical-qa/transfer-water-dark/water/input-oracle-001/private/seed-1/states.ndjson",
+              "nativeGround": {
+                "x": 33034.6182281,
+                "y": 34748.608067
+              },
+              "sourceGround": [
+                525.7743519532706,
+                953.982935564755
+              ],
+              "sourceSphereCenter": [
+                525.7743519532706,
+                936.5687901708772
+              ],
+              "raw1254SphereCenter": [
+                429.24546702434986,
+                764.6206138504426
+              ],
+              "sphereDiscRadiusSourcePx": 17.514035329215687,
+              "rngU32": 4212701329,
+              "done": false
+            },
+            {
+              "seed": 1,
+              "tick": 1016,
+              "ndjsonLine": 1017,
+              "tracePath": "E:/R4D/perspective/p5-runtime/technical-qa/transfer-water-dark/water/input-oracle-001/private/seed-1/states.ndjson",
+              "nativeGround": {
+                "x": 33022.0060745,
+                "y": 34760.7167066
+              },
+              "sourceGround": [
+                511.50655266778045,
+                960.4425806965929
+              ],
+              "sourceSphereCenter": [
+                511.50655266778045,
+                942.9949099203335
+              ],
+              "raw1254SphereCenter": [
+                417.5971465139301,
+                769.8669381771473
+              ],
+              "sphereDiscRadiusSourcePx": 17.54775301780586,
+              "rngU32": 4212701329,
+              "done": false
+            },
+            {
+              "seed": 1,
+              "tick": 1019,
+              "ndjsonLine": 1020,
+              "tracePath": "E:/R4D/perspective/p5-runtime/technical-qa/transfer-water-dark/water/input-oracle-001/private/seed-1/states.ndjson",
+              "nativeGround": {
+                "x": 33011.3951983,
+                "y": 34772.8887207
+              },
+              "sourceGround": [
+                499.38162974968066,
+                966.9598882833056
+              ],
+              "sourceSphereCenter": [
+                499.38162974968066,
+                949.4786547527357
+              ],
+              "raw1254SphereCenter": [
+                407.6982836628252,
+                775.1603079817256
+              ],
+              "sphereDiscRadiusSourcePx": 17.581508292695617,
+              "rngU32": 1403919595,
+              "done": false
+            }
+          ],
+          "classification": "radius-clear of inner AABB X bounds at sampled Ground points; no height/lintel or source-silhouette proof"
+        },
+        {
+          "seed": 1,
+          "range": [
+            1020,
+            1020
+          ],
+          "frames": [
+            {
+              "seed": 1,
+              "tick": 1019,
+              "ndjsonLine": 1020,
+              "tracePath": "E:/R4D/perspective/p5-runtime/technical-qa/transfer-water-dark/water/input-oracle-001/private/seed-1/states.ndjson",
+              "nativeGround": {
+                "x": 33011.3951983,
+                "y": 34772.8887207
+              },
+              "sourceGround": [
+                499.38162974968066,
+                966.9598882833056
+              ],
+              "sourceSphereCenter": [
+                499.38162974968066,
+                949.4786547527357
+              ],
+              "raw1254SphereCenter": [
+                407.6982836628252,
+                775.1603079817256
+              ],
+              "sphereDiscRadiusSourcePx": 17.581508292695617,
+              "rngU32": 1403919595,
+              "done": false
+            },
+            {
+              "seed": 1,
+              "tick": 1020,
+              "ndjsonLine": 1021,
+              "tracePath": "E:/R4D/perspective/p5-runtime/technical-qa/transfer-water-dark/water/input-oracle-001/private/seed-1/states.ndjson",
+              "nativeGround": {
+                "x": 33015.4446206,
+                "y": 34776.3540299
+              },
+              "sourceGround": [
+                503.69002317766336,
+                968.8197238768474
+              ],
+              "sourceSphereCenter": [
+                503.69002317766336,
+                951.3298295647759
+              ],
+              "raw1254SphereCenter": [
+                411.21568298488927,
+                776.6716186681178
+              ],
+              "sphereDiscRadiusSourcePx": 17.5902187536322,
+              "rngU32": 1403919595,
+              "done": false
+            },
+            {
+              "seed": 1,
+              "tick": 1021,
+              "ndjsonLine": 1022,
+              "tracePath": "E:/R4D/perspective/p5-runtime/technical-qa/transfer-water-dark/water/input-oracle-001/private/seed-1/states.ndjson",
+              "nativeGround": {
+                "x": 33019.4940429,
+                "y": 34779.8438391
+              },
+              "sourceGround": [
+                508.00197421210436,
+                970.694681606193
+              ],
+              "sourceSphereCenter": [
+                508.00197421210436,
+                953.1960529120574
+              ],
+              "raw1254SphereCenter": [
+                414.7359867591008,
+                778.1952150727344
+              ],
+              "sphereDiscRadiusSourcePx": 17.59900323731415,
+              "rngU32": 1403919595,
+              "done": false
+            }
+          ],
+          "classification": "radius-clear of inner AABB X bounds at sampled Ground points; no height/lintel or source-silhouette proof"
+        }
+      ],
+      "paintedBodyBboxCandidates": [
+        {
+          "seed": 1,
+          "range": [
+            989,
+            1036
+          ],
+          "mid": {
+            "seed": 1,
+            "tick": 1012,
+            "ndjsonLine": 1013,
+            "tracePath": "E:/R4D/perspective/p5-runtime/technical-qa/transfer-water-dark/water/input-oracle-001/private/seed-1/states.ndjson",
+            "nativeGround": {
+              "x": 33031.095773,
+              "y": 34744.4214664
+            },
+            "sourceGround": [
+              522.0754455236134,
+              951.7549753955109
+            ],
+            "sourceSphereCenter": [
+              522.0754455236134,
+              934.3513779747441
+            ],
+            "raw1254SphereCenter": [
+              426.22565669701254,
+              762.8103046746934
+            ],
+            "sphereDiscRadiusSourcePx": 17.503426851478622,
+            "rngU32": 3594602695,
+            "done": false
+          },
+          "classification": "Bounding-box candidate only: includes transparent arch opening. No pixel-alpha, anatomical surface or actual visibility proof."
+        },
+        {
+          "seed": 2,
+          "range": [
+            1105,
+            1106
+          ],
+          "mid": {
+            "seed": 2,
+            "tick": 1105,
+            "ndjsonLine": 1106,
+            "tracePath": "E:/R4D/perspective/p5-runtime/technical-qa/transfer-water-dark/water/input-oracle-001/private/seed-2/states.ndjson",
+            "nativeGround": {
+              "x": 32954.3481955,
+              "y": 34792.7128962
+            },
+            "sourceGround": [
+              435.7376088144777,
+              977.6259593347401
+            ],
+            "sourceSphereCenter": [
+              435.7376088144777,
+              960.0845979831846
+            ],
+            "raw1254SphereCenter": [
+              355.7389071961947,
+              783.8190663222093
+            ],
+            "sphereDiscRadiusSourcePx": 17.641981015139947,
+            "rngU32": 640197116,
+            "done": false
+          },
+          "classification": "Bounding-box candidate only: includes transparent arch opening. No pixel-alpha, anatomical surface or actual visibility proof."
+        }
+      ]
+    },
+    {
+      "id": "arch-08",
+      "contacts": [
+        {
+          "seed": 0,
+          "id": "arch-08-left-foot:edge-03",
+          "eventTick": 1147,
+          "stateTick": 1148
+        }
+      ],
+      "groundOpeningPasses": [],
+      "paintedBodyBboxCandidates": [
+        {
+          "seed": 0,
+          "range": [
+            1138,
+            1157
+          ],
+          "mid": {
+            "seed": 0,
+            "tick": 1147,
+            "ndjsonLine": 1148,
+            "tracePath": "E:/R4D/perspective/p5-runtime/technical-qa/transfer-water-dark/water/input-oracle-001/private/seed-0/states.ndjson",
+            "nativeGround": {
+              "x": 33456.1252678,
+              "y": 34796.4345
+            },
+            "sourceGround": [
+              988.5578510705013,
+              979.6354654819395
+            ],
+            "sourceSphereCenter": [
+              988.5578510705013,
+              962.097431611525
+            ],
+            "raw1254SphereCenter": [
+              807.0648081005265,
+              785.4623562765966
+            ],
+            "sphereDiscRadiusSourcePx": 17.638634447108927,
+            "rngU32": 1338634754,
+            "done": false
+          },
+          "classification": "Bounding-box candidate only: includes transparent arch opening. No pixel-alpha, anatomical surface or actual visibility proof."
+        }
+      ]
+    }
+  ],
+  "foreground": [
+    {
+      "id": "fg-wall-left-far-cap",
+      "classification": "No visual-disc overlap at cached 5ms states0–3; dynamic unverified, no invented sub-tick motion",
+      "episodes": [],
+      "groundInsideRanges": [],
+      "closest": {
+        "seed": 1,
+        "tick": 534,
+        "ndjsonLine": 535,
+        "tracePath": "E:/R4D/perspective/p5-runtime/technical-qa/transfer-water-dark/water/input-oracle-001/private/seed-1/states.ndjson",
+        "nativeGround": {
+          "x": 32694.2379281,
+          "y": 33668.6020901
+        },
+        "sourceGround": [
+          239.40196185262604,
+          459.39797321462885
+        ],
+        "sourceSphereCenter": [
+          239.40196185262604,
+          444.3925352233878
+        ],
+        "raw1254SphereCenter": [
+          195.44925791874547,
+          362.80484320971897
+        ],
+        "sphereDiscRadiusSourcePx": 15.09151124931698,
+        "rngU32": 2388811721,
+        "done": false,
+        "signedDiscClearanceSourcePx": 87.8313760552319
+      }
+    },
+    {
+      "id": "fg-wall-right-far-cap",
+      "classification": "No visual-disc overlap at cached 5ms states0–3; dynamic unverified, no invented sub-tick motion",
+      "episodes": [],
+      "groundInsideRanges": [],
+      "closest": {
+        "seed": 0,
+        "tick": 917,
+        "ndjsonLine": 918,
+        "tracePath": "E:/R4D/perspective/p5-runtime/technical-qa/transfer-water-dark/water/input-oracle-001/private/seed-0/states.ndjson",
+        "nativeGround": {
+          "x": 33557.3209665,
+          "y": 34053.0991446
+        },
+        "sourceGround": [
+          1066.4061580189007,
+          618.7684705609453
+        ],
+        "sourceSphereCenter": [
+          1066.4061580189007,
+          603.0008136803115
+        ],
+        "raw1254SphereCenter": [
+          870.6206524451181,
+          492.2936330436917
+        ],
+        "sphereDiscRadiusSourcePx": 15.858102331191958,
+        "rngU32": 3167820124,
+        "done": false,
+        "signedDiscClearanceSourcePx": 328.55842053695176
+      }
+    },
+    {
+      "id": "fg-wall-left-upper-cap",
+      "classification": "Analytically available visual-disc overlap; actual/anatomical masking unverified",
+      "episodes": [
+        {
+          "seed": 1,
+          "range": [
+            515,
+            525
+          ],
+          "peak": 520,
+          "fraction": 0.2744479495268139
+        }
+      ],
+      "groundInsideRanges": [],
+      "closest": null
+    },
+    {
+      "id": "fg-wall-right-upper-cap",
+      "classification": "No visual-disc overlap at cached 5ms states0–3; dynamic unverified, no invented sub-tick motion",
+      "episodes": [],
+      "groundInsideRanges": [],
+      "closest": {
+        "seed": 0,
+        "tick": 1018,
+        "ndjsonLine": 1019,
+        "tracePath": "E:/R4D/perspective/p5-runtime/technical-qa/transfer-water-dark/water/input-oracle-001/private/seed-0/states.ndjson",
+        "nativeGround": {
+          "x": 33730.2273165,
+          "y": 34418.7052534
+        },
+        "sourceGround": [
+          1262.2963303364024,
+          786.6318804721393
+        ],
+        "sourceSphereCenter": [
+          1262.2963303364024,
+          770.0144525212961
+        ],
+        "raw1254SphereCenter": [
+          1030.5466134387036,
+          628.6446116287144
+        ],
+        "sphereDiscRadiusSourcePx": 16.712747805245726,
+        "rngU32": 3801544430,
+        "done": false,
+        "signedDiscClearanceSourcePx": 204.11673782847495
+      }
+    },
+    {
+      "id": "fg-wall-left-middle-cap",
+      "classification": "Analytically available visual-disc overlap; actual/anatomical masking unverified",
+      "episodes": [
+        {
+          "seed": 3,
+          "range": [
+            410,
+            436
+          ],
+          "peak": 418,
+          "fraction": 0.8422712933753943
+        }
+      ],
+      "groundInsideRanges": [
+        {
+          "seed": 3,
+          "range": [
+            413,
+            428
+          ]
+        }
+      ],
+      "closest": null
+    },
+    {
+      "id": "fg-wall-right-middle-cap",
+      "classification": "Analytically available visual-disc overlap; actual/anatomical masking unverified",
+      "episodes": [
+        {
+          "seed": 0,
+          "range": [
+            1035,
+            1045
+          ],
+          "peak": 1039,
+          "fraction": 0.4952681388012618
+        }
+      ],
+      "groundInsideRanges": [
+        {
+          "seed": 0,
+          "range": [
+            1039,
+            1040
+          ]
+        }
+      ],
+      "closest": null
+    },
+    {
+      "id": "fg-wall-left-near-face",
+      "classification": "Analytically available visual-disc overlap; actual/anatomical masking unverified",
+      "episodes": [
+        {
+          "seed": 2,
+          "range": [
+            1157,
+            1175
+          ],
+          "peak": 1166,
+          "fraction": 0.9305993690851735
+        }
+      ],
+      "groundInsideRanges": [
+        {
+          "seed": 2,
+          "range": [
+            1166,
+            1166
+          ]
+        }
+      ],
+      "closest": null
+    },
+    {
+      "id": "fg-wall-right-near-face",
+      "classification": "No visual-disc overlap at cached 5ms states0–3; dynamic unverified, no invented sub-tick motion",
+      "episodes": [],
+      "groundInsideRanges": [],
+      "closest": {
+        "seed": 0,
+        "tick": 1051,
+        "ndjsonLine": 1052,
+        "tracePath": "E:/R4D/perspective/p5-runtime/technical-qa/transfer-water-dark/water/input-oracle-001/private/seed-0/states.ndjson",
+        "nativeGround": {
+          "x": 33764.6645566,
+          "y": 34548.9190727
+        },
+        "sourceGround": [
+          1308.2936587566353,
+          850.7557376876733
+        ],
+        "sourceSphereCenter": [
+          1308.2936587566353,
+          833.8151636709011
+        ],
+        "raw1254SphereCenter": [
+          1068.0991198442844,
+          680.7319109656967
+        ],
+        "sphereDiscRadiusSourcePx": 17.037747481495558,
+        "rngU32": 2210837584,
+        "done": false,
+        "signedDiscClearanceSourcePx": 60.63190046834332
+      }
+    },
+    {
+      "id": "fg-island-left-front-face",
+      "classification": "Analytically available visual-disc overlap; actual/anatomical masking unverified",
+      "episodes": [
+        {
+          "seed": 2,
+          "range": [
+            1214,
+            1272
+          ],
+          "peak": 1224,
+          "fraction": 1
+        },
+        {
+          "seed": 3,
+          "range": [
+            483,
+            524
+          ],
+          "peak": 495,
+          "fraction": 1
+        }
+      ],
+      "groundInsideRanges": [
+        {
+          "seed": 2,
+          "range": [
+            1218,
+            1262
+          ]
+        },
+        {
+          "seed": 3,
+          "range": [
+            487,
+            513
+          ]
+        }
+      ],
+      "closest": null
+    },
+    {
+      "id": "fg-island-middle-front-face",
+      "classification": "Analytically available visual-disc overlap; actual/anatomical masking unverified",
+      "episodes": [
+        {
+          "seed": 0,
+          "range": [
+            1174,
+            1230
+          ],
+          "peak": 1201,
+          "fraction": 1
+        },
+        {
+          "seed": 1,
+          "range": [
+            1053,
+            1101
+          ],
+          "peak": 1074,
+          "fraction": 1
+        }
+      ],
+      "groundInsideRanges": [
+        {
+          "seed": 0,
+          "range": [
+            1176,
+            1222
+          ]
+        },
+        {
+          "seed": 1,
+          "range": [
+            1055,
+            1094
+          ]
+        }
+      ],
+      "closest": null
+    },
+    {
+      "id": "fg-island-right-front-face",
+      "classification": "No visual-disc overlap at cached 5ms states0–3; dynamic unverified, no invented sub-tick motion",
+      "episodes": [],
+      "groundInsideRanges": [],
+      "closest": {
+        "seed": 0,
+        "tick": 1123,
+        "ndjsonLine": 1124,
+        "tracePath": "E:/R4D/perspective/p5-runtime/technical-qa/transfer-water-dark/water/input-oracle-001/private/seed-0/states.ndjson",
+        "nativeGround": {
+          "x": 33534.386503,
+          "y": 34902.8063544
+        },
+        "sourceGround": [
+          1079.8460884383958,
+          1038.0475627621022
+        ],
+        "sourceSphereCenter": [
+          1079.8460884383958,
+          1020.2106256299712
+        ],
+        "raw1254SphereCenter": [
+          881.5930956391591,
+          832.9063310807187
+        ],
+        "sphereDiscRadiusSourcePx": 17.9392522590839,
+        "rngU32": 1338634754,
+        "done": false,
+        "signedDiscClearanceSourcePx": 14.158053887571363
+      }
+    }
+  ],
+  "primaryForeground": [
+    {
+      "seed": 2,
+      "overlapRange": [
+        1214,
+        1272
+      ],
+      "peakTick": 1224,
+      "peakSampleFraction": 1,
+      "peakCenterInside": true,
+      "peakCenterBoundaryDistanceSourcePx": 21.284054904829357,
+      "hasClearBeforeAndAfter": true,
+      "frames": {
+        "before": {
+          "seed": 2,
+          "tick": 1213,
+          "ndjsonLine": 1214,
+          "tracePath": "E:/R4D/perspective/p5-runtime/technical-qa/transfer-water-dark/water/input-oracle-001/private/seed-2/states.ndjson",
+          "nativeGround": {
+            "x": 32853.3209787,
+            "y": 34934.799394
+          },
+          "sourceGround": [
+            314.68433514615964,
+            1055.9929444424668
+          ],
+          "sourceSphereCenter": [
+            314.68433514615964,
+            1038.0503749890074
+          ],
+          "raw1254SphereCenter": [
+            256.9102579904194,
+            847.4708139558693
+          ],
+          "sphereDiscRadiusSourcePx": 18.04549050194956,
+          "rngU32": 1581479664,
+          "done": false
+        },
+        "firstOverlap": {
+          "seed": 2,
+          "tick": 1214,
+          "ndjsonLine": 1215,
+          "tracePath": "E:/R4D/perspective/p5-runtime/technical-qa/transfer-water-dark/water/input-oracle-001/private/seed-2/states.ndjson",
+          "nativeGround": {
+            "x": 32856.6028065,
+            "y": 34937.6630794
+          },
+          "sourceGround": [
+            318.1790683022235,
+            1057.6079165579972
+          ],
+          "sourceSphereCenter": [
+            318.1790683022235,
+            1039.6577978720131
+          ],
+          "raw1254SphereCenter": [
+            259.76337998111217,
+            848.7831240439482
+          ],
+          "sphereDiscRadiusSourcePx": 18.05308303791142,
+          "rngU32": 1581479664,
+          "done": false
+        },
+        "peak": {
+          "seed": 2,
+          "tick": 1224,
+          "ndjsonLine": 1225,
+          "tracePath": "E:/R4D/perspective/p5-runtime/technical-qa/transfer-water-dark/water/input-oracle-001/private/seed-2/states.ndjson",
+          "nativeGround": {
+            "x": 32889.4210845,
+            "y": 34967.6474334
+          },
+          "sourceGround": [
+            353.2108623341925,
+            1074.6041461685809
+          ],
+          "sourceSphereCenter": [
+            353.2108623341925,
+            1056.5743883019873
+          ],
+          "raw1254SphereCenter": [
+            288.3635555775243,
+            862.5939341996692
+          ],
+          "sphereDiscRadiusSourcePx": 18.133179039824597,
+          "rngU32": 1581479664,
+          "done": false
+        },
+        "lastOverlap": {
+          "seed": 2,
+          "tick": 1272,
+          "ndjsonLine": 1273,
+          "tracePath": "E:/R4D/perspective/p5-runtime/technical-qa/transfer-water-dark/water/input-oracle-001/private/seed-2/states.ndjson",
+          "nativeGround": {
+            "x": 33046.9488189,
+            "y": 35145.6763326
+          },
+          "sourceGround": [
+            524.7036148995235,
+            1178.8831270540707
+          ],
+          "sourceSphereCenter": [
+            524.7036148995235,
+            1160.360180553008
+          ],
+          "raw1254SphereCenter": [
+            428.3713106015641,
+            947.3253036546042
+          ],
+          "sphereDiscRadiusSourcePx": 18.629196672197054,
+          "rngU32": 1581479664,
+          "done": false
+        },
+        "after": {
+          "seed": 2,
+          "tick": 1273,
+          "ndjsonLine": 1274,
+          "tracePath": "E:/R4D/perspective/p5-runtime/technical-qa/transfer-water-dark/water/input-oracle-001/private/seed-2/states.ndjson",
+          "nativeGround": {
+            "x": 33050.2306467,
+            "y": 35149.985518
+          },
+          "sourceGround": [
+            528.3574729543121,
+            1181.4810409725203
+          ],
+          "sourceSphereCenter": [
+            528.3574729543121,
+            1162.945745345292
+          ],
+          "raw1254SphereCenter": [
+            431.3543431541064,
+            949.4361749108048
+          ],
+          "sphereDiscRadiusSourcePx": 18.641616634650433,
+          "rngU32": 1581479664,
+          "done": false
+        }
+      },
+      "shortMotionEntryRange": [
+        1206,
+        1226
+      ],
+      "shortMotionExitRange": [
+        1264,
+        1275
+      ]
+    },
+    {
+      "seed": 3,
+      "overlapRange": [
+        410,
+        436
+      ],
+      "peakTick": 418,
+      "peakSampleFraction": 0.8422712933753943,
+      "peakCenterInside": true,
+      "peakCenterBoundaryDistanceSourcePx": 10.332137707264542,
+      "hasClearBeforeAndAfter": true,
+      "frames": {
+        "before": {
+          "seed": 3,
+          "tick": 409,
+          "ndjsonLine": 410,
+          "tracePath": "E:/R4D/perspective/p5-runtime/technical-qa/transfer-water-dark/water/input-oracle-001/private/seed-3/states.ndjson",
+          "nativeGround": {
+            "x": 32723.7469112,
+            "y": 34425.6682466
+          },
+          "sourceGround": [
+            212.66701576652895,
+            790.0000614430874
+          ],
+          "sourceSphereCenter": [
+            212.66701576652895,
+            773.3569233519252
+          ],
+          "raw1254SphereCenter": [
+            173.6226808406428,
+            631.3734257052827
+          ],
+          "sphereDiscRadiusSourcePx": 16.738605422469007,
+          "rngU32": 3714889393,
+          "done": false
+        },
+        "firstOverlap": {
+          "seed": 3,
+          "tick": 410,
+          "ndjsonLine": 411,
+          "tracePath": "E:/R4D/perspective/p5-runtime/technical-qa/transfer-water-dark/water/input-oracle-001/private/seed-3/states.ndjson",
+          "nativeGround": {
+            "x": 32721.6708228,
+            "y": 34431.2141158
+          },
+          "sourceGround": [
+            210.05612174801104,
+            792.6875701317554
+          ],
+          "sourceSphereCenter": [
+            210.05612174801104,
+            776.0305682205498
+          ],
+          "raw1254SphereCenter": [
+            171.49113064583716,
+            633.5562060863082
+          ],
+          "sphereDiscRadiusSourcePx": 16.752548767292822,
+          "rngU32": 3714889393,
+          "done": false
+        },
+        "peak": {
+          "seed": 3,
+          "tick": 418,
+          "ndjsonLine": 419,
+          "tracePath": "E:/R4D/perspective/p5-runtime/technical-qa/transfer-water-dark/water/input-oracle-001/private/seed-3/states.ndjson",
+          "nativeGround": {
+            "x": 32707.4211145,
+            "y": 34476.3198391
+          },
+          "sourceGround": [
+            191.43543778273798,
+            814.7059563214066
+          ],
+          "sourceSphereCenter": [
+            191.43543778273798,
+            797.9359603198466
+          ],
+          "raw1254SphereCenter": [
+            156.28908787731342,
+            651.4399051048748
+          ],
+          "sphereDiscRadiusSourcePx": 16.86619100730512,
+          "rngU32": 1668571147,
+          "done": false
+        },
+        "lastOverlap": {
+          "seed": 3,
+          "tick": 436,
+          "ndjsonLine": 437,
+          "tracePath": "E:/R4D/perspective/p5-runtime/technical-qa/transfer-water-dark/water/input-oracle-001/private/seed-3/states.ndjson",
+          "nativeGround": {
+            "x": 32749.7625757,
+            "y": 34578.7430827
+          },
+          "sourceGround": [
+            227.9273519287019,
+            865.7880473275846
+          ],
+          "sourceSphereCenter": [
+            227.9273519287019,
+            848.7732491069481
+          ],
+          "raw1254SphereCenter": [
+            186.0813146605418,
+            692.9437854037193
+          ],
+          "sphereDiscRadiusSourcePx": 17.112397445611478,
+          "rngU32": 1668571147,
+          "done": false
+        },
+        "after": {
+          "seed": 3,
+          "tick": 437,
+          "ndjsonLine": 438,
+          "tracePath": "E:/R4D/perspective/p5-runtime/technical-qa/transfer-water-dark/water/input-oracle-001/private/seed-3/states.ndjson",
+          "nativeGround": {
+            "x": 32752.1148791,
+            "y": 34584.6660129
+          },
+          "sourceGround": [
+            229.9685011948676,
+            868.7891030948905
+          ],
+          "sourceSphereCenter": [
+            229.9685011948676,
+            851.7598305060292
+          ],
+          "raw1254SphereCenter": [
+            187.74772167862238,
+            695.382049124063
+          ],
+          "sphereDiscRadiusSourcePx": 17.12695484080507,
+          "rngU32": 1668571147,
+          "done": false
+        }
+      },
+      "shortMotionEntryRange": [
+        402,
+        422
+      ],
+      "shortMotionExitRange": [
+        428,
+        448
+      ]
+    },
+    {
+      "seed": 0,
+      "overlapRange": [
+        1035,
+        1045
+      ],
+      "peakTick": 1039,
+      "peakSampleFraction": 0.4952681388012618,
+      "peakCenterInside": true,
+      "peakCenterBoundaryDistanceSourcePx": 0.19488237530684455,
+      "hasClearBeforeAndAfter": true,
+      "frames": {
+        "before": {
+          "seed": 0,
+          "tick": 1034,
+          "ndjsonLine": 1035,
+          "tracePath": "E:/R4D/perspective/p5-runtime/technical-qa/transfer-water-dark/water/input-oracle-001/private/seed-0/states.ndjson",
+          "nativeGround": {
+            "x": 33786.1717117,
+            "y": 34480.9079766
+          },
+          "sourceGround": [
+            1325.5887823163296,
+            816.9617849667915
+          ],
+          "sourceSphereCenter": [
+            1325.5887823163296,
+            800.1849277530986
+          ],
+          "raw1254SphereCenter": [
+            1082.218966812941,
+            653.2759761734281
+          ],
+          "sphereDiscRadiusSourcePx": 16.873091576295337,
+          "rngU32": 3801544430,
+          "done": false
+        },
+        "firstOverlap": {
+          "seed": 0,
+          "tick": 1035,
+          "ndjsonLine": 1036,
+          "tracePath": "E:/R4D/perspective/p5-runtime/technical-qa/transfer-water-dark/water/input-oracle-001/private/seed-0/states.ndjson",
+          "nativeGround": {
+            "x": 33789.6682364,
+            "y": 34485.0038968
+          },
+          "sourceGround": [
+            1329.599417927054,
+            818.9781427966318
+          ],
+          "sourceSphereCenter": [
+            1329.599417927054,
+            802.1904163992557
+          ],
+          "raw1254SphereCenter": [
+            1085.493274792009,
+            654.9132696384548
+          ],
+          "sphereDiscRadiusSourcePx": 16.88402310711251,
+          "rngU32": 3801544430,
+          "done": false
+        },
+        "peak": {
+          "seed": 0,
+          "tick": 1039,
+          "ndjsonLine": 1040,
+          "tracePath": "E:/R4D/perspective/p5-runtime/technical-qa/transfer-water-dark/water/input-oracle-001/private/seed-0/states.ndjson",
+          "nativeGround": {
+            "x": 33803.0442322,
+            "y": 34501.5955343
+          },
+          "sourceGround": [
+            1345.0635822646536,
+            827.1705044726453
+          ],
+          "sourceSphereCenter": [
+            1345.0635822646536,
+            810.3387943365478
+          ],
+          "raw1254SphereCenter": [
+            1098.1183152082524,
+            661.5656563138223
+          ],
+          "sphereDiscRadiusSourcePx": 16.928259142614365,
+          "rngU32": 2210837584,
+          "done": false
+        },
+        "lastOverlap": {
+          "seed": 0,
+          "tick": 1045,
+          "ndjsonLine": 1046,
+          "tracePath": "E:/R4D/perspective/p5-runtime/technical-qa/transfer-water-dark/water/input-oracle-001/private/seed-0/states.ndjson",
+          "nativeGround": {
+            "x": 33783.8543944,
+            "y": 34524.8163035
+          },
+          "sourceGround": [
+            1326.7061286865671,
+            838.7026593986751
+          ],
+          "sourceSphereCenter": [
+            1326.7061286865671,
+            821.8181299851163
+          ],
+          "raw1254SphereCenter": [
+            1083.1311753730176,
+            670.9374576831614
+          ],
+          "sphereDiscRadiusSourcePx": 16.981381398722533,
+          "rngU32": 2210837584,
+          "done": false
+        },
+        "after": {
+          "seed": 0,
+          "tick": 1046,
+          "ndjsonLine": 1047,
+          "tracePath": "E:/R4D/perspective/p5-runtime/technical-qa/transfer-water-dark/water/input-oracle-001/private/seed-0/states.ndjson",
+          "nativeGround": {
+            "x": 33780.6560881,
+            "y": 34528.7721817
+          },
+          "sourceGround": [
+            1323.6414113986298,
+            840.6750614370446
+          ],
+          "sourceSphereCenter": [
+            1323.6414113986298,
+            823.7814838251874
+          ],
+          "raw1254SphereCenter": [
+            1080.6291210246625,
+            672.5403520291569
+          ],
+          "sphereDiscRadiusSourcePx": 16.99048149873215,
+          "rngU32": 2210837584,
+          "done": false
+        }
+      },
+      "shortMotionEntryRange": [
+        1027,
+        1047
+      ],
+      "shortMotionExitRange": [
+        1037,
+        1057
+      ]
+    },
+    {
+      "seed": 1,
+      "overlapRange": [
+        1053,
+        1101
+      ],
+      "peakTick": 1074,
+      "peakSampleFraction": 1,
+      "peakCenterInside": true,
+      "peakCenterBoundaryDistanceSourcePx": 19.122611451759685,
+      "hasClearBeforeAndAfter": true,
+      "frames": {
+        "before": {
+          "seed": 1,
+          "tick": 1052,
+          "ndjsonLine": 1053,
+          "tracePath": "E:/R4D/perspective/p5-runtime/technical-qa/transfer-water-dark/water/input-oracle-001/private/seed-1/states.ndjson",
+          "nativeGround": {
+            "x": 33145.0261342,
+            "y": 34900.1799243
+          },
+          "sourceGround": [
+            643.7384279806621,
+            1036.5822259867784
+          ],
+          "sourceSphereCenter": [
+            643.7384279806621,
+            1018.768611231494
+          ],
+          "raw1254SphereCenter": [
+            525.5520759685875,
+            831.729061513212
+          ],
+          "sphereDiscRadiusSourcePx": 17.915796101873127,
+          "rngU32": 1403919595,
+          "done": false
+        },
+        "firstOverlap": {
+          "seed": 1,
+          "tick": 1053,
+          "ndjsonLine": 1054,
+          "tracePath": "E:/R4D/perspective/p5-runtime/technical-qa/transfer-water-dark/water/input-oracle-001/private/seed-1/states.ndjson",
+          "nativeGround": {
+            "x": 33149.0755565,
+            "y": 34904.4537335
+          },
+          "sourceGround": [
+            648.1937289130285,
+            1038.9672741800805
+          ],
+          "sourceSphereCenter": [
+            648.1937289130285,
+            1021.1419071887296
+          ],
+          "raw1254SphereCenter": [
+            529.1894114954022,
+            833.6666351657988
+          ],
+          "sphereDiscRadiusSourcePx": 17.92761575038344,
+          "rngU32": 1403919595,
+          "done": false
+        },
+        "peak": {
+          "seed": 1,
+          "tick": 1074,
+          "ndjsonLine": 1075,
+          "tracePath": "E:/R4D/perspective/p5-runtime/technical-qa/transfer-water-dark/water/input-oracle-001/private/seed-1/states.ndjson",
+          "nativeGround": {
+            "x": 33234.1134248,
+            "y": 34999.8632267
+          },
+          "sourceGround": [
+            743.110037786562,
+            1093.043194375619
+          ],
+          "sourceSphereCenter": [
+            743.110037786562,
+            1074.951370303263
+          ],
+          "raw1254SphereCenter": [
+            606.6796792866854,
+            877.5970171616483
+          ],
+          "sphereDiscRadiusSourcePx": 18.195601265887603,
+          "rngU32": 1403919595,
+          "done": false
+        },
+        "lastOverlap": {
+          "seed": 1,
+          "tick": 1101,
+          "ndjsonLine": 1102,
+          "tracePath": "E:/R4D/perspective/p5-runtime/technical-qa/transfer-water-dark/water/input-oracle-001/private/seed-1/states.ndjson",
+          "nativeGround": {
+            "x": 33343.4478269,
+            "y": 35138.4085751
+          },
+          "sourceGround": [
+            869.6544202021573,
+            1174.50967818965
+          ],
+          "sourceSphereCenter": [
+            869.6544202021573,
+            1156.016431055082
+          ],
+          "raw1254SphereCenter": [
+            709.9913039931675,
+            943.779039416063
+          ],
+          "sphereDiscRadiusSourcePx": 18.599326946047483,
+          "rngU32": 1403919595,
+          "done": false
+        },
+        "after": {
+          "seed": 1,
+          "tick": 1102,
+          "ndjsonLine": 1103,
+          "tracePath": "E:/R4D/perspective/p5-runtime/technical-qa/transfer-water-dark/water/input-oracle-001/private/seed-1/states.ndjson",
+          "nativeGround": {
+            "x": 33347.4972492,
+            "y": 35143.8828843
+          },
+          "sourceGround": [
+            874.4550337721837,
+            1177.8029538356475
+          ],
+          "sourceSphereCenter": [
+            874.4550337721837,
+            1159.2934792080953
+          ],
+          "raw1254SphereCenter": [
+            713.9105549155719,
+            946.4544420097341
+          ],
+          "sphereDiscRadiusSourcePx": 18.61564752216526,
+          "rngU32": 1403919595,
+          "done": false
+        }
+      },
+      "shortMotionEntryRange": [
+        1045,
+        1065
+      ],
+      "shortMotionExitRange": [
+        1093,
+        1113
+      ]
+    }
+  ],
+  "receiverRegression": {
+    "seed": 2,
+    "ticks": [
+      1273,
+      1274,
+      1275
+    ],
+    "sameStateViewsTick": 1274,
+    "reference": "E:/R4D/perspective/p5-runtime/technical-qa/transfer-water-dark/water/w05/",
+    "frontNote": "W05-TQA-L01 NOTE/front-hide UNVERIFIED retained; no artificial hiding case/sorting fix",
+    "field": "Pin first actual w06 Field domain and require state/view/replay invariance; record art-envelope delta from w05, no compensation/manual offset."
+  },
+  "analysis": {
+    "path": "E:/R4D/perspective/p5-runtime/technical-qa/transfer-water-dark/water/w06-plan-001/case-analysis.json",
+    "bytes": 168075,
+    "sha256": "83d442a39ad6fa7118de75fea82f3810f04b3021cd95fbfd4d7ac1abf6dd5ad1"
+  },
+  "runtimeIndex": {
+    "path": "E:/R4D/perspective/p5-runtime/technical-qa/transfer-water-dark/water/w06-plan-001/FILE_INDEX.qa.json",
+    "bytes": 1515,
+    "sha256": "2292b7fa111349f920f4bb13df3ac95ce172c2c1fbeddd6ec26075859c2b54bc"
+  },
+  "newNativeRuns": 0,
+  "newSeeds": 0,
+  "browserStage": false,
+  "fullPass": false,
+  "serverWrites": 0,
+  "tokenGranted": false
+}
