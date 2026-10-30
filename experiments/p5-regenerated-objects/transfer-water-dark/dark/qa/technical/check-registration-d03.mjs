@@ -1,0 +1,10 @@
+import assert from 'node:assert/strict';
+import {readFileSync,writeFileSync} from 'node:fs';
+const root='E:/R4D/perspective/p5-runtime/technical-qa/transfer-water-dark/dark/d03',pub='E:/R4D/perspective/p5-runtime/builder/transfer-water-dark/dark/output/previews/d03/public';
+const read=p=>JSON.parse(readFileSync(p));const m=read(pub+'/assets/manifest.json'),targets=read(pub+'/data/targets.json').objects,H=read(pub+'/data/p1-manifest.json').projection.nativeToSource;
+const proj=(x,y)=>{const d=H[2][0]*x+H[2][1]*y+H[2][2];return[(H[0][0]*x+H[0][1]*y+H[0][2])/d,(H[1][0]*x+H[1][1]*y+H[1][2])/d]};
+const ball=m.textures.find(t=>t.id==='ball-v1'),rows=[];
+for(const t of targets.filter(t=>t.id.startsWith('receiver-'))){const [x,y]=t.native.anchor,ring=Array.from({length:128},(_,i)=>proj(x+16*Math.cos(i*Math.PI/64),y+16*Math.sin(i*Math.PI/64))),sB=(Math.max(...ring.map(p=>p[0]))-Math.min(...ring.map(p=>p[0])))/ball.footprintPx.width;
+ const parts=m.instances.filter(i=>i.targetId===t.id).map(i=>{const tex=m.textures.find(tex=>tex.id===i.textureId),s=t.sourcePx.footprintWidth/tex.footprintPx.width,O=tex.opticalOpeningPointPx,A=tex.groundAnchorPx,hR=544.5*sB/s;assert(Math.abs(A[1]-O[1]-hR)<1e-9);assert(Math.abs(A[0]-O[0])<1e-9);return{id:i.id,role:i.role,rawO:O,rawA:A,uniformScale:s,hR,sourceO:O.map((v,k)=>t.sourcePx.anchor[k]+(v-A[k])*s),expectedRank:i.role==='floor'?-1e8:y+t.native.depthRadius*i.depthOffsetRadii}});
+ for(const p of parts)for(let k=0;k<2;k++)assert(Math.abs(p.sourceO[k]-parts[0].sourceO[k])<1e-9);rows.push({target:t.id,ballUniformScale:sB,parts});}
+writeFileSync(root+'/registration-independent.json',JSON.stringify({method:'Independent arithmetic on exact frozen inputs; nominal equality is not raster/3D proof; no native or image edits',allFourSourceOpeningsEqual:true,allThreePartLiftEquationsExact:true,rows},null,2)+'\n');console.log('Four target registrations/lift/source openings exact');
