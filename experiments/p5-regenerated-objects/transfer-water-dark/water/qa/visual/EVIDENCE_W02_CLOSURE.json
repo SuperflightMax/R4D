@@ -1,0 +1,342 @@
+{
+  "schema": "r4d.p5.transfer.visual-closure-evidence.v1",
+  "board": "water",
+  "candidate": "w02",
+  "finding": "W01-V01",
+  "verdict": "CLOSED_IN_CHECKED_SCOPE",
+  "fullWaterArtPass": false,
+  "capturedAtUTC": "2026-10-30T00:10:37.729198+00:00",
+  "runtimeRoot": "E:\\R4D\\perspective\\p5-runtime\\visual-qa\\transfer-water-dark\\water\\w02",
+  "consumerCommit": "f06ed5d7f87dc3e51323881d3ce8380ead65ea18",
+  "artistCommit": "094301dda9a43e7b4970af9d9af20982a38fb221",
+  "fileIndexSha256": "1a8945190e064be5fedfaa80c30a1aa9f24db048d2bef407546c53246697cdcb",
+  "appSha256": "0571bbdaa541fa8d5ad617c686118d69b4ba7dacca746652dc99f8489cc248c2",
+  "unchangedPhysicalFilesFromW01": 16,
+  "captureRule": "4 exact paused native UI states with AX before/after equal. Original JPEG no edit/crop/reencode. Native browser scale Whole/Field; no viewport or zoom override; CSS/DPR not separately measured. No pixel-tolerance claim.",
+  "captures": [
+    {
+      "name": "01-seed0-t0-field",
+      "UTC": "2026-10-30T00:08:47.841Z",
+      "before": "01-seed0-t0-field.before.ax.txt",
+      "image": "01-seed0-t0-field.jpg",
+      "after": "01-seed0-t0-field.after.ax.txt",
+      "exactUI": {
+        "seed": 0,
+        "state": {
+          "tick": 0,
+          "rngU32": 0,
+          "ball": {
+            "pos": {
+              "x": 33192.751665295094,
+              "y": 33184.49424667716
+            },
+            "vel": {
+              "x": 0,
+              "y": 0
+            }
+          },
+          "nearMissBucketIds": [],
+          "done": false
+        },
+        "fieldDomain": {
+          "domainSourcePx": {
+            "minX": 120.00000000000242,
+            "maxX": 1414.9999999999982,
+            "minY": 249.72811384258958,
+            "maxY": 1222.7983538935216
+          },
+          "importantPartsSourcePx": [
+            {
+              "instanceId": "ball",
+              "minX": 695.1673230886295,
+              "minY": 249.72811384258958,
+              "maxX": 726.6242297005999,
+              "maxY": 281.8583275310149
+            }
+          ],
+          "rule": "Actual geometry plus receiver/foreground alpha>=16 and ball alpha>0 at accepted initial drop; initialized once, fixed across ticks and view toggles"
+        },
+        "art": 1,
+        "geometry": 0,
+        "framing": "Игровое поле",
+        "paused": true
+      },
+      "beforeAfterEqual": true,
+      "imageDimensionsPx": [
+        1265,
+        712
+      ]
+    },
+    {
+      "name": "02-seed0-t0-whole",
+      "UTC": "2026-10-30T00:08:59.863Z",
+      "before": "02-seed0-t0-whole.before.ax.txt",
+      "image": "02-seed0-t0-whole.jpg",
+      "after": "02-seed0-t0-whole.after.ax.txt",
+      "exactUI": {
+        "seed": 0,
+        "state": {
+          "tick": 0,
+          "rngU32": 0,
+          "ball": {
+            "pos": {
+              "x": 33192.751665295094,
+              "y": 33184.49424667716
+            },
+            "vel": {
+              "x": 0,
+              "y": 0
+            }
+          },
+          "nearMissBucketIds": [],
+          "done": false
+        },
+        "fieldDomain": {
+          "domainSourcePx": {
+            "minX": 120.00000000000242,
+            "maxX": 1414.9999999999982,
+            "minY": 249.72811384258958,
+            "maxY": 1222.7983538935216
+          },
+          "importantPartsSourcePx": [
+            {
+              "instanceId": "ball",
+              "minX": 695.1673230886295,
+              "minY": 249.72811384258958,
+              "maxX": 726.6242297005999,
+              "maxY": 281.8583275310149
+            }
+          ],
+          "rule": "Actual geometry plus receiver/foreground alpha>=16 and ball alpha>0 at accepted initial drop; initialized once, fixed across ticks and view toggles"
+        },
+        "art": 1,
+        "geometry": 0,
+        "framing": "Вся сцена",
+        "paused": true
+      },
+      "beforeAfterEqual": true,
+      "imageDimensionsPx": [
+        1265,
+        712
+      ]
+    },
+    {
+      "name": "03-seed0-t0-field-return",
+      "UTC": "2026-10-30T00:09:10.055Z",
+      "before": "03-seed0-t0-field-return.before.ax.txt",
+      "image": "03-seed0-t0-field-return.jpg",
+      "after": "03-seed0-t0-field-return.after.ax.txt",
+      "exactUI": {
+        "seed": 0,
+        "state": {
+          "tick": 0,
+          "rngU32": 0,
+          "ball": {
+            "pos": {
+              "x": 33192.751665295094,
+              "y": 33184.49424667716
+            },
+            "vel": {
+              "x": 0,
+              "y": 0
+            }
+          },
+          "nearMissBucketIds": [],
+          "done": false
+        },
+        "fieldDomain": {
+          "domainSourcePx": {
+            "minX": 120.00000000000242,
+            "maxX": 1414.9999999999982,
+            "minY": 249.72811384258958,
+            "maxY": 1222.7983538935216
+          },
+          "importantPartsSourcePx": [
+            {
+              "instanceId": "ball",
+              "minX": 695.1673230886295,
+              "minY": 249.72811384258958,
+              "maxX": 726.6242297005999,
+              "maxY": 281.8583275310149
+            }
+          ],
+          "rule": "Actual geometry plus receiver/foreground alpha>=16 and ball alpha>0 at accepted initial drop; initialized once, fixed across ticks and view toggles"
+        },
+        "art": 1,
+        "geometry": 0,
+        "framing": "Игровое поле",
+        "paused": true
+      },
+      "beforeAfterEqual": true,
+      "imageDimensionsPx": [
+        1265,
+        712
+      ]
+    },
+    {
+      "name": "04-seed0-t100-field",
+      "UTC": "2026-10-30T00:09:10.780Z",
+      "before": "04-seed0-t100-field.before.ax.txt",
+      "image": "04-seed0-t100-field.jpg",
+      "after": "04-seed0-t100-field.after.ax.txt",
+      "exactUI": {
+        "seed": 0,
+        "state": {
+          "tick": 100,
+          "rngU32": 0,
+          "ball": {
+            "pos": {
+              "x": 33192.7516653,
+              "y": 33308.2192467
+            },
+            "vel": {
+              "x": 0,
+              "y": 490
+            }
+          },
+          "nearMissBucketIds": [],
+          "done": false
+        },
+        "fieldDomain": {
+          "domainSourcePx": {
+            "minX": 120.00000000000242,
+            "maxX": 1414.9999999999982,
+            "minY": 249.72811384258958,
+            "maxY": 1222.7983538935216
+          },
+          "importantPartsSourcePx": [
+            {
+              "instanceId": "ball",
+              "minX": 695.1673230886295,
+              "minY": 249.72811384258958,
+              "maxX": 726.6242297005999,
+              "maxY": 281.8583275310149
+            }
+          ],
+          "rule": "Actual geometry plus receiver/foreground alpha>=16 and ball alpha>0 at accepted initial drop; initialized once, fixed across ticks and view toggles"
+        },
+        "art": 1,
+        "geometry": 0,
+        "framing": "Игровое поле",
+        "paused": true
+      },
+      "beforeAfterEqual": true,
+      "imageDimensionsPx": [
+        1265,
+        712
+      ]
+    }
+  ],
+  "stateChecks": [
+    "Field0 == Whole0 == returned Field0, including ball position/velocity and RNG",
+    "w02 state0/state100 match corresponding retained w01 native UI states",
+    "Field domain constant across all four captures",
+    "All captures paused, state ticks0/0/0/100 and RNG0/0/0/0"
+  ],
+  "files": [
+    {
+      "path": "01-seed0-t0-field.after.ax.txt",
+      "bytes": 7308,
+      "sha256": "5efbec4a2191b7a2f56200df5214482d7d3afd72fc204d2275e05c6e9e50bf14"
+    },
+    {
+      "path": "01-seed0-t0-field.before.ax.txt",
+      "bytes": 7308,
+      "sha256": "5efbec4a2191b7a2f56200df5214482d7d3afd72fc204d2275e05c6e9e50bf14"
+    },
+    {
+      "path": "01-seed0-t0-field.jpg",
+      "bytes": 116971,
+      "sha256": "f5bead38141d3048baccd176659e03a384deb8274f7a642d70e8bb255afd169c"
+    },
+    {
+      "path": "02-seed0-t0-whole.after.ax.txt",
+      "bytes": 7302,
+      "sha256": "09e9016ec98fbf55cda4e25c6d8f1d826b62ad2ff16ef483118e0cd1b425a6f1"
+    },
+    {
+      "path": "02-seed0-t0-whole.before.ax.txt",
+      "bytes": 7302,
+      "sha256": "09e9016ec98fbf55cda4e25c6d8f1d826b62ad2ff16ef483118e0cd1b425a6f1"
+    },
+    {
+      "path": "02-seed0-t0-whole.jpg",
+      "bytes": 91610,
+      "sha256": "0cc7fc9569630e8a3c552825f0ed79384ff3d875ec9234c0169f1ba95160e157"
+    },
+    {
+      "path": "03-seed0-t0-field-return.after.ax.txt",
+      "bytes": 7308,
+      "sha256": "5efbec4a2191b7a2f56200df5214482d7d3afd72fc204d2275e05c6e9e50bf14"
+    },
+    {
+      "path": "03-seed0-t0-field-return.before.ax.txt",
+      "bytes": 7308,
+      "sha256": "5efbec4a2191b7a2f56200df5214482d7d3afd72fc204d2275e05c6e9e50bf14"
+    },
+    {
+      "path": "03-seed0-t0-field-return.jpg",
+      "bytes": 116971,
+      "sha256": "f5bead38141d3048baccd176659e03a384deb8274f7a642d70e8bb255afd169c"
+    },
+    {
+      "path": "04-seed0-t100-field.after.ax.txt",
+      "bytes": 7300,
+      "sha256": "2be2dc78859476aa40f20f4ee1780955c54459d8e547c22b5359e4967fc174f0"
+    },
+    {
+      "path": "04-seed0-t100-field.before.ax.txt",
+      "bytes": 7300,
+      "sha256": "2be2dc78859476aa40f20f4ee1780955c54459d8e547c22b5359e4967fc174f0"
+    },
+    {
+      "path": "04-seed0-t100-field.jpg",
+      "bytes": 117349,
+      "sha256": "af35e0f112a87be91e892cce0f09bdf5fc9c6ac01836151ca353a2cd6c486070"
+    },
+    {
+      "path": "browser-session.json",
+      "bytes": 327,
+      "sha256": "341c7d8d7bb221d8fbf4fe6daf23c6c6b5f03a44e4e6ae5f9d956f2e7d1a779c"
+    },
+    {
+      "path": "capture-events.jsonl",
+      "bytes": 748,
+      "sha256": "1dbec0890fdd2619cb040063b53e67dea18bc2dddb360fc3cf85b86b808ef34f"
+    },
+    {
+      "path": "FILE_INDEX.json",
+      "bytes": 4851,
+      "sha256": "1a8945190e064be5fedfaa80c30a1aa9f24db048d2bef407546c53246697cdcb"
+    },
+    {
+      "path": "identity-verification.json",
+      "bytes": 1690,
+      "sha256": "b12ae29945eaa25670ce76d01efe07e4f2fce6b4c33139106ef96515309892f9"
+    },
+    {
+      "path": "preview-index.json",
+      "bytes": 12125,
+      "sha256": "1ffd27a73c5f4be6bff6865c054e2764367eb46a13c96460d472ac38543ac29d"
+    },
+    {
+      "path": "staged-manifest.json",
+      "bytes": 10228,
+      "sha256": "bf468e44bf8bacbab8d810a1a86a57228515abc2c665397b45e8b2ea80313fe2"
+    },
+    {
+      "path": "start-guard.json",
+      "bytes": 840,
+      "sha256": "22e5b7f0688242fabf547d0519bd86d2087b1b9a1507c003f178e17c68eac035"
+    }
+  ],
+  "evidenceFileCount": 19,
+  "evidenceBytes": 532146,
+  "jpegCount": 4,
+  "oldW01EvidenceSha256": "eda3ef1a182bdd364c974c7c72ecc6e6a05ebe046ffda5571cc178387e20909b",
+  "limits": [
+    "Closure only W01-V01. No new throw, native oracle/export, contact or full art matrix.",
+    "No mini02/w03 assets inspected. All previous unverified artistic cases retained.",
+    "Own browser closed; producer server unchanged."
+  ]
+}
