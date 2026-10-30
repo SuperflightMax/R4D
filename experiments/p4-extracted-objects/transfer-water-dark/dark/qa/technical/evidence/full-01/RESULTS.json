@@ -1,0 +1,4032 @@
+{
+  "schema": "r4d.p4.technical-qa.dark-full-review.v1",
+  "date": "2026-10-30",
+  "disposition": "PARTIAL: native/profile/controls/actor placement PASS; original grouped side depth continuity P3 OPEN; Art not passed",
+  "candidate": "dark-full-original-p4-candidate-01",
+  "builderCommit": "ed62bae3f81d227494478c82b2279b5badcf715d",
+  "artifactSha256": "6dd25ecd75b5ade5fb67f8bb4d06dbddd2efc15676168b713ab951729a82eecf",
+  "payloadRootSha256": "281cd26408c36d6fb84e77093b808f0df2eb6115e1636ecac5ecb9bf6a49b00e",
+  "artworkRootSha256": "25708990254f20ec6681dec9c3c2c23ef74c0853937ff78d02a5ecb13fdbfcff",
+  "nativeExactCount": 94,
+  "suppliedOnlyCount": 6,
+  "records": [
+    {
+      "file": "00-load-normal.dom.json",
+      "seed": 0,
+      "tick": 0,
+      "eventCount": 2,
+      "reference": "own cached native seed0",
+      "state": "EXACT",
+      "events": "EXACT",
+      "rawSha256": "e7955ca88ff8ba6617630e33124a012c943531842a0205e332363f2d171112dc",
+      "stateTextSha256": "df6908cc5ed0b038862cf3ae1ba07bb8e0a362dc4e9045b9e831de1778d6e93b",
+      "eventsTextSha256": "cfd35ee0341afc526e1c4bd2a4171303eb2f1b766d7ce6f6eb0d1531233e1deb"
+    },
+    {
+      "file": "01-parts-off-normal.dom.json",
+      "seed": 0,
+      "tick": 0,
+      "eventCount": 2,
+      "reference": "own cached native seed0",
+      "state": "EXACT",
+      "events": "EXACT",
+      "rawSha256": "4955b23f33562b2cbffa84005bdf80a2b5fbf3338b617d9885d57f62b4f4711a",
+      "stateTextSha256": "df6908cc5ed0b038862cf3ae1ba07bb8e0a362dc4e9045b9e831de1778d6e93b",
+      "eventsTextSha256": "cfd35ee0341afc526e1c4bd2a4171303eb2f1b766d7ce6f6eb0d1531233e1deb"
+    },
+    {
+      "file": "02-shadow-drop-zoom.dom.json",
+      "seed": 0,
+      "tick": 0,
+      "eventCount": 2,
+      "reference": "own cached native seed0",
+      "state": "EXACT",
+      "events": "EXACT",
+      "rawSha256": "393488af7e4e46c207f8a0a7217764e232b32e68c4e0e98eb145d9907e12ad33",
+      "stateTextSha256": "df6908cc5ed0b038862cf3ae1ba07bb8e0a362dc4e9045b9e831de1778d6e93b",
+      "eventsTextSha256": "cfd35ee0341afc526e1c4bd2a4171303eb2f1b766d7ce6f6eb0d1531233e1deb"
+    },
+    {
+      "file": "03-shadow-floor-300-normal.dom.json",
+      "seed": 0,
+      "tick": 300,
+      "eventCount": 3,
+      "reference": "own cached native seed0",
+      "state": "EXACT",
+      "events": "EXACT",
+      "rawSha256": "221ea9efa0f25b1b921039d973097019956beca2819424316b24664ec2f16310",
+      "stateTextSha256": "7cd471c681cd3d49090d2aefc18ed5020528d9c76976409c0087a3ebf4f551b0",
+      "eventsTextSha256": "35cf87fff1e319b4011f9421bdfc7f5d2d8d79799c2f36afcbdffa442f7f0174"
+    },
+    {
+      "file": "04-shadow-floor-300-zoom.dom.json",
+      "seed": 0,
+      "tick": 300,
+      "eventCount": 3,
+      "reference": "own cached native seed0",
+      "state": "EXACT",
+      "events": "EXACT",
+      "rawSha256": "2ff2e326ace0de65dd9f836642d12e3b67caeaa49fb44f352ce38cf9197524eb",
+      "stateTextSha256": "7cd471c681cd3d49090d2aefc18ed5020528d9c76976409c0087a3ebf4f551b0",
+      "eventsTextSha256": "35cf87fff1e319b4011f9421bdfc7f5d2d8d79799c2f36afcbdffa442f7f0174"
+    },
+    {
+      "file": "05-boundary-459.dom.json",
+      "seed": 0,
+      "tick": 459,
+      "eventCount": 4,
+      "reference": "own cached native seed0",
+      "state": "EXACT",
+      "events": "EXACT",
+      "rawSha256": "f6a385acd3d87ac4ae049b4c370a628f3089dcf4323fb503563072b9aab97a43",
+      "stateTextSha256": "b7f0599867cf609f35577c986d74f51e3f3ba36f23760c65802df1b72803b1ce",
+      "eventsTextSha256": "c27c1d7e877959f8c628cba176d93b5aac2b978bd0c239af11c3438be574527c"
+    },
+    {
+      "file": "06-boundary-460.dom.json",
+      "seed": 0,
+      "tick": 460,
+      "eventCount": 4,
+      "reference": "own cached native seed0",
+      "state": "EXACT",
+      "events": "EXACT",
+      "rawSha256": "63bc532bc3e89a69f18a2ae91f963e86bbfd86fde407663003edc9dbd4cb223d",
+      "stateTextSha256": "ad464b0701f084fa2b2bafdeceb21a2df9a7d4251dbe59cba3c86f27195b02bb",
+      "eventsTextSha256": "c27c1d7e877959f8c628cba176d93b5aac2b978bd0c239af11c3438be574527c"
+    },
+    {
+      "file": "06-boundary-461.dom.json",
+      "seed": 0,
+      "tick": 461,
+      "eventCount": 5,
+      "reference": "own cached native seed0",
+      "state": "EXACT",
+      "events": "EXACT",
+      "rawSha256": "7200abd7ad1baca472292e2506f26a61edbf0471206f574f4486c32700559de9",
+      "stateTextSha256": "80fcfb9dad6f1b0610b134bed82f8fc8c63ed80b549918a27828363b891e50ee",
+      "eventsTextSha256": "8832483bdcc7b66ddbedff9e63a667c63a389633ee9d3cf968647f2a553535f0"
+    },
+    {
+      "file": "06-boundary-462.dom.json",
+      "seed": 0,
+      "tick": 462,
+      "eventCount": 5,
+      "reference": "own cached native seed0",
+      "state": "EXACT",
+      "events": "EXACT",
+      "rawSha256": "73c3ed17fe26e0b47f51b8f20c9cbc6e3f79150d41b9b2acb45336e8b380f215",
+      "stateTextSha256": "8b9e655458e8e14a4ba7979a71e635a326717e1adbab8296678c1f2dc27f0a12",
+      "eventsTextSha256": "8832483bdcc7b66ddbedff9e63a667c63a389633ee9d3cf968647f2a553535f0"
+    },
+    {
+      "file": "07-side-839.dom.json",
+      "seed": 0,
+      "tick": 839,
+      "eventCount": 7,
+      "reference": "own cached native seed0",
+      "state": "EXACT",
+      "events": "EXACT",
+      "rawSha256": "5604efc8790c5277070c53ba846bc27c8a5eac45d58f3097ed680421cf1c0c29",
+      "stateTextSha256": "cabc5ef7f46c8d9c7bbcdd0ef7effb5ccdbd6971130ea0350a0a3463b0105814",
+      "eventsTextSha256": "9521f70ff9adc43108a7cd0c012cb762646bd584efa8ef42679525d2903a9e1c"
+    },
+    {
+      "file": "08-side-840.dom.json",
+      "seed": 0,
+      "tick": 840,
+      "eventCount": 7,
+      "reference": "own cached native seed0",
+      "state": "EXACT",
+      "events": "EXACT",
+      "rawSha256": "a954d749c196efcdda02a4e9b19b62140c43e3536395ab2bc96bf059ec6e5f9a",
+      "stateTextSha256": "a34e0bd1eb618d297733b9634e902bdb74761a232e10b1596bbbe93512c426ea",
+      "eventsTextSha256": "9521f70ff9adc43108a7cd0c012cb762646bd584efa8ef42679525d2903a9e1c"
+    },
+    {
+      "file": "08-side-841.dom.json",
+      "seed": 0,
+      "tick": 841,
+      "eventCount": 8,
+      "reference": "own cached native seed0",
+      "state": "EXACT",
+      "events": "EXACT",
+      "rawSha256": "a8793a6fca6a60d73afca8fca6be632a2cfa10d46799ed409335fe205bb3d385",
+      "stateTextSha256": "fbd9d1fc1ee8adb106c423ae67d887ee027a1383d3edcbae2b080237d7f5d040",
+      "eventsTextSha256": "eb7cdde2200a597f83ebd86468bb21dd2f1221d82fe8a8483ec4bd02c0d9b48b"
+    },
+    {
+      "file": "08-side-842.dom.json",
+      "seed": 0,
+      "tick": 842,
+      "eventCount": 8,
+      "reference": "own cached native seed0",
+      "state": "EXACT",
+      "events": "EXACT",
+      "rawSha256": "717f31461ec9845cacafbcdafabb48c2f87cf5a76db89aa640749cd89ab2fe4b",
+      "stateTextSha256": "7a186f778b36355715b4a3128600003765e3042cc2f72a938f5806e59ba59cd2",
+      "eventsTextSha256": "eb7cdde2200a597f83ebd86468bb21dd2f1221d82fe8a8483ec4bd02c0d9b48b"
+    },
+    {
+      "file": "09-side-841-zoom.dom.json",
+      "seed": 0,
+      "tick": 841,
+      "eventCount": 8,
+      "reference": "own cached native seed0",
+      "state": "EXACT",
+      "events": "EXACT",
+      "rawSha256": "82aea3b268b857652e45384976cb1e8e4329e192f2e8feea815e84e158c51780",
+      "stateTextSha256": "fbd9d1fc1ee8adb106c423ae67d887ee027a1383d3edcbae2b080237d7f5d040",
+      "eventsTextSha256": "eb7cdde2200a597f83ebd86468bb21dd2f1221d82fe8a8483ec4bd02c0d9b48b"
+    },
+    {
+      "file": "10-side-842-zoom.dom.json",
+      "seed": 0,
+      "tick": 842,
+      "eventCount": 8,
+      "reference": "own cached native seed0",
+      "state": "EXACT",
+      "events": "EXACT",
+      "rawSha256": "aab43b755bb6849e89c42e425200379565fea6f3535a07036453bb418a7f552f",
+      "stateTextSha256": "7a186f778b36355715b4a3128600003765e3042cc2f72a938f5806e59ba59cd2",
+      "eventsTextSha256": "eb7cdde2200a597f83ebd86468bb21dd2f1221d82fe8a8483ec4bd02c0d9b48b"
+    },
+    {
+      "file": "11-capture0-885.dom.json",
+      "seed": 0,
+      "tick": 885,
+      "eventCount": 9,
+      "reference": "own cached native seed0",
+      "state": "EXACT",
+      "events": "EXACT",
+      "rawSha256": "dd995ab24315766882a437e44d2e076fbf2ac1e1ffdaae6f3efaeb9cacbe9c1b",
+      "stateTextSha256": "cf96be85bdb962d7d93888939bb962e2c6f93c088440ec8d0116c2d665705826",
+      "eventsTextSha256": "4b7293c6eacc6a976afa3907fe5d83e495126fb46b9636907cc473ca6d3471dd"
+    },
+    {
+      "file": "12-capture0-886.dom.json",
+      "seed": 0,
+      "tick": 886,
+      "eventCount": 9,
+      "reference": "own cached native seed0",
+      "state": "EXACT",
+      "events": "EXACT",
+      "rawSha256": "96765f6216d2f8e89268a3fd690cee196479b6058651e915abc90f5ab36d5507",
+      "stateTextSha256": "38852f96b7631a4e389c761b3780ff8b9e872a1f10a1ec23e728ba41e22fde7a",
+      "eventsTextSha256": "4b7293c6eacc6a976afa3907fe5d83e495126fb46b9636907cc473ca6d3471dd"
+    },
+    {
+      "file": "12-capture0-887.dom.json",
+      "seed": 0,
+      "tick": 887,
+      "eventCount": 9,
+      "reference": "own cached native seed0",
+      "state": "EXACT",
+      "events": "EXACT",
+      "rawSha256": "92f3eadc1a53f81646701cf64cf8fddba892e2e7c297522d832d8eb679a5f6ab",
+      "stateTextSha256": "dd55fa1a49903948941ddc368ccc8a0bdcaf021dbcdba21c7aa305eaf51127a2",
+      "eventsTextSha256": "4b7293c6eacc6a976afa3907fe5d83e495126fb46b9636907cc473ca6d3471dd"
+    },
+    {
+      "file": "12-capture0-888.dom.json",
+      "seed": 0,
+      "tick": 888,
+      "eventCount": 12,
+      "reference": "own cached native seed0",
+      "state": "EXACT",
+      "events": "EXACT",
+      "rawSha256": "8f421f6a8edd593c42b67806dbb8c4ccfff6168b8a8a8fb3feece9eff84c509a",
+      "stateTextSha256": "c0e2d0e648d3f5d2799171648f09625da1ef8950e56b39d587817a09bfff9457",
+      "eventsTextSha256": "2ea7dacf5ef2283c249b98f83153cd3a13f73966ed19fab37bbe6e060022e890"
+    },
+    {
+      "file": "13-capture0-done-step.dom.json",
+      "seed": 0,
+      "tick": 888,
+      "eventCount": 12,
+      "reference": "own cached native seed0",
+      "state": "EXACT",
+      "events": "EXACT",
+      "rawSha256": "8f421f6a8edd593c42b67806dbb8c4ccfff6168b8a8a8fb3feece9eff84c509a",
+      "stateTextSha256": "c0e2d0e648d3f5d2799171648f09625da1ef8950e56b39d587817a09bfff9457",
+      "eventsTextSha256": "2ea7dacf5ef2283c249b98f83153cd3a13f73966ed19fab37bbe6e060022e890"
+    },
+    {
+      "file": "14-capture0-888-zoom.dom.json",
+      "seed": 0,
+      "tick": 888,
+      "eventCount": 12,
+      "reference": "own cached native seed0",
+      "state": "EXACT",
+      "events": "EXACT",
+      "rawSha256": "d548c52cbffd0fbbcbc8ecf9d02875ae87d5cfb3576339b40dbae5d385e24089",
+      "stateTextSha256": "c0e2d0e648d3f5d2799171648f09625da1ef8950e56b39d587817a09bfff9457",
+      "eventsTextSha256": "2ea7dacf5ef2283c249b98f83153cd3a13f73966ed19fab37bbe6e060022e890"
+    },
+    {
+      "file": "15-corner-366.dom.json",
+      "seed": 2,
+      "tick": 366,
+      "eventCount": 3,
+      "reference": "own cached native seed2",
+      "state": "EXACT",
+      "events": "EXACT",
+      "rawSha256": "2f9764d0e869acd38c615460a5adc243bee79aa7272da0a9d22027753e4c2b01",
+      "stateTextSha256": "b1a440999e2a20cc0f3b7ed4bb20d18b75c2a3a44e90ca0fcc7a586f1a17f343",
+      "eventsTextSha256": "35cf87fff1e319b4011f9421bdfc7f5d2d8d79799c2f36afcbdffa442f7f0174"
+    },
+    {
+      "file": "16-corner-367.dom.json",
+      "seed": 2,
+      "tick": 367,
+      "eventCount": 3,
+      "reference": "own cached native seed2",
+      "state": "EXACT",
+      "events": "EXACT",
+      "rawSha256": "bad4298697ee95d01809fc6d62354d6c4cac1d7f932ce277ae9838b1c6da36a4",
+      "stateTextSha256": "7f2794ff4cc56a5e1f8711517ddd680a0a7c63689abb9b68b209ce4c9ec34556",
+      "eventsTextSha256": "35cf87fff1e319b4011f9421bdfc7f5d2d8d79799c2f36afcbdffa442f7f0174"
+    },
+    {
+      "file": "16-corner-368.dom.json",
+      "seed": 2,
+      "tick": 368,
+      "eventCount": 4,
+      "reference": "own cached native seed2",
+      "state": "EXACT",
+      "events": "EXACT",
+      "rawSha256": "b4f9d523944a1896478cf5d96b5299c37fd3ec85ca4301fe79a3442415e34643",
+      "stateTextSha256": "b68d3b6e589f7ac9cd49056062606c2f052e76270b58fffc795b16dbb4ce2358",
+      "eventsTextSha256": "61ca5150f0b8326e85c68c0a21269d43b001f0267745d2fa15e2c8bf4f98f3af"
+    },
+    {
+      "file": "16-corner-369.dom.json",
+      "seed": 2,
+      "tick": 369,
+      "eventCount": 4,
+      "reference": "own cached native seed2",
+      "state": "EXACT",
+      "events": "EXACT",
+      "rawSha256": "3a32eebfa4dc02119d6bb6e315ff55956efdf49fbf44db1c8b89ec2d330b52c1",
+      "stateTextSha256": "f6291b78c4644da2e8c473b739e49cf9760ebe32f74153762c0b54b2dcdac9b4",
+      "eventsTextSha256": "61ca5150f0b8326e85c68c0a21269d43b001f0267745d2fa15e2c8bf4f98f3af"
+    },
+    {
+      "file": "17-corner-368-zoom.dom.json",
+      "seed": 2,
+      "tick": 368,
+      "eventCount": 4,
+      "reference": "own cached native seed2",
+      "state": "EXACT",
+      "events": "EXACT",
+      "rawSha256": "db2e4c01cbd15908a5e8b84edaa4e1167a88be508ce8aeef5be6e76d78989962",
+      "stateTextSha256": "b68d3b6e589f7ac9cd49056062606c2f052e76270b58fffc795b16dbb4ce2358",
+      "eventsTextSha256": "61ca5150f0b8326e85c68c0a21269d43b001f0267745d2fa15e2c8bf4f98f3af"
+    },
+    {
+      "file": "18-front-971.dom.json",
+      "seed": 2,
+      "tick": 971,
+      "eventCount": 10,
+      "reference": "own cached native seed2",
+      "state": "EXACT",
+      "events": "EXACT",
+      "rawSha256": "cc1ebb00ca51485e0f55c97f366a6a940d0e4000329164c4b17910ea86a2780b",
+      "stateTextSha256": "32755fb96cb68f704b8976463c734dbcc8499dad896711c5b2b0a5d2327ff990",
+      "eventsTextSha256": "675afc564fa087cf5a5017d751647fee073819060414ad2172207428da11489d"
+    },
+    {
+      "file": "19-front-972.dom.json",
+      "seed": 2,
+      "tick": 972,
+      "eventCount": 10,
+      "reference": "own cached native seed2",
+      "state": "EXACT",
+      "events": "EXACT",
+      "rawSha256": "b182a0eb9dc82c48f7838d41857586f4d4098ccac980f712ac1a553b35c7c288",
+      "stateTextSha256": "7e39ed501452671d51ef8ee296540c4fdf904b1e96710df25e1130f719a4138b",
+      "eventsTextSha256": "675afc564fa087cf5a5017d751647fee073819060414ad2172207428da11489d"
+    },
+    {
+      "file": "19-front-973.dom.json",
+      "seed": 2,
+      "tick": 973,
+      "eventCount": 11,
+      "reference": "own cached native seed2",
+      "state": "EXACT",
+      "events": "EXACT",
+      "rawSha256": "399c486970f1c544cdf59a8f441f97aed4fe3a91237e89e55ea8a4f7630dacf3",
+      "stateTextSha256": "6460bf13f9a626318ad3bc7d37e2c4fa993e0aebaa537140db5e80a1af930401",
+      "eventsTextSha256": "3f73dfc0eea21051f831710578361d4d807049ac6847901394e3351e01c46b98"
+    },
+    {
+      "file": "19-front-974.dom.json",
+      "seed": 2,
+      "tick": 974,
+      "eventCount": 11,
+      "reference": "own cached native seed2",
+      "state": "EXACT",
+      "events": "EXACT",
+      "rawSha256": "9cf62241d474c7a365bb649095e4edf6d84f5786c685a89aa6339b92edbed80e",
+      "stateTextSha256": "de72a92b7fa9f2c4a46601cdbb4180f1a4c25ae3d6321b024f7269a97b4dc824",
+      "eventsTextSha256": "3f73dfc0eea21051f831710578361d4d807049ac6847901394e3351e01c46b98"
+    },
+    {
+      "file": "20-front-973-zoom.dom.json",
+      "seed": 2,
+      "tick": 973,
+      "eventCount": 11,
+      "reference": "own cached native seed2",
+      "state": "EXACT",
+      "events": "EXACT",
+      "rawSha256": "768268b7d1d13c1c6df064dae80c273d61f612d77f69eea2551a0ee491d09602",
+      "stateTextSha256": "6460bf13f9a626318ad3bc7d37e2c4fa993e0aebaa537140db5e80a1af930401",
+      "eventsTextSha256": "3f73dfc0eea21051f831710578361d4d807049ac6847901394e3351e01c46b98"
+    },
+    {
+      "file": "21-draft-1-blur.dom.json",
+      "seed": 2,
+      "tick": 213,
+      "eventCount": 3,
+      "reference": "own cached native seed2",
+      "state": "EXACT",
+      "events": "EXACT",
+      "rawSha256": "51b7a4489032f273897f7f27aa0efe48498f615d50194f7ccb4ab773996d325a",
+      "stateTextSha256": "25fc5382e524437bbcf7290a3358cea359ec47e2048465c8297f0a18853aec98",
+      "eventsTextSha256": "35cf87fff1e319b4011f9421bdfc7f5d2d8d79799c2f36afcbdffa442f7f0174"
+    },
+    {
+      "file": "21-draft-1-digit-3.dom.json",
+      "seed": 2,
+      "tick": 133,
+      "eventCount": 3,
+      "reference": "own cached native seed2",
+      "state": "EXACT",
+      "events": "EXACT",
+      "rawSha256": "37fb40dfce9adcc8a261d096b9ea48e36fce92d50687505dcdb572b0cfc40451",
+      "stateTextSha256": "0035839fd402dee64081c856fe8f10bce1d7ea43ee0333039af1aeaed702f71e",
+      "eventsTextSha256": "35cf87fff1e319b4011f9421bdfc7f5d2d8d79799c2f36afcbdffa442f7f0174"
+    },
+    {
+      "file": "21-draft-1-digit-7.dom.json",
+      "seed": 2,
+      "tick": 109,
+      "eventCount": 3,
+      "reference": "own cached native seed2",
+      "state": "EXACT",
+      "events": "EXACT",
+      "rawSha256": "c2172d19576c94ecf0b9aedcdb511d396f7a601d5f35235e24c1a2ee7e53347e",
+      "stateTextSha256": "c000f42d0d2002ed5cb7283d8db335c985d20112a94e89d7318f868e725700bd",
+      "eventsTextSha256": "35cf87fff1e319b4011f9421bdfc7f5d2d8d79799c2f36afcbdffa442f7f0174"
+    },
+    {
+      "file": "21-draft-1-digit-9.dom.json",
+      "seed": 2,
+      "tick": 86,
+      "eventCount": 2,
+      "reference": "own cached native seed2",
+      "state": "EXACT",
+      "events": "EXACT",
+      "rawSha256": "ddd9a4c724b456956559b1d2a61538f5ab49321e9c5b960117fe44cb55cccbb5",
+      "stateTextSha256": "db4048b7268d4946fd4bf40f9e0d0016cebf094d9e37b0ebf78a5a40980b418d",
+      "eventsTextSha256": "cfd35ee0341afc526e1c4bd2a4171303eb2f1b766d7ce6f6eb0d1531233e1deb"
+    },
+    {
+      "file": "21-draft-1-go.dom.json",
+      "seed": 2,
+      "tick": 973,
+      "eventCount": 11,
+      "reference": "own cached native seed2",
+      "state": "EXACT",
+      "events": "EXACT",
+      "rawSha256": "9ddec4bdeddcf4eb410c552ef61c9a9cb5457f9e5328c6bd2dfa105f0cdd03a5",
+      "stateTextSha256": "6460bf13f9a626318ad3bc7d37e2c4fa993e0aebaa537140db5e80a1af930401",
+      "eventsTextSha256": "3f73dfc0eea21051f831710578361d4d807049ac6847901394e3351e01c46b98"
+    },
+    {
+      "file": "21-draft-1-playing.dom.json",
+      "seed": 2,
+      "tick": 56,
+      "eventCount": 2,
+      "reference": "own cached native seed2",
+      "state": "EXACT",
+      "events": "EXACT",
+      "rawSha256": "657479d874986b6aa9a328762925ba4c8ca96a8af723641d144b0698bcae1b29",
+      "stateTextSha256": "7abf96cb040c72407964c303c64ecaee32bdb46f9675256ccc64c184601f7b85",
+      "eventsTextSha256": "cfd35ee0341afc526e1c4bd2a4171303eb2f1b766d7ce6f6eb0d1531233e1deb"
+    },
+    {
+      "file": "21-draft-2-blur.dom.json",
+      "seed": 2,
+      "tick": 216,
+      "eventCount": 3,
+      "reference": "own cached native seed2",
+      "state": "EXACT",
+      "events": "EXACT",
+      "rawSha256": "4338b612ab3b0bf5a7fe5e170aaef54fd6ea132e879e148fac64d34f8dc7601c",
+      "stateTextSha256": "7881267a363c2a245b724077faaf0afd49a152beebc4da50ba2a367368009cbf",
+      "eventsTextSha256": "35cf87fff1e319b4011f9421bdfc7f5d2d8d79799c2f36afcbdffa442f7f0174"
+    },
+    {
+      "file": "21-draft-2-digit-3.dom.json",
+      "seed": 2,
+      "tick": 136,
+      "eventCount": 3,
+      "reference": "own cached native seed2",
+      "state": "EXACT",
+      "events": "EXACT",
+      "rawSha256": "636516bc4afe00b95ef71102f34d8f6e1aa63c59755247991012fc28cbd6512f",
+      "stateTextSha256": "d583eb3e5e1113035a532c02b81b1c4a85ec0346d98451220f71f51d2c360f99",
+      "eventsTextSha256": "35cf87fff1e319b4011f9421bdfc7f5d2d8d79799c2f36afcbdffa442f7f0174"
+    },
+    {
+      "file": "21-draft-2-digit-7.dom.json",
+      "seed": 2,
+      "tick": 113,
+      "eventCount": 3,
+      "reference": "own cached native seed2",
+      "state": "EXACT",
+      "events": "EXACT",
+      "rawSha256": "3a4b27957f5471af6932511142c41efef82a43dab3d6a42949ff175f98fc3fce",
+      "stateTextSha256": "b319329e15424a8cee5107a16bf6237c27870538f1a695581edd5d9c332a352d",
+      "eventsTextSha256": "35cf87fff1e319b4011f9421bdfc7f5d2d8d79799c2f36afcbdffa442f7f0174"
+    },
+    {
+      "file": "21-draft-2-digit-9.dom.json",
+      "seed": 2,
+      "tick": 83,
+      "eventCount": 2,
+      "reference": "own cached native seed2",
+      "state": "EXACT",
+      "events": "EXACT",
+      "rawSha256": "35b40859a05708960a9de9c115f99a23d05851fc884772aa13d0168a79af98b9",
+      "stateTextSha256": "259d97370844abdaeba4a9bb703fffa5fd1b417f3714e535c78adad3a978dd5e",
+      "eventsTextSha256": "cfd35ee0341afc526e1c4bd2a4171303eb2f1b766d7ce6f6eb0d1531233e1deb"
+    },
+    {
+      "file": "21-draft-2-go.dom.json",
+      "seed": 2,
+      "tick": 973,
+      "eventCount": 11,
+      "reference": "own cached native seed2",
+      "state": "EXACT",
+      "events": "EXACT",
+      "rawSha256": "768268b7d1d13c1c6df064dae80c273d61f612d77f69eea2551a0ee491d09602",
+      "stateTextSha256": "6460bf13f9a626318ad3bc7d37e2c4fa993e0aebaa537140db5e80a1af930401",
+      "eventsTextSha256": "3f73dfc0eea21051f831710578361d4d807049ac6847901394e3351e01c46b98"
+    },
+    {
+      "file": "21-draft-2-playing.dom.json",
+      "seed": 2,
+      "tick": 56,
+      "eventCount": 2,
+      "reference": "own cached native seed2",
+      "state": "EXACT",
+      "events": "EXACT",
+      "rawSha256": "ca5d873a77825149b0351e493ecdfa4ef5f9ab82f9c503e5d15cdad232475a6d",
+      "stateTextSha256": "7abf96cb040c72407964c303c64ecaee32bdb46f9675256ccc64c184601f7b85",
+      "eventsTextSha256": "cfd35ee0341afc526e1c4bd2a4171303eb2f1b766d7ce6f6eb0d1531233e1deb"
+    },
+    {
+      "file": "21-draft-3-blur.dom.json",
+      "seed": 2,
+      "tick": 216,
+      "eventCount": 3,
+      "reference": "own cached native seed2",
+      "state": "EXACT",
+      "events": "EXACT",
+      "rawSha256": "9e271d5eff1a472400f78ac1e5aa71f359a6b7a0732b09a93cf5a96386632428",
+      "stateTextSha256": "7881267a363c2a245b724077faaf0afd49a152beebc4da50ba2a367368009cbf",
+      "eventsTextSha256": "35cf87fff1e319b4011f9421bdfc7f5d2d8d79799c2f36afcbdffa442f7f0174"
+    },
+    {
+      "file": "21-draft-3-digit-3.dom.json",
+      "seed": 2,
+      "tick": 136,
+      "eventCount": 3,
+      "reference": "own cached native seed2",
+      "state": "EXACT",
+      "events": "EXACT",
+      "rawSha256": "9bf39a3a4db3b2bcdab6c7c0a1f04918c6f3efa9be6de11ec0d5bf7cfeb98c5c",
+      "stateTextSha256": "d583eb3e5e1113035a532c02b81b1c4a85ec0346d98451220f71f51d2c360f99",
+      "eventsTextSha256": "35cf87fff1e319b4011f9421bdfc7f5d2d8d79799c2f36afcbdffa442f7f0174"
+    },
+    {
+      "file": "21-draft-3-digit-7.dom.json",
+      "seed": 2,
+      "tick": 110,
+      "eventCount": 3,
+      "reference": "own cached native seed2",
+      "state": "EXACT",
+      "events": "EXACT",
+      "rawSha256": "1ec7fd7e501744d7650f472a1c180d44aa1b9d101cd37163f2a4fed000e1792a",
+      "stateTextSha256": "c57280819836d0d0ba0b89a172ed7112360b0ba3d46a5ff6992ac20cf2a82b39",
+      "eventsTextSha256": "35cf87fff1e319b4011f9421bdfc7f5d2d8d79799c2f36afcbdffa442f7f0174"
+    },
+    {
+      "file": "21-draft-3-digit-9.dom.json",
+      "seed": 2,
+      "tick": 86,
+      "eventCount": 2,
+      "reference": "own cached native seed2",
+      "state": "EXACT",
+      "events": "EXACT",
+      "rawSha256": "ddd9a4c724b456956559b1d2a61538f5ab49321e9c5b960117fe44cb55cccbb5",
+      "stateTextSha256": "db4048b7268d4946fd4bf40f9e0d0016cebf094d9e37b0ebf78a5a40980b418d",
+      "eventsTextSha256": "cfd35ee0341afc526e1c4bd2a4171303eb2f1b766d7ce6f6eb0d1531233e1deb"
+    },
+    {
+      "file": "21-draft-3-go.dom.json",
+      "seed": 2,
+      "tick": 973,
+      "eventCount": 11,
+      "reference": "own cached native seed2",
+      "state": "EXACT",
+      "events": "EXACT",
+      "rawSha256": "9ddec4bdeddcf4eb410c552ef61c9a9cb5457f9e5328c6bd2dfa105f0cdd03a5",
+      "stateTextSha256": "6460bf13f9a626318ad3bc7d37e2c4fa993e0aebaa537140db5e80a1af930401",
+      "eventsTextSha256": "3f73dfc0eea21051f831710578361d4d807049ac6847901394e3351e01c46b98"
+    },
+    {
+      "file": "21-draft-3-playing.dom.json",
+      "seed": 2,
+      "tick": 56,
+      "eventCount": 2,
+      "reference": "own cached native seed2",
+      "state": "EXACT",
+      "events": "EXACT",
+      "rawSha256": "657479d874986b6aa9a328762925ba4c8ca96a8af723641d144b0698bcae1b29",
+      "stateTextSha256": "7abf96cb040c72407964c303c64ecaee32bdb46f9675256ccc64c184601f7b85",
+      "eventsTextSha256": "cfd35ee0341afc526e1c4bd2a4171303eb2f1b766d7ce6f6eb0d1531233e1deb"
+    },
+    {
+      "file": "22-rim01-before-1743.dom.json",
+      "seed": 2,
+      "tick": 1743,
+      "eventCount": 13,
+      "reference": "own cached native seed2",
+      "state": "EXACT",
+      "events": "EXACT",
+      "rawSha256": "2e39e330bdf67c94a7eb3c67c4d7d40abeb534ab62bc97c4562e5660a5a94fb1",
+      "stateTextSha256": "afd8ba2ad480f7c8bad3193818f48d2eb519f0d3446a56377f043ea35cc93c02",
+      "eventsTextSha256": "202e149e9e702dfe854106412d51cab070aa9210eb2bb59d0bae885256bd0bf6"
+    },
+    {
+      "file": "23-rim01-1744.dom.json",
+      "seed": 2,
+      "tick": 1744,
+      "eventCount": 13,
+      "reference": "own cached native seed2",
+      "state": "EXACT",
+      "events": "EXACT",
+      "rawSha256": "9a8addd398e6c2b4057555dffb8f97f49d5ea8c4304838df70d1ca1a14c48819",
+      "stateTextSha256": "a2db8aa4ffe086770673a1d2c8ec8ebd17c1e44ca22ccf23cba587355e022380",
+      "eventsTextSha256": "202e149e9e702dfe854106412d51cab070aa9210eb2bb59d0bae885256bd0bf6"
+    },
+    {
+      "file": "23-rim01-1745.dom.json",
+      "seed": 2,
+      "tick": 1745,
+      "eventCount": 13,
+      "reference": "own cached native seed2",
+      "state": "EXACT",
+      "events": "EXACT",
+      "rawSha256": "e22fee343d9432bb78fb970fd1b212c016e8041bf927ed7919ec1d1b41e46f9c",
+      "stateTextSha256": "facfb738017f566877fc5c1b8582e601bbac1afbbbcfc17ca7b307b6f5b2ea2b",
+      "eventsTextSha256": "202e149e9e702dfe854106412d51cab070aa9210eb2bb59d0bae885256bd0bf6"
+    },
+    {
+      "file": "23-rim01-1746.dom.json",
+      "seed": 2,
+      "tick": 1746,
+      "eventCount": 13,
+      "reference": "own cached native seed2",
+      "state": "EXACT",
+      "events": "EXACT",
+      "rawSha256": "20f3c2442ab96192cb9b0dd5d62445e08b0fbb81eb342981a6473cd0544a4221",
+      "stateTextSha256": "7ebc09732324b7dc7c59938425981dd2cc2759c7190b7449b43038c70daa333d",
+      "eventsTextSha256": "202e149e9e702dfe854106412d51cab070aa9210eb2bb59d0bae885256bd0bf6"
+    },
+    {
+      "file": "23-rim01-1747.dom.json",
+      "seed": 2,
+      "tick": 1747,
+      "eventCount": 13,
+      "reference": "own cached native seed2",
+      "state": "EXACT",
+      "events": "EXACT",
+      "rawSha256": "dd6262b230528db5e4d448718f1cb3d19ed7b6d6a3cc5e21b1e8bea10cbc1571",
+      "stateTextSha256": "8c75e398a836bf76e2dde4ed5922d2b0238144c4a0592b28a9f0088474bed970",
+      "eventsTextSha256": "202e149e9e702dfe854106412d51cab070aa9210eb2bb59d0bae885256bd0bf6"
+    },
+    {
+      "file": "23-rim01-1748.dom.json",
+      "seed": 2,
+      "tick": 1748,
+      "eventCount": 13,
+      "reference": "own cached native seed2",
+      "state": "EXACT",
+      "events": "EXACT",
+      "rawSha256": "f048060ef9dd5f015ea94ee294c299bd07feeabff9bfd65352b3b23cbe0d0e73",
+      "stateTextSha256": "112f5ca8014419dd468c88852c0513a3a1c4f849111766ae58af74b6e9634d9c",
+      "eventsTextSha256": "202e149e9e702dfe854106412d51cab070aa9210eb2bb59d0bae885256bd0bf6"
+    },
+    {
+      "file": "23-rim01-1749.dom.json",
+      "seed": 2,
+      "tick": 1749,
+      "eventCount": 13,
+      "reference": "own cached native seed2",
+      "state": "EXACT",
+      "events": "EXACT",
+      "rawSha256": "cd5a96170c8716602838a2f406be855aa7c49d163c69baff3889ff7a38f47697",
+      "stateTextSha256": "4587632b896316ed9a06551ff24251a22e0febd8b0f8d050839e3e6f7c297546",
+      "eventsTextSha256": "202e149e9e702dfe854106412d51cab070aa9210eb2bb59d0bae885256bd0bf6"
+    },
+    {
+      "file": "23-rim01-1750.dom.json",
+      "seed": 2,
+      "tick": 1750,
+      "eventCount": 13,
+      "reference": "own cached native seed2",
+      "state": "EXACT",
+      "events": "EXACT",
+      "rawSha256": "a66bfad70b200c9dc4567da9a7f90b08a5631c928612f9c43d723f3abd2caa2b",
+      "stateTextSha256": "6c926ddddacebcd51d89113fea86f095e401359a72667b6cb6252c3463b01c54",
+      "eventsTextSha256": "202e149e9e702dfe854106412d51cab070aa9210eb2bb59d0bae885256bd0bf6"
+    },
+    {
+      "file": "23-rim01-1751.dom.json",
+      "seed": 2,
+      "tick": 1751,
+      "eventCount": 13,
+      "reference": "own cached native seed2",
+      "state": "EXACT",
+      "events": "EXACT",
+      "rawSha256": "ad9b97fc37d4a2106ca53f3e30994a4d9ea4862dc997cc0896961dbe2bf8d2ab",
+      "stateTextSha256": "63549c7d33fa9a5f1b963f836f86588407dc32b94e456f67bb6322f334119c58",
+      "eventsTextSha256": "202e149e9e702dfe854106412d51cab070aa9210eb2bb59d0bae885256bd0bf6"
+    },
+    {
+      "file": "24-rim01-normal-on.dom.json",
+      "seed": 2,
+      "tick": 1747,
+      "eventCount": 13,
+      "reference": "own cached native seed2",
+      "state": "EXACT",
+      "events": "EXACT",
+      "rawSha256": "3f50d0ff2c8bbe6190ae34a3776c7ab5c5e1a4d05e9d3a73fa222d1eca015236",
+      "stateTextSha256": "8c75e398a836bf76e2dde4ed5922d2b0238144c4a0592b28a9f0088474bed970",
+      "eventsTextSha256": "202e149e9e702dfe854106412d51cab070aa9210eb2bb59d0bae885256bd0bf6"
+    },
+    {
+      "file": "25-rim01-normal-off.dom.json",
+      "seed": 2,
+      "tick": 1747,
+      "eventCount": 13,
+      "reference": "own cached native seed2",
+      "state": "EXACT",
+      "events": "EXACT",
+      "rawSha256": "7320f9dcbeaed282da0fd9071ca2cfaaa5e34f36e83cb3224ac1a87e9cfcfa60",
+      "stateTextSha256": "8c75e398a836bf76e2dde4ed5922d2b0238144c4a0592b28a9f0088474bed970",
+      "eventsTextSha256": "202e149e9e702dfe854106412d51cab070aa9210eb2bb59d0bae885256bd0bf6"
+    },
+    {
+      "file": "26-rim01-zoom-on.dom.json",
+      "seed": 2,
+      "tick": 1747,
+      "eventCount": 13,
+      "reference": "own cached native seed2",
+      "state": "EXACT",
+      "events": "EXACT",
+      "rawSha256": "dd6262b230528db5e4d448718f1cb3d19ed7b6d6a3cc5e21b1e8bea10cbc1571",
+      "stateTextSha256": "8c75e398a836bf76e2dde4ed5922d2b0238144c4a0592b28a9f0088474bed970",
+      "eventsTextSha256": "202e149e9e702dfe854106412d51cab070aa9210eb2bb59d0bae885256bd0bf6"
+    },
+    {
+      "file": "27-rim01-zoom-off.dom.json",
+      "seed": 2,
+      "tick": 1747,
+      "eventCount": 13,
+      "reference": "own cached native seed2",
+      "state": "EXACT",
+      "events": "EXACT",
+      "rawSha256": "c253147015d93750dc5f7ab4fc0e30a83ad170757675c100c966e039bd7cd609",
+      "stateTextSha256": "8c75e398a836bf76e2dde4ed5922d2b0238144c4a0592b28a9f0088474bed970",
+      "eventsTextSha256": "202e149e9e702dfe854106412d51cab070aa9210eb2bb59d0bae885256bd0bf6"
+    },
+    {
+      "file": "28-seed2-LOST.dom.json",
+      "seed": 2,
+      "tick": 1812,
+      "eventCount": 15,
+      "reference": "own cached native seed2",
+      "state": "EXACT",
+      "events": "EXACT",
+      "rawSha256": "39ed7b13f19063f7b883250bdbad5f412455beac8aa25cc515cdff9e2817ba3d",
+      "stateTextSha256": "425d6726d35f680b499db0cf73b1b1ce48337339e4734bc3ad998199f21833a0",
+      "eventsTextSha256": "4d3409343285bf8865fa92053550a5893ec2faa0fd26835868cd848226f9242b"
+    },
+    {
+      "file": "29-rim01-before-1742.dom.json",
+      "seed": 2,
+      "tick": 1742,
+      "eventCount": 13,
+      "reference": "own cached native seed2",
+      "state": "EXACT",
+      "events": "EXACT",
+      "rawSha256": "c6ef0a2b73c10f59d62ff030938884771865298b24f6dffdef45580c16ba9d56",
+      "stateTextSha256": "c8fe8f51aa16f3e5d39a113cb6f03d11e2c2157fd994be1c60697d0335fdfcec",
+      "eventsTextSha256": "202e149e9e702dfe854106412d51cab070aa9210eb2bb59d0bae885256bd0bf6"
+    },
+    {
+      "file": "30-rim01-after-1782.dom.json",
+      "seed": 2,
+      "tick": 1782,
+      "eventCount": 13,
+      "reference": "own cached native seed2",
+      "state": "EXACT",
+      "events": "EXACT",
+      "rawSha256": "c4aa4a193627837effa0906b37a5e13aa14dd01aee65a5a3b4839a18623e1732",
+      "stateTextSha256": "b603630e7c51b8690674e06a877e942913fdf9e49537c14914c0e4f48ba9b060",
+      "eventsTextSha256": "202e149e9e702dfe854106412d51cab070aa9210eb2bb59d0bae885256bd0bf6"
+    },
+    {
+      "file": "31-capture1-882.dom.json",
+      "seed": 1,
+      "tick": 882,
+      "eventCount": 9,
+      "reference": "own cached native seed1",
+      "state": "EXACT",
+      "events": "EXACT",
+      "rawSha256": "5029253def02c3d99bf0d3ef257da5a731e9e5adec1c125b749045f91dfa7049",
+      "stateTextSha256": "745f281ef00409c86ce8aa6cc2d3d02fe2bd33130984669c9cc31aefef7302f5",
+      "eventsTextSha256": "50a8e315192d4d909a4f00d6ceb1bdddbe37742ef23683b3013bb0375a81e21e"
+    },
+    {
+      "file": "32-capture1-883.dom.json",
+      "seed": 1,
+      "tick": 883,
+      "eventCount": 9,
+      "reference": "own cached native seed1",
+      "state": "EXACT",
+      "events": "EXACT",
+      "rawSha256": "1de85b79ca0ca1f52ebf0228d6ca6e25a8346ede882b4d3483a51ceb35f01166",
+      "stateTextSha256": "5e54b7a08e713302fc73a356dbe0f364070270f7a5f7da08ff8703c34515883c",
+      "eventsTextSha256": "50a8e315192d4d909a4f00d6ceb1bdddbe37742ef23683b3013bb0375a81e21e"
+    },
+    {
+      "file": "32-capture1-884.dom.json",
+      "seed": 1,
+      "tick": 884,
+      "eventCount": 12,
+      "reference": "own cached native seed1",
+      "state": "EXACT",
+      "events": "EXACT",
+      "rawSha256": "c3d50d52c132d80faf931b4da3b1c88e9106542d808c61c66871fb0ce731b74a",
+      "stateTextSha256": "71d653a078d5fa8508243ca5963379043a3435170efcf1448fed0532493c24dc",
+      "eventsTextSha256": "1f068a1f0c520f262fa4e032c013a97591ca39da012c9c7efe0322bc291290a2"
+    },
+    {
+      "file": "33-post-capture1-plus100.dom.json",
+      "seed": 1,
+      "tick": 884,
+      "eventCount": 12,
+      "reference": "own cached native seed1",
+      "state": "EXACT",
+      "events": "EXACT",
+      "rawSha256": "f975879beccd345996841ab6e203be3f1e53d7f90075a9b05ce5c7e6442ba5f1",
+      "stateTextSha256": "71d653a078d5fa8508243ca5963379043a3435170efcf1448fed0532493c24dc",
+      "eventsTextSha256": "1f068a1f0c520f262fa4e032c013a97591ca39da012c9c7efe0322bc291290a2"
+    },
+    {
+      "file": "34-source-play-side-start.dom.json",
+      "seed": 0,
+      "tick": 835,
+      "eventCount": 7,
+      "reference": "own cached native seed0",
+      "state": "EXACT",
+      "events": "EXACT",
+      "rawSha256": "44ee4a09fea07d9ca3af672db761224ae21d2f42c126e81062ff05f39a53bfe2",
+      "stateTextSha256": "ff0a322c6336b807b006b642d821ebc280f2441044e3a8c85fedaa1aa2a39a9f",
+      "eventsTextSha256": "9521f70ff9adc43108a7cd0c012cb762646bd584efa8ef42679525d2903a9e1c"
+    },
+    {
+      "file": "35-source-play-side-capture-end.dom.json",
+      "seed": 0,
+      "tick": 888,
+      "eventCount": 12,
+      "reference": "own cached native seed0",
+      "state": "EXACT",
+      "events": "EXACT",
+      "rawSha256": "b1338e9008e1dd2bc5dd05ccc0dd1fcdfe188305b9e88716f61edaf66971936e",
+      "stateTextSha256": "c0e2d0e648d3f5d2799171648f09625da1ef8950e56b39d587817a09bfff9457",
+      "eventsTextSha256": "2ea7dacf5ef2283c249b98f83153cd3a13f73966ed19fab37bbe6e060022e890"
+    },
+    {
+      "file": "36-export-base.dom.json",
+      "seed": 2,
+      "tick": 973,
+      "eventCount": 11,
+      "reference": "own cached native seed2",
+      "state": "EXACT",
+      "events": "EXACT",
+      "rawSha256": "6b458219a668202394b14be45a18766cde854100c44548efed0004c4961b32a4",
+      "stateTextSha256": "6460bf13f9a626318ad3bc7d37e2c4fa993e0aebaa537140db5e80a1af930401",
+      "eventsTextSha256": "3f73dfc0eea21051f831710578361d4d807049ac6847901394e3351e01c46b98"
+    },
+    {
+      "file": "37-manual-974.dom.json",
+      "seed": 2,
+      "tick": 974,
+      "eventCount": 11,
+      "reference": "own cached native seed2",
+      "state": "EXACT",
+      "events": "EXACT",
+      "rawSha256": "18bdeecff023556184c63aa9a0d0b231e441c6e83ee10a47582d72227a251940",
+      "stateTextSha256": "de72a92b7fa9f2c4a46601cdbb4180f1a4c25ae3d6321b024f7269a97b4dc824",
+      "eventsTextSha256": "3f73dfc0eea21051f831710578361d4d807049ac6847901394e3351e01c46b98"
+    },
+    {
+      "file": "38-same-file-import.dom.json",
+      "seed": 2,
+      "tick": 973,
+      "eventCount": 11,
+      "reference": "own cached native seed2",
+      "state": "EXACT",
+      "events": "EXACT",
+      "rawSha256": "badf79fc230b2cdcd008e90114905d2a8eb268b4ccad6a63398d957c3bddab4f",
+      "stateTextSha256": "6460bf13f9a626318ad3bc7d37e2c4fa993e0aebaa537140db5e80a1af930401",
+      "eventsTextSha256": "3f73dfc0eea21051f831710578361d4d807049ac6847901394e3351e01c46b98"
+    },
+    {
+      "file": "39-native-geometry-art-973.dom.json",
+      "seed": 2,
+      "tick": 973,
+      "eventCount": 11,
+      "reference": "own cached native seed2",
+      "state": "EXACT",
+      "events": "EXACT",
+      "rawSha256": "7c21bb036141786d66866b71f511ca692b417fbaa236c7b00eaaf720e26ccc70",
+      "stateTextSha256": "6460bf13f9a626318ad3bc7d37e2c4fa993e0aebaa537140db5e80a1af930401",
+      "eventsTextSha256": "3f73dfc0eea21051f831710578361d4d807049ac6847901394e3351e01c46b98"
+    },
+    {
+      "file": "40-native-geometry-only-973.dom.json",
+      "seed": 2,
+      "tick": 973,
+      "eventCount": 11,
+      "reference": "own cached native seed2",
+      "state": "EXACT",
+      "events": "EXACT",
+      "rawSha256": "165c038a910e7ba9ae695a8433f47f69bcafa395b8d1655804c476f14ea97553",
+      "stateTextSha256": "6460bf13f9a626318ad3bc7d37e2c4fa993e0aebaa537140db5e80a1af930401",
+      "eventsTextSha256": "3f73dfc0eea21051f831710578361d4d807049ac6847901394e3351e01c46b98"
+    },
+    {
+      "file": "41-native-parts-art-off-973.dom.json",
+      "seed": 2,
+      "tick": 973,
+      "eventCount": 11,
+      "reference": "own cached native seed2",
+      "state": "EXACT",
+      "events": "EXACT",
+      "rawSha256": "b5339b3006de73ff10f885c5f8023b8d988d0b8810abb131e25996b2b2ef58ca",
+      "stateTextSha256": "6460bf13f9a626318ad3bc7d37e2c4fa993e0aebaa537140db5e80a1af930401",
+      "eventsTextSha256": "3f73dfc0eea21051f831710578361d4d807049ac6847901394e3351e01c46b98"
+    },
+    {
+      "file": "42-native-parts-off-973.dom.json",
+      "seed": 2,
+      "tick": 973,
+      "eventCount": 11,
+      "reference": "own cached native seed2",
+      "state": "EXACT",
+      "events": "EXACT",
+      "rawSha256": "4d2eea8e2eb00f218ad30e0ae6485203cb16084b4eff4417106e2a7643828290",
+      "stateTextSha256": "6460bf13f9a626318ad3bc7d37e2c4fa993e0aebaa537140db5e80a1af930401",
+      "eventsTextSha256": "3f73dfc0eea21051f831710578361d4d807049ac6847901394e3351e01c46b98"
+    },
+    {
+      "file": "43-native-diagnostic-973.dom.json",
+      "seed": 2,
+      "tick": 973,
+      "eventCount": 11,
+      "reference": "own cached native seed2",
+      "state": "EXACT",
+      "events": "EXACT",
+      "rawSha256": "f6a0bc86f4cb2086e99ce49ab21a92e42a11dbaf1fcb9dbfe24382d15eb948a6",
+      "stateTextSha256": "6460bf13f9a626318ad3bc7d37e2c4fa993e0aebaa537140db5e80a1af930401",
+      "eventsTextSha256": "3f73dfc0eea21051f831710578361d4d807049ac6847901394e3351e01c46b98"
+    },
+    {
+      "file": "44-native-manual-974.dom.json",
+      "seed": 2,
+      "tick": 974,
+      "eventCount": 11,
+      "reference": "own cached native seed2",
+      "state": "EXACT",
+      "events": "EXACT",
+      "rawSha256": "7111f83215daa01bb0bd5837769d25406c639fed805407517291106c82e084d9",
+      "stateTextSha256": "de72a92b7fa9f2c4a46601cdbb4180f1a4c25ae3d6321b024f7269a97b4dc824",
+      "eventsTextSha256": "3f73dfc0eea21051f831710578361d4d807049ac6847901394e3351e01c46b98"
+    },
+    {
+      "file": "45-same-file-reimport.dom.json",
+      "seed": 2,
+      "tick": 973,
+      "eventCount": 11,
+      "reference": "own cached native seed2",
+      "state": "EXACT",
+      "events": "EXACT",
+      "rawSha256": "f6a0bc86f4cb2086e99ce49ab21a92e42a11dbaf1fcb9dbfe24382d15eb948a6",
+      "stateTextSha256": "6460bf13f9a626318ad3bc7d37e2c4fa993e0aebaa537140db5e80a1af930401",
+      "eventsTextSha256": "3f73dfc0eea21051f831710578361d4d807049ac6847901394e3351e01c46b98"
+    },
+    {
+      "file": "46-native-play-start.dom.json",
+      "seed": 2,
+      "tick": 970,
+      "eventCount": 10,
+      "reference": "own cached native seed2",
+      "state": "EXACT",
+      "events": "EXACT",
+      "rawSha256": "1d1cdaca9eb9cfb015b8f1f3f3498633e71a9f8c63a8058c7662f8c3cdb059da",
+      "stateTextSha256": "f084686bc8bf529ba55762b3a3b60b1d9386cbbcd5e2cd3ba5a855bad15b1ea0",
+      "eventsTextSha256": "675afc564fa087cf5a5017d751647fee073819060414ad2172207428da11489d"
+    },
+    {
+      "file": "47-native-playing.dom.json",
+      "seed": 2,
+      "tick": 1026,
+      "eventCount": 11,
+      "reference": "own cached native seed2",
+      "state": "EXACT",
+      "events": "EXACT",
+      "rawSha256": "1011d9dbd8b5aac7289cbcd978cfd6e513fca87f6bef055375ff0d1a5a7e5453",
+      "stateTextSha256": "fa0e1617d428293aa3234ba79523dc8de75c8f0df0e58caf7184cbb1b7fe85f1",
+      "eventsTextSha256": "3f73dfc0eea21051f831710578361d4d807049ac6847901394e3351e01c46b98"
+    },
+    {
+      "file": "48-native-paused.dom.json",
+      "seed": 2,
+      "tick": 1039,
+      "eventCount": 11,
+      "reference": "own cached native seed2",
+      "state": "EXACT",
+      "events": "EXACT",
+      "rawSha256": "0050e36e4520f99266450d7b8a0bba1785855ec634efeb8f9cb6fe9cf22a8ce3",
+      "stateTextSha256": "882ebe19e74adc7eacd110d8ebba55c4b30e6cb9b95ab132aaf5d3758cb828a9",
+      "eventsTextSha256": "3f73dfc0eea21051f831710578361d4d807049ac6847901394e3351e01c46b98"
+    },
+    {
+      "file": "49-native-resumed.dom.json",
+      "seed": 2,
+      "tick": 1099,
+      "eventCount": 12,
+      "reference": "own cached native seed2",
+      "state": "EXACT",
+      "events": "EXACT",
+      "rawSha256": "0af9d73b10ca71b747e967750cbbb446bd65f662fe22be4e29482b489d86d905",
+      "stateTextSha256": "45411bb8555e4565f05dc809f6b530f21f8aa9a89b57445165faa6970f4bdd95",
+      "eventsTextSha256": "83dd9143f6a8fe05de7508031fcb2a70d5b1261dfc0903a1b8571e37fd511506"
+    },
+    {
+      "file": "50-native-paused-again.dom.json",
+      "seed": 2,
+      "tick": 1112,
+      "eventCount": 12,
+      "reference": "own cached native seed2",
+      "state": "EXACT",
+      "events": "EXACT",
+      "rawSha256": "e269e6632f7e571ea122dd86b22f7cfe5bc6e5abaf7ddb3c10456708eba0d3f0",
+      "stateTextSha256": "bd81e7bf8ab89eaf8c779972fac7e92bd789d9e9726c1acb41b27553a5a2efb0",
+      "eventsTextSha256": "83dd9143f6a8fe05de7508031fcb2a70d5b1261dfc0903a1b8571e37fd511506"
+    },
+    {
+      "file": "51-before-guard-973.dom.json",
+      "seed": 2,
+      "tick": 973,
+      "eventCount": 11,
+      "reference": "own cached native seed2",
+      "state": "EXACT",
+      "events": "EXACT",
+      "rawSha256": "cc335272355dfad79912b519666aa07b937dcfa6d5f7c2920993a9c65b3f7f78",
+      "stateTextSha256": "6460bf13f9a626318ad3bc7d37e2c4fa993e0aebaa537140db5e80a1af930401",
+      "eventsTextSha256": "3f73dfc0eea21051f831710578361d4d807049ac6847901394e3351e01c46b98"
+    },
+    {
+      "file": "52-real-Water-rejected.dom.json",
+      "seed": 2,
+      "tick": 973,
+      "eventCount": 11,
+      "reference": "own cached native seed2",
+      "state": "EXACT",
+      "events": "EXACT",
+      "rawSha256": "23c02a3be238a6703f89df0906e839a43161503e32198816a2163e12713cad3c",
+      "stateTextSha256": "6460bf13f9a626318ad3bc7d37e2c4fa993e0aebaa537140db5e80a1af930401",
+      "eventsTextSha256": "3f73dfc0eea21051f831710578361d4d807049ac6847901394e3351e01c46b98"
+    },
+    {
+      "file": "53-physics-rejected.dom.json",
+      "seed": 2,
+      "tick": 973,
+      "eventCount": 11,
+      "reference": "own cached native seed2",
+      "state": "EXACT",
+      "events": "EXACT",
+      "rawSha256": "e41d6c4d7ce535b146fb3eb5daef1e88067e0fa01d8f42297f5fe6c6462ee603",
+      "stateTextSha256": "6460bf13f9a626318ad3bc7d37e2c4fa993e0aebaa537140db5e80a1af930401",
+      "eventsTextSha256": "3f73dfc0eea21051f831710578361d4d807049ac6847901394e3351e01c46b98"
+    },
+    {
+      "file": "54-native-plus3-976.dom.json",
+      "seed": 2,
+      "tick": 976,
+      "eventCount": 11,
+      "reference": "own cached native seed2",
+      "state": "EXACT",
+      "events": "EXACT",
+      "rawSha256": "d40fd67a2e8c5e1a5581d9db07972ac530e4e4d946b99ed57c78d3e17ca876bc",
+      "stateTextSha256": "bf0880b2eb0386de59a70819d3a6794cad79fc72b3f9836ae71514778ba60442",
+      "eventsTextSha256": "3f73dfc0eea21051f831710578361d4d807049ac6847901394e3351e01c46b98"
+    },
+    {
+      "file": "55-supplied-ordinary-890.dom.json",
+      "seed": 1632614828,
+      "tick": 890,
+      "eventCount": 10,
+      "reference": "SUPPLIED ONLY; not independent native",
+      "state": "EXACT",
+      "events": "EXACT",
+      "rawSha256": "88adab3246c6a322a6005ddcfee7c5cfbc42e86c50ade780f5746a57e5869ba6",
+      "stateTextSha256": "cfc976141a2efd820b0a8bd14280d7db26e0e2a7131c0d8853630c4450d3a948",
+      "eventsTextSha256": "fc69d27211b8a1e997fae8d11b7e58dc0d7a1ef06a728ec468fbdd03c98e66d9"
+    },
+    {
+      "file": "56-ordinary-890-normal.dom.json",
+      "seed": 1632614828,
+      "tick": 890,
+      "eventCount": 10,
+      "reference": "SUPPLIED ONLY; not independent native",
+      "state": "EXACT",
+      "events": "EXACT",
+      "rawSha256": "88adab3246c6a322a6005ddcfee7c5cfbc42e86c50ade780f5746a57e5869ba6",
+      "stateTextSha256": "cfc976141a2efd820b0a8bd14280d7db26e0e2a7131c0d8853630c4450d3a948",
+      "eventsTextSha256": "fc69d27211b8a1e997fae8d11b7e58dc0d7a1ef06a728ec468fbdd03c98e66d9"
+    },
+    {
+      "file": "57-ordinary-891.dom.json",
+      "seed": 1632614828,
+      "tick": 891,
+      "eventCount": 10,
+      "reference": "SUPPLIED ONLY; not independent native",
+      "state": "EXACT",
+      "events": "EXACT",
+      "rawSha256": "dc1e7f244829009f6a0ac9837b0e4bf7eb5a3ad870314d548bd64cb18fedd24a",
+      "stateTextSha256": "f714ae73c39fd5bd9a7c8027792e38493824b94b5dfab59f5009bca058980226",
+      "eventsTextSha256": "fc69d27211b8a1e997fae8d11b7e58dc0d7a1ef06a728ec468fbdd03c98e66d9"
+    },
+    {
+      "file": "57-ordinary-892.dom.json",
+      "seed": 1632614828,
+      "tick": 892,
+      "eventCount": 11,
+      "reference": "SUPPLIED ONLY; not independent native",
+      "state": "EXACT",
+      "events": "EXACT",
+      "rawSha256": "497a254454416c3b54bd4326e4675d5849b0f30c4ff3b95e51a645023969a5b2",
+      "stateTextSha256": "03ae48f8f2e2ce8004a1c9831c30ccf4fae5b332bb903949b2fba7f1dc12b409",
+      "eventsTextSha256": "6077a7233e4de08bbf46b8017e5c194106d1318561d3711d548100803d33d4ab"
+    },
+    {
+      "file": "58-ordinary-891-zoom.dom.json",
+      "seed": 1632614828,
+      "tick": 891,
+      "eventCount": 10,
+      "reference": "SUPPLIED ONLY; not independent native",
+      "state": "EXACT",
+      "events": "EXACT",
+      "rawSha256": "ae2405f445c481733e5b29590ab1ce052197f48e1da68b9084c08086e550f7e0",
+      "stateTextSha256": "f714ae73c39fd5bd9a7c8027792e38493824b94b5dfab59f5009bca058980226",
+      "eventsTextSha256": "fc69d27211b8a1e997fae8d11b7e58dc0d7a1ef06a728ec468fbdd03c98e66d9"
+    },
+    {
+      "file": "59-supplied-ordinary-LOST2323.dom.json",
+      "seed": 1632614828,
+      "tick": 2323,
+      "eventCount": 26,
+      "reference": "SUPPLIED ONLY; not independent native",
+      "state": "EXACT",
+      "events": "EXACT",
+      "rawSha256": "ea4bdf81e1411217817a84e87ac9ab3b76dfc3f6deae07a553b4a7ccc4bc0fc2",
+      "stateTextSha256": "49755b8af23395e334b073770222c4aeb9c6f166bdf33971c36fea59ee20a5f8",
+      "eventsTextSha256": "0242770eb15003ab7c14f9f885c5fc36d2840dd5aaac3bf116550bcee51d9012"
+    },
+    {
+      "file": "60-shadow-973-restore.dom.json",
+      "seed": 2,
+      "tick": 973,
+      "eventCount": 11,
+      "reference": "own cached native seed2",
+      "state": "EXACT",
+      "events": "EXACT",
+      "rawSha256": "eb4e589b350a3e571bf25ea475da7feb4c34dae1a6dd80fe6cc400ed3261fb93",
+      "stateTextSha256": "6460bf13f9a626318ad3bc7d37e2c4fa993e0aebaa537140db5e80a1af930401",
+      "eventsTextSha256": "3f73dfc0eea21051f831710578361d4d807049ac6847901394e3351e01c46b98"
+    },
+    {
+      "file": "61-shadow-parts-off-973-normal.dom.json",
+      "seed": 2,
+      "tick": 973,
+      "eventCount": 11,
+      "reference": "own cached native seed2",
+      "state": "EXACT",
+      "events": "EXACT",
+      "rawSha256": "b99d883e53a0ad43e12449f5f5d4907c111b0bbc2bc8d823ae5c3ee1d8942116",
+      "stateTextSha256": "6460bf13f9a626318ad3bc7d37e2c4fa993e0aebaa537140db5e80a1af930401",
+      "eventsTextSha256": "3f73dfc0eea21051f831710578361d4d807049ac6847901394e3351e01c46b98"
+    },
+    {
+      "file": "62-shadow-parts-on-973-normal.dom.json",
+      "seed": 2,
+      "tick": 973,
+      "eventCount": 11,
+      "reference": "own cached native seed2",
+      "state": "EXACT",
+      "events": "EXACT",
+      "rawSha256": "6c8dc6da97bbc188de551c10f2754991e560c5359cd4df14ff1dbd2a1915fbd6",
+      "stateTextSha256": "6460bf13f9a626318ad3bc7d37e2c4fa993e0aebaa537140db5e80a1af930401",
+      "eventsTextSha256": "3f73dfc0eea21051f831710578361d4d807049ac6847901394e3351e01c46b98"
+    },
+    {
+      "file": "63-final-rim01-normal.dom.json",
+      "seed": 2,
+      "tick": 1747,
+      "eventCount": 13,
+      "reference": "own cached native seed2",
+      "state": "EXACT",
+      "events": "EXACT",
+      "rawSha256": "c30540c5861127914737efb14c4daff39a4d40b46227374f869622cdfd6be161",
+      "stateTextSha256": "8c75e398a836bf76e2dde4ed5922d2b0238144c4a0592b28a9f0088474bed970",
+      "eventsTextSha256": "202e149e9e702dfe854106412d51cab070aa9210eb2bb59d0bae885256bd0bf6"
+    }
+  ],
+  "maxPlacementDelta": 0,
+  "anchors": [
+    {
+      "id": "block-01",
+      "kind": "segments",
+      "expected": [
+        33519.552287554034,
+        33444.584574790104
+      ],
+      "maxDelta": 7.275957614183426e-12
+    },
+    {
+      "id": "block-02",
+      "kind": "segments",
+      "expected": [
+        33067.984292683184,
+        33655.11794824634
+      ],
+      "maxDelta": 0
+    },
+    {
+      "id": "block-03",
+      "kind": "segments",
+      "expected": [
+        33611.81409552248,
+        33670.62754897705
+      ],
+      "maxDelta": 0
+    },
+    {
+      "id": "block-04",
+      "kind": "segments",
+      "expected": [
+        33310.54355101097,
+        34072.54541852553
+      ],
+      "maxDelta": 0
+    },
+    {
+      "id": "block-05",
+      "kind": "segments",
+      "expected": [
+        33006.15521170197,
+        34465.61368698532
+      ],
+      "maxDelta": 0
+    },
+    {
+      "id": "block-06",
+      "kind": "segments",
+      "expected": [
+        33590.02780424376,
+        34467.67051302826
+      ],
+      "maxDelta": 0
+    },
+    {
+      "id": "bowl-base-01",
+      "kind": "pin",
+      "expected": [
+        33372.62630208038,
+        33265.33454057419
+      ],
+      "maxDelta": 0
+    },
+    {
+      "id": "bowl-base-02",
+      "kind": "pin",
+      "expected": [
+        32925.87454816949,
+        33450.90752935672
+      ],
+      "maxDelta": 0
+    },
+    {
+      "id": "bowl-base-03",
+      "kind": "pin",
+      "expected": [
+        33764.501122173075,
+        33488.62133374682
+      ],
+      "maxDelta": 0
+    },
+    {
+      "id": "bowl-base-04",
+      "kind": "pin",
+      "expected": [
+        33185.439425283745,
+        33847.56246367806
+      ],
+      "maxDelta": 0
+    },
+    {
+      "id": "bowl-base-05",
+      "kind": "pin",
+      "expected": [
+        33621.30497565033,
+        34034.60165695869
+      ],
+      "maxDelta": 0
+    },
+    {
+      "id": "bowl-base-06",
+      "kind": "pin",
+      "expected": [
+        33154.106262477726,
+        34282.73632933471
+      ],
+      "maxDelta": 0
+    },
+    {
+      "id": "pillar-01",
+      "kind": "segments",
+      "expected": [
+        33196.97168571732,
+        33464.868499482036
+      ],
+      "maxDelta": 7.275957614183426e-12
+    },
+    {
+      "id": "pillar-02",
+      "kind": "segments",
+      "expected": [
+        32927.01160161463,
+        33875.64543401087
+      ],
+      "maxDelta": 0
+    },
+    {
+      "id": "pillar-03",
+      "kind": "segments",
+      "expected": [
+        33456.87264211891,
+        33876.94071157232
+      ],
+      "maxDelta": 0
+    },
+    {
+      "id": "pillar-04",
+      "kind": "segments",
+      "expected": [
+        32907.14775699726,
+        34283.33951839833
+      ],
+      "maxDelta": 7.275957614183426e-12
+    },
+    {
+      "id": "pillar-05",
+      "kind": "segments",
+      "expected": [
+        33770.54964927895,
+        34282.94923055996
+      ],
+      "maxDelta": 7.275957614183426e-12
+    },
+    {
+      "id": "pillar-06",
+      "kind": "segments",
+      "expected": [
+        33293.11855776688,
+        34496.23789866319
+      ],
+      "maxDelta": 0
+    },
+    {
+      "id": "skull-base-01",
+      "kind": "pin",
+      "expected": [
+        33049.55490936593,
+        33252.91336923354
+      ],
+      "maxDelta": 0
+    },
+    {
+      "id": "skull-base-02",
+      "kind": "pin",
+      "expected": [
+        33677.02369252854,
+        33255.06699440539
+      ],
+      "maxDelta": 0
+    },
+    {
+      "id": "skull-base-03",
+      "kind": "pin",
+      "expected": [
+        33337.22833551246,
+        33630.85380130959
+      ],
+      "maxDelta": 0
+    },
+    {
+      "id": "skull-base-04",
+      "kind": "pin",
+      "expected": [
+        33766.32601748817,
+        33870.5786289894
+      ],
+      "maxDelta": 0
+    },
+    {
+      "id": "skull-base-05",
+      "kind": "pin",
+      "expected": [
+        33051.7125983366,
+        34071.4531863284
+      ],
+      "maxDelta": 0
+    },
+    {
+      "id": "skull-base-06",
+      "kind": "pin",
+      "expected": [
+        33455.286621423846,
+        34286.65987892238
+      ],
+      "maxDelta": 0
+    },
+    {
+      "id": "receiver-01",
+      "kind": "bucket",
+      "expected": [
+        32895.27416667457,
+        34639.03401006639
+      ],
+      "maxDelta": 0
+    },
+    {
+      "id": "receiver-02",
+      "kind": "bucket",
+      "expected": [
+        33190.99753486421,
+        34639.561335368126
+      ],
+      "maxDelta": 0
+    },
+    {
+      "id": "receiver-03",
+      "kind": "bucket",
+      "expected": [
+        33492.7346694948,
+        34640.77828436916
+      ],
+      "maxDelta": 0
+    },
+    {
+      "id": "receiver-04",
+      "kind": "bucket",
+      "expected": [
+        33790.663139784796,
+        34639.995941136774
+      ],
+      "maxDelta": 0
+    }
+  ],
+  "layout": {
+    "dpr": 1,
+    "width": 1280,
+    "height": 720,
+    "canvas": [
+      {
+        "width": 840,
+        "height": 590,
+        "clientWidth": 840,
+        "clientHeight": 590,
+        "left": 17,
+        "top": 103.5
+      }
+    ]
+  },
+  "fitScale": 0.3736979166666667,
+  "decodedRgbaBytes": 26121212,
+  "trials": [
+    {
+      "trial": 1,
+      "startTick": 56,
+      "lastDigitTick": 133,
+      "blurTick": 213,
+      "draft": "973",
+      "play": "Пауза",
+      "resultTick": 973
+    },
+    {
+      "trial": 2,
+      "startTick": 56,
+      "lastDigitTick": 136,
+      "blurTick": 216,
+      "draft": "973",
+      "play": "Пауза",
+      "resultTick": 973
+    },
+    {
+      "trial": 3,
+      "startTick": 56,
+      "lastDigitTick": 136,
+      "blurTick": 216,
+      "draft": "973",
+      "play": "Пауза",
+      "resultTick": 973
+    }
+  ],
+  "guards": [
+    {
+      "file": "52-real-Water-rejected.dom.json",
+      "message": "Несовместимая версия входа"
+    },
+    {
+      "file": "53-physics-rejected.dom.json",
+      "message": "Config изменён"
+    }
+  ],
+  "endIntegrity": {
+    "files": 218,
+    "diskAndHttp": "PASS",
+    "roots": "PASS",
+    "artifactFrozen": "PASS"
+  },
+  "consumerAudit": {
+    "appSha256": "96ddc0443f311dd46f7f07b287171118608a583f0fd26416dbaa18ad8c8e84d0",
+    "span": [
+      601784,
+      611656
+    ],
+    "maskAssignments": 0,
+    "restorationRegionsGameplayReference": false
+  },
+  "pageHeapSamplePeak": {
+    "usedBytes": 19515080,
+    "allocatedBytes": 47153152,
+    "scope": "sampled page JS heap, not whole browser/GPU peak"
+  },
+  "console": [],
+  "issues": [
+    {
+      "id": "TQA-DARK-01-01",
+      "priority": 3,
+      "status": "OPEN",
+      "type": "original-method limitation, no native/input/clock drift",
+      "seed": 0,
+      "fromTick": 841,
+      "toTick": 842,
+      "actualHiddenFrom": 0.08257972127362538,
+      "actualHiddenTo": 0,
+      "potentialOverlapTo": 0.021740428952563614,
+      "action": "Lead decision; any material sorting change in separate named candidate; freeze unchanged"
+    }
+  ],
+  "unverified": [
+    "receiver02/03/04 dynamic cases",
+    "worker-response body SHA; unsupported operation not retried",
+    "strict zero-brightening radiometry from lossy JPEG screenshots",
+    "general Art/material/clean-quality PASS"
+  ],
+  "alpha": {
+    "method": ".25 source-pixel observed poses and ACTUAL runtime zIndex/container; .5px old whole-run front scan; alpha16; estimates not GPU readback",
+    "dimensions": [
+      {
+        "file": "block-01-ground-shadow.png",
+        "size": [
+          149,
+          168
+        ],
+        "mode": "RGBA"
+      },
+      {
+        "file": "block-01-body.png",
+        "size": [
+          149,
+          168
+        ],
+        "mode": "RGBA"
+      },
+      {
+        "file": "block-02-ground-shadow.png",
+        "size": [
+          154,
+          169
+        ],
+        "mode": "RGBA"
+      },
+      {
+        "file": "block-02-body.png",
+        "size": [
+          154,
+          169
+        ],
+        "mode": "RGBA"
+      },
+      {
+        "file": "block-03-ground-shadow.png",
+        "size": [
+          149,
+          174
+        ],
+        "mode": "RGBA"
+      },
+      {
+        "file": "block-03-body.png",
+        "size": [
+          149,
+          174
+        ],
+        "mode": "RGBA"
+      },
+      {
+        "file": "block-04-ground-shadow.png",
+        "size": [
+          170,
+          196
+        ],
+        "mode": "RGBA"
+      },
+      {
+        "file": "block-04-body.png",
+        "size": [
+          170,
+          196
+        ],
+        "mode": "RGBA"
+      },
+      {
+        "file": "block-05-ground-shadow.png",
+        "size": [
+          178,
+          196
+        ],
+        "mode": "RGBA"
+      },
+      {
+        "file": "block-05-body.png",
+        "size": [
+          178,
+          196
+        ],
+        "mode": "RGBA"
+      },
+      {
+        "file": "block-06-ground-shadow.png",
+        "size": [
+          187,
+          200
+        ],
+        "mode": "RGBA"
+      },
+      {
+        "file": "block-06-body.png",
+        "size": [
+          187,
+          200
+        ],
+        "mode": "RGBA"
+      },
+      {
+        "file": "bowl-base-01-ground-shadow.png",
+        "size": [
+          159,
+          158
+        ],
+        "mode": "RGBA"
+      },
+      {
+        "file": "bowl-base-01-body.png",
+        "size": [
+          159,
+          158
+        ],
+        "mode": "RGBA"
+      },
+      {
+        "file": "bowl-base-02-ground-shadow.png",
+        "size": [
+          161,
+          157
+        ],
+        "mode": "RGBA"
+      },
+      {
+        "file": "bowl-base-02-body.png",
+        "size": [
+          161,
+          157
+        ],
+        "mode": "RGBA"
+      },
+      {
+        "file": "bowl-base-03-ground-shadow.png",
+        "size": [
+          164,
+          153
+        ],
+        "mode": "RGBA"
+      },
+      {
+        "file": "bowl-base-03-body.png",
+        "size": [
+          164,
+          153
+        ],
+        "mode": "RGBA"
+      },
+      {
+        "file": "bowl-base-04-ground-shadow.png",
+        "size": [
+          170,
+          165
+        ],
+        "mode": "RGBA"
+      },
+      {
+        "file": "bowl-base-04-body.png",
+        "size": [
+          170,
+          165
+        ],
+        "mode": "RGBA"
+      },
+      {
+        "file": "bowl-base-05-ground-shadow.png",
+        "size": [
+          181,
+          178
+        ],
+        "mode": "RGBA"
+      },
+      {
+        "file": "bowl-base-05-body.png",
+        "size": [
+          181,
+          178
+        ],
+        "mode": "RGBA"
+      },
+      {
+        "file": "bowl-base-06-ground-shadow.png",
+        "size": [
+          186,
+          190
+        ],
+        "mode": "RGBA"
+      },
+      {
+        "file": "bowl-base-06-body.png",
+        "size": [
+          186,
+          190
+        ],
+        "mode": "RGBA"
+      },
+      {
+        "file": "pillar-01-ground-shadow.png",
+        "size": [
+          138,
+          166
+        ],
+        "mode": "RGBA"
+      },
+      {
+        "file": "pillar-01-body.png",
+        "size": [
+          138,
+          166
+        ],
+        "mode": "RGBA"
+      },
+      {
+        "file": "pillar-02-ground-shadow.png",
+        "size": [
+          147,
+          186
+        ],
+        "mode": "RGBA"
+      },
+      {
+        "file": "pillar-02-body.png",
+        "size": [
+          147,
+          186
+        ],
+        "mode": "RGBA"
+      },
+      {
+        "file": "pillar-03-ground-shadow.png",
+        "size": [
+          153,
+          188
+        ],
+        "mode": "RGBA"
+      },
+      {
+        "file": "pillar-03-body.png",
+        "size": [
+          153,
+          188
+        ],
+        "mode": "RGBA"
+      },
+      {
+        "file": "pillar-04-ground-shadow.png",
+        "size": [
+          158,
+          206
+        ],
+        "mode": "RGBA"
+      },
+      {
+        "file": "pillar-04-body.png",
+        "size": [
+          158,
+          206
+        ],
+        "mode": "RGBA"
+      },
+      {
+        "file": "pillar-05-ground-shadow.png",
+        "size": [
+          169,
+          210
+        ],
+        "mode": "RGBA"
+      },
+      {
+        "file": "pillar-05-body.png",
+        "size": [
+          169,
+          210
+        ],
+        "mode": "RGBA"
+      },
+      {
+        "file": "pillar-06-ground-shadow.png",
+        "size": [
+          162,
+          212
+        ],
+        "mode": "RGBA"
+      },
+      {
+        "file": "pillar-06-body.png",
+        "size": [
+          162,
+          212
+        ],
+        "mode": "RGBA"
+      },
+      {
+        "file": "skull-base-01-ground-shadow.png",
+        "size": [
+          132,
+          146
+        ],
+        "mode": "RGBA"
+      },
+      {
+        "file": "skull-base-01-body.png",
+        "size": [
+          132,
+          146
+        ],
+        "mode": "RGBA"
+      },
+      {
+        "file": "skull-base-02-ground-shadow.png",
+        "size": [
+          128,
+          147
+        ],
+        "mode": "RGBA"
+      },
+      {
+        "file": "skull-base-02-body.png",
+        "size": [
+          128,
+          147
+        ],
+        "mode": "RGBA"
+      },
+      {
+        "file": "skull-base-03-ground-shadow.png",
+        "size": [
+          137,
+          162
+        ],
+        "mode": "RGBA"
+      },
+      {
+        "file": "skull-base-03-body.png",
+        "size": [
+          137,
+          162
+        ],
+        "mode": "RGBA"
+      },
+      {
+        "file": "skull-base-04-ground-shadow.png",
+        "size": [
+          139,
+          164
+        ],
+        "mode": "RGBA"
+      },
+      {
+        "file": "skull-base-04-body.png",
+        "size": [
+          139,
+          164
+        ],
+        "mode": "RGBA"
+      },
+      {
+        "file": "skull-base-05-ground-shadow.png",
+        "size": [
+          147,
+          174
+        ],
+        "mode": "RGBA"
+      },
+      {
+        "file": "skull-base-05-body.png",
+        "size": [
+          147,
+          174
+        ],
+        "mode": "RGBA"
+      },
+      {
+        "file": "skull-base-06-ground-shadow.png",
+        "size": [
+          151,
+          184
+        ],
+        "mode": "RGBA"
+      },
+      {
+        "file": "skull-base-06-body.png",
+        "size": [
+          151,
+          184
+        ],
+        "mode": "RGBA"
+      },
+      {
+        "file": "receiver-01-ground-shadow.png",
+        "size": [
+          405,
+          361
+        ],
+        "mode": "RGBA"
+      },
+      {
+        "file": "receiver-01-rear.png",
+        "size": [
+          405,
+          361
+        ],
+        "mode": "RGBA"
+      },
+      {
+        "file": "receiver-01-front.png",
+        "size": [
+          405,
+          361
+        ],
+        "mode": "RGBA"
+      },
+      {
+        "file": "receiver-02-ground-shadow.png",
+        "size": [
+          362,
+          349
+        ],
+        "mode": "RGBA"
+      },
+      {
+        "file": "receiver-02-rear.png",
+        "size": [
+          362,
+          349
+        ],
+        "mode": "RGBA"
+      },
+      {
+        "file": "receiver-02-front.png",
+        "size": [
+          362,
+          349
+        ],
+        "mode": "RGBA"
+      },
+      {
+        "file": "receiver-03-ground-shadow.png",
+        "size": [
+          372,
+          349
+        ],
+        "mode": "RGBA"
+      },
+      {
+        "file": "receiver-03-rear.png",
+        "size": [
+          372,
+          349
+        ],
+        "mode": "RGBA"
+      },
+      {
+        "file": "receiver-03-front.png",
+        "size": [
+          372,
+          349
+        ],
+        "mode": "RGBA"
+      },
+      {
+        "file": "receiver-04-ground-shadow.png",
+        "size": [
+          416,
+          362
+        ],
+        "mode": "RGBA"
+      },
+      {
+        "file": "receiver-04-rear.png",
+        "size": [
+          416,
+          362
+        ],
+        "mode": "RGBA"
+      },
+      {
+        "file": "receiver-04-front.png",
+        "size": [
+          416,
+          362
+        ],
+        "mode": "RGBA"
+      },
+      {
+        "file": "outer-left-foreground.png",
+        "size": [
+          335,
+          1118
+        ],
+        "mode": "RGBA"
+      },
+      {
+        "file": "outer-right-foreground.png",
+        "size": [
+          335,
+          1118
+        ],
+        "mode": "RGBA"
+      },
+      {
+        "file": "divider-01-foreground.png",
+        "size": [
+          81,
+          213
+        ],
+        "mode": "RGBA"
+      },
+      {
+        "file": "divider-02-foreground.png",
+        "size": [
+          97,
+          304
+        ],
+        "mode": "RGBA"
+      },
+      {
+        "file": "divider-03-foreground.png",
+        "size": [
+          85,
+          211
+        ],
+        "mode": "RGBA"
+      },
+      {
+        "file": "near-platform-front-foreground.png",
+        "size": [
+          1536,
+          146
+        ],
+        "mode": "RGBA"
+      }
+    ],
+    "originalRgb": [
+      {
+        "file": "block-01-body.png",
+        "nonzeroAlphaPixels": 7644,
+        "partialAlphaPixels": 590,
+        "rgbMismatches": 0
+      },
+      {
+        "file": "block-02-body.png",
+        "nonzeroAlphaPixels": 8049,
+        "partialAlphaPixels": 598,
+        "rgbMismatches": 0
+      },
+      {
+        "file": "block-03-body.png",
+        "nonzeroAlphaPixels": 8254,
+        "partialAlphaPixels": 616,
+        "rgbMismatches": 0
+      },
+      {
+        "file": "block-04-body.png",
+        "nonzeroAlphaPixels": 10689,
+        "partialAlphaPixels": 688,
+        "rgbMismatches": 0
+      },
+      {
+        "file": "block-05-body.png",
+        "nonzeroAlphaPixels": 10598,
+        "partialAlphaPixels": 685,
+        "rgbMismatches": 0
+      },
+      {
+        "file": "block-06-body.png",
+        "nonzeroAlphaPixels": 11289,
+        "partialAlphaPixels": 722,
+        "rgbMismatches": 0
+      },
+      {
+        "file": "bowl-base-01-body.png",
+        "nonzeroAlphaPixels": 7303,
+        "partialAlphaPixels": 698,
+        "rgbMismatches": 0
+      },
+      {
+        "file": "bowl-base-02-body.png",
+        "nonzeroAlphaPixels": 7307,
+        "partialAlphaPixels": 700,
+        "rgbMismatches": 0
+      },
+      {
+        "file": "bowl-base-03-body.png",
+        "nonzeroAlphaPixels": 6845,
+        "partialAlphaPixels": 662,
+        "rgbMismatches": 0
+      },
+      {
+        "file": "bowl-base-04-body.png",
+        "nonzeroAlphaPixels": 8129,
+        "partialAlphaPixels": 712,
+        "rgbMismatches": 0
+      },
+      {
+        "file": "bowl-base-05-body.png",
+        "nonzeroAlphaPixels": 9422,
+        "partialAlphaPixels": 751,
+        "rgbMismatches": 0
+      },
+      {
+        "file": "bowl-base-06-body.png",
+        "nonzeroAlphaPixels": 11434,
+        "partialAlphaPixels": 893,
+        "rgbMismatches": 0
+      },
+      {
+        "file": "pillar-01-body.png",
+        "nonzeroAlphaPixels": 7362,
+        "partialAlphaPixels": 649,
+        "rgbMismatches": 0
+      },
+      {
+        "file": "pillar-02-body.png",
+        "nonzeroAlphaPixels": 8851,
+        "partialAlphaPixels": 744,
+        "rgbMismatches": 0
+      },
+      {
+        "file": "pillar-03-body.png",
+        "nonzeroAlphaPixels": 9638,
+        "partialAlphaPixels": 762,
+        "rgbMismatches": 0
+      },
+      {
+        "file": "pillar-04-body.png",
+        "nonzeroAlphaPixels": 10351,
+        "partialAlphaPixels": 825,
+        "rgbMismatches": 0
+      },
+      {
+        "file": "pillar-05-body.png",
+        "nonzeroAlphaPixels": 11207,
+        "partialAlphaPixels": 828,
+        "rgbMismatches": 0
+      },
+      {
+        "file": "pillar-06-body.png",
+        "nonzeroAlphaPixels": 11208,
+        "partialAlphaPixels": 838,
+        "rgbMismatches": 0
+      },
+      {
+        "file": "skull-base-01-body.png",
+        "nonzeroAlphaPixels": 6745,
+        "partialAlphaPixels": 614,
+        "rgbMismatches": 0
+      },
+      {
+        "file": "skull-base-02-body.png",
+        "nonzeroAlphaPixels": 6549,
+        "partialAlphaPixels": 612,
+        "rgbMismatches": 0
+      },
+      {
+        "file": "skull-base-03-body.png",
+        "nonzeroAlphaPixels": 8510,
+        "partialAlphaPixels": 684,
+        "rgbMismatches": 0
+      },
+      {
+        "file": "skull-base-04-body.png",
+        "nonzeroAlphaPixels": 8463,
+        "partialAlphaPixels": 722,
+        "rgbMismatches": 0
+      },
+      {
+        "file": "skull-base-05-body.png",
+        "nonzeroAlphaPixels": 9428,
+        "partialAlphaPixels": 744,
+        "rgbMismatches": 0
+      },
+      {
+        "file": "skull-base-06-body.png",
+        "nonzeroAlphaPixels": 11026,
+        "partialAlphaPixels": 796,
+        "rgbMismatches": 0
+      },
+      {
+        "file": "receiver-01-rear.png",
+        "nonzeroAlphaPixels": 40995,
+        "partialAlphaPixels": 1404,
+        "rgbMismatches": 0
+      },
+      {
+        "file": "receiver-01-front.png",
+        "nonzeroAlphaPixels": 43511,
+        "partialAlphaPixels": 942,
+        "rgbMismatches": 0
+      },
+      {
+        "file": "receiver-02-rear.png",
+        "nonzeroAlphaPixels": 35424,
+        "partialAlphaPixels": 1259,
+        "rgbMismatches": 0
+      },
+      {
+        "file": "receiver-02-front.png",
+        "nonzeroAlphaPixels": 44765,
+        "partialAlphaPixels": 927,
+        "rgbMismatches": 0
+      },
+      {
+        "file": "receiver-03-rear.png",
+        "nonzeroAlphaPixels": 35279,
+        "partialAlphaPixels": 1287,
+        "rgbMismatches": 0
+      },
+      {
+        "file": "receiver-03-front.png",
+        "nonzeroAlphaPixels": 46366,
+        "partialAlphaPixels": 913,
+        "rgbMismatches": 0
+      },
+      {
+        "file": "receiver-04-rear.png",
+        "nonzeroAlphaPixels": 38804,
+        "partialAlphaPixels": 1351,
+        "rgbMismatches": 0
+      },
+      {
+        "file": "receiver-04-front.png",
+        "nonzeroAlphaPixels": 46973,
+        "partialAlphaPixels": 958,
+        "rgbMismatches": 0
+      },
+      {
+        "file": "outer-left-foreground.png",
+        "nonzeroAlphaPixels": 248925,
+        "partialAlphaPixels": 4625,
+        "rgbMismatches": 0
+      },
+      {
+        "file": "outer-right-foreground.png",
+        "nonzeroAlphaPixels": 249456,
+        "partialAlphaPixels": 4678,
+        "rgbMismatches": 0
+      },
+      {
+        "file": "divider-01-foreground.png",
+        "nonzeroAlphaPixels": 13190,
+        "partialAlphaPixels": 1009,
+        "rgbMismatches": 0
+      },
+      {
+        "file": "divider-02-foreground.png",
+        "nonzeroAlphaPixels": 23812,
+        "partialAlphaPixels": 2056,
+        "rgbMismatches": 0
+      },
+      {
+        "file": "divider-03-foreground.png",
+        "nonzeroAlphaPixels": 12359,
+        "partialAlphaPixels": 944,
+        "rgbMismatches": 0
+      },
+      {
+        "file": "near-platform-front-foreground.png",
+        "nonzeroAlphaPixels": 211992,
+        "partialAlphaPixels": 683,
+        "rgbMismatches": 0
+      }
+    ],
+    "actorBounds": [
+      {
+        "actor": "body",
+        "bounds": [
+          28,
+          28,
+          228,
+          229
+        ],
+        "center": [
+          128,
+          128.5
+        ],
+        "contentRadius": [
+          100,
+          100.5
+        ]
+      },
+      {
+        "actor": "shadow",
+        "bounds": [
+          25,
+          113,
+          231,
+          146
+        ],
+        "center": [
+          128,
+          129.5
+        ],
+        "contentRadius": [
+          103,
+          16.5
+        ]
+      }
+    ],
+    "shadowTexture": {
+      "rgbMaxAtNonzeroAlpha": 1,
+      "maxAlpha": 205,
+      "alphaLevels": 205,
+      "effectiveMaxAlpha": 0.5225490196078432
+    },
+    "shadowActualPixels": {
+      "method": "actual normal screenshot ROIs; shadow alpha16 outside1.5R; body-free subset also excludes sampled body alpha and one pixel neighborhood; positives retained; screenshots are LOSSY JPEG, not GPU readback",
+      "strictZeroBrighteningVerdict": "UNVERIFIED: lossy JPEG prevents radiometric attribution of weak positive residuals",
+      "comparisons": [
+        {
+          "target": "19-front-973",
+          "baseline": "00-load-normal",
+          "targetFormat": "JPEG",
+          "baselineFormat": "JPEG",
+          "broad": {
+            "pixels": 40,
+            "darkened": 37,
+            "brighter": 3,
+            "minLumaDelta": -19.8556,
+            "maxLumaDelta": 1.7187999999999994
+          },
+          "bodyFree": {
+            "pixels": 40,
+            "darkened": 37,
+            "brighter": 3,
+            "minLumaDelta": -19.8556,
+            "maxLumaDelta": 1.7187999999999994
+          },
+          "positiveResiduals": [
+            {
+              "pixel": [
+                262,
+                377
+              ],
+              "lumaDelta": 1.7187999999999994,
+              "bodyAlpha": 0,
+              "bodyWithinOnePixel": false
+            },
+            {
+              "pixel": [
+                259,
+                378
+              ],
+              "lumaDelta": 0.7953999999999999,
+              "bodyAlpha": 0,
+              "bodyWithinOnePixel": false
+            },
+            {
+              "pixel": [
+                260,
+                378
+              ],
+              "lumaDelta": 0.29799999999999993,
+              "bodyAlpha": 0,
+              "bodyWithinOnePixel": false
+            }
+          ]
+        },
+        {
+          "target": "61-shadow-parts-off-973-normal",
+          "baseline": "01-parts-off-normal",
+          "targetFormat": "JPEG",
+          "baselineFormat": "JPEG",
+          "broad": {
+            "pixels": 40,
+            "darkened": 38,
+            "brighter": 1,
+            "minLumaDelta": -18.647,
+            "maxLumaDelta": 2.8568
+          },
+          "bodyFree": {
+            "pixels": 40,
+            "darkened": 38,
+            "brighter": 1,
+            "minLumaDelta": -18.647,
+            "maxLumaDelta": 2.8568
+          },
+          "positiveResiduals": [
+            {
+              "pixel": [
+                262,
+                377
+              ],
+              "lumaDelta": 2.8568,
+              "bodyAlpha": 0,
+              "bodyWithinOnePixel": false
+            }
+          ]
+        }
+      ]
+    },
+    "receivers": [
+      {
+        "id": "receiver-01",
+        "sharedAlphaPixels": 0,
+        "rearAlphaAtAcceptedCenter": 1
+      },
+      {
+        "id": "receiver-02",
+        "sharedAlphaPixels": 0,
+        "rearAlphaAtAcceptedCenter": 1
+      },
+      {
+        "id": "receiver-03",
+        "sharedAlphaPixels": 0,
+        "rearAlphaAtAcceptedCenter": 1
+      },
+      {
+        "id": "receiver-04",
+        "sharedAlphaPixels": 0,
+        "rearAlphaAtAcceptedCenter": 1
+      }
+    ],
+    "opaqueInteriorProbes": [
+      {
+        "id": "bowl-base-01",
+        "blackInteriorPixels": 2131,
+        "minAlpha": 255,
+        "nonOpaque": 0,
+        "enclosedTransparentPixels": 0
+      },
+      {
+        "id": "bowl-base-02",
+        "blackInteriorPixels": 1920,
+        "minAlpha": 255,
+        "nonOpaque": 0,
+        "enclosedTransparentPixels": 0
+      },
+      {
+        "id": "bowl-base-03",
+        "blackInteriorPixels": 1101,
+        "minAlpha": 255,
+        "nonOpaque": 0,
+        "enclosedTransparentPixels": 0
+      },
+      {
+        "id": "bowl-base-04",
+        "blackInteriorPixels": 1862,
+        "minAlpha": 255,
+        "nonOpaque": 0,
+        "enclosedTransparentPixels": 0
+      },
+      {
+        "id": "bowl-base-05",
+        "blackInteriorPixels": 2423,
+        "minAlpha": 255,
+        "nonOpaque": 0,
+        "enclosedTransparentPixels": 0
+      },
+      {
+        "id": "bowl-base-06",
+        "blackInteriorPixels": 3739,
+        "minAlpha": 255,
+        "nonOpaque": 0,
+        "enclosedTransparentPixels": 0
+      },
+      {
+        "id": "skull-base-01",
+        "blackInteriorPixels": 650,
+        "minAlpha": 255,
+        "nonOpaque": 0,
+        "enclosedTransparentPixels": 0
+      },
+      {
+        "id": "skull-base-02",
+        "blackInteriorPixels": 629,
+        "minAlpha": 255,
+        "nonOpaque": 0,
+        "enclosedTransparentPixels": 0
+      },
+      {
+        "id": "skull-base-03",
+        "blackInteriorPixels": 1531,
+        "minAlpha": 255,
+        "nonOpaque": 0,
+        "enclosedTransparentPixels": 0
+      },
+      {
+        "id": "skull-base-04",
+        "blackInteriorPixels": 1025,
+        "minAlpha": 255,
+        "nonOpaque": 0,
+        "enclosedTransparentPixels": 0
+      },
+      {
+        "id": "skull-base-05",
+        "blackInteriorPixels": 1344,
+        "minAlpha": 255,
+        "nonOpaque": 0,
+        "enclosedTransparentPixels": 0
+      },
+      {
+        "id": "skull-base-06",
+        "blackInteriorPixels": 1321,
+        "minAlpha": 255,
+        "nonOpaque": 0,
+        "enclosedTransparentPixels": 0
+      }
+    ],
+    "observedPoses": [
+      {
+        "file": "00-load-normal.dom.json",
+        "seed": 0,
+        "tick": 0,
+        "hiddenFraction": 0.40409273168454096,
+        "overlapSamples": 4225,
+        "parts": [
+          {
+            "id": "bowl-base-01:body",
+            "potential": 0.40409273168454096,
+            "hidden": 0.40409273168454096,
+            "ahead": true
+          }
+        ]
+      },
+      {
+        "file": "01-parts-off-normal.dom.json",
+        "seed": 0,
+        "tick": 0,
+        "hiddenFraction": 0,
+        "overlapSamples": 0,
+        "parts": [
+          {
+            "id": "bowl-base-01:body",
+            "potential": 0.40409273168454096,
+            "hidden": 0,
+            "ahead": false
+          }
+        ]
+      },
+      {
+        "file": "02-shadow-drop-zoom.dom.json",
+        "seed": 0,
+        "tick": 0,
+        "hiddenFraction": 0.40409273168454096,
+        "overlapSamples": 4225,
+        "parts": [
+          {
+            "id": "bowl-base-01:body",
+            "potential": 0.40409273168454096,
+            "hidden": 0.40409273168454096,
+            "ahead": true
+          }
+        ]
+      },
+      {
+        "file": "03-shadow-floor-300-normal.dom.json",
+        "seed": 0,
+        "tick": 300,
+        "hiddenFraction": 0.3108358346984786,
+        "overlapSamples": 3764,
+        "parts": [
+          {
+            "id": "block-02:body",
+            "potential": 0.3108358346984786,
+            "hidden": 0.3108358346984786,
+            "ahead": true
+          }
+        ]
+      },
+      {
+        "file": "04-shadow-floor-300-zoom.dom.json",
+        "seed": 0,
+        "tick": 300,
+        "hiddenFraction": 0.3108358346984786,
+        "overlapSamples": 3764,
+        "parts": [
+          {
+            "id": "block-02:body",
+            "potential": 0.3108358346984786,
+            "hidden": 0.3108358346984786,
+            "ahead": true
+          }
+        ]
+      },
+      {
+        "file": "05-boundary-459.dom.json",
+        "seed": 0,
+        "tick": 459,
+        "hiddenFraction": 0.7717199331455814,
+        "overlapSamples": 8901,
+        "parts": [
+          {
+            "id": "outer-left:foreground",
+            "potential": 0.7717199331455814,
+            "hidden": 0.7717199331455814,
+            "ahead": true
+          }
+        ]
+      },
+      {
+        "file": "06-boundary-460.dom.json",
+        "seed": 0,
+        "tick": 460,
+        "hiddenFraction": 0.8191342034173715,
+        "overlapSamples": 9410,
+        "parts": [
+          {
+            "id": "outer-left:foreground",
+            "potential": 0.8191342034173715,
+            "hidden": 0.8191342034173715,
+            "ahead": true
+          }
+        ]
+      },
+      {
+        "file": "06-boundary-461.dom.json",
+        "seed": 0,
+        "tick": 461,
+        "hiddenFraction": 0.8423470064038199,
+        "overlapSamples": 9637,
+        "parts": [
+          {
+            "id": "outer-left:foreground",
+            "potential": 0.8423470064038199,
+            "hidden": 0.8423470064038199,
+            "ahead": true
+          }
+        ]
+      },
+      {
+        "file": "06-boundary-462.dom.json",
+        "seed": 0,
+        "tick": 462,
+        "hiddenFraction": 0.8132328788476189,
+        "overlapSamples": 9316,
+        "parts": [
+          {
+            "id": "outer-left:foreground",
+            "potential": 0.8132328788476189,
+            "hidden": 0.8132328788476189,
+            "ahead": true
+          }
+        ]
+      },
+      {
+        "file": "07-side-839.dom.json",
+        "seed": 0,
+        "tick": 839,
+        "hiddenFraction": 0.07867921670574585,
+        "overlapSamples": 1385,
+        "parts": [
+          {
+            "id": "pillar-04:body",
+            "potential": 0.07867921670574585,
+            "hidden": 0.07867921670574585,
+            "ahead": true
+          }
+        ]
+      },
+      {
+        "file": "08-side-840.dom.json",
+        "seed": 0,
+        "tick": 840,
+        "hiddenFraction": 0.08961154487584917,
+        "overlapSamples": 1546,
+        "parts": [
+          {
+            "id": "pillar-04:body",
+            "potential": 0.08961154487584917,
+            "hidden": 0.08961154487584917,
+            "ahead": true
+          }
+        ]
+      },
+      {
+        "file": "08-side-841.dom.json",
+        "seed": 0,
+        "tick": 841,
+        "hiddenFraction": 0.08257972127362538,
+        "overlapSamples": 1461,
+        "parts": [
+          {
+            "id": "pillar-04:body",
+            "potential": 0.08257972127362538,
+            "hidden": 0.08257972127362538,
+            "ahead": true
+          }
+        ]
+      },
+      {
+        "file": "08-side-842.dom.json",
+        "seed": 0,
+        "tick": 842,
+        "hiddenFraction": 0,
+        "overlapSamples": 0,
+        "parts": [
+          {
+            "id": "pillar-04:body",
+            "potential": 0.021740428952563614,
+            "hidden": 0,
+            "ahead": false
+          }
+        ]
+      },
+      {
+        "file": "09-side-841-zoom.dom.json",
+        "seed": 0,
+        "tick": 841,
+        "hiddenFraction": 0.08257972127362538,
+        "overlapSamples": 1461,
+        "parts": [
+          {
+            "id": "pillar-04:body",
+            "potential": 0.08257972127362538,
+            "hidden": 0.08257972127362538,
+            "ahead": true
+          }
+        ]
+      },
+      {
+        "file": "10-side-842-zoom.dom.json",
+        "seed": 0,
+        "tick": 842,
+        "hiddenFraction": 0,
+        "overlapSamples": 0,
+        "parts": [
+          {
+            "id": "pillar-04:body",
+            "potential": 0.021740428952563614,
+            "hidden": 0,
+            "ahead": false
+          }
+        ]
+      },
+      {
+        "file": "11-capture0-885.dom.json",
+        "seed": 0,
+        "tick": 885,
+        "hiddenFraction": 0,
+        "overlapSamples": 0,
+        "parts": [
+          {
+            "id": "receiver-01:rear",
+            "potential": 1,
+            "hidden": 0,
+            "ahead": false
+          }
+        ]
+      },
+      {
+        "file": "12-capture0-886.dom.json",
+        "seed": 0,
+        "tick": 886,
+        "hiddenFraction": 0,
+        "overlapSamples": 0,
+        "parts": [
+          {
+            "id": "receiver-01:rear",
+            "potential": 1,
+            "hidden": 0,
+            "ahead": false
+          }
+        ]
+      },
+      {
+        "file": "12-capture0-887.dom.json",
+        "seed": 0,
+        "tick": 887,
+        "hiddenFraction": 0,
+        "overlapSamples": 0,
+        "parts": [
+          {
+            "id": "receiver-01:rear",
+            "potential": 1,
+            "hidden": 0,
+            "ahead": false
+          }
+        ]
+      },
+      {
+        "file": "12-capture0-888.dom.json",
+        "seed": 0,
+        "tick": 888,
+        "hiddenFraction": 0,
+        "overlapSamples": 0,
+        "parts": [
+          {
+            "id": "receiver-01:rear",
+            "potential": 1,
+            "hidden": 0,
+            "ahead": false
+          }
+        ]
+      },
+      {
+        "file": "13-capture0-done-step.dom.json",
+        "seed": 0,
+        "tick": 888,
+        "hiddenFraction": 0,
+        "overlapSamples": 0,
+        "parts": [
+          {
+            "id": "receiver-01:rear",
+            "potential": 1,
+            "hidden": 0,
+            "ahead": false
+          }
+        ]
+      },
+      {
+        "file": "14-capture0-888-zoom.dom.json",
+        "seed": 0,
+        "tick": 888,
+        "hiddenFraction": 0,
+        "overlapSamples": 0,
+        "parts": [
+          {
+            "id": "receiver-01:rear",
+            "potential": 1,
+            "hidden": 0,
+            "ahead": false
+          }
+        ]
+      },
+      {
+        "file": "15-corner-366.dom.json",
+        "seed": 2,
+        "tick": 366,
+        "hiddenFraction": 0.20221803391437995,
+        "overlapSamples": 2778,
+        "parts": [
+          {
+            "id": "pillar-02:body",
+            "potential": 0.20221803391437995,
+            "hidden": 0.20221803391437995,
+            "ahead": true
+          }
+        ]
+      },
+      {
+        "file": "16-corner-367.dom.json",
+        "seed": 2,
+        "tick": 367,
+        "hiddenFraction": 0.2714137415069892,
+        "overlapSamples": 3659,
+        "parts": [
+          {
+            "id": "pillar-02:body",
+            "potential": 0.2714137415069892,
+            "hidden": 0.2714137415069892,
+            "ahead": true
+          }
+        ]
+      },
+      {
+        "file": "16-corner-368.dom.json",
+        "seed": 2,
+        "tick": 368,
+        "hiddenFraction": 0.3431954863647188,
+        "overlapSamples": 4640,
+        "parts": [
+          {
+            "id": "pillar-02:body",
+            "potential": 0.3431954863647188,
+            "hidden": 0.3431954863647188,
+            "ahead": true
+          }
+        ]
+      },
+      {
+        "file": "16-corner-369.dom.json",
+        "seed": 2,
+        "tick": 369,
+        "hiddenFraction": 0.36564870802473864,
+        "overlapSamples": 4882,
+        "parts": [
+          {
+            "id": "pillar-02:body",
+            "potential": 0.36564870802473864,
+            "hidden": 0.36564870802473864,
+            "ahead": true
+          }
+        ]
+      },
+      {
+        "file": "17-corner-368-zoom.dom.json",
+        "seed": 2,
+        "tick": 368,
+        "hiddenFraction": 0.3431954863647188,
+        "overlapSamples": 4640,
+        "parts": [
+          {
+            "id": "pillar-02:body",
+            "potential": 0.3431954863647188,
+            "hidden": 0.3431954863647188,
+            "ahead": true
+          }
+        ]
+      },
+      {
+        "file": "18-front-971.dom.json",
+        "seed": 2,
+        "tick": 971,
+        "hiddenFraction": 0,
+        "overlapSamples": 0,
+        "parts": [
+          {
+            "id": "pillar-02:body",
+            "potential": 0.12426060417737611,
+            "hidden": 0,
+            "ahead": false
+          }
+        ]
+      },
+      {
+        "file": "19-front-972.dom.json",
+        "seed": 2,
+        "tick": 972,
+        "hiddenFraction": 0,
+        "overlapSamples": 0,
+        "parts": [
+          {
+            "id": "pillar-02:body",
+            "potential": 0.1812119587534458,
+            "hidden": 0,
+            "ahead": false
+          }
+        ]
+      },
+      {
+        "file": "19-front-973.dom.json",
+        "seed": 2,
+        "tick": 973,
+        "hiddenFraction": 0,
+        "overlapSamples": 0,
+        "parts": [
+          {
+            "id": "pillar-02:body",
+            "potential": 0.1984265409263246,
+            "hidden": 0,
+            "ahead": false
+          }
+        ]
+      },
+      {
+        "file": "19-front-974.dom.json",
+        "seed": 2,
+        "tick": 974,
+        "hiddenFraction": 0,
+        "overlapSamples": 0,
+        "parts": [
+          {
+            "id": "pillar-02:body",
+            "potential": 0.1533553158940579,
+            "hidden": 0,
+            "ahead": false
+          }
+        ]
+      },
+      {
+        "file": "20-front-973-zoom.dom.json",
+        "seed": 2,
+        "tick": 973,
+        "hiddenFraction": 0,
+        "overlapSamples": 0,
+        "parts": [
+          {
+            "id": "pillar-02:body",
+            "potential": 0.1984265409263246,
+            "hidden": 0,
+            "ahead": false
+          }
+        ]
+      },
+      {
+        "file": "21-draft-1-blur.dom.json",
+        "seed": 2,
+        "tick": 213,
+        "hiddenFraction": 0.000007236277890186654,
+        "overlapSamples": 0,
+        "parts": [
+          {
+            "id": "pillar-01:body",
+            "potential": 0.000007236277890186667,
+            "hidden": 0.000007236277890186667,
+            "ahead": true
+          }
+        ]
+      },
+      {
+        "file": "21-draft-1-digit-3.dom.json",
+        "seed": 2,
+        "tick": 133,
+        "hiddenFraction": 0,
+        "overlapSamples": 0,
+        "parts": []
+      },
+      {
+        "file": "21-draft-1-digit-7.dom.json",
+        "seed": 2,
+        "tick": 109,
+        "hiddenFraction": 0.45605991853562344,
+        "overlapSamples": 4834,
+        "parts": [
+          {
+            "id": "bowl-base-01:body",
+            "potential": 0.45605991853562344,
+            "hidden": 0.45605991853562344,
+            "ahead": true
+          }
+        ]
+      },
+      {
+        "file": "21-draft-1-digit-9.dom.json",
+        "seed": 2,
+        "tick": 86,
+        "hiddenFraction": 1,
+        "overlapSamples": 10032,
+        "parts": [
+          {
+            "id": "bowl-base-01:body",
+            "potential": 1,
+            "hidden": 1,
+            "ahead": true
+          }
+        ]
+      },
+      {
+        "file": "21-draft-1-go.dom.json",
+        "seed": 2,
+        "tick": 973,
+        "hiddenFraction": 0,
+        "overlapSamples": 0,
+        "parts": [
+          {
+            "id": "pillar-02:body",
+            "potential": 0.1984265409263246,
+            "hidden": 0,
+            "ahead": false
+          }
+        ]
+      },
+      {
+        "file": "21-draft-1-playing.dom.json",
+        "seed": 2,
+        "tick": 56,
+        "hiddenFraction": 0.9943080868044492,
+        "overlapSamples": 9846,
+        "parts": [
+          {
+            "id": "bowl-base-01:body",
+            "potential": 0.9943080868044492,
+            "hidden": 0.9943080868044492,
+            "ahead": true
+          }
+        ]
+      },
+      {
+        "file": "21-draft-2-blur.dom.json",
+        "seed": 2,
+        "tick": 216,
+        "hiddenFraction": 0.0009200092633598666,
+        "overlapSamples": 47,
+        "parts": [
+          {
+            "id": "pillar-01:body",
+            "potential": 0.0009200092633598666,
+            "hidden": 0.0009200092633598666,
+            "ahead": true
+          }
+        ]
+      },
+      {
+        "file": "21-draft-2-digit-3.dom.json",
+        "seed": 2,
+        "tick": 136,
+        "hiddenFraction": 0,
+        "overlapSamples": 0,
+        "parts": []
+      },
+      {
+        "file": "21-draft-2-digit-7.dom.json",
+        "seed": 2,
+        "tick": 113,
+        "hiddenFraction": 0.2415861654017154,
+        "overlapSamples": 2656,
+        "parts": [
+          {
+            "id": "bowl-base-01:body",
+            "potential": 0.2415861654017154,
+            "hidden": 0.2415861654017154,
+            "ahead": true
+          }
+        ]
+      },
+      {
+        "file": "21-draft-2-digit-9.dom.json",
+        "seed": 2,
+        "tick": 83,
+        "hiddenFraction": 1,
+        "overlapSamples": 10012,
+        "parts": [
+          {
+            "id": "bowl-base-01:body",
+            "potential": 1,
+            "hidden": 1,
+            "ahead": true
+          }
+        ]
+      },
+      {
+        "file": "21-draft-2-go.dom.json",
+        "seed": 2,
+        "tick": 973,
+        "hiddenFraction": 0,
+        "overlapSamples": 0,
+        "parts": [
+          {
+            "id": "pillar-02:body",
+            "potential": 0.1984265409263246,
+            "hidden": 0,
+            "ahead": false
+          }
+        ]
+      },
+      {
+        "file": "21-draft-2-playing.dom.json",
+        "seed": 2,
+        "tick": 56,
+        "hiddenFraction": 0.9943080868044492,
+        "overlapSamples": 9846,
+        "parts": [
+          {
+            "id": "bowl-base-01:body",
+            "potential": 0.9943080868044492,
+            "hidden": 0.9943080868044492,
+            "ahead": true
+          }
+        ]
+      },
+      {
+        "file": "21-draft-3-blur.dom.json",
+        "seed": 2,
+        "tick": 216,
+        "hiddenFraction": 0.0009200092633598666,
+        "overlapSamples": 47,
+        "parts": [
+          {
+            "id": "pillar-01:body",
+            "potential": 0.0009200092633598666,
+            "hidden": 0.0009200092633598666,
+            "ahead": true
+          }
+        ]
+      },
+      {
+        "file": "21-draft-3-digit-3.dom.json",
+        "seed": 2,
+        "tick": 136,
+        "hiddenFraction": 0,
+        "overlapSamples": 0,
+        "parts": []
+      },
+      {
+        "file": "21-draft-3-digit-7.dom.json",
+        "seed": 2,
+        "tick": 110,
+        "hiddenFraction": 0.40053995001226567,
+        "overlapSamples": 4275,
+        "parts": [
+          {
+            "id": "bowl-base-01:body",
+            "potential": 0.40053995001226567,
+            "hidden": 0.40053995001226567,
+            "ahead": true
+          }
+        ]
+      },
+      {
+        "file": "21-draft-3-digit-9.dom.json",
+        "seed": 2,
+        "tick": 86,
+        "hiddenFraction": 1,
+        "overlapSamples": 10032,
+        "parts": [
+          {
+            "id": "bowl-base-01:body",
+            "potential": 1,
+            "hidden": 1,
+            "ahead": true
+          }
+        ]
+      },
+      {
+        "file": "21-draft-3-go.dom.json",
+        "seed": 2,
+        "tick": 973,
+        "hiddenFraction": 0,
+        "overlapSamples": 0,
+        "parts": [
+          {
+            "id": "pillar-02:body",
+            "potential": 0.1984265409263246,
+            "hidden": 0,
+            "ahead": false
+          }
+        ]
+      },
+      {
+        "file": "21-draft-3-playing.dom.json",
+        "seed": 2,
+        "tick": 56,
+        "hiddenFraction": 0.9943080868044492,
+        "overlapSamples": 9846,
+        "parts": [
+          {
+            "id": "bowl-base-01:body",
+            "potential": 0.9943080868044492,
+            "hidden": 0.9943080868044492,
+            "ahead": true
+          }
+        ]
+      },
+      {
+        "file": "22-rim01-before-1743.dom.json",
+        "seed": 2,
+        "tick": 1743,
+        "hiddenFraction": 0.020079212811330804,
+        "overlapSamples": 568,
+        "parts": [
+          {
+            "id": "receiver-01:rear",
+            "potential": 0.9799207871886693,
+            "hidden": 0,
+            "ahead": false
+          },
+          {
+            "id": "receiver-01:front",
+            "potential": 0.020079212811330804,
+            "hidden": 0.020079212811330804,
+            "ahead": true
+          }
+        ]
+      },
+      {
+        "file": "23-rim01-1744.dom.json",
+        "seed": 2,
+        "tick": 1744,
+        "hiddenFraction": 0.11795502549387857,
+        "overlapSamples": 2405,
+        "parts": [
+          {
+            "id": "receiver-01:rear",
+            "potential": 0.8820449745061213,
+            "hidden": 0,
+            "ahead": false
+          },
+          {
+            "id": "receiver-01:front",
+            "potential": 0.11795502549387857,
+            "hidden": 0.11795502549387857,
+            "ahead": true
+          }
+        ]
+      },
+      {
+        "file": "23-rim01-1745.dom.json",
+        "seed": 2,
+        "tick": 1745,
+        "hiddenFraction": 0.2505750251008873,
+        "overlapSamples": 4806,
+        "parts": [
+          {
+            "id": "receiver-01:rear",
+            "potential": 0.7494249748991126,
+            "hidden": 0,
+            "ahead": false
+          },
+          {
+            "id": "receiver-01:front",
+            "potential": 0.2505750251008873,
+            "hidden": 0.2505750251008873,
+            "ahead": true
+          }
+        ]
+      },
+      {
+        "file": "23-rim01-1746.dom.json",
+        "seed": 2,
+        "tick": 1746,
+        "hiddenFraction": 0.40144063964859333,
+        "overlapSamples": 7473,
+        "parts": [
+          {
+            "id": "receiver-01:rear",
+            "potential": 0.5985593603514066,
+            "hidden": 0,
+            "ahead": false
+          },
+          {
+            "id": "receiver-01:front",
+            "potential": 0.40144063964859333,
+            "hidden": 0.40144063964859333,
+            "ahead": true
+          }
+        ]
+      },
+      {
+        "file": "23-rim01-1747.dom.json",
+        "seed": 2,
+        "tick": 1747,
+        "hiddenFraction": 0.5590090079844623,
+        "overlapSamples": 10246,
+        "parts": [
+          {
+            "id": "receiver-01:rear",
+            "potential": 0.4409909920155377,
+            "hidden": 0,
+            "ahead": false
+          },
+          {
+            "id": "receiver-01:front",
+            "potential": 0.5590090079844623,
+            "hidden": 0.5590090079844623,
+            "ahead": true
+          }
+        ]
+      },
+      {
+        "file": "23-rim01-1748.dom.json",
+        "seed": 2,
+        "tick": 1748,
+        "hiddenFraction": 0.7134010708287387,
+        "overlapSamples": 13088,
+        "parts": [
+          {
+            "id": "receiver-01:rear",
+            "potential": 0.28659892917126123,
+            "hidden": 0,
+            "ahead": false
+          },
+          {
+            "id": "receiver-01:front",
+            "potential": 0.7134010708287387,
+            "hidden": 0.7134010708287387,
+            "ahead": true
+          }
+        ]
+      },
+      {
+        "file": "23-rim01-1749.dom.json",
+        "seed": 2,
+        "tick": 1749,
+        "hiddenFraction": 0.8532041935265825,
+        "overlapSamples": 15517,
+        "parts": [
+          {
+            "id": "receiver-01:rear",
+            "potential": 0.14679580647341778,
+            "hidden": 0,
+            "ahead": false
+          },
+          {
+            "id": "receiver-01:front",
+            "potential": 0.8532041935265825,
+            "hidden": 0.8532041935265825,
+            "ahead": true
+          }
+        ]
+      },
+      {
+        "file": "23-rim01-1750.dom.json",
+        "seed": 2,
+        "tick": 1750,
+        "hiddenFraction": 0.9633347508125594,
+        "overlapSamples": 17509,
+        "parts": [
+          {
+            "id": "receiver-01:rear",
+            "potential": 0.03666524918744034,
+            "hidden": 0,
+            "ahead": false
+          },
+          {
+            "id": "receiver-01:front",
+            "potential": 0.9633347508125594,
+            "hidden": 0.9633347508125594,
+            "ahead": true
+          }
+        ]
+      },
+      {
+        "file": "23-rim01-1751.dom.json",
+        "seed": 2,
+        "tick": 1751,
+        "hiddenFraction": 0.9999999999999998,
+        "overlapSamples": 18106,
+        "parts": [
+          {
+            "id": "receiver-01:front",
+            "potential": 0.9999999999999998,
+            "hidden": 0.9999999999999998,
+            "ahead": true
+          }
+        ]
+      },
+      {
+        "file": "24-rim01-normal-on.dom.json",
+        "seed": 2,
+        "tick": 1747,
+        "hiddenFraction": 0.5590090079844623,
+        "overlapSamples": 10246,
+        "parts": [
+          {
+            "id": "receiver-01:rear",
+            "potential": 0.4409909920155377,
+            "hidden": 0,
+            "ahead": false
+          },
+          {
+            "id": "receiver-01:front",
+            "potential": 0.5590090079844623,
+            "hidden": 0.5590090079844623,
+            "ahead": true
+          }
+        ]
+      },
+      {
+        "file": "25-rim01-normal-off.dom.json",
+        "seed": 2,
+        "tick": 1747,
+        "hiddenFraction": 0,
+        "overlapSamples": 0,
+        "parts": [
+          {
+            "id": "receiver-01:rear",
+            "potential": 0.4409909920155377,
+            "hidden": 0,
+            "ahead": false
+          },
+          {
+            "id": "receiver-01:front",
+            "potential": 0.5590090079844623,
+            "hidden": 0,
+            "ahead": false
+          }
+        ]
+      },
+      {
+        "file": "26-rim01-zoom-on.dom.json",
+        "seed": 2,
+        "tick": 1747,
+        "hiddenFraction": 0.5590090079844623,
+        "overlapSamples": 10246,
+        "parts": [
+          {
+            "id": "receiver-01:rear",
+            "potential": 0.4409909920155377,
+            "hidden": 0,
+            "ahead": false
+          },
+          {
+            "id": "receiver-01:front",
+            "potential": 0.5590090079844623,
+            "hidden": 0.5590090079844623,
+            "ahead": true
+          }
+        ]
+      },
+      {
+        "file": "27-rim01-zoom-off.dom.json",
+        "seed": 2,
+        "tick": 1747,
+        "hiddenFraction": 0,
+        "overlapSamples": 0,
+        "parts": [
+          {
+            "id": "receiver-01:rear",
+            "potential": 0.4409909920155377,
+            "hidden": 0,
+            "ahead": false
+          },
+          {
+            "id": "receiver-01:front",
+            "potential": 0.5590090079844623,
+            "hidden": 0,
+            "ahead": false
+          }
+        ]
+      },
+      {
+        "file": "28-seed2-LOST.dom.json",
+        "seed": 2,
+        "tick": 1812,
+        "hiddenFraction": 0,
+        "overlapSamples": 0,
+        "parts": []
+      },
+      {
+        "file": "29-rim01-before-1742.dom.json",
+        "seed": 2,
+        "tick": 1742,
+        "hiddenFraction": 0,
+        "overlapSamples": 0,
+        "parts": [
+          {
+            "id": "receiver-01:rear",
+            "potential": 1,
+            "hidden": 0,
+            "ahead": false
+          }
+        ]
+      },
+      {
+        "file": "30-rim01-after-1782.dom.json",
+        "seed": 2,
+        "tick": 1782,
+        "hiddenFraction": 1,
+        "overlapSamples": 19793,
+        "parts": [
+          {
+            "id": "near-platform-front:foreground",
+            "potential": 1,
+            "hidden": 1,
+            "ahead": true
+          }
+        ]
+      },
+      {
+        "file": "31-capture1-882.dom.json",
+        "seed": 1,
+        "tick": 882,
+        "hiddenFraction": 0,
+        "overlapSamples": 0,
+        "parts": [
+          {
+            "id": "receiver-01:rear",
+            "potential": 1,
+            "hidden": 0,
+            "ahead": false
+          }
+        ]
+      },
+      {
+        "file": "32-capture1-883.dom.json",
+        "seed": 1,
+        "tick": 883,
+        "hiddenFraction": 0,
+        "overlapSamples": 0,
+        "parts": [
+          {
+            "id": "receiver-01:rear",
+            "potential": 1,
+            "hidden": 0,
+            "ahead": false
+          }
+        ]
+      },
+      {
+        "file": "32-capture1-884.dom.json",
+        "seed": 1,
+        "tick": 884,
+        "hiddenFraction": 0,
+        "overlapSamples": 0,
+        "parts": [
+          {
+            "id": "receiver-01:rear",
+            "potential": 1,
+            "hidden": 0,
+            "ahead": false
+          }
+        ]
+      },
+      {
+        "file": "33-post-capture1-plus100.dom.json",
+        "seed": 1,
+        "tick": 884,
+        "hiddenFraction": 0,
+        "overlapSamples": 0,
+        "parts": [
+          {
+            "id": "receiver-01:rear",
+            "potential": 1,
+            "hidden": 0,
+            "ahead": false
+          }
+        ]
+      },
+      {
+        "file": "34-source-play-side-start.dom.json",
+        "seed": 0,
+        "tick": 835,
+        "hiddenFraction": 0.01508562237281808,
+        "overlapSamples": 361,
+        "parts": [
+          {
+            "id": "pillar-04:body",
+            "potential": 0.01508562237281808,
+            "hidden": 0.01508562237281808,
+            "ahead": true
+          }
+        ]
+      },
+      {
+        "file": "35-source-play-side-capture-end.dom.json",
+        "seed": 0,
+        "tick": 888,
+        "hiddenFraction": 0,
+        "overlapSamples": 0,
+        "parts": [
+          {
+            "id": "receiver-01:rear",
+            "potential": 1,
+            "hidden": 0,
+            "ahead": false
+          }
+        ]
+      },
+      {
+        "file": "36-export-base.dom.json",
+        "seed": 2,
+        "tick": 973,
+        "hiddenFraction": 0,
+        "overlapSamples": 0,
+        "parts": [
+          {
+            "id": "pillar-02:body",
+            "potential": 0.1984265409263246,
+            "hidden": 0,
+            "ahead": false
+          }
+        ]
+      },
+      {
+        "file": "37-manual-974.dom.json",
+        "seed": 2,
+        "tick": 974,
+        "hiddenFraction": 0,
+        "overlapSamples": 0,
+        "parts": [
+          {
+            "id": "pillar-02:body",
+            "potential": 0.1533553158940579,
+            "hidden": 0,
+            "ahead": false
+          }
+        ]
+      },
+      {
+        "file": "38-same-file-import.dom.json",
+        "seed": 2,
+        "tick": 973,
+        "hiddenFraction": 0,
+        "overlapSamples": 0,
+        "parts": [
+          {
+            "id": "pillar-02:body",
+            "potential": 0.1984265409263246,
+            "hidden": 0,
+            "ahead": false
+          }
+        ]
+      },
+      {
+        "file": "55-supplied-ordinary-890.dom.json",
+        "seed": 1632614828,
+        "tick": 890,
+        "hiddenFraction": 1,
+        "overlapSamples": 11465,
+        "parts": [
+          {
+            "id": "block-02:body",
+            "potential": 1,
+            "hidden": 1,
+            "ahead": true
+          }
+        ]
+      },
+      {
+        "file": "56-ordinary-890-normal.dom.json",
+        "seed": 1632614828,
+        "tick": 890,
+        "hiddenFraction": 1,
+        "overlapSamples": 11465,
+        "parts": [
+          {
+            "id": "block-02:body",
+            "potential": 1,
+            "hidden": 1,
+            "ahead": true
+          }
+        ]
+      },
+      {
+        "file": "57-ordinary-891.dom.json",
+        "seed": 1632614828,
+        "tick": 891,
+        "hiddenFraction": 1,
+        "overlapSamples": 11469,
+        "parts": [
+          {
+            "id": "block-02:body",
+            "potential": 1,
+            "hidden": 1,
+            "ahead": true
+          }
+        ]
+      },
+      {
+        "file": "57-ordinary-892.dom.json",
+        "seed": 1632614828,
+        "tick": 892,
+        "hiddenFraction": 1,
+        "overlapSamples": 11470,
+        "parts": [
+          {
+            "id": "block-02:body",
+            "potential": 1,
+            "hidden": 1,
+            "ahead": true
+          }
+        ]
+      },
+      {
+        "file": "58-ordinary-891-zoom.dom.json",
+        "seed": 1632614828,
+        "tick": 891,
+        "hiddenFraction": 1,
+        "overlapSamples": 11469,
+        "parts": [
+          {
+            "id": "block-02:body",
+            "potential": 1,
+            "hidden": 1,
+            "ahead": true
+          }
+        ]
+      },
+      {
+        "file": "59-supplied-ordinary-LOST2323.dom.json",
+        "seed": 1632614828,
+        "tick": 2323,
+        "hiddenFraction": 0,
+        "overlapSamples": 0,
+        "parts": []
+      },
+      {
+        "file": "60-shadow-973-restore.dom.json",
+        "seed": 2,
+        "tick": 973,
+        "hiddenFraction": 0,
+        "overlapSamples": 0,
+        "parts": [
+          {
+            "id": "pillar-02:body",
+            "potential": 0.1984265409263246,
+            "hidden": 0,
+            "ahead": false
+          }
+        ]
+      },
+      {
+        "file": "61-shadow-parts-off-973-normal.dom.json",
+        "seed": 2,
+        "tick": 973,
+        "hiddenFraction": 0,
+        "overlapSamples": 0,
+        "parts": [
+          {
+            "id": "pillar-02:body",
+            "potential": 0.1984265409263246,
+            "hidden": 0,
+            "ahead": false
+          }
+        ]
+      },
+      {
+        "file": "62-shadow-parts-on-973-normal.dom.json",
+        "seed": 2,
+        "tick": 973,
+        "hiddenFraction": 0,
+        "overlapSamples": 0,
+        "parts": [
+          {
+            "id": "pillar-02:body",
+            "potential": 0.1984265409263246,
+            "hidden": 0,
+            "ahead": false
+          }
+        ]
+      },
+      {
+        "file": "63-final-rim01-normal.dom.json",
+        "seed": 2,
+        "tick": 1747,
+        "hiddenFraction": 0.5590090079844623,
+        "overlapSamples": 10246,
+        "parts": [
+          {
+            "id": "receiver-01:rear",
+            "potential": 0.4409909920155377,
+            "hidden": 0,
+            "ahead": false
+          },
+          {
+            "id": "receiver-01:front",
+            "potential": 0.5590090079844623,
+            "hidden": 0.5590090079844623,
+            "ahead": true
+          }
+        ]
+      }
+    ],
+    "existingTrajectoryScan": [
+      {
+        "seed": 0,
+        "receiver": "receiver-01",
+        "nearestDistance": 35.97993122303924,
+        "nearestTick": 888,
+        "captureRadius": 43.00973005868298,
+        "overlapTicks": null
+      },
+      {
+        "seed": 0,
+        "receiver": "receiver-02",
+        "nearestDistance": 302.0422301007249,
+        "nearestTick": 888,
+        "captureRadius": 42.51622154033621,
+        "overlapTicks": null
+      },
+      {
+        "seed": 0,
+        "receiver": "receiver-03",
+        "nearestDistance": 602.7606414003222,
+        "nearestTick": 888,
+        "captureRadius": 41.25417787781912,
+        "overlapTicks": null
+      },
+      {
+        "seed": 0,
+        "receiver": "receiver-04",
+        "nearestDistance": 900.270852868836,
+        "nearestTick": 888,
+        "captureRadius": 41.44518157305826,
+        "overlapTicks": null
+      },
+      {
+        "seed": 1,
+        "receiver": "receiver-01",
+        "nearestDistance": 41.86980933655098,
+        "nearestTick": 884,
+        "captureRadius": 43.00973005868298,
+        "overlapTicks": null
+      },
+      {
+        "seed": 1,
+        "receiver": "receiver-02",
+        "nearestDistance": 312.4202462280555,
+        "nearestTick": 884,
+        "captureRadius": 42.51622154033621,
+        "overlapTicks": null
+      },
+      {
+        "seed": 1,
+        "receiver": "receiver-03",
+        "nearestDistance": 612.9771667849566,
+        "nearestTick": 884,
+        "captureRadius": 41.25417787781912,
+        "overlapTicks": null
+      },
+      {
+        "seed": 1,
+        "receiver": "receiver-04",
+        "nearestDistance": 910.4180845258958,
+        "nearestTick": 884,
+        "captureRadius": 41.44518157305826,
+        "overlapTicks": null
+      },
+      {
+        "seed": 2,
+        "receiver": "receiver-01",
+        "nearestDistance": 57.346204994587566,
+        "nearestTick": 1736,
+        "captureRadius": 43.00973005868298,
+        "overlapTicks": {
+          "first": 1743,
+          "last": 1781,
+          "count": 39,
+          "maxFraction": 1
+        }
+      },
+      {
+        "seed": 2,
+        "receiver": "receiver-02",
+        "nearestDistance": 352.92230224367154,
+        "nearestTick": 1735,
+        "captureRadius": 42.51622154033621,
+        "overlapTicks": null
+      },
+      {
+        "seed": 2,
+        "receiver": "receiver-03",
+        "nearestDistance": 654.5253421399066,
+        "nearestTick": 1733,
+        "captureRadius": 41.25417787781912,
+        "overlapTicks": null
+      },
+      {
+        "seed": 2,
+        "receiver": "receiver-04",
+        "nearestDistance": 952.2614481421901,
+        "nearestTick": 1731,
+        "captureRadius": 41.44518157305826,
+        "overlapTicks": null
+      }
+    ],
+    "ownAnalysisPeakWorkingSetBytes": 93913088
+  },
+  "screenshotEncoding": {
+    "actual": "JPEG",
+    "count": 65,
+    "bytesPreserved": true,
+    "mappingRawFile": "SCREENSHOT_ENCODING.json"
+  },
+  "provenance": {
+    "independentNativeSeeds": [
+      0,
+      1,
+      2
+    ],
+    "suppliedOnlySeed": 1632614828,
+    "builderNewSeed": 3207937946,
+    "builderPreparatoryMisnamedEnd": {
+      "file": "01-new-ordinary-end",
+      "tick": 73,
+      "done": false
+    },
+    "builderActualEnd": {
+      "file": "01b-new-ordinary-actual-end",
+      "tick": 2011,
+      "result": "LOST"
+    }
+  },
+  "heldAbsentFromQaAncestry": [
+    "ed62bae3f81d227494478c82b2279b5badcf715d",
+    "05ba43101a95fc1efcda5395d1394c27cb887f09",
+    "7d2344c1a8959f73ff26af5d3aba7dd02eb0e971",
+    "b6226979df39662e745e8636553019fae14fa19e"
+  ],
+  "resources": {
+    "beforeBrowser": {
+      "freeRamGiB": 9.08,
+      "totalRamGiB": 31.91,
+      "cpuPercent": 6,
+      "logicalCpu": 24,
+      "CFreeGiB": 13.73,
+      "DFreeGiB": 14.62,
+      "EFreeGiB": 9.1
+    },
+    "afterClose": {
+      "freeRamGiB": 9.34,
+      "cpuPercent": 1,
+      "CFreeGiB": 13.65,
+      "DFreeGiB": 14.61,
+      "EFreeGiB": 9.04
+    },
+    "finalAnalysisProcessPeakWorkingSetBytes": 93913088,
+    "pageHeapSamplePeak": {
+      "usedBytes": 19515080,
+      "allocatedBytes": 47153152,
+      "scope": "sampled page JS heap, not whole browser/GPU peak"
+    },
+    "decodedRgbaBytes": 26121212,
+    "scope": "final Python invocation peak and sampled page JS heap; not whole browser/GPU peak; aggregate includes other slots"
+  }
+}
