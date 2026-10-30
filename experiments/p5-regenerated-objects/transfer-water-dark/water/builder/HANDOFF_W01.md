@@ -20,7 +20,7 @@
 | Dependency lock | `data/dependency-lock.json`,4341bytes/SHA256 `b1bdcd0eb94d0d5c7bb11195eae7d90c16ac9e006484d2a9a192c851559e7678` |
 | Preview | `http://127.0.0.1:55188/`, PID **38664**, exec session **80589** |
 | Host / startup | `WIN-36E9FF9EJM0` / `2026-10-29T23:39:09.036Z` |
-| Owner | `E:/R4D/perspective/p5-runtime/builder/transfer-water-dark/water/preview-owner.json` |
+| Owner snapshot | `E:/R4D/perspective/p5-runtime/builder/transfer-water-dark/water/preview-owners/w01-pid38664.json` (current owner теперь у w02) |
 
 Ownership подтверждён owner/process command/root/listener. Новый порт55188 был свободен; чужие процессы не менялись. W00 PID13048/session52196/port55186 оставлен, его owner snapshot в `water/preview-owners/w00-pid13048.json`. D00 PID37032/session18796/port55187 оставлен. Own IAB вкладки закрыты; servers/root сохраняются для адресных QA. HTTP200 exact app/manifest/config/dependency-lock и все17 frozen file hashes проверены. Raw native TS/maps/private staging исключены explicit whitelist. Это не release/privacy approval.
 
@@ -66,7 +66,7 @@ Evidence index `E:/R4D/perspective/p5-runtime/builder/transfer-water-dark/water/
 
 После основного selfcheck VQA адресно передал W01-V01. Builder воспроизвёл на неизменном frozen w01: seed0/state0 Field обрезает верх сферы, Whole0 показывает её целиком; Field100 уже помещается. Actual states0/100 совпали с existing native trace, Whole↔Field0 сохранил state/RNG. Причина подтверждена: старый Field minY270, новый ball alpha>0 при accepted drop начинается с249.72811384258958sourceY (visible bounds251.8288319211287). Камера не учитывала поднятый authored silhouette. Это consumer framing defect, не P1/native input defect.
 
-Repro evidence `E:/R4D/perspective/p5-runtime/builder/transfer-water-dark/water/evidence/w01-framing-repro/INDEX.json`:1424bytes/SHA`c62bd153ad389ee153a973d0926e1fa40d796f311c4a9b07747e064c9bc9f8c3`. w01 сохраняется как исходный результат. Следующий отдельный candidate добавит measured start-ball alpha bounds в фиксированный Field domain; independent closure остаётся VQA. Новая сортировка, world offsets, native/config/RNG corrections не нужны. Ранние40TQA actual state/RNG/config/event matches сообщены Lead; полного art/order PASS это не даёт, pillar04 contact и hiding за pillars остаются unverified.
+Repro evidence `E:/R4D/perspective/p5-runtime/builder/transfer-water-dark/water/evidence/w01-framing-repro/INDEX.json`:1424bytes/SHA`c62bd153ad389ee153a973d0926e1fa40d796f311c4a9b07747e064c9bc9f8c3`. w01 сохраняется как исходный результат. Коррекция measured start-ball alpha bounds выполнена в отдельном [w02](HANDOFF_W02.md); independent closure остаётся VQA. Новая сортировка, world offsets, native/config/RNG corrections не нужны. Ранние40TQA actual state/RNG/config/event matches сообщены Lead; полного art/order PASS это не даёт, pillar04 contact и hiding за pillars остаются unverified.
 
 ## Сохранность и продолжение
 
