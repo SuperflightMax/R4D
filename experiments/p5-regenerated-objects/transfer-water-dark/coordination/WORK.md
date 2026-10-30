@@ -4,7 +4,7 @@
 
 ## Владение и границы
 
-Lead работает в E:/R4D/perspective/p5-worktrees/lead, ветка codex/r4d-p5-regenerated-lead-01. Все роли используют свои прежние E worktrees/runtime на WIN-36E9FF9EJM0. Новые роли, чаты, сессии, worktrees и ветки не создаются; модели и effort сохранены. Release idle до полезного локального candidate. Lead координирует; production и независимые QA принадлежат профильным ролям.
+Lead работает в E:/R4D/perspective/p5-worktrees/lead, ветка codex/r4d-p5-regenerated-lead-01. Все роли используют свои прежние E worktrees/runtime на WIN-36E9FF9EJM0. Новые роли, чаты, сессии, worktrees и ветки не создаются; модели и effort сохранены. Release подключён к локальной обвязке двух original baselines; это архив сравнения, не текущий final. Lead координирует; production и независимые QA принадлежат профильным ролям.
 
 Новые исходники: experiments/p5-regenerated-objects/transfer-water-dark/{water|dark}/{builder|asset-artist|qa/technical|qa/visual}/. Runtime каждой роли: существующий p5-runtime/<role>/transfer-water-dark/{water|dark}/. Собственные Jungle результаты, заморозки и public сохраняются.
 
@@ -38,4 +38,8 @@ Lead читает результаты в существующих чатах и
 
 Перед heavy — свежие C/D/E/RAM/CPU/aggregate, собственная оценка и allowance 4 GiB RAM/2 GiB E. E<=4 GiB: предупреждение/диагностика; E<=2 GiB: safe WIP/STOP. Никаких abrupt kills, удаления sources или чужой очистки. TEMP/TMP/cache/output только собственные E process-local, без глобальных env/CODEX_HOME/security/credentials изменений.
 
-TokenGranted=false; transfer serverwrites=0. Отдельный конкретный CTO token требуется до будущих server writes; Jungle token CLOSED и не переиспользуется. SSH/Review/server операции сейчас не выполняются. Исторические HOLD/STOP/denial сохраняются: composite call_7b166cdf46834d468b5f9c297aad6e9f не повторять/делить/переносить, denied parent Review GET /review/r4d/403 не вызывать, file:// fallback не использовать. Новый denial: STOP exact action/target без обхода actor/ref/path/transport; unknown outcome сначала read-only evidence.
+TokenGranted=false; transfer Review/VPS writes=0. Отдельный конкретный CTO token требуется до будущих Review/VPS writes; Jungle token CLOSED и не переиспользуется. SSH/Review/VPS операции сейчас не выполняются. Для local wrapper QA отдельно разрешён свой loopback HTTP preview и свой hidden browser/tab, с ownership и штатной остановкой; это не remote permission. Исторические HOLD/STOP/denial сохраняются: composite call_7b166cdf46834d468b5f9c297aad6e9f не повторять/делить/переносить, denied parent Review GET /review/r4d/403 не вызывать, file:// fallback не использовать. Новый denial: STOP exact action/target без обхода actor/ref/path/transport; unknown outcome сначала read-only evidence.
+
+## Текущий checkpoint 003
+
+2026-10-30 02:26 UTC: [CHECKPOINT_003.md](CHECKPOINT_003.md) и [CHECKPOINT_003.json](CHECKPOINT_003.json). Обе independent QA закрыли прежний Water receiver pop на w05 для сохранённого repro. Front-hide остаётся NOTE/UNVERIFIED, нового sorting defect не установлено. Dark d02: положение края улучшено, но VQA D02-V01 о щелях под cap между чашами остаётся OPEN; distinct receiver D01-V01 также OPEN. Water mini05 уже содержит все21 body groups/29 physical targets и11 foreground clips; Builder собирает отдельный w06, actual расширенный QA ещё впереди. Artist продолжает Dark. Task не завершён; final handoff и публикация не разрешены.

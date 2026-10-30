@@ -1,0 +1,107 @@
+{
+  "schema": "r4d.p5.transfer-water-dark.checkpoint.v1",
+  "checkpoint": "003",
+  "utc": "2026-10-30T02:26:46Z",
+  "status": "production-continues; scoped corrections reviewed; full Water expansion being staged",
+  "water": {
+    "candidate": "w05",
+    "consumer": "ce110a387919bbb10c467c70afce678f8b4ee4a7",
+    "rendererExtension": "eedd183a2652a8b9a2dce60118c0f32c8755d3b7",
+    "artist": "9647869d6dbf672ee5922b0fc57df254b9fdbb93",
+    "fileIndexPath": "E:/R4D/perspective/p5-runtime/builder/transfer-water-dark/water/output/previews/w05/FILE_INDEX.json",
+    "fileIndexBytes": 6580,
+    "fileIndexSha256": "dd5a85b7187b90197527fef5763fd31a64b16ae7e84f53a092a33674dd0031b8",
+    "tqa": {
+      "commit": "17bbf8ae6e2d9e8a49e42933cfe2b4c089b8a3f3",
+      "path": "experiments/p5-regenerated-objects/transfer-water-dark/water/qa/technical/REPORT_W05.md",
+      "actualSnapshots": 31,
+      "finding": "W04-TQA-V01",
+      "status": "CLOSED_SCOPED_ON_W05"
+    },
+    "vqa": {
+      "commit": "8a65d1316f50a843061a27e6b09224f3659be744",
+      "path": "experiments/p5-regenerated-objects/transfer-water-dark/water/qa/visual/REPORT_W05.md",
+      "ownCaptures": 24,
+      "finding": "W04-V01",
+      "status": "CLOSED_SCOPED_ON_W05"
+    },
+    "frontHide": "NOTE/UNVERIFIED; seed1 receiver03 miss1118-1120/1131; no new sorting defect established",
+    "nextArtist": {
+      "commit": "189fe2e7f4264270f60b4a2ebe247d0d49b3c72e",
+      "manifestPath": "experiments/p5-regenerated-objects/transfer-water-dark/water/asset-artist/asset-manifest.mini-05-expansion.json",
+      "manifestBytes": 125833,
+      "manifestSha256": "b533e4d2a2f6f2094fed132913fe9dadb9b6eaa370f5a447ff3afc627f7cda27",
+      "uniquePng": 13,
+      "textureIds": 22,
+      "instances": 84,
+      "bodyGroups": 21,
+      "physicalTargets": 29,
+      "receivers": 4,
+      "foregroundClips": 11,
+      "newBitmaps": 3,
+      "actualStatus": "UNVERIFIED; Builder w06 and cached-case plan active",
+      "limits": ["frog06 residual about -5.09 source px", "inferred rear ellipse +/-6 texture px", "lintel cast maxAlpha172 above brief", "rare foreground columns/arch legs/bevel/foam incomplete"]
+    }
+  },
+  "dark": {
+    "candidate": "d02",
+    "consumer": "ce110a387919bbb10c467c70afce678f8b4ee4a7",
+    "artist": "9647869d6dbf672ee5922b0fc57df254b9fdbb93",
+    "fileIndexPath": "E:/R4D/perspective/p5-runtime/builder/transfer-water-dark/dark/output/previews/d02/FILE_INDEX.json",
+    "fileIndexBytes": 5821,
+    "fileIndexSha256": "0fcf214387311490744ff1630052eda287b48841b6404c5896eec071359a6c0c",
+    "tqa": {
+      "commit": "17bbf8ae6e2d9e8a49e42933cfe2b4c089b8a3f3",
+      "path": "experiments/p5-regenerated-objects/transfer-water-dark/dark/qa/technical/REPORT_D02.md",
+      "actualSnapshots": 11,
+      "scope": "edge near source1121 within bevel distinguishability; selected pillar regression"
+    },
+    "vqa": {
+      "commit": "8a65d1316f50a843061a27e6b09224f3659be744",
+      "path": "experiments/p5-regenerated-objects/transfer-water-dark/dark/qa/visual/REPORT_D02.md",
+      "pairedCases": 5,
+      "finding": "D02-V01",
+      "status": "OPEN",
+      "scope": "three dark gaps below near cap between cups01/02,02/03,03/04; cause not proven",
+      "artistFeedbackSent": true
+    },
+    "receiverFindings": ["D01-TQA-V01 OPEN", "D01-V01 OPEN"],
+    "floorStatus": "PARTIAL",
+    "productionContinues": ["rim contour correction", "deeper bowl support", "missing families", "floor cap/bevel/vertical-face join", "foreground"]
+  },
+  "artistCapacityRecovery": {
+    "failures": 1,
+    "reason": "Selected model is at capacity",
+    "sameChatWorktreeProfile": true,
+    "modelOrEffortChanged": false,
+    "completedGenerationsRepeated": false,
+    "recoveryTurn": "01a18a90-17ea-7ce1-a6c8-05e01a46d812"
+  },
+  "release": {
+    "source": "06c45e0273bf8c5f0d447e79aaeb86ba6429e2d4",
+    "purpose": "baseline-archive",
+    "boards": {"water": "w04", "dark": "d01"},
+    "publicFiles": 43,
+    "publicBytes": 27415220,
+    "final": false,
+    "localWrapperSmoke": "both scenes/metadata/return checked; formal report pending",
+    "ownLoopbackPid": 13256,
+    "ownLoopbackPort": 6846,
+    "ownLoopbackStopped": true,
+    "boundCurrentLeadHandoffIssued": false
+  },
+  "resource": {
+    "utc": "2026-10-30T02:21:11.9958235Z",
+    "freeGiB": {"C": 13.647, "D": 14.609, "E": 9.041, "RAM": 9.312},
+    "cpuPercent": 1,
+    "aggregateWorkingSetGiB": 28.347,
+    "ownPeakGiB": {"RAM": 0.25, "E": 0.01},
+    "neighborReserveGiB": {"RAM": 4, "E": 2}
+  },
+  "remainingActiveHoursEstimate": [4, 7],
+  "fullPass": false,
+  "tokenGranted": false,
+  "reviewVpsWrites": 0,
+  "newRolesChatsWorktreesBranches": 0,
+  "next": "actual full Water QA and corrections; finish Dark art/corrections and both independent QA; concrete current local package; no stop after checkpoint"
+}
