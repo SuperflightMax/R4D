@@ -1,5 +1,10 @@
 # Dark Asset Artist
 
+Текущий separate mini04 floor-join:50189bytes/SHA75d9c4f5c3a72cc6d990c9651985004e8f16e7b695cca5284330d9f7fa65dc08;8PNG/15IDs/35instances,исходныеd02cups/actors. Floorv4opaque2757561bytes/SHA c0367aea62de74f187c37a3cf8fb10067b9cbe5b2177939c86ae3f76a0e0421d;near915±3 unchanged,continuousverticaljoinrepaint. D02V01actualQA pending. Mini03 receiver-parts остаётся ОТДЕЛЬНЫМ successor того жеmini02,не объединятьмолча. Skullnearv2получен/измеренratio.54268913,width948,depth514.4693,anchor[627,935.7875],поканеактивенвmanifest. Bowls/nearblock/extra skull depth/environment дальше,всеraw/rejectssaved. См.HANDOFF_MINI_04_FLOOR_JOIN.md.
+
+История:
+# Dark Asset Artist
+
 Текущий mini03 receiver-parts:65548bytes/SHA709253ed3dd162c6b305bbb4f7be1925dace48d82ec0d7c14fc6e7c3449e812a;9PNG/19IDs/39instances. Registered native rimv1: one uniform k1.032/t[-19.048,-2],RMS2.864/max5.296texturepx; new part O/footprint/anchor по прежней общей policy,sourceOdelta≈0. Static composite inspected,actual QA pending,D01V01 не закрыт. Floorv3 прежний,D02V01 join OPEN; отдельный floorv4 repaint и skullnear native calls запущены,unknown outcome сначала по saved outputs,без повторов. Bowls v2/v3 иrimv2 nonselected raw сохранены,missingnearblock/skull/bowl/environment продолжаются. См.HANDOFF_MINI_03_RECEIVER_PARTS.md.
 
 История:

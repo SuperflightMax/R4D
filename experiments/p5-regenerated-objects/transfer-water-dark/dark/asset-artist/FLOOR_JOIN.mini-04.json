@@ -1,0 +1,23 @@
+{
+  "variant": "post-d02-floor-join-v4-only-original-cups",
+  "baselineArtistCommit": "9647869d6dbf672ee5922b0fc57df254b9fdbb93",
+  "baselineManifestSha256": "5bad898c270432928a403def12ffbca826a94d76cb83b395708bdf12588e8545",
+  "finding": "D02-V01 OPEN",
+  "reportCommit": "8a65d1316f50a843061a27e6b09224f3659be744",
+  "acceptedNearFloorSourceY": 1121,
+  "candidateNearFloorTextureY": 915,
+  "manualBoundaryUncertaintyTexturePx": 3,
+  "uniformScale": 1.2248803827751196,
+  "candidateNearFloorSourceY": 1120.7655502392345,
+  "nominalBoundaryResidualSourcePx": -0.23444976076552848,
+  "repair": "Cap/bevel/continuous vertical face below current boundary; no new horizontal paving strip",
+  "actorsChanged": 0,
+  "actorTextureDescriptorsChanged": 0,
+  "receiverParts": "Original d02/d01 full/front unchanged; NOT the separate mini03 rim variant",
+  "alphaAllOpaque": true,
+  "alphaCauseClaimed": false,
+  "sortCauseClaimed": false,
+  "geometryChanged": false,
+  "nativeChanged": false,
+  "actualQa": false
+}
