@@ -1,0 +1,850 @@
+{
+  "candidate": "d01",
+  "consumerCommit": "aae514ed31720ab6d913f4bc6d63286c26992e0a",
+  "artist": {
+    "commit": "0f70d00db096ee30f057dd65ca36a53df3f78899",
+    "path": "experiments/p5-regenerated-objects/transfer-water-dark/dark/asset-artist/asset-manifest.mini-01.json",
+    "sourceSha256": "c14b212e846f00dd3adf546feba5692bf9bd268002405b711f9157648a1661d7",
+    "sourceBytes": 47851,
+    "stagedSha256": "18b7769115ac7d2dcba3a89869b50cc9c7824de01421201a886210a17ad3f900",
+    "stagedBytes": 33628,
+    "supporting": [
+      {
+        "path": "experiments/p5-regenerated-objects/transfer-water-dark/dark/asset-artist/BINDINGS.mini-01.json",
+        "materialized": "BINDINGS.json",
+        "bytes": 32049,
+        "sha256": "2656769fcd0a1f0ebb9df156ad484d959a24ef61a4e210e6f930f2be87191b0a"
+      },
+      {
+        "path": "experiments/p5-regenerated-objects/transfer-water-dark/dark/asset-artist/RECEIVER_ANCHOR_POLICY.mini-01.json",
+        "materialized": "RECEIVER_ANCHOR_POLICY.json",
+        "bytes": 5303,
+        "sha256": "0d1b8ce3d9ff1bc4093252c13585339076a1b7ea8a3b4829dc27152f4bfbbf3b"
+      },
+      {
+        "path": "experiments/p5-regenerated-objects/transfer-water-dark/dark/asset-artist/SELECTED.mini-01.json",
+        "materialized": "SELECTED.json",
+        "bytes": 4373,
+        "sha256": "0c29d387f22ce892983bc3003e71715f086bde2a96458266e402b01dbc878592"
+      },
+      {
+        "path": "experiments/p5-regenerated-objects/transfer-water-dark/dark/asset-artist/records/receiver-registration.mini-01.json",
+        "materialized": "receiver-registration.json",
+        "bytes": 1364,
+        "sha256": "e0e89c0196a0c3d7c47768dd47cbb990910ea5d38f3c53b4fa81e117c9d7a18c"
+      },
+      {
+        "path": "experiments/p5-regenerated-objects/transfer-water-dark/dark/asset-artist/HANDOFF_MINI_01.md",
+        "materialized": "HANDOFF.md",
+        "bytes": 5085,
+        "sha256": "744f1d0e721c51b81e460a9dd0a054b490db9f386a77d90d6a07f086b78c54b1"
+      }
+    ],
+    "transformation": "Exact final texture bytes; file URLs normalized; full provenance kept outside web root with per-texture digest"
+  },
+  "oracleCommit": "761e6087c902fe5ea941b90b5ce4d72383a0d755",
+  "url": "http://127.0.0.1:55193/",
+  "fileIndex": {
+    "bytes": 6109,
+    "sha256": "d810ae08b53a0eaf44636df0adcb2c15eb4a0195b31db383534b4ea70af2116b"
+  },
+  "previewSidecar": {
+    "bytes": 14632,
+    "sha256": "49dd9d561a4cb53bca98c2dc97658b4262be4d1e10f54479c070d359d53f52b5",
+    "servedFromPublic": false
+  },
+  "counts": {
+    "textures": 15,
+    "png": 8,
+    "instances": 35
+  },
+  "publicFiles": 20,
+  "publicDiskAndHttpExact": true,
+  "actualSnapshots": 44,
+  "sampledStateRngConfigEventsExact": true,
+  "loadedDarkManifestExact": true,
+  "invariantPairs": 10,
+  "newOracleRuns": 0,
+  "appBytesSameAsW04": true,
+  "waterVisualVerdictInherited": false,
+  "findings": [
+    {
+      "id": "D01-TQA-V01",
+      "status": "OPEN visual limitation",
+      "classification": "Independent Dark whole-sphere reveal at opaque inner rear wall of receiver back; flat part-depth boundary, not native/trigger bug or opaque water",
+      "cases": [
+        {
+          "seed": 0,
+          "states": [
+            886,
+            887,
+            888
+          ],
+          "receiver": "receiver-01"
+        },
+        {
+          "seed": 3,
+          "states": [
+            1267,
+            1268,
+            1269
+          ],
+          "receiver": "receiver-02"
+        }
+      ],
+      "pixelAndDepthChecks": [
+        {
+          "seed": 0,
+          "tick": 880,
+          "nativeY": 34544.363289,
+          "parts": [
+            {
+              "id": "receiver-01-back",
+              "offset": -1,
+              "calculatedDepth": 34596.0242800077,
+              "aboveBallByDepth": true,
+              "ballVisualCenterTexturePx": [
+                595.7675924971161,
+                200.792169929021
+              ],
+              "centerRGBA": [
+                252,
+                229,
+                184,
+                253
+              ],
+              "coreSamplesAlpha255": 0,
+              "coreSamplesAlpha16OrMore": 483,
+              "sampleAlphaMin": 0,
+              "sampleAlphaMax": 253,
+              "sampleAlphaMean": 217.09447415329768,
+              "coreSamplesTotal": 561
+            },
+            {
+              "id": "receiver-01-front",
+              "offset": 1,
+              "calculatedDepth": 34682.043740125075,
+              "aboveBallByDepth": true,
+              "ballVisualCenterTexturePx": [
+                595.7675924971161,
+                200.792169929021
+              ],
+              "centerRGBA": [
+                0,
+                0,
+                0,
+                0
+              ],
+              "coreSamplesAlpha255": 0,
+              "coreSamplesAlpha16OrMore": 0,
+              "sampleAlphaMin": 0,
+              "sampleAlphaMax": 0,
+              "sampleAlphaMean": 0,
+              "coreSamplesTotal": 561
+            }
+          ]
+        },
+        {
+          "seed": 0,
+          "tick": 886,
+          "nativeY": 34588.4130384,
+          "parts": [
+            {
+              "id": "receiver-01-back",
+              "offset": -1,
+              "calculatedDepth": 34596.0242800077,
+              "aboveBallByDepth": true,
+              "ballVisualCenterTexturePx": [
+                617.0714409564441,
+                310.8614909164138
+              ],
+              "centerRGBA": [
+                38,
+                30,
+                26,
+                252
+              ],
+              "coreSamplesAlpha255": 0,
+              "coreSamplesAlpha16OrMore": 561,
+              "sampleAlphaMin": 250,
+              "sampleAlphaMax": 253,
+              "sampleAlphaMean": 252.10160427807486,
+              "coreSamplesTotal": 561
+            },
+            {
+              "id": "receiver-01-front",
+              "offset": 1,
+              "calculatedDepth": 34682.043740125075,
+              "aboveBallByDepth": true,
+              "ballVisualCenterTexturePx": [
+                617.0714409564441,
+                310.8614909164138
+              ],
+              "centerRGBA": [
+                0,
+                0,
+                0,
+                0
+              ],
+              "coreSamplesAlpha255": 0,
+              "coreSamplesAlpha16OrMore": 0,
+              "sampleAlphaMin": 0,
+              "sampleAlphaMax": 0,
+              "sampleAlphaMean": 0,
+              "coreSamplesTotal": 561
+            }
+          ]
+        },
+        {
+          "seed": 0,
+          "tick": 887,
+          "nativeY": 34595.8404133,
+          "parts": [
+            {
+              "id": "receiver-01-back",
+              "offset": -1,
+              "calculatedDepth": 34596.0242800077,
+              "aboveBallByDepth": true,
+              "ballVisualCenterTexturePx": [
+                620.6324005383991,
+                329.6303913441861
+              ],
+              "centerRGBA": [
+                34,
+                24,
+                21,
+                252
+              ],
+              "coreSamplesAlpha255": 0,
+              "coreSamplesAlpha16OrMore": 561,
+              "sampleAlphaMin": 250,
+              "sampleAlphaMax": 253,
+              "sampleAlphaMean": 251.951871657754,
+              "coreSamplesTotal": 561
+            },
+            {
+              "id": "receiver-01-front",
+              "offset": 1,
+              "calculatedDepth": 34682.043740125075,
+              "aboveBallByDepth": true,
+              "ballVisualCenterTexturePx": [
+                620.6324005383991,
+                329.6303913441861
+              ],
+              "centerRGBA": [
+                0,
+                0,
+                0,
+                0
+              ],
+              "coreSamplesAlpha255": 0,
+              "coreSamplesAlpha16OrMore": 0,
+              "sampleAlphaMin": 0,
+              "sampleAlphaMax": 0,
+              "sampleAlphaMean": 0,
+              "coreSamplesTotal": 561
+            }
+          ]
+        },
+        {
+          "seed": 0,
+          "tick": 888,
+          "nativeY": 34603.2922882,
+          "parts": [
+            {
+              "id": "receiver-01-back",
+              "offset": -1,
+              "calculatedDepth": 34596.0242800077,
+              "aboveBallByDepth": false,
+              "ballVisualCenterTexturePx": [
+                624.196499863411,
+                348.522817566313
+              ],
+              "centerRGBA": [
+                32,
+                25,
+                23,
+                252
+              ],
+              "coreSamplesAlpha255": 0,
+              "coreSamplesAlpha16OrMore": 561,
+              "sampleAlphaMin": 250,
+              "sampleAlphaMax": 253,
+              "sampleAlphaMean": 251.90552584670232,
+              "coreSamplesTotal": 561
+            },
+            {
+              "id": "receiver-01-front",
+              "offset": 1,
+              "calculatedDepth": 34682.043740125075,
+              "aboveBallByDepth": true,
+              "ballVisualCenterTexturePx": [
+                624.196499863411,
+                348.522817566313
+              ],
+              "centerRGBA": [
+                0,
+                0,
+                0,
+                0
+              ],
+              "coreSamplesAlpha255": 0,
+              "coreSamplesAlpha16OrMore": 0,
+              "sampleAlphaMin": 0,
+              "sampleAlphaMax": 0,
+              "sampleAlphaMean": 0,
+              "coreSamplesTotal": 561
+            }
+          ]
+        },
+        {
+          "seed": 3,
+          "tick": 1260,
+          "nativeY": 34553.0452184,
+          "parts": [
+            {
+              "id": "receiver-02-back",
+              "offset": -1,
+              "calculatedDepth": 34597.045113827786,
+              "aboveBallByDepth": true,
+              "ballVisualCenterTexturePx": [
+                615.1461165128478,
+                217.58871306772218
+              ],
+              "centerRGBA": [
+                135,
+                97,
+                66,
+                253
+              ],
+              "coreSamplesAlpha255": 0,
+              "coreSamplesAlpha16OrMore": 551,
+              "sampleAlphaMin": 0,
+              "sampleAlphaMax": 253,
+              "sampleAlphaMean": 245.66488413547236,
+              "coreSamplesTotal": 561
+            },
+            {
+              "id": "receiver-02-front",
+              "offset": 1,
+              "calculatedDepth": 34682.077556908465,
+              "aboveBallByDepth": true,
+              "ballVisualCenterTexturePx": [
+                615.1461165128478,
+                217.58871306772218
+              ],
+              "centerRGBA": [
+                0,
+                0,
+                0,
+                0
+              ],
+              "coreSamplesAlpha255": 0,
+              "coreSamplesAlpha16OrMore": 0,
+              "sampleAlphaMin": 0,
+              "sampleAlphaMax": 0,
+              "sampleAlphaMean": 0,
+              "coreSamplesTotal": 561
+            }
+          ]
+        },
+        {
+          "seed": 3,
+          "tick": 1267,
+          "nativeY": 34588.6674204,
+          "parts": [
+            {
+              "id": "receiver-02-back",
+              "offset": -1,
+              "calculatedDepth": 34597.045113827786,
+              "aboveBallByDepth": true,
+              "ballVisualCenterTexturePx": [
+                663.9493476799172,
+                308.146639550134
+              ],
+              "centerRGBA": [
+                32,
+                23,
+                21,
+                252
+              ],
+              "coreSamplesAlpha255": 0,
+              "coreSamplesAlpha16OrMore": 561,
+              "sampleAlphaMin": 251,
+              "sampleAlphaMax": 253,
+              "sampleAlphaMean": 252.11586452762924,
+              "coreSamplesTotal": 561
+            },
+            {
+              "id": "receiver-02-front",
+              "offset": 1,
+              "calculatedDepth": 34682.077556908465,
+              "aboveBallByDepth": true,
+              "ballVisualCenterTexturePx": [
+                663.9493476799172,
+                308.146639550134
+              ],
+              "centerRGBA": [
+                0,
+                0,
+                0,
+                0
+              ],
+              "coreSamplesAlpha255": 0,
+              "coreSamplesAlpha16OrMore": 0,
+              "sampleAlphaMin": 0,
+              "sampleAlphaMax": 0,
+              "sampleAlphaMean": 0,
+              "coreSamplesTotal": 561
+            }
+          ]
+        },
+        {
+          "seed": 3,
+          "tick": 1268,
+          "nativeY": 34593.8543064,
+          "parts": [
+            {
+              "id": "receiver-02-back",
+              "offset": -1,
+              "calculatedDepth": 34597.045113827786,
+              "aboveBallByDepth": true,
+              "ballVisualCenterTexturePx": [
+                670.9747818046571,
+                321.45070513066725
+              ],
+              "centerRGBA": [
+                36,
+                26,
+                24,
+                253
+              ],
+              "coreSamplesAlpha255": 0,
+              "coreSamplesAlpha16OrMore": 561,
+              "sampleAlphaMin": 251,
+              "sampleAlphaMax": 253,
+              "sampleAlphaMean": 252.10338680926915,
+              "coreSamplesTotal": 561
+            },
+            {
+              "id": "receiver-02-front",
+              "offset": 1,
+              "calculatedDepth": 34682.077556908465,
+              "aboveBallByDepth": true,
+              "ballVisualCenterTexturePx": [
+                670.9747818046571,
+                321.45070513066725
+              ],
+              "centerRGBA": [
+                0,
+                0,
+                0,
+                0
+              ],
+              "coreSamplesAlpha255": 0,
+              "coreSamplesAlpha16OrMore": 0,
+              "sampleAlphaMin": 0,
+              "sampleAlphaMax": 0,
+              "sampleAlphaMean": 0,
+              "coreSamplesTotal": 561
+            }
+          ]
+        },
+        {
+          "seed": 3,
+          "tick": 1269,
+          "nativeY": 34599.0656924,
+          "parts": [
+            {
+              "id": "receiver-02-back",
+              "offset": -1,
+              "calculatedDepth": 34597.045113827786,
+              "aboveBallByDepth": false,
+              "ballVisualCenterTexturePx": [
+                678.014077622543,
+                334.8481482728718
+              ],
+              "centerRGBA": [
+                38,
+                29,
+                26,
+                252
+              ],
+              "coreSamplesAlpha255": 0,
+              "coreSamplesAlpha16OrMore": 561,
+              "sampleAlphaMin": 251,
+              "sampleAlphaMax": 253,
+              "sampleAlphaMean": 252.08199643493762,
+              "coreSamplesTotal": 561
+            },
+            {
+              "id": "receiver-02-front",
+              "offset": 1,
+              "calculatedDepth": 34682.077556908465,
+              "aboveBallByDepth": true,
+              "ballVisualCenterTexturePx": [
+                678.014077622543,
+                334.8481482728718
+              ],
+              "centerRGBA": [
+                0,
+                0,
+                0,
+                0
+              ],
+              "coreSamplesAlpha255": 0,
+              "coreSamplesAlpha16OrMore": 0,
+              "sampleAlphaMin": 0,
+              "sampleAlphaMax": 0,
+              "sampleAlphaMean": 0,
+              "coreSamplesTotal": 561
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "knownFloorLimitation": {
+    "source": "Artist/Lead handoff, visibly retained in baseline; not a new common-input defect",
+    "generatedNearEdgeSourceY": 1260,
+    "acceptedNearEdgeSourceY": 1121,
+    "fullFloorPass": false
+  },
+  "contacts": [
+    {
+      "seed": 0,
+      "target": "pillar04 side",
+      "states": [
+        840,
+        841,
+        842
+      ],
+      "motion": [
+        830,
+        856
+      ]
+    },
+    {
+      "seed": 2,
+      "target": "pillar02 front",
+      "states": [
+        972,
+        973,
+        974
+      ],
+      "motion": [
+        960,
+        987
+      ]
+    },
+    {
+      "seed": 2,
+      "target": "pillar02 corner",
+      "states": [
+        367,
+        368,
+        369
+      ],
+      "motion": [
+        355,
+        378
+      ]
+    },
+    {
+      "seed": 3,
+      "target": "pillar04 corner",
+      "states": [
+        934,
+        935,
+        936
+      ],
+      "motion": null
+    }
+  ],
+  "outcomes": [
+    {
+      "seed": 0,
+      "tick": 888,
+      "result": "receiver-01"
+    },
+    {
+      "seed": 1,
+      "tick": 884,
+      "result": "receiver-01"
+    },
+    {
+      "seed": 2,
+      "tick": 1812,
+      "result": "LOST"
+    },
+    {
+      "seed": 3,
+      "tick": 1269,
+      "result": "receiver-02"
+    }
+  ],
+  "unverified": [
+    "full floor fit: known art registration issue",
+    "receiver03/04 entries and all front rim silhouette contacts",
+    "6 bowls,4 other skulls,block05/06,environment parts",
+    "all other faces/corners/rare contours and full artistic transfer",
+    "mask-specific bypass: no sourceClip parts"
+  ],
+  "artifacts": [
+    {
+      "path": "alpha-analysis-console.txt",
+      "bytes": 10010,
+      "sha256": "90b5b14d7bf58504fbc8e609a4c23caa4da236474e51790791497f5566b30575"
+    },
+    {
+      "path": "BINDINGS.json",
+      "bytes": 32049,
+      "sha256": "2656769fcd0a1f0ebb9df156ad484d959a24ef61a4e210e6f930f2be87191b0a"
+    },
+    {
+      "path": "browser-comparison.json",
+      "bytes": 450937,
+      "sha256": "aeb988a7d8945105dba529976b66548878bf1a8ae6f296def7fcccd8673a2279"
+    },
+    {
+      "path": "browser-errors.json",
+      "bytes": 2,
+      "sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+    },
+    {
+      "path": "browser-session.json",
+      "bytes": 25118,
+      "sha256": "c899a2c9cec4a27709bef472b16f21df685ef0b9711e9c7060be5094f5d8c340"
+    },
+    {
+      "path": "FILE_INDEX.producer.json",
+      "bytes": 6109,
+      "sha256": "d810ae08b53a0eaf44636df0adcb2c15eb4a0195b31db383534b4ea70af2116b"
+    },
+    {
+      "path": "frozen-verification.json",
+      "bytes": 8778,
+      "sha256": "24a2e27087f3ecf50def7290e3166a023e021749c3dd02e689795068d0bdfe13"
+    },
+    {
+      "path": "HANDOFF.md",
+      "bytes": 5085,
+      "sha256": "744f1d0e721c51b81e460a9dd0a054b490db9f386a77d90d6a07f086b78c54b1"
+    },
+    {
+      "path": "invariant-comparison.json",
+      "bytes": 1323,
+      "sha256": "511f3502e7e772f44c7cb06bc0c40ccc5cf675c3fa198c8893bcead0d03fe9e5"
+    },
+    {
+      "path": "optical-policy-check.json",
+      "bytes": 1636,
+      "sha256": "62750b653a0da63e7b4d3e2d67d5b00c2fdf9a17d3c3e94e87727e3a217a0140"
+    },
+    {
+      "path": "part-alpha-depth-analysis.json",
+      "bytes": 45787,
+      "sha256": "bcc15e5afea69084ee8f0faedd2b39d6cc2c43f223d2fc2f1dad40c7654f020d"
+    },
+    {
+      "path": "producer-owner-reference.json",
+      "bytes": 687,
+      "sha256": "d9caede8ec136d1b53172ceb9afb71075df11fb507b1047dfe132c520583fe70"
+    },
+    {
+      "path": "receiver-registration.json",
+      "bytes": 1364,
+      "sha256": "e0e89c0196a0c3d7c47768dd47cbb990910ea5d38f3c53b4fa81e117c9d7a18c"
+    },
+    {
+      "path": "RECEIVER_ANCHOR_POLICY.json",
+      "bytes": 5303,
+      "sha256": "0d1b8ce3d9ff1bc4093252c13585339076a1b7ea8a3b4829dc27152f4bfbbf3b"
+    },
+    {
+      "path": "resource-after.json",
+      "bytes": 386,
+      "sha256": "27304e31c7ea18fec9abd4c71c7370e578e07040ab8ac8f19051a96bd711e8e0"
+    },
+    {
+      "path": "resource-before.json",
+      "bytes": 517,
+      "sha256": "3d8ed1e470264941c5c5d64f1eacf65905be4fff4f0035b163bf1ac39ccb9f32"
+    },
+    {
+      "path": "screenshots/s0-motion-cup-paused.png",
+      "bytes": 114836,
+      "sha256": "8b3751d9af96b8e428b0c86055c1a586a0f773f947ca885258dc2b3ca7556658"
+    },
+    {
+      "path": "screenshots/s0-motion-cup-running.png",
+      "bytes": 114098,
+      "sha256": "c70557c8deb40506afebb20ccc56e49fbb45db7e637256bb081065e3ddf0959c"
+    },
+    {
+      "path": "screenshots/s0-motion-side-running.png",
+      "bytes": 114100,
+      "sha256": "0745788a1fad8e7f760acfbf23c2b28863f3bc5e0ff8a66dcaac846f0c780869"
+    },
+    {
+      "path": "screenshots/s0-t000-initial.png",
+      "bytes": 109516,
+      "sha256": "43b767172f63cf16b941f74d3af882e2de1c1b6fee812fb323ac609fd55b228a"
+    },
+    {
+      "path": "screenshots/s0-t840-pillar04-side-before.png",
+      "bytes": 114161,
+      "sha256": "30edf40c26bd793df8592398d61f7734172f5647e6b8c38b485699399c8fc9fb"
+    },
+    {
+      "path": "screenshots/s0-t841-pillar04-side-at.png",
+      "bytes": 114123,
+      "sha256": "6cca27d092f695d78781dcdec4840fbaeeec8bfec0dc968c3505d6fe463609ed"
+    },
+    {
+      "path": "screenshots/s0-t842-pillar04-side-after.png",
+      "bytes": 114197,
+      "sha256": "9d9407d16ae063569f4da956bc2aea892df3829e9a04dcd381b92433ffdff4e7"
+    },
+    {
+      "path": "screenshots/s0-t874-cup-approach.png",
+      "bytes": 114129,
+      "sha256": "644572ab6cb6a1986f6498320eabc99d5b694c09ebc5c254b51fb67f85c5c679"
+    },
+    {
+      "path": "screenshots/s0-t886-receiver01-before.png",
+      "bytes": 114128,
+      "sha256": "4db040d2ac18f004c6e03272d14056ff3d2fe84f3ff908681fa0f5a769e8183e"
+    },
+    {
+      "path": "screenshots/s0-t887-receiver01-before.png",
+      "bytes": 114132,
+      "sha256": "90d6f51fa923178822a48f864612e986a4f1bbcd829bca281c3b3c4036362e82"
+    },
+    {
+      "path": "screenshots/s0-t888-receiver01-entry.png",
+      "bytes": 114823,
+      "sha256": "758577691e5e660c8d3c110ecdcfc156cce63b886b4450c50ade5a4b4c1418b6"
+    },
+    {
+      "path": "screenshots/s2-motion-corner-paused.png",
+      "bytes": 114095,
+      "sha256": "2ba29553100fbc56fb80e90b322d6c6a5251dde919927491b74c81751c00bd39"
+    },
+    {
+      "path": "screenshots/s2-motion-corner-running.png",
+      "bytes": 114078,
+      "sha256": "836ddad7d23a41b4ab7703d9fa9a82417147de54d6770a066f304c11284ddf4b"
+    },
+    {
+      "path": "screenshots/s2-motion-front-paused.png",
+      "bytes": 114242,
+      "sha256": "2597d7ca4c334eb5cb726b0ac3e0cd8fc6bcb9e0ac715ddb38414dd6163f108c"
+    },
+    {
+      "path": "screenshots/s2-motion-front-running.png",
+      "bytes": 114110,
+      "sha256": "2bce93221e6b7d49331016dff3f28423da3a74874e351e12a2d4cf9ada947e2e"
+    },
+    {
+      "path": "screenshots/s2-t367-pillar02-corner-before.png",
+      "bytes": 114083,
+      "sha256": "2d2a4f265466245b8cdebca0ad5f15eff6dea3b2c145e4b6a18b7462596d4562"
+    },
+    {
+      "path": "screenshots/s2-t368-pillar02-corner-at.png",
+      "bytes": 114108,
+      "sha256": "04e90b55b1312ea3ef2f93c29ecd4936bc08f41ea5bd556d9e6434b87a733bb6"
+    },
+    {
+      "path": "screenshots/s2-t369-pillar02-corner-after.png",
+      "bytes": 114108,
+      "sha256": "5694042df944076840ab70003a78eab9e1ecc25818ae710882295b439c29ac8d"
+    },
+    {
+      "path": "screenshots/s2-t972-pillar02-front-before.png",
+      "bytes": 114164,
+      "sha256": "467667e8715d975ca30093189437d9fc003a50b4fc59c496339e9ce554a146bc"
+    },
+    {
+      "path": "screenshots/s2-t973-art-off.png",
+      "bytes": 57381,
+      "sha256": "0c6d9f2f9c4758067ab2a375bdc7498172a6390544cb72761f5e0849fa851f8e"
+    },
+    {
+      "path": "screenshots/s2-t973-geometry.png",
+      "bytes": 132898,
+      "sha256": "3f120a1a02893ce4e71e66455ad55ec08bcd2f70df51c74bd103a2ccbd701f5b"
+    },
+    {
+      "path": "screenshots/s2-t973-pillar02-front-at.png",
+      "bytes": 114157,
+      "sha256": "710cb6169dee79938442b18b29bbfcd2fa3d90f781aabf252eb1433b655f541b"
+    },
+    {
+      "path": "screenshots/s2-t974-pillar02-front-after.png",
+      "bytes": 114155,
+      "sha256": "ba7ad4f3d990c7b540ad7acd13590d9566acf6bb9ec476cd112375952845b0ed"
+    },
+    {
+      "path": "screenshots/s3-motion-cup-paused.png",
+      "bytes": 114984,
+      "sha256": "98023db5d59e1a683145c052e1f797153ddd360b636048134ee2f4661dfa6c72"
+    },
+    {
+      "path": "screenshots/s3-motion-cup-running.png",
+      "bytes": 114215,
+      "sha256": "73515c4851a51770af18ebf05bdb1242fcf1fd893467f689f08427a68300ad93"
+    },
+    {
+      "path": "screenshots/s3-t1254-cup-approach.png",
+      "bytes": 114295,
+      "sha256": "4559107357adfd7f1f62ff9256e9bea189b6ad003724e4c05b79399e97154c2b"
+    },
+    {
+      "path": "screenshots/s3-t1267-receiver02-before.png",
+      "bytes": 114216,
+      "sha256": "df9f2aabef7fef118c1633807529d924563528be703e18762239ff37374df3f8"
+    },
+    {
+      "path": "screenshots/s3-t1268-receiver02-before.png",
+      "bytes": 114280,
+      "sha256": "15f32caeb0dec4bc964fdd7019c9c641b38b415ef83e702bb7356e5773d85de4"
+    },
+    {
+      "path": "screenshots/s3-t1269-receiver02-entry.png",
+      "bytes": 114990,
+      "sha256": "34a22cfbe7cec40d07dacdf0f39a416175aa2f82130d60be92c7b194b56ed283"
+    },
+    {
+      "path": "screenshots/s3-t934-pillar04-corner-before.png",
+      "bytes": 114149,
+      "sha256": "3e4e1e34d2e3a45c3d48871098d781f9fd6865a99da05771d79043b15d0aa088"
+    },
+    {
+      "path": "screenshots/s3-t935-pillar04-corner-at.png",
+      "bytes": 114178,
+      "sha256": "70c25eaa727c2e30cf48e9a2b7b4f9a269d991f8a9806e50c7f7e0f059cf6394"
+    },
+    {
+      "path": "screenshots/s3-t936-pillar04-corner-after.png",
+      "bytes": 114180,
+      "sha256": "8b2866fb647db4224c28adc972bcf8042a1d50e603637f0dd32aee9b64bbd2c7"
+    },
+    {
+      "path": "SELECTED.json",
+      "bytes": 4373,
+      "sha256": "0c29d387f22ce892983bc3003e71715f086bde2a96458266e402b01dbc878592"
+    }
+  ],
+  "runtimeIndex": {
+    "path": "E:/R4D/perspective/p5-runtime/technical-qa/transfer-water-dark/dark/d01/evidence-index.json",
+    "bytes": 15044,
+    "sha256": "4c50946bc2bae0efdf9c03ee9679c9920ba5f92354f96eaeec0a574d5b3405ab",
+    "files": 93,
+    "bytesTotal": 10102234
+  },
+  "browserClosed": true,
+  "serverWrites": 0,
+  "tokenGranted": false
+}
