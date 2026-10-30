@@ -1,0 +1,3031 @@
+{
+  "objects": [
+    {
+      "objectId": "block-01",
+      "nativeKind": "segments",
+      "nativeIds": [
+        "block-01:edge-01",
+        "block-01:edge-02",
+        "block-01:edge-03",
+        "block-01:edge-04"
+      ],
+      "anchorNative": [
+        33519.55228755404,
+        33444.5845747901
+      ],
+      "anchorResearch": [
+        212.55228755404096,
+        -467.41542520990333
+      ],
+      "anchorSourcePx": [
+        926.2644621493912,
+        449.13152518894753
+      ],
+      "anchorLocalPx": [
+        98.26446214939119,
+        90.13152518894753
+      ],
+      "sourceRectPx": {
+        "x": 828,
+        "y": 359,
+        "width": 149,
+        "height": 168
+      },
+      "parts": [
+        {
+          "partId": "block-01:ground-shadow",
+          "file": "block-01-ground-shadow.png",
+          "sha256": "11e94dab7a7766cc6d2d0c8bc4657b1fd6dae9f34f04436c94bef27315f5c0c7",
+          "sizePx": [
+            149,
+            168
+          ],
+          "sourceRectPx": {
+            "x": 828,
+            "y": 359,
+            "width": 149,
+            "height": 168
+          },
+          "anchorLocalPx": [
+            98.26446214939119,
+            90.13152518894753
+          ],
+          "role": "ground-shadow",
+          "depth": {
+            "layer": "ground",
+            "sortNativeY": 33444.5845747901
+          },
+          "alpha": "straight",
+          "provenance": {
+            "kind": "restored",
+            "method": "source-region luminance estimate against repaired marble; approximate dark shadow, original removed"
+          }
+        },
+        {
+          "partId": "block-01:body",
+          "file": "block-01-body.png",
+          "sha256": "71cabddeb0768adc1808467a989f72ce80232501b1104a07f7d0faac67d579bc",
+          "sizePx": [
+            149,
+            168
+          ],
+          "sourceRectPx": {
+            "x": 828,
+            "y": 359,
+            "width": 149,
+            "height": 168
+          },
+          "anchorLocalPx": [
+            98.26446214939119,
+            90.13152518894753
+          ],
+          "role": "body",
+          "depth": {
+            "layer": "body",
+            "sortNativeY": 33444.5845747901
+          },
+          "alpha": "straight",
+          "provenance": {
+            "kind": "extracted",
+            "method": "original source RGB, artist alpha/GrabCut, closed black interiors opaque; exclusive rear/front"
+          }
+        }
+      ],
+      "binding": {
+        "rule": "mean of accepted research footprint vertices + translation"
+      }
+    },
+    {
+      "objectId": "block-02",
+      "nativeKind": "segments",
+      "nativeIds": [
+        "block-02:edge-01",
+        "block-02:edge-02",
+        "block-02:edge-03",
+        "block-02:edge-04"
+      ],
+      "anchorNative": [
+        33067.984292683184,
+        33655.11794824634
+      ],
+      "anchorResearch": [
+        -239.01570731681568,
+        -256.88205175365874
+      ],
+      "anchorSourcePx": [
+        503.28102485426115,
+        556.8457569310731
+      ],
+      "anchorLocalPx": [
+        101.28102485426115,
+        84.84575693107308
+      ],
+      "sourceRectPx": {
+        "x": 402,
+        "y": 472,
+        "width": 154,
+        "height": 169
+      },
+      "parts": [
+        {
+          "partId": "block-02:ground-shadow",
+          "file": "block-02-ground-shadow.png",
+          "sha256": "ca283aa2fb1089d05badb99ff49f637d38c0d0bac53f95a26c847222983c7710",
+          "sizePx": [
+            154,
+            169
+          ],
+          "sourceRectPx": {
+            "x": 402,
+            "y": 472,
+            "width": 154,
+            "height": 169
+          },
+          "anchorLocalPx": [
+            101.28102485426115,
+            84.84575693107308
+          ],
+          "role": "ground-shadow",
+          "depth": {
+            "layer": "ground",
+            "sortNativeY": 33655.11794824634
+          },
+          "alpha": "straight",
+          "provenance": {
+            "kind": "restored",
+            "method": "source-region luminance estimate against repaired marble; approximate dark shadow, original removed"
+          }
+        },
+        {
+          "partId": "block-02:body",
+          "file": "block-02-body.png",
+          "sha256": "3da2b41b17f04c45b96c07e57cc56e2491205157c04a2cfb71618bc82ba753c5",
+          "sizePx": [
+            154,
+            169
+          ],
+          "sourceRectPx": {
+            "x": 402,
+            "y": 472,
+            "width": 154,
+            "height": 169
+          },
+          "anchorLocalPx": [
+            101.28102485426115,
+            84.84575693107308
+          ],
+          "role": "body",
+          "depth": {
+            "layer": "body",
+            "sortNativeY": 33655.11794824634
+          },
+          "alpha": "straight",
+          "provenance": {
+            "kind": "extracted",
+            "method": "original source RGB, artist alpha/GrabCut, closed black interiors opaque; exclusive rear/front"
+          }
+        }
+      ],
+      "binding": {
+        "rule": "mean of accepted research footprint vertices + translation"
+      }
+    },
+    {
+      "objectId": "block-03",
+      "nativeKind": "segments",
+      "nativeIds": [
+        "block-03:edge-01",
+        "block-03:edge-02",
+        "block-03:edge-03",
+        "block-03:edge-04"
+      ],
+      "anchorNative": [
+        33611.81409552248,
+        33670.62754897705
+      ],
+      "anchorResearch": [
+        304.8140955224808,
+        -241.37245102295128
+      ],
+      "anchorSourcePx": [
+        1022.5118832028176,
+        565.1081834533604
+      ],
+      "anchorLocalPx": [
+        96.51188320281756,
+        92.10818345336043
+      ],
+      "sourceRectPx": {
+        "x": 926,
+        "y": 473,
+        "width": 149,
+        "height": 174
+      },
+      "parts": [
+        {
+          "partId": "block-03:ground-shadow",
+          "file": "block-03-ground-shadow.png",
+          "sha256": "6d5a5de351adfb3630fb6f1eae2da043dbc7113cc137b06168f400ae85d67b57",
+          "sizePx": [
+            149,
+            174
+          ],
+          "sourceRectPx": {
+            "x": 926,
+            "y": 473,
+            "width": 149,
+            "height": 174
+          },
+          "anchorLocalPx": [
+            96.51188320281756,
+            92.10818345336043
+          ],
+          "role": "ground-shadow",
+          "depth": {
+            "layer": "ground",
+            "sortNativeY": 33670.62754897705
+          },
+          "alpha": "straight",
+          "provenance": {
+            "kind": "restored",
+            "method": "source-region luminance estimate against repaired marble; approximate dark shadow, original removed"
+          }
+        },
+        {
+          "partId": "block-03:body",
+          "file": "block-03-body.png",
+          "sha256": "3e54a280ca7029aa21d46930df29c5bbd42df338a412f4d92b530b5e7dcece3f",
+          "sizePx": [
+            149,
+            174
+          ],
+          "sourceRectPx": {
+            "x": 926,
+            "y": 473,
+            "width": 149,
+            "height": 174
+          },
+          "anchorLocalPx": [
+            96.51188320281756,
+            92.10818345336043
+          ],
+          "role": "body",
+          "depth": {
+            "layer": "body",
+            "sortNativeY": 33670.62754897705
+          },
+          "alpha": "straight",
+          "provenance": {
+            "kind": "extracted",
+            "method": "original source RGB, artist alpha/GrabCut, closed black interiors opaque; exclusive rear/front"
+          }
+        }
+      ],
+      "binding": {
+        "rule": "mean of accepted research footprint vertices + translation"
+      }
+    },
+    {
+      "objectId": "block-04",
+      "nativeKind": "segments",
+      "nativeIds": [
+        "block-04:edge-01",
+        "block-04:edge-02",
+        "block-04:edge-03",
+        "block-04:edge-04"
+      ],
+      "anchorNative": [
+        33310.54355101097,
+        34072.54541852553
+      ],
+      "anchorResearch": [
+        3.5435510109673487,
+        160.54541852552939
+      ],
+      "anchorSourcePx": [
+        734.7795261592856,
+        796.8227479928871
+      ],
+      "anchorLocalPx": [
+        112.77952615928564,
+        102.82274799288712
+      ],
+      "sourceRectPx": {
+        "x": 622,
+        "y": 694,
+        "width": 170,
+        "height": 196
+      },
+      "parts": [
+        {
+          "partId": "block-04:ground-shadow",
+          "file": "block-04-ground-shadow.png",
+          "sha256": "591e402cef2f9c8513579e74fd3f07c27808f6526e36a2c9f828462fa129bcb5",
+          "sizePx": [
+            170,
+            196
+          ],
+          "sourceRectPx": {
+            "x": 622,
+            "y": 694,
+            "width": 170,
+            "height": 196
+          },
+          "anchorLocalPx": [
+            112.77952615928564,
+            102.82274799288712
+          ],
+          "role": "ground-shadow",
+          "depth": {
+            "layer": "ground",
+            "sortNativeY": 34072.54541852553
+          },
+          "alpha": "straight",
+          "provenance": {
+            "kind": "restored",
+            "method": "source-region luminance estimate against repaired marble; approximate dark shadow, original removed"
+          }
+        },
+        {
+          "partId": "block-04:body",
+          "file": "block-04-body.png",
+          "sha256": "15dd65609ae4699f4d2b8c08da637d95497c144c15f7dafa3d4c702d9553e419",
+          "sizePx": [
+            170,
+            196
+          ],
+          "sourceRectPx": {
+            "x": 622,
+            "y": 694,
+            "width": 170,
+            "height": 196
+          },
+          "anchorLocalPx": [
+            112.77952615928564,
+            102.82274799288712
+          ],
+          "role": "body",
+          "depth": {
+            "layer": "body",
+            "sortNativeY": 34072.54541852553
+          },
+          "alpha": "straight",
+          "provenance": {
+            "kind": "extracted",
+            "method": "original source RGB, artist alpha/GrabCut, closed black interiors opaque; exclusive rear/front"
+          }
+        }
+      ],
+      "binding": {
+        "rule": "mean of accepted research footprint vertices + translation"
+      }
+    },
+    {
+      "objectId": "block-05",
+      "nativeKind": "segments",
+      "nativeIds": [
+        "block-05:edge-01",
+        "block-05:edge-02",
+        "block-05:edge-03",
+        "block-05:edge-04"
+      ],
+      "anchorNative": [
+        33006.15521170197,
+        34465.61368698532
+      ],
+      "anchorResearch": [
+        -300.84478829803265,
+        553.6136869853217
+      ],
+      "anchorSourcePx": [
+        394.72834563849403,
+        1061.8895160898453
+      ],
+      "anchorLocalPx": [
+        116.72834563849403,
+        106.8895160898453
+      ],
+      "sourceRectPx": {
+        "x": 278,
+        "y": 955,
+        "width": 178,
+        "height": 196
+      },
+      "parts": [
+        {
+          "partId": "block-05:ground-shadow",
+          "file": "block-05-ground-shadow.png",
+          "sha256": "30f4e9ad5e173dfbf909ec4580e179e6182f14d0456ad00c56771c6f346d4465",
+          "sizePx": [
+            178,
+            196
+          ],
+          "sourceRectPx": {
+            "x": 278,
+            "y": 955,
+            "width": 178,
+            "height": 196
+          },
+          "anchorLocalPx": [
+            116.72834563849403,
+            106.8895160898453
+          ],
+          "role": "ground-shadow",
+          "depth": {
+            "layer": "ground",
+            "sortNativeY": 34465.61368698532
+          },
+          "alpha": "straight",
+          "provenance": {
+            "kind": "restored",
+            "method": "source-region luminance estimate against repaired marble; approximate dark shadow, original removed"
+          }
+        },
+        {
+          "partId": "block-05:body",
+          "file": "block-05-body.png",
+          "sha256": "e5061f6aface3e488629a0afb3ab3a1d31e7a6e681c67f5b5cf2dd2c49518257",
+          "sizePx": [
+            178,
+            196
+          ],
+          "sourceRectPx": {
+            "x": 278,
+            "y": 955,
+            "width": 178,
+            "height": 196
+          },
+          "anchorLocalPx": [
+            116.72834563849403,
+            106.8895160898453
+          ],
+          "role": "body",
+          "depth": {
+            "layer": "body",
+            "sortNativeY": 34465.61368698532
+          },
+          "alpha": "straight",
+          "provenance": {
+            "kind": "extracted",
+            "method": "original source RGB, artist alpha/GrabCut, closed black interiors opaque; exclusive rear/front"
+          }
+        }
+      ],
+      "binding": {
+        "rule": "mean of accepted research footprint vertices + translation"
+      }
+    },
+    {
+      "objectId": "block-06",
+      "nativeKind": "segments",
+      "nativeIds": [
+        "block-06:edge-01",
+        "block-06:edge-02",
+        "block-06:edge-03",
+        "block-06:edge-04"
+      ],
+      "anchorNative": [
+        33590.02780424376,
+        34467.67051302826
+      ],
+      "anchorResearch": [
+        283.0278042437567,
+        555.6705130282571
+      ],
+      "anchorSourcePx": [
+        1047.736125629038,
+        1063.3935764549035
+      ],
+      "anchorLocalPx": [
+        125.73612562903804,
+        107.3935764549035
+      ],
+      "sourceRectPx": {
+        "x": 922,
+        "y": 956,
+        "width": 187,
+        "height": 200
+      },
+      "parts": [
+        {
+          "partId": "block-06:ground-shadow",
+          "file": "block-06-ground-shadow.png",
+          "sha256": "ce0867d12ee47d73d1f98ea915c9a015ac849d77b2b45d398a3df6115d46079f",
+          "sizePx": [
+            187,
+            200
+          ],
+          "sourceRectPx": {
+            "x": 922,
+            "y": 956,
+            "width": 187,
+            "height": 200
+          },
+          "anchorLocalPx": [
+            125.73612562903804,
+            107.3935764549035
+          ],
+          "role": "ground-shadow",
+          "depth": {
+            "layer": "ground",
+            "sortNativeY": 34467.67051302826
+          },
+          "alpha": "straight",
+          "provenance": {
+            "kind": "restored",
+            "method": "source-region luminance estimate against repaired marble; approximate dark shadow, original removed"
+          }
+        },
+        {
+          "partId": "block-06:body",
+          "file": "block-06-body.png",
+          "sha256": "2e760f89042657d4d5dd969305a77ad4eb1b10c9ffa7e881b36eecefca7fa892",
+          "sizePx": [
+            187,
+            200
+          ],
+          "sourceRectPx": {
+            "x": 922,
+            "y": 956,
+            "width": 187,
+            "height": 200
+          },
+          "anchorLocalPx": [
+            125.73612562903804,
+            107.3935764549035
+          ],
+          "role": "body",
+          "depth": {
+            "layer": "body",
+            "sortNativeY": 34467.67051302826
+          },
+          "alpha": "straight",
+          "provenance": {
+            "kind": "extracted",
+            "method": "original source RGB, artist alpha/GrabCut, closed black interiors opaque; exclusive rear/front"
+          }
+        }
+      ],
+      "binding": {
+        "rule": "mean of accepted research footprint vertices + translation"
+      }
+    },
+    {
+      "objectId": "bowl-base-01",
+      "nativeKind": "pin",
+      "nativeIds": [
+        "bowl-base-01"
+      ],
+      "anchorNative": [
+        33372.62630208038,
+        33265.33454057419
+      ],
+      "anchorResearch": [
+        65.62630208038172,
+        -646.6654594258071
+      ],
+      "anchorSourcePx": [
+        789.5391973831868,
+        363.49665500567374
+      ],
+      "anchorLocalPx": [
+        100.53919738318677,
+        82.49665500567374
+      ],
+      "sourceRectPx": {
+        "x": 689,
+        "y": 281,
+        "width": 159,
+        "height": 158
+      },
+      "parts": [
+        {
+          "partId": "bowl-base-01:ground-shadow",
+          "file": "bowl-base-01-ground-shadow.png",
+          "sha256": "a2df7334a97509ea01771d108feb90d9aa73337fca28345b65459d9bb2303ea3",
+          "sizePx": [
+            159,
+            158
+          ],
+          "sourceRectPx": {
+            "x": 689,
+            "y": 281,
+            "width": 159,
+            "height": 158
+          },
+          "anchorLocalPx": [
+            100.53919738318677,
+            82.49665500567374
+          ],
+          "role": "ground-shadow",
+          "depth": {
+            "layer": "ground",
+            "sortNativeY": 33265.33454057419
+          },
+          "alpha": "straight",
+          "provenance": {
+            "kind": "restored",
+            "method": "source-region luminance estimate against repaired marble; approximate dark shadow, original removed"
+          }
+        },
+        {
+          "partId": "bowl-base-01:body",
+          "file": "bowl-base-01-body.png",
+          "sha256": "5d9b2972ddb41f67cf113bbd23a7521acde0152d4c8e2a632dc5dd0276e4340f",
+          "sizePx": [
+            159,
+            158
+          ],
+          "sourceRectPx": {
+            "x": 689,
+            "y": 281,
+            "width": 159,
+            "height": 158
+          },
+          "anchorLocalPx": [
+            100.53919738318677,
+            82.49665500567374
+          ],
+          "role": "body",
+          "depth": {
+            "layer": "body",
+            "sortNativeY": 33265.33454057419
+          },
+          "alpha": "straight",
+          "provenance": {
+            "kind": "extracted",
+            "method": "original source RGB, artist alpha/GrabCut, closed black interiors opaque; exclusive rear/front"
+          }
+        }
+      ]
+    },
+    {
+      "objectId": "bowl-base-02",
+      "nativeKind": "pin",
+      "nativeIds": [
+        "bowl-base-02"
+      ],
+      "anchorNative": [
+        32925.87454816949,
+        33450.90752935672
+      ],
+      "anchorResearch": [
+        -381.1254518305068,
+        -461.0924706432779
+      ],
+      "anchorSourcePx": [
+        380.83118865078745,
+        452.25060372988673
+      ],
+      "anchorLocalPx": [
+        105.83118865078745,
+        79.25060372988673
+      ],
+      "sourceRectPx": {
+        "x": 275,
+        "y": 373,
+        "width": 161,
+        "height": 157
+      },
+      "parts": [
+        {
+          "partId": "bowl-base-02:ground-shadow",
+          "file": "bowl-base-02-ground-shadow.png",
+          "sha256": "b2bb1406276ad2d96bdafbe52f5e0d882f60920d3264c83c6199ba53a531f0ab",
+          "sizePx": [
+            161,
+            157
+          ],
+          "sourceRectPx": {
+            "x": 275,
+            "y": 373,
+            "width": 161,
+            "height": 157
+          },
+          "anchorLocalPx": [
+            105.83118865078745,
+            79.25060372988673
+          ],
+          "role": "ground-shadow",
+          "depth": {
+            "layer": "ground",
+            "sortNativeY": 33450.90752935672
+          },
+          "alpha": "straight",
+          "provenance": {
+            "kind": "restored",
+            "method": "source-region luminance estimate against repaired marble; approximate dark shadow, original removed"
+          }
+        },
+        {
+          "partId": "bowl-base-02:body",
+          "file": "bowl-base-02-body.png",
+          "sha256": "1cd2270207f4ff33ca373f90bf82e910064888c8a1938bd1cff6e323297f10de",
+          "sizePx": [
+            161,
+            157
+          ],
+          "sourceRectPx": {
+            "x": 275,
+            "y": 373,
+            "width": 161,
+            "height": 157
+          },
+          "anchorLocalPx": [
+            105.83118865078745,
+            79.25060372988673
+          ],
+          "role": "body",
+          "depth": {
+            "layer": "body",
+            "sortNativeY": 33450.90752935672
+          },
+          "alpha": "straight",
+          "provenance": {
+            "kind": "extracted",
+            "method": "original source RGB, artist alpha/GrabCut, closed black interiors opaque; exclusive rear/front"
+          }
+        }
+      ]
+    },
+    {
+      "objectId": "bowl-base-03",
+      "nativeKind": "pin",
+      "nativeIds": [
+        "bowl-base-03"
+      ],
+      "anchorNative": [
+        33764.501122173075,
+        33488.62133374682
+      ],
+      "anchorResearch": [
+        457.5011221730747,
+        -423.3786662531784
+      ],
+      "anchorSourcePx": [
+        1154.4145239279844,
+        470.99931239611055
+      ],
+      "anchorLocalPx": [
+        103.41452392798442,
+        71.99931239611055
+      ],
+      "sourceRectPx": {
+        "x": 1051,
+        "y": 399,
+        "width": 164,
+        "height": 153
+      },
+      "parts": [
+        {
+          "partId": "bowl-base-03:ground-shadow",
+          "file": "bowl-base-03-ground-shadow.png",
+          "sha256": "4acd39e9f7bf98034a4e4f365ede252feb87d6f3c9205ce8678f376f613ba128",
+          "sizePx": [
+            164,
+            153
+          ],
+          "sourceRectPx": {
+            "x": 1051,
+            "y": 399,
+            "width": 164,
+            "height": 153
+          },
+          "anchorLocalPx": [
+            103.41452392798442,
+            71.99931239611055
+          ],
+          "role": "ground-shadow",
+          "depth": {
+            "layer": "ground",
+            "sortNativeY": 33488.62133374682
+          },
+          "alpha": "straight",
+          "provenance": {
+            "kind": "restored",
+            "method": "source-region luminance estimate against repaired marble; approximate dark shadow, original removed"
+          }
+        },
+        {
+          "partId": "bowl-base-03:body",
+          "file": "bowl-base-03-body.png",
+          "sha256": "47fec40adcfa30b1bfd54f6d53a09da50f9dad7e915395b225b91093d09ea54c",
+          "sizePx": [
+            164,
+            153
+          ],
+          "sourceRectPx": {
+            "x": 1051,
+            "y": 399,
+            "width": 164,
+            "height": 153
+          },
+          "anchorLocalPx": [
+            103.41452392798442,
+            71.99931239611055
+          ],
+          "role": "body",
+          "depth": {
+            "layer": "body",
+            "sortNativeY": 33488.62133374682
+          },
+          "alpha": "straight",
+          "provenance": {
+            "kind": "extracted",
+            "method": "original source RGB, artist alpha/GrabCut, closed black interiors opaque; exclusive rear/front"
+          }
+        }
+      ]
+    },
+    {
+      "objectId": "bowl-base-04",
+      "nativeKind": "pin",
+      "nativeIds": [
+        "bowl-base-04"
+      ],
+      "anchorNative": [
+        33185.439425283745,
+        33847.56246367806
+      ],
+      "anchorResearch": [
+        -121.56057471625536,
+        -64.43753632193693
+      ],
+      "anchorSourcePx": [
+        611.0404827017412,
+        662.7873373107716
+      ],
+      "anchorLocalPx": [
+        110.04048270174121,
+        80.78733731077159
+      ],
+      "sourceRectPx": {
+        "x": 501,
+        "y": 582,
+        "width": 170,
+        "height": 165
+      },
+      "parts": [
+        {
+          "partId": "bowl-base-04:ground-shadow",
+          "file": "bowl-base-04-ground-shadow.png",
+          "sha256": "5f188d9e8d14518998ee1ab8b91018a2bf5d4a588e950668ca77f037298df73b",
+          "sizePx": [
+            170,
+            165
+          ],
+          "sourceRectPx": {
+            "x": 501,
+            "y": 582,
+            "width": 170,
+            "height": 165
+          },
+          "anchorLocalPx": [
+            110.04048270174121,
+            80.78733731077159
+          ],
+          "role": "ground-shadow",
+          "depth": {
+            "layer": "ground",
+            "sortNativeY": 33847.56246367806
+          },
+          "alpha": "straight",
+          "provenance": {
+            "kind": "restored",
+            "method": "source-region luminance estimate against repaired marble; approximate dark shadow, original removed"
+          }
+        },
+        {
+          "partId": "bowl-base-04:body",
+          "file": "bowl-base-04-body.png",
+          "sha256": "b7e3ed7b9882870d59f476d6eaacaa2059acf0766e6b4a29b31371af845de3f9",
+          "sizePx": [
+            170,
+            165
+          ],
+          "sourceRectPx": {
+            "x": 501,
+            "y": 582,
+            "width": 170,
+            "height": 165
+          },
+          "anchorLocalPx": [
+            110.04048270174121,
+            80.78733731077159
+          ],
+          "role": "body",
+          "depth": {
+            "layer": "body",
+            "sortNativeY": 33847.56246367806
+          },
+          "alpha": "straight",
+          "provenance": {
+            "kind": "extracted",
+            "method": "original source RGB, artist alpha/GrabCut, closed black interiors opaque; exclusive rear/front"
+          }
+        }
+      ]
+    },
+    {
+      "objectId": "bowl-base-05",
+      "nativeKind": "pin",
+      "nativeIds": [
+        "bowl-base-05"
+      ],
+      "anchorNative": [
+        33621.30497565033,
+        34034.60165695869
+      ],
+      "anchorResearch": [
+        314.30497565033147,
+        122.60165695868636
+      ],
+      "anchorSourcePx": [
+        1052.9611718447272,
+        773.3909887783349
+      ],
+      "anchorLocalPx": [
+        114.96117184472723,
+        86.39098877833487
+      ],
+      "sourceRectPx": {
+        "x": 938,
+        "y": 687,
+        "width": 181,
+        "height": 178
+      },
+      "parts": [
+        {
+          "partId": "bowl-base-05:ground-shadow",
+          "file": "bowl-base-05-ground-shadow.png",
+          "sha256": "2f6443a95312dc6d1ef866d8a04abf96516d47ca51db48f94c0f0254440548f4",
+          "sizePx": [
+            181,
+            178
+          ],
+          "sourceRectPx": {
+            "x": 938,
+            "y": 687,
+            "width": 181,
+            "height": 178
+          },
+          "anchorLocalPx": [
+            114.96117184472723,
+            86.39098877833487
+          ],
+          "role": "ground-shadow",
+          "depth": {
+            "layer": "ground",
+            "sortNativeY": 34034.60165695869
+          },
+          "alpha": "straight",
+          "provenance": {
+            "kind": "restored",
+            "method": "source-region luminance estimate against repaired marble; approximate dark shadow, original removed"
+          }
+        },
+        {
+          "partId": "bowl-base-05:body",
+          "file": "bowl-base-05-body.png",
+          "sha256": "3a5a0db91e3fb1b9c4c119646a34cb871cd03b384f33b5a6bceaef15caf5c5d2",
+          "sizePx": [
+            181,
+            178
+          ],
+          "sourceRectPx": {
+            "x": 938,
+            "y": 687,
+            "width": 181,
+            "height": 178
+          },
+          "anchorLocalPx": [
+            114.96117184472723,
+            86.39098877833487
+          ],
+          "role": "body",
+          "depth": {
+            "layer": "body",
+            "sortNativeY": 34034.60165695869
+          },
+          "alpha": "straight",
+          "provenance": {
+            "kind": "extracted",
+            "method": "original source RGB, artist alpha/GrabCut, closed black interiors opaque; exclusive rear/front"
+          }
+        }
+      ]
+    },
+    {
+      "objectId": "bowl-base-06",
+      "nativeKind": "pin",
+      "nativeIds": [
+        "bowl-base-06"
+      ],
+      "anchorNative": [
+        33154.106262477726,
+        34282.73632933471
+      ],
+      "anchorResearch": [
+        -152.89373752227402,
+        370.736329334708
+      ],
+      "anchorSourcePx": [
+        566.5856034662123,
+        933.2404815717864
+      ],
+      "anchorLocalPx": [
+        121.58560346621232,
+        95.2404815717864
+      ],
+      "sourceRectPx": {
+        "x": 445,
+        "y": 838,
+        "width": 186,
+        "height": 190
+      },
+      "parts": [
+        {
+          "partId": "bowl-base-06:ground-shadow",
+          "file": "bowl-base-06-ground-shadow.png",
+          "sha256": "a4086cef7835ab3623c25efffc24fd156adc9076576beb8339b2514977bdf57c",
+          "sizePx": [
+            186,
+            190
+          ],
+          "sourceRectPx": {
+            "x": 445,
+            "y": 838,
+            "width": 186,
+            "height": 190
+          },
+          "anchorLocalPx": [
+            121.58560346621232,
+            95.2404815717864
+          ],
+          "role": "ground-shadow",
+          "depth": {
+            "layer": "ground",
+            "sortNativeY": 34282.73632933471
+          },
+          "alpha": "straight",
+          "provenance": {
+            "kind": "restored",
+            "method": "source-region luminance estimate against repaired marble; approximate dark shadow, original removed"
+          }
+        },
+        {
+          "partId": "bowl-base-06:body",
+          "file": "bowl-base-06-body.png",
+          "sha256": "c4258989feaa59b390963ee6f605a3ac3c0cd0d5d2615c41e41e677ea0870d1d",
+          "sizePx": [
+            186,
+            190
+          ],
+          "sourceRectPx": {
+            "x": 445,
+            "y": 838,
+            "width": 186,
+            "height": 190
+          },
+          "anchorLocalPx": [
+            121.58560346621232,
+            95.2404815717864
+          ],
+          "role": "body",
+          "depth": {
+            "layer": "body",
+            "sortNativeY": 34282.73632933471
+          },
+          "alpha": "straight",
+          "provenance": {
+            "kind": "extracted",
+            "method": "original source RGB, artist alpha/GrabCut, closed black interiors opaque; exclusive rear/front"
+          }
+        }
+      ]
+    },
+    {
+      "objectId": "pillar-01",
+      "nativeKind": "segments",
+      "nativeIds": [
+        "pillar-01:edge-01",
+        "pillar-01:edge-02",
+        "pillar-01:edge-03",
+        "pillar-01:edge-04"
+      ],
+      "anchorNative": [
+        33196.97168571731,
+        33464.86849948203
+      ],
+      "anchorResearch": [
+        -110.02831428268837,
+        -447.1315005179713
+      ],
+      "anchorSourcePx": [
+        629.7485014929754,
+        459.16204252716557
+      ],
+      "anchorLocalPx": [
+        91.74850149297538,
+        100.16204252716557
+      ],
+      "sourceRectPx": {
+        "x": 538,
+        "y": 359,
+        "width": 138,
+        "height": 166
+      },
+      "parts": [
+        {
+          "partId": "pillar-01:ground-shadow",
+          "file": "pillar-01-ground-shadow.png",
+          "sha256": "a2012d7c669ea09b8e404d7c83c7ac7ebc56931a1fccfe08d6654dce749f75bb",
+          "sizePx": [
+            138,
+            166
+          ],
+          "sourceRectPx": {
+            "x": 538,
+            "y": 359,
+            "width": 138,
+            "height": 166
+          },
+          "anchorLocalPx": [
+            91.74850149297538,
+            100.16204252716557
+          ],
+          "role": "ground-shadow",
+          "depth": {
+            "layer": "ground",
+            "sortNativeY": 33464.86849948203
+          },
+          "alpha": "straight",
+          "provenance": {
+            "kind": "restored",
+            "method": "source-region luminance estimate against repaired marble; approximate dark shadow, original removed"
+          }
+        },
+        {
+          "partId": "pillar-01:body",
+          "file": "pillar-01-body.png",
+          "sha256": "f13e8cd44ca7011e7b5db96413ab258227e3e8d67e73cff5319109eacb86c09e",
+          "sizePx": [
+            138,
+            166
+          ],
+          "sourceRectPx": {
+            "x": 538,
+            "y": 359,
+            "width": 138,
+            "height": 166
+          },
+          "anchorLocalPx": [
+            91.74850149297538,
+            100.16204252716557
+          ],
+          "role": "body",
+          "depth": {
+            "layer": "body",
+            "sortNativeY": 33464.86849948203
+          },
+          "alpha": "straight",
+          "provenance": {
+            "kind": "extracted",
+            "method": "original source RGB, artist alpha/GrabCut, closed black interiors opaque; exclusive rear/front"
+          }
+        }
+      ],
+      "binding": {
+        "rule": "mean of accepted research footprint vertices + translation"
+      }
+    },
+    {
+      "objectId": "pillar-02",
+      "nativeKind": "segments",
+      "nativeIds": [
+        "pillar-02:edge-01",
+        "pillar-02:edge-02",
+        "pillar-02:edge-03",
+        "pillar-02:edge-04"
+      ],
+      "anchorNative": [
+        32927.01160161463,
+        33875.64543401087
+      ],
+      "anchorResearch": [
+        -379.9883983853724,
+        -36.354565989131515
+      ],
+      "anchorSourcePx": [
+        353.7544386722168,
+        678.8934718668291
+      ],
+      "anchorLocalPx": [
+        98.75443867221679,
+        114.89347186682915
+      ],
+      "sourceRectPx": {
+        "x": 255,
+        "y": 564,
+        "width": 147,
+        "height": 186
+      },
+      "parts": [
+        {
+          "partId": "pillar-02:ground-shadow",
+          "file": "pillar-02-ground-shadow.png",
+          "sha256": "0e7f2c080059becf1f5828d1117d3faa3353993203efa3b68113e55365d4e5e2",
+          "sizePx": [
+            147,
+            186
+          ],
+          "sourceRectPx": {
+            "x": 255,
+            "y": 564,
+            "width": 147,
+            "height": 186
+          },
+          "anchorLocalPx": [
+            98.75443867221679,
+            114.89347186682915
+          ],
+          "role": "ground-shadow",
+          "depth": {
+            "layer": "ground",
+            "sortNativeY": 33875.64543401087
+          },
+          "alpha": "straight",
+          "provenance": {
+            "kind": "restored",
+            "method": "source-region luminance estimate against repaired marble; approximate dark shadow, original removed"
+          }
+        },
+        {
+          "partId": "pillar-02:body",
+          "file": "pillar-02-body.png",
+          "sha256": "68490124cb92c2275a9cb3b63c0a751bd05129666e7ae273c8ada809e0641123",
+          "sizePx": [
+            147,
+            186
+          ],
+          "sourceRectPx": {
+            "x": 255,
+            "y": 564,
+            "width": 147,
+            "height": 186
+          },
+          "anchorLocalPx": [
+            98.75443867221679,
+            114.89347186682915
+          ],
+          "role": "body",
+          "depth": {
+            "layer": "body",
+            "sortNativeY": 33875.64543401087
+          },
+          "alpha": "straight",
+          "provenance": {
+            "kind": "extracted",
+            "method": "original source RGB, artist alpha/GrabCut, closed black interiors opaque; exclusive rear/front"
+          }
+        }
+      ],
+      "binding": {
+        "rule": "mean of accepted research footprint vertices + translation"
+      }
+    },
+    {
+      "objectId": "pillar-03",
+      "nativeKind": "segments",
+      "nativeIds": [
+        "pillar-03:edge-01",
+        "pillar-03:edge-02",
+        "pillar-03:edge-03",
+        "pillar-03:edge-04"
+      ],
+      "anchorNative": [
+        33456.87264211891,
+        33876.94071157232
+      ],
+      "anchorResearch": [
+        149.87264211891306,
+        -35.05928842767753
+      ],
+      "anchorSourcePx": [
+        880.0002133100568,
+        679.640477365694
+      ],
+      "anchorLocalPx": [
+        102.00021331005678,
+        115.64047736569398
+      ],
+      "sourceRectPx": {
+        "x": 778,
+        "y": 564,
+        "width": 153,
+        "height": 188
+      },
+      "parts": [
+        {
+          "partId": "pillar-03:ground-shadow",
+          "file": "pillar-03-ground-shadow.png",
+          "sha256": "066e475bb518672fa1385e4bd12c2ac4e0c076302f26b9067ef0f0549d15ff1a",
+          "sizePx": [
+            153,
+            188
+          ],
+          "sourceRectPx": {
+            "x": 778,
+            "y": 564,
+            "width": 153,
+            "height": 188
+          },
+          "anchorLocalPx": [
+            102.00021331005678,
+            115.64047736569398
+          ],
+          "role": "ground-shadow",
+          "depth": {
+            "layer": "ground",
+            "sortNativeY": 33876.94071157232
+          },
+          "alpha": "straight",
+          "provenance": {
+            "kind": "restored",
+            "method": "source-region luminance estimate against repaired marble; approximate dark shadow, original removed"
+          }
+        },
+        {
+          "partId": "pillar-03:body",
+          "file": "pillar-03-body.png",
+          "sha256": "d05ba4889d729d2d1b40c345a4fff933ac2430a43b6393ffd9540b1e9f1484f7",
+          "sizePx": [
+            153,
+            188
+          ],
+          "sourceRectPx": {
+            "x": 778,
+            "y": 564,
+            "width": 153,
+            "height": 188
+          },
+          "anchorLocalPx": [
+            102.00021331005678,
+            115.64047736569398
+          ],
+          "role": "body",
+          "depth": {
+            "layer": "body",
+            "sortNativeY": 33876.94071157232
+          },
+          "alpha": "straight",
+          "provenance": {
+            "kind": "extracted",
+            "method": "original source RGB, artist alpha/GrabCut, closed black interiors opaque; exclusive rear/front"
+          }
+        }
+      ],
+      "binding": {
+        "rule": "mean of accepted research footprint vertices + translation"
+      }
+    },
+    {
+      "objectId": "pillar-04",
+      "nativeKind": "segments",
+      "nativeIds": [
+        "pillar-04:edge-01",
+        "pillar-04:edge-02",
+        "pillar-04:edge-03",
+        "pillar-04:edge-04"
+      ],
+      "anchorNative": [
+        32907.14775699726,
+        34283.33951839832
+      ],
+      "anchorResearch": [
+        -399.85224300273694,
+        371.339518398323
+      ],
+      "anchorSourcePx": [
+        300.76506499381634,
+        933.6489170612231
+      ],
+      "anchorLocalPx": [
+        108.76506499381634,
+        131.64891706122307
+      ],
+      "sourceRectPx": {
+        "x": 192,
+        "y": 802,
+        "width": 158,
+        "height": 206
+      },
+      "parts": [
+        {
+          "partId": "pillar-04:ground-shadow",
+          "file": "pillar-04-ground-shadow.png",
+          "sha256": "6933b552fecc74cf2aa0e542fca14d9b5f1fb9abf42ac9c36c423923d3e5fe43",
+          "sizePx": [
+            158,
+            206
+          ],
+          "sourceRectPx": {
+            "x": 192,
+            "y": 802,
+            "width": 158,
+            "height": 206
+          },
+          "anchorLocalPx": [
+            108.76506499381634,
+            131.64891706122307
+          ],
+          "role": "ground-shadow",
+          "depth": {
+            "layer": "ground",
+            "sortNativeY": 34283.33951839832
+          },
+          "alpha": "straight",
+          "provenance": {
+            "kind": "restored",
+            "method": "source-region luminance estimate against repaired marble; approximate dark shadow, original removed"
+          }
+        },
+        {
+          "partId": "pillar-04:body",
+          "file": "pillar-04-body.png",
+          "sha256": "7532bccd332494a16e98cde45310e819b8aa2c259c981f039862dd464ed0ad59",
+          "sizePx": [
+            158,
+            206
+          ],
+          "sourceRectPx": {
+            "x": 192,
+            "y": 802,
+            "width": 158,
+            "height": 206
+          },
+          "anchorLocalPx": [
+            108.76506499381634,
+            131.64891706122307
+          ],
+          "role": "body",
+          "depth": {
+            "layer": "body",
+            "sortNativeY": 34283.33951839832
+          },
+          "alpha": "straight",
+          "provenance": {
+            "kind": "extracted",
+            "method": "original source RGB, artist alpha/GrabCut, closed black interiors opaque; exclusive rear/front"
+          }
+        }
+      ],
+      "binding": {
+        "rule": "mean of accepted research footprint vertices + translation"
+      }
+    },
+    {
+      "objectId": "pillar-05",
+      "nativeKind": "segments",
+      "nativeIds": [
+        "pillar-05:edge-01",
+        "pillar-05:edge-02",
+        "pillar-05:edge-03",
+        "pillar-05:edge-04"
+      ],
+      "anchorNative": [
+        33770.54964927896,
+        34282.94923055996
+      ],
+      "anchorResearch": [
+        463.5496492789607,
+        370.9492305599633
+      ],
+      "anchorSourcePx": [
+        1230.0000000000018,
+        933.3846311412896
+      ],
+      "anchorLocalPx": [
+        112.00000000000182,
+        131.38463114128956
+      ],
+      "sourceRectPx": {
+        "x": 1118,
+        "y": 802,
+        "width": 169,
+        "height": 210
+      },
+      "parts": [
+        {
+          "partId": "pillar-05:ground-shadow",
+          "file": "pillar-05-ground-shadow.png",
+          "sha256": "095f3d4b7726449ba3fba79e72316d5fe3ad33aec3365c4bc4adf8f5a7b1247b",
+          "sizePx": [
+            169,
+            210
+          ],
+          "sourceRectPx": {
+            "x": 1118,
+            "y": 802,
+            "width": 169,
+            "height": 210
+          },
+          "anchorLocalPx": [
+            112.00000000000182,
+            131.38463114128956
+          ],
+          "role": "ground-shadow",
+          "depth": {
+            "layer": "ground",
+            "sortNativeY": 34282.94923055996
+          },
+          "alpha": "straight",
+          "provenance": {
+            "kind": "restored",
+            "method": "source-region luminance estimate against repaired marble; approximate dark shadow, original removed"
+          }
+        },
+        {
+          "partId": "pillar-05:body",
+          "file": "pillar-05-body.png",
+          "sha256": "6a12fcc61fecc94a8796408de5fac77a2485bbc977ae306903c75894a9f484fd",
+          "sizePx": [
+            169,
+            210
+          ],
+          "sourceRectPx": {
+            "x": 1118,
+            "y": 802,
+            "width": 169,
+            "height": 210
+          },
+          "anchorLocalPx": [
+            112.00000000000182,
+            131.38463114128956
+          ],
+          "role": "body",
+          "depth": {
+            "layer": "body",
+            "sortNativeY": 34282.94923055996
+          },
+          "alpha": "straight",
+          "provenance": {
+            "kind": "extracted",
+            "method": "original source RGB, artist alpha/GrabCut, closed black interiors opaque; exclusive rear/front"
+          }
+        }
+      ],
+      "binding": {
+        "rule": "mean of accepted research footprint vertices + translation"
+      }
+    },
+    {
+      "objectId": "pillar-06",
+      "nativeKind": "segments",
+      "nativeIds": [
+        "pillar-06:edge-01",
+        "pillar-06:edge-02",
+        "pillar-06:edge-03",
+        "pillar-06:edge-04"
+      ],
+      "anchorNative": [
+        33293.11855776688,
+        34496.23789866319
+      ],
+      "anchorResearch": [
+        -13.881442233119742,
+        584.2378986631884
+      ],
+      "anchorSourcePx": [
+        715.4999999999983,
+        1084.4210171331008
+      ],
+      "anchorLocalPx": [
+        108.4999999999983,
+        138.4210171331008
+      ],
+      "sourceRectPx": {
+        "x": 607,
+        "y": 946,
+        "width": 162,
+        "height": 212
+      },
+      "parts": [
+        {
+          "partId": "pillar-06:ground-shadow",
+          "file": "pillar-06-ground-shadow.png",
+          "sha256": "38abc6c59d217a69ac4b50298f91e07612ec34783ee5884d1cbc0197a94a4d1d",
+          "sizePx": [
+            162,
+            212
+          ],
+          "sourceRectPx": {
+            "x": 607,
+            "y": 946,
+            "width": 162,
+            "height": 212
+          },
+          "anchorLocalPx": [
+            108.4999999999983,
+            138.4210171331008
+          ],
+          "role": "ground-shadow",
+          "depth": {
+            "layer": "ground",
+            "sortNativeY": 34496.23789866319
+          },
+          "alpha": "straight",
+          "provenance": {
+            "kind": "restored",
+            "method": "source-region luminance estimate against repaired marble; approximate dark shadow, original removed"
+          }
+        },
+        {
+          "partId": "pillar-06:body",
+          "file": "pillar-06-body.png",
+          "sha256": "bd2bffa3399211f6682ece56de1f311ea5624bbe9178a50175012c2baa702381",
+          "sizePx": [
+            162,
+            212
+          ],
+          "sourceRectPx": {
+            "x": 607,
+            "y": 946,
+            "width": 162,
+            "height": 212
+          },
+          "anchorLocalPx": [
+            108.4999999999983,
+            138.4210171331008
+          ],
+          "role": "body",
+          "depth": {
+            "layer": "body",
+            "sortNativeY": 34496.23789866319
+          },
+          "alpha": "straight",
+          "provenance": {
+            "kind": "extracted",
+            "method": "original source RGB, artist alpha/GrabCut, closed black interiors opaque; exclusive rear/front"
+          }
+        }
+      ],
+      "binding": {
+        "rule": "mean of accepted research footprint vertices + translation"
+      }
+    },
+    {
+      "objectId": "skull-base-01",
+      "nativeKind": "pin",
+      "nativeIds": [
+        "skull-base-01"
+      ],
+      "anchorNative": [
+        33049.55490936593,
+        33252.91336923354
+      ],
+      "anchorResearch": [
+        -257.4450906340717,
+        -659.0866307664619
+      ],
+      "anchorSourcePx": [
+        502.44966648646755,
+        357.75542466977174
+      ],
+      "anchorLocalPx": [
+        84.44966648646755,
+        83.75542466977174
+      ],
+      "sourceRectPx": {
+        "x": 418,
+        "y": 274,
+        "width": 132,
+        "height": 146
+      },
+      "parts": [
+        {
+          "partId": "skull-base-01:ground-shadow",
+          "file": "skull-base-01-ground-shadow.png",
+          "sha256": "084a6ff6550e083ceaa957033f6747f14d2de8e4e67ad42373224b7d75111e7e",
+          "sizePx": [
+            132,
+            146
+          ],
+          "sourceRectPx": {
+            "x": 418,
+            "y": 274,
+            "width": 132,
+            "height": 146
+          },
+          "anchorLocalPx": [
+            84.44966648646755,
+            83.75542466977174
+          ],
+          "role": "ground-shadow",
+          "depth": {
+            "layer": "ground",
+            "sortNativeY": 33252.91336923354
+          },
+          "alpha": "straight",
+          "provenance": {
+            "kind": "restored",
+            "method": "source-region luminance estimate against repaired marble; approximate dark shadow, original removed"
+          }
+        },
+        {
+          "partId": "skull-base-01:body",
+          "file": "skull-base-01-body.png",
+          "sha256": "cdfee9f8b24e1ffb143fc3e8ca2e52ce861fd96e785f0dd013f8f57efc7aec1d",
+          "sizePx": [
+            132,
+            146
+          ],
+          "sourceRectPx": {
+            "x": 418,
+            "y": 274,
+            "width": 132,
+            "height": 146
+          },
+          "anchorLocalPx": [
+            84.44966648646755,
+            83.75542466977174
+          ],
+          "role": "body",
+          "depth": {
+            "layer": "body",
+            "sortNativeY": 33252.91336923354
+          },
+          "alpha": "straight",
+          "provenance": {
+            "kind": "extracted",
+            "method": "original source RGB, artist alpha/GrabCut, closed black interiors opaque; exclusive rear/front"
+          }
+        }
+      ]
+    },
+    {
+      "objectId": "skull-base-02",
+      "nativeKind": "pin",
+      "nativeIds": [
+        "skull-base-02"
+      ],
+      "anchorNative": [
+        33677.02369252854,
+        33255.06699440539
+      ],
+      "anchorResearch": [
+        370.0236925285426,
+        -656.933005594612
+      ],
+      "anchorSourcePx": [
+        1059.915645244143,
+        358.7491251666673
+      ],
+      "anchorLocalPx": [
+        80.91564524414298,
+        84.74912516666728
+      ],
+      "sourceRectPx": {
+        "x": 979,
+        "y": 274,
+        "width": 128,
+        "height": 147
+      },
+      "parts": [
+        {
+          "partId": "skull-base-02:ground-shadow",
+          "file": "skull-base-02-ground-shadow.png",
+          "sha256": "18bf624b5a3ad4913c8207b668d1c3b5e7404729f0ed55c3657f5c53bbf4cfde",
+          "sizePx": [
+            128,
+            147
+          ],
+          "sourceRectPx": {
+            "x": 979,
+            "y": 274,
+            "width": 128,
+            "height": 147
+          },
+          "anchorLocalPx": [
+            80.91564524414298,
+            84.74912516666728
+          ],
+          "role": "ground-shadow",
+          "depth": {
+            "layer": "ground",
+            "sortNativeY": 33255.06699440539
+          },
+          "alpha": "straight",
+          "provenance": {
+            "kind": "restored",
+            "method": "source-region luminance estimate against repaired marble; approximate dark shadow, original removed"
+          }
+        },
+        {
+          "partId": "skull-base-02:body",
+          "file": "skull-base-02-body.png",
+          "sha256": "cf3e0097d504ca7029cbb22693ad561be8156b6f5cf36c87ab1db1e9b94723f1",
+          "sizePx": [
+            128,
+            147
+          ],
+          "sourceRectPx": {
+            "x": 979,
+            "y": 274,
+            "width": 128,
+            "height": 147
+          },
+          "anchorLocalPx": [
+            80.91564524414298,
+            84.74912516666728
+          ],
+          "role": "body",
+          "depth": {
+            "layer": "body",
+            "sortNativeY": 33255.06699440539
+          },
+          "alpha": "straight",
+          "provenance": {
+            "kind": "extracted",
+            "method": "original source RGB, artist alpha/GrabCut, closed black interiors opaque; exclusive rear/front"
+          }
+        }
+      ]
+    },
+    {
+      "objectId": "skull-base-03",
+      "nativeKind": "pin",
+      "nativeIds": [
+        "skull-base-03"
+      ],
+      "anchorNative": [
+        33337.22833551246,
+        33630.85380130959
+      ],
+      "anchorResearch": [
+        30.228335512460035,
+        -281.14619869041053
+      ],
+      "anchorSourcePx": [
+        759.8125829148678,
+        544.0126671187976
+      ],
+      "anchorLocalPx": [
+        84.81258291486779,
+        97.0126671187976
+      ],
+      "sourceRectPx": {
+        "x": 675,
+        "y": 447,
+        "width": 137,
+        "height": 162
+      },
+      "parts": [
+        {
+          "partId": "skull-base-03:ground-shadow",
+          "file": "skull-base-03-ground-shadow.png",
+          "sha256": "b69a47c1da90dfd7da370dc23230a35b47fc81d65e8101ca2009b0afe5384b2e",
+          "sizePx": [
+            137,
+            162
+          ],
+          "sourceRectPx": {
+            "x": 675,
+            "y": 447,
+            "width": 137,
+            "height": 162
+          },
+          "anchorLocalPx": [
+            84.81258291486779,
+            97.0126671187976
+          ],
+          "role": "ground-shadow",
+          "depth": {
+            "layer": "ground",
+            "sortNativeY": 33630.85380130959
+          },
+          "alpha": "straight",
+          "provenance": {
+            "kind": "restored",
+            "method": "source-region luminance estimate against repaired marble; approximate dark shadow, original removed"
+          }
+        },
+        {
+          "partId": "skull-base-03:body",
+          "file": "skull-base-03-body.png",
+          "sha256": "cd9407940d5050d55806159de5136646c8b213127c3968d2004b654a82ab7510",
+          "sizePx": [
+            137,
+            162
+          ],
+          "sourceRectPx": {
+            "x": 675,
+            "y": 447,
+            "width": 137,
+            "height": 162
+          },
+          "anchorLocalPx": [
+            84.81258291486779,
+            97.0126671187976
+          ],
+          "role": "body",
+          "depth": {
+            "layer": "body",
+            "sortNativeY": 33630.85380130959
+          },
+          "alpha": "straight",
+          "provenance": {
+            "kind": "extracted",
+            "method": "original source RGB, artist alpha/GrabCut, closed black interiors opaque; exclusive rear/front"
+          }
+        }
+      ]
+    },
+    {
+      "objectId": "skull-base-04",
+      "nativeKind": "pin",
+      "nativeIds": [
+        "skull-base-04"
+      ],
+      "anchorNative": [
+        33766.32601748817,
+        33870.5786289894
+      ],
+      "anchorResearch": [
+        459.3260174881725,
+        -41.421371010597795
+      ],
+      "anchorSourcePx": [
+        1186.8465187417507,
+        675.9748923669654
+      ],
+      "anchorLocalPx": [
+        86.84651874175074,
+        94.97489236696538
+      ],
+      "sourceRectPx": {
+        "x": 1100,
+        "y": 581,
+        "width": 139,
+        "height": 164
+      },
+      "parts": [
+        {
+          "partId": "skull-base-04:ground-shadow",
+          "file": "skull-base-04-ground-shadow.png",
+          "sha256": "fd76c8b517e606bc3e9f33c5df4a02af23a83c1417e8dc964e3a43979961e216",
+          "sizePx": [
+            139,
+            164
+          ],
+          "sourceRectPx": {
+            "x": 1100,
+            "y": 581,
+            "width": 139,
+            "height": 164
+          },
+          "anchorLocalPx": [
+            86.84651874175074,
+            94.97489236696538
+          ],
+          "role": "ground-shadow",
+          "depth": {
+            "layer": "ground",
+            "sortNativeY": 33870.5786289894
+          },
+          "alpha": "straight",
+          "provenance": {
+            "kind": "restored",
+            "method": "source-region luminance estimate against repaired marble; approximate dark shadow, original removed"
+          }
+        },
+        {
+          "partId": "skull-base-04:body",
+          "file": "skull-base-04-body.png",
+          "sha256": "eeb18335067377cdb5b88e8d9ab520235f07a53d96252a51c7decae27fae99ca",
+          "sizePx": [
+            139,
+            164
+          ],
+          "sourceRectPx": {
+            "x": 1100,
+            "y": 581,
+            "width": 139,
+            "height": 164
+          },
+          "anchorLocalPx": [
+            86.84651874175074,
+            94.97489236696538
+          ],
+          "role": "body",
+          "depth": {
+            "layer": "body",
+            "sortNativeY": 33870.5786289894
+          },
+          "alpha": "straight",
+          "provenance": {
+            "kind": "extracted",
+            "method": "original source RGB, artist alpha/GrabCut, closed black interiors opaque; exclusive rear/front"
+          }
+        }
+      ]
+    },
+    {
+      "objectId": "skull-base-05",
+      "nativeKind": "pin",
+      "nativeIds": [
+        "skull-base-05"
+      ],
+      "anchorNative": [
+        33051.7125983366,
+        34071.4531863284
+      ],
+      "anchorResearch": [
+        -255.2874016634014,
+        159.45318632839917
+      ],
+      "anchorSourcePx": [
+        467.82198083109665,
+        796.1433579570094
+      ],
+      "anchorLocalPx": [
+        91.82198083109665,
+        104.14335795700936
+      ],
+      "sourceRectPx": {
+        "x": 376,
+        "y": 692,
+        "width": 147,
+        "height": 174
+      },
+      "parts": [
+        {
+          "partId": "skull-base-05:ground-shadow",
+          "file": "skull-base-05-ground-shadow.png",
+          "sha256": "636a8575f1665d87a500e3eb866bc7c96d41b262d0edf6e6fd033f1e9143759f",
+          "sizePx": [
+            147,
+            174
+          ],
+          "sourceRectPx": {
+            "x": 376,
+            "y": 692,
+            "width": 147,
+            "height": 174
+          },
+          "anchorLocalPx": [
+            91.82198083109665,
+            104.14335795700936
+          ],
+          "role": "ground-shadow",
+          "depth": {
+            "layer": "ground",
+            "sortNativeY": 34071.4531863284
+          },
+          "alpha": "straight",
+          "provenance": {
+            "kind": "restored",
+            "method": "source-region luminance estimate against repaired marble; approximate dark shadow, original removed"
+          }
+        },
+        {
+          "partId": "skull-base-05:body",
+          "file": "skull-base-05-body.png",
+          "sha256": "5aa1c16d05dd315dc9b59e48022f0d0ff0ae0a88c8703e5e31e922774dff2bce",
+          "sizePx": [
+            147,
+            174
+          ],
+          "sourceRectPx": {
+            "x": 376,
+            "y": 692,
+            "width": 147,
+            "height": 174
+          },
+          "anchorLocalPx": [
+            91.82198083109665,
+            104.14335795700936
+          ],
+          "role": "body",
+          "depth": {
+            "layer": "body",
+            "sortNativeY": 34071.4531863284
+          },
+          "alpha": "straight",
+          "provenance": {
+            "kind": "extracted",
+            "method": "original source RGB, artist alpha/GrabCut, closed black interiors opaque; exclusive rear/front"
+          }
+        }
+      ]
+    },
+    {
+      "objectId": "skull-base-06",
+      "nativeKind": "pin",
+      "nativeIds": [
+        "skull-base-06"
+      ],
+      "anchorNative": [
+        33455.286621423846,
+        34286.65987892238
+      ],
+      "anchorResearch": [
+        148.28662142384565,
+        374.659878922379
+      ],
+      "anchorSourcePx": [
+        890.8330093739573,
+        935.8990358609229
+      ],
+      "anchorLocalPx": [
+        92.83300937395734,
+        108.89903586092294
+      ],
+      "sourceRectPx": {
+        "x": 798,
+        "y": 827,
+        "width": 151,
+        "height": 184
+      },
+      "parts": [
+        {
+          "partId": "skull-base-06:ground-shadow",
+          "file": "skull-base-06-ground-shadow.png",
+          "sha256": "ce4e5ea100f961e691ad6a5ba61749daebf035be740c2367e7bb7f1a295d8172",
+          "sizePx": [
+            151,
+            184
+          ],
+          "sourceRectPx": {
+            "x": 798,
+            "y": 827,
+            "width": 151,
+            "height": 184
+          },
+          "anchorLocalPx": [
+            92.83300937395734,
+            108.89903586092294
+          ],
+          "role": "ground-shadow",
+          "depth": {
+            "layer": "ground",
+            "sortNativeY": 34286.65987892238
+          },
+          "alpha": "straight",
+          "provenance": {
+            "kind": "restored",
+            "method": "source-region luminance estimate against repaired marble; approximate dark shadow, original removed"
+          }
+        },
+        {
+          "partId": "skull-base-06:body",
+          "file": "skull-base-06-body.png",
+          "sha256": "5814ef85463c68ec6c28ff25a97746525544b8633209987b6834f78d71817142",
+          "sizePx": [
+            151,
+            184
+          ],
+          "sourceRectPx": {
+            "x": 798,
+            "y": 827,
+            "width": 151,
+            "height": 184
+          },
+          "anchorLocalPx": [
+            92.83300937395734,
+            108.89903586092294
+          ],
+          "role": "body",
+          "depth": {
+            "layer": "body",
+            "sortNativeY": 34286.65987892238
+          },
+          "alpha": "straight",
+          "provenance": {
+            "kind": "extracted",
+            "method": "original source RGB, artist alpha/GrabCut, closed black interiors opaque; exclusive rear/front"
+          }
+        }
+      ]
+    },
+    {
+      "objectId": "receiver-01",
+      "nativeKind": "bucket",
+      "nativeIds": [
+        "receiver-01"
+      ],
+      "anchorNative": [
+        32895.27416667457,
+        34639.03401006639
+      ],
+      "anchorResearch": [
+        -411.72583332542854,
+        727.0340100663889
+      ],
+      "anchorSourcePx": [
+        253.047586047588,
+        1193.5205590205587
+      ],
+      "anchorLocalPx": [
+        242.047586047588,
+        100.52055902055872
+      ],
+      "sourceRectPx": {
+        "x": 11,
+        "y": 1093,
+        "width": 405,
+        "height": 361
+      },
+      "parts": [
+        {
+          "partId": "receiver-01:ground-shadow",
+          "file": "receiver-01-ground-shadow.png",
+          "sha256": "e044f9a1aa684efb8a1bb7ecfcef39137f4aa6b30608fa9a458231dade389750",
+          "sizePx": [
+            405,
+            361
+          ],
+          "sourceRectPx": {
+            "x": 11,
+            "y": 1093,
+            "width": 405,
+            "height": 361
+          },
+          "anchorLocalPx": [
+            242.047586047588,
+            100.52055902055872
+          ],
+          "role": "ground-shadow",
+          "depth": {
+            "layer": "ground",
+            "sortNativeY": 34639.03401006639
+          },
+          "alpha": "straight",
+          "provenance": {
+            "kind": "restored",
+            "method": "source-region luminance estimate against repaired marble; approximate dark shadow, original removed"
+          }
+        },
+        {
+          "partId": "receiver-01:rear",
+          "file": "receiver-01-rear.png",
+          "sha256": "ecb287a21a58f5eb3aed31fa51cd0cd82564f7753e9a73c758587096d5f2cd67",
+          "sizePx": [
+            405,
+            361
+          ],
+          "sourceRectPx": {
+            "x": 11,
+            "y": 1093,
+            "width": 405,
+            "height": 361
+          },
+          "anchorLocalPx": [
+            242.047586047588,
+            100.52055902055872
+          ],
+          "role": "body",
+          "depth": {
+            "layer": "receiver-back",
+            "sortNativeY": 34639.03401006639
+          },
+          "alpha": "straight",
+          "provenance": {
+            "kind": "extracted",
+            "method": "original source RGB, artist alpha/GrabCut, closed black interiors opaque; exclusive rear/front"
+          }
+        },
+        {
+          "partId": "receiver-01:front",
+          "file": "receiver-01-front.png",
+          "sha256": "c3df90c4849f8b0f18669b88224527a87e31b572bf7ee205946b1054f8c256e2",
+          "sizePx": [
+            405,
+            361
+          ],
+          "sourceRectPx": {
+            "x": 11,
+            "y": 1093,
+            "width": 405,
+            "height": 361
+          },
+          "anchorLocalPx": [
+            242.047586047588,
+            100.52055902055872
+          ],
+          "role": "foreground",
+          "depth": {
+            "layer": "receiver-front",
+            "sortNativeY": 34639.03401006639
+          },
+          "alpha": "straight",
+          "provenance": {
+            "kind": "extracted",
+            "method": "original source RGB, artist alpha/GrabCut, closed black interiors opaque; exclusive rear/front"
+          }
+        }
+      ]
+    },
+    {
+      "objectId": "receiver-02",
+      "nativeKind": "bucket",
+      "nativeIds": [
+        "receiver-02"
+      ],
+      "anchorNative": [
+        33190.99753486421,
+        34639.561335368126
+      ],
+      "anchorResearch": [
+        -116.00246513578895,
+        727.5613353681256
+      ],
+      "anchorSourcePx": [
+        596.4116787531084,
+        1193.9362485117426
+      ],
+      "anchorLocalPx": [
+        211.4116787531084,
+        90.93624851174263
+      ],
+      "sourceRectPx": {
+        "x": 385,
+        "y": 1103,
+        "width": 362,
+        "height": 349
+      },
+      "parts": [
+        {
+          "partId": "receiver-02:ground-shadow",
+          "file": "receiver-02-ground-shadow.png",
+          "sha256": "7a70f3ec17fc2486b310367afd27efdd08191dec470aae819a3752f8d4315e9b",
+          "sizePx": [
+            362,
+            349
+          ],
+          "sourceRectPx": {
+            "x": 385,
+            "y": 1103,
+            "width": 362,
+            "height": 349
+          },
+          "anchorLocalPx": [
+            211.4116787531084,
+            90.93624851174263
+          ],
+          "role": "ground-shadow",
+          "depth": {
+            "layer": "ground",
+            "sortNativeY": 34639.561335368126
+          },
+          "alpha": "straight",
+          "provenance": {
+            "kind": "restored",
+            "method": "source-region luminance estimate against repaired marble; approximate dark shadow, original removed"
+          }
+        },
+        {
+          "partId": "receiver-02:rear",
+          "file": "receiver-02-rear.png",
+          "sha256": "5d480a2e5ff6d8f1f382453c80d616ac54849a3998e0ffe7286ac3ce97c1f30e",
+          "sizePx": [
+            362,
+            349
+          ],
+          "sourceRectPx": {
+            "x": 385,
+            "y": 1103,
+            "width": 362,
+            "height": 349
+          },
+          "anchorLocalPx": [
+            211.4116787531084,
+            90.93624851174263
+          ],
+          "role": "body",
+          "depth": {
+            "layer": "receiver-back",
+            "sortNativeY": 34639.561335368126
+          },
+          "alpha": "straight",
+          "provenance": {
+            "kind": "extracted",
+            "method": "original source RGB, artist alpha/GrabCut, closed black interiors opaque; exclusive rear/front"
+          }
+        },
+        {
+          "partId": "receiver-02:front",
+          "file": "receiver-02-front.png",
+          "sha256": "a459d14884f1e79c3d4e3ad53dd79f67bb1f070ddb919d4b7e718aed780b5773",
+          "sizePx": [
+            362,
+            349
+          ],
+          "sourceRectPx": {
+            "x": 385,
+            "y": 1103,
+            "width": 362,
+            "height": 349
+          },
+          "anchorLocalPx": [
+            211.4116787531084,
+            90.93624851174263
+          ],
+          "role": "foreground",
+          "depth": {
+            "layer": "receiver-front",
+            "sortNativeY": 34639.561335368126
+          },
+          "alpha": "straight",
+          "provenance": {
+            "kind": "extracted",
+            "method": "original source RGB, artist alpha/GrabCut, closed black interiors opaque; exclusive rear/front"
+          }
+        }
+      ]
+    },
+    {
+      "objectId": "receiver-03",
+      "nativeKind": "bucket",
+      "nativeIds": [
+        "receiver-03"
+      ],
+      "anchorNative": [
+        33492.7346694948,
+        34640.77828436916
+      ],
+      "anchorResearch": [
+        185.73466949479916,
+        728.7782843691602
+      ],
+      "anchorSourcePx": [
+        946.873576777102,
+        1194.8959380449294
+      ],
+      "anchorLocalPx": [
+        184.87357677710202,
+        91.89593804492938
+      ],
+      "sourceRectPx": {
+        "x": 762,
+        "y": 1103,
+        "width": 372,
+        "height": 349
+      },
+      "parts": [
+        {
+          "partId": "receiver-03:ground-shadow",
+          "file": "receiver-03-ground-shadow.png",
+          "sha256": "0b6f3680d42ba21afb96e4a741987d0a8023d55195fa33e1d14c817b48426009",
+          "sizePx": [
+            372,
+            349
+          ],
+          "sourceRectPx": {
+            "x": 762,
+            "y": 1103,
+            "width": 372,
+            "height": 349
+          },
+          "anchorLocalPx": [
+            184.87357677710202,
+            91.89593804492938
+          ],
+          "role": "ground-shadow",
+          "depth": {
+            "layer": "ground",
+            "sortNativeY": 34640.77828436916
+          },
+          "alpha": "straight",
+          "provenance": {
+            "kind": "restored",
+            "method": "source-region luminance estimate against repaired marble; approximate dark shadow, original removed"
+          }
+        },
+        {
+          "partId": "receiver-03:rear",
+          "file": "receiver-03-rear.png",
+          "sha256": "e6e1afdcf7a227b6eb03f8ea25f3e54a960f396b4f679748d2bf0a8f0879ea07",
+          "sizePx": [
+            372,
+            349
+          ],
+          "sourceRectPx": {
+            "x": 762,
+            "y": 1103,
+            "width": 372,
+            "height": 349
+          },
+          "anchorLocalPx": [
+            184.87357677710202,
+            91.89593804492938
+          ],
+          "role": "body",
+          "depth": {
+            "layer": "receiver-back",
+            "sortNativeY": 34640.77828436916
+          },
+          "alpha": "straight",
+          "provenance": {
+            "kind": "extracted",
+            "method": "original source RGB, artist alpha/GrabCut, closed black interiors opaque; exclusive rear/front"
+          }
+        },
+        {
+          "partId": "receiver-03:front",
+          "file": "receiver-03-front.png",
+          "sha256": "dfa88fbbd3a7881b4a1223639bcd436530fd9542f02873da62cc07674de1e52f",
+          "sizePx": [
+            372,
+            349
+          ],
+          "sourceRectPx": {
+            "x": 762,
+            "y": 1103,
+            "width": 372,
+            "height": 349
+          },
+          "anchorLocalPx": [
+            184.87357677710202,
+            91.89593804492938
+          ],
+          "role": "foreground",
+          "depth": {
+            "layer": "receiver-front",
+            "sortNativeY": 34640.77828436916
+          },
+          "alpha": "straight",
+          "provenance": {
+            "kind": "extracted",
+            "method": "original source RGB, artist alpha/GrabCut, closed black interiors opaque; exclusive rear/front"
+          }
+        }
+      ]
+    },
+    {
+      "objectId": "receiver-04",
+      "nativeKind": "bucket",
+      "nativeIds": [
+        "receiver-04"
+      ],
+      "anchorNative": [
+        33790.663139784796,
+        34639.995941136774
+      ],
+      "anchorResearch": [
+        483.66313978479593,
+        727.9959411367745
+      ],
+      "anchorSourcePx": [
+        1292.8502296930496,
+        1194.2789204426838
+      ],
+      "anchorLocalPx": [
+        194.85022969304964,
+        101.27892044268378
+      ],
+      "sourceRectPx": {
+        "x": 1098,
+        "y": 1093,
+        "width": 416,
+        "height": 362
+      },
+      "parts": [
+        {
+          "partId": "receiver-04:ground-shadow",
+          "file": "receiver-04-ground-shadow.png",
+          "sha256": "fa7dc4eee03f9b68b57fcd2bd9c3c84e64f66206a7ecef187f62766c90e6db45",
+          "sizePx": [
+            416,
+            362
+          ],
+          "sourceRectPx": {
+            "x": 1098,
+            "y": 1093,
+            "width": 416,
+            "height": 362
+          },
+          "anchorLocalPx": [
+            194.85022969304964,
+            101.27892044268378
+          ],
+          "role": "ground-shadow",
+          "depth": {
+            "layer": "ground",
+            "sortNativeY": 34639.995941136774
+          },
+          "alpha": "straight",
+          "provenance": {
+            "kind": "restored",
+            "method": "source-region luminance estimate against repaired marble; approximate dark shadow, original removed"
+          }
+        },
+        {
+          "partId": "receiver-04:rear",
+          "file": "receiver-04-rear.png",
+          "sha256": "8c07edcbc97bf71d562443e845c5723c737bf909b03ba0a7632dceb410a1f616",
+          "sizePx": [
+            416,
+            362
+          ],
+          "sourceRectPx": {
+            "x": 1098,
+            "y": 1093,
+            "width": 416,
+            "height": 362
+          },
+          "anchorLocalPx": [
+            194.85022969304964,
+            101.27892044268378
+          ],
+          "role": "body",
+          "depth": {
+            "layer": "receiver-back",
+            "sortNativeY": 34639.995941136774
+          },
+          "alpha": "straight",
+          "provenance": {
+            "kind": "extracted",
+            "method": "original source RGB, artist alpha/GrabCut, closed black interiors opaque; exclusive rear/front"
+          }
+        },
+        {
+          "partId": "receiver-04:front",
+          "file": "receiver-04-front.png",
+          "sha256": "10884e88ade76de42230d6e1201cc979f7a43c8b46c820736d9b4d5a378b3e49",
+          "sizePx": [
+            416,
+            362
+          ],
+          "sourceRectPx": {
+            "x": 1098,
+            "y": 1093,
+            "width": 416,
+            "height": 362
+          },
+          "anchorLocalPx": [
+            194.85022969304964,
+            101.27892044268378
+          ],
+          "role": "foreground",
+          "depth": {
+            "layer": "receiver-front",
+            "sortNativeY": 34639.995941136774
+          },
+          "alpha": "straight",
+          "provenance": {
+            "kind": "extracted",
+            "method": "original source RGB, artist alpha/GrabCut, closed black interiors opaque; exclusive rear/front"
+          }
+        }
+      ]
+    }
+  ],
+  "sceneParts": [
+    {
+      "partId": "outer-left:foreground",
+      "file": "outer-left-foreground.png",
+      "sha256": "3966f5a0e25f95a41dc35547bfdfef0494292cb01956cf2b38532c6b8695b067",
+      "sizePx": [
+        335,
+        1118
+      ],
+      "sourceRectPx": {
+        "x": 0,
+        "y": 236,
+        "width": 335,
+        "height": 1118
+      },
+      "anchorLocalPx": [
+        167.5,
+        878
+      ],
+      "role": "foreground",
+      "depth": {
+        "layer": "scene-front",
+        "sortNativeY": 34535.83823355711
+      },
+      "alpha": "straight",
+      "provenance": {
+        "kind": "extracted",
+        "method": "fixed source foreground architecture/plinth; no collider or height model"
+      },
+      "anchorSourcePx": [
+        167.5,
+        1114
+      ],
+      "anchorNative": [
+        32810.49634061975,
+        34535.83823355711
+      ]
+    },
+    {
+      "partId": "outer-right:foreground",
+      "file": "outer-right-foreground.png",
+      "sha256": "bfdb9162256947b44ffd7012f02e76913126572025d7130052c8283eaaa89fb4",
+      "sizePx": [
+        335,
+        1118
+      ],
+      "sourceRectPx": {
+        "x": 1201,
+        "y": 236,
+        "width": 335,
+        "height": 1118
+      },
+      "anchorLocalPx": [
+        167.5,
+        878
+      ],
+      "role": "foreground",
+      "depth": {
+        "layer": "scene-front",
+        "sortNativeY": 34535.83823355711
+      },
+      "alpha": "straight",
+      "provenance": {
+        "kind": "extracted",
+        "method": "fixed source foreground architecture/plinth; no collider or height model"
+      },
+      "anchorSourcePx": [
+        1368.5,
+        1114
+      ],
+      "anchorNative": [
+        33868.47285763105,
+        34535.83823355711
+      ]
+    },
+    {
+      "partId": "divider-01:foreground",
+      "file": "divider-01-foreground.png",
+      "sha256": "930f114a0496717ecca7177c47c2febaed33b78cafa5ddf75012a73a7d89e193",
+      "sizePx": [
+        81,
+        213
+      ],
+      "sourceRectPx": {
+        "x": 358,
+        "y": 1196,
+        "width": 81,
+        "height": 213
+      },
+      "anchorLocalPx": [
+        40.5,
+        -82
+      ],
+      "role": "foreground",
+      "depth": {
+        "layer": "scene-front",
+        "sortNativeY": 34535.83823355711
+      },
+      "alpha": "straight",
+      "provenance": {
+        "kind": "extracted",
+        "method": "fixed source foreground architecture/plinth; no collider or height model"
+      },
+      "anchorSourcePx": [
+        398.5,
+        1114
+      ],
+      "anchorNative": [
+        33013.98724439128,
+        34535.83823355711
+      ]
+    },
+    {
+      "partId": "divider-02:foreground",
+      "file": "divider-02-foreground.png",
+      "sha256": "dc8d72f169ef82ebd3b67f76a101e69802ff160a383f4a54db3da5b66e6b5dbf",
+      "sizePx": [
+        97,
+        304
+      ],
+      "sourceRectPx": {
+        "x": 720,
+        "y": 1106,
+        "width": 97,
+        "height": 304
+      },
+      "anchorLocalPx": [
+        48.5,
+        8
+      ],
+      "role": "foreground",
+      "depth": {
+        "layer": "scene-front",
+        "sortNativeY": 34535.83823355711
+      },
+      "alpha": "straight",
+      "provenance": {
+        "kind": "extracted",
+        "method": "fixed source foreground architecture/plinth; no collider or height model"
+      },
+      "anchorSourcePx": [
+        768.5,
+        1114
+      ],
+      "anchorNative": [
+        33339.92505562707,
+        34535.83823355711
+      ]
+    },
+    {
+      "partId": "divider-03:foreground",
+      "file": "divider-03-foreground.png",
+      "sha256": "24282d472efc8901cf997aab9876cc49cc210dbdc0d54e2487956d40cd653bef",
+      "sizePx": [
+        85,
+        211
+      ],
+      "sourceRectPx": {
+        "x": 1096,
+        "y": 1198,
+        "width": 85,
+        "height": 211
+      },
+      "anchorLocalPx": [
+        42.5,
+        -84
+      ],
+      "role": "foreground",
+      "depth": {
+        "layer": "scene-front",
+        "sortNativeY": 34535.83823355711
+      },
+      "alpha": "straight",
+      "provenance": {
+        "kind": "extracted",
+        "method": "fixed source foreground architecture/plinth; no collider or height model"
+      },
+      "anchorSourcePx": [
+        1138.5,
+        1114
+      ],
+      "anchorNative": [
+        33665.86286686286,
+        34535.83823355711
+      ]
+    },
+    {
+      "partId": "near-platform-front:foreground",
+      "file": "near-platform-front-foreground.png",
+      "sha256": "1319c231ef26fb9f90019d030edbbbb3c9890a52aae6ac90572222ee66d96ab1",
+      "sizePx": [
+        1536,
+        146
+      ],
+      "sourceRectPx": {
+        "x": 0,
+        "y": 1390,
+        "width": 1536,
+        "height": 146
+      },
+      "anchorLocalPx": [
+        768.0,
+        -276
+      ],
+      "role": "foreground",
+      "depth": {
+        "layer": "scene-front",
+        "sortNativeY": 34535.83823355711
+      },
+      "alpha": "straight",
+      "provenance": {
+        "kind": "extracted",
+        "method": "fixed source foreground architecture/plinth; no collider or height model"
+      },
+      "anchorSourcePx": [
+        768.0,
+        1114
+      ],
+      "anchorNative": [
+        33339.4845991254,
+        34535.83823355711
+      ]
+    }
+  ],
+  "background": {
+    "file": "background.png",
+    "sha256": "e9c96b2097e6df30da667c5d5bdfdc47524dd590e645d3ca2c5c3556836eaff5",
+    "sourceRectPx": {
+      "x": 0,
+      "y": 0,
+      "width": 1536,
+      "height": 1536
+    },
+    "provenance": {
+      "kind": "source-with-local-restoration",
+      "regionMask": "restoration-regions.png",
+      "regionMaskSha256": "97a6037f53adcf3ef52b973b24ebdc8b63e7af64fb36699551aaf427b2d41b93",
+      "method": "local empty-floor restoration under original source alpha; visible floor source RGB outside repairs"
+    }
+  },
+  "ball": {
+    "body": {
+      "file": "ball-body.png",
+      "sha256": "bf510895011a6a0a69896003517d242cd5a104e9c1ea37431895ca5bdf196b89",
+      "sizePx": [
+        256,
+        256
+      ],
+      "alpha": "straight",
+      "contentBoundsPxAlpha16": [
+        28,
+        28,
+        228,
+        229
+      ],
+      "centerLocalPx": [
+        128.0,
+        128.5
+      ],
+      "contentRadiusPx": [
+        100.0,
+        100.5
+      ],
+      "provenance": {
+        "kind": "generated",
+        "rawSha256": "06fdab4f271496d1e934df1bfd7b8d71e43d23ba1af4d973296de34fc6a8ed34",
+        "tool": "built-in image_gen",
+        "processing": "uniform downsample only; actual generated alpha retained"
+      },
+      "role": "body",
+      "depth": {
+        "layer": "body",
+        "sortNativeY": "simulation ball.pos.y"
+      }
+    },
+    "shadow": {
+      "file": "ball-shadow.png",
+      "sha256": "f9a91c40b75c08e94f91d0948872050bb3d9bc56a3753cfc99ba21a0d9295887",
+      "sizePx": [
+        256,
+        256
+      ],
+      "alpha": "straight",
+      "contentBoundsPxAlpha16": [
+        25,
+        113,
+        231,
+        146
+      ],
+      "centerLocalPx": [
+        128.0,
+        129.5
+      ],
+      "contentRadiusPx": [
+        103.0,
+        16.5
+      ],
+      "provenance": {
+        "kind": "generated",
+        "tool": "built-in image_gen",
+        "rawSha256": "81f1bbd6f10325b1ebef91cc1a58ced35ce96a3ae34411206f471a6f7cd917d7",
+        "referenceOwnJungleShadowSha256": "e172a8aee8446d8083680e20fd484f95c48daa823174415d60e3a99b6799b516",
+        "processing": "uniform downsample only; generated black RGB and variable alpha retained",
+        "materialVersion": "Dark black-alpha shadow v01; placement/radius/opacity parameters unchanged"
+      },
+      "role": "ground-shadow",
+      "depth": {
+        "layer": "ground"
+      },
+      "opacityMultiplier": 0.65
+    },
+    "nativeRadius": 16,
+    "placement": {
+      "bodyCenter": "P = project(nativeToSource, simulation ball.pos); no additional position offset or radius change",
+      "sourceRadiusPx": "R = nativeRadius / (H[2][0]*x + H[2][1]*y + H[2][2]); this H has H00=1, H10=0",
+      "bodyScale": "uniform scale R / body.contentRadiusPx[0], pivot body.centerLocalPx; keep the generated circular sprite",
+      "shadowCenterSourcePx": "P + [-0.95*R, +0.86*R]",
+      "shadowContentHalfSizeSourcePx": "[1.55*R, 0.58*R]; scale content bounds, not transparent canvas",
+      "shadowLayer": "ground, once, before bodies/ball; existing foreground alpha occludes it",
+      "depth": "same simulation ball.pos.y as diagnostic; no physics or PRNG effects",
+      "inverseView": "form source-space actor quad with these rules, transform its vertices by P1 sourceToNative; do not treat raster sphere as a floor circle"
+    },
+    "render": {
+      "radiusRule": "native-horizontal-projective-derivative",
+      "bodySourceCenterOffsetR": [
+        0,
+        0
+      ],
+      "bodyUniformScaleRule": "R / body.contentRadiusPx[0]",
+      "shadowSourceCenterOffsetR": [
+        -0.95,
+        0.86
+      ],
+      "shadowSourceContentHalfSizeR": [
+        1.55,
+        0.58
+      ],
+      "sourceToNativeQuad": true,
+      "noPhysicsEffects": true
+    },
+    "assetReuse": {
+      "artistCommit": "b7efff1e2f519812421829808e71a0d83154926d",
+      "ownJungleVersion": "p4-full-v03",
+      "method": "body PNG unchanged from own Jungle full-v03; reused olive shadow baseline preserved in own runtime, replaced by own Dark black-alpha shadow material v01 after static brightening observation",
+      "compatibilityStatus": "Artist static material candidate; actual Dark consumer shadow/corner/rim QA still pending"
+    }
+  }
+}

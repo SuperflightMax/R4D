@@ -1,0 +1,50 @@
+[
+  {
+    "type": "run_started",
+    "tick": 0,
+    "timeSec": 0,
+    "dropId": "board02-start",
+    "ballId": "board02-ball"
+  },
+  {
+    "type": "ball_spawned",
+    "tick": 0,
+    "timeSec": 0,
+    "dropId": "board02-start",
+    "ballId": "board02-ball",
+    "x": 33349.528039973346,
+    "y": 33109.09546312392,
+    "vx": 0,
+    "vy": 0
+  },
+  {
+    "type": "object_hit",
+    "tick": 89,
+    "timeSec": 0.445,
+    "ballId": "board02-ball",
+    "objectKind": "pin",
+    "objectId": "bowl-base-01",
+    "x": 33348.92998633409,
+    "y": 33207.97531635677
+  },
+  {
+    "type": "object_hit",
+    "tick": 366,
+    "timeSec": 1.83,
+    "ballId": "board02-ball",
+    "objectKind": "segment",
+    "objectId": "pillar-02:edge-01",
+    "x": 32956.049806275005,
+    "y": 33828.427583699246
+  },
+  {
+    "type": "object_hit",
+    "tick": 460,
+    "timeSec": 2.3000000000000003,
+    "ballId": "board02-ball",
+    "objectKind": "segment",
+    "objectId": "left-3",
+    "x": 32828.55213594017,
+    "y": 33501.321181785475
+  }
+]

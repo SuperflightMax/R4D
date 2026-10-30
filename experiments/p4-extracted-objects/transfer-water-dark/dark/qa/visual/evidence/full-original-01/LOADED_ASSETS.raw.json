@@ -1,0 +1,638 @@
+[
+  {
+    "file": "background.png",
+    "width": 1536,
+    "height": 1536,
+    "role": "background"
+  },
+  {
+    "id": "block-01:ground-shadow",
+    "file": "block-01-ground-shadow.png",
+    "sha256": "11e94dab7a7766cc6d2d0c8bc4657b1fd6dae9f34f04436c94bef27315f5c0c7",
+    "width": 149,
+    "height": 168,
+    "role": "ground-shadow",
+    "alpha": "straight, Pixi upload once"
+  },
+  {
+    "id": "block-01:body",
+    "file": "block-01-body.png",
+    "sha256": "71cabddeb0768adc1808467a989f72ce80232501b1104a07f7d0faac67d579bc",
+    "width": 149,
+    "height": 168,
+    "role": "body",
+    "alpha": "straight, Pixi upload once"
+  },
+  {
+    "id": "block-02:ground-shadow",
+    "file": "block-02-ground-shadow.png",
+    "sha256": "ca283aa2fb1089d05badb99ff49f637d38c0d0bac53f95a26c847222983c7710",
+    "width": 154,
+    "height": 169,
+    "role": "ground-shadow",
+    "alpha": "straight, Pixi upload once"
+  },
+  {
+    "id": "block-02:body",
+    "file": "block-02-body.png",
+    "sha256": "3da2b41b17f04c45b96c07e57cc56e2491205157c04a2cfb71618bc82ba753c5",
+    "width": 154,
+    "height": 169,
+    "role": "body",
+    "alpha": "straight, Pixi upload once"
+  },
+  {
+    "id": "block-03:ground-shadow",
+    "file": "block-03-ground-shadow.png",
+    "sha256": "6d5a5de351adfb3630fb6f1eae2da043dbc7113cc137b06168f400ae85d67b57",
+    "width": 149,
+    "height": 174,
+    "role": "ground-shadow",
+    "alpha": "straight, Pixi upload once"
+  },
+  {
+    "id": "block-03:body",
+    "file": "block-03-body.png",
+    "sha256": "3e54a280ca7029aa21d46930df29c5bbd42df338a412f4d92b530b5e7dcece3f",
+    "width": 149,
+    "height": 174,
+    "role": "body",
+    "alpha": "straight, Pixi upload once"
+  },
+  {
+    "id": "block-04:ground-shadow",
+    "file": "block-04-ground-shadow.png",
+    "sha256": "591e402cef2f9c8513579e74fd3f07c27808f6526e36a2c9f828462fa129bcb5",
+    "width": 170,
+    "height": 196,
+    "role": "ground-shadow",
+    "alpha": "straight, Pixi upload once"
+  },
+  {
+    "id": "block-04:body",
+    "file": "block-04-body.png",
+    "sha256": "15dd65609ae4699f4d2b8c08da637d95497c144c15f7dafa3d4c702d9553e419",
+    "width": 170,
+    "height": 196,
+    "role": "body",
+    "alpha": "straight, Pixi upload once"
+  },
+  {
+    "id": "block-05:ground-shadow",
+    "file": "block-05-ground-shadow.png",
+    "sha256": "30f4e9ad5e173dfbf909ec4580e179e6182f14d0456ad00c56771c6f346d4465",
+    "width": 178,
+    "height": 196,
+    "role": "ground-shadow",
+    "alpha": "straight, Pixi upload once"
+  },
+  {
+    "id": "block-05:body",
+    "file": "block-05-body.png",
+    "sha256": "e5061f6aface3e488629a0afb3ab3a1d31e7a6e681c67f5b5cf2dd2c49518257",
+    "width": 178,
+    "height": 196,
+    "role": "body",
+    "alpha": "straight, Pixi upload once"
+  },
+  {
+    "id": "block-06:ground-shadow",
+    "file": "block-06-ground-shadow.png",
+    "sha256": "ce0867d12ee47d73d1f98ea915c9a015ac849d77b2b45d398a3df6115d46079f",
+    "width": 187,
+    "height": 200,
+    "role": "ground-shadow",
+    "alpha": "straight, Pixi upload once"
+  },
+  {
+    "id": "block-06:body",
+    "file": "block-06-body.png",
+    "sha256": "2e760f89042657d4d5dd969305a77ad4eb1b10c9ffa7e881b36eecefca7fa892",
+    "width": 187,
+    "height": 200,
+    "role": "body",
+    "alpha": "straight, Pixi upload once"
+  },
+  {
+    "id": "bowl-base-01:ground-shadow",
+    "file": "bowl-base-01-ground-shadow.png",
+    "sha256": "a2df7334a97509ea01771d108feb90d9aa73337fca28345b65459d9bb2303ea3",
+    "width": 159,
+    "height": 158,
+    "role": "ground-shadow",
+    "alpha": "straight, Pixi upload once"
+  },
+  {
+    "id": "bowl-base-01:body",
+    "file": "bowl-base-01-body.png",
+    "sha256": "5d9b2972ddb41f67cf113bbd23a7521acde0152d4c8e2a632dc5dd0276e4340f",
+    "width": 159,
+    "height": 158,
+    "role": "body",
+    "alpha": "straight, Pixi upload once"
+  },
+  {
+    "id": "bowl-base-02:ground-shadow",
+    "file": "bowl-base-02-ground-shadow.png",
+    "sha256": "b2bb1406276ad2d96bdafbe52f5e0d882f60920d3264c83c6199ba53a531f0ab",
+    "width": 161,
+    "height": 157,
+    "role": "ground-shadow",
+    "alpha": "straight, Pixi upload once"
+  },
+  {
+    "id": "bowl-base-02:body",
+    "file": "bowl-base-02-body.png",
+    "sha256": "1cd2270207f4ff33ca373f90bf82e910064888c8a1938bd1cff6e323297f10de",
+    "width": 161,
+    "height": 157,
+    "role": "body",
+    "alpha": "straight, Pixi upload once"
+  },
+  {
+    "id": "bowl-base-03:ground-shadow",
+    "file": "bowl-base-03-ground-shadow.png",
+    "sha256": "4acd39e9f7bf98034a4e4f365ede252feb87d6f3c9205ce8678f376f613ba128",
+    "width": 164,
+    "height": 153,
+    "role": "ground-shadow",
+    "alpha": "straight, Pixi upload once"
+  },
+  {
+    "id": "bowl-base-03:body",
+    "file": "bowl-base-03-body.png",
+    "sha256": "47fec40adcfa30b1bfd54f6d53a09da50f9dad7e915395b225b91093d09ea54c",
+    "width": 164,
+    "height": 153,
+    "role": "body",
+    "alpha": "straight, Pixi upload once"
+  },
+  {
+    "id": "bowl-base-04:ground-shadow",
+    "file": "bowl-base-04-ground-shadow.png",
+    "sha256": "5f188d9e8d14518998ee1ab8b91018a2bf5d4a588e950668ca77f037298df73b",
+    "width": 170,
+    "height": 165,
+    "role": "ground-shadow",
+    "alpha": "straight, Pixi upload once"
+  },
+  {
+    "id": "bowl-base-04:body",
+    "file": "bowl-base-04-body.png",
+    "sha256": "b7e3ed7b9882870d59f476d6eaacaa2059acf0766e6b4a29b31371af845de3f9",
+    "width": 170,
+    "height": 165,
+    "role": "body",
+    "alpha": "straight, Pixi upload once"
+  },
+  {
+    "id": "bowl-base-05:ground-shadow",
+    "file": "bowl-base-05-ground-shadow.png",
+    "sha256": "2f6443a95312dc6d1ef866d8a04abf96516d47ca51db48f94c0f0254440548f4",
+    "width": 181,
+    "height": 178,
+    "role": "ground-shadow",
+    "alpha": "straight, Pixi upload once"
+  },
+  {
+    "id": "bowl-base-05:body",
+    "file": "bowl-base-05-body.png",
+    "sha256": "3a5a0db91e3fb1b9c4c119646a34cb871cd03b384f33b5a6bceaef15caf5c5d2",
+    "width": 181,
+    "height": 178,
+    "role": "body",
+    "alpha": "straight, Pixi upload once"
+  },
+  {
+    "id": "bowl-base-06:ground-shadow",
+    "file": "bowl-base-06-ground-shadow.png",
+    "sha256": "a4086cef7835ab3623c25efffc24fd156adc9076576beb8339b2514977bdf57c",
+    "width": 186,
+    "height": 190,
+    "role": "ground-shadow",
+    "alpha": "straight, Pixi upload once"
+  },
+  {
+    "id": "bowl-base-06:body",
+    "file": "bowl-base-06-body.png",
+    "sha256": "c4258989feaa59b390963ee6f605a3ac3c0cd0d5d2615c41e41e677ea0870d1d",
+    "width": 186,
+    "height": 190,
+    "role": "body",
+    "alpha": "straight, Pixi upload once"
+  },
+  {
+    "id": "pillar-01:ground-shadow",
+    "file": "pillar-01-ground-shadow.png",
+    "sha256": "a2012d7c669ea09b8e404d7c83c7ac7ebc56931a1fccfe08d6654dce749f75bb",
+    "width": 138,
+    "height": 166,
+    "role": "ground-shadow",
+    "alpha": "straight, Pixi upload once"
+  },
+  {
+    "id": "pillar-01:body",
+    "file": "pillar-01-body.png",
+    "sha256": "f13e8cd44ca7011e7b5db96413ab258227e3e8d67e73cff5319109eacb86c09e",
+    "width": 138,
+    "height": 166,
+    "role": "body",
+    "alpha": "straight, Pixi upload once"
+  },
+  {
+    "id": "pillar-02:ground-shadow",
+    "file": "pillar-02-ground-shadow.png",
+    "sha256": "0e7f2c080059becf1f5828d1117d3faa3353993203efa3b68113e55365d4e5e2",
+    "width": 147,
+    "height": 186,
+    "role": "ground-shadow",
+    "alpha": "straight, Pixi upload once"
+  },
+  {
+    "id": "pillar-02:body",
+    "file": "pillar-02-body.png",
+    "sha256": "68490124cb92c2275a9cb3b63c0a751bd05129666e7ae273c8ada809e0641123",
+    "width": 147,
+    "height": 186,
+    "role": "body",
+    "alpha": "straight, Pixi upload once"
+  },
+  {
+    "id": "pillar-03:ground-shadow",
+    "file": "pillar-03-ground-shadow.png",
+    "sha256": "066e475bb518672fa1385e4bd12c2ac4e0c076302f26b9067ef0f0549d15ff1a",
+    "width": 153,
+    "height": 188,
+    "role": "ground-shadow",
+    "alpha": "straight, Pixi upload once"
+  },
+  {
+    "id": "pillar-03:body",
+    "file": "pillar-03-body.png",
+    "sha256": "d05ba4889d729d2d1b40c345a4fff933ac2430a43b6393ffd9540b1e9f1484f7",
+    "width": 153,
+    "height": 188,
+    "role": "body",
+    "alpha": "straight, Pixi upload once"
+  },
+  {
+    "id": "pillar-04:ground-shadow",
+    "file": "pillar-04-ground-shadow.png",
+    "sha256": "6933b552fecc74cf2aa0e542fca14d9b5f1fb9abf42ac9c36c423923d3e5fe43",
+    "width": 158,
+    "height": 206,
+    "role": "ground-shadow",
+    "alpha": "straight, Pixi upload once"
+  },
+  {
+    "id": "pillar-04:body",
+    "file": "pillar-04-body.png",
+    "sha256": "7532bccd332494a16e98cde45310e819b8aa2c259c981f039862dd464ed0ad59",
+    "width": 158,
+    "height": 206,
+    "role": "body",
+    "alpha": "straight, Pixi upload once"
+  },
+  {
+    "id": "pillar-05:ground-shadow",
+    "file": "pillar-05-ground-shadow.png",
+    "sha256": "095f3d4b7726449ba3fba79e72316d5fe3ad33aec3365c4bc4adf8f5a7b1247b",
+    "width": 169,
+    "height": 210,
+    "role": "ground-shadow",
+    "alpha": "straight, Pixi upload once"
+  },
+  {
+    "id": "pillar-05:body",
+    "file": "pillar-05-body.png",
+    "sha256": "6a12fcc61fecc94a8796408de5fac77a2485bbc977ae306903c75894a9f484fd",
+    "width": 169,
+    "height": 210,
+    "role": "body",
+    "alpha": "straight, Pixi upload once"
+  },
+  {
+    "id": "pillar-06:ground-shadow",
+    "file": "pillar-06-ground-shadow.png",
+    "sha256": "38abc6c59d217a69ac4b50298f91e07612ec34783ee5884d1cbc0197a94a4d1d",
+    "width": 162,
+    "height": 212,
+    "role": "ground-shadow",
+    "alpha": "straight, Pixi upload once"
+  },
+  {
+    "id": "pillar-06:body",
+    "file": "pillar-06-body.png",
+    "sha256": "bd2bffa3399211f6682ece56de1f311ea5624bbe9178a50175012c2baa702381",
+    "width": 162,
+    "height": 212,
+    "role": "body",
+    "alpha": "straight, Pixi upload once"
+  },
+  {
+    "id": "skull-base-01:ground-shadow",
+    "file": "skull-base-01-ground-shadow.png",
+    "sha256": "084a6ff6550e083ceaa957033f6747f14d2de8e4e67ad42373224b7d75111e7e",
+    "width": 132,
+    "height": 146,
+    "role": "ground-shadow",
+    "alpha": "straight, Pixi upload once"
+  },
+  {
+    "id": "skull-base-01:body",
+    "file": "skull-base-01-body.png",
+    "sha256": "cdfee9f8b24e1ffb143fc3e8ca2e52ce861fd96e785f0dd013f8f57efc7aec1d",
+    "width": 132,
+    "height": 146,
+    "role": "body",
+    "alpha": "straight, Pixi upload once"
+  },
+  {
+    "id": "skull-base-02:ground-shadow",
+    "file": "skull-base-02-ground-shadow.png",
+    "sha256": "18bf624b5a3ad4913c8207b668d1c3b5e7404729f0ed55c3657f5c53bbf4cfde",
+    "width": 128,
+    "height": 147,
+    "role": "ground-shadow",
+    "alpha": "straight, Pixi upload once"
+  },
+  {
+    "id": "skull-base-02:body",
+    "file": "skull-base-02-body.png",
+    "sha256": "cf3e0097d504ca7029cbb22693ad561be8156b6f5cf36c87ab1db1e9b94723f1",
+    "width": 128,
+    "height": 147,
+    "role": "body",
+    "alpha": "straight, Pixi upload once"
+  },
+  {
+    "id": "skull-base-03:ground-shadow",
+    "file": "skull-base-03-ground-shadow.png",
+    "sha256": "b69a47c1da90dfd7da370dc23230a35b47fc81d65e8101ca2009b0afe5384b2e",
+    "width": 137,
+    "height": 162,
+    "role": "ground-shadow",
+    "alpha": "straight, Pixi upload once"
+  },
+  {
+    "id": "skull-base-03:body",
+    "file": "skull-base-03-body.png",
+    "sha256": "cd9407940d5050d55806159de5136646c8b213127c3968d2004b654a82ab7510",
+    "width": 137,
+    "height": 162,
+    "role": "body",
+    "alpha": "straight, Pixi upload once"
+  },
+  {
+    "id": "skull-base-04:ground-shadow",
+    "file": "skull-base-04-ground-shadow.png",
+    "sha256": "fd76c8b517e606bc3e9f33c5df4a02af23a83c1417e8dc964e3a43979961e216",
+    "width": 139,
+    "height": 164,
+    "role": "ground-shadow",
+    "alpha": "straight, Pixi upload once"
+  },
+  {
+    "id": "skull-base-04:body",
+    "file": "skull-base-04-body.png",
+    "sha256": "eeb18335067377cdb5b88e8d9ab520235f07a53d96252a51c7decae27fae99ca",
+    "width": 139,
+    "height": 164,
+    "role": "body",
+    "alpha": "straight, Pixi upload once"
+  },
+  {
+    "id": "skull-base-05:ground-shadow",
+    "file": "skull-base-05-ground-shadow.png",
+    "sha256": "636a8575f1665d87a500e3eb866bc7c96d41b262d0edf6e6fd033f1e9143759f",
+    "width": 147,
+    "height": 174,
+    "role": "ground-shadow",
+    "alpha": "straight, Pixi upload once"
+  },
+  {
+    "id": "skull-base-05:body",
+    "file": "skull-base-05-body.png",
+    "sha256": "5aa1c16d05dd315dc9b59e48022f0d0ff0ae0a88c8703e5e31e922774dff2bce",
+    "width": 147,
+    "height": 174,
+    "role": "body",
+    "alpha": "straight, Pixi upload once"
+  },
+  {
+    "id": "skull-base-06:ground-shadow",
+    "file": "skull-base-06-ground-shadow.png",
+    "sha256": "ce4e5ea100f961e691ad6a5ba61749daebf035be740c2367e7bb7f1a295d8172",
+    "width": 151,
+    "height": 184,
+    "role": "ground-shadow",
+    "alpha": "straight, Pixi upload once"
+  },
+  {
+    "id": "skull-base-06:body",
+    "file": "skull-base-06-body.png",
+    "sha256": "5814ef85463c68ec6c28ff25a97746525544b8633209987b6834f78d71817142",
+    "width": 151,
+    "height": 184,
+    "role": "body",
+    "alpha": "straight, Pixi upload once"
+  },
+  {
+    "id": "receiver-01:ground-shadow",
+    "file": "receiver-01-ground-shadow.png",
+    "sha256": "e044f9a1aa684efb8a1bb7ecfcef39137f4aa6b30608fa9a458231dade389750",
+    "width": 405,
+    "height": 361,
+    "role": "ground-shadow",
+    "alpha": "straight, Pixi upload once"
+  },
+  {
+    "id": "receiver-01:rear",
+    "file": "receiver-01-rear.png",
+    "sha256": "ecb287a21a58f5eb3aed31fa51cd0cd82564f7753e9a73c758587096d5f2cd67",
+    "width": 405,
+    "height": 361,
+    "role": "body",
+    "alpha": "straight, Pixi upload once"
+  },
+  {
+    "id": "receiver-01:front",
+    "file": "receiver-01-front.png",
+    "sha256": "c3df90c4849f8b0f18669b88224527a87e31b572bf7ee205946b1054f8c256e2",
+    "width": 405,
+    "height": 361,
+    "role": "foreground",
+    "alpha": "straight, Pixi upload once"
+  },
+  {
+    "id": "receiver-02:ground-shadow",
+    "file": "receiver-02-ground-shadow.png",
+    "sha256": "7a70f3ec17fc2486b310367afd27efdd08191dec470aae819a3752f8d4315e9b",
+    "width": 362,
+    "height": 349,
+    "role": "ground-shadow",
+    "alpha": "straight, Pixi upload once"
+  },
+  {
+    "id": "receiver-02:rear",
+    "file": "receiver-02-rear.png",
+    "sha256": "5d480a2e5ff6d8f1f382453c80d616ac54849a3998e0ffe7286ac3ce97c1f30e",
+    "width": 362,
+    "height": 349,
+    "role": "body",
+    "alpha": "straight, Pixi upload once"
+  },
+  {
+    "id": "receiver-02:front",
+    "file": "receiver-02-front.png",
+    "sha256": "a459d14884f1e79c3d4e3ad53dd79f67bb1f070ddb919d4b7e718aed780b5773",
+    "width": 362,
+    "height": 349,
+    "role": "foreground",
+    "alpha": "straight, Pixi upload once"
+  },
+  {
+    "id": "receiver-03:ground-shadow",
+    "file": "receiver-03-ground-shadow.png",
+    "sha256": "0b6f3680d42ba21afb96e4a741987d0a8023d55195fa33e1d14c817b48426009",
+    "width": 372,
+    "height": 349,
+    "role": "ground-shadow",
+    "alpha": "straight, Pixi upload once"
+  },
+  {
+    "id": "receiver-03:rear",
+    "file": "receiver-03-rear.png",
+    "sha256": "e6e1afdcf7a227b6eb03f8ea25f3e54a960f396b4f679748d2bf0a8f0879ea07",
+    "width": 372,
+    "height": 349,
+    "role": "body",
+    "alpha": "straight, Pixi upload once"
+  },
+  {
+    "id": "receiver-03:front",
+    "file": "receiver-03-front.png",
+    "sha256": "dfa88fbbd3a7881b4a1223639bcd436530fd9542f02873da62cc07674de1e52f",
+    "width": 372,
+    "height": 349,
+    "role": "foreground",
+    "alpha": "straight, Pixi upload once"
+  },
+  {
+    "id": "receiver-04:ground-shadow",
+    "file": "receiver-04-ground-shadow.png",
+    "sha256": "fa7dc4eee03f9b68b57fcd2bd9c3c84e64f66206a7ecef187f62766c90e6db45",
+    "width": 416,
+    "height": 362,
+    "role": "ground-shadow",
+    "alpha": "straight, Pixi upload once"
+  },
+  {
+    "id": "receiver-04:rear",
+    "file": "receiver-04-rear.png",
+    "sha256": "8c07edcbc97bf71d562443e845c5723c737bf909b03ba0a7632dceb410a1f616",
+    "width": 416,
+    "height": 362,
+    "role": "body",
+    "alpha": "straight, Pixi upload once"
+  },
+  {
+    "id": "receiver-04:front",
+    "file": "receiver-04-front.png",
+    "sha256": "10884e88ade76de42230d6e1201cc979f7a43c8b46c820736d9b4d5a378b3e49",
+    "width": 416,
+    "height": 362,
+    "role": "foreground",
+    "alpha": "straight, Pixi upload once"
+  },
+  {
+    "id": "outer-left:foreground",
+    "file": "outer-left-foreground.png",
+    "sha256": "3966f5a0e25f95a41dc35547bfdfef0494292cb01956cf2b38532c6b8695b067",
+    "width": 335,
+    "height": 1118,
+    "role": "foreground",
+    "alpha": "straight, Pixi upload once"
+  },
+  {
+    "id": "outer-right:foreground",
+    "file": "outer-right-foreground.png",
+    "sha256": "bfdb9162256947b44ffd7012f02e76913126572025d7130052c8283eaaa89fb4",
+    "width": 335,
+    "height": 1118,
+    "role": "foreground",
+    "alpha": "straight, Pixi upload once"
+  },
+  {
+    "id": "divider-01:foreground",
+    "file": "divider-01-foreground.png",
+    "sha256": "930f114a0496717ecca7177c47c2febaed33b78cafa5ddf75012a73a7d89e193",
+    "width": 81,
+    "height": 213,
+    "role": "foreground",
+    "alpha": "straight, Pixi upload once"
+  },
+  {
+    "id": "divider-02:foreground",
+    "file": "divider-02-foreground.png",
+    "sha256": "dc8d72f169ef82ebd3b67f76a101e69802ff160a383f4a54db3da5b66e6b5dbf",
+    "width": 97,
+    "height": 304,
+    "role": "foreground",
+    "alpha": "straight, Pixi upload once"
+  },
+  {
+    "id": "divider-03:foreground",
+    "file": "divider-03-foreground.png",
+    "sha256": "24282d472efc8901cf997aab9876cc49cc210dbdc0d54e2487956d40cd653bef",
+    "width": 85,
+    "height": 211,
+    "role": "foreground",
+    "alpha": "straight, Pixi upload once"
+  },
+  {
+    "id": "near-platform-front:foreground",
+    "file": "near-platform-front-foreground.png",
+    "sha256": "1319c231ef26fb9f90019d030edbbbb3c9890a52aae6ac90572222ee66d96ab1",
+    "width": 1536,
+    "height": 146,
+    "role": "foreground",
+    "alpha": "straight, Pixi upload once"
+  },
+  {
+    "file": "ball-body.png",
+    "sha256": "bf510895011a6a0a69896003517d242cd5a104e9c1ea37431895ca5bdf196b89",
+    "width": 256,
+    "height": 256,
+    "role": "body",
+    "centerLocalPx": [
+      128,
+      128.5
+    ],
+    "contentRadiusPx": [
+      100,
+      100.5
+    ],
+    "opacityMultiplier": 1,
+    "textureAlphaMode": "premultiply-alpha-on-upload",
+    "textureResource": "ImageBitmap"
+  },
+  {
+    "file": "ball-shadow.png",
+    "sha256": "f9a91c40b75c08e94f91d0948872050bb3d9bc56a3753cfc99ba21a0d9295887",
+    "width": 256,
+    "height": 256,
+    "role": "ground-shadow",
+    "centerLocalPx": [
+      128,
+      129.5
+    ],
+    "contentRadiusPx": [
+      103,
+      16.5
+    ],
+    "opacityMultiplier": 0.65,
+    "textureAlphaMode": "premultiply-alpha-on-upload",
+    "textureResource": "ImageBitmap"
+  }
+]

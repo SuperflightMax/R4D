@@ -1,0 +1,39 @@
+{
+  "candidate": "dark-full-original-p4-candidate-01",
+  "artifactSha256": "6dd25ecd75b5ade5fb67f8bb4d06dbddd2efc15676168b713ab951729a82eecf",
+  "overall": "PARTIAL / scoped visual PASS; full Art PASS not issued",
+  "confirmedArtFails": [],
+  "observations": [
+    {
+      "id": "D-VQA-OBS-01",
+      "topic": "background marble",
+      "status": "not confirmed as blocking FAIL",
+      "detail": "Soft dark tonal patches noted in PartsOFF; normal/detail review did not identify definite retained body silhouettes or sharp rectangular seams. Negative unchanged-RGB diagnostic is supplementary and not proof of perfect shadow decomposition."
+    },
+    {
+      "id": "D-VQA-OBS-02",
+      "topic": "pillar04 order841-842",
+      "status": "bounded normal-scale PASS",
+      "detail": "A small visibility handover can be seen enlarged; no conspicuous normal-scale silhouette pop in the reviewed sequence. Not a proof of per-face sorting for all poses."
+    },
+    {
+      "id": "D-VQA-OBS-03",
+      "topic": "receiver01 capture cavity",
+      "status": "static warning not reproduced",
+      "detail": "Actual seed0/888 and seed1/884 show the full ball in the opaque black cavity, with receiver-back behind ball; not partial front-rim proof."
+    }
+  ],
+  "unobserved": [
+    "receiver02 approach/capture/front-rim",
+    "receiver03 approach/capture/front-rim",
+    "receiver04 approach/capture/front-rim",
+    "qualifying divider01/03 dynamic overlaps"
+  ],
+  "nativeOutcomes": {
+    "0": "IN_BUCKET receiver01/888",
+    "1": "IN_BUCKET receiver01/884",
+    "2": "LOST1812",
+    "1632614828": "LOST2323",
+    "3207937946": "LOST2011"
+  }
+}

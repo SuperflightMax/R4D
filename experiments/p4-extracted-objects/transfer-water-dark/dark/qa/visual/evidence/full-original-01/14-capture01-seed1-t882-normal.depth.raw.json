@@ -1,0 +1,542 @@
+{
+  "ballNativeY": 34584.7353798,
+  "actor": {
+    "center": {
+      "x": 239.15617829743547,
+      "y": 1151.2310421952925
+    },
+    "radius": 18.357490397567325,
+    "bodyScale": 0.18357490397567325,
+    "shadowCenter": {
+      "x": 221.7165624197465,
+      "y": 1167.0184839372005
+    },
+    "shadowScale": [
+      0.2762534962740714,
+      0.6452936018538816
+    ],
+    "shadowOpacity": 0.65,
+    "rendered": {
+      "body": {
+        "position": {
+          "x": 239.15617829743547,
+          "y": 1151.2310421952925
+        },
+        "pivot": {
+          "x": 128,
+          "y": 128.5
+        },
+        "scale": {
+          "x": 0.18357490397567325,
+          "y": 0.18357490397567325
+        },
+        "sourceVisible": true,
+        "flatVisible": false,
+        "sourceAlpha": 1,
+        "flatAlpha": 1,
+        "textureAlphaMode": "premultiply-alpha-on-upload"
+      },
+      "shadow": {
+        "position": {
+          "x": 221.7165624197465,
+          "y": 1167.0184839372005
+        },
+        "pivot": {
+          "x": 128,
+          "y": 129.5
+        },
+        "scale": {
+          "x": 0.2762534962740714,
+          "y": 0.6452936018538816
+        },
+        "sourceVisible": true,
+        "flatVisible": false,
+        "sourceAlpha": 0.65,
+        "flatAlpha": 0.65,
+        "textureAlphaMode": "premultiply-alpha-on-upload"
+      },
+      "groundAlpha": 1,
+      "artRootAlpha": 1,
+      "worldAlpha": 1,
+      "stageAlpha": 1,
+      "artVisible": true,
+      "fitScale": 0.3736979166666667,
+      "viewport": {
+        "width": 840,
+        "height": 590
+      }
+    }
+  },
+  "layerOrder": [
+    "background",
+    "ground",
+    "depth-sorted bodies/ball",
+    "scene-front",
+    "receiver-front",
+    "geometry"
+  ],
+  "parts": [
+    {
+      "id": "block-01:ground-shadow",
+      "mode": "native-y",
+      "container": "ground",
+      "sourceCropOverlapsBall": false,
+      "zIndex": 33444.5845747901
+    },
+    {
+      "id": "block-01:body",
+      "mode": "native-y",
+      "container": "bodies",
+      "sourceCropOverlapsBall": false,
+      "zIndex": 33444.5845747901
+    },
+    {
+      "id": "block-02:ground-shadow",
+      "mode": "native-y",
+      "container": "ground",
+      "sourceCropOverlapsBall": false,
+      "zIndex": 33655.11794824634
+    },
+    {
+      "id": "block-02:body",
+      "mode": "native-y",
+      "container": "bodies",
+      "sourceCropOverlapsBall": false,
+      "zIndex": 33655.11794824634
+    },
+    {
+      "id": "block-03:ground-shadow",
+      "mode": "native-y",
+      "container": "ground",
+      "sourceCropOverlapsBall": false,
+      "zIndex": 33670.62754897705
+    },
+    {
+      "id": "block-03:body",
+      "mode": "native-y",
+      "container": "bodies",
+      "sourceCropOverlapsBall": false,
+      "zIndex": 33670.62754897705
+    },
+    {
+      "id": "block-04:ground-shadow",
+      "mode": "native-y",
+      "container": "ground",
+      "sourceCropOverlapsBall": false,
+      "zIndex": 34072.54541852553
+    },
+    {
+      "id": "block-04:body",
+      "mode": "native-y",
+      "container": "bodies",
+      "sourceCropOverlapsBall": false,
+      "zIndex": 34072.54541852553
+    },
+    {
+      "id": "block-05:ground-shadow",
+      "mode": "native-y",
+      "container": "ground",
+      "sourceCropOverlapsBall": false,
+      "zIndex": 34465.61368698532
+    },
+    {
+      "id": "block-05:body",
+      "mode": "native-y",
+      "container": "bodies",
+      "sourceCropOverlapsBall": false,
+      "zIndex": 34465.61368698532
+    },
+    {
+      "id": "block-06:ground-shadow",
+      "mode": "native-y",
+      "container": "ground",
+      "sourceCropOverlapsBall": false,
+      "zIndex": 34467.67051302826
+    },
+    {
+      "id": "block-06:body",
+      "mode": "native-y",
+      "container": "bodies",
+      "sourceCropOverlapsBall": false,
+      "zIndex": 34467.67051302826
+    },
+    {
+      "id": "bowl-base-01:ground-shadow",
+      "mode": "native-y",
+      "container": "ground",
+      "sourceCropOverlapsBall": false,
+      "zIndex": 33265.33454057419
+    },
+    {
+      "id": "bowl-base-01:body",
+      "mode": "native-y",
+      "container": "bodies",
+      "sourceCropOverlapsBall": false,
+      "zIndex": 33265.33454057419
+    },
+    {
+      "id": "bowl-base-02:ground-shadow",
+      "mode": "native-y",
+      "container": "ground",
+      "sourceCropOverlapsBall": false,
+      "zIndex": 33450.90752935672
+    },
+    {
+      "id": "bowl-base-02:body",
+      "mode": "native-y",
+      "container": "bodies",
+      "sourceCropOverlapsBall": false,
+      "zIndex": 33450.90752935672
+    },
+    {
+      "id": "bowl-base-03:ground-shadow",
+      "mode": "native-y",
+      "container": "ground",
+      "sourceCropOverlapsBall": false,
+      "zIndex": 33488.62133374682
+    },
+    {
+      "id": "bowl-base-03:body",
+      "mode": "native-y",
+      "container": "bodies",
+      "sourceCropOverlapsBall": false,
+      "zIndex": 33488.62133374682
+    },
+    {
+      "id": "bowl-base-04:ground-shadow",
+      "mode": "native-y",
+      "container": "ground",
+      "sourceCropOverlapsBall": false,
+      "zIndex": 33847.56246367806
+    },
+    {
+      "id": "bowl-base-04:body",
+      "mode": "native-y",
+      "container": "bodies",
+      "sourceCropOverlapsBall": false,
+      "zIndex": 33847.56246367806
+    },
+    {
+      "id": "bowl-base-05:ground-shadow",
+      "mode": "native-y",
+      "container": "ground",
+      "sourceCropOverlapsBall": false,
+      "zIndex": 34034.60165695869
+    },
+    {
+      "id": "bowl-base-05:body",
+      "mode": "native-y",
+      "container": "bodies",
+      "sourceCropOverlapsBall": false,
+      "zIndex": 34034.60165695869
+    },
+    {
+      "id": "bowl-base-06:ground-shadow",
+      "mode": "native-y",
+      "container": "ground",
+      "sourceCropOverlapsBall": false,
+      "zIndex": 34282.73632933471
+    },
+    {
+      "id": "bowl-base-06:body",
+      "mode": "native-y",
+      "container": "bodies",
+      "sourceCropOverlapsBall": false,
+      "zIndex": 34282.73632933471
+    },
+    {
+      "id": "pillar-01:ground-shadow",
+      "mode": "native-y",
+      "container": "ground",
+      "sourceCropOverlapsBall": false,
+      "zIndex": 33464.86849948203
+    },
+    {
+      "id": "pillar-01:body",
+      "mode": "native-y",
+      "container": "bodies",
+      "sourceCropOverlapsBall": false,
+      "zIndex": 33464.86849948203
+    },
+    {
+      "id": "pillar-02:ground-shadow",
+      "mode": "native-y",
+      "container": "ground",
+      "sourceCropOverlapsBall": false,
+      "zIndex": 33875.64543401087
+    },
+    {
+      "id": "pillar-02:body",
+      "mode": "native-y",
+      "container": "bodies",
+      "sourceCropOverlapsBall": false,
+      "zIndex": 33875.64543401087
+    },
+    {
+      "id": "pillar-03:ground-shadow",
+      "mode": "native-y",
+      "container": "ground",
+      "sourceCropOverlapsBall": false,
+      "zIndex": 33876.94071157232
+    },
+    {
+      "id": "pillar-03:body",
+      "mode": "native-y",
+      "container": "bodies",
+      "sourceCropOverlapsBall": false,
+      "zIndex": 33876.94071157232
+    },
+    {
+      "id": "pillar-04:ground-shadow",
+      "mode": "native-y",
+      "container": "ground",
+      "sourceCropOverlapsBall": false,
+      "zIndex": 34283.33951839832
+    },
+    {
+      "id": "pillar-04:body",
+      "mode": "native-y",
+      "container": "bodies",
+      "sourceCropOverlapsBall": false,
+      "zIndex": 34283.33951839832
+    },
+    {
+      "id": "pillar-05:ground-shadow",
+      "mode": "native-y",
+      "container": "ground",
+      "sourceCropOverlapsBall": false,
+      "zIndex": 34282.94923055996
+    },
+    {
+      "id": "pillar-05:body",
+      "mode": "native-y",
+      "container": "bodies",
+      "sourceCropOverlapsBall": false,
+      "zIndex": 34282.94923055996
+    },
+    {
+      "id": "pillar-06:ground-shadow",
+      "mode": "native-y",
+      "container": "ground",
+      "sourceCropOverlapsBall": false,
+      "zIndex": 34496.23789866319
+    },
+    {
+      "id": "pillar-06:body",
+      "mode": "native-y",
+      "container": "bodies",
+      "sourceCropOverlapsBall": false,
+      "zIndex": 34496.23789866319
+    },
+    {
+      "id": "skull-base-01:ground-shadow",
+      "mode": "native-y",
+      "container": "ground",
+      "sourceCropOverlapsBall": false,
+      "zIndex": 33252.91336923354
+    },
+    {
+      "id": "skull-base-01:body",
+      "mode": "native-y",
+      "container": "bodies",
+      "sourceCropOverlapsBall": false,
+      "zIndex": 33252.91336923354
+    },
+    {
+      "id": "skull-base-02:ground-shadow",
+      "mode": "native-y",
+      "container": "ground",
+      "sourceCropOverlapsBall": false,
+      "zIndex": 33255.06699440539
+    },
+    {
+      "id": "skull-base-02:body",
+      "mode": "native-y",
+      "container": "bodies",
+      "sourceCropOverlapsBall": false,
+      "zIndex": 33255.06699440539
+    },
+    {
+      "id": "skull-base-03:ground-shadow",
+      "mode": "native-y",
+      "container": "ground",
+      "sourceCropOverlapsBall": false,
+      "zIndex": 33630.85380130959
+    },
+    {
+      "id": "skull-base-03:body",
+      "mode": "native-y",
+      "container": "bodies",
+      "sourceCropOverlapsBall": false,
+      "zIndex": 33630.85380130959
+    },
+    {
+      "id": "skull-base-04:ground-shadow",
+      "mode": "native-y",
+      "container": "ground",
+      "sourceCropOverlapsBall": false,
+      "zIndex": 33870.5786289894
+    },
+    {
+      "id": "skull-base-04:body",
+      "mode": "native-y",
+      "container": "bodies",
+      "sourceCropOverlapsBall": false,
+      "zIndex": 33870.5786289894
+    },
+    {
+      "id": "skull-base-05:ground-shadow",
+      "mode": "native-y",
+      "container": "ground",
+      "sourceCropOverlapsBall": false,
+      "zIndex": 34071.4531863284
+    },
+    {
+      "id": "skull-base-05:body",
+      "mode": "native-y",
+      "container": "bodies",
+      "sourceCropOverlapsBall": false,
+      "zIndex": 34071.4531863284
+    },
+    {
+      "id": "skull-base-06:ground-shadow",
+      "mode": "native-y",
+      "container": "ground",
+      "sourceCropOverlapsBall": false,
+      "zIndex": 34286.65987892238
+    },
+    {
+      "id": "skull-base-06:body",
+      "mode": "native-y",
+      "container": "bodies",
+      "sourceCropOverlapsBall": false,
+      "zIndex": 34286.65987892238
+    },
+    {
+      "id": "receiver-01:ground-shadow",
+      "mode": "native-y",
+      "container": "ground",
+      "sourceCropOverlapsBall": true,
+      "zIndex": 34639.03401006639
+    },
+    {
+      "id": "receiver-01:rear",
+      "mode": "receiver-back",
+      "container": "bodies",
+      "sourceCropOverlapsBall": true,
+      "zIndex": 34584.725379799995
+    },
+    {
+      "id": "receiver-01:front",
+      "mode": "receiver-front",
+      "container": "receiver-front",
+      "sourceCropOverlapsBall": true,
+      "zIndex": 34584.7453798
+    },
+    {
+      "id": "receiver-02:ground-shadow",
+      "mode": "native-y",
+      "container": "ground",
+      "sourceCropOverlapsBall": false,
+      "zIndex": 34639.561335368126
+    },
+    {
+      "id": "receiver-02:rear",
+      "mode": "receiver-back",
+      "container": "bodies",
+      "sourceCropOverlapsBall": false,
+      "zIndex": 34639.561335368126
+    },
+    {
+      "id": "receiver-02:front",
+      "mode": "receiver-front",
+      "container": "receiver-front",
+      "sourceCropOverlapsBall": false,
+      "zIndex": 34639.56134536813
+    },
+    {
+      "id": "receiver-03:ground-shadow",
+      "mode": "native-y",
+      "container": "ground",
+      "sourceCropOverlapsBall": false,
+      "zIndex": 34640.77828436916
+    },
+    {
+      "id": "receiver-03:rear",
+      "mode": "receiver-back",
+      "container": "bodies",
+      "sourceCropOverlapsBall": false,
+      "zIndex": 34640.77828436916
+    },
+    {
+      "id": "receiver-03:front",
+      "mode": "receiver-front",
+      "container": "receiver-front",
+      "sourceCropOverlapsBall": false,
+      "zIndex": 34640.77829436916
+    },
+    {
+      "id": "receiver-04:ground-shadow",
+      "mode": "native-y",
+      "container": "ground",
+      "sourceCropOverlapsBall": false,
+      "zIndex": 34639.995941136774
+    },
+    {
+      "id": "receiver-04:rear",
+      "mode": "receiver-back",
+      "container": "bodies",
+      "sourceCropOverlapsBall": false,
+      "zIndex": 34639.995941136774
+    },
+    {
+      "id": "receiver-04:front",
+      "mode": "receiver-front",
+      "container": "receiver-front",
+      "sourceCropOverlapsBall": false,
+      "zIndex": 34639.99595113678
+    },
+    {
+      "id": "outer-left:foreground",
+      "mode": "scene-front",
+      "container": "scene-front",
+      "sourceCropOverlapsBall": true,
+      "zIndex": 34535.83824355711
+    },
+    {
+      "id": "outer-right:foreground",
+      "mode": "scene-front",
+      "container": "scene-front",
+      "sourceCropOverlapsBall": false,
+      "zIndex": 34535.83824355711
+    },
+    {
+      "id": "divider-01:foreground",
+      "mode": "scene-front",
+      "container": "scene-front",
+      "sourceCropOverlapsBall": false,
+      "zIndex": 34535.83824355711
+    },
+    {
+      "id": "divider-02:foreground",
+      "mode": "scene-front",
+      "container": "scene-front",
+      "sourceCropOverlapsBall": false,
+      "zIndex": 34535.83824355711
+    },
+    {
+      "id": "divider-03:foreground",
+      "mode": "scene-front",
+      "container": "scene-front",
+      "sourceCropOverlapsBall": false,
+      "zIndex": 34535.83824355711
+    },
+    {
+      "id": "near-platform-front:foreground",
+      "mode": "scene-front",
+      "container": "scene-front",
+      "sourceCropOverlapsBall": false,
+      "zIndex": 34535.83824355711
+    }
+  ]
+}

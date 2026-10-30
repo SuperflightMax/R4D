@@ -1,0 +1,120 @@
+[
+  {
+    "type": "run_started",
+    "tick": 0,
+    "timeSec": 0,
+    "dropId": "board02-start",
+    "ballId": "board02-ball"
+  },
+  {
+    "type": "ball_spawned",
+    "tick": 0,
+    "timeSec": 0,
+    "dropId": "board02-start",
+    "ballId": "board02-ball",
+    "x": 33349.528039973346,
+    "y": 33109.09546312392,
+    "vx": 0,
+    "vy": 0
+  },
+  {
+    "type": "object_hit",
+    "tick": 89,
+    "timeSec": 0.445,
+    "ballId": "board02-ball",
+    "objectKind": "pin",
+    "objectId": "bowl-base-01",
+    "x": 33348.92998633409,
+    "y": 33207.97531635677
+  },
+  {
+    "type": "object_hit",
+    "tick": 367,
+    "timeSec": 1.835,
+    "ballId": "board02-ball",
+    "objectKind": "segment",
+    "objectId": "pillar-02:edge-01",
+    "x": 32956.682439059005,
+    "y": 33828.427583699246
+  },
+  {
+    "type": "object_hit",
+    "tick": 463,
+    "timeSec": 2.315,
+    "ballId": "board02-ball",
+    "objectKind": "segment",
+    "objectId": "left-3",
+    "x": 32828.55266221983,
+    "y": 33501.98840555258
+  },
+  {
+    "type": "object_hit",
+    "tick": 499,
+    "timeSec": 2.495,
+    "ballId": "board02-ball",
+    "objectKind": "pin",
+    "objectId": "bowl-base-02",
+    "x": 32865.69938678197,
+    "y": 33437.28956366976
+  },
+  {
+    "type": "object_hit",
+    "tick": 668,
+    "timeSec": 3.34,
+    "ballId": "board02-ball",
+    "objectKind": "segment",
+    "objectId": "left-3",
+    "x": 32828.558706935204,
+    "y": 33509.65196934905
+  },
+  {
+    "type": "object_hit",
+    "tick": 838,
+    "timeSec": 4.19,
+    "ballId": "board02-ball",
+    "objectKind": "segment",
+    "objectId": "pillar-04:edge-04",
+    "x": 32854.25686064283,
+    "y": 34288.554273494985
+  },
+  {
+    "type": "object_hit",
+    "tick": 850,
+    "timeSec": 4.25,
+    "ballId": "board02-ball",
+    "objectKind": "segment",
+    "objectId": "left-8",
+    "x": 32832.805327063936,
+    "y": 34366.5285249966
+  },
+  {
+    "type": "bucket_entered",
+    "tick": 884,
+    "timeSec": 4.42,
+    "ballId": "board02-ball",
+    "bucketId": "receiver-01",
+    "x": 32881.1407307,
+    "y": 34599.6217414
+  },
+  {
+    "type": "ball_finished",
+    "tick": 884,
+    "timeSec": 4.42,
+    "ballId": "board02-ball",
+    "result": {
+      "kind": "IN_BUCKET",
+      "bucketId": "receiver-01"
+    }
+  },
+  {
+    "type": "run_finished",
+    "tick": 884,
+    "timeSec": 4.42,
+    "dropId": "board02-start",
+    "ballId": "board02-ball",
+    "result": {
+      "kind": "IN_BUCKET",
+      "bucketId": "receiver-01"
+    }
+  }
+]
