@@ -29,6 +29,19 @@ python -B experiments/p5-regenerated-objects/transfer-water-dark/release-enginee
 
 Первые две команды уже выполнены; повтор с теми же ID защищён от overwrite. Для новых inputs использовать новые явные candidate/package ID, а не менять старый baseline.
 
+## Текущий Water w06 без нового пакета
+
+`candidate-water-w06.json`: current generated-board, `baseline=false`;21/21bodygroups/29targets/4cups/11foregroundclips — inventory, quality остаётся scoped COMPLETE/visual PARTIAL. Original w04 сохранён. `qa-water-w06.json` содержит точные обе independent QA refs и completed Builder handoff. Ни новый current/final package, ни current Dark selection не создавались; d01 остаётся исходным архивом.
+
+```powershell
+python -B experiments/p5-regenerated-objects/transfer-water-dark/release-engineer/package_transfer.py import experiments/p5-regenerated-objects/transfer-water-dark/release-engineer/candidate-water-w06.json
+python -B experiments/p5-regenerated-objects/transfer-water-dark/release-engineer/package_transfer.py register-qa experiments/p5-regenerated-objects/transfer-water-dark/release-engineer/qa-water-w06.json
+```
+
+Обе команды уже выполнены; occupied IDs защищены от overwrite. `register-qa` использует существующий `resolve_versions`/QA ref contract, принимает `board`, `id`, явный `baselineId`, `fileIndexSha256`, обе `qa.technical`/`qa.visual` и optional `builderHandoff`. Явный baseline и candidate проверяются по immutable material; raw Git reports/refs/bytes/SHA сохраняются в `qa/<board>/<id>/private/`, отдельный read-only `RECEIPT.json` pin-ит material и original baseline. Material receipt не дописывается. Registration не принимает package selection/final, не вызывает build и не назначает PASS. QA entry с теми же board/id/qa можно использовать в future explicit versions только после отдельного current batch/Lead handoff.
+
+Water material25files/15318372bytes/13PNG и оба QA texts проверены exact. TQA101snapshots/96captures, VQA89JPEG/178AX/22actualmotion/6FGregions — результаты независимых QA, здесь не повторялись. W04 saved-pop closure retained в новом w06, front-hide/light/full contours и недоступные контакты остаются partial/unverified. FullWater/P5PASS=false. См. HANDOFF_004.md и EVIDENCE_PINS_004.json.
+
 ## Следующий frozen input
 
 Lead передаёт exact FILE_INDEX path/bytes/SHA, board/id, consumer/artist pins и честные label/stage/limitations. Producer schema `r4d.p5.transfer.file-index/1`, producer root только `p5-runtime/builder/transfer-water-dark/<water|dark>/`. Создать новый candidate descriptor по примеру w04, `baseline=false` для Water successors. Первый реальный Dark generated-board input становится своим baseline; D00 scaffold не является финальным Dark. Один original baseline на доску, без незаметной смены исходного метода.

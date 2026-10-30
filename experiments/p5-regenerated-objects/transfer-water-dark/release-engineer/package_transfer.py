@@ -173,6 +173,27 @@ def render(d,loaded,eligibility):
  else:notice='Обе доски добавлены в черновик. До итогового локального комплекта нужны их точные независимые отчёты и явный выбор версий. Публикация не разрешена.'
  return ('<!doctype html>\n<html lang="ru"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>P5 · Водная и тёмная доски</title><link rel="stylesheet" href="wrapper.css"></head><body><main><header class="intro"><p class="eyebrow">R4D · P5 · перенос способа</p><h1>Водная и тёмная доски</h1><p>Результаты по каждой доске и сохранённые варианты.</p></header><aside class="notice"><strong>'+title+'</strong><p>'+notice+'</p></aside><div class="boards">'+''.join(boards)+'</div><footer>Сохранённые исходные варианты остаются доступны. Непроверенное не считается пройденным.</footer></main></body></html>\n').encode()
 
+def register_qa(descriptor):
+ guard();d=read_json(descriptor);board=d['board'];ident=d['id'];baseline=d['baselineId']
+ if d.get('final') or d.get('selected'):raise ValueError('QA registration cannot select or assemble a package')
+ versions=[d] if baseline==ident else [dict(board=board,id=baseline),d]
+ loaded=resolve_versions(dict(selected={b:ident if b==board else None for b in ('water','dark')},versions=versions))
+ entry=next(x for x in loaded if x[0]['id']==ident);v,r,root,q=entry
+ original=next(x for x in loaded if x[0]['id']==baseline)
+ if not original[1]['baseline']:raise ValueError('explicit original baseline required')
+ if r['kind']!='generated-board' or ident=='d00':raise ValueError('QA requires actual generated-board material')
+ if d['fileIndexSha256']!=r['indexSha256'] or set(q)!={'technical','visual'}:raise ValueError('both exact independent QA refs required')
+ files={kind+'.md':x['raw'] for kind,x in q.items()};files['qa-descriptor.json']=jsonbytes(d)
+ if d.get('builderHandoff'):files['builder-handoff.md']=git_bytes(d['builderHandoff']['commit'],d['builderHandoff']['path'])
+ out=RUNTIME/'qa'/board/ident
+ if out.exists():raise FileExistsError('occupied QA registration; preserve existing evidence')
+ for rel,raw in files.items():write(out/'private'/rel,raw)
+ receipt=dict(schema='r4d.p5.local-qa-registration/1',board=board,id=ident,createdUtc=datetime.datetime.now(datetime.timezone.utc).isoformat(),state='QA_REGISTERED_ONLY',baseline=r['baseline'],baselineId=baseline,materialReceipt=pin(root/'RECEIPT.json'),baselineReceipt=pin(original[2]/'RECEIPT.json'),fileIndexSha256=r['indexSha256'],qa={k:dict(reference=x['reference'],report=x['pin']) for k,x in q.items()},privateFiles={rel:dict(bytes=len(raw),sha256=digest(raw)) for rel,raw in files.items()},finalAssembled=False,FullArtPass=False,BoardPass=False,TokenGranted=False,serverWrites=0)
+ if plain_tree(out/'private')!=receipt['privateFiles']:raise ValueError('QA private copy changed; preserve WIP')
+ write(out/'RECEIPT.json',jsonbytes(receipt));freeze_files(out)
+ print(json.dumps(dict(registration=str(out),receipt=pin(out/'RECEIPT.json'),reports={k:x['pin'] for k,x in q.items()},state=receipt['state'],serverWrites=0),ensure_ascii=False))
+ return receipt
+
 def build(descriptor):
  guard();d=read_json(descriptor);loaded=resolve_versions(d);eligibility=final_eligibility(d,loaded)
  if d.get('final') and not eligibility['eligible']:raise ValueError('final package blocked: '+str(eligibility['reasons']))
@@ -192,8 +213,9 @@ def build(descriptor):
 
 def main():
  os.environ['TEMP']=str(RUNTIME/'temp');os.environ['TMP']=str(RUNTIME/'temp');os.environ['PYTHONPYCACHEPREFIX']=str(RUNTIME/'cache')
- ap=argparse.ArgumentParser(description=__doc__);ap.add_argument('action',choices=['import','build','verify','check-final']);ap.add_argument('input');args=ap.parse_args()
+ ap=argparse.ArgumentParser(description=__doc__);ap.add_argument('action',choices=['import','register-qa','build','verify','check-final']);ap.add_argument('input');args=ap.parse_args()
  if args.action=='import':import_material(args.input)
+ elif args.action=='register-qa':register_qa(args.input)
  elif args.action=='build':build(args.input)
  elif args.action=='check-final':d=read_json(args.input);print(json.dumps(final_eligibility(d,resolve_versions(d)),ensure_ascii=False))
  else:

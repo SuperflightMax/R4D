@@ -1,0 +1,24 @@
+{
+  "board": "water",
+  "id": "w06",
+  "kind": "generated-board",
+  "baseline": false,
+  "label": "Вода · текущий кандидат w06",
+  "stageLabel": "Состав собран · независимая проверка завершена в ограниченном объёме",
+  "summary": "Представлены все 21 группа препятствий, четыре корзины и 11 фрагментов переднего плана. Художественные ограничения сохраняются.",
+  "limitations": [
+    "Контакты лягушек 03/06 и ворот 01/02/05/06 в доступных траекториях остаются непроверенными.",
+    "Полные контуры, пять областей переднего плана и редкие перекрытия ещё не проверены.",
+    "Свет, опорные и падающие тени, перекрытие передним ободом корзины остаются PARTIAL/UNVERIFIED.",
+    "Полный художественный результат Water и итог переноса P5 не приняты."
+  ],
+  "technicalNotes": [
+    "13 unique PNG /22textureIDs /84instances;21/21bodygroups /29targets /4cups /11foregroundclips. Counts are inventory, not universal art/contact/light PASS.",
+    "Independent TQA:101 exact snapshots/96 captures; VQA:89 JPEG/178 AX/22 actual motion intervals/6 FG regions. Scoped COMPLETE/visual PARTIAL; no new significant defect established in checked cases.",
+    "W04 receiver02 saved-pop scoped closure retained; front-hide NOTE W05-TQA-L01 remains UNVERIFIED. Frog06 depth residual -5.091063sourcepx/rear ellipse +/-6texturepx; gate residuals roughly -5.22..-6.56sourcepx; lintel maxAlpha172 vs brief90..130, no runtime alpha fix.",
+    "Current candidate baseline=false; original w04 preserved. FullWater/P5PASS=false. No current package, Lead current handoff or publication token granted. Active Water04/trial02 unchanged."
+  ],
+  "fileIndex": "E:/R4D/perspective/p5-runtime/builder/transfer-water-dark/water/output/previews/w06/FILE_INDEX.json",
+  "indexBytes": 8432,
+  "indexSha256": "9ba0caf153b7528d551cd6da9ed8b6ccb90ab2ad4e96aba558eeb6b5c0ef5108"
+}
