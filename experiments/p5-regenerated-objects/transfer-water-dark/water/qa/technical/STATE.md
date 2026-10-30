@@ -1,5 +1,7 @@
 # Water — Independent Technical QA
 
+W05 ADDRESSED BATCH COMPLETE (2026-10-30): consumer `ce110a387919bbb10c467c70afce678f8b4ee4a7`, Artist `9647869d6dbf672ee5922b0fc57df254b9fdbb93`.22 frozen disk/HTTP files и31 actual state/config/RNG/events/loaded-art snapshots exact. **W04-TQA-V01 CLOSED на w05:** sphere visible над water до1275, gradual rear-rim reveal подтверждён. NOTE `W05-TQA-L01`: actual seed1/receiver03 1118–1120 сопоставлен с VQA, заметного рывка нет. Spatial front overlap после logical-depth crossing подтверждён, неправильная объёмная окклюзия/новый defect не установлены; legitimate front hiding UNVERIFIED. Native LOST сохранён. Field fixed по states, X envelope delta−0.319326/+0.336235 source px от w04, Y0; policy прежняя. `REPORT_W05.md` / `W05_EVIDENCE_PINS.json`. Full PASS=false; прочие прежние PARTIAL/UNVERIFIED без изменений. Свой tab закрыт, serverWrites=0, новых native runs нет. Исторические записи ниже сохранены.
+
 2026-10-30. INPUT/NATIVE PREPARATION COMPLETE: Water04/trial-02 из P1 `4b47db04c7140ebf88f69b91faa0b790d46f22ec`. Отчёт `REPORT_INPUT_ORACLE_001.md`, точные версии и SHA в `EVIDENCE_PINS.json`. Общий input blocker в выполненных проверках не найден.
 
 До запуска объявлены обычные seed **0, 1, 2, 3**, по одному полному bounded запуску и точному replay каждого. Все исходы и LOST сохраняются; расширение seed ради удачного результата не планируется. Настоящее ядро берётся из собственного ранее проверенного private runtime, без повторного экспорта/компиляции. Никаких изменений config, core, start, projection или PRNG.

@@ -1,0 +1,285 @@
+{
+  "candidate": "d02",
+  "board": "dark",
+  "qaParentCommit": "f40bd7fd0349fdf1a0cd7790e0ee2340e6554bd3",
+  "qaBranch": "codex/r4d-p5-regenerated-technical-qa-01",
+  "report": "REPORT_D02.md",
+  "frozen": {
+    "candidate": "d02",
+    "board": "dark",
+    "producer": "E:/R4D/perspective/p5-runtime/builder/transfer-water-dark/dark/output/previews/d02",
+    "url": "http://127.0.0.1:55195/",
+    "sourceCommit": "ce110a387919bbb10c467c70afce678f8b4ee4a7",
+    "artist": {
+      "commit": "9647869d6dbf672ee5922b0fc57df254b9fdbb93",
+      "path": "experiments/p5-regenerated-objects/transfer-water-dark/dark/asset-artist/asset-manifest.mini-02-floor.json",
+      "sourceSha256": "5bad898c270432928a403def12ffbca826a94d76cb83b395708bdf12588e8545",
+      "sourceBytes": 49103,
+      "stagedSha256": "18578c9568b1198e8dc4d3453ba2d8f30e44a232ed0b8042aabbeb4ba1a5ffb2",
+      "stagedBytes": 34767,
+      "supporting": [
+        {
+          "path": "experiments/p5-regenerated-objects/transfer-water-dark/dark/asset-artist/HANDOFF_MINI_02_FLOOR.md",
+          "materialized": "HANDOFF.md",
+          "bytes": 2339,
+          "sha256": "87a8b9f1d1b114974355c0a6a06027829256e35bed30451f21b0599bc2b2a58b"
+        },
+        {
+          "path": "experiments/p5-regenerated-objects/transfer-water-dark/dark/asset-artist/FLOOR_CORRECTION.mini-02.json",
+          "materialized": "FLOOR_CORRECTION.json",
+          "bytes": 777,
+          "sha256": "a82aeb83b6b7fbf826da6ca78f0a07646357d43dae9e965616844a93c65824cc"
+        },
+        {
+          "path": "experiments/p5-regenerated-objects/transfer-water-dark/dark/asset-artist/SELECTED.mini-02.json",
+          "materialized": "SELECTED.json",
+          "bytes": 2671,
+          "sha256": "3f768253d5f5447b5cd29e821053a8a379bf93f30031dd8e0b61548d623fc97d"
+        },
+        {
+          "path": "experiments/p5-regenerated-objects/transfer-water-dark/dark/asset-artist/RECEIVER_ANCHOR_POLICY.mini-01.json",
+          "materialized": "RECEIVER_ANCHOR_POLICY.json",
+          "bytes": 5303,
+          "sha256": "0d1b8ce3d9ff1bc4093252c13585339076a1b7ea8a3b4829dc27152f4bfbbf3b"
+        }
+      ],
+      "transformation": "Exact final texture bytes; file URLs normalized; full provenance kept outside web root with per-texture digest"
+    },
+    "fileIndex": {
+      "bytes": 5821,
+      "sha256": "0fcf214387311490744ff1630052eda287b48841b6404c5896eec071359a6c0c"
+    },
+    "sidecar": {
+      "path": "index.json",
+      "bytes": 14673,
+      "sha256": "32998474be51595ae4d63ee3ba02c50f9da83e715d369fab53017e82900efc47",
+      "outsidePublic": true
+    },
+    "counts": {
+      "files": 20,
+      "textures": 15,
+      "png": 8,
+      "instances": 35
+    },
+    "checked": [
+      {
+        "path": "THIRD_PARTY_LICENSES.txt",
+        "bytes": 9330,
+        "sha256": "583c1487aefadfa1b72c181ab73a5f7a2030afb0545cf49b90ff66973faef82f",
+        "diskAndHttpExact": true
+      },
+      {
+        "path": "app.js",
+        "bytes": 570889,
+        "sha256": "ba21d2d6a308acbbb4658d937f4ba942ebc6f473d7d934f3eb267c4f6c16afd8",
+        "diskAndHttpExact": true
+      },
+      {
+        "path": "assets/27396c82ed4d2cd0bc8ce8e046a02da92890e59e3dbfeba68823aadc561e3d71.png",
+        "bytes": 1521694,
+        "sha256": "27396c82ed4d2cd0bc8ce8e046a02da92890e59e3dbfeba68823aadc561e3d71",
+        "diskAndHttpExact": true
+      },
+      {
+        "path": "assets/671762679e504e278f52903d335a9ad44f28f8bd245dc1a4206c96acb0668d61.png",
+        "bytes": 442688,
+        "sha256": "671762679e504e278f52903d335a9ad44f28f8bd245dc1a4206c96acb0668d61",
+        "diskAndHttpExact": true
+      },
+      {
+        "path": "assets/87b76e1d8b13ae320ba5a23d8a964a858d94a303f0f0d29282dd17a593d608a4.png",
+        "bytes": 1846030,
+        "sha256": "87b76e1d8b13ae320ba5a23d8a964a858d94a303f0f0d29282dd17a593d608a4",
+        "diskAndHttpExact": true
+      },
+      {
+        "path": "assets/908dadc778a9b6c7989009444bbb835b3ac2a07d1e306db3a29dbca8e7eaf144.png",
+        "bytes": 2252858,
+        "sha256": "908dadc778a9b6c7989009444bbb835b3ac2a07d1e306db3a29dbca8e7eaf144",
+        "diskAndHttpExact": true
+      },
+      {
+        "path": "assets/bf3f2fa5143bf6180dcf44f80e711bb97094e2eefdf24c1b0dab6f6d5bd13a6b.png",
+        "bytes": 2393751,
+        "sha256": "bf3f2fa5143bf6180dcf44f80e711bb97094e2eefdf24c1b0dab6f6d5bd13a6b",
+        "diskAndHttpExact": true
+      },
+      {
+        "path": "assets/cee6d591ba931e77a66801b717230325345cfea43ae2273e59bcc1712ce0ba0d.png",
+        "bytes": 1308841,
+        "sha256": "cee6d591ba931e77a66801b717230325345cfea43ae2273e59bcc1712ce0ba0d",
+        "diskAndHttpExact": true
+      },
+      {
+        "path": "assets/e125d94419ad73c2c67461546f704b974021866b21085d32a50b51274da2ac46.png",
+        "bytes": 1913632,
+        "sha256": "e125d94419ad73c2c67461546f704b974021866b21085d32a50b51274da2ac46",
+        "diskAndHttpExact": true
+      },
+      {
+        "path": "assets/f9474768fe208f8dc4f26fd97714b862ab37f23f23125a2d17778f920233c472.png",
+        "bytes": 2636302,
+        "sha256": "f9474768fe208f8dc4f26fd97714b862ab37f23f23125a2d17778f920233c472",
+        "diskAndHttpExact": true
+      },
+      {
+        "path": "assets/manifest.json",
+        "bytes": 34767,
+        "sha256": "18578c9568b1198e8dc4d3453ba2d8f30e44a232ed0b8042aabbeb4ba1a5ffb2",
+        "diskAndHttpExact": true
+      },
+      {
+        "path": "data/config.json",
+        "bytes": 19508,
+        "sha256": "14be2a023833d266d1e333bf582af5fd5885deb445698c10ebd846ef0cc080b2",
+        "diskAndHttpExact": true
+      },
+      {
+        "path": "data/dependency-lock.json",
+        "bytes": 4341,
+        "sha256": "b1bdcd0eb94d0d5c7bb11195eae7d90c16ac9e006484d2a9a192c851559e7678",
+        "diskAndHttpExact": true
+      },
+      {
+        "path": "data/dependency-pins.json",
+        "bytes": 565,
+        "sha256": "e17c48a268e9fd3dce19666877fd043db6b6f98afc0b383024b98d18015877f1",
+        "diskAndHttpExact": true
+      },
+      {
+        "path": "data/input-verification.json",
+        "bytes": 6063,
+        "sha256": "87702467143becb062b42c145f9e6b6e7264cc88ffa0b589d185b2cc38c3927d",
+        "diskAndHttpExact": true
+      },
+      {
+        "path": "data/p1-manifest.json",
+        "bytes": 13939,
+        "sha256": "3fab422bd1f74d477d1648620c97ad6d7b8b0a55a70a1102d6e6885def564d81",
+        "diskAndHttpExact": true
+      },
+      {
+        "path": "data/preview-input.json",
+        "bytes": 1987,
+        "sha256": "d018e89aef8b091198a975da1c8e63d202acce5a173db4513e6f651ce8ef6ab4",
+        "diskAndHttpExact": true
+      },
+      {
+        "path": "data/targets.json",
+        "bytes": 444706,
+        "sha256": "a76d2d9193107edbf39ae229ed1d90368478a05c2b3b66ade2edfa003ae44112",
+        "diskAndHttpExact": true
+      },
+      {
+        "path": "index.html",
+        "bytes": 1973,
+        "sha256": "bc48d2317202459dafa9e0a4b7d1974d897fb6ce0275dfecd5669fbdcf02c6b8",
+        "diskAndHttpExact": true
+      },
+      {
+        "path": "style.css",
+        "bytes": 1780,
+        "sha256": "f13b2632000019ade68e8ea7109d616cec7f079183c93ea81796fe619170dd9f",
+        "diskAndHttpExact": true
+      }
+    ],
+    "supporting": [
+      {
+        "path": "experiments/p5-regenerated-objects/transfer-water-dark/dark/asset-artist/HANDOFF_MINI_02_FLOOR.md",
+        "materialized": "HANDOFF.md",
+        "bytes": 2339,
+        "sha256": "87a8b9f1d1b114974355c0a6a06027829256e35bed30451f21b0599bc2b2a58b"
+      },
+      {
+        "path": "experiments/p5-regenerated-objects/transfer-water-dark/dark/asset-artist/FLOOR_CORRECTION.mini-02.json",
+        "materialized": "FLOOR_CORRECTION.json",
+        "bytes": 777,
+        "sha256": "a82aeb83b6b7fbf826da6ca78f0a07646357d43dae9e965616844a93c65824cc"
+      },
+      {
+        "path": "experiments/p5-regenerated-objects/transfer-water-dark/dark/asset-artist/SELECTED.mini-02.json",
+        "materialized": "SELECTED.json",
+        "bytes": 2671,
+        "sha256": "3f768253d5f5447b5cd29e821053a8a379bf93f30031dd8e0b61548d623fc97d"
+      },
+      {
+        "path": "experiments/p5-regenerated-objects/transfer-water-dark/dark/asset-artist/RECEIVER_ANCHOR_POLICY.mini-01.json",
+        "materialized": "RECEIVER_ANCHOR_POLICY.json",
+        "bytes": 5303,
+        "sha256": "0d1b8ce3d9ff1bc4093252c13585339076a1b7ea8a3b4829dc27152f4bfbbf3b"
+      }
+    ],
+    "delta": {
+      "nonFloorTexturesExact": 14,
+      "actorInstancesExact": 34,
+      "targetBoundFloors": 0
+    },
+    "owner": {
+      "pid": 48448,
+      "host": "WIN-36E9FF9EJM0",
+      "url": "http://127.0.0.1:55195/",
+      "root": "E:\\R4D\\perspective\\p5-runtime\\builder\\transfer-water-dark\\dark\\output\\previews\\d02\\public",
+      "startedUtc": "2026-10-30T01:37:49.283Z",
+      "command": "node own transfer scripts/preview.mjs <own-root> <own-port>",
+      "scope": "own localhost; no release server writes",
+      "execSessionId": 81883,
+      "candidate": "d02",
+      "fileIndexSha256": "0fcf214387311490744ff1630052eda287b48841b6404c5896eec071359a6c0c"
+    },
+    "initialTcpOwnerMatched": true,
+    "serverWrites": 0,
+    "tokenGranted": false
+  },
+  "nativeOracle": {
+    "commit": "761e6087c902fe5ea941b90b5ce4d72383a0d755",
+    "newNativeRuns": 0,
+    "newSeeds": 0
+  },
+  "actual": {
+    "snapshots": 11,
+    "screenshots": 11,
+    "comparison": {
+      "path": "E:/R4D/perspective/p5-runtime/technical-qa/transfer-water-dark/dark/d02/browser-comparison.json",
+      "bytes": 5166,
+      "sha256": "3a4302dcd8c0c1b543df8ddaae07fb276c83fe5bedd0d36241e0306d35061ebc"
+    },
+    "fieldDomain": {
+      "minX": 68.71885635951678,
+      "maxX": 1471.0818844305998,
+      "minY": 249.00000000000102,
+      "maxY": 1407.0875938955278
+    },
+    "previousFieldDomain": {
+      "minX": 68.71885635951678,
+      "maxX": 1471.0818844305998,
+      "minY": 249.00000000000102,
+      "maxY": 1407.0875938955278
+    },
+    "fieldDelta": {
+      "minX": 0,
+      "maxX": 0,
+      "minY": 0,
+      "maxY": 0
+    },
+    "fieldFixedAcrossStates": true,
+    "consoleErrors": 0,
+    "ownTabsClosed": true,
+    "producerServerPreserved": true,
+    "noViewportOverrideOrCameraOffset": true
+  },
+  "verdict": {
+    "knownLowerFloorDrift": "corrected within identifiable bevel band including sourceY1121",
+    "stillOpen": "D01-TQA-V01",
+    "receiverEntryAuditRepeated": false,
+    "fullPass": false
+  },
+  "runtimeIndex": {
+    "path": "E:/R4D/perspective/p5-runtime/technical-qa/transfer-water-dark/dark/d02/FILE_INDEX.qa.json",
+    "bytes": 5800,
+    "sha256": "a74f6cda41f929a1df7fc4e9d1588145b0feb62875f7ebbb0bb64a429995345f",
+    "entries": 33,
+    "totalBytes": 2472198
+  },
+  "serverWrites": 0,
+  "tokenGranted": false
+}

@@ -1,0 +1,315 @@
+{
+  "candidate": "w05",
+  "board": "water",
+  "qaParentCommit": "f40bd7fd0349fdf1a0cd7790e0ee2340e6554bd3",
+  "qaBranch": "codex/r4d-p5-regenerated-technical-qa-01",
+  "report": "REPORT_W05.md",
+  "frozen": {
+    "candidate": "w05",
+    "board": "water",
+    "producer": "E:/R4D/perspective/p5-runtime/builder/transfer-water-dark/water/output/previews/w05",
+    "url": "http://127.0.0.1:55194/",
+    "sourceCommit": "ce110a387919bbb10c467c70afce678f8b4ee4a7",
+    "artist": {
+      "commit": "9647869d6dbf672ee5922b0fc57df254b9fdbb93",
+      "path": "experiments/p5-regenerated-objects/transfer-water-dark/water/asset-artist/asset-manifest.mini-04-receiver-parts.json",
+      "sourceSha256": "83961fd80bfc027e77300805bd02ecdd6e961c22e770de9bf18675a670057521",
+      "sourceBytes": 65234,
+      "stagedSha256": "7a7f55effb5c7a4d5b60c4752c14bc2fa0ca846817f94ca88e12bd165ddba965",
+      "stagedBytes": 46425,
+      "supporting": [
+        {
+          "path": "experiments/p5-regenerated-objects/transfer-water-dark/water/asset-artist/HANDOFF_MINI_04_RECEIVER_PARTS.md",
+          "materialized": "HANDOFF.md",
+          "bytes": 4222,
+          "sha256": "ba38e6abd66f51ae840afb2fdb1d2aa235ddc473c9a10224d49144e812588ad2"
+        },
+        {
+          "path": "experiments/p5-regenerated-objects/transfer-water-dark/water/asset-artist/RECEIVER_PARTS.mini-04.json",
+          "materialized": "RECEIVER_PARTS.json",
+          "bytes": 5199,
+          "sha256": "e48e4f90ed123ec521835aca9d3f16bf0f772bdf5699a7dc7fd55fa173e4e1bb"
+        },
+        {
+          "path": "experiments/p5-regenerated-objects/transfer-water-dark/water/asset-artist/SELECTED.mini-04.json",
+          "materialized": "SELECTED.json",
+          "bytes": 3380,
+          "sha256": "f67c31b25e8ca26744acc98b6a6dd0fb184595a376f80bbbfaa80e712eea7f53"
+        },
+        {
+          "path": "experiments/p5-regenerated-objects/transfer-water-dark/water/asset-artist/records/receiver-rim-registration.mini-04.json",
+          "materialized": "rim-registration.json",
+          "bytes": 2802,
+          "sha256": "084abcb57054c769ce75fa8c13c8aa8967cdc0b516309673b7a3545b3990658a"
+        },
+        {
+          "path": "experiments/p5-regenerated-objects/transfer-water-dark/water/asset-artist/RECEIVER_ANCHOR_POLICY.mini-02.json",
+          "materialized": "RECEIVER_ANCHOR_POLICY.json",
+          "bytes": 6308,
+          "sha256": "a9756c0bc381ed4aefe19bdde2c335a746e2d5467a21557f73c75ab8e2f08312"
+        }
+      ],
+      "transformation": "Exact final texture bytes; file URLs normalized; full provenance kept outside web root with per-texture digest"
+    },
+    "fileIndex": {
+      "bytes": 6580,
+      "sha256": "dd5a85b7187b90197527fef5763fd31a64b16ae7e84f53a092a33674dd0031b8"
+    },
+    "sidecar": {
+      "path": "index.json",
+      "bytes": 14751,
+      "sha256": "470d4bed32cfa49cda8c143a95da57947f330c6e799122974b0329dd9e5db50f",
+      "outsidePublic": true
+    },
+    "counts": {
+      "files": 22,
+      "textures": 19,
+      "png": 10,
+      "instances": 34
+    },
+    "checked": [
+      {
+        "path": "THIRD_PARTY_LICENSES.txt",
+        "bytes": 9330,
+        "sha256": "583c1487aefadfa1b72c181ab73a5f7a2030afb0545cf49b90ff66973faef82f",
+        "diskAndHttpExact": true
+      },
+      {
+        "path": "app.js",
+        "bytes": 570889,
+        "sha256": "ba21d2d6a308acbbb4658d937f4ba942ebc6f473d7d934f3eb267c4f6c16afd8",
+        "diskAndHttpExact": true
+      },
+      {
+        "path": "assets/0265ff9669166fbe216da0393c6552e054d66ef0587feb206a56c06e4cbcde92.png",
+        "bytes": 1040337,
+        "sha256": "0265ff9669166fbe216da0393c6552e054d66ef0587feb206a56c06e4cbcde92",
+        "diskAndHttpExact": true
+      },
+      {
+        "path": "assets/0d9fc682e32a2ce5255682e489a6b17c9c451f95a0b16c23325e19239fed251c.png",
+        "bytes": 546326,
+        "sha256": "0d9fc682e32a2ce5255682e489a6b17c9c451f95a0b16c23325e19239fed251c",
+        "diskAndHttpExact": true
+      },
+      {
+        "path": "assets/2cfee97a7bf2542a0a4226ee893ecfa7a7a1f7352505ce74d8b8c48bae1bb301.png",
+        "bytes": 1370021,
+        "sha256": "2cfee97a7bf2542a0a4226ee893ecfa7a7a1f7352505ce74d8b8c48bae1bb301",
+        "diskAndHttpExact": true
+      },
+      {
+        "path": "assets/2f58c03e3ae6a7a4a4460f94976c3c5a4b93ca6045674df8140b9221741a3c0a.png",
+        "bytes": 433727,
+        "sha256": "2f58c03e3ae6a7a4a4460f94976c3c5a4b93ca6045674df8140b9221741a3c0a",
+        "diskAndHttpExact": true
+      },
+      {
+        "path": "assets/37e1603fe031b18e9ae8d325f65b2c138612d15f49d6948ce0b27c9b35c3456c.png",
+        "bytes": 2477216,
+        "sha256": "37e1603fe031b18e9ae8d325f65b2c138612d15f49d6948ce0b27c9b35c3456c",
+        "diskAndHttpExact": true
+      },
+      {
+        "path": "assets/4bf235f8981fcb7c3ca3029c2e59a8594e9af28d7de534a56e1ab841a9549843.png",
+        "bytes": 1547434,
+        "sha256": "4bf235f8981fcb7c3ca3029c2e59a8594e9af28d7de534a56e1ab841a9549843",
+        "diskAndHttpExact": true
+      },
+      {
+        "path": "assets/8d7171a661c095dc4b9cef5297ff07fdc9f2b2cf14f072886d02e8944cc85bc2.png",
+        "bytes": 343656,
+        "sha256": "8d7171a661c095dc4b9cef5297ff07fdc9f2b2cf14f072886d02e8944cc85bc2",
+        "diskAndHttpExact": true
+      },
+      {
+        "path": "assets/aaaac1a65b694873281326fcfb71fef13b1bdf3f6cea4ac06d3315f93a7bf098.png",
+        "bytes": 923732,
+        "sha256": "aaaac1a65b694873281326fcfb71fef13b1bdf3f6cea4ac06d3315f93a7bf098",
+        "diskAndHttpExact": true
+      },
+      {
+        "path": "assets/b8de40ba0fc1a0dfa7d47a7840042c482416667705cfd5ddbcbc2942c63af2c3.png",
+        "bytes": 1176242,
+        "sha256": "b8de40ba0fc1a0dfa7d47a7840042c482416667705cfd5ddbcbc2942c63af2c3",
+        "diskAndHttpExact": true
+      },
+      {
+        "path": "assets/f718f84fb020356c13a2753aa9449d5713f90366559dc6c4d1bb24f97fd07ddb.png",
+        "bytes": 1382638,
+        "sha256": "f718f84fb020356c13a2753aa9449d5713f90366559dc6c4d1bb24f97fd07ddb",
+        "diskAndHttpExact": true
+      },
+      {
+        "path": "assets/manifest.json",
+        "bytes": 46425,
+        "sha256": "7a7f55effb5c7a4d5b60c4752c14bc2fa0ca846817f94ca88e12bd165ddba965",
+        "diskAndHttpExact": true
+      },
+      {
+        "path": "data/config.json",
+        "bytes": 27231,
+        "sha256": "9048b28af2923c93d8be772367beeb828f1e4513a6298af1c803379f77d3e50c",
+        "diskAndHttpExact": true
+      },
+      {
+        "path": "data/dependency-lock.json",
+        "bytes": 4341,
+        "sha256": "b1bdcd0eb94d0d5c7bb11195eae7d90c16ac9e006484d2a9a192c851559e7678",
+        "diskAndHttpExact": true
+      },
+      {
+        "path": "data/dependency-pins.json",
+        "bytes": 565,
+        "sha256": "e17c48a268e9fd3dce19666877fd043db6b6f98afc0b383024b98d18015877f1",
+        "diskAndHttpExact": true
+      },
+      {
+        "path": "data/input-verification.json",
+        "bytes": 5479,
+        "sha256": "5af8241ac05fa67ad46ff8b5a560a97cc9a7b0c4df405f15e6e0cd53e2d00827",
+        "diskAndHttpExact": true
+      },
+      {
+        "path": "data/p1-manifest.json",
+        "bytes": 15870,
+        "sha256": "48c4fef26fd8c94f06c278851222ef285edda54ac14e53da8908f4ee663dc420",
+        "diskAndHttpExact": true
+      },
+      {
+        "path": "data/preview-input.json",
+        "bytes": 2321,
+        "sha256": "18fb0a62ba15d7d4dd59c8add218a0f26bac6c6e4610caa7bacab4cf305131c7",
+        "diskAndHttpExact": true
+      },
+      {
+        "path": "data/targets.json",
+        "bytes": 345191,
+        "sha256": "8e6976b9e40aa202a8dc34da9bad49b96d5fa6135aa1e1d6be22d567b8cf7559",
+        "diskAndHttpExact": true
+      },
+      {
+        "path": "index.html",
+        "bytes": 1975,
+        "sha256": "9ba537ccd9a79c97662f10ef2e49653f5332219462da590f336a31b5a71275eb",
+        "diskAndHttpExact": true
+      },
+      {
+        "path": "style.css",
+        "bytes": 1780,
+        "sha256": "f13b2632000019ade68e8ea7109d616cec7f079183c93ea81796fe619170dd9f",
+        "diskAndHttpExact": true
+      }
+    ],
+    "supporting": [
+      {
+        "path": "experiments/p5-regenerated-objects/transfer-water-dark/water/asset-artist/HANDOFF_MINI_04_RECEIVER_PARTS.md",
+        "materialized": "HANDOFF.md",
+        "bytes": 4222,
+        "sha256": "ba38e6abd66f51ae840afb2fdb1d2aa235ddc473c9a10224d49144e812588ad2"
+      },
+      {
+        "path": "experiments/p5-regenerated-objects/transfer-water-dark/water/asset-artist/RECEIVER_PARTS.mini-04.json",
+        "materialized": "RECEIVER_PARTS.json",
+        "bytes": 5199,
+        "sha256": "e48e4f90ed123ec521835aca9d3f16bf0f772bdf5699a7dc7fd55fa173e4e1bb"
+      },
+      {
+        "path": "experiments/p5-regenerated-objects/transfer-water-dark/water/asset-artist/SELECTED.mini-04.json",
+        "materialized": "SELECTED.json",
+        "bytes": 3380,
+        "sha256": "f67c31b25e8ca26744acc98b6a6dd0fb184595a376f80bbbfaa80e712eea7f53"
+      },
+      {
+        "path": "experiments/p5-regenerated-objects/transfer-water-dark/water/asset-artist/records/receiver-rim-registration.mini-04.json",
+        "materialized": "rim-registration.json",
+        "bytes": 2802,
+        "sha256": "084abcb57054c769ce75fa8c13c8aa8967cdc0b516309673b7a3545b3990658a"
+      },
+      {
+        "path": "experiments/p5-regenerated-objects/transfer-water-dark/water/asset-artist/RECEIVER_ANCHOR_POLICY.mini-02.json",
+        "materialized": "RECEIVER_ANCHOR_POLICY.json",
+        "bytes": 6308,
+        "sha256": "a9756c0bc381ed4aefe19bdde2c335a746e2d5467a21557f73c75ab8e2f08312"
+      }
+    ],
+    "delta": {
+      "originalNinePngRetained": true,
+      "newRim": "2f58c03e3ae6a7a4a4460f94976c3c5a4b93ca6045674df8140b9221741a3c0a",
+      "floorInsertionOrder": [
+        "floor",
+        "receiver-01-base",
+        "receiver-02-base",
+        "receiver-03-base",
+        "receiver-04-base"
+      ],
+      "floorRank": -100000000
+    },
+    "owner": {
+      "pid": 38924,
+      "host": "WIN-36E9FF9EJM0",
+      "url": "http://127.0.0.1:55194/",
+      "root": "E:\\R4D\\perspective\\p5-runtime\\builder\\transfer-water-dark\\water\\output\\previews\\w05\\public",
+      "startedUtc": "2026-10-30T01:36:45.88Z",
+      "command": "node own transfer scripts/preview.mjs <own-root> <own-port>",
+      "scope": "own localhost; no release server writes",
+      "execSessionId": 73455,
+      "candidate": "w05",
+      "fileIndexSha256": "dd5a85b7187b90197527fef5763fd31a64b16ae7e84f53a092a33674dd0031b8"
+    },
+    "initialTcpOwnerMatched": true,
+    "serverWrites": 0,
+    "tokenGranted": false
+  },
+  "nativeOracle": {
+    "commit": "761e6087c902fe5ea941b90b5ce4d72383a0d755",
+    "newNativeRuns": 0,
+    "newSeeds": 0
+  },
+  "actual": {
+    "snapshots": 31,
+    "screenshots": 29,
+    "comparison": {
+      "path": "E:/R4D/perspective/p5-runtime/technical-qa/transfer-water-dark/water/w05/browser-comparison.json",
+      "bytes": 13787,
+      "sha256": "1e85bcbfcab5929711cc4a1d78d9950e45d37dff5285b0a1fe20378c9b17777d"
+    },
+    "fieldDomain": {
+      "minX": -10.637626390503007,
+      "maxX": 1533.7323088433782,
+      "minY": 249.72811384258958,
+      "maxY": 1403.2984506144696
+    },
+    "previousFieldDomain": {
+      "minX": -10.318300383148722,
+      "maxX": 1533.39607382019,
+      "minY": 249.72811384258958,
+      "maxY": 1403.2984506144696
+    },
+    "fieldDelta": {
+      "minX": -0.3193260073542845,
+      "maxX": 0.3362350231882374,
+      "minY": 0,
+      "maxY": 0
+    },
+    "fieldFixedAcrossStates": true,
+    "consoleErrors": 0,
+    "ownTabsClosed": true,
+    "producerServerPreserved": true,
+    "noViewportOverrideOrCameraOffset": true
+  },
+  "verdict": {
+    "closedOwnRepro": "W04-TQA-V01 on w05",
+    "frontObservation": "W05-TQA-L01 NOTE / front-hide UNVERIFIED; same seed1 receiver03 actual1118–1120, no observed jerk, no established new visual defect",
+    "fullPass": false
+  },
+  "runtimeIndex": {
+    "path": "E:/R4D/perspective/p5-runtime/technical-qa/transfer-water-dark/water/w05/FILE_INDEX.qa.json",
+    "bytes": 12951,
+    "sha256": "958f1f00788ecdf5c1852081c646b394a10bd3292bff960346e7c9266fa79274",
+    "entries": 75,
+    "totalBytes": 8486043
+  },
+  "serverWrites": 0,
+  "tokenGranted": false
+}

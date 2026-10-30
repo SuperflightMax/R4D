@@ -1,5 +1,7 @@
 # Dark — Independent Technical QA
 
+D02 ADDRESSED BATCH COMPLETE (2026-10-30): consumer `ce110a387919bbb10c467c70afce678f8b4ee4a7`, Artist `9647869d6dbf672ee5922b0fc57df254b9fdbb93`.20 frozen disk/HTTP files и11 actual state/config/RNG/events/loaded-art snapshots exact. Known lower-floor drift corrected: independent bevel band sourceY1117.09…1124.44 включает accepted1121; actual Whole/Field/geometry стык coherent.34 actor instances и14 non-floor entries неизменны, narrow corner/front regression preserved, Field domain exactly d01. **D01-TQA-V01 remains OPEN**, receiver entry audit не повторялся. `REPORT_D02.md` / `D02_EVIDENCE_PINS.json`. Full PASS=false; missing groups/masks/environment и прежние UNVERIFIED сохранены. Свой tab закрыт, serverWrites=0, новых native runs нет. Исторические записи ниже сохранены.
+
 2026-10-30. INPUT/NATIVE PREPARATION COMPLETE: Dark02/trial-01 из P1 `4b47db04c7140ebf88f69b91faa0b790d46f22ec`. Отчёт `REPORT_INPUT_ORACLE_001.md`, точные версии и SHA в `EVIDENCE_PINS.json`. Общий input blocker в выполненных проверках не найден.
 
 До запуска объявлены обычные seed **0, 1, 2, 3**, по одному полному bounded запуску и точному replay каждого. Все исходы и LOST сохраняются; расширение seed ради удачного результата не планируется. Настоящее ядро берётся из собственного ранее проверенного private runtime, без повторного экспорта/компиляции. Никаких изменений config, core, start, projection или PRNG.
