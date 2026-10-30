@@ -1,5 +1,10 @@
 # Water Asset Artist
 
+Текущий отдельный post-w04 mini04 receiver-parts:65234bytes/SHA83961fd80bfc027e77300805bd02ecdd6e961c22e770de9bf18675a670057521,10PNG/19IDs/34instances. Native rim selected, общая optical policy и все unrelated actors прежние. Actual successor/QA pending;42 alpha1 residue samples честно сохранены. См. HANDOFF_MINI_04_RECEIVER_PARTS.md. Original w04/mini03 immutable. Следом остальные gates + отдельная lintel cast shadow, foreground и missing frogs.
+
+История:
+# Water Asset Artist
+
 Current mini03 whole-gate baseline:44339bytes/SHA50dceb14be6f71a429231a89c44c67d75198e1c9dd9d425c6e8c1747f251803f,9PNG/15textureIDs/30instances. Adds only arch07 whole native sprite and two exact-foot shadows to frozenmini02. Rawgroundproxyanchor[693,925],1257x190; rear plane hidden/inferred,±30texturepx. Source depth residual-6.4081px,anchor uncertainty±2.9356px explicitly retained. Requested actualseed1states998–1031; actualQA pending. Native left/lintel edits not selected/registered. See HANDOFF_MINI_03_GATE_BASELINE.md. Next actual baseline review, improved/registered gate parts, remaining frogs and foreground, then continue independent Dark work.
 
 Current handoff mini02:40316bytes/SHA6948fdd7fccc60612183a2a8f9d6ce88f78ecd137931297c8fca556b3c19169a;8PNG/14textureIDs/27instances,sevenpillars+farfrog01+all4receivers. Schema/PNG/target/anchor checks passed; new cup policy calculated from Water/new ball, independent width delta0. Partial, actualmini02QA pending. See HANDOFF_MINI_02.md. Eighteen native Water outputs retained, including correction failures. Lead priority: arch07 whole-sprite limited baseline for seed1states998–1031, then registered parts; current left/lintel edits changed canvas and are not selected. Long walls/near edges and other frogs remain work. Mini01 frozen.

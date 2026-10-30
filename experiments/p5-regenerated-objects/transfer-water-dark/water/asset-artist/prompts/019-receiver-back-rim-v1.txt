@@ -1,0 +1,7 @@
+Use case: precise-object-edit
+Asset type: registered transparent FAR/BACK rim and walls part of the generated Water receiver.
+Input image1: EDIT TARGET, original generated receiver-v1.png,1254x1254. Preserve the exact full canvas, receiver position, scale, camera, surviving stone and brass shapes, lighting and materials.
+Primary request: retain ONLY the FAR/REAR U-shaped cream-and-jade rim, the inner vertical BACK WALL, the two far corner blocks and the REAR halves of the side rims/walls. Remove EVERY PIXEL of the turquoise WATER SURFACE / INTERIOR FLOOR so that the entire bowl opening is genuinely ALPHA ZERO, not a dark or transparent-looking painted fill. Remove the NEAR/FRONT rim, near hull, front pointed bow and front medallion, which already have a separate registered front part.
+The U-shaped back rim should be open toward the viewer. The clear central opening around original texture coordinate[627,500], and its broad surrounding water region, must be empty transparent pixels. Do not close it with a new wall, tinted plane, water, soft haze or shadows.
+Invariants: keep all surviving rear rim/wall pixels in the same place and at the same size. Keep full1254-square frame with large transparent empty lower area; no crop, recenter, zoom, rescale, rotation or redesigned receiver. Retain the original genuine far-wall geometry rather than inventing an empty replacement bowl.
+Constraints: native RGBA rear-rim part only. No water/interior surface, front shell, backdrop, outside floor, shadow, labels, text, logo or watermark.

@@ -1,0 +1,152 @@
+{
+  "variant": "post-w04-receiver-base-rim-front-v1",
+  "baselineArtistCommit": "541085603e01e23b076fe33ff3c9991822c0bce2",
+  "baselineManifest": "asset-manifest.mini-03.json",
+  "baselineManifestSha256": "50dceb14be6f71a429231a89c44c67d75198e1c9dd9d425c6e8c1747f251803f",
+  "builderPlanCommit": "aa64d27ab5dc6b88982fd5aa2f564d461a935dee",
+  "preparation": "Неизменный full как base + native rim-only back + прежний front",
+  "floorOrder": [
+    "floor",
+    "receiver-01-base",
+    "receiver-02-base",
+    "receiver-03-base",
+    "receiver-04-base"
+  ],
+  "newRole": false,
+  "newSchema": false,
+  "newRank": false,
+  "rendererPrerequisite": "Согласованное Builder расширение существующего floor rank на target-bound floor; exact code pin передаёт Builder",
+  "newUniquePng": 1,
+  "uniquePng": 10,
+  "textureIds": 19,
+  "instances": 34,
+  "parts": [
+    {
+      "targetId": "receiver-01",
+      "baseInstanceId": "receiver-01-base",
+      "backInstanceId": "receiver-01-back",
+      "frontInstanceId": "receiver-01-front",
+      "baseTextureId": "receiver-01-base-v1",
+      "backTextureId": "receiver-01-rim-back-v1",
+      "frontTextureId": "receiver-01-front-v1",
+      "groundAnchorPx": [
+        627,
+        558.4579610724702
+      ],
+      "opticalOpeningPointPx": [
+        627,
+        500
+      ],
+      "captureFootprintPx": {
+        "depth": 120.0,
+        "width": 230.0,
+        "center": [
+          627,
+          558.4579610724702
+        ],
+        "measurement": "Authored230x120 capture proxy inside measured new water opening, not full hull/aperture size. Scale selected from new receiver silhouette, not copied Jungle value."
+      },
+      "uniformScale": 0.31932600735428435,
+      "logicalRegistrationResidualSourcePx": 0.0,
+      "sampledContourDeltaSourcePx": 0.31932600735428435,
+      "registrationUncertaintySourcePx": 0.9579780220628531,
+      "actualQa": false
+    },
+    {
+      "targetId": "receiver-02",
+      "baseInstanceId": "receiver-02-base",
+      "backInstanceId": "receiver-02-back",
+      "frontInstanceId": "receiver-02-front",
+      "baseTextureId": "receiver-02-base-v1",
+      "backTextureId": "receiver-02-rim-back-v1",
+      "frontTextureId": "receiver-02-front-v1",
+      "groundAnchorPx": [
+        627,
+        559.7149517742138
+      ],
+      "opticalOpeningPointPx": [
+        627,
+        500
+      ],
+      "captureFootprintPx": {
+        "depth": 120.0,
+        "width": 230.0,
+        "center": [
+          627,
+          559.7149517742138
+        ],
+        "measurement": "Authored230x120 capture proxy inside measured new water opening, not full hull/aperture size. Scale selected from new receiver silhouette, not copied Jungle value."
+      },
+      "uniformScale": 0.31222006560533594,
+      "logicalRegistrationResidualSourcePx": 0.0,
+      "sampledContourDeltaSourcePx": 0.31222006560533594,
+      "registrationUncertaintySourcePx": 0.9366601968160078,
+      "actualQa": false
+    },
+    {
+      "targetId": "receiver-03",
+      "baseInstanceId": "receiver-03-base",
+      "backInstanceId": "receiver-03-back",
+      "frontInstanceId": "receiver-03-front",
+      "baseTextureId": "receiver-03-base-v1",
+      "backTextureId": "receiver-03-rim-back-v1",
+      "frontTextureId": "receiver-03-front-v1",
+      "groundAnchorPx": [
+        627,
+        558.7574460031103
+      ],
+      "opticalOpeningPointPx": [
+        627,
+        500
+      ],
+      "captureFootprintPx": {
+        "depth": 120.0,
+        "width": 230.0,
+        "center": [
+          627,
+          558.7574460031103
+        ],
+        "measurement": "Authored230x120 capture proxy inside measured new water opening, not full hull/aperture size. Scale selected from new receiver silhouette, not copied Jungle value."
+      },
+      "uniformScale": 0.31706488534263094,
+      "logicalRegistrationResidualSourcePx": 0.0,
+      "sampledContourDeltaSourcePx": 0.31706488534263094,
+      "registrationUncertaintySourcePx": 0.9511946560278928,
+      "actualQa": false
+    },
+    {
+      "targetId": "receiver-04",
+      "baseInstanceId": "receiver-04-base",
+      "backInstanceId": "receiver-04-back",
+      "frontInstanceId": "receiver-04-front",
+      "baseTextureId": "receiver-04-base-v1",
+      "backTextureId": "receiver-04-rim-back-v1",
+      "frontTextureId": "receiver-04-front-v1",
+      "groundAnchorPx": [
+        627,
+        555.4715710194839
+      ],
+      "opticalOpeningPointPx": [
+        627,
+        500
+      ],
+      "captureFootprintPx": {
+        "depth": 120.0,
+        "width": 230.0,
+        "center": [
+          627,
+          555.4715710194839
+        ],
+        "measurement": "Authored230x120 capture proxy inside measured new water opening, not full hull/aperture size. Scale selected from new receiver silhouette, not copied Jungle value."
+      },
+      "uniformScale": 0.33623502318823445,
+      "logicalRegistrationResidualSourcePx": 0.0,
+      "sampledContourDeltaSourcePx": 0.33623502318823445,
+      "registrationUncertaintySourcePx": 1.0087050695647033,
+      "actualQa": false
+    }
+  ],
+  "nativeChanged": false,
+  "policyChanged": false,
+  "actualQa": false
+}

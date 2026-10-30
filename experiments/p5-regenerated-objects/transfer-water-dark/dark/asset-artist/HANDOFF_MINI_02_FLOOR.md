@@ -1,0 +1,9 @@
+# Dark post-d01: floor-only successor
+
+Manifest `asset-manifest.mini-02-floor.json`:49103 bytes/SHA256 `5bad898c270432928a403def12ffbca826a94d76cb83b395708bdf12588e8545`. Сохранённый d01 consumer `aae514ed31720ab6d913f4bc6d63286c26992e0a` и mini01 c14b212e…61d7 не изменены.
+
+Новый native floor-v3:1254²,2636302 bytes/SHA256 `f9474768fe208f8dc4f26fd97714b862ab37f23f23125a2d17778f920233c472`, путь `E:/R4D/perspective/p5-runtime/asset-artist/transfer-water-dark/dark/selected/mini-set-02/floor-v3.png`. Native edit вернул ближнюю кромку к принятому P1 sourceY1121: ручная оценка textureY915±3 при uniform1536/1254 даёт1120.766±3.675sourcepx, nominal residual−0.234. Это линия с толщиной/скосом, не восстановленная точная 3D плоскость. Ниже неё вертикальная стенка без продолжения paving. Верхний frame визуально сохранён, pixel identity с v2 не заявлена.
+
+Итого8 unique PNG/15texture IDs/35instances. Только floor texture/provenance и его textureId/reason заменены. Строгий semantic compare после исключения floor и root floor-notes подтвердил неизменность всех actor textures/instances/receiver policy и остальных данных; hashes остальных7 PNG прежние. Schema/all PNG pins проверены. `FLOOR_CORRECTION.mini-02.json`,SELECTED, provenance и отдельный build script приложены.
+
+Это не Dark receiver repair. По Lead/TQA D01 nuance, перед entry шар закрывает настоящая тёмная внутренняя rear wall, не Water water-layer. Dark base/rim/front требует собственной смысловой alpha-границы и review более раннего approach, чтобы не удалить legitimate solid-wall hide/reveal. Его готовим отдельно после original d01. Actual floor/native motion/occlusion QA на этих bytes ещё нет. Bowls, near variants и wall/near-edge clips остаются работой. Native/core/projection/PRNG/trigger/radii не менялись,serverWrites=0,tokenGranted=false.

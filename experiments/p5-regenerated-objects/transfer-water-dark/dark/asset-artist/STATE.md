@@ -1,5 +1,10 @@
 # Dark Asset Artist
 
+Текущий отдельный mini02 floor-only:49103bytes/SHA5bad898c270432928a403def12ffbca826a94d76cb83b395708bdf12588e8545,8PNG/15IDs/35instances. Ближняя кромка nominal1120.766±3.675sourcepx при accepted1121. Все actors/receiver policy прежние, original d01 сохранён. Actual floor QA pending. Receiver dark rear-wall nuance готовится отдельно; bowls/near profiles/wall clips продолжаются. См. HANDOFF_MINI_02_FLOOR.md.
+
+История:
+# Dark Asset Artist
+
 Current first handoff mini01:47851bytes/SHAc14b212e846f00dd3adf546feba5692bf9bd268002405b711f9157648a1661d7;8PNG/15textureIDs/35instances,12of24obstacle groups and4receivers. Schema/targets/PNG/anchors checked;new Dark cup policy independently matches projected bucket widths. Ten new native outputs retained. Partial: known floorv2near-edge extension aboutsource1260vsaccepted1121,excluded bowl/depth profiles,environment and actual QA remain work. See HANDOFF_MINI_01.md. Old paragraphs below are historical start/checkpoints. Last guard009freeRAM10.317GiB,C13.925/D14.640/E9.534GiB,allowance4RAM2E;no denial or global settings change.
 
 Production started after early Water handoff. Three new native outputs: floorv1(2983206bytes/SHA192c158305df1144af52df75fd150e832cfe5eeac70505380c2f2c320ee73908),floorv2(2795277bytes/SHA99b5afe65b62abbbaaf76a782ed7c82a98e4b4a143db230371bb358df5cc8c74),own ballv1(1913632bytes/SHAe125d94419ad73c2c67461546f704b974021866b21085d32a50b51274da2ac46). Raw/copy/prompt provenance retained. Floorv2 removed duplicate red receiver panels; near-floor boundary still appears below requested acceptedsourceY1121 and needs review/correction before selection. No Dark selected manifest/runtimeQA yet; next separate shadow and representative obstacles. Previous input-only paragraph below is historical start state.
