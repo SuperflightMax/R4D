@@ -48,3 +48,5 @@ P1`4b47db04c7140ebf88f69b91faa0b790d46f22ec`, Water04/**trial02**, configSHA`904
 Fresh build guard23:58UTC RAMfree10.131/31.907GiB,CPU4%/aggregate2.96%,WS27.546GiB/545procs,C13.989/D14.640/E9.660GiB; peak2RAM/.3E+4/2allowance. Browser00:00:06UTC RAM10.329,CPU8%/aggregate10.29%,WS27.130/526procs,C13.987/D14.640/E9.649; peak1.5RAM/.1E+4/2. Outputs/cache/TEMP own E/process-local, global/model/effort/host/foreign settings/PID не менялись; denial0, SSH/Review/server actions0, old Jungle token не reused.
 
 Следующий адресный шаг — независимое VQA закрытие W01-V01 на exact w02. После новых Artist mini — новый candidate с отдельными missing coverage и actual motion checks. W01/w02 не перезаписывать; public delivery только по отдельному concrete CTO token.
+
+Current successor: [HANDOFF_W04.md](HANDOFF_W04.md). W02 stays live unchanged; its exact owner is now archived at E:/R4D/perspective/p5-runtime/builder/transfer-water-dark/water/preview-owners/w02-pid17036.json. Current water/preview-owner.json belongs to w04. Independent W01-V01 closure remains separate.

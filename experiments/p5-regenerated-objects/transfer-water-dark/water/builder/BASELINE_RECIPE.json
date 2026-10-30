@@ -64,6 +64,30 @@
           "sha256": "34eacade52288aa5def0504271ad2573f6b55dc0bdec267c19d43a18981bcad5"
         }
       ]
+    },
+    {
+      "finding": "W03-P01",
+      "kind": "packaging-provenance",
+      "sourceCommit": "48763f47d1e21e32334df3427209181a5a6114de",
+      "description": "Require exact Artist handoff commit/path/bytes/SHA before asset staging; renderer and generation/sorting method unchanged",
+      "methodChanged": false,
+      "sourceFiles": [
+        {
+          "path": "scripts/build.mjs",
+          "bytes": 6708,
+          "sha256": "b35049193df8f8381332f4eacdd8c932945a8bf77957828e8a37199281e22cf6"
+        }
+      ]
     }
-  ]
+  ],
+  "firstWholeArchBaseline": {
+    "candidate": "w04",
+    "consumerCommit": "48763f47d1e21e32334df3427209181a5a6114de",
+    "artistCommit": "541085603e01e23b076fe33ff3c9991822c0bce2",
+    "fileIndexSha256": "c1c983dbddaaf556c5000dc9463df262fdc38444b2826a5883a2800b78b70554",
+    "preservedPackagingPredecessor": "w03",
+    "improvedPartsIntegrated": false,
+    "sortingMethodChanged": false,
+    "status": "Partial baseline; provisional ground-depth residual; W04-B01 and independent QA open"
+  }
 }

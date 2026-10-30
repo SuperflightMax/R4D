@@ -38,5 +38,21 @@
     }
   ],
   "tokenGranted": false,
-  "serverWrites": 0
+  "serverWrites": 0,
+  "ordinaryCorrections": [
+    {
+      "finding": "W03-P01",
+      "kind": "packaging-provenance",
+      "sourceCommit": "48763f47d1e21e32334df3427209181a5a6114de",
+      "description": "Require exact Artist handoff commit/path/bytes/SHA before asset staging; renderer and generation/sorting method unchanged",
+      "methodChanged": false,
+      "sourceFiles": [
+        {
+          "path": "scripts/build.mjs",
+          "bytes": 6708,
+          "sha256": "b35049193df8f8381332f4eacdd8c932945a8bf77957828e8a37199281e22cf6"
+        }
+      ]
+    }
+  ]
 }
