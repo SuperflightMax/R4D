@@ -1,0 +1,997 @@
+{
+  "schema": "r4d.p4.technical-qa.early-review.v1",
+  "date": "2026-10-30",
+  "candidate": "water-starter-original-p4-candidate-01",
+  "disposition": "PARTIAL: native/render bounded PASS; one P3 controls FAIL; receiver-front UNVERIFIED",
+  "builderCommit": "b646d3fe948d2c7e80f0a4a90fed4d318f56f654",
+  "artifactSha256": "ee363d7e8dcaf555fcc06ebe1d42e695834ff003b9d50005b03ef1ada557aaee",
+  "payloadRootSha256": "dee951ddd007ff3313176de1ab9d8dcad7268780beb9987fd4d009b9ff6bc1e9",
+  "artworkRootSha256": "7ea0e79e36a0779d1a800af8127295f6d721cb65d8a4314f155a6783bb367bed",
+  "verification": {
+    "records": 67,
+    "fullStateExact": true,
+    "orderedEventsExact": true,
+    "nativeRebuilt": false,
+    "newOracle": false,
+    "newSeedMatrix": false,
+    "maxActorPlacementDelta": 0,
+    "anchors": {
+      "archDerivedFromEightFootVertices": [
+        33022.48723355064,
+        34755.12349268705
+      ],
+      "frogAndReceiverExact": true
+    },
+    "checkpoint": "PASS",
+    "endIntegrity": {
+      "files": 79,
+      "diskAndHttpArtifact": "PASS"
+    },
+    "heldCommitsAbsentFromQaAncestry": [
+      "b646d3fe948d2c7e80f0a4a90fed4d318f56f654",
+      "7d2344c1a8959f73ff26af5d3aba7dd02eb0e971"
+    ]
+  },
+  "browserLoadedPng": {
+    "textures": 10,
+    "fileAndHttpHashesVerified": true,
+    "dimensionsAndDeclaredHashesMatch": true,
+    "workerResponseHash": "UNVERIFIED; Target.setAutoAttach unsupported; operation stopped"
+  },
+  "layout": {
+    "dpr": 1,
+    "viewport": {
+      "width": 1280,
+      "height": 720
+    },
+    "canvas": [
+      {
+        "width": 840,
+        "height": 590,
+        "clientWidth": 840,
+        "clientHeight": 590
+      }
+    ]
+  },
+  "issues": [
+    {
+      "id": "TQA-WATER-01-01",
+      "priority": 3,
+      "status": "OPEN",
+      "entered": 1009,
+      "firstRead": "70",
+      "beforeClick": "86",
+      "actual": 106,
+      "pausedActual": 1009
+    }
+  ],
+  "notes": [
+    "binding.artStatus stale; outer artifact/UI correct PARTIAL",
+    "Builder seed2771772266 LOST1100 retained as supplied provenance only"
+  ],
+  "alpha": {
+    "method": "0.25 source px bilinear alpha; actual observed actor center/scale; threshold16 for overlap count; weighted fraction is estimate, not renderer readback",
+    "extractedOriginalRgb": [
+      {
+        "file": "arch-07-left-support.png",
+        "nonzeroAlphaPixels": 2773,
+        "rgbMismatches": 0,
+        "partialAlphaPixels": 285
+      },
+      {
+        "file": "arch-07-right-support.png",
+        "nonzeroAlphaPixels": 2504,
+        "rgbMismatches": 0,
+        "partialAlphaPixels": 282
+      },
+      {
+        "file": "arch-07-lintel.png",
+        "nonzeroAlphaPixels": 6922,
+        "rgbMismatches": 0,
+        "partialAlphaPixels": 553
+      },
+      {
+        "file": "frog-01-body.png",
+        "nonzeroAlphaPixels": 8579,
+        "rgbMismatches": 0,
+        "partialAlphaPixels": 656
+      },
+      {
+        "file": "receiver-02-front.png",
+        "nonzeroAlphaPixels": 43125,
+        "rgbMismatches": 0,
+        "partialAlphaPixels": 3020
+      }
+    ],
+    "openingAtSource514_953": {
+      "arch-07:left-support": 0,
+      "arch-07:right-support": 0,
+      "arch-07:lintel": 0
+    },
+    "poses": [
+      {
+        "record": "04-arch-1005",
+        "tick": 1005,
+        "sourceCenter": [
+          493.2180508862635,
+          934.3915243836116
+        ],
+        "radius": 17.409366849262508,
+        "silhouetteOverlapSamples": 11828,
+        "alphaWeightedOverlapFraction": 0.7426895688800822,
+        "partsAheadOfBall": true,
+        "estimatedHiddenFraction": 0.7426895688800822
+      },
+      {
+        "record": "05-arch-1008",
+        "tick": 1008,
+        "sourceCenter": [
+          500.81115577208186,
+          942.9756360860682
+        ],
+        "radius": 17.451907366213668,
+        "silhouetteOverlapSamples": 5832,
+        "alphaWeightedOverlapFraction": 0.3438196197230836,
+        "partsAheadOfBall": true,
+        "estimatedHiddenFraction": 0.3438196197230836
+      },
+      {
+        "record": "05-arch-1009",
+        "tick": 1009,
+        "sourceCenter": [
+          506.1187540643001,
+          945.1469030222695
+        ],
+        "radius": 17.462667573105964,
+        "silhouetteOverlapSamples": 3231,
+        "alphaWeightedOverlapFraction": 0.17797570124749387,
+        "partsAheadOfBall": true,
+        "estimatedHiddenFraction": 0.17797570124749387
+      },
+      {
+        "record": "05-arch-1013",
+        "tick": 1013,
+        "sourceCenter": [
+          525.7743519532706,
+          953.982935564755
+        ],
+        "radius": 17.50645654104856,
+        "silhouetteOverlapSamples": 711,
+        "alphaWeightedOverlapFraction": 0.02410353122519107,
+        "partsAheadOfBall": true,
+        "estimatedHiddenFraction": 0.02410353122519107
+      },
+      {
+        "record": "05-arch-1014",
+        "tick": 1014,
+        "sourceCenter": [
+          521.025122253009,
+          956.1204667979403
+        ],
+        "radius": 17.51704956299549,
+        "silhouetteOverlapSamples": 0,
+        "alphaWeightedOverlapFraction": 4.031638837949304e-7,
+        "partsAheadOfBall": true,
+        "estimatedHiddenFraction": 4.031638837949304e-7
+      },
+      {
+        "record": "05-arch-1015",
+        "tick": 1015,
+        "sourceCenter": [
+          516.2692108269155,
+          958.2736643261883
+        ],
+        "radius": 17.527720222828993,
+        "silhouetteOverlapSamples": 0,
+        "alphaWeightedOverlapFraction": 1.34349135272946e-9,
+        "partsAheadOfBall": false,
+        "estimatedHiddenFraction": 0
+      },
+      {
+        "record": "05-arch-1020",
+        "tick": 1020,
+        "sourceCenter": [
+          503.69002317766336,
+          968.8197238768474
+        ],
+        "radius": 17.57998361834776,
+        "silhouetteOverlapSamples": 0,
+        "alphaWeightedOverlapFraction": 0,
+        "partsAheadOfBall": false,
+        "estimatedHiddenFraction": 0
+      },
+      {
+        "record": "05-arch-1021",
+        "tick": 1021,
+        "sourceCenter": [
+          508.00197421210436,
+          970.694681606193
+        ],
+        "radius": 17.589275397606073,
+        "silhouetteOverlapSamples": 0,
+        "alphaWeightedOverlapFraction": 0,
+        "partsAheadOfBall": false,
+        "estimatedHiddenFraction": 0
+      },
+      {
+        "record": "28-receiver-1273-zoom",
+        "tick": 1273,
+        "sourceCenter": [
+          528.3574729543121,
+          1181.4810409725203
+        ],
+        "radius": 18.633875119104513,
+        "silhouetteOverlapSamples": 0,
+        "alphaWeightedOverlapFraction": 0,
+        "partsAheadOfBall": true,
+        "estimatedHiddenFraction": 0
+      },
+      {
+        "record": "29-receiver-1274-zoom",
+        "tick": 1274,
+        "sourceCenter": [
+          532.0154587664337,
+          1184.0973510162823
+        ],
+        "radius": 18.6468408382871,
+        "silhouetteOverlapSamples": 0,
+        "alphaWeightedOverlapFraction": 0,
+        "partsAheadOfBall": true,
+        "estimatedHiddenFraction": 0
+      },
+      {
+        "record": "30-receiver-1275-zoom",
+        "tick": 1275,
+        "sourceCenter": [
+          535.6776241569643,
+          1186.7321265101318
+        ],
+        "radius": 18.65989806720534,
+        "silhouetteOverlapSamples": 0,
+        "alphaWeightedOverlapFraction": 0,
+        "partsAheadOfBall": true,
+        "estimatedHiddenFraction": 0
+      }
+    ]
+  },
+  "consoleWarnErrors": [],
+  "observations": [
+    {
+      "file": "00-load.dom.json",
+      "seed": 0,
+      "tick": 0,
+      "eventCount": 2,
+      "state": "PASS",
+      "events": "PASS",
+      "rawFileSha256": "71ff4fd2d7569a4473f0b927ddc9009395bbbb8012b0923918fd473739cab651",
+      "stateTextSha256": "56898ad1a842f5ca680dc80344b9e58fa1860c1d3fcc817129d75780aa9500e9",
+      "eventsTextSha256": "34f1c39a57aff44c1e65c862608905c59af1ddfb11f64dfbd447ba59b4c1a5ac"
+    },
+    {
+      "file": "01-import-1009.dom.json",
+      "seed": 1,
+      "tick": 1009,
+      "eventCount": 9,
+      "state": "PASS",
+      "events": "PASS",
+      "rawFileSha256": "9fcfd653d27f592e5194ead93f3fcf239be160997b984ed84efe32e60e1c5e92",
+      "stateTextSha256": "91fabeeec1c53f0396e09eb1c2bc2046a9b1f4ccb95ee388386097158877750d",
+      "eventsTextSha256": "d8c90f70d663398a1caf951a1d308367761b485362224c238b2fc8746b1ff99d"
+    },
+    {
+      "file": "02-step-1010.dom.json",
+      "seed": 1,
+      "tick": 1010,
+      "eventCount": 9,
+      "state": "PASS",
+      "events": "PASS",
+      "rawFileSha256": "06027b008cca3774092f4dea880a6ede382ad68fd521a9dfbf214f76753dae74",
+      "stateTextSha256": "0d70c9183503057e65bdeceac1ea95c13eceb627fa2472ff30362f5acd1c4057",
+      "eventsTextSha256": "d8c90f70d663398a1caf951a1d308367761b485362224c238b2fc8746b1ff99d"
+    },
+    {
+      "file": "03-steps-1013.dom.json",
+      "seed": 1,
+      "tick": 1013,
+      "eventCount": 10,
+      "state": "PASS",
+      "events": "PASS",
+      "rawFileSha256": "40d1a5eccd74c0e31cd0271cf6f9bddb401bb5d238b1b26a6324debd61093fa6",
+      "stateTextSha256": "894efb24c3383c9e4a3fa68de87f87103fec2f53e942380d971b076e2d5e8fc4",
+      "eventsTextSha256": "11a52cbc83b8d7871ff4f3c1a7dab6d62424baba73ed539b0cdc40f1001c30c8"
+    },
+    {
+      "file": "04-arch-1005.dom.json",
+      "seed": 1,
+      "tick": 1005,
+      "eventCount": 8,
+      "state": "PASS",
+      "events": "PASS",
+      "rawFileSha256": "6b0826953268e7ad3b5eeb9a156dc520ffee8c9421887a6dc5e995cc9b31b64c",
+      "stateTextSha256": "3651eca67adf94b41b4e2d6cc22cd48db764443f623c2efb4263504399f833f8",
+      "eventsTextSha256": "f4b6b0e56e7f93a50cc740e9f570f2ad56b02766026197651e92af1777cef5b3"
+    },
+    {
+      "file": "05-arch-1006.dom.json",
+      "seed": 1,
+      "tick": 1006,
+      "eventCount": 8,
+      "state": "PASS",
+      "events": "PASS",
+      "rawFileSha256": "f21cd61e19411ee23d71fff4542c2facd5fa4fcd895b1804f6a49bbfcb517f65",
+      "stateTextSha256": "67a806f6d09ada48dda6068a948eb437f0b3247aa14c34b3f6b8836bfd795119",
+      "eventsTextSha256": "f4b6b0e56e7f93a50cc740e9f570f2ad56b02766026197651e92af1777cef5b3"
+    },
+    {
+      "file": "05-arch-1007.dom.json",
+      "seed": 1,
+      "tick": 1007,
+      "eventCount": 9,
+      "state": "PASS",
+      "events": "PASS",
+      "rawFileSha256": "3c0418a660e62de6b316954329733948000c19a8b7fda2ebb30c0e7d84d17f44",
+      "stateTextSha256": "a9e6913060d51b7dfbb95060fcbeb972a200882e03075e774d2ebbcf775c7d49",
+      "eventsTextSha256": "d8c90f70d663398a1caf951a1d308367761b485362224c238b2fc8746b1ff99d"
+    },
+    {
+      "file": "05-arch-1008.dom.json",
+      "seed": 1,
+      "tick": 1008,
+      "eventCount": 9,
+      "state": "PASS",
+      "events": "PASS",
+      "rawFileSha256": "0a8310400448f88281fca5ed632c602f80b1dddf08797f8165c425792100f9c3",
+      "stateTextSha256": "158262213ab6c9f9a8fd90c703d306c2606b11b563aa99b7744729e25c0f649d",
+      "eventsTextSha256": "d8c90f70d663398a1caf951a1d308367761b485362224c238b2fc8746b1ff99d"
+    },
+    {
+      "file": "05-arch-1009.dom.json",
+      "seed": 1,
+      "tick": 1009,
+      "eventCount": 9,
+      "state": "PASS",
+      "events": "PASS",
+      "rawFileSha256": "9fcfd653d27f592e5194ead93f3fcf239be160997b984ed84efe32e60e1c5e92",
+      "stateTextSha256": "91fabeeec1c53f0396e09eb1c2bc2046a9b1f4ccb95ee388386097158877750d",
+      "eventsTextSha256": "d8c90f70d663398a1caf951a1d308367761b485362224c238b2fc8746b1ff99d"
+    },
+    {
+      "file": "05-arch-1010.dom.json",
+      "seed": 1,
+      "tick": 1010,
+      "eventCount": 9,
+      "state": "PASS",
+      "events": "PASS",
+      "rawFileSha256": "06027b008cca3774092f4dea880a6ede382ad68fd521a9dfbf214f76753dae74",
+      "stateTextSha256": "0d70c9183503057e65bdeceac1ea95c13eceb627fa2472ff30362f5acd1c4057",
+      "eventsTextSha256": "d8c90f70d663398a1caf951a1d308367761b485362224c238b2fc8746b1ff99d"
+    },
+    {
+      "file": "05-arch-1011.dom.json",
+      "seed": 1,
+      "tick": 1011,
+      "eventCount": 9,
+      "state": "PASS",
+      "events": "PASS",
+      "rawFileSha256": "cfb8bdebb490be70eabe502ae7fad68e442d3423ef0182e4c5efea3fd1a083bf",
+      "stateTextSha256": "26e96082c52d381c7fa1fbe0b50ca3cd67fbed724f9c2fb966957c013db9b9ff",
+      "eventsTextSha256": "d8c90f70d663398a1caf951a1d308367761b485362224c238b2fc8746b1ff99d"
+    },
+    {
+      "file": "05-arch-1012.dom.json",
+      "seed": 1,
+      "tick": 1012,
+      "eventCount": 9,
+      "state": "PASS",
+      "events": "PASS",
+      "rawFileSha256": "06b2fdf1d3e3f9ba590144899fc0ddad1a74364f534c0d9e12dcba827639c926",
+      "stateTextSha256": "afcb19976b9d66f7f03b810f78da642f944a0d02009593c0187ac4edc83b1280",
+      "eventsTextSha256": "d8c90f70d663398a1caf951a1d308367761b485362224c238b2fc8746b1ff99d"
+    },
+    {
+      "file": "05-arch-1013.dom.json",
+      "seed": 1,
+      "tick": 1013,
+      "eventCount": 10,
+      "state": "PASS",
+      "events": "PASS",
+      "rawFileSha256": "40d1a5eccd74c0e31cd0271cf6f9bddb401bb5d238b1b26a6324debd61093fa6",
+      "stateTextSha256": "894efb24c3383c9e4a3fa68de87f87103fec2f53e942380d971b076e2d5e8fc4",
+      "eventsTextSha256": "11a52cbc83b8d7871ff4f3c1a7dab6d62424baba73ed539b0cdc40f1001c30c8"
+    },
+    {
+      "file": "05-arch-1014.dom.json",
+      "seed": 1,
+      "tick": 1014,
+      "eventCount": 10,
+      "state": "PASS",
+      "events": "PASS",
+      "rawFileSha256": "5b49ac7fd47e2052de38f9e747449b9f9b87d7891b978d34ce186126cb343c3a",
+      "stateTextSha256": "9231b3eeb89bdd2571e2c5606dc206bed40b69a3f2fe2f8414578a091f06c022",
+      "eventsTextSha256": "11a52cbc83b8d7871ff4f3c1a7dab6d62424baba73ed539b0cdc40f1001c30c8"
+    },
+    {
+      "file": "05-arch-1015.dom.json",
+      "seed": 1,
+      "tick": 1015,
+      "eventCount": 10,
+      "state": "PASS",
+      "events": "PASS",
+      "rawFileSha256": "6b9ca11cc787bb509ac339147c9e722fe396c14e256bb556179d18d8a51471c1",
+      "stateTextSha256": "c6c0bd72a3ac6402f4386438028d2b5d5160bb2c1ef3bb25118e9daa69b5a3fe",
+      "eventsTextSha256": "11a52cbc83b8d7871ff4f3c1a7dab6d62424baba73ed539b0cdc40f1001c30c8"
+    },
+    {
+      "file": "05-arch-1016.dom.json",
+      "seed": 1,
+      "tick": 1016,
+      "eventCount": 10,
+      "state": "PASS",
+      "events": "PASS",
+      "rawFileSha256": "70a9a03f8f8cc27fd6f04c11a5ffa2bf97514f4d23f658661ce26913227fd5bd",
+      "stateTextSha256": "4e4d486bb8d317687ee9e5e2eb7e7e0e0329c1d823866b7ed694ca958c2cde28",
+      "eventsTextSha256": "11a52cbc83b8d7871ff4f3c1a7dab6d62424baba73ed539b0cdc40f1001c30c8"
+    },
+    {
+      "file": "05-arch-1017.dom.json",
+      "seed": 1,
+      "tick": 1017,
+      "eventCount": 10,
+      "state": "PASS",
+      "events": "PASS",
+      "rawFileSha256": "f9ae2b022517a3fc580a4c7e8866c3441c454d9f3864c2b33c8c180f99cddb01",
+      "stateTextSha256": "0bf05c6a7bcc139d7887deebd43cb57fcf8d70a61eb4d938ee4cb1faac4728e6",
+      "eventsTextSha256": "11a52cbc83b8d7871ff4f3c1a7dab6d62424baba73ed539b0cdc40f1001c30c8"
+    },
+    {
+      "file": "05-arch-1018.dom.json",
+      "seed": 1,
+      "tick": 1018,
+      "eventCount": 10,
+      "state": "PASS",
+      "events": "PASS",
+      "rawFileSha256": "262f12a94593271a451ac47b861b31b77aa3da679f9d9bbc6373f026d6771a99",
+      "stateTextSha256": "d8fdc44899686f125ec664ced0da56cbea1676a9670f9da435c15e9c283ad2b5",
+      "eventsTextSha256": "11a52cbc83b8d7871ff4f3c1a7dab6d62424baba73ed539b0cdc40f1001c30c8"
+    },
+    {
+      "file": "05-arch-1019.dom.json",
+      "seed": 1,
+      "tick": 1019,
+      "eventCount": 11,
+      "state": "PASS",
+      "events": "PASS",
+      "rawFileSha256": "ce6e0bb07b99f54de57596b559ce54239515d6b4a46450e07c538837ddf804c8",
+      "stateTextSha256": "c11b35acad13df682f517f1957a595d25b38cf7d08af8266d13786fce112fdac",
+      "eventsTextSha256": "068c18af1ddc8c79d51b7afff844a7b2821bdcfaa469eff67bacf72d73afc37a"
+    },
+    {
+      "file": "05-arch-1020.dom.json",
+      "seed": 1,
+      "tick": 1020,
+      "eventCount": 11,
+      "state": "PASS",
+      "events": "PASS",
+      "rawFileSha256": "7df51e8ed42c637554f51747043765152423381628ab38630a6644e3f6cfa704",
+      "stateTextSha256": "331ed64beff9cde2619673f71068db8b04dbe8cdb0dfee6b8a0abc8ef46f646b",
+      "eventsTextSha256": "068c18af1ddc8c79d51b7afff844a7b2821bdcfaa469eff67bacf72d73afc37a"
+    },
+    {
+      "file": "05-arch-1021.dom.json",
+      "seed": 1,
+      "tick": 1021,
+      "eventCount": 11,
+      "state": "PASS",
+      "events": "PASS",
+      "rawFileSha256": "9d63f94a7c8d35daed46db800b1b9df19b8135b05ea214a3685cf6b3df9fcc60",
+      "stateTextSha256": "8edc6da5ff37fe7f1727121218c754b2903efe3ba159eb5a02e2aec235ad50f5",
+      "eventsTextSha256": "068c18af1ddc8c79d51b7afff844a7b2821bdcfaa469eff67bacf72d73afc37a"
+    },
+    {
+      "file": "06-export-base.dom.json",
+      "seed": 1,
+      "tick": 1009,
+      "eventCount": 9,
+      "state": "PASS",
+      "events": "PASS",
+      "rawFileSha256": "9fcfd653d27f592e5194ead93f3fcf239be160997b984ed84efe32e60e1c5e92",
+      "stateTextSha256": "91fabeeec1c53f0396e09eb1c2bc2046a9b1f4ccb95ee388386097158877750d",
+      "eventsTextSha256": "d8c90f70d663398a1caf951a1d308367761b485362224c238b2fc8746b1ff99d"
+    },
+    {
+      "file": "07-zoom-follow-1009.dom.json",
+      "seed": 1,
+      "tick": 1009,
+      "eventCount": 9,
+      "state": "PASS",
+      "events": "PASS",
+      "rawFileSha256": "28edd135446c2d70e5821ba898912dc3aa9a9cd83dfedebc075d5b0f6c3f7ff6",
+      "stateTextSha256": "91fabeeec1c53f0396e09eb1c2bc2046a9b1f4ccb95ee388386097158877750d",
+      "eventsTextSha256": "d8c90f70d663398a1caf951a1d308367761b485362224c238b2fc8746b1ff99d"
+    },
+    {
+      "file": "08-art-geometry-1009.dom.json",
+      "seed": 1,
+      "tick": 1009,
+      "eventCount": 9,
+      "state": "PASS",
+      "events": "PASS",
+      "rawFileSha256": "28edd135446c2d70e5821ba898912dc3aa9a9cd83dfedebc075d5b0f6c3f7ff6",
+      "stateTextSha256": "91fabeeec1c53f0396e09eb1c2bc2046a9b1f4ccb95ee388386097158877750d",
+      "eventsTextSha256": "d8c90f70d663398a1caf951a1d308367761b485362224c238b2fc8746b1ff99d"
+    },
+    {
+      "file": "09-geometry-only-1009.dom.json",
+      "seed": 1,
+      "tick": 1009,
+      "eventCount": 9,
+      "state": "PASS",
+      "events": "PASS",
+      "rawFileSha256": "935a5f88683a01d0d06b9cc3b04296edbd0e6453d567434fd66464a6fb8ab92e",
+      "stateTextSha256": "91fabeeec1c53f0396e09eb1c2bc2046a9b1f4ccb95ee388386097158877750d",
+      "eventsTextSha256": "d8c90f70d663398a1caf951a1d308367761b485362224c238b2fc8746b1ff99d"
+    },
+    {
+      "file": "10-parts-off-art-off-1009.dom.json",
+      "seed": 1,
+      "tick": 1009,
+      "eventCount": 9,
+      "state": "PASS",
+      "events": "PASS",
+      "rawFileSha256": "935a5f88683a01d0d06b9cc3b04296edbd0e6453d567434fd66464a6fb8ab92e",
+      "stateTextSha256": "91fabeeec1c53f0396e09eb1c2bc2046a9b1f4ccb95ee388386097158877750d",
+      "eventsTextSha256": "d8c90f70d663398a1caf951a1d308367761b485362224c238b2fc8746b1ff99d"
+    },
+    {
+      "file": "11-parts-off-1009.dom.json",
+      "seed": 1,
+      "tick": 1009,
+      "eventCount": 9,
+      "state": "PASS",
+      "events": "PASS",
+      "rawFileSha256": "28edd135446c2d70e5821ba898912dc3aa9a9cd83dfedebc075d5b0f6c3f7ff6",
+      "stateTextSha256": "91fabeeec1c53f0396e09eb1c2bc2046a9b1f4ccb95ee388386097158877750d",
+      "eventsTextSha256": "d8c90f70d663398a1caf951a1d308367761b485362224c238b2fc8746b1ff99d"
+    },
+    {
+      "file": "12-native-view-1009.dom.json",
+      "seed": 1,
+      "tick": 1009,
+      "eventCount": 9,
+      "state": "PASS",
+      "events": "PASS",
+      "rawFileSha256": "c50f063703a706f50f0b52e3970895ea524d319ebb932da7ce0ef7b42c207327",
+      "stateTextSha256": "91fabeeec1c53f0396e09eb1c2bc2046a9b1f4ccb95ee388386097158877750d",
+      "eventsTextSha256": "d8c90f70d663398a1caf951a1d308367761b485362224c238b2fc8746b1ff99d"
+    },
+    {
+      "file": "13-native-playing.dom.json",
+      "seed": 1,
+      "tick": 1072,
+      "eventCount": 11,
+      "state": "PASS",
+      "events": "PASS",
+      "rawFileSha256": "f452d26ae9ca926dea84122ce59fe079b51e3cf35e5f636981d3c658368d0c4c",
+      "stateTextSha256": "414620b21e1e723e390e4e20dd5eb21ca3f21e0cd431e234097f967ba40dd94d",
+      "eventsTextSha256": "068c18af1ddc8c79d51b7afff844a7b2821bdcfaa469eff67bacf72d73afc37a"
+    },
+    {
+      "file": "14-native-paused.dom.json",
+      "seed": 1,
+      "tick": 1088,
+      "eventCount": 11,
+      "state": "PASS",
+      "events": "PASS",
+      "rawFileSha256": "81f32c7597d8b1281ddacb2933fecff41afa18e4d15411ffc3bef31d37e4e6c7",
+      "stateTextSha256": "dc48893a7c19515ff02163df787f37b49cc4f232930d73a8616148bdc435c358",
+      "eventsTextSha256": "068c18af1ddc8c79d51b7afff844a7b2821bdcfaa469eff67bacf72d73afc37a"
+    },
+    {
+      "file": "15-same-file-reimport.dom.json",
+      "seed": 1,
+      "tick": 1009,
+      "eventCount": 9,
+      "state": "PASS",
+      "events": "PASS",
+      "rawFileSha256": "c50f063703a706f50f0b52e3970895ea524d319ebb932da7ce0ef7b42c207327",
+      "stateTextSha256": "91fabeeec1c53f0396e09eb1c2bc2046a9b1f4ccb95ee388386097158877750d",
+      "eventsTextSha256": "d8c90f70d663398a1caf951a1d308367761b485362224c238b2fc8746b1ff99d"
+    },
+    {
+      "file": "16-source-playing.dom.json",
+      "seed": 1,
+      "tick": 1072,
+      "eventCount": 11,
+      "state": "PASS",
+      "events": "PASS",
+      "rawFileSha256": "4c6cac78c07540e890f0786a43b388e67d789ecc2b38bd9107b5f50d38975ada",
+      "stateTextSha256": "414620b21e1e723e390e4e20dd5eb21ca3f21e0cd431e234097f967ba40dd94d",
+      "eventsTextSha256": "068c18af1ddc8c79d51b7afff844a7b2821bdcfaa469eff67bacf72d73afc37a"
+    },
+    {
+      "file": "17-source-paused.dom.json",
+      "seed": 1,
+      "tick": 1085,
+      "eventCount": 11,
+      "state": "PASS",
+      "events": "PASS",
+      "rawFileSha256": "cdaa963ebd7218838c373a76e37bf23a389d4a6cb6eab168b2cd45734ee677f9",
+      "stateTextSha256": "6cf1392de972f4a0d74f6c47cfc39bf87d9d9d77233545bb9cc6f210c803c367",
+      "eventsTextSha256": "068c18af1ddc8c79d51b7afff844a7b2821bdcfaa469eff67bacf72d73afc37a"
+    },
+    {
+      "file": "18-source-resumed.dom.json",
+      "seed": 1,
+      "tick": 1148,
+      "eventCount": 11,
+      "state": "PASS",
+      "events": "PASS",
+      "rawFileSha256": "1063d66d8716402428dd30ad613cc597f76105344cfbe3eab14f814717c1f63b",
+      "stateTextSha256": "53380212ff9c1a1c1e5c96c866ed7006553bf8ad829f251a18679d2171f047e3",
+      "eventsTextSha256": "068c18af1ddc8c79d51b7afff844a7b2821bdcfaa469eff67bacf72d73afc37a"
+    },
+    {
+      "file": "19-source-paused-again.dom.json",
+      "seed": 1,
+      "tick": 1165,
+      "eventCount": 11,
+      "state": "PASS",
+      "events": "PASS",
+      "rawFileSha256": "5ed64f6724a0acea4ee12f1e307f6c5c4b3ccbcad3797d6c1b7feaa99ae313e8",
+      "stateTextSha256": "b9702b842f49e336cfc1d9935fbc11c7e5210e32023b81a60f145f30d280a4f6",
+      "eventsTextSha256": "068c18af1ddc8c79d51b7afff844a7b2821bdcfaa469eff67bacf72d73afc37a"
+    },
+    {
+      "file": "20-pause-stability.dom.json",
+      "seed": 1,
+      "tick": 1165,
+      "eventCount": 11,
+      "state": "PASS",
+      "events": "PASS",
+      "rawFileSha256": "5ed64f6724a0acea4ee12f1e307f6c5c4b3ccbcad3797d6c1b7feaa99ae313e8",
+      "stateTextSha256": "b9702b842f49e336cfc1d9935fbc11c7e5210e32023b81a60f145f30d280a4f6",
+      "eventsTextSha256": "068c18af1ddc8c79d51b7afff844a7b2821bdcfaa469eff67bacf72d73afc37a"
+    },
+    {
+      "file": "21-seed1-full-LOST.dom.json",
+      "seed": 1,
+      "tick": 1196,
+      "eventCount": 13,
+      "state": "PASS",
+      "events": "PASS",
+      "rawFileSha256": "709784d719ddc0f0380c57c231268da6211592079823c9feda83ebb0d2a06ef0",
+      "stateTextSha256": "577ad66fa3aaa2e4a6331238401559a6cb7df4a25f202e4a1a18ce8e9ed83a91",
+      "eventsTextSha256": "060bcae2ff99c46f38a74956e9262d9b3d3cdd9a769db85d834fcaa4d0bf6390"
+    },
+    {
+      "file": "22-seed1-done-step.dom.json",
+      "seed": 1,
+      "tick": 1196,
+      "eventCount": 13,
+      "state": "PASS",
+      "events": "PASS",
+      "rawFileSha256": "709784d719ddc0f0380c57c231268da6211592079823c9feda83ebb0d2a06ef0",
+      "stateTextSha256": "577ad66fa3aaa2e4a6331238401559a6cb7df4a25f202e4a1a18ce8e9ed83a91",
+      "eventsTextSha256": "060bcae2ff99c46f38a74956e9262d9b3d3cdd9a769db85d834fcaa4d0bf6390"
+    },
+    {
+      "file": "23-replay-t0.dom.json",
+      "seed": 1,
+      "tick": 60,
+      "eventCount": 2,
+      "state": "PASS",
+      "events": "PASS",
+      "rawFileSha256": "dde12789479157bbe8fe77710772a251666f7364b941adcfd81b683fc68bb4ec",
+      "stateTextSha256": "ec93f893e23597c3658bf3ff008d56ea52addef7c1ba938e3d5f32d48942d132",
+      "eventsTextSha256": "34f1c39a57aff44c1e65c862608905c59af1ddfb11f64dfbd447ba59b4c1a5ac"
+    },
+    {
+      "file": "24-replay-seek-1009.dom.json",
+      "seed": 1,
+      "tick": 80,
+      "eventCount": 2,
+      "state": "PASS",
+      "events": "PASS",
+      "rawFileSha256": "9aa3712c1863584a924ea2e9020c93ddb03440155f0dc7e48b8b200116aafa4a",
+      "stateTextSha256": "218c1446620b440c4498b47badecb4091f93a9b8ad1796562bdfcea849fe7964",
+      "eventsTextSha256": "34f1c39a57aff44c1e65c862608905c59af1ddfb11f64dfbd447ba59b4c1a5ac"
+    },
+    {
+      "file": "25-zoom-arch-1005.dom.json",
+      "seed": 1,
+      "tick": 1005,
+      "eventCount": 8,
+      "state": "PASS",
+      "events": "PASS",
+      "rawFileSha256": "5743bbfda94a8031d34fd270fe0e01a5be47328ed2b9f45900224e01640d1e6f",
+      "stateTextSha256": "3651eca67adf94b41b4e2d6cc22cd48db764443f623c2efb4263504399f833f8",
+      "eventsTextSha256": "f4b6b0e56e7f93a50cc740e9f570f2ad56b02766026197651e92af1777cef5b3"
+    },
+    {
+      "file": "25-zoom-arch-1008.dom.json",
+      "seed": 1,
+      "tick": 1008,
+      "eventCount": 9,
+      "state": "PASS",
+      "events": "PASS",
+      "rawFileSha256": "111ab85882c8a07b70987f8cfc08b3d2f3cbc55e6e52f36fb1577c54343ca482",
+      "stateTextSha256": "158262213ab6c9f9a8fd90c703d306c2606b11b563aa99b7744729e25c0f649d",
+      "eventsTextSha256": "d8c90f70d663398a1caf951a1d308367761b485362224c238b2fc8746b1ff99d"
+    },
+    {
+      "file": "25-zoom-arch-1013.dom.json",
+      "seed": 1,
+      "tick": 1013,
+      "eventCount": 10,
+      "state": "PASS",
+      "events": "PASS",
+      "rawFileSha256": "c5f59a0eeae52a987ee5756e994467ace9c6383cb71b4452599437aac66c19c7",
+      "stateTextSha256": "894efb24c3383c9e4a3fa68de87f87103fec2f53e942380d971b076e2d5e8fc4",
+      "eventsTextSha256": "11a52cbc83b8d7871ff4f3c1a7dab6d62424baba73ed539b0cdc40f1001c30c8"
+    },
+    {
+      "file": "25-zoom-arch-1014.dom.json",
+      "seed": 1,
+      "tick": 1014,
+      "eventCount": 10,
+      "state": "PASS",
+      "events": "PASS",
+      "rawFileSha256": "34bb491e081bcbcdee758211380f5a9c941507495929495220258fee3ee5f222",
+      "stateTextSha256": "9231b3eeb89bdd2571e2c5606dc206bed40b69a3f2fe2f8414578a091f06c022",
+      "eventsTextSha256": "11a52cbc83b8d7871ff4f3c1a7dab6d62424baba73ed539b0cdc40f1001c30c8"
+    },
+    {
+      "file": "25-zoom-arch-1015.dom.json",
+      "seed": 1,
+      "tick": 1015,
+      "eventCount": 10,
+      "state": "PASS",
+      "events": "PASS",
+      "rawFileSha256": "6db438897989e4e9c845464f4c4f7b1bd84845d7a784a8d2cf1a16aaf448a647",
+      "stateTextSha256": "c6c0bd72a3ac6402f4386438028d2b5d5160bb2c1ef3bb25118e9daa69b5a3fe",
+      "eventsTextSha256": "11a52cbc83b8d7871ff4f3c1a7dab6d62424baba73ed539b0cdc40f1001c30c8"
+    },
+    {
+      "file": "25-zoom-arch-1020.dom.json",
+      "seed": 1,
+      "tick": 1020,
+      "eventCount": 11,
+      "state": "PASS",
+      "events": "PASS",
+      "rawFileSha256": "8ff091daaf9b1684bd3c9a6680aca24ad8eb6143ae6b9b9ec99584cca50ae2d6",
+      "stateTextSha256": "331ed64beff9cde2619673f71068db8b04dbe8cdb0dfee6b8a0abc8ef46f646b",
+      "eventsTextSha256": "068c18af1ddc8c79d51b7afff844a7b2821bdcfaa469eff67bacf72d73afc37a"
+    },
+    {
+      "file": "25-zoom-arch-1021.dom.json",
+      "seed": 1,
+      "tick": 1021,
+      "eventCount": 11,
+      "state": "PASS",
+      "events": "PASS",
+      "rawFileSha256": "cd92405737d23a0336731d712ec0cff18d3cc72d665479a1bef3bd89a2d0cdeb",
+      "stateTextSha256": "8edc6da5ff37fe7f1727121218c754b2903efe3ba159eb5a02e2aec235ad50f5",
+      "eventsTextSha256": "068c18af1ddc8c79d51b7afff844a7b2821bdcfaa469eff67bacf72d73afc37a"
+    },
+    {
+      "file": "26-replay-paused-seek-1009.dom.json",
+      "seed": 1,
+      "tick": 1009,
+      "eventCount": 9,
+      "state": "PASS",
+      "events": "PASS",
+      "rawFileSha256": "ae112fff14ca3848294ddc8eddb59f7f4459e30669c40fe411a9c5f96f31f940",
+      "stateTextSha256": "91fabeeec1c53f0396e09eb1c2bc2046a9b1f4ccb95ee388386097158877750d",
+      "eventsTextSha256": "d8c90f70d663398a1caf951a1d308367761b485362224c238b2fc8746b1ff99d"
+    },
+    {
+      "file": "27-import-receiver-1273.dom.json",
+      "seed": 2,
+      "tick": 1273,
+      "eventCount": 17,
+      "state": "PASS",
+      "events": "PASS",
+      "rawFileSha256": "562ea7feac5ad614817d4002062557e690986c1c599d9f583e90ce512477da9f",
+      "stateTextSha256": "94c8f9b910529c9e2e3f5549de8b5f73cea8d94e376321f35704804bdded164d",
+      "eventsTextSha256": "73a5572b0500f1f4bca8e75f72f5faa86e97a34ace30bbe38b14c1b08b2f64fc"
+    },
+    {
+      "file": "28-receiver-1273-zoom.dom.json",
+      "seed": 2,
+      "tick": 1273,
+      "eventCount": 17,
+      "state": "PASS",
+      "events": "PASS",
+      "rawFileSha256": "562ea7feac5ad614817d4002062557e690986c1c599d9f583e90ce512477da9f",
+      "stateTextSha256": "94c8f9b910529c9e2e3f5549de8b5f73cea8d94e376321f35704804bdded164d",
+      "eventsTextSha256": "73a5572b0500f1f4bca8e75f72f5faa86e97a34ace30bbe38b14c1b08b2f64fc"
+    },
+    {
+      "file": "29-receiver-1274-zoom.dom.json",
+      "seed": 2,
+      "tick": 1274,
+      "eventCount": 17,
+      "state": "PASS",
+      "events": "PASS",
+      "rawFileSha256": "6fa93f65548aefad1b9cfa8d3df7410eb87b9ffc79cd42cc11c8e0ce6346937a",
+      "stateTextSha256": "23875ced9c6274881ec49c1b6029e0e8b2a6e7aba721996ae94ea494876999af",
+      "eventsTextSha256": "73a5572b0500f1f4bca8e75f72f5faa86e97a34ace30bbe38b14c1b08b2f64fc"
+    },
+    {
+      "file": "30-receiver-1275-zoom.dom.json",
+      "seed": 2,
+      "tick": 1275,
+      "eventCount": 20,
+      "state": "PASS",
+      "events": "PASS",
+      "rawFileSha256": "63caf6324e280530bd130b7f542210aa9490446b8a43f0b6e7e2126a54444a76",
+      "stateTextSha256": "4e58a8b6b557cf0cef97a11adccd812fd009a1e89c624235c14ec3b29d03a5c0",
+      "eventsTextSha256": "c39e49f1717e5c7cde0020cecdcea841b9a180416a296961827ce2abaaf8a6c4"
+    },
+    {
+      "file": "31-capture-done-plus100.dom.json",
+      "seed": 2,
+      "tick": 1275,
+      "eventCount": 20,
+      "state": "PASS",
+      "events": "PASS",
+      "rawFileSha256": "63caf6324e280530bd130b7f542210aa9490446b8a43f0b6e7e2126a54444a76",
+      "stateTextSha256": "4e58a8b6b557cf0cef97a11adccd812fd009a1e89c624235c14ec3b29d03a5c0",
+      "eventsTextSha256": "c39e49f1717e5c7cde0020cecdcea841b9a180416a296961827ce2abaaf8a6c4"
+    },
+    {
+      "file": "32-receiver-normal-1275.dom.json",
+      "seed": 2,
+      "tick": 1275,
+      "eventCount": 20,
+      "state": "PASS",
+      "events": "PASS",
+      "rawFileSha256": "55990a998cd24fefd57e8bcf76ab28d963d6a88e8f845d6183d384dd9244ecc8",
+      "stateTextSha256": "4e58a8b6b557cf0cef97a11adccd812fd009a1e89c624235c14ec3b29d03a5c0",
+      "eventsTextSha256": "c39e49f1717e5c7cde0020cecdcea841b9a180416a296961827ce2abaaf8a6c4"
+    },
+    {
+      "file": "33-receiver-seek-1273.dom.json",
+      "seed": 2,
+      "tick": 1273,
+      "eventCount": 17,
+      "state": "PASS",
+      "events": "PASS",
+      "rawFileSha256": "bcc0cbd0a601b4125e69b224b185df6621dde42c97ef25f7a4691a1a01b40966",
+      "stateTextSha256": "94c8f9b910529c9e2e3f5549de8b5f73cea8d94e376321f35704804bdded164d",
+      "eventsTextSha256": "73a5572b0500f1f4bca8e75f72f5faa86e97a34ace30bbe38b14c1b08b2f64fc"
+    },
+    {
+      "file": "34-receiver-native-geometry.dom.json",
+      "seed": 2,
+      "tick": 1273,
+      "eventCount": 17,
+      "state": "PASS",
+      "events": "PASS",
+      "rawFileSha256": "113cbb69763bac4e0c4c056d7da72d3532fe357b82d2f7ff2c8aad448cc2e67e",
+      "stateTextSha256": "94c8f9b910529c9e2e3f5549de8b5f73cea8d94e376321f35704804bdded164d",
+      "eventsTextSha256": "73a5572b0500f1f4bca8e75f72f5faa86e97a34ace30bbe38b14c1b08b2f64fc"
+    },
+    {
+      "file": "35-receiver-native-play-end.dom.json",
+      "seed": 2,
+      "tick": 1275,
+      "eventCount": 20,
+      "state": "PASS",
+      "events": "PASS",
+      "rawFileSha256": "c54af8c707aaab62d7d9f77b1d8a2708b15e289c4e1753dc88a06b38b27f7fbc",
+      "stateTextSha256": "4e58a8b6b557cf0cef97a11adccd812fd009a1e89c624235c14ec3b29d03a5c0",
+      "eventsTextSha256": "c39e49f1717e5c7cde0020cecdcea841b9a180416a296961827ce2abaaf8a6c4"
+    },
+    {
+      "file": "36-receiver-return-source.dom.json",
+      "seed": 2,
+      "tick": 1275,
+      "eventCount": 20,
+      "state": "PASS",
+      "events": "PASS",
+      "rawFileSha256": "55990a998cd24fefd57e8bcf76ab28d963d6a88e8f845d6183d384dd9244ecc8",
+      "stateTextSha256": "4e58a8b6b557cf0cef97a11adccd812fd009a1e89c624235c14ec3b29d03a5c0",
+      "eventsTextSha256": "c39e49f1717e5c7cde0020cecdcea841b9a180416a296961827ce2abaaf8a6c4"
+    },
+    {
+      "file": "37-before-replay-race.dom.json",
+      "seed": 1,
+      "tick": 1009,
+      "eventCount": 9,
+      "state": "PASS",
+      "events": "PASS",
+      "rawFileSha256": "9fcfd653d27f592e5194ead93f3fcf239be160997b984ed84efe32e60e1c5e92",
+      "stateTextSha256": "91fabeeec1c53f0396e09eb1c2bc2046a9b1f4ccb95ee388386097158877750d",
+      "eventsTextSha256": "d8c90f70d663398a1caf951a1d308367761b485362224c238b2fc8746b1ff99d"
+    },
+    {
+      "file": "38-replay-running.dom.json",
+      "seed": 1,
+      "tick": 59,
+      "eventCount": 2,
+      "state": "PASS",
+      "events": "PASS",
+      "rawFileSha256": "201402a8a7ef6e52b84a94d0ea2a8c48c99d63cf4b8fe2dd935ca1c5b4b6e02b",
+      "stateTextSha256": "f08cfeab0254289fe715fbfbde4f741cc87464292b73310b1d51052ca52a648f",
+      "eventsTextSha256": "34f1c39a57aff44c1e65c862608905c59af1ddfb11f64dfbd447ba59b4c1a5ac"
+    },
+    {
+      "file": "39-replay-seek-while-playing.dom.json",
+      "seed": 1,
+      "tick": 106,
+      "eventCount": 3,
+      "state": "PASS",
+      "events": "PASS",
+      "rawFileSha256": "dc81576da1ca339e4fed9bc7a8b346b83982fe538eb1b85f14b126f92967330a",
+      "stateTextSha256": "0536798b73ff8583e0d74c608db0068e47359573ce3c44e5d3b1f70356bbedea",
+      "eventsTextSha256": "6debd1a86c48034c9888bfa0a1faaeb8a10bd241ffc7f81e677225d76124f12a"
+    },
+    {
+      "file": "40-replay-seek-paused.dom.json",
+      "seed": 1,
+      "tick": 1009,
+      "eventCount": 9,
+      "state": "PASS",
+      "events": "PASS",
+      "rawFileSha256": "b8d6d819c9033f8eee9c0f788e13cab8544b87bc9d39d99e761f07da7400ccfc",
+      "stateTextSha256": "91fabeeec1c53f0396e09eb1c2bc2046a9b1f4ccb95ee388386097158877750d",
+      "eventsTextSha256": "d8c90f70d663398a1caf951a1d308367761b485362224c238b2fc8746b1ff99d"
+    },
+    {
+      "file": "41-seed0-import-t0.dom.json",
+      "seed": 0,
+      "tick": 0,
+      "eventCount": 2,
+      "state": "PASS",
+      "events": "PASS",
+      "rawFileSha256": "a9fe727597b149b2c2147193f973e430d5da403bdfad8094101b8b522fb733a9",
+      "stateTextSha256": "56898ad1a842f5ca680dc80344b9e58fa1860c1d3fcc817129d75780aa9500e9",
+      "eventsTextSha256": "34f1c39a57aff44c1e65c862608905c59af1ddfb11f64dfbd447ba59b4c1a5ac"
+    },
+    {
+      "file": "42-seed0-full-LOST.dom.json",
+      "seed": 0,
+      "tick": 1326,
+      "eventCount": 14,
+      "state": "PASS",
+      "events": "PASS",
+      "rawFileSha256": "3a8e8e705dc68626bfcfcb5fc472822ab5e5468a1ef0687eff0d2b240dc1f9b0",
+      "stateTextSha256": "f60b414daa5d68c1634876074b7ae175e8ccfa70b1ef4e3378e592396c29315b",
+      "eventsTextSha256": "1747722349bd195b5047202e91a0224fe1a0727b8ce25103054030d1824686ab"
+    },
+    {
+      "file": "43-final-arch-import.dom.json",
+      "seed": 1,
+      "tick": 1009,
+      "eventCount": 9,
+      "state": "PASS",
+      "events": "PASS",
+      "rawFileSha256": "9fcfd653d27f592e5194ead93f3fcf239be160997b984ed84efe32e60e1c5e92",
+      "stateTextSha256": "91fabeeec1c53f0396e09eb1c2bc2046a9b1f4ccb95ee388386097158877750d",
+      "eventsTextSha256": "d8c90f70d663398a1caf951a1d308367761b485362224c238b2fc8746b1ff99d"
+    },
+    {
+      "file": "44-diagnostic-ball-1009.dom.json",
+      "seed": 1,
+      "tick": 1009,
+      "eventCount": 9,
+      "state": "PASS",
+      "events": "PASS",
+      "rawFileSha256": "9fcfd653d27f592e5194ead93f3fcf239be160997b984ed84efe32e60e1c5e92",
+      "stateTextSha256": "91fabeeec1c53f0396e09eb1c2bc2046a9b1f4ccb95ee388386097158877750d",
+      "eventsTextSha256": "d8c90f70d663398a1caf951a1d308367761b485362224c238b2fc8746b1ff99d"
+    },
+    {
+      "file": "45-final-1009.dom.json",
+      "seed": 1,
+      "tick": 1009,
+      "eventCount": 9,
+      "state": "PASS",
+      "events": "PASS",
+      "rawFileSha256": "9fcfd653d27f592e5194ead93f3fcf239be160997b984ed84efe32e60e1c5e92",
+      "stateTextSha256": "91fabeeec1c53f0396e09eb1c2bc2046a9b1f4ccb95ee388386097158877750d",
+      "eventsTextSha256": "d8c90f70d663398a1caf951a1d308367761b485362224c238b2fc8746b1ff99d"
+    }
+  ]
+}
