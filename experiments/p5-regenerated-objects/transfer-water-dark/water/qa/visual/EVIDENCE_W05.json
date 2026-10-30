@@ -1,0 +1,2134 @@
+{
+  "schema": "r4d.p5.visual.evidence/2",
+  "board": "water",
+  "candidate": "w05",
+  "preparedAtUTC": "2026-10-30T02:15:53.419616+00:00",
+  "runtimeRoot": "E:\\R4D\\perspective\\p5-runtime\\visual-qa\\transfer-water-dark\\water\\w05",
+  "consumerCommit": "ce110a387919bbb10c467c70afce678f8b4ee4a7",
+  "floorRoleExtensionCommit": "eedd183a2652a8b9a2dce60118c0f32c8755d3b7",
+  "artistCommit": "9647869d6dbf672ee5922b0fc57df254b9fdbb93",
+  "fileIndexSha256": "dd5a85b7187b90197527fef5763fd31a64b16ae7e84f53a092a33674dd0031b8",
+  "stagedManifestSha256": "7a7f55effb5c7a4d5b60c4752c14bc2fa0ca846817f94ca88e12bd165ddba965",
+  "scope": "W04-V01 entry correction closure; early approach1240,1250,1256,1260,1264;1272/1273/1274/1275+hold Whole/Field; ArtOff; same ordinary miss1114–1116 and front1118–1120; gate1019/start0 regression. Supplemental retained TQA1131 independently viewed.",
+  "captureRule": "24 original1265x712 JPEG, no edit/crop/zoom/viewport override;22 paused with equal before/after state/RNG,2 realtime with bounded states only.",
+  "captures": [
+    {
+      "name": "01-seed2-t1250-whole",
+      "mode": "paused",
+      "UTC": "2026-10-30T01:47:39.233Z",
+      "before": "01-seed2-t1250-whole.before.ax.txt",
+      "image": "01-seed2-t1250-whole.jpg",
+      "after": "01-seed2-t1250-whole.after.ax.txt",
+      "beforeUI": {
+        "seed": 2,
+        "state": {
+          "tick": 1250,
+          "rngU32": 1581479664,
+          "ball": {
+            "pos": {
+              "x": 32974.7486073,
+              "y": 35057.0727538
+            },
+            "vel": {
+              "x": 656.3655586,
+              "y": 749.1370838
+            }
+          },
+          "nearMissBucketIds": [],
+          "done": false
+        },
+        "art": 1,
+        "geometry": 0,
+        "framing": "Вся сцена"
+      },
+      "afterUI": {
+        "seed": 2,
+        "state": {
+          "tick": 1250,
+          "rngU32": 1581479664,
+          "ball": {
+            "pos": {
+              "x": 32974.7486073,
+              "y": 35057.0727538
+            },
+            "vel": {
+              "x": 656.3655586,
+              "y": 749.1370838
+            }
+          },
+          "nearMissBucketIds": [],
+          "done": false
+        },
+        "art": 1,
+        "geometry": 0,
+        "framing": "Вся сцена"
+      },
+      "imageDimensionsPx": [
+        1265,
+        712
+      ],
+      "nativeStateExactForImage": true
+    },
+    {
+      "name": "02-seed2-t1250-field",
+      "mode": "paused",
+      "UTC": "2026-10-30T01:48:04.001Z",
+      "before": "02-seed2-t1250-field.before.ax.txt",
+      "image": "02-seed2-t1250-field.jpg",
+      "after": "02-seed2-t1250-field.after.ax.txt",
+      "beforeUI": {
+        "seed": 2,
+        "state": {
+          "tick": 1250,
+          "rngU32": 1581479664,
+          "ball": {
+            "pos": {
+              "x": 32974.7486073,
+              "y": 35057.0727538
+            },
+            "vel": {
+              "x": 656.3655586,
+              "y": 749.1370838
+            }
+          },
+          "nearMissBucketIds": [],
+          "done": false
+        },
+        "art": 1,
+        "geometry": 0,
+        "framing": "Игровое поле"
+      },
+      "afterUI": {
+        "seed": 2,
+        "state": {
+          "tick": 1250,
+          "rngU32": 1581479664,
+          "ball": {
+            "pos": {
+              "x": 32974.7486073,
+              "y": 35057.0727538
+            },
+            "vel": {
+              "x": 656.3655586,
+              "y": 749.1370838
+            }
+          },
+          "nearMissBucketIds": [],
+          "done": false
+        },
+        "art": 1,
+        "geometry": 0,
+        "framing": "Игровое поле"
+      },
+      "imageDimensionsPx": [
+        1265,
+        712
+      ],
+      "nativeStateExactForImage": true
+    },
+    {
+      "name": "03-seed2-t1272-field",
+      "mode": "paused",
+      "UTC": "2026-10-30T01:48:04.791Z",
+      "before": "03-seed2-t1272-field.before.ax.txt",
+      "image": "03-seed2-t1272-field.jpg",
+      "after": "03-seed2-t1272-field.after.ax.txt",
+      "beforeUI": {
+        "seed": 2,
+        "state": {
+          "tick": 1272,
+          "rngU32": 1581479664,
+          "ball": {
+            "pos": {
+              "x": 33046.9488189,
+              "y": 35145.6763326
+            },
+            "vel": {
+              "x": 656.3655586,
+              "y": 856.9370838
+            }
+          },
+          "nearMissBucketIds": [],
+          "done": false
+        },
+        "art": 1,
+        "geometry": 0,
+        "framing": "Игровое поле"
+      },
+      "afterUI": {
+        "seed": 2,
+        "state": {
+          "tick": 1272,
+          "rngU32": 1581479664,
+          "ball": {
+            "pos": {
+              "x": 33046.9488189,
+              "y": 35145.6763326
+            },
+            "vel": {
+              "x": 656.3655586,
+              "y": 856.9370838
+            }
+          },
+          "nearMissBucketIds": [],
+          "done": false
+        },
+        "art": 1,
+        "geometry": 0,
+        "framing": "Игровое поле"
+      },
+      "imageDimensionsPx": [
+        1265,
+        712
+      ],
+      "nativeStateExactForImage": true
+    },
+    {
+      "name": "04-seed2-t1273-field",
+      "mode": "paused",
+      "UTC": "2026-10-30T01:48:05.611Z",
+      "before": "04-seed2-t1273-field.before.ax.txt",
+      "image": "04-seed2-t1273-field.jpg",
+      "after": "04-seed2-t1273-field.after.ax.txt",
+      "beforeUI": {
+        "seed": 2,
+        "state": {
+          "tick": 1273,
+          "rngU32": 1581479664,
+          "ball": {
+            "pos": {
+              "x": 33050.2306467,
+              "y": 35149.985518
+            },
+            "vel": {
+              "x": 656.3655586,
+              "y": 861.8370838
+            }
+          },
+          "nearMissBucketIds": [],
+          "done": false
+        },
+        "art": 1,
+        "geometry": 0,
+        "framing": "Игровое поле"
+      },
+      "afterUI": {
+        "seed": 2,
+        "state": {
+          "tick": 1273,
+          "rngU32": 1581479664,
+          "ball": {
+            "pos": {
+              "x": 33050.2306467,
+              "y": 35149.985518
+            },
+            "vel": {
+              "x": 656.3655586,
+              "y": 861.8370838
+            }
+          },
+          "nearMissBucketIds": [],
+          "done": false
+        },
+        "art": 1,
+        "geometry": 0,
+        "framing": "Игровое поле"
+      },
+      "imageDimensionsPx": [
+        1265,
+        712
+      ],
+      "nativeStateExactForImage": true
+    },
+    {
+      "name": "05-seed2-t1274-field",
+      "mode": "paused",
+      "UTC": "2026-10-30T01:48:06.403Z",
+      "before": "05-seed2-t1274-field.before.ax.txt",
+      "image": "05-seed2-t1274-field.jpg",
+      "after": "05-seed2-t1274-field.after.ax.txt",
+      "beforeUI": {
+        "seed": 2,
+        "state": {
+          "tick": 1274,
+          "rngU32": 1581479664,
+          "ball": {
+            "pos": {
+              "x": 33053.5124745,
+              "y": 35154.3192034
+            },
+            "vel": {
+              "x": 656.3655586,
+              "y": 866.7370838
+            }
+          },
+          "nearMissBucketIds": [],
+          "done": false
+        },
+        "art": 1,
+        "geometry": 0,
+        "framing": "Игровое поле"
+      },
+      "afterUI": {
+        "seed": 2,
+        "state": {
+          "tick": 1274,
+          "rngU32": 1581479664,
+          "ball": {
+            "pos": {
+              "x": 33053.5124745,
+              "y": 35154.3192034
+            },
+            "vel": {
+              "x": 656.3655586,
+              "y": 866.7370838
+            }
+          },
+          "nearMissBucketIds": [],
+          "done": false
+        },
+        "art": 1,
+        "geometry": 0,
+        "framing": "Игровое поле"
+      },
+      "imageDimensionsPx": [
+        1265,
+        712
+      ],
+      "nativeStateExactForImage": true
+    },
+    {
+      "name": "06-seed2-t1275-field",
+      "mode": "paused",
+      "UTC": "2026-10-30T01:48:07.251Z",
+      "before": "06-seed2-t1275-field.before.ax.txt",
+      "image": "06-seed2-t1275-field.jpg",
+      "after": "06-seed2-t1275-field.after.ax.txt",
+      "beforeUI": {
+        "seed": 2,
+        "state": {
+          "tick": 1275,
+          "rngU32": 1581479664,
+          "ball": {
+            "pos": {
+              "x": 33056.7943023,
+              "y": 35158.6773888
+            },
+            "vel": {
+              "x": 656.3655586,
+              "y": 871.6370838
+            }
+          },
+          "nearMissBucketIds": [],
+          "done": true,
+          "result": {
+            "kind": "IN_BUCKET",
+            "bucketId": "receiver-02"
+          }
+        },
+        "art": 1,
+        "geometry": 0,
+        "framing": "Игровое поле"
+      },
+      "afterUI": {
+        "seed": 2,
+        "state": {
+          "tick": 1275,
+          "rngU32": 1581479664,
+          "ball": {
+            "pos": {
+              "x": 33056.7943023,
+              "y": 35158.6773888
+            },
+            "vel": {
+              "x": 656.3655586,
+              "y": 871.6370838
+            }
+          },
+          "nearMissBucketIds": [],
+          "done": true,
+          "result": {
+            "kind": "IN_BUCKET",
+            "bucketId": "receiver-02"
+          }
+        },
+        "art": 1,
+        "geometry": 0,
+        "framing": "Игровое поле"
+      },
+      "imageDimensionsPx": [
+        1265,
+        712
+      ],
+      "nativeStateExactForImage": true
+    },
+    {
+      "name": "07-seed2-t1275-hold-field",
+      "mode": "paused",
+      "UTC": "2026-10-30T01:49:00.299Z",
+      "before": "07-seed2-t1275-hold-field.before.ax.txt",
+      "image": "07-seed2-t1275-hold-field.jpg",
+      "after": "07-seed2-t1275-hold-field.after.ax.txt",
+      "beforeUI": {
+        "seed": 2,
+        "state": {
+          "tick": 1275,
+          "rngU32": 1581479664,
+          "ball": {
+            "pos": {
+              "x": 33056.7943023,
+              "y": 35158.6773888
+            },
+            "vel": {
+              "x": 656.3655586,
+              "y": 871.6370838
+            }
+          },
+          "nearMissBucketIds": [],
+          "done": true,
+          "result": {
+            "kind": "IN_BUCKET",
+            "bucketId": "receiver-02"
+          }
+        },
+        "art": 1,
+        "geometry": 0,
+        "framing": "Игровое поле"
+      },
+      "afterUI": {
+        "seed": 2,
+        "state": {
+          "tick": 1275,
+          "rngU32": 1581479664,
+          "ball": {
+            "pos": {
+              "x": 33056.7943023,
+              "y": 35158.6773888
+            },
+            "vel": {
+              "x": 656.3655586,
+              "y": 871.6370838
+            }
+          },
+          "nearMissBucketIds": [],
+          "done": true,
+          "result": {
+            "kind": "IN_BUCKET",
+            "bucketId": "receiver-02"
+          }
+        },
+        "art": 1,
+        "geometry": 0,
+        "framing": "Игровое поле"
+      },
+      "imageDimensionsPx": [
+        1265,
+        712
+      ],
+      "nativeStateExactForImage": true
+    },
+    {
+      "name": "08-seed2-t1240-field",
+      "mode": "paused",
+      "UTC": "2026-10-30T01:49:01.101Z",
+      "before": "08-seed2-t1240-field.before.ax.txt",
+      "image": "08-seed2-t1240-field.jpg",
+      "after": "08-seed2-t1240-field.after.ax.txt",
+      "beforeUI": {
+        "seed": 2,
+        "state": {
+          "tick": 1240,
+          "rngU32": 1581479664,
+          "ball": {
+            "pos": {
+              "x": 32941.9303293,
+              "y": 35020.7183998
+            },
+            "vel": {
+              "x": 656.3655586,
+              "y": 700.1370838
+            }
+          },
+          "nearMissBucketIds": [],
+          "done": false
+        },
+        "art": 1,
+        "geometry": 0,
+        "framing": "Игровое поле"
+      },
+      "afterUI": {
+        "seed": 2,
+        "state": {
+          "tick": 1240,
+          "rngU32": 1581479664,
+          "ball": {
+            "pos": {
+              "x": 32941.9303293,
+              "y": 35020.7183998
+            },
+            "vel": {
+              "x": 656.3655586,
+              "y": 700.1370838
+            }
+          },
+          "nearMissBucketIds": [],
+          "done": false
+        },
+        "art": 1,
+        "geometry": 0,
+        "framing": "Игровое поле"
+      },
+      "imageDimensionsPx": [
+        1265,
+        712
+      ],
+      "nativeStateExactForImage": true
+    },
+    {
+      "name": "09-seed2-t1256-field",
+      "mode": "paused",
+      "UTC": "2026-10-30T01:49:01.902Z",
+      "before": "09-seed2-t1256-field.before.ax.txt",
+      "image": "09-seed2-t1256-field.jpg",
+      "after": "09-seed2-t1256-field.after.ax.txt",
+      "beforeUI": {
+        "seed": 2,
+        "state": {
+          "tick": 1256,
+          "rngU32": 1581479664,
+          "ball": {
+            "pos": {
+              "x": 32994.4395741,
+              "y": 35080.0613662
+            },
+            "vel": {
+              "x": 656.3655586,
+              "y": 778.5370838
+            }
+          },
+          "nearMissBucketIds": [],
+          "done": false
+        },
+        "art": 1,
+        "geometry": 0,
+        "framing": "Игровое поле"
+      },
+      "afterUI": {
+        "seed": 2,
+        "state": {
+          "tick": 1256,
+          "rngU32": 1581479664,
+          "ball": {
+            "pos": {
+              "x": 32994.4395741,
+              "y": 35080.0613662
+            },
+            "vel": {
+              "x": 656.3655586,
+              "y": 778.5370838
+            }
+          },
+          "nearMissBucketIds": [],
+          "done": false
+        },
+        "art": 1,
+        "geometry": 0,
+        "framing": "Игровое поле"
+      },
+      "imageDimensionsPx": [
+        1265,
+        712
+      ],
+      "nativeStateExactForImage": true
+    },
+    {
+      "name": "10-seed2-t1260-field",
+      "mode": "paused",
+      "UTC": "2026-10-30T01:49:02.706Z",
+      "before": "10-seed2-t1260-field.before.ax.txt",
+      "image": "10-seed2-t1260-field.jpg",
+      "after": "10-seed2-t1260-field.after.ax.txt",
+      "beforeUI": {
+        "seed": 2,
+        "state": {
+          "tick": 1260,
+          "rngU32": 1581479664,
+          "ball": {
+            "pos": {
+              "x": 33007.5668853,
+              "y": 35095.8771078
+            },
+            "vel": {
+              "x": 656.3655586,
+              "y": 798.1370838
+            }
+          },
+          "nearMissBucketIds": [],
+          "done": false
+        },
+        "art": 1,
+        "geometry": 0,
+        "framing": "Игровое поле"
+      },
+      "afterUI": {
+        "seed": 2,
+        "state": {
+          "tick": 1260,
+          "rngU32": 1581479664,
+          "ball": {
+            "pos": {
+              "x": 33007.5668853,
+              "y": 35095.8771078
+            },
+            "vel": {
+              "x": 656.3655586,
+              "y": 798.1370838
+            }
+          },
+          "nearMissBucketIds": [],
+          "done": false
+        },
+        "art": 1,
+        "geometry": 0,
+        "framing": "Игровое поле"
+      },
+      "imageDimensionsPx": [
+        1265,
+        712
+      ],
+      "nativeStateExactForImage": true
+    },
+    {
+      "name": "11-seed2-t1264-field",
+      "mode": "paused",
+      "UTC": "2026-10-30T01:49:03.498Z",
+      "before": "11-seed2-t1264-field.before.ax.txt",
+      "image": "11-seed2-t1264-field.jpg",
+      "after": "11-seed2-t1264-field.after.ax.txt",
+      "beforeUI": {
+        "seed": 2,
+        "state": {
+          "tick": 1264,
+          "rngU32": 1581479664,
+          "ball": {
+            "pos": {
+              "x": 33020.6941965,
+              "y": 35112.0848494
+            },
+            "vel": {
+              "x": 656.3655586,
+              "y": 817.7370838
+            }
+          },
+          "nearMissBucketIds": [],
+          "done": false
+        },
+        "art": 1,
+        "geometry": 0,
+        "framing": "Игровое поле"
+      },
+      "afterUI": {
+        "seed": 2,
+        "state": {
+          "tick": 1264,
+          "rngU32": 1581479664,
+          "ball": {
+            "pos": {
+              "x": 33020.6941965,
+              "y": 35112.0848494
+            },
+            "vel": {
+              "x": 656.3655586,
+              "y": 817.7370838
+            }
+          },
+          "nearMissBucketIds": [],
+          "done": false
+        },
+        "art": 1,
+        "geometry": 0,
+        "framing": "Игровое поле"
+      },
+      "imageDimensionsPx": [
+        1265,
+        712
+      ],
+      "nativeStateExactForImage": true
+    },
+    {
+      "name": "12-seed2-t1273-whole",
+      "mode": "paused",
+      "UTC": "2026-10-30T01:54:48.191Z",
+      "before": "12-seed2-t1273-whole.before.ax.txt",
+      "image": "12-seed2-t1273-whole.jpg",
+      "after": "12-seed2-t1273-whole.after.ax.txt",
+      "beforeUI": {
+        "seed": 2,
+        "state": {
+          "tick": 1273,
+          "rngU32": 1581479664,
+          "ball": {
+            "pos": {
+              "x": 33050.2306467,
+              "y": 35149.985518
+            },
+            "vel": {
+              "x": 656.3655586,
+              "y": 861.8370838
+            }
+          },
+          "nearMissBucketIds": [],
+          "done": false
+        },
+        "art": 1,
+        "geometry": 0,
+        "framing": "Вся сцена"
+      },
+      "afterUI": {
+        "seed": 2,
+        "state": {
+          "tick": 1273,
+          "rngU32": 1581479664,
+          "ball": {
+            "pos": {
+              "x": 33050.2306467,
+              "y": 35149.985518
+            },
+            "vel": {
+              "x": 656.3655586,
+              "y": 861.8370838
+            }
+          },
+          "nearMissBucketIds": [],
+          "done": false
+        },
+        "art": 1,
+        "geometry": 0,
+        "framing": "Вся сцена"
+      },
+      "imageDimensionsPx": [
+        1265,
+        712
+      ],
+      "nativeStateExactForImage": true
+    },
+    {
+      "name": "13-seed2-t1275-whole",
+      "mode": "paused",
+      "UTC": "2026-10-30T01:54:49.028Z",
+      "before": "13-seed2-t1275-whole.before.ax.txt",
+      "image": "13-seed2-t1275-whole.jpg",
+      "after": "13-seed2-t1275-whole.after.ax.txt",
+      "beforeUI": {
+        "seed": 2,
+        "state": {
+          "tick": 1275,
+          "rngU32": 1581479664,
+          "ball": {
+            "pos": {
+              "x": 33056.7943023,
+              "y": 35158.6773888
+            },
+            "vel": {
+              "x": 656.3655586,
+              "y": 871.6370838
+            }
+          },
+          "nearMissBucketIds": [],
+          "done": true,
+          "result": {
+            "kind": "IN_BUCKET",
+            "bucketId": "receiver-02"
+          }
+        },
+        "art": 1,
+        "geometry": 0,
+        "framing": "Вся сцена"
+      },
+      "afterUI": {
+        "seed": 2,
+        "state": {
+          "tick": 1275,
+          "rngU32": 1581479664,
+          "ball": {
+            "pos": {
+              "x": 33056.7943023,
+              "y": 35158.6773888
+            },
+            "vel": {
+              "x": 656.3655586,
+              "y": 871.6370838
+            }
+          },
+          "nearMissBucketIds": [],
+          "done": true,
+          "result": {
+            "kind": "IN_BUCKET",
+            "bucketId": "receiver-02"
+          }
+        },
+        "art": 1,
+        "geometry": 0,
+        "framing": "Вся сцена"
+      },
+      "imageDimensionsPx": [
+        1265,
+        712
+      ],
+      "nativeStateExactForImage": true
+    },
+    {
+      "name": "14-seed2-t1275-artoff-geometry",
+      "mode": "paused",
+      "UTC": "2026-10-30T01:54:49.914Z",
+      "before": "14-seed2-t1275-artoff-geometry.before.ax.txt",
+      "image": "14-seed2-t1275-artoff-geometry.jpg",
+      "after": "14-seed2-t1275-artoff-geometry.after.ax.txt",
+      "beforeUI": {
+        "seed": 2,
+        "state": {
+          "tick": 1275,
+          "rngU32": 1581479664,
+          "ball": {
+            "pos": {
+              "x": 33056.7943023,
+              "y": 35158.6773888
+            },
+            "vel": {
+              "x": 656.3655586,
+              "y": 871.6370838
+            }
+          },
+          "nearMissBucketIds": [],
+          "done": true,
+          "result": {
+            "kind": "IN_BUCKET",
+            "bucketId": "receiver-02"
+          }
+        },
+        "art": 0,
+        "geometry": 1,
+        "framing": "Вся сцена"
+      },
+      "afterUI": {
+        "seed": 2,
+        "state": {
+          "tick": 1275,
+          "rngU32": 1581479664,
+          "ball": {
+            "pos": {
+              "x": 33056.7943023,
+              "y": 35158.6773888
+            },
+            "vel": {
+              "x": 656.3655586,
+              "y": 871.6370838
+            }
+          },
+          "nearMissBucketIds": [],
+          "done": true,
+          "result": {
+            "kind": "IN_BUCKET",
+            "bucketId": "receiver-02"
+          }
+        },
+        "art": 0,
+        "geometry": 1,
+        "framing": "Вся сцена"
+      },
+      "imageDimensionsPx": [
+        1265,
+        712
+      ],
+      "nativeStateExactForImage": true
+    },
+    {
+      "name": "15-seed2-receiver-approach-realtime",
+      "mode": "realtime",
+      "UTC": "2026-10-30T01:55:10.891Z",
+      "before": "15-seed2-receiver-approach-realtime.before.ax.txt",
+      "image": "15-seed2-receiver-approach-realtime.jpg",
+      "after": "15-seed2-receiver-approach-realtime.after.ax.txt",
+      "beforeUI": {
+        "seed": 2,
+        "state": {
+          "tick": 1232,
+          "rngU32": 1581479664,
+          "ball": {
+            "pos": {
+              "x": 32915.6757069,
+              "y": 34993.3989166
+            },
+            "vel": {
+              "x": 656.3655586,
+              "y": 660.9370838
+            }
+          },
+          "nearMissBucketIds": [],
+          "done": false
+        },
+        "art": 1,
+        "geometry": 0,
+        "framing": "Игровое поле"
+      },
+      "afterUI": {
+        "seed": 2,
+        "state": {
+          "tick": 1275,
+          "rngU32": 1581479664,
+          "ball": {
+            "pos": {
+              "x": 33056.7943023,
+              "y": 35158.6773888
+            },
+            "vel": {
+              "x": 656.3655586,
+              "y": 871.6370838
+            }
+          },
+          "nearMissBucketIds": [],
+          "done": true,
+          "result": {
+            "kind": "IN_BUCKET",
+            "bucketId": "receiver-02"
+          }
+        },
+        "art": 1,
+        "geometry": 0,
+        "framing": "Игровое поле"
+      },
+      "imageDimensionsPx": [
+        1265,
+        712
+      ],
+      "nativeStateExactForImage": false,
+      "imageStateBoundedOnly": true
+    },
+    {
+      "name": "16-seed1-t1114-receiver03-miss-field",
+      "mode": "paused",
+      "UTC": "2026-10-30T01:55:33.040Z",
+      "before": "16-seed1-t1114-receiver03-miss-field.before.ax.txt",
+      "image": "16-seed1-t1114-receiver03-miss-field.jpg",
+      "after": "16-seed1-t1114-receiver03-miss-field.after.ax.txt",
+      "beforeUI": {
+        "seed": 1,
+        "state": {
+          "tick": 1114,
+          "rngU32": 1403919595,
+          "ball": {
+            "pos": {
+              "x": 33396.0903168,
+              "y": 35211.4855947
+            },
+            "vel": {
+              "x": 809.8844534,
+              "y": 1153.6618455
+            }
+          },
+          "nearMissBucketIds": [],
+          "done": false
+        },
+        "art": 1,
+        "geometry": 0,
+        "framing": "Игровое поле"
+      },
+      "afterUI": {
+        "seed": 1,
+        "state": {
+          "tick": 1114,
+          "rngU32": 1403919595,
+          "ball": {
+            "pos": {
+              "x": 33396.0903168,
+              "y": 35211.4855947
+            },
+            "vel": {
+              "x": 809.8844534,
+              "y": 1153.6618455
+            }
+          },
+          "nearMissBucketIds": [],
+          "done": false
+        },
+        "art": 1,
+        "geometry": 0,
+        "framing": "Игровое поле"
+      },
+      "imageDimensionsPx": [
+        1265,
+        712
+      ],
+      "nativeStateExactForImage": true
+    },
+    {
+      "name": "17-seed1-t1115-receiver03-miss-field",
+      "mode": "paused",
+      "UTC": "2026-10-30T01:55:33.859Z",
+      "before": "17-seed1-t1115-receiver03-miss-field.before.ax.txt",
+      "image": "17-seed1-t1115-receiver03-miss-field.jpg",
+      "after": "17-seed1-t1115-receiver03-miss-field.after.ax.txt",
+      "beforeUI": {
+        "seed": 1,
+        "state": {
+          "tick": 1115,
+          "rngU32": 1403919595,
+          "ball": {
+            "pos": {
+              "x": 33400.1397391,
+              "y": 35217.2784039
+            },
+            "vel": {
+              "x": 809.8844534,
+              "y": 1158.5618455
+            }
+          },
+          "nearMissBucketIds": [],
+          "done": false
+        },
+        "art": 1,
+        "geometry": 0,
+        "framing": "Игровое поле"
+      },
+      "afterUI": {
+        "seed": 1,
+        "state": {
+          "tick": 1115,
+          "rngU32": 1403919595,
+          "ball": {
+            "pos": {
+              "x": 33400.1397391,
+              "y": 35217.2784039
+            },
+            "vel": {
+              "x": 809.8844534,
+              "y": 1158.5618455
+            }
+          },
+          "nearMissBucketIds": [],
+          "done": false
+        },
+        "art": 1,
+        "geometry": 0,
+        "framing": "Игровое поле"
+      },
+      "imageDimensionsPx": [
+        1265,
+        712
+      ],
+      "nativeStateExactForImage": true
+    },
+    {
+      "name": "18-seed1-t1116-receiver03-miss-field",
+      "mode": "paused",
+      "UTC": "2026-10-30T01:55:34.681Z",
+      "before": "18-seed1-t1116-receiver03-miss-field.before.ax.txt",
+      "image": "18-seed1-t1116-receiver03-miss-field.jpg",
+      "after": "18-seed1-t1116-receiver03-miss-field.after.ax.txt",
+      "beforeUI": {
+        "seed": 1,
+        "state": {
+          "tick": 1116,
+          "rngU32": 1403919595,
+          "ball": {
+            "pos": {
+              "x": 33404.1891614,
+              "y": 35223.0957131
+            },
+            "vel": {
+              "x": 809.8844534,
+              "y": 1163.4618455
+            }
+          },
+          "nearMissBucketIds": [],
+          "done": false
+        },
+        "art": 1,
+        "geometry": 0,
+        "framing": "Игровое поле"
+      },
+      "afterUI": {
+        "seed": 1,
+        "state": {
+          "tick": 1116,
+          "rngU32": 1403919595,
+          "ball": {
+            "pos": {
+              "x": 33404.1891614,
+              "y": 35223.0957131
+            },
+            "vel": {
+              "x": 809.8844534,
+              "y": 1163.4618455
+            }
+          },
+          "nearMissBucketIds": [],
+          "done": false
+        },
+        "art": 1,
+        "geometry": 0,
+        "framing": "Игровое поле"
+      },
+      "imageDimensionsPx": [
+        1265,
+        712
+      ],
+      "nativeStateExactForImage": true
+    },
+    {
+      "name": "19-seed1-missed-approach-realtime",
+      "mode": "realtime",
+      "UTC": "2026-10-30T01:55:35.535Z",
+      "before": "19-seed1-missed-approach-realtime.before.ax.txt",
+      "image": "19-seed1-missed-approach-realtime.jpg",
+      "after": "19-seed1-missed-approach-realtime.after.ax.txt",
+      "beforeUI": {
+        "seed": 1,
+        "state": {
+          "tick": 1078,
+          "rngU32": 1403919595,
+          "ball": {
+            "pos": {
+              "x": 33250.311114,
+              "y": 35019.2614635
+            },
+            "vel": {
+              "x": 809.8844534,
+              "y": 977.2618455
+            }
+          },
+          "nearMissBucketIds": [],
+          "done": false
+        },
+        "art": 1,
+        "geometry": 0,
+        "framing": "Игровое поле"
+      },
+      "afterUI": {
+        "seed": 1,
+        "state": {
+          "tick": 1133,
+          "rngU32": 1403919595,
+          "ball": {
+            "pos": {
+              "x": 33473.0293405,
+              "y": 35325.7384695
+            },
+            "vel": {
+              "x": 809.8844534,
+              "y": 1246.7618455
+            }
+          },
+          "nearMissBucketIds": [],
+          "done": false
+        },
+        "art": 1,
+        "geometry": 0,
+        "framing": "Игровое поле"
+      },
+      "imageDimensionsPx": [
+        1265,
+        712
+      ],
+      "nativeStateExactForImage": false,
+      "imageStateBoundedOnly": true
+    },
+    {
+      "name": "20-seed1-t1118-front-rim-field",
+      "mode": "paused",
+      "UTC": "2026-10-30T01:56:30.739Z",
+      "before": "20-seed1-t1118-front-rim-field.before.ax.txt",
+      "image": "20-seed1-t1118-front-rim-field.jpg",
+      "after": "20-seed1-t1118-front-rim-field.after.ax.txt",
+      "beforeUI": {
+        "seed": 1,
+        "state": {
+          "tick": 1118,
+          "rngU32": 1403919595,
+          "ball": {
+            "pos": {
+              "x": 33412.288006,
+              "y": 35234.8038315
+            },
+            "vel": {
+              "x": 809.8844534,
+              "y": 1173.2618455
+            }
+          },
+          "nearMissBucketIds": [],
+          "done": false
+        },
+        "art": 1,
+        "geometry": 0,
+        "framing": "Игровое поле"
+      },
+      "afterUI": {
+        "seed": 1,
+        "state": {
+          "tick": 1118,
+          "rngU32": 1403919595,
+          "ball": {
+            "pos": {
+              "x": 33412.288006,
+              "y": 35234.8038315
+            },
+            "vel": {
+              "x": 809.8844534,
+              "y": 1173.2618455
+            }
+          },
+          "nearMissBucketIds": [],
+          "done": false
+        },
+        "art": 1,
+        "geometry": 0,
+        "framing": "Игровое поле"
+      },
+      "imageDimensionsPx": [
+        1265,
+        712
+      ],
+      "nativeStateExactForImage": true
+    },
+    {
+      "name": "21-seed1-t1119-front-rim-field",
+      "mode": "paused",
+      "UTC": "2026-10-30T01:56:31.526Z",
+      "before": "21-seed1-t1119-front-rim-field.before.ax.txt",
+      "image": "21-seed1-t1119-front-rim-field.jpg",
+      "after": "21-seed1-t1119-front-rim-field.after.ax.txt",
+      "beforeUI": {
+        "seed": 1,
+        "state": {
+          "tick": 1119,
+          "rngU32": 1403919595,
+          "ball": {
+            "pos": {
+              "x": 33416.3374283,
+              "y": 35240.6946407
+            },
+            "vel": {
+              "x": 809.8844534,
+              "y": 1178.1618455
+            }
+          },
+          "nearMissBucketIds": [],
+          "done": false
+        },
+        "art": 1,
+        "geometry": 0,
+        "framing": "Игровое поле"
+      },
+      "afterUI": {
+        "seed": 1,
+        "state": {
+          "tick": 1119,
+          "rngU32": 1403919595,
+          "ball": {
+            "pos": {
+              "x": 33416.3374283,
+              "y": 35240.6946407
+            },
+            "vel": {
+              "x": 809.8844534,
+              "y": 1178.1618455
+            }
+          },
+          "nearMissBucketIds": [],
+          "done": false
+        },
+        "art": 1,
+        "geometry": 0,
+        "framing": "Игровое поле"
+      },
+      "imageDimensionsPx": [
+        1265,
+        712
+      ],
+      "nativeStateExactForImage": true
+    },
+    {
+      "name": "22-seed1-t1120-front-rim-field",
+      "mode": "paused",
+      "UTC": "2026-10-30T01:56:32.353Z",
+      "before": "22-seed1-t1120-front-rim-field.before.ax.txt",
+      "image": "22-seed1-t1120-front-rim-field.jpg",
+      "after": "22-seed1-t1120-front-rim-field.after.ax.txt",
+      "beforeUI": {
+        "seed": 1,
+        "state": {
+          "tick": 1120,
+          "rngU32": 1403919595,
+          "ball": {
+            "pos": {
+              "x": 33420.3868506,
+              "y": 35246.6099499
+            },
+            "vel": {
+              "x": 809.8844534,
+              "y": 1183.0618455
+            }
+          },
+          "nearMissBucketIds": [],
+          "done": false
+        },
+        "art": 1,
+        "geometry": 0,
+        "framing": "Игровое поле"
+      },
+      "afterUI": {
+        "seed": 1,
+        "state": {
+          "tick": 1120,
+          "rngU32": 1403919595,
+          "ball": {
+            "pos": {
+              "x": 33420.3868506,
+              "y": 35246.6099499
+            },
+            "vel": {
+              "x": 809.8844534,
+              "y": 1183.0618455
+            }
+          },
+          "nearMissBucketIds": [],
+          "done": false
+        },
+        "art": 1,
+        "geometry": 0,
+        "framing": "Игровое поле"
+      },
+      "imageDimensionsPx": [
+        1265,
+        712
+      ],
+      "nativeStateExactForImage": true
+    },
+    {
+      "name": "23-seed1-t1019-gate-regression",
+      "mode": "paused",
+      "UTC": "2026-10-30T01:56:33.176Z",
+      "before": "23-seed1-t1019-gate-regression.before.ax.txt",
+      "image": "23-seed1-t1019-gate-regression.jpg",
+      "after": "23-seed1-t1019-gate-regression.after.ax.txt",
+      "beforeUI": {
+        "seed": 1,
+        "state": {
+          "tick": 1019,
+          "rngU32": 1403919595,
+          "ball": {
+            "pos": {
+              "x": 33011.3951983,
+              "y": 34772.8887207
+            },
+            "vel": {
+              "x": 809.8844534,
+              "y": 688.1618455
+            }
+          },
+          "nearMissBucketIds": [],
+          "done": false
+        },
+        "art": 1,
+        "geometry": 0,
+        "framing": "Игровое поле"
+      },
+      "afterUI": {
+        "seed": 1,
+        "state": {
+          "tick": 1019,
+          "rngU32": 1403919595,
+          "ball": {
+            "pos": {
+              "x": 33011.3951983,
+              "y": 34772.8887207
+            },
+            "vel": {
+              "x": 809.8844534,
+              "y": 688.1618455
+            }
+          },
+          "nearMissBucketIds": [],
+          "done": false
+        },
+        "art": 1,
+        "geometry": 0,
+        "framing": "Игровое поле"
+      },
+      "imageDimensionsPx": [
+        1265,
+        712
+      ],
+      "nativeStateExactForImage": true
+    },
+    {
+      "name": "24-seed0-t0-field-regression",
+      "mode": "paused",
+      "UTC": "2026-10-30T01:56:33.963Z",
+      "before": "24-seed0-t0-field-regression.before.ax.txt",
+      "image": "24-seed0-t0-field-regression.jpg",
+      "after": "24-seed0-t0-field-regression.after.ax.txt",
+      "beforeUI": {
+        "seed": 0,
+        "state": {
+          "tick": 0,
+          "rngU32": 0,
+          "ball": {
+            "pos": {
+              "x": 33192.751665295094,
+              "y": 33184.49424667716
+            },
+            "vel": {
+              "x": 0,
+              "y": 0
+            }
+          },
+          "nearMissBucketIds": [],
+          "done": false
+        },
+        "art": 1,
+        "geometry": 0,
+        "framing": "Игровое поле"
+      },
+      "afterUI": {
+        "seed": 0,
+        "state": {
+          "tick": 0,
+          "rngU32": 0,
+          "ball": {
+            "pos": {
+              "x": 33192.751665295094,
+              "y": 33184.49424667716
+            },
+            "vel": {
+              "x": 0,
+              "y": 0
+            }
+          },
+          "nearMissBucketIds": [],
+          "done": false
+        },
+        "art": 1,
+        "geometry": 0,
+        "framing": "Игровое поле"
+      },
+      "imageDimensionsPx": [
+        1265,
+        712
+      ],
+      "nativeStateExactForImage": true
+    }
+  ],
+  "nativeReferenceChecks": [
+    {
+      "new": "02-seed2-t1250-field",
+      "baseline": "E:\\R4D\\perspective\\p5-runtime\\visual-qa\\transfer-water-dark\\water\\w04\\21-seed2-t1250-field-approach.before.ax.txt",
+      "seedStateRngExact": true
+    },
+    {
+      "new": "04-seed2-t1273-field",
+      "baseline": "E:\\R4D\\perspective\\p5-runtime\\visual-qa\\transfer-water-dark\\water\\w04\\14-seed2-t1273-field.before.ax.txt",
+      "seedStateRngExact": true
+    },
+    {
+      "new": "05-seed2-t1274-field",
+      "baseline": "E:\\R4D\\perspective\\p5-runtime\\visual-qa\\transfer-water-dark\\water\\w04\\15-seed2-t1274-field.before.ax.txt",
+      "seedStateRngExact": true
+    },
+    {
+      "new": "06-seed2-t1275-field",
+      "baseline": "E:\\R4D\\perspective\\p5-runtime\\visual-qa\\transfer-water-dark\\water\\w04\\16-seed2-t1275-field.before.ax.txt",
+      "seedStateRngExact": true
+    },
+    {
+      "new": "07-seed2-t1275-hold-field",
+      "baseline": "E:\\R4D\\perspective\\p5-runtime\\visual-qa\\transfer-water-dark\\water\\w04\\17-seed2-t1275-terminal-hold-field.before.ax.txt",
+      "seedStateRngExact": true
+    },
+    {
+      "new": "23-seed1-t1019-gate-regression",
+      "baseline": "E:\\R4D\\perspective\\p5-runtime\\visual-qa\\transfer-water-dark\\water\\w04\\08-seed1-t1019-field.before.ax.txt",
+      "seedStateRngExact": true
+    },
+    {
+      "new": "16-seed1-t1114-receiver03-miss-field",
+      "reference": "native-case-windows-001/receiver-s1-receiver-03-t1115",
+      "tick": 1114,
+      "stateRngExact": true
+    },
+    {
+      "new": "17-seed1-t1115-receiver03-miss-field",
+      "reference": "native-case-windows-001/receiver-s1-receiver-03-t1115",
+      "tick": 1115,
+      "stateRngExact": true
+    },
+    {
+      "new": "18-seed1-t1116-receiver03-miss-field",
+      "reference": "native-case-windows-001/receiver-s1-receiver-03-t1115",
+      "tick": 1116,
+      "stateRngExact": true
+    }
+  ],
+  "fieldFraming": {
+    "fixedFieldDomain": {
+      "minX": -10.637626390503007,
+      "maxX": 1533.7323088433782,
+      "minY": 249.72811384258958,
+      "maxY": 1403.2984506144696
+    },
+    "baselineFieldDomain": {
+      "minX": -10.318300383148722,
+      "maxX": 1533.39607382019,
+      "minY": 249.72811384258958,
+      "maxY": 1403.2984506144696
+    },
+    "derivedDomainDeltaVsBaseline": {
+      "minX": -0.3193260073542845,
+      "maxX": 0.3362350231882374,
+      "minY": 0.0,
+      "maxY": 0.0
+    }
+  },
+  "assetIdentity": {
+    "physicalFilesVerified": 22,
+    "publicBytes": 12272726,
+    "oldNinePngExactRetained": true,
+    "onlyNewPng": [
+      "2f58c03e3ae6a7a4a4460f94976c3c5a4b93ca6045674df8140b9221741a3c0a"
+    ],
+    "textureIds": 19,
+    "instances": 34,
+    "bodyGroups": "9/21",
+    "receivers": 4
+  },
+  "files": [
+    {
+      "path": "E:/R4D/perspective/p5-runtime/visual-qa/transfer-water-dark/water/w05/01-seed2-t1250-whole.after.ax.txt",
+      "bytes": 17063,
+      "sha256": "345763a1a0adc317444f9e31faa3d45adf50e1c7ed73ac2a2f0b848192fc42dc"
+    },
+    {
+      "path": "E:/R4D/perspective/p5-runtime/visual-qa/transfer-water-dark/water/w05/01-seed2-t1250-whole.before.ax.txt",
+      "bytes": 17063,
+      "sha256": "345763a1a0adc317444f9e31faa3d45adf50e1c7ed73ac2a2f0b848192fc42dc"
+    },
+    {
+      "path": "E:/R4D/perspective/p5-runtime/visual-qa/transfer-water-dark/water/w05/01-seed2-t1250-whole.jpg",
+      "bytes": 105714,
+      "sha256": "abc47801621261896cc939b22b16e3de36491a72bd3ad3410a77fb1af8601c31"
+    },
+    {
+      "path": "E:/R4D/perspective/p5-runtime/visual-qa/transfer-water-dark/water/w05/02-seed2-t1250-field.after.ax.txt",
+      "bytes": 17077,
+      "sha256": "5e37a95c6ab795d03df20e0fce6176b048dc40b930a1f31c9c31ba1135f03e14"
+    },
+    {
+      "path": "E:/R4D/perspective/p5-runtime/visual-qa/transfer-water-dark/water/w05/02-seed2-t1250-field.before.ax.txt",
+      "bytes": 17077,
+      "sha256": "5e37a95c6ab795d03df20e0fce6176b048dc40b930a1f31c9c31ba1135f03e14"
+    },
+    {
+      "path": "E:/R4D/perspective/p5-runtime/visual-qa/transfer-water-dark/water/w05/02-seed2-t1250-field.jpg",
+      "bytes": 125042,
+      "sha256": "9b1c99c0be346aaee6e44e1c6eb0bf88e830a4842be962f1312276087eb4b77b"
+    },
+    {
+      "path": "E:/R4D/perspective/p5-runtime/visual-qa/transfer-water-dark/water/w05/03-seed2-t1272-field.after.ax.txt",
+      "bytes": 17069,
+      "sha256": "06fd0c6b5d41507606384298659947bb18d6a2ce18d53c05c2fcddbccc42cc58"
+    },
+    {
+      "path": "E:/R4D/perspective/p5-runtime/visual-qa/transfer-water-dark/water/w05/03-seed2-t1272-field.before.ax.txt",
+      "bytes": 17069,
+      "sha256": "06fd0c6b5d41507606384298659947bb18d6a2ce18d53c05c2fcddbccc42cc58"
+    },
+    {
+      "path": "E:/R4D/perspective/p5-runtime/visual-qa/transfer-water-dark/water/w05/03-seed2-t1272-field.jpg",
+      "bytes": 125108,
+      "sha256": "20993944ed7dd096fc42bc6afc456828ef97af53b835f79266beacb67cd5825a"
+    },
+    {
+      "path": "E:/R4D/perspective/p5-runtime/visual-qa/transfer-water-dark/water/w05/04-seed2-t1273-field.after.ax.txt",
+      "bytes": 17042,
+      "sha256": "127d7acc826afb1b0c24fdb62ed394cb194f44683606f8f5391e1dc767ff0f47"
+    },
+    {
+      "path": "E:/R4D/perspective/p5-runtime/visual-qa/transfer-water-dark/water/w05/04-seed2-t1273-field.before.ax.txt",
+      "bytes": 17042,
+      "sha256": "127d7acc826afb1b0c24fdb62ed394cb194f44683606f8f5391e1dc767ff0f47"
+    },
+    {
+      "path": "E:/R4D/perspective/p5-runtime/visual-qa/transfer-water-dark/water/w05/04-seed2-t1273-field.jpg",
+      "bytes": 125119,
+      "sha256": "4f8771058ff42f4b7eb2db373e1a193c38ee5ab7d797418e0d70ba3dea979082"
+    },
+    {
+      "path": "E:/R4D/perspective/p5-runtime/visual-qa/transfer-water-dark/water/w05/05-seed2-t1274-field.after.ax.txt",
+      "bytes": 17043,
+      "sha256": "9cc5e3400978a7618a4d040a5fa971c0099eda6ca59856b2352a8b0e796bf29b"
+    },
+    {
+      "path": "E:/R4D/perspective/p5-runtime/visual-qa/transfer-water-dark/water/w05/05-seed2-t1274-field.before.ax.txt",
+      "bytes": 17043,
+      "sha256": "9cc5e3400978a7618a4d040a5fa971c0099eda6ca59856b2352a8b0e796bf29b"
+    },
+    {
+      "path": "E:/R4D/perspective/p5-runtime/visual-qa/transfer-water-dark/water/w05/05-seed2-t1274-field.jpg",
+      "bytes": 125101,
+      "sha256": "c018f8c52a415da40d1339c3d35b29933720bec30e6df0770f0e1cfa8c51fac7"
+    },
+    {
+      "path": "E:/R4D/perspective/p5-runtime/visual-qa/transfer-water-dark/water/w05/06-seed2-t1275-field.after.ax.txt",
+      "bytes": 17120,
+      "sha256": "e181b38a959da005609c98b7a6a55020a95cd1fc777fb2cb09e10975e0ac9b7f"
+    },
+    {
+      "path": "E:/R4D/perspective/p5-runtime/visual-qa/transfer-water-dark/water/w05/06-seed2-t1275-field.before.ax.txt",
+      "bytes": 17120,
+      "sha256": "e181b38a959da005609c98b7a6a55020a95cd1fc777fb2cb09e10975e0ac9b7f"
+    },
+    {
+      "path": "E:/R4D/perspective/p5-runtime/visual-qa/transfer-water-dark/water/w05/06-seed2-t1275-field.jpg",
+      "bytes": 125741,
+      "sha256": "99dc46b1aaad95aa2d769a0a26d7031ceb738dd66bca00f330ebca05b13fb68d"
+    },
+    {
+      "path": "E:/R4D/perspective/p5-runtime/visual-qa/transfer-water-dark/water/w05/07-seed2-t1275-hold-field.after.ax.txt",
+      "bytes": 17120,
+      "sha256": "e181b38a959da005609c98b7a6a55020a95cd1fc777fb2cb09e10975e0ac9b7f"
+    },
+    {
+      "path": "E:/R4D/perspective/p5-runtime/visual-qa/transfer-water-dark/water/w05/07-seed2-t1275-hold-field.before.ax.txt",
+      "bytes": 17120,
+      "sha256": "e181b38a959da005609c98b7a6a55020a95cd1fc777fb2cb09e10975e0ac9b7f"
+    },
+    {
+      "path": "E:/R4D/perspective/p5-runtime/visual-qa/transfer-water-dark/water/w05/07-seed2-t1275-hold-field.jpg",
+      "bytes": 125741,
+      "sha256": "99dc46b1aaad95aa2d769a0a26d7031ceb738dd66bca00f330ebca05b13fb68d"
+    },
+    {
+      "path": "E:/R4D/perspective/p5-runtime/visual-qa/transfer-water-dark/water/w05/08-seed2-t1240-field.after.ax.txt",
+      "bytes": 17069,
+      "sha256": "f5a54613a32f810ddcaf1bb1f2715ec50eb5c9c042e6a486846f26adf70b2124"
+    },
+    {
+      "path": "E:/R4D/perspective/p5-runtime/visual-qa/transfer-water-dark/water/w05/08-seed2-t1240-field.before.ax.txt",
+      "bytes": 17069,
+      "sha256": "f5a54613a32f810ddcaf1bb1f2715ec50eb5c9c042e6a486846f26adf70b2124"
+    },
+    {
+      "path": "E:/R4D/perspective/p5-runtime/visual-qa/transfer-water-dark/water/w05/08-seed2-t1240-field.jpg",
+      "bytes": 125103,
+      "sha256": "b25f2774fb4c2a9e539694ae14eff0389120f45dfaef23a8fd642e9b42ad984c"
+    },
+    {
+      "path": "E:/R4D/perspective/p5-runtime/visual-qa/transfer-water-dark/water/w05/09-seed2-t1256-field.after.ax.txt",
+      "bytes": 17069,
+      "sha256": "d3e7a0eff41ca7d8afd07b8e2b4612c4f6c194bf225db56a48e2606414813980"
+    },
+    {
+      "path": "E:/R4D/perspective/p5-runtime/visual-qa/transfer-water-dark/water/w05/09-seed2-t1256-field.before.ax.txt",
+      "bytes": 17069,
+      "sha256": "d3e7a0eff41ca7d8afd07b8e2b4612c4f6c194bf225db56a48e2606414813980"
+    },
+    {
+      "path": "E:/R4D/perspective/p5-runtime/visual-qa/transfer-water-dark/water/w05/09-seed2-t1256-field.jpg",
+      "bytes": 125000,
+      "sha256": "c856ad4e89d66bb233493356544c134b25502f53743f6f83433792e1b4be3aaf"
+    },
+    {
+      "path": "E:/R4D/perspective/p5-runtime/visual-qa/transfer-water-dark/water/w05/10-seed2-t1260-field.after.ax.txt",
+      "bytes": 17069,
+      "sha256": "27a102fa2720c46fdf648cbe8ba2c37268d6c7a7d58e196f4883782156b78fd9"
+    },
+    {
+      "path": "E:/R4D/perspective/p5-runtime/visual-qa/transfer-water-dark/water/w05/10-seed2-t1260-field.before.ax.txt",
+      "bytes": 17069,
+      "sha256": "27a102fa2720c46fdf648cbe8ba2c37268d6c7a7d58e196f4883782156b78fd9"
+    },
+    {
+      "path": "E:/R4D/perspective/p5-runtime/visual-qa/transfer-water-dark/water/w05/10-seed2-t1260-field.jpg",
+      "bytes": 125084,
+      "sha256": "d0fad644c6a02077e758d8ca721a27af16751578ce459f50ed321dd92b2fdc09"
+    },
+    {
+      "path": "E:/R4D/perspective/p5-runtime/visual-qa/transfer-water-dark/water/w05/11-seed2-t1264-field.after.ax.txt",
+      "bytes": 17069,
+      "sha256": "2a9e853b342389820ca584b283f776edab4b3aa3d068c83ba741ffef86ec57c5"
+    },
+    {
+      "path": "E:/R4D/perspective/p5-runtime/visual-qa/transfer-water-dark/water/w05/11-seed2-t1264-field.before.ax.txt",
+      "bytes": 17069,
+      "sha256": "2a9e853b342389820ca584b283f776edab4b3aa3d068c83ba741ffef86ec57c5"
+    },
+    {
+      "path": "E:/R4D/perspective/p5-runtime/visual-qa/transfer-water-dark/water/w05/11-seed2-t1264-field.jpg",
+      "bytes": 125030,
+      "sha256": "b62306ca1407964412234af1e5613f451c6a4785c4c14d8a7c6fa2d785857875"
+    },
+    {
+      "path": "E:/R4D/perspective/p5-runtime/visual-qa/transfer-water-dark/water/w05/12-seed2-t1273-whole.after.ax.txt",
+      "bytes": 17116,
+      "sha256": "6c49ba5357079ca5449b7937c6caf837ef9ba8be3b58ff66663bf489a5f78c34"
+    },
+    {
+      "path": "E:/R4D/perspective/p5-runtime/visual-qa/transfer-water-dark/water/w05/12-seed2-t1273-whole.before.ax.txt",
+      "bytes": 17116,
+      "sha256": "6c49ba5357079ca5449b7937c6caf837ef9ba8be3b58ff66663bf489a5f78c34"
+    },
+    {
+      "path": "E:/R4D/perspective/p5-runtime/visual-qa/transfer-water-dark/water/w05/12-seed2-t1273-whole.jpg",
+      "bytes": 106175,
+      "sha256": "0a1bf60511862886693521b16c1f9dbb67008e7ad29505850d85ccb43ec5c83a"
+    },
+    {
+      "path": "E:/R4D/perspective/p5-runtime/visual-qa/transfer-water-dark/water/w05/13-seed2-t1275-whole.after.ax.txt",
+      "bytes": 17140,
+      "sha256": "6d4a928538e8749f532f941048620841b660cba94cc639561e261fab60c8e556"
+    },
+    {
+      "path": "E:/R4D/perspective/p5-runtime/visual-qa/transfer-water-dark/water/w05/13-seed2-t1275-whole.before.ax.txt",
+      "bytes": 17140,
+      "sha256": "6d4a928538e8749f532f941048620841b660cba94cc639561e261fab60c8e556"
+    },
+    {
+      "path": "E:/R4D/perspective/p5-runtime/visual-qa/transfer-water-dark/water/w05/13-seed2-t1275-whole.jpg",
+      "bytes": 106392,
+      "sha256": "0a2ea859f16e3483e512704b5858da46db021f8abbd3be4054bb68abb8c5dcb6"
+    },
+    {
+      "path": "E:/R4D/perspective/p5-runtime/visual-qa/transfer-water-dark/water/w05/14-seed2-t1275-artoff-geometry.after.ax.txt",
+      "bytes": 17168,
+      "sha256": "93bd0457237821500fa3bed14e190dd377cf0e22e4d398b1c3595837b35c6e0b"
+    },
+    {
+      "path": "E:/R4D/perspective/p5-runtime/visual-qa/transfer-water-dark/water/w05/14-seed2-t1275-artoff-geometry.before.ax.txt",
+      "bytes": 17168,
+      "sha256": "93bd0457237821500fa3bed14e190dd377cf0e22e4d398b1c3595837b35c6e0b"
+    },
+    {
+      "path": "E:/R4D/perspective/p5-runtime/visual-qa/transfer-water-dark/water/w05/14-seed2-t1275-artoff-geometry.jpg",
+      "bytes": 39138,
+      "sha256": "56a99fd4da0271ca5b80e41ffe53e00e6bfee0bc4a26c6dde6328c8654df9454"
+    },
+    {
+      "path": "E:/R4D/perspective/p5-runtime/visual-qa/transfer-water-dark/water/w05/15-seed2-receiver-approach-realtime.after.ax.txt",
+      "bytes": 17128,
+      "sha256": "8414a68157d66eb5512d092af39aa97dbfc02731510e5d40be5654f8b6c88d51"
+    },
+    {
+      "path": "E:/R4D/perspective/p5-runtime/visual-qa/transfer-water-dark/water/w05/15-seed2-receiver-approach-realtime.before.ax.txt",
+      "bytes": 17031,
+      "sha256": "94d57d5dee1854baef0a144ba8444d1d3c61e4033e9fbc29ebfa8fe449afe57d"
+    },
+    {
+      "path": "E:/R4D/perspective/p5-runtime/visual-qa/transfer-water-dark/water/w05/15-seed2-receiver-approach-realtime.jpg",
+      "bytes": 124735,
+      "sha256": "82bc422ffb4395eb8cc1e48c82ecc7919bab0444de974c7882d1c25c69031d0a"
+    },
+    {
+      "path": "E:/R4D/perspective/p5-runtime/visual-qa/transfer-water-dark/water/w05/16-seed1-t1114-receiver03-miss-field.after.ax.txt",
+      "bytes": 17070,
+      "sha256": "dda730ec60f9c91f7d73c32b84bf4f2db453615e1ca0b604041d11ea04e083e6"
+    },
+    {
+      "path": "E:/R4D/perspective/p5-runtime/visual-qa/transfer-water-dark/water/w05/16-seed1-t1114-receiver03-miss-field.before.ax.txt",
+      "bytes": 17070,
+      "sha256": "dda730ec60f9c91f7d73c32b84bf4f2db453615e1ca0b604041d11ea04e083e6"
+    },
+    {
+      "path": "E:/R4D/perspective/p5-runtime/visual-qa/transfer-water-dark/water/w05/16-seed1-t1114-receiver03-miss-field.jpg",
+      "bytes": 125025,
+      "sha256": "b8e25ca68c776f2661ac4e2938db9e97148ad00156b476b5afc24796fea8b6fd"
+    },
+    {
+      "path": "E:/R4D/perspective/p5-runtime/visual-qa/transfer-water-dark/water/w05/17-seed1-t1115-receiver03-miss-field.after.ax.txt",
+      "bytes": 17044,
+      "sha256": "c5b6acd8907f75df157e26f8dca1c85fe8e6cfef2069d395183dcc8a01e4c730"
+    },
+    {
+      "path": "E:/R4D/perspective/p5-runtime/visual-qa/transfer-water-dark/water/w05/17-seed1-t1115-receiver03-miss-field.before.ax.txt",
+      "bytes": 17044,
+      "sha256": "c5b6acd8907f75df157e26f8dca1c85fe8e6cfef2069d395183dcc8a01e4c730"
+    },
+    {
+      "path": "E:/R4D/perspective/p5-runtime/visual-qa/transfer-water-dark/water/w05/17-seed1-t1115-receiver03-miss-field.jpg",
+      "bytes": 124988,
+      "sha256": "daf89a28ae370f560db853ec2ed41b9b6c301d368eb9679fc7d277f1b7c57c6e"
+    },
+    {
+      "path": "E:/R4D/perspective/p5-runtime/visual-qa/transfer-water-dark/water/w05/18-seed1-t1116-receiver03-miss-field.after.ax.txt",
+      "bytes": 17044,
+      "sha256": "8e6ccfa54bd9b4abeaaf1261ea0ae19f65c46defa635554da8b2d467c54535e8"
+    },
+    {
+      "path": "E:/R4D/perspective/p5-runtime/visual-qa/transfer-water-dark/water/w05/18-seed1-t1116-receiver03-miss-field.before.ax.txt",
+      "bytes": 17044,
+      "sha256": "8e6ccfa54bd9b4abeaaf1261ea0ae19f65c46defa635554da8b2d467c54535e8"
+    },
+    {
+      "path": "E:/R4D/perspective/p5-runtime/visual-qa/transfer-water-dark/water/w05/18-seed1-t1116-receiver03-miss-field.jpg",
+      "bytes": 124948,
+      "sha256": "b284d9b5ead18823f6ee9a7ee862a164a011f800e5e06c7decd4256818fa2ff8"
+    },
+    {
+      "path": "E:/R4D/perspective/p5-runtime/visual-qa/transfer-water-dark/water/w05/19-seed1-missed-approach-realtime.after.ax.txt",
+      "bytes": 17032,
+      "sha256": "ee083ab83f7cf1b237b4c49e757b867131e5cb7ac26855ef447ea7531b75feb3"
+    },
+    {
+      "path": "E:/R4D/perspective/p5-runtime/visual-qa/transfer-water-dark/water/w05/19-seed1-missed-approach-realtime.before.ax.txt",
+      "bytes": 17030,
+      "sha256": "df1eceded216ebf2e20b221fdeb5ec513a6ddd430bd65cb37402f64856779cfc"
+    },
+    {
+      "path": "E:/R4D/perspective/p5-runtime/visual-qa/transfer-water-dark/water/w05/19-seed1-missed-approach-realtime.jpg",
+      "bytes": 124732,
+      "sha256": "5fbd6274e2308cbd383dd0d10dc9f8a8861efee56ccec428fba4f11cc1975a9c"
+    },
+    {
+      "path": "E:/R4D/perspective/p5-runtime/visual-qa/transfer-water-dark/water/w05/20-seed1-t1118-front-rim-field.after.ax.txt",
+      "bytes": 17069,
+      "sha256": "bdebb42159cd2dd50e239a732fd633e6fb2801dabf2319beb856c6e665638934"
+    },
+    {
+      "path": "E:/R4D/perspective/p5-runtime/visual-qa/transfer-water-dark/water/w05/20-seed1-t1118-front-rim-field.before.ax.txt",
+      "bytes": 17069,
+      "sha256": "bdebb42159cd2dd50e239a732fd633e6fb2801dabf2319beb856c6e665638934"
+    },
+    {
+      "path": "E:/R4D/perspective/p5-runtime/visual-qa/transfer-water-dark/water/w05/20-seed1-t1118-front-rim-field.jpg",
+      "bytes": 124835,
+      "sha256": "0e3983ff801ee8e5bc279ae8a3344fc877cae6e9180cef5412e13f25863bd868"
+    },
+    {
+      "path": "E:/R4D/perspective/p5-runtime/visual-qa/transfer-water-dark/water/w05/21-seed1-t1119-front-rim-field.after.ax.txt",
+      "bytes": 17044,
+      "sha256": "ce4da16f63e8607ae7b3b13508d2b649b145e22feec76c55475e1072381cacdb"
+    },
+    {
+      "path": "E:/R4D/perspective/p5-runtime/visual-qa/transfer-water-dark/water/w05/21-seed1-t1119-front-rim-field.before.ax.txt",
+      "bytes": 17044,
+      "sha256": "ce4da16f63e8607ae7b3b13508d2b649b145e22feec76c55475e1072381cacdb"
+    },
+    {
+      "path": "E:/R4D/perspective/p5-runtime/visual-qa/transfer-water-dark/water/w05/21-seed1-t1119-front-rim-field.jpg",
+      "bytes": 124939,
+      "sha256": "f7d6e39c0260a6ac0dcb92128eb5845c584739185a28dea87f1320723e18d52f"
+    },
+    {
+      "path": "E:/R4D/perspective/p5-runtime/visual-qa/transfer-water-dark/water/w05/22-seed1-t1120-front-rim-field.after.ax.txt",
+      "bytes": 17044,
+      "sha256": "333805d23693db0cc6bfe3f2fe7733d7fd043497b6a232f87db66004bd3811ac"
+    },
+    {
+      "path": "E:/R4D/perspective/p5-runtime/visual-qa/transfer-water-dark/water/w05/22-seed1-t1120-front-rim-field.before.ax.txt",
+      "bytes": 17044,
+      "sha256": "333805d23693db0cc6bfe3f2fe7733d7fd043497b6a232f87db66004bd3811ac"
+    },
+    {
+      "path": "E:/R4D/perspective/p5-runtime/visual-qa/transfer-water-dark/water/w05/22-seed1-t1120-front-rim-field.jpg",
+      "bytes": 124932,
+      "sha256": "669798db74ceb7feedf5fc08e6652e8abd6500f77cdbcf5053cced1e80c9566f"
+    },
+    {
+      "path": "E:/R4D/perspective/p5-runtime/visual-qa/transfer-water-dark/water/w05/23-seed1-t1019-gate-regression.after.ax.txt",
+      "bytes": 17069,
+      "sha256": "fbab45126bc4d0e903587cf49ba93c7bf6f3f7913565e312e01abf61456c9708"
+    },
+    {
+      "path": "E:/R4D/perspective/p5-runtime/visual-qa/transfer-water-dark/water/w05/23-seed1-t1019-gate-regression.before.ax.txt",
+      "bytes": 17069,
+      "sha256": "fbab45126bc4d0e903587cf49ba93c7bf6f3f7913565e312e01abf61456c9708"
+    },
+    {
+      "path": "E:/R4D/perspective/p5-runtime/visual-qa/transfer-water-dark/water/w05/23-seed1-t1019-gate-regression.jpg",
+      "bytes": 125006,
+      "sha256": "dfffd19b6567828da9fb37b968ef542f7bf010dd18325662d128bf44ac1a9e20"
+    },
+    {
+      "path": "E:/R4D/perspective/p5-runtime/visual-qa/transfer-water-dark/water/w05/24-seed0-t0-field-regression.after.ax.txt",
+      "bytes": 17012,
+      "sha256": "8e119b0ede25694bbf5137a0c64add3bfcd80706531224904c8abb2e6f28c82e"
+    },
+    {
+      "path": "E:/R4D/perspective/p5-runtime/visual-qa/transfer-water-dark/water/w05/24-seed0-t0-field-regression.before.ax.txt",
+      "bytes": 17012,
+      "sha256": "8e119b0ede25694bbf5137a0c64add3bfcd80706531224904c8abb2e6f28c82e"
+    },
+    {
+      "path": "E:/R4D/perspective/p5-runtime/visual-qa/transfer-water-dark/water/w05/24-seed0-t0-field-regression.jpg",
+      "bytes": 124462,
+      "sha256": "1b53799d4b295dd82464e6aa23076c0ead4a91fd99796fe596fd5d71d631d28e"
+    },
+    {
+      "path": "E:/R4D/perspective/p5-runtime/visual-qa/transfer-water-dark/water/w05/browser-session.json",
+      "bytes": 368,
+      "sha256": "9200f891e584648a13bcbbaed7a261ccc7ea8f18042c3d2465924cf895bfb3a1"
+    },
+    {
+      "path": "E:/R4D/perspective/p5-runtime/visual-qa/transfer-water-dark/water/w05/capture-events.jsonl",
+      "bytes": 5504,
+      "sha256": "7dfc2a29d6dfeeed4d300212d169b304225fb1a68b91257e24744fa70f94aa51"
+    },
+    {
+      "path": "E:/R4D/perspective/p5-runtime/visual-qa/transfer-water-dark/water/w05/capture-validation.json",
+      "bytes": 37733,
+      "sha256": "0b4509f8f759a7735daf89578b168c80beda85e14444e6db11895ac7ff853d86"
+    },
+    {
+      "path": "E:/R4D/perspective/p5-runtime/visual-qa/transfer-water-dark/water/w05/end-water-guard.txt",
+      "bytes": 382,
+      "sha256": "fe57a34bb2f4cfe7c77dace49c55b4f0225da7e6efa6f9e9285a4d14a1ecc48c"
+    },
+    {
+      "path": "E:/R4D/perspective/p5-runtime/visual-qa/transfer-water-dark/water/w05/FILE_INDEX.json",
+      "bytes": 6580,
+      "sha256": "dd5a85b7187b90197527fef5763fd31a64b16ae7e84f53a092a33674dd0031b8"
+    },
+    {
+      "path": "E:/R4D/perspective/p5-runtime/visual-qa/transfer-water-dark/water/w05/front-rim-paired-review.json",
+      "bytes": 4527,
+      "sha256": "5d2a0eaffce62ca85ed6ee8433c5e4cb6f49191daef2f1962e8117566f8793ad"
+    },
+    {
+      "path": "E:/R4D/perspective/p5-runtime/visual-qa/transfer-water-dark/water/w05/identity-verification.json",
+      "bytes": 5960,
+      "sha256": "990c5ba463aeca62448d263277b0f44119a5bc61e370886b11c0aa26907e2275"
+    },
+    {
+      "path": "E:/R4D/perspective/p5-runtime/visual-qa/transfer-water-dark/water/w05/post-browser-guard.json",
+      "bytes": 391,
+      "sha256": "e2b1087accc1f5e8517768e55036c3e9b2c4e3aafcfb966e1eef1239f89cefc7"
+    },
+    {
+      "path": "E:/R4D/perspective/p5-runtime/visual-qa/transfer-water-dark/water/w05/preview-index.json",
+      "bytes": 14751,
+      "sha256": "470d4bed32cfa49cda8c143a95da57947f330c6e799122974b0329dd9e5db50f"
+    },
+    {
+      "path": "E:/R4D/perspective/p5-runtime/visual-qa/transfer-water-dark/water/w05/producer-owner.json",
+      "bytes": 520,
+      "sha256": "084fb2dc81e77305689aceedbc07e03e74ac457f48fdd92b600040f069004c96"
+    },
+    {
+      "path": "E:/R4D/perspective/p5-runtime/visual-qa/transfer-water-dark/water/w05/seed1-end-of-replay.ax.txt",
+      "bytes": 17132,
+      "sha256": "c72b2952e02996ce2768a85c557638f7db76d0aa1ca6da47e0bf27ffe085cc87"
+    },
+    {
+      "path": "E:/R4D/perspective/p5-runtime/visual-qa/transfer-water-dark/water/w05/seed2-end-of-replay.ax.txt",
+      "bytes": 17128,
+      "sha256": "8414a68157d66eb5512d092af39aa97dbfc02731510e5d40be5654f8b6c88d51"
+    },
+    {
+      "path": "E:/R4D/perspective/p5-runtime/visual-qa/transfer-water-dark/water/w05/staged-manifest.json",
+      "bytes": 46425,
+      "sha256": "7a7f55effb5c7a4d5b60c4752c14bc2fa0ca846817f94ca88e12bd165ddba965"
+    },
+    {
+      "path": "E:/R4D/perspective/p5-runtime/visual-qa/transfer-water-dark/water/w05/start-guard.txt",
+      "bytes": 2241,
+      "sha256": "8ab6caeb778e1548c69d11e96ea4f28957cc2bf782be8587b4e1802fddc55e5e"
+    }
+  ],
+  "evidenceFileCount": 86,
+  "evidenceBytes": 3837213,
+  "jpegCount": 24,
+  "findings": [
+    {
+      "id": "W04-V01",
+      "status": "CLOSED_SCOPED_ON_W05",
+      "case": "seed2/receiver02",
+      "observation": "Sphere remains visibly present over water at1272/1273/1274/1275 and stable hold. Earlier1240–1264 back-wall concealment and gradual crescent/reveal remain natural in checked views. Old binary pop at IN_BUCKET is absent.",
+      "limits": "Only saved repro and checked approach; not all receiver entries/front-wall volume PASS."
+    },
+    {
+      "id": "W01-V01",
+      "status": "CLOSED_RETAINED",
+      "case": "seed0/start Field0",
+      "observation": "Complete startup sphere remains visible in fixed framing."
+    }
+  ],
+  "frontRimScope": {
+    "preparedAtUTC": "2026-10-30T02:15:53.419616+00:00",
+    "sourceTQACommit": "17bbf8ae6e2d9e8a49e42933cfe2b4c089b8a3f3",
+    "seed": 1,
+    "receiver": "receiver-03",
+    "frontDepthNative": 35213.30892737734,
+    "ownPausedFrames": [
+      "20-seed1-t1118-front-rim-field",
+      "21-seed1-t1119-front-rim-field",
+      "22-seed1-t1120-front-rim-field"
+    ],
+    "sameStateRngAsTQA": [
+      {
+        "tick": 1118,
+        "nativeY": 35234.8038315,
+        "frontDepth": 35213.30892737734,
+        "aheadOfProxy": true
+      },
+      {
+        "tick": 1119,
+        "nativeY": 35240.6946407,
+        "frontDepth": 35213.30892737734,
+        "aheadOfProxy": true
+      },
+      {
+        "tick": 1120,
+        "nativeY": 35246.6099499,
+        "frontDepth": 35213.30892737734,
+        "aheadOfProxy": true
+      }
+    ],
+    "externalReferences": [
+      {
+        "snapshot": {
+          "path": "E:/R4D/perspective/p5-runtime/technical-qa/transfer-water-dark/water/w05/snapshots/s1-t1118-front-vqa-match.json",
+          "bytes": 154431,
+          "sha256": "773036b16a9d16dc989a9e02ed3ad0e25930a90ba5ea0dd2973dccb0bd355709"
+        },
+        "image": {
+          "path": "E:/R4D/perspective/p5-runtime/technical-qa/transfer-water-dark/water/w05/screenshots/s1-t1118-front-vqa-match.png",
+          "bytes": 119728,
+          "sha256": "5449938093b346e7353ff6f1a156c6c8404e12e8c253799e6dee80d50c094df8"
+        },
+        "ownCapture": "20-seed1-t1118-front-rim-field",
+        "nativeStateRngEqual": true
+      },
+      {
+        "snapshot": {
+          "path": "E:/R4D/perspective/p5-runtime/technical-qa/transfer-water-dark/water/w05/snapshots/s1-t1119-front-vqa-match.json",
+          "bytes": 154433,
+          "sha256": "7344f0e5bd3a7d3be4e4421f6197129c06fa34c7a512ff5293a4cecf6c71a535"
+        },
+        "image": {
+          "path": "E:/R4D/perspective/p5-runtime/technical-qa/transfer-water-dark/water/w05/screenshots/s1-t1119-front-vqa-match.png",
+          "bytes": 119749,
+          "sha256": "ddae710c142c96a60c0634487801a53d23975cafe5162ae7e74c1d4d72626d23"
+        },
+        "ownCapture": "21-seed1-t1119-front-rim-field",
+        "nativeStateRngEqual": true
+      },
+      {
+        "snapshot": {
+          "path": "E:/R4D/perspective/p5-runtime/technical-qa/transfer-water-dark/water/w05/snapshots/s1-t1120-front-vqa-match.json",
+          "bytes": 154433,
+          "sha256": "fea54414918a66513c208a2e2f2f85e6593c159ab91db9c4ff271f996dfd5e6f"
+        },
+        "image": {
+          "path": "E:/R4D/perspective/p5-runtime/technical-qa/transfer-water-dark/water/w05/screenshots/s1-t1120-front-vqa-match.png",
+          "bytes": 119753,
+          "sha256": "d54581073f53b6d5bd341f2a5007b93f3c3644951952e5566d65cd8729ba3d55"
+        },
+        "ownCapture": "22-seed1-t1120-front-rim-field",
+        "nativeStateRngEqual": true
+      },
+      {
+        "snapshot": {
+          "path": "E:/R4D/perspective/p5-runtime/technical-qa/transfer-water-dark/water/w05/snapshots/s1-motion-miss-paused.json",
+          "bytes": 158849,
+          "sha256": "6b163fd36ce9525ceb66cfa9c9957faeda39acbbdec632343c2a26c3d637c15a"
+        },
+        "image": {
+          "path": "E:/R4D/perspective/p5-runtime/technical-qa/transfer-water-dark/water/w05/screenshots/s1-motion-miss-paused.png",
+          "bytes": 119711,
+          "sha256": "9b864e568bcf62fac48c4b23d9817885dbb45924aef87402621b387fa75ab04e"
+        },
+        "tick": 1131,
+        "source": "TQA retained paused frame, visually reviewed by VQA; not VQA own capture",
+        "state": {
+          "tick": 1131,
+          "rngU32": 1403919595,
+          "ball": {
+            "pos": {
+              "x": 33464.9304959,
+              "y": 35313.2953511
+            },
+            "vel": {
+              "x": 809.8844534,
+              "y": 1236.9618455
+            }
+          },
+          "nearMissBucketIds": [],
+          "done": false
+        },
+        "actualMagic": "JPEG bytes despite .png extension",
+        "imageDimensionsPx": [
+          1265,
+          712
+        ]
+      }
+    ],
+    "observations": "Own1118–1120: fully visible sphere moves over the upper front bevel with no noticeable jump. Retained TQA1131: full sphere overlays the opaque light front wall near medallion. No partial front hide/reveal is demonstrated.",
+    "interpretation": "Forward-layer sphere is plausible within the current flat2.5D depth proxy: ground point is already ahead of logical footprint. This does not prove natural 3D support, object height, solid front-wall volume or a sorting defect. No new blocking finding established; artificial hide is not implied.",
+    "verdict": "NOTE / FRONT_HIDE_UNVERIFIED",
+    "oldEntryClosureIndependent": true,
+    "newSeedsOrBrowserRuns": 0
+  },
+  "otherObservations": "No significant new seams/double front or loss of shadow support in checked normal Whole/Field. ArtOff removes bases/rims/front and preserves native state/RNG. Gate1019 appearance has no significant observed regression.",
+  "replayOutcomes": [
+    {
+      "seed": 2,
+      "terminalState": {
+        "tick": 1275,
+        "rngU32": 1581479664,
+        "ball": {
+          "pos": {
+            "x": 33056.7943023,
+            "y": 35158.6773888
+          },
+          "vel": {
+            "x": 656.3655586,
+            "y": 871.6370838
+          }
+        },
+        "nearMissBucketIds": [],
+        "done": true,
+        "result": {
+          "kind": "IN_BUCKET",
+          "bucketId": "receiver-02"
+        }
+      }
+    },
+    {
+      "seed": 1,
+      "terminalState": {
+        "tick": 1196,
+        "rngU32": 1403919595,
+        "ball": {
+          "pos": {
+            "x": 33728.1429454,
+            "y": 35767.8604491
+          },
+          "vel": {
+            "x": 809.8844534,
+            "y": 1555.4618455
+          }
+        },
+        "nearMissBucketIds": [],
+        "done": true,
+        "result": {
+          "kind": "LOST",
+          "finalX": 33728.1429454,
+          "nearMissBucketIds": []
+        }
+      }
+    }
+  ],
+  "newThrows": 0,
+  "newOracleRun": false,
+  "ownBrowserClosed": true,
+  "serverWrites": 0,
+  "tokenGranted": false,
+  "fullWaterArtPass": false,
+  "limitations": [
+    "Front-wall volumetric hide/reveal remains UNVERIFIED; NOTE not a new established sorting defect.",
+    "Optional seed0 receiver02 miss1244–1246 not run; no new entry matrix or all-cups PASS.",
+    "Arch07 prior shadow/support PARTIAL and missing families/environment/sourceClip masks/long-wall/near-edge remain unverified.",
+    "Artist rim uncertainty ±3texturepx/outer edge<=1tex not independently remeasured.",
+    "Realtime screenshot15 visually tick1265, AX bounds1232..1275; screenshot19 visually1113, AX1078..1133. Never exact native image state claims for realtime.",
+    "Frozen Jungle and w01/w02/w04 reports/evidence unchanged."
+  ]
+}
