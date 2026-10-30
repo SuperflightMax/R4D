@@ -1,5 +1,6 @@
 param([string]$SpecsJson='', [string]$Output='E:/R4D/perspective/p5-runtime/asset-artist/transfer-water-dark/water/manifests/contact-contour-measurements.json')
 $ErrorActionPreference='Stop'
+$env:TEMP='E:/R4D/perspective/p5-runtime/asset-artist/transfer-water-dark/water/temp';$env:TMP=$env:TEMP
 Add-Type -AssemblyName System.Drawing
 $taskSpecs=@(
   @{name='flower-v1';cx=628.0;rx=422.0},

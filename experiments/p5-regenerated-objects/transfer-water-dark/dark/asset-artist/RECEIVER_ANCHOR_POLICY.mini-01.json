@@ -1,0 +1,192 @@
+{
+  "contractCommit": "5d40b82ac6b2b69f7077bb9bfe58c7560fbf783e",
+  "ball": {
+    "footprintWidthPx": 1073,
+    "measurement": "New alpha>=16 bbox, painted sphere height1089vswidth1073; no anisotropic correction, approximate8texturepx",
+    "groundAnchorPx": [
+      627.5,
+      1168
+    ],
+    "visualCenterPx": [
+      627.5,
+      623.5
+    ],
+    "sha256": "e125d94419ad73c2c67461546f704b974021866b21085d32a50b51274da2ac46",
+    "liftPx": 544.5
+  },
+  "receiver": {
+    "pixelIdenticalNativeEdit": false,
+    "backSha256": "bf3f2fa5143bf6180dcf44f80e711bb97094e2eefdf24c1b0dab6f6d5bd13a6b",
+    "frontSha256": "27396c82ed4d2cd0bc8ce8e046a02da92890e59e3dbfeba68823aadc561e3d71",
+    "captureFootprintPx": [
+      330,
+      223
+    ],
+    "opticalOpeningPointPx": [
+      627.5,
+      440
+    ],
+    "opticalUncertaintyTexturePx": 5,
+    "measurement": "Manual clear dark opening point, capture subregion inside full opening; not reconstructed3D pit"
+  },
+  "formula": "sB=projected r16 diameter/1073;sR=projected bucket diameter/330;hR=544.5*sB/sR;A=[627.5,440+hR];both groundAnchor and footprint.center=A;O separate",
+  "entries": [
+    {
+      "targetId": "receiver-01",
+      "native": {
+        "anchor": [
+          32895.27416667457,
+          34639.03401006639
+        ],
+        "radius": 43.00973005868298,
+        "depthRadius": 43.00973005868298,
+        "geometryRefs": [
+          "receiver-01"
+        ]
+      },
+      "sourceAnchor": [
+        253.047586047588,
+        1193.5205590205587
+      ],
+      "ballProjectedWidthSourcePx": 37.310331172216166,
+      "receiverProjectedWidthSourcePx": 100.2942799621822,
+      "receiverWidthIndependentDelta": 0.0,
+      "sB": 0.03477197686133846,
+      "sR": 0.3039220604914612,
+      "ballLiftTexturePx": 544.5,
+      "hRTexturePx": 62.29669991833558,
+      "opticalOpeningPointTexturePx": [
+        627.5,
+        440
+      ],
+      "logicalGroundAnchorTexturePx": [
+        627.5,
+        502.29669991833555
+      ],
+      "visualCupShiftSourcePx": [
+        0,
+        -18.933341400998792
+      ],
+      "geometryModified": false
+    },
+    {
+      "targetId": "receiver-02",
+      "native": {
+        "anchor": [
+          33190.99753486421,
+          34639.561335368126
+        ],
+        "radius": 42.51622154033621,
+        "depthRadius": 42.51622154033621,
+        "geometryRefs": [
+          "receiver-02"
+        ]
+      },
+      "sourceAnchor": [
+        596.4116787531084,
+        1193.9362485117426
+      ],
+      "ballProjectedWidthSourcePx": 37.165512498560815,
+      "receiverProjectedWidthSourcePx": 98.77282336151154,
+      "receiverWidthIndependentDelta": 0.0,
+      "sB": 0.03463701071627289,
+      "sR": 0.2993115859439744,
+      "ballLiftTexturePx": 544.5,
+      "hRTexturePx": 63.01076610693181,
+      "opticalOpeningPointTexturePx": [
+        627.5,
+        440
+      ],
+      "logicalGroundAnchorTexturePx": [
+        627.5,
+        503.0107661069318
+      ],
+      "visualCupShiftSourcePx": [
+        0,
+        -18.85985233501059
+      ],
+      "geometryModified": false
+    },
+    {
+      "targetId": "receiver-03",
+      "native": {
+        "anchor": [
+          33492.7346694948,
+          34640.77828436916
+        ],
+        "radius": 41.25417787781912,
+        "depthRadius": 41.25417787781912,
+        "geometryRefs": [
+          "receiver-03"
+        ]
+      },
+      "sourceAnchor": [
+        946.873576777102,
+        1194.8959380449294
+      ],
+      "ballProjectedWidthSourcePx": 37.20158674024799,
+      "receiverProjectedWidthSourcePx": 95.92007121368351,
+      "receiverWidthIndependentDelta": 0.0,
+      "sB": 0.03467063069920596,
+      "sR": 0.2906668824657076,
+      "ballLiftTexturePx": 544.5,
+      "hRTexturePx": 64.94774449560781,
+      "opticalOpeningPointTexturePx": [
+        627.5,
+        440
+      ],
+      "logicalGroundAnchorTexturePx": [
+        627.5,
+        504.9477444956078
+      ],
+      "visualCupShiftSourcePx": [
+        0,
+        -18.878158415717643
+      ],
+      "geometryModified": false
+    },
+    {
+      "targetId": "receiver-04",
+      "native": {
+        "anchor": [
+          33790.663139784796,
+          34639.995941136774
+        ],
+        "radius": 41.44518157305826,
+        "depthRadius": 41.44518157305826,
+        "geometryRefs": [
+          "receiver-04"
+        ]
+      },
+      "sourceAnchor": [
+        1292.8502296930496,
+        1194.2789204426838
+      ],
+      "ballProjectedWidthSourcePx": 37.37645715618169,
+      "receiverProjectedWidthSourcePx": 96.81719516607654,
+      "receiverWidthIndependentDelta": 0.0,
+      "sB": 0.03483360405981518,
+      "sR": 0.29338543989720167,
+      "ballLiftTexturePx": 544.5,
+      "hRTexturePx": 64.6483936531244,
+      "opticalOpeningPointTexturePx": [
+        627.5,
+        440
+      ],
+      "logicalGroundAnchorTexturePx": [
+        627.5,
+        504.6483936531244
+      ],
+      "visualCupShiftSourcePx": [
+        0,
+        -18.966897410569363
+      ],
+      "geometryModified": false
+    }
+  ],
+  "limits": [
+    "Back/front registration and rim entry require actual native/Pixi frames; no pixel identity claimed",
+    "Manual optical region/capture size, not a3D pit or height collider",
+    "No Jungle17.8px or Water18.6px constant reused; no trigger/start/native change or sinking/fade"
+  ]
+}

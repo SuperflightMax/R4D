@@ -1,5 +1,6 @@
 param([string]$Directory='E:/R4D/perspective/p5-runtime/asset-artist/transfer-water-dark/water/raw')
 $ErrorActionPreference='Stop'
+$env:TEMP='E:/R4D/perspective/p5-runtime/asset-artist/transfer-water-dark/water/temp';$env:TMP=$env:TEMP
 Add-Type -AssemblyName System.Drawing
 $taskReferences=@(Get-ChildItem -LiteralPath (Join-Path $PSHOME 'ref') -Filter '*.dll' -File | Select-Object -ExpandProperty FullName) + @([System.Drawing.Bitmap].Assembly.Location,(Join-Path $PSHOME 'System.Private.Windows.GdiPlus.dll'),(Join-Path $PSHOME 'System.Private.Windows.Core.dll'))
 Add-Type -TypeDefinition @'
