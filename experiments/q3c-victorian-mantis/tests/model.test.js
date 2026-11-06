@@ -82,3 +82,28 @@ test('stage boundaries and integer clock do not introduce jumps or dropped comma
   assert.throws(() => scene.advance(-1), RangeError);
   assert.throws(() => scene.advance(Infinity), RangeError);
 });
+
+test('entry stays above a tall viewport and begins falling continuously; resize cannot teleport it', () => {
+  const scene = new SceneModel(42);
+  scene.prepareEntry(-1100);
+  const waiting = scene.snapshot();
+  assert.equal(waiting.phase, 'waiting');
+  assert.ok(waiting.pose.body.y + 160 <= -1100);
+  scene.activate('touch');
+  near(scene.snapshot().pose.body.y, waiting.pose.body.y);
+  scene.advance(.4);
+  near(scene.snapshot().pose.body.y, waiting.pose.body.y);
+  scene.prepareEntry(-2000);
+  near(scene.snapshot().entryY, waiting.entryY);
+  scene.advance(DT);
+  const firstStep = scene.snapshot().pose.body.y - waiting.pose.body.y;
+  assert.ok(firstStep > 0 && firstStep < 1);
+  scene.advance(1.05 - DT);
+  near(scene.snapshot().pose.body.y, -82);
+  scene.reset();
+  scene.prepareEntry(-900);
+  assert.equal(scene.snapshot().phase, 'waiting');
+  assert.equal(scene.snapshot().tick, 0);
+  assert.ok(scene.snapshot().pose.body.y + 160 <= -900);
+  assert.deepEqual(scene.snapshot().events, []);
+});

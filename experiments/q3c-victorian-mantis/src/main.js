@@ -30,6 +30,7 @@ try {
 
   function render(paint = false) {
     view.resize(host.clientWidth, host.clientHeight);
+    model.prepareEntry(view.toWorld(0, 0).y);
     const snapshot = model.snapshot();
     view.render(snapshot);
     if (snapshot.phase !== lastPhase) {
@@ -53,7 +54,9 @@ try {
   });
   host.addEventListener('pointermove', pointer);
   window.addEventListener('keydown', event => {
-    if (event.target instanceof HTMLButtonElement) return;
+    // Enter/Space retain the focused button's native click. Other keys still
+    // activate the scene when restart has left keyboard focus on that button.
+    if (event.target instanceof HTMLButtonElement && (event.key === 'Enter' || event.key === ' ')) return;
     model.activate('keyboard');
     if (event.code === 'Space') event.preventDefault();
   });

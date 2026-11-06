@@ -80,7 +80,7 @@ function solveLeg(spec, body, deployment, time) {
   };
 }
 
-export function samplePose(time, { active = true, gaze = { x: 100, y: -180 }, seed = 1 } = {}) {
+export function samplePose(time, { active = true, gaze = { x: 100, y: -180 }, seed = 1, entryY = -780 } = {}) {
   const phase = stageAt(time, active);
   const fallTime = time - stageStart('falling');
   const impactTime = time - stageStart('impact');
@@ -90,10 +90,10 @@ export function samplePose(time, { active = true, gaze = { x: 100, y: -180 }, se
   const idleFade = active ? smooth(readyTime / 0.6) : 0;
   const phaseSeed = (seed >>> 0) / 4294967296 * Math.PI * 2;
   const lift = active ? windowed(legTime, 1.5, 0.65) : 0;
-  const body = { x: 0, y: -780, rotation: -0.12 };
+  const body = { x: 0, y: entryY, rotation: -0.12 };
   if (active && fallTime >= 0) {
     const p = clamp(fallTime / 1.05);
-    body.y = mix(-780, -82, p * p);
+    body.y = mix(entryY, -82, p * p);
     body.rotation = -0.12 * (1 - p) + 0.045 * Math.sin(p * Math.PI);
   }
   if (active && impactTime >= 0) {
@@ -124,7 +124,13 @@ export function samplePose(time, { active = true, gaze = { x: 100, y: -180 }, se
 }
 
 export class SceneModel {
-  constructor(seed = 1) { this.reset(seed); }
+  constructor(seed = 1) { this.entryY = -780; this.reset(seed); }
+
+  prepareEntry(worldTop) {
+    // The complete packed rig fits inside 160 units of its root. Pin this
+    // offscreen starting point before activation; resizing must not move a fall.
+    if (!this.active) this.entryY = Math.min(-780, worldTop - 160);
+  }
 
   reset(seed = this.seed) {
     this.seed = Number(seed) >>> 0;
@@ -177,10 +183,10 @@ export class SceneModel {
     const time = this.tick * DT;
     return {
       version: 'q3c-slice-01', seed: this.seed, tick: this.tick, time,
-      active: this.active, phase: stageAt(time, this.active).name,
+      active: this.active, phase: stageAt(time, this.active).name, entryY: this.entryY,
       pointer: { ...this.pointer }, gaze: { ...this.gaze },
       events: this.events.map(event => ({ ...event })),
-      pose: samplePose(time, { active: this.active, gaze: this.gaze, seed: this.seed }),
+      pose: samplePose(time, { active: this.active, gaze: this.gaze, seed: this.seed, entryY: this.entryY }),
     };
   }
 }
