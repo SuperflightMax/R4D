@@ -1,0 +1,25 @@
+{
+  "browser": {
+    "browserName": "chromium",
+    "isolated": true,
+    "launchOptions": {
+      "executablePath": "C:/Users/user/AppData/Local/ms-playwright/chromium-1208/chrome-win64/chrome.exe",
+      "headless": true
+    },
+    "contextOptions": {
+      "viewport": {
+        "width": 360,
+        "height": 732
+      },
+      "screen": {
+        "width": 360,
+        "height": 732
+      },
+      "deviceScaleFactor": 1,
+      "isMobile": true,
+      "hasTouch": true,
+      "reducedMotion": "no-preference"
+    }
+  },
+  "outputDir": "output/recheck-vq01/mobile360"
+}
