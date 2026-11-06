@@ -1,0 +1,680 @@
+{
+  "schemaVersion": 1,
+  "id": "q3c-asset-construction-01",
+  "status": "construction input; not finished art, runtime rig, or collision PASS",
+  "owner": "asset-artist-r4d-q3c-01",
+  "canonicalOrder": "orders/animation/Q3C-victorian-mantis.md revision 2",
+  "source": {
+    "path": "design/concept/packing_diagram.py",
+    "sha256": "c2e5f90f3db3c07d2fc626d4356f2884f7962c7d5bd4737212014a4feefe43f8",
+    "note": "Updated art director source: narrowed packed soles, packed head rotated -25 degrees, 0/24/10 carriage strokes. Arm and thorax lengths/contours are unchanged. Gate geometry, depth sub-bands and arm release hold remain asset construction refinements."
+  },
+  "coordinates": {
+    "unit": "raw unit of art director packing_diagram.py",
+    "x": "right",
+    "y": "up",
+    "angles": "degrees counterclockwise from +x, absolute in study poses",
+    "shellWidth": 180,
+    "shellDepth": 110,
+    "assetDocumentU": 180,
+    "exportY": "invert y for down-positive sprite coordinates; transform attachments with the same operation"
+  },
+  "shell": {
+    "outlineXY": [
+      [
+        -90,
+        12
+      ],
+      [
+        -90,
+        42
+      ],
+      [
+        -83,
+        64
+      ],
+      [
+        -63,
+        81
+      ],
+      [
+        -32,
+        90
+      ],
+      [
+        2,
+        88
+      ],
+      [
+        35,
+        81
+      ],
+      [
+        63,
+        70
+      ],
+      [
+        90,
+        57
+      ],
+      [
+        90,
+        12
+      ],
+      [
+        55,
+        5
+      ],
+      [
+        -55,
+        5
+      ]
+    ],
+    "outerDepthZ": [
+      -55,
+      55
+    ],
+    "skinBandsZ": [
+      [
+        -55,
+        -51
+      ],
+      [
+        51,
+        55
+      ]
+    ],
+    "scaleBetweenPoses": 1
+  },
+  "rig": {
+    "thorax": {
+      "rootInBody": [
+        40,
+        32
+      ],
+      "lengths": [
+        98,
+        98
+      ],
+      "upperParent": "thorax.lower.end",
+      "armShoulderParent": "thorax.upper.root / thorax.lower.end",
+      "eyeParent": "head carriage anchored at thorax.upper.end; one head/eye chain",
+      "eyeCenterInHeadFrame": [
+        12,
+        -6
+      ],
+      "eyeRadiusInStudy": 9
+    },
+    "raptorial": {
+      "instances": [
+        "near",
+        "far"
+      ],
+      "lengths": [
+        86,
+        88
+      ],
+      "femurShape": [
+        [
+          -5,
+          -7.48
+        ],
+        [
+          14.620000000000001,
+          -11
+        ],
+        [
+          67.08,
+          -8.36
+        ],
+        [
+          90,
+          -3.74
+        ],
+        [
+          90,
+          3.74
+        ],
+        [
+          64.5,
+          10.120000000000001
+        ],
+        [
+          15.479999999999999,
+          11
+        ],
+        [
+          -5,
+          7.48
+        ]
+      ],
+      "tibiaShape": [
+        [
+          -3,
+          -5
+        ],
+        [
+          17.6,
+          -4
+        ],
+        [
+          30.799999999999997,
+          -9
+        ],
+        [
+          36.08,
+          -3
+        ],
+        [
+          46.64,
+          -7
+        ],
+        [
+          51.919999999999995,
+          -1
+        ],
+        [
+          63.36,
+          -5
+        ],
+        [
+          68.64,
+          0
+        ],
+        [
+          88,
+          0
+        ],
+        [
+          72.16,
+          10
+        ],
+        [
+          42.239999999999995,
+          18
+        ],
+        [
+          14.08,
+          13
+        ],
+        [
+          -3,
+          6
+        ]
+      ],
+      "jointRadiusInStudy": 5,
+      "stem": "shoulder fork at upper root; no new independent shoulder translation",
+      "jointCaps": {
+        "radius": 5,
+        "centers": [
+          "shoulder",
+          "elbow"
+        ],
+        "note": "Blade free tip circle in source is a diagram marker, not a new joint or metal disc"
+      }
+    },
+    "walking": {
+      "instances": [
+        {
+          "id": "rear.far",
+          "hipInBody": [
+            -75,
+            20
+          ]
+        },
+        {
+          "id": "front.far",
+          "hipInBody": [
+            75,
+            20
+          ]
+        },
+        {
+          "id": "rear.near",
+          "hipInBody": [
+            -75,
+            20
+          ]
+        },
+        {
+          "id": "front.near",
+          "hipInBody": [
+            75,
+            20
+          ]
+        }
+      ],
+      "lengths": [
+        68,
+        76
+      ],
+      "packedKneeX": 7,
+      "packedAnkleX": 83,
+      "packedY": 20,
+      "footSourceLocalXY": [
+        [
+          -5,
+          5
+        ],
+        [
+          5,
+          5
+        ],
+        [
+          6,
+          -2
+        ],
+        [
+          -6,
+          -2
+        ]
+      ],
+      "assetRefinement": "Current art director revision narrowed packed soles: outer x = +/-89 fits shell +/-90. Foot has its own ankle; no required corrective scaling or bone length change. Deployment and floor clearance are still to be checked."
+    },
+    "opticalCarriage": {
+      "housingLocalXY": [
+        [
+          -26,
+          -5
+        ],
+        [
+          0,
+          -5
+        ],
+        [
+          0,
+          5
+        ],
+        [
+          -26,
+          5
+        ]
+      ],
+      "nestedSections": [
+        {
+          "length": 18,
+          "maxStroke": 12,
+          "minOverlapAtMaxStroke": 6
+        },
+        {
+          "length": 18,
+          "maxStroke": 12,
+          "minOverlapAtMaxStroke": 6
+        }
+      ],
+      "maxStroke": 24,
+      "headOutlineLocalXY": [
+        [
+          -8,
+          -10
+        ],
+        [
+          18,
+          -17
+        ],
+        [
+          30,
+          -8
+        ],
+        [
+          27,
+          4
+        ],
+        [
+          -4,
+          8
+        ]
+      ],
+      "browOutlineLocalXY": [
+        [
+          -9,
+          3
+        ],
+        [
+          8,
+          11
+        ],
+        [
+          31,
+          6
+        ],
+        [
+          32,
+          2
+        ],
+        [
+          3,
+          4
+        ]
+      ],
+      "eyeCenterLocalXY": [
+        12,
+        -6
+      ],
+      "eyeRadius": 9,
+      "note": "Separate front shell hatch stays on shell. Head brow remains on head. Carriage/eye parent does not change between states."
+    }
+  },
+  "poses": {
+    "packed": {
+      "bodyRise": 0,
+      "thoraxAbsoluteAngles": [
+        170,
+        10
+      ],
+      "raptorialAbsoluteAngles": [
+        0,
+        170
+      ],
+      "landmarks": {
+        "thoraxRoot": [
+          40,
+          32
+        ],
+        "shoulder": [
+          -56.51115979519639,
+          49.01752141135917
+        ],
+        "headCarrier": [
+          40,
+          66.03504282271834
+        ],
+        "elbow": [
+          29.48884020480361,
+          49.01752141135917
+        ],
+        "bladeTip": [
+          -57.1742420602707,
+          64.29856104604903
+        ]
+      },
+      "headAngleDeg": -25,
+      "eyeCarriageStroke": 0
+    },
+    "capsule": {
+      "bodyRise": 0,
+      "thoraxAbsoluteAngles": [
+        170,
+        10
+      ],
+      "raptorialAbsoluteAngles": [
+        0,
+        170
+      ],
+      "walkingFootX": {
+        "far": 105,
+        "near": 132
+      },
+      "floorY": -30,
+      "headAngleDeg": 0,
+      "eyeCarriageStroke": 24,
+      "walkingAnkleTargetY": -28
+    },
+    "mantisStudy": {
+      "bodyRise": 40,
+      "thoraxAbsoluteAngles": [
+        82,
+        78
+      ],
+      "raptorialAbsoluteAngles": [
+        60,
+        -60
+      ],
+      "walkingFootX": {
+        "far": 138,
+        "near": 170
+      },
+      "floorY": -30,
+      "note": "Two arms coincide in strict side projection of study. Final three-quarter view and joint poses must separate their silhouettes.",
+      "headAngleDeg": 0,
+      "eyeCarriageStroke": 10,
+      "walkingAnkleTargetY": -28
+    }
+  },
+  "depthBudgets": {
+    "sourceFunctionalLayers": [
+      {
+        "id": "rapt.far",
+        "z": [
+          -51,
+          -33
+        ]
+      },
+      {
+        "id": "walk.far",
+        "z": [
+          -31,
+          -13
+        ]
+      },
+      {
+        "id": "thorax",
+        "z": [
+          -11,
+          11
+        ]
+      },
+      {
+        "id": "walk.near",
+        "z": [
+          13,
+          31
+        ]
+      },
+      {
+        "id": "rapt.near",
+        "z": [
+          33,
+          51
+        ]
+      }
+    ],
+    "partSubBands": [
+      {
+        "id": "rapt.far.femur",
+        "z": [
+          -50,
+          -43
+        ]
+      },
+      {
+        "id": "rapt.far.tibia",
+        "z": [
+          -41,
+          -34
+        ]
+      },
+      {
+        "id": "walk.far.rear",
+        "z": [
+          -30,
+          -23
+        ]
+      },
+      {
+        "id": "walk.far.front",
+        "z": [
+          -21,
+          -14
+        ]
+      },
+      {
+        "id": "thorax.lower",
+        "z": [
+          -10,
+          -1
+        ]
+      },
+      {
+        "id": "thorax.upper",
+        "z": [
+          1,
+          10
+        ]
+      },
+      {
+        "id": "walk.near.rear",
+        "z": [
+          14,
+          21
+        ]
+      },
+      {
+        "id": "walk.near.front",
+        "z": [
+          23,
+          30
+        ]
+      },
+      {
+        "id": "rapt.near.femur",
+        "z": [
+          34,
+          41
+        ]
+      },
+      {
+        "id": "rapt.near.tibia",
+        "z": [
+          43,
+          50
+        ]
+      }
+    ],
+    "note": "Asset thickness budget, not z-index. Pins/forks intentionally bridge parent and child slabs only around their joint axes. Caps and relief must remain within budget."
+  },
+  "hatches": {
+    "raptorial": {
+      "ids": [
+        "bay.rapt.near",
+        "bay.rapt.far"
+      ],
+      "freeRegionXY": {
+        "x": [
+          -67,
+          68
+        ],
+        "y": [
+          35,
+          95
+        ]
+      },
+      "metalDoorOutline": "intersection of this rectangle with shell XY outline; opening continues through upper silhouette",
+      "hingeAxis": "parallel to x at y=35, on outer side wall z=+/-51",
+      "opening": "rotate outward about x, to 100 degrees or greater before thorax starts; motion goes outside z=+/-51, away from stored arm volumes",
+      "depth": "one real side hatch per arm lane, both continuous with open dorsal exit",
+      "close": "only after closed arm package is above shell; shell mass stays attached and returns to abdomen"
+    },
+    "eye": {
+      "minimumBarrelFreeDiameter": 20,
+      "barrelStudyDiameter": 18,
+      "headExitOpeningLocalToCrown": {
+        "x": [
+          -14,
+          58
+        ],
+        "y": [
+          -26,
+          14
+        ]
+      },
+      "headTurnAndStrokeStudyBounds": {
+        "x": [
+          -11.476644913700195,
+          56.0624390837628
+        ],
+        "y": [
+          -23.01436109095564,
+          11
+        ]
+      },
+      "openingNote": "Iris diameter alone does not admit whole head. A separate front shell hatch opens the head-frame exit rectangle, clipped to actual shell wall, before packed head turns and carriage extends. Recheck entire head/hood volume in three-quarter view.",
+      "parts": [
+        "rear well",
+        "front shell hatch and rim",
+        "head brow",
+        "iris leaves",
+        "two nested carriage sections",
+        "same eye barrel and glass"
+      ],
+      "boundsScope": "Independent head angle anywhere in [-25,0] and carriage stroke anywhere in [0,24]; rigid polygon extrema at interval endpoints/stationary angles. Lens circle is smaller than these bounds. Final thickness and hatch swept volume remain separate checks."
+    },
+    "walking": {
+      "ports": 4,
+      "note": "One actual lower rail port for each front/rear, near/far pocket. Exact exit path and floor clearance are not resolved by the static art director diagram; validate the four full solids before locking slot outlines."
+    }
+  },
+  "releaseStudy": {
+    "assumptions": [
+      "Both arm-side gates open outward first",
+      "Their upper roof opening is continuous",
+      "Forearm shape remains closed at absolute angles 0 and 170 until clear",
+      "Thorax lower angle moves from 170 toward 131.850... without any link scaling",
+      "Upper link and head pose are separately solved by Builder; this arm study does not certify their collision path"
+    ],
+    "armClearanceTrigger": {
+      "shoulderYInBody": 105,
+      "thoraxLowerAngleDeg": 131.84966485527661,
+      "reason": "At y=105, lowest closed forearm contour is y=94; fixed shell max roof is y=90. Keep at least 4 raw units before beginning large forearm unfold."
+    },
+    "checkedSamples": 241,
+    "allArmVerticesWithinReleaseColumn": true,
+    "scope": "Complete closed arm polygons fit a convex open release column by endpoint bounds; staged rigid arm opening clears fixed roof by the stated 2D bounds. Final relief, finite door thickness, shoulder axle, upper thorax/head/legs and full-creature swept-solid QA remain unverified.",
+    "continuousClosedArmXYBound": {
+      "x": [
+        -61.51115979519639,
+        65.61651584688994
+      ],
+      "yMin": 38.01752141135917,
+      "closedMinAtExit": 94.00000000000003,
+      "reason": "During 170 -> 131.849664855 deg, shoulder x and y are monotonic; held arm orientations are constant, so coordinate extrema occur at interval endpoints. Bound covers full polygon interiors inside the convex release column.",
+      "includes": "Both rigid contour polygons plus radius-5 shoulder/elbow caps; final relief beyond this study is not included"
+    },
+    "followingArmPhases": [
+      {
+        "id": "raise_femur_keep_serp_nested",
+        "shoulderMinimumYInBody": 105,
+        "femurAbsoluteAngles": [
+          0,
+          60
+        ],
+        "tibiaAbsoluteRule": "femur absolute + 170 degrees",
+        "sampleCount": 361,
+        "observedMinContourY": 94,
+        "analyticalMinContourY": 94,
+        "proof": "Closed local arm contour rotated as a rigid composite over 0..60 degrees; extrema at endpoints/stationary angles. Radius-5 shoulder/elbow caps stay above y=100."
+      },
+      {
+        "id": "open_serp_above_roof",
+        "shoulderMinimumYInBody": 120,
+        "femurAbsoluteAngle": 60,
+        "tibiaAbsoluteAngles": [
+          230,
+          300
+        ],
+        "bladeMaximumRadius": 88,
+        "analyticalMinimumY": 106.47818472546172,
+        "reason": "Any blade orientation stays inside radius max(local vertex norm) about elbow; at this shoulder height the entire blade is above shell roof y=90."
+      }
+    ]
+  },
+  "staticObservations": {
+    "packedArmBoundsXY": {
+      "x": [
+        -61.51115979519639,
+        34.48884020480361
+      ],
+      "y": [
+        38.01752141135917,
+        64.94390871339691
+      ]
+    },
+    "packedArmAllVerticesInsideShell": true,
+    "minimumArmVertexToShellEdge": 16.498525927699394,
+    "limitations": [
+      "Vertex check is supplemented by bounded release-column study, not claimed as continuous solid collision QA",
+      "Chest and feet require their own final art fit and deployment clearance",
+      "Skeletal support contact, mass and live easing remain Builder work"
+    ]
+  }
+}
