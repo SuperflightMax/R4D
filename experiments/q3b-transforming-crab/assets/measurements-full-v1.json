@@ -1,0 +1,459 @@
+{
+  "core": {
+    "file": "art/core.png",
+    "pivot": [
+      98,
+      69
+    ],
+    "size": [
+      196,
+      91
+    ],
+    "opaqueBounds": [
+      3,
+      4,
+      193,
+      88
+    ],
+    "source": "assets/source/core-v1.png",
+    "sourcePivot": [
+      915,
+      630
+    ],
+    "sourceCore": [
+      87,
+      60,
+      1742,
+      798
+    ],
+    "sourceRectangle": [
+      81,
+      54,
+      1748,
+      804
+    ],
+    "uniformScale": 0.1148036253776435,
+    "rotationDegrees": -0.0
+  },
+  "shellLeft": {
+    "file": "art/shellLeft.png",
+    "pivot": [
+      16,
+      62
+    ],
+    "size": [
+      116,
+      78
+    ],
+    "opaqueBounds": [
+      3,
+      3,
+      113,
+      75
+    ],
+    "source": "assets/source/shellLeft-v1.png",
+    "sourcePivot": [
+      250,
+      800
+    ],
+    "sourceCore": [
+      98,
+      99,
+      1413,
+      952
+    ],
+    "sourceRectangle": [
+      92,
+      93,
+      1419,
+      958
+    ],
+    "uniformScale": 0.08365019011406843,
+    "rotationDegrees": -0.0
+  },
+  "boom": {
+    "file": "art/boom.png",
+    "pivot": [
+      14,
+      16
+    ],
+    "size": [
+      94,
+      31
+    ],
+    "opaqueBounds": [
+      3,
+      4,
+      91,
+      28
+    ],
+    "source": "assets/source/boom-v1.png",
+    "sourcePivot": [
+      354,
+      365
+    ],
+    "sourceCore": [
+      103,
+      84,
+      2070,
+      643
+    ],
+    "sourceRectangle": [
+      97,
+      78,
+      2076,
+      649
+    ],
+    "uniformScale": 0.04469622726840362,
+    "rotationDegrees": -0.7317070839830414,
+    "distalJoint": [
+      70,
+      0
+    ]
+  },
+  "forearm": {
+    "file": "art/forearm.png",
+    "pivot": [
+      13,
+      14
+    ],
+    "size": [
+      87,
+      27
+    ],
+    "opaqueBounds": [
+      3,
+      3,
+      84,
+      25
+    ],
+    "source": "assets/source/forearm-v1.png",
+    "sourcePivot": [
+      350,
+      365
+    ],
+    "sourceCore": [
+      112,
+      107,
+      2036,
+      619
+    ],
+    "sourceRectangle": [
+      106,
+      101,
+      2042,
+      625
+    ],
+    "uniformScale": 0.04226267880364109,
+    "rotationDegrees": -0.0,
+    "distalJoint": [
+      65,
+      0
+    ]
+  },
+  "palm": {
+    "file": "art/palm.png",
+    "pivot": [
+      8,
+      14
+    ],
+    "size": [
+      56,
+      25
+    ],
+    "opaqueBounds": [
+      3,
+      3,
+      53,
+      22
+    ],
+    "source": "assets/source/palm-v1.png",
+    "sourcePivot": [
+      260,
+      500
+    ],
+    "sourceCore": [
+      97,
+      156,
+      1676,
+      768
+    ],
+    "sourceRectangle": [
+      91,
+      150,
+      1682,
+      774
+    ],
+    "uniformScale": 0.031665611146295125,
+    "rotationDegrees": -0.0,
+    "childJoint": [
+      23.0209,
+      -7.5681
+    ]
+  },
+  "jaw": {
+    "file": "art/jaw.png",
+    "pivot": [
+      6,
+      8
+    ],
+    "size": [
+      34,
+      14
+    ],
+    "opaqueBounds": [
+      2,
+      3,
+      31,
+      11
+    ],
+    "source": "assets/source/jaw-v1.png",
+    "sourcePivot": [
+      350,
+      435
+    ],
+    "sourceCore": [
+      120,
+      112,
+      1932,
+      620
+    ],
+    "sourceRectangle": [
+      114,
+      106,
+      1938,
+      626
+    ],
+    "uniformScale": 0.016004415011037526,
+    "rotationDegrees": -0.0
+  },
+  "shellRight": {
+    "file": "art/shellRight.png",
+    "pivot": [
+      100,
+      64
+    ],
+    "size": [
+      116,
+      80
+    ],
+    "opaqueBounds": [
+      3,
+      3,
+      113,
+      77
+    ],
+    "source": "assets/source/shellRight-v1.png",
+    "sourcePivot": [
+      1260,
+      800
+    ],
+    "sourceCore": [
+      137,
+      96,
+      1415,
+      950
+    ],
+    "sourceRectangle": [
+      131,
+      90,
+      1421,
+      956
+    ],
+    "uniformScale": 0.08607198748043818,
+    "rotationDegrees": -0.0
+  },
+  "upper": {
+    "file": "art/upper.png",
+    "pivot": [
+      18,
+      23
+    ],
+    "size": [
+      122,
+      45
+    ],
+    "opaqueBounds": [
+      3,
+      4,
+      119,
+      42
+    ],
+    "source": "assets/source/upper-v1.png",
+    "sourcePivot": [
+      405,
+      365
+    ],
+    "sourceCore": [
+      166,
+      69,
+      1966,
+      662
+    ],
+    "sourceRectangle": [
+      160,
+      63,
+      1972,
+      668
+    ],
+    "uniformScale": 0.0646070933515645,
+    "rotationDegrees": -0.411305063228598,
+    "distalJoint": [
+      90,
+      0
+    ]
+  },
+  "lower": {
+    "file": "art/lower.png",
+    "pivot": [
+      17,
+      19
+    ],
+    "size": [
+      133,
+      37
+    ],
+    "opaqueBounds": [
+      3,
+      3,
+      130,
+      34
+    ],
+    "source": "assets/source/lower-v1.png",
+    "sourcePivot": [
+      344,
+      364
+    ],
+    "sourceCore": [
+      132,
+      131,
+      2022,
+      591
+    ],
+    "sourceRectangle": [
+      126,
+      125,
+      2028,
+      597
+    ],
+    "uniformScale": 0.06704844142208706,
+    "rotationDegrees": -0.3658684594292859,
+    "distalJoint": [
+      105,
+      0
+    ]
+  },
+  "foot": {
+    "file": "art/foot.png",
+    "pivot": [
+      28,
+      8
+    ],
+    "size": [
+      52,
+      19
+    ],
+    "opaqueBounds": [
+      3,
+      3,
+      49,
+      16
+    ],
+    "source": "assets/source/foot-v1.png",
+    "sourcePivot": [
+      1160,
+      315
+    ],
+    "sourceCore": [
+      269,
+      133,
+      1903,
+      601
+    ],
+    "sourceRectangle": [
+      263,
+      127,
+      1909,
+      607
+    ],
+    "uniformScale": 0.028151774785801713,
+    "rotationDegrees": -0.0,
+    "soleOffset": 8
+  },
+  "mastLink": {
+    "file": "art/mastLink.png",
+    "pivot": [
+      7,
+      7
+    ],
+    "size": [
+      54,
+      14
+    ],
+    "opaqueBounds": [
+      2,
+      2,
+      52,
+      12
+    ],
+    "source": "assets/source/mastLink-v1.png",
+    "sourcePivot": [
+      390,
+      365
+    ],
+    "sourceCore": [
+      225,
+      201,
+      1939,
+      530
+    ],
+    "sourceRectangle": [
+      219,
+      195,
+      1945,
+      536
+    ],
+    "uniformScale": 0.02888086642599278,
+    "rotationDegrees": -0.0,
+    "distalJoint": [
+      40,
+      0
+    ]
+  },
+  "optic": {
+    "file": "art/optic.png",
+    "pivot": [
+      18,
+      38
+    ],
+    "size": [
+      38,
+      43
+    ],
+    "opaqueBounds": [
+      3,
+      3,
+      35,
+      40
+    ],
+    "source": "assets/source/optic-v1.png",
+    "sourcePivot": [
+      592,
+      1045
+    ],
+    "sourceCore": [
+      178,
+      69,
+      1059,
+      1111
+    ],
+    "sourceRectangle": [
+      172,
+      63,
+      1065,
+      1117
+    ],
+    "uniformScale": 0.036322360953461974,
+    "rotationDegrees": -0.0
+  }
+}

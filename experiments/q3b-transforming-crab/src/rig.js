@@ -1,5 +1,4 @@
 import {chainIK,mix} from './motion.js';
-const nearest=(a,reference)=>reference+Math.atan2(Math.sin(a-reference),Math.cos(a-reference));
 export class Rig {
  constructor(parts,motion,soles={}){this.parts=parts;this.byId=Object.fromEntries(parts.map(p=>[p.id,p]));this.motion=motion;this.soles=soles;}
  solve(){
@@ -20,9 +19,10 @@ export class Rig {
    const hip={x:parent.x+upper.joint[0]*c-upper.joint[1]*s,y:parent.y+upper.joint[0]*s+upper.joint[1]*c};
    const target=m.foot(leg),a=Math.hypot(...lower.joint),b=Math.hypot(...foot.joint),axisA=Math.atan2(lower.joint[1],lower.joint[0]),axisB=Math.atan2(foot.joint[1],foot.joint[0]);
    const solved=chainIK(target.x-hip.x,target.y-hip.y,a,b,leg.bend);
-   const fold={Left:[3.65,-3.35,-.4],Right:[-.51,3.35,.4],Rear:[-.1,2.95,0]}[leg.id];
-   angles[upper.id]=mix(fold[0],nearest(solved.alpha-axisA-parent.angle,fold[0]),p.deploy);
-   angles[lower.id]=mix(fold[1],nearest(solved.beta+axisA-axisB,fold[1]),p.deploy);
+   const fold={Left:[Math.PI*2-.65,3.4-Math.PI*2,.2],Right:[-Math.PI+.65,Math.PI*2-3.4,-.2],Rear:[-.1,2.95,0]}[leg.id];
+   // Angles stay on the chosen physical branch, including the packed inward knees.
+   angles[upper.id]=mix(fold[0],solved.alpha-axisA-parent.angle,p.deploy);
+   angles[lower.id]=mix(fold[1],solved.beta+axisA-axisB,p.deploy);
    const lowerWorld=transform(lower.id);
    angles[foot.id]=mix(fold[2],0,p.deploy)-lowerWorld.angle;
    solutions[leg.id]={...solved,hip,target,deploy:p.deploy};

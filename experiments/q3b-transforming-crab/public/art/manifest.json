@@ -1,9 +1,9 @@
 {
   "version": 1,
-  "artRevision": "q3b-early-art-v1",
-  "phase": "early-real-joint-only",
-  "complete": false,
-  "character": "Фонарный механик",
+  "artRevision": "q3b-full-art-v2",
+  "phase": "packing-refinement",
+  "complete": true,
+  "character": "Р¤РѕРЅР°СЂРЅС‹Р№ РјРµС…Р°РЅРёРє",
   "coordinates": "+X right, +Y down; joint relative to parent pivot",
   "parts": [
     {
@@ -40,6 +40,186 @@
       "size": [
         116,
         78
+      ]
+    },
+    {
+      "id": "shellRight",
+      "file": "art/shellRight.png",
+      "parent": "core",
+      "joint": [
+        68,
+        -42
+      ],
+      "pivot": [
+        100,
+        64
+      ],
+      "layer": 56,
+      "size": [
+        116,
+        80
+      ]
+    },
+    {
+      "id": "upperRear",
+      "file": "art/upper.png",
+      "parent": "core",
+      "joint": [
+        0,
+        -20
+      ],
+      "pivot": [
+        18,
+        23
+      ],
+      "layer": 5,
+      "size": [
+        122,
+        45
+      ]
+    },
+    {
+      "id": "lowerRear",
+      "file": "art/lower.png",
+      "parent": "upperRear",
+      "joint": [
+        90,
+        0
+      ],
+      "pivot": [
+        17,
+        19
+      ],
+      "layer": 6,
+      "size": [
+        133,
+        37
+      ]
+    },
+    {
+      "id": "footRear",
+      "file": "art/foot.png",
+      "parent": "lowerRear",
+      "joint": [
+        105,
+        0
+      ],
+      "pivot": [
+        28,
+        8
+      ],
+      "layer": 7,
+      "size": [
+        52,
+        19
+      ]
+    },
+    {
+      "id": "upperLeft",
+      "file": "art/upper.png",
+      "parent": "core",
+      "joint": [
+        -60,
+        -5
+      ],
+      "pivot": [
+        18,
+        23
+      ],
+      "layer": 20,
+      "size": [
+        122,
+        45
+      ]
+    },
+    {
+      "id": "lowerLeft",
+      "file": "art/lower.png",
+      "parent": "upperLeft",
+      "joint": [
+        90,
+        0
+      ],
+      "pivot": [
+        17,
+        19
+      ],
+      "layer": 22,
+      "size": [
+        133,
+        37
+      ]
+    },
+    {
+      "id": "footLeft",
+      "file": "art/foot.png",
+      "parent": "lowerLeft",
+      "joint": [
+        105,
+        0
+      ],
+      "pivot": [
+        28,
+        8
+      ],
+      "layer": 23,
+      "size": [
+        52,
+        19
+      ]
+    },
+    {
+      "id": "upperRight",
+      "file": "art/upper.png",
+      "parent": "core",
+      "joint": [
+        60,
+        -5
+      ],
+      "pivot": [
+        18,
+        23
+      ],
+      "layer": 21,
+      "size": [
+        122,
+        45
+      ]
+    },
+    {
+      "id": "lowerRight",
+      "file": "art/lower.png",
+      "parent": "upperRight",
+      "joint": [
+        90,
+        0
+      ],
+      "pivot": [
+        17,
+        19
+      ],
+      "layer": 24,
+      "size": [
+        133,
+        37
+      ]
+    },
+    {
+      "id": "footRight",
+      "file": "art/foot.png",
+      "parent": "lowerRight",
+      "joint": [
+        105,
+        0
+      ],
+      "pivot": [
+        28,
+        8
+      ],
+      "layer": 25,
+      "size": [
+        52,
+        19
       ]
     },
     {
@@ -113,6 +293,132 @@
         34,
         14
       ]
+    },
+    {
+      "id": "boomRight",
+      "file": "art/boom.png",
+      "parent": "core",
+      "joint": [
+        58,
+        -35
+      ],
+      "pivot": [
+        14,
+        16
+      ],
+      "layer": 44,
+      "size": [
+        94,
+        31
+      ]
+    },
+    {
+      "id": "forearmRight",
+      "file": "art/forearm.png",
+      "parent": "boomRight",
+      "joint": [
+        70,
+        0
+      ],
+      "pivot": [
+        13,
+        14
+      ],
+      "layer": 45,
+      "size": [
+        87,
+        27
+      ]
+    },
+    {
+      "id": "palmRight",
+      "file": "art/palm.png",
+      "parent": "forearmRight",
+      "joint": [
+        65,
+        0
+      ],
+      "pivot": [
+        8,
+        14
+      ],
+      "layer": 46,
+      "size": [
+        56,
+        25
+      ]
+    },
+    {
+      "id": "jawRight",
+      "file": "art/jaw.png",
+      "parent": "palmRight",
+      "joint": [
+        23.0209,
+        -7.5681
+      ],
+      "pivot": [
+        6,
+        8
+      ],
+      "layer": 47,
+      "size": [
+        34,
+        14
+      ]
+    },
+    {
+      "id": "mastLower",
+      "file": "art/mastLink.png",
+      "parent": "core",
+      "joint": [
+        0,
+        -62
+      ],
+      "pivot": [
+        7,
+        7
+      ],
+      "layer": 31,
+      "size": [
+        54,
+        14
+      ]
+    },
+    {
+      "id": "mastUpper",
+      "file": "art/mastLink.png",
+      "parent": "mastLower",
+      "joint": [
+        40,
+        0
+      ],
+      "pivot": [
+        7,
+        7
+      ],
+      "layer": 32,
+      "size": [
+        54,
+        14
+      ]
+    },
+    {
+      "id": "optic",
+      "file": "art/optic.png",
+      "parent": "mastUpper",
+      "joint": [
+        40,
+        0
+      ],
+      "pivot": [
+        18,
+        38
+      ],
+      "layer": 33,
+      "size": [
+        38,
+        43
+      ]
     }
   ],
   "geometry": {
@@ -120,7 +426,8 @@
     "lowerLength": 105,
     "boomLength": 70,
     "forearmLength": 65,
-    "mastLength": 40
+    "mastLength": 40,
+    "footSoleOffset": 8
   },
   "preparation": {
     "core": {
@@ -350,6 +657,236 @@
       ],
       "uniformScale": 0.016004415011037526,
       "rotationDegrees": -0.0
+    },
+    "shellRight": {
+      "file": "art/shellRight.png",
+      "pivot": [
+        100,
+        64
+      ],
+      "size": [
+        116,
+        80
+      ],
+      "opaqueBounds": [
+        3,
+        3,
+        113,
+        77
+      ],
+      "source": "assets/source/shellRight-v1.png",
+      "sourcePivot": [
+        1260,
+        800
+      ],
+      "sourceCore": [
+        137,
+        96,
+        1415,
+        950
+      ],
+      "sourceRectangle": [
+        131,
+        90,
+        1421,
+        956
+      ],
+      "uniformScale": 0.08607198748043818,
+      "rotationDegrees": -0.0
+    },
+    "upper": {
+      "file": "art/upper.png",
+      "pivot": [
+        18,
+        23
+      ],
+      "size": [
+        122,
+        45
+      ],
+      "opaqueBounds": [
+        3,
+        4,
+        119,
+        42
+      ],
+      "source": "assets/source/upper-v1.png",
+      "sourcePivot": [
+        405,
+        365
+      ],
+      "sourceCore": [
+        166,
+        69,
+        1966,
+        662
+      ],
+      "sourceRectangle": [
+        160,
+        63,
+        1972,
+        668
+      ],
+      "uniformScale": 0.0646070933515645,
+      "rotationDegrees": -0.411305063228598,
+      "distalJoint": [
+        90,
+        0
+      ]
+    },
+    "lower": {
+      "file": "art/lower.png",
+      "pivot": [
+        17,
+        19
+      ],
+      "size": [
+        133,
+        37
+      ],
+      "opaqueBounds": [
+        3,
+        3,
+        130,
+        34
+      ],
+      "source": "assets/source/lower-v1.png",
+      "sourcePivot": [
+        344,
+        364
+      ],
+      "sourceCore": [
+        132,
+        131,
+        2022,
+        591
+      ],
+      "sourceRectangle": [
+        126,
+        125,
+        2028,
+        597
+      ],
+      "uniformScale": 0.06704844142208706,
+      "rotationDegrees": -0.3658684594292859,
+      "distalJoint": [
+        105,
+        0
+      ]
+    },
+    "foot": {
+      "file": "art/foot.png",
+      "pivot": [
+        28,
+        8
+      ],
+      "size": [
+        52,
+        19
+      ],
+      "opaqueBounds": [
+        3,
+        3,
+        49,
+        16
+      ],
+      "source": "assets/source/foot-v1.png",
+      "sourcePivot": [
+        1160,
+        315
+      ],
+      "sourceCore": [
+        269,
+        133,
+        1903,
+        601
+      ],
+      "sourceRectangle": [
+        263,
+        127,
+        1909,
+        607
+      ],
+      "uniformScale": 0.028151774785801713,
+      "rotationDegrees": -0.0,
+      "soleOffset": 8
+    },
+    "mastLink": {
+      "file": "art/mastLink.png",
+      "pivot": [
+        7,
+        7
+      ],
+      "size": [
+        54,
+        14
+      ],
+      "opaqueBounds": [
+        2,
+        2,
+        52,
+        12
+      ],
+      "source": "assets/source/mastLink-v1.png",
+      "sourcePivot": [
+        390,
+        365
+      ],
+      "sourceCore": [
+        225,
+        201,
+        1939,
+        530
+      ],
+      "sourceRectangle": [
+        219,
+        195,
+        1945,
+        536
+      ],
+      "uniformScale": 0.02888086642599278,
+      "rotationDegrees": -0.0,
+      "distalJoint": [
+        40,
+        0
+      ]
+    },
+    "optic": {
+      "file": "art/optic.png",
+      "pivot": [
+        18,
+        38
+      ],
+      "size": [
+        38,
+        43
+      ],
+      "opaqueBounds": [
+        3,
+        3,
+        35,
+        40
+      ],
+      "source": "assets/source/optic-v1.png",
+      "sourcePivot": [
+        592,
+        1045
+      ],
+      "sourceCore": [
+        178,
+        69,
+        1059,
+        1111
+      ],
+      "sourceRectangle": [
+        172,
+        63,
+        1065,
+        1117
+      ],
+      "uniformScale": 0.036322360953461974,
+      "rotationDegrees": -0.0
     }
-  }
+  },
+  "assemblyRevision": "q3b-pack-v1"
 }

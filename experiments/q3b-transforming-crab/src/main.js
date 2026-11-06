@@ -31,7 +31,7 @@ for(let i=0;i<parts.length;i++){
 const motion=new Motion();
 function configure(){
  motion.coreBottom=ink.core.maxY;
- motion.setGeometry(motion.legs.map(l=>({id:l.id,sole:soles[l.id]?Math.max(...soles[l.id].map(p=>p[1])):l.sole})));
+ motion.setGeometry(motion.legs.map(l=>{const lower=parts.find(p=>p.id==='lower'+l.id),foot=parts.find(p=>p.id==='foot'+l.id),upper=parts.find(p=>p.id==='upper'+l.id);return{id:l.id,sole:soles[l.id]?Math.max(...soles[l.id].map(p=>p[1])):l.sole,a:lower?Math.hypot(...lower.joint):l.a,b:foot?Math.hypot(...foot.joint):l.b,hip:upper?.joint};}));
 }
 configure();const rig=new Rig(parts,motion,soles);
 let paused=false,showBones=false,camera=0,cameraV=0,last={},view={},held=new Set();
@@ -58,7 +58,7 @@ window.addEventListener('keyup',event=>{if(held.delete(event.code)&&held.size===
 window.addEventListener('blur',()=>{if(held.size){held.clear();motion.dispatch({type:'stop'});}});
 function advance(dt){motion.update(dt);[camera,cameraV]=spring(camera,cameraV,motion.x,dt,2.3);}
 function render(){
- const width=app.screen.width,height=app.screen.height,ground=height*.80,scale=Math.min(width/740,height/460,1.55),cx=width*.5-camera*scale;
+ const width=app.screen.width,height=app.screen.height,ground=height*.80,scale=Math.min(width/740,(ground-55)/410,1.55),cx=width*.5-camera*scale;
  const day=$('background').value==='light',sky=day?0xd7dfd0:0x263d3f,skyLow=day?0xbdcdbb:0x1b3435,groundColor=day?0x9fb4a2:0x1a3030;
  back.clear().rect(0,0,width,height).fill(sky);
  back.circle(width*.75,height*.25,height*.19).fill({color:day?0xeee6ca:0xa6b9a1,alpha:day?.45:.055});

@@ -1,5 +1,11 @@
 # Builder Q3B — живой ACK
 
+## Актуально: q3b-c1 готов к независимой проверке
+
+Кандидат и границы описаны в CANDIDATE.md, подробная история проверки — BUILDER_SELF_REVIEW.md. Итоговый exact pin21: output/builder/c1-files.json. Полный арт q3b-full-art-v2 / pack-v1,12PNG/23attachments. Реализованы три связанные формы, обе трансформации/reverse/третья цель, idle, движение/low/jump и общий manual/auto dispatcher. Проверены9/9 тестов; production build и diff-check проходят. Исправление отрыва с хода проверено четырьмя браузерными сценариями обеих направлений с actual23world/angles; evidence output/playwright/takeoff-fix/check.json. Общий более ранний UI-прогон честно отделён по версии.
+
+По узкому разрешению Lead/CTO manifest нормализован только CRLF→LF, JSON семантически идентичен. Proof: output/builder/manifest-lf-normalization.json. Итоговый pin отличается от c1-review-files.json в motion.js (takeoff fix) и байтах manifest (LF); остальные19 совпадают. Источники/PNG/manifest далее frozen для Artist и обоих независимых QA. Git/commit/push централизует Lead; сервер4186 PID28588 принадлежит CTO и Builder его не останавливает. Это передача кандидата на проверку, не финальная приёмка или публикация.
+
 6 ноября2026. Точная существующая session01a1690d-7f46-7453-9beb-79fa0a2e0faa, staff_id builder-r4d-q3-gpt61-01. Сохраняю назначенные gpt-6.1-sol/medium, cwd D:\dev\R4D. HEAD0eb8b5df46a01919fd26d590b43572793128f4fc, branch main. Текущие AGENTS, заказQ3B, CTO handoff, BRIEF/STATE, Staff builder, COMMON и проектный builder прочитаны. Старый Q3 frozen и не редактируется; ограничение одного прохода к Q3B не применяется. Новых chats/subagents/worktree/клонов нет. Git только Lead, deployment/Review/VPS вне роли.
 
 Первый реальный шаг: сверены база/dirty files, создан этот ACK, запрошен художественно-механический вход у прежнего Asset Artist через точный thread. Финальной генерации до взаимно подтверждённого договора нет. Художественный дизайн не подменяю своей фантазией; после ART_DIRECTION явно подтвержу inventory/цепи/pivots/layers/hidden continuations и запишу ASSEMBLY_CONTRACT.

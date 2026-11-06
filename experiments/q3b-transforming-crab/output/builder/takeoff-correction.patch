@@ -1,0 +1,14 @@
+Proposed narrow correction in src/motion.js; runtime is not changed by this proposal.
+
+At entry to prepare, REMOVE:
+  this.flightFeet=Object.fromEntries(this.legs.map(l=>[l.id,this.feet[l.id].x-this.x]));
+
+At the actual prepare -> flight transition, capture the CURRENT planted offsets:
+  if(this.jump==='prepare'&&this.jumpTime>=.3){
+    this.flightFeet=Object.fromEntries(this.legs.map(l=>[l.id,this.feet[l.id].x-this.x]));
+    this.jump='flight';this.jumpTime=0;this.event('flight');
+  }
+
+Validation: the new tests/rig.test.js takeoff-during-locomotion test, the existing eight tests,
+then a targeted rendered move -> jump -> landing/retarget check with before/after attachment positions.
+No changes to PNG, manifest, form controller, endpoint silhouettes, framing, or jump amplitude.
