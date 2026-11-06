@@ -1,0 +1,355 @@
+{
+  "version": 1,
+  "artRevision": "q3b-early-art-v1",
+  "phase": "early-real-joint-only",
+  "complete": false,
+  "character": "Фонарный механик",
+  "coordinates": "+X right, +Y down; joint relative to parent pivot",
+  "parts": [
+    {
+      "id": "core",
+      "file": "art/core.png",
+      "parent": null,
+      "joint": [
+        0,
+        0
+      ],
+      "pivot": [
+        98,
+        69
+      ],
+      "layer": 30,
+      "size": [
+        196,
+        91
+      ]
+    },
+    {
+      "id": "shellLeft",
+      "file": "art/shellLeft.png",
+      "parent": "core",
+      "joint": [
+        -68,
+        -42
+      ],
+      "pivot": [
+        16,
+        62
+      ],
+      "layer": 55,
+      "size": [
+        116,
+        78
+      ]
+    },
+    {
+      "id": "boomLeft",
+      "file": "art/boom.png",
+      "parent": "core",
+      "joint": [
+        -58,
+        -35
+      ],
+      "pivot": [
+        14,
+        16
+      ],
+      "layer": 40,
+      "size": [
+        94,
+        31
+      ]
+    },
+    {
+      "id": "forearmLeft",
+      "file": "art/forearm.png",
+      "parent": "boomLeft",
+      "joint": [
+        70,
+        0
+      ],
+      "pivot": [
+        13,
+        14
+      ],
+      "layer": 41,
+      "size": [
+        87,
+        27
+      ]
+    },
+    {
+      "id": "palmLeft",
+      "file": "art/palm.png",
+      "parent": "forearmLeft",
+      "joint": [
+        65,
+        0
+      ],
+      "pivot": [
+        8,
+        14
+      ],
+      "layer": 42,
+      "size": [
+        56,
+        25
+      ]
+    },
+    {
+      "id": "jawLeft",
+      "file": "art/jaw.png",
+      "parent": "palmLeft",
+      "joint": [
+        23.0209,
+        -7.5681
+      ],
+      "pivot": [
+        6,
+        8
+      ],
+      "layer": 43,
+      "size": [
+        34,
+        14
+      ]
+    }
+  ],
+  "geometry": {
+    "upperLength": 90,
+    "lowerLength": 105,
+    "boomLength": 70,
+    "forearmLength": 65,
+    "mastLength": 40
+  },
+  "preparation": {
+    "core": {
+      "file": "art/core.png",
+      "pivot": [
+        98,
+        69
+      ],
+      "size": [
+        196,
+        91
+      ],
+      "opaqueBounds": [
+        3,
+        4,
+        193,
+        88
+      ],
+      "source": "assets/source/core-v1.png",
+      "sourcePivot": [
+        915,
+        630
+      ],
+      "sourceCore": [
+        87,
+        60,
+        1742,
+        798
+      ],
+      "sourceRectangle": [
+        81,
+        54,
+        1748,
+        804
+      ],
+      "uniformScale": 0.1148036253776435,
+      "rotationDegrees": -0.0
+    },
+    "shellLeft": {
+      "file": "art/shellLeft.png",
+      "pivot": [
+        16,
+        62
+      ],
+      "size": [
+        116,
+        78
+      ],
+      "opaqueBounds": [
+        3,
+        3,
+        113,
+        75
+      ],
+      "source": "assets/source/shellLeft-v1.png",
+      "sourcePivot": [
+        250,
+        800
+      ],
+      "sourceCore": [
+        98,
+        99,
+        1413,
+        952
+      ],
+      "sourceRectangle": [
+        92,
+        93,
+        1419,
+        958
+      ],
+      "uniformScale": 0.08365019011406843,
+      "rotationDegrees": -0.0
+    },
+    "boom": {
+      "file": "art/boom.png",
+      "pivot": [
+        14,
+        16
+      ],
+      "size": [
+        94,
+        31
+      ],
+      "opaqueBounds": [
+        3,
+        4,
+        91,
+        28
+      ],
+      "source": "assets/source/boom-v1.png",
+      "sourcePivot": [
+        354,
+        365
+      ],
+      "sourceCore": [
+        103,
+        84,
+        2070,
+        643
+      ],
+      "sourceRectangle": [
+        97,
+        78,
+        2076,
+        649
+      ],
+      "uniformScale": 0.04469622726840362,
+      "rotationDegrees": -0.7317070839830414,
+      "distalJoint": [
+        70,
+        0
+      ]
+    },
+    "forearm": {
+      "file": "art/forearm.png",
+      "pivot": [
+        13,
+        14
+      ],
+      "size": [
+        87,
+        27
+      ],
+      "opaqueBounds": [
+        3,
+        3,
+        84,
+        25
+      ],
+      "source": "assets/source/forearm-v1.png",
+      "sourcePivot": [
+        350,
+        365
+      ],
+      "sourceCore": [
+        112,
+        107,
+        2036,
+        619
+      ],
+      "sourceRectangle": [
+        106,
+        101,
+        2042,
+        625
+      ],
+      "uniformScale": 0.04226267880364109,
+      "rotationDegrees": -0.0,
+      "distalJoint": [
+        65,
+        0
+      ]
+    },
+    "palm": {
+      "file": "art/palm.png",
+      "pivot": [
+        8,
+        14
+      ],
+      "size": [
+        56,
+        25
+      ],
+      "opaqueBounds": [
+        3,
+        3,
+        53,
+        22
+      ],
+      "source": "assets/source/palm-v1.png",
+      "sourcePivot": [
+        260,
+        500
+      ],
+      "sourceCore": [
+        97,
+        156,
+        1676,
+        768
+      ],
+      "sourceRectangle": [
+        91,
+        150,
+        1682,
+        774
+      ],
+      "uniformScale": 0.031665611146295125,
+      "rotationDegrees": -0.0,
+      "childJoint": [
+        23.0209,
+        -7.5681
+      ]
+    },
+    "jaw": {
+      "file": "art/jaw.png",
+      "pivot": [
+        6,
+        8
+      ],
+      "size": [
+        34,
+        14
+      ],
+      "opaqueBounds": [
+        2,
+        3,
+        31,
+        11
+      ],
+      "source": "assets/source/jaw-v1.png",
+      "sourcePivot": [
+        350,
+        435
+      ],
+      "sourceCore": [
+        120,
+        112,
+        1932,
+        620
+      ],
+      "sourceRectangle": [
+        114,
+        106,
+        1938,
+        626
+      ],
+      "uniformScale": 0.016004415011037526,
+      "rotationDegrees": -0.0
+    }
+  }
+}
