@@ -1,0 +1,16 @@
+npm error code EPERM
+npm error syscall unlink
+npm error path D:\dev\R4D\experiments\q3c-victorian-mantis\node_modules\@esbuild\win32-x64\esbuild.exe
+npm error errno -4048
+npm error [Error: EPERM: operation not permitted, unlink 'D:\dev\R4D\experiments\q3c-victorian-mantis\node_modules\@esbuild\win32-x64\esbuild.exe'] {
+npm error   errno: -4048,
+npm error   code: 'EPERM',
+npm error   syscall: 'unlink',
+npm error   path: 'D:\\dev\\R4D\\experiments\\q3c-victorian-mantis\\node_modules\\@esbuild\\win32-x64\\esbuild.exe'
+npm error }
+npm error
+npm error The operation was rejected by your operating system.
+npm error It's possible that the file was already in use (by a text editor or antivirus), or that you lack permissions to access it.
+npm error
+npm error If you believe this might be a permissions issue, please double-check the permissions of the file and its containing directories, or try running the command again as root/Administrator.
+npm error A complete log of this run can be found in: D:\dev\R4D\experiments\q3c-victorian-mantis\qa\technical\.local\npm-cache\_logs\2026-11-06T22_44_22_037Z-debug-0.log

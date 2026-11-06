@@ -1,0 +1,19 @@
+
+> r4d-q3c-victorian-mantis@0.1.0 test
+> node --test tests/*.test.js
+
+✔ one first input starts one ordered delivery; repeated activation does not reset it (8.777ms)
+✔ same seed, input and elapsed time produce the same joints across frame cadences (17.0029ms)
+✔ fall accelerates; first contact is directly on the beacon, rigid body never sinks below it (1.6184ms)
+✔ links retain length throughout deployment; knees and feet remain above the floor (18.9574ms)
+✔ hatches open before feet exit and eye lid opens before the eye emerges (0.3842ms)
+✔ idle moves chassis and eye while ground contacts remain planted; pointer affects the gaze (0.8893ms)
+✔ stage boundaries and integer clock do not introduce jumps or dropped commands (0.9983ms)
+ℹ tests 7
+ℹ suites 0
+ℹ pass 7
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 168.9803
