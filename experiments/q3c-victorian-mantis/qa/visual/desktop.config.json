@@ -1,0 +1,16 @@
+{
+  "browser": {
+    "browserName": "chromium",
+    "isolated": true,
+    "launchOptions": {
+      "executablePath": "C:/Users/user/AppData/Local/ms-playwright/chromium-1208/chrome-win64/chrome.exe",
+      "headless": true
+    },
+    "contextOptions": {
+      "viewport": { "width": 1440, "height": 1000 },
+      "deviceScaleFactor": 1,
+      "reducedMotion": "no-preference"
+    }
+  },
+  "outputDir": "output/playwright/desktop"
+}
