@@ -1,0 +1,27 @@
+{
+  "schemaVersion": 1,
+  "id": "q3c.moth.impact.v1",
+  "units": "world units, x right, y down",
+  "texturePixelsPerUnit": 4,
+  "origin": "contactWorldXY",
+  "axis": "normalized strikeDirection in world space",
+  "drawOrder": ["dust", "debris", "sparks", "flash"],
+  "maxTraceRadiusWorld": 32,
+  "sprites": {
+    "brassChip": { "path": "impact-brass-chip.svg", "viewBox": [-6, -4, 12, 8], "spriteAnchor": [0.5, 0.5] },
+    "enamelChip": { "path": "impact-enamel-chip.svg", "viewBox": [-5, -4, 11, 8], "spriteAnchor": [0.45454545454545453, 0.5] },
+    "shaving": { "path": "impact-shaving.svg", "viewBox": [-7, -4, 14, 8], "spriteAnchor": [0.5, 0.5] },
+    "spark": { "path": "impact-spark.svg", "viewBox": [-10, -3, 16, 6], "spriteAnchor": [0.625, 0.5] },
+    "flash": { "path": "impact-flash.svg", "viewBox": [-6, -6, 12, 12], "spriteAnchor": [0.5, 0.5] },
+    "dust": { "path": "impact-dust.svg", "viewBox": [-22, -17, 44, 34], "spriteAnchor": [0.5, 0.5] }
+  },
+  "burst": {
+    "flash": { "texture": "flash", "count": 1, "startMs": 0, "lifetimeMs": [35, 60], "maxRadiusWorld": 5 },
+    "sparks": { "texture": "spark", "count": [4, 6], "startMs": 0, "lifetimeMs": [80, 160], "speedWorldPerSecond": [78, 137], "halfConeDeg": 36, "scale": [0.29, 0.54] },
+    "debris": { "textures": ["brassChip", "enamelChip", "shaving"], "count": [5, 7], "startMs": 0, "lifetimeMs": [180, 320], "speedWorldPerSecond": [36, 72], "halfConeDeg": 64, "scale": [0.34, 0.46], "spinDegPerSecond": [-680, 720] },
+    "dust": { "texture": "dust", "count": 1, "startMs": 20, "lifetimeMs": [200, 340], "maxRadiusWorld": 22, "driftMaxWorld": 10, "scaleFrom": 0.3, "scaleTo": 1 }
+  },
+  "spawnRule": "Emit each group at the recorded contactWorldXY on the hit event. Delayed dust uses that same saved point. Use seeded angular and speed choices; stop or ease outward travel so the entire trace remains within 32 world units.",
+  "compositing": "Normal alpha, flash behind the front edge of the touching blades when possible. Spark +x points along its travel. Keep the blades readable throughout the effect.",
+  "designSource": "design/concept-stage-d/MOTH_HUNT_HANDOFF.md"
+}

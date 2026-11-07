@@ -1,0 +1,61 @@
+{
+  "schemaVersion": 1,
+  "id": "q3c.moth.v1",
+  "units": "world units, x right, y down",
+  "texturePixelsPerUnit": 4,
+  "root": "moth.body",
+  "facing": [1, 0],
+  "drawOrder": ["moth.wing.far", "moth.wing.near", "moth.body"],
+  "parts": {
+    "moth.body": {
+      "path": "moth-body.svg",
+      "parent": null,
+      "viewBox": [-17, -8, 40, 16],
+      "pivot": [0, 0],
+      "spriteAnchor": [0.425, 0.5],
+      "attachments": {
+        "wingFar": [-1, -2.5],
+        "wingNear": [-1, 2.5],
+        "graspCenter": [-2, 0]
+      }
+    },
+    "moth.wing.far": {
+      "path": "moth-wing-left.svg",
+      "parent": "moth.body",
+      "side": "far",
+      "viewBox": [-25, -27, 36, 31],
+      "pivot": [0, 0],
+      "spriteAnchor": [0.6944444444444444, 0.8709677419354839],
+      "parentAttachment": "wingFar",
+      "rollAxisLocal": [1, 0, 0]
+    },
+    "moth.wing.near": {
+      "path": "moth-wing-right.svg",
+      "parent": "moth.body",
+      "side": "near",
+      "viewBox": [-25, -4, 36, 31],
+      "pivot": [0, 0],
+      "spriteAnchor": [0.6944444444444444, 0.12903225806451613],
+      "parentAttachment": "wingNear",
+      "rollAxisLocal": [1, 0, 0]
+    }
+  },
+  "openSpanWorld": 54,
+  "openPaintAabb": [-24, -27, 22, 27],
+  "safeSpawnRadiusWorld": 37,
+  "captureEllipseLocal": { "center": [-2, 0], "radii": [11, 4] },
+  "flightProfile": {
+    "periodMs": 205,
+    "nominalFarLagMs": 15,
+    "projectionRule": "Apply cos(roll) or the listed positive scaleY about each own hinge. Left/far SVG already extends toward negative y, right/near toward positive y.",
+    "samples": [
+      { "tMs": 0, "farRollDeg": 62, "nearRollDeg": 58, "farScaleY": 0.4695, "nearScaleY": 0.5299 },
+      { "tMs": 40, "farRollDeg": 34, "nearRollDeg": 25, "farScaleY": 0.829, "nearScaleY": 0.9063 },
+      { "tMs": 82, "farRollDeg": -8, "nearRollDeg": -12, "farScaleY": 0.9903, "nearScaleY": 0.9781 },
+      { "tMs": 132, "farRollDeg": 9, "nearRollDeg": 16, "farScaleY": 0.9877, "nearScaleY": 0.9613 },
+      { "tMs": 205, "farRollDeg": 62, "nearRollDeg": 58, "farScaleY": 0.4695, "nearScaleY": 0.5299 }
+    ],
+    "interpolation": "Continuous asymmetric ease per interval. The sampled phase lag is already present. Apply the nominal lag only when constructing rolls from scratch."
+  },
+  "designSource": "design/concept-stage-d/MOTH_HUNT_HANDOFF.md"
+}
