@@ -1,13 +1,17 @@
 import { Application } from 'pixi.js';
 import { DT, INTRO_DURATION, SceneModel, TRANSFORM_DURATION } from './model.js';
 import { KEY_BEATS } from './motion.js';
-import { SceneView, loadProductionSkins } from './view.js';
+import { MOTH_GEOMETRY } from './hunt.js';
+import { SceneView, loadStageDSkins, loadProductionSkins } from './view.js';
 import './style.css';
 
 const host = document.querySelector('#stage');
 const hint = document.querySelector('#hint');
 const status = document.querySelector('#status');
 const unfoldButton = document.querySelector('#unfold');
+const huntButton = document.querySelector('#hunt');
+const repeatButton = document.querySelector('#repeat');
+const walkControls = document.querySelector('#walk-controls');
 const messages = {
   waiting: ['Коснитесь сцены или нажмите любую клавишу', 'Маячок ожидает сигнала'],
   beacon: ['Сигнал принят', 'Посылка уже в пути'],
@@ -15,20 +19,28 @@ const messages = {
   impact: ['Есть контакт', 'Механизм приходит в равновесие'],
   legs: ['Открываются посадочные створки', 'Лапы выходят из корпуса'],
   eye: ['Любопытство — первый признак жизни', 'Открывается оптический глаз'],
-  capsule: ['Нажмите «Раскрыться» или E', 'Капсула следит за курсором и касанием'],
+  capsule: ['Прогуляйтесь или нажмите «Раскрыться»', 'Стрелки или касание пола задают направление'],
   transforming: ['', 'Механизм раскрывается'],
   mantis: ['', 'Богомол следит за курсором и касанием'],
+};
+const huntMessages = {
+  observe: 'Мотылёк замечен. Нажмите «Схватить» или коснитесь добычи.',
+  intent: 'Богомол следит за приближением мотылька', lunge: 'Бросок',
+  impact: 'Есть захват', reaction: 'Механизм приходит в равновесие', idle: 'Охоту можно повторить',
 };
 
 try {
   const params = new URLSearchParams(location.search);
-  const initialSeed = params.has('seed') ? Number(params.get('seed')) >>> 0 : crypto.getRandomValues(new Uint32Array(1))[0];
+  const randomSeed = () => crypto.getRandomValues(new Uint32Array(1))[0];
+  const fixedSeed = params.has('seed');
+  const initialSeed = fixedSeed ? Number(params.get('seed')) >>> 0 : randomSeed();
   const model = new SceneModel(initialSeed);
   const app = new Application();
   await app.init({ antialias: true, backgroundAlpha: 0, resolution: Math.min(devicePixelRatio || 1, 2), autoDensity: true, resizeTo: host, preference: 'webgl' });
   host.prepend(app.canvas);
   app.canvas.setAttribute('aria-hidden', 'true');
-  const view = new SceneView(app, await loadProductionSkins());
+  const [rigTextures, stageDTextures] = await Promise.all([loadProductionSkins(), loadStageDSkins()]);
+  const view = new SceneView(app, rigTextures, stageDTextures);
   let paused = params.get('paused') === '1';
   let lastPhase;
   let rendered;
@@ -36,15 +48,28 @@ try {
 
   function render(paint = false, seconds) {
     view.resize(host.clientWidth, host.clientHeight);
-    model.prepareEntry(view.toWorld(0, 0).y);
+    const top = view.toWorld(0, 0);
+    const bottom = view.toWorld(host.clientWidth, host.clientHeight);
+    model.prepareEntry(top.y);
+    model.setBounds({ left: top.x, top: top.y, right: bottom.x, bottom: bottom.y, inset: 12 / view.camera.scale });
     const snapshot = seconds === undefined ? model.snapshot() : model.advance(seconds);
     view.render(snapshot);
     rendered = snapshot;
-    if (snapshot.phase !== lastPhase) {
-      [hint.textContent, status.textContent] = messages[snapshot.phase];
+    const state = `${snapshot.phase}:${snapshot.hunt.phase}:${snapshot.walk.queuedTransform}:${!!snapshot.impact}`;
+    if (state !== lastPhase) {
+      const hunting = snapshot.phase === 'mantis';
+      const hunt = snapshot.hunt.phase;
+      const [label, copy] = messages[snapshot.phase];
+      hint.textContent = snapshot.walk.queuedTransform ? 'Капсула завершает шаг' : label;
+      status.textContent = hunting && (hunt !== 'idle' || snapshot.impact) ? huntMessages[hunt] : copy;
       unfoldButton.hidden = snapshot.phase !== 'capsule';
+      unfoldButton.disabled = snapshot.walk.queuedTransform;
+      walkControls.hidden = snapshot.phase !== 'capsule' || snapshot.walk.queuedTransform;
+      huntButton.hidden = !hunting || hunt !== 'observe';
+      repeatButton.hidden = !hunting || hunt !== 'idle' || !snapshot.impact;
       host.dataset.phase = snapshot.phase;
-      lastPhase = snapshot.phase;
+      host.dataset.hunt = hunt;
+      lastPhase = state;
     }
     if (paint) app.render();
     return snapshot;
@@ -67,10 +92,16 @@ try {
     const rect = host.getBoundingClientRect();
     const target = view.toWorld(event.clientX - rect.left, event.clientY - rect.top);
     model.setPointer(target.x, target.y);
+    return target;
   }
   host.addEventListener('pointerdown', event => {
-    pointer(event);
-    if (model.activate(event.pointerType || 'pointer')) render(true);
+    if (event.target instanceof HTMLButtonElement) return;
+    const target = pointer(event);
+    const source = event.pointerType || 'pointer';
+    const moth = rendered.moth;
+    if (model.activate(source) ||
+      (target.y > -35 && model.walkTo(target.x, source)) ||
+      (moth && Math.hypot(target.x - moth.position.x, target.y - moth.position.y) <= MOTH_GEOMETRY.safeRadius && model.requestHunt(source))) render(true);
     host.focus({ preventScroll: true });
   });
   host.addEventListener('pointermove', pointer);
@@ -81,15 +112,23 @@ try {
     return true;
   }
   unfoldButton.addEventListener('click', () => unfold('button'));
+  huntButton.addEventListener('click', () => { if (model.requestHunt('button')) render(true); });
+  repeatButton.addEventListener('click', () => { if (model.repeatMoth('button')) render(true); });
+  walkControls.addEventListener('click', event => {
+    if (event.target instanceof HTMLButtonElement && model.walkBy(Number(event.target.dataset.step), 'button')) render(true);
+  });
   window.addEventListener('keydown', event => {
     // Enter/Space retain the focused button's native click. Other keys still
     // activate the scene when restart has left keyboard focus on that button.
     if (event.target instanceof HTMLButtonElement && (event.key === 'Enter' || event.key === ' ')) return;
     if (event.code === 'KeyE' && unfold('keyboard')) return;
-    if (model.activate('keyboard')) render(true);
-    if (event.code === 'Space') event.preventDefault();
+    const step = event.code === 'ArrowLeft' ? -1 : event.code === 'ArrowRight' ? 1 : 0;
+    if (model.activate('keyboard') || (step && model.walkBy(step, 'keyboard')) ||
+      ((event.code === 'KeyH' || event.code === 'Space') && model.requestHunt('keyboard')) ||
+      (event.code === 'KeyR' && model.repeatMoth('keyboard'))) render(true);
+    if (step || event.code === 'Space') event.preventDefault();
   });
-  document.querySelector('#restart').addEventListener('click', () => { model.reset(initialSeed); render(true); });
+  document.querySelector('#restart').addEventListener('click', () => { model.reset(fixedSeed ? initialSeed : randomSeed()); render(true); });
   app.ticker.add(ticker => {
     // Do not skip elapsed motion after a slow frame. The model always advances at 120 Hz.
     render(false, !paused && !document.hidden ? ticker.elapsedMS / 1000 : undefined);
@@ -106,9 +145,12 @@ try {
     resume: () => { paused = false; return render(true); },
     activate: () => { model.activate('debug'); return render(true); },
     transform: () => { model.requestTransform('debug'); return render(true); },
+    walkTo: x => { model.walkTo(x); return render(true); },
+    hunt: () => { model.requestHunt(); return render(true); },
+    repeat: () => { model.repeatMoth(); return render(true); },
     step: seconds => { model.advance(seconds); return render(true); },
     seek: (seconds, options) => { paused = true; model.seek(seconds, options); return render(true); },
-    reset: (seed = initialSeed) => { model.reset(seed); return render(true); },
+    reset: (seed = model.seed) => { model.reset(seed); return render(true); },
     setPointer: (x, y) => { model.setPointer(x, y); return render(true); },
   });
   render(true);

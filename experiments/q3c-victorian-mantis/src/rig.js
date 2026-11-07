@@ -1,5 +1,6 @@
 import fullRig from '../assets/rig/FULL_RIG_V1.json' with { type: 'json' };
 import { FOOT_CONTACTS, INTRO_PROFILES, beatAt, clamp, curveAt, introProgress, mix, rad, windowed } from './motion.js';
+import { walkSole } from './locomotion.js';
 export { TRANSFORM_DURATION, clamp, mix, smooth, windowed } from './motion.js';
 
 export const BODY_ORIGIN = 87;
@@ -10,6 +11,7 @@ export const RELEASE = fullRig.apertures.raptorial;
 export const RIG_PARTS = Object.freeze(fullRig.nodes.map(part => Object.freeze(part)));
 const partSpecs = new Map(RIG_PARTS.map(part => [part.id, part]));
 const BLADE_LENGTH = partSpecs.get('rapt.near.tibia').length;
+const CAPTURE = Object.fromEntries(fullRig.stageDInterfaces.capture.map(c => [c.side, c]));
 const WALK_ALIGN = .86;
 const WALK_LOWER = .17;
 const WALK_CLEARANCE = 9;
@@ -85,17 +87,19 @@ function toLocal(point, root) {
   return toWorld({ x: point.x - root.x, y: point.y - root.y }, { x: 0, y: 0, rotation: -root.rotation });
 }
 
-function solveLeg(leg, body, legTime, motion, idle) {
+function solveLeg(leg, body, legTime, motion, idle, walk) {
   const rollChannel = leg.stem + '.foot.roll';
-  const rawRoll = motion[rollChannel] + (idle[rollChannel] || 0);
+  const idleRoll = idle[rollChannel] || 0;
+  const rawRoll = motion[rollChannel] + (walk ? mix(idleRoll, walk.rolls[rollChannel] || 0, walk.rollLock) : idleRoll);
   const footAngle = -rad(rawRoll);
   // Switching heel/toe at zero angle preserves the same flat shoe pose.
   const sole = { x: rawRoll >= 0 ? -6 : 6, y: SOLE_DROP };
-  const anchor = { x: leg.footX + sole.x, y: 0 };
+  const stride = walk ? walkSole(walk, leg.id) : { offset: 0, lift: 0 };
+  const anchor = { x: leg.footX + sole.x + stride.offset, y: -stride.lift };
   const soleOffset = toWorld(sole, { x: 0, y: 0, rotation: footAngle });
   const { femur, tibia, foot } = leg.intro;
   const descent = introProgress({ ...foot, start: femur.start + WALK_ALIGN, duration: WALK_LOWER }, legTime);
-  const landing = toLocal({ x: anchor.x - soleOffset.x, y: -soleOffset.y - WALK_CLEARANCE * (1 - descent) }, body);
+  const landing = toLocal({ x: anchor.x - soleOffset.x, y: anchor.y - soleOffset.y - WALK_CLEARANCE * (1 - descent) }, body);
   const dx = leg.side * (landing.x - leg.hip.x);
   const dy = landing.y - leg.hip.y;
   const distance = Math.hypot(dx, dy);
@@ -124,10 +128,10 @@ function solveLeg(leg, body, legTime, motion, idle) {
   const ankleRatio = ankleDrop / (Math.max(1, floorRoom - 5 - depthDrop) * .65);
   const tilt = align === 1 ? 0 : leg.outward * Math.atan(Math.max(0, Math.max(kneeRatio, ankleRatio) - 1));
   return { ...leg, upperAngle, lowerAngle, footAngle, sole, anchor, shoulderProgress: sweep,
-    kneeProgress: extend, tilt, planted: descent === 1 };
+    kneeProgress: extend, tilt, planted: descent === 1 && stride.lift < 1e-9 };
 }
 
-export function solveRig({ body, legTime, eyeTime, transformTime, regulatorAngle, motion, idle, gaze }) {
+export function solveRig({ body, legTime, eyeTime, transformTime, regulatorAngle, motion, idle, gaze, walk, strike, trackingMoth, headGaze }) {
   const stance = stanceMotion(transformTime, motion);
   const overrides = new Map();
   const relative = (id, angle) => overrides.set(id, { rotation: -rad(angle) });
@@ -143,8 +147,21 @@ export function solveRig({ body, legTime, eyeTime, transformTime, regulatorAngle
     const bay = 'bay.rapt.' + side + '.catch';
     const arm = 'rapt.' + side;
     relative(bay, track(bay + '.open'));
-    absolute(arm + '.femur', track(arm + '.femur.abs'));
-    relative(arm + '.tibia', track(arm + '.tibia.relative'));
+    let shoulder = track(arm + '.femur.abs');
+    let claw = track(arm + '.tibia.relative');
+    if (strike) {
+      const near = side === 'near';
+      const { wind, reach, close = 0 } = strike;
+      if (strike.side === side) {
+        shoulder += near ? -14 * wind + 19 * reach : 14 * wind + 7 * reach;
+        claw += near ? -13 * wind + 14 * reach - 6 * close : 14 * wind - 34 * reach + 7 * close;
+      } else {
+        shoulder += (near ? -1 : 1) * (3 * wind + 8 * reach);
+        claw += (near ? -1 : 1) * (4 * wind + 6 * reach + 3 * close);
+      }
+    }
+    absolute(arm + '.femur', shoulder);
+    relative(arm + '.tibia', claw);
     relative(arm + '.latch', track(arm + '.latch.open'));
   }
   absolute('thorax.lower', track('thorax.lower.abs'));
@@ -174,7 +191,10 @@ export function solveRig({ body, legTime, eyeTime, transformTime, regulatorAngle
   const gazeX = clamp((gaze.x - neutral.x) / 230, -1, 1);
   const gazeY = clamp((gaze.y - neutral.y) / 230, -1, 1);
   const aim = gimbal * (gazeX * 14 + track('eye.gimbal.aim'));
-  absolute('head.chassis', -25 * (1 - headTurn) + track('head.chassis.abs') + gazeY * gimbal * 5);
+  const headX = clamp((headGaze.x - neutral.x) / 230, -1, 1);
+  const headY = clamp((headGaze.y - neutral.y) / 230, -1, 1);
+  const headAim = gimbal * mix(5 * gazeY, 8 * headX + 12 * headY, trackingMoth);
+  absolute('head.chassis', -25 * (1 - headTurn) + track('head.chassis.abs') + headAim);
   relative('eye.gimbal', .38 * aim);
   overrides.set('eye.pupil', { dx: clamp(aim * .17, -2.4, 2.4), dy: gazeY * gimbal * 1.35 });
   relative('eye.brow', mix(-4, track('eye.brow.angle'), introProgress(exit.brow, eyeTime)));
@@ -187,7 +207,7 @@ export function solveRig({ body, legTime, eyeTime, transformTime, regulatorAngle
   overrides.set('shell.regulator', { rotation: regulatorAngle });
 
   const solved = LEG_SPECS.map(leg => {
-    const pose = solveLeg(leg, body, legTime, motion, idle);
+    const pose = solveLeg(leg, body, legTime, motion, idle, walk);
     const side = leg.side;
     const mirror = angle => side > 0 ? angle : Math.PI - angle;
     const upper = mirror(pose.upperAngle), lower = mirror(pose.lowerAngle);
@@ -257,7 +277,11 @@ export function solveRig({ body, legTime, eyeTime, transformTime, regulatorAngle
     const id = 'rapt.' + side;
     const shoulder = parts[id + '.femur'].world;
     const elbow = parts[id + '.tibia'].world;
-    return { id, shoulder, elbow, tip: toWorld({ x: BLADE_LENGTH, y: 0 }, elbow) };
+    const [x, y] = CAPTURE[side].contactSeat;
+    const { xPerZ, yPerZ } = fullRig.coordinates.projection;
+    const seat = toWorld({ x, y }, elbow);
+    const contact = toWorld({ x: xPerZ * elbow.z, y: yPerZ * elbow.z }, { ...seat, rotation: body.rotation });
+    return { id, side, shoulder, elbow, contact, tip: toWorld({ x: BLADE_LENGTH, y: 0 }, elbow) };
   });
   const lens = parts['eye.lens'].world;
   return {

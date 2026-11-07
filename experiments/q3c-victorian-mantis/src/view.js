@@ -1,8 +1,11 @@
 import { Assets, Container, Graphics, Matrix, Sprite } from 'pixi.js';
 import { clamp } from './motion.js';
 import { FULL_RIG, RIG_PARTS } from './rig.js';
+import { MOTH_PACK } from './hunt.js';
+import { IMPACT_PACK, impactParticle, impactPlan } from './impact.js';
 
 const svgUrls = import.meta.glob('../assets/production-v1/parts/*.svg', { eager: true, query: '?url', import: 'default' });
+const stageDUrls = import.meta.glob('../assets/production-stage-d/*.svg', { eager: true, query: '?url', import: 'default' });
 const { xPerZ, yPerZ } = FULL_RIG.coordinates.projection;
 const byId = new Map(RIG_PARTS.map(part => [part.id, part]));
 const brass = 0xc6a269;
@@ -23,8 +26,15 @@ export async function loadProductionSkins() {
   })));
 }
 
-function sprite(name, offset, textures) {
-  const art = FULL_RIG.assets[name];
+export async function loadStageDSkins() {
+  return new Map(await Promise.all(Object.entries({ ...MOTH_PACK.parts, ...IMPACT_PACK.sprites }).map(async ([id, art]) => {
+    const url = stageDUrls['../assets/production-stage-d/' + art.path];
+    if (!url) throw new Error('Нет детали Stage D: ' + id);
+    return [id, await Assets.load(url)];
+  })));
+}
+
+function sprite(name, offset, textures, art = FULL_RIG.assets[name]) {
   const node = new Sprite({ texture: textures.get(name), label: name });
   node.anchor.set(...art.spriteAnchor);
   node.width = art.viewBox[2];
@@ -34,7 +44,7 @@ function sprite(name, offset, textures) {
 }
 
 export class SceneView {
-  constructor(app, textures) {
+  constructor(app, textures, stageDTextures) {
     this.world = new Container();
     app.stage.addChild(this.world);
     this.floor = new Graphics();
@@ -54,7 +64,20 @@ export class SceneView {
       this.pieces.set(id, { node, front, back });
     }
     this.contact = new Graphics();
-    this.world.addChild(this.contact);
+    this.moth = new Container({ label: MOTH_PACK.id });
+    this.wings = new Map();
+    for (const id of MOTH_PACK.drawOrder) {
+      const art = MOTH_PACK.parts[id];
+      const offset = art.parentAttachment ? MOTH_PACK.parts[art.parent].attachments[art.parentAttachment] : [0, 0];
+      const node = sprite(id, offset, stageDTextures, art);
+      this.moth.addChild(node);
+      if (art.parentAttachment) this.wings.set(art.side, { node, scale: node.scale.y });
+    }
+    this.stageDTextures = stageDTextures;
+    this.dust = new Container({ label: 'impact.dust' });
+    this.burst = new Container({ label: IMPACT_PACK.id });
+    this.world.addChildAt(this.dust, this.world.getChildIndex(this.pieces.get('rapt.near.tibia').node));
+    this.world.addChild(this.contact, this.moth, this.burst);
     this.camera = { scale: 1, x: 0, y: 0 };
     this.skinInfo = Object.freeze({ id: FULL_RIG.id, nodes: this.pieces.size, textures: textures.size });
   }
@@ -107,6 +130,41 @@ export class SceneView {
       }
     }
     this.renderFloorEffects(pose, time, phase, snapshot.active);
+    this.renderMoth(snapshot);
+  }
+
+  renderMoth({ moth, impact, tick }) {
+    this.moth.visible = !!moth;
+    if (moth) {
+      this.moth.position.set(moth.position.x, moth.position.y);
+      this.moth.rotation = moth.bank;
+      for (const [side, { node, scale }] of this.wings) node.scale.y = scale * moth.wings[side];
+    }
+    this.burst.visible = !!impact;
+    this.dust.visible = !!impact;
+    if (!impact) {
+      this.burstTick = undefined;
+      return;
+    }
+    if (this.burstTick !== impact.tick) {
+      this.burstTick = impact.tick;
+      for (const node of [...this.burst.removeChildren(), ...this.dust.removeChildren()]) node.destroy();
+      this.particles = impactPlan(impact).map(plan => {
+        const node = sprite(plan.texture, [0, 0], this.stageDTextures, IMPACT_PACK.sprites[plan.texture]);
+        const layer = plan.kind === 'dust' ? this.dust : this.burst;
+        layer.addChild(node);
+        return { plan, node, baseScale: { x: node.scale.x, y: node.scale.y } };
+      });
+    }
+    for (const { plan, node, baseScale } of this.particles) {
+      const state = impactParticle(plan, (tick - impact.tick) / 120);
+      node.visible = !!state;
+      if (!state) continue;
+      node.position.set(state.x, state.y);
+      node.rotation = state.rotation;
+      node.scale.set(baseScale.x * state.scale, baseScale.y * state.scale);
+      node.alpha = state.alpha;
+    }
   }
 
   trace(pose) {
