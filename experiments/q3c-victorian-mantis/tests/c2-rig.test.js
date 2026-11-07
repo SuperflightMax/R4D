@@ -8,7 +8,7 @@ import { FULL_RIG, RELEASE, RIG_PARTS } from '../src/rig.js';
 import partsIndex from '../assets/production-v1/PARTS_INDEX.json' with { type: 'json' };
 
 const near = (a, b, tolerance = 1e-7) => assert.ok(Math.abs(a - b) <= tolerance, `${a} != ${b}`);
-const distance = (a, b) => Math.hypot(a.x - b.x, a.y - b.y);
+const distance = (a, b) => Math.hypot(a.x - b.x, a.y - b.y, (a.depth ?? 0) - (b.depth ?? 0));
 const start = 7;
 const poseAt = (elapsed, seed = 42) => samplePose(start + elapsed, { transformAt: start, seed });
 

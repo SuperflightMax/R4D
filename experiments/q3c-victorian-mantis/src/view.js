@@ -82,14 +82,22 @@ export class SceneView {
     const { pose, time, phase } = snapshot;
     const bodyC = Math.cos(pose.body.rotation);
     const bodyS = Math.sin(pose.body.rotation);
+    const depthX = bodyC * xPerZ - bodyS * yPerZ;
+    const depthY = bodyS * xPerZ + bodyC * yPerZ;
     for (const [id, piece] of this.pieces) {
       const { local, world } = pose.parts[id];
       const c = Math.cos(world.rotation), s = Math.sin(world.rotation);
       const dx = xPerZ * Math.sin(local.roll);
       const dy = Math.cos(local.roll) + yPerZ * Math.sin(local.roll);
-      const zx = xPerZ * world.z, zy = yPerZ * world.z;
-      this.matrix.set(c, s, c * dx - s * dy, s * dx + c * dy,
-        world.x + bodyC * zx - bodyS * zy, world.y + bodyS * zx + bodyC * zy);
+      const z = world.z + (world.depth || 0);
+      const x = world.x + depthX * z, y = world.y + depthY * z;
+      if (world.tilt) {
+        const tiltX = depthX * Math.sin(world.tilt);
+        const tiltY = Math.cos(world.tilt) + depthY * Math.sin(world.tilt);
+        this.matrix.set(c + s * tiltX, s * tiltY, -s + c * tiltX, c * tiltY, x, y);
+      } else {
+        this.matrix.set(c, s, c * dx - s * dy, s * dx + c * dy, x, y);
+      }
       piece.node.setFromMatrix(this.matrix);
       if (piece.back) {
         // The determinant crosses zero at the edge of the same rigid plate.
@@ -108,13 +116,14 @@ export class SceneView {
       const { a, b, c, d, tx, ty } = node.localTransform;
       const { parent, world } = pose.parts[id];
       const cos = Math.cos(world.rotation), sin = Math.sin(world.rotation);
+      const vertical = Math.cos(world.tilt || 0);
       // Nodes are direct children of the camera container in depth order.
       // Their local Pixi matrices are the rendered transforms before the camera.
       parts[id] = {
         token: String(node.uid), parent, asset: front?.label ?? `rig:${id}`,
         surface: (back?.visible ? back : front)?.label ?? null,
         matrix: [a, b, c, d, tx, ty],
-        physicalMatrix: [cos, sin, -sin, cos, world.x, world.y],
+        physicalMatrix: [cos, sin * vertical, -sin, cos * vertical, world.x, world.y],
       };
     }
     return { camera: { ...this.camera }, parts };

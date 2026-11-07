@@ -1,10 +1,10 @@
 import { test } from 'node:test';
 import assert from 'node:assert/strict';
 import { DT, INTRO_DURATION, SceneModel, samplePose, stageAt } from '../src/model.js';
-import { BODY_ORIGIN, FULL_RIG } from '../src/rig.js';
+import { FULL_RIG, LANDING_Y } from '../src/rig.js';
 
 const near = (a, b, tolerance = 1e-7) => assert.ok(Math.abs(a - b) <= tolerance, `${a} != ${b}`);
-const distance = (a, b) => Math.hypot(a.x - b.x, a.y - b.y);
+const distance = (a, b) => Math.hypot(a.x - b.x, a.y - b.y, (a.depth ?? 0) - (b.depth ?? 0));
 
 test('one first input starts one ordered delivery; repeated activation does not reset it', () => {
   const scene = new SceneModel(27);
@@ -70,13 +70,18 @@ test('the knees exit the four open lower bays in order before swinging out to th
   const { bodyOpeningsXYUp, sideRollMagnitude } = FULL_RIG.apertures.walk;
   const firstExit = new Map();
   for (let tick = Math.ceil(2.35 / DT); tick < Math.ceil(4.5 / DT); tick++) {
-    const { legs, hatches } = samplePose(tick * DT);
+    const { body, parts, legs, hatches } = samplePose(tick * DT);
     for (const [index, leg] of legs.entries()) {
-      const x = leg.hip.x + leg.side * leg.upper * Math.cos(leg.upperAngle);
-      const y = leg.hip.y - BODY_ORIGIN + leg.upper * Math.sin(leg.upperAngle);
+      const knee = leg.world.knee;
+      const root = parts.cradle.world;
+      const dx = knee.x - root.x, dy = knee.y - root.y;
+      const x = Math.cos(body.rotation) * dx + Math.sin(body.rotation) * dy;
+      const y = Math.cos(body.rotation) * dy - Math.sin(body.rotation) * dx;
       const [minX, maxX] = bodyOpeningsXYUp[leg.id.split('.')[0]][0];
-      if (!firstExit.has(leg.id) && y >= 0) {
+      if (!firstExit.has(leg.id) && (knee.depth ?? 0) * leg.outward >= 8) {
         assert.ok(x >= minX && x <= maxX, `${leg.id} missed its lower bay`);
+        const [bottom, top] = bodyOpeningsXYUp[leg.id.split('.')[0]][1];
+        assert.ok(y >= -top && y <= -bottom, `${leg.id} exited outside the lower aperture`);
         near(Math.abs(hatches[index].angle), sideRollMagnitude * Math.PI / 180);
         firstExit.set(leg.id, tick);
       }
@@ -86,6 +91,42 @@ test('the knees exit the four open lower bays in order before swinging out to th
   assert.deepEqual([...firstExit.keys()], ['rear.far', 'front.far', 'rear.near', 'front.near']);
   const ticks = [...firstExit.values()];
   assert.ok(ticks.slice(1).every((tick, index) => tick - ticks[index] >= 12));
+});
+
+test('each sole reaches its seat before ground contact and remains pinned while the frame takes load', () => {
+  const contactTolerance = .01;
+  const driftTolerance = .01;
+  const firstContacts = new Map();
+  const previousSoles = new Map();
+  const { yPerZ } = FULL_RIG.coordinates.projection;
+  let supportTick;
+  let liftTick;
+  for (let tick = Math.ceil(2.35 / DT); tick <= Math.ceil(5 / DT); tick++) {
+    const pose = samplePose(tick * DT);
+    for (const leg of pose.legs) {
+      const { foot } = leg.world;
+      const previous = previousSoles.get(leg.id);
+      if (previous && Math.abs(foot.x - previous.x) > driftTolerance) {
+        const projectedClearance = -foot.y - yPerZ * (foot.depth ?? 0);
+        assert.ok(projectedClearance >= 5, `${leg.id} spread too close to the floor at tick ${tick}`);
+      }
+      previousSoles.set(leg.id, foot);
+      if (Math.abs(foot.y) <= contactTolerance && !firstContacts.has(leg.id)) {
+        assert.ok(Math.abs(foot.x - leg.anchor.x) <= driftTolerance);
+        firstContacts.set(leg.id, { tick, x: foot.x });
+      }
+      const contact = firstContacts.get(leg.id);
+      if (contact) {
+        assert.ok(Math.abs(foot.x - contact.x) <= driftTolerance, `${leg.id} slid after tick ${contact.tick}`);
+        assert.ok(Math.abs(foot.y) <= contactTolerance, `${leg.id} left the floor after tick ${contact.tick}`);
+      }
+    }
+    if (supportTick === undefined && pose.legs.every(leg => leg.planted)) supportTick = tick;
+    if (liftTick === undefined && LANDING_Y - pose.body.y > .02) liftTick = tick;
+    if (supportTick === undefined) assert.ok(LANDING_Y - pose.body.y <= .02, `chassis lifted before support at tick ${tick}`);
+  }
+  assert.equal(firstContacts.size, 4);
+  assert.ok(liftTick > supportTick, 'chassis must take load after four soles are seated');
 });
 
 test('idle moves chassis and eye while ground contacts remain planted; pointer affects the gaze', () => {

@@ -10,11 +10,9 @@ export const RELEASE = fullRig.apertures.raptorial;
 export const RIG_PARTS = Object.freeze(fullRig.nodes.map(part => Object.freeze(part)));
 const partSpecs = new Map(RIG_PARTS.map(part => [part.id, part]));
 const BLADE_LENGTH = partSpecs.get('rapt.near.tibia').length;
-
-export function walkoutLift(time) {
-  // Raise the lower bays over the knees during the downward swing, then load the four seated soles.
-  return 69 * windowed(time, .265, .60) - 34 * windowed(time, 1.50, .65);
-}
+const WALK_ALIGN = .86;
+const WALK_LOWER = .17;
+const WALK_CLEARANCE = 9;
 
 function stanceMotion(time, motion) {
   // Retain each drive's authored time and easing. Regear only the cleared end of the chest sweep.
@@ -34,13 +32,23 @@ export const LEG_SPECS = Object.freeze(Object.entries(FOOT_CONTACTS.contactX).ma
   const stem = 'walk.' + id;
   const [hipX, hipY] = partSpecs.get(stem + '.hip_fork').pivot;
   return Object.freeze({ id, stem, side: Math.sign(hipX), hip: { x: hipX, y: BODY_ORIGIN + hipY },
-    footX: contact.x, upper: partSpecs.get(stem + '.femur').length,
+    footX: contact.x, outward: id.endsWith('.far') ? -1 : 1, upper: partSpecs.get(stem + '.femur').length,
     lower: partSpecs.get(stem + '.tibia').length, intro: INTRO_PROFILES.legs[id] });
 }));
 
+const WALK_LOAD_START = Math.max(...LEG_SPECS.map(leg => leg.intro.femur.start)) + WALK_ALIGN + WALK_LOWER + .06;
+
+export function walkoutLift(time) {
+  return 35 * windowed(time, WALK_LOAD_START, 2.15 - WALK_LOAD_START);
+}
+
 export function toWorld(point, root) {
   const c = Math.cos(root.rotation), s = Math.sin(root.rotation);
-  return { x: root.x + c * point.x - s * point.y, y: root.y + s * point.x + c * point.y };
+  const x = root.x + c * point.x - s * point.y;
+  const dy = s * point.x + c * point.y;
+  if (root.tilt) return { x, y: root.y + dy * Math.cos(root.tilt), depth: root.depth + dy * Math.sin(root.tilt) };
+  const y = root.y + dy;
+  return root.depth ? { x, y, depth: root.depth } : { x, y };
 }
 
 function toLocal(point, root) {
@@ -55,7 +63,9 @@ function solveLeg(leg, body, legTime, motion, idle) {
   const sole = { x: rawRoll >= 0 ? -6 : 6, y: SOLE_DROP };
   const anchor = { x: leg.footX + sole.x, y: 0 };
   const soleOffset = toWorld(sole, { x: 0, y: 0, rotation: footAngle });
-  const landing = toLocal({ x: anchor.x - soleOffset.x, y: -soleOffset.y }, body);
+  const { femur, tibia, foot } = leg.intro;
+  const descent = introProgress({ ...foot, start: femur.start + WALK_ALIGN, duration: WALK_LOWER }, legTime);
+  const landing = toLocal({ x: anchor.x - soleOffset.x, y: -soleOffset.y - WALK_CLEARANCE * (1 - descent) }, body);
   const dx = leg.side * (landing.x - leg.hip.x);
   const dy = landing.y - leg.hip.y;
   const distance = Math.hypot(dx, dy);
@@ -65,26 +75,25 @@ function solveLeg(leg, body, legTime, motion, idle) {
   const lowerOpen = upperOpen + Math.acos(clamp(
     (distance ** 2 - leg.upper ** 2 - leg.lower ** 2) / (2 * leg.upper * leg.lower), -1, 1,
   ));
-  const { femur, tibia, foot } = leg.intro;
-  // Folded tibia follows the knee down through the bay. Each shin then rotates
-  // around the exposed hinge before the final IK takes over at its own seat.
-  const sweep = introProgress({ ...femur, duration: .82 }, legTime);
+  const sweep = introProgress({ ...femur, duration: .66 }, legTime);
   const extend = introProgress(tibia, legTime);
-  const place = introProgress({ ...foot, start: femur.start + .76, duration: .43 }, legTime);
-  const upperAngle = mix(mix(Math.PI, .62, sweep), upperOpen, place);
-  let lowerAngle = upperAngle + mix(Math.PI, lowerOpen - upperOpen, extend);
-  if (place < 1) {
-    const knee = toWorld({ x: leg.hip.x + leg.side * leg.upper * Math.cos(upperAngle),
-      y: leg.hip.y + leg.upper * Math.sin(upperAngle) }, body);
-    const floorSlope = clamp((-soleOffset.y - knee.y) / leg.lower, -1, 1);
-    const aimed = lowerAngle + leg.side * body.rotation;
-    if (Math.sin(aimed) > floorSlope) {
-      const contactAngle = Math.asin(floorSlope);
-      lowerAngle = (Math.cos(aimed) >= 0 ? contactAngle : Math.PI - contactAngle) - leg.side * body.rotation;
-    }
-  }
+  const align = introProgress({ ...foot, start: femur.start + .34, duration: WALK_ALIGN - .34 }, legTime);
+  const upperAngle = mix(mix(Math.PI, -.35, sweep), upperOpen, align);
+  const lowerAngle = upperAngle + mix(Math.PI, lowerOpen - upperOpen, Math.max(extend, align));
+
+  // Turn the knee plane out through its own lower bay. The shoe stays level,
+  // and the plane is back in XY before the shoe lowers vertically at its seat.
+  const hip = toWorld(leg.hip, body);
+  const kneeDrop = leg.upper * Math.sin(upperAngle + leg.side * body.rotation);
+  const ankleDrop = kneeDrop + leg.lower * Math.sin(lowerAngle + leg.side * body.rotation);
+  const floorRoom = -hip.y - soleOffset.y;
+  // Receding depth moves a far sole down in the picture. Reserve that space as well.
+  const depthDrop = Math.max(0, fullRig.coordinates.projection.yPerZ * leg.outward * ankleDrop);
+  const kneeRatio = kneeDrop / ((floorRoom - 3) * .65);
+  const ankleRatio = ankleDrop / (Math.max(1, floorRoom - 5 - depthDrop) * .65);
+  const tilt = align === 1 ? 0 : leg.outward * Math.atan(Math.max(0, Math.max(kneeRatio, ankleRatio) - 1));
   return { ...leg, upperAngle, lowerAngle, footAngle, sole, anchor, shoulderProgress: sweep,
-    kneeProgress: extend, planted: place === 1 };
+    kneeProgress: extend, tilt, planted: descent === 1 };
 }
 
 export function solveRig({ body, legTime, eyeTime, transformTime, regulatorAngle, motion, idle, gaze }) {
@@ -192,6 +201,18 @@ export function solveRig({ body, legTime, eyeTime, transformTime, regulatorAngle
       local: { x, y, rotation, roll: joint.roll || 0 },
       world: { x: position.x, y: position.y, rotation: parent ? parent.world.rotation + rotation : root.rotation, z },
     };
+  }
+
+  for (const leg of solved) {
+    if (!leg.tilt) continue;
+    const hip = parts[leg.stem + '.hip_fork'].world;
+    for (const suffix of ['femur', 'tibia', 'foot', 'piston.sleeve', 'piston.inner', 'piston.rod', 'knee.cap', 'ankle.cap']) {
+      const world = parts[leg.stem + '.' + suffix].world;
+      const dy = world.y - hip.y;
+      world.y = hip.y + dy * Math.cos(leg.tilt);
+      world.depth = dy * Math.sin(leg.tilt);
+      if (suffix !== 'foot' && suffix !== 'ankle.cap') world.tilt = leg.tilt;
+    }
   }
 
   const legs = solved.map(leg => {
