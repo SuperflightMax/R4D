@@ -1,0 +1,771 @@
+{
+  "sha": "bffca72375cee40e8cd96bb19e47b60f7b95e5d9",
+  "buildSha256": "01e5ee0fc3bbc0e6e259c58ae01a9d397965bef308cba0bad07b93da8f0802c3",
+  "samples": 409,
+  "rawSha256": "cccc859ffdfdcb5ad2d7f580b1d275ee06b1f558736739c06071f0e96dcc0690",
+  "limits": {
+    "contactTol": 0.01,
+    "liftTol": 0.02,
+    "numericTol": 0.000001,
+    "movingClearance": 5
+  },
+  "contact": {
+    "soles": {
+      "rear.far": {
+        "targetX": -111,
+        "alignTick": 428,
+        "firstContact": {
+          "tick": 449,
+          "x": -111.00000000000003,
+          "y": 0,
+          "projectedClearance": 0,
+          "floor": 0,
+          "seated": true,
+          "anchorX": -111
+        },
+        "seatTick": 449,
+        "finalErrorAtContact": 2.842170943040401e-14,
+        "drift": 8.526512829121202e-14,
+        "floorDeviation": 4.263256414560601e-14,
+        "floorPenetration": 2.842170943040401e-14,
+        "replant": 0,
+        "movingClearance": 6.459341491485123,
+        "movingProjectedClearance": 5.825363342850799
+      },
+      "front.far": {
+        "targetX": 99,
+        "alignTick": 442,
+        "firstContact": {
+          "tick": 463,
+          "x": 98.99999999999999,
+          "y": -0.005187259007570333,
+          "projectedClearance": 0.005187259007570333,
+          "floor": -0.005187259007570333,
+          "seated": false,
+          "anchorX": 99
+        },
+        "seatTick": 464,
+        "finalErrorAtContact": 1.4210854715202004e-14,
+        "drift": 4.263256414560601e-14,
+        "floorDeviation": 0.005187259007570333,
+        "floorPenetration": 0,
+        "replant": 0,
+        "movingClearance": 6.459369505277385,
+        "movingProjectedClearance": 5.8256490214755825
+      },
+      "rear.near": {
+        "targetX": -138,
+        "alignTick": 456,
+        "firstContact": {
+          "tick": 478,
+          "x": -138.00000000000003,
+          "y": -1.4210854715202004e-14,
+          "projectedClearance": 1.4210854715202004e-14,
+          "floor": -1.4210854715202004e-14,
+          "seated": true,
+          "anchorX": -138
+        },
+        "seatTick": 478,
+        "finalErrorAtContact": 2.842170943040401e-14,
+        "drift": 8.526512829121202e-14,
+        "floorDeviation": 2.842170943040401e-14,
+        "floorPenetration": 2.842170943040401e-14,
+        "replant": 0,
+        "movingClearance": 5.648197339714444,
+        "movingProjectedClearance": 6.270057842686251
+      },
+      "front.near": {
+        "targetX": 126,
+        "alignTick": 471,
+        "firstContact": {
+          "tick": 492,
+          "x": 126,
+          "y": -9.821121693676105e-11,
+          "projectedClearance": 9.821121693676105e-11,
+          "floor": -9.821121693676105e-11,
+          "seated": false,
+          "anchorX": 126
+        },
+        "seatTick": 493,
+        "finalErrorAtContact": 0,
+        "drift": 5.684341886080802e-14,
+        "floorDeviation": 9.821121693676105e-11,
+        "floorPenetration": 0,
+        "replant": 0,
+        "movingClearance": 5.647918715862228,
+        "movingProjectedClearance": 6.26669609057496
+      }
+    },
+    "firstAllInContactTick": 492,
+    "supportTick": 493,
+    "nominalPolygonXZ": [
+      [
+        -111,
+        -26.5
+      ],
+      [
+        99,
+        -17.5
+      ],
+      [
+        126,
+        26.5
+      ],
+      [
+        -138,
+        17.5
+      ]
+    ],
+    "polygonArea": 10428,
+    "containsRoot": true,
+    "dynamicDepth": 0,
+    "maxLiftBeforeSupport": 0.013736652344718436,
+    "loadOverToleranceTick": 500,
+    "loadDriveTick": 500,
+    "lostSupport": 0,
+    "findings": []
+  },
+  "geometry": {
+    "exits": {
+      "rear.far": {
+        "tick": 338,
+        "localX": -8.552367863654547,
+        "localYUp": 10.839658313229116,
+        "margin": 5.552367863654547,
+        "outward": 11.171406520869297,
+        "door": 104.00000000000001
+      },
+      "front.far": {
+        "tick": 351,
+        "localX": 8.29825470848302,
+        "localYUp": 10.79611855959921,
+        "margin": 5.29825470848302,
+        "outward": 9.495564306382166,
+        "door": 104.00000000000001
+      },
+      "rear.near": {
+        "tick": 366,
+        "localX": -8.15811816027462,
+        "localYUp": 10.80298152978286,
+        "margin": 5.15811816027462,
+        "outward": 8.46035953034367,
+        "door": 104.00000000000001
+      },
+      "front.near": {
+        "tick": 380,
+        "localX": 8.385476505049441,
+        "localYUp": 10.805059973655204,
+        "margin": 5.385476505049441,
+        "outward": 10.097442124251238,
+        "door": 104.00000000000001
+      }
+    },
+    "worst": {
+      "lengthError": 2.842170943040401e-14,
+      "pivotGap": 1.6968624882578708e-14,
+      "actuatorGap": 2.842170943040401e-14,
+      "actuatorRangeError": 0,
+      "physicalXYStep": 7.025843564801354,
+      "physical3DStep": 7.049763901485548,
+      "projectedStep": 7.321120500268988,
+      "angularStep": 0.2775465720511524,
+      "projectionError": 4.440892098500626e-16,
+      "tiltedFrames": 133
+    },
+    "worstAt": {
+      "physicalXYStep": {
+        "id": "walk.rear.near.tibia",
+        "beforeTick": 383,
+        "tick": 384,
+        "value": 7.025843564801354
+      },
+      "physical3DStep": {
+        "id": "walk.rear.near.tibia",
+        "beforeTick": 382,
+        "tick": 383,
+        "value": 7.049763901485548
+      },
+      "projectedStep": {
+        "id": "walk.rear.far.tibia",
+        "beforeTick": 353,
+        "tick": 354,
+        "value": 7.321120500268988
+      },
+      "angularStep": {
+        "id": "walk.rear.far.tibia",
+        "beforeTick": 372,
+        "tick": 373,
+        "value": 0.2775465720511524
+      }
+    },
+    "stepLimits": {
+      "physicalXYStep": 6,
+      "projectedStep": 6,
+      "angularStep": 0.25
+    },
+    "overLimit": {
+      "physicalXYStep": 28,
+      "projectedStep": 41,
+      "angularStep": 35
+    },
+    "findings": [
+      {
+        "code": "INTRO_STEP_BUDGET",
+        "id": "walk.rear.far.femur",
+        "tick": 336,
+        "detail": {
+          "xy": 0,
+          "xyz": 0,
+          "projected": 0,
+          "turn": 0.25877670251275553
+        }
+      },
+      {
+        "code": "INTRO_STEP_BUDGET",
+        "id": "walk.rear.far.piston.sleeve",
+        "tick": 336,
+        "detail": {
+          "xy": 0.406848900091762,
+          "xyz": 3.190173030457228,
+          "projected": 1.3900216129397092,
+          "turn": 0.25877670251275553
+        }
+      },
+      {
+        "code": "INTRO_STEP_BUDGET",
+        "id": "walk.rear.far.tibia",
+        "tick": 336,
+        "detail": {
+          "xy": 1.029653417697049,
+          "xyz": 2.982288859881113,
+          "projected": 1.6813870939738962,
+          "turn": 0.25877670251275553
+        }
+      },
+      {
+        "code": "INTRO_STEP_BUDGET",
+        "id": "walk.rear.far.piston.inner",
+        "tick": 336,
+        "detail": {
+          "xy": 0.7475716111877717,
+          "xyz": 3.0415649473887583,
+          "projected": 1.5271148402695052,
+          "turn": 0.25877670251275553
+        }
+      },
+      {
+        "code": "INTRO_STEP_BUDGET",
+        "id": "walk.rear.far.piston.rod",
+        "tick": 336,
+        "detail": {
+          "xy": 0.753548873540617,
+          "xyz": 3.039870214109639,
+          "projected": 1.530035591290725,
+          "turn": 0.25877670251275553
+        }
+      },
+      {
+        "code": "INTRO_STEP_BUDGET",
+        "id": "walk.front.far.femur",
+        "tick": 349,
+        "detail": {
+          "xy": 0,
+          "xyz": 0,
+          "projected": 0,
+          "turn": 0.2522835028258541
+        }
+      },
+      {
+        "code": "INTRO_STEP_BUDGET",
+        "id": "walk.front.far.piston.sleeve",
+        "tick": 349,
+        "detail": {
+          "xy": 1.1485173418331427,
+          "xyz": 1.275909386346256,
+          "projected": 1.21225139035942,
+          "turn": 0.2522835028258541
+        }
+      },
+      {
+        "code": "INTRO_STEP_BUDGET",
+        "id": "walk.front.far.tibia",
+        "tick": 349,
+        "detail": {
+          "xy": 1.158091391156537,
+          "xyz": 2.7345575888315095,
+          "projected": 1.4810832727996464,
+          "turn": 0.2522835028258541
+        }
+      },
+      {
+        "code": "INTRO_STEP_BUDGET",
+        "id": "walk.front.far.piston.inner",
+        "tick": 349,
+        "detail": {
+          "xy": 1.1502127531607684,
+          "xyz": 2.0454563453787302,
+          "projected": 1.3617155516426542,
+          "turn": 0.2522835028258541
+        }
+      },
+      {
+        "code": "INTRO_STEP_BUDGET",
+        "id": "walk.front.far.piston.rod",
+        "tick": 349,
+        "detail": {
+          "xy": 1.1503269099627385,
+          "xyz": 2.059775006895456,
+          "projected": 1.3642070362068581,
+          "turn": 0.2522835028258541
+        }
+      },
+      {
+        "code": "INTRO_STEP_BUDGET",
+        "id": "walk.rear.near.femur",
+        "tick": 364,
+        "detail": {
+          "xy": 0,
+          "xyz": 0,
+          "projected": 0,
+          "turn": 0.2586881488504731
+        }
+      },
+      {
+        "code": "INTRO_STEP_BUDGET",
+        "id": "walk.rear.near.piston.sleeve",
+        "tick": 364,
+        "detail": {
+          "xy": 0.8425121915371002,
+          "xyz": 2.898329908340462,
+          "projected": 0.7749564114960509,
+          "turn": 0.2586881488504731
+        }
+      },
+      {
+        "code": "INTRO_STEP_BUDGET",
+        "id": "walk.rear.near.tibia",
+        "tick": 364,
+        "detail": {
+          "xy": 1.4265943035102246,
+          "xyz": 2.574307102401116,
+          "projected": 1.282126952337711,
+          "turn": 0.2586881488504731
+        }
+      },
+      {
+        "code": "INTRO_STEP_BUDGET",
+        "id": "walk.rear.near.piston.inner",
+        "tick": 364,
+        "detail": {
+          "xy": 1.1837265297015964,
+          "xyz": 2.676614042033851,
+          "projected": 1.0504357517480336,
+          "turn": 0.2586881488504731
+        }
+      },
+      {
+        "code": "INTRO_STEP_BUDGET",
+        "id": "walk.rear.near.piston.rod",
+        "tick": 364,
+        "detail": {
+          "xy": 1.189004177132617,
+          "xyz": 2.6738941709330977,
+          "projected": 1.0552562527811356,
+          "turn": 0.2586881488504731
+        }
+      }
+    ]
+  },
+  "negativeControl": {
+    "sha": "3be9dbf11e7a07a2678c3be161e54fd24aa7f893",
+    "buildSha256": "91ddd4bb5c36b5797b9f18b3b9b37513f11f8e40d1d78f1e3e73d21ce097926c",
+    "rawSha256": "9611d946be906e7abc989d8a2b89436dd6ccbbdd2f075bf66e4913481e453d38",
+    "soles": {
+      "rear.far": {
+        "targetX": -111,
+        "alignTick": 468,
+        "firstContact": {
+          "tick": 400,
+          "x": -63.85786340223356,
+          "y": 0,
+          "projectedClearance": 0,
+          "floor": 0,
+          "seated": false,
+          "anchorX": -111
+        },
+        "seatTick": 469,
+        "finalErrorAtContact": 47.14213659776644,
+        "drift": 47.142136597766466,
+        "floorDeviation": 7.105427357601002e-14,
+        "floorPenetration": 3.552713678800501e-14,
+        "replant": 0,
+        "movingClearance": -3.552713678800501e-14,
+        "movingProjectedClearance": -3.552713678800501e-14
+      },
+      "front.far": {
+        "targetX": 99,
+        "alignTick": 483,
+        "firstContact": {
+          "tick": 419,
+          "x": 41.8661693959055,
+          "y": 2.1316282072803006e-14,
+          "projectedClearance": -2.1094237467877974e-14,
+          "floor": 2.1316282072803006e-14,
+          "seated": false,
+          "anchorX": 99
+        },
+        "seatTick": 483,
+        "finalErrorAtContact": 57.1338306040945,
+        "drift": 57.13383060409453,
+        "floorDeviation": 4.973799150320701e-14,
+        "floorPenetration": 4.973799150320701e-14,
+        "replant": 0,
+        "movingClearance": -4.973799150320701e-14,
+        "movingProjectedClearance": -4.951594689828198e-14
+      },
+      "rear.near": {
+        "targetX": -138,
+        "alignTick": 497,
+        "firstContact": {
+          "tick": 427,
+          "x": -62.181444041672876,
+          "y": 1.4210854715202004e-14,
+          "projectedClearance": -1.4654943925052066e-14,
+          "floor": 1.4210854715202004e-14,
+          "seated": false,
+          "anchorX": -138
+        },
+        "seatTick": 497,
+        "finalErrorAtContact": 75.81855595832712,
+        "drift": 75.81855595832715,
+        "floorDeviation": 5.684341886080802e-14,
+        "floorPenetration": 5.684341886080802e-14,
+        "replant": 0,
+        "movingClearance": -5.684341886080802e-14,
+        "movingProjectedClearance": -5.728750807065808e-14
+      },
+      "front.near": {
+        "targetX": 126,
+        "alignTick": 512,
+        "firstContact": {
+          "tick": 443,
+          "x": 32.670134870551706,
+          "y": 3.552713678800501e-14,
+          "projectedClearance": -3.552713678800501e-14,
+          "floor": 3.552713678800501e-14,
+          "seated": false,
+          "anchorX": 126
+        },
+        "seatTick": 512,
+        "finalErrorAtContact": 93.3298651294483,
+        "drift": 93.32986512944835,
+        "floorDeviation": 4.973799150320701e-14,
+        "floorPenetration": 4.973799150320701e-14,
+        "replant": 0,
+        "movingClearance": -4.973799150320701e-14,
+        "movingProjectedClearance": -4.973799150320701e-14
+      }
+    },
+    "firstAllInContactTick": 443,
+    "supportTick": 512,
+    "nominalPolygonXZ": [
+      [
+        -111,
+        -26.5
+      ],
+      [
+        99,
+        -17.5
+      ],
+      [
+        126,
+        26.5
+      ],
+      [
+        -138,
+        17.5
+      ]
+    ],
+    "polygonArea": 10428,
+    "containsRoot": true,
+    "dynamicDepth": 0,
+    "maxLiftBeforeSupport": 69.01373665234473,
+    "loadOverToleranceTick": 315,
+    "loadDriveTick": null,
+    "lostSupport": 0,
+    "findings": [
+      {
+        "code": "CONTACT_BEFORE_ALIGN",
+        "id": "rear.far",
+        "tick": 400,
+        "value": {
+          "alignTick": 468,
+          "finalErrorAtContact": 47.14213659776644
+        }
+      },
+      {
+        "code": "POST_CONTACT_SLIP",
+        "id": "rear.far",
+        "tick": 400,
+        "value": 47.142136597766466
+      },
+      {
+        "code": "SPREAD_CLEARANCE",
+        "id": "rear.far",
+        "tick": 400,
+        "value": {
+          "movingClearance": -3.552713678800501e-14,
+          "movingProjectedClearance": -3.552713678800501e-14
+        }
+      },
+      {
+        "code": "CONTACT_BEFORE_ALIGN",
+        "id": "front.far",
+        "tick": 419,
+        "value": {
+          "alignTick": 483,
+          "finalErrorAtContact": 57.1338306040945
+        }
+      },
+      {
+        "code": "POST_CONTACT_SLIP",
+        "id": "front.far",
+        "tick": 419,
+        "value": 57.13383060409453
+      },
+      {
+        "code": "SPREAD_CLEARANCE",
+        "id": "front.far",
+        "tick": 419,
+        "value": {
+          "movingClearance": -4.973799150320701e-14,
+          "movingProjectedClearance": -4.951594689828198e-14
+        }
+      },
+      {
+        "code": "CONTACT_BEFORE_ALIGN",
+        "id": "rear.near",
+        "tick": 427,
+        "value": {
+          "alignTick": 497,
+          "finalErrorAtContact": 75.81855595832712
+        }
+      },
+      {
+        "code": "POST_CONTACT_SLIP",
+        "id": "rear.near",
+        "tick": 427,
+        "value": 75.81855595832715
+      },
+      {
+        "code": "SPREAD_CLEARANCE",
+        "id": "rear.near",
+        "tick": 427,
+        "value": {
+          "movingClearance": -5.684341886080802e-14,
+          "movingProjectedClearance": -5.728750807065808e-14
+        }
+      },
+      {
+        "code": "CONTACT_BEFORE_ALIGN",
+        "id": "front.near",
+        "tick": 443,
+        "value": {
+          "alignTick": 512,
+          "finalErrorAtContact": 93.3298651294483
+        }
+      },
+      {
+        "code": "POST_CONTACT_SLIP",
+        "id": "front.near",
+        "tick": 443,
+        "value": 93.32986512944835
+      },
+      {
+        "code": "SPREAD_CLEARANCE",
+        "id": "front.near",
+        "tick": 443,
+        "value": {
+          "movingClearance": -4.973799150320701e-14,
+          "movingProjectedClearance": -4.973799150320701e-14
+        }
+      },
+      {
+        "code": "LOAD_BEFORE_SUPPORT",
+        "id": "cradle",
+        "tick": 315,
+        "value": {
+          "beforeSupport": 69.01373665234473,
+          "support": 512
+        }
+      }
+    ]
+  },
+  "findings": [
+    {
+      "code": "INTRO_STEP_BUDGET",
+      "id": "walk.rear.far.femur",
+      "tick": 336,
+      "detail": {
+        "xy": 0,
+        "xyz": 0,
+        "projected": 0,
+        "turn": 0.25877670251275553
+      }
+    },
+    {
+      "code": "INTRO_STEP_BUDGET",
+      "id": "walk.rear.far.piston.sleeve",
+      "tick": 336,
+      "detail": {
+        "xy": 0.406848900091762,
+        "xyz": 3.190173030457228,
+        "projected": 1.3900216129397092,
+        "turn": 0.25877670251275553
+      }
+    },
+    {
+      "code": "INTRO_STEP_BUDGET",
+      "id": "walk.rear.far.tibia",
+      "tick": 336,
+      "detail": {
+        "xy": 1.029653417697049,
+        "xyz": 2.982288859881113,
+        "projected": 1.6813870939738962,
+        "turn": 0.25877670251275553
+      }
+    },
+    {
+      "code": "INTRO_STEP_BUDGET",
+      "id": "walk.rear.far.piston.inner",
+      "tick": 336,
+      "detail": {
+        "xy": 0.7475716111877717,
+        "xyz": 3.0415649473887583,
+        "projected": 1.5271148402695052,
+        "turn": 0.25877670251275553
+      }
+    },
+    {
+      "code": "INTRO_STEP_BUDGET",
+      "id": "walk.rear.far.piston.rod",
+      "tick": 336,
+      "detail": {
+        "xy": 0.753548873540617,
+        "xyz": 3.039870214109639,
+        "projected": 1.530035591290725,
+        "turn": 0.25877670251275553
+      }
+    },
+    {
+      "code": "INTRO_STEP_BUDGET",
+      "id": "walk.front.far.femur",
+      "tick": 349,
+      "detail": {
+        "xy": 0,
+        "xyz": 0,
+        "projected": 0,
+        "turn": 0.2522835028258541
+      }
+    },
+    {
+      "code": "INTRO_STEP_BUDGET",
+      "id": "walk.front.far.piston.sleeve",
+      "tick": 349,
+      "detail": {
+        "xy": 1.1485173418331427,
+        "xyz": 1.275909386346256,
+        "projected": 1.21225139035942,
+        "turn": 0.2522835028258541
+      }
+    },
+    {
+      "code": "INTRO_STEP_BUDGET",
+      "id": "walk.front.far.tibia",
+      "tick": 349,
+      "detail": {
+        "xy": 1.158091391156537,
+        "xyz": 2.7345575888315095,
+        "projected": 1.4810832727996464,
+        "turn": 0.2522835028258541
+      }
+    },
+    {
+      "code": "INTRO_STEP_BUDGET",
+      "id": "walk.front.far.piston.inner",
+      "tick": 349,
+      "detail": {
+        "xy": 1.1502127531607684,
+        "xyz": 2.0454563453787302,
+        "projected": 1.3617155516426542,
+        "turn": 0.2522835028258541
+      }
+    },
+    {
+      "code": "INTRO_STEP_BUDGET",
+      "id": "walk.front.far.piston.rod",
+      "tick": 349,
+      "detail": {
+        "xy": 1.1503269099627385,
+        "xyz": 2.059775006895456,
+        "projected": 1.3642070362068581,
+        "turn": 0.2522835028258541
+      }
+    },
+    {
+      "code": "INTRO_STEP_BUDGET",
+      "id": "walk.rear.near.femur",
+      "tick": 364,
+      "detail": {
+        "xy": 0,
+        "xyz": 0,
+        "projected": 0,
+        "turn": 0.2586881488504731
+      }
+    },
+    {
+      "code": "INTRO_STEP_BUDGET",
+      "id": "walk.rear.near.piston.sleeve",
+      "tick": 364,
+      "detail": {
+        "xy": 0.8425121915371002,
+        "xyz": 2.898329908340462,
+        "projected": 0.7749564114960509,
+        "turn": 0.2586881488504731
+      }
+    },
+    {
+      "code": "INTRO_STEP_BUDGET",
+      "id": "walk.rear.near.tibia",
+      "tick": 364,
+      "detail": {
+        "xy": 1.4265943035102246,
+        "xyz": 2.574307102401116,
+        "projected": 1.282126952337711,
+        "turn": 0.2586881488504731
+      }
+    },
+    {
+      "code": "INTRO_STEP_BUDGET",
+      "id": "walk.rear.near.piston.inner",
+      "tick": 364,
+      "detail": {
+        "xy": 1.1837265297015964,
+        "xyz": 2.676614042033851,
+        "projected": 1.0504357517480336,
+        "turn": 0.2586881488504731
+      }
+    },
+    {
+      "code": "INTRO_STEP_BUDGET",
+      "id": "walk.rear.near.piston.rod",
+      "tick": 364,
+      "detail": {
+        "xy": 1.189004177132617,
+        "xyz": 2.6738941709330977,
+        "projected": 1.0552562527811356,
+        "turn": 0.2586881488504731
+      }
+    }
+  ]
+}

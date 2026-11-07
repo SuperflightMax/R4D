@@ -1,0 +1,163 @@
+{
+  "candidate": "bffca72375cee40e8cd96bb19e47b60f7b95e5d9",
+  "baseline": "3be9dbf11e7a07a2678c3be161e54fd24aa7f893",
+  "baselinePinSha256": "89f974c1e97a29ca25adca8e8d74889649d41a6f4d49ccbde4e43ff7624be735",
+  "baselineBuildSha256": "91ddd4bb5c36b5797b9f18b3b9b37513f11f8e40d1d78f1e3e73d21ce097926c",
+  "pinSha256": "7f0decb5bd2898cbd8d4e992a9686f8027632d5b5f76795fa2c8b7ca1326d88f",
+  "verifiedInputs": 87,
+  "sharedInputBlobs": 81,
+  "changedInputs": [
+    {
+      "path": "experiments/q3c-victorian-mantis/src/rig.js",
+      "oldBlob": "3c7be8f7d95187e73c100cd4e4553827e5376fee",
+      "newBlob": "fb65a8ae62b6467f898f5cfaa8b165e5edfcd276",
+      "oldSha256": "888a8ed8c02a0cc71add6b056cf56ae32ee32631e6412cc85380f8f1b9eaaaad",
+      "newSha256": "f5306b6854d0ec418ded0902de640b441640e8357070d71535ee0d9f3dae2b52"
+    },
+    {
+      "path": "experiments/q3c-victorian-mantis/src/view.js",
+      "oldBlob": "c3beec2d97c29f141c5d1491f792cf212412fa3e",
+      "newBlob": "cc3e9233d51ea60f04573066314357950a51ce9e",
+      "oldSha256": "253c23e037dfbb47012f5a2103346daba1f6617f4b42575e1ffc422c0015bc97",
+      "newSha256": "2fa23be962b082ac1ef2c9eeeea95382e8da8e6ca8bd24f72cb45efc8d763214"
+    },
+    {
+      "path": "experiments/q3c-victorian-mantis/tests/QA_HOOKS.md",
+      "oldBlob": "f9c0fb7443b11ace0109075a73fb1352815ffc54",
+      "newBlob": "e0254547bd694666c8d254112f22acf7312cc42d",
+      "oldSha256": "1b502c3eb78c59e6c84bb01d3a69b5a636fe0604c32d2bb701cad4548be0b032",
+      "newSha256": "b9581e8e6bfe23660013baf00f318d11049f31b0d5949ee899cd350238fe0b09"
+    },
+    {
+      "path": "experiments/q3c-victorian-mantis/tests/c2-contact-live.js",
+      "oldBlob": null,
+      "newBlob": "993d1989f4087029bf70a6e914914e6555d652c6",
+      "oldSha256": null,
+      "newSha256": "5592a721a92f483ecf72d6a0506d44ee6dcc7eba0333c87f7733685d06569770"
+    },
+    {
+      "path": "experiments/q3c-victorian-mantis/tests/c2-rig.test.js",
+      "oldBlob": "324893abea0289003b3150c574d01bcf67b9e405",
+      "newBlob": "406e6a3dd0cf198f5e61472951494bbc76dad2a7",
+      "oldSha256": "bfe6e9027246c542e829e3db0925dcc397b05bb82bdb990016945e4ab618ad53",
+      "newSha256": "3b14da1c80081cb191ad38c8dacacaae6c4edea1d29d909e37e6d499e03fe7cf"
+    },
+    {
+      "path": "experiments/q3c-victorian-mantis/tests/model.test.js",
+      "oldBlob": "2bf2b29c740231e7cea2113a4deff32d5f3998c5",
+      "newBlob": "a5f7e7f6ae6d3ee45d3f4c1e1dee040e1f282b96",
+      "oldSha256": "59bc9e3d511183b892f5310109005f8e96e47f43728449e708310ce903257a01",
+      "newSha256": "1ebe9a29fdbfd27d94f69fd18633c95a4e267f9311b87441cd2c252b18871240"
+    }
+  ],
+  "buildSha256": "01e5ee0fc3bbc0e6e259c58ae01a9d397965bef308cba0bad07b93da8f0802c3",
+  "verifiedBuildFiles": 87,
+  "buildDelta": {
+    "same": 85,
+    "changed": [
+      "index.html"
+    ],
+    "added": [
+      "assets\\index-Czkx6rcn.js"
+    ],
+    "removed": [
+      "assets\\index-B7GabxtC.js"
+    ]
+  },
+  "trackedProductDelta": [],
+  "trackedPriorQADelta": [],
+  "live": [
+    {
+      "case": "desktop",
+      "viewport": [
+        1440,
+        1000
+      ],
+      "reduced": false,
+      "tokens": 98,
+      "supports": 4,
+      "errors": 0,
+      "capsuleIdleTicks": 1508,
+      "mantisIdleTicks": 1508
+    },
+    {
+      "case": "keyboard",
+      "viewport": [
+        1440,
+        1000
+      ],
+      "reduced": false,
+      "tokens": 98,
+      "supports": 4,
+      "errors": 0,
+      "capsuleIdleTicks": 125,
+      "mantisIdleTicks": 129
+    },
+    {
+      "case": "touch390",
+      "viewport": [
+        390,
+        844
+      ],
+      "reduced": false,
+      "tokens": 98,
+      "supports": 4,
+      "errors": 0,
+      "capsuleIdleTicks": 147,
+      "mantisIdleTicks": 202
+    },
+    {
+      "case": "touch360",
+      "viewport": [
+        360,
+        732
+      ],
+      "reduced": false,
+      "tokens": 98,
+      "supports": 4,
+      "errors": 0,
+      "capsuleIdleTicks": 147,
+      "mantisIdleTicks": 189
+    },
+    {
+      "case": "reduced-desktop",
+      "viewport": [
+        1440,
+        1000
+      ],
+      "reduced": true,
+      "tokens": 98,
+      "supports": 4,
+      "errors": 0,
+      "capsuleIdleTicks": 92,
+      "mantisIdleTicks": 89
+    },
+    {
+      "case": "reduced390",
+      "viewport": [
+        390,
+        844
+      ],
+      "reduced": true,
+      "tokens": 98,
+      "supports": 4,
+      "errors": 0,
+      "capsuleIdleTicks": 88,
+      "mantisIdleTicks": 136
+    },
+    {
+      "case": "reduced360",
+      "viewport": [
+        360,
+        732
+      ],
+      "reduced": true,
+      "tokens": 98,
+      "supports": 4,
+      "errors": 0,
+      "capsuleIdleTicks": 88,
+      "mantisIdleTicks": 90
+    }
+  ],
+  "previewPortClosed": 4209
+}

@@ -1,0 +1,31 @@
+
+> r4d-q3c-victorian-mantis@0.1.0 test
+> node --test tests/*.test.js
+
+✔ every drawn surface resolves to its production-v1 texture and trim pivot (15.2611ms)
+✔ the direct command starts only from the live capsule and preserves its evaluated pose (11.4584ms)
+✔ K0–K5 move the same part graph continuously and keep all pivots connected (229.135ms)
+✔ the two shoulder gates and roof release first, then the limbs open above the shell (95.9541ms)
+✔ K4 and K5 separate the projected hinges and full blade span above a bent chest (304.0403ms)
+✔ four fixed foot seats support each key beat and the moving links preserve contact (119.1771ms)
+✔ piston rods retain their insertion and actual pin contact through delivery and transformation (269.2866ms)
+✔ actuators have distinct measured onsets, acceleration and overshoot (0.8011ms)
+✔ seed and timed commands replay exactly and both idles move local channels independently (60.6689ms)
+✔ one first input starts one ordered delivery; repeated activation does not reset it (13.764ms)
+✔ same seed, input and elapsed time produce the same joints across frame cadences (190.35ms)
+✔ fall accelerates; first contact is directly on the beacon, rigid body never sinks below it (19.2544ms)
+✔ links retain length throughout deployment; knees and feet remain above the floor (236.3486ms)
+✔ hatches open before feet exit and eye lid opens before the eye emerges (1.1576ms)
+✔ the knees exit the four open lower bays in order before swinging out to the seats (40.8756ms)
+✔ each sole reaches its seat before ground contact and remains pinned while the frame takes load (49.4515ms)
+✔ idle moves chassis and eye while ground contacts remain planted; pointer affects the gaze (2.2736ms)
+✔ stage boundaries and integer clock do not introduce jumps or dropped commands (2.4972ms)
+✔ entry stays above a tall viewport and begins falling continuously; resize cannot teleport it (2.6357ms)
+ℹ tests 19
+ℹ suites 0
+ℹ pass 19
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 1253.0476
