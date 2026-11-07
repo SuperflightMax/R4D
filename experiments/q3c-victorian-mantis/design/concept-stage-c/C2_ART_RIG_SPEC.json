@@ -1,0 +1,2129 @@
+{
+  "schemaVersion": 1,
+  "id": "Q3C-C2-ART-RIG-v1",
+  "checkpoint": "C2_FULL_RIG_TRANSFORM",
+  "base": "21fbafcfb435838bc84aed931fe68e57cae9fdbc",
+  "source": "assets/rig/CONSTRUCTION_GEOMETRY.v1.json",
+  "turn": "01a1b358-28f5-7bd1-b54d-d21f61ea9404",
+  "coordinateSystem": {
+    "units": "U=180 raw units. x right, y up, z toward camera.",
+    "root": "cradle local origin",
+    "pivot": "child origin in parent local coordinates, unless a fixed cradle/world seat is specified",
+    "rigidLocalAxis": "+x is outgoing bone axis",
+    "angles": "degrees CCW about +z for XY, unwrapped",
+    "export": "invert y and angle for screen-down. Preserve signed joint positions after trim. A common camera transform does not alter rig lengths.",
+    "scope": "construction space; C1 preview bone IDs and sizes are not the C2 binding"
+  },
+  "visualTarget": {
+    "camera": "right-facing near side three-quarter",
+    "sameShellScale": 1,
+    "palette": {
+      "petrol": "#23494a",
+      "petrolLight": "#48696a",
+      "brass": "#c69855",
+      "brassDark": "#6e4827",
+      "copper": "#a45731",
+      "steel": "#a0a4a1",
+      "patinatedBronze": "#473b2c",
+      "amberGlass": "#e9a33d"
+    },
+    "material": "quiet broad enamel planes with sparse gilded marks, dark complete backs, broad load-bearing sections",
+    "priority": "one eye, two separated large hunting arms, tall coherent thorax, heavy unchanged abdomen, four planted supports"
+  },
+  "shell": {
+    "outlineSource": "shell.outlineXY",
+    "width": 180,
+    "depth": 110,
+    "scale": 1,
+    "skinBands": [
+      [
+        -55,
+        -51
+      ],
+      [
+        51,
+        55
+      ]
+    ]
+  },
+  "massGroups": [
+    {
+      "id": "cradle",
+      "mass": 25,
+      "center": [
+        -6,
+        20,
+        0
+      ]
+    },
+    {
+      "id": "shell.rear",
+      "mass": 10,
+      "center": [
+        -42,
+        60,
+        0
+      ]
+    },
+    {
+      "id": "shell.front",
+      "mass": 8,
+      "center": [
+        37,
+        57,
+        0
+      ]
+    },
+    {
+      "id": "side-doors",
+      "mass": 4,
+      "center": [
+        -1,
+        55,
+        0
+      ]
+    },
+    {
+      "id": "lower-doors",
+      "mass": 2,
+      "center": [
+        0,
+        16,
+        0
+      ]
+    },
+    {
+      "id": "eye-hatch",
+      "mass": 1.5,
+      "center": [
+        64,
+        73,
+        0
+      ]
+    },
+    {
+      "id": "rim-liners-catches",
+      "mass": 3.5,
+      "center": [
+        -3,
+        27,
+        0
+      ]
+    },
+    {
+      "id": "thorax.lower",
+      "mass": 6.5,
+      "centerOnAxis": 0.48
+    },
+    {
+      "id": "thorax.upper",
+      "mass": 6,
+      "centerOnAxis": 0.5
+    },
+    {
+      "id": "head-eye-carriage",
+      "mass": 6.5,
+      "centerOnHead": [
+        10,
+        -4,
+        0
+      ]
+    },
+    {
+      "id": "walking-chains",
+      "mass": 16,
+      "instances": 4,
+      "each": [
+        1.8,
+        1.4,
+        0.8
+      ],
+      "centersOnAxes": [
+        0.48,
+        0.47,
+        0
+      ]
+    },
+    {
+      "id": "raptorial-chains",
+      "mass": 11,
+      "instances": 2,
+      "each": [
+        3,
+        2.5
+      ],
+      "centersOnAxes": [
+        0.48,
+        0.46
+      ]
+    }
+  ],
+  "massNote": "100 art/weight units, each entry rolls up subordinate caps, drives and fittings. Center-of-mass preview uses rigid pose landmarks and centroid approximations.",
+  "inventory": [
+    {
+      "id": "cradle",
+      "parent": null,
+      "kind": "root",
+      "pivot": [
+        0,
+        0,
+        0
+      ],
+      "axis": null,
+      "physicalDepth": [
+        -33,
+        33
+      ],
+      "drawLayer": 32,
+      "material": "bronze",
+      "attach": {
+        "thoraxBase": [
+          40,
+          32,
+          0
+        ],
+        "rearHip": [
+          -75,
+          20
+        ],
+        "frontHip": [
+          75,
+          20
+        ]
+      },
+      "contour": "fixed lower frame in production board"
+    },
+    {
+      "id": "shell.rear",
+      "parent": "cradle",
+      "kind": "hinge",
+      "pivot": [
+        -62,
+        35,
+        -33
+      ],
+      "axis": [
+        -1,
+        0,
+        0
+      ],
+      "physicalDepth": [
+        -33,
+        33
+      ],
+      "drawLayer": 37,
+      "material": "petrol",
+      "contour": "rear dorsal plate, clipped to original shell",
+      "movesWith": "shell.rear.open",
+      "identity": "rear of same abdomen",
+      "materialMark": "three-leaf chased flourish",
+      "roofPanel": {
+        "x": [
+          -67,
+          -3
+        ],
+        "z": [
+          -33,
+          33
+        ],
+        "surfaceY": "same shell roof at x; lower skin lip 5",
+        "hingeWorldSide": -1,
+        "minimumOpenDeg": 100
+      }
+    },
+    {
+      "id": "shell.front",
+      "parent": "cradle",
+      "kind": "hinge",
+      "pivot": [
+        47,
+        35,
+        33
+      ],
+      "axis": [
+        1,
+        0,
+        0
+      ],
+      "physicalDepth": [
+        -33,
+        33
+      ],
+      "drawLayer": 38,
+      "material": "petrol",
+      "contour": "front dorsal plate, clipped to original shell",
+      "movesWith": "shell.front.open",
+      "identity": "front of same abdomen",
+      "materialMark": "small stepped brass latch",
+      "roofPanel": {
+        "x": [
+          -3,
+          68
+        ],
+        "z": [
+          -33,
+          33
+        ],
+        "surfaceY": "same shell roof at x; lower skin lip 5",
+        "hingeWorldSide": 1,
+        "minimumOpenDeg": 100
+      }
+    },
+    {
+      "id": "belly.rim",
+      "parent": "cradle",
+      "kind": "fixed",
+      "pivot": [
+        0,
+        21,
+        0
+      ],
+      "axis": null,
+      "physicalDepth": [
+        -55,
+        55
+      ],
+      "drawLayer": 72,
+      "material": "brass",
+      "role": "rim and annular bearing surrounds. Do not subtract the outer lip from free aperture"
+    },
+    {
+      "id": "bay.rapt.far.liner",
+      "parent": "cradle",
+      "kind": "fixed",
+      "pivot": [
+        -2,
+        35,
+        -42
+      ],
+      "axis": null,
+      "physicalDepth": [
+        -51,
+        -33
+      ],
+      "drawLayer": 10,
+      "material": "patinatedBronze",
+      "role": "finished recess behind moving packed arm"
+    },
+    {
+      "id": "bay.rapt.far.door",
+      "parent": "cradle",
+      "kind": "hinge",
+      "pivot": [
+        -67,
+        35,
+        -51
+      ],
+      "axis": [
+        -1,
+        0,
+        0
+      ],
+      "physicalDepth": [
+        -55,
+        -51
+      ],
+      "drawLayer": 12,
+      "material": "petrol",
+      "freeXY": {
+        "x": [
+          -67,
+          68
+        ],
+        "y": [
+          35,
+          95
+        ]
+      },
+      "outline": "clip original shell to aperture rectangle",
+      "track": "bay.rapt.far.door.open",
+      "seating": "hinge on lower lip. Open toward outside depth, retain pin"
+    },
+    {
+      "id": "bay.rapt.far.catch",
+      "parent": "cradle",
+      "kind": "hinge",
+      "pivot": [
+        58,
+        66,
+        -52
+      ],
+      "axis": [
+        0,
+        0,
+        1
+      ],
+      "physicalDepth": [
+        -55,
+        -51
+      ],
+      "drawLayer": 13,
+      "material": "brass",
+      "track": "bay.rapt.far.catch.open",
+      "role": "small latch acts before door"
+    },
+    {
+      "id": "bay.rapt.near.liner",
+      "parent": "cradle",
+      "kind": "fixed",
+      "pivot": [
+        -2,
+        35,
+        42
+      ],
+      "axis": null,
+      "physicalDepth": [
+        33,
+        51
+      ],
+      "drawLayer": 66,
+      "material": "patinatedBronze",
+      "role": "finished recess behind moving packed arm"
+    },
+    {
+      "id": "bay.rapt.near.door",
+      "parent": "cradle",
+      "kind": "hinge",
+      "pivot": [
+        -67,
+        35,
+        51
+      ],
+      "axis": [
+        1,
+        0,
+        0
+      ],
+      "physicalDepth": [
+        51,
+        55
+      ],
+      "drawLayer": 68,
+      "material": "petrol",
+      "freeXY": {
+        "x": [
+          -67,
+          68
+        ],
+        "y": [
+          35,
+          95
+        ]
+      },
+      "outline": "clip original shell to aperture rectangle",
+      "track": "bay.rapt.near.door.open",
+      "seating": "hinge on lower lip. Open toward outside depth, retain pin"
+    },
+    {
+      "id": "bay.rapt.near.catch",
+      "parent": "cradle",
+      "kind": "hinge",
+      "pivot": [
+        58,
+        66,
+        52
+      ],
+      "axis": [
+        0,
+        0,
+        1
+      ],
+      "physicalDepth": [
+        51,
+        55
+      ],
+      "drawLayer": 69,
+      "material": "brass",
+      "track": "bay.rapt.near.catch.open",
+      "role": "small latch acts before door"
+    },
+    {
+      "id": "bay.walk.rear.far.liner",
+      "parent": "cradle",
+      "kind": "fixed",
+      "pivot": [
+        -75,
+        20,
+        -26.5
+      ],
+      "axis": null,
+      "physicalDepth": [
+        -30,
+        -23
+      ],
+      "drawLayer": 16,
+      "material": "patinatedBronze"
+    },
+    {
+      "id": "bay.walk.rear.far.door",
+      "parent": "cradle",
+      "kind": "hinge",
+      "pivot": [
+        -75,
+        13,
+        -31
+      ],
+      "axis": [
+        -1,
+        0,
+        0
+      ],
+      "physicalDepth": [
+        -30,
+        -23
+      ],
+      "drawLayer": 17,
+      "material": "brass",
+      "portSlackXY": [
+        5.4,
+        3.6
+      ],
+      "note": "final slot follows packed swept envelope and preserves C1 contact"
+    },
+    {
+      "id": "walk.rear.far.hip_fork",
+      "parent": "cradle",
+      "kind": "fixed",
+      "pivot": [
+        -75,
+        20,
+        -26.5
+      ],
+      "axis": null,
+      "physicalDepth": [
+        -30,
+        -23
+      ],
+      "drawLayer": 18,
+      "material": "brass"
+    },
+    {
+      "id": "walk.rear.far.femur",
+      "parent": "walk.rear.far.hip_fork",
+      "kind": "hinge",
+      "pivot": [
+        0,
+        0,
+        0
+      ],
+      "axis": [
+        0,
+        0,
+        1
+      ],
+      "physicalDepth": [
+        -30,
+        -27
+      ],
+      "drawLayer": 19,
+      "material": "brass",
+      "length": 68,
+      "end": [
+        68,
+        0,
+        0
+      ],
+      "seat": "broad cap inside rig envelope"
+    },
+    {
+      "id": "walk.rear.far.tibia",
+      "parent": "walk.rear.far.femur",
+      "kind": "hinge",
+      "pivot": [
+        68,
+        0,
+        0
+      ],
+      "axis": [
+        0,
+        0,
+        1
+      ],
+      "physicalDepth": [
+        -26,
+        -23
+      ],
+      "drawLayer": 20,
+      "material": "brass",
+      "length": 76,
+      "end": [
+        76,
+        0,
+        0
+      ]
+    },
+    {
+      "id": "walk.rear.far.foot",
+      "parent": "walk.rear.far.tibia",
+      "kind": "hinge",
+      "pivot": [
+        76,
+        0,
+        0
+      ],
+      "axis": [
+        0,
+        0,
+        1
+      ],
+      "physicalDepth": [
+        -30,
+        -23
+      ],
+      "drawLayer": 21,
+      "material": "brass",
+      "shapeRef": "rig.walking.footSourceLocalXY",
+      "heel": [
+        -6,
+        -2
+      ],
+      "toe": [
+        6,
+        -2
+      ],
+      "groundConstraint": "heel/toe roll about fixed contact, four planted contacts"
+    },
+    {
+      "id": "walk.rear.far.piston.sleeve",
+      "parent": "walk.rear.far.femur",
+      "kind": "distance",
+      "pivot": [
+        48,
+        -5,
+        0
+      ],
+      "axis": null,
+      "physicalDepth": [
+        -30,
+        -23
+      ],
+      "drawLayer": 20,
+      "material": "copper",
+      "pinB": {
+        "part": "walk.rear.far.tibia",
+        "local": [
+          8,
+          2,
+          0
+        ]
+      },
+      "follows": "pin distance, sleeve and rod stay separate",
+      "actuator": {
+        "housingLength": 12,
+        "sections": [
+          11,
+          11
+        ],
+        "minOverlap": 5
+      }
+    },
+    {
+      "id": "walk.rear.far.piston.rod",
+      "parent": "walk.rear.far.piston.sleeve",
+      "kind": "prismatic",
+      "pivot": [
+        0,
+        0,
+        0
+      ],
+      "axis": [
+        1,
+        0,
+        0
+      ],
+      "physicalDepth": [
+        -30,
+        -23
+      ],
+      "drawLayer": 21,
+      "material": "steel"
+    },
+    {
+      "id": "bay.walk.front.far.liner",
+      "parent": "cradle",
+      "kind": "fixed",
+      "pivot": [
+        75,
+        20,
+        -17.5
+      ],
+      "axis": null,
+      "physicalDepth": [
+        -21,
+        -14
+      ],
+      "drawLayer": 16,
+      "material": "patinatedBronze"
+    },
+    {
+      "id": "bay.walk.front.far.door",
+      "parent": "cradle",
+      "kind": "hinge",
+      "pivot": [
+        75,
+        13,
+        -31
+      ],
+      "axis": [
+        -1,
+        0,
+        0
+      ],
+      "physicalDepth": [
+        -21,
+        -14
+      ],
+      "drawLayer": 17,
+      "material": "brass",
+      "portSlackXY": [
+        5.4,
+        3.6
+      ],
+      "note": "final slot follows packed swept envelope and preserves C1 contact"
+    },
+    {
+      "id": "walk.front.far.hip_fork",
+      "parent": "cradle",
+      "kind": "fixed",
+      "pivot": [
+        75,
+        20,
+        -17.5
+      ],
+      "axis": null,
+      "physicalDepth": [
+        -21,
+        -14
+      ],
+      "drawLayer": 18,
+      "material": "brass"
+    },
+    {
+      "id": "walk.front.far.femur",
+      "parent": "walk.front.far.hip_fork",
+      "kind": "hinge",
+      "pivot": [
+        0,
+        0,
+        0
+      ],
+      "axis": [
+        0,
+        0,
+        1
+      ],
+      "physicalDepth": [
+        -21,
+        -18
+      ],
+      "drawLayer": 19,
+      "material": "brass",
+      "length": 68,
+      "end": [
+        68,
+        0,
+        0
+      ],
+      "seat": "broad cap inside rig envelope"
+    },
+    {
+      "id": "walk.front.far.tibia",
+      "parent": "walk.front.far.femur",
+      "kind": "hinge",
+      "pivot": [
+        68,
+        0,
+        0
+      ],
+      "axis": [
+        0,
+        0,
+        1
+      ],
+      "physicalDepth": [
+        -17,
+        -14
+      ],
+      "drawLayer": 20,
+      "material": "brass",
+      "length": 76,
+      "end": [
+        76,
+        0,
+        0
+      ]
+    },
+    {
+      "id": "walk.front.far.foot",
+      "parent": "walk.front.far.tibia",
+      "kind": "hinge",
+      "pivot": [
+        76,
+        0,
+        0
+      ],
+      "axis": [
+        0,
+        0,
+        1
+      ],
+      "physicalDepth": [
+        -21,
+        -14
+      ],
+      "drawLayer": 21,
+      "material": "brass",
+      "shapeRef": "rig.walking.footSourceLocalXY",
+      "heel": [
+        -6,
+        -2
+      ],
+      "toe": [
+        6,
+        -2
+      ],
+      "groundConstraint": "heel/toe roll about fixed contact, four planted contacts"
+    },
+    {
+      "id": "walk.front.far.piston.sleeve",
+      "parent": "walk.front.far.femur",
+      "kind": "distance",
+      "pivot": [
+        48,
+        -5,
+        0
+      ],
+      "axis": null,
+      "physicalDepth": [
+        -21,
+        -14
+      ],
+      "drawLayer": 20,
+      "material": "copper",
+      "pinB": {
+        "part": "walk.front.far.tibia",
+        "local": [
+          8,
+          2,
+          0
+        ]
+      },
+      "follows": "pin distance, sleeve and rod stay separate",
+      "actuator": {
+        "housingLength": 12,
+        "sections": [
+          11,
+          11
+        ],
+        "minOverlap": 5
+      }
+    },
+    {
+      "id": "walk.front.far.piston.rod",
+      "parent": "walk.front.far.piston.sleeve",
+      "kind": "prismatic",
+      "pivot": [
+        0,
+        0,
+        0
+      ],
+      "axis": [
+        1,
+        0,
+        0
+      ],
+      "physicalDepth": [
+        -21,
+        -14
+      ],
+      "drawLayer": 21,
+      "material": "steel"
+    },
+    {
+      "id": "bay.walk.rear.near.liner",
+      "parent": "cradle",
+      "kind": "fixed",
+      "pivot": [
+        -75,
+        20,
+        17.5
+      ],
+      "axis": null,
+      "physicalDepth": [
+        14,
+        21
+      ],
+      "drawLayer": 54,
+      "material": "patinatedBronze"
+    },
+    {
+      "id": "bay.walk.rear.near.door",
+      "parent": "cradle",
+      "kind": "hinge",
+      "pivot": [
+        -75,
+        13,
+        31
+      ],
+      "axis": [
+        1,
+        0,
+        0
+      ],
+      "physicalDepth": [
+        14,
+        21
+      ],
+      "drawLayer": 55,
+      "material": "brass",
+      "portSlackXY": [
+        5.4,
+        3.6
+      ],
+      "note": "final slot follows packed swept envelope and preserves C1 contact"
+    },
+    {
+      "id": "walk.rear.near.hip_fork",
+      "parent": "cradle",
+      "kind": "fixed",
+      "pivot": [
+        -75,
+        20,
+        17.5
+      ],
+      "axis": null,
+      "physicalDepth": [
+        14,
+        21
+      ],
+      "drawLayer": 56,
+      "material": "brass"
+    },
+    {
+      "id": "walk.rear.near.femur",
+      "parent": "walk.rear.near.hip_fork",
+      "kind": "hinge",
+      "pivot": [
+        0,
+        0,
+        0
+      ],
+      "axis": [
+        0,
+        0,
+        1
+      ],
+      "physicalDepth": [
+        14,
+        17
+      ],
+      "drawLayer": 57,
+      "material": "brass",
+      "length": 68,
+      "end": [
+        68,
+        0,
+        0
+      ],
+      "seat": "broad cap inside rig envelope"
+    },
+    {
+      "id": "walk.rear.near.tibia",
+      "parent": "walk.rear.near.femur",
+      "kind": "hinge",
+      "pivot": [
+        68,
+        0,
+        0
+      ],
+      "axis": [
+        0,
+        0,
+        1
+      ],
+      "physicalDepth": [
+        18,
+        21
+      ],
+      "drawLayer": 58,
+      "material": "brass",
+      "length": 76,
+      "end": [
+        76,
+        0,
+        0
+      ]
+    },
+    {
+      "id": "walk.rear.near.foot",
+      "parent": "walk.rear.near.tibia",
+      "kind": "hinge",
+      "pivot": [
+        76,
+        0,
+        0
+      ],
+      "axis": [
+        0,
+        0,
+        1
+      ],
+      "physicalDepth": [
+        14,
+        21
+      ],
+      "drawLayer": 59,
+      "material": "brass",
+      "shapeRef": "rig.walking.footSourceLocalXY",
+      "heel": [
+        -6,
+        -2
+      ],
+      "toe": [
+        6,
+        -2
+      ],
+      "groundConstraint": "heel/toe roll about fixed contact, four planted contacts"
+    },
+    {
+      "id": "walk.rear.near.piston.sleeve",
+      "parent": "walk.rear.near.femur",
+      "kind": "distance",
+      "pivot": [
+        48,
+        -5,
+        0
+      ],
+      "axis": null,
+      "physicalDepth": [
+        14,
+        21
+      ],
+      "drawLayer": 58,
+      "material": "copper",
+      "pinB": {
+        "part": "walk.rear.near.tibia",
+        "local": [
+          8,
+          2,
+          0
+        ]
+      },
+      "follows": "pin distance, sleeve and rod stay separate",
+      "actuator": {
+        "housingLength": 12,
+        "sections": [
+          11,
+          11
+        ],
+        "minOverlap": 5
+      }
+    },
+    {
+      "id": "walk.rear.near.piston.rod",
+      "parent": "walk.rear.near.piston.sleeve",
+      "kind": "prismatic",
+      "pivot": [
+        0,
+        0,
+        0
+      ],
+      "axis": [
+        1,
+        0,
+        0
+      ],
+      "physicalDepth": [
+        14,
+        21
+      ],
+      "drawLayer": 59,
+      "material": "steel"
+    },
+    {
+      "id": "bay.walk.front.near.liner",
+      "parent": "cradle",
+      "kind": "fixed",
+      "pivot": [
+        75,
+        20,
+        26.5
+      ],
+      "axis": null,
+      "physicalDepth": [
+        23,
+        30
+      ],
+      "drawLayer": 54,
+      "material": "patinatedBronze"
+    },
+    {
+      "id": "bay.walk.front.near.door",
+      "parent": "cradle",
+      "kind": "hinge",
+      "pivot": [
+        75,
+        13,
+        31
+      ],
+      "axis": [
+        1,
+        0,
+        0
+      ],
+      "physicalDepth": [
+        23,
+        30
+      ],
+      "drawLayer": 55,
+      "material": "brass",
+      "portSlackXY": [
+        5.4,
+        3.6
+      ],
+      "note": "final slot follows packed swept envelope and preserves C1 contact"
+    },
+    {
+      "id": "walk.front.near.hip_fork",
+      "parent": "cradle",
+      "kind": "fixed",
+      "pivot": [
+        75,
+        20,
+        26.5
+      ],
+      "axis": null,
+      "physicalDepth": [
+        23,
+        30
+      ],
+      "drawLayer": 56,
+      "material": "brass"
+    },
+    {
+      "id": "walk.front.near.femur",
+      "parent": "walk.front.near.hip_fork",
+      "kind": "hinge",
+      "pivot": [
+        0,
+        0,
+        0
+      ],
+      "axis": [
+        0,
+        0,
+        1
+      ],
+      "physicalDepth": [
+        23,
+        26
+      ],
+      "drawLayer": 57,
+      "material": "brass",
+      "length": 68,
+      "end": [
+        68,
+        0,
+        0
+      ],
+      "seat": "broad cap inside rig envelope"
+    },
+    {
+      "id": "walk.front.near.tibia",
+      "parent": "walk.front.near.femur",
+      "kind": "hinge",
+      "pivot": [
+        68,
+        0,
+        0
+      ],
+      "axis": [
+        0,
+        0,
+        1
+      ],
+      "physicalDepth": [
+        27,
+        30
+      ],
+      "drawLayer": 58,
+      "material": "brass",
+      "length": 76,
+      "end": [
+        76,
+        0,
+        0
+      ]
+    },
+    {
+      "id": "walk.front.near.foot",
+      "parent": "walk.front.near.tibia",
+      "kind": "hinge",
+      "pivot": [
+        76,
+        0,
+        0
+      ],
+      "axis": [
+        0,
+        0,
+        1
+      ],
+      "physicalDepth": [
+        23,
+        30
+      ],
+      "drawLayer": 59,
+      "material": "brass",
+      "shapeRef": "rig.walking.footSourceLocalXY",
+      "heel": [
+        -6,
+        -2
+      ],
+      "toe": [
+        6,
+        -2
+      ],
+      "groundConstraint": "heel/toe roll about fixed contact, four planted contacts"
+    },
+    {
+      "id": "walk.front.near.piston.sleeve",
+      "parent": "walk.front.near.femur",
+      "kind": "distance",
+      "pivot": [
+        48,
+        -5,
+        0
+      ],
+      "axis": null,
+      "physicalDepth": [
+        23,
+        30
+      ],
+      "drawLayer": 58,
+      "material": "copper",
+      "pinB": {
+        "part": "walk.front.near.tibia",
+        "local": [
+          8,
+          2,
+          0
+        ]
+      },
+      "follows": "pin distance, sleeve and rod stay separate",
+      "actuator": {
+        "housingLength": 12,
+        "sections": [
+          11,
+          11
+        ],
+        "minOverlap": 5
+      }
+    },
+    {
+      "id": "walk.front.near.piston.rod",
+      "parent": "walk.front.near.piston.sleeve",
+      "kind": "prismatic",
+      "pivot": [
+        0,
+        0,
+        0
+      ],
+      "axis": [
+        1,
+        0,
+        0
+      ],
+      "physicalDepth": [
+        23,
+        30
+      ],
+      "drawLayer": 59,
+      "material": "steel"
+    },
+    {
+      "id": "thorax.lower",
+      "parent": "cradle",
+      "kind": "hinge",
+      "pivot": [
+        40,
+        32,
+        0
+      ],
+      "axis": [
+        0,
+        0,
+        1
+      ],
+      "physicalDepth": [
+        -10,
+        -1
+      ],
+      "drawLayer": 42,
+      "material": "brass",
+      "length": 98,
+      "end": [
+        98,
+        0,
+        0
+      ],
+      "shape": "two wide plate planes and an uninterrupted load path"
+    },
+    {
+      "id": "thorax.upper",
+      "parent": "thorax.lower",
+      "kind": "hinge",
+      "pivot": [
+        98,
+        0,
+        0
+      ],
+      "axis": [
+        0,
+        0,
+        1
+      ],
+      "physicalDepth": [
+        1,
+        10
+      ],
+      "drawLayer": 44,
+      "material": "brass",
+      "length": 98,
+      "end": [
+        98,
+        0,
+        0
+      ],
+      "role": "arm shoulder is this root. Head carriage is this end."
+    },
+    {
+      "id": "thorax.piston.sleeve",
+      "parent": "thorax.lower",
+      "kind": "distance",
+      "pivot": [
+        74,
+        -6,
+        0
+      ],
+      "axis": null,
+      "physicalDepth": [
+        -12,
+        -5
+      ],
+      "drawLayer": 45,
+      "material": "copper",
+      "pinB": {
+        "part": "thorax.upper",
+        "local": [
+          7,
+          3,
+          0
+        ]
+      },
+      "note": "pin endpoints first, sleeve/rod travel measured in rig samples",
+      "actuator": {
+        "housingLength": 16.5,
+        "sections": [
+          15,
+          15
+        ],
+        "minOverlap": 6.5
+      }
+    },
+    {
+      "id": "thorax.piston.rod",
+      "parent": "thorax.piston.sleeve",
+      "kind": "prismatic",
+      "pivot": [
+        0,
+        0,
+        0
+      ],
+      "axis": [
+        1,
+        0,
+        0
+      ],
+      "physicalDepth": [
+        -12,
+        -5
+      ],
+      "drawLayer": 46,
+      "material": "steel"
+    },
+    {
+      "id": "rapt.far.shoulder_fork",
+      "parent": "thorax.upper",
+      "kind": "fixed",
+      "pivot": [
+        0,
+        0,
+        0
+      ],
+      "axis": null,
+      "physicalDepth": [
+        -46,
+        0
+      ],
+      "drawLayer": 14,
+      "material": "brass",
+      "role": "shared shoulder axis. Never reparent to shell."
+    },
+    {
+      "id": "rapt.far.femur",
+      "parent": "rapt.far.shoulder_fork",
+      "kind": "hinge",
+      "pivot": [
+        0,
+        0,
+        0
+      ],
+      "axis": [
+        0,
+        0,
+        1
+      ],
+      "physicalDepth": [
+        -50,
+        -43
+      ],
+      "drawLayer": 15,
+      "material": "petrol",
+      "length": 86,
+      "end": [
+        86,
+        0,
+        0
+      ],
+      "shapeRef": "rig.raptorial.femurShape"
+    },
+    {
+      "id": "rapt.far.tibia",
+      "parent": "rapt.far.femur",
+      "kind": "hinge",
+      "pivot": [
+        86,
+        0,
+        0
+      ],
+      "axis": [
+        0,
+        0,
+        1
+      ],
+      "physicalDepth": [
+        -41,
+        -34
+      ],
+      "drawLayer": 16,
+      "material": "brass",
+      "length": 88,
+      "end": [
+        88,
+        0,
+        0
+      ],
+      "shapeRef": "rig.raptorial.tibiaShape",
+      "note": "end is blade tip, no tip pivot cap"
+    },
+    {
+      "id": "rapt.far.joint_cap",
+      "parent": "rapt.far.femur",
+      "kind": "fixed",
+      "pivot": [
+        86,
+        0,
+        0
+      ],
+      "axis": null,
+      "physicalDepth": [
+        -41,
+        -34
+      ],
+      "drawLayer": 18,
+      "material": "brass",
+      "maxRadius": 5
+    },
+    {
+      "id": "rapt.far.latch",
+      "parent": "rapt.far.femur",
+      "kind": "hinge",
+      "pivot": [
+        70,
+        5,
+        0
+      ],
+      "axis": [
+        0,
+        0,
+        1
+      ],
+      "physicalDepth": [
+        -50,
+        -43
+      ],
+      "drawLayer": 17,
+      "material": "brass",
+      "track": "rapt.far.latch.open"
+    },
+    {
+      "id": "rapt.far.piston.sleeve",
+      "parent": "rapt.far.femur",
+      "kind": "distance",
+      "pivot": [
+        66,
+        4,
+        0
+      ],
+      "axis": null,
+      "physicalDepth": [
+        -50,
+        -43
+      ],
+      "drawLayer": 16,
+      "material": "copper",
+      "pinB": {
+        "part": "rapt.far.tibia",
+        "local": [
+          6,
+          -2,
+          0
+        ]
+      },
+      "actuator": {
+        "housingLength": 12,
+        "sections": [
+          11.5
+        ],
+        "minOverlap": 3.5
+      }
+    },
+    {
+      "id": "rapt.far.piston.rod",
+      "parent": "rapt.far.piston.sleeve",
+      "kind": "prismatic",
+      "pivot": [
+        0,
+        0,
+        0
+      ],
+      "axis": [
+        1,
+        0,
+        0
+      ],
+      "physicalDepth": [
+        -50,
+        -43
+      ],
+      "drawLayer": 17,
+      "material": "steel"
+    },
+    {
+      "id": "rapt.near.shoulder_fork",
+      "parent": "thorax.upper",
+      "kind": "fixed",
+      "pivot": [
+        0,
+        0,
+        0
+      ],
+      "axis": null,
+      "physicalDepth": [
+        0,
+        38
+      ],
+      "drawLayer": 63,
+      "material": "brass",
+      "role": "shared shoulder axis. Never reparent to shell."
+    },
+    {
+      "id": "rapt.near.femur",
+      "parent": "rapt.near.shoulder_fork",
+      "kind": "hinge",
+      "pivot": [
+        0,
+        0,
+        0
+      ],
+      "axis": [
+        0,
+        0,
+        1
+      ],
+      "physicalDepth": [
+        34,
+        41
+      ],
+      "drawLayer": 64,
+      "material": "petrol",
+      "length": 86,
+      "end": [
+        86,
+        0,
+        0
+      ],
+      "shapeRef": "rig.raptorial.femurShape"
+    },
+    {
+      "id": "rapt.near.tibia",
+      "parent": "rapt.near.femur",
+      "kind": "hinge",
+      "pivot": [
+        86,
+        0,
+        0
+      ],
+      "axis": [
+        0,
+        0,
+        1
+      ],
+      "physicalDepth": [
+        43,
+        50
+      ],
+      "drawLayer": 65,
+      "material": "brass",
+      "length": 88,
+      "end": [
+        88,
+        0,
+        0
+      ],
+      "shapeRef": "rig.raptorial.tibiaShape",
+      "note": "end is blade tip, no tip pivot cap"
+    },
+    {
+      "id": "rapt.near.joint_cap",
+      "parent": "rapt.near.femur",
+      "kind": "fixed",
+      "pivot": [
+        86,
+        0,
+        0
+      ],
+      "axis": null,
+      "physicalDepth": [
+        43,
+        50
+      ],
+      "drawLayer": 67,
+      "material": "brass",
+      "maxRadius": 5
+    },
+    {
+      "id": "rapt.near.latch",
+      "parent": "rapt.near.femur",
+      "kind": "hinge",
+      "pivot": [
+        70,
+        5,
+        0
+      ],
+      "axis": [
+        0,
+        0,
+        1
+      ],
+      "physicalDepth": [
+        34,
+        41
+      ],
+      "drawLayer": 66,
+      "material": "brass",
+      "track": "rapt.near.latch.open"
+    },
+    {
+      "id": "rapt.near.piston.sleeve",
+      "parent": "rapt.near.femur",
+      "kind": "distance",
+      "pivot": [
+        66,
+        4,
+        0
+      ],
+      "axis": null,
+      "physicalDepth": [
+        34,
+        41
+      ],
+      "drawLayer": 65,
+      "material": "copper",
+      "pinB": {
+        "part": "rapt.near.tibia",
+        "local": [
+          6,
+          -2,
+          0
+        ]
+      },
+      "actuator": {
+        "housingLength": 12,
+        "sections": [
+          11.5
+        ],
+        "minOverlap": 3.5
+      }
+    },
+    {
+      "id": "rapt.near.piston.rod",
+      "parent": "rapt.near.piston.sleeve",
+      "kind": "prismatic",
+      "pivot": [
+        0,
+        0,
+        0
+      ],
+      "axis": [
+        1,
+        0,
+        0
+      ],
+      "physicalDepth": [
+        34,
+        41
+      ],
+      "drawLayer": 66,
+      "material": "steel"
+    },
+    {
+      "id": "eye.front_hatch",
+      "parent": "cradle",
+      "kind": "hinge",
+      "pivot": [
+        64,
+        58,
+        35
+      ],
+      "axis": [
+        1,
+        0,
+        0
+      ],
+      "physicalDepth": [
+        30,
+        54
+      ],
+      "drawLayer": 73,
+      "material": "petrol",
+      "track": "eye.front_hatch.open",
+      "openingInCrown": {
+        "x": [
+          -14,
+          58
+        ],
+        "y": [
+          -26,
+          14
+        ]
+      },
+      "separateFrom": "eye.brow"
+    },
+    {
+      "id": "eye.well",
+      "parent": "cradle",
+      "kind": "fixed",
+      "pivot": [
+        54,
+        58,
+        0
+      ],
+      "axis": null,
+      "physicalDepth": [
+        -11,
+        11
+      ],
+      "drawLayer": 34,
+      "material": "patinatedBronze",
+      "role": "well behind front shell hatch, rim follows whole head envelope"
+    },
+    {
+      "id": "head.carriage.sleeve",
+      "parent": "thorax.upper",
+      "kind": "hinge",
+      "pivot": [
+        98,
+        0,
+        0
+      ],
+      "axis": [
+        0,
+        0,
+        1
+      ],
+      "physicalDepth": [
+        -11,
+        11
+      ],
+      "drawLayer": 46,
+      "material": "copper",
+      "length": 26,
+      "shapeRef": "rig.opticalCarriage.housingLocalXY",
+      "axisRule": "Fixed crown pivot. Hold body +X for head emergence. Swing the same nested carrier to +68 degrees only once the head is high; nested sections remain on the same axis.",
+      "track": "head.carriage.sleeve.abs"
+    },
+    {
+      "id": "head.carriage.section1",
+      "parent": "head.carriage.sleeve",
+      "kind": "prismatic",
+      "pivot": [
+        0,
+        0,
+        0
+      ],
+      "axis": [
+        1,
+        0,
+        0
+      ],
+      "physicalDepth": [
+        -9,
+        9
+      ],
+      "drawLayer": 47,
+      "material": "steel",
+      "length": 18,
+      "maxStroke": 12,
+      "minOverlap": 6
+    },
+    {
+      "id": "head.carriage.section2",
+      "parent": "head.carriage.section1",
+      "kind": "prismatic",
+      "pivot": [
+        0,
+        0,
+        0
+      ],
+      "axis": [
+        1,
+        0,
+        0
+      ],
+      "physicalDepth": [
+        -7,
+        7
+      ],
+      "drawLayer": 48,
+      "material": "brass",
+      "length": 18,
+      "maxStroke": 12,
+      "minOverlap": 6
+    },
+    {
+      "id": "head.yoke",
+      "parent": "head.carriage.section2",
+      "kind": "fixed",
+      "pivot": [
+        0,
+        0,
+        0
+      ],
+      "axis": null,
+      "physicalDepth": [
+        -11,
+        11
+      ],
+      "drawLayer": 49,
+      "material": "brass"
+    },
+    {
+      "id": "head.chassis",
+      "parent": "head.yoke",
+      "kind": "hinge",
+      "pivot": [
+        0,
+        0,
+        0
+      ],
+      "axis": [
+        0,
+        0,
+        1
+      ],
+      "physicalDepth": [
+        -11,
+        11
+      ],
+      "drawLayer": 50,
+      "material": "brass",
+      "shapeRef": "rig.opticalCarriage.headOutlineLocalXY"
+    },
+    {
+      "id": "eye.brow",
+      "parent": "head.chassis",
+      "kind": "hinge",
+      "pivot": [
+        -4,
+        5,
+        0
+      ],
+      "axis": [
+        0,
+        0,
+        1
+      ],
+      "physicalDepth": [
+        -11,
+        11
+      ],
+      "drawLayer": 54,
+      "material": "brass",
+      "shapeRef": "rig.opticalCarriage.browOutlineLocalXY",
+      "track": "eye.brow.angle"
+    },
+    {
+      "id": "eye.gimbal",
+      "parent": "head.chassis",
+      "kind": "hinge",
+      "pivot": [
+        12,
+        -6,
+        0
+      ],
+      "axis": [
+        0,
+        0,
+        1
+      ],
+      "physicalDepth": [
+        -10,
+        10
+      ],
+      "drawLayer": 51,
+      "material": "brass"
+    },
+    {
+      "id": "eye.barrel",
+      "parent": "eye.gimbal",
+      "kind": "fixed",
+      "pivot": [
+        0,
+        0,
+        0
+      ],
+      "axis": null,
+      "physicalDepth": [
+        -9,
+        9
+      ],
+      "drawLayer": 52,
+      "material": "brass",
+      "radius": 9,
+      "minFreeBore": 20
+    },
+    {
+      "id": "eye.lens",
+      "parent": "eye.barrel",
+      "kind": "fixed",
+      "pivot": [
+        0,
+        0,
+        0
+      ],
+      "axis": null,
+      "physicalDepth": [
+        -8,
+        8
+      ],
+      "drawLayer": 53,
+      "material": "amberGlass",
+      "radius": 7,
+      "identity": "single glass optic in all stages"
+    },
+    {
+      "id": "eye.iris.leaf.1",
+      "parent": "eye.barrel",
+      "kind": "hinge",
+      "pivot": [
+        7.4,
+        0,
+        0
+      ],
+      "axis": [
+        0,
+        0,
+        1
+      ],
+      "physicalDepth": [
+        -8,
+        8
+      ],
+      "drawLayer": 54,
+      "material": "bronze",
+      "track": "eye.iris.open",
+      "phaseDeg": 0,
+      "role": "local aperture leaves on same barrel"
+    },
+    {
+      "id": "eye.iris.leaf.2",
+      "parent": "eye.barrel",
+      "kind": "hinge",
+      "pivot": [
+        3.7,
+        6.4086,
+        0
+      ],
+      "axis": [
+        0,
+        0,
+        1
+      ],
+      "physicalDepth": [
+        -8,
+        8
+      ],
+      "drawLayer": 54,
+      "material": "bronze",
+      "track": "eye.iris.open",
+      "phaseDeg": 60,
+      "role": "local aperture leaves on same barrel"
+    },
+    {
+      "id": "eye.iris.leaf.3",
+      "parent": "eye.barrel",
+      "kind": "hinge",
+      "pivot": [
+        -3.7,
+        6.4086,
+        0
+      ],
+      "axis": [
+        0,
+        0,
+        1
+      ],
+      "physicalDepth": [
+        -8,
+        8
+      ],
+      "drawLayer": 54,
+      "material": "bronze",
+      "track": "eye.iris.open",
+      "phaseDeg": 120,
+      "role": "local aperture leaves on same barrel"
+    },
+    {
+      "id": "eye.iris.leaf.4",
+      "parent": "eye.barrel",
+      "kind": "hinge",
+      "pivot": [
+        -7.4,
+        0,
+        0
+      ],
+      "axis": [
+        0,
+        0,
+        1
+      ],
+      "physicalDepth": [
+        -8,
+        8
+      ],
+      "drawLayer": 54,
+      "material": "bronze",
+      "track": "eye.iris.open",
+      "phaseDeg": 180,
+      "role": "local aperture leaves on same barrel"
+    },
+    {
+      "id": "eye.iris.leaf.5",
+      "parent": "eye.barrel",
+      "kind": "hinge",
+      "pivot": [
+        -3.7,
+        -6.4086,
+        0
+      ],
+      "axis": [
+        0,
+        0,
+        1
+      ],
+      "physicalDepth": [
+        -8,
+        8
+      ],
+      "drawLayer": 54,
+      "material": "bronze",
+      "track": "eye.iris.open",
+      "phaseDeg": 240,
+      "role": "local aperture leaves on same barrel"
+    },
+    {
+      "id": "eye.iris.leaf.6",
+      "parent": "eye.barrel",
+      "kind": "hinge",
+      "pivot": [
+        3.7,
+        -6.4086,
+        0
+      ],
+      "axis": [
+        0,
+        0,
+        1
+      ],
+      "physicalDepth": [
+        -8,
+        8
+      ],
+      "drawLayer": 54,
+      "material": "bronze",
+      "track": "eye.iris.open",
+      "phaseDeg": 300,
+      "role": "local aperture leaves on same barrel"
+    }
+  ],
+  "seams": {
+    "visibleMetalOverlap": 2.7,
+    "enamelSetback": 1.8,
+    "apertureLipWidth": 4.5,
+    "frontEyeBoreFree": 20,
+    "sealRule": "keep metallic underpaint continuous behind the cap in every allowed angle; overlap along z stays inside fork neighborhood. For large blade retain source XY swept contour and cap radius 5.",
+    "seamChecks": [
+      "loaded hip and ankle stays seated",
+      "folded elbow retains nested distinct slabs",
+      "local pin/cap cover stays continuous during rotation",
+      "enamel highlights stop at rigid seam",
+      "fixed lip outside minimum free aperture"
+    ],
+    "foregroundOcclusion": "real opaque rear well / inner chain / projected physical cutout / exterior strip. Retain above-roof output independent of shell draw group. For 2D draw-order change require full coverage by opaque lip; preserve far and near arm identities.",
+    "note": "physicalDepth is occupied thickness, drawLayer is group ordering. Preserve same topology from closed travel to K5. Hinge pins may bridge their named pair only.",
+    "tipSeparationStudy": "Far blade settles at relative 238° versus near 240°, on a differently pitched femur. Check the two blade tips and their negative space in final three-quarter camera."
+  },
+  "release": {
+    "gateFreeXY": {
+      "x": [
+        -67,
+        68
+      ],
+      "y": [
+        35,
+        95
+      ]
+    },
+    "minimumSideGateOpenDeg": 100,
+    "holdPackedArmAbs": [
+      0,
+      170
+    ],
+    "shoulderLocalYForFemur": 105,
+    "shoulderLocalYForBlade": 120,
+    "roofLocalYMax": 90,
+    "minimumClosedClearance": 4,
+    "stageCContact": "K0–K5 foot anchors unchanged (near ±132, far ±105); set ankle via physical heel/toe roll. Taller height comes from rise 40 and thorax opening.",
+    "constraints": [
+      "no alpha/scale for shell or links",
+      "gates physically open outward before lower chest takes load",
+      "forearms leave as a nested pair in their own lanes",
+      "continuous roof aperture in both arm lanes plus central chest",
+      "finish seams and fit with actual Asset production contours before C2 live gate"
+    ],
+    "minimumRoofOpenDeg": 100,
+    "roofGuide": "Two roof lips in central z ±33 swing outward about fixed x axes at y=35. While ≥100°, the minimum top-plate y of 60 gives |z| ≥57, outside the arm lanes. Verify against Asset final polygon/thickness and hinge seat."
+  }
+}

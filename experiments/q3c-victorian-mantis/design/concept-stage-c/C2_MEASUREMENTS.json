@@ -1,0 +1,460 @@
+{
+  "sampling": {
+    "nominalHz": 120,
+    "samplesIncludingKeys": 622,
+    "seconds": 4.22
+  },
+  "limits": "Rigid XY construction contours, projected depth budget, design mass distribution and fixed foot contacts. Final textured solid sweep, masks and live timing are evaluated on the Asset/Builder candidate.",
+  "packedVisibleProfileClearancesXY": {
+    "thorax.lower": 16.446,
+    "thorax.upper": 6.3878,
+    "head.chassis": 3.8679,
+    "eye.brow": 1.6172,
+    "head.carriage": 7.4466,
+    "eye.barrel": 9.8893,
+    "walk.rear.far": 1.0,
+    "walk.front.far": 1.0,
+    "walk.rear.near": 1.0,
+    "walk.front.near": 1.0,
+    "rapt.far": 16.4985,
+    "rapt.near": 16.4985
+  },
+  "closedArmReleaseXY": {
+    "minX": -61.5112,
+    "maxX": 65.6165,
+    "minY": 38.0175
+  },
+  "closedAndReleasedArmMinRoofClearance": 4.0,
+  "openingBladeMinRoofClearance": 19.2311,
+  "headHousingSwingHeadMinRoofClearance": 61.8874,
+  "finalBladeTipSeparationInProjection": 42.034,
+  "roofPanelsMinAbsDepthDuringClosedExit": 59.5237,
+  "minSoleAboveFloor": 0.0,
+  "minMassProjectionDistanceToContactHullEdge": 19.0,
+  "pistonPinDistanceRanges": {
+    "thorax.piston": [
+      18.465,
+      32.354
+    ],
+    "rapt.far.piston": [
+      14.072,
+      17.329
+    ],
+    "rapt.near.piston": [
+      14.072,
+      17.643
+    ],
+    "walk.rear.far.piston": [
+      15.251,
+      21.262
+    ],
+    "walk.front.far.piston": [
+      15.67,
+      21.047
+    ],
+    "walk.rear.near.piston": [
+      17.403,
+      23.104
+    ],
+    "walk.front.near.piston": [
+      18.099,
+      22.797
+    ]
+  },
+  "derivedLegAngleRangesDegrees": {
+    "walk.rear.far.femur": [
+      159.216,
+      198.279
+    ],
+    "walk.rear.far.tibia": [
+      -65.045,
+      -60.439
+    ],
+    "walk.front.far.femur": [
+      -19.98,
+      24.619
+    ],
+    "walk.front.far.tibia": [
+      -121.519,
+      -112.079
+    ],
+    "walk.rear.near.femur": [
+      150.226,
+      192.192
+    ],
+    "walk.rear.near.tibia": [
+      -86.46,
+      -82.579
+    ],
+    "walk.front.near.femur": [
+      -12.527,
+      29.887
+    ],
+    "walk.front.near.tibia": [
+      -99.962,
+      -89.023
+    ]
+  },
+  "keys": [
+    {
+      "id": "K0",
+      "t": 0,
+      "values": {
+        "cradle.rise": 0,
+        "cradle.x": 0,
+        "shell.rear.open": 0,
+        "shell.front.open": 0,
+        "bay.rapt.far.catch.open": 0,
+        "bay.rapt.near.catch.open": 0,
+        "bay.rapt.far.door.open": 0,
+        "bay.rapt.near.door.open": 0,
+        "thorax.lower.abs": 170,
+        "thorax.upper.abs": 10,
+        "eye.front_hatch.open": 76,
+        "head.chassis.abs": 0,
+        "head.carriage.section1.stroke": 12,
+        "head.carriage.section2.stroke": 12,
+        "eye.gimbal.aim": 0,
+        "eye.brow.angle": 0,
+        "eye.iris.open": 0.84,
+        "rapt.near.femur.abs": 0,
+        "rapt.far.femur.abs": 0,
+        "rapt.near.tibia.relative": 170,
+        "rapt.far.tibia.relative": 170,
+        "rapt.near.latch.open": 0,
+        "rapt.far.latch.open": 0,
+        "walk.rear.far.foot.roll": 0,
+        "walk.front.far.foot.roll": 0,
+        "walk.rear.near.foot.roll": 0,
+        "walk.front.near.foot.roll": 0,
+        "head.carriage.sleeve.abs": 0
+      },
+      "landmarks": {
+        "body": [
+          0,
+          0
+        ],
+        "root": [
+          40,
+          32
+        ],
+        "shoulder": [
+          -56.5112,
+          49.0175
+        ],
+        "crown": [
+          40.0,
+          66.035
+        ],
+        "head": [
+          64.0,
+          66.035
+        ],
+        "lens": [
+          76.0,
+          60.035
+        ]
+      }
+    },
+    {
+      "id": "K1",
+      "t": 0.83,
+      "values": {
+        "cradle.rise": -4.23783,
+        "cradle.x": -3.07078,
+        "shell.rear.open": 104,
+        "shell.front.open": 107.08824,
+        "bay.rapt.far.catch.open": 27,
+        "bay.rapt.near.catch.open": 29,
+        "bay.rapt.far.door.open": 105,
+        "bay.rapt.near.door.open": 107.20799,
+        "thorax.lower.abs": 170,
+        "thorax.upper.abs": 10,
+        "eye.front_hatch.open": 94,
+        "head.chassis.abs": 2.45945,
+        "head.carriage.section1.stroke": 12,
+        "head.carriage.section2.stroke": 12,
+        "eye.gimbal.aim": 5,
+        "eye.brow.angle": -4.0,
+        "eye.iris.open": 0.91,
+        "rapt.near.femur.abs": 0,
+        "rapt.far.femur.abs": 0,
+        "rapt.near.tibia.relative": 170,
+        "rapt.far.tibia.relative": 170,
+        "rapt.near.latch.open": 0,
+        "rapt.far.latch.open": 0,
+        "walk.rear.far.foot.roll": -0.67124,
+        "walk.front.far.foot.roll": 2.53545,
+        "walk.rear.near.foot.roll": -2.65872,
+        "walk.front.near.foot.roll": 3.55248,
+        "head.carriage.sleeve.abs": 0
+      },
+      "landmarks": {
+        "body": [
+          -3.0708,
+          -4.2378
+        ],
+        "root": [
+          36.9292,
+          27.7622
+        ],
+        "shoulder": [
+          -59.5819,
+          44.7797
+        ],
+        "crown": [
+          36.9292,
+          61.7972
+        ],
+        "head": [
+          60.9292,
+          61.7972
+        ],
+        "lens": [
+          73.1756,
+          56.3177
+        ]
+      }
+    },
+    {
+      "id": "K2",
+      "t": 1.69,
+      "values": {
+        "cradle.rise": 1.29526,
+        "cradle.x": 0.7958,
+        "shell.rear.open": 104,
+        "shell.front.open": 106,
+        "bay.rapt.far.catch.open": 27,
+        "bay.rapt.near.catch.open": 29,
+        "bay.rapt.far.door.open": 105,
+        "bay.rapt.near.door.open": 106,
+        "thorax.lower.abs": 131.84966,
+        "thorax.upper.abs": 34.93503,
+        "eye.front_hatch.open": 94,
+        "head.chassis.abs": 7.83771,
+        "head.carriage.section1.stroke": 9.4837,
+        "head.carriage.section2.stroke": 11.63826,
+        "eye.gimbal.aim": 2,
+        "eye.brow.angle": 8,
+        "eye.iris.open": 0.77,
+        "rapt.near.femur.abs": 0,
+        "rapt.far.femur.abs": 0,
+        "rapt.near.tibia.relative": 170,
+        "rapt.far.tibia.relative": 170,
+        "rapt.near.latch.open": 0,
+        "rapt.far.latch.open": 0,
+        "walk.rear.far.foot.roll": 0,
+        "walk.front.far.foot.roll": 0,
+        "walk.rear.near.foot.roll": 0,
+        "walk.front.near.foot.roll": 0,
+        "head.carriage.sleeve.abs": 0
+      },
+      "landmarks": {
+        "body": [
+          0.7958,
+          1.2953
+        ],
+        "root": [
+          40.7958,
+          33.2953
+        ],
+        "shoulder": [
+          -24.5877,
+          106.2953
+        ],
+        "crown": [
+          55.7529,
+          162.4147
+        ],
+        "head": [
+          76.8749,
+          162.4147
+        ],
+        "lens": [
+          89.581,
+          158.1071
+        ]
+      }
+    },
+    {
+      "id": "K3",
+      "t": 2.48,
+      "values": {
+        "cradle.rise": 19.34386,
+        "cradle.x": 1.7797,
+        "shell.rear.open": 91.7316,
+        "shell.front.open": 106,
+        "bay.rapt.far.catch.open": 27,
+        "bay.rapt.near.catch.open": 29,
+        "bay.rapt.far.door.open": 93.29258,
+        "bay.rapt.near.door.open": 106,
+        "thorax.lower.abs": 115.65424,
+        "thorax.upper.abs": 64,
+        "eye.front_hatch.open": 32.20374,
+        "head.chassis.abs": 3.98177,
+        "head.carriage.section1.stroke": 4.97582,
+        "head.carriage.section2.stroke": 5,
+        "eye.gimbal.aim": 5.3022,
+        "eye.brow.angle": 3.02898,
+        "eye.iris.open": 0.77713,
+        "rapt.near.femur.abs": 60,
+        "rapt.far.femur.abs": 54,
+        "rapt.near.tibia.relative": 170,
+        "rapt.far.tibia.relative": 170,
+        "rapt.near.latch.open": 21.54157,
+        "rapt.far.latch.open": 0.0,
+        "walk.rear.far.foot.roll": 0.01753,
+        "walk.front.far.foot.roll": 0,
+        "walk.rear.near.foot.roll": 0.68985,
+        "walk.front.near.foot.roll": 0,
+        "head.carriage.sleeve.abs": 21.34432
+      },
+      "landmarks": {
+        "body": [
+          1.7797,
+          19.3439
+        ],
+        "root": [
+          41.7797,
+          51.3439
+        ],
+        "shoulder": [
+          -0.6483,
+          139.6833
+        ],
+        "crown": [
+          42.312,
+          227.7651
+        ],
+        "head": [
+          51.6036,
+          231.3961
+        ],
+        "lens": [
+          63.9913,
+          226.2438
+        ]
+      }
+    },
+    {
+      "id": "K4",
+      "t": 3.09,
+      "values": {
+        "cradle.rise": 38.54157,
+        "cradle.x": 2.55701,
+        "shell.rear.open": 0,
+        "shell.front.open": 37.06453,
+        "bay.rapt.far.catch.open": 24.94543,
+        "bay.rapt.near.catch.open": 29,
+        "bay.rapt.far.door.open": 0,
+        "bay.rapt.near.door.open": 13.27144,
+        "thorax.lower.abs": 91.07059,
+        "thorax.upper.abs": 73.11478,
+        "eye.front_hatch.open": 0,
+        "head.chassis.abs": -4.09123,
+        "head.carriage.section1.stroke": 5,
+        "head.carriage.section2.stroke": 5,
+        "eye.gimbal.aim": 8,
+        "eye.brow.angle": 3,
+        "eye.iris.open": 0.92,
+        "rapt.near.femur.abs": 60.7526,
+        "rapt.far.femur.abs": 52.61028,
+        "rapt.near.tibia.relative": 233.6439,
+        "rapt.far.tibia.relative": 222.32335,
+        "rapt.near.latch.open": 22,
+        "rapt.far.latch.open": 20,
+        "walk.rear.far.foot.roll": 1.09654,
+        "walk.front.far.foot.roll": -1.48112,
+        "walk.rear.near.foot.roll": 1.72947,
+        "walk.front.near.foot.roll": -0.51083,
+        "head.carriage.sleeve.abs": 57.84473
+      },
+      "landmarks": {
+        "body": [
+          2.557,
+          38.5416
+        ],
+        "root": [
+          42.557,
+          70.5416
+        ],
+        "shoulder": [
+          40.726,
+          168.5245
+        ],
+        "crown": [
+          69.1906,
+          262.2995
+        ],
+        "head": [
+          74.5127,
+          270.7656
+        ],
+        "lens": [
+          86.0541,
+          263.9248
+        ]
+      }
+    },
+    {
+      "id": "K5",
+      "t": 4.22,
+      "values": {
+        "cradle.rise": 40,
+        "cradle.x": 0,
+        "shell.rear.open": 0,
+        "shell.front.open": 0,
+        "bay.rapt.far.catch.open": 0,
+        "bay.rapt.near.catch.open": 0,
+        "bay.rapt.far.door.open": 0,
+        "bay.rapt.near.door.open": 0,
+        "thorax.lower.abs": 82,
+        "thorax.upper.abs": 78,
+        "eye.front_hatch.open": 0,
+        "head.chassis.abs": -4,
+        "head.carriage.section1.stroke": 5,
+        "head.carriage.section2.stroke": 5,
+        "eye.gimbal.aim": 0,
+        "eye.brow.angle": 2,
+        "eye.iris.open": 0.82,
+        "rapt.near.femur.abs": 60,
+        "rapt.far.femur.abs": 49,
+        "rapt.near.tibia.relative": 240,
+        "rapt.far.tibia.relative": 238,
+        "rapt.near.latch.open": 7,
+        "rapt.far.latch.open": 7,
+        "walk.rear.far.foot.roll": 0,
+        "walk.front.far.foot.roll": 0,
+        "walk.rear.near.foot.roll": 0,
+        "walk.front.near.foot.roll": 0,
+        "head.carriage.sleeve.abs": 68
+      },
+      "landmarks": {
+        "body": [
+          0,
+          40
+        ],
+        "root": [
+          40,
+          72
+        ],
+        "shoulder": [
+          53.639,
+          169.0463
+        ],
+        "crown": [
+          74.0143,
+          264.9047
+        ],
+        "head": [
+          77.7604,
+          274.1766
+        ],
+        "lens": [
+          89.3126,
+          267.3541
+        ]
+      }
+    }
+  ]
+}

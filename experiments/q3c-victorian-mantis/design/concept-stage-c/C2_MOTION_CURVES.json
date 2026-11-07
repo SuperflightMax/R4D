@@ -1,0 +1,1508 @@
+{
+  "schemaVersion": 1,
+  "id": "Q3C-C2-MOTION-v1",
+  "base": "21fbafcfb435838bc84aed931fe68e57cae9fdbc",
+  "durationSeconds": 4.22,
+  "sampleHz": 120,
+  "evaluate": "For each segment q=(t-start)/(end-start). Invert cubic Bezier x(u) for q, then v=from+(to-from)*y(u). Hold value in gaps. Evaluate all tracks in seconds, no global ease. Angles unwrapped. Pose tracks are absolute in body plane unless explicitly relative.",
+  "curves": {
+    "weight": [
+      0.49,
+      0,
+      0.48,
+      1
+    ],
+    "wind": [
+      0.58,
+      0,
+      0.83,
+      1
+    ],
+    "cam": [
+      0.67,
+      0,
+      0.43,
+      1
+    ],
+    "fast": [
+      0.14,
+      0,
+      0.31,
+      1
+    ],
+    "carry": [
+      0.37,
+      0,
+      0.54,
+      1
+    ],
+    "upper": [
+      0.33,
+      0,
+      0.69,
+      1
+    ],
+    "push": [
+      0.43,
+      0,
+      0.31,
+      1
+    ],
+    "blade": [
+      0.22,
+      0,
+      0.33,
+      1
+    ],
+    "latch": [
+      0.17,
+      0,
+      0.5,
+      1
+    ],
+    "damped": [
+      0.16,
+      0,
+      0.59,
+      1
+    ],
+    "servo": [
+      0.28,
+      0,
+      0.62,
+      1
+    ],
+    "glide": [
+      0.39,
+      0,
+      0.76,
+      1
+    ],
+    "toe": [
+      0.3,
+      0,
+      0.46,
+      1
+    ],
+    "fellow": [
+      0.51,
+      0,
+      0.57,
+      1
+    ],
+    "eye": [
+      0.16,
+      0,
+      0.42,
+      1
+    ],
+    "easeContact": [
+      0.2,
+      0,
+      0.77,
+      1
+    ]
+  },
+  "keys": [
+    {
+      "id": "K0",
+      "t": 0,
+      "title": "Капсула",
+      "note": "Цельное брюшко, внимание глаза, руки вложены"
+    },
+    {
+      "id": "K1",
+      "t": 0.83,
+      "title": "Упор и створки",
+      "note": "Вес ниже, защёлки отпущены, широкий верхний выход"
+    },
+    {
+      "id": "K2",
+      "t": 1.69,
+      "title": "Выход закрытых рук",
+      "note": "Плечо 105, низ пакета ≥94, серпы закрыты"
+    },
+    {
+      "id": "K3",
+      "t": 2.48,
+      "title": "Собранная пружина",
+      "note": "Плечо выше 120, бедра подняты, серпы ещё вложены"
+    },
+    {
+      "id": "K4",
+      "t": 3.09,
+      "title": "Открытие силуэта",
+      "note": "Серпы расходятся с задержкой, створки садятся"
+    },
+    {
+      "id": "K5",
+      "t": 4.22,
+      "title": "Высокая стойка",
+      "note": "Затухание перед живым покоем, четыре контакта"
+    }
+  ],
+  "footContacts": {
+    "floorY": -30,
+    "ankleAtFlat": -28,
+    "contactX": {
+      "rear.far": {
+        "x": -105
+      },
+      "front.far": {
+        "x": 105
+      },
+      "rear.near": {
+        "x": -132
+      },
+      "front.near": {
+        "x": 132
+      }
+    },
+    "rollRule": "For positive angle use heel (-6,-2) and for negative angle use toe (6,-2) as pinned local point. Ankle = initial world contact - R(angle)*point. Solve fixed lengths 68/76 in world. Upper and lower angles derived per leg, never eased away from solved contact."
+  },
+  "derived": [
+    "walk.<id>.femur.abs and tibia.abs from two-link IK per foot",
+    "rapt.<side>.tibia.abs=femur.abs+tibia.relative",
+    "thorax piston, both rapt drives and four leg drives from named moving pins",
+    "eye barrel/gimbal/lens remain one chain",
+    "front and rear shell plate hinges rotate along local +x/-x"
+  ],
+  "tracks": {
+    "cradle.rise": {
+      "units": "u",
+      "initial": 0,
+      "description": "brace, unload, lift, bounded settle",
+      "segments": [
+        {
+          "start": 0.03,
+          "end": 0.53,
+          "from": 0,
+          "to": -5.5,
+          "ease": "wind"
+        },
+        {
+          "start": 0.54,
+          "end": 1.45,
+          "from": -5.5,
+          "to": 1,
+          "ease": "weight"
+        },
+        {
+          "start": 1.55,
+          "end": 3.56,
+          "from": 1,
+          "to": 42,
+          "ease": "weight"
+        },
+        {
+          "start": 3.63,
+          "end": 4.18,
+          "from": 42,
+          "to": 40,
+          "ease": "damped"
+        }
+      ]
+    },
+    "cradle.x": {
+      "units": "u",
+      "initial": 0,
+      "description": "load shift over the four contact seats",
+      "segments": [
+        {
+          "start": 0.09,
+          "end": 0.48,
+          "from": 0,
+          "to": -3.4,
+          "ease": "wind"
+        },
+        {
+          "start": 0.58,
+          "end": 1.93,
+          "from": -3.4,
+          "to": 1.4,
+          "ease": "glide"
+        },
+        {
+          "start": 2.04,
+          "end": 3.27,
+          "from": 1.4,
+          "to": 2.6,
+          "ease": "carry"
+        },
+        {
+          "start": 3.49,
+          "end": 4.18,
+          "from": 2.6,
+          "to": 0,
+          "ease": "damped"
+        }
+      ]
+    },
+    "shell.rear.open": {
+      "units": "deg",
+      "initial": 0,
+      "description": "rear roof begins first; anchored to its hinge",
+      "segments": [
+        {
+          "start": 0.25,
+          "end": 0.73,
+          "from": 0,
+          "to": 106,
+          "ease": "cam"
+        },
+        {
+          "start": 0.73,
+          "end": 0.83,
+          "from": 106,
+          "to": 104,
+          "ease": "damped"
+        },
+        {
+          "start": 2.29,
+          "end": 3.06,
+          "from": 104,
+          "to": 0,
+          "ease": "glide"
+        }
+      ]
+    },
+    "shell.front.open": {
+      "units": "deg",
+      "initial": 0,
+      "description": "front roof clears after rear; seats after arm exit",
+      "segments": [
+        {
+          "start": 0.34,
+          "end": 0.8,
+          "from": 0,
+          "to": 108,
+          "ease": "carry"
+        },
+        {
+          "start": 0.8,
+          "end": 0.88,
+          "from": 108,
+          "to": 106,
+          "ease": "damped"
+        },
+        {
+          "start": 2.57,
+          "end": 3.36,
+          "from": 106,
+          "to": 0,
+          "ease": "glide"
+        }
+      ]
+    },
+    "bay.rapt.far.catch.open": {
+      "units": "deg",
+      "initial": 0,
+      "description": "far locking dog leads",
+      "segments": [
+        {
+          "start": 0.11,
+          "end": 0.25,
+          "from": 0,
+          "to": 27,
+          "ease": "latch"
+        },
+        {
+          "start": 3.07,
+          "end": 3.27,
+          "from": 27,
+          "to": 0,
+          "ease": "latch"
+        }
+      ]
+    },
+    "bay.rapt.near.catch.open": {
+      "units": "deg",
+      "initial": 0,
+      "description": "near locking dog follows",
+      "segments": [
+        {
+          "start": 0.19,
+          "end": 0.35,
+          "from": 0,
+          "to": 29,
+          "ease": "latch"
+        },
+        {
+          "start": 3.33,
+          "end": 3.58,
+          "from": 29,
+          "to": 0,
+          "ease": "latch"
+        }
+      ]
+    },
+    "bay.rapt.far.door.open": {
+      "units": "deg",
+      "initial": 0,
+      "description": "real depth-axis swing, no early chest move",
+      "segments": [
+        {
+          "start": 0.24,
+          "end": 0.7,
+          "from": 0,
+          "to": 107,
+          "ease": "cam"
+        },
+        {
+          "start": 0.7,
+          "end": 0.82,
+          "from": 107,
+          "to": 105,
+          "ease": "damped"
+        },
+        {
+          "start": 2.31,
+          "end": 3.02,
+          "from": 105,
+          "to": 0,
+          "ease": "glide"
+        }
+      ]
+    },
+    "bay.rapt.near.door.open": {
+      "units": "deg",
+      "initial": 0,
+      "description": "far/near overlaps with visible asymmetry",
+      "segments": [
+        {
+          "start": 0.33,
+          "end": 0.81,
+          "from": 0,
+          "to": 108,
+          "ease": "push"
+        },
+        {
+          "start": 0.81,
+          "end": 0.87,
+          "from": 108,
+          "to": 106,
+          "ease": "damped"
+        },
+        {
+          "start": 2.52,
+          "end": 3.31,
+          "from": 106,
+          "to": 0,
+          "ease": "weight"
+        }
+      ]
+    },
+    "thorax.lower.abs": {
+      "units": "deg",
+      "initial": 170,
+      "description": "load-bearing first link and common moving shoulder",
+      "segments": [
+        {
+          "start": 0.88,
+          "end": 1.69,
+          "from": 170,
+          "to": 131.84966485527661,
+          "ease": "carry"
+        },
+        {
+          "start": 1.69,
+          "end": 2.42,
+          "from": 131.84966485527661,
+          "to": 115.8,
+          "ease": "push"
+        },
+        {
+          "start": 2.42,
+          "end": 3.55,
+          "from": 115.8,
+          "to": 80.4,
+          "ease": "weight"
+        },
+        {
+          "start": 3.58,
+          "end": 4.19,
+          "from": 80.4,
+          "to": 82,
+          "ease": "damped"
+        }
+      ]
+    },
+    "thorax.upper.abs": {
+      "units": "deg",
+      "initial": 10,
+      "description": "110 ms initial lag, crown follows after lower link",
+      "segments": [
+        {
+          "start": 0.99,
+          "end": 1.71,
+          "from": 10,
+          "to": 35,
+          "ease": "upper"
+        },
+        {
+          "start": 1.76,
+          "end": 2.45,
+          "from": 35,
+          "to": 64,
+          "ease": "glide"
+        },
+        {
+          "start": 2.49,
+          "end": 3.59,
+          "from": 64,
+          "to": 80.4,
+          "ease": "upper"
+        },
+        {
+          "start": 3.63,
+          "end": 4.21,
+          "from": 80.4,
+          "to": 78,
+          "ease": "damped"
+        }
+      ]
+    },
+    "eye.front_hatch.open": {
+      "units": "deg",
+      "initial": 76,
+      "description": "keeps front exit free until head carried up, stays on shell",
+      "segments": [
+        {
+          "start": 0.17,
+          "end": 0.59,
+          "from": 76,
+          "to": 94,
+          "ease": "cam"
+        },
+        {
+          "start": 1.87,
+          "end": 2.79,
+          "from": 94,
+          "to": 0,
+          "ease": "glide"
+        }
+      ]
+    },
+    "head.chassis.abs": {
+      "units": "deg",
+      "initial": 0,
+      "description": "gaze leads, nod holds visual intention",
+      "segments": [
+        {
+          "start": 0.08,
+          "end": 0.41,
+          "from": 0,
+          "to": -6,
+          "ease": "wind"
+        },
+        {
+          "start": 0.55,
+          "end": 1.23,
+          "from": -6,
+          "to": 8,
+          "ease": "eye"
+        },
+        {
+          "start": 1.59,
+          "end": 2.3,
+          "from": 8,
+          "to": 4,
+          "ease": "glide"
+        },
+        {
+          "start": 2.46,
+          "end": 3.46,
+          "from": 4,
+          "to": -7,
+          "ease": "servo"
+        },
+        {
+          "start": 3.51,
+          "end": 4.21,
+          "from": -7,
+          "to": -4,
+          "ease": "damped"
+        }
+      ]
+    },
+    "head.carriage.section1.stroke": {
+      "units": "u",
+      "initial": 12,
+      "description": "first sleeve retracts into fixed parent after head exit",
+      "segments": [
+        {
+          "start": 1.36,
+          "end": 2.14,
+          "from": 12,
+          "to": 4,
+          "ease": "glide"
+        },
+        {
+          "start": 2.17,
+          "end": 2.52,
+          "from": 4,
+          "to": 5,
+          "ease": "damped"
+        }
+      ]
+    },
+    "head.carriage.section2.stroke": {
+      "units": "u",
+      "initial": 12,
+      "description": "second sleeve lags 230 ms",
+      "segments": [
+        {
+          "start": 1.59,
+          "end": 2.43,
+          "from": 12,
+          "to": 5,
+          "ease": "servo"
+        }
+      ]
+    },
+    "eye.gimbal.aim": {
+      "units": "deg",
+      "initial": 0,
+      "description": "early saccade, small fixation corrections",
+      "segments": [
+        {
+          "start": 0.04,
+          "end": 0.18,
+          "from": 0,
+          "to": 9,
+          "ease": "eye"
+        },
+        {
+          "start": 0.36,
+          "end": 0.51,
+          "from": 9,
+          "to": 5,
+          "ease": "servo"
+        },
+        {
+          "start": 1.17,
+          "end": 1.48,
+          "from": 5,
+          "to": 2,
+          "ease": "eye"
+        },
+        {
+          "start": 2.42,
+          "end": 2.58,
+          "from": 2,
+          "to": 8,
+          "ease": "eye"
+        },
+        {
+          "start": 3.45,
+          "end": 4.05,
+          "from": 8,
+          "to": 0,
+          "ease": "damped"
+        }
+      ]
+    },
+    "eye.brow.angle": {
+      "units": "deg",
+      "initial": 0,
+      "description": "independent slow weight, persistent brow",
+      "segments": [
+        {
+          "start": 0.09,
+          "end": 0.38,
+          "from": 0,
+          "to": -4,
+          "ease": "wind"
+        },
+        {
+          "start": 0.83,
+          "end": 1.63,
+          "from": -4,
+          "to": 8,
+          "ease": "upper"
+        },
+        {
+          "start": 1.73,
+          "end": 2.52,
+          "from": 8,
+          "to": 3,
+          "ease": "servo"
+        },
+        {
+          "start": 3.41,
+          "end": 4.21,
+          "from": 3,
+          "to": 2,
+          "ease": "damped"
+        }
+      ]
+    },
+    "eye.iris.open": {
+      "units": "fraction",
+      "initial": 0.84,
+      "description": "six mechanical leaves follow one aperture cam",
+      "segments": [
+        {
+          "start": 0.19,
+          "end": 0.31,
+          "from": 0.84,
+          "to": 0.62,
+          "ease": "fast"
+        },
+        {
+          "start": 0.34,
+          "end": 0.53,
+          "from": 0.62,
+          "to": 0.91,
+          "ease": "eye"
+        },
+        {
+          "start": 1.4,
+          "end": 1.63,
+          "from": 0.91,
+          "to": 0.77,
+          "ease": "servo"
+        },
+        {
+          "start": 2.46,
+          "end": 2.75,
+          "from": 0.77,
+          "to": 0.92,
+          "ease": "eye"
+        },
+        {
+          "start": 3.69,
+          "end": 4.17,
+          "from": 0.92,
+          "to": 0.82,
+          "ease": "damped"
+        }
+      ]
+    },
+    "rapt.near.femur.abs": {
+      "units": "deg",
+      "initial": 0,
+      "description": "release only above local shoulder 105; heavy headroom",
+      "segments": [
+        {
+          "start": 1.72,
+          "end": 2.42,
+          "from": 0,
+          "to": 60,
+          "ease": "push"
+        },
+        {
+          "start": 2.77,
+          "end": 3.55,
+          "from": 60,
+          "to": 62.6,
+          "ease": "fellow"
+        },
+        {
+          "start": 3.57,
+          "end": 4.18,
+          "from": 62.6,
+          "to": 60,
+          "ease": "damped"
+        }
+      ]
+    },
+    "rapt.far.femur.abs": {
+      "units": "deg",
+      "initial": 0,
+      "description": "late lighter far silhouette, keep near/far identity",
+      "segments": [
+        {
+          "start": 1.84,
+          "end": 2.46,
+          "from": 0,
+          "to": 54,
+          "ease": "carry"
+        },
+        {
+          "start": 2.92,
+          "end": 3.51,
+          "from": 54,
+          "to": 48.3,
+          "ease": "servo"
+        },
+        {
+          "start": 3.61,
+          "end": 4.15,
+          "from": 48.3,
+          "to": 49,
+          "ease": "damped"
+        }
+      ]
+    },
+    "rapt.near.tibia.relative": {
+      "units": "deg",
+      "initial": 170,
+      "description": "serp stays nested until blade clearance. Absolute = femur + this. Angles unwrapped",
+      "segments": [
+        {
+          "start": 2.52,
+          "end": 3.43,
+          "from": 170,
+          "to": 243,
+          "ease": "blade"
+        },
+        {
+          "start": 3.48,
+          "end": 4.18,
+          "from": 243,
+          "to": 240,
+          "ease": "damped"
+        }
+      ]
+    },
+    "rapt.far.tibia.relative": {
+      "units": "deg",
+      "initial": 170,
+      "description": "160 ms blade delay; far tip stays visibly behind near tip and lower",
+      "segments": [
+        {
+          "start": 2.68,
+          "end": 3.55,
+          "from": 170,
+          "to": 240,
+          "ease": "fast"
+        },
+        {
+          "start": 3.59,
+          "end": 4.16,
+          "from": 240,
+          "to": 238,
+          "ease": "damped"
+        }
+      ]
+    },
+    "rapt.near.latch.open": {
+      "units": "deg",
+      "initial": 0,
+      "description": "short latch leads near blade",
+      "segments": [
+        {
+          "start": 2.34,
+          "end": 2.5,
+          "from": 0,
+          "to": 22,
+          "ease": "latch"
+        },
+        {
+          "start": 3.65,
+          "end": 4.12,
+          "from": 22,
+          "to": 7,
+          "ease": "damped"
+        }
+      ]
+    },
+    "rapt.far.latch.open": {
+      "units": "deg",
+      "initial": 0,
+      "description": "later far latch",
+      "segments": [
+        {
+          "start": 2.48,
+          "end": 2.66,
+          "from": 0,
+          "to": 20,
+          "ease": "fast"
+        },
+        {
+          "start": 3.76,
+          "end": 4.17,
+          "from": 20,
+          "to": 7,
+          "ease": "damped"
+        }
+      ]
+    },
+    "walk.rear.far.foot.roll": {
+      "units": "deg",
+      "initial": 0,
+      "description": "same planted heel/toe, distinct stance loading and recovery",
+      "segments": [
+        {
+          "start": 0.1,
+          "end": 0.39,
+          "from": 0,
+          "to": -3.2,
+          "ease": "toe"
+        },
+        {
+          "start": 0.44,
+          "end": 1.05,
+          "from": -3.2,
+          "to": 0,
+          "ease": "damped"
+        },
+        {
+          "start": 2.45,
+          "end": 2.88,
+          "from": 0,
+          "to": 1.7,
+          "ease": "glide"
+        },
+        {
+          "start": 2.91,
+          "end": 3.5,
+          "from": 1.7,
+          "to": 0,
+          "ease": "damped"
+        }
+      ]
+    },
+    "walk.front.far.foot.roll": {
+      "units": "deg",
+      "initial": 0,
+      "description": "same planted heel/toe, distinct stance loading and recovery",
+      "segments": [
+        {
+          "start": 0.21,
+          "end": 0.56,
+          "from": 0,
+          "to": 3.9,
+          "ease": "fellow"
+        },
+        {
+          "start": 0.64,
+          "end": 1.27,
+          "from": 3.9,
+          "to": 0,
+          "ease": "damped"
+        },
+        {
+          "start": 2.72,
+          "end": 3.12,
+          "from": 0,
+          "to": -1.5,
+          "ease": "servo"
+        },
+        {
+          "start": 3.16,
+          "end": 3.83,
+          "from": -1.5,
+          "to": 0,
+          "ease": "damped"
+        }
+      ]
+    },
+    "walk.rear.near.foot.roll": {
+      "units": "deg",
+      "initial": 0,
+      "description": "same planted heel/toe, distinct stance loading and recovery",
+      "segments": [
+        {
+          "start": 0.06,
+          "end": 0.36,
+          "from": 0,
+          "to": -4.6,
+          "ease": "wind"
+        },
+        {
+          "start": 0.57,
+          "end": 1.31,
+          "from": -4.6,
+          "to": 0,
+          "ease": "damped"
+        },
+        {
+          "start": 2.3,
+          "end": 2.83,
+          "from": 0,
+          "to": 2.4,
+          "ease": "carry"
+        },
+        {
+          "start": 2.89,
+          "end": 3.68,
+          "from": 2.4,
+          "to": 0,
+          "ease": "damped"
+        }
+      ]
+    },
+    "walk.front.near.foot.roll": {
+      "units": "deg",
+      "initial": 0,
+      "description": "same planted heel/toe, distinct stance loading and recovery",
+      "segments": [
+        {
+          "start": 0.27,
+          "end": 0.66,
+          "from": 0,
+          "to": 4.2,
+          "ease": "toe"
+        },
+        {
+          "start": 0.7,
+          "end": 1.49,
+          "from": 4.2,
+          "to": 0,
+          "ease": "damped"
+        },
+        {
+          "start": 2.9,
+          "end": 3.39,
+          "from": 0,
+          "to": -2,
+          "ease": "fellow"
+        },
+        {
+          "start": 3.42,
+          "end": 4.08,
+          "from": -2,
+          "to": 0,
+          "ease": "damped"
+        }
+      ]
+    },
+    "head.carriage.sleeve.abs": {
+      "units": "deg",
+      "initial": 0,
+      "description": "Carrier remains in crown. Rotates after head exits, seats along upper thorax.",
+      "segments": [
+        {
+          "start": 1.87,
+          "end": 3.52,
+          "from": 0,
+          "to": 70.5,
+          "ease": "upper"
+        },
+        {
+          "start": 3.58,
+          "end": 4.18,
+          "from": 70.5,
+          "to": 68,
+          "ease": "damped"
+        }
+      ]
+    }
+  },
+  "introProfiles": {
+    "fall.rootY": {
+      "profile": "q^2",
+      "phase": "free drop",
+      "durationHint": 1.05,
+      "contact": "existing real beacon, no skin scale"
+    },
+    "impact.rootY": {
+      "profile": "damped contacts",
+      "phases": [
+        {
+          "seconds": 0.072,
+          "delta": -5,
+          "ease": "fast"
+        },
+        {
+          "seconds": 0.15,
+          "delta": 1.4,
+          "ease": "damped"
+        },
+        {
+          "seconds": 0.24,
+          "delta": 0,
+          "ease": "damped"
+        }
+      ],
+      "shellDelay": 0.044
+    },
+    "legs": {
+      "rear.far": {
+        "door": {
+          "start": 0.05,
+          "duration": 0.26,
+          "ease": "carry"
+        },
+        "femur": {
+          "start": 0.36,
+          "duration": 0.36,
+          "ease": "push"
+        },
+        "tibia": {
+          "start": 0.59,
+          "duration": 0.43,
+          "ease": "glide"
+        },
+        "foot": {
+          "start": 0.99,
+          "duration": 0.21,
+          "ease": "easeContact"
+        }
+      },
+      "front.far": {
+        "door": {
+          "start": 0.16,
+          "duration": 0.275,
+          "ease": "cam"
+        },
+        "femur": {
+          "start": 0.48,
+          "duration": 0.372,
+          "ease": "upper"
+        },
+        "tibia": {
+          "start": 0.72,
+          "duration": 0.446,
+          "ease": "servo"
+        },
+        "foot": {
+          "start": 1.13,
+          "duration": 0.21,
+          "ease": "easeContact"
+        }
+      },
+      "rear.near": {
+        "door": {
+          "start": 0.27,
+          "duration": 0.29000000000000004,
+          "ease": "carry"
+        },
+        "femur": {
+          "start": 0.6,
+          "duration": 0.384,
+          "ease": "push"
+        },
+        "tibia": {
+          "start": 0.85,
+          "duration": 0.46199999999999997,
+          "ease": "glide"
+        },
+        "foot": {
+          "start": 1.27,
+          "duration": 0.21,
+          "ease": "easeContact"
+        }
+      },
+      "front.near": {
+        "door": {
+          "start": 0.38,
+          "duration": 0.305,
+          "ease": "cam"
+        },
+        "femur": {
+          "start": 0.72,
+          "duration": 0.396,
+          "ease": "upper"
+        },
+        "tibia": {
+          "start": 0.98,
+          "duration": 0.478,
+          "ease": "servo"
+        },
+        "foot": {
+          "start": 1.4100000000000001,
+          "duration": 0.21,
+          "ease": "easeContact"
+        }
+      }
+    },
+    "eyeExit": {
+      "hatch": {
+        "start": 0,
+        "duration": 0.29,
+        "ease": "cam"
+      },
+      "carriage1": {
+        "start": 0.31,
+        "duration": 0.36,
+        "ease": "servo"
+      },
+      "carriage2": {
+        "start": 0.43,
+        "duration": 0.46,
+        "ease": "glide"
+      },
+      "headTurn": {
+        "start": 0.33,
+        "duration": 0.27,
+        "ease": "eye"
+      },
+      "brow": {
+        "start": 0.45,
+        "duration": 0.37,
+        "ease": "upper"
+      },
+      "gimbal": {
+        "start": 0.85,
+        "duration": 0.15,
+        "ease": "eye"
+      }
+    }
+  },
+  "idle": {
+    "sampleSeed": 37,
+    "seedAlgorithm": "FNV1a32 UTF-8 of seed + ':' + form + ':' + seedKey, then xorshift32 (13,17,5). Unit sample = unsigned/2^32. Independent draws for phase and dwell.",
+    "oscillatorFormula": "offset + amp * sum(weight_i * sin(2π*t/period_i + seedPhase_i))",
+    "eventFormula": "Dwell times and targets are drawn independently within interval, move with given cubic curve, hold at each end. Head delayed gaze follows same target at own lag/profile. User aim is primary, add micro offsets after clamp. Follower uses the same event targets, own curve and 1.4× movement duration after stated lag.",
+    "blend": "From currently evaluated pose; apply idle offsets without reseeding at command boundaries. Attenuate capsule deltas over first .24s before gate motion, re-enable mantis offsets continuously after K5 with .42s asymmetric ease. Maintain floor contacts and clearance bands.",
+    "capsule": [
+      {
+        "channel": "cradle.rise",
+        "type": "independentOscillators",
+        "amp": 0.84,
+        "periods": [
+          2.73,
+          4.63
+        ],
+        "weights": [
+          0.74,
+          0.26
+        ],
+        "offset": 0,
+        "seedKey": "cradle.rise"
+      },
+      {
+        "channel": "cradle.x",
+        "type": "independentOscillators",
+        "amp": 1.06,
+        "periods": [
+          3.69,
+          5.21
+        ],
+        "weights": [
+          0.72,
+          0.28
+        ],
+        "offset": 0,
+        "seedKey": "cradle.x"
+      },
+      {
+        "channel": "eye.gimbal.aim",
+        "type": "seededEvent",
+        "amplitude": [
+          -8,
+          9
+        ],
+        "dwell": [
+          0.79,
+          1.78
+        ],
+        "movement": [
+          0.084,
+          0.143
+        ],
+        "lag": 0,
+        "seedKey": "eye.gimbal.aim",
+        "profile": "eye"
+      },
+      {
+        "channel": "head.chassis.abs",
+        "type": "laggedFollower",
+        "source": "eye.gimbal.aim",
+        "lag": 0.083,
+        "gain": 0.29,
+        "ease": "upper"
+      },
+      {
+        "channel": "eye.brow.angle",
+        "type": "independentOscillators",
+        "amp": 1.6,
+        "periods": [
+          3.31,
+          5.87
+        ],
+        "weights": [
+          0.71,
+          0.29
+        ],
+        "offset": 0,
+        "seedKey": "eye.brow.angle"
+      },
+      {
+        "channel": "head.carriage.section2.stroke",
+        "type": "independentOscillators",
+        "amp": 0.75,
+        "periods": [
+          1.91,
+          3.71
+        ],
+        "weights": [
+          0.64,
+          0.36
+        ],
+        "offset": -0.75,
+        "seedKey": "head.carriage.section2.stroke"
+      },
+      {
+        "channel": "eye.iris.open",
+        "type": "seededEvent",
+        "amplitude": [
+          -0.13,
+          0.08
+        ],
+        "dwell": [
+          1.53,
+          3.07
+        ],
+        "movement": [
+          0.12,
+          0.23
+        ],
+        "lag": 0,
+        "seedKey": "eye.iris.open",
+        "profile": "eye"
+      },
+      {
+        "channel": "walk.rear.near.foot.roll",
+        "type": "independentOscillators",
+        "amp": 0.84,
+        "periods": [
+          4.81,
+          6.53
+        ],
+        "weights": [
+          0.8,
+          0.2
+        ],
+        "offset": 0,
+        "seedKey": "walk.rear.near.foot.roll"
+      },
+      {
+        "channel": "walk.front.far.foot.roll",
+        "type": "independentOscillators",
+        "amp": 0.57,
+        "periods": [
+          3.17,
+          5.39
+        ],
+        "weights": [
+          0.7,
+          0.3
+        ],
+        "offset": 0,
+        "seedKey": "walk.front.far.foot.roll"
+      }
+    ],
+    "mantis": [
+      {
+        "channel": "cradle.rise",
+        "type": "independentOscillators",
+        "amp": 1.1,
+        "periods": [
+          3.19,
+          5.11
+        ],
+        "weights": [
+          0.73,
+          0.27
+        ],
+        "offset": 0,
+        "seedKey": "cradle.rise"
+      },
+      {
+        "channel": "cradle.x",
+        "type": "independentOscillators",
+        "amp": 1.35,
+        "periods": [
+          4.37,
+          6.61
+        ],
+        "weights": [
+          0.77,
+          0.23
+        ],
+        "offset": 0,
+        "seedKey": "cradle.x"
+      },
+      {
+        "channel": "eye.gimbal.aim",
+        "type": "seededEvent",
+        "amplitude": [
+          -10,
+          11
+        ],
+        "dwell": [
+          0.73,
+          1.67
+        ],
+        "movement": [
+          0.079,
+          0.129
+        ],
+        "lag": 0,
+        "seedKey": "eye.gimbal.aim",
+        "profile": "eye"
+      },
+      {
+        "channel": "head.chassis.abs",
+        "type": "laggedFollower",
+        "source": "eye.gimbal.aim",
+        "lag": 0.096,
+        "gain": 0.33,
+        "ease": "upper"
+      },
+      {
+        "channel": "thorax.lower.abs",
+        "type": "independentOscillators",
+        "amp": 0.68,
+        "periods": [
+          4.07,
+          6.33
+        ],
+        "weights": [
+          0.76,
+          0.24
+        ],
+        "offset": 0,
+        "seedKey": "thorax.lower.abs"
+      },
+      {
+        "channel": "thorax.upper.abs",
+        "type": "independentOscillators",
+        "amp": 1.18,
+        "periods": [
+          3.07,
+          5.41
+        ],
+        "weights": [
+          0.79,
+          0.21
+        ],
+        "offset": 0,
+        "seedKey": "thorax.upper.abs"
+      },
+      {
+        "channel": "rapt.near.femur.abs",
+        "type": "independentOscillators",
+        "amp": 1.36,
+        "periods": [
+          2.79,
+          4.77
+        ],
+        "weights": [
+          0.72,
+          0.28
+        ],
+        "offset": 0,
+        "seedKey": "rapt.near.femur.abs"
+      },
+      {
+        "channel": "rapt.far.femur.abs",
+        "type": "independentOscillators",
+        "amp": 1.07,
+        "periods": [
+          3.67,
+          6.07
+        ],
+        "weights": [
+          0.66,
+          0.34
+        ],
+        "offset": 0,
+        "seedKey": "rapt.far.femur.abs"
+      },
+      {
+        "channel": "rapt.near.tibia.relative",
+        "type": "independentOscillators",
+        "amp": 1.16,
+        "periods": [
+          2.47,
+          4.23
+        ],
+        "weights": [
+          0.77,
+          0.23
+        ],
+        "offset": 0,
+        "seedKey": "rapt.near.tibia.relative"
+      },
+      {
+        "channel": "rapt.far.tibia.relative",
+        "type": "independentOscillators",
+        "amp": 1.24,
+        "periods": [
+          3.53,
+          5.73
+        ],
+        "weights": [
+          0.69,
+          0.31
+        ],
+        "offset": 0,
+        "seedKey": "rapt.far.tibia.relative"
+      },
+      {
+        "channel": "eye.brow.angle",
+        "type": "independentOscillators",
+        "amp": 1.22,
+        "periods": [
+          3.49,
+          6.13
+        ],
+        "weights": [
+          0.78,
+          0.22
+        ],
+        "offset": 0,
+        "seedKey": "eye.brow.angle"
+      },
+      {
+        "channel": "eye.iris.open",
+        "type": "seededEvent",
+        "amplitude": [
+          -0.11,
+          0.075
+        ],
+        "dwell": [
+          1.27,
+          2.93
+        ],
+        "movement": [
+          0.12,
+          0.21
+        ],
+        "lag": 0,
+        "seedKey": "eye.iris.open",
+        "profile": "eye"
+      },
+      {
+        "channel": "head.carriage.section1.stroke",
+        "type": "independentOscillators",
+        "amp": 0.55,
+        "periods": [
+          2.13,
+          4.31
+        ],
+        "weights": [
+          0.68,
+          0.32
+        ],
+        "offset": 0,
+        "seedKey": "head.carriage.section1.stroke"
+      },
+      {
+        "channel": "walk.front.near.foot.roll",
+        "type": "independentOscillators",
+        "amp": 0.78,
+        "periods": [
+          4.83,
+          6.71
+        ],
+        "weights": [
+          0.74,
+          0.26
+        ],
+        "offset": 0,
+        "seedKey": "walk.front.near.foot.roll"
+      },
+      {
+        "channel": "walk.rear.far.foot.roll",
+        "type": "independentOscillators",
+        "amp": 0.61,
+        "periods": [
+          3.83,
+          5.63
+        ],
+        "weights": [
+          0.7,
+          0.3
+        ],
+        "offset": 0,
+        "seedKey": "walk.rear.far.foot.roll"
+      }
+    ]
+  }
+}
