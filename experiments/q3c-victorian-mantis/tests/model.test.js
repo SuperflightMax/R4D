@@ -1,6 +1,7 @@
 import { test } from 'node:test';
 import assert from 'node:assert/strict';
 import { DT, INTRO_DURATION, SceneModel, samplePose, stageAt } from '../src/model.js';
+import { BODY_ORIGIN, FULL_RIG } from '../src/rig.js';
 
 const near = (a, b, tolerance = 1e-7) => assert.ok(Math.abs(a - b) <= tolerance, `${a} != ${b}`);
 const distance = (a, b) => Math.hypot(a.x - b.x, a.y - b.y);
@@ -63,6 +64,28 @@ test('hatches open before feet exit and eye lid opens before the eye emerges', (
   const opening = samplePose(4.5 + .30);
   assert.ok(Math.abs(opening.lid.angle) > 1.2);
   assert.equal(opening.eye.extension, 0);
+});
+
+test('the knees exit the four open lower bays in order before swinging out to the seats', () => {
+  const { bodyOpeningsXYUp, sideRollMagnitude } = FULL_RIG.apertures.walk;
+  const firstExit = new Map();
+  for (let tick = Math.ceil(2.35 / DT); tick < Math.ceil(4.5 / DT); tick++) {
+    const { legs, hatches } = samplePose(tick * DT);
+    for (const [index, leg] of legs.entries()) {
+      const x = leg.hip.x + leg.side * leg.upper * Math.cos(leg.upperAngle);
+      const y = leg.hip.y - BODY_ORIGIN + leg.upper * Math.sin(leg.upperAngle);
+      const [minX, maxX] = bodyOpeningsXYUp[leg.id.split('.')[0]][0];
+      if (!firstExit.has(leg.id) && y >= 0) {
+        assert.ok(x >= minX && x <= maxX, `${leg.id} missed its lower bay`);
+        near(Math.abs(hatches[index].angle), sideRollMagnitude * Math.PI / 180);
+        firstExit.set(leg.id, tick);
+      }
+      if (!firstExit.has(leg.id)) assert.ok(x >= minX && x <= maxX, `${leg.id} appeared above its bay`);
+    }
+  }
+  assert.deepEqual([...firstExit.keys()], ['rear.far', 'front.far', 'rear.near', 'front.near']);
+  const ticks = [...firstExit.values()];
+  assert.ok(ticks.slice(1).every((tick, index) => tick - ticks[index] >= 12));
 });
 
 test('idle moves chassis and eye while ground contacts remain planted; pointer affects the gaze', () => {

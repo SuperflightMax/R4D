@@ -1,5 +1,5 @@
 import fullRig from '../assets/rig/FULL_RIG_V1.json' with { type: 'json' };
-import { FOOT_CONTACTS, INTRO_PROFILES, beatAt, clamp, introProgress, mix, rad } from './motion.js';
+import { FOOT_CONTACTS, INTRO_PROFILES, beatAt, clamp, curveAt, introProgress, mix, rad, windowed } from './motion.js';
 export { TRANSFORM_DURATION, clamp, mix, smooth, windowed } from './motion.js';
 
 export const BODY_ORIGIN = 87;
@@ -10,6 +10,25 @@ export const RELEASE = fullRig.apertures.raptorial;
 export const RIG_PARTS = Object.freeze(fullRig.nodes.map(part => Object.freeze(part)));
 const partSpecs = new Map(RIG_PARTS.map(part => [part.id, part]));
 const BLADE_LENGTH = partSpecs.get('rapt.near.tibia').length;
+
+export function walkoutLift(time) {
+  // Raise the lower bays over the knees during the downward swing, then load the four seated soles.
+  return 69 * windowed(time, .265, .60) - 34 * windowed(time, 1.50, .65);
+}
+
+function stanceMotion(time, motion) {
+  // Retain each drive's authored time and easing. Regear only the cleared end of the chest sweep.
+  const lower = time >= 2.42 ? mix(115.8, motion['thorax.lower.abs'], (115.8 - 95) / (115.8 - 82)) : motion['thorax.lower.abs'];
+  const upper = time >= 2.49 ? mix(64, motion['thorax.upper.abs'], (68 - 64) / (78 - 64)) : motion['thorax.upper.abs'];
+  const spread = 44 * windowed(time, 2.49, 1.09, t => curveAt('upper', t));
+  return {
+    'thorax.lower.abs': lower,
+    'thorax.upper.abs': upper,
+    'rapt.far.femur.abs': motion['rapt.far.femur.abs'] + spread,
+    // The far sickle opens outward on its side of the bent chest.
+    'rapt.far.tibia.relative': 170 - .31 * (motion['rapt.far.tibia.relative'] - 170),
+  };
+}
 
 export const LEG_SPECS = Object.freeze(Object.entries(FOOT_CONTACTS.contactX).map(([id, contact]) => {
   const stem = 'walk.' + id;
@@ -47,12 +66,13 @@ function solveLeg(leg, body, legTime, motion, idle) {
     (distance ** 2 - leg.upper ** 2 - leg.lower ** 2) / (2 * leg.upper * leg.lower), -1, 1,
   ));
   const { femur, tibia, foot } = leg.intro;
-  // Lift the knee inside its bay before extending the tibia toward the floor.
-  const preload = introProgress({ ...femur, duration: tibia.start - femur.start }, legTime);
+  // Folded tibia follows the knee down through the bay. Each shin then rotates
+  // around the exposed hinge before the final IK takes over at its own seat.
+  const sweep = introProgress({ ...femur, duration: .82 }, legTime);
   const extend = introProgress(tibia, legTime);
-  const place = introProgress({ ...foot, start: tibia.start + tibia.duration }, legTime);
-  const upperAngle = mix(mix(-Math.PI, -2.15, preload), upperOpen, place);
-  let lowerAngle = mix(1.08 * extend, lowerOpen, place);
+  const place = introProgress({ ...foot, start: femur.start + .76, duration: .43 }, legTime);
+  const upperAngle = mix(mix(Math.PI, .62, sweep), upperOpen, place);
+  let lowerAngle = upperAngle + mix(Math.PI, lowerOpen - upperOpen, extend);
   if (place < 1) {
     const knee = toWorld({ x: leg.hip.x + leg.side * leg.upper * Math.cos(upperAngle),
       y: leg.hip.y + leg.upper * Math.sin(upperAngle) }, body);
@@ -63,17 +83,18 @@ function solveLeg(leg, body, legTime, motion, idle) {
       lowerAngle = (Math.cos(aimed) >= 0 ? contactAngle : Math.PI - contactAngle) - leg.side * body.rotation;
     }
   }
-  return { ...leg, upperAngle, lowerAngle, footAngle, sole, anchor, shoulderProgress: preload,
+  return { ...leg, upperAngle, lowerAngle, footAngle, sole, anchor, shoulderProgress: sweep,
     kneeProgress: extend, planted: place === 1 };
 }
 
 export function solveRig({ body, legTime, eyeTime, transformTime, regulatorAngle, motion, idle, gaze }) {
+  const stance = stanceMotion(transformTime, motion);
   const overrides = new Map();
   const relative = (id, angle) => overrides.set(id, { rotation: -rad(angle) });
   const absolute = (id, angle) => overrides.set(id, { absolute: -rad(angle) });
   const roll = (id, angle) => overrides.set(id, { roll: rad(angle) * partSpecs.get(id).rollSignScreen });
   const stroke = (id, x) => overrides.set(id, { dx: clamp(x, 0, 12) });
-  const track = id => motion[id] + (idle[id] || 0);
+  const track = id => (stance[id] ?? motion[id]) + (idle[id] || 0);
 
   for (const id of ['shell.rear', 'shell.front', 'bay.rapt.far.door', 'bay.rapt.near.door']) {
     roll(id, track(id + '.open'));
@@ -188,7 +209,7 @@ export function solveRig({ body, legTime, eyeTime, transformTime, regulatorAngle
   });
   const lens = parts['eye.lens'].world;
   return {
-    parts, legs, arms, beat: beatAt(transformTime),
+    parts, legs, arms, stance, beat: beatAt(transformTime),
     eye: { id: 'eye.lens', parent: 'eye.barrel', ...lens, extension: (slide1 + slide2) / 24,
       stroke: slide1 + slide2, gazeX, gazeY, aperture },
     shoulderInBody: toLocal(arms[0].shoulder, root),

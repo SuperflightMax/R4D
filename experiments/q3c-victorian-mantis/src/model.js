@@ -1,4 +1,4 @@
-import { BODY_ORIGIN, LANDING_Y, solveRig } from './rig.js';
+import { BODY_ORIGIN, LANDING_Y, solveRig, walkoutLift } from './rig.js';
 import { TRANSFORM_DURATION, clamp, curveAt, mix, regulatorRotation, sampleIdle, sampleMotion, smooth, windowed } from './motion.js';
 export { LEG_SPECS, TRANSFORM_DURATION, clamp, mix, toWorld } from './rig.js';
 
@@ -44,7 +44,7 @@ export function samplePose(time, { active = true, gaze = { x: 100, y: -180 }, se
   const capsuleIdle = active ? smooth(readyTime / .6) * (1 - windowed(transformTime, 0, .24)) : 0;
   const mantisIdle = windowed(transformTime, TRANSFORM_DURATION - .12, .54, t => curveAt('servo', t));
   const seedPhase = (seed >>> 0) / 4294967296 * Math.PI * 2;
-  const lift = windowed(legTime, 1.70, .45);
+  const lift = walkoutLift(legTime);
   const body = { x: 0, y: entryY, rotation: -.12 };
   if (active && fallTime >= 0) {
     const p = clamp(fallTime / 1.05);
@@ -53,7 +53,7 @@ export function samplePose(time, { active = true, gaze = { x: 100, y: -180 }, se
   }
   if (active && impactTime >= 0) {
     const t = Math.min(impactTime, .9);
-    body.y = LANDING_Y - 19 * Math.exp(-8 * t) * Math.sin(19 * t) ** 2 - 35 * lift;
+    body.y = LANDING_Y - 19 * Math.exp(-8 * t) * Math.sin(19 * t) ** 2 - lift;
     body.rotation = .045 * Math.exp(-9 * t) * Math.sin(24 * t);
   }
   const motion = sampleMotion(transformTime);

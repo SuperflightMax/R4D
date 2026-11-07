@@ -91,7 +91,7 @@ test('the two shoulder gates and roof release first, then the limbs open above t
     const shoulderHeight = -pose.shoulderInBody.y;
     if (lower > -rad(170) + 1e-5 && shoulderHeight < RELEASE.shoulderLocalYForFemur) {
       for (const id of ['shell.rear', 'shell.front', 'bay.rapt.far.door', 'bay.rapt.near.door']) {
-        assert.ok(Math.abs(pose.parts[id].local.roll) >= rad(100), `${id} obstructs exit at ${t}`);
+        assert.ok(Math.abs(pose.parts[id].local.roll) >= rad(104) - 1e-7, `${id} obstructs exit at ${t}`);
       }
     }
     for (const side of ['far', 'near']) {
@@ -104,6 +104,24 @@ test('the two shoulder gates and roof release first, then the limbs open above t
         assert.ok(shoulderHeight >= RELEASE.shoulderLocalYForBlade - .01);
       }
     }
+  }
+});
+
+test('K4 and K5 separate the projected hinges and full blade span above a bent chest', () => {
+  const { xPerZ, yPerZ } = FULL_RIG.coordinates.projection;
+  const blades = FULL_RIG.stageDInterfaces.capture;
+  const firstTick = Math.ceil(KEY_BEATS.find(beat => beat.id === 'K4').time / DT);
+  for (let tick = firstTick; tick <= Math.ceil((TRANSFORM_DURATION + 12) / DT); tick++) {
+    const pose = poseAt(tick * DT);
+    for (const [fraction, gap] of [[0, 48], [.5, 58], [1, 70]]) {
+      const [near, far] = blades.map(({ blade, tip }) => {
+        const world = pose.parts[blade].world;
+        const { x, y } = toWorld({ x: tip[0] * fraction, y: tip[1] * fraction }, world);
+        return toWorld({ x: xPerZ * world.z, y: yPerZ * world.z }, { x, y, rotation: pose.body.rotation });
+      });
+      assert.ok(distance(near, far) > gap, `blade overlap at ${tick * DT}s, ${fraction} of blade`);
+    }
+    assert.ok(Math.abs(pose.parts['thorax.upper'].local.rotation) >= rad(24), 'Chest links collapsed into a column');
   }
 });
 
