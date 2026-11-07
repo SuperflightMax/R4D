@@ -2,6 +2,22 @@
 
 ## Новый заказ Q3C — викторианский богомол, 6 ноября 2026
 
+**7 ноября 2026: `STAGE_C_STARTED`, checkpoint `C2_FULL_RIG_TRANSFORM`.** CTO прямо поручил продолжить утверждённый полный заказ; позднейшей паузы нет, handoff Dot принимается как поручение Max. База HEAD/origin/main/remote — `c91b06a38e7a99f431774cbe01a90160e18edd47`, index перед записью пуст; чужой WIP сохранён. Те же шесть сессий, без staffing и повторного slice/C1. Lead task turn `01a1b352-0b40-7a80-a861-8e0730d3d631`; после push этой записи CTO запускает их production/gate turns.
+
+C2 должен дать runtime-ready полный инвентарь одной конструкции, clean asset/rig handoff и непрерывное красивое capsule→высокий викторианский богомол через K0–K5 без подмены деталей, живой несинхронный idle обеих форм и индивидуальные нелинейные acceleration/delay/overlap/overshoot/settle по звеньям. Готовность C2 ещё не заявлена. Ходьба, мотылёк и охота — Stage D после принятого CTO C2; архитектура должна позволять их добавление.
+
+Новые непересекающиеся write zones внутри `experiments/q3c-victorian-mantis/`:
+
+| Owner | Stage C paths |
+| --- | --- |
+| Concept | `design/concept-stage-c/**` |
+| Asset | `assets/production-v1/**`, `assets/rig/FULL_RIG_V1.json`, `design/asset-handoff/PRODUCTION_RIG_V1.md` |
+| Builder, sole runtime/product writer | `src/**`, `tests/**`, `index.html`, `package.json`, `package-lock.json`, `vite.config.js`; при необходимости `public/**` |
+| TQA, продукт read-only | `qa/technical/stage-c/**` |
+| VQA, продукт read-only | `qa/visual/stage-c/**` |
+
+Изготовление параллельно по зонам; Git owner commits **Lead → Concept → Asset → Builder → TQA → VQA**. QA получают только exact immutable candidate после Builder commit/push. Ближайший материальный результат — полный part/pivot inventory и первые clean части рискованной цепи/люка для живой стыковки, ориентир **60–90 минут активной работы**. Первый полный C2 candidate — предварительно **4–8 часов активного критического пути**, review **45–90 минут**, затем переоценка по фактам без лимита коррекций. Повтор без прогресса своевременно поднимается CTO для предупреждения Max. [Состояние/сессии](../experiments/q3c-victorian-mantis/STATE.md), [подход](../experiments/q3c-victorian-mantis/PRODUCTION_PLAN.md). Опубликованный WIP/route/root, Q3/Q3B сохраняются; дальнейшей публикации сейчас не поручено.
+
 Макс просмотрел опубликованную [Q3B](https://superflight.space/review/r4d/q3b-transforming-crab/) и оценил её как менее впечатляющую, чем [исходный Q3](https://superflight.space/review/r4d/q3-other-anatomy/). Это **отрицательная продуктовая оценка**, не отмена факта технического выполнения Q3B и не поручение менять её исходники. Прямо поручен новый опыт Q3C: маячок → падающая на него капсула → раскрытие лап и глаза → ходячая капсула → большой викторианский механический богомол → механический мотылёк появляется в случайном месте, богомол ловит его, мотылёк рассыпается в пыль. Строго закреплены история/образ/качество, без экономии на художественном результате и без отдельного этапа выбора концепта.
 
 **`PUBLISHED_FIRST_WORKING_SLICE` / `DELIVERY_VERIFIED`, 7 ноября 2026.** В Review опубликованы [Q3C: landing и три концепт-листа](https://superflight.space/review/r4d/q3c-victorian-mantis/) и [интерактивный первый срез](https://superflight.space/review/r4d/q3c-victorian-mantis/slice/). Product/art candidate — `4a26f1cb789a4b41d09e7b7c9ac1905680d965b4`. Два блокера прежнего `c79af101` исправлены sole-writer Builder в C1; targeted Technical QA `7a90848d35335ade54fd4b9b010c07816268c05f` и Visual QA `ad849e99222ee109d32e465a86ff9113f2f58a61` — PASS. После GO CTO Release Engineer выполнил switch в 01:21:12 Europe/Kiev. [Release report](../experiments/q3c-victorian-mantis/RELEASE_SLICE_01.md) доставлен в `b32595791ef6d75200403cf8262af3a7dbb6770a`: 41/41 HTTPS checks локально и с сервера, публичный browser smoke desktop и двух mobile viewport — PASS; прежние routes/контент и чужой WIP сохранены.

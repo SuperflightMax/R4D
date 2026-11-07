@@ -6,7 +6,21 @@
 
 Единственный канон обязательств — [заказ Q3C, редакция 2](../../orders/animation/Q3C-victorian-mantis.md), [передача CTO](../../work/requests/Q3C_CTO_HANDOFF.md). Подтверждённая входная версия: `cf74ad2ca64fe738de327ae50641b42085b4d460`; исходная передача `ab7cfda6`, обязательные уточнения `3c5c2e7b` и `cf74ad2c` учтены. Эта запись хранит факты исполнения, не заменяет карточку.
 
-**`PUBLISHED_FIRST_WORKING_SLICE` / `DELIVERY_VERIFIED`.** Первый WIP-пакет опубликован после C1 и двух независимых targeted PASS на product/art candidate `4a26f1cb789a4b41d09e7b7c9ac1905680d965b4`. TQ-01 и VQ-01 закрыты именно на этой версии. CTO дал GO штатному Release Engineer; завершённый [release report](RELEASE_SLICE_01.md) доставлен в `b32595791ef6d75200403cf8262af3a7dbb6770a`. **Это публичный первый рабочий срез, не полный Q3C и не финальная CTO acceptance заказа.** Ходьба, полный богомол, мотылёк, захват/частицы и чистовой runtime-арт остаются NOT INCLUDED; основной заказ открыт и продолжается. Повторное подтверждение Dot/идеи/плана не требуется.
+## Текущий этап: Stage C — C2_FULL_RIG_TRANSFORM
+
+**`STAGE_C_STARTED`**, 7 ноября 2026. Прямое продолжение утверждённого заказа от CTO; более поздней паузы нет, handoff Dot считается поручением Max. База: `c91b06a38e7a99f431774cbe01a90160e18edd47` = HEAD/origin/main/remote перед записью. Index пуст; чужие 2 tracked changes и 174 untracked entries сохранены. По подтверждению CTO все шесть Q3C-сессий idle, параллельной работы нет. Staffing не меняется. Lead task turn: `01a1b352-0b40-7a80-a861-8e0730d3d631`; после push этой записи CTO выдаёт существующим сессиям Stage C turns. Продуктовый C2 ещё не получен.
+
+**Production checkpoint `C2_FULL_RIG_TRANSFORM`:** runtime-ready полный инвентарь одной конструкции, clean asset/rig handoff и живая непрерывная capsule→высокий викторианский механический богомол через красивые K0–K5. Те же детали, глаз, корпус, опоры и крупные хватательные цепи сохраняют физическую связь и размеры; реальные люки/посадки и перекрытия работают в промежуточных позах. Обе формы имеют живой несинхронный idle. У звеньев индивидуальные нелинейные acceleration/delay/overlap/overshoot/settle, проверенные в обычном темпе; одна общая ease не заменяет эту работу. Художественно слабый результат не принимается как ограничение.
+
+Ходьба, мотылёк и охота относятся к Stage D после принятого CTO C2. Rig/state должны позволять их дальнейшую реализацию; сами поведения D сейчас не добавляются. Новый концепт-конкурс и внешний gate для Max не вводятся. Опубликованный WIP/source pin `4a26f1cb` и его live route/root сохраняются; slice/C1 повторно не запускаются, Q3/Q3B не меняются.
+
+Работа идёт параллельно только в непересекающихся owner zones из таблицы ниже. **Git owner commits: Lead → Concept → Asset → Builder → TQA → VQA**, каждый после push предыдущего, с пустым index и exact staged list. Это порядок интеграции, не запрет параллельного изготовления материалов. Builder — единственный runtime/product writer; художники передают фиксированные материалы через Lead. **QA получают только exact immutable candidate после Builder commit/push**; до него допустима подготовка gate, но не продуктовый PASS. QA не исправляют продукт.
+
+Ближайший материальный результат: согласованный полный список постоянных частей/pivots и первые clean части рискованного узла «сложенная хватательная цепь → реальный люк → раскрытие», совместимые с грудью и тем же глазом, для ранней живой стыковки Builder. Ориентир — **60–90 минут активной работы**. Первый полный C2 candidate — предварительно **4–8 часов активной работы по критическому пути** при параллельных ролях, первый независимый review — ещё **45–90 минут**; коррекции переоцениваются по фактам после первой стыковки. Это оценка Lead, не срок приёмки или лимит итераций. Повтор без нового понимания/улучшения либо расход оценки без материального продвижения немедленно поднимается CTO, чтобы вовремя предупредить Max о риске бесконечного цикла.
+
+## Предыдущий завершённый WIP
+
+**`PUBLISHED_FIRST_WORKING_SLICE` / `DELIVERY_VERIFIED`.** Первый WIP-пакет опубликован после C1 и двух независимых targeted PASS на product/art candidate `4a26f1cb789a4b41d09e7b7c9ac1905680d965b4`. TQ-01 и VQ-01 закрыты именно на этой версии. CTO дал GO штатному Release Engineer; завершённый [release report](RELEASE_SLICE_01.md) доставлен в `b32595791ef6d75200403cf8262af3a7dbb6770a`. **Это публичный первый рабочий срез, не полный Q3C и не финальная CTO acceptance заказа.** Основной заказ продолжается через Stage C выше; повторное подтверждение Dot/идеи/плана не требуется.
 
 ## Подтверждённая публикация
 
@@ -38,13 +52,13 @@
 | Роль / staff_id | Существующая сессия | Единственная область записи |
 | --- | --- | --- |
 | Lead `lead-r4d-q3c-01` | `01a1b2db-b4d2-7730-bdd6-62b1fef5fe77` | Этот `STATE.md`, `PRODUCTION_PLAN.md`, только раздел Q3C в `docs/PROJECT_STATE.md`; координация без product source |
-| Concept Artist / art direction `concept-artist-r4d-q3c-01` | `01a1b2dd-d6a8-70b1-b4b8-ac2a27324379` | `design/concept/**` |
-| Asset Artist `asset-artist-r4d-q3c-01` | `01a1b2dd-d683-7972-8a57-187e2046e43d` | `assets/**`, `design/asset-handoff/**` |
-| Sole-writer Builder `builder-r4d-q3c-01` | `01a1b2dd-d69a-78a3-95f0-2484933f9f21` | `src/**`, `public/**`, `tests/**`, `index.html`, `package*.json`, `vite.config.js`, локальный `.gitignore` |
-| Technical QA `technical-qa-r4d-q3c-01` | `01a1b2dd-d68e-7c11-ab2e-986d21056de2` | `qa/technical/**`; продукт только read-only |
-| Независимый Visual QA `visual-qa-r4d-q3c-01` | `01a1b2dd-d67f-7d20-9f48-eb8919e4fbf1` | `qa/visual/**`; продукт только read-only |
+| Concept Artist / art direction `concept-artist-r4d-q3c-01` | `01a1b2dd-d6a8-70b1-b4b8-ac2a27324379` | `design/concept-stage-c/**` |
+| Asset Artist `asset-artist-r4d-q3c-01` | `01a1b2dd-d683-7972-8a57-187e2046e43d` | `assets/production-v1/**`, `assets/rig/FULL_RIG_V1.json`, `design/asset-handoff/PRODUCTION_RIG_V1.md` |
+| Sole-writer Builder `builder-r4d-q3c-01` | `01a1b2dd-d69a-78a3-95f0-2484933f9f21` | `src/**`, `tests/**`, `index.html`, `package.json`, `package-lock.json`, `vite.config.js`; при необходимости `public/**` |
+| Technical QA `technical-qa-r4d-q3c-01` | `01a1b2dd-d68e-7c11-ab2e-986d21056de2` | `qa/technical/stage-c/**`; продукт только read-only |
+| Независимый Visual QA `visual-qa-r4d-q3c-01` | `01a1b2dd-d67f-7d20-9f48-eb8919e4fbf1` | `qa/visual/stage-c/**`; продукт только read-only |
 
-Все относительные области таблицы находятся в `experiments/q3c-victorian-mantis/`. Области синхронизированы с текущими пакетами CTO: Concept сам перенёс готовый пакет в `design/concept/`, Asset — в `design/asset-handoff/`. Основная команда остаётся новой выделенной Q3C-командой; прежняя Q3/Q3B команда не назначена. Штатный выпуск по отдельной выдаче CTO выполнил существующий `release-engineer-r4d-q5a-01`, session `01a17232-a156-7e00-95e0-a32decb7d71c`: Git-область этого выпуска — `RELEASE_SLICE_01.md`, product/art он не менял. Передача прав на файл возможна только явно через Lead; параллельных писателей одной области нет. QA пишут только свои непересекающиеся области; продукт остаётся read-only. Первый product/design chain выполнен по exact спискам ниже. QA report/evidence commits выполнены последовательно по отдельной выдаче CTO, исключительно в своих QA-путях; их browser evidence не входит в публичный payload.
+Все относительные области таблицы находятся в `experiments/q3c-victorian-mantis/` и задают **текущие Stage C owner zones**. Старые concept/asset/QA пакеты сохранены как история, новые материалы пишутся в выделенные зоны. Основная команда и её сессии не меняются; второго runtime writer нет. Передача прав на файл возможна только явно через Lead. Штатный WIP-выпуск завершил `release-engineer-r4d-q5a-01`, session `01a17232-a156-7e00-95e0-a32decb7d71c`; нового release-поручения Stage C сейчас нет.
 
 ## Доставленные версии и независимые отчёты
 
@@ -78,7 +92,9 @@ Visual QA просмотрел три concept PNG, desktop 1440×1000 и touch e
 
 Обе QA-роли независимо перепроверили exact `4a26f1cb`: Technical — 19/19 desktop и 18/18 touch checks, 8/8 tests/build; Visual — чистое waiting/restart на двух mobile viewport, непрерывный вход сверху и desktop sanity без нового popping. TQ-01 и VQ-01 закрыты в отдельных follow-up отчётах выше; прежние отчёты не переписаны. После этих verdict CTO дал GO, Release Engineer выполнил live-switch и delivery checks. Полный регресс будущих стадий и полная художественная приёмка этим не заменяются.
 
-## Поставка первого публичного WIP: точные списки и Git-слоты
+## Архив завершённой WIP-поставки: прежние списки и Git-слоты
+
+Следующие списки относятся к уже завершённому WIP. Текущие owner zones и порядок Stage C заданы выше; старые слоты не запускаются повторно.
 
 Сверка 7 ноября 2026, около 00:32 Europe/Kiev: `git fetch origin main` успешен; `HEAD = origin/main = 189580f27d74a316e05eee0527f8c41b5769e20e`, index пуст. Чужой WIP остаётся на месте. CTO уже выдал текущие delivery turns Concept, Builder и обеим QA-ролям; Lead не создаёт повторных turns.
 
@@ -163,6 +179,6 @@ assets/rig/CONSTRUCTION_GEOMETRY.v1.json
 
 Оценка CTO: art anchor вместе с запускаемым slice — через 60–90 минут активной работы; после первого live pass переоценить полный объём. Ожидание доставки, tool failures и активную работу различать. Искусственного лимита художественных коррекций нет. Слабый результат не закрывается как known limitation.
 
-Узкая поставка первого WIP завершена. **Полный заказ Q3C открыт:** прежний план A–E, художественные обязательства, capsule→mantis, ходьба и охота сохраняются в утверждённых границах. Этот выпуск не закрывает их и не заменяет будущую приёмку полной сцены.
+Узкая поставка первого WIP завершена. **Полный заказ Q3C открыт; текущая работа — Stage C / `C2_FULL_RIG_TRANSFORM`.** После push этой записи CTO запускает production/gate turns существующей команды. Следующий материальный результат и оценка заданы в начале записи; достижение C2 ещё не заявлено. Stage D начинается после принятого C2.
 
 Живую межчатовую передачу текущей поставки выполняет CTO; Lead ведёт согласование в этом состоянии и сверяет фактические turns/commits. Этот маршрут уже работает; повторных кадровых/производственных заданий ради передачи не создавать.
