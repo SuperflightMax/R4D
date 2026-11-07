@@ -1,111 +1,76 @@
-import { Container, Graphics } from 'pixi.js';
-import { clamp } from './model.js';
+import { Assets, Container, Graphics, Matrix, Sprite } from 'pixi.js';
+import { clamp } from './motion.js';
+import { FULL_RIG, RIG_PARTS } from './rig.js';
 
-const C = { brass: 0xc6a269, edge: 0xf1d4a0, dark: 0x172124, blue: 0x263e43, copper: 0x95704a, glass: 0xf6bf5e, ink: 0x0e171b };
-const line = { color: C.brass, width: 2 };
+const svgUrls = import.meta.glob('../assets/production-v1/parts/*.svg', { eager: true, query: '?url', import: 'default' });
+const { xPerZ, yPerZ } = FULL_RIG.coordinates.projection;
+const byId = new Map(RIG_PARTS.map(part => [part.id, part]));
+const brass = 0xc6a269;
+const edge = 0xf1d4a0;
 
-function segment(length, width, color) {
-  const g = new Graphics();
-  g.poly([0, -width * .46, length * .65, -width * .35, length, -width * .15, length, width * .15, length * .65, width * .35, 0, width * .46])
-    .fill(color).stroke(line);
-  g.moveTo(7, -width * .15).lineTo(length - 9, -width * .09).stroke({ color: C.edge, width: 1, alpha: .55 });
-  g.circle(0, 0, width * .53).fill(C.copper).stroke(line);
-  g.circle(0, 0, width * .22).fill(C.dark).stroke({ color: C.edge, width: 1 });
-  return g;
+export async function loadProductionSkins() {
+  const needed = new Set();
+  for (const part of RIG_PARTS) {
+    if (!part.draw) continue;
+    needed.add(part.draw.asset);
+    if (part.draw.backAsset) needed.add(part.draw.backAsset);
+  }
+  return new Map(await Promise.all([...needed].map(async name => {
+    const art = FULL_RIG.assets[name];
+    const url = art && svgUrls['../assets/' + art.path];
+    if (!url) throw new Error('Нет детали production-v1: ' + name);
+    return [name, await Assets.load(url)];
+  })));
 }
 
-function pivot(parent, x = 0, y = 0) {
-  const node = new Container();
-  node.position.set(x, y);
-  parent.addChild(node);
+function sprite(name, offset, textures) {
+  const art = FULL_RIG.assets[name];
+  const node = new Sprite({ texture: textures.get(name), label: name });
+  node.anchor.set(...art.spriteAnchor);
+  node.width = art.viewBox[2];
+  node.height = art.viewBox[3];
+  node.position.set(...offset);
   return node;
 }
 
 export class SceneView {
-  constructor(app, specs) {
-    this.app = app;
+  constructor(app, textures) {
     this.world = new Container();
     app.stage.addChild(this.world);
     this.floor = new Graphics();
-    this.world.addChild(this.floor);
     this.beacon = new Graphics();
-    this.world.addChild(this.beacon);
     this.shadow = new Graphics();
-    this.world.addChild(this.shadow);
-    this.body = new Container();
-    this.body.label = 'capsule-chassis';
-    this.world.addChild(this.body);
-    // This graph is never swapped by state: Artist will skin these fixed parts.
-    const recess = new Graphics().ellipse(0, 0, 115, 82).fill(C.ink).stroke({ color: C.copper, width: 3 });
-    this.body.addChild(recess);
-    this.legs = new Map();
-    for (const spec of specs) {
-      const mount = pivot(this.body, spec.side * spec.mount, 8);
-      mount.label = spec.id;
-      mount.scale.x = spec.side;
-      const upper = pivot(mount);
-      upper.addChild(segment(spec.upper, spec.id.startsWith('front') ? 21 : 15, C.blue));
-      const knee = pivot(upper, spec.upper, 0);
-      knee.addChild(segment(spec.lower, spec.id.startsWith('front') ? 16 : 12, C.copper));
-      const foot = pivot(knee, spec.lower, 0);
-      foot.addChild(new Graphics().poly([-9, -5, 11, -5, 15, 3, -13, 3]).fill(C.brass).stroke({ color: C.edge, width: 1 }));
-      this.legs.set(spec.id, { mount, upper, knee, foot });
+    this.world.addChild(this.floor, this.beacon, this.shadow);
+    this.pieces = new Map();
+    this.matrix = new Matrix();
+    for (const id of FULL_RIG.drawOrder) {
+      const { draw } = byId.get(id);
+      const node = new Container({ label: id });
+      this.world.addChild(node);
+      const front = draw && sprite(draw.asset, draw.offset, textures);
+      const back = draw?.backAsset ? sprite(draw.backAsset, draw.offset, textures) : null;
+      if (front) node.addChild(front);
+      if (back) node.addChild(back);
+      this.pieces.set(id, { node, front, back });
     }
-    this.rail = new Graphics().roundRect(62, -44, 28, 54, 6).fill(C.copper).stroke(line);
-    this.body.addChild(this.rail);
-    this.carriage = pivot(this.body, 76, -18);
-    this.carriage.label = 'head-carriage';
-    this.carriage.addChild(new Graphics().roundRect(-8, 10, 16, 70, 4).fill(0xcbb88c).stroke({ color: C.copper, width: 2 }));
-    this.head = pivot(this.carriage);
-    this.head.label = 'optical-head';
-    this.head.addChild(new Graphics().ellipse(0, 0, 28, 25).fill(C.copper).stroke({ color: C.edge, width: 3 })
-      .ellipse(0, 0, 21, 21).fill(C.dark).stroke({ color: C.brass, width: 2 })
-      .ellipse(0, 0, 16, 17).fill(C.glass).stroke({ color: 0xf4e0a7, width: 1 }));
-    this.pupil = new Graphics().ellipse(0, 0, 5, 11).fill(C.ink)
-      .ellipse(-4, -6, 4, 6).fill({ color: 0xffedb6, alpha: .85 });
-    this.head.addChild(this.pupil);
-    // Armor is assembled around physical bays, rather than clipping the entire rig.
-    const armor = new Graphics();
-    armor.moveTo(-111, 17).bezierCurveTo(-122, -45, -27, -102, 48, -68)
-      .lineTo(48, -40).lineTo(105, -40).quadraticCurveTo(117, -17, 108, 17)
-      .closePath().fill(C.blue).stroke(line);
-    armor.moveTo(-94, -5).bezierCurveTo(-91, -42, -33, -75, 27, -65).stroke({ color: C.edge, width: 1, alpha: .6 });
-    for (const [x, y] of [[-87, -9], [-57, -43], [-8, -63], [31, -57], [98, -22]]) armor.circle(x, y, 2.4).fill(C.brass);
-    this.body.addChild(armor);
-    const keel = new Graphics().roundRect(-23, -46, 46, 122, 12).fill(C.blue).stroke(line)
-      .roundRect(-14, -28, 28, 62, 6).fill(C.dark).stroke({ color: C.copper, width: 1 });
-    keel.circle(0, 48, 12).fill(C.copper).stroke(line).circle(0, 48, 5).fill(C.dark);
-    this.body.addChild(keel);
-    this.doors = new Map();
-    for (const side of [-1, 1]) {
-      const hinge = pivot(this.body, side * 63, 16);
-      const plate = new Graphics().poly([-38, 0, 34, 0, 28, 32, 10, 55, -14, 64, -38, 58])
-        .fill(C.blue).stroke({ color: C.brass, width: 3 });
-      plate.moveTo(-29, 12).lineTo(20, 12).lineTo(5, 45).lineTo(-26, 49).stroke({ color: C.edge, width: 1, alpha: .65 });
-      plate.circle(0, 1, 8).fill(C.copper).stroke(line).circle(0, 1, 3).fill(C.dark);
-      plate.scale.x = side;
-      hinge.addChild(plate);
-      this.doors.set(side, hinge);
-    }
-    this.lid = pivot(this.body, 48, -68);
-    this.lid.addChild(new Graphics().poly([0, 0, 25, -5, 49, 16, 59, 28, 0, 28]).fill(C.blue).stroke(line));
     this.contact = new Graphics();
     this.world.addChild(this.contact);
     this.camera = { scale: 1, x: 0, y: 0 };
+    this.skinInfo = Object.freeze({ id: FULL_RIG.id, nodes: this.pieces.size, textures: textures.size });
   }
 
   resize(width, height) {
     if (width === this.lastWidth && height === this.lastHeight) return;
     this.lastWidth = width;
     this.lastHeight = height;
-    const scale = Math.min(width / 580, height / 520, 1.35);
-    this.camera = { scale, x: width * .5, y: height * .75 };
+    const scale = Math.min(width / 460, height / 466, 1.52);
+    this.camera = { scale, x: width * .47, y: height * .79 };
     this.world.position.set(this.camera.x, this.camera.y);
     this.world.scale.set(scale);
     const span = width / scale;
-    this.floor.clear().moveTo(-span, 4).lineTo(span, 4).stroke({ color: 0x879185, width: 1, alpha: .35 });
-    for (let x = -Math.ceil(span / 50) * 50; x <= span; x += 50) {
-      this.floor.moveTo(x, 7).lineTo(x - 50, 130).stroke({ color: 0x566362, width: 1, alpha: .08 });
+    this.floor.clear().moveTo(-span, 4).lineTo(span, 4).stroke({ color: 0x879185, width: 1, alpha: .25 });
+    for (let x = -Math.ceil(span / 52) * 52; x <= span; x += 52) {
+      this.floor.moveTo(x, 4).lineTo(x - 44, 124).stroke({ color: 0x566362, width: 1, alpha: .1 });
     }
   }
 
@@ -115,43 +80,74 @@ export class SceneView {
 
   render(snapshot) {
     const { pose, time, phase } = snapshot;
-    const { body, legs, hatches, lid, eye } = pose;
-    this.body.position.set(body.x, body.y);
-    this.body.rotation = body.rotation;
-    for (const leg of legs) {
-      const nodes = this.legs.get(leg.id);
-      nodes.upper.rotation = leg.upperAngle;
-      nodes.knee.rotation = leg.kneeAngle;
-      nodes.foot.rotation = -leg.upperAngle - leg.kneeAngle - leg.side * body.rotation;
-    }
-    for (const hatch of hatches) this.doors.get(hatch.side).rotation = hatch.angle;
-    this.lid.rotation = lid.angle;
-    this.carriage.position.set(eye.x, eye.y);
-    this.head.rotation = eye.rotation;
-    this.pupil.position.set(eye.gazeX * 5, eye.gazeY * 3);
-    const signal = snapshot.active ? 1 : .25;
-    const pulse = .5 + .5 * Math.sin(time * 7);
-    this.beacon.clear().ellipse(0, 1, 34, 7).fill(C.dark).stroke({ color: C.brass, width: 1.5 })
-      .roundRect(-12, -7, 24, 8, 3).fill(C.copper).stroke({ color: C.edge, width: 1 })
-      .ellipse(0, -6, 7, 3).fill({ color: 0xffd582, alpha: .55 + signal * .4 });
-    this.beacon.ellipse(0, -5, 23 + 6 * pulse, 9 + pulse * 3).fill({ color: C.glass, alpha: .045 + .08 * signal });
-    if (snapshot.active && time < .4) {
-      this.beacon.ellipse(0, 0, 34 + time * 110, 7 + time * 24).stroke({ color: C.glass, width: 2, alpha: 1 - time / .4 });
-    }
-    const closeness = clamp(1 + body.y / 780);
-    this.shadow.clear().ellipse(0, 5, 60 + closeness * 50, 6 + closeness * 5).fill({ color: 0x000000, alpha: .32 * closeness });
-    this.contact.clear();
-    if (phase === 'impact') {
-      const t = pose.phase.local;
-      const opacity = clamp(1 - t / .6);
-      this.contact.ellipse(0, 1, 28 + t * 240, 4 + t * 16).stroke({ color: C.edge, width: 2, alpha: opacity * .6 });
-      for (let i = 0; i < 10; i++) {
-        const side = i % 2 ? 1 : -1;
-        const speed = 40 + i * 15;
-        const x = side * (18 + speed * t);
-        const y = -Math.max(0, (38 + i * 7) * t - 110 * t * t);
-        this.contact.circle(x, y, 1.5 + i % 2).fill({ color: C.brass, alpha: opacity });
+    const bodyC = Math.cos(pose.body.rotation);
+    const bodyS = Math.sin(pose.body.rotation);
+    for (const [id, piece] of this.pieces) {
+      const { local, world } = pose.parts[id];
+      const c = Math.cos(world.rotation), s = Math.sin(world.rotation);
+      const dx = xPerZ * Math.sin(local.roll);
+      const dy = Math.cos(local.roll) + yPerZ * Math.sin(local.roll);
+      const zx = xPerZ * world.z, zy = yPerZ * world.z;
+      this.matrix.set(c, s, c * dx - s * dy, s * dx + c * dy,
+        world.x + bodyC * zx - bodyS * zy, world.y + bodyS * zx + bodyC * zy);
+      piece.node.setFromMatrix(this.matrix);
+      if (piece.back) {
+        // The determinant crosses zero at the edge of the same rigid plate.
+        // Both physical surfaces are loaded once for the entire sequence.
+        piece.front.visible = dy >= 0;
+        piece.back.visible = dy < 0;
       }
+    }
+    this.renderFloorEffects(pose, time, phase, snapshot.active);
+  }
+
+  trace(pose) {
+    const parts = Object.create(null);
+    for (const [id, { node, front, back }] of this.pieces) {
+      node.updateLocalTransform();
+      const { a, b, c, d, tx, ty } = node.localTransform;
+      const { parent, world } = pose.parts[id];
+      const cos = Math.cos(world.rotation), sin = Math.sin(world.rotation);
+      // Nodes are direct children of the camera container in depth order.
+      // Their local Pixi matrices are the rendered transforms before the camera.
+      parts[id] = {
+        token: String(node.uid), parent, asset: front?.label ?? `rig:${id}`,
+        surface: (back?.visible ? back : front)?.label ?? null,
+        matrix: [a, b, c, d, tx, ty],
+        physicalMatrix: [cos, sin, -sin, cos, world.x, world.y],
+      };
+    }
+    return { camera: { ...this.camera }, parts };
+  }
+
+  renderFloorEffects(pose, time, phase, active) {
+    const signal = active ? 1 : .25;
+    const pulse = .5 + .5 * Math.sin(time * 7);
+    this.beacon.clear().ellipse(0, 1, 34, 7).fill(0x172124).stroke({ color: brass, width: 1.5 })
+      .roundRect(-12, -7, 24, 8, 3).fill(0x95704a).stroke({ color: edge, width: 1 })
+      .ellipse(0, -6, 7, 3).fill({ color: 0xffd582, alpha: .55 + signal * .4 });
+    this.beacon.ellipse(0, -5, 23 + 6 * pulse, 9 + pulse * 3).fill({ color: 0xf6bf5e, alpha: .045 + .08 * signal });
+    if (phase === 'beacon') {
+      this.beacon.ellipse(0, 0, 34 + time * 110, 7 + time * 24).stroke({ color: 0xf6bf5e, width: 2, alpha: 1 - time / .4 });
+    }
+    const closeness = active ? clamp(1 + pose.body.y / 780) : 0;
+    this.shadow.clear().ellipse(pose.body.x, 5, 57 + closeness * 40, 7 + closeness * 6)
+      .fill({ color: 0x000000, alpha: .31 * closeness });
+    for (const leg of pose.legs) {
+      if (!leg.planted) continue;
+      const z = leg.world.ankle.z;
+      this.shadow.ellipse(leg.world.ankle.x + xPerZ * z, yPerZ * z + 1, 10, 2.7)
+        .fill({ color: 0x000000, alpha: .34 });
+    }
+    this.contact.clear();
+    if (phase !== 'impact') return;
+    const t = pose.phase.local;
+    const opacity = clamp(1 - t / .6);
+    this.contact.ellipse(0, 1, 28 + t * 240, 4 + t * 16).stroke({ color: edge, width: 2, alpha: opacity * .6 });
+    for (let i = 0; i < 10; i++) {
+      const x = (i % 2 ? 1 : -1) * (18 + (40 + i * 15) * t);
+      const y = -Math.max(0, (38 + i * 7) * t - 110 * t * t);
+      this.contact.circle(x, y, 1.5 + i % 2).fill({ color: brass, alpha: opacity });
     }
   }
 }

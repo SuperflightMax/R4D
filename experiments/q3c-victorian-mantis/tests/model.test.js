@@ -38,15 +38,21 @@ test('fall accelerates; first contact is directly on the beacon, rigid body neve
 });
 
 test('links retain length throughout deployment; knees and feet remain above the floor', () => {
+  let previous = samplePose(0);
   for (let t = 0; t <= 10; t += DT) {
     const pose = samplePose(t);
     for (const leg of pose.legs) {
       near(distance(leg.world.hip, leg.world.knee), leg.upper);
-      near(distance(leg.world.knee, leg.world.foot), leg.lower);
+      near(distance(leg.world.knee, leg.world.ankle), leg.lower);
       assert.ok(leg.world.knee.y <= .02, `${leg.id} knee penetrates floor at ${t}: ${leg.world.knee.y}`);
       assert.ok(leg.world.foot.y <= .02, `${leg.id} penetrates floor at ${t}: ${leg.world.foot.y}`);
       if (leg.planted) near(leg.world.foot.y, 0);
+      if (pose.phase.name === 'legs') {
+        const priorAnkle = previous.legs.find(prior => prior.id === leg.id).world.ankle;
+        assert.ok(distance(priorAnkle, leg.world.ankle) < 9, `${leg.id} ankle jumped at ${t}`);
+      }
     }
+    previous = pose;
   }
 });
 
@@ -63,7 +69,9 @@ test('idle moves chassis and eye while ground contacts remain planted; pointer a
   const a = samplePose(7), b = samplePose(9);
   assert.notEqual(a.body.y, b.body.y);
   assert.notEqual(a.eye.y, b.eye.y);
-  for (let i = 0; i < a.legs.length; i++) near(distance(a.legs[i].world.foot, b.legs[i].world.foot), 0);
+  for (const pose of [a, b]) {
+    for (const leg of pose.legs) near(distance(leg.world.foot, leg.anchor), 0);
+  }
   const scene = new SceneModel(41);
   scene.seek(8);
   scene.setPointer(-200, -200);

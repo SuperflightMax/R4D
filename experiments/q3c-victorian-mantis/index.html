@@ -11,13 +11,16 @@
     <main class="scene-shell">
       <header>
         <div><span class="eyebrow">R4D · Q3C</span><h1>Пробуждение механизма</h1></div>
-        <button id="restart" type="button">Заново</button>
+        <div class="controls">
+          <button id="unfold" type="button" aria-keyshortcuts="E" hidden>Раскрыться</button>
+          <button id="restart" type="button">Заново</button>
+        </div>
       </header>
       <section id="stage" tabindex="0" aria-label="Интерактивная сцена: активируйте маячок любым действием">
         <p id="hint">Коснитесь сцены или нажмите любую клавишу</p>
-        <p class="construction">Внутренняя проверка · геометрия конструкции, без финального арта</p>
+        <p class="construction">Q3C · рабочая сцена</p>
       </section>
-      <footer><span id="status" role="status">Маячок ожидает сигнала</span><span class="edition">Этюд 01 / Посылка</span></footer>
+      <footer><span id="status" role="status">Маячок ожидает сигнала</span><span class="edition">Этюд 02 / Раскрытие</span></footer>
       <p id="error" hidden></p>
     </main>
     <script type="module" src="/src/main.js"></script>
