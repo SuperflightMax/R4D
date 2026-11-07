@@ -1,0 +1,297 @@
+{
+  "sha": "af9a1baa7122fc5d17d0783581a564be2d32f187",
+  "buildSha256": "f8352474c7abeceff220088087618ecb86672f8c1c903bbc284a151d800b5cd9",
+  "rawSha256": "2bdd68fc02ef4de22ca77984f1a2b9ba87a2e82efbfafc0efc978ef1b7456970",
+  "hz": 120,
+  "limits": {
+    "screenLimit": 6,
+    "angularLimit": 0.25
+  },
+  "rollout": {
+    "throughTick": 493,
+    "steps": 20678,
+    "maxScreen": {
+      "id": "walk.front.far.tibia",
+      "beforeTick": 386,
+      "tick": 387,
+      "screen": 5.165165271526119,
+      "angle": 0.08198457618523075
+    },
+    "maxAngle": {
+      "id": "walk.front.near.femur",
+      "beforeTick": 372,
+      "tick": 373,
+      "screen": 0,
+      "angle": 0.19676145563260916
+    },
+    "findings": []
+  },
+  "beforeFirstContact": {
+    "throughTick": 449,
+    "steps": 16366,
+    "maxScreen": {
+      "id": "walk.front.far.tibia",
+      "beforeTick": 386,
+      "tick": 387,
+      "screen": 5.165165271526119,
+      "angle": 0.08198457618523075
+    },
+    "maxAngle": {
+      "id": "walk.front.near.femur",
+      "beforeTick": 372,
+      "tick": 373,
+      "screen": 0,
+      "angle": 0.19676145563260916
+    },
+    "findings": []
+  },
+  "fullIntro": {
+    "throughTick": 690,
+    "steps": 39984,
+    "maxScreen": {
+      "id": "walk.front.far.tibia",
+      "beforeTick": 386,
+      "tick": 387,
+      "screen": 5.165165271526119,
+      "angle": 0.08198457618523075
+    },
+    "maxAngle": {
+      "id": "walk.front.near.femur",
+      "beforeTick": 372,
+      "tick": 373,
+      "screen": 0,
+      "angle": 0.19676145563260916
+    },
+    "findings": []
+  },
+  "formerPeaks": [
+    {
+      "baseline": {
+        "id": "walk.rear.far.tibia",
+        "beforeTick": 353,
+        "tick": 354,
+        "screen": 7.321120500268988,
+        "angle": 0.10411447345648675
+      },
+      "candidate": {
+        "id": "walk.rear.far.tibia",
+        "beforeTick": 353,
+        "tick": 354,
+        "screen": 5.005928816597703,
+        "angle": 0.0715329989742056
+      }
+    },
+    {
+      "baseline": {
+        "id": "walk.rear.far.tibia",
+        "beforeTick": 372,
+        "tick": 373,
+        "screen": 2.4684986469807693,
+        "angle": 0.2775465720511524
+      },
+      "candidate": {
+        "id": "walk.rear.far.tibia",
+        "beforeTick": 372,
+        "tick": 373,
+        "screen": 0.726663731757954,
+        "angle": 0.08445171013919248
+      }
+    }
+  ],
+  "contact": {
+    "soles": {
+      "rear.far": {
+        "targetX": -111,
+        "alignTick": 428,
+        "firstContact": {
+          "tick": 449,
+          "x": -111.00000000000003,
+          "y": 0,
+          "projectedClearance": 0,
+          "floor": 0,
+          "seated": true,
+          "anchorX": -111
+        },
+        "seatTick": 449,
+        "finalErrorAtContact": 2.842170943040401e-14,
+        "drift": 8.526512829121202e-14,
+        "floorDeviation": 4.263256414560601e-14,
+        "floorPenetration": 2.842170943040401e-14,
+        "replant": 0,
+        "movingClearance": 6.459330968510809,
+        "movingProjectedClearance": 5.825128473711337
+      },
+      "front.far": {
+        "targetX": 99,
+        "alignTick": 442,
+        "firstContact": {
+          "tick": 463,
+          "x": 98.99999999999999,
+          "y": -0.005187259007570333,
+          "projectedClearance": 0.005187259007570333,
+          "floor": -0.005187259007570333,
+          "seated": false,
+          "anchorX": 99
+        },
+        "seatTick": 464,
+        "finalErrorAtContact": 1.4210854715202004e-14,
+        "drift": 4.263256414560601e-14,
+        "floorDeviation": 0.005187259007570333,
+        "floorPenetration": 0,
+        "replant": 0,
+        "movingClearance": 6.459290953255808,
+        "movingProjectedClearance": 5.825189416118084
+      },
+      "rear.near": {
+        "targetX": -138,
+        "alignTick": 457,
+        "firstContact": {
+          "tick": 478,
+          "x": -138.00000000000003,
+          "y": -1.4210854715202004e-14,
+          "projectedClearance": 1.4210854715202004e-14,
+          "floor": -1.4210854715202004e-14,
+          "seated": true,
+          "anchorX": -138
+        },
+        "seatTick": 478,
+        "finalErrorAtContact": 2.842170943040401e-14,
+        "drift": 8.526512829121202e-14,
+        "floorDeviation": 2.842170943040401e-14,
+        "floorPenetration": 2.842170943040401e-14,
+        "replant": 0,
+        "movingClearance": 5.649350322191126,
+        "movingProjectedClearance": 6.266969953620112
+      },
+      "front.near": {
+        "targetX": 126,
+        "alignTick": 471,
+        "firstContact": {
+          "tick": 492,
+          "x": 126,
+          "y": -9.821121693676105e-11,
+          "projectedClearance": 9.821121693676105e-11,
+          "floor": -9.821121693676105e-11,
+          "seated": false,
+          "anchorX": 126
+        },
+        "seatTick": 493,
+        "finalErrorAtContact": 0,
+        "drift": 5.684341886080802e-14,
+        "floorDeviation": 9.821121693676105e-11,
+        "floorPenetration": 0,
+        "replant": 0,
+        "movingClearance": 5.647938121795331,
+        "movingProjectedClearance": 6.2674706383029575
+      }
+    },
+    "firstAllInContactTick": 492,
+    "supportTick": 493,
+    "nominalPolygonXZ": [
+      [
+        -111,
+        -26.5
+      ],
+      [
+        99,
+        -17.5
+      ],
+      [
+        126,
+        26.5
+      ],
+      [
+        -138,
+        17.5
+      ]
+    ],
+    "polygonArea": 10428,
+    "containsRoot": true,
+    "dynamicDepth": 0,
+    "maxLiftBeforeSupport": 0.013736652344718436,
+    "loadOverToleranceTick": 500,
+    "loadDriveTick": 500,
+    "lostSupport": 0,
+    "findings": []
+  },
+  "boundaries": [
+    {
+      "id": "rear.far.contact",
+      "now": 449,
+      "before": 449,
+      "equal": true
+    },
+    {
+      "id": "rear.far.seated",
+      "now": 449,
+      "before": 449,
+      "equal": true
+    },
+    {
+      "id": "front.far.contact",
+      "now": 463,
+      "before": 463,
+      "equal": true
+    },
+    {
+      "id": "front.far.seated",
+      "now": 464,
+      "before": 464,
+      "equal": true
+    },
+    {
+      "id": "rear.near.contact",
+      "now": 478,
+      "before": 478,
+      "equal": true
+    },
+    {
+      "id": "rear.near.seated",
+      "now": 478,
+      "before": 478,
+      "equal": true
+    },
+    {
+      "id": "front.near.contact",
+      "now": 492,
+      "before": 492,
+      "equal": true
+    },
+    {
+      "id": "front.near.seated",
+      "now": 493,
+      "before": 493,
+      "equal": true
+    },
+    {
+      "id": "firstAllInContactTick",
+      "now": 492,
+      "before": 492,
+      "equal": true
+    },
+    {
+      "id": "supportTick",
+      "now": 493,
+      "before": 493,
+      "equal": true
+    },
+    {
+      "id": "loadDriveTick",
+      "now": 500,
+      "before": 500,
+      "equal": true
+    },
+    {
+      "id": "loadOverToleranceTick",
+      "now": 500,
+      "before": 500,
+      "equal": true
+    }
+  ],
+  "control": {
+    "sha": "bffca72375cee40e8cd96bb19e47b60f7b95e5d9",
+    "rawSha256": "cccc859ffdfdcb5ad2d7f580b1d275ee06b1f558736739c06071f0e96dcc0690",
+    "buildSha256": "01e5ee0fc3bbc0e6e259c58ae01a9d397965bef308cba0bad07b93da8f0802c3"
+  },
+  "failures": []
+}
