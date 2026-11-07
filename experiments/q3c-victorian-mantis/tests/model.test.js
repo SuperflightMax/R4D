@@ -93,6 +93,29 @@ test('the knees exit the four open lower bays in order before swinging out to th
   assert.ok(ticks.slice(1).every((tick, index) => tick - ticks[index] >= 12));
 });
 
+test('intro projection and physical turns stay within the per-tick budget with margin', () => {
+  const { xPerZ, yPerZ } = FULL_RIG.coordinates.projection;
+  const projected = ({ world }, body) => {
+    const c = Math.cos(body.rotation), s = Math.sin(body.rotation);
+    const depth = world.z + (world.depth ?? 0);
+    return { x: world.x + (c * xPerZ - s * yPerZ) * depth, y: world.y + (s * xPerZ + c * yPerZ) * depth };
+  };
+  let previous = samplePose(282 * DT);
+  for (let tick = 283; tick <= Math.round(INTRO_DURATION / DT); tick++) {
+    const pose = samplePose(tick * DT);
+    for (const [id, part] of Object.entries(pose.parts)) {
+      const before = previous.parts[id];
+      const step = distance(projected(part, pose.body), projected(before, previous.body));
+      const rotation = part.world.rotation - before.world.rotation;
+      const tilt = (part.world.tilt ?? 0) - (before.world.tilt ?? 0);
+      const turn = 2 * Math.acos(Math.min(1, Math.abs(Math.cos(rotation / 2) * Math.cos(tilt / 2))));
+      assert.ok(step < 5.6 && distance(part.world, before.world) < 6, `${id} moved too far at tick ${tick}`);
+      assert.ok(turn < .23, `${id} turned too far at tick ${tick}`);
+    }
+    previous = pose;
+  }
+});
+
 test('each sole reaches its seat before ground contact and remains pinned while the frame takes load', () => {
   const contactTolerance = .01;
   const driftTolerance = .01;
@@ -126,7 +149,8 @@ test('each sole reaches its seat before ground contact and remains pinned while 
     if (supportTick === undefined) assert.ok(LANDING_Y - pose.body.y <= .02, `chassis lifted before support at tick ${tick}`);
   }
   assert.equal(firstContacts.size, 4);
-  assert.ok(liftTick > supportTick, 'chassis must take load after four soles are seated');
+  assert.equal(supportTick, 493);
+  assert.equal(liftTick, 500);
 });
 
 test('idle moves chassis and eye while ground contacts remain planted; pointer affects the gaze', () => {

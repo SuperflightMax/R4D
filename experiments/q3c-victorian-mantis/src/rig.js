@@ -14,6 +14,36 @@ const WALK_ALIGN = .86;
 const WALK_LOWER = .17;
 const WALK_CLEARANCE = 9;
 
+// Wall-clock seconds and matching path seconds from each femur's release.
+// Spend more time across the steep part of the lower-bay turn, then regain
+// time in the shallow approach. Both clocks meet before the vertical drop.
+const WALK_SWEEP_TIMING = [
+  [0, 0], [.009, .042], [.097, .112], [.146, .169], [.344, .315],
+  [.406, .370], [.429, .386], [.463, .397], [.484, .413], [.542, .460],
+  [.623, .556], [.693, .691], [.728, .741], [.835, .826], [WALK_ALIGN, WALK_ALIGN],
+];
+const WALK_SWEEP_PACES = WALK_SWEEP_TIMING.slice(1).map(([at, path], i) => {
+  const [before, beforePath] = WALK_SWEEP_TIMING[i];
+  return (path - beforePath) / (at - before);
+});
+
+function walkSweepTime(time, start) {
+  const elapsed = time - start;
+  if (elapsed <= 0 || elapsed >= WALK_ALIGN) return time;
+  const i = WALK_SWEEP_TIMING.findIndex(([at]) => at > elapsed) - 1;
+  const [from, fromPath] = WALK_SWEEP_TIMING[i];
+  const [to, toPath] = WALK_SWEEP_TIMING[i + 1];
+  const duration = to - from;
+  const travel = toPath - fromPath;
+  const pace = WALK_SWEEP_PACES[i];
+  const entry = 2 / (1 / (WALK_SWEEP_PACES[i - 1] ?? pace) + 1 / pace);
+  const exit = 2 / (1 / pace + 1 / (WALK_SWEEP_PACES[i + 1] ?? pace));
+  const t = (elapsed - from) / duration;
+  // A monotone Hermite segment matches the shared pace at each timing mark.
+  return start + mix(fromPath, toPath, t) + t * (1 - t) *
+    ((1 - t) * (duration * entry - travel) + t * (travel - duration * exit));
+}
+
 function stanceMotion(time, motion) {
   // Retain each drive's authored time and easing. Regear only the cleared end of the chest sweep.
   const lower = time >= 2.42 ? mix(115.8, motion['thorax.lower.abs'], (115.8 - 95) / (115.8 - 82)) : motion['thorax.lower.abs'];
@@ -75,9 +105,10 @@ function solveLeg(leg, body, legTime, motion, idle) {
   const lowerOpen = upperOpen + Math.acos(clamp(
     (distance ** 2 - leg.upper ** 2 - leg.lower ** 2) / (2 * leg.upper * leg.lower), -1, 1,
   ));
-  const sweep = introProgress({ ...femur, duration: .66 }, legTime);
-  const extend = introProgress(tibia, legTime);
-  const align = introProgress({ ...foot, start: femur.start + .34, duration: WALK_ALIGN - .34 }, legTime);
+  const sweepTime = walkSweepTime(legTime, femur.start);
+  const sweep = introProgress({ ...femur, duration: .66 }, sweepTime);
+  const extend = introProgress(tibia, sweepTime);
+  const align = introProgress({ ...foot, start: femur.start + .34, duration: WALK_ALIGN - .34 }, sweepTime);
   const upperAngle = mix(mix(Math.PI, -.35, sweep), upperOpen, align);
   const lowerAngle = upperAngle + mix(Math.PI, lowerOpen - upperOpen, Math.max(extend, align));
 
