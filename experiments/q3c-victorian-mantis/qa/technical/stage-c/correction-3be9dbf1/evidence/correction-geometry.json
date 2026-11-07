@@ -1,0 +1,149 @@
+{
+  "sha": "3be9dbf11e7a07a2678c3be161e54fd24aa7f893",
+  "buildSha256": "91ddd4bb5c36b5797b9f18b3b9b37513f11f8e40d1d78f1e3e73d21ce097926c",
+  "intro": {
+    "sha256": "9611d946be906e7abc989d8a2b89436dd6ccbbdd2f075bf66e4913481e453d38",
+    "samples": 409,
+    "stableNodes": 98,
+    "stats": {
+      "rear.far": {
+        "lengthError": 0,
+        "floorPenetration": 3.552713678800501e-14,
+        "plantedGap": 7.246142549764706e-14,
+        "packedBayMargin": 3.9999999999999982,
+        "maxJointStep": 3.7808197639926844,
+        "maxAngleStep": 0.07908718456184614,
+        "firstContactTick": 400,
+        "firstSeatTick": 469,
+        "exit": {
+          "tick": 347,
+          "seconds": 2.8916666666666666,
+          "x": -10.520799833048567,
+          "y": 1.5970541007381984,
+          "margin": 7.520799833048567,
+          "opening": 104.00000000000001
+        }
+      },
+      "front.far": {
+        "lengthError": 0,
+        "floorPenetration": 4.973799150320701e-14,
+        "plantedGap": 6.355287432313019e-14,
+        "packedBayMargin": 4.000000000000005,
+        "maxJointStep": 4.166416340998738,
+        "maxAngleStep": 0.07411465399226257,
+        "firstContactTick": 419,
+        "firstSeatTick": 483,
+        "exit": {
+          "tick": 361,
+          "seconds": 3.0083333333333333,
+          "x": 10.092392483560218,
+          "y": 0.27319625741859005,
+          "margin": 7.092392483560218,
+          "opening": 104.00000000000001
+        }
+      },
+      "rear.near": {
+        "lengthError": 0,
+        "floorPenetration": 5.684341886080802e-14,
+        "plantedGap": 5.859285502108464e-14,
+        "packedBayMargin": 3.9999999999999893,
+        "maxJointStep": 4.0999738947467,
+        "maxAngleStep": 0.0773349380540167,
+        "firstContactTick": 427,
+        "firstSeatTick": 497,
+        "exit": {
+          "tick": 376,
+          "seconds": 3.1333333333333333,
+          "x": -10.676329809051277,
+          "y": 2.0559618508478623,
+          "margin": 7.676329809051277,
+          "opening": 104.00000000000001
+        }
+      },
+      "front.near": {
+        "lengthError": 0,
+        "floorPenetration": 4.973799150320701e-14,
+        "plantedGap": 6.355287432313019e-14,
+        "packedBayMargin": 4.000000000000005,
+        "maxJointStep": 4.661081856981857,
+        "maxAngleStep": 0.07746818200768257,
+        "firstContactTick": 443,
+        "firstSeatTick": 512,
+        "exit": {
+          "tick": 390,
+          "seconds": 3.25,
+          "x": 10.19750827702944,
+          "y": 0.6067238175876354,
+          "margin": 7.19750827702944,
+          "opening": 104.00000000000001
+        }
+      }
+    },
+    "max": {
+      "partStep": 4.661081856981857,
+      "projectedStep": 4.661081856981857,
+      "angleStep": 0.07908718456184614,
+      "pistonPinGap": 7.32410687763558e-15,
+      "pistonRangeViolation": 0
+    }
+  },
+  "separation": [
+    {
+      "tag": "seed42-a",
+      "samples": 1739,
+      "firstTick": 2651,
+      "lastTick": 4389,
+      "transitionSha256": "c4143f5acbbb7079c99e801eb064ba6b530120f8aa1da5f27ce760d48b19790d",
+      "idleSha256": "c741f3c741448146f58f77768faf55916829137b3247849e57f24118b1c423ab",
+      "minHinge": 50.93994405973555,
+      "minMiddle": 96.91643247966968,
+      "minTip": 143.025850833283,
+      "minBladeAxisGap": 50.93994405973555,
+      "minUpperRelativeDeg": 25.330629587595322,
+      "maxBladePivotError": 0,
+      "K5": {
+        "tick": 2787,
+        "stance": {
+          "thorax.lower.abs": 95,
+          "thorax.upper.abs": 68,
+          "rapt.far.femur.abs": 93,
+          "rapt.far.tibia.relative": 148.92000000000002
+        },
+        "hinge": 75.3313524131519,
+        "middle": 117.90383568012196,
+        "tip": 160.49282426184996,
+        "axisGap": 75.3313524131519,
+        "bend": 27.02890423713165
+      }
+    },
+    {
+      "tag": "seed42-b",
+      "samples": 1739,
+      "firstTick": 2651,
+      "lastTick": 4389,
+      "transitionSha256": "babd891d3d2488b574d0bd7263d124b099b3372af46ceaf968ffe0344c5b6874",
+      "idleSha256": "d25b72d7f3e36d9c94f4196e7a0d575389cf30f5d3e3af158c2f33946b591f3e",
+      "minHinge": 50.93994405973555,
+      "minMiddle": 96.91643247966968,
+      "minTip": 143.025850833283,
+      "minBladeAxisGap": 50.93994405973555,
+      "minUpperRelativeDeg": 25.330629587595322,
+      "maxBladePivotError": 0,
+      "K5": {
+        "tick": 2787,
+        "stance": {
+          "thorax.lower.abs": 95,
+          "thorax.upper.abs": 68,
+          "rapt.far.femur.abs": 93,
+          "rapt.far.tibia.relative": 148.92000000000002
+        },
+        "hinge": 75.3313524131519,
+        "middle": 117.90383568012196,
+        "tip": 160.49282426184996,
+        "axisGap": 75.3313524131519,
+        "bend": 27.02890423713165
+      }
+    }
+  ],
+  "findings": []
+}

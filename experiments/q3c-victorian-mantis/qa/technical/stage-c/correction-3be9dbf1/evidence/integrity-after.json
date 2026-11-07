@@ -1,0 +1,163 @@
+{
+  "candidate": "3be9dbf11e7a07a2678c3be161e54fd24aa7f893",
+  "baseline": "be62b16b0253208493e5d546e0f9d158342a9250",
+  "baselinePinSha256": "fe561c795e1f4ccb47b7ad202873000aef068d0dd7190713a8c349a7d1b6e7a4",
+  "baselineBuildSha256": "d51cc6dd6d6f00b5203c3ce428fab4907af463054c8b9537b06c17054f43619e",
+  "pinSha256": "89f974c1e97a29ca25adca8e8d74889649d41a6f4d49ccbde4e43ff7624be735",
+  "verifiedInputs": 86,
+  "sharedInputBlobs": 80,
+  "changedInputs": [
+    {
+      "path": "experiments/q3c-victorian-mantis/src/model.js",
+      "oldBlob": "25b596053b141a89bf02b18b97dcde4dc11adb22",
+      "newBlob": "a4946f23abe118e7d68cbc7ccb7e2e17543b525e",
+      "oldSha256": "ab453a71e57654d38d879852492222abba6dbd43163236ccde2269b80be0f467",
+      "newSha256": "c653a2368af6da17daa484155ae7c715c8735fe544367a272dbababa3d29e6b3"
+    },
+    {
+      "path": "experiments/q3c-victorian-mantis/src/rig.js",
+      "oldBlob": "1907022c774cb72f75a7071088a50f296ce590fc",
+      "newBlob": "3c7be8f7d95187e73c100cd4e4553827e5376fee",
+      "oldSha256": "44be689bd4a15054592b55394356f13244f77e0ae6f90ee709b7f32baa99d1c6",
+      "newSha256": "888a8ed8c02a0cc71add6b056cf56ae32ee32631e6412cc85380f8f1b9eaaaad"
+    },
+    {
+      "path": "experiments/q3c-victorian-mantis/tests/QA_HOOKS.md",
+      "oldBlob": "6805e74078e21b7bbc82b50e464e05c4248d384e",
+      "newBlob": "f9c0fb7443b11ace0109075a73fb1352815ffc54",
+      "oldSha256": "2059edae0eaa7cbe7d534554b800b9f2cb1ae06cfd21399c893933583047b812",
+      "newSha256": "1b502c3eb78c59e6c84bb01d3a69b5a636fe0604c32d2bb701cad4548be0b032"
+    },
+    {
+      "path": "experiments/q3c-victorian-mantis/tests/c2-rig.test.js",
+      "oldBlob": "e9975fd310bc30b400b80cbd9cfef7da5124f4ef",
+      "newBlob": "324893abea0289003b3150c574d01bcf67b9e405",
+      "oldSha256": "e7d1bc695c52fca51a7e9cc54804246763d7c61fdae021df52ffc1d03d2ccc5a",
+      "newSha256": "bfe6e9027246c542e829e3db0925dcc397b05bb82bdb990016945e4ab618ad53"
+    },
+    {
+      "path": "experiments/q3c-victorian-mantis/tests/c2-smoke.js",
+      "oldBlob": "7479630a798ea1038bee8416ae8009624ab54231",
+      "newBlob": "c3f171d2c8524edae98cbfc6e7ea8a5aeb11d813",
+      "oldSha256": "7a25bf2e83b7e29a3adafba3a6266810c6e202a239df12b4c8d1b88464042301",
+      "newSha256": "a88b4758f32d35f346e3366522506ee9c6ac3e4b4d0be2730142eedb7d145000"
+    },
+    {
+      "path": "experiments/q3c-victorian-mantis/tests/model.test.js",
+      "oldBlob": "c34e4e3d91a883bd139fa97d122643747a1e7b41",
+      "newBlob": "2bf2b29c740231e7cea2113a4deff32d5f3998c5",
+      "oldSha256": "b918c4f4788de9e7076a8881b7658810709e81c885d5b0cb572f6d49d7a0db63",
+      "newSha256": "59bc9e3d511183b892f5310109005f8e96e47f43728449e708310ce903257a01"
+    }
+  ],
+  "buildSha256": "91ddd4bb5c36b5797b9f18b3b9b37513f11f8e40d1d78f1e3e73d21ce097926c",
+  "verifiedBuildFiles": 87,
+  "buildDelta": {
+    "same": 85,
+    "changed": [
+      "index.html"
+    ],
+    "added": [
+      "assets\\index-B7GabxtC.js"
+    ],
+    "removed": [
+      "assets\\index-DrQuQWKH.js"
+    ]
+  },
+  "trackedProductDelta": [],
+  "trackedLegacyEvidenceDelta": [],
+  "live": [
+    {
+      "case": "desktop",
+      "viewport": [
+        1440,
+        1000
+      ],
+      "reduced": false,
+      "tokens": 98,
+      "supports": 4,
+      "runtimeErrors": 0,
+      "capsuleIdleTicks": 1503,
+      "mantisIdleTicks": 1507
+    },
+    {
+      "case": "keyboard",
+      "viewport": [
+        1440,
+        1000
+      ],
+      "reduced": false,
+      "tokens": 98,
+      "supports": 4,
+      "runtimeErrors": 0,
+      "capsuleIdleTicks": 124,
+      "mantisIdleTicks": 129
+    },
+    {
+      "case": "touch390",
+      "viewport": [
+        390,
+        844
+      ],
+      "reduced": false,
+      "tokens": 98,
+      "supports": 4,
+      "runtimeErrors": 0,
+      "capsuleIdleTicks": 150,
+      "mantisIdleTicks": 195
+    },
+    {
+      "case": "touch360",
+      "viewport": [
+        360,
+        732
+      ],
+      "reduced": false,
+      "tokens": 98,
+      "supports": 4,
+      "runtimeErrors": 0,
+      "capsuleIdleTicks": 150,
+      "mantisIdleTicks": 152
+    },
+    {
+      "case": "reduced-desktop",
+      "viewport": [
+        1440,
+        1000
+      ],
+      "reduced": true,
+      "tokens": 98,
+      "supports": 4,
+      "runtimeErrors": 0,
+      "capsuleIdleTicks": 89,
+      "mantisIdleTicks": 90
+    },
+    {
+      "case": "reduced390",
+      "viewport": [
+        390,
+        844
+      ],
+      "reduced": true,
+      "tokens": 98,
+      "supports": 4,
+      "runtimeErrors": 0,
+      "capsuleIdleTicks": 87,
+      "mantisIdleTicks": 90
+    },
+    {
+      "case": "reduced360",
+      "viewport": [
+        360,
+        732
+      ],
+      "reduced": true,
+      "tokens": 98,
+      "supports": 4,
+      "runtimeErrors": 0,
+      "capsuleIdleTicks": 89,
+      "mantisIdleTicks": 127
+    }
+  ],
+  "previewPortClosed": 4207
+}
