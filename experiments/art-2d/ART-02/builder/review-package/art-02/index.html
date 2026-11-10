@@ -1,0 +1,69 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>ART-02 · Фрагмент Jungle</title>
+  <link rel="icon" href="data:,">
+  <link rel="stylesheet" href="./viewer.css">
+  <script src="./pixi.js"></script>
+  <script type="module" src="./viewer.js"></script>
+</head>
+<body>
+  <main>
+    <header>
+      <a id="back" href="../" hidden>← Оба опыта</a>
+      <p class="kicker">R4D / ART-02</p>
+      <h1>Резной змей и монстера</h1>
+      <p class="note">Промежуточный фрагмент, не уровень</p>
+      <p>Кроп 354×320 px, масштаб 1:1 · <span id="version"></span></p>
+    </header>
+    <section class="controls" aria-label="Управление просмотром">
+      <label>Подложка
+        <select id="backdrop">
+          <option value="checker">Контрастная</option>
+          <option value="white">Белая</option>
+          <option value="black">Чёрная</option>
+        </select>
+      </label>
+      <label><input id="overlay" type="checkbox" disabled> Наложить исходник (50%)</label>
+      <label><input id="eye" type="checkbox" disabled> Глаз после правки</label>
+    </section>
+    <p id="status" role="status">Читаем карту сборки…</p>
+    <nav class="panel-jumps" aria-label="Перейти к колонке">
+      <button type="button" data-panel="0">Исходник</button>
+      <button type="button" data-panel="1">02-P</button>
+      <button type="button" data-panel="2">02-R</button>
+    </nav>
+    <section class="viewport" aria-label="Сравнение в исходном масштабе">
+      <div class="comparison">
+        <h2>Исходник</h2>
+        <h2>02-P <span>Сохранение пикселей</span></h2>
+        <h2>02-R <span>Воссоздание частей</span></h2>
+        <div id="scene" aria-label="Исходник и пересборки"></div>
+        <p id="source-info">Оригинал 01-jungle.jpg<br>Границы [48, 912, 402, 1232)</p>
+        <div id="method-p"></div>
+        <div id="method-r"></div>
+      </div>
+    </section>
+    <section class="evidence" aria-labelledby="sheets-title">
+      <h2 id="sheets-title">Листы сравнения</h2>
+      <p>Нажмите на лист, чтобы открыть полный файл.</p>
+      <div class="sheets">
+        <figure>
+          <a href="./artwork/evidence/comparison-1to1.png" target="_blank" rel="noopener"><img src="./artwork/evidence/comparison-1to1.png" alt="Сравнение пересборок в масштабе 1:1" loading="lazy"></a>
+          <figcaption>Исходник и пересборки 1:1. Первый 02-P показан для сравнения с коррекцией.</figcaption>
+        </figure>
+        <figure>
+          <a href="./artwork/evidence/bronze-detail-4x.png" target="_blank" rel="noopener"><img src="./artwork/evidence/bronze-detail-4x.png" alt="Кольцо глаза до и после правки, 4×" loading="lazy"></a>
+          <figcaption>Кольцо глаза до и после правки, 4×.</figcaption>
+        </figure>
+        <figure>
+          <a href="./artwork/evidence/alpha-boards-1to1.png" target="_blank" rel="noopener"><img src="./artwork/evidence/alpha-boards-1to1.png" alt="Прозрачность краёв на трёх подложках" loading="lazy"></a>
+          <figcaption>Края листа на белой, чёрной и контрастной подложках.</figcaption>
+        </figure>
+      </div>
+    </section>
+  </main>
+</body>
+</html>

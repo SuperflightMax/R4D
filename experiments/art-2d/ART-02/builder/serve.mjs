@@ -5,6 +5,9 @@ import { fileURLToPath } from 'node:url';
 
 const here = fileURLToPath(new URL('.', import.meta.url));
 const artwork = resolve(here, '../artwork');
+const reviewOnly = process.argv.includes('--review');
+const review = reviewOnly && JSON.parse(await readFile(resolve(here, 'review-package.allowlist.json'), 'utf8'));
+const reviewFiles = review && new Set(review.files.map(({ path }) => path));
 const routes = new Map([
   ['/', 'index.html'],
   ['/viewer.js', 'viewer.js'],
@@ -17,6 +20,7 @@ const mime = {
   '.js': 'text/javascript; charset=utf-8',
   '.css': 'text/css; charset=utf-8',
   '.json': 'application/json',
+  '.txt': 'text/plain; charset=utf-8',
   '.png': 'image/png',
   '.jpg': 'image/jpeg',
   '.jpeg': 'image/jpeg',
@@ -26,9 +30,13 @@ const mime = {
 const server = createServer(async (request, response) => {
   try {
     const pathname = decodeURIComponent(new URL(request.url, 'http://127.0.0.1').pathname);
-    const route = routes.get(pathname);
+    const route = !reviewOnly && routes.get(pathname);
     let file = route && resolve(here, route);
-    if (pathname.startsWith('/artwork/')) {
+    if (reviewOnly && pathname.startsWith(review.route)) {
+      const relative = pathname.slice(review.route.length);
+      const name = relative.endsWith('/') || !relative ? relative + 'index.html' : relative;
+      if (reviewFiles.has(name)) file = resolve(here, 'review-package', name);
+    } else if (!reviewOnly && pathname.startsWith('/artwork/')) {
       const asset = resolve(artwork, pathname.slice('/artwork/'.length));
       if (asset.startsWith(artwork + sep) && /(?:\.(png|jpe?g|webp)|[\\/]manifest\.json)$/i.test(asset)) {
         file = asset;
@@ -50,8 +58,8 @@ const server = createServer(async (request, response) => {
   }
 });
 
-const port = Number(process.argv[2] ?? 4182);
+const port = Number(process.argv.slice(2).find((arg) => arg !== '--review') ?? 4182);
 if (!Number.isInteger(port) || port < 0 || port > 65535) throw new Error('Укажите номер порта');
 server.listen(port, '127.0.0.1', () => {
-  console.log(`ART-02: http://127.0.0.1:${server.address().port}/`);
+  console.log(`ART-02: http://127.0.0.1:${server.address().port}${review?.route || '/'}`);
 });

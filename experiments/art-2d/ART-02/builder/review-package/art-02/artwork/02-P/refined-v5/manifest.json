@@ -1,0 +1,102 @@
+{
+  "schema": 1,
+  "method": "02-P",
+  "frame_size_wh": [
+    354,
+    320
+  ],
+  "crop_source_ltrb": [
+    48,
+    912,
+    402,
+    1232
+  ],
+  "layer_order_back_to_front": [
+    "base",
+    "serpent",
+    "monstera",
+    "flower"
+  ],
+  "layers": {
+    "base": {
+      "path": "layers/base.png",
+      "bbox_crop_ltrb": [
+        0,
+        0,
+        354,
+        320
+      ],
+      "pivot_texture_xy": [
+        0,
+        0
+      ]
+    },
+    "serpent": {
+      "path": "layers/serpent.png",
+      "bbox_crop_ltrb": [
+        142,
+        30,
+        313,
+        163
+      ],
+      "pivot_texture_xy": [
+        35,
+        9
+      ]
+    },
+    "monstera": {
+      "path": "layers/monstera.png",
+      "bbox_crop_ltrb": [
+        20,
+        138,
+        168,
+        302
+      ],
+      "pivot_texture_xy": [
+        107,
+        10
+      ]
+    },
+    "flower": {
+      "path": "layers/flower.png",
+      "bbox_crop_ltrb": [
+        98,
+        81,
+        159,
+        145
+      ],
+      "pivot_texture_xy": [
+        30,
+        35
+      ]
+    },
+    "serpent-bronze": {
+      "path": "layers/serpent-bronze.png",
+      "bbox_crop_ltrb": [
+        142,
+        30,
+        313,
+        163
+      ],
+      "pivot_texture_xy": [
+        35,
+        9
+      ]
+    }
+  },
+  "states": {
+    "bronze": {
+      "replace_layer": {
+        "serpent": "serpent-bronze"
+      }
+    }
+  },
+  "motion": {
+    "layer": "monstera",
+    "axis": "x",
+    "demonstrated_dx": [
+      -14,
+      0
+    ]
+  }
+}

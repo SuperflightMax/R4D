@@ -3,9 +3,10 @@ const HEIGHT = 320;
 const GAP = 12;
 const SELECTORS = { '02-P': '#method-p', '02-R': '#method-r' };
 const LABELS = {
-  base: 'Фон, восстановленная область и неподвижный цветок',
+  base: 'Фон и восстановленная область',
   serpent: 'Голова змея',
   monstera: 'Монстера',
+  flower: 'Неподвижный красный цветок',
   'contact-shadow': 'Контактная тень',
   'serpent-bronze': 'Голова змея, бронзовое кольцо',
 };
@@ -16,7 +17,8 @@ const overlay = $('#overlay');
 const eye = $('#eye');
 
 function assetUrl(file) {
-  return '/artwork/' + file.split('/').map(encodeURIComponent).join('/');
+  const path = file.split('/').map(encodeURIComponent).join('/');
+  return new URL(`./artwork/${path}`, import.meta.url).href;
 }
 
 async function sprite(file, bbox, pivot = [0, 0]) {
@@ -122,13 +124,15 @@ function addControls(element, method, redraw) {
       <label>Лист <input aria-label="Сдвиг листа влево" type="range" min="0" value="0">
         <output>0 px</output>
       </label>
+      <label><input type="checkbox"> Скрыть лист</label>
       <button type="button" disabled>Вернуть</button>
       <label>Показать <select aria-label="Показать слой">
         <option value="">Все слои</option>
       </select></label>
     </div>
     <ol class="layer-meta" aria-label="Слои снизу вверх"></ol>`;
-  const range = element.querySelector('input');
+  const range = element.querySelector('input[type="range"]');
+  const hide = element.querySelector('input[type="checkbox"]');
   const output = element.querySelector('output');
   const reset = element.querySelector('button');
   const select = element.querySelector('select');
@@ -144,35 +148,41 @@ function addControls(element, method, redraw) {
   const refresh = () => {
     const selected = select.value;
     const amount = Number(range.value);
-    range.disabled = Boolean(selected);
-    reset.disabled = Boolean(selected) || amount === 0;
+    range.disabled = Boolean(selected) || hide.checked;
+    hide.disabled = Boolean(selected);
+    reset.disabled = Boolean(selected) || (amount === 0 && !hide.checked);
     output.value = amount ? `−${amount} px` : '0 px';
     method.layers.forEach((part, index) => {
       const variant = part.id === method.after?.id;
       const active = variant ? eye.checked : !eye.checked || part.id !== method.after?.replaces;
-      const shown = selected ? part.id === selected : active;
-      const offset = !selected && method.moving.has(part.id) ? amount : 0;
+      const moving = method.moving.has(part.id);
+      const shown = selected ? part.id === selected : active && !(moving && hide.checked);
+      const offset = !selected && moving ? amount : 0;
       const [x, y] = part.bbox;
       const pivot = part.pivot ?? [0, 0];
       part.node.visible = shown;
       part.node.x = x + pivot[0] - offset;
       rows[index].hidden = !active && !shown;
-      rows[index].textContent = `${part.label} · bbox [${part.bbox.join(', ')}] · pivot [${pivot.join(', ')}] · позиция [${part.node.x}, ${part.node.y}]`;
+      const hidden = !selected && moving && hide.checked ? ' · скрыта' : '';
+      rows[index].textContent = `${part.label} · bbox [${part.bbox.join(', ')}] · pivot [${pivot.join(', ')}] · позиция [${part.node.x}, ${part.node.y}]${hidden}`;
     });
     if (method.comparison) method.comparison.visible = !selected && overlay.checked;
   };
   range.addEventListener('input', redraw);
+  hide.addEventListener('change', redraw);
   select.addEventListener('change', redraw);
   reset.addEventListener('click', () => {
     range.value = '0';
+    hide.checked = false;
     redraw();
   });
   return refresh;
 }
 
 async function start() {
+  $('#back').hidden = new URL('../', import.meta.url).pathname === new URL('./', import.meta.url).pathname;
   $('#version').textContent = `PixiJS ${PIXI.VERSION}`;
-  const response = await fetch('/assembly.json');
+  const response = await fetch(new URL('./assembly.json', import.meta.url));
   if (response.status === 404) {
     status.textContent = 'Ожидается карта сборки с готовыми слоями';
     return;
@@ -213,6 +223,12 @@ async function start() {
   backdrop.addEventListener('change', refreshBackdrop);
   overlay.addEventListener('change', redraw);
   eye.addEventListener('change', redraw);
+  const viewport = $('.viewport');
+  for (const button of document.querySelectorAll('.panel-jumps button')) {
+    button.addEventListener('click', () => {
+      viewport.scrollLeft = Number(button.dataset.panel) * (WIDTH + GAP);
+    });
+  }
   $('#scene').appendChild(app.canvas);
   refreshBackdrop();
   status.textContent = `Сборка ${assembly.version} · загружено: ${available.map(({ key }) => key).join(', ')}`;

@@ -4,7 +4,8 @@
   "private": true,
   "type": "module",
   "scripts": {
-    "start": "node serve.mjs"
+    "start": "node serve.mjs",
+    "build:review": "node build-review.mjs"
   },
   "dependencies": {
     "pixi.js": "8.22.0"

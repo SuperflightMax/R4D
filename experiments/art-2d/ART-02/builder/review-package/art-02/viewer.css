@@ -1,0 +1,66 @@
+:root {
+  color-scheme: dark;
+  background: #16191b;
+  color: #f4eee5;
+  font: 15px/1.5 system-ui, sans-serif;
+}
+
+body { margin: 0; }
+main { max-width: 1140px; padding: 28px 24px; margin: auto; }
+h1, h2, p { margin: 0; }
+h1 { font-size: 30px; line-height: 1.2; margin: 4px 0 8px; }
+h2 { font-size: 18px; }
+h2 span { margin-left: 4px; font-size: 13px; font-weight: normal; }
+#back { color: #cee3b8; }
+#back:not([hidden]) { display: inline-block; margin-bottom: 8px; }
+.kicker { color: #b7cda4; letter-spacing: .1em; font-size: 12px; }
+.note { font-weight: 650; }
+header p:last-child, #status, #source-info, .layer-meta { color: #c5cac6; }
+#status { margin-bottom: 8px; }
+#status[data-error] { color: #ffb1a8; }
+
+.controls {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px 24px;
+  margin: 18px 0 8px;
+  padding: 10px 12px;
+  background: #252b2d;
+}
+label { display: inline-flex; align-items: center; gap: 6px; }
+select, button { font: inherit; }
+button, select { padding: 2px 6px; }
+.viewport { overflow-x: auto; }
+.panel-jumps { display: none; }
+.comparison {
+  display: grid;
+  grid-template-columns: repeat(3, 354px);
+  gap: 8px 12px;
+  width: max-content;
+}
+#scene { grid-column: 1 / -1; }
+#scene canvas { display: block; width: 1086px; height: 320px; }
+.method-controls { display: flex; flex-wrap: wrap; gap: 8px; margin: 0 0 6px; }
+.method-controls select { max-width: 275px; }
+.method-controls input[type="range"] { width: 100px; }
+.layer-meta { margin: 0; padding-left: 26px; font-size: 13px; }
+.layer-meta li { margin: 2px 0; }
+.layer-meta li[data-moving] { color: #d5e6be; }
+.evidence { margin: 24px 6px 0; }
+.evidence p { color: #c5cac6; margin: 4px 0 8px; }
+.sheets { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 12px; }
+.sheets figure { margin: 0; min-width: 0; }
+.sheets img { display: block; width: 100%; height: auto; }
+.sheets figcaption { font-size: 14px; margin-top: 4px; }
+
+@media (max-width: 1133px) {
+  .panel-jumps { display: flex; gap: 8px; margin-bottom: 8px; }
+}
+
+@media (max-width: 420px) {
+  main { padding-inline: 3px; }
+  header, .controls, #status, .panel-jumps { margin-inline: 6px; }
+  button, select { min-height: 36px; }
+  .controls { gap: 8px 16px; }
+  .sheets { grid-template-columns: 1fr; }
+}

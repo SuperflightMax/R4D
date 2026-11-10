@@ -1,0 +1,116 @@
+{
+  "schema": 1,
+  "method": "02-R",
+  "frame_size_wh": [
+    354,
+    320
+  ],
+  "crop_source_ltrb": [
+    48,
+    912,
+    402,
+    1232
+  ],
+  "layer_order_back_to_front": [
+    "base",
+    "contact-shadow",
+    "serpent",
+    "monstera",
+    "flower"
+  ],
+  "layers": {
+    "base": {
+      "path": "layers/base.png",
+      "bbox_crop_ltrb": [
+        0,
+        0,
+        354,
+        320
+      ],
+      "pivot_texture_xy": [
+        0,
+        0
+      ]
+    },
+    "contact-shadow": {
+      "path": "layers/contact-shadow.png",
+      "bbox_crop_ltrb": [
+        151,
+        113,
+        321,
+        173
+      ],
+      "pivot_texture_xy": [
+        26,
+        -74
+      ]
+    },
+    "serpent": {
+      "path": "layers/serpent.png",
+      "bbox_crop_ltrb": [
+        145,
+        32,
+        313,
+        163
+      ],
+      "pivot_texture_xy": [
+        32,
+        7
+      ]
+    },
+    "monstera": {
+      "path": "layers/monstera.png",
+      "bbox_crop_ltrb": [
+        19,
+        137,
+        169,
+        303
+      ],
+      "pivot_texture_xy": [
+        108,
+        11
+      ]
+    },
+    "flower": {
+      "path": "layers/flower.png",
+      "bbox_crop_ltrb": [
+        92,
+        80,
+        163,
+        149
+      ],
+      "pivot_texture_xy": [
+        37,
+        36
+      ]
+    },
+    "serpent-bronze": {
+      "path": "layers/serpent-bronze.png",
+      "bbox_crop_ltrb": [
+        145,
+        32,
+        313,
+        163
+      ],
+      "pivot_texture_xy": [
+        32,
+        7
+      ]
+    }
+  },
+  "states": {
+    "bronze": {
+      "replace_layer": {
+        "serpent": "serpent-bronze"
+      }
+    }
+  },
+  "motion": {
+    "layer": "monstera",
+    "axis": "x",
+    "demonstrated_dx": [
+      -14,
+      0
+    ]
+  }
+}
