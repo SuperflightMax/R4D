@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>ART-02 · Фрагмент Jungle</title>
+  <link rel="icon" href="data:,">
+  <link rel="stylesheet" href="/viewer.css">
+  <script src="/pixi.js"></script>
+  <script type="module" src="/viewer.js"></script>
+</head>
+<body>
+  <main>
+    <header>
+      <p class="kicker">R4D / ART-02</p>
+      <h1>Резной змей и монстера</h1>
+      <p class="note">Промежуточный фрагмент, не уровень</p>
+      <p>Кроп 354×320 px, масштаб 1:1 · <span id="version"></span></p>
+    </header>
+    <section class="controls" aria-label="Управление просмотром">
+      <label>Подложка
+        <select id="backdrop">
+          <option value="checker">Контрастная</option>
+          <option value="white">Белая</option>
+          <option value="black">Чёрная</option>
+        </select>
+      </label>
+      <label><input id="overlay" type="checkbox" disabled> Наложить исходник (50%)</label>
+      <label><input id="eye" type="checkbox" disabled> Глаз после правки</label>
+    </section>
+    <p id="status" role="status">Читаем карту сборки…</p>
+    <section class="viewport" aria-label="Сравнение в исходном масштабе">
+      <div class="comparison">
+        <h2>Исходник</h2>
+        <h2>02-P <span>Сохранение пикселей</span></h2>
+        <h2>02-R <span>Воссоздание частей</span></h2>
+        <div id="scene" aria-label="Исходник и пересборки"></div>
+        <p id="source-info">Оригинал 01-jungle.jpg<br>Границы [48, 912, 402, 1232)</p>
+        <div id="method-p"></div>
+        <div id="method-r"></div>
+      </div>
+    </section>
+  </main>
+</body>
+</html>
