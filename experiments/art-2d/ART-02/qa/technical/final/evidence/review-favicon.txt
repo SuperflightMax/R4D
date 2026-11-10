@@ -1,0 +1,12 @@
+Review local smoke, Chromium 156 headless, 2026-11-10
+Final allowlist SHA-256 179ab7324e0b36ed4d0a752eb4b5e01fba7822f59105f2b73a61c17874aff099
+Route: /review/r4d/art-2d/ → ART-01 → initial frame 01-T-02 → full PNG tab
+
+Full PNG decoded: 1006 × 1564
+URL: http://127.0.0.1:6918/review/r4d/art-2d/art-01/images/01-T-02.png
+Chromium console: Failed to load resource: the server responded with a status of 404 (Not Found)
+Console location: http://127.0.0.1:6918/favicon.ico
+Node HTTP observation:
+{"method":"GET","url":"/favicon.ico","status":404,"destination":"image","referer":"http://127.0.0.1:6918/review/r4d/art-2d/art-01/images/01-T-02.png"}
+
+The original allowlist reproduced the same request on a separate loopback origin.
