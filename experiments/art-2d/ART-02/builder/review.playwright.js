@@ -46,7 +46,7 @@ async (page) => {
     page.waitForEvent('popup'),
     page.getByRole('link', { name: '01-T-01', exact: true }).click(),
   ]);
-  const fullSize = await full.locator('img').evaluate(async (image) => {
+  const fullSize = await full.locator('#full-image').evaluate(async (image) => {
     await image.decode();
     return [image.naturalWidth, image.naturalHeight];
   });
@@ -64,9 +64,9 @@ async (page) => {
   const [sheetPage] = await Promise.all([
     page.waitForEvent('popup'), page.getByRole('link', { name: 'Сравнение пересборок в масштабе 1:1' }).click(),
   ]);
-  if (!sheetPage.url().endsWith('/comparison-1to1.png')) throw new Error('Открылся другой лист ART-02');
-  const art02FullSize = await sheetPage.locator('img').evaluate(async (image) => {
+  const art02FullSize = await sheetPage.locator('#full-image').evaluate(async (image) => {
     await image.decode();
+    if (!image.currentSrc.endsWith('/comparison-1to1.png')) throw new Error('Открылся другой лист ART-02');
     return [image.naturalWidth, image.naturalHeight];
   });
   await sheetPage.close();

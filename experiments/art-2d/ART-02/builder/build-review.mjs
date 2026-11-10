@@ -8,6 +8,7 @@ const artwork = resolve(here, '../artwork');
 const art01 = resolve(here, '../../ART-01');
 const out = resolve(here, 'review-package');
 const assets = new Map();
+const images = new Map();
 const hash = (bytes) => createHash('sha256').update(bytes).digest('hex');
 const json = (value) => Buffer.from(JSON.stringify(value, null, 2) + '\n');
 const readJson = async (path) => JSON.parse(await readFile(path, 'utf8'));
@@ -18,8 +19,14 @@ const html = (value) => value.replace(/[&<>"']/g, (char) => ({
   '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;',
 })[char]);
 
+function imageLink(id, section, path, title, caption = '') {
+  if (images.has(id)) throw new Error(`Повтор изображения: ${id}`);
+  images.set(id, { section, path, title, caption });
+  return `../image.html?file=${encodeURIComponent(id)}`;
+}
+
 async function addArt02(assembly) {
-  for (const name of ['index.html', 'viewer.css', 'viewer.js', 'assembly.json']) {
+  for (const name of ['viewer.css', 'viewer.js', 'assembly.json']) {
     await addText(`art-02/${name}`, join(here, name));
   }
   const pixi = join(here, 'node_modules/pixi.js');
@@ -29,9 +36,20 @@ async function addArt02(assembly) {
   const bundle = await readFile(join(pixi, 'dist/pixi.min.js'), 'utf8');
   assets.set('art-02/pixi.js', Buffer.from(bundle.replace(/\r?\n\/\/# sourceMappingURL=pixi\.min\.js\.map\s*$/, '\n')));
   await add('art-02/pixi.LICENSE.txt', join(pixi, 'LICENSE'));
-  for (const name of ['comparison-1to1.png', 'bronze-detail-4x.png', 'alpha-boards-1to1.png']) {
+  const sheets = [
+    ['comparison-1to1.png', 'Сравнение пересборок в масштабе 1:1', 'Исходник и пересборки 1:1. Первый 02-P показан для сравнения с коррекцией.'],
+    ['bronze-detail-4x.png', 'Кольцо глаза до и после правки, 4×', 'Кольцо глаза до и после правки, 4×.'],
+    ['alpha-boards-1to1.png', 'Прозрачность краёв на трёх подложках', 'Края листа на белой, чёрной и контрастной подложках.'],
+  ];
+  let viewer = await textFile(join(here, 'index.html'));
+  for (const [name, title, caption] of sheets) {
     await add(`art-02/artwork/evidence/${name}`, join(artwork, 'evidence', name));
+    const path = `artwork/evidence/${name}`;
+    const original = `href="./${path}"`;
+    if (!viewer.includes(original)) throw new Error(`Ссылка на лист ART-02 не найдена: ${name}`);
+    viewer = viewer.replace(original, `href="${imageLink(`art02-${name}`, 'art-02', path, title, caption)}"`);
   }
+  assets.set('art-02/index.html', Buffer.from(viewer));
   if (assembly.reference !== 'reference/control.png') throw new Error('Неожиданный эталон ART-02');
   await add(`art-02/artwork/${assembly.reference}`, join(artwork, assembly.reference));
   for (const [method, path] of Object.entries(assembly.methods)) {
@@ -59,16 +77,17 @@ async function addArt02(assembly) {
 }
 
 async function addGallery(catalog) {
-  const figure = async ([source, title, note], eager) => {
+  const figure = async ([source, title, note], kind) => {
     if (!/^(raw|review)\/[a-z0-9-]+\.(png|jpg)$/i.test(source)) throw new Error(`Неожиданный путь галереи: ${source}`);
     const path = `images/${basename(source)}`;
+    const link = imageLink(`art01-${kind}-${basename(source)}`, 'art-01', path, title, note);
     if (!assets.has(`art-01/${path}`)) await add(`art-01/${path}`, join(art01, source));
     const caption = note ? `<span>${html(note)}</span>` : '';
-    const loading = eager ? 'decoding="sync"' : 'loading="lazy" decoding="async"';
-    return `<figure><a href="./${path}" target="_blank" rel="noopener"><img src="./${path}" alt="${html(title)}" ${loading}></a><figcaption>${html(title)}${caption}</figcaption></figure>`;
+    const loading = kind === 'initial' ? 'decoding="sync"' : 'loading="lazy" decoding="async"';
+    return `<figure><a href="${link}" target="_blank" rel="noopener"><img src="./${path}" alt="${html(title)}" ${loading}></a><figcaption>${html(title)}${caption}</figcaption></figure>`;
   };
   const grid = async (rows, kind) => {
-    const pictures = await Promise.all(rows.map((row) => figure(row, kind === 'initial')));
+    const pictures = await Promise.all(rows.map((row) => figure(row, kind)));
     return `<div class="gallery ${kind}">\n${pictures.join('\n')}\n</div>`;
   };
   const groups = [];
@@ -89,6 +108,9 @@ await addText('index.html', join(here, 'review/index.html'));
 await addText('review.css', join(here, 'review/review.css'));
 await addArt02(assembly);
 await addGallery(catalog);
+await addText('image.html', join(here, 'review/image.html'));
+const imageScript = await textFile(join(here, 'review/image.js'));
+assets.set('image.js', Buffer.from(imageScript.replace('/* IMAGE_CATALOG */ []', JSON.stringify([...images]))));
 
 const existing = await realpath(out).catch((error) => {
   if (error.code !== 'ENOENT') throw error;
