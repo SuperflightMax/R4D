@@ -1,0 +1,271 @@
+{
+  "schema": 1,
+  "method": "02-R",
+  "version": "flower-locked",
+  "frame_size_wh": [
+    354,
+    320
+  ],
+  "crop_source_ltrb": [
+    48,
+    912,
+    402,
+    1232
+  ],
+  "coordinates": "LTRB exclusive, x right, y down, source scale 1:1",
+  "source": {
+    "path": "K:/Agents/R4D/Assets/perspective/01-jungle.jpg",
+    "sha256": "c8f9e4245c1de8c2086e615bc75dc10aea59b76b614d6e106593e07262e24f72",
+    "crop": "../../reference/control.png"
+  },
+  "master": "views/rest.png",
+  "layer_order_back_to_front": [
+    "base",
+    "contact-shadow",
+    "serpent",
+    "monstera",
+    "flower"
+  ],
+  "layers": {
+    "base": {
+      "path": "layers/base.png",
+      "bbox_crop_ltrb": [
+        0,
+        0,
+        354,
+        320
+      ],
+      "bbox_source_ltrb": [
+        48,
+        912,
+        402,
+        1232
+      ],
+      "position_crop_xy": [
+        0,
+        0
+      ],
+      "pivot_crop_xy": [
+        0,
+        0
+      ],
+      "pivot_texture_xy": [
+        0,
+        0
+      ],
+      "origin": "Built-in image_gen, raw/background.png. Full frame newly painted, resized to fixed crop. Red flower and wood/distant depth painted in this plate."
+    },
+    "contact-shadow": {
+      "path": "layers/contact-shadow.png",
+      "bbox_crop_ltrb": [
+        151,
+        113,
+        321,
+        173
+      ],
+      "bbox_source_ltrb": [
+        199,
+        1025,
+        369,
+        1085
+      ],
+      "position_crop_xy": [
+        151,
+        113
+      ],
+      "pivot_crop_xy": [
+        177,
+        39
+      ],
+      "pivot_texture_xy": [
+        26,
+        -74
+      ],
+      "origin": "Independent soft contact shadow placed on wood and stone under the generated head."
+    },
+    "serpent": {
+      "path": "layers/serpent.png",
+      "bbox_crop_ltrb": [
+        145,
+        32,
+        313,
+        163
+      ],
+      "bbox_source_ltrb": [
+        193,
+        944,
+        361,
+        1075
+      ],
+      "position_crop_xy": [
+        145,
+        32
+      ],
+      "pivot_crop_xy": [
+        177,
+        39
+      ],
+      "pivot_texture_xy": [
+        32,
+        7
+      ],
+      "origin": "Built-in image_gen, raw/serpent.png. Generator alpha normalized and low-alpha haze removed around principal component; registered to shared crop."
+    },
+    "monstera": {
+      "path": "layers/monstera.png",
+      "bbox_crop_ltrb": [
+        19,
+        137,
+        169,
+        303
+      ],
+      "bbox_source_ltrb": [
+        67,
+        1049,
+        217,
+        1215
+      ],
+      "position_crop_xy": [
+        19,
+        137
+      ],
+      "pivot_crop_xy": [
+        127,
+        148
+      ],
+      "pivot_texture_xy": [
+        108,
+        11
+      ],
+      "origin": "Built-in image_gen, raw/monstera.png. Generator alpha and actual perforations preserved after normalization and registration."
+    },
+    "flower": {
+      "path": "layers/flower.png",
+      "bbox_crop_ltrb": [
+        92,
+        80,
+        163,
+        149
+      ],
+      "bbox_source_ltrb": [
+        140,
+        992,
+        211,
+        1061
+      ],
+      "position_crop_xy": [
+        92,
+        80
+      ],
+      "pivot_crop_xy": [
+        129,
+        116
+      ],
+      "pivot_texture_xy": [
+        37,
+        36
+      ],
+      "origin": "Stationary generated flower extracted from raw/background.png after registration."
+    },
+    "serpent-bronze": {
+      "path": "layers/serpent-bronze.png",
+      "bbox_crop_ltrb": [
+        145,
+        32,
+        313,
+        163
+      ],
+      "bbox_source_ltrb": [
+        193,
+        944,
+        361,
+        1075
+      ],
+      "position_crop_xy": [
+        145,
+        32
+      ],
+      "pivot_crop_xy": [
+        177,
+        39
+      ],
+      "pivot_texture_xy": [
+        32,
+        7
+      ],
+      "origin": "Deterministic tint of the outer eye ring of the generated head. The inner eye, silhouette and neighboring paint are unchanged."
+    }
+  },
+  "states": {
+    "initial": {},
+    "reveal": {
+      "monstera_delta_xy": [
+        -14,
+        0
+      ]
+    },
+    "bronze": {
+      "replace_layer": {
+        "serpent": "serpent-bronze"
+      }
+    }
+  },
+  "motion": {
+    "layer": "monstera",
+    "axis": "x",
+    "demonstrated_dx": [
+      -14,
+      0
+    ],
+    "theoretical_left_clip_dx": -19
+  },
+  "metrics": {
+    "rest_against_control": {
+      "pixels": 113280,
+      "mean_abs_rgb": 34.1793,
+      "max_channel_delta": 248
+    },
+    "reveal_against_rest": {
+      "pixels": 17626,
+      "mean_abs_rgb": 7.9174,
+      "max_channel_delta": 242
+    },
+    "revealed_leaf_pixels_at_alpha_128": 3520,
+    "bronze_changed_pixels": 806,
+    "bronze_changed_outside_mask": 0
+  },
+  "notes": {
+    "registration": {
+      "head_raw_bbox_ltrb": [
+        303,
+        46,
+        1310,
+        942
+      ],
+      "head_target_ltrb": [
+        145,
+        32,
+        313,
+        163
+      ],
+      "leaf_raw_bbox_ltrb": [
+        50,
+        29,
+        1153,
+        1300
+      ],
+      "leaf_target_ltrb": [
+        19,
+        137,
+        169,
+        303
+      ],
+      "base_raw_size_wh": [
+        1319,
+        1192
+      ]
+    },
+    "original_pixels": "No source Jungle pixels copied into the art layers.",
+    "flower": "Separate generated foreground occluder."
+  }
+}

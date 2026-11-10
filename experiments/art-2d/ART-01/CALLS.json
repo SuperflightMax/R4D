@@ -1,0 +1,163 @@
+{
+  "tool": "image_gen.imagegen",
+  "route": "встроенный инструмент Codex, действующая подписка",
+  "tool_model_id": "не раскрыто",
+  "unit_price": "не раскрыто",
+  "seed_and_quality": "не раскрыты; доступны текст и transparent_background, для правки добавляется путь к исходнику",
+  "clock": "UTC. Отправка — начало вызова в оркестраторе; возврат — получение результата. Общая задержка включает возможную очередь и транспорт.",
+  "initial_fixed_utc": "2026-11-10T02:56:00.998Z",
+  "calls": [
+    {
+      "id": "T01",
+      "stage": "initial",
+      "prompt": "prompts/01-T.txt",
+      "transparent_background": false,
+      "sent_utc": "2026-11-10T02:43:02.911Z",
+      "returned_utc": "2026-11-10T02:43:36.704Z",
+      "wall_seconds": 33.793,
+      "original_file": "exec-ad357d48-6441-458b-bec4-4958da1bccc0.png",
+      "raw": "raw/01-T-01.png",
+      "sha256": "ef63f5538ab98a5d06c4f10096c9c02fa3495bb89d70787035e610c706b7ac89",
+      "format": "PNG RGB",
+      "size": [
+        1006,
+        1564
+      ],
+      "status": "returned"
+    },
+    {
+      "id": "T02",
+      "stage": "initial",
+      "prompt": "prompts/01-T.txt",
+      "transparent_background": false,
+      "sent_utc": "2026-11-10T02:43:02.911Z",
+      "returned_utc": "2026-11-10T02:44:35.108Z",
+      "wall_seconds": 92.197,
+      "original_file": "exec-0733259d-4b23-4a26-a349-59213b25048f.png",
+      "raw": "raw/01-T-02.png",
+      "sha256": "84663d7976109c725ebced5a6471a60ff6cf42b9d9dd7a6352db568ee6833b6e",
+      "format": "PNG RGB",
+      "size": [
+        1006,
+        1564
+      ],
+      "status": "returned"
+    },
+    {
+      "id": "D01",
+      "stage": "initial",
+      "prompt": "prompts/01-D.txt",
+      "transparent_background": false,
+      "sent_utc": "2026-11-10T02:43:02.911Z",
+      "returned_utc": "2026-11-10T02:44:05.771Z",
+      "wall_seconds": 62.86,
+      "original_file": "exec-49cd1f0f-b48b-4494-9bd0-2ff2975e734b.png",
+      "raw": "raw/01-D-01.png",
+      "sha256": "9b961775b35785dc715b5a84376ab58ab6fd4963274b0966c28d4acf4a5c7bbc",
+      "format": "PNG RGB",
+      "size": [
+        1006,
+        1564
+      ],
+      "status": "returned"
+    },
+    {
+      "id": "D02",
+      "stage": "initial",
+      "prompt": "prompts/01-D.txt",
+      "transparent_background": false,
+      "sent_utc": "2026-11-10T02:43:02.911Z",
+      "returned_utc": "2026-11-10T02:45:02.752Z",
+      "wall_seconds": 119.841,
+      "original_file": "exec-36a5d02b-09c4-497b-86b4-711d9c2455f7.png",
+      "raw": "raw/01-D-02.png",
+      "sha256": "deb9198182d5e2c70669b13c091cdfc1bc091cab3b3e62959042d229d73b4c9f",
+      "format": "PNG RGB",
+      "size": [
+        1006,
+        1564
+      ],
+      "status": "returned"
+    },
+    {
+      "id": "Tedit01",
+      "stage": "edit_common",
+      "prompt": "prompts/01-edit.txt",
+      "input": "raw/01-T-02.png",
+      "transparent_background": false,
+      "sent_utc": "2026-11-10T02:56:30.852Z",
+      "returned_utc": "2026-11-10T02:57:31.866Z",
+      "wall_seconds": 61.014,
+      "original_file": "exec-146cc548-5bd8-4890-b300-b304073c2986.png",
+      "raw": "raw/01-T-edit-01.png",
+      "sha256": "fa6b0f0a4a5a2e3395ae39e68630a11703865d68bf405f04916451a3066989c3",
+      "format": "PNG RGB",
+      "size": [
+        1006,
+        1564
+      ],
+      "status": "returned",
+      "decision": "Сохранён. Перенос дальше намеченного, появились ручки и изменился рельеф."
+    },
+    {
+      "id": "Dedit01",
+      "stage": "edit_common",
+      "prompt": "prompts/01-edit.txt",
+      "input": "raw/01-D-01.png",
+      "transparent_background": false,
+      "sent_utc": "2026-11-10T02:56:30.853Z",
+      "returned_utc": "2026-11-10T02:58:26.298Z",
+      "wall_seconds": 115.445,
+      "original_file": "exec-b0142fcb-a84d-4e14-b6f5-30740d07340b.png",
+      "raw": "raw/01-D-edit-01.png",
+      "sha256": "510c5e417c9d25cf4be1f18635f0d3286a35d667f2bcf43deac0b5cc3f1eae3d",
+      "format": "PNG RGB",
+      "size": [
+        1005,
+        1565
+      ],
+      "status": "returned",
+      "decision": "Сохранён. Перенос дальше намеченного, чем в проходе 2."
+    },
+    {
+      "id": "Tedit02",
+      "stage": "edit_refinement",
+      "prompt": "prompts/01-T-edit-02.txt",
+      "input": "raw/01-T-02.png",
+      "transparent_background": false,
+      "sent_utc": "2026-11-10T02:59:35.138Z",
+      "returned_utc": "2026-11-10T03:00:16.926Z",
+      "wall_seconds": 41.788,
+      "original_file": "exec-f742c508-184c-4656-a1ce-9e5a20645b9d.png",
+      "raw": "raw/01-T-edit-02.png",
+      "sha256": "c4b7861d6da22a705e5821f25e5794f433748620b6c7f1307c7834770d86fb8b",
+      "format": "PNG RGB",
+      "size": [
+        1005,
+        1565
+      ],
+      "status": "returned",
+      "decision": "Выбран. Положение ближе к намеченному, птица и отсутствие ручек сохранены, мелкий рисунок перерисован."
+    },
+    {
+      "id": "Dedit02",
+      "stage": "edit_refinement",
+      "prompt": "prompts/01-D-edit-02.txt",
+      "input": "raw/01-D-01.png",
+      "transparent_background": false,
+      "sent_utc": "2026-11-10T02:59:35.139Z",
+      "returned_utc": "2026-11-10T03:01:05.392Z",
+      "wall_seconds": 90.253,
+      "original_file": "exec-b063bec1-1e30-4c46-a286-507b32e563ac.png",
+      "raw": "raw/01-D-edit-02.png",
+      "sha256": "590290576f1f12b2ac931b22ecde8237baa91fda807f9fc9da4702acda527ba1",
+      "format": "PNG RGB",
+      "size": [
+        1006,
+        1564
+      ],
+      "status": "returned",
+      "decision": "Выбран. Перенос ближе к намеченному, цветочный рельеф узнаваем, листва и светотень в деталях изменились."
+    }
+  ]
+}

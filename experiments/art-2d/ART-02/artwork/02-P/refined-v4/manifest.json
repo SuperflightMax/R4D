@@ -1,0 +1,184 @@
+{
+  "schema": 1,
+  "method": "02-P",
+  "version": "refined-v4",
+  "frame_size_wh": [
+    354,
+    320
+  ],
+  "crop_source_ltrb": [
+    48,
+    912,
+    402,
+    1232
+  ],
+  "coordinates": "LTRB exclusive, x right, y down, source scale 1:1",
+  "source": {
+    "path": "K:/Agents/R4D/Assets/perspective/01-jungle.jpg",
+    "sha256": "c8f9e4245c1de8c2086e615bc75dc10aea59b76b614d6e106593e07262e24f72",
+    "crop": "../../reference/control.png"
+  },
+  "master": "views/rest.png",
+  "layer_order_back_to_front": [
+    "base",
+    "serpent",
+    "monstera"
+  ],
+  "layers": {
+    "base": {
+      "path": "layers/base.png",
+      "bbox_crop_ltrb": [
+        0,
+        0,
+        354,
+        320
+      ],
+      "bbox_source_ltrb": [
+        48,
+        912,
+        402,
+        1232
+      ],
+      "position_crop_xy": [
+        0,
+        0
+      ],
+      "pivot_crop_xy": [
+        0,
+        0
+      ],
+      "pivot_texture_xy": [
+        0,
+        0
+      ],
+      "origin": "Original RGB outside expanded local repair. Mist interpolated from real visible mist and slits. Hidden timber reconstructed from clean-plate.png; only used inside the repair mask. Hidden stationary head repaired with local inpainting."
+    },
+    "serpent": {
+      "path": "layers/serpent.png",
+      "bbox_crop_ltrb": [
+        142,
+        30,
+        313,
+        163
+      ],
+      "bbox_source_ltrb": [
+        190,
+        942,
+        361,
+        1075
+      ],
+      "position_crop_xy": [
+        142,
+        30
+      ],
+      "pivot_crop_xy": [
+        177,
+        39
+      ],
+      "pivot_texture_xy": [
+        35,
+        9
+      ],
+      "origin": "Original RGB and antialiased contour, mixed edge solved against local plate."
+    },
+    "monstera": {
+      "path": "layers/monstera.png",
+      "bbox_crop_ltrb": [
+        20,
+        138,
+        168,
+        302
+      ],
+      "bbox_source_ltrb": [
+        68,
+        1050,
+        216,
+        1214
+      ],
+      "position_crop_xy": [
+        20,
+        138
+      ],
+      "pivot_crop_xy": [
+        127,
+        148
+      ],
+      "pivot_texture_xy": [
+        107,
+        10
+      ],
+      "origin": "Original RGB in opaque areas. Hand contour refined by GrabCut; background spill removed from semitransparent edges."
+    },
+    "serpent-bronze": {
+      "path": "layers/serpent-bronze.png",
+      "bbox_crop_ltrb": [
+        142,
+        30,
+        313,
+        163
+      ],
+      "bbox_source_ltrb": [
+        190,
+        942,
+        361,
+        1075
+      ],
+      "position_crop_xy": [
+        142,
+        30
+      ],
+      "pivot_crop_xy": [
+        177,
+        39
+      ],
+      "pivot_texture_xy": [
+        35,
+        9
+      ],
+      "origin": "Procedural patina and tint on the traced ring only. Shape and alpha unchanged."
+    }
+  },
+  "states": {
+    "initial": {},
+    "reveal": {
+      "monstera_delta_xy": [
+        -14,
+        0
+      ]
+    },
+    "bronze": {
+      "replace_layer": {
+        "serpent": "serpent-bronze"
+      }
+    }
+  },
+  "motion": {
+    "layer": "monstera",
+    "axis": "x",
+    "demonstrated_dx": [
+      -14,
+      0
+    ],
+    "theoretical_left_clip_dx": -20
+  },
+  "metrics": {
+    "rest_against_control": {
+      "pixels": 6136,
+      "mean_abs_rgb": 2.8443,
+      "max_channel_delta": 214
+    },
+    "reveal_against_rest": {
+      "pixels": 17212,
+      "mean_abs_rgb": 7.3301,
+      "max_channel_delta": 210
+    },
+    "revealed_leaf_pixels_at_alpha_128": 3433,
+    "bronze_changed_pixels": 670,
+    "bronze_changed_outside_mask": 0
+  },
+  "notes": {
+    "flower": "Protected in the plate and held in position.",
+    "shadow": "Original contact shadow under the stationary head retained on the plate.",
+    "repair": "Local widened mask and protected negative space. No copies from 02-R."
+  }
+}
