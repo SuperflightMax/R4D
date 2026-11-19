@@ -1,0 +1,47 @@
+{
+  "key": "FX01-Q1R-43b6268e",
+  "candidate": "43b6268e924698048a4d79df1aad2512c86f08f7",
+  "status": "COMPLETE",
+  "started": "2026-11-19T02:45:14.356713+00:00",
+  "git_receipt_verification": [
+    {
+      "file": "index.html",
+      "bytes": 5387,
+      "sha256": "b4d67713c59184e4f813f4ba89c8d3b074f60149e7be90c9a29595e83561bab5",
+      "git_receipt_match": true
+    },
+    {
+      "file": "style.css",
+      "bytes": 7215,
+      "sha256": "c7409f0d06fca2b22b8f0f6cde013529c8d20a9fe84c61b205d5212bc6bc3a3b",
+      "git_receipt_match": true
+    },
+    {
+      "file": "app.js",
+      "bytes": 27932,
+      "sha256": "b34abd8bfc6e6f010397da9b2372def74f005271ce1e92a8e35b5ce9b2405f6f",
+      "git_receipt_match": true
+    }
+  ],
+  "previous_q1_hashes": {
+    "FX01-Q1-2af34679-report.md": "1077af350e375c1ee3c3ec51f0c1f8ede1320f1a4447a19c770b1412d4d811a2",
+    "q1-state.json": "baf52227fa0ca8f00d5d28324e3d4de7240d2ebe8b48e209abb16986c577b91f",
+    "q1-actions.jsonl": "b79b36c8f607ec3957db29ed249ea32e63b1f4d46d5ece833c05089c33e108b5"
+  },
+  "result": "C1_VERIFIED_FUNCTIONAL_SMOKE_PASS",
+  "finished": "2026-11-19T02:56:52.920876+00:00",
+  "report": "D:\\dev\\.codex-task-temp\\r4d-fx01\\qa\\q1r-43b6268e-report.md",
+  "checks": {
+    "D01_M10": "PASS",
+    "storage_failure_retry": "PASS",
+    "CTO_C01": "PASS",
+    "UX01_CSS_layout": "PASS",
+    "connected_smoke": "PASS",
+    "M11_physical": "NOT_VERIFIED",
+    "human_gate": "PENDING"
+  },
+  "old_Q1_hashes_unchanged": true,
+  "candidate_unchanged": true,
+  "browser_stopped": true,
+  "server_stopped": true
+}
