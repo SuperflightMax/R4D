@@ -1,0 +1,29 @@
+--- base/review/index.html
++++ staged/review/index.html
+@@ -34 +34 @@
+-        <span class="project-count">23 артефакта</span>
++        <span class="project-count">24 артефакта</span>
+@@ -36,0 +37,6 @@
++        <a class="project-card" href="./r4d/#fx-workshop">
++          <span class="stage-meta">Этап · 1 артефакт</span>
++          <strong>FX Workshop</strong>
++          <span>Примерка и настройка эффектов в общем UX-прототипе.</span>
++          <b>Открыть этап</b>
++        </a>
+--- base/review/r4d/index.html
++++ staged/review/r4d/index.html
+@@ -25,0 +26 @@
++      <a href="#fx-workshop">FX Workshop · 1</a>
+@@ -29,0 +31,12 @@
++
++    <section class="stage" id="fx-workshop" aria-labelledby="fx-workshop-title">
++      <div class="section-head"><h2 id="fx-workshop-title">FX Workshop</h2><span>1 артефакт</span></div>
++      <div class="artifact-grid">
++        <article class="artifact-card">
++          <div class="artifact-top"><span class="stage-meta">FX-01</span><span class="status status-partial">UX-прототип для просмотра</span></div>
++          <h3>Мастерская эффектов</h3>
++          <p>Два входа в одну работу: от эффекта или от объекта. Примерка, настройки, композиция и возврат к сохранённому рецепту. Проба удобства на простых эффектах.</p>
++          <div class="artifact-actions"><a href="./fx-workshop/fx-01/">Открыть мастерскую</a></div>
++        </article>
++      </div>
++    </section>

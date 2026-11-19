@@ -1,0 +1,78 @@
+{
+  "key": "FX01-D1-43b6268e",
+  "status": "STAGING_READY",
+  "at_utc": "2026-11-19T03:11:08.126191+00:00",
+  "source": "43b6268e924698048a4d79df1aad2512c86f08f7",
+  "intended_url": "https://superflight.space/review/r4d/fx-workshop/fx-01/",
+  "base_root": "/srv/superflight-review/releases/millionko-ui02b-r3-r01-cc42352d",
+  "base_snippet_sha256": "b9dde1214d4aabf6b7d4469fddf5cd81ee29f8e94706b20a8fa900b92f21e983",
+  "staging_root": "/srv/superflight-review/releases/fx01-43b6268e-20261119T031029Z",
+  "backup": "/opt/superflight-studio/backups/review-fx01-43b6268e-20261119T031029Z",
+  "candidate_snippet_sha256": "39b20c6fe05572089c1038ec95129211c8b6b2fc374c16b3baac117da04f3456",
+  "base_summary": {
+    "files": 1051,
+    "directories": 140,
+    "bytes": 189354123,
+    "sha256": "46919ca359e980bdb5a5f2e3c3052620bc0b5f8e0ead0af4ca7b060b290d954d"
+  },
+  "staging_summary": {
+    "files": 1054,
+    "directories": 142,
+    "bytes": 189396002,
+    "sha256": "b24d7b91242b33b46c458bfefa54a0a9fffe8d4615ba08cdb242b957e18f8cb9"
+  },
+  "preserved_files": 1049,
+  "changed": [
+    "review/index.html",
+    "review/r4d/index.html"
+  ],
+  "added_files": [
+    "review/r4d/fx-workshop/fx-01/app.js",
+    "review/r4d/fx-workshop/fx-01/index.html",
+    "review/r4d/fx-workshop/fx-01/style.css"
+  ],
+  "added_dirs": [
+    "review/r4d/fx-workshop",
+    "review/r4d/fx-workshop/fx-01"
+  ],
+  "no_symlinks": true,
+  "no_shared_file_inodes": true,
+  "inherited_owners_modes_preserved": true,
+  "counts": {
+    "r4d_before": 23,
+    "r4d_after": 24,
+    "existing_stages": {
+      "art-2d": 1,
+      "skeleton": 13,
+      "perspective": 9
+    },
+    "fx_workshop": 1
+  },
+  "runtime": {
+    "review/r4d/fx-workshop/fx-01/index.html": {
+      "size": 5387,
+      "sha256": "b4d67713c59184e4f813f4ba89c8d3b074f60149e7be90c9a29595e83561bab5",
+      "git_blob": "04eb05b126ba7a79b5604105780abd2a1f24645b",
+      "source_path": "experiments/fx-workshop/FX-01/index.html"
+    },
+    "review/r4d/fx-workshop/fx-01/style.css": {
+      "size": 7215,
+      "sha256": "c7409f0d06fca2b22b8f0f6cde013529c8d20a9fe84c61b205d5212bc6bc3a3b",
+      "git_blob": "545ce6576fa65b1e71ae30aa130a0e0b91233efb",
+      "source_path": "experiments/fx-workshop/FX-01/style.css"
+    },
+    "review/r4d/fx-workshop/fx-01/app.js": {
+      "size": 27932,
+      "sha256": "b34abd8bfc6e6f010397da9b2372def74f005271ce1e92a8e35b5ce9b2405f6f",
+      "git_blob": "011ada5c94fa9f34b37e58f00126269c72d32a74",
+      "source_path": "experiments/fx-workshop/FX-01/app.js"
+    }
+  },
+  "packet_sha256": "b41f80a3f818c430767247b1b6c981fbe848b0aadbf4aa66a97946404f7ffd22",
+  "live_switch": false,
+  "reload": false,
+  "base_browser_files": 1050,
+  "staged_browser_files": 1053,
+  "preserved_browser_files": 1048,
+  "catalog_inverse_verified": true
+}
