@@ -1,0 +1,57 @@
+{
+  "status": "EXACT_HTTPS_BYTES_AND_CATALOG_LINKS_PASS",
+  "checked_at_utc": "2026-11-19T03:25:45.855986+00:00",
+  "source": "43b6268e924698048a4d79df1aad2512c86f08f7",
+  "intended_release": "fx01-43b6268e-20261119T031029Z",
+  "runtime": [
+    {
+      "file": "index.html",
+      "url": "https://superflight.space/review/r4d/fx-workshop/fx-01/index.html",
+      "status": 200,
+      "bytes": 5387,
+      "sha256": "b4d67713c59184e4f813f4ba89c8d3b074f60149e7be90c9a29595e83561bab5",
+      "content_type": "text/html",
+      "cache_control": "no-store",
+      "robots": "noindex, nofollow, noarchive"
+    },
+    {
+      "file": "style.css",
+      "url": "https://superflight.space/review/r4d/fx-workshop/fx-01/style.css",
+      "status": 200,
+      "bytes": 7215,
+      "sha256": "c7409f0d06fca2b22b8f0f6cde013529c8d20a9fe84c61b205d5212bc6bc3a3b",
+      "content_type": "text/css",
+      "cache_control": "no-store",
+      "robots": "noindex, nofollow, noarchive"
+    },
+    {
+      "file": "app.js",
+      "url": "https://superflight.space/review/r4d/fx-workshop/fx-01/app.js",
+      "status": 200,
+      "bytes": 27932,
+      "sha256": "b34abd8bfc6e6f010397da9b2372def74f005271ce1e92a8e35b5ce9b2405f6f",
+      "content_type": "application/javascript",
+      "cache_control": "no-store",
+      "robots": "noindex, nofollow, noarchive"
+    }
+  ],
+  "catalogs": [
+    {
+      "url": "https://superflight.space/review/",
+      "status": 200,
+      "bytes": 4040,
+      "sha256": "7daeb23ed4b669920ee264df648aae42b17309e084fb4c7ad3ab96bef4c94783",
+      "fx_link_present": true
+    },
+    {
+      "url": "https://superflight.space/review/r4d/",
+      "status": 200,
+      "bytes": 17923,
+      "sha256": "dc24d151a30855301d869c50d0eccba007d2f85471ab0fb4bf6e5e90bd9c96c8",
+      "fx_link_present": true
+    }
+  ],
+  "browser_smoke": "Separate Builder delivery check pending at receipt time",
+  "physical_M11": "NOT VERIFIED",
+  "human_review": "PENDING"
+}

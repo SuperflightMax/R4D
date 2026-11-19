@@ -2,7 +2,9 @@
 
 Обновлено: 19 ноября 2026, Europe/Kiev. Владелец: CTO `cto-r4d-fx-workshop-01`, thread `01a1f167-04ae-7ce1-b3c3-41f55ae15ada`.
 
-**Статус: FUNCTIONAL_CANDIDATE_VERIFIED / D1_STAGING_VERIFIED / CUT_READY_TO_ISSUE.**
+**Статус: WAITING_FOR_PHYSICAL_M11_AND_MAX_SLAVA_REVIEW.**
+
+**Опубликованный UX-кандидат:** [открыть FX Workshop](https://superflight.space/review/r4d/fx-workshop/fx-01/). Runtime source `43b6268e924698048a4d79df1aad2512c86f08f7`, release `fx01-43b6268e-20261119T031029Z`, delivery commit `5c9f4a551076d2baf376dc9c62962858be8ff7b9`. Q1R, exact HTTPS и browser delivery smoke подтверждены. **Физический M11, наблюдения Макса/Славы и решение Product + Max ещё ожидаются. FX-01 не принят; FX-02+ не открыты.**
 
 ## Разрешение и канон
 
@@ -46,12 +48,16 @@
 - D1 выдан тому же Builder 19 ноября 05:01 Europe/Kiev, turn `01a1f1c0-c978-77f2-a21e-2b07f841722d`. Разрешена подготовка только до STAGING_READY, live CUT пока не выдан. Builder подтвердил настройки и обнаружил более свежую серверную базу Millionko R3; staging готовится от актуального live-дерева. Прежняя заметка о root не применяется как источник текущего состояния.
 - D1 завершён `STAGING_READY / NO CUT`, commit+push **`783cc9e21fc76d7d540ec46db1e7aa0a0118385f`**. [Полный staging-отчёт](../../../experiments/fx-workshop/FX-01/delivery/D1-STAGING.md): новый immutable release `fx01-43b6268e-20261119T031029Z`, сохранены 1048 прежних browser-файлов и права, изменены только два каталога, добавлены три exact runtime-файла. R4D 23→24. Live остаётся Millionko R3; FX HTTPS пока 404. CTO прочитал отчёт/код/diff/квитанции и отдельно подтвердил server verify в 03:14:29 UTC. Подготовлена [точная выдача CUT](DELIVERY_D1_CUT_TASK.md); переключение ещё не выполнялось.
 - Подготовлены [технический отчёт](TECHNICAL_REPORT.md) и [сопоставимый человеческий просмотр](REVIEW_FOR_MAX_SLAVA.md). Наблюдения людей/продуктовое решение не заполнены предположениями.
+- CUT выдан 19 ноября 05:19 Europe/Kiev, turn Builder `01a1f1d0-e0ed-7982-a9c2-c93894a96413`, ключ `FX01-D1-CUT-43b6268e-20261119T031029Z`. Только рассмотренный immutable release, со свежим live guard и последующей реальной HTTPS/browser-проверкой. ACK получен; сам по себе он не подтверждает переключение или успешную доставку.
+- Builder сообщил о выполненном root-only switch и одном graceful reload после nginx tests. CTO отдельно проверил настоящие HTTPS GET 19 ноября 03:25:45 UTC: все три файла имеют точные bytes/SHA/MIME source C1/Q1R, оба каталога содержат новые FX-ссылки. [Собственная квитанция](CTO_HTTPS_RECEIPT.json). Браузерный delivery smoke и завершённый отчёт Builder ещё ожидаются; это пока не отметка полного завершения D1.
+- D1 CUT завершён `PUBLISHED_UX_CANDIDATE / FROZEN`, commit+push **`5c9f4a551076d2baf376dc9c62962858be8ff7b9`**, remote SHA сверен CTO. [Отчёт доставки](../../../experiments/fx-workshop/FX-01/delivery/RELEASE.md) и итоговая серверная квитанция подтверждают HTTPS 16/16, browser smoke 14/14 на реально загруженных exact bytes, 0 ошибок страницы/консоли/запросов. Выполнен один root-only atomic switch и один graceful reload; прежние дерево/права/protected config сохранены. Документы сервера дополнены append-only, rollback не потребовался. Свой браузер закрыт, новых длительных процессов нет.
+- CTO прочитал полный delivery-отчёт/квитанции и посмотрел фактический опубликованный headless-скриншот. Дополнительно проверены source/HEAD: runtime C1 неизменён, карточка exact pin неизменна, все 199 изменённых на delivery commit `5c9f4a55` путей только в двух собственных FX-областях. Это не physical M11 и не человеческий PASS.
 
 ## Следующий шаг
 
-Выдать внутренний CUT тому же Builder по рассмотренному staging с обязательным свежим live guard; проверить настоящую HTTPS/browser-доставку. Затем физический M11 и человеческое сравнение Максом/Славой. M11 требует доступной настоящей среды и не закрывается имеющимся виртуальным экраном; человеческая приёмка пока не выполнена.
+Провести физический M11: настоящий fullscreen 1920×1080, записанные OS/browser scale и CSS viewport, скриншот и доступность основных действий. Затем сопоставимый [просмотр Максом/Славой](REVIEW_FOR_MAX_SLAVA.md): один начинает A, другой B, одинаковые пять задач, наблюдения по каждой задаче и учёт обучения. CTO сохранит факты и предложит продуктовое решение; при необходимости — конкретные исправления/адресный повтор внутри FX-01. Решение Product + Max требуется до приёмки. Новые этапы автоматически не запускаются.
 
-C1 завершён и runtime заморожен. D1 staging-ход Builder завершён; Git/index возвращён CTO на фиксацию организационного перехода. При последующей выдаче CUT окно снова передаётся Builder до отчёта/freeze. QA завершён, продукт и Git/index не пишет. Конкурирующих writers нет.
+C1 и D1 завершены, runtime заморожен. Builder turn `01a1f1d0-e0ed-7982-a9c2-c93894a96413` завершён, Git/index возвращён CTO на фиксацию результата. Builder и QA ожидают новой адресной задачи; активных продуктовых writers нет. Конкурирующих записей не было.
 
 ## Ограничения ресурсов
 

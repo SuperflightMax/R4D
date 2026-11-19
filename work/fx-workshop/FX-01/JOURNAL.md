@@ -71,3 +71,17 @@ Runtime остаётся exact `43b6268e`, три файла без измене
 Builder завершил D1 turn `01a1f1c0-c978-77f2-a21e-2b07f841722d` за 16 мин 20 с, commit+push `783cc9e21fc76d7d540ec46db1e7aa0a0118385f`. Новый immutable staging `fx01-43b6268e-20261119T031029Z` основан на актуальном Millionko R3. Сохранены 1048 старых browser-файлов и их uid/gid/mode; две страницы каталогов дополнены FX, добавлены только три точных runtime-файла C1. Старый manifest вне review также сохранён. Нет shared hardlinks/symlinks, общий счётчик 23→24.
 
 CTO прочитал полный D1-отчёт, скрипты, diff/квитанции и в 03:14:29 UTC отдельно выполнил server verify: live/base/staging/protected/nginx guards совпали, candidate snippet меняет только root. Live root остаётся `millionko-ui02b-r3-r01-cc42352d`, FX URL отвечает 404; switch/reload не было. Подготовлена точная выдача CUT, человеческий сценарий и технический промежуточный отчёт. В этом переходе Git/index у CTO, после выдачи CUT вернётся Builder.
+
+## 19 ноября 2026, 05:19 Europe/Kiev — точный CUT выдан
+
+CTO зафиксировал переход и материалы человеческого просмотра в `6aa62d78daa13b7d6286481ea8c22ef84dbbc450`, commit+push выполнены. Прямой CUT доставлен прежнему Builder, новый turn `01a1f1d0-e0ed-7982-a9c2-c93894a96413` подтверждён. Ключ `FX01-D1-CUT-43b6268e-20261119T031029Z`, разрешён только рассмотренный release с прежним source runtime и свежим live/base/hash guard. Git/index передан Builder до отчёта/freeze. ACK получен, фактическая публикация/HTTPS/browser-проверки ещё ожидаются.
+
+## 19 ноября 2026, 05:25 Europe/Kiev — публичные exact bytes подтверждены CTO
+
+Builder сообщил о root-only switch после прошедших nginx tests, одном graceful reload и сохранённых protected/base hashes. CTO в 03:25:45 UTC независимо прочитал по HTTPS все три runtime-файла: 200, точные SHA-256/размеры C1/Q1R и правильные MIME, no-store/noindex на месте. Оба публичных каталога 200 и содержат нужные FX-ссылки. Квитанция `CTO_HTTPS_RECEIPT.json` сохранена в собственной рабочей области. Браузерный delivery smoke и окончательный отчёт Builder ещё ожидаются, физический M11 и человеческое решение открыты.
+
+## 19 ноября 2026, около 05:32 Europe/Kiev — кандидат доставлен, ожидаются реальные просмотры
+
+Builder завершил CUT за 12 мин 30 с, статус `PUBLISHED_UX_CANDIDATE / FROZEN`, commit+push `5c9f4a551076d2baf376dc9c62962858be8ff7b9`; CTO отдельно сверил remote SHA. HTTPS 16/16 и delivery browser smoke 14/14 прошли; реальные загруженные bytes совпали с Q1R/source C1, page/console/request errors 0. Immutable release `fx01-43b6268e-20261119T031029Z`, публичный URL `https://superflight.space/review/r4d/fx-workshop/fx-01/`. Только root-only atomic switch и один graceful reload; прежние файлы/права и protected components сохранены, rollback не потребовался. Service doc/CHANGELOG дополнены append-only. Свой браузер закрыт, длительных процессов не осталось.
+
+CTO прочитал RELEASE и квитанции, посмотрел настоящий headless delivery screenshot и проверил границы ветки: все 199 изменённых путей внутри собственных FX product/work областей; runtime C1 и каноническая карточка unchanged. Git/index возвращён CTO. Технический отчёт и сценарий Макса/Славы актуализированы; человеческие наблюдения и решение не выдуманы. Фактический статус `WAITING_FOR_PHYSICAL_M11_AND_MAX_SLAVA_REVIEW`. FX-01 не принят, FX-02+ не открыты.
