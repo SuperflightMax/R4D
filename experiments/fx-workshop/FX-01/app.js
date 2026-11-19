@@ -21,7 +21,7 @@ const storageKey = testSpace ? `r4d-fx01:test:${testSpace}` : 'r4d-fx01:work';
 let draft = defaults(), recipes = [], undo = [], redo = [], preview = null;
 let previewBlocked = null;
 let playing = true, elapsed = 0, lastFrame = 0, gesture = null, gestureTimer = 0, saveTimer = 0;
-let storageError = '', loaded = false;
+let storageError = '', loaded = false, pendingSave = false;
 try {
   const raw = localStorage.getItem(storageKey);
   if (raw) {
@@ -42,16 +42,17 @@ function newStep(v,target,id=uid()) {
 function status(message) {
   $('#storage-status').textContent = storageError || message;
   $('#storage-status').classList.toggle('error',!!storageError);
+  renderSave();
 }
 function persist() {
   clearTimeout(saveTimer);
   if (readError) return status('');
   try {
     localStorage.setItem(storageKey,JSON.stringify({version:1,draft,recipes}));
-    storageError=''; status('Черновик сохранён на этом устройстве');
+    storageError=''; pendingSave=false; status('Черновик сохранён на этом устройстве');
   } catch(e) { storageError=`Не сохранено: локальное хранилище недоступно или заполнено. Работа пока только в этой вкладке. (${e.name})`; status(''); }
 }
-function scheduleSave() { clearTimeout(saveTimer); if (!readError) status('Изменения в черновике…'); saveTimer=setTimeout(persist,400); }
+function scheduleSave() { clearTimeout(saveTimer); pendingSave=true; status('Изменения в черновике…'); saveTimer=setTimeout(persist,400); }
 function record(before) {
   if (equal(before,draft)) return;
   undo.push(before); if(undo.length>80) undo.shift(); redo=[]; scheduleSave(); updateHistory(); renderSave();
@@ -62,7 +63,7 @@ function finishGesture() {
   const before=gesture.before; gesture=null; record(before); persist();
 }
 function beginGesture(key) {
-  if(gesture?.key!==key) { finishGesture(); gesture={key,before:copy(draft)}; status('Изменения в черновике…'); }
+  if(gesture?.key!==key) { finishGesture(); gesture={key,before:copy(draft)}; pendingSave=true; status('Изменения в черновике…'); }
 }
 function change(fn) {
   finishGesture(); clearPreview(); const before=copy(draft); fn(); normalize(); record(before); seekSelected(); render();
@@ -177,7 +178,7 @@ function renderSettings() {
   const s=selected();
   if(!s) {$('#settings').innerHTML=`<h2>${names[draft.target]}</h2><p class="help">Примерьте вариант в галерее и нажмите «Применить». Здесь появятся его настройки.</p>${draft.target==='text'?textField():''}`;bindText();return;}
   const k=kind(s.target),i=draft.steps.indexOf(s);
-  $('#settings').innerHTML=`<h2>${esc(variant(s.variant).name)}</h2><p class="muted">${names[s.target]} · шаг ${i+1}</p><p class="wheel-hint">Колесо над числом — изменить. Shift + колесо — точнее. Клик и ввод тоже работают.</p>${k==='ball'?numeric('Длина хвоста','length',s.length,'точек')+numeric('Скорость','speed',s.speed)+numeric('Радиус траектории','radius',s.radius,'на сцене'):''}${k==='buttons'?numeric('Интервал кнопок','stagger',s.stagger,'с'):''}${k==='text'?textField()+numeric('Сдвиг','shift',s.shift,'на сцене'):''}<label class="field"><span>Цвет</span><input type="color" data-param="color" aria-label="Цвет эффекта" value="${s.color}"></label>${numeric('Длительность','duration',s.duration,'с')}<label class="field"><span>Начало шага</span><select id="relation" ${i===0?'disabled':''}><option value="start">Сначала (от начала)</option><option value="with">Одновременно с предыдущим</option><option value="after">После предыдущего</option></select></label>${numeric('Задержка','delay',s.delay,'с')}<p class="help">Выбранный шаг меняется в черновике. Сохранённый рецепт остаётся прежним до «Сохранить редакцию».</p>`;
+  $('#settings').innerHTML=`<h2>${esc(variant(s.variant).name)}</h2><p class="muted">${names[s.target]} · шаг ${i+1}</p><p class="wheel-hint">Колесо над числом — изменить. Shift + колесо — точнее. Клик и ввод тоже работают.</p>${k==='ball'?numeric('Длина хвоста','length',s.length,'точек')+numeric('Скорость','speed',s.speed)+numeric('Радиус траектории','radius',s.radius,'на сцене'):''}${s.target==='buttons'?numeric('Интервал кнопок','stagger',s.stagger,'с'):''}${k==='text'?textField()+numeric('Сдвиг','shift',s.shift,'на сцене'):''}<label class="field"><span>Цвет</span><input type="color" data-param="color" aria-label="Цвет эффекта" value="${s.color}"></label>${numeric('Длительность','duration',s.duration,'с')}<label class="field"><span>Начало шага</span><select id="relation" ${i===0?'disabled':''}><option value="start">Сначала (от начала)</option><option value="with">Одновременно с предыдущим</option><option value="after">После предыдущего</option></select></label>${numeric('Задержка','delay',s.delay,'с')}<p class="help">Выбранный шаг меняется в черновике. Сохранённый рецепт остаётся прежним до «Сохранить редакцию».</p>`;
   $$('[data-param]').forEach(input=>bindEdit(input,input.dataset.param));
   $('#relation').value=s.relation;
   $('#relation').onchange=e=>change(()=>selected().relation=e.target.value);
@@ -194,12 +195,14 @@ function render() {
 }
 function renderSave() {
   const r=recipes.find(r=>r.id===draft.recipeId);
+  const dirty=!!r&&!sameWork(recipeConfig(),r.revisions.at(-1).config);
   $('#recipe-count').textContent=recipes.length;
   $('#work-title').textContent=r?`Черновик: ${r.name}`:'Новый черновик';
   $('#pin').disabled=!draft.steps.length;
   $('#save-recipe').hidden=!r;
-  $('#save-recipe').disabled=!!r&&sameWork(recipeConfig(),r.revisions.at(-1).config);
-  $('#save-hint').textContent=r?'Правки пока в черновике. Сохраните редакцию, чтобы обновить этот рецепт.':'Примерка не меняет черновик. Закрепите понравившуюся работу.';
+  $('#save-recipe').disabled=!!readError||(!dirty&&!storageError);
+  $('#save-hint').classList.toggle('error',!!storageError);
+  $('#save-hint').textContent=storageError?'Не сохранено на этом устройстве. Работа пока только в этой вкладке.':r?(dirty?'Правки в черновике. Сохраните редакцию, чтобы обновить рецепт.':pendingSave?'Сохранение на этом устройстве…':'Редакция сохранена на этом устройстве. Новых правок нет.'):pendingSave?'Сохранение черновика на этом устройстве… Рецепт ещё не закреплён.':'Черновик не закреплён. Примените эффект и закрепите понравившуюся работу.';
 }
 function recipeConfig() {const d=copy(draft);delete d.recipeId;return d;}
 function sameWork(a,b) {return equal({text:a.text,steps:a.steps},{text:b.text,steps:b.steps});}
@@ -253,7 +256,7 @@ function drawScene(t) {
       if(s.variant==='cascade') {const p=Math.max(0,Math.min(1,phase/.4));y+=25*(1-p);opacity*=.15+.85*p;if(phase>=0)fill=s.color;}
       else {const glow=.35+.3*(1+Math.sin(phase*5));if(phase>=0)overlays.push(`<rect x="${61+i*100}" y="${y-4}" width="98" height="78" rx="18" fill="${s.color}" opacity="${glow*.45}"/>`);stroke=s.color;}
     }
-    svg+=overlays.join('')+`<g opacity="${opacity}"><rect x="${65+i*100}" y="${y}" width="90" height="70" rx="14" fill="${fill}" stroke="${stroke}" stroke-width="2"/><text x="${110+i*100}" y="${y+42}" text-anchor="middle" fill="#fff" font-size="18">${['Один','Два','Три'][i]}</text></g>`;
+    svg+=overlays.join('')+`<g opacity="${opacity}"><rect x="${65+i*100}" y="${y}" width="90" height="70" rx="14" fill="${fill}" stroke="${stroke}" stroke-width="2"/><text x="${110+i*100}" y="${y+42}" text-anchor="middle" fill="#fff" class="button-label">${['Один','Два','Три'][i]}</text></g>`;
   }
   const textEffects=active.filter(a=>a.s.target==='text');
   let tx=500,ty=460,op=textEffects.length||!draft.steps.some(s=>s.target==='text')?1:0,color='#dcebf4';
