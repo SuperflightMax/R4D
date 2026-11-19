@@ -1,0 +1,52 @@
+{
+  "card_pin": "904d3c189233a720118e1c7dbbfdd823397ab957",
+  "handoff_pin": "fa23a73ae638132e1197283f65a349e3360ed12e",
+  "author_manifest_path": "K:\\Agents\\R4D\\Review\\HO-TP-01\\assets\\v002\\manifest_v002.json",
+  "author_manifest_sha256": "8d6cc5010886ec46a66258afe8685b93b137376c7bf87bc8c66bb80441edeff0",
+  "native_size": [
+    1672,
+    941
+  ],
+  "roi_xywh": [
+    0,
+    480,
+    960,
+    461
+  ],
+  "art_inputs": {
+    "source": {
+      "path": "K:\\Agents\\R4D\\Review\\HO-AF-01\\C-ship-bakery\\HO-AF-01_C_selected-master_from-C2-correction01_20261119T085657Z.png",
+      "bytes": 3143145,
+      "sha256": "f6f96897290470778067ae15cba408418673f7578c38195736bee60fb822a65e",
+      "width": 1672,
+      "height": 941,
+      "mode": "RGB"
+    },
+    "bread_removed": {
+      "path": "K:\\Agents\\R4D\\Review\\HO-TP-01\\assets\\v001\\state_bread_removed_v003.png",
+      "bytes": 3021052,
+      "sha256": "f3d8248bdbea54dd8bea4185902201edbdc79ac0d9c2f47411136e16afc434b9",
+      "width": 1672,
+      "height": 941,
+      "mode": "RGB"
+    },
+    "bowl_removed": {
+      "path": "K:\\Agents\\R4D\\Review\\HO-TP-01\\assets\\v002\\state_bowl_removed_corrected_v003.png",
+      "bytes": 3024576,
+      "sha256": "cd3c374e274698a5f93e047a06cda901b567119c8d98aab82286ab887c178fb9",
+      "width": 1672,
+      "height": 941,
+      "mode": "RGB"
+    },
+    "both_removed": {
+      "path": "K:\\Agents\\R4D\\Review\\HO-TP-01\\assets\\v002\\state_both_removed_v003.png",
+      "bytes": 3024835,
+      "sha256": "79c95aa71ca8e06a3934d92c79a6f1ad1336dca6ccfef7676bd365921626b66e",
+      "width": 1672,
+      "height": 941,
+      "mode": "RGB"
+    }
+  },
+  "items": "bread: two large touching halves only, separate loose fragment/crumbs fixed; bowl: whole bowl with dough",
+  "frozen_runtime_inputs_file": "D:\\dev\\R4D\\experiments\\hidden-object\\HO-TP-01\\qa\\FINAL_QA_INPUTS_v002.json"
+}
