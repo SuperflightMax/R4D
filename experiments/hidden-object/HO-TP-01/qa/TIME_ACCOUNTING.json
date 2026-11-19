@@ -1,0 +1,138 @@
+{
+  "schema": "HO-TP-01-time-accounting-v1",
+  "observedAtUtc": "2026-11-19T16:32:40.2677451Z",
+  "scope": "All pilot-specific observed staff turns plus full current CTO turn through this delivery checkpoint, including service waits, coordination, onboarding and personnel closeout. Subsequent final Git handoff and response are outside this timestamp.",
+  "exactActiveTimeTracked": false,
+  "roles": [
+    {
+      "staffId": "concept-artist-r4d-ho01-f-01",
+      "turns": [
+        {
+          "id": "01a1f44f-4501-71a3-a07e-899ff416063e",
+          "startedAt": 1795100198,
+          "completedAt": 1795101579,
+          "durationMs": 1380942
+        },
+        {
+          "id": "01a1f436-19bf-7093-8a73-e6beb08d3d59",
+          "startedAt": 1795098548,
+          "completedAt": 1795100001,
+          "durationMs": 1452339
+        },
+        {
+          "id": "01a1f41c-25bf-7a23-af44-791408958bc1",
+          "startedAt": 1795096847,
+          "completedAt": 1795097529,
+          "durationMs": 681502
+        }
+      ],
+      "turnWallSeconds": 3514.783
+    },
+    {
+      "staffId": "builder-r4d-ho-tp01-01",
+      "turns": [
+        {
+          "id": "01a1f467-8526-77c3-9382-409aca4fc93b",
+          "startedAt": 1795101787,
+          "completedAt": 1795102274,
+          "durationMs": 487050
+        },
+        {
+          "id": "01a1f44d-a9ec-76f0-b1a1-5dd229a4301b",
+          "startedAt": 1795100092,
+          "completedAt": 1795100852,
+          "durationMs": 759337
+        },
+        {
+          "id": "01a1f440-250c-7002-9310-74da40adc765",
+          "startedAt": 1795099207,
+          "completedAt": 1795099532,
+          "durationMs": 325337
+        },
+        {
+          "id": "01a1f435-f192-70b0-8056-8f9782b8e743",
+          "startedAt": 1795098538,
+          "completedAt": 1795098899,
+          "durationMs": 360975
+        },
+        {
+          "id": "01a1f42b-35fd-7270-880e-218eb2fd8351",
+          "startedAt": 1795097835,
+          "completedAt": 1795097975,
+          "durationMs": 140815
+        }
+      ],
+      "turnWallSeconds": 2073.514
+    },
+    {
+      "staffId": "visual-qa-r4d-ho01-01",
+      "turns": [
+        {
+          "id": "01a1f46a-0986-74e3-b08d-1125452ed35b",
+          "startedAt": 1795101952,
+          "completedAt": 1795105719,
+          "durationMs": 3767506
+        },
+        {
+          "id": "01a1f41c-00de-7311-83e1-25c2e520c45a",
+          "startedAt": 1795096838,
+          "completedAt": 1795098231,
+          "durationMs": 1392685
+        }
+      ],
+      "turnWallSeconds": 5160.191
+    },
+    {
+      "staffId": "staff-director",
+      "turns": [
+        {
+          "id": "01a1f427-93b9-7123-99bb-6bc39817d3b2",
+          "startedAt": 1795097596,
+          "completedAt": 1795098098,
+          "durationMs": 501214
+        },
+        {
+          "id": "01a1f49a-c5ca-7631-bf9a-d6cecf8167df",
+          "startedAt": 1795105146,
+          "completedAt": 1795105836,
+          "durationMs": 690209
+        }
+      ],
+      "turnWallSeconds": 1191.423
+    }
+  ],
+  "root": {
+    "threadId": "01a1f078-de58-7260-bf06-1452b1dcb5e4",
+    "turnId": "01a1f417-5d8d-7a32-8242-ca607e985da2",
+    "startedAt": 1795096534,
+    "statusAtCheckpoint": "inProgressFinalHandoff",
+    "model": "gpt-6.1-sol",
+    "effort": "max",
+    "cwd": "D:\\dev\\R4D",
+    "wallSeconds": 9426.266999959946
+  },
+  "conservativeSummedTurnWallHours": 5.935049444433317,
+  "interpretation": "Sum of whole turn wall intervals includes waits and overlaps; a conservative ceiling for active team work through the timestamp, not a claimed exact active-hour measurement.",
+  "pilotTeamActiveLimitHours": 20,
+  "earlyRestorationLimitHours": 6,
+  "artistProductionTurnWallHours": 0.7870225,
+  "authorEstimates": {
+    "artistProductionActiveMinutes": [
+      33,
+      42
+    ],
+    "builderAllProductionActiveMinutesApprox": 29,
+    "confidence": "low; estimates separate from observed turn wall"
+  },
+  "imagegen": {
+    "observedCalls": 3,
+    "totalLimit": 8,
+    "earlyRestorationCalls": 3,
+    "earlyLimit": 4,
+    "observedToolWaitSeconds": 61.31,
+    "priceAndSeparateQuota": "unknown; existing approved subscription route only",
+    "newPaidApisPurchasesInstallsOrDeployments": 0
+  },
+  "closeoutEvidence": "K:\\Agents\\R4D\\Review\\HO-TP-01\\qa\\cto-closeout-observed-v002.json",
+  "closeoutEvidenceSha256": "adde6332697cc9a4ae260b16d0845964408b2200a74b6f0b61163dcb1e46bb5f"
+}
