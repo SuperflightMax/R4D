@@ -1,0 +1,111 @@
+{
+  "package": "HO-01/G0/S/C1/v001",
+  "staff_id": "concept-artist-r4d-ho01-s-01",
+  "date_local": "2026-11-19",
+  "authorization": "CTO address C1; Max via ДотМакса Sentinel_ac8b923181588191b318eebb82802f00",
+  "scope": "Только S-01/S-03 текущего G0, без изменения S0 или композиционного решения S-02",
+  "canon": {
+    "R4D": "54fe24b280c835ace0cca372fbbafbff58b97fb2",
+    "order_revision": 2,
+    "S0_revision": 3,
+    "program_revision": 3,
+    "Q1_id": "ho01-g0-f-v01-s-v001-q1-20261119",
+    "Q1_input_manifest_sha256_as_stated_in_task": "4fe39651c9c1ea87aae871cbb5c01a2cd2a2b0cde3fd306a1704cdeec3013299",
+    "Q1_published_commit_as_stated_in_task": "ed6d9d5dca2731e447c67bf0925c900bfb6c935a"
+  },
+  "selected": {
+    "master": "images/M-C1-v001.png",
+    "open_A": "images/A-C1-v001.png",
+    "map_M": "review/map-M-C1-v001.svg",
+    "map_A": "review/map-A-C1-v001.svg",
+    "map_M_render": "review/output/map-M-C1-1920-v002.png",
+    "map_A_render": "review/output/map-A-C1-1920-v002.png",
+    "lamp_native_evidence": "evidence/S01-LAMP-C1-native.png",
+    "neck_native_evidence": "evidence/S03-NECK-C1-native.png",
+    "viewer": "review/index-C1-v001.html",
+    "coverage": "coverage-C1-v001.json",
+    "report": "REPORT.md",
+    "self_check": "self-check-C1-v001.json"
+  },
+  "calls": [
+    {
+      "call": 1,
+      "issue": "S-01",
+      "tool": "image_gen.imagegen",
+      "start_utc": "2026-11-19 01:47:29 UTC",
+      "end_utc": "2026-11-19 01:47:51 UTC",
+      "input": "../images/10-master-v005.png",
+      "prompt": "prompts/01-M-C1-v001-unlit.txt",
+      "output": "images/M-C1-v001.png",
+      "default_source": "C:\\Users\\user\\.codex\\generated_images\\01a1f0a7-ccf0-7512-9a26-85c3cd02c39e\\exec-5ebefe32-a49a-47f0-a8b5-81b7df755d45.png",
+      "observation": "Пламя удалено, над горелкой виден тёмный негорящий фитиль и прозрачная пустая колба. Полный кадр осмотрен; смысловых изменений соседних находок/форм не обнаружено.",
+      "iterations_for_issue": 1,
+      "wait_seconds": 22,
+      "route": "встроенный инструмент, существующая подписка",
+      "price": "не раскрыта; нулевая не заявлена"
+    },
+    {
+      "call": 2,
+      "issue": "S-03",
+      "tool": "image_gen.imagegen",
+      "start_utc": "2026-11-19 01:48:20 UTC",
+      "end_utc": "2026-11-19 01:49:27 UTC",
+      "input": "../images/12-state-A-v005-open.png",
+      "prompt": "prompts/02-A-C1-v001-neck.txt",
+      "output": "images/A-C1-v001.png",
+      "default_source": "C:\\Users\\user\\.codex\\generated_images\\01a1f0a7-ccf0-7512-9a26-85c3cd02c39e\\exec-78404314-0836-4e0f-b723-87edbc6ae19a.png",
+      "observation": "Старую зелёную дугу нельзя было уверенно подтвердить как горлышко. Новый A содержит различимый полый короткий обломок с горловой кромкой и рваным краем слева от дна; отдельный треугольный 10, красная печать 19, дно и прочие осколки сохранены. Полный кадр осмотрен, соседние находки/формы смыслово сохранены.",
+      "iterations_for_issue": 1,
+      "wait_seconds": 67,
+      "route": "встроенный инструмент, существующая подписка",
+      "price": "не раскрыта; нулевая не заявлена"
+    }
+  ],
+  "metrics": {
+    "start_utc": "2026-11-19 01:45:49 UTC",
+    "completed_utc": "2026-11-19 01:57:17 UTC",
+    "elapsed_seconds_including_reading_generation_inspection_and_packaging": 688,
+    "imagegen_wait_seconds": 89,
+    "active_time": "не измерено отдельно",
+    "imagegen_specific_quota": "не раскрыта; оба обычных вызова завершились без отказа",
+    "call_price": "не раскрыта",
+    "human_intervention_after_GO": "не было"
+  },
+  "source_immutability": {
+    "writes": "Только новые рабочие файлы C1; ни один из 71 Q1-входов не перезаписывался и не дополнялся",
+    "checked_frozen_S_files": 5,
+    "before_hashes": "S-SOURCE-HASHES-before.json",
+    "after_hashes": "S-SOURCE-HASHES-after.json",
+    "hash_result": "все 5 совпали",
+    "all_71_rehashed": false,
+    "why_not_all_71": "Материалы F не открывались; выполнялась адресная S-коррекция"
+  },
+  "unchanged_requirements": {
+    "findings": 20,
+    "tools": 2,
+    "nodes": 8,
+    "master_visible": 13,
+    "open_visible": 18,
+    "union_visible": 20,
+    "composition": "намеренно не переставлялась; S-02 остаётся человеческим вопросом",
+    "artistic_invariants": "7 прежних признаков остаются предложением, не принятым контрактом"
+  },
+  "limits": [
+    "Независимая точечная повторная проверка C1 ещё не проведена.",
+    "B/C остаются историческими локальными исследованиями и не доказывают сохранение новой детали горлышка после изъятия 10/19.",
+    "Геометрические/композиционные отступления S-02 не исправлялись и не утверждались CTO.",
+    "Это нативные правки полных концептуальных растров; пиксельная неизменность всех внешних областей не заявляется.",
+    "Production-слои, runtime, G1/G2-последовательности и FX не создавались."
+  ],
+  "resource_state": {
+    "active_imagegen": false,
+    "own_heavy_processes": 0,
+    "headless_export": "Собственный headless Edge, скрытый отдельный профиль в C1; все вызванные процессы штатно завершились с кодом 0",
+    "profile": "review/output/isolated-headless-profile",
+    "profile_note": "Служебные файлы сохранены в C1; браузер не работает"
+  },
+  "F_read": false,
+  "general_Q1_report_read": false,
+  "human_art_PASS": false,
+  "status": "STOP_CTO_FOR_TARGETED_REPEAT_QA"
+}
