@@ -1,0 +1,32 @@
+[
+  {
+    "index": 1,
+    "tool": "image_gen.imagegen",
+    "start": "2026-11-19 14:38:49 UTC",
+    "end": "2026-11-19 14:39:10 UTC",
+    "observed_wait_seconds": 21.257,
+    "prompt": "D:\\dev\\R4D\\experiments\\hidden-object\\HO-TP-01\\art\\edit_01_bread_v001.prompt.txt",
+    "inputs": [
+      "K:\\Agents\\R4D\\Review\\HO-TP-01\\assets\\v001\\target_bread_v001.png",
+      "K:\\Agents\\R4D\\Review\\HO-TP-01\\assets\\v001\\guide_bread_v001.png"
+    ],
+    "default_output": "C:\\Users\\user\\.codex\\generated_images\\01a1f0a7-ccf2-7203-ab44-1b9ec4edb5c5\\exec-82c8ee1a-4ca7-45e7-82a9-3d76e962573e.png",
+    "saved_raw": "K:\\Agents\\R4D\\Review\\HO-TP-01\\assets\\v001\\raw_edit_01_bread_v001.png",
+    "outcome": "returned_png"
+  },
+  {
+    "index": 2,
+    "tool": "image_gen.imagegen",
+    "start": "2026-11-19 14:39:46 UTC",
+    "end": "2026-11-19 14:40:07 UTC",
+    "observed_wait_seconds": 20.736,
+    "prompt": "D:\\dev\\R4D\\experiments\\hidden-object\\HO-TP-01\\art\\edit_02_bowl_v001.prompt.txt",
+    "inputs": [
+      "K:\\Agents\\R4D\\Review\\HO-TP-01\\assets\\v001\\target_bowl_v001.png",
+      "K:\\Agents\\R4D\\Review\\HO-TP-01\\assets\\v001\\guide_bowl_v003.png"
+    ],
+    "default_output": "C:\\Users\\user\\.codex\\generated_images\\01a1f0a7-ccf2-7203-ab44-1b9ec4edb5c5\\exec-470fe3ad-6f3f-4caa-ac5e-96ebcb98d48f.png",
+    "saved_raw": "K:\\Agents\\R4D\\Review\\HO-TP-01\\assets\\v001\\raw_edit_02_bowl_v001.png",
+    "outcome": "returned_png"
+  }
+]

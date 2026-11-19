@@ -1,0 +1,11 @@
+Use case: precise-object-edit
+Task: Local restoration of the exact supplied ship-bakery crop, not a new composition.
+
+Input image 1 is the EDIT TARGET: an unmodified 480x320-pixel crop from the original painting, showing the two large touching broken bread halves on flour-dusted wood.
+Input image 2 is a TECHNICAL BLACK/WHITE EDIT GUIDE for the same crop. White identifies only the two touching large halves and their immediate contact-shadow footprint. Black means preserve the original content. The white guide is not artwork, not an object, and must not appear in the result.
+
+Remove ONLY BOTH LARGE TOUCHING BREAD HALVES in the center-left of image 1, including their actual contact shadows on the wooden table. Reconstruct the formerly concealed wood and irregular flour beneath them: believable continuing plank grain, scuffs, worn warm tones, small granular flour, and the same oblique perspective and sunlight. The hidden texture is a plausible artistic reconstruction, not a flat fill or a blurred orange patch. Do not leave a bread silhouette, a dark oval footprint, crust fragments from those two halves, or ghost edges.
+
+KEEP the separate torn bread piece to the RIGHT of the main group EXACTLY WHERE IT IS. Also keep every small separate crumb, the embroidered linen in front with its actual folds and its own shadows, the bowl and dough visible at the upper right, the little rectangular wood block, the table edge and the rest of the scene. The bread was resting on WOOD beside the linen, not on the linen. Do not invent a shadow of one removable object on another. Do not clean the flour off the whole table or erase all crumbs as part of removing the two halves.
+
+Return the same complete crop at the same framing, camera, aspect and intended native 480x320 dimensions, with only the localized removal/restoration. Preserve the existing style, light and color. Render the actual colored painting, without the guide, marks, annotations, labels, borders or any mask. Do not redesign, recrop or zoom.

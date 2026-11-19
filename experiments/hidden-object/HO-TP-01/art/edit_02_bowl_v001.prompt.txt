@@ -1,0 +1,11 @@
+Use case: precise-object-edit
+Task: Local restoration of the exact supplied ship-bakery crop, independently from the original, not a new composition.
+
+Input image 1 is the EDIT TARGET: an unmodified 384x256-pixel original crop containing the wooden mixing bowl and dough on a flour-dusted wooden worktop.
+Input image 2 is a TECHNICAL BLACK/WHITE EDIT GUIDE in the same crop coordinates. White identifies the bowl, all dough in it and its actual immediate contact-shadow footprint. Black identifies original content that must stay. Do not render the guide.
+
+Remove ONLY the entire WOODEN BOWL TOGETHER WITH ALL DOUGH in it, including the rim, walls and actual contact shadow on the table. The dough must not be left floating. Restore the formerly concealed wooden worktop and its irregular flour in the same perspective, sunlight, warm wood material and varied worn grain. Continue visible structural lines naturally, with no flat monochrome fill, smooth oval patch, bowl outline, phantom wall or baked-in contact shadow. Restore a plausible hidden surface, not a different tabletop or arrangement.
+
+Preserve the nearby embroidered linen BEHIND and to the RIGHT of the bowl, its folds, edge, embroidery, hanging cord and own shadows. Preserve the rectangular wooden block to the lower left of the bowl, the large bread group partly visible at lower left, the separate torn piece, all small crumbs, the table edge and hardware, the bread in the hanging fabric and the rest of the crop. Both removable elements stand on wood; do not invent linen beneath the bowl or an inter-object shadow. Visible linen is not something to erase to make the task easier. Any newly revealed sliver immediately behind the removed rim must connect coherently to the unchanged visible surroundings.
+
+Return the same complete colored crop at the same framing, camera, aspect and intended native 384x256 dimensions. Keep existing painting quality, light and color, and no annotations, guide, mask, text, borders, recropping or zoom.
