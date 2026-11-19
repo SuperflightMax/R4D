@@ -1,0 +1,61 @@
+{
+  "key": "FX01-D1-CUT-43b6268e-20261119T031029Z",
+  "status": "BROWSER_DELIVERY_SMOKE_PASS",
+  "source": "43b6268e924698048a4d79df1aad2512c86f08f7",
+  "url": "https://superflight.space/review/r4d/fx-workshop/fx-01/",
+  "testUrl": "https://superflight.space/review/r4d/fx-workshop/fx-01/?test=FX01-D1-CUT-43b6268e-1795058789007",
+  "checks": [
+    "Live global FX card reaches R4D section",
+    "Live R4D card identifies UX candidate",
+    "Browser loaded exact index.html",
+    "Browser loaded exact style.css",
+    "Browser loaded exact app.js",
+    "Browser received all three runtime responses",
+    "Live preview visible",
+    "Live apply and parameter edit work",
+    "Live A to B retains draft",
+    "Live B to A retains parameter",
+    "Live pin saved and feedback clean",
+    "Live reload restores draft and pinned recipe",
+    "Delivery smoke did not touch ordinary namespace",
+    "No page/console errors or failed requests"
+  ],
+  "loaded": [
+    {
+      "name": "index.html",
+      "url": "https://superflight.space/review/r4d/fx-workshop/fx-01/?test=FX01-D1-CUT-43b6268e-1795058789007",
+      "status": 200,
+      "size": 5387,
+      "sha256": "b4d67713c59184e4f813f4ba89c8d3b074f60149e7be90c9a29595e83561bab5",
+      "mime": "text/html"
+    },
+    {
+      "name": "style.css",
+      "url": "https://superflight.space/review/r4d/fx-workshop/fx-01/style.css",
+      "status": 200,
+      "size": 7215,
+      "sha256": "c7409f0d06fca2b22b8f0f6cde013529c8d20a9fe84c61b205d5212bc6bc3a3b",
+      "mime": "text/css"
+    },
+    {
+      "name": "app.js",
+      "url": "https://superflight.space/review/r4d/fx-workshop/fx-01/app.js",
+      "status": 200,
+      "size": 27932,
+      "sha256": "b34abd8bfc6e6f010397da9b2372def74f005271ce1e92a8e35b5ce9b2405f6f",
+      "mime": "application/javascript"
+    }
+  ],
+  "errors": [],
+  "failed": [],
+  "conditions": {
+    "css": [
+      1920,
+      1080
+    ],
+    "dpr": 1,
+    "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/145.0.7632.6 Safari/537.36"
+  },
+  "physicalM11": "NOT_VERIFIED",
+  "humanGate": "PENDING"
+}

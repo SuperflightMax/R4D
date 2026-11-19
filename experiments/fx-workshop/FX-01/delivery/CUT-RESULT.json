@@ -1,0 +1,17 @@
+{
+  "key": "FX01-D1-CUT-43b6268e-20261119T031029Z",
+  "status": "CUT_COMPLETE_AWAITING_HTTP_BROWSER",
+  "at_utc": "2026-11-19T03:23:51.750105+00:00",
+  "source": "43b6268e924698048a4d79df1aad2512c86f08f7",
+  "url": "https://superflight.space/review/r4d/fx-workshop/fx-01/",
+  "root": "/srv/superflight-review/releases/fx01-43b6268e-20261119T031029Z",
+  "snippet_sha256": "39b20c6fe05572089c1038ec95129211c8b6b2fc374c16b3baac117da04f3456",
+  "before_snippet_sha256": "b9dde1214d4aabf6b7d4469fddf5cd81ee29f8e94706b20a8fa900b92f21e983",
+  "nginx_test_before": true,
+  "nginx_test_after": "nginx: the configuration file /etc/nginx/nginx.conf syntax is ok\nnginx: configuration file /etc/nginx/nginx.conf test is successful",
+  "graceful_reload_count": 1,
+  "nginx_state_after": "MainPID=817381\nExecReload={ path=/bin/sh ; argv[]=/bin/sh -c /bin/kill -s HUP $(/bin/cat /run/nginx.pid) ; ignore_errors=no ; start_time=[Thu 2026-11-19 03:23:49 UTC] ; stop_time=[Thu 2026-11-19 03:23:49 UTC] ; pid=3842157 ; code=exited ; status=0 }\nActiveState=active",
+  "protected_and_old_tree_unchanged": true,
+  "staged_tree_exact": true,
+  "rollback": "/opt/superflight-studio/backups/review-fx01-43b6268e-20261119T031029Z/d1_rollback.py"
+}

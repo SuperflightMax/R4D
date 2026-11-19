@@ -1,0 +1,316 @@
+{
+  "key": "FX01-D1-CUT-43b6268e-20261119T031029Z",
+  "status": "HTTP_VERIFIED",
+  "at_utc": "2026-11-19T03:24:56.963895+00:00",
+  "source": "43b6268e924698048a4d79df1aad2512c86f08f7",
+  "release_id": "fx01-43b6268e-20261119T031029Z",
+  "url": "https://superflight.space/review/r4d/fx-workshop/fx-01/",
+  "passed": 16,
+  "total": 16,
+  "probes": [
+    {
+      "path": "/review/r4d/fx-workshop/fx-01/index.html",
+      "method": "GET",
+      "foreign_origin": false,
+      "status": 200,
+      "expected_status": 200,
+      "bytes": 5387,
+      "sha256": "b4d67713c59184e4f813f4ba89c8d3b074f60149e7be90c9a29595e83561bab5",
+      "mime": "text/html",
+      "headers": {
+        "Cache-Control": "no-store",
+        "Strict-Transport-Security": "max-age=31536000",
+        "X-Robots-Tag": "noindex, nofollow, noarchive",
+        "X-Content-Type-Options": "nosniff",
+        "Referrer-Policy": "same-origin",
+        "X-Frame-Options": "DENY"
+      },
+      "ok": true
+    },
+    {
+      "path": "/review/r4d/fx-workshop/fx-01/style.css",
+      "method": "GET",
+      "foreign_origin": false,
+      "status": 200,
+      "expected_status": 200,
+      "bytes": 7215,
+      "sha256": "c7409f0d06fca2b22b8f0f6cde013529c8d20a9fe84c61b205d5212bc6bc3a3b",
+      "mime": "text/css",
+      "headers": {
+        "Cache-Control": "no-store",
+        "Strict-Transport-Security": "max-age=31536000",
+        "X-Robots-Tag": "noindex, nofollow, noarchive",
+        "X-Content-Type-Options": "nosniff",
+        "Referrer-Policy": "same-origin",
+        "X-Frame-Options": "DENY"
+      },
+      "ok": true
+    },
+    {
+      "path": "/review/r4d/fx-workshop/fx-01/app.js",
+      "method": "GET",
+      "foreign_origin": false,
+      "status": 200,
+      "expected_status": 200,
+      "bytes": 27932,
+      "sha256": "b34abd8bfc6e6f010397da9b2372def74f005271ce1e92a8e35b5ce9b2405f6f",
+      "mime": "application/javascript",
+      "headers": {
+        "Cache-Control": "no-store",
+        "Strict-Transport-Security": "max-age=31536000",
+        "X-Robots-Tag": "noindex, nofollow, noarchive",
+        "X-Content-Type-Options": "nosniff",
+        "Referrer-Policy": "same-origin",
+        "X-Frame-Options": "DENY"
+      },
+      "ok": true
+    },
+    {
+      "path": "/review/index.html",
+      "method": "GET",
+      "foreign_origin": false,
+      "status": 200,
+      "expected_status": 200,
+      "bytes": 4040,
+      "sha256": "7daeb23ed4b669920ee264df648aae42b17309e084fb4c7ad3ab96bef4c94783",
+      "mime": "text/html",
+      "headers": {
+        "Cache-Control": "no-store",
+        "Strict-Transport-Security": "max-age=31536000",
+        "X-Robots-Tag": "noindex, nofollow, noarchive",
+        "X-Content-Type-Options": "nosniff",
+        "Referrer-Policy": "same-origin",
+        "X-Frame-Options": "DENY"
+      },
+      "ok": true
+    },
+    {
+      "path": "/review/r4d/index.html",
+      "method": "GET",
+      "foreign_origin": false,
+      "status": 200,
+      "expected_status": 200,
+      "bytes": 17923,
+      "sha256": "dc24d151a30855301d869c50d0eccba007d2f85471ab0fb4bf6e5e90bd9c96c8",
+      "mime": "text/html",
+      "headers": {
+        "Cache-Control": "no-store",
+        "Strict-Transport-Security": "max-age=31536000",
+        "X-Robots-Tag": "noindex, nofollow, noarchive",
+        "X-Content-Type-Options": "nosniff",
+        "Referrer-Policy": "same-origin",
+        "X-Frame-Options": "DENY"
+      },
+      "ok": true
+    },
+    {
+      "path": "/review/r4d/fx-workshop/fx-01/",
+      "method": "GET",
+      "foreign_origin": false,
+      "status": 200,
+      "expected_status": 200,
+      "bytes": 5387,
+      "sha256": "b4d67713c59184e4f813f4ba89c8d3b074f60149e7be90c9a29595e83561bab5",
+      "mime": "text/html",
+      "headers": {
+        "Cache-Control": "no-store",
+        "Strict-Transport-Security": "max-age=31536000",
+        "X-Robots-Tag": "noindex, nofollow, noarchive",
+        "X-Content-Type-Options": "nosniff",
+        "Referrer-Policy": "same-origin",
+        "X-Frame-Options": "DENY"
+      },
+      "ok": true
+    },
+    {
+      "path": "/review/r4d/fx-workshop/fx-01/README.md",
+      "method": "GET",
+      "foreign_origin": false,
+      "status": 404,
+      "expected_status": 404,
+      "bytes": 146,
+      "sha256": "55f7d9e99b8e2d4e0e193b2f0275501e6d9c1ebd29cadbea6a0da48a8587e3e0",
+      "mime": "text/html",
+      "headers": {
+        "Cache-Control": "no-store",
+        "Strict-Transport-Security": "max-age=31536000",
+        "X-Robots-Tag": "noindex, nofollow, noarchive",
+        "X-Content-Type-Options": "nosniff",
+        "Referrer-Policy": "same-origin",
+        "X-Frame-Options": "DENY"
+      },
+      "ok": true
+    },
+    {
+      "path": "/review/r4d/fx-workshop/fx-01/SELF-CHECK.md",
+      "method": "GET",
+      "foreign_origin": false,
+      "status": 404,
+      "expected_status": 404,
+      "bytes": 146,
+      "sha256": "55f7d9e99b8e2d4e0e193b2f0275501e6d9c1ebd29cadbea6a0da48a8587e3e0",
+      "mime": "text/html",
+      "headers": {
+        "Cache-Control": "no-store",
+        "Strict-Transport-Security": "max-age=31536000",
+        "X-Robots-Tag": "noindex, nofollow, noarchive",
+        "X-Content-Type-Options": "nosniff",
+        "Referrer-Policy": "same-origin",
+        "X-Frame-Options": "DENY"
+      },
+      "ok": true
+    },
+    {
+      "path": "/review/r4d/fx-workshop/fx-01/C1-SELF-CHECK.md",
+      "method": "GET",
+      "foreign_origin": false,
+      "status": 404,
+      "expected_status": 404,
+      "bytes": 146,
+      "sha256": "55f7d9e99b8e2d4e0e193b2f0275501e6d9c1ebd29cadbea6a0da48a8587e3e0",
+      "mime": "text/html",
+      "headers": {
+        "Cache-Control": "no-store",
+        "Strict-Transport-Security": "max-age=31536000",
+        "X-Robots-Tag": "noindex, nofollow, noarchive",
+        "X-Content-Type-Options": "nosniff",
+        "Referrer-Policy": "same-origin",
+        "X-Frame-Options": "DENY"
+      },
+      "ok": true
+    },
+    {
+      "path": "/review/r4d/fx-workshop/fx-01/checks/interaction.js",
+      "method": "GET",
+      "foreign_origin": false,
+      "status": 404,
+      "expected_status": 404,
+      "bytes": 146,
+      "sha256": "55f7d9e99b8e2d4e0e193b2f0275501e6d9c1ebd29cadbea6a0da48a8587e3e0",
+      "mime": "text/html",
+      "headers": {
+        "Cache-Control": "no-store",
+        "Strict-Transport-Security": "max-age=31536000",
+        "X-Robots-Tag": "noindex, nofollow, noarchive",
+        "X-Content-Type-Options": "nosniff",
+        "Referrer-Policy": "same-origin",
+        "X-Frame-Options": "DENY"
+      },
+      "ok": true
+    },
+    {
+      "path": "/review/r4d/fx-workshop/fx-01/checks/evidence/c1/after-result.json",
+      "method": "GET",
+      "foreign_origin": false,
+      "status": 404,
+      "expected_status": 404,
+      "bytes": 146,
+      "sha256": "55f7d9e99b8e2d4e0e193b2f0275501e6d9c1ebd29cadbea6a0da48a8587e3e0",
+      "mime": "text/html",
+      "headers": {
+        "Cache-Control": "no-store",
+        "Strict-Transport-Security": "max-age=31536000",
+        "X-Robots-Tag": "noindex, nofollow, noarchive",
+        "X-Content-Type-Options": "nosniff",
+        "Referrer-Policy": "same-origin",
+        "X-Frame-Options": "DENY"
+      },
+      "ok": true
+    },
+    {
+      "path": "/review/r4d/fx-workshop/fx-01/app.js.map",
+      "method": "GET",
+      "foreign_origin": false,
+      "status": 404,
+      "expected_status": 404,
+      "bytes": 146,
+      "sha256": "55f7d9e99b8e2d4e0e193b2f0275501e6d9c1ebd29cadbea6a0da48a8587e3e0",
+      "mime": "text/html",
+      "headers": {
+        "Cache-Control": "no-store",
+        "Strict-Transport-Security": "max-age=31536000",
+        "X-Robots-Tag": "noindex, nofollow, noarchive",
+        "X-Content-Type-Options": "nosniff",
+        "Referrer-Policy": "same-origin",
+        "X-Frame-Options": "DENY"
+      },
+      "ok": true
+    },
+    {
+      "path": "/review/r4d/fx-workshop/fx-01/.git/config",
+      "method": "GET",
+      "foreign_origin": false,
+      "status": 404,
+      "expected_status": 404,
+      "bytes": 146,
+      "sha256": "55f7d9e99b8e2d4e0e193b2f0275501e6d9c1ebd29cadbea6a0da48a8587e3e0",
+      "mime": "text/html",
+      "headers": {
+        "Cache-Control": "no-store",
+        "Strict-Transport-Security": "max-age=31536000",
+        "X-Robots-Tag": "noindex, nofollow, noarchive",
+        "X-Content-Type-Options": "nosniff",
+        "Referrer-Policy": "same-origin",
+        "X-Frame-Options": "DENY"
+      },
+      "ok": true
+    },
+    {
+      "path": "/review/r4d/fx-workshop/fx-01/delivery/D1-STAGING.json",
+      "method": "GET",
+      "foreign_origin": false,
+      "status": 404,
+      "expected_status": 404,
+      "bytes": 146,
+      "sha256": "55f7d9e99b8e2d4e0e193b2f0275501e6d9c1ebd29cadbea6a0da48a8587e3e0",
+      "mime": "text/html",
+      "headers": {
+        "Cache-Control": "no-store",
+        "Strict-Transport-Security": "max-age=31536000",
+        "X-Robots-Tag": "noindex, nofollow, noarchive",
+        "X-Content-Type-Options": "nosniff",
+        "Referrer-Policy": "same-origin",
+        "X-Frame-Options": "DENY"
+      },
+      "ok": true
+    },
+    {
+      "path": "/review/r4d/fx-workshop/fx-01/",
+      "method": "GET",
+      "foreign_origin": true,
+      "status": 403,
+      "expected_status": 403,
+      "bytes": 146,
+      "sha256": "32f2fa940d4b4fe19aca1e53a24e5aac29c57b7c5ee78588325b87f1b649c864",
+      "mime": "text/html",
+      "headers": {
+        "Cache-Control": "no-store",
+        "Strict-Transport-Security": "max-age=31536000",
+        "X-Robots-Tag": "noindex, nofollow, noarchive",
+        "X-Content-Type-Options": "nosniff",
+        "Referrer-Policy": "same-origin",
+        "X-Frame-Options": "DENY"
+      },
+      "ok": true
+    },
+    {
+      "path": "/review/r4d/fx-workshop/fx-01/",
+      "method": "POST",
+      "foreign_origin": false,
+      "status": 403,
+      "expected_status": 403,
+      "bytes": 146,
+      "sha256": "32f2fa940d4b4fe19aca1e53a24e5aac29c57b7c5ee78588325b87f1b649c864",
+      "mime": "text/html",
+      "headers": {
+        "Cache-Control": "no-store",
+        "Strict-Transport-Security": "max-age=31536000",
+        "X-Robots-Tag": "noindex, nofollow, noarchive",
+        "X-Content-Type-Options": "nosniff",
+        "Referrer-Policy": "same-origin",
+        "X-Frame-Options": "DENY"
+      },
+      "ok": true
+    }
+  ]
+}
