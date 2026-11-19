@@ -1,0 +1,56 @@
+{
+  "root": "/srv/superflight-review/releases/ho-tp-01-v004-art-v002-0c1d63db",
+  "previous_root": "/srv/superflight-review/releases/fx01-43b6268e-20261119T031029Z",
+  "manifest_sha256": "d13f10d1af8097ce5516aa5b30cbf6c3894ec974793efdaca8bc814647ca1874",
+  "baseline_sha256": "e74a080eefa7b103e9382372d4f72be796aba7fc8532bb6427ecb5656dcc055e",
+  "previous_snippet_sha256": "39b20c6fe05572089c1038ec95129211c8b6b2fc374c16b3baac117da04f3456",
+  "files": [
+    {
+      "relativePath": "index.html",
+      "sourcePath": "K:\\Agents\\R4D\\Review\\HO-TP-01\\runtime\\index.html",
+      "bytes": 1805,
+      "sha256": "cb0ec323fc584e6162b3741a764a896ece59b779272df4a639f6974a647b8dc9"
+    },
+    {
+      "relativePath": "style.css",
+      "sourcePath": "K:\\Agents\\R4D\\Review\\HO-TP-01\\runtime\\style.css",
+      "bytes": 1518,
+      "sha256": "66314d5fff3f426f6ceb2cf74853f86c5664831e9335fde5c0390590324a7f8e"
+    },
+    {
+      "relativePath": "app.js",
+      "sourcePath": "K:\\Agents\\R4D\\Review\\HO-TP-01\\runtime\\app.js",
+      "bytes": 9995,
+      "sha256": "5e1fea2fc167863e8bcf38d11e73888574e220f567e74c1153aef3f8e17adc32"
+    },
+    {
+      "relativePath": "assets.js",
+      "sourcePath": "K:\\Agents\\R4D\\Review\\HO-TP-01\\runtime\\assets.js",
+      "bytes": 5041031,
+      "sha256": "1ba6c8d6cfb7639e9eea3d6fad83f811b2648d6b47f9deddd124b76d4da8554c"
+    }
+  ],
+  "bytes": 194175713,
+  "preserved": 1053,
+  "status": "DELIVERY_VERIFIED_WITH_OBSERVATIONS",
+  "backup": "/opt/superflight-studio/backups/review-ho-tp01-20261119T173513Z",
+  "live_snippet_sha256": "95fe849321a9ed5ba2c33173cf90f93efebc2e8043e79e9bd33081da1e6b9681",
+  "switched_at": "2026-11-19T17:35:16.173032+00:00",
+  "url": "https://superflight.space/review/r4d/ho-tp-01/v004-art-v002-0c1d63db/",
+  "sourceTaskCommit": "ca3d23e2a28dc4829f322bbec3745881eedd52fc",
+  "reportCommit": "0c1d63db159e7ae40102251aa66d2f9b1d63ad61",
+  "runtimeCodeCommit": "9200c8b2c5c18c3b6e4c6f333e1ccca847af98e6",
+  "artStatus": "Author PARTIAL: narrow upper bowl seam; human art acceptance pending",
+  "canvasRgbaSha256": "28a8782d5bfaeb712357c8025301f4f18ad83f55c0955ebf640ae32317831a01",
+  "observations": [
+    "Harness classified a Canvas2D readback performance warning as an error after the required click/hash checks completed. Raw receipt retained.",
+    "Browser favicon request outside the four-file runtime returned 404; frozen runtime unchanged."
+  ],
+  "previousManifestMismatch": {
+    "extra": 3,
+    "changed": 2
+  },
+  "postSwitchPreservedFiles": 1053,
+  "protectedUnchanged": true,
+  "hold": true
+}
