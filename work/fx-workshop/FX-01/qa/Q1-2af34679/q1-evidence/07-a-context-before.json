@@ -1,0 +1,20 @@
+{
+  "label": "07-a-context-before",
+  "at": "2026-11-19T02:12:36.488Z",
+  "url": "http://127.0.0.1:18732/?test=FX01-Q1-2af34679-first-a",
+  "viewport": {
+    "width": 1920,
+    "height": 1080,
+    "dpr": 1,
+    "visualScale": 1,
+    "screen": {
+      "width": 1920,
+      "height": 1080
+    },
+    "fullscreen": false
+  },
+  "snapshot": "- banner:\n  - heading \"FX Workshop\" [level=1]\n  - text: Проба взаимодействия · FX-01\n  - navigation \"С чего начать\":\n    - button \"От эффекта\" [pressed]\n    - button \"От объекта\"\n  - button \"Коллекция 0\"\n- status: Черновик сохранён на этом устройстве\n- main:\n  - complementary \"Выбор эффекта и объекта\":\n    - heading \"Найдите эффект\" [level=2]\n    - paragraph: Наведите на вариант для примерки. Примените, когда понравится.\n    - button \"Следы шарика\" [pressed]\n    - button \"Свет и каскад кнопок\"\n    - button \"Появление надписи\"\n    - 'article \"Примерить: Кометный след\"':\n      - heading \"Кометный след\" [level=3]\n      - text: Длинный затухающий хвост\n      - button \"Заменить шаг\"\n      - button \"Добавить шаг\"\n    - 'article \"Примерить: Бусы\"':\n      - heading \"Бусы\" [level=3]\n      - text: Крупные отдельные точки\n      - button \"Заменить шаг\"\n      - button \"Добавить шаг\"\n  - text: Цель\n  - combobox \"Цель эффекта\":\n    - option \"Шарик\" [selected]\n    - option \"Вся панель\"\n    - option \"Кнопка Один\"\n    - option \"Кнопка Два\"\n    - option \"Кнопка Три\"\n    - option \"Надпись\"\n  - button \"Пауза\"\n  - button \"Повторить\"\n  - text: 4,6 с\n  - 'img \"Сцена: кнопки, движущийся шарик и надпись\"':\n    - text: Один Два Три Привет, мастерская!\n    - button \"Выбрать всю панель кнопок\": Панель кнопок · вся группа\n    - button \"Выбрать кнопку Один\"\n    - button \"Выбрать кнопку Два\"\n    - button \"Выбрать кнопку Три\"\n    - button \"Выбрать шарик\": Шарик\n    - button \"Выбрать надпись\"\n    - slider \"Радиус траектории\"\n    - text: Радиус 173,35\n  - button \"Отменить\"\n  - button \"Вернуть\" [disabled]\n  - text: Новый черновик\n  - region \"Композиция\":\n    - heading \"Композиция\" [level=2]\n    - text: Добавляйте шаги из галереи. Порядок меняется здесь.\n    - button \"1. Кометный след · Шарик\"\n    - text: Сначала · 0–4 с\n    - 'button \"Выше: Кометный след\" [disabled]': Выше\n    - 'button \"Ниже: Кометный след\" [disabled]': Ниже\n    - 'button \"Убрать: Кометный след\"': Убрать\n  - complementary \"Настройки выбранного шага\":\n    - heading \"Кометный след\" [level=2]\n    - paragraph: Шарик · шаг 1\n    - paragraph: Колесо над числом — изменить. Shift + колесо — точнее. Клик и ввод тоже работают.\n    - text: Длина хвоста · точек\n    - spinbutton \"Длина хвоста\": \"32\"\n    - text: Скорость\n    - spinbutton \"Скорость\": \"1.11\"\n    - text: Радиус траектории · на сцене\n    - spinbutton \"Радиус траектории\": \"173.35\"\n    - text: Цвет\n    - textbox \"Цвет эффекта\": \"#83d9ff\"\n    - text: Длительность · с\n    - spinbutton \"Длительность\": \"4\"\n    - text: Начало шага\n    - combobox \"Начало шага\" [disabled]:\n      - option \"Сначала (от начала)\" [selected]\n      - option \"Одновременно с предыдущим\"\n      - option \"После предыдущего\"\n    - text: Задержка · с\n    - spinbutton \"Задержка\": \"0\"\n    - paragraph: Выбранный шаг меняется в черновике. Сохранённый рецепт остаётся прежним до «Сохранить редакцию».\n- contentinfo:\n  - text: Примерка не меняет черновик. Закрепите понравившуюся работу.\n  - button \"Закрепить в коллекции\"",
+  "storage": {
+    "r4d-fx01:test:FX01-Q1-2af34679-first-a": "{\"version\":1,\"draft\":{\"entry\":\"effects\",\"target\":\"ball\",\"text\":\"Привет, мастерская!\",\"steps\":[{\"id\":\"8ee6dbb0-5d35-456b-8b94-c1f11422e78c\",\"target\":\"ball\",\"variant\":\"comet\",\"relation\":\"start\",\"delay\":0,\"duration\":4,\"length\":32,\"speed\":1.11,\"radius\":173.35,\"color\":\"#83d9ff\",\"stagger\":0.2,\"shift\":30}],\"selected\":\"8ee6dbb0-5d35-456b-8b94-c1f11422e78c\",\"recipeId\":null},\"recipes\":[]}"
+  }
+}
