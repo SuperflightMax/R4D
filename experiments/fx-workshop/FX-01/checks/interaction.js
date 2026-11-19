@@ -1,0 +1,153 @@
+// Run with an existing Playwright CLI: run-code --filename=<absolute path>.
+// Uses a fresh isolated ?test= namespace. No dependency installation or participant reset.
+async (page) => {
+  const results=[];
+  const errors=[];page.on('pageerror',e=>errors.push(e.message));
+  const ok=(condition,name)=>{if(!condition)throw Error(name);results.push(name);};
+  const state=()=>page.evaluate(()=>JSON.parse(JSON.stringify({draft,recipes,undo:undo.length,redo:redo.length,preview:!!preview})));
+  const settle=()=>page.waitForTimeout(650);
+  const value=label=>page.getByRole('spinbutton',{name:label,exact:true}).inputValue();
+  const edit=async(label,n)=>{await page.getByRole('spinbutton',{name:label,exact:true}).fill(String(n));await page.getByRole('spinbutton',{name:label,exact:true}).press('Tab');await settle();};
+  const card=name=>page.getByRole('article',{name:`Примерить: ${name}`,exact:true});
+  const apply=async(name,action='Применить')=>{await card(name).getByRole('button',{name:action,exact:true}).click();await page.mouse.move(400,130);};
+  const url=`http://127.0.0.1:18731/?test=builder-${Date.now()}`;
+  await page.goto(url);
+  const participantBefore=await page.evaluate(()=>localStorage.getItem('r4d-fx01:work'));
+  await page.locator('body').ariaSnapshot();
+  // M01/M03: actual hover is transient, applying produces a live, editable step.
+  await card('Кометный след').hover();
+  ok(await page.locator('#preview-status').isVisible(),'M03 visible hover preview');
+  ok((await state()).draft.steps.length===0&&(await state()).undo===0,'M03 preview leaves work/history untouched');
+  await page.keyboard.press('Escape');
+  ok(!(await page.locator('#preview-status').isVisible()),'M03 Escape cancels preview');
+  await apply('Кометный след');
+  ok((await state()).draft.steps.length===1&&await value('Длина хвоста')==='28','M01 A apply and settings');
+  await page.getByRole('button',{name:'Повторить',exact:true}).click();
+  await page.waitForFunction(()=>document.querySelector('#scene-art').querySelectorAll('circle').length>20);
+  const liveBefore=await page.locator('#scene-art').innerHTML();await page.waitForTimeout(120);
+  ok(liveBefore!==await page.locator('#scene-art').innerHTML(),'M01 live scene changes over time');
+  const draftBefore=JSON.stringify((await state()).draft),undoBefore=(await state()).undo;
+  await card('Бусы').hover();await page.waitForTimeout(100);await page.mouse.move(400,130);
+  ok(JSON.stringify((await state()).draft)===draftBefore&&(await state()).undo===undoBefore,'M03 alternate preview restores exact draft');
+  await card('Бусы').hover();
+  await page.getByRole('button',{name:'От объекта',exact:true}).click();
+  ok(!(await state()).preview&&JSON.stringify((await state()).draft.steps)===JSON.stringify(JSON.parse(draftBefore).steps),'M02 A to B keeps steps and cancels preview');
+  ok((await state()).draft.target==='ball'&&(await state()).draft.selected===JSON.parse(draftBefore).selected,'M02 target and selected step retained');
+  await apply('Бусы','Заменить шаг');
+  ok((await state()).draft.steps.length===1&&(await state()).draft.steps[0].variant==='beads','M03 replaces current variant');
+  await page.getByRole('button',{name:'Отменить',exact:true}).click();
+  ok((await state()).draft.steps[0].variant==='comet','M09 undo returns previous seen variant');
+  // Hover wheel without focus, coarse/fine increments, one undo per burst.
+  const history0=(await state()).undo;
+  await page.getByRole('heading',{name:'FX Workshop',exact:true}).click();
+  await page.getByRole('spinbutton',{name:'Длина хвоста',exact:true}).hover();
+  ok(await page.evaluate(()=>document.activeElement!==document.querySelector('[data-param=length]')),'M04 hover did not focus number');
+  for(let i=0;i<3;i++){await page.mouse.wheel(0,-120);await page.waitForTimeout(40);}
+  await settle();
+  ok(await value('Длина хвоста')==='31'&&(await state()).undo===history0+1,'M04/M09 wheel burst is three increments and one undo');
+  await page.getByRole('button',{name:'Отменить',exact:true}).click();
+  ok(await value('Длина хвоста')==='28','M09 one undo reverses whole wheel burst');
+  await page.getByRole('button',{name:'Вернуть',exact:true}).click();
+  await page.getByRole('spinbutton',{name:'Скорость',exact:true}).hover();
+  await page.keyboard.down('Shift');await page.mouse.wheel(0,-100);await page.keyboard.up('Shift');await settle();
+  ok(await value('Скорость')==='1.01','M04 Shift gives fine increment');
+  await page.getByRole('button',{name:'Отменить',exact:true}).click();
+  await edit('Скорость',1.3);
+  ok((await state()).redo===0&&await page.getByRole('button',{name:'Вернуть',exact:true}).isDisabled(),'M09 new edit discards redo branch');
+  // M06: actual SVG hit target, persistent capture, several pointer moves, one undo.
+  await page.getByRole('slider',{name:'Радиус траектории',exact:true}).waitFor({state:'visible'});
+  const box=await page.getByRole('slider',{name:'Радиус траектории',exact:true}).boundingBox();
+  const radius0=Number(await value('Радиус траектории')),dragHistory=(await state()).undo;
+  await page.mouse.move(box.x+box.width/2,box.y+box.height/2);await page.mouse.down();
+  await page.mouse.move(box.x+box.width/2+44,box.y+box.height/2,{steps:8});await page.mouse.up();await settle();
+  const radius1=Number(await value('Радиус траектории'));
+  ok(radius1>radius0&&(await state()).undo===dragHistory+1,'M06 visible SVG drag changes number in one undo step');
+  ok(Number(await page.getByRole('slider',{name:'Радиус траектории',exact:true}).getAttribute('aria-valuenow'))===radius1,'M06 handle and number synchronized');
+  await page.getByRole('button',{name:'Отменить',exact:true}).click();
+  ok(Number(await value('Радиус траектории'))===radius0,'M06 undo restores radius');
+  await page.getByRole('button',{name:'Вернуть',exact:true}).click();
+  // M05 at a smaller CSS viewport, where the context pane really scrolls.
+  await page.setViewportSize({width:1366,height:768});
+  await page.locator('.inspector').evaluate(el=>el.scrollTop=0);
+  const number0=await value('Длина хвоста');
+  await page.getByRole('spinbutton',{name:'Длина хвоста',exact:true}).hover();await page.mouse.wheel(0,-100);await settle();
+  ok(await page.locator('.inspector').evaluate(el=>el.scrollTop)===0,'M05 wheel over number does not scroll parent');
+  const number1=await value('Длина хвоста');
+  await page.locator('.wheel-hint').hover();await page.mouse.wheel(0,350);await page.waitForTimeout(180);
+  ok(await value('Длина хвоста')===number1&&await page.locator('.inspector').evaluate(el=>el.scrollTop)>0,'M05 ordinary context scroll does not edit number');
+  ok(number0!==number1,'M05 number wheel still edits at smaller viewport');
+  await page.setViewportSize({width:1920,height:1080});
+  await edit('Длительность',.5);
+  // M01 B and M07 same composition across types and entries.
+  await page.getByRole('button',{name:'Надпись',exact:true}).click();
+  await apply('Вверх и раствориться');await edit('Длительность',.5);await edit('Задержка',.2);
+  await page.getByRole('textbox',{name:'Текст надписи',exact:true}).fill('Тест мастерской');
+  await page.getByRole('textbox',{name:'Текст надписи',exact:true}).press('Tab');await settle();
+  await page.getByRole('button',{name:'Вся панель',exact:true}).click();
+  await apply('Каскад');await edit('Длительность',.5);
+  await page.getByRole('combobox',{name:'Начало шага',exact:true}).selectOption('with');
+  const times=await page.evaluate(()=>schedule().map(s=>({start:s.start,end:s.end})));
+  ok(times[1].start===.7&&times[2].start===.7,'M07 after+delay and simultaneous start schedule');
+  await page.getByRole('button',{name:'Повторить',exact:true}).click();
+  await page.waitForFunction(()=>elapsed>.8&&elapsed<1.1);
+  const opacity=await page.locator('#scene-art > text').getAttribute('opacity');
+  ok(Number(opacity)>0,'M07 delayed text actually visible during scheduled interval');
+  await page.getByRole('button',{name:'Пауза',exact:true}).click();
+  const paused=await page.locator('#scene-art').innerHTML();await page.waitForTimeout(120);
+  ok(paused===await page.locator('#scene-art').innerHTML(),'M08 pause freezes actual scene');
+  await page.getByRole('button',{name:'Выше: Каскад',exact:true}).click();
+  ok((await state()).draft.steps[1].variant==='cascade','M07 change order');
+  await page.getByRole('button',{name:'От эффекта',exact:true}).click();
+  ok((await state()).draft.steps.length===3,'M02 B to A retains composition');
+  // Individual versus group binding; repeated play/replacement, undo while moving.
+  await page.getByRole('combobox',{name:'Цель эффекта',exact:true}).selectOption('button2');
+  await apply('Мягкая подсветка');
+  ok((await state()).draft.steps.at(-1).target==='button2','M03 individual button target differs from group');
+  await page.getByRole('button',{name:'Повторить',exact:true}).click({clickCount:3});
+  await apply('Каскад','Заменить шаг');
+  await page.getByRole('button',{name:'Отменить',exact:true}).click();
+  ok((await state()).draft.steps.at(-1).variant==='glow'&&await page.evaluate(()=>playing),'M08 rapid restart replace and undo during motion');
+  // Native text undo is not intercepted by the application history.
+  await page.getByRole('combobox',{name:'Цель эффекта',exact:true}).selectOption('text');
+  const textBefore=(await state()).draft.text;
+  const textBox=page.getByRole('textbox',{name:'Текст надписи',exact:true});
+  await textBox.click();await textBox.press('End');await page.keyboard.type('!');await page.keyboard.press('Control+z');
+  await page.getByRole('heading',{name:'FX Workshop',exact:true}).click();await settle();
+  ok((await state()).draft.text===textBefore&&(await state()).draft.steps.length===4,'M09 native text undo does not remove applied steps');
+  // M10: same recipe, immutable saved snapshot until explicit save, revisions, reopen.
+  await page.getByRole('button',{name:'Закрепить в коллекции',exact:true}).click();
+  await page.getByRole('textbox',{name:'Название рецепта',exact:true}).fill('Проверка FX-01');
+  await page.getByRole('textbox',{name:'Название рецепта',exact:true}).press('Tab');
+  const pinned=(await state()).recipes[0],recipeId=pinned.id;
+  ok(await page.locator('#recipes svg').isVisible(),'M10 recipe has visible recognizable preview');
+  await page.getByRole('button',{name:'Открыть в черновике',exact:true}).click();
+  await page.getByRole('combobox',{name:'Цель эффекта',exact:true}).selectOption('ball');
+  await edit('Радиус траектории',165);
+  ok((await state()).recipes[0].revisions.length===1&&JSON.stringify((await state()).recipes[0].revisions[0])===JSON.stringify(pinned.revisions[0]),'M10 editing draft leaves pinned revision intact');
+  ok(await page.getByRole('button',{name:'Сохранить редакцию',exact:true}).isEnabled(),'M10 save revision enabled after parameter edit');
+  await page.getByRole('button',{name:'Сохранить редакцию',exact:true}).click();
+  ok((await state()).recipes.length===1&&(await state()).recipes[0].id===recipeId&&(await state()).recipes[0].revisions.length===2,'M10 explicit save updates same card with previous revision');
+  await page.getByRole('button',{name:'Коллекция 1',exact:true}).click();
+  await page.getByRole('button',{name:'Вернуть редакцию в черновик',exact:true}).click();
+  ok(JSON.stringify((await state()).draft.steps)===JSON.stringify(pinned.revisions[0].config.steps)&&(await state()).recipes[0].revisions.length===2,'M10 restore previous saved revision separately from session undo');
+  await settle();
+  const beforeReload=await state();await page.reload();
+  ok(JSON.stringify((await state()).draft)===JSON.stringify(beforeReload.draft)&&JSON.stringify((await state()).recipes)===JSON.stringify(beforeReload.recipes),'M10 reload restores draft composition and saved revisions');
+  ok((await state()).undo===0,'M10 session undo intentionally separate from persisted revisions');
+  ok(await page.evaluate(()=>localStorage.getItem('r4d-fx01:work'))===participantBefore,'M10 test namespace did not touch participant state');
+  const viewport=await page.evaluate(()=>({css:[innerWidth,innerHeight],dpr:devicePixelRatio,body:[document.documentElement.scrollWidth,document.documentElement.scrollHeight],save:document.querySelector('.savebar').getBoundingClientRect().bottom}));
+  ok(viewport.body[0]===1920&&viewport.save<=1080,'M11 emulated 1920x1080 essential controls fit (not physical PASS)');
+  await page.screenshot({path:'D:/dev/.codex-task-temp/r4d-fx01/builder/output/candidate-1920.png'});
+  const another=await page.context().newPage();await another.goto(url);
+  ok(await another.evaluate(()=>draft.steps.length===4&&recipes[0].revisions.length===2),'M10 fresh tab restores work from same origin');
+  await another.close();
+  // Real failure of localStorage.setItem in another isolated test page.
+  const failure=await page.context().newPage();
+  await failure.addInitScript(()=>{Storage.prototype.setItem=function(){throw new DOMException('Blocked for check','SecurityError');};});
+  await failure.goto(url+'-storage-failure');
+  await failure.getByRole('article',{name:'Примерить: Кометный след',exact:true}).getByRole('button',{name:'Применить',exact:true}).click();
+  await failure.waitForFunction(()=>document.querySelector('#storage-status').textContent.startsWith('Не сохранено:'));
+  ok(await failure.locator('#storage-status.error').isVisible(),'M10 failed persistence visibly reports not saved');await failure.close();
+  ok(errors.length===0,'No uncaught page errors during full interaction flow');
+  return {results,viewport,url,checks:results.length};
+}

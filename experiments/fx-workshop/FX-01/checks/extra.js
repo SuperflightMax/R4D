@@ -1,0 +1,45 @@
+// Supplement to interaction.js. Starts on the reopened, persistent test profile only.
+async (page) => {
+  if(!new URL(page.url()).searchParams.has('test'))throw Error('Only an isolated test URL is allowed');
+  const results=[];
+  const ok=(condition,name)=>{if(!condition)throw Error(name);results.push(name);};
+  ok(await page.evaluate(()=>draft.steps.length===4&&recipes.length===1&&recipes[0].revisions.length===2&&recipes[0].name==='Проверка FX-01'),'M10 full browser close/reopen retained draft, recipe, name and revisions');
+  const errors=[];page.on('pageerror',e=>errors.push(e.message));
+  await page.locator('body').ariaSnapshot();
+  await page.getByRole('combobox',{name:'Цель эффекта',exact:true}).selectOption('ball');
+  if(await page.getByRole('button',{name:'Пауза',exact:true}).isVisible())await page.getByRole('button',{name:'Пауза',exact:true}).click();
+  const before=await page.locator('#scene-art').innerHTML();
+  await page.getByRole('spinbutton',{name:'Радиус траектории',exact:true}).fill('160');
+  await page.getByRole('spinbutton',{name:'Радиус траектории',exact:true}).press('Tab');
+  await page.waitForTimeout(600);
+  ok(before!==await page.locator('#scene-art').innerHTML(),'M04 parameter edit updates scene while paused');
+  const slider=page.getByRole('slider',{name:'Радиус траектории',exact:true});
+  await slider.focus();await slider.press('ArrowLeft');
+  ok(await page.getByRole('spinbutton',{name:'Радиус траектории',exact:true}).inputValue()==='155','M06 keyboard adjusts same geometric handle');
+  await page.locator('[data-param=color]').fill('#ff4444');await page.locator('[data-param=color]').press('Tab');await page.waitForTimeout(600);
+  ok(await page.locator('#scene-art circle[fill="#ff4444"]').count()>1,'M03 color control updates actual trail');
+  await page.getByRole('article',{name:'Примерить: Бусы',exact:true}).getByRole('button',{name:'Добавить шаг',exact:true}).click();
+  ok(await page.evaluate(()=>draft.steps.length===5),'M07 add another step to same object');
+  await page.getByRole('button',{name:'Выше: Бусы',exact:true}).click();
+  await page.getByRole('button',{name:'Ниже: Бусы',exact:true}).click();
+  await page.getByRole('button',{name:'Убрать: Бусы',exact:true}).click();
+  ok(await page.evaluate(()=>draft.steps.length===4),'M07 reorder down and remove a step');
+  await page.getByRole('button',{name:'Отменить',exact:true}).click();
+  ok(await page.evaluate(()=>draft.steps.length===5),'M09 remove is undoable');
+  await page.getByRole('button',{name:'Вернуть',exact:true}).click();
+  await page.getByRole('combobox',{name:'Цель эффекта',exact:true}).selectOption('text');
+  await page.getByRole('article',{name:'Примерить: Боковой вход',exact:true}).getByRole('button',{name:'Заменить шаг',exact:true}).click();
+  await page.getByRole('spinbutton',{name:'Сдвиг',exact:true}).fill('100');await page.getByRole('spinbutton',{name:'Сдвиг',exact:true}).press('Tab');
+  ok(await page.evaluate(()=>draft.steps.find(s=>s.target==='text').variant==='slide'),'M03 second text variant applies');
+  await page.getByRole('button',{name:'Повторить',exact:true}).click();await page.waitForTimeout(1300);
+  ok(Number(await page.locator('#scene-art > text').getAttribute('opacity'))===0,'M08 text really disappears after its scheduled end');
+  await page.getByRole('combobox',{name:'Цель эффекта',exact:true}).selectOption('ball');
+  await page.getByRole('button',{name:'Повторить',exact:true}).click();await page.waitForTimeout(200);
+  await page.screenshot({path:'D:/dev/.codex-task-temp/r4d-fx01/builder/output/geometry-1920.png'});
+  await page.getByRole('button',{name:'Коллекция 1',exact:true}).click();
+  await page.screenshot({path:'D:/dev/.codex-task-temp/r4d-fx01/builder/output/collection-1920.png'});
+  await page.getByRole('button',{name:'Закрыть коллекцию',exact:true}).click();
+  ok(errors.length===0,'No uncaught page errors during additional controls');
+  const about=await page.evaluate(()=>({viewport:[innerWidth,innerHeight],dpr:devicePixelRatio,userAgent:navigator.userAgent,url:location.href}));
+  return {results,about};
+}

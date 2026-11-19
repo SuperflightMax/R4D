@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>FX Workshop — проба взаимодействия</title>
+  <link rel="icon" href="data:,">
+  <link rel="stylesheet" href="style.css">
+  <script src="app.js" defer></script>
+</head>
+<body>
+  <header class="topbar">
+    <div><h1>FX Workshop</h1><span class="muted">Проба взаимодействия · FX-01</span></div>
+    <nav class="entry" aria-label="С чего начать">
+      <button data-entry="effects" aria-pressed="true">От эффекта</button>
+      <button data-entry="objects" aria-pressed="false">От объекта</button>
+    </nav>
+    <button id="collection-toggle" aria-expanded="false">Коллекция <span id="recipe-count">0</span></button>
+  </header>
+  <div id="storage-status" role="status" class="storage">Черновик сохраняется на этом устройстве</div>
+  <main class="workspace">
+    <aside class="library pane" aria-label="Выбор эффекта и объекта">
+      <div id="library-heading"></div>
+      <div id="objects"></div>
+      <div id="categories"></div>
+      <div id="gallery"></div>
+    </aside>
+    <section class="work">
+      <div class="scene-toolbar">
+        <label>Цель <select id="target" aria-label="Цель эффекта"></select></label>
+        <div class="playback">
+          <button id="play">Пауза</button><button id="restart">Повторить</button>
+          <span id="play-time" class="muted">0,0 с</span>
+        </div>
+      </div>
+      <div class="stage-wrap">
+        <svg id="stage" viewBox="0 0 1000 550" aria-label="Сцена: кнопки, движущийся шарик и надпись">
+          <defs><pattern id="grid" width="25" height="25" patternUnits="userSpaceOnUse"><circle cx="1" cy="1" r="1" fill="#263847"/></pattern></defs>
+          <rect width="1000" height="550" fill="url(#grid)"/>
+          <g id="scene-art" pointer-events="none"></g>
+          <g id="scene-targets">
+            <g data-target="buttons" role="button" tabindex="0" aria-label="Выбрать всю панель кнопок"><rect x="55" y="112" width="310" height="58" rx="12" class="hit"/><text x="70" y="148" class="scene-label">Панель кнопок · вся группа</text></g>
+            <g data-target="button1" role="button" tabindex="0" aria-label="Выбрать кнопку Один"><rect x="65" y="185" width="90" height="70" rx="14" class="hit"/></g>
+            <g data-target="button2" role="button" tabindex="0" aria-label="Выбрать кнопку Два"><rect x="165" y="185" width="90" height="70" rx="14" class="hit"/></g>
+            <g data-target="button3" role="button" tabindex="0" aria-label="Выбрать кнопку Три"><rect x="265" y="185" width="90" height="70" rx="14" class="hit"/></g>
+            <g data-target="ball" role="button" tabindex="0" aria-label="Выбрать шарик"><rect x="470" y="65" width="450" height="300" rx="18" class="hit"/><text x="690" y="90" text-anchor="middle" class="scene-label">Шарик</text></g>
+            <g data-target="text" role="button" tabindex="0" aria-label="Выбрать надпись"><rect x="80" y="400" width="840" height="100" rx="16" class="hit"/></g>
+          </g>
+          <g id="geometry" hidden>
+            <line id="radius-line" x1="690" y1="215" x2="800" y2="215" stroke="#98d9ff" stroke-dasharray="5 5"/>
+            <circle id="radius-handle" cx="800" cy="215" r="12" tabindex="0" role="slider" aria-label="Радиус траектории" aria-valuemin="40" aria-valuemax="180"/>
+            <text id="radius-label" x="800" y="245" text-anchor="middle" class="scene-label">Радиус</text>
+          </g>
+        </svg>
+        <div id="preview-status" class="preview-status" role="status" hidden></div>
+      </div>
+      <div class="history-toolbar"><button id="undo" disabled>Отменить</button><button id="redo" disabled>Вернуть</button><span id="work-title" class="muted">Новый черновик</span></div>
+      <section class="composition pane" aria-label="Композиция">
+        <div class="section-heading"><h2>Композиция</h2><span class="muted">Добавляйте шаги из галереи. Порядок меняется здесь.</span></div>
+        <div id="steps"></div>
+      </section>
+    </section>
+    <aside class="inspector pane" aria-label="Настройки выбранного шага"><div id="settings"></div></aside>
+  </main>
+  <section id="collection" class="collection pane" aria-label="Коллекция рецептов" hidden>
+    <div class="section-heading"><div><h2>Коллекция</h2><span class="muted">Закреплённые работы и сохранённые редакции</span></div><button id="collection-close">Закрыть коллекцию</button></div>
+    <div id="recipes"></div>
+  </section>
+  <footer class="savebar"><span id="save-hint">Примерка не меняет черновик. Закрепите понравившуюся работу.</span><button id="pin" class="primary">Закрепить в коллекции</button><button id="save-recipe" hidden>Сохранить редакцию</button></footer>
+</body>
+</html>
