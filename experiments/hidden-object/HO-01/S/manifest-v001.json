@@ -1,0 +1,195 @@
+{
+  "package": "HO-01/G0/S/v001",
+  "created_local_date": "2026-11-19",
+  "staff_id": "concept-artist-r4d-ho01-s-01",
+  "configuration": {
+    "model": "gpt-6.1-sol",
+    "effort": "xhigh",
+    "cwd": "D:\\dev\\R4D",
+    "host": "local",
+    "thread_id": "01a1f0a7-ccf0-7512-9a26-85c3cd02c39e"
+  },
+  "canon": {
+    "R4D": "54fe24b280c835ace0cca372fbbafbff58b97fb2",
+    "order_revision": 2,
+    "handoff_clarification": 2,
+    "S0_revision": 3,
+    "program_revision": 3,
+    "Staff": "f09c823cb14b58eb92dcf090e6cb260e73d866d3",
+    "Playbook_commit": "23844a92467635e77f4ff83e7ef5054264a8da57",
+    "Playbook_blob": "b575a013d036ad0555f0eb83982e8fdd7af2b37b"
+  },
+  "scope": "G0 conceptual art only",
+  "recommendation": {
+    "master": "images/10-master-v005.png",
+    "open_state": "images/12-state-A-v005-open.png",
+    "local_study_B": "images/08-state-B-v001-return.png",
+    "local_study_C": "images/09-state-C-v001-independent.png",
+    "viewer": "review/index-v001.html",
+    "map_M": "review/map-M-v001.svg",
+    "map_A": "review/map-A-v001.svg",
+    "coverage": "coverage-v001.json",
+    "local_studies_sheet": "review/pickup-studies-v001.html"
+  },
+  "generation": {
+    "route": "Built-in image_gen.imagegen, existing subscription",
+    "calls": 12,
+    "image_tool_wait_seconds": 418,
+    "stage2_start_utc": "2026-11-18 22:02:12 UTC",
+    "active_time": "не измерено отдельно",
+    "imagegen_specific_quota": "интерфейсом не раскрыта; все 12 обычных запросов завершились без отказа доступа/квоты",
+    "cost": "фактическая стоимость отдельного вызова не раскрыта; нулевой не заявлена",
+    "paid_fallback": false,
+    "api_cli_used_for_images": false,
+    "elapsed_seconds_including_wait_and_packaging": 1969
+  },
+  "versions": [
+    {
+      "call": 1,
+      "path": "images/01-master-v001.png",
+      "prompt": "prompts/01-master-v001.txt",
+      "input_call_numbers": [],
+      "default_source": "C:\\Users\\user\\.codex\\generated_images\\01a1f0a7-ccf0-7512-9a26-85c3cd02c39e\\exec-96c7aa2b-8de7-4d00-94f7-7df8868676cb.png",
+      "selected": false,
+      "local_study_only": false
+    },
+    {
+      "call": 2,
+      "path": "images/02-master-v002.png",
+      "prompt": "prompts/02-master-v002-edit.txt",
+      "input_call_numbers": [
+        1
+      ],
+      "default_source": "C:\\Users\\user\\.codex\\generated_images\\01a1f0a7-ccf0-7512-9a26-85c3cd02c39e\\exec-fd70da54-86f8-4857-89b9-4085e7b176b2.png",
+      "selected": false,
+      "local_study_only": false
+    },
+    {
+      "call": 3,
+      "path": "images/03-master-v003.png",
+      "prompt": "prompts/03-master-v003-concavity.txt",
+      "input_call_numbers": [
+        2
+      ],
+      "default_source": "C:\\Users\\user\\.codex\\generated_images\\01a1f0a7-ccf0-7512-9a26-85c3cd02c39e\\exec-52b59ac6-0c5f-43ff-9f9f-4179a927e6a6.png",
+      "selected": false,
+      "local_study_only": false
+    },
+    {
+      "call": 4,
+      "path": "images/04-master-v004.png",
+      "prompt": "prompts/04-master-v004-layout.txt",
+      "input_call_numbers": [
+        3
+      ],
+      "default_source": "C:\\Users\\user\\.codex\\generated_images\\01a1f0a7-ccf0-7512-9a26-85c3cd02c39e\\exec-0fae0983-e9da-4abb-a8d3-36db98af59aa.png",
+      "selected": false,
+      "local_study_only": false
+    },
+    {
+      "call": 5,
+      "path": "images/05-state-A-v001-open.png",
+      "prompt": "prompts/05-state-A-v001-open.txt",
+      "input_call_numbers": [
+        4
+      ],
+      "default_source": "C:\\Users\\user\\.codex\\generated_images\\01a1f0a7-ccf0-7512-9a26-85c3cd02c39e\\exec-197c1572-480c-4cb3-8cbc-67fb313593bc.png",
+      "selected": false,
+      "local_study_only": false
+    },
+    {
+      "call": 6,
+      "path": "images/06-state-A-v002-open.png",
+      "prompt": "prompts/06-state-A-v002-occlusion.txt",
+      "input_call_numbers": [
+        5,
+        4
+      ],
+      "default_source": "C:\\Users\\user\\.codex\\generated_images\\01a1f0a7-ccf0-7512-9a26-85c3cd02c39e\\exec-ffe2cc29-eaed-4bab-af8d-8b50cefd7b8b.png",
+      "selected": false,
+      "local_study_only": false
+    },
+    {
+      "call": 7,
+      "path": "images/07-state-A-v003-open.png",
+      "prompt": "prompts/07-state-A-v003-hatch.txt",
+      "input_call_numbers": [
+        6
+      ],
+      "default_source": "C:\\Users\\user\\.codex\\generated_images\\01a1f0a7-ccf0-7512-9a26-85c3cd02c39e\\exec-2d680937-a9e8-4bf6-b3a8-04b066544492.png",
+      "selected": false,
+      "local_study_only": false
+    },
+    {
+      "call": 8,
+      "path": "images/08-state-B-v001-return.png",
+      "prompt": "prompts/08-state-B-v001-return.txt",
+      "input_call_numbers": [
+        7,
+        4
+      ],
+      "default_source": "C:\\Users\\user\\.codex\\generated_images\\01a1f0a7-ccf0-7512-9a26-85c3cd02c39e\\exec-0d199cc8-6ddf-4ce7-9258-e2efedb9c102.png",
+      "selected": false,
+      "local_study_only": true
+    },
+    {
+      "call": 9,
+      "path": "images/09-state-C-v001-independent.png",
+      "prompt": "prompts/09-state-C-v001-independent.txt",
+      "input_call_numbers": [
+        7,
+        4
+      ],
+      "default_source": "C:\\Users\\user\\.codex\\generated_images\\01a1f0a7-ccf0-7512-9a26-85c3cd02c39e\\exec-b2cc636a-8f07-480c-bf93-6f523610cbbd.png",
+      "selected": false,
+      "local_study_only": true
+    },
+    {
+      "call": 10,
+      "path": "images/10-master-v005.png",
+      "prompt": "prompts/10-master-v005-clock-corridor.txt",
+      "input_call_numbers": [
+        4
+      ],
+      "default_source": "C:\\Users\\user\\.codex\\generated_images\\01a1f0a7-ccf0-7512-9a26-85c3cd02c39e\\exec-3b715364-f1b1-41b6-902b-9e0d5812a321.png",
+      "selected": true,
+      "local_study_only": false
+    },
+    {
+      "call": 11,
+      "path": "images/11-state-A-v004-open.png",
+      "prompt": "prompts/11-state-A-v004-final-layout.txt",
+      "input_call_numbers": [
+        10,
+        7
+      ],
+      "default_source": "C:\\Users\\user\\.codex\\generated_images\\01a1f0a7-ccf0-7512-9a26-85c3cd02c39e\\exec-032a4542-1c91-414d-b0b7-11cadbb4da5d.png",
+      "selected": false,
+      "local_study_only": false
+    },
+    {
+      "call": 12,
+      "path": "images/12-state-A-v005-open.png",
+      "prompt": "prompts/12-state-A-v005-finial.txt",
+      "input_call_numbers": [
+        11
+      ],
+      "default_source": "C:\\Users\\user\\.codex\\generated_images\\01a1f0a7-ccf0-7512-9a26-85c3cd02c39e\\exec-a5b96ab0-9abe-49ca-9132-97c1c9fc9a9a.png",
+      "selected": true,
+      "local_study_only": false
+    }
+  ],
+  "F_results_read": false,
+  "production_layers_created": false,
+  "runtime_created": false,
+  "human_art_PASS": false,
+  "remaining": [
+    "Независимые production-слои и runtime не создавались.",
+    "Композиционный коридор предложен на G0: стол примерно x7–80%, y59–99%; группа часов примерно x57–75%, y10–60%, нижняя часть за столом. Эти отклонения от S0 требуют явного художественного решения до производства.",
+    "В B/C есть дрейф закрытой формы D2 и старое положение часов; полные кадры не являются мебельным эталоном. Для мебели использовать только M/A.",
+    "Перспективы раскрытых элементов остаются концептуальными: независимая VQA должна отдельно оценить D1, размер створки DR3, глубину D2 и зазор D3/L1.",
+    "Это серия концептуальных растров, не доказательство пиксельной неизменности, независимых слоёв или интерактивной обратимости."
+  ],
+  "completed_utc": "2026-11-18 22:35:01 UTC",
+  "self_QA": "QA-v001.json"
+}

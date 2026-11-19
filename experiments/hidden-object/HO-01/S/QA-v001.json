@@ -1,0 +1,48 @@
+{
+  "package": "HO-01/G0/S/v001",
+  "completed_utc": "2026-11-18 22:35:01 UTC",
+  "stage2_start_utc": "2026-11-18 22:02:12 UTC",
+  "elapsed_seconds": 1969,
+  "imagegen_wait_seconds": 418,
+  "active_time": "не измерено отдельно",
+  "checks": {
+    "source_PNGs": 12,
+    "exact_prompts": 12,
+    "unique_finding_ids": 20,
+    "separate_tools": 2,
+    "separate_nodes": 8,
+    "visible_in_M": 13,
+    "visible_in_A": 18,
+    "union_M_A": 20,
+    "map_SVG_XML": "valid",
+    "referenced_source_files": "present",
+    "source_images": "осмотрены после каждого вызова",
+    "maps": "M/A отрендерены в 1920×1200 и осмотрены",
+    "review": "master и A+карта отрендерены в 1920×1080",
+    "local_studies": "отдельный A/B/C лист отрендерен в 1920×1080 и осмотрен"
+  },
+  "renderer": {
+    "type": "Microsoft Edge headless, отдельный временный профиль в S",
+    "personal_tabs_used": false,
+    "playwright_CLI": "не найден в локальном кэше, не устанавливался",
+    "iab": "недоступен в этой сессии",
+    "button_clicks": "отдельно не тестировались; общий код переключения отработал при загрузке view=A&map=1",
+    "anchor_capture": "первый снимок #studies оказался пустым; заменён отдельным листом pickup-studies-v001.html"
+  },
+  "screenshots": [
+    "review/output/playwright/map-M-1920-v001.png",
+    "review/output/playwright/map-A-1920-v001.png",
+    "review/output/playwright/overview-1920-v001.png",
+    "review/output/playwright/overview-A-map-1920-v001.png",
+    "review/output/playwright/pickup-studies-1920-v001.png"
+  ],
+  "cleanup": {
+    "temporary_profile": "review/output/playwright/isolated-edge-profile",
+    "attempt": "отклонён автоматической проверкой до выполнения команды",
+    "reported_reason": "blocked by policy",
+    "action_taken": "очистка и остановка процессов этой командой не выполнялись; профиль оставлен в S"
+  },
+  "independent_VQA": "ожидается",
+  "human_art_PASS": false,
+  "stop": "G0; production/P/runtime/FX не открыты"
+}
