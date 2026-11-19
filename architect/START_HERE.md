@@ -1,5 +1,10 @@
 # R4D: контекст архитектора
 
+## 19 ноября 2026: FX Pixel Evolution — архитектурное ревью опубликовано
+
+**[Короткий аргументированный отзыв архитектора](research/2026-11-19-fx-pixel-evolution-architecture-review.md)** подготовлен по [поручению Product Lead](../work/requests/FX_PIXEL_EVOLUTION_ARCH_REVIEW.md) и [новому продуктовому замыслу](../docs/2026-11-19-fx-pixel-evolution-product-research.md). Две самостоятельные исследовательские линии: A Tail Evolution и B Particle Character. Рекомендованы независимые art-first PoC в R4D, сначала A; их нельзя автоматически добавлять в UX-01 или начинать как производство. Предложены два контрастных технических пути для каждой линии, честные художественные/технические гейты, примерные ресурсы. Старый JumperTail исследован по VFX-документам и коду ветки devdevdev, не по живому визуальному просмотру. **READY FOR PRODUCT/MAX REVIEW; NO EXECUTION GO.** FX-01 READY/HOLD; ART-UI HOLD; HO без нового автоматического этапа.
+
+
 ## 19 ноября 2026: FX Pixel Evolution — прочитать и предложить место в исследованиях
 
 **Прямой новый запрос от Макса через Product Lead, пока только архитектурное ревью:** [полный продуктовый документ](../docs/2026-11-19-fx-pixel-evolution-product-research.md) и [адресное поручение](../work/requests/FX_PIXEL_EVOLUTION_ARCH_REVIEW.md).
