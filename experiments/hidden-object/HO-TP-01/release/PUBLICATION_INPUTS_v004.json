@@ -1,0 +1,51 @@
+{
+  "schema": "HO-TP-01-publication-inputs-v1",
+  "maxAuthorization": "Sentinel_bfdad3e8e484819185d89b0f936e496f",
+  "sourceDelegationThread": "6afe50a8-7654-8191-bcb4-f1c7e66a401b",
+  "reportCommit": "0c1d63db159e7ae40102251aa66d2f9b1d63ad61",
+  "runtimeCodeCommit": "9200c8b2c5c18c3b6e4c6f333e1ccca847af98e6",
+  "runtimeVersion": "v004",
+  "artVersion": "v002",
+  "artManifestSha256": "8d6cc5010886ec46a66258afe8685b93b137376c7bf87bc8c66bb80441edeff0",
+  "packageManifestSha256": "5f3ea8dbfba05e8d2e65d2af3e1cd2dfbffeb868df92af52de33a8b470c749fa",
+  "frozenQaInputSha256": "bf0c0d7c8b0d255a3bb46cce0feb0688dbc91913907d1fc9e3139b47869fd690",
+  "proposedVersionUrl": "https://superflight.space/review/r4d/ho-tp-01/v004-art-v002-0c1d63db/",
+  "urlIsNotYetVerified": true,
+  "files": [
+    {
+      "relativePath": "index.html",
+      "sourcePath": "K:\\Agents\\R4D\\Review\\HO-TP-01\\runtime\\index.html",
+      "bytes": 1805,
+      "sha256": "cb0ec323fc584e6162b3741a764a896ece59b779272df4a639f6974a647b8dc9"
+    },
+    {
+      "relativePath": "style.css",
+      "sourcePath": "K:\\Agents\\R4D\\Review\\HO-TP-01\\runtime\\style.css",
+      "bytes": 1518,
+      "sha256": "66314d5fff3f426f6ceb2cf74853f86c5664831e9335fde5c0390590324a7f8e"
+    },
+    {
+      "relativePath": "app.js",
+      "sourcePath": "K:\\Agents\\R4D\\Review\\HO-TP-01\\runtime\\app.js",
+      "bytes": 9995,
+      "sha256": "5e1fea2fc167863e8bcf38d11e73888574e220f567e74c1153aef3f8e17adc32"
+    },
+    {
+      "relativePath": "assets.js",
+      "sourcePath": "K:\\Agents\\R4D\\Review\\HO-TP-01\\runtime\\assets.js",
+      "bytes": 5041031,
+      "sha256": "1ba6c8d6cfb7639e9eea3d6fad83f811b2648d6b47f9deddd124b76d4da8554c"
+    }
+  ],
+  "allowedPublicationFiles": 4,
+  "preservedArtStatus": "Author PARTIAL: narrow upper bowl seam; human art acceptance pending",
+  "constraints": [
+    "exact bytes only; no runtime rebuild or edits",
+    "existing approved Review procedure only",
+    "read current server policy and detect duplicate before mutation",
+    "no auth, credential, infrastructure or old-release changes",
+    "no catalogue/index changes outside new version leaf",
+    "STOP on policy block; no bypass",
+    "no Slava outreach, new stage, generation or paid API"
+  ]
+}

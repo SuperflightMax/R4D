@@ -1,6 +1,8 @@
 # cto-r4d-game-art-01
 
-Отдельный постоянный CTO R4D Game Art; thread `01a1f078-de58-7260-bf06-1452b1dcb5e4`. Текущий ход `01a1f417-5d8d-7a32-8242-ca607e985da2`: фактически подтверждены **gpt-6.1-sol / max / D:\dev\R4D**.
+Отдельный постоянный CTO R4D Game Art; thread `01a1f078-de58-7260-bf06-1452b1dcb5e4`. Текущий ход `01a1f4c9-be33-7b12-bd8d-e15b3c9d0137`: фактически подтверждены **gpt-6.1-sol / max / D:\dev\R4D**.
+
+**PUBLICATION_AUTHORIZED / RELEASE_PREFLIGHT.** Max отдельно поручил публикацию frozen runtime v004/art v002 на существующем Superflight Review, Sentinel_bfdad3e8e484819185d89b0f936e496f, источник codex_delegation6afe50a8-7654-8191-bcb4-f1c7e66a401b. Предыдущий запрет деплоя этим снят только для доставки; продукт/арт/прочие релизы/инфраструктура/доступы не меняются, при policy-блоке STOP без обхода. Ровно4 неизменённых файла по release/PUBLICATION_INPUTS_v004.json. Staff Director проверяет выдачу существующего свободного release-engineer-r4d-q5a-01 без нового найма; серверные записи до адресного старта не выполняются. Проектная выдача RELEASE_TASK.md. После публикации — внешний URL, anonymous HTTP/hashes и оба порядка реальных кликов; человеческий художественный PASS по-прежнему не объявлен. Поручение Славе не выдавать.
 
 **HO-TP-01: PILOT_COMPLETE / AWAITING_MAX_ART_REVIEW.** [Итоговая передача](../../experiments/hidden-object/HO-TP-01/REPORT.md). Прямой GO Max через подписанного ДотМакса, `Sentinel_71562d946edc8191b3c0e4b64561437b`, получен и исполнен. Exact карточка rev2 `904d3c189233a720118e1c7dbbfdd823397ab957`, handoff `fa23a73ae638132e1197283f65a349e3360ed12e`.
 
